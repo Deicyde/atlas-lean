@@ -12,4 +12,4 @@ $f_1^3 = \frac{f_6 f_9^6}{f_3 f_{18}^3} + 4q^3 \frac{f_3^2 f_{18}^6}{f_6^2 f_9^3
 
 ## Sources
 
-- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 2, eq. (41) (merged into the record `integers-2024-A80-lem-1`).
+- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 2, eq. (41).

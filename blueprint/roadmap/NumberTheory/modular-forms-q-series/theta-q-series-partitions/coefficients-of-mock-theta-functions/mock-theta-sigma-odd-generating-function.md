@@ -8,4 +8,4 @@ $\sum_{n \ge 0} P_\sigma(2n+1) q^n = f_2^2 f_6^2 / (f_1^2 f_3)$.
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 5 (`integers-2025-A72-thm-5`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 5.

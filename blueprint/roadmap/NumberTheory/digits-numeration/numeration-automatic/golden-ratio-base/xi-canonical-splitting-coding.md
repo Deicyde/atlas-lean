@@ -13,4 +13,4 @@ $a \mapsto 54$, $b \mapsto 34$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 5 (`integers-2024-A24-thm-5`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 5.

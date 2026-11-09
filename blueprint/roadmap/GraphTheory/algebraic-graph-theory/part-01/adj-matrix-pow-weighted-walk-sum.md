@@ -16,4 +16,4 @@ $i = j$ and $0$ otherwise.
 
 ## Sources
 
-- Thomas Koshy, "A Graph-Theoretic Model for a Generalized Fibonacci Gem," Journal of Integer Sequences 22 (2019), Article 19.4.1, Theorem (label theorem01), lines 128–130, https://cs.uwaterloo.ca/journals/JIS/VOL22/Koshy/koshy7.tex
+- Thomas Koshy, "A Graph-Theoretic Model for a Generalized Fibonacci Gem," Journal of Integer Sequences 22 (2019), Article 19.4.1, Theorem, lines 128–130, https://cs.uwaterloo.ca/journals/JIS/VOL22/Koshy/koshy7.tex

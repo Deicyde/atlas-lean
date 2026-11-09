@@ -12,4 +12,4 @@ Problem 26, solved on that basis; the analogue over $\mathbb{F}_p$ remains open.
 
 ## Sources
 
-- Yang Yu, The Permanent Rank of a Matrix (Part Three) Note on the Additive Basis Conjecture, arXiv:2510.01300v2, https://arxiv.org/abs/2510.01300v2. Moved from `OpenConjectures/Combinatorics/GreenProblem69`.
+- Yang Yu, The Permanent Rank of a Matrix (Part Three) Note on the Additive Basis Conjecture, arXiv:2510.01300v2, https://arxiv.org/abs/2510.01300v2.

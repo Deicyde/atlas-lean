@@ -9,4 +9,4 @@ $$
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), printed p. 28 / PDF p. 38. It follows from `ramanujan_part1_ch2_entry4_general`, which extends it to `n = 0`; the hypothesis `hn` is unused and keeps the source's shape. Proves `Wanted` entry `ramanujan_part1_ch2_entry4`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), printed p. 28 / PDF p. 38. It follows from `ramanujan_part1_ch2_entry4_general`, which extends it to `n = 0`; the hypothesis `hn` is unused and keeps the source's shape.

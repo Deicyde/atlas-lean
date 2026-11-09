@@ -11,4 +11,4 @@ $\overleftarrow{a} = (a_n, \ldots, a_1)$ for the reversed string. Then
 
 ## Sources
 
-- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 2.2 (`integers-2025-A89-lem-2-2`).
+- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 2.2.

@@ -12,4 +12,4 @@ the source.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL27/Adegoke/adegoke12.tex>, lines 92–103, 877–880, and 1824–1828. Source hash `ebe2bfa5fe4599897b5f3944fbec475e37d8ef74af7d901116b07e8b81ba229b`.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL27/Adegoke/adegoke12.tex>, lines 92–103, 877–880, and 1824–1828.

@@ -7,4 +7,4 @@ semisimple: every subrepresentation of $\rho$ has a complementary subrepresentat
 
 ## Sources
 
-- H. Weyl, *Theorie der Darstellung kontinuierlicher halb-einfacher Gruppen durch lineare Transformationen* (1925–26); Peter–Weyl (1927). Knill, *Some fundamental theorems in mathematics*, §21. Via leanprover/lean-eval@38361be, problem `compact_group_semisimple`.
+- H. Weyl, *Theorie der Darstellung kontinuierlicher halb-einfacher Gruppen durch lineare Transformationen* (1925–26); Peter–Weyl (1927). Knill, *Some fundamental theorems in mathematics*, §21. Problem `compact_group_semisimple` of the lean-eval benchmark.

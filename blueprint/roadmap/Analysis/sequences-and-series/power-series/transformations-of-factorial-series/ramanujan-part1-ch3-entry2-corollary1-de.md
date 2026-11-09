@@ -10,4 +10,4 @@ $\sum_{k \ge 0} \frac{(-1)^k f^{(k)}(1)}{z(z+1)\cdots(z+k)}$ both converge absol
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 2, Corollary 1, printed p. 46 / PDF p. 56. Proves `Wanted` entry `ramanujan_part1_ch3_entry2_corollary1_derivative_series`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 2, Corollary 1, printed p. 46 / PDF p. 56.

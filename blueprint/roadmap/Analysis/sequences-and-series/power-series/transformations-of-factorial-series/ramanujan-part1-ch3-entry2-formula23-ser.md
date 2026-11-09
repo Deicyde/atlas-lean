@@ -11,4 +11,4 @@ $e^x e^{-x} = 1$.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 2, formula (2.3) and Corollary 2, printed pp. 46--47 / PDF pp. 56--57. Proves `Wanted` entry `ramanujan_part1_ch3_entry2_formula23_series_pair`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 2, formula (2.3) and Corollary 2, printed pp. 46--47 / PDF pp. 56--57.

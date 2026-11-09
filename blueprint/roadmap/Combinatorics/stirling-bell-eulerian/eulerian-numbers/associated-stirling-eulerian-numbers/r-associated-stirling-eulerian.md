@@ -8,4 +8,4 @@ with $\sigma(i) > i$.
 
 ## Sources
 
-- Concept `jis_term_6573e30b9007548081ca6e28`; source JIS VOL28/Rakotoson/rakoto12.tex Lines 653-657; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
+- Source JIS VOL28/Rakotoson/rakoto12.tex Lines 653-657; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.

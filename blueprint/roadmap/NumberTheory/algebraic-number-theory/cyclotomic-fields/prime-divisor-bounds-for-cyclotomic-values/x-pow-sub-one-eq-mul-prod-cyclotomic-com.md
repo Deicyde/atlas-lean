@@ -17,4 +17,4 @@ which the journal statement refers to as "$x_k$ as above".
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 4 (`integers-2026-A95-prop-4`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 4.

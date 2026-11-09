@@ -10,4 +10,4 @@ In the paper's one-based numbering these are the types $(2, n)$ and $(1, n - 1)$
 
 ## Sources
 
-- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 4 (`integers-2026-A40-lem-4`).
+- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 4.

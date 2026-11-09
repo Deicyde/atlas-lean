@@ -12,4 +12,4 @@ gives Teschl, Lemma 3.11, formula (3.91).
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential equations`, entry `linear differential systems` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.4; stable ref https://en.wikipedia.org/wiki/Abel%27s_identity.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.4; https://en.wikipedia.org/wiki/Abel%27s_identity.

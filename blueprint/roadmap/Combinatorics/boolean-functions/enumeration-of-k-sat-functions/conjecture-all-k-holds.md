@@ -11,4 +11,4 @@ CNF, at-most-$k$ convention here for $n \ge k$ (negation preserves unateness).
 
 ## Sources
 
-- J. Balogh, D. Dong, B. Lidický, N. Mani, Y. Zhao, Nearly all k-SAT functions are unate, STOC 2023; J. Eur. Math. Soc. (2026), arXiv:2209.04894, https://arxiv.org/abs/2209.04894. Moved from `OpenConjectures/Combinatorics/BollobasBrightwellLeaderUnateDensity`.
+- J. Balogh, D. Dong, B. Lidický, N. Mani, Y. Zhao, Nearly all k-SAT functions are unate, STOC 2023; J. Eur. Math. Soc. (2026), arXiv:2209.04894, https://arxiv.org/abs/2209.04894.

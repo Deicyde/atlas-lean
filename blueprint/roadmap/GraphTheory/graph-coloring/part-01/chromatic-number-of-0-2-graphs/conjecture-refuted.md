@@ -10,4 +10,4 @@ bipartite (Theorem 2 of the source below).
 
 ## Sources
 
-- Christopher Williamson, Finite Three-Colourable (0,2)-Graphs Are Bipartite, arXiv preprint (2026), arXiv:2607.10125, https://arxiv.org/abs/2607.10125. Moved from `OpenConjectures/Combinatorics/ThreeChromaticZeroTwoGraph`.
+- Christopher Williamson, Finite Three-Colourable (0,2)-Graphs Are Bipartite, arXiv preprint (2026), arXiv:2607.10125, https://arxiv.org/abs/2607.10125.

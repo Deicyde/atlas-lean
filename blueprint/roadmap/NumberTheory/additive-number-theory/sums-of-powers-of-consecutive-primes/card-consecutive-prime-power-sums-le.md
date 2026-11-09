@@ -10,4 +10,4 @@ $c_k = \frac{k^2}{k-1} (k + 1)^{1 - 1/k}$.
 
 ## Sources
 
-- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 1 (`integers-2024-A4-thm-1`).
+- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 1.

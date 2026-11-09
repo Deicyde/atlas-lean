@@ -14,4 +14,4 @@ holds vacuously.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Theorem 2 (`integers-2024-A2-thm-2`).
+- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Theorem 2.

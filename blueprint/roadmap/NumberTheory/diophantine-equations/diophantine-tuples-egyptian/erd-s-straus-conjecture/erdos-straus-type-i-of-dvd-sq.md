@@ -9,4 +9,4 @@ Since $4x > p$, these equations say $y = (px + d)/(4x - p)$ and $z = p(x + px^2/
 
 ## Sources
 
-- Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 1 (`integers-2025-A54-prop-1`).
+- Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 1.

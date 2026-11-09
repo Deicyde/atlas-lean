@@ -11,4 +11,4 @@ $p \equiv (D/p) \pmod h$ for every prime $p \mid N$, where $(D/p)$ is the Jacobi
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.16 (`integers-2025-A107-thm-3-16`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.16.

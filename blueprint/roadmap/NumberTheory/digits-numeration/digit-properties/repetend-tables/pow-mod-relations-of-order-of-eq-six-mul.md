@@ -11,4 +11,4 @@ $B^{-2Q}$. The paper assumes $j \ge 1$ and $i \ge 2j$; these are not needed here
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 13 (`integers-2025-A26-lem-13`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 13.

@@ -12,4 +12,4 @@ where $A(k) = (3^k - 1)/2 = 1 + 3 + \cdots + 3^{k-1}$ and a sum over an empty ra
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 6, printed p. 33 / PDF p. 43. Proves `Wanted` entry `ramanujan_part1_ch2_entry6_corollary`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 6, printed p. 33 / PDF p. 43.

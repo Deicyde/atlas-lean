@@ -13,4 +13,4 @@ s \sum_{k=1}^{n} \frac{(-1)^k \binom{s+k-1}{k-1}}{k^2 \binom{n}{k}}\Bigr).$$
 
 ## Sources
 
-- Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Proposition 6 (label `Proposition6`), equation (2.8), lines 260–267, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex Proves `Wanted` entry `binomial_transform_second_order_harmonic_numbers`.
+- Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Proposition 6, equation (2.8), lines 260–267, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex

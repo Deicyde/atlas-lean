@@ -7,4 +7,4 @@ As in the paper, $x$, $a$, $b$ range over all integers, with no positivity assum
 
 ## Sources
 
-- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Theorem 1 (`integers-2025-A103-thm-1`).
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Theorem 1.

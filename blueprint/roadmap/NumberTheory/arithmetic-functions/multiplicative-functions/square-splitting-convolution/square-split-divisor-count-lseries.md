@@ -12,4 +12,4 @@ $H$ is holomorphic on the half-plane $\operatorname{Re} s > 1/2$, and $H(1) \ne 
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 9 (`integers-2026-A56-thm-9`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 9.

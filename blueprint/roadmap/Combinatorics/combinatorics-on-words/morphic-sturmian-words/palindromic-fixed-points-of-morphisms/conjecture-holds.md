@@ -17,4 +17,4 @@ Over a binary alphabet the question of Hof, Knill and Simon has a positive answe
 
 ## Sources
 
-- Sébastien Labbé, A counterexample to a question of Hof, Knill and Simon, Electron. J. Combin. 21 (2014) #P3.11, https://doi.org/10.37236/3758. Moved from `OpenConjectures/Combinatorics/PalindromicRecurrentOutsideP`.
+- Sébastien Labbé, A counterexample to a question of Hof, Knill and Simon, Electron. J. Combin. 21 (2014) #P3.11, https://doi.org/10.37236/3758.

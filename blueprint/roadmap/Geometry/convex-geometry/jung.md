@@ -7,4 +7,4 @@ $\sqrt{n / (2(n + 1))} \cdot \operatorname{diam} s$.
 
 ## Sources
 
-- H. Jung, Über die kleinste Kugel, die eine räumliche Figur einschließt, J. Reine Angew. Math. 123 (1901) 241–257 original theorem; D. Gale sharp Euclidean formulation; standard modern reference M. Berger, Geometry I & II. Proves `Wanted` entry `jung`.
+- H. Jung, Über die kleinste Kugel, die eine räumliche Figur einschließt, J. Reine Angew. Math. 123 (1901) 241–257 original theorem; D. Gale sharp Euclidean formulation; standard modern reference M. Berger, Geometry I & II.

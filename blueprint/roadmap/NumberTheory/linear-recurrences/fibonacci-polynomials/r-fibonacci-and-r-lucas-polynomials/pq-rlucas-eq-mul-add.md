@@ -11,4 +11,4 @@ $$V_n(x, y) = x \, U_n(x, y) + (1 + s) \, y \, U_{n-r}(x, y q^m).$$
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 3 (`integers-2025-A38-thm-3`).
+- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 3.

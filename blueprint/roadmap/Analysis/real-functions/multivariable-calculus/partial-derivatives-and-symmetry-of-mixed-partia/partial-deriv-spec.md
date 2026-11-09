@@ -8,4 +8,4 @@ $t \mapsto f(x + t e_i)$, taken to be $0$ when that function is not differentiab
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `partial derivatives` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.

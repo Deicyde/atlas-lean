@@ -17,4 +17,4 @@ positivity of $\xi$ is assumed.
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 6, Equation (23) (`integers-2024-A75-lem-6`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 6, Equation (23).

@@ -8,4 +8,4 @@ $N = k m (m + 1)/2$: there is $p \ge 1$ with $e_{i+p} = e_i$ for all $i > N$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Theorem 2 (`integers-2026-A113-thm-2`).
+- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Theorem 2.

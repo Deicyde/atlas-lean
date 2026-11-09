@@ -9,4 +9,4 @@ real analytic at $\beta_c$.
 
 ## Sources
 
-- L. Onsager, *Crystal statistics I*, Phys. Rev. 65 (1944). Knill, §158. Via leanprover/lean-eval@38361be, problem `ising_2d_phase_transition`.
+- L. Onsager, *Crystal statistics I*, Phys. Rev. 65 (1944). Knill, §158. Problem `ising_2d_phase_transition` of the lean-eval benchmark.

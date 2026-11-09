@@ -6,4 +6,4 @@ MSTD set if and only if $A = \{as + b : s \in S\}$ for some integers $a \neq 0$ 
 
 ## Sources
 
-- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Theorem 1 (`integers-2024-A96-thm-1`).
+- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Theorem 1.

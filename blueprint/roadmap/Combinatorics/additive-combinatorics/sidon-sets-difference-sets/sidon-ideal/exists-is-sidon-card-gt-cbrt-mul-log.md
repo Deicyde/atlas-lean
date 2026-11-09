@@ -7,4 +7,4 @@ is the natural logarithm.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Theorem 3 (`integers-2025-A91-thm-3`), item 2, quoting M. Ajtai, J. Komlós and E. Szemerédi, *A dense infinite Sidon sequence*, European J. Combin. 2 (1981).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Theorem 3, item 2, quoting M. Ajtai, J. Komlós and E. Szemerédi, *A dense infinite Sidon sequence*, European J. Combin. 2 (1981).

@@ -7,4 +7,4 @@ contain neither $01$ nor $12$ as two consecutive letters.
 
 ## Sources
 
-- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Corollary 1 (`integers-2026-A49-cor-1`).
+- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Corollary 1.

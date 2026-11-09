@@ -16,4 +16,4 @@ $$x^n B_h(x^n)^2 = x B_f(x)^2 \, P\bigl(x B_f(x)^2\bigr)^2.$$
 
 ## Sources
 
-- Alexander Burstein and Louis W. Shapiro, "Pseudo-Involutions in the Riordan Group," Journal of Integer Sequences 25 (2022), Article 22.3.6, The Twin Powers Theorem (label thm:aeration), lines 1129–1146, https://cs.uwaterloo.ca/journals/JIS/VOL25/Burstein/burstein14.tex
+- Alexander Burstein and Louis W. Shapiro, "Pseudo-Involutions in the Riordan Group," Journal of Integer Sequences 25 (2022), Article 22.3.6, The Twin Powers Theorem, lines 1129–1146, https://cs.uwaterloo.ca/journals/JIS/VOL25/Burstein/burstein14.tex

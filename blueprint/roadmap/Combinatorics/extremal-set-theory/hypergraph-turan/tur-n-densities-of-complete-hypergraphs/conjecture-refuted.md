@@ -12,4 +12,4 @@ for every $k \ge 1$, and the paper states that this disproves de Caen's conjectu
 
 ## Sources
 
-- O. Pikhurko, Constructions of Turán systems that are tight up to a multiplicative constant, Advances in Mathematics 464 (2025), 110148, https://pikhurko.github.io/E/Pikhurko25am.pdf. Moved from `OpenConjectures/Combinatorics/DeCaenTuranDefectGrowth`.
+- O. Pikhurko, Constructions of Turán systems that are tight up to a multiplicative constant, Advances in Mathematics 464 (2025), 110148, https://pikhurko.github.io/E/Pikhurko25am.pdf.

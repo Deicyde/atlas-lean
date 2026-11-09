@@ -8,4 +8,4 @@ moreover $a \ne 0$, then $f(a, b) - f(-a, -b) = 2a f(b/a, a^5 b^3)$.
 
 ## Sources
 
-- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1 record, quoting Berndt, Part III, Entry 30 (i)-(iii) (`integers-2025-A16-lem-1`).
+- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1 record, quoting Berndt, Part III, Entry 30 (i)-(iii).

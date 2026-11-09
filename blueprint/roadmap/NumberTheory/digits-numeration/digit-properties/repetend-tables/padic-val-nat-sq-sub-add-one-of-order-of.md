@@ -7,4 +7,4 @@ valuation of $B^2 - B + 1$ is exactly $i - j$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 8 (`integers-2025-A26-lem-8`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 8.

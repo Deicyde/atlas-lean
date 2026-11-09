@@ -6,4 +6,4 @@ satisfies $p < (m - 1)/2$.
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (viii) (`integers-2024-A114-lem-1`).
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (viii).

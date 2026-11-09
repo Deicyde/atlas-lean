@@ -13,4 +13,4 @@ $$(2^{2r-1} + 2^{r+r_1-1} - 2^{r+1} + 2^{r_1})\, 2^{n/4} +
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 6 (`integers-2026-A97-thm-6`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 6.

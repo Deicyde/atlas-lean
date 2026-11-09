@@ -7,4 +7,4 @@ the product of the lengths of the maximal runs of $1$s in the string.
 
 ## Sources
 
-- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 5 (`integers-2026-A49-thm-5`).
+- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 5.

@@ -13,4 +13,4 @@ constant.
 
 ## Sources
 
-- B. Klartag, J. Lehec, Affirmative resolution of Bourgain's slicing problem using Guan's bound, Geometric and Functional Analysis (2025), arXiv:2412.15044, https://arxiv.org/abs/2412.15044. Moved from `OpenConjectures/Geometry/HyperplaneSlicingUniversal`.
+- B. Klartag, J. Lehec, Affirmative resolution of Bourgain's slicing problem using Guan's bound, Geometric and Functional Analysis (2025), arXiv:2412.15044, https://arxiv.org/abs/2412.15044.

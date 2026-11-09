@@ -10,4 +10,4 @@ $2 \le l \le 4$, or $k \ge 6$.
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 10 (`integers-2025-A62-thm-10`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 10.

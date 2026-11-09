@@ -12,4 +12,4 @@ whenever $k$ is a unit modulo $p$). In particular $H_r^{(0)} = 1$, and $H_r^{(n)
 
 ## Sources
 
-- Mattarei–Tauraso, "Congruences of Multiple Sums Involving Sequences Invariant Under the Binomial Transform", J. Integer Sequences, stable URL `https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex`, Lemma `Gg`, semantic concept `jis_sem_1e299eb15a144f108cb2fe31`, statement `jis_9e5865a09e42b4fb025d838d`.
+- Mattarei–Tauraso, "Congruences of Multiple Sums Involving Sequences Invariant Under the Binomial Transform", J. Integer Sequences, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex>, Lemma.

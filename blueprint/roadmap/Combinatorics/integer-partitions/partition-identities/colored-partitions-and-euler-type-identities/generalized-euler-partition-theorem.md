@@ -11,4 +11,4 @@ $k$ is colored by a composition in $S$ with sum at most $k$.
 
 ## Sources
 
-- Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 5 (`integers-2026-A20-thm-5`).
+- Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 5.

@@ -7,4 +7,4 @@ many $n$ some graph $H$ on $n$ vertices has $u(H) \ge c \cdot 2^{\binom{n}{2}} /
 
 ## Sources
 
-- Bradač and Christoph [BrCh24] (f(n) = o(2^C(n,2)/n!)), per erdosproblems.com/426, https://www.erdosproblems.com/426. Moved from `OpenConjectures/GraphTheory/ErdosProblem426`.
+- Bradač and Christoph [BrCh24] (f(n) = o(2^C(n,2)/n!)), per erdosproblems.com/426, https://www.erdosproblems.com/426.

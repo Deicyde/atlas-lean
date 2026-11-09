@@ -11,4 +11,4 @@ group are its homomorphisms to $\mathbb{C}^\times$.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "representations of abelian groups"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, Ch. I (one-dimensional representations from characters).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, Ch. I (one-dimensional representations from characters).

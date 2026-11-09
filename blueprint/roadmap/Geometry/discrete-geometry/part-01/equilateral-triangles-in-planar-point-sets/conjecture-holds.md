@@ -10,4 +10,4 @@ large $n$, and $T(n)$ is asymptotically equivalent to $n^3/27$ as $n \to \infty$
 
 ## Sources
 
-- Felix Christian Clemen, Adrian Dumitrescu, and Dingyuan Liu, The number of regular simplices in higher dimensions, arXiv:2507.19841 (2025), https://arxiv.org/abs/2507.19841. Moved from `OpenConjectures/Geometry/ErdosProblem755`. Resolved true: Resolved externally by Clemen, Dumitrescu, and Liu. This repository records the statement, not an internal proof; a separate pinned Lean proof is cited in the registry.
+- Felix Christian Clemen, Adrian Dumitrescu, and Dingyuan Liu, The number of regular simplices in higher dimensions, arXiv:2507.19841 (2025), https://arxiv.org/abs/2507.19841. Resolved true: Resolved externally by Clemen, Dumitrescu, and Liu. This repository records the statement, not an internal proof; a separate pinned Lean proof is cited in the registry.

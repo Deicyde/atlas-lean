@@ -9,4 +9,4 @@ $p \in S^3$.
 
 ## Sources
 
-- J. Cerf, Sur les diffeomorphismes de la sphere de dimension trois, Lecture Notes in Mathematics 53, Springer (1968). Via leanprover/lean-eval@38361be, problem `cerf_gamma_four`.
+- J. Cerf, Sur les diffeomorphismes de la sphere de dimension trois, Lecture Notes in Mathematics 53, Springer (1968). Problem `cerf_gamma_four` of the lean-eval benchmark.

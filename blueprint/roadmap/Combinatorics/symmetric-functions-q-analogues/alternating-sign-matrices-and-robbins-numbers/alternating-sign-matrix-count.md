@@ -6,4 +6,4 @@ $\prod_{k=0}^{n-1} \frac{(3k+1)!}{(n+k)!}$.
 
 ## Sources
 
-- D. Zeilberger (1996); G. Kuperberg (1996). Knill, §168. Via leanprover/lean-eval@38361be, problem `alternating_sign_matrix_count`.
+- D. Zeilberger (1996); G. Kuperberg (1996). Knill, §168. Problem `alternating_sign_matrix_count` of the lean-eval benchmark.

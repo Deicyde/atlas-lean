@@ -10,4 +10,4 @@ The paper takes $N \ge 1$; here $N = 0$ is allowed.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 3 (`integers-2025-A10-lem-3`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 3.

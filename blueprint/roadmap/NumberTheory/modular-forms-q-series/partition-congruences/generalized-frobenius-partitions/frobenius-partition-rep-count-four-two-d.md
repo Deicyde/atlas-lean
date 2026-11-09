@@ -17,4 +17,4 @@ $\sum_{n \ge 0} \varphi_4(2n + 1)\, q^n = f_2^7 f_{10}^2 / (f_1^6 f_4^2 f_5^2)$.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 1, eqs. (3) and (4) (`integers-2025-A17-thm-1`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 1, eqs. (3) and (4).

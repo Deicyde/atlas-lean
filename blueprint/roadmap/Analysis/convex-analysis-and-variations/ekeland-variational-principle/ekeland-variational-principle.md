@@ -8,4 +8,4 @@ $f(x_\varepsilon) < f(y) + \varepsilon\, d(x_\varepsilon, y)$ for every $y \ne x
 
 ## Sources
 
-- I. Ekeland, J. Math. Anal. Appl. 47 (1974), 324-353, DOI 10.1016/0022-247X(74)90025-0. It follows from `ekeland_variational_principle_general`; the instance `[Nonempty X]` is unused and keeps the source's shape. Proves `Wanted` entry `ekeland_variational_principle`.
+- I. Ekeland, J. Math. Anal. Appl. 47 (1974), 324-353, DOI 10.1016/0022-247X(74)90025-0. It follows from `ekeland_variational_principle_general`; the instance `[Nonempty X]` is unused and keeps the source's shape.

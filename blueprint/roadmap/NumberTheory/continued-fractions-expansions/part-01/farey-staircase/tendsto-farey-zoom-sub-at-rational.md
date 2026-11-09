@@ -7,4 +7,4 @@ $n \to \infty$.
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 3 (`integers-2024-A37-thm-3`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 3.

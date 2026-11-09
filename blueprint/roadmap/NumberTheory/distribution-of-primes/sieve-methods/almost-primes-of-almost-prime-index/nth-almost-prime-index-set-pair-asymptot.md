@@ -9,4 +9,4 @@ $p_{j,k,n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ through the integer
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 2 (`integers-2024-A99-cor-2`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 2.

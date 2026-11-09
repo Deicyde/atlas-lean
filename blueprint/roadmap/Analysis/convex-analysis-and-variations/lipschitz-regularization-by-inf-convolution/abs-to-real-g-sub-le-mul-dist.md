@@ -16,4 +16,4 @@ $f(p) < \infty$, so the difference is one of real numbers.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Nonlinear functional analysis), `benchmark/level1/ma_proofbench_l1_36.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Nonlinear functional analysis), problem `ma_proofbench_l1_36`.

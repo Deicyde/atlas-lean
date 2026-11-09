@@ -9,4 +9,4 @@ C \left(\theta(1 - \theta)/\varepsilon + 1/(\theta(1 - \theta))\right)$.
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 1 (`integers-2026-A115-prop-1`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 1.

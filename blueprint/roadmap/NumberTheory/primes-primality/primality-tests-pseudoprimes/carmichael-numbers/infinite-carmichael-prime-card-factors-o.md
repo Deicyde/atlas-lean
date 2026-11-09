@@ -8,4 +8,4 @@ factors counted with multiplicity, $\Omega(n)$, is prime.
 
 ## Sources
 
-- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 1 (`integers-2024-A97-thm-1`); the hypothesis is the paper's Conjecture 3.
+- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 1; the hypothesis is the paper's Conjecture 3.

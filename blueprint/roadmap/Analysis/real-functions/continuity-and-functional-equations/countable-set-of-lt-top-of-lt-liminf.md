@@ -11,4 +11,4 @@ where $x$ ranges over $[0,1]$. Then the set $\{y\in[0,1] : f(y) < \infty\}$ is c
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of one variable), `benchmark/level2/ma_proofbench_l2_32.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of one variable), problem `ma_proofbench_l2_32`.

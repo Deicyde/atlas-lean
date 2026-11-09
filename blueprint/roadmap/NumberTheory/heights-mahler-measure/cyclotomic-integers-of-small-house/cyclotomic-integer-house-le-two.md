@@ -10,4 +10,4 @@ integer $m \ge 1$.
 
 ## Sources
 
-- https://arxiv.org/pdf/1004.0665 Via leanprover/lean-eval@38361be, problem `cyclotomic_integer_house_le_two`.
+- https://arxiv.org/pdf/1004.0665. Problem `cyclotomic_integer_house_le_two` of the lean-eval benchmark.

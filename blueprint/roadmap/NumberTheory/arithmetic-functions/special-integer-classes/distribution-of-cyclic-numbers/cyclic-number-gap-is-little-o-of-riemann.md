@@ -7,4 +7,4 @@ numbers satisfy $d_n = o(\sqrt{p_n} \log p_n)$ as $n \to \infty$.
 
 ## Sources
 
-- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 2 (`integers-2025-A23-thm-2`).
+- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 2.

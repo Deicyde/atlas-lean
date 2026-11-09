@@ -13,4 +13,4 @@ $(x, y, 1)$ of Wythoff's game with a pass, with the third coordinate dropped.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 3 (`integers-2025-G4-lem-3`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 3.

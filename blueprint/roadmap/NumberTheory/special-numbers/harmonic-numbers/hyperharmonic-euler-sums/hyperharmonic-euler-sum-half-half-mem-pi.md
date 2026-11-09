@@ -9,4 +9,4 @@ equals $\pi x$ for some $x$ in the $\mathbb{Q}$-subalgebra $\mathbb{Q}[\log 2, \
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, first part (`integers-2026-A81-cor-7`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, first part.

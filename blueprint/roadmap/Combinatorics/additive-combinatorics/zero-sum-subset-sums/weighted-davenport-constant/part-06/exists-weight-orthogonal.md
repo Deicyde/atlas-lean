@@ -8,4 +8,4 @@ $w \cdot v_i = \sum_j w_j (v_i)_j = 0$ for every $i$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 5.3 (`integers-2024-A38-lem-5-3`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 5.3.

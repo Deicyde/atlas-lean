@@ -10,4 +10,4 @@ $f(5k + 3) = (5k + 3)^2$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 4 (`integers-2024-A108-lem-4`).
+- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 4.

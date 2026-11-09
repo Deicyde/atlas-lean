@@ -10,4 +10,4 @@ $\varphi(g) = \sigma^{-1} \circ g \circ \sigma$ for every $g \in \mathrm{Gal}(\o
 
 ## Sources
 
-- Jürgen Neukirch, Alexander Schmidt, Kay Wingberg. *Cohomology of Number Fields*, Theorem 12.2.1. Via leanprover/lean-eval@38361be, problem `neukirch_uchida`.
+- Jürgen Neukirch, Alexander Schmidt, Kay Wingberg. *Cohomology of Number Fields*, Theorem 12.2.1. Problem `neukirch_uchida` of the lean-eval benchmark.

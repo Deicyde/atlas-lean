@@ -12,4 +12,4 @@ Unlike the paper, no assumption $1 < n < b$ is made.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 5 (`integers-2025-A13-thm-5`), with Definition 5 (cycle-preserving permutations).
+- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 5, with Definition 5 (cycle-preserving permutations).

@@ -11,4 +11,4 @@ level $l$, use the same columns as $F_0$ inside level $l$, and contain $c_0$.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 8 (`integers-2024-A58-lem-8`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 8.

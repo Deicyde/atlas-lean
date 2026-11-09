@@ -7,4 +7,4 @@ not $p$.
 
 ## Sources
 
-- OpenAI (2026), equation (1.3); retained PrimeGaps186.lean lines 1109-1117.
+- OpenAI (2026), equation (1.3).

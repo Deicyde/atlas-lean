@@ -12,4 +12,4 @@ The source assumes $0 < u < s$; the identity holds for every real $u$.
 
 ## Sources
 
-- Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Lemma 2, Equation (7) (`integers-2026-A124-lem-2`).
+- Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Lemma 2, Equation (7).

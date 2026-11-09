@@ -12,4 +12,4 @@ $$\sum_{k=0}^{n} (-1)^k \binom{t}{n-k} k^r (H_t - H_{t-n+k}) =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 5 (`integers-2026-A109-thm-5`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 5.

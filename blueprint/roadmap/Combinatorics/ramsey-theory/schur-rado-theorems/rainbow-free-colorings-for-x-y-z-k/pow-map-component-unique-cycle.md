@@ -10,4 +10,4 @@ for some $m \ge 0$. Thus every component of $G^k_p$ contains exactly one cycle.
 
 ## Sources
 
-- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 12 (`integers-2024-A105-lem-12`).
+- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 12.

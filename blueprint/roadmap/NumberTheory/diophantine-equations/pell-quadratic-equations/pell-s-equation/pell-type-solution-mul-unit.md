@@ -11,4 +11,4 @@ hypotheses beyond the two equations.
 
 ## Sources
 
-- E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem (label PellTheorem, an observation of Euler), equation (label DioEq), lines 605–614, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex>
+- E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem (an observation of Euler), equation, lines 605–614, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex>

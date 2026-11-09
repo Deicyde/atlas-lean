@@ -13,4 +13,4 @@ $1/(f_1^3 f_5) = f_4^4/(f_2^7 f_{10}) - 2q f_4^6 f_{20}^2/(f_2^9 f_{10}^3) +
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Lemma 4, eq. (15) (`integers-2025-A17-lem-4`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Lemma 4, eq. (15).

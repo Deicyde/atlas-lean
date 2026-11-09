@@ -8,4 +8,4 @@ where $\mathbb{Z}_p$ is identified with $\{0, 1, \dots, p - 1\}$.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 2 (`integers-2026-A97-lem-2`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 2.

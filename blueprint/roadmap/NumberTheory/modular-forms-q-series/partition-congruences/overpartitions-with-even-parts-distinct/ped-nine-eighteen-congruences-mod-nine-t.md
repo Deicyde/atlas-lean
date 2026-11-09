@@ -8,4 +8,4 @@ $\mathrm{ped}_{9,18}(729n + 547)$ are divisible by $27$.
 
 ## Sources
 
-- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 7 (`integers-2025-A69-thm-7`).
+- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 7.

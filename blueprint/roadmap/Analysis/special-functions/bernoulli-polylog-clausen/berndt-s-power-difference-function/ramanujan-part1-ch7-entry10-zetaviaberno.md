@@ -13,4 +13,4 @@ $r \in \mathbb{C}$ with $L(r) \neq R(r)$ has no accumulation point in $\mathbb{C
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7. Proves `Wanted` entry `ramanujan_part1_ch7_entry10_zetaviabernoulli`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.

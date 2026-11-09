@@ -10,4 +10,4 @@ $\sum_{i=1}^m n'_i S_i \le \sum_{i=1}^m n_i S_i$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 2 (`integers-2026-A113-prop-2`).
+- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 2.

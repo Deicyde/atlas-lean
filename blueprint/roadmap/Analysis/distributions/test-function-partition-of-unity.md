@@ -9,4 +9,4 @@ is contained in $U_i$, and $\sum_{i \in \iota} \varphi_i(x) = 1$ for every $x \i
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Spaces D(R^d)" / entry "partitions of unity"; <https://en.wikipedia.org/wiki/Partition_of_unity>.
+- <https://en.wikipedia.org/wiki/Partition_of_unity>.

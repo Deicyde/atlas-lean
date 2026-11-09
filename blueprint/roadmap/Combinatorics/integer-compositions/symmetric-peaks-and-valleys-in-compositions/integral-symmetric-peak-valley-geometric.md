@@ -11,4 +11,4 @@ of its symmetric valleys is $q \left(\frac{p}{1 - q^3} - \frac{1}{(1 + q)^2}\rig
 
 ## Sources
 
-- Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 5 (`integers-2026-A65-thm-5`).
+- Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 5.

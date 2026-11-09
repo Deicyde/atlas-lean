@@ -8,4 +8,4 @@ $A = U D V^*$.
 
 ## Sources
 
-- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013). Proves `Wanted` entry `complex_svd`, restated over `Matrix.unitaryGroup` in place of the entry's `IsUnitaryMatrix`.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013).

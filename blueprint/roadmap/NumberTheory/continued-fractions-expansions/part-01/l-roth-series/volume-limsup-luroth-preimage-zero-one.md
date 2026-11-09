@@ -10,4 +10,4 @@ if $\sum_{n \ge 0} \lambda(A_n) = \infty$ then $\lambda(E) = 1$.
 
 ## Sources
 
-- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 5 (`integers-2024-A67-thm-5`).
+- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 5.

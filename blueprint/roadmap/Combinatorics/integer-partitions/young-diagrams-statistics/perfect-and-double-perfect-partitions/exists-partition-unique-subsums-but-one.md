@@ -11,4 +11,4 @@ $m = 1$, since it contains no partition of $1$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Lemma 1 (`integers-2025-A109-lem-1`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Lemma 1.

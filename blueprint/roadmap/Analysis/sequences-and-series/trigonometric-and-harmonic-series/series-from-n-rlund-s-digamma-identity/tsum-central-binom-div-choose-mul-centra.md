@@ -12,4 +12,4 @@ $\sum_{n \ge h} \binom{2(n-h)}{n-h} / \bigl(\binom{n}{h} \binom{2(n+1)}{n+1} (n 
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 2, identity (20) (`integers-2025-A18-cor-2`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 2, identity (20).

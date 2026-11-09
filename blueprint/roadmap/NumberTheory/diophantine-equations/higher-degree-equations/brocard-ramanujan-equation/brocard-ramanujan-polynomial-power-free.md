@@ -13,4 +13,4 @@ $x_1 \cdots x_m P(x_1, \ldots, x_m) \pm 1$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 2 (`integers-2025-A71-thm-2`).
+- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 2.

@@ -14,4 +14,4 @@ $\sum_{k=1}^{n} 1/k$ is the $n$th harmonic number.
 
 ## Sources
 
-- Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Corollary (label eq:c_gf), lines 156–160, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex; obtained there by integrating the central-binomial harmonic generating function.
+- Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Corollary, lines 156–160, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex; obtained there by integrating the central-binomial harmonic generating function.

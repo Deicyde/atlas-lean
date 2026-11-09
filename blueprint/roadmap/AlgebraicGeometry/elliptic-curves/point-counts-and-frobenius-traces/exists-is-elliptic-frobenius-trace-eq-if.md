@@ -15,4 +15,4 @@ these integers; the statement above describes its image. Injectivity is Tate's i
 
 ## Sources
 
-- Daniel Vallières, *Elliptic Curves over Finite Fields and Ramanujan Graphs on Two Vertices*, INTEGERS 24 (2024), Article A8, Theorem 6 (`integers-2024-A8-thm-6`).
+- Daniel Vallières, *Elliptic Curves over Finite Fields and Ramanujan Graphs on Two Vertices*, INTEGERS 24 (2024), Article A8, Theorem 6.

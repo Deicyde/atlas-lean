@@ -10,4 +10,4 @@ $$n p_n = \sum_{k=1}^{n} A_k p_{n-k}.$$
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 11, printed p. 66 / PDF p. 76. Proves `Wanted` entry `ramanujan_part1_ch3_entry11`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 11, printed p. 66 / PDF p. 76.

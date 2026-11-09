@@ -10,4 +10,4 @@ $f(z) = g(z) + c$ for all $z \in \Omega$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; General properties of functions of one complex variable), `benchmark/level2/ma_proofbench_l2_69.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; General properties of functions of one complex variable), problem `ma_proofbench_l2_69`.

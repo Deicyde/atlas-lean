@@ -7,4 +7,4 @@ prime $p$ and an odd $e$, then the discriminant of $F_n$ is not a square in $\ma
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 1 (`integers-2025-A39-thm-1`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 1.

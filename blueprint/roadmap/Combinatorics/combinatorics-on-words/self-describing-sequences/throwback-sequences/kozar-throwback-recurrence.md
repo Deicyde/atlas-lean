@@ -14,4 +14,4 @@ theorem for every sequence of distinct positive integers.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, “Throwback Sequences of Positive Integers”, `https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.tex` (full SHA-256 `91dac9c7d7f6c550c7644258f70d07a03c43f6c7ffc28235addd4dc7598ac86b`); conjecture/introduction lines 71–80 (span SHA-256 `70d48f104dceb3101445c02233f446b984d48e2f9843a23a7ea661e55741e449`); exact throwback definition lines 98–103 (span SHA-256 `6c3a467d42a32e27785634c47c0c2e0ab98cbb5c1b8c8170b0f23ad6d6dfeefc`); general recurrence theorem and proof lines 124–137 (span SHA-256 `fae94ddbaa20aa3fee2d0efef1edd5ee1a73dc13ba62c6053c969a09e915abb5`); concept id `jis_grounded_4375195697bd0ce6cf205efc`.
+- Jesiah Darnell and Benjamin F. Dribus, “Throwback Sequences of Positive Integers”, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.tex>; conjecture/introduction lines 71–80; exact throwback definition lines 98–103; general recurrence theorem and proof lines 124–137.

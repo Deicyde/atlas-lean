@@ -26,4 +26,4 @@ determinant is rational (for $n = 3$ the determinant is $8 = 2^2 P_2$).
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 4 (`integers-2025-A97-cor-4`).
+- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 4.

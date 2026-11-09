@@ -11,4 +11,4 @@ Hyde and Moore proved this by introducing F-obstructions (Corollary 1.4; Corolla
 
 ## Sources
 
-- J. Hyde, J. T. Moore, Subgroups of PL+I which do not embed into Thompson's group F, Groups, Geometry, and Dynamics 17 (2023) 533-554, arXiv:2103.14911, https://arxiv.org/abs/2103.14911. Moved from `OpenConjectures/GroupTheory/GoldenRatioThompsonEmbed`.
+- J. Hyde, J. T. Moore, Subgroups of PL+I which do not embed into Thompson's group F, Groups, Geometry, and Dynamics 17 (2023) 533-554, arXiv:2103.14911, https://arxiv.org/abs/2103.14911.

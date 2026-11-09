@@ -12,4 +12,4 @@ extended it to convex bodies.
 
 ## Sources
 
-- Goodman and Goodman [GoGo45] (planar case and higher dimensions), per erdosproblems.com/1121, https://www.erdosproblems.com/1121. Moved from `OpenConjectures/Geometry/ErdosProblem1121`.
+- Goodman and Goodman [GoGo45] (planar case and higher dimensions), per erdosproblems.com/1121, https://www.erdosproblems.com/1121.

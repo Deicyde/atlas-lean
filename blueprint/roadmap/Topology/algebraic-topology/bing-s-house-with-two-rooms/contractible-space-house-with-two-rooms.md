@@ -5,4 +5,4 @@ subspace of $\mathbb{R} \times \mathbb{R} \times \mathbb{R}$, is contractible.
 
 ## Sources
 
-- Allen Hatcher, *Algebraic Topology*. Via leanprover/lean-eval@38361be, problem `contractibleSpace_houseWithTwoRooms`.
+- Allen Hatcher, *Algebraic Topology*. Problem `contractibleSpace_houseWithTwoRooms` of the lean-eval benchmark.

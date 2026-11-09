@@ -5,4 +5,4 @@ depth-zero odd harmonic number $O_n(0)$ equals $1$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11) (`integers-2026-A81-cor-1`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11).

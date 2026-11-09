@@ -12,4 +12,4 @@ every natural number $k$.
 
 ## Sources
 
-- Jeffrey H. Dinitz, Richard A. Games, and Robert L. Roth, “Seeds for Generalized Taxicab Numbers”, Journal of Integer Sequences 22 (2019), Article 19.3.3, Theorem line 229, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Dinitz/dinitz8.tex>. Proves `Wanted` entry `generalized_taxicab_seed_exists`.
+- Jeffrey H. Dinitz, Richard A. Games, and Robert L. Roth, “Seeds for Generalized Taxicab Numbers”, Journal of Integer Sequences 22 (2019), Article 19.3.3, Theorem line 229, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Dinitz/dinitz8.tex>.

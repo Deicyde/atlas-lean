@@ -26,4 +26,4 @@ $q^{n+1}$; the exponent $km - (l-1)(m-1)$ is at least $k + m - 1$.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 4 (`integers-2025-A28-thm-4`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 4.

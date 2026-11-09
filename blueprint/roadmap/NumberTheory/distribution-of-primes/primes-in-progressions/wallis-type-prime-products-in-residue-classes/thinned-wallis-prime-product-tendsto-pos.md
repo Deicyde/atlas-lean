@@ -12,4 +12,4 @@ limit if and only if $\mu(S) = 0$.
 
 ## Sources
 
-- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Corollary 1 (`integers-2026-A90-cor-1`).
+- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Corollary 1.

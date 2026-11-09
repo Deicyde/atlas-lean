@@ -10,4 +10,4 @@ $n/3 + c \log \log n$ for an absolute constant $c > 0$. This answers Green's Pro
 
 ## Sources
 
-- Benjamin Bedert, Large sum-free subsets of sets of integers via L¹-estimates for trigonometric series, arXiv:2502.08624v1, https://arxiv.org/abs/2502.08624v1. Moved from `OpenConjectures/Combinatorics/GreenProblem1LargeSumFree`.
+- Benjamin Bedert, Large sum-free subsets of sets of integers via L¹-estimates for trigonometric series, arXiv:2502.08624v1, https://arxiv.org/abs/2502.08624v1.

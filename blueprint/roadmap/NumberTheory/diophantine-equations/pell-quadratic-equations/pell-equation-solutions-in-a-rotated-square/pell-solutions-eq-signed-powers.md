@@ -10,4 +10,4 @@ signs $i, j \in \{1, -1\}$.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.1 (`integers-2025-A112-prop-1-1`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.1.

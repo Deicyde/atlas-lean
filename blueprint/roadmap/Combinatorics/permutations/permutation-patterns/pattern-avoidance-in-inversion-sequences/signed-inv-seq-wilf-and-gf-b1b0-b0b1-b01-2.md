@@ -11,4 +11,4 @@ $F_B(x) = \frac{1 - x}{1 - 2x} \sum_{j \ge 0} j!\, x^j$.
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C50) (`integers-2026-A74-thm-3`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C50).

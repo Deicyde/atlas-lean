@@ -9,4 +9,4 @@ $\operatorname{opx}(n, \emptyset) = 0$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.5 (`integers-2024-A1-thm-4-5`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.5.

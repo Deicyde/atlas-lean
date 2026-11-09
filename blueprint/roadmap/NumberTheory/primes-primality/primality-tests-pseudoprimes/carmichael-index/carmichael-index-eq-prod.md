@@ -8,4 +8,4 @@ multiplicative order divides $\gcd(p - 1, n/p^{e_p} - 1)$.
 
 ## Sources
 
-- Yamagami and Inaba, *On a Formula and Some Properties of Carmichael Indices*, INTEGERS 24 (2024), Article A40, Theorem 1 (`integers-2024-A40-thm-1`).
+- Yamagami and Inaba, *On a Formula and Some Properties of Carmichael Indices*, INTEGERS 24 (2024), Article A40, Theorem 1.

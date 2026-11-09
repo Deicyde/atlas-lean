@@ -9,4 +9,4 @@ When some $k_i = 0$ the grid $P$ is empty and the bound reads $O(n^d)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.13 (`integers-2024-A1-cor-5-13`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.13.

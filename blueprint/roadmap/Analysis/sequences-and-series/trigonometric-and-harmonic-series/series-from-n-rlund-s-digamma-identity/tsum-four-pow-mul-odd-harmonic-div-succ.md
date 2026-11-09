@@ -10,4 +10,4 @@ O_{m-1} \bigl(3\zeta(2) - 4 O^{(2)}_{m-1}\bigr)\Bigr).$$
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 11, identity (27) (`integers-2025-A18-thm-11`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 11, identity (27).

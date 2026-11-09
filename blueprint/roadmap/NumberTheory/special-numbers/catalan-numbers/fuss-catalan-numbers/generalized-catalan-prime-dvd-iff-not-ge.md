@@ -9,4 +9,4 @@ as `catalan_odd_iff`; this declaration keeps only the new general-`p` result.
 
 ## Sources
 
-- B. Sury, "Generalized Catalan Numbers: Linear Recursion and Divisibility," Journal of Integer Sequences 12 (2009), Article 09.7.5, Theorem (label divis), lines 154–158, https://cs.uwaterloo.ca/journals/JIS/VOL12/Sury/sury31.tex
+- B. Sury, "Generalized Catalan Numbers: Linear Recursion and Divisibility," Journal of Integer Sequences 12 (2009), Article 09.7.5, Theorem, lines 154–158, https://cs.uwaterloo.ca/journals/JIS/VOL12/Sury/sury31.tex

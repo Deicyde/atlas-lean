@@ -14,4 +14,4 @@ $s_1$ differs, and $N \ge 2$ is not assumed.
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.1 (`fq-2024-dekking11102023-thm-4.1`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.1.

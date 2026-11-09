@@ -8,4 +8,4 @@ $U_M \cap U_A = \{\delta\}$, where $\delta$ is the Dirichlet identity.
 
 ## Sources
 
-- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Proposition 1 (`integers-2025-A33-prop-1`).
+- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Proposition 1.

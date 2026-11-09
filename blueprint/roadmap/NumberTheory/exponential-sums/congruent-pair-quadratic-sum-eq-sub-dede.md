@@ -18,4 +18,4 @@ depends only on $p \bmod l$ is not restated.
 
 ## Sources
 
-- Brahim Mittou, *Explicit Evaluation of a Quadratic Sum Over Congruent Pairs Modulo a Prime*, INTEGERS 25 (2025), Article A85, Theorem 1 (`integers-2025-A85-thm-1`).
+- Brahim Mittou, *Explicit Evaluation of a Quadratic Sum Over Congruent Pairs Modulo a Prime*, INTEGERS 25 (2025), Article A85, Theorem 1.

@@ -17,4 +17,4 @@ coprime $d > c$.
 
 ## Sources
 
-- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Theorem 1 (`integers-2025-A51-thm-1`), with `g_ℓ(c, d)` from equation (1).
+- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Theorem 1, with `g_ℓ(c, d)` from equation (1).

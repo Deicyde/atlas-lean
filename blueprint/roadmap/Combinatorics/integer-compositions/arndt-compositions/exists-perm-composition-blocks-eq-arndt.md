@@ -8,4 +8,4 @@ them.
 
 ## Sources
 
-- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 2 (`integers-2026-A64-thm-2`).
+- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 2.

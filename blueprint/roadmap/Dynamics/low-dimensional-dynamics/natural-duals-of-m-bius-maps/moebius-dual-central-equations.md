@@ -20,4 +20,4 @@ $\alpha^2\gamma + \alpha^2\gamma\delta + 2\alpha + \beta + \beta\gamma + 2\alpha
 
 ## Sources
 
-- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 3 (`integers-2024-A17-lem-3`).
+- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 3.

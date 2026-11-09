@@ -13,4 +13,4 @@ correct order is $n^{\alpha}$ per Jun Gao and Jiang–Longbrake [JiLo25], per er
 
 ## Sources
 
-- External Lean disproof of Erdos Problem 1077, plby/lean-proofs at commit dfe2d78128b493c572cf525b1b8edf4897fb7664, https://github.com/plby/lean-proofs/blob/dfe2d78128b493c572cf525b1b8edf4897fb7664/src/latest/ErdosProblems/Erdos1077.lean#L265. Moved from `OpenConjectures/GraphTheory/ErdosProblem1077`.
+- External Lean disproof of Erdos Problem 1077, plby/lean-proofs, https://github.com/plby/lean-proofs/blob/dfe2d78128b493c572cf525b1b8edf4897fb7664/src/latest/ErdosProblems/Erdos1077.lean#L265.

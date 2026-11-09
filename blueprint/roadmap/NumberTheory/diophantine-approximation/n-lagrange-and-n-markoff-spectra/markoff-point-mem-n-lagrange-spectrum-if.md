@@ -12,4 +12,4 @@ a square in $\mathbb{Q}$, then $p$ is a principal norm.
 
 ## Sources
 
-- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 26 (`integers-2025-A47-prop-26`); the printed `λ_p ∈ L_p` is read as `λ_z ∈ L_p`, as in the proof.
+- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 26; the printed `λ_p ∈ L_p` is read as `λ_z ∈ L_p`, as in the proof.

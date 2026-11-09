@@ -10,4 +10,4 @@ The source also assumes $f \ne 0$, which follows from $f(1) = 1$.
 
 ## Sources
 
-- Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 1 (`integers-2025-A40-thm-1`).
+- Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 1.

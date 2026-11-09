@@ -18,4 +18,4 @@ as $E_5^5/E_{25} + 20q\,E_1^4E_{25}/E_5 + 110q^2E_1^3E_{25}^2/E_5 + 350q^3E_1^2E
 
 ## Sources
 
-- S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 2 (`integers-2025-A43-thm-2`).
+- S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 2.

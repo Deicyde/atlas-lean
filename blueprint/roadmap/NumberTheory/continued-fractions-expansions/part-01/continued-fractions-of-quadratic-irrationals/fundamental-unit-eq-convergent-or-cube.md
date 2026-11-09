@@ -14,4 +14,4 @@ since $\mathbb{Q}(\sqrt{1})$ is not a quadratic field.
 
 ## Sources
 
-- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 1 (`integers-2024-A50-thm-1`).
+- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 1.

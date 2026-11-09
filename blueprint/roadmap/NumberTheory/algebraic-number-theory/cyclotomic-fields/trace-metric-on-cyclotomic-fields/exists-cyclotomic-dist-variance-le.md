@@ -13,4 +13,4 @@ C \left( p^5 N^4 + p^6 N^3 \right).$$
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 7 (`integers-2025-A10-lem-7`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 7.

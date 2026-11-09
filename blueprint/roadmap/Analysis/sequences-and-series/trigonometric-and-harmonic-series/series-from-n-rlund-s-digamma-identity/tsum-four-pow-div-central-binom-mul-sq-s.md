@@ -10,4 +10,4 @@ $$\sum_{n=0}^{\infty} \frac{1}{(2n+1)(n+1)} = 2\ln 2.$$
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identities (17) and (18) (`integers-2025-A18-thm-8`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identities (17) and (18).

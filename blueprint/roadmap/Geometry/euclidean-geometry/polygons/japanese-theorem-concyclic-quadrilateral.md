@@ -12,4 +12,4 @@ Then $r_1 + r_2 = r_3 + r_4$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Japanese_theorem_for_concyclic_quadrilaterals (statement japanese-quads-s1).
+- https://en.wikipedia.org/wiki/Japanese_theorem_for_concyclic_quadrilaterals.

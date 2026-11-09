@@ -13,4 +13,4 @@ whose entries sum to $c$, and indices are added componentwise.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 8 (q-Ohno relations, Okuda–Takeyama) (`integers-2024-A6-thm-8`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 8 (q-Ohno relations, Okuda–Takeyama).

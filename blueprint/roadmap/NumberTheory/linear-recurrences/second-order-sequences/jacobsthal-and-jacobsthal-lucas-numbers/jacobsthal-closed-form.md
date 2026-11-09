@@ -11,4 +11,4 @@ $x^2 - x - 2$ has roots $2$ and $-1$.
 
 ## Sources
 
-- Darrin D. Frey and James A. Sellers, "Jacobsthal Numbers and Alternating Sign Matrices," Journal of Integer Sequences 3 (2000), Article 00.2.3, recurrence (label jacrecur) with initial values, lines 260–266, and Theorem, equation (Eq4a), lines 329–335, https://cs.uwaterloo.ca/journals/JIS/VOL3/SELLERS/sellers.tex
+- Darrin D. Frey and James A. Sellers, "Jacobsthal Numbers and Alternating Sign Matrices," Journal of Integer Sequences 3 (2000), Article 00.2.3, recurrence with initial values, lines 260–266, and Theorem, equation (Eq4a), lines 329–335, https://cs.uwaterloo.ca/journals/JIS/VOL3/SELLERS/sellers.tex

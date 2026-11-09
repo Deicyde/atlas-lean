@@ -11,4 +11,4 @@ $F_f(x)$ is the largest $k$ for which $f(n+1) = \cdots = f(n+k)$ has a solution 
 
 ## Sources
 
-- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 3 (`integers-2024-A91-thm-3`).
+- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 3.

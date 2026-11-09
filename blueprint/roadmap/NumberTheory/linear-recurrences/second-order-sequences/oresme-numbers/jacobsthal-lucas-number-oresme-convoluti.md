@@ -9,4 +9,4 @@ this is the equality reading, which matches Propositions 4.3 and 6.2 and Corolla
 
 ## Sources
 
-- Michael R. Bacon and Charles K. Cook, *Some Properties of Oresme Numbers and Convolutions with Various Second Order Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Article cookbacon061124, Proposition 6.4 (`fq-2024-cookbacon061124-prop-6.4`).
+- Michael R. Bacon and Charles K. Cook, *Some Properties of Oresme Numbers and Convolutions with Various Second Order Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Article cookbacon061124, Proposition 6.4.

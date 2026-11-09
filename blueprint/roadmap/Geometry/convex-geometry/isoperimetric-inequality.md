@@ -11,4 +11,4 @@ for some point $c \in \mathbb{R}^2$ and some real $r > 0$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Isoperimetric_inequality (isoperimetric-s1).
+- https://en.wikipedia.org/wiki/Isoperimetric_inequality.

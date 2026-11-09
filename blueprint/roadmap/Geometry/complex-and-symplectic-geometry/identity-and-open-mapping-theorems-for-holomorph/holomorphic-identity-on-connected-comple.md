@@ -8,4 +8,4 @@ $f = g$.
 
 ## Sources
 
-- O. Forster, Lectures on Riemann Surfaces, identity theorem for holomorphic maps; Lean states connected-complex-manifold vector-valued form. It is `MDifferentiable.eq_of_eqOn_of_isOpen`, kept under the source's name. Proves `Wanted` entry `holomorphic_identity_on_connected_complex_manifold`.
+- O. Forster, Lectures on Riemann Surfaces, identity theorem for holomorphic maps; Lean states connected-complex-manifold vector-valued form. It is `MDifferentiable.eq_of_eqOn_of_isOpen`, kept under the source's name.

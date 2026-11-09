@@ -10,4 +10,4 @@ $1 + 2\cos(2\pi/7)$, $(1 + \sqrt{5})/\sqrt{2}$ and $(1 + \sqrt{13})/2$.
 
 ## Sources
 
-- https://arxiv.org/pdf/1004.0665 Via leanprover/lean-eval@38361be, problem `cyclotomic_integer_house_between_two_and_76_33`.
+- https://arxiv.org/pdf/1004.0665. Problem `cyclotomic_integer_house_between_two_and_76_33` of the lean-eval benchmark.

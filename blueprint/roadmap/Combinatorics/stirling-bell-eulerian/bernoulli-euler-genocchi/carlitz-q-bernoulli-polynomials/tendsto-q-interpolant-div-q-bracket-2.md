@@ -15,4 +15,4 @@ $$g_r(q, k) = (-1)^k [k]! \, [r-1]! \, q^{1-r} \sum_{i=0}^{r-1}
 
 ## Sources
 
-- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.17 (`integers-2026-A85-prop-2-17`).
+- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.17.

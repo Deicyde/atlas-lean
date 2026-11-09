@@ -25,4 +25,4 @@ $k - l + (3l-2k)/2$ over odd $l$, which is not an integer.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 14 (`integers-2025-A28-thm-14`), even `m`.
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 14, even `m`.

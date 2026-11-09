@@ -10,4 +10,4 @@ $\{1, \dots, S\}$ has no such solution.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Schur%27s_theorem (statement schur-ramsey-s1).
+- https://en.wikipedia.org/wiki/Schur%27s_theorem.

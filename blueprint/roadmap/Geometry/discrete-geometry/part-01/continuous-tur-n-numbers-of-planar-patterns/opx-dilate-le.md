@@ -9,4 +9,4 @@ $m = \lceil \lceil n/c \rceil / (\lceil qd/c \rceil + 1) \rceil \, c$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.12 (`integers-2024-A1-lem-2-12`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.12.

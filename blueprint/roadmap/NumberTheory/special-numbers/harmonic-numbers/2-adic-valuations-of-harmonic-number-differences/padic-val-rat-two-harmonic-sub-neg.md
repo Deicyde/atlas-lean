@@ -9,4 +9,4 @@ In particular $H_n - H_m$ is not an integer.
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 2 (`integers-2024-A27-thm-2`). for `0 ≤ m ≤ n - 2` the difference `H_n - H_m` does not lie in the ring of `2`-adic integers.
+- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 2. for `0 ≤ m ≤ n - 2` the difference `H_n - H_m` does not lie in the ring of `2`-adic integers.

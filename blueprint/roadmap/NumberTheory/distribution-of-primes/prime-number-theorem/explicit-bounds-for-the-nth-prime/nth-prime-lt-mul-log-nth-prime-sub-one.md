@@ -9,4 +9,4 @@ $6076(\log 60169 - 1.1) \approx 60182.2$.
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 3, inequality (4) (`integers-2025-A58-lem-3`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 3, inequality (4).

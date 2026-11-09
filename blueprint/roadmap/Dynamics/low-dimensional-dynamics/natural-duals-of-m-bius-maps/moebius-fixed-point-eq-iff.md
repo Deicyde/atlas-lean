@@ -9,4 +9,4 @@ The paper's further side conditions on $\beta$ and $\gamma$ are not used.
 
 ## Sources
 
-- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 1 (`integers-2024-A17-lem-1`).
+- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 1.

@@ -15,4 +15,4 @@ element of $J(x_1, m_1, d_1)$. Cases (i) and (ii) are the two cases the source l
 
 ## Sources
 
-- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Theorem 2 (`integers-2026-A58-thm-2`).
+- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Theorem 2.

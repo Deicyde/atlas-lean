@@ -10,4 +10,4 @@ odd. Finally, $\pi(m)$ is even unless $m = 2$ and $P$ is odd.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.1 (`integers-2024-A36-cor-3-1`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.1.

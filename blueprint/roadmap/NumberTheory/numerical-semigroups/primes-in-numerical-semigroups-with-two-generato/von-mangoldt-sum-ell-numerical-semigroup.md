@@ -16,4 +16,4 @@ That is, $\psi_{\ell,c,d} \sim g_0(c, d)/2$ as $c \to \infty$, uniformly over co
 
 ## Sources
 
-- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Proposition 1 (`integers-2025-A51-prop-1`), with `g_ℓ(c, d)` from equation (1).
+- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Proposition 1, with `g_ℓ(c, d)` from equation (1).

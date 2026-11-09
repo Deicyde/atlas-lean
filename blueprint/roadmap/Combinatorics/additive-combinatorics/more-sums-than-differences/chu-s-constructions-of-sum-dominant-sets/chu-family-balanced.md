@@ -7,4 +7,4 @@ and $M^{k+1}$, and $1, 1$. Then $A$ is balanced: $|A + A| = |A - A|$.
 
 ## Sources
 
-- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 1 (`integers-2024-A32-thm-1`).
+- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 1.

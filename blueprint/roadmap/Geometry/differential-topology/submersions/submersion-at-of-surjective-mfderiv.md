@@ -14,4 +14,4 @@ inverse function theorem to obtain charts in which the map is the first projecti
 
 ## Sources
 
-- Mathlib `Mathlib/Geometry/Manifold/Submersion.lean` TODO (finite-dimensional surjective-`mfderiv` criterion); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.

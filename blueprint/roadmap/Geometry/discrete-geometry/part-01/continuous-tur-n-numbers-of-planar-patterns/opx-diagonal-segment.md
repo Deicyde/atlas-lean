@@ -11,4 +11,4 @@ $0 < n < \max(a, b)$ no subset of $[0, n]^2$ contains $P$, so $\operatorname{opx
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.2 (`integers-2024-A1-thm-4-2`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.2.

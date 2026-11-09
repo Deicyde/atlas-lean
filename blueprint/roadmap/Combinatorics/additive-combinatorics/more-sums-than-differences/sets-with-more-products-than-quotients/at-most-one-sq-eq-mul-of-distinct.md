@@ -6,4 +6,4 @@ $c^2 = ab$ holds; that is, no two of them hold simultaneously.
 
 ## Sources
 
-- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Lemma 3 (`integers-2024-A96-lem-3`).
+- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Lemma 3.

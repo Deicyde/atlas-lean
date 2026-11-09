@@ -13,4 +13,4 @@ $(1, 1, 1, 0, 0, 0)$ and $(1, 1, 1, 1, 1, 1)$.
 
 ## Sources
 
-- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 13 (`integers-2025-G2-thm-13`).
+- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 13.

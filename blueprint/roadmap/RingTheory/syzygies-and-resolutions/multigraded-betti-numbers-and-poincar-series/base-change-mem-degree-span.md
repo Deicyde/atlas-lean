@@ -10,4 +10,4 @@ with $d_j = \alpha$.
 
 ## Sources
 
-- Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, which split a graded free resolution and take the degree-`α` component after tensoring with `K`.
+- Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, which split a graded free resolution and take the degree-`α` component after tensoring with `K`.

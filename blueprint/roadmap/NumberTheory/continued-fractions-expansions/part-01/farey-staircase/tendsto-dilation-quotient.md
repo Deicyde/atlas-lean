@@ -7,4 +7,4 @@ $\lambda \ne 1$; that is, the dilation derivative of $f$ at $x$ exists and equal
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Proposition 12 (`integers-2024-A37-prop-12`); dilation derivative as defined before it.
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Proposition 12; dilation derivative as defined before it.

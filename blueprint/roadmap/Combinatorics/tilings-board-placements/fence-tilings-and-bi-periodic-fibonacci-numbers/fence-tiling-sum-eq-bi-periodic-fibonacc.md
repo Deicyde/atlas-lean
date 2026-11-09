@@ -8,4 +8,4 @@ bi-periodic Fibonacci number squared $q^2_{n+1}$.
 
 ## Sources
 
-- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Theorem 2.2 (`fq-2024-belaggoun01132024-thm-2.2`).
+- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Theorem 2.2.

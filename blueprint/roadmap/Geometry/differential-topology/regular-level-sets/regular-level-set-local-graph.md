@@ -14,4 +14,4 @@ product-space implicit function theorem then identifies the level set with a loc
 
 ## Sources
 
-- undergrad.yaml `Submanifolds of R^n / local graphs` (missing); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4 (rank theorem).
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4 (rank theorem).

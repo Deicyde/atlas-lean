@@ -10,4 +10,4 @@ $|I_n(A'_{100})| = |I_n(A'_{101})| = |I_n(A'_{110})| = |I_n(B)|$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 9 (`integers-2024-A76-thm-9`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 9.

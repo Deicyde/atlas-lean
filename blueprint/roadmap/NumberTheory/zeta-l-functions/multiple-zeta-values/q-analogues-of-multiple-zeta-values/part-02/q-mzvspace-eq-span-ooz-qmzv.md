@@ -11,4 +11,4 @@ $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 10 (`integers-2024-A6-prop-10`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 10.

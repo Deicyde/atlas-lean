@@ -15,4 +15,4 @@ as the source states.
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Corollary 1 (`integers-2024-A5-cor-1`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Corollary 1.

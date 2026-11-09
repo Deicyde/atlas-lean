@@ -13,4 +13,4 @@ transcendental examples are $f = P(e^{az})$ with $P$ a polynomial and $a$ a cons
 
 ## Sources
 
-- Walter Bergweiler, Alexandre Eremenko and Aimo Hinkkanen, Entire functions with two radially distributed values, Math. Proc. Cambridge Philos. Soc. 165 (2018) 93-108, arXiv:1509.03283, https://arxiv.org/abs/1509.03283. Moved from `OpenConjectures/Analysis/EntireZerosOnesLines`.
+- Walter Bergweiler, Alexandre Eremenko and Aimo Hinkkanen, Entire functions with two radially distributed values, Math. Proc. Cambridge Philos. Soc. 165 (2018) 93-108, arXiv:1509.03283, https://arxiv.org/abs/1509.03283.

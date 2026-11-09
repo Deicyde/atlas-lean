@@ -24,4 +24,4 @@ $q' = e^{\pi i z'}$ with $z z' = -1$.
 
 ## Sources
 
-- S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 1, Equation (3) (`integers-2025-A43-thm-1`).
+- S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 1, Equation (3).

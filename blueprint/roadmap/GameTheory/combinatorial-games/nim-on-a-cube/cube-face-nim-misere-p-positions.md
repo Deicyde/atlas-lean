@@ -13,4 +13,4 @@ $p \in \mathcal P$ if and only if either $C \ge 2$ and $a \oplus b \oplus c \opl
 
 ## Sources
 
-- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 9 (`integers-2025-G2-thm-9`).
+- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 9.

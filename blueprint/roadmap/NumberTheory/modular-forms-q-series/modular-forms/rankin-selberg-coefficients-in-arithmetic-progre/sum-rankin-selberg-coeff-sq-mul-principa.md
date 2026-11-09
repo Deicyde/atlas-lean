@@ -16,4 +16,4 @@ for every prime $q$ and every real $x \ge q$.
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.2 (`integers-2024-A3-prop-3-2`).
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.2.

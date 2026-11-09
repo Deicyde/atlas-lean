@@ -8,4 +8,4 @@ $x, y \in \mathbb{R}$ and $f(x) = h(x)$ for almost every $x \in \mathbb{R}$.
 
 ## Sources
 
-- de Bruijn [dB66] and Jurkat [Ju65], independently, per erdosproblems.com/1126, https://www.erdosproblems.com/1126. Moved from `OpenConjectures/Analysis/ErdosProblem1126`.
+- de Bruijn [dB66] and Jurkat [Ju65], independently, per erdosproblems.com/1126, https://www.erdosproblems.com/1126.

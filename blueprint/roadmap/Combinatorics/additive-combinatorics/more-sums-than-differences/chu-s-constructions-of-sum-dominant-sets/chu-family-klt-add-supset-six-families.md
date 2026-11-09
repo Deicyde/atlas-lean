@@ -11,4 +11,4 @@ $X_1, \ldots, X_6$, and the sets $X_1, \ldots, X_6$ are pairwise disjoint.
 
 ## Sources
 
-- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 7 (`integers-2024-A32-lem-7`).
+- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 7.

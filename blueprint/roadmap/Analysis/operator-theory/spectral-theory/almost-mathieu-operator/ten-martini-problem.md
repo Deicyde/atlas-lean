@@ -7,4 +7,4 @@ spectrum of $H$ is nonempty, compact, perfect and totally disconnected, that is,
 
 ## Sources
 
-- A. Avila and S. Jitomirskaya, 'The Ten Martini Problem', Ann. of Math. 170 (2009), 303-342, https://doi.org/10.4007/annals.2009.170.303. Via leanprover/lean-eval@38361be, problem `ten_martini_problem`.
+- A. Avila and S. Jitomirskaya, 'The Ten Martini Problem', Ann. of Math. 170 (2009), 303-342, https://doi.org/10.4007/annals.2009.170.303. Problem `ten_martini_problem` of the lean-eval benchmark.

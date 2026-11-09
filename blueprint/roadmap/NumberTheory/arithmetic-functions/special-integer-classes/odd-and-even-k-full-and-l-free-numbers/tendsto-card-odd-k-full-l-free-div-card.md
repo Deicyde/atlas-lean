@@ -11,4 +11,4 @@ as $x \to \infty$ through the reals.
 
 ## Sources
 
-- Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Theorem 1 (`integers-2024-A106-thm-1`).
+- Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Theorem 1.

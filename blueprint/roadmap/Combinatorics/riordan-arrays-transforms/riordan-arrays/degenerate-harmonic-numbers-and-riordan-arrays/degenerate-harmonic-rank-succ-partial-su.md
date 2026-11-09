@@ -10,4 +10,4 @@ $$\sum_{k=0}^{n} H_\lambda(k, r+1, \alpha) =
 
 ## Sources
 
-- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 4 (`integers-2024-A41-thm-4`).
+- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 4.

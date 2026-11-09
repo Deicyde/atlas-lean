@@ -11,4 +11,6 @@ o\bigl(\|x - x_0\|^n\bigr).$$
 
 ## Sources
 
-- - Mathlib `docs/undergrad.yaml`, section "Multivariable calculus / Differential calculus", entry "Taylor's theorem with little-o remainder" (currently missing: empty entry, no Mathlib declaration). The integral-remainder form exists as `map_add_eq_sum_add_integral_iteratedFDeriv`. - H. Cartan, *Differential Calculus*, Ch. III, Taylor's formula with remainder. - https://en.wikipedia.org/wiki/Taylor%27s_theorem#Taylor's_theorem_in_several_variables
+- The integral-remainder form exists as `map_add_eq_sum_add_integral_iteratedFDeriv`.
+- H. Cartan, *Differential Calculus*, Ch. III, Taylor's formula with remainder.
+- https://en.wikipedia.org/wiki/Taylor%27s_theorem#Taylor's_theorem_in_several_variables

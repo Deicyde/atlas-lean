@@ -10,4 +10,4 @@ $y_i = B_{i+1}$ for all $i$.
 
 ## Sources
 
-- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 2 (`integers-2026-A24-lem-2`).
+- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 2.

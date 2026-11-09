@@ -6,4 +6,4 @@ $f \colon A \to B$ such that the sums $a + f(a)$, for $a \in A$, are pairwise di
 
 ## Sources
 
-- Boris Arsovski, A proof of Snevily's conjecture, Israel J. Math. 182 (2011), 505-508. Moved from `OpenConjectures/Combinatorics/SnevilyTransversal`.
+- Boris Arsovski, A proof of Snevily's conjecture, Israel J. Math. 182 (2011), 505-508.

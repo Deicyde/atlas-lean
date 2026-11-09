@@ -6,4 +6,4 @@ $b \le \tfrac{4}{5}k$, then $\binom{2k}{k} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Sources
 
-- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 11 (`integers-2026-A26-lem-11`).
+- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 11.

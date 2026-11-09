@@ -7,4 +7,4 @@ $1 \le i \le 1 + T$, and contains $3 + 4i$ for every integer $i$ with $0 \le i \
 
 ## Sources
 
-- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 1 (`integers-2024-A32-lem-1`).
+- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 1.

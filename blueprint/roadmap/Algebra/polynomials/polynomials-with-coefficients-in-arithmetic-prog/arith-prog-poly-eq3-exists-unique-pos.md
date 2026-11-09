@@ -7,4 +7,4 @@ solution, and every positive real solution $x$ satisfies $x > 1$.
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 1 (`integers-2026-A92-prop-1`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 1.

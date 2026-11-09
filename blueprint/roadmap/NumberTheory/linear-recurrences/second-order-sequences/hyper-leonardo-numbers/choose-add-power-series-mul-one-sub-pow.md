@@ -9,4 +9,4 @@ The paper states this for positive $r$; it holds for every $r \ge 0$ and is stat
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Lemma 2 (`integers-2026-A48-lem-2`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Lemma 2.

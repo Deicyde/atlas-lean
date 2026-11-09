@@ -12,4 +12,4 @@ The paper states the bound as $2^{O(k)} n$, with the implied constant depending 
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.4 (`integers-2024-A1-cor-3-4`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.4.

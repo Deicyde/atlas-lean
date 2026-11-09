@@ -14,4 +14,4 @@ in $R[[x]]$, where the denominator has constant coefficient $1$ and so is invert
 
 ## Sources
 
-- Jong Hyun Kim, "Hadamard Products and Tilings", Journal of Integer Sequences 12 (2009), Article 09.7.4, Theorem `eq:61`, lines 430-437, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Kim/kim18.tex>. Proves `Wanted` entry `hadamard_fibonacci_product`.
+- Jong Hyun Kim, "Hadamard Products and Tilings", Journal of Integer Sequences 12 (2009), Article 09.7.4, Theorem `eq:61`, lines 430-437, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Kim/kim18.tex>.

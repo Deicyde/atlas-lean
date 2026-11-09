@@ -15,4 +15,4 @@ and if $a$ and $b$ are integers, then for every $k \ge 0$ there is an integer $m
 
 ## Sources
 
-- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 3 (3), quoting Bridgeman (`integers-2025-A52-thm-3`).
+- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 3 (3), quoting Bridgeman.

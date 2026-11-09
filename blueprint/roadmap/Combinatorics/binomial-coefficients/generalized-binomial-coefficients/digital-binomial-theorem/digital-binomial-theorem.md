@@ -10,4 +10,4 @@ carries; equivalently, $m$ has a binary digit $1$ only in positions where $n$ ha
 
 ## Sources
 
-- Hieu D. Nguyen, "A Generalization of the Digital Binomial Theorem," Journal of Integer Sequences 18 (2015), Article 15.5.7, Theorem (label th:digital-binomial-theorem), equation (label eq:digital-binomial-theorem-carry-free), lines 107–113, https://cs.uwaterloo.ca/journals/JIS/VOL18/Nguyen/nguyen6.tex
+- Hieu D. Nguyen, "A Generalization of the Digital Binomial Theorem," Journal of Integer Sequences 18 (2015), Article 15.5.7, Theorem, equation, lines 107–113, https://cs.uwaterloo.ca/journals/JIS/VOL18/Nguyen/nguyen6.tex

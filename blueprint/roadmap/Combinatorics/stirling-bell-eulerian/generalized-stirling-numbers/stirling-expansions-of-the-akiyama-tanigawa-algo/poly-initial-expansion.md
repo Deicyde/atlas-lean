@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} \binom{n}{k} x^k a(0, n - k) = \sum_{m=0}^{n} (-1)^m m! {n \bra
 
 ## Sources
 
-- Ayhan Dil, Veli Kurt, and Mehmet Cenkci, "Algorithms for Bernoulli and Related Polynomials," Journal of Integer Sequences 10 (2007), Article 07.5.4, Proposition 5 (label prop5), lines 661–671, https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex
+- Ayhan Dil, Veli Kurt, and Mehmet Cenkci, "Algorithms for Bernoulli and Related Polynomials," Journal of Integer Sequences 10 (2007), Article 07.5.4, Proposition 5, lines 661–671, https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex

@@ -15,4 +15,4 @@ derivative of $f$; for $d = 0$ the second sum is empty.
 
 ## Sources
 
-- Madeline Locus Dawsey, Tyler Russell, and Dannie Urban, "Derivatives and Integrals of Polynomials Associated with Integer Partitions," Journal of Integer Sequences 25 (2022), Article 22.5.1, Theorem 1 (label `derivativethm`), lines 108–114, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Dawsey/dawsey3.tex>.
+- Madeline Locus Dawsey, Tyler Russell, and Dannie Urban, "Derivatives and Integrals of Polynomials Associated with Integer Partitions," Journal of Integer Sequences 25 (2022), Article 22.5.1, Theorem 1, lines 108–114, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Dawsey/dawsey3.tex>.

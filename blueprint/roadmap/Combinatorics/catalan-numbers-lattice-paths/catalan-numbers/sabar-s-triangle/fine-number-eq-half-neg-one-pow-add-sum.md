@@ -8,4 +8,4 @@ $$F(n) = \frac{1}{2} (-1)^n +
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 3 (`integers-2026-A27-cor-3`).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 3.

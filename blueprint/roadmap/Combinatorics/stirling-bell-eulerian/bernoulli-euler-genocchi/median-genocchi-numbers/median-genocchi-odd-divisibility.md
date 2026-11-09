@@ -13,4 +13,4 @@ this finite sum instead of his continued fraction.
 
 ## Sources
 
-- Kwang-Wu Chen, *An Interesting Lemma for Regular C-fractions*, Journal of Integer Sequences 6 (2003), Article 03.4.8: <https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.tex>. Proves `Wanted` entry `medianGenocchiOdd_divisibility`.
+- Kwang-Wu Chen, *An Interesting Lemma for Regular C-fractions*, Journal of Integer Sequences 6 (2003), Article 03.4.8: <https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.tex>.

@@ -10,4 +10,4 @@ itself is never an integer for $n > 1$.
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers," Journal of Integer Sequences 29 (2026), Article 26.4.8, Theorem (label T3), lines 460–462, https://cs.uwaterloo.ca/journals/JIS/VOL29/Alzer/alzer22.tex Proves `Wanted` entry `harmonic_partial_sum_not_int`.
+- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers," Journal of Integer Sequences 29 (2026), Article 26.4.8, Theorem, lines 460–462, https://cs.uwaterloo.ca/journals/JIS/VOL29/Alzer/alzer22.tex

@@ -11,4 +11,4 @@ see Midy's theorem, general form.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Midy%27s_theorem, statement `midy-s1`.
+- https://en.wikipedia.org/wiki/Midy%27s_theorem.

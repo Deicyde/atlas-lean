@@ -7,4 +7,4 @@ nonexpansive self-map $T : K \to K$ has a fixed point.
 
 ## Sources
 
-- W. A. Kirk, A fixed point theorem for mappings which do not increase distances, Amer. Math. Monthly 72 (1965). Listed as §228 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §228. Via leanprover/lean-eval@38361be, problem `kirk_normal_structure`.
+- W. A. Kirk, A fixed point theorem for mappings which do not increase distances, Amer. Math. Monthly 72 (1965). Listed as §228 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §228. Problem `kirk_normal_structure` of the lean-eval benchmark.

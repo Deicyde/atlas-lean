@@ -9,4 +9,4 @@ divides $k$ and $a_{k \bmod l}$ otherwise. The period $l$ need not be minimal.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, the expansions `√d = [a₀; a₁, …, a_{l-1}, 2a₀]` of Theorem 1 (`integers-2026-A69-thm-1`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, the expansions `√d = [a₀; a₁, …, a_{l-1}, 2a₀]` of Theorem 1.

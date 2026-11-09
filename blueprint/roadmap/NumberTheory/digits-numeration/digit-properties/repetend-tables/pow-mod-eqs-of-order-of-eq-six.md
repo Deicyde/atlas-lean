@@ -10,4 +10,4 @@ $b_2^2 = un - b_1 + (H + 2b_1 - 1)H$ and $b_1 b_2 = un - 1 + (b_1 + 1)H$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 35 (`integers-2025-A26-lem-35`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 35.

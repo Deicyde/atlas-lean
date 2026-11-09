@@ -10,4 +10,4 @@ $b^{n-1} = 1$; it also gives meaning to negative exponents.
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 6 (`integers-2024-A23-thm-6`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 6.

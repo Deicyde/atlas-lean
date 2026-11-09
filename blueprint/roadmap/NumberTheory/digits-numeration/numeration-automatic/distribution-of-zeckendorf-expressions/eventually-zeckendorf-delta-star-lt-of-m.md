@@ -10,4 +10,4 @@ $y \ne x$ sufficiently close to $x$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 8 (`integers-2025-A25-prop-8`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 8.

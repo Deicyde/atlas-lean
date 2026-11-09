@@ -11,4 +11,4 @@ $\log a_n \sim C_2 n^{\alpha/(\alpha + 1)}$ as $n \to \infty$.
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 3 (`integers-2026-A116-thm-3`), quoting Meinardus.
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 3, quoting Meinardus.

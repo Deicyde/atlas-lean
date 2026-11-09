@@ -6,4 +6,4 @@ $PD_2(48n + 26) \equiv 0 \pmod 4$.
 
 ## Sources
 
-- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 14 (`integers-2024-A16-thm-14`).
+- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 14.

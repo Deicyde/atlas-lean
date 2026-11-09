@@ -12,4 +12,4 @@ $\zeta_q^{\mathrm{OBZ}}$ of the source.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i) (`integers-2024-A6-prop-12`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i).

@@ -11,4 +11,4 @@ unit of $\mathbb{Z}G$ is trivial and no exotic unit exists.
 
 ## Sources
 
-- Andreas Bächle, Integral group rings of solvable groups with trivial central units, Forum Math. 30 (2018), arXiv:1701.04347, https://arxiv.org/abs/1701.04347. Moved from `OpenConjectures/Algebra/ExoticUnitsC2C2C2C6`.
+- Andreas Bächle, Integral group rings of solvable groups with trivial central units, Forum Math. 30 (2018), arXiv:1701.04347, https://arxiv.org/abs/1701.04347.

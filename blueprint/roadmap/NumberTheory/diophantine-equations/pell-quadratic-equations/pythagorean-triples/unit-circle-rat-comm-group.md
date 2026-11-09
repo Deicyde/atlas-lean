@@ -14,4 +14,4 @@ and hold automatically in $\mathbb{Q}$.
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4 (`integers-2024-A5-thm-4`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4.

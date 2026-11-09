@@ -8,4 +8,4 @@ boundary of $P$.
 
 ## Sources
 
-- G. Pick, *Geometrisches zur Zahlenlehre* (1899). Knill, *Some fundamental theorems in mathematics*, §154. Via leanprover/lean-eval@38361be, problem `pick`.
+- G. Pick, *Geometrisches zur Zahlenlehre* (1899). Knill, *Some fundamental theorems in mathematics*, §154. Problem `pick` of the lean-eval benchmark.

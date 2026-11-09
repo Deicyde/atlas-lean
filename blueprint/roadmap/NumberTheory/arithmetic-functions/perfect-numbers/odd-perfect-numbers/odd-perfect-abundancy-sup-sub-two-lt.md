@@ -7,4 +7,4 @@ $H(n) - 2$ satisfies $H(n) - 2 < \frac{25}{8 p_1 \log p_1}$.
 
 ## Sources
 
-- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Corollary 2 (`integers-2025-A59-cor-2`).
+- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Corollary 2.

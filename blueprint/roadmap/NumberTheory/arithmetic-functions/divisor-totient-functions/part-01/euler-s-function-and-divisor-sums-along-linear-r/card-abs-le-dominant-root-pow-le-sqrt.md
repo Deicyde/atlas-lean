@@ -13,4 +13,4 @@ integers $1 \le n \le x$ with $|U_n| \le |\alpha_1|^{n(1 - x^{-c})}$ is at most 
 
 ## Sources
 
-- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 5 (`fq-2024-luca09162024rev2-lem-5`).
+- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 5.

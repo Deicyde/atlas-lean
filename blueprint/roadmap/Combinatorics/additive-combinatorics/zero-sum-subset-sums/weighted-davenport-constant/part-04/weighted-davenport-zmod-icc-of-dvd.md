@@ -7,4 +7,4 @@ $D_{\{1, \dots, r\}}(\mathbb{Z}/n\mathbb{Z}) = m$.
 
 ## Sources
 
-- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 1, second part (`integers-2026-A89-cor-1`).
+- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 1, second part.

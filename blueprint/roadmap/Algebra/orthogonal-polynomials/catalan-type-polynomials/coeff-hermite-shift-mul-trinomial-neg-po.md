@@ -18,4 +18,4 @@ $h^{k;\lambda}_{n,m}(x, y, z)$ (Definition 3, Equations (8) and (9)).
 
 ## Sources
 
-- M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 2 (`integers-2026-A105-thm-2`).
+- M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 2.

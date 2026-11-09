@@ -14,4 +14,4 @@ $$n\, \varphi(r, n) = \varphi(r + 1, n) - \log x \cdot \varphi(r + 1, n + 1).$$
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) printed p. 66 / PDF p. 76, Entry 12 p. 67 / PDF p. 77, and Entry 16(a) p. 78 / PDF p. 88. Proves `Wanted` entry `ramanujan_part1_ch3_entry16`. The series is `Entry12.F`, and the recurrence is `Entry12.ramanujan_part1_ch3_entry12` multiplied by `exp (-n * log x)`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) printed p. 66 / PDF p. 76, Entry 12 p. 67 / PDF p. 77, and Entry 16(a) p. 78 / PDF p. 88. The series is `Entry12.F`, and the recurrence is `Entry12.ramanujan_part1_ch3_entry12` multiplied by `exp (-n * log x)`.

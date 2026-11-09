@@ -9,4 +9,4 @@ $\mu(P) = \operatorname{Re} \operatorname{tr}(\rho P)$ for every orthogonal proj
 
 ## Sources
 
-- A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Via leanprover/lean-eval@38361be, problem `gleason_theorem_finite`.
+- A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Problem `gleason_theorem_finite` of the lean-eval benchmark.

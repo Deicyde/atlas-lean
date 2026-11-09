@@ -17,4 +17,4 @@ $\operatorname{asc}_{\mathrm{odd}}$ counts its odd ascents.
 
 ## Sources
 
-- Richard Ehrenborg and Margaret A. Readdy, "The Gaussian Coefficient Revisited," Journal of Integer Sequences 19 (2016), Article 16.7.8, Corollary 3 (label corollary_q_1_q), equation (equation_smaller_q_binomial), lines 301–311, https://cs.uwaterloo.ca/journals/JIS/VOL19/Ehrenborg/ehr3.tex
+- Richard Ehrenborg and Margaret A. Readdy, "The Gaussian Coefficient Revisited," Journal of Integer Sequences 19 (2016), Article 16.7.8, Corollary 3, equation, lines 301–311, https://cs.uwaterloo.ca/journals/JIS/VOL19/Ehrenborg/ehr3.tex

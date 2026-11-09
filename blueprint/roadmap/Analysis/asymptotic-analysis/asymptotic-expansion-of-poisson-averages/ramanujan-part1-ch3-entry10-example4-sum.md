@@ -6,4 +6,4 @@ $\sum_{k=0}^{\infty} e^{-x} x^k H_k / k!$ is summable.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 4, printed pp. 65-66 / PDF pp. 75-76. Proves `Wanted` entry `ramanujan_part1_ch3_entry10_example4_summable`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 4, printed pp. 65-66 / PDF pp. 75-76.

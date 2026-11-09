@@ -21,4 +21,4 @@ principal branch of the logarithm.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, Corollary 1, printed p. 45 / PDF p. 55. Proves `Wanted` entry `ramanujan_part1_ch3_entry1_corollary1_binomial_series`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, Corollary 1, printed p. 45 / PDF p. 55.

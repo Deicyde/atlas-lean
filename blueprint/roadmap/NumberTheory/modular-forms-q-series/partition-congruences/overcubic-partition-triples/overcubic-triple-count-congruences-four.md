@@ -8,4 +8,4 @@ and $\mathrm{bt}(64 \cdot 81^{\alpha+2} n + 216 \cdot 81^{\alpha+1})$ is divisib
 
 ## Sources
 
-- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 5, eqs. (18)-(24) (`integers-2024-A80-thm-5`).
+- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 5, eqs. (18)-(24).

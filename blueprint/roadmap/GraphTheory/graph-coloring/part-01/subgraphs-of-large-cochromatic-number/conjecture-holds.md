@@ -11,4 +11,4 @@ bounds are $0$ when $m \le 1$. This answers Erdős Problem 760 affirmatively.
 
 ## Sources
 
-- plby/lean-proofs, src/v4.29.1/ErdosProblems/Erdos760.lean (theorem erdos_760, following Alon, Krivelevich and Sudakov, Subgraphs with a large cochromatic number, 1997), pinned revision 8822f7ddef30fadbd92e1c6ab4ed897af356af5e, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos760.lean#L1306. Moved from `OpenConjectures/Combinatorics/ErdosProblem760`.
+- plby/lean-proofs (following Alon, Krivelevich and Sudakov, Subgraphs with a large cochromatic number, 1997), https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos760.lean#L1306.

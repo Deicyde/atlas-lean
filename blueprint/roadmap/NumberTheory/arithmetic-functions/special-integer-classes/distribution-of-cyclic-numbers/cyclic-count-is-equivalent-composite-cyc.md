@@ -8,4 +8,4 @@ $\gamma$ is the Euler–Mascheroni constant.
 
 ## Sources
 
-- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Lemma 1 (`integers-2025-A23-lem-1`).
+- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Lemma 1.

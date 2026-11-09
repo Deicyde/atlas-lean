@@ -15,4 +15,4 @@ cancellation. The combinatorial route follows Ehrenborg, Hedmark, and Hettle, Th
 
 ## Sources
 
-- Richard Ehrenborg, Dustin Hedmark, and Cyrus Hettle, "A Restricted Growth Word Approach to Partitions with Odd/Even Size Blocks," Journal of Integer Sequences 20 (2017), Article 17.5.5, Theorem 1 (label `theorem_one`), lines 190-200, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Ehrenborg/ehren4.tex>.
+- Richard Ehrenborg, Dustin Hedmark, and Cyrus Hettle, "A Restricted Growth Word Approach to Partitions with Odd/Even Size Blocks," Journal of Integer Sequences 20 (2017), Article 17.5.5, Theorem 1, lines 190-200, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Ehrenborg/ehren4.tex>.

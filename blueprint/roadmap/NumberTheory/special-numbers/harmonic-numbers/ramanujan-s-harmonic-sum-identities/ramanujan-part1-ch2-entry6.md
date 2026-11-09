@@ -14,4 +14,4 @@ over an empty range is $0$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 6, printed p. 33 / PDF p. 43. Proves `Wanted` entry `ramanujan_part1_ch2_entry6`. It follows from `ramanujan_part1_ch2_entry6_general`; the hypothesis `hr` is unused and keeps the source's shape.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 6, printed p. 33 / PDF p. 43. It follows from `ramanujan_part1_ch2_entry6_general`; the hypothesis `hr` is unused and keeps the source's shape.

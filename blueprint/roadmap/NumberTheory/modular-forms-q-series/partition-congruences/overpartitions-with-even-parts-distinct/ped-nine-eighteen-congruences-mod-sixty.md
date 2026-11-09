@@ -19,4 +19,4 @@ The paper states (73) with $12 f_1^4 f_3^6 / f_2^2$ on the right; here $f_2^2$ i
 
 ## Sources
 
-- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 4 (`integers-2025-A69-thm-4`).
+- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 4.

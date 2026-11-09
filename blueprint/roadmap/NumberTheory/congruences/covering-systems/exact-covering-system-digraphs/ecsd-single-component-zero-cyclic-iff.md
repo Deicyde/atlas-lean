@@ -15,4 +15,4 @@ cycle $(0, 1)$, although $\max(1, 2) = 2 > 2 \cdot 1 - 1$.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 17 (`integers-2026-A107-thm-17`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 17.

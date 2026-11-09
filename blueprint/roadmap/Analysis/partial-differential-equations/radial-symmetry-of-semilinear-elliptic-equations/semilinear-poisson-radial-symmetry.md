@@ -10,4 +10,4 @@ $u(x) = v(\|x\|)$ for every $x \in \overline{B}$.
 
 ## Sources
 
-- B. Gidas, W. M. Ni, and L. Nirenberg, Symmetry and related properties via the maximum principle, Comm. Math. Phys. 68 (1979), 209-243. Also stated as Theorem 2 (Radial symmetry) in L. C. Evans, Partial Differential Equations, Section 9 on nonvariational techniques. Via leanprover/lean-eval@38361be, problem `semilinear_poisson_radial_symmetry`.
+- B. Gidas, W. M. Ni, and L. Nirenberg, Symmetry and related properties via the maximum principle, Comm. Math. Phys. 68 (1979), 209-243. Also stated as Theorem 2 (Radial symmetry) in L. C. Evans, Partial Differential Equations, Section 9 on nonvariational techniques. Problem `semilinear_poisson_radial_symmetry` of the lean-eval benchmark.

@@ -9,4 +9,4 @@ indices and units $a_i \in U(n)$ for $i \in I$ with $\sum_{i \in I} a_i x_i = 0$
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.3 (`integers-2024-A38-thm-6-3`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.3.

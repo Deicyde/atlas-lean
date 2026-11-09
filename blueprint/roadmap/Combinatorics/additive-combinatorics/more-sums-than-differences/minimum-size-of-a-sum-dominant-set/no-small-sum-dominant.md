@@ -10,4 +10,4 @@ bound holds for every finite set of integers with fewer than six elements.
 
 ## Sources
 
-- Hùng Việt Chu, "When Sets Are Not Sum-Dominant," Journal of Integer Sequences 22 (2019), Article 19.3.7, Theorem (label notsum-dominant), lines 126–128, https://cs.uwaterloo.ca/journals/JIS/VOL22/Chu/chu5.tex
+- Hùng Việt Chu, "When Sets Are Not Sum-Dominant," Journal of Integer Sequences 22 (2019), Article 19.3.7, Theorem, lines 126–128, https://cs.uwaterloo.ca/journals/JIS/VOL22/Chu/chu5.tex

@@ -15,4 +15,4 @@ $a, b, c$ with $d = 0$ work trivially, since $u_n(a, b, c, 0) = 0$.
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 2 (`integers-2025-A97-thm-2`).
+- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 2.

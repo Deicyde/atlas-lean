@@ -8,4 +8,4 @@ universal enveloping algebra of $\mathfrak{e}_8$, has exactly $40$ isotypic comp
 
 ## Sources
 
-- Classical: representation theory of the exceptional Lie algebra e₈. Via leanprover/lean-eval@38361be, problem `e8_irrep_tensor_square_decomp`.
+- Classical: representation theory of the exceptional Lie algebra e₈. Problem `e8_irrep_tensor_square_decomp` of the lean-eval benchmark.

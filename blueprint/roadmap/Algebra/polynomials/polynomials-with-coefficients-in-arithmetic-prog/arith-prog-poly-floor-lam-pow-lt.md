@@ -7,4 +7,4 @@ $\lfloor a \lambda^p \rfloor < a + pd$ for every integer $p$ with $1 \le p \le m
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 4 (`integers-2026-A92-prop-4`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 4.

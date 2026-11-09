@@ -13,4 +13,4 @@ $\sum_{n \ge 0} B_n^{(\alpha)}(x) t^n / n! = \left(t / (e^t - 1)\right)^{\alpha}
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex Definition span: lines 99-112, text_sha256 `0acb659f24f1fa6140d178c11f64ab833f8d8a20336d0828a32665f37f2b7951`. File sha256 `ce83119262833b8219cb7670521e7602617dae3f645a76e913bff79b7ba7dc9c`.
+- https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex, lines 99-112.

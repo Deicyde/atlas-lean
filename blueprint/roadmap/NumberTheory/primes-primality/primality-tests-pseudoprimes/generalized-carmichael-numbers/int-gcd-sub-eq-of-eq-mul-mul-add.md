@@ -12,4 +12,4 @@ $L_1, L_2$ are the products of two disjoint sets of primes, and $k_1, k_2$ come 
 
 ## Sources
 
-- Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Section 5 (definition of `𝒫^i_k`) and Lemma 6 (`integers-2026-A123-lem-6`).
+- Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Section 5 (definition of `𝒫^i_k`) and Lemma 6.

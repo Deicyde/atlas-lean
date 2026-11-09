@@ -7,4 +7,4 @@ a natural number $r$ with $1 \le r \le p - 1$ such that $10^{L/p} \equiv 2^r \pm
 
 ## Sources
 
-- Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Proposition 1 (`integers-2024-A14-prop-1`).
+- Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Proposition 1.

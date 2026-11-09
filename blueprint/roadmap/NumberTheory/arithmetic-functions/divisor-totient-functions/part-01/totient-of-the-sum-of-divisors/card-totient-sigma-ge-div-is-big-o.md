@@ -15,4 +15,4 @@ and $P_f(x) = o(x)$.
 
 ## Sources
 
-- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 2 (`integers-2024-A65-thm-2`).
+- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 2.

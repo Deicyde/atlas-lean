@@ -13,4 +13,4 @@ corrected proof retains that complexity.
 
 ## Sources
 
-- Babai, L., Graph isomorphism in quasipolynomial time, Proc. 48th ACM Symp. Theory Comput. (STOC 2016), 684-697; arXiv:1512.03547, https://arxiv.org/abs/1512.03547. Moved from `OpenConjectures/ComputerScience/GraphIsomorphismQuasipolynomial`.
+- Babai, L., Graph isomorphism in quasipolynomial time, Proc. 48th ACM Symp. Theory Comput. (STOC 2016), 684-697; arXiv:1512.03547, https://arxiv.org/abs/1512.03547.

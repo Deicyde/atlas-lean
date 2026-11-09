@@ -19,4 +19,4 @@ terms vanish because $\log 1 = 0$ and $a(n) = 0$ for $2 \le n < \ell$.
 
 ## Sources
 
-- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6 (`integers-2024-A11-lem-6`).
+- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6.

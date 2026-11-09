@@ -12,4 +12,4 @@ bound would read $0 \le -1$.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 3 (`integers-2025-A111-thm-3`), quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 3, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.

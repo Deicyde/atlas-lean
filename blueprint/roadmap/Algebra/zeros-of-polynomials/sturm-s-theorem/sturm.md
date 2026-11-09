@@ -7,4 +7,4 @@ function of $p$ and the subtraction is truncated subtraction of natural numbers.
 
 ## Sources
 
-- J. C. F. Sturm (1829). Listed as §97 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Formalized in Isabelle/HOL by Manuel Eberl (AFP entry Sturm_Sequences). Via leanprover/lean-eval@38361be, problem `sturm`.
+- J. C. F. Sturm (1829). Listed as §97 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Formalized in Isabelle/HOL by Manuel Eberl (AFP entry Sturm_Sequences). Problem `sturm` of the lean-eval benchmark.

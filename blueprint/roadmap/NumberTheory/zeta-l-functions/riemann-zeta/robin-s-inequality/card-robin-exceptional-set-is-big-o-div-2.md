@@ -6,4 +6,4 @@ real number $x$ tends to infinity.
 
 ## Sources
 
-- Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Theorem 2 (`integers-2025-A8-thm-2`).
+- Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Theorem 2.

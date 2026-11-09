@@ -13,4 +13,4 @@ circle onto the image of $J$.
 
 ## Sources
 
-- https://arxiv.org/abs/1808.02923 Via leanprover/lean-eval@38361be, problem `conway_knot_not_smoothly_slice`.
+- https://arxiv.org/abs/1808.02923. Problem `conway_knot_not_smoothly_slice` of the lean-eval benchmark.

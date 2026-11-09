@@ -9,4 +9,4 @@ for $n = 3$ and $b = 1$ the input $(0, 0)$ moves $0$ to $0$ and also $1$ to $1$.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 5 (`integers-2025-A111-thm-5`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 5.

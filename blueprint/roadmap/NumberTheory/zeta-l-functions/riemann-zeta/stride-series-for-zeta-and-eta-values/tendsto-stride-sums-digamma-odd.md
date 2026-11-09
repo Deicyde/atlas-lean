@@ -22,4 +22,4 @@ paper's series (9) for $\zeta(t+1)$ and (25) for $\eta(t+1)$.
 
 ## Sources
 
-- Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (27) (`integers-2024-A45-thm-3`).
+- Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (27).

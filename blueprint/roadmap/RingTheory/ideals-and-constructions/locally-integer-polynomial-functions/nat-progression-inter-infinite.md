@@ -9,4 +9,4 @@ $\{\min(a, b) + |a - b|\, n : n \in \mathbb{N}\}$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 9 (`integers-2025-A41-lem-9`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 9.

@@ -12,4 +12,4 @@ strictly positive probability on the states under which every asset has zero exp
 
 ## Sources
 
-- J. M. Harrison and D. M. Kreps, J. Econom. Theory 20 (1979), DOI 10.1016/0022-0531(79)90043-7. Proves `Wanted` entry `one_period_fundamental_theorem_asset_pricing`. It follows from `one_period_fundamental_theorem_asset_pricing_general`; the unused `[DecidableEq Ω]` and `[DecidableEq A]` keep the source's shape.
+- J. M. Harrison and D. M. Kreps, J. Econom. Theory 20 (1979), DOI 10.1016/0022-0531(79)90043-7. It follows from `one_period_fundamental_theorem_asset_pricing_general`; the unused `[DecidableEq Ω]` and `[DecidableEq A]` keep the source's shape.

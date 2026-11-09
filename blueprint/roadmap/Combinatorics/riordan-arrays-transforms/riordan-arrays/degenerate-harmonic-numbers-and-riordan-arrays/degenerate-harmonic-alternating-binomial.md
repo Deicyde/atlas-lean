@@ -8,4 +8,4 @@ where $\binom{n + \lambda - 1}{n}$ is the generalized binomial coefficient.
 
 ## Sources
 
-- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 2 (`integers-2024-A41-thm-2`).
+- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 2.

@@ -11,4 +11,4 @@ $n = 4$), property (T) passes to finite-index subgroups, and it implies Serre's 
 
 ## Sources
 
-- Marek Kaluba, Dawid Kielak and Piotr W. Nowak, On property (T) for Aut(F_n) and SL_n(Z), Ann. of Math. 193 (2021), arXiv:1812.03456, https://arxiv.org/abs/1812.03456; Martin Nitsche, Computer proofs for Property (T), and SDP duality, arXiv:2009.05134v3 (2022), https://arxiv.org/abs/2009.05134. Moved from `OpenConjectures/Topology/AutFnFiniteIndexPropertyFA`.
+- Marek Kaluba, Dawid Kielak and Piotr W. Nowak, On property (T) for Aut(F_n) and SL_n(Z), Ann. of Math. 193 (2021), arXiv:1812.03456, https://arxiv.org/abs/1812.03456; Martin Nitsche, Computer proofs for Property (T), and SDP duality, arXiv:2009.05134v3 (2022), https://arxiv.org/abs/2009.05134.

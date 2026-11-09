@@ -7,4 +7,4 @@ that $X_0 + \dots + X_{n-1} \le n(p - \varepsilon)$ is at most $e^{-2 \varepsilo
 
 ## Sources
 
-- Griffiths JIS VOL16 Eq. `hoeff`, source lines 167-191, `https://cs.uwaterloo.ca/journals/JIS/VOL16/Griffiths/griffiths22.tex`, source object `9d2fd3574fc15b79a0e00894b68d9608850dec38628c212a69d57f903588a30c` (JIS concept `jis_grounded_4cd778f9d6394cee44270586`).
+- Griffiths JIS VOL16, source lines 167-191, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Griffiths/griffiths22.tex>.

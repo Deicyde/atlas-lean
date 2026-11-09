@@ -9,4 +9,4 @@ positions in which $a$ differs from a unimodal permutation of $1, \dots, n$.
 
 ## Sources
 
-- NWERC 2025 Problem G, see https://2025.nwerc.eu/problem-set.pdf Via leanprover/lean-eval@38361be, problem `permute_to_unimodal`.
+- NWERC 2025 Problem G, see https://2025.nwerc.eu/problem-set.pdf. Problem `permute_to_unimodal` of the lean-eval benchmark.

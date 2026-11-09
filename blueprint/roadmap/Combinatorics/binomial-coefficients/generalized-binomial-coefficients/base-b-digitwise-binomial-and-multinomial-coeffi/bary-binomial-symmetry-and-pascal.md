@@ -9,4 +9,4 @@ $C_b(n, k) = C_b(n - 1, k - 1) + C_b(n - 1, k)$.
 
 ## Sources
 
-- Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (Symmetry and recurrence), equation (label `eq:recurrence`), lines 432–445, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
+- Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (Symmetry and recurrence), equation, lines 432–445, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex

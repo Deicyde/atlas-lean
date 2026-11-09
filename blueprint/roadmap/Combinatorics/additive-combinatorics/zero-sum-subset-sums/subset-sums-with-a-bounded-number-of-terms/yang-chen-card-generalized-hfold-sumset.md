@@ -9,4 +9,4 @@ $h^{(\bar r)}A$ has exactly $L(\bar r, h)$ elements.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 2 (Yang and Chen) (`integers-2024-A116-thm-2`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 2 (Yang and Chen).

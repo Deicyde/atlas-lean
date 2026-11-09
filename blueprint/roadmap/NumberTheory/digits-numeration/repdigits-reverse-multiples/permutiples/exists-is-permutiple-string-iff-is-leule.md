@@ -7,4 +7,4 @@ an $(n, b)$-permutiple string $s$ whose multiset of entries is $C_I$.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 2 (`integers-2025-A111-cor-2`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 2.

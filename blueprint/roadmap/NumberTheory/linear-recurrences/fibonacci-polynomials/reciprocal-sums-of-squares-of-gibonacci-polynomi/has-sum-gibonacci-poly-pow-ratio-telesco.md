@@ -17,4 +17,4 @@ positive integers.
 
 ## Sources
 
-- Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Lemma 2.1 (`fq-2024-koshy11112023-lem-2.1`).
+- Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Lemma 2.1.

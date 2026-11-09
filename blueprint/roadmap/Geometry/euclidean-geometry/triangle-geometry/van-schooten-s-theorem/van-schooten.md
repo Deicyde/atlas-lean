@@ -10,4 +10,4 @@ condition is expressed by $CP > AP$ and $CP > BP$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Van_Schooten%27s_theorem. It follows from `vanSchooten_general`; the hypotheses `P ≠ A`, `P ≠ B` and `P ≠ C` are unused and keep the source's shape. Proves `Wanted` entry `vanSchooten`.
+- https://en.wikipedia.org/wiki/Van_Schooten%27s_theorem. It follows from `vanSchooten_general`; the hypotheses `P ≠ A`, `P ≠ B` and `P ≠ C` are unused and keep the source's shape.

@@ -11,4 +11,4 @@ where for $n = 0$ both quotients are read with the convention that division by $
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 1 (`integers-2025-A77-cor-1`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 1.

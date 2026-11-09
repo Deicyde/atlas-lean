@@ -6,4 +6,4 @@ $u_0 = 0$, $u_1 = 1$, and $u_{n+2} = P u_{n+1} - Q u_n$ for every natural number
 
 ## Sources
 
-- stable record `jis_grounded_7e37bcd48e7477bda602ca6e`, `https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex`, lines 114-122.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex>, lines 114-122.

@@ -12,4 +12,4 @@ $$
 
 ## Sources
 
-- Rafael Jakimczuk and Matilde Lalín, "The Number of Prime Factors on Average in Certain Integer Sequences," Journal of Integer Sequences 25 (2022), Article 22.2.3, Theorem (label `thmhfree`), lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL25/Lalin/lalin2.tex
+- Rafael Jakimczuk and Matilde Lalín, "The Number of Prime Factors on Average in Certain Integer Sequences," Journal of Integer Sequences 25 (2022), Article 22.2.3, Theorem, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL25/Lalin/lalin2.tex

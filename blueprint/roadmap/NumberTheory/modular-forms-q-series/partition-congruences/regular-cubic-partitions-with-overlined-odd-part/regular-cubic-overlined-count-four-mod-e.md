@@ -7,4 +7,4 @@ divides $a_4(28n + 4j + 3)$ for each $j = 1, \ldots, 6$, and $24$ divides $a_4(3
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Corollary 2, eqs. (55)–(57) (`integers-2024-A101-cor-2`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Corollary 2, eqs. (55)–(57).

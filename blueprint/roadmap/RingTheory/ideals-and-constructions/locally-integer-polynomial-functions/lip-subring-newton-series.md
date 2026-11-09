@@ -14,4 +14,4 @@ is the formal series $\sum_{k \ge 0} a_k \prod_{i < k} (x - \sigma(i))$ evaluate
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 1 (`integers-2025-A41-thm-1`), reindexed from `σ(1), σ(2), …`.
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 1, reindexed from `σ(1), σ(2), …`.

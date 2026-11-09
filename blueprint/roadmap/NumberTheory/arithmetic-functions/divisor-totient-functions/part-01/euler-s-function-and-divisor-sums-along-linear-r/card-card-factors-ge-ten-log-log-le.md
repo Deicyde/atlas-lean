@@ -7,4 +7,4 @@ $C x / (\log x)^2$.
 
 ## Sources
 
-- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 3 (`fq-2024-luca09162024rev2-lem-3`).
+- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 3.

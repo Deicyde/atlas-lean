@@ -7,4 +7,4 @@ numbers with $y \equiv s \pmod 6$, then $b^y \equiv b^s \pmod{p^j}$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 10 (`integers-2025-A26-lem-10`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 10.

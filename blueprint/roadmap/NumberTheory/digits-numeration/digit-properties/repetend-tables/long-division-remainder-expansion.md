@@ -10,4 +10,4 @@ and $r_j n = b c_j - c_{j+1}$ for every $j \ge 0$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 5 (`integers-2025-A26-lem-5`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 5.

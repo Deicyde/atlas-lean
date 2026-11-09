@@ -7,4 +7,4 @@ that is, $n = 5k(3k \pm 1)/2$ for some integer $k$.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 4 (`integers-2025-A17-thm-4`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 4.

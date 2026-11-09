@@ -8,4 +8,4 @@ there is a point $x \in \mathbb{Z}_p^n$ with $f(x) = 0$.
 
 ## Sources
 
-- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Lemma 1 (`integers-2026-A51-lem-1`), quoted there as Hensel's lemma.
+- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Lemma 1, quoted there as Hensel's lemma.

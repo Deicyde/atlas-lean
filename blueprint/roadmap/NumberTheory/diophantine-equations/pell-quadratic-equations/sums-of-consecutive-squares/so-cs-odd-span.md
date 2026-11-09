@@ -11,4 +11,4 @@ of this statement.
 
 ## Sources
 
-- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 2 (`integers-2026-A1-thm-2`), verified against arXiv:2411.08398.
+- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 2, verified against arXiv:2411.08398.

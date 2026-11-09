@@ -8,4 +8,4 @@ blocks themselves are unordered; only the vertices within a block are ordered.
 
 ## Sources
 
-- Gonzales, JIS VOL25, concept `jis_term_096dd7cbe3f83bcfea2406a6`, `https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex`.
+- Gonzales, JIS VOL25, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex>.

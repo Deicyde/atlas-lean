@@ -11,4 +11,4 @@ finite-index subgroup of $\mathrm{Aut}(F_5)$ has first Betti number $0$.
 
 ## Sources
 
-- M. Kaluba, P. W. Nowak, N. Ozawa, Aut(F5) has property (T), Math. Ann. 375 (2019), no. 3-4, 1169-1191, https://arxiv.org/abs/1712.07167. Moved from `OpenConjectures/Topology/AutFnFiniteIndexPositiveBetti`.
+- M. Kaluba, P. W. Nowak, N. Ozawa, Aut(F5) has property (T), Math. Ann. 375 (2019), no. 3-4, 1169-1191, https://arxiv.org/abs/1712.07167.

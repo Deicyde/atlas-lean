@@ -18,4 +18,4 @@ Both sides vanish for $x < 1$; the source assumes $x \ge 1$.
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Theorem 1, Equation (8) (`integers-2024-A75-thm-1`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Theorem 1, Equation (8).

@@ -8,4 +8,4 @@ summand of $B$ as an $A$-module.
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `direct_summand`.
+-. Problem `direct_summand` of the lean-eval benchmark.

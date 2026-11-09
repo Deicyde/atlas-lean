@@ -8,4 +8,4 @@ least common multiple $15120$.
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 5 (`integers-2026-A38-thm-5`).
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 5.

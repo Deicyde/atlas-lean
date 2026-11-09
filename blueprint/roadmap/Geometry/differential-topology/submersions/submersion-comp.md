@@ -14,4 +14,4 @@ complements, then package their product as the complement of the composite.
 
 ## Sources
 
-- Mathlib `Mathlib/Geometry/Manifold/Submersion.lean` TODO (`IsSubmersion.comp`); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.

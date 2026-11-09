@@ -14,4 +14,4 @@ method to a shortest square occurrence and its shortest source-word cover.
 
 ## Sources
 
-- Currie, lines 99-100 of `https://cs.uwaterloo.ca/journals/JIS/VOL22/Currie/currie20.tex`, span SHA-256 `ae0ba8107ccc5dfcd1a4065609be8a31f1a809ea3f1f9b37ce7a2cd762dd5bf9`; primary reference Crochemore, Theoret. Comput. Sci. 18(2) (1982), DOI 10.1016/0304-3975(82)90023-8.
+- Currie, lines 99-100 of <https://cs.uwaterloo.ca/journals/JIS/VOL22/Currie/currie20.tex>; primary reference Crochemore, Theoret. Comput. Sci. 18(2) (1982), DOI 10.1016/0304-3975(82)90023-8.

@@ -16,4 +16,4 @@ $G_\alpha^{-1} = G_0^{-1}\, \mathbf{S}(0, \alpha, 0)$.
 
 ## Sources
 
-- Jiaqiang Pan, "Matrix Decomposition of the Unified Generalized Stirling Numbers and Inversion of the Generalized Factorial Matrices," Journal of Integer Sequences 15 (2012), Article 12.6.6, Theorem (label t:Vandermonde), lines 428–460, https://cs.uwaterloo.ca/journals/JIS/VOL15/Pan/pan19.tex. It follows from `pan_vandermonde_general`; the hypothesis `hp` is unused and keeps the source's shape. Proves `Wanted` entry `pan_vandermonde`.
+- Jiaqiang Pan, "Matrix Decomposition of the Unified Generalized Stirling Numbers and Inversion of the Generalized Factorial Matrices," Journal of Integer Sequences 15 (2012), Article 12.6.6, Theorem, lines 428–460, https://cs.uwaterloo.ca/journals/JIS/VOL15/Pan/pan19.tex. It follows from `pan_vandermonde_general`; the hypothesis `hp` is unused and keeps the source's shape.

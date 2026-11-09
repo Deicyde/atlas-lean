@@ -6,4 +6,4 @@ elements of some $t$-element subset $L \subseteq \mathbb{Z}/d\mathbb{Z}$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Lemma 1 (Bajnok) (`integers-2025-A12-lem-1`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Lemma 1 (Bajnok).

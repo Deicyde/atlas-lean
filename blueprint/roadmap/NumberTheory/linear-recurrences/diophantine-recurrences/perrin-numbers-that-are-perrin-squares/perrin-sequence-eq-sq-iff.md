@@ -6,4 +6,4 @@ $n = m = 1$ (where $R_1 = 0 = R_1^2$).
 
 ## Sources
 
-- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 1 (`integers-2025-A70-thm-1`).
+- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 1.

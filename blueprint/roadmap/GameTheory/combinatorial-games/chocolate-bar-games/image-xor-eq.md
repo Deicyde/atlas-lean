@@ -7,4 +7,4 @@ $\{\min(g(w), x) \oplus w : w < z\}$ are equal, where $w$ ranges over the natura
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 5, equation (20) (`integers-2025-G3-lem-5`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 5, equation (20).

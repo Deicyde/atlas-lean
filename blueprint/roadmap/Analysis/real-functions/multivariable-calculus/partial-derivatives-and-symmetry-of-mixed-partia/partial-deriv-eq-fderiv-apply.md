@@ -9,4 +9,4 @@ The proof differentiates $f$ along the line $t \mapsto x + t e_i$ by the chain r
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `partial derivatives` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.

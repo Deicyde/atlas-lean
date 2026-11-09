@@ -11,4 +11,4 @@ The inequality follows from the Cauchy–Schwarz inequality.
 
 ## Sources
 
-- Open Problem Garden solution comment 73221, https://www.openproblemgarden.org/op/inequality_for_square_summable_complex_series#comment-73221. Moved from `OpenConjectures/Analysis/SquareSummableComplexInequality`.
+- Open Problem Garden solution comment 73221, https://www.openproblemgarden.org/op/inequality_for_square_summable_complex_series#comment-73221.

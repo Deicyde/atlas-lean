@@ -7,4 +7,4 @@ $F_n$ is not a square in $\mathbb{Q}$.
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Proposition 1 (`integers-2025-A39-prop-1`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Proposition 1.

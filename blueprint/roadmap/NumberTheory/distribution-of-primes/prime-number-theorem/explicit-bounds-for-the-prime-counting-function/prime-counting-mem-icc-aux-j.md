@@ -13,4 +13,4 @@ The inequalities are non-strict, as the paper prints them.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 1 (`integers-2024-A34-lem-1`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 1.

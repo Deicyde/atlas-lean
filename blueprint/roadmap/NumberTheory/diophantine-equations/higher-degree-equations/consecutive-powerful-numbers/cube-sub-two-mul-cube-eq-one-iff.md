@@ -5,4 +5,4 @@ and only if $(u, v) = (1, 0)$ or $(u, v) = (-1, -1)$.
 
 ## Sources
 
-- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 7 (`integers-2025-A103-lem-7`).
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 7.

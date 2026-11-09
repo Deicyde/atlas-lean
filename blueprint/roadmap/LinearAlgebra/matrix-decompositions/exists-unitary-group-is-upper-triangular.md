@@ -7,4 +7,4 @@ on $n$ (that is, $T_{ij} = 0$ whenever $j < i$) such that $A = U T U^*$.
 
 ## Sources
 
-- I. Schur, Uber charakteristische Wurzeln, Math. Ann. 66 (1909), 488-510, DOI 10.1007/BF01450045. Proves `Wanted` entry `schur_decomposition`, restated over `Matrix.unitaryGroup` in place of the entry's `IsUnitaryMatrix`.
+- I. Schur, Uber charakteristische Wurzeln, Math. Ann. 66 (1909), 488-510, DOI 10.1007/BF01450045.

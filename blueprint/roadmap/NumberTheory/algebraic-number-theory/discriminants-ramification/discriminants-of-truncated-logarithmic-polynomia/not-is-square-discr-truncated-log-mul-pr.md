@@ -8,4 +8,4 @@ discriminant of $F_{mq}$ is not a square in $\mathbb{Q}$.
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 5 (`integers-2025-A39-thm-5`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 5.

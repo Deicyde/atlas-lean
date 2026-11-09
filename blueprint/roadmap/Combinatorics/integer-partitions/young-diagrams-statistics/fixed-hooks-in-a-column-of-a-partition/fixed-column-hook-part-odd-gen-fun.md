@@ -32,4 +32,4 @@ printed series has no $q^6$ term.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 8 (`integers-2025-A28-thm-8`), corrected per its proof.
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 8, corrected per its proof.

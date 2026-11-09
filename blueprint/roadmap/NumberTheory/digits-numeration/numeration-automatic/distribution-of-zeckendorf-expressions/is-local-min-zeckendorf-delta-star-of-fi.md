@@ -8,4 +8,4 @@ $\delta^*$ has a local minimum at $\sum_k \varepsilon_k \tilde Q_k$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 6 (`integers-2025-A25-prop-6`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 6.

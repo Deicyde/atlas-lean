@@ -8,4 +8,4 @@ $f$ at $a$ within $X$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Measures, integration, derivative, holomorphy), `benchmark/level1/ma_proofbench_l1_95.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Measures, integration, derivative, holomorphy), problem `ma_proofbench_l1_95`.

@@ -10,4 +10,4 @@ $$\sum_{k=0}^{n} \binom{n}{k} \binom{2k+v}{(2k+v)/2} \binom{2n-2k+v}{(2n-2k+v)/2
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 6 (`integers-2026-A19-thm-6`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 6.

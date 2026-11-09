@@ -14,4 +14,4 @@ statement prints $b_{k-1}$ instead, which would give $b_3 = 9.951332$ there.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 6 (`integers-2024-A34-prop-6`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 6.

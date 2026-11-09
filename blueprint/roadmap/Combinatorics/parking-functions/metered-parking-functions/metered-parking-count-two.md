@@ -6,4 +6,4 @@ $\mathrm{mpf}_{2,n}(t) = \max(n^2 - 1, 0)$, that is, $n^2 - 1$ for $n \ge 1$ and
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 2 (`integers-2025-A73-cor-2`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 2.

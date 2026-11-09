@@ -7,4 +7,4 @@ $0 \le A_n - 7n + 3 \le 2$, $0 \le 3B^1_n - 7n + 6 \le 3$ and $0 \le 3B^2_n - 7n
 
 ## Sources
 
-- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 1 (`integers-2026-A24-thm-1`).
+- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 1.

@@ -6,4 +6,4 @@ $\binom{n}{k}$ for every $k$ with $1 \le k < n$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 3 (`integers-2024-A53-cor-3`).
+- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 3.

@@ -8,4 +8,4 @@ absolutely with sum $\varphi'(z)$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. Proves `Wanted` entry `ramanujan_part1_ch6_entry2_stirlingseries`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.

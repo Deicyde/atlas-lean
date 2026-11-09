@@ -13,4 +13,4 @@ $\varepsilon \notin E^*$, then $\varepsilon$ has exactly one decomposition index
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 1 (`integers-2025-A25-cor-1`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 1.

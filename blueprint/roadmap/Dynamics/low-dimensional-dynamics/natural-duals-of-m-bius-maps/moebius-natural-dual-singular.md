@@ -19,4 +19,4 @@ $[\eta, \xi]$ reduces to a single point.
 
 ## Sources
 
-- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Theorem 1 (`integers-2024-A17-thm-1`).
+- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Theorem 1.

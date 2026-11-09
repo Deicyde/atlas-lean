@@ -10,4 +10,4 @@ Any solution would make $\{a, b, c, d\}$ a $\{p, q\}$-Diophantine quadruple.
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 4, System (4), quoting Szalay and Ziegler, INTEGERS 13 (2013), Section 4 (`integers-2025-A92-lem-4`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 4, System (4), quoting Szalay and Ziegler, INTEGERS 13 (2013), Section 4.

@@ -19,4 +19,4 @@ Part (ii) is stated with the unit $\prod_j (1 + X_j)(1 + Y_j)$ multiplied out in
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 13 (translation bi-brackets/SZ model) (`integers-2024-A6-thm-13`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 13 (translation bi-brackets/SZ model).

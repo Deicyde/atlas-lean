@@ -9,4 +9,4 @@ In particular $O_n(0) = 1$ (the empty product) and $O_n(k) = 0$ for $k > n$ (the
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (1.8) and (2.11) (`integers-2026-A81-cor-1`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (1.8) and (2.11).

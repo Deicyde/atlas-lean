@@ -7,4 +7,4 @@ satisfies $\omega^*_n(\xi) \ge a n$.
 
 ## Sources
 
-- A. Poëls, `On approximation to a real number by algebraic numbers of bounded degree`, Annals of Math, 201 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2025-201-1-OnApproximationOfReals.lean Via leanprover/lean-eval@38361be, problem `annals_on_approximation_of_reals`.
+- A. Poëls, `On approximation to a real number by algebraic numbers of bounded degree`, Annals of Math, 201 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_on_approximation_of_reals` of the lean-eval benchmark.

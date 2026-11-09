@@ -11,4 +11,4 @@ $$\sum_{k=1}^{n} \frac{(1)_{k,\lambda}}{k!} H_\lambda(n, k-1, \alpha) =
 
 ## Sources
 
-- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 7 (`integers-2024-A41-thm-7`).
+- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 7.

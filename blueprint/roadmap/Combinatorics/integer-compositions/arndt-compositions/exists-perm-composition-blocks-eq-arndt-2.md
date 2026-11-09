@@ -6,4 +6,4 @@ of $n$.
 
 ## Sources
 
-- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 3 (`integers-2026-A64-thm-3`).
+- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 3.

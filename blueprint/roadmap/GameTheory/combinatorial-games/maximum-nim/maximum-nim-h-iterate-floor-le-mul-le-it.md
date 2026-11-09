@@ -12,4 +12,4 @@ $$h_k^{\lfloor w \rfloor}(k-1) \le n(k-1) \le h_k^{\lceil v \rceil}(k-1).$$
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 8 (`integers-2024-G5-lem-8`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 8.

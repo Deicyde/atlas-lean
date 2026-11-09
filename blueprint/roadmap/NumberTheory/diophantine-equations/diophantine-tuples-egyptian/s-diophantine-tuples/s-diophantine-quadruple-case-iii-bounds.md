@@ -12,4 +12,4 @@ $d < 1.03\, q^{2(\beta' - \beta)}$ and $b < 1.03\, q^{\beta' - \beta}$.
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 6 (`integers-2025-A92-lem-6`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 6.

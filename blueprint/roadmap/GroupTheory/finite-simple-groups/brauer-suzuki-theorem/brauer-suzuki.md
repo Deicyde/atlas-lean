@@ -7,4 +7,4 @@ If $t \in P$ has order $2$, then the image of $t$ in $G / O(G)$ lies in the cent
 
 ## Sources
 
-- R. Brauer and M. Suzuki, On finite groups of even order whose 2-Sylow group is a quaternion group, Proc. Nat. Acad. Sci. U.S.A. 45 (1959), 1757-1759. https://doi.org/10.1073/pnas.45.12.1757 Via leanprover/lean-eval@38361be, problem `brauer_suzuki`.
+- R. Brauer and M. Suzuki, On finite groups of even order whose 2-Sylow group is a quaternion group, Proc. Nat. Acad. Sci. U.S.A. 45 (1959), 1757-1759. https://doi.org/10.1073/pnas.45.12.1757. Problem `brauer_suzuki` of the lean-eval benchmark.

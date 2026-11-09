@@ -14,4 +14,4 @@ $\rho(p_i)$, as in Theorems 3.16 and 3.17.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.14 (`integers-2025-A107-thm-3-14`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.14.

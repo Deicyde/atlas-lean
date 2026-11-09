@@ -8,4 +8,4 @@ avoiding both $2413$ and $3142$, no such permutation is separable.
 
 ## Sources
 
-- Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 2 (`integers-2026-A59-thm-2`).
+- Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 2.

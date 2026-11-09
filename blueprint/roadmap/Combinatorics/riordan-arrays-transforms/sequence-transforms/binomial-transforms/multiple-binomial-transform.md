@@ -13,10 +13,6 @@ $0$-fold transform of $a$ is $a$ itself.
   Shifted Sequences*, Journal of Integer Sequences 14 (2011), lines 104–118:
   <https://cs.uwaterloo.ca/journals/JIS/VOL14/Pan/pan12.tex>.
 
-The archived sources have SHA-256 values
-`1d0b3a962f3ebef6a30b664f7979f89bf9e80f8adddad71bfdbeef541daf0791` and
-`b48df480b12f77923455a0db85c255217715a73eba7c7ad92ceb5855d434ef26`.
-
 Concept `jis_term_c157679dc9eb88c4ba264101`; source statements
 `jis_565fc7c3315ad99b5942cc67` and `jis_a569298bba80b28850af1658`.
 

@@ -6,4 +6,4 @@ $1 \le k \le \exp(0.8 \sqrt{\log m})$ has natural density $1$.
 
 ## Sources
 
-- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 2 (`integers-2026-A47-thm-2`).
+- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 2.

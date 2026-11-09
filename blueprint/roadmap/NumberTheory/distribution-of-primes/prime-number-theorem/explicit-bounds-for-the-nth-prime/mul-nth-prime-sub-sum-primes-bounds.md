@@ -14,4 +14,4 @@ $$S(n) \le p_n^2\left(\frac{1}{2L} + \frac{3}{4L^2} + \frac{7}{4L^3} + \frac{45.
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 9 (`integers-2025-A58-lem-9`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 9.

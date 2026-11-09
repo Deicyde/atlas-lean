@@ -5,4 +5,4 @@ perfect number has at least five distinct prime divisors.
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (ii) (`integers-2024-A114-lem-1`).
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (ii).

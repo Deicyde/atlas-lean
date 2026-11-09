@@ -9,4 +9,4 @@ satisfies $\binom{r}{t} \le \binom{r}{n} M$.
 
 ## Sources
 
-- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Proposition 1 (`integers-2024-A97-prop-1`), quoting Alford, Granville, and Pomerance, Theorem 2.1.
+- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Proposition 1, quoting Alford, Granville, and Pomerance, Theorem 2.1.

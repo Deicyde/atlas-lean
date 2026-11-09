@@ -7,4 +7,4 @@ $t \in [0, 1]$; that is, the closed disk of radius $1$ centred at $0$ covers eve
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

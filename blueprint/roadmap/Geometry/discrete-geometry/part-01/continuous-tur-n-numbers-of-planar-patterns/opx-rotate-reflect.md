@@ -8,4 +8,4 @@ reflection $(x, y) \mapsto (x, -y)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.1 (`integers-2024-A1-lem-2-1`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.1.

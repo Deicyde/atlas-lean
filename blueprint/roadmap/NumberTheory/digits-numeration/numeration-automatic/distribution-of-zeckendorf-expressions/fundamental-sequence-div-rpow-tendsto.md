@@ -14,4 +14,4 @@ $H_n / \tilde H_n^{\gamma} \to \alpha / \tilde\alpha^{\gamma}$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 7 (`integers-2025-A25-thm-7`; arXiv:2308.12872v1, Section 3.1).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 7 (arXiv:2308.12872v1, Section 3.1).

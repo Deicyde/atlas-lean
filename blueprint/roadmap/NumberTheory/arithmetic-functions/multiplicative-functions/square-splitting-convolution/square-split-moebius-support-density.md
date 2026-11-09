@@ -12,4 +12,4 @@ $\sum_{1 \le n \le x} |\mu_\star(n)|^2 \sim x/\zeta(4)$ as $x \to \infty$.
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 11 (`integers-2026-A56-thm-11`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 11.

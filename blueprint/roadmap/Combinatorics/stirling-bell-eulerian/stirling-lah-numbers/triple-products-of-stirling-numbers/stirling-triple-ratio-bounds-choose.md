@@ -10,4 +10,4 @@ $\frac{c(p + j, j)\, c(n + j, p + j)}{c(n + j, j)} \le \binom{n}{p} \le
 
 ## Sources
 
-- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 2.1 (`integers-2026-A108-thm-2-1`).
+- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 2.1.

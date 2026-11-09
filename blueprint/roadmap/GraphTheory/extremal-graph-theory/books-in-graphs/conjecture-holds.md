@@ -9,4 +9,4 @@ Problem 905 affirmatively.
 
 ## Sources
 
-- External Lean proof of Erdős Problem 905, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos905.lean. Moved from `OpenConjectures/Combinatorics/ErdosProblem905`.
+- External Lean proof of Erdős Problem 905, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos905.lean.

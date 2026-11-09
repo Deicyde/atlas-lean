@@ -12,4 +12,4 @@ expansion has sum $n$ and is perfect for $n$.
 
 ## Sources
 
-- Augustine O. Munagi, "Perfect Compositions of Numbers," Journal of Integer Sequences 23 (2020), Article 20.5.1, Theorem 1 (label `thm1`), lines 138–140, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Munagi/munagi13.tex>.
+- Augustine O. Munagi, "Perfect Compositions of Numbers," Journal of Integer Sequences 23 (2020), Article 20.5.1, Theorem 1, lines 138–140, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Munagi/munagi13.tex>.

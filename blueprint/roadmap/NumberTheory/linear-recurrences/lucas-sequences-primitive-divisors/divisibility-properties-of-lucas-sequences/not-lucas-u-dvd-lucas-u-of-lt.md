@@ -6,4 +6,4 @@ $n \ge 3$ and every $k$ with $0 < k < n$, $U_n$ does not divide $U_k$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 2.10 (`integers-2025-A107-cor-2-10`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 2.10.

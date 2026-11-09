@@ -12,4 +12,4 @@ $$\left|\int_1^T E(u) \, du\right| \le C \, T^{3/2 - 1/2^{k+1}}
 
 ## Sources
 
-- Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Corollary 1 (`integers-2025-A53-cor-1`).
+- Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Corollary 1.

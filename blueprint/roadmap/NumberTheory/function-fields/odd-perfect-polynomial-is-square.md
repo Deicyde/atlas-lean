@@ -10,4 +10,4 @@ full divisor sum.
 
 ## Sources
 
-- Luis H. Gallardo and Olivier Rahavandrainy, "A Polynomial Variant of Perfect Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.6, Lemma `oddperfect`, lines 155–158 (odd and perfect defined lines 96–108), https://cs.uwaterloo.ca/journals/JIS/VOL23/Gallardo/gallardo7.tex attributed there to Canaday. Proves `Wanted` entry `odd_perfect_polynomial_is_square`.
+- Luis H. Gallardo and Olivier Rahavandrainy, "A Polynomial Variant of Perfect Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.6, Lemma `oddperfect`, lines 155–158 (odd and perfect defined lines 96–108), https://cs.uwaterloo.ca/journals/JIS/VOL23/Gallardo/gallardo7.tex attributed there to Canaday.

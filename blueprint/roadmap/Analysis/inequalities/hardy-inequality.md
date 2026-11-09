@@ -13,4 +13,4 @@ Theorem 326.
 
 ## Sources
 
-- G. H. Hardy, *Note on a theorem of Hilbert*, Mathematische Zeitschrift 6 (1920), 314-317 (statement hardy-ineq-s1): the discrete series form with constant `(p / (p - 1)) ^ p` for `p > 1`.
+- G. H. Hardy, *Note on a theorem of Hilbert*, Mathematische Zeitschrift 6 (1920), 314-317: the discrete series form with constant `(p / (p - 1)) ^ p` for `p > 1`.

@@ -14,4 +14,4 @@ printed ($k = 3$, $a = b = 1$ gives the prime $p = 11$ in situation 2, but $d_1 
 
 ## Sources
 
-- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Theorem 1 (`integers-2024-A61-thm-1`).
+- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Theorem 1.

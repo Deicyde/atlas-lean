@@ -7,4 +7,4 @@ $\mathrm{PSU}(3, 2^n)$ for some $n \ge 2$.
 
 ## Sources
 
-- D. Gorenstein, R. Lyons, and R. Solomon, The classification of the finite simple groups, Number 2 Via leanprover/lean-eval@38361be, problem `bender_suzuki`.
+- D. Gorenstein, R. Lyons, and R. Solomon, The classification of the finite simple groups, Number 2. Problem `bender_suzuki` of the lean-eval benchmark.

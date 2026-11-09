@@ -13,4 +13,4 @@ for $m = 1$.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 1 (Goldman, Joichi and White) (`integers-2024-A58-thm-1`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 1 (Goldman, Joichi and White).

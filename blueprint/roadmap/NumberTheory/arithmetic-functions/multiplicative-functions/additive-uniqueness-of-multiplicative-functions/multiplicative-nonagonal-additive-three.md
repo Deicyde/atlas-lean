@@ -9,4 +9,4 @@ number $n < \alpha(3^r)$, then $f(3^r) = 3^r$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 2 (`integers-2025-A99-thm-2`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 2.

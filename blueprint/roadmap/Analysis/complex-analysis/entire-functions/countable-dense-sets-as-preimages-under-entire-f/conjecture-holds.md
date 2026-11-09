@@ -9,4 +9,4 @@ Hayman's update to Problem 2.31 reports that Barth and Schneider constructed suc
 
 ## Sources
 
-- K. F. Barth and W. J. Schneider, Entire functions mapping arbitrary countable dense sets and their complements onto each other, J. London Math. Soc. (2) 4 (1972), 482-488, https://doi.org/10.1112/jlms/s2-4.3.482. Moved from `OpenConjectures/Analysis/ErdosEntireFunctionCountableDensePreimage`.
+- K. F. Barth and W. J. Schneider, Entire functions mapping arbitrary countable dense sets and their complements onto each other, J. London Math. Soc. (2) 4 (1972), 482-488, https://doi.org/10.1112/jlms/s2-4.3.482.

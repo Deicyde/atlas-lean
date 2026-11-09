@@ -10,4 +10,4 @@ $$\sum_{n=0}^{\infty} \frac{4^n}{\binom{n}{h} \binom{2(n+1)}{n+1} (n+1)^2} =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identity (19) (`integers-2025-A18-thm-8`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identity (19).

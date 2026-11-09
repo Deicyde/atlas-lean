@@ -13,4 +13,4 @@ where $f$ runs over the monic divisors of $r^\kappa$ and $\ell$ over the monic d
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 8, eq. (7) (`integers-2026-A80-lem-8`).
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 8, eq. (7).

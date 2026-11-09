@@ -8,4 +8,4 @@ $|z| \le \lambda$, and $|z| = \lambda$ only if $z = -\lambda$.
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 2 (`integers-2026-A92-prop-2`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 2.

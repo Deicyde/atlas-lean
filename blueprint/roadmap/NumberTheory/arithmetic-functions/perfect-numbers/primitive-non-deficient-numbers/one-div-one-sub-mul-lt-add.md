@@ -5,4 +5,4 @@ $0 < m < 1/(k(k+1))$, we have $1/(1 - km) < 1 + (k+1)m$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `KMlemma`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma.

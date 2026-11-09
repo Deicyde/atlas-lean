@@ -11,4 +11,4 @@ because $P$ is invertible, so $(PA)x = 0$ if and only if $Ax = 0$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Matrices / elementary row operations; G. Strang, Introduction to Linear Algebra, 6th ed., Wellesley-Cambridge Press (2023), Section 2.2.
+- G. Strang, Introduction to Linear Algebra, 6th ed., Wellesley-Cambridge Press (2023), Section 2.2.

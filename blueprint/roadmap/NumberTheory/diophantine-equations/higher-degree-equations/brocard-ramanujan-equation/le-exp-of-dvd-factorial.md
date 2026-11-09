@@ -6,4 +6,4 @@ factorization of $x$, with $K(1) = 0$. Then $x \le \exp(3 n K(x) / 2)$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Lemma 1 (`integers-2025-A71-lem-1`).
+- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Lemma 1.

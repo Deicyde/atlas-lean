@@ -18,4 +18,4 @@ of this lemma ends by contradicting Lemma 4.
 
 ## Sources
 
-- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 5 (`integers-2024-A105-lem-5`); `A`-property as defined before Lemma 5 in arXiv:2305.15133.
+- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 5; `A`-property as defined before Lemma 5 in arXiv:2305.15133.

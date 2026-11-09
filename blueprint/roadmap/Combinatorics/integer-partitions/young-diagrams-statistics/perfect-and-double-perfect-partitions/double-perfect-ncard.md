@@ -11,4 +11,4 @@ double-perfect of order $1$ while $f(0) = 0$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 1 (Lee), display (4) (`integers-2025-A109-thm-1`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 1 (Lee), display (4).

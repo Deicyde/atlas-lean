@@ -19,4 +19,4 @@ opposite the side $c$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Spherical_law_of_cosines (statement `spherical-cosines-s1`). It follows from `spherical_law_of_cosines_general`; the hypotheses `hc` and `hC` are unused and keep the source's shape. Proves `Wanted` entry `spherical_law_of_cosines`.
+- https://en.wikipedia.org/wiki/Spherical_law_of_cosines. It follows from `spherical_law_of_cosines_general`; the hypotheses `hc` and `hC` are unused and keep the source's shape.

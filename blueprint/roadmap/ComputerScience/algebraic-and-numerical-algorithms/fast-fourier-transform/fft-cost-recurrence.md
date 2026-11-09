@@ -8,4 +8,4 @@ product.
 
 ## Sources
 
-- `undergrad.yaml`, section "Fourier transform", entry "fast Fourier transform"; J. W. Cooley and J. W. Tukey, Math. Comp. 19 (1965) (`n log n` operation count).
+- J. W. Cooley and J. W. Tukey, Math. Comp. 19 (1965) (`n log n` operation count).

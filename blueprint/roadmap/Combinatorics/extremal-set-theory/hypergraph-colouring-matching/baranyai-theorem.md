@@ -10,4 +10,4 @@ whose union is $V$.
 
 ## Sources
 
-- statement `baranyai-s1` from https://en.wikipedia.org/wiki/Baranyai%27s_theorem.
+- https://en.wikipedia.org/wiki/Baranyai%27s_theorem.

@@ -10,4 +10,4 @@ The source assumes $d > 0$; for $d = 0$ the statement is trivial.
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 6 (`integers-2026-A25-thm-6`).
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 6.

@@ -9,4 +9,4 @@ $d((x, y), (x', y')) = \max(|x - x'|, |y - y'|)$.
 
 ## Sources
 
-- Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 4 (`integers-2026-A10-lem-4`).
+- Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 4.

@@ -11,4 +11,4 @@ equation $f(f + x) = 1$ has the two roots $[0; x, x, \dots]$ and $[x; x, x, \dot
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Theorem 3 (quoting Baum and Sweet) (`integers-2026-A57-thm-3`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Theorem 3 (quoting Baum and Sweet).

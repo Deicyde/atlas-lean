@@ -18,4 +18,4 @@ only pair contributes $q$, while the printed sum is empty.
 
 ## Sources
 
-- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 4 (`integers-2024-A107-thm-4`).
+- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 4.

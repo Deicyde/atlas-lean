@@ -16,4 +16,4 @@ of $F(N) \le N^{1/5 + o(1)}$, which with Csaba's $F(N) \gg N^{1/5}$ would give t
 
 ## Sources
 
-- H. T. Pham and D. Zakharov, Sharp bound for the Erdős-Straus non-averaging set problem, arXiv:2410.14624 (2024), https://arxiv.org/abs/2410.14624. Moved from `OpenConjectures/Combinatorics/DivisorSumFreeSetLowerBound`.
+- H. T. Pham and D. Zakharov, Sharp bound for the Erdős-Straus non-averaging set problem, arXiv:2410.14624 (2024), https://arxiv.org/abs/2410.14624.

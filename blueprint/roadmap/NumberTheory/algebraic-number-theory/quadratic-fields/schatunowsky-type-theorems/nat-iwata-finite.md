@@ -7,4 +7,4 @@ factors of $b$ counted with multiplicity.
 
 ## Sources
 
-- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 2, quoting Iwata (`integers-2026-A110-thm-2`). `ℓ = 0` is included (trivially finite).
+- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 2, quoting Iwata. `ℓ = 0` is included (trivially finite).

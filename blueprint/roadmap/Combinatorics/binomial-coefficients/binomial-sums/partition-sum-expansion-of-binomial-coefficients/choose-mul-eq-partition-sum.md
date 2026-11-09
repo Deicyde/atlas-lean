@@ -11,4 +11,4 @@ where $n - T_j(s)$ is read as $0$ when $T_j(s) > n$.
 
 ## Sources
 
-- Jocelyn Quaintance and Harris Kwong, "Permutations and Combinations of Colored Multisets," Journal of Integer Sequences 13 (2010), Article 10.2.6, Theorem (label thm:1.2), lines 329–336. `https://cs.uwaterloo.ca/journals/JIS/VOL13/Kwong/kwong6.tex`
+- Jocelyn Quaintance and Harris Kwong, "Permutations and Combinations of Colored Multisets," Journal of Integer Sequences 13 (2010), Article 10.2.6, Theorem, lines 329–336. <https://cs.uwaterloo.ca/journals/JIS/VOL13/Kwong/kwong6.tex>

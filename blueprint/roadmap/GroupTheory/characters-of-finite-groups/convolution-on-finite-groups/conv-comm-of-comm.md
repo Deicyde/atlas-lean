@@ -9,4 +9,4 @@ as in the commutative group-algebra argument in Terras, Ch. 2.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "convolution"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (commutative group algebra of an abelian group).
+- A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (commutative group algebra of an abelian group).

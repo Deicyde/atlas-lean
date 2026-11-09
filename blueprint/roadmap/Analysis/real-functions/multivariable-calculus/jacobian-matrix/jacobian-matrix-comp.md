@@ -11,4 +11,4 @@ fact that the matrix of a composition of linear maps is the product of their mat
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entries `Jacobian matrix` and `chain rule`; W. Rudin, Principles of Mathematical Analysis, 3rd ed., Theorem 9.15.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Theorem 9.15.

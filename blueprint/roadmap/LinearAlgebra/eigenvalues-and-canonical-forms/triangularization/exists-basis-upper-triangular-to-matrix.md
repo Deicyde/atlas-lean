@@ -14,4 +14,4 @@ ed., Cambridge University Press (2013), Theorem 2.3.1, without unitarity.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Structure theory of endomorphisms / triangularization; S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Theorem 5.41.
+- S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Theorem 5.41.

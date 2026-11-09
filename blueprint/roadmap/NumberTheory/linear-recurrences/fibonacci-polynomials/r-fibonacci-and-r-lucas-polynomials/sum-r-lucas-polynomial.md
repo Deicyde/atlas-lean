@@ -13,4 +13,4 @@ The paper states $n \ge 1$; for $n < r - 1$ the right side involves $V$ at negat
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 4 (`integers-2025-A38-cor-4`).
+- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 4.

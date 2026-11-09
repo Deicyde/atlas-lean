@@ -24,4 +24,4 @@ $U_o(1) - U_e(1) = 0 - 1 = -1$.
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 12 (`integers-2025-A94-thm-12`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 12.

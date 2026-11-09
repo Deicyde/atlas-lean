@@ -6,4 +6,4 @@ even number of digits, then $b = 2^x - 1$ for some natural number $x$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Corollary 2 (`integers-2024-A69-cor-2`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Corollary 2.

@@ -12,4 +12,4 @@ statement remains.
 
 ## Sources
 
-- Takashi Agoh, *An Intrinsic Factor of an Alternating Sum Involving Certain Rational Functions*, INTEGERS 26 (2026), Article A9, Theorem 1.1 (`integers-2026-A9-thm-1-1`).
+- Takashi Agoh, *An Intrinsic Factor of an Alternating Sum Involving Certain Rational Functions*, INTEGERS 26 (2026), Article A9, Theorem 1.1.

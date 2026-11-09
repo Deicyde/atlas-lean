@@ -7,7 +7,3 @@ for every list of booleans $x$, $L(x)$ is true if and only if there is a list of
 whose length is at most $p$ evaluated at the length of $x$ and for which $R(x, w)$ is true.
 
 Polynomial time is measured with respect to the canonical bitstring encodings.
-
-## Sources
-
-- adapted from FormalConjectures, FormalConjecturesForMathlib/Computability/Complexity.lean (absent from Mathlib).

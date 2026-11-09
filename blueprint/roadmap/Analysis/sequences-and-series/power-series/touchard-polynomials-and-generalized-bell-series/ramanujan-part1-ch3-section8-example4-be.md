@@ -9,4 +9,4 @@ $$\int_0^1 x\, f(m - 1, t x)\, dt = \sum_{k=0}^{m} \binom{m}{k} B_{m-k} \frac{f(
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 4 and its correction, printed pp. 51--52 / PDF pp. 61--62. Proves `Wanted` entry `ramanujan_part1_ch3_section8_example4_bernoulli_integral`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 4 and its correction, printed pp. 51--52 / PDF pp. 61--62.

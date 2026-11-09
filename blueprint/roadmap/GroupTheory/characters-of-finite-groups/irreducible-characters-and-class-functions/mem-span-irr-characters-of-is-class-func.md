@@ -13,4 +13,4 @@ Teleman's Theorem 9.3 (completeness of characters).
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "orthonormal basis of irreducible characters"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.7, Theorem 6 (irreducible characters span the class functions).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.7, Theorem 6 (irreducible characters span the class functions).

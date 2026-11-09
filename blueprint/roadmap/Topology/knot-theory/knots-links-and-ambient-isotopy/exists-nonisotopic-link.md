@@ -8,4 +8,4 @@ each up to an orientation-preserving reparametrization of the circle.
 
 ## Sources
 
-- Classical; see https://en.wikipedia.org/wiki/Linking_number. Via leanprover/lean-eval@38361be, problem `exists_nonisotopic_link`.
+- Classical; see https://en.wikipedia.org/wiki/Linking_number. Problem `exists_nonisotopic_link` of the lean-eval benchmark.

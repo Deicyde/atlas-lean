@@ -9,4 +9,4 @@ $T(n) < \log 2 - \frac{11}{50 p_1^2}$.
 
 ## Sources
 
-- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 4 (`integers-2025-A59-prop-4`).
+- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 4.

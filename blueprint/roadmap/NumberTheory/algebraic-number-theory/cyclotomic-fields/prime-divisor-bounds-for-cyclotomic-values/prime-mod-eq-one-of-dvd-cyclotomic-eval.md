@@ -6,4 +6,4 @@ polynomial with integer coefficients. If $\rho \mid \Phi_p(x)$, then $\rho \equi
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 1 (`integers-2026-A95-prop-1`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 1.

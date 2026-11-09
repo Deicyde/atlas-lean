@@ -6,4 +6,4 @@ on $[a, b]$.
 
 ## Sources
 
-- F. Riesz (1932). Knill, §163. Via leanprover/lean-eval@38361be, problem `rising_sun_lemma`.
+- F. Riesz (1932). Knill, §163. Problem `rising_sun_lemma` of the lean-eval benchmark.

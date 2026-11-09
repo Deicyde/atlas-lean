@@ -8,4 +8,4 @@ centralizer of the image of the action of the symmetric group $S_k$ by permuting
 
 ## Sources
 
-- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Via leanprover/lean-eval@38361be, problem `glAction_range_eq_centralizer_symAction`.
+- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Problem `glAction_range_eq_centralizer_symAction` of the lean-eval benchmark.

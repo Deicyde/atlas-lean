@@ -8,4 +8,4 @@ $$S(n, m) = \sum_{k=m}^{n} (-1)^{k-m} \binom{n}{k}\, m^{n-k}\, S(k, m).$$
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 2 (TeX label `thm:kscasc`).
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 2.

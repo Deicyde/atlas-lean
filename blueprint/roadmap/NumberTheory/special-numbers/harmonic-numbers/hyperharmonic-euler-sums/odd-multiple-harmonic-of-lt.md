@@ -5,4 +5,4 @@ $n$ with $k > n$, the depth-$k$ odd harmonic number $O_n(k)$ equals $0$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11) (`integers-2026-A81-cor-1`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11).

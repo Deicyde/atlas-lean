@@ -5,4 +5,4 @@ by $p$ in the ring $\mathbb{Z}_p$ of $p$-adic integers is a divided-power ideal.
 
 ## Sources
 
-- S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 8, last sentence (`integers-2024-A46-cor-8`).
+- S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 8, last sentence.

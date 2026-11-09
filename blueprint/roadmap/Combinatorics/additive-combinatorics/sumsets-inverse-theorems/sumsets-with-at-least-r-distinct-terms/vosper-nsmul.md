@@ -8,4 +8,4 @@ length $k$ in $\mathbb{Z}/p\mathbb{Z}$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 3 (Vosper's theorem) (`integers-2025-A12-thm-3`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 3 (Vosper's theorem).

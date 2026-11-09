@@ -13,4 +13,4 @@ $\gamma + \sum_p (\log(1 - 1/p) + 1/p)$, with $\gamma$ Euler's constant.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 5 (`integers-2024-A34-thm-5`), inequality (17).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 5, inequality (17).

@@ -8,4 +8,4 @@ $u(0) \le v(0)$ and $u(1) \le v(1)$, then $u(x) \le v(x)$ for every $x \in [0, 1
 
 ## Sources
 
-- Standard maximum-principle argument; Protter-Weinberger. Via leanprover/lean-eval@38361be, problem `bvp_comparison`.
+- Standard maximum-principle argument; Protter-Weinberger. Problem `bvp_comparison` of the lean-eval benchmark.

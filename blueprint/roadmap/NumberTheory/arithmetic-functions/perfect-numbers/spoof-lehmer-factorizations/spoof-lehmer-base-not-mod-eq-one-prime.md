@@ -8,4 +8,4 @@ every $i$. Moreover, if $F$ is even (not every base is odd), then every base $x_
 
 ## Sources
 
-- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Corollary 2 (`integers-2026-A33-cor-2`).
+- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Corollary 2.

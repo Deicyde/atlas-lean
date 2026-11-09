@@ -9,4 +9,4 @@ $a_n = g / (k + 1)$.
 
 ## Sources
 
-- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Corollary `cor:lastdig1089` (Sloane's Conjecture 3.5) and proof, lines 418–424, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>. Proves `Wanted` entry `sloane_reverse_multiple_endpoint`.
+- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Corollary `cor:lastdig1089` (Sloane's Conjecture 3.5) and proof, lines 418–424, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>.

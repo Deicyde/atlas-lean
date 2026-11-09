@@ -6,4 +6,4 @@ $\operatorname{opx}(n, \{p\}) = 0$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 6.5 (`integers-2024-A1-lem-6-5`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 6.5.

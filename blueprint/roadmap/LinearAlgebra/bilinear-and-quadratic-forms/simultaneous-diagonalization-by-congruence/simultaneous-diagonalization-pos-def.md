@@ -12,4 +12,4 @@ diagonalization", with the eigenbasis scaling in place of a Cholesky factor.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Bilinear and Quadratic Forms Over a Vector Space / Endomorphisms / simultaneous diagonalization of two real quadratic forms, with one positive-definite; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 4.5.15.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 4.5.15.

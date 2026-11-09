@@ -7,4 +7,4 @@ $k \cdot 2^n + 1$ is not prime for every $n \ge 1$.
 
 ## Sources
 
-- Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 3 (`integers-2024-A10-thm-3`).
+- Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 3.

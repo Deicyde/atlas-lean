@@ -13,4 +13,4 @@ $$S(C_4^2) = \{16m + 1 \mid m \in \mathbb{Z}\} \cup
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1 (`integers-2024-A30-thm-1`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1.

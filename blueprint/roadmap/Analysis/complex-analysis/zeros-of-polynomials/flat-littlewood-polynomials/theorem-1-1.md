@@ -7,4 +7,4 @@ $z \in \mathbb{C}$ with $|z| = 1$.
 
 ## Sources
 
-- P. Balister, B. Bollobás, R. Morris, J. Sahasrabudhe, and M. Tiba, `Flat Littlewood polynomials exist`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-3-FlatLittlewoodPoly.lean Via leanprover/lean-eval@38361be, problem `annals_flat_littlewood_poly`.
+- P. Balister, B. Bollobás, R. Morris, J. Sahasrabudhe, and M. Tiba, `Flat Littlewood polynomials exist`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_flat_littlewood_poly` of the lean-eval benchmark.

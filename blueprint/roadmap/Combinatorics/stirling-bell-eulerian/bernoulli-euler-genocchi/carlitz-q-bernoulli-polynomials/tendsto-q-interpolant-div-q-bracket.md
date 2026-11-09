@@ -11,4 +11,4 @@ $$(-1)^k [k]! \sum_{i=0}^{r-1} \frac{q^{ik} [r-1]_i}{[k+r]_{i+1}}.$$
 
 ## Sources
 
-- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.15 (`integers-2026-A85-cor-2-15`).
+- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.15.

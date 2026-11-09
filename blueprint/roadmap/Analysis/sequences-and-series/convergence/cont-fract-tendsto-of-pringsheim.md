@@ -10,4 +10,4 @@ Zero partial numerators are admitted.
 
 ## Sources
 
-- Carminda M. Mennen, *Möbius Maps and Continued Fractions*, INTEGERS 24 (2024), Article A52, Theorem 1 (`integers-2024-A52-thm-1`).
+- Carminda M. Mennen, *Möbius Maps and Continued Fractions*, INTEGERS 24 (2024), Article A52, Theorem 1.

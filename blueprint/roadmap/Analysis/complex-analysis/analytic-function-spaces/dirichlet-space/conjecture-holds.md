@@ -13,4 +13,4 @@ space, $|g| \le |f|$ with $g$ cyclic implies $f$ cyclic, where $g$ is cyclic whe
 
 ## Sources
 
-- Emmanuel Fricain and Romain Lebreton, Cyclicity of the shift operator through Bezout identities, arXiv:2406.06182 (2024), https://arxiv.org/abs/2406.06182. Moved from `OpenConjectures/Analysis/DirichletSpacePolynomialDensity`.
+- Emmanuel Fricain and Romain Lebreton, Cyclicity of the shift operator through Bezout identities, arXiv:2406.06182 (2024), https://arxiv.org/abs/2406.06182.

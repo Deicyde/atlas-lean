@@ -13,4 +13,4 @@ z \sum_{j=0}^{\infty} \Bigl(\frac{1}{(j + z + \frac12)^2} + \frac{1}{(j + z - \f
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, identity (15) (`integers-2025-A18-thm-7`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, identity (15).

@@ -11,4 +11,4 @@ order of growth of $h(n)$ is not part of this statement.
 
 ## Sources
 
-- J. Schmitt, T. Gehrunger, J. Dekoninck, G. Bérczi, U. Kreitner, L. Price, D. Holmes, ProofCouncil: An LLM Agent for Solving Open Mathematical Problems, arXiv:2607.09474 (2026), https://arxiv.org/abs/2607.09474. Moved from `OpenConjectures/NumberTheory/ErdosProblem539`.
+- J. Schmitt, T. Gehrunger, J. Dekoninck, G. Bérczi, U. Kreitner, L. Price, D. Holmes, ProofCouncil: An LLM Agent for Solving Open Mathematical Problems, arXiv:2607.09474 (2026), https://arxiv.org/abs/2607.09474.

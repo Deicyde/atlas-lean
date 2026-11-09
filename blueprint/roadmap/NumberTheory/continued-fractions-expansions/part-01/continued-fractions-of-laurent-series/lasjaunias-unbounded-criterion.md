@@ -16,4 +16,4 @@ $|b_{n+1}| > |\Delta|^{1/(q-1)}$.
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 8 (quoting Lasjaunias) (`integers-2026-A57-lem-8`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 8 (quoting Lasjaunias).

@@ -11,4 +11,4 @@ exactly one of the blocks $n$ and $n + 1$ is an interval.
 
 ## Sources
 
-- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 1 (`integers-2026-A24-lem-1`).
+- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 1.

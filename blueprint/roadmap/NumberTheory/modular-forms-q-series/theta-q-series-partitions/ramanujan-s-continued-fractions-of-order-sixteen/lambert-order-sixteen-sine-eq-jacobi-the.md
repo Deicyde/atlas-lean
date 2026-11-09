@@ -20,4 +20,4 @@ Under these hypotheses the series converge and the denominators do not vanish.
 
 ## Sources
 
-- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 2 of Section 5, Equations (59)-(60) (`integers-2025-A16-lem-2`).
+- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 2 of Section 5, Equations (59)-(60).

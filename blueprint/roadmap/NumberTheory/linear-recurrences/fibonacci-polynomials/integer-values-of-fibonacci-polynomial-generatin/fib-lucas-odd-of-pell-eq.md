@@ -8,4 +8,4 @@ there is $n \in \mathbb{N}$ with $b^n P = L_{2n+1}(1)$ and $b^n Q = F_{2n+1}(1)$
 
 ## Sources
 
-- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Proposition 2.3 (`fq-2024-tsuno05142024-prop-2.3`).
+- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Proposition 2.3.

@@ -9,4 +9,4 @@ differentiable and strictly decreasing on some neighbourhood of $x$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 9 (`integers-2025-A25-thm-9`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 9.

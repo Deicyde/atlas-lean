@@ -9,4 +9,4 @@ $$(1 - y^{-1} z^r + x y^{-1} z^{r+1}) \sum_{n \ge 0} V^{(-r)}_n(x, y) z^n = r + 
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 8 (`integers-2025-A38-thm-8`).
+- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 8.

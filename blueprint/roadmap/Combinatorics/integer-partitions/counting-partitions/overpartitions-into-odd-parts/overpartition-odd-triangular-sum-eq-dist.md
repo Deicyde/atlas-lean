@@ -11,4 +11,4 @@ $k$ and $-1 - k$ give the same term, and the identity would fail at $n = 0$.
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 14 (`integers-2026-A60-thm-14`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 14.

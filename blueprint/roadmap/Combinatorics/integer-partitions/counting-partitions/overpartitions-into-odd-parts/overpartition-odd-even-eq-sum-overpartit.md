@@ -11,4 +11,4 @@ $\overline{p}(0) + 2 \, \overline{p}(0) = 3$, whereas $\mathrm{po}(0) = 1$.
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 10 (`integers-2026-A60-thm-10`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 10.

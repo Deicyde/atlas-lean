@@ -7,4 +7,4 @@ order.
 
 ## Sources
 
-- OpenAI (2026), equation (1.3), retained PrimeGaps186.lean lines 1095-1104.
+- OpenAI (2026), equation (1.3).

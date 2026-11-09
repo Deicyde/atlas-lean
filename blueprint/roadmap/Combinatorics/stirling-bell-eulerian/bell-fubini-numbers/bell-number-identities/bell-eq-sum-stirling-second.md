@@ -6,4 +6,4 @@ Stirling number of the second kind.
 
 ## Sources
 
-- Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation `Stir`, lines 107–108 (quoting the classical formula), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.tex>. Proves `Wanted` entry `bell_eq_sum_stirlingSecond`.
+- Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation `Stir`, lines 107–108 (quoting the classical formula), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.tex>.

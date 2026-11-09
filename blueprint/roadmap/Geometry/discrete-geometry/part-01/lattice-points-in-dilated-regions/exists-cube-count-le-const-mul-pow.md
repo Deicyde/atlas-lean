@@ -8,7 +8,3 @@ is at most $C t^d$.
 
 The proof takes $C = 2^d M^n$ with $M = 2 \lceil K \sqrt{d} \rceil + 3$, which depends on $f$ only
 through $K$, and on $n$ and $d$, but not on $t$; it uses $\lceil t \rceil \le 2t$ for $t \ge 1$.
-
-## Sources
-
-- v1 AnalyticClassNumber.lean, lines 283–311.

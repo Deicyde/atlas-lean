@@ -15,4 +15,4 @@ $n \ge 1$; or there is a nonzero integer $M$ such that one of the following hold
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 2.1 (`integers-2025-A107-thm-2-1`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 2.1.

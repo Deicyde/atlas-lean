@@ -12,4 +12,4 @@ while the formula gives $t_1(1) + t_2(1) = 1$), so $m \ge 1$ is assumed.
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 9 (`integers-2024-A35-thm-9`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 9.

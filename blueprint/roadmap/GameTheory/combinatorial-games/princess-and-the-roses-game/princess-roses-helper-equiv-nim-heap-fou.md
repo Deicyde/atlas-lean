@@ -18,4 +18,4 @@ $z = x + 5$ and $x \equiv 1 \pmod 8$; $y = x + 1$, $z = x + 6$ and $x \equiv 1 \
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13 (`integers-2026-G4-thm-13`), value `4` on `U`.
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `4` on `U`.

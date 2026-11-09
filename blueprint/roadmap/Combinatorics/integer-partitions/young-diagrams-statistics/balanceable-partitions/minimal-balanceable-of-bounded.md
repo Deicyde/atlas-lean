@@ -6,4 +6,4 @@ $2 \operatorname{lcm}(1, 2, \ldots, k)$.
 
 ## Sources
 
-- https://projecteuler.net/problem=772 Via leanprover/lean-eval@38361be, problem `balanceable_bounded_partitions`.
+- https://projecteuler.net/problem=772. Problem `balanceable_bounded_partitions` of the lean-eval benchmark.

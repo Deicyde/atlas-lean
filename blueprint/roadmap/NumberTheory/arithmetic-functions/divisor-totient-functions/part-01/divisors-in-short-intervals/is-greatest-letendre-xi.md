@@ -14,4 +14,4 @@ $A$ is unbounded when $\eta = \theta^2$.
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 2 (`integers-2026-A115-prop-2`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 2.

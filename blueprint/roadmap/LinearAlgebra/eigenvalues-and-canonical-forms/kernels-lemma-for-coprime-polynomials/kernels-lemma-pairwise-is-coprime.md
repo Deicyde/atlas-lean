@@ -17,4 +17,4 @@ $q$ is the product of the other polynomials.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Structure theory of endomorphisms / kernels lemma; https://fr.wikipedia.org/wiki/Lemme_des_noyaux; S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Section 8C.
+- https://fr.wikipedia.org/wiki/Lemme_des_noyaux; S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Section 8C.

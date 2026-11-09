@@ -14,4 +14,4 @@ $\lambda = P(a_1, \dots, a_k) \cup (r+1)$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 2 with displays (14)-(17) (`integers-2025-A109-cor-2`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 2 with displays (14)-(17).

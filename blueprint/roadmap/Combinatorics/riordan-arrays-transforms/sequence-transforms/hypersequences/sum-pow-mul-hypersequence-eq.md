@@ -15,4 +15,4 @@ $$\sum_{k=0}^{n} k^\ell a^{(r)}_k = \sum_{j=0}^{\ell} \binom{\ell}{j}
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 9, Equations (3.7) and (3.8) (`integers-2024-A70-thm-9`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 9, Equations (3.7) and (3.8).

@@ -11,4 +11,4 @@ $\alpha \in \mathbb{Z}^n$ and every homological index $i \in \mathbb{N}$.
 
 ## Sources
 
-- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact lines 866--874. This is conditional only: it assumes the comparison and claims no existence, uniqueness, minimality, finite support, Poincaré polynomiality or rationality, or Hilbert syzygy.
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact lines 866--874. This is conditional only: it assumes the comparison and claims no existence, uniqueness, minimality, finite support, Poincaré polynomiality or rationality, or Hilbert syzygy.

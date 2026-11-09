@@ -8,4 +8,4 @@ fixed point: there is $x \in X$ with $f(x) = x$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Operator theory; Nonlinear operators and their properties), `benchmark/level1/ma_proofbench_l1_74.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Operator theory; Nonlinear operators and their properties), problem `ma_proofbench_l1_74`.

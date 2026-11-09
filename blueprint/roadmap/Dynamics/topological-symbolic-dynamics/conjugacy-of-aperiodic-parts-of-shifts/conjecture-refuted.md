@@ -12,4 +12,4 @@ conjugate.
 
 ## Sources
 
-- Ville Salo, Conjugacy of transitive SFTs minus periodic points, Proc. London Math. Soc. (accepted; arXiv v3 2023), arXiv:2104.09860, https://arxiv.org/abs/2104.09860. Moved from `OpenConjectures/Dynamics/AMR43Problem1`.
+- Ville Salo, Conjugacy of transitive SFTs minus periodic points, Proc. London Math. Soc. (accepted; arXiv v3 2023), arXiv:2104.09860, https://arxiv.org/abs/2104.09860.

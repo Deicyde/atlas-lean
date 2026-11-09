@@ -9,4 +9,4 @@ This is the source's product (4); its operation (12) on integral triples is the 
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1, (4) (`integers-2024-A5-lem-1`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1, (4).

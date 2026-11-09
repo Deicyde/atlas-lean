@@ -9,4 +9,4 @@ $9 \cdot 5^{(n-4)/3}$ if $n \equiv 1 \pmod 3$.
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 6 (`integers-2026-A116-prop-6`).
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 6.

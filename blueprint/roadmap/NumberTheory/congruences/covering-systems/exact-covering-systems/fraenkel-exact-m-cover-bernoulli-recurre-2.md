@@ -18,4 +18,4 @@ a parameter $x$, and Porubsky's weighted variant are not.
 
 ## Sources
 
-- Yevgenya Movshovich, "Raabe's Identity and Covering Systems," Journal of Integer Sequences 23 (2020), Article 20.2.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Movshovich/movsho5.tex>. Equation (23); exact source span: lines 228–241; full live TeX source-file SHA-256 `24b31e07198371d27b492f46b2d747aa49e9a49323696d6b4a9c18deab8ff593`; exact newline-terminated equation/context span SHA-256 `1c95008be9bbbc150a494df7eef936abd3ee277ab9bd32ff1f67b0b0f4b76526`.
+- Yevgenya Movshovich, "Raabe's Identity and Covering Systems," Journal of Integer Sequences 23 (2020), Article 20.2.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Movshovich/movsho5.tex>. Equation (23); lines 228–241.

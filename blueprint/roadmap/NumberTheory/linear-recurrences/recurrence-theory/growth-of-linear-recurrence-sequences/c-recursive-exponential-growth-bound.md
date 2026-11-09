@@ -7,4 +7,4 @@ $g \ge 1$ such that $|t(n)| < g^{n+1}$ for all $n \in \mathbb{N}$.
 
 ## Sources
 
-- M. Prunescu and J. M. Shunia, "On Modular Representations of C-Recursive Integer Sequences," Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma (label LemmaGeneralInequality, quoting Prunescu and Sauras-Altuzarra, Lemma 4), lines 166–167, https://cs.uwaterloo.ca/journals/JIS/VOL28/Prunescu/prunescu3.tex
+- M. Prunescu and J. M. Shunia, "On Modular Representations of C-Recursive Integer Sequences," Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma (quoting Prunescu and Sauras-Altuzarra, Lemma 4), lines 166–167, https://cs.uwaterloo.ca/journals/JIS/VOL28/Prunescu/prunescu3.tex

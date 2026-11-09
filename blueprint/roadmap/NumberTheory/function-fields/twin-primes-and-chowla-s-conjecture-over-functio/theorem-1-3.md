@@ -14,4 +14,4 @@ squarefree with $r$ irreducible factors, and $\mu(g) = 0$ otherwise.
 
 ## Sources
 
-- W. Sawin and M. Shusterman, `On the Chowla and twin primes conjectures over 𝔽_q[T]`, Annals of Math, 196 (2) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2022-196-2-ChowlaAndTwinPrimeOverFqT.lean Via leanprover/lean-eval@38361be, problem `annals_chowla_and_twin_prime_over_fq_t`.
+- W. Sawin and M. Shusterman, `On the Chowla and twin primes conjectures over 𝔽_q[T]`, Annals of Math, 196 (2) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_chowla_and_twin_prime_over_fq_t` of the lean-eval benchmark.

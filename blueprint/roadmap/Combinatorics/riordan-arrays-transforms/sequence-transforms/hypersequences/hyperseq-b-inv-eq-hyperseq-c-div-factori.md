@@ -14,4 +14,4 @@ of the factorials $j!$, this says $B(n)^{-1} = C(n) D^{-1}$.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 1, Equation (2.9) (`integers-2026-A36-cor-1`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 1, Equation (2.9).

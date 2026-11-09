@@ -7,4 +7,4 @@ that every $A \in U$ contains some member of $\mathcal{F}$ ($U$ is a PR-witness 
 
 ## Sources
 
-- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.1 (`integers-2025-A105-prop-3-1`), quoting Hindman and Strauss, Theorem 5.7.
+- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.1, quoting Hindman and Strauss, Theorem 5.7.

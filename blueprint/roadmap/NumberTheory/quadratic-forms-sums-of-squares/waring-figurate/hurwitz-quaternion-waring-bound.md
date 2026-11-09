@@ -8,4 +8,4 @@ powers of Hurwitz integers.
 
 ## Sources
 
-- Janyarak Tongsomporn, Nicola Oswald, and Jörn Steuding, "Waring's Problem for Hurwitz Quaternion Integers," Journal of Integer Sequences 22 (2019), Article 19.8.1, Theorem (label 1), lines 127–129, https://cs.uwaterloo.ca/journals/JIS/VOL22/Steuding/steuding6.tex
+- Janyarak Tongsomporn, Nicola Oswald, and Jörn Steuding, "Waring's Problem for Hurwitz Quaternion Integers," Journal of Integer Sequences 22 (2019), Article 19.8.1, Theorem, lines 127–129, https://cs.uwaterloo.ca/journals/JIS/VOL22/Steuding/steuding6.tex

@@ -7,4 +7,4 @@ numbers $c > 0$ and $n > 0$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 2.10 (`integers-2024-A1-cor-2-10`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 2.10.

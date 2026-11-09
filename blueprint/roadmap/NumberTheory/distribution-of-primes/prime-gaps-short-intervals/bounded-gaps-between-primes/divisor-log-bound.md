@@ -12,4 +12,4 @@ neither on $x$ nor on $n$.
 
 ## Sources
 
-- Polymath8b v4, Claim 2.6, TeX label `ab-div`.
+- Polymath8b v4, Claim 2.6.

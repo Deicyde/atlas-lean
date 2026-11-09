@@ -9,4 +9,4 @@ $$|D_{u,n}| = \sum_{i=1}^{u} (-1)^{i-1} \binom{u}{i} |D_{u,n-i}| + |D_{u,n-2u+1}
 
 ## Sources
 
-- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 3 (`integers-2026-A53-thm-3`).
+- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 3.

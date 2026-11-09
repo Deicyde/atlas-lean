@@ -7,4 +7,4 @@ prime.
 
 ## Sources
 
-- Antonín Čejchan, Michal Křížek, and Lawrence Somer, "On Remarkable Properties of Primes Near Factorials and Primorials," Journal of Integer Sequences 25 (2022), Article 22.1.4, Theorem (label T3), lines 471–477, https://cs.uwaterloo.ca/journals/JIS/VOL25/Krizek/krizek3.tex It follows from `prime_sub_primorial_prime_of_between_consecutive_primes_general`; the hypotheses `hq`, `hr` and `hqr` are unused and keep the source's shape. Proves `Wanted` entry `prime_sub_primorial_prime_of_between_consecutive_primes`.
+- Antonín Čejchan, Michal Křížek, and Lawrence Somer, "On Remarkable Properties of Primes Near Factorials and Primorials," Journal of Integer Sequences 25 (2022), Article 22.1.4, Theorem, lines 471–477, https://cs.uwaterloo.ca/journals/JIS/VOL25/Krizek/krizek3.tex It follows from `prime_sub_primorial_prime_of_between_consecutive_primes_general`; the hypotheses `hq`, `hr` and `hqr` are unused and keep the source's shape.

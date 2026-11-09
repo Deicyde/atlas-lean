@@ -7,4 +7,4 @@ image of the punctured disc $0 < |z - c| < r$ under $f$ is dense in $\mathbb{C}$
 
 ## Sources
 
-- L. V. Ahlfors, Complex Analysis, 3rd ed., isolated singularities. Proves `Wanted` entry `casoratiWeierstrass`.
+- L. V. Ahlfors, Complex Analysis, 3rd ed., isolated singularities.

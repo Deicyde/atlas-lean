@@ -11,4 +11,4 @@ For large $x$ every prime $p < 2K$ is at most $x$, so $D_p \ge 2$ and $\log D_p 
 
 ## Sources
 
-- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 5 (`integers-2026-A47-lem-5`).
+- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 5.

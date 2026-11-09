@@ -6,4 +6,4 @@ block $(b_1, \dots, b_l)$ to $\sum_i b_i - \prod_i b_i$. Then $F_{-1}$ is vanish
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 4 (`integers-2026-A25-thm-4`).
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 4.

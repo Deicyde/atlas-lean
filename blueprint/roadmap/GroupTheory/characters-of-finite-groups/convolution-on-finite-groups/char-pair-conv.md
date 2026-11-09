@@ -15,4 +15,4 @@ factor the character pairing, following Terras, Ch. 2–3.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "convolution"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2–3 (the Fourier transform takes convolution to pointwise products).
+- A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2–3 (the Fourier transform takes convolution to pointwise products).

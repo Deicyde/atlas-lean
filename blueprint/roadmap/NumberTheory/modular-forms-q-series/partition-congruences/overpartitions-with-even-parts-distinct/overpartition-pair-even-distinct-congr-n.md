@@ -19,4 +19,4 @@ $\mathrm{bped}_{3,3}(14737) \equiv 8 \pmod{16}$, $\mathrm{bped}_{3,3}(1637) \equ
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 2 (`integers-2026-A118-thm-2`).
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 2.

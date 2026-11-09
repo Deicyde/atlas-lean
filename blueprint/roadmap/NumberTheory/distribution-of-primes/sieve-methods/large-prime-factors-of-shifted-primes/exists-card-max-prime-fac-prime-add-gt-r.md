@@ -12,4 +12,4 @@ prime in $(x^\theta, x]$ qualifies and these number $(1 + o(1)) x / \log x$.
 
 ## Sources
 
-- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 1 (`integers-2024-A91-lem-1`), quoted there from Baker and Harman.
+- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 1, quoted there from Baker and Harman.

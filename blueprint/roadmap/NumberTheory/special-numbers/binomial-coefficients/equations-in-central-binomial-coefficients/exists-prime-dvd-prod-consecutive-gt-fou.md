@@ -6,4 +6,4 @@ $n(n+1)\cdots(n+m-1)$ has a prime divisor $p$ with $p > 4.42\,m$.
 
 ## Sources
 
-- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 10 (`integers-2026-A26-lem-10`), quoting Nair and Shorey.
+- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 10, quoting Nair and Shorey.

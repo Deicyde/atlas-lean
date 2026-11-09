@@ -7,4 +7,4 @@ $d(\sigma \alpha, \sigma \beta) = d(\alpha, \beta)$.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Proposition 1 (`integers-2025-A10-prop-1`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Proposition 1.

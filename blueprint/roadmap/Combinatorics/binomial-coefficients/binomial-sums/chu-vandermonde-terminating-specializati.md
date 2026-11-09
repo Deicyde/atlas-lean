@@ -10,4 +10,4 @@ ${}_2F_1(n+1, -n; 2; 1) = (1-n)_n / (2)_n = 0$, where $(a)_n$ is the rising fact
 
 ## Sources
 
-- Carsten Elsner, "On Prime-Detecting Sequences From Apéry's Recurrence Formulae for ζ(3) and ζ(2)", Journal of Integer Sequences 11 (2008), Article 08.5.1, lines 606–608, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Elsner/elsner7.tex>. Proves `Wanted` entry `chu_vandermonde_terminating_specialization`.
+- Carsten Elsner, "On Prime-Detecting Sequences From Apéry's Recurrence Formulae for ζ(3) and ζ(2)", Journal of Integer Sequences 11 (2008), Article 08.5.1, lines 606–608, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Elsner/elsner7.tex>.

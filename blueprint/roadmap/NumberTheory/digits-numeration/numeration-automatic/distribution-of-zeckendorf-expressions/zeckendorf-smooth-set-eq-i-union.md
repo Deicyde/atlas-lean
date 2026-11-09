@@ -14,4 +14,4 @@ intervals of two distinct admissible pairs are disjoint; and $U$ is open and mea
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 3 (`integers-2025-A25-prop-3`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 3.

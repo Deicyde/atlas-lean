@@ -7,4 +7,4 @@ $b c_2 - c_1 = n d_2 - d_1$ as integers.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 6 (`integers-2025-A111-thm-6`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 6.

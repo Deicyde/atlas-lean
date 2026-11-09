@@ -13,4 +13,4 @@ the index of the last term of the pre-period when $b$ is even.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 2 (`integers-2026-A77-cor-2`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 2.

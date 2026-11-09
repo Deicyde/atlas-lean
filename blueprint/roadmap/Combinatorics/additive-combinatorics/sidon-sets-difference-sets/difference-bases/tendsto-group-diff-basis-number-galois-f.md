@@ -12,4 +12,4 @@ The restriction to odd $p$ is deliberate: for $p = 2$ the claim fails.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 8 (`integers-2025-A77-lem-8`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 8.

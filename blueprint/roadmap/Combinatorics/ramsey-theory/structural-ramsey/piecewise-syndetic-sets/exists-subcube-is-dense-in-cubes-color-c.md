@@ -12,4 +12,4 @@ $r = 0$ admits no coloring of the nonempty cube $M$.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (`integers-2024-A2-lem-1`).
+- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1.

@@ -10,4 +10,4 @@ $n D_1 = (n - H) D_2$, $D_3 = D_2$ and $n D_4 = H D_2$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 36 (`integers-2025-A26-lem-36`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 36.

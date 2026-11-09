@@ -15,4 +15,4 @@ $A = \{0, x, y, x + y\}$ for some integers $0 < x < y$ when $k = 4$.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 9 (`integers-2024-A116-thm-9`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 9.

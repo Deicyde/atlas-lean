@@ -24,4 +24,4 @@ number of such partitions of $12$ is $3$, but the coefficient of $q^{12}$ is $2$
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 9 (`integers-2025-A28-thm-9`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 9.

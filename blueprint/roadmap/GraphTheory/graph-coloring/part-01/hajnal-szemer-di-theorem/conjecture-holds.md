@@ -12,4 +12,4 @@ reformulation, obtained by applying (a) to the complement of $G$.
 
 ## Sources
 
-- A. Hajnal and E. Szemerédi, Proof of a conjecture of P. Erdős (1970), 601–623, https://mathscinet.ams.org/mathscinet-getitem?mr=297607; External Lean proof of Erdős Problem 914, plby/lean-proofs at commit 8822f7ddef30fadbd92e1c6ab4ed897af356af5e, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos914.lean. Moved from `OpenConjectures/Combinatorics/ErdosProblem914`.
+- A. Hajnal and E. Szemerédi, Proof of a conjecture of P. Erdős (1970), 601–623, https://mathscinet.ams.org/mathscinet-getitem?mr=297607; External Lean proof of Erdős Problem 914, plby/lean-proofs, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos914.lean.

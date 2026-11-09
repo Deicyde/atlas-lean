@@ -9,4 +9,4 @@ The paper quotes this result from its reference [2].
 
 ## Sources
 
-- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 1 (`integers-2026-A101-thm-1`).
+- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 1.

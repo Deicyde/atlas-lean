@@ -12,4 +12,4 @@ that $D(T)(v) = \partial_v T$ for every $T \in \mathcal{D}'(\Omega, F)$ and ever
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Distributions on R^d" / entry "derivative of a distribution"; L. Schwartz, *Théorie des distributions*, Ch. II.
+- L. Schwartz, *Théorie des distributions*, Ch. II.

@@ -12,4 +12,4 @@ path-connected subsets of the plane are arcwise connected.
 
 ## Sources
 
-- A. M. Blokh, R. J. Fokkink, J. C. Mayer, L. G. Oversteegen, E. D. Tymchatyn, Fixed point theorems for plane continua with applications, Mem. Amer. Math. Soc. 224 (2013), no. 1053, arXiv:1004.0214 (citing C. L. Hagopian, Bull. Amer. Math. Soc. 77 (1971), 351-354), https://arxiv.org/abs/1004.0214. Moved from `OpenConjectures/Topology/NonseparatingPlanarContinuum`.
+- A. M. Blokh, R. J. Fokkink, J. C. Mayer, L. G. Oversteegen, E. D. Tymchatyn, Fixed point theorems for plane continua with applications, Mem. Amer. Math. Soc. 224 (2013), no. 1053, arXiv:1004.0214 (citing C. L. Hagopian, Bull. Amer. Math. Soc. 77 (1971), 351-354), https://arxiv.org/abs/1004.0214.

@@ -11,4 +11,4 @@ block-compatible for $n$ (Oberwolfach Report 42/2025, Theorem 4; also Theorem 2.
 
 ## Sources
 
-- N. Alon, On designs and partial designs, extended abstract in Oberwolfach Report 42/2025 (Combinatorics, Probability and Computing), pp. 2249-2250, Theorem 4, https://doi.org/10.4171/owr/2025/42; N. Alon, Blocking partial designs and block-compatible sequences, note, Theorem 2.3, https://web.math.princeton.edu/~nalon/PDFS/remark191.pdf; T. F. Bloom, Erdős Problem #732, erdosproblems.com (status PROVED), https://www.erdosproblems.com/732. Moved from `OpenConjectures/Combinatorics/BlockCompatibleSequenceCount`.
+- N. Alon, On designs and partial designs, extended abstract in Oberwolfach Report 42/2025 (Combinatorics, Probability and Computing), pp. 2249-2250, Theorem 4, https://doi.org/10.4171/owr/2025/42; N. Alon, Blocking partial designs and block-compatible sequences, note, Theorem 2.3, https://web.math.princeton.edu/~nalon/PDFS/remark191.pdf; T. F. Bloom, Erdős Problem #732, erdosproblems.com (status PROVED), https://www.erdosproblems.com/732.

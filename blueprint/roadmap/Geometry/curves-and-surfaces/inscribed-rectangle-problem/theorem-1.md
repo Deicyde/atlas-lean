@@ -8,4 +8,4 @@ least $1/3$.
 
 ## Sources
 
-- C. Hugelmeyer, `Inscribed rectangles in a smooth Jordan curve attain at least one third of all aspect ratios`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2021-194-2-InscribedRectangles.lean Via leanprover/lean-eval@38361be, problem `annals_inscribed_rectangles`.
+- C. Hugelmeyer, `Inscribed rectangles in a smooth Jordan curve attain at least one third of all aspect ratios`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_inscribed_rectangles` of the lean-eval benchmark.

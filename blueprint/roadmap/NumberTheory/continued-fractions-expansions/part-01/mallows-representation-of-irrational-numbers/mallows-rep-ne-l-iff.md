@@ -10,4 +10,4 @@ $e'_k$ and each $w_k$ equal to $(2)$ or $(1, e''_k, 1)$ for a positive integer $
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 11 (`integers-2025-A78-prop-11`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 11.

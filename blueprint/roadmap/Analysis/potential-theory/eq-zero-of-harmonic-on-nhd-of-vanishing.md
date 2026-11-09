@@ -7,4 +7,4 @@ $s \subseteq \Omega$ of positive (outer) Lebesgue measure, then $h(z) = 0$ for a
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Miscellaneous topics of analysis in the complex plane), `benchmark/level2/ma_proofbench_l2_88.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Miscellaneous topics of analysis in the complex plane), problem `ma_proofbench_l2_88`.

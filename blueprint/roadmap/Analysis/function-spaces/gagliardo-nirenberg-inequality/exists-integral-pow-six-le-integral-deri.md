@@ -8,4 +8,4 @@ $$\int_{\mathbb{R}} u(t)^6 \, dt \le C_2 \int_{\mathbb{R}} u'(t)^2 \, dt.$$
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities in real analysis), `benchmark/level2/ma_proofbench_l2_79.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities in real analysis), problem `ma_proofbench_l2_79`.

@@ -6,4 +6,4 @@ number $n$, $\varphi_4(4n + 3) \equiv 0 \pmod 2$.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 2 (`integers-2025-A17-thm-2`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 2.

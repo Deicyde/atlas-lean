@@ -14,4 +14,4 @@ $B \ne E$ one also gets $O_1 \ne O_2$, so that $O_1 P O_2 Q$ is a square as in t
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Finsler%E2%80%93Hadwiger_theorem (statement finsler-hadwiger-s1). Proves `Wanted` entry `finsler_hadwiger`.
+- https://en.wikipedia.org/wiki/Finsler%E2%80%93Hadwiger_theorem.

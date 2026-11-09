@@ -7,4 +7,4 @@ $|hA| \ge \min(p,\ hk - h + 1)$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 1 (Cauchy–Davenport theorem) (`integers-2025-A12-thm-1`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 1 (Cauchy–Davenport theorem).

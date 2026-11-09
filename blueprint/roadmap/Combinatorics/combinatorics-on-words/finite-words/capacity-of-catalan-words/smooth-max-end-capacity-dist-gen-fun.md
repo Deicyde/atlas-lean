@@ -16,4 +16,4 @@ The factor for $j = 0$ is $(1 - x)^{-1}$, since $t(m, 0; q) = 0$ for every $m$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 9 (`integers-2025-A5-lem-9`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 9.

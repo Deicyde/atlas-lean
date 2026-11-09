@@ -11,4 +11,4 @@ $$(Af)(x) = \int_0^1 K(x,y) f(y)\,dy \quad \text{for almost every } x \in (0,1).
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Integral, integro-differential, and pseudodifferential operators), `benchmark/level2/ma_proofbench_l2_87.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Integral, integro-differential, and pseudodifferential operators), problem `ma_proofbench_l2_87`.

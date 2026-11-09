@@ -7,4 +7,4 @@ $\mathbb{Q}$.
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Proposition 2 (`integers-2025-A39-prop-2`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Proposition 2.

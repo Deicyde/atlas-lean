@@ -7,4 +7,4 @@ a partition into $k$ classes that are $l$-sum-free modulo $p^i$, is at least $k$
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 6 (`integers-2025-A62-cor-6`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 6.

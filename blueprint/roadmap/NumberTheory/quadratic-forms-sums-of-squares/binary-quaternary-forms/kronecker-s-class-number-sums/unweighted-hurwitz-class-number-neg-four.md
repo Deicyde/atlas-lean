@@ -17,4 +17,4 @@ $H(-4n) = (2^{(\alpha + 1)/2} - 1) L$.
 
 ## Sources
 
-- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 3 (`integers-2026-A29-thm-3`).
+- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 3.

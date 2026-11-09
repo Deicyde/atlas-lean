@@ -6,4 +6,4 @@ $N(0) = 0$. Then the Laplacian of $N$ vanishes at every point $x \neq 0$ of $E$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Applications" / entry "fundamental solution of the Laplacian"; L. Evans, *Partial Differential Equations*, §2.2.
+- L. Evans, *Partial Differential Equations*, §2.2.

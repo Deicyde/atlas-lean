@@ -6,4 +6,4 @@ $\frac{1}{2}\log 3 + \frac{1}{3}\log 4 - 1$, where $\log$ is the natural logarit
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 5, printed p. 30 / PDF p. 40. Proves `Wanted` entry `ramanujan_part1_ch2_entry5_corollary`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 5, printed p. 30 / PDF p. 40.

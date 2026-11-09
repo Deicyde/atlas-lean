@@ -6,4 +6,4 @@ the $S$-game within $4$ moves if and only if $S$, viewed as a set of rationals, 
 
 ## Sources
 
-- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 6 (`integers-2026-A40-thm-6`).
+- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 6.

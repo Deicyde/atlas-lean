@@ -9,4 +9,4 @@ Euclidean distance $\sqrt{20}$ of $(x, y)$.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 5 (`integers-2025-G4-thm-5`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 5.

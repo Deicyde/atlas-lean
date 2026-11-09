@@ -9,4 +9,4 @@ $b = (3^m (3a + 2) - 2^m) / 2^{m+1}$.
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Theorem 2 (`integers-2024-A115-thm-2`).
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Theorem 2.

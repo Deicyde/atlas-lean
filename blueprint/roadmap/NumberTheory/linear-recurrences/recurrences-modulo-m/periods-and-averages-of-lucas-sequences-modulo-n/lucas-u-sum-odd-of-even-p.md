@@ -8,4 +8,4 @@ divisible by $n$. For every $k \ge 0$, $2^k$ is the least element of $S$ divisib
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.14 (`integers-2024-A36-thm-2-14`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.14.

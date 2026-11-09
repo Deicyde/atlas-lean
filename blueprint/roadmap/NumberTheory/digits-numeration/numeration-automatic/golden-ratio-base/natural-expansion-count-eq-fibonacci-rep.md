@@ -8,4 +8,4 @@ representations of $F_{2-R} N$ as a sum of Fibonacci numbers with distinct indic
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.4 (`fq-2024-dekking11102023-thm-4.4`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.4.

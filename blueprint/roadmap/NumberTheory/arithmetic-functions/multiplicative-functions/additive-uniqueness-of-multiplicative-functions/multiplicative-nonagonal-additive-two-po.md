@@ -8,4 +8,4 @@ for every natural number $n < 2^r$, then $f(2^r) = 2^r$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 5 (`integers-2025-A99-thm-5`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 5.

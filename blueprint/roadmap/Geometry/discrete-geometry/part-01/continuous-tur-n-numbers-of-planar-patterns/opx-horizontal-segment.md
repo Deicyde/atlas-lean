@@ -10,4 +10,4 @@ $P$, so $\operatorname{opx}(n, P) = n^2 \ne cn$ (for example $c = 2$ and $n = 1$
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.1 (`integers-2024-A1-thm-4-1`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.1.

@@ -14,4 +14,4 @@ recorded in Hayman-Lingham (arXiv:1809.07200, Problem 6.28, Update 6.1).
 
 ## Sources
 
-- Walter K. Hayman and Eleanor F. Lingham, Research Problems in Function Theory (New Edition), arXiv:1809.07200v2 (2018), https://arxiv.org/abs/1809.07200. Moved from `OpenConjectures/Analysis/HadamardProductCircleBound`.
+- Walter K. Hayman and Eleanor F. Lingham, Research Problems in Function Theory (New Edition), arXiv:1809.07200v2 (2018), https://arxiv.org/abs/1809.07200.

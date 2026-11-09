@@ -16,4 +16,4 @@ Armstrong, Stump, and Thomas proved for all crystallographic root systems.
 
 ## Sources
 
-- D. Armstrong, C. Stump, and H. Thomas, A uniform bijection between nonnesting and noncrossing partitions, Transactions of the American Mathematical Society 365 (2013). Moved from `OpenConjectures/Combinatorics/RootPosetRowmotionHomomesy`.
+- D. Armstrong, C. Stump, and H. Thomas, A uniform bijection between nonnesting and noncrossing partitions, Transactions of the American Mathematical Society 365 (2013).

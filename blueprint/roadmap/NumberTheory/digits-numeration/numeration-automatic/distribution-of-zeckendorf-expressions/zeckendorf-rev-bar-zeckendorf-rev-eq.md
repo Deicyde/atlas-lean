@@ -19,4 +19,4 @@ $1$ at index $b - 1$ and $0$ elsewhere, and equals $\mathrm{res}_n(\varepsilon)$
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 10 (`integers-2025-A25-lem-10`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 10.

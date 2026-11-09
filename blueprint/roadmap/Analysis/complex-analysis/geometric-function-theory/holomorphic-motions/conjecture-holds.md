@@ -14,4 +14,4 @@ holomorphic motion of the Riemann sphere.
 
 ## Sources
 
-- Zbigniew Słodkowski, Holomorphic motions and polynomial hulls, Proceedings of the American Mathematical Society 111 (1991), 347–355, https://doi.org/10.2307/2048323. Moved from `OpenConjectures/Analysis/AMR22Problem7082`.
+- Zbigniew Słodkowski, Holomorphic motions and polynomial hulls, Proceedings of the American Mathematical Society 111 (1991), 347–355, https://doi.org/10.2307/2048323.

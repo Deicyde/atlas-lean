@@ -12,4 +12,4 @@ orientation; the cases $k = 1$ (Tutte's 3-flow conjecture) and $k = 2$ remain op
 
 ## Sources
 
-- Daniel W. Cranston and Jiaao Li, Circular flows in planar graphs, SIAM J. Discrete Math. (2020), arXiv:1812.09833, https://arxiv.org/abs/1812.09833. Moved from `OpenConjectures/Combinatorics/JaegerModularOrientation`.
+- Daniel W. Cranston and Jiaao Li, Circular flows in planar graphs, SIAM J. Discrete Math. (2020), arXiv:1812.09833, https://arxiv.org/abs/1812.09833.

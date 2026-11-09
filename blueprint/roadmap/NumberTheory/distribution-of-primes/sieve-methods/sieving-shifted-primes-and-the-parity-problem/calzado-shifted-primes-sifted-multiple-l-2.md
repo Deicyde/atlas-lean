@@ -9,4 +9,4 @@ $S_\ell(x) \le C S(x) / \varphi(\ell)$, where $\varphi$ is Euler's totient funct
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 6 (`integers-2026-A117-lem-6`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 6.

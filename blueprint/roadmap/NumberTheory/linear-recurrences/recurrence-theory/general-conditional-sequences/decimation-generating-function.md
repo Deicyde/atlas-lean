@@ -20,4 +20,4 @@ $1 - A_1 x^r - A_0 x^{2r}$).
 
 ## Sources
 
-- Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1 (`integers-2026-A5-thm-1`).
+- Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1.

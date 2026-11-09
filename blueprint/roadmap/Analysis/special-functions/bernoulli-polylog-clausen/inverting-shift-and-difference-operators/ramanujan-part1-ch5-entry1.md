@@ -12,4 +12,4 @@ and every real $h$, then $a_n = b_n$ for every $n$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5. Proves `Wanted` entry `ramanujan_part1_ch5_entry1`. The source's shift `p(x) ↦ p(x + h)` is `Polynomial.taylor h`, and the operator `∑ aₙ hⁿ Dⁿ` is `Entry1Euleriangf.chapter5DerivativeExpansion`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5. The source's shift `p(x) ↦ p(x + h)` is `Polynomial.taylor h`, and the operator `∑ aₙ hⁿ Dⁿ` is `Entry1Euleriangf.chapter5DerivativeExpansion`.

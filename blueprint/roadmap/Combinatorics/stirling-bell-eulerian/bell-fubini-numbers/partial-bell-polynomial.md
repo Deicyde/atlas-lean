@@ -11,4 +11,4 @@ where the quotient is a natural number, mapped into $R$.
 
 ## Sources
 
-- Mihoubi, *Some Congruences for the Partial Bell Polynomials*, J. Integer Seq. 12 (2009), Article 09.4.1; concept `jis_sem_a0ee8baeec8938655a1c8c9a`.
+- Mihoubi, *Some Congruences for the Partial Bell Polynomials*, J. Integer Seq. 12 (2009), Article 09.4.1.

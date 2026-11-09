@@ -8,5 +8,4 @@ $2 e^{-2 \varepsilon^2 n}$.
 
 ## Sources
 
-- JIS concept `jis_grounded_4cd778f9d6394cee44270586`.
-- `https://cs.uwaterloo.ca/journals/JIS/VOL28/Jackson/jackson5.tex` (Proposition, Hoeffding's Inequality, Thm. 2 of Hoe63). Proves `Wanted` entry `hoeffding_bernoulli_sum_abs_tail`.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL28/Jackson/jackson5.tex> (Proposition, Hoeffding's Inequality, Thm. 2 of Hoe63).

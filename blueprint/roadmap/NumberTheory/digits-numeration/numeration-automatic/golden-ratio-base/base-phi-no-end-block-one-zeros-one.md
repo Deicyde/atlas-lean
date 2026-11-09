@@ -8,4 +8,4 @@ $1 \le i \le 2m$ lies in $S$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 6 (`integers-2024-A24-lem-6`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 6.

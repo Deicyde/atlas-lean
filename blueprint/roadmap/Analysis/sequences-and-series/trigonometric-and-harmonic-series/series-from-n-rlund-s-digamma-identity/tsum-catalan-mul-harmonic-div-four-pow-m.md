@@ -14,4 +14,4 @@ $C_n H_{n+z} / (4^n \binom{n+z}{n})$.
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identity (10) (`integers-2025-A18-thm-4`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identity (10).

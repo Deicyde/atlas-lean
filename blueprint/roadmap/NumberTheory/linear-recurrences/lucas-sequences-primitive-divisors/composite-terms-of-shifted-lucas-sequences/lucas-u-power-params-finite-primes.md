@@ -9,4 +9,4 @@ finitely many natural numbers $n$.
 
 ## Sources
 
-- Dan Ismailescu, Daniel Hyunwoo Jeon, Aaron Kim, Joonbeom Kwon and Austin Lee, *Shifting Lucas Sequences Away from Primes*, INTEGERS 25 (2025), Article A42, Theorem 4(b) (quoted from their reference [2]) (`integers-2025-A42-thm-4`).
+- Dan Ismailescu, Daniel Hyunwoo Jeon, Aaron Kim, Joonbeom Kwon and Austin Lee, *Shifting Lucas Sequences Away from Primes*, INTEGERS 25 (2025), Article A42, Theorem 4(b) (quoted from their reference [2]).

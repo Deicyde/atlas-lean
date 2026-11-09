@@ -6,4 +6,4 @@ $1 \le k < b$ and $t \ge 1$, that is, $b$-repdigits: the digit $k$ written $t$ t
 
 ## Sources
 
-- Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.8 (`integers-2026-A12-cor-3-8`).
+- Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.8.

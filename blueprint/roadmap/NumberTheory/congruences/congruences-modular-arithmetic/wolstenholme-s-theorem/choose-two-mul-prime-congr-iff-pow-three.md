@@ -8,4 +8,4 @@ By Wolstenholme's theorem all three hold for every such $p$.
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Corollary 2 (`integers-2026-A32-cor-2`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Corollary 2.

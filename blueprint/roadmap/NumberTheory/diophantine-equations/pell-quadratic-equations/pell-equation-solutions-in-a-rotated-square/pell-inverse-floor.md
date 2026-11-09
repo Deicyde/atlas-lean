@@ -11,4 +11,4 @@ $C = \log(2 \sqrt{D} / (1 + \sqrt{D}))$.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.3, Equation (2.5) (`integers-2025-A112-thm-2-3`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.3, Equation (2.5).

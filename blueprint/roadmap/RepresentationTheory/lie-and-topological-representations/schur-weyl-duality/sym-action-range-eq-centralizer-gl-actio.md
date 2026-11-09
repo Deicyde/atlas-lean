@@ -8,4 +8,4 @@ centralizer of the image of the diagonal action $g \mapsto g^{\otimes k}$ of $\m
 
 ## Sources
 
-- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Via leanprover/lean-eval@38361be, problem `symAction_range_eq_centralizer_glAction`.
+- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Problem `symAction_range_eq_centralizer_glAction` of the lean-eval benchmark.

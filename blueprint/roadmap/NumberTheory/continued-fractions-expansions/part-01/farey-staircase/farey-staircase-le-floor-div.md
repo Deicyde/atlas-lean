@@ -7,4 +7,4 @@ logarithm.
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (a) (`integers-2024-A37-lem-8`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (a).

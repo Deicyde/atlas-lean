@@ -12,4 +12,4 @@ the resulting product map in extended charts, and use its local inverse as a tar
 
 ## Sources
 
-- Mathlib `Mathlib/Geometry/Manifold/Immersion.lean` TODO (finite-dimensional injective-`mfderiv` criterion); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.

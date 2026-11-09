@@ -13,4 +13,4 @@ $4(n/5)^{6/5} > 0.5798\, n^{6/5}$ edges for infinitely many $n$, refuting the ca
 
 ## Sources
 
-- Zoltán Füredi and Miklós Simonovits, The history of degenerate (bipartite) extremal graph problems, in Erdős Centennial, Bolyai Soc. Math. Stud. 25 (2013), arXiv:1306.5167, https://arxiv.org/abs/1306.5167. Moved from `OpenConjectures/Combinatorics/ErdosProblem574`.
+- Zoltán Füredi and Miklós Simonovits, The history of degenerate (bipartite) extremal graph problems, in Erdős Centennial, Bolyai Soc. Math. Stud. 25 (2013), arXiv:1306.5167, https://arxiv.org/abs/1306.5167.

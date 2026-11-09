@@ -10,4 +10,4 @@ $$A_r = \frac{(r - 2)\, A_{r-1} + \sum_{k=1}^{r-1} \binom{r-1}{k} A_k A_{r-k}}{1
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, corrected Entry 17, formulas (17.1)--(17.7), printed pp. 81--83 / PDF pp. 91--93. Proves `Wanted` entry `ramanujan_part1_ch3_entry17`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, corrected Entry 17, formulas (17.1)--(17.7), printed pp. 81--83 / PDF pp. 91--93.

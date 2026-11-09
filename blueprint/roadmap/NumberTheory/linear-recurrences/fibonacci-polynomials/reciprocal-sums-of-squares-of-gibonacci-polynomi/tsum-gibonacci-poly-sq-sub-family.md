@@ -25,4 +25,4 @@ here the summation index is shifted to start at $n = 0$.
 
 ## Sources
 
-- Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), Article koshy12202023, Theorem 2.1 (`fq-2024-koshy12202023-thm-2.1`).
+- Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), Article koshy12202023, Theorem 2.1.

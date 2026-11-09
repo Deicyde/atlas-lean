@@ -9,4 +9,4 @@ nonzero at only finitely many $(i, \alpha) \in \mathbb{N} \times \mathbb{Z}^n$.
 
 ## Sources
 
-- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact line 876. This is the conditional finite-resolution bridge behind that line, not the full Hilbert syzygy existence theorem: it assumes the finite terminating resolution and derives finite coefficient support, without assuming finite support, eventual Betti vanishing, or a polynomial realization, and without constructing the resolution.
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact line 876. This is the conditional finite-resolution bridge behind that line, not the full Hilbert syzygy existence theorem: it assumes the finite terminating resolution and derives finite coefficient support, without assuming finite support, eventual Betti vanishing, or a polynomial realization, and without constructing the resolution.

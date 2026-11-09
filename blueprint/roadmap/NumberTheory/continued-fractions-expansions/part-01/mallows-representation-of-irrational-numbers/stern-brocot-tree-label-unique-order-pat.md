@@ -14,4 +14,4 @@ $a_\ell - 1$; if $\ell = 1$, then $w = L^{a_1 - 2}$.
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 1 (`integers-2025-A78-prop-1`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 1.

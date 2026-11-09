@@ -41,4 +41,4 @@ multiplied by $f_4$ and by $f_1$.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 11, eqs. (93)–(96) (`integers-2024-A101-thm-11`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 11, eqs. (93)–(96).

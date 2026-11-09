@@ -10,4 +10,4 @@ $p = 5$, $c_n = m + 2$ for $p = 6$ and $c_n = 1$ for $p \in \{1, 2, 4, 7\}$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 9 (`integers-2025-A5-thm-9`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 9.

@@ -10,4 +10,4 @@ Nonemptiness is added: for $P = \emptyset$ the set $Q_{P'}$ is empty.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.7 (`integers-2024-A1-cor-5-7`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.7.

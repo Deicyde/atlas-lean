@@ -7,4 +7,4 @@ not Lebesgue integrable on $(1, \infty)$.
 
 ## Sources
 
-- - Mathlib `docs/undergrad.yaml`, section "Single Variable Real Analysis / Integration", entry "absolute vs conditional convergence of improper integrals" (currently missing). - W. Rudin, *Principles of Mathematical Analysis*, 3rd ed., Ch. 11, Exercise 15 (conditional convergence of the sine integral).
+- W. Rudin, *Principles of Mathematical Analysis*, 3rd ed., Ch. 11, Exercise 15 (conditional convergence of the sine integral).

@@ -10,4 +10,4 @@ $\mathrm{opx}(n, P) = \Omega(\mathrm{ex}(n, M_P))$, with constants depending on 
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.2 (`integers-2024-A1-thm-3-2`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.2.

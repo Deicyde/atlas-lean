@@ -10,5 +10,4 @@ $$A_p \|a\|_2 \le \big(\mathbb{E}\,|S|^p\big)^{1/p} \le B_p \|a\|_2.$$
 
 ## Sources
 
-- statement `khintchine-s1`.
 - https://en.wikipedia.org/wiki/Khintchine_inequality

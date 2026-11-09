@@ -9,4 +9,4 @@ paper's lemma, on the fundamental unit, is not stated here.
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(c), first sentence (`integers-2024-A111-lem-1`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(c), first sentence.

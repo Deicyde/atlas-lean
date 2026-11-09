@@ -7,4 +7,4 @@ natural number $n$ tends to infinity.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.6 (`integers-2024-A1-cor-3-6`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.6.

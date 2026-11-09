@@ -12,4 +12,4 @@ all three constants exist, then $C_{A \times B}(M \times N) \ge C_A(M) \, C_B(N)
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.3 (`integers-2024-A38-thm-2-3`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.3.

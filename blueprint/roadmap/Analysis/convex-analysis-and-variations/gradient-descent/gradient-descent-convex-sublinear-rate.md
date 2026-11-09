@@ -14,4 +14,4 @@ monotonicity of $f(x_k)$ in $k$ give the rate, as in L. Vandenberghe, ECE236C le
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entries `optimization of convex function in finite dimension` and `gradient descent square root` (unmapped); Y. Nesterov, Introductory Lectures on Convex Optimization, Section 2.1; stable ref https://en.wikipedia.org/wiki/Gradient_descent.
+- Y. Nesterov, Introductory Lectures on Convex Optimization, Section 2.1; https://en.wikipedia.org/wiki/Gradient_descent.

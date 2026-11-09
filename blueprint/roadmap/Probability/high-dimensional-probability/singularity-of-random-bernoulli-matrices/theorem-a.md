@@ -12,4 +12,4 @@ $$P\bigl(\sigma_{\min}(B + sJ) \le t / \sqrt{n}\bigr) \le (1 - p + \varepsilon)^
 
 ## Sources
 
-- K. Tikhomirov, `Singularity of random Bernoulli matrices`, Annals of Math, 191 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-191-2-RandomBernoulliMatrices.lean Via leanprover/lean-eval@38361be, problem `annals_random_bernoulli_matrices`.
+- K. Tikhomirov, `Singularity of random Bernoulli matrices`, Annals of Math, 191 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_random_bernoulli_matrices` of the lean-eval benchmark.

@@ -7,4 +7,4 @@ Robin's inequality $\sigma(2^k n) < e^{\gamma} 2^k n \log \log (2^k n)$ holds.
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 5, equation (12) (`integers-2026-A86-thm-5`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 5, equation (12).

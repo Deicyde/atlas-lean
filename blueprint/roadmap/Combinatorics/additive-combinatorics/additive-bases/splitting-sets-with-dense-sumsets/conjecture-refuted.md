@@ -9,4 +9,4 @@ $a, b \in C$.
 
 ## Sources
 
-- Larsen (formalized in Lean), per erdosproblems.com/871, https://www.erdosproblems.com/871; Lean disproof of Erdos Problem 871 (Larsen with Claude Opus 4.5), plby/lean-proofs at commit dfe2d78128b493c572cf525b1b8edf4897fb7664, https://github.com/plby/lean-proofs/blob/dfe2d78128b493c572cf525b1b8edf4897fb7664/src/latest/ErdosProblems/Erdos871.lean#L2388. Moved from `OpenConjectures/NumberTheory/ErdosProblem871`.
+- Larsen (formalized in Lean), per erdosproblems.com/871, https://www.erdosproblems.com/871; Lean disproof of Erdos Problem 871 (Larsen with Claude Opus 4.5), plby/lean-proofs, https://github.com/plby/lean-proofs/blob/dfe2d78128b493c572cf525b1b8edf4897fb7664/src/latest/ErdosProblems/Erdos871.lean#L2388.

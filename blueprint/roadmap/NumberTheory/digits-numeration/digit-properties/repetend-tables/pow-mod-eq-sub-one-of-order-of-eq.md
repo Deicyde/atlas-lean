@@ -8,4 +8,4 @@ $z \equiv 1 - B \pmod Q$. Then $B^z \bmod n = B - 1$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 9 (`integers-2025-A26-lem-9`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 9.

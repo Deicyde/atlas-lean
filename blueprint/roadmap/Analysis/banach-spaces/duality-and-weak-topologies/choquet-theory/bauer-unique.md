@@ -7,4 +7,4 @@ $\int y \, d\mu(y)$ (a Bochner integral) equals $x$, then $\mu$ is the Dirac mea
 
 ## Sources
 
-- H. Bauer, *Minimalstellen von Funktionen und Extremalpunkte*, Arch. Math. 9 (1958), 389–393; see also Phelps, *Lectures on Choquet's Theorem*. Knill, *Some fundamental theorems in mathematics*, §88. Via leanprover/lean-eval@38361be, problem `bauer_extreme_point_uniqueness`.
+- H. Bauer, *Minimalstellen von Funktionen und Extremalpunkte*, Arch. Math. 9 (1958), 389–393; see also Phelps, *Lectures on Choquet's Theorem*. Knill, *Some fundamental theorems in mathematics*, §88. Problem `bauer_extreme_point_uniqueness` of the lean-eval benchmark.

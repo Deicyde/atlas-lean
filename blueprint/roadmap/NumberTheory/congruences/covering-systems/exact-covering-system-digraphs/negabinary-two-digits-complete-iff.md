@@ -12,4 +12,4 @@ The paper's alternative $\{a_1, a_2\} = \{0, \pm 1\}$ lies in the excluded case 
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Corollary 2 (`integers-2026-A107-cor-2`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Corollary 2.

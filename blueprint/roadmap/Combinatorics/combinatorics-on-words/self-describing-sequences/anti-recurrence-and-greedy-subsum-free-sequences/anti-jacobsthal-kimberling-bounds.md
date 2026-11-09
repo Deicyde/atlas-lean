@@ -8,4 +8,4 @@ $0 \le 3B^2_n - 7n + 2 \le 3$.
 
 ## Sources
 
-- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 2 (`integers-2026-A24-thm-2`).
+- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 2.

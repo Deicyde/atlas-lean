@@ -11,4 +11,4 @@ when $r = 0$.
 
 ## Sources
 
-- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Lemma 1 (`integers-2026-A100-lem-1`), citing P. Nielsen, Math. Comp. 84 (2015), Lemma 1.4.
+- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Lemma 1, citing P. Nielsen, Math. Comp. 84 (2015), Lemma 1.4.

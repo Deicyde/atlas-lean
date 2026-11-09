@@ -11,4 +11,4 @@ $$F\left(\frac{x}{2-x}\right) = \frac{(\log(1-x))^2}{8} + \frac{\operatorname{Li
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 8, pp. 249–250. Proves `Wanted` entry `ramanujan_part1_ch9_entry8_arcsin`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 8, pp. 249–250.

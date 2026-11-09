@@ -12,4 +12,4 @@ non-strict threshold follows from the form of their bound in Corollary 8 and Lem
 
 ## Sources
 
-- Endre Csoka, Irene Lo, Sergey Norin, Hehui Wu and Liana Yepremyan, The extremal function for disconnected minors, Journal of Combinatorial Theory Series B (2017), arXiv:1509.01185, https://arxiv.org/abs/1509.01185. Moved from `OpenConjectures/GraphTheory/TwoRegularMinorForcing`.
+- Endre Csoka, Irene Lo, Sergey Norin, Hehui Wu and Liana Yepremyan, The extremal function for disconnected minors, Journal of Combinatorial Theory Series B (2017), arXiv:1509.01185, https://arxiv.org/abs/1509.01185.

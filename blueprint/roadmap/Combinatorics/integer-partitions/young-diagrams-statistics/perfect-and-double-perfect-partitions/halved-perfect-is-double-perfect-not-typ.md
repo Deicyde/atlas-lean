@@ -14,4 +14,4 @@ of order $r$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 5 with conditions (23)-(25) and display (26) (`integers-2025-A109-thm-5`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 5 with conditions (23)-(25) and display (26).

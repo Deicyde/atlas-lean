@@ -15,4 +15,4 @@ first-order global estimate.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Ordinary differential equations`, entries `explicit Euler method`, `convergence` and `order` (unmapped); E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Theorem I.7.3; stable ref https://en.wikipedia.org/wiki/Euler_method.
+- E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Theorem I.7.3; stable ref https://en.wikipedia.org/wiki/Euler_method.

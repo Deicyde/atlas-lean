@@ -22,4 +22,4 @@ only asserted to exist.
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 1 (quoting Crişan and Erban) (`integers-2024-A99-lem-1`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 1 (quoting Crişan and Erban).

@@ -11,4 +11,4 @@ $z_3 = w_3 - d$.
 
 ## Sources
 
-- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.1 (`fq-2024-szakacs06212024rev-thm-2.1`).
+- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.1.

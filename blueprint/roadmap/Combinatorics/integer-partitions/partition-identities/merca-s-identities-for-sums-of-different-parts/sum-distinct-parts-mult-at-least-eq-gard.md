@@ -14,4 +14,4 @@ The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 ## Sources
 
-- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 10 (ii) (`integers-2024-A15-thm-10`).
+- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 10 (ii).

@@ -15,4 +15,4 @@ Being $D$-Carmichael includes the condition $D \equiv 0$ or $1 \pmod 4$.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 5 (`integers-2026-A102-thm-5`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 5.

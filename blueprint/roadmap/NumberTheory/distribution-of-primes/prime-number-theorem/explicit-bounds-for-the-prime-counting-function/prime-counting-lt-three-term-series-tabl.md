@@ -12,4 +12,4 @@ $(0.29, 57720805589)$.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 3 and Table 4 (`integers-2024-A34-cor-3`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 3 and Table 4.

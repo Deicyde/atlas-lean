@@ -16,4 +16,4 @@ is exactly what makes such $e_k$ exist, so the run decomposition is taken as a h
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 4 (`integers-2025-A78-lem-4`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 4.

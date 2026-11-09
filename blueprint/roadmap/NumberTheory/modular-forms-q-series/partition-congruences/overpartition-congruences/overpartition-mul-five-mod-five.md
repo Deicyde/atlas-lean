@@ -10,4 +10,4 @@ overlined part sizes.
 
 ## Sources
 
-- Liuquan Wang, "Another Proof of a Conjecture by Hirschhorn and Sellers on Overpartitions," Journal of Integer Sequences 17 (2014), Article 14.9.8, Theorem (label thm1), lines 110–114. `https://cs.uwaterloo.ca/journals/JIS/VOL17/Wang2/wang15.tex`
+- Liuquan Wang, "Another Proof of a Conjecture by Hirschhorn and Sellers on Overpartitions," Journal of Integer Sequences 17 (2014), Article 14.9.8, Theorem, lines 110–114. <https://cs.uwaterloo.ca/journals/JIS/VOL17/Wang2/wang15.tex>

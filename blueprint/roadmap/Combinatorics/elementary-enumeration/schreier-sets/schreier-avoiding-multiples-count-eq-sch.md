@@ -5,4 +5,4 @@ sets avoiding multiples of $u$ equals the term $d_{u,un-(u-1)}$ of the parent se
 
 ## Sources
 
-- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Proposition 3 (`integers-2026-A53-prop-3`).
+- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Proposition 3.

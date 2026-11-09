@@ -15,4 +15,4 @@ $g(X; Y) = \sum \prod_j e^{m_j Y_j} e^{n_j X_j} q^{m_j n_j}$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 11 (after Bachmann) (`integers-2024-A6-thm-11`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 11 (after Bachmann).

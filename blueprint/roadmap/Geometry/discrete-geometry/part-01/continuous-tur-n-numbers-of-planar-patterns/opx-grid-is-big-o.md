@@ -7,4 +7,4 @@ infinity, where for $t = 0$ (so that $P$ is empty) the exponent $2 - 1/t$ is rea
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.5 (`integers-2024-A1-cor-3-5`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.5.

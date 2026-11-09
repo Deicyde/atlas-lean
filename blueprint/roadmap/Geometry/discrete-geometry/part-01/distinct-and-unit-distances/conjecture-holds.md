@@ -13,4 +13,4 @@ gives $\alpha_k = \Theta(\sqrt{k})$.
 
 ## Sources
 
-- S. Mathialagan, On bipartite distinct distances in the plane, Electronic Journal of Combinatorics 28(4) (2021) P4.33, arXiv:1912.01883, https://arxiv.org/abs/1912.01883. Moved from `OpenConjectures/Geometry/ErdosProblem652`.
+- S. Mathialagan, On bipartite distinct distances in the plane, Electronic Journal of Combinatorics 28(4) (2021) P4.33, arXiv:1912.01883, https://arxiv.org/abs/1912.01883.

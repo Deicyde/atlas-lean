@@ -10,4 +10,4 @@ where an empty sum is $0$, so both sides vanish when $n = 0$.
 
 ## Sources
 
-- Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Theorem A. Proves `Wanted` entry `alternating_binomial_partial_sum`.
+- Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Theorem A.

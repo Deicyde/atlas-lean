@@ -8,4 +8,4 @@ of its maximal ideal.
 
 ## Sources
 
-- generalizes `integral_closure_isAdicComplete` (atlas-lean v1, `LocalExtensions.lean`) from the integral closure to any finite faithful extension of DVRs.
+- generalizes `integral_closure_isAdicComplete` (atlas-lean v1) from the integral closure to any finite faithful extension of DVRs.

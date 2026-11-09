@@ -28,4 +28,4 @@ $H^{(3)}_{-1/2} = -6\zeta(3)$ and $H^{(m+1)}_{k-1/2} - H^{(m+1)}_{-1/2} = 2^{m+1
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 1 (`integers-2025-A18-lem-1`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 1.

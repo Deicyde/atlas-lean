@@ -12,4 +12,4 @@ With this indexing, $N_t$ is odd exactly when $t \bmod 7 \in \{1, 2, 3, 5\}$.
 
 ## Sources
 
-- Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 2 (`integers-2024-A10-thm-2`).
+- Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 2.

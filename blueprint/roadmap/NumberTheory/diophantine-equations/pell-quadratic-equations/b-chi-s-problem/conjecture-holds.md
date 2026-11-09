@@ -12,4 +12,4 @@ Bombieri–Lang.
 
 ## Sources
 
-- Stanley Yao Xiao, Hilbert's tenth problem for systems of diagonal quadratic forms, and Büchi's problem, arXiv:2412.16740v3 (2025), https://arxiv.org/abs/2412.16740v3. Moved from `OpenConjectures/NumberTheory/BuchiSquareSequenceBound`.
+- Stanley Yao Xiao, Hilbert's tenth problem for systems of diagonal quadratic forms, and Büchi's problem, arXiv:2412.16740v3 (2025), https://arxiv.org/abs/2412.16740v3.

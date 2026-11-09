@@ -12,4 +12,4 @@ the block index of the reversed list with each pair swapped.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5 (SZ duality, Zhao) (`integers-2024-A6-thm-5`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5 (SZ duality, Zhao).

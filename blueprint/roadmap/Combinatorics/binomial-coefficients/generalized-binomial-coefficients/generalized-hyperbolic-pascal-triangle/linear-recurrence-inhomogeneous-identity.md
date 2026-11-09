@@ -14,4 +14,4 @@ $k \ge 1$ are not needed.
 
 ## Sources
 
-- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Theorem 1 (`integers-2024-A84-thm-1`).
+- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Theorem 1.

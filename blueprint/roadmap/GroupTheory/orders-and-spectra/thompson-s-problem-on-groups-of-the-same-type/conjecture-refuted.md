@@ -8,4 +8,4 @@ Kourovka Notebook v46 records that J. G. Thompson had already given a negative a
 
 ## Sources
 
-- Yu Li and Wujie Shi, A Note on Thompson Problem, arXiv:2303.09460v1 (2023); published in Ricerche di Matematica 74(1) (2025), 559-563, https://arxiv.org/abs/2303.09460v1; The Kourovka Notebook: Unsolved Problems in Group Theory, 21st edition, Problem 21.134, arXiv:1401.0300v46, https://arxiv.org/abs/1401.0300v46. Moved from `OpenConjectures/GroupTheory/Kourovka21Problem134b`.
+- Yu Li and Wujie Shi, A Note on Thompson Problem, arXiv:2303.09460v1 (2023); published in Ricerche di Matematica 74(1) (2025), 559-563, https://arxiv.org/abs/2303.09460v1; The Kourovka Notebook: Unsolved Problems in Group Theory, 21st edition, Problem 21.134, arXiv:1401.0300v46, https://arxiv.org/abs/1401.0300v46.

@@ -12,4 +12,4 @@ where $\operatorname{li}$ is the logarithmic integral and the sum runs over the 
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 9 (`integers-2024-A34-prop-9`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 9.

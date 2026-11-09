@@ -11,4 +11,4 @@ $f(i)$ are at least $k$. This is equivalent to the source's sorted-preference fo
 
 ## Sources
 
-- Paul R. F. Schumacher, "Descents in Parking Functions," Journal of Integer Sequences 21 (2018), Article 18.2.3, Theorem (label `thm:descount`), line 180, https://cs.uwaterloo.ca/journals/JIS/VOL21/Schumacher/schu5.tex
+- Paul R. F. Schumacher, "Descents in Parking Functions," Journal of Integer Sequences 21 (2018), Article 18.2.3, Theorem, line 180, https://cs.uwaterloo.ca/journals/JIS/VOL21/Schumacher/schu5.tex

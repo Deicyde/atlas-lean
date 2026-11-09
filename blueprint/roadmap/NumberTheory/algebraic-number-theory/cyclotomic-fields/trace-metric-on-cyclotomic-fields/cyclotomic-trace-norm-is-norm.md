@@ -9,4 +9,4 @@ $\lVert q \alpha \rVert = |q| \, \lVert \alpha \rVert$.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 2 (`integers-2025-A10-thm-2`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 2.

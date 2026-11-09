@@ -13,4 +13,4 @@ $\varepsilon \in \bar E^* \setminus E^*$, $\delta^*$ has a local maximum at $x_\
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 12 (`integers-2025-A25-thm-12`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 12.

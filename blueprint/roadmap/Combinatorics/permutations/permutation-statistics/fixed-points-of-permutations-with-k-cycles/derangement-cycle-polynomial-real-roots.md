@@ -10,4 +10,4 @@ The terms with $k > n$ vanish, so the upper summation limit $n$ loses nothing.
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 3 (`integers-2024-A54-thm-3`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 3.

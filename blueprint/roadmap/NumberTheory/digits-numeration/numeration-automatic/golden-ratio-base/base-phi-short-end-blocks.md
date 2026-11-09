@@ -14,4 +14,4 @@ $R_{00 \cdot 0} = V_0(1, 2, 0)$ and $R_{00 \cdot 1} = V(3, 1, 1)$, on the number
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 6 (`integers-2024-A24-thm-6`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 6.

@@ -10,4 +10,4 @@ $\varphi = (1 + \sqrt{5})/2$ is the golden ratio.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 2 (`integers-2025-G4-thm-2`), quoting Wythoff.
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 2, quoting Wythoff.

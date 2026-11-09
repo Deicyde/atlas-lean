@@ -9,4 +9,4 @@ $n \ge 2$ the immediate predecessor of $\beta^n$ in $E$ is the maximal $L$-block
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 (`integers-2025-A25-thm-4`; arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 (arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).

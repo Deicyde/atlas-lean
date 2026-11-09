@@ -11,4 +11,4 @@ The constants depend on $\omega$ and $P$, not only on $k$.
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 3 (`integers-2026-A117-lem-3`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 3.

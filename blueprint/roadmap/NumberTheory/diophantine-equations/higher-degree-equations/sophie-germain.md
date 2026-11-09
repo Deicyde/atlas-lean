@@ -6,4 +6,4 @@ $xyz$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Sophie_Germain%27s_theorem, statement `sophie-s1`. Proves `Wanted` entry `sophieGermain`.
+- https://en.wikipedia.org/wiki/Sophie_Germain%27s_theorem.

@@ -7,4 +7,4 @@ $\frac{2 \cdot 2}{1 \cdot 3} \cdot \frac{6 \cdot 6}{5 \cdot 7} \cdot \frac{10 \c
 
 ## Sources
 
-- László Tóth, Journal of Integer Sequences 23, `toth46.tex`, lines 157-161. URL: <https://cs.uwaterloo.ca/journals/JIS/VOL23/Toth/toth46.tex>. Source SHA-256 `0501cfe88006efcee189af624a51343823bb18009d904b37ec97f9798696974e`.
+- László Tóth, Journal of Integer Sequences 23, `toth46.tex`, lines 157-161. URL: <https://cs.uwaterloo.ca/journals/JIS/VOL23/Toth/toth46.tex>.

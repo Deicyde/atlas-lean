@@ -9,4 +9,4 @@ $f(N-r) + (f(M) - 2f(r+1)) f((N-r)/(r+1))$ if $N \equiv -1 \pmod M$, and $f(N-r)
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 7, display (28) (`integers-2025-A109-thm-7`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 7, display (28).

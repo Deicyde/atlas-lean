@@ -8,4 +8,4 @@ natural numbers such that $n$ divides $m$ and $m / n$ is even, then $\gcd(f_m, f
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(b) (`integers-2024-A111-thm-11`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(b).

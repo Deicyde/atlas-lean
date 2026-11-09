@@ -10,4 +10,4 @@ states the same limit for its sequence.
 
 ## Sources
 
-- Kevin A. Broughan and A. Ross Barnett, "On the Subsequence of Primes Having Prime Subscripts," Journal of Integer Sequences 12 (2009), Article 09.2.3, Corollary to the Theorem (label thm:bounds), part (c), lines 193–199, https://cs.uwaterloo.ca/journals/JIS/VOL12/Broughan/broughan16.tex
+- Kevin A. Broughan and A. Ross Barnett, "On the Subsequence of Primes Having Prime Subscripts," Journal of Integer Sequences 12 (2009), Article 09.2.3, Corollary to the Theorem, part (c), lines 193–199, https://cs.uwaterloo.ca/journals/JIS/VOL12/Broughan/broughan16.tex

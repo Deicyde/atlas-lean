@@ -6,4 +6,4 @@ $x + id$ is not a nonnegative integer for any natural number $i$.
 
 ## Sources
 
-- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Lemma 22 (`integers-2026-A58-lem-22`).
+- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Lemma 22.

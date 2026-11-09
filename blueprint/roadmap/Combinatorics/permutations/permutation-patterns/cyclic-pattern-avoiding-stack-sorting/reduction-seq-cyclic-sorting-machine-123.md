@@ -12,4 +12,4 @@ $\pi$ enter and leave the stack together is not part of the statement.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 1 (`integers-2026-A15-lem-1`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 1.

@@ -12,4 +12,4 @@ the monotonicity of $F$ is used.
 
 ## Sources
 
-- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 6 (`integers-2024-A67-thm-6`).
+- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 6.

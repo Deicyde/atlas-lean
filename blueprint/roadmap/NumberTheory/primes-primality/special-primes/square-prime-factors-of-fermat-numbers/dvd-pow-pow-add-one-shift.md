@@ -11,4 +11,4 @@ $k = 1$, $2$ divides both $F_0(3, 2) = 4$ and $F_1(3, 2) = 10$.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 7 (`integers-2026-A77-thm-7`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 7.

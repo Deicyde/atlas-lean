@@ -11,4 +11,4 @@ The source's hypothesis $b \ne 0$ is not needed: the identity also holds at $b =
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 4, Equation (4.6) (`integers-2026-A36-prop-4`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 4, Equation (4.6).

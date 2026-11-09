@@ -10,4 +10,4 @@ $x^{\top} M x = m$.
 
 ## Sources
 
-- M. Bhargava, J. Hanke, Universal quadratic forms and the 290-theorem, preprint (2011). See also https://en.wikipedia.org/wiki/15_and_290_theorems Via leanprover/lean-eval@38361be, problem `two_ninety_theorem`.
+- M. Bhargava, J. Hanke, Universal quadratic forms and the 290-theorem, preprint (2011). See also https://en.wikipedia.org/wiki/15_and_290_theorems. Problem `two_ninety_theorem` of the lean-eval benchmark.

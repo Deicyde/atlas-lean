@@ -15,4 +15,4 @@ $m \ge 3$; the cases $m = 1$ and $m = 2$ also hold, so the hypothesis here is $m
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci m-Step Numbers," Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem (label power2_conv), lines 453–459, https://cs.uwaterloo.ca/journals/JIS/VOL27/Gryszka/gryszka12.tex
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci m-Step Numbers," Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem, lines 453–459, https://cs.uwaterloo.ca/journals/JIS/VOL27/Gryszka/gryszka12.tex

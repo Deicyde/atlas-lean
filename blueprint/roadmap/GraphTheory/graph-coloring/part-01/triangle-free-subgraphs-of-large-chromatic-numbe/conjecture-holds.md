@@ -9,4 +9,4 @@ This answers Erdős Problem 923 affirmatively; it was proved by Rödl.
 
 ## Sources
 
-- Vojtěch Rödl, On the chromatic number of subgraphs of a given graph, Proceedings of the American Mathematical Society 64 (1977), 370–371, https://doi.org/10.1090/S0002-9939-1977-0469806-4. Moved from `OpenConjectures/Combinatorics/ErdosProblem923`.
+- Vojtěch Rödl, On the chromatic number of subgraphs of a given graph, Proceedings of the American Mathematical Society 64 (1977), 370–371, https://doi.org/10.1090/S0002-9939-1977-0469806-4.

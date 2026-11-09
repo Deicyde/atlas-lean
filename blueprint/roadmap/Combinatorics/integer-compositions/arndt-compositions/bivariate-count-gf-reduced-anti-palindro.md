@@ -11,4 +11,4 @@ that is, $B_p(x, y) = (1 - x - x^2 + x^3 + xy - x^3 y)/(1 - x - x^2 + x^3 - x^3 
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 3 (`integers-2024-A35-cor-3`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 3.

@@ -12,4 +12,4 @@ derivative relative to $[a, b]$ almost everywhere on the interval.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Submanifolds of R^n`, entry `curve length` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 6; stable ref https://en.wikipedia.org/wiki/Arc_length.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 6; stable ref https://en.wikipedia.org/wiki/Arc_length.

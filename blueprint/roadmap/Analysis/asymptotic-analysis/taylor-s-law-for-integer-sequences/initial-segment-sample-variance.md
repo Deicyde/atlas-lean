@@ -10,4 +10,4 @@ $n \ge 2$, with indices starting at $1$.
 
 ## Sources
 
-- Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, mean/variance definitions, lines 119–124, equation `eq:mean` at line 122, first equality of `eq:varexpanded` at line 123 (label at line 124), <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>.
+- Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, mean/variance definitions, lines 119–124, equation at line 122, first equality of the equation at line 123, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>.

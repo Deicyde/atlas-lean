@@ -6,4 +6,4 @@ Then $\sum_j |a_j^n| < \infty$.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary to Entry 11, printed p. 66 / PDF p. 76. Proves `Wanted` entry `ramanujan_part1_ch3_entry11_corollary_power_summable`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary to Entry 11, printed p. 66 / PDF p. 76.

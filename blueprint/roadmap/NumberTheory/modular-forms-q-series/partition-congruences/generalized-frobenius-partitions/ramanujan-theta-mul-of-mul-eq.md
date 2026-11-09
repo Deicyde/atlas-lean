@@ -11,4 +11,4 @@ $|ab|^2$, which is less than $1$, so every series converges.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Lemma 1, eq. (12), quoting Berndt, *Ramanujan's Notebooks, Part III*, p. 45, Entry 29 (`integers-2025-A17-lem-1`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Lemma 1, eq. (12), quoting Berndt, *Ramanujan's Notebooks, Part III*, p. 45, Entry 29.

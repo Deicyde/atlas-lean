@@ -14,4 +14,4 @@ This is Theorem 2 of the source, which quotes it from the author's earlier work.
 
 ## Sources
 
-- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Theorem 2 (`integers-2026-A61-thm-2`).
+- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Theorem 2.

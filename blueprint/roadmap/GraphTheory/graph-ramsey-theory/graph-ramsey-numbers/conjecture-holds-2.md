@@ -8,4 +8,4 @@ This answers Erdős Problem 800 affirmatively.
 
 ## Sources
 
-- Noga Alon, Subdivided graphs have linear Ramsey numbers, Journal of Graph Theory 18 (1994), 343–347, https://doi.org/10.1002/jgt.3190180406. Moved from `OpenConjectures/Combinatorics/ErdosProblem800`.
+- Noga Alon, Subdivided graphs have linear Ramsey numbers, Journal of Graph Theory 18 (1994), 343–347, https://doi.org/10.1002/jgt.3190180406.

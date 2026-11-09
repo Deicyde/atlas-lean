@@ -10,4 +10,4 @@ Definition 7; the counts are stated by block, so the naming does not matter.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 8 (`integers-2026-A75-lem-8`).
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 8.

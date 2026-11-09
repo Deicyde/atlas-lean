@@ -9,4 +9,4 @@ contradicting $p > n! + 1$.
 
 ## Sources
 
-- Antonín Čejchan, Michal Křížek, and Lawrence Somer, "On Remarkable Properties of Primes Near Factorials and Primorials," Journal of Integer Sequences 25 (2022), Article 22.1.4, Theorem (label T1), lines 153–159, https://cs.uwaterloo.ca/journals/JIS/VOL25/Krizek/krizek3.tex
+- Antonín Čejchan, Michal Křížek, and Lawrence Somer, "On Remarkable Properties of Primes Near Factorials and Primorials," Journal of Integer Sequences 25 (2022), Article 22.1.4, Theorem, lines 153–159, https://cs.uwaterloo.ca/journals/JIS/VOL25/Krizek/krizek3.tex

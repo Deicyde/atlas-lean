@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Theorem (label eq:h_gf), lines 147–151, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex.
+- Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Theorem, lines 147–151, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex.

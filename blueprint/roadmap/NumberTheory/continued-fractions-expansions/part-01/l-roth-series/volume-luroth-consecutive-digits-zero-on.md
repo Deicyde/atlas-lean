@@ -16,4 +16,4 @@ Unlike the paper, $F$ and $\Psi$ need not be positive.
 
 ## Sources
 
-- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 3, with `H` from (4) (`integers-2024-A67-thm-3`).
+- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 3, with `H` from (4).

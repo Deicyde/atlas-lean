@@ -9,4 +9,4 @@ arithmetic progression of length $3$.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 4 (Yang and Chen) (`integers-2024-A116-thm-4`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 4 (Yang and Chen).

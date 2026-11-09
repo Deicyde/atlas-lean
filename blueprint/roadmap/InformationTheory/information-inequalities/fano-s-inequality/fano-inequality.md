@@ -11,4 +11,4 @@ $$H(X \mid Y) \le -P_e \log P_e - (1 - P_e) \log (1 - P_e) + P_e \log (|\alpha| 
 
 ## Sources
 
-- R. M. Fano, Transmission of Information, MIT Press (1961). Proves `Wanted` entry `fano_inequality`. It follows from `fano_inequality_general`; the unused `[DecidableEq β]` keeps the source's shape.
+- R. M. Fano, Transmission of Information, MIT Press (1961). It follows from `fano_inequality_general`; the unused `[DecidableEq β]` keeps the source's shape.

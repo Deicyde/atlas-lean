@@ -8,4 +8,4 @@ prime factor $p$ with $p^{v_p(n) + 1} < 2kR$, where $v_p(n)$ is the exponent of 
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?," Journal of Integer Sequences 29 (2026), Article 26.4.3, Theorem (label maintheoremboundwithkR), equation (label Generalinequalityforprimitivenondeficientnumbers), lines 107–109, https://cs.uwaterloo.ca/journals/JIS/VOL29/Zelinsky/zel14.tex
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?," Journal of Integer Sequences 29 (2026), Article 26.4.3, Theorem, equation, lines 107–109, https://cs.uwaterloo.ca/journals/JIS/VOL29/Zelinsky/zel14.tex

@@ -11,4 +11,4 @@ $$\int_0^x \frac{du}{1 + u^{10}} = \frac{\arctan x}{5} +
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8. Proves `Wanted` entry `ramanujan_part1_ch8_entry14_qreflection`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.

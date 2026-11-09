@@ -8,4 +8,4 @@ $k \le n$ coordinatewise, where $\Delta^k a$ is the iterated backward difference
 
 ## Sources
 
-- F. Hausdorff, *Summationsmethoden und Momentfolgen I, II*, Math. Z. 9 (1921). Knill, *Some fundamental theorems in mathematics*, §115. Via leanprover/lean-eval@38361be, problem `hausdorff_positivity_criterion`.
+- F. Hausdorff, *Summationsmethoden und Momentfolgen I, II*, Math. Z. 9 (1921). Knill, *Some fundamental theorems in mathematics*, §115. Problem `hausdorff_positivity_criterion` of the lean-eval benchmark.

@@ -15,4 +15,4 @@ generalizes ($\ell = 0$ is Theorem 4, here also for $k = 3$).
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 6 (`integers-2026-A31-thm-6`, journal version; credited to Rajagopal, Theorem 1.3).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 6 (journal version; credited to Rajagopal, Theorem 1.3).

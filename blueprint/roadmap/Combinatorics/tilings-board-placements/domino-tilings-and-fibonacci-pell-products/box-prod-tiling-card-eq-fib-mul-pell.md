@@ -12,4 +12,4 @@ $c_n$ for this number of tilings; its values $c_2 = 2$, $c_3 = 10$, $c_4 = 36$ m
 
 ## Sources
 
-- James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, Theorem (label mainresult), lines 105–108, https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.tex
+- James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, Theorem, lines 105–108, https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.tex

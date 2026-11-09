@@ -15,4 +15,4 @@ complements, then package the resulting fixed-complement immersion.
 
 ## Sources
 
-- Mathlib `Mathlib/Geometry/Manifold/Immersion.lean` TODO (`IsImmersion.comp`); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.

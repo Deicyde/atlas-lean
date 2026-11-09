@@ -10,4 +10,4 @@ $$\prod_{1 \le \ell \le k+1,\ \ell \ne j} \frac{p_\ell + 1}{p_\ell} <
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 3 (`integers-2026-A86-lem-3`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 3.

@@ -7,4 +7,4 @@ then $\sum_{i=1}^{k} 1/m_i > 1$.
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 5 (`integers-2026-A38-lem-5`), quoting Mirsky and Newman.
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 5, quoting Mirsky and Newman.

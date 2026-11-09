@@ -10,4 +10,4 @@ Special cases include the central Delannoy numbers ($r = s = 1$), the Apéry num
 
 ## Sources
 
-- Geng-Rui Zhang, "Realizability of Some Combinatorial Sequences," Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem (label Thm1.13), lines 143–144, https://cs.uwaterloo.ca/journals/JIS/VOL27/Zhang/zhang9.tex with `A(n,r,s)` at lines 120–122 (label Def1.5) and realizability at lines 86–93 (label Def1.1).
+- Geng-Rui Zhang, "Realizability of Some Combinatorial Sequences," Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem, lines 143–144, https://cs.uwaterloo.ca/journals/JIS/VOL27/Zhang/zhang9.tex with `A(n,r,s)` at lines 120–122 and realizability at lines 86–93.

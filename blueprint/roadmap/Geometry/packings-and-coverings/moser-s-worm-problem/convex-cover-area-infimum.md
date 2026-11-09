@@ -6,4 +6,4 @@ convex universal covers $\Omega \subseteq \mathbb{C}$.
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

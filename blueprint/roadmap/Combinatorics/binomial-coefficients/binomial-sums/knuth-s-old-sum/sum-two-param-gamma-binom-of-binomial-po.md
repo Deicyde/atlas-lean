@@ -17,4 +17,4 @@ $$\sum_{k=s}^{n} \frac{f(k)}{2^{2p(k)}} \binom{v}{v/2} \binom{2p(k)+u}{(2p(k)+u)
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 10 (`integers-2026-A19-thm-10`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 10.

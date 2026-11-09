@@ -5,4 +5,4 @@ positive integer $n$, the polynomial $1+x+x^2/2!+\cdots+x^n/n!$ has exactly one 
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Polynomials, rational functions in real analysis), `benchmark/level1/ma_proofbench_l1_19.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Polynomials, rational functions in real analysis), problem `ma_proofbench_l1_19`.

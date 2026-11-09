@@ -7,4 +7,4 @@ $s^{[123]}$ maps to the identity has $0$ elements.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 3 (`integers-2026-A15-thm-3`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 3.

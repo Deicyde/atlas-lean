@@ -10,4 +10,4 @@ in $|\tau| \le 1/2$.
 
 ## Sources
 
-- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 3 (`integers-2024-A66-lem-3`).
+- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 3.

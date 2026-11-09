@@ -10,4 +10,4 @@ $f_1 \equiv f_2 \pmod p$, the same holds among the $z$ with $1 \le z \le Q - 1$ 
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 7 (`integers-2025-A26-thm-7`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 7.

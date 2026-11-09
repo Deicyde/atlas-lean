@@ -9,4 +9,4 @@ and edges not in $M$.
 
 ## Sources
 
-- Wikipedia, Berge's theorem, statement `berge-s1`, https://en.wikipedia.org/wiki/Berge%27s_theorem.
+- Wikipedia, Berge's theorem, https://en.wikipedia.org/wiki/Berge%27s_theorem.

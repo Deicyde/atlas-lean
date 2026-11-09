@@ -14,4 +14,4 @@ continuity is asserted for the left inverse $S$.
 
 ## Sources
 
-- J. Radon (1917); R. N. Bracewell (Fourier slice theorem, 1956). Knill, *Some fundamental theorems in mathematics*, §100. Via leanprover/lean-eval@38361be, problem `radon_transform_inversion`.
+- J. Radon (1917); R. N. Bracewell (Fourier slice theorem, 1956). Knill, *Some fundamental theorems in mathematics*, §100. Problem `radon_transform_inversion` of the lean-eval benchmark.

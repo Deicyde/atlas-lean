@@ -11,4 +11,4 @@ $$\sum_{j \ge 0,\ j(3j+1)/2 \le n} (-1)^j a_{r,m}(n - j(3j+1)/2)
 
 ## Sources
 
-- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 8 (i) (`integers-2024-A15-thm-8`).
+- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 8 (i).

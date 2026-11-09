@@ -8,4 +8,4 @@ $p \nmid t$, the remainder of $f^t$ upon division by $X^q - X$ has degree at mos
 
 ## Sources
 
-- Brian G. Kronenthal, "An Integer Sequence Motivated by Generalized Quadrangles", Journal of Integer Sequences 18 (2015), Article 15.7.8. Source URL: https://cs.uwaterloo.ca/journals/JIS/VOL18/Kronenthal/kron3.tex Hermite–Dickson statement at source lines 120–126. Full source SHA-256: 4968a89e5a6c165ef1c2ab57a9eb6be1a4852e1bc905ec796b3c9abf2158a78d Normalized no-final-newline source-span SHA-256: ddd646ddcecd21e43eeb4e08d3c2405988e7ff842268dd6020ed2d7e603314af
+- Brian G. Kronenthal, "An Integer Sequence Motivated by Generalized Quadrangles", Journal of Integer Sequences 18 (2015), Article 15.7.8, https://cs.uwaterloo.ca/journals/JIS/VOL18/Kronenthal/kron3.tex, Hermite–Dickson statement at lines 120–126.

@@ -6,4 +6,4 @@ $K_n = K_{n-1} K_{n-1} K_{n-2} K_{n-2}$ (concatenation of words).
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Proposition 1 (`integers-2024-A51-prop-1`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Proposition 1.

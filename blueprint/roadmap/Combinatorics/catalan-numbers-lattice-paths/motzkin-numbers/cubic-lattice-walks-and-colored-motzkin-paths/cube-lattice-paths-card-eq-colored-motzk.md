@@ -16,4 +16,4 @@ constrained, and the $2n$ steps $\pm e_i$ with $i < n$ correspond to the $2n$ le
 
 ## Sources
 
-- Rigoberto Flórez, Leandro Junes, and José L. Ramírez, "Further Results on Paths in an n-Dimensional Cubic Lattice," Journal of Integer Sequences 21 (2018), Article 18.1.2, Theorem (label bijection:Motzkin), lines 924–926, https://cs.uwaterloo.ca/journals/JIS/VOL21/Florez/florez4.tex
+- Rigoberto Flórez, Leandro Junes, and José L. Ramírez, "Further Results on Paths in an n-Dimensional Cubic Lattice," Journal of Integer Sequences 21 (2018), Article 18.1.2, Theorem, lines 924–926, https://cs.uwaterloo.ca/journals/JIS/VOL21/Florez/florez4.tex

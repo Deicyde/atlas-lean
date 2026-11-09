@@ -13,4 +13,4 @@ The hypothesis $a > 0$ excludes the degenerate cases where the graph $P$ is a si
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.18 (`integers-2024-A1-cor-5-18`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.18.

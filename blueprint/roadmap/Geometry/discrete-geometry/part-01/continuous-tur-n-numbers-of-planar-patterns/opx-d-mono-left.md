@@ -6,4 +6,4 @@ $\mathrm{opx}(m, P, d) \le \mathrm{opx}(n, P, d)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 5.2 (`integers-2024-A1-lem-5-2`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 5.2.

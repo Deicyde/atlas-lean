@@ -9,4 +9,4 @@ $P_{GK}(b)$ as $N \to \infty$.
 
 ## Sources
 
-- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.2 (`integers-2025-A89-prop-1-2`), quoted from Iosifescu and Kraaikamp, Proposition 4.1.2.
+- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.2, quoted from Iosifescu and Kraaikamp, Proposition 4.1.2.

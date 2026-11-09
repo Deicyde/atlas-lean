@@ -13,4 +13,4 @@ $\mathcal{G}_2(x, y, 1) = 0$ if and only if $(x, y) \in C$.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 1 (`integers-2025-G4-lem-1`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 1.

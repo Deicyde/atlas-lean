@@ -7,4 +7,4 @@ its entries are nonnegative and each of its rows and each of its columns sums to
 
 ## Sources
 
-- R. Sinkhorn, Ann. Math. Statist. 35 (1964), 876-879, DOI 10.1214/aoms/1177703591. Proves `Wanted` entry `sinkhorn_scaling`.
+- R. Sinkhorn, Ann. Math. Statist. 35 (1964), 876-879, DOI 10.1214/aoms/1177703591.

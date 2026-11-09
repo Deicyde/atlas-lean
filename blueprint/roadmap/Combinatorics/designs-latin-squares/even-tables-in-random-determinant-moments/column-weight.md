@@ -7,4 +7,4 @@ in the column. The weight of the column is the product $\prod_{j=0}^{n-1} f(c_j)
 
 ## Sources
 
-- Dominik Beck, Zelin Lv, and Aaron Potechin, *The Sixth Moment of Random Determinants*, Journal of Integer Sequences 26 (2023), Article 23.6.3, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Lv/lv3.tex>. Stable source identifiers: concept `jis_sem_a5942561d609e6dce822e138`, statement `jis_7896cefc507363fdee018052`.
+- Dominik Beck, Zelin Lv, and Aaron Potechin, *The Sixth Moment of Random Determinants*, Journal of Integer Sequences 26 (2023), Article 23.6.3, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Lv/lv3.tex>.

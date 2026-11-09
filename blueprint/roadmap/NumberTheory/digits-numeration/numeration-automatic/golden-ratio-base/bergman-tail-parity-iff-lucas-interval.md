@@ -10,4 +10,4 @@ $L_{2n+1} + 1 \le N \le L_{2n+2} - 1$ for some natural number $n$ if and only if
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(a) (`fq-2024-dekking11102023-prop-5.1`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(a).

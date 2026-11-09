@@ -7,4 +7,4 @@ $|h^{\wedge}A| \ge \min(p,\ hk - h^2 + 1)$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 2 (Dias da Silva–Hamidoune theorem) (`integers-2025-A12-thm-2`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 2 (Dias da Silva–Hamidoune theorem).

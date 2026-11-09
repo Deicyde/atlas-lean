@@ -8,4 +8,4 @@ vector of $\mathbb{R}^m$. A partial derivative that does not exist is taken to b
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `Jacobian matrix` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant.

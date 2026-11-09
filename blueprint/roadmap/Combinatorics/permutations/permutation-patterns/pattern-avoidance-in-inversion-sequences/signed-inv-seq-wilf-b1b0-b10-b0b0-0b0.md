@@ -8,4 +8,4 @@ $\{\bar1\bar0, \bar10, \bar0\bar0, 0\bar0\} \sim \{\bar1\bar0, \bar10, \bar00, 0
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 9 (`integers-2026-A74-thm-9`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 9.

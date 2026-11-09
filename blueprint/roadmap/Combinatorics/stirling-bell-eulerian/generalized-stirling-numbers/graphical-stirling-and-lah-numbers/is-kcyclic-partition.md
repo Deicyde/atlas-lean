@@ -9,4 +9,4 @@ that is at most $i$), then $E(i, j)$ does not hold.
 
 ## Sources
 
-- JIS statement `jis_758fa72fca5bb19057a27c73` in Gonzales, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex>, lines 345–346, SHA-256 `2d78a778c999aa0af889445a63ee690bb3a5d3ac741b6beb0b777654e1f4a627`.
+- Gonzales, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex>, lines 345–346.

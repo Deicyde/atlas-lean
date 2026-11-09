@@ -15,4 +15,4 @@ and $\tau(m)$ is the number of positive divisors of $m$.
 
 ## Sources
 
-- Polymath8b v4, Claim 2.6, TeX label `sig` and its uniformity footnote.
+- Polymath8b v4, Claim 2.6 and its uniformity footnote.

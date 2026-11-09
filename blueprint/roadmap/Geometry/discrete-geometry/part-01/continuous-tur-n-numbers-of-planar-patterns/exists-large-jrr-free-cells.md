@@ -12,4 +12,4 @@ Kővári–Sós–Turán-type lower bound, with the paper's explicit constant.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 4.4 (`integers-2024-A1-lem-4-4`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 4.4.

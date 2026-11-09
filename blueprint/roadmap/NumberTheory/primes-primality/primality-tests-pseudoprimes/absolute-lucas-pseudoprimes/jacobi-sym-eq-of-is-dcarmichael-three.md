@@ -7,4 +7,4 @@ $\left(\frac{D}{n}\right) = \left(\frac{D'}{n}\right)$.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 13 (`integers-2026-A102-thm-13`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 13.

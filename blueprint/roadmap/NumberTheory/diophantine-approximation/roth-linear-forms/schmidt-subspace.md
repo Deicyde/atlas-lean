@@ -15,4 +15,4 @@ subspaces.
 
 ## Sources
 
-- W.M. Schmidt, Diophantine approximation, Lecture Notes in Mathematics 785, Springer Verlag 1980, Chap. V,VI,VII. Via leanprover/lean-eval@38361be, problem `schmidt_subspace`.
+- W.M. Schmidt, Diophantine approximation, Lecture Notes in Mathematics 785, Springer Verlag 1980, Chap. V,VI,VII. Problem `schmidt_subspace` of the lean-eval benchmark.

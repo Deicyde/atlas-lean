@@ -14,4 +14,4 @@ $$\int_0^x \frac{du}{1 + u^5} = \frac{1}{20} \log \frac{(1 + x)^5}{1 + x^5} +
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8, Entry 14(v), pp. 189–191. Proves `Wanted` entry `ramanujan_part1_ch8_entry14_v_integral5`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8, Entry 14(v), pp. 189–191.

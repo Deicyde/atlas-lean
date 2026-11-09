@@ -7,4 +7,4 @@ $\mathrm{si}((1, \dots, m+1), (m+2, \dots, n))$.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 3 (`integers-2026-A15-lem-3`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 3.

@@ -9,4 +9,4 @@ iterates $J^k(x_0)$ converge to $x^*$ as $k \to \infty$.
 
 ## Sources
 
-- Mathlib repository, `docs/undergrad.yaml` (the undergraduate curriculum list), section "Numerical Analysis" / "Iterative methods" / "Jacobian"; G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins Univ. Press, 2013, §11.2; https://en.wikipedia.org/wiki/Jacobi_method
+- G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins Univ. Press, 2013, §11.2; https://en.wikipedia.org/wiki/Jacobi_method

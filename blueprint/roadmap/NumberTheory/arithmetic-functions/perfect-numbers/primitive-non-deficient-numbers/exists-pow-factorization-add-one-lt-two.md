@@ -6,4 +6,4 @@ $p$ of $n$ satisfies $p^{a+1} < 2R$, where $a$ is the exponent of $p$ in $n$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `Checkforexactly3or4distinctprimefactors`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma.

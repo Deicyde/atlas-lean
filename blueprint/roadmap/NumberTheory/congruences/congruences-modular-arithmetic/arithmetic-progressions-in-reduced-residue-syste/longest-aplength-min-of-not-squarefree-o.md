@@ -12,4 +12,4 @@ $f_m(n)$ over all integers $m$ is $n / \operatorname{rad}(n)$.
 
 ## Sources
 
-- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3 (`integers-2026-A6-thm-3`).
+- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3.

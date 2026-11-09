@@ -16,4 +16,4 @@ $$\sum_{n \ge 1} n \frac{q^{3n} - q^{5n} - q^{11n} + q^{13n}}{1 - q^{16n}} =
 
 ## Sources
 
-- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 3, Equations (62)-(63) (`integers-2025-A16-thm-3`).
+- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 3, Equations (62)-(63).

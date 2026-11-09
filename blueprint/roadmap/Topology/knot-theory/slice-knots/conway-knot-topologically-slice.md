@@ -12,4 +12,4 @@ topologically slice, since the Conway knot has $\Delta_K(t) = 1$.
 
 ## Sources
 
-- Freedman, *The topology of four-dimensional manifolds*, J. Diff. Geom. 17 (1982). See also Freedman-Quinn, *Topology of 4-Manifolds*, Princeton 1990. Via leanprover/lean-eval@38361be, problem `conway_knot_topologically_slice`.
+- Freedman, *The topology of four-dimensional manifolds*, J. Diff. Geom. 17 (1982). See also Freedman-Quinn, *Topology of 4-Manifolds*, Princeton 1990. Problem `conway_knot_topologically_slice` of the lean-eval benchmark.

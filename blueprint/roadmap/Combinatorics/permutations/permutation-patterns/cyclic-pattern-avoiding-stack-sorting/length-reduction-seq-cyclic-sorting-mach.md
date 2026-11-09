@@ -7,4 +7,4 @@ machine $\mathrm{SC}_{[123]}$ has fewer than $n$ entries.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 2 (`integers-2026-A15-lem-2`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 2.

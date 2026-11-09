@@ -17,4 +17,4 @@ We require $X$ and $Y$ to be measurable to make the statement more natural.
 
 ## Sources
 
-- A. Cohen, `Fractal uncertainty in higher dimensions`, Annals of Math, 202 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2025-202-1-FractalUncertainty.lean Via leanprover/lean-eval@38361be, problem `annals_fractal_uncertainty`.
+- A. Cohen, `Fractal uncertainty in higher dimensions`, Annals of Math, 202 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_fractal_uncertainty` of the lean-eval benchmark.

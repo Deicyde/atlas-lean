@@ -10,4 +10,4 @@ For $y = p^m$ one has $T_s(y) = m p^s$, and $m p^s = p^m$ forces $m$ to be a pow
 
 ## Sources
 
-- Spencer P. Hurd and Judson S. McCranie, "Integers That Are Sums of Uniform Powers of All Their Prime Factors: The Sequence A068916," Journal of Integer Sequences 22 (2019), Article 19.3.4, Theorem 1 (label origThm1), lines 187–189, https://cs.uwaterloo.ca/journals/JIS/VOL22/Hurd/hurd1.tex
+- Spencer P. Hurd and Judson S. McCranie, "Integers That Are Sums of Uniform Powers of All Their Prime Factors: The Sequence A068916," Journal of Integer Sequences 22 (2019), Article 19.3.4, Theorem 1, lines 187–189, https://cs.uwaterloo.ca/journals/JIS/VOL22/Hurd/hurd1.tex

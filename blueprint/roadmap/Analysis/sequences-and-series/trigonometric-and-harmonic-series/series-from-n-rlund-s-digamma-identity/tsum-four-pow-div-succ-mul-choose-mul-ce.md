@@ -8,4 +8,4 @@ $$\sum_{n=0}^{\infty} \frac{4^n}{(n+1) \binom{n+m}{m} \binom{2(n+m)}{n+m}} =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 10, identity (23) (`integers-2025-A18-thm-10`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 10, identity (23).

@@ -7,4 +7,4 @@ $1 < k < m$.
 
 ## Sources
 
-- Antonín Čejchan, Michal Křížek, and Lawrence Somer, *On Remarkable Properties of Primes Near Factorials and Primorials*, Journal of Integer Sequences 25 (2022), Article 22.1.4. Stable source identifiers: concept `jis_sem_a34930e523f9a76ac6ef3668`, statement `jis_e3ac668676ad89d9b5e1b013`.
+- Antonín Čejchan, Michal Křížek, and Lawrence Somer, *On Remarkable Properties of Primes Near Factorials and Primorials*, Journal of Integer Sequences 25 (2022), Article 22.1.4.

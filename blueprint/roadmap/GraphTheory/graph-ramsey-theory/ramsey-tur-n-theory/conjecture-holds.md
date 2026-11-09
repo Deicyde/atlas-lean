@@ -21,4 +21,4 @@ $\alpha(G) \le C n (\log \log n)^{3/2} / (\log n)^{1/2}$.
 
 ## Sources
 
-- Jacob Fox, Po-Shen Loh, and Yufei Zhao, The critical window for the classical Ramsey-Turán problem, Combinatorica 35 (2015), 435–476. Moved from `OpenConjectures/GraphTheory/ErdosProblem22`.
+- Jacob Fox, Po-Shen Loh, and Yufei Zhao, The critical window for the classical Ramsey-Turán problem, Combinatorica 35 (2015), 435–476.

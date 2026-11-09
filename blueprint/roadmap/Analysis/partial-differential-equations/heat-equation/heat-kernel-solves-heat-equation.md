@@ -10,4 +10,4 @@ Moreover, for every $x \in \mathbb{R}$, $u(t, x) \to f(x)$ as $t \to 0$ from abo
 
 ## Sources
 
-- Classical heat-equation theory. Via leanprover/lean-eval@38361be, problem `heat_kernel_solves_heat_equation`.
+- Classical heat-equation theory. Problem `heat_kernel_solves_heat_equation` of the lean-eval benchmark.

@@ -9,4 +9,4 @@ $\sum_{k=1}^{\infty} (-1)^{k+1}/(x^k - 1) =
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. Proves `Wanted` entry `ramanujan_part1_ch6_entry13_ramanujanfactorial`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.

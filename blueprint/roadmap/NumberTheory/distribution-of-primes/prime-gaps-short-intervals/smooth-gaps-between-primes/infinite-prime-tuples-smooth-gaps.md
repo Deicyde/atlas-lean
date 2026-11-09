@@ -11,4 +11,4 @@ this with the admissible values $k_m$ of the Maynard–Tao theorem listed in its
 
 ## Sources
 
-- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 3 (`integers-2025-A44-thm-3`).
+- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 3.

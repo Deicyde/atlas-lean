@@ -12,4 +12,4 @@ $$B_n^{(-k)} = B_k^{(-n)}.$$
 
 ## Sources
 
-- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex>. The symmetric closed formula and the duality are lines 156–174 of the official TeX, attributed there to T. Arakawa and M. Kaneko, "On poly-Bernoulli numbers," Commentarii Mathematici Universitatis Sancti Pauli 48 (1999), 159–167. Proves `Wanted` entry `arakawa_kaneko_duality`.
+- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex>. The symmetric closed formula and the duality are lines 156–174 of the official TeX, attributed there to T. Arakawa and M. Kaneko, "On poly-Bernoulli numbers," Commentarii Mathematici Universitatis Sancti Pauli 48 (1999), 159–167.

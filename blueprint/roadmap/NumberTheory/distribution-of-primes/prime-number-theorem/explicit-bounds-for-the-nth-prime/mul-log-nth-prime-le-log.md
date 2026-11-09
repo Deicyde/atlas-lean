@@ -6,4 +6,4 @@ $\log n \ge 0.914 \log p_n$.
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 6, inequality (15) (`integers-2025-A58-lem-6`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 6, inequality (15).

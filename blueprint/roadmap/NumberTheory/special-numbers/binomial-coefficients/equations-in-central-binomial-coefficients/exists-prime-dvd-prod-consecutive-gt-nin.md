@@ -6,4 +6,4 @@ a prime divisor $p$ with $p > 9m/5$.
 
 ## Sources
 
-- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 9 (`integers-2026-A26-lem-9`), quoting Shanta and Shorey.
+- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 9, quoting Shanta and Shorey.

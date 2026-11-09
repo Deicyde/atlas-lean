@@ -7,4 +7,4 @@ $S_p(k, l) = p - 1$ for every natural number $k \ge p - 1$.
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 8 (`integers-2025-A62-cor-8`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 8.

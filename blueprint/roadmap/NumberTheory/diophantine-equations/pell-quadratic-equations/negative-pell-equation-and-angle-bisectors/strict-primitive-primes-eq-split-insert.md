@@ -11,4 +11,4 @@ exactly two prime ideals of $\mathcal{O}_K$ lie over $p\mathbb{Z}$.
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 8(b) (`integers-2024-A111-thm-8`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 8(b).

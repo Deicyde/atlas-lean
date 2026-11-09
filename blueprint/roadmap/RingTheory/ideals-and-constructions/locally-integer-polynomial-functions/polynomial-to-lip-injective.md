@@ -9,4 +9,4 @@ $U \to \mathbb{Z}$, holds by construction.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 1 (`integers-2025-A41-lem-1`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 1.

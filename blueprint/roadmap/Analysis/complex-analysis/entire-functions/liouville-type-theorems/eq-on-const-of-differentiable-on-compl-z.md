@@ -7,4 +7,4 @@ $c \in \mathbb{C}$ with $f(z) = c$ for every $z \ne 0$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), `benchmark/level1/ma_proofbench_l1_84.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l1_84`.

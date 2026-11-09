@@ -11,4 +11,4 @@ This is Proposition 12 of Matsuhira, Matsusaka, and Tsuchida.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 3 (`integers-2026-A23-lem-3`).
+- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 3.

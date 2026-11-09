@@ -7,4 +7,4 @@ $r_3(n) = 0$. This is the case $n \equiv 7 \pmod 8$ of Gauss's formula for $r_3$
 
 ## Sources
 
-- arXiv:2307.05244 `main.tex` lines 191-199 (span SHA-256 `39c31ed010dd887f8865ff9c7c36f814bf598c58f691b2954a6d0f62ad1fc1e2`).
+- arXiv:2307.05244 `main.tex` lines 191-199.

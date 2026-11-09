@@ -14,4 +14,4 @@ theorem that accompanies this result in the source is not stated.
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 5 (`integers-2024-A54-thm-5`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 5.

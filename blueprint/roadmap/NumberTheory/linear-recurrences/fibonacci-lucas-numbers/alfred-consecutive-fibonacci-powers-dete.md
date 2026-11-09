@@ -13,4 +13,4 @@ powers of Fibonacci numbers," Fibonacci Quarterly 2 (1964), 81–92.
 
 ## Sources
 
-- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Corollary (label Alfred), lines 406–418, https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex
+- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Corollary, lines 406–418, https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex

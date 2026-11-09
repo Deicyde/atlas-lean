@@ -12,4 +12,4 @@ integers $k \equiv l \pmod 2$ with $8l - 3 \in P$.
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 11 (`integers-2024-A30-lem-11`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 11.

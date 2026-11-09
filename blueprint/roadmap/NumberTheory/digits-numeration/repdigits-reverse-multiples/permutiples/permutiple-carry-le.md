@@ -9,4 +9,4 @@ $c_j \le n - 1$ if $n \ge 1$, and $c_j = 0$ if $n = 0$.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 2 (`integers-2024-A88-thm-2`), quoting Holt's earlier paper; restated as Theorem 2 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13 (`integers-2025-A13-thm-2`).
+- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 2, quoting Holt's earlier paper; restated as Theorem 2 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13.

@@ -12,4 +12,4 @@ The source attributes this result (its Theorem 1.1) to Bulawa and Lee.
 
 ## Sources
 
-- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.6 (`fq-2024-tsuno05142024-cor-1.6`) and Theorem 1.1 (`fq-2024-tsuno05142024-thm-1.1`).
+- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.6 and Theorem 1.1.

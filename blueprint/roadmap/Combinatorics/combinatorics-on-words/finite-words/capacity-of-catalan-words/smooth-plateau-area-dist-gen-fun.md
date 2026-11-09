@@ -14,4 +14,4 @@ and for $j = 1$ it is $qx / (1 - qx)$. The term $m = 0$ vanishes.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 8 (`integers-2025-A5-lem-8`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 8.

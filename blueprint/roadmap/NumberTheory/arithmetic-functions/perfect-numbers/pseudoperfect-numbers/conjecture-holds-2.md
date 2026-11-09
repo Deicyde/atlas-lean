@@ -8,4 +8,4 @@ $C > 2$.
 
 ## Sources
 
-- Daniel Larsen, Sufficiently abundant numbers are pseudoperfect (repository commit 18411fce83ce49ee0adbb628de04603e003004f5; PDF blob e0f990064466e347dea348bc2c6108cbd6a5c906), https://github.com/Larsen-Daniel/Erdos-825/blob/18411fce83ce49ee0adbb628de04603e003004f5/825.pdf. Moved from `OpenConjectures/NumberTheory/ErdosProblem825`.
+- Daniel Larsen, Sufficiently abundant numbers are pseudoperfect, https://github.com/Larsen-Daniel/Erdos-825/blob/18411fce83ce49ee0adbb628de04603e003004f5/825.pdf.

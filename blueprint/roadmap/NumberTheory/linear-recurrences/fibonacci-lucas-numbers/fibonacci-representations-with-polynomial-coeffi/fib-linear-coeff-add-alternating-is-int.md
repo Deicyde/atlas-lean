@@ -16,4 +16,4 @@ These integers are then the initial values of the sequence: $v_i = w_i$ for $0 \
 
 ## Sources
 
-- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 3.1 (`fq-2024-szakacs06212024rev-thm-3.1`).
+- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 3.1.

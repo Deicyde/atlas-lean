@@ -15,4 +15,4 @@ $x \to \infty$, so the normalized limit superior is almost surely $0$.
 
 ## Sources
 
-- B. Durkan, A. Pearce-Crump, A sharp almost sure upper bound for partial sums of random multiplicative functions, arXiv preprint (2026), arXiv:2607.29429, https://arxiv.org/abs/2607.29429; W. Verreault, Almost sure upper bound for sums of random multiplicative functions and critical chaos, arXiv preprint (2026), arXiv:2608.21354, https://arxiv.org/abs/2608.21354. Moved from `OpenConjectures/NumberTheory/RademacherLILConstant`.
+- B. Durkan, A. Pearce-Crump, A sharp almost sure upper bound for partial sums of random multiplicative functions, arXiv preprint (2026), arXiv:2607.29429, https://arxiv.org/abs/2607.29429; W. Verreault, Almost sure upper bound for sums of random multiplicative functions and critical chaos, arXiv preprint (2026), arXiv:2608.21354, https://arxiv.org/abs/2608.21354.

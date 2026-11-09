@@ -11,4 +11,4 @@ $$\int_1^T E(u)^2 \, du \le C \, T^{2 - 1/2^k} \exp\left(\frac{2 \eta \log T}{\l
 
 ## Sources
 
-- Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Theorem 1 (`integers-2025-A53-thm-1`).
+- Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Theorem 1.

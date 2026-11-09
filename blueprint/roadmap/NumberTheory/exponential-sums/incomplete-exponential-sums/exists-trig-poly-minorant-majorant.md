@@ -13,4 +13,4 @@ coefficients $\alpha_\pm(k)$ with $k \ne 0$ are asserted.
 
 ## Sources
 
-- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 4.1 (`integers-2025-A48-lem-4-1`).
+- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 4.1.

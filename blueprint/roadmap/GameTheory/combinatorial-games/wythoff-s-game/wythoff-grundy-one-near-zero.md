@@ -9,4 +9,4 @@ number $1$ lies within Euclidean distance $\sqrt{20}$ of a P-position.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Corollary 1 (`integers-2025-G4-cor-1`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Corollary 1.

@@ -19,4 +19,4 @@ weakens the divergence condition). Unlike the paper, $\Psi$ need not be positive
 
 ## Sources
 
-- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 4, with (6) and `G` from (7) (`integers-2024-A67-thm-4`).
+- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 4, with (6) and `G` from (7).

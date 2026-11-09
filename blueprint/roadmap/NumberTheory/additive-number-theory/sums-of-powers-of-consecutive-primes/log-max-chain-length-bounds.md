@@ -17,4 +17,4 @@ $$\frac{\log x}{k+1} \cdot \frac{1}{B} \le \log M < \frac{\log x}{k+1} \cdot \fr
 
 ## Sources
 
-- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 3 (`integers-2026-A84-lem-3`), with `A`, `B` from Section 2.
+- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 3, with `A`, `B` from Section 2.

@@ -8,4 +8,4 @@ $$\operatorname{opx}(n, P \cup ([x_0, x_0 + c] \times \{y_0\})) \le \operatornam
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.9 (`integers-2024-A1-lem-2-9`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.9.

@@ -12,4 +12,4 @@ $q^2 (t[0, 0] + t[0, 1] + t[0, 2]) = q^2$.
 
 ## Sources
 
-- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 3, eqs. (9), (10) (`integers-2024-A56-prop-3`).
+- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 3, eqs. (9), (10).

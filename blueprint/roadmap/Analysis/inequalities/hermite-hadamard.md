@@ -7,4 +7,4 @@ $\frac{1}{b-a} \int_a^b f(x)\,dx \le \frac{f(a) + f(b)}{2}$.
 
 ## Sources
 
-- `https://en.wikipedia.org/wiki/Hermite%E2%80%93Hadamard_inequality`, statement `hermite-hadamard-s1`; proves `Wanted` entry `hermite_hadamard`.
+- <https://en.wikipedia.org/wiki/Hermite%E2%80%93Hadamard_inequality>.

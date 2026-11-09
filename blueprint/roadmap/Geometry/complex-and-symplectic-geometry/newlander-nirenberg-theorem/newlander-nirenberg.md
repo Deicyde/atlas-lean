@@ -11,4 +11,4 @@ $D\varphi(y)(J(y)v) = i \, D\varphi(y)v$.
 
 ## Sources
 
-- A. Newlander and L. Nirenberg, `Complex analytic coordinates in almost complex manifolds`, Annals of Math, 65 (3) 1957, 391-404. Via leanprover/lean-eval@38361be, problem `newlander_nirenberg`.
+- A. Newlander and L. Nirenberg, `Complex analytic coordinates in almost complex manifolds`, Annals of Math, 65 (3) 1957, 391-404. Problem `newlander_nirenberg` of the lean-eval benchmark.

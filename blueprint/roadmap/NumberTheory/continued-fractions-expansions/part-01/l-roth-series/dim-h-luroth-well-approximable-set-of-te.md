@@ -18,4 +18,4 @@ $\infty$ is read as the partial sums tending to $+\infty$.
 
 ## Sources
 
-- Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 10 (`integers-2026-A45-thm-10`).
+- Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 10.

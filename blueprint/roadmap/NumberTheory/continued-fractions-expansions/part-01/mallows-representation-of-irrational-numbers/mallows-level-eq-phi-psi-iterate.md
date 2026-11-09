@@ -13,4 +13,4 @@ The paper quotes this identity from Hida, J. Comb. 14 (2023).
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 1 (`integers-2025-A78-thm-1`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 1.

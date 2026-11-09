@@ -13,4 +13,4 @@ the bound is vacuous for $h \le 1$.
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 2 (`integers-2026-A31-thm-2`; arXiv:2505.07679v2, Theorem 3.4).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 2 (arXiv:2505.07679v2, Theorem 3.4).

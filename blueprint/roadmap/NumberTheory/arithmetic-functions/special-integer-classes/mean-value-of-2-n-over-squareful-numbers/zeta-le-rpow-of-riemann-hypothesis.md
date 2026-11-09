@@ -7,4 +7,4 @@ $1/2 \le \sigma \le 1$ and $|t| \ge t_0$.
 
 ## Sources
 
-- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 8 (`integers-2024-A110-lem-8`).
+- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 8.

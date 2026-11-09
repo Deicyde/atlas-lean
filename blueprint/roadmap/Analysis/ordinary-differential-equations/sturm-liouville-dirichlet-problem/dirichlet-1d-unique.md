@@ -7,4 +7,4 @@ $u_i''(x) = f(x)$ for every $x \in (0, 1)$. Then $u_1(x) = u_2(x)$ for every $x 
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Topology" / "Hilbert spaces" / entry "H^1_0([0,1]) and its application to the one-dimensional Dirichlet problem"; L. Evans, *Partial Differential Equations*, Ch. 6.
+- L. Evans, *Partial Differential Equations*, Ch. 6.

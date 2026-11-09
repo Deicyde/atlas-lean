@@ -16,4 +16,4 @@ where $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, so that $\psi(q) \psi(q^2) = f_2 
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 2 (ii), Equations (21) and (22) (`integers-2025-A72-thm-2`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 2 (ii), Equations (21) and (22).

@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/2}
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 18 (`integers-2026-A19-thm-18`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 18.

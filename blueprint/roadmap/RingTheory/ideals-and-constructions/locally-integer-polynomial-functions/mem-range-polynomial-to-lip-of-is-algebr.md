@@ -9,4 +9,4 @@ $p \in \mathbb{Z}[x]$ with $f(u) = p(u)$ for all $u \in U$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 3 (`integers-2025-A41-cor-3`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 3.

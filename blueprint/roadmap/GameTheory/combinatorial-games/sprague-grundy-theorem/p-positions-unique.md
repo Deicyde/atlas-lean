@@ -11,4 +11,4 @@ are their complement.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, "Variants of Wythoff Game with Terminal Positions or Blocking Maneuvers," Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition (Folklore) (label pro:kernel), lines 438–448, https://cs.uwaterloo.ca/journals/JIS/VOL29/Rigo/rigo5.tex; stability and absorption are defined in lines 430–436. Termination is encoded by the well-foundedness of the move relation on the acyclic game graph. Proves `Wanted` entry `pPositions_unique`.
+- Antoine Renard and Michel Rigo, "Variants of Wythoff Game with Terminal Positions or Blocking Maneuvers," Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition (Folklore), lines 438–448, https://cs.uwaterloo.ca/journals/JIS/VOL29/Rigo/rigo5.tex; stability and absorption are defined in lines 430–436. Termination is encoded by the well-foundedness of the move relation on the acyclic game graph.

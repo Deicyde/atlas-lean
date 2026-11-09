@@ -7,4 +7,4 @@ and $2b = k(7k - 5)$ for some integers $m$ and $k$. Then $f(n) = n$ for every na
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 1 (`integers-2025-A99-thm-1`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 1.

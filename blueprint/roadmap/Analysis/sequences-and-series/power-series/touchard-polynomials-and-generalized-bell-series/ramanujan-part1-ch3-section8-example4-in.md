@@ -7,4 +7,4 @@ interval integrable on $[0, 1]$ with respect to Lebesgue measure.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 4 and its correction, printed pp. 51--52 / PDF pp. 61--62. Proves `Wanted` entry `ramanujan_part1_ch3_section8_example4_integrable`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 4 and its correction, printed pp. 51--52 / PDF pp. 61--62.

@@ -11,4 +11,4 @@ modulo $m + 1$, and $e = (v_i, v_{i+1})$ for some $i$.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Corollary 1 (`integers-2025-A13-cor-1`).
+- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Corollary 1.

@@ -7,4 +7,4 @@ $\sigma(n) < e^{\gamma} n \log \log n$ tends to $1$ as $N \to \infty$.
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 8 (`integers-2026-A86-thm-8`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 8.

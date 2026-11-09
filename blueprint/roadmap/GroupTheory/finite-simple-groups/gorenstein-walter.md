@@ -8,4 +8,4 @@ $\mathrm{PSL}_2(\mathbb{F}_q)$ for some power $q = p^k$ of an odd prime $p$ with
 
 ## Sources
 
-- D. Gorenstein and J. H. Walter, The characterization of finite groups with dihedral Sylow 2-subgroups, J. Algebra 2 (1965), 85-151, 218-270, 354-393. https://doi.org/10.1016/0021-8693(65)90027-X Via leanprover/lean-eval@38361be, problem `gorenstein_walter`.
+- D. Gorenstein and J. H. Walter, The characterization of finite groups with dihedral Sylow 2-subgroups, J. Algebra 2 (1965), 85-151, 218-270, 354-393. https://doi.org/10.1016/0021-8693(65)90027-X. Problem `gorenstein_walter` of the lean-eval benchmark.

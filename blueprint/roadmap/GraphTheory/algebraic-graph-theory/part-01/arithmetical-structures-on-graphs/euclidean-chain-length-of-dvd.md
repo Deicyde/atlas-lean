@@ -5,4 +5,4 @@ $x, y \ge 1$ with $x \mid y$, the Euclidean chain function $F$ satisfies $F(x, y
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 4 (`integers-2025-A82-cor-4`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 4.

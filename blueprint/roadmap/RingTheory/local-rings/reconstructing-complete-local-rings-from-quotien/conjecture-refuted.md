@@ -11,4 +11,4 @@ prime field, and reports examples by Gabber showing that the answer is no in gen
 
 ## Sources
 
-- Lou van den Dries, Isomorphism of complete local noetherian rings and strong approximation, Proc. Amer. Math. Soc. 136 (2008), 3435-3448, https://doi.org/10.1090/S0002-9939-08-09401-X. Moved from `OpenConjectures/Algebra/CompleteLocalRingReconstruction`.
+- Lou van den Dries, Isomorphism of complete local noetherian rings and strong approximation, Proc. Amer. Math. Soc. 136 (2008), 3435-3448, https://doi.org/10.1090/S0002-9939-08-09401-X.

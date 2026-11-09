@@ -11,4 +11,4 @@ These are parts (b), (c), (d), (e) and (g) of Lemma 1 of the paper, quoted there
 
 ## Sources
 
-- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Lemma 1 (`integers-2026-A101-lem-1`).
+- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Lemma 1.

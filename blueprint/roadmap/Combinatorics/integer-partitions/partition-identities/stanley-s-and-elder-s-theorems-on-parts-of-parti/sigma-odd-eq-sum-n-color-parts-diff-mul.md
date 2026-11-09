@@ -11,4 +11,4 @@ where $\sigma_{\mathrm{odd}}(m)$ is the sum of the odd divisors of $m$.
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 2 (`integers-2025-A94-cor-2`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 2.

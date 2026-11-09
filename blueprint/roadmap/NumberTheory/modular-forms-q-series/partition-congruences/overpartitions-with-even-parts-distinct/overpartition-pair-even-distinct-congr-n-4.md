@@ -17,4 +17,4 @@ $\mathrm{bped}_{3,3}(13987) \equiv 4 \pmod{8}$.
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 5 (`integers-2026-A118-thm-5`).
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 5.

@@ -6,4 +6,4 @@ a complex $z$ with $H_\lambda(z) = 0$ and nonzero imaginary part.
 
 ## Sources
 
-- Rodgers and Tao, *The de Bruijn--Newman constant is non-negative*, Forum Math. Pi 8 (2020): at every negative deformation time, `H` has a nonreal zero. Known literature result; its proof is not supplied here.
+- Rodgers and Tao, *The de Bruijn--Newman constant is non-negative*, Forum Math. Pi 8 (2020): at every negative deformation time, `H` has a nonreal zero.

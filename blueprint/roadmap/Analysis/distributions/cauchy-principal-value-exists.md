@@ -7,4 +7,4 @@ $\varepsilon \to 0^+$, the integrals being taken with respect to Lebesgue measur
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Distributions on R^d" / entry "Cauchy principal values"; F. Friedlander and M. Joshi, *Introduction to the Theory of Distributions*, Ch. 2.
+- F. Friedlander and M. Joshi, *Introduction to the Theory of Distributions*, Ch. 2.

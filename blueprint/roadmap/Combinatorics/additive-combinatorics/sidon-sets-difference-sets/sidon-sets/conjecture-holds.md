@@ -13,4 +13,4 @@ in $A + A$.
 
 ## Sources
 
-- George Tsoukalas et al., Advancing Mathematics Research with AI-Driven Formal Proof Search, arXiv preprint (2026), arXiv:2605.22763, https://arxiv.org/abs/2605.22763. Moved from `OpenConjectures/Combinatorics/ErdosSidonIsolatedSums`.
+- George Tsoukalas et al., Advancing Mathematics Research with AI-Driven Formal Proof Search, arXiv preprint (2026), arXiv:2605.22763, https://arxiv.org/abs/2605.22763.

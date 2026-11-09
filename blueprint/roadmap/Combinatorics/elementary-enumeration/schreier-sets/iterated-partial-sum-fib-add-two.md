@@ -8,4 +8,4 @@ P^{(k)}((F_n)_{n \ge 0})(\ell + 1)$.
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.4 (`fq-2024-chu08302024rev-lem-3.4`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.4.

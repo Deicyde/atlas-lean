@@ -12,4 +12,4 @@ The source assumes Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is 
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5 (`integers-2026-A75-lem-5`).
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5.

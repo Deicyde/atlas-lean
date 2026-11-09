@@ -8,4 +8,4 @@ $\sum_{k=1}^{n} \frac{r^k}{1 - a x^k} = \sum_{k=1}^{n} \frac{(a r x^k)^k}{1 - a 
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. It follows from `ramanujan_part1_ch6_entry16_finite_sum_general` with `K := ℝ`; the hypothesis `hn` is unused and keeps the source's shape. Proves `Wanted` entry `ramanujan_part1_ch6_entry16_harmonicasymptotic`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. It follows from `ramanujan_part1_ch6_entry16_finite_sum_general` with `K := ℝ`; the hypothesis `hn` is unused and keeps the source's shape.

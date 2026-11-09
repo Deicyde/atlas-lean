@@ -9,4 +9,4 @@ $V(p, q, r)(A(n)) = V(p + q, p, r - p)(n)$ and $V(p, q, r)(B(n)) = V(2p + q, p +
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 3 (`integers-2024-A24-lem-3`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 3.

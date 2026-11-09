@@ -14,4 +14,4 @@ where $\varphi$ is Euler's totient function and the product runs over the primes
 
 ## Sources
 
-- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 3 (`integers-2026-A21-thm-3`), quoted from their reference [2].
+- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 3, quoted from their reference [2].

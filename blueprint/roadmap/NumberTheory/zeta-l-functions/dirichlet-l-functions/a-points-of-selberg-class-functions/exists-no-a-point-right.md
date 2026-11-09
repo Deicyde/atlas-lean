@@ -10,4 +10,4 @@ For $F = 1$ and $a = 0$ every point is a $0$-point, so the hypothesis on $a$ can
 
 ## Sources
 
-- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 1 (`integers-2024-A11-lem-1`).
+- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 1.

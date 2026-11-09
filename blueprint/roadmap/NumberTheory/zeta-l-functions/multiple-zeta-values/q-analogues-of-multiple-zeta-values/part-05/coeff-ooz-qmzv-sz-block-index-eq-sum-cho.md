@@ -20,4 +20,4 @@ $\mathfrak{oz}(X; Y) = \sum q^{m_1} \prod_j (1 + Y_j)^{m_j - m_{j+1} - 1}
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 11 (`integers-2024-A6-prop-11`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 11.

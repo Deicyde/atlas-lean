@@ -12,4 +12,4 @@ The source states the result for $N_1 = U_m$, which is positive by its Lemma 6.1
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.2 (`integers-2025-A107-thm-6-2`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.2.

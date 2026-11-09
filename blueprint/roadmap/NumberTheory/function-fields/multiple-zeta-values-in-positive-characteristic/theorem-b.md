@@ -10,4 +10,4 @@ $\dim_K \mathcal{Z}_w \ge |\mathcal{T}^0_w|$.
 
 ## Sources
 
-- T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2021-194-1-ZagierHoffmanPositiveChar.lean Via leanprover/lean-eval@38361be, problem `annals_zagier_hoffman_positive_char`.
+- T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.

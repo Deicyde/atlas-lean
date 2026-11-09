@@ -12,4 +12,4 @@ $\lambda_2 / 2 \le 9/2 < 14/3 = \lambda_3 / 3$.
 
 ## Sources
 
-- Jonathan A. Noel, The Partial List Colouring Conjecture is False, arXiv preprint (2026), arXiv:2609.23291, https://arxiv.org/abs/2609.23291. Moved from `OpenConjectures/GraphTheory/PartialListColoring`.
+- Jonathan A. Noel, The Partial List Colouring Conjecture is False, arXiv preprint (2026), arXiv:2609.23291, https://arxiv.org/abs/2609.23291.

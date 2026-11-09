@@ -6,4 +6,4 @@ numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (4n + 3)) \equiv 0 \pmod 4$.
 
 ## Sources
 
-- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 1 (`integers-2024-A16-thm-1`).
+- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 1.

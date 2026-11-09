@@ -8,4 +8,4 @@ The paper's standing assumption $1 < c < d$ is not needed and is dropped.
 
 ## Sources
 
-- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 1 (`integers-2025-A51-lem-1`).
+- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 1.

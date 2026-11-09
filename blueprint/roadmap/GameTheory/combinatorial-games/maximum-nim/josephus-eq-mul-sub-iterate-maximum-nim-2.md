@@ -11,4 +11,4 @@ $h_k^{p-1}(k-1) \ge k - 1 = n(k-1)$, so no such $p$ exists.
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Corollary 1 (`integers-2024-G5-cor-1`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Corollary 1.

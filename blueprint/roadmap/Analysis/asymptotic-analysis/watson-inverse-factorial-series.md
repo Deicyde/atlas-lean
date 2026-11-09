@@ -23,4 +23,4 @@ converges absolutely and its sum is $f(z)-b_0$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL25/Schumacher/schu9.tex, lines 370-417. Source-file SHA-256: 41dc7a8e6903712c9106e5b139863125b6ce0b5db3b2dd7a7667a5e5182736f3. Source-text SHA-256: 72031b9f6cb272bda550d3477e59119fbd192f4b8613d31404d26b6d101f86d5. Stable grounded ID: jis_grounded_89b21b7605c15f787377247f. Use accounting (corrected): 4 mentions / 1 paper / 1 proof use. Scope exclusion: excludes the `M = 1, w = 0` specialization and the later Stirling-coefficient theorem.
+- https://cs.uwaterloo.ca/journals/JIS/VOL25/Schumacher/schu9.tex, lines 370-417. Scope exclusion: excludes the `M = 1, w = 0` specialization and the later Stirling-coefficient theorem.

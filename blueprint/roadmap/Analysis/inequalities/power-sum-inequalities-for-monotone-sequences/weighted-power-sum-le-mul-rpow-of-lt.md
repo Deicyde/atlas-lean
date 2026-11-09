@@ -11,4 +11,4 @@ In the paper $\alpha = (r + s)/2$ and the sequence is monotone.
 
 ## Sources
 
-- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4(ii) (`integers-2026-A101-thm-4`).
+- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4(ii).

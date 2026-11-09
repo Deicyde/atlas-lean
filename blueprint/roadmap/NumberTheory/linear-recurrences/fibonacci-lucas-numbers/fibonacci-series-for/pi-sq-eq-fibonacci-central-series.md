@@ -11,4 +11,4 @@ These are identities (2.3) and (2.4) of the paper, the case $n = 1$ of its Theor
 
 ## Sources
 
-- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.2 (`fq-2024-tonien10292023-lem-2.2`).
+- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.2.

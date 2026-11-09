@@ -10,4 +10,4 @@ numbers $x_1, \dots, x_n$ with $1 \le x_i \le C p^{1/k}$ for every $i$.
 
 ## Sources
 
-- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 1 (`integers-2026-A14-thm-1`).
+- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 1.

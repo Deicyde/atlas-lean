@@ -16,4 +16,4 @@ Conjecture 3); here that assumption is an explicit hypothesis, as in Theorem 1.
 
 ## Sources
 
-- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 3 (`integers-2024-A97-thm-3`).
+- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 3.

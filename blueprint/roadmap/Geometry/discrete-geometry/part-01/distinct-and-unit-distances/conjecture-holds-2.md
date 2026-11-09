@@ -10,4 +10,4 @@ of $n$ points with at least $\lfloor n/(2(m+1)) \rfloor$ distances that are $(n+
 
 ## Sources
 
-- K. Bhowmick, A problem of Erdős about rich distances, arXiv:2407.01174 (2024), https://arxiv.org/abs/2407.01174; External Lean proof of Erdős Problem 756, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos756.lean. Moved from `OpenConjectures/Geometry/ErdosProblem756`.
+- K. Bhowmick, A problem of Erdős about rich distances, arXiv:2407.01174 (2024), https://arxiv.org/abs/2407.01174; External Lean proof of Erdős Problem 756, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos756.lean.

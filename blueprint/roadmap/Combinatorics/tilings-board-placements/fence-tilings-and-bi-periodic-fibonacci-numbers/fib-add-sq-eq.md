@@ -10,4 +10,4 @@ $$
 
 ## Sources
 
-- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.12 (`fq-2024-belaggoun01132024-cor-3.12`).
+- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.12.

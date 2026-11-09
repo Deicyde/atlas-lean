@@ -7,4 +7,4 @@ $x \in \mathbb{R}$ with respect to Lebesgue measure.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), `benchmark/level1/ma_proofbench_l1_28.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_28`.

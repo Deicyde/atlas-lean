@@ -8,4 +8,4 @@ word $w$. Then $g(u) g(v) = \sum_w c_w g(w)$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 10 (i) (`integers-2024-A6-thm-10`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 10 (i).

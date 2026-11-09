@@ -10,4 +10,4 @@ of $\Phi_k$; and (b) $\varphi^2 (1 - \varphi^{-k}) < \alpha < \varphi^2$.
 
 ## Sources
 
-- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 1 (`integers-2025-A67-lem-1`).
+- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 1.

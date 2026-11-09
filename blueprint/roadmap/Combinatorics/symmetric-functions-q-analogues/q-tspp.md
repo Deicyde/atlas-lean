@@ -20,4 +20,4 @@ the formula $\sum_{\pi} q^{o(\pi)} = \prod_{1 \le i \le j \le k \le n}
 
 ## Sources
 
-- Koutschan, Kauers, and Zeilberger (2011), Theorem 1. DOI: 10.1073/pnas.1019186108 Via leanprover/lean-eval@38361be, problem `q_tspp`.
+- Koutschan, Kauers, and Zeilberger (2011), Theorem 1. DOI: 10.1073/pnas.1019186108. Problem `q_tspp` of the lean-eval benchmark.

@@ -13,4 +13,4 @@ $k_1 + \cdots + k_{m-1} + k_m - m$, as its equivalent product form shows.
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 4 (`integers-2024-A99-thm-4`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 4.

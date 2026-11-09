@@ -9,4 +9,4 @@ $$F_n(x) = \frac{n}{2^n} \int_{-1}^{1} \left( d(x) + y \sqrt{d(x)^2 + 4 g(x)} \r
 
 ## Sources
 
-- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.1 (`fq-2024-florez11012023-prop-5.1`).
+- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.1.

@@ -17,4 +17,4 @@ with $2 + \varepsilon$ in place of $2 + o(1)$.
 ## Sources
 
 - definitions of $C_\nu(X, a)$ and Conjecture 2 read from the arXiv version (arXiv:2607.02738); the theorem's journal wording matches it.
-- Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Theorem 1 (`integers-2026-A123-thm-1`).
+- Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Theorem 1.

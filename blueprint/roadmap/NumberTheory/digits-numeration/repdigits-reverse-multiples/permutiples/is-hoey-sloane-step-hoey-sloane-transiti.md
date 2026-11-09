@@ -11,4 +11,4 @@ by $e$.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 6, from Theorems 5 and 6 (`integers-2025-A111-thm-6`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 6, from Theorems 5 and 6.

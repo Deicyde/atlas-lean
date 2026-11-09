@@ -13,4 +13,4 @@ $$F(s) = \frac{\zeta(2s)^2 \zeta(3s)^2 \zeta(7s)^2 \zeta(8s)^4 \zeta(12s)^5 \zet
 
 ## Sources
 
-- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 1 (`integers-2024-A110-lem-1`).
+- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 1.

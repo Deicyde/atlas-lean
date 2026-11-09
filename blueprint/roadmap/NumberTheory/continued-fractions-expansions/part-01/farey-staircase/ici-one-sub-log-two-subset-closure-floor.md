@@ -8,4 +8,4 @@ $S = \{f_n(x) : n \ge 1,\ x \in \mathbb{R}\}$, that is, $S$ is dense in $[1 - \l
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (i) (`integers-2024-A37-thm-5`), also Corollary 6 (`integers-2024-A37-cor-6`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (i), also Corollary 6.

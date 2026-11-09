@@ -9,4 +9,4 @@ The paper takes $l \ge 1$; the case $l = 0$ is included.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 8 (`integers-2025-A4-thm-8`).
+- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 8.

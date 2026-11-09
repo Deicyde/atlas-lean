@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Xue Liang, *Congruences Modulo 512 for the Overpartition Function*, INTEGERS 25 (2025), Article A76, Lemma 1, identity (10) (`integers-2025-A76-lem-1`). Identity (9) of the same lemma is `ramanujanPsi_three_dissection` (`OverpartitionSpt2CongruencesWanted`).
+- Xue Liang, *Congruences Modulo 512 for the Overpartition Function*, INTEGERS 25 (2025), Article A76, Lemma 1, identity (10). Identity (9) of the same lemma is `ramanujanPsi_three_dissection` (`OverpartitionSpt2CongruencesWanted`).

@@ -6,4 +6,4 @@ is a difference $a - a'$ of two elements of $A$ satisfies $\eta_1(K) \le 100 \sq
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 7 (`integers-2025-A77-lem-7`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 7.

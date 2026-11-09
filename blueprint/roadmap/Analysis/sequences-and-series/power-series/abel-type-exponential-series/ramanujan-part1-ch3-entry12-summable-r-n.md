@@ -8,4 +8,4 @@ $$\sum_{k=0}^{\infty} \left| \frac{(n+k)^{r+k}}{a^k\, k!} \right| < \infty.$$
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77. Proves `Wanted` entry `ramanujan_part1_ch3_entry12_summable_r_n`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77.

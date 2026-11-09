@@ -6,4 +6,4 @@ resultant product. Then $p$ does not divide $\mathcal{P}_{p^e}$.
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 4 (`integers-2025-A39-thm-4`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 4.

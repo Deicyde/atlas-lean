@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- the proved theorem `PrimeNumberTheoremAnd.WeakPNT_AP` in [PrimeNumberTheoremAnd](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), revision `be5e07e04cde20c5ceabf63759bd097a9c88173f`, and its use in [arXiv:2608.24035](https://arxiv.org/abs/2608.24035). Lean preserves the source's natural representative and half-open `Finset.range` normalization, while omitting the redundant assumption `1 ≤ q`, which follows from `a < q`.
+- the proved theorem `PrimeNumberTheoremAnd.WeakPNT_AP` in [PrimeNumberTheoremAnd](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), and its use in [arXiv:2608.24035](https://arxiv.org/abs/2608.24035). Lean preserves the source's natural representative and half-open `Finset.range` normalization, while omitting the redundant assumption `1 ≤ q`, which follows from `a < q`.

@@ -12,4 +12,4 @@ $(a_{i+j})_{0 \le i, j \le n}$ and $(a'_{i+j})_{0 \le i, j \le n}$ are equal.
 
 ## Sources
 
-- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, `https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex`, lines 110-117. Concept `jis_dep_heilermann_049f63eb`; grounded `jis_grounded_049f63eb8aadf7377777a597`. Stated over a commutative ring; the source-faithful Wanted entry was stated over a field.
+- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117. Stated over a commutative ring.

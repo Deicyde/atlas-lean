@@ -10,4 +10,4 @@ O_{k,\varepsilon}\left(x^{1 + 2\varepsilon - 42/(13 \cdot 2^k - 9)}\right).$$
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 4 (`integers-2026-A70-thm-4`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 4.

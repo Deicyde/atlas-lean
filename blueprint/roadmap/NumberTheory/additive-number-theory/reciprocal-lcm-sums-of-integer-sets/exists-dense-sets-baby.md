@@ -19,4 +19,4 @@ written with $\varepsilon$, $\delta$ and $k_0$.
 
 ## Sources
 
-- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Proposition 1, (31) and (32), with (21) (`integers-2024-A100-prop-1`).
+- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Proposition 1, (31) and (32), with (21).

@@ -9,4 +9,4 @@ $\frac{2p}{\pi} \log B + 0.368 p + B + \frac{p}{\pi B} + R$.
 
 ## Sources
 
-- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Proposition 6.1 (`integers-2025-A48-prop-6-1`).
+- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Proposition 6.1.

@@ -7,4 +7,4 @@ Without this condition the four color theorem fails: $K_5$ is not 4-colorable.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Four_color_theorem (statement four-color-s1).
+- https://en.wikipedia.org/wiki/Four_color_theorem.

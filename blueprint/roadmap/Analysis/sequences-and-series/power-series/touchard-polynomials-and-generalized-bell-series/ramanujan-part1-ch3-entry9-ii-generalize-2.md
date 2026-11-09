@@ -7,4 +7,4 @@ $e^{x} F(a, b, x; n)$.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (9.1) printed p. 53/PDF p. 63 and Entry 9(ii), formula (9.4), printed p. 54/PDF p. 64. Proves `Wanted` entry `ramanujan_part1_ch3_entry9_ii_generalizedbellgenerating_defining`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (9.1) printed p. 53/PDF p. 63 and Entry 9(ii), formula (9.4), printed p. 54/PDF p. 64.

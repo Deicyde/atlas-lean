@@ -9,4 +9,4 @@ This is the case $a = b = 1$ of the generating function $(2 - at) / (1 - at - bt
 
 ## Sources
 
-- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.8 (`fq-2024-tsuno05142024-cor-1.8`).
+- Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.8.

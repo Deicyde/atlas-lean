@@ -7,4 +7,4 @@ $$\int_1^T |\zeta(1/2 + it)|^{12} \, dt \le C T^2 (\log T)^{17}.$$
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 4 (`integers-2026-A70-lem-4`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 4.

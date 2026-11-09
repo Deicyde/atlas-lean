@@ -12,4 +12,4 @@ $$\left| \sum_{f \text{ monic},\ \deg f \le N} \chi(f) \, d_h(f) \right| \le
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 5 (`integers-2026-A80-prop-5`); `χ^{(h)}` as in eq. (8).
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 5; `χ^{(h)}` as in eq. (8).

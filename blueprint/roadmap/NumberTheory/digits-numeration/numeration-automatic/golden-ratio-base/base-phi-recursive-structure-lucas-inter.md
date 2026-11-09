@@ -27,4 +27,4 @@ $N = 10$ give $10\,\beta(6)\,01 = 101010 \cdot 000101$, which is not $\beta(10) 
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 3 (`integers-2024-A24-thm-3`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 3.

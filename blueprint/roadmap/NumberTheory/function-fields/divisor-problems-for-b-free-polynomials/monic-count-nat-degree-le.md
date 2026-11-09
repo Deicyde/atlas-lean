@@ -6,4 +6,4 @@ most $N$ is $(q^{N+1} - 1)/(q - 1)$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4 (`integers-2026-A80-prop-4`), case `h = 1`, `m = 1`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4, case `h = 1`, `m = 1`.

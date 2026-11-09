@@ -7,4 +7,4 @@ $C_{31a} > 0$.
 
 ## Sources
 
-- Chvátal--Sankoff (1975), catalogue strict lower bound `> 0`. Known literature result; its proof is not supplied here.
+- Chvátal--Sankoff (1975), catalogue strict lower bound `> 0`.

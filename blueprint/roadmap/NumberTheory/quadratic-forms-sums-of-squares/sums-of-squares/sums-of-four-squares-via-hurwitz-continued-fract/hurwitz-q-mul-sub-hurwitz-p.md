@@ -14,4 +14,4 @@ quotient (and $Q_{-1} = 0$, $P_{-1} = 1$), is the definition of the iterates.
 
 ## Sources
 
-- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Proposition 1 (`integers-2024-A25-prop-1`).
+- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Proposition 1.

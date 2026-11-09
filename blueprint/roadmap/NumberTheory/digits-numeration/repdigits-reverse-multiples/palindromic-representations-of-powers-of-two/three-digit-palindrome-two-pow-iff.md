@@ -8,4 +8,4 @@ $\frac{1}{b} \lfloor 2^n / b \rfloor - \frac{b - 1}{b} \le c \le
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 2 (`integers-2024-A69-thm-2`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 2.

@@ -8,4 +8,4 @@ Proof: if $A^m = 0$, every term of the exponential series from index $m$ on vani
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Exponential / matrix exponential; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Section 3.2.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Section 3.2.

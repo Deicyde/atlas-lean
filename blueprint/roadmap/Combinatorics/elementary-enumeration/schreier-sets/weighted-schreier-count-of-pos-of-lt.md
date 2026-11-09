@@ -6,4 +6,4 @@ $j$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.2, case `k ≥ 2`, `-k < ℓ < 0` (`fq-2024-chu08302024rev-thm-1.2`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.2, case `k ≥ 2`, `-k < ℓ < 0`.

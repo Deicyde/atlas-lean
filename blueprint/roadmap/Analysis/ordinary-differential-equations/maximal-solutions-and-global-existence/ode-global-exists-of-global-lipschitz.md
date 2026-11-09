@@ -13,4 +13,4 @@ one.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential equations`, entry `maximal solutions` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.2; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.2; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.

@@ -12,4 +12,4 @@ numbers, where $\beta(s) = \sum_{n \ge 0} (-1)^n / (2n+1)^s$ is the Dirichlet be
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, first part (`integers-2026-A81-cor-11`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, first part.

@@ -12,4 +12,4 @@ the sum equals $2$ while the second bound is below $0.86$.
 
 ## Sources
 
-- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.3 (`integers-2025-A48-thm-1-3`).
+- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.3.

@@ -8,4 +8,4 @@ $8$ divides $a_5(20n + 2j + 1)$ for each $j = 1, \ldots, 9$.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Corollary 3, eqs. (76), (77) (`integers-2024-A101-cor-3`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Corollary 3, eqs. (76), (77).

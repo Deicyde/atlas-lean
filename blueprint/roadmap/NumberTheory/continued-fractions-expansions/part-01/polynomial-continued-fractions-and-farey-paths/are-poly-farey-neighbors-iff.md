@@ -10,4 +10,4 @@ The paper, quoting [6], works over $\mathbb F_{p^r}$; here the field $F$ is arbi
 
 ## Sources
 
-- Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 2 (`integers-2026-A3-thm-2`).
+- Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 2.

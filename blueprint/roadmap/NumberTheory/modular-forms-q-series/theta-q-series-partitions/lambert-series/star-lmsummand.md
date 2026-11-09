@@ -6,4 +6,4 @@ $q^{(2k+1)m} / (1 - q^{2k+1})^{2m}$, that is, $q^{(2n-1)m} / (1 - q^{2n-1})^{2m}
 
 ## Sources
 
-- Gerhold, concept `jis_sem_e9cabece6d32bf6b52d62673`, source `jis_f69070cf1636bd79774e81a9`.
+- Gerhold.

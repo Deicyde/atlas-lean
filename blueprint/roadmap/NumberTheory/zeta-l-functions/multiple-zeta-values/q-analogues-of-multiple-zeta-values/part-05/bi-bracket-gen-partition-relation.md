@@ -12,4 +12,4 @@ $X_{r+1-i} - X_{r+2-i}$, with $X_{r+1} := 0$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 12 (partition relation, after Bachmann) (`integers-2024-A6-thm-12`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 12 (partition relation, after Bachmann).

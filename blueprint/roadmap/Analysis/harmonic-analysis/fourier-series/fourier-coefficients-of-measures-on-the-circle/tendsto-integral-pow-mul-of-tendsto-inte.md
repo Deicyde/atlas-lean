@@ -12,4 +12,4 @@ $$
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions and measures on spaces with additional structure), `benchmark/level2/ma_proofbench_l2_13.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions and measures on spaces with additional structure), problem `ma_proofbench_l2_13`.

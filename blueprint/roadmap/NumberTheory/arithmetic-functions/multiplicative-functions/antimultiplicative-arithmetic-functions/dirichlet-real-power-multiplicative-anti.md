@@ -13,4 +13,4 @@ vector space of all real arithmetical functions $f$ with $f(1) = 1$, whose direc
 
 ## Sources
 
-- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 2 (`integers-2025-A33-thm-2`).
+- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 2.

@@ -14,4 +14,4 @@ and the sum over all pairs of $l$ and $(n_0, \dots, n_l)$ converges absolutely.
 
 ## Sources
 
-- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6 (`integers-2024-A11-lem-6`).
+- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6.

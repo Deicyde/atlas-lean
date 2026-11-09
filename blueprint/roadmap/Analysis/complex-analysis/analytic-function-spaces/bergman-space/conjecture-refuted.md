@@ -14,4 +14,4 @@ $p = 2$ gives such an $f$, as stated in Borichev-Hedenmalm-Volberg (arXiv:math/0
 
 ## Sources
 
-- Alexander Borichev, Haakan Hedenmalm and Alexander Volberg, Large Bergman spaces: invertibility, cyclicity, and subspaces of arbitrary index, arXiv:math/0304318 (2003), https://arxiv.org/abs/math/0304318. Moved from `OpenConjectures/Analysis/BergmanCyclicity`.
+- Alexander Borichev, Haakan Hedenmalm and Alexander Volberg, Large Bergman spaces: invertibility, cyclicity, and subspaces of arbitrary index, arXiv:math/0304318 (2003), https://arxiv.org/abs/math/0304318.

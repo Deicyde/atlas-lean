@@ -10,4 +10,4 @@ every $x$ gives the solution $y = 1$.
 
 ## Sources
 
-- Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Corollary 1 (`integers-2026-A104-cor-1`).
+- Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Corollary 1.

@@ -8,4 +8,4 @@ $2^b p^j$), then $n = 200$.
 
 ## Sources
 
-- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 4 (`integers-2024-A61-prop-4`).
+- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 4.

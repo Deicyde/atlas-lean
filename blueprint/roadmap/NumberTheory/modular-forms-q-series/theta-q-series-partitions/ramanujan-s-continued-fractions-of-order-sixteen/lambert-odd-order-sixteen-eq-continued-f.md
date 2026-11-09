@@ -20,4 +20,4 @@ $\eta(\tau) = q^{1/24} (q; q)_\infty$.
 
 ## Sources
 
-- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 2, Equations (54)-(55) (`integers-2025-A16-thm-2`).
+- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 2, Equations (54)-(55).

@@ -6,4 +6,4 @@ $\overleftarrow{a}$ is the reverse of $a$.
 
 ## Sources
 
-- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.3 (`integers-2025-A89-prop-1-3`), equations (1.8) and (1.9).
+- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.3, equations (1.8) and (1.9).

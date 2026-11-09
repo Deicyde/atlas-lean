@@ -9,4 +9,4 @@ $r_j + r_{j+L/2} = r_{L/2}$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 29 (`integers-2025-A26-lem-29`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 29.

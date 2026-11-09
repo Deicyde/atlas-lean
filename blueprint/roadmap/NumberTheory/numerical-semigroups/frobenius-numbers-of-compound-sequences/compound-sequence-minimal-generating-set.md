@@ -14,4 +14,4 @@ of elements only if $C' = M$.
 
 ## Sources
 
-- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 6 (`integers-2025-A6-thm-6`).
+- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 6.

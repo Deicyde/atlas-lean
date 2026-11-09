@@ -10,4 +10,4 @@ Since $O_n(k) = 0$ for $n < k$, the sum can equally be taken over $n \ge k$.
 ## Sources
 
 - the denominator $4^n n$ is read from the record's two-row layout ($C_n O_n(k)$ over $4^n n$).
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 5 (`integers-2026-A81-cor-5`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 5.

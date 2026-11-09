@@ -13,4 +13,4 @@ trichotomy.
 
 ## Sources
 
-- J. J. Sylvester, *A demonstration of the theorem that every homogeneous quadratic polynomial is reducible by real orthogonal substitutions to the form of a sum of positive and negative squares*, Philosophical Magazine Ser. 4, 4(23) (1852), 138-142; statement `sylvester-inertia-s1`.
+- J. J. Sylvester, *A demonstration of the theorem that every homogeneous quadratic polynomial is reducible by real orthogonal substitutions to the form of a sum of positive and negative squares*, Philosophical Magazine Ser. 4, 4(23) (1852), 138-142.

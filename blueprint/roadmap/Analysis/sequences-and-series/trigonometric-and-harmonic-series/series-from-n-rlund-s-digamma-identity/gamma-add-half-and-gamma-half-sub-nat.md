@@ -15,4 +15,4 @@ $r = -\tfrac12, -\tfrac32, \dots$ both sides are $0$.
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 2 (`integers-2025-A18-lem-2`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 2.

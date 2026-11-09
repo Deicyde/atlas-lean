@@ -12,4 +12,4 @@ $y \in (0, 1)$ and $\delta^*(\tilde Q_0) = 1$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 14 (`integers-2025-A25-thm-14`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 14.

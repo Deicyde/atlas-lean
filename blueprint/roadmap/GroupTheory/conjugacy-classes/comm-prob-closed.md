@@ -7,4 +7,4 @@ closed subset of $\mathbb{R}$.
 
 ## Sources
 
-- https://arxiv.org/abs/2201.09402 Via leanprover/lean-eval@38361be, problem `commProb_closed`.
+- https://arxiv.org/abs/2201.09402. Problem `commProb_closed` of the lean-eval benchmark.

@@ -15,4 +15,4 @@ harmonic number (Equation (2.18)).
 
 ## Sources
 
-- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 2 (`integers-2024-A43-cor-2`).
+- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 2.

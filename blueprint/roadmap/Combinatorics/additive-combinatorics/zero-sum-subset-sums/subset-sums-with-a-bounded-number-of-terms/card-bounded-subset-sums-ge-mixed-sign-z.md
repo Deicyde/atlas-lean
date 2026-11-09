@@ -10,4 +10,4 @@ mixed-sign bound with zero, which depends only on $n$, $p$, $\alpha$ and $\beta$
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 8 (`integers-2024-A116-thm-8`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 8.

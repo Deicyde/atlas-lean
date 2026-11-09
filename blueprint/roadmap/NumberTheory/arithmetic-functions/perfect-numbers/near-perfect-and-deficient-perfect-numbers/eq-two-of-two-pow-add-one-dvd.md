@@ -8,4 +8,4 @@ assumed here. The hypothesis is needed: for $b = 0$, $2^0 + 1 = 2$ divides $3 \c
 
 ## Sources
 
-- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 10 (`integers-2024-A61-lem-10`).
+- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 10.

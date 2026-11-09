@@ -9,4 +9,4 @@ $g_k(z) = (z - 1) / ((k + 1) z^2 - 3kz + k - 1)$. Then
 
 ## Sources
 
-- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 2 (`integers-2025-A67-lem-2`).
+- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 2.

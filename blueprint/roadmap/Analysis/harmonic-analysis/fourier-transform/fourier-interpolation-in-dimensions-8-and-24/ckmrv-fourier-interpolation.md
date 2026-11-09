@@ -15,4 +15,4 @@ dimension $8$ and at radius $2$ in dimension $24$.
 
 ## Sources
 
-- H. Cohn, A. Kumar, S. D. Miller, D. Radchenko, and M. Viazovska, 'Universal optimality of the E8 and Leech lattices and interpolation formulas', Ann. of Math. 196 (2022), 983-1082, Theorem 1.9, https://doi.org/10.4007/annals.2022.196.3.3. Via leanprover/lean-eval@38361be, problem `ckmrv_fourier_interpolation`.
+- H. Cohn, A. Kumar, S. D. Miller, D. Radchenko, and M. Viazovska, 'Universal optimality of the E8 and Leech lattices and interpolation formulas', Ann. of Math. 196 (2022), 983-1082, Theorem 1.9, https://doi.org/10.4007/annals.2022.196.3.3. Problem `ckmrv_fourier_interpolation` of the lean-eval benchmark.

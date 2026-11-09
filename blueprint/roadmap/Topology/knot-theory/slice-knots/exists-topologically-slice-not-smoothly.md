@@ -9,4 +9,4 @@ $\mathbb{R}^3 \times [0, \infty)$.
 
 ## Sources
 
-- Casson, 1980s (unpublished); Akbulut-Matveyev, *A convex decomposition theorem for 4-manifolds*, IMRN 1998. See also Hedden-Kirk-Livingston, *Non-slice linear combinations of algebraic knots*, J. Eur. Math. Soc. 14 (2012). Via leanprover/lean-eval@38361be, problem `exists_topologically_slice_not_smoothly_slice`.
+- Casson, 1980s (unpublished); Akbulut-Matveyev, *A convex decomposition theorem for 4-manifolds*, IMRN 1998. See also Hedden-Kirk-Livingston, *Non-slice linear combinations of algebraic knots*, J. Eur. Math. Soc. 14 (2012). Problem `exists_topologically_slice_not_smoothly_slice` of the lean-eval benchmark.

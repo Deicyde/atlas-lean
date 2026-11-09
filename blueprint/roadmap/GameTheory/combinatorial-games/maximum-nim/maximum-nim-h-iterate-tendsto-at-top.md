@@ -6,4 +6,4 @@ For every natural number $x_0$, the iterates $h_k^p(x_0)$ tend to infinity as $p
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(iii) (`integers-2024-G5-lem-6`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(iii).

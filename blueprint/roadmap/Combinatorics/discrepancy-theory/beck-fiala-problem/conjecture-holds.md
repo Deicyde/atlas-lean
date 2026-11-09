@@ -16,4 +16,4 @@ case.
 
 ## Sources
 
-- Shengtao Guo, Ethan X. Fang and Junwei Lu, Vector balancing via directional total variation, arXiv:2609.11189 (2026), https://arxiv.org/abs/2609.11189. Moved from `OpenConjectures/Combinatorics/LinearBeckFiala`.
+- Shengtao Guo, Ethan X. Fang and Junwei Lu, Vector balancing via directional total variation, arXiv:2609.11189 (2026), https://arxiv.org/abs/2609.11189.

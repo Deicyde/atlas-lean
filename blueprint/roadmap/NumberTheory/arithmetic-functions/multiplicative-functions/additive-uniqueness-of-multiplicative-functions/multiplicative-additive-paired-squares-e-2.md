@@ -12,4 +12,4 @@ $f(n) = n$ for every positive integer $n$.
 
 ## Sources
 
-- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Corollary 2 (`integers-2026-A121-cor-2`).
+- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Corollary 2.

@@ -13,4 +13,4 @@ https://en.wikipedia.org/wiki/Implicit_function_theorem).
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Submanifolds of R^n`, entry `tangent space` (unmapped); J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Theorem 5.12.
+- J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Theorem 5.12.

@@ -15,4 +15,4 @@ for the Picard iterates (2.13) of Section 2.2, with a constant global Lipschitz 
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entry `Picard method` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.

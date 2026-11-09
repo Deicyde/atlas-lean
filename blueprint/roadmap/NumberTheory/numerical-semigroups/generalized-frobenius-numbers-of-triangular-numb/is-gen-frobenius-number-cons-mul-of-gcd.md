@@ -9,4 +9,4 @@ $g(a_1, \ell a'_2, \dots, \ell a'_K; s)$.
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 1 (`integers-2026-A63-lem-1`), quoted from Beck and Kifer, Lemma 4.
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 1, quoted from Beck and Kifer, Lemma 4.

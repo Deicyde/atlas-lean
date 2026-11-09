@@ -8,4 +8,4 @@ differentiable solution $u : \mathbb{R} \to \mathbb{R}$ of this equation is boun
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), `benchmark/level2/ma_proofbench_l2_39.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), problem `ma_proofbench_l2_39`.

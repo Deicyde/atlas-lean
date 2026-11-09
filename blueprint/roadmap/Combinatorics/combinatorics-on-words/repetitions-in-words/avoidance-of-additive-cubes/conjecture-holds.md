@@ -10,4 +10,4 @@ $s + \ell$ and $s + 2\ell$ all have the same sum of letter values.
 
 ## Sources
 
-- Julien Cassaigne, James D. Currie, Luke Schaeffer and Jeffrey Shallit, Avoiding three consecutive blocks of the same size and same sum, J. ACM 61(2) (2014), Article 10, arXiv:1106.5204, https://arxiv.org/abs/1106.5204. Moved from `OpenConjectures/Combinatorics/PVHHCubeMorphicWord`.
+- Julien Cassaigne, James D. Currie, Luke Schaeffer and Jeffrey Shallit, Avoiding three consecutive blocks of the same size and same sum, J. ACM 61(2) (2014), Article 10, arXiv:1106.5204, https://arxiv.org/abs/1106.5204.

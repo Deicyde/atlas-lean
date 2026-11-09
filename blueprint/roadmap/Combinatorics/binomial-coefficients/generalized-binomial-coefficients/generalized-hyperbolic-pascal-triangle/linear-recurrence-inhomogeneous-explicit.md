@@ -13,4 +13,4 @@ states the formula for $n \ge k$, as a consequence of its Theorem 1.
 
 ## Sources
 
-- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 1 (`integers-2024-A84-cor-1`).
+- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 1.

@@ -15,4 +15,4 @@ $$C(k)\,B(k) < e^{\gamma} \log\log\frac{p_{k+1}\#}{p_j}.$$
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 2 (`integers-2026-A86-thm-2`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 2.

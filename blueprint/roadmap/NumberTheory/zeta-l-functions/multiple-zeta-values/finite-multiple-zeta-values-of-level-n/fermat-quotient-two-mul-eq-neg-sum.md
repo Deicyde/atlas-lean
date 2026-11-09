@@ -8,4 +8,4 @@ $(N + 1)\, q_p(2) \equiv -\sum_{0 \le j < N/2} s_p(2j, 2N) \pmod{p}$.
 
 ## Sources
 
-- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 3 (`integers-2024-A22-thm-3`).
+- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 3.

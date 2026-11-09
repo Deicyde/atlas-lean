@@ -6,4 +6,4 @@ $U \to \mathbb{Z}$ is an integral domain.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 4 (`integers-2025-A41-lem-4`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 4.

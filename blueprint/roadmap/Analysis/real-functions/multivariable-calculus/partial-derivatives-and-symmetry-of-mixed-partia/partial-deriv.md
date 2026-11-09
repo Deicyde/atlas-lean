@@ -7,4 +7,4 @@ $t \mapsto f(x + t e_i)$, taken to be $0$ when this function is not differentiab
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entries `partial derivatives` and `k-th order partial derivatives` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Partial_derivative.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Partial_derivative.

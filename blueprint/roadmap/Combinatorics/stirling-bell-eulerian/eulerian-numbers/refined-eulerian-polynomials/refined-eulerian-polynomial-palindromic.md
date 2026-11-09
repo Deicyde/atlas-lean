@@ -12,4 +12,4 @@ nonzero real $p$ and $q$.
 
 ## Sources
 
-- Hua Sun, "A New Class of Refined Eulerian Polynomials," Journal of Integer Sequences 21 (2018), Article 18.5.5, Theorem (label pal), lines 160–162 (polynomial definition lines 135–136, palindromic-darga definition lines 105–110). `https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.tex`
+- Hua Sun, "A New Class of Refined Eulerian Polynomials," Journal of Integer Sequences 21 (2018), Article 18.5.5, Theorem, lines 160–162 (polynomial definition lines 135–136, palindromic-darga definition lines 105–110). <https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.tex>

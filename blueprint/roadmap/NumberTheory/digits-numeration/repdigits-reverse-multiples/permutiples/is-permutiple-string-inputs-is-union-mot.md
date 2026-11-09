@@ -8,4 +8,4 @@ In this sense the inputs of $s$ form a union of cycles of the mother graph.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 1 (`integers-2025-A111-cor-1`), quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 1, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.

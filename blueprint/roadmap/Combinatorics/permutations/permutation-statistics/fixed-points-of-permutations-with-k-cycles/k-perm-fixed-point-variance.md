@@ -12,4 +12,4 @@ $n$-element set with $k$ cycles, so the left side is the variance of that number
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Proposition 4 (`integers-2024-A54-prop-4`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Proposition 4.

@@ -13,4 +13,4 @@ $A_2$ is irreducible for every $a \ge 1$, its discriminant $-3a^2 - 6a + 1$ bein
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 3 (`integers-2026-A92-thm-3`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 3.

@@ -5,4 +5,4 @@ $n$, that is, of ways of writing $n$ as a sum of positive integers, disregarding
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Pentagonal_number_theorem ("Pentagonal number theorem", statement `pentagonal-s1`).
+- https://en.wikipedia.org/wiki/Pentagonal_number_theorem ("Pentagonal number theorem").

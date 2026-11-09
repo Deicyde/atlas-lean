@@ -10,4 +10,4 @@ where $a$ is the exponent of $p$ in $n$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Proposition (label `dichotomywithpk`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Proposition.

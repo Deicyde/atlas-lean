@@ -8,4 +8,4 @@ $p_{k_1, \dots, k_m, n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ throug
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 3 (`integers-2024-A99-cor-3`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 3.

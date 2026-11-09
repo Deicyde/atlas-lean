@@ -11,4 +11,4 @@ where $c_k(i) = (-1)^i \binom{k+1-i}{i+1}$ is the right-down diagonal coefficien
 
 ## Sources
 
-- László Németh and László Szalay, *Sequences Involving Square Zig-Zag Shapes*, Journal of Integer Sequences 24 (2021), Article 21.5.2. Stable source identifiers: concept `jis_sem_81073f165e7dac1ef20a1a7a`, statement `jis_0034612dbd4f4faf5fca455c`.
+- László Németh and László Szalay, *Sequences Involving Square Zig-Zag Shapes*, Journal of Integer Sequences 24 (2021), Article 21.5.2.

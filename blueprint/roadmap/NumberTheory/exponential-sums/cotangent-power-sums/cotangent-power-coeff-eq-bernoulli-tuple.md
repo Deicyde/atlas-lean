@@ -16,4 +16,4 @@ coefficients $d_{r,j}$ of the earlier literature (Equations (13) and (15)).
 
 ## Sources
 
-- Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Theorem 2 with Equations (13) and (15) (`integers-2025-A63-thm-2`).
+- Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Theorem 2 with Equations (13) and (15).

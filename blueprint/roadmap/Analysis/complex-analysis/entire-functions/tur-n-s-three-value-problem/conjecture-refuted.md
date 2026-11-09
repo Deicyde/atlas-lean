@@ -15,4 +15,4 @@ order $2$, so it does not have bounded value distribution.
 
 ## Sources
 
-- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), arXiv:1809.07200, https://arxiv.org/abs/1809.07200. Moved from `OpenConjectures/Analysis/TuranThreeValueBoundedDistribution`.
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), arXiv:1809.07200, https://arxiv.org/abs/1809.07200.

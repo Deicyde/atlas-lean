@@ -19,4 +19,4 @@ $s$-th power of $\sum_{n=1}^{k} (an)^t X^{an}$, to which the proof applies Hermi
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 4 (`integers-2024-A12-cor-4`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 4.

@@ -11,4 +11,4 @@ $f(k) = k^6$ is a witness.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problem #477, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/477. Moved from `OpenConjectures/Combinatorics/ErdosProblem477`.
+- T. F. Bloom, Erdős Problem #477, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/477.

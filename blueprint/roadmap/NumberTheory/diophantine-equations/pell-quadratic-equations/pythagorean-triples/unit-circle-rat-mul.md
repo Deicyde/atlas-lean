@@ -10,4 +10,4 @@ $(ad / (cf + eb), (bf + ec) / (cf + eb))$, the form (14)(I) of the source.
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4, (14)(I) (`integers-2024-A5-thm-4`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4, (14)(I).

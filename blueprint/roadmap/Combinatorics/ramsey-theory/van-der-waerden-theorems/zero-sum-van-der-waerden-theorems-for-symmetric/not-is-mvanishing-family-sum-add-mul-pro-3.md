@@ -7,4 +7,4 @@ $m$-vanishing.
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 5 (`integers-2026-A25-lem-5`), quoting Theorem 3.6 of Bialostocki and Dierker.
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 5, quoting Theorem 3.6 of Bialostocki and Dierker.

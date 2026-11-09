@@ -7,4 +7,4 @@ sequence with parameter $1$, that is, the Sylvester sequence $2, 3, 7, 43, \ldot
 
 ## Sources
 
-- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 1 (`integers-2026-A28-cor-1`).
+- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 1.

@@ -16,4 +16,4 @@ and geometric convergence.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entries `Newton's method` and `rate of convergence and estimation of error` (unmapped); R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Theorem 2.6; stable ref https://en.wikipedia.org/wiki/Newton%27s_method.
+- R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Theorem 2.6; stable ref https://en.wikipedia.org/wiki/Newton%27s_method.

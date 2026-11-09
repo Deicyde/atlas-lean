@@ -16,4 +16,4 @@ $|U_{\sigma(n)}| < \sigma(|U_n|)$ is at most $C x / \log x$.
 
 ## Sources
 
-- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 1 (`fq-2024-luca09162024rev2-thm-1`).
+- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 1.

@@ -10,4 +10,4 @@ entry at $r$ by one lies in $\bar E^*$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 14 (`integers-2025-A25-lem-14`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 14.

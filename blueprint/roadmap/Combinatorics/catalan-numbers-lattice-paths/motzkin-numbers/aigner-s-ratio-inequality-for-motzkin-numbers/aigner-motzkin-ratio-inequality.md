@@ -11,5 +11,5 @@ $$
 
 ## Sources
 
-- Takashi Agoh and Horst Alzer, "Mean Value Inequalities for Motzkin Numbers", Journal of Integer Sequences 24 (2021), Article 21.6.8: Motzkin-number definition, lines 89--107, span SHA-256 `25821864e9da743abcc457fc8eb6b4552118fe71e96860b9dcfccafd67265509`; Aigner ratio inequality, lines 373--386, equation (11), span SHA-256 `c1aac7efaa47a655d6ec5700396a2da6d327480cb691be23c5438f68f4c54292`; source file SHA-256 `b4e1a1ea2e4c22d7d5ee39e09ccac420b7f09db9eeacc83d0023e1deacb051d6`. Stable identifiers: queue item `jis_grounded_4ec4cac48d863b8ffa953aa1`, record `jis_grounded_4ec4cac48d863b8ffa953aa1__aigner_motzkin_ratio_inequality`, named dependency/concept `jis_dep_ed005189a28461a49aaf0092`. The same inequality for the canonical `MetaMathlibExt.motzkinNumber` is `motzkinNumber_ratio_inequality`.
+- Takashi Agoh and Horst Alzer, "Mean Value Inequalities for Motzkin Numbers", Journal of Integer Sequences 24 (2021), Article 21.6.8: Motzkin-number definition, lines 89--107; Aigner ratio inequality, lines 373--386, equation (11). The same inequality for the canonical `MetaMathlibExt.motzkinNumber` is `motzkinNumber_ratio_inequality`.
 - <https://cs.uwaterloo.ca/journals/JIS/VOL24/Alzer/alzer8.tex>.

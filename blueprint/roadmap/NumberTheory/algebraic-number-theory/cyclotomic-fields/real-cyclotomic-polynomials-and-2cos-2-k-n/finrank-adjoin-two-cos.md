@@ -10,4 +10,4 @@ finite and positive, $2\cos(2\pi k/n)$ is algebraic over $\mathbb{Q}$ of degree 
 
 ## Sources
 
-- Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π," Journal of Integer Sequences 19 (2016), Article 16.2.8, Lehmer's theorem recalled in the Introduction (equation label lehmer), lines 83–90, https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
+- Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π," Journal of Integer Sequences 19 (2016), Article 16.2.8, Lehmer's theorem recalled in the Introduction, lines 83–90, https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex

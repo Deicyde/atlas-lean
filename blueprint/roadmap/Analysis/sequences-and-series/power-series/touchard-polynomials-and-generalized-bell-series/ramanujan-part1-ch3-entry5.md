@@ -7,4 +7,4 @@ $f(x, n) = x \sum_{k=0}^{n} \binom{n}{k} f(x, k-1)$.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 5, printed p. 48 / PDF p. 58. Proves `Wanted` entry `ramanujan_part1_ch3_entry5`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 5, printed p. 48 / PDF p. 58.

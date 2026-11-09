@@ -10,4 +10,4 @@ at $0$.
 
 ## Sources
 
-- Schork, On Generalized Stirling Numbers and Normal Ordering, Bessfirst formula; concept `meromorphic Stirling number` (`jis_sem_0210f8899dc06a2d15855412`), source `jis_source_f3006b7ef496c012bfca9644`, statement `jis_9901739ac9112adc8aea1afb`, required clause `first_bessel`. Defined independently from the meromorphic side.
+- Schork, On Generalized Stirling Numbers and Normal Ordering, Bessfirst formula. Defined independently from the meromorphic side.

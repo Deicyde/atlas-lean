@@ -6,4 +6,4 @@ positive divisors of $n$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `Classificationofprimitivenondeficientwhenkis2`), second part.
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma, second part.

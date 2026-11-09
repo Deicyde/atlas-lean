@@ -7,4 +7,4 @@ point: there is $x \in X$ with $T x = x$.
 
 ## Sources
 
-- J. Caristi, Trans. Amer. Math. Soc. 215 (1976), 241-251, DOI 10.1090/S0002-9947-1976-0394329-4. Proves `Wanted` entry `caristi_fixedPoint`.
+- J. Caristi, Trans. Amer. Math. Soc. 215 (1976), 241-251, DOI 10.1090/S0002-9947-1976-0394329-4.

@@ -9,4 +9,4 @@ $[a, b]$ and to $g$ elsewhere is $C^n$ on $[a, c]$.
 
 ## Sources
 
-- - Mathlib `docs/undergrad.yaml`, section "Single Variable Real Analysis / Differentiability", entry "piecewise $C^k$ functions" (currently missing: external URL, no Mathlib declaration). - https://en.wikipedia.org/wiki/Piecewise#Continuity_and_differentiability_of_piecewise_functions
+- https://en.wikipedia.org/wiki/Piecewise#Continuity_and_differentiability_of_piecewise_functions

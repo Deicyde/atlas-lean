@@ -21,4 +21,4 @@ $N_{17} = 277 = (544)_7 = (337)_9$ and $N_{18} = 406 = (3111)_5$.
 
 ## Sources
 
-- Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Theorem 1 (`integers-2024-A20-thm-1`).
+- Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Theorem 1.

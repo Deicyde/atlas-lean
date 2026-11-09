@@ -8,4 +8,4 @@ such $d$ and $a_0$ exist if and only if $a_{l/2}$ is odd.
 
 ## Sources
 
-- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 3 (`integers-2024-A50-thm-3`).
+- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 3.

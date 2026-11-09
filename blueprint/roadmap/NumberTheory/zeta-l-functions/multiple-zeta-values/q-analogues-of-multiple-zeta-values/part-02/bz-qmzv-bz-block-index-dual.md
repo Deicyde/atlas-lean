@@ -14,4 +14,4 @@ exchanging $x$ and $y$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7 (BZ duality, Bradley; Seki–Yamamoto) (`integers-2024-A6-thm-7`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7 (BZ duality, Bradley; Seki–Yamamoto).

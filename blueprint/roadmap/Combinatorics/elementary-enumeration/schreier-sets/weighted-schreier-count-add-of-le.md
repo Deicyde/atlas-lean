@@ -7,4 +7,4 @@ $a_{k,k+\ell} = 2F_{k+\ell}$.
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.4 (`fq-2024-chu08302024rev-thm-1.4`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.4.

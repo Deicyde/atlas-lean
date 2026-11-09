@@ -9,4 +9,4 @@ $p$ with $x < p \le x\,(1 + 46^n b/\log^n x)$.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 1 and Table 1 (`integers-2024-A34-thm-1`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 1 and Table 1.

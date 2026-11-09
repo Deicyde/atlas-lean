@@ -10,4 +10,4 @@ $$\sum_{f \text{ monic},\ \deg f \le N} (1 * 1)(f) =
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4 (`integers-2026-A80-prop-4`), case `h = 2`, `m = 1`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4, case `h = 2`, `m = 1`.

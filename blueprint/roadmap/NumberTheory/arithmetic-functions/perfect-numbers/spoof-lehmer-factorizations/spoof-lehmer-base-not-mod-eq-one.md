@@ -13,4 +13,4 @@ proof reaches $0 \equiv -1 \pmod n$, which is a contradiction only when $n \nmid
 
 ## Sources
 
-- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 4 (`integers-2026-A33-thm-4`).
+- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 4.

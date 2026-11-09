@@ -10,4 +10,4 @@ $y(x) \ne 0$ for some $x \in (0, \pi)$;
 
 ## Sources
 
-- Classical Sturm-Liouville theory. Via leanprover/lean-eval@38361be, problem `dirichlet_eigenvalues_eq_nat_sq`.
+- Classical Sturm-Liouville theory. Problem `dirichlet_eigenvalues_eq_nat_sq` of the lean-eval benchmark.

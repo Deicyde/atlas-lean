@@ -6,4 +6,4 @@ minimal tree for $V$ divided by the length of a minimum spanning tree of $V$, is
 
 ## Sources
 
-- Chung and Graham (1985), via the frozen catalogue's best unconditional published lower bound `0.824` before the conditional 2026 computer-assisted rows. Known literature result; its proof is not supplied here.
+- Chung and Graham (1985), via the catalogue's best unconditional published lower bound `0.824` before the conditional 2026 computer-assisted rows.

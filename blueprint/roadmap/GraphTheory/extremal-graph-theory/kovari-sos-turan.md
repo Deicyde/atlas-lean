@@ -12,4 +12,4 @@ $t$-th root, following Kővári–Sós–Turán (1954) and Jukna, Theorem 2.10.
 
 ## Sources
 
-- statement `kovari-sos-turan-s1` from https://en.wikipedia.org/wiki/Zarankiewicz_problem.
+- https://en.wikipedia.org/wiki/Zarankiewicz_problem.

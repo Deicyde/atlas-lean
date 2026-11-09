@@ -11,4 +11,4 @@ The points of additive order exactly $n$ are the reduced fractions $a/n$ modulo 
 
 ## Sources
 
-- D. Koukoulopoulos and J. Maynard, 'On the Duffin-Schaeffer conjecture', Ann. of Math. 192 (2020), 251-307, https://doi.org/10.4007/annals.2020.192.1.5. Via leanprover/lean-eval@38361be, problem `duffin_schaeffer`.
+- D. Koukoulopoulos and J. Maynard, 'On the Duffin-Schaeffer conjecture', Ann. of Math. 192 (2020), 251-307, https://doi.org/10.4007/annals.2020.192.1.5. Problem `duffin_schaeffer` of the lean-eval benchmark.

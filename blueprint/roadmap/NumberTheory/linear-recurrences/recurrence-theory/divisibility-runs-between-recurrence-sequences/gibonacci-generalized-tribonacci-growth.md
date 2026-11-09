@@ -16,4 +16,4 @@ threshold is the one the paper uses in its proof of Theorem 2.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 1 (`integers-2026-A122-lem-1`), with the threshold as used in the proof of Theorem 2.
+- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 1, with the threshold as used in the proof of Theorem 2.

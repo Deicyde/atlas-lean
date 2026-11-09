@@ -13,4 +13,4 @@ absolute constant in Hayman–Lingham Problem 2.35 is $A = 1$.
 
 ## Sources
 
-- A. Eremenko and J. K. Langley, Meromorphic functions of one complex variable. A survey, arXiv:0801.0692 (2008), https://arxiv.org/abs/0801.0692; Walter K. Hayman and Eleanor F. Lingham, Research Problems in Function Theory (New Edition), arXiv:1809.07200v2 (2018), https://arxiv.org/abs/1809.07200. Moved from `OpenConjectures/Analysis/ContinuumLimsupConstant`.
+- A. Eremenko and J. K. Langley, Meromorphic functions of one complex variable. A survey, arXiv:0801.0692 (2008), https://arxiv.org/abs/0801.0692; Walter K. Hayman and Eleanor F. Lingham, Research Problems in Function Theory (New Edition), arXiv:1809.07200v2 (2018), https://arxiv.org/abs/1809.07200.

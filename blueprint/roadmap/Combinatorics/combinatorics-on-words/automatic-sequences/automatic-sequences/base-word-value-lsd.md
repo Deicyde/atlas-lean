@@ -7,4 +7,4 @@ empty word has value $0$.
 
 ## Sources
 
-- Sunic selects least-significant-digit reading with tolerance of trailing high-order zeros: lines 562-567 of `cubefree.tex`, span SHA-256 `e7c8c89ab0663ef3fe4e59fcb7a16bcf952104852337ffbdab1ed42fc6c20921`.
+- Sunic selects least-significant-digit reading with tolerance of trailing high-order zeros: lines 562-567 of `cubefree.tex`.

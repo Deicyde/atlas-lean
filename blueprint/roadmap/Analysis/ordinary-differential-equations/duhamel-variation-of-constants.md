@@ -15,4 +15,4 @@ Sections 3.2 and 3.4, formula (3.48) and Theorem 3.12 / (3.97).
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential equations`, entry `method of constant variation (Duhamel's formula)` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.2; stable ref https://en.wikipedia.org/wiki/Duhamel%27s_principle.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.2; stable ref https://en.wikipedia.org/wiki/Duhamel%27s_principle.

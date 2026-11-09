@@ -17,4 +17,4 @@ occurred earlier.
 
 ## Sources
 
-- Keith R. Matthews, "Lagrange's Algorithm Revisited: Solving at^2 + btu + cu^2 = n in the Case of Negative Discriminant," Journal of Integer Sequences 17 (2014), Article 14.11.1, Theorem (label theorem:lagrange_lemma), lines 167–169, equation (label eq:01), lines 109–111, Lemma (label lemma:lagrange), lines 120–122, https://cs.uwaterloo.ca/journals/JIS/VOL17/Matthews/matt10.tex
+- Keith R. Matthews, "Lagrange's Algorithm Revisited: Solving at^2 + btu + cu^2 = n in the Case of Negative Discriminant," Journal of Integer Sequences 17 (2014), Article 14.11.1, Theorem, lines 167–169, equation, lines 109–111, Lemma, lines 120–122, https://cs.uwaterloo.ca/journals/JIS/VOL17/Matthews/matt10.tex

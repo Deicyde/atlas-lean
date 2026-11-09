@@ -12,4 +12,4 @@ decomposition", section "Existence and uniqueness".
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Numerical Analysis / Solving systems of linear inequalities / LU decomposition; L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lecture 20.
+- L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lecture 20.

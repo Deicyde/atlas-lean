@@ -17,4 +17,4 @@ statements of Corollaries 2.15--2.16.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential equations`, entries `maximal solutions` and `exit theorem of a compact subspace` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.4.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.4.

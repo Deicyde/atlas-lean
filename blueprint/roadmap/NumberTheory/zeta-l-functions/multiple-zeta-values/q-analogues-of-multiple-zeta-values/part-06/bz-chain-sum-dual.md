@@ -17,4 +17,4 @@ $a_1 \le N$.
 ## Sources
 
 - arXiv:2111.00051, Theorem 4.18; the record's formula is garbled and is read from there, and the paper's closing remark (equivalence with BZ duality) is not part of this statement.
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1 (`integers-2024-A6-thm-1`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1.

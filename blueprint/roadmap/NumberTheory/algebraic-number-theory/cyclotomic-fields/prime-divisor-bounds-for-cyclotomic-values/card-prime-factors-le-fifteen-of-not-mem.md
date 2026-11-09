@@ -10,4 +10,4 @@ criterion, which assumes it.
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Corollary 2 (`integers-2026-A95-cor-2`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Corollary 2.

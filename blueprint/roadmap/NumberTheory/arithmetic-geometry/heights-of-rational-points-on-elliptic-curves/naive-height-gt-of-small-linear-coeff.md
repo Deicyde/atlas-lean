@@ -9,4 +9,4 @@ $uv \ne 0$ satisfies $H(u, v) > \lVert p \rVert^{1/6}/1.634$.
 
 ## Sources
 
-- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Corollary 1 (`integers-2025-A66-cor-1`).
+- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Corollary 1.

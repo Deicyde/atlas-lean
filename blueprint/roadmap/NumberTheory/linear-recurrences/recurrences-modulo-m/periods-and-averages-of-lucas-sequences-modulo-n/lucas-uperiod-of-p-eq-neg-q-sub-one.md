@@ -13,4 +13,4 @@ The hypothesis $n > 1$ in the odd case is needed: for $n = 1$ one has $\rho(1) =
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.4 (`integers-2024-A36-thm-3-4`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.4.

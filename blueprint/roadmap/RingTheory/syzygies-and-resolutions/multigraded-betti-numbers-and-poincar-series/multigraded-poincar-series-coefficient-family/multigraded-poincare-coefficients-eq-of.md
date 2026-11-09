@@ -9,4 +9,4 @@ Poincaré coefficient families of $D$ and $D'$ are equal.
 
 ## Sources
 
-- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact lines 870--874. This is conditional only: it assumes the comparison and claims no existence, unconditional independence, finite support, polynomiality, rationality, or convergence.
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact lines 870--874. This is conditional only: it assumes the comparison and claims no existence, unconditional independence, finite support, polynomiality, rationality, or convergence.

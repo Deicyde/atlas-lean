@@ -10,4 +10,4 @@ $\zeta_q^{BZ}$ is extended linearly to formal sums of indices.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 5 (`integers-2024-A6-prop-5`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 5.

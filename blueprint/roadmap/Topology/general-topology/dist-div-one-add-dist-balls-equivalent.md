@@ -12,4 +12,4 @@ which omits the claim that `δ` is a metric; the metric axioms of `δ` are added
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), `benchmark/level1/ma_proofbench_l1_65.lean` at openbmb/ma-proofbench@31bab4c, with the change above.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), problem `ma_proofbench_l1_65`, with the change above.

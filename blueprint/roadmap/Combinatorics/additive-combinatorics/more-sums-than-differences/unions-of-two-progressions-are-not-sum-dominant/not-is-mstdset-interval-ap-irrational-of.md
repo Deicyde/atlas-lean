@@ -8,4 +8,4 @@ number. Then $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Sources
 
-- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Lemma 7 (`integers-2026-A58-lem-7`).
+- Manish Kumar, Mohan, and Ram Krishna Pandey, *The Union of Two Arithmetic Progressions with Different Common Differences Is Not an MSTD Set*, INTEGERS 26 (2026), Article A58, Lemma 7.

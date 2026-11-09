@@ -11,4 +11,4 @@ $\left(\frac{5}{p}\right)$ is the Jacobi symbol.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 6 (`integers-2026-A102-thm-6`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 6.

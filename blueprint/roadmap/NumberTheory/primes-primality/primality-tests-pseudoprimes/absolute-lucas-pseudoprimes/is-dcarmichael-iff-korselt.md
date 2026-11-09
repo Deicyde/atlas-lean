@@ -11,4 +11,4 @@ assumed composite; it is assumed coprime to $D$ as in the definition.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 1 (`integers-2026-A102-thm-1`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 1.

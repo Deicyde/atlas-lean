@@ -8,4 +8,4 @@ for every $f \in H^1$.
 
 ## Sources
 
-- D. J. Newman, 'The nonexistence of projections from L^1 to H^1', Proc. Amer. Math. Soc.; W. Rudin, Fourier Analysis on Groups; Yongxi Lin, Hardy Space and Hartogs Triangle, Theorem 2.8. Via leanprover/lean-eval@38361be, problem `H1_not_closedComplemented`.
+- D. J. Newman, 'The nonexistence of projections from L^1 to H^1', Proc. Amer. Math. Soc.; W. Rudin, Fourier Analysis on Groups; Yongxi Lin, Hardy Space and Hartogs Triangle, Theorem 2.8. Problem `H1_not_closedComplemented` of the lean-eval benchmark.

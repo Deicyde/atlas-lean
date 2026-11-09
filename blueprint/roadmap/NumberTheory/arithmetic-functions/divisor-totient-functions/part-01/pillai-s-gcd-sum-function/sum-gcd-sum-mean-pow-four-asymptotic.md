@@ -8,4 +8,4 @@ $$\sum_{1 \le n \le x} A(n)^4 = x P(\log x) + O_\varepsilon\left(x^{157/199 + \v
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 3 (`integers-2026-A70-thm-3`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 3.

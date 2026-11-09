@@ -10,4 +10,4 @@ $k \, H(\mu) \le \sum_{S \in C} H_S(\mu)$.
 
 ## Sources
 
-- F. R. K. Chung et al., J. Combin. Theory A 43 (1986), DOI 10.1016/0097-3165(86)90019-1. It follows from `shearer_entropy_inequality_general`; the hypothesis `hk` is unused and keeps the source's shape. Proves `Wanted` entry `shearer_entropy_inequality`.
+- F. R. K. Chung et al., J. Combin. Theory A 43 (1986), DOI 10.1016/0097-3165(86)90019-1. It follows from `shearer_entropy_inequality_general`; the hypothesis `hk` is unused and keeps the source's shape.

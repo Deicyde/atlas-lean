@@ -7,4 +7,4 @@ $2j^2 \le n$ equals $1$ if $n = k(k+1)/2$ for some integer $k \ge 0$, and $0$ ot
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 2, quoting M. Merca (via da Silva and Sakai) (`integers-2026-A60-thm-2`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 2, quoting M. Merca (via da Silva and Sakai).

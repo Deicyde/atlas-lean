@@ -7,4 +7,4 @@ $h(mn) = h(m)\, h(n)$ for all coprime $m$ and $n$.
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Corollary 1 (`integers-2026-A56-cor-1`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Corollary 1.

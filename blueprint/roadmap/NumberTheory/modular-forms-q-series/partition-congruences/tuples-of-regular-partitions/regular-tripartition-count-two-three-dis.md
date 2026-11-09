@@ -14,4 +14,4 @@ $\sum_{n \ge 0} T_2(3n + 2) q^n = 6 f_2^3 f_3^2 f_6^2 / f_1^7$.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 7, eqs. (10)–(12) (`integers-2024-A86-lem-7`).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 7, eqs. (10)–(12).

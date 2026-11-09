@@ -9,8 +9,7 @@ with $h < i$, exactly one $k$ satisfies $p_i(j) < p_h(k) < p_i(j + 1)$; and for 
 $p_i(j)$ is strictly increasing in $i$.
 
 Source JIS VOL25/Kimberling,
-<https://cs.uwaterloo.ca/journals/JIS/VOL25/Kimberling/kimber16.tex>, lines 103–219;
-concept `jis_term_9b50b937a4f55a665e8d81fb`.
+<https://cs.uwaterloo.ca/journals/JIS/VOL25/Kimberling/kimber16.tex>, lines 103–219.
 
 Source positive value `i + 1` is represented directly as the natural `i + 1`,
 and `pos i j` is the zero-based position of its `j`-th occurrence.

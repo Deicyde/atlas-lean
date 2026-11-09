@@ -16,4 +16,4 @@ The paper also assumes $c_1 > 0$; this follows from positivity, the recurrence a
 
 ## Sources
 
-- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 2 (`integers-2024-A82-lem-2`).
+- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 2.

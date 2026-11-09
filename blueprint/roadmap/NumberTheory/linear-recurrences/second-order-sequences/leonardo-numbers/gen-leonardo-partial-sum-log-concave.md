@@ -11,4 +11,4 @@ $F_n$ the Fibonacci numbers, gives the same value $-k$ at $n = 1$.
 
 ## Sources
 
-- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 2 (`integers-2024-A82-thm-2`).
+- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 2.

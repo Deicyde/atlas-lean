@@ -9,4 +9,4 @@ $\mu(X \setminus K) < \varepsilon$ such that $f$ is continuous on $K$.
 
 ## Sources
 
-- G. B. Folland, Real Analysis, 2nd ed., Lusin's theorem. Proves `Wanted` entry `lusin`.
+- G. B. Folland, Real Analysis, 2nd ed., Lusin's theorem.

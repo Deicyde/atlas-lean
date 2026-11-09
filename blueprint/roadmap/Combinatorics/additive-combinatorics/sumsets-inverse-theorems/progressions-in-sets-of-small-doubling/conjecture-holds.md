@@ -13,4 +13,4 @@ $\gg_{k,C} |A|^2$ $k$-term progressions. The pairs with $d = 0$ counted here cov
 
 ## Sources
 
-- AIM workshop problem list, Additive combinatorics (additivecomb.pdf), Problem 1.5 (N. Katz) and remark by B. Green, https://aimath.org/WWN/additivecomb/additivecomb.pdf. Moved from `OpenConjectures/Combinatorics/KatzSmallDoublingProgressions`.
+- AIM workshop problem list, Additive combinatorics (additivecomb.pdf), Problem 1.5 (N. Katz) and remark by B. Green, https://aimath.org/WWN/additivecomb/additivecomb.pdf.

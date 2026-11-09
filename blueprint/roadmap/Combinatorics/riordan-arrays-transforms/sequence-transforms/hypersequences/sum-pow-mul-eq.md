@@ -17,4 +17,4 @@ This is the case $r = 0$ of the corresponding identity for $\sum_{k=0}^{n} k^\el
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 3 (`integers-2024-A70-cor-3`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 3.

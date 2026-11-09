@@ -9,4 +9,4 @@ three circles have a common point.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Miquel%27s_theorem (statement miquel-theorem-s1). Proves `Wanted` entry `miquel_theorem`.
+- https://en.wikipedia.org/wiki/Miquel%27s_theorem.

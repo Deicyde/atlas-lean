@@ -7,4 +7,4 @@ $kn + f(kn, kn) \le k^2 n + f(n, k^2 n)$.
 
 ## Sources
 
-- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Lemma 2 (`integers-2026-A7-lem-2`).
+- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Lemma 2.

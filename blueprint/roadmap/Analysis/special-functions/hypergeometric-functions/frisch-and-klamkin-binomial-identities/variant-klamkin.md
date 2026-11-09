@@ -18,4 +18,4 @@ specialization of Gauss's formula (Abramowitz-Stegun 15.1.20), then simplify by 
 
 ## Sources
 
-- Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, Theorem (label theorem-variant-Klamkin), equation (Identity-variant-Klamkin), lines 210–218, https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex
+- Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, Theorem, equation (Identity-variant-Klamkin), lines 210–218, https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex

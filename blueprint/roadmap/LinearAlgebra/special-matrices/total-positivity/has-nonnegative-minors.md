@@ -9,4 +9,4 @@ $k = 0$, the empty minor, is included.
 
 ## Sources
 
-- Ming-Jian Ding and Jiang Zeng, "Some New Results on the Minuscule Polynomials of Type A", Journal of Integer Sequences 28 (2025), Article 25.1.2, "Total positivity of the coefficient matrix" section (label `sec+TP`), definition at lines 638–639 (used by the Schoenberg–Edrei lemma, label `lem+SE+PF`, line 654), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Zeng/zeng26.tex>.
+- Ming-Jian Ding and Jiang Zeng, "Some New Results on the Minuscule Polynomials of Type A", Journal of Integer Sequences 28 (2025), Article 25.1.2, "Total positivity of the coefficient matrix" section, definition at lines 638–639 (used by the Schoenberg–Edrei lemma, line 654), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Zeng/zeng26.tex>.

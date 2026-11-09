@@ -12,4 +12,4 @@ The carry $r_{i+1}$ here is the source's $r_i$.
 
 ## Sources
 
-- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, subsection `subsec:eqtns`, lines 128–154 (the column equations for `kN = Reverse_g(N)`, Young's bound `r_i ≤ k - 1`, and equation `eq:rmdig`), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>. It follows from `young_reverse_multiple_carry_path_iff_general`; the hypotheses `hfirst` and `hlast` (and `hn`, which only serves to state them) are unused and keep the source's shape. Proves `Wanted` entry `young_reverse_multiple_carry_path_iff`.
+- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, subsection `subsec:eqtns`, lines 128–154 (the column equations for `kN = Reverse_g(N)`, Young's bound `r_i ≤ k - 1`, and equation `eq:rmdig`), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>. It follows from `young_reverse_multiple_carry_path_iff_general`; the hypotheses `hfirst` and `hlast` (and `hn`, which only serves to state them) are unused and keep the source's shape.

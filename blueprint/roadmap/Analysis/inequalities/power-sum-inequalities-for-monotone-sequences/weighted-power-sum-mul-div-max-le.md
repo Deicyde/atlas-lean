@@ -7,4 +7,4 @@ $S^{[r]} S^{[s]} / \max(x_N^{r/2} S^{[s/2]}, x_N^{s/2} S^{[r/2]}) \le S^{[(r+s)/
 
 ## Sources
 
-- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4 (`integers-2026-A101-thm-4`).
+- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4.

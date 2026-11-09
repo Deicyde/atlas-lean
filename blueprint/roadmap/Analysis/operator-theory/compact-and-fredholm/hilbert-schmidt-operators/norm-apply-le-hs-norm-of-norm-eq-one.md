@@ -9,4 +9,4 @@ Then $\|Tx\| \le \|T\|_{\mathrm{HS}}$ for every $x \in H$ with $\|x\| = 1$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Special classes of linear operators), `benchmark/level2/ma_proofbench_l2_68.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Special classes of linear operators), problem `ma_proofbench_l2_68`.

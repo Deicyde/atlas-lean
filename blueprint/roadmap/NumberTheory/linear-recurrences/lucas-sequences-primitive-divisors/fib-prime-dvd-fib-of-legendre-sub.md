@@ -8,4 +8,4 @@ $F_{p - \left(\frac{5}{p}\right)}$.
 
 ## Sources
 
-- Phakhinkon Phunphayap and Prapanpong Pongsriiam, "Explicit Formulas for the p-adic Valuations of Fibonomial Coefficients," Journal of Integer Sequences 21 (2018), Article 18.3.1, Lemma (label lemma2.2), item (i), lines 166–169, https://cs.uwaterloo.ca/journals/JIS/VOL21/Pongsriiam/pong12.tex
+- Phakhinkon Phunphayap and Prapanpong Pongsriiam, "Explicit Formulas for the p-adic Valuations of Fibonomial Coefficients," Journal of Integer Sequences 21 (2018), Article 18.3.1, Lemma, item (i), lines 166–169, https://cs.uwaterloo.ca/journals/JIS/VOL21/Pongsriiam/pong12.tex

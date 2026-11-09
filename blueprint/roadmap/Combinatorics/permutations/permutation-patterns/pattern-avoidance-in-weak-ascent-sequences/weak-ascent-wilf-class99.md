@@ -9,4 +9,4 @@ $|\mathrm{WA}_n(\{011, 100, 102, 201\})| = |\mathrm{WA}_n(\{011, 100, 120, 201\}
 ## Sources
 
 - the extracted record drops the `w` marker on `∼`; the weak-ascent reading follows from the class number (the paper has 74 A-classes, and its class table numbered past 74 is the WA table).
-- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 5 (`integers-2025-A80-thm-5`).
+- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 5.

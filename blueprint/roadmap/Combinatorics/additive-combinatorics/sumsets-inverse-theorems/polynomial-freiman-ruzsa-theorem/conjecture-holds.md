@@ -13,4 +13,4 @@ cosets of a subspace of size at most $|A|$; the densest of these cosets gives th
 
 ## Sources
 
-- W. T. Gowers, B. Green, F. Manners, T. Tao, On a conjecture of Marton, arXiv:2311.05762 (November 2023), https://arxiv.org/abs/2311.05762. Moved from `OpenConjectures/Combinatorics/PolynomialFreimanRuzsaBinary`.
+- W. T. Gowers, B. Green, F. Manners, T. Tao, On a conjecture of Marton, arXiv:2311.05762 (November 2023), https://arxiv.org/abs/2311.05762.

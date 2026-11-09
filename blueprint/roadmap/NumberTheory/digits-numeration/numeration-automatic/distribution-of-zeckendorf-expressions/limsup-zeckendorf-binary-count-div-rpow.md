@@ -7,4 +7,4 @@ $\limsup_{x \to \infty} z(x) / x^{\gamma} = 3^{\gamma} (\varphi + 2) / 5$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1, Equation (1) (`integers-2025-A25-thm-1`; arXiv:2308.12872v1, Section 1).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1, Equation (1) (arXiv:2308.12872v1, Section 1).

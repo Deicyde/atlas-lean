@@ -7,4 +7,4 @@ of $\{0, 1\}^{\mathbb{N}}$.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Corollary 2 (`integers-2025-A91-cor-2`).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Corollary 2.

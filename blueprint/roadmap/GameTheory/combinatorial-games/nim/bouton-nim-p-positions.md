@@ -14,4 +14,4 @@ N-positions.
 
 ## Sources
 
-- Tanya Khovanova and Joshua Xiong, "Nim Fractals", Journal of Integer Sequences 17 (2014), theorem lines 155–159, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex complete-source SHA-256 `6f8be9d461ff98b5a7c878830eb169e69ba8dd7540948d9149527fdb5ca7783a`, normalized theorem lines 157–159 SHA-256 `d0cc29c58096c58f4d34f2b9e3d199a1316f13e98b5170e9c316c5385ce6e43f`. Proves `Wanted` entry `bouton_nim_p_positions`.
+- Tanya Khovanova and Joshua Xiong, "Nim Fractals", Journal of Integer Sequences 17 (2014), theorem lines 155–159, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex.

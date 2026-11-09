@@ -13,4 +13,4 @@ $$\|u\|_{L^p(\Omega_1)} \le C \|\phi \, |\nabla u|\|_{L^p(\Omega_1)} + C \|u\|_{
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), `benchmark/level2/ma_proofbench_l2_77.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_77`.

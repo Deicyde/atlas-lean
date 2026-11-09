@@ -17,4 +17,4 @@ The initial values are $R_0 = 1$ and $R_1 = a^2$.
 
 ## Sources
 
-- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13 (`fq-2024-belaggoun01132024-lem-3.13`).
+- Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13.

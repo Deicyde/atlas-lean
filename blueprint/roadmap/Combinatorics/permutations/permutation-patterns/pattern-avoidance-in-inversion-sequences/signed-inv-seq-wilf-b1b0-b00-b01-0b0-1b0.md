@@ -8,4 +8,4 @@ $|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}0, \bar{0}1, 0\bar{0}, 1\bar{0}\})| =
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 15 (`integers-2026-A74-thm-15`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 15.

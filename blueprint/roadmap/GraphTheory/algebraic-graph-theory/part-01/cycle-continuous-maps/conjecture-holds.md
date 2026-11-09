@@ -11,4 +11,4 @@ antichain question positively.
 
 ## Sources
 
-- Robert Samal, Cycle-continuous mappings - order structure, Journal of Graph Theory 85 (2017) 56-73, arXiv:1212.6909, https://arxiv.org/abs/1212.6909. Moved from `OpenConjectures/GraphTheory/CycleContinuousAntichain`.
+- Robert Samal, Cycle-continuous mappings - order structure, Journal of Graph Theory 85 (2017) 56-73, arXiv:1212.6909, https://arxiv.org/abs/1212.6909.

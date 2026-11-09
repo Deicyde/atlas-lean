@@ -9,4 +9,4 @@ not part of this statement.
 
 ## Sources
 
-- Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 1 (`integers-2026-A59-thm-1`).
+- Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 1.

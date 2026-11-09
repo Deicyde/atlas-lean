@@ -21,4 +21,4 @@ $$\sum_{k=0}^{n} (-1)^{n-k} S(n,k)\, L_{k,r}(x) =
 
 ## Sources
 
-- Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem (label `eqnpair`), equations (labels `eqnpaire1`) and (`eqnpaire2`), lines 330–339, https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.tex
+- Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem, equations, lines 330–339, https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.tex

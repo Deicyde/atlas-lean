@@ -9,4 +9,4 @@ Such an $m$ is unique, since the numbers $m(3m+1)/2$ with $m$ an integer are dis
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 3 (`integers-2026-A60-thm-3`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 3.

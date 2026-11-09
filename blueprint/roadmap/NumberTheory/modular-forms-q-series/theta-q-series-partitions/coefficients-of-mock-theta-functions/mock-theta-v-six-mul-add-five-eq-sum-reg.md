@@ -9,4 +9,4 @@ $P_v(6n+5) = 3 b_6^3(n) + 3 \sum_{m \ge 1,\ 2m(3m+1) \le n} (-1)^m b_6^3\bigl(n 
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 4 (`integers-2025-A72-thm-4`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 4.

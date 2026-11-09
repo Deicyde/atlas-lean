@@ -25,4 +25,4 @@ The paper allows $\alpha \in \mathbb{Z}_p$; only integers $\alpha$ are covered h
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 13 (`integers-2026-A32-thm-13`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 13.

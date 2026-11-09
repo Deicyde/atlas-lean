@@ -13,9 +13,6 @@ Of the hypothesis $q > 6N$ only $q > 0$ is used. The hypotheses that $N > 0$, th
 irrational and that $q$ is a convergent denominator, and the positivity of $u$, $v$ and $w$, are
 not needed: the statement follows from the version for an arbitrary positive denominator.
 
-Concept `jis_rank27_baker_davenport_one_sided`, semantic id
-`jis_grounded_3d649f47290c78b9a73677c9`.
-
 ## Sources
 
-- Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex>, exact source span: Lemma `lem1`, lines 200–211. Source-file SHA-256 `ef293eb1fb3bec15a47898830b7ed2ea8c38ca4c491750d5a197cb16e00125fc`; exact-span SHA-256 `e8df3e4bbefc3b0825b721bcff7f5d918b3006429e63ee4b1d902ffce1f606d7`.
+- Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex>, Lemma, lines 200–211.

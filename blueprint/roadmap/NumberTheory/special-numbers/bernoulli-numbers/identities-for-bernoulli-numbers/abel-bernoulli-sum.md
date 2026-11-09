@@ -11,4 +11,4 @@ This is the first of the source's two Abel–Bernoulli sums.
 
 ## Sources
 
-- Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities," Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition [Abel-Bernoulli sums], equation (5.11), lines 790–794, https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex Proves `Wanted` entry `abel_bernoulli_sum`.
+- Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities," Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition [Abel-Bernoulli sums], equation (5.11), lines 790–794, https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex

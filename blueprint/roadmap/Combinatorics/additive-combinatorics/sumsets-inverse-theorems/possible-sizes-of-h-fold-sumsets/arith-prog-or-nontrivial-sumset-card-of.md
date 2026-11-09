@@ -13,4 +13,4 @@ $j \ge 1$. The paper takes $h > 1$; the second alternative is vacuous for $h \le
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 3 (`integers-2026-A31-thm-3`; arXiv:2505.07679v2, Theorem 3.5).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 3 (arXiv:2505.07679v2, Theorem 3.5).

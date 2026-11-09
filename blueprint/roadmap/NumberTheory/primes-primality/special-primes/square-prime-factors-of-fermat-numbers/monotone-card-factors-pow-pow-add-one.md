@@ -10,4 +10,4 @@ $\varphi_n(2, 2)$ and its list of values of $\varphi_n(2, 2)$ are not stated her
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 1 (`integers-2026-A77-cor-1`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 1.

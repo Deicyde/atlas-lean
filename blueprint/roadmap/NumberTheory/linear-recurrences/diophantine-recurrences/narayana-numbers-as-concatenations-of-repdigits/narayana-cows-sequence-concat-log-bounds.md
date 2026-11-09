@@ -10,4 +10,4 @@ $a_2$, then $(l + m - 1) \log b + \log \alpha < n \log \alpha < (l + m) \log b +
 
 ## Sources
 
-- Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Lemma 1 (`integers-2024-A20-lem-1`).
+- Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Lemma 1.

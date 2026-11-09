@@ -6,4 +6,4 @@ $1 \le s \le t \le m$ such that $|\{s, s + 1, \dots, t\} \cap X_i|$ is even for 
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.3 (`integers-2024-A38-lem-3-3`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.3.

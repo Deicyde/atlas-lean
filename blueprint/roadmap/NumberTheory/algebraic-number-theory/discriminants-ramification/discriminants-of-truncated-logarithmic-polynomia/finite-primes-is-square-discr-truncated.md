@@ -7,4 +7,4 @@ $mq \equiv 1 \pmod 4$ such that the discriminant of $F_{mq}$ is a square in $\ma
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 3 (`integers-2025-A39-thm-3`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 3.

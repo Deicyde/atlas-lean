@@ -12,4 +12,4 @@ Then $f_{i,j}(x) \le K$ for every real $x$ with $0 \le x \le x_1$.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.6 (`integers-2025-A112-lem-3-6`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.6.

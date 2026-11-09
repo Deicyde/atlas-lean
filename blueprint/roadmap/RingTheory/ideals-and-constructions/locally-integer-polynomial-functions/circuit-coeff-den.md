@@ -10,4 +10,4 @@ $a, b \in X$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 7 (`integers-2025-A41-lem-7`), with the circuit definition preceding it.
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 7, with the circuit definition preceding it.

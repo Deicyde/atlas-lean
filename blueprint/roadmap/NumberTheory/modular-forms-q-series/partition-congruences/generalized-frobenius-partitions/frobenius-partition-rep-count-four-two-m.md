@@ -6,4 +6,4 @@ positive integer $N$ not divisible by $5$, $\varphi_4(2N + 1) \equiv 0 \pmod 2$.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 3 (`integers-2025-A17-thm-3`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 3.

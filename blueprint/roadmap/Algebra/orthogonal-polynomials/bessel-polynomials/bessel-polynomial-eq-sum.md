@@ -8,4 +8,4 @@ This is the defining formula, so the identity holds by definition.
 
 ## Sources
 
-- Schork, lines 285-288 (concept `jis_sem_0d5596f0982681bcb579a894`).
+- Schork, lines 285-288.

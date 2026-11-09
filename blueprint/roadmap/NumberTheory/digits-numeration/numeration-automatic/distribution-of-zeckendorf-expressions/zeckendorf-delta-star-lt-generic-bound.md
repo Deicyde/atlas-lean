@@ -24,4 +24,4 @@ $16 \omega^4 = 2.33436\ldots$, while $(\omega / \tilde\omega)^2 / \gamma = 2.200
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 17 (`integers-2025-A25-lem-17`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 17.

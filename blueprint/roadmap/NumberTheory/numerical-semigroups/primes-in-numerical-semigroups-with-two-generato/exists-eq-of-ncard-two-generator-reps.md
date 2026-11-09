@@ -10,4 +10,4 @@ paper's standing assumption $1 < c < d$ is weakened to $0 < c$, $0 < d$.
 
 ## Sources
 
-- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 2 (`integers-2025-A51-lem-2`).
+- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 2.

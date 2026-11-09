@@ -8,4 +8,4 @@ then the restriction of $f$ to $U_1 \cup U_2$ lies in $\mathrm{LIP}(U_1 \cup U_2
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 6 (`integers-2025-A41-cor-6`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 6.

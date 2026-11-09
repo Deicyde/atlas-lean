@@ -10,4 +10,4 @@ factors in opposite orders, which agree because $R$ is commutative.
 
 ## Sources
 
-- concept `jis_term_29ecdc440e7c28d8af6754c5`; JIS VOL18/Wojcik, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Wojcik/wojcik6.tex>, lines 276–280, SHA-256 `2a3a1d485868744d2d339650be1fbd2f6ec8b1c45821c250f6828c973d15eee8`; JIS VOL8/Huang, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>, lines 176–179, SHA-256 `e280997f941eb46d98b411cb2d2ff593d284837371b6565cd4efdb1cdaabffdb`.
+- JIS VOL18/Wojcik, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Wojcik/wojcik6.tex>, lines 276–280; JIS VOL8/Huang, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>, lines 176–179.

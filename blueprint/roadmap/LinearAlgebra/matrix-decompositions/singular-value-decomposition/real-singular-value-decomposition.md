@@ -13,4 +13,4 @@ matrix form that follows it (Section 7E).
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Numerical Analysis / Iterative methods / singular value decomposition; G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins University Press (2013), Theorem 2.4.1.
+- G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins University Press (2013), Theorem 2.4.1.

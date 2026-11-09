@@ -14,4 +14,4 @@ univalent function, hence for the real-coefficient and close-to-convex subclasse
 
 ## Sources
 
-- de Branges, L., A proof of the Bieberbach conjecture, Acta Math. 154 (1985), 137-152, https://doi.org/10.1007/BF02392821. Moved from `OpenConjectures/Analysis/HaymanRobertson39`.
+- de Branges, L., A proof of the Bieberbach conjecture, Acta Math. 154 (1985), 137-152, https://doi.org/10.1007/BF02392821.

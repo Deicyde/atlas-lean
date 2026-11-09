@@ -14,4 +14,4 @@ $x \equiv a \pmod m$ in $C_p(a_2)$, form a covering system.
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 4 (`integers-2026-A38-lem-4`), from the author's thesis, Lemma 2.13.
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 4, from the author's thesis, Lemma 2.13.

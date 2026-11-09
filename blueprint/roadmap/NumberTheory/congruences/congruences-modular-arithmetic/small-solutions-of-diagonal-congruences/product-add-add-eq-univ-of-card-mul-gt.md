@@ -7,4 +7,4 @@ $d \in D$, $a_2 \in A_2$ and $a_3 \in A_3$; that is, $A_1 D + A_2 + A_3 = \mathb
 
 ## Sources
 
-- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 3 (`integers-2026-A14-lem-3`), quoting Lemma 8.3 of their reference [5] (a consequence of Sárközy's Corollary A).
+- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 3, quoting Lemma 8.3 of their reference [5] (a consequence of Sárközy's Corollary A).

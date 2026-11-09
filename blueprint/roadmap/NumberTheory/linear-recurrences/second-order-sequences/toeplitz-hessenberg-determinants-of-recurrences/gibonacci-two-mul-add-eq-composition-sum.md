@@ -17,4 +17,4 @@ the source's cases (i) $m = 0$, $z = 2y$, (ii) $m = 1$, $y = z$, (iii) $m = 2$, 
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 6 (`integers-2025-A97-cor-6`).
+- Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 6.

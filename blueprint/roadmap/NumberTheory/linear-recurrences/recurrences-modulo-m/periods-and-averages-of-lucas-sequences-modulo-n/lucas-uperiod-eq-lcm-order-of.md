@@ -10,4 +10,4 @@ valuations of $h$ and $\rho(m)$ differ, and $\pi(m) = H$ when they are equal and
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.1 (`integers-2024-A36-thm-3-1`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.1.

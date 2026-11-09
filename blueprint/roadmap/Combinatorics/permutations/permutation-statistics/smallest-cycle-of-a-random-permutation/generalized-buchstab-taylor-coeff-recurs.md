@@ -26,4 +26,4 @@ $c_{2,0} = 1 + K \sum_{i \ge 1} 1/(i\, 2^i)$, which omits the sign $(-1)^{i-1}$.
 
 ## Sources
 
-- Claude Gravel and Daniel Panario, *Evaluating the Generalized Buchstab Function and Revisiting the Variance of the Distribution of the Smallest Components of Combinatorial Objects*, INTEGERS 24 (2024), Article A7, Theorem 4 (`integers-2024-A7-thm-4`).
+- Claude Gravel and Daniel Panario, *Evaluating the Generalized Buchstab Function and Revisiting the Variance of the Distribution of the Smallest Components of Combinatorial Objects*, INTEGERS 24 (2024), Article A7, Theorem 4.

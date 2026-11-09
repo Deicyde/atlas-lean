@@ -7,4 +7,4 @@ $\mathrm{PD}_2(6n + 5)$ are all congruent to $0$ modulo $4$.
 
 ## Sources
 
-- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 1 (`integers-2024-A16-cor-1`).
+- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 1.
