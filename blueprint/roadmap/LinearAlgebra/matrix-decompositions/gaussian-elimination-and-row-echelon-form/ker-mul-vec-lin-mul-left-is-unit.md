@@ -1,7 +1,7 @@
 # Invertible row operations preserve the null space
 
 Let $K$ be a field, let $m$ and $n$ be
-finite linearly ordered sets, let $A$ be an $m \times n$ matrix over $K$, and let $P$ be an
+finite sets, let $A$ be an $m \times n$ matrix over $K$, and let $P$ be an
 invertible $m \times m$ matrix over $K$. Then the linear maps $x \mapsto PAx$ and $x \mapsto Ax$
 on $K^n$ have the same kernel; that is, the homogeneous systems $PAx = 0$ and $Ax = 0$ have the
 same solutions.
