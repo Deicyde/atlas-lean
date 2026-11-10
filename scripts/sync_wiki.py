@@ -254,10 +254,12 @@ def apply_lean_facts(index, dependencies: dict) -> tuple[dict[str, int], list[st
             articles[path] = annotation
             counts["articles"] += 1
     by_name = {lean_name(a): path for path, a in articles.items() if lean_name(a)}
+    # declarations marks a page it wrote with {"from": "docstring"} under OWN; only a page whose declaration the
+    # index can't see also keeps its module and name there.
     by_short = {
         (a["extensions"][OWN]["module"], a["extensions"][OWN]["name"]): path
         for path, a in articles.items()
-        if OWN in a.get("extensions", {})
+        if {"module", "name"} <= a.get("extensions", {}).get(OWN, {}).keys()
     }
 
     def find(name: str) -> Path | None:
