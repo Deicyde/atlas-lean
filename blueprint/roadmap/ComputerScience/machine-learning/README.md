@@ -7,3 +7,4 @@ Mathematical theory of learning from data, including the probabilistic modelling
 - [Unsupervised learning and matrix factorization](unsupervised-learning/README.md)
 - [Probabilistic graphical models](probabilistic-graphical-models/README.md)
 - [Bayesian inference and sampling](bayesian-inference-and-sampling/README.md)
+- [Diffusion and flow-based generative models](diffusion-and-flow-generative-models/README.md)
