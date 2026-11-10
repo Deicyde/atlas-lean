@@ -1,6 +1,6 @@
 # Hypothesis testing
 
-Tests and their validity and power: Neyman–Pearson, likelihood-ratio, score and Wald tests, monotone likelihood ratio, exact conditional tests (Fisher, Hardy–Weinberg), rank tests and ROC area (Mann–Whitney), permutation p-values, multiple testing (Bonferroni, Holm, closed testing, Benjamini–Hochberg, false discovery rates), and meta-analysis and heterogeneity statistics.
+Tests and their validity and power: Neyman–Pearson, likelihood-ratio, score and Wald tests, monotone likelihood ratio, exact conditional tests (Fisher, Hardy–Weinberg), rank tests and ROC area (Mann–Whitney), permutation p-values, multiple testing (familywise error control by Bonferroni, Holm and closed testing; false discovery rate control by Benjamini–Hochberg; and the two-groups model with local and tail-area false discovery rates, Storey's positive false discovery rate and q-values), and meta-analysis and heterogeneity statistics.
 
 - [Exact test for Hardy–Weinberg equilibrium](exact-test-for-hardy-weinberg-equilibrium/README.md)
 - [Fisher's exact test](fisher-s-exact-test/README.md)
