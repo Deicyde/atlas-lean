@@ -196,6 +196,38 @@ class LeanFacts(Vault):
         self.assertEqual(row, {"subject": [{"type": "generic", "uri": "../roadmap/Algebra/gone.md"}], "id": "af_1"})
         self.assertEqual((wiki.ROADMAP / "Algebra" / "gone.md").read_text(), "# Gone\n\nRemoved upstream.\n")
 
+    def test_pages_the_declarations_sync_wrote_get_their_facts(self) -> None:
+        # declarations marks its pages with {"from": "docstring"}, and with a module and name only when the index
+        # can't see the declaration; lean-facts must read both shapes.
+        source = self.tmp / "Ext" / "Groups.lean"
+        source.parent.mkdir(parents=True)
+        source.write_text("theorem order_pos : True := trivial\ntheorem_wanted conjecture : True\n")
+        self.page("Algebra/order-pos.md", "# Order is positive\n\nIt is.\n")
+        self.page("Algebra/conjecture.md", "# Conjecture\n\nOpen.\n")
+        self.annotate([
+            self.about("Algebra/order-pos.md", object=[{"location": {"declaration": "Ext.order_pos"}}],
+                       extensions={"org.atlas-wiki": {"from": "docstring"}}),
+            self.about("Algebra/conjecture.md",
+                       extensions={"org.atlas-wiki": {"from": "docstring", "module": "Ext.Groups", "name": "conjecture"}}),
+        ])
+        declarations = {"Ext.order_pos": SimpleNamespace(keyword="theorem", path=Path("Ext/Groups.lean"))}
+        dependencies = {
+            "Ext.order_pos": {"module": "Ext.Groups", "statement": [], "proof": ["conjecture"]},
+            "conjecture": {"module": "Ext.Groups", "statement": [], "proof": []},
+        }
+        counts, unlinked = sync.apply_lean_facts(SimpleNamespace(declarations=declarations), dependencies)
+        self.assertEqual(counts, {"articles": 2, "unresolved": 0, "edges": 1})
+        self.assertEqual(unlinked, [])
+        rows = {sync.subject_path(row).name: row for row in sync.read_annotations()[sync.LINKS / "Algebra.jsonl"]}
+        self.assertEqual((rows["order-pos.md"]["kind"], rows["order-pos.md"]["status"]), ("theorem", "formalized"))
+        self.assertEqual(rows["order-pos.md"]["extensions"], {"org.atlas-wiki": {"from": "docstring"}})
+        self.assertEqual(rows["conjecture.md"]["kind"], "theorem")
+        self.assertEqual(
+            (wiki.ROADMAP / "Algebra" / "order-pos.md").read_text(),
+            "# Order is positive\n\nIt is.\n\n## Depends on\n\nThis node has no prerequisites.\n\n"
+            "## Proof depends on\n\n- [Conjecture](conjecture.md)\n",
+        )
+
 
 def declaration(name: str | None, short: str, title: str, text: str, module=("Ext", "Groups")) -> wiki.Target:
     return wiki.Target(book="Ext", idx=0, title=title, slug=wiki.slugify(short), location="Algebra", description=text,
