@@ -25914,6 +25914,8 @@
 "MathlibExt.Probability.Statistics.MultipleTesting.measure_exists_le_div_le": "8daeb58a79648e48",
 "MathlibExt.Probability.Statistics.MultipleTesting.measure_exists_mem_le_le": "086e060feb595996",
 "MathlibExt.Probability.Statistics.MultipleTesting.measure_holm_familywiseError_le": "1fbddfd30abdea9e",
+"MathlibExt.Probability.Statistics.MultipleTesting.mem_bhRejections_iff_bhIndex_eq_update": "4cfb76fce440e0ce",
+"MathlibExt.Probability.Statistics.MultipleTesting.mem_bhRejections_iff_le_bhIndex_update": "86496ff1326c6c43",
 "MathlibExt.Probability.Statistics.MultipleTesting.mem_closedRejections": "b137c0457363618a",
 "MathlibExt.Probability.Statistics.MultipleTesting.mem_holmRejections_of_le": "3ae37560b0c34929",
 "MathlibExt.Probability.Statistics.MultipleTesting.monteCarloPermutationPValue": "9f8bccc0081b6ae2",
