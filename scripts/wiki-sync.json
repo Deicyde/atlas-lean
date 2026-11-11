@@ -37980,6 +37980,7 @@
 "MetaMathlibExt.sum_moebius_natDegree_kappaPow_isBigO": "4a8959c91bcfd735",
 "MetaMathlibExt.sum_mul_additive_character": "075df5ce2db03eb3",
 "MetaMathlibExt.sum_mul_bubbleCount": "7173bb0695b1ea18",
+"MetaMathlibExt.sum_mul_diag_sub_dotProduct_mulVec_eq": "2a5fc0142d9e0615",
 "MetaMathlibExt.sum_mul_dirichletConvolution_eq_sum_moebius": "5fab604b47feea0a",
 "MetaMathlibExt.sum_mul_eq_hypersequence_one_mul_add_sum": "d1ead4973e341acf",
 "MetaMathlibExt.sum_mul_kPermFixedPointCount": "94c7373c3b03640a",
