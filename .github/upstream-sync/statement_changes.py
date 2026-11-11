@@ -12,6 +12,8 @@ and compares, per declaration:
   that upstream defines is a change, since the article should then state the definition;
 - an `alias`'s target. A linked declaration that becomes an alias was renamed upstream with its
   old name kept, so the wiki still builds, but its article should move to the new name;
+- a `@[deprecated]` attribute it gains. Upstream deletes deprecated declarations later, so their
+  articles should move to the replacement first;
 - an `omit ... in`, `include ... in` or `variable ... in` in front of it, which changes its
   hypotheses;
 - the `variable` lines and notation in scope, reported apart, because a declaration uses only
@@ -19,8 +21,8 @@ and compares, per declaration:
 
 A change that only adds or drops decidability instances (`[DecidableEq ι]` and the like) is
 listed apart too: it changes no mathematics. Declarations are matched to articles through the
-vault's blueprint/links files. Not compared: `open` lines, notation from other files, and the
-definitions a statement uses.
+vault's blueprint/links files. Not compared: `open` lines, notation from other files, the
+definitions a statement uses, and `attribute [deprecated] f` commands, which ATLAS doesn't use.
 
 Usage: statement_changes.py OLD NEW [--repo DIR] [--links DIR] [--markdown FILE] [--json FILE]
 """
@@ -125,6 +127,14 @@ def skip_attributes_and_modifiers(text: str) -> str:
             rest = word[1] if len(word) > 1 else ""
             continue
         return rest
+
+
+def deprecation(cmd: str) -> str | None:
+    """What a `@[deprecated ...]` in front of a declaration points to: the replacement's name, the
+    message in its quotes, or "" when it gives neither. None when the declaration isn't deprecated."""
+    head = cmd[:len(cmd) - len(skip_attributes_and_modifiers(cmd))]
+    m = re.search(r'[\[,]\s*deprecated\b(?:\s+("[^"]*"|[^\s(,\]+]+))?', head)
+    return None if m is None else m.group(1) or ""
 
 
 def keyword(text: str) -> str:
@@ -250,6 +260,7 @@ class Decl:
     text: str  # the header for theorems, the whole text for definitions
     context: str  # the `variable` lines and notation in scope
     signature: str = ""  # the text after the name, to tell a rename
+    deprecated: str | None = None  # what deprecation() says
 
     @property
     def statement(self) -> str:
@@ -326,7 +337,7 @@ def declarations(source: str, path: str) -> dict[str, Decl]:
                     if name and name != "_":
                         full = full_name(name, scopes)
                         found.setdefault(full, Decl(full, kw, path, " ".join(pending), squash(rest),
-                                                    context, m.group(4).lstrip("@")))
+                                                    context, m.group(4).lstrip("@"), deprecation(cmd)))
         elif kw in KINDS:
             body = skip_attributes_and_modifiers(cmd)[len(kw):]
             # `class inductive Foo` and `class abbrev Foo` declare Foo.
@@ -339,7 +350,7 @@ def declarations(source: str, path: str) -> dict[str, Decl]:
                 full = full_name(name, scopes)
                 context = " ".join(line for s in scopes for line in s[2])
                 found.setdefault(full, Decl(full, kw, path, " ".join(pending), text, context,
-                                            squash(statement(after))))
+                                            squash(statement(after)), deprecation(cmd)))
         pending = []
     return found
 
@@ -505,7 +516,7 @@ def alias_target(alias: Decl, decls: dict[str, Decl]) -> str:
 
 
 def compare(old: dict[str, Decl], new: dict[str, Decl], articles: Articles) -> dict:
-    changed, variables, decidable, removed, proved, aliased = [], [], [], [], [], []
+    changed, variables, decidable, removed, proved, aliased, deprecated = [], [], [], [], [], [], []
     unlinked_changed = 0
     for name in sorted(set(old) & set(new)):
         a, b = old[name], new[name]
@@ -515,6 +526,11 @@ def compare(old: dict[str, Decl], new: dict[str, Decl], articles: Articles) -> d
                 aliased.append({"name": name, "kind": a.kind, "file": b.path, "linked": linked,
                                 "articles": paths, "alias_of": alias_target(b, new)})
             continue
+        if b.deprecated is not None and a.deprecated is None:
+            linked, paths = articles.find(name)
+            if paths:
+                deprecated.append({"name": name, "kind": b.kind, "file": b.path, "linked": linked,
+                                   "articles": paths, "replacement": b.deprecated})
         if a.statement != b.statement and keyword_neutral(a.statement) == keyword_neutral(b.statement):
             if a.kind in WANTED and b.kind not in WANTED and articles.find(name)[1]:
                 proved.append({"name": name, "kind": b.kind, "file": b.path,
@@ -551,9 +567,9 @@ def compare(old: dict[str, Decl], new: dict[str, Decl], articles: Articles) -> d
                    and (new[n].prefix, new[n].signature) == (a.prefix, a.signature)][:3]
         removed.append({"name": name, "kind": a.kind, "file": a.path, "linked": linked,
                         "articles": paths, "renamed_to": renamed})
-    return {"changed": changed, "removed": removed, "aliased": aliased, "variables": variables,
-            "decidable": decidable, "proved": proved, "unlinked_changed": unlinked_changed,
-            "added": len(added_names)}
+    return {"changed": changed, "removed": removed, "aliased": aliased, "deprecated": deprecated,
+            "variables": variables, "decidable": decidable, "proved": proved,
+            "unlinked_changed": unlinked_changed, "added": len(added_names)}
 
 
 def markdown(report: dict) -> str:
@@ -568,6 +584,9 @@ def markdown(report: dict) -> str:
             lines.append(f"  - probably renamed to `{r}`")
         if e.get("alias_of"):
             lines.append(f"  - renamed to `{e['alias_of']}`")
+        r = e.get("replacement")
+        if r:
+            lines.append(f"  - upstream's note: {r[1:-1]}" if r.startswith('"') else f"  - replacement: `{r}`")
         return lines
 
     out = [f"### Upstream statement changes, {report['old'][:10]}..{report['new'][:10]}", "",
@@ -578,6 +597,8 @@ def markdown(report: dict) -> str:
                     "in the merge:"),
         ("aliased", "Linked declarations renamed upstream, with the old name kept as an alias. The "
                     "wiki still builds; relink their articles to the new name:"),
+        ("deprecated", "Linked declarations deprecated upstream. Upstream deletes them later, which "
+                       "breaks their links, so move their articles to the replacement or drop them:"),
         ("changed", "Articles to edit: the Lean statement changed."),
         ("variables", "Section variables or notation changed in front of these. Check whether the "
                       "statement uses them:"),
@@ -589,7 +610,7 @@ def markdown(report: dict) -> str:
             out += ["", f"**{title}**", ""]
             for e in report[key]:
                 out += entry(e)
-    if not any(report[k] for k in ("removed", "aliased", "changed", "variables", "decidable")):
+    if not any(report[k] for k in ("removed", "aliased", "deprecated", "changed", "variables", "decidable")):
         out += ["", "No linked declaration's statement changed."]
     if report.get("unseen"):
         out += ["", f"**This script finds {len(report['unseen'])} linked declarations in no Lean file, "

@@ -164,6 +164,13 @@ theorem u : True := trivial
         self.assertEqual(sorted(d), ["N.a", "N.c"])
         self.assertEqual((d["N.a"].kind, d["N.a"].signature), ("alias", "b"))
 
+    def test_deprecation_and_what_it_points_to(self):
+        d = decls('@[deprecated Foo.bar +typeChanged (since := "2026-11-09")]\ntheorem a : True := trivial\n'
+                  '@[simp, deprecated "Use `x`, not this." (since := "2026-11-09")] theorem b : True := trivial\n'
+                  '@[deprecated (since := "2026-11-09"), nolint defsWithUnderscore]\ntheorem c : True := trivial\n'
+                  '@[simp] theorem d : True := trivial\n')
+        self.assertEqual([d[n].deprecated for n in "abcd"], ["Foo.bar", '"Use `x`, not this."', "", None])
+
     def test_tokens_keep_binders_whole(self):
         self.assertEqual(sc.tokens("{ι : Type*} [Fintype ι] [DecidableEq ι]"),
                          ["{ι : Type*}", "[Fintype ι]", "[DecidableEq ι]"])
@@ -266,6 +273,17 @@ end N
         self.assertEqual([(e["name"], e["alias_of"]) for e in r["aliased"]], [("N.gone", "N.goneNew")])
         self.assertIn("  - renamed to `N.goneNew`", sc.markdown({**r, "old": "a", "new": "b", "commits": 1,
                                                                   "files": 1}))
+
+    def test_a_linked_declaration_deprecated_upstream(self):
+        old = ('namespace N\ntheorem t : True := trivial\n@[deprecated (since := "2026-01-01")]\n'
+               'theorem u : True := trivial\nend N\n')
+        new = ('namespace N\n@[deprecated Mathlib.t (since := "2026-11-09")]\ntheorem t : True := trivial\n'
+               '@[deprecated (since := "2026-01-01")]\ntheorem u : True := trivial\nend N\n')
+        r = self.run_compare(old, new)
+        self.assertEqual([(e["name"], e["replacement"]) for e in r["deprecated"]], [("N.t", "Mathlib.t")])
+        self.assertEqual(r["changed"], [])
+        self.assertIn("  - replacement: `Mathlib.t`", sc.markdown({**r, "old": "a", "new": "b", "commits": 1,
+                                                                    "files": 1}))
 
     def test_an_alias_moved_to_another_target_is_a_change(self):
         r = self.run_compare("namespace N\nalias t := a\nend N\n", "namespace N\nalias t := b\nend N\n")
