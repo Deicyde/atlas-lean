@@ -310,6 +310,30 @@ class Declarations(Vault):
         index = SimpleNamespace(declarations={"Ext.old": None, "Ext.older": None, "Ext.new": None})
         self.assertEqual(sync.apply_declarations(targets, index)["added"], ["Ext.new -> Algebra/new.md"])
 
+    def test_a_page_rebound_to_its_moved_declaration_keeps_its_place(self) -> None:
+        # Upstream moved a declaration to another module and namespace. Until an editor points the page's annotation at
+        # the new name, the page is gone and the new name would get a second page; after it, neither.
+        readme = "# Groups\n\n- [Old](old.md)\n"
+        self.page("Algebra/README.md", "# Algebra\n")
+        self.page("Algebra/groups/README.md", readme)
+        old = self.page("Algebra/groups/old.md", "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Groups.old"}}])])
+        index = SimpleNamespace(declarations={"Ext.Framework.old": None})
+        moved = [declaration("Ext.Framework.old", "old", "Old", "Upstream text.", module=("Ext", "Framework"))]
+        before = sync.apply_declarations(moved, index)
+        self.assertEqual(before["gone"], ["Ext.Groups.old (Algebra/groups/old.md)"])
+        self.assertEqual(before["added"], ["Ext.Framework.old -> Algebra/old.md"])
+        (wiki.ROADMAP / "Algebra" / "old.md").unlink()
+        self.page("Algebra/README.md", "# Algebra\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Framework.old"}}])])
+        after = sync.apply_declarations(moved, index)
+        self.assertEqual((after["added"], after["gone"], after["changed"]), ([], [], []))
+        self.assertEqual(old.read_text(), "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "README.md").read_text(), readme)
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "README.md").read_text(), "# Algebra\n")
+        self.assertEqual(sync.read_annotations()[sync.LINKS / "Algebra.jsonl"],
+                         [self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Framework.old"}}])])
+
     def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
         self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
