@@ -77,6 +77,11 @@ This page is an AI-authored exposition; it has no Lean formalization in this lib
 - [The probabilistic PCA marginal](../unsupervised-learning/probabilistic-principal-component-analysis/ppca-map-eq.md):
   background, an alternative route to (a) when $X_0$ is written as $W Z + \mu$ with
   $W W^{\mathsf{T}} = \Sigma$, for instance $W = U \Lambda^{1/2}$, and noise variance $\sigma^2$.
+- [Finite-support Tweedie score identity](../bayesian-inference-and-sampling/mixture-models/has-gradient-at-log-marginal-joint-of-me.md):
+  background, the score identity $\nabla \log p(z) = (\lambda m(z) - z) / \sigma^2$ for data taking
+  finitely many values, with $m(z)$ the posterior-weighted mean of those values, formalized as a
+  finite-sum calculation. It does not cover the Gaussian data on this page, and it does not
+  identify $m(z)$ with a conditional expectation.
 
 ## Sources
 
