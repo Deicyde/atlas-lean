@@ -52,8 +52,8 @@ open MathlibExt.Analysis.Complex.HartogsWanted
 
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 
-/-- Let `f` be continuous on `[0, ∞)` with `f 0 = 0`. Then
-`w ↦ ∫ t in 0..‖w - z₀‖, f t` has real Fréchet derivative
+/-- **Fréchet derivative of a radial primitive through its centre.** Let `f` be continuous on
+`[0, ∞)` with `f 0 = 0`. Then `w ↦ ∫ t in 0..‖w - z₀‖, f t` has real Fréchet derivative
 `(f ‖z - z₀‖ / ‖z - z₀‖) • innerSL ℝ (z - z₀)` at every point `z`, including the centre
 `z₀`, where this derivative is `0`. The hypothesis `f 0 = 0` is what makes the centre
 case true. -/
@@ -105,9 +105,10 @@ theorem hasFDerivAt_intervalIntegral_norm_sub {f : ℝ → ℝ} (hf : Continuous
     rw [smul_smul, ← div_eq_mul_inv] at h2
     exact h2
 
-/-- Let `f` be continuous on `[0, ∞)` with `f 0 = 0`. Then the radial primitive
-`w ↦ ∫ t in 0..‖w - z₀‖, f t` is continuously differentiable (`C¹`) on the whole real
-inner product space, including at the centre `z₀`; `f` itself need not be differentiable. -/
+/-- **A radial primitive is continuously differentiable.** Let `f` be continuous on `[0, ∞)`
+with `f 0 = 0`. Then the radial primitive `w ↦ ∫ t in 0..‖w - z₀‖, f t` is continuously
+differentiable (`C¹`) on the whole real inner product space, including at the centre `z₀`;
+`f` itself need not be differentiable. -/
 theorem contDiff_one_intervalIntegral_norm_sub {f : ℝ → ℝ} (hf : ContinuousOn f (Set.Ici 0))
     (hf0 : f 0 = 0) (z₀ : E) :
     ContDiff ℝ 1 (fun w : E => ∫ t in (0 : ℝ)..‖w - z₀‖, f t) := by
@@ -145,9 +146,10 @@ theorem contDiff_one_intervalIntegral_norm_sub {f : ℝ → ℝ} (hf : Continuou
         (continuous_id.sub continuous_const)).continuousAt
     exact ha.smul hb
 
-/-- For a finite family of profiles `f α`, each continuous on `[0, ∞)` with `f α 0 = 0`,
-and centres `z₀ α` in `ℂ`, include the real sum `W w = ∑ α ∈ s, ∫ t in 0..‖w - z₀ α‖, f α t`
-in `ℂ`. Then `2 * barDeriv W z`, which is `∂ₓW + i ∂ᵧW` for the real derivatives, equals
+/-- **Twice the Wirtinger derivative of a sum of radial primitives.** For a finite family of
+profiles `f α`, each continuous on `[0, ∞)` with `f α 0 = 0`, and centres `z₀ α` in `ℂ`,
+include the real sum `W w = ∑ α ∈ s, ∫ t in 0..‖w - z₀ α‖, f α t` in `ℂ`. Then
+`2 * barDeriv W z`, which is `∂ₓW + i ∂ᵧW` for the real derivatives, equals
 `∑ α ∈ s, (f α ‖z - z₀ α‖ / ‖z - z₀ α‖) * (z - z₀ α)` at every `z`. Each summand is
 `0` at its own centre `z₀ α`; the sum need not vanish there. -/
 theorem two_mul_barDeriv_ofReal_sum_intervalIntegral_norm_sub {ι : Type*} (s : Finset ι)
