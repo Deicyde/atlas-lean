@@ -1877,6 +1877,7 @@
   "MathlibExt/Analysis/InnerProductSpace/PolarSet": {"to": "Analysis/convex-analysis-and-variations", "title": "Polar sets"},
   "MathlibExt/Analysis/InnerProductSpace/PolarSetAdjoint": {"to": "Analysis/convex-analysis-and-variations", "title": "Polar sets"},
   "MathlibExt/Analysis/InnerProductSpace/RademacherTypeCotype": {"to": "Analysis/banach-spaces/geometry-of-banach-spaces", "title": "Rademacher type and cotype"},
+  "MathlibExt/Analysis/InnerProductSpace/RadialPrimitive": {"to": "Analysis/hilbert-spaces", "title": "Derivatives of the norm"},
   "MathlibExt/Analysis/InnerProductSpace/RadonRiesz": {"to": "Analysis/hilbert-spaces", "title": "Radon–Riesz property"},
   "MathlibExt/Analysis/InnerProductSpace/RepresenterTheorem": {"to": "Analysis/hilbert-spaces", "title": "Representer theorem"},
   "MathlibExt/Analysis/InnerProductSpace/RieszBasis": {"to": "Analysis/hilbert-spaces", "title": "Riesz bases"},
