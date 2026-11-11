@@ -13,3 +13,5 @@
 - [Central limit theorem for the score](tendsto-in-distribution-score.md)
 - [Asymptotic normality of a consistent root of an estimating equation](tendsto-in-distribution-sqrt-mul-sub-of.md)
 - [Asymptotic normality of consistent roots of the likelihood equation](tendsto-in-distribution-sqrt-mul-sub-of-2.md)
+- [Fisher information of the affine Gaussian location family](fisher-information-gaussian-pdfreal-affi.md)
+- [Score of the affine Gaussian location family](score-gaussian-pdfreal-affine.md)
