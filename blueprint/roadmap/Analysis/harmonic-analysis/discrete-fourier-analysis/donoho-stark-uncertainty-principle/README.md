@@ -1,6 +1,5 @@
 # Donoho–Stark uncertainty principle
 
-- [Characters of a finite abelian group have absolute value one](norm-add-char-apply.md)
 - [Squared-norm Plancherel identity for the finite Fourier transform](sum-norm-sq-dft-fun.md)
 - [Pointwise bound from a small Fourier support](norm-sq-le-of-dft-fun-eq-zero-of-not-mem.md)
 - [Concentration bound for a function with small Fourier support](sum-norm-sq-le-of-dft-fun-eq-zero-of-not.md)

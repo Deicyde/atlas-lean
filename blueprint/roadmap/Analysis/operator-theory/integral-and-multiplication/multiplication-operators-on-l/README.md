@@ -5,7 +5,6 @@
 - [Points outside the essential range](not-mem-essential-range-iff.md)
 - [Essential range of a constant function](essential-range-const.md)
 - [Essential range for counting measure on a finite type](essential-range-count-eq-range.md)
-- [Constant functions are essentially bounded](mem-lp-const-top.md)
 - [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 - [Multiplication operator on $L^2$](lp-mul-clm.md)
 - [Multiplication operators with almost everywhere equal multipliers coincide](lp-mul-clm-congr-ae.md)

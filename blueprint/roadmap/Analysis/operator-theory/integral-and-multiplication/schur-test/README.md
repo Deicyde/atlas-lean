@@ -7,8 +7,6 @@
 - [Schur's test for square Euclidean continuous linear maps](norm-to-euclidean-clm-le.md)
 - [Schur's test for the $L^2$ operator norm of a matrix](norm-matrix-l2-le.md)
 - [Entries of a Schur matrix are bounded by the row bound](schur-inf-single-le.md)
-- [Summability of a finite sum of summable sequences](summable-sum-finset.md)
-- [Interchange of an infinite sum with a finite sum](tsum-sum-finset.md)
 - [Row bound of a Schur matrix is nonnegative](schur-inf-nonneg-of-row.md)
 - [Weighted Cauchy–Schwarz for one row of a Schur matrix](schur-inf-finset-cs.md)
 - [Summability of the weighted row series in Schur's test](summable-schur-inf-weighted.md)
