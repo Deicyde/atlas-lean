@@ -10,14 +10,14 @@ coordinates are read off the blocks of $K$.
 is not a single Lean theorem. Let $W$ be a symmetric matrix of nonnegative weights with zero
 diagonal on a finite set of areas, $d_i = \sum_j w_{ij}$, $L = \operatorname{diag}(d) - W$,
 $0 \le \rho < 1$, $v > 0$ and $Q = \rho L + (1 - \rho) I$. By
-[the weighted Laplacian page](dot-product-laplacian-mul-vec-and-pos-de.md), $Q$ is positive
+*Weighted graph Laplacians and the Leroux precision matrix*, $Q$ is positive
 definite with $Q \mathbf{1} = (1 - \rho) \mathbf{1}$, so $X \sim N(\theta_0 \mathbf{1}, v Q^{-1})$ is a
 proper Gaussian vector with precision $K = Q / v$.
 
 *Conditional law of one area.* For an area $i$, the conditional covariance of $X_i$ given the
 other coordinates is $(K_{ii})^{-1}$
-([inverse precision block](inv-to-blocks-inv.md)) and the coefficient of the conditional mean is
-$-(K_{ii})^{-1} K_{i,-i}$ ([regression coefficient](to-blocks-mul-inv-to-blocks.md)). Since
+(*The conditional covariance is the inverse of a precision block*) and the coefficient of the conditional mean is
+$-(K_{ii})^{-1} K_{i,-i}$ (*The regression coefficient from the precision matrix*). Since
 $w_{ii} = 0$, we have $Q_{ii} = \rho d_i + 1 - \rho$ and $\sum_{j \ne i} w_{ij} = d_i$, so the conditional
 law has mean $\bigl(\rho \sum_j w_{ij} x_j + (1 - \rho) \theta_0\bigr) / (\rho d_i + 1 - \rho)$ and
 variance $v / (\rho d_i + 1 - \rho)$. The zero diagonal is used here, not in the matrix facts.
@@ -30,7 +30,7 @@ Gaussian on a one-point index set; its identification with Mathlib's real Gaussi
 `gaussianReal` is not checked here.
 
 *Conditional independence.* For $i \ne j$, $K_{ij} = -\rho w_{ij} / v$. By the
-[pairwise Markov property](cond-indep-fun-iff-inv-apply-eq-zero.md), stated for the first two
+*Pairwise Markov property of Gaussian vectors*, stated for the first two
 coordinates of $\mathrm{Fin}\,2 \oplus \kappa$ on a standard Borel sample space, $X_i$ and $X_j$
 are conditionally independent given the other coordinates if $w_{ij} = 0$, and, when
 $\rho > 0$, only then. At $\rho = 0$, $Q = I$ and the coordinates are independent whatever $W$
