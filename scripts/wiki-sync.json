@@ -36324,6 +36324,7 @@
 "MetaMathlibExt.pondCount_infinite_family": "08b531442db59f9f",
 "MetaMathlibExt.pondCount_internal_congruence": "033750abdce219ce",
 "MetaMathlibExt.pondCount_zero": "88f35b912f007195",
+"MetaMathlibExt.posDef_mul_diagonal_mul_transpose_iff": "2edf50182690f304",
 "MetaMathlibExt.posSemidef_fromBlocks_linear": "55966e2c484c67f7",
 "MetaMathlibExt.posSemidef_fromBlocks_zero": "ca8ce741378c1e0c",
 "MetaMathlibExt.posSemidef_sub_mul_inv_mul": "5ab16a1a84f0b099",

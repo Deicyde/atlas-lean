@@ -27,6 +27,9 @@ ones):
 * `dotProduct_weightedScatter_mulVec`, `weightedScatter_transpose`, `weightedScatter_posDef`:
   **with positive weights and points not all in an affine hyperplane, the scatter matrix is
   positive definite**.
+* `posDef_mul_diagonal_mul_transpose_iff`: for a real matrix `B` and nonnegative weights `w`,
+  the weighted Gram matrix `B * diagonal w * Bᵀ` (always positive semidefinite) is **positive
+  definite iff the columns of `B` with positive weight have full row rank**.
 
 These are the facts behind closed-form Gaussian maximum likelihood estimates (sample mean and
 sample covariance), used for full-covariance mixtures and probabilistic PCA in
@@ -145,5 +148,38 @@ theorem weightedScatter_posDef {w : ι → ℝ} (hw : ∀ i, 0 < w i) {xs : ι �
         (Finset.single_le_sum hnonneg (Finset.mem_univ i))
     · exact lt_of_lt_of_le (mul_pos (hw j) (by positivity))
         (Finset.single_le_sum hnonneg (Finset.mem_univ j))
+
+/-- **Positive definiteness of weighted Gram matrices.** For a real matrix `B` and nonnegative
+weights `w`, the matrix `B * diagonal w * Bᵀ` is positive definite if and only if every nonzero
+vector `v` has `(v ᵥ* B) e ≠ 0` for some column `e` with `0 < w e`, that is, the columns of `B`
+with positive weight have full row rank. (The matrix is always positive semidefinite, by
+`Matrix.PosSemidef.mul_mul_conjTranspose_same` applied to `Matrix.PosSemidef.diagonal`.) -/
+theorem posDef_mul_diagonal_mul_transpose_iff {m k : Type*} [Fintype m] [Fintype k]
+    [DecidableEq k] {B : Matrix m k ℝ} {w : k → ℝ} (hw : ∀ e, 0 ≤ w e) :
+    (B * diagonal w * Bᵀ).PosDef ↔ ∀ v : m → ℝ, v ≠ 0 → ∃ e, 0 < w e ∧ (v ᵥ* B) e ≠ 0 := by
+  have hq (v : m → ℝ) :
+      star v ⬝ᵥ ((B * diagonal w * Bᵀ) *ᵥ v) = ∑ e, w e * (v ᵥ* B) e ^ 2 := by
+    rw [star_trivial, ← mulVec_mulVec, ← mulVec_mulVec, dotProduct_mulVec, mulVec_transpose]
+    simp only [dotProduct, mulVec_diagonal]
+    exact Finset.sum_congr rfl fun e _ => by ring
+  have herm : (B * diagonal w * Bᵀ).IsHermitian := by
+    simp [IsHermitian, conjTranspose_eq_transpose_of_trivial, transpose_mul, Matrix.mul_assoc]
+  rw [posDef_iff_dotProduct_mulVec]
+  constructor
+  · rintro ⟨-, h⟩ v hv
+    by_contra! hcon
+    have hpos := h hv
+    rw [hq] at hpos
+    have hzero : ∑ e, w e * (v ᵥ* B) e ^ 2 = 0 := Finset.sum_eq_zero fun e _ => by
+      rcases (hw e).lt_or_eq with he | he
+      · rw [hcon e he]; ring
+      · rw [← he]; ring
+    linarith
+  · intro h
+    refine ⟨herm, fun v hv => ?_⟩
+    obtain ⟨e, he, hne⟩ := h v hv
+    rw [hq]
+    exact Finset.sum_pos' (fun i _ => mul_nonneg (hw i) (sq_nonneg _))
+      ⟨e, Finset.mem_univ _, mul_pos he (by positivity)⟩
 
 end MetaMathlibExt

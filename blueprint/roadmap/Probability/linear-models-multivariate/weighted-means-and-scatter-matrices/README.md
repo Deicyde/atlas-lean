@@ -7,3 +7,4 @@
 - [Weighted quadratic forms as traces against the scatter matrix](sum-mul-quad-eq-trace.md)
 - [Quadratic form of a weighted scatter matrix](dot-product-weighted-scatter-mul-vec.md)
 - [Weighted scatter matrices of points in general position are positive definite](weighted-scatter-pos-def.md)
+- [Positive definiteness of weighted Gram matrices](pos-def-mul-diagonal-mul-transpose-iff.md)
