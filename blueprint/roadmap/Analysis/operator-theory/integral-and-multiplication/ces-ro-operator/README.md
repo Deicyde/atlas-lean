@@ -2,7 +2,6 @@
 
 - [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
 - [Cesàro means of a sequence](cesaro-mean.md)
-- [The Cesàro denominator $n + 1$ is nonzero](cesaro-den-ne-zero.md)
 - [Norm of the Cesàro denominator](norm-cesaro-den.md)
 - [A Cesàro mean is bounded by the mean of the norms](norm-cesaro-mean-le.md)
 - [Cesàro means of square-summable sequences are square-summable](summable-norm-sq-cesaro-mean.md)
