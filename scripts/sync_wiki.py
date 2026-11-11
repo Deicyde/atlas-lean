@@ -14,9 +14,11 @@ and its annotation's kind and status, from the Lean sources.
 
 declarations gives each declaration with a docstring and no page a page from its
 docstring, beside its module's other pages and listed on their page, and marks it
-as taken from the docstring. It lists pages whose declaration is gone and
-docstrings that changed since the last run (scripts/wiki-sync.json keeps their
-digests), and changes no page that exists. Its first run records the digests only.
+as taken from the docstring. A deprecated declaration gets none: upstream is
+retiring it, and the wiki may have dropped its page. It lists pages whose
+declaration is gone and docstrings that changed since the last run
+(scripts/wiki-sync.json keeps their digests), and changes no page that exists.
+Its first run records the digests only.
 
 import runs once, on a tree whose Lean still holds the wiki's English. TITLES.jsonl
 holds checked titles, one {"file", "name", "opening", "title"} per line: a
@@ -366,6 +368,24 @@ def declared(key: str, index) -> bool:
     )
 
 
+def deprecated(target) -> bool:
+    """Whether a `@[deprecated]` attribute sits on the declaration's line or on the attribute lines
+    just above it, the lines docstring_before passes over."""
+    source = wiki.ROOT / Path(*target.module).with_suffix(".lean")
+    if not source.is_file():
+        return False
+    lines = source.read_text().splitlines()
+    short = target.names[0].split(".")[-1]
+    for number, line in enumerate(lines):
+        match = wiki.V2_DECLARATION.match(line)
+        if match and match.group("name").split(".")[-1] == short:
+            top = number
+            while top > 0 and (not lines[top - 1].strip() or lines[top - 1].lstrip().startswith("@[")):
+                top -= 1
+            return any(re.search(r"@\[[^\]]*\bdeprecated\b", row) for row in lines[top:number + 1])
+    return False
+
+
 def apply_declarations(targets: list, index) -> dict[str, list[str]]:
     """Pages for new declarations, and the report; see the module docstring."""
     files = read_annotations()
@@ -377,7 +397,7 @@ def apply_declarations(targets: list, index) -> dict[str, list[str]]:
         if key in pages:
             folders[target.module][pages[key].parent] += 1
     for key, target in sorted(current.items()):
-        if key in pages:
+        if key in pages or deprecated(target):
             continue
         # Beside the module's pages, else in the deepest existing folder of the generated path.
         if folders[target.module]:

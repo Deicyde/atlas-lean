@@ -264,6 +264,20 @@ class Declarations(Vault):
                                 SimpleNamespace(declarations={"Ext.new": None}))
         self.assertEqual((wiki.ROADMAP / "Algebra" / "new.md").read_text(), "# New result\n\nA new statement.\n")
 
+    def test_a_deprecated_declaration_gets_no_page(self) -> None:
+        # A page the wiki dropped for a deprecated declaration must stay dropped.
+        self.page("Algebra/README.md", "# Algebra\n")
+        source = self.tmp / "Ext" / "Groups.lean"
+        source.parent.mkdir(parents=True)
+        source.write_text('/-- Old. -/\n@[deprecated Mathlib.old (since := "2026-11-09")]\ntheorem old : True := trivial\n'
+                          '/-- Also old. -/\n@[simp, deprecated (since := "2026-11-09")] theorem older : True := trivial\n'
+                          "/-- New. -/\n@[simp]\ntheorem new : True := trivial\n")
+        sync.LINKS.mkdir(parents=True)
+        targets = [declaration("Ext.old", "old", "Old", "Old."), declaration("Ext.older", "older", "Older", "Also old."),
+                   declaration("Ext.new", "new", "New", "New.")]
+        index = SimpleNamespace(declarations={"Ext.old": None, "Ext.older": None, "Ext.new": None})
+        self.assertEqual(sync.apply_declarations(targets, index)["added"], ["Ext.new -> Algebra/new.md"])
+
     def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
         self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
