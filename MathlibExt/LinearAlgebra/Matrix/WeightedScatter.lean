@@ -30,6 +30,10 @@ ones):
 * `posDef_mul_diagonal_mul_transpose_iff`: for a real matrix `B` and nonnegative weights `w`,
   the weighted Gram matrix `B * diagonal w * Bᵀ` (always positive semidefinite) is **positive
   definite iff the columns of `B` with positive weight have full row rank**.
+* `sum_mul_diag_sub_dotProduct_mulVec_eq`: **quadratic diversity from pairwise
+  dissimilarities**. For weights summing to one, `∑ w Qᵢᵢ - wᵀ Q w` equals
+  `wᵀ δ w / 2 - ∑ w δᵢᵢ / 2` when `Qᵢⱼ = vᵢ + vⱼ - δᵢⱼ / 2`, and equals `wᵀ δQ w / 2` for the
+  canonical dissimilarity `δQᵢⱼ = Qᵢᵢ + Qⱼⱼ - 2 Qᵢⱼ`.
 
 These are the facts behind closed-form Gaussian maximum likelihood estimates (sample mean and
 sample covariance), used for full-covariance mixtures and probabilistic PCA in
@@ -181,5 +185,60 @@ theorem posDef_mul_diagonal_mul_transpose_iff {m k : Type*} [Fintype m] [Fintype
     rw [hq]
     exact Finset.sum_pos' (fun i _ => mul_nonneg (hw i) (sq_nonneg _))
       ⟨e, Finset.mem_univ _, mul_pos he (by positivity)⟩
+
+omit [Fintype n] in
+/-- **Quadratic diversity from pairwise dissimilarities.** Let `Q` be a real square matrix and
+`w` real weights with `∑ i, w i = 1`, and write `H_Q(w) = ∑ i, w i Q i i - wᵀ Q w` (Rao's quadratic
+entropy form). Then:
+
+* if `Q i j = v i + v j - δ i j / 2` for all `i j`, then
+  `H_Q(w) = wᵀ δ w / 2 - (∑ i, w i δ i i) / 2`;
+* for the canonical dissimilarity `δQ i j = Q i i + Q j j - 2 Q i j`, which has zero diagonal,
+  `H_Q(w) = wᵀ δQ w / 2`.
+
+A zero diagonal of `δ` is a sufficient condition for the short form `wᵀ δ w / 2`; for a given `w`
+the exact condition is that the weighted diagonal correction `∑ i, w i δ i i` vanish. These are
+algebraic identities: neither `Q` nor `δ` need be symmetric, and the weights may be negative, an
+extension, derived here, of the usual setting of a symmetric `Q` and weights in the simplex. They
+carry no positivity, metric or concavity claim; those interpretations need further hypotheses,
+such as nonnegative weights. -/
+theorem sum_mul_diag_sub_dotProduct_mulVec_eq {w : ι → ℝ} (hw : ∑ i, w i = 1)
+    (Q : Matrix ι ι ℝ) :
+    (∀ (δ : Matrix ι ι ℝ) (v : ι → ℝ), (∀ i j, Q i j = v i + v j - δ i j / 2) →
+      ∑ i, w i * Q i i - w ⬝ᵥ Q *ᵥ w = w ⬝ᵥ δ *ᵥ w / 2 - (∑ i, w i * δ i i) / 2) ∧
+    ∑ i, w i * Q i i - w ⬝ᵥ Q *ᵥ w =
+      w ⬝ᵥ (Matrix.of fun i j => Q i i + Q j j - 2 * Q i j) *ᵥ w / 2 := by
+  have key : ∀ (δ : Matrix ι ι ℝ) (v : ι → ℝ), (∀ i j, Q i j = v i + v j - δ i j / 2) →
+      ∑ i, w i * Q i i - w ⬝ᵥ Q *ᵥ w = w ⬝ᵥ δ *ᵥ w / 2 - (∑ i, w i * δ i i) / 2 := by
+    intro δ v hQ
+    have inner : ∀ i, (Q *ᵥ w) i = v i + ∑ j, v j * w j - (δ *ᵥ w) i / 2 := fun i => by
+      simp only [mulVec, dotProduct, hQ, add_mul, sub_mul, Finset.sum_add_distrib,
+        Finset.sum_sub_distrib, ← Finset.mul_sum, hw, mul_one, Finset.sum_div]
+      congr 1
+      exact Finset.sum_congr rfl fun j _ => by ring
+    have hdot : w ⬝ᵥ Q *ᵥ w = 2 * ∑ i, w i * v i - (w ⬝ᵥ δ *ᵥ w) / 2 := by
+      have hc : ∑ j, v j * w j = ∑ i, w i * v i :=
+        Finset.sum_congr rfl fun i _ => mul_comm _ _
+      have hmid : ∑ i, w i * ∑ j, v j * w j = ∑ i, w i * v i := by
+        rw [← Finset.sum_mul, hw, one_mul, hc]
+      have hlast : ∑ i, w i * ((δ *ᵥ w) i / 2) = (w ⬝ᵥ δ *ᵥ w) / 2 := by
+        rw [dotProduct, Finset.sum_div]
+        exact Finset.sum_congr rfl fun i _ => by ring
+      simp only [dotProduct, inner, mul_add, mul_sub, Finset.sum_add_distrib,
+        Finset.sum_sub_distrib] at hmid hlast ⊢
+      rw [hmid, hlast]
+      ring
+    have hdiag : ∑ i, w i * Q i i = 2 * ∑ i, w i * v i - (∑ i, w i * δ i i) / 2 := by
+      rw [Finset.mul_sum, Finset.sum_div, ← Finset.sum_sub_distrib]
+      exact Finset.sum_congr rfl fun i _ => by rw [hQ]; ring
+    rw [hdiag, hdot]
+    ring
+  refine ⟨key, ?_⟩
+  have h := key (Matrix.of fun i j => Q i i + Q j j - 2 * Q i j) (fun i => Q i i / 2)
+    (fun i j => by simp only [Matrix.of_apply]; ring)
+  rw [h]
+  simp only [Matrix.of_apply]
+  ring_nf
+  simp
 
 end MetaMathlibExt

@@ -8,3 +8,4 @@
 - [Quadratic form of a weighted scatter matrix](dot-product-weighted-scatter-mul-vec.md)
 - [Weighted scatter matrices of points in general position are positive definite](weighted-scatter-pos-def.md)
 - [Positive definiteness of weighted Gram matrices](pos-def-mul-diagonal-mul-transpose-iff.md)
+- [Quadratic diversity from pairwise dissimilarities](sum-mul-diag-sub-dot-product-mul-vec-eq.md)
