@@ -24,3 +24,4 @@
 - [The posterior covariance is positive semidefinite](pos-semidef-sub-mul-inv-mul.md)
 - [The marginal of a linear-Gaussian model](map-linear-add-of-indep-fun.md)
 - [Bayes' theorem for a linear-Gaussian observation](cond-distrib-linear-add-of-indep-fun.md)
+- [Bayes' theorem for a linear-Gaussian observation, precision form](cond-distrib-linear-add-of-indep-fun-pre.md)
