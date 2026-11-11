@@ -21,3 +21,6 @@
 - [Strict derivative of the squared projection residual](has-strict-fderiv-at-residual-sq.md)
 - [Strict derivative of the squared distance to a subspace](has-strict-fderiv-at-inf-dist-sq.md)
 - [Second derivative of the squared norm](fderiv-fderiv-norm-sq-apply.md)
+- [Fréchet derivative of a radial primitive through its centre](has-fderiv-at-interval-integral-norm-sub.md)
+- [A radial primitive is continuously differentiable](cont-diff-one-interval-integral-norm-sub.md)
+- [Twice the Wirtinger derivative of a sum of radial primitives](two-mul-bar-deriv-of-real-sum-interval-i.md)
