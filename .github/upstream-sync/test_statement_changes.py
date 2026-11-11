@@ -159,6 +159,11 @@ theorem u : True := trivial
         d = decls("instance (priority := 100) fooInst : Foo := ⟨⟩\ninstance : Bar := ⟨⟩\n")
         self.assertEqual(sorted(d), ["fooInst"])
 
+    def test_aliases_declare_their_names(self):
+        d = decls("namespace N\nalias a := b\nprotected alias ⟨c, _⟩ := d_iff\nend N\n")
+        self.assertEqual(sorted(d), ["N.a", "N.c"])
+        self.assertEqual((d["N.a"].kind, d["N.a"].signature), ("alias", "b"))
+
     def test_tokens_keep_binders_whole(self):
         self.assertEqual(sc.tokens("{ι : Type*} [Fintype ι] [DecidableEq ι]"),
                          ["{ι : Type*}", "[Fintype ι]", "[DecidableEq ι]"])
@@ -249,6 +254,22 @@ end N
         new = "namespace N\ntheorem rem : 1 = 1 := rfl\nend N\n"
         r = self.run_compare(old, new)
         self.assertEqual([(e["name"], e["renamed_to"]) for e in r["removed"]], [("N.gone", ["N.rem"])])
+
+    def test_a_rename_that_keeps_the_old_name_as_an_alias(self):
+        old = "namespace N\nnoncomputable def gone (x : ℝ) : ℕ := 0\nend N\n"
+        new = ("namespace N\nnoncomputable def goneNew (x : ℝ) : ℕ := 0\n\n"
+               "/-- Deprecated alias for `goneNew`. -/\n"
+               '@[deprecated (since := "2026-10-21"), nolint defsWithUnderscore]\n'
+               "alias gone := goneNew\nend N\n")
+        r = self.run_compare(old, new)
+        self.assertEqual((r["removed"], r["changed"]), ([], []))
+        self.assertEqual([(e["name"], e["alias_of"]) for e in r["aliased"]], [("N.gone", "N.goneNew")])
+        self.assertIn("  - renamed to `N.goneNew`", sc.markdown({**r, "old": "a", "new": "b", "commits": 1,
+                                                                  "files": 1}))
+
+    def test_an_alias_moved_to_another_target_is_a_change(self):
+        r = self.run_compare("namespace N\nalias t := a\nend N\n", "namespace N\nalias t := b\nend N\n")
+        self.assertEqual([(e["name"], e["removed"], e["added"]) for e in r["changed"]], [("N.t", ["a"], ["b"])])
 
 
 class Linking(unittest.TestCase):

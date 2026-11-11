@@ -10,6 +10,8 @@ and compares, per declaration:
   instance counts as a theorem: its header names the structure it gives;
 - a definition's whole text, since the definition is what its article states. A `def_wanted`
   that upstream defines is a change, since the article should then state the definition;
+- an `alias`'s target. A linked declaration that becomes an alias was renamed upstream with its
+  old name kept, so the wiki still builds, but its article should move to the new name;
 - an `omit ... in`, `include ... in` or `variable ... in` in front of it, which changes its
   hypotheses;
 - the `variable` lines and notation in scope, reported apart, because a declaration uses only
@@ -268,6 +270,18 @@ def declaration_name(kind: str, rest: str) -> tuple[str, str] | None:
     return name, after
 
 
+def full_name(name: str, scopes: list[tuple[str, str, list[str]]]) -> str:
+    """NAME declared inside SCOPES, with its namespaces."""
+    if name.startswith("_root_."):
+        return name[len("_root_."):]
+    ns = ".".join(s[1] for s in scopes if s[0] == "namespace" and s[1])
+    return f"{ns}.{name}" if ns else name
+
+
+# `alias old := new`, and `alias ⟨mp, mpr⟩ := foo_iff` for the two directions of an iff.
+ALIAS = re.compile(r"alias\s+(?:⟨\s*([^\s,⟩]+)\s*,\s*([^\s,⟩]+)\s*⟩|([^\s:]+))\s*:=\s*(\S+)")
+
+
 def declarations(source: str, path: str) -> dict[str, Decl]:
     """The named declarations of a Lean file, by full name."""
     scopes: list[tuple[str, str, list[str]]] = [("file", "", [])]  # (kind, name, variable lines)
@@ -303,6 +317,16 @@ def declarations(source: str, path: str) -> dict[str, Decl]:
         elif kw in STATEMENT_PREFIXES or kw in NOTATION:
             # A plain `variable`, `include` or `omit` holds until its scope ends; so does notation.
             scopes[-1][2].append(squash(cmd))
+        elif kw == "alias":
+            rest = skip_attributes_and_modifiers(cmd)
+            m = ALIAS.match(rest)
+            if m:
+                context = " ".join(line for s in scopes for line in s[2])
+                for name in m.group(1, 2, 3):
+                    if name and name != "_":
+                        full = full_name(name, scopes)
+                        found.setdefault(full, Decl(full, kw, path, " ".join(pending), squash(rest),
+                                                    context, m.group(4).lstrip("@")))
         elif kw in KINDS:
             body = skip_attributes_and_modifiers(cmd)[len(kw):]
             # `class inductive Foo` and `class abbrev Foo` declare Foo.
@@ -312,11 +336,7 @@ def declarations(source: str, path: str) -> dict[str, Decl]:
                 name, after = parsed
                 statement = header if kw in THEOREM_KINDS else definition
                 text = squash(kw + " " + statement(body))
-                if name.startswith("_root_."):
-                    full = name[len("_root_."):]
-                else:
-                    ns = ".".join(s[1] for s in scopes if s[0] == "namespace" and s[1])
-                    full = f"{ns}.{name}" if ns else name
+                full = full_name(name, scopes)
                 context = " ".join(line for s in scopes for line in s[2])
                 found.setdefault(full, Decl(full, kw, path, " ".join(pending), text, context,
                                             squash(statement(after))))
@@ -473,11 +493,28 @@ def unseen(repo: str, rev: str, by_decl: dict[str, list[str]]) -> list[str]:
     return sorted(set(by_decl) - set(found))
 
 
+def alias_target(alias: Decl, decls: dict[str, Decl]) -> str:
+    """The full name ALIAS points to, looked up from its namespace outwards; as written when no
+    declaration in DECLS has it."""
+    parts = alias.name.split(".")[:-1]
+    for i in range(len(parts), -1, -1):
+        full = ".".join(parts[:i] + [alias.signature])
+        if full in decls:
+            return full
+    return alias.signature
+
+
 def compare(old: dict[str, Decl], new: dict[str, Decl], articles: Articles) -> dict:
-    changed, variables, decidable, removed, proved = [], [], [], [], []
+    changed, variables, decidable, removed, proved, aliased = [], [], [], [], [], []
     unlinked_changed = 0
     for name in sorted(set(old) & set(new)):
         a, b = old[name], new[name]
+        if b.kind == "alias" and a.kind != "alias":
+            linked, paths = articles.find(name)
+            if paths:
+                aliased.append({"name": name, "kind": a.kind, "file": b.path, "linked": linked,
+                                "articles": paths, "alias_of": alias_target(b, new)})
+            continue
         if a.statement != b.statement and keyword_neutral(a.statement) == keyword_neutral(b.statement):
             if a.kind in WANTED and b.kind not in WANTED and articles.find(name)[1]:
                 proved.append({"name": name, "kind": b.kind, "file": b.path,
@@ -514,8 +551,9 @@ def compare(old: dict[str, Decl], new: dict[str, Decl], articles: Articles) -> d
                    and (new[n].prefix, new[n].signature) == (a.prefix, a.signature)][:3]
         removed.append({"name": name, "kind": a.kind, "file": a.path, "linked": linked,
                         "articles": paths, "renamed_to": renamed})
-    return {"changed": changed, "removed": removed, "variables": variables, "decidable": decidable,
-            "proved": proved, "unlinked_changed": unlinked_changed, "added": len(added_names)}
+    return {"changed": changed, "removed": removed, "aliased": aliased, "variables": variables,
+            "decidable": decidable, "proved": proved, "unlinked_changed": unlinked_changed,
+            "added": len(added_names)}
 
 
 def markdown(report: dict) -> str:
@@ -528,6 +566,8 @@ def markdown(report: dict) -> str:
             lines.append(f"  - added: `{r}`")
         for r in e.get("renamed_to", []):
             lines.append(f"  - probably renamed to `{r}`")
+        if e.get("alias_of"):
+            lines.append(f"  - renamed to `{e['alias_of']}`")
         return lines
 
     out = [f"### Upstream statement changes, {report['old'][:10]}..{report['new'][:10]}", "",
@@ -536,6 +576,8 @@ def markdown(report: dict) -> str:
         ("removed", "Linked declarations removed or renamed upstream. The merged wiki doesn't build "
                     "until their articles are relinked, so merge upstream by hand and relink them "
                     "in the merge:"),
+        ("aliased", "Linked declarations renamed upstream, with the old name kept as an alias. The "
+                    "wiki still builds; relink their articles to the new name:"),
         ("changed", "Articles to edit: the Lean statement changed."),
         ("variables", "Section variables or notation changed in front of these. Check whether the "
                       "statement uses them:"),
@@ -547,7 +589,7 @@ def markdown(report: dict) -> str:
             out += ["", f"**{title}**", ""]
             for e in report[key]:
                 out += entry(e)
-    if not any(report[k] for k in ("removed", "changed", "variables", "decidable")):
+    if not any(report[k] for k in ("removed", "aliased", "changed", "variables", "decidable")):
         out += ["", "No linked declaration's statement changed."]
     if report.get("unseen"):
         out += ["", f"**This script finds {len(report['unseen'])} linked declarations in no Lean file, "

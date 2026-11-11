@@ -287,8 +287,8 @@ jobs:
             echo "Merge upstream main (${UPSTREAM_SHA:0:10}) into the wiki"
             echo
             jq -r '
-              "Linked statements upstream changed: \(.changed | length); removed or renamed: \(.removed | length); section variables or notation changed: \(.variables | length); decidability only: \(.decidable | length).",
-              (([.removed[], .changed[], .variables[]] | map(.articles[]) | unique) as $articles
+              "Linked statements upstream changed: \(.changed | length); removed or renamed: \(.removed | length); renamed with the old name kept as an alias: \(.aliased | length); section variables or notation changed: \(.variables | length); decidability only: \(.decidable | length).",
+              (([.removed[], .aliased[], .changed[], .variables[]] | map(.articles[]) | unique) as $articles
                | if ($articles | length) > 0 then
                    "", "Articles to check:", ($articles[:40][] | "- " + .),
                    (if ($articles | length) > 40 then "- and \($articles | length - 40) more" else empty end)
@@ -430,7 +430,7 @@ jobs:
         run: |
           set -euo pipefail
           report=$RUNNER_TEMP/report/statements.json
-          edits=$(jq '[.removed[], .changed[], .variables[]] | length' "$report")
+          edits=$(jq '[.removed[], .aliased[], .changed[], .variables[]] | length' "$report")
           unseen=$(jq '.unseen | length' "$report")
           cat "$RUNNER_TEMP/report/statements.md" >> "$GITHUB_STEP_SUMMARY"
           status=0
