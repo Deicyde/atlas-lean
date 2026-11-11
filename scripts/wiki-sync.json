@@ -11936,6 +11936,7 @@
 "Cslib.MachineLearning.LeastSquares.lassoPosterior": "6c90749de8cd4630",
 "Cslib.MachineLearning.LeastSquares.lassoPosterior_le_iff": "19b2d4fd5fde8d10",
 "Cslib.MachineLearning.LeastSquares.lasso_softThreshold_le": "788135860f12e1e6",
+"Cslib.MachineLearning.LeastSquares.leaveOneOut_leverage_residual": "dd1140d407b5d6f4",
 "Cslib.MachineLearning.LeastSquares.normal_inv": "0739ed9909629023",
 "Cslib.MachineLearning.LeastSquares.posDef_ridge": "e8eacadd95652fcc",
 "Cslib.MachineLearning.LeastSquares.prod_gaussianPDFReal_zero": "157ae299d83d1e79",
