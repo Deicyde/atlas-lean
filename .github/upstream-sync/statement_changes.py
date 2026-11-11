@@ -592,9 +592,8 @@ def markdown(report: dict) -> str:
     out = [f"### Upstream statement changes, {report['old'][:10]}..{report['new'][:10]}", "",
            f"{report['commits']} upstream commits change {report['files']} Lean files."]
     sections = [
-        ("removed", "Linked declarations removed or renamed upstream. The merged wiki doesn't build "
-                    "until their articles are relinked, so merge upstream by hand and relink them "
-                    "in the merge:"),
+        ("removed", "Linked declarations removed or renamed upstream. Their pages build without a "
+                    "Lean link until they are relinked to the new name, or dropped:"),
         ("aliased", "Linked declarations renamed upstream, with the old name kept as an alias. The "
                     "wiki still builds; relink their articles to the new name:"),
         ("deprecated", "Linked declarations deprecated upstream. Upstream deletes them later, which "

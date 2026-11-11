@@ -121,7 +121,7 @@ jobs:
           cat "$RUNNER_TEMP/statements.md" >> "$GITHUB_STEP_SUMMARY"
           removed=$(jq '.removed | length' "$RUNNER_TEMP/statements.json")
           if [ "$removed" -gt 0 ]; then
-            echo "::warning::Upstream removed or renamed $removed linked declarations. The merged wiki can't build until their articles are relinked, so merge upstream by hand and relink them in the merge. The list is in this run's summary."
+            echo "::warning::Upstream removed or renamed $removed linked declarations, so their pages build without a Lean link until they are relinked. The list is in this run's summary."
           fi
 
       - name: Keep the report for the later jobs
@@ -137,8 +137,8 @@ jobs:
 
       # The rest mirrors the build job of blueprint-pages.yml, with the edges of
       # the last Blueprint Pages run that built them, so no Lean build is needed.
-      # It catches what upstream most often breaks: an article tied to a
-      # declaration upstream removed or renamed.
+      # A declaration upstream removed or renamed doesn't fail it: lean-facts
+      # builds that article without a Lean link, and the report lists it.
       # Only this repository's own runs on the branch count: a pull request
       # from a fork's branch of the same name runs code this repository
       # hasn't reviewed.
