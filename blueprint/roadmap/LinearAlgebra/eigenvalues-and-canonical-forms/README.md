@@ -13,3 +13,6 @@ Eigenvalues, eigenspaces and characteristic polynomials of matrices and endomorp
 - [Triangularization](triangularization/README.md)
 - [Eigenvalues of the inverse matrix](inverse-eigenvalues.md)
 - [Spectral theorem for normal matrices](exists-unitary-diagonal-of-is-star-norma.md)
+- [Eigenvalues under a row-sum bound](eigenvalues-mem-icc-zero-one-of-row-sum.md)
+- [Fixed point and shifted resolvent](fixed-point-iff-shifted-resolvent.md)
+- [Spectral radius under a row-sum bound](spectral-radius-le-one-of-row-sum-le-one.md)
