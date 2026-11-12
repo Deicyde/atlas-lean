@@ -22,6 +22,10 @@ conformal threshold `q̂` is the `k`-th smallest calibration score (counted with
 the test score is covered, `ω (Fin.last n) ≤ q̂`, with probability at least
 `k / (n + 1) ≥ 1 - α`.
 
+The recorded scope of this result is `0 < α < 1`. The coverage theorems assume only `0 ≤ α < 1`:
+the endpoint `α = 0` (`k = n + 1`, `q̂ = +∞`, coverage `1`) is a derived trivial case, not
+attributed to the sources.
+
 The proof goes through the existing permutation p-value
 `MathlibExt.Probability.Statistics.MultipleTesting.permutationPValue`, with the coordinate
 permutation action of `Equiv.Perm (Fin (n + 1))` and the test coordinate as the statistic.
@@ -315,13 +319,14 @@ theorem coe_le_splitConformalThreshold_iff_lt_permutationPValue {α : ℝ} (hα 
     Nat.one_le_ceil_iff.2 (mul_pos (sub_pos.2 hα) (by positivity))
   rw [coe_le_splitConformalThreshold_iff hk, strictLowerCount_lt_ceil_iff_lt_permutationPValue]
 
-/-- **Split conformal coverage at the grid level.** Vovk, Gammerman and Shafer (2005); Lei et al.
-(2018): if the law `μ` of the score vector is a probability measure invariant under every
-coordinate permutation and `0 < α < 1`, then with `k = ⌈(1 - α)(n + 1)⌉` the test score is
-covered by the `k`-th smallest calibration score (`⊤` if `k > n`) with probability at least
-`k / (n + 1)`. The proof applies validity of the permutation p-value at the grid level
-`(n + 1 - k) / (n + 1)`. The statement assumes only `0 ≤ α`; the endpoint `α = 0` (`k = n + 1`,
-coverage `1`) is a derived case. -/
+/-- **Split conformal coverage at the grid level.** If the law `μ` of the score vector is a
+probability measure invariant under every coordinate permutation, then with
+`k = ⌈(1 - α)(n + 1)⌉` the test score is covered by the `k`-th smallest calibration score (`⊤` if
+`k > n`) with probability at least `k / (n + 1)` (Vovk, Gammerman and Shafer 2005; Lei et al.
+2018). The proof applies validity of the permutation p-value at the grid level
+`(n + 1 - k) / (n + 1)`. The recorded scope is `0 < α < 1`; the statement assumes only
+`0 ≤ α < 1`, and the endpoint `α = 0` (`k = n + 1`, coverage `1`) is a derived trivial case, not
+attributed to the sources. -/
 theorem ofReal_ceil_div_le_measure_coe_le_splitConformalThreshold
     (μ : Measure (Fin (n + 1) → ℝ)) [IsProbabilityMeasure μ]
     (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun ω => ω ∘ σ) = μ) {α : ℝ} (hα0 : 0 ≤ α)
@@ -366,9 +371,10 @@ theorem ofReal_ceil_div_le_measure_coe_le_splitConformalThreshold
   exact tsub_le_iff_right.2 h1
 
 /-- **Split conformal coverage.** If the law of the score vector is a probability measure
-invariant under every coordinate permutation and `0 < α < 1`, the test score is covered by the
-split conformal threshold with probability at least `1 - α`. The statement assumes only
-`0 ≤ α`; the endpoint `α = 0` is a derived case. -/
+invariant under every coordinate permutation, the test score is covered by the split conformal
+threshold with probability at least `1 - α`. The recorded scope is `0 < α < 1`; the statement
+assumes only `0 ≤ α < 1`, and the endpoint `α = 0` (coverage `1`) is a derived trivial case, not
+attributed to the sources. -/
 theorem ofReal_one_sub_le_measure_coe_le_splitConformalThreshold
     (μ : Measure (Fin (n + 1) → ℝ)) [IsProbabilityMeasure μ]
     (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun ω => ω ∘ σ) = μ) {α : ℝ} (hα0 : 0 ≤ α)
