@@ -71,15 +71,16 @@ section OrderStatistic
 
 variable {ι : Type*} [Fintype ι]
 
-/-- The `k`-th smallest value of `f`, counted with multiplicity: the least value `f i` such that
-at least `k` indices `j` satisfy `f j ≤ f i`. It is `⊤` when no value qualifies, which for
-`1 ≤ k` happens exactly when `k > Fintype.card ι` (`orderStatistic_eq_top_iff`). For `k = 0` it is
-the minimum of `f` (a junk value; the results below assume `1 ≤ k`). -/
+/-- **Order statistic with multiplicity.** The `k`-th smallest value of `f`, counted with
+multiplicity: the least value `f i` such that at least `k` indices `j` satisfy `f j ≤ f i`. It
+is `⊤` when no value qualifies, which for `1 ≤ k` happens exactly when `k > Fintype.card ι`
+(`orderStatistic_eq_top_iff`). For `k = 0` it is the minimum of `f` (a junk value; the results
+below assume `1 ≤ k`). -/
 noncomputable def orderStatistic (f : ι → ℝ) (k : ℕ) : WithTop ℝ :=
   (univ.filter fun i => k ≤ (univ.filter fun j => f j ≤ f i).card).inf fun i => (f i : WithTop ℝ)
 
-/-- A real `x` lies below the `k`-th smallest value of `f` iff fewer than `k` values of `f` are
-strictly below `x`. -/
+/-- **Strict-count criterion for the order statistic.** For `1 ≤ k`, a real `x` lies below the
+`k`-th smallest value of `f` iff fewer than `k` values of `f` are strictly below `x`. -/
 theorem coe_le_orderStatistic_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x : ℝ) :
     (x : WithTop ℝ) ≤ orderStatistic f k ↔ (univ.filter fun i => f i < x).card < k := by
   constructor
@@ -108,9 +109,9 @@ theorem coe_le_orderStatistic_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x :
       exact Finset.mem_filter.2 ⟨Finset.mem_univ _, (Finset.mem_filter.1 hj).2.trans_lt hlt⟩
     exact absurd ((Finset.mem_filter.1 hi).2.trans (Finset.card_le_card hsub)) (not_le.2 hx)
 
-/-- The `k`-th smallest value of `f` is `x` iff fewer than `k` values are strictly below `x` and
-at least `k` values are at most `x`: the usual characterisation of the `k`-th order statistic
-with multiplicity. -/
+/-- **Characterisation of the order statistic.** For `1 ≤ k`, the `k`-th smallest value of `f`
+is `x` iff fewer than `k` values are strictly below `x` and at least `k` values are at most `x`:
+the usual characterisation of the `k`-th order statistic with multiplicity. -/
 theorem orderStatistic_eq_coe_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x : ℝ) :
     orderStatistic f k = x ↔
       (univ.filter fun i => f i < x).card < k ∧ k ≤ (univ.filter fun i => f i ≤ x).card := by
@@ -144,8 +145,8 @@ theorem orderStatistic_eq_coe_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x :
       · exact absurd le_rfl (hnot r h)
       · rw [h]
 
-/-- For `1 ≤ k`, the `k`-th smallest value of `f` is `⊤` exactly when `f` has fewer than `k`
-values. -/
+/-- **The order statistic is infinite exactly past the sample size.** For `1 ≤ k`, the `k`-th
+smallest value of `f` is `⊤` exactly when `f` has fewer than `k` values. -/
 theorem orderStatistic_eq_top_iff (f : ι → ℝ) {k : ℕ} (hk : 1 ≤ k) :
     orderStatistic f k = ⊤ ↔ Fintype.card ι < k := by
   constructor
@@ -174,18 +175,20 @@ end OrderStatistic
 
 section SplitConformal
 
-/-- The coordinate-permutation action of `Equiv.Perm ι` on vectors `ι → β`,
+/-- **Coordinate-permutation action.** The action of `Equiv.Perm ι` on vectors `ι → β`,
 `(σ • ω) i = ω (σ⁻¹ i)`. This is `arrowAction`, made available as a scoped instance. -/
 scoped instance coordinatePermAction (ι β : Type*) : MulAction (Equiv.Perm ι) (ι → β) :=
   arrowAction
 
-/-- The coordinate-permutation action moves the entry at `σ⁻¹ i` to position `i`. -/
+/-- **Entries of a permuted vector.** The coordinate-permutation action moves the entry at
+`σ⁻¹ i` to position `i`. -/
 theorem coordinatePermAction_smul_apply {ι β : Type*} (σ : Equiv.Perm ι) (ω : ι → β) (i : ι) :
     (σ • ω) i = ω (σ⁻¹ i) :=
   rfl
 
-/-- A law on `ι → β` that is invariant under every coordinate permutation `ω ↦ ω ∘ σ` is
-invariant under the coordinate-permutation action. -/
+/-- **Permutation-invariant laws are invariant under the action.** A law on `ι → β` that is
+invariant under every coordinate permutation `ω ↦ ω ∘ σ` is invariant under the
+coordinate-permutation action. -/
 theorem smulInvariantMeasure_of_map_comp_eq {ι β : Type*} [MeasurableSpace β]
     {μ : Measure (ι → β)} (hμ : ∀ σ : Equiv.Perm ι, μ.map (fun ω => ω ∘ σ) = μ) :
     SMulInvariantMeasure (Equiv.Perm ι) (ι → β) μ := by
@@ -198,18 +201,18 @@ theorem smulInvariantMeasure_of_map_comp_eq {ι β : Type*} [MeasurableSpace β]
 
 variable {n : ℕ}
 
-/-- The number of calibration scores `ω i.castSucc` strictly below the test score
-`ω (Fin.last n)`. -/
+/-- **Strict lower count of the test score.** The number of calibration scores `ω i.castSucc`
+strictly below the test score `ω (Fin.last n)`. -/
 noncomputable def strictLowerCount (ω : Fin (n + 1) → ℝ) : ℕ :=
   (univ.filter fun i : Fin n => ω i.castSucc < ω (Fin.last n)).card
 
-/-- The split conformal threshold: the `k`-th smallest calibration score `ω i.castSucc` (with
+/-- **Split conformal threshold.** The `k`-th smallest calibration score `ω i.castSucc` (with
 multiplicity), and `⊤` when `k > n`. -/
 noncomputable def splitConformalThreshold (k : ℕ) (ω : Fin (n + 1) → ℝ) : WithTop ℝ :=
   orderStatistic (fun i : Fin n => ω i.castSucc) k
 
-/-- The test score is covered by the threshold iff fewer than `k` calibration scores lie
-strictly below it, i.e. `L ≤ k - 1`. -/
+/-- **Coverage through the strict lower count.** For `1 ≤ k`, the test score is covered by the
+threshold iff fewer than `k` calibration scores lie strictly below it, i.e. `L ≤ k - 1`. -/
 theorem coe_le_splitConformalThreshold_iff {k : ℕ} (hk : 1 ≤ k) (ω : Fin (n + 1) → ℝ) :
     (ω (Fin.last n) : WithTop ℝ) ≤ splitConformalThreshold k ω ↔ strictLowerCount ω < k :=
   coe_le_orderStatistic_iff hk _
@@ -240,7 +243,7 @@ private theorem card_filter_inv_apply_eq {N : ℕ} (t i j : Fin N) :
   · simp [mul_assoc]
   · simp [mul_assoc]
 
-/-- The coordinate-permutation p-value of the test coordinate: with the action
+/-- **Permutation p-value of the test score.** With the coordinate-permutation action
 `(σ • ω) i = ω (σ⁻¹ i)` and the statistic `ω ↦ ω (Fin.last n)`, the permutation p-value is
 `(n + 1 - L) / (n + 1)`, where `L` is the number of calibration scores strictly below the test
 score. Each coordinate is moved to the test position by `n!` permutations. -/
@@ -289,8 +292,9 @@ theorem permutationPValue_eval_last (ω : Fin (n + 1) → ℝ) :
   rw [hB]
   field_simp
 
-/-- The strict lower count is below `⌈(1 - α)(n + 1)⌉` iff `α` is below the coordinate
-permutation p-value `(n + 1 - L) / (n + 1)`. No restriction on `α` is needed. -/
+/-- **Rank threshold versus p-value threshold.** The strict lower count is below
+`⌈(1 - α)(n + 1)⌉` iff `α` is below the coordinate-permutation p-value `(n + 1 - L) / (n + 1)`.
+No restriction on `α` is needed. -/
 theorem strictLowerCount_lt_ceil_iff_lt_permutationPValue (α : ℝ) (ω : Fin (n + 1) → ℝ) :
     strictLowerCount ω < ⌈(1 - α) * (n + 1)⌉₊ ↔
       α < permutationPValue (Equiv.Perm (Fin (n + 1)))
@@ -298,9 +302,10 @@ theorem strictLowerCount_lt_ceil_iff_lt_permutationPValue (α : ℝ) (ω : Fin (
   rw [permutationPValue_eval_last, Nat.lt_ceil, lt_div_iff₀ (by positivity)]
   constructor <;> intro h <;> linarith
 
-/-- The split conformal equivalence: for `α < 1` and `k = ⌈(1 - α)(n + 1)⌉`, the test score is
-covered by the threshold `q̂` (the `k`-th smallest calibration score, or `⊤` if `k > n`) iff the
-coordinate-permutation p-value of the test coordinate exceeds `α`. Ties are allowed. -/
+/-- **Split conformal coverage as a permutation test.** For `α < 1` and `k = ⌈(1 - α)(n + 1)⌉`,
+the test score is covered by the threshold `q̂` (the `k`-th smallest calibration score, or `⊤` if
+`k > n`) iff the coordinate-permutation p-value of the test coordinate exceeds `α`. Ties are
+allowed. -/
 theorem coe_le_splitConformalThreshold_iff_lt_permutationPValue {α : ℝ} (hα : α < 1)
     (ω : Fin (n + 1) → ℝ) :
     (ω (Fin.last n) : WithTop ℝ) ≤ splitConformalThreshold ⌈(1 - α) * (n + 1)⌉₊ ω ↔
@@ -310,11 +315,13 @@ theorem coe_le_splitConformalThreshold_iff_lt_permutationPValue {α : ℝ} (hα 
     Nat.one_le_ceil_iff.2 (mul_pos (sub_pos.2 hα) (by positivity))
   rw [coe_le_splitConformalThreshold_iff hk, strictLowerCount_lt_ceil_iff_lt_permutationPValue]
 
-/-- Split conformal coverage (Vovk, Gammerman and Shafer 2005; Lei et al. 2018): if
-the law `μ` of the score vector is a probability measure invariant under every coordinate
-permutation, and `0 ≤ α < 1`, then with `k = ⌈(1 - α)(n + 1)⌉` the test score is covered by the
-`k`-th smallest calibration score (`⊤` if `k > n`) with probability at least `k / (n + 1)`.
-The proof applies validity of the permutation p-value at the grid level `(n + 1 - k) / (n + 1)`. -/
+/-- **Split conformal coverage at the grid level.** Vovk, Gammerman and Shafer (2005); Lei et al.
+(2018): if the law `μ` of the score vector is a probability measure invariant under every
+coordinate permutation and `0 < α < 1`, then with `k = ⌈(1 - α)(n + 1)⌉` the test score is
+covered by the `k`-th smallest calibration score (`⊤` if `k > n`) with probability at least
+`k / (n + 1)`. The proof applies validity of the permutation p-value at the grid level
+`(n + 1 - k) / (n + 1)`. The statement assumes only `0 ≤ α`; the endpoint `α = 0` (`k = n + 1`,
+coverage `1`) is a derived case. -/
 theorem ofReal_ceil_div_le_measure_coe_le_splitConformalThreshold
     (μ : Measure (Fin (n + 1) → ℝ)) [IsProbabilityMeasure μ]
     (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun ω => ω ∘ σ) = μ) {α : ℝ} (hα0 : 0 ≤ α)
@@ -358,8 +365,10 @@ theorem ofReal_ceil_div_le_measure_coe_le_splitConformalThreshold
   rw [hkt, ENNReal.ofReal_sub _ ht.1, ENNReal.ofReal_one]
   exact tsub_le_iff_right.2 h1
 
-/-- Split conformal coverage at level `1 - α`: under coordinate-permutation invariance of the
-score law and `0 ≤ α < 1`, the test score is covered with probability at least `1 - α`. -/
+/-- **Split conformal coverage.** If the law of the score vector is a probability measure
+invariant under every coordinate permutation and `0 < α < 1`, the test score is covered by the
+split conformal threshold with probability at least `1 - α`. The statement assumes only
+`0 ≤ α`; the endpoint `α = 0` is a derived case. -/
 theorem ofReal_one_sub_le_measure_coe_le_splitConformalThreshold
     (μ : Measure (Fin (n + 1) → ℝ)) [IsProbabilityMeasure μ]
     (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun ω => ω ∘ σ) = μ) {α : ℝ} (hα0 : 0 ≤ α)
