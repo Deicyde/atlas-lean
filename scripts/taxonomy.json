@@ -3101,6 +3101,7 @@
   "MathlibExt/MeasureTheory/Group/GL2Haar": {"to": "MeasureTheory/haar-measure", "title": "Unimodular groups"},
   "MathlibExt/MeasureTheory/Group/LocallyConstantCutoff": {"to": "MeasureTheory/haar-measure", "title": "Bruhat functions"},
   "MathlibExt/MeasureTheory/Integral/CarlemanStieltjesCriterion": {"to": "Analysis/harmonic-analysis/integral-transforms", "title": "Stieltjes moment problem"},
+  "MathlibExt/MeasureTheory/Integral/LorentzianWidth": {"to": "MeasureTheory/integration", "title": "Lorentzian width monotonicity"},
   "MathlibExt/MeasureTheory/Integral/LyapunovConvexity": {"to": "MeasureTheory/measures", "title": "Lyapunov convexity theorem"},
   "MathlibExt/MeasureTheory/Integral/PrekopaLeindler": {"to": "Geometry/convex-geometry", "title": "Brunn–Minkowski and Prékopa–Leindler inequalities"},
   "MathlibExt/MeasureTheory/Measure/Atomless": {"to": "MeasureTheory/measures", "title": "Atomless measures"},
