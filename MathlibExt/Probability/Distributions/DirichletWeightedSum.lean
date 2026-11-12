@@ -40,10 +40,9 @@ for the truncated power of degree `0`; the stated theorem assumes `n ≥ 1`, whe
 
 ## References
 
-* H. B. Curry, I. J. Schoenberg, *On Pólya frequency functions IV: the fundamental spline
-  functions and their limits*, J. Analyse Math. 17 (1966), 71–107.
 * N. L. Johnson, S. Kotz, N. Balakrishnan, *Continuous Multivariate Distributions, Vol. 1*,
-  Wiley, 2000, Chapter 49.
+  Wiley, 2000, Chapter 49 (background on the Dirichlet distribution, as cited in
+  `MathlibExt.Probability.Distributions.Dirichlet`; not a source for the formula above).
 -/
 
 @[expose] public section
