@@ -17,3 +17,4 @@ Tests and their validity and power: Neyman–Pearson, likelihood-ratio, score an
 - [Permutation tests](permutation-tests/README.md)
 - [Two-groups model and local false discovery rates](two-groups-model-and-local-false-discovery-rates/README.md)
 - [Neyman–Pearson lemma](neyman-pearson-dominated-two-simple.md)
+- [Split conformal prediction](split-conformal-prediction/README.md)

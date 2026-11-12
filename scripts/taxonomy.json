@@ -3922,6 +3922,7 @@
   "MathlibExt/Probability/Statistics/MultipleTesting/PermutationPValue": {"to": "Probability/hypothesis-testing", "title": "Permutation tests"},
   "MathlibExt/Probability/Statistics/NeymanPearson": {"to": "Probability/hypothesis-testing", "title": "Neyman–Pearson lemma"},
   "MathlibExt/Probability/Statistics/PCA": {"to": "Probability/linear-models-multivariate", "title": "Principal component analysis"},
+  "MathlibExt/Probability/Statistics/SplitConformal": {"to": "Probability/hypothesis-testing", "title": "Split conformal prediction"},
   "MathlibExt/Probability/Statistics/SteinLemma": {"to": "Probability/statistical-estimation", "title": "Stein's lemma and James–Stein estimation"},
   "MathlibExt/Probability/Statistics/Sufficiency/Basic": {"to": "Probability/statistical-estimation", "title": "Sufficient statistics and the factorization theorem"},
   "MathlibExt/Probability/Statistics/Sufficiency/Discrete": {"to": "Probability/statistical-estimation", "title": "Sufficient statistics and the factorization theorem"},
