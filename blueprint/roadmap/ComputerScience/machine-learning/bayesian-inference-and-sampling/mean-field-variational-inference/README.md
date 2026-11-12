@@ -26,3 +26,16 @@
 - [Mean-field coordinate-ascent sweep](sweep.md)
 - [A sweep of coordinate ascent does not decrease the ELBO](elbo-le-elbo-sweep.md)
 - [Mean-field coordinate ascent never decreases the ELBO](elbo-iterate-sweep-monotone.md)
+
+## The mean-field fixed-point map
+
+- [The mean-field fixed-point map](mean-field-map.md)
+- [The mean-field map takes values in the open cube](abs-mean-field-map-apply-lt-one.md)
+- [The hyperbolic tangent is 1-Lipschitz](lipschitz-with-tanh.md)
+- [The mean-field map is a contraction for a coupling of norm below one](contracting-with-mean-field-map.md)
+- [Fixed points of the mean-field map are the solutions of artanh m = U m + h](mean-field-map-eq-self-iff.md)
+- [Existence and uniqueness of the mean-field fixed point](exists-unique-mean-field-map-eq-self.md)
+- [Error of an approximate fixed-point iteration](dist-iterate-le-of-dist-le.md)
+- [Error of an approximate fixed-point iteration, closed form](dist-iterate-le-of-dist-le-2.md)
+- [Error of an approximate mean-field iteration](dist-iterate-le-of-dist-le-mean-field-ma.md)
+- [Quadratic binary mean-field free energy](quadratic-binary-free-energy.md)

@@ -17,3 +17,6 @@ Classes of matrices defined by their structure or entries: Toeplitz, Hankel and 
 - [Zagier's matrix and Bernoulli numbers](zagier-s-matrix-and-bernoulli-numbers/README.md)
 - [Hadamard bound for zero-one determinants](hadamard-zero-one-determinant-bound.md)
 - [The van der Waerden permanent bound](van-der-waerden-permanent.md)
+- [Semiseparable matrices](semiseparable-matrices/README.md)
+- [Generalized Householder matrices](generalized-householder-matrices/README.md)
+- [Real planar rotation matrices](real-planar-rotation-matrices.md)

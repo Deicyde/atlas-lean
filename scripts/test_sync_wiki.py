@@ -196,6 +196,38 @@ class LeanFacts(Vault):
         self.assertEqual(row, {"subject": [{"type": "generic", "uri": "../roadmap/Algebra/gone.md"}], "id": "af_1"})
         self.assertEqual((wiki.ROADMAP / "Algebra" / "gone.md").read_text(), "# Gone\n\nRemoved upstream.\n")
 
+    def test_pages_the_declarations_sync_wrote_get_their_facts(self) -> None:
+        # declarations marks its pages with {"from": "docstring"}, and with a module and name only when the index
+        # can't see the declaration; lean-facts must read both shapes.
+        source = self.tmp / "Ext" / "Groups.lean"
+        source.parent.mkdir(parents=True)
+        source.write_text("theorem order_pos : True := trivial\ntheorem_wanted conjecture : True\n")
+        self.page("Algebra/order-pos.md", "# Order is positive\n\nIt is.\n")
+        self.page("Algebra/conjecture.md", "# Conjecture\n\nOpen.\n")
+        self.annotate([
+            self.about("Algebra/order-pos.md", object=[{"location": {"declaration": "Ext.order_pos"}}],
+                       extensions={"org.atlas-wiki": {"from": "docstring"}}),
+            self.about("Algebra/conjecture.md",
+                       extensions={"org.atlas-wiki": {"from": "docstring", "module": "Ext.Groups", "name": "conjecture"}}),
+        ])
+        declarations = {"Ext.order_pos": SimpleNamespace(keyword="theorem", path=Path("Ext/Groups.lean"))}
+        dependencies = {
+            "Ext.order_pos": {"module": "Ext.Groups", "statement": [], "proof": ["conjecture"]},
+            "conjecture": {"module": "Ext.Groups", "statement": [], "proof": []},
+        }
+        counts, unlinked = sync.apply_lean_facts(SimpleNamespace(declarations=declarations), dependencies)
+        self.assertEqual(counts, {"articles": 2, "unresolved": 0, "edges": 1})
+        self.assertEqual(unlinked, [])
+        rows = {sync.subject_path(row).name: row for row in sync.read_annotations()[sync.LINKS / "Algebra.jsonl"]}
+        self.assertEqual((rows["order-pos.md"]["kind"], rows["order-pos.md"]["status"]), ("theorem", "formalized"))
+        self.assertEqual(rows["order-pos.md"]["extensions"], {"org.atlas-wiki": {"from": "docstring"}})
+        self.assertEqual(rows["conjecture.md"]["kind"], "theorem")
+        self.assertEqual(
+            (wiki.ROADMAP / "Algebra" / "order-pos.md").read_text(),
+            "# Order is positive\n\nIt is.\n\n## Depends on\n\nThis node has no prerequisites.\n\n"
+            "## Proof depends on\n\n- [Conjecture](conjecture.md)\n",
+        )
+
 
 def declaration(name: str | None, short: str, title: str, text: str, module=("Ext", "Groups")) -> wiki.Target:
     return wiki.Target(book="Ext", idx=0, title=title, slug=wiki.slugify(short), location="Algebra", description=text,
@@ -277,6 +309,30 @@ class Declarations(Vault):
                    declaration("Ext.new", "new", "New", "New.")]
         index = SimpleNamespace(declarations={"Ext.old": None, "Ext.older": None, "Ext.new": None})
         self.assertEqual(sync.apply_declarations(targets, index)["added"], ["Ext.new -> Algebra/new.md"])
+
+    def test_a_page_rebound_to_its_moved_declaration_keeps_its_place(self) -> None:
+        # Upstream moved a declaration to another module and namespace. Until an editor points the page's annotation at
+        # the new name, the page is gone and the new name would get a second page; after it, neither.
+        readme = "# Groups\n\n- [Old](old.md)\n"
+        self.page("Algebra/README.md", "# Algebra\n")
+        self.page("Algebra/groups/README.md", readme)
+        old = self.page("Algebra/groups/old.md", "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Groups.old"}}])])
+        index = SimpleNamespace(declarations={"Ext.Framework.old": None})
+        moved = [declaration("Ext.Framework.old", "old", "Old", "Upstream text.", module=("Ext", "Framework"))]
+        before = sync.apply_declarations(moved, index)
+        self.assertEqual(before["gone"], ["Ext.Groups.old (Algebra/groups/old.md)"])
+        self.assertEqual(before["added"], ["Ext.Framework.old -> Algebra/old.md"])
+        (wiki.ROADMAP / "Algebra" / "old.md").unlink()
+        self.page("Algebra/README.md", "# Algebra\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Framework.old"}}])])
+        after = sync.apply_declarations(moved, index)
+        self.assertEqual((after["added"], after["gone"], after["changed"]), ([], [], []))
+        self.assertEqual(old.read_text(), "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "README.md").read_text(), readme)
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "README.md").read_text(), "# Algebra\n")
+        self.assertEqual(sync.read_annotations()[sync.LINKS / "Algebra.jsonl"],
+                         [self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.Framework.old"}}])])
 
     def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")

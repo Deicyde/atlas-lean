@@ -61,3 +61,5 @@
 - [The M-step of the full-covariance Gaussian mixture maximizes the EM objective](em-q-le-em-step-3.md)
 - [Each EM step for the full-covariance Gaussian mixture does not decrease the log-likelihood](log-lik-le-em-step-3.md)
 - [The log-likelihood is monotone along the EM iterates of a full-covariance Gaussian mixture](log-lik-iterate-em-step-monotone-3.md)
+- [The score of an isotropic Gaussian mixture with a common variance](has-gradient-at-log-marginal-joint.md)
+- [Finite-support Tweedie score identity](has-gradient-at-log-marginal-joint-of-me.md)

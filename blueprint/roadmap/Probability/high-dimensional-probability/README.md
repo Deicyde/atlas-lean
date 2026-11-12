@@ -1,6 +1,6 @@
 # High-dimensional and geometric probability
 
-Probability in high dimension and on geometric objects: log-concave and uniform convex-body laws, isotropic constants, the KLS and thin-shell conjectures and their bounds, random matrices (singularity of Bernoulli matrices, Tracy–Widom limits), and random Euclidean optimization (Beardwood–Halton–Hammersley).
+Probability in high dimension and on geometric objects: log-concave and uniform convex-body laws, isotropic constants, the KLS and thin-shell conjectures and their bounds, random matrices (singularity of Bernoulli matrices, Tracy–Widom limits), random Euclidean optimization (Beardwood–Halton–Hammersley), and suprema of selector and positive empirical processes (Park–Pham theorems).
 
 - [Beardwood–Halton–Hammersley theorem](beardwood-halton-hammersley-theorem/README.md)
 - [Singularity of random Bernoulli matrices](singularity-of-random-bernoulli-matrices/README.md)

@@ -12,13 +12,20 @@
 
 ## Order and contraction facts, in any ordered field
 
+- [Action values are monotone in the value estimate](q-value-mono.md)
+- [The Bellman optimality operator is monotone](bellman-mono.md)
+- [A policy's Bellman operator is monotone](policy-bellman-mono.md)
 - [A policy's Bellman update is at most the optimal one](policy-bellman-le-bellman.md)
 - [The greedy action attains the Bellman maximum](q-value-greedy.md)
+- [A greedy policy's Bellman update is the optimal update](policy-bellman-greedy.md)
+- [Action values contract by γ](abs-q-value-sub-le.md)
 - [The Bellman operator contracts by $\gamma$](abs-bellman-sub-le.md)
+- [A policy's Bellman operator contracts by γ](abs-policy-bellman-sub-le.md)
 
 ## Real values: contraction, value iteration, optimality
 
 - [Bellman's operator is a contraction](bellman-contracting.md)
+- [A policy's Bellman operator is a contraction](policy-bellman-contracting.md)
 - [Optimal value of a discounted Markov decision process](optimal-value.md)
 - [Value of a policy](policy-value.md)
 - [The optimal value solves the Bellman optimality equation](bellman-optimal-value.md)

@@ -34,6 +34,9 @@ that, with no assumption on the dependence among the p-values, running BH at the
 
 * `bhIndex_le_numBelow`, `le_bhIndex`: `bhIndex q p` is the largest qualifying `k`.
 * `card_bhRejections`: BH at level `q ≥ 0` rejects exactly `bhIndex q p` hypotheses.
+* `mem_bhRejections_iff_le_bhIndex_update`, `mem_bhRejections_iff_bhIndex_eq_update`: the
+  leave-one-out characterisation of a rejection, via the index with the p-value replaced by `0`
+  (Fithian–Lei 2020, Lemma 1).
 * `integral_falseDiscoveryProportion_bhRejections_le_of_isValidPValue`: `E[FDP] ≤ q |H0| / m`
   for independent p-values whose true-null p-values are valid (super-uniform)
   (Benjamini–Hochberg 1995, Theorem 1).
@@ -52,6 +55,8 @@ that, with no assumption on the dependence among the p-values, running BH at the
 * Y. Benjamini and D. Yekutieli, *The control of the false discovery rate in multiple testing
   under dependency*, Ann. Statist. 29 (2001), 1165–1188, Theorem 1.3.
 * B. Efron, *Large-Scale Inference*, Cambridge University Press (2010), §4.2.
+* W. Fithian and L. Lei, *Conditional calibration for false discovery rate control under
+  dependence*, arXiv:2007.10438 (2020), Lemma 1.
 -/
 
 @[expose] public section
@@ -166,6 +171,51 @@ private theorem bh_leave_one_out {m k : ℕ} {q : ℝ} (hq : 0 ≤ q) (p : Fin m
   · rintro ⟨hpi, hk⟩
     have heq := bhIndex_update_eq hq p i (by simpa [hk] using hpi)
     exact ⟨by simpa [heq, hk] using hpi, heq.trans hk⟩
+
+private theorem numBelow_lt_update {m : ℕ} (p : Fin m → ℝ) (i : Fin m) {t : ℝ}
+    (ht : 0 ≤ t) (hpi : t < p i) : numBelow p t < numBelow (Function.update p i 0) t := by
+  classical
+  apply Finset.card_lt_card
+  refine (Finset.ssubset_iff_of_subset fun j hj => ?_).mpr ⟨i, ?_, ?_⟩
+  · refine Finset.mem_filter.mpr ⟨Finset.mem_univ _, ?_⟩
+    by_cases hji : j = i
+    · simpa [hji] using ht
+    · simpa [Function.update_of_ne hji] using (Finset.mem_filter.mp hj).2
+  · simpa using ht
+  · simpa using hpi
+
+/-- **Leave-one-out criterion for Benjamini–Hochberg rejection.** At a level `q ≥ 0`,
+hypothesis `i` is rejected by the BH procedure exactly when its p-value is at most
+`q k⁰ / m`, where `k⁰` is the BH step-up index computed after replacing the `i`-th p-value
+by `0`. No sign condition is imposed on the p-values.
+
+Source: W. Fithian and L. Lei, *Conditional calibration for false discovery rate control under
+dependence*, arXiv:2007.10438 (2020), Lemma 1, stated there for general step-up procedures. -/
+theorem mem_bhRejections_iff_le_bhIndex_update {q : ℝ} (hq : 0 ≤ q) (p : Fin m → ℝ)
+    (i : Fin m) :
+    i ∈ bhRejections q p ↔ p i ≤ q * bhIndex q (Function.update p i 0) / m := by
+  simp only [bhRejections, Finset.mem_filter, Finset.mem_univ, true_and]
+  refine ⟨fun hpi => hpi.trans (threshold_mono hq (bhIndex_le_update hq p i)), fun hpi => ?_⟩
+  rwa [bhIndex_update_eq hq p i hpi]
+
+/-- **Benjamini–Hochberg rejection as leave-one-out index invariance.** At a level `q ≥ 0`,
+hypothesis `i` is rejected by the BH procedure exactly when replacing its p-value by `0` leaves
+the BH step-up index unchanged. No sign condition is imposed on the p-values.
+
+Source: W. Fithian and L. Lei, *Conditional calibration for false discovery rate control under
+dependence*, arXiv:2007.10438 (2020), Lemma 1, stated there for general step-up procedures. -/
+theorem mem_bhRejections_iff_bhIndex_eq_update {q : ℝ} (hq : 0 ≤ q) (p : Fin m → ℝ)
+    (i : Fin m) :
+    i ∈ bhRejections q p ↔ bhIndex q p = bhIndex q (Function.update p i 0) := by
+  rw [mem_bhRejections_iff_le_bhIndex_update hq]
+  refine ⟨bhIndex_update_eq hq p i, fun h => ?_⟩
+  by_contra! hlt
+  have hp := bhIndex_le_numBelow q p
+  rw [h] at hp
+  have hlt' := numBelow_lt_update p i (threshold_nonneg hq) hlt
+  have hcard : numBelow (Function.update p i 0) (q * bhIndex q (Function.update p i 0) / m) =
+      bhIndex q (Function.update p i 0) := card_bhRejections hq _
+  omega
 
 private theorem measurable_numBelow {m : ℕ} {Ω : Type*} [MeasurableSpace Ω]
     (p : Fin m → Ω → ℝ) (hp : ∀ i, Measurable (p i)) (t : ℝ) :

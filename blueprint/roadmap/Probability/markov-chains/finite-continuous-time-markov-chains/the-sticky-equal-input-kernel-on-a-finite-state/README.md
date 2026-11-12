@@ -23,3 +23,5 @@
 - [Semigroup law](sticky-kernel-exp-add.md)
 - [Covariance under the sticky kernel](covariance-sticky-kernel.md)
 - [Two-state ancestry covariance](covariance-indicator-sticky-kernel-two.md)
+- [Transition function of the two-state chain](ctmc-transition-two-state-rate.md)
+- [Two-state generators are equal-input generators](two-state-rate-eq-equal-input-rate.md)
