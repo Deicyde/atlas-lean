@@ -58,11 +58,16 @@ multiplicities and loops and is used only for connectivity. -/
 def underlyingGraph : SimpleGraph V :=
   SimpleGraph.fromRel fun u v => ∃ e, end₁ e = u ∧ end₂ e = v
 
+/-- **Adjacency in the underlying graph.** Vertices `u` and `v` are adjacent in
+`underlyingGraph end₁ end₂` if and only if they are distinct and some edge joins them, in either
+orientation. -/
 theorem underlyingGraph_adj {u v : V} :
     (underlyingGraph end₁ end₂).Adj u v ↔
       u ≠ v ∧ ∃ e, (end₁ e = u ∧ end₂ e = v) ∨ (end₁ e = v ∧ end₂ e = u) := by
   simp only [underlyingGraph, SimpleGraph.fromRel_adj, exists_or]
 
+/-- **An edge joins its endpoints in the underlying graph.** An edge whose endpoints are distinct
+makes them adjacent in `underlyingGraph end₁ end₂`. -/
 theorem underlyingGraph_adj_of_ne {e : E} (h : end₁ e ≠ end₂ e) :
     (underlyingGraph end₁ end₂).Adj (end₁ e) (end₂ e) :=
   (underlyingGraph_adj end₁ end₂).2 ⟨h, e, Or.inl ⟨rfl, rfl⟩⟩
@@ -103,22 +108,32 @@ edges, including parallel ones, give distinct columns. -/
 def orientedIncidence : Matrix V E ℝ :=
   Matrix.of fun v e => (if end₁ e = v then 1 else 0) - if end₂ e = v then 1 else 0
 
+/-- **Entries of the oriented incidence matrix.** Entry `(v, e)` is `[end₁ e = v] - [end₂ e = v]`.
+-/
 theorem orientedIncidence_apply (v : V) (e : E) :
     orientedIncidence end₁ end₂ v e =
       (if end₁ e = v then 1 else 0) - if end₂ e = v then 1 else 0 := rfl
 
+/-- **First-endpoint entry.** If the endpoints of `e` are distinct, the entry of
+`orientedIncidence end₁ end₂` at `(end₁ e, e)` is `1`. -/
 theorem orientedIncidence_apply_end₁ {e : E} (h : end₁ e ≠ end₂ e) :
     orientedIncidence end₁ end₂ (end₁ e) e = 1 := by
   simp [orientedIncidence_apply, Ne.symm h]
 
+/-- **Second-endpoint entry.** If the endpoints of `e` are distinct, the entry of
+`orientedIncidence end₁ end₂` at `(end₂ e, e)` is `-1`. -/
 theorem orientedIncidence_apply_end₂ {e : E} (h : end₁ e ≠ end₂ e) :
     orientedIncidence end₁ end₂ (end₂ e) e = -1 := by
   simp [orientedIncidence_apply, h]
 
+/-- **Entries away from the endpoints.** The column of `e` vanishes at every vertex other than
+`end₁ e` and `end₂ e`. -/
 theorem orientedIncidence_apply_of_ne {v : V} {e : E} (h₁ : end₁ e ≠ v) (h₂ : end₂ e ≠ v) :
     orientedIncidence end₁ end₂ v e = 0 := by
   simp [orientedIncidence_apply, h₁, h₂]
 
+/-- **Row vector times the oriented incidence matrix.** Entry `e` of
+`x ᵥ* orientedIncidence end₁ end₂` is the difference `x (end₁ e) - x (end₂ e)` across `e`. -/
 theorem vecMul_orientedIncidence_apply [Fintype V] (x : V → ℝ) (e : E) :
     (x ᵥ* orientedIncidence end₁ end₂) e = x (end₁ e) - x (end₂ e) := by
   simp [Matrix.vecMul, dotProduct, orientedIncidence_apply, mul_sub, Finset.sum_sub_distrib]
@@ -264,9 +279,13 @@ basis vector at the anchor `b j`. -/
 def boundaryColumns {F : Type*} (b : F → V) (σ : F → ℝ) : Matrix V F ℝ :=
   Matrix.of fun v j => if b j = v then σ j else 0
 
+/-- **Entries of the boundary-column matrix.** Entry `(v, j)` is `σ j` if `b j = v` and `0`
+otherwise. -/
 theorem boundaryColumns_apply {F : Type*} (b : F → V) (σ : F → ℝ) (v : V) (j : F) :
     boundaryColumns b σ v j = if b j = v then σ j else 0 := rfl
 
+/-- **Row vector times the boundary columns.** Entry `j` of `x ᵥ* boundaryColumns b σ` is
+`x (b j) * σ j`. -/
 theorem vecMul_boundaryColumns_apply [Fintype V] {F : Type*} (b : F → V) (σ : F → ℝ)
     (x : V → ℝ) (j : F) : (x ᵥ* boundaryColumns b σ) j = x (b j) * σ j := by
   simp [Matrix.vecMul, dotProduct, boundaryColumns_apply]
