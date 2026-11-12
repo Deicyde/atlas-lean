@@ -17860,6 +17860,8 @@
 "MathlibExt.Analysis.SpecialFunctions.IntegralInvAddMulCosWanted.integral_one_div_add_mul_cos_eq": "6a2ff3c25ad95907",
 "MathlibExt.Analysis.SpecialFunctions.IntegralLogOnePlusOverOnePlusSqWanted.integral_log_one_add_div_one_add_sq": "b7dd175d4a05b9af",
 "MathlibExt.Analysis.SpecialFunctions.IntegralSincSqHalfLineWanted.integral_sin_div_sq_Ioi_eq_pi_div_two": "a4c2aac9b6487a68",
+"MathlibExt.Analysis.SpecialFunctions.OneStepPayoffMax.payoff_le_of_eq_max_sqrt": "4898b994e5fb7d42",
+"MathlibExt.Analysis.SpecialFunctions.OneStepPayoffMax.sq_eq_mul_iff_of_eq_max_sqrt": "164fa0a204483dbb",
 "MathlibExt.Analysis.SpecialFunctions.TsumInvSqShiftEqPiSqDivSinSqWanted.tsum_one_div_add_int_sq_eq_pi_sq_div_sin_sq": "641ad2ac985cd042",
 "MathlibExt.Analysis.SpecificLimits.AlternatingPairWeightedSeriesConvergesWanted.exists_tendsto_sum_inv_sq_smul_alternating_pair": "4c4175338c3b6469",
 "MathlibExt.Analysis.SpecificLimits.ExpNegSqrtNormSelfConvolutionLimitWanted.f": "336f16d9fbbd9f68",
