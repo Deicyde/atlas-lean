@@ -3758,6 +3758,7 @@
   "MathlibExt/Probability/Diffusion/FokkerPlanckGradient": {"to": "Probability/stochastic-calculus", "title": "Fokker–Planck equation"},
   "MathlibExt/Probability/DirichletProcess": {"to": "Probability/bayesian-statistics", "title": "Dirichlet process"},
   "MathlibExt/Probability/Distributions/BetaBinomial": {"to": "Probability/distributions", "title": "Negative binomial and beta-binomial distributions"},
+  "MathlibExt/Probability/Distributions/BetaBinomialSampleRank": {"to": "Probability/distributions", "title": "Negative binomial and beta-binomial distributions"},
   "MathlibExt/Probability/Distributions/BetaMoments": {"to": "Probability/distributions", "title": "Beta distribution"},
   "MathlibExt/Probability/Distributions/BinomialMoments": {"to": "Probability/distributions", "title": "Binomial distribution"},
   "MathlibExt/Probability/Distributions/ChiSquare": {"to": "Probability/distributions", "title": "Chi-square distribution"},

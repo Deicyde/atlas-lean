@@ -47,6 +47,7 @@ throughout, and the test score is covered when it equals `q̂`.
 
 * `coe_le_orderStatistic_iff`, `orderStatistic_eq_coe_iff`, `orderStatistic_eq_top_iff`: the
   order statistic is characterised by strict and weak counts.
+* `orderStatistic_le_coe_iff`: `orderStatistic f k ≤ x ↔ k ≤ #{i | f i ≤ x}`, the weak-count dual.
 * `permutationPValue_eval_last`: the coordinate-permutation p-value of the test coordinate is
   `(n + 1 - L) / (n + 1)`.
 * `coe_le_splitConformalThreshold_iff`: `ω (Fin.last n) ≤ q̂ ↔ L < k`.
@@ -112,6 +113,38 @@ theorem coe_le_orderStatistic_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x :
       intro j hj
       exact Finset.mem_filter.2 ⟨Finset.mem_univ _, (Finset.mem_filter.1 hj).2.trans_lt hlt⟩
     exact absurd ((Finset.mem_filter.1 hi).2.trans (Finset.card_le_card hsub)) (not_le.2 hx)
+
+/-- **Weak-count criterion for the order statistic.** For `1 ≤ k`, the `k`-th smallest value of
+`f` is at most a real `x` iff at least `k` values of `f` are at most `x`. This is the dual of
+`coe_le_orderStatistic_iff`; it fails for `k = 0`. -/
+theorem orderStatistic_le_coe_iff {f : ι → ℝ} {k : ℕ} (hk : 1 ≤ k) (x : ℝ) :
+    orderStatistic f k ≤ (x : WithTop ℝ) ↔ k ≤ (univ.filter fun i => f i ≤ x).card := by
+  constructor
+  · intro h
+    set s := univ.filter fun i => k ≤ (univ.filter fun j => f j ≤ f i).card
+    rcases s.eq_empty_or_nonempty with hs | hs
+    · have htop : orderStatistic f k = ⊤ := by simp [orderStatistic, s, hs]
+      rw [htop] at h
+      exact absurd h (by simp)
+    obtain ⟨i, hi, hinf⟩ := Finset.exists_mem_eq_inf s hs fun i => (f i : WithTop ℝ)
+    have hfi : f i ≤ x := by
+      have h' : (f i : WithTop ℝ) ≤ x := by
+        rw [← hinf]
+        exact h
+      exact WithTop.coe_le_coe.1 h'
+    refine (Finset.mem_filter.1 hi).2.trans (Finset.card_le_card fun j hj => ?_)
+    exact Finset.mem_filter.2 ⟨Finset.mem_univ _, (Finset.mem_filter.1 hj).2.trans hfi⟩
+  · intro h
+    have hne : (univ.filter fun i => f i ≤ x).Nonempty := by
+      rw [← Finset.card_pos]
+      omega
+    obtain ⟨i₀, hi₀, hmax⟩ := Finset.exists_max_image _ f hne
+    have hsub : (univ.filter fun i => f i ≤ x) ⊆ univ.filter fun j => f j ≤ f i₀ := by
+      intro j hj
+      exact Finset.mem_filter.2 ⟨Finset.mem_univ _, hmax j hj⟩
+    have hmem : i₀ ∈ univ.filter fun i => k ≤ (univ.filter fun j => f j ≤ f i).card :=
+      Finset.mem_filter.2 ⟨Finset.mem_univ _, h.trans (Finset.card_le_card hsub)⟩
+    exact (Finset.inf_le hmem).trans (WithTop.coe_le_coe.2 (Finset.mem_filter.1 hi₀).2)
 
 /-- **Characterisation of the order statistic.** For `1 ≤ k`, the `k`-th smallest value of `f`
 is `x` iff fewer than `k` values are strictly below `x` and at least `k` values are at most `x`:

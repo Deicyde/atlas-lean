@@ -14,3 +14,4 @@
 - [Split conformal coverage as a permutation test](coe-le-split-conformal-threshold-iff-lt.md)
 - [Split conformal coverage at the grid level](of-real-ceil-div-le-measure-coe-le-split.md)
 - [Split conformal coverage](of-real-one-sub-le-measure-coe-le-split.md)
+- [Weak-count criterion for the order statistic](order-statistic-le-coe-iff.md)

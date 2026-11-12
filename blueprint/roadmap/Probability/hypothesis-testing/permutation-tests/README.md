@@ -10,3 +10,4 @@
 - [Mean edge cut of a uniform `t`-subset](mean-card-interedges-compl-powerset-card.md)
 - [Sum of the edge cut over all `t`-subsets](sum-card-interedges-compl-powerset-card.md)
 - [Variance of the edge cut of a uniform `t`-subset](variance-card-interedges-compl-powerset.md)
+- [Averaging over an invariant finite group](measure-eq-card-div-of-ae-card-filter-sm.md)
