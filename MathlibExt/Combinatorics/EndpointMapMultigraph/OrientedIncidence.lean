@@ -52,8 +52,9 @@ section Graph
 
 variable {V E : Type*} (end₁ end₂ : E → V)
 
-/-- The simple graph on `V` in which distinct vertices are adjacent when some edge joins them.
-It forgets multiplicities and loops and is used only for connectivity. -/
+/-- **Underlying simple graph of a multigraph.** For endpoint maps `end₁ end₂ : E → V`, the
+simple graph on `V` in which distinct vertices are adjacent when some edge joins them. It forgets
+multiplicities and loops and is used only for connectivity. -/
 def underlyingGraph : SimpleGraph V :=
   SimpleGraph.fromRel fun u v => ∃ e, end₁ e = u ∧ end₂ e = v
 
@@ -66,7 +67,9 @@ theorem underlyingGraph_adj_of_ne {e : E} (h : end₁ e ≠ end₂ e) :
     (underlyingGraph end₁ end₂).Adj (end₁ e) (end₂ e) :=
   (underlyingGraph_adj end₁ end₂).2 ⟨h, e, Or.inl ⟨rfl, rfl⟩⟩
 
-/-- Reachability in the underlying graph is reachability through edges of the multigraph. -/
+/-- **Reachability in the underlying graph.** Reachability in `underlyingGraph end₁ end₂` is
+reachability through edges of the multigraph, `Relation.ReflTransGen` of `AdjacentUsing` on all
+edges. -/
 theorem underlyingGraph_reachable_iff [Fintype E] {u v : V} :
     (underlyingGraph end₁ end₂).Reachable u v ↔
       Relation.ReflTransGen (AdjacentUsing end₁ end₂ Finset.univ) u v := by
@@ -94,9 +97,9 @@ section Incidence
 
 variable {V E : Type*} [DecidableEq V] (end₁ end₂ : E → V)
 
-/-- The real oriented incidence matrix of the multigraph with endpoint maps `end₁ end₂`:
-column `e` is `+1` at `end₁ e` and `-1` at `end₂ e`. Distinct edges, including parallel
-ones, give distinct columns. -/
+/-- **Oriented incidence matrix of a multigraph.** The real `V × E` matrix of the multigraph
+with endpoint maps `end₁ end₂`: column `e` is `+1` at `end₁ e` and `-1` at `end₂ e`. Distinct
+edges, including parallel ones, give distinct columns. -/
 def orientedIncidence : Matrix V E ℝ :=
   Matrix.of fun v e => (if end₁ e = v then 1 else 0) - if end₂ e = v then 1 else 0
 
@@ -120,8 +123,9 @@ theorem vecMul_orientedIncidence_apply [Fintype V] (x : V → ℝ) (e : E) :
     (x ᵥ* orientedIncidence end₁ end₂) e = x (end₁ e) - x (end₂ e) := by
   simp [Matrix.vecMul, dotProduct, orientedIncidence_apply, mul_sub, Finset.sum_sub_distrib]
 
-/-- The left kernel of the oriented incidence matrix of a loopless multigraph consists of the
-vectors that are constant on each connected component of `underlyingGraph end₁ end₂`. -/
+/-- **Left kernel of the oriented incidence matrix.** For a loopless multigraph with finitely
+many vertices, a real vector `x` satisfies `x ᵥ* orientedIncidence end₁ end₂ = 0` if and only if
+`x` is constant on each connected component of `underlyingGraph end₁ end₂`. -/
 theorem vecMul_orientedIncidence_eq_zero_iff [Fintype V] (hloop : ∀ e, end₁ e ≠ end₂ e)
     (x : V → ℝ) :
     x ᵥ* orientedIncidence end₁ end₂ = 0 ↔
@@ -160,8 +164,9 @@ private theorem mulVec_surjective_iff_vecMul_eq_zero {m n : Type*} [Fintype m] [
   rw [hker, ← Submodule.finrank_eq_zero]
   omega
 
-/-- Rank–nullity form of the incidence rank formula: the rank of the oriented incidence matrix of
-a loopless finite multigraph plus its number of connected components is its number of vertices. -/
+/-- **Incidence rank plus number of components.** For a loopless finite multigraph, the rank of
+its real oriented incidence matrix plus the number of connected components of
+`underlyingGraph end₁ end₂` equals the number of vertices. -/
 theorem rank_orientedIncidence_add_card_connectedComponent [Fintype V] [Fintype E]
     (hloop : ∀ e, end₁ e ≠ end₂ e) :
     (orientedIncidence end₁ end₂).rank +
@@ -192,8 +197,9 @@ theorem rank_orientedIncidence_add_card_connectedComponent [Fintype V] [Fintype 
   rw [Nat.card_eq_fintype_card]
   exact hrn
 
-/-- The rank of the oriented incidence matrix of a loopless finite multigraph is the number of
-vertices minus the number of connected components. -/
+/-- **Rank of the oriented incidence matrix.** For a loopless finite multigraph, the rank of its
+real oriented incidence matrix is the number of vertices minus the number of connected components
+of `underlyingGraph end₁ end₂`. -/
 theorem rank_orientedIncidence [Fintype V] [Fintype E] (hloop : ∀ e, end₁ e ≠ end₂ e) :
     (orientedIncidence end₁ end₂).rank =
       Fintype.card V - Nat.card (underlyingGraph end₁ end₂).ConnectedComponent := by
@@ -201,8 +207,9 @@ theorem rank_orientedIncidence [Fintype V] [Fintype E] (hloop : ∀ e, end₁ e 
   omega
 
 open Classical in
-/-- The range of the oriented incidence matrix of a loopless finite multigraph is the space
-of vectors whose sum over every connected component vanishes. -/
+/-- **Range of the oriented incidence matrix.** For a loopless finite multigraph, a real vector
+`r` lies in the range of `orientedIncidence end₁ end₂` if and only if its sum over the vertices of
+every connected component of `underlyingGraph end₁ end₂` vanishes. -/
 theorem mem_range_orientedIncidence_iff [Fintype V] [Fintype E]
     (hloop : ∀ e, end₁ e ≠ end₂ e) (r : V → ℝ) :
     r ∈ LinearMap.range (orientedIncidence end₁ end₂).mulVecLin ↔
@@ -252,7 +259,8 @@ theorem mem_range_orientedIncidence_iff [Fintype V] [Fintype E]
   rw [heq, LinearMap.mem_ker, funext_iff]
   rfl
 
-/-- Free boundary columns: column `j` is `σ j` times the standard basis vector at `b j`. -/
+/-- **Boundary columns.** The real `V × F` matrix whose column `j` is `σ j` times the standard
+basis vector at the anchor `b j`. -/
 def boundaryColumns {F : Type*} (b : F → V) (σ : F → ℝ) : Matrix V F ℝ :=
   Matrix.of fun v j => if b j = v then σ j else 0
 
@@ -263,10 +271,11 @@ theorem vecMul_boundaryColumns_apply [Fintype V] {F : Type*} (b : F → V) (σ :
     (x : V → ℝ) (j : F) : (x ᵥ* boundaryColumns b σ) j = x (b j) * σ j := by
   simp [Matrix.vecMul, dotProduct, boundaryColumns_apply]
 
-/-- Adjoining free boundary columns `±e_{b j}` to the oriented incidence matrix of a loopless
-finite multigraph gives a surjective map iff every connected component of the multigraph
-contains the anchor `b j` of some boundary column. Boundary columns do not change the
-components. -/
+/-- **Surjectivity with free boundary columns.** For a loopless finite multigraph and finitely
+many boundary columns `σ j • e_{b j}` with every `σ j = ±1`, the real matrix obtained by adjoining
+them to the oriented incidence matrix is surjective if and only if every connected component of
+`underlyingGraph end₁ end₂` contains the anchor `b j` of some boundary column. The components are
+those of the interior edges alone. -/
 theorem surjective_mulVec_fromCols_boundaryColumns_iff [Finite V] [Fintype E] {F : Type*}
     [Fintype F] (hloop : ∀ e, end₁ e ≠ end₂ e) (b : F → V) (σ : F → ℝ)
     (hσ : ∀ j, σ j = 1 ∨ σ j = -1) :
