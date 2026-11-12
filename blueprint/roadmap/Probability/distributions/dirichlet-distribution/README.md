@@ -14,3 +14,6 @@
 - [Multiplying the Dirichlet density by a multinomial likelihood](dirichlet-density-mul-prod-pow.md)
 - [Dirichlet–multinomial conjugacy](with-density-prod-pow-dirichlet-measure.md)
 - [Mean of the Dirichlet distribution](lintegral-dirichlet-measure-apply.md)
+- [Distribution function of a weighted sum of a flat Dirichlet vector](dirichlet-measure-one-real-weighted-sum.md)
+- [Partial fractions of the constant `1`](sum-inv-prod-erase-sub-eq-zero.md)
+- [Partial fractions of `(x - X)ⁿ`](sum-sub-pow-div-prod-erase-sub.md)

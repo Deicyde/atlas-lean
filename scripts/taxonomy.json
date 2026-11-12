@@ -3762,6 +3762,7 @@
   "MathlibExt/Probability/Distributions/CochranIndependence": {"to": "Probability/linear-models-multivariate", "title": "Cochran's theorem"},
   "MathlibExt/Probability/Distributions/CochranTheorem": {"to": "Probability/linear-models-multivariate", "title": "Cochran's theorem"},
   "MathlibExt/Probability/Distributions/Dirichlet": {"to": "Probability/distributions", "title": "Dirichlet distribution"},
+  "MathlibExt/Probability/Distributions/DirichletWeightedSum": {"to": "Probability/distributions", "title": "Dirichlet distribution"},
   "MathlibExt/Probability/Distributions/ExponentialMoments": {"to": "Probability/distributions", "title": "Exponential distribution"},
   "MathlibExt/Probability/Distributions/Gamma": {"to": "Probability/distributions", "title": "Gamma distribution"},
   "MathlibExt/Probability/Distributions/GammaMoments": {"to": "Probability/distributions", "title": "Gamma distribution"},
