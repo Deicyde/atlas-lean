@@ -72,6 +72,58 @@ example :
       fun v => parallel_mk_eq _
     simp [hall] at h0
 
+/-! ### Two antiparallel edges `0 → 1` and `1 → 0` -/
+
+/-- Reversing an edge negates its column: the columns are `(1, -1)` and `(-1, 1)`. -/
+example :
+    orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0] 0 0 = 1 ∧
+      orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0] 1 0 = -1 ∧
+      orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0] 0 1 = -1 ∧
+      orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0] 1 1 = 1 := by
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> simp [orientedIncidence_apply]
+
+theorem antiparallel_mk_eq (c : (underlyingGraph (![0, 1] : Fin 2 → Fin 2)
+    ![1, 0]).ConnectedComponent) :
+    c = (underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).connectedComponentMk 0 := by
+  induction c using SimpleGraph.ConnectedComponent.ind with
+  | h v =>
+    fin_cases v
+    · rfl
+    · exact SimpleGraph.ConnectedComponent.sound
+        (underlyingGraph_adj_of_ne (![0, 1] : Fin 2 → Fin 2) ![1, 0]
+          (e := 0) (by decide)).reachable.symm
+
+/-- Antiparallel edges, like parallel ones, give rank one on two vertices. -/
+example : (orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0]).rank = 1 := by
+  have hcard :
+      Nat.card (underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).ConnectedComponent = 1 := by
+    rw [Nat.card_eq_one_iff_exists]
+    exact ⟨_, antiparallel_mk_eq⟩
+  rw [rank_orientedIncidence _ _ (by decide), hcard]
+  rfl
+
+/-- The range is the same as for two parallel edges: `(1, -1)` is attained, `(1, 0)` is not. -/
+example :
+    (![1, -1] : Fin 2 → ℝ) ∈
+        LinearMap.range (orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0]).mulVecLin ∧
+      (![1, 0] : Fin 2 → ℝ) ∉
+        LinearMap.range (orientedIncidence (![0, 1] : Fin 2 → Fin 2) ![1, 0]).mulVecLin := by
+  constructor
+  · rw [mem_range_orientedIncidence_iff _ _ (by decide)]
+    intro c
+    have hall : ∀ v,
+        (underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).connectedComponentMk v = c :=
+      fun v => (antiparallel_mk_eq _).trans (antiparallel_mk_eq c).symm
+    simp [hall]
+  · rw [mem_range_orientedIncidence_iff _ _ (by decide)]
+    intro h
+    have h0 := h ((underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).connectedComponentMk 0)
+    have hall : ∀ v,
+        (underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).connectedComponentMk v =
+          (underlyingGraph (![0, 1] : Fin 2 → Fin 2) ![1, 0]).connectedComponentMk 0 :=
+      fun v => antiparallel_mk_eq _
+    simp [hall] at h0
+
 /-! ### A disconnected graph: edge `0 → 1` and an isolated vertex `2` -/
 
 theorem disconnected_reachable_two {u v : Fin 3}
