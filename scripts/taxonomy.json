@@ -2074,6 +2074,7 @@
   "MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative": {"to": "Analysis/special-functions/elementary-transcendental-functions", "title": "Logarithmic integral"},
   "MathlibExt/Analysis/SpecialFunctions/MathieuFibonacciFourierCoefficient": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Mathieu–Fibonacci series"},
   "MathlibExt/Analysis/SpecialFunctions/ModifiedBesselFirstKind": {"to": "Analysis/special-functions/elementary-transcendental-functions", "title": "Modified Bessel functions of the first kind"},
+  "MathlibExt/Analysis/SpecialFunctions/OneStepPayoffMax": {"to": "Analysis/inequalities", "title": "One-step payoff maximisation"},
   "MathlibExt/Analysis/SpecialFunctions/PolynomialExponentialBound": {"to": "Analysis/inequalities", "title": "Elementary bounds for exponentials and logarithms"},
   "MathlibExt/Analysis/SpecialFunctions/QPochhammer": {"to": "NumberTheory/modular-forms-q-series/theta-q-series-partitions", "title": "q-Pochhammer symbol"},
   "MathlibExt/Analysis/SpecialFunctions/RealPowerParametrization": {"to": "Analysis/special-functions/elementary-transcendental-functions", "title": "The equation x^y = y^x"},

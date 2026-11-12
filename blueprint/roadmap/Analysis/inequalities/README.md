@@ -15,3 +15,5 @@ Classical inequalities for sums, sequences, means and integrals of real or compl
 - [Inequality for square-summable complex sequences](conjecture-holds.md)
 - [Opial's inequality with one boundary condition](integral-abs-mul-deriv-le-of-eq-zero-lef.md)
 - [Wirtinger's inequality](wirtinger-inequality.md)
+- [The one-step payoff has a unique maximiser](payoff-le-of-eq-max-sqrt.md)
+- [The first-order equation holds at the maximiser exactly when `D ≥ b`](sq-eq-mul-iff-of-eq-max-sqrt.md)
