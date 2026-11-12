@@ -102,3 +102,7 @@ example (w : Fin 1 → ℝ) (x : ℝ) :
   simp
 
 end MathlibExtTest.Probability.Distributions.DirichletWeightedSum
+
+#print axioms dirichletMeasure_one_real_weightedSum_le
+#print axioms sum_inv_prod_erase_sub_eq_zero
+#print axioms sum_sub_pow_div_prod_erase_sub

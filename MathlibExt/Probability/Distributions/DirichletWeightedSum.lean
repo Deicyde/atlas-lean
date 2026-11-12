@@ -57,8 +57,8 @@ namespace ProbabilityTheory
 
 /-! ### Partial-fraction identities -/
 
-/-- Lagrange interpolation of the constant `1` on at least two distinct nodes:
-`∑ᵢ 1 / ∏_{m ≠ i} (wᵢ - wₘ) = 0`. -/
+/-- **Partial fractions of the constant `1`**: for at least two distinct real nodes,
+`∑ᵢ 1 / ∏_{m ≠ i} (wᵢ - wₘ) = 0` (Lagrange interpolation of the constant polynomial `1`). -/
 theorem sum_inv_prod_erase_sub_eq_zero {n : ℕ} {w : Fin (n + 2) → ℝ}
     (hw : Function.Injective w) :
     ∑ i, 1 / ∏ m ∈ univ.erase i, (w i - w m) = 0 := by
@@ -70,8 +70,10 @@ theorem sum_inv_prod_erase_sub_eq_zero {n : ℕ} {w : Fin (n + 2) → ℝ}
   rw [← h]
   simp [coeff_one]
 
-/-- The **saturation identity**: for `n + 1` distinct nodes,
-`∑ⱼ (x - wⱼ)ⁿ / ∏_{m ≠ j} (wⱼ - wₘ) = (-1)ⁿ` (Lagrange interpolation of `(x - X)ⁿ`). -/
+/-- **Partial fractions of `(x - X)ⁿ`**: for `n + 1` distinct real nodes and every real `x`,
+`∑ⱼ (x - wⱼ)ⁿ / ∏_{m ≠ j} (wⱼ - wₘ) = (-1)ⁿ` (Lagrange interpolation of `(x - X)ⁿ`). This is
+why the distribution function `dirichletMeasure_one_real_weightedSum_le` equals `1` above every
+weight. -/
 theorem sum_sub_pow_div_prod_erase_sub {n : ℕ} {w : Fin (n + 1) → ℝ}
     (hw : Function.Injective w) (x : ℝ) :
     ∑ j, (x - w j) ^ n / ∏ m ∈ univ.erase j, (w j - w m) = (-1) ^ n := by
