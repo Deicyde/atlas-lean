@@ -1,0 +1,16 @@
+# Split conformal prediction
+
+- [Order statistic with multiplicity](order-statistic.md)
+- [Strict-count criterion for the order statistic](coe-le-order-statistic-iff.md)
+- [Characterisation of the order statistic](order-statistic-eq-coe-iff.md)
+- [The order statistic is infinite exactly past the sample size](order-statistic-eq-top-iff.md)
+- [Entries of a permuted vector](coordinate-perm-action-smul-apply.md)
+- [Permutation-invariant laws are invariant under the action](smul-invariant-measure-of-map-comp-eq.md)
+- [Strict lower count of the test score](strict-lower-count.md)
+- [Split conformal threshold](split-conformal-threshold.md)
+- [Coverage through the strict lower count](coe-le-split-conformal-threshold-iff.md)
+- [Permutation p-value of the test score](permutation-pvalue-eval-last.md)
+- [Rank threshold versus p-value threshold](strict-lower-count-lt-ceil-iff-lt-permut.md)
+- [Split conformal coverage as a permutation test](coe-le-split-conformal-threshold-iff-lt.md)
+- [Split conformal coverage at the grid level](of-real-ceil-div-le-measure-coe-le-split.md)
+- [Split conformal coverage](of-real-one-sub-le-measure-coe-le-split.md)
