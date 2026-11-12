@@ -2537,6 +2537,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/Connectivity": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Reachability and connectedness"},
   "MathlibExt/Combinatorics/SimpleGraph/Contraction": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Fleischner's theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/CoxeterGraph": {"to": "GraphTheory/algebraic-graph-theory", "title": "Coxeter graph"},
+  "MathlibExt/Combinatorics/SimpleGraph/CutMoments": {"to": "Probability/hypothesis-testing", "title": "Permutation tests"},
   "MathlibExt/Combinatorics/SimpleGraph/CycleCover": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Cycle covers"},
   "MathlibExt/Combinatorics/SimpleGraph/Degeneracy": {"to": "GraphTheory/graph-coloring", "title": "Degeneracy and greedy coloring"},
   "MathlibExt/Combinatorics/SimpleGraph/DegeneracyColoring": {"to": "GraphTheory/graph-coloring", "title": "Degeneracy and greedy coloring"},
