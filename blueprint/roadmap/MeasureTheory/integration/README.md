@@ -13,3 +13,5 @@ The Lebesgue integral and its convergence theorems, modes of convergence of meas
 - [Scheffé's lemma](scheff-s-lemma/README.md)
 - [Egorov's theorem on the real line under integrable domination](exists-measure-lt-tendsto-uniformly-on-c.md)
 - [Lusin's theorem](lusin.md)
+- [Strict width monotonicity of Lorentzian integrals](integral-lorentzian-lt-iff.md)
+- [Lorentzian integrals are nondecreasing in the width](integral-lorentzian-mono.md)

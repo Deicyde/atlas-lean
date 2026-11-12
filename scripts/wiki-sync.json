@@ -23711,6 +23711,8 @@
 "MathlibExt.MeasureTheory.Integral.ImproperIntegralAbsoluteConditionalWanted.dirichlet_integral_conditionally_convergent": "08b5b09ce01d26d1",
 "MathlibExt.MeasureTheory.Integral.ImproperIntegralComparisonWanted.improper_integral_comparison_test": "9a1e70c961f6b077",
 "MathlibExt.MeasureTheory.Integral.ImproperIntegralComparisonWanted.improper_integral_limit_comparison_test": "8139bb02cd21f17c",
+"MathlibExt.MeasureTheory.Integral.LorentzianWidth.integral_lorentzian_lt_iff": "24e18be84d0e8c11",
+"MathlibExt.MeasureTheory.Integral.LorentzianWidth.integral_lorentzian_mono": "8f38c5e7224d803a",
 "MathlibExt.MeasureTheory.Integral.LyapunovConvexityWanted.lyapunovRange": "d91eef55e93192dc",
 "MathlibExt.MeasureTheory.Integral.LyapunovConvexityWanted.lyapunov_convexity": "a58d1ab960913f2f",
 "MathlibExt.MeasureTheory.Integral.PrekopaLeindlerWanted.prekopa_leindler": "7f70591ad06d5c83",
