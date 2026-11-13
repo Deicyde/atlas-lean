@@ -624,7 +624,10 @@ private lemma renewal_eq_zero {κ Ω₀ : Type*} [MeasurableSpace Ω₀] (ν : M
   rwa [div_lt_iff₀ hh] at hN
 
 open Set in
-private lemma integral_expMeasure_renewal {q t c : ℝ} (hq : 0 < q) (ht : 0 ≤ t) {f g : ℝ → ℝ}
+/-- Renewal identity for `Exp(1)`: if `0 < q`, `0 ≤ t`, `g` is `Exp(1)`-integrable and
+`g e = if t < e / q then c else f (t - e / q)` for `e > 0`, then
+`∫ g ∂Exp(1) = c * exp (-(q * t)) + q * ∫ s in 0..t, exp (-(q * s)) * f (t - s)`. -/
+lemma integral_expMeasure_renewal {q t c : ℝ} (hq : 0 < q) (ht : 0 ≤ t) {f g : ℝ → ℝ}
     (hg : Integrable g (expMeasure 1))
     (hgf : ∀ e, 0 < e → g e = if t < e / q then c else f (t - e / q)) :
     ∫ e, g e ∂expMeasure 1 =

@@ -659,42 +659,6 @@ theorem measurable_stateAt (n : ℕ) :
     exact hg.comp (((measurable_eval_first x).comp measurable_snd).prodMk
       ((measurable_fst.sub hE).prodMk (hsh.comp measurable_snd)))
 
-/-- The renewal integral against `Exp(1)` (the same computation as in the finite-state
-construction, `ContinuousTimeMarkovChain/Path.lean`, where it is private). -/
-private lemma integral_expMeasure_renewal' {q t c : ℝ} (hq : 0 < q) (ht : 0 ≤ t)
-    {f g : ℝ → ℝ} (hg : Integrable g (expMeasure 1))
-    (hgf : ∀ e, 0 < e → g e = if t < e / q then c else f (t - e / q)) :
-    ∫ e, g e ∂expMeasure 1 =
-      c * Real.exp (-(q * t)) + q * ∫ s in (0 : ℝ)..t, Real.exp (-(q * s)) * f (t - s) := by
-  open Set in
-  have hqt : 0 ≤ q * t := mul_nonneg hq.le ht
-  rw [integral_expMeasure_eq_setIntegral one_pos]
-  have hI := (integrable_expMeasure_iff one_pos).1 hg
-  rw [← Set.Ioc_union_Ioi_eq_Ioi hqt, setIntegral_union Set.Ioc_disjoint_Ioi_same
-    measurableSet_Ioi (hI.mono_set Set.Ioc_subset_Ioi_self)
-    (hI.mono_set (Set.Ioi_subset_Ioi hqt))]
-  have h2 : ∫ e in Set.Ioi (q * t), 1 * Real.exp (-(1 * e)) * g e =
-      ∫ e in Set.Ioi (q * t), Real.exp (-e) * c := by
-    refine setIntegral_congr_fun measurableSet_Ioi fun e he => ?_
-    have he0 : 0 < e := lt_of_le_of_lt hqt he
-    have : t < e / q := by rw [lt_div_iff₀ hq]; linarith [Set.mem_Ioi.mp he]
-    simp only [hgf e he0, this, ite_true, one_mul]
-  have h1 : ∫ e in Set.Ioc 0 (q * t), 1 * Real.exp (-(1 * e)) * g e =
-      ∫ e in Set.Ioc 0 (q * t), Real.exp (-e) * f (t - e / q) := by
-    refine setIntegral_congr_fun measurableSet_Ioc fun e he => ?_
-    have : ¬ t < e / q := by
-      rw [not_lt, div_le_iff₀ hq]; linarith [(Set.mem_Ioc.mp he).2]
-    simp only [hgf e (Set.mem_Ioc.mp he).1, this, ite_false, one_mul]
-  rw [h1, h2, integral_mul_const, integral_exp_neg_Ioi, ← intervalIntegral.integral_of_le hqt]
-  have hsub := intervalIntegral.integral_comp_mul_left
-    (fun e => Real.exp (-e) * f (t - e / q)) hq.ne' (a := 0) (b := t)
-  simp only [mul_zero, smul_eq_mul] at hsub
-  have hc : ∀ x, Real.exp (-(q * x)) * f (t - q * x / q) = Real.exp (-(q * x)) * f (t - x) := by
-    intro x; rw [mul_div_cancel_left₀ x hq.ne']
-  simp only [hc] at hsub
-  rw [hsub, ← mul_assoc, mul_inv_cancel₀ hq.ne', one_mul, mul_comm c]
-  ring
-
 private lemma integral_exp_neg_mul_interval {k s : ℝ} (hk : 0 < k) :
     ∫ u in (0 : ℝ)..s, Real.exp (-(k * u)) = (1 - Real.exp (-(k * s))) / k := by
   have hd : ∀ u ∈ Set.uIcc (0 : ℝ) s,
@@ -742,7 +706,7 @@ private lemma lintegral_expMeasure_ite {q c s A B : ℝ} (hq : 0 < q) (hc : 0 �
       mul_comm M, show Real.exp (-1 * x) = Real.exp (-(1 * x)) by ring_nf]
     exact mul_le_mul_of_nonneg_left (hgM x (le_of_lt hx)) (Real.exp_pos _).le
   rw [← ofReal_integral_eq_lintegral_ofReal hint (Eventually.of_forall hg0),
-    integral_expMeasure_renewal' hq hs hint (f := fun u => Real.exp (c * u) * B)
+    integral_expMeasure_renewal hq hs hint (f := fun u => Real.exp (c * u) * B)
       (fun e _ => rfl)]
   congr 1
   have hfun : (fun u => Real.exp (-(q * u)) * (Real.exp (c * (s - u)) * B)) =
