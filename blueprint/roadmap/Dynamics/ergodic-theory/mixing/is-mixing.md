@@ -9,7 +9,7 @@ meant, as in the source, for probability-preserving maps.
 
 In the hierarchy of statistical properties of a dynamical system, mixing lies between ergodicity
 ([mixing implies ergodicity](ergodic.md)) and the Kolmogorov and Bernoulli properties;
-[Bernoulli schemes are mixing](is-mixing-bernoulli-shift.md). Weak mixing, the Cesàro-averaged version,
+[Bernoulli shifts are mixing](is-mixing-shift.md). Weak mixing, the Cesàro-averaged version,
 appears in [Halmos's genericity theorem](../genericity-of-weak-mixing/README.md).
 
 ## Sources

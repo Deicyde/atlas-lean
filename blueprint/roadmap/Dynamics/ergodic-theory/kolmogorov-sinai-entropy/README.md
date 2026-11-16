@@ -7,6 +7,7 @@ is its supremum over all finite partitions. It is an invariant of measure-theore
 the generator theorem, and it gives $-\sum_i p_i \log p_i$ for the Bernoulli shift with probability vector $p$,
 which is how Kolmogorov and Sinai proved that the Bernoulli schemes $(\tfrac13, \tfrac13, \tfrac13)$ and
 $(\tfrac12, \tfrac12)$ are not isomorphic.
+
 - [Finite measurable partition modulo null sets](is-measurable-partition.md)
 - [Entropy of a finite partition](partition-entropy.md)
 - [Entropy of a partition is nonnegative](partition-entropy-nonneg.md)
@@ -33,7 +34,7 @@ $(\tfrac12, \tfrac12)$ are not isomorphic.
 - [Entropy, dimension and Lyapunov exponents](../../smooth-dynamics/entropy-dimension-and-lyapunov-exponents/README.md):
   the formulas of Pesin, Young, Margulis and Ruelle relate Kolmogorov–Sinai entropy to Lyapunov exponents
   for smooth systems.
-- [Mixing](../mixing/README.md): Bernoulli schemes are mixing, and entropy is the invariant that
+- [Mixing](../mixing/README.md): Bernoulli shifts are mixing, and entropy is the invariant that
   distinguishes them.
 - [Full shift and cellular automata](../../topological-symbolic-dynamics/full-shift-and-cellular-automata/README.md):
   the full shift is the topological space underlying Bernoulli schemes.

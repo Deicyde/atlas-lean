@@ -10,6 +10,7 @@ module
 
 public import Batteries.Util.ProofWanted
 public import MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy
+public import MathlibExt.Dynamics.Ergodic.BernoulliShift
 public import Mathlib.Probability.ProductMeasure
 public import Mathlib.Probability.UniformOn
 
@@ -30,8 +31,8 @@ The central theorems of Sinai's entropy theory, stated with the definitions of
   `ksEntropy_bernoulliShift` and the proved invariance `ksEntropy_eq_of_isomorphic`.
 
 The Bernoulli scheme on a finite alphabet `S` with probability vector `p` is the one-sided left
-shift `x ↦ (n ↦ x (n + 1))` on `ℕ → S` with the product measure `Measure.infinitePi (fun _ ↦ p)`
-(Sarig, §1.5.3).
+shift `MathlibExt.Dynamics.Ergodic.BernoulliShift.shift` on `ℕ → S` with the product measure
+`Measure.infinitePi (fun _ ↦ p)` (Sarig, §1.5.3).
 -/
 
 @[expose] public section
@@ -39,7 +40,7 @@ shift `x ↦ (n ↦ x (n + 1))` on `ℕ → S` with the product measure `Measure
 namespace MathlibExt.Dynamics.KolmogorovSinaiWanted
 
 open MeasureTheory
-open MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy
+open MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy MathlibExt.Dynamics.Ergodic.BernoulliShift
 open scoped ENNReal
 
 /-- **Sinai's generator theorem.** Let `T` be an invertible measure-preserving transformation of
@@ -78,7 +79,7 @@ natural logarithm of `partitionEntropy` both sides are rescaled by the same fact
 computation goes through the generator theorem applied to the partition into 1-cylinders. -/
 theorem_wanted ksEntropy_bernoulliShift {S : Type*} [Fintype S] [MeasurableSpace S]
     [MeasurableSingletonClass S] (p : Measure S) [IsProbabilityMeasure p] :
-    ksEntropy (Measure.infinitePi fun _ : ℕ => p) (fun (x : ℕ → S) (n : ℕ) => x (n + 1)) =
+    ksEntropy (Measure.infinitePi fun _ : ℕ => p) (shift : (ℕ → S) → ℕ → S) =
       ENNReal.ofReal (∑ s, Real.negMulLog (p {s}).toReal)
 
 /-- **Kolmogorov's non-isomorphism of Bernoulli schemes.** The `(1/3, 1/3, 1/3)` and the
@@ -90,7 +91,6 @@ theorem_wanted not_isomorphic_bernoulli_uniform_three_two :
       MeasurePreserving e
         (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 3)))
         (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 2))) ∧
-      Function.Semiconj e (fun (x : ℕ → Fin 3) (n : ℕ) => x (n + 1))
-        (fun (x : ℕ → Fin 2) (n : ℕ) => x (n + 1))
+      Function.Semiconj e (shift : (ℕ → Fin 3) → ℕ → Fin 3) (shift : (ℕ → Fin 2) → ℕ → Fin 2)
 
 end MathlibExt.Dynamics.KolmogorovSinaiWanted
