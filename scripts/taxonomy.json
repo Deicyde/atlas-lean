@@ -2754,6 +2754,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/Planarity": {"to": "GraphTheory/planar-graphs-and-minors", "title": "Straight-line planar drawings"},
   "MathlibExt/Combinatorics/SimpleGraph/Ramsey": {"to": "GraphTheory/graph-ramsey-theory", "title": "Graph Ramsey numbers"},
   "MathlibExt/Combinatorics/SimpleGraph/RamseyErdosLowerBound": {"to": "GraphTheory/graph-ramsey-theory", "title": "Graph Ramsey numbers"},
+  "MathlibExt/Combinatorics/SimpleGraph/RandomGraphTriangleThreshold": {"to": "GraphTheory/random-graphs", "title": "Threshold for triangles"},
   "MathlibExt/Combinatorics/SimpleGraph/Riha": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Říha's cycle lemma"},
   "MathlibExt/Combinatorics/SimpleGraph/RookGraph": {"to": "GraphTheory/independence-and-domination", "title": "Domination in rook graphs"},
   "MathlibExt/Combinatorics/SimpleGraph/SaturatingNonedge": {"to": "GraphTheory/extremal-graph-theory", "title": "Graph saturation"},

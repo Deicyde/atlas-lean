@@ -81,6 +81,16 @@ lemma measurableSet_containsEvent [Countable α] (S : Finset α) :
   rw [containsEvent_eq_pi]
   exact MeasurableSet.univ_pi (fun a => by split_ifs <;> simp)
 
+lemma containsEvent_inter [DecidableEq α] (S T : Finset α) :
+    containsEvent S ∩ containsEvent T = containsEvent (S ∪ T) := by
+  ext ω
+  simp only [containsEvent, Set.mem_inter_iff, Set.mem_ofPred_eq, Finset.mem_union]
+  constructor
+  · rintro ⟨h1, h2⟩ a (ha | ha)
+    exacts [h1 a ha, h2 a ha]
+  · intro h
+    exact ⟨fun a ha => h a (Or.inl ha), fun a ha => h a (Or.inr ha)⟩
+
 /-- **Probability that a random subset contains a given set.** If `R` contains each element `a`
 independently with probability `p a`, then `P(S ⊆ R) = ∏_{a ∈ S} p a` (Y. Zhao, *The
 Probabilistic Method in Combinatorics*, MIT 18.218 notes, 2019, Setup 7.10). -/
