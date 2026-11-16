@@ -22,6 +22,8 @@ The finite statements use homomorphism-count normalisations ($n^2$, $n^3$). The 
 
 ## Related topics
 
+- [Turán density of complete graphs](../tur-n-density-of-complete-graphs/README.md): $\pi(K_{r+1}) = 1 - 1/r$, of which Mantel's theorem is the case $r = 2$.
 - [Pentagons in triangle-free graphs](../pentagons-in-triangle-free-graphs/README.md): Erdős's pentagon problem, settled with flag algebras by Grzesik and by Hatami, Hladký, Kráľ, Norine and Razborov.
 - [Finitely forcible graphons](../../random-graphs/finitely-forcible-graphons/README.md): graphons and subgraph densities, the limit objects on which flag-algebra inequalities such as $K_3 \ge \rho(2\rho - 1)$ are statements.
 - [Maximal cliques and triangles](../../independence-and-domination/maximal-cliques-and-triangles/README.md): triangles through a given edge, the local quantity summed in Goodman's argument.
+- [Threshold for triangles](../../random-graphs/threshold-for-triangles/README.md): triangles in the random graph $G(n, p)$, whose triangle density is about $p^3$, against the minimum over all graphs of edge density $p$ studied here.

@@ -8,6 +8,10 @@ The proof is the flag-algebra one. With no triangles, [Goodman's bound](goodman.
 
 - [Goodman's bound on the number of triangles](goodman.md): the case $T = 0$.
 
+## Background
+
+- [Turán density of complete graphs](../tur-n-density-of-complete-graphs/turan-density-complete-graph.md): the asymptotic form $\pi(K_3) = 1/2$ and its generalisation to $K_{r+1}$.
+
 ## Sources
 
 - W. Mantel, Problem 28, Wiskundige Opgaven 10 (1907), 60-61.

@@ -16,3 +16,7 @@
 - [Unsatisfiable formulas without variables contain the empty clause](nil-mem-of-vars-eq-empty.md)
 - [Refutation completeness](resolution-derivable-nil-of-not-cnf-sat.md)
 - [Soundness and refutation completeness](resolution-derivable-nil-iff-not-cnf-sat.md)
+
+## Related topics
+
+- [Resolution size and width](../resolution-size-and-width/README.md): proof objects with size and width, and the Ben-Sasson–Wigderson size-width relations.
