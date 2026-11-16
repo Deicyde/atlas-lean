@@ -15,3 +15,4 @@ $X$ meets the cone $\mathcal{C}(S; 1)$ only at $0$, the restricted nullspace pro
 
 - [Lasso error bounds under restricted eigenvalues](../lasso-error-bounds-under-restricted-eigenvalues/README.md)
 - [Low-rank matrix recovery](../../../Analysis/approximation-theory/low-rank-matrix-recovery/README.md): the matrix analogue, nuclear norm minimization recovering low-rank matrices under a restricted isometry property.
+- [Sparse recovery under the restricted isometry property](../../../Analysis/approximation-theory/sparse-recovery-under-the-restricted-isometry-pr/README.md): Candès's sufficient condition `δ_{2s} < √2 - 1` on the isometry constants implies the restricted nullspace property over every support of size at most `s`, and stable and noisy versions of exact recovery.

@@ -11,6 +11,7 @@ Affine rank minimization asks for the matrix of least rank satisfying linear mea
 
 ## Related topics
 
-- [Sparse recovery by orthogonal matching pursuit](../sparse-recovery-by-orthogonal-matching-pursuit/README.md): sparse vectors are the diagonal case of low-rank matrices, and the restricted isometry property of this topic reduces to that of compressed sensing.
+- [Sparse recovery by orthogonal matching pursuit](../sparse-recovery-by-orthogonal-matching-pursuit/README.md): sparse recovery of vectors by a greedy algorithm under a coherence condition.
+- [Sparse recovery under the restricted isometry property](../sparse-recovery-under-the-restricted-isometry-pr/README.md): sparse vectors are the diagonal case of low-rank matrices; on diagonal matrices the restricted isometry property of this topic becomes a vector restricted isometry property with unsquared norms, whereas Candès's isometry constants bound squared norms, so the constants are not directly comparable.
 - [Singular value decomposition](../../../LinearAlgebra/matrix-decompositions/singular-value-decomposition/README.md): singular values, the nuclear norm and its duality with the operator norm.
 - [Exact recovery by basis pursuit](../../../Probability/linear-models-multivariate/exact-recovery-by-basis-pursuit/README.md): the exact vector analogue of nuclear norm recovery, $\ell_1$ minimization recovering sparse vectors, characterized by the restricted nullspace property.

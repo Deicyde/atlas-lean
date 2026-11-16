@@ -1,6 +1,6 @@
 # Approximation theory
 
-Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation: best $M$-term approximation in an orthonormal basis and greedy pursuits (matching pursuit and orthogonal matching pursuit).
+Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, sparse approximation: best $M$-term approximation in an orthonormal basis and greedy pursuits (matching pursuit and orthogonal matching pursuit), and sparse and low-rank recovery by convex relaxation under restricted isometry.
 
 - [Bernstein polynomials](bernstein-polynomials/README.md)
 - [Best approximation in normed spaces](best-approximation-in-normed-spaces/README.md)
@@ -14,6 +14,7 @@ Approximation and interpolation of functions: Chebyshev equioscillation, best ap
 - [Low-rank matrix recovery](low-rank-matrix-recovery/README.md)
 - [Matching pursuit](matching-pursuit/README.md)
 - [Sparse recovery by orthogonal matching pursuit](sparse-recovery-by-orthogonal-matching-pursuit/README.md)
+- [Sparse recovery under the restricted isometry property](sparse-recovery-under-the-restricted-isometry-pr/README.md)
 - [Uniform approximation by partial sums of one power series](uniform-approximation-by-partial-sums-of-one-pow/README.md)
 - [Müntz–Szász theorem for integer exponents](muntz-szasz-nat.md)
 - [Runge's theorem](runge.md)
