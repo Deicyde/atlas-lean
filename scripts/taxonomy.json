@@ -4089,6 +4089,7 @@
   "MathlibExt/Probability/Percolation/RussoInfluence": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
   "MathlibExt/Probability/Percolation/SharpThreshold": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
   "MathlibExt/Probability/Percolation/SharpThresholdKKL": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
+  "MathlibExt/Probability/Percolation/SharpnessBelowPc": {"to": "Probability/percolation/sharpness", "title": "Sharpness of the phase transition for Bernoulli bond percolation on ℤ^d"},
   "MathlibExt/Probability/Percolation/SharpnessFromInputs": {"to": "Probability/percolation/sharpness", "title": "Sharpness of the phase transition"},
   "MathlibExt/Probability/Percolation/SharpnessTheorem": {"to": "Probability/percolation/sharpness", "title": "Sharpness of the phase transition"},
   "MathlibExt/Probability/Percolation/SubcriticalDecay": {"to": "Probability/percolation/sharpness", "title": "Exponential decay below the critical point"},
