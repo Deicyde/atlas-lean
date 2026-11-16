@@ -2677,6 +2677,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/ErdosGirthChromatic": {"to": "GraphTheory/graph-coloring", "title": "Graphs of high girth and high chromatic number"},
   "MathlibExt/Combinatorics/SimpleGraph/EulerCircuit": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Eulerian circuits"},
   "MathlibExt/Combinatorics/SimpleGraph/Expander": {"to": "GraphTheory/graph-families-and-operations", "title": "Expander graphs"},
+  "MathlibExt/Combinatorics/SimpleGraph/ExpanderWalk": {"to": "GraphTheory/graph-families-and-operations", "title": "Expander graphs"},
   "MathlibExt/Combinatorics/SimpleGraph/Fleischner": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Fleischner's theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/FleischnerStrong": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Fleischner's theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/Frucht": {"to": "GraphTheory/algebraic-graph-theory", "title": "Frucht's theorem"},

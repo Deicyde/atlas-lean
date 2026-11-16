@@ -12,16 +12,18 @@ public import Batteries.Util.ProofWanted
 public import MathlibExt.Combinatorics.SimpleGraph.SpectralExpander
 
 /-!
-# Spectral expanders: the Alon-Boppana bound and random walks (wanted)
+# Spectral expanders: the Alon-Boppana bound and the expander Chernoff bound (wanted)
 
-Three central facts about spectral expanders (S. Vadhan, *Pseudorandomness*, Foundations and Trends
+Two central facts about spectral expanders (S. Vadhan, *Pseudorandomness*, Foundations and Trends
 in Theoretical Computer Science 7 (2012), Chapter 4), stated with the spectral-expander predicate
 `IsSpectralExpander` and the random-walk probability `walkProb` of
 `MathlibExt.Combinatorics.SimpleGraph.SpectralExpander`:
 
 * the Alon-Boppana bound `λ ≥ 2 √(d - 1) / d - o(1)` (Theorem 4.11);
-* the hitting property of expander walks (Theorem 4.17);
 * the Chernoff bound for expander walks (Theorem 4.22).
+
+The hitting property (Theorem 4.17) is proved in
+`MathlibExt.Combinatorics.SimpleGraph.ExpanderWalk`.
 -/
 
 @[expose] public section
@@ -39,18 +41,6 @@ graphs; due to Alon and Boppana, with a short proof by A. Nilli, Discrete Math. 
 theorem_wanted alon_boppana (d : ℕ) (ε : ℝ) (hε : 0 < ε) :
     ∃ N₀ : ℕ, ∀ n ≥ N₀, ∀ (G : SimpleGraph (Fin n)) [DecidableRel G.Adj] (lam : ℝ),
       IsSpectralExpander G d lam → 2 * Real.sqrt ((d : ℝ) - 1) / d - ε ≤ lam
-
-/-- **Hitting property of expander walks.** Let `G` be a `d`-regular graph, `d ≥ 1`, that is a
-spectral expander with parameter `λ`, and let `B` be a vertex set of density `μ = |B| / N`. A
-random walk `V₀, V₁, …, V_t` with `t` steps from a uniformly random start vertex stays inside `B`
-at all `t + 1` times with probability at most `(μ + λ (1 - μ)) ^ (t + 1)` (S. Vadhan,
-*Pseudorandomness* (2012), Theorem 4.17, where the walk `V₁, …, V_t` has `t - 1` steps and the
-bound is `(μ + λ (1 - μ)) ^ t`). -/
-theorem_wanted walkProb_forall_mem_le {V : Type*} [Fintype V] [DecidableEq V]
-    {G : SimpleGraph V} [DecidableRel G.Adj] {d : ℕ} {lam : ℝ} (h : IsSpectralExpander G d lam)
-    (hd : 0 < d) (B : Finset V) (t : ℕ) :
-    walkProb G d t (fun w => ∀ i, w i ∈ B) ≤
-      ((B.card / Fintype.card V : ℝ) + lam * (1 - B.card / Fintype.card V)) ^ (t + 1)
 
 /-- **Chernoff bound for expander walks.** There is an absolute constant `C > 0` with the
 following property. Let `G` be a `d`-regular graph, `d ≥ 1`, that is a spectral expander with
