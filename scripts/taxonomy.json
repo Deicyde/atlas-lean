@@ -3911,6 +3911,7 @@
   "MathlibExt/Probability/HoeffdingBounded": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
   "MathlibExt/Probability/Hypercontractivity": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
   "MathlibExt/Probability/Hypercontractivity/BonamiLemma": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
+  "MathlibExt/Probability/Hypercontractivity/LevelInequalities": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
   "MathlibExt/Probability/Hypercontractivity/SmallSetExpansion": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
   "MathlibExt/Probability/IndependentIncrementsMarkovProperty": {"to": "Probability/stochastic-calculus", "title": "Markov property of processes with independent increments"},
   "MathlibExt/Probability/IndianBuffet": {"to": "Probability/bayesian-statistics", "title": "Indian buffet process"},

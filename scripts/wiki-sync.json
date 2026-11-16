@@ -526,6 +526,7 @@
 "BooleanCube.fourier_plancherel": "2fdea5ebc35d0d13",
 "BooleanCube.friedgut_junta_theorem": "09eb7f02d7b49ee4",
 "BooleanCube.hypercontractivity_theorem": "7d917e3e3c3d1c79",
+"BooleanCube.level_k_inequality": "56f2436baf05fd4e",
 "BooleanCube.level_one_inequality": "da97fb126e13bf22",
 "BooleanCube.majority_is_stablest": "8602af5f4a462725",
 "BooleanCube.multilinearDegreeLE_indicator": "ad5555687040d11b",

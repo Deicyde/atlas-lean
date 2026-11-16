@@ -12,12 +12,11 @@ public import Batteries.Util.ProofWanted
 public import MathlibExt.Analysis.Fourier.BooleanCubeBLR
 public import MathlibExt.Analysis.Fourier.BooleanCubeNoiseStability
 public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse
-public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-!
 # Structure theorems for Boolean functions
 
-Three theorems of the analysis of Boolean functions, stated for `f : BoolCube n → ℝ` on the
+Two theorems of the analysis of Boolean functions, stated for `f : BoolCube n → ℝ` on the
 uniform cube `{-1, 1}ⁿ` with the definitions of `MathlibExt.Analysis.Fourier`: the Fourier
 coefficients `boolFourierCoeff`, influences `boolInfluence`, total influence
 `boolTotalInfluence`, noise stability `boolNoiseStab` and relative Hamming distance `boolDist`.
@@ -27,7 +26,6 @@ A Boolean function is a `±1`-valued `f`; `W¹[f] = ∑_{|S| = 1} f̂(S)²` is i
 
 * `BooleanCube.fkn_theorem`: Friedgut–Kalai–Naor.
 * `BooleanCube.majority_is_stablest`: Majority Is Stablest (Mossel–O'Donnell–Oleszkiewicz).
-* `BooleanCube.level_one_inequality`: the Level-1 Inequality.
 
 ## References
 
@@ -37,10 +35,11 @@ A Boolean function is a `±1`-valued `f`; `W¹[f] = ∑_{|S| = 1} f̂(S)²` is i
   influences: invariance and optimality*, Ann. of Math. 171 (2010), 295-341
   (arXiv:math/0503503).
 * R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014
-  (arXiv:2105.10386), Sections 2.6, 5.2, 5.4, 9.1 and Chapter 11.
+  (arXiv:2105.10386), Sections 2.6, 5.2, 9.1 and Chapter 11.
 
-Friedgut's Junta Theorem, stated in the same terms, is proved in
-`MathlibExt.Analysis.Fourier.BooleanCubeFriedgut`.
+Friedgut's Junta Theorem and the Level-1 Inequality, stated in the same terms, are proved in
+`MathlibExt.Analysis.Fourier.BooleanCubeFriedgut` and
+`MathlibExt.Probability.Hypercontractivity.LevelInequalities`.
 -/
 
 @[expose] public section
@@ -72,16 +71,5 @@ theorem_wanted majority_is_stablest {ρ : ℝ} (hρ0 : 0 < ρ) (hρ1 : ρ < 1) {
     ∃ τ : ℝ, 0 < τ ∧ ∀ (n : ℕ) (f : BoolCube n → ℝ), (∀ x, |f x| ≤ 1) →
       𝔼 x, f x = 0 → (∀ i, boolInfluence f i ≤ τ) →
         boolNoiseStab ρ f ≤ 2 / Real.pi * Real.arcsin ρ + ε
-
-/-- **Level-1 Inequality.** There is a universal constant `C` such that every
-`f : BoolCube n → ℝ` with values in `{0, 1}` and mean `α = 𝔼[f] ≤ 1/2` satisfies
-`W¹[f] ≤ C α² log(1/α)` (R. O'Donnell, *Analysis of Boolean Functions*, 2014, Level-1
-Inequality, Section 5.4, stated there as `W¹[f] ≤ O(α² log(1/α))`; proved in Section 5.4 and,
-via hypercontractivity, in Section 9.5). For `α = 0` both sides vanish. -/
-theorem_wanted level_one_inequality :
-    ∃ C : ℝ, ∀ (n : ℕ) (f : BoolCube n → ℝ), (∀ x, f x = 0 ∨ f x = 1) →
-      𝔼 x, f x ≤ 1 / 2 →
-        ∑ S with S.card = 1, boolFourierCoeff n f S ^ 2 ≤
-          C * (𝔼 x, f x) ^ 2 * Real.log (1 / 𝔼 x, f x)
 
 end BooleanCube
