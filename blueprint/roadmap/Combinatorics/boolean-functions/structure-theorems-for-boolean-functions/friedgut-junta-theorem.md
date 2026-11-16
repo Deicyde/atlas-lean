@@ -19,3 +19,6 @@ Functions of small total influence are close to juntas.
   $D_i f$, a function with values in $\{-1, 0, 1\}$.
 - [Fourier formula for influence](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/influences-and-the-noise-operator-on-the-boolean/bool-influence-eq-sum-sq.md):
   used to rewrite the stable influences in the Fourier basis.
+- [Low total influence implies low-degree spectral concentration](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/spectral-structure-of-boolean-functions/sum-sq-card-gt-le-of-pos.md):
+  the junta theorem is Theorem 9.28 with $k = \mathbf{I}[f]/\varepsilon$, which the source justifies by
+  this "Markov argument" (Proposition 3.2).

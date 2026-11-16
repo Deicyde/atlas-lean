@@ -1794,6 +1794,7 @@
   "MathlibExt/Analysis/Fourier/BooleanCubeConvolution": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Fourier analysis on the Boolean cube"},
   "MathlibExt/Analysis/Fourier/BooleanCubeInfluence": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Influences and the noise operator on the Boolean cube"},
   "MathlibExt/Analysis/Fourier/BooleanCubeNoiseStability": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Influences and the noise operator on the Boolean cube"},
+  "MathlibExt/Analysis/Fourier/BooleanCubeSpectral": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Spectral structure of Boolean functions"},
   "MathlibExt/Analysis/Fourier/ConvolutionTheorem": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Convolution theorem for the Fourier transform"},
   "MathlibExt/Analysis/Fourier/FastFourierTransform": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Fast Fourier transform"},
   "MathlibExt/Analysis/Fourier/FiniteAbelianDFT": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Fourier transform on finite abelian groups"},
