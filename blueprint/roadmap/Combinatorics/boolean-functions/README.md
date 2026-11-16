@@ -12,3 +12,4 @@ Functions from {0,1}^n to {0,1}: counting monotone, self-dual and unate Boolean 
 - [Parity products modulo powers of two](parity-products-modulo-powers-of-two/README.md)
 - [Self-dual monotone Boolean functions](self-dual-monotone-boolean-functions/README.md)
 - [Unate and monotone Boolean functions](unate-and-monotone-boolean-functions/README.md)
+- [Structure theorems for Boolean functions](structure-theorems-for-boolean-functions/README.md)

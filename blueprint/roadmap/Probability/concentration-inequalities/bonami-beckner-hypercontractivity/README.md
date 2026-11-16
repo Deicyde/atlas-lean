@@ -7,5 +7,7 @@
 - [The p-biased two-point inequality](the-p-biased-two-point-inequality/README.md)
 - [Bonami–Beckner hypercontractivity on the uniform cube](bonami-beckner-hypercontractivity-on-the-uniform/README.md)
 - [PBiased Tensorize](pbiased-tensorize/README.md)
+- [Bonami Lemma](bonami-lemma.md)
 - [(p,2)-hypercontractivity in noise-stability form](bool-noise-stab-le-bnt-qnorm-sq.md)
 - [Small-Set Expansion Theorem](bool-noise-stab-le-rpow-of-indicator.md)
+- [Hypercontractivity Theorem (Bonami–Beckner)](hypercontractivity-theorem.md)
