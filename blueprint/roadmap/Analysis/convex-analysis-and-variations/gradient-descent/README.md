@@ -42,3 +42,4 @@ How far the gradient update $G(w) = w - \alpha \nabla f(w)$ can move two points 
 - [Barzilai–Borwein step size](../../numerical-analysis/barzilai-borwein-step-size/README.md):
   gradient descent with the two-point step size, a scalar fit of the secant equation.
 - [Algorithmic stability](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/algorithmic-stability/README.md): the expansiveness properties of the gradient step make stochastic gradient descent on convex, smooth, Lipschitz losses uniformly stable, which bounds its generalization gap by $2L^2/n$ times its total step length for a loss bounded at the starting point.
+- [Mirror descent](../mirror-descent/README.md): the subgradient method with a non-Euclidean proximal setup (a norm and a strongly convex distance-generating function), of which the Euclidean subgradient method and stochastic gradient descent are special cases.

@@ -1790,6 +1790,8 @@
   "MathlibExt/Analysis/Convex/KarushKuhnTucker": {"to": "Analysis/convex-analysis-and-variations", "title": "Karush–Kuhn–Tucker conditions"},
   "MathlibExt/Analysis/Convex/LagrangeDuality": {"to": "Analysis/convex-analysis-and-variations", "title": "Lagrange duality"},
   "MathlibExt/Analysis/Convex/LinearProgrammingDuality": {"to": "Geometry/convex-geometry", "title": "Linear programming"},
+  "MathlibExt/Analysis/Convex/MirrorDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror descent"},
+  "MathlibExt/Analysis/Convex/MirrorDescentEntropy": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror descent"},
   "MathlibExt/Analysis/Convex/MoreauDecomposition": {"to": "Analysis/convex-analysis-and-variations", "title": "Moreau decomposition"},
   "MathlibExt/Analysis/Convex/NewtonMinimization": {"to": "Analysis/convex-analysis-and-variations", "title": "Newton's method for minimization"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},
