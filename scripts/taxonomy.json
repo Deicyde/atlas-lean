@@ -5247,6 +5247,7 @@
   "WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted": {"to": "Combinatorics/additive-combinatorics/progressions-dense-sets", "title": "Number of arithmetic progressions in dense sets"},
   "WantedExt/Combinatorics/MarkoffGraphWanted": {"to": "NumberTheory/diophantine-equations/pell-quadratic-equations", "title": "Markoff triples modulo primes"},
   "WantedExt/Combinatorics/MatchingCutGirthWanted": {"to": "GraphTheory/matchings-and-flows", "title": "Matching cuts"},
+  "WantedExt/Combinatorics/MatchingPolytopeWanted": {"to": "GraphTheory/matchings-and-flows", "title": "Matching polytope"},
   "WantedExt/Combinatorics/MatroidCharacteristicPolynomialLogConcaveAMR156Problem0026Wanted": {"to": "Combinatorics/matroid-theory", "title": "Heron–Rota–Welsh conjecture"},
   "WantedExt/Combinatorics/MatroidHodgeTheoryWanted": {"to": "Combinatorics/matroid-theory", "title": "Hodge theory for matroids"},
   "WantedExt/Combinatorics/MatroidReducedCharacteristicPolynomialWanted": {"to": "Combinatorics/matroid-theory", "title": "Heron–Rota–Welsh conjecture"},
