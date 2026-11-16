@@ -2350,6 +2350,8 @@
   "MathlibExt/Combinatorics/Coding/CycleCode": {"to": "GraphTheory/graph-invariants-and-labelings", "title": "Shannon capacity of a graph"},
   "MathlibExt/Combinatorics/Coding/GilbertVarshamov": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
   "MathlibExt/Combinatorics/Coding/HammingSpherePacking": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
+  "MathlibExt/Combinatorics/Coding/ListDecoding": {"to": "InformationTheory/error-correcting-codes", "title": "List decoding"},
+  "MathlibExt/Combinatorics/Coding/ListDecodingCapacity": {"to": "InformationTheory/error-correcting-codes", "title": "List decoding"},
   "MathlibExt/Combinatorics/Coding/SingletonBound": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
   "MathlibExt/Combinatorics/ConsecutiveCyclicPrimeLabeling": {"to": "GraphTheory/graph-invariants-and-labelings", "title": "Prime labelings of ladder graphs"},
   "MathlibExt/Combinatorics/DensityHalesJewett": {"to": "Combinatorics/ramsey-theory/structural-ramsey", "title": "Density Hales–Jewett theorem"},
