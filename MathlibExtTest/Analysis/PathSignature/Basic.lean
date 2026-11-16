@@ -88,4 +88,17 @@ example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (s t : ℝ) :
     HasDerivAt (fun t => signature v s t [0, 1]) (signature v s t [0] * v 1 t) t :=
   hasDerivAt_signature_concat hv s [0] 1 t
 
+/-- Theorem 1.25 for the L-shaped path of Example 1.18: its signature times that of its reversal
+is `1`; at the word `21` this is `S^{21}_{0,2} + S^2_{0,2} S(←X)^1_{0,2} + S(←X)^{21}_{0,2} = 0`. -/
+example : tensorMul (signature lPath 0 2) (signature (fun i u => -lPath i (0 + 2 - u)) 0 2)
+    [1, 0] = 0 := by
+  rw [tensorMul_signature_reverse lPath_integrable 0 2]
+  simp [tensorOne]
+
+/-- The reversed path runs the original backwards: `S(←X)^w_{a,t} = S(X)^w_{b,a+b−t}`. -/
+example (v : Fin 2 → ℝ → ℝ) : signature (fun i u => -v i (0 + 1 - u)) 0 1 [0] =
+    signature v 1 0 [0] := by
+  rw [signature_reverse_eq]
+  norm_num
+
 end MathlibExtTest.Analysis.PathSignature.Basic

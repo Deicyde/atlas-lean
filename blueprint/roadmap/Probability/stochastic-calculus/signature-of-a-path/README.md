@@ -41,3 +41,5 @@ for a continuous velocity.
 - [Signature along a repeated letter](signature-replicate.md)
 - [Linear controlled equations are solved by the signature series](tendsto-signature-series.md)
 - [Composite linear map along a word](word-op.md)
+- [Signature of the time-reversed path over a sub-interval](signature-reverse-eq.md)
+- [Time-reversed signature is the inverse](tensor-mul-signature-reverse.md)

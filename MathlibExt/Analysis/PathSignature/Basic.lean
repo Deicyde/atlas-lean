@@ -283,4 +283,36 @@ theorem signature_piecewise_linear (hv : ∀ i a b, IntervalIntegrable (v i) vol
       List.foldl_append]
     rfl
 
+/-- **Signature of the time-reversed path over a sub-interval.** For the time reversal
+`←X_u = X_{a+b−u}` of a path, with velocity `←vⁱ(u) = −vⁱ(a + b − u)`, the iterated integrals of
+`←X` from `a` to `t` are those of `X` from `b` back to `a + b − t`:
+`S(←X)^w_{a,t} = S(X)^w_{b,a+b−t}` for every word `w` and every real `t`. -/
+theorem signature_reverse_eq (v : ι → ℝ → ℝ) (a b t : ℝ) (w : List ι) :
+    signature (fun i u => -v i (a + b - u)) a t w = signature v b (a + b - t) w := by
+  induction w using List.reverseRecOn generalizing t with
+  | nil => simp
+  | append_singleton w i ih =>
+    rw [signature_concat, signature_concat]
+    simp_rw [ih]
+    have h := intervalIntegral.integral_comp_sub_left
+      (fun r => signature v b r w * -v i r) (a := a) (b := t) (a + b)
+    rw [h, show a + b - a = b by ring, intervalIntegral.integral_symm]
+    simp [mul_neg, intervalIntegral.integral_neg]
+
+/-- **Time-reversed signature is the inverse.** For a path with locally integrable velocity and its
+time reversal `←X_u = X_{a+b−u}` on `[a, b]` (velocity `←vⁱ(u) = −vⁱ(a + b − u)`),
+`S(X)_{a,b} ⊗ S(←X)_{a,b} = 1` in the algebra of tensor series (Chevyrev and Kormilitzin,
+*A primer on the signature method in machine learning*, arXiv:1603.03788v2, Theorem 1.25,
+equation (21)). The proof here is Chen's identity at `b` together with
+`S(←X)_{a,b} = S(X)_{b,a}` (`signature_reverse_eq`). -/
+theorem tensorMul_signature_reverse (hv : ∀ i a b, IntervalIntegrable (v i) volume a b)
+    (a b : ℝ) :
+    tensorMul (signature v a b) (signature (fun i u => -v i (a + b - u)) a b) = tensorOne := by
+  have hrev : signature (fun i u => -v i (a + b - u)) a b = signature v b a := by
+    funext w
+    rw [signature_reverse_eq, show a + b - b = a by ring]
+  rw [hrev, ← signature_eq_tensorMul hv a b a]
+  funext w
+  rw [signature_self, tensorOne]
+
 end MathlibExt.Analysis.PathSignature
