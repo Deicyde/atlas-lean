@@ -21715,6 +21715,7 @@
 "MathlibExt.GameTheory.SelfishRouting.RoutingInstance.cost_eq_sum_pathLatency_mul": "134337252ee701b3",
 "MathlibExt.GameTheory.SelfishRouting.RoutingInstance.edgeFlow": "a8da280308e1c3ce",
 "MathlibExt.GameTheory.SelfishRouting.RoutingInstance.edgeFlow_nonneg": "56dc5a5be5698990",
+"MathlibExt.GameTheory.SelfishRouting.RoutingInstance.exists_isWardrop": "c947b8439caca0f5",
 "MathlibExt.GameTheory.SelfishRouting.RoutingInstance.pathLatency": "53f022827799069d",
 "MathlibExt.GameTheory.SelfishRouting.RoutingInstance.sum_pathLatency_mul": "56ec880d02079c26",
 "MathlibExt.GameTheory.SelfishRouting.pigou": "1aa26460cd70d46a",
