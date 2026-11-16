@@ -12,3 +12,8 @@
 - [The parameter of a uniform vertex expander is positive](pos-2.md)
 - [Small sets expand in a uniform vertex expander](small-expansion-2.md)
 - [Bipartite Ramanujan graphs of every degree](exists-bipartite-ramanujan.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../../algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): spectral expansion: Cheeger's inequality ties `λ₂` to edge expansion.
+- [Interlacing families of polynomials](../../../Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/README.md): the method behind bipartite Ramanujan graphs of every degree.

@@ -11,3 +11,8 @@
 - [Matrix-tree theorem for a chosen root](kirchhoff-matrix-tree-of-root.md)
 - [Matrix-tree theorem for principal minors of the Laplacian](kirchhoff-matrix-tree-lap-matrix.md)
 - [Kirchhoff's matrix-tree theorem](kirchhoff-matrix-tree.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../graph-laplacians-and-cheeger-s-inequality/README.md): `lapMatrix` as the multigraph Laplacian of the darts, with its quadratic form and spectrum.
+- [Effective resistance and electrical networks](../effective-resistance-and-electrical-networks/README.md): the same Laplacian read as the operator of a resistor network; Spielman, *Spectral and Algebraic Graph Theory*, Theorem 13.5.1, relates effective resistances to random spanning trees.

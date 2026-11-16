@@ -6,3 +6,7 @@ most `⌈d (n - 1)⌉` edges such that `L_G ≼ L_H ≼ κ L_G` for `κ = (d + 1
 (Batson, Spielman and Srivastava, *Twice-Ramanujan sparsifiers*, arXiv:0808.0163, Theorem 1.1).
 It is stated here for multigraphs, which follows from the graph case by merging parallel edges;
 `n - 1` is truncated subtraction, which only matters for the empty graph.
+
+## Informally uses
+
+- [Batson–Spielman–Srivastava, vector form](exists-sparse-reweighting.md): the proof of Theorem 1.1 writes `L_G = Bᵀ W B` and applies Theorem 3.1, on `im(L_G)`, to the columns of `(L_G⁺)^{1/2} Bᵀ W^{1/2}`, one per edge.

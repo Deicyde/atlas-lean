@@ -58,3 +58,7 @@ is. The same reindexing caveat applies to a general pair $(i, j)$.
 - [Matrix supported on the edges of a graph](is-supported-on.md)
 - [Dempster's covariance-selection MLE](gauss-log-lik-le-of-inv-eq-on-graph.md)
 - [Uniqueness of Dempster's MLE](eq-of-gauss-log-lik-eq.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): weighted graph Laplacians and their quadratic forms in general.

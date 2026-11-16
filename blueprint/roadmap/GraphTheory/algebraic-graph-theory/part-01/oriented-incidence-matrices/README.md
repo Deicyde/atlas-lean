@@ -18,3 +18,7 @@
 - [Entries of the boundary-column matrix](boundary-columns-apply.md)
 - [Row vector times the boundary columns](vec-mul-boundary-columns-apply.md)
 - [Surjectivity with free boundary columns](surjective-mul-vec-from-cols-boundary-co.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../graph-laplacians-and-cheeger-s-inequality/README.md): the weighted Laplacian `B diag(w) Bᵀ` built from this matrix.

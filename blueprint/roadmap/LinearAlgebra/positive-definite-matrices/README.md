@@ -12,3 +12,7 @@ Positive definite and semidefinite matrices, criteria for definiteness, and ineq
 - [Hoffman–Wielandt inequality for Hermitian matrices](hoffman-wielandt-hermitian.md)
 - [Lipschitz linear statistics of Hermitian spectra are stable](abs-sum-sub-sum-le-of-lipschitz-with.md)
 - [Log-determinant trace inequality](log-det-mul-le-trace.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): graph Laplacians are positive semidefinite, and Loewner-order comparisons of Laplacians compare graphs.

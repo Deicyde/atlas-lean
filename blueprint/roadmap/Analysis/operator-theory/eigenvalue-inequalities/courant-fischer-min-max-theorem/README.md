@@ -19,3 +19,7 @@
 - [Courant–Fischer min–max, lower-bound form](exists-unit-ge-of-submodule.md)
 - [Courant–Fischer max–min, extremal subspace form](exists-head-submodule.md)
 - [Courant–Fischer max–min, lower-bound form](exists-unit-le-of-submodule.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): Courant–Fischer gives the second Laplacian eigenvalue `λ₂` as a minimum of Rayleigh quotients over vectors orthogonal to the constants.

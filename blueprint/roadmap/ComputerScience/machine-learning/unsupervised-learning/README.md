@@ -7,3 +7,7 @@ Structure in unlabelled data: k-means, archetypal analysis, nonnegative matrix f
 - [Non-negative matrix factorization](non-negative-matrix-factorization/README.md)
 - [Probabilistic principal component analysis](probabilistic-principal-component-analysis/README.md)
 - [Successive projection algorithm](successive-projection-algorithm/README.md)
+
+## Related topics
+
+- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): spectral clustering uses the bottom eigenvectors of a graph Laplacian, and Cheeger's inequality explains why the sweep cut of the second eigenvector is a good partition.

@@ -7,3 +7,7 @@ multigraph, `L` its Laplacian and `d` its weighted degrees. Let `z` be centered 
 `φ(S_τ) = w(∂S_τ) / min(d(S_τ), d(V \ S_τ)) ≤ √(2 zᵀLz / zᵀDz)`; the conductance is stated here
 multiplied out, with its denominator positive (D. A. Spielman, *Spectral and Algebraic Graph
 Theory*, draft 2019, Theorem 21.1.3 with Definition 21.1.1).
+
+## Informally uses
+
+- [Laplacian quadratic form](dot-product-mul-vec-laplacian.md): the proof bounds the expected cut weight by Cauchy–Schwarz against `∑_e w_e (z(a) - z(b))² = zᵀLz` (Spielman, *Spectral and Algebraic Graph Theory*, inequality (21.2)).
