@@ -6596,6 +6596,7 @@
   "WantedExt/Probability/GartnerEllisWanted": {"to": "Probability/large-deviations", "title": "Gärtner–Ellis theorem"},
   "WantedExt/Probability/IsotropicConstantBoundsWanted": {"to": "Probability/high-dimensional-probability", "title": "Isotropic constant of log-concave laws"},
   "WantedExt/Probability/JansonInequalityWanted": {"to": "Combinatorics/probabilistic-combinatorics", "title": "Janson's inequalities"},
+  "WantedExt/Probability/KernelTwoSampleTestWanted": {"to": "Probability/hypothesis-testing", "title": "Kernel two-sample test"},
   "WantedExt/Probability/KimVuConcentrationWanted": {"to": "Probability/concentration-inequalities", "title": "Kim–Vu polynomial concentration"},
   "WantedExt/Probability/KLSBoundsWanted": {"to": "Probability/high-dimensional-probability", "title": "Kannan–Lovász–Simonovits conjecture"},
   "WantedExt/Probability/MatrixConcentrationWanted": {"to": "Probability/concentration-inequalities", "title": "Matrix concentration inequalities"},

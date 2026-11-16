@@ -26754,6 +26754,7 @@
 "MathlibExt.Probability.KernelMeanEmbedding.mmd_eq_zero_iff_of_universal": "160477d465350fb9",
 "MathlibExt.Probability.KernelMeanEmbedding.mmd_sq_eq": "a08568ec42a04a4f",
 "MathlibExt.Probability.KernelMeanEmbedding.norm_featureMap": "3a9292ae8ed0d9f3",
+"MathlibExt.Probability.KernelTwoSampleTestWanted.measureReal_abs_mmdBiased_sub_mmd_gt_le": "2e34e0cf55b37e53",
 "MathlibExt.Probability.KimVuConcentrationWanted.kim_vu_concentration": "5a68bc8180ded440",
 "MathlibExt.Probability.KimVuConcentrationWanted.maxAverageEffect": "121203f16fc00961",
 "MathlibExt.Probability.KimVuConcentrationWanted.truncatedPoly": "b158ced07f0f1602",

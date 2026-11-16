@@ -34,6 +34,7 @@ These procedures base inference on counts, ranks or random reassignments of the 
 
 ## Other topics in hypothesis testing
 
-Meta-analysis combines evidence from several studies and measures how much their results differ.
+Meta-analysis combines evidence from several studies and measures how much their results differ. The kernel two-sample test compares two samples through the maximum mean discrepancy between their kernel mean embeddings.
 
 - [Meta-analysis](meta-analysis/README.md)
+- [Large-deviation bound for the biased empirical MMD](measure-real-abs-mmd-biased-sub-mmd-gt-l.md)
