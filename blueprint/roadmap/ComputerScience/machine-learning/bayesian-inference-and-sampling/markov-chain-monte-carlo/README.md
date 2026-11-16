@@ -34,3 +34,4 @@
 ## Related topics
 
 - [Canonical paths and multicommodity flow](../../../../Probability/markov-chains/canonical-paths-and-multicommodity-flow/README.md): quantitative bounds on how fast a reversible chain approaches its target: canonical paths and flows bound the spectral gap, and fast mixing yields a low-congestion flow.
+- [Langevin Monte Carlo](../langevin-monte-carlo/README.md): sampling from a density on $\mathbb{R}^p$ by noisy gradient steps, without accept/reject; for strongly log-concave targets it converges in $W_2$ up to a discretization bias.
