@@ -26,3 +26,14 @@ Probability under model uncertainty, after S. Peng: the primitive object is a *s
 - [Cash translatability](expectation-const-add.md)
 - [Constants are test functions](is-loc-lip-const.md)
 - [Lipschitz functions are test functions](is-loc-lip-of-lipschitz-with.md)
+
+## Related topics
+
+- [Limit theorems under sublinear expectations](../../central-limit-theorems/limit-theorems-under-sublinear-expectations/README.md):
+  Peng's law of large numbers and central limit theorem, whose limits are the maximal and G-normal
+  laws defined here.
+- [Backward stochastic differential equations](../../stochastic-calculus/backward-stochastic-differential-equations/README.md):
+  g-expectations, the dynamically consistent nonlinear expectations on a Wiener space that
+  preceded G-expectations.
+- [Hahn–Banach theorem](../../../Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/README.md):
+  the extension theorem behind the representation of a sublinear expectation.

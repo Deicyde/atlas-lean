@@ -6,3 +6,9 @@ expectation on all functions `Ω → ℝ`, then
 `∑_ω q(ω) Y(ω) ≤ E[Y]` for every `Y`; the maximum is attained. This is the finite-`Ω` case of
 Peng, arXiv:1002.4546v1, Chapter I, Theorem 2.1, which the Notes to Chapter I attribute to
 Huber (*Robust Statistics*, 1981).
+
+## Background
+
+- [Representation of a sublinear expectation as a maximum of linear expectations](is-greatest.md):
+  the general statement, of which this is the case `H = ℝ^Ω` with `Ω` finite, where every linear
+  expectation is a probability vector.

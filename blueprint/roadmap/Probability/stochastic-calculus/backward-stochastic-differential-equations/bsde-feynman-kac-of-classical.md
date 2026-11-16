@@ -11,3 +11,16 @@ solution `(Y, Z)` of the Markovian BSDE with generator `f(X_t, y, z)` and termin
 `Y_0 = u(0, x)`. S. Peng, Proc. ICM 2010, Vol. I, Theorem 1.3 (stated there for the viscosity
 solution) and the paragraph after it, which records Peng's (1991) proof when the PDE (1.11) has a
 classical solution.
+
+## Informally uses
+
+- [Existence and uniqueness for BSDEs with Lipschitz generators](bsde-exists-unique.md): Itô's
+  formula shows that `(u(t, X_t), σ(X_t) ∂ₓu(t, X_t))` solves the BSDE, and uniqueness identifies it
+  with `(Y, Z)`.
+
+## Background
+
+- [Itô's formula](../it-s-formula/README.md): the repository has it for `f(B_t)`; the proof needs
+  its version for `u(t, X_t)` with `X` an Itô process.
+- [Strong solutions of SDEs with Lipschitz coefficients](../sde-lipschitz-exists-unique.md): the
+  forward process `X`.

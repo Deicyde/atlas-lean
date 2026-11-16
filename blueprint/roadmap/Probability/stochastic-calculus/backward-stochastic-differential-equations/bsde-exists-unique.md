@@ -9,3 +9,13 @@ Then for every `F_T`-measurable square-integrable `ξ` the BSDE `Y_t = ξ + ∫_
 on `[0, T]`, and two solutions agree in `M²(0, T)`. This is the case `d = m = 1` of
 S. Peng, Proc. ICM 2010, Vol. I, Theorem 1.1 (E. Pardoux and S. Peng, Systems Control Lett. 14
 (1990)).
+
+## Background
+
+- [Itô isometry for progressive integrands](../it-integral/lintegral-ito-integral-sq-of-is-progress.md):
+  the `L²` theory of the integral `∫ Z dB` in which the equation and the space `M²(0, T)` are set;
+  a general nonlinear BSDE "can be still solved by a fixed point approach" (S. Peng, *BSDE, PDE,
+  Nonlinear Expectation and Model Uncertainty*, IMS–NUS lecture notes, abstract).
+- [Strong solutions of SDEs with Lipschitz coefficients](../sde-lipschitz-exists-unique.md): the
+  forward analogue; there the initial value is prescribed, here the terminal value, and the
+  martingale representation theorem (not yet in the repository) supplies the unknown `Z`.
