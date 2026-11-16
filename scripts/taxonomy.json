@@ -4086,6 +4086,7 @@
   "MathlibExt/Probability/Percolation/PcUpperEnclosure": {"to": "Probability/percolation/phase-transition", "title": "Bounds on the critical probability"},
   "MathlibExt/Probability/Percolation/PivotalFactor": {"to": "Probability/percolation/sharpness", "title": "Russo's formula for percolation"},
   "MathlibExt/Probability/Percolation/RSW": {"to": "Probability/percolation/crossings", "title": "Russo–Seymour–Welsh theory"},
+  "MathlibExt/Probability/Percolation/RussoCovariance": {"to": "Probability/correlation-inequalities/harris-fkg-bk", "title": "Russo's formula and pivotal coordinates"},
   "MathlibExt/Probability/Percolation/RussoInfluence": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
   "MathlibExt/Probability/Percolation/SharpThreshold": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
   "MathlibExt/Probability/Percolation/SharpThresholdKKL": {"to": "Probability/percolation/phase-transition", "title": "Sharp thresholds from influences"},
