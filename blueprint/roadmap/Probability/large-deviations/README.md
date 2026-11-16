@@ -6,3 +6,4 @@ Large deviation principles and rate functions, Cramér's theorem and Chernoff bo
 - [Legendre transform](legendre-transform/README.md)
 - [Cramér's theorem](cram-r-s-theorem/README.md)
 - [Contraction principle](contraction-principle/README.md)
+- [Varadhan's integral lemma](varadhan-s-integral-lemma/README.md)
