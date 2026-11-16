@@ -3840,6 +3840,7 @@
   "MathlibExt/Probability/HewittSavageSequence": {"to": "Probability/foundations", "title": "Hewitt–Savage zero–one law"},
   "MathlibExt/Probability/HoeffdingBernoulliSumAbsTail": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
   "MathlibExt/Probability/HoeffdingBinomialLowerTail": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
+  "MathlibExt/Probability/HoeffdingBounded": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
   "MathlibExt/Probability/Hypercontractivity": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
   "MathlibExt/Probability/IndependentIncrementsMarkovProperty": {"to": "Probability/stochastic-calculus", "title": "Markov property of processes with independent increments"},
   "MathlibExt/Probability/InfinitelyDivisible": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Infinitely divisible distributions"},

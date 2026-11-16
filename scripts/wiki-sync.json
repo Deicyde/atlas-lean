@@ -25731,6 +25731,8 @@
 "MathlibExt.Probability.HewittSavageSequence.hewittSavage_zeroOne": "0048d724840df833",
 "MathlibExt.Probability.HewittSavageWanted.hewitt_savage_zero_one": "410974e6ab2b93f5",
 "MathlibExt.Probability.HewittSavageWanted.hewitt_savage_zero_one_general": "c1e077cd37299b12",
+"MathlibExt.Probability.HoeffdingBounded.measureReal_abs_avg_sub_ge_le": "46f9de8987b0ff9f",
+"MathlibExt.Probability.HoeffdingBounded.measureReal_avg_sub_ge_le": "4137dfbec805edb4",
 "MathlibExt.Probability.IndependentIncrementsMarkovProperty.BmAdapted": "ecfa09be7c9c944f",
 "MathlibExt.Probability.IndependentIncrementsMarkovProperty.BmIndepIncrements": "2fd086b90376d2ba",
 "MathlibExt.Probability.IndependentIncrementsMarkovProperty.bmCenteredCylinders": "d7ae810ab1c71a2e",
