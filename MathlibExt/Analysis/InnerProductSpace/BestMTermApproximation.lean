@@ -25,7 +25,8 @@ so for a fixed support the best coefficients are `aᵢ = cᵢ` (orthogonal proje
 (2.8)), and the best support keeps the `M` largest coefficients: the error of the best `M`-term
 approximation is the sum of the squares of the remaining coefficients (DeVore (2.19)). In signal
 processing this is thresholding of the coefficients in a basis, the core of nonlinear (sparse)
-approximation in wavelet bases (S. Mallat, *A Wavelet Tour of Signal Processing*).
+approximation in wavelet bases (DeVore, Section 3.6 for the Haar basis and Section 7.4 for
+wavelet bases).
 
 ## Main declarations
 

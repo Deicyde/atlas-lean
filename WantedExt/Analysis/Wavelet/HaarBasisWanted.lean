@@ -20,11 +20,11 @@ The Haar system `H_{j,k}(x) = 2^{j/2} H(2^j x - k)` of `MathlibExt.Analysis.Wave
 first wavelet orthonormal basis: of `L²[0,1)` together with the constant `1` (R. A. DeVore,
 *Nonlinear approximation*, Acta Numerica 7 (1998), Section 3.5, (3.44)–(3.47)), and of `L²(ℝ)`
 over all `j, k ∈ ℤ` (S. Mallat, *Multiresolution approximations and wavelet orthonormal bases of
-`L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), p. 23, as the multiresolution approximation with
-scaling function `1_{[0,1)}`). The statements are recorded as Hilbert bases of the real `L²`
-spaces whose elements are almost everywhere equal to the Haar functions. Orthonormality is
-proved (`MathlibExt.Analysis.Wavelet.Haar.integral_haarSystem_mul_haarSystem`, in integral
-form); completeness, through the density of dyadic step functions, is deferred.
+`L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), Section 4, after (70), as the multiresolution
+approximation with scaling function `1_{[0,1)}`). The statements are recorded as Hilbert bases of
+the real `L²` spaces whose elements are almost everywhere equal to the Haar functions.
+Orthonormality is proved (`MathlibExt.Analysis.Wavelet.Haar.integral_haarSystem_mul_haarSystem`, in
+integral form); completeness, through the density of dyadic step functions, is deferred.
 -/
 
 @[expose] public section
@@ -51,9 +51,9 @@ theorem_wanted exists_hilbertBasis_haar_unitInterval :
           =ᵐ[volume.restrict (Ico (0 : ℝ) 1)] haarSystem k (j : ℕ)
 
 /-- **The Haar wavelet basis of `L²(ℝ)`** (S. Mallat, *Multiresolution approximations and
-wavelet orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), p. 23: the Haar basis
-is the wavelet orthonormal basis `√(2^j) ψ(2^j x - k)`, `(k, j) ∈ ℤ²`, of the multiresolution
-approximation with scaling function `1_{[0,1]}`). The functions
+wavelet orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), Section 4, after (70):
+the Haar basis is the wavelet orthonormal basis `√(2^j) ψ(2^j x - k)`, `(k, j) ∈ ℤ²`, of the
+multiresolution approximation with scaling function `1_{[0,1]}`). The functions
 `H_{j,k}(x) = 2^{j/2} H(2^j x - k)`, `j, k ∈ ℤ`, form an orthonormal basis of `L²(ℝ)`: there is
 a Hilbert basis of `L²(ℝ)` indexed by `ℤ × ℤ` whose elements are a.e. equal to them. -/
 theorem_wanted exists_hilbertBasis_haarSystem :

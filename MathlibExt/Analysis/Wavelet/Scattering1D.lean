@@ -120,7 +120,14 @@ are `η ∈ ℝ` and an integrable `ρ ≥ 0` with `|ρ̂(ω)| ≤ |φ̂(2ω)|`,
 `α = inf_{1 ≤ |ω| ≤ 2} ∑_{j ∈ ℤ} ∑_{r = ±1} Ψ̂(2^{-j} r ω) |ψ̂(2^{-j} r ω)|² > 0`, where `Ψ̂` is
 `admissibilityFunction ρ η`. Two side conditions make the series of (29)–(30) meaningful: the
 series defining `Ψ̂` converges at every `ω` (its terms are nonnegative), and the positive lower
-bound `α` is required of the `ℤ`-indexed sums, which Lean sums unconditionally. -/
+bound `α` is required of the `ℤ`-indexed sums, which Lean sums unconditionally.
+
+Satisfiability is supported numerically, not formally: Mallat (Section 2.3, the remark after the
+proof of Theorem 2.6) reports that the analytic cubic-spline Battle–Lemarié wavelet is admissible
+in dimension one with `η = 3π/2`, taking for `ρ` a positive cubic box spline, by a numerical
+evaluation of (30) giving `α = 0.2766`. Explicitly, `ψ̂ = √2 |ψ̂_BL| 1_{ω > 0}`,
+`φ̂(ω) = φ̂_BL(ω / 2)` and `ρ` the centred cubic B-spline, `ρ̂(ω) = sinc⁴(ω / 2)`. No instance is
+formalized. -/
 def IsAdmissible (ψ φ : ℝ → ℂ) : Prop :=
   IsScatteringWavelet ψ φ ∧
   ∃ η : ℝ, ∃ ρ : ℝ → ℝ, (∀ x, 0 ≤ ρ x) ∧ Integrable ρ ∧

@@ -21,8 +21,8 @@ The Haar function `H = 1_{[0,1/2)} - 1_{[1/2,1)}` (R. A. DeVore, *Nonlinear appr
 Numerica 7 (1998), Section 3.5, (3.40)) is the wavelet of the simplest multiresolution
 approximation, whose scaling function is `1_{[0,1)}` (S. Mallat, *Multiresolution
 approximations and wavelet orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989),
-p. 23). Its dyadic dilates and translates `H_{j,k}(x) = 2^{j/2} H(2^j x - k)` form the Haar
-system, which is orthonormal in `L²(ℝ)` (`integral_haarSystem_mul_haarSystem`). Its
+Section 4, after (70)). Its dyadic dilates and translates `H_{j,k}(x) = 2^{j/2} H(2^j x - k)` form
+the Haar system, which is orthonormal in `L²(ℝ)` (`integral_haarSystem_mul_haarSystem`). Its
 completeness, that is that the Haar system is an orthonormal basis of `L²(ℝ)` and that
 `1_{[0,1)}` with the `H_{j,k}` fitted to `[0,1)` is an orthonormal basis of `L²[0,1)`
 (DeVore (3.47)), is recorded in `WantedExt.Analysis.Wavelet.HaarBasisWanted`.
@@ -46,14 +46,14 @@ namespace MathlibExt.Analysis.Wavelet.Haar
 
 /-- **Haar function.** `H = 1_{[0,1/2)} - 1_{[1/2,1)}`, equal to `1` on `[0, 1/2)`, to `-1`
 on `[1/2, 1)` and to `0` elsewhere (R. A. DeVore, *Nonlinear approximation*, Acta Numerica 7
-(1998), (3.40); S. Mallat, Trans. Amer. Math. Soc. 315 (1989), p. 23). -/
+(1998), (3.40); S. Mallat, Trans. Amer. Math. Soc. 315 (1989), Section 4, after (70)). -/
 def haarFunction (x : ℝ) : ℝ :=
   (Ico (0 : ℝ) (1 / 2)).indicator 1 x - (Ico (1 / 2 : ℝ) 1).indicator 1 x
 
 /-- **Haar system.** `haarSystem j k x = 2^{j/2} H(2^j x - k)` for `j, k ∈ ℤ`, the dyadic
 dilates and translates of the Haar function, normalized in `L²(ℝ)` (S. Mallat, Trans. Amer.
-Math. Soc. 315 (1989), the family `√(2^j) ψ(2^j x - k)` of p. 23 with `ψ = H`; DeVore,
-*Nonlinear approximation*, (3.41) for `0 ≤ k < 2^j`). -/
+Math. Soc. 315 (1989), the family `√(2^j) ψ(2^j x - k)` of Section 4 (after (70)) with `ψ = H`;
+DeVore, *Nonlinear approximation*, (3.41) for `0 ≤ k < 2^j`). -/
 def haarSystem (j k : ℤ) (x : ℝ) : ℝ :=
   (2 : ℝ) ^ ((j : ℝ) / 2) * haarFunction ((2 : ℝ) ^ j * x - k)
 
@@ -214,8 +214,8 @@ theorem integral_haarSystem_mul_haarSystem_of_lt {j j' : ℤ} (hjj : j < j') (k 
 /-- **Orthonormality of the Haar system.** For `j, k, j', k' ∈ ℤ`,
 `∫ H_{j,k} H_{j',k'} = 1` if `(j, k) = (j', k')` and `0` otherwise, where
 `H_{j,k}(x) = 2^{j/2} H(2^j x - k)` (S. Mallat, *Multiresolution approximations and wavelet
-orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), p. 23; R. A. DeVore,
-*Nonlinear approximation*, Acta Numerica 7 (1998), Section 3.5). Functions of the same scale
+orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), Section 4, after (70); R. A.
+DeVore, *Nonlinear approximation*, Acta Numerica 7 (1998), Section 3.5). Functions of the same scale
 have disjoint supports, and at two different scales the coarser one is constant on the support
 of the finer one, which has mean zero. Completeness is recorded in `WantedExt`. -/
 theorem integral_haarSystem_mul_haarSystem (j k j' k' : ℤ) :

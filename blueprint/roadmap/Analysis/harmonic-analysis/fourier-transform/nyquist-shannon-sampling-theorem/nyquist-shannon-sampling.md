@@ -12,7 +12,7 @@ $$
 f(t) = \sum_{n \in \mathbb{Z}} f(n) \operatorname{sinc}(\pi(n - t)).
 $$
 
-A proof, with Mathlib's `Real.sinc` in place of this file's `sinc`, is [Proof of the Nyquist–Shannon sampling theorem](nyquist-shannon-sampling-2.md).
+A proof, with Mathlib's `Real.sinc` in place of this file's `sinc`, is [Proof of the Nyquist–Shannon sampling theorem](nyquist-shannon-sampling-schwartz.md).
 
 ## Sources
 

@@ -52,7 +52,7 @@ theorem_wanted exists_scaling_function {V : ℤ → Submodule ℂ (Lp ℂ 2 (vol
 
 /-- **Wavelet orthonormal basis of a multiresolution approximation** (S. Mallat,
 *Multiresolution approximations and wavelet orthonormal bases of `L²(ℝ)`*, Trans. Amer. Math.
-Soc. 315 (1989), Section 4, the conclusion on p. 23). If `(V_j)` is a multiresolution
+Soc. 315 (1989), Section 4, the conclusion after (70)). If `(V_j)` is a multiresolution
 approximation of `L²(ℝ)`, there is a wavelet `ψ ∈ L²(ℝ)` such that the functions
 `x ↦ √(2^j) ψ(2^j x - k)`, `(j, k) ∈ ℤ²`, form an orthonormal basis of `L²(ℝ)`, and those of
 scale `j` lie in the orthogonal complement `O_j` of `V_j` in `V_{j+1}` (so that, the `O_j` being

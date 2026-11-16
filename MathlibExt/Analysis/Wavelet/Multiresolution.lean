@@ -27,9 +27,9 @@ multiresolution approximation of `L²(ℝ)` is a sequence `(V_j)_{j ∈ ℤ}` of
 5. an isomorphism `I : V_0 → ℓ²(ℤ)` which commutes with the action of `ℤ` (integer
    translations of functions and shifts of sequences).
 
-Resolution increases with `j` in this convention; S. Mallat's *A Wavelet Tour of Signal
-Processing* indexes scales the other way. Functions are elements of the complex `L²(ℝ)`, and a
-dilated or translated function is described by any `L²` element almost everywhere equal to it.
+Resolution increases with `j` in this convention (`V_j ⊂ V_{j+1}`); texts that index the spaces
+by the scale `2^j` instead write `V_{j+1} ⊂ V_j`. Functions are elements of the complex `L²(ℝ)`, and
+a dilated or translated function is described by any `L²` element almost everywhere equal to it.
 The main theorems of the paper (an orthonormal basis of integer translates of a scaling
 function, and the wavelet orthonormal basis) are recorded in
 `WantedExt.Analysis.Wavelet.MultiresolutionWanted`.
