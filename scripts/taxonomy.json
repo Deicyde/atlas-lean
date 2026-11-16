@@ -4256,6 +4256,7 @@
   "MathlibExt/Topology/MetricSpace/ModulusOfContinuity": {"to": "Analysis/real-functions/continuity-and-functional-equations", "title": "Modulus of continuity"},
   "MathlibExt/Topology/MetricSpace/PointedGromovHausdorff": {"to": "Geometry/metric-geometry", "title": "Pointed Gromov–Hausdorff convergence"},
   "MathlibExt/Topology/MetricSpace/PointedGromovHausdorffBorel": {"to": "Geometry/metric-geometry", "title": "Pointed Gromov–Hausdorff convergence"},
+  "MathlibExt/Topology/MetricSpace/TreeCoding": {"to": "Geometry/metric-geometry", "title": "Real trees coded by functions"},
   "MathlibExt/Topology/Order/LocalExtr": {"to": "Analysis/real-functions/differential-calculus", "title": "Local extrema and the second-derivative test"},
   "MathlibExt/Topology/ThreeManifold": {"to": "Topology/manifolds-geometric-topology", "title": "Topological 3-manifolds"},
   "PhyslibExt/CondensedMatter/IsingModel": {"to": "StatisticalMechanics/spin-models", "title": "Ising model on a finite graph"},
