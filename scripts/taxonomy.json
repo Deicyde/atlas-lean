@@ -1645,6 +1645,7 @@
   "MathlibExt/Analysis/AbsoluteValue/InducedTopology": {"to": "NumberTheory/p-adic-numbers", "title": "Absolute values on fields"},
   "MathlibExt/Analysis/AbsoluteValue/Nonarchimedean": {"to": "NumberTheory/p-adic-numbers", "title": "Absolute values on fields"},
   "MathlibExt/Analysis/AbsoluteValue/Rpow": {"to": "NumberTheory/p-adic-numbers", "title": "Absolute values on fields"},
+  "MathlibExt/Analysis/Approximation/ChebyshevMinimax": {"to": "Analysis/approximation-theory", "title": "Minimax property of the Chebyshev polynomials"},
   "MathlibExt/Analysis/Approximation/Equioscillation": {"to": "Analysis/approximation-theory", "title": "Chebyshev equioscillation theorem"},
   "MathlibExt/Analysis/Approximation/UniversalApproximation": {"to": "Analysis/approximation-theory", "title": "Universal approximation theorem"},
   "MathlibExt/Analysis/Asymptotics/BenderProductCoefficient": {"to": "Analysis/asymptotic-analysis", "title": "Bender's lemma"},
