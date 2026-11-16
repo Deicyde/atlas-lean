@@ -32,11 +32,12 @@ open MathlibExt.Combinatorics.SimpleGraph.GraphLimits
 open MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted (IsGraphon)
 
 /-- **Sidorenko's conjecture** (open). For every bipartite simple graph `F` and every graphon `W`
-(values in `[0, 1]`), `t(F, W) ≥ t(K₂, W) ^ |E(F)|` (Lovász, *Subgraph densities in signed graphons
-and the local Sidorenko conjecture*, Electron. J. Combin. 18 (2011), §1, inequality (1), stated
-there for bounded measurable `W ≥ 0`; by homogeneity of both sides in `W` the two forms are
-equivalent). Known cases listed there include trees, bigraphs with a colour class of at most four
-nodes, and cubes. -/
+(symmetric, values in `[0, 1]`), `t(F, W) ≥ t(K₂, W) ^ |E(F)|`. This is the graph form
+`t(F, G) ≥ t(K₂, G) ^ |E(F)|` of Lovász, *Subgraph densities in signed graphons and the local
+Sidorenko conjecture*, Electron. J. Combin. 18 (2011), §1, extended to graphons, which are limits of
+graphs. Sidorenko's analytic form, inequality (1) there, is more general: it allows bounded
+measurable `W ≥ 0` that need not be symmetric, and it implies the form stated here. Known cases
+listed there include trees, bigraphs with a colour class of at most four nodes, and cubes. -/
 def SidorenkoConjecture : Prop :=
   ∀ (k : ℕ) (F : SimpleGraph (Fin k)) [DecidableRel F.Adj], F.IsBipartite →
     ∀ W : ℝ → ℝ → ℝ, IsGraphon W →

@@ -15,9 +15,10 @@ public import Mathlib.Combinatorics.SimpleGraph.CycleGraph
 /-!
 # Sidorenko's inequality for the four-cycle
 
-Sidorenko's conjecture asserts that for every bipartite graph `F` and every nonnegative symmetric
-kernel `W`, `t(F, W) ≥ t(K₂, W) ^ |E(F)|` (Lovász, *Subgraph densities in signed graphons and the
-local Sidorenko conjecture*, Electron. J. Combin. 18 (2011), §1, inequality (1)). The four-cycle
+Sidorenko's conjecture asserts that for every bipartite graph `F` and every graph `G`,
+`t(F, G) ≥ t(K₂, G) ^ |E(F)|` (Lovász, *Subgraph densities in signed graphons and the local
+Sidorenko conjecture*, Electron. J. Combin. 18 (2011), §1; its analytic form, inequality (1)
+there, allows any bounded measurable kernel `W ≥ 0`, not necessarily symmetric). The four-cycle
 `C₄ = K_{2,2}` is the first nontrivial case; here it is proved for finite weighted graphs by two
 applications of the Cauchy–Schwarz inequality,
 `∑_{a,b,c,d} w(ab) w(bc) w(cd) w(da) = ∑_{a,c} (∑_b w(ab) w(bc))² ≥ |V|⁻² (∑_b d(b)²)²

@@ -12,4 +12,4 @@ Sidorenko's conjecture that for every bipartite graph $F$ the density $t(F, W)$ 
 
 - [Graph limits](../../random-graphs/graph-limits/README.md): homomorphism densities of graphs and graphons, in which the conjecture is stated.
 - [Turán numbers of bipartite graphs](../tur-n-numbers-of-bipartite-graphs/README.md): the Turán number of a bipartite graph $F$ asks how many edges force a copy of $F$; Sidorenko's conjecture asks how many copies a graph of given edge density must contain.
-- [Four-cycle-free graphs](../four-cycle-free-graphs/README.md): the extremal problem for the four-cycle; the $C_4$ case of Sidorenko's inequality says that a graph on $n$ vertices with edge density $p$ has at least $p^4 n^4$ homomorphic images of $C_4$.
+- [Four-cycle-free graphs](../four-cycle-free-graphs/README.md): the extremal problem for the four-cycle; the $C_4$ case of Sidorenko's inequality says that a graph $G$ on $n$ vertices with $t(K_2, G) = 2|E(G)|/n^2$ has at least $t(K_2, G)^4 \, n^4$ homomorphisms from $C_4$.

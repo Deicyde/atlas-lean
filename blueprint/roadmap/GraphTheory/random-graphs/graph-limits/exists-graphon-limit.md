@@ -8,7 +8,7 @@ Their proof passes to a subsequence whose weakly regular partitions refine each 
 
 ## Informally uses
 
-- [Weak regularity lemma (Frieze–Kannan)](exists-cut-norm-sub-partition-average-le.md): weakly $\varepsilon$-regular partitions of each graph in the sequence (Lovász–Szegedy, Lemma 4.2, in the proof of Lemma 5.1).
+- [Weak regularity lemma (Frieze–Kannan)](exists-cut-norm-sub-partition-average-le.md): weakly $\varepsilon$-regular partitions of each graph in the sequence, in the proof of Lemma 5.1. Lovász and Szegedy use the equitable variant of the weak regularity lemma (their Lemma 4.2, classes of almost equal size); the linked page is the Borgs et al. form (Lemma 2.4).
 - [Counting lemma](abs-hom-density-sub-hom-density-le.md): inequality (7), to compare $t(F, G'_m)$ with the densities of the partition averages.
 
 ## Background
