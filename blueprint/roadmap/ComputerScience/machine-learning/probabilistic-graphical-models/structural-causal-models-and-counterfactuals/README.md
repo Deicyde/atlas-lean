@@ -55,3 +55,6 @@ rungs of Pearl's hierarchy: association, intervention, counterfactual.
 - [Potential outcomes and causal identification](../../../../Probability/nonparametric-survival/potential-outcomes-and-causal-identification/README.md):
   the potential-outcome framework takes `Y_x(u)` as primitive; here it is derived from the
   submodel `M_x`, and consistency becomes a theorem.
+- [Additive noise models and causal identifiability](../additive-noise-models-and-causal-identifiability/README.md):
+  restricting the structural equations to linear ones with additive non-Gaussian noise makes the
+  causal direction identifiable from observational data, while the linear Gaussian case is not.

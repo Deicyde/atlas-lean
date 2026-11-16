@@ -11,3 +11,4 @@ Bayesian networks and their Markov properties, structure scores and Markov equiv
 - [Causal Bayesian networks](causal-bayesian-networks/README.md)
 - [Structural causal models and counterfactuals](structural-causal-models-and-counterfactuals/README.md)
 - [Variable elimination and belief propagation](variable-elimination-and-belief-propagation/README.md)
+- [Additive noise models and causal identifiability](additive-noise-models-and-causal-identifiability/README.md)
