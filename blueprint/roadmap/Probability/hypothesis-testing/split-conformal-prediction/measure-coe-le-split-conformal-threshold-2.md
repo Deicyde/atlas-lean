@@ -18,4 +18,4 @@ example, if all scores are equal the coverage is `1`).
 
 ## Sources
 
-- R. J. Tibshirani, R. F. Barber, E. J. Candès and A. Ramdas, *Conformal prediction under covariate shift*, NeurIPS 2019, arXiv:1904.06019, Lemma 1 (with `β = 1 - α`); Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019, arXiv:1905.03222, Lemma 2. The recorded scope is `0 < α < 1`; the endpoint `α = 0` is a derived trivial case.
+- R. J. Tibshirani, R. F. Barber, E. J. Candès and A. Ramdas, *Conformal prediction under covariate shift*, NeurIPS 2019, arXiv:1904.06019, Lemma 1 (with `β = 1 - α`), which states this bound for `β ∈ (0, 1)`; the Lean statement also admits the trivial endpoint `α = 0`. Lemma 2 of Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019, arXiv:1905.03222, is stated with the term `1 / n`; the bound here is the sharper `1 / (n + 1)`.

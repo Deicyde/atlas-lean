@@ -156,7 +156,8 @@ probability at least `1 - α`.
 
 Source: Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*,
 NeurIPS 2019, arXiv:1905.03222, Theorem 1 (first inequality), stated conditionally on the proper
-training set (fixed `q_lo`, `q_hi`), as in its proof. The recorded scope is `0 < α < 1`. -/
+training set (fixed `q_lo`, `q_hi`), as in its proof. The source takes `α ∈ (0, 1)`; the Lean
+statement also admits the trivial endpoint `α = 0`. -/
 theorem ofReal_one_sub_le_measure_mem_cqrBand (μ : Measure (Fin (n + 1) → 𝒳 × ℝ))
     [IsProbabilityMeasure μ] (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun Z => Z ∘ σ) = μ)
     {q_lo q_hi : 𝒳 → ℝ} (hlo : Measurable q_lo) (hhi : Measurable q_hi) {α : ℝ} (hα0 : 0 ≤ α)
@@ -176,7 +177,8 @@ distinct, the test response lies in the CQR band with probability at most `1 - �
 
 Source: Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*,
 NeurIPS 2019, arXiv:1905.03222, Theorem 1 (second inequality, `|I₂| = n` calibration points),
-conditionally on the proper training set. The recorded scope is `0 < α < 1`. -/
+conditionally on the proper training set. The source takes `α ∈ (0, 1)`; the Lean statement also
+admits the trivial endpoint `α = 0`. -/
 theorem measure_mem_cqrBand_le (μ : Measure (Fin (n + 1) → 𝒳 × ℝ))
     [IsProbabilityMeasure μ] (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun Z => Z ∘ σ) = μ)
     {q_lo q_hi : 𝒳 → ℝ} (hlo : Measurable q_lo) (hhi : Measurable q_hi)

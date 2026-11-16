@@ -10,13 +10,15 @@ module
 
 public import MathlibExt.Probability.Statistics.MultipleTesting.Knockoff
 public import Mathlib.MeasureTheory.Measure.Dirac.Basic
+public import Mathlib.Probability.Distributions.Gaussian.Real
+public import Mathlib.MeasureTheory.Constructions.Pi
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.FinCases
 
 @[expose] public section
 
-open MeasureTheory Finset MathlibExt.Probability.Statistics.MultipleTesting
+open MeasureTheory ProbabilityTheory Finset MathlibExt.Probability.Statistics.MultipleTesting
   MathlibExt.Probability.Statistics.MultipleTesting.Knockoff
 
 namespace MathlibExtTest.Probability.Statistics.MultipleTesting.Knockoff
@@ -112,5 +114,22 @@ example (p : ℕ) (H0 : Finset (Fin p)) :
   congr 1
   funext _ j
   simp [flipSigns]
+
+/-- A non-degenerate witness of the sign-flip hypothesis: i.i.d. standard Gaussian statistics
+`W = id`, with every coordinate allowed to be null. Flipping the signs of any set of coordinates
+preserves the product law, since each coordinate's law is symmetric. -/
+example (p : ℕ) (H0 : Finset (Fin p)) :
+    ∀ S ⊆ H0, (Measure.pi fun _ : Fin p => gaussianReal 0 1).map (fun ω => flipSigns S (id ω)) =
+      (Measure.pi fun _ : Fin p => gaussianReal 0 1).map id := by
+  intro S _
+  have hf : (fun ω : Fin p → ℝ => flipSigns S (id ω)) =
+      fun ω j => (if j ∈ S then (fun x : ℝ => -x) else id) (ω j) := by
+    funext ω j; by_cases h : j ∈ S <;> simp [flipSigns, h]
+  rw [hf, Measure.map_id, Measure.pi_map_pi (fun j => by
+    by_cases h : j ∈ S <;> simp [h] <;> fun_prop)]
+  congr 1; funext j
+  by_cases h : j ∈ S
+  · simp [h, gaussianReal_map_neg]
+  · simp [h]
 
 end MathlibExtTest.Probability.Statistics.MultipleTesting.Knockoff

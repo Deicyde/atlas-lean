@@ -13,8 +13,8 @@ so split conformal coverage applies to the score vector.
 ## Informally uses
 
 - [Membership in the CQR band through the score](mem-cqr-band-iff.md): coverage of the response is coverage of its score.
-- [Split conformal coverage](../split-conformal-prediction/of-real-one-sub-le-measure-coe-le-split.md): the quantile lemma (Lemma 2 of the source) applied to the exchangeable scores.
+- [Split conformal coverage](../split-conformal-prediction/of-real-one-sub-le-measure-coe-le-split.md): the lower bound of the quantile lemma (Lemma 2 of the source) applied to the exchangeable scores.
 
 ## Sources
 
-- Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019, arXiv:1905.03222, Theorem 1 (first inequality), stated conditionally on the proper training set (fixed `q_lo`, `q_hi`), as in its proof. The recorded scope is `0 < α < 1`.
+- Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019, arXiv:1905.03222, Theorem 1 (first inequality), stated conditionally on the proper training set (fixed `q_lo`, `q_hi`), as in its proof. The source takes `α ∈ (0, 1)`; the Lean statement also admits the trivial endpoint `α = 0`.

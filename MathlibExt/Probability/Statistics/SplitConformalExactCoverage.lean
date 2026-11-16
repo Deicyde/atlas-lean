@@ -42,8 +42,7 @@ the probability `k / (n + 1)`.
 * `measure_coe_le_splitConformalThreshold_eq_of_ae_injective`: without ties the coverage
   probability is exactly `k / (n + 1)` for every `1 ≤ k ≤ n + 1`.
 * `measure_coe_le_splitConformalThreshold_le`: without ties, coverage at level
-  `k = ⌈(1 - α)(n + 1)⌉` is at most `1 - α + 1 / (n + 1)` (Tibshirani et al. 2019, Lemma 1;
-  Romano, Patterson and Candès 2019, Lemma 2).
+  `k = ⌈(1 - α)(n + 1)⌉` is at most `1 - α + 1 / (n + 1)` (Tibshirani et al. 2019, Lemma 1).
 -/
 
 @[expose] public section
@@ -248,11 +247,11 @@ distinct, then for `0 ≤ α < 1` the test score is covered by the split conform
 `ofReal_one_sub_le_measure_coe_le_splitConformalThreshold` this pins the coverage between `1 - α`
 and `1 - α + 1 / (n + 1)`.
 
-Sources: R. J. Tibshirani, R. F. Barber, E. J. Candès and A. Ramdas, *Conformal prediction under
-covariate shift*, NeurIPS 2019, arXiv:1904.06019, Lemma 1 (with `β = 1 - α`); Y. Romano,
-E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019,
-arXiv:1905.03222, Lemma 2. The recorded scope is `0 < α < 1`; the endpoint `α = 0` is a derived
-trivial case. -/
+Source: R. J. Tibshirani, R. F. Barber, E. J. Candès and A. Ramdas, *Conformal prediction under
+covariate shift*, NeurIPS 2019, arXiv:1904.06019, Lemma 1 (with `β = 1 - α`), which states this
+bound for `β ∈ (0, 1)`; the Lean statement also admits the trivial endpoint `α = 0`. Lemma 2 of
+Y. Romano, E. Patterson and E. J. Candès, *Conformalized quantile regression*, NeurIPS 2019,
+arXiv:1905.03222, is stated with the term `1 / n`; the bound here is the sharper `1 / (n + 1)`. -/
 theorem measure_coe_le_splitConformalThreshold_le
     (μ : Measure (Fin (n + 1) → ℝ)) [IsProbabilityMeasure μ]
     (hμ : ∀ σ : Equiv.Perm (Fin (n + 1)), μ.map (fun ω => ω ∘ σ) = μ)

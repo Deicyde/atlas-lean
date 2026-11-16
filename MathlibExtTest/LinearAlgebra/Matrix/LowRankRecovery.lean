@@ -46,9 +46,11 @@ example (r : ℕ) : IsRestrictedIsometry entryMap r 0 := by
     simp [entryMap, EuclideanSpace.norm_eq]
   simp [h]
 
--- The hypotheses of the matrix completion theorem (Candès–Recht, Theorem 1.3, in
--- `WantedExt.LinearAlgebra.MatrixCompletionWanted`) are jointly satisfiable: `n₁ = n₂ = r = 1`,
--- `U = V = 1`, `σ = 1`, `μ₀ = μ₁ = 1`.
+-- The structural hypotheses of the matrix completion theorem (Candès–Recht, Theorem 1.3, in
+-- `WantedExt.LinearAlgebra.MatrixCompletionWanted`) are jointly satisfiable with
+-- `n₁ = n₂ = r = 1`, `U = V = 1`, `σ = 1`, `μ₀ = μ₁ = 1`: orthonormality, A0 and A1 are checked
+-- below; with `V = U` the conditions on `V` are the same ones, and `σ = 1 > 0`, `μ₁ = 1 ≥ 1` are
+-- immediate.
 example : (1 : Matrix (Fin 1) (Fin 1) ℝ)ᵀ * 1 = 1 ∧
     (∀ i, ((1 : ℕ) : ℝ) / (1 : ℕ) * ∑ k, (1 : Matrix (Fin 1) (Fin 1) ℝ) i k ^ 2 ≤ 1) ∧
     ∀ i j, |((1 : Matrix (Fin 1) (Fin 1) ℝ) * (1 : Matrix (Fin 1) (Fin 1) ℝ)ᵀ) i j| ≤
