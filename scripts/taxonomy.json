@@ -3040,6 +3040,7 @@
   "MathlibExt/InformationTheory/HammingExpansion": {"to": "Combinatorics/extremal-set-theory/intersecting-families", "title": "Harper's isoperimetric inequality"},
   "MathlibExt/InformationTheory/KraftMcMillan": {"to": "InformationTheory/source-coding", "title": "Kraft–McMillan inequality"},
   "MathlibExt/InformationTheory/LogSum": {"to": "InformationTheory/information-inequalities", "title": "Log-sum inequality"},
+  "MathlibExt/InformationTheory/MeasurePinsker": {"to": "InformationTheory/information-inequalities", "title": "Total variation and Pinsker's inequality"},
   "MathlibExt/InformationTheory/MutualInformationDPI": {"to": "InformationTheory/information-inequalities", "title": "Data-processing inequality"},
   "MathlibExt/InformationTheory/Pinsker": {"to": "InformationTheory/information-inequalities", "title": "Pinsker's inequality"},
   "MathlibExt/InformationTheory/PrefixFree": {"to": "InformationTheory/source-coding", "title": "Prefix codes"},

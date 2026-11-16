@@ -7,3 +7,5 @@ Inequalities relating entropies, divergences and mutual information, such as the
 - [Fano's inequality](fano-s-inequality/README.md)
 - [Shearer's entropy inequality](shearer-s-entropy-inequality/README.md)
 - [Csiszár–Kullback–Pinsker inequality for strictly positive distributions](csiszar-kullback-pinsker.md)
+- [Total variation and Pinsker's inequality](total-variation-and-pinsker-s-inequality/README.md)
+- [Binary Pinsker inequality on the closed interval](binary-pinsker-of-mem-icc.md)

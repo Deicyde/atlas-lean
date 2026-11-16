@@ -8,3 +8,7 @@
 - [Total variation distance between probability measures is at most one](total-variation-dist-le-one.md)
 - [Total variation distance vanishes only for equal measures](total-variation-dist-eq-zero-iff.md)
 - [Total variation distance between Dirac measures](total-variation-dist-dirac.md)
+
+## Related topics
+
+- [Total variation and Pinsker's inequality](../../../InformationTheory/information-inequalities/total-variation-and-pinsker-s-inequality/README.md)

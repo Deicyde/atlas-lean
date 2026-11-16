@@ -10,6 +10,7 @@ module
 
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
 import MathlibExt.InformationTheory.LogSum
 
 /-!
@@ -269,6 +270,50 @@ private lemma binary_pinsker {u v : ℝ} (hu0 : 0 < u) (hu1 : u < 1) (hv0 : 0 < 
           = u * Real.log (u / v) + (1 - u) * Real.log ((1-u)/(1-v)) - 2 * (u - v)^2 := rfl
       rw [hFu] at hle
       linarith
+
+/--
+Binary Pinsker inequality with the first argument in the closed interval: for `0 ≤ u ≤ 1` and
+`0 < v < 1`, `2 (u - v)² ≤ u log (u / v) + (1 - u) log ((1 - u) / (1 - v))` (natural log, with
+Lean's convention `0 * log 0 = 0`). The right side is the Kullback-Leibler divergence
+`D(Ber(u) ‖ Ber(v))`. The strictly positive case is proved by calculus; the endpoints `u = 0` and
+`u = 1` follow by continuity, since `x ↦ x log x` is continuous on `ℝ`.
+Source: Y. Polyanskiy and Y. Wu, Information Theory: From Coding to Learning (Cambridge University
+Press, 2025), Theorem 7.10 (proof: reduction of Pinsker's inequality to Bernoulli distributions).
+-/
+theorem binary_pinsker_of_mem_Icc {u v : ℝ} (hu0 : 0 ≤ u) (hu1 : u ≤ 1) (hv0 : 0 < v)
+    (hv1 : v < 1) :
+    2 * (u - v)^2 ≤ u * Real.log (u / v) + (1 - u) * Real.log ((1-u)/(1-v)) := by
+  have h1v : (1:ℝ) - v ≠ 0 := by linarith
+  have hEq : (fun x : ℝ => x * Real.log (x / v) + (1 - x) * Real.log ((1-x)/(1-v))) =
+      fun x => (x * Real.log x - x * Real.log v) +
+        ((1 - x) * Real.log (1 - x) - (1 - x) * Real.log (1 - v)) := by
+    funext x
+    have e1 : x * Real.log (x / v) = x * Real.log x - x * Real.log v := by
+      rcases eq_or_ne x 0 with rfl | hx
+      · simp
+      · rw [Real.log_div hx hv0.ne']; ring
+    have e2 : (1 - x) * Real.log ((1-x)/(1-v))
+        = (1 - x) * Real.log (1 - x) - (1 - x) * Real.log (1 - v) := by
+      rcases eq_or_ne (1 - x) 0 with h | hx
+      · rw [h]; simp
+      · rw [Real.log_div hx h1v]; ring
+    rw [e1, e2]
+  have c1 : Continuous fun x : ℝ => x * Real.log x := Real.continuous_mul_log
+  have c2 : Continuous fun x : ℝ => (1 - x) * Real.log (1 - x) :=
+    c1.comp (continuous_const.sub continuous_id)
+  have hF : Continuous fun x : ℝ => x * Real.log (x / v) + (1 - x) * Real.log ((1-x)/(1-v)) := by
+    rw [hEq]
+    exact (c1.sub (continuous_id.mul continuous_const)).add
+      (c2.sub ((continuous_const.sub continuous_id).mul continuous_const))
+  have hclosed : IsClosed {x : ℝ | 2 * (x - v)^2 ≤
+      x * Real.log (x / v) + (1 - x) * Real.log ((1-x)/(1-v))} :=
+    isClosed_le (by fun_prop) hF
+  have hsub : Set.Ioo (0:ℝ) 1 ⊆ {x : ℝ | 2 * (x - v)^2 ≤
+      x * Real.log (x / v) + (1 - x) * Real.log ((1-x)/(1-v))} :=
+    fun x hx => binary_pinsker hx.1 hx.2 hv0 hv1
+  have hcl := hclosed.closure_subset_iff.mpr hsub
+  rw [closure_Ioo zero_ne_one] at hcl
+  exact hcl ⟨hu0, hu1⟩
 
 /--
 Finite strictly-positive Csiszar-Kullback-Pinsker inequality: for finite nonempty `α` and pmfs `p, q

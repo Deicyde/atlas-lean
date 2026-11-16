@@ -12,6 +12,11 @@ $$
 Equivalently, the total variation distance $\frac12 \sum_a |p(a) - q(a)|$ is at most
 $\sqrt{D/2}$, where $D = \sum_a p(a) \log (p(a)/q(a))$ is the Kullback–Leibler divergence.
 
+## Background
+
+- [Pinsker's inequality for probability measures](total-variation-and-pinsker-s-inequality/of-real-two-mul-total-variation-dist-sq.md):
+  the general form, for probability measures on any measurable space, with no positivity hypothesis.
+
 ## Sources
 
 - M. S. Pinsker, Information and Information Stability of Random Variables and Processes (1960; English translation 1964), with I. Csiszar, Information-type measures of difference of probability distributions and indirect observations, Studia Sci. Math. Hungar. 2 (1967), 299-318.
