@@ -52,8 +52,6 @@ This page is an AI-authored exposition; it has no Lean formalization in this lib
   mathematical prerequisite in a restricted case, the one-sided bound
   $\exp(-2 n t^2 / \ell_\infty^2)$ when the examples take finitely many values, with every
   sensitivity equal to $\ell_\infty / n$.
-- [Uniform deviation for a finite class](finite-class-uniform-deviation.md): builds on, the
-  finite-class bound that this page extends to a supremum over a general class.
 
 ## Sources
 
