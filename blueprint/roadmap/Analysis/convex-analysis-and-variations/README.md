@@ -11,6 +11,7 @@ Convex functions and sets in analysis and optimization: first-order and second-o
 - [Lagrange duality](lagrange-duality/README.md)
 - [Lipschitz regularization by inf-convolution](lipschitz-regularization-by-inf-convolution/README.md)
 - [Mirror descent](mirror-descent/README.md)
+- [Mirror-prox method](mirror-prox-method/README.md)
 - [Moreau decomposition](moreau-decomposition/README.md)
 - [Mountain pass theorem](mountain-pass-theorem/README.md)
 - [Newton's method for minimization](newton-s-method-for-minimization/README.md)
