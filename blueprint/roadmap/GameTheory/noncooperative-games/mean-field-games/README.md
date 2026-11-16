@@ -2,13 +2,15 @@
 
 Lasry and Lions (2006–2007) model games with a continuum of identical, individually negligible players: each player optimises against the distribution $m$ of the others, and an equilibrium is a distribution reproduced by the players' best responses. In the one-shot version on a state space $Q$ with cost $F(y, m)$, an equilibrium is a distribution supported on the minimisers of $F(\cdot, m)$; the dynamic version is the mean field game system, a backward Hamilton–Jacobi–Bellman equation for the value of a typical player coupled with a forward Fokker–Planck equation for the distribution of players. Under the Lasry–Lions monotonicity condition $\int (F(y, m_1) - F(y, m_2))\, d(m_1 - m_2)(y) > 0$ for $m_1 \neq m_2$ (crowd aversion) the equilibrium is unique, in both versions, by the same duality argument.
 
-Here the one-shot equilibrium on a finite state space, its characterisation, the Lasry–Lions uniqueness theorem and the pointwise identity behind uniqueness for the system are proved; existence is recorded as wanted. The mean field game system itself, its existence theory and the convergence of $N$-player equilibria are not formalized.
+Here the one-shot equilibrium on a finite state space, its characterisation, the Lasry–Lions uniqueness theorem and the pointwise identity behind uniqueness for the system are proved, and existence is recorded as wanted. The second-order mean field game system on $\mathbb{R}^d$ is defined and its uniqueness theorem recorded as wanted; its existence theory, the first-order system and the convergence of $N$-player equilibria are not formalized.
 
 - [Mean field equilibrium on a finite state space](is-mean-field-equilibrium.md)
 - [Equilibria are supported on minimisers](is-mean-field-equilibrium-iff.md)
 - [Lasry–Lions uniqueness of mean field equilibria](eq-of-is-mean-field-equilibrium.md)
 - [Existence of mean field equilibria](exists-is-mean-field-equilibrium.md)
+- [The mean field game system](mean-field-game-system.md)
 - [The Lasry–Lions identity](lasry-lions-identity.md)
+- [Uniqueness for the mean field game system](mean-field-game-system-uniqueness.md)
 - [Points of the standard simplex are probability vectors](weights-is-prob.md)
 
 ## Related topics

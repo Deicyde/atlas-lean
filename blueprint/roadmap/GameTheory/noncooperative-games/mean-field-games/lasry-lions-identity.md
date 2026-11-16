@@ -10,7 +10,8 @@ and $G$ monotone (Cardaliaguet, Theorem 3.6). For two solutions, test the Fokker
 for $m_1 - m_2$ with $u_1 - u_2$ and the Hamilton–Jacobi–Bellman equation for $u_1 - u_2$ with
 $m_1 - m_2$. With $a = Du_1$, $b = Du_2$ and densities $m_1, m_2 \ge 0$, the identity turns the sum
 into $\int\!\!\int (m_1 - m_2)(F(x, m_1) - F(x, m_2)) \le 0$, and monotonicity forces $m_1 = m_2$. The
-system and its uniqueness theorem are not formalized.
+[system](mean-field-game-system.md) is defined and its
+[uniqueness theorem](mean-field-game-system-uniqueness.md) recorded as wanted.
 
 ## Background
 

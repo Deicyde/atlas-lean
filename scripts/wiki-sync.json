@@ -22720,6 +22720,8 @@
 "MathlibExt.GameTheory.MeanFieldEquilibrium.lasryLions_identity": "4525d5cdeed1625f",
 "MathlibExt.GameTheory.MeanFieldEquilibrium.weights_isProb": "0c96624c53fa0894",
 "MathlibExt.GameTheory.MeanFieldEquilibriumWanted.exists_isMeanFieldEquilibrium": "7f3f8e4512a271c9",
+"MathlibExt.GameTheory.MeanFieldGameSystem.IsMFGClassicalSolution": "dc2f82aaa00080c5",
+"MathlibExt.GameTheory.MeanFieldGameSystemWanted.isMFGClassicalSolution_unique": "e047f30d76a0404f",
 "MathlibExt.GameTheory.NashExistenceWanted.IsMixedNash": "ea7e0c55cf22e9a2",
 "MathlibExt.GameTheory.NashExistenceWanted.exists_isMixedNash": "0f49a726cdfba979",
 "MathlibExt.GameTheory.NashExistenceWanted.expectedPayoff": "d8652c09dd7619e4",
