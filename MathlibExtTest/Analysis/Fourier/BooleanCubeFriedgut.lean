@@ -18,17 +18,30 @@ open scoped BigOperators
 
 /-- Corollary 9.12 for an arbitrary Boolean function on the 4-cube. -/
 example (f : BoolCube 4 → ℝ) (hf : ∀ x, f x = 1 ∨ f x = -1) :
-    boolNoiseStab (1 / 3) (fun x => (f x - f (flipCoord x 2)) / 2) ≤
+    ∑ S with (2 : Fin 4) ∈ S, (1 / 3 : ℝ) ^ (S.card - 1) * boolFourierCoeff 4 f S ^ 2 ≤
       boolInfluence f 2 * Real.sqrt (boolInfluence f 2) :=
+  stableInfluence_third_le hf 2
+
+/-- The same bound for the coordinate Laplacian, with the factor `1/3`. -/
+example (f : BoolCube 4 → ℝ) (hf : ∀ x, f x = 1 ∨ f x = -1) :
+    boolNoiseStab (1 / 3) (fun x => (f x - f (flipCoord x 2)) / 2) ≤
+      boolInfluence f 2 * Real.sqrt (boolInfluence f 2) / 3 :=
   boolNoiseStab_derivative_le hf 2
 
-/-- For a dictator, the coordinate Laplacian in its own direction is the dictator, with
-`Stab_{1/3} = 1/3 ≤ 1 = Inf^{3/2}`. -/
-example : boolNoiseStab (1 / 3)
-    (fun x : BoolCube 2 => (cubeVal (x 0) - cubeVal (flipCoord x 0 0)) / 2) ≤
-      boolInfluence (fun x : BoolCube 2 => cubeVal (x 0)) 0 *
-        Real.sqrt (boolInfluence (fun x : BoolCube 2 => cubeVal (x 0)) 0) :=
-  boolNoiseStab_derivative_le (fun x => by cases x 0 <;> simp) 0
+/-- Corollary 9.12 is tight for a dictator: the `1/3`-stable influence of `χ_{{0}}` at `0` is
+`1`, and so is its influence, so both sides equal `1`. -/
+example : ∑ S with (0 : Fin 2) ∈ S, (1 / 3 : ℝ) ^ (S.card - 1) *
+      boolFourierCoeff 2 (cubeChi 2 {0}) S ^ 2 = 1 ∧
+    boolInfluence (cubeChi 2 {0}) 0 = 1 := by
+  constructor
+  · rw [Finset.sum_eq_single_of_mem {0} (by simp)]
+    · simp
+    · intro T _ hT
+      simp [boolFourierCoeff_cubeChi, Ne.symm hT]
+  · rw [boolInfluence_eq_sum_sq, Finset.sum_eq_single_of_mem {0} (by simp)]
+    · simp
+    · intro T _ hT
+      simp [boolFourierCoeff_cubeChi, Ne.symm hT]
 
 /-- Theorem 9.28, spectral part, at `k = 2` and `ε = 1/10`. -/
 example (f : BoolCube 5 → ℝ) (hf : ∀ x, f x = 1 ∨ f x = -1) (hI : 0 < boolTotalInfluence f) :

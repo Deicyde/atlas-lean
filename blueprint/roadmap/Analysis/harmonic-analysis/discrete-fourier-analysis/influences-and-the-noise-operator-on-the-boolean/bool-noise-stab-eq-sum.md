@@ -9,7 +9,8 @@ where $\mathbf{W}^k[f] = \sum_{|S| = k} \hat f(S)^2$ is the Fourier weight of $f
 Noise stability is thus a generating function for the Fourier weights; its derivative at
 $\rho = 1$ is the total influence. The Majority Is Least Stable module defines
 [noise stability](../../../../Combinatorics/boolean-functions/majority-is-least-stable-conjecture/noise-stability.md)
-directly by this Fourier sum; this theorem identifies it with the correlation definition.
+directly by this Fourier sum; this theorem identifies it with the correlation definition
+([the two definitions agree](../../../../Combinatorics/boolean-functions/majority-is-least-stable-conjecture/noise-stability-eq-bool-noise-stab.md)).
 
 ## Sources
 

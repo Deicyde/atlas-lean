@@ -20,10 +20,11 @@ import Mathlib.Tactic.Positivity
 /-!
 # Friedgut's junta theorem with explicit constants
 
-For a Boolean function `f : {-1, 1}ⁿ → {-1, 1}`, small-set expansion applied to the coordinate
-Laplacian `L_i f = (f - f^{⊕i})/2`, a function with values in `{-1, 0, 1}` and
-`Pr[L_i f ≠ 0] = Inf_i[f]`, bounds its noise stability at `1/3` by `Inf_i[f]^{3/2}` (O'Donnell's
-Corollary 9.12). Summing over the coordinates of small influence gives O'Donnell's Theorem 9.28:
+For a Boolean function `f : {-1, 1}ⁿ → {-1, 1}`, small-set expansion applied to the derivative
+`D_i f(x) = x_i (f(x) - f(x^{⊕i}))/2`, a function with values in `{-1, 0, 1}` and
+`Pr[D_i f ≠ 0] = Inf_i[f]`, bounds its noise stability at `1/3`, the `1/3`-stable influence
+`Inf_i^{(1/3)}[f] = ∑_{S ∋ i} 3^{1-|S|} f̂(S)²`, by `Inf_i[f]^{3/2}` (O'Donnell's Corollary 9.12).
+Summing over the coordinates of small influence gives O'Donnell's Theorem 9.28:
 with `τ = ε² 9^{-k} / I[f]²` and `J = {j : Inf_j[f] ≥ τ}`, the Fourier weight on sets of size at
 most `k` that leave `J` is at most `ε`, and `|J| ≤ I[f]³ 9^k / ε²`. Taking `k = ⌈I[f]/ε⌉`
 (Proposition 3.2) and rounding the restriction of the Fourier expansion to `J` to its sign
@@ -31,7 +32,10 @@ most `k` that leave `J` is at most `ε`, and `|J| ≤ I[f]³ 9^k / ε²`. Taking
 
 ## Main statements
 
-* `BooleanCube.boolNoiseStab_derivative_le`: `Stab_{1/3}[L_i f] ≤ Inf_i[f]^{3/2}`.
+* `BooleanCube.boolFourierCoeff_coordDerivative`: the Fourier expansion of `D_i f`.
+* `BooleanCube.stableInfluence_third_le`: Corollary 9.12, `Inf_i^{(1/3)}[f] ≤ Inf_i[f]^{3/2}`.
+* `BooleanCube.boolNoiseStab_derivative_le`: the same bound for the Laplacian `L_i f`,
+  `Stab_{1/3}[L_i f] ≤ Inf_i[f]^{3/2} / 3`.
 * `BooleanCube.sum_sq_not_subset_le_of_influence`: the spectral part of Theorem 9.28.
 * `BooleanCube.card_influential_le`: `|J| ≤ I[f]³ 9^k / ε²`.
 * `BooleanCube.exists_junta_boolDist_le`: Friedgut's junta theorem, explicit form.
@@ -41,8 +45,8 @@ most `k` that leave `J` is at most `ε`, and `|J| ≤ I[f]³ 9^k / ε²`. Taking
 * E. Friedgut, *Boolean functions with low average sensitivity depend on few coordinates*,
   Combinatorica 18 (1998), 27-35.
 * R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014
-  (arXiv:2105.10386), Corollaries 9.8 and 9.12 (Section 9.2), Theorem 9.28 and Friedgut's
-  Junta Theorem (Section 9.6).
+  (arXiv:2105.10386), Proposition 2.19, Corollaries 9.8 and 9.12 (Section 9.2), Theorem 9.28
+  and Friedgut's Junta Theorem (Section 9.6).
 -/
 
 @[expose] public section
@@ -54,33 +58,85 @@ open StatMech.Probability
 
 variable {n : ℕ}
 
-/-- **Noise stability of a coordinate Laplacian.** For `f : BoolCube n → ℝ` with values `±1` and
-a coordinate `i`, the coordinate Laplacian `L_i f(x) = (f x - f x^{⊕i})/2` satisfies
-`Stab_{1/3}[L_i f] ≤ Inf_i[f]^{3/2}`, written `Inf_i[f] · √(Inf_i[f])`. In Fourier terms,
-`∑_{S ∋ i} 3^{-|S|} f̂(S)² ≤ Inf_i[f]^{3/2}` (R. O'Donnell, *Analysis of Boolean Functions*,
-2014, Corollary 9.12, which states it for the `1/3`-stable influence
-`Inf_i^{(1/3)}[f] = 3 Stab_{1/3}[L_i f]` up to that normalization; the source derives it from
-Corollary 9.8 applied to a `{-1, 0, 1}`-valued function). -/
-theorem boolNoiseStab_derivative_le {f : BoolCube n → ℝ} (hf : ∀ x, f x = 1 ∨ f x = -1)
+/-- **Fourier expansion of the coordinate derivative.** For `f : BoolCube n → ℝ` and a
+coordinate `i`, the derivative `D_i f(x) = x_i (f(x) - f(x^{⊕i}))/2`, which is
+`(f(x^{i↦1}) - f(x^{i↦-1}))/2`, has Fourier coefficient `0` at every `S ∋ i` and `f̂(S ∪ {i})` at
+every `S ∌ i`; that is, `D_i f = ∑_{S ∋ i} f̂(S) χ_{S∖{i}}` (R. O'Donnell, *Analysis of Boolean
+Functions*, 2014, Definition 2.16 and Proposition 2.19). -/
+theorem boolFourierCoeff_coordDerivative (f : BoolCube n → ℝ) (i : Fin n) (S : Finset (Fin n)) :
+    boolFourierCoeff n (fun x => cubeVal (x i) * ((f x - f (flipCoord x i)) / 2)) S =
+      if i ∈ S then 0 else boolFourierCoeff n f (insert i S) := by
+  have key := boolFourierCoeff_derivative f i
+  rw [boolFourierCoeff_eq_expect]
+  split_ifs with hS
+  · have h : ∀ x : BoolCube n, cubeVal (x i) * ((f x - f (flipCoord x i)) / 2) * cubeChi n S x =
+        (f x - f (flipCoord x i)) / 2 * cubeChi n (S.erase i) x := by
+      intro x
+      rw [cubeChi, ← Finset.mul_prod_erase S (fun j => cubeVal (x j)) hS, cubeChi]
+      have hc := cubeVal_mul_self (x i)
+      linear_combination ((f x - f (flipCoord x i)) / 2 * ∏ j ∈ S.erase i, cubeVal (x j)) * hc
+    simp_rw [h, ← boolFourierCoeff_eq_expect, key]
+    simp
+  · have h : ∀ x : BoolCube n, cubeVal (x i) * ((f x - f (flipCoord x i)) / 2) * cubeChi n S x =
+        (f x - f (flipCoord x i)) / 2 * cubeChi n (insert i S) x := by
+      intro x
+      rw [cubeChi, cubeChi, Finset.prod_insert hS]
+      ring
+    simp_rw [h, ← boolFourierCoeff_eq_expect, key]
+    simp
+
+/-- **Corollary 9.12: stable influences of Boolean functions.** For `f : BoolCube n → ℝ` with
+values `±1` and a coordinate `i`, the `1/3`-stable influence
+`Inf_i^{(1/3)}[f] = Stab_{1/3}[D_i f] = ∑_{S ∋ i} (1/3)^{|S|-1} f̂(S)²` satisfies
+`Inf_i^{(1/3)}[f] ≤ Inf_i[f]^{3/2}`, written `Inf_i[f] · √(Inf_i[f])` (R. O'Donnell, *Analysis of
+Boolean Functions*, 2014, Corollary 9.12; the source derives it from Corollary 9.8, the
+Small-Set Expansion bound at `ρ = 1/3`, applied to the `{-1, 0, 1}`-valued `D_i f`). -/
+theorem stableInfluence_third_le {f : BoolCube n → ℝ} (hf : ∀ x, f x = 1 ∨ f x = -1)
     (i : Fin n) :
-    boolNoiseStab (1 / 3) (fun x => (f x - f (flipCoord x i)) / 2) ≤
+    ∑ S with i ∈ S, (1 / 3 : ℝ) ^ (S.card - 1) * boolFourierCoeff n f S ^ 2 ≤
       boolInfluence f i * Real.sqrt (boolInfluence f i) := by
-  set L : BoolCube n → ℝ := fun x => (f x - f (flipCoord x i)) / 2 with hL
-  have hval : ∀ x, |L x| ^ ((4 : ℝ) / 3) = L x ^ 2 := by
+  set D : BoolCube n → ℝ := fun x => cubeVal (x i) * ((f x - f (flipCoord x i)) / 2) with hD
+  have hval : ∀ x, |D x| ^ ((4 : ℝ) / 3) = ((f x - f (flipCoord x i)) / 2) ^ 2 := by
     intro x
+    have hc : |cubeVal (x i)| = 1 := by cases x i <;> simp [cubeVal]
     rcases hf x with h1 | h1 <;> rcases hf (flipCoord x i) with h2 | h2 <;>
-      norm_num [hL, h1, h2]
-  have hpow : bnt_qnormPow (1 + 1 / 3) L = boolInfluence f i := by
+      norm_num [hD, abs_mul, hc, h1, h2]
+  have hpow : bnt_qnormPow (1 + 1 / 3) D = boolInfluence f i := by
     rw [bnt_qnormPow, bnt_uexp_eq_expect, boolInfluence]
     norm_num only
     exact Finset.expect_congr rfl fun x _ => hval x
   have hI0 : 0 ≤ boolInfluence f i := boolInfluence_nonneg f i
   have hstab := boolNoiseStab_le_bnt_qnorm_sq (by norm_num : (0 : ℝ) ≤ 1 / 3)
-    (by norm_num : (1 / 3 : ℝ) ≤ 1) L
+    (by norm_num : (1 / 3 : ℝ) ≤ 1) D
   rw [bnt_qnorm, hpow] at hstab
-  refine hstab.trans_eq ?_
-  rw [← Real.rpow_mul_natCast hI0, Real.sqrt_eq_rpow, ← Real.rpow_one_add' hI0 (by norm_num)]
-  norm_num
+  have hnorm : (boolInfluence f i ^ (1 / (1 + 1 / 3 : ℝ))) ^ 2 =
+      boolInfluence f i * Real.sqrt (boolInfluence f i) := by
+    rw [← Real.rpow_mul_natCast hI0, Real.sqrt_eq_rpow, ← Real.rpow_one_add' hI0 (by norm_num)]
+    norm_num
+  -- `Stab_{1/3}[D_i f] = ∑_{S ∋ i} (1/3)^{|S|-1} f̂(S)²`.
+  have hfourier : boolNoiseStab (1 / 3) D =
+      ∑ S with i ∈ S, (1 / 3 : ℝ) ^ (S.card - 1) * boolFourierCoeff n f S ^ 2 := by
+    rw [boolNoiseStab_eq_sum, ← Finset.sum_filter_add_sum_filter_not Finset.univ (fun S => i ∈ S)]
+    have h0 : ∑ S with i ∈ S, (1 / 3 : ℝ) ^ S.card * boolFourierCoeff n D S ^ 2 = 0 :=
+      Finset.sum_eq_zero fun S hS => by
+        rw [hD, boolFourierCoeff_coordDerivative, ite_eq_left (Finset.mem_filter.mp hS).2]
+        simp
+    rw [h0, zero_add]
+    refine Finset.sum_nbij' (fun S => insert i S) (fun T => T.erase i) ?_ ?_ ?_ ?_ ?_
+    · intro S _
+      simp
+    · intro T _
+      simp
+    · intro S hS
+      exact Finset.erase_insert (Finset.mem_filter.mp hS).2
+    · intro T hT
+      exact Finset.insert_erase (Finset.mem_filter.mp hT).2
+    · intro S hS
+      have hiS := (Finset.mem_filter.mp hS).2
+      rw [hD, boolFourierCoeff_coordDerivative, ite_eq_right hiS, Finset.card_insert_of_notMem hiS,
+        Nat.add_sub_cancel]
+  rw [← hfourier, ← hnorm]
+  exact hstab
 
 /-- The Fourier form of the noise stability of a coordinate Laplacian. -/
 private theorem boolNoiseStab_derivative_eq (f : BoolCube n → ℝ) (i : Fin n) :
@@ -90,6 +146,25 @@ private theorem boolNoiseStab_derivative_eq (f : BoolCube n → ℝ) (i : Fin n)
   refine Finset.sum_congr rfl fun S _ => ?_
   rw [boolFourierCoeff_derivative]
   split_ifs <;> simp
+
+/-- **Noise stability of a coordinate Laplacian.** For `f : BoolCube n → ℝ` with values `±1` and
+a coordinate `i`, the coordinate Laplacian `L_i f(x) = (f x - f x^{⊕i})/2` satisfies
+`Stab_{1/3}[L_i f] ≤ Inf_i[f]^{3/2} / 3`, written `Inf_i[f] · √(Inf_i[f]) / 3`. Since
+`Stab_{1/3}[L_i f] = ∑_{S ∋ i} 3^{-|S|} f̂(S)² = Inf_i^{(1/3)}[f] / 3`, this is Corollary 9.12
+(`stableInfluence_third_le`) restated for `L_i f` (R. O'Donnell, *Analysis of Boolean
+Functions*, 2014, Corollary 9.12). -/
+theorem boolNoiseStab_derivative_le {f : BoolCube n → ℝ} (hf : ∀ x, f x = 1 ∨ f x = -1)
+    (i : Fin n) :
+    boolNoiseStab (1 / 3) (fun x => (f x - f (flipCoord x i)) / 2) ≤
+      boolInfluence f i * Real.sqrt (boolInfluence f i) / 3 := by
+  rw [boolNoiseStab_derivative_eq, le_div_iff₀ (by norm_num : (0 : ℝ) < 3)]
+  refine le_trans (le_of_eq ?_) (stableInfluence_third_le hf i)
+  rw [Finset.sum_mul]
+  refine Finset.sum_congr rfl fun S hS => ?_
+  obtain ⟨m, hm⟩ : ∃ m, S.card = m + 1 :=
+    Nat.exists_eq_succ_of_ne_zero (Finset.card_ne_zero.mpr ⟨i, (Finset.mem_filter.mp hS).2⟩)
+  rw [hm, Nat.add_sub_cancel, pow_succ]
+  ring
 
 /-- **Spectral part of Friedgut's argument.** Let `f : BoolCube n → ℝ` take values `±1`, with
 `I[f] > 0`, and let `0 < ε` and `k ∈ ℕ`. Put `τ = ε² / (I[f]² 9^k)` and
@@ -137,14 +212,16 @@ theorem sum_sq_not_subset_le_of_influence {f : BoolCube n → ℝ} (hf : ∀ x, 
       simpa [hjS, hjJ] using this
     · refine Finset.sum_nonneg fun j _ => ?_
       split_ifs <;> positivity
-  -- Upper bound: Corollary 9.12 and `Inf_j < τ` outside `J`.
+  -- Upper bound: Corollary 9.12 (via `boolNoiseStab_derivative_le`) and `Inf_j < τ` outside `J`.
   have hup : ∑ j with j ∉ J, ∑ S with j ∈ S,
       (1 / 3 : ℝ) ^ S.card * boolFourierCoeff n f S ^ 2 ≤ Real.sqrt τ * I := by
     calc ∑ j with j ∉ J, ∑ S with j ∈ S, (1 / 3 : ℝ) ^ S.card * boolFourierCoeff n f S ^ 2
         ≤ ∑ j with j ∉ J, boolInfluence f j * Real.sqrt (boolInfluence f j) :=
           Finset.sum_le_sum fun j _ => by
             rw [← boolNoiseStab_derivative_eq]
-            exact boolNoiseStab_derivative_le hf j
+            refine (boolNoiseStab_derivative_le hf j).trans ?_
+            have := mul_nonneg (boolInfluence_nonneg f j) (Real.sqrt_nonneg (boolInfluence f j))
+            linarith
       _ ≤ ∑ j with j ∉ J, Real.sqrt τ * boolInfluence f j :=
           Finset.sum_le_sum fun j hj => by
             have hlt : boolInfluence f j < τ := by

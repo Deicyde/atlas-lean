@@ -35,7 +35,7 @@ A Boolean function is a `±1`-valued `f`; `W¹[f] = ∑_{|S| = 1} f̂(S)²` is i
   influences: invariance and optimality*, Ann. of Math. 171 (2010), 295-341
   (arXiv:math/0503503).
 * R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014
-  (arXiv:2105.10386), Sections 2.6, 5.2, 9.1 and Chapter 11.
+  (arXiv:2105.10386), Sections 2.5, 5.2, 5.4, 9.1 and Chapter 11.
 
 Friedgut's Junta Theorem and the Level-1 Inequality, stated in the same terms, are proved in
 `MathlibExt.Analysis.Fourier.BooleanCubeFriedgut` and
@@ -52,7 +52,7 @@ open scoped BigOperators
 `n ≥ 1` and every `f : BoolCube n → ℝ` with values `±1`, if `W¹[f] ≥ 1 - δ` then `f` is
 `Cδ`-close to a dictator `χ_i` or a negated dictator `-χ_i` for some coordinate `i` (E. Friedgut,
 G. Kalai and A. Naor, 2002; R. O'Donnell, *Analysis of Boolean Functions*, 2014, FKN Theorem,
-stated in Section 2.6 with closeness `O(δ)` and proved in Section 9.1). The hypothesis `n ≥ 1`
+stated in Section 2.5 with closeness `O(δ)` and proved in Section 9.1). The hypothesis `n ≥ 1`
 is implicit in the source: for `n = 0` there is no coordinate to name. -/
 theorem_wanted fkn_theorem :
     ∃ C : ℝ, ∀ (n : ℕ), 0 < n → ∀ f : BoolCube n → ℝ, (∀ x, f x = 1 ∨ f x = -1) →

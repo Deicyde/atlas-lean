@@ -17,10 +17,9 @@ $u > 1/10$, and then $4u^3 9^{\lceil 2u\rceil} \le e^{19u + 16} \le e^{180 u}$.
 
 ## Informally uses
 
-- [Small-Set Expansion Theorem](../../../Probability/concentration-inequalities/bonami-beckner-hypercontractivity/bool-noise-stab-le-rpow-of-indicator.md):
+- [Corollary 9.12: stable influences of Boolean functions](stable-influence-third-le.md):
   the proof of Theorem 9.28 sums Corollary 9.12, $\mathrm{Inf}^{(1/3)}_i[f] \le \mathrm{Inf}_i[f]^{3/2}$,
-  which is the small-set expansion bound at $\rho = 1/3$ (Corollary 9.8) applied to
-  $D_i f$, a function with values in $\{-1, 0, 1\}$.
+  over the coordinates of small influence.
 - [Fourier formula for influence](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/influences-and-the-noise-operator-on-the-boolean/bool-influence-eq-sum-sq.md):
   used to rewrite the stable influences in the Fourier basis.
 - [Low total influence implies low-degree spectral concentration](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/spectral-structure-of-boolean-functions/sum-sq-card-gt-le-of-pos.md):

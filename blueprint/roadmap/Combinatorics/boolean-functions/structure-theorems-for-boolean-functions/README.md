@@ -11,6 +11,8 @@ Theorems saying that a Boolean function `f : {-1, 1}ⁿ → {-1, 1}` with a simp
 - [Friedgut's junta theorem, explicit form](exists-junta-bool-dist-le.md)
 - [Spectral part of Friedgut's argument](sum-sq-not-subset-le-of-influence.md)
 - [Level-k Inequalities](level-k-inequality.md)
+- [Fourier expansion of the coordinate derivative](bool-fourier-coeff-coord-derivative.md)
+- [Corollary 9.12: stable influences of Boolean functions](stable-influence-third-le.md)
 
 ## Related topics
 
