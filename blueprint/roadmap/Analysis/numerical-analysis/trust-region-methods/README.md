@@ -14,5 +14,5 @@ A trust-region method computes a trial step by minimising a model of the objecti
 - [Line search methods](../line-search-methods/README.md): the alternative globalisation strategy.
 - [Quasi-Newton methods](../quasi-newton-methods/README.md): a common source of the Hessian
   approximation $B$ in the model.
-- [Newton's method](../newton-s-method/README.md): the local method that trust-region steps reduce to
-  when the radius is inactive and $B$ is the Hessian.
+- [Newton's method for minimization](../../convex-analysis-and-variations/newton-s-method-for-minimization/README.md): the local method
+  that trust-region steps reduce to when the radius is inactive and $B$ is the Hessian.

@@ -11,3 +11,7 @@ Newton's method minimizes a twice differentiable convex function $f$ by stepping
 - [Newton's method (root finding)](../../numerical-analysis/newton-s-method/README.md)
 - [Gradient descent](../gradient-descent/README.md)
 - [Lagrange duality](../lagrange-duality/README.md)
+- [Quasi-Newton methods](../../numerical-analysis/quasi-newton-methods/README.md): Newton-type
+  methods that replace the Hessian by secant approximations such as BFGS.
+- [Trust-region methods](../../numerical-analysis/trust-region-methods/README.md): globalisation of
+  Newton's method by minimising its quadratic model over a ball.

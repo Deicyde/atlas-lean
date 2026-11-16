@@ -6,7 +6,7 @@ Nonlinear conjugate gradient methods extend the linear conjugate gradient method
 - [The Dai–Yuan identity](inner-dai-yuan-direction.md)
 - [Descent of the Dai–Yuan direction](inner-dai-yuan-direction-neg.md)
 - [Global convergence of the Dai–Yuan method](dai-yuan-liminf-norm-gradient.md)
-- [Global convergence of the Fletcher–Reeves method (Al-Baali)](fletcher-reeves-liminf-norm-gradient.md)
+- [Global convergence of the Fletcher–Reeves method under strong Wolfe steps](fletcher-reeves-liminf-norm-gradient.md)
 
 ## Related topics
 

@@ -1,4 +1,4 @@
-# Global convergence of the Fletcher–Reeves method (Al-Baali)
+# Global convergence of the Fletcher–Reeves method under strong Wolfe steps
 
 Let $f$ be a function on a finite-dimensional real inner product space whose level set
 $\{y : f(y) \le f(x_0)\}$ is bounded and which, on an open neighbourhood $U$ of it, is
@@ -10,7 +10,9 @@ every step length $\alpha_k > 0$ satisfying the
 $0 < \delta < \sigma \le 1/2$. If no gradient vanishes, then $\liminf_k \|\nabla f(x_k)\| = 0$.
 
 The bound $\sigma \le 1/2$ is what makes every Fletcher–Reeves direction a descent direction
-(Al-Baali's lemma, Lemma 4.1 of the source); compare the
+(Lemma 4.1 of the source, whose proof it refers to Al-Baali). Al-Baali (1985) proved the
+convergence for $\sigma < 1/2$; the endpoint $\sigma = 1/2$ is due to Liu, Han and Yin (1993) and to
+Dai and Yuan (1996). Compare the
 [Dai–Yuan method](dai-yuan-liminf-norm-gradient.md), which needs only standard Wolfe steps.
 
 ## Background
@@ -21,3 +23,10 @@ The bound $\sigma \le 1/2$ is what makes every Fletcher–Reeves direction a des
 ## Sources
 
 - Y. H. Dai and Y. Yuan, *A note on the nonlinear conjugate gradient method*, J. Comput. Math. 20 (2002); https://lsec.cc.ac.cn/pub/yyx/papers/jcm1290.pdf, Theorem 4.2 under Assumption 2.1.
+- M. Al-Baali, *Descent property and global convergence of the Fletcher–Reeves method with inexact
+  line search*, IMA J. Numer. Anal. 5 (1985), 121–124 (the case $\sigma < 1/2$).
+- G. H. Liu, J. Y. Han and H. X. Yin, *Global convergence of the Fletcher–Reeves algorithm with an
+  inexact line search*, report, Institute of Applied Mathematics, Chinese Academy of Sciences (1993),
+  and Y. H. Dai and Y. Yuan, *Convergence properties of the Fletcher–Reeves method*, IMA J. Numer.
+  Anal. 16 (1996), 155–164 (the case $\sigma = 1/2$); references as listed in Dai and Yuan,
+  SIAM J. Optim. 10 (1999).

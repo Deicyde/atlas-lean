@@ -1,6 +1,7 @@
 # Global convergence of the Dai–Yuan method
 
-Let $E$ be a real Hilbert space and $f : E \to \mathbb{R}$, and write $g_k = \nabla f(x_k)$. Run
+Let $E$ be a real Hilbert space and $f : E \to \mathbb{R}$, differentiable at the iterates (the Lean
+statement needs no such assumption), and write $g_k = \nabla f(x_k)$. Run
 $x_{k+1} = x_k + \alpha_k d_k$ with $\alpha_k > 0$, $d_0 = -g_0$ and
 $d_{k+1} = -g_{k+1} + \beta_k d_k$ with the [Dai–Yuan parameter](dai-yuan-beta.md)
 $\beta_k = \|g_{k+1}\|^2 / d_k^\top (g_{k+1} - g_k)$, every step length satisfying the

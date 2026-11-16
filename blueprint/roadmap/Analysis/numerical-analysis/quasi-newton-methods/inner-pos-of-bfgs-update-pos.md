@@ -7,4 +7,4 @@ $y^\top s \le 0$, which is why line searches must enforce the curvature conditio
 
 ## Sources
 
-- J. E. Dennis and R. B. Schnabel, *Numerical Methods for Unconstrained Optimization and Nonlinear Equations*, Prentice-Hall 1983 (SIAM reprint 1996), Lemma 9.2.1 ("only if" part), for the BFGS update.
+- J. E. Dennis and R. B. Schnabel, *Numerical Methods for Unconstrained Optimization and Nonlinear Equations*, Prentice-Hall 1983 (SIAM reprint 1996), Section 9.2 (necessity of the curvature condition for a positive definite secant update).

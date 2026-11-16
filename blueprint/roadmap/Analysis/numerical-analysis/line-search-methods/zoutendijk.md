@@ -1,6 +1,7 @@
 # Zoutendijk condition
 
-Let $E$ be a real Hilbert space (for instance $\mathbb{R}^n$) and $f : E \to \mathbb{R}$. Consider a line-search method $x_{k+1} = x_k + \alpha_k d_k$ with $\alpha_k > 0$ and descent
+Let $E$ be a real Hilbert space (for instance $\mathbb{R}^n$) and $f : E \to \mathbb{R}$, differentiable at
+the iterates (the Lean statement needs no such assumption). Consider a line-search method $x_{k+1} = x_k + \alpha_k d_k$ with $\alpha_k > 0$ and descent
 directions, $g_k^\top d_k < 0$ where $g_k = \nabla f(x_k)$, whose step lengths satisfy the
 [standard Wolfe conditions](wolfe-conditions.md) with constants $\delta > 0$ and $\sigma < 1$.
 Suppose that $f(x_k)$ is bounded below and that

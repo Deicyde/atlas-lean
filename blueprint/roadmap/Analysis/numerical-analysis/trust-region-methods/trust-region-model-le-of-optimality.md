@@ -15,5 +15,5 @@ and complementarity makes $\mu \|s\|^2 = \mu \Delta^2 \ge \mu \|p\|^2$.
 
 ## Sources
 
-- N. I. M. Gould, D. P. Robinson and H. S. Thorne, *On solving trust-region and other regularised subproblems in optimization*, Math. Program. Comput. 2 (2010); https://www.cs.ox.ac.uk/files/2182/NA-09-01.pdf, Theorem 2.1 (necessity, with the identity as norm matrix; crediting Gay 1981 and Moré
-  and Sorensen 1983); this page proves the converse.
+- N. I. M. Gould, D. P. Robinson and H. S. Thorne, *On solving trust-region and other regularised subproblems in optimization*, Math. Program. Comput. 2 (2010); https://www.cs.ox.ac.uk/files/2182/NA-09-01.pdf, Theorem 2.1 (necessity, with the identity as norm matrix; that source credits the
+  characterisation to Gay (1981) and to Moré and Sorensen (1983)); this page proves the converse.

@@ -10,8 +10,10 @@ Quasi-Newton methods replace the Hessian in Newton's method by an approximation 
 
 ## Related topics
 
-- [Newton's method](../newton-s-method/README.md): the method whose Hessian quasi-Newton methods
-  approximate; in one dimension the secant equation gives the secant method.
+- [Newton's method for minimization](../../convex-analysis-and-variations/newton-s-method-for-minimization/README.md): the method
+  whose Hessian quasi-Newton methods approximate.
+- [Newton's method](../newton-s-method/README.md) for root finding: in one dimension the secant
+  equation turns it into the secant method.
 - [Line search methods](../line-search-methods/README.md): Wolfe steps supply the curvature condition.
 - [Barzilai–Borwein step size](../barzilai-borwein-step-size/README.md): the secant equation fitted
   by a multiple of the identity.
