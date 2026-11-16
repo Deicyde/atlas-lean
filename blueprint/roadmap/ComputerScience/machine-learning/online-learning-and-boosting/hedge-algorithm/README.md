@@ -39,3 +39,4 @@
 
 - [No-regret dynamics](../../../../GameTheory/noncooperative-games/no-regret-dynamics/README.md): when every player of a game runs a no-regret algorithm such as Hedge, play approaches the coarse correlated equilibria, and smoothness bounds the average social cost.
 - [Von Neumann's minimax theorem](../../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): Freund and Schapire's proof of the minimax theorem by multiplicative weights.
+- [Natural policy gradient](../../reinforcement-learning/natural-policy-gradient/README.md)

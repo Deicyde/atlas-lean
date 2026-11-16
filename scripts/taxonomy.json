@@ -895,6 +895,7 @@
   "CSLibExt/Algorithms/Lean/Greedy/IntervalScheduling": {"to": "ComputerScience/greedy-algorithms-and-matroids", "title": "Interval scheduling"},
   "CSLibExt/Algorithms/Lean/Greedy/MatroidGreedy": {"to": "ComputerScience/greedy-algorithms-and-matroids", "title": "Matroid greedy algorithm"},
   "CSLibExt/Algorithms/Lean/Greedy/OfflineCaching": {"to": "ComputerScience/greedy-algorithms-and-matroids", "title": "Furthest-in-future caching"},
+  "CSLibExt/Algorithms/Lean/MDP/NaturalPolicyGradient": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Natural policy gradient"},
   "CSLibExt/Algorithms/Lean/MDP/PerformanceDifference": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Performance difference lemma"},
   "CSLibExt/Algorithms/Lean/MDP/PolicyIteration": {"to": "ComputerScience/heuristic-search-and-planning", "title": "Policy iteration"},
   "CSLibExt/Algorithms/Lean/MDP/StochasticPolicy": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Stochastic policies and discounted occupancy"},
