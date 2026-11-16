@@ -20,8 +20,11 @@
 - [Expander mixing lemma](expander-mixing-lemma.md)
 - [Expander mixing lemma, unnormalised form](abs-card-interedges-sub-le.md)
 - [Elementary lower bound on the spectral parameter](elementary-spectral-lower-bound.md)
+- [Alon-Boppana bound](alon-boppana.md)
 - [Probability of an event for a random walk on a regular graph](walk-prob.md)
 - [Random-walk probabilities have total mass one](walk-prob-true.md)
+- [Hitting property of expander walks](hitting-property-of-expander-walks.md)
+- [Chernoff bound for expander walks](chernoff-bound-expander-walk.md)
 
 ## Related topics
 
