@@ -10,6 +10,7 @@ How many edges or copies of a subgraph a graph can have while avoiding a forbidd
 - [Generalized Turán numbers](generalized-tur-n-numbers/README.md)
 - [Graph saturation](graph-saturation/README.md)
 - [Pentagons in triangle-free graphs](pentagons-in-triangle-free-graphs/README.md)
+- [Triangle density and flag algebras](triangle-density-and-flag-algebras/README.md)
 - [Turán numbers of bipartite graphs](tur-n-numbers-of-bipartite-graphs/README.md)
 - [Turán numbers of cycles](tur-n-numbers-of-cycles/README.md)
 - [Turán problems in the hypercube](tur-n-problems-in-the-hypercube/README.md)
