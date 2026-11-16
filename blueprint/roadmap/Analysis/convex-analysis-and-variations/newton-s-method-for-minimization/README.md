@@ -15,3 +15,4 @@ Newton's method minimizes a twice differentiable convex function $f$ by stepping
   methods that replace the Hessian by secant approximations such as BFGS.
 - [Trust-region methods](../../numerical-analysis/trust-region-methods/README.md): globalisation of
   Newton's method by minimising its quadratic model over a ball.
+- [Self-concordant functions and barriers](../self-concordant-functions-and-barriers/README.md): the affine-invariant condition under which Newton's method has a global complexity bound, the basis of interior-point methods.

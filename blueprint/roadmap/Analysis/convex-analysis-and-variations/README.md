@@ -17,6 +17,7 @@ Convex functions and sets in analysis and optimization: first-order and second-o
 - [Newton's method for minimization](newton-s-method-for-minimization/README.md)
 - [Polar sets](polar-sets/README.md)
 - [Second-order condition for convexity](second-order-condition-for-convexity/README.md)
+- [Self-concordant functions and barriers](self-concordant-functions-and-barriers/README.md)
 - [Stampacchia's theorem](stampacchia-s-theorem/README.md)
 - [Tikhonov regularization](tikhonov-regularization/README.md)
 - [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)

@@ -46,3 +46,4 @@ Equality constraints are not covered yet: Boyd–Vandenberghe's Slater theorem a
 - [Moreau decomposition](../moreau-decomposition/README.md)
 - [Newton's method for minimization](../newton-s-method-for-minimization/README.md)
 - [Alternating direction method of multipliers](../alternating-direction-method-of-multipliers/README.md)
+- [Self-concordant functions and barriers](../self-concordant-functions-and-barriers/README.md): the theory of barriers behind interior-point methods; the logarithmic barrier of $m$ constraints is an $m$-self-concordant barrier.
