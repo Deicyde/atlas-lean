@@ -4047,6 +4047,7 @@
   "MathlibExt/Probability/ThreeSeriesNecessity": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's three-series theorem"},
   "MathlibExt/Probability/ThreeSeriesTailProb": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's three-series theorem"},
   "MathlibExt/Probability/TightnessFamily": {"to": "Probability/convergence-of-measures", "title": "Tightness of probability measures"},
+  "MathlibExt/Probability/TiltedLDP": {"to": "Probability/large-deviations", "title": "Tilted large deviation principle"},
   "MathlibExt/Probability/TotalVariationDistance": {"to": "Probability/convergence-of-measures", "title": "Total variation distance"},
   "MathlibExt/Probability/TruncatedMomentRV": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Truncated moments of regularly varying tails"},
   "MathlibExt/Probability/Truncation": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's three-series theorem"},
