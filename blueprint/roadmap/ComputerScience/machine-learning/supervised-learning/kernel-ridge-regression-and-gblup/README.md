@@ -19,3 +19,8 @@
 ## The RKHS view
 
 - [Kernel ridge regression = GBLUP = RR-BLUP](kernel-ridge-fit-eq-mul-vec-ridge-estima.md)
+
+## Related topics
+
+- [Positive-definite kernels](../../../../Analysis/hilbert-spaces/positive-definite-kernels/README.md): Aronszajn's theorem, which kernels are inner products of features.
+- [Representer theorem](../../../../Analysis/hilbert-spaces/representer-theorem/README.md): kernel ridge regression over the whole reproducing kernel Hilbert space.
