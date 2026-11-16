@@ -140,4 +140,21 @@ example {t : ℝ} (ht : 1 ≤ t) :
     push_cast
     ring
 
+/-- Time dilation by `τ t = 2 t` of the solution `X t = e^{-t}`, `Z = 0` (`α = 0`, `f = 0`):
+the hypotheses of `timeDilation` hold at every `t`. -/
+example (t : ℝ) :
+    HasDerivAt ((fun s => Real.exp (-s)) ∘ (fun s : ℝ => 2 * s))
+        (Real.exp ((fun _ : ℝ => (0 : ℝ)) (2 * t) + Real.log 2) •
+          (((fun _ : ℝ => (0 : ℝ)) ∘ (fun s : ℝ => 2 * s)) t -
+            ((fun s => Real.exp (-s)) ∘ (fun s : ℝ => 2 * s)) t)) t := by
+  refine (timeDilation (f := fun _ : ℝ => (0 : ℝ)) (α := fun _ => 0) (β := fun s => s)
+    (τ := fun s : ℝ => 2 * s) (X := fun s => Real.exp (-s)) (Z := fun _ => 0) (t := t) (τ' := 2)
+    ?_ two_pos ?_ ?_).1
+  · simpa using (hasDerivAt_id t).const_mul (2 : ℝ)
+  · have := (hasDerivAt_neg (2 * t)).exp
+    convert this using 1
+    simp
+  · rw [zero_gradient, smul_zero]
+    exact hasDerivAt_const _ 0
+
 end MathlibExtTest.AcceleratedGradient

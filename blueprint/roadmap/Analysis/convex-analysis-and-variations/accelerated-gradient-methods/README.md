@@ -10,6 +10,8 @@ Nesterov's accelerated gradient method minimizes a convex function with $L$-Lips
 - [Convergence rate of the Bregman-Lagrangian flow (Euclidean case)](bregman-lagrangian-rate.md)
 - [Polynomial rate $O(1/t^p)$ for the polynomial Bregman-Lagrangian family (Euclidean case)](polynomial-family-rate.md)
 - [The Su–Boyd–Candès rate for the continuous limit of Nesterov's method](su-boyd-candes-rate.md)
+- [Time dilation of the Bregman-Lagrangian flow (Euclidean case)](time-dilation.md)
+- [Time dilation preserves the ideal scaling](time-dilation-ideal-scaling.md)
 
 ## Related topics
 

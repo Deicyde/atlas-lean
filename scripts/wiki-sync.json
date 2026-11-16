@@ -16220,6 +16220,8 @@
 "MathlibExt.Analysis.Convex.AcceleratedGradientFlow.energy": "2597976b485f8626",
 "MathlibExt.Analysis.Convex.AcceleratedGradientFlow.polynomialFamily_rate": "74a697fd2f5aa009",
 "MathlibExt.Analysis.Convex.AcceleratedGradientFlow.suBoydCandes_rate": "5ed0963d75471a6c",
+"MathlibExt.Analysis.Convex.AcceleratedGradientFlow.timeDilation": "ba7085bceab30725",
+"MathlibExt.Analysis.Convex.AcceleratedGradientFlow.timeDilation_idealScaling": "40859924b1bf9e96",
 "MathlibExt.Analysis.Convex.ChoquetWanted.choquet_representation": "c69c6a3502e2985e",
 "MathlibExt.Analysis.Convex.ChoquetWanted.choquet_representation_of_isCompact": "479547bebd0b8c29",
 "MathlibExt.Analysis.Convex.Cocoercivity.inner_gradient_sub_ge": "6c73db7247fcb646",

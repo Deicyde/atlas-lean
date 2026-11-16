@@ -42,6 +42,8 @@ Euler–Lagrange equation becomes the first-order system `X' = e^α (Z - X)`,
 * `bregmanLagrangian_rate`: the rate `f (X t) - f x⋆ ≤ 𝓔 t₀ · e^{-β t}`.
 * `polynomialFamily_rate`: the `O(1 / t^p)` rate of the polynomial family (3.1)-(3.3).
 * `suBoydCandes_rate`: the `O(1 / t²)` rate for `X'' + (3 / t) X' + ∇f(X) = 0`.
+* `timeDilation`, `timeDilation_idealScaling`: reparametrizing time maps solutions to solutions
+  for the parameters (2.10) (WWJ Theorem 2.2).
 -/
 
 @[expose] public section
@@ -264,5 +266,51 @@ theorem suBoydCandes_rate {f : E → ℝ} (hconvex : ConvexOn ℝ Set.univ f)
   simp only [Z]
   field_simp
   ring
+
+/-- **Time dilation of the Bregman-Lagrangian flow (Euclidean case).** Let `τ` be differentiable
+at `t` with `τ' t > 0`, and suppose `(X, Z)` solves the Euler–Lagrange system for the parameters
+`(α, β)` at time `τ t`: `X' = e^{α} (Z - X)` and `Z' = -e^{α + β} ∇f(X)` there. Then the
+reparametrized curves `X ∘ τ`, `Z ∘ τ` solve the same system at `t` for the parameters
+`α̃ = α ∘ τ + log τ'`, `β̃ = β ∘ τ`. Moreover the ideal scaling is preserved: if `β` has
+derivative `β'` at `τ t` with `β' ≤ e^{α}` there, then `β ∘ τ` has derivative `β' (τ t) τ' t`
+and `β' (τ t) τ' t ≤ e^{α̃ t}`.
+
+Source: A. Wibisono, A. C. Wilson and M. I. Jordan, arXiv:1603.04245v1, Theorem 2.2 with the
+modified parameters (2.10a)-(2.10b), stated here for the first-order form (2.7) of the
+Euler–Lagrange equation with `h = ‖·‖² / 2` (the parameter `γ` only enters through the ideal
+scaling (2.2b) that reduces (2.5) to (2.7)). -/
+theorem timeDilation {f : E → ℝ} {α β τ : ℝ → ℝ} {X Z : ℝ → E} {t τ' : ℝ}
+    (hτ : HasDerivAt τ τ' t) (hτpos : 0 < τ')
+    (hX : HasDerivAt X (Real.exp (α (τ t)) • (Z (τ t) - X (τ t))) (τ t))
+    (hZ : HasDerivAt Z (-Real.exp (α (τ t) + β (τ t)) • gradient f (X (τ t))) (τ t)) :
+    HasDerivAt (X ∘ τ)
+        (Real.exp (α (τ t) + Real.log τ') • ((Z ∘ τ) t - (X ∘ τ) t)) t ∧
+      HasDerivAt (Z ∘ τ)
+        (-Real.exp ((α (τ t) + Real.log τ') + β (τ t)) • gradient f ((X ∘ τ) t)) t := by
+  have he : Real.exp (α (τ t) + Real.log τ') = τ' * Real.exp (α (τ t)) := by
+    rw [Real.exp_add, Real.exp_log hτpos, mul_comm]
+  have he' : Real.exp ((α (τ t) + Real.log τ') + β (τ t)) =
+      τ' * Real.exp (α (τ t) + β (τ t)) := by
+    rw [add_right_comm, Real.exp_add (α (τ t) + β (τ t)), Real.exp_log hτpos, mul_comm]
+  refine ⟨?_, ?_⟩
+  · have := hX.scomp t hτ
+    simpa [he, smul_smul, Function.comp_def] using this
+  · have := hZ.scomp t hτ
+    simpa [he', smul_smul, Function.comp_def, neg_smul, smul_neg] using this
+
+/-- **Time dilation preserves the ideal scaling.** If `τ` has derivative `τ' > 0` at `t` and `β`
+has derivative `β'` at `τ t` with `β' ≤ e^{α (τ t)}` (eq. (2.2a)), then `β ∘ τ` has derivative
+`β' τ'` at `t` and `β' τ' ≤ e^{α (τ t) + log τ'}`: the reparametrized parameters (2.10a)-(2.10b)
+again satisfy (2.2a).
+
+Source: A. Wibisono, A. C. Wilson and M. I. Jordan, arXiv:1603.04245v1, Theorem 2.2 (last
+sentence: `α, β, γ` satisfy the ideal scaling if and only if the modified parameters do; the
+direction proved here, for (2.2a)). -/
+theorem timeDilation_idealScaling {α β τ : ℝ → ℝ} {t τ' β' : ℝ} (hτ : HasDerivAt τ τ' t)
+    (hτpos : 0 < τ') (hβ : HasDerivAt β β' (τ t)) (hscale : β' ≤ Real.exp (α (τ t))) :
+    HasDerivAt (β ∘ τ) (β' * τ') t ∧ β' * τ' ≤ Real.exp (α (τ t) + Real.log τ') := by
+  refine ⟨hβ.comp t hτ, ?_⟩
+  rw [Real.exp_add, Real.exp_log hτpos]
+  exact mul_le_mul_of_nonneg_right hscale hτpos.le
 
 end MathlibExt.Analysis.Convex.AcceleratedGradientFlow
