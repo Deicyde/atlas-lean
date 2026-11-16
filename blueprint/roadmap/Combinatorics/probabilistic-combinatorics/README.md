@@ -1,6 +1,6 @@
 # Probabilistic combinatorics
 
-Probabilistic methods and random discrete structures outside random graphs: the Lovász local lemma, Littlewood–Offord and Tomaszewski anti-concentration for signed sums, concentration of subset sums, the isolation lemma, thresholds and expectation thresholds, random k-SAT thresholds, perfect matchings in random hypergraphs, the Chvátal–Sankoff constant for longest common subsequences, and moment-based counting bounds.
+Probabilistic methods and random discrete structures outside random graphs: the first and second moment methods, Janson's inequalities, the Lovász local lemma, Littlewood–Offord and Tomaszewski anti-concentration for signed sums, concentration of subset sums, the isolation lemma, thresholds and expectation thresholds, random k-SAT thresholds, perfect matchings in random hypergraphs, the Chvátal–Sankoff constant for longest common subsequences, and moment-based counting bounds.
 
 - [Chvátal–Sankoff constant](chv-tal-sankoff-constant/README.md)
 - [Concentration of subset sums](concentration-of-subset-sums/README.md)

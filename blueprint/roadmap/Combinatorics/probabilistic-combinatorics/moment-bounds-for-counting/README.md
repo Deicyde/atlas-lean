@@ -7,3 +7,7 @@
 - [Count bound from first and second moments](card-filter-mul-sq-le-of-moments.md)
 - [Sum-of-squares count bound over the whole type](card-filter-mul-sq-le-sum-sq-univ.md)
 - [Moment count bound over the whole type](card-filter-mul-sq-le-of-moments-univ.md)
+
+## Related topics
+
+- [First and second moment methods](../first-and-second-moment-methods/README.md): the probabilistic statements (Markov, Chebyshev, variance of counts of events) of which these are counting-measure versions.

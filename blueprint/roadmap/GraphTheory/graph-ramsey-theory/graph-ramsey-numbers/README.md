@@ -18,3 +18,9 @@
 - [Upper bound for `R(3, t)` (Ajtai–Komlós–Szemerédi, Shearer)](graph-ramsey-three-upper.md)
 - [Kim's triangle-free graphs with small independence number](exists-clique-free-three-indep-num-le.md)
 - [Chromatic number of Kim's triangle-free graphs](exists-clique-free-three-chromatic-numbe.md)
+
+## Related topics
+
+- [First and second moment methods](../../../Combinatorics/probabilistic-combinatorics/first-and-second-moment-methods/README.md): the probabilistic existence arguments behind lower bounds for Ramsey numbers.
+- [Kim–Vu polynomial concentration](../../../Probability/concentration-inequalities/kim-vu-polynomial-concentration/README.md): concentration of the kind used in the semi-random construction behind $R(3,t) = \Theta(t^2/\log t)$.
+- [Ramsey graphs for the triangle](../ramsey-graphs-for-the-triangle/README.md): graphs that arrow the triangle.
