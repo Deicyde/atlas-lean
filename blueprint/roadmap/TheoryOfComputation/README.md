@@ -30,6 +30,13 @@ exactly the recursive functions ([equivalence of models](equivalence-of-models/R
 [Hilbert's tenth problem](undecidable-problems/diophantine-sets-and-hilbert-s-tenth-problem/README.md), by the theorem
 of Davis, Putnam, Robinson and Matiyasevich that the recursively enumerable sets are the Diophantine ones.
 
+[Communication complexity](communication-complexity/README.md) studies Yao's two-party model:
+equality of $n$-bit strings needs $n + 1$ bits deterministically, by the fooling-set and rank
+lower bounds, but only a constant number with shared random bits, and
+[Yao's minimax principle](randomized-and-quantum-complexity/yao-s-minimax-principle/README.md)
+turns lower bounds for randomized algorithms into lower bounds against a fixed input
+distribution.
+
 - [Turing machines](turing-machines/README.md)
 - [Equivalence of models of computation](equivalence-of-models/README.md)
 - [Computability and undecidability](computability/README.md)
@@ -45,6 +52,7 @@ of Davis, Putnam, Robinson and Matiyasevich that the recursively enumerable sets
 - [Randomized, interactive and quantum complexity](randomized-and-quantum-complexity/README.md)
 - [Counting complexity](counting-complexity/README.md)
 - [Pseudorandomness and one-way functions](pseudorandomness-and-one-way-functions/README.md)
+- [Communication complexity](communication-complexity/README.md)
 - [Boolean circuit complexity](circuit-complexity/README.md)
 - [Algebraic complexity](algebraic-complexity/README.md)
 - [Descriptive complexity](descriptive-complexity/README.md)

@@ -16,4 +16,5 @@ Approach* (web draft of 2007-01-08), Section 11.6.
 ## Related topics
 
 - [Von Neumann's minimax theorem](../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): the theorem about matrix games that the principle specializes.
+- [Randomized communication protocols](../../communication-complexity/randomized-communication-protocols/README.md): the communication version, Theorem 3.3 of Rao and Yehudayoff, relates randomized and distributional communication complexity.
 - [Bounded-error probabilistic classes RP and BPP](../bounded-error-probabilistic-classes-rp-and-bpp/README.md): randomized algorithms in the Turing-machine setting.
