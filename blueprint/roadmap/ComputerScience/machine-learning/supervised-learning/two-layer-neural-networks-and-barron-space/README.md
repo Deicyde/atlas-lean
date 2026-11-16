@@ -7,9 +7,12 @@ networks, on which approximation and estimation errors scale like Monte Carlo ra
 in the width and $n^{-1/2}$ in the sample size, independently of the input dimension $d$. The
 empirical Rademacher complexity of a path-norm ball is at most $2 Q \sqrt{2 \log(2d) / n}$,
 proved here from the Rademacher calculus (homogeneity, contraction and Massart's lemma), with and
-without a bias term; with a bias the proof gives $\log(2(d+1))$. The direct and inverse
-approximation theorems, which identify the Barron space with the functions approximable by
-networks of bounded path norm at the rate $m^{-1/2}$, are recorded as wanted statements.
+without a bias term; with a bias the proof gives $\log(2(d+1))$. The direct approximation
+theorem, approximation of every Barron function by width-$m$ networks with squared error
+$3 \lVert f \rVert_B^2 / m$ and path norm $2 \lVert f \rVert_B$, is proved by Monte Carlo
+sampling of the neurons; the inverse approximation theorem, which together with it identifies
+the Barron space with the functions approximable by networks of bounded path norm, is recorded as
+a wanted statement.
 
 ## Barron space
 

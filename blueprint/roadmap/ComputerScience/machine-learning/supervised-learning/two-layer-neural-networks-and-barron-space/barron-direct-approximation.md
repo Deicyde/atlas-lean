@@ -11,14 +11,19 @@ $$\lVert f - f_m \rVert_{L^2(\mu)}^2 \le \frac{3 \lVert f \rVert_B^2}{m}
 \frac1m \sum_{k=1}^m \lvert a_k \rvert (\lVert b_k \rVert_1 + \lvert c_k \rvert) \le 2 \lVert f \rVert_B.$$
 
 The rate $m^{-1/2}$ is the Monte Carlo rate and does not depend on $d$, and the path norm of the
-approximant is controlled independently of the width. Proof in the source: sample the $m$
-neurons i.i.d. from a representation $\rho$ of $f$ whose second moment is within a factor
-$1 + \varepsilon$ of $\lVert f \rVert_B^2$; for each $x$ the expected squared error is the
-variance of an i.i.d. sample mean, at most $\mathbb{E}_\rho[a^2 (\lVert b \rVert_1 + \lvert c \rvert)^2] / m$;
-Markov's inequality applied to the error and to the path norm shows that both bounds hold
-simultaneously with positive probability.
+approximant is controlled independently of the width.
 
-This is a wanted statement: the proof is not formalized.
+Proof (as in the source, with one simplification): take a representation $\rho$ of $f$ whose
+second moment $M_2 = \mathbb{E}_\rho[a^2 (\lVert b \rVert_1 + \lvert c \rvert)^2]$ is below
+$1.21 \lVert f \rVert_B^2$, and sample the $m$ neurons i.i.d. from $\rho$. For each $x$ in the cube
+the expected squared error is the variance of an i.i.d. sample mean, at most $M_2 / m$, and
+Tonelli's theorem integrates this over $\mu$; the expected path norm is
+$\mathbb{E}_\rho \lvert a \rvert (\lVert b \rVert_1 + \lvert c \rvert) \le \sqrt{M_2}$ by
+Cauchy–Schwarz. The source applies Markov's inequality to the two quantities separately; the
+formal proof instead averages the single functional
+$\mathrm{error} / (3 \lVert f \rVert_B^2 / m) + \mathrm{path\ norm} / (2 \lVert f \rVert_B)$,
+whose mean is below $1.21/3 + 1.1/2 < 1$, so that some sample makes it smaller than $1$. A function
+of Barron norm $0$ vanishes on the cube and is approximated by the zero network.
 
 ## Informally uses
 
@@ -27,4 +32,4 @@ This is a wanted statement: the proof is not formalized.
 ## Sources
 
 - W. E, C. Ma and L. Wu, *The Barron space and the flow-induced function spaces for neural network models*, Constr. Approx. 55 (2022), Theorem 4 and its proof in §2.5.3.
-- W. E, C. Ma and L. Wu, *A priori estimates of the population risk for two-layer neural networks*, Commun. Math. Sci. 17 (2019), Theorem 3.1 (the same statement, networks without bias).
+- W. E, C. Ma and L. Wu, *A priori estimates of the population risk for two-layer neural networks*, Commun. Math. Sci. 17 (2019), Theorem 3.1 (the analogous statement for networks without bias on $[-1, 1]^d$, without the factor $1/m$).

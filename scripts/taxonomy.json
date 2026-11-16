@@ -1538,6 +1538,7 @@
   "CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Probabilistic principal component analysis"},
   "CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Probabilistic principal component analysis"},
   "CSLibExt/MachineLearning/MatrixFactorization/SuccessiveProjection": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Successive projection algorithm"},
+  "CSLibExt/MachineLearning/NeuralNetworks/BarronApproximation": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Two-layer neural networks and Barron space"},
   "CSLibExt/MachineLearning/NeuralNetworks/BarronSpace": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Two-layer neural networks and Barron space"},
   "CSLibExt/MachineLearning/NeuralNetworks/ResidualNetworkFlow": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Residual networks as discretised flows"},
   "CSLibExt/MachineLearning/PACLearning/BernoulliTrials": {"to": "ComputerScience/machine-learning/pac-learning", "title": "Valiant's Bernoulli-trial bound"},
