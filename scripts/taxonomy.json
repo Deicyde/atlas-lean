@@ -6490,6 +6490,8 @@
   "WantedExt/Probability/Percolation/RSWCriticalBondWanted": {"to": "Probability/percolation/crossings", "title": "Russo–Seymour–Welsh theory"},
   "WantedExt/Probability/Process/BrownianSamplePathsWanted": {"to": "Probability/stochastic-calculus", "title": "Construction and sample paths of Brownian motion"},
   "WantedExt/Probability/Process/BrownianStrongMarkovWanted": {"to": "Probability/stochastic-calculus", "title": "Strong Markov property and reflection principle"},
+  "WantedExt/Probability/Process/ContinuousDoobWanted": {"to": "Probability/martingales", "title": "Doob's maximal inequalities"},
+  "WantedExt/Probability/Process/ContinuousOptionalStoppingWanted": {"to": "Probability/martingales", "title": "Optional stopping theorem"},
   "WantedExt/Probability/Process/GirsanovWanted": {"to": "Probability/stochastic-calculus", "title": "Girsanov's theorem"},
   "WantedExt/Probability/Process/LevyCharacterizationWanted": {"to": "Probability/stochastic-calculus", "title": "Itô's formula"},
   "WantedExt/Probability/Process/LipschitzSDEWanted": {"to": "Probability/stochastic-calculus", "title": "Stochastic differential equations"},

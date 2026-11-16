@@ -25910,6 +25910,8 @@
 "MathlibExt.Probability.Combinatorics.SecondMomentMethod.variance_sum_indicator_le": "fad1200093bc8bd2",
 "MathlibExt.Probability.CondExpAntitoneLimit.condExp_antitone_limit_eq": "c770d8b96ff124d7",
 "MathlibExt.Probability.CondExpAntitoneLimit.tendsto_eLpNorm_condExp_sub_of_ae_tendsto": "cf7107dc32a5aa59",
+"MathlibExt.Probability.ContinuousDoobWanted.Submartingale.lintegral_iSup_rpow_le": "06f6f1b59b07d5a3",
+"MathlibExt.Probability.ContinuousOptionalStoppingWanted.Martingale.stoppedValue_ae_eq_condExp_of_le_of_continuous": "62b199ad73d7c632",
 "MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval": "45de61d53ee8f1cd",
 "MathlibExt.Probability.ContinuousPathConvergence.tendsto_continuousPath_of_tight_of_finset_eval": "94c231ec215668ad",
 "MathlibExt.Probability.ConvergenceInProbability.convergence_in_probability_iff_subsequential_ae_convergence": "7209ca7fa6549002",

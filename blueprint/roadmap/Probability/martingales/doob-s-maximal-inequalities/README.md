@@ -5,3 +5,4 @@
 - [Expectation of the predictable quadratic variation](integral-predictable-quadratic-variation.md)
 - [Doob's L² maximal inequality in terms of the predictable quadratic variation, finite horizon](doob-sq-maximal-ineq-predictable-quadrat.md)
 - [Doob's L² maximal inequality, infinite horizon](doob-sq-maximal-ineq-i-sup.md)
+- [Doob's `L^p` maximal inequality in continuous time](lintegral-i-sup-rpow-le.md)
