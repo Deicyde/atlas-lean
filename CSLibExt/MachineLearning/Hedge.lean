@@ -43,7 +43,7 @@ Main results:
 
 `FormalizedTextbooks/IntroductionToOnlineConvexOptimization/OnlineLearning/Hedge.lean` treats the
 same algorithm (weights multiplied by `exp (-ε ℓ i)`, indexed by rounds `t : ℕ`) and derives
-Hazan's Theorem 1.3, `hedgeRegret`, and its one-step lemma `hedgeOnestep` from `algLoss_le_sq`
+Hazan's Theorem 1.5, `hedgeRegret`, and its one-step lemma `hedgeOnestep` from `algLoss_le_sq`
 and `total_update_le_sq`.
 
 ## Cost model
