@@ -8,19 +8,21 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import CSLibExt.MachineLearning.GraphicalModels.DoCalculus
+public import CSLibExt.MachineLearning.GraphicalModels.DoCalculusExchange
 public import Mathlib.Tactic.FinCases
 public import Mathlib.Tactic.NormNum
 public import Mathlib.Algebra.Order.BigOperators.Ring.Finset
 
 /-!
-# Tests for the do-calculus graphs and Rule 1
+# Tests for the do-calculus graphs and Rules 1 and 2
 
 * `G_{\underline Z}`: in the network `X₀ → X₁`, deleting the arrows out of `{0}` removes the
   only arrow.
 * Rule 1: in the same network after the intervention `do(X₀ = x)` (graph `G_{\bar X}` with
   `X = {0}`), there is no path from `X₁` to a third, isolated node `X₂`, so Rule 1 removes the
   observation of `X₂`: `P(x₁ | do(x₀), x₂) = P(x₁ | do(x₀))`.
+* Rule 2: in `X₀ → X₁`, deleting the arrow out of `X₀` d-separates `X₁` from `X₀`, so Rule 2
+  exchanges the action and the observation: `P(x₁ | do(x₀)) = P(x₁ | x₀)`.
 -/
 
 @[expose] public section
@@ -99,5 +101,43 @@ example (v : Fin 3 → Bool) :
       marginal (net.mutilateSet {0} v).joint ({1} ∪ ∅) v /
         marginal (net.mutilateSet {0} v).joint ∅ v :=
   net.doCalculus_rule1 {0} v (mut_dsep v) (mut_marginal_ne_zero v _)
+
+/-- No arrow of `G_{\bar ∅ \underline {0}}` touches `X₀`. -/
+theorem del_not_adj_zero (v : Fin 3 → Bool) {j : Fin 3} :
+    ¬((net.mutilateSet ∅ v).deleteOut {0}).Adj 0 j := by
+  rintro (h | h) <;>
+    rw [BayesNet.edge_deleteOut_iff, BayesNet.edge_mutilateSet_iff, net_edge] at h
+  · exact h.2 (mem_singleton_self 0)
+  · simp at h
+
+/-- `{X₁}` and `{X₀}` are d-separated by `∅` in `G_{\bar ∅ \underline {0}}`. -/
+theorem del_dsep (v : Fin 3 → Bool) :
+    ((net.mutilateSet ∅ v).deleteOut {0}).DSeparated ↑({1} : Finset (Fin 3))
+      ↑({0} : Finset (Fin 3)) ↑(∅ ∪ ∅ : Finset (Fin 3)) := by
+  refine BayesNet.DSeparated.symm _ fun x hx y hy l hl => ?_
+  obtain ⟨-, hch, hh, hlast⟩ := hl
+  simp only [coe_singleton, Set.mem_singleton_iff] at hx hy
+  subst hx hy
+  rcases l with _ | ⟨a, _ | ⟨b, l⟩⟩
+  · simp at hh
+  · simp only [List.head?_cons, Option.some.injEq, List.getLast?_singleton] at hh hlast
+    exact absurd (hh.symm.trans hlast) (by decide)
+  · simp only [List.head?_cons, Option.some.injEq] at hh
+    subst hh
+    exact absurd (List.isChain_cons_cons.1 hch).1 (del_not_adj_zero v)
+
+/-- Every table of `net` is strictly positive. -/
+theorem net_cpt_pos (k : Fin 3) (z : net.pa k → Bool) (a : Bool) :
+    0 < (net.cpt k z).weights a := by
+  change 0 < fair.weights a
+  cases a <;> simp [fair, StdSimplex.duple]
+
+/-- Rule 2 exchanges the action `do(x₀)` and the observation `x₀`. -/
+example (v : Fin 3 → Bool) :
+    marginal (net.mutilateSet (∅ ∪ {0}) v).joint ↑(({1} : Finset (Fin 3)) ∪ ∅) v /
+        marginal (net.mutilateSet (∅ ∪ {0}) v).joint ↑(∅ : Finset (Fin 3)) v =
+      marginal (net.mutilateSet ∅ v).joint ↑(({1} : Finset (Fin 3)) ∪ {0} ∪ ∅) v /
+        marginal (net.mutilateSet ∅ v).joint ↑(({0} : Finset (Fin 3)) ∪ ∅) v :=
+  BayesNet.doCalculus_rule2 net net_cpt_pos ∅ {1} {0} ∅ v (by decide) (del_dsep v)
 
 end Cslib.MachineLearning.DoCalculusTests

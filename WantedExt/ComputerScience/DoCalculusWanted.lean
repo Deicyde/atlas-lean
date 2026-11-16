@@ -12,17 +12,18 @@ public import Batteries.Util.ProofWanted
 public import CSLibExt.MachineLearning.GraphicalModels.DoCalculus
 
 /-!
-# The do-calculus: Rules 2 and 3
+# The do-calculus: Rule 3
 
-Wanted theorems for causal Bayesian networks (`BayesNet`, nodes in a topological order, finite
-state space). The interventional law of `do(X = x)` is the joint of `b.mutilateSet X v`, whose
-graph is `G_{\bar X}`; `BayesNet.deleteOut` gives `G_{\underline Z}`. Rule 1 of the do-calculus
-is proved in `CSLibExt/MachineLearning/GraphicalModels/DoCalculus.lean`; the back-door and
+A wanted theorem for causal Bayesian networks (`BayesNet`, nodes in a topological order,
+finite state space). The interventional law of `do(X = x)` is the joint of `b.mutilateSet X v`,
+whose graph is `G_{\bar X}`. Rules 1 and 2 of the do-calculus are proved in
+`CSLibExt/MachineLearning/GraphicalModels/DoCalculus.lean` and
+`CSLibExt/MachineLearning/GraphicalModels/DoCalculusExchange.lean`; the back-door and
 front-door adjustments, special cases of the calculus, in
 `CSLibExt/MachineLearning/GraphicalModels/CausalAdjustment.lean`.
 
 The values `x, y, z, w` of the variables in `X, Y, Z, W` are read off one assignment `v`. The
-rules are stated for networks whose tables are strictly positive, so that every conditioning
+rule is stated for networks whose tables are strictly positive, so that every conditioning
 event has positive probability (Pearl 1995 states identifiability for positive distributions,
 Definition 4).
 
@@ -43,20 +44,6 @@ open Finset Convexity MetaMathlibExt.FiniteWeight
 namespace BayesNet
 
 variable {α : Type*} {n : ℕ} [Nonempty α]
-
-/-- **Rule 2 of the do-calculus** (action/observation exchange; Pearl 1995, Theorem 3,
-eq. (11)): for pairwise disjoint sets `X, Y, Z, W`, if `Y` and `Z` are d-separated by `X ∪ W` in
-`G_{\bar X \underline Z}` (arrows into `X` and out of `Z` deleted), then
-`P(y | do(x), do(z), w) = P(y | do(x), z, w)`. -/
-theorem_wanted doCalculus_rule2 [Fintype α] (b : BayesNet α n)
-    (hpos : ∀ k z a, 0 < (b.cpt k z).weights a) (X Y Z W : Finset (Fin n)) (v : Fin n → α)
-    (hXY : Disjoint X Y) (hXZ : Disjoint X Z) (hXW : Disjoint X W) (hYZ : Disjoint Y Z)
-    (hYW : Disjoint Y W) (hZW : Disjoint Z W)
-    (hd : ((b.mutilateSet X v).deleteOut Z).DSeparated ↑Y ↑Z ↑(X ∪ W)) :
-    marginal (b.mutilateSet (X ∪ Z) v).joint ↑(Y ∪ W) v /
-        marginal (b.mutilateSet (X ∪ Z) v).joint ↑W v =
-      marginal (b.mutilateSet X v).joint ↑(Y ∪ Z ∪ W) v /
-        marginal (b.mutilateSet X v).joint ↑(Z ∪ W) v
 
 open scoped Classical in
 /-- **Rule 3 of the do-calculus** (insertion and deletion of actions; Pearl 1995, Theorem 3,

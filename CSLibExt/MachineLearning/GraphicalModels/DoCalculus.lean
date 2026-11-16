@@ -33,8 +33,10 @@ is `G_{\bar X}`; `BayesNet.deleteOut b Z` is the graph `G_{\underline Z}`.
   observations): if `Y` and `Z` are d-separated by `X ∪ W` in `G_{\bar X}`, then
   `P(y | do(x), z, w) = P(y | do(x), w)`.
 
-Rules 2 and 3 (exchange of actions and observations; insertion and deletion of actions) are
-recorded as wanted theorems in `WantedExt/ComputerScience/DoCalculusWanted.lean`. The back-door
+Rule 2 (exchange of actions and observations) is proved in
+`CSLibExt/MachineLearning/GraphicalModels/DoCalculusExchange.lean`; Rule 3 (insertion and
+deletion of actions) is recorded as a wanted theorem in
+`WantedExt/ComputerScience/DoCalculusWanted.lean`. The back-door
 and front-door adjustments, which the rules generalize, are proved directly in
 `CSLibExt/MachineLearning/GraphicalModels/CausalAdjustment.lean`.
 

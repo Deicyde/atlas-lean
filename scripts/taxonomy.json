@@ -1515,6 +1515,7 @@
   "CSLibExt/MachineLearning/GraphicalModels/CausalBayesNet": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Causal Bayesian networks"},
   "CSLibExt/MachineLearning/GraphicalModels/ConditionalRandomField": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Conditional random fields"},
   "CSLibExt/MachineLearning/GraphicalModels/DoCalculus": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Causal Bayesian networks"},
+  "CSLibExt/MachineLearning/GraphicalModels/DoCalculusExchange": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Causal Bayesian networks"},
   "CSLibExt/MachineLearning/GraphicalModels/GlobalMarkov": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Bayesian networks"},
   "CSLibExt/MachineLearning/GraphicalModels/LocalMarkov": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Bayesian networks"},
   "CSLibExt/MachineLearning/GraphicalModels/MarkovFactorization": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Bayesian networks"},
