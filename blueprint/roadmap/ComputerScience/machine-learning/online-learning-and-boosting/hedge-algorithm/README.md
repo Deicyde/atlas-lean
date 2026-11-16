@@ -28,6 +28,13 @@
 - [The Hedge loss splits at any round](alg-loss-append.md)
 - [The summed second moments split at any round](alg-sq-append.md)
 
+## The $\sqrt{T}$ regret bound
+
+- [Second moment of a round with losses in the unit interval](round-sq-le-one.md)
+- [Summed second moments over $T$ rounds](alg-sq-le-length.md)
+- [Regret of Hedge for losses in the unit interval](regret-le.md)
+- [The $\sqrt{T}$ regret bound of Hedge](regret-le-two-sqrt.md)
+
 ## Related topics
 
 - [No-regret dynamics](../../../../GameTheory/noncooperative-games/no-regret-dynamics/README.md): when every player of a game runs a no-regret algorithm such as Hedge, play approaches the coarse correlated equilibria, and smoothness bounds the average social cost.
