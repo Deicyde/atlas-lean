@@ -3185,6 +3185,7 @@
   "MathlibExt/MeasureTheory/OptimalTransport/Existence": {"to": "MeasureTheory/optimal-transport", "title": "Monge–Kantorovich existence theorem"},
   "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich": {"to": "MeasureTheory/optimal-transport", "title": "Kantorovich duality"},
   "MathlibExt/MeasureTheory/OptimalTransport/Wasserstein": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein distances"},
+  "MathlibExt/MeasureTheory/OptimalTransport/WassersteinConvergence": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein distances"},
   "MathlibExt/MeasureTheory/OptimalTransport/WassersteinTotalVariation": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein distances"},
   "MathlibExt/MeasureTheory/Polynomial": {"to": "MeasureTheory/lebesgue-measure", "title": "Null sets"},
   "MathlibExt/ModelTheory/GroupLanguage": {"to": "Logic/model-theory", "title": "First-order language of groups"},
