@@ -12,6 +12,8 @@ $$
 f(t) = \sum_{n \in \mathbb{Z}} f(n) \operatorname{sinc}(\pi(n - t)).
 $$
 
+A proof, with Mathlib's `Real.sinc` in place of this file's `sinc`, is [Proof of the Nyquist–Shannon sampling theorem](nyquist-shannon-sampling-2.md).
+
 ## Sources
 
 - C. E. Shannon, *Communication in the presence of noise*, Proc. IRE 37 (1949); H. Nyquist (1928); E. T. Whittaker (1915). Knill, *Some fundamental theorems in mathematics*, §179. Problem `nyquist_shannon_sampling` of the lean-eval benchmark.

@@ -1838,6 +1838,7 @@
   "MathlibExt/Analysis/Fourier/FourierLaplace": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Fourier–Laplace transform"},
   "MathlibExt/Analysis/Fourier/HausdorffYoungFiniteAbelian": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Hausdorff–Young inequality on finite abelian groups"},
   "MathlibExt/Analysis/Fourier/HeisenbergUncertainty": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Heisenberg uncertainty principle"},
+  "MathlibExt/Analysis/Fourier/NyquistShannon": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Nyquist–Shannon sampling theorem"},
   "MathlibExt/Analysis/Fourier/PeriodicConvolution": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Periodic convolution"},
   "MathlibExt/Analysis/Fourier/Scaling": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Fourier transform of dilations"},
   "MathlibExt/Analysis/Fourier/TorusSobolev": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Brezis–Gallouët inequality on the two-dimensional torus"},
