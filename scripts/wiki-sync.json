@@ -13927,6 +13927,8 @@
 "Cslib.SessionTypes.represent_injective": "be143c5b483eed2c",
 "Cslib.SessionTypes.represent_step": "9d1a3d7f1ce896a2",
 "Cslib.SessionTypes.represent_steps": "3e5377109115ed1b",
+"Cslib.Shor.eq_of_abs_sub_le_of_lt": "c1852bcc00a1337d",
+"Cslib.Shor.exists_convergent_eq_of_abs_sub_le": "94bd91fc375a37b5",
 "Cslib.Shor.exists_factor_of_order": "055978e42f85e808",
 "Cslib.Shor.gcd_factor_of_order": "5487a46b56270208",
 "Cslib.TimeMComplexity.ComputesInDeclaredPolyTime": "afc0ef24faf70d8f",
