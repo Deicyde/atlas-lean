@@ -55,6 +55,8 @@ for a continuous velocity.
 
 - [Tree-like paths and uniqueness of the signature](../tree-like-paths-and-uniqueness-of-the-signature/README.md):
   which paths the signature cannot tell apart.
+- [Rough paths and the extension theorem](../rough-paths-and-the-extension-theorem/README.md):
+  the signature as the extension of a multiplicative functional, and its factorial decay.
 - [Picard iteration](../../../Analysis/ordinary-differential-equations/picard-iteration/README.md):
   the Picard iterates of a linear controlled equation are the truncated signature series.
 - [Euler method](../../../Analysis/numerical-analysis/euler-method/README.md): on each step the
