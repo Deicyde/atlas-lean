@@ -5,3 +5,5 @@
 - [Absolute coefficients of the characteristic polynomial of a matroid](char-poly-abs-coeff.md)
 - [Log-concavity of the characteristic polynomial of a matroid, statement](characteristic-polynomial-log-concave.md)
 - [Adiprasito–Huh–Katz theorem (Heron–Rota–Welsh conjecture)](characteristic-polynomial-log-concave-ho.md)
+- [Coefficients $\mu_k$ of the reduced characteristic polynomial](reduced-char-poly-coeff.md)
+- [Log-concavity of the reduced characteristic polynomial](reduced-char-poly-coeff-log-concave.md)
