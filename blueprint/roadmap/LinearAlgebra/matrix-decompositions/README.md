@@ -7,6 +7,8 @@ Factorizations of matrices (singular value, polar, Schur and LU decompositions),
 - [Gaussian elimination and row echelon form](gaussian-elimination-and-row-echelon-form/README.md)
 - [LU decomposition](lu-decomposition/README.md)
 - [Singular value decomposition](singular-value-decomposition/README.md)
+- [QR factorization](qr-factorization/README.md)
+- [Linear least squares](linear-least-squares/README.md)
 - [Polar decomposition](polar-decomposition/README.md)
 - [Convergence of the Jacobi method for strictly diagonally dominant matrices](jacobi-iteration-converges.md)
 - [Rouché–Capelli theorem](rouche-capelli.md)
