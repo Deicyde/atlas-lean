@@ -1,9 +1,21 @@
 # Signature of a path (iterated integrals)
 
-For a path in `ℝ^ι` with velocity
-`v i = dXⁱ/dt`, `signature v s t w` is the iterated integral
-`S(X)^{i₁…i_k}_{s,t} = ∫_{s<t₁<⋯<t_k<t} dX^{i₁}_{t₁} ⋯ dX^{i_k}_{t_k}` along the word
-`w = [i₁, …, i_k]`, defined recursively by `S^∅_{s,t} = 1` and
-`S^{w i}_{s,t} = ∫_s^t S^w_{s,u} dXⁱ_u = ∫_s^t S^w_{s,u} vⁱ(u) du`. The signature of the path
-over `[s, t]` is the family `w ↦ signature v s t w` (Chevyrev and Kormilitzin, *A primer on the
-signature method in machine learning*, arXiv:1603.03788v2, equation (3) and Definition 1.4).
+Let $X$ be a path in $\mathbb{R}^\iota$ described by its velocity $v = (v^i)_{i \in \iota}$, so
+that $dX^i_u = v^i(u)\,du$. For real $s, t$ and a word $w = i_1 \cdots i_k$ in the letters
+$\iota$, the iterated integral of $X$ along $w$ over $[s, t]$ is
+$$S(X)^{i_1 \cdots i_k}_{s,t} = \int_{s < t_1 < \cdots < t_k < t} dX^{i_1}_{t_1} \cdots dX^{i_k}_{t_k},$$
+defined recursively by $S(X)^{\varnothing}_{s,t} = 1$ and
+$$S(X)^{w i}_{s,t} = \int_s^t S(X)^{w}_{s,u}\, dX^i_u = \int_s^t S(X)^{w}_{s,u}\, v^i(u)\, du .$$
+The signature of $X$ over $[s,t]$ is the whole family $w \mapsto S(X)^w_{s,t}$, read as the
+coefficients of the tensor series $S(X)_{s,t} = \sum_w S(X)^w_{s,t}\, e_w$; the integrals are
+oriented, so $t < s$ is allowed.
+
+In Lean, `signature v s t w` is defined for any $v$; the theorems about it assume that every
+$v^i$ is interval integrable (an absolutely continuous path) or continuous (a $C^1$ path).
+
+## Sources
+
+- I. Chevyrev and A. Kormilitzin, *A primer on the signature method in machine learning*,
+  arXiv:1603.03788v2, §1.2.1, equation (3) and Definition 1.4.
+- T. Lyons, *Rough paths, signatures and the modelling of functions on streams*, Proc. ICM 2014,
+  arXiv:1405.4537, Definition 4.5.

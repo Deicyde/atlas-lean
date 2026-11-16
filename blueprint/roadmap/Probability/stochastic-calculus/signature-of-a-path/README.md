@@ -16,30 +16,46 @@ learning*, arXiv:1603.03788v2, §1.2–1.4).
 Here paths are absolutely continuous and described by their velocity; Chen's identity and the
 piecewise-linear formula need only a locally integrable velocity, the shuffle identity is proved
 for a continuous velocity.
-- [Universal approximation by linear functionals of the signature](exists-signature-linear-approx.md)
+
+- [Signature of a path (iterated integrals)](signature.md)
+- [Zeroth term of the signature](signature-nil.md)
+- [Recursive definition of the signature](signature-concat.md)
+- [First level of the signature is the increment](signature-singleton.md)
+- [Signature of a path over a trivial interval](signature-self.md)
 - [Continuity of the iterated integrals in the upper endpoint](continuous-signature.md)
 - [Integrability of the integrand of the signature recursion](interval-integrable-signature-mul.md)
-- [Shuffle product of two words](shuffle.md)
-- [Last-letter recursion of the shuffle product](shuffle-concat-concat.md)
-- [Signature of a path (iterated integrals)](signature.md)
-- [Chen's identity](signature-chen.md)
-- [Recursive definition of the signature](signature-concat.md)
-- [Chen's identity, algebraic form](signature-eq-tensor-mul.md)
-- [Shuffle product identity (Ree)](signature-mul-signature.md)
-- [Zeroth term of the signature](signature-nil.md)
-- [Signature of a linear segment is the exponential of its increment](signature-of-eq-on-ioc.md)
-- [Signature of a piecewise-linear path](signature-piecewise-linear.md)
-- [Signature of a path over a trivial interval](signature-self.md)
-- [First level of the signature is the increment](signature-singleton.md)
-- [Exponential of a vector in the tensor series algebra](tensor-exp.md)
-- [Exponential of a scaled vector, coefficientwise](tensor-exp-smul.md)
+- [The signature solves `dS = S ⊗ dX`](has-deriv-at-signature-concat.md)
 - [Product of tensor series, coefficientwise](tensor-mul.md)
 - [Unit tensor series](tensor-one.md)
-- [The signature solves `dS = S ⊗ dX`](has-deriv-at-signature-concat.md)
-- [Truncated signature series of a linear controlled equation](signature-series.md)
-- [Picard recursion of the signature series](signature-series-succ.md)
+- [Exponential of a vector in the tensor series algebra](tensor-exp.md)
+- [Exponential of a scaled vector, coefficientwise](tensor-exp-smul.md)
+- [Chen's identity](signature-chen.md)
+- [Chen's identity, algebraic form](signature-eq-tensor-mul.md)
+- [Signature of a linear segment is the exponential of its increment](signature-of-eq-on-ioc.md)
+- [Signature of a piecewise-linear path](signature-piecewise-linear.md)
 - [Signature along a repeated letter](signature-replicate.md)
-- [Linear controlled equations are solved by the signature series](tendsto-signature-series.md)
-- [Composite linear map along a word](word-op.md)
 - [Signature of the time-reversed path over a sub-interval](signature-reverse-eq.md)
 - [Time-reversed signature is the inverse](tensor-mul-signature-reverse.md)
+- [Shuffle product of two words](shuffle.md)
+- [Last-letter recursion of the shuffle product](shuffle-concat-concat.md)
+- [Shuffle product identity (Ree)](signature-mul-signature.md)
+- [Composite linear map along a word](word-op.md)
+- [Truncated signature series of a linear controlled equation](signature-series.md)
+- [Picard recursion of the signature series](signature-series-succ.md)
+- [Linear controlled equations are solved by the signature series](tendsto-signature-series.md)
+- [Universal approximation by linear functionals of the signature](exists-signature-linear-approx.md)
+
+## Related topics
+
+- [Tree-like paths and uniqueness of the signature](../tree-like-paths-and-uniqueness-of-the-signature/README.md):
+  which paths the signature cannot tell apart.
+- [Picard iteration](../../../Analysis/ordinary-differential-equations/picard-iteration/README.md):
+  the Picard iterates of a linear controlled equation are the truncated signature series.
+- [Euler method](../../../Analysis/numerical-analysis/euler-method/README.md): on each step the
+  Euler scheme for a controlled equation uses only the first level of the signature, the
+  increment; higher-order schemes for controlled equations use the higher levels.
+- [Quadratic variation of Brownian motion](../quadratic-variation-of-brownian-motion/README.md):
+  Brownian paths have unbounded variation, so their iterated integrals are not Riemann–Stieltjes
+  integrals; a rough path supplies the second level (the Lévy area) as extra data.
+- [Itô integral](../it-integral/README.md): the stochastic integral that defines the iterated
+  integrals of Brownian motion.

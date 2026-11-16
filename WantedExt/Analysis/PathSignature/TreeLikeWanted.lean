@@ -23,11 +23,8 @@ Chen's theorem for irreducible piecewise regular paths. Boedihardjo, Geng, Lyons
 it to weakly geometric rough paths (Adv. Math. 293 (2016), arXiv:1406.7871, Theorem 1.1).
 
 We record Theorem 1 for absolutely continuous paths in `ℝ^d`, described by an integrable
-velocity, which is the setting of `MathlibExt.Analysis.PathSignature.signature`. Every
-continuous path of bounded variation is a reparametrisation of a Lipschitz (hence absolutely
-continuous) path, and both the signature and tree-likeness are unchanged by increasing
-reparametrisation, so this is Theorem 1 restricted to the parametrisations covered by
-`signature`.
+velocity, which is the setting of `MathlibExt.Analysis.PathSignature.signature`; Hambly and
+Lyons prove it for all paths of bounded variation.
 -/
 
 open MeasureTheory
