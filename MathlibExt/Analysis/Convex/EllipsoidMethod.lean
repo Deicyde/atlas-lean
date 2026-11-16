@@ -11,6 +11,7 @@ module
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.LinearAlgebra.Matrix.PosDef
 public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+public import Mathlib.Algebra.Order.Star.Real
 
 /-!
 # The ellipsoid method: the central-cut step and its volume reduction
@@ -27,11 +28,11 @@ which contains the half-ellipsoid `E(a, A) ∩ {x : cᵀ x ≤ cᵀ a}`. Since v
 like `√(det A)`, the step shrinks the volume by the factor
 `(n / (n + 1)) · (n² / (n² - 1))^((n - 1) / 2) < exp(-1 / (2 (n + 1)))`.
 
-We prove the two algebraic facts behind the volume lemma: the determinant of the updated matrix
-(by the matrix determinant lemma, using `bᵀ A⁻¹ b = 1`), the identity between the square root of
-the determinant ratio and the volume factor, and the strict bound by
-`exp(-1 / (2 (n + 1)))` (from `1 + x < eˣ` for `x ≠ 0`). Containment of the half-ellipsoid and the
-volume formula for ellipsoids are not proved here.
+We prove the containment of the half-ellipsoid (through the Sherman-Morrison formula for `A'⁻¹`)
+and the algebraic facts behind the volume lemma: the determinant of the updated matrix (by the
+matrix determinant lemma, using `bᵀ A⁻¹ b = 1`), the identity between the square root of the
+determinant ratio and the volume factor, and the strict bound by `exp(-1 / (2 (n + 1)))` (from
+`1 + x < eˣ` for `x ≠ 0`). The volume formula for ellipsoids is not proved here.
 
 Source: M. X. Goemans, *Lecture notes on the ellipsoid algorithm*, MIT 18.433 Combinatorial
 Optimization, Handout 19 (4 May 2009), Definition 7.1, equations (3)-(5), Lemma 7.1 and its proof;
@@ -223,4 +224,147 @@ theorem sqrt_detRatio_eq_volumeRatio {n : ℕ} (hn : 2 ≤ n) :
     field_simp
   rw [← hsq, Real.sqrt_sq (volumeRatio_pos hn).le]
 
+private theorem inv_symm_dot {A : Matrix (Fin n) (Fin n) ℝ} (hA : A.PosDef) (u v : Fin n → ℝ) :
+    u ⬝ᵥ (A⁻¹ *ᵥ v) = v ⬝ᵥ (A⁻¹ *ᵥ u) := by
+  have hsym : Aᵀ = A := by
+    have := hA.1.eq
+    rwa [conjTranspose_eq_transpose_of_trivial] at this
+  rw [dotProduct_mulVec, ← mulVec_transpose, transpose_nonsing_inv, hsym, dotProduct_comm]
+
+/-- **Inverse of the matrix after a central-cut step.** For `n ≥ 2`, positive definite `A` and
+`c ≠ 0`, `A'⁻¹ = (n² - 1) / n² · (A⁻¹ + 2 / (n - 1) · c cᵀ / (cᵀ A c))`, by the Sherman-Morrison
+formula with `b = A c / √(cᵀ A c)`. -/
+theorem nextMatrix_inv {A : Matrix (Fin n) (Fin n) ℝ} (hA : A.PosDef) {c : Fin n → ℝ}
+    (hc : c ≠ 0) (hn : 2 ≤ n) :
+    (nextMatrix A c)⁻¹ = ((n : ℝ) ^ 2 / ((n : ℝ) ^ 2 - 1))⁻¹ •
+      (A⁻¹ + ((2 / ((n : ℝ) - 1)) / (c ⬝ᵥ (A *ᵥ c))) • vecMulVec c c) := by
+  have hpos : 0 < c ⬝ᵥ (A *ᵥ c) := by simpa using hA.dotProduct_mulVec_pos hc
+  have hunit : IsUnit A.det := (Matrix.isUnit_iff_isUnit_det A).mp hA.isUnit
+  set s := Real.sqrt (c ⬝ᵥ (A *ᵥ c)) with hs
+  have hs0 : 0 < s := Real.sqrt_pos.mpr hpos
+  have hss : s ^ 2 = c ⬝ᵥ (A *ᵥ c) := Real.sq_sqrt hpos.le
+  have hx : (2 : ℝ) ≤ n := by exact_mod_cast hn
+  have hb : cutDirection A c = s⁻¹ • (A *ᵥ c) := rfl
+  have hAinvb : A⁻¹ *ᵥ cutDirection A c = s⁻¹ • c := by
+    rw [hb, mulVec_smul, mulVec_mulVec, nonsing_inv_mul A hunit, one_mulVec]
+  have hbc : cutDirection A c ⬝ᵥ c = s := by
+    rw [hb, smul_dotProduct, smul_eq_mul, dotProduct_comm, ← hss]
+    field_simp
+  have hAc : A *ᵥ c = s • cutDirection A c := by
+    rw [hb, smul_smul, mul_inv_cancel₀ hs0.ne', one_smul]
+  set b := cutDirection A c
+  set β : ℝ := 2 / ((n : ℝ) + 1)
+  set κ : ℝ := (2 / ((n : ℝ) - 1)) / (c ⬝ᵥ (A *ᵥ c))
+  set r : ℝ := (n : ℝ) ^ 2 / ((n : ℝ) ^ 2 - 1)
+  have hr : r ≠ 0 := by
+    have : (0 : ℝ) < (n : ℝ) ^ 2 - 1 := by nlinarith
+    positivity
+  have key : ∀ v : Fin n → ℝ,
+      (A - β • vecMulVec b b) *ᵥ (A⁻¹ *ᵥ v + κ • (vecMulVec c c *ᵥ v)) = v := by
+    intro v
+    have hbv : b ⬝ᵥ (A⁻¹ *ᵥ v) = s⁻¹ * (c ⬝ᵥ v) := by
+      rw [inv_symm_dot hA, hAinvb, dotProduct_smul, smul_eq_mul, dotProduct_comm]
+    have e1 : A *ᵥ (A⁻¹ *ᵥ v + κ • (vecMulVec c c *ᵥ v)) = v + (κ * (c ⬝ᵥ v) * s) • b := by
+      rw [mulVec_add, mulVec_mulVec, mul_nonsing_inv _ hunit, one_mulVec, vecMulVec_mulVec,
+        op_smul_eq_smul, mulVec_smul, mulVec_smul, hAc]
+      module
+    have e2 : vecMulVec b b *ᵥ (A⁻¹ *ᵥ v + κ • (vecMulVec c c *ᵥ v)) =
+        (s⁻¹ * (c ⬝ᵥ v) + κ * (c ⬝ᵥ v) * s) • b := by
+      rw [vecMulVec_mulVec, op_smul_eq_smul, dotProduct_add, hbv, vecMulVec_mulVec,
+        op_smul_eq_smul, dotProduct_smul, dotProduct_smul, smul_eq_mul, smul_eq_mul, hbc]
+      congr 1
+      ring
+    have hscalar : κ * (c ⬝ᵥ v) * s - β * (s⁻¹ * (c ⬝ᵥ v) + κ * (c ⬝ᵥ v) * s) = 0 := by
+      have hn1 : (0 : ℝ) < (n : ℝ) - 1 := by linarith
+      simp only [κ, β, ← hss]
+      field_simp
+      ring
+    rw [sub_mulVec, smul_mulVec, e1, e2,
+      show v + (κ * (c ⬝ᵥ v) * s) • b - β • (s⁻¹ * (c ⬝ᵥ v) + κ * (c ⬝ᵥ v) * s) • b =
+        v + (κ * (c ⬝ᵥ v) * s - β * (s⁻¹ * (c ⬝ᵥ v) + κ * (c ⬝ᵥ v) * s)) • b by module,
+      hscalar, zero_smul, add_zero]
+  apply inv_eq_right_inv
+  apply ext_of_mulVec_single
+  intro i
+  rw [show nextMatrix A c = r • (A - β • vecMulVec b b) from rfl, one_mulVec, ← mulVec_mulVec]
+  simp only [smul_mulVec, mulVec_smul, add_mulVec]
+  rw [key, smul_smul, inv_mul_cancel₀ hr, one_smul]
+
+/-- **The central-cut ellipsoid contains the half-ellipsoid.** For `n ≥ 2`, positive definite `A`
+and `c ≠ 0`, the ellipsoid `E(a', A')` produced by the central-cut step contains
+`E(a, A) ∩ {x : cᵀ x ≤ cᵀ a}` (Goemans, *Lecture notes on the ellipsoid algorithm*, MIT 18.433,
+2009, equations (4)-(5)). With `y = x - a`, `q = yᵀ A⁻¹ y ≤ 1` and `t = cᵀ y / √(cᵀ A c) ∈ [-1, 0]`,
+the quadratic form of `E(a', A')` at `x` equals `(q + 2 t (t + 1) / (n - 1) + 1 / (n² - 1)) / r`
+with `r = n² / (n² - 1)`, which is at most `1`. -/
+theorem halfEllipsoid_subset_nextEllipsoid (hn : 2 ≤ n) {A : Matrix (Fin n) (Fin n) ℝ}
+    (hA : A.PosDef) (a : Fin n → ℝ) {c : Fin n → ℝ} (hc : c ≠ 0) :
+    ellipsoid a A ∩ {x | c ⬝ᵥ x ≤ c ⬝ᵥ a} ⊆ ellipsoid (nextCenter a A c) (nextMatrix A c) := by
+  rintro x ⟨hx, hcx⟩
+  simp only [ellipsoid, Set.mem_ofPred_eq] at hx hcx ⊢
+  rw [nextMatrix_inv hA hc hn]
+  have hpos : 0 < c ⬝ᵥ (A *ᵥ c) := by simpa using hA.dotProduct_mulVec_pos hc
+  have hunit : IsUnit A.det := (Matrix.isUnit_iff_isUnit_det A).mp hA.isUnit
+  set s := Real.sqrt (c ⬝ᵥ (A *ᵥ c)) with hs
+  have hs0 : 0 < s := Real.sqrt_pos.mpr hpos
+  have hss : s ^ 2 = c ⬝ᵥ (A *ᵥ c) := Real.sq_sqrt hpos.le
+  have hN : (2 : ℝ) ≤ n := by exact_mod_cast hn
+  have hbb := cutDirection_inv_norm hA hc
+  have hb : cutDirection A c = s⁻¹ • (A *ᵥ c) := rfl
+  have hAinvb : A⁻¹ *ᵥ cutDirection A c = s⁻¹ • c := by
+    rw [hb, mulVec_smul, mulVec_mulVec, nonsing_inv_mul A hunit, one_mulVec]
+  have hcb : c ⬝ᵥ cutDirection A c = s := by
+    rw [hb, dotProduct_smul, smul_eq_mul, ← hss]
+    field_simp
+  have hxa : x - nextCenter a A c = (x - a) + ((n : ℝ) + 1)⁻¹ • cutDirection A c := by
+    unfold nextCenter
+    abel
+  rw [hxa]
+  set b := cutDirection A c
+  set y := x - a
+  set k : ℝ := ((n : ℝ) + 1)⁻¹
+  set γ : ℝ := 2 / ((n : ℝ) - 1)
+  set r : ℝ := (n : ℝ) ^ 2 / ((n : ℝ) ^ 2 - 1)
+  set q := y ⬝ᵥ (A⁻¹ *ᵥ y)
+  set t := s⁻¹ * (c ⬝ᵥ y)
+  have hyb : y ⬝ᵥ (A⁻¹ *ᵥ b) = t := by
+    rw [hAinvb, dotProduct_smul, smul_eq_mul, dotProduct_comm]
+  have hby : b ⬝ᵥ (A⁻¹ *ᵥ y) = t := by rw [inv_symm_dot hA, hyb]
+  have hcy : c ⬝ᵥ y = s * t := by
+    simp only [t]; field_simp
+  have hval : (y + k • b) ⬝ᵥ ((r⁻¹ • (A⁻¹ + (γ / (c ⬝ᵥ (A *ᵥ c))) • vecMulVec c c)) *ᵥ
+      (y + k • b)) = r⁻¹ * (q + 2 * k * t + k ^ 2 + γ * (t + k) ^ 2) := by
+    simp only [smul_mulVec, add_mulVec, vecMulVec_mulVec, op_smul_eq_smul, mulVec_add,
+      mulVec_smul, dotProduct_add, add_dotProduct, dotProduct_smul, smul_dotProduct, smul_eq_mul,
+      hyb, hby, hbb, hcy, hcb]
+    rw [dotProduct_comm b c, hcb, dotProduct_comm y c, hcy, ← hss]
+    field_simp
+    ring
+  rw [hval]
+  -- Cauchy-Schwarz in the A⁻¹ inner product
+  have hCS : t ^ 2 ≤ q := by
+    have h0 := (hA.inv).posSemidef.dotProduct_mulVec_nonneg (y - t • b)
+    simp only [star_trivial, mulVec_sub, mulVec_smul, dotProduct_sub, sub_dotProduct,
+      dotProduct_smul, smul_dotProduct, smul_eq_mul, hyb, hby, hbb] at h0
+    nlinarith
+  have ht0 : t ≤ 0 := by
+    have : c ⬝ᵥ y ≤ 0 := by simp only [y, dotProduct_sub]; linarith
+    simp only [t]
+    exact mul_nonpos_of_nonneg_of_nonpos (inv_nonneg.mpr hs0.le) this
+  have ht1 : -1 ≤ t := by nlinarith
+  have hN1 : (0 : ℝ) < (n : ℝ) - 1 := by linarith
+  have hN2 : (0 : ℝ) < (n : ℝ) ^ 2 - 1 := by nlinarith
+  have hrpos : 0 < r := by positivity
+  have expand : q + 2 * k * t + k ^ 2 + γ * (t + k) ^ 2 =
+      q + γ * (t * (t + 1)) + 1 / ((n : ℝ) ^ 2 - 1) := by
+    simp only [k, γ]
+    field_simp
+    ring
+  have hr1 : r = 1 + 1 / ((n : ℝ) ^ 2 - 1) := by
+    simp only [r]; field_simp; ring
+  have hγ : 0 ≤ γ := by positivity
+  have htt : t * (t + 1) ≤ 0 := mul_nonpos_of_nonpos_of_nonneg ht0 (by linarith)
+  rw [inv_mul_le_iff₀ hrpos, expand, mul_one, hr1]
+  nlinarith [mul_nonpos_of_nonneg_of_nonpos hγ htt]
+
 end MathlibExt.Analysis.Convex.EllipsoidMethod
+

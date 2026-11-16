@@ -6,13 +6,14 @@ $$
 b = \frac{A c}{\sqrt{c^\top A c}}, \qquad a' = a - \frac{1}{n+1}\, b, \qquad A' = \frac{n^2}{n^2 - 1}\Bigl(A - \frac{2}{n+1}\, b b^\top\Bigr).
 $$
 
-Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant of the update gives the volume factor $\frac{n}{n+1}\bigl(\frac{n^2}{n^2-1}\bigr)^{(n-1)/2} < e^{-1/(2(n+1))}$, so after $k$ steps the volume has dropped by $e^{-k/(2(n+1))}$. Khachiyan (1979) used this to show that linear programming is in P. Grötschel, Lovász and Schrijver observed that the method only needs a *separation oracle*: for well-described polyhedra, separation and optimisation are polynomial-time equivalent, which turns polyhedral descriptions with exponentially many inequalities (matchings, matroids, stable sets of perfect graphs through the theta function) into polynomial algorithms. The update, its determinant and the volume bound are proved here; the containment of the half-ellipsoid and the volume formula are recorded as wanted, and the equivalence of separation and optimisation, which needs oracle Turing machines, is not formalised.
+Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant of the update gives the volume factor $\frac{n}{n+1}\bigl(\frac{n^2}{n^2-1}\bigr)^{(n-1)/2} < e^{-1/(2(n+1))}$, so after $k$ steps the volume has dropped by $e^{-k/(2(n+1))}$. Khachiyan (1979) used this to show that linear programming is in P. Grötschel, Lovász and Schrijver observed that the method only needs a *separation oracle*: for well-described polyhedra, separation and optimisation are polynomial-time equivalent, which turns polyhedral descriptions with exponentially many inequalities (matchings, matroids, stable sets of perfect graphs through the theta function) into polynomial algorithms. The update, the containment of the half-ellipsoid, the determinant of the update and the volume bound are proved here; the volume formula $\mathrm{vol}\, E(a, A) = \sqrt{\det A}\, \mathrm{vol}\, E(0, I)$ is recorded as wanted, and the equivalence of separation and optimisation, which needs oracle Turing machines, is not formalised.
 
 - [Ellipsoid with centre $a$ and matrix $A$](ellipsoid.md)
 - [Direction of a central-cut step](cut-direction.md)
 - [Centre after a central-cut step](next-center.md)
 - [Matrix after a central-cut step](next-matrix.md)
 - [The cut direction has unit $A^{-1}$-norm](cut-direction-inv-norm.md)
+- [Inverse of the matrix after a central-cut step](next-matrix-inv.md)
 - [Determinant after a central-cut step](det-next-matrix.md)
 - [Volume factor of a central-cut ellipsoid step](volume-ratio.md)
 - [The volume factor is positive](volume-ratio-pos.md)

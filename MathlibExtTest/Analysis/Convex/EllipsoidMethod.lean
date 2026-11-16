@@ -39,3 +39,15 @@ example : (nextMatrix (1 : Matrix (Fin 2) (Fin 2) ℝ) (Pi.single 0 1)).det =
 example : Real.sqrt (((2 : ℝ) ^ 2 / ((2 : ℝ) ^ 2 - 1)) ^ 2 * ((2 - 1) / (2 + 1))) =
     volumeRatio 2 := by
   simpa using sqrt_detRatio_eq_volumeRatio (n := 2) le_rfl
+
+/-- The containment applies to the unit disc and the cut `x₀ ≤ 0`. -/
+example : ellipsoid 0 (1 : Matrix (Fin 2) (Fin 2) ℝ) ∩
+    {x | (Pi.single 0 1 : Fin 2 → ℝ) ⬝ᵥ x ≤ (Pi.single 0 1 : Fin 2 → ℝ) ⬝ᵥ 0} ⊆
+    ellipsoid (nextCenter 0 1 (Pi.single 0 1)) (nextMatrix 1 (Pi.single 0 1)) :=
+  halfEllipsoid_subset_nextEllipsoid le_rfl Matrix.PosDef.one 0
+    (by intro h; simpa using congrFun h 0)
+
+/-- The centre of the unit disc lies in the half-disc, so the hypotheses are jointly satisfiable. -/
+example : (0 : Fin 2 → ℝ) ∈ ellipsoid 0 (1 : Matrix (Fin 2) (Fin 2) ℝ) ∩
+    {x | (Pi.single 0 1 : Fin 2 → ℝ) ⬝ᵥ x ≤ (Pi.single 0 1 : Fin 2 → ℝ) ⬝ᵥ 0} := by
+  simp [ellipsoid]
