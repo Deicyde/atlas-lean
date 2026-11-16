@@ -3074,6 +3074,7 @@
   "MathlibExt/LinearAlgebra/Matrix/HadamardDeterminant": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Hadamard's inequality and determinant bounds for positive semidefinite matrices"},
   "MathlibExt/LinearAlgebra/Matrix/HadamardZeroOneDeterminantBound": {"to": "LinearAlgebra/special-matrices", "title": "Maximal determinants of zero-one matrices"},
   "MathlibExt/LinearAlgebra/Matrix/Hankel": {"to": "LinearAlgebra/special-matrices", "title": "Hankel matrices"},
+  "MathlibExt/LinearAlgebra/Matrix/HermitianTraceExp": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Eigenvalues and spectral norm of Hermitian matrices"},
   "MathlibExt/LinearAlgebra/Matrix/JordanNormalForm": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Jordan normal form"},
   "MathlibExt/LinearAlgebra/Matrix/LUDecomposition": {"to": "LinearAlgebra/matrix-decompositions", "title": "LU decomposition"},
   "MathlibExt/LinearAlgebra/Matrix/LogDetTrace": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Log-determinant trace inequality"},
