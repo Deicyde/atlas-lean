@@ -20,13 +20,14 @@ set_option autoImplicit false
 
 open Matrix
 open MathlibExt.Probability.Statistics.KernelPCA
+open MathlibExt.Probability.Statistics
 
 namespace MathlibExtTest.Probability.Statistics.KernelPCA
 
 /-- The Gram matrix of the identity feature map on `ℝ` at the two points `1, 1`. -/
 theorem gram_ones : gram (fun t : ℝ => t) (fun _ : Fin 2 => (1 : ℝ)) = Matrix.of fun _ _ => 1 := by
   ext i j
-  simp [gram]
+  simp [KernelPCA.gram]
 
 /-- Non-vacuity of the reduction: `α = (1, 1)` solves `M λ α = K α` with `M = 2`, `λ = 1`, so
 `V = Φ(1) + Φ(1) = 2` is an eigenvector of the covariance operator with eigenvalue `1`. -/
@@ -59,7 +60,7 @@ example : centredFeature (fun t : ℝ => t) ![(1 : ℝ), 3] 0 = -1 := by
 
 /-- The centred Gram matrix formula on the same data: `K̃₀₁ = ⟪-1, 1⟫ = -1`. -/
 example : gram (centredFeature (fun t : ℝ => t) ![(1 : ℝ), 3]) id 0 1 = -1 := by
-  simp [gram, centredFeature, Fin.sum_univ_two]
+  simp [KernelPCA.gram, centredFeature, Fin.sum_univ_two]
   norm_num
 
 end MathlibExtTest.Probability.Statistics.KernelPCA

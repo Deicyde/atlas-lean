@@ -9,7 +9,7 @@ nondegenerate Gaussian laws.
 
 In causal terms: from the joint law of $(X, Y)$ alone, the direction $X \to Y$ of a linear structural equation with independent noise can be recovered unless both the cause and the noise are Gaussian; together with the converse ([the linear Gaussian case](exists-indep-fun-backward-of-has-gaussia.md)) this is the characterization of Proposition 13. Peters et al. present it (Section 2.3) among the restrictions of structural equation models that make the graph identifiable, before turning to nonlinear additive noise models, whose bivariate identifiability (Hoyer et al. 2009) is their Theorem 20. The proof they point to uses the Darmois–Skitovich theorem: if two linear combinations of independent random variables, all of whose coefficients are nonzero, are independent, then the variables are Gaussian.
 
-The statement assumes $X$ and $N$ not almost surely constant. Mathlib's `gaussianReal m 0` is a point mass, and if $X$ is almost surely constant then $\psi = 0$ gives a backward model for every noise law, so without this assumption the conclusion would fail under Mathlib's conventions.
+The statement assumes $X$ and $N$ not almost surely constant; Proposition 13 tacitly works with nondegenerate variables. The assumption is needed for both: if $X$ is almost surely constant, $\psi = 0$ gives a backward model for every law of $N$, and if $N$ is almost surely constant, $\psi = 1/\varphi$ makes $X - \psi Y = -N/\varphi$ constant, a backward model for every law of $X$.
 
 ## Background
 

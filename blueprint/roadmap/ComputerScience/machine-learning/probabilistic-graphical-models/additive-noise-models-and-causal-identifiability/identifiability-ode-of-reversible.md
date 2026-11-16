@@ -1,5 +1,6 @@
 # Reversible additive noise models satisfy the identifiability differential equation
 
+**Reversible additive noise models satisfy the identifiability differential equation**
 (Peters, Mooij, Janzing and Schölkopf, *Causal discovery with continuous additive noise models*,
 JMLR 15 (2014), equation (7), Condition 19 and the proof of Theorem 20 in Appendix A.5, after
 Hoyer et al. 2009). Let `f, g, ν, ξ, ν̃, η : ℝ → ℝ` be three times continuously differentiable,

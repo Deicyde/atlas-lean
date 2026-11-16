@@ -25,9 +25,10 @@ direction is identifiable from observational data. It is the bivariate case of t
 identifiability of linear non-Gaussian acyclic models (LiNGAM, Shimizu et al. 2006) and rests on
 the Darmois–Skitovich theorem, which is not in Mathlib.
 
-The nondegeneracy hypotheses are explicit here. Mathlib's `gaussianReal m 0` is the Dirac
-mass at `m`, and when `X` is almost surely constant the backward model with `ψ = 0` exists for
-every noise law, so the statement is made for `X` and `N` not almost surely constant.
+The nondegeneracy hypotheses are explicit here; Proposition 13 tacitly works with nondegenerate
+variables. They are needed for both variables: if `X` is almost surely constant, `ψ = 0` gives a
+backward model for every law of `N`, and if `N` is almost surely constant, `ψ = 1/φ` makes
+`X - ψ Y = -N/φ` constant, a backward model for every law of `X`.
 
 Reference: J. Peters, J. M. Mooij, D. Janzing and B. Schölkopf, "Causal discovery with
 continuous additive noise models", *J. Mach. Learn. Res.* **15** (2014), 2009–2053,

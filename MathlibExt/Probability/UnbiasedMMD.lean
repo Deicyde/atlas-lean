@@ -52,13 +52,6 @@ noncomputable def mmdUnbiasedSq {m n : ℕ} (x : Fin m → X) (y : Fin n → X) 
 
 variable {H}
 
-/-- **Coordinates of an i.i.d. sample.** Each coordinate `xᵢ` of an i.i.d. sample from `P`
-has law `P` (the setting of Problem 1 of Gretton et al., *A kernel two-sample test*, JMLR 13
-(2012)). -/
-theorem measurePreserving_eval_pi {m : ℕ} (μ : Measure X) [IsProbabilityMeasure μ] (i : Fin m) :
-    MeasurePreserving (Function.eval i) (Measure.pi fun _ : Fin m => μ) μ :=
-  ⟨measurable_pi_apply i, by rw [Measure.pi_map_eval]; simp⟩
-
 /-- **Two coordinates of an i.i.d. sample are independent copies.** For `i ≠ j`, the pair
 `(xᵢ, xⱼ)` of an i.i.d. sample from `P` has law `P ⊗ P` (the independent copies `x, x'` of
 Gretton et al., *A kernel two-sample test*, JMLR 13 (2012), Lemma 6). -/
@@ -74,7 +67,8 @@ theorem measurePreserving_pair_pi {m : ℕ} (μ : Measure X) [IsProbabilityMeasu
   refine ⟨(measurable_pi_apply i).prodMk (measurable_pi_apply j), ?_⟩
   rw [(indepFun_iff_map_prod_eq_prod_map_map (measurable_pi_apply i).aemeasurable
     (measurable_pi_apply j).aemeasurable).1 h2]
-  rw [(measurePreserving_eval_pi μ i).map_eq, (measurePreserving_eval_pi μ j).map_eq]
+  rw [(measurePreserving_eval (fun _ => μ) i).map_eq,
+    (measurePreserving_eval (fun _ => μ) j).map_eq]
 
 variable {μ ν : Measure X} [IsProbabilityMeasure μ] [IsProbabilityMeasure ν]
 
@@ -118,7 +112,7 @@ theorem integral_mmdUnbiasedSq {m n : ℕ} (hm : 2 ≤ m) (hn : 2 ≤ n)
     intro i j
     have hp : MeasurePreserving (fun z : (Fin m → X) × (Fin n → X) => (z.1 i, z.2 j)) R
         (μ.prod ν) :=
-      ((measurePreserving_eval_pi μ i).prod (measurePreserving_eval_pi ν j))
+      ((measurePreserving_eval (fun _ => μ) i).prod (measurePreserving_eval (fun _ => ν) j))
     exact integral_kernel_comp hμ hν hp
   set a := ∫ z, kernelValue H z.1 z.2 ∂(μ.prod μ)
   set b := ∫ z, kernelValue H z.1 z.2 ∂(ν.prod ν)

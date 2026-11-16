@@ -13,6 +13,7 @@ public import Mathlib.MeasureTheory.Function.L2Space
 public import Mathlib.MeasureTheory.Integral.Prod
 public import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
 public import MathlibExt.Analysis.InnerProductSpace.PositiveDefiniteKernel
+public import MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem
 
 /-!
 # Kernel mean embeddings and the maximum mean discrepancy
@@ -48,7 +49,7 @@ integrable, the *kernel mean embedding* is `μ_P = ∫ φ(x) dP(x) ∈ H` (`mean
 
 @[expose] public section
 
-open MeasureTheory RKHS MathlibExt.Analysis.InnerProductSpace
+open MeasureTheory RKHS MathlibExt.Analysis.InnerProductSpace MathlibExt.Analysis
 open scoped InnerProductSpace
 
 namespace MathlibExt.Probability.KernelMeanEmbedding
@@ -100,6 +101,15 @@ Section 7.3, Proposition 7.3). -/
 theorem isPosDefKernel_kernelValue :
     PositiveDefiniteKernel.IsPosDefKernel (kernelValue H : X → X → ℝ) :=
   PositiveDefiniteKernel.isPosDefKernel_of_eq_inner (featureMap H) fun _ _ => rfl
+
+/-- **The kernel Gram matrix of the representer theorem.** The Gram matrix
+`RepresenterTheorem.kernelGram` used for kernel ridge regression has entries
+`k(xᵢ, xⱼ) = kernelValue H xᵢ xⱼ` (Gretton et al., *A kernel two-sample test*, JMLR 13 (2012),
+Section 2.2: `⟪φ(x), φ(y)⟫ = k(x, y)`). -/
+theorem kernelGram_apply {n : ℕ} (x : Fin n → X) (i j : Fin n) :
+    FunctionalAnalysis.RepresenterTheorem.kernelGram H x i j = kernelValue H (x i) (x j) := by
+  rw [FunctionalAnalysis.RepresenterTheorem.kernelGram, Matrix.of_apply, kernel_apply,
+    ContinuousLinearMap.comp_apply, adjoint_kerFun, ← featureMap, featureMap_apply]
 
 variable [MeasurableSpace X]
 
@@ -192,6 +202,28 @@ theorem mmd_eq_norm_sub {μ ν : Measure X} (hμ : Integrable (featureMap H) μ)
     rw [inner_sub_right, inner_meanEmbedding hμ, inner_meanEmbedding hν]
   rw [mmd, h]
   exact (isGreatest_inner_closedBall _).csSup_eq
+
+/-- **The MMD vanishes on the diagonal** (Gretton et al., *A kernel two-sample test*, JMLR 13
+(2012), Section 2.2; pseudometric axioms as in its footnote 3). If the feature map is Bochner
+integrable for `P`, then `MMD(P, P) = 0`. -/
+theorem mmd_self {μ : Measure X} (hμ : Integrable (featureMap H) μ) : mmd H μ μ = 0 := by
+  rw [mmd_eq_norm_sub hμ hμ, sub_self, norm_zero]
+
+/-- **Symmetry of the MMD** (Gretton et al., *A kernel two-sample test*, JMLR 13 (2012),
+Section 2.2; pseudometric axioms as in its footnote 3). If the feature map is Bochner integrable for
+`P` and `Q`, then `MMD(P, Q) = MMD(Q, P)`. -/
+theorem mmd_comm {μ ν : Measure X} (hμ : Integrable (featureMap H) μ)
+    (hν : Integrable (featureMap H) ν) : mmd H μ ν = mmd H ν μ := by
+  rw [mmd_eq_norm_sub hμ hν, mmd_eq_norm_sub hν hμ, norm_sub_rev]
+
+/-- **Triangle inequality for the MMD** (Gretton et al., *A kernel two-sample test*, JMLR 13
+(2012), Section 2.2; pseudometric axioms as in its footnote 3). If the feature map is Bochner
+integrable for `P`, `Q` and `R`, then `MMD(P, R) ≤ MMD(P, Q) + MMD(Q, R)`. -/
+theorem mmd_le_add {μ ν ρ : Measure X} (hμ : Integrable (featureMap H) μ)
+    (hν : Integrable (featureMap H) ν) (hρ : Integrable (featureMap H) ρ) :
+    mmd H μ ρ ≤ mmd H μ ν + mmd H ν ρ := by
+  rw [mmd_eq_norm_sub hμ hρ, mmd_eq_norm_sub hμ hν, mmd_eq_norm_sub hν hρ]
+  exact norm_sub_le_norm_sub_add_norm_sub _ _ _
 
 /-- **Inner product of two mean embeddings.** If the feature map is Bochner integrable for `P`
 and `Q`, then `⟪μ_P, μ_Q⟫ = ∫∫ k(x, y) dP(x) dQ(y)` (Gretton et al., *A kernel two-sample
@@ -317,9 +349,11 @@ def IsCharacteristic : Prop :=
     Integrable (featureMap H) μ → Integrable (featureMap H) ν →
     meanEmbedding H μ = meanEmbedding H ν → μ = ν
 
-/-- **The MMD of a characteristic kernel is a metric criterion** (Gretton et al., *A kernel
-two-sample test*, JMLR 13 (2012), Section 2.2). For a characteristic kernel and probability
-measures with integrable feature map, `MMD(P, Q) = 0` if and only if `P = Q`. -/
+/-- **The MMD of a characteristic kernel separates probability measures** (Gretton et al.,
+*A kernel two-sample test*, JMLR 13 (2012), Section 2.2). For a characteristic kernel and
+probability measures with integrable feature map, `MMD(P, Q) = 0` if and only if `P = Q`. For
+every kernel the MMD is a pseudometric on such measures; it is a metric exactly when the kernel
+is characteristic. -/
 theorem mmd_eq_zero_iff_of_isCharacteristic (hH : IsCharacteristic H) {μ ν : Measure X}
     [IsProbabilityMeasure μ] [IsProbabilityMeasure ν] (hμ : Integrable (featureMap H) μ)
     (hν : Integrable (featureMap H) ν) : mmd H μ ν = 0 ↔ μ = ν := by

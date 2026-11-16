@@ -11,6 +11,7 @@ module
 public import Mathlib.Analysis.InnerProductSpace.Basic
 public import Mathlib.Data.Matrix.Mul
 public import Mathlib.LinearAlgebra.Span.Defs
+public import Mathlib.Analysis.InnerProductSpace.GramMatrix
 
 /-!
 # Kernel principal component analysis
@@ -64,9 +65,25 @@ noncomputable def covOp (Φ : X → F) (x : Fin M → X) (V : F) : F :=
 
 /-- **Kernel Gram matrix** (Schölkopf, Smola and Müller, *Nonlinear component analysis as a
 kernel eigenvalue problem*, Neural Comput. 10 (1998), equation (2.10)): `K i j = ⟪Φ(xᵢ), Φ(xⱼ)⟫`,
-the kernel `k(xᵢ, xⱼ)`. -/
+the kernel `k(xᵢ, xⱼ)`. It agrees with Mathlib's `Matrix.gram` (`gram_eq_matrixGram`). -/
 def gram (Φ : X → F) (x : Fin M → X) : Matrix (Fin M) (Fin M) ℝ :=
   Matrix.of fun i j => ⟪Φ (x i), Φ (x j)⟫_ℝ
+
+/-- **The kernel PCA Gram matrix is Mathlib's Gram matrix.** `gram Φ x` is
+`Matrix.gram ℝ (fun i => Φ (xᵢ))`, the matrix of inner products of the feature vectors
+(Schölkopf, Smola and Müller, *Nonlinear component analysis as a kernel eigenvalue problem*,
+Neural Comput. 10 (1998), equation (2.10)); in particular it is positive semidefinite. -/
+theorem gram_eq_matrixGram (Φ : X → F) (x : Fin M → X) :
+    gram Φ x = Matrix.gram ℝ (fun i => Φ (x i)) :=
+  rfl
+
+/-- **The kernel PCA Gram matrix is positive semidefinite**, as a Gram matrix of feature
+vectors (Schölkopf, Smola and Müller, *Nonlinear component analysis as a kernel eigenvalue
+problem*, Neural Comput. 10 (1998), equations (2.10) and (2.12): the eigenvalues `M λ` of `K`
+are nonnegative). -/
+theorem posSemidef_gram (Φ : X → F) (x : Fin M → X) : (gram Φ x).PosSemidef := by
+  rw [gram_eq_matrixGram]
+  exact Matrix.posSemidef_gram ℝ _
 
 /-- **Kernel expansion in feature space** (Schölkopf, Smola and Müller, *Nonlinear component
 analysis as a kernel eigenvalue problem*, Neural Comput. 10 (1998), equation (2.8)):

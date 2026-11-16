@@ -30,7 +30,8 @@ embeddings when `Λ` misses an open set (Lemma 16). Neither step is in Mathlib o
 
 For a bounded continuous kernel every Borel probability measure has a Bochner integrable feature
 map, so `KernelMeanEmbedding.IsCharacteristic` (injectivity on probability measures with
-integrable feature map) is the paper's notion here.
+integrable feature map) is the paper's notion here. The dimension is `d ≥ 1`: on the one-point
+space `ℝ^0` every kernel is characteristic, while the zero measure has empty support.
 
 Reference: B. K. Sriperumbudur, A. Gretton, K. Fukumizu, B. Schölkopf and G. R. G. Lanckriet,
 "Hilbert space embeddings and metrics on probability measures", *J. Mach. Learn. Res.* **11**
@@ -46,12 +47,14 @@ namespace MathlibExt.Probability.TranslationInvariantCharacteristicKernelWanted
 
 /-- **Characterization of characteristic translation-invariant kernels** (Sriperumbudur,
 Gretton, Fukumizu, Schölkopf and Lanckriet, *Hilbert space embeddings and metrics on probability
-measures*, JMLR 11 (2010), Theorem 9). Let `H` be a real RKHS on `ℝ^d` whose kernel is
-`k(x, y) = ψ(x - y)` with `ψ(x) = ∫ exp(-i xᵀω) dΛ(ω)` for a finite Borel measure `Λ`, so that
-`ψ` is a bounded continuous real positive-definite function (equation (11)). Then `k` is
-characteristic if and only if the support of `Λ` is all of `ℝ^d`. -/
-theorem_wanted isCharacteristic_iff_support_eq_univ {d : ℕ} {H : Type*} [NormedAddCommGroup H]
-    [InnerProductSpace ℝ H] [CompleteSpace H] [RKHS ℝ H (EuclideanSpace ℝ (Fin d)) ℝ]
+measures*, JMLR 11 (2010), Theorem 9). Let `d ≥ 1` and let `H` be a real RKHS on `ℝ^d`
+whose kernel is `k(x, y) = ψ(x - y)` with `ψ(x) = ∫ exp(-i xᵀω) dΛ(ω)` for a finite Borel
+measure `Λ`, so that `ψ` is a bounded continuous real positive-definite function
+(equation (11)). Then `k` is characteristic if and only if the support of `Λ` is all of
+`ℝ^d`. -/
+theorem_wanted isCharacteristic_iff_support_eq_univ {d : ℕ} (hd : 0 < d) {H : Type*}
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
+    [RKHS ℝ H (EuclideanSpace ℝ (Fin d)) ℝ]
     (Λ : Measure (EuclideanSpace ℝ (Fin d))) [IsFiniteMeasure Λ]
     (hk : ∀ x y : EuclideanSpace ℝ (Fin d), (kernelValue H x y : ℂ) =
       ∫ ω, Complex.exp (-((⟪x - y, ω⟫_ℝ : ℝ) : ℂ) * Complex.I) ∂Λ) :

@@ -12,6 +12,7 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 - [Kernel functions are feature maps](feature-map-apply.md)
 - [Symmetry of the kernel](kernel-value-comm.md)
 - [The kernel of an RKHS is a positive-definite kernel](is-pos-def-kernel-kernel-value.md)
+- [The kernel Gram matrix of the representer theorem](kernel-gram-apply.md)
 - [Norm of a feature map](norm-feature-map.md)
 - [Operator-valued and scalar kernels](kernel-eq-smul.md)
 - [Continuity of the feature map](continuous-feature-map-of-continuous-ker.md)
@@ -30,9 +31,14 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 
 ## The maximum mean discrepancy
 
+For every kernel the MMD is a pseudometric on probability measures with integrable feature map: it vanishes on the diagonal, is symmetric and satisfies the triangle inequality, because it is a distance between embeddings. It is a metric, $\mathrm{MMD}(P, Q) = 0 \Rightarrow P = Q$, exactly when the kernel is characteristic (below).
+
 - [Maximum mean discrepancy over the unit ball of an RKHS](mmd.md)
 - [The unit ball attains the norm of a vector](is-greatest-inner-closed-ball.md)
 - [The MMD is the distance between mean embeddings](mmd-eq-norm-sub.md)
+- [The MMD vanishes on the diagonal](mmd-self.md)
+- [Symmetry of the MMD](mmd-comm.md)
+- [Triangle inequality for the MMD](mmd-le-add.md)
 - [Population MMD in terms of the kernel](mmd-sq-eq.md)
 
 ## Empirical estimates
@@ -44,14 +50,13 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 - [Inner product of empirical mean embeddings](inner-empirical-embedding-empirical-embe.md)
 - [The biased empirical MMD as a V-statistic](mmd-biased-sq-eq.md)
 - [Unbiased empirical estimate of the squared MMD](mmd-unbiased-sq.md)
-- [Coordinates of an i.i.d. sample](measure-preserving-eval-pi.md)
 - [Two coordinates of an i.i.d. sample are independent copies](measure-preserving-pair-pi.md)
 - [The unbiased MMD statistic is unbiased](integral-mmd-unbiased-sq.md)
 
 ## Characteristic and universal kernels
 
 - [Characteristic kernel](is-characteristic.md)
-- [The MMD of a characteristic kernel is a metric criterion](mmd-eq-zero-iff-of-is-characteristic.md)
+- [The MMD of a characteristic kernel separates probability measures](mmd-eq-zero-iff-of-is-characteristic.md)
 - [The MMD of a universal kernel characterizes distributions](mmd-eq-zero-iff-of-universal.md)
 - [Universal kernels are characteristic](is-characteristic-of-universal.md)
 - [Characterization of characteristic translation-invariant kernels](is-characteristic-iff-support-eq-univ.md)
@@ -62,3 +67,4 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 - [Representer theorem](../../../Analysis/hilbert-spaces/representer-theorem/README.md): the same reproducing property, $f(x) = \langle f, k(\cdot, x) \rangle$, applied to empirical risks instead of expectations.
 - [Total variation distance](../total-variation-distance/README.md): for probability measures, twice the total variation distance $\sup_B |P(B) - Q(B)|$ is the integral probability metric of the measurable functions with $|f| \le 1$, where the MMD uses the unit ball of an RKHS.
 - [Bochner's theorem](../../characteristic-functions/bochner-s-theorem/README.md): positive-definite continuous functions on $\mathbb{R}$ are characteristic functions of finite measures; on $\mathbb{R}^d$ this is the spectral measure $\Lambda$ of a translation-invariant kernel, whose support decides whether the kernel is characteristic.
+- [Random Fourier features](../../../ComputerScience/machine-learning/supervised-learning/random-fourier-features/README.md): Monte Carlo features for shift-invariant kernels, sampled from the same spectral measure $\Lambda$ whose support decides whether the kernel is characteristic.

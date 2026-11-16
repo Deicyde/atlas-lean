@@ -6,6 +6,8 @@ Kernel PCA (Schölkopf, Smola and Müller 1998) is principal component analysis 
 
 - [Covariance operator in feature space](cov-op.md)
 - [Kernel Gram matrix](gram.md)
+- [The kernel PCA Gram matrix is Mathlib's Gram matrix](gram-eq-matrix-gram.md)
+- [The kernel PCA Gram matrix is positive semidefinite](pos-semidef-gram.md)
 - [Kernel expansion in feature space](expansion.md)
 - [Inner products of a kernel expansion](inner-expansion-left.md)
 - [Feature vectors against a kernel expansion](inner-feature-map-expansion.md)
