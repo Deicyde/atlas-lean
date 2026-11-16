@@ -48,7 +48,7 @@ theorem commMatrix_eqFn (n : ℕ) : commMatrix ℚ (eqFn n) = 1 := by
 example (n : ℕ) : n ≤ commComplexity (eqFn n) := by
   have h := log_rank_le_commComplexity ℚ (eqFn n)
   rwa [commMatrix_eqFn, Matrix.rank_one, Fintype.card_fun, Fintype.card_bool, Fintype.card_fin,
-    Nat.log_pow (by norm_num)] at h
+    Nat.clog_pow _ _ (by norm_num)] at h
 
 /-- Equality of two-bit strings needs exactly three bits. -/
 example : commComplexity (eqFn 2) = 3 := commComplexity_eqFn (by norm_num)

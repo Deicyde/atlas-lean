@@ -17,6 +17,7 @@ public import MathlibExt.Computability.CommunicationComplexity.Minimax
 namespace MathlibExtTest.Computability.CommunicationComplexity.Minimax
 
 open MathlibExt.Computability.CommunicationComplexity Convexity
+open MathlibExt.Computability.CommunicationComplexity.Protocol
 
 /-- Equality of one-bit strings: error `1 / 2` with two bits of randomized communication. -/
 example : randComplexity (eqFn 1) (1 / 2) ≤ 2 := by
@@ -46,5 +47,44 @@ example : (eqHashProtocol 1 1).toRandomized.error (eqFn 1) (fun _ => false) (fun
   rw [PublicCoinProtocol.error_toRandomized, errorProb_eqHashProtocol_of_ne]
   · norm_num
   · intro h; simpa using congrFun h 0
+
+/-- With error `0` every protocol in the support of a randomized protocol is exact. -/
+theorem computes_of_error_eq_zero {X Y : Type*} {f : X → Y → Bool} (P : RandomizedProtocol X Y)
+    (h : ∀ x y, P.error f x y ≤ 0) {p : Protocol X Y} (hp : p ∈ P.weights.support) :
+    p.Computes f := by
+  intro x y
+  by_contra hne
+  have hpos : 0 < P.weights p :=
+    lt_of_le_of_ne (P.weights_nonneg p) (Ne.symm (Finsupp.mem_support_iff.1 hp))
+  have hterm : P.weights p * errorIndicator p f x y ≤ P.error f x y := by
+    unfold RandomizedProtocol.error Finsupp.sum
+    exact Finset.single_le_sum (f := fun q => P.weights q * errorIndicator q f x y)
+      (fun q _ => mul_nonneg (P.weights_nonneg q) (by unfold errorIndicator; split_ifs <;> norm_num))
+      hp
+  have h1 : errorIndicator p f x y = 1 := by simp [errorIndicator, hne]
+  rw [h1, mul_one] at hterm
+  linarith [h x y]
+
+/-- A concrete positive value on both sides of Yao's minimax principle for communication: exact
+randomized protocols for equality of one-bit strings need two bits, as deterministic ones do. -/
+theorem randComplexity_eqFn_one_zero : randComplexity (eqFn 1) 0 = 2 := by
+  refine le_antisymm ?_ ?_
+  · refine Nat.sInf_le ⟨StdSimplex.single (eqProtocol 1), ?_, fun x y => ?_⟩
+    · simpa [RandomizedProtocol.cost] using depth_eqProtocol_le 1
+    · simp [RandomizedProtocol.error, errorIndicator, eqProtocol_computes 1 x y]
+  · obtain ⟨P, hcost, herr⟩ := Nat.sInf_mem
+      (s := {c | ∃ P : RandomizedProtocol (Fin 1 → Bool) (Fin 1 → Bool),
+        P.cost ≤ c ∧ ∀ x y, P.error (eqFn 1) x y ≤ 0})
+      ⟨_, StdSimplex.single (eqProtocol 1), le_rfl, fun x y => by
+        simp [RandomizedProtocol.error, errorIndicator, eqProtocol_computes 1 x y]⟩
+    obtain ⟨p, hp⟩ := P.support_weights_nonempty
+    have h₁ := lt_depth_of_computes_eqFn le_rfl (computes_of_error_eq_zero P herr hp)
+    have h₂ : p.depth ≤ P.cost := Finset.le_sup (f := Protocol.depth) hp
+    unfold randComplexity
+    omega
+
+example : (⨆ μ : StdSimplex ℝ ((Fin 1 → Bool) × (Fin 1 → Bool)),
+    distComplexity (eqFn 1) μ 0) = 2 := by
+  rw [← randComplexity_eq_iSup_distComplexity _ le_rfl, randComplexity_eqFn_one_zero]
 
 end MathlibExtTest.Computability.CommunicationComplexity.Minimax

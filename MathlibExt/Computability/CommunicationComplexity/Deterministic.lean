@@ -28,7 +28,8 @@ Chapters 1 and 2) and S. Arora and B. Barak, *Computational Complexity: A Modern
 * `Protocol.transcript_eq_iff`: the inputs reaching a given leaf form a combinatorial
   rectangle (the rectangle lemma);
 * `Protocol.card_le_two_pow_of_isFoolingSet`: the fooling-set lower bound;
-* `Protocol.rank_le_two_pow_depth`: the rank lower bound `D(f) ≥ log₂ rank M_f`;
+* `Protocol.rank_le_two_pow_depth` and `log_rank_le_commComplexity`: the rank lower bound
+  `rank M_f ≤ 2 ^ D(f)`, that is `D(f) ≥ ⌈log₂ rank M_f⌉`;
 * `commComplexity_eqFn`: the equality function on `n ≥ 1` bits has deterministic
   communication complexity exactly `n + 1`;
 * `LogRankConjecture`: the log-rank conjecture of Lovász and Saks, as a proposition only.
@@ -232,7 +233,7 @@ open Classical in
 communication matrix of `f` has rank at most `2 ^ d`; equivalently `d ≥ log₂ rank M_f`
 (A. Rao and A. Yehudayoff, *Communication Complexity*, early draft, Lemma 2.10 and
 Theorem 2.11; S. Arora and B. Barak, *Computational Complexity*, web draft of 2007-01-08,
-Theorem 12.10). -/
+Theorem 12.10 `χ(f) ≥ rank M(f)` with Theorem 12.7 `C(f) ≥ log₂ χ(f)`). -/
 theorem rank_le_two_pow_depth [Fintype Y] {K : Type*} [Field K]
     {f : X → Y → Bool} {p : Protocol X Y} (hp : p.Computes f) :
     (commMatrix K f).rank ≤ 2 ^ p.depth := by
@@ -355,8 +356,8 @@ open Protocol
 /-- **Deterministic communication complexity.** `commComplexity f` is the least depth of a
 protocol computing `f : X → Y → Bool` (A. C. Yao, STOC 1979; A. Rao and A. Yehudayoff,
 *Communication Complexity*, early draft, Chapter 1). For finite inputs such a protocol always
-exists (`Protocol.exists_computes`); otherwise the value is `0` by the convention `sInf ∅ = 0`.
--/
+exists (`Protocol.exists_computes`). If no protocol computes `f`, which is possible only for
+infinite inputs, the value is `0` by the convention `sInf ∅ = 0`. -/
 noncomputable def commComplexity {X Y : Type*} (f : X → Y → Bool) : ℕ :=
   sInf {d | ∃ p : Protocol X Y, p.Computes f ∧ p.depth = d}
 
@@ -385,15 +386,21 @@ theorem card_le_two_pow_commComplexity {f : X → Y → Bool} {S : Finset (X × 
   rw [← hd]
   exact card_le_two_pow_of_isFoolingSet hp hS
 
-/-- **Log-rank lower bound.** Over any field `K`, `log₂ rank M_f ≤ D(f)` (A. Rao and
-A. Yehudayoff, *Communication Complexity*, early draft, Theorem 2.11). -/
-theorem log_rank_le_commComplexity [Fintype Y] (K : Type*) [Field K] (f : X → Y → Bool) :
-    Nat.log 2 (commMatrix K f).rank ≤ commComplexity f := by
+/-- **Rank lower bound for `D(f)`.** Over any field `K`, `rank M_f ≤ 2 ^ D(f)` (A. Rao and
+A. Yehudayoff, *Communication Complexity*, early draft, Lemma 2.10 with Theorem 1.7). -/
+theorem rank_le_two_pow_commComplexity [Fintype Y] (K : Type*) [Field K] (f : X → Y → Bool) :
+    (commMatrix K f).rank ≤ 2 ^ commComplexity f := by
   obtain ⟨p, hp, hd⟩ := exists_depth_eq_commComplexity f
   rw [← hd]
-  calc Nat.log 2 (commMatrix K f).rank ≤ Nat.log 2 (2 ^ p.depth) :=
-        Nat.log_mono_right (rank_le_two_pow_depth hp)
-    _ = p.depth := Nat.log_pow (by norm_num) _
+  exact rank_le_two_pow_depth hp
+
+/-- **Log-rank lower bound.** Over any field `K`, `⌈log₂ rank M_f⌉ ≤ D(f)`; since `D(f)` is an
+integer, this is `log₂ rank M_f ≤ D(f)` (A. Rao and A. Yehudayoff, *Communication Complexity*,
+early draft, Theorem 2.11: "If a matrix has rank `r`, then its communication complexity is at
+least `log r`"). -/
+theorem log_rank_le_commComplexity [Fintype Y] (K : Type*) [Field K] (f : X → Y → Bool) :
+    Nat.clog 2 (commMatrix K f).rank ≤ commComplexity f :=
+  Nat.clog_le_of_le_pow (rank_le_two_pow_commComplexity K f)
 
 /-- **Equality function.** `eqFn n x y` holds exactly when the `n`-bit strings `x` and `y` are
 equal. -/
@@ -478,7 +485,7 @@ function `f` on finite inputs has deterministic communication complexity at most
 Conjecture 2.12 in A. Rao and A. Yehudayoff, *Communication Complexity*, early draft, as
 `D(M) ≤ log^α rank(M)`). The additive `+ 1` and the factor `C` make the statement meaningful
 for matrices of rank one, which can need one bit. Stated as a proposition only; the lower
-bound `log₂ rank M_f ≤ D(f)` is `log_rank_le_commComplexity`. -/
+bound `⌈log₂ rank M_f⌉ ≤ D(f)` is `log_rank_le_commComplexity`. -/
 def LogRankConjecture : Prop :=
   ∃ C : ℕ, ∀ (X Y : Type) [Finite X] [Fintype Y] (f : X → Y → Bool),
     (commComplexity f : ℝ) ≤ C * (Real.logb 2 (commMatrix ℝ f).rank + 1) ^ C

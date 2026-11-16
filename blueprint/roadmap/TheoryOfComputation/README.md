@@ -34,8 +34,8 @@ of Davis, Putnam, Robinson and Matiyasevich that the recursively enumerable sets
 equality of $n$-bit strings needs $n + 1$ bits deterministically, by the fooling-set and rank
 lower bounds, but only a constant number with shared random bits, and
 [Yao's minimax principle](randomized-and-quantum-complexity/yao-s-minimax-principle/README.md)
-turns lower bounds for randomized algorithms into lower bounds against a fixed input
-distribution.
+turns lower bounds against a fixed input distribution into lower bounds for randomized
+algorithms.
 
 - [Turing machines](turing-machines/README.md)
 - [Equivalence of models of computation](equivalence-of-models/README.md)

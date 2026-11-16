@@ -43,6 +43,7 @@ draft), Chapters 1 and 2.
 - [An optimal protocol exists](exists-depth-eq-comm-complexity.md)
 - [Every protocol costs at least `D(f)`](comm-complexity-le-depth.md)
 - [Fooling-set lower bound for `D(f)`](card-le-two-pow-comm-complexity.md)
+- [Rank lower bound for `D(f)`](rank-le-two-pow-comm-complexity.md)
 - [Log-rank lower bound](log-rank-le-comm-complexity.md)
 - [Equality function](eq-fn.md)
 - [The trivial protocol for equality](eq-protocol.md)

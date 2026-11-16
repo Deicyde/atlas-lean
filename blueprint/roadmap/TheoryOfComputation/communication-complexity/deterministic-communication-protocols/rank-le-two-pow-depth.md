@@ -4,7 +4,7 @@ Over any field `K`, if a protocol of depth `d` computes `f`, then the
 communication matrix of `f` has rank at most `2 ^ d`; equivalently `d ≥ log₂ rank M_f`
 (A. Rao and A. Yehudayoff, *Communication Complexity*, early draft, Lemma 2.10 and
 Theorem 2.11; S. Arora and B. Barak, *Computational Complexity*, web draft of 2007-01-08,
-Theorem 12.10).
+Theorem 12.10 `χ(f) ≥ rank M(f)` with Theorem 12.7 `C(f) ≥ log₂ χ(f)`).
 
 ## Informally uses
 

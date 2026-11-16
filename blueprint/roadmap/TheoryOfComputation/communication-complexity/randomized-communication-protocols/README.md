@@ -13,8 +13,9 @@ $\varepsilon$ on every input. Yao's minimax principle for communication identifi
 $R_\varepsilon(f)$ with the largest, over input distributions $\mu$, of the distributional
 complexity $D^\mu_\varepsilon(f)$, the least depth of a deterministic protocol with error at most
 $\varepsilon$ under $\mu$; this is how lower bounds on randomized communication are proved.
-Newman's theorem, stated here as a wanted result, says that private coins cost at most
-$\log_2(n/\varepsilon^2) + O(1)$ extra bits, which gives equality an $O(\log n)$-bit private-coin
+Newman's theorem, stated here as a wanted result, says that for $0 < \varepsilon \le 1/2$ private
+coins cost at most $\log_2(n/\varepsilon^2) + O(1)$ extra bits, at the price of doubling the
+error, which gives equality an $O(\log n)$-bit private-coin
 protocol. The presentation follows A. Rao and A. Yehudayoff, *Communication Complexity* (early
 draft), Chapter 3.
 
