@@ -41,7 +41,10 @@ and nondegenerate (no nonzero `x` satisfies `Q(v + x) = Q(v - x)` for all `v`). 
 scalar multiple of a form with integer coefficients, that is, not of the form
 `x ↦ c ∑ᵢ ∑ⱼ aᵢⱼ xᵢ xⱼ` with `c ∈ ℝ` and integers `aᵢⱼ`, then `Q(ℤⁿ)` is dense in `ℝ`
 (G. A. Margulis, 1987; stated as D. W. Morris, *Ratner's theorems on unipotent flows*,
-arXiv:math/0310402, Theorem 1.2.2, with the definitions of Definition 1.2.1). -/
+arXiv:math/0310402, Theorem 1.2.2, with the definitions of Definition 1.2.1).
+
+The test module `MathlibExtTest.Dynamics.UnipotentFlowsHypotheses` restates the three hypotheses
+verbatim and checks them on `x₀² + x₁² - √2 x₂²`; keep the two in sync. -/
 theorem_wanted margulis_oppenheim {n : ℕ} (hn : 3 ≤ n) (Q : QuadraticForm ℝ (Fin n → ℝ))
     (hindef : (∃ v, 0 < Q v) ∧ ∃ v, Q v < 0)
     (hnondeg : ∀ x, (∀ v, Q (v + x) = Q (v - x)) → x = 0)

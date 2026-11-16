@@ -26,6 +26,8 @@ an integral Apollonian packing.
 - [The Apollonian flips negate the reflected vector](apollonian-flip-single.md)
 - [The Apollonian flips preserve the Descartes form](descartes-form-apollonian-flip.md)
 - [Apollonian orbit of a quadruple](apollonian-orbit.md)
+- [A quadruple belongs to its Apollonian orbit](self-mem-apollonian-orbit.md)
+- [Apollonian orbits are closed under the flips](apollonian-flip-mem-apollonian-orbit.md)
 - [Apollonian orbits stay on a level set of the Descartes form](descartes-form-of-mem-apollonian-orbit.md)
 - [Integral quadruple](is-integral.md)
 - [Flips preserve integrality](is-integral-apollonian-flip.md)
@@ -37,3 +39,5 @@ an integral Apollonian packing.
 
 - [Descartes' circle theorem](../descartes-circle-theorem.md)
 - [Local-global conjecture for Apollonian circle packings](../../../../NumberTheory/arithmetic-geometry/local-global-conjecture-for-apollonian-circle-pa/README.md)
+- [Bridge to the local-global statements](../../../../NumberTheory/arithmetic-geometry/local-global-conjecture-for-apollonian-circle-pa/apollonian-group-orbit-eq.md):
+  the Apollonian group of Haag, Kertzer, Rickards and Stange has the same orbits, and its generators act as the flips.

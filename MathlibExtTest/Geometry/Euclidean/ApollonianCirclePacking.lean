@@ -29,7 +29,10 @@ open Complex MathlibExt.Geometry.Euclidean.ApollonianCirclePacking
 
 /-- The circles of the test configuration. -/
 noncomputable def C : Fin 4 → PlaneCircle :=
-  ![⟨0, 6, by norm_num⟩, ⟨3, 3, by norm_num⟩, ⟨-3, 3, by norm_num⟩, ⟨4 * I, 2, by norm_num⟩]
+  ![{ center := 0, radius := 6, radius_pos := by norm_num },
+    { center := 3, radius := 3, radius_pos := by norm_num },
+    { center := -3, radius := 3, radius_pos := by norm_num },
+    { center := 4 * I, radius := 2, radius_pos := by norm_num }]
 
 /-- The six tangency points of the test configuration. -/
 noncomputable def p : Fin 4 → Fin 4 → ℂ :=
@@ -52,7 +55,7 @@ theorem tangent_01 : TangentAt (C 0) (C 1) (p 0 1) := by
     simp [C, normSq_apply]; norm_num
   have h := tangentAt_of_dist_eq_sub (C 0) (C 1) (by norm_num [C]) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 theorem tangent_02 : TangentAt (C 0) (C 2) (p 0 2) := by
   have hd : dist (C 0).center (C 2).center = (C 0).radius - (C 2).radius := by
@@ -60,7 +63,7 @@ theorem tangent_02 : TangentAt (C 0) (C 2) (p 0 2) := by
     simp [C]; norm_num
   have h := tangentAt_of_dist_eq_sub (C 0) (C 2) (by norm_num [C]) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 theorem tangent_03 : TangentAt (C 0) (C 3) (p 0 3) := by
   have hd : dist (C 0).center (C 3).center = (C 0).radius - (C 3).radius := by
@@ -68,7 +71,7 @@ theorem tangent_03 : TangentAt (C 0) (C 3) (p 0 3) := by
     simp [C, normSq_apply]; norm_num
   have h := tangentAt_of_dist_eq_sub (C 0) (C 3) (by norm_num [C]) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 theorem tangent_12 : TangentAt (C 1) (C 2) (p 1 2) := by
   have hd : dist (C 1).center (C 2).center = (C 1).radius + (C 2).radius := by
@@ -76,7 +79,7 @@ theorem tangent_12 : TangentAt (C 1) (C 2) (p 1 2) := by
     simp [C, normSq_apply]; norm_num
   have h := tangentAt_of_dist_eq_add (C 1) (C 2) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 theorem tangent_13 : TangentAt (C 1) (C 3) (p 1 3) := by
   have hd : dist (C 1).center (C 3).center = (C 1).radius + (C 3).radius := by
@@ -84,7 +87,7 @@ theorem tangent_13 : TangentAt (C 1) (C 3) (p 1 3) := by
     simp [C, normSq_apply]; norm_num
   have h := tangentAt_of_dist_eq_add (C 1) (C 3) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 theorem tangent_23 : TangentAt (C 2) (C 3) (p 2 3) := by
   have hd : dist (C 2).center (C 3).center = (C 2).radius + (C 3).radius := by
@@ -92,7 +95,7 @@ theorem tangent_23 : TangentAt (C 2) (C 3) (p 2 3) := by
     simp [C, normSq_apply]; norm_num
   have h := tangentAt_of_dist_eq_add (C 2) (C 3) hd
   convert h using 1
-  apply Complex.ext <;> simp [C, p] <;> norm_num
+  apply Complex.ext <;> simp [C, p, AffineMap.lineMap_apply] <;> norm_num
 
 /-- The test configuration is a Descartes configuration. -/
 theorem isDescartesConfiguration_C : IsDescartesConfiguration C := by

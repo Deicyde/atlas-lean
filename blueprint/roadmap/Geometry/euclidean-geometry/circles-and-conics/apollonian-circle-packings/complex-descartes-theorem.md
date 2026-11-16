@@ -11,8 +11,9 @@ $k_i c_i$ on a line); the statement here has the hypotheses of the formalised
 [Descartes' circle theorem](../descartes-circle-theorem.md) and follows from the
 [version for signed radii](complex-descartes-of-signed.md). Replacing $c_i$ by $c_i + w$ and comparing coefficients of
 $w$ gives the real Descartes relation and the mixed relation $\sum k_i (k_i c_i) = \tfrac12 (\sum k_i)(\sum k_i c_i)$
-(their equation (2.3)). Combined with the [two-root relation](../apollonian-group/eq-or-eq-flip-of-descartes-form-update-e.md),
-it shows that the vector of products curvature × center transforms under the Apollonian group like the curvatures.
+(their equation (2.3)). Lagarias, Mallows and Wilks also show, through the curvature-center coordinates of their
+Section 3, that the products curvature × center transform under the Apollonian group like the curvatures; that
+consequence is not formalised here.
 Example: in the configuration $(-1, 2, 2, 3)$ with bounding circle of radius $1$ centred at $0$, the products are
 $(0, 1, -1, 2i)$, and $(2i)^2 = -4 = 2(0 + 1 + 1 - 4)$.
 

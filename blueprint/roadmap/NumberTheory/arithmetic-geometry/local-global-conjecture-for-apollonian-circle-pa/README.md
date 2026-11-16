@@ -2,6 +2,7 @@
 
 - [General linear group action on primitive vectors](general-linear-group-action.md)
 - [Descartes matrix](descartes-matrix.md)
+- [The Descartes matrix represents the Descartes form](descartes-matrix-form.md)
 - [Descartes orthogonal group](descartes-orthogonal-group.md)
 - [Descartes orthogonal group action](descartes-orthogonal-group-action.md)
 - [Integral primitive Descartes quadruple](integral-primitive-descartes-quadruple.md)
@@ -10,6 +11,9 @@
 - [The Apollonian generator $S_3$](s-3.md)
 - [The Apollonian generator $S_4$](s-4.md)
 - [Apollonian group](apollonian-group.md)
+- [The four Apollonian generators as a family](apollonian-generator.md)
+- [Each Apollonian generator acts as an Apollonian flip](apollonian-generator-smul.md)
+- [The Apollonian group orbit is the Apollonian orbit](apollonian-group-orbit-eq.md)
 - [The transformation group](transformation-group.md)
 - [The transformation group preserves integral primitive Descartes quadruples](transformation-group-smul-integral-primi.md)
 - [Action of the transformation group on integral primitive Descartes quadruples](transformation-group-action.md)

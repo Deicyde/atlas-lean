@@ -10,11 +10,20 @@ covolume whose limit set is the residual set of the packing (Oh, Section 2); the
 hyperbolic 3-space gives the asymptotic count $N_P(T) \sim c \cdot T^{\alpha}$ of circles of curvature at most $T$,
 with $\alpha \approx 1.30568$ the Hausdorff dimension of the residual set (Kontorovich and Oh).
 
+Not yet formalised: that the signed curvatures of a Descartes configuration in this circle-level sense form a
+Descartes quadruple. The Descartes theorems available are stated with centre distances (externally or internally
+tangent circles), and the converse step from a one-point intersection to the centre distance is missing.
+
 - [Circle in the plane](plane-circle.md)
-- [Points of a plane circle](carrier.md)
 - [Curvature of a plane circle](curvature.md)
 - [Tangency of two circles at a point](tangent-at.md)
 - [Tangency is symmetric](symm.md)
+- [Externally tangent spheres meet at exactly one point](inter-eq-singleton-of-is-ext-tangent-at.md)
+- [Internally tangent spheres meet at exactly one point](inter-eq-singleton-of-is-int-tangent-at.md)
+- [The external tangency point of two spheres](is-ext-tangent-at-line-map.md)
+- [The internal tangency point of two spheres](is-int-tangent-at-line-map.md)
+- [Mathlib's external tangency gives tangency](tangent-at-of-is-ext-tangent-at.md)
+- [Mathlib's internal tangency gives tangency](tangent-at-of-is-int-tangent-at.md)
 - [Externally tangent circles touch at one point](tangent-at-of-dist-eq-add.md)
 - [Internally tangent circles touch at one point](tangent-at-of-dist-eq-sub.md)
 - [Descartes configuration](is-descartes-configuration.md)

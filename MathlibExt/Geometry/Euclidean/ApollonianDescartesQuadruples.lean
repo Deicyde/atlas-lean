@@ -191,9 +191,12 @@ Section 4; Kontorovich and Oh, arXiv:0811.2236v5, Theorem 2.3). -/
 def apollonianCurvatures (v : Fin 4 → R) : Set R :=
   ⋃ w ∈ apollonianOrbit v, Set.range w
 
+/-- **A quadruple belongs to its Apollonian orbit.** (The empty word of flips.) -/
 theorem self_mem_apollonianOrbit (v : Fin 4 → R) : v ∈ apollonianOrbit v :=
   ⟨[], rfl⟩
 
+/-- **Apollonian orbits are closed under the flips.** If `w` is in the Apollonian orbit of `v`,
+so is `Sᵢ w` for every `i`. -/
 theorem apollonianFlip_mem_apollonianOrbit {v w : Fin 4 → R} (i : Fin 4)
     (hw : w ∈ apollonianOrbit v) : apollonianFlip i w ∈ apollonianOrbit v := by
   obtain ⟨l, rfl⟩ := hw
@@ -212,14 +215,15 @@ theorem descartesForm_of_mem_apollonianOrbit {v w : Fin 4 → R} (hw : w ∈ apo
 
 /-- **Integral quadruple.** Every entry of `v` is (the image of) an integer; an Apollonian
 packing is integral when all its curvatures are (H. Oh, arXiv:1312.1383v2, Section 4). -/
-def IsIntegral (v : Fin 4 → R) : Prop :=
+def IsIntegralQuadruple (v : Fin 4 → R) : Prop :=
   ∀ i, v i ∈ Set.range (Int.cast : ℤ → R)
 
 /-- **Flips preserve integrality.** If `v` is integral then so is `Sᵢ v`, because `Sᵢ` has
 integer entries (Kontorovich and Oh, arXiv:0811.2236v5, equation (1.3) and the remark after
 it). -/
-theorem isIntegral_apollonianFlip {v : Fin 4 → R} (hv : IsIntegral v) (i : Fin 4) :
-    IsIntegral (apollonianFlip i v) := by
+theorem isIntegralQuadruple_apollonianFlip {v : Fin 4 → R} (hv : IsIntegralQuadruple v)
+    (i : Fin 4) :
+    IsIntegralQuadruple (apollonianFlip i v) := by
   choose n hn using hv
   intro j
   by_cases hji : j = i
@@ -231,18 +235,19 @@ theorem isIntegral_apollonianFlip {v : Fin 4 → R} (hv : IsIntegral v) (i : Fin
 /-- **Integrality propagates through Apollonian orbits.** If the four initial curvatures are
 integers, so is every quadruple in the Apollonian orbit (Soddy 1937; H. Oh, arXiv:1312.1383v2,
 Theorem 4.2; Kontorovich and Oh, arXiv:0811.2236v5, remark after equation (1.3)). -/
-theorem IsIntegral.of_mem_apollonianOrbit {v w : Fin 4 → R} (hv : IsIntegral v)
-    (hw : w ∈ apollonianOrbit v) : IsIntegral w := by
+theorem IsIntegralQuadruple.of_mem_apollonianOrbit {v w : Fin 4 → R}
+    (hv : IsIntegralQuadruple v)
+    (hw : w ∈ apollonianOrbit v) : IsIntegralQuadruple w := by
   obtain ⟨l, rfl⟩ := hw
   induction l with
   | nil => exact hv
-  | cons i l ih => exact isIntegral_apollonianFlip ih i
+  | cons i l ih => exact isIntegralQuadruple_apollonianFlip ih i
 
 /-- **Integral Apollonian packings.** If the four initial curvatures are integers then every
 curvature of the packing is an integer: `apollonianCurvatures v ⊆ ℤ` (Soddy 1937; H. Oh,
 arXiv:1312.1383v2, Theorem 4.2; Lagarias, Mallows and Wilks, arXiv:math/0101066v1, remark after
 equation (2.1)). -/
-theorem apollonianCurvatures_subset_range_intCast {v : Fin 4 → R} (hv : IsIntegral v) :
+theorem apollonianCurvatures_subset_range_intCast {v : Fin 4 → R} (hv : IsIntegralQuadruple v) :
     apollonianCurvatures v ⊆ Set.range (Int.cast : ℤ → R) := by
   intro x hx
   simp only [apollonianCurvatures, Set.mem_iUnion] at hx

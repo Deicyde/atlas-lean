@@ -48,11 +48,11 @@ example : (![15, 2, 2, 35] : Fin 4 → ℝ) ∈ apollonianOrbit (![-1, 2, 2, 3] 
   fin_cases j <;> simp [apollonianFlip, Fin.sum_univ_four, Function.update] <;> norm_num
 
 example (w : Fin 4 → ℝ) (hw : w ∈ apollonianOrbit (![-1, 2, 2, 3] : Fin 4 → ℝ)) :
-    descartesForm w = 0 ∧ IsIntegral w := by
+    descartesForm w = 0 ∧ IsIntegralQuadruple w := by
   refine ⟨?_, ?_⟩
   · rw [descartesForm_of_mem_apollonianOrbit hw]
     simp [descartesForm, Fin.sum_univ_four]; norm_num
-  · refine IsIntegral.of_mem_apollonianOrbit ?_ hw
+  · refine IsIntegralQuadruple.of_mem_apollonianOrbit ?_ hw
     intro i
     fin_cases i
     · exact ⟨-1, by simp⟩

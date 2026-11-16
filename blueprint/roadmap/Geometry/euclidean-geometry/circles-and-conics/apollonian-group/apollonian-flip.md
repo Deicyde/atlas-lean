@@ -10,7 +10,9 @@ $(2, 2, 2, 2)$ with $-1$ in position $i$; these are the generators $S_1, \dots, 
 ## Related topics
 
 - [Apollonian generator $S_1$ in the local-global statements](../../../../NumberTheory/arithmetic-geometry/local-global-conjecture-for-apollonian-circle-pa/s.md):
-  the same matrix, defined over $\mathbb{Z}$ for the Haag–Kertzer–Rickards–Stange statements.
+  the same matrix, defined over $\mathbb{Z}$ for the Haag–Kertzer–Rickards–Stange statements; the bridge
+  [each Apollonian generator acts as an Apollonian flip](../../../../NumberTheory/arithmetic-geometry/local-global-conjecture-for-apollonian-circle-pa/apollonian-generator-smul.md)
+  proves that they act in the same way.
 
 ## Sources
 
