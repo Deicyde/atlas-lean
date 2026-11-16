@@ -5,5 +5,5 @@ Complexity-theoretic foundations of cryptography and derandomization: one-way fu
 - [Goldreich–Levin theorem](goldreich-levin-theorem/README.md)
 - [Impagliazzo's five worlds](impagliazzo-s-five-worlds/README.md)
 - [Yao's XOR lemma](yao-s-xor-lemma/README.md)
-- [Nisan-Wigderson: exponential hardness in E derandomizes BPP](nisan-wigderson.md)
+- [Impagliazzo-Wigderson: exponential circuit hardness in E derandomizes BPP](nisan-wigderson.md)
 - [One-way functions imply P ≠ NP](owf-implies-p-ne-np.md)
