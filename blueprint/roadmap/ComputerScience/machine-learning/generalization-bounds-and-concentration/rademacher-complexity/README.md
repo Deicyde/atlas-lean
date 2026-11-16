@@ -51,3 +51,4 @@ a generalization guarantee is recorded as a wanted statement.
 - [Concentration of the uniform deviation](../bounded-differences-uniform-deviation.md): the bounded-differences half of the risk bound.
 - [Rademacher type and cotype](../../../../Analysis/banach-spaces/geometry-of-banach-spaces/rademacher-type-and-cotype/README.md): the same uniform averages over sign vectors, in Banach-space geometry.
 - [Hedge algorithm](../../online-learning-and-boosting/hedge-algorithm/README.md): the online counterpart, where regret replaces generalization error.
+- [Two-layer neural networks and Barron space](../../supervised-learning/two-layer-neural-networks-and-barron-space/README.md): homogeneity, contraction and Massart's lemma combine into the bound $2 Q \sqrt{2 \log(2d) / n}$ for path-norm balls of two-layer ReLU networks, independent of the width.
