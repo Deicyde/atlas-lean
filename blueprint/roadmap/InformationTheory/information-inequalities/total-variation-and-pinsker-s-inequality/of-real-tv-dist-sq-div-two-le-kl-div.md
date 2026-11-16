@@ -6,7 +6,7 @@ $$
 \frac{\|\mu - \nu\|^2}{2} \le D(\mu \,\|\, \nu),
 $$
 
-where $\|\mu - \nu\|$ is the total variation norm (Mathlib's `tvDist`, with values in $[0, 2]$)
+where $\|\mu - \nu\|$ is the total variation norm (Mathlib's `MeasureTheory.tvDist`, with values in $[0, 2]$)
 and $D$ the Kullback–Leibler divergence with the natural logarithm. This is
 [Pinsker's inequality](of-real-two-mul-total-variation-dist-sq.md) rewritten with
 $\|\mu - \nu\| = 2\,\mathrm{TV}(\mu, \nu)$.

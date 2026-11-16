@@ -54,7 +54,7 @@ topology/metric instances are unaffected by this namespace of functions and prop
 
 ## Main results
 
-* `totalVariationDist`: `‖μ - ν‖ = sup_B |μ(B) - ν(B)|`.
+* `totalVariationDist`: `TV(μ, ν) = sup_B |μ(B) - ν(B)|`.
 * `totalVariationDist_nonneg`, `totalVariationDist_self`,
   `totalVariationDist_comm`, `totalVariationDist_triangle`,
   `totalVariationDist_le_one`: the finite-measure metric axioms, with
