@@ -1,6 +1,6 @@
 # Matrix decompositions and linear systems
 
-Factorizations of matrices (singular value, polar, Schur and LU decompositions), Gaussian elimination and the solvability of linear systems, iterative methods and condition numbers.
+Factorizations of matrices (QR, singular value, polar, Schur and LU decompositions), Gaussian elimination and the solvability of linear systems, linear least squares, Krylov subspace methods (Arnoldi, Lanczos, GMRES, conjugate gradients) and condition numbers.
 
 - [Condition numbers of sign matrices](condition-numbers-of-sign-matrices/README.md)
 - [Conjugate gradient method](conjugate-gradient-method/README.md)
@@ -15,3 +15,10 @@ Factorizations of matrices (singular value, polar, Schur and LU decompositions),
 - [Convergence of the Jacobi method for strictly diagonally dominant matrices](jacobi-iteration-converges.md)
 - [Rouché–Capelli theorem](rouche-capelli.md)
 - [Schur decomposition of a complex square matrix](exists-unitary-group-is-upper-triangular.md)
+
+## Related topics
+
+- [Numerical analysis](../../Analysis/numerical-analysis/README.md)
+- [Chebyshev series and interpolation](../../Analysis/approximation-theory/chebyshev-series-and-interpolation/README.md)
+- [Least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
+- [Principal component analysis](../../Probability/linear-models-multivariate/principal-component-analysis/README.md)

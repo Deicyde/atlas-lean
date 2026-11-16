@@ -18,3 +18,9 @@
 - [The conjugate gradient error bound](energy-norm-iterate-sub-le.md)
 - [Spectral condition number of a positive definite matrix](cond-num.md)
 - [The conjugate gradient error bound in terms of the condition number](energy-norm-iterate-sub-le-cond-num.md)
+
+## Related topics
+
+- [Arnoldi and Lanczos iterations](../arnoldi-and-lanczos-iterations/README.md)
+- [GMRES](../gmres/README.md)
+- [Minimax property of the Chebyshev polynomials](../../../Analysis/approximation-theory/minimax-property-of-the-chebyshev-polynomials/README.md)

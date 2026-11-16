@@ -1,6 +1,6 @@
 # Eigenvalues and canonical forms
 
-Eigenvalues, eigenspaces and characteristic polynomials of matrices and endomorphisms, and the normal forms they lead to: diagonalization, triangularization, Jordan and Smith normal forms.
+Eigenvalues, eigenspaces and characteristic polynomials of matrices and endomorphisms, the normal forms they lead to (diagonalization, triangularization, Jordan and Smith normal forms), and eigenvalue algorithms (power iteration and the Rayleigh quotient).
 
 - [Diagonalization](diagonalization/README.md)
 - [Power iteration and the Rayleigh quotient](power-iteration-and-the-rayleigh-quotient/README.md)

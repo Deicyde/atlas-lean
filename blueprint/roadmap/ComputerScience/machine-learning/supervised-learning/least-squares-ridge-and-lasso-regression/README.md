@@ -39,3 +39,9 @@
 - [Soft thresholding](soft-threshold.md)
 - [Soft thresholding solves the one-dimensional lasso](soft-threshold-le.md)
 - [Lasso with an orthonormal design](lasso-soft-threshold-le.md)
+
+## Related topics
+
+- [Linear least squares](../../../../LinearAlgebra/matrix-decompositions/linear-least-squares/README.md)
+- [QR factorization](../../../../LinearAlgebra/matrix-decompositions/qr-factorization/README.md)
+- [Tikhonov regularization](../../../../Analysis/convex-analysis-and-variations/tikhonov-regularization/README.md)

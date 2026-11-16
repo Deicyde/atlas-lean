@@ -21,3 +21,4 @@ Every real or complex matrix factors as $A = U\Sigma V^*$ with $U, V$ unitary an
 - [Principal component analysis](../../../Probability/linear-models-multivariate/principal-component-analysis/README.md)
 - [Polar decomposition](../polar-decomposition/README.md)
 - [Condition numbers of sign matrices](../condition-numbers-of-sign-matrices/README.md)
+- [QR factorization](../qr-factorization/README.md)

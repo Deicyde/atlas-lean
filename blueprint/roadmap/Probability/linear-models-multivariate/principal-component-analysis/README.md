@@ -46,3 +46,9 @@
 - [Frobenius error of the truncated SVD](frobenius-sub-trunc-svd-sq.md)
 - [Eckart–Young (Frobenius norm)](sum-sq-singular-values-le-frobenius-sub.md)
 - [Eckart–Young, best-approximation form](is-least-frobenius-sub-sq.md)
+
+## Related topics
+
+- [Singular value decomposition](../../../LinearAlgebra/matrix-decompositions/singular-value-decomposition/README.md)
+- [Eckart–Young theorem in operator norm](../../../Analysis/operator-theory/eigenvalue-inequalities/eckart-young-best-rank-approx-operator-n.md)
+- [Power iteration and the Rayleigh quotient](../../../LinearAlgebra/eigenvalues-and-canonical-forms/power-iteration-and-the-rayleigh-quotient/README.md)

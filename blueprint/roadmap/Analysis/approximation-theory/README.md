@@ -1,6 +1,6 @@
 # Approximation theory
 
-Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation.
+Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation.
 
 - [Bernstein polynomials](bernstein-polynomials/README.md)
 - [Best approximation in normed spaces](best-approximation-in-normed-spaces/README.md)
