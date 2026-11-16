@@ -19,7 +19,8 @@ norm bound of the `(N, D, λ)` definition.
 With `G` big and `H` small, the product keeps `G`'s size up to the factor `D₁`, takes its degree
 `D₂²` from `H` alone, and has spectral parameter small when both factors have. Iterating
 `G_{t+1} = G_t² ⓩ H` from a single `(D⁴, D, 1/5)`-graph `H` gives an explicit family of
-`(D^{4t}, D², 2/5)`-graphs (Reingold, Vadhan and Wigderson, Theorem 1.4).
+`(D^{4t}, D², 2/5)`-graphs (Reingold, Vadhan and Wigderson, Theorem 1.4; proved here as
+[the zig-zag expander family consists of expanders](is-ndlambda-graph-zigzag-family.md)).
 
 ## Background
 
