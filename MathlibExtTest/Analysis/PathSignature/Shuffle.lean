@@ -59,4 +59,14 @@ example (t : ℝ) :
   simp [signature_singleton] at h
   linarith
 
+/-- The second level of a one-letter-repeated word has no area: `A^{ii} = 0`. -/
+example (v : Fin 2 → ℝ → ℝ) (s t : ℝ) : levyArea v s t 0 0 = 0 := by
+  simp [levyArea]
+
+/-- `S^{12} = ½ ΔX¹ ΔX² + A^{12}` for a path with continuous velocity. -/
+example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (s t : ℝ) :
+    signature v s t [0, 1] =
+      (∫ u in s..t, v 0 u) * (∫ u in s..t, v 1 u) / 2 + levyArea v s t 0 1 :=
+  signature_pair_eq hv s t 0 1
+
 end MathlibExtTest.Analysis.PathSignature.Shuffle

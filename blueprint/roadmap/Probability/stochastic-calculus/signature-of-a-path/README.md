@@ -45,6 +45,8 @@ for a continuous velocity.
 - [Shuffle product of two words](shuffle.md)
 - [Last-letter recursion of the shuffle product](shuffle-concat-concat.md)
 - [Shuffle product identity (Ree)](signature-mul-signature.md)
+- [Lévy area](levy-area.md)
+- [Second level of the signature: increments and Lévy area](signature-pair-eq.md)
 - [Splitting a sum over words by the last letter](sum-fin-succ-of-fn.md)
 - [Composite linear map along a word](word-op.md)
 - [Truncated signature series of a linear controlled equation](signature-series.md)

@@ -23,3 +23,6 @@ $X_t = t$ and $A = \mathrm{id}$ the series is $\sum_k (t-s)^k/k!\; y_0 = e^{t-s}
 
 - T. Lyons, *Rough paths, signatures and the modelling of functions on streams*, Proc. ICM 2014,
   arXiv:1405.4537, §4.2, equation (1).
+- I. Chevyrev and A. Kormilitzin, *A primer on the signature method in machine learning*,
+  arXiv:1603.03788v2, §1.2.3 and Exercise 1.10 (the factorial bound that makes the series
+  converge).

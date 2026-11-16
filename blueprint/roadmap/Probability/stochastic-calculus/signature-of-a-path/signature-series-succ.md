@@ -13,3 +13,5 @@ exactly the truncations of its signature series.
 
 - T. Lyons, *Rough paths, signatures and the modelling of functions on streams*, Proc. ICM 2014,
   arXiv:1405.4537, §4.2 ("By iterating using Picard iteration one obtains", equation (1)).
+- I. Chevyrev and A. Kormilitzin, *A primer on the signature method in machine learning*,
+  arXiv:1603.03788v2, §1.2.3 (Picard iteration for linear vector fields).

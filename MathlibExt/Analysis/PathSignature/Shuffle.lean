@@ -141,4 +141,27 @@ theorem signature_mul_signature (hv : ∀ i, Continuous (v i)) (s t : ℝ) (I J 
       · exact (((continuous_list_sum _ fun K _ => hcont K)).mul (hv i)).intervalIntegrable _ _
       · exact (((continuous_list_sum _ fun K _ => hcont K)).mul (hv j)).intervalIntegrable _ _
 
+/-- **Lévy area.** For letters `i, j`, the signed area
+`A^{ij}_{s,t} = ½ (S^{ij}_{s,t} − S^{ji}_{s,t})` enclosed by the plane path `(Xⁱ, Xʲ)` on
+`[s, t]` and the chord joining its endpoints (Chevyrev and Kormilitzin, *A primer on the
+signature method in machine learning*, arXiv:1603.03788v2, §1.2.4, equation (12)). -/
+noncomputable def levyArea (v : ι → ℝ → ℝ) (s t : ℝ) (i j : ι) : ℝ :=
+  (signature v s t [i, j] - signature v s t [j, i]) / 2
+
+/-- **Second level of the signature: increments and Lévy area.** For a path with continuous
+velocity, `S^{ij}_{s,t} = ½ (Xⁱ_t − Xⁱ_s)(Xʲ_t − Xʲ_s) + A^{ij}_{s,t}`: the symmetric part of the
+second level is determined by the increment, and the antisymmetric part is the Lévy area. This
+follows from the shuffle identity `S^i S^j = S^{ij} + S^{ji}` (Chevyrev and Kormilitzin,
+arXiv:1603.03788v2, Example 1.15 and equation (12)). -/
+theorem signature_pair_eq (hv : ∀ i, Continuous (v i)) (s t : ℝ) (i j : ι) :
+    signature v s t [i, j] =
+      (∫ u in s..t, v i u) * (∫ u in s..t, v j u) / 2 + levyArea v s t i j := by
+  have h := signature_mul_signature hv s t [i] [j]
+  have hs : shuffle [i] [j] = [[j, i], [i, j]] := by
+    simp [shuffle, shuffleRev]
+  rw [hs, signature_singleton, signature_singleton] at h
+  simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, add_zero] at h
+  unfold levyArea
+  linarith
+
 end MathlibExt.Analysis.PathSignature
