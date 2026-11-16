@@ -29345,7 +29345,7 @@
 "MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.xorFlat": "d76b9fe738b64c6b",
 "MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.xorFold": "98fd317c02df034c",
 "MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.xorOf": "983465c15974abfc",
-"MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.yao_xor_lemma": "7db93683552a7d13",
+"MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.yao_xor_lemma": "595812dd75a539a9",
 "MetaMathlibExt.Complexity.NPComplete.AchromaticNumber.AchromaticNumberFeasible": "3a21c73a36a52523",
 "MetaMathlibExt.Complexity.NPComplete.AchromaticNumber.AchromaticNumberInstance": "57484eb74abf884e",
 "MetaMathlibExt.Complexity.NPComplete.AchromaticNumber.WellFormed": "5ac377e109890aa9",
