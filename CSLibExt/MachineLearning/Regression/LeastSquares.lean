@@ -57,7 +57,8 @@ norms.)
   objective (`softThreshold_le` in one dimension).
 
 The Gaussian MLE of linear regression is the Gaussian case of a canonical generalized linear
-model; see `glmLoss_sq` in `CSLibExt/MachineLearning/Discriminative/ExponentialFamily.lean`.
+model; the Bernoulli case, logistic regression, is in
+`CSLibExt/MachineLearning/Classification/LogisticSVM.lean`.
 -/
 
 @[expose] public section
