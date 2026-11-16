@@ -14,8 +14,8 @@ public import MathlibExt.Analysis.Convex.TotalDualIntegrality
 
 open MathlibExt.Analysis.Convex.TotalDualIntegrality
 
-/-! The TDI hypothesis is satisfiable: boxes are TDI, in every dimension. -/
+/-! The TDI hypothesis is satisfiable: upper-bound systems `x ≤ b` are TDI, in every dimension. -/
 
-example : IsTDI (1 : Matrix (Fin 2) (Fin 2) ℝ) ![1, 3] := isTDI_one _
+example : IsTDI (1 : Matrix (Fin 2) (Fin 2) ℝ) ![1, 3] := isTDI_upperBound _
 
-example (b : Fin 0 → ℝ) : IsTDI (1 : Matrix (Fin 0) (Fin 0) ℝ) b := isTDI_one b
+example (b : Fin 0 → ℝ) : IsTDI (1 : Matrix (Fin 0) (Fin 0) ℝ) b := isTDI_upperBound b

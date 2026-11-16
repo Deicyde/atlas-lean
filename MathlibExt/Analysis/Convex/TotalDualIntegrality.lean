@@ -24,7 +24,8 @@ A system `A x ≤ b` is *totally dual integral* (TDI) if for every integral obje
 `max {cᵀ x : A x ≤ b}` is finite, the dual `min {bᵀ y : y ≥ 0, Aᵀ y = c}` has an integral optimal
 solution. TDI is a property of the system, not of the polyhedron. Edmonds and Giles proved that a
 TDI system with integral right-hand side defines an integral polyhedron; that theorem is recorded
-in `WantedExt`. Here we give the definition and the simplest example: boxes `x ≤ b`.
+in `WantedExt`. Here we give the definition and the simplest example: upper-bound systems `x ≤ b`
+(the identity matrix; the feasible region is a translated orthant, not a two-sided box).
 
 Source: M. X. Goemans, MIT 18.438 Advanced Combinatorial Optimization, Lecture 6 (2009),
 Definition 1 (TDI) and Theorem 2 (Edmonds-Giles); J. Edmonds and R. Giles, "A min-max relation
@@ -49,10 +50,11 @@ def IsTDI {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ) (b : Fin m → ℝ) : Pro
     ∃ y : Fin m → ℤ, 0 ≤ y ∧ Aᵀ *ᵥ (fun i => (y i : ℝ)) = (fun j => (c j : ℝ)) ∧
       ∃ x : Fin n → ℝ, A *ᵥ x ≤ b ∧ b ⬝ᵥ (fun i => (y i : ℝ)) = (fun j => (c j : ℝ)) ⬝ᵥ x
 
-/-- **Boxes are totally dual integral.** For every `b`, the system `x ≤ b` (with `A` the identity)
-is TDI: a bounded integral objective `c` must be nonnegative, and `y = c` is an integral optimal
-dual solution, attained at `x = b`. -/
-theorem isTDI_one {n : ℕ} (b : Fin n → ℝ) : IsTDI (1 : Matrix (Fin n) (Fin n) ℝ) b := by
+/-- **Upper-bound systems are totally dual integral.** For every `b`, the system `x ≤ b` (with `A`
+the identity matrix) is TDI: a bounded integral objective `c` must be nonnegative, and `y = c` is an
+integral optimal dual solution, attained at `x = b`. The feasible region is the translated orthant
+`b - ℝⁿ₊`, not a two-sided box `l ≤ x ≤ u`. -/
+theorem isTDI_upperBound {n : ℕ} (b : Fin n → ℝ) : IsTDI (1 : Matrix (Fin n) (Fin n) ℝ) b := by
   intro c _ hbdd
   obtain ⟨M, hM⟩ := hbdd
   set cr : Fin n → ℝ := fun j => (c j : ℝ) with hcr

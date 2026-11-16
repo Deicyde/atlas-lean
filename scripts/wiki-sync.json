@@ -16358,7 +16358,7 @@
 "MathlibExt.Analysis.Convex.Straszewicz.suppFunc_lipschitz": "c1337711bd250a72",
 "MathlibExt.Analysis.Convex.Straszewicz.unique_maximizer_exposed": "8f5718ab1ee47558",
 "MathlibExt.Analysis.Convex.TotalDualIntegrality.IsTDI": "0df380d62de31fea",
-"MathlibExt.Analysis.Convex.TotalDualIntegrality.isTDI_one": "289cf40ca451d168",
+"MathlibExt.Analysis.Convex.TotalDualIntegrality.isTDI_upperBound": "67ca0b88511056a7",
 "MathlibExt.Analysis.CubicDecayWanted.Analysis.ODE.cubic_decay_asymptotic": "9ce5ae497649fd4d",
 "MathlibExt.Analysis.DirichletEigenvaluesWanted.Analysis.ODE.dirichlet_eigenvalues_eq_nat_sq": "38f072d445c6757a",
 "MathlibExt.Analysis.DirichletSpacePolynomialDensityWanted.DirichletSpace": "0704a726263b4406",
