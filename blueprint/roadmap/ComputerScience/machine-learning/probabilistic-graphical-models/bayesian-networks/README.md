@@ -31,3 +31,13 @@
 - [Global Markov property for finite sets of nodes](cond-indep-of-d-separated-finset.md)
 - [The global Markov property](cond-indep-of-d-separated.md)
 - [Completeness of d-separation](exists-not-cond-indep-of-not-d-separated.md)
+
+## Related topics
+
+- [Conditional independence on finite configuration spaces](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/README.md):
+  the notion of conditional independence used by the global Markov property.
+- [Gaussian graphical models](../../../../Probability/linear-models-multivariate/gaussian-graphical-models/README.md):
+  the undirected, Gaussian counterpart, where conditional independence is read off the zeros of
+  the precision matrix.
+- [Causal Bayesian networks](../causal-bayesian-networks/README.md): the same networks read
+  causally, with interventions.

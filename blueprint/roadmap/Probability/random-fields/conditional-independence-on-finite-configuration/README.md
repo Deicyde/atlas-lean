@@ -10,3 +10,9 @@
 - [Agreement classes of configurations have equal size](card-filter-agree.md)
 - [Marginalizing in two steps](marginal-marginal.md)
 - [Conditional independence can be read off a marginal](cond-indep-marginal-iff.md)
+
+## Related topics
+
+- [Bayesian networks](../../../ComputerScience/machine-learning/probabilistic-graphical-models/bayesian-networks/README.md):
+  the global Markov property of Bayesian networks is stated with this notion of conditional
+  independence.

@@ -40,3 +40,13 @@
 - [Arrows of `G_{\underline Z}`](edge-delete-out-iff.md)
 - [Assignments contradicting a set intervention have probability zero](joint-mutilate-set-eq-zero.md)
 - [Conditioning on the intervened variables is vacuous](marginal-mutilate-set-union.md)
+
+## Related topics
+
+- [Structural causal models and counterfactuals](../structural-causal-models-and-counterfactuals/README.md):
+  a structural causal model induces a causal Bayesian network whose interventions are the
+  submodels `M_x`, and adds counterfactuals.
+- [Bayesian networks](../bayesian-networks/README.md): the global Markov property, which licenses
+  every adjustment formula here and Rule 1 of the do-calculus.
+- [Potential outcomes and causal identification](../../../../Probability/nonparametric-survival/potential-outcomes-and-causal-identification/README.md):
+  the back-door criterion is the graphical counterpart of conditional ignorability.
