@@ -317,7 +317,7 @@ theorem regret_le {η : ℝ} (hη : 0 < η) (ls : List (Fin n → ℝ)) (hb : Bo
 
 /-- **The `√T` regret bound of Hedge**, derived from Hazan's Theorem 1.5 (arXiv:1909.05207)
 with `ℓ_t(i)² ≤ 1` and the tuned rate; Cesa-Bianchi and Lugosi (*Prediction, Learning, and
-Games*, CUP 2006, Theorem 2.2) give the sharper `√(T log n / 2)` with `η = √(8 log n / T)`,
+Games*, CUP 2006, Section 2.2) give the sharper `√(T log n / 2)` with `η = √(8 log n / T)`,
 not formalized here. For losses in `[0, 1]` over `T ≥ 1` rounds and `n ≥ 2` experts, Hedge
 with learning rate `η = √(log n / T)` has regret at most `2 √(T log n)` against every expert. -/
 theorem regret_le_two_sqrt (ls : List (Fin n → ℝ)) (hb : Bounded ls) (hT : 0 < ls.length)

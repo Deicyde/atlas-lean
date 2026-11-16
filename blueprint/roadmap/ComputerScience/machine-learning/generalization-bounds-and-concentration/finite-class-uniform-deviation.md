@@ -41,7 +41,8 @@ $\ell_\infty = 1$, such as the classification error, matches a statement formali
 library; for other bounded losses the Hoeffding step is the classical inequality for bounded
 variables. Pinned Mathlib proves its one-sided form for independent variables with values in an
 interval (Hoeffding's lemma `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc_of_integral_eq_zero`
-with `ProbabilityTheory.HasSubgaussianMGF.measure_sum_ge_le_of_iIndepFun`); applied to the
+with `ProbabilityTheory.HasSubgaussianMGF.measure_sum_ge_le_of_iIndepFun`; the uncentred form
+of Hoeffding's lemma is `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc`); applied to the
 centred losses and to their negatives it gives the per-predictor step, a specialisation this
 library does not state.
 

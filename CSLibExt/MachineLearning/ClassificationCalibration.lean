@@ -68,7 +68,9 @@ noncomputable def wrongSignRisk (φ : ℝ → ℝ) (η : ℝ) : ℝ :=
   ⨅ α : {α : ℝ // α * (2 * η - 1) ≤ 0}, condRisk φ η α
 
 /-- A loss `φ` is **classification-calibrated** if `H(η) < H⁻(η)` for every `η ∈ [0, 1]` with
-`η ≠ 1/2` (Bartlett, Jordan and McAuliffe, Definition 1). -/
+`η ≠ 1/2` (Bartlett, Jordan and McAuliffe, Definition 1). The definition is meant for
+nonnegative (or at least bounded-below) `φ`, as in the source, which takes `φ : ℝ → [0, ∞)`;
+otherwise the infima `H` and `H⁻`, taken in `ℝ`, can be junk values. -/
 def IsClassificationCalibrated (φ : ℝ → ℝ) : Prop :=
   ∀ η ∈ Set.Icc (0 : ℝ) 1, η ≠ 1 / 2 → optRisk φ η < wrongSignRisk φ η
 

@@ -12,4 +12,4 @@ Cesa-Bianchi and Lugosi obtain the sharper $\sqrt{T \log n / 2}$ with $\eta = \s
 ## Sources
 
 - E. Hazan, *Introduction to Online Convex Optimization*, arXiv:1909.05207 (v1–v3 number the second-order bound Theorem 1.5, Section 1.3.3)
-- N. Cesa-Bianchi and G. Lugosi, *Prediction, Learning, and Games*, Cambridge University Press (2006), Theorem 2.2 (the sharper constant).
+- N. Cesa-Bianchi and G. Lugosi, *Prediction, Learning, and Games*, Cambridge University Press (2006), Section 2.2 (the sharper constant).
