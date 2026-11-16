@@ -26,7 +26,8 @@ $\int_0^\pi \cos^{n+2} = \frac{n+1}{n+2}\int_0^\pi \cos^n$.
 
 ## Sources
 
-- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.1, equation (2.88), and Lemma 2.3.15 (non-crossing cycles counted by Catalan
-  numbers).
+- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.2, Exercise 2.4.9 (the moments; the
+  Catalan numbers $C_{k/2}$ are defined in (2.88)), and Lemma 2.3.15 (non-crossing cycles counted
+  by Catalan numbers).
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
   University Press, 2010, §2.1.1.

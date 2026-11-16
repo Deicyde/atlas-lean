@@ -8,4 +8,4 @@ $\mu(U_n \setminus E) \le 1/n$.
 
 ## Sources
 
-- T. Tao, *An Introduction to Measure Theory*, Graduate Studies in Mathematics 126, American Mathematical Society, 2011, proof of Lemma 1.2.13.
+- T. Tao, *An Introduction to Measure Theory*, Graduate Studies in Mathematics 126, American Mathematical Society, 2011, Exercise 1.2.19 (i) implies (ii), by the argument in the proof of Lemma 1.2.13.

@@ -5,7 +5,9 @@ can be integrated in either order (Tonelli), and so can an absolutely integrable
 theorems are Mathlib's: `MeasureTheory.lintegral_prod` and `MeasureTheory.lintegral_lintegral_swap`
 (for s-finite measures) and `MeasureTheory.integral_prod`. The pages here show that the
 $\sigma$-finiteness hypothesis cannot be dropped: with Lebesgue measure and counting measure on
-$[0, 1]$, the indicator of the diagonal has iterated integrals $1$ and $0$.
+$[0, 1]$, the indicator of the diagonal has iterated integrals $1$ and $0$. Both factors carry the Borel
+$\sigma$-algebra; Tao's exercise uses the Lebesgue and the discrete $\sigma$-algebras, and the
+diagonal is Borel, so this version is slightly stronger.
 
 - [Diagonal indicator, counting measure inside](lintegral-lintegral-count-indicator-diag.md)
 - [Diagonal indicator, Lebesgue measure inside](lintegral-count-lintegral-indicator-diag.md)

@@ -55,8 +55,9 @@ The proof substitutes `x = 2 cos θ`, `θ ∈ [0, π]`, which turns the moment i
 ## References
 
 * T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, AMS, 2012,
-  §2.4.1 (the moment method for the semicircular law, moments `(2.88)` given by the Catalan
-  numbers) and Lemma 2.3.15 (Catalan numbers count Dyck words).
+  §2.4.2 (the moment method for the semicircular law), Exercise 2.4.9 (the moments are the
+  Catalan numbers `C_{k/2}`, defined in `(2.88)`) and Lemma 2.3.15 (Catalan numbers count Dyck
+  words).
 * G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*,
   Cambridge University Press, 2010, §2.1.1.
 -/
@@ -172,7 +173,7 @@ private lemma integral_pow_semicircleReal (n : ℕ) :
   ring
 
 /-- **The even moments of the semicircle distribution are the Catalan numbers**:
-`∫ x^(2k) dσ(x) = C_k` (Tao, *Topics in Random Matrix Theory*, §2.4.1, `(2.88)`). -/
+`∫ x^(2k) dσ(x) = C_k` (Tao, *Topics in Random Matrix Theory*, §2.4.2, Exercise 2.4.9). -/
 theorem integral_pow_two_mul_semicircleReal (k : ℕ) :
     ∫ x, x ^ (2 * k) ∂semicircleReal = catalan k := by
   rw [integral_pow_semicircleReal, integral_cos_pow_two_mul_zero_pi]
@@ -221,7 +222,7 @@ theorem semicircleReal_compl_Icc : semicircleReal (Icc (-2 : ℝ) 2)ᶜ = 0 := b
     lintegral_zero_measure]
 
 /-- Every power `xᵏ` is integrable against the semicircle distribution, which is a finite measure
-supported in `[-2, 2]`, so its moments (Tao, *Topics in Random Matrix Theory*, `(2.88)`) are
+supported in `[-2, 2]`, so its moments (Tao, *Topics in Random Matrix Theory*, Exercise 2.4.9) are
 genuine integrals. -/
 theorem integrable_pow_semicircleReal (k : ℕ) :
     Integrable (fun x : ℝ => x ^ k) semicircleReal := by
@@ -231,7 +232,7 @@ theorem integrable_pow_semicircleReal (k : ℕ) :
   exact (continuous_pow k).integrableOn_Icc
 
 /-- **The semicircle distribution is determined by its moments** (Tao, *Topics in Random Matrix
-Theory*, §2.4.1). If a finite measure `ν` on `ℝ` has integrable even powers and the same moments
+Theory*, §2.4.2). If a finite measure `ν` on `ℝ` has integrable even powers and the same moments
 as the semicircle distribution `σ`, `∫ xᵏ dν = ∫ xᵏ dσ` for every `k`, then `ν = σ`. Its even
 moments are then the Catalan numbers `C_k ≤ 4ᵏ`, which confines `ν` to `[-2, 2]`, and compactly
 supported measures are determined by their moments. -/

@@ -5,7 +5,7 @@ $n \times n$ real matrix whose entries are independent, have mean zero and are b
 absolute value, and let $m$ be a median of $\|M\|$, the operator norm on Euclidean space. Then
 $$\mathbb{P}\big(\big|\|M\| - m\big| \ge \lambda\big) \le C e^{-c\lambda^2} \quad \text{for every }
 \lambda > 0.$$
-The constants do not depend on $n$, so $\|M\|$, which is of size $\sqrt{n}$, fluctuates by $O(1)$.
+The constants do not depend on $n$, so $\|M\|$, which is $O(\sqrt{n})$, fluctuates by $O(1)$.
 
 Tao's statement allows complex entries; this is the real case.
 

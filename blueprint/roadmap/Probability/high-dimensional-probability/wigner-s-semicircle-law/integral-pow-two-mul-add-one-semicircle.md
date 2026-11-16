@@ -5,4 +5,4 @@ $\int x^{2k+1} \, d\sigma(x) = 0$; in particular $\sigma$ has mean $0$. (The den
 
 ## Sources
 
-- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.1, equation (2.88).
+- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.2, Exercise 2.4.9.

@@ -1,7 +1,8 @@
 # Wigner's semicircle law
 
-For a Wigner matrix $W_n$ (real symmetric, with independent upper-triangular entries of mean $0$
-and variance $1$), the empirical spectral distribution of $W_n / \sqrt{n}$ converges almost surely
+For a Wigner matrix $W_n$ (real symmetric, with independent, identically distributed
+upper-triangular entries of mean $0$ and variance $1$; Tao's Theorem 2.4.2 allows the diagonal a
+different law), the empirical spectral distribution of $W_n / \sqrt{n}$ converges almost surely
 to the semicircle distribution $\sigma$, with density $\frac{1}{2\pi}\sqrt{4 - x^2}$ on $[-2, 2]$.
 The moment method proves it by showing that
 $\frac{1}{n}\mathbb{E}\operatorname{tr}(W_n/\sqrt{n})^{2k}$ tends to the Catalan number $C_k$,

@@ -26,6 +26,11 @@ second,
 
 As a consequence, counting measure on `[0, 1]` is not s-finite.
 
+Both factors carry the Borel σ-algebra of `ℝ` (restricted to `[0, 1]` by the measures). Tao's
+exercise uses the Lebesgue σ-algebra on the first factor and the discrete σ-algebra on the second;
+the diagonal is Borel, so the version here is slightly stronger. Tao's further part, the
+non-uniqueness of the product measure, is not formalised.
+
 ## Main results
 
 * `MeasureTheory.lintegral_lintegral_count_indicator_diagonal`: the first iterated integral is `1`.

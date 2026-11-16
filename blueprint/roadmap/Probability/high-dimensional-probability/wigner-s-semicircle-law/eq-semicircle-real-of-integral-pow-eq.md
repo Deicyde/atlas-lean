@@ -17,4 +17,4 @@ a common compact interval with the same moments are equal.
 
 ## Sources
 
-- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.1 and §2.2.3 (the moment method).
+- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §2.4.2 and §2.2.3 (the moment method).

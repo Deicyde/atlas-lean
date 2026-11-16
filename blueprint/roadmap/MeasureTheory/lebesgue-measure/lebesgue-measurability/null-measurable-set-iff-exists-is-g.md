@@ -7,4 +7,4 @@ set $G$ with $\mu(G \setminus E) = 0$, that is, iff $E$ is a $G_\delta$ set minu
 
 ## Sources
 
-- T. Tao, *An Introduction to Measure Theory*, Graduate Studies in Mathematics 126, American Mathematical Society, 2011, Lemma 1.2.13 and Exercise 1.2.7.
+- T. Tao, *An Introduction to Measure Theory*, Graduate Studies in Mathematics 126, American Mathematical Society, 2011, Exercise 1.2.19 (i) if and only if (ii).

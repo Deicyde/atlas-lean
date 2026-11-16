@@ -32,8 +32,9 @@ termwise, Cauchy–Schwarz, and the Hoffman–Wielandt inequality
 ## References
 
 * T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, AMS, 2012,
-  §1.3 (the Wielandt–Hoffman inequality (1.68)) and §2.4, where it reduces the semicircular law
-  to bounded entries.
+  §1.3 (the Wielandt–Hoffman inequality (1.68)) and §2.4.1, Lemma 2.4.3 (its distribution-function
+  form, used to reduce the semicircular law to bounded entries); the statement here is a
+  linear-statistics variant of Lemma 2.4.3.
 -/
 
 @[expose] public section
@@ -51,10 +52,10 @@ private lemma sum_eigenvalues_congr {E : Type*} [NormedAddCommGroup E] [InnerPro
   obtain rfl : m₁ = m₂ := h₁.symm.trans h₂
   rfl
 
-/-- **Lipschitz linear statistics of Hermitian spectra are stable** (Tao, *Topics in Random Matrix
-Theory*, §2.4, via the Wielandt–Hoffman inequality (1.68)). For Hermitian `n × n` matrices `A`,
-`B` with eigenvalues `λᵢ(A)`, `λᵢ(B)` (listed in any order, with multiplicity) and an
-`L`-Lipschitz `f : ℝ → ℝ`,
+/-- **Lipschitz linear statistics of Hermitian spectra are stable** (a linear-statistics variant of
+Tao, *Topics in Random Matrix Theory*, Lemma 2.4.3, via the Wielandt–Hoffman inequality (1.68)).
+For Hermitian `n × n` matrices `A`, `B` with eigenvalues `λᵢ(A)`, `λᵢ(B)` (listed in any order,
+with multiplicity) and an `L`-Lipschitz `f : ℝ → ℝ`,
 `|∑ᵢ f(λᵢ(A)) - ∑ᵢ f(λᵢ(B))| ≤ L √n (∑ᵢⱼ |Aᵢⱼ - Bᵢⱼ|²)^(1/2)`. -/
 theorem abs_sum_sub_sum_le_of_lipschitzWith {n : ℕ} {A B : Matrix (Fin n) (Fin n) ℂ}
     (hA : A.IsHermitian) (hB : B.IsHermitian) {f : ℝ → ℝ} {L : ℝ≥0} (hf : LipschitzWith L f) :

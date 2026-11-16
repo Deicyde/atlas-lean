@@ -35,7 +35,7 @@ of a compactly supported law is that law.
 ## References
 
 * T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, AMS, 2012,
-  §2.2.3 (the moment method) and §2.4.1, where these facts identify the limit in the
+  §2.2.3 (the moment method) and §2.4.2, where these facts identify the limit in the
   semicircular law.
 * P. Billingsley, *Probability and Measure*, 3rd ed., Wiley, 1995, Theorem 30.1 (a law determined
   by its moments); compact support is the simplest sufficient condition.
@@ -103,7 +103,8 @@ theorem measure_lt_abs_eq_zero_of_integral_pow_le {μ : Measure ℝ} [IsFiniteMe
 
 /-- **Compactly supported measures are determined by their moments.** Two finite measures on
 `ℝ` that give no mass outside `[a, b]` and have the same moments `∫ xᵏ` for every `k` are equal
-(Weierstrass approximation; Billingsley, *Probability and Measure*, 3rd ed., Theorem 30.1). -/
+(proved by Weierstrass approximation; for probability measures it is also implied by Billingsley,
+*Probability and Measure*, 3rd ed., Theorem 30.1). -/
 theorem ext_of_forall_integral_pow_eq_of_compl_Icc {μ ν : Measure ℝ} [IsFiniteMeasure μ]
     [IsFiniteMeasure ν] {a b : ℝ} (hμ : μ (Icc a b)ᶜ = 0) (hν : ν (Icc a b)ᶜ = 0)
     (heq : ∀ k : ℕ, ∫ x, x ^ k ∂μ = ∫ x, x ^ k ∂ν) : μ = ν := by

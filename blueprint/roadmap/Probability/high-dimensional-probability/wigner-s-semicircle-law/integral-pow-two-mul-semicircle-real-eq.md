@@ -14,4 +14,4 @@ These words encode the non-crossing pairings that survive in the moment method.
 
 ## Sources
 
-- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, Lemma 2.3.15 and §2.4.1.
+- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, Lemma 2.3.15, and §2.4.2, Exercise 2.4.9.

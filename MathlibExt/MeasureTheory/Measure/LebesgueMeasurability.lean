@@ -20,8 +20,8 @@ approximation by open sets"; Littlewood's first principle). Mathlib instead defi
 measurability as null-measurability for `volume`, that is, measurability for the completion of
 Lebesgue measure. This file proves that the two notions agree, for every outer regular,
 σ-finite measure on a topological space (Lebesgue measure on `ℝᵈ` among them), together with the
-equivalent forms "a `G_δ` set minus a null set" and "inner approximation by closed sets"
-(Tao, Exercise 1.2.7 (ii) and (iv), and the proof of Lemma 1.2.13).
+equivalent forms "a `G_δ` set minus a null set" (Tao, Exercise 1.2.19 (i) ⇔ (ii)) and "inner
+approximation by closed sets" (Tao, Exercise 1.2.7 (i) ⇔ (iv)).
 
 Mathlib's `MeasurableSet.exists_isOpen_sdiff_lt` gives the outer approximation only for measurable
 sets of finite measure; the σ-finite case uses the `ε / 2ⁿ` trick over a spanning sequence.
@@ -40,7 +40,7 @@ sets of finite measure; the σ-finite case uses the `ε / 2ⁿ` trick over a spa
 ## References
 
 * T. Tao, *An Introduction to Measure Theory*, Graduate Studies in Mathematics 126, AMS, 2011,
-  Definition 1.2.2, Lemma 1.2.13 and Exercise 1.2.7.
+  Definition 1.2.2, Lemma 1.2.13, Exercise 1.2.7 and Exercise 1.2.19.
 -/
 
 @[expose] public section
@@ -99,8 +99,8 @@ theorem NullMeasurableSet.exists_isOpen_measure_sdiff_le [μ.OuterRegular] [Sigm
       _ = ε := ENNReal.add_halves ε
 
 /-- If `E` is contained in open sets `U` with `μ (U \ E)` arbitrarily small, then `E` is the
-`G_δ` set `⋂ₙ Uₙ` minus a null set (Tao, *An Introduction to Measure Theory*, Lemma 1.2.13,
-proof of (v)). No regularity of `μ` is needed. -/
+`G_δ` set `⋂ₙ Uₙ` minus a null set (Tao, *An Introduction to Measure Theory*, Exercise 1.2.19
+(i) ⇒ (ii), by the argument in the proof of Lemma 1.2.13 (v)). No regularity of `μ` is needed. -/
 theorem exists_isGδ_of_forall_exists_isOpen
     (h : ∀ ε : ℝ≥0∞, ε ≠ 0 → ∃ U, E ⊆ U ∧ IsOpen U ∧ μ (U \ E) ≤ ε) :
     ∃ G, IsGδ G ∧ E ⊆ G ∧ μ (G \ E) = 0 := by
@@ -109,7 +109,8 @@ theorem exists_isGδ_of_forall_exists_isOpen
   refine nonpos_iff_eq_zero.mp (ge_of_tendsto' ENNReal.tendsto_inv_nat_nhds_zero fun n => ?_)
   exact (measure_mono (sdiff_subset_sdiff_left (iInter_subset _ n))).trans (hUle n)
 
-/-- A subset of a `G_δ` set `G` with `μ (G \ E) = 0` is null-measurable. -/
+/-- A subset of a `G_δ` set `G` with `μ (G \ E) = 0` is null-measurable (Tao, *An Introduction to
+Measure Theory*, Exercise 1.2.19 (ii) ⇒ (i)). -/
 theorem nullMeasurableSet_of_isGδ [OpensMeasurableSpace α] {G : Set α} (hG : IsGδ G)
     (hEG : E ⊆ G) (h0 : μ (G \ E) = 0) : NullMeasurableSet E μ := by
   have : E = G \ (G \ E) := by
@@ -138,8 +139,9 @@ theorem nullMeasurableSet_iff_forall_exists_isOpen [OpensMeasurableSpace α] [μ
     NullMeasurableSet E μ ↔ ∀ ε : ℝ≥0∞, ε ≠ 0 → ∃ U, E ⊆ U ∧ IsOpen U ∧ μ (U \ E) ≤ ε :=
   ⟨fun hE _ hε => hE.exists_isOpen_measure_sdiff_le hε, nullMeasurableSet_of_forall_exists_isOpen⟩
 
-/-- **Measurable sets are `G_δ` sets up to null sets.** For an outer regular, σ-finite measure,
-`E` is null-measurable iff `E ⊆ G` for some `G_δ` set `G` with `μ (G \ E) = 0`. -/
+/-- **Measurable sets are `G_δ` sets up to null sets** (Tao, *An Introduction to Measure Theory*,
+Exercise 1.2.19 (i) ⇔ (ii)). For an outer regular, σ-finite measure, `E` is null-measurable iff
+`E ⊆ G` for some `G_δ` set `G` with `μ (G \ E) = 0`. -/
 theorem nullMeasurableSet_iff_exists_isGδ [OpensMeasurableSpace α] [μ.OuterRegular]
     [SigmaFinite μ] :
     NullMeasurableSet E μ ↔ ∃ G, IsGδ G ∧ E ⊆ G ∧ μ (G \ E) = 0 :=

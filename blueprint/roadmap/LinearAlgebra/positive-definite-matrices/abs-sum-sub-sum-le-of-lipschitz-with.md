@@ -25,4 +25,5 @@ apply Cauchy–Schwarz, and conclude with the Hoffman–Wielandt inequality.
 
 ## Sources
 
-- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §1.3, inequality (1.68), and §2.4.
+- T. Tao, *Topics in Random Matrix Theory*, Graduate Studies in Mathematics 132, American Mathematical Society, 2012, §1.3, inequality (1.68), and §2.4.1, Lemma 2.4.3 (the distribution-function form of this
+  estimate); the statement here is its linear-statistics variant.
