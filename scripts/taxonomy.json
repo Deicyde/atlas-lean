@@ -26,7 +26,7 @@
    "description": "Algebraic geometry studies spaces cut out by polynomial equations and translates between their geometric and algebraic invariants.",
    "fields": [
     {"slug": "schemes-and-morphisms", "title": "Schemes and morphisms", "description": "The scheme-theoretic foundations of algebraic geometry: points, immersions, smooth morphisms, varieties over a field and properties that persist under base change.", "msc": ["14A15", "14A10", "14B25"], "subfields": []},
-    {"slug": "varieties-and-projective-geometry", "title": "Varieties and projective geometry", "description": "Classical algebraic geometry of affine and projective varieties: hypersurfaces and their singularities, tangent spaces, plane configurations, intersection multiplicities, linear systems and birational maps.", "msc": ["14N05", "14J70", "14C17", "14C20", "14E07"], "subfields": []},
+    {"slug": "varieties-and-projective-geometry", "title": "Varieties and projective geometry", "description": "Classical algebraic geometry of affine and projective varieties: hypersurfaces and their singularities, tangent spaces, plane configurations, intersection multiplicities, counts of solutions of sparse polynomial systems, tropical varieties, linear systems and birational maps.", "msc": ["14N05", "14J70", "14C17", "14C20", "14E07"], "subfields": []},
     {"slug": "algebraic-curves", "title": "Algebraic curves", "description": "Algebraic curves and their invariants, including divisors, the genus, Jacobians and the Abel–Jacobi map.", "msc": ["14H05", "14H40", "14K30"], "subfields": []},
     {"slug": "elliptic-curves", "title": "Elliptic curves", "description": "Elliptic curves given by Weierstrass equations, their points over finite fields and number fields, torsion, reduction and Galois representations.", "msc": ["14H52", "11G05", "11G07", "11G20"], "subfields": []},
     {"slug": "arithmetic-geometry", "title": "Arithmetic geometry", "description": "Rational points and point counts of varieties over number fields and finite fields, including the Mordell conjecture and the Weil conjectures.", "msc": ["14G05", "14G15", "11G30", "14G10"], "subfields": []}
@@ -4595,6 +4595,7 @@
   "WantedExt/Algebra/SolvableByRadicalsWanted": {"to": "FieldTheory/galois-theory", "title": "Solvability by radicals"},
   "WantedExt/Algebra/SturmWanted": {"to": "Algebra/zeros-of-polynomials", "title": "Sturm's theorem"},
   "WantedExt/Algebra/VirtualQuandleWanted": {"to": "Algebra/nonassociative-algebras", "title": "Virtual racks and quandles"},
+  "WantedExt/AlgebraicGeometry/BernsteinWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Bernstein's theorem on sparse polynomial systems"},
   "WantedExt/AlgebraicGeometry/BezoutWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Bézout's theorem"},
   "WantedExt/AlgebraicGeometry/DirectSummandWanted": {"to": "RingTheory/modules", "title": "Direct summand theorem"},
   "WantedExt/AlgebraicGeometry/EllipticCurve/MazurTorsionBoundWanted": {"to": "NumberTheory/arithmetic-geometry", "title": "Mazur's torsion theorem"},
@@ -4604,6 +4605,7 @@
   "WantedExt/AlgebraicGeometry/JacobianChallengeWanted": {"to": "AlgebraicGeometry/algebraic-curves", "title": "Jacobians of curves"},
   "WantedExt/AlgebraicGeometry/MotivicInvariantsWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Birational maps and the Cremona group"},
   "WantedExt/AlgebraicGeometry/SeshadriConstantWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Seshadri constants of points in the plane"},
+  "WantedExt/AlgebraicGeometry/TropicalVarietyWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Tropical varieties"},
   "WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Topological reconstruction of varieties"},
   "WantedExt/AlgebraicGeometry/WeilConjecturesWanted": {"to": "AlgebraicGeometry/arithmetic-geometry", "title": "Weil conjectures"},
   "WantedExt/Analysis/AMR22Problem7082Wanted": {"to": "Analysis/complex-analysis/geometric-function-theory", "title": "Holomorphic motions"},

@@ -1,7 +1,8 @@
 # Varieties and projective geometry
 
-Classical algebraic geometry of affine and projective varieties: hypersurfaces and their singularities, tangent spaces, plane configurations, intersection multiplicities, linear systems and birational maps.
+Classical algebraic geometry of affine and projective varieties: hypersurfaces and their singularities, tangent spaces, plane configurations, intersection multiplicities, counts of solutions of sparse polynomial systems, tropical varieties, linear systems and birational maps.
 
+- [Bernstein's theorem on sparse polynomial systems](bernstein-s-theorem-on-sparse-polynomial-systems/README.md)
 - [Birational maps and the Cremona group](birational-maps-and-the-cremona-group/README.md)
 - [Bézout's theorem](b-zout-s-theorem/README.md)
 - [Cubic surfaces](cubic-surfaces/README.md)
@@ -13,3 +14,4 @@ Classical algebraic geometry of affine and projective varieties: hypersurfaces a
 - [Seshadri constants of points in the plane](seshadri-constants-of-points-in-the-plane/README.md)
 - [Tangent spaces of algebraic sets](tangent-spaces-of-algebraic-sets/README.md)
 - [Topological reconstruction of varieties](topological-reconstruction-of-varieties/README.md)
+- [Tropical varieties](tropical-varieties/README.md)
