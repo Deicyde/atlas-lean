@@ -11,6 +11,15 @@
 - [Constant unit steps achieve exponent one](gradient-descent-uniform-rate-one.md)
 - [The gradient descent exponent is at least one](one-le-gradient-descent-exponent.md)
 - [Gradient descent with zero step sizes stays put](gradient-descent-trajectory-zero-schedul.md)
+- [Descent lemma](gradient-descent-descent-lemma.md)
+- [Sufficient decrease of a gradient step](gradient-descent-sufficient-decrease.md)
+
+## Strongly convex functions
+
+- [First-order condition for strong convexity](add-inner-add-le-of-strong-convex-on.md)
+- [Suboptimality bound from strong convexity](sub-le-norm-sq-div-of-strong-convex-on.md)
+- [Strong convexity modulus is at most the smoothness constant](le-of-strong-convex-on-of-lipschitz-with.md)
+- [Linear convergence of gradient descent for strongly convex functions](gradient-descent-strongly-convex-linear.md)
 
 ## Related topics
 

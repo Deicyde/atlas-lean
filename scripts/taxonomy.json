@@ -1741,6 +1741,7 @@
   "MathlibExt/Analysis/Convex/FirstOrderCondition": {"to": "Analysis/convex-analysis-and-variations", "title": "First-order conditions for convexity and optimality"},
   "MathlibExt/Analysis/Convex/GradientDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/GradientDescentExponent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
+  "MathlibExt/Analysis/Convex/GradientDescentStronglyConvex": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/HannerPolytope": {"to": "Geometry/convex-geometry", "title": "Hanner polytopes"},
   "MathlibExt/Analysis/Convex/HermiteHadamard": {"to": "Analysis/inequalities", "title": "Hermite–Hadamard inequality"},
   "MathlibExt/Analysis/Convex/KKM": {"to": "Geometry/convex-geometry", "title": "Knaster–Kuratowski–Mazurkiewicz lemma"},
