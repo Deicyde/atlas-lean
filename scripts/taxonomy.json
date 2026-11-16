@@ -4158,6 +4158,7 @@
   "MathlibExt/RingTheory/Localization/RegularAt": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Regular functions on algebraic sets"},
   "MathlibExt/RingTheory/Localization/Submodule": {"to": "RingTheory/ideals-and-constructions", "title": "Localization of ideals and submodules"},
   "MathlibExt/RingTheory/MvPolynomial/BuchbergerCriterion": {"to": "RingTheory/ideals-and-constructions", "title": "Gröbner bases"},
+  "MathlibExt/RingTheory/MvPolynomial/Elimination": {"to": "RingTheory/ideals-and-constructions", "title": "Gröbner bases"},
   "MathlibExt/RingTheory/MvPolynomial/GroebnerBasis": {"to": "RingTheory/ideals-and-constructions", "title": "Gröbner bases"},
   "MathlibExt/RingTheory/MvPowerSeries/AdicComplete": {"to": "RingTheory/local-rings", "title": "Adic completion"},
   "MathlibExt/RingTheory/MvPowerSeries/CoefficientOperator": {"to": "RingTheory/formal-power-series", "title": "Exponentials of coefficient operators"},
