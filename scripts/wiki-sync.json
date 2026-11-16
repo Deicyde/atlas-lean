@@ -702,6 +702,7 @@
 "CSLibExt.MachineLearning.NeuralNetworks.barron_direct_approximation": "15663ad498237110",
 "CSLibExt.MachineLearning.NeuralNetworks.barron_inverse_approximation": "21868654c4b83f3a",
 "CSLibExt.MachineLearning.NeuralNetworks.reluNeuron": "f4fd63d93f0053b0",
+"CSLibExt.MachineLearning.NeuralNetworks.residualNetwork_flow_error_le": "07f0e796202e4825",
 "CSLibExt.MachineLearning.NeuralNetworks.unitCube": "53d5d6c1996cd08f",
 "Cardinal.IsInaccessible.beth_lt": "28273feb4fed260c",
 "Cardinal.IsStrongLimit.power_lt": "add082582730bce5",
