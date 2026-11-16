@@ -22159,6 +22159,8 @@
 "MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_connected_mu_zero_complete": "0366b7a16834c590",
 "MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_nonprincipal_eigenvalue_quadratic": "054cfbbe57ed2f4c",
 "MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_reachable_eq_or_adj_mu_zero": "ad923f2e4e43ea23",
+"MathlibExt.Combinatorics.SimpleGraph.TuranDensityComplete.turanDensity_completeGraph": "0cabcf3ad18aec52",
+"MathlibExt.Combinatorics.SimpleGraph.TuranDensityComplete.turanNumber_lower_bound": "cf71b5303c126403",
 "MathlibExt.Combinatorics.SimplicialSphereShared.FiniteSimplicialSphere": "0c8d2d8bc1b322c4",
 "MathlibExt.Combinatorics.SimplicialSphereShared.extendedFaceCount": "c009bada7c32bd68",
 "MathlibExt.Combinatorics.SimplicialSphereShared.faceCount": "7a2b685bf25c63db",
