@@ -7,3 +7,4 @@ Noncooperative game theory studies strategic games in which each player chooses 
 - [Potential games](potential-games/README.md)
 - [No-regret dynamics](no-regret-dynamics/README.md)
 - [Atomic congestion games with affine delays](atomic-congestion-games-with-affine-delays/README.md)
+- [Nash's theorem](nash-s-theorem/README.md)
