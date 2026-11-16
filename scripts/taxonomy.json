@@ -3951,6 +3951,7 @@
   "MathlibExt/Probability/SqMartingaleConvergence": {"to": "Probability/martingales", "title": "Martingale convergence theorems"},
   "MathlibExt/Probability/StableDistribution": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Stable distributions and domains of attraction"},
   "MathlibExt/Probability/Statistics/BasisPursuit": {"to": "Probability/linear-models-multivariate", "title": "Exact recovery by basis pursuit"},
+  "MathlibExt/Probability/Statistics/Assouad": {"to": "Probability/statistical-estimation", "title": "Minimax lower bounds"},
   "MathlibExt/Probability/Statistics/CochranQ": {"to": "Probability/hypothesis-testing", "title": "Meta-analysis"},
   "MathlibExt/Probability/Statistics/Contiguity": {"to": "Probability/statistical-estimation", "title": "Contiguity and Le Cam's lemmas"},
   "MathlibExt/Probability/Statistics/EstimationRisk": {"to": "Probability/statistical-estimation", "title": "Bias and mean squared error of estimators"},
