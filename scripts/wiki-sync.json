@@ -15717,6 +15717,7 @@
 "MathlibExt.Analysis.ContinuumLimsupConstantWanted.conjecture_holds": "a48c64b9868ba41a",
 "MathlibExt.Analysis.Convex.ChoquetWanted.choquet_representation": "c69c6a3502e2985e",
 "MathlibExt.Analysis.Convex.ChoquetWanted.choquet_representation_of_isCompact": "479547bebd0b8c29",
+"MathlibExt.Analysis.Convex.DualViaConjugate.dualFunction_linear_eq_neg_sub_fenchelConj": "8f20d606e5f1cdb9",
 "MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.extremePoints_closedBall_continuousMap": "7044240c8eba85e6",
 "MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.mem_extremePoints_closedBall_continuousMap": "81324168a3a3fee7",
 "MathlibExt.Analysis.Convex.ExtremePointsLpBalls.extremePoints_closedBall_piLp_one": "5a1f1252bd4a9b10",

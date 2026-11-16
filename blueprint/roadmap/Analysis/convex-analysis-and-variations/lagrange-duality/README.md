@@ -23,6 +23,10 @@ Equality constraints are not covered yet: Boyd–Vandenberghe's Slater theorem a
 - [Strong duality under Slater's condition](dual-value-eq-primal-value-of-slater.md)
 - [Dual attainment under Slater's condition](exists-dual-function-eq-primal-value-of.md)
 
+## Duals through conjugates
+
+- [The dual function of a linearly constrained problem is minus a conjugate](dual-function-linear-eq-neg-sub-fenchel.md)
+
 ## Optimality conditions
 
 - [Convexity of the Lagrangian](convex-on-lagrangian.md)
