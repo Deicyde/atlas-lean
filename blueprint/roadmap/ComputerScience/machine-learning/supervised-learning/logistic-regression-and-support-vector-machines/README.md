@@ -11,8 +11,14 @@ Training a linear classifier is a convex optimization problem for the two standa
 - [The support vector machine is a convex problem](convex-on-svm-objective.md)
 - [The hinge loss bounds the number of misclassified examples](card-misclassified-le-sum-hinge.md)
 
+With a kernel $k$, the linear predictor $x \mapsto x^{\mathsf T} w$ is replaced by a function $f$ of the reproducing kernel Hilbert space of $k$, penalized by $\|f\|^2$. By the representer theorem every minimizer is a finite kernel expansion $f = \sum_i \alpha_i k(\cdot, x_i)$, the support vector expansion, so the problem reduces to the $m$ coefficients $\alpha_i$ and the offset.
+
+- [Soft-margin support vector machine objective with offset](svm-risk.md)
+- [The support vector expansion](exists-eq-kernel-expansion-of-is-minimiz.md)
+
 ## Related topics
 
 - [Least squares, ridge and lasso regression](../least-squares-ridge-and-lasso-regression/README.md)
 - [Cross-entropy loss](../cross-entropy-loss/README.md)
 - [Lagrange duality](../../../../Analysis/convex-analysis-and-variations/lagrange-duality/README.md)
+- [Representer theorem](../../../../Analysis/hilbert-spaces/representer-theorem/README.md): the general statement behind the support vector expansion, for any loss of the values $f(x_i)$ and any strictly increasing function of $\|f\|$.

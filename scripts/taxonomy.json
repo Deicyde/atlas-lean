@@ -1879,6 +1879,7 @@
   "MathlibExt/Analysis/FunctionalAnalysis/Pitt": {"to": "Analysis/banach-spaces/sequence-spaces", "title": "Pitt's theorem"},
   "MathlibExt/Analysis/FunctionalAnalysis/RankOneSpectrum": {"to": "Analysis/operator-theory/spectral-theory", "title": "Spectrum of rank-one operators"},
   "MathlibExt/Analysis/FunctionalAnalysis/RepresenterTheorem": {"to": "Analysis/hilbert-spaces", "title": "Representer theorem"},
+  "MathlibExt/Analysis/FunctionalAnalysis/SupportVectorExpansion": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Logistic regression and support vector machines"},
   "MathlibExt/Analysis/FunctionalAnalysis/RieszThorin": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Riesz–Thorin interpolation theorem"},
   "MathlibExt/Analysis/FunctionalAnalysis/Rolewicz": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Rolewicz backward shifts"},
   "MathlibExt/Analysis/FunctionalAnalysis/RolewiczPeriodic": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Rolewicz backward shifts"},

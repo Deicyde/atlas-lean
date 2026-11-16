@@ -16878,6 +16878,8 @@
 "MathlibExt.Analysis.FunctionalAnalysis.ScottishBook91Wanted.ScottishBookProblem91Claim": "ed85f4b8638b7497",
 "MathlibExt.Analysis.FunctionalAnalysis.ScottishBook91Wanted.mazur91_refuted": "d4cd7f66fba9b4b6",
 "MathlibExt.Analysis.FunctionalAnalysis.SobolevTraceR3PlaneBoundedWanted.exists_bound_integral_sq_trace_of_integral_sq_add_fderiv_sq_le_one": "eee1ee216c1ac97a",
+"MathlibExt.Analysis.FunctionalAnalysis.SupportVectorExpansion.exists_eq_kernelExpansion_of_isMinimizer_svmRisk": "dc96af9aa30834bd",
+"MathlibExt.Analysis.FunctionalAnalysis.SupportVectorExpansion.svmRisk": "e82a52cdfbecb239",
 "MathlibExt.Analysis.FunctionalAnalysis.SymmetricOperatorToDualBoundedWanted.exists_bound_of_symmetric_linearMap_to_strongDual": "76fa15583ae8d89e",
 "MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.bijective_tikhonovOperator": "60dd52afcd2fd465",
 "MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.eq_of_isMinOn_tikhonovFunctional": "93e0c80a705410f5",
