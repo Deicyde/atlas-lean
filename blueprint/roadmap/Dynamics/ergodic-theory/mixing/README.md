@@ -12,6 +12,7 @@ mixing examples.
 - [Mixing maps are totally ergodic](ergodic-iterate.md)
 - [The one-sided left shift](shift.md)
 - [Iterates of the shift](shift-iterate-apply.md)
+- [The two-sided left shift](two-sided-shift.md)
 - [The shift is measurable](measurable-shift.md)
 - [The shift preserves the product measure](measure-preserving-shift.md)
 - [A cylinder event is independent of the far future](measure-cylinder-inter-preimage-iterate.md)

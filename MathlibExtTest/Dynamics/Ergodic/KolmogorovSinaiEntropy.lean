@@ -44,4 +44,14 @@ example {α β : Type*} [MeasurableSpace α] [MeasurableSpace β] {μ : Measure 
     (e.measurable.comp (hT.comp e.symm.measurable)) fun x => ?_
   simp
 
+-- The identity, hence any map isomorphic to it, has zero entropy.
+example {α : Type*} [MeasurableSpace α] (μ : Measure α) : ksEntropy μ id = 0 :=
+  ksEntropy_id μ
+
+-- Under the identity the refinement of the trivial partition keeps entropy `0`.
+example {α : Type*} [MeasurableSpace α] (μ : Measure α) [IsProbabilityMeasure μ] :
+    partitionEntropy μ (iterateJoin id (fun _ : Fin 1 => (Set.univ : Set α)) 5) = 0 := by
+  rw [partitionEntropy_iterateJoin_id (isMeasurablePartition_univ μ) (by norm_num)]
+  simp [partitionEntropy]
+
 end MathlibExtTest.Dynamics.Ergodic.KolmogorovSinaiEntropy

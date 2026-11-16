@@ -21,6 +21,8 @@ $(\tfrac12, \tfrac12)$ are not isomorphic.
 - [Relative entropy of a pulled-back partition](entropy-rel-preimage.md)
 - [Entropy does not increase under factors](ks-entropy-le-of-factor.md)
 - [Entropy is an isomorphism invariant](ks-entropy-eq-of-isomorphic.md)
+- [Refinements under the identity](partition-entropy-iterate-join-id.md)
+- [The identity has zero entropy](ks-entropy-id.md)
 - [Sinai's generator theorem](ks-entropy-eq-entropy-rel-of-is-generato.md)
 - [Sinai's generator theorem, noninvertible case](ks-entropy-eq-entropy-rel-of-is-strong-g.md)
 - [Entropy of a product distribution on words](sum-neg-mul-log-prod.md)
@@ -33,6 +35,8 @@ $(\tfrac12, \tfrac12)$ are not isomorphic.
 - [Lower bound for the entropy of a Bernoulli shift](of-real-le-ks-entropy-shift.md)
 - [Entropy of a Bernoulli shift](ks-entropy-bernoulli-shift.md)
 - [Kolmogorov's non-isomorphism of Bernoulli schemes](not-isomorphic-bernoulli-uniform-three-t.md)
+- [Ornstein's isomorphism theorem](ornstein-isomorphism.md)
+- [The irrational rotation has entropy zero](ks-entropy-add-circle-rotation-eq-zero.md)
 
 ## Related topics
 

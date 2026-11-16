@@ -58,6 +58,10 @@ variable {S : Type*} [MeasurableSpace S]
 `x = (x 0, x 1, x 2, …)` in `ℕ → S`. -/
 def shift (x : ℕ → S) : ℕ → S := fun n => x (n + 1)
 
+/-- **The two-sided left shift.** `twoSidedShift x = (n ↦ x (n + 1))` on bi-infinite sequences
+`x : ℤ → S`; it is invertible, the setting of invertible Bernoulli schemes. -/
+def twoSidedShift (x : ℤ → S) : ℤ → S := fun n => x (n + 1)
+
 omit [MeasurableSpace S] in
 /-- **Iterates of the shift.** `(shift^[n] x) k = x (k + n)`. -/
 theorem shift_iterate_apply (n : ℕ) (x : ℕ → S) (k : ℕ) : shift^[n] x k = x (k + n) := by

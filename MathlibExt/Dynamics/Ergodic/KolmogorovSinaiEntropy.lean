@@ -36,6 +36,7 @@ empty atoms contribute `negMulLog 0 = 0`. The entropy takes values in `ℝ≥0�
 * `ksEntropy_le_of_factor`: a factor has at most the entropy of the system.
 * `ksEntropy_eq_of_isomorphic`: Kolmogorov–Sinai entropy is an invariant of measure-theoretic
   isomorphism.
+* `ksEntropy_id`: the identity has zero entropy.
 
 ## References
 
@@ -51,7 +52,7 @@ empty atoms contribute `negMulLog 0 = 0`. The entropy takes values in `ℝ≥0�
 
 namespace MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy
 
-open MeasureTheory Filter
+open MeasureTheory Filter Topology
 open scoped ENNReal
 
 variable {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]
@@ -186,5 +187,54 @@ theorem ksEntropy_eq_of_isomorphic {μ : Measure α} {ν : Measure β} {T : α �
     apply e.injective
     rw [hconj (e.symm y), e.apply_symm_apply, e.apply_symm_apply]
   exact ksEntropy_le_of_factor (he.symm e) hT hconj'
+
+/-- **Refinements under the identity.** For the identity map and `n ≥ 1`, the dynamical
+refinement `ξ ∨ ξ ∨ ⋯ ∨ ξ` of a measurable partition has the same entropy as `ξ`: the atom of
+a constant word `(i, …, i)` is `ξ i`, and the atom of a non-constant word is contained in the
+intersection of two distinct atoms, a null set. -/
+theorem partitionEntropy_iterateJoin_id {μ : Measure α} {r : ℕ} {ξ : Fin r → Set α}
+    (hξ : IsMeasurablePartition μ ξ) {n : ℕ} (hn : n ≠ 0) :
+    partitionEntropy μ (iterateJoin id ξ n) = partitionEntropy μ ξ := by
+  classical
+  have hconst : Function.Injective (fun (i : Fin r) (_ : Fin n) => i) := fun i j h => by
+    simpa using congrFun h ⟨0, Nat.pos_of_ne_zero hn⟩
+  have hzero : ∀ w : Fin n → Fin r, w ∉ Finset.univ.image (fun (i : Fin r) (_ : Fin n) => i) →
+      Real.negMulLog (μ (iterateJoin id ξ n w)).toReal = 0 := by
+    intro w hw
+    have hnc : ∃ k₁ k₂, w k₁ ≠ w k₂ := by
+      by_contra h
+      push Not at h
+      exact hw (Finset.mem_image.2 ⟨w ⟨0, Nat.pos_of_ne_zero hn⟩, Finset.mem_univ _,
+        funext fun k => h _ _⟩)
+    obtain ⟨k₁, k₂, hk⟩ := hnc
+    have hsub : iterateJoin id ξ n w ⊆ ξ (w k₁) ∩ ξ (w k₂) := fun x hx => by
+      simp only [iterateJoin, Function.iterate_id, Set.preimage_id, Set.mem_iInter] at hx
+      exact ⟨hx k₁, hx k₂⟩
+    have h0 : μ (iterateJoin id ξ n w) = 0 := measure_mono_null hsub (hξ.aedisjoint hk)
+    simp [h0]
+  unfold partitionEntropy
+  rw [← Finset.sum_subset (Finset.subset_univ _) fun w _ hw => hzero w hw,
+    Finset.sum_image fun i _ j _ h => hconst h]
+  refine Finset.sum_congr rfl fun i _ => ?_
+  have : iterateJoin id ξ n (fun _ => i) = ξ i := by
+    have : Nonempty (Fin n) := ⟨⟨0, Nat.pos_of_ne_zero hn⟩⟩
+    simp only [iterateJoin, Function.iterate_id, Set.preimage_id]
+    exact Set.iInter_const _
+  rw [this]
+
+/-- **The identity has zero entropy.** For every measure `μ`, `h_μ(id) = 0`: the dynamical
+refinements of a finite partition under the identity have bounded entropy, so their entropy
+per step tends to `0`. -/
+theorem ksEntropy_id (μ : Measure α) : ksEntropy μ id = 0 := by
+  refine le_antisymm (iSup_le fun r => iSup_le fun ξ => iSup_le fun hξ => ?_) bot_le
+  refine le_of_eq ?_
+  unfold entropyRel
+  refine Tendsto.limsup_eq ?_
+  have hlim : Tendsto (fun n : ℕ => ENNReal.ofReal (partitionEntropy μ ξ / n)) atTop (𝓝 0) := by
+    rw [← ENNReal.ofReal_zero]
+    exact ENNReal.tendsto_ofReal (tendsto_const_div_atTop_nhds_zero_nat _)
+  refine hlim.congr' ?_
+  filter_upwards [eventually_ne_atTop 0] with n hn
+  rw [partitionEntropy_iterateJoin_id hξ hn]
 
 end MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy
