@@ -34,7 +34,9 @@ $\delta \in (0, 1]$, is derived.
 
 This reduces a high-probability bound on the uniform deviation to a bound on its expectation, which
 is controlled separately, for example by symmetrization with Rademacher complexities in the source;
-this page does not cover that step.
+this page does not cover that step. The [Rademacher complexity](rademacher-complexity/README.md)
+topic develops the complexity side, and [the Rademacher risk bound](rademacher-complexity/risk-le-empirical-add-rademacher.md)
+records the combined statement of Bartlett and Mendelson, with this inequality as its first step.
 
 Only a restricted case matches a statement formalized in this library: examples taking finitely many
 values, with the one-sided upper tail. In that case the bound above is the library's finite i.i.d.
