@@ -144,15 +144,16 @@ def refl (U : ℝ ⥤ C) {δ : ℝ} (hδ : 0 ≤ δ) : Interleaving U U δ where
   ψ_comp_φ t := by simp only [← Functor.map_comp]; rfl
   φ_comp_ψ t := by simp only [← Functor.map_comp]; rfl
 
-/-- In a functor out of `ℝ`, composites of structure maps depend only on their endpoints. -/
-private theorem map_comp_map_eq {U : ℝ ⥤ C} {a b c : ℝ} (f : a ⟶ b) (g : b ⟶ c) (h : a ⟶ c) :
-    U.map f ≫ U.map g = U.map h := by
+/-- In a functor out of `ℝ`, the composite of two structure maps is the structure map. -/
+private theorem map_homOfLE_comp {U : ℝ ⥤ C} {a b c : ℝ} (h₁ : a ≤ b) (h₂ : b ≤ c) :
+    U.map (homOfLE h₁) ≫ U.map (homOfLE h₂) = U.map (homOfLE (h₁.trans h₂)) := by
   rw [← U.map_comp]
   rfl
 
-private theorem map_comp_map_eq_assoc {U : ℝ ⥤ C} {a b c : ℝ} (f : a ⟶ b) (g : b ⟶ c)
-    (h : a ⟶ c) {Z : C} (x : U.obj c ⟶ Z) : U.map f ≫ U.map g ≫ x = U.map h ≫ x := by
-  rw [← Category.assoc, map_comp_map_eq f g h]
+private theorem map_homOfLE_comp_assoc {U : ℝ ⥤ C} {a b c : ℝ} (h₁ : a ≤ b) (h₂ : b ≤ c)
+    {Z : C} (x : U.obj c ⟶ Z) :
+    U.map (homOfLE h₁) ≫ U.map (homOfLE h₂) ≫ x = U.map (homOfLE (h₁.trans h₂)) ≫ x := by
+  rw [← Category.assoc, map_homOfLE_comp]
 
 /-- **Triangle inequality for interleavings.** A `δ₁`-interleaving between `U` and `V` and a
 `δ₂`-interleaving between `V` and `W` compose to a `(δ₁ + δ₂)`-interleaving between `U` and `W`,
@@ -166,27 +167,23 @@ def trans {U V W : ℝ ⥤ C} {δ₁ δ₂ : ℝ} (e₁ : Interleaving U V δ₁
   φ_natural s t h := by
     rw [← Category.assoc, e₁.φ_natural s t h, Category.assoc,
       reassoc_of% (e₂.φ_natural (s + δ₁) (t + δ₁) (by linarith)),
-      map_comp_map_eq, Category.assoc, Category.assoc, map_comp_map_eq]
-    exact homOfLE (by linarith [e₁.nonneg, e₂.nonneg])
+      map_homOfLE_comp, Category.assoc, Category.assoc, map_homOfLE_comp]
   ψ_natural s t h := by
     rw [← Category.assoc, e₂.ψ_natural s t h, Category.assoc,
       reassoc_of% (e₁.ψ_natural (s + δ₂) (t + δ₂) (by linarith)),
-      map_comp_map_eq, Category.assoc, Category.assoc, map_comp_map_eq]
-    exact homOfLE (by linarith [e₁.nonneg, e₂.nonneg])
+      map_homOfLE_comp, Category.assoc, Category.assoc, map_homOfLE_comp]
   ψ_comp_φ t := by
     simp only [Category.assoc]
     rw [reassoc_of% (e₂.ψ_natural (t + δ₁ + δ₂) (t + (δ₁ + δ₂)) (le_of_eq (add_assoc t δ₁ δ₂))),
-      reassoc_of% (e₂.ψ_comp_φ (t + δ₁)), map_comp_map_eq_assoc,
+      reassoc_of% (e₂.ψ_comp_φ (t + δ₁)), map_homOfLE_comp_assoc,
       reassoc_of% (e₁.ψ_natural (t + δ₁) (t + (δ₁ + δ₂) + δ₂) (by linarith [e₂.nonneg])),
-      reassoc_of% (e₁.ψ_comp_φ t), map_comp_map_eq_assoc, map_comp_map_eq]
-    exact homOfLE (by linarith [e₁.nonneg, e₂.nonneg])
+      reassoc_of% (e₁.ψ_comp_φ t), map_homOfLE_comp_assoc, map_homOfLE_comp]
   φ_comp_ψ t := by
     simp only [Category.assoc]
     rw [reassoc_of% (e₁.φ_natural (t + δ₂ + δ₁) (t + (δ₁ + δ₂)) (le_of_eq (by ring))),
-      reassoc_of% (e₁.φ_comp_ψ (t + δ₂)), map_comp_map_eq_assoc,
+      reassoc_of% (e₁.φ_comp_ψ (t + δ₂)), map_homOfLE_comp_assoc,
       reassoc_of% (e₂.φ_natural (t + δ₂) (t + (δ₁ + δ₂) + δ₁) (by linarith [e₁.nonneg])),
-      reassoc_of% (e₂.φ_comp_ψ t), map_comp_map_eq_assoc, map_comp_map_eq]
-    exact homOfLE (by linarith [e₁.nonneg, e₂.nonneg])
+      reassoc_of% (e₂.φ_comp_ψ t), map_homOfLE_comp_assoc, map_homOfLE_comp]
 
 end Interleaving
 
@@ -203,9 +200,17 @@ matched bars have endpoints within `δ` (measured here by the Hausdorff distance
 intervals, which for intervals of `ℝ` is the `ℓ^∞` distance between the endpoint pairs, with
 infinite endpoints compared as in the source) and every unmatched bar has length at most `2δ`,
 i.e. lies within `δ` of the diagonal (Chazal, de Silva, Glisse and Oudot, arXiv:1207.3674, §4.2,
-the definition of a partial matching and of a `δ`-matching, for the undecorated diagrams). -/
+the definition of a partial matching and of a `δ`-matching, for the undecorated diagrams).
+
+The scale is required to be nonnegative, as for interleavings (§3.2, "Let `δ ≥ 0`"): the bottleneck
+distance is an infimum over such `δ`, and without the sign condition the truncation
+`ENNReal.ofReal δ = 0` would let a negative `δ` match identical bars. The identification of the
+Hausdorff distance with the endpoint distance is for nonempty order-connected sets; for closed
+bounded intervals it is `hausdorffEDist_Icc_Icc`, and the Hausdorff distance only sees closures
+(`Metric.hausdorffEDist_closure`), so it ignores open or closed ends, as the undecorated diagram
+does. -/
 def IsMatching {ι κ : Type*} (I : ι → Set ℝ) (J : κ → Set ℝ) (δ : ℝ) : Prop :=
-  ∃ M : ι → κ → Prop,
+  0 ≤ δ ∧ ∃ M : ι → κ → Prop,
     (∀ i j j', M i j → M i j' → j = j') ∧ (∀ i i' j, M i j → M i' j → i = i') ∧
     (∀ i j, M i j → hausdorffEDist (I i) (J j) ≤ ENNReal.ofReal δ) ∧
     (∀ i, (∀ j, ¬ M i j) → ∃ a, I i ⊆ Set.Icc a (a + 2 * δ)) ∧
@@ -215,11 +220,81 @@ def IsMatching {ι κ : Type*} (I : ι → Set ℝ) (J : κ → Set ℝ) (δ : �
 `J` and `I` (so the bottleneck distance is symmetric, Chazal–de Silva–Glisse–Oudot, §4.2). -/
 theorem IsMatching.symm {ι κ : Type*} {I : ι → Set ℝ} {J : κ → Set ℝ} {δ : ℝ}
     (h : IsMatching I J δ) : IsMatching J I δ := by
-  obtain ⟨M, h₁, h₂, h₃, h₄, h₅⟩ := h
-  refine ⟨fun j i => M i j, fun j i i' hi hi' => h₂ i i' j hi hi',
+  obtain ⟨hδ, M, h₁, h₂, h₃, h₄, h₅⟩ := h
+  refine ⟨hδ, fun j i => M i j, fun j i i' hi hi' => h₂ i i' j hi hi',
     fun j j' i hj hj' => h₁ i j j' hj hj', fun j i hji => ?_, h₅, h₄⟩
   rw [hausdorffEDist_comm]
   exact h₃ i j hji
+
+/-- **Hausdorff distance between closed intervals.** For `a ≤ b` and `c ≤ d`, the Hausdorff
+distance between `[a, b]` and `[c, d]` is `max |a - c| |b - d|`, the `ℓ^∞` distance between the
+points `(a, b)` and `(c, d)` of the persistence plane used for bottleneck matchings (Chazal, de
+Silva, Glisse and Oudot, arXiv:1207.3674, §4.2, `d∞`). This is what lets `IsMatching` measure
+matched bars by the Hausdorff distance. -/
+theorem hausdorffEDist_Icc_Icc {a b c d : ℝ} (hab : a ≤ b) (hcd : c ≤ d) :
+    hausdorffEDist (Set.Icc a b) (Set.Icc c d) = ENNReal.ofReal (max |a - c| |b - d|) := by
+  have key : ∀ {a b c d x : ℝ}, a ≤ x → x ≤ b → c ≤ d →
+      |x - max c (min d x)| ≤ max |a - c| |b - d| := by
+    intro a b c d x hax hxb hcd
+    rcases le_total x d with hxd | hdx
+    · rw [min_eq_right hxd]
+      rcases le_total c x with hcx | hxc
+      · rw [max_eq_right hcx, sub_self, abs_zero]
+        exact le_max_of_le_left (abs_nonneg _)
+      · rw [max_eq_left hxc]
+        calc |x - c| = c - x := by rw [abs_of_nonpos (by linarith)]; ring
+          _ ≤ |a - c| := by rw [abs_sub_comm, abs_of_nonneg (by linarith)]; linarith
+          _ ≤ _ := le_max_left _ _
+    · rw [min_eq_left hdx, max_eq_right hcd]
+      calc |x - d| = x - d := abs_of_nonneg (by linarith)
+        _ ≤ |b - d| := by rw [abs_of_nonneg (by linarith)]; linarith
+        _ ≤ _ := le_max_right _ _
+  apply le_antisymm
+  · apply hausdorffEDist_le_of_mem_edist
+    · intro x hx
+      refine ⟨max c (min d x), ⟨le_max_left _ _, max_le hcd (min_le_left _ _)⟩, ?_⟩
+      rw [edist_dist, Real.dist_eq]
+      exact ENNReal.ofReal_le_ofReal (key hx.1 hx.2 hcd)
+    · intro y hy
+      refine ⟨max a (min b y), ⟨le_max_left _ _, max_le hab (min_le_left _ _)⟩, ?_⟩
+      rw [edist_dist, Real.dist_eq]
+      refine ENNReal.ofReal_le_ofReal ((key hy.1 hy.2 hab).trans_eq ?_)
+      rw [abs_sub_comm c a, abs_sub_comm d b]
+  · have h₁ : ENNReal.ofReal |a - c| ≤ hausdorffEDist (Set.Icc a b) (Set.Icc c d) := by
+      rcases le_total a c with hac | hca
+      · refine le_trans ?_ (infEDist_le_hausdorffEDist_of_mem ⟨le_rfl, hab⟩)
+        refine le_infEDist.2 fun y hy => ?_
+        rw [edist_dist, Real.dist_eq]
+        apply ENNReal.ofReal_le_ofReal
+        rw [abs_of_nonpos (by linarith), abs_of_nonpos (by linarith [hy.1])]
+        linarith [hy.1]
+      · rw [hausdorffEDist_comm]
+        refine le_trans ?_ (infEDist_le_hausdorffEDist_of_mem ⟨le_rfl, hcd⟩)
+        refine le_infEDist.2 fun y hy => ?_
+        rw [edist_dist, Real.dist_eq]
+        apply ENNReal.ofReal_le_ofReal
+        rw [abs_of_nonneg (by linarith), abs_of_nonpos (by linarith [hy.1])]
+        linarith [hy.1]
+    have h₂ : ENNReal.ofReal |b - d| ≤ hausdorffEDist (Set.Icc a b) (Set.Icc c d) := by
+      rcases le_total d b with hdb | hbd
+      · refine le_trans ?_ (infEDist_le_hausdorffEDist_of_mem ⟨hab, le_rfl⟩)
+        refine le_infEDist.2 fun y hy => ?_
+        rw [edist_dist, Real.dist_eq]
+        apply ENNReal.ofReal_le_ofReal
+        rw [abs_of_nonneg (by linarith), abs_of_nonneg (by linarith [hy.2])]
+        linarith [hy.2]
+      · rw [hausdorffEDist_comm]
+        refine le_trans ?_ (infEDist_le_hausdorffEDist_of_mem ⟨hcd, le_rfl⟩)
+        refine le_infEDist.2 fun y hy => ?_
+        rw [edist_dist, Real.dist_eq]
+        apply ENNReal.ofReal_le_ofReal
+        rw [abs_of_nonpos (by linarith), abs_of_nonneg (by linarith [hy.2])]
+        linarith [hy.2]
+    rcases le_total |a - c| |b - d| with h | h
+    · rw [max_eq_right h]
+      exact h₂
+    · rw [max_eq_left h]
+      exact h₁
 
 end Matching
 

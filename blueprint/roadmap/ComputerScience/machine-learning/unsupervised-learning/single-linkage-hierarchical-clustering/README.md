@@ -55,3 +55,5 @@ Thm. 1).
   adding edges in increasing order of length and merging components, as Kruskal's algorithm does,
   computes the single-linkage merges.
 - [k-means clustering](../k-means-clustering/README.md): a flat, centroid-based alternative.
+- [Optimal leaf ordering of dendrograms](../../../../Biology/bioinformatics/optimal-leaf-ordering-of-dendrograms/README.md):
+  how to draw a dendrogram, such as the single-linkage one, with similar leaves adjacent.

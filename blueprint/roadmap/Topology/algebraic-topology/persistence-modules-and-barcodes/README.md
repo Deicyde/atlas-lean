@@ -7,9 +7,9 @@ data*, Bull. AMS 46 (2009), Def. 2.9 and §2.3). The building blocks are the int
 module is a direct sum of interval modules in an essentially unique way; the multiset of
 intervals is the barcode (Carlsson, Prop. 2.12, for tame `ℕ`-modules via graded modules over
 `k[t]`; W. Crawley-Boevey, J. Algebra Appl. 14 (2015), Thm. 1.1, for pointwise
-finite-dimensional modules over `ℝ`). Distances make barcodes usable on noisy data: the
-interleaving distance between modules and the bottleneck distance between barcodes coincide
-(the isometry theorem, F. Chazal, V. de Silva, M. Glisse and S. Oudot, *The structure and
+finite-dimensional modules over `ℝ`). Distances make barcodes usable on noisy data: for q-tame
+modules (for instance pointwise finite-dimensional ones) the interleaving distance between
+modules and the bottleneck distance between their barcodes coincide (the isometry theorem, F. Chazal, V. de Silva, M. Glisse and S. Oudot, *The structure and
 stability of persistence modules*, arXiv:1207.3674, Thm. 4.11), so small perturbations of the
 data move the barcode by small amounts.
 
@@ -29,6 +29,7 @@ recorded as wanted statements.
 - [Triangle inequality for interleavings](interleaving-trans.md)
 - [`δ`-matching of barcodes](is-matching.md)
 - [Matchings are symmetric](is-matching-symm.md)
+- [Hausdorff distance between closed intervals](hausdorff-edist-icc-icc.md)
 - [Algebraic stability theorem](is-matching-of-interleaving.md)
 - [Converse stability for decomposable modules](interleaving-of-is-matching.md)
 - [The cluster functor (zero-dimensional persistence)](cluster-functor.md)

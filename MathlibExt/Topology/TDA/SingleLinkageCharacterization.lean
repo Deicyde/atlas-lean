@@ -39,7 +39,10 @@ namespace MathlibExt.Topology.TDA
 
 /-- **Metric on a set, as a function.** `d` is symmetric, zero exactly on the diagonal and
 satisfies the triangle inequality, so `(X, d)` is a metric space in the sense of Carlsson and
-Mémoli, JMLR 11 (2010), §2 (their finite metric spaces). -/
+Mémoli, JMLR 11 (2010), §2 (their finite metric spaces). It overlaps `CSLibExt`'s
+`MetricTSP.IsMetricCost`; `MathlibExt` cannot import `CSLibExt`, and Mathlib's metric classes are
+instance-based (one metric per type), which does not fit comparing several dissimilarities on one
+set. -/
 structure IsMetricFn {X : Type*} (d : X → X → ℝ) : Prop where
   /-- Symmetry. -/
   symm : ∀ x y, d x y = d y x
@@ -51,7 +54,10 @@ structure IsMetricFn {X : Type*} (d : X → X → ℝ) : Prop where
   triangle : ∀ x y z, d x z ≤ d x y + d y z
 
 /-- **Ultrametric on a set, as a function.** A metric satisfying the strong triangle inequality
-`u x z ≤ max (u x y) (u y z)` (Carlsson and Mémoli, JMLR 11 (2010), §2). -/
+`u x z ≤ max (u x y) (u y z)` (Carlsson and Mémoli, JMLR 11 (2010), §2). It duplicates
+`CSLibExt`'s `Bioinformatics.Phylogenetics.Splits.IsUltrametric` (same fields, the triangle
+inequality there following from the three-point condition), which `MathlibExt` cannot import;
+Mathlib's `IsUltrametricDist` is instance-based. -/
 structure IsUltrametricFn {X : Type*} (u : X → X → ℝ) : Prop extends IsMetricFn u where
   /-- The strong triangle inequality. -/
   ultra : ∀ x y z, u x z ≤ max (u x y) (u y z)
@@ -161,8 +167,9 @@ theorem isUltrametricFn_slDist [Finite X] {d : X → X → ℝ} (hd : IsMetricFn
 end Lemmas
 
 /-- **Single linkage satisfies the Carlsson–Mémoli axioms.** `T*` is a hierarchical clustering
-method satisfying conditions (I), (II) and (III) (Carlsson and Mémoli, JMLR 11 (2010), Thm. 18,
-the existence half: "Then T = T*", with `T*` satisfying the conditions). -/
+method satisfying conditions (I), (II) and (III), so the hypotheses of Carlsson and Mémoli,
+JMLR 11 (2010), Thm. 18 are consistent and single linkage is the method that theorem
+characterizes. -/
 theorem slDist_axioms :
     IsHCMethod (fun _ _ d => slDist d) ∧ CMConditionI (fun _ _ d => slDist d) ∧
       CMConditionII (fun _ _ d => slDist d) ∧ CMConditionIII (fun _ _ d => slDist d) := by

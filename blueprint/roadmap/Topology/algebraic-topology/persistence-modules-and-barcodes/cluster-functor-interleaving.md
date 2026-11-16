@@ -9,7 +9,8 @@ JMLR 11 (2010), Lemma 15).
 
 ## Background
 
-- [Algebraic stability theorem](is-matching-of-interleaving.md): after linearization (the free
-  vector space on the clusters at each scale), this interleaving is the hypothesis of the
+- [Algebraic stability theorem](is-matching-of-interleaving.md): for finite `X`, after
+  linearization (the free vector space on the clusters at each scale, a pointwise
+  finite-dimensional persistence module), this interleaving is the hypothesis of the
   algebraic stability theorem, which then bounds the bottleneck distance between the
   zero-dimensional barcodes.

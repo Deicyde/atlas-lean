@@ -14,8 +14,8 @@ public import MathlibExt.Topology.TDA.SingleLinkageCharacterization
 
 open MathlibExt.Topology.TDA
 
-/-- The hypotheses of the characterization are jointly satisfiable: single linkage itself
-satisfies them, and the theorem then returns it. -/
+/-- Joint-satisfiability check only: single linkage itself satisfies the hypotheses of the
+characterization, so the theorem is not vacuous (its conclusion is then trivial). -/
 example {X : Type} [Finite X] {d : X → X → ℝ} (hd : IsMetricFn d) :
     slDist d = slDist d :=
   eq_slDist_of_axioms (T := fun _ _ d => slDist d) slDist_axioms.1 slDist_axioms.2.1
