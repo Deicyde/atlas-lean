@@ -6,15 +6,16 @@ $p^{\mathbb{N}}$, has Kolmogorov–Sinai entropy
 $$h(\sigma) = -\sum_{s \in S} p(s) \log p(s).$$
 
 Sarig states the formula with $\log = \log_2$; with the natural logarithm used here both sides change by the
-same factor $1/\log 2$. The statement is wanted.
+same factor $1/\log 2$. The statement is wanted; the inequality
+[$h(\sigma) \ge H(p)$](of-real-le-ks-entropy-shift.md) is proved.
 
 ## Informally uses
 
 - [Sinai's generator theorem, noninvertible case](ks-entropy-eq-entropy-rel-of-is-strong-g.md): the source's
   proof notes that the partition into 1-cylinders is a strong generator, so the entropy is the entropy
   relative to that partition.
-- [Entropy of a transformation relative to a partition](entropy-rel.md): the refinement into $n$-cylinders
-  has entropy $n$ times $-\sum_s p(s) \log p(s)$, because the coordinates are independent.
+- [Entropy of the refined time-zero partition](partition-entropy-iterate-join-time-zero.md): the refinement
+  into $n$-cylinders has entropy $n$ times $-\sum_s p(s) \log p(s)$, because the coordinates are independent.
 
 ## Sources
 
