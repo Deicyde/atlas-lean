@@ -10,3 +10,8 @@ Discrete-time martingales, sub- and supermartingales: convergence theorems (almo
 - [Optional stopping theorem](optional-stopping-theorem/README.md)
 - [Square-integrable martingales](square-integrable-martingales/README.md)
 - [Wald's equations](wald-s-equations/README.md)
+
+## Related topics
+
+- [Brownian motion and stochastic calculus](../stochastic-calculus/README.md): continuous-time
+  martingales, the Itô integral as a martingale, and Lévy's characterisation of Brownian motion.

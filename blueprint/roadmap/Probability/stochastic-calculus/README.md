@@ -1,6 +1,6 @@
 # Brownian motion and stochastic calculus
 
-Continuous-time processes with continuous paths or independent increments: Kolmogorov's continuity theorem, Blumenthal-type zero–one laws, Markov property for independent-increment processes, quadratic variation, the Itô integral and Itô's formula, stochastic differential equations, the Ornstein–Uhlenbeck process, and Fokker–Planck equations for diffusions.
+Continuous-time processes with continuous paths or independent increments: the construction and sample-path properties of Brownian motion, Kolmogorov's continuity theorem, Blumenthal-type zero–one laws, the simple and strong Markov properties and the reflection principle, quadratic variation, the Itô integral and Itô's formula, Lévy's characterisation and Girsanov's theorem, stochastic differential equations, the Ornstein–Uhlenbeck process, and Fokker–Planck equations for diffusions.
 
 - [Construction and sample paths of Brownian motion](construction-and-sample-paths-of-brownian-motion/README.md)
 - [Blumenthal zero–one law](blumenthal-zero-one-law/README.md)
@@ -14,3 +14,14 @@ Continuous-time processes with continuous paths or independent increments: Kolmo
 - [Girsanov's theorem for a constant drift](has-law-sub-drift-with-density.md)
 - [Strong solutions of SDEs with Lipschitz coefficients](sde-lipschitz-exists-unique.md)
 - [Ornstein–Uhlenbeck process](ornstein-uhlenbeck-process/README.md)
+
+## Related topics
+
+- [Martingales and optional stopping](../martingales/README.md): the discrete-time theory (optional stopping, Doob's
+  inequalities, convergence) that continuous-time martingales and stochastic integrals extend.
+- [Donsker's invariance principle](../central-limit-theorems/donsker-s-invariance-principle/README.md):
+  Brownian motion as the scaling limit of random walks.
+- [Random walks](../random-walks/README.md): the discrete counterparts of the Markov and strong
+  Markov properties.
+- [Branching processes](../branching-processes/README.md): Galton–Watson trees, whose contour
+  processes converge to the Brownian excursion (Aldous; Le Gall, *Random trees and applications*).
