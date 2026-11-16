@@ -1,4 +1,4 @@
-# Solution of a one-dimensional BSDE on `(0, T)`
+# Solution of a one-dimensional BSDE on [0, T]
 
 **Solution of a one-dimensional BSDE on `[0, T]`** (S. Peng, Proc. ICM 2010, Vol. I, §1.2,
 equation (1.7) and Theorem 1.1, with `m = d = 1`). The pair `(Y, Z)` solves the BSDE with

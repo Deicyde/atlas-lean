@@ -131,7 +131,8 @@ def IndepFrom {F₁ F₂ : Type*} [SeminormedAddCommGroup F₁] [SeminormedAddCo
 Definition 1.4 with `d = 1`). A real random variable `X ∈ H` is (centred) G-normally distributed
 if it has an independent copy `X̄ ∈ H` (`X̄ =ᵈ X` and `X̄` independent from `X`) such that
 `aX + bX̄ =ᵈ √(a² + b²) X` for all `a, b ≥ 0`. Its law is determined by
-`σ̄² = E[X²]` and `σ²_ = -E[-X²]` (Chapter II, Remark 3.4 and Proposition 1.7). -/
+`σ̄² = E[X²]` and `σ²_ = -E[-X²]` (Chapter II, Proposition 1.7 for existence; Proposition 1.10 and
+Corollary 1.11 for uniqueness; Remark 3.4). -/
 def IsGNormal (X : Ω → ℝ) : Prop :=
   X ∈ S.H ∧ ∃ X' : Ω → ℝ, X' ∈ S.H ∧ IdentDistrib S S X' X ∧ S.IndepFrom X' X ∧
     ∀ a b : ℝ, 0 ≤ a → 0 ≤ b →

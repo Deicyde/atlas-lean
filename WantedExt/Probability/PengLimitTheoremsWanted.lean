@@ -29,6 +29,11 @@ under Uncertainty*, arXiv:1002.4546v1, 2010, Chapter II, Theorems 3.1 and 3.3; S
 Lipschitz test functions (Peng allows every continuous function of linear growth, through the
 completion of `H`).
 
+The hypotheses are satisfiable with genuine uncertainty (`μ_ < μ̄`, `σ_ < σ̄`): Peng,
+arXiv:1002.4546v1, Chapter II, Proposition 1.7 constructs a G-normal random variable for every
+admissible `G`, and the product spaces of Chapter I, Proposition 3.15 carry i.i.d. sequences. The
+repository's tests only exhibit degenerate witnesses (a Dirac expectation).
+
 ## References
 
 * S. Peng, *Nonlinear Expectations and Stochastic Calculus under Uncertainty*, arXiv:1002.4546v1,

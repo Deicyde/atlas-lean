@@ -67,7 +67,7 @@ def IsBSDESolution (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B : ℝ≥0 �
         (itoIntegral P F B Z T ω - itoIntegral P F B Z t ω)
 
 /-- The Itô integral of the zero integrand vanishes almost surely. -/
-theorem itoIntegral_zero_ae {P : Measure Ω} {F : Filtration ℝ≥0 mΩ} {B : ℝ≥0 → Ω → ℝ}
+private theorem itoIntegral_zero_ae {P : Measure Ω} {F : Filtration ℝ≥0 mΩ} {B : ℝ≥0 → Ω → ℝ}
     (hB : IsBrownianReal B P) (hBF : Adapted F B)
     (hInd : ∀ s t, s ≤ t → Indep (MeasurableSpace.comap (fun ω ↦ B t ω - B s ω) inferInstance)
       (F s) P) (t : ℝ≥0) :
