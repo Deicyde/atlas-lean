@@ -3136,6 +3136,7 @@
   "MathlibExt/LinearAlgebra/Matrix/OrdinaryRiordanPascalLikeMatrix": {"to": "Combinatorics/riordan-arrays-transforms/riordan-arrays", "title": "Ordinary Riordan Pascal-like triangles"},
   "MathlibExt/LinearAlgebra/Matrix/PanVandermonde": {"to": "LinearAlgebra/determinants-and-matrix-identities", "title": "Generalized factorial matrices"},
   "MathlibExt/LinearAlgebra/Matrix/PartialTrace": {"to": "LinearAlgebra/linear-maps-and-duality", "title": "Partial trace"},
+  "MathlibExt/LinearAlgebra/Matrix/PermanentCounting": {"to": "TheoryOfComputation/counting-complexity", "title": "Complexity of the permanent"},
   "MathlibExt/LinearAlgebra/Matrix/PerronFrobenius": {"to": "LinearAlgebra/special-matrices", "title": "Perron–Frobenius theorem"},
   "MathlibExt/LinearAlgebra/Matrix/PolarDecompositionGL": {"to": "LinearAlgebra/matrix-decompositions", "title": "Polar decomposition"},
   "MathlibExt/LinearAlgebra/Matrix/PosSemidefDeterminant": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Hadamard's inequality and determinant bounds for positive semidefinite matrices"},
