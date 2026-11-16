@@ -13,6 +13,7 @@ public import Mathlib.Analysis.Convex.Function
 public import Mathlib.Data.Matrix.Mul
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Analysis.Convex.Deriv
+import MathlibExt.Analysis.Convex.FinsetSum
 import Mathlib.Analysis.Convex.Mul
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
@@ -52,7 +53,7 @@ gradient descent or interior-point methods, apply).
 
 namespace Cslib.MachineLearning.LogisticSVM
 
-open Real Matrix Finset
+open Real Matrix Finset MathlibExt.Analysis.Convex.FinsetSum
 
 variable {m : ℕ} {ι : Type*} [Fintype ι]
 
@@ -120,17 +121,6 @@ theorem logisticNLL_eq_neg_logLikelihood (X : Matrix (Fin m) ι ℝ) (y : Fin m 
   rw [h2, h1, Real.log_div (Real.exp_pos z).ne' hpos.ne', Real.log_exp, Real.log_inv]
   ring
 
-private theorem convexOn_sum {E : Type*} [AddCommGroup E] [Module ℝ E] {s : Set E}
-    (hs : Convex ℝ s) {κ : Type*} {g : κ → E → ℝ} (t : Finset κ)
-    (hg : ∀ i ∈ t, ConvexOn ℝ s (g i)) : ConvexOn ℝ s (fun x => ∑ i ∈ t, g i x) := by
-  classical
-  induction t using Finset.induction_on with
-  | empty => simpa using convexOn_const (0 : ℝ) hs
-  | insert a t ha ih =>
-    simp only [Finset.sum_insert ha]
-    exact (hg a (Finset.mem_insert_self a t)).add
-      (ih fun i hi => hg i (Finset.mem_insert_of_mem hi))
-
 /-- **Logistic regression is a convex problem**: the negative log-likelihood `logisticNLL X y` is
 convex in `θ`, for any real labels `y`.
 
@@ -140,7 +130,7 @@ solved as a convex optimization problem"). -/
 theorem convexOn_logisticNLL (X : Matrix (Fin m) ι ℝ) (y : Fin m → ℝ) :
     ConvexOn ℝ Set.univ (logisticNLL X y) := by
   unfold logisticNLL
-  refine convexOn_sum convex_univ _ fun k _ => ?_
+  refine convexOn_finset_sum convex_univ _ fun k _ => ?_
   let L : (ι → ℝ) →ₗ[ℝ] ℝ := (LinearMap.proj k).comp X.mulVecLin
   have hL : ∀ θ, L θ = (X *ᵥ θ) k := fun θ => rfl
   have h1 : ConvexOn ℝ Set.univ (fun θ : ι → ℝ => Real.log (1 + Real.exp ((X *ᵥ θ) k))) := by
@@ -173,7 +163,7 @@ theorem convexOn_svmObjective (X : Matrix (Fin m) ι ℝ) (y : Fin m → ℝ) {l
     (hlam : 0 ≤ lam) :
     ConvexOn ℝ Set.univ (fun p : (ι → ℝ) × ℝ => svmObjective X y lam p.1 p.2) := by
   unfold svmObjective
-  refine ConvexOn.add (convexOn_sum convex_univ _ fun k _ => ?_) ?_
+  refine ConvexOn.add (convexOn_finset_sum convex_univ _ fun k _ => ?_) ?_
   · let L : ((ι → ℝ) × ℝ) →ₗ[ℝ] ℝ :=
       (LinearMap.proj k).comp (X.mulVecLin.comp (LinearMap.fst ℝ (ι → ℝ) ℝ)) +
         LinearMap.snd ℝ (ι → ℝ) ℝ
@@ -187,7 +177,7 @@ theorem convexOn_svmObjective (X : Matrix (Fin m) ι ℝ) (y : Fin m → ℝ) {l
     exact (convexOn_const 0 convex_univ).sup haff
   · have hsq : ConvexOn ℝ Set.univ (fun p : (ι → ℝ) × ℝ => p.1 ⬝ᵥ p.1) := by
       simp only [dotProduct]
-      refine convexOn_sum convex_univ _ fun i _ => ?_
+      refine convexOn_finset_sum convex_univ _ fun i _ => ?_
       have hpow : ConvexOn ℝ Set.univ (fun t : ℝ => t ^ 2) :=
         (show Even 2 by norm_num).convexOn_pow
       let P : ((ι → ℝ) × ℝ) →ₗ[ℝ] ℝ := (LinearMap.proj i).comp (LinearMap.fst ℝ (ι → ℝ) ℝ)

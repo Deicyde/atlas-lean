@@ -15727,6 +15727,7 @@
 "MathlibExt.Analysis.Convex.FenchelMoreau.fenchelConj": "6bb71f09ad307061",
 "MathlibExt.Analysis.Convex.FenchelMoreau.fenchel_moreau": "88e9e02c2863092e",
 "MathlibExt.Analysis.Convex.FenchelMoreau.isClosed_epi_real": "b901161d6b4f805b",
+"MathlibExt.Analysis.Convex.FinsetSum.convexOn_finset_sum": "453aff3fcb1686e9",
 "MathlibExt.Analysis.Convex.FirstOrderCondition.add_fderiv_le_of_convexOn": "d4878d8d9e80327a",
 "MathlibExt.Analysis.Convex.FirstOrderCondition.convexOn_iff_forall_add_fderiv_le": "070dad9af0fffe4c",
 "MathlibExt.Analysis.Convex.FirstOrderCondition.convexOn_iff_forall_le_add_fderivWithin": "cd9785a66f291adc",

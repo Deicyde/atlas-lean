@@ -15,6 +15,7 @@ public import Mathlib.Algebra.BigOperators.Group.Finset.Defs
 public import Mathlib.Data.Fintype.Card
 public import Mathlib.Order.CompleteLattice.Basic
 public import MathlibExt.Analysis.Convex.FirstOrderCondition
+import MathlibExt.Analysis.Convex.FinsetSum
 import Mathlib.Analysis.LocallyConvex.Separation
 import Mathlib.Analysis.Calculus.FDeriv.Add
 import Mathlib.Analysis.Calculus.FDeriv.Mul
@@ -333,23 +334,12 @@ section Normed
 
 variable [NormedAddCommGroup E] [NormedSpace ℝ E]
 
-omit [Fintype ι] in
-private theorem convexOn_sum {D : Set E} (hD : Convex ℝ D) {g : ι → E → ℝ} (s : Finset ι)
-    (hg : ∀ i ∈ s, ConvexOn ℝ D (g i)) : ConvexOn ℝ D (fun y => ∑ i ∈ s, g i y) := by
-  classical
-  induction s using Finset.induction_on with
-  | empty => simpa using convexOn_const (0 : ℝ) hD
-  | insert a s ha ih =>
-    simp only [Finset.sum_insert ha]
-    exact (hg a (Finset.mem_insert_self a s)).add
-      (ih fun i hi => hg i (Finset.mem_insert_of_mem hi))
-
 /-- The Lagrangian of a convex problem is convex in `x` for every `μ ≥ 0`. -/
 theorem convexOn_lagrangian {D : Set E} {f₀ : E → ℝ} {f : ι → E → ℝ} {μ : ι → ℝ}
     (hf₀ : ConvexOn ℝ D f₀) (hf : ∀ i, ConvexOn ℝ D (f i)) (hμ : 0 ≤ μ) :
     ConvexOn ℝ D (fun x => lagrangian f₀ f x μ) := by
   unfold lagrangian
-  refine hf₀.add (convexOn_sum hf₀.1 _ fun i _ => ?_)
+  refine hf₀.add (FinsetSum.convexOn_finset_sum hf₀.1 _ fun i _ => ?_)
   simpa [smul_eq_mul] using (hf i).smul (hμ i)
 
 /-- The derivative of the Lagrangian in `x`. -/

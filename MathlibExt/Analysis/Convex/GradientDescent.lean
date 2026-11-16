@@ -13,6 +13,7 @@ public import Mathlib.Analysis.Convex.Basic
 public import Mathlib.Topology.MetricSpace.Lipschitz
 import Mathlib.Analysis.Calculus.MeanValue
 import Mathlib.Analysis.Convex.Deriv
+import MathlibExt.Analysis.Convex.FirstOrderCondition
 import Mathlib.Algebra.BigOperators.Field
 
 /-!
@@ -132,19 +133,8 @@ private theorem gradientDescent_first_order
     {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
     {f : E → ℝ} (hconvex : ConvexOn ℝ Set.univ f) (hdiff : Differentiable ℝ f)
     (x y : E) : f x + inner ℝ (gradient f x) (y - x) ≤ f y := by
-  have hlineconvex : ConvexOn ℝ Set.univ
-      (fun t : ℝ => f (x + t • (y - x))) := by
-    have h := hconvex.comp_affineMap (AffineMap.lineMap x y)
-    simpa [Function.comp_def, AffineMap.lineMap_apply, add_comm] using h
-  have hderiv : HasDerivAt (fun t : ℝ => f (x + t • (y - x)))
-      (inner ℝ (gradient f x) (y - x)) 0 := by
-    simpa using gradientDescent_hasDerivAt_line hdiff x (y - x) 0
-  have hslope := hlineconvex.le_slope_of_hasDerivAt (Set.mem_univ 0) (Set.mem_univ 1)
-    zero_lt_one hderiv
-  rw [slope_def_field] at hslope
-  simp only [zero_smul, add_zero, one_smul, sub_zero, div_one] at hslope
-  rw [show x + (y - x) = y by abel] at hslope
-  linarith
+  simpa using MathlibExt.Analysis.Convex.FirstOrderCondition.add_fderiv_le_of_convexOn hconvex
+    (Set.mem_univ x) (Set.mem_univ y) (hdiff x).hasGradientAt.hasFDerivAt
 
 private theorem gradientDescent_one_step
     {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
