@@ -28,7 +28,25 @@ Johnson radius of these MDS codes.
 - [Volume of a Hamming ball, entropy lower bound](../bounds-on-code-size/sum-choose-mul-pow-ge-exp.md)
 - [List-decoding capacity, converse](exists-many-in-ball.md)
 
+## Guruswami–Sudan decoding of Reed–Solomon codes
+
+- [Weighted degree bound](weighted-deg-le.md)
+- [Ideal of a point of the plane](point-ideal.md)
+- [Root of multiplicity $r$](has-root-mult.md)
+- [Substitution respects the weighted degree](nat-degree-eval-le.md)
+- [A root of multiplicity $r$ survives substitution](pow-dvd-eval-of-has-root-mult.md)
+- [Translation of the plane](shift.md)
+- [Multiplicity from the translated coefficients](has-root-mult-of-coeff.md)
+- [Monomials of low total degree](low-monomials.md)
+- [Number of multiplicity constraints](card-low-monomials.md)
+- [Guruswami–Sudan interpolation step](exists-interpolant.md)
+- [Guruswami–Sudan root-finding lemma](eval-eq-zero-of-agree.md)
+- [$Y - P(X)$ divides the interpolating polynomial](x-sub-c-dvd-of-agree.md)
+- [Guruswami–Sudan list decoding](exists-interpolant-dvd.md)
+- [The list has at most $D / w$ polynomials](card-le-div-of-dvd.md)
+- [Reed–Solomon codes are list decodable up to the Johnson radius](card-le-of-agree-ge.md)
+
 ## Related topics
 
 - [Bounds on code size](../bounds-on-code-size/README.md): Hamming-ball volumes and the unique-decoding bounds that list decoding goes beyond.
-- [Reed–Solomon codes](../reed-solomon-codes/README.md): the MDS codes whose unique decoding (Berlekamp–Welch) stops at half the minimum distance.
+- [Reed–Solomon codes](../reed-solomon-codes/README.md): the MDS codes whose unique decoding (Berlekamp–Welch) stops at half the minimum distance and which Guruswami–Sudan decodes up to the Johnson radius.

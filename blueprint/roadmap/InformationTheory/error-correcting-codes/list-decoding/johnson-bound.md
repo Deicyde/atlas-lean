@@ -35,6 +35,9 @@ and the three combine into the stated inequality.
   $\lfloor (d-1)/2 \rfloor$ around codewords are disjoint, so the list size there is $1$. The
   Johnson radius $n - \sqrt{n(n-d)}$ is at least $d/2$ (as $(1 - s/2)^2 \ge 1 - s$), so list
   decoding up to it goes beyond unique decoding.
+- [Reed–Solomon codes are list decodable up to the Johnson radius](card-le-of-agree-ge.md): the
+  bound for the MDS codes, $d = n - k + 1$, where it gives the radius $1 - \sqrt{R}$ reached by
+  the Guruswami–Sudan algorithm.
 
 ## Sources
 

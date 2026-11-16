@@ -1036,6 +1036,7 @@
   "CSLibExt/Coding/CRC": {"to": "InformationTheory/error-correcting-codes", "title": "Cyclic redundancy checks"},
   "CSLibExt/Coding/CSSCode": {"to": "QuantumInformation/quantum-error-correction", "title": "CSS codes"},
   "CSLibExt/Coding/GilbertVarshamovLinear": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
+  "CSLibExt/Coding/GuruswamiSudan": {"to": "InformationTheory/error-correcting-codes", "title": "List decoding"},
   "CSLibExt/Coding/Hamming74": {"to": "InformationTheory/error-correcting-codes", "title": "Hamming (7,4) code"},
   "CSLibExt/Coding/LinearCode": {"to": "InformationTheory/error-correcting-codes", "title": "Linear codes"},
   "CSLibExt/Coding/ReedSolomon": {"to": "InformationTheory/error-correcting-codes", "title": "Reed–Solomon codes"},
