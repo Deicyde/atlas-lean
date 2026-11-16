@@ -7,7 +7,21 @@ networks, on which approximation and estimation errors scale like Monte Carlo ra
 in the width and $n^{-1/2}$ in the sample size, independently of the input dimension $d$. The
 empirical Rademacher complexity of a path-norm ball is at most $2 Q \sqrt{2 \log(2d) / n}$,
 proved here from the Rademacher calculus (homogeneity, contraction and Massart's lemma), with and
-without a bias term; with a bias the proof gives $\log(2(d+1))$.
+without a bias term; with a bias the proof gives $\log(2(d+1))$. The direct and inverse
+approximation theorems, which identify the Barron space with the functions approximable by
+networks of bounded path norm at the rate $m^{-1/2}$, are recorded as wanted statements.
+
+## Barron space
+
+- [The unit cube](unit-cube.md)
+- [ReLU neuron](relu-neuron.md)
+- [Barron representation](is-barron-representation.md)
+- [Barron norm](barron-norm.md)
+- [A single neuron lies in the Barron space](barron-norm-neuron-le.md)
+- [Direct approximation theorem for the Barron space](barron-direct-approximation.md)
+- [Inverse approximation theorem for the Barron space](barron-inverse-approximation.md)
+
+## Path-norm balls and their Rademacher complexity
 
 - [Two-layer ReLU network](two-layer-re-lu.md)
 - [Path norm](path-norm.md)
