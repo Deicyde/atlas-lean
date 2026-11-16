@@ -1,8 +1,8 @@
 # The Occam bound in exponential form
 
-Let $H$ be a finite set of hypotheses whose disagreement sets with the target are measurable and
-let $0 \le \varepsilon \le 1$. The probability under $\mu^m$ that some $h \in H$ with true error
-greater than $\varepsilon$ is consistent with all $m$ examples is at most $|H|\,e^{-\varepsilon m}$.
+Let $H$ be a finite set of hypotheses with measurable disagreement sets and $\varepsilon \ge 0$
+real. The probability under $D^m$ that the version space of $H$ at the sample contains a hypothesis
+of error greater than $\varepsilon$ is at most $|H|\,e^{-\varepsilon m}$.
 
 ## Sources
 

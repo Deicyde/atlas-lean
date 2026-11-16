@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import CSLibExt.MachineLearning.PAC.Occam
+public import CSLibExt.MachineLearning.PACLearning.Occam
 public import Mathlib.MeasureTheory.MeasurableSpace.Pi
 public import Mathlib.Data.Fintype.Powerset
 
@@ -28,9 +28,11 @@ example falsifies. Two invariants carry the proof:
 Here instances are total truth assignments `Fin t → Bool` (Valiant's paper also allows partial
 vectors). Valiant bounds the sample size through his Bernoulli-trial function `L(h, S)` of
 Section 4; this file instead derives the PAC guarantee from the Occam bound for consistent
-learners (`CSLibExt.MachineLearning.PAC.Occam`), which applies because the elimination output is a
-`k`-CNF consistent with the whole labelled sample: `pi_eliminate_error_gt_le` bounds its failure
-probability by `2^N (1 - ε)^m`, with `N` the number of clauses of at most `k` literals.
+learners (`CSLibExt.MachineLearning.PACLearning.Occam`). The elimination learner is a CSLib
+`Learner` on labelled samples that is consistent with the `k`-CNF class (`isConsistent_learner`),
+so `pi_eliminate_error_gt_le` bounds its failure probability by `2^N (1 - ε)^m`, with `N` the
+number of clauses of at most `k` literals, and `isPACLearnable_kcnfClass` states CSLib's
+`IsPACLearnable` for the class over its realizable distributions.
 
 ## Cost model
 
@@ -41,7 +43,7 @@ None: the statements concern the hypothesis produced, not its running time.
 
 set_option autoImplicit false
 
-namespace Cslib.MachineLearning.PAC.KCNF
+namespace Cslib.MachineLearning.PACLearning.KCNF
 
 open MeasureTheory
 open scoped ENNReal
@@ -172,30 +174,29 @@ theorem eliminate_imp {k : ℕ} {f : CNF t} (hf : IsKCNF k f) (examples : List (
     f.Holds x :=
   fun c hc => hx c (subset_eliminate hf examples hpos hc)
 
-/-- **The elimination learner.** On a sample labelled by the target `f`, run elimination on the
-sample points at which `f` is true (the positive examples), and output the Boolean function of the
-resulting `k`-CNF. -/
-def learner (k : ℕ) (f : CNF t) {m : ℕ} (S : Fin m → Fin t → Bool) : (Fin t → Bool) → Bool :=
-  (eliminate k ((List.ofFn S).filter f.toFun)).toFun
+/-- **Positive examples of a labelled sample.** The instances of a labelled sample that carry the
+label `true`, in sample order. -/
+def positives {m : ℕ} (S : LabeledSample (Fin t → Bool) Bool m) : List (Fin t → Bool) :=
+  ((List.ofFn S).filter fun p => p.2).map Prod.fst
 
-/-- **The elimination learner is consistent with its whole labelled sample.** On a sample labelled
-by a `k`-CNF target `f`, the elimination output agrees with `f` at every sample point: it is true
-at the positive points by consistency, and false at the negative points by the one-sided error. -/
-theorem consistent_learner {k : ℕ} {f : CNF t} (hf : IsKCNF k f) {m : ℕ}
-    (S : Fin m → Fin t → Bool) : Consistent (learner k f S) f.toFun S := by
-  intro i
-  set ex := (List.ofFn S).filter f.toFun
-  have hpos : ∀ x ∈ ex, f.Holds x := by
-    intro x hx
-    simpa [ex, CNF.toFun] using (List.mem_filter.1 hx).2
-  by_cases hfi : f.Holds (S i)
-  · have hmem : S i ∈ ex := List.mem_filter.2 ⟨List.mem_ofFn.2 ⟨i, rfl⟩, by simpa [CNF.toFun]⟩
-    have h1 := eval_eliminate_of_mem k ex hmem
-    change decide ((eliminate k ex).Holds (S i)) = decide (f.Holds (S i))
-    simp [h1, hfi]
-  · have : ¬ (eliminate k ex).Holds (S i) := fun h => hfi (eliminate_imp hf ex hpos h)
-    change decide ((eliminate k ex).Holds (S i)) = decide (f.Holds (S i))
-    simp [this, hfi]
+/-- **Membership in the positive examples.** An instance is a positive example of a labelled
+sample when the sample contains it with the label `true`. -/
+theorem mem_positives {m : ℕ} {S : LabeledSample (Fin t → Bool) Bool m} {x : Fin t → Bool} :
+    x ∈ positives S ↔ ∃ i, S i = (x, true) := by
+  simp only [positives, List.mem_map, List.mem_filter, List.mem_ofFn]
+  constructor
+  · rintro ⟨⟨y, b⟩, ⟨⟨i, hi⟩, hb⟩, rfl⟩
+    simp only at hb
+    exact ⟨i, by rw [hi, hb]⟩
+  · rintro ⟨i, hi⟩
+    exact ⟨(x, true), ⟨⟨i, hi⟩, rfl⟩, rfl⟩
+
+/-- **The elimination learner.** A CSLib `Learner` on labelled samples: run Valiant's elimination
+algorithm on the instances labelled `true` (the positive examples) and output the Boolean function
+of the resulting `k`-CNF. It reads the sample only, never the target (Valiant, *A theory of the
+learnable*, Comm. ACM 27 (1984), Section 5, proof of Theorem A). -/
+def learner (k : ℕ) {m : ℕ} : Learner (Fin t → Bool) Bool m :=
+  fun S => (eliminate k (positives S)).toFun
 
 /-- **The class of k-CNF functions.** The hypothesis class of `k`-CNF functions over `t`
 variables, as a finite set of Boolean functions: the functions of the sub-collections of the
@@ -205,8 +206,8 @@ def kcnfClass (t k : ℕ) : Finset ((Fin t → Bool) → Bool) :=
 
 /-- **The elimination learner outputs a k-CNF function.** Its output belongs to the class of
 `k`-CNF functions. -/
-theorem learner_mem_kcnfClass (k : ℕ) (f : CNF t) {m : ℕ} (S : Fin m → Fin t → Bool) :
-    learner k f S ∈ kcnfClass t k :=
+theorem learner_mem_kcnfClass (k : ℕ) {m : ℕ} (S : LabeledSample (Fin t → Bool) Bool m) :
+    learner k S ∈ kcnfClass t k :=
   Finset.mem_image.2 ⟨_, Finset.mem_powerset.2 (eliminate_subset_allClauses _ _), rfl⟩
 
 /-- **Size of the k-CNF class.** The class of `k`-CNF functions has at most `2^N` members, `N`
@@ -214,25 +215,77 @@ the number of clauses of at most `k` literals. -/
 theorem card_kcnfClass_le (t k : ℕ) : (kcnfClass t k).card ≤ 2 ^ (allClauses t k).card :=
   Finset.card_image_le.trans (Finset.card_powerset _).le
 
-/-- **k-CNF is PAC learnable by elimination.** Let `μ` be any probability distribution on truth
-assignments of `t` variables and `f` any `k`-CNF target. For `m` independent examples drawn from
-`μ` and labelled by `f`, the probability that the elimination learner outputs a hypothesis whose
-true error exceeds `ε` is at most `2^N (1 - ε)^m`, where `N` is the number of clauses of at most
-`k` literals, so `N ≤ ∑_{j ≤ k} (2t)^j` by `card_allClauses_le`. The learner uses only the
-positive examples of the sample. Valiant (*A theory of the learnable*, Comm. ACM 27 (1984),
-Section 5, Theorem A) proves learnability of `k`-CNF with `L(h, (2t)^{k+1})` positive examples
-through his Bernoulli-trial bound; this statement replaces that argument by the Occam bound for
-consistent learners (Blumer, Ehrenfeucht, Haussler and Warmuth, *Occam's razor*, Inform. Process.
-Lett. 24 (1987), 377-380). -/
-theorem pi_eliminate_error_gt_le (μ : Measure (Fin t → Bool)) [IsProbabilityMeasure μ] {k : ℕ}
-    {f : CNF t} (hf : IsKCNF k f) (m : ℕ) (ε : ℝ≥0∞) :
-    Measure.pi (fun _ : Fin m => μ) {S | ε < trueError μ f.toFun (learner k f S)} ≤
+/-- **The elimination learner is consistent with the k-CNF class.** On every labelled sample
+realizable by a `k`-CNF function, the elimination output is a `k`-CNF function that agrees with
+every label (CSLib's `IsConsistent`): it is true at the positive examples, which satisfy it, and
+false at the negative examples, because it implies the target (Valiant, *A theory of the
+learnable*, Comm. ACM 27 (1984), Section 5, proof of Theorem A). -/
+theorem isConsistent_learner (k : ℕ) {m : ℕ} :
+    IsConsistent (learner (t := t) k (m := m)) (kcnfClass t k : ConceptClass _ Bool) := by
+  rintro S ⟨c, hc, hS⟩
+  obtain ⟨f, hf, rfl⟩ := Finset.mem_image.1 (Finset.mem_coe.1 hc)
+  have hfk : IsKCNF k f := by
+    intro cl hcl
+    have := Finset.mem_powerset.1 hf hcl
+    simp only [allClauses, Finset.mem_filter] at this
+    exact this.2
+  have hpos : ∀ x ∈ positives S, f.Holds x := by
+    intro x hx
+    obtain ⟨i, hi⟩ := mem_positives.1 hx
+    have := hS i
+    rw [hi] at this
+    simpa [CNF.toFun] using this.symm
+  refine ⟨learner_mem_kcnfClass k S, fun i => ?_⟩
+  have hlab := hS i
+  change decide ((eliminate k (positives S)).Holds (S i).1) = (S i).2
+  cases hb : (S i).2 with
+  | true =>
+    have hmem : (S i).1 ∈ positives S := mem_positives.2 ⟨i, by rw [← hb]⟩
+    simp [eval_eliminate_of_mem k _ hmem]
+  | false =>
+    rw [hb] at hlab
+    have hnot : ¬ f.Holds (S i).1 := by simpa [CNF.toFun] using hlab.symm
+    have : ¬ (eliminate k (positives S)).Holds (S i).1 :=
+      fun h => hnot (eliminate_imp hfk _ hpos h)
+    simp [this]
+
+/-- Every subset of the finite product `(Fin t → Bool) × Bool` is measurable. -/
+theorem measurableSet_disagreement (h : (Fin t → Bool) → Bool) :
+    MeasurableSet {p : (Fin t → Bool) × Bool | h p.1 ≠ p.2} :=
+  (Set.toFinite _).measurableSet
+
+/-- **k-CNF is PAC learnable by elimination.** Let `D` be any probability distribution on labelled
+truth assignments of `t` variables under which some `k`-CNF function has error `0` (the
+realizable case). For `m` independent examples from `D`, the probability that the elimination
+learner outputs a hypothesis of error greater than `ε` is at most `2^N (1 - ε)^m`, where `N` is
+the number of clauses of at most `k` literals, so `N ≤ ∑_{j ≤ k} (2t)^j` by
+`card_allClauses_le`. Valiant (*A theory of the learnable*, Comm. ACM 27 (1984), Section 5,
+Theorem A) proves learnability of `k`-CNF with `L(h, (2t)^{k+1})` positive examples through his
+Bernoulli-trial bound; this statement replaces that argument by the Occam bound for consistent
+learners (Blumer, Ehrenfeucht, Haussler and Warmuth, *Occam's razor*, Inform. Process. Lett. 24
+(1987), 377-380). -/
+theorem pi_eliminate_error_gt_le (D : Measure ((Fin t → Bool) × Bool)) [IsProbabilityMeasure D]
+    {k : ℕ} (hD : D ∈ realizableFamily (kcnfClass t k : ConceptClass _ Bool)) (m : ℕ)
+    (ε : ℝ≥0∞) :
+    Measure.pi (fun _ : Fin m => D) {S | ε < error D (learner k S)} ≤
       2 ^ (allClauses t k).card * (1 - ε) ^ m := by
-  refine (pi_consistent_learner_error_gt_le μ f.toFun (kcnfClass t k)
-    (fun _ _ => (Set.toFinite _).measurableSet) m (learner k f)
-    (learner_mem_kcnfClass k f) (consistent_learner hf) ε).trans ?_
+  obtain ⟨h, hh, h0⟩ := hD
+  refine (pi_consistent_learner_error_gt_le D (kcnfClass t k)
+    (fun h _ => measurableSet_disagreement h) ⟨h, hh, h0⟩ (learner k)
+    (isConsistent_learner k) ε).trans ?_
   have : ((kcnfClass t k).card : ℝ≥0∞) ≤ 2 ^ (allClauses t k).card := by
     exact_mod_cast card_kcnfClass_le t k
   exact mul_le_mul_left this _
 
-end Cslib.MachineLearning.PAC.KCNF
+/-- **k-CNF is PAC learnable (Valiant 1984, Theorem A).** For fixed `t` and `k`, the class of
+`k`-CNF functions over `t` variables is PAC learnable (CSLib's `IsPACLearnable`) over its
+realizable family, by the elimination learner with `⌈log (|kcnfClass| / δ) / ε⌉` examples
+(Valiant, *A theory of the learnable*, Comm. ACM 27 (1984), Section 5, Theorem A, without the
+running-time bound). -/
+theorem isPACLearnable_kcnfClass (t k : ℕ) :
+    IsPACLearnable (kcnfClass t k : ConceptClass (Fin t → Bool) Bool)
+      (realizableFamily (kcnfClass t k : ConceptClass (Fin t → Bool) Bool)) :=
+  isPACLearnable_of_isConsistent (kcnfClass t k) (fun h _ => measurableSet_disagreement h)
+    (fun _ => learner k) (fun _ => isConsistent_learner k)
+
+end Cslib.MachineLearning.PACLearning.KCNF

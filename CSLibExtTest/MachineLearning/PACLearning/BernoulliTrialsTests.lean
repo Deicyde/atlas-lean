@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import CSLibExt.MachineLearning.PAC.BernoulliTrials
+public import CSLibExt.MachineLearning.PACLearning.BernoulliTrials
 import Mathlib.Analysis.Complex.ExponentialBounds
 
 /-!
@@ -20,7 +20,7 @@ probability less than `1/2`. And the exponential moment at `-1` of a trial with 
 probability `1/2` is `(1 + e⁻¹) / 2`.
 -/
 
-namespace Cslib.MachineLearning.PAC.BernoulliTrials
+namespace Cslib.MachineLearning.PACLearning.BernoulliTrials
 
 open MeasureTheory ProbabilityTheory Real
 
@@ -40,4 +40,4 @@ example {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω) [IsProbabilityMeasur
   rw [mgf_neg_one_of_zero_or_one hX h01, hp]
   ring
 
-end Cslib.MachineLearning.PAC.BernoulliTrials
+end Cslib.MachineLearning.PACLearning.BernoulliTrials

@@ -1,7 +1,7 @@
 # A bad hypothesis survives $m$ examples with probability at most $(1 - \varepsilon)^m$
 
-In the setting of the previous statement, if $\operatorname{err}_\mu(h) \ge \varepsilon$, then
-$$\mu^m\{S : h \text{ is consistent with } c \text{ on } S\} \le (1 - \varepsilon)^m .$$
+In the setting of the previous statement, if $\operatorname{error}_D(h) \ge \varepsilon$, then the
+probability under $D^m$ that $h$ agrees with all $m$ examples is at most $(1 - \varepsilon)^m$.
 
 ## Sources
 

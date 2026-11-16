@@ -15,15 +15,17 @@ import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Analysis.Complex.ExponentialBounds
 
 /-!
-# Valiant's Bernoulli-trial bound `L(h, S) ≤ 2h(S + ln h)`
+# Valiant's Bernoulli-trial bound: `L(h, S) ≤ ⌈2h(S + ln h)⌉`
 
 Section 4 of L. G. Valiant, *A theory of the learnable*, Comm. ACM 27 (1984), 1134-1142,
 abstracts the probabilistic analysis of all his learning algorithms into one lemma. For a real
 `h > 1` and a positive integer `S`, `L(h, S)` is the least number of independent Bernoulli trials,
 each with success probability at least `1/h`, after which the probability of fewer than `S`
 successes is less than `1/h`; his Proposition states `L(h, S) ≤ 2h(S + ln h)`. Valiant derives it
-from a Chernoff bound on the binomial lower tail; the proof here uses the exponential moment at
-`-1` instead:
+from a Chernoff bound on the binomial lower tail. This file proves the probability bound for every
+number of trials `m ≥ 2h(S + ln h)`, which gives `L(h, S) ≤ ⌈2h(S + ln h)⌉`, one trial weaker than
+the Proposition when `2h(S + ln h)` is not an integer. The proof uses the exponential moment at
+`-1`:
 
 `P(N < S) ≤ e^S E[e^{-N}] ≤ e^S exp (-(1 - e⁻¹) m / h) < e^S exp (-m / (2h)) ≤ 1 / h`
 
@@ -32,7 +34,8 @@ for `N` the number of successes in `m ≥ 2h(S + ln h)` trials, using `1 - e⁻�
 Main result:
 
 * `measureReal_sum_lt_lt_inv`: **in `m ≥ 2h(S + ln h)` independent trials with success
-  probabilities at least `1/h`, fewer than `S` successes has probability less than `1/h`**.
+  probabilities at least `1/h`, fewer than `S` successes has probability less than `1/h`**, so
+  `L(h, S) ≤ ⌈2h(S + ln h)⌉`.
 
 ## Cost model
 
@@ -43,7 +46,7 @@ None: this is a probability estimate.
 
 set_option autoImplicit false
 
-namespace Cslib.MachineLearning.PAC.BernoulliTrials
+namespace Cslib.MachineLearning.PACLearning.BernoulliTrials
 
 open MeasureTheory ProbabilityTheory Real
 
@@ -65,12 +68,13 @@ theorem mgf_neg_one_of_zero_or_one [IsProbabilityMeasure μ] {X : Ω → ℝ} (h
     integral_indicator_const (1 : ℝ) hset]
   simp
 
-/-- **Valiant's bound `L(h, S) ≤ 2h(S + ln h)` (Valiant 1984, Section 4, Proposition).** Let
-`X₀, …, X_{m-1}` be independent random variables with values in `{0, 1}` (Bernoulli trials), each
-with success probability `P(Xᵢ = 1) ≥ 1/h`, where `h > 1`, and let `S ≥ 1` be an integer. If
-`m ≥ 2h(S + ln h)`, then the probability of fewer than `S` successes is less than `1/h`
-(L. G. Valiant, *A theory of the learnable*, Comm. ACM 27 (1984), 1134-1142, Section 4,
-Proposition: "For all integers `S ≥ 1` and all real `h > 1`, `L(h, S) ≤ 2h(S + log_e h)`"). -/
+/-- **Valiant's Bernoulli-trial bound, `L(h, S) ≤ ⌈2h(S + ln h)⌉`.** Let `X₀, …, X_{m-1}` be
+independent random variables with values in `{0, 1}` (Bernoulli trials), each with success
+probability `P(Xᵢ = 1) ≥ 1/h`, where `h > 1`, and let `S ≥ 1` be an integer. If
+`m ≥ 2h(S + ln h)`, then the probability of fewer than `S` successes is less than `1/h`. Hence
+`L(h, S) ≤ ⌈2h(S + ln h)⌉`; Valiant's Proposition states the slightly sharper
+`L(h, S) ≤ 2h(S + log_e h)` (L. G. Valiant, *A theory of the learnable*, Comm. ACM 27 (1984),
+1134-1142, Section 4, Proposition). -/
 theorem measureReal_sum_lt_lt_inv [IsProbabilityMeasure μ] {m : ℕ} (X : Fin m → Ω → ℝ)
     (hind : iIndepFun X μ) (hmeas : ∀ i, Measurable (X i)) (h01 : ∀ i ω, X i ω = 0 ∨ X i ω = 1)
     {h : ℝ} (hh : 1 < h) (hp : ∀ i, 1 / h ≤ μ.real {ω | X i ω = 1}) {S : ℕ} (hS : 1 ≤ S)
@@ -136,4 +140,4 @@ theorem measureReal_sum_lt_lt_inv [IsProbabilityMeasure μ] {m : ℕ} (X : Fin m
         rw [hmgf]; exact mul_le_mul_of_nonneg_left hprod (exp_pos _).le
     _ < 1 / h := hfinal
 
-end Cslib.MachineLearning.PAC.BernoulliTrials
+end Cslib.MachineLearning.PACLearning.BernoulliTrials

@@ -1,13 +1,15 @@
-# True error of a hypothesis
+# True error against a target labelling
 
 Let $\mu$ be a distribution on a measurable space $X$ of instances, $c : X \to Y$ a target
-labelling and $h : X \to Y$ a hypothesis. The true error (generalization error) of $h$ is
+labelling and $h : X \to Y$ a hypothesis. The true error of $h$ against $c$ is
 $$\operatorname{err}_\mu(h) = \mu\{x \in X : h(x) \ne c(x)\} \in [0, \infty],$$
-the probability that $h$ disagrees with the target on a fresh example drawn from $\mu$.
+the probability that $h$ disagrees with the target on a fresh instance; Shalev-Shwartz and
+Ben-David write it $L_{(\mathcal{D}, f)}(h)$. It is CSLib's 0-1 `error` of $h$ under the joint
+distribution obtained by labelling $\mu$ with $c$ (see the bridge below).
 
 Valiant's 1984 definition is one-sided: examples are drawn from a distribution on the positive
-examples only, and the hypothesis must imply the target. Its two-sided variant, sketched in the same
-section, measures errors on both sides; this is the measure used here and in the textbook.
+examples only, and the hypothesis must imply the target. Its two-sided variant, sketched in the
+same section, measures errors on both sides, as here.
 
 ## Sources
 

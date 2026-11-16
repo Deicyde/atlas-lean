@@ -1,10 +1,11 @@
 # Union bound over a finite class (the Occam bound)
 
-Let $H$ be a finite set of hypotheses whose disagreement sets with the target $c$ are measurable,
-let $\mu$ be a probability distribution on $X$ and let $\varepsilon \in [0, \infty]$. Then
-$$\mu^m\{S : \exists h \in H,\ \operatorname{err}_\mu(h) > \varepsilon \text{ and } h \text{ is consistent with } c \text{ on } S\} \le |H|\,(1 - \varepsilon)^m .$$
-The event is the union, over the "bad" hypotheses of $H$, of the events that each is consistent
-with the sample, and each has probability at most $(1 - \varepsilon)^m$.
+Let $H$ be a finite set of hypotheses with measurable disagreement sets, $D$ a probability
+distribution on labelled examples and $\varepsilon \in [0, \infty]$. Then
+$$D^m\{S : \text{the version space of } H \text{ at } S \text{ contains some } h \text{ with } \operatorname{error}_D(h) > \varepsilon\} \le |H|\,(1 - \varepsilon)^m ,$$
+where the version space (CSLib's `VersionSpace`) is the set of members of $H$ that agree with
+every labelled example of $S$. The event is the union, over the "bad" hypotheses of $H$, of the
+events that each agrees with the sample.
 
 This is the realizable (noise-free) counterpart of the finite-class uniform deviation bound: it
 needs no concentration inequality and its sample size grows like $\log |H| / \varepsilon$ instead of
@@ -12,9 +13,9 @@ $\log |H| / \varepsilon^2$.
 
 ## Background
 
-- [Uniform deviation for a finite class](../../generalization-bounds-and-concentration/finite-class-uniform-deviation.md):
+- [Uniform deviation of the empirical risk over a finite class](../../generalization-bounds-and-concentration/measure-real-exists-abs-empirical-risk-s.md):
   the agnostic version of the same union-bound argument, where Hoeffding's inequality replaces the
-  exact probability $(1 - \operatorname{err})^m$ and the rate in $\varepsilon$ is quadratic.
+  exact probability $(1 - \operatorname{error})^m$ and the rate in $\varepsilon$ is quadratic.
 
 ## Sources
 

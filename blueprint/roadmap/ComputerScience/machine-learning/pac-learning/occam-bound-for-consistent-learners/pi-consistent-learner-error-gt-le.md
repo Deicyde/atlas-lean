@@ -1,12 +1,12 @@
 # Consistent learners over a finite class are probably approximately correct
 
-Let $H$ be a finite set of hypotheses whose disagreement sets with the target $c$ are measurable,
-and let $A$ be a learner that maps every sample $S$ of $m$ instances to a hypothesis
-$A(S) \in H$ consistent with $c$ on $S$ (in the realizable case, any empirical risk minimizer over
-$H$). Then for every $\varepsilon$,
-$$\mu^m\{S : \operatorname{err}_\mu(A(S)) > \varepsilon\} \le |H|\,(1 - \varepsilon)^m .$$
-Realizability (some $h \in H$ agrees with $c$) is what guarantees that a consistent choice exists;
-the bound itself only uses that $A$ outputs a consistent member of $H$.
+Let $H$ be a finite set of hypotheses with measurable disagreement sets, $D$ a probability
+distribution under which some $h \in H$ has error $0$, and $A$ a learner on samples of size $m$
+that is consistent with $H$ in CSLib's sense (`IsConsistent`: on every sample realizable by $H$,
+its output lies in the version space). Then for every $\varepsilon$,
+$$D^m\{S : \operatorname{error}_D(A(S)) > \varepsilon\} \le |H|\,(1 - \varepsilon)^m .$$
+The learner is only required to be consistent on realizable samples; the samples on which it is
+unconstrained have probability $0$ by the previous statement.
 
 ## Sources
 

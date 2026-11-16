@@ -1,11 +1,12 @@
-# A hypothesis survives $m$ independent examples with probability $(1 - \operatorname{err})^m$
+# A hypothesis survives $m$ independent examples with probability $(1 - \operatorname{error})^m$
 
-Let $\mu$ be a probability distribution on $X$, $c$ a target labelling and $h$ a hypothesis whose
-disagreement set $\{x : h(x) \ne c(x)\}$ is measurable. Under the product distribution $\mu^m$ of
-$m$ independent examples,
-$$\mu^m\{S : h(S_i) = c(S_i) \text{ for all } i < m\} = (1 - \operatorname{err}_\mu(h))^m .$$
-The event is the product of $m$ copies of the agreement set, whose probability is
-$1 - \operatorname{err}_\mu(h)$.
+Let $D$ be a probability distribution on labelled examples and $h$ a hypothesis whose disagreement
+set $\{(x, y) : h(x) \ne y\}$ is measurable. Under the product distribution $D^m$ of $m$
+independent examples,
+$$D^m\{S : h(x_i) = y_i \text{ for all } i < m\} = (1 - \operatorname{error}_D(h))^m ,$$
+where $S = ((x_i, y_i))_{i<m}$. The event is the product of $m$ copies of the agreement set.
+
+Here $\operatorname{error}_D(h) = D\{(x, y) : h(x) \ne y\}$ is CSLib's 0-1 `error` of a hypothesis under a joint distribution $D$ on labelled examples, and samples are CSLib's `LabeledSample`s.
 
 ## Sources
 

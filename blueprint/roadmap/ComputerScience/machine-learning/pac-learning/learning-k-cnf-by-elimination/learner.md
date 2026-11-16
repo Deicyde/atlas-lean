@@ -1,8 +1,9 @@
 # The elimination learner
 
-On a sample of assignments labelled by the target $f$, the elimination learner runs the elimination
-algorithm on the sample points at which $f$ is true (the positive examples) and outputs the Boolean
-function of the resulting $k$-CNF expression. The negative examples are ignored.
+The elimination learner is a CSLib `Learner` on labelled samples of truth assignments: it runs the
+elimination algorithm on the positive examples of the sample and outputs the Boolean function of
+the resulting $k$-CNF expression. It reads only the labelled sample, never the target; the negative
+examples are ignored.
 
 ## Sources
 
