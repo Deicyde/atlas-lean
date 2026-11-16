@@ -17,3 +17,9 @@
 - [The weak-learning assumption](weak-learner.md)
 - [The Freund–Schapire bound on AdaBoost's training error](train-err-le-prod-sqrt.md)
 - [AdaBoost drives the training error down exponentially](train-err-le-exp.md)
+
+## Related topics
+
+- [PAC learning](../../pac-learning/README.md): boosting was introduced to answer Kearns and
+  Valiant's question whether weak learnability, accuracy slightly better than random guessing,
+  implies PAC learnability; the training-error bound here is the empirical side of that answer.

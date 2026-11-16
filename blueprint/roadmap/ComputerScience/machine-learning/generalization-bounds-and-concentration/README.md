@@ -29,3 +29,4 @@ The [PAC-Bayes bounds](pac-bayes-bounds/README.md) are formalized in Lean: Caton
 - [Uniform laws and Rademacher complexity](../../../Probability/high-dimensional-probability/uniform-laws-and-rademacher-complexity/README.md)
 - [Matrix concentration inequalities](../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)
 - [Differential privacy](../../cryptography/differential-privacy/README.md): when the hypothesis or query is chosen by looking at the data, a union bound over a fixed class no longer applies; if the choice is differentially private, the empirical mean of the chosen query still concentrates (Dwork, Feldman, Hardt, Pitassi, Reingold and Roth 2015, recorded there as a wanted transfer theorem).
+- [PAC learning](../pac-learning/README.md): the realizable case, where a consistent learner over a finite class needs only $\log(|H|/\delta)/\varepsilon$ examples and no concentration inequality.
