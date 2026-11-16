@@ -11,8 +11,10 @@ without a bias term; with a bias the proof gives $\log(2(d+1))$. The direct appr
 theorem, approximation of every Barron function by width-$m$ networks with squared error
 $3 \lVert f \rVert_B^2 / m$ and path norm $2 \lVert f \rVert_B$, is proved by Monte Carlo
 sampling of the neurons; the inverse approximation theorem, which together with it identifies
-the Barron space with the functions approximable by networks of bounded path norm, is recorded as
-a wanted statement.
+the Barron space with the functions approximable by networks of bounded path norm, and the a
+priori estimate of the population risk of the path-norm regularized estimator, which combines
+approximation and estimation into a width-independent $O(n^{-1/2})$ bound, are recorded as wanted
+statements.
 
 ## Barron space
 
@@ -34,6 +36,10 @@ a wanted statement.
 - [Path norm with bias](path-norm-bias.md)
 - [Path-norm ball with bias on a sample](path-norm-ball-bias-values.md)
 - [Rademacher complexity of path-norm balls of two-layer ReLU networks with bias](rademacher-complexity-path-norm-ball-bia.md)
+
+## Generalization
+
+- [A priori estimate of the population risk for two-layer ReLU networks](two-layer-a-priori-estimate.md)
 
 ## Supporting definitions and lemmas
 

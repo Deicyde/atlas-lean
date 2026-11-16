@@ -696,6 +696,7 @@
 "CSLibExt.MachineLearning.GeneralizationBounds.supCorr_pathNormBallValues_le": "01d3967b7ce1917b",
 "CSLibExt.MachineLearning.GeneralizationBounds.twoLayerReLU": "05f1e7b5b21dfbd2",
 "CSLibExt.MachineLearning.GeneralizationBounds.twoLayerReLUBias": "1d178c4eeea6ec1b",
+"CSLibExt.MachineLearning.GeneralizationBounds.twoLayer_a_priori_estimate": "6be3749673bd4062",
 "CSLibExt.MachineLearning.NeuralNetworks.IsBarronRepresentation": "74588bb5f07eb334",
 "CSLibExt.MachineLearning.NeuralNetworks.barronNorm": "114e7640e0fdc3f5",
 "CSLibExt.MachineLearning.NeuralNetworks.barronNorm_neuron_le": "b9371facce0502b1",
