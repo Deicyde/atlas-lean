@@ -10,4 +10,4 @@ Theory*, draft 2019, Theorem 21.1.3 with Definition 21.1.1).
 
 ## Informally uses
 
-- [Laplacian quadratic form](dot-product-mul-vec-laplacian.md): the proof bounds the expected cut weight by Cauchy–Schwarz against `∑_e w_e (z(a) - z(b))² = zᵀLz` (Spielman, *Spectral and Algebraic Graph Theory*, inequality (21.2)).
+- [Laplacian quadratic form](../../part-01/graph-laplacians-and-cheeger-s-inequality/dot-product-mul-vec-laplacian.md): the proof bounds the expected cut weight by Cauchy–Schwarz against `∑_e w_e (z(a) - z(b))² = zᵀLz` (Spielman, *Spectral and Algebraic Graph Theory*, inequality (21.2)).

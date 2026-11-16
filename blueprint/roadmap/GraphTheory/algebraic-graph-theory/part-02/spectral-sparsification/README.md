@@ -7,7 +7,7 @@ A graph `H` is a spectral approximation of `G` when `L_G ≼ L_H ≼ κ L_G` in 
 
 ## Related topics
 
-- [Graph Laplacians and Cheeger's inequality](../graph-laplacians-and-cheeger-s-inequality/README.md): the Laplacians and the Loewner order being approximated.
-- [Effective resistance and electrical networks](../effective-resistance-and-electrical-networks/README.md): effective resistances are the sampling weights of the randomized sparsifier.
+- [Graph Laplacians and Cheeger's inequality](../../part-01/graph-laplacians-and-cheeger-s-inequality/README.md): the Laplacians and the Loewner order being approximated.
+- [Effective resistance and electrical networks](../../part-01/effective-resistance-and-electrical-networks/README.md): effective resistances are the sampling weights of the randomized sparsifier.
 - [Kadison–Singer problem](../../../../Analysis/operator-algebras/kadison-singer-problem/README.md): its barrier bound for mixed characteristic polynomials descends from the barrier potentials of this sparsifier.
-- [ε-light vertex sets](../light-vertex-sets/README.md): another Loewner-order comparison of a graph Laplacian with the Laplacian of a subgraph.
+- [ε-light vertex sets](../../part-01/light-vertex-sets/README.md): another Loewner-order comparison of a graph Laplacian with the Laplacian of a subgraph.

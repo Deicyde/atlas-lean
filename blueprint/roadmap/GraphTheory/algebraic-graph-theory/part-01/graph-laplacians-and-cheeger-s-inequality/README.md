@@ -22,9 +22,6 @@ The weighted Laplacian `L = B diag(w) Bᵀ` of a finite multigraph and its quadr
 - [`λ₂` bounds the Rayleigh quotient on vectors orthogonal to the constants](algebraic-connectivity-mul-le.md)
 - [Easy direction of Cheeger's inequality, eigenvalue form](algebraic-connectivity-mul-card-mul-card.md)
 - [`λ₂ > 0` exactly for connected graphs](algebraic-connectivity-pos-iff.md)
-- [Weighted degree](weighted-degree.md)
-- [Volume of a vertex set](volume.md)
-- [Cheeger's inequality, hard direction](exists-threshold-cut-le-sqrt.md)
 
 ## Related topics
 
@@ -33,7 +30,8 @@ The weighted Laplacian `L = B diag(w) Bᵀ` of a finite multigraph and its quadr
 - [Positive definite matrices and matrix inequalities](../../../../LinearAlgebra/positive-definite-matrices/README.md): Laplacians of nonnegative weights are positive semidefinite, and graphs are compared in the Loewner order.
 - [Kirchhoff's matrix-tree theorem](../kirchhoff-s-matrix-tree-theorem/README.md): stated with Mathlib's `lapMatrix`, which is identified here with the multigraph Laplacian of the darts.
 - [Effective resistance and electrical networks](../effective-resistance-and-electrical-networks/README.md): the Laplacian as the operator of a resistor network: potentials, energy and effective conductance.
-- [Spectral sparsification](../spectral-sparsification/README.md): approximating a Laplacian in the Loewner order by one with few edges.
+- [Spectral sparsification](../../part-02/spectral-sparsification/README.md): approximating a Laplacian in the Loewner order by one with few edges.
 - [Expander graphs](../../../graph-families-and-operations/expander-graphs/README.md): Cheeger's inequality relates the spectral gap `λ₂` to edge expansion.
 - [Unsupervised learning and matrix factorization](../../../../ComputerScience/machine-learning/unsupervised-learning/README.md): spectral clustering embeds the vertices with the bottom Laplacian eigenvectors and then clusters them.
 - [Gaussian graphical models](../../../../Probability/linear-models-multivariate/gaussian-graphical-models/README.md): the Leroux conditional autoregressive precision matrix `ρL + (1 - ρ)I` is built from a weighted graph Laplacian, with the same quadratic form.
+- [Conductance and Cheeger's inequality](../../part-02/conductance-and-cheeger-s-inequality/README.md): conductance and the hard direction of Cheeger's inequality.

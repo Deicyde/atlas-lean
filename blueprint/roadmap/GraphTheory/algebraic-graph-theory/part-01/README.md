@@ -23,4 +23,3 @@
 - [Oriented incidence matrices](oriented-incidence-matrices/README.md)
 - [Graph Laplacians and Cheeger's inequality](graph-laplacians-and-cheeger-s-inequality/README.md)
 - [Effective resistance and electrical networks](effective-resistance-and-electrical-networks/README.md)
-- [Spectral sparsification](spectral-sparsification/README.md)

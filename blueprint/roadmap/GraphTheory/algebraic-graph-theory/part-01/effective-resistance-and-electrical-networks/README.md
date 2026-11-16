@@ -14,7 +14,7 @@ A weighted graph read as a resistor network with conductances `w`: potentials, t
 ## Related topics
 
 - [Graph Laplacians and Cheeger's inequality](../graph-laplacians-and-cheeger-s-inequality/README.md): the Laplacian whose quadratic form is the network energy.
-- [Spectral sparsification](../spectral-sparsification/README.md): Spielman and Srivastava sample edges in proportion to `w_e R_eff(e)`.
+- [Spectral sparsification](../../part-02/spectral-sparsification/README.md): Spielman and Srivastava sample edges in proportion to `w_e R_eff(e)`.
 - [Kirchhoff's matrix-tree theorem](../kirchhoff-s-matrix-tree-theorem/README.md): for a spanning tree drawn with probability proportional to the product of its edge weights, `w_e R_eff(e)` is the probability that it contains `e` (Spielman, *Spectral and Algebraic Graph Theory*, Theorem 13.5.1).
 - [Conjugate gradient method](../../../../LinearAlgebra/matrix-decompositions/conjugate-gradient-method/README.md): electrical potentials solve Laplacian systems `Lv = b`, the systems that fast Laplacian solvers attack with preconditioned iterative methods.
 - [Effective resistance is a potential difference](effective-resistance-eq-sub-of-laplacian.md)
