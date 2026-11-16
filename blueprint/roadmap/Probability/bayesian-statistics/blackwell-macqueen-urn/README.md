@@ -20,4 +20,4 @@
 
 - [Dirichlet process](../dirichlet-process/README.md): the random measure whose draws the urn describes.
 - [Ewens sampling formula and the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/README.md): the partition law of the ties, studied in its own right.
-- [Infinite mixture models](../infinite-mixture-models/README.md): the same partition law obtained as the infinite limit of finite mixtures.
+- [Infinite mixture models](../infinite-mixture-models/README.md): the same partition law as the limit of the closed-form partition probability of finite mixtures.

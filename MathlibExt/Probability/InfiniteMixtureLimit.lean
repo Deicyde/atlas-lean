@@ -12,14 +12,14 @@ public import MathlibExt.Biology.PopulationGenetics.ChineseRestaurant
 public import Mathlib.Analysis.SpecificLimits.Basic
 
 /-!
-# The Chinese restaurant process as the infinite limit of a finite mixture
+# The finite-mixture partition formula tends to the Chinese restaurant process law
 
 Griffiths and Ghahramani (*The Indian buffet process: an introduction and review*, JMLR 12
 (2011), Section 2) derive the prior on partitions of an infinite mixture model by taking the
 number of classes `K` to infinity in a finite Bayesian mixture. With mixing weights
-`θ ~ Dirichlet(α/K, …, α/K)` and class assignments `cᵢ | θ ~ Discrete(θ)`, a partition of `N`
-objects into `K₊` blocks of sizes `m₁, …, m_{K₊}` has probability (their Equation 4 summed over
-the `K! / K₀!` labelings of the blocks, `K₀ = K - K₊`)
+`θ ~ Dirichlet(α/K, …, α/K)` and class assignments `cᵢ | θ ~ Discrete(θ)`, they compute that a
+partition of `N` objects into `K₊` blocks of sizes `m₁, …, m_{K₊}` has probability (their
+Equation 4 summed over the `K! / K₀!` labelings of the blocks, `K₀ = K - K₊`)
 
   `P_K([c]) = K! / K₀! · (α/K)^{K₊} · ∏ₖ ∏_{j=1}^{mₖ-1} (j + α/K) · Γ(α) / Γ(N + α)`,
 
@@ -30,13 +30,17 @@ and their Equation 5 is the limit
 the law of the Chinese restaurant process. We write `Γ(N + α) / Γ(α)` as the rising factorial
 `α^{(N)}` (`ascPochhammer`), as in `crpProb`.
 
+This file records the closed form `P_K([c])` as a definition (`finitePartitionProb`); it does
+not derive it from the Dirichlet–multinomial model. What is proved is the limit of that closed
+form, Equation 5.
+
 Main results:
 
 * `tendsto_descFactorial_div_pow`: `K! / ((K - r)! K^r) → 1`.
 * `tendsto_prod_range_add_div`: `∏_{j=1}^{n} (j + α/K) → n!`.
-* `finitePartitionProb`: the finite-`K` partition probability above.
-* `tendsto_finitePartitionProb`: **the infinite limit of a finite mixture is the Chinese
-  restaurant process** (Equation 5).
+* `finitePartitionProb`: the closed form `P_K([c])` above, taken as a definition.
+* `tendsto_finitePartitionProb`: **the closed-form finite-mixture partition probability tends to
+  the Chinese restaurant process law** (Equation 5).
 -/
 
 @[expose] public section
@@ -75,21 +79,24 @@ theorem tendsto_prod_range_add_div (α : ℝ) (n : ℕ) :
       tendsto_const_nhds.add (tendsto_const_div_atTop_nhds_zero_nat α)
   simpa [← Finset.prod_range_add_one_eq_factorial] using h
 
-/-- **Partition probability of a finite symmetric Dirichlet mixture.** For `K` classes with
-weights `θ ~ Dirichlet(α/K, …, α/K)`, the probability that the class assignments of `n` objects
-induce the partition `π` (Griffiths and Ghahramani 2011, Section 2.2: Equation 4 times the
-`K! / K₀!` labelings) is `K!/(K - |π|)! · (α/K)^{|π|} · ∏_{B ∈ π} ∏_{j=1}^{|B|-1} (j + α/K) /
-α^{(n)}`, where `α^{(n)} = Γ(n + α) / Γ(α)` is the rising factorial. It vanishes when `K < |π|`. -/
+/-- **Closed-form partition probability of a finite symmetric Dirichlet mixture.** The expression
+`K!/(K - |π|)! · (α/K)^{|π|} · ∏_{B ∈ π} ∏_{j=1}^{|B|-1} (j + α/K) / α^{(n)}`, where
+`α^{(n)} = Γ(n + α) / Γ(α)` is the rising factorial. Griffiths and Ghahramani (2011, Section 2.2:
+Equation 4 times the `K! / K₀!` labelings) give it as the probability that, for `K` classes with
+weights `θ ~ Dirichlet(α/K, …, α/K)`, the class assignments of `n` objects induce the partition
+`π`. It is the paper's closed form, taken here as a definition; it is not derived from the
+Dirichlet–multinomial model. It vanishes when `K < |π|`. -/
 noncomputable def finitePartitionProb (α : ℝ) (K : ℕ) {n : ℕ}
     (π : Finpartition (univ : Finset (Fin n))) : ℝ :=
   (K.descFactorial #π.parts : ℝ) * (α / K) ^ #π.parts *
     π.cardProd (fun m ↦ ∏ j ∈ range (m - 1), ((j + 1 : ℝ) + α / K)) /
       (ascPochhammer ℝ n).eval α
 
-/-- **The Chinese restaurant process is the infinite limit of finite mixtures** (Griffiths and
-Ghahramani 2011, Equation 5). For every `α` and every partition `π` of `n` objects, the partition
-probability of the `K`-class symmetric Dirichlet mixture converges, as `K → ∞`, to the law of the
-Chinese restaurant process `α^{|π|} ∏_{B ∈ π} (|B| - 1)! / α^{(n)}` (`crpProb`). -/
+/-- **The closed-form finite-mixture partition probability tends to the Chinese restaurant
+process law** (Griffiths and Ghahramani 2011, Equation 5). For every `α` and every partition `π`
+of `n` objects, the closed form `finitePartitionProb α K π` (Equation 4 times `K! / K₀!`,
+recorded from the paper, not derived from the model here) converges, as `K → ∞`, to the law of
+the Chinese restaurant process `α^{|π|} ∏_{B ∈ π} (|B| - 1)! / α^{(n)}` (`crpProb`). -/
 theorem tendsto_finitePartitionProb (α : ℝ) {n : ℕ}
     (π : Finpartition (univ : Finset (Fin n))) :
     Tendsto (fun K : ℕ => finitePartitionProb α K π) atTop (𝓝 (crpProb α π)) := by

@@ -19,6 +19,7 @@ Named discrete and continuous laws and their moments, densities, mass functions 
 - [Multinomial distribution](multinomial-distribution/README.md)
 - [Multivariate normal distribution](multivariate-normal-distribution/README.md)
 - [Negative binomial and beta-binomial distributions](negative-binomial-and-beta-binomial-distribution/README.md)
+- [Poisson distribution](poisson-distribution/README.md)
 - [Poisson binomial distribution](poisson-binomial-distribution/README.md)
 - [Poisson–Gamma duality](poisson-gamma-duality/README.md)
 - [Quantile function and inverse transform sampling](quantile-function-and-inverse-transform-sampling/README.md)

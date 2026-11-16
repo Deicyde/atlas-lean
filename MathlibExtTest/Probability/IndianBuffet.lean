@@ -31,7 +31,8 @@ example (α : ℝ) : Tendsto (fun K : ℕ => emptyColumnsFactor α 2 K) atTop
   have := tendsto_emptyColumnsFactor α 2
   rwa [h, show -α * (3 / 2 : ℝ) = -(3 / 2 * α) by ring] at this
 
-/-- The limit law of one shared feature among two objects: `α exp(-3α/2) / 2`. -/
+/-- The Indian buffet process formula for one shared feature among two objects:
+`α exp(-3α/2) / 2`. -/
 example (α : ℝ) : lofProb α Z₁ = α * Real.exp (-α * (3 / 2)) / 2 := by
   have hf : featureCount Z₁ 0 = 2 := by decide
   have hh : historyFactorial Z₁ = 1 := by decide
@@ -42,7 +43,7 @@ example (α : ℝ) : lofProb α Z₁ = α * Real.exp (-α * (3 / 2)) / 2 := by
 example (α : ℝ) : Tendsto (fun K : ℕ => finiteLofProb α K Z₁) atTop (𝓝 (lofProb α Z₁)) :=
   tendsto_finiteLofProb α Z₁
 
-/-- The expected number of ones never exceeds `N α`. -/
+/-- The closed-form expected number of ones never exceeds `N α`. -/
 example (K : ℕ) : expectedOnes 2 5 K ≤ 10 := by
   have := expectedOnes_le (α := 2) (by norm_num) 5 K
   norm_num at this ⊢
@@ -57,11 +58,22 @@ example : ∑ j ∈ range 3, ((Nat.choose 3 (j + 1) : ℝ) * (j.factorial * (3 -
 example : #{h : Fin 3 → Bool | onesCount h = 1} = 3 := by
   rw [card_filter_onesCount_eq]; rfl
 
-/-- Poisson representation for one shared feature among two objects. -/
+/-- Product of Poisson probabilities for one shared feature among two objects. -/
 example (α : ℝ≥0) :
     ∏ h ∈ ({h | 0 < onesCount h} : Finset (Fin 2 → Bool)),
       (ProbabilityTheory.poissonMeasure (historyRate α h)).real {historyCount Z₁ h} =
         lofProb α Z₁ :=
   prod_poissonMeasure_historyCount α Z₁ fun k => by fin_cases k; decide
+
+/-- Random Poisson history counts: the count event of `Z₁` has the Indian buffet process
+probability. -/
+example {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} (α : ℝ≥0)
+    {K : (Fin 2 → Bool) → Ω → ℕ} (hind : ProbabilityTheory.iIndepFun K P)
+    (hmeas : ∀ h, Measurable (K h))
+    (hlaw : ∀ h ∈ ({h | 0 < onesCount h} : Finset (Fin 2 → Bool)),
+      ProbabilityTheory.HasLaw (K h) (ProbabilityTheory.poissonMeasure (historyRate α h)) P) :
+    P.real {ω | ∀ h ∈ ({h | 0 < onesCount h} : Finset (Fin 2 → Bool)),
+      K h ω = historyCount Z₁ h} = lofProb α Z₁ :=
+  measureReal_historyCount_eq_lofProb α Z₁ (fun k => by fin_cases k; decide) hind hmeas hlaw
 
 end MathlibExtTest.Probability.IndianBuffet

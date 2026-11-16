@@ -1,6 +1,6 @@
-# Expected number of ones in the finite feature model
+# Closed-form expected number of ones of the finite feature model
 
-In the finite feature model with `K` features and `πₖ ~ Beta(α/K, 1)`, each entry `zᵢₖ` equals one with probability `E[πₖ] = (α/K) / (α/K + 1)`, the mean `r / (r + s)` of `Beta(r, s)`. Hence the expected number of ones in the `N × K` matrix is `N K (α/K) / (α/K + 1)` (Griffiths and Ghahramani 2011, Equation 11). The definition records this expression; the expectation itself is not computed from a measure here.
+The expression `N K (α/K) / (α/K + 1)`, Griffiths and Ghahramani's value (2011, Equation 11) of the expected number of ones `E[∑ᵢₖ zᵢₖ]` in the `N × K` matrix of the finite feature model with `πₖ ~ Beta(α/K, 1)`: each entry is one with probability `E[πₖ] = (α/K) / (α/K + 1)`, the mean `r / (r + s)` of `Beta(r, s)`. It is the paper's closed form, taken here as a definition. The entry probability itself is derived from the beta–Bernoulli model in [Entry probability of the finite feature model](entry-prob.md); the sum over the `N K` entries (linearity of expectation over a random matrix) is not formalized.
 
 ## Informally uses
 

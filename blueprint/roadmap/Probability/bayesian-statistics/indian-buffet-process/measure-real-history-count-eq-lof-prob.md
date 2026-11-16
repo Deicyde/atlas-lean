@@ -1,0 +1,3 @@
+# Independent Poisson history counts reproduce Equation 14
+
+Let random counts `K_h`, indexed by the non-zero histories `h`, be independent with `K_h ~ Poisson(α (m_h - 1)! (N - m_h)! / N!)`, the construction of Griffiths and Ghahramani (2011, Section 4.5). Then for every binary matrix `Z` whose columns are all non-zero, the event that every `K_h` equals the number of columns of `Z` with history `h` has probability equal to the Indian buffet process formula of the `lof`-class of `Z` (Equation 14). It follows from the product identity and independence. The bijection between classes and count vectors is not formalized, so this is a statement about the count events, one matrix at a time.

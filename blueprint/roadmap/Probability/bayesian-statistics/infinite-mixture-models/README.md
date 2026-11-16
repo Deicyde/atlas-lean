@@ -1,11 +1,11 @@
 # Infinite mixture models
 
-The prior on class assignments of an infinite mixture model, obtained by letting the number of classes `K` tend to infinity in a finite Bayesian mixture with symmetric `Dirichlet(α/K, …, α/K)` weights (Griffiths and Ghahramani, *The Indian buffet process: an introduction and review*, JMLR 12 (2011), Section 2). Integrating out the weights (Dirichlet–multinomial conjugacy) gives an exchangeable law on partitions of the objects; as `K → ∞` it converges to the law of the Chinese restaurant process (their Equation 5), so the infinite model has an unbounded number of classes, of which only finitely many are used by any finite data set.
+The prior on class assignments of an infinite mixture model, obtained by letting the number of classes `K` tend to infinity in a finite Bayesian mixture with symmetric `Dirichlet(α/K, …, α/K)` weights (Griffiths and Ghahramani, *The Indian buffet process: an introduction and review*, JMLR 12 (2011), Section 2). Integrating out the weights (Dirichlet–multinomial conjugacy) gives an exchangeable law on partitions of the objects, with an explicit closed form; as `K → ∞` the closed form converges to the law of the Chinese restaurant process (their Equation 5), so the infinite model has an unbounded number of classes, of which only finitely many are used by any finite data set. Here the finite-`K` partition probability is recorded from the paper as a closed form; what is formalized is the limit of that closed form, not its derivation from the model.
 
-## The finite mixture and its limit
+## The finite-mixture closed form and its limit
 
-- [Partition probability of a finite symmetric Dirichlet mixture](finite-partition-prob.md)
-- [The Chinese restaurant process is the infinite limit of finite mixtures](tendsto-finite-partition-prob.md)
+- [Closed-form partition probability of a finite symmetric Dirichlet mixture](finite-partition-prob.md)
+- [The closed-form finite-mixture partition probability tends to the Chinese restaurant process law](tendsto-finite-partition-prob.md)
 
 ## Elementary limits
 

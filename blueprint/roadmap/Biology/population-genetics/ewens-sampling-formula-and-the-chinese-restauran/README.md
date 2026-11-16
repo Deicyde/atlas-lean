@@ -39,7 +39,7 @@
 
 ## Related topics
 
-- [Infinite mixture models](../../../Probability/bayesian-statistics/infinite-mixture-models/README.md): the Chinese restaurant process as the infinite limit of finite Dirichlet mixtures, the prior of infinite mixture models in machine learning.
+- [Infinite mixture models](../../../Probability/bayesian-statistics/infinite-mixture-models/README.md): the closed-form partition probability of finite symmetric Dirichlet mixtures tends to the Chinese restaurant process law, which is how machine learning obtains the prior of infinite mixture models.
 - [Blackwell–MacQueen urn](../../../Probability/bayesian-statistics/blackwell-macqueen-urn/README.md): the ties among draws from a Dirichlet process follow the Chinese restaurant process.
 - [Dirichlet process](../../../Probability/bayesian-statistics/dirichlet-process/README.md): the random measure whose draws, through their ties, produce the Chinese restaurant process.
 - [Indian buffet process](../../../Probability/bayesian-statistics/indian-buffet-process/README.md): the analogue for latent feature models.

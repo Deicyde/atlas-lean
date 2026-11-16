@@ -11,10 +11,10 @@ module
 public import MathlibExt.Probability.InfiniteMixtureLimit
 public import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
 public import Mathlib.NumberTheory.Harmonic.Defs
-public import Mathlib.Probability.Distributions.Poisson.Basic
+public import MathlibExt.Probability.Distributions.PoissonSum
 
 /-!
-# The Indian buffet process as the infinite limit of a beta–Bernoulli feature model
+# The Indian buffet process: limits of the finite-model closed forms and Poisson history counts
 
 Griffiths and Ghahramani (*The Indian buffet process: an introduction and review*, JMLR 12
 (2011), Section 4) build a prior on binary feature matrices with `N` rows (objects) and an
@@ -26,7 +26,8 @@ Section 4.2) and letting `K → ∞` gives the Indian buffet process.
 A `lof`-class is described here by its `K₊` non-empty columns, a matrix `Z : Fin N → Fin K₊ → Bool`
 in any column order: `mₖ` is the number of ones in column `k` (`featureCount`) and `K_h` the
 number of columns equal to the history `h` (`historyCount`). Equation 12, rewritten with
-Equation 13, gives the finite-`K` probability of the class (`finiteLofProb`)
+Equation 13, is the paper's closed form for the finite-`K` probability of the class
+(`finiteLofProb`)
 
   `α^{K₊} / ∏_h K_h! · K! / (K₀! K^{K₊}) · (N! / ∏_{j=1}^{N} (j + α/K))^K
     · ∏ₖ (N - mₖ)! ∏_{j=1}^{mₖ-1} (j + α/K) / N!`,  `K₀ = K - K₊`,
@@ -35,23 +36,30 @@ and Equation 14 is its limit (`lofProb`)
 
   `α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!`.
 
+The finite-`K` closed forms (`finiteLofProb`, and the expected number of ones `expectedOnes`)
+are recorded from the paper as definitions; this file does not derive them from the
+beta–Bernoulli model. What is proved is their limits, and that Equation 14 agrees pointwise with
+the joint probability of independent Poisson history counts.
+
 Main results:
 
 * `tendsto_emptyColumnsFactor`: `(N! / ∏_{j=1}^{N} (j + α/K))^K → exp(-α H_N)`, the factor
   contributed by the `K₀ → ∞` empty columns.
-* `tendsto_finiteLofProb`: **the Indian buffet process is the infinite limit of the finite
-  beta–Bernoulli model** (Equation 14).
-* `expectedOnes_eq`, `expectedOnes_le`, `tendsto_expectedOnes`: the expected number of ones in
-  the finite model is `N α / (1 + α/K) ≤ N α`, uniformly in `K` (Equation 11).
+* `tendsto_finiteLofProb`: **the closed-form finite-model `lof`-class probability tends to the
+  Indian buffet process formula** (Equation 14).
+* `expectedOnes_eq`, `expectedOnes_le`, `tendsto_expectedOnes`: the closed-form expected number
+  of ones `N K (α/K) / (α/K + 1)` (Equation 11) equals `N α / (1 + α/K) ≤ N α` and tends to `N α`.
 * `sum_choose_mul_factorial_div`, `sum_onesCount_factorial_div`:
   `∑_h (m_h - 1)! (N - m_h)! / N! = ∑_{j=1}^{N} C(N, j) (j - 1)! (N - j)! / N! = H_N`
   over the non-zero histories (Equation 16), the identity behind the `exp(-α H_N)` normaliser.
-* `prod_poissonMeasure_historyCount`: **Equation 14 is a product of Poisson laws**: with
-  independent counts `K_h ~ Poisson(α (m_h - 1)! (N - m_h)! / N!)` over the non-zero histories,
-  the counts of `Z` have probability `lofProb α Z` (Section 4.5).
-* `hasLaw_sum_historyCount`, `coe_sum_historyRate`: the number of features `K₊ = ∑_h K_h` is
-  `Poisson(α H_N)` (Section 4.6), via `hasLaw_sum_poissonMeasure` (finite sums of independent
-  Poisson variables).
+* `prod_poissonMeasure_historyCount`: **Equation 14 as a product of Poisson probabilities**:
+  the product over non-zero histories of the `Poisson(α (m_h - 1)! (N - m_h)! / N!)`
+  probabilities of the history counts of `Z` equals `lofProb α Z` (Section 4.5).
+* `measureReal_historyCount_eq_lofProb`: the same for random counts: if the `K_h` are independent
+  with those Poisson laws, the event that they equal the history counts of `Z` has probability
+  `lofProb α Z`.
+* `hasLaw_sum_historyCount`, `coe_sum_historyRate`: with such counts, `K₊ = ∑_h K_h` is
+  `Poisson(α H_N)` (Section 4.6), via `iIndepFun.hasLaw_sum_poissonMeasure`.
 -/
 
 @[expose] public section
@@ -86,10 +94,10 @@ column orders of `Z` that give the same matrix; it divides `K!` in the cardinali
 def historyFactorial (Z : Fin N → Fin r → Bool) : ℕ :=
   ∏ h : Fin N → Bool, (historyCount Z h).factorial
 
-/-- **Empty-column factor of the finite feature model.** `(N! / ∏_{j=1}^{N} (j + α/K))^K`, the
-first factor of Griffiths and Ghahramani (2011), Equation 13: each empty column of the `K`-feature
-beta–Bernoulli model has probability `N! / ∏_{j=1}^{N} (j + α/K)` before the rescaling by `α/K`
-is moved onto the non-empty columns. -/
+/-- **Empty-column factor of the finite feature-model closed form.**
+`(N! / ∏_{j=1}^{N} (j + α/K))^K`, the first factor of Griffiths and Ghahramani (2011),
+Equation 13, where `N! / ∏_{j=1}^{N} (j + α/K)` is their value for the probability of an empty
+column with the factor `α/K` moved onto the non-empty columns. Recorded as a definition. -/
 noncomputable def emptyColumnsFactor (α : ℝ) (N K : ℕ) : ℝ :=
   ((N.factorial : ℝ) / ∏ j ∈ range N, ((j + 1 : ℝ) + α / K)) ^ K
 
@@ -129,32 +137,37 @@ theorem tendsto_emptyColumnsFactor (α : ℝ) (N : ℕ) :
   rw [hlim] at hinv
   exact hinv.congr fun K => (emptyColumnsFactor_eq α N K).symm
 
-/-- **Probability of a `lof`-class in the finite feature model.** For `K` features with
-`πₖ ~ Beta(α/K, 1)` and `zᵢₖ ~ Bernoulli(πₖ)`, the `lof`-equivalence class whose non-empty
-columns are those of `Z : Fin N → Fin r → Bool` (so `K₊ = r`) has probability
+/-- **Closed-form `lof`-class probability of the finite feature model.** The expression
 `α^{K₊} / ∏_h K_h! · K! / (K₀! K^{K₊}) · (N! / ∏_{j=1}^{N} (j + α/K))^K ·
-∏ₖ (N - mₖ)! ∏_{j=1}^{mₖ-1} (j + α/K) / N!` with `K₀ = K - K₊` (Griffiths and Ghahramani 2011,
-Equation 12 in the form given by Equation 13). The intended input has `mₖ ≥ 1` for every column. -/
+∏ₖ (N - mₖ)! ∏_{j=1}^{mₖ-1} (j + α/K) / N!` with `K₊ = r`, `K₀ = K - K₊`, for a matrix
+`Z : Fin N → Fin r → Bool`. Griffiths and Ghahramani (2011, Equation 12 in the form given by
+Equation 13) give it as the probability, for `K` features with `πₖ ~ Beta(α/K, 1)` and
+`zᵢₖ ~ Bernoulli(πₖ)`, of the `lof`-equivalence class whose non-empty columns are those of `Z`
+(so the intended input has `mₖ ≥ 1` for every column). It is the paper's closed form, taken here
+as a definition; it is not derived from the beta–Bernoulli model. -/
 noncomputable def finiteLofProb (α : ℝ) (K : ℕ) (Z : Fin N → Fin r → Bool) : ℝ :=
   α ^ r / (historyFactorial Z : ℝ) * ((K.descFactorial r : ℝ) / (K : ℝ) ^ r) *
     emptyColumnsFactor α N K *
     ∏ k, ((N - featureCount Z k).factorial *
       ∏ j ∈ range (featureCount Z k - 1), ((j + 1 : ℝ) + α / K)) / N.factorial
 
-/-- **Probability of a `lof`-class under the Indian buffet process.** The `lof`-equivalence class
-whose non-empty columns are those of `Z : Fin N → Fin r → Bool` has probability
-`α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!`, `K₊ = r`
-(Griffiths and Ghahramani 2011, Equation 14). -/
+/-- **Indian buffet process formula for a `lof`-class.** The expression
+`α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!`, `K₊ = r`, for a matrix
+`Z : Fin N → Fin r → Bool`: Griffiths and Ghahramani (2011, Equation 14) give it as the
+probability of the `lof`-equivalence class whose non-empty columns are those of `Z`. Taken here
+as a definition. -/
 noncomputable def lofProb (α : ℝ) (Z : Fin N → Fin r → Bool) : ℝ :=
   α ^ r / (historyFactorial Z : ℝ) * Real.exp (-α * (harmonic N : ℝ)) *
     ∏ k, ((N - featureCount Z k).factorial * (featureCount Z k - 1).factorial : ℝ) /
       N.factorial
 
-/-- **The Indian buffet process is the infinite limit of the beta–Bernoulli feature model**
-(Griffiths and Ghahramani 2011, Equation 14). For every `α` and every binary matrix `Z` of
-non-empty columns, the probability of its `lof`-class in the `K`-feature model with
-`πₖ ~ Beta(α/K, 1)` converges, as `K → ∞`, to
-`α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!`. -/
+/-- **The closed-form finite-model `lof`-class probability tends to the Indian buffet process
+formula** (Griffiths and Ghahramani 2011, Equation 14). For every `α` and every binary matrix
+`Z`, the closed form `finiteLofProb α K Z` (Equations 12–13, recorded from the paper, not derived
+from the beta–Bernoulli model here) converges, as `K → ∞`, to
+`lofProb α Z = α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!`. As an identity
+of formulas it needs no hypothesis on `Z`; the probabilistic reading is for matrices whose
+columns are all non-empty. -/
 theorem tendsto_finiteLofProb (α : ℝ) (Z : Fin N → Fin r → Bool) :
     Tendsto (fun K : ℕ => finiteLofProb α K Z) atTop (𝓝 (lofProb α Z)) := by
   have hcols : Tendsto (fun K : ℕ => ∏ k, ((N - featureCount Z k).factorial *
@@ -168,14 +181,15 @@ theorem tendsto_finiteLofProb (α : ℝ) (Z : Fin N → Fin r → Bool) :
   rw [mul_one] at h
   exact h
 
-/-- **Expected number of ones in the finite feature model.** With `K` features and
-`πₖ ~ Beta(α/K, 1)`, each entry `zᵢₖ` is one with probability `E[πₖ] = (α/K) / (α/K + 1)` (the
-mean `r / (r + s)` of `Beta(r, s)`), so `E[∑ᵢₖ zᵢₖ] = N K (α/K) / (α/K + 1)` (Griffiths and
-Ghahramani 2011, Equation 11). -/
+/-- **Closed-form expected number of ones of the finite feature model.** The expression
+`N K (α/K) / (α/K + 1)`, Griffiths and Ghahramani's value (2011, Equation 11) of `E[∑ᵢₖ zᵢₖ]`
+for `K` features with `πₖ ~ Beta(α/K, 1)`: each entry is one with probability
+`E[πₖ] = (α/K) / (α/K + 1)`, the mean `r / (r + s)` of `Beta(r, s)`. It is the paper's closed
+form, taken here as a definition; the expectation is not computed from a measure here. -/
 noncomputable def expectedOnes (α : ℝ) (N K : ℕ) : ℝ := N * K * ((α / K) / (α / K + 1))
 
-/-- **The expected number of ones is `N α / (1 + α/K)`** (Griffiths and Ghahramani 2011,
-Equation 11), for `α ≥ 0` and `K ≥ 1`. -/
+/-- **The closed-form expected number of ones equals `N α / (1 + α/K)`** (Griffiths and
+Ghahramani 2011, Equation 11), for `α ≥ 0` and `K ≥ 1`. -/
 theorem expectedOnes_eq {α : ℝ} (hα : 0 ≤ α) (N : ℕ) {K : ℕ} (hK : K ≠ 0) :
     expectedOnes α N K = N * α / (1 + α / K) := by
   have hK0 : (K : ℝ) ≠ 0 := by exact_mod_cast hK
@@ -183,9 +197,9 @@ theorem expectedOnes_eq {α : ℝ} (hα : 0 ≤ α) (N : ℕ) {K : ℕ} (hK : K 
   rw [expectedOnes, add_comm 1]
   field_simp
 
-/-- **The finite feature model stays sparse**: for `α ≥ 0`, the expected number of ones is at
-most `N α` for every number of features `K` (Griffiths and Ghahramani 2011, Section 4.1, after
-Equation 11). -/
+/-- **The closed-form expected number of ones is at most `N α`**: for `α ≥ 0` and every number
+of features `K`, `expectedOnes α N K ≤ N α`, the bound independent of `K` that Griffiths and
+Ghahramani (2011, Section 4.1, with Equation 11) note for the finite model. -/
 theorem expectedOnes_le {α : ℝ} (hα : 0 ≤ α) (N K : ℕ) : expectedOnes α N K ≤ N * α := by
   rcases Nat.eq_zero_or_pos K with rfl | hK
   · rw [expectedOnes]
@@ -195,8 +209,8 @@ theorem expectedOnes_le {α : ℝ} (hα : 0 ≤ α) (N K : ℕ) : expectedOnes �
   have h1 : 1 ≤ 1 + α / K := le_add_of_nonneg_right (by positivity)
   exact div_le_self (by positivity) h1
 
-/-- **The expected number of ones tends to `N α`** as the number of features `K → ∞`
-(Griffiths and Ghahramani 2011, Section 4.6: the expected number of entries of `Z` is `N α`). -/
+/-- **The closed-form expected number of ones tends to `N α`** as the number of features
+`K → ∞` (Griffiths and Ghahramani 2011, Section 4.6, the limit of Equation 11). -/
 theorem tendsto_expectedOnes {α : ℝ} (hα : 0 ≤ α) (N : ℕ) :
     Tendsto (fun K : ℕ => expectedOnes α N K) atTop (𝓝 (N * α)) := by
   have h : Tendsto (fun K : ℕ => N * α / (1 + α / K)) atTop (𝓝 (N * α / (1 + 0))) :=
@@ -299,11 +313,11 @@ theorem coe_historyRate (α : ℝ≥0) (h : Fin N → Bool) :
       α * (((onesCount h - 1).factorial * (N - onesCount h).factorial : ℝ) / N.factorial) := by
   simp [historyRate]
 
-/-- **The Indian buffet process as independent Poisson history counts** (Griffiths and
-Ghahramani 2011, Section 4.5). If the number `K_h` of features with history `h` is
-`Poisson(α (m_h - 1)! (N - m_h)! / N!)`, independently over the `2^N - 1` non-zero histories,
-then the probability of the counts of a matrix `Z` whose columns are all non-zero is the
-Indian buffet process probability of its `lof`-class (Equation 14). -/
+/-- **Equation 14 as a product of Poisson probabilities** (Griffiths and Ghahramani 2011,
+Section 4.5). For a matrix `Z` whose columns are all non-zero, the product over the `2^N - 1`
+non-zero histories `h` of the `Poisson(α (m_h - 1)! (N - m_h)! / N!)` probabilities of the
+history counts `K_h` of `Z` (the joint pmf of independent Poisson counts) equals the Indian
+buffet process formula `lofProb α Z`. -/
 theorem prod_poissonMeasure_historyCount (α : ℝ≥0) (Z : Fin N → Fin r → Bool)
     (hZ : ∀ k, 0 < featureCount Z k) :
     ∏ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)),
@@ -348,20 +362,6 @@ theorem prod_poissonMeasure_historyCount (α : ℝ≥0) (Z : Fin N → Fin r →
   rw [Finset.prod_div_distrib, Finset.prod_mul_distrib, hexp, hfac, hpow, lofProb]
   ring
 
-/-- **Sums of independent Poisson variables are Poisson.** If `K_i`, `i ∈ s`, are independent
-with `K_i ~ Poisson(λ_i)`, then `∑_{i ∈ s} K_i ~ Poisson(∑_{i ∈ s} λ_i)` for every nonempty
-finite set `s` (the fact used by Griffiths and Ghahramani 2011, Section 4.6). -/
-theorem hasLaw_sum_poissonMeasure {ι Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω}
-    {K : ι → Ω → ℕ} (hind : iIndepFun K P) (hmeas : ∀ i, Measurable (K i)) {rate : ι → ℝ≥0}
-    {s : Finset ι} (hlaw : ∀ i ∈ s, HasLaw (K i) Po(rate i) P) (hs : s.Nonempty) :
-    HasLaw (∑ i ∈ s, K i) Po(∑ i ∈ s, rate i) P := by
-  induction hs using Finset.Nonempty.cons_induction with
-  | singleton a => simpa using hlaw a (mem_singleton_self a)
-  | cons a s ha hs ih =>
-    rw [sum_cons, sum_cons]
-    exact (hind.indepFun_finsetSum_of_notMem hmeas ha).symm.hasLaw_add_poissonMeasure
-      (hlaw a (mem_cons_self a s)) (ih fun i hi => hlaw i (mem_cons_of_mem hi))
-
 /-- **The history rates sum to `α H_N`.** The Poisson rates of the non-zero histories of the
 Indian buffet process sum to `α H_N` (Griffiths and Ghahramani 2011,
 Equation 16 multiplied by `α`). -/
@@ -371,10 +371,10 @@ theorem coe_sum_historyRate (α : ℝ≥0) (N : ℕ) :
   rw [NNReal.coe_sum, ← sum_onesCount_factorial_div N, Finset.mul_sum]
   exact Finset.sum_congr rfl fun h _ => coe_historyRate α h
 
-/-- **The number of features of the Indian buffet process is `Poisson(α H_N)`** (Griffiths and
-Ghahramani 2011, Section 4.6). If the counts `K_h` of features with history `h` are independent
-with `K_h ~ Poisson(α (m_h - 1)! (N - m_h)! / N!)` over the non-zero histories (Section 4.5),
-then for `N ≥ 1` the number of non-empty columns `K₊ = ∑_h K_h` is Poisson with rate
+/-- **Independent Poisson history counts give `Poisson(α H_N)` features** (Griffiths and
+Ghahramani 2011, Section 4.6). If random counts `K_h` are independent with
+`K_h ~ Poisson(α (m_h - 1)! (N - m_h)! / N!)` over the non-zero histories (the construction of
+Section 4.5), then for `N ≥ 1` their total `K₊ = ∑_h K_h` is Poisson with rate
 `∑_h α (m_h - 1)! (N - m_h)! / N!`, which equals `α H_N` by `coe_sum_historyRate`. -/
 theorem hasLaw_sum_historyCount {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω}
     (α : ℝ≥0) (hN : 0 < N) {K : (Fin N → Bool) → Ω → ℕ} (hind : iIndepFun K P)
@@ -383,8 +383,32 @@ theorem hasLaw_sum_historyCount {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Mea
       HasLaw (K h) Po(historyRate α h) P) :
     HasLaw (∑ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)), K h)
       Po(∑ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)), historyRate α h) P := by
-  refine hasLaw_sum_poissonMeasure hind hmeas hlaw ⟨fun _ => true, ?_⟩
+  refine hind.hasLaw_sum_poissonMeasure hmeas hlaw ⟨fun _ => true, ?_⟩
   have : Nonempty (Fin N) := ⟨⟨0, hN⟩⟩
   simp [onesCount]
+
+/-- **Independent Poisson history counts reproduce Equation 14** (Griffiths and Ghahramani 2011,
+Section 4.5). If random counts `K_h` are independent with
+`K_h ~ Poisson(α (m_h - 1)! (N - m_h)! / N!)` over the non-zero histories, then for every matrix
+`Z` whose columns are all non-zero, the event that every `K_h` equals the number of columns of
+`Z` with history `h` has probability `lofProb α Z`. -/
+theorem measureReal_historyCount_eq_lofProb {Ω : Type*} {mΩ : MeasurableSpace Ω}
+    {P : Measure Ω} (α : ℝ≥0) (Z : Fin N → Fin r → Bool) (hZ : ∀ k, 0 < featureCount Z k)
+    {K : (Fin N → Bool) → Ω → ℕ} (hind : iIndepFun K P) (hmeas : ∀ h, Measurable (K h))
+    (hlaw : ∀ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)),
+      HasLaw (K h) Po(historyRate α h) P) :
+    P.real {ω | ∀ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)),
+      K h ω = historyCount Z h} = lofProb α Z := by
+  rw [← prod_poissonMeasure_historyCount α Z hZ]
+  have hset : {ω | ∀ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)),
+      K h ω = historyCount Z h} =
+      ⋂ h ∈ ({h | 0 < onesCount h} : Finset (Fin N → Bool)), K h ⁻¹' {historyCount Z h} := by
+    ext ω
+    simp
+  rw [hset, measureReal_def, hind.measure_inter_preimage_eq_mul _
+    (fun h _ => measurableSet_singleton _), ENNReal.toReal_prod]
+  refine Finset.prod_congr rfl fun h hh => ?_
+  rw [measureReal_def, ← (hlaw h hh).map_eq, Measure.map_apply (hmeas h)
+    (measurableSet_singleton _)]
 
 end MathlibExt.Probability.IndianBuffet
