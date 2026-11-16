@@ -13,6 +13,22 @@ similarities of ratio $\lambda$ under the open set condition has Hausdorff dimen
 set and the [Banach–Tarski paradox](measures/banach-tarski-paradox/README.md), and integration, Lebesgue spaces, Haar
 measure and optimal transport make up most of the rest.
 
+The textbook core of the subject is in Mathlib and has no pages here, since the graph documents only
+its own libraries' declarations. In the order of Tao's *An Introduction to Measure Theory*:
+Lebesgue outer measure and Carathéodory's construction (`MeasureTheory.OuterMeasure.caratheodory`,
+`MeasureTheory.OuterMeasure.toMeasure`; Tao's definition of Lebesgue measurability is shown
+equivalent to Mathlib's in [Lebesgue measurability](lebesgue-measure/lebesgue-measurability/README.md));
+the monotone convergence theorem (`MeasureTheory.lintegral_iSup`), Fatou's lemma
+(`MeasureTheory.lintegral_liminf_le`) and the dominated convergence theorem
+(`MeasureTheory.tendsto_integral_of_dominated_convergence`); Egorov's theorem
+(`MeasureTheory.tendstoUniformlyOn_of_ae_tendsto`) and the Borel–Cantelli lemma
+(`MeasureTheory.measure_limsup_atTop_eq_zero`); Tonelli's and Fubini's theorems
+(`MeasureTheory.lintegral_prod`, `MeasureTheory.integral_prod`); Hölder's and Minkowski's
+inequalities (`MeasureTheory.integral_mul_le_Lp_mul_Lq_of_nonneg`, `MeasureTheory.eLpNorm_add_le`)
+and the completeness of $L^p$ (`MeasureTheory.Lp.instCompleteSpace`); the Lebesgue differentiation
+theorem (`IsUnifLocDoublingMeasure.ae_tendsto_average`) and the almost everywhere differentiability
+of monotone functions (`Monotone.ae_differentiableAt`). The pages below extend this core.
+
 - [Measures and measurable sets](measures/README.md)
 - [Lebesgue measure](lebesgue-measure/README.md)
 - [Haar measure and fundamental domains](haar-measure/README.md)
