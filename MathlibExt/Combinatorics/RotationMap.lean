@@ -36,8 +36,8 @@ This file defines rotation maps, their adjacency matrices, the square (Propositi
 * `RotationMap.IsNDLambdaGraph.square`: squaring an `(N, D, λ)`-graph gives an `(N, D², λ²)`-graph
   (Proposition 2.3 with `t = 2`).
 
-The spectral bound for the zig-zag product (Theorem 3.2) is recorded as a wanted theorem in
-`WantedExt.GraphTheory.ZigZagProductWanted`.
+The spectral bounds for the zig-zag product (Theorem 3.2, and the spectral-gap form of Vadhan's
+*Pseudorandomness*, Theorem 4.35) are proved in `MathlibExt.Combinatorics.ZigZagProduct`.
 -/
 
 @[expose] public section

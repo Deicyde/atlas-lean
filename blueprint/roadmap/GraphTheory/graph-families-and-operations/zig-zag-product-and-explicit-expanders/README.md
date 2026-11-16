@@ -13,6 +13,7 @@ Regular multigraphs given by rotation maps, and the graph operations that build 
 - [Adjacency matrix of the square](adj-matrix-square.md)
 - [Squaring squares the spectral parameter](is-ndlambda-graph-square.md)
 - [Zig-zag product of rotation maps](zigzag.md)
+- [Norm bound from a quadratic-form bound](quadratic-form-bound-gives-norm-bound.md)
 - [Zig-zag theorem](zig-zag-theorem.md)
 - [Zig-zag theorem, spectral-gap form](zig-zag-theorem-gap-form.md)
 
