@@ -25,3 +25,13 @@
 - [Directional derivatives in nonnegative directions](mem-l-directional-derivative.md)
 - [Products of Lorentzian polynomials](mem-l-mul.md)
 - [Stable polynomials are Lorentzian](stable-mem-l.md)
+
+## Related topics
+
+- [Hodge theory for matroids](../hodge-theory-for-matroids/README.md): the Hodge–Riemann
+  relations of the Chow ring of a matroid, of which the Lorentzian signature condition is the
+  degree-one shadow.
+- [Mason's conjectures on independent sets](../mason-s-conjectures-on-independent-sets/README.md):
+  the strong Mason conjecture, the main application.
+- [Stable polynomials](../../../Algebra/zeros-of-polynomials/stable-polynomials/README.md):
+  stability for polynomials with complex coefficients, in the proved library.

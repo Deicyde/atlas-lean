@@ -1,6 +1,6 @@
 # Matroid theory
 
-Matroids and their invariants: algebraic matroids, Edmonds' intersection and partition theorems, Rado's theorem, characteristic polynomials and log-concavity, the Mason conjectures, Lorentzian polynomials, and lines in weighted matroids.
+Matroids and their invariants: algebraic matroids, Edmonds' intersection and partition theorems, Rado's theorem, characteristic polynomials and log-concavity, the Mason conjectures, Hodge theory for matroids, Lorentzian polynomials and M-convex sets, and lines in weighted matroids.
 
 - [Algebraic matroids](algebraic-matroids/README.md)
 - [Heron–Rota–Welsh conjecture](heron-rota-welsh-conjecture/README.md)
@@ -11,3 +11,18 @@ Matroids and their invariants: algebraic matroids, Edmonds' intersection and par
 - [Matroid partition theorem](matroid-partition-theorem/README.md)
 - [Non-negative lines in weighted matroids](non-negative-lines-in-weighted-matroids/README.md)
 - [Rado's theorem on independent transversals](rado-s-theorem-on-independent-transversals/README.md)
+
+Matroids are Mathlib's `Matroid` (independent sets, bases, rank, closure, flats, minors and
+duality). The log-concavity results here have two proofs that Huh's work connects: the Hodge
+theory of the Chow ring of a matroid (Adiprasito–Huh–Katz), and Lorentzian polynomials
+(Brändén–Huh), whose defining condition is the polynomial form of the Hodge–Riemann relations in
+degree one.
+
+## Related topics
+
+- [Greedy algorithms and matroids](../../ComputerScience/greedy-algorithms-and-matroids/README.md):
+  matroids as the structures on which the greedy algorithm is optimal.
+- [Stable polynomials](../../Algebra/zeros-of-polynomials/stable-polynomials/README.md): the
+  homogeneous stable polynomials with nonnegative coefficients are Lorentzian.
+- [Tropical varieties](../../AlgebraicGeometry/varieties-and-projective-geometry/tropical-varieties/README.md):
+  the Bergman fan of a matroid is a tropical linear space.
