@@ -28,3 +28,7 @@
 - [First-order conditions for convexity and optimality](../first-order-conditions-for-convexity/README.md)
 - [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md): the convex objectives of linear prediction to which these rates apply; for least squares the smoothness constant is the largest eigenvalue of the empirical covariance.
 - [Generalization bounds and concentration](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/README.md): the $1/\sqrt{n}$ estimation error that the $1/\sqrt{t}$ rate of stochastic gradient descent matches.
+- [Line search methods](../../numerical-analysis/line-search-methods/README.md): step lengths chosen
+  by the Armijo and Wolfe conditions instead of a fixed schedule, and the Zoutendijk condition.
+- [Barzilai–Borwein step size](../../numerical-analysis/barzilai-borwein-step-size/README.md):
+  gradient descent with the two-point step size, a scalar fit of the secant equation.
