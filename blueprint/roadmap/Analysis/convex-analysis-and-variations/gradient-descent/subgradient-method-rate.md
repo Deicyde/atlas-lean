@@ -8,7 +8,7 @@ $$
 
 For a convex $B$-Lipschitz function with a minimizer $x^\star$, every subgradient has norm at most $B$, which is the setting of the source. Proof: $\|x_{k+1} - x^\star\|^2 \le \|x_k - x^\star\|^2 - 2 \gamma_k (f(x_k) - f(x^\star)) + \gamma_k^2 B^2$; summing, $\sum_{k \lt t} \gamma_k (f(x_k) - f(x^\star)) \le \frac{D^2}{2} + \frac{B^2}{2} \sum_{k \lt t} \gamma_k^2$, with $\sum_{k \lt t} \gamma_k^2 \le (D/B)^2 (1 + \log t)$ by the bound on harmonic numbers and $\sum_{k \lt t} \gamma_k \ge D \sqrt{t} / B$; the smallest gap is at most the weighted average.
 
-The rate $D B / \sqrt{t}$, up to the logarithm, is optimal for nonsmooth convex optimization with first-order methods, and in expectation it is also the rate of stochastic gradient descent; it matches the $1/\sqrt{n}$ estimation error of empirical risk minimization, so that one pass of stochastic gradient over $n$ examples suffices statistically.
+Up to the logarithm, the rate $D B / \sqrt{t}$ cannot be improved by any black-box method that queries values and subgradients as long as the number of steps stays below the dimension: for convex $L$-Lipschitz functions on a Euclidean ball of radius $R$ in $\mathbb{R}^d$, solving every such problem to accuracy $\epsilon$ takes at least of order $\min[d, L^2R^2/\epsilon^2]$ steps (Nemirovski and Yudin, 1983). With more steps than the dimension, dimension-dependent methods can do better. In expectation $D B/\sqrt{t}$ is also the rate of stochastic gradient descent; it matches the $1/\sqrt{n}$ estimation error of empirical risk minimization, so that one pass of stochastic gradient over $n$ examples suffices statistically.
 
 ## Background
 
@@ -18,3 +18,4 @@ The rate $D B / \sqrt{t}$, up to the logarithm, is optimal for nonsmooth convex 
 ## Sources
 
 - F. Bach, *Learning Theory from First Principles*, MIT Press (2024); author PDF at <https://www.di.ens.fr/~fbach/ltfp_book.pdf>, Section 5.3, Proposition 5.6 (stated for convex $B$-Lipschitz functions on $\mathbb{R}^d$ with a minimizer at distance at most $D$ from the initial point; the proof uses only the subgradient inequality at the iterates and the bounds on the subgradients and the initial distance, which is the generality of the statement above).
+- A. Juditsky and A. Nemirovski, *First order methods for nonsmooth convex large-scale optimization, I: general purpose methods*, in S. Sra, S. Nowozin and S. J. Wright (eds.), *Optimization for Machine Learning*, MIT Press (2011); author PDF at <https://www2.isye.gatech.edu/~nemirovs/MLOptChapterI.pdf>, Section 5.1, example (a): the lower complexity bound of information-based complexity theory (A. S. Nemirovsky and D. B. Yudin, *Problem Complexity and Method Efficiency in Optimization*, Wiley, 1983).
