@@ -5415,6 +5415,7 @@
   "WantedExt/Complexity/NPComplete/WeightedTardyJobsWanted": {"to": "TheoryOfComputation/np-completeness/scheduling", "title": "Weighted number of tardy jobs"},
   "WantedExt/Complexity/NPComplete/ZeroOneILPWanted": {"to": "TheoryOfComputation/np-completeness/number-and-packing-problems", "title": "0-1 integer programming"},
   "WantedExt/ComputerScience/BayesianNetworkEquivalenceWanted": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Markov equivalence and Bayesian network scores"},
+  "WantedExt/ComputerScience/DifferentialPrivacyWanted": {"to": "ComputerScience/cryptography", "title": "Differential privacy"},
   "WantedExt/ComputerScience/GraphIsomorphismQuasipolynomialWanted": {"to": "TheoryOfComputation/fine-grained-complexity", "title": "Graph isomorphism in quasipolynomial time"},
   "WantedExt/ComputerScience/UnrelatedMachinesRoundingWanted": {"to": "ComputerScience/approximation-algorithms", "title": "Scheduling unrelated parallel machines"},
   "WantedExt/ComputerScience/MachineLearning/RademacherRiskBoundWanted": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
