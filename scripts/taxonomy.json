@@ -3183,6 +3183,7 @@
   "MathlibExt/MeasureTheory/Measure/UniquenessOnRd": {"to": "MeasureTheory/measures", "title": "Uniqueness of measures on Euclidean space"},
   "MathlibExt/MeasureTheory/Measure/VitaliNonmeasurable": {"to": "MeasureTheory/measures", "title": "Vitali set"},
   "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich": {"to": "MeasureTheory/optimal-transport", "title": "Kantorovich duality"},
+  "MathlibExt/MeasureTheory/OptimalTransport/Wasserstein": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein distances"},
   "MathlibExt/MeasureTheory/Polynomial": {"to": "MeasureTheory/lebesgue-measure", "title": "Null sets"},
   "MathlibExt/ModelTheory/GroupLanguage": {"to": "Logic/model-theory", "title": "First-order language of groups"},
   "MathlibExt/ModelTheory/Term/LeafCount": {"to": "Logic/first-order-logic", "title": "First-order syntax"},
