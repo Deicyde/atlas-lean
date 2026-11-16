@@ -6,7 +6,10 @@ Dynamics studies systems evolving through iteration or time, including recurrenc
 almost-everywhere convergence of ergodic averages: the
 [Birkhoff ergodic theorem](ergodic-theory/birkhoff-ergodic-theorem/README.md) for maps preserving a finite measure,
 whose limit is the conditional expectation on the invariant σ-algebra, Kingman's subadditive ergodic theorem, and
-Bourgain's theorem along polynomial times. [Topological and symbolic dynamics](topological-symbolic-dynamics/README.md)
+Bourgain's theorem along polynomial times. It also has the [Poincaré recurrence theorem](ergodic-theory/ae-frequently-mem-of-mem.md),
+[mixing](ergodic-theory/mixing/README.md) and Sinai's
+[Kolmogorov–Sinai entropy](ergodic-theory/kolmogorov-sinai-entropy/README.md), an isomorphism invariant
+that tells Bernoulli schemes apart. [Topological and symbolic dynamics](topological-symbolic-dynamics/README.md)
 has the Curtis–Hedlund–Lyndon theorem, [smooth dynamics](smooth-dynamics/README.md) the
 [shadowing lemma](smooth-dynamics/shadowing-lemma/README.md) and the planar entropy formulas of Pesin and Young, and
 [low-dimensional dynamics](low-dimensional-dynamics/README.md) the Poincaré–Bendixson theorem. In

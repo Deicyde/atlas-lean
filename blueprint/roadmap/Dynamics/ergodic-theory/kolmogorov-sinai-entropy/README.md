@@ -8,18 +8,32 @@ the generator theorem, and it gives $-\sum_i p_i \log p_i$ for the Bernoulli shi
 which is how Kolmogorov and Sinai proved that the Bernoulli schemes $(\tfrac13, \tfrac13, \tfrac13)$ and
 $(\tfrac12, \tfrac12)$ are not isomorphic.
 - [Finite measurable partition modulo null sets](is-measurable-partition.md)
-- [Pullback of a measurable partition](preimage.md)
-- [Entropy of a transformation relative to a partition](entropy-rel.md)
-- [Relative entropy is bounded by the Kolmogorov–Sinai entropy](entropy-rel-le-ks-entropy.md)
-- [Relative entropy of a pulled-back partition](entropy-rel-preimage.md)
-- [Dynamical refinement of a partition](iterate-join.md)
-- [Dynamical refinement commutes with pullback along a factor map](iterate-join-preimage.md)
-- [Kolmogorov–Sinai entropy](ks-entropy.md)
-- [Entropy is an isomorphism invariant](ks-entropy-eq-of-isomorphic.md)
-- [Entropy does not increase under factors](ks-entropy-le-of-factor.md)
-- [Atoms of the dynamical refinement are measurable](measurable-set-iterate-join.md)
 - [Entropy of a finite partition](partition-entropy.md)
 - [Entropy of a partition is nonnegative](partition-entropy-nonneg.md)
-- [Entropy of a Bernoulli shift](ks-entropy-bernoulli-shift.md)
+- [Dynamical refinement of a partition](iterate-join.md)
+- [Atoms of the dynamical refinement are measurable](measurable-set-iterate-join.md)
+- [Entropy of a transformation relative to a partition](entropy-rel.md)
+- [Kolmogorov–Sinai entropy](ks-entropy.md)
+- [Relative entropy is bounded by the Kolmogorov–Sinai entropy](entropy-rel-le-ks-entropy.md)
+- [Pullback of a measurable partition](preimage.md)
+- [Dynamical refinement commutes with pullback along a factor map](iterate-join-preimage.md)
+- [Relative entropy of a pulled-back partition](entropy-rel-preimage.md)
+- [Entropy does not increase under factors](ks-entropy-le-of-factor.md)
+- [Entropy is an isomorphism invariant](ks-entropy-eq-of-isomorphic.md)
 - [Sinai's generator theorem](ks-entropy-eq-entropy-rel-of-is-generato.md)
+- [Sinai's generator theorem, noninvertible case](ks-entropy-eq-entropy-rel-of-is-strong-g.md)
+- [Entropy of a Bernoulli shift](ks-entropy-bernoulli-shift.md)
 - [Kolmogorov's non-isomorphism of Bernoulli schemes](not-isomorphic-bernoulli-uniform-three-t.md)
+
+## Related topics
+
+- [Shannon entropy and Kullback–Leibler divergence](../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/README.md):
+  the entropy of a partition is the Shannon entropy of the law of its atoms, and $h_\mu(T, \xi)$ is the
+  entropy rate of the symbolic process it defines.
+- [Entropy, dimension and Lyapunov exponents](../../smooth-dynamics/entropy-dimension-and-lyapunov-exponents/README.md):
+  the formulas of Pesin, Young, Margulis and Ruelle relate Kolmogorov–Sinai entropy to Lyapunov exponents
+  for smooth systems.
+- [Mixing](../mixing/README.md): Bernoulli schemes are mixing, and entropy is the invariant that
+  distinguishes them.
+- [Full shift and cellular automata](../../topological-symbolic-dynamics/full-shift-and-cellular-automata/README.md):
+  the full shift is the topological space underlying Bernoulli schemes.

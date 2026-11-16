@@ -21980,6 +21980,7 @@
 "MathlibExt.Dynamics.KAMWanted.Dynamics.kam_invariant_curve": "2b6a874fd29d36d0",
 "MathlibExt.Dynamics.KolmogorovSinaiWanted.ksEntropy_bernoulliShift": "e5b2c5bc45e87682",
 "MathlibExt.Dynamics.KolmogorovSinaiWanted.ksEntropy_eq_entropyRel_of_isGenerator": "db3e31b12f70a8f0",
+"MathlibExt.Dynamics.KolmogorovSinaiWanted.ksEntropy_eq_entropyRel_of_isStrongGenerator": "7e6300cdea5c0cd8",
 "MathlibExt.Dynamics.KolmogorovSinaiWanted.not_isomorphic_bernoulli_uniform_three_two": "36f1ed1f52646116",
 "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.EucPlane": "c1d5f78ac3c21156",
 "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.IsMeasurablePartition": "5139387e7dfa5091",
