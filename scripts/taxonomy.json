@@ -2033,6 +2033,7 @@
   "MathlibExt/Analysis/Optimization/QuasiNewton": {"to": "Analysis/numerical-analysis", "title": "Quasi-Newton methods"},
   "MathlibExt/Analysis/Optimization/TrustRegion": {"to": "Analysis/numerical-analysis", "title": "Trust-region methods"},
   "MathlibExt/Analysis/PathSignature/Basic": {"to": "Probability/stochastic-calculus", "title": "Signature of a path"},
+  "MathlibExt/Analysis/PathSignature/LinearCDE": {"to": "Probability/stochastic-calculus", "title": "Signature of a path"},
   "MathlibExt/Analysis/PathSignature/Shuffle": {"to": "Probability/stochastic-calculus", "title": "Signature of a path"},
   "MathlibExt/Analysis/PathSignature/TreeLike": {"to": "Probability/stochastic-calculus", "title": "Tree-like paths and uniqueness of the signature"},
   "MathlibExt/Analysis/PerronKernel": {"to": "NumberTheory/zeta-l-functions/dirichlet-l-functions", "title": "Perron's formula"},

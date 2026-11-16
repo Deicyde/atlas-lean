@@ -10,7 +10,9 @@ module
 
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 public import Mathlib.Data.Nat.Factorial.Basic
+public import Mathlib.Analysis.Calculus.Deriv.Basic
 
+import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
@@ -105,6 +107,50 @@ theorem intervalIntegrable_signature_mul (hv : ∀ i a b, IntervalIntegrable (v 
     (s : ℝ) (w : List ι) (i : ι) (a b : ℝ) :
     IntervalIntegrable (fun u => signature v s u w * v i u) volume a b :=
   (hv i a b).continuousOn_mul (continuous_signature hv s w).continuousOn
+
+/-- **The signature solves `dS = S ⊗ dX`.** For a path with continuous velocity, each iterated
+integral is differentiable in its upper endpoint, with
+`d/dt S^{w i}_{s,t} = S^w_{s,t} vⁱ(t)`: in coordinates, `t ↦ S(X)_{s,t}` solves the linear
+controlled differential equation `dS_{s,t} = S_{s,t} ⊗ dX_t`, `S_{s,s} = 1`, the "universal
+non-commutative exponential" (T. Lyons, *Rough paths, signatures and the modelling of functions on
+streams*, Proc. ICM 2014, arXiv:1405.4537, Lemma 4.6). -/
+theorem hasDerivAt_signature_concat (hv : ∀ i, Continuous (v i)) (s : ℝ) (w : List ι) (i : ι)
+    (t : ℝ) :
+    HasDerivAt (fun t => signature v s t (w ++ [i])) (signature v s t w * v i t) t := by
+  have hw : Continuous fun t => signature v s t w :=
+    continuous_signature (fun i a b => (hv i).intervalIntegrable a b) s w
+  simp only [signature_concat]
+  exact ((hw.mul (hv i)).integral_hasStrictDerivAt s t).hasDerivAt
+
+/-- **Signature along a repeated letter.** For a path whose `i`-th velocity component is
+continuous, the iterated integral along the word `i i ⋯ i` (`k` letters) is
+`S^{i…i}_{s,t} = (Xⁱ_t − Xⁱ_s)^k / k!`, where `Xⁱ_t − Xⁱ_s = ∫_s^t vⁱ`. In particular the
+signature of a one-dimensional path depends only on its increment (Chevyrev and Kormilitzin,
+*A primer on the signature method in machine learning*, arXiv:1603.03788v2, Example 1.6). -/
+theorem signature_replicate {i : ι} (hv : Continuous (v i)) (s t : ℝ) (k : ℕ) :
+    signature v s t (List.replicate k i) = (∫ u in s..t, v i u) ^ k / k.factorial := by
+  induction k generalizing t with
+  | zero => simp
+  | succ k ih =>
+    rw [List.replicate_succ', signature_concat]
+    simp_rw [ih]
+    set F : ℝ → ℝ := fun u => ∫ x in s..u, v i x
+    have hF : ∀ u, HasDerivAt F (v i u) u := fun u =>
+      ((hv).integral_hasStrictDerivAt s u).hasDerivAt
+    have hderiv : ∀ x ∈ Set.uIcc s t, HasDerivAt (fun u => F u ^ (k + 1) / (k + 1).factorial)
+        (F x ^ k / k.factorial * v i x) x := by
+      intro x _
+      have := ((hF x).pow (k + 1)).div_const ((k + 1).factorial : ℝ)
+      convert this using 1
+      rw [Nat.factorial_succ, Nat.cast_mul]
+      have : ((k.factorial : ℕ) : ℝ) ≠ 0 := by positivity
+      field_simp
+      push_cast
+      ring
+    have hcont : Continuous fun u => F u ^ k / k.factorial * v i u :=
+      (((continuous_primitive (fun a b => hv.intervalIntegrable a b) s).pow k).div_const _).mul hv
+    rw [intervalIntegral.integral_eq_sub_of_hasDerivAt hderiv (hcont.intervalIntegrable s t)]
+    simp [F]
 
 /-- **Chen's identity.** For a path whose velocity is interval integrable on every interval, and
 all reals `a, b, c`, every iterated integral over `[a, c]` splits along `b`:

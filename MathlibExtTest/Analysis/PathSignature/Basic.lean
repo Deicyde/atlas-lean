@@ -76,4 +76,16 @@ example (w : List (Fin 3)) (hw : w ≠ []) :
 example (t : ℝ) : signature (fun (_ : Fin 1) (_ : ℝ) => (1 : ℝ)) 0 t [0] = t := by
   simp [signature_singleton]
 
+/-- Example 1.6: for the unit-speed path `X_t = t`, `S^{1…1}_{0,t} = t^k / k!`. -/
+example (k : ℕ) (t : ℝ) :
+    signature (fun (_ : Fin 1) (_ : ℝ) => (1 : ℝ)) 0 t (List.replicate k 0) =
+      t ^ k / k.factorial := by
+  rw [signature_replicate continuous_const]
+  simp
+
+/-- `S(X)_{s,·}` solves `dS = S ⊗ dX`: `d/dt S^{01}_{s,t} = S^0_{s,t} v¹(t)`. -/
+example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (s t : ℝ) :
+    HasDerivAt (fun t => signature v s t [0, 1]) (signature v s t [0] * v 1 t) t :=
+  hasDerivAt_signature_concat hv s [0] 1 t
+
 end MathlibExtTest.Analysis.PathSignature.Basic

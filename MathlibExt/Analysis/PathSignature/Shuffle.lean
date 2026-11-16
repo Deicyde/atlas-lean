@@ -75,12 +75,6 @@ theorem shuffle_concat_concat (I J : List ι) (i j : ι) :
 
 variable {v : ι → ℝ → ℝ}
 
-private theorem hasDerivAt_signature_concat (hv : ∀ i, Continuous (v i)) (s : ℝ) (w : List ι)
-    (i : ι) (hw : Continuous fun t => signature v s t w) (t : ℝ) :
-    HasDerivAt (fun t => signature v s t (w ++ [i])) (signature v s t w * v i t) t := by
-  simp only [signature_concat]
-  exact ((hw.mul (hv i)).integral_hasStrictDerivAt s t).hasDerivAt
-
 private theorem integral_list_sum_mul {s : ℝ} {i : ι}
     (hcont : ∀ K : List ι, Continuous fun t => signature v s t K)
     (hv : Continuous (v i)) (L : List (List ι)) (t : ℝ) :
@@ -121,8 +115,8 @@ theorem signature_mul_signature (hv : ∀ i, Continuous (v i)) (s t : ℝ) (I J 
           (fun t => signature v s t (I ++ [i]) * signature v s t (J ++ [j]))
           (signature v s x I * v i x * signature v s x (J ++ [j]) +
             signature v s x (I ++ [i]) * (signature v s x J * v j x)) x := fun x _ =>
-        HasDerivAt.mul (hasDerivAt_signature_concat hv s I i (hcont I) x)
-          (hasDerivAt_signature_concat hv s J j (hcont J) x)
+        HasDerivAt.mul (hasDerivAt_signature_concat hv s I i x)
+          (hasDerivAt_signature_concat hv s J j x)
       have hint : IntervalIntegrable (fun x =>
           signature v s x I * v i x * signature v s x (J ++ [j]) +
             signature v s x (I ++ [i]) * (signature v s x J * v j x)) volume s t := by
