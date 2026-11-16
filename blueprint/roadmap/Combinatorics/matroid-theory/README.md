@@ -4,6 +4,7 @@ Matroids and their invariants: algebraic matroids, Edmonds' intersection and par
 
 - [Algebraic matroids](algebraic-matroids/README.md)
 - [Heron–Rota–Welsh conjecture](heron-rota-welsh-conjecture/README.md)
+- [Hodge theory for matroids](hodge-theory-for-matroids/README.md)
 - [Lorentzian polynomials](lorentzian-polynomials/README.md)
 - [Mason's conjectures on independent sets](mason-s-conjectures-on-independent-sets/README.md)
 - [Matroid intersection theorem](matroid-intersection-theorem/README.md)

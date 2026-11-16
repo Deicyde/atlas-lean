@@ -15,6 +15,17 @@ $w_k(M) = \mu_k(M) + \mu_{k-1}(M)$, the absolute coefficients of $\chi_M$ are th
 of $(\mu_k)$ with $(1, 1)$, and a convolution of log-concave sequences is log-concave; this
 gives the [Heron–Rota–Welsh conjecture](characteristic-polynomial-log-concave-ho.md).
 
+## Informally uses
+
+- [Reduced characteristic polynomial coefficients as mixed degrees](../hodge-theory-for-matroids/reduced-char-poly-coeff-eq-deg.md):
+  Proposition 9.5 turns the inequality into one between degrees in the Chow ring.
+
+## Background
+
+- [Hodge–Riemann relations for matroids](../hodge-theory-for-matroids/hodge-riemann.md): Lemma 9.6,
+  used for $k = r - 1$, is deduced from the Hodge–Riemann relations in degree one
+  (Theorem 8.8).
+
 ## Sources
 
 - K. Adiprasito, J. Huh and E. Katz, *Hodge theory for combinatorial geometries*, Ann. of
