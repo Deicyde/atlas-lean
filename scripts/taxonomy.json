@@ -285,6 +285,7 @@
    "fields": [
     {"slug": "combinatorial-games", "title": "Combinatorial game theory", "description": "Combinatorial game theory studies two-player games of perfect information without chance: impartial games such as Nim and its variants (P-positions, Sprague–Grundy values, remoteness), partizan games such as Snort, and Maker–Breaker positional games.", "msc": ["91A46", "05A99"], "subfields": []},
     {"slug": "cooperative-games", "title": "Cooperative game theory", "description": "Cooperative game theory studies games in which coalitions of players can make binding agreements, and solution concepts such as the core and the Shapley value for dividing a coalition's worth.", "msc": ["91A12"], "subfields": []},
+    {"slug": "noncooperative-games", "title": "Noncooperative games", "description": "Noncooperative game theory studies strategic games in which each player chooses a strategy to optimise its own payoff or cost: Nash equilibria and the minimax theorem, potential and congestion games, routing games with Wardrop equilibria, the price of anarchy and of stability, and learning dynamics such as no-regret play and coarse correlated equilibria.", "msc": ["91A10", "91A05", "91A14", "91A43", "91A26", "90B20"], "subfields": []},
     {"slug": "social-choice", "title": "Social choice theory", "description": "Social choice theory studies rules that aggregate individual preferences into a collective ranking or choice, and the impossibility theorems that limit them.", "msc": ["91B14", "91B12"], "subfields": []}
    ]
   },
@@ -2823,6 +2824,7 @@
   "MathlibExt/GameTheory/SocialChoice/ArrowImpossibility": {"to": "GameTheory/social-choice", "title": "Arrow's impossibility theorem"},
   "MathlibExt/GameTheory/SocialChoice/GibbardSatterthwaite": {"to": "GameTheory/social-choice", "title": "Gibbard–Satterthwaite theorem"},
   "MathlibExt/GameTheory/SpragueGrundy": {"to": "GameTheory/combinatorial-games", "title": "Sprague–Grundy theorem"},
+  "MathlibExt/GameTheory/ZeroSumMinimax": {"to": "GameTheory/noncooperative-games", "title": "Von Neumann's minimax theorem"},
   "MathlibExt/Geometry/CAT0": {"to": "Geometry/metric-geometry", "title": "CAT(0) spaces"},
   "MathlibExt/Geometry/Convex/ColorfulCaratheodory": {"to": "Geometry/convex-geometry", "title": "Colorful Carathéodory theorem"},
   "MathlibExt/Geometry/Convex/Covering": {"to": "Geometry/packings-and-coverings", "title": "Hadwiger covering and illumination problem"},

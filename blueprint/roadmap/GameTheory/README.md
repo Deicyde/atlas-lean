@@ -16,4 +16,5 @@ has a nonempty core exactly when it is balanced.
 
 - [Combinatorial game theory](combinatorial-games/README.md)
 - [Cooperative game theory](cooperative-games/README.md)
+- [Noncooperative games](noncooperative-games/README.md)
 - [Social choice theory](social-choice/README.md)

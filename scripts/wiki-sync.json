@@ -45844,6 +45844,8 @@
 "linearAsymptoticDirichletContinuation": "1801699ec7148b96",
 "linearAsymptoticDirichletContinuation_eq_inv_sub_mul": "95cac54c107a3fca",
 "locallyIntegrableOn_abelSummatory": "0af9551a62a1d119",
+"matrixGame_exists_isSaddlePointOn": "c5bb13021f0d1aed",
+"matrixGame_minimax": "0f3760137f5d8aee",
 "maximalIdealPowQuotientIdeal_eq": "d1914a543a11fcb2",
 "maximalIdealPowQuotientIdeal_le": "e22ad35276b73da0",
 "mem_imageOfB": "7ca39e9d34fa490d",
