@@ -22,4 +22,6 @@ controls the integrals of Lipschitz functions.
 - [Triangle inequality for the Wasserstein distance](wasserstein-triangle.md)
 - [Monotonicity of the Wasserstein distances in the exponent](wasserstein-mono.md)
 - [Lipschitz test functions are controlled by $W_1$](lintegral-le-add-mul-wasserstein-one.md)
+- [Kantorovich–Rubinstein formula](wasserstein-one-eq-i-sup-lipschitz.md)
 - [The Wasserstein distance separates probability measures](eq-of-wasserstein-eq-zero.md)
+- [The Wasserstein distance metrizes weak convergence in $P_p$](tendsto-wasserstein-iff.md)

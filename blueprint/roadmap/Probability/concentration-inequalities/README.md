@@ -12,3 +12,4 @@ Non-asymptotic tail and moment bounds: Hoeffding, McDiarmid, Talagrand, Efron–
 - [Sub-exponential variables and Bernstein's inequality](sub-exponential-variables-and-bernstein-s-inequa/README.md)
 - [Khintchine inequality](khintchine-inequality.md)
 - [The Paley–Zygmund inequality](paley-zygmund.md)
+- [Talagrand's transport inequality for the Gaussian measure](talagrand-std-gaussian.md)

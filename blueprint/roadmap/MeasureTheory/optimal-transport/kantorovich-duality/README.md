@@ -4,3 +4,4 @@
 - [Values of the transport cost over couplings](primal-values.md)
 - [Dual feasible pair of potentials](dual-feasible.md)
 - [Kantorovich duality on compact metric spaces](kantorovich-duality-compact.md)
+- [Kantorovich duality for lower semicontinuous costs](kantorovich-duality-lsc.md)
