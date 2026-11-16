@@ -15,8 +15,9 @@ $|\dot \mu_t| \le -\tfrac{d}{dt} \sqrt{2\varphi(t)/\alpha}$; integrating in time
 $W_2(\mu, m) \le \sqrt{2 \operatorname{Ent}_m(\mu)/\alpha}$. Gigli and Ledoux carry this argument out on metric
 measure spaces with the heat flow of the Cheeger energy.
 
-Applied to the Gaussian log-Sobolev inequality ($\alpha = 1$) it recovers
-[Talagrand's inequality for the Gaussian measure](../talagrand-std-gaussian.md).
+Applied to [Gross' inequality](kl-div-with-density-std-gaussian-le.md) for the Gaussian measure
+($\alpha = 1$, once extended from smooth positive densities to nonnegative Lipschitz ones) it
+recovers [Talagrand's inequality for the Gaussian measure](../talagrand-std-gaussian.md).
 
 ## Sources
 

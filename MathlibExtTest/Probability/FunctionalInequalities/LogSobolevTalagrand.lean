@@ -27,6 +27,13 @@ example : SatisfiesTalagrand (⟨Measure.dirac (0 : ℝ), inferInstance⟩ : Pro
     (2 / 1) :=
   satisfiesTalagrand_dirac 0 (by norm_num)
 
+/-- The `W₁` bound for the Dirac mass at `0` on `ℝ`. -/
+example (μ : ProbabilityMeasure ℝ) :
+    MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein 1 μ
+        (⟨Measure.dirac (0 : ℝ), inferInstance⟩ : ProbabilityMeasure ℝ) ^ (2 : ℝ) ≤
+      ENNReal.ofReal 2 * InformationTheory.klDiv (μ : Measure ℝ) (Measure.dirac 0) :=
+  (satisfiesTalagrand_dirac 0 (by norm_num : (0 : ℝ) < 2)).wasserstein_one_sq_le μ
+
 /-- The local Lipschitz constant of a constant function vanishes. -/
 example (c x : ℝ) : localLipschitzConstant (fun _ : ℝ => c) x = 0 := by
   simp [localLipschitzConstant]

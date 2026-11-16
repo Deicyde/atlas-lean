@@ -44,6 +44,7 @@ Here we only set up the two predicates and check that they are satisfiable (Dira
 ## Main results
 
 * `satisfiesLogSobolev_dirac`, `satisfiesTalagrand_dirac`.
+* `SatisfiesTalagrand.wasserstein_one_sq_le`: the inequality also bounds `W₁`.
 -/
 
 @[expose] public section
@@ -51,7 +52,8 @@ Here we only set up the two predicates and check that they are satisfiable (Dira
 open MeasureTheory Filter Topology InformationTheory
 open scoped ENNReal
 
-open MathlibExt.MeasureTheory.OptimalTransport.Wasserstein (wasserstein wasserstein_self)
+open MathlibExt.MeasureTheory.OptimalTransport.Wasserstein
+  (wasserstein wasserstein_self wasserstein_mono)
 
 namespace MathlibExt.Probability.LogSobolevTalagrand
 
@@ -141,5 +143,15 @@ theorem satisfiesTalagrand_dirac [MeasurableSingletonClass X] [OpensMeasurableSp
   · change _ ≤ ENNReal.ofReal C * klDiv (μ : Measure X) (Measure.dirac x₀)
     rw [klDiv_of_not_ac hac, ENNReal.mul_top (by simpa using hC)]
     exact le_top
+
+/-- **Talagrand's inequality bounds `W₁`.** If `m` satisfies Talagrand's quadratic inequality with
+constant `C`, then `W₁(μ, m)² ≤ C · KL(μ ‖ m)` for every probability measure `μ`, because
+`W₁ ≤ W₂` (C. Villani, *Optimal Transport: Old and New*, Springer 2009, Remark 6.6). This is the
+`T₁` form of the transport inequality. -/
+theorem SatisfiesTalagrand.wasserstein_one_sq_le [OpensMeasurableSpace X]
+    [SecondCountableTopology X] {m : ProbabilityMeasure X} {C : ℝ} (h : SatisfiesTalagrand m C)
+    (μ : ProbabilityMeasure X) :
+    wasserstein 1 μ m ^ (2 : ℝ) ≤ ENNReal.ofReal C * klDiv (μ : Measure X) (m : Measure X) :=
+  (ENNReal.rpow_le_rpow (wasserstein_mono one_pos one_le_two μ m) (by norm_num)).trans (h μ)
 
 end MathlibExt.Probability.LogSobolevTalagrand
