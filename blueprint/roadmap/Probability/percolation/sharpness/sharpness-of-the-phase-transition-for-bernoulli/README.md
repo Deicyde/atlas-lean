@@ -13,3 +13,8 @@
 - [Sharpness of the phase transition, stated with `p_c`](sharp-phase-transition-pc.md)
 - [No percolation below `p_c`](theta-eq-zero-of-lt-pc.md)
 - [Connection inside a finite set depends on finitely many edges](within-conn-event-depends-on.md)
+- [Number of sites of a box](card-box-finset.md)
+- [Connection probabilities are bounded by one-arm probabilities](conn-prob-le-cross-prob.md)
+- [Summability of polynomially weighted exponentials](summable-card-mul-exp.md)
+- [Finite susceptibility below `p_c`](summable-conn-prob-of-lt-pc.md)
+- [Sup-norm of a lattice site](sup-norm.md)
