@@ -1,6 +1,6 @@
 # Partially ordered sets
 
-Finite posets as combinatorial objects: Dilworth's and Mirsky's theorems, Erdős–Szekeres monotone subsequences, linear extensions, Möbius algebras and flag vectors, chain polynomials and Neggers' conjecture, Sperner properties of the weak order, rowmotion and toggle homomesy, poset matrices and rooted trees; lattice theory goes to Order.
+Finite posets as combinatorial objects: Dilworth's and Mirsky's theorems, Erdős–Szekeres monotone subsequences, linear extensions and order polynomials, Möbius algebras and flag vectors, chain polynomials and Neggers' conjecture, Sperner properties of the weak order, rowmotion and toggle homomesy, poset matrices and rooted trees; lattice theory goes to Order.
 
 - [Chain polynomials of posets](chain-polynomials-of-posets/README.md)
 - [Dilworth's theorem](dilworth-s-theorem/README.md)
@@ -14,3 +14,9 @@ Finite posets as combinatorial objects: Dilworth's and Mirsky's theorems, Erdős
 - [Rowmotion on root posets](rowmotion-on-root-posets/README.md)
 - [Sperner property of the weak order](sperner-property-of-the-weak-order/README.md)
 - [Toggle homomesy for noncrossing partitions](toggle-homomesy-for-noncrossing-partitions/README.md)
+
+## Related topics
+
+- [Incidence algebras and the Möbius function](../../Order/ordered-sets/incidence-algebras-and-the-m-bius-function/README.md):
+  the Möbius function of a locally finite poset, Möbius inversion and Philip Hall's theorem, under
+  Order.

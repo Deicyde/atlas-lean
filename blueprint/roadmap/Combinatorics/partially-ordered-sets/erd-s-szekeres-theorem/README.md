@@ -30,3 +30,9 @@
 - [Increasing subsequences of every smaller length](trunc-incr.md)
 - [Decreasing subsequences of every smaller length](trunc-decr.md)
 - [Erdős–Szekeres theorem](erdos-szekeres.md)
+
+## Related topics
+
+- [Dilworth's theorem](../dilworth-s-theorem/README.md) and [Mirsky's theorem](../mirsky-s-theorem/README.md):
+  ordering the points $(i, f(i))$ by both coordinates, increasing subsequences become chains and
+  decreasing ones antichains, so either min-max theorem yields the bound $(r - 1)(s - 1) + 1$.

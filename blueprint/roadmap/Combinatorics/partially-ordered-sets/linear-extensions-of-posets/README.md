@@ -10,3 +10,8 @@
 - [The number of linear extensions is positive](card-linear-extensions-pos.md)
 - [Maximal elements of a finite set](maximal-elements.md)
 - [Membership in the maximal elements](mem-maximal-elements.md)
+
+## Related topics
+
+- [Order polynomials](../order-polynomials/README.md): the number of linear extensions $e(P)$ is
+  $|P|!$ times the leading coefficient of the order polynomial $\Omega_P$.
