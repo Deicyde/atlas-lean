@@ -5,6 +5,7 @@ The percolation probability theta, bounds 0 < p_c < 1 (Peierls and enclosure arg
 - [Percolation on product graphs](percolation-on-product-graphs/README.md)
 - [Percolation probability and critical point](percolation-probability-and-critical-point/README.md)
 - [Bounds on the critical probability](bounds-on-the-critical-probability/README.md)
+- [Critical probability of the square lattice](critical-probability-of-the-square-lattice/README.md)
 - [Number of infinite clusters](number-of-infinite-clusters/README.md)
 - [Peierls argument for bond percolation](peierls-argument-for-bond-percolation/README.md)
 - [Sharp thresholds from influences](sharp-thresholds-from-influences/README.md)
