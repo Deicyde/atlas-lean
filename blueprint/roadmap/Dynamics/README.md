@@ -6,7 +6,9 @@ Dynamics studies systems evolving through iteration or time, including recurrenc
 almost-everywhere convergence of ergodic averages: the
 [Birkhoff ergodic theorem](ergodic-theory/birkhoff-ergodic-theorem/README.md) for maps preserving a finite measure,
 whose limit is the conditional expectation on the invariant σ-algebra, Kingman's subadditive ergodic theorem, and
-Bourgain's theorem along polynomial times. It also has the [Poincaré recurrence theorem](ergodic-theory/ae-frequently-mem-of-mem.md),
+Bourgain's theorem along polynomial times, together with von Neumann's
+[mean ergodic theorem](ergodic-theory/von-neumann-mean-ergodic-theorem/README.md) in $L^2$ and the strong law of large
+numbers as the ergodic theorem for Bernoulli shifts. It also has the [Poincaré recurrence theorem](ergodic-theory/ae-frequently-mem-of-mem.md),
 [mixing](ergodic-theory/mixing/README.md) and Sinai's
 [Kolmogorov–Sinai entropy](ergodic-theory/kolmogorov-sinai-entropy/README.md), an isomorphism invariant
 that tells Bernoulli schemes apart. [Topological and symbolic dynamics](topological-symbolic-dynamics/README.md)
