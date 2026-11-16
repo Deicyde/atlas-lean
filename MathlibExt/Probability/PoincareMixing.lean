@@ -144,9 +144,9 @@ theorem lazy_mem_rowStochastic_and_detailedBalance {π : S → ℝ} {K : Matrix 
 be stochastic and reversible with respect to a probability vector `π > 0`, `P = (I + K)/2`, and
 suppose `∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` for all `ψ`, with
 `B > 0`. Then every `g` with `∑ π g = 0` satisfies `∑ π (P g)² ≤ (1 - 1/B) ∑ π g²`. This is the
-`L²` form of the bound `λ_max ≤ 1 - 1/B` for the lazy chain that Sinclair's Proposition 1(i) and
-Sinclair–Jerrum's Proposition 3.2 combine (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
-Section 2). -/
+`L²` form of `λ_max ≤ 1 - 1/B` for the lazy chain, whose eigenvalues are nonnegative
+(A. Sinclair and M. Jerrum, *Inform. and Comput.* 82 (1989), Proposition 3.2), the input that
+A. Sinclair, *Combin. Probab. Comput.* 1 (1992), Proposition 1(i), turns into a mixing time. -/
 theorem sum_mul_sq_mulVec_le_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
     {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x)
     {B : ℝ} (hB : 0 < B)
@@ -199,10 +199,10 @@ reversible with respect to a probability vector `π > 0`, let `P = (I + K)/2`, a
 `∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` for all `ψ`, with
 `B ≥ 1`. Then for every start `x` and time `t`,
 `(2 d_TV(Pᵗ(x, ·), π))² ≤ (1 - 1/B)ᵗ (1/π(x) - 1)`.
-This is the `L²` argument behind A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
-Proposition 1(i) (there in terms of `λ_max`, from Diaconis and Stroock), applied to the lazy chain
-as in Sinclair's Section 2 and Sinclair–Jerrum (1989), Proposition 3.2: the density
-`Pᵗ(x, ·)/π - 1` has `π`-mean zero and is contracted by `P` at each step. -/
+It is an `L²` counterpart of A. Sinclair, *Combin. Probab. Comput.* 1 (1992), Proposition 1(i)
+(stated there in terms of `λ_max`, after Diaconis and Stroock), for the lazy chain of Sinclair's
+Section 2 and Sinclair–Jerrum (1989), Proposition 3.2: the density `Pᵗ(x, ·)/π - 1` has
+`π`-mean zero and is contracted by `P` at each step. -/
 theorem sq_two_mul_tvDist_pow_le {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
     {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x)
     {B : ℝ} (hB : 1 ≤ B)
