@@ -1,6 +1,3 @@
 # Canonical paths bound the spectral gap, for an eigenvector orthogonal to constants
 
-Under the hypotheses of `one_le_mul_one_sub_of_eigenvector`, a nonzero real eigenvector `f`
-of `P` with eigenvalue `μ` and `π`-mean zero (`∑ π(x) f(x) = 0`) satisfies `1 ≤ B (1 - μ)`.
-This is the step of A. Sinclair, *Combin. Probab. Comput.* 1 (1992), proof of Theorem 5, that
-inserts an eigenvector into the variational characterisation (5).
+Under the hypotheses of [Sinclair's canonical-path bound on the spectral gap](one-le-mul-one-sub-of-eigenvector.md), a nonzero real eigenvector $f$ of $P$ with eigenvalue $\mu$ and $\pi$-mean zero, $\sum_x \pi(x) f(x) = 0$, satisfies $1 \le B(1-\mu)$ (A. Sinclair, *Combinatorics, Probability and Computing* 1 (1992), proof of Theorem 5). The case $\mu = 1$ is allowed and gives a contradiction, so a path system with finite congestion forces the eigenvalue $1$ to be simple.
