@@ -3182,6 +3182,7 @@
   "MathlibExt/MeasureTheory/Measure/PiWithDensity": {"to": "MeasureTheory/integration", "title": "Products of measures with densities"},
   "MathlibExt/MeasureTheory/Measure/UniquenessOnRd": {"to": "MeasureTheory/measures", "title": "Uniqueness of measures on Euclidean space"},
   "MathlibExt/MeasureTheory/Measure/VitaliNonmeasurable": {"to": "MeasureTheory/measures", "title": "Vitali set"},
+  "MathlibExt/MeasureTheory/OptimalTransport/Existence": {"to": "MeasureTheory/optimal-transport", "title": "Monge–Kantorovich existence theorem"},
   "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich": {"to": "MeasureTheory/optimal-transport", "title": "Kantorovich duality"},
   "MathlibExt/MeasureTheory/OptimalTransport/Wasserstein": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein distances"},
   "MathlibExt/MeasureTheory/Polynomial": {"to": "MeasureTheory/lebesgue-measure", "title": "Null sets"},
