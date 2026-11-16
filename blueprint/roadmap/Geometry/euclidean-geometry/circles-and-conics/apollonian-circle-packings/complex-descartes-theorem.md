@@ -8,7 +8,8 @@ curvature and center satisfy the same relation as the curvatures:
 $$\Big(\sum_{i=1}^4 k_i c_i\Big)^2 = 2 \sum_{i=1}^4 (k_i c_i)^2 \quad \text{in } \mathbb{C}.$$
 Lagarias, Mallows and Wilks state it for all Descartes configurations, lines included (with a suitable convention for
 $k_i c_i$ on a line); the statement here has the hypotheses of the formalised
-[Descartes' circle theorem](../descartes-circle-theorem.md). Replacing $c_i$ by $c_i + w$ and comparing coefficients of
+[Descartes' circle theorem](../descartes-circle-theorem.md) and follows from the
+[version for signed radii](complex-descartes-of-signed.md). Replacing $c_i$ by $c_i + w$ and comparing coefficients of
 $w$ gives the real Descartes relation and the mixed relation $\sum k_i (k_i c_i) = \tfrac12 (\sum k_i)(\sum k_i c_i)$
 (their equation (2.3)). Combined with the [two-root relation](../apollonian-group/eq-or-eq-flip-of-descartes-form-update-e.md),
 it shows that the vector of products curvature × center transforms under the Apollonian group like the curvatures.

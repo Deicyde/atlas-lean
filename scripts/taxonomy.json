@@ -3009,6 +3009,7 @@
   "MathlibExt/Geometry/Euclidean/CarnotInradius": {"to": "Geometry/euclidean-geometry/triangle-geometry", "title": "Carnot's theorem"},
   "MathlibExt/Geometry/Euclidean/CaseyTheorem": {"to": "Geometry/euclidean-geometry/circles-and-conics", "title": "Casey's theorem"},
   "MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder": {"to": "Geometry/euclidean-geometry/circles-and-conics", "title": "Casey's theorem"},
+  "MathlibExt/Geometry/Euclidean/ComplexDescartesTheorem": {"to": "Geometry/euclidean-geometry/circles-and-conics", "title": "Apollonian circle packings"},
   "MathlibExt/Geometry/Euclidean/ConwayCircle": {"to": "Geometry/euclidean-geometry/triangle-geometry", "title": "Conway circle theorem"},
   "MathlibExt/Geometry/Euclidean/DeGua": {"to": "Geometry/euclidean-geometry/solid-and-spherical", "title": "De Gua's theorem"},
   "MathlibExt/Geometry/Euclidean/DeGuaHeron": {"to": "Geometry/euclidean-geometry/solid-and-spherical", "title": "De Gua's theorem"},

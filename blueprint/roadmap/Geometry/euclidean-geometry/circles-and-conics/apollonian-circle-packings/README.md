@@ -23,6 +23,7 @@ with $\alpha \approx 1.30568$ the Hausdorff dimension of the residual set (Konto
 - [The initial circles belong to the packing](mem-apollonian-packing.md)
 - [Residual set of an Apollonian packing](residual-set.md)
 - [Circle-counting function](circle-count.md)
+- [Complex Descartes theorem for signed radii](complex-descartes-of-signed.md)
 - [Complex Descartes theorem](complex-descartes-theorem.md)
 - [Kontorovich–Oh circle-counting theorem](kontorovich-oh-circle-count.md)
 
