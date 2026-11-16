@@ -3916,6 +3916,7 @@
   "MathlibExt/Probability/KolmogorovExtension": {"to": "Probability/foundations", "title": "Kolmogorov extension theorem"},
   "MathlibExt/Probability/KolmogorovMaximal": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's maximal inequality"},
   "MathlibExt/Probability/KolmogorovThreeSeries": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's three-series theorem"},
+  "MathlibExt/Probability/LDPProduct": {"to": "Probability/large-deviations", "title": "Superexponential tightness and product LDPs"},
   "MathlibExt/Probability/LargeDeviationPrinciple": {"to": "Probability/large-deviations", "title": "Large deviation principle"},
   "MathlibExt/Probability/LawIteratedLogarithm": {"to": "Probability/laws-of-large-numbers", "title": "Law of the iterated logarithm"},
   "MathlibExt/Probability/LegendreTransform": {"to": "Probability/large-deviations", "title": "Legendre transform"},
