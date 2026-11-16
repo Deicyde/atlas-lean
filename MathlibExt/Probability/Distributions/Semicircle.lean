@@ -13,6 +13,8 @@ public import Mathlib.Combinatorics.Enumerative.DyckWord
 public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 public import Mathlib.MeasureTheory.Measure.WithDensity
+public import MathlibExt.Combinatorics.Enumerative.Catalan.Bounds
+public import MathlibExt.MeasureTheory.Measure.MomentDeterminacy
 
 import Mathlib.Data.Nat.Choose.Central
 import Mathlib.Tactic.FieldSimp
@@ -46,6 +48,9 @@ The proof substitutes `x = 2 cos θ`, `θ ∈ [0, π]`, which turns the moment i
 * `ProbabilityTheory.integral_pow_two_mul_semicircleReal_eq_card_dyckWord`: the `2k`-th moment
   is the number of Dyck words of semilength `k`.
 * `ProbabilityTheory.isProbabilityMeasure_semicircleReal`: `σ` is a probability measure.
+* `ProbabilityTheory.eq_semicircleReal_of_integral_pow_eq`: `σ` is determined by its moments, so a
+  finite measure with the moments of `σ` is `σ`; this is how the moment method identifies the
+  limit in the semicircle law.
 
 ## References
 
@@ -207,5 +212,40 @@ instance isProbabilityMeasure_semicircleReal : IsProbabilityMeasure semicircleRe
     ← integral_Icc_eq_integral_Ioc] at h0
   simp only [mul_zero, pow_zero, mul_one, catalan_zero, Nat.cast_one] at h0
   rw [h0, ENNReal.ofReal_one]
+
+/-- The semicircle distribution gives no mass outside `[-2, 2]` (Tao, *Topics in Random Matrix
+Theory*, `(2.81)`). -/
+theorem semicircleReal_compl_Icc : semicircleReal (Icc (-2 : ℝ) 2)ᶜ = 0 := by
+  rw [semicircleReal, withDensity_apply _ measurableSet_Icc.compl,
+    Measure.restrict_restrict measurableSet_Icc.compl, compl_inter_self, Measure.restrict_empty,
+    lintegral_zero_measure]
+
+/-- Every power `xᵏ` is integrable against the semicircle distribution, which is a finite measure
+supported in `[-2, 2]`, so its moments (Tao, *Topics in Random Matrix Theory*, `(2.88)`) are
+genuine integrals. -/
+theorem integrable_pow_semicircleReal (k : ℕ) :
+    Integrable (fun x : ℝ => x ^ k) semicircleReal := by
+  have h : semicircleReal.restrict (Icc (-2 : ℝ) 2) = semicircleReal :=
+    Measure.restrict_eq_self_of_ae_mem (ae_iff.mpr semicircleReal_compl_Icc)
+  rw [← h]
+  exact (continuous_pow k).integrableOn_Icc
+
+/-- **The semicircle distribution is determined by its moments** (Tao, *Topics in Random Matrix
+Theory*, §2.4.1). If a finite measure `ν` on `ℝ` has integrable even powers and the same moments
+as the semicircle distribution `σ`, `∫ xᵏ dν = ∫ xᵏ dσ` for every `k`, then `ν = σ`. Its even
+moments are then the Catalan numbers `C_k ≤ 4ᵏ`, which confines `ν` to `[-2, 2]`, and compactly
+supported measures are determined by their moments. -/
+theorem eq_semicircleReal_of_integral_pow_eq {ν : Measure ℝ} [IsFiniteMeasure ν]
+    (hint : ∀ k : ℕ, Integrable (fun x : ℝ => x ^ (2 * k)) ν)
+    (heq : ∀ k : ℕ, ∫ x, x ^ k ∂ν = ∫ x, x ^ k ∂semicircleReal) : ν = semicircleReal := by
+  have hsupp : ν {x | 2 < |x|} = 0 := by
+    refine measure_lt_abs_eq_zero_of_integral_pow_le (C := 1) two_pos hint fun k => ?_
+    rw [heq, integral_pow_two_mul_semicircleReal, one_mul, pow_mul]
+    norm_num
+    exact_mod_cast catalan_le_four_pow k
+  have hset : (Icc (-2 : ℝ) 2)ᶜ = {x | 2 < |x|} := by
+    ext x
+    simp only [mem_compl_iff, mem_Icc, mem_ofPred_eq, ← abs_le, not_le]
+  exact ext_of_forall_integral_pow_eq_of_compl_Icc (hset ▸ hsupp) semicircleReal_compl_Icc heq
 
 end ProbabilityTheory

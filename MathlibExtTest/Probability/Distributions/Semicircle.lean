@@ -54,4 +54,32 @@ example : semicirclePDFReal 0 = 1 / Real.pi := by
   simp [semicirclePDFReal, h]
   field_simp
 
+/-- The semicircle distribution gives no mass outside `[-2, 2]`, e.g. to `(2, ∞)`. -/
+example : semicircleReal (Set.Ioi 2) = 0 := by
+  refine measure_mono_null (fun x hx => ?_) semicircleReal_compl_Icc
+  simp only [Set.mem_Ioi] at hx
+  simp only [Set.mem_compl_iff, Set.mem_Icc, not_and, not_le]
+  exact fun _ => hx
+
+/-- Moment determinacy, used on `σ` itself: the reflection `x ↦ -x` preserves `σ`, because the
+reflected measure has the same moments (odd moments vanish, even moments are unchanged). -/
+example : semicircleReal.map (fun x : ℝ => -x) = semicircleReal := by
+  have hmap : ∀ k : ℕ, ∫ x, x ^ k ∂(semicircleReal.map fun x : ℝ => -x) =
+      ∫ x, (-x) ^ k ∂semicircleReal := fun k =>
+    integral_map measurable_neg.aemeasurable
+      (by fun_prop : Continuous fun x : ℝ => x ^ k).aestronglyMeasurable
+  refine eq_semicircleReal_of_integral_pow_eq (fun k => ?_) fun k => ?_
+  · refine (integrable_map_measure
+      (by fun_prop : Continuous fun x : ℝ => x ^ (2 * k)).aestronglyMeasurable
+      measurable_neg.aemeasurable).mpr ?_
+    have : (fun x : ℝ => x ^ (2 * k)) ∘ (fun x : ℝ => -x) = fun x => x ^ (2 * k) := by
+      ext x; simp [Function.comp, (even_two_mul k).neg_pow]
+    rw [this]
+    exact integrable_pow_semicircleReal (2 * k)
+  · rw [hmap]
+    rcases Nat.even_or_odd k with ⟨j, rfl⟩ | ⟨j, rfl⟩
+    · simp [← two_mul, pow_mul]
+    · simp only [Odd.neg_pow ⟨j, rfl⟩, integral_neg, integral_pow_two_mul_add_one_semicircleReal,
+        neg_zero]
+
 end MathlibExtTest.Probability.Distributions.Semicircle
