@@ -1,9 +1,10 @@
 # Bounds on code size
 
 How many codewords can a code of length $n$ over $q$ letters have if any two are at Hamming
-distance at least $d$? Upper bounds come from packing (Hamming) and projection (Singleton); the
-Gilbert–Varshamov bound shows by a greedy covering argument that codes of rate
-$1 - H_q(\delta)$ and relative distance $\delta$ exist, linear ones included.
+distance at least $d$? Upper bounds come from packing (Hamming), projection (Singleton),
+averaging distances (Plotkin) and list decoding (Elias–Bassalygo); the Gilbert–Varshamov bound
+shows by a greedy covering argument that codes of rate $1 - H_q(\delta)$ and relative distance
+$\delta$ exist, linear ones included.
 
 ## Hamming balls
 
@@ -19,6 +20,9 @@ $1 - H_q(\delta)$ and relative distance $\delta$ exist, linear ones included.
 
 - [Singleton bound](singleton-bound.md)
 - [Hamming bound](hamming-sphere-packing-bound.md)
+- [Disagreeing pairs in a coordinate](disagreeing-pairs-in-a-coordinate.md)
+- [Plotkin bound](plotkin-bound.md)
+- [Elias–Bassalygo bound (alphabet-free form)](elias-bassalygo-bound.md)
 
 ## The Gilbert–Varshamov bound
 
