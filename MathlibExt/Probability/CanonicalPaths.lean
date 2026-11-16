@@ -46,6 +46,9 @@ paths only use transitions of positive probability, `ρ(Γ)` (resp. `ρ̄(Γ)`) 
   (the displayed computation in the proof of Sinclair 1992, Theorem 5):
   `∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` for every `ψ : S → ℝ`.
   No reversibility is needed for this inequality.
+* `one_le_mul_one_sub_of_poincare`: a Poincaré inequality with constant `B` gives
+  `1 ≤ B (1 - μ)` for every real eigenvalue `μ ≠ 1` of a reversible `P` (the variational step of
+  Theorems 5 and 5′); `sum_mul_eq_zero_of_eigenvector` supplies the orthogonality to constants.
 * `one_le_mul_one_sub_of_eigenvector`: **Sinclair's Theorem 5**. If `P` has unit row sums and is
   reversible with respect to a positive probability vector `π`, every real eigenvalue `μ ≠ 1`
   of `P` satisfies `1 ≤ B (1 - μ)`, i.e. `μ ≤ 1 - 1/B`; so the second eigenvalue satisfies
@@ -231,16 +234,20 @@ theorem sum_sq_sub_mul_le_of_elongatedPathLoad_le {π : S → ℝ} (hπ : ∀ x,
         refine Finset.sum_congr rfl fun v _ => ?_
         ring
 
-/-- **Canonical paths bound the spectral gap, for an eigenvector orthogonal to constants.**
-Under the hypotheses of `one_le_mul_one_sub_of_eigenvector`, a nonzero real eigenvector `f`
-of `P` with eigenvalue `μ` and `π`-mean zero (`∑ π(x) f(x) = 0`) satisfies `1 ≤ B (1 - μ)`.
-This is the step of A. Sinclair, *Combin. Probab. Comput.* 1 (1992), proof of Theorem 5, that
-inserts an eigenvector into the variational characterisation (5). -/
-theorem one_le_mul_one_sub_of_eigenvector_of_mean_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x)
+omit [DecidableEq S] in
+/-- **A Poincaré inequality bounds the spectral gap, for an eigenvector orthogonal to constants.**
+Let `P` have unit row sums and satisfy detailed balance with respect to a positive probability
+vector `π`, and suppose the Poincaré inequality
+`∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` holds for every `ψ`.
+Then a nonzero real eigenvector `f` of `P` with eigenvalue `μ` and `π`-mean zero
+(`∑ π(x) f(x) = 0`) satisfies `1 ≤ B (1 - μ)`. This is the step of A. Sinclair, *Combin. Probab.
+Comput.* 1 (1992), proof of Theorem 5, that inserts an eigenvector into the variational
+characterisation (5): the two sides are `2 ∑ π f²` and `2 (1 - μ) ∑ π f²`. -/
+theorem one_le_mul_one_sub_of_poincare_of_mean_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
-    (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
-    (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
+    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
+      B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hmean : ∑ x, π x * f x = 0) :
     1 ≤ B * (1 - μ) := by
   have hPf : ∀ x, ∑ y, P x y * f y = μ * f x := by
@@ -272,7 +279,7 @@ theorem one_le_mul_one_sub_of_eigenvector_of_mean_zero {π : S → ℝ} (hπ : �
     have h3 : ∑ x, 2 * (π x * f x) * (μ * f x) = 2 * μ * ∑ x, π x * f x ^ 2 := by
       rw [Finset.mul_sum]; refine Finset.sum_congr rfl fun x _ => ?_; ring
     rw [h3]; ring
-  have hpoin := sum_sq_sub_mul_le_of_elongatedPathLoad_le (fun x => (hπ x).le) P γ hγ hB f
+  have hpoin := hpoin f
   rw [hvar, hdir] at hpoin
   have hVpos : 0 < V := by
     obtain ⟨x, hx⟩ := Function.ne_iff.mp hf
@@ -280,20 +287,15 @@ theorem one_le_mul_one_sub_of_eigenvector_of_mean_zero {π : S → ℝ} (hπ : �
       ⟨x, Finset.mem_univ _, mul_pos (hπ x) (lt_of_le_of_ne (sq_nonneg _) (pow_ne_zero 2 hx).symm)⟩
   nlinarith
 
-/-- **Sinclair's canonical-path bound on the spectral gap** (A. Sinclair, *Combin. Probab.
-Comput.* 1 (1992), Theorem 5). Let `P` have unit row sums and satisfy detailed balance
-`π(x) P(x, y) = π(y) P(y, x)` with respect to a positive probability vector `π`. Let `γ x y` be
-a path from `x` to `y` for each pair `x ≠ y`, and let `B` bound every length-weighted edge load
-by `B · π(u) P(u, v)` (`B = ρ̄(Γ)`). Then every real eigenvalue `μ ≠ 1` of `P` satisfies
-`1 ≤ B (1 - μ)`: the spectral gap is at least `1/ρ̄(Γ)`. -/
-theorem one_le_mul_one_sub_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π x)
-    (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
-    (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
-    (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
-    (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
-    1 ≤ B * (1 - μ) := by
-  refine one_le_mul_one_sub_of_eigenvector_of_mean_zero hπ hπ1 hrow hrev γ hγ hB hf heig ?_
+omit [DecidableEq S] in
+/-- **Eigenvectors for eigenvalues other than `1` have mean zero.** If `P` has unit row sums and
+satisfies detailed balance with respect to `π` (so `π` is stationary), then every eigenvector `f`
+of `P` whose eigenvalue `μ` is not `1` satisfies `∑ π(x) f(x) = 0`: it is orthogonal to the
+constants in the `π`-weighted inner product, as used in A. Sinclair, *Combin. Probab. Comput.* 1
+(1992), proof of Theorem 5. -/
+theorem sum_mul_eq_zero_of_eigenvector {π : S → ℝ} {P : Matrix S S ℝ}
+    (hrow : ∀ x, ∑ y, P x y = 1) (hrev : ∀ x y, π x * P x y = π y * P y x) {μ : ℝ}
+    {f : S → ℝ} (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) : ∑ x, π x * f x = 0 := by
   -- `π` is stationary, so `∑ π (P f) = ∑ π f`, while `P f = μ f`.
   have hstat : ∑ x, π x * (P *ᵥ f) x = ∑ y, π y * f y := by
     simp only [mulVec, dotProduct, Finset.mul_sum]
@@ -312,6 +314,53 @@ theorem one_le_mul_one_sub_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π 
       exact Finset.sum_congr rfl fun x _ => by ring
     rw [e, hstat, sub_self]
   exact (mul_eq_zero.mp this).resolve_left (sub_ne_zero.mpr hμ)
+
+omit [DecidableEq S] in
+/-- **A Poincaré inequality bounds the spectral gap.** Let `P` have unit row sums and satisfy
+detailed balance with respect to a positive probability vector `π`, and suppose
+`∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` for every `ψ`. Then every
+real eigenvalue `μ ≠ 1` of `P` satisfies `1 ≤ B (1 - μ)`. This is how A. Sinclair, *Combin.
+Probab. Comput.* 1 (1992), proves Theorems 5 and 5′ from the variational characterisation (5). -/
+theorem one_le_mul_one_sub_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x)
+    (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
+    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
+      B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y)) {μ : ℝ} {f : S → ℝ}
+    (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
+    1 ≤ B * (1 - μ) :=
+  one_le_mul_one_sub_of_poincare_of_mean_zero hπ hπ1 hrow hrev hpoin hf heig
+    (sum_mul_eq_zero_of_eigenvector hrow hrev heig hμ)
+
+/-- **Canonical paths bound the spectral gap, for an eigenvector orthogonal to constants.**
+Under the hypotheses of `one_le_mul_one_sub_of_eigenvector`, a nonzero real eigenvector `f`
+of `P` with eigenvalue `μ` and `π`-mean zero (`∑ π(x) f(x) = 0`) satisfies `1 ≤ B (1 - μ)`
+(A. Sinclair, *Combin. Probab. Comput.* 1 (1992), proof of Theorem 5). Applied with `μ = 1`, it
+shows that such a path system forces the eigenvalue `1` to be simple. -/
+theorem one_le_mul_one_sub_of_eigenvector_of_mean_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x)
+    (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
+    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
+    (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
+    (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hmean : ∑ x, π x * f x = 0) :
+    1 ≤ B * (1 - μ) :=
+  one_le_mul_one_sub_of_poincare_of_mean_zero hπ hπ1 hrow hrev
+    (sum_sq_sub_mul_le_of_elongatedPathLoad_le (fun x => (hπ x).le) P γ hγ hB) hf heig hmean
+
+/-- **Sinclair's canonical-path bound on the spectral gap** (A. Sinclair, *Combin. Probab.
+Comput.* 1 (1992), Theorem 5). Let `P` have unit row sums and satisfy detailed balance
+`π(x) P(x, y) = π(y) P(y, x)` with respect to a positive probability vector `π`. Let `γ x y` be
+a path from `x` to `y` for each pair `x ≠ y`, and let `B` bound every length-weighted edge load
+by `B · π(u) P(u, v)` (`B = ρ̄(Γ)`). Then every real eigenvalue `μ ≠ 1` of `P` satisfies
+`1 ≤ B (1 - μ)`: the spectral gap is at least `1/ρ̄(Γ)`. -/
+theorem one_le_mul_one_sub_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π x)
+    (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
+    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
+    (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
+    (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
+    1 ≤ B * (1 - μ) :=
+  one_le_mul_one_sub_of_poincare hπ hπ1 hrow hrev
+    (sum_sq_sub_mul_le_of_elongatedPathLoad_le (fun x => (hπ x).le) P γ hγ hB) hf heig hμ
 
 /-- **Theorem 5 in the form `μ ≤ 1 - 1/ρ̄`** (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
 Theorem 5): with the hypotheses of `one_le_mul_one_sub_of_eigenvector` and `0 < B`, every real

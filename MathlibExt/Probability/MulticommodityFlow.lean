@@ -29,6 +29,9 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
 * `MulticommodityFlow π P`: a flow routing `π(x) π(y)` from `x` to `y` over simple paths that use
   only transitions with `π(u) P(u, v) > 0` (A. Sinclair 1992, Section 4).
 * `MulticommodityFlow.load`: the flow `f(e) = ∑_{p ∋ e} f(p)` through an oriented edge.
+* `MulticommodityFlow.elongatedLoad`, `MulticommodityFlow.sum_sq_sub_mul_le_of_elongatedLoad_le`
+  and `MulticommodityFlow.one_le_mul_one_sub_of_eigenvector`: the length-weighted load, the flow
+  Poincaré inequality and **Theorem 5′**, `λ₁ ≤ 1 - 1/ρ̄(f)`.
 * `MulticommodityFlow.mul_sum_compl_le`: **Theorem 3′ / inequality (13) for flows**,
   `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)` whenever every load is at most `ρ · Q`.
 * `pow_detailedBalance`: detailed balance passes to every power `Pⁿ`.
@@ -41,7 +44,7 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
 ## References
 
 * A. Sinclair, "Improved bounds for mixing rates of Markov chains and multicommodity flow",
-  *Combinatorics, Probability and Computing* **1** (1992), 351–370: Section 4, Theorem 3′,
+  *Combinatorics, Probability and Computing* **1** (1992), 351–370: Section 4, Theorems 3′ and 5′,
   inequality (13) and Lemma 7.
 -/
 
@@ -141,6 +144,90 @@ theorem mul_sum_compl_le (F : MulticommodityFlow π P) {ρ : ℝ}
   rw [Finset.mul_sum]
   exact Finset.sum_le_sum fun u _ => by
     rw [Finset.mul_sum]; exact Finset.sum_le_sum fun v _ => hρ u v
+
+/-- **Length-weighted flow through an oriented edge** (A. Sinclair, *Combin. Probab. Comput.* 1
+(1992), Section 4: the elongated flow `f̄(e) = ∑_{p ∋ e} f(p) |p|`):
+`∑_{x ≠ y} ∑_p f(p) |p| · #{times p uses (u, v)}`, where `|p|` is the number of edges of `p`. -/
+noncomputable def elongatedLoad (F : MulticommodityFlow π P) (u v : S) : ℝ :=
+  ∑ x, ∑ y, if x = y then 0 else
+    ∑ p ∈ F.paths x y, F.weight x y p * (p.length : ℝ) * ((pathEdges x p).count (u, v) : ℝ)
+
+/-- **The flow Poincaré inequality** (A. Sinclair, *Combin. Probab. Comput.* 1 (1992), proof of
+Theorem 5′: "the proof of Theorem 5 carries over almost unchanged"). If every length-weighted edge
+load of a flow `F` is at most `B · π(u) P(u, v)` (`B = ρ̄(f)`), then for every `ψ : S → ℝ`,
+`∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)`. -/
+theorem sum_sq_sub_mul_le_of_elongatedLoad_le (F : MulticommodityFlow π P) {B : ℝ}
+    (hB : ∀ u v, F.elongatedLoad u v ≤ B * (π u * P u v)) (ψ : S → ℝ) :
+    ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
+      B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y) := by
+  set g : S → S → ℝ := fun u v => (ψ v - ψ u) ^ 2 with hg
+  -- Step 1: split the demand over the paths and apply Cauchy–Schwarz along each path.
+  have step1 : ∀ x y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
+      if x = y then 0 else ∑ p ∈ F.paths x y, F.weight x y p * (p.length : ℝ) *
+        ∑ u, ∑ v, ((pathEdges x p).count (u, v) : ℝ) * g u v := by
+    intro x y
+    split_ifs with hxy
+    · simp [hxy]
+    · rw [← F.demand x y hxy, Finset.mul_sum]
+      refine Finset.sum_le_sum fun p hp => ?_
+      have htel := sum_pathEdges_sub ψ x p
+      rw [F.pathEnd_eq x y hxy p hp] at htel
+      have hcs := sq_sum_map_le (pathEdges x p) (fun e => ψ e.2 - ψ e.1)
+      rw [htel, length_pathEdges, sum_map_eq_sum_count] at hcs
+      have hsq : (ψ x - ψ y) ^ 2 = (ψ y - ψ x) ^ 2 := by ring
+      rw [hsq]
+      have hw := F.weight_nonneg x y p
+      calc (ψ y - ψ x) ^ 2 * F.weight x y p
+          ≤ ((p.length : ℝ) * ∑ u, ∑ v, ((pathEdges x p).count (u, v) : ℝ) *
+              (ψ (u, v).2 - ψ (u, v).1) ^ 2) * F.weight x y p :=
+            mul_le_mul_of_nonneg_right hcs hw
+        _ = _ := by simp only [hg]; ring
+  -- Step 2: regroup by edges.
+  have step2 : ∑ x, ∑ y, (if x = y then (0 : ℝ) else ∑ p ∈ F.paths x y,
+        F.weight x y p * (p.length : ℝ) * ∑ u, ∑ v, ((pathEdges x p).count (u, v) : ℝ) * g u v) =
+      ∑ u, ∑ v, g u v * F.elongatedLoad u v := by
+    calc _ = ∑ x, ∑ y, ∑ u, ∑ v, g u v * (if x = y then (0 : ℝ) else ∑ p ∈ F.paths x y,
+            F.weight x y p * (p.length : ℝ) * ((pathEdges x p).count (u, v) : ℝ)) := by
+          refine Finset.sum_congr rfl fun x _ => Finset.sum_congr rfl fun y _ => ?_
+          split_ifs
+          · simp
+          · simp only [Finset.mul_sum]
+            rw [Finset.sum_comm]
+            refine Finset.sum_congr rfl fun u _ => ?_
+            rw [Finset.sum_comm]
+            refine Finset.sum_congr rfl fun v _ => Finset.sum_congr rfl fun p _ => by ring
+      _ = ∑ u, ∑ v, ∑ x, ∑ y, g u v * (if x = y then (0 : ℝ) else ∑ p ∈ F.paths x y,
+            F.weight x y p * (p.length : ℝ) * ((pathEdges x p).count (u, v) : ℝ)) :=
+          sum_sum_sum_sum_comm _ _ _ _ _
+      _ = _ := by simp only [elongatedLoad, Finset.mul_sum]
+  calc ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y)
+      ≤ ∑ x, ∑ y, (if x = y then (0 : ℝ) else ∑ p ∈ F.paths x y, F.weight x y p *
+          (p.length : ℝ) * ∑ u, ∑ v, ((pathEdges x p).count (u, v) : ℝ) * g u v) :=
+        Finset.sum_le_sum fun x _ => Finset.sum_le_sum fun y _ => step1 x y
+    _ = ∑ u, ∑ v, g u v * F.elongatedLoad u v := step2
+    _ ≤ ∑ u, ∑ v, g u v * (B * (π u * P u v)) :=
+        Finset.sum_le_sum fun u _ => Finset.sum_le_sum fun v _ =>
+          mul_le_mul_of_nonneg_left (hB u v) (sq_nonneg _)
+    _ = B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y) := by
+        rw [Finset.mul_sum]
+        refine Finset.sum_congr rfl fun u _ => ?_
+        rw [Finset.mul_sum]
+        refine Finset.sum_congr rfl fun v _ => ?_
+        simp only [hg]; ring
+
+/-- **Sinclair's Theorem 5′: flows bound the spectral gap** (A. Sinclair, *Combin. Probab.
+Comput.* 1 (1992), Theorem 5′: `λ₁ ≤ 1 - 1/ρ̄(f)`). Let `P` have unit row sums and satisfy
+detailed balance with respect to a positive probability vector `π`, and let `F` be a flow whose
+length-weighted load on every oriented edge is at most `B · π(u) P(u, v)`. Then every real
+eigenvalue `μ ≠ 1` of `P` satisfies `1 ≤ B (1 - μ)`. -/
+theorem one_le_mul_one_sub_of_eigenvector (F : MulticommodityFlow π P) (hπ : ∀ x, 0 < π x)
+    (hπ1 : ∑ x, π x = 1) (hrow : ∀ x, ∑ y, P x y = 1)
+    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hB : ∀ u v, F.elongatedLoad u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
+    (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
+    1 ≤ B * (1 - μ) :=
+  one_le_mul_one_sub_of_poincare hπ hπ1 hrow hrev (F.sum_sq_sub_mul_le_of_elongatedLoad_le hB)
+    hf heig hμ
 
 end MulticommodityFlow
 

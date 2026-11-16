@@ -92,6 +92,20 @@ theorem directFlow_load : ∀ u v, directFlow.load u v ≤ 16 * (1 : ℕ) * (uni
   fin_cases u <;> fin_cases v <;>
     norm_num [MulticommodityFlow.load, directFlow, pathEdges, unif, P₂, Fin.sum_univ_two]
 
+theorem directFlow_elongatedLoad :
+    ∀ u v, directFlow.elongatedLoad u v ≤ 1 * (unif u * P₂ u v) := by
+  intro u v
+  fin_cases u <;> fin_cases v <;>
+    norm_num [MulticommodityFlow.elongatedLoad, directFlow, pathEdges, unif, P₂, Fin.sum_univ_two]
+
+/-- Theorem 5′ on the example: the eigenvalue `0` of `P₂` (eigenvector `(1, -1)`) satisfies
+`1 ≤ 1 · (1 - 0)`, with equality, so the bound is attained. -/
+example : (1 : ℝ) ≤ 1 * (1 - 0) :=
+  directFlow.one_le_mul_one_sub_of_eigenvector unif_pos unif_sum
+    (fun x => sum_row_of_mem_rowStochastic P₂_stoch x) P₂_rev directFlow_elongatedLoad
+    (f := ![1, -1]) (by intro h; have := congrFun h 0; norm_num at this)
+    (by ext i; fin_cases i <;> norm_num [P₂, mulVec, dotProduct, Fin.sum_univ_two]) (by norm_num)
+
 /-- Theorem 3′ for the direct flow on `A = {0}`. -/
 example : (∑ x ∈ ({0} : Finset (Fin 2)), unif x) * (∑ y ∈ ({0} : Finset (Fin 2))ᶜ, unif y) ≤
     (16 * (1 : ℕ)) * ∑ u ∈ ({0} : Finset (Fin 2)), ∑ v ∈ ({0} : Finset (Fin 2))ᶜ,

@@ -4027,6 +4027,7 @@
   "MathlibExt/Probability/Percolation/TranslationInvariance": {"to": "Probability/percolation/sharpness", "title": "Exponential decay below the critical point"},
   "MathlibExt/Probability/Percolation/TwoDimensional/Crossings": {"to": "Probability/percolation/crossings", "title": "Rectangle crossings on the square lattice"},
   "MathlibExt/Probability/Percolation/Universality": {"to": "Probability/percolation/crossings", "title": "Box-crossing property for positively associated measures"},
+  "MathlibExt/Probability/PoincareMixing": {"to": "Probability/markov-chains", "title": "Mixing times of Markov chains"},
   "MathlibExt/Probability/PoissonConvergenceCore": {"to": "Probability/central-limit-theorems", "title": "Poisson limit theorem"},
   "MathlibExt/Probability/PoissonWeakConvergence": {"to": "Probability/central-limit-theorems", "title": "Poisson limit theorem"},
   "MathlibExt/Probability/PositiveOperatorKernel": {"to": "Probability/markov-chains", "title": "Markov processes from transition semigroups"},
