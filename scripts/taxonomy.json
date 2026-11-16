@@ -2814,6 +2814,7 @@
   "MathlibExt/FieldTheory/SepClosedTensorSplit": {"to": "FieldTheory/extensions-and-closure", "title": "Separable extensions over separably closed fields"},
   "MathlibExt/FieldTheory/SeparableAdjoinRoot": {"to": "FieldTheory/extensions-and-closure", "title": "Finite separable extensions as simple extensions"},
   "MathlibExt/FieldTheory/Tsen": {"to": "FieldTheory/extensions-and-closure", "title": "Tsen's theorem"},
+  "MathlibExt/GameTheory/AffineCongestionGame": {"to": "GameTheory/noncooperative-games", "title": "Atomic congestion games with affine delays"},
   "MathlibExt/GameTheory/BondarevaShapley": {"to": "GameTheory/cooperative-games", "title": "Bondareva–Shapley theorem"},
   "MathlibExt/GameTheory/BoutonNim": {"to": "GameTheory/combinatorial-games", "title": "Nim"},
   "MathlibExt/GameTheory/ImpartialAcyclicGame": {"to": "GameTheory/combinatorial-games", "title": "Sprague–Grundy theorem"},

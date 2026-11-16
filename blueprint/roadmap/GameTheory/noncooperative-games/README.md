@@ -6,3 +6,4 @@ Noncooperative game theory studies strategic games in which each player chooses 
 - [Selfish routing and the price of anarchy](selfish-routing-and-the-price-of-anarchy/README.md)
 - [Potential games](potential-games/README.md)
 - [No-regret dynamics](no-regret-dynamics/README.md)
+- [Atomic congestion games with affine delays](atomic-congestion-games-with-affine-delays/README.md)
