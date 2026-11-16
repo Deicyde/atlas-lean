@@ -3011,6 +3011,7 @@
   "MathlibExt/Geometry/Euclidean/ConwayCircle": {"to": "Geometry/euclidean-geometry/triangle-geometry", "title": "Conway circle theorem"},
   "MathlibExt/Geometry/Euclidean/DeGua": {"to": "Geometry/euclidean-geometry/solid-and-spherical", "title": "De Gua's theorem"},
   "MathlibExt/Geometry/Euclidean/DeGuaHeron": {"to": "Geometry/euclidean-geometry/solid-and-spherical", "title": "De Gua's theorem"},
+  "MathlibExt/Geometry/Euclidean/ApollonianDescartesQuadruples": {"to": "Geometry/euclidean-geometry/circles-and-conics", "title": "Apollonian group"},
   "MathlibExt/Geometry/Euclidean/DescartesCircleTheorem": {"to": "Geometry/euclidean-geometry/circles-and-conics", "title": "Descartes' circle theorem"},
   "MathlibExt/Geometry/Euclidean/DiscreteGroups": {"to": "Geometry/euclidean-geometry/isometries-and-symmetry", "title": "Discrete groups of plane isometries"},
   "MathlibExt/Geometry/Euclidean/ErdosAnning": {"to": "Geometry/discrete-geometry", "title": "Erdős–Anning theorem"},
