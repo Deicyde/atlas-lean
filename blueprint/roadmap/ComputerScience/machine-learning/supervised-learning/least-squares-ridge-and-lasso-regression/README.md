@@ -45,3 +45,6 @@
 - [Linear least squares](../../../../LinearAlgebra/matrix-decompositions/linear-least-squares/README.md)
 - [QR factorization](../../../../LinearAlgebra/matrix-decompositions/qr-factorization/README.md)
 - [Tikhonov regularization](../../../../Analysis/convex-analysis-and-variations/tikhonov-regularization/README.md)
+- [First-order conditions for convexity and optimality](../../../../Analysis/convex-analysis-and-variations/first-order-conditions-for-convexity/README.md)
+- [Gradient descent](../../../../Analysis/convex-analysis-and-variations/gradient-descent/README.md)
+- [Matrix decompositions and linear systems](../../../../LinearAlgebra/matrix-decompositions/README.md)

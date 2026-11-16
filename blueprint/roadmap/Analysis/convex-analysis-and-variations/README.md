@@ -16,3 +16,10 @@ Convex functions and sets in analysis and optimization: first-order conditions f
 - [Tikhonov regularization](tikhonov-regularization/README.md)
 - [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
 - [Karush–Kuhn–Tucker conditions for inequality constraints](karush-kuhn-tucker-inequality.md)
+
+## Related topics
+
+- [Linear programming](../../Geometry/convex-geometry/linear-programming/README.md)
+- [Least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
+- [Newton's method](../numerical-analysis/newton-s-method/README.md)
+- [Conjugate gradient method](../../LinearAlgebra/matrix-decompositions/conjugate-gradient-method/README.md)

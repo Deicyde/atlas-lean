@@ -11,3 +11,8 @@
 - [Constant unit steps achieve exponent one](gradient-descent-uniform-rate-one.md)
 - [The gradient descent exponent is at least one](one-le-gradient-descent-exponent.md)
 - [Gradient descent with zero step sizes stays put](gradient-descent-trajectory-zero-schedul.md)
+
+## Related topics
+
+- [First-order conditions for convexity and optimality](../first-order-conditions-for-convexity/README.md)
+- [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)

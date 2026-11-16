@@ -12,3 +12,10 @@ subject to $y \ge 0$, $A^{\mathsf{T}} y \ge c$.
 
 Informal source: George B. Dantzig, *Linear Programming and Extensions*,
 Princeton University Press, 1963, strong duality theorem.
+
+## Background
+
+- [Weak duality](../../../Analysis/convex-analysis-and-variations/lagrange-duality/dual-value-le-primal-value.md):
+  background, linear programming duality is the special case of Lagrange duality for a linear
+  objective and linear constraints (Boyd–Vandenberghe §5.2.4); strong duality for linear programs
+  needs only feasibility, not Slater's condition.

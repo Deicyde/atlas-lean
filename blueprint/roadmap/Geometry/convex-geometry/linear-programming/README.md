@@ -14,3 +14,4 @@
 - [Bondareva–Shapley theorem](../../../GameTheory/cooperative-games/bondareva-shapley-theorem/README.md): nonemptiness of the core by LP duality.
 - [Scheduling unrelated parallel machines](../../../ComputerScience/approximation-algorithms/scheduling-unrelated-parallel-machines/README.md): an approximation algorithm by rounding an LP relaxation.
 - [Weighted vertex cover by the pricing method](../../../ComputerScience/approximation-algorithms/weighted-vertex-cover-by-the-pricing-method/README.md): a primal–dual approximation algorithm.
+- [Lagrange duality](../../../Analysis/convex-analysis-and-variations/lagrange-duality/README.md)
