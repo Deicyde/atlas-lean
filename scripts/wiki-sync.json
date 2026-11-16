@@ -28820,6 +28820,7 @@
 "MetaMathlibExt.Complexity.KeyTheorems.SharpPThresholdPSPACE.sharpP_threshold_pspace": "2042b32d200ca97d",
 "MetaMathlibExt.Complexity.KeyTheorems.SharpPThresholdPSPACE.thresholdLang": "8e4bdbf4c55aa89f",
 "MetaMathlibExt.Complexity.KeyTheorems.SipserGacs.sipser_gacs_lautemann": "443cdf56d3bd7a09",
+"MetaMathlibExt.Complexity.KeyTheorems.Smolensky.razborov_majority_not_in_ac0_mod_two": "77377ebcbb5a6441",
 "MetaMathlibExt.Complexity.KeyTheorems.Smolensky.smolensky": "1e577877aec2ed55",
 "MetaMathlibExt.Complexity.KeyTheorems.SpaceHierarchy.space_hierarchy": "7e31fa01a75f8e71",
 "MetaMathlibExt.Complexity.KeyTheorems.Stockmeyer.stockmeyer_approximate_counting": "6f4ae0de5dc962c7",
