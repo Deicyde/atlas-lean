@@ -437,4 +437,122 @@ theorem csiszar_kullback_pinsker
     rw [hL, hR]
     simp
 
+/-- **Csiszár–Kullback–Pinsker inequality with zero entries allowed.** For a finite nonempty `α`,
+a probability vector `p` with `p a ≥ 0` and a strictly positive probability vector `q`,
+`(∑ |p a - q a|)² ≤ 2 ∑ p a log (p a / q a)` (with `0 log 0 = 0`). This extends
+`csiszar_kullback_pinsker` to `p` with zero entries, by the same proof (splitting by the sign of
+`p a - q a`, the log-sum inequality on each part) with `binary_pinsker_of_mem_Icc` for the
+two-point case. Sources: as for `csiszar_kullback_pinsker` (Pinsker 1960; Csiszár 1967). -/
+theorem csiszar_kullback_pinsker_of_nonneg
+    {α : Type*} [Fintype α] [Nonempty α]
+    (p q : α → ℝ)
+    (hp_nonneg : ∀ a, 0 ≤ p a)
+    (hq_pos : ∀ a, 0 < q a)
+    (hp_sum : ∑ a : α, p a = 1)
+    (hq_sum : ∑ a : α, q a = 1) :
+    (∑ a : α, |p a - q a|) ^ 2 ≤ 2 * ∑ a : α, p a * Real.log (p a / q a) := by
+  classical
+  set s : Finset α := Finset.univ.filter (fun a => q a ≤ p a) with hs_def
+  set sc : Finset α := Finset.univ.filter (fun a => ¬ q a ≤ p a) with hsc_def
+  have hs_nonempty : s.Nonempty := by
+    by_contra h
+    rw [Finset.not_nonempty_iff_eq_empty] at h
+    have hall : ∀ a : α, p a < q a := by
+      intro a
+      have hmem : a ∉ s := by rw [h]; exact Finset.notMem_empty a
+      simpa [hs_def, Finset.mem_filter] using hmem
+    obtain ⟨a0⟩ : Nonempty α := inferInstance
+    have hlt : ∑ a : α, p a < ∑ a : α, q a :=
+      Finset.sum_lt_sum (fun i _ => le_of_lt (hall i)) ⟨a0, Finset.mem_univ a0, hall a0⟩
+    rw [hp_sum, hq_sum] at hlt
+    exact lt_irrefl _ hlt
+  by_cases hsc : sc.Nonempty
+  · -- both parts nonempty: reduce to binary Pinsker
+    have hp_s : ∀ a ∈ s, 0 < p a := fun a ha =>
+      lt_of_lt_of_le (hq_pos a) (Finset.mem_filter.mp ha).2
+    have hq_s : ∀ a ∈ s, 0 < q a := fun a _ => hq_pos a
+    have hp_sc : ∀ a ∈ sc, 0 ≤ p a := fun a _ => hp_nonneg a
+    have hq_sc : ∀ a ∈ sc, 0 < q a := fun a _ => hq_pos a
+    have hP : 0 < ∑ a ∈ s, p a := Finset.sum_pos hp_s hs_nonempty
+    have hQ : 0 < ∑ a ∈ s, q a := Finset.sum_pos hq_s hs_nonempty
+    have hPc : 0 ≤ ∑ a ∈ sc, p a := Finset.sum_nonneg hp_sc
+    have hQc : 0 < ∑ a ∈ sc, q a := Finset.sum_pos hq_sc hsc
+    have hsumP : ∑ a ∈ s, p a + ∑ a ∈ sc, p a = 1 := by
+      have h := Finset.sum_filter_add_sum_filter_not Finset.univ (fun a => q a ≤ p a) p
+      simpa [hs_def, hsc_def, hp_sum] using h
+    have hsumQ : ∑ a ∈ s, q a + ∑ a ∈ sc, q a = 1 := by
+      have h := Finset.sum_filter_add_sum_filter_not Finset.univ (fun a => q a ≤ p a) q
+      simpa [hs_def, hsc_def, hq_sum] using h
+    have hP1 : ∑ a ∈ s, p a ≤ 1 := by linarith
+    have hQ1 : ∑ a ∈ s, q a < 1 := by linarith
+    have hPc_eq : ∑ a ∈ sc, p a = 1 - ∑ a ∈ s, p a := by linarith
+    have hQc_eq : ∑ a ∈ sc, q a = 1 - ∑ a ∈ s, q a := by linarith
+    have hlog_s := Real.sum_mul_log_sum_div_sum_le_sum_mul_log_div s p q
+      (fun a ha => (hp_s a ha).le) hq_s
+    have hlog_sc := Real.sum_mul_log_sum_div_sum_le_sum_mul_log_div sc p q hp_sc hq_sc
+    have hKL_split : ∑ a : α, p a * Real.log (p a / q a)
+        = (∑ a ∈ s, p a * Real.log (p a / q a)) + (∑ a ∈ sc, p a * Real.log (p a / q a)) := by
+      have h := Finset.sum_filter_add_sum_filter_not Finset.univ (fun a => q a ≤ p a)
+        (fun a => p a * Real.log (p a / q a))
+      simpa [hs_def, hsc_def] using h.symm
+    have hKL_ge : (∑ a ∈ s, p a) * Real.log ((∑ a ∈ s, p a) / (∑ a ∈ s, q a))
+        + (∑ a ∈ sc, p a) * Real.log ((∑ a ∈ sc, p a) / (∑ a ∈ sc, q a))
+        ≤ ∑ a : α, p a * Real.log (p a / q a) := by
+      linarith
+    rw [hPc_eq, hQc_eq] at hKL_ge
+    have hbin := binary_pinsker_of_mem_Icc hP.le hP1 hQ hQ1
+    have hL1 : ∑ a : α, |p a - q a|
+        = 2 * ((∑ a ∈ s, p a) - (∑ a ∈ s, q a)) := by
+      have h := Finset.sum_filter_add_sum_filter_not Finset.univ (fun a => q a ≤ p a)
+        (fun a => |p a - q a|)
+      have h1 : ∀ a ∈ Finset.univ.filter (fun a => q a ≤ p a), |p a - q a| = p a - q a := by
+        intro a ha
+        exact abs_of_nonneg (sub_nonneg.mpr (Finset.mem_filter.mp ha).2)
+      have h2 : ∀ a ∈ Finset.univ.filter (fun a => ¬ q a ≤ p a), |p a - q a| = q a - p a := by
+        intro a ha
+        have hlt : p a < q a := not_le.mp (Finset.mem_filter.mp ha).2
+        rw [abs_of_neg (sub_neg.mpr hlt)]
+        ring
+      rw [Finset.sum_congr rfl h1, Finset.sum_congr rfl h2] at h
+      have hL : ∑ a : α, |p a - q a|
+          = (∑ a ∈ s, (p a - q a)) + (∑ a ∈ sc, (q a - p a)) := by
+        simpa [hs_def, hsc_def] using h.symm
+      rw [hL, Finset.sum_sub_distrib, Finset.sum_sub_distrib]
+      linarith [hsumP, hsumQ]
+    rw [hL1]
+    have hsq : (2 * ((∑ a ∈ s, p a) - (∑ a ∈ s, q a))) ^ 2
+        = 2 * (2 * ((∑ a ∈ s, p a) - (∑ a ∈ s, q a)) ^ 2) := by ring
+    rw [hsq]
+    apply mul_le_mul_of_nonneg_left _ (by norm_num : (0:ℝ) ≤ 2)
+    linarith
+  · -- complement empty: p = q pointwise, both sides vanish
+    rw [Finset.not_nonempty_iff_eq_empty] at hsc
+    have hle : ∀ a : α, q a ≤ p a := by
+      intro a
+      by_contra hlt
+      have hmem : a ∈ sc := Finset.mem_filter.mpr ⟨Finset.mem_univ a, hlt⟩
+      rw [hsc] at hmem
+      simp at hmem
+    have heq : ∀ a : α, p a = q a := by
+      have hsum : ∑ a ∈ Finset.univ, (p a - q a) = 0 := by
+        rw [Finset.sum_sub_distrib]
+        simpa using (by rw [hp_sum, hq_sum, sub_self] : (∑ a : α, p a) - (∑ a : α, q a) = 0)
+      have hnonneg : ∀ a ∈ Finset.univ, 0 ≤ p a - q a := fun a _ => sub_nonneg.mpr (hle a)
+      have hzero := (Finset.sum_eq_zero_iff_of_nonneg hnonneg).mp hsum
+      intro a
+      have h0 := hzero a (Finset.mem_univ a)
+      linarith
+    have hL : (∑ a : α, |p a - q a|) = 0 := by
+      apply Finset.sum_eq_zero
+      intro a _
+      rw [heq a, sub_self, abs_zero]
+    have hR : (∑ a : α, p a * Real.log (p a / q a)) = 0 := by
+      apply Finset.sum_eq_zero
+      intro a _
+      rw [heq a]
+      have hne : q a ≠ 0 := ne_of_gt (hq_pos a)
+      simp [div_self hne, Real.log_one]
+    rw [hL, hR]
+    simp
+
 end MathlibExt.InformationTheory.Pinsker

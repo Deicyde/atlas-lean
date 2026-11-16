@@ -1,12 +1,16 @@
-# Strong convexity of the entropy on the open simplex with respect to $\|\cdot\|_1$
+# Strong convexity of the entropy on the simplex with respect to $\|\cdot\|_1$
 
-For $x, u$ in the [relative interior of the simplex](pos-simplex.md),
+For $x$ in the [relative interior of the simplex](pos-simplex.md) and $u$ in the [simplex](simplex.md), vertices included,
 
 $$
 V_x(u) \ge \tfrac12 \|u - x\|_1^2 ,
 $$
 
-that is, the [entropy](entropy.md) is $1$-strongly convex with respect to $\|\cdot\|_1$ there, in the Bregman form used by mirror descent. By the [Kullback–Leibler formula](bregman-entropy-eq.md) this is Pinsker's inequality $\|u - x\|_1^2 \le 2\,\mathrm{KL}(u \,\|\, x)$, which is how it is proved here; the source proves the modulus instead from the Hessian, $h^T \nabla^2\omega(x) h = \sum_i h_i^2/x_i \ge \|h\|_1^2$ by the Cauchy–Schwarz inequality. Points on the boundary of the simplex are not covered, because the repository's Pinsker inequality assumes positive probability vectors.
+that is, the [entropy](entropy.md) is $1$-strongly convex with respect to $\|\cdot\|_1$ in the Bregman form used by mirror descent, with iterates in the relative interior and comparators anywhere in the simplex. By the [Kullback–Leibler formula](bregman-entropy-eq.md) this is Pinsker's inequality $\|u - x\|_1^2 \le 2\,\mathrm{KL}(u \,\|\, x)$ for a probability vector $u$ with zero entries allowed, which is how it is proved here; the source proves the modulus instead from the Hessian, $h^T \nabla^2\omega(x) h = \sum_i h_i^2/x_i \ge \|h\|_1^2$ by the Cauchy–Schwarz inequality.
+
+## Background
+
+- [Csiszár–Kullback–Pinsker inequality with zero entries allowed](../../../InformationTheory/information-inequalities/csiszar-kullback-pinsker-of-nonneg.md): the inequality that the Lean proof applies to $u$ and $x$, in place of the source's Hessian computation.
 
 ## Sources
 

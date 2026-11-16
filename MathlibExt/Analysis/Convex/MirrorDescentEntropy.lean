@@ -33,13 +33,16 @@ update `x⁺ᵢ ∝ xᵢ exp (-γ gᵢ)` of the Hedge algorithm.
 Main results:
 
 * `bregman_entropy_eq`: `V_x(u) = ∑ uᵢ log (uᵢ / xᵢ)` (Kullback–Leibler divergence).
-* `bregman_entropy_ge`: `V_x(u) ≥ ‖u - x‖₁² / 2` on the relative interior (Pinsker).
+* `bregman_entropy_ge`: `V_x(u) ≥ ‖u - x‖₁² / 2` for `x` in the relative interior and `u` in the
+  simplex (Pinsker).
 * `bregman_entropy_uniform_le`: `V_{uniform}(u) ≤ log n` on the simplex.
 * `norm_le_of_abs_apply_single_le`: the dual norm of a linear form is at most the largest absolute
   value of its coordinates.
 * `entropy_prox_multiplicative`: the multiplicative-weights update satisfies the prox optimality
   condition with equality.
 * `entropic_mirror_descent_exists_le`: the rate `L √(2 log n) / √N` of entropic mirror descent.
+* `multiplicative_weights_regret_le`: the mirror descent regret bound `log n / γ + γ N / 2` for
+  experts, against every vertex of the simplex.
 -/
 
 @[expose] public section
@@ -114,19 +117,20 @@ theorem bregman_entropy_eq {x u : L1 n} (hx : x ∈ posSimplex n) (hu : ∑ i, u
   rw [this, sum_congr rfl fun i _ => key i, sum_add_distrib, sum_sub_distrib, hx.2, hu]
   ring
 
-/-- **Strong convexity of the entropy on the open simplex with respect to `‖·‖₁`.** For `x, u` in
-the relative interior of the simplex, `V_x(u) ≥ ‖u - x‖₁² / 2`, i.e. the entropy is `1`-strongly
-convex with respect to the `ℓ₁` norm in the Bregman form (Nemirovski, Juditsky, Lan and Shapiro
-(2009), Section 2.3, Example, `α = 1`, proved in their appendix from the Hessian of the entropy).
-Here it is derived from Pinsker's inequality `‖u - x‖₁² ≤ 2 KL(u ‖ x)`. -/
-theorem bregman_entropy_ge {x u : L1 n} (hx : x ∈ posSimplex n) (hu : u ∈ posSimplex n) :
+/-- **Strong convexity of the entropy on the simplex with respect to `‖·‖₁`.** For `x` in the
+relative interior of the simplex and `u` in the (closed) simplex, `V_x(u) ≥ ‖u - x‖₁² / 2`, i.e.
+the entropy is `1`-strongly convex with respect to the `ℓ₁` norm in the Bregman form
+(Nemirovski, Juditsky, Lan and Shapiro (2009), Section 2.3, Example, `α = 1`, proved in their
+appendix from the Hessian of the entropy). Here it is derived from Pinsker's inequality
+`‖u - x‖₁² ≤ 2 KL(u ‖ x)` with zero entries of `u` allowed. -/
+theorem bregman_entropy_ge {x u : L1 n} (hx : x ∈ posSimplex n) (hu : u ∈ simplex n) :
     1 / 2 * ‖u - x‖ ^ 2 ≤ bregman entropy entropyDeriv x u := by
   have hn : n ≠ 0 := by
     rintro rfl
     simpa using hx.2
   have : Nonempty (Fin n) := ⟨⟨0, Nat.pos_of_ne_zero hn⟩⟩
   rw [bregman_entropy_eq hx hu.2, PiLp.norm_eq_of_L1]
-  have := MathlibExt.InformationTheory.Pinsker.csiszar_kullback_pinsker (fun i => u i)
+  have := MathlibExt.InformationTheory.Pinsker.csiszar_kullback_pinsker_of_nonneg (fun i => u i)
     (fun i => x i) hu.1 hx.1 hu.2 hx.2
   simp only [PiLp.sub_apply, Real.norm_eq_abs]
   linarith
@@ -203,33 +207,86 @@ theorem entropy_prox_multiplicative {x xplus : L1 n} (hx : x ∈ posSimplex n)
   ring
 
 /-- **Rate of entropic mirror descent on the simplex.** Let `n ≥ 2`, `L > 0`, `N ≥ 1`, and run
-mirror descent with the entropy setup on the relative interior `Δ°ₙ` of the simplex from the
-uniform point, with the constant step `γ = √(2 log n) / (L √N)`: the iterates `x t ∈ Δ°ₙ` satisfy
-the prox optimality conditions (for instance, by `entropy_prox_multiplicative`, the
-multiplicative-weights updates), and `g t` is a subgradient of `f` at `x t` relative to `Δ°ₙ`
-with dual norm `‖g t‖ ≤ L` (for instance all `|g_t(eᵢ)| ≤ L`, by
-`norm_le_of_abs_apply_single_le`). Then for every `xstar ∈ Δ°ₙ` some iterate `t < N` satisfies
+mirror descent with the entropy setup on the simplex `Δₙ` from the uniform point, with the
+constant step `γ = √(2 log n) / (L √N)`: the iterates `x t` lie in the relative interior `Δ°ₙ`
+and satisfy the prox optimality conditions for all `u ∈ Δₙ` (for instance, by
+`entropy_prox_multiplicative`, the multiplicative-weights updates), and `g t` is a subgradient of
+`f` at `x t` relative to `Δₙ` with dual norm `‖g t‖ ≤ L` (for instance all `|g_t(eᵢ)| ≤ L`, by
+`norm_le_of_abs_apply_single_le`). Then for every `xstar ∈ Δₙ` some iterate `t < N` satisfies
 `f (x t) - f xstar ≤ L √(2 log n) / √N`.
 This is the efficiency estimate (5.11) of Juditsky and Nemirovski, *First order methods for
 nonsmooth convex large-scale optimization, I* (2011), Proposition 5.1(ii), in the entropy setup
 2(c) of Section 5.7.1, with `Ω ≤ ln n` (Nemirovski, Juditsky, Lan and Shapiro (2009), Section 2.3,
-Example), for the best iterate and comparators in the relative interior. -/
+Example), for the best iterate. -/
 theorem entropic_mirror_descent_exists_le (hn : 2 ≤ n) {f : L1 n → ℝ} {L : ℝ} (hL : 0 < L)
     {x : ℕ → L1 n} {g : ℕ → L1 n →L[ℝ] ℝ} {N : ℕ} (hN : 0 < N) (hx0 : x 0 = uniform n)
     (hx : ∀ t, x t ∈ posSimplex n)
-    (hstep : ∀ t, ∀ u ∈ posSimplex n,
+    (hstep : ∀ t, ∀ u ∈ simplex n,
       0 ≤ ((√(2 * log n) / (L * √N)) • g t - entropyDeriv (x t) + entropyDeriv (x (t + 1)))
         (u - x (t + 1)))
-    (hsub : ∀ t, ∀ y ∈ posSimplex n, f (x t) + g t (y - x t) ≤ f y) (hg : ∀ t, ‖g t‖ ≤ L)
-    {xstar : L1 n} (hxstar : xstar ∈ posSimplex n) :
+    (hsub : ∀ t, ∀ y ∈ simplex n, f (x t) + g t (y - x t) ≤ f y) (hg : ∀ t, ‖g t‖ ≤ L)
+    {xstar : L1 n} (hxstar : xstar ∈ simplex n) :
     ∃ t < N, f (x t) - f xstar ≤ L * √(2 * log n) / √N := by
   have hn0 : 0 < n := by omega
   have hlog : 0 < log n := log_pos (by exact_mod_cast hn)
   have hV : bregman entropy entropyDeriv (x 0) xstar ≤ log n := by
-    rw [hx0]; exact bregman_entropy_uniform_le hn0 (posSimplex_subset_simplex hxstar)
-  have := mirror_descent_exists_le_sqrt entropy entropyDeriv one_pos subset_rfl
+    rw [hx0]; exact bregman_entropy_uniform_le hn0 hxstar
+  have := mirror_descent_exists_le_sqrt entropy entropyDeriv one_pos posSimplex_subset_simplex
     (fun x hx u hu => bregman_entropy_ge hx hu) hL hlog hN hx (by simpa only [mul_one] using hstep)
     hsub hg hxstar hV
   simpa only [one_mul] using this
+
+/-- **Regret of entropic mirror descent for prediction with expert advice.** Let `n ≥ 1`,
+`γ > 0`, and let the loss vectors `c t ∈ [-1, 1]ⁿ` be arbitrary. Run the multiplicative-weights
+update from the uniform point: `x (t + 1) i = x t i exp (-γ c t i) / Z t` with `Z t > 0` and
+`x t` in the relative interior of the simplex. Then for every expert `i` and every `N`,
+`∑_{t<N} (⟨c t, x t⟩ - c t i) ≤ log n / γ + γ N / 2`.
+This is the telescoped mirror descent bound (5.7) of Juditsky and Nemirovski (2011),
+Proposition 5.1(i), in the entropy setup 2(c) of Section 5.7.1, with the comparator `u = eᵢ` (a
+vertex of the simplex), `V_{uniform}(eᵢ) ≤ log n` and `‖c t‖_∞ ≤ 1`; the update is the entropic prox
+step by `entropy_prox_multiplicative`. It is the mirror descent regret bound, not the Hedge bound
+`L - L_i ≤ η T + log n / η` that `CSLibExt.MachineLearning.Hedge.regret_le` proves by the potential
+argument for losses in `[0, 1]`. -/
+theorem multiplicative_weights_regret_le (hn : 0 < n) {γ : ℝ} (hγ : 0 < γ)
+    {c : ℕ → Fin n → ℝ} {x : ℕ → L1 n} {Z : ℕ → ℝ} (hx0 : x 0 = uniform n)
+    (hx : ∀ t, x t ∈ posSimplex n) (hZ : ∀ t, 0 < Z t)
+    (hupd : ∀ t i, x (t + 1) i = x t i * exp (-γ * c t i) / Z t) (hc : ∀ t i, |c t i| ≤ 1)
+    (i : Fin n) (N : ℕ) :
+    ∑ t ∈ range N, (∑ j, c t j * x t j - c t i) ≤ log n / γ + γ * N / 2 := by
+  classical
+  set e : L1 n := WithLp.toLp 1 (Pi.single i (1 : ℝ) : Fin n → ℝ) with he
+  have he_apply : ∀ j, e j = (Pi.single i (1 : ℝ) : Fin n → ℝ) j := fun j => by rw [he]
+  have heS : e ∈ simplex n := by
+    refine ⟨fun j => ?_, ?_⟩
+    · rw [he_apply]; by_cases h : j = i
+      · subst h; simp
+      · simp [h]
+    · simp only [he_apply]; simp
+  have hsum := mirror_descent_sum_le entropy entropyDeriv one_pos posSimplex_subset_simplex
+    (fun x hx u hu => bregman_entropy_ge hx hu) (x := x) (g := fun t => linearForm (c t))
+    (γ := fun _ => γ) hx
+    (fun t u hu => (entropy_prox_multiplicative (hx t) (hx (t + 1)) (hZ t) (hupd t) hu.2).ge)
+    heS N
+  have hV : bregman entropy entropyDeriv (x 0) e ≤ log n := by
+    rw [hx0]; exact bregman_entropy_uniform_le hn heS
+  have hnorm : ∀ t, ‖linearForm (c t)‖ ≤ 1 := fun t =>
+    norm_le_of_abs_apply_single_le _ zero_le_one fun j => by
+      rw [linearForm_apply]
+      simpa [PiLp.single_apply] using hc t j
+  have hlin : ∀ t, linearForm (c t) (x t - e) = ∑ j, c t j * x t j - c t i := by
+    intro t
+    rw [linearForm_apply]
+    simp only [PiLp.sub_apply, he_apply, mul_sub, sum_sub_distrib]
+    simp [Pi.single_apply]
+  have hsq : ∑ t ∈ range N, γ ^ 2 * ‖linearForm (c t)‖ ^ 2 ≤ γ ^ 2 * N := by
+    calc ∑ t ∈ range N, γ ^ 2 * ‖linearForm (c t)‖ ^ 2 ≤ ∑ _t ∈ range N, γ ^ 2 * 1 := by
+          refine sum_le_sum fun t _ => mul_le_mul_of_nonneg_left ?_ (sq_nonneg γ)
+          have := hnorm t
+          nlinarith [norm_nonneg (linearForm (c t))]
+      _ = γ ^ 2 * N := by rw [sum_const, card_range, nsmul_eq_mul]; ring
+  simp only [hlin] at hsum
+  rw [← mul_sum] at hsum
+  rw [div_add' _ _ _ hγ.ne', le_div_iff₀ hγ]
+  nlinarith [hsum, hV, hsq]
 
 end MathlibExt.Analysis.Convex.MirrorDescentEntropy
