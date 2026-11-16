@@ -34,6 +34,7 @@ Sinclair's geometric bounds on the spectral gap of a reversible Markov chain (A.
 - [Detailed balance for powers](pow-detailed-balance.md)
 - [Excess mass on a set is at most the total variation distance](sum-sub-le-tv-dist.md)
 - [Sinclair's Lemma 7](div-eight-le-pow-apply.md)
+- [Sinclair's Lemma 7 from a single mixing time](div-eight-le-pow-apply-of-is-mixed-at.md)
 - [Rapid mixing implies a low-congestion flow](exists-multicommodity-flow-load-le-sixte.md)
 
 ## Related topics

@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.Probability.CanonicalPaths
 public import MathlibExt.Probability.MarkovMixing
+public import MathlibExt.Probability.PoincareMixing
 public import Mathlib.LinearAlgebra.Matrix.Stochastic
 
 import Mathlib.Tactic.Linarith
@@ -40,6 +41,8 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
   `1/4` of `π` for all `t ≥ τ`, then `Pᵗ(x, y) ≥ π(y)/8` for all `t ≥ 2τ` and all `x, y`.
   This is the key step of Theorem 8 (resistance at most `16 τ`), recorded as wanted in
   `WantedExt.Probability.MulticommodityFlowWanted`.
+* `div_eight_le_pow_apply_of_isMixedAt`: Lemma 7 from `IsMixedAt P π τ`, using
+  `PoincareMixing.isMixedAt_mono` (being `1/4`-mixed persists).
 
 ## References
 
@@ -52,6 +55,7 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
 
 open Finset Matrix
 open MathlibExt.Probability.CanonicalPaths MathlibExt.Probability.MarkovMixing
+open MathlibExt.Probability.PoincareMixing
 
 namespace MathlibExt.Probability.Flows
 
@@ -328,5 +332,22 @@ theorem div_eight_le_pow_apply {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
         Finset.sum_le_sum_of_subset_of_nonneg (Finset.subset_univ _)
           fun z _ _ => mul_nonneg (hnn _ _ _) (hnn _ _ _)
     _ = (P ^ t) x y := by rw [← mul_apply, ← pow_add, ← hsplit]
+
+/-- **Sinclair's Lemma 7 from a single mixing time.** If `P` is stochastic and reversible with
+respect to a probability vector `π > 0` and `1/4`-mixed at time `τ` (`MarkovMixing.IsMixedAt`),
+then `Pᵗ(x, y) ≥ π(y)/8` for all `t ≥ 2τ` (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
+Lemma 7, with `isMixedAt_mono` supplying the later times). -/
+theorem div_eight_le_pow_apply_of_isMixedAt {π : S → ℝ} (hπ : ∀ x, 0 < π x)
+    (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
+    (hrev : ∀ x y, π x * P x y = π y * P y x) {τ : ℕ} (hτ : IsMixedAt P π τ) {t : ℕ}
+    (ht : 2 * τ ≤ t) (x y : S) :
+    π y / 8 ≤ (P ^ t) x y := by
+  have hstat : π ᵥ* P = π := by
+    funext j
+    simp only [vecMul, dotProduct]
+    calc ∑ i, π i * P i j = ∑ i, π j * P j i := Finset.sum_congr rfl fun i _ => hrev i j
+      _ = π j := by rw [← Finset.mul_sum, sum_row_of_mem_rowStochastic hP j, mul_one]
+  exact div_eight_le_pow_apply hπ hπ1 hP hrev
+    (fun x t htt => isMixedAt_mono hP hstat hτ htt x) ht x y
 
 end MathlibExt.Probability.Flows

@@ -32,6 +32,9 @@ Let `K` be a stochastic matrix reversible with respect to a probability vector `
   `∑ π (P g)² ≤ (1 - 1/B) ∑ π g²`;
 * `sq_two_mul_tvDist_pow_le`: for every start `x` and time `t`,
   `(2 d_TV(Pᵗ(x, ·), π))² ≤ (1 - 1/B)ᵗ (1/π(x) - 1)`;
+* `tvDist_vecMul_le`, `tvDist_pow_succ_le` and `isMixedAt_mono`: total variation distance to a
+  stationary `π` never increases, so being `1/4`-mixed at one time is being mixed at every later
+  time;
 * `isMixedAt_of_poincare`: hence `P` is `1/4`-mixed at every `t` with
   `(1 - 1/B)ᵗ (1/π(x) - 1) ≤ 1/4` for all `x` (`MarkovMixing.IsMixedAt`).
 
@@ -291,5 +294,46 @@ theorem isMixedAt_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : �
     unfold tvDist
     exact mul_nonneg (by norm_num) (Finset.sum_nonneg fun _ _ => abs_nonneg _)
   nlinarith
+
+/-- **A stochastic matrix contracts total variation.** If `P` is stochastic, then
+`d_TV(μ P, ν P) ≤ d_TV(μ, ν)` for all real vectors `μ, ν` (each column sum of `|μ - ν| P` is
+redistributed with total mass preserved). -/
+theorem tvDist_vecMul_le {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S) (μ ν : S → ℝ) :
+    tvDist (μ ᵥ* P) (ν ᵥ* P) ≤ tvDist μ ν := by
+  unfold tvDist
+  refine mul_le_mul_of_nonneg_left ?_ (by norm_num)
+  calc ∑ y, |(μ ᵥ* P) y - (ν ᵥ* P) y| = ∑ y, |∑ x, (μ x - ν x) * P x y| := by
+        refine Finset.sum_congr rfl fun y _ => ?_
+        simp only [vecMul, dotProduct, ← Finset.sum_sub_distrib, sub_mul]
+    _ ≤ ∑ y, ∑ x, |μ x - ν x| * P x y := Finset.sum_le_sum fun y _ =>
+        (Finset.abs_sum_le_sum_abs _ _).trans (le_of_eq (Finset.sum_congr rfl fun x _ => by
+          rw [abs_mul, abs_of_nonneg (nonneg_of_mem_rowStochastic hP)]))
+    _ = ∑ x, |μ x - ν x| := by
+        rw [Finset.sum_comm]
+        refine Finset.sum_congr rfl fun x _ => ?_
+        rw [← Finset.mul_sum, sum_row_of_mem_rowStochastic hP x, mul_one]
+
+/-- **The distance to stationarity does not increase.** If `P` is stochastic and `π P = π`,
+then `d_TV(Pᵗ⁺¹(x, ·), π) ≤ d_TV(Pᵗ(x, ·), π)` for every start `x` and time `t`. -/
+theorem tvDist_pow_succ_le {π : S → ℝ} {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
+    (hπ : π ᵥ* P = π) (x : S) (t : ℕ) :
+    tvDist (fun y => (P ^ (t + 1)) x y) π ≤ tvDist (fun y => (P ^ t) x y) π := by
+  have hrow : (fun y => (P ^ (t + 1)) x y) = (fun y => (P ^ t) x y) ᵥ* P := by
+    funext y; rw [pow_succ, mul_apply]; rfl
+  rw [hrow]
+  conv_lhs => rw [← hπ]
+  exact tvDist_vecMul_le hP _ _
+
+/-- **Being `1/4`-mixed persists** (the monotonicity that makes `MarkovMixing.IsMixedAt` agree
+with Sinclair's mixing time `τ_x(ε) = min {t : Δ_x(t') ≤ ε for all t' ≥ t}`, A. Sinclair,
+*Combin. Probab. Comput.* 1 (1992), Section 2). If `P` is stochastic, `π P = π` and `P` is
+`1/4`-mixed at time `t`, it is `1/4`-mixed at every later time. -/
+theorem isMixedAt_mono {π : S → ℝ} {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
+    (hπ : π ᵥ* P = π) {t t' : ℕ} (ht : IsMixedAt P π t) (htt' : t ≤ t') :
+    IsMixedAt P π t' := by
+  intro x
+  induction htt' with
+  | refl => exact ht x
+  | step _ ih => exact (tvDist_pow_succ_le hP hπ x _).trans ih
 
 end MathlibExt.Probability.PoincareMixing

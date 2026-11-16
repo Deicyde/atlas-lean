@@ -8,13 +8,16 @@
 - [Being $1/4$-mixed at a given time](is-mixed-at.md)
 - [Number of monochromatic edges](mono-edges.md)
 - [Cutoff for a family of distance profiles](has-cutoff.md)
-- [A Poincaré inequality bounds the mixing time of the lazy chain](is-mixed-at-of-poincare.md)
-- [The lazy version of a reversible stochastic matrix is reversible and stochastic](lazy-mem-row-stochastic-and-detailed-bal.md)
+- [A stochastic matrix contracts total variation](tv-dist-vec-mul-le.md)
+- [The distance to stationarity does not increase](tv-dist-pow-succ-le.md)
+- [Being `1/4`-mixed persists](is-mixed-at-mono.md)
 - [Jensen's inequality for squares](sq-sum-mul-le.md)
-- [Mixing from a Poincaré inequality, for a lazy reversible chain](sq-two-mul-tv-dist-pow-le.md)
-- [A reversible stochastic matrix is a contraction of `L²(π)`](sum-mul-sq-mul-vec-le.md)
-- [A Poincaré inequality makes a lazy reversible chain contract mean-zero functions](sum-mul-sq-mul-vec-le-of-poincare.md)
 - [The Dirichlet form of a reversible matrix](sum-mul-sub-mul-vec-eq.md)
+- [A reversible stochastic matrix is a contraction of `L²(π)`](sum-mul-sq-mul-vec-le.md)
+- [The lazy version of a reversible stochastic matrix is reversible and stochastic](lazy-mem-row-stochastic-and-detailed-bal.md)
+- [A Poincaré inequality makes a lazy reversible chain contract mean-zero functions](sum-mul-sq-mul-vec-le-of-poincare.md)
+- [Mixing from a Poincaré inequality, for a lazy reversible chain](sq-two-mul-tv-dist-pow-le.md)
+- [A Poincaré inequality bounds the mixing time of the lazy chain](is-mixed-at-of-poincare.md)
 
 ## Related topics
 

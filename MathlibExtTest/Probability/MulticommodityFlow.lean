@@ -30,7 +30,7 @@ set_option autoImplicit false
 
 open Matrix
 open MathlibExt.Probability.CanonicalPaths MathlibExt.Probability.MarkovMixing
-open MathlibExt.Probability.Flows
+open MathlibExt.Probability.Flows MathlibExt.Probability.PoincareMixing
 
 namespace MathlibExtTest.Probability.MulticommodityFlow
 
@@ -71,6 +71,22 @@ theorem P₂_mixed : ∀ x t, 1 ≤ t → tvDist (fun y => (P₂ ^ t) x y) unif 
 /-- Lemma 7 on the example, at `t = 2 = 2τ`. -/
 example (x y : Fin 2) : unif y / 8 ≤ (P₂ ^ 2) x y :=
   div_eight_le_pow_apply unif_pos unif_sum P₂_stoch P₂_rev P₂_mixed le_rfl x y
+
+theorem P₂_stat : unif ᵥ* P₂ = unif := by
+  funext j; norm_num [vecMul, dotProduct, unif, P₂, Fin.sum_univ_two]
+
+/-- Mixed at time `1`, hence at time `5`. -/
+example : IsMixedAt P₂ unif 5 :=
+  isMixedAt_mono P₂_stoch P₂_stat (fun x => P₂_mixed x 1 le_rfl) (by norm_num)
+
+/-- Lemma 7 from a single mixing time `τ = 1`, at `t = 3`. -/
+example (x y : Fin 2) : unif y / 8 ≤ (P₂ ^ 3) x y :=
+  div_eight_le_pow_apply_of_isMixedAt unif_pos unif_sum P₂_stoch P₂_rev
+    (fun x => P₂_mixed x 1 le_rfl) (by norm_num) x y
+
+/-- Total variation contracts under `P₂`. -/
+example (μ ν : Fin 2 → ℝ) : tvDist (μ ᵥ* P₂) (ν ᵥ* P₂) ≤ tvDist μ ν :=
+  tvDist_vecMul_le P₂_stoch μ ν
 
 /-- Detailed balance for a power. -/
 example (x y : Fin 2) : unif x * (P₂ ^ 5) x y = unif y * (P₂ ^ 5) y x :=
