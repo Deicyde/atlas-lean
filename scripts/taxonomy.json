@@ -3810,6 +3810,7 @@
   "MathlibExt/Probability/Configuration/WeakConvergence": {"to": "Probability/random-fields", "title": "Weak and monotone limits on configuration space"},
   "MathlibExt/Probability/ContinuousMapping": {"to": "Probability/convergence-of-measures", "title": "Continuous mapping theorem"},
   "MathlibExt/Probability/ContinuousPathConvergence": {"to": "Probability/convergence-of-measures", "title": "Weak convergence in the space of continuous functions"},
+  "MathlibExt/Probability/ContractionPrinciple": {"to": "Probability/large-deviations", "title": "Contraction principle"},
   "MathlibExt/Probability/ConvergenceInProbability": {"to": "Probability/convergence-of-measures", "title": "Convergence in probability"},
   "MathlibExt/Probability/ConvexSubGaussianComparison": {"to": "Probability/concentration-inequalities", "title": "Convex comparison under sub-Gaussian tails"},
   "MathlibExt/Probability/ConvexSubmartingale": {"to": "Probability/martingales", "title": "Convex functions of martingales"},

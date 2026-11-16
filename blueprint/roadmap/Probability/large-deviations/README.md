@@ -5,3 +5,4 @@ Large deviation principles and rate functions, Cramér's theorem and Chernoff bo
 - [Large deviation principle](large-deviation-principle/README.md)
 - [Legendre transform](legendre-transform/README.md)
 - [Cramér's theorem](cram-r-s-theorem/README.md)
+- [Contraction principle](contraction-principle/README.md)
