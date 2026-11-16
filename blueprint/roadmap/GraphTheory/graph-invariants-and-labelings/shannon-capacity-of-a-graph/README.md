@@ -82,6 +82,15 @@
 - [Feasible values multiply along strong powers](pow-mem-theta-feasible.md)
 - [Independence numbers of strong powers are at most $\vartheta^k$](indep-num-le-lovasz-theta-pow.md)
 - [Lovász's bound on the Shannon capacity](le-lovasz-theta-of-tendsto.md)
+- [Height of Lovász's umbrella](umbrella-height.md)
+- [Square of the umbrella height](umbrella-height-sq.md)
+- [Lovász's umbrella](umbrella.md)
+- [Inner products of the umbrella ribs](inner-umbrella.md)
+- [Cosines of the pentagon's long diagonals](cos-two-pi-mul-div-five.md)
+- [Non-adjacent vertices of the pentagon](cycle-graph-five-nonadj-diff.md)
+- [The umbrella certifies $\sqrt 5$](sqrt-five-mem-theta-feasible-cycle-graph.md)
+- [Theta of the pentagon is at most $\sqrt 5$](lovasz-theta-cycle-graph-five-le.md)
+- [The Shannon capacity of the pentagon is at most $\sqrt 5$](le-sqrt-five-of-tendsto.md)
 
 ## Related topics
 
