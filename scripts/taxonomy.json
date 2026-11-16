@@ -1555,6 +1555,7 @@
   "CSLibExt/MachineLearning/Regression/EffectiveRank": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Effective ranks and benign overfitting"},
   "CSLibExt/MachineLearning/Regression/GBLUP": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Kernel ridge regression and GBLUP"},
   "CSLibExt/MachineLearning/Regression/LeastSquares": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Least squares, ridge and lasso regression"},
+  "CSLibExt/MachineLearning/Regression/MinimumNormInterpolation": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Implicit regularization of SGD in linear models"},
   "CSLibExt/MachineLearning/Regression/OptimalPredictors": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bayes estimators for squared and absolute loss"},
   "CSLibExt/MachineLearning/Sampling/GibbsSampling": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Markov chain Monte Carlo"},
   "CSLibExt/MachineLearning/Sampling/MCMCConvergence": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Markov chain Monte Carlo"},

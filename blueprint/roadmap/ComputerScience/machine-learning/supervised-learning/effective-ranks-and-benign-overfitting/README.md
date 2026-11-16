@@ -23,3 +23,4 @@ predicts nearly as well as the best linear predictor, and the elementary relatio
 
 - [Least squares, ridge and lasso regression](../least-squares-ridge-and-lasso-regression/README.md): the regression estimators whose interpolating limit is studied here.
 - [Bias–variance decomposition](../bias-variance-decomposition/README.md): the split of the excess risk into the two terms that Theorem 4 bounds separately.
+- [Implicit regularization of SGD in linear models](../implicit-regularization-of-sgd-in-linear-models/README.md): stochastic gradient descent from zero, when it converges to an interpolant, converges to the minimum-norm interpolant studied here.
