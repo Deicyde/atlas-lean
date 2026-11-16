@@ -1,6 +1,6 @@
 # Probability distributions
 
-Named discrete and continuous laws and their moments, densities, mass functions and tails (binomial, Poisson-binomial, hypergeometric, negative binomial, beta, gamma, exponential, chi-square, Dirichlet, multivariate Gaussian and Gaussian conditioning, Gaussian orthant probabilities), expectation under a probability mass function, joint laws, distribution functions, quantiles and medians; sampling laws used in tests (t, F) go to Linear models and multivariate analysis.
+Named discrete and continuous laws and their moments, densities, mass functions and tails (binomial, Poisson-binomial, hypergeometric, negative binomial, beta, gamma, exponential, Laplace, chi-square, Dirichlet, multivariate Gaussian and Gaussian conditioning, Gaussian orthant probabilities), expectation under a probability mass function, joint laws, distribution functions, quantiles and medians; sampling laws used in tests (t, F) go to Linear models and multivariate analysis.
 
 - [Beta distribution](beta-distribution/README.md)
 - [Binomial distribution](binomial-distribution/README.md)
@@ -14,6 +14,7 @@ Named discrete and continuous laws and their moments, densities, mass functions 
 - [Exponential distribution](exponential-distribution/README.md)
 - [Gaussian conditioning](gaussian-conditioning/README.md)
 - [Hypergeometric distribution](hypergeometric-distribution/README.md)
+- [Laplace distribution](laplace-distribution/README.md)
 - [Median of a distribution](median-of-a-distribution/README.md)
 - [Multinomial distribution](multinomial-distribution/README.md)
 - [Multivariate normal distribution](multivariate-normal-distribution/README.md)
