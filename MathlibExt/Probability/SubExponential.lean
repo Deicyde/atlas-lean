@@ -18,7 +18,7 @@ import Mathlib.Analysis.SpecificLimits.Normed
 Following Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint* (Cambridge
 University Press, 2019), §2.1.3, a real random variable `X` is **sub-exponential with parameters
 `(ν, α)`** when its moment generating function satisfies `E[exp (t X)] ≤ exp (ν² t² / 2)` for every
-`|t| < 1 / α` (Definition 2.7). Unlike a sub-Gaussian variable, the bound is only required on a
+`|t| < 1 / α`. Unlike a sub-Gaussian variable, the bound is only required on a
 neighbourhood of zero, which allows exponential rather than Gaussian tails. As in Mathlib's
 `ProbabilityTheory.HasSubgaussianMGF`, the definition concerns `X` itself: apply it to
 `X - E[X]` for the centred notion of the source. The interval of admissible `t` is written
@@ -31,17 +31,18 @@ neighbourhood of zero, which allows exponential rather than Gaussian tails. As i
   every `α`.
 * `HasSubexponentialMGF.measureReal_ge_le_of_le` and
   `HasSubexponentialMGF.measureReal_ge_le_of_ge`: the **sub-exponential tail bound** (Wainwright
-  2019, Proposition 2.9): `P(X ≥ t) ≤ exp (-t² / (2 ν²))` for `0 ≤ t ≤ ν² / α`, and
-  `P(X ≥ t) ≤ exp (-t / (2 α))` for `t ≥ ν² / α`.
+  2019, §2.1.3; Rinaldo 2017, Theorem 3.2): `P(X ≥ t) ≤ exp (-t² / (2 ν²))` for
+  `0 ≤ t ≤ ν² / α`, and `P(X ≥ t) ≤ exp (-t / (2 α))` for `t ≥ ν² / α`.
 * `HasSubexponentialMGF.sum_of_iIndepFun`: a finite sum of independent sub-exponential variables
   with parameters `(νᵢ, α)` is sub-exponential with parameters `(√(∑ νᵢ²), α)` (Wainwright 2019,
   §2.1.3, with a common `α`; Rinaldo 2017, Lemma 3.6).
 * `mgf_le_of_abs_le`: **Bernstein's moment generating function bound** for a bounded variable
-  (Wainwright 2019, Proposition 2.10, in the case `|X| ≤ b`, which satisfies the Bernstein
+  (Wainwright 2019, §2.1.3, and Rinaldo 2017, Theorem 3.4, in the case `|X| ≤ b`, which satisfies
+  the Bernstein
   condition with parameter `b`): if `|X| ≤ b`, `E[X] = 0` and `E[X²] ≤ σ²`, then
   `E[exp (t X)] ≤ exp (t² σ² / (2 (1 - b |t|)))` for `b |t| < 1`.
 * `measureReal_ge_le_bernstein` and `measureReal_abs_ge_le_bernstein`: **Bernstein's inequality**
-  for such a variable (Wainwright 2019, Proposition 2.10; Rinaldo 2017, Theorem 3.5):
+  for such a variable (Wainwright 2019, §2.1.3; Rinaldo 2017, Theorem 3.5):
   `P(X ≥ t) ≤ exp (-t² / (2 (σ² + b t)))` and `P(|X| ≥ t) ≤ 2 exp (-t² / (2 (σ² + b t)))` for
   `t ≥ 0`.
 
@@ -61,8 +62,9 @@ variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {μ : Measure Ω} {X : Ω → �
 
 /-- A real random variable `X` is **sub-exponential with parameters `(ν, α)`** under `μ` if for
 every `t` with `α |t| < 1` the function `exp (t X)` is integrable and
-`E[exp (t X)] ≤ exp (ν² t² / 2)` (Wainwright, *High-Dimensional Statistics*, 2019,
-Definition 2.7, for the variable `X` itself; apply it to `X - E[X]` for the centred notion).
+`E[exp (t X)] ≤ exp (ν² t² / 2)` (Wainwright, *High-Dimensional Statistics*, 2019, §2.1.3;
+Rinaldo 2017, Definition 3.1; for the variable `X` itself, apply it to `X - E[X]` for the centred
+notion).
 For `α = 0` the condition holds for all `t`, which is the sub-Gaussian condition with variance
 proxy `ν²`. -/
 structure HasSubexponentialMGF (X : Ω → ℝ) (ν α : ℝ≥0) (μ : Measure Ω) : Prop where
@@ -70,8 +72,8 @@ structure HasSubexponentialMGF (X : Ω → ℝ) (ν α : ℝ≥0) (μ : Measure 
   mgf_le : ∀ t : ℝ, α * |t| < 1 → mgf X μ t ≤ exp (ν ^ 2 * t ^ 2 / 2)
 
 /-- A sub-Gaussian variable with variance proxy `c` is sub-exponential with parameters
-`(√c, α)` for every `α` (Wainwright, *High-Dimensional Statistics*, 2019, remark after
-Definition 2.7: sub-Gaussian variables are sub-exponential). -/
+`(√c, α)` for every `α` (Wainwright, *High-Dimensional Statistics*, 2019, §2.1.3; Rinaldo 2017,
+remark after Definition 3.1: sub-Gaussian variables are sub-exponential). -/
 lemma HasSubgaussianMGF.hasSubexponentialMGF {c : ℝ≥0} (h : HasSubgaussianMGF X c μ)
     (α : ℝ≥0) : HasSubexponentialMGF X (NNReal.sqrt c) α μ where
   integrable_exp_mul t _ := h.integrable_exp_mul t
@@ -120,7 +122,7 @@ lemma measureReal_ge_le_exp [IsProbabilityMeasure μ] (h : HasSubexponentialMGF 
     _ = 1 := heq
 
 /-- **Sub-exponential tail bound, Gaussian regime** (Wainwright, *High-Dimensional Statistics*,
-2019, Proposition 2.9): if `X` is sub-exponential with parameters `(ν, α)` and
+2019, §2.1.3; Rinaldo 2017, Theorem 3.2): if `X` is sub-exponential with parameters `(ν, α)` and
 `0 ≤ t ≤ ν² / α` (with `t` arbitrary nonnegative when `α = 0`), then
 `P(X ≥ t) ≤ exp (-t² / (2 ν²))`. -/
 lemma measureReal_ge_le_of_le [IsProbabilityMeasure μ] (h : HasSubexponentialMGF X ν α μ)
@@ -136,7 +138,8 @@ lemma measureReal_ge_le_of_le [IsProbabilityMeasure μ] (h : HasSubexponentialMG
     exact measureReal_le_one
 
 /-- **Sub-exponential tail bound, exponential regime** (Wainwright, *High-Dimensional
-Statistics*, 2019, Proposition 2.9): if `X` is sub-exponential with parameters `(ν, α)`, `α > 0`
+Statistics*, 2019, §2.1.3; Rinaldo 2017, Theorem 3.2): if `X` is sub-exponential with parameters
+`(ν, α)`, `α > 0`
 and `t ≥ ν² / α`, then `P(X ≥ t) ≤ exp (-t / (2 α))`. -/
 lemma measureReal_ge_le_of_ge [IsProbabilityMeasure μ] (h : HasSubexponentialMGF X ν α μ)
     (hα : 0 < α) {t : ℝ} (htα : ν ^ 2 ≤ α * t) :
@@ -180,7 +183,7 @@ end HasSubexponentialMGF
 
 /-- The exponential series bound behind Bernstein's inequality: for `|y| < 1`,
 `exp y ≤ 1 + y + y² / (2 (1 - |y|))`, from `exp y = ∑ yⁿ / n!` and `n! ≥ 2` for `n ≥ 2`. -/
-lemma _root_.Real.exp_le_one_add_add_sq_div_of_abs_lt_one {y : ℝ} (hy : |y| < 1) :
+lemma exp_le_one_add_add_sq_div_of_abs_lt_one {y : ℝ} (hy : |y| < 1) :
     exp y ≤ 1 + y + y ^ 2 / (2 * (1 - |y|)) := by
   have hs := Real.summable_pow_div_factorial y
   have hexp : exp y = ∑' n : ℕ, y ^ n / n.factorial := by
@@ -216,8 +219,8 @@ lemma _root_.Real.exp_le_one_add_add_sq_div_of_abs_lt_one {y : ℝ} (hy : |y| < 
 variable [IsProbabilityMeasure μ]
 
 /-- **Bernstein's bound on the moment generating function of a bounded variable** (Wainwright,
-*High-Dimensional Statistics*, 2019, Proposition 2.10, in the case `|X| ≤ b`, for which the
-Bernstein condition holds with parameter `b`): if `|X| ≤ b` almost surely, `E[X] = 0` and
+*High-Dimensional Statistics*, 2019, §2.1.3; Rinaldo 2017, Theorem 3.4; in the case `|X| ≤ b`, for
+which the Bernstein condition holds with parameter `b`): if `|X| ≤ b` almost surely, `E[X] = 0` and
 `E[X²] ≤ σ²`, then for every `t` with `b |t| < 1`,
 `E[exp (t X)] ≤ exp (t² σ² / (2 (1 - b |t|)))`. -/
 theorem mgf_le_of_abs_le (hX : AEMeasurable X μ) {b σ t : ℝ}
@@ -279,8 +282,8 @@ theorem mgf_le_of_abs_le (hX : AEMeasurable X μ) {b σ t : ℝ}
         linarith [add_one_le_exp (t ^ 2 * σ ^ 2 / (2 * (1 - b * |t|)))]
 
 /-- **Bernstein's inequality** for a bounded variable, upper tail (Wainwright, *High-Dimensional
-Statistics*, 2019, Proposition 2.10, in the case `|X| ≤ b`): if `|X| ≤ b` almost surely with
-`b ≥ 0`, `E[X] = 0` and `E[X²] ≤ σ²`, then for every `t ≥ 0`,
+Statistics*, 2019, §2.1.3; Rinaldo 2017, Theorem 3.5; in the case `|X| ≤ b`): if `|X| ≤ b` almost
+surely with `b ≥ 0`, `E[X] = 0` and `E[X²] ≤ σ²`, then for every `t ≥ 0`,
 `P(X ≥ t) ≤ exp (-t² / (2 (σ² + b t)))`. -/
 theorem measureReal_ge_le_bernstein (hX : AEMeasurable X μ) {b σ t : ℝ} (hb0 : 0 ≤ b)
     (hb : ∀ᵐ ω ∂μ, |X ω| ≤ b) (hmean : μ[X] = 0) (hvar : ∫ ω, X ω ^ 2 ∂μ ≤ σ ^ 2)
@@ -333,7 +336,7 @@ theorem measureReal_ge_le_bernstein (hX : AEMeasurable X μ) {b σ t : ℝ} (hb0
     exact measureReal_le_one
 
 /-- **Bernstein's inequality** for a bounded variable, two-sided (Wainwright, *High-Dimensional
-Statistics*, 2019, Proposition 2.10, in the case `|X| ≤ b`): if `|X| ≤ b` almost
+Statistics*, 2019, §2.1.3; Rinaldo 2017, Theorem 3.5; in the case `|X| ≤ b`): if `|X| ≤ b` almost
 surely with `b ≥ 0`, `E[X] = 0` and `E[X²] ≤ σ²`, then for every `t ≥ 0`,
 `P(|X| ≥ t) ≤ 2 exp (-t² / (2 (σ² + b t)))`. -/
 theorem measureReal_abs_ge_le_bernstein (hX : AEMeasurable X μ) {b σ t : ℝ} (hb0 : 0 ≤ b)

@@ -37,7 +37,7 @@ variable {𝓧 : Type*} [MeasurableSpace 𝓧] {ι : Type*}
 
 /-- The uniform deviation `‖P_n - P‖_F = sup_{f ∈ F} |(1/n) ∑ₖ f(xₖ) - E_P[f]|` of the empirical
 means of a sample `x : Fin n → 𝓧` from their expectations under `P`, for a class
-`F = {F i | i : ι}` (Wainwright, *High-Dimensional Statistics*, 2019, §4.1). -/
+`F = {F i | i : ι}` (Wainwright, *High-Dimensional Statistics*, 2019, §4.1.2). -/
 noncomputable def uniformDeviation (P : Measure 𝓧) (F : ι → 𝓧 → ℝ) {n : ℕ} (x : Fin n → 𝓧) :
     ℝ :=
   ⨆ i, |(1 / (n : ℝ)) * ∑ k, F i (x k) - ∫ y, F i y ∂P|
@@ -51,8 +51,8 @@ noncomputable def rademacherComplexity (P : Measure 𝓧) (F : ι → 𝓧 → �
       ⨆ i, |(1 / (n : ℝ)) * ∑ k, (if s k then (1 : ℝ) else -1) * F i (x k)|
     ∂(Measure.pi fun _ : Fin n => P)
 
-/-- **Symmetrization** (Wainwright, *High-Dimensional Statistics*, 2019, Proposition 4.11, upper
-bound, with `Φ` the identity): for a countable class of measurable functions bounded by `b` and
+/-- **Symmetrization** (Wainwright, *High-Dimensional Statistics*, 2019, §4.2, the symmetrization
+step, upper bound in expectation): for a countable class of measurable functions bounded by `b` and
 `n ≥ 1` independent
 samples from a probability measure `P`, `E[‖P_n - P‖_F] ≤ 2 R_n(F)`. -/
 public theorem_wanted integral_uniformDeviation_le_two_mul_rademacherComplexity
@@ -62,7 +62,8 @@ public theorem_wanted integral_uniformDeviation_le_two_mul_rademacherComplexity
       2 * rademacherComplexity P F n
 
 /-- **Uniform law via Rademacher complexity** (Wainwright, *High-Dimensional Statistics*, 2019,
-Theorem 4.10): for a countable class of measurable functions with `|f| ≤ b`, every `n ≥ 1` and
+§4.2, the uniform law via Rademacher complexity): for a countable class of measurable functions
+with `|f| ≤ b`, every `n ≥ 1` and
 every `δ ≥ 0`, with probability at least `1 - exp (-n δ² / (2 b²))` over `n` independent samples
 from a probability measure `P`, `‖P_n - P‖_F ≤ 2 R_n(F) + δ`. -/
 public theorem_wanted uniformDeviation_le_two_mul_rademacherComplexity_add

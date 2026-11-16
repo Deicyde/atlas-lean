@@ -10,7 +10,8 @@ The bound does not depend on the dimension $n$.
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Theorem 2.26.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §2.3 (Lipschitz functions of Gaussian variables).
+- R. Vershynin, *Introduction to the non-asymptotic analysis of random matrices*, in *Compressed Sensing: Theory and Applications*, Cambridge University Press, 2012, arXiv:1011.3027, Proposition 5.34 (the one-sided tail bound).
 
 ## Background
 

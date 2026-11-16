@@ -25,7 +25,7 @@ Press, 2019), §7.3:
 * `cone S α` is the cone `C(S; α) = {Δ | ‖Δ_{Sᶜ}‖₁ ≤ α ‖Δ_S‖₁}` (Hastie et al. 2015, eq. (11.13)).
 * `RestrictedEigenvalue X S κ α` is the restricted eigenvalue condition with constant `κ > 0` over
   `C(S; α)`: `(1/n) ‖X Δ‖₂² ≥ κ ‖Δ‖₂²` for every `Δ ∈ C(S; α)` (Hastie et al. 2015, eq. (11.10);
-  Wainwright 2019, Definition 7.12).
+  Wainwright 2019, §7.3.1).
 * `lassoObjective X y lam θ = (1/(2n)) ‖y - X θ‖₂² + lam ‖θ‖₁` is the regularized (Lagrangian)
   Lasso objective (Hastie et al. 2015, eq. (11.3)).
 
@@ -36,16 +36,16 @@ Press, 2019), §7.3:
   `C(S; 3)` (Hastie et al. 2015, Lemma 11.1) and `(1/n) ‖X Δ‖₂² ≤ 3 lam ‖Δ_S‖₁`.
 * `lasso_l2_error_le`: under the restricted eigenvalue condition over `C(S; 3)`, any minimiser of
   the Lagrangian Lasso satisfies `‖θ̂ - θ*‖₂ ≤ (3 / κ) √s lam` (Hastie et al. 2015,
-  Theorem 11.1(b); Wainwright 2019, Theorem 7.13(a)).
+  Theorem 11.1(b); Wainwright 2019, §7.3.2).
 * `constrainedLasso_l2_error_le`: under the restricted eigenvalue condition over `C(S; 1)`, any
   minimiser of the constrained Lasso `min {(1/(2n)) ‖y - X θ‖₂² | ‖θ‖₁ ≤ ‖θ*‖₁}` satisfies
   `‖θ̂ - θ*‖₂ ≤ (4 / κ) √s ‖Xᵀ w / n‖_∞` (Hastie et al. 2015, Theorem 11.1(a), whose proof only
-  uses the cone `C(S; 1) ⊆ C(S; 3)`; Wainwright 2019, Theorem 7.13(b)).
+  uses the cone `C(S; 1) ⊆ C(S; 3)`; Wainwright 2019, §7.3.2).
 * `lasso_prediction_error_le_slow` and `lasso_prediction_error_le_fast`: the slow rate
   `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 12 R₁ lam` when `‖θ*‖₁ ≤ R₁`, with no condition on `X`, and the fast
   rate `≤ (9 / κ) |S| lam²` under the restricted eigenvalue condition over `C(S; 3)` (Hastie et
-  al. 2015, Theorem 11.2). `lasso_prediction_error_le_three` is the slow rate with the constant
-  `3 ‖θ*‖₁` that the argument gives.
+  al. 2015, Theorem 11.2). `lasso_prediction_error_le_three` sharpens the slow rate to
+  `3 lam ‖θ*‖₁`, by a variant of the source's argument proved here.
 
 The statements are deterministic: they hold for every realisation of the noise. Norms are written
 as explicit sums, `‖Δ‖₂ = √(∑ j, Δ j ^ 2)` and `‖Δ‖₁ = ∑ j, |Δ j|`, and the sup norm
@@ -70,7 +70,7 @@ def cone (S : Finset ι) (α : ℝ) : Set (ι → ℝ) :=
 /-- The restricted eigenvalue condition with parameters `(κ, α)` over `S` for a design matrix
 `X` with `n` rows: `κ > 0` and `(1/n) ‖X Δ‖₂² ≥ κ ‖Δ‖₂²` for every `Δ` in the cone `C(S; α)`
 (Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, eq. (11.10);
-Wainwright, *High-Dimensional Statistics*, 2019, Definition 7.12). -/
+Wainwright, *High-Dimensional Statistics*, 2019, §7.3.1). -/
 def RestrictedEigenvalue (X : Matrix (Fin n) ι ℝ) (S : Finset ι) (κ α : ℝ) : Prop :=
   0 < κ ∧ ∀ Δ ∈ cone S α, κ * ∑ j, Δ j ^ 2 ≤ (1 / n) * ∑ i, (X *ᵥ Δ) i ^ 2
 
@@ -191,7 +191,7 @@ theorem lasso_basic_inequality (X : Matrix (Fin n) ι ℝ) (S : Finset ι) (θs 
 
 /-- **ℓ₂-error bound for the Lagrangian Lasso** (Hastie, Tibshirani and Wainwright, *Statistical
 Learning with Sparsity*, 2015, Theorem 11.1(b); Wainwright, *High-Dimensional Statistics*, 2019,
-Theorem 7.13(a); after Bickel, Ritov and Tsybakov, Ann. Statist. 37 (2009)). Let `y = X θ* + w`
+§7.3.2; after Bickel, Ritov and Tsybakov, Ann. Statist. 37 (2009)). Let `y = X θ* + w`
 with `θ*` vanishing off a set `S` of `s` coordinates, suppose `X` satisfies the restricted
 eigenvalue condition with constant `κ` over `C(S; 3)`, and let `lam > 0` with
 `lam ≥ 2 ‖Xᵀ w / n‖_∞`. Then every minimiser `θ̂` of the Lagrangian Lasso objective satisfies
@@ -224,7 +224,7 @@ theorem lasso_l2_error_le (X : Matrix (Fin n) ι ℝ) (S : Finset ι) (θs θhat
 
 /-- **ℓ₂-error bound for the constrained Lasso** (Hastie, Tibshirani and Wainwright,
 *Statistical Learning with Sparsity*, 2015, Theorem 11.1(a); Wainwright, *High-Dimensional
-Statistics*, 2019, Theorem 7.13(b)). Let `y = X θ* + w` with `θ*` vanishing off a set `S` of `s`
+Statistics*, 2019, §7.3.2). Let `y = X θ* + w` with `θ*` vanishing off a set `S` of `s`
 coordinates, suppose `X` satisfies the restricted eigenvalue condition with constant `κ` over
 `C(S; 1)` (implied by the condition over `C(S; 3)` assumed in the first source), and
 let `ν` bound `‖Xᵀ w / n‖_∞`. Then every minimiser `θ̂` of `(1/(2n)) ‖y - X θ‖₂²` over the
@@ -291,12 +291,13 @@ theorem constrainedLasso_l2_error_le (X : Matrix (Fin n) ι ℝ) (S : Finset ι)
     nlinarith
 
 omit [DecidableEq ι] in
-/-- **Slow rate for the Lasso prediction error**, with the constant of the argument: let
-`y = X θ* + w`, let `lam ≥ 2 ‖Xᵀ w / n‖_∞` and let `θ̂` have Lagrangian Lasso objective at most
-that of `θ*`. Then `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 3 lam ‖θ*‖₁`. No sparsity or restricted eigenvalue
-condition is needed. The modified basic inequality and Hölder's inequality of Hastie,
-Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, proof of
-Theorem 11.2(a), give this constant directly; the source states `12`
+/-- **Slow rate for the Lasso prediction error, constant 3** (a sharpening proved here of
+Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, Theorem 11.2(a)):
+let `y = X θ* + w`, let `lam ≥ 2 ‖Xᵀ w / n‖_∞` and let `θ̂` have Lagrangian Lasso objective at
+most that of `θ*`. Then `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 3 lam ‖θ*‖₁`. No sparsity or restricted
+eigenvalue condition is needed. The proof uses the modified basic inequality (11.21) of the
+source, Hölder's inequality and the triangle inequality `‖Δ‖₁ ≤ ‖θ̂‖₁ + ‖θ*‖₁`. The source's
+proof first bounds `‖Δ‖₁ ≤ 4 ‖θ*‖₁` and obtains its stated constant `12`
 (`lasso_prediction_error_le_slow`). -/
 theorem lasso_prediction_error_le_three (X : Matrix (Fin n) ι ℝ) (θs θhat : ι → ℝ)
     (w : Fin n → ℝ) {lam : ℝ} (hnoise : ∀ j, |(Xᵀ *ᵥ w) j| / n ≤ lam / 2)

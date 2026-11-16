@@ -5,7 +5,7 @@ $S$ and more unknowns than equations. Basis pursuit, the linear program
 $\min\{\|\theta\|_1 : X\theta = y\}$, replaces the combinatorial search for the sparsest solution
 by a convex one. It recovers every vector supported on $S$ exactly if and only if the nullspace of
 $X$ meets the cone $\mathcal{C}(S; 1)$ only at $0$, the restricted nullspace property
-(Wainwright, *High-Dimensional Statistics*, 2019, §7.2; Hastie, Tibshirani and Wainwright,
+(Wainwright, *High-Dimensional Statistics*, 2019, §7.2.2; Hastie, Tibshirani and Wainwright,
 *Statistical Learning with Sparsity*, 2015, §10.4).
 
 - [Restricted nullspace property](restricted-nullspace.md)

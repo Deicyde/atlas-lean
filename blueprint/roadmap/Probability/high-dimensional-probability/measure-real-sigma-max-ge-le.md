@@ -11,7 +11,8 @@ Gordon's comparison inequality and the concentration of Lipschitz functions of G
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Theorem 6.1 (with $\Sigma = I$).
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §6.2 (Wishart matrices and their behavior), the case $\Sigma = I$.
+- R. Vershynin, *Introduction to the non-asymptotic analysis of random matrices*, in *Compressed Sensing: Theory and Applications*, Cambridge University Press, 2012, arXiv:1011.3027, Theorem 5.32 and Proposition 5.34, which give the bound with $t = \delta\sqrt{n}$; Corollary 5.35 states the two-sided version.
 
 ## Informally uses
 

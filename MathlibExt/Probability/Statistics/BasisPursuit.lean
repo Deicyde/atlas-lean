@@ -16,22 +16,23 @@ public import MathlibExt.Probability.Statistics.LassoRestrictedEigenvalue
 In noiseless sparse regression one observes `y = X θ*` with `θ*` supported on a set `S` and
 recovers `θ*` by **basis pursuit**, the linear program `min {‖θ‖₁ | X θ = y}`. Following
 Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint* (Cambridge University
-Press, 2019), §7.2, and Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*
+Press, 2019), §7.2.2, and Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*
 (CRC Press, 2015), §10.4.1:
 
 * `RestrictedNullspace X S`: the restricted nullspace property, `null(X) ∩ C(S; 1) = {0}`
-  (Wainwright 2019, §7.2.1; Hastie et al. 2015, Definition 10.1).
+  (Wainwright 2019, §7.2.2; Hastie et al. 2015, Definition 10.1).
 * `basisPursuit_unique_iff_restrictedNullspace`: basis pursuit recovers every vector supported
   on `S`, as its unique solution, if and only if `X` has the restricted nullspace property over
-  `S` (Wainwright 2019, Theorem 7.8).
+  `S` (Wainwright 2019, §7.2.2; Hastie et al. 2015, Theorem 10.1 with Exercise 10.4).
 
 "`θ*` is the unique solution of basis pursuit with `y = X θ*`" is written as: every `θ` with
 `X θ = X θ*` and `‖θ‖₁ ≤ ‖θ*‖₁` equals `θ*`.
 
-The equivalence is uniform over the vectors supported on `S`. For one fixed `θ*` the restricted
-nullspace property is sufficient but not necessary, even when `θ*` is also the unique sparsest
-solution; Hastie et al. 2015, Theorem 10.1, states the equivalence for a fixed `θ*`, and only
-its "if" direction holds in that form.
+The equivalence is uniform over the vectors supported on `S`. Hastie et al. 2015, Theorem 10.1,
+is stated for a fixed `θ*` that is the unique sparsest solution; read that way, only its "if"
+direction holds, and the test module checks a counterexample to the fixed-`θ*` reading of the
+converse. Hastie et al. 2015, Exercise 10.4, which proves the converse, assumes recovery of all
+vectors supported on `S`, which is the uniform statement formalized here.
 -/
 
 open Finset Matrix
@@ -46,13 +47,15 @@ variable {ι : Type*} [Fintype ι] [DecidableEq ι] {n : ℕ}
 
 /-- The restricted nullspace property of a design matrix `X` over a set `S` of coordinates: the
 only vector of the nullspace of `X` in the cone `C(S; 1) = {Δ | ‖Δ_{Sᶜ}‖₁ ≤ ‖Δ_S‖₁}` is `0`
-(Wainwright, *High-Dimensional Statistics*, 2019, §7.2.1; Hastie, Tibshirani and
+(Wainwright, *High-Dimensional Statistics*, 2019, §7.2.2; Hastie, Tibshirani and
 Wainwright, *Statistical Learning with Sparsity*, 2015, Definition 10.1). -/
 def RestrictedNullspace (X : Matrix (Fin n) ι ℝ) (S : Finset ι) : Prop :=
   ∀ Δ : ι → ℝ, X *ᵥ Δ = 0 → Δ ∈ cone S 1 → Δ = 0
 
-/-- **Exact recovery by basis pursuit** (Wainwright, *High-Dimensional Statistics*, 2019,
-Theorem 7.8): the following are equivalent for a design matrix `X` and a set `S` of coordinates.
+/-- **Exact recovery by basis pursuit** (Wainwright, *High-Dimensional Statistics*, 2019, §7.2.2;
+Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, Theorem 10.1, with
+the converse in the uniform form of Exercise 10.4): the following are equivalent for a design
+matrix `X` and a set `S` of coordinates.
 (a) For every `θ*` vanishing off `S`, `θ*` is the unique solution of basis pursuit
 `min {‖θ‖₁ | X θ = X θ*}`: every `θ` with `X θ = X θ*` and `‖θ‖₁ ≤ ‖θ*‖₁` equals `θ*`.
 (b) `X` satisfies the restricted nullspace property over `S`. -/

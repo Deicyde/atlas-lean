@@ -45,12 +45,11 @@ lemma not_restrictedNullspace : ¬ RestrictedNullspace X₀ S₀ := by
   simp [Δ] at h0
 
 /-- Yet basis pursuit recovers `θ* = (1, 1, 0, 0)`, supported on `S₀`, as its unique solution:
-the restricted nullspace property is necessary only for recovering *every* vector supported on
-`S₀` (Wainwright 2019, Theorem 7.8), not one fixed vector. This `θ*` is also the unique sparsest
-solution of `X₀ θ = X₀ θ*` (every other solution `(1 + 2a, 1 - 2a, a, a)`, `a ≠ 0`, has at least
-three nonzero coordinates), so it is a counterexample to the "only if" direction of Hastie,
-Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, Theorem 10.1, read for a
-fixed `θ*`. -/
+the restricted nullspace property is necessary for recovering *every* vector supported on `S₀`
+(Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, Exercise 10.4),
+not one fixed vector. This `θ*` is also the unique sparsest solution of `X₀ θ = X₀ θ*`
+(`sparsest_fixed`). Read for a fixed `θ*`, the converse in Theorem 10.1 of the same book would
+fail here; its Exercise 10.4 states the converse in the uniform form. -/
 lemma basisPursuit_unique_fixed :
     ∀ θ : Fin 4 → ℝ, X₀ *ᵥ θ = X₀ *ᵥ ![1, 1, 0, 0] →
       ∑ j, |θ j| ≤ ∑ j, |(![1, 1, 0, 0] : Fin 4 → ℝ) j| → θ = ![1, 1, 0, 0] := by
@@ -77,5 +76,41 @@ lemma basisPursuit_unique_fixed :
       linarith
   funext i
   fin_cases i <;> simp [h0, h1, h3, ha]
+
+/-- Every solution of `X₀ θ = X₀ θ*` other than `θ* = (1, 1, 0, 0)` has at least three nonzero
+coordinates, so `θ*`, with two, is the unique sparsest solution. -/
+lemma sparsest_fixed (θ : Fin 4 → ℝ) (hX : X₀ *ᵥ θ = X₀ *ᵥ ![1, 1, 0, 0])
+    (hne : θ ≠ ![1, 1, 0, 0]) :
+    3 ≤ (Finset.univ.filter fun j => θ j ≠ 0).card := by
+  have e0 := congrFun hX 0
+  have e1 := congrFun hX 1
+  have e2 := congrFun hX 2
+  simp [X₀, mulVec, dotProduct, Fin.sum_univ_four] at e0 e1 e2
+  have h3 : θ 2 = θ 3 := by linarith
+  have h0 : θ 0 = 1 + 2 * θ 3 := by linarith
+  have h1 : θ 1 = 1 - 2 * θ 3 := by linarith
+  have ha : θ 3 ≠ 0 := by
+    intro ha
+    apply hne
+    funext i
+    fin_cases i <;> simp [h0, h1, h3, ha]
+  -- Coordinates `2` and `3` are nonzero, and `θ 0`, `θ 1` cannot both vanish.
+  have hsub : ∀ k : Fin 4, k ∈ ({2, 3} : Finset (Fin 4)) →
+      k ∈ Finset.univ.filter fun j => θ j ≠ 0 := by
+    intro k hk
+    simp only [Finset.mem_insert, Finset.mem_singleton] at hk
+    rcases hk with rfl | rfl <;> simp [h3, ha]
+  by_cases hz : θ 0 = 0
+  · have h1z : θ 1 ≠ 0 := by intro h; linarith
+    have : ({1, 2, 3} : Finset (Fin 4)) ⊆ Finset.univ.filter fun j => θ j ≠ 0 := by
+      intro k hk
+      simp only [Finset.mem_insert, Finset.mem_singleton] at hk
+      rcases hk with rfl | rfl | rfl <;> simp [h1z, h3, ha]
+    simpa using Finset.card_le_card this
+  · have : ({0, 2, 3} : Finset (Fin 4)) ⊆ Finset.univ.filter fun j => θ j ≠ 0 := by
+      intro k hk
+      simp only [Finset.mem_insert, Finset.mem_singleton] at hk
+      rcases hk with rfl | rfl | rfl <;> simp [hz, h3, ha]
+    simpa using Finset.card_le_card this
 
 end MathlibExtTest.Probability.Statistics.BasisPursuit

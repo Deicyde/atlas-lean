@@ -9,4 +9,4 @@ collects the vectors whose $\ell_1$ mass off $S$ is at most $\alpha$ times their
 ## Sources
 
 - T. Hastie, R. Tibshirani and M. J. Wainwright, *Statistical Learning with Sparsity: The Lasso and Generalizations*, CRC Press, 2015: <https://hastie.su.domains/StatLearnSparsity/>, eq. (11.13).
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §7.2–7.3.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §7.2.2 and §7.3.1.

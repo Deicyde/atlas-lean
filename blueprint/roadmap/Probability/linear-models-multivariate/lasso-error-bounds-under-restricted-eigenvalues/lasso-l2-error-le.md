@@ -16,7 +16,7 @@ Wainwright and Yu 2011).
 
 - T. Hastie, R. Tibshirani and M. J. Wainwright, *Statistical Learning with Sparsity: The Lasso and Generalizations*, CRC Press, 2015: <https://hastie.su.domains/StatLearnSparsity/>, Theorem 11.1(b) and Example 11.1.
 - G. Raskutti, M. J. Wainwright and B. Yu, *Minimax rates of estimation for high-dimensional linear regression over ℓq-balls*, IEEE Trans. Inform. Theory 57 (2011), 6976–6994, arXiv:0910.2042.
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Theorem 7.13(a).
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §7.3.2 (bounds on ℓ2-error for hard sparse models).
 - P. J. Bickel, Y. Ritov and A. B. Tsybakov, *Simultaneous analysis of Lasso and Dantzig selector*, Ann. Statist. 37 (2009), 1705–1732.
 
 ## Background

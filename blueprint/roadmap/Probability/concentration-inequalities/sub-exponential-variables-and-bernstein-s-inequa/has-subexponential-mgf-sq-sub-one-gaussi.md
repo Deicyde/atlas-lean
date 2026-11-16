@@ -7,7 +7,7 @@ $$\mathbb{E}\big[e^{t(Z^2 - 1)}\big] = \frac{e^{-t}}{\sqrt{1 - 2t}} \le e^{4t^2/
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Example 2.8.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §2.1.3 (sub-exponential variables and Bernstein bounds), the χ² example.
 
 ## Background
 

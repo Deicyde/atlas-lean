@@ -7,5 +7,5 @@ $$\mu(|X| \ge t) \le 2\exp\Big(-\frac{t^2}{2(\sigma^2 + bt)}\Big).$$
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Proposition 2.10.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §2.1.3 (Bernstein bounds).
 - A. Rinaldo, *36-755 Advanced Statistics Theory I*, Lecture 3, Carnegie Mellon University, 2017: <https://www.stat.cmu.edu/~arinaldo/Teaching/36755/F17/Scribed_Lectures/F17_0911.pdf>, Theorem 3.5.

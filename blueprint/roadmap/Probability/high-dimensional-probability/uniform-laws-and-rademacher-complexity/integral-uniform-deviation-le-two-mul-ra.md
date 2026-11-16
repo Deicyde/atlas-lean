@@ -11,7 +11,7 @@ $\Phi(t) = t$. Countability makes the suprema measurable.
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, Proposition 4.11.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §4.2 (a uniform law via Rademacher complexity), the symmetrization step.
 
 ## Informally uses
 

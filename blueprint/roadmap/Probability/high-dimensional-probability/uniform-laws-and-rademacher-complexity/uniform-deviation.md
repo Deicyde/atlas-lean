@@ -7,4 +7,4 @@ $$\|P_n - P\|_{\mathcal{F}} = \sup_{i \in I} \Big|\frac1n \sum_{k=1}^n f_i(x_k) 
 
 ## Sources
 
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §4.1.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §4.1.2 (uniform laws for more general function classes).

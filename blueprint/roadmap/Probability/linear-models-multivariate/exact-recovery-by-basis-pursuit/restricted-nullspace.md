@@ -11,7 +11,7 @@ The restricted eigenvalue condition over $\mathcal{C}(S; 1)$ implies it.
 ## Sources
 
 - T. Hastie, R. Tibshirani and M. J. Wainwright, *Statistical Learning with Sparsity: The Lasso and Generalizations*, CRC Press, 2015: <https://hastie.su.domains/StatLearnSparsity/>, Definition 10.1.
-- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §7.2.1.
+- M. J. Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University Press, 2019, §7.2.2 (exact recovery and restricted nullspace).
 
 ## Background
 

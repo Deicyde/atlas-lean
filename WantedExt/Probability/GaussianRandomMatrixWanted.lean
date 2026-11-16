@@ -19,7 +19,8 @@ public import Mathlib.Data.Matrix.Mul
 For an `n × d` matrix `X` with independent standard normal entries, the largest singular value
 satisfies `σ_max(X) ≤ √n (1 + δ) + √d` with probability at least `1 - exp (-n δ² / 2)`
 (Wainwright, *High-Dimensional Statistics: A Non-Asymptotic Viewpoint*, Cambridge University
-Press, 2019, Theorem 6.1 with `Σ = I`). It is the basic estimate behind
+Press, 2019, §6.2, with `Σ = I`; R. Vershynin, arXiv:1011.3027, Theorem 5.32 and
+Proposition 5.34 with `t = δ √n`). It is the basic estimate behind
 covariance estimation and the restricted eigenvalue property of Gaussian designs. The proof uses
 Gordon's comparison inequality and Gaussian Lipschitz concentration, neither formalized here.
 
@@ -34,7 +35,8 @@ namespace MathlibExt.Probability.GaussianRandomMatrixWanted
 @[expose] public section
 
 /-- **Largest singular value of a standard Gaussian matrix** (Wainwright, *High-Dimensional
-Statistics*, 2019, Theorem 6.1 with `Σ = I`): if `X` is an `n × d` matrix with independent
+Statistics*, 2019, §6.2, with `Σ = I`; Vershynin, arXiv:1011.3027, Theorem 5.32 and
+Proposition 5.34): if `X` is an `n × d` matrix with independent
 `N(0, 1)` entries and `δ ≥ 0`, then
 `P(σ_max(X) ≥ √n (1 + δ) + √d) ≤ exp (-n δ² / 2)`. -/
 public theorem_wanted measureReal_sigmaMax_ge_le (n d : ℕ) {δ : ℝ} (hδ : 0 ≤ δ) :
