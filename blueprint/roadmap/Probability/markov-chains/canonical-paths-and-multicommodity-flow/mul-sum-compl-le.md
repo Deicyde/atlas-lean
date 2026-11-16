@@ -1,6 +1,7 @@
-# Theorem 3′ for flows: `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)`
+# Inequality (13) for flows (hence Theorem 3′)
 
-**Theorem 3′ for flows: `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)`** (A. Sinclair, *Combin. Probab. Comput.*
-1 (1992), Theorem 3′ and inequality (13)). If every edge carries at most
-`ρ · π(u) P(u, v)` units of a flow `F`, then for every set `A` of states
-`π(A) π(Aᶜ) ≤ ρ ∑_{u ∈ A, v ∉ A} π(u) P(u, v)`.
+If every oriented edge carries at most $\rho\,\pi(u)P(u,v)$ units of a [multicommodity flow](multicommodity-flow.md), then for every set $A$ of states
+
+$$\pi(A)\,\pi(A^c) \;\le\; \rho \sum_{u \in A,\ v \notin A} \pi(u)P(u,v).$$
+
+This is inequality (13) of A. Sinclair, *Improved bounds for mixing rates of Markov chains and multicommodity flow*, Combinatorics, Probability and Computing 1 (1992), 351–370, which he proves for flows: the $\pi(A)\pi(A^c)$ units sent from $A$ to its complement all cross the cut. It implies his Theorem 3′, $\Phi \ge 1/(2\rho(f))$, stated set by set in [Sinclair's Theorem 3′](sum-le-two-mul.md).

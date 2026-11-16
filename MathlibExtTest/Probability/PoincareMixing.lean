@@ -82,8 +82,4 @@ example : IsMixedAt ((1 / 2 : ℝ) • (1 + K₂)) unif 2 :=
   isMixedAt_of_poincare unif_pos unif_sum K₂_stoch K₂_rev (by norm_num) poincare_lazy
     (fun x => by norm_num [unif])
 
-/-- Jensen's inequality for squares. -/
-example (g : Fin 2 → ℝ) : (∑ x, unif x * g x) ^ 2 ≤ ∑ x, unif x * g x ^ 2 :=
-  sq_sum_mul_le unif g (fun x => (unif_pos x).le) unif_sum
-
 end MathlibExtTest.Probability.PoincareMixing

@@ -128,6 +128,15 @@ example : (∑ x ∈ ({0} : Finset (Fin 2)), unif x) * (∑ y ∈ ({0} : Finset 
       unif u * P₂ u v :=
   directFlow.mul_sum_compl_le directFlow_load _
 
+/-- Theorem 3′ for the direct flow on `A = {0}`: `π(A) = 1/2 ≤ 2 · 1 · Q(A, Aᶜ) = 1/2`. -/
+example : ∑ x ∈ ({0} : Finset (Fin 2)), unif x ≤
+    2 * (1 * ∑ u ∈ ({0} : Finset (Fin 2)), ∑ v ∈ ({0} : Finset (Fin 2))ᶜ, unif u * P₂ u v) :=
+  directFlow.sum_le_two_mul (fun x => (unif_pos x).le) unif_sum
+    (fun u v => by
+      fin_cases u <;> fin_cases v <;>
+        norm_num [MulticommodityFlow.load, directFlow, pathEdges, unif, P₂, Fin.sum_univ_two])
+    _ (by norm_num [unif])
+
 /-- The conductance hypothesis of the wanted chain Cheeger inequality holds with `Φ = 1/2`. -/
 example : ∀ A : Finset (Fin 2), 0 < ∑ x ∈ A, unif x → ∑ x ∈ A, unif x ≤ 1 / 2 →
     1 / 2 * ∑ x ∈ A, unif x ≤ ∑ u ∈ A, ∑ v ∈ Aᶜ, unif u * P₂ u v := by

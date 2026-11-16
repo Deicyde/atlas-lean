@@ -23,9 +23,13 @@ Two results of the Jerrum–Sinclair theory of reversible Markov chains whose pr
 * `le_one_sub_sq_div_two_of_eigenvector`: **the upper bound of Cheeger's inequality for
   reversible chains**, `λ₁ ≤ 1 - Φ²/2` (Sinclair–Jerrum, Lemma 3.3).
 
-Together with Sinclair's Theorem 5 (`MathlibExt.Probability.CanonicalPaths`) these say that a
-reversible chain mixes rapidly if and only if it supports a flow of low congestion, if and only
-if its conductance is at least an inverse polynomial.
+Sinclair concludes from these, with Theorems 3, 5 and 5′ (proved in
+`MathlibExt.Probability.CanonicalPaths` and `MathlibExt.Probability.MulticommodityFlow`), that a
+reversible chain mixes rapidly if and only if it supports a flow of polynomially bounded
+congestion, if and only if its conductance is at least an inverse polynomial. That equivalence
+rests on the two statements here, which are not yet proved, and holds with his caveats: the gap
+controls mixing only once the smallest eigenvalue is handled (for instance by making the chain
+lazy), and only when `π(x)` is not exponentially small.
 
 ## References
 
@@ -40,7 +44,7 @@ if its conductance is at least an inverse polynomial.
 
 open Finset Matrix
 open MathlibExt.Probability.CanonicalPaths MathlibExt.Probability.MarkovMixing
-open MathlibExt.Probability.Flows
+open MathlibExt.Probability.Flows ProbabilityTheory
 
 namespace MathlibExt.Probability.MulticommodityFlowWanted
 
@@ -53,7 +57,7 @@ simple paths of the chain, puts at most `16 τ · π(u) P(u, v)` on every orient
 theorem_wanted exists_multicommodityFlow_load_le_sixteen_mul {S : Type*} [Fintype S]
     [DecidableEq S] {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
     {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {τ : ℕ}
+    (hrev : IsDetailedBalance π P) {τ : ℕ}
     (hτ : ∀ x, ∀ t, τ ≤ t → tvDist (fun y => (P ^ t) x y) π ≤ 1 / 4) :
     ∃ F : MulticommodityFlow π P, ∀ u v, F.load u v ≤ 16 * τ * (π u * P u v)
 
@@ -66,7 +70,7 @@ eigenvalue `μ ≠ 1` of `P` satisfies `μ ≤ 1 - Φ²/2`. -/
 theorem_wanted le_one_sub_sq_div_two_of_eigenvector {S : Type*} [Fintype S] [DecidableEq S]
     {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
     {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {Φ : ℝ} (hΦ0 : 0 ≤ Φ)
+    (hrev : IsDetailedBalance π P) {Φ : ℝ} (hΦ0 : 0 ≤ Φ)
     (hΦ : ∀ A : Finset S, 0 < ∑ x ∈ A, π x → ∑ x ∈ A, π x ≤ 1 / 2 →
       Φ * ∑ x ∈ A, π x ≤ ∑ u ∈ A, ∑ v ∈ Aᶜ, π u * P u v)
     {μ : ℝ} {f : S → ℝ} (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :

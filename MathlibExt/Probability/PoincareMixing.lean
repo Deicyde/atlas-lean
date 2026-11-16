@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.Probability.MarkovMixing
 public import Mathlib.LinearAlgebra.Matrix.Stochastic
+public import MathlibExt.Probability.Process.ContinuousTimeMarkovChain.Stationary
 
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
@@ -49,7 +50,7 @@ Let `K` be a stochastic matrix reversible with respect to a probability vector `
 
 @[expose] public section
 
-open Finset Matrix
+open Finset Matrix ProbabilityTheory
 open MathlibExt.Probability.MarkovMixing
 
 namespace MathlibExt.Probability.PoincareMixing
@@ -57,9 +58,9 @@ namespace MathlibExt.Probability.PoincareMixing
 variable {S : Type*} [Fintype S] [DecidableEq S]
 
 omit [DecidableEq S] in
-/-- **Jensen's inequality for squares.** For weights `w ≥ 0` summing to `1`,
-`(∑ w(x) g(x))² ≤ ∑ w(x) g(x)²`. -/
-theorem sq_sum_mul_le (w g : S → ℝ) (hw : ∀ x, 0 ≤ w x) (hw1 : ∑ x, w x = 1) :
+-- Jensen's inequality for squares: for weights `w ≥ 0` summing to `1`,
+-- `(∑ w(x) g(x))² ≤ ∑ w(x) g(x)²`.
+private theorem sq_sum_mul_le (w g : S → ℝ) (hw : ∀ x, 0 ≤ w x) (hw1 : ∑ x, w x = 1) :
     (∑ x, w x * g x) ^ 2 ≤ ∑ x, w x * g x ^ 2 := by
   set m := ∑ x, w x * g x with hm
   have h0 : 0 ≤ ∑ x, w x * (g x - m) ^ 2 :=
@@ -77,7 +78,7 @@ balance with respect to `π`, then for every `g`,
 (the identity behind the variational characterisation (5) of A. Sinclair, *Combin. Probab.
 Comput.* 1 (1992)). -/
 theorem sum_mul_sub_mulVec_eq {π : S → ℝ} {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (g : S → ℝ) :
+    (hrev : IsDetailedBalance π P) (g : S → ℝ) :
     ∑ x, π x * g x * (g x - (P *ᵥ g) x) =
       1 / 2 * ∑ x, ∑ y, (g x - g y) ^ 2 * (π x * P x y) := by
   have e : ∀ x y, (g x - g y) ^ 2 * (π x * P x y) =
@@ -101,7 +102,7 @@ theorem sum_mul_sub_mulVec_eq {π : S → ℝ} {P : Matrix S S ℝ} (hrow : ∀ 
 satisfies detailed balance with respect to `π ≥ 0`, then `∑ π (K g)² ≤ ∑ π g²` for every `g`
 (each `(K g)(x)²` is at most `∑_y K(x, y) g(y)²`, and `π` is stationary). -/
 theorem sum_mul_sq_mulVec_le {π : S → ℝ} (hπ : ∀ x, 0 ≤ π x) {K : Matrix S S ℝ}
-    (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x) (g : S → ℝ) :
+    (hK : K ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π K) (g : S → ℝ) :
     ∑ x, π x * (K *ᵥ g) x ^ 2 ≤ ∑ x, π x * g x ^ 2 := by
   have hpt : ∀ x, (K *ᵥ g) x ^ 2 ≤ ∑ y, K x y * g y ^ 2 := fun x =>
     sq_sum_mul_le (K x) g (fun _ => nonneg_of_mem_rowStochastic hK)
@@ -120,9 +121,8 @@ theorem sum_mul_sq_mulVec_le {π : S → ℝ} (hπ : ∀ x, 0 ≤ π x) {K : Mat
 is stochastic and satisfies detailed balance with respect to `π`, so does `(I + K)/2`
 (A. Sinclair and M. Jerrum, *Inform. and Comput.* 82 (1989), Proposition 3.2). -/
 theorem lazy_mem_rowStochastic_and_detailedBalance {π : S → ℝ} {K : Matrix S S ℝ}
-    (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x) :
-    (1 / 2 : ℝ) • (1 + K) ∈ rowStochastic ℝ S ∧
-      ∀ x y, π x * ((1 / 2 : ℝ) • (1 + K)) x y = π y * ((1 / 2 : ℝ) • (1 + K)) y x := by
+    (hK : K ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π K) :
+    (1 / 2 : ℝ) • (1 + K) ∈ rowStochastic ℝ S ∧ IsDetailedBalance π ((1 / 2 : ℝ) • (1 + K)) := by
   have hentry : ∀ i j, ((1 / 2 : ℝ) • (1 + K)) i j = (if i = j then 1 else 0) / 2 + K i j / 2 := by
     intro i j
     rw [Matrix.smul_apply, Matrix.add_apply, Matrix.one_apply, smul_eq_mul]; ring
@@ -143,12 +143,14 @@ theorem lazy_mem_rowStochastic_and_detailedBalance {π : S → ℝ} {K : Matrix 
 /-- **A Poincaré inequality makes a lazy reversible chain contract mean-zero functions.** Let `K`
 be stochastic and reversible with respect to a probability vector `π > 0`, `P = (I + K)/2`, and
 suppose `∑_{x,y} (ψ x - ψ y)² π(x) π(y) ≤ B ∑_{x,y} (ψ x - ψ y)² π(x) P(x, y)` for all `ψ`, with
-`B > 0`. Then every `g` with `∑ π g = 0` satisfies `∑ π (P g)² ≤ (1 - 1/B) ∑ π g²`. This is the
-`L²` form of `λ_max ≤ 1 - 1/B` for the lazy chain, whose eigenvalues are nonnegative
-(A. Sinclair and M. Jerrum, *Inform. and Comput.* 82 (1989), Proposition 3.2), the input that
-A. Sinclair, *Combin. Probab. Comput.* 1 (1992), Proposition 1(i), turns into a mixing time. -/
+`B > 0`. Then every `g` with `∑ π g = 0` satisfies `∑ π (P g)² ≤ (1 - 1/B) ∑ π g²`, proved
+without eigenvalues. This is weaker than the spectral statement: the bound `λ_max ≤ 1 - 1/B` for
+the lazy chain (whose eigenvalues are nonnegative, A. Sinclair and M. Jerrum, *Inform. and
+Comput.* 82 (1989), Proposition 3.2) would give the factor `(1 - 1/B)²` here. It still suffices
+for a mixing bound of the kind of A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
+Proposition 1(i), with `B` in place of `(1 - λ_max)⁻¹` up to a factor `2`. -/
 theorem sum_mul_sq_mulVec_le_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
-    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x)
+    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π K)
     {B : ℝ} (hB : 0 < B)
     (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
       B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * ((1 / 2 : ℝ) • (1 + K)) x y))
@@ -204,7 +206,7 @@ It is an `L²` counterpart of A. Sinclair, *Combin. Probab. Comput.* 1 (1992), P
 Section 2 and Sinclair–Jerrum (1989), Proposition 3.2: the density `Pᵗ(x, ·)/π - 1` has
 `π`-mean zero and is contracted by `P` at each step. -/
 theorem sq_two_mul_tvDist_pow_le {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
-    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x)
+    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π K)
     {B : ℝ} (hB : 1 ≤ B)
     (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
       B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * ((1 / 2 : ℝ) • (1 + K)) x y))
@@ -282,7 +284,7 @@ chain `(I + K)/2` is `1/4`-mixed at time `t` (`MarkovMixing.IsMixedAt`). With th
 bound `B = ρ̄` this is how Sinclair obtains mixing times from paths (A. Sinclair, *Combin.
 Probab. Comput.* 1 (1992), Proposition 1(i) and Theorem 5). -/
 theorem isMixedAt_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
-    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * K x y = π y * K y x)
+    {K : Matrix S S ℝ} (hK : K ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π K)
     {B : ℝ} (hB : 1 ≤ B)
     (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
       B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * ((1 / 2 : ℝ) • (1 + K)) x y))

@@ -11,7 +11,6 @@
 - [A stochastic matrix contracts total variation](tv-dist-vec-mul-le.md)
 - [The distance to stationarity does not increase](tv-dist-pow-succ-le.md)
 - [Being `1/4`-mixed persists](is-mixed-at-mono.md)
-- [Jensen's inequality for squares](sq-sum-mul-le.md)
 - [The Dirichlet form of a reversible matrix](sum-mul-sub-mul-vec-eq.md)
 - [A reversible stochastic matrix is a contraction of `L²(π)`](sum-mul-sq-mul-vec-le.md)
 - [The lazy version of a reversible stochastic matrix is reversible and stochastic](lazy-mem-row-stochastic-and-detailed-bal.md)

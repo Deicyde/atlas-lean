@@ -12,6 +12,7 @@ public import Mathlib.Algebra.BigOperators.Fin
 public import Mathlib.Algebra.Order.Chebyshev
 public import Mathlib.Data.Matrix.Mul
 public import Mathlib.Basic.Real.Basic
+public import MathlibExt.Probability.Process.ContinuousTimeMarkovChain.Stationary
 
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
@@ -61,6 +62,9 @@ paths only use transitions of positive probability, `ρ(Γ)` (resp. `ρ̄(Γ)`) 
   `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)` (Sinclair 1992, inequality (13)), hence
   `π(A) ≤ 2 ρ Q(A, Aᶜ)` when `π(A) ≤ 1/2`, which is **Theorem 3**: `Φ ≥ 1/(2ρ)`.
 
+Detailed balance is the repository's `ProbabilityTheory.IsDetailedBalance π P`
+(`π x * P x y = π y * P y x` for all `x, y`).
+
 ## References
 
 * A. Sinclair, "Improved bounds for mixing rates of Markov chains and multicommodity flow",
@@ -72,7 +76,7 @@ paths only use transitions of positive probability, `ρ(Γ)` (resp. `ρ̄(Γ)`) 
 
 @[expose] public section
 
-open Finset Matrix
+open Finset Matrix ProbabilityTheory
 
 namespace MathlibExt.Probability.CanonicalPaths
 
@@ -245,7 +249,7 @@ Comput.* 1 (1992), proof of Theorem 5, that inserts an eigenvector into the vari
 characterisation (5): the two sides are `2 ∑ π f²` and `2 (1 - μ) ∑ π f²`. -/
 theorem one_le_mul_one_sub_of_poincare_of_mean_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hrev : IsDetailedBalance π P) {B : ℝ}
     (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
       B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hmean : ∑ x, π x * f x = 0) :
@@ -294,7 +298,7 @@ of `P` whose eigenvalue `μ` is not `1` satisfies `∑ π(x) f(x) = 0`: it is or
 constants in the `π`-weighted inner product, as used in A. Sinclair, *Combin. Probab. Comput.* 1
 (1992), proof of Theorem 5. -/
 theorem sum_mul_eq_zero_of_eigenvector {π : S → ℝ} {P : Matrix S S ℝ}
-    (hrow : ∀ x, ∑ y, P x y = 1) (hrev : ∀ x y, π x * P x y = π y * P y x) {μ : ℝ}
+    (hrow : ∀ x, ∑ y, P x y = 1) (hrev : IsDetailedBalance π P) {μ : ℝ}
     {f : S → ℝ} (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) : ∑ x, π x * f x = 0 := by
   -- `π` is stationary, so `∑ π (P f) = ∑ π f`, while `P f = μ f`.
   have hstat : ∑ x, π x * (P *ᵥ f) x = ∑ y, π y * f y := by
@@ -323,7 +327,7 @@ real eigenvalue `μ ≠ 1` of `P` satisfies `1 ≤ B (1 - μ)`. This is how A. S
 Probab. Comput.* 1 (1992), proves Theorems 5 and 5′ from the variational characterisation (5). -/
 theorem one_le_mul_one_sub_of_poincare {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hrev : IsDetailedBalance π P) {B : ℝ}
     (hpoin : ∀ ψ : S → ℝ, ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * π y) ≤
       B * ∑ x, ∑ y, (ψ x - ψ y) ^ 2 * (π x * P x y)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
@@ -338,7 +342,7 @@ of `P` with eigenvalue `μ` and `π`-mean zero (`∑ π(x) f(x) = 0`) satisfies 
 shows that such a path system forces the eigenvalue `1` to be simple. -/
 theorem one_le_mul_one_sub_of_eigenvector_of_mean_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hrev : IsDetailedBalance π P) (γ : S → S → List S)
     (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
     (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hmean : ∑ x, π x * f x = 0) :
@@ -354,7 +358,7 @@ by `B · π(u) P(u, v)` (`B = ρ̄(Γ)`). Then every real eigenvalue `μ ≠ 1` 
 `1 ≤ B (1 - μ)`: the spectral gap is at least `1/ρ̄(Γ)`. -/
 theorem one_le_mul_one_sub_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hrev : IsDetailedBalance π P) (γ : S → S → List S)
     (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ}
     (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
@@ -367,7 +371,7 @@ Theorem 5): with the hypotheses of `one_le_mul_one_sub_of_eigenvector` and `0 < 
 eigenvalue `μ ≠ 1` of `P` satisfies `μ ≤ 1 - 1/B`. -/
 theorem le_one_sub_inv_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hrev : IsDetailedBalance π P) (γ : S → S → List S)
     (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {B : ℝ} (hB0 : 0 < B)
     (hB : ∀ u v, elongatedPathLoad π γ u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
@@ -397,7 +401,7 @@ path has at most `ℓ` edges and every edge load is at most `ρ · π(u) P(u, v)
 then every real eigenvalue `μ ≠ 1` of `P` satisfies `μ ≤ 1 - 1/(ρ ℓ)`. -/
 theorem le_one_sub_inv_mul_of_eigenvector {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (γ : S → S → List S)
+    (hrev : IsDetailedBalance π P) (γ : S → S → List S)
     (hγ : ∀ x y, x ≠ y → pathEnd x (γ x y) = y) {ℓ : ℕ}
     (hℓ : ∀ x y, x ≠ y → (γ x y).length ≤ ℓ) {ρ : ℝ} (hρℓ : 0 < ρ * ℓ)
     (hρ : ∀ u v, pathLoad π γ u v ≤ ρ * (π u * P u v)) {μ : ℝ} {f : S → ℝ}

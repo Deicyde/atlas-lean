@@ -33,8 +33,10 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
 * `MulticommodityFlow.elongatedLoad`, `MulticommodityFlow.sum_sq_sub_mul_le_of_elongatedLoad_le`
   and `MulticommodityFlow.one_le_mul_one_sub_of_eigenvector`: the length-weighted load, the flow
   Poincaré inequality and **Theorem 5′**, `λ₁ ≤ 1 - 1/ρ̄(f)`.
-* `MulticommodityFlow.mul_sum_compl_le`: **Theorem 3′ / inequality (13) for flows**,
-  `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)` whenever every load is at most `ρ · Q`.
+* `MulticommodityFlow.mul_sum_compl_le`: **inequality (13) for flows**,
+  `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)` whenever every load is at most `ρ · Q`;
+  `MulticommodityFlow.sum_le_two_mul` derives **Theorem 3′**, `π(A) ≤ 2 ρ Q(A, Aᶜ)` when
+  `π(A) ≤ 1/2`.
 * `pow_detailedBalance`: detailed balance passes to every power `Pⁿ`.
 * `div_eight_le_pow_apply`: **Sinclair's Lemma 7**. If `P` is stochastic and reversible with
   respect to a positive probability vector `π`, and every row of `Pᵗ` is within total variation
@@ -43,6 +45,10 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
   `WantedExt.Probability.MulticommodityFlowWanted`.
 * `div_eight_le_pow_apply_of_isMixedAt`: Lemma 7 from `IsMixedAt P π τ`, using
   `PoincareMixing.isMixedAt_mono` (being `1/4`-mixed persists).
+
+The declarations live in the namespace `MathlibExt.Probability.Flows` rather than one mirroring
+the module name, so that the structure is not called `…MulticommodityFlow.MulticommodityFlow`.
+Detailed balance is the repository's `ProbabilityTheory.IsDetailedBalance π P`.
 
 ## References
 
@@ -55,7 +61,7 @@ flow has every load at most `ρ` times the edge capacity `Q(u, v) = π(u) P(u, v
 
 open Finset Matrix
 open MathlibExt.Probability.CanonicalPaths MathlibExt.Probability.MarkovMixing
-open MathlibExt.Probability.PoincareMixing
+open MathlibExt.Probability.PoincareMixing ProbabilityTheory
 
 namespace MathlibExt.Probability.Flows
 
@@ -88,8 +94,9 @@ noncomputable def load (F : MulticommodityFlow π P) (u v : S) : ℝ :=
   ∑ x, ∑ y, if x = y then 0 else
     ∑ p ∈ F.paths x y, F.weight x y p * ((pathEdges x p).count (u, v) : ℝ)
 
-/-- **Theorem 3′ for flows: `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)`** (A. Sinclair, *Combin. Probab. Comput.*
-1 (1992), Theorem 3′ and inequality (13)). If every edge carries at most
+/-- **Inequality (13) for flows: `π(A) π(Aᶜ) ≤ ρ Q(A, Aᶜ)`** (A. Sinclair, *Combin. Probab.
+Comput.* 1 (1992), inequality (13), stated there for flows; it implies Theorem 3′, see
+`sum_le_two_mul`). If every edge carries at most
 `ρ · π(u) P(u, v)` units of a flow `F`, then for every set `A` of states
 `π(A) π(Aᶜ) ≤ ρ ∑_{u ∈ A, v ∉ A} π(u) P(u, v)`. -/
 theorem mul_sum_compl_le (F : MulticommodityFlow π P) {ρ : ℝ}
@@ -148,6 +155,21 @@ theorem mul_sum_compl_le (F : MulticommodityFlow π P) {ρ : ℝ}
   rw [Finset.mul_sum]
   exact Finset.sum_le_sum fun u _ => by
     rw [Finset.mul_sum]; exact Finset.sum_le_sum fun v _ => hρ u v
+
+/-- **Sinclair's Theorem 3′: `Φ ≥ 1/(2ρ(f))`** (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
+Theorem 3′), set by set. If `π` is a probability vector, every edge carries at most
+`ρ · π(u) P(u, v)` units of a flow `F`, and `π(A) ≤ 1/2`, then `π(A) ≤ 2 ρ Q(A, Aᶜ)`, where
+`Q(A, Aᶜ) = ∑_{u ∈ A, v ∉ A} π(u) P(u, v)`. -/
+theorem sum_le_two_mul (F : MulticommodityFlow π P) (hπ : ∀ x, 0 ≤ π x) (hπ1 : ∑ x, π x = 1)
+    {ρ : ℝ} (hρ : ∀ u v, F.load u v ≤ ρ * (π u * P u v)) (A : Finset S)
+    (hA : ∑ x ∈ A, π x ≤ 1 / 2) :
+    ∑ x ∈ A, π x ≤ 2 * (ρ * ∑ u ∈ A, ∑ v ∈ Aᶜ, π u * P u v) := by
+  have h := F.mul_sum_compl_le hρ A
+  have hsplit : ∑ y ∈ Aᶜ, π y = 1 - ∑ x ∈ A, π x := by
+    rw [← hπ1, ← Finset.sum_add_sum_compl A π]; ring
+  rw [hsplit] at h
+  have h0 : 0 ≤ ∑ x ∈ A, π x := Finset.sum_nonneg fun x _ => hπ x
+  nlinarith
 
 /-- **Length-weighted flow through an oriented edge** (A. Sinclair, *Combin. Probab. Comput.* 1
 (1992), Section 4: the elongated flow `f̄(e) = ∑_{p ∋ e} f(p) |p|`):
@@ -226,7 +248,7 @@ length-weighted load on every oriented edge is at most `B · π(u) P(u, v)`. The
 eigenvalue `μ ≠ 1` of `P` satisfies `1 ≤ B (1 - μ)`. -/
 theorem one_le_mul_one_sub_of_eigenvector (F : MulticommodityFlow π P) (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) (hrow : ∀ x, ∑ y, P x y = 1)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {B : ℝ}
+    (hrev : IsDetailedBalance π P) {B : ℝ}
     (hB : ∀ u v, F.elongatedLoad u v ≤ B * (π u * P u v)) {μ : ℝ} {f : S → ℝ}
     (hf : f ≠ 0) (heig : P *ᵥ f = μ • f) (hμ : μ ≠ 1) :
     1 ≤ B * (1 - μ) :=
@@ -239,7 +261,7 @@ end MulticommodityFlow
 `π(x) Pⁿ(x, y) = π(y) Pⁿ(y, x)` for every `n` (used in A. Sinclair, *Combin. Probab. Comput.* 1
 (1992), proof of Lemma 7). -/
 theorem pow_detailedBalance {π : S → ℝ} {P : Matrix S S ℝ}
-    (hrev : ∀ x y, π x * P x y = π y * P y x) (n : ℕ) (x y : S) :
+    (hrev : IsDetailedBalance π P) (n : ℕ) (x y : S) :
     π x * (P ^ n) x y = π y * (P ^ n) y x := by
   induction n generalizing x y with
   | zero =>
@@ -281,7 +303,7 @@ and suppose every row of `Pᵗ` is within total variation distance `1/4` of `π`
 (so `τ ≥ max_x τ_x(1/4)`). Then for every `t ≥ 2τ` and all states `x, y`,
 `Pᵗ(x, y) ≥ π(y)/8`. -/
 theorem div_eight_le_pow_apply {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
-    {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S) (hrev : ∀ x y, π x * P x y = π y * P y x)
+    {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S) (hrev : IsDetailedBalance π P)
     {τ : ℕ} (hτ : ∀ x, ∀ t, τ ≤ t → tvDist (fun y => (P ^ t) x y) π ≤ 1 / 4) {t : ℕ}
     (ht : 2 * τ ≤ t) (x y : S) :
     π y / 8 ≤ (P ^ t) x y := by
@@ -289,7 +311,7 @@ theorem div_eight_le_pow_apply {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
     sum_row_of_mem_rowStochastic (pow_mem hP n) w
   have hnn : ∀ n w z, 0 ≤ (P ^ n) w z := fun n w z =>
     nonneg_of_mem_rowStochastic (pow_mem hP n)
-  -- `Z`: the states `z` with `Pᵗ(y, z) ≥ π(z)/2`; it has `π(Z) ≥ 1/2`.
+  -- `Z`: the states `z` with `P^τ(y, z) ≥ π(z)/2`; it has `π(Z) ≥ 1/2`.
   set Z : Finset S := Finset.univ.filter fun z => π z / 2 ≤ (P ^ τ) y z with hZ
   have hZc : ∑ z ∈ Zᶜ, π z ≤ 1 / 2 := by
     have h := sum_sub_le_tvDist (μ := fun z => (P ^ τ) y z) (ν := π) (hrow τ y) hπ1 Zᶜ
@@ -310,14 +332,14 @@ theorem div_eight_le_pow_apply {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
       rw [← hπ1, ← Finset.sum_add_sum_compl Z π]; ring
     rw [Finset.sum_sub_distrib, hsplit] at h
     linarith
-  -- For `z ∈ Z`, reversibility of `Pᵗ` gives `Pᵗ(z, y) ≥ π(y)/2`.
+  -- For `z ∈ Z`, reversibility of `P^τ` gives `P^τ(z, y) ≥ π(y)/2`.
   have hzy : ∀ z ∈ Z, π y / 2 ≤ (P ^ τ) z y := by
     intro z hz
     simp only [hZ, Finset.mem_filter, Finset.mem_univ, true_and] at hz
     have hdb := pow_detailedBalance hrev τ y z
     have hπz := hπ z
     have hπy := hπ y
-    -- `π z Pᵗ(z, y) = π y Pᵗ(y, z) ≥ π y π z / 2`.
+    -- `π z P^τ(z, y) = π y P^τ(y, z) ≥ π y π z / 2`.
     have : π z * (π y / 2) ≤ π z * (P ^ τ) z y := by
       rw [← hdb]; nlinarith
     exact le_of_mul_le_mul_left this hπz
@@ -339,7 +361,7 @@ then `Pᵗ(x, y) ≥ π(y)/8` for all `t ≥ 2τ` (A. Sinclair, *Combin. Probab.
 Lemma 7, with `isMixedAt_mono` supplying the later times). -/
 theorem div_eight_le_pow_apply_of_isMixedAt {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
-    (hrev : ∀ x y, π x * P x y = π y * P y x) {τ : ℕ} (hτ : IsMixedAt P π τ) {t : ℕ}
+    (hrev : IsDetailedBalance π P) {τ : ℕ} (hτ : IsMixedAt P π τ) {t : ℕ}
     (ht : 2 * τ ≤ t) (x y : S) :
     π y / 8 ≤ (P ^ t) x y := by
   have hstat : π ᵥ* P = π := by
