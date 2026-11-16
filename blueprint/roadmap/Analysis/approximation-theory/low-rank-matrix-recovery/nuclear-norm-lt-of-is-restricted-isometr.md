@@ -13,7 +13,8 @@ This statement is recorded as wanted: its proof is not formalized.
 ## Background
 
 - [Duality of the spectral and nuclear norms](../../../LinearAlgebra/matrix-decompositions/singular-value-decomposition/spectral-norm-dual-nuclear-norm.md): background, the source's Proposition 2.1, which identifies the nuclear norm as the dual of the operator norm.
-- [Sparse recovery by orthogonal matching pursuit](../sparse-recovery-by-orthogonal-matching-pursuit/README.md): background, the vector analogue of exact recovery, by a greedy algorithm rather than $\ell_1$ minimization.
+- [Exact recovery by basis pursuit](../../../Probability/linear-models-multivariate/exact-recovery-by-basis-pursuit/README.md): background, the vector analogue, $\ell_1$ minimization recovering sparse vectors under a restricted nullspace condition.
+- [Sparse recovery by orthogonal matching pursuit](../sparse-recovery-by-orthogonal-matching-pursuit/README.md): background, sparse recovery by a greedy algorithm rather than by convex minimization.
 
 ## Sources
 

@@ -11,15 +11,9 @@ module
 import MathlibExt.LinearAlgebra.Matrix.LowRankRecovery
 
 open Matrix
+open scoped Matrix.Norms.Frobenius
 
 namespace MathlibExt.LinearAlgebra.Matrix.LowRankRecovery
-
--- The Frobenius norm of `diag(3, 4)` is `5`.
-example : frobeniusNorm !![(3 : ℝ), 0; 0, 4] = 5 := by
-  rw [frobeniusNorm, show (5 : ℝ) = √(5 ^ 2) by rw [Real.sqrt_sq (by norm_num)]]
-  congr 1
-  simp [Fin.sum_univ_two]
-  norm_num
 
 -- The nuclear norm of the zero matrix is `0`.
 example : nuclearNorm (0 : Matrix (Fin 2) (Fin 3) ℝ) = 0 := by
@@ -46,8 +40,9 @@ private noncomputable def entryMap : Matrix (Fin 1) (Fin 1) ℝ →ₗ[ℝ] Eucl
 -- The restricted isometry property is satisfiable: the entry map is an isometry (`δ = 0`).
 example (r : ℕ) : IsRestrictedIsometry entryMap r 0 := by
   intro X _
-  have h : ‖entryMap X‖ = frobeniusNorm X := by
-    simp [entryMap, EuclideanSpace.norm_eq, frobeniusNorm]
+  have h : ‖entryMap X‖ = ‖X‖ := by
+    rw [Matrix.frobenius_norm_def, ← Real.sqrt_eq_rpow]
+    simp [entryMap, EuclideanSpace.norm_eq]
   simp [h]
 
 end MathlibExt.LinearAlgebra.Matrix.LowRankRecovery

@@ -6,7 +6,7 @@ $$
 (1 - \delta)\, \lVert X\rVert_F \le \lVert \mathcal{A}(X)\rVert \le (1 + \delta)\, \lVert X\rVert_F
 $$
 
-for every matrix $X$ of rank at most $r$. The $r$-restricted isometry constant $\delta_r(\mathcal{A})$ is the least such $\delta$; hence $\delta_r(\mathcal{A}) < c$ exactly when $\mathcal{A}$ is a restricted isometry of order $r$ with some constant $\delta < c$, which is how the conditions of this topic are stated. The norms are not squared, following the source; for diagonal matrices this is the restricted isometry property of Candès and Tao for sparse vectors.
+for every matrix $X$ of rank at most $r$, where $\lVert X\rVert_F = (\sum_{i,j} X_{ij}^2)^{1/2}$ is the Frobenius norm. The $r$-restricted isometry constant $\delta_r(\mathcal{A})$ is the least such $\delta$; hence $\delta_r(\mathcal{A}) < c$ exactly when $\mathcal{A}$ is a restricted isometry of order $r$ with some constant $\delta < c$, which is how the conditions of this topic are stated. The norms are not squared, following the source; for diagonal matrices this is the restricted isometry property of Candès and Tao for sparse vectors.
 
 ## Sources
 

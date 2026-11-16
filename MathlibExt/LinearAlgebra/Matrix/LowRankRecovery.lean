@@ -11,6 +11,7 @@ module
 public import Mathlib.Analysis.InnerProductSpace.SingularValues
 public import Mathlib.Analysis.InnerProductSpace.PiL2
 public import Mathlib.LinearAlgebra.Matrix.Rank
+public import Mathlib.Analysis.Matrix.Normed
 
 /-!
 # Low-rank matrix recovery: nuclear norm and restricted isometry
@@ -23,10 +24,10 @@ the linear map `𝒜` satisfies a restricted isometry property on low-rank matri
 
 ## Main definitions
 
-- `frobeniusNorm X`: `‖X‖_F = (∑ᵢⱼ Xᵢⱼ²)^{1/2}`.
 - `nuclearNorm X`: the sum of the singular values of `X`.
 - `IsRestrictedIsometry 𝒜 r δ`: `(1 - δ) ‖X‖_F ≤ ‖𝒜(X)‖ ≤ (1 + δ) ‖X‖_F` for every `X` of rank
-  at most `r` (Definition 3.1 of Recht–Fazel–Parrilo, with `δ` any admissible constant).
+  at most `r` (Definition 3.1 of Recht–Fazel–Parrilo, with `δ` any admissible constant), with
+  Mathlib's Frobenius norm (`open scoped Matrix.Norms.Frobenius`).
 
 ## Main results
 
@@ -39,18 +40,11 @@ the linear map `𝒜` satisfies a restricted isometry property on low-rank matri
 @[expose] public section
 
 open Matrix
+open scoped Matrix.Norms.Frobenius
 
 namespace MathlibExt.LinearAlgebra.Matrix.LowRankRecovery
 
 variable {m n : Type*} [Fintype m] [Fintype n]
-
-/-- **Frobenius norm.** `‖X‖_F = (∑ᵢ ∑ⱼ Xᵢⱼ²)^{1/2}` for a real matrix `X`.
-
-Source: B. Recht, M. Fazel and P. A. Parrilo, *Guaranteed minimum-rank solutions of linear
-matrix equations via nuclear norm minimization*, SIAM Review 52 (2010), arXiv:0706.4138,
-Section 2 (the Frobenius norm `‖X‖_F = √⟨X, X⟩ = (∑ σᵢ²)^{1/2}`). -/
-noncomputable def frobeniusNorm (X : Matrix m n ℝ) : ℝ :=
-  √(∑ i, ∑ j, X i j ^ 2)
 
 /-- **Nuclear norm.** The nuclear norm `‖X‖_* = ∑ᵢ σᵢ(X)` of a real matrix `X`, the sum of the
 singular values of `X` acting as a linear map between Euclidean spaces.
@@ -71,7 +65,8 @@ theorem nuclearNorm_nonneg [DecidableEq n] (X : Matrix m n ℝ) : 0 ≤ nuclearN
 
 /-- **Restricted isometry property.** A linear map `𝒜` from real `m × n` matrices to `ℝ^p` is a
 restricted isometry of order `r` with constant `δ` if
-`(1 - δ) ‖X‖_F ≤ ‖𝒜(X)‖ ≤ (1 + δ) ‖X‖_F` for every matrix `X` of rank at most `r`. The
+`(1 - δ) ‖X‖_F ≤ ‖𝒜(X)‖ ≤ (1 + δ) ‖X‖_F` for every matrix `X` of rank at most `r`, where `‖X‖_F`
+is Mathlib's Frobenius norm `(∑ᵢ ∑ⱼ Xᵢⱼ²)^{1/2}` (`Matrix.frobenius_norm_def`). The
 `r`-restricted isometry constant `δ_r(𝒜)` of the source is the least such `δ`, so `δ_r(𝒜) < c`
 if and only if `𝒜` is a restricted isometry of order `r` with some constant `δ < c`.
 
@@ -81,10 +76,11 @@ Definition 3.1, inequality (3.2) (norms not squared, as in the source). -/
 def IsRestrictedIsometry {p : ℕ} (𝒜 : Matrix m n ℝ →ₗ[ℝ] EuclideanSpace ℝ (Fin p)) (r : ℕ)
     (δ : ℝ) : Prop :=
   ∀ X : Matrix m n ℝ, X.rank ≤ r →
-    (1 - δ) * frobeniusNorm X ≤ ‖𝒜 X‖ ∧ ‖𝒜 X‖ ≤ (1 + δ) * frobeniusNorm X
+    (1 - δ) * ‖X‖ ≤ ‖𝒜 X‖ ∧ ‖𝒜 X‖ ≤ (1 + δ) * ‖X‖
 
 omit [Fintype m] in
-/-- **Subadditivity of the rank.** `rank (A - B) ≤ rank A + rank B` for real matrices.
+/-- **Subadditivity of the rank.** `rank (A - B) ≤ rank A + rank B` for real matrices: the matrix
+form of Mathlib's `LinearMap.rank_add_le`, proved here through the column spaces.
 
 Source: B. Recht, M. Fazel and P. A. Parrilo, *Guaranteed minimum-rank solutions of linear
 matrix equations via nuclear norm minimization*, SIAM Review 52 (2010), arXiv:0706.4138, proof of
@@ -98,19 +94,6 @@ theorem rank_sub_le (A B : Matrix m n ℝ) : (A - B).rank ≤ A.rank + B.rank :=
     exact Submodule.sub_mem _ (Submodule.mem_sup_left ⟨x, Matrix.mulVecLin_apply A x⟩)
       (Submodule.mem_sup_right ⟨x, Matrix.mulVecLin_apply B x⟩)
   exact (Submodule.finrank_mono hle).trans (Submodule.finrank_add_le_finrank_add_finrank _ _)
-
-private theorem eq_zero_of_frobeniusNorm_eq_zero {Z : Matrix m n ℝ} (h : frobeniusNorm Z = 0) :
-    Z = 0 := by
-  unfold frobeniusNorm at h
-  have hsum : ∑ i, ∑ j, Z i j ^ 2 = 0 :=
-    (Real.sqrt_eq_zero (Finset.sum_nonneg fun i _ =>
-      Finset.sum_nonneg fun j _ => sq_nonneg _)).mp h
-  ext i j
-  have hi := (Finset.sum_eq_zero_iff_of_nonneg (fun i _ =>
-    Finset.sum_nonneg fun j _ => sq_nonneg (Z i j))).mp hsum i (Finset.mem_univ _)
-  have hij := (Finset.sum_eq_zero_iff_of_nonneg (fun j _ => sq_nonneg (Z i j))).mp hi j
-    (Finset.mem_univ _)
-  simpa using hij
 
 /-- **Uniqueness of the low-rank solution under restricted isometry.** Let `𝒜` be a restricted
 isometry of order `2 r` with constant `δ < 1` (that is, `δ_{2r}(𝒜) < 1`). If `X` and `X₀` both have
@@ -128,11 +111,11 @@ theorem eq_of_isRestrictedIsometry_two_mul {p : ℕ}
   have hzero : 𝒜 (X₀ - X) = 0 := by rw [map_sub, h, sub_self]
   have hlow := (hRIP (X₀ - X) hrank).1
   rw [hzero, norm_zero] at hlow
-  have hnn : 0 ≤ frobeniusNorm (X₀ - X) := Real.sqrt_nonneg _
-  have hF : frobeniusNorm (X₀ - X) = 0 := by
+  have hnn : 0 ≤ ‖X₀ - X‖ := norm_nonneg _
+  have hF : ‖X₀ - X‖ = 0 := by
     by_contra hne
-    have hpos : 0 < frobeniusNorm (X₀ - X) := lt_of_le_of_ne hnn (Ne.symm hne)
+    have hpos : 0 < ‖X₀ - X‖ := lt_of_le_of_ne hnn (Ne.symm hne)
     nlinarith
-  exact (sub_eq_zero.mp (eq_zero_of_frobeniusNorm_eq_zero hF)).symm
+  exact (sub_eq_zero.mp (norm_eq_zero.mp hF)).symm
 
 end MathlibExt.LinearAlgebra.Matrix.LowRankRecovery
