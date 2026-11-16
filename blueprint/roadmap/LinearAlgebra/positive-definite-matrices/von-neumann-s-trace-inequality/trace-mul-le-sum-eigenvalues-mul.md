@@ -2,7 +2,7 @@
 
 Let $A$ and $B$ be real symmetric $d \times d$ matrices (indexed by a finite set) with eigenvalues $\alpha^\downarrow_0 \ge \dots \ge \alpha^\downarrow_{d-1}$ and $\beta^\downarrow_0 \ge \dots \ge \beta^\downarrow_{d-1}$ in decreasing order. Then
 $$\operatorname{tr}(AB) \le \sum_{k=0}^{d-1} \alpha^\downarrow_k \beta^\downarrow_k .$$
-It follows from the pairing form (some permutation $\tau$ has $\operatorname{tr}(AB) \le \sum_k \alpha^\downarrow_k\beta^\downarrow_{\tau(k)}$) and the rearrangement inequality. The bound is attained at $B = A$, and it is the symmetric-matrix case of von Neumann's trace inequality $|\operatorname{tr}(AB)| \le \sum_k \sigma_k(A)\sigma_k(B)$.
+It follows from the pairing form (some permutation $\tau$ has $\operatorname{tr}(AB) \le \sum_k \alpha^\downarrow_k\beta^\downarrow_{\tau(k)}$) and the rearrangement inequality. The bound is attained at $B = A$, and for symmetric matrices it refines von Neumann's trace inequality $|\operatorname{tr}(AB)| \le \sum_k \sigma_k(A)\sigma_k(B)$, since $\sum_k \alpha^\downarrow_k\beta^\downarrow_k \le \sum_k \sigma_k(A)\sigma_k(B)$.
 
 ## Informally uses
 

@@ -10,6 +10,7 @@ module
 
 public import Batteries.Util.ProofWanted
 public import MathlibExt.LinearAlgebra.Matrix.HermitianTraceExp
+public import MathlibExt.Probability.MatrixLaplaceTransform
 public import Mathlib.Analysis.Matrix.MeasurableSpace
 public import Mathlib.Probability.Independence.Basic
 public import Mathlib.MeasureTheory.Integral.Bochner.Basic
@@ -29,7 +30,8 @@ J. A. Tropp, *An Introduction to Matrix Concentration Inequalities*, Found. Tren
 8 (2015), arXiv:1501.01571, is:
 
 * Lieb's concavity theorem (Theorem 3.4.1; E. H. Lieb, *Convex trace functions and the
-  Wigner–Yanase–Dyson conjecture*, Adv. Math. 11 (1973), Theorem 6);
+  Wigner–Yanase–Dyson conjecture*, Adv. Math. 11 (1973), Theorem 6), recorded as a
+  matrix-analysis result in `MathlibExt.LinearAlgebra.Matrix.LiebConcavityWanted`;
 * subadditivity of matrix cgfs (Lemma 3.5.1);
 * matrix Gaussian series (Theorem 4.6.1);
 * the matrix Chernoff inequality (Theorem 5.1.1);
@@ -38,33 +40,18 @@ J. A. Tropp, *An Introduction to Matrix Concentration Inequalities*, Found. Tren
   matrices*, Found. Comput. Math. 12 (2012), Theorem 1.3).
 
 The proofs are deferred. Expectations of random matrices are taken entrywise
-(`MathlibExt.Probability.MatrixConcentrationWanted.expect`), and integrability hypotheses are
+(`MathlibExt.Probability.MatrixLaplaceTransform.expect`), and integrability hypotheses are
 explicit so that the Bochner integrals are not the junk value `0`.
 -/
 
 @[expose] public section
 
-open MeasureTheory ProbabilityTheory
+open MeasureTheory ProbabilityTheory MathlibExt.Probability.MatrixLaplaceTransform
 open scoped ComplexOrder
 
 namespace MathlibExt.Probability.MatrixConcentrationWanted
 
 variable {n : Type*} [Fintype n] [DecidableEq n]
-
-/-- **Expectation of a random matrix.** The entrywise expectation `E M` of a random complex
-matrix `M : Ω → Matrix n n ℂ` (Tropp, arXiv:1501.01571, §2.2.4). -/
-noncomputable def expect {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
-    (M : Ω → Matrix n n ℂ) : Matrix n n ℂ :=
-  Matrix.of fun i j => ∫ ω, M ω i j ∂μ
-
-/-- **Lieb's concavity theorem** (E. H. Lieb, *Convex trace functions and the Wigner–Yanase–Dyson
-conjecture*, Adv. Math. 11 (1973), 267–288, Theorem 6; Tropp, *An Introduction to Matrix
-Concentration Inequalities*, arXiv:1501.01571, Theorem 3.4.1 and Theorem 8.1.1). For a fixed
-Hermitian matrix `H`, the map `A ↦ tr exp(H + log A)` is concave on the cone of positive-definite
-matrices. Here `log A` is the standard matrix function `cfc Real.log A`. -/
-theorem_wanted lieb_concavity {H : Matrix n n ℂ} (hH : H.IsHermitian) :
-    ConcaveOn ℝ {A : Matrix n n ℂ | A.PosDef}
-      (fun A => RCLike.re (NormedSpace.exp (H + cfc Real.log A)).trace)
 
 /-- **Subadditivity of matrix cumulant generating functions** (Tropp, *An Introduction to Matrix
 Concentration Inequalities*, arXiv:1501.01571, Lemma 3.5.1, display (3.5.1); Tropp,
@@ -123,13 +110,6 @@ theorem_wanted matrix_bernstein [Nonempty n] {Ω : Type*} [MeasurableSpace Ω] {
     (hV : (∑ k, expect μ fun ω => X k ω * X k ω).IsHermitian) (t : ℝ) (ht : 0 ≤ t) :
     μ.real {ω | t ≤ (hY ω).lambdaMax} ≤
       Fintype.card n * Real.exp (-(t ^ 2 / 2) / (hV.lambdaMax + L * t / 3))
-
-/-- **Matrix Gaussian series.** For fixed complex matrices `A₀, …, A_{N-1}` and a vector
-`ω ∈ ℝᴺ` of coefficients, the matrix `∑ₖ ωₖ Aₖ`; with `ω` standard Gaussian this is the matrix
-Gaussian series `Y = ∑ₖ γₖ Aₖ` of Tropp, arXiv:1501.01571, §4.1 and §4.6. -/
-noncomputable def gaussianSeries {N : ℕ} (A : Fin N → Matrix n n ℂ) (ω : Fin N → ℝ) :
-    Matrix n n ℂ :=
-  ∑ k, ((ω k : ℝ) : ℂ) • A k
 
 /-- **Matrix Gaussian series, Hermitian case** (Tropp, *An Introduction to Matrix Concentration
 Inequalities*, arXiv:1501.01571, Theorem 4.6.1, displays (4.6.2) and (4.6.3); Tropp,

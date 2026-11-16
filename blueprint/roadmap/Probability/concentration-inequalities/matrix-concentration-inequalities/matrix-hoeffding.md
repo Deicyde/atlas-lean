@@ -11,6 +11,7 @@ The statement is recorded as wanted: its proof is deferred.
 ## Informally uses
 
 - [Matrix Laplace transform method, upper tail](measure-real-le-lambda-max-le.md): the reduction of the tail to the trace mgf.
+- [Subadditivity of matrix cumulant generating functions](integral-trace-exp-sum-le.md): Lieb's theorem applied summand by summand, as in the source proof.
 
 ## Background
 

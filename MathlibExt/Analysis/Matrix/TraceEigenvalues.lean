@@ -148,9 +148,10 @@ theorem exists_perm_trace_mul_le_sum_mul_eigenvalues {A B : Matrix n n ℝ} (hA 
   simp only [of_apply, neg_mul, Finset.sum_neg_distrib, neg_le_neg_iff] at hσ
   exact hσ
 
-/-- **A pairing of eigenvalues on the sorted indices.** The pairing `∑ᵢ αᵢ β_{σ i}` is
-`∑ₖ α↓ₖ β↓_{τ k}` for the permutation `τ` of `Fin (card n)` induced by `σ`. -/
-theorem sum_mul_eigenvalues_eq_sum_eigenvalues₀ {A B : Matrix n n ℝ} (hA : A.IsHermitian)
+/- The pairing `∑ᵢ αᵢ β_{σ i}` is `∑ₖ α↓ₖ β↓_{τ k}` for the permutation `τ` of `Fin (card n)`
+induced by `σ`. A private helper: it unfolds Mathlib's choice of indexing in
+`IsHermitian.eigenvalues`. -/
+private theorem sum_mul_eigenvalues_eq_sum_eigenvalues₀ {A B : Matrix n n ℝ} (hA : A.IsHermitian)
     (hB : B.IsHermitian) (σ : Equiv.Perm n) :
     ∑ i, hA.eigenvalues i * hB.eigenvalues (σ i) =
       ∑ k, hA.eigenvalues₀ k * hB.eigenvalues₀

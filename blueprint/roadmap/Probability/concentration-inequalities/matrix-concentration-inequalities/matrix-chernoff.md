@@ -11,7 +11,8 @@ The statement is recorded as wanted: its proof is deferred. The Lean statement r
 
 ## Informally uses
 
-- [Matrix Laplace transform method, upper tail](measure-real-le-lambda-max-le.md): the reduction of the tail to the trace mgf.
+- [Matrix Laplace transform method, upper tail](measure-real-le-lambda-max-le.md): the reduction of the upper tail to the trace mgf.
+- [Matrix Laplace transform method, lower tail](measure-real-lambda-min-le-le.md): the reduction of the lower tail to the trace mgf.
 - [Subadditivity of matrix cumulant generating functions](integral-trace-exp-sum-le.md): the trace mgf of the sum is controlled by the summands' cgfs.
 
 ## Sources

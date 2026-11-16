@@ -2,7 +2,7 @@
 
 Fix a Hermitian $d \times d$ complex matrix $H$. The map
 $$A \longmapsto \operatorname{tr} \exp(H + \log A)$$
-is concave on the convex cone of positive-definite matrices, where $\log A$ is the standard matrix function (here `cfc Real.log A`). In the scalar case $a \mapsto e^{h + \log a} = e^h a$ is linear; concavity is a genuinely noncommutative phenomenon. With Jensen's inequality it gives $\mathbb{E}\operatorname{tr}\exp(H + X) \le \operatorname{tr}\exp(H + \log \mathbb{E}\, e^{X})$ (Tropp's Corollary 3.4.2), the engine of the subadditivity of matrix cumulant generating functions. Tropp's Chapter 8 proves it from the joint convexity of matrix relative entropy.
+is concave on the convex cone of positive-definite matrices, where $\log A$ is the standard matrix function (here `cfc Real.log A`). In the scalar case $a \mapsto e^{h + \log a} = e^h a$ is linear; concavity is a genuinely noncommutative phenomenon. With Jensen's inequality it gives, in matrix concentration, $\mathbb{E}\operatorname{tr}\exp(H + X) \le \operatorname{tr}\exp(H + \log \mathbb{E}\, e^{X})$ (Tropp's Corollary 3.4.2), the engine of the subadditivity of matrix cumulant generating functions. Tropp's Chapter 8 proves it from the joint convexity of matrix relative entropy.
 
 The statement is recorded as wanted: its proof is deferred.
 

@@ -2,7 +2,7 @@
 
 For a Hermitian matrix $A$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and a real number $\theta$, the power-series matrix exponential satisfies
 $$e^{\theta A} = \sum_{q \ge 0} \frac{(\theta A)^q}{q!} = f_\theta(A), \qquad f_\theta(a) = e^{\theta a},$$
-where $f_\theta(A)$ is the standard matrix function given by the continuous functional calculus. The proof diagonalizes $\theta A = U\,\operatorname{diag}(\theta\lambda_i)\,U^{*}$ with a unitary $U$, and uses that the exponential commutes with conjugation by $U$ and acts entrywise on a diagonal matrix.
+where $f_\theta(A)$ is the standard matrix function given by the continuous functional calculus. The proof diagonalizes $\theta A = U\,\operatorname{diag}(\theta\lambda_i)\,U^{*}$ with a unitary $U$, and uses that the exponential commutes with conjugation by $U$ and acts entrywise on a diagonal matrix. In a normed algebra this is Mathlib's `CFC.real_exp_eq_normedSpace_exp`; matrices carry no global norm, hence the direct proof.
 
 ## Background
 

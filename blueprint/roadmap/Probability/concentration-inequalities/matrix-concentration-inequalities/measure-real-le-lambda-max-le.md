@@ -16,4 +16,4 @@ Since the bound holds for every $\theta > 0$, it holds for the infimum over $\th
 
 - J. A. Tropp, An Introduction to Matrix Concentration Inequalities, Found. Trends Mach. Learn. 8 (2015), 1–230, arXiv:1501.01571, Proposition 3.2.1, display (3.2.1).
 - J. A. Tropp, User-friendly tail bounds for sums of random matrices, Found. Comput. Math. 12 (2012), 389–434, arXiv:1004.4389, Proposition 3.1.
-- R. Ahlswede and A. Winter, Strong converse for identification via quantum channels, IEEE Trans. Inform. Theory 48 (2002), 569–579 (origin of the method).
+- R. Ahlswede and A. Winter, Strong converse for identification via quantum channels, IEEE Trans. Inform. Theory 48 (2002), 569–579 (a version of the method; the statement in this form is from R. I. Oliveira, 2010, per Tropp's §3.7.1).

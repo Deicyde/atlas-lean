@@ -5914,6 +5914,7 @@
   "WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Eigenvalues of the inverse matrix"},
   "WantedExt/LinearAlgebra/Matrix/JacobiDetDerivativeWanted": {"to": "LinearAlgebra/determinants-and-matrix-identities", "title": "Jacobi's formula"},
   "WantedExt/LinearAlgebra/Matrix/JacobiIterationWanted": {"to": "LinearAlgebra/matrix-decompositions", "title": "Jacobi iterative method"},
+  "WantedExt/LinearAlgebra/Matrix/LiebConcavityWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lieb's concavity theorem"},
   "WantedExt/LinearAlgebra/Matrix/RandomizedRangeFinderWanted": {"to": "LinearAlgebra/matrix-decompositions", "title": "Randomized range finder"},
   "WantedExt/LinearAlgebra/Matrix/SignConditionNumberDecayWanted": {"to": "LinearAlgebra/matrix-decompositions", "title": "Condition numbers of sign matrices"},
   "WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Generalized eigenvalues of max and min matrices"},

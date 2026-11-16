@@ -21,9 +21,10 @@ import Mathlib.Analysis.Convex.SpecificFunctions.Basic
 Let `Y` be a random Hermitian `d × d` matrix. The matrix Laplace transform method controls the
 extreme eigenvalues of `Y` by the trace of the matrix moment generating function
 `θ ↦ E tr e^{θY}` (J. A. Tropp, *An Introduction to Matrix Concentration Inequalities*,
-Found. Trends Mach. Learn. 8 (2015), arXiv:1501.01571, §3.2; first stated in this form by
-Ahlswede and Winter, and in J. A. Tropp, *User-friendly tail bounds for sums of random
-matrices*, Found. Comput. Math. 12 (2012), Proposition 3.1):
+Found. Trends Mach. Learn. 8 (2015), arXiv:1501.01571, §3.2; J. A. Tropp, *User-friendly tail
+bounds for sums of random matrices*, Found. Comput. Math. 12 (2012), Proposition 3.1. A version
+of the method is due to R. Ahlswede and A. Winter (2002); the statement in this form is from
+R. I. Oliveira (2010), see Tropp's §3.7.1):
 
 * **tail bounds** (Proposition 3.2.1): for every `t` and every `θ > 0`,
   `P{λmax(Y) ≥ t} ≤ e^{-θt} E tr e^{θY}`, and for every `θ < 0`,
@@ -39,6 +40,10 @@ Here `e^{θY}` is the power-series matrix exponential and `tr` is the real part 
 
 The integrability hypotheses are explicit: without them the Bochner integral is `0` and the
 bounds would be false.
+
+The file also defines the entrywise expectation `expect` of a random matrix and the matrix
+Gaussian series `gaussianSeries`, the objects in which the matrix Chernoff, Bernstein, Hoeffding
+and Gaussian-series inequalities are stated (`MathlibExt.Probability.MatrixConcentrationWanted`).
 -/
 
 @[expose] public section
@@ -49,6 +54,18 @@ namespace MathlibExt.Probability.MatrixLaplaceTransform
 
 variable {Ω n 𝕜 : Type*} [MeasurableSpace Ω] [RCLike 𝕜] [Fintype n] [DecidableEq n]
   [Nonempty n]
+
+/-- **Expectation of a random matrix.** The entrywise expectation `E M` of a random matrix
+`M : Ω → Matrix n n 𝕜` (Tropp, arXiv:1501.01571, §2.2.4). -/
+noncomputable def expect (μ : Measure Ω) (M : Ω → Matrix n n 𝕜) : Matrix n n 𝕜 :=
+  Matrix.of fun i j => ∫ ω, M ω i j ∂μ
+
+/-- **Matrix Gaussian series.** For fixed matrices `A₀, …, A_{N-1}` and a vector `ω ∈ ℝᴺ` of
+coefficients, the matrix `∑ₖ ωₖ Aₖ`; with `ω` standard Gaussian this is the matrix Gaussian series
+`Y = ∑ₖ γₖ Aₖ` of Tropp, arXiv:1501.01571, §4.1 and §4.6. -/
+noncomputable def gaussianSeries {N : ℕ} (A : Fin N → Matrix n n 𝕜) (ω : Fin N → ℝ) :
+    Matrix n n 𝕜 :=
+  ∑ k, ((ω k : ℝ) : 𝕜) • A k
 
 /-- **Trace moment generating function.** For a random matrix `Y` and a real `θ`, the real
 number `tr e^{θ Y(ω)}` (the real part of the trace); its expectation `E tr e^{θY}` is the trace

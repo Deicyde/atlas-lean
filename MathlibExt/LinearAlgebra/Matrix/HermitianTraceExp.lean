@@ -66,7 +66,9 @@ theorem trace_cfc_eq_sum (hA : A.IsHermitian) (f : ℝ → ℝ) :
 
 /-- **The matrix exponential is a standard matrix function.** For a Hermitian matrix `A` and a
 real `θ`, the power-series exponential `e^{θA}` equals the functional calculus of
-`a ↦ e^{θa}` (Tropp, arXiv:1501.01571, display (2.1.15)). -/
+`a ↦ e^{θa}` (Tropp, arXiv:1501.01571, display (2.1.15)). Mathlib's
+`CFC.real_exp_eq_normedSpace_exp` gives this in a normed algebra; `Matrix` carries no global
+norm, so the statement is proved here directly from the spectral theorem. -/
 theorem exp_smul_eq_cfc (hA : A.IsHermitian) (θ : ℝ) :
     NormedSpace.exp (θ • A) = cfc (fun x => Real.exp (θ * x)) A := by
   rw [hA.cfc_eq, IsHermitian.cfc]

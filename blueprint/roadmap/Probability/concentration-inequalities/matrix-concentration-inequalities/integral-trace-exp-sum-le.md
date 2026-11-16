@@ -8,7 +8,7 @@ The statement is recorded as wanted: its proof is deferred.
 
 ## Informally uses
 
-- [Lieb's concavity theorem](lieb-concavity.md): the concavity used, through Jensen's inequality, for each summand.
+- [Lieb's concavity theorem](../../../LinearAlgebra/positive-definite-matrices/lieb-s-concavity-theorem/lieb-concavity.md): the concavity used, through Jensen's inequality, for each summand.
 
 ## Sources
 

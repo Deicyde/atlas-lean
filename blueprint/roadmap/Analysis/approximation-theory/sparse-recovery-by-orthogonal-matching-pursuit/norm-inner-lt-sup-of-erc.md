@@ -10,6 +10,10 @@ So if the ERC $\max_\psi \|\Phi^+\psi\|_1 < 1$ holds over all nonoptimal atoms, 
 
 - [Greedy selection bound](norm-inner-le-of-mem-span.md): the bound $|\langle\psi, r\rangle| \le \|a\|_1 \max_i |\langle\varphi_i, r\rangle|$.
 
+## Background
+
+- [Coherence implies the Exact Recovery Condition](exists-erc-of-coherence.md): background, a sufficient condition on the dictionary for the hypothesis $\|a\|_1 < 1$.
+
 ## Sources
 
 - J. A. Tropp, Greed is good: algorithmic results for sparse approximation, IEEE Trans. Inform. Theory 50 (2004), 2231–2242, DOI 10.1109/TIT.2004.834793, Theorem 3.1 and its proof; Theorem 3.3 and Corollary 3.6 for the related statements quoted.

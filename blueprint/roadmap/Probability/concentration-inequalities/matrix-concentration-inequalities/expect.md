@@ -1,6 +1,6 @@
 # Expectation of a random matrix
 
-For a random complex matrix $M : \Omega \to \mathbb{C}^{n \times n}$, `expect μ M` is the matrix of entrywise expectations $(\mathbb{E}\,M)_{ij} = \int M(\omega)_{ij}\, d\mu(\omega)$. This is the expectation of a random matrix as Tropp defines it; matrices carry no global norm in Mathlib, so the entrywise Bochner integral is used.
+For a random matrix $M : \Omega \to \mathbb{K}^{n \times n}$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, `expect μ M` is the matrix of entrywise expectations $(\mathbb{E}\,M)_{ij} = \int M(\omega)_{ij}\, d\mu(\omega)$. This is the expectation of a random matrix as Tropp defines it; matrices carry no global norm in Mathlib, so the entrywise Bochner integral is used.
 
 ## Sources
 

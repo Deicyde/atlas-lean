@@ -1,6 +1,6 @@
 # Matrix Gaussian series
 
-For fixed complex matrices $A_0, \dots, A_{N-1}$ and a coefficient vector $\omega \in \mathbb{R}^N$, `gaussianSeries A ω` is the matrix $\sum_k \omega_k A_k$. When $\omega$ is a standard Gaussian vector this is the matrix Gaussian series $Y = \sum_k \gamma_k A_k$, the basic model of a random matrix with Gaussian coefficients and arbitrary correlations between its entries.
+For fixed matrices $A_0, \dots, A_{N-1}$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and a coefficient vector $\omega \in \mathbb{R}^N$, `gaussianSeries A ω` is the matrix $\sum_k \omega_k A_k$. When $\omega$ is a standard Gaussian vector this is the matrix Gaussian series $Y = \sum_k \gamma_k A_k$, the basic model of a random matrix with Gaussian coefficients and arbitrary correlations between its entries.
 
 ## Sources
 

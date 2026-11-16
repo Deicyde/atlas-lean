@@ -6,10 +6,6 @@ Then the Exact Recovery Condition holds for $\Lambda$: for every $\omega \notin 
 
 The statement is recorded as wanted: its proof is deferred.
 
-## Informally uses
-
-- [The Exact Recovery Condition forces a correct greedy choice](norm-inner-lt-sup-of-erc.md): the consequence of the condition proved here for a single greedy step.
-
 ## Sources
 
 - J. A. Tropp, Greed is good: algorithmic results for sparse approximation, IEEE Trans. Inform. Theory 50 (2004), 2231–2242, DOI 10.1109/TIT.2004.834793, Theorem 3.5 and Corollary 3.6.

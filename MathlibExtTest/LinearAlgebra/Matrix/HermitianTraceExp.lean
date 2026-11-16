@@ -36,4 +36,24 @@ example (A : Matrix (Fin 3) (Fin 3) ℂ) (hA : A.PosSemidef) (i : Fin 3) :
     hA.1.eigenvalues i ≤ RCLike.re A.trace :=
   hA.eigenvalues_le_re_trace i
 
+-- `diag(1, -1)` is Hermitian.
+theorem isHermitian_diag_one_neg_one : (diagonal ![(1 : ℂ), -1]).IsHermitian := by
+  rw [isHermitian_diagonal_iff]
+  intro i
+  fin_cases i <;> simp [IsSelfAdjoint]
+
+/-- The trace-exponential API on a non-scalar matrix: for `A = diag(1, -1)`, `tr e^{θA}` is the
+sum of `e^{θλᵢ}` over its eigenvalues, `e^{θλmax} ≤ tr e^{θA}`, and `e^{θA}` is the standard
+matrix function of `e^{θ·}`. -/
+example (θ : ℝ) :
+    (NormedSpace.exp (θ • diagonal ![(1 : ℂ), -1])).trace =
+        ∑ i, (Real.exp (θ * isHermitian_diag_one_neg_one.eigenvalues i) : ℂ) ∧
+      Real.exp (θ * isHermitian_diag_one_neg_one.lambdaMax) ≤
+        RCLike.re (NormedSpace.exp (θ • diagonal ![(1 : ℂ), -1])).trace ∧
+      NormedSpace.exp (θ • diagonal ![(1 : ℂ), -1]) =
+        cfc (fun x => Real.exp (θ * x)) (diagonal ![(1 : ℂ), -1]) :=
+  ⟨isHermitian_diag_one_neg_one.trace_exp_smul_eq_sum θ,
+    isHermitian_diag_one_neg_one.exp_mul_lambdaMax_le_re_trace_exp θ,
+    isHermitian_diag_one_neg_one.exp_smul_eq_cfc θ⟩
+
 end MathlibExtTest.LinearAlgebra.Matrix.HermitianTraceExp

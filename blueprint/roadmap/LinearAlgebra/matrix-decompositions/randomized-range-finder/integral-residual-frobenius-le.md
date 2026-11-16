@@ -8,7 +8,7 @@ The statement is recorded as wanted: its proof is deferred.
 
 ## Background
 
-- [Eckart–Young theorem in operator norm](../../../Analysis/operator-theory/eigenvalue-inequalities/eckart-young-best-rank-approx-operator-n.md): background, the best rank-$k$ error $\sigma_{k+1}$ (indexed from $0$ there as $\sigma_k$) that serves as the benchmark.
+- [Eckart–Young (Frobenius norm)](../../../Probability/linear-models-multivariate/principal-component-analysis/sum-sq-singular-values-le-frobenius-sub.md): background, the best rank-$k$ Frobenius error $(\sum_{j>k}\sigma_j^2)^{1/2}$ that serves as the benchmark.
 - [Real singular value decomposition](../singular-value-decomposition/real-singular-value-decomposition.md): background, the singular values $\sigma_j$ used in the bound.
 
 ## Sources
