@@ -4602,6 +4602,7 @@
   "WantedExt/Analysis/Complex/WatsonInverseFactorial": {"to": "Analysis/asymptotic-analysis", "title": "Watson's inverse factorial expansion"},
   "WantedExt/Analysis/Complex/ZerosOfSumZDivNPowNWanted": {"to": "Analysis/complex-analysis/entire-functions", "title": "Zeros of the entire function 1 + Σ (z/n)ⁿ"},
   "WantedExt/Analysis/ContinuumLimsupConstantWanted": {"to": "Analysis/complex-analysis/entire-functions", "title": "Growth of entire functions along continua"},
+  "WantedExt/Analysis/Convex/ADMMConvergenceWanted": {"to": "Analysis/convex-analysis-and-variations", "title": "Alternating direction method of multipliers"},
   "WantedExt/Analysis/Convex/GradientDescentExponentBoundsWanted": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "WantedExt/Analysis/CubicDecayWanted": {"to": "Analysis/ordinary-differential-equations", "title": "Decay of solutions of y′ = −y³"},
   "WantedExt/Analysis/DirichletEigenvaluesWanted": {"to": "Analysis/ordinary-differential-equations", "title": "Dirichlet eigenvalue problem on an interval"},

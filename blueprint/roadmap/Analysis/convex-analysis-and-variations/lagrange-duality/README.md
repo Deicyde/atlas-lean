@@ -41,3 +41,4 @@ Equality constraints are not covered yet: Boyd–Vandenberghe's Slater theorem a
 - [Linear programming](../../../Geometry/convex-geometry/linear-programming/README.md)
 - [Moreau decomposition](../moreau-decomposition/README.md)
 - [Newton's method for minimization](../newton-s-method-for-minimization/README.md)
+- [Alternating direction method of multipliers](../alternating-direction-method-of-multipliers/README.md)
