@@ -8,7 +8,15 @@ For probabilities: to reach $s$, first pick $t$ from $Q$, then $s t^{-1}$ from $
 $P * Q \ne Q * P$. The $k$-step law of the random walk driven by a probability $Q$ is the
 [convolution power](conv-pow.md) $Q^{*k}$.
 
+On complex-valued functions this is the convolution already in the graph, by
+[agreement with the repository's convolution](conv-eq-finite-group-conv.md); it is restated for
+values in any semiring so that real probabilities can be convolved and compared in total variation.
+
 ## Background
+
+- [Convolution on a finite group (complex-valued)](../../../GroupTheory/characters-of-finite-groups/convolution-on-finite-groups/conv.md):
+  the same operation on `G → ℂ`, written $(f * g)(x) = \sum_y f(y)\, g(y^{-1}x)$, with its
+  associativity and the one-dimensional convolution theorem.
 
 - [Convolution on a finite abelian group](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/young-s-convolution-inequality-on-finite-groups/fin-group-conv.md):
   the additive, complex-valued convolution used for abelian groups.

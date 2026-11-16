@@ -79,17 +79,6 @@ elsewhere (Diaconis and Shahshahani 1981, (1.1)). -/
 noncomputable def randomTransposition (n : ℕ) : Equiv.Perm (Fin n) → ℝ :=
   fun σ => if σ = 1 then 1 / n else if σ.IsSwap then 2 / (n : ℝ) ^ 2 else 0
 
-open Classical in
-/-- **Number of rising sequences of an arrangement.** Read `π : Sₙ` as an arrangement of a deck,
-card `π i` at position `i` (Bayer and Diaconis 1992, Section 3). A rising sequence is a maximal run
-of consecutive face values `v, v + 1, …` lying in increasing positions; the runs break exactly at
-the values `v` whose successor `v + 1` lies above `v` (`π⁻¹ (v + 1) < π⁻¹ v`), so the number of
-rising sequences is one plus the number of such `v` (Bayer and Diaconis 1992, Section 2, and the
-remark in Section 1 that `π` has `r` rising sequences iff `π⁻¹` has `r - 1` descents). -/
-noncomputable def risingSequences {n : ℕ} (π : Equiv.Perm (Fin n)) : ℕ :=
-  1 + (Finset.univ.filter fun p : Fin n × Fin n =>
-    p.2.val = p.1.val + 1 ∧ π⁻¹ p.2 < π⁻¹ p.1).card
-
 variable {G : Type*} [AddCommGroup G] [Fintype G]
 
 /-- **Convolution powers on a finite abelian group.** `addConvPow f 0` is the point mass at `0`
@@ -419,9 +408,10 @@ open Classical in
 irreducible complex representations of `Sₙ`, of dimensions `d_i` and characters `χ_i`, and let `τ`
 be a transposition. Then for every `k`,
 `4 ‖T^{*k} - U‖²_TV ≤ ∑_i d_i² (1/n + ((n-1)/n) χ_i(τ)/d_i)^{2k}` (real part), the sum running over
-the non-trivial irreducible representations. This is the upper bound lemma combined with
-Corollary 1 of Diaconis and Shahshahani 1981, the inequality from which Section 3 of that paper
-estimates the sum with Frobenius's formula for `χ_i(τ)/d_i`. -/
+the non-trivial irreducible representations (Diaconis and Shahshahani 1981, Lemma 14, equation
+(3.1), stated there for the `ℓ¹` norm `‖·‖ = 2 ‖·‖_TV`). The proof is theirs: the upper bound
+lemma combined with Corollary 1. Section 3 of the paper then estimates the sum with Frobenius's
+formula for `χ_i(τ)/d_i`. -/
 theorem four_mul_tvDist_randomTransposition_sq_le {n : ℕ} {ι : Type} [Fintype ι]
     (V : ι → FDRep ℂ (Equiv.Perm (Fin n))) [∀ i, Simple (V i)]
     (hinj : ∀ i j, Nonempty (V i ≅ V j) → i = j)

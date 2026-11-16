@@ -18,6 +18,7 @@ The non-commutative Fourier transform $\hat P(\rho) = \sum_s P(s)\rho(s)$ of a f
 - [Fourier transform of a reversed convolution power](fourier-conv-pow-comp-inv.md)
 - [Convolution commutes with ring homomorphisms](map-conv-pow.md)
 - [Total mass of a convolution](sum-conv.md)
+- [Agreement with the repository's convolution on a finite group](conv-eq-finite-group-conv.md)
 
 ## Related topics
 
@@ -29,3 +30,6 @@ The non-commutative Fourier transform $\hat P(\rho) = \sum_s P(s)\rho(s)$ of a f
   the scalar of a class function's transform.
 - [Fourier transform on finite abelian groups](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/README.md):
   the commutative case, where every irreducible representation is a character.
+- [Convolution on finite groups](../../../GroupTheory/characters-of-finite-groups/convolution-on-finite-groups/README.md):
+  the complex-valued convolution on a finite group already in the graph, equal to the one used here
+  on complex values (associativity, identity, the one-dimensional convolution theorem).

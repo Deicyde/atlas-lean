@@ -24,6 +24,8 @@ paper) and a bound on the number of partitions; these estimates are not formaliz
 
 ## Informally uses
 
+- [Upper bound for random transpositions](four-mul-tv-dist-random-transposition-sq.md): Lemma 14,
+  (3.1), of the paper, the inequality the proof of Theorem 1 starts from.
 - [Upper bound lemma (Diaconis–Shahshahani)](upper-bound-lemma.md): the proof bounds the distance
   by the sum over non-trivial irreducible representations of $S_n$.
 - [Fourier transform of the random-transposition measure](fourier-random-transposition.md): each

@@ -42,4 +42,9 @@ example {G V : Type} [Group G] [Fintype G] [AddCommGroup V] [Module ℂ V] [Fini
     ∃ c : ℂ, fourier ρ ρ.character = c • 1 :=
   ⟨_, fourier_eq_smul_one_of_isClassFunction ρ ρ.character fun g h => ρ.char_conj g h⟩
 
+/-- On complex values `conv` is the repository's convolution on a finite group. -/
+example {G : Type} [Group G] [Fintype G] (P Q : G → ℂ) (s : G) :
+    conv P Q s = MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv P Q s := by
+  rw [conv_eq_finiteGroupConv]
+
 end MathlibExtTest.RepresentationTheory.FourierTransformFiniteGroup

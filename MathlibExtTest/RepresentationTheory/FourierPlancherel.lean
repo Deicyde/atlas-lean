@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.RepresentationTheory.FourierPlancherel
+public import MathlibExt.GroupTheory.AbelianRepresentation
 
 @[expose] public section
 
@@ -47,5 +48,22 @@ example {G : Type} [Group G] [Fintype G] [DecidableEq G] {ι : Type} [Fintype ι
     ∑ i, (Module.finrank ℂ (V i) : ℂ) * (V i).character g = 0 := by
   rw [sum_finrank_mul_character V hinj hsurj]
   simp [hg]
+
+/-- The complete-set hypotheses of `plancherel` and `upper_bound_lemma` are satisfiable: the
+trivial representation is a complete set of irreducibles for the trivial group. -/
+example : ∃ (V : Unit → FDRep ℂ Unit) (_ : ∀ i, Simple (V i)),
+    (∀ i j, Nonempty (V i ≅ V j) → i = j) ∧
+      (∀ W : FDRep ℂ Unit, Simple W → ∃ i, Nonempty (W ≅ V i)) := by
+  refine ⟨fun _ => FDRep.ofMonoidHom (1 : Unit →* ℂ), fun _ => FDRep.ofMonoidHom_simple _,
+    fun _ _ _ => rfl, fun W hW => ⟨(), ?_⟩⟩
+  by_contra h
+  have : Invertible (Nat.card Unit : ℂ) := invertibleOfNonzero (by simp)
+  have := FDRep.ofMonoidHom_simple (1 : Unit →* ℂ)
+  have ho := FDRep.char_orthonormal W (FDRep.ofMonoidHom (1 : Unit →* ℂ))
+  simp only [h, ite_false] at ho
+  have h1 := FDRep.finrank_eq_one_of_isMulCommutative W
+  simp at ho
+  rw [show (PUnit.unit : Unit) = 1 from rfl, FDRep.char_one, h1] at ho
+  simp at ho
 
 end MathlibExtTest.RepresentationTheory.FourierPlancherel

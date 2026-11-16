@@ -13,6 +13,7 @@ public import Mathlib.RepresentationTheory.Irreducible
 public import Mathlib.LinearAlgebra.Trace
 public import Mathlib.Basic.Complex.Basic
 public import Mathlib.Analysis.Complex.Polynomial.Basic
+public import MathlibExt.GroupTheory.FiniteGroupConvolution
 
 /-!
 # Fourier transform on a finite group
@@ -49,9 +50,22 @@ variable {G : Type*} [Group G] [Fintype G]
 `(P * Q)(s) = ∑_t P(s t⁻¹) Q(t)`: to reach `s`, first pick `t` from `Q`, then `s t⁻¹` from `P`
 (Diaconis and Shahshahani 1981, Section 2; Diaconis, Saint-Flour notes 1988, Section 4). For a
 probability `Q`, the `k`-step law of the random walk driven by `Q` is the convolution power
-`convPow Q k`. -/
+`convPow Q k`. On complex-valued functions this is the repository's
+`MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv` (see `conv_eq_finiteGroupConv`); it is
+restated for values in any semiring so that real probabilities (for `tvDist`) can be convolved. -/
 def conv {R : Type*} [Semiring R] (P Q : G → R) : G → R :=
   fun s => ∑ t, P (s * t⁻¹) * Q t
+
+/-- **Agreement with the repository's convolution on a finite group.** On complex-valued functions,
+`conv P Q` equals `MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv P Q`, written there as
+`(P ∗ Q)(x) = ∑_y P(y) Q(y⁻¹ x)`: reindex `t = y⁻¹ x` (Diaconis and Shahshahani 1981, Section 2,
+write convolution as `∑_η P(γ η⁻¹) Q(η)`). -/
+theorem conv_eq_finiteGroupConv (P Q : G → ℂ) :
+    conv P Q = MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv P Q := by
+  funext s
+  simp only [conv, MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv]
+  exact Fintype.sum_equiv ((Equiv.inv G).trans (Equiv.mulLeft s)) _ _ (fun t => by
+    simp [mul_assoc])
 
 /-- **Convolution powers on a finite group.** `convPow Q 0` is the point mass at the identity and
 `convPow Q (k + 1) = Q * convPow Q k`, so `convPow Q k` is the law after `k` steps of the random

@@ -14,7 +14,6 @@ public import MathlibExt.Probability.RiffleShuffle
 
 open Finset
 open MathlibExt.Probability.RiffleShuffle
-open MathlibExt.Probability.RandomWalkFiniteGroup (risingSequences)
 
 namespace MathlibExtTest.Probability.RiffleShuffle
 
@@ -35,5 +34,16 @@ example : (univ.filter (fun f : Fin 0 → Fin 5 => Tuple.sort f = (1 : Equiv.Per
     = 1 := by
   rw [card_sort_eq]
   simp
+
+/-- An ordered deck has one rising sequence. -/
+example : risingSequences (1 : Equiv.Perm (Fin 4)) = 1 := by
+  classical
+  simp only [risingSequences, inv_one, Equiv.Perm.coe_one, id_eq]
+  rw [Finset.card_eq_zero.mpr]
+  ext p
+  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.notMem_empty, iff_false,
+    not_and, not_lt]
+  intro h
+  exact Fin.le_iff_val_le_val.mpr (by omega)
 
 end MathlibExtTest.Probability.RiffleShuffle

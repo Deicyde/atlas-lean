@@ -23,8 +23,7 @@ Diaconis 1992, Section 3), every position receives a pile label `f i ∈ Fin a`,
 independently, and the piles are stacked in label order keeping their internal order: the
 resulting inverse shuffle is the stable sorting permutation `Tuple.sort f`. Bayer and Diaconis
 prove that an `a`-shuffle produces the arrangement `π` with probability `C(a + n - r, n) / aⁿ`,
-`r` the number of rising sequences of `π` (`MathlibExt.Probability.RandomWalkFiniteGroup.
-risingSequences`).
+`r` the number of rising sequences of `π` (`risingSequences`).
 
 * `card_sort_eq`: exactly `C(a + n - r, n)` label maps `f : Fin n → Fin a` have
   `Tuple.sort f = π⁻¹`, the counting form of Bayer and Diaconis's Theorem 3.
@@ -45,7 +44,16 @@ open Finset
 
 namespace MathlibExt.Probability.RiffleShuffle
 
-open MathlibExt.Probability.RandomWalkFiniteGroup (risingSequences)
+open Classical in
+/-- **Number of rising sequences of an arrangement.** Read `π : Sₙ` as an arrangement of a deck,
+card `π i` at position `i` (Bayer and Diaconis 1992, Section 3). A rising sequence is a maximal run
+of consecutive face values `v, v + 1, …` lying in increasing positions; the runs break exactly at
+the values `v` whose successor `v + 1` lies above `v` (`π⁻¹ (v + 1) < π⁻¹ v`), so the number of
+rising sequences is one plus the number of such `v` (Bayer and Diaconis 1992, Section 2, and the
+remark in Section 1 that `π` has `r` rising sequences iff `π⁻¹` has `r - 1` descents). -/
+noncomputable def risingSequences {n : ℕ} (π : Equiv.Perm (Fin n)) : ℕ :=
+  1 + (Finset.univ.filter fun p : Fin n × Fin n =>
+    p.2.val = p.1.val + 1 ∧ π⁻¹ p.2 < π⁻¹ p.1).card
 
 /-! ### Strictly increasing maps between finite intervals -/
 

@@ -9,7 +9,9 @@ $$4\,\|T^{*k} - U\|_{TV}^2 \le \sum_{i \,:\, V_i \text{ non-trivial}} d_i^2 \ope
 (The characters of $S_n$ are integers, so the real part is the number itself; the Lean statement
 keeps the real part to avoid proving this.)
 
-It is the [upper bound lemma](upper-bound-lemma.md) applied to $T^{*k}$: by
+This is Lemma 14, equation (3.1), of Diaconis and Shahshahani, stated there for the $\ell^1$
+norm $\|\cdot\| = 2\,\|\cdot\|_{TV}$ (hence the factor $4$ here). The proof is theirs: the
+[upper bound lemma](upper-bound-lemma.md) applied to $T^{*k}$; by
 [the Fourier transform of the random-transposition measure](fourier-random-transposition.md), each
 transform $\widehat{T^{*k}}(V_i)$ is the scalar $c_i^k$ with
 $c_i = \tfrac1n + \tfrac{n-1}{n}\,\chi_i(\tau)/d_i$, and $T$ is invariant under inversion, so the
@@ -21,6 +23,6 @@ order, to reach the [$\tfrac12 n \log n$ upper bound](diaconis-shahshahani-upper
 ## Sources
 
 - P. Diaconis and M. Shahshahani, *Generating a random permutation with random transpositions*,
-  Z. Wahrsch. Verw. Gebiete 57 (1981) 159–179, Corollary 1 and the remark after it, and Section 3.
+  Z. Wahrsch. Verw. Gebiete 57 (1981) 159–179, Lemma 14 and equation (3.1); Corollary 1.
 - P. Diaconis, *Applications of non-commutative Fourier analysis to probability problems*,
   Saint-Flour lecture notes, Lecture Notes in Math. 1362 (1988), Lemma 4.2.

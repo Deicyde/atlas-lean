@@ -36,17 +36,6 @@ open Classical in
 example : 2 * (Finset.univ.filter (fun σ : Equiv.Perm (Fin 3) => σ.IsSwap)).card = 6 :=
   two_mul_card_isSwap 3 (by norm_num)
 
-/-- An ordered deck has one rising sequence. -/
-example : risingSequences (1 : Equiv.Perm (Fin 4)) = 1 := by
-  classical
-  simp only [risingSequences, inv_one, Equiv.Perm.coe_one, id_eq]
-  rw [Finset.card_eq_zero.mpr]
-  ext p
-  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.notMem_empty, iff_false,
-    not_and, not_lt]
-  intro h
-  exact Fin.le_iff_val_le_val.mpr (by omega)
-
 /-- Non-vacuity of the upper bound lemma: the point mass at `0` on `ZMod 4`. -/
 example :
     4 * tvDist (fun x : ZMod 4 => if x = 0 then (1 : ℝ) else 0) (uniform (ZMod 4)) ^ 2 ≤
