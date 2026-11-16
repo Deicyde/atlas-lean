@@ -15,6 +15,7 @@ public import Mathlib.Probability.Independence.Basic
 public import Mathlib.MeasureTheory.Integral.Bochner.Basic
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Probability.Distributions.Gaussian.Real
 
 /-!
 # Matrix concentration inequalities (wanted)
@@ -30,8 +31,11 @@ J. A. Tropp, *An Introduction to Matrix Concentration Inequalities*, Found. Tren
 * Lieb's concavity theorem (Theorem 3.4.1; E. H. Lieb, *Convex trace functions and the
   Wigner–Yanase–Dyson conjecture*, Adv. Math. 11 (1973), Theorem 6);
 * subadditivity of matrix cgfs (Lemma 3.5.1);
+* matrix Gaussian series (Theorem 4.6.1);
 * the matrix Chernoff inequality (Theorem 5.1.1);
-* the matrix Bernstein inequality, Hermitian case (Theorem 6.6.1).
+* the matrix Bernstein inequality, Hermitian case (Theorem 6.6.1);
+* the matrix Hoeffding inequality (Tropp, *User-friendly tail bounds for sums of random
+  matrices*, Found. Comput. Math. 12 (2012), Theorem 1.3).
 
 The proofs are deferred. Expectations of random matrices are taken entrywise
 (`MathlibExt.Probability.MatrixConcentrationWanted.expect`), and integrability hypotheses are
@@ -119,5 +123,44 @@ theorem_wanted matrix_bernstein [Nonempty n] {Ω : Type*} [MeasurableSpace Ω] {
     (hV : (∑ k, expect μ fun ω => X k ω * X k ω).IsHermitian) (t : ℝ) (ht : 0 ≤ t) :
     μ.real {ω | t ≤ (hY ω).lambdaMax} ≤
       Fintype.card n * Real.exp (-(t ^ 2 / 2) / (hV.lambdaMax + L * t / 3))
+
+/-- **Matrix Gaussian series.** For fixed complex matrices `A₀, …, A_{N-1}` and a vector
+`ω ∈ ℝᴺ` of coefficients, the matrix `∑ₖ ωₖ Aₖ`; with `ω` standard Gaussian this is the matrix
+Gaussian series `Y = ∑ₖ γₖ Aₖ` of Tropp, arXiv:1501.01571, §4.1 and §4.6. -/
+noncomputable def gaussianSeries {N : ℕ} (A : Fin N → Matrix n n ℂ) (ω : Fin N → ℝ) :
+    Matrix n n ℂ :=
+  ∑ k, ((ω k : ℝ) : ℂ) • A k
+
+/-- **Matrix Gaussian series, Hermitian case** (Tropp, *An Introduction to Matrix Concentration
+Inequalities*, arXiv:1501.01571, Theorem 4.6.1, displays (4.6.2) and (4.6.3); Tropp,
+*User-friendly tail bounds for sums of random matrices*, Found. Comput. Math. 12 (2012),
+Theorem 1.2). Let `A₀, …, A_{N-1}` be fixed Hermitian `d × d` matrices, `γ₀, …, γ_{N-1}`
+independent standard normal variables, `Y = ∑ₖ γₖ Aₖ` and `v = ‖∑ₖ Aₖ²‖ = λmax(∑ₖ Aₖ²)`. Then
+`E λmax(Y) ≤ (2 v log d)^{1/2}` and, for all `t ≥ 0`, `P{λmax(Y) ≥ t} ≤ d e^{-t²/(2v)}`. -/
+theorem_wanted matrix_gaussian_series [Nonempty n] {N : ℕ} {A : Fin N → Matrix n n ℂ}
+    (hA : ∀ k, (A k).IsHermitian) (hY : ∀ ω, (gaussianSeries A ω).IsHermitian)
+    (hV : (∑ k, A k * A k).IsHermitian) :
+    ∫ ω, (hY ω).lambdaMax ∂(Measure.pi fun _ : Fin N => gaussianReal 0 1) ≤
+        Real.sqrt (2 * hV.lambdaMax * Real.log (Fintype.card n)) ∧
+      ∀ t : ℝ, 0 ≤ t →
+        (Measure.pi fun _ : Fin N => gaussianReal 0 1).real {ω | t ≤ (hY ω).lambdaMax} ≤
+          Fintype.card n * Real.exp (-t ^ 2 / (2 * hV.lambdaMax))
+
+/-- **Matrix Hoeffding inequality** (Tropp, *User-friendly tail bounds for sums of random
+matrices*, Found. Comput. Math. 12 (2012), Theorem 1.3). Let `X₀, …, X_{N-1}` be independent,
+centered random Hermitian `d × d` matrices and `A₀, …, A_{N-1}` fixed Hermitian matrices with
+`X_k² ⪯ A_k²` (that is, `A_k² - X_k²` positive semidefinite) for every outcome. Let
+`σ² = ‖∑ₖ Aₖ²‖ = λmax(∑ₖ Aₖ²)`. Then for all `t ≥ 0`,
+`P{λmax(∑ₖ X_k) ≥ t} ≤ d e^{-t²/(8σ²)}`. -/
+theorem_wanted matrix_hoeffding [Nonempty n] {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω}
+    [IsProbabilityMeasure μ] {N : ℕ} {X : Fin N → Ω → Matrix n n ℂ}
+    (hmeas : ∀ k, Measurable (X k)) (hind : iIndepFun X μ)
+    (hX : ∀ k ω, (X k ω).IsHermitian) {A : Fin N → Matrix n n ℂ} (hA : ∀ k, (A k).IsHermitian)
+    (hdom : ∀ k ω, (A k * A k - X k ω * X k ω).PosSemidef)
+    (hint : ∀ k i j, Integrable (fun ω => X k ω i j) μ) (hcenter : ∀ k, expect μ (X k) = 0)
+    (hY : ∀ ω, (∑ k, X k ω).IsHermitian) (hσ : (∑ k, A k * A k).IsHermitian)
+    (t : ℝ) (ht : 0 ≤ t) :
+    μ.real {ω | t ≤ (hY ω).lambdaMax} ≤
+      Fintype.card n * Real.exp (-t ^ 2 / (8 * hσ.lambdaMax))
 
 end MathlibExt.Probability.MatrixConcentrationWanted

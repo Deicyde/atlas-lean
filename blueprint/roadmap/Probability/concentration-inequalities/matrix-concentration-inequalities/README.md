@@ -9,8 +9,11 @@ Tail and expectation bounds for the extreme eigenvalues of random Hermitian matr
 - [Expectation of a random matrix](expect.md)
 - [Lieb's concavity theorem](lieb-concavity.md)
 - [Subadditivity of matrix cumulant generating functions](integral-trace-exp-sum-le.md)
+- [Matrix Gaussian series](gaussian-series.md)
+- [Matrix Gaussian series, Hermitian case](matrix-gaussian-series.md)
 - [Matrix Chernoff inequality](matrix-chernoff.md)
 - [Matrix Bernstein inequality, Hermitian case](matrix-bernstein.md)
+- [Matrix Hoeffding inequality](matrix-hoeffding.md)
 
 ## Related topics
 
