@@ -30,6 +30,8 @@ where $\sigma$ is the semicircle distribution.
 - [Hoffman–Wielandt inequality for Hermitian matrices](../../../LinearAlgebra/positive-definite-matrices/hoffman-wielandt-hermitian.md):
   background; it bounds how far the empirical spectral distribution moves under a perturbation of
   small Frobenius norm, which is how truncation reduces the theorem to bounded entries.
+- [Lipschitz linear statistics of Hermitian spectra are stable](../../../LinearAlgebra/positive-definite-matrices/abs-sum-sub-sum-le-of-lipschitz-with.md):
+  background; the form of that bound used for linear statistics $\frac{1}{n}\sum_i f(\lambda_i)$.
 - [Strong Bai–Yin theorem, upper bound](../operator-norm-of-random-matrices/wigner-op-norm-le-two-add.md):
   background; under a fourth moment the spectrum also stays inside $[-2 - \varepsilon, 2 + \varepsilon]$.
 

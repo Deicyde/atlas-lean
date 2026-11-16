@@ -1893,6 +1893,7 @@
   "MathlibExt/Analysis/InnerProductSpace/ShiftEssentialSpectrum": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Unilateral shift"},
   "MathlibExt/Analysis/InnerProductSpace/ShiftFredholmIndex": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Unilateral shift"},
   "MathlibExt/Analysis/InnerProductSpace/ShiftNumericalRange": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Unilateral shift"},
+  "MathlibExt/Analysis/InnerProductSpace/SpectralLinearStatistics": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Hoffman–Wielandt inequality"},
   "MathlibExt/Analysis/InnerProductSpace/Stampacchia": {"to": "Analysis/convex-analysis-and-variations", "title": "Stampacchia's theorem"},
   "MathlibExt/Analysis/InnerProductSpace/StrangLemma": {"to": "Analysis/numerical-analysis", "title": "Strang's lemma"},
   "MathlibExt/Analysis/InnerProductSpace/ToeplitzHausdorff": {"to": "Analysis/operator-theory/spectral-theory", "title": "Numerical range and numerical radius"},

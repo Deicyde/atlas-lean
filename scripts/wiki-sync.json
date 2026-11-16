@@ -26602,6 +26602,7 @@
 "MathlibExt.qPochFin_zero": "f5ac1e010c1c1650",
 "Matrix.GeneralLinearGroup.isMulRightInvariant_and_isInvInvariant_of_isHaarMeasure_fin_two": "07ff33fa3f368d82",
 "Matrix.GeneralLinearGroup.modularCharacter_fin_two_eq_one": "bb204c05ae82e96b",
+"Matrix.IsHermitian.abs_sum_sub_sum_le_of_lipschitzWith": "bbe9a80d52b8a612",
 "Matrix.IsHermitian.charpoly_isRealRooted": "bb474fca9fc6c5b9",
 "Matrix.IsHermitian.eigenvalues₀_add_le": "07038fe4eb2cd8b6",
 "Matrix.IsHermitian.eigenvalues₀_congr": "5af870babf49c836",
