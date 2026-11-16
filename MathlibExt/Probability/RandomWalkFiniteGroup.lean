@@ -41,7 +41,11 @@ the transform is `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun`:
 * `upper_bound_lemma`: on any finite group, `4 ‖P - U‖² ≤ ∑_ρ d_ρ Tr(P̂(ρ) P̂(ρ)*)` over the
   non-trivial irreducible representations;
 * `fourier_randomTransposition`: the Fourier transform of the random-transposition measure at an
-  irreducible representation `ρ` of `Sₙ` is the scalar `1/n + ((n-1)/n) χ_ρ(τ)/d_ρ`.
+  irreducible representation `ρ` of `Sₙ` is the scalar `1/n + ((n-1)/n) χ_ρ(τ)/d_ρ`;
+* `four_mul_tvDist_randomTransposition_sq_le`: hence
+  `4 ‖T^{*k} - U‖² ≤ ∑_ρ d_ρ² (1/n + ((n-1)/n) χ_ρ(τ)/d_ρ)^{2k}` over the non-trivial irreducible
+  representations of `Sₙ`, the inequality from which Diaconis and Shahshahani start their
+  character estimates.
 
 It also records the uniform distribution and the random-transposition measure on the symmetric
 group, the walk of Diaconis and Shahshahani (1981).
@@ -295,7 +299,8 @@ end RandomTransposition
 section UpperBoundLemma
 
 open CategoryTheory
-open MathlibExt.RepresentationTheory.FourierTransformFiniteGroup (fourier fourier_uniform_eq_zero)
+open MathlibExt.RepresentationTheory.FourierTransformFiniteGroup (fourier fourier_uniform_eq_zero
+  convPow)
 
 open Classical in
 /-- **Upper bound lemma (Diaconis–Shahshahani).** Let `V : ι → FDRep ℂ G` be a complete set of
@@ -364,6 +369,103 @@ theorem upper_bound_lemma {G : Type} [Group G] [Fintype G] {ι : Type} [Fintype 
   rw [h1]
   refine h2.trans (le_of_eq ?_)
   rw [hre, ← mul_assoc, mul_inv_cancel₀ hNpos.ne', one_mul]
+
+/-- **The random-transposition measure is a probability.** For `n ≥ 1`, `∑_σ T(σ) = 1`:
+`1/n + (2/n²) C(n, 2) = 1` (Diaconis and Shahshahani 1981, (1.1)). -/
+theorem sum_randomTransposition (n : ℕ) (hn : 1 ≤ n) :
+    ∑ σ, randomTransposition n σ = 1 := by
+  classical
+  have hpt : ∀ σ : Equiv.Perm (Fin n), randomTransposition n σ =
+      (if σ = 1 then 1 / (n : ℝ) else 0) + (if σ.IsSwap then 2 / (n : ℝ) ^ 2 else 0) :=
+    fun σ => by
+      by_cases h1 : σ = 1
+      · subst h1
+        have : ¬ (1 : Equiv.Perm (Fin n)).IsSwap := fun h => by
+          simpa using Equiv.Perm.card_support_eq_two.mpr h
+        simp [randomTransposition, this]
+      · simp [randomTransposition, h1]
+  simp only [hpt, Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ, ite_true,
+    ← Finset.sum_filter, Finset.sum_const, nsmul_eq_mul]
+  have hn0 : (n : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr (by omega)
+  rcases Nat.lt_or_ge n 2 with h | h
+  · have hn1 : n = 1 := by omega
+    subst hn1
+    have h1s : ¬ (1 : Equiv.Perm (Fin 1)).IsSwap := fun h => by
+      simpa using Equiv.Perm.card_support_eq_two.mpr h
+    simp [h1s]
+  · have hc := two_mul_card_isSwap n h
+    have hc' : ((Finset.univ.filter fun σ : Equiv.Perm (Fin n) => σ.IsSwap).card : ℝ) =
+        n * (n - 1) / 2 := by
+      rw [eq_div_iff two_ne_zero, mul_comm]
+      exact_mod_cast (by rw [hc]; push_cast [Nat.cast_sub (by omega : 1 ≤ n)]; ring :
+        ((2 * (Finset.univ.filter fun σ : Equiv.Perm (Fin n) => σ.IsSwap).card : ℕ) : ℝ) =
+          (n : ℝ) * (n - 1))
+    rw [hc']
+    field_simp
+    ring
+
+/-- The random-transposition measure is invariant under inversion. -/
+private theorem randomTransposition_inv (n : ℕ) (σ : Equiv.Perm (Fin n)) :
+    randomTransposition n σ⁻¹ = randomTransposition n σ := by
+  have h2 : σ⁻¹.IsSwap ↔ σ.IsSwap := by
+    rw [← Equiv.Perm.card_support_eq_two, ← Equiv.Perm.card_support_eq_two,
+      Equiv.Perm.support_inv]
+  unfold randomTransposition
+  simp only [inv_eq_one]
+  by_cases h : σ.IsSwap <;> simp [h, h2]
+
+open Classical in
+/-- **Upper bound for random transpositions.** Let `V : ι → FDRep ℂ Sₙ` be a complete set of
+irreducible complex representations of `Sₙ`, of dimensions `d_i` and characters `χ_i`, and let `τ`
+be a transposition. Then for every `k`,
+`4 ‖T^{*k} - U‖²_TV ≤ ∑_i d_i² (1/n + ((n-1)/n) χ_i(τ)/d_i)^{2k}` (real part), the sum running over
+the non-trivial irreducible representations. This is the upper bound lemma combined with
+Corollary 1 of Diaconis and Shahshahani 1981, the inequality from which Section 3 of that paper
+estimates the sum with Frobenius's formula for `χ_i(τ)/d_i`. -/
+theorem four_mul_tvDist_randomTransposition_sq_le {n : ℕ} {ι : Type} [Fintype ι]
+    (V : ι → FDRep ℂ (Equiv.Perm (Fin n))) [∀ i, Simple (V i)]
+    (hinj : ∀ i j, Nonempty (V i ≅ V j) → i = j)
+    (hsurj : ∀ W : FDRep ℂ (Equiv.Perm (Fin n)), Simple W → ∃ i, Nonempty (W ≅ V i))
+    (τ : Equiv.Perm (Fin n)) (hτ : τ.IsSwap) (k : ℕ) :
+    4 * tvDist (convPow (randomTransposition n) k) (uniform (Equiv.Perm (Fin n))) ^ 2 ≤
+      ∑ i ∈ Finset.univ.filter (fun i => ∃ g, (V i).ρ g ≠ 1),
+        (Module.finrank ℂ (V i) : ℝ) ^ 2 *
+          (((1 : ℂ) / n + ((n : ℂ) - 1) / n *
+            ((V i).character τ / Module.finrank ℂ (V i))) ^ (2 * k)).re := by
+  have hn : 1 ≤ n := by
+    have h2 := Equiv.Perm.card_support_eq_two.mpr hτ
+    have := Finset.card_le_univ τ.support
+    simp only [Fintype.card_fin] at this
+    omega
+  have hsum : ∀ k, ∑ σ, convPow (randomTransposition n) k σ = 1 := fun k => by
+    induction k with
+    | zero => simp [convPow]
+    | succ k ih =>
+      rw [convPow, MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.sum_conv, ih,
+        sum_randomTransposition n hn, one_mul]
+  refine (upper_bound_lemma V hinj hsurj _ (hsum k)).trans (le_of_eq ?_)
+  refine Finset.sum_congr rfl fun i _ => ?_
+  have := BurnsidePaqb.irreducible_of_simple_fdrep (Equiv.Perm (Fin n)) (V i)
+  set c : ℂ := (1 : ℂ) / n + ((n : ℂ) - 1) / n *
+    ((V i).character τ / Module.finrank ℂ (V i)) with hc
+  have hT : fourier (V i).ρ (fun σ => (randomTransposition n σ : ℂ)) = c • 1 :=
+    fourier_randomTransposition (V i).ρ τ hτ
+  have hcast : ∀ m (s : Equiv.Perm (Fin n)), ((convPow (randomTransposition n) m s : ℝ) : ℂ) =
+      convPow (fun σ => (randomTransposition n σ : ℂ)) m s := fun m s =>
+    MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.map_convPow Complex.ofRealHom _ m s
+  have h1 : fourier (V i).ρ (fun s => ((convPow (randomTransposition n) k s : ℝ) : ℂ)) =
+      c ^ k • 1 := by
+    simp only [hcast, MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.fourier_convPow,
+      hT, smul_pow, one_pow]
+  have h2 : fourier (V i).ρ (fun s => ((convPow (randomTransposition n) k s⁻¹ : ℝ) : ℂ)) =
+      c ^ k • 1 := by
+    simp only [hcast,
+      MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.fourier_convPow_comp_inv,
+      randomTransposition_inv, hT, smul_pow, one_pow]
+  rw [h1, h2, smul_mul_smul_comm, one_mul, map_smul, LinearMap.trace_one, smul_eq_mul, ← pow_add,
+    ← two_mul]
+  simp only [Complex.mul_re, Complex.natCast_re, Complex.natCast_im, mul_zero, sub_zero]
+  ring
 
 end UpperBoundLemma
 

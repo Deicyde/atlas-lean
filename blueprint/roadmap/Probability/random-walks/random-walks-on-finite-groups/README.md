@@ -17,6 +17,8 @@ Random walks on a finite group $G$ driven by a probability $Q$: the $k$-step law
 - [Random transpositions: `(1/2) n log n + c n` steps suffice (Diaconis–Shahshahani)](diaconis-shahshahani-upper.md)
 - [Bayer–Diaconis formula for `a`-shuffles](card-sort-eq.md)
 - [Upper bound lemma (Diaconis–Shahshahani)](upper-bound-lemma.md)
+- [Upper bound for random transpositions](four-mul-tv-dist-random-transposition-sq.md)
+- [The random-transposition measure is a probability](sum-random-transposition.md)
 
 ## Related topics
 

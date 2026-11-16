@@ -60,6 +60,39 @@ def convPow {R : Type*} [Semiring R] [DecidableEq G] (Q : G → R) : ℕ → G �
   | 0 => fun s => if s = 1 then 1 else 0
   | k + 1 => conv Q (convPow Q k)
 
+/-- **Total mass of a convolution.** `∑_s (P * Q)(s) = (∑_s P(s)) (∑_s Q(s))`; in particular the
+convolution of two probabilities is a probability (Diaconis, Saint-Flour notes 1988, Section 4:
+convolution models the composition of two independent random steps). -/
+theorem sum_conv {R : Type*} [CommSemiring R] (P Q : G → R) :
+    ∑ s, conv P Q s = (∑ s, P s) * ∑ s, Q s := by
+  simp only [conv]
+  rw [Finset.sum_comm, Finset.mul_sum]
+  refine Finset.sum_congr rfl fun t _ => ?_
+  rw [← Finset.sum_mul]
+  exact congrArg (· * Q t) (Equiv.sum_comp (Equiv.mulRight t⁻¹) P)
+
+/-- **Convolution and inversion.** `(P * Q)ˇ = Qˇ * Pˇ`, where `Pˇ(s) = P(s⁻¹)`: reversing a
+two-step walk reverses the order of the steps (a direct computation from the definition of
+convolution in Diaconis and Shahshahani 1981, Section 2). -/
+theorem conv_comp_inv {R : Type*} [CommSemiring R] (P Q : G → R) :
+    (fun s => conv P Q s⁻¹) = conv (fun s => Q s⁻¹) (fun s => P s⁻¹) := by
+  funext s
+  simp only [conv]
+  symm
+  rw [← Equiv.sum_comp (Equiv.mulRight s)]
+  refine Finset.sum_congr rfl fun t _ => ?_
+  simp only [Equiv.coe_mulRight, mul_inv_rev, inv_inv, mul_inv_cancel_left]
+  rw [mul_comm]
+
+/-- **Convolution commutes with ring homomorphisms.** For a ring homomorphism `φ`,
+`φ ∘ (P * Q) = (φ ∘ P) * (φ ∘ Q)`, and likewise for convolution powers; used to move a real
+probability into `ℂ` before taking Fourier transforms. -/
+theorem map_convPow {R S : Type*} [Semiring R] [Semiring S] [DecidableEq G] (φ : R →+* S)
+    (Q : G → R) (k : ℕ) (s : G) : φ (convPow Q k s) = convPow (fun t => φ (Q t)) k s := by
+  induction k generalizing s with
+  | zero => simp only [convPow]; split_ifs <;> simp
+  | succ k ih => simp only [convPow, conv, map_sum, map_mul, ih]
+
 variable {V : Type*} [AddCommGroup V] [Module ℂ V]
 
 /-- **Fourier transform at a representation.** For `P : G → ℂ` and a representation `ρ` of `G`
@@ -89,6 +122,19 @@ theorem fourier_convPow [DecidableEq G] (ρ : Representation ℂ G V) (Q : G →
     simp only [fourier, convPow, ite_smul, one_smul, zero_smul, Finset.sum_ite_eq',
       Finset.mem_univ, ite_true, map_one, pow_zero]
   | succ k ih => rw [convPow, fourier_conv, ih, pow_succ']
+
+/-- **Fourier transform of a reversed convolution power.** With `Qˇ(s) = Q(s⁻¹)`,
+`((Q^{*k})ˇ)^(ρ) = (Q̂ˇ(ρ))^k`; for a unitary `ρ` the left side is the adjoint of
+`(Q^{*k})^(ρ)` when `Q` is real. Follows from `conv_comp_inv` and `fourier_conv`. -/
+theorem fourier_convPow_comp_inv [DecidableEq G] (ρ : Representation ℂ G V) (Q : G → ℂ)
+    (k : ℕ) : fourier ρ (fun s => convPow Q k s⁻¹) = fourier ρ (fun s => Q s⁻¹) ^ k := by
+  induction k with
+  | zero =>
+    simp only [fourier, convPow, inv_eq_one, ite_smul, one_smul, zero_smul,
+      Finset.sum_ite_eq', Finset.mem_univ, ite_true, map_one, pow_zero]
+  | succ k ih =>
+    simp only [convPow]
+    rw [conv_comp_inv, fourier_conv, ih, pow_succ]
 
 omit [Fintype G] in
 /-- **Schur's lemma for an operator commuting with an irreducible representation.** If `ρ` is an

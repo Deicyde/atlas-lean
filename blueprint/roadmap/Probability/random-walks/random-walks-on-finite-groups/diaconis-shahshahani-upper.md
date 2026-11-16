@@ -16,6 +16,12 @@ Together with the matching [lower bound](diaconis-shahshahani-lower.md) this sho
 transpositions mix at $\tfrac12 n \log n$, with a window of order $n$: an instance of the
 [cutoff phenomenon](../../markov-chains/mixing-times-of-markov-chains/has-cutoff.md).
 
+The proof starts from the
+[upper bound for random transpositions](four-mul-tv-dist-random-transposition-sq.md), the sum over
+irreducible representations proved here, and estimates it with Frobenius's character formula, the
+dimension bound $d_\lambda \le \binom{n}{\lambda_1}\sqrt{(n-\lambda_1)!}$ (Corollary 2 of the
+paper) and a bound on the number of partitions; these estimates are not formalized.
+
 ## Informally uses
 
 - [Upper bound lemma (Diaconis–Shahshahani)](upper-bound-lemma.md): the proof bounds the distance
