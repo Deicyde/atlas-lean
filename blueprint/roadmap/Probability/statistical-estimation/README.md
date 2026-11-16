@@ -7,6 +7,7 @@ Point estimation theory: bias, risk and mean squared error, likelihood and maxim
 - [Fisher information and the Cramér–Rao bound](fisher-information-and-the-cram-r-rao-bound/README.md)
 - [Asymptotic normality of maximum likelihood](asymptotic-normality-of-maximum-likelihood/README.md)
 - [Likelihood and maximum likelihood estimators](likelihood-and-maximum-likelihood-estimators/README.md)
+- [Minimax lower bounds](minimax-lower-bounds/README.md)
 - [Stein's lemma and James–Stein estimation](stein-s-lemma-and-james-stein-estimation/README.md)
 - [Sufficient statistics and the factorization theorem](sufficient-statistics-and-the-factorization-theo/README.md)
 - [Rao–Blackwell theorem](rao-blackwell-theorem/README.md)
