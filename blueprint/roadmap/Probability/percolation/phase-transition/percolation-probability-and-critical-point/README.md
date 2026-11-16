@@ -15,3 +15,6 @@
 - [Critical probability of bond percolation on the hypercubic lattice](pc.md)
 - [Lattice clusters agree with general graph clusters](cluster-eq-gcluster.md)
 - [Lattice box as a finite set](box-finset.md)
+- [Percolation probability on the parameter interval](theta-on-unit.md)
+- [Continuity of θ away from p_c](theta-continuous-on-ne-pc.md)
+- [Right-continuity of θ at p_c](theta-continuous-within-at-pc.md)
