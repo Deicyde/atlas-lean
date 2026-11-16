@@ -24,8 +24,8 @@ shift-invariant kernel, by Bochner's theorem), the random feature
 (A. Rahimi and B. Recht, *Random features for large-scale kernel machines*, NIPS 2007, Section 2,
 equation (2) and the cosine features that follow it). When the kernel `k(Δ) = φ_p(Δ)` is real,
 this is `k(x - y)`: the random features give an unbiased estimate of the kernel. Averaging `D`
-independent features, the estimate concentrates at rate `exp(-D ε² / 8)` by Hoeffding's
-inequality.
+independent features, the estimate concentrates: Hoeffding's inequality applied to the products
+gives the tail bound `2 exp(-D ε² / 8)`, a weaker constant than the source's `2 exp(-D ε² / 4)`.
 
 ## Main definitions
 
@@ -190,9 +190,9 @@ pairs `(ωⱼ, bⱼ) ~ p ⊗ U[0, 2π]`, for all inputs `x, y` and every `ε ≥
 `P(|(1/D) ∑ⱼ z_{ωⱼ,bⱼ}(x) z_{ωⱼ,bⱼ}(y) - Re φ_p(x - y)| ≥ ε) ≤ 2 exp(-D ε² / 8)`.
 
 Source: A. Rahimi and B. Recht, *Random features for large-scale kernel machines*, NIPS 2007,
-Section 2 (Hoeffding's inequality for the products `z_ω(x) z_ω(y)`, which lie in `[-2, 2]`; the
-source states the exponent as `-D ε² / 4`, while Hoeffding's inequality with range `4` gives the
-exponent `-D ε² / 8` proved here). -/
+Section 2 (the Hoeffding bound before Claim 1). The source states the sharper exponent
+`-D ε² / 4`; the bound proved here is Hoeffding's inequality applied to the products
+`z_ω(x) z_ω(y)`, which lie in `[-2, 2]`, and has the weaker exponent `-D ε² / 8`. -/
 theorem measureReal_abs_avg_fourierFeature_mul_sub_ge_le (p : Measure E) [IsProbabilityMeasure p]
     (D : ℕ) (hD : 0 < D) (x y : E) {ε : ℝ} (hε : 0 ≤ ε) :
     (Measure.pi fun _ : Fin D => p.prod phaseMeasure).real

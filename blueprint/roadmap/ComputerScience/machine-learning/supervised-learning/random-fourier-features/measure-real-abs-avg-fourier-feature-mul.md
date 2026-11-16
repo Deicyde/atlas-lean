@@ -8,7 +8,7 @@ $$
 
 Proof: the products $z_{\omega_j, b_j}(x)\, z_{\omega_j, b_j}(y) = \cos\langle\omega_j, x - y\rangle + \cos(2 b_j + \langle\omega_j, x + y\rangle)$ are independent, lie in $[-2, 2]$ and have mean $\operatorname{Re}\varphi_p(x - y)$ ([unbiasedness](integral-fourier-feature-mul.md)); apply [Hoeffding's inequality](../../../../Probability/concentration-inequalities/hoeffding-s-inequality/measure-real-abs-avg-sub-ge-le.md) with range $4$.
 
-The source states this bound with exponent $-D\varepsilon^2/4$, also from Hoeffding's inequality and the range $[-2, 2]$ of the products; Hoeffding's inequality with range $4$ gives the exponent $-D\varepsilon^2/8$ proved here. The uniform version over a compact set (the source's Claim 1) is not formalized.
+The source states the sharper exponent $-D\varepsilon^2/4$. The bound proved here, with exponent $-D\varepsilon^2/8$, is Hoeffding's inequality applied to the products, which lie in $[-2, 2]$; it has a weaker constant than the source's. The source's constant can be reached by splitting each product into $\cos\langle\omega, x - y\rangle$ and the phase term $\cos(2b + \langle\omega, x + y\rangle)$, each in $[-1, 1]$ and with the phase term centred given $\omega$, and applying Hoeffding's lemma to each; that argument is not formalized here. The uniform version over a compact set (the source's Claim 1) is not formalized.
 
 ## Sources
 
