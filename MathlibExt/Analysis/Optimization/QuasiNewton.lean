@@ -22,10 +22,10 @@ A quasi-Newton method replaces the Hessian by an approximation `B` updated from 
 `B⁺ = B - (B s)(B s)ᵀ / ⟪B s, s⟫ + y yᵀ / ⟪y, s⟫`
 
 (J. E. Dennis and R. B. Schnabel, *Numerical Methods for Unconstrained Optimization and Nonlinear
-Equations*, Prentice-Hall 1983, Section 9.2, equation (9.2.10)). This file proves that it satisfies
-the secant equation, preserves symmetry, and preserves positive definiteness exactly when the
-curvature condition `⟪y, s⟫ > 0` holds (the condition under which Dennis and Schnabel's
-Lemma 9.2.1 shows a positive definite secant update exists).
+Equations*, Prentice-Hall 1983, Section 9.2). This file proves that it satisfies the secant
+equation, preserves symmetry, and preserves positive definiteness exactly when the curvature
+condition `⟪y, s⟫ > 0` holds (the condition under which, as stated in Dennis and Schnabel's
+Section 9.2, a positive definite secant update exists).
 -/
 
 @[expose] public section
@@ -38,8 +38,7 @@ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 
 /-- **BFGS update.** For a Hessian approximation `B`, a step `s` and a gradient change `y`,
 `B⁺ v = B v - (⟪B s, v⟫ / ⟪B s, s⟫) • B s + (⟪y, v⟫ / ⟪y, s⟫) • y`, i.e.
-`B⁺ = B - (B s)(B s)ᵀ / (sᵀ B s) + y yᵀ / (yᵀ s)` (Dennis and Schnabel 1983, Section 9.2,
-equation (9.2.10)). -/
+`B⁺ = B - (B s)(B s)ᵀ / (sᵀ B s) + y yᵀ / (yᵀ s)` (Dennis and Schnabel 1983, Section 9.2). -/
 noncomputable def bfgsUpdate (B : E →L[ℝ] E) (s y : E) : E →L[ℝ] E :=
   B - (1 / ⟪B s, s⟫) • (innerSL ℝ (B s)).smulRight (B s) +
     (1 / ⟪y, s⟫) • (innerSL ℝ y).smulRight y
@@ -48,11 +47,10 @@ theorem bfgsUpdate_apply (B : E →L[ℝ] E) (s y v : E) :
     bfgsUpdate B s y v = B v - (⟪B s, v⟫ / ⟪B s, s⟫) • B s + (⟪y, v⟫ / ⟪y, s⟫) • y := by
   simp only [bfgsUpdate, add_apply, sub_apply,
     smul_apply, ContinuousLinearMap.smulRight_apply, innerSL_apply_apply,
-    smul_smul]
-  congr 2 <;> ring
+    smul_smul, one_div_mul_eq_div]
 
 /-- **The BFGS update satisfies the secant equation.** If `⟪B s, s⟫ ≠ 0` and `⟪y, s⟫ ≠ 0`, then
-`B⁺ s = y` (Dennis and Schnabel 1983, Section 9.2: "(9.2.10) obeys `H₊ s_c = y_c`"). -/
+`B⁺ s = y` (Dennis and Schnabel 1983, Section 9.2: the BFGS update "obeys `H₊ s_c = y_c`"). -/
 theorem bfgsUpdate_apply_self {B : E →L[ℝ] E} {s y : E} (hB : ⟪B s, s⟫ ≠ 0) (hy : ⟪y, s⟫ ≠ 0) :
     bfgsUpdate B s y s = y := by
   rw [bfgsUpdate_apply, div_self hB, div_self hy, one_smul, one_smul, sub_self, zero_add]
@@ -82,7 +80,7 @@ private theorem inner_bfgsUpdate_self {B : E →L[ℝ] E} (hsymm : ∀ u v, ⟪B
 
 /-- **The BFGS update preserves positive definiteness under the curvature condition.** If `B` is
 symmetric and positive definite, `s ≠ 0` and `⟪y, s⟫ > 0`, then `B⁺` is positive definite
-(Dennis and Schnabel 1983, Section 9.2 and Lemma 9.2.1). -/
+(Dennis and Schnabel 1983, Section 9.2). -/
 theorem bfgsUpdate_pos {B : E →L[ℝ] E} (hsymm : ∀ u v, ⟪B u, v⟫ = ⟪u, B v⟫)
     (hpos : ∀ v, v ≠ 0 → 0 < ⟪B v, v⟫) {s y : E} (hs : s ≠ 0) (hy : 0 < ⟪y, s⟫) :
     ∀ v, v ≠ 0 → 0 < ⟪bfgsUpdate B s y v, v⟫ := by
@@ -103,8 +101,8 @@ theorem bfgsUpdate_pos {B : E →L[ℝ] E} (hsymm : ∀ u v, ⟪B u, v⟫ = ⟪u
 
 /-- **Curvature is necessary for a positive definite secant update.** If `B⁺ = bfgsUpdate B s y`
 is positive definite, `s ≠ 0`, `⟪B s, s⟫ ≠ 0` and `⟪y, s⟫ ≠ 0`, then `⟪y, s⟫ > 0`: by the secant
-equation `⟪y, s⟫ = ⟪B⁺ s, s⟫` (the "only if" direction of Dennis and Schnabel 1983, Lemma 9.2.1,
-for the BFGS update). -/
+equation `⟪y, s⟫ = ⟪B⁺ s, s⟫` (for the BFGS update, the necessity of the curvature condition
+discussed in Dennis and Schnabel 1983, Section 9.2). -/
 theorem inner_pos_of_bfgsUpdate_pos {B : E →L[ℝ] E} {s y : E} (hs : s ≠ 0)
     (hB : ⟪B s, s⟫ ≠ 0) (hy : ⟪y, s⟫ ≠ 0)
     (hpos : ∀ v, v ≠ 0 → 0 < ⟪bfgsUpdate B s y v, v⟫) : 0 < ⟪y, s⟫ := by

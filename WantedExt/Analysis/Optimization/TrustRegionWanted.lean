@@ -30,8 +30,8 @@ finite-dimensional real inner product space, `B` a symmetric operator and `Δ > 
 
 This is Theorem 2.1 of N. I. M. Gould, D. P. Robinson and H. S. Thorne, *On solving trust-region
 and other regularised subproblems in optimization*, Math. Program. Comput. 2 (2010), with the
-identity as the norm matrix `M`; the source credits Gay (1981, Theorem 2.1) and Moré and Sorensen
-(1983, Lemma 2.1). The converse is `trustRegionModel_le_of_optimality`. -/
+identity as the norm matrix `M`; that source credits the result to Gay (1981) and to Moré and
+Sorensen (1983). The converse is `trustRegionModel_le_of_optimality`. -/
 theorem_wanted exists_optimality_of_isMinOn {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {g s : E} {B : E →L[ℝ] E} {Δ : ℝ}
     (hΔ : 0 < Δ) (hsymm : ∀ u v, ⟪B u, v⟫ = ⟪u, B v⟫) (hs : ‖s‖ ≤ Δ)
