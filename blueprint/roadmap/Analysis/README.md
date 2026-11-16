@@ -22,7 +22,7 @@ convergence of the Cesàro means of continuous periodic functions,
 [Fourier interpolation](harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/README.md) of
 radial Schwartz functions in dimensions $8$ and $24$, and
 [discrete Fourier analysis](harmonic-analysis/discrete-fourier-analysis/README.md) on finite abelian groups and the
-Boolean cube.
+Boolean cube, and [wavelets](harmonic-analysis/wavelets/README.md), from the Haar basis and conjugate mirror filters.
 
 [Banach spaces](banach-spaces/README.md) are studied through
 [duality and weak topologies](banach-spaces/duality-and-weak-topologies/README.md), from the Hahn–Banach and

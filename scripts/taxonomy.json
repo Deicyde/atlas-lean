@@ -66,10 +66,11 @@
      {"slug": "analytic-function-spaces", "title": "Spaces of analytic functions", "description": "Hardy, Bergman, Dirichlet and Fock spaces and their reproducing kernels, H^∞, boundary behaviour (Fatou, F. and M. Riesz), cyclicity and polynomial density."}
     ]},
     {"slug": "potential-theory", "title": "Potential theory", "description": "Harmonic and subharmonic functions in the plane and in R^n, harmonic conjugates, the Newton and logarithmic potentials and fundamental solutions of the Laplacian.", "msc": ["31A", "31B"], "subfields": []},
-    {"slug": "harmonic-analysis", "title": "Harmonic analysis", "description": "Fourier series, the Fourier transform on R^n, Fourier analysis on finite groups and the Boolean cube, singular integrals, and other integral transforms and moment problems.", "msc": ["42A", "42B", "43A", "44A"], "subfields": [
+    {"slug": "harmonic-analysis", "title": "Harmonic analysis", "description": "Fourier series, the Fourier transform on R^n, Fourier analysis on finite groups and the Boolean cube, wavelets and multiscale analysis, singular integrals, and other integral transforms and moment problems.", "msc": ["42A", "42B", "42C40", "43A", "44A"], "subfields": [
      {"slug": "fourier-series", "title": "Fourier series", "description": "Fourier series on the circle and torus: Fejér and Dirichlet kernels, pointwise and Cesàro convergence, Riemann–Lebesgue, uniqueness, absolutely convergent series and Wiener's theorems, periodic convolution, Fourier optimization on the torus."},
      {"slug": "fourier-transform", "title": "Fourier transform and uncertainty principles", "description": "The Fourier transform on R^n and Schwartz functions: convolution, Bochner, Hausdorff–Young, Heisenberg and fractal uncertainty, band-limited functions and Bernstein inequalities, sampling and Fourier interpolation, Kakeya sets, Beurling–Ahlfors and other singular integrals."},
      {"slug": "discrete-fourier-analysis", "title": "Discrete Fourier analysis", "description": "Fourier analysis on finite abelian groups and the Boolean cube: DFT and FFT, Plancherel, finite uncertainty, Young and Hausdorff–Young, Riesz–Thorin on finite sets, influences and noise operators."},
+     {"slug": "wavelets", "title": "Wavelets and multiscale analysis", "description": "Wavelet orthonormal bases and multiresolution approximations, the Haar system, conjugate mirror filters and fast two-channel filter banks, and wavelet scattering transforms built from cascades of wavelet modulus operators. Frames and Riesz bases of general Hilbert spaces are under Hilbert spaces; sparse approximation in bases and dictionaries is under Approximation theory."},
      {"slug": "integral-transforms", "title": "Integral transforms and moment problems", "description": "Laplace, Mellin and Radon transforms (Ramanujan's master theorem, Fourier slice theorem) and Hausdorff moment problems."}
     ]},
     {"slug": "banach-spaces", "title": "Banach space theory", "description": "Normed, Banach and topological vector spaces: duality, weak topologies, geometry of the unit ball, bases and classical sequence spaces.", "msc": ["46A", "46B"], "subfields": [
@@ -2180,6 +2181,8 @@
   "MathlibExt/Analysis/SpecificLimits/RisingProductSeries": {"to": "Analysis/sequences-and-series/convergence", "title": "Series with rising-product denominators"},
   "MathlibExt/Analysis/SpecificLimits/RootTest": {"to": "Analysis/sequences-and-series/convergence", "title": "Root test"},
   "MathlibExt/Analysis/Variational/EkelandCaristi": {"to": "Analysis/convex-analysis-and-variations", "title": "Ekeland variational principle"},
+  "MathlibExt/Analysis/Wavelet/Haar": {"to": "Analysis/harmonic-analysis/wavelets", "title": "Haar system"},
+  "MathlibExt/Analysis/Wavelet/TwoChannelFilterBank": {"to": "Analysis/harmonic-analysis/wavelets", "title": "Conjugate mirror filters"},
   "MathlibExt/Analysis/Variational/MinimizingMovement": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein gradient flows and the JKO scheme"},
   "MathlibExt/Analysis/Variational/MinimizingMovementContraction": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein gradient flows and the JKO scheme"},
   "MathlibExt/Analysis/WirsingConstant": {"to": "NumberTheory/continued-fractions-expansions", "title": "Gauss–Kuzmin–Wirsing operator"},
@@ -4974,6 +4977,7 @@
   "WantedExt/Analysis/ViscositySolutionsWanted": {"to": "Analysis/ordinary-differential-equations", "title": "Hyperbolic motions in the N-body problem"},
   "WantedExt/Analysis/VonNeumannDoubleCommutantWanted": {"to": "Analysis/operator-algebras", "title": "Von Neumann bicommutant theorem"},
   "WantedExt/Analysis/WangZahlKakeyaWanted": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Kakeya sets"},
+  "WantedExt/Analysis/Wavelet/HaarBasisWanted": {"to": "Analysis/harmonic-analysis/wavelets", "title": "Haar system"},
   "WantedExt/Analysis/WienerAtomWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Fourier coefficients of measures on the circle"},
   "WantedExt/Analysis/WienerLevyWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Absolutely convergent Fourier series"},
   "WantedExt/Analysis/WienerOneOverFWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Absolutely convergent Fourier series"},
