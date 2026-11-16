@@ -15,6 +15,18 @@ Proof: Following the Cayley-Menger/Gram-determinant argument in Lagarias, Mallow
 *Beyond the Descartes circle theorem*, Section 3, and Wikipedia's proof sketch, introduce signed
 radii, expand the planar Gram determinant in coordinates, and clear denominators.
 
+The formal statement covers circles of positive radius only; Descartes configurations containing a line (curvature
+$0$), such as the strip packing $(0, 0, 1, 1)$, are not covered here, although the algebraic consequences in the
+[Apollonian group](apollonian-group/README.md) topic allow zero entries.
+
+## Related topics
+
+- [Apollonian group](apollonian-group/README.md): the curvature quadruples of Descartes configurations and the
+  reflections that generate Apollonian packings.
+- [Complex Descartes theorem](apollonian-circle-packings/complex-descartes-theorem.md): the same relation for the
+  products curvature × center.
+
 ## Sources
 
+- J. C. Lagarias, C. L. Mallows and A. R. Wilks, *Beyond the Descartes circle theorem*, Amer. Math. Monthly 109 (2002) 338–361, arXiv:math/0101066v1, Theorem 1.1.
 - https://en.wikipedia.org/wiki/Descartes%27_theorem.
