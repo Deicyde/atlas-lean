@@ -17,3 +17,4 @@
 - [Wasserstein distances](../../../MeasureTheory/optimal-transport/wasserstein-distances/README.md):
   on a space of diameter $D$, the Wasserstein distance $W_1$ is at most $D$ times the total variation
   distance, and total variation is the optimal transport cost for the cost $1_{x \ne y}$.
+- [Hellinger distance](../hellinger-distance/README.md): for probability measures $d_{\mathrm{TV}}/\sqrt2 \le d_{\mathrm{Hell}} \le d_{\mathrm{TV}}^{1/2}$, so the two distances define the same topology.

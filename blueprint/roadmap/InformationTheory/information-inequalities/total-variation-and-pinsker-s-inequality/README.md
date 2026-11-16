@@ -18,3 +18,4 @@ For probability measures on an arbitrary measurable space, the total variation d
 - [Strong data processing and Dobrushin's coefficient](../strong-data-processing-and-dobrushin-s-coefficie/README.md)
 - [Minimax lower bounds](../../../Probability/statistical-estimation/minimax-lower-bounds/README.md)
 - [Donsker–Varadhan variational formula](../donsker-varadhan-variational-formula/README.md)
+- [Hellinger distance](../../../Probability/convergence-of-measures/hellinger-distance/README.md): another distance between probability measures, comparable to total variation on both sides.

@@ -12,3 +12,9 @@ Ensemble Kalman inversion solves an inverse problem $y = G(u) + \eta$ derivative
 - [Invariant subspace property of ensemble Kalman inversion](eki-mem-span.md)
 - [The EKI estimate cannot beat the best approximation from the initial span](inf-dist-le-dist-ensemble-mean.md)
 - [Ensemble collapse for continuous-time ensemble Kalman inversion](eki-ensemble-collapse.md)
+
+## Related topics
+
+- [Kalman filter](../../../ComputerScience/machine-learning/probabilistic-graphical-models/kalman-filter/README.md): the exact linear-Gaussian update that the ensemble update imitates with empirical covariances.
+- [Gaussian conditioning](../../distributions/gaussian-conditioning/README.md): the conditioning formula behind the Kalman gain $C^{up}(C^{pp} + \Gamma)^{-1}$.
+- [Bayesian inverse problems](../bayesian-inverse-problems/README.md): the inverse problems the method addresses, and their posteriors.
