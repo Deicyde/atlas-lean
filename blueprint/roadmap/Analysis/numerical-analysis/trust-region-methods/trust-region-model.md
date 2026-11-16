@@ -1,5 +1,13 @@
 # Quadratic trust-region model
 
-For a gradient `g` and a linear operator `B` (a Hessian
-approximation), `q(s) = ⟪g, s⟫ + ½ ⟪B s, s⟫`; the constant term `f(x)` is dropped, so the predicted
-reduction of a step `s` is `-q(s)` (Yuan, Math. Program. 151 (2015), model (2.3)).
+At an iterate with gradient $g$ and Hessian approximation $B$ (a linear operator, symmetric in
+practice), a trust-region method uses the quadratic model
+$$q(s) = g^\top s + \tfrac12\, s^\top B s ,$$
+the model $m_k(d) = f(x_k) + g_k^\top d + \tfrac12 d^\top B_k d$ of the source without its constant
+term. A trial step $s$ is computed by minimising $q$, exactly or approximately, over the ball
+$\|s\| \le \Delta$; its *predicted reduction* is $q(0) - q(s) = -q(s)$, which is compared with the
+actual reduction $f(x) - f(x + s)$ to accept the step and update $\Delta$.
+
+## Sources
+
+- Y. Yuan, *Recent advances in trust region algorithms*, Math. Program. 151 (2015), 249–281; https://lsec.cc.ac.cn/pub/yyx/papers/2015-MPB-151-249-281.pdf, subproblem (2.3)–(2.4) and ratio (2.7).
