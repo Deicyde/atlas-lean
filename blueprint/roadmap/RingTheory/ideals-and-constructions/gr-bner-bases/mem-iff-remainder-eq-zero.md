@@ -6,4 +6,5 @@ If `f ∈ I` then `r ∈ I`; a nonzero `r` would have its leading monomial divis
 
 ## Sources
 
-- D. Cox, J. Little, D. O'Shea, *Ideals, Varieties, and Algorithms*, Chapter 2, §6.
+- B. Hassett, *Math 465 Lecture Notes*, Brown University, 2002, Lecture 3, Proposition 3.8 (https://www.math.brown.edu/bhassett/teaching/465spring02/).
+- D. Cox, J. Little, D. O'Shea, *Ideals, Varieties, and Algorithms*, Ch. 2 §6 (section only).

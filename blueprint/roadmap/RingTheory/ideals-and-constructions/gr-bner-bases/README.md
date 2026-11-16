@@ -7,11 +7,10 @@ A Gröbner basis of an ideal `I` in a polynomial ring, for a monomial order, is 
 - [A Gröbner basis generates its ideal](span-eq.md)
 - [S-polynomials of a Gröbner basis reduce to zero](s-polynomial-remainder-eq-zero.md)
 - [Buchberger's criterion](is-groebner-basis-of-s-polynomial.md)
-- [Polynomials in a subset of the variables](in-vars.md)
 - [Lexicographic order and final segments of variables](lex-le-vanish.md)
 - [Elimination Theorem](elimination.md)
 
 ## Related topics
 
-- [Toric ideals and Markov bases](../toric-ideals-and-markov-bases/README.md): a Gröbner basis of a toric ideal consists of binomials and is a Markov basis, which is how Diaconis and Sturmfels compute moves.
+- [Toric ideals and Markov bases](../toric-ideals-and-markov-bases/README.md): the reduced Gröbner basis of a toric ideal consists of binomials, and its moves form a Markov basis, which is how Diaconis and Sturmfels compute moves.
 - [Hilbert's Nullstellensatz](../hilbert-s-nullstellensatz/README.md): Gröbner bases decide the membership questions that the Nullstellensatz reduces to, such as whether a system of polynomial equations has no common zero.

@@ -92,8 +92,8 @@ theorem_wanted tropicalHypersurface_eq_closure_valuationsOfZeros [IsAlgClosed K]
 with variety `X = V(I) ⊆ (K^*)ⁿ`, the intersection `trop(X) = ⋂_{f ∈ I} trop(V(f))` of the
 tropical hypersurfaces of the polynomials in `I` (Maclagan–Sturmfels, draft 2009,
 Definition 3.2.1, equation (3.1)). The zero polynomial is left out of the intersection: its
-tropical hypersurface is empty, while the source's convention makes the zero ideal tropicalize
-to all of `ℝⁿ`. -/
+tropical hypersurface is empty under Definition 3.1.1, and excluding it makes the zero ideal
+tropicalize to `ℝⁿ`, as Theorem 3.2.4 requires; the source says nothing about `f = 0`. -/
 def tropicalVariety (v : AddValuation K (WithTop ℝ)) (I : Ideal (LaurentPoly K n)) :
     Set (Fin n → ℝ) :=
   ⋂ f ∈ I, ⋂ (_ : f ≠ 0), tropicalHypersurface v f

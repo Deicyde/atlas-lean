@@ -27,11 +27,6 @@ theorem singleton_isGroebnerBasis (m : MonomialOrder (Fin 2)) (b : MvPolynomial 
   rw [m.degree_mul hq hb]
   exact le_add_self
 
-/-- The generation theorem recovers the principal ideal. -/
-example (b : MvPolynomial (Fin 2) ℚ) (hb : b ≠ 0) :
-    Ideal.span {b} = Ideal.span ({b} : Set (MvPolynomial (Fin 2) ℚ)) :=
-  (singleton_isGroebnerBasis degLex b hb).span_eq degLex
-
 /-- Membership test by the remainder criterion: `x₁ ∉ (x₀)`, because `x₁ = 0 · x₀ + x₁` is a
 division of `x₁` by `{x₀}` whose remainder `x₁` is nonzero. -/
 example : (MvPolynomial.X 1 : MvPolynomial (Fin 2) ℚ) ∉ Ideal.span {MvPolynomial.X 0} := by

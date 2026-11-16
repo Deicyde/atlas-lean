@@ -17,4 +17,4 @@ Over a field with a valuation, a Laurent polynomial `f` tropicalizes to the piec
 - [Bernstein's theorem on sparse polynomial systems](../bernstein-s-theorem-on-sparse-polynomial-systems/README.md): Newton polytopes and mixed volumes, the polyhedral side of the same picture; tropical hypersurfaces are dual to regular subdivisions of Newton polytopes.
 - [Newton polygon](../../../Algebra/polynomials/newton-polygon/README.md): the Newton polygon of a bivariate polynomial, whose regular subdivisions are dual to plane tropical curves.
 - [Valuation rings](../../../RingTheory/valuation-rings/README.md): the valued fields over which tropicalization is defined.
-- [Gröbner bases](../../../RingTheory/ideals-and-constructions/gr-bner-bases/README.md): the initial ideals `in_w(I)` of the third description of a tropical variety in the Fundamental Theorem come from Gröbner theory with weight vectors.
+- [Gröbner bases](../../../RingTheory/ideals-and-constructions/gr-bner-bases/README.md): the initial ideals `in_w(I)` of the second description of a tropical variety in the Fundamental Theorem come from Gröbner theory with weight vectors.

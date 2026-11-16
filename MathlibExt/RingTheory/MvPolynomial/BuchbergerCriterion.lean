@@ -31,9 +31,12 @@ last term has a standard representation of degree below `δ`; this lowers the nu
 reaching `δ`. When no summand reaches `δ`, the bound drops. Induction on the bound (a well-order)
 and on the number of summands reaching it concludes.
 
-Source: D. Cox, J. Little, D. O'Shea, *Ideals, Varieties, and Algorithms*, Chapter 2, §6
-(Buchberger's criterion) and §7 (Buchberger's algorithm); B. Buchberger, PhD thesis,
-Innsbruck, 1965.
+Sources: D. Cox, J. Little, D. O'Shea, *Ideals, Varieties, and Algorithms*, Chapter 2, §6,
+Theorem 6 (Buchberger's criterion) and §7 (Buchberger's algorithm, section only);
+B. Hassett, *Math 465 Lecture Notes*, Brown University, 2002, Lecture 5, Theorem 5.2, whose proof
+of `⇐` uses exactly the standard representations `S(f_i, f_j) = ∑ h_l f_l`, `LM(S) ≥ LM(h_l f_l)`,
+and the double minimality on `x^δ` and on the number of summands reaching it followed here;
+B. Buchberger, PhD thesis, Innsbruck, 1965.
 -/
 
 @[expose] public section
@@ -429,11 +432,12 @@ private theorem main {G : Set (_root_.MvPolynomial σ K)}
       exact le_self_add
 
 /-- **Buchberger's criterion** (Cox–Little–O'Shea, *Ideals, Varieties, and Algorithms*,
-Chapter 2, §6). Let `m` be a monomial order and `G` a set of nonzero polynomials over a field.
+Ch. 2 §6, Theorem 6; B. Hassett, *Math 465 Lecture Notes*, Brown University, 2002, Lecture 5,
+Theorem 5.2). Let `m` be a monomial order and `G` a set of nonzero polynomials over a field.
 If for all `g, h ∈ G` the S-polynomial `S(g, h)` can be written as `∑_{b ∈ G} q_b b` with
-`m.degree (b q_b) ≼ m.degree S(g, h)` for every `b`, then `G` is a Gröbner basis of the ideal it
-generates. Such a representation is what a division of `S(g, h)` by `G` with zero remainder
-provides, and it is the form in which the criterion's proof in the source uses the hypothesis. -/
+`m.degree (b q_b) ≼ m.degree S(g, h)` for every `b`, then `G` is a Gröbner basis of the ideal
+it generates. Such a representation is what a division of `S(g, h)` by `G` with zero remainder
+provides, and it is the form in which Hassett's proof of Theorem 5.2 uses the hypothesis. -/
 theorem isGroebnerBasis_of_sPolynomial (G : Set (_root_.MvPolynomial σ K))
     (hG0 : (0 : _root_.MvPolynomial σ K) ∉ G)
     (hS : ∀ g ∈ G, ∀ h ∈ G, ∃ q : G →₀ _root_.MvPolynomial σ K,

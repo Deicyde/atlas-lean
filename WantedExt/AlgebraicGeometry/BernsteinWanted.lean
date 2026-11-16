@@ -39,7 +39,8 @@ namespace MathlibExt.AlgebraicGeometry.BernsteinWanted
 open scoped Pointwise
 
 /-- **Newton polygon of a support.** The convex hull in `ℝ²` of a finite set `A ⊆ ℤ²` of
-exponent vectors (Sturmfels, CBMS 97, Section 3.1, `New(f)`). -/
+exponent vectors (Sturmfels, CBMS 97, Section 3.1, `New(f)`). This is the Laurent analogue of
+`NewtonPolygon.newtonPolygon`, which takes a bivariate polynomial with exponents in `ℕ²`. -/
 def newtonPolygon (A : Finset (Fin 2 → ℤ)) : Set (Fin 2 → ℝ) :=
   convexHull ℝ ((fun u : Fin 2 → ℤ ↦ fun i ↦ (u i : ℝ)) '' (A : Set (Fin 2 → ℤ)))
 

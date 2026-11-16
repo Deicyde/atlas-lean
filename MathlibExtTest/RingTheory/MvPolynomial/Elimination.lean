@@ -29,17 +29,13 @@ theorem final_segment : ∀ i ∉ ({1} : Set (Fin 2)), ∀ j ∈ ({1} : Set (Fin
 /-- Non-vacuity: a lexicographic Gröbner basis of `I ⊆ ℚ[x₀, x₁]` yields one of `I ∩ ℚ[x₁]`. -/
 example {G : Set (MvPolynomial (Fin 2) ℚ)} {I : Ideal (MvPolynomial (Fin 2) ℚ)}
     (hG : IsGroebnerBasis lex G I) (f : MvPolynomial (Fin 2) ℚ) (hf : f ∈ I)
-    (hfS : InVars {1} f) (hf0 : f ≠ 0) :
-    ∃ g ∈ G, InVars {1} g ∧ g ≠ 0 ∧ lex.degree g ≤ lex.degree f :=
-  (elimination hG final_segment).2 f hf hfS hf0
+    (hfS : f ∈ MvPolynomial.supported ℚ {1}) (hf0 : f ≠ 0) :
+    ∃ g ∈ G, g ∈ MvPolynomial.supported ℚ {1} ∧ g ≠ 0 ∧ lex.degree g ≤ lex.degree f :=
+  elimination hG final_segment f hf hfS hf0
 
-/-- The variable `x₁` involves only `x₁`. -/
-example : InVars ({1} : Set (Fin 2)) (MvPolynomial.X 1 : MvPolynomial (Fin 2) ℚ) := by
-  intro d hd i hi
-  rw [MvPolynomial.support_X, Finset.mem_singleton] at hd
-  subst hd
-  rw [Set.mem_singleton_iff] at hi
-  simp [Ne.symm hi]
+/-- The variable `x₁` lies in `ℚ[x₁]`. -/
+example : (MvPolynomial.X 1 : MvPolynomial (Fin 2) ℚ) ∈ MvPolynomial.supported ℚ {1} :=
+  MvPolynomial.X_mem_supported.2 rfl
 
 /-- The lexicographic lemma: `x₁² ≤ x₁³` and `x₁³` vanishes at `x₀`, so `x₁²` does. -/
 example : (Finsupp.single (1 : Fin 2) 2 : Fin 2 →₀ ℕ) 0 = 0 :=
