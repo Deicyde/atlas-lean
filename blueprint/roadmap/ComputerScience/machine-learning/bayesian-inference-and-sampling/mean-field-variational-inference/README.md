@@ -39,3 +39,7 @@
 - [Error of an approximate fixed-point iteration, closed form](dist-iterate-le-of-dist-le-2.md)
 - [Error of an approximate mean-field iteration](dist-iterate-le-of-dist-le-mean-field-ma.md)
 - [Quadratic binary mean-field free energy](quadratic-binary-free-energy.md)
+
+## Related topics
+
+- [Expectation–maximization algorithm](../expectation-maximization-algorithm/README.md): the evidence lower bound with the exact posterior, where it is tight.

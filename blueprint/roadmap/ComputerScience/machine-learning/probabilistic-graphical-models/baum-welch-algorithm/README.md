@@ -27,3 +27,8 @@
 - [The expected starts from forward-backward](init-count-eq.md)
 - [The expected emissions from forward-backward](emit-count-eq.md)
 - [The expected transitions from forward-backward](trans-count-eq.md)
+
+## Related topics
+
+- [Expectation–maximization algorithm](../../bayesian-inference-and-sampling/expectation-maximization-algorithm/README.md): the general EM monotonicity theorem that the Baum–Welch iteration instantiates.
+- [Hidden Markov models](../hidden-markov-models/README.md): the forward–backward recursions that compute the E-step.

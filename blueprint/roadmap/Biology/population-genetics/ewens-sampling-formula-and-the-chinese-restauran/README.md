@@ -36,3 +36,10 @@
 - [The block sizes follow Hoppe's urn](crp-map-block-sizes-eq-hoppe-law.md)
 - [The allelic partition of the Chinese restaurant process follows the Ewens sampling formula](crp-map-block-sizes.md)
 - [Expected number of tables](sum-crp-to-real-mul-card-parts.md)
+
+## Related topics
+
+- [Infinite mixture models](../../../Probability/bayesian-statistics/infinite-mixture-models/README.md): the Chinese restaurant process as the infinite limit of finite Dirichlet mixtures, the prior of infinite mixture models in machine learning.
+- [Blackwell–MacQueen urn](../../../Probability/bayesian-statistics/blackwell-macqueen-urn/README.md): the ties among draws from a Dirichlet process follow the Chinese restaurant process.
+- [Dirichlet process](../../../Probability/bayesian-statistics/dirichlet-process/README.md): the random measure whose draws, through their ties, produce the Chinese restaurant process.
+- [Indian buffet process](../../../Probability/bayesian-statistics/indian-buffet-process/README.md): the analogue for latent feature models.

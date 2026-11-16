@@ -56,3 +56,10 @@
 - [Finite-dimensional marginals of the Dirichlet process](map-dirichlet-process-partition.md)
 - [The moments of the Dirichlet process are the Blackwell–MacQueen urn](lintegral-dirichlet-process-prod.md)
 - [Ferguson's conjugacy](set-lintegral-dirichlet-process-prod.md)
+
+## Related topics
+
+- [Blackwell–MacQueen urn](../blackwell-macqueen-urn/README.md): the predictive rule of successive draws from a Dirichlet process.
+- [Ewens sampling formula and the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/README.md): the law of the partition of the draws into ties.
+- [Infinite mixture models](../infinite-mixture-models/README.md): the same partition law as the limit of finite symmetric Dirichlet mixtures, the prior of a Dirichlet process mixture.
+- [Indian buffet process](../indian-buffet-process/README.md): the analogous prior for latent features, where objects may share several features.

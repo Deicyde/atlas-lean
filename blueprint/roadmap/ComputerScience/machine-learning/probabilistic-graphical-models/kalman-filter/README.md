@@ -14,3 +14,8 @@
 - [The predict step is exact](map-predict.md)
 - [The update step is the exact posterior](cond-distrib-update.md)
 - [One filter step is the exact posterior](cond-distrib-step.md)
+
+## Related topics
+
+- [Gaussian conditioning](../../../../Probability/distributions/gaussian-conditioning/README.md): the Gaussian Bayes update behind each filtering step.
+- [Hidden Markov models](../hidden-markov-models/README.md): the discrete-state analogue with the forward algorithm.

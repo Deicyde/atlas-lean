@@ -25,3 +25,8 @@
 - [The marginal of a linear-Gaussian model](map-linear-add-of-indep-fun.md)
 - [Bayes' theorem for a linear-Gaussian observation](cond-distrib-linear-add-of-indep-fun.md)
 - [Bayes' theorem for a linear-Gaussian observation, precision form](cond-distrib-linear-add-of-indep-fun-pre.md)
+
+## Related topics
+
+- [Gaussian process regression](../../../ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/README.md): the Gaussian-process posterior and marginal likelihood as instances of conditioning and linear-Gaussian marginals.
+- [Kalman filter](../../../ComputerScience/machine-learning/probabilistic-graphical-models/kalman-filter/README.md): sequential conditioning in a linear-Gaussian state-space model.
