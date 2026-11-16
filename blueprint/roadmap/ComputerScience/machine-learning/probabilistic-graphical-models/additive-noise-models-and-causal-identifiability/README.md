@@ -11,6 +11,10 @@ Observational data identify a causal graph in general only up to Markov equivale
 
 - [A reversible linear additive noise model is Gaussian](gaussian-of-indep-fun-backward.md)
 
+## Nonlinear additive noise models
+
+- [Reversible additive noise models satisfy the identifiability differential equation](identifiability-ode-of-reversible.md)
+
 ## Related topics
 
 - [Structural causal models and counterfactuals](../structural-causal-models-and-counterfactuals/README.md): structural equations $X_k = f_k(X_{\mathrm{pa}(k)}, U_k)$ with independent disturbances, of which $Y = \varphi X + N$ is the simplest continuous instance.
