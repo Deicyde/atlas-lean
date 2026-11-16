@@ -38,6 +38,8 @@ Appendix B).
   `M λ (α ⬝ α)` for a solution of (2.12) (equation (2.14)).
 * `inner_expansion_featureMap`: the principal-component projections
   `⟪V, Φ(x)⟫ = ∑ᵢ αᵢ k(xᵢ, x)` need only kernel evaluations (equation (2.15)).
+* `centredFeature`, `sum_centredFeature` and `gram_centredFeature`: centring in feature space,
+  `K̃ = K - 1_M K - K 1_M + 1_M K 1_M` (Appendix B, equations (B.1) and (B.3)).
 
 ## References
 
@@ -193,5 +195,39 @@ theorem norm_sq_expansion_of_gram_mulVec_eq (Φ : X → F) (x : Fin M → X) {α
     {lam : ℝ} (hα : ((M : ℝ) * lam) • α = gram Φ x *ᵥ α) :
     ‖expansion Φ x α‖ ^ 2 = ((M : ℝ) * lam) * (α ⬝ᵥ α) := by
   rw [norm_sq_expansion, ← hα, dotProduct_smul, smul_eq_mul]
+
+/-! ### Centring in feature space -/
+
+/-- **Centred feature vectors** (Schölkopf, Smola and Müller, *Nonlinear component analysis as a
+kernel eigenvalue problem*, Neural Comput. 10 (1998), Appendix B, equation (B.1)):
+`Φ̃(xᵢ) = Φ(xᵢ) - (1/M) ∑ₘ Φ(xₘ)`. -/
+noncomputable def centredFeature (Φ : X → F) (x : Fin M → X) (i : Fin M) : F :=
+  Φ (x i) - (M : ℝ)⁻¹ • ∑ m, Φ (x m)
+
+/-- **The centred feature vectors are centred** (Schölkopf, Smola and Müller, *Nonlinear
+component analysis as a kernel eigenvalue problem*, Neural Comput. 10 (1998), Appendix B):
+`∑ᵢ Φ̃(xᵢ) = 0`. -/
+theorem sum_centredFeature (Φ : X → F) (x : Fin M → X) : ∑ i, centredFeature Φ x i = 0 := by
+  rcases Nat.eq_zero_or_pos M with rfl | hM
+  · simp
+  have hM' : (M : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr hM.ne'
+  simp only [centredFeature, Finset.sum_sub_distrib, Finset.sum_const, Finset.card_univ,
+    Fintype.card_fin]
+  rw [← Nat.cast_smul_eq_nsmul ℝ, smul_smul, mul_inv_cancel₀ hM', one_smul, sub_self]
+
+/-- **The centred Gram matrix** (Schölkopf, Smola and Müller, *Nonlinear component analysis as a
+kernel eigenvalue problem*, Neural Comput. 10 (1998), Appendix B, equation (B.3)). With
+`(1_M)ᵢⱼ = 1/M`, the Gram matrix of the centred feature vectors is
+`K̃ = K - 1_M K - K 1_M + 1_M K 1_M`, computed from the kernel values alone. -/
+theorem gram_centredFeature (Φ : X → F) (x : Fin M → X) :
+    gram (centredFeature Φ x) id =
+      gram Φ x - Matrix.of (fun _ _ => (M : ℝ)⁻¹) * gram Φ x -
+        gram Φ x * Matrix.of (fun _ _ => (M : ℝ)⁻¹) +
+        Matrix.of (fun _ _ => (M : ℝ)⁻¹) * gram Φ x * Matrix.of (fun _ _ => (M : ℝ)⁻¹) := by
+  ext i j
+  simp only [gram, centredFeature, id, Matrix.of_apply, Matrix.sub_apply, Matrix.add_apply,
+    Matrix.mul_apply, inner_sub_left, inner_sub_right, real_inner_smul_left,
+    real_inner_smul_right, sum_inner, inner_sum, Finset.sum_mul, Finset.mul_sum]
+  ring_nf
 
 end MathlibExt.Probability.Statistics.KernelPCA

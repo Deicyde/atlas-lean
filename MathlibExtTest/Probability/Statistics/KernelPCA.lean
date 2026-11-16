@@ -52,4 +52,14 @@ example : ‖expansion (fun t : ℝ => t) (fun _ : Fin 2 => (1 : ℝ)) fun _ => 
 example : covOp (fun t : ℝ => t) (fun i : Fin 0 => i.elim0) (1 : ℝ) = (0 : ℝ) • (1 : ℝ) := by
   simp [covOp]
 
+/-- Centring on `ℝ`: the points `1, 3` have mean `2`, so the first centred feature is `-1`. -/
+example : centredFeature (fun t : ℝ => t) ![(1 : ℝ), 3] 0 = -1 := by
+  simp [centredFeature, Fin.sum_univ_two]
+  norm_num
+
+/-- The centred Gram matrix formula on the same data: `K̃₀₁ = ⟪-1, 1⟫ = -1`. -/
+example : gram (centredFeature (fun t : ℝ => t) ![(1 : ℝ), 3]) id 0 1 = -1 := by
+  simp [gram, centredFeature, Fin.sum_univ_two]
+  norm_num
+
 end MathlibExtTest.Probability.Statistics.KernelPCA

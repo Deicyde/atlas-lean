@@ -24,6 +24,14 @@ Kernel PCA (Schölkopf, Smola and Müller 1998) is principal component analysis 
 - [Normalization of kernel principal axes](norm-sq-expansion-of-gram-mul-vec-eq.md)
 - [Kernel PCA projections](inner-expansion-feature-map.md)
 
+## Centring in feature space
+
+The covariance operator is the covariance of the features only for centred features, and the mean of the features cannot be formed explicitly; the Gram matrix of the centred features is nevertheless a function of the kernel matrix.
+
+- [Centred feature vectors](centred-feature.md)
+- [The centred feature vectors are centred](sum-centred-feature.md)
+- [The centred Gram matrix](gram-centred-feature.md)
+
 ## Related topics
 
 - [Principal component analysis](../principal-component-analysis/README.md): kernel PCA is PCA of the feature vectors; with the linear kernel $k(x, y) = x^\top y$ it computes the nonzero eigenvalues of $\frac{1}{M} \sum_j x_j x_j^\top$ (for centred data, the sample covariance up to the factor $\frac{M-1}{M}$) from the $M \times M$ Gram matrix instead of the $p \times p$ matrix.
