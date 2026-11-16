@@ -50,3 +50,12 @@
 
 - [Fourier inversion on the subsets of a finite set](fourier-inversion.md)
 - [Plancherel identity on the subsets of a finite set](fourier-plancherel.md)
+- [Convolution on the Boolean cube](bool-conv.md)
+- [Convolution is commutative](bool-conv-comm.md)
+- [Convolution theorem on the Boolean cube](bool-fourier-coeff-bool-conv.md)
+- [Characters are multiplicative](cube-chi-cube-mul.md)
+- [Product on the Boolean cube](cube-mul.md)
+- [The cube product is commutative](cube-mul-comm.md)
+- [Every point is its own inverse](cube-mul-cube-mul-self.md)
+- [Signs multiply under the cube product](cube-val-beq.md)
+- [Translation-invariance of averages](expect-comp-cube-mul.md)
