@@ -9,6 +9,8 @@ A random subset $R$ of a finite ground set contains each element independently; 
 - [Janson's correlation sum `Δ`](janson-delta.md)
 - [First Janson inequality](janson-inequality.md)
 - [Second Janson inequality](janson-inequality-of-le.md)
+- [The event that a random subset avoids a given set](avoid-event.md)
+- [Probability that a random subset avoids a given set](random-subset-law-real-avoid-event.md)
 
 ## Related topics
 

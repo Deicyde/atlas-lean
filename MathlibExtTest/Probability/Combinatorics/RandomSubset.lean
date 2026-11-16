@@ -34,6 +34,13 @@ example (p : Fin 3 → I) :
   rw [randomSubsetLaw_real_containsEvent]
   simp
 
+/-- With every element kept with probability `1/2`, a fixed pair is avoided with probability
+`1/4`. -/
+example : (randomSubsetLaw (fun _ : Fin 4 => (⟨1 / 2, by norm_num, by norm_num⟩ : I))).real
+    (avoidEvent {0, 1}) = 1 / 4 := by
+  rw [randomSubsetLaw_real_avoidEvent]
+  norm_num
+
 /-- The events `S ⊆ R` are measurable. -/
 example (S : Finset (Fin 5)) : MeasurableSet (containsEvent S) :=
   measurableSet_containsEvent S

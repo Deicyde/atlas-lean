@@ -26,10 +26,12 @@ constant.
 
 * `randomSubsetLaw p`: the law of the random subset, `Measure.pi` of `Ber(true, false, p a)`.
 * `containsEvent S`: the event `S ⊆ R` for a finite set `S ⊆ α`.
+* `avoidEvent S`: the event `S ∩ R = ∅`.
 
 ## Main result
 
 * `randomSubsetLaw_real_containsEvent`: `P(S ⊆ R) = ∏_{a ∈ S} p a`.
+* `randomSubsetLaw_real_avoidEvent`: `P(S ∩ R = ∅) = ∏_{a ∈ S} (1 - p a)`.
 
 Reference: Y. Zhao, *The Probabilistic Method in Combinatorics*, MIT 18.218 lecture notes,
 Spring 2019, Setup 7.10 (https://yufeizhao.com/pm/sp19/pmnotes.pdf).
@@ -101,6 +103,51 @@ theorem randomSubsetLaw_real_containsEvent [Fintype α] (p : α → I) (S : Fins
     simp only [ha, ite_true]
     exact bernoulliMeasure_real_apply_of_mem_of_notMem (p a) (measurableSet_singleton true)
       rfl (by simp)
+  rw [h1, h2, mul_one]
+
+/-- **The event that a random subset avoids a given set.** For a finite set `S ⊆ α`, the set of
+indicators `ω : α → Bool` with `ω a = false` for every `a ∈ S`, that is, the event
+`S ∩ R = ∅` (Y. Zhao, *The Probabilistic Method in Combinatorics*, MIT 18.218 notes, 2019,
+proof of Theorem 1.4, where a set of `k` vertices spans no edge of the random colour class). -/
+def avoidEvent (S : Finset α) : Set (α → Bool) :=
+  {ω | ∀ a ∈ S, ω a = false}
+
+lemma avoidEvent_eq_pi (S : Finset α) [DecidablePred (· ∈ S)] :
+    avoidEvent S = Set.univ.pi (fun a => if a ∈ S then ({false} : Set Bool) else Set.univ) := by
+  ext ω
+  simp only [avoidEvent, Set.mem_ofPred_eq, Set.mem_pi, Set.mem_univ, true_implies]
+  constructor
+  · intro h a
+    by_cases ha : a ∈ S
+    · simp [ha, h a ha]
+    · simp [ha]
+  · intro h a ha
+    simpa [ha] using h a
+
+/-- **Probability that a random subset avoids a given set.** If `R` contains each element `a`
+independently with probability `p a`, then `P(S ∩ R = ∅) = ∏_{a ∈ S} (1 - p a)` (Y. Zhao, *The
+Probabilistic Method in Combinatorics*, MIT 18.218 notes, 2019, proof of Theorem 1.4 for
+`p = 1/2`). -/
+theorem randomSubsetLaw_real_avoidEvent [Fintype α] (p : α → I) (S : Finset α) :
+    (randomSubsetLaw p).real (avoidEvent S) = ∏ a ∈ S, (1 - (p a : ℝ)) := by
+  classical
+  rw [avoidEvent_eq_pi, measureReal_def, randomSubsetLaw, Measure.pi_pi,
+    ENNReal.toReal_prod, ← Finset.prod_filter_mul_prod_filter_not Finset.univ (· ∈ S)]
+  have h1 : ∏ a ∈ Finset.univ.filter (fun a => a ∉ S),
+      ((bernoulliMeasure true false (p a))
+        (if a ∈ S then ({false} : Set Bool) else Set.univ)).toReal = 1 := by
+    refine Finset.prod_eq_one (fun a ha => ?_)
+    simp only [Finset.mem_filter] at ha
+    simp [ha.2]
+  have h2 : ∏ a ∈ Finset.univ.filter (fun a => a ∈ S),
+      ((bernoulliMeasure true false (p a))
+        (if a ∈ S then ({false} : Set Bool) else Set.univ)).toReal =
+        ∏ a ∈ S, (1 - (p a : ℝ)) := by
+    rw [Finset.filter_mem_eq_inter, Finset.univ_inter]
+    refine Finset.prod_congr rfl (fun a ha => ?_)
+    simp only [ha, ite_true]
+    exact bernoulliMeasure_real_apply_of_notMem_of_mem (p a) (measurableSet_singleton false)
+      (by simp) rfl
   rw [h1, h2, mul_one]
 
 end MathlibExt.Probability.Combinatorics.RandomSubset
