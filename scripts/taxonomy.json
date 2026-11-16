@@ -1492,6 +1492,7 @@
   "CSLibExt/MachineLearning/Bayesian/LinearRegression": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Bayesian linear regression"},
   "CSLibExt/MachineLearning/Bayesian/NormalNormal": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Conjugate priors"},
   "CSLibExt/MachineLearning/Classification/LogisticSVM": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Logistic regression and support vector machines"},
+  "CSLibExt/MachineLearning/ClassificationCalibration": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Classification-calibrated losses"},
   "CSLibExt/MachineLearning/Factorization/NMF": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Non-negative matrix factorization"},
   "CSLibExt/MachineLearning/GaussianProcessRegression": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Gaussian process regression"},
   "CSLibExt/MachineLearning/Generative/BayesClassifier": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bayes classifier"},
