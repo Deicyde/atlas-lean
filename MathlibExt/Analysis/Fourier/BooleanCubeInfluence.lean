@@ -51,9 +51,9 @@ Mathlib's uniform averages `𝔼 x, f x` (`Finset.expect`).
 
 ## Implementation notes
 
-The `bool` prefix follows `boolFourierCoeff`, the coefficient of a function on `BoolCube n`:
-`BooleanCube.edgeInfluence` and `BooleanCube.totalInfluence` already name the influences of
-set families in `MathlibExt.Analysis.Fourier.BooleanThresholds`.
+The `bool` prefix follows `boolFourierCoeff`, the coefficient of a function on `BoolCube n`,
+and keeps these names apart from the influences of the set-family developments (the KKL and
+OSSS modules under `CSLibExt.Complexity.BooleanFunctions`).
 
 ## References
 
