@@ -47,7 +47,6 @@ for a continuous velocity.
 - [Shuffle product identity (Ree)](signature-mul-signature.md)
 - [Lévy area](levy-area.md)
 - [Second level of the signature: increments and Lévy area](signature-pair-eq.md)
-- [Splitting a sum over words by the last letter](sum-fin-succ-of-fn.md)
 - [Composite linear map along a word](word-op.md)
 - [Truncated signature series of a linear controlled equation](signature-series.md)
 - [Picard recursion of the signature series](signature-series-succ.md)
@@ -65,8 +64,9 @@ for a continuous velocity.
 - [Euler method](../../../Analysis/numerical-analysis/euler-method/README.md): on each step the
   Euler scheme for a controlled equation uses only the first level of the signature, the
   increment; higher-order schemes for controlled equations use the higher levels.
-- [Quadratic variation of Brownian motion](../quadratic-variation-of-brownian-motion/README.md):
+- [Quadratic variation of Brownian motion](../../../Probability/stochastic-calculus/quadratic-variation-of-brownian-motion/README.md):
   Brownian paths have unbounded variation, so their iterated integrals are not Riemann–Stieltjes
   integrals; a rough path supplies the second level (the Lévy area) as extra data.
-- [Itô integral](../it-integral/README.md): the stochastic integral that defines the iterated
-  integrals of Brownian motion.
+- [Itô integral](../../../Probability/stochastic-calculus/it-integral/README.md): the Itô (or
+  Stratonovich) integral defines the iterated integrals of Brownian motion; the Stratonovich lift
+  is the geometric rough path.

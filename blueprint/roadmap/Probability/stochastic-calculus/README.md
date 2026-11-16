@@ -1,6 +1,6 @@
 # Brownian motion and stochastic calculus
 
-Continuous-time processes with continuous paths or independent increments: the construction and sample-path properties of Brownian motion, Kolmogorov's continuity theorem, Blumenthal-type zero–one laws, the simple and strong Markov properties and the reflection principle, quadratic variation, the Itô integral and Itô's formula, Lévy's characterisation and Girsanov's theorem, stochastic differential equations, the Ornstein–Uhlenbeck process, Fokker–Planck equations for diffusions, and rough analysis: signatures of paths (iterated integrals, Chen's identity, the shuffle identity, uniqueness up to tree-like equivalence) and rough paths.
+Continuous-time processes with continuous paths or independent increments: the construction and sample-path properties of Brownian motion, Kolmogorov's continuity theorem, Blumenthal-type zero–one laws, the simple and strong Markov properties and the reflection principle, quadratic variation, the Itô integral and Itô's formula, Lévy's characterisation and Girsanov's theorem, stochastic differential equations, the Ornstein–Uhlenbeck process, and Fokker–Planck equations for diffusions.
 
 - [Construction and sample paths of Brownian motion](construction-and-sample-paths-of-brownian-motion/README.md)
 - [Blumenthal zero–one law](blumenthal-zero-one-law/README.md)
@@ -14,9 +14,6 @@ Continuous-time processes with continuous paths or independent increments: the c
 - [Girsanov's theorem for a constant drift](has-law-sub-drift-with-density.md)
 - [Strong solutions of SDEs with Lipschitz coefficients](sde-lipschitz-exists-unique.md)
 - [Ornstein–Uhlenbeck process](ornstein-uhlenbeck-process/README.md)
-- [Signature of a path](signature-of-a-path/README.md)
-- [Tree-like paths and uniqueness of the signature](tree-like-paths-and-uniqueness-of-the-signature/README.md)
-- [Rough paths and the extension theorem](rough-paths-and-the-extension-theorem/README.md)
 
 ## Related topics
 
@@ -28,3 +25,6 @@ Continuous-time processes with continuous paths or independent increments: the c
   Markov properties.
 - [Branching processes](../branching-processes/README.md): Galton–Watson trees, whose contour
   processes converge to the Brownian excursion (Aldous; Le Gall, *Random trees and applications*).
+- [Rough paths and path signatures](../../Analysis/rough-paths-and-path-signatures/README.md): the
+  pathwise theory of controlled differential equations; Brownian motion with its Lévy area is the
+  basic example of a rough path that is not of bounded variation.

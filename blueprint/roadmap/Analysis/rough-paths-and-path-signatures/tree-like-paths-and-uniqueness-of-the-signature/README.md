@@ -12,6 +12,7 @@ the theorem to weakly geometric rough paths (Adv. Math. 293 (2016), Theorem 1.1)
 - [Tree-like path (Hambly–Lyons)](is-tree-like.md)
 - [Constant paths are tree-like](is-tree-like-const.md)
 - [A segment traversed out and back is tree-like](is-tree-like-out-and-back.md)
+- [A tree-like path is a loop](apply-eq.md)
 - [Hambly–Lyons uniqueness theorem: trivial signature iff tree-like](is-tree-like-iff-signature-eq-tensor-one.md)
 
 ## Related topics

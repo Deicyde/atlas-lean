@@ -11,8 +11,10 @@ So a $p$-rough path, a multiplicative functional of degree $\lfloor p \rfloor$, 
 higher iterated integrals, and hence a signature: for a path of bounded variation, $p = 1$, the
 extension of its increments is its [signature](../signature-of-a-path/signature.md); for Brownian
 motion, $2 < p < 3$, the two levels are the increments and the Lévy area. Fewer levels do not
-suffice: for paths of finite $p$-variation with $p \ge 2$ there is no unique candidate for the
-iterated integrals (Chevyrev and Kormilitzin, arXiv:1603.03788v2, §1.5.1).
+suffice: given a multiplicative functional of degree $n < \lfloor p \rfloor$ and finite
+$p$-variation, an extension of finite $p$-variation, if one exists, is never unique (Lyons 1998,
+Remark 2.2.1(2); compare Chevyrev and Kormilitzin, §1.5.1, for paths of infinite $p$-variation
+for every $p < 2$).
 
 The Lean statement uses coordinates over words and the $\ell^1$ norm of each tensor level, an
 admissible family of tensor norms in Lyons's sense.
@@ -20,7 +22,7 @@ admissible family of tensor norms in Lyons's sense.
 ## Sources
 
 - T. Lyons, *Differential equations driven by rough signals*, Rev. Mat. Iberoam. 14 (1998),
-  Theorem 2.2.1 (with Definition 2.1.2 and Lemma 2.1.1).
+  Theorem 2.2.1 and Remark 2.2.1(2) (with Definition 2.1.2 and Lemma 2.1.1).
 - I. Chevyrev and A. Kormilitzin, *A primer on the signature method in machine learning*,
   arXiv:1603.03788v2, §1.5.1.
 - H. Boedihardjo, X. Geng, T. Lyons and D. Yang, *The signature of a rough path: uniqueness*,

@@ -6,7 +6,8 @@ $$\| X_t - X_s \| \le h(s) + h(t) - 2 \inf_{u \in [s,t]} h(u) \qquad \text{for a
 The right-hand side is the distance between the points at heights $h(s)$ and $h(t)$ in the
 $\mathbb{R}$-tree coded by $h$, so a tree-like path factors through an $\mathbb{R}$-tree: it only
 explores branches that it later retraces. Constant paths and a segment run out and back are
-tree-like.
+tree-like. The definition is meant for $T \ge 0$; for $T < 0$ the interval is empty and every path
+qualifies.
 
 ## Sources
 

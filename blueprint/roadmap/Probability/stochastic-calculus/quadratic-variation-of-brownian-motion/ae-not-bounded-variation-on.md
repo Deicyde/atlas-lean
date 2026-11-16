@@ -18,6 +18,6 @@ Chapter 4).
 
 - [Itô integral](../it-integral/README.md): because the paths have unbounded variation, `∫ H dB`
   cannot be a pathwise Lebesgue–Stieltjes integral and is defined instead as an `L²` limit.
-- [Signature of a path](../signature-of-a-path/README.md): for the same reason the iterated
+- [Signature of a path](../../../Analysis/rough-paths-and-path-signatures/signature-of-a-path/README.md): for the same reason the iterated
   integrals of a Brownian path are not defined pathwise; rough path theory adds the second level
   (the Lévy area) to the path as data.

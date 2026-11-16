@@ -15,7 +15,7 @@ approximate every continuous function uniformly on every compact set.
 
 ## Background
 
-- [Universal approximation by linear functionals of the signature](../../Probability/stochastic-calculus/signature-of-a-path/exists-signature-linear-approx.md):
+- [Universal approximation by linear functionals of the signature](../rough-paths-and-path-signatures/signature-of-a-path/exists-signature-linear-approx.md):
   the corresponding density theorem for continuous functions of paths, with signature terms in
   place of neurons.
 
