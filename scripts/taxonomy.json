@@ -3903,6 +3903,7 @@
   "MathlibExt/Probability/HoeffdingBounded": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
   "MathlibExt/Probability/Hypercontractivity": {"to": "Probability/concentration-inequalities", "title": "Bonami–Beckner hypercontractivity"},
   "MathlibExt/Probability/IndependentIncrementsMarkovProperty": {"to": "Probability/stochastic-calculus", "title": "Markov property of processes with independent increments"},
+  "MathlibExt/Probability/InfiniteMixtureLimit": {"to": "Probability/bayesian-statistics", "title": "Infinite mixture models"},
   "MathlibExt/Probability/InfinitelyDivisible": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Infinitely divisible distributions"},
   "MathlibExt/Probability/ItoDensity": {"to": "Probability/stochastic-calculus", "title": "Itô integral"},
   "MathlibExt/Probability/ItoFormula": {"to": "Probability/stochastic-calculus", "title": "Itô's formula"},
