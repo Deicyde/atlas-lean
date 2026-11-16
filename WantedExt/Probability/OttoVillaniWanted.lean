@@ -38,7 +38,7 @@ The statements below follow the versions we read:
 @[expose] public section
 
 open MeasureTheory InformationTheory
-open scoped ENNReal
+open scoped ENNReal ContDiff
 
 open MathlibExt.MeasureTheory.OptimalTransport.Wasserstein (wasserstein)
 open MathlibExt.Probability.LogSobolevTalagrand (SatisfiesLogSobolev SatisfiesTalagrand)
@@ -58,9 +58,9 @@ theorem_wanted satisfiesTalagrand_of_satisfiesLogSobolev {X : Type*} [MetricSpac
     (hm : SatisfiesLogSobolev (m : Measure X) α) :
     SatisfiesTalagrand m (2 / α)
 
-/-- **HWI inequality (Otto–Villani), nonnegative curvature.** Let `V : E → ℝ` be a convex `C²`
-function on a finite-dimensional real inner product space with `μ = e^{-V} dx` a probability
-measure. For every smooth positive `f` with `∫ f dμ = 1`, writing `ν = f μ`,
+/-- **HWI inequality (Otto–Villani), nonnegative curvature.** Let `V : E → ℝ` be a smooth
+(`C^∞`) convex function on a finite-dimensional real inner product space with `μ = e^{-V} dx` a
+probability measure. For every smooth (`C^∞`) positive `f` with `∫ f dμ = 1`, writing `ν = f μ`,
 
 `∫ f log f dμ ≤ W₂(ν, μ) · (∫ |∇f|² / f dμ)^{1/2}`,
 
@@ -71,10 +71,10 @@ Proceedings of the ICM, Seoul 2014, Theorem 4.1, under `CD(0, ∞)`, which on `�
 (2000)). -/
 theorem_wanted klDiv_le_wasserstein_mul_sqrt_fisher {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]
-    {V : E → ℝ} (hV : ContDiff ℝ 2 V) (hVconv : ConvexOn ℝ Set.univ V)
+    {V : E → ℝ} (hV : ContDiff ℝ ∞ V) (hVconv : ConvexOn ℝ Set.univ V)
     (μ : ProbabilityMeasure E)
     (hμ : (μ : Measure E) = volume.withDensity fun x => ENNReal.ofReal (Real.exp (-V x)))
-    {f : E → ℝ} (hf : ContDiff ℝ ⊤ f) (hfpos : ∀ x, 0 < f x)
+    {f : E → ℝ} (hf : ContDiff ℝ ∞ f) (hfpos : ∀ x, 0 < f x)
     (hfint : ∫ x, f x ∂(μ : Measure E) = 1)
     (ν : ProbabilityMeasure E)
     (hν : (ν : Measure E) = (μ : Measure E).withDensity fun x => ENNReal.ofReal (f x)) :

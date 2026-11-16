@@ -6,8 +6,9 @@ $\alpha > 0$. Then $m$ satisfies [Talagrand's inequality](satisfies-talagrand.md
 $2/\alpha$:
 $$W_2(\mu, m)^2 \le \frac{2}{\alpha} \operatorname{KL}(\mu \,\|\, m) \quad \text{for every probability measure } \mu.$$
 
-Otto and Villani proved it on Riemannian manifolds through Otto's formal Riemannian structure on
-the Wasserstein space: along the heat flow $\mu_t$ started at $\mu$, the entropy
+Otto and Villani proved it on Riemannian manifolds using Otto's formal Riemannian calculus on the
+Wasserstein space. Gigli and Ledoux present the argument as follows (their Section 3, after
+Gigli, Kuwada and Ohta, who first put forward the key metric-speed bound): along the heat flow $\mu_t$ started at $\mu$, the entropy
 $\varphi(t) = \operatorname{Ent}_m(\mu_t)$ has $\varphi' = -I(\mu_t)$ (the Fisher information), the
 metric speed satisfies $|\dot\mu_t|^2 \le I(\mu_t)$, and the log-Sobolev inequality
 $I \ge 2\alpha\varphi$ turns these into
@@ -22,4 +23,5 @@ recovers [Talagrand's inequality for the Gaussian measure](../talagrand-std-gaus
 ## Sources
 
 - N. Gigli, M. Ledoux, *From log Sobolev to Talagrand: a quick proof*, Discrete Contin. Dyn. Syst. Ser. A (2013); preprint at https://cvgmt.sns.it/paper/1689/, Theorem 5.3 and Section 3.
+- N. Gigli, K. Kuwada, S. Ohta, *Heat flow on Alexandrov spaces* (cited by Gigli and Ledoux as their reference [6] for the metric-speed bound).
 - F. Otto, C. Villani, *Generalization of an inequality by Talagrand and links with the logarithmic Sobolev inequality*, J. Funct. Anal. 173 (2000), 361–400.

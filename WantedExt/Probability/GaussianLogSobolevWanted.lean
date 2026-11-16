@@ -25,12 +25,12 @@ M. Ledoux, *Heat flows, geometric and functional inequalities*, Proceedings of t
 @[expose] public section
 
 open MeasureTheory ProbabilityTheory InformationTheory
-open scoped ENNReal
+open scoped ENNReal ContDiff
 
 namespace MathlibExt.Probability.GaussianLogSobolevWanted
 
 /-- **Gross' logarithmic Sobolev inequality.** Let `γ` be the standard Gaussian measure on a
-finite-dimensional real inner product space `E`. For every smooth positive `f` with
+finite-dimensional real inner product space `E`. For every smooth (`C^∞`) positive `f` with
 `∫ f dγ = 1`,
 `∫ f log f dγ ≤ ½ ∫ |∇f|² / f dγ`,
 where the left side is the relative entropy `KL(f γ ‖ γ)` (M. Ledoux, *Heat flows, geometric
@@ -38,7 +38,7 @@ and functional inequalities*, Proceedings of the ICM, Seoul 2014, Theorem 2.1; o
 L. Gross, Amer. J. Math. 97 (1975)). The constant does not depend on the dimension. -/
 theorem_wanted klDiv_withDensity_stdGaussian_le {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]
-    {f : E → ℝ} (hf : ContDiff ℝ ⊤ f) (hfpos : ∀ x, 0 < f x)
+    {f : E → ℝ} (hf : ContDiff ℝ ∞ f) (hfpos : ∀ x, 0 < f x)
     (hfint : ∫ x, f x ∂(stdGaussian E) = 1) :
     klDiv ((stdGaussian E).withDensity fun x => ENNReal.ofReal (f x)) (stdGaussian E) ≤
       (1 / 2 : ℝ≥0∞) * ∫⁻ x, ‖fderiv ℝ f x‖ₑ ^ 2 / ENNReal.ofReal (f x) ∂(stdGaussian E)

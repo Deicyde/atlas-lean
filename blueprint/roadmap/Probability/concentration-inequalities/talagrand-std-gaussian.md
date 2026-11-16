@@ -19,9 +19,11 @@ $T_2(K)$), the standard Gaussian satisfying $CD(1, \infty)$.
 - [Monotonicity of the Wasserstein distances in the exponent](../../MeasureTheory/optimal-transport/wasserstein-distances/wasserstein-mono.md):
   $W_1 \le W_2$, so $T_2$ implies $T_1$ (Villani, Remark 22.2).
 - [Otto–Villani theorem](transport-cost-inequalities/satisfies-talagrand-of-satisfies-log-sob.md):
-  combined with Gross' logarithmic Sobolev inequality for the Gaussian measure (constant $1$), it
-  gives this inequality with the same constant $2$; Villani's own route goes through
-  $CD(K, \infty)$ instead.
+  in the literature, combined with Gross' logarithmic Sobolev inequality for the Gaussian measure
+  (constant $1$), it gives this inequality with the same constant $2$; Villani's own route goes
+  through $CD(K, \infty)$ instead. Here the two do not yet compose formally: Gross' inequality is
+  stated for smooth positive densities and the Otto–Villani hypothesis for nonnegative Lipschitz
+  ones, and that extension is not formalized.
 
 ## Sources
 

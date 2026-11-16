@@ -13,7 +13,7 @@ import Mathlib.Tactic.NormNum
 
 @[expose] public section
 
-open MeasureTheory MathlibExt.Probability.LogSobolevTalagrand
+open MeasureTheory Filter Topology MathlibExt.Probability.LogSobolevTalagrand
 
 namespace MathlibExtTest.Probability.FunctionalInequalities.LogSobolevTalagrand
 
@@ -37,5 +37,14 @@ example (μ : ProbabilityMeasure ℝ) :
 /-- The local Lipschitz constant of a constant function vanishes. -/
 example (c x : ℝ) : localLipschitzConstant (fun _ : ℝ => c) x = 0 := by
   simp [localLipschitzConstant]
+
+/-- The local Lipschitz constant of the identity of `ℝ` is `1` at every point: the difference
+quotient is identically `1` on the punctured neighbourhood. -/
+example (x : ℝ) : localLipschitzConstant (fun y : ℝ => y) x = 1 := by
+  have h : ∀ᶠ y in 𝓝[≠] x, ENNReal.ofReal (|y - x| / dist y x) = 1 := by
+    refine eventually_nhdsWithin_of_forall fun y hy => ?_
+    have hne : |y - x| ≠ 0 := abs_ne_zero.mpr (sub_ne_zero.mpr hy)
+    rw [Real.dist_eq, div_self hne, ENNReal.ofReal_one]
+  rw [localLipschitzConstant, Filter.limsup_congr h, Filter.limsup_const]
 
 end MathlibExtTest.Probability.FunctionalInequalities.LogSobolevTalagrand

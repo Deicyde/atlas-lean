@@ -29,9 +29,10 @@ step `h > 0`, the new state `ρ⁽ᵏ⁾` minimizes
 `½ d(ρ⁽ᵏ⁻¹⁾, ρ)² + h F(ρ)`
 
 where `d` is the quadratic Wasserstein distance and `F` the free energy. The a priori estimates
-that drive their convergence proof (Section 5, the estimate before (46) and the second line of
-(46)) use only that `d` is a metric: comparing the minimizer with the previous state gives
-`½ d(ρ⁽ᵏ⁻¹⁾, ρ⁽ᵏ⁾)² + h F(ρ⁽ᵏ⁾) ≤ h F(ρ⁽ᵏ⁻¹⁾)`, which sums to a discrete energy identity, and
+that drive their convergence proof (Section 5, the summed inequality before (46) and the second
+and third lines of (46)) use only that `d` is a metric: comparing the minimizer with the previous
+state gives
+`½ d(ρ⁽ᵏ⁻¹⁾, ρ⁽ᵏ⁾)² + h F(ρ⁽ᵏ⁾) ≤ h F(ρ⁽ᵏ⁻¹⁾)`, which sums to a discrete energy inequality, and
 the triangle and Cauchy–Schwarz inequalities turn it into a `½`-Hölder bound in time.
 
 This file formalizes that skeleton on an arbitrary (pseudo)metric space, for an arbitrary
@@ -147,7 +148,7 @@ step `h`, `d(ρⱼ, ρⱼ₊ₙ)² ≤ 2hn (F(ρⱼ) - F(ρⱼ₊ₙ))`: the tri
 Cauchy–Schwarz inequality give `d(ρⱼ, ρⱼ₊ₙ)² ≤ n ∑ d(ρₖ, ρₖ₊₁)²`, and the discrete energy
 inequality bounds the sum (R. Jordan, D. Kinderlehrer and F. Otto, *The variational formulation
 of the Fokker–Planck equation*, SIAM J. Math. Anal. 29 (1998), proof of Theorem 5.1, the
-second line of (46)). In the time variable `t = kh` this reads
+second and third lines of (46)). In the time variable `t = kh` this reads
 `d(ρⱼ, ρₖ) ≤ √(2 (tₖ - tⱼ) (F(ρⱼ) - F(ρₖ)))`. -/
 theorem IsMinimizingMovement.dist_sq_le {F : X → ℝ} {h : ℝ} {ρ : ℕ → X}
     (hρ : IsMinimizingMovement F h ρ) (j n : ℕ) :

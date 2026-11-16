@@ -4,7 +4,7 @@ Under the assumptions of [existence and uniqueness of the JKO step](exists-uniqu
 let $\beta > 0$ and let $\rho_0$ be [admissible](is-admissible.md) with finite
 [free energy](free-energy.md). For $h > 0$ let $(\rho_h^{(k)})$ be the [JKO sequence](is-jkosequence.md)
 started at $\rho_0$ and $\rho_h(t) = \rho_h^{(k)}$ for $t \in [kh, (k+1)h)$. Then, as $h \downarrow 0$,
-$\rho_h(t) \rightharpoonup \rho(t)$ weakly in $L^1$ for every $t > 0$, where $\rho$ is smooth on
+$\rho_h(t) \rightharpoonup \rho(t)$ weakly in $L^1$ for every $t > 0$, where $\rho$ is $C^\infty$ on
 $(0, \infty) \times \mathbb{R}^n$ and solves
 $$\partial_t \rho = \operatorname{div}(\rho \nabla \Psi) + \beta^{-1} \Delta \rho,$$
 with $\rho(t) \to \rho_0$ strongly in $L^1$ as $t \downarrow 0$ and with the second moment and the
@@ -20,9 +20,9 @@ energy for the Wasserstein distance.
 
 ## Informally uses
 
-- [Discrete energy inequality of the JKO scheme](energy-sum-le.md): the a priori estimate (42),
-  obtained by summing the one-step comparison.
-- [Hölder-½ estimate of the JKO scheme](dist-sq-le.md): the second line of (46), from the triangle
+- [Discrete energy inequality of the JKO scheme](energy-sum-le.md): the summed one-step comparison
+  just before (46), from which JKO obtain the a priori estimate (42).
+- [Hölder-½ estimate of the JKO scheme](dist-sq-le.md): the second and third lines of (46), from the triangle
   and Cauchy–Schwarz inequalities.
 - [Existence and uniqueness of the JKO step](exists-unique-is-jkostep.md): the scheme is well
   defined (Proposition 4.1).

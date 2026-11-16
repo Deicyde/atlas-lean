@@ -1,7 +1,7 @@
 # Gross' logarithmic Sobolev inequality
 
 Let $\gamma$ be the standard Gaussian measure on $\mathbb{R}^n$ (or on any finite-dimensional real
-inner product space). For every smooth positive $f$ with $\int f \, d\gamma = 1$,
+inner product space). For every smooth ($C^\infty$) positive $f$ with $\int f \, d\gamma = 1$,
 $$\int f \log f \, d\gamma \le \frac12 \int \frac{|\nabla f|^2}{f} \, d\gamma ,$$
 the left side being the relative entropy $\operatorname{KL}(f\gamma \,\|\, \gamma)$. The constant
 does not depend on the dimension. Ledoux presents the proof of Bakry and Émery: interpolate the

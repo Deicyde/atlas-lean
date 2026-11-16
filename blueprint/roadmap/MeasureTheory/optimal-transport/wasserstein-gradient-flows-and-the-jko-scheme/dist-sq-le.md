@@ -11,4 +11,4 @@ Hölder continuous of exponent $\tfrac12$ in time.
 
 ## Sources
 
-- R. Jordan, D. Kinderlehrer, F. Otto, *The variational formulation of the Fokker–Planck equation*, SIAM J. Math. Anal. 29 (1998), 1–17, proof of Theorem 5.1, the second line of (46).
+- R. Jordan, D. Kinderlehrer, F. Otto, *The variational formulation of the Fokker–Planck equation*, SIAM J. Math. Anal. 29 (1998), 1–17, proof of Theorem 5.1, the second and third lines of (46).
