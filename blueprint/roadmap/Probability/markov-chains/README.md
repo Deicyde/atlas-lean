@@ -2,6 +2,7 @@
 
 Discrete-time Markov chains (construction, path measures, finite-dimensional distributions, Chapman–Kolmogorov, Markov and strong Markov properties), finite chains, ergodicity and convergence to stationarity, mixing, reversibility and Kolmogorov's cycle criterion, and finite continuous-time Markov chains with rate matrices, semigroups and hitting times.
 
+- [Canonical paths and multicommodity flow](canonical-paths-and-multicommodity-flow/README.md)
 - [Chapman–Kolmogorov equations](chapman-kolmogorov-equations/README.md)
 - [Finite continuous-time Markov chains](finite-continuous-time-markov-chains/README.md)
 - [Finite-dimensional distributions of Markov chains](finite-dimensional-distributions-of-markov-chain/README.md)
