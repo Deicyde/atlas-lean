@@ -33,7 +33,7 @@ Main results:
 * `total_update_le_sq`, `total_weights_le_sq`, `algLoss_le_sq`: **the second-order bound**
   `L ≤ L_i + η Q + log n / η` for nonnegative (not necessarily bounded) losses, where `Q`
   (`algSq`) sums the rounds' weighted second moments `∑ x_t(i) ℓ_t(i)²` (Hazan, *Introduction to
-  Online Convex Optimization*, Theorem 1.3).
+  Online Convex Optimization*, Theorem 1.5 in arXiv:1909.05207).
 * `weights_append`, `algLoss_append`, `algSq_append`: a run splits at any round.
 
 ## Relation to `FormalizedTextbooks`
@@ -231,10 +231,10 @@ theorem total_weights_le_sq {η : ℝ} (hn : 0 < n) (hη : 0 ≤ η) :
           rw [mul_assoc, ← exp_add]; ring_nf
 
 /-- **The second-order Hedge bound** (Hazan, *Introduction to Online Convex Optimization*,
-Theorem 1.3): starting from unit weights with nonnegative losses and learning rate `η > 0`, the
-algorithm's loss satisfies `L ≤ L_i + η Q + log n / η` against every expert `i`, where `Q`
-(`algSq`) sums the rounds' weighted second moments. Unlike `algLoss_le`, the losses need not be
-bounded by `1`. -/
+Theorem 1.5 in arXiv:1909.05207): starting from unit weights with nonnegative losses and
+learning rate `η > 0`, the algorithm's loss satisfies `L ≤ L_i + η Q + log n / η` against
+every expert `i`, where `Q` (`algSq`) sums the rounds' weighted second moments. Unlike
+`algLoss_le`, the losses need not be bounded by `1`. -/
 theorem algLoss_le_sq {η : ℝ} (hη : 0 < η) (ls : List (Fin n → ℝ)) (hb : Nonneg ls)
     (i : Fin n) :
     algLoss η ls (fun _ => 1) ≤ expertLoss i ls + η * algSq η ls (fun _ => 1) + log n / η := by

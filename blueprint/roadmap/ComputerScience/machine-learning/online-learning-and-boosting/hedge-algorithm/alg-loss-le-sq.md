@@ -9,5 +9,5 @@ distribution played in round $t$. Then for every expert $i$,
 $$\sum_{t=1}^T \sum_j x_t(j) \ell_t(j) \le \sum_{t=1}^T \ell_t(i) +
 \eta \sum_{t=1}^T \sum_j x_t(j) \ell_t(j)^2 + \frac{\log n}{\eta}.$$
 
-This is Theorem 1.3 of Hazan, *Introduction to Online Convex Optimization*. Unlike the
+This is Theorem 1.5 of Hazan, *Introduction to Online Convex Optimization* (arXiv:1909.05207, Section 1.3.3; the number is the same in versions 1 to 3). Unlike the
 first-order Hedge loss bound, the losses need not be at most $1$.

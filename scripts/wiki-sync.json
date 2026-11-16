@@ -11793,7 +11793,7 @@
 "Cslib.MachineLearning.Hedge.algLoss": "2c9ec1b0f6efc3a3",
 "Cslib.MachineLearning.Hedge.algLoss_append": "27338558470adb23",
 "Cslib.MachineLearning.Hedge.algLoss_le": "96eb0845bb5b0581",
-"Cslib.MachineLearning.Hedge.algLoss_le_sq": "cae53313b3c8bc7c",
+"Cslib.MachineLearning.Hedge.algLoss_le_sq": "60a1562188f4789c",
 "Cslib.MachineLearning.Hedge.algSq": "67aa63cfac0559ff",
 "Cslib.MachineLearning.Hedge.algSq_append": "cc5ce12d02988dd0",
 "Cslib.MachineLearning.Hedge.exp_neg_mul_le": "c94385711713f256",
