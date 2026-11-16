@@ -10,5 +10,5 @@ Bernstein's theorem counts the common zeros in the torus of generic Laurent poly
 ## Related topics
 
 - [Bézout's theorem](../b-zout-s-theorem/README.md): the dense count `deg g · deg h`, recovered from Bernstein's theorem when both Newton polygons are triangles.
-- [Newton polygon](../../../Algebra/polynomials/newton-polygon/README.md): the Newton polygon of a bivariate polynomial with nonnegative exponents.
+- [Newton polygon](../../../Algebra/polynomials/newton-polygon/README.md): the Newton polygon of a bivariate polynomial with nonnegative exponents, and Ostrowski's theorem that the Newton polygon of a product is the Minkowski sum of the Newton polygons.
 - [Tropical varieties](../tropical-varieties/README.md): tropical geometry gives a polyhedral proof of Bernstein-type counts.

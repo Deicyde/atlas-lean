@@ -1775,6 +1775,7 @@
   "MathlibExt/Analysis/Convex/MoreauDecomposition": {"to": "Analysis/convex-analysis-and-variations", "title": "Moreau decomposition"},
   "MathlibExt/Analysis/Convex/NewtonMinimization": {"to": "Analysis/convex-analysis-and-variations", "title": "Newton's method for minimization"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},
+  "MathlibExt/Analysis/Convex/NewtonPolygonMul": {"to": "Algebra/polynomials", "title": "Newton polygon"},
   "MathlibExt/Analysis/Convex/SecondOrderCondition": {"to": "Analysis/convex-analysis-and-variations", "title": "Second-order condition for convexity"},
   "MathlibExt/Analysis/Convex/StochasticGradientDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/Straszewicz": {"to": "Geometry/convex-geometry", "title": "Straszewicz's theorem"},

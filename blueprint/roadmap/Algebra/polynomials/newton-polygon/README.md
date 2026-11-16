@@ -13,3 +13,6 @@
 - [The interior of the Newton polygon lies in the polygon](newton-polygon-interior-subset-newton-po.md)
 - [Edge restriction to the empty set](edge-restriction-empty.md)
 - [Edge restriction to the whole plane](edge-restriction-univ.md)
+- [Newton support of a product](newton-support-mul-subset.md)
+- [Vertices of a Minkowski sum of Newton polygons are exponents of the product](add-mem-support-of-extreme.md)
+- [Ostrowski's theorem in the plane](newton-polygon-mul.md)
