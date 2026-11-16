@@ -17,16 +17,15 @@ how the Lean statement writes the trace without choosing an inner product. The S
 print the lemma with $=$; their proof (Cauchy–Schwarz, then Plancherel) gives $\le$, which is what
 is stated.
 
-The abelian case, where every $d_i = 1$ and the $V_i$ are the characters, is proved: see
+The proof is Diaconis's: with $f = P - U$, Cauchy–Schwarz gives
+$(\sum_s |f(s)|)^2 \le |G| \sum_s f(s)^2$; the [Plancherel formula](../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/plancherel.md)
+turns the right side into $\sum_i d_i \operatorname{Tr}(\hat f(V_i) \hat f(V_i)^*)$; the trivial
+term vanishes because $f$ has total mass $0$, and $\hat f(V_i) = \hat P(V_i)$ for non-trivial
+$V_i$ because [the uniform distribution has zero transform there](../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/fourier-uniform-eq-zero.md).
+
+For a finite abelian group every $d_i = 1$ and the $V_i$ are the characters; that case is stated
+with the discrete Fourier transform in
 [Upper bound lemma on a finite abelian group](four-mul-tv-dist-uniform-sq-le.md).
-
-## Informally uses
-
-- [Plancherel formula on a finite group](../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/plancherel.md): the second step of
-  the proof, applied to $P - U$ after Cauchy–Schwarz.
-- [The uniform distribution has zero Fourier transform at non-trivial irreducibles](../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/fourier-uniform-eq-zero.md):
-  it removes $\hat U$ from every non-trivial term, while the trivial term vanishes because
-  $\hat P = \hat U = 1$ there.
 
 ## Background
 

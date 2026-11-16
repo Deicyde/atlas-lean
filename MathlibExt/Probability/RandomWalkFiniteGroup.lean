@@ -13,6 +13,9 @@ public import MathlibExt.Analysis.Fourier.FiniteGroupYoung
 public import MathlibExt.Probability.MarkovMixing
 public import Mathlib.GroupTheory.Perm.Support
 public import MathlibExt.RepresentationTheory.FourierTransformFiniteGroup
+public import MathlibExt.RepresentationTheory.FourierPlancherel
+
+import MathlibExt.GroupTheory.BurnsidePaqb.CharacterOrthogonality
 
 import Mathlib.GroupTheory.Perm.Centralizer
 
@@ -26,13 +29,17 @@ A random walk on a finite group `G` driven by a probability `Q` has `k`-step law
 power `Q^{*k}`; its distance to the uniform distribution `U` is measured in total variation
 `‖Q^{*k} - U‖ = (1/2) ∑_s |Q^{*k}(s) - U(s)|` (`MathlibExt.Probability.MarkovMixing.tvDist`).
 Diaconis and Shahshahani bound this distance by the Fourier transform of `Q` at the non-trivial
-irreducible representations (the *upper bound lemma*). This file proves the lemma for finite
-abelian groups, where the irreducible representations are the characters `ψ : G → ℂ` and the
-transform is `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun`:
+irreducible representations (the *upper bound lemma*). This file proves the lemma on every finite
+group (`upper_bound_lemma`, from the Plancherel formula
+`MathlibExt.RepresentationTheory.FourierPlancherel.plancherel`), and in the explicit form used for
+finite abelian groups, where the irreducible representations are the characters `ψ : G → ℂ` and
+the transform is `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun`:
 
 * `four_mul_tvDist_uniform_sq_le`: `4 ‖P - U‖² ≤ ∑_{ψ ≠ 1} |P̂(ψ)|²`;
 * `dftFun_finGroupConv`: the transform of a convolution is the product of the transforms;
 * `four_mul_tvDist_addConvPow_sq_le`: `4 ‖P^{*k} - U‖² ≤ ∑_{ψ ≠ 1} |P̂(ψ)|^{2k}`;
+* `upper_bound_lemma`: on any finite group, `4 ‖P - U‖² ≤ ∑_ρ d_ρ Tr(P̂(ρ) P̂(ρ)*)` over the
+  non-trivial irreducible representations;
 * `fourier_randomTransposition`: the Fourier transform of the random-transposition measure at an
   irreducible representation `ρ` of `Sₙ` is the scalar `1/n + ((n-1)/n) χ_ρ(τ)/d_ρ`.
 
@@ -284,5 +291,80 @@ theorem fourier_randomTransposition {n : ℕ} {V : Type*} [AddCommGroup V] [Modu
   field_simp
 
 end RandomTransposition
+
+section UpperBoundLemma
+
+open CategoryTheory
+open MathlibExt.RepresentationTheory.FourierTransformFiniteGroup (fourier fourier_uniform_eq_zero)
+
+open Classical in
+/-- **Upper bound lemma (Diaconis–Shahshahani).** Let `V : ι → FDRep ℂ G` be a complete set of
+irreducible complex representations of the finite group `G` (pairwise non-isomorphic simple
+objects, every simple object isomorphic to one of them), of dimensions `d_i`, and let
+`P : G → ℝ` have total mass `1`. Then `4 ‖P - U‖²_TV ≤ ∑_i d_i Tr(P̂(V_i) P̂(V_i)*)`, the sum
+running over the non-trivial irreducible representations (those with some `ρ(g) ≠ 1`)
+(Diaconis, Saint-Flour notes 1988, Lemma 4.2, "first used by Diaconis and Shahshahani (1981)";
+the lemma is printed with `=` but its proof, Cauchy–Schwarz then Plancherel, gives `≤`, which is
+what is stated here). The source takes `ρ` unitary; then, for real `P`,
+`P̂(ρ)* = ∑_s P(s) ρ(s⁻¹)` is the transform of `s ↦ P(s⁻¹)`, which is how the statement writes
+`Tr(P̂(ρ) P̂(ρ)*)` without choosing an inner product. -/
+theorem upper_bound_lemma {G : Type} [Group G] [Fintype G] {ι : Type} [Fintype ι]
+    (V : ι → FDRep ℂ G) [∀ i, Simple (V i)]
+    (hinj : ∀ i j, Nonempty (V i ≅ V j) → i = j)
+    (hsurj : ∀ W : FDRep ℂ G, Simple W → ∃ i, Nonempty (W ≅ V i))
+    (P : G → ℝ) (hP : ∑ s, P s = 1) :
+    4 * tvDist P (uniform G) ^ 2 ≤
+      ∑ i ∈ Finset.univ.filter (fun i => ∃ g, (V i).ρ g ≠ 1),
+        (Module.finrank ℂ (V i) : ℝ) *
+          (LinearMap.trace ℂ (V i)
+            (fourier (V i).ρ (fun s => (P s : ℂ)) *
+              fourier (V i).ρ (fun s => (P s⁻¹ : ℂ)))).re := by
+  set N : ℝ := (Fintype.card G : ℝ) with hN
+  have hNpos : 0 < N := by rw [hN]; exact_mod_cast Fintype.card_pos
+  set f : G → ℝ := fun x => P x - N⁻¹ with hf
+  have h1 : 4 * tvDist P (uniform G) ^ 2 = (∑ x, |f x|) ^ 2 := by
+    simp only [tvDist, uniform, hf, hN]; ring
+  have h2 : (∑ x, |f x|) ^ 2 ≤ N * ∑ x, f x ^ 2 := by
+    have := sq_sum_le_card_mul_sum_sq (s := Finset.univ) (f := fun x => |f x|)
+    simpa [sq_abs, hN] using this
+  have hsumf : ∑ x, f x = 0 := by
+    simp only [hf, Finset.sum_sub_distrib, hP, Finset.sum_const, Finset.card_univ, nsmul_eq_mul,
+      ← hN, mul_inv_cancel₀ hNpos.ne', sub_self]
+  -- Plancherel for `f`, as a real identity.
+  have hpl := MathlibExt.RepresentationTheory.FourierPlancherel.plancherel V hinj hsurj
+    (fun s => (f s : ℂ))
+  have hre := congrArg Complex.re hpl
+  simp only [Complex.ofReal_re, Complex.norm_real, Real.norm_eq_abs, sq_abs,
+    Complex.conj_ofReal] at hre
+  rw [show ((Fintype.card G : ℂ))⁻¹ = ((N⁻¹ : ℝ) : ℂ) by push_cast [hN]; rfl, Complex.re_ofReal_mul,
+    Complex.re_sum] at hre
+  have hterm : ∀ i, ((Module.finrank ℂ (V i) : ℂ) *
+      LinearMap.trace ℂ (V i) (fourier (V i).ρ (fun s => (f s : ℂ)) *
+        fourier (V i).ρ (fun s => (f s⁻¹ : ℂ)))).re =
+      if ∃ g, (V i).ρ g ≠ 1 then (Module.finrank ℂ (V i) : ℝ) *
+        (LinearMap.trace ℂ (V i) (fourier (V i).ρ (fun s => (P s : ℂ)) *
+          fourier (V i).ρ (fun s => (P s⁻¹ : ℂ)))).re else 0 := fun i => by
+    have hsub : ∀ Q : G → ℝ, fourier (V i).ρ (fun s => ((Q s - N⁻¹ : ℝ) : ℂ)) =
+        fourier (V i).ρ (fun s => (Q s : ℂ)) -
+          fourier (V i).ρ (fun _ => ((Fintype.card G : ℂ))⁻¹) := fun Q => by
+      simp only [fourier, Complex.ofReal_sub, Complex.ofReal_inv, sub_smul,
+        Finset.sum_sub_distrib, hN, Complex.ofReal_natCast]
+    split_ifs with hnt
+    · have := BurnsidePaqb.irreducible_of_simple_fdrep G (V i)
+      have h0 := fourier_uniform_eq_zero (V i).ρ hnt
+      simp only [hf]
+      rw [hsub P, hsub (fun s => P s⁻¹), h0, sub_zero, sub_zero]
+      simp only [Complex.mul_re, Complex.natCast_re, Complex.natCast_im, zero_mul, sub_zero]
+    · push Not at hnt
+      have hz : fourier (V i).ρ (fun s => (f s : ℂ)) = 0 := by
+        simp only [fourier, hnt, ← Finset.sum_smul]
+        rw [show (∑ s, (f s : ℂ)) = 0 by exact_mod_cast hsumf, zero_smul]
+      rw [hz, zero_mul, map_zero, mul_zero, Complex.zero_re]
+  rw [Finset.sum_congr rfl fun i _ => hterm i, ← Finset.sum_filter] at hre
+  rw [h1]
+  refine h2.trans (le_of_eq ?_)
+  rw [hre, ← mul_assoc, mul_inv_cancel₀ hNpos.ne', one_mul]
+
+end UpperBoundLemma
 
 end MathlibExt.Probability.RandomWalkFiniteGroup

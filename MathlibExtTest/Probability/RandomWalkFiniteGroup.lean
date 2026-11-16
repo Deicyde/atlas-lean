@@ -62,4 +62,21 @@ example (P Q : ZMod 4 → ℝ) (hP : ∑ x, P x = 1)
         ‖dftFun (fun x => (P x : ℂ)) ψ‖ ^ 6 :=
   four_mul_tvDist_addConvPow_sq_le P Q hP 3 hQ
 
+open Classical in
+/-- The upper bound lemma bounds a nonnegative quantity: its right side is nonnegative. -/
+example {G : Type} [Group G] [Fintype G] {ι : Type} [Fintype ι]
+    (V : ι → FDRep ℂ G) [∀ i, CategoryTheory.Simple (V i)]
+    (hinj : ∀ i j, Nonempty (V i ≅ V j) → i = j)
+    (hsurj : ∀ W : FDRep ℂ G, CategoryTheory.Simple W → ∃ i, Nonempty (W ≅ V i))
+    (P : G → ℝ) (hP : ∑ s, P s = 1) :
+    0 ≤ ∑ i ∈ Finset.univ.filter (fun i => ∃ g, (V i).ρ g ≠ 1),
+        (Module.finrank ℂ (V i) : ℝ) *
+          (LinearMap.trace ℂ (V i)
+            (MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.fourier (V i).ρ
+                (fun s => (P s : ℂ)) *
+              MathlibExt.RepresentationTheory.FourierTransformFiniteGroup.fourier (V i).ρ
+                (fun s => (P s⁻¹ : ℂ)))).re :=
+  (by positivity : (0 : ℝ) ≤ 4 * tvDist P (uniform G) ^ 2).trans
+    (upper_bound_lemma V hinj hsurj P hP)
+
 end MathlibExtTest.Probability.RandomWalkFiniteGroup

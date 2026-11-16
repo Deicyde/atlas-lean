@@ -10,6 +10,9 @@ The sources take each $V_i(s)$ unitary; then $\hat P(V_i)^* = \sum_s \overline{P
 is the transform of $s \mapsto \overline{P(s^{-1})}$, which is how the Lean statement writes it
 without choosing an inner product.
 
+Proof: expanding the traces, the right side is
+$\frac{1}{|G|}\sum_{s,t} P(s)\,\overline{P(t^{-1})} \sum_i d_i \chi_i(st)$, and
+[$\sum_i d_i \chi_i(g) = |G|\,[g = 1]$](sum-finrank-mul-character.md) leaves $\sum_s |P(s)|^2$.
 Taking $P$ the point mass at the identity gives $\sum_i d_i^2 = |G|$.
 
 ## Background

@@ -1,6 +1,7 @@
 # Fourier transform on finite groups
 
 The non-commutative Fourier transform $\hat P(\rho) = \sum_s P(s)\rho(s)$ of a function on a finite group at a representation $\rho$: it turns convolution into composition, vanishes on the uniform distribution at non-trivial irreducibles, is a scalar on class functions (Schur's lemma), and satisfies the Plancherel formula. It is the tool behind rates of convergence of random walks on finite groups.
+
 - [Convolution on a finite group](conv.md)
 - [Convolution powers on a finite group](conv-pow.md)
 - [Schur's lemma for an operator commuting with an irreducible representation](exists-eq-smul-one-of-commute.md)
@@ -11,6 +12,8 @@ The non-commutative Fourier transform $\hat P(\rho) = \sum_s P(s)\rho(s)$ of a f
 - [The uniform distribution has zero Fourier transform at non-trivial irreducibles](fourier-uniform-eq-zero.md)
 - [An irreducible representation lives on a nonzero space](nontrivial-of-is-irreducible.md)
 - [Plancherel formula on a finite group](plancherel.md)
+- [Character of the regular representation](sum-finrank-mul-character.md)
+- [Trace of a product of Fourier transforms](trace-fourier-mul-fourier.md)
 
 ## Related topics
 
