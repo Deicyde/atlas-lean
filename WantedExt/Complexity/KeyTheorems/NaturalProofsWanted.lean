@@ -58,8 +58,10 @@ nonuniform truth-table distinguisher of size `O(N ^ 2)` could hardcode all of th
 distinguish perfectly, so the assumption would be impossible. With key length `n ^ 2` the
 family has `2 ^ (n ^ 2)` members, superpolynomial in the truth-table size `2 ^ n`. In Razborov
 and Rudich's argument the key length is a polynomial in `n` fixed by the hardness exponent of
-the pseudorandom generator they start from; fixing it to `n ^ 2` makes this statement a special
-case of their theorem.
+the pseudorandom generator they start from, and their theorem assumes a pseudorandom generator
+rather than a pseudorandom function; this statement follows from their theorem once the key
+length is fixed to `n ^ 2` (evaluating the keyed function at fixed inputs turns it into a
+generator).
 -/
 
 /-- A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared

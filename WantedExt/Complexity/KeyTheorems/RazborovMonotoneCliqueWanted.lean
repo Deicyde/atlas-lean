@@ -48,9 +48,9 @@ Combinatorica 7 (1987), 1-22, Section 1). The statement here, for cliques of siz
 follows by padding: setting to `1` every input bit that involves `⌊n/3⌋ - s` chosen vertices
 turns a monotone circuit for the `⌊n/3⌋`-clique function on `n` vertices into one, no larger
 after constant propagation, for `s`-cliques on the remaining `m ≥ 2n/3` vertices. Gates here
-have unbounded fan-in; since a gate can reference only earlier gates and inputs, a circuit with
-`g` gates has a fan-in-two equivalent with at most `g (g + n ^ 2)` gates, so superpolynomial
-bounds transfer.
+have unbounded fan-in. Inputs are themselves `var` gates of the list, so a gate can reference
+only earlier gates, at most `g` distinct ones; a circuit with `g` gates therefore has a
+fan-in-two equivalent with at most `g ^ 2` gates, and superpolynomial bounds transfer.
 -/
 
 
@@ -89,9 +89,10 @@ def cliqueOfSize (n s : ℕ) (x : List Bool) : Prop :=
 monotone circuit (input, and, or gates) on `n ^ 2` adjacency bits that computes `CLIQUE(n, s)`
 has at least `exp (c (n / log₂ n) ^ (1/3))` gates (N. Alon and R. B. Boppana, *The monotone
 circuit complexity of Boolean functions*, Combinatorica 7 (1987), 1-22, Section 1, refining
-Razborov's approximation method; logarithms base `2`). Their bound counts gates of fan-in two;
-a circuit here with `g` gates of any fan-in has a fan-in-two equivalent with at most `g ^ 2`
-gates, which only changes `c`. -/
+Razborov's approximation method; logarithms base `2`). Their bound counts gates of fan-in two.
+Inputs here are `var` gates of the list, so each gate references at most `g` distinct earlier
+gates, and a circuit with `g` gates of any fan-in has a fan-in-two equivalent with at most
+`g ^ 2` gates, which only changes `c`. -/
 public theorem_wanted alon_boppana_monotone_clique :
     ∃ c : ℝ, 0 < c ∧ ∃ n₀ : ℕ, ∀ n : ℕ, n₀ ≤ n →
       ∀ C : List (ACGate (n * n)), WellFormedCircuit C → IsMonotoneCircuit C →

@@ -234,8 +234,10 @@ theorem goodman :
 /-- **Mantel's theorem from Goodman's bound.** A triangle-free finite simple graph with `n`
 vertices has at most `n ^ 2 / 4` edges: `4 m ≤ n ^ 2` (W. Mantel, Wiskundige Opgaven 10 (1907),
 60-61). The proof is the flag-algebra one: Goodman's bound with no triangles forces
-`m (4 m - n ^ 2) ≤ 0`. Mathlib reaches the same bound through Turán's theorem
-(`SimpleGraph.turanNumber_two`). -/
+`m (4 m - n ^ 2) ≤ 0`. In Mathlib the bound is a two-line corollary of Turán's theorem:
+`SimpleGraph.CliqueFree.card_edgeFinset_le` with `r = 2` gives `m ≤ turanNumber n 2`, and
+`SimpleGraph.turanNumber_two` evaluates it as `n ^ 2 / 4`; this version records the
+flag-algebra proof. -/
 theorem four_mul_card_edgeFinset_le_sq_of_cliqueFree_three (h : G.CliqueFree 3) :
     4 * #G.edgeFinset ≤ Fintype.card V ^ 2 := by
   classical

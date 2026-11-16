@@ -19,7 +19,8 @@ Section 2.1): tree-like derivations (`ResolutionTree`) and general derivations g
 sequence of lines (`IsResolutionDerivation`), together with their size (number of lines) and
 width (largest number of distinct literals in a line). Both are sound
 (`ResolutionTree.not_cnfSat`, `not_cnfSat_of_isResolutionRefutation`). The size-width relations
-of Ben-Sasson and Wigderson are recorded in `WantedExt/Logic/BenSassonWigdersonWanted`.
+of Ben-Sasson and Wigderson are recorded in
+`WantedExt/TheoryOfComputation/BenSassonWigdersonWanted`.
 
 Clauses are lists of literals, so the width of a clause counts its distinct literals.
 -/

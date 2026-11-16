@@ -2,7 +2,7 @@
 
 A triangle-free finite simple graph with $n$ vertices has at most $n^2/4$ edges: $4m \le n^2$.
 
-The proof is the flag-algebra one. With no triangles, [Goodman's bound](goodman.md) gives $m(4m - n^2) \le 0$, so $m = 0$ or $4m \le n^2$. Mathlib reaches the same bound through Turán's theorem (`SimpleGraph.turanNumber_two`, the number of edges of the Turán graph $T(n, 2)$ is $\lfloor n^2/4 \rfloor$).
+The proof is the flag-algebra one. With no triangles, [Goodman's bound](goodman.md) gives $m(4m - n^2) \le 0$, so $m = 0$ or $4m \le n^2$. In Mathlib the bound is a two-line corollary of Turán's theorem: `SimpleGraph.CliqueFree.card_edgeFinset_le` with $r = 2$ gives $m \le t(n, 2)$, the number of edges of the Turán graph $T(n, 2)$, and `SimpleGraph.turanNumber_two` evaluates $t(n, 2) = \lfloor n^2/4 \rfloor$. This version records the flag-algebra proof.
 
 ## Background
 

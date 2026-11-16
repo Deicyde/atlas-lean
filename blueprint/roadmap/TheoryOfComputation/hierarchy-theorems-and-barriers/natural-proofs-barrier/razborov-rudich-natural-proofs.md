@@ -9,7 +9,7 @@ is both natural and useful against P/poly.
 
 The argument is short. By usefulness, at every large length $n$ no member $F_{n,k}$ of the family (each computed by a polynomial-size circuit with the key hard-wired) lies in $C_n$, while by largeness a uniformly random Boolean function lies in $C_n$ with probability at least $2^{-cn}$. The constructive decider for $C$ is therefore a truth-table distinguisher of size polynomial in $2^n$ with advantage at least $2^{-cn}$, contradicting security. Razborov and Rudich argue that the known lower-bound proofs for explicit Boolean functions in nonmonotone models, such as the bounds for constant-depth circuits, are natural; largeness reflects the fact that a random function is hard, as in [Shannon's counting bound](../../circuit-complexity/shannon-s-circuit-size-lower-bound/README.md).
 
-The key length $n^2$ is a choice: with $n$-bit keys a distinguisher could hard-wire all $2^n$ members of the family, and in Razborov and Rudich's construction the key length is a polynomial in $n$ fixed by the hardness of the pseudorandom generator they start from, so this statement is a special case of their theorem.
+The key length $n^2$ is a choice: with $n$-bit keys a distinguisher could hard-wire all $2^n$ members of the family, and in Razborov and Rudich's construction the key length is a polynomial in $n$ fixed by the hardness of the pseudorandom generator they start from, and their theorem assumes a pseudorandom generator rather than a pseudorandom function; this statement follows from their theorem, since evaluating the keyed function at fixed inputs gives a generator.
 
 ## Background
 
