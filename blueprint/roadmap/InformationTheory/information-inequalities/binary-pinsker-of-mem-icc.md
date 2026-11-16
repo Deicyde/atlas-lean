@@ -12,11 +12,6 @@ The case $0 < u < 1$ is proved by calculus; the endpoints $u = 0$ and $u = 1$, w
 positive [finite Pinsker inequality](csiszar-kullback-pinsker.md) excludes, follow by continuity
 of $x \mapsto x \log x$.
 
-## Informally uses
-
-- [Pinsker's inequality for probability measures](total-variation-and-pinsker-s-inequality/of-real-two-mul-total-variation-dist-sq.md):
-  the general inequality reduces to this two-point case.
-
 ## Sources
 
 - Y. Polyanskiy and Y. Wu, Information Theory: From Coding to Learning (Cambridge University Press, 2025), Theorem 7.10 (proof: reduction of Pinsker's inequality to Bernoulli distributions).
