@@ -24287,6 +24287,7 @@
 "MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_eq_iInf": "8c2adfb96904794e",
 "MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_le_of_isCoupling": "51331ea34f57bf51",
 "MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_mono": "e156990f45c2eb9a",
+"MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_one_le_mul_totalVariationDist": "79528cbec482f285",
 "MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_self": "91bd228b074a4c14",
 "MathlibExt.MeasureTheory.OptimalTransport.Wasserstein.wasserstein_triangle": "6e73b0423ce0a654",
 "MathlibExt.MeasureTheory.PositiveMeasureThreeTermProgressionWanted.exists_add_mem_and_sub_mem_of_volume_pos": "b50b970f8476b41b",

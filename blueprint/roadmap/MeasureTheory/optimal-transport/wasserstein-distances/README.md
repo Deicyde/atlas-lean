@@ -25,3 +25,4 @@ controls the integrals of Lipschitz functions.
 - [Kantorovich–Rubinstein formula](wasserstein-one-eq-i-sup-lipschitz.md)
 - [The Wasserstein distance separates probability measures](eq-of-wasserstein-eq-zero.md)
 - [The Wasserstein distance metrizes weak convergence in $P_p$](tendsto-wasserstein-iff.md)
+- [Wasserstein distance controlled by total variation](wasserstein-one-le-mul-total-variation-d.md)
