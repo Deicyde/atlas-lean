@@ -10,6 +10,7 @@ Convex sets and convex bodies in Euclidean space: Helly-type and Radon-type theo
 - [Hanner polytopes](hanner-polytopes/README.md)
 - [Hyperplane slicing problem](hyperplane-slicing-problem/README.md)
 - [Linear programming](linear-programming/README.md)
+- [Robust linear programming](robust-linear-programming/README.md)
 - [Straszewicz's theorem](straszewicz-s-theorem/README.md)
 - [Ulam's floating body problem](ulam-s-floating-body-problem/README.md)
 - [Isoperimetric inequality](isoperimetric-inequality.md)
