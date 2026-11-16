@@ -1,9 +1,10 @@
 # Convex analysis and calculus of variations
 
-Convex functions and sets in analysis and optimization: Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
+Convex functions and sets in analysis and optimization: first-order conditions for convexity and optimality, Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
 
 - [Ekeland variational principle](ekeland-variational-principle/README.md)
 - [Euler–Lagrange equation](euler-lagrange-equation/README.md)
+- [First-order conditions for convexity and optimality](first-order-conditions-for-convexity/README.md)
 - [Fenchel–Moreau theorem](fenchel-moreau-theorem/README.md)
 - [Gradient descent](gradient-descent/README.md)
 - [Lipschitz regularization by inf-convolution](lipschitz-regularization-by-inf-convolution/README.md)
