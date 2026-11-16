@@ -2,12 +2,14 @@
 
 For i.i.d. random vectors with a finite moment generating function, the empirical means satisfy a
 large deviation principle whose rate function is the Legendre transform of the logarithmic moment
-generating function. Under a finite moment generating function the upper bound for closed sets
-and the goodness of the rate function are proved; the lower bound, and so the full theorem,
-is recorded as wanted.
+generating function. The theorem is proved in $\mathbb{R}^d$ under a finite moment generating
+function: the upper bound by Chernoff bounds in half-spaces and exponential tightness, the lower
+bound by exponential tilting, after a quadratic perturbation of the log-moment generating
+function reduces every point to a gradient point.
 
 - [Cramér's theorem in ℝᵈ](satisfies-ldp-empirical-mean-measure-vec.md)
 - [Cramér upper bound for closed sets](limsup-log-empirical-mean-measure-vec-le.md)
+- [Cramér lower bound for open sets](cramer-lower-bound.md)
 - [Compact sub-level sets of the Cramér rate function](is-good-rate-function-cramer-rate-functi.md)
 - [Law of the empirical mean](empirical-mean-measure-vec.md)
 - [Real-valued log-MGF expression](log-mgfvec.md)
@@ -44,6 +46,13 @@ is recorded as wanted.
 - [Coordinate boxes are compact](is-compact-box.md)
 - [The laws of the empirical means are probability measures](is-probability-measure-empirical-mean-me.md)
 - [The coordinate bound dominates the log moment generating function in the coordinate directions](log-mgfvec-single-le-coord-bound.md)
+- [Differentiability of the log moment generating function](differentiable-log-mgfvec.md)
+- [A one-sided slope bound from a derivative](exists-pos-sub-lt-of-has-deriv-at.md)
+- [Exponential moments of the partial sums](integrable-and-integral-exp-inner-sum.md)
+- [Cramér lower bound on small balls at gradient points](cramer-lower-bound-ball.md)
+- [Cramér lower bound for open sets, assuming a differentiable log moment generating function](cramer-lower-bound-differentiable.md)
+- [Cramér's theorem in `ℝᵈ`, assuming a differentiable log moment generating function](cramer-theorem-differentiable.md)
+- [Tilted Chernoff bound for a half-space event](set-lintegral-tilt-le.md)
 
 ## Related topics
 

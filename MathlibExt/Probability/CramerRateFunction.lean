@@ -27,8 +27,8 @@ The primary rate converts the existing extended-real
 probability, the zero direction makes the conjugate nonnegative, so this
 conversion preserves its full extended value. The existing LDP rate-function
 interface supplies the regularity conclusion. No large-deviation bound is
-claimed here; Cramér's theorem itself is recorded in `WantedExt` as
-`MathlibExt.Probability.CramerTheoremWanted.satisfiesLDP_empiricalMeanMeasureVec`.
+claimed here; Cramér's theorem itself is
+`MathlibExt.Probability.CramerLDPLowerBound.satisfiesLDP_empiricalMeanMeasureVec`.
 
 Source: the Lecture 13 Cramér target and
 `v1/Atlas/TheoryOfProbability/code/CramerTheorem.lean`. Its totalized real
