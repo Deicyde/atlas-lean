@@ -9,3 +9,7 @@
 - [Benjamini–Hochberg FDR control](integral-false-discovery-proportion-bh-r.md)
 - [Benjamini–Hochberg rejection as leave-one-out index invariance](mem-bh-rejections-iff-bh-index-eq-update.md)
 - [Leave-one-out criterion for Benjamini–Hochberg rejection](mem-bh-rejections-iff-le-bh-index-update.md)
+
+## Related topics
+
+- [Knockoff filter](../knockoff-filter/README.md): FDR control for variable selection without p-values, from statistics whose null signs are fair coins; knockoff+ plays the role of the BH step-up rule.

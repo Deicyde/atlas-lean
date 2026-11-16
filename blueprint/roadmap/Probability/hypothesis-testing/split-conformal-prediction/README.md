@@ -33,3 +33,10 @@ a rank count.
 - [Distinct values have distinct rank counts](rank-count-injective.md)
 - [The rank count is below the number of coordinates](rank-count-lt-card.md)
 - [The strict lower count is the rank among all scores](strict-lower-count-eq-rank-count-last.md)
+
+## Related topics
+
+- [Conformalized quantile regression](../conformalized-quantile-regression/README.md): split conformal prediction with the CQR score, giving adaptive intervals with the same two coverage bounds.
+- [Conformal prediction under covariate shift](../conformal-prediction-under-covariate-shift/README.md): the weighted extension when the test covariates follow a different law, with a weighted quantile in place of the order statistic.
+- [Permutation tests](../permutation-tests/README.md): the lower coverage bound is the validity of the permutation p-value of the test score.
+- [Negative binomial and beta-binomial distributions](../../distributions/negative-binomial-and-beta-binomial-distribution/README.md): the law of the rank of a test score among synthetic i.i.d. scores, a sharper distributional statement under independence.

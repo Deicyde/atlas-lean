@@ -1,7 +1,7 @@
 # Modified FDR control by knockoff
 
 Under the hypotheses of
-`integral_falseDiscoveryProportion_knockoffSelection_one_le`, for `0 < q ≤ 1` the knockoff
+[FDR control by knockoff+](integral-false-discovery-proportion-knoc.md), for `0 < q ≤ 1` the knockoff
 selection `Ŝ = {j : W_j ≥ T}` (offset `0`) satisfies `E[|Ŝ ∩ H0| / (|Ŝ| + q⁻¹)] ≤ q`.
 
 This statement is recorded as wanted: its proof is not formalized. The source proves Theorems 1
