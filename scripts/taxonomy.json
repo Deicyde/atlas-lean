@@ -1516,6 +1516,7 @@
   "CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Probabilistic principal component analysis"},
   "CSLibExt/MachineLearning/MatrixFactorization/SuccessiveProjection": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Successive projection algorithm"},
   "CSLibExt/MachineLearning/Perceptron": {"to": "ComputerScience/machine-learning/online-learning-and-boosting", "title": "Perceptron"},
+  "CSLibExt/MachineLearning/RademacherComplexity": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
   "CSLibExt/MachineLearning/Regression/BiasVariance": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bias–variance decomposition"},
   "CSLibExt/MachineLearning/Regression/GBLUP": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Kernel ridge regression and GBLUP"},
   "CSLibExt/MachineLearning/Regression/LeastSquares": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Least squares, ridge and lasso regression"},
