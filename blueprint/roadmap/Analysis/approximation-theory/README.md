@@ -10,6 +10,7 @@ Approximation and interpolation of functions: Chebyshev equioscillation, best ap
 - [Kolmogorov superposition theorem](kolmogorov-superposition-theorem/README.md)
 - [Korovkin's theorem](korovkin-s-theorem/README.md)
 - [Lagrange interpolation](lagrange-interpolation/README.md)
+- [Low-rank matrix recovery](low-rank-matrix-recovery/README.md)
 - [Sparse recovery by orthogonal matching pursuit](sparse-recovery-by-orthogonal-matching-pursuit/README.md)
 - [Uniform approximation by partial sums of one power series](uniform-approximation-by-partial-sums-of-one-pow/README.md)
 - [Müntz–Szász theorem for integer exponents](muntz-szasz-nat.md)
