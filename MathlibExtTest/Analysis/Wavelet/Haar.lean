@@ -34,4 +34,14 @@ example : haarSystem 1 0 (1 / 8) = Real.sqrt 2 := by
     Real.sqrt_eq_rpow]
   norm_num
 
+/-- Orthonormality instances: two scales, two translations, and the unit norm. -/
+example : ∫ x, haarSystem 0 0 x * haarSystem 1 0 x = 0 := by
+  rw [integral_haarSystem_mul_haarSystem]; simp
+
+example : ∫ x, haarSystem 2 1 x * haarSystem 2 3 x = 0 := by
+  rw [integral_haarSystem_mul_haarSystem]; simp
+
+example : ∫ x, haarSystem (-3) 5 x * haarSystem (-3) 5 x = 1 := by
+  rw [integral_haarSystem_mul_haarSystem]; simp
+
 end MathlibExtTest.Analysis.Wavelet.Haar

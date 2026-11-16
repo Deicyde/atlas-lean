@@ -18696,6 +18696,7 @@
 "MathlibExt.Analysis.Wavelet.Haar.haarSystem": "c53e6d9c079fecc7",
 "MathlibExt.Analysis.Wavelet.Haar.integral_haarFunction": "55becfc821e1ae15",
 "MathlibExt.Analysis.Wavelet.Haar.integral_haarFunction_sq": "d7117c636594916a",
+"MathlibExt.Analysis.Wavelet.Haar.integral_haarSystem_mul_haarSystem": "a77a4f895fffa874",
 "MathlibExt.Analysis.Wavelet.HaarBasisWanted.exists_hilbertBasis_haarSystem": "a9ca7fff10ff576e",
 "MathlibExt.Analysis.Wavelet.HaarBasisWanted.exists_hilbertBasis_haar_unitInterval": "922011cc6ba8d3f8",
 "MathlibExt.Analysis.Wavelet.Scattering1D.IsAdmissible": "bd38054dcde0921e",

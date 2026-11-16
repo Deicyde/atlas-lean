@@ -22,8 +22,9 @@ first wavelet orthonormal basis: of `L²[0,1)` together with the constant `1` (R
 over all `j, k ∈ ℤ` (S. Mallat, *Multiresolution approximations and wavelet orthonormal bases of
 `L²(ℝ)`*, Trans. Amer. Math. Soc. 315 (1989), p. 23, as the multiresolution approximation with
 scaling function `1_{[0,1)}`). The statements are recorded as Hilbert bases of the real `L²`
-spaces whose elements are almost everywhere equal to the Haar functions; the proofs (density of
-dyadic step functions and orthogonality of nested dyadic intervals) are deferred.
+spaces whose elements are almost everywhere equal to the Haar functions. Orthonormality is
+proved (`MathlibExt.Analysis.Wavelet.Haar.integral_haarSystem_mul_haarSystem`, in integral
+form); completeness, through the density of dyadic step functions, is deferred.
 -/
 
 @[expose] public section
