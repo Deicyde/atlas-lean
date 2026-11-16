@@ -8,6 +8,7 @@ A Markov kernel $\kappa$ contracts total variation by Dobrushin's coefficient $\
 - [Dobrushin's contraction](total-variation-dist-comp-le.md)
 - [Data-processing inequality for total variation](total-variation-dist-comp-le-self.md)
 - [Rows of a kernel are within Dobrushin's coefficient](total-variation-dist-le-dobrushin-coeff.md)
+- [Strong data-processing inequality for KL divergence](kl-div-comp-le-dobrushin-coeff-mul.md)
 
 ## Related topics
 

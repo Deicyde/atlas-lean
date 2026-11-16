@@ -383,7 +383,8 @@
     {"slug": "information-inequalities", "title": "Information inequalities", "description": "Inequalities relating entropies, divergences and mutual information, such as the log-sum, Pinsker, Fano, data-processing and Shearer inequalities.", "msc": ["94A17", "26D15"], "subfields": []},
     {"slug": "source-coding", "title": "Source coding", "description": "Lossless compression of information sources by variable-length codes, including prefix codes, the Kraft–McMillan inequality and Shannon's source coding bounds.", "msc": ["94A29", "94A45"], "subfields": []},
     {"slug": "channel-simulation", "title": "Channel simulation", "description": "Simulating a noisy channel with shared randomness and auxiliary random variables, including one-shot channel simulation and the functional representation lemma.", "msc": ["94A24", "94A15"], "subfields": []},
-    {"slug": "error-correcting-codes", "title": "Error-correcting codes", "description": "Codes that detect or correct transmission errors, including linear codes, Hamming and Reed–Solomon codes, cyclic redundancy checks, and the Hamming-space geometry used to bound them.", "msc": ["94B05", "94B15", "94B35", "94B65"], "subfields": []}
+    {"slug": "error-correcting-codes", "title": "Error-correcting codes", "description": "Codes that detect or correct transmission errors, including linear codes, Hamming and Reed–Solomon codes, cyclic redundancy checks, and the Hamming-space geometry used to bound them.", "msc": ["94B05", "94B15", "94B35", "94B65"], "subfields": []},
+    {"slug": "channel-coding", "title": "Channel coding", "description": "Reliable transmission over noisy channels: channel capacity, Shannon's noisy-channel coding theorem, and its weak and strong converses.", "msc": ["94A24", "94A40"], "subfields": []}
    ]
   },
   "LinearAlgebra": {
@@ -5911,7 +5912,9 @@
   "WantedExt/GroupTheory/WordMapsSurjectivityKourovka16Problem68Wanted": {"to": "GroupTheory/commutators-and-engel-conditions", "title": "Word maps on Lie groups"},
   "WantedExt/GroupTheory/WordProblemSolvableShared": {"to": "GroupTheory/presentations-and-decision-problems", "title": "Word problem for groups"},
   "WantedExt/GroupTheory/ZassenhausConjectureKourovka17Problem67Wanted": {"to": "GroupTheory/group-rings", "title": "Zassenhaus conjectures"},
+  "WantedExt/InformationTheory/ChannelCodingWanted": {"to": "InformationTheory/channel-coding", "title": "Shannon's channel coding theorem"},
   "WantedExt/InformationTheory/ChannelSimulationBoundsWanted": {"to": "InformationTheory/channel-simulation", "title": "One-shot channel simulation"},
+  "WantedExt/InformationTheory/StrongDataProcessingWanted": {"to": "InformationTheory/information-inequalities", "title": "Strong data processing and Dobrushin's coefficient"},
   "WantedExt/LinearAlgebra/LidskiiInequalityWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lidskii's eigenvalue inequality"},
   "WantedExt/LinearAlgebra/LidskiiWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lidskii's eigenvalue inequality"},
   "WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Eigenvalues of the inverse matrix"},
