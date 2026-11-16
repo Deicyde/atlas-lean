@@ -30,3 +30,7 @@
 - [Target is stationary for the Gibbs sweep matrix](vec-mul-gibbs-sweep-matrix.md)
 - [Positivity of Gibbs sweep transition probabilities](gibbs-sweep-matrix-pos.md)
 - [The systematic-scan Gibbs sampler converges to its target](exists-tv-dist-gibbs-sweep-matrix-pow-le.md)
+
+## Related topics
+
+- [Canonical paths and multicommodity flow](../../../../Probability/markov-chains/canonical-paths-and-multicommodity-flow/README.md): quantitative bounds on how fast a reversible chain approaches its target: canonical paths and flows bound the spectral gap, and fast mixing yields a low-congestion flow.

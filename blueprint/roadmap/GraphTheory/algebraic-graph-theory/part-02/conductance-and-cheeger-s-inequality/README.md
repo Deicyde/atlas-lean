@@ -11,3 +11,4 @@ The conductance `φ(S) = w(∂S) / min(d(S), d(V \ S))` of a vertex set in a wei
 
 - [Graph Laplacians and Cheeger's inequality](../../part-01/graph-laplacians-and-cheeger-s-inequality/README.md): the Laplacian, its quadratic form and the easy direction `λ₂/2 ≤ θ_G`.
 - [Expander graphs](../../../graph-families-and-operations/expander-graphs/README.md): Cheeger's inequality turns a spectral gap into edge expansion.
+- [Canonical paths and multicommodity flow](../../../../Probability/markov-chains/canonical-paths-and-multicommodity-flow/README.md): the Markov-chain counterpart: conductance and congestion of path systems in a reversible chain, viewed as a graph with edge weights `π(u) P(u, v)`.

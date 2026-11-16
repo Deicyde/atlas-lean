@@ -17,3 +17,4 @@
 - [Random walks on finite groups](../../random-walks/random-walks-on-finite-groups/README.md):
   mixing times and cutoff computed by Fourier analysis, for random transpositions and riffle
   shuffles.
+- [Canonical paths and multicommodity flow](../canonical-paths-and-multicommodity-flow/README.md): geometric bounds on the spectral gap of a reversible chain by canonical paths and flows, and Sinclair's converse that fast mixing yields a low-congestion flow.
