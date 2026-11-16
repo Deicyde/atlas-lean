@@ -24,4 +24,11 @@ example : IsTreeLike (fun _ : ℝ => (0 : EuclideanSpace ℝ (Fin 2))) 1 := isTr
 example : IsTreeLike (fun t : ℝ => min t (1 - t) • EuclideanSpace.single (0 : Fin 2) (1 : ℝ)) 1 :=
   isTreeLike_out_and_back _ zero_le_one
 
+/-- A path that is not tree-like: the segment `t ↦ t e₀` on `[0, 1]` ends away from its start. -/
+example : ¬ IsTreeLike (fun t : ℝ => t • EuclideanSpace.single (0 : Fin 2) (1 : ℝ)) 1 := by
+  intro h
+  have := h.apply_eq zero_le_one
+  have h1 := congrArg (fun x : EuclideanSpace ℝ (Fin 2) => x 0) this
+  simp at h1
+
 end MathlibExtTest.Analysis.PathSignature.TreeLike

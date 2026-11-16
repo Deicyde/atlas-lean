@@ -47,12 +47,6 @@ namespace MathlibExt.Analysis.PathSignature
 
 variable {ι : Type*}
 
--- Iterated integrals indexed by *reversed* words: `signatureRev v s (i :: w) t` integrates the
--- iterated integral of the reversed word `w` against `dXⁱ`. Implementation detail of `signature`.
-noncomputable def signatureRev (v : ι → ℝ → ℝ) (s : ℝ) : List ι → ℝ → ℝ
-  | [], _ => 1
-  | i :: w, t => ∫ u in s..t, signatureRev v s w u * v i u
-
 /-- **Signature of a path (iterated integrals).** For a path in `ℝ^ι` with velocity
 `v i = dXⁱ/dt`, `signature v s t w` is the iterated integral
 `S(X)^{i₁…i_k}_{s,t} = ∫_{s<t₁<⋯<t_k<t} dX^{i₁}_{t₁} ⋯ dX^{i_k}_{t_k}` along the word
@@ -61,21 +55,27 @@ noncomputable def signatureRev (v : ι → ℝ → ℝ) (s : ℝ) : List ι → 
 over `[s, t]` is the family `w ↦ signature v s t w` (Chevyrev and Kormilitzin, *A primer on the
 signature method in machine learning*, arXiv:1603.03788v2, equation (3) and Definition 1.4). -/
 noncomputable def signature (v : ι → ℝ → ℝ) (s t : ℝ) (w : List ι) : ℝ :=
-  signatureRev v s w.reverse t
+  go w.reverse t
+where
+  /- The iterated integrals indexed by reversed words: `go (i :: l) t` integrates the iterated
+  integral of the reversed word `l` against `dXⁱ`. -/
+  go : List ι → ℝ → ℝ
+    | [], _ => 1
+    | i :: l, t => ∫ u in s..t, go l u * v i u
 
 variable {v : ι → ℝ → ℝ}
 
 /-- **Zeroth term of the signature.** The term of the empty word is `1` (Chevyrev and
 Kormilitzin, arXiv:1603.03788v2, Definition 1.4: `S(X)^∅_{a,b} = 1`). -/
 @[simp] theorem signature_nil (v : ι → ℝ → ℝ) (s t : ℝ) : signature v s t [] = 1 := by
-  simp [signature, signatureRev]
+  simp [signature, signature.go]
 
 /-- **Recursive definition of the signature.** Appending a letter `i` to a word integrates
 against `dXⁱ`: `S^{w i}_{s,t} = ∫_s^t S^w_{s,u} vⁱ(u) du` (Chevyrev and Kormilitzin,
 arXiv:1603.03788v2, §1.2.1, the recursion before equation (3)). -/
 theorem signature_concat (v : ι → ℝ → ℝ) (s t : ℝ) (w : List ι) (i : ι) :
     signature v s t (w ++ [i]) = ∫ u in s..t, signature v s u w * v i u := by
-  simp [signature, signatureRev]
+  simp [signature, signature.go]
 
 /-- **First level of the signature is the increment.** `S^i_{s,t} = ∫_s^t vⁱ = Xⁱ_t − Xⁱ_s`
 (Chevyrev and Kormilitzin, arXiv:1603.03788v2, equation (1)). -/
@@ -154,8 +154,8 @@ theorem signature_replicate {i : ι} (hv : Continuous (v i)) (s t : ℝ) (k : �
     rw [intervalIntegral.integral_eq_sub_of_hasDerivAt hderiv (hcont.intervalIntegrable s t)]
     simp [F]
 
-/-- **Splitting a sum over words by the last letter.** A sum over the words of length `k + 1` is a
-sum over the last letter `i` and the words `w` of length `k`, of the term at `w i`. -/
+-- Splitting a sum over the words of length `k + 1` by the last letter; a helper for
+-- `LinearCDE` and `RoughPath`, deliberately without a docstring (no page).
 theorem sum_fin_succ_ofFn [Fintype ι] {M : Type*} [AddCommMonoid M] (k : ℕ)
     (F : List ι → M) :
     ∑ g : Fin (k + 1) → ι, F (List.ofFn g) = ∑ i, ∑ g : Fin k → ι, F (List.ofFn g ++ [i]) := by

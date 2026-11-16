@@ -37,14 +37,6 @@ namespace MathlibExt.Analysis.PathSignature
 
 variable {ι : Type*}
 
--- Shuffles of reversed words, by first-letter recursion. Implementation detail of `shuffle`.
-def shuffleRev : List ι → List ι → List (List ι)
-  | [], v => [v]
-  | a :: u, [] => [a :: u]
-  | a :: u, b :: v =>
-      (shuffleRev u (b :: v)).map (a :: ·) ++ (shuffleRev (a :: u) v).map (b :: ·)
-termination_by u v => u.length + v.length
-
 /-- **Shuffle product of two words.** `shuffle I J` lists, with multiplicity, every word obtained by
 interleaving `I` and `J` while preserving the order of the letters of each; it has
 `(|I| + |J| choose |I|)` entries (Chevyrev and Kormilitzin, *A primer on the signature method in
@@ -52,16 +44,23 @@ machine learning*, arXiv:1603.03788v2, Definition 1.12). It satisfies `∅ ⧢ J
 and the last-letter recursion `(I i) ⧢ (J j) = (I ⧢ J j) i + (I i ⧢ J) j`
 (the decomposition used in the proof of Theorem 1.14 there). -/
 def shuffle (I J : List ι) : List (List ι) :=
-  (shuffleRev I.reverse J.reverse).map List.reverse
+  (go I.reverse J.reverse).map List.reverse
+where
+  /- Shuffles of reversed words, by first-letter recursion. -/
+  go : List ι → List ι → List (List ι)
+    | [], v => [v]
+    | a :: u, [] => [a :: u]
+    | a :: u, b :: v => (go u (b :: v)).map (a :: ·) ++ (go (a :: u) v).map (b :: ·)
+  termination_by u v => u.length + v.length
 
 @[simp] theorem shuffle_nil_left (J : List ι) : shuffle [] J = [J] := by
-  simp [shuffle, shuffleRev]
+  simp [shuffle, shuffle.go]
 
-theorem shuffleRev_nil_right (u : List ι) : shuffleRev u [] = [u] := by
-  cases u <;> simp [shuffleRev]
+private theorem shuffle_go_nil_right (u : List ι) : shuffle.go u [] = [u] := by
+  cases u <;> simp [shuffle.go]
 
 @[simp] theorem shuffle_nil_right (I : List ι) : shuffle I [] = [I] := by
-  simp [shuffle, shuffleRev_nil_right]
+  simp [shuffle, shuffle_go_nil_right]
 
 /-- **Last-letter recursion of the shuffle product.**
 `(I i) ⧢ (J j) = (I ⧢ J j) i + (I i ⧢ J) j` (Chevyrev and Kormilitzin, arXiv:1603.03788v2,
@@ -70,7 +69,7 @@ theorem shuffle_concat_concat (I J : List ι) (i j : ι) :
     shuffle (I ++ [i]) (J ++ [j]) =
       (shuffle I (J ++ [j])).map (· ++ [i]) ++ (shuffle (I ++ [i]) J).map (· ++ [j]) := by
   simp only [shuffle, List.reverse_append, List.reverse_singleton, List.singleton_append]
-  rw [shuffleRev]
+  rw [shuffle.go]
   simp [List.map_map, Function.comp_def]
 
 variable {v : ι → ℝ → ℝ}
@@ -158,7 +157,7 @@ theorem signature_pair_eq (hv : ∀ i, Continuous (v i)) (s t : ℝ) (i j : ι) 
       (∫ u in s..t, v i u) * (∫ u in s..t, v j u) / 2 + levyArea v s t i j := by
   have h := signature_mul_signature hv s t [i] [j]
   have hs : shuffle [i] [j] = [[j, i], [i, j]] := by
-    simp [shuffle, shuffleRev]
+    simp [shuffle, shuffle.go]
   rw [hs, signature_singleton, signature_singleton] at h
   simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, add_zero] at h
   unfold levyArea

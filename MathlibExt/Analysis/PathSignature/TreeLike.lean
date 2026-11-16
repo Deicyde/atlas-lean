@@ -39,7 +39,8 @@ there is a continuous function `h : [0, T] → [0, ∞)` with `h 0 = h T = 0` su
 `‖X_t − X_s‖ ≤ h(s) + h(t) − 2 inf_{u ∈ [s,t]} h(u)` for all `0 ≤ s ≤ t ≤ T`; `h` is a height
 function for `X` (B. Hambly and T. Lyons, *Uniqueness for the signature of a path of bounded
 variation and the reduced path group*, Ann. of Math. 171 (2010), arXiv:math/0507536,
-Definition 1.3). -/
+Definition 1.3). The definition is meant for `T ≥ 0`: for `T < 0` the interval is empty and
+every path qualifies. -/
 def IsTreeLike {E : Type*} [NormedAddCommGroup E] (X : ℝ → E) (T : ℝ) : Prop :=
   ∃ h : ℝ → ℝ, ContinuousOn h (Set.Icc 0 T) ∧ (∀ t ∈ Set.Icc 0 T, 0 ≤ h t) ∧ h 0 = 0 ∧
     h T = 0 ∧ ∀ s ∈ Set.Icc 0 T, ∀ t ∈ Set.Icc s T,
@@ -83,5 +84,18 @@ theorem isTreeLike_out_and_back {E : Type*} [NormedAddCommGroup E] [NormedSpace 
     nlinarith [norm_nonneg x]
   · rw [abs_of_nonpos (sub_nonpos.mpr h)]
     nlinarith [norm_nonneg x]
+
+/-- **A tree-like path is a loop.** If `X` is tree-like on `[0, T]` with `T ≥ 0`, then
+`X_T = X_0`: the pair of times `(0, T)` gives `‖X_T − X_0‖ ≤ −2 inf h ≤ 0` (B. Hambly and T. Lyons,
+Ann. of Math. 171 (2010), Definition 1.3). In particular a segment with distinct endpoints is not
+tree-like. -/
+theorem IsTreeLike.apply_eq {E : Type*} [NormedAddCommGroup E] {X : ℝ → E} {T : ℝ}
+    (hX : IsTreeLike X T) (hT : 0 ≤ T) : X T = X 0 := by
+  obtain ⟨h, -, hnn, h0, hT0, hineq⟩ := hX
+  have hinf : 0 ≤ sInf (h '' Set.Icc 0 T) :=
+    Real.sInf_nonneg fun _ ⟨u, hu, hux⟩ => hux ▸ hnn u hu
+  have := hineq 0 ⟨le_rfl, hT⟩ T ⟨hT, le_rfl⟩
+  rw [h0, hT0] at this
+  exact sub_eq_zero.mp (norm_le_zero_iff.mp (by linarith))
 
 end MathlibExt.Analysis.PathSignature

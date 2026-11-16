@@ -55,9 +55,12 @@ multiplicative functional `X` satisfy `‖Xⁱ_{s,t}‖ ≤ ω(s, t)^{i/p} / (β
 `Y` (multiplicative of every degree, of finite `p`-variation, agreeing with `X` up to level
 `⌊p⌋`) satisfies the same inequality in every degree (T. Lyons, *Differential equations driven by
 rough signals*, Rev. Mat. Iberoam. 14 (1998), Theorem 2.2.1, inequalities (2.20) and (2.21):
-"providing β is large enough"). Here `β₀` may depend on the alphabet. -/
-theorem_wanted isControlledBy_extension {ι : Type*} [Fintype ι] {p : ℝ} (hp : 1 ≤ p) :
-    ∃ β₀ > 0, ∀ {J : Set ℝ}, J.OrdConnected → ∀ (ω : ℝ → ℝ → ℝ), IsControl ω J →
+"providing β is large enough"; Remark 2.2.1(1) gives an explicit sufficient `β` depending only
+on `p`, through the Riemann zeta function, for any admissible family of tensor norms). Here `β₀`
+depends only on `p`: it is chosen before the alphabet. -/
+theorem_wanted isControlledBy_extension {p : ℝ} (hp : 1 ≤ p) :
+    ∃ β₀ > 0, ∀ (ι : Type) [Fintype ι] {J : Set ℝ}, J.OrdConnected → ∀ (ω : ℝ → ℝ → ℝ),
+      IsControl ω J →
       ∀ β ≥ β₀, ∀ X Y : ℝ → ℝ → List ι → ℝ,
         IsMultiplicativeFunctional ⌊p⌋₊ X J → IsControlledBy p β ⌊p⌋₊ X ω J →
         (∀ s ∈ J, ∀ t ∈ J, s ≤ t → ∀ w : List ι, w.length ≤ ⌊p⌋₊ → Y s t w = X s t w) →
