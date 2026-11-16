@@ -24,13 +24,14 @@ These results compare hypotheses through their likelihoods: the Neyman–Pearson
 
 ## Exact, rank and randomisation inference
 
-These procedures base inference on counts, ranks or random reassignments of the data, from exact conditional tests and rank statistics to permutation p-values and split conformal prediction sets.
+These procedures base inference on counts, ranks or random reassignments of the data, from exact conditional tests and rank statistics to permutation p-values and conformal prediction sets.
 
 - [Fisher's exact test](fisher-s-exact-test/README.md)
 - [Exact test for Hardy–Weinberg equilibrium](exact-test-for-hardy-weinberg-equilibrium/README.md)
 - [Mann–Whitney statistic and ROC area](mann-whitney-statistic-and-roc-area/README.md)
 - [Permutation tests](permutation-tests/README.md)
 - [Split conformal prediction](split-conformal-prediction/README.md)
+- [Conformalized quantile regression](conformalized-quantile-regression/README.md)
 
 ## Other topics in hypothesis testing
 
