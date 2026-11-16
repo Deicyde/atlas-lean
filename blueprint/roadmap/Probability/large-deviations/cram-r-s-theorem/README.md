@@ -1,5 +1,11 @@
 # Cramér's theorem
 
+For i.i.d. random vectors with a finite moment generating function, the empirical means satisfy a
+large deviation principle whose rate function is the Legendre transform of the logarithmic moment
+generating function. The theorem itself is recorded as wanted; the proved pages give the
+Chernoff upper bound in a fixed direction and the properties of the rate function.
+
+- [Cramér's theorem in ℝᵈ](satisfies-ldp-empirical-mean-measure-vec.md)
 - [Law of the empirical mean](empirical-mean-measure-vec.md)
 - [Real-valued log-MGF expression](log-mgfvec.md)
 - [Chernoff bound for the empirical mean of real-valued i.i.d. variables](measure-empirical-mean-le-of-threshold.md)
@@ -28,4 +34,5 @@
 
 ## Related topics
 
+- [Sanov's theorem](../sanov-s-theorem/README.md)
 - [Matrix concentration inequalities](../../concentration-inequalities/matrix-concentration-inequalities/README.md)
