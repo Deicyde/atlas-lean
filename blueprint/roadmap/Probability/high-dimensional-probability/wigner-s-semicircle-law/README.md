@@ -36,3 +36,4 @@ its moments are proved here; the law itself is stated.
 - [Weyl's eigenvalue inequalities](../../../Analysis/operator-theory/eigenvalue-inequalities/weyl-s-eigenvalue-inequalities/README.md)
 - [Talagrand's concentration inequality](../../concentration-inequalities/talagrand-s-concentration-inequality/README.md)
 - [Moment problem for compactly supported measures](../../../Analysis/harmonic-analysis/integral-transforms/moment-problem-for-compactly-supported-measures/README.md)
+- [Matrix concentration inequalities](../../concentration-inequalities/matrix-concentration-inequalities/README.md)

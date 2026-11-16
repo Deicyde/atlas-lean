@@ -21,3 +21,7 @@
 - [Marcus--Spielman--Srivastava bound, finite-support form](finite-mssbound.md)
 - [Paving projection](paving-proj.md)
 - [Anderson paving theorem](kadison-singer-paving.md)
+
+## Related topics
+
+- [Matrix concentration inequalities](../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)
