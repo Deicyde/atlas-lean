@@ -2,6 +2,7 @@
 
 Continuous-time processes with continuous paths or independent increments: Kolmogorov's continuity theorem, Blumenthal-type zero–one laws, Markov property for independent-increment processes, quadratic variation, the Itô integral and Itô's formula, stochastic differential equations, the Ornstein–Uhlenbeck process, and Fokker–Planck equations for diffusions.
 
+- [Construction and sample paths of Brownian motion](construction-and-sample-paths-of-brownian-motion/README.md)
 - [Blumenthal zero–one law](blumenthal-zero-one-law/README.md)
 - [Fokker–Planck equation](fokker-planck-equation/README.md)
 - [Kolmogorov continuity theorem](kolmogorov-continuity-theorem/README.md)
