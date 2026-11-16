@@ -623,12 +623,13 @@ lemma sum_supCorr_le_update {A : Set (Fin n → ℝ)} (hA : Bornology.IsBounded 
   change ∑ ε, F ε ≤ ∑ ε, G ε
   linarith
 
-/-- **The contraction lemma** (Ledoux and Talagrand, *Probability in Banach Spaces*, 1991,
-Theorem 4.12 and Corollary 3.17; Shalev-Shwartz and Ben-David, *Understanding Machine
-Learning*, Lemma 26.9; the absolute-value version is Bartlett–Mendelson, Theorem 12.4): if
-each `φ i : ℝ → ℝ` is `L`-Lipschitz and `A` is bounded, then
-`R({(φ₁(a₁), …, φₙ(aₙ)) : a ∈ A}) ≤ L R(A)`. No condition `φ i 0 = 0` is needed in this
-convention. -/
+/-- **The contraction lemma** (Shalev-Shwartz and Ben-David, *Understanding Machine Learning*,
+Lemma 26.9, which states exactly this form): if each `φ i : ℝ → ℝ` is `L`-Lipschitz and `A` is
+bounded, then `R({(φ₁(a₁), …, φₙ(aₙ)) : a ∈ A}) ≤ L R(A)`. No condition `φ i 0 = 0` is needed
+in this convention. The absolute-value versions assume `φ i 0 = 0`: Bartlett–Mendelson,
+Theorem 12.4 (with the factor `2 L`), and cf. the comparison principle for contractions of
+Ledoux and Talagrand, *Probability in Banach Spaces*, 1991, §4.5, stated with an absolute
+value for contractions vanishing at `0`. -/
 theorem rademacherComplexity_coordMap_le {A : Set (Fin n → ℝ)} (hA : Bornology.IsBounded A)
     (φ : Fin n → ℝ → ℝ) {L : NNReal} (hφ : ∀ i, LipschitzWith L (φ i)) :
     rademacherComplexity (coordMap φ '' A) ≤ L * rademacherComplexity A := by
