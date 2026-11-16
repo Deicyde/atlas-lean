@@ -271,7 +271,8 @@
     {"slug": "topological-symbolic-dynamics", "title": "Topological and symbolic dynamics", "description": "Topological dynamics studies continuous maps of topological spaces through orbits, periodic points and recurrence, and symbolic dynamics studies shift spaces and cellular automata on sequences of symbols.", "msc": ["37B10", "37B15", "37B20", "37C25"], "subfields": []},
     {"slug": "low-dimensional-dynamics", "title": "Low-dimensional dynamics", "description": "Low-dimensional dynamics covers maps of the interval and circle, continued-fraction-type maps, flows in the plane and homeomorphisms of surfaces.", "msc": ["37E05", "37E30", "37E35"], "subfields": []},
     {"slug": "smooth-dynamics", "title": "Smooth dynamics", "description": "Smooth dynamics studies differentiable maps and flows: hyperbolicity, stable manifolds and shadowing, Lyapunov exponents and entropy, Hamiltonian perturbation theory, and stability of flows given by differential equations.", "msc": ["37C", "37D", "37J40", "34D"], "subfields": []},
-    {"slug": "complex-dynamics", "title": "Complex dynamics", "description": "Complex dynamics studies the iteration of holomorphic maps, especially polynomials, together with their Julia sets and parameter spaces such as the Mandelbrot set.", "msc": ["37F10", "37F46"], "subfields": []}
+    {"slug": "complex-dynamics", "title": "Complex dynamics", "description": "Complex dynamics studies the iteration of holomorphic maps, especially polynomials, together with their Julia sets and parameter spaces such as the Mandelbrot set.", "msc": ["37F10", "37F46"], "subfields": []},
+    {"slug": "homogeneous-dynamics", "title": "Homogeneous dynamics", "description": "Homogeneous dynamics studies flows and group actions on homogeneous spaces of Lie groups, such as unipotent and horocycle flows on quotients by lattices and Kleinian groups, with applications to values of quadratic forms, lattice point counting and circle packings.", "msc": ["37A17", "22E40", "37D40"], "subfields": []}
    ]
   },
   "FieldTheory": {
@@ -5654,6 +5655,7 @@
   "WantedExt/ComputerScience/SoftmaxPolicyGradientWanted": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Policy gradients for softmax policies"},
   "WantedExt/ComputerScience/PACFundamentalTheoremWanted": {"to": "ComputerScience/machine-learning/pac-learning", "title": "Fundamental theorem of PAC learning"},
   "WantedExt/Dynamics/AMR43Problem1Wanted": {"to": "Dynamics/topological-symbolic-dynamics", "title": "Conjugacy of aperiodic parts of shifts"},
+  "WantedExt/Dynamics/UnipotentFlowsWanted": {"to": "Dynamics/homogeneous-dynamics", "title": "Unipotent flows"},
   "WantedExt/Dynamics/BourgainErgodicWanted": {"to": "Dynamics/ergodic-theory", "title": "Bourgain's polynomial ergodic theorem"},
   "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted": {"to": "Dynamics/complex-dynamics", "title": "Parameter space of cubic polynomials"},
   "WantedExt/Dynamics/EinsiedlerKatokLindenstraussWanted": {"to": "NumberTheory/diophantine-approximation/uniform-distribution-metric", "title": "Littlewood conjecture"},

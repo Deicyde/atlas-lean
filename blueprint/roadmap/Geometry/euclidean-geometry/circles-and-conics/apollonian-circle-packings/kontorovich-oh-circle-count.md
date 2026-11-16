@@ -21,6 +21,8 @@ Bowen–Margulis–Sullivan measure for the frame flow (her Theorem 3.6).
 
 - [Apollonian group](../apollonian-group/README.md): the reduction of circle counting to orbit counting uses the
   Apollonian orbit of the root quadruple.
+- [Unipotent flows](../../../../Dynamics/homogeneous-dynamics/unipotent-flows/README.md): the homogeneous dynamics of
+  lattices, which this count extends to a geometrically finite group of infinite covolume.
 
 ## Sources
 

@@ -17,10 +17,14 @@ has the Curtis–Hedlund–Lyndon theorem, [smooth dynamics](smooth-dynamics/REA
 [low-dimensional dynamics](low-dimensional-dynamics/README.md) the Poincaré–Bendixson theorem. In
 [complex dynamics](complex-dynamics/README.md) the [Mandelbrot set](complex-dynamics/mandelbrot-set/README.md) is
 connected, and by the [Fatou–Julia dichotomy](complex-dynamics/fatou-julia-dichotomy/README.md) the filled Julia set of
-$z^2 + c$ is connected for $c$ in it and a Cantor set otherwise.
+$z^2 + c$ is connected for $c$ in it and a Cantor set otherwise. [Homogeneous dynamics](homogeneous-dynamics/README.md)
+records Margulis's theorem on values of indefinite quadratic forms and the closed-or-dense dichotomy for horocycle
+orbits on $\mathrm{SL}(2, \mathbb{Z}) \backslash \mathrm{SL}(2, \mathbb{R})$, both consequences of the theory of
+[unipotent flows](homogeneous-dynamics/unipotent-flows/README.md).
 
 - [Ergodic theory](ergodic-theory/README.md)
 - [Topological and symbolic dynamics](topological-symbolic-dynamics/README.md)
 - [Low-dimensional dynamics](low-dimensional-dynamics/README.md)
 - [Smooth dynamics](smooth-dynamics/README.md)
 - [Complex dynamics](complex-dynamics/README.md)
+- [Homogeneous dynamics](homogeneous-dynamics/README.md)
