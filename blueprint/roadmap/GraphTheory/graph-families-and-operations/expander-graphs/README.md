@@ -24,12 +24,14 @@ Expanders are sparse graphs that behave like random graphs. Two measures appear 
 - [Spectral expanders have edge expansion, from the mixing lemma](spectral-edge-expansion.md)
 - [Laplacian Rayleigh quotient of a spectral expander](laplacian-rayleigh-quotient.md)
 - [Spectral expanders have edge expansion, through Cheeger's inequality](spectral-edge-expansion-via-cheeger.md)
+- [Independent sets in spectral expanders are small](independent-sets-are-small.md)
 - [Elementary lower bound on the spectral parameter](elementary-spectral-lower-bound.md)
 - [Alon-Boppana bound](alon-boppana.md)
 - [Probability of an event for a random walk on a regular graph](walk-prob.md)
 - [Random-walk probabilities have total mass one](walk-prob-true.md)
 - [Hitting property of expander walks](hitting-property-of-expander-walks.md)
 - [Chernoff bound for expander walks](chernoff-bound-expander-walk.md)
+- [Spectral expanders have logarithmic diameter](logarithmic-diameter.md)
 
 ## Related topics
 

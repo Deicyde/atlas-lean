@@ -29,4 +29,10 @@ example (t : ℕ) :
     norm_num
   rwa [e] at h
 
+/-- Logarithmic diameter on `K₄`: `(1/3)² · 4 < 1`, so any two vertices are joined by a walk of
+length exactly `2` (also between a vertex and itself). -/
+example (s t : Fin 4) : ∃ p : (⊤ : SimpleGraph (Fin 4)).Walk s t, p.length = 2 :=
+  exists_walk_length_eq_of_pow_mul_lt
+    MathlibExtTest.Combinatorics.SimpleGraph.SpectralExpander.k4 (by norm_num) (by norm_num) s t
+
 end MathlibExtTest.Combinatorics.SimpleGraph.ExpanderWalk

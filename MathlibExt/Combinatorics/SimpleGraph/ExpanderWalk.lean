@@ -308,4 +308,102 @@ theorem walkProb_forall_mem_le [DecidableEq V] {G : SimpleGraph V} [DecidableRel
     _ ≤ ρ * ρ ^ t := mul_le_mul_of_nonneg_right hρμ (pow_nonneg hρ0 _)
     _ = ρ ^ (t + 1) := by ring
 
+/-- **Spectral expanders have logarithmic diameter.** Let `G` be a `d`-regular graph, `d ≥ 1`, on
+`N` vertices that is a spectral expander with parameter `λ`, and let `ℓ` satisfy `λ^ℓ N < 1`.
+Then any two vertices `s` and `t` are joined by a walk of length exactly `ℓ`; in particular `G`
+is connected with diameter at most `ℓ`, which is `O(log N / log (1 / λ))` for `λ < 1`
+(O. Reingold, *Undirected ST-connectivity in log-space*, ECCC TR04-094 (2004), Proposition 2.2,
+proved there through vertex expansion; S. Vadhan, *Pseudorandomness* (2012), Problem 4.2 (3)).
+The proof is spectral: `(A^ℓ)_{s t} ≥ d^ℓ (1 / N - λ^ℓ) > 0`, and `(A^ℓ)_{s t}` counts the walks
+of length `ℓ` from `s` to `t`. -/
+theorem exists_walk_length_eq_of_pow_mul_lt {G : SimpleGraph V} [DecidableRel G.Adj] {d : ℕ}
+    {lam : ℝ} (h : IsSpectralExpander G d lam) (hd : 0 < d) {ℓ : ℕ}
+    (hℓ : lam ^ ℓ * Fintype.card V < 1) (s t : V) : ∃ p : G.Walk s t, p.length = ℓ := by
+  classical
+  obtain ⟨hreg, hlam, hb⟩ := h
+  have hrow : G.adjMatrix ℝ *ᵥ (1 : V → ℝ) = (d : ℝ) • (1 : V → ℝ) := by
+    funext v
+    have := G.adjMatrix_mulVec_const_apply_of_regular (α := ℝ) (a := 1) hreg (v := v)
+    simpa using this
+  set A := G.adjMatrix ℝ with hA
+  set N : ℝ := (Fintype.card V : ℝ) with hN
+  have hNpos : 0 < N := by simp only [hN]; exact_mod_cast Fintype.card_pos_iff.mpr ⟨s⟩
+  have hdR : (0 : ℝ) < d := by exact_mod_cast hd
+  -- `A` preserves the vectors orthogonal to the constants.
+  have hpres : ∀ x : V → ℝ, ∑ i, x i = 0 → ∑ i, (A *ᵥ x) i = 0 := by
+    intro x hx
+    have : ∑ i, (A *ᵥ x) i = (1 : V → ℝ) ⬝ᵥ (A *ᵥ x) := by simp [dotProduct]
+    rw [this, dotProduct_mulVec, ← mulVec_transpose, G.transpose_adjMatrix, hrow,
+      smul_dotProduct, one_dotProduct, hx, smul_zero]
+  have hpow : ∀ k : ℕ, ∀ x : V → ℝ, ∑ i, x i = 0 →
+      ∑ i, ((A ^ k) *ᵥ x) i = 0 ∧
+        ((A ^ k) *ᵥ x) ⬝ᵥ ((A ^ k) *ᵥ x) ≤ (((d : ℝ) * lam) ^ 2) ^ k * (x ⬝ᵥ x) := by
+    intro k
+    induction k with
+    | zero => intro x hx; simp [hx]
+    | succ k ih =>
+      intro x hx
+      obtain ⟨h1, h2⟩ := ih x hx
+      rw [pow_succ', ← mulVec_mulVec]
+      refine ⟨hpres _ h1, ?_⟩
+      calc _ ≤ ((d : ℝ) * lam) ^ 2 * (((A ^ k) *ᵥ x) ⬝ᵥ ((A ^ k) *ᵥ x)) := hb _ h1
+        _ ≤ ((d : ℝ) * lam) ^ 2 * ((((d : ℝ) * lam) ^ 2) ^ k * (x ⬝ᵥ x)) :=
+            mul_le_mul_of_nonneg_left h2 (sq_nonneg _)
+        _ = _ := by ring
+  have hpow1' : ∀ k : ℕ, (A ^ k) *ᵥ (1 : V → ℝ) = ((d : ℝ) ^ k) • (1 : V → ℝ) := by
+    intro k
+    induction k with
+    | zero => simp
+    | succ k ih =>
+      rw [pow_succ', ← mulVec_mulVec, ih, mulVec_smul, hrow, smul_smul, pow_succ]
+  have hpow1 := hpow1' ℓ
+  -- Decompose `e_t = (1 / N) 1 + x`.
+  set x : V → ℝ := fun w => (if w = t then 1 else 0) - 1 / N with hx
+  have hxsum : ∑ i, x i = 0 := by
+    simp only [hx, Finset.sum_sub_distrib, Finset.sum_ite_eq', Finset.mem_univ, ite_true,
+      Finset.sum_const, Finset.card_univ, nsmul_eq_mul, ← hN]
+    field_simp
+    ring
+  have hxx : x ⬝ᵥ x ≤ 1 := by
+    have : ∀ w, x w * x w = (if w = t then 1 else 0) * (1 - 2 / N) + (1 / N) ^ 2 := by
+      intro w; by_cases hw : w = t <;> simp [hx, hw] <;> ring
+    rw [dotProduct, Finset.sum_congr rfl fun w _ => this w, Finset.sum_add_distrib,
+      ← Finset.sum_mul, Finset.sum_ite_eq']
+    simp only [Finset.mem_univ, ite_true, Finset.sum_const, Finset.card_univ, nsmul_eq_mul, ← hN]
+    have : 1 * (1 - 2 / N) + N * (1 / N) ^ 2 = 1 - 1 / N := by field_simp; ring
+    rw [this]
+    have : 0 < 1 / N := by positivity
+    linarith
+  have het : (fun w => if w = t then (1 : ℝ) else 0) = (1 / N) • (1 : V → ℝ) + x := by
+    funext w; simp [hx]
+  have hentry : (A ^ ℓ) s t = ((A ^ ℓ) *ᵥ fun w => if w = t then (1 : ℝ) else 0) s := by
+    simp [mulVec, dotProduct]
+  obtain ⟨-, hnorm⟩ := hpow ℓ x hxsum
+  set y := (A ^ ℓ) *ᵥ x
+  have hys : |y s| ≤ ((d : ℝ) * lam) ^ ℓ := by
+    have h1 : y s ^ 2 ≤ y ⬝ᵥ y := by
+      rw [dotProduct, ← Finset.sum_erase_add _ _ (Finset.mem_univ s), sq]
+      have : 0 ≤ ∑ i ∈ Finset.univ.erase s, y i * y i :=
+        Finset.sum_nonneg fun i _ => mul_self_nonneg _
+      linarith
+    have h2 : y ⬝ᵥ y ≤ (((d : ℝ) * lam) ^ ℓ) ^ 2 := by
+      calc _ ≤ (((d : ℝ) * lam) ^ 2) ^ ℓ * (x ⬝ᵥ x) := hnorm
+        _ ≤ (((d : ℝ) * lam) ^ 2) ^ ℓ * 1 := mul_le_mul_of_nonneg_left hxx (by positivity)
+        _ = _ := by ring
+    exact abs_le_of_sq_le_sq' (h1.trans h2) (by positivity) |> fun h => abs_le.mpr h
+  have hpos : 0 < (A ^ ℓ) s t := by
+    rw [hentry, het, mulVec_add, mulVec_smul, hpow1]
+    simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul, Pi.one_apply, mul_one]
+    have hlow := (abs_le.mp hys).1
+    have hdl : ((d : ℝ) * lam) ^ ℓ = (d : ℝ) ^ ℓ * lam ^ ℓ := mul_pow _ _ _
+    have hdpos : 0 < (d : ℝ) ^ ℓ := pow_pos hdR ℓ
+    have : (d : ℝ) ^ ℓ * lam ^ ℓ < (d : ℝ) ^ ℓ * (1 / N) := by
+      apply mul_lt_mul_of_pos_left _ hdpos
+      rw [lt_div_iff₀ hNpos]; linarith
+    nlinarith
+  rw [hA, SimpleGraph.adjMatrix_pow_apply_eq_card_walk] at hpos
+  have hcard : 0 < Fintype.card {p : G.Walk s t | p.length = ℓ} := by exact_mod_cast hpos
+  obtain ⟨⟨p, hp⟩⟩ := Fintype.card_pos_iff.mp hcard
+  exact ⟨p, hp⟩
+
 end MathlibExt.Combinatorics.SpectralExpander
