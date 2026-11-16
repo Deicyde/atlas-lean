@@ -38,8 +38,8 @@ open Matrix Finset
 variable {V E : Type*} [DecidableEq V] [DecidableEq E] [Fintype V] [Fintype E]
 
 /-- **Weighted degree.** The weighted degree `d(a) = ∑_e w_e [a is an endpoint of e]` of a vertex
-in the multigraph with endpoint maps `end₁ end₂` and weights `w` (a loop counts twice; the
-results using it assume no loops). -/
+in the multigraph with endpoint maps `end₁ end₂` and weights `w` (a loop counts twice; loops
+contribute nothing to the Laplacian, and the conductance results below allow them). -/
 noncomputable def weightedDegree (end₁ end₂ : E → V) (w : E → ℝ) (a : V) : ℝ :=
   ∑ e, w e * ((if end₁ e = a then 1 else 0) + (if end₂ e = a then 1 else 0))
 

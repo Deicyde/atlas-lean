@@ -14492,7 +14492,7 @@
 "EndpointMapMultigraph.vecMul_orientedIncidence_apply": "928c636096206890",
 "EndpointMapMultigraph.vecMul_orientedIncidence_eq_zero_iff": "be93d73358a1f963",
 "EndpointMapMultigraph.volume": "5a7d8cda58ab557a",
-"EndpointMapMultigraph.weightedDegree": "e91594b99ba93a82",
+"EndpointMapMultigraph.weightedDegree": "863b0350f3d8b7bb",
 "EngelExpansion.exists_traj_eq_zero": "8311ba96c0d7b5e0",
 "EngelExpansion.exists_traj_eq_zero_pos": "5487125c75cf90f2",
 "EngelExpansion.length": "f4cce314982953fa",
