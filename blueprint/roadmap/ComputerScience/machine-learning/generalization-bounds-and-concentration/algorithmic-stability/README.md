@@ -8,7 +8,7 @@ An algorithm is uniformly stable if replacing one example of its training sample
 
 ## Stability of stochastic gradient descent
 
-Stochastic gradient descent on convex, $\beta$-smooth, $L$-Lipschitz losses with steps $\alpha_t \le 2/\beta$ is uniformly stable with $\varepsilon \le (2L^2/n)\sum_t \alpha_t$ (Hardt, Recht and Singer, Theorem 3.8). The proof couples the runs on two samples that differ in one example through the same random indices: a step on a shared example applies the same non-expansive gradient update to both runs, and a step on the differing example, which happens with probability $1/n$, moves them apart by at most $2\alpha_t L$. With the generalization bound above, the expected generalization gap of SGD is at most $2L^2/n$ times its total step length, whatever the number of passes over the data: training faster generalizes better.
+Stochastic gradient descent on convex, $\beta$-smooth, $L$-Lipschitz losses with steps $\alpha_t \le 2/\beta$ is uniformly stable with $\varepsilon \le (2L^2/n)\sum_t \alpha_t$ (Hardt, Recht and Singer, Theorem 3.8). The proof couples the runs on two samples that differ in one example through the same random indices: a step on a shared example applies the same non-expansive gradient update to both runs, and a step on the differing example, which happens with probability $1/n$, moves them apart by at most $2\alpha_t L$. With the generalization bound above, applied to a loss bounded at the starting point (each step moves the iterate by at most $\alpha_t L$, so the losses along the run stay bounded), the expected generalization gap of SGD is at most $2L^2/n$ times its total step length, whatever the number of passes over the data: training faster generalizes better.
 
 - [Iterates of the stochastic gradient method](sgm-iterate.md)
 - [Output of the stochastic gradient method](sgm-output.md)
@@ -17,6 +17,7 @@ Stochastic gradient descent on convex, $\beta$-smooth, $L$-Lipschitz losses with
 - [Coupled distance of SGM along a fixed index sequence](norm-sgm-iterate-sub-le.md)
 - [Uniform stability of SGM for convex, smooth, Lipschitz losses](integral-abs-sgm-output-sub-le.md)
 - [SGM is uniformly stable](is-uniformly-stable-sgm.md)
+- [SGM moves at most $L \sum_t \alpha_t$ from its start](norm-sgm-iterate-sub-start-le.md)
 - [Generalization of SGM in expectation](abs-integral-empirical-risk-sub-risk-sgm.md)
 
 ## Related topics

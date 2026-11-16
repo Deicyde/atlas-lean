@@ -45,7 +45,9 @@ The second case happens at each step with probability `1 / n`.
 - `integral_abs_sgmOutput_sub_le`: Theorem 3.8 in the form `E_κ |ℓ(w_T, z) - ℓ(w'_T, z)| ≤ ε`.
 - `isUniformlyStable_sgm`: SGM is uniformly stable in the sense of `IsUniformlyStable`, for the
   loss averaged over the index sequence.
-- `abs_integral_empiricalRisk_sub_risk_sgm_le`: the resulting generalization bound.
+- `norm_sgmIterate_sub_start_le`: the iterates stay within `L ∑ α_t` of the start.
+- `abs_integral_empiricalRisk_sub_risk_sgm_le`: the resulting generalization bound, for a loss
+  bounded at the starting point.
 -/
 
 @[expose] public section
@@ -276,24 +278,65 @@ theorem isUniformlyStable_sgm {n : ℕ} [NeZero n] {ℓ : E → 𝒵 → ℝ} {�
         congr 1; ext κ; rw [abs_sub_comm]
     _ ≤ _ := h
 
+/-- **SGM moves at most `L ∑ α_t` from its start.** If every loss `ℓ(·, z)` is `L`-Lipschitz and
+the steps are nonnegative, then along every index sequence `‖w_t - w₀‖ ≤ L ∑_{s < t} α_s`, since
+each gradient step moves the iterate by at most `α_s L`.
+
+Source: M. Hardt, B. Recht and Y. Singer, *Train faster, generalize better: stability of
+stochastic gradient descent*, ICML 2016, arXiv:1509.01240, Lemma 3.3 (each gradient update is
+`α L`-bounded), summed over the steps. -/
+theorem norm_sgmIterate_sub_start_le {n : ℕ} {ℓ : E → 𝒵 → ℝ} {L : NNReal}
+    (hlip : ∀ z, LipschitzWith L fun w => ℓ w z) {α : ℕ → ℝ} (hα0 : ∀ t, 0 ≤ α t) (w₀ : E)
+    (S : Fin n → 𝒵) (ι : ℕ → Fin n) (t : ℕ) :
+    ‖sgmIterate ℓ α w₀ S ι t - w₀‖ ≤ L * ∑ s ∈ Finset.range t, α s := by
+  induction t with
+  | zero => simp [sgmIterate]
+  | succ t ih =>
+    rw [Finset.sum_range_succ, mul_add]
+    simp only [sgmIterate]
+    have hstep := MathlibExt.Analysis.Convex.Cocoercivity.norm_smul_gradient_le
+      (hlip (S (ι t))) (hα0 t) (sgmIterate ℓ α w₀ S ι t)
+    calc ‖sgmIterate ℓ α w₀ S ι t - α t • gradient (fun w => ℓ w (S (ι t)))
+            (sgmIterate ℓ α w₀ S ι t) - w₀‖
+        = ‖(sgmIterate ℓ α w₀ S ι t - w₀) - α t • gradient (fun w => ℓ w (S (ι t)))
+            (sgmIterate ℓ α w₀ S ι t)‖ := by congr 1; abel
+      _ ≤ ‖sgmIterate ℓ α w₀ S ι t - w₀‖ + ‖α t • gradient (fun w => ℓ w (S (ι t)))
+            (sgmIterate ℓ α w₀ S ι t)‖ := norm_sub_le _ _
+      _ ≤ L * ∑ s ∈ Finset.range t, α s + L * α t := by linarith [mul_comm (α t) (L : ℝ)]
+
+omit [InnerProductSpace ℝ E] [CompleteSpace E] in
+private theorem abs_le_of_lipschitz_of_start {ℓ : E → 𝒵 → ℝ} {L : NNReal}
+    (hlip : ∀ z, LipschitzWith L fun w => ℓ w z) {w₀ : E} {M : ℝ} (hbdd₀ : ∀ z, |ℓ w₀ z| ≤ M)
+    {w : E} {D : ℝ} (hw : ‖w - w₀‖ ≤ D) (z : 𝒵) : |ℓ w z| ≤ M + L * D := by
+  have h := (hlip z).dist_le_mul w w₀
+  rw [Real.dist_eq, dist_eq_norm] at h
+  have h1 : |ℓ w z| ≤ |ℓ w₀ z| + |ℓ w z - ℓ w₀ z| := by
+    have := abs_add_le (ℓ w₀ z) (ℓ w z - ℓ w₀ z)
+    rwa [add_sub_cancel] at this
+  have h2 : (L : ℝ) * ‖w - w₀‖ ≤ L * D := mul_le_mul_of_nonneg_left hw L.2
+  linarith [hbdd₀ z]
+
 /-- **Generalization of SGM in expectation.** Let `ν` be a probability measure on the example
 space and `S ~ ν^{⊗n}` an i.i.d. sample of size `n ≥ 1`. Under the hypotheses of
-`integral_abs_sgmOutput_sub_le`, assume moreover that the loss is bounded and that, for every index
-sequence `κ`, the map `(S, z) ↦ ℓ(w_T(S, κ), z)` is jointly measurable. Then, with
-`R̂_S(w) = (1/n) ∑ᵢ ℓ(w, zᵢ)` and `R(w) = E_z ℓ(w, z)`,
-`|E_{S, κ}[R̂_S(w_T) - R(w_T)]| ≤ (2 L² / n) ∑_{t < T} α_t`, stated with the loss averaged over the
-index sequence as in `isUniformlyStable_sgm`.
+`integral_abs_sgmOutput_sub_le`, assume moreover that the loss is bounded at the starting point,
+`|ℓ(w₀, z)| ≤ M` for every `z`, and that, for every index sequence `κ`, the map
+`(S, z) ↦ ℓ(w_T(S, κ), z)` is jointly measurable. Then, with `R̂_S(w) = (1/n) ∑ᵢ ℓ(w, zᵢ)` and
+`R(w) = E_z ℓ(w, z)`, `|E_{S, κ}[R̂_S(w_T) - R(w_T)]| ≤ (2 L² / n) ∑_{t < T} α_t`, stated with the
+loss averaged over the index sequence as in `isUniformlyStable_sgm`. The bound at `w₀` makes every
+loss along the run bounded by `M + L² ∑_{t < T} α_t` (`norm_sgmIterate_sub_start_le`), which is
+what the expectations need; a bound on the whole space would force a convex loss to be constant.
 
 Source: M. Hardt, B. Recht and Y. Singer, *Train faster, generalize better: stability of
 stochastic gradient descent*, ICML 2016, arXiv:1509.01240, Theorem 2.2 applied to Theorem 3.8
-(the boundedness and measurability hypotheses are added so that the expectations are defined). -/
+(the boundedness at `w₀` and measurability hypotheses are added so that the expectations are
+defined). -/
 theorem abs_integral_empiricalRisk_sub_risk_sgm_le [MeasurableSpace 𝒵] {ν : Measure 𝒵}
     [IsProbabilityMeasure ν] {n : ℕ} [NeZero n] {ℓ : E → 𝒵 → ℝ} {β : ℝ} (hβ : 0 < β)
     {L : NNReal} (hconv : ∀ z, ConvexOn ℝ Set.univ fun w => ℓ w z)
     (hdiff : ∀ z, Differentiable ℝ fun w => ℓ w z)
     (hsmooth : ∀ z, LipschitzWith ⟨β, hβ.le⟩ (gradient fun w => ℓ w z))
     (hlip : ∀ z, LipschitzWith L fun w => ℓ w z) {α : ℕ → ℝ} (hα0 : ∀ t, 0 ≤ α t)
-    (hα : ∀ t, α t ≤ 2 / β) (w₀ : E) (T : ℕ) {M : ℝ} (hbdd : ∀ w z, |ℓ w z| ≤ M)
+    (hα : ∀ t, α t ≤ 2 / β) (w₀ : E) (T : ℕ) {M : ℝ} (hbdd₀ : ∀ z, |ℓ w₀ z| ≤ M)
     (hmeas : ∀ κ : Fin T → Fin n,
       Measurable fun p : (Fin n → 𝒵) × 𝒵 => ℓ (sgmOutput ℓ α w₀ p.1 T κ) p.2) :
     |∫ S, (empiricalRisk (fun (S : Fin n → 𝒵) z => ∫ κ, ℓ (sgmOutput ℓ α w₀ S T κ) z
@@ -302,7 +345,8 @@ theorem abs_integral_empiricalRisk_sub_risk_sgm_le [MeasurableSpace 𝒵] {ν : 
           ∂(indexMeasure n T)) ν S) ∂(Measure.pi fun _ : Fin n => ν)| ≤
       2 * (L : ℝ) ^ 2 / n * ∑ t ∈ Finset.range T, α t := by
   have hn : 0 < n := Nat.pos_of_ne_zero (NeZero.ne n)
-  refine abs_integral_empiricalRisk_sub_risk_le (A := id) hn ?_ (M := M) ?_
+  refine abs_integral_empiricalRisk_sub_risk_le (A := id) hn ?_
+    (M := M + L * (L * ∑ t ∈ Finset.range T, α t)) ?_
     (isUniformlyStable_sgm hβ hconv hdiff hsmooth hlip hα0 hα w₀ T)
   · simp only [id]
     have : (fun p : (Fin n → 𝒵) × 𝒵 => ∫ κ, ℓ (sgmOutput ℓ α w₀ p.1 T κ) p.2
@@ -316,8 +360,10 @@ theorem abs_integral_empiricalRisk_sub_risk_sgm_le [MeasurableSpace 𝒵] {ν : 
     simp only [id]
     refine (abs_integral_le_integral_abs).trans ?_
     calc ∫ κ, |ℓ (sgmOutput ℓ α w₀ S T κ) z| ∂(indexMeasure n T)
-        ≤ ∫ _κ, M ∂(indexMeasure n T) :=
-          integral_mono Integrable.of_finite (integrable_const _) fun κ => hbdd _ _
-      _ = M := by simp
+        ≤ ∫ _κ, M + L * (L * ∑ t ∈ Finset.range T, α t) ∂(indexMeasure n T) :=
+          integral_mono Integrable.of_finite (integrable_const _) fun κ =>
+            abs_le_of_lipschitz_of_start hlip hbdd₀
+              (norm_sgmIterate_sub_start_le hlip hα0 w₀ S _ T) z
+      _ = M + L * (L * ∑ t ∈ Finset.range T, α t) := by simp
 
 end CSLibExt.MachineLearning.GeneralizationBounds

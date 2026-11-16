@@ -41,4 +41,4 @@ How far the gradient update $G(w) = w - \alpha \nabla f(w)$ can move two points 
   by the Armijo and Wolfe conditions instead of a fixed schedule, and the Zoutendijk condition.
 - [Barzilai–Borwein step size](../../numerical-analysis/barzilai-borwein-step-size/README.md):
   gradient descent with the two-point step size, a scalar fit of the secant equation.
-- [Algorithmic stability](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/algorithmic-stability/README.md): the expansiveness properties of the gradient step make stochastic gradient descent on convex, smooth, Lipschitz losses uniformly stable, which bounds its generalization gap by $2L^2/n$ times its total step length.
+- [Algorithmic stability](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/algorithmic-stability/README.md): the expansiveness properties of the gradient step make stochastic gradient descent on convex, smooth, Lipschitz losses uniformly stable, which bounds its generalization gap by $2L^2/n$ times its total step length for a loss bounded at the starting point.

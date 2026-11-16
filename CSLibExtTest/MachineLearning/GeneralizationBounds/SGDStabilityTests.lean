@@ -64,4 +64,28 @@ example (T : ℕ) (S : Fin 4 → Bool) (k : Fin 4) (z' z : Bool) :
     · rw [signedLoss_false]; exact LipschitzWith.id.neg
     · rw [signedLoss_true]; exact LipschitzWith.id
 
+-- The generalization bound for SGM applies to the signed linear loss, which is not constant in `w`
+-- and vanishes at the start `w₀ = 0`: for every law `ν` of the labels, the expected gap of four
+-- unit steps on four examples is at most `(2 / 4) · 4 = 2`.
+example (ν : Measure Bool) [IsProbabilityMeasure ν] :
+    |∫ S, (empiricalRisk (fun (S : Fin 4 → Bool) z => ∫ κ,
+          signedLoss (sgmOutput signedLoss (fun _ => 1) 0 S 4 κ) z ∂(indexMeasure 4 4)) S S -
+        risk (fun (S : Fin 4 → Bool) z => ∫ κ,
+          signedLoss (sgmOutput signedLoss (fun _ => 1) 0 S 4 κ) z ∂(indexMeasure 4 4)) ν S)
+        ∂(Measure.pi fun _ : Fin 4 => ν)| ≤
+      2 * ((1 : NNReal) : ℝ) ^ 2 / (4 : ℕ) * ∑ t ∈ Finset.range 4, (fun _ => (1 : ℝ)) t := by
+  refine abs_integral_empiricalRisk_sub_risk_sgm_le one_pos (fun z => ?_) (fun z => ?_)
+    (fun z => ?_) (fun z => ?_) (fun _ => zero_le_one) (fun _ => by norm_num) 0 4 (M := 0)
+    (fun z => by cases z <;> simp [signedLoss]) (fun κ => Measurable.of_discrete)
+  · cases z
+    · rw [signedLoss_false]; exact (concaveOn_id convex_univ).neg
+    · rw [signedLoss_true]; exact convexOn_id convex_univ
+  · cases z
+    · rw [signedLoss_false]; exact differentiable_id.neg
+    · rw [signedLoss_true]; exact differentiable_id
+  · rw [gradient_signedLoss]; exact (LipschitzWith.const _).weaken zero_le
+  · cases z
+    · rw [signedLoss_false]; exact LipschitzWith.id.neg
+    · rw [signedLoss_true]; exact LipschitzWith.id
+
 end CSLibExt.MachineLearning.GeneralizationBounds
