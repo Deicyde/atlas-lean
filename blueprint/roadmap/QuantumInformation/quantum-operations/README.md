@@ -4,3 +4,4 @@ Quantum operations and channels covers the physically allowed transformations of
 
 - [Quantum Fourier transform](quantum-fourier-transform/README.md)
 - [No-cloning theorem for two states](no-cloning-two-state.md)
+- [No-cloning theorem (linear form)](no-cloning-linear.md)

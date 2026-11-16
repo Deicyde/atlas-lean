@@ -27387,6 +27387,7 @@
 "MathlibExt.QuantumInformation.Finite.KnillLaflamme.IsCorrectable": "44ed9f67487fcf26",
 "MathlibExt.QuantumInformation.Finite.KnillLaflamme.knillLaflamme_of_isCorrectable": "19fc412168de8dd1",
 "MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three": "ba359f58f8b86cb2",
+"MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_linear": "a2ed796edbe948ad",
 "MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_two_state": "964e9587ce22f13c",
 "MathlibExt.QuantumInformation.Finite.QuantumFourierTransform.qftMatrix": "5549035fc328525e",
 "MathlibExt.QuantumInformation.Finite.QuantumFourierTransform.qftMatrix_mem_unitaryGroup": "b5e302d091755190",
