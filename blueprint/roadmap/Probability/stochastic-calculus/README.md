@@ -13,6 +13,7 @@ Continuous-time processes with continuous paths or independent increments: the c
 - [Itô's formula](it-s-formula/README.md)
 - [Girsanov's theorem for a constant drift](has-law-sub-drift-with-density.md)
 - [Strong solutions of SDEs with Lipschitz coefficients](sde-lipschitz-exists-unique.md)
+- [Backward stochastic differential equations](backward-stochastic-differential-equations/README.md)
 - [Ornstein–Uhlenbeck process](ornstein-uhlenbeck-process/README.md)
 
 ## Related topics
