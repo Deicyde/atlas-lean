@@ -4116,6 +4116,7 @@
   "MathlibExt/Probability/StrongMarkovIID": {"to": "Probability/random-walks", "title": "Strong Markov property of i.i.d. sequences"},
   "MathlibExt/Probability/StrongMarkovIIDIndepPast": {"to": "Probability/random-walks", "title": "Strong Markov property of i.i.d. sequences"},
   "MathlibExt/Probability/SubExponential": {"to": "Probability/concentration-inequalities", "title": "Sub-exponential variables and Bernstein's inequality"},
+  "MathlibExt/Probability/SublinearExpectation": {"to": "Probability/foundations", "title": "Sublinear expectations and model uncertainty"},
   "MathlibExt/Probability/SubmartingaleConvergence": {"to": "Probability/martingales", "title": "Martingale convergence theorems"},
   "MathlibExt/Probability/SupermartingaleOptionalStopping": {"to": "Probability/martingales", "title": "Optional stopping theorem"},
   "MathlibExt/Probability/TailIntegralRV": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Truncated moments of regularly varying tails"},
