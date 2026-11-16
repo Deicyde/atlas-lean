@@ -95,7 +95,7 @@
     {"slug": "convex-analysis-and-variations", "title": "Convex analysis and calculus of variations", "description": "Convex functions and sets in analysis and optimization: Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.", "msc": ["49", "52A41", "90C25", "58E"], "subfields": []},
     {"slug": "fixed-point-theory", "title": "Fixed-point theory", "description": "Fixed points of nonexpansive, Lipschitz and affine maps: the Browder–Göhde–Kirk theorem and Kirk's normal structure, Markov–Kakutani, Browder's demiclosedness principle, maps with contracting iterates.", "msc": ["47H10", "47H09", "54H25"], "subfields": []},
     {"slug": "numerical-analysis", "title": "Numerical analysis", "description": "Algorithms with error analysis: bisection and Newton's method, Euler and Runge–Kutta methods, Galerkin and finite element estimates (Céa, Aubin–Nitsche, Strang, Banach–Nečas–Babuška), and methods for smooth unconstrained optimization (line searches and the Zoutendijk condition, nonlinear conjugate gradient, trust-region, quasi-Newton and Barzilai–Borwein methods).", "msc": ["65", "65K05", "90C30"], "subfields": []},
-    {"slug": "approximation-theory", "title": "Approximation theory", "description": "Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation.", "msc": ["41A"], "subfields": []}
+    {"slug": "approximation-theory", "title": "Approximation theory", "description": "Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation by greedy pursuits (matching pursuit and orthogonal matching pursuit).", "msc": ["41A"], "subfields": []}
    ]
   },
   "Biology": {
@@ -1944,6 +1944,7 @@
   "MathlibExt/Analysis/InnerProductSpace/LpDiagonalOperatorSpectrum": {"to": "Analysis/operator-theory/integral-and-multiplication", "title": "Diagonal operators"},
   "MathlibExt/Analysis/InnerProductSpace/LpShiftOperator": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Unilateral shift"},
   "MathlibExt/Analysis/InnerProductSpace/LpShiftOperatorSpectrum": {"to": "Analysis/operator-theory/shift-toeplitz-hankel", "title": "Unilateral shift"},
+  "MathlibExt/Analysis/InnerProductSpace/MatchingPursuit": {"to": "Analysis/approximation-theory", "title": "Matching pursuit"},
   "MathlibExt/Analysis/InnerProductSpace/NeumannPolyaBenchmark": {"to": "Analysis/partial-differential-equations", "title": "Pólya's conjecture on Laplacian eigenvalues"},
   "MathlibExt/Analysis/InnerProductSpace/NormDerivative": {"to": "Analysis/hilbert-spaces", "title": "Derivatives of the norm"},
   "MathlibExt/Analysis/InnerProductSpace/NormSqHessian": {"to": "Analysis/hilbert-spaces", "title": "Derivatives of the norm"},
@@ -4889,6 +4890,7 @@
   "WantedExt/Analysis/HermanProblem290Wanted": {"to": "Dynamics/low-dimensional-dynamics", "title": "Linearization of circle diffeomorphisms"},
   "WantedExt/Analysis/HessianEstimatesWanted": {"to": "Analysis/partial-differential-equations", "title": "Hessian estimates for the σ₂ equation"},
   "WantedExt/Analysis/InnerProductSpace/ExactRecoveryCoherenceWanted": {"to": "Analysis/approximation-theory", "title": "Sparse recovery by orthogonal matching pursuit"},
+  "WantedExt/Analysis/InnerProductSpace/MatchingPursuitWanted": {"to": "Analysis/approximation-theory", "title": "Matching pursuit"},
   "WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted": {"to": "Analysis/hilbert-spaces", "title": "Orthogonal polynomial bases of L²[−1, 1]"},
   "WantedExt/Analysis/IsingPhaseTransitionWanted": {"to": "StatisticalMechanics/exact-solutions", "title": "Onsager's solution of the two-dimensional Ising model"},
   "WantedExt/Analysis/KolmogorovArnoldWanted": {"to": "Analysis/approximation-theory", "title": "Kolmogorov superposition theorem"},

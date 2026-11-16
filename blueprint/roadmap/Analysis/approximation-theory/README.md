@@ -1,6 +1,6 @@
 # Approximation theory
 
-Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation by greedy pursuit (orthogonal matching pursuit).
+Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation by greedy pursuits (matching pursuit and orthogonal matching pursuit).
 
 - [Bernstein polynomials](bernstein-polynomials/README.md)
 - [Best approximation in normed spaces](best-approximation-in-normed-spaces/README.md)
@@ -11,6 +11,7 @@ Approximation and interpolation of functions: Chebyshev equioscillation, best ap
 - [Korovkin's theorem](korovkin-s-theorem/README.md)
 - [Lagrange interpolation](lagrange-interpolation/README.md)
 - [Low-rank matrix recovery](low-rank-matrix-recovery/README.md)
+- [Matching pursuit](matching-pursuit/README.md)
 - [Sparse recovery by orthogonal matching pursuit](sparse-recovery-by-orthogonal-matching-pursuit/README.md)
 - [Uniform approximation by partial sums of one power series](uniform-approximation-by-partial-sums-of-one-pow/README.md)
 - [Müntz–Szász theorem for integer exponents](muntz-szasz-nat.md)
