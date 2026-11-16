@@ -24,3 +24,4 @@
 
 - [Positive-definite kernels](../../../../Analysis/hilbert-spaces/positive-definite-kernels/README.md): Aronszajn's theorem, which kernels are inner products of features.
 - [Representer theorem](../../../../Analysis/hilbert-spaces/representer-theorem/README.md): kernel ridge regression over the whole reproducing kernel Hilbert space.
+- [Random Fourier features](../random-fourier-features/README.md): an explicit random feature map that approximates a shift-invariant kernel, so that kernel methods can be run as linear ones on the features.

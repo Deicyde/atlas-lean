@@ -8,6 +8,10 @@ The source states the theorem for "a sample of size $n$", a set of points; its p
 
 Networks of this size can thus fit any labelling of the training sample, random labels included. This is the observation of the source: the effective capacity of such a class is large enough to memorize the data, so a [uniform deviation bound](../../generalization-bounds-and-concentration/README.md) over the whole class cannot explain why networks trained on real labels generalize.
 
+## Background
+
+- [Universal approximation theorem](../../../../Analysis/approximation-theory/universal-approximation.md): background, the classical expressivity result for one-hidden-layer networks, uniform approximation on compact sets as the width grows, where this theorem gives exact interpolation of a finite sample with width $n$.
+
 ## Sources
 
 - C. Zhang, S. Bengio, M. Hardt, B. Recht and O. Vinyals, *Understanding deep learning requires rethinking generalization*, ICLR 2017, arXiv:1611.03530, Theorem 1 (proof in Appendix C).

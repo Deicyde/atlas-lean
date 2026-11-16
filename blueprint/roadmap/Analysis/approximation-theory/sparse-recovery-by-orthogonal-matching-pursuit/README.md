@@ -13,3 +13,4 @@ Greedy sparse approximation in an inner product space, following J. A. Tropp, *G
 
 - [Best approximation in normed spaces](../best-approximation-in-normed-spaces/README.md)
 - [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
+- [Low-rank matrix recovery](../low-rank-matrix-recovery/README.md): the matrix analogue, where sparsity becomes low rank, the $\ell_1$ norm becomes the nuclear norm, and recovery is guaranteed by a restricted isometry property.
