@@ -5,6 +5,7 @@ Random graph models such as Erdős–Rényi, random regular and random k-out gra
 - [Chromatic number of random graphs](chromatic-number-of-random-graphs/README.md)
 - [Connectivity of random k-out graphs](connectivity-of-random-k-out-graphs/README.md)
 - [Finitely forcible graphons](finitely-forcible-graphons/README.md)
+- [Graph limits](graph-limits/README.md)
 - [Random regular graphs](random-regular-graphs/README.md)
 - [Threshold for triangles](threshold-for-triangles/README.md)
 
