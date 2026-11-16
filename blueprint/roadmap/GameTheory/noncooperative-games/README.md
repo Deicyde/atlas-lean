@@ -5,3 +5,4 @@ Noncooperative game theory studies strategic games in which each player chooses 
 - [Von Neumann's minimax theorem](von-neumann-s-minimax-theorem/README.md)
 - [Selfish routing and the price of anarchy](selfish-routing-and-the-price-of-anarchy/README.md)
 - [Potential games](potential-games/README.md)
+- [No-regret dynamics](no-regret-dynamics/README.md)
