@@ -14,4 +14,4 @@ So the forward map from canonical to mean parameters is $\theta \mapsto \nabla A
 
 ## Sources
 
-- M. J. Wainwright and M. I. Jordan, *Graphical models, exponential families, and variational inference*, Found. Trends Mach. Learn. 1(1–2) (2008) 1–305, Proposition 3.1(a), equation (3.41a), with the counting measure (no differentiation under an integral is needed).
+- M. J. Wainwright and M. I. Jordan, *Graphical models, exponential families, and variational inference*, Found. Trends Mach. Learn. 1(1–2) (2008) 1–305, Proposition 3.1(a), first-derivative part, equation (3.41a), with the counting measure (no differentiation under an integral is needed).

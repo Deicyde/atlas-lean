@@ -18,7 +18,8 @@ public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
 # Convergence of Langevin Monte Carlo in Wasserstein distance: wanted
 
 A. S. Dalalyan, *Further and stronger analogy between sampling and optimization: Langevin Monte
-Carlo and gradient descent*, arXiv:1704.04752v2 (COLT 2017), Theorem 1(a): for a strongly
+Carlo and gradient descent*, arXiv:1704.04752v2 (the corrected arXiv version of the COLT 2017
+paper, whose proceedings version prints a different constant), Theorem 1(a): for a strongly
 log-concave target with Lipschitz score and a step `h ≤ 2 / (m + M)`, the law of the `K`-th LMC
 iterate is within `(1 - m h)^K W₂(ν₀, π) + 1.82 (M / m) (h p)^{1/2}` of the target in `W₂`. The
 contraction factor is that of gradient descent on `f`, and the second term is the
@@ -45,9 +46,10 @@ moment. Then for every `K`,
 `W₂(ν K, π) ≤ (1 - m h)^K W₂(ν 0, π) + 1.82 (M / m) (h p)^{1/2}`.
 
 Source: A. S. Dalalyan, *Further and stronger analogy between sampling and optimization: Langevin
-Monte Carlo and gradient descent*, arXiv:1704.04752v2, Theorem 1(a), under condition (1) and the
-update rule (2). The finite second moment of `ν 0` (implicit in the source, where `W₂(ν₀, π)`
-is finite) excludes the indeterminate `0 · ∞` of extended arithmetic when `m h = 1`. -/
+Monte Carlo and gradient descent*, arXiv:1704.04752v2 (corrected arXiv version of the COLT 2017
+paper), Theorem 1(a), under condition (1) and the update rule (2). The finite second moment of
+`ν 0` (implicit in the source, where `W₂(ν₀, π)` is finite) excludes the indeterminate `0 · ∞` of
+extended arithmetic when `m h = 1`. -/
 theorem_wanted wasserstein_lmc_le {p : ℕ} (hp : 0 < p) {f : EuclideanSpace ℝ (Fin p) → ℝ}
     {m M h : ℝ} (hm : 0 < m) (hM : 0 < M) (hdiff : Differentiable ℝ f)
     (hconv : ∀ θ θ' : EuclideanSpace ℝ (Fin p),

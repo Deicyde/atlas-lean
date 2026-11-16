@@ -30,4 +30,4 @@ The method couples a gradient step ($y$) with a dual-averaging step of growing w
 ## Sources
 
 - Y. Nesterov, *A method of solving a convex programming problem with convergence rate $O(1/k^2)$*, Soviet Math. Dokl. 27 (1983) 372–376 (the accelerated $O(1/k^2)$ rate; the three-sequence form of the method used here is the family (19) of Wilson, Recht and Jordan).
-- A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in optimization*, arXiv:1611.02635v2, Section 3.1: the accelerated family (19a)–(19c) and the discrete Lyapunov function (21). The parameters $A_k$, $\tau_k$ and the constant $2L$ are this formalization's choice.
+- A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in optimization*, arXiv:1611.02635v4 (the version containing this material), Section 3.1: the accelerated family (19a)–(19c), the discrete Lyapunov function (21), and Proposition 5 with Lemma 6, whose error bound (26a) for the gradient map $G_\epsilon$ of (25) is $\le 0$ exactly when $(A_{k+1} - A_k)^2 \le A_{k+1}/L$. The parameters $A_k$, $\tau_k$ and the constant $2L$ are this formalization's choice.

@@ -23,3 +23,4 @@ Relative entropy is the Legendre transform of the logarithmic moment generating 
 - [Data-processing inequality](../data-processing-inequality/README.md)
 - [Total variation and Pinsker's inequality](../total-variation-and-pinsker-s-inequality/README.md)
 - [PAC-Bayes bounds](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/pac-bayes-bounds/README.md)
+- [Exponential families](../../../Probability/statistical-estimation/exponential-families/README.md): on a finite set with a uniform base measure the Gibbs variational principle is the variational representation of the log-partition function of an exponential family.

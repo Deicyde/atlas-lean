@@ -15,6 +15,7 @@ public import Mathlib.Analysis.Convex.Mul
 public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.Tactic.Module
 import Mathlib.Analysis.Calculus.Deriv.Inv
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
 
 /-!
 # Tests for Nesterov's accelerated gradient method and its continuous-time limit
@@ -67,35 +68,47 @@ theorem quadratic_lipschitz {E : Type*} [NormedAddCommGroup E] [InnerProductSpac
   rw [quadratic_gradient]
   exact LipschitzWith.id
 
-/-! ## An explicit run of the accelerated method on `x² / 2` over `ℝ`, with `L = 1` -/
+/-- The gradient of `x² / 2` is also `2`-Lipschitz, so the method can be run with `L = 2`, where
+the gradient step `x ↦ x / 2` does not jump to the minimizer and the momentum is exercised. -/
+theorem quadratic_lipschitz_two {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+    [CompleteSpace E] :
+    LipschitzWith ⟨2, by norm_num⟩ (gradient (quadratic (E := E))) := by
+  rw [quadratic_gradient]
+  refine LipschitzWith.of_dist_le_mul fun x y => ?_
+  change dist x y ≤ (2 : ℝ) * dist x y
+  nlinarith [dist_nonneg (x := x) (y := y)]
 
-/-- The pair `(y k, z k)` of the accelerated method on `x² / 2` (gradient `x`), `L = 1`. -/
+/-! ## An explicit run of the accelerated method on `x² / 2` over `ℝ`, with `L = 2` -/
+
+/-- The pair `(y k, z k)` of the accelerated method on `x² / 2` (gradient `x`), `L = 2`. -/
 noncomputable def run (z₀ : ℝ) : ℕ → ℝ × ℝ
   | 0 => (z₀, z₀)
   | k + 1 =>
     let x := ((k : ℝ) / (k + 2)) * (run z₀ k).1 + (2 / ((k : ℝ) + 2)) * (run z₀ k).2
-    (x - x, (run z₀ k).2 - (((k : ℝ) + 1) / 2) * x)
+    (x - (1 / 2) * x, (run z₀ k).2 - (((k : ℝ) + 1) / (2 * 2)) * x)
 
 /-- The coupling point `x (k + 1)` of the run. -/
 noncomputable def runX (z₀ : ℝ) : ℕ → ℝ
   | 0 => z₀
   | k + 1 => ((k : ℝ) / (k + 2)) * (run z₀ k).1 + (2 / ((k : ℝ) + 2)) * (run z₀ k).2
 
-/-- The hypotheses of `nesterov_accelerated_rate` hold for the explicit run, so the rate
-applies to it. -/
+/-- The hypotheses of `nesterov_accelerated_rate` hold for the explicit run with `L = 2`, so
+the rate applies to it. -/
 theorem run_rate (z₀ : ℝ) {k : ℕ} (hk : 0 < k) :
     quadratic (run z₀ k).1 - quadratic (0 : ℝ) ≤
-      2 * 1 * ‖(run z₀ 0).2 - 0‖ ^ 2 / ((k : ℝ) * (k + 1)) := by
-  refine nesterov_accelerated_rate (L := 1) one_pos quadratic_convexOn quadratic_differentiable
-    quadratic_lipschitz 0 (x := runX z₀) (y := fun k => (run z₀ k).1)
+      2 * 2 * ‖(run z₀ 0).2 - 0‖ ^ 2 / ((k : ℝ) * (k + 1)) := by
+  refine nesterov_accelerated_rate (L := 2) two_pos quadratic_convexOn quadratic_differentiable
+    quadratic_lipschitz_two 0 (x := runX z₀) (y := fun k => (run z₀ k).1)
     (z := fun k => (run z₀ k).2) ?_ ?_ ?_ hk
   · intro k; simp [runX, smul_eq_mul]
   · intro k; simp [run, runX, quadratic_gradient, smul_eq_mul]
   · intro k; simp [run, runX, quadratic_gradient, smul_eq_mul]
 
-example : run 1 1 = (0, 1 / 2) := by norm_num [run]
+/-- The first iterates from `z₀ = 1`: `y₁ = 1/2`, `z₁ = 3/4`, then `y₂ = 1/3`, `z₂ = 5/12`
+(the coupling point is `x₂ = 2/3`, a genuine combination of `y₁` and `z₁`). -/
+example : run 1 1 = (1 / 2, 3 / 4) := by norm_num [run]
 
-example : run 1 2 = (0, 1 / 6) := by norm_num [run]
+example : run 1 2 = (1 / 3, 5 / 12) := by norm_num [run]
 
 /-! ## Continuous time -/
 
@@ -156,5 +169,56 @@ example (t : ℝ) :
     simp
   · rw [zero_gradient, smul_zero]
     exact hasDerivAt_const _ 0
+
+/-! ## A non-degenerate continuous-time instance: `f x = x² / 2`, `α = β = 0` -/
+
+/-- `ω = √3 / 2`. -/
+noncomputable def ω : ℝ := Real.sqrt 3 / 2
+
+theorem ω_sq : ω ^ 2 = 3 / 4 := by
+  rw [ω, div_pow, Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 3)]; norm_num
+
+/-- The damped oscillation `X t = e^{-t/2} cos (ω t)`. -/
+noncomputable def oscX (t : ℝ) : ℝ := Real.exp (-t / 2) * Real.cos (ω * t)
+
+/-- `Z t = X t + X' t = e^{-t/2} (cos (ω t) / 2 - ω sin (ω t))`. -/
+noncomputable def oscZ (t : ℝ) : ℝ :=
+  Real.exp (-t / 2) * (Real.cos (ω * t) / 2 - ω * Real.sin (ω * t))
+
+theorem hasDerivAt_oscX (t : ℝ) : HasDerivAt oscX (oscZ t - oscX t) t := by
+  have he : HasDerivAt (fun s => Real.exp (-s / 2)) (Real.exp (-t / 2) * (-1 / 2)) t := by
+    have := ((hasDerivAt_neg t).div_const 2).exp
+    simpa [neg_div] using this
+  have hc : HasDerivAt (fun s => Real.cos (ω * s)) (-Real.sin (ω * t) * ω) t := by
+    have := HasDerivAt.cos (HasDerivAt.const_mul ω (hasDerivAt_id t))
+    convert this using 1 <;> simp
+  refine HasDerivAt.congr_deriv (f := oscX) (he.mul hc) ?_
+  simp only [oscX, oscZ]; ring
+
+theorem hasDerivAt_oscZ (t : ℝ) : HasDerivAt oscZ (-oscX t) t := by
+  have he : HasDerivAt (fun s => Real.exp (-s / 2)) (Real.exp (-t / 2) * (-1 / 2)) t := by
+    have := ((hasDerivAt_neg t).div_const 2).exp
+    simpa [neg_div] using this
+  have hc : HasDerivAt (fun s => Real.cos (ω * s)) (-Real.sin (ω * t) * ω) t := by
+    have := HasDerivAt.cos (HasDerivAt.const_mul ω (hasDerivAt_id t))
+    convert this using 1 <;> simp
+  have hs : HasDerivAt (fun s => Real.sin (ω * s)) (Real.cos (ω * t) * ω) t := by
+    have := HasDerivAt.sin (HasDerivAt.const_mul ω (hasDerivAt_id t))
+    convert this using 1 <;> simp
+  refine HasDerivAt.congr_deriv (f := oscZ) (he.mul ((hc.div_const 2).sub (hs.const_mul ω))) ?_
+  simp only [oscX]
+  linear_combination (-(Real.exp (-t / 2) * Real.cos (ω * t))) * ω_sq
+
+/-- With `f x = x² / 2` (so `∇f = id`), `α = β = 0` (ideal scaling `0 ≤ e^0`), the damped
+oscillation `(oscX, oscZ)` solves the Euler–Lagrange system `X' = Z - X`, `Z' = -∇f(X)`, and the
+energy bound applies: `X t² / 2 ≤ 𝓔 0` for `t ≥ 0`. -/
+example {t : ℝ} (ht : 0 ≤ t) :
+    quadratic (oscX t) - quadratic (0 : ℝ) ≤
+      energy quadratic (fun _ => 0) oscX oscZ 0 0 * Real.exp (-(fun _ : ℝ => (0 : ℝ)) t) :=
+  bregmanLagrangian_rate (α := fun _ => 0) (β' := fun _ => 0) quadratic_convexOn
+    quadratic_differentiable (fun x => by simp [quadratic]; positivity)
+    (fun s _ => hasDerivAt_const s 0) (fun s _ => by simp)
+    (fun s _ => by simpa using hasDerivAt_oscX s)
+    (fun s _ => by simpa [quadratic_gradient] using hasDerivAt_oscZ s) ht
 
 end MathlibExtTest.AcceleratedGradient

@@ -78,8 +78,8 @@ theorem density_pos_and_sum_eq_one [Nonempty X] (φ : X → E) (θ : E) :
 exponential family on a nonempty set, `∇A(θ) = E_θ[φ(X)] = ∑ₓ p_θ(x) φ(x)` at every `θ`.
 
 Source: M. J. Wainwright and M. I. Jordan, *Graphical models, exponential families, and
-variational inference*, Found. Trends Mach. Learn. 1 (2008), Proposition 3.1(a), eq. (3.41a),
-with the counting measure. -/
+variational inference*, Found. Trends Mach. Learn. 1 (2008), Proposition 3.1(a), first-derivative
+part, eq. (3.41a), with the counting measure. -/
 theorem hasGradientAt_logPartition [Nonempty X] [CompleteSpace E] (φ : X → E) (θ : E) :
     HasGradientAt (logPartition φ) (meanParameter φ θ) θ := by
   have hS : HasFDerivAt (partitionSum φ)
@@ -102,10 +102,12 @@ theorem hasGradientAt_logPartition [Nonempty X] [CompleteSpace E] (φ : X → E)
 (`q ≥ 0`, `∑ q = 1`), `∑ₓ q x (⟪φ x, θ⟫ - log q x) ≤ A(θ)`: the expected statistic paired with
 `θ` plus the Shannon entropy of `q` never exceeds the log-partition function.
 
-Source: M. J. Wainwright and M. I. Jordan (2008), Theorem 3.4(b), the variational
-representation (3.45) `A(θ) = sup_μ {⟨θ, μ⟩ - A*(μ)}`, here in its finite form over distributions
-`q` (`-A*(μ)` is the maximum entropy among distributions with mean `μ`, as discussed after
-Theorem 3.4); the proof is the log-sum inequality. -/
+Gibbs variational principle (finite form); cf. M. J. Wainwright and M. I. Jordan (2008),
+Theorem 3.4(b), the representation (3.45) `A(θ) = sup_μ {⟨θ, μ⟩ - A*(μ)}` over mean parameters,
+which follows from this form via Theorem 3.4(a) (not formalized here). It is the special case of
+`MathlibExt.InformationTheory.DonskerVaradhan.isGreatest_integral_sub_klDiv` with `ν` uniform on
+`X` and `f = ⟪φ ·, θ⟫`, since `log ∫ e^f dν = A(θ) - log |X|` and
+`KL(q ‖ ν) = log |X| - H(q)`. The proof is the log-sum inequality. -/
 theorem sum_mul_inner_sub_log_le (φ : X → E) (θ : E) {q : X → ℝ} (hq0 : ∀ x, 0 ≤ q x)
     (hq1 : ∑ x, q x = 1) :
     ∑ x, q x * (inner ℝ (φ x) θ - log (q x)) ≤ logPartition φ θ := by
@@ -126,8 +128,11 @@ theorem sum_mul_inner_sub_log_le (φ : X → E) (θ : E) {q : X → ℝ} (hq0 : 
 `∑ₓ p_θ(x) (⟪φ x, θ⟫ - log p_θ(x)) = A(θ)`, so `A(θ) = ⟪E_θ[φ], θ⟫ + H(p_θ)` and the supremum of
 `sum_mul_inner_sub_log_le` is attained at `q = p_θ`.
 
-Source: M. J. Wainwright and M. I. Jordan (2008), Theorem 3.4(c) (the supremum in (3.45) is
-attained at the moment-matching mean parameter `μ = E_θ[φ(X)]`), finite form. -/
+Gibbs variational principle, attainment (finite form); cf. M. J. Wainwright and M. I. Jordan
+(2008), Theorem 3.4(c) (the supremum in (3.45) is attained at the moment-matching mean parameter
+`μ = E_θ[φ(X)]`). It is the attainment part of
+`MathlibExt.InformationTheory.DonskerVaradhan.isGreatest_integral_sub_klDiv` (the tilted measure)
+for `ν` uniform on `X`. -/
 theorem sum_density_mul_inner_sub_log [Nonempty X] (φ : X → E) (θ : E) :
     ∑ x, density φ θ x * (inner ℝ (φ x) θ - log (density φ θ x)) = logPartition φ θ := by
   have hZ := partitionSum_pos φ θ

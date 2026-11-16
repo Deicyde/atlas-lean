@@ -22,4 +22,4 @@ The growth condition $L(A_{k+1} - A_k)^2 \le A_{k+1}$ caps $A_k$ at order $k^2/L
 
 ## Sources
 
-- A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in optimization*, arXiv:1611.02635v2, Section 3.1: the accelerated family (19a)–(19c) and the discrete Lyapunov function (21).
+- A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in optimization*, arXiv:1611.02635v4 (the version containing this material), Section 3.1: the accelerated family (19a)–(19c), the discrete Lyapunov function (21), and Proposition 5 with Lemma 6, whose error bound (26a) for the gradient map $G_\epsilon$ of (25) is $\le 0$ exactly when $(A_{k+1} - A_k)^2 \le A_{k+1}/L$.

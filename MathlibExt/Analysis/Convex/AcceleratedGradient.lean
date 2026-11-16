@@ -26,7 +26,7 @@ real Hilbert space, in the three-sequence (linear-coupling) form
   `a k = A (k + 1) - A k`.
 
 This is the family (19a)-(19c) of A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis
-of momentum methods in optimization* (arXiv:1611.02635v2), with Euclidean distance-generating
+of momentum methods in optimization* (arXiv:1611.02635v4), with Euclidean distance-generating
 function `h = ‖·‖² / 2` and the map `G` a gradient step at `x (k + 1)`. Their discrete Lyapunov
 function (21), `E k = ‖z k - u‖² / 2 + A k * (f (y k) - f u)`, does not increase as soon as
 `L * a k ^ 2 ≤ A (k + 1)`; with `A k = k (k + 1) / (4 L)` this gives Nesterov's `O(1 / k²)` rate.
@@ -58,8 +58,10 @@ step `y' = x' - (1 / L) • ∇f x'` and the step `z' = z - (A' - A) • ∇f x'
 `A' * (f y' - f u) + ‖z' - u‖ ^ 2 / 2 ≤ A * (f y - f u) + ‖z - u‖ ^ 2 / 2`.
 
 Source: A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in
-optimization*, arXiv:1611.02635v2, Section 3.1: the accelerated family (19a)-(19c) and the
-Lyapunov function (21), here with `h = ‖·‖² / 2` and `G` a gradient step with step `1 / L`. -/
+optimization*, arXiv:1611.02635v4, Section 3.1: the accelerated family (19a)-(19c), the
+Lyapunov function (21), and Proposition 5 with Lemma 6 (the map `G_ε` of (25) and the error
+bound (26a), which is `≤ 0` exactly when `(A' - A) ^ 2 ≤ A' / L`), here with `h = ‖·‖² / 2`,
+`σ = 1` and `ε = 1 / L`. -/
 theorem accelerated_lyapunov_step {f : E → ℝ} {L : ℝ} (hL : 0 < L)
     (hconvex : ConvexOn ℝ Set.univ f) (hdiff : Differentiable ℝ f)
     (hsmooth : LipschitzWith ⟨L, le_of_lt hL⟩ (gradient f)) (u : E)
@@ -107,8 +109,9 @@ Let `f` be convex and differentiable on a real Hilbert space with `L`-Lipschitz 
 `A k * (f (y k) - f u) + ‖z k - u‖ ^ 2 / 2 ≤ A 0 * (f (y 0) - f u) + ‖z 0 - u‖ ^ 2 / 2`.
 
 Source: A. C. Wilson, B. Recht and M. I. Jordan, *A Lyapunov analysis of momentum methods in
-optimization*, arXiv:1611.02635v2, Section 3.1, the Lyapunov function (21) for the family
-(19a)-(19c) (Euclidean case, `G` a gradient step). -/
+optimization*, arXiv:1611.02635v4, Section 3.1, the Lyapunov function (21) for the family
+(19a)-(19c), with the one-step bound of Proposition 5 and Lemma 6, (25)-(26a) (Euclidean case,
+`G` a gradient step). -/
 theorem accelerated_lyapunov_le {f : E → ℝ} {L : ℝ} (hL : 0 < L)
     (hconvex : ConvexOn ℝ Set.univ f) (hdiff : Differentiable ℝ f)
     (hsmooth : LipschitzWith ⟨L, le_of_lt hL⟩ (gradient f)) (u : E)
@@ -141,8 +144,9 @@ rate, against `O(1 / k)` for plain gradient descent.
 
 Source: Y. Nesterov, *A method of solving a convex programming problem with convergence rate
 O(1/k²)*, Soviet Math. Dokl. 27 (1983) 372-376 (the rate); the proof is the Lyapunov argument of
-A. C. Wilson, B. Recht and M. I. Jordan, arXiv:1611.02635v2, Section 3.1, function (21) for the
-family (19a)-(19c), here with `A k = k (k + 1) / (4 L)`, `τ k = 2 / (k + 2)`. -/
+A. C. Wilson, B. Recht and M. I. Jordan, arXiv:1611.02635v4, Section 3.1, function (21) for the
+family (19a)-(19c) and Proposition 5 with Lemma 6, (25)-(26a), here with
+`A k = k (k + 1) / (4 L)`, `τ k = 2 / (k + 2)`. -/
 theorem nesterov_accelerated_rate {f : E → ℝ} {L : ℝ} (hL : 0 < L)
     (hconvex : ConvexOn ℝ Set.univ f) (hdiff : Differentiable ℝ f)
     (hsmooth : LipschitzWith ⟨L, le_of_lt hL⟩ (gradient f)) (u : E)
