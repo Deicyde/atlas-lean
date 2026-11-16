@@ -4,6 +4,8 @@ Probabilistic methods and random discrete structures outside random graphs: the 
 
 - [Chvátal–Sankoff constant](chv-tal-sankoff-constant/README.md)
 - [Concentration of subset sums](concentration-of-subset-sums/README.md)
+- [First and second moment methods](first-and-second-moment-methods/README.md)
+- [Janson's inequalities](janson-s-inequalities/README.md)
 - [Littlewood–Offord problem](littlewood-offord-problem/README.md)
 - [Moment bounds for counting](moment-bounds-for-counting/README.md)
 - [Random 3-SAT threshold](random-3-sat-threshold/README.md)
