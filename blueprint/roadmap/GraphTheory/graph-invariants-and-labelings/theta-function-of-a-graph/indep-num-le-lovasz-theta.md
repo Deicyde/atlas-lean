@@ -1,12 +1,6 @@
 # Independence number is at most theta
 
-For every finite graph $G$, $\alpha(G) \le \vartheta(G)$, where $\alpha(G)$ is the largest size of a stable set. If $t$ is feasible, witnessed by $a$ and $c$, and $S$ is a maximum stable set, then
-
-$$
-|S| = \sum_{v \in S} 1 \le t \sum_{v \in S} \mathrm{cost}_c(a_v) \le t ,
-$$
-
-because [stable sets have total cost at most one](sum-cost-le-one.md).
+For every finite graph $G$, $\alpha(G) \le \vartheta(G)$, where $\alpha(G)$ is the largest size of a stable set: [every feasible value dominates the independence number](indep-num-le-of-mem-theta-feasible.md), hence so does their infimum.
 
 ## Sources
 

@@ -7,6 +7,8 @@ The Lovász theta function $\vartheta(G)$ is defined by orthogonal labelings (or
 - [Costs are nonnegative](cost-nonneg.md)
 - [Stable sets have total cost at most one](sum-cost-le-one.md)
 - [Feasible values of the theta program](theta-feasible.md)
+- [Labelings in any finite-dimensional space give feasible values](mem-theta-feasible-of-finite-dimensional.md)
+- [Every feasible value dominates the independence number](indep-num-le-of-mem-theta-feasible.md)
 - [Lovász theta function](lovasz-theta.md)
 - [Theta is nonnegative](lovasz-theta-nonneg.md)
 - [A colouring of the complement gives a feasible theta value](nat-cast-mem-theta-feasible-of-colorable.md)

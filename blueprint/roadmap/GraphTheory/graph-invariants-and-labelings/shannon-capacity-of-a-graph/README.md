@@ -77,6 +77,11 @@
 - [Strong power of a graph](strong-power.md)
 - [Shannon capacity of a graph](has-shannon-capacity.md)
 - [Lovász's theorem: the Shannon capacity of the pentagon](shannon-capacity-pentagon.md)
+- [Tensor product of $k$ vectors](tensor-vec.md)
+- [Inner products of tensor products factor](inner-tensor-vec.md)
+- [Feasible values multiply along strong powers](pow-mem-theta-feasible.md)
+- [Independence numbers of strong powers are at most $\vartheta^k$](indep-num-le-lovasz-theta-pow.md)
+- [Lovász's bound on the Shannon capacity](le-lovasz-theta-of-tendsto.md)
 
 ## Related topics
 

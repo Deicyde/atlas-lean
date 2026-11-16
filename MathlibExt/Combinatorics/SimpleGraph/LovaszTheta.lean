@@ -173,6 +173,37 @@ theorem natCast_mem_thetaFeasible_of_colorable {G : SimpleGraph V} {k : ℕ}
     field_simp
     exact le_refl _
 
+/-- **Labelings in any finite-dimensional space give feasible values.** If `a` is an orthogonal
+labeling of `G` in a finite-dimensional real inner product space `E`, `c ∈ E` is nonzero, `t ≥ 0`
+and `1 ≤ t · cost c (a v)` for every vertex `v`, then `t` is a feasible value of the theta program:
+an orthonormal basis identifies `E` with `ℝ^d` isometrically. -/
+theorem mem_thetaFeasible_of_finiteDimensional {E : Type*} [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {G : SimpleGraph V} {t : ℝ} (ht : 0 ≤ t)
+    (a : V → E) (c : E) (hc : c ≠ 0) (ha : IsOrthogonalLabeling G a)
+    (h : ∀ v, 1 ≤ t * cost c (a v)) : t ∈ thetaFeasible G := by
+  let e := (stdOrthonormalBasis ℝ E).repr
+  refine ⟨ht, _, fun v => e (a v), e c, by simpa using hc, ?_, ?_⟩
+  · intro u v huv hadj
+    rw [LinearIsometryEquiv.inner_map_map]
+    exact ha huv hadj
+  · intro v
+    simpa [cost, LinearIsometryEquiv.inner_map_map, LinearIsometryEquiv.norm_map] using h v
+
+/-- **Every feasible value dominates the independence number.** For a finite graph `G`, if `t` is a
+feasible value of the theta program then `α(G) ≤ t`: for a maximum stable set `S`,
+`|S| ≤ t ∑_{v ∈ S} cost c (a v) ≤ t` by Knuth's Lemma 1 (Knuth, *The Sandwich Theorem*, 1994,
+eq. (4.9) and Lemma 1). -/
+theorem indepNum_le_of_mem_thetaFeasible [Finite V] {G : SimpleGraph V} {t : ℝ}
+    (ht : t ∈ thetaFeasible G) : (G.indepNum : ℝ) ≤ t := by
+  obtain ⟨ht0, d, a, c, -, ha, hcost⟩ := ht
+  obtain ⟨s, hs⟩ := G.exists_isNIndepSet_indepNum
+  have h1 := sum_cost_le_one ha c hs.isIndepSet
+  calc (G.indepNum : ℝ) = ∑ _v ∈ s, (1 : ℝ) := by simp [hs.card_eq]
+    _ ≤ ∑ v ∈ s, t * cost c (a v) := Finset.sum_le_sum fun v _ => hcost v
+    _ = t * ∑ v ∈ s, cost c (a v) := (Finset.mul_sum _ _ _).symm
+    _ ≤ t * 1 := mul_le_mul_of_nonneg_left h1 ht0
+    _ = t := mul_one t
+
 /-- **Theta is bounded by the clique cover number.** If the complement `Gᶜ` is `k`-colourable,
 then `ϑ(G) ≤ k`. -/
 theorem lovaszTheta_le_of_colorable {G : SimpleGraph V} {k : ℕ} (h : Gᶜ.Colorable k) :
@@ -186,19 +217,11 @@ theorem lovaszTheta_nonneg [Finite V] (G : SimpleGraph V) : 0 ≤ lovaszTheta G 
 
 /-- **Independence number is at most theta.** For a finite graph `G`, `α(G) ≤ ϑ(G)`
 (Lovász 1979; Knuth, *The Sandwich Theorem*, 1994, eq. (4.9) and Lemma 1). Every feasible value
-`t` dominates `|S|` for a maximum stable set `S`, since `|S| ≤ t ∑_{v ∈ S} cost c (a v) ≤ t`. -/
+`t` dominates the independence number. -/
 theorem indepNum_le_lovaszTheta [Finite V] (G : SimpleGraph V) :
-    (G.indepNum : ℝ) ≤ lovaszTheta G := by
-  apply le_csInf ⟨_, natCast_mem_thetaFeasible_of_colorable
-    (Gᶜ.colorable_chromaticNumber_of_fintype)⟩
-  rintro t ⟨ht0, d, a, c, -, ha, hcost⟩
-  obtain ⟨s, hs⟩ := G.exists_isNIndepSet_indepNum
-  have h1 := sum_cost_le_one ha c hs.isIndepSet
-  calc (G.indepNum : ℝ) = ∑ _v ∈ s, (1 : ℝ) := by simp [hs.card_eq]
-    _ ≤ ∑ v ∈ s, t * cost c (a v) := Finset.sum_le_sum fun v _ => hcost v
-    _ = t * ∑ v ∈ s, cost c (a v) := (Finset.mul_sum _ _ _).symm
-    _ ≤ t * 1 := mul_le_mul_of_nonneg_left h1 ht0
-    _ = t := mul_one t
+    (G.indepNum : ℝ) ≤ lovaszTheta G :=
+  le_csInf ⟨_, natCast_mem_thetaFeasible_of_colorable (Gᶜ.colorable_chromaticNumber_of_fintype)⟩
+    fun _ ht => indepNum_le_of_mem_thetaFeasible ht
 
 /-- **Theta is at most the chromatic number of the complement.** For a finite graph `G`,
 `ϑ(G) ≤ χ(Ḡ)` (Lovász 1979; Knuth, *The Sandwich Theorem*, 1994, eq. (4.9)). The chromatic

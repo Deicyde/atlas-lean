@@ -2802,6 +2802,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/ListColoring": {"to": "GraphTheory/graph-coloring", "title": "List coloring"},
   "MathlibExt/Combinatorics/SimpleGraph/LongestCycle": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Cycle lengths and circumference"},
   "MathlibExt/Combinatorics/SimpleGraph/LovaszTheta": {"to": "GraphTheory/graph-invariants-and-labelings", "title": "Theta function of a graph"},
+  "MathlibExt/Combinatorics/SimpleGraph/LovaszThetaStrongPower": {"to": "GraphTheory/graph-invariants-and-labelings", "title": "Shannon capacity of a graph"},
   "MathlibExt/Combinatorics/SimpleGraph/MatrixTree": {"to": "GraphTheory/algebraic-graph-theory", "title": "Kirchhoff's matrix-tree theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/MengerEdge": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Menger's theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/Moore": {"to": "GraphTheory/algebraic-graph-theory", "title": "Moore graphs"},
