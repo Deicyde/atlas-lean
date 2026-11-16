@@ -16260,6 +16260,7 @@
 "MathlibExt.Analysis.Convex.RobustLinearProgramming.forall_norm_le_one_le_add_inner_iff": "cab78e389358c381",
 "MathlibExt.Analysis.Convex.RobustLinearProgramming.robust_linear_constraint_iff": "943f857a258a2439",
 "MathlibExt.Analysis.Convex.RobustLinearProgramming.robust_objective_le_iff": "043cff87c00088a9",
+"MathlibExt.Analysis.Convex.RobustStochasticApproximation.integral_robust_sa_average_sub_le": "64c128addda15712",
 "MathlibExt.Analysis.Convex.SecondOrderCondition.convexOn_iff_hessian_nonneg": "950271a94295a8cc",
 "MathlibExt.Analysis.Convex.SecondOrderCondition.convexOn_of_hessian_nonneg": "c2966f00861b808e",
 "MathlibExt.Analysis.Convex.SecondOrderCondition.hessian_nonneg_of_convexOn": "488622823b884408",

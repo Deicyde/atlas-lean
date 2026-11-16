@@ -1797,6 +1797,7 @@
   "MathlibExt/Analysis/Convex/NewtonMinimization": {"to": "Analysis/convex-analysis-and-variations", "title": "Newton's method for minimization"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},
   "MathlibExt/Analysis/Convex/RobustLinearProgramming": {"to": "Geometry/convex-geometry", "title": "Robust linear programming"},
+  "MathlibExt/Analysis/Convex/RobustStochasticApproximation": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror descent"},
   "MathlibExt/Analysis/Convex/NewtonPolygonMul": {"to": "Algebra/polynomials", "title": "Newton polygon"},
   "MathlibExt/Analysis/Convex/SecondOrderCondition": {"to": "Analysis/convex-analysis-and-variations", "title": "Second-order condition for convexity"},
   "MathlibExt/Analysis/Convex/StochasticGradientDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},

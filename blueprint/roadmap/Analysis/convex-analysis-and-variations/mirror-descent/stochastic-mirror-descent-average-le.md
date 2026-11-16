@@ -6,7 +6,7 @@ $$
 f(\tilde x_N) - f(x^\star) \le \frac{V_{x_0}(x^\star) + \frac{1}{2\alpha}\sum_{t<N} \gamma_t^2 \|G_t\|_*^2 - \sum_{t<N} \gamma_t\, \Delta_t(x_t - x^\star)}{\sum_{t<N} \gamma_t} .
 $$
 
-The inequality holds for every realization of the noise. In robust stochastic approximation $G_t = G(x_t, \xi_t)$ is an unbiased stochastic subgradient, so the noise term $\Delta_t(x_t - x^\star)$ has zero mean given $\xi_0, \ldots, \xi_{t-1}$; taking expectations gives $\mathbb{E}[f(\tilde x_N)] - f(x^\star) \le \big(D^2 + \tfrac{M_*^2}{2\alpha}\sum \gamma_t^2\big) / \sum \gamma_t$ with $\mathbb{E}\|G\|_*^2 \le M_*^2$, their (2.44), which is not formalized here. Averaging is what makes the method robust: unlike classical stochastic approximation with steps $\propto 1/t$, it needs neither strong convexity nor fine tuning of the step.
+The inequality holds for every realization of the noise. In robust stochastic approximation $G_t = G(x_t, \xi_t)$ is an unbiased stochastic subgradient, so the noise term $\Delta_t(x_t - x^\star)$ has zero mean given $\xi_0, \ldots, \xi_{t-1}$; taking expectations gives the [efficiency estimate](integral-robust-sa-average-sub-le.md) $\mathbb{E}[f(\tilde x_N)] - f(x^\star) \le \big(D^2 + \tfrac{M_*^2}{2\alpha}\sum \gamma_t^2\big) / \sum \gamma_t$, their (2.44). Averaging is what makes the method robust: unlike classical stochastic approximation with steps $\propto 1/t$, it needs neither strong convexity nor fine tuning of the step.
 
 ## Background
 
