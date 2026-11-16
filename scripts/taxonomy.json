@@ -1780,6 +1780,7 @@
   "MathlibExt/Analysis/ContinuousMap/KolmogorovSuperposition": {"to": "Analysis/approximation-theory", "title": "Kolmogorov superposition theorem"},
   "MathlibExt/Analysis/Convex/Choquet": {"to": "Analysis/banach-spaces/duality-and-weak-topologies", "title": "Choquet theory"},
   "MathlibExt/Analysis/Convex/DualViaConjugate": {"to": "Analysis/convex-analysis-and-variations", "title": "Lagrange duality"},
+  "MathlibExt/Analysis/Convex/EllipsoidConvergence": {"to": "Analysis/convex-analysis-and-variations", "title": "Ellipsoid method"},
   "MathlibExt/Analysis/Convex/EllipsoidMethod": {"to": "Analysis/convex-analysis-and-variations", "title": "Ellipsoid method"},
   "MathlibExt/Analysis/Convex/EllipsoidVolume": {"to": "Analysis/convex-analysis-and-variations", "title": "Ellipsoid method"},
   "MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall": {"to": "Analysis/banach-spaces/geometry-of-banach-spaces", "title": "Extreme points of unit balls"},

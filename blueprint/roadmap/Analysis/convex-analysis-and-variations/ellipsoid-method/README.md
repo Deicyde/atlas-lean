@@ -6,7 +6,7 @@ $$
 b = \frac{A c}{\sqrt{c^\top A c}}, \qquad a' = a - \frac{1}{n+1}\, b, \qquad A' = \frac{n^2}{n^2 - 1}\Bigl(A - \frac{2}{n+1}\, b b^\top\Bigr).
 $$
 
-Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant of the update gives the volume factor $\frac{n}{n+1}\bigl(\frac{n^2}{n^2-1}\bigr)^{(n-1)/2} < e^{-1/(2(n+1))}$, so after $k$ steps the volume has dropped by $e^{-k/(2(n+1))}$. Khachiyan (1979) used this to show that linear programming is in P. Grötschel, Lovász and Schrijver observed that the method only needs a *separation oracle*: for well-described polyhedra, separation and optimisation are polynomial-time equivalent, which turns polyhedral descriptions with exponentially many inequalities (matchings, matroids, stable sets of perfect graphs through the theta function) into polynomial algorithms. The update, the containment of the half-ellipsoid, the volume formula $\mathrm{vol}\, E(a, A) = \sqrt{\det A}\, \mathrm{vol}\, E(0, I)$ and the volume lemma are proved here. The polynomial bound on the number of steps for rational polyhedra and the equivalence of separation and optimisation are not formalised.
+Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant of the update gives the volume factor $\frac{n}{n+1}\bigl(\frac{n^2}{n^2-1}\bigr)^{(n-1)/2} < e^{-1/(2(n+1))}$, so after $k$ steps the volume has dropped by $e^{-k/(2(n+1))}$. Khachiyan (1979) used this to show that linear programming is in P. Grötschel, Lovász and Schrijver observed that the method only needs a *separation oracle*: for well-described polyhedra, separation and optimisation are polynomial-time equivalent, which turns polyhedral descriptions with exponentially many inequalities (matchings, matroids, stable sets of perfect graphs through the theta function) into polynomial algorithms. The update, the containment of the half-ellipsoid, the volume formula $\mathrm{vol}\, E(a, A) = \sqrt{\det A}\, \mathrm{vol}\, E(0, I)$, the volume lemma and the convergence statement (a centre lies in $P$ within $2(n+1)\ln(\mathrm{vol}\, E_0/\mathrm{vol}\, P)$ steps, for an abstract separation oracle) are proved here. The encoding-length bounds that make this polynomial for rational polyhedra, and the equivalence of separation and optimisation, are not formalised.
 
 - [Ellipsoid with centre $a$ and matrix $A$](ellipsoid.md)
 - [An ellipsoid is the image of the unit ball](ellipsoid-zero-eq-image.md)
@@ -23,6 +23,8 @@ Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant o
 - [The Euclidean unit ball has positive volume](volume-unit-ellipsoid-pos.md)
 - [The Euclidean unit ball has finite volume](volume-unit-ellipsoid-lt-top.md)
 - [Volume of an ellipsoid](volume-ellipsoid.md)
+- [Ellipsoids have positive volume](volume-ellipsoid-ne-zero.md)
+- [Ellipsoids have finite volume](volume-ellipsoid-ne-top.md)
 - [Volume factor of a central-cut ellipsoid step](volume-ratio.md)
 - [The volume factor is positive](volume-ratio-pos.md)
 - [Volume factor from the determinant ratio](sqrt-det-ratio-eq-volume-ratio.md)
@@ -30,6 +32,8 @@ Volumes of ellipsoids are proportional to $\sqrt{\det A}$, and the determinant o
 - [Volume reduction of the ellipsoid method](volume-ratio-lt-exp.md)
 - [Volume lemma of the ellipsoid method](volume-next-ellipsoid-lt.md)
 - [Volume after $k$ central-cut steps](volume-ratio-pow-lt-exp.md)
+- [Invariant of the ellipsoid method](ellipsoid-run-invariant.md)
+- [The ellipsoid method finds a point](ellipsoid-run-finds-point.md)
 
 ## Related topics
 
