@@ -25,3 +25,4 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Sub-exponential variables and Bernstein's inequality](../../../Probability/concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/README.md)
 - [Uniform laws and Rademacher complexity](../../../Probability/high-dimensional-probability/uniform-laws-and-rademacher-complexity/README.md)
 - [Matrix concentration inequalities](../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)
+- [Differential privacy](../../cryptography/differential-privacy/README.md): when the hypothesis or query is chosen by looking at the data, a union bound over a fixed class no longer applies; if the choice is differentially private, the empirical mean of the chosen query still concentrates (Dwork, Feldman, Hardt, Pitassi, Reingold and Roth 2015, recorded there as a wanted transfer theorem).
