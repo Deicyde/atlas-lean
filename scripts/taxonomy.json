@@ -2818,6 +2818,7 @@
   "MathlibExt/GameTheory/BoutonNim": {"to": "GameTheory/combinatorial-games", "title": "Nim"},
   "MathlibExt/GameTheory/ImpartialAcyclicGame": {"to": "GameTheory/combinatorial-games", "title": "Sprague–Grundy theorem"},
   "MathlibExt/GameTheory/NimSumLastPile": {"to": "GameTheory/combinatorial-games", "title": "Nim"},
+  "MathlibExt/GameTheory/PotentialGame": {"to": "GameTheory/noncooperative-games", "title": "Potential games"},
   "MathlibExt/GameTheory/SelfishRouting": {"to": "GameTheory/noncooperative-games", "title": "Selfish routing and the price of anarchy"},
   "MathlibExt/GameTheory/ShapleyValue": {"to": "GameTheory/cooperative-games", "title": "Shapley value"},
   "MathlibExt/GameTheory/SmithRemoteness": {"to": "GameTheory/combinatorial-games", "title": "Smith's remoteness function"},
