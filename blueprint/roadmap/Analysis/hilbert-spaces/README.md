@@ -7,6 +7,7 @@ Geometry of inner product spaces: nearest-point projections, orthonormal and Hil
 - [Hilbert projection theorem](hilbert-projection-theorem/README.md)
 - [Kirszbraun theorem](kirszbraun-theorem/README.md)
 - [Opial property](opial-property/README.md)
+- [Positive-definite kernels](positive-definite-kernels/README.md)
 - [Orthogonal systems and general orthogonal series](orthogonal-systems-and-general-orthogonal-series/README.md)
 - [Radon–Riesz property](radon-riesz-property/README.md)
 - [Representer theorem](representer-theorem/README.md)

@@ -18,3 +18,7 @@
 - [Projection onto Riesz representers with Pythagorean residual](exists-mem-span-norm-sq-add.md)
 - [Projection onto Riesz representers does not increase the norm](exists-mem-span-values-eq-norm-le.md)
 - [Representer theorem](mem-span-of-is-min-on.md)
+
+## Related topics
+
+- [Positive-definite kernels](../positive-definite-kernels/README.md): Aronszajn's theorem, every positive-definite kernel is the kernel of a reproducing kernel Hilbert space.

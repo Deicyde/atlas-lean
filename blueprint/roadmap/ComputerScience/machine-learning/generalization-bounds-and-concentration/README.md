@@ -20,3 +20,4 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Effective ranks and benign overfitting](../supervised-learning/effective-ranks-and-benign-overfitting/README.md): the excess risk of the minimum-norm interpolating estimator is analysed through the spectrum of the covariance rather than through a uniform deviation bound over the class.
 - [Hoeffding's inequality](../../../Probability/concentration-inequalities/hoeffding-s-inequality/README.md): the per-predictor concentration step.
 - [McDiarmid's inequality](../../../Probability/concentration-inequalities/mcdiarmid-s-inequality/README.md): concentration of the supremum of the deviations.
+- [Positive-definite kernels](../../../Analysis/hilbert-spaces/positive-definite-kernels/README.md): feature maps of kernels, whose balls are balls of linear predictors.
