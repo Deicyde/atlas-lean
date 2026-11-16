@@ -23,7 +23,8 @@ the monotone convergence theorem (`MeasureTheory.lintegral_iSup`), Fatou's lemma
 (`MeasureTheory.tendsto_integral_of_dominated_convergence`); Egorov's theorem
 (`MeasureTheory.tendstoUniformlyOn_of_ae_tendsto`) and the Borel–Cantelli lemma
 (`MeasureTheory.measure_limsup_atTop_eq_zero`); Tonelli's and Fubini's theorems
-(`MeasureTheory.lintegral_prod`, `MeasureTheory.integral_prod`); Hölder's and Minkowski's
+(`MeasureTheory.lintegral_prod`, `MeasureTheory.integral_prod`; their $\sigma$-finiteness hypothesis
+is shown necessary in [Fubini–Tonelli theorem](integration/fubini-tonelli-theorem/README.md)); Hölder's and Minkowski's
 inequalities (`MeasureTheory.integral_mul_le_Lp_mul_Lq_of_nonneg`, `MeasureTheory.eLpNorm_add_le`)
 and the completeness of $L^p$ (`MeasureTheory.Lp.instCompleteSpace`); the Lebesgue differentiation
 theorem (`IsUnifLocDoublingMeasure.ae_tendsto_average`) and the almost everywhere differentiability
