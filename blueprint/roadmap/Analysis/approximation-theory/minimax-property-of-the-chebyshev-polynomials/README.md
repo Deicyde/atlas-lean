@@ -16,4 +16,5 @@ Among monic real polynomials of degree $n$, $2^{1-n}T_n$ has the least maximum m
 - [Chebyshev equioscillation theorem](../chebyshev-equioscillation-theorem/README.md)
 - [Chebyshev series and interpolation](../chebyshev-series-and-interpolation/README.md)
 - [Conjugate gradient method](../../../LinearAlgebra/matrix-decompositions/conjugate-gradient-method/README.md)
+- [GMRES](../../../LinearAlgebra/matrix-decompositions/gmres/README.md)
 - [Orthogonal polynomials](../../../Algebra/orthogonal-polynomials/README.md)
