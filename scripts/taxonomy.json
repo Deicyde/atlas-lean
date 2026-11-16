@@ -3953,6 +3953,7 @@
   "MathlibExt/Probability/Statistics/GaussianGraphicalModel": {"to": "Probability/linear-models-multivariate", "title": "Gaussian graphical models"},
   "MathlibExt/Probability/Statistics/GeneralizedLeastSquares": {"to": "Probability/linear-models-multivariate", "title": "Generalized least squares"},
   "MathlibExt/Probability/Statistics/GlivenkoCantelli": {"to": "Probability/nonparametric-survival", "title": "Glivenko–Cantelli theorem"},
+  "MathlibExt/Probability/Statistics/LassoRestrictedEigenvalue": {"to": "Probability/linear-models-multivariate", "title": "Lasso error bounds under restricted eigenvalues"},
   "MathlibExt/Probability/Statistics/Likelihood": {"to": "Probability/statistical-estimation", "title": "Likelihood and maximum likelihood estimators"},
   "MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower": {"to": "Probability/hypothesis-testing", "title": "Local power of the likelihood-ratio test"},
   "MathlibExt/Probability/Statistics/LikelihoodRatioTests": {"to": "Probability/hypothesis-testing", "title": "Score, Wald and likelihood-ratio tests"},
