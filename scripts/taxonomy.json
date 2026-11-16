@@ -2173,6 +2173,7 @@
   "MathlibExt/Analysis/SpecificLimits/RootTest": {"to": "Analysis/sequences-and-series/convergence", "title": "Root test"},
   "MathlibExt/Analysis/Variational/EkelandCaristi": {"to": "Analysis/convex-analysis-and-variations", "title": "Ekeland variational principle"},
   "MathlibExt/Analysis/Variational/MinimizingMovement": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein gradient flows and the JKO scheme"},
+  "MathlibExt/Analysis/Variational/MinimizingMovementContraction": {"to": "MeasureTheory/optimal-transport", "title": "Wasserstein gradient flows and the JKO scheme"},
   "MathlibExt/Analysis/WirsingConstant": {"to": "NumberTheory/continued-fractions-expansions", "title": "Gauss–Kuzmin–Wirsing operator"},
   "MathlibExt/Biology/CancerGenomics/Absolute": {"to": "Biology/cancer-genomics", "title": "Tumour purity, ploidy and copy-ratio algebra"},
   "MathlibExt/Biology/CancerGenomics/CancerCellFraction": {"to": "Biology/cancer-genomics", "title": "Cancer cell fraction estimation"},

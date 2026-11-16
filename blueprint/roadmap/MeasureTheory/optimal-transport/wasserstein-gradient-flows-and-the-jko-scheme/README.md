@@ -9,9 +9,10 @@ classical sense, they made "gradient flow" precise through an implicit time disc
 $\tfrac12 W_2(\rho^{(k-1)}, \rho)^2 + h F(\rho)$. Their a priori estimates use only the metric: the
 minimizer beats the previous state, which gives a discrete energy inequality and, with the triangle
 and Cauchy–Schwarz inequalities, a Hölder-$\tfrac12$ bound in time. These are proved here for an
-arbitrary functional on an arbitrary metric space (the *minimizing movement* scheme); existence and
-uniqueness of the Wasserstein step and convergence to the Fokker–Planck equation are stated as
-wanted results.
+arbitrary functional on an arbitrary metric space (the *minimizing movement* scheme). In a Hilbert
+space, a $\lambda$-convex functional makes each step a $(1 + \lambda h)^{-1}$-contraction, the
+discrete form of the contraction of convex gradient flows. Existence and uniqueness of the
+Wasserstein step and convergence to the Fokker–Planck equation are stated as wanted results.
 
 - [Minimizing-movement (JKO) step](is-minimizing-movement-step.md)
 - [Minimizing-movement (JKO) sequence](is-minimizing-movement.md)
@@ -25,6 +26,9 @@ wanted results.
 - [Uniform Hölder-½ bound of the JKO scheme](dist-sq-le-of-le.md)
 - [Existence of a JKO step on a proper metric space](exists-is-minimizing-movement-step.md)
 - [Existence of a JKO sequence on a proper metric space](exists-is-minimizing-movement.md)
+- [Variational inequality of the minimizing-movement step](inner-le.md)
+- [Contraction of the minimizing-movement step](contraction.md)
+- [Discrete exponential contraction of minimizing movements](contraction-pow.md)
 - [Admissible densities of the JKO scheme](is-admissible.md)
 - [Negative Boltzmann entropy](neg-entropy.md)
 - [Potential energy](potential-energy.md)
