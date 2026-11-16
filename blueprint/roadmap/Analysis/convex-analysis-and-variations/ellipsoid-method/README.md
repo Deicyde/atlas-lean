@@ -1,6 +1,6 @@
 # Ellipsoid method
 
-The ellipsoid method (Shor; Yudin and Nemirovski) looks for a point of a convex set $P \subseteq \mathbb{R}^n$ by keeping an ellipsoid $E(a, A) = \{x : (x - a)^\top A^{-1} (x - a) \le 1\}$ that contains $P$. If the centre $a$ is not in $P$, a separating inequality $c^\top x \le c^\top a$ valid on $P$ is found, and $E(a, A)$ is replaced by the smallest ellipsoid $E(a', A')$ containing the half $E(a, A) \cap \{c^\top x \le c^\top a\}$:
+The ellipsoid method (Shor; Yudin and Nemirovski) looks for a point of a convex set $P \subseteq \mathbb{R}^n$ by keeping an ellipsoid $E(a, A) = \{x : (x - a)^\top A^{-1} (x - a) \le 1\}$ that contains $P$. If the centre $a$ is not in $P$, a separating inequality $c^\top x \le c^\top a$ valid on $P$ is found, and $E(a, A)$ is replaced by the smallest ellipsoid $E(a', A')$ (minimality is not formalised here) containing the half $E(a, A) \cap \{c^\top x \le c^\top a\}$:
 
 $$
 b = \frac{A c}{\sqrt{c^\top A c}}, \qquad a' = a - \frac{1}{n+1}\, b, \qquad A' = \frac{n^2}{n^2 - 1}\Bigl(A - \frac{2}{n+1}\, b b^\top\Bigr).

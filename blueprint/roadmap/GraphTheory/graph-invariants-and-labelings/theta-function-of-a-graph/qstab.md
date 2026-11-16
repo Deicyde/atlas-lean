@@ -6,7 +6,7 @@ $$
 \mathrm{QSTAB}(G) = \Bigl\{x \in \mathbb{R}^V : x \ge 0,\ \sum_{v \in Q} x_v \le 1 \text{ for every clique } Q \text{ of } G\Bigr\}.
 $$
 
-Every stable set meets every clique in at most one vertex, so $\mathrm{STAB}(G) \subseteq \mathrm{QSTAB}(G)$; the two are equal exactly for perfect graphs. Maximising $\sum_v x_v$ over it gives the fractional clique cover number.
+Every stable set meets every clique in at most one vertex, so $\mathrm{STAB}(G) \subseteq \mathrm{QSTAB}(G)$; the two are equal exactly for perfect graphs ([wanted](is-perfect-iff-stab-eq-qstab.md)). Maximising $\sum_v x_v$ over it gives the fractional clique cover number.
 
 ## Sources
 

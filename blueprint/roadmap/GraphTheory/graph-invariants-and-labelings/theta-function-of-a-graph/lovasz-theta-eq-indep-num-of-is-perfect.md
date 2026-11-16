@@ -2,10 +2,6 @@
 
 If the finite graph $G$ is [perfect](../../graph-coloring/part-01/perfect-graphs/is-perfect.md), then $\vartheta(G) = \alpha(G)$. By Lovász's perfect graph theorem the complement $\bar G$ is perfect, so applied to the whole vertex set $\chi(\bar G) = \omega(\bar G) = \alpha(G)$, and the [sandwich theorem](sandwich.md) $\alpha(G) \le \vartheta(G) \le \chi(\bar G)$ collapses. Together with the polynomial-time computability of $\vartheta$ (not formalised here), this is how Grötschel, Lovász and Schrijver compute $\alpha$, $\omega$ and $\chi$ of perfect graphs in polynomial time.
 
-## Informally uses
-
-- [Weak perfect graph theorem](../../graph-coloring/part-01/perfect-graphs/lovasz-weak-perfect-graph-general.md): to pass from $G$ to its complement.
-
 ## Sources
 
 - D. E. Knuth, *The Sandwich Theorem*, Electron. J. Combin. 1 (1994), #A1, arXiv:math/9312214v1, eq. (4.9) and §31.
