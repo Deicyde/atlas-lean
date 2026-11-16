@@ -6,7 +6,7 @@ $$
 \frac{n}{n+1}\Bigl(\frac{n^2}{n^2-1}\Bigr)^{(n-1)/2} < e^{-1/(2(n+1))} .
 $$
 
-Apply $1 + x < e^x$ for $x \ne 0$ twice: to $x = -1/(n+1)$, giving $\frac{n}{n+1} < e^{-1/(n+1)}$, and to $x = 1/(n^2 - 1)$, giving $\frac{n^2}{n^2-1} < e^{1/(n^2-1)}$. Raising the second to the power $(n-1)/2 > 0$ gives $e^{1/(2(n+1))}$, and $e^{-1/(n+1)} e^{1/(2(n+1))} = e^{-1/(2(n+1))}$. This is the algebraic core of the volume lemma; the geometric statement $\mathrm{vol}\, E(a', A') < e^{-1/(2(n+1))} \mathrm{vol}\, E(a, A)$ follows with [the determinant ratio](sqrt-det-ratio-eq-volume-ratio.md) and the wanted [volume formula](volume-ellipsoid.md).
+Apply $1 + x < e^x$ for $x \ne 0$ twice: to $x = -1/(n+1)$, giving $\frac{n}{n+1} < e^{-1/(n+1)}$, and to $x = 1/(n^2 - 1)$, giving $\frac{n^2}{n^2-1} < e^{1/(n^2-1)}$. Raising the second to the power $(n-1)/2 > 0$ gives $e^{1/(2(n+1))}$, and $e^{-1/(n+1)} e^{1/(2(n+1))} = e^{-1/(2(n+1))}$. This is the algebraic core of the volume lemma; the geometric statement is the [volume lemma](volume-next-ellipsoid-lt.md).
 
 ## Sources
 

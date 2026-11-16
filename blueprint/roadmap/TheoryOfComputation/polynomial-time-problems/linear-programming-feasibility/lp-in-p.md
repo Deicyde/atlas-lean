@@ -11,7 +11,7 @@ if $s$ is false.
 
 ## Background
 
-- [Volume reduction of the ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/volume-ratio-lt-exp.md): each central-cut step shrinks the volume by at least $e^{-1/(2(n+1))}$, which bounds the number of steps of the ellipsoid method.
+- [Volume lemma of the ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/volume-next-ellipsoid-lt.md): each central-cut step shrinks the volume by a factor below $e^{-1/(2(n+1))}$, which bounds the number of steps of the ellipsoid method.
 
 ## Sources
 

@@ -6,7 +6,7 @@ $$
 \sqrt{\Bigl(\frac{n^2}{n^2-1}\Bigr)^{n} \frac{n-1}{n+1}} = \frac{n}{n+1}\Bigl(\frac{n^2}{n^2-1}\Bigr)^{(n-1)/2} = \rho_n ,
 $$
 
-so the square root of the determinant ratio $\det A'/\det A$ computed in [the determinant after a step](det-next-matrix.md) is the [volume factor](volume-ratio.md). Together with the [volume formula](volume-ellipsoid.md) $\mathrm{vol}\, E(a, A) = \sqrt{\det A}\, \mathrm{vol}\, E(0, I)$ (wanted), this gives $\mathrm{vol}\, E(a', A') = \rho_n\, \mathrm{vol}\, E(a, A)$.
+so the square root of the determinant ratio $\det A'/\det A$ computed in [the determinant after a step](det-next-matrix.md) is the [volume factor](volume-ratio.md). Together with the [volume formula](volume-ellipsoid.md) $\mathrm{vol}\, E(a, A) = \sqrt{\det A}\, \mathrm{vol}\, E(0, I)$ this gives the [exact volume factor](volume-next-ellipsoid.md) $\mathrm{vol}\, E(a', A') = \rho_n\, \mathrm{vol}\, E(a, A)$.
 
 ## Sources
 
