@@ -21,3 +21,4 @@
 - [Petersen graph](petersen-graph.md)
 - [Powers of a weighted adjacency matrix sum the weights of walks](adj-matrix-pow-weighted-walk-sum.md)
 - [Oriented incidence matrices](oriented-incidence-matrices/README.md)
+- [Graph Laplacians and Cheeger's inequality](graph-laplacians-and-cheeger-s-inequality/README.md)
