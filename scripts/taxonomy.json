@@ -1792,6 +1792,7 @@
   "MathlibExt/Analysis/Fourier/BooleanCube": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Fourier analysis on the Boolean cube"},
   "MathlibExt/Analysis/Fourier/BooleanCubeBLR": {"to": "TheoryOfComputation/pcp-and-inapproximability", "title": "Blum–Luby–Rubinfeld linearity test"},
   "MathlibExt/Analysis/Fourier/BooleanCubeConvolution": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Fourier analysis on the Boolean cube"},
+  "MathlibExt/Analysis/Fourier/BooleanCubeFriedgut": {"to": "Combinatorics/boolean-functions", "title": "Structure theorems for Boolean functions"},
   "MathlibExt/Analysis/Fourier/BooleanCubeInfluence": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Influences and the noise operator on the Boolean cube"},
   "MathlibExt/Analysis/Fourier/BooleanCubeNoiseStability": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Influences and the noise operator on the Boolean cube"},
   "MathlibExt/Analysis/Fourier/BooleanCubeSpectral": {"to": "Analysis/harmonic-analysis/discrete-fourier-analysis", "title": "Spectral structure of Boolean functions"},

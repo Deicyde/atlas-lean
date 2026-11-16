@@ -6,6 +6,10 @@ Theorems saying that a Boolean function `f : {-1, 1}ⁿ → {-1, 1}` with a simp
 - [Friedgut's Junta Theorem](friedgut-junta-theorem.md)
 - [Level-1 Inequality](level-one-inequality.md)
 - [Majority Is Stablest](majority-is-stablest.md)
+- [Noise stability of a coordinate Laplacian](bool-noise-stab-derivative-le.md)
+- [Few coordinates have large influence](card-influential-le.md)
+- [Friedgut's junta theorem, explicit form](exists-junta-bool-dist-le.md)
+- [Spectral part of Friedgut's argument](sum-sq-not-subset-le-of-influence.md)
 
 ## Related topics
 

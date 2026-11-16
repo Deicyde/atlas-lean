@@ -17,7 +17,7 @@ public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 /-!
 # Structure theorems for Boolean functions
 
-Four theorems of the analysis of Boolean functions, stated for `f : BoolCube n → ℝ` on the
+Three theorems of the analysis of Boolean functions, stated for `f : BoolCube n → ℝ` on the
 uniform cube `{-1, 1}ⁿ` with the definitions of `MathlibExt.Analysis.Fourier`: the Fourier
 coefficients `boolFourierCoeff`, influences `boolInfluence`, total influence
 `boolTotalInfluence`, noise stability `boolNoiseStab` and relative Hamming distance `boolDist`.
@@ -26,7 +26,6 @@ A Boolean function is a `±1`-valued `f`; `W¹[f] = ∑_{|S| = 1} f̂(S)²` is i
 ## Main statements
 
 * `BooleanCube.fkn_theorem`: Friedgut–Kalai–Naor.
-* `BooleanCube.friedgut_junta_theorem`: Friedgut's Junta Theorem.
 * `BooleanCube.majority_is_stablest`: Majority Is Stablest (Mossel–O'Donnell–Oleszkiewicz).
 * `BooleanCube.level_one_inequality`: the Level-1 Inequality.
 
@@ -34,13 +33,14 @@ A Boolean function is a `±1`-valued `f`; `W¹[f] = ∑_{|S| = 1} f̂(S)²` is i
 
 * E. Friedgut, G. Kalai and A. Naor, *Boolean functions whose Fourier transform is concentrated
   on the first two levels*, Adv. in Appl. Math. 29 (2002), 427-437.
-* E. Friedgut, *Boolean functions with low average sensitivity depend on few coordinates*,
-  Combinatorica 18 (1998), 27-35.
 * E. Mossel, R. O'Donnell and K. Oleszkiewicz, *Noise stability of functions with low
   influences: invariance and optimality*, Ann. of Math. 171 (2010), 295-341
   (arXiv:math/0503503).
 * R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014
-  (arXiv:2105.10386), Sections 2.6, 5.2, 5.4, 9.1, 9.6 and Chapter 11.
+  (arXiv:2105.10386), Sections 2.6, 5.2, 5.4, 9.1 and Chapter 11.
+
+Friedgut's Junta Theorem, stated in the same terms, is proved in
+`MathlibExt.Analysis.Fourier.BooleanCubeFriedgut`.
 -/
 
 @[expose] public section
@@ -60,21 +60,6 @@ theorem_wanted fkn_theorem :
       ∀ δ : ℝ, 1 - δ ≤ ∑ S with S.card = 1, boolFourierCoeff n f S ^ 2 →
         ∃ i : Fin n, boolDist f (fun x => cubeVal (x i)) ≤ C * δ ∨
           boolDist f (fun x => -cubeVal (x i)) ≤ C * δ
-
-/-- **Friedgut's Junta Theorem.** There is a universal constant `C` such that for every
-`f : BoolCube n → ℝ` with values `±1` and every `0 < ε ≤ 1`, `f` is `ε`-close to a `±1`-valued
-function `g` that depends only on the coordinates in a set `J` with
-`|J| ≤ exp(C · I[f] / ε)` (E. Friedgut, 1998; R. O'Donnell, *Analysis of Boolean Functions*,
-2014, Friedgut's Junta Theorem, Section 9.6, stated there as "`ε`-close to an
-`exp(O(I[f]/ε))`-junta"). -/
-theorem_wanted friedgut_junta_theorem :
-    ∃ C : ℝ, ∀ (n : ℕ) (f : BoolCube n → ℝ), (∀ x, f x = 1 ∨ f x = -1) →
-      ∀ ε : ℝ, 0 < ε → ε ≤ 1 →
-        ∃ (J : Finset (Fin n)) (g : BoolCube n → ℝ),
-          (J.card : ℝ) ≤ Real.exp (C * boolTotalInfluence f / ε) ∧
-          (∀ x, g x = 1 ∨ g x = -1) ∧
-          (∀ x y : BoolCube n, (∀ i ∈ J, x i = y i) → g x = g y) ∧
-          boolDist f g ≤ ε
 
 /-- **Majority Is Stablest.** Fix `ρ ∈ (0, 1)`. For every `ε > 0` there is `τ > 0` such that
 every `f : BoolCube n → ℝ` with values in `[-1, 1]`, `𝔼[f] = 0` and `Inf_i[f] ≤ τ` for all `i`

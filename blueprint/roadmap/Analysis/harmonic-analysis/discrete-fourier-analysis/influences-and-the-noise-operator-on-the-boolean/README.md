@@ -74,6 +74,7 @@
 - [Noise stability at `ρ = 0`](bool-noise-stab-zero.md)
 - [The noise operator is self-adjoint](expect-bool-noise-op-mul-comm.md)
 - [Plancherel formula for the noise operator](expect-mul-bool-noise-op-eq-sum.md)
+- [Fourier coefficients of the coordinate Laplacian](bool-fourier-coeff-derivative.md)
 
 ## Related topics
 

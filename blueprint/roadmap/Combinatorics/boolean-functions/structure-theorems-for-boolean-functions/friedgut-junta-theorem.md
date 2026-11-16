@@ -5,6 +5,10 @@ $0 < \varepsilon \le 1$, $f$ is $\varepsilon$-close to a function $g : \{-1, 1\}
 that depends only on the coordinates in a set $J$ with $|J| \le \exp(C\, \mathbf{I}[f] / \varepsilon)$.
 Functions of small total influence are close to juntas.
 
+The Lean proof takes $C = 180$. It applies the explicit form with $\varepsilon/2$, which gives
+$|J| \le 4\,u^3\, 9^{\lceil 2u \rceil}$ for $u = \mathbf{I}[f]/\varepsilon$. A nonempty $J$ forces
+$u > 1/10$, and then $4u^3 9^{\lceil 2u\rceil} \le e^{19u + 16} \le e^{180 u}$.
+
 ## Sources
 
 - E. Friedgut, "Boolean functions with low average sensitivity depend on few coordinates",
