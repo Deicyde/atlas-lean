@@ -26744,6 +26744,7 @@
 "MathlibExt.Probability.KernelMeanEmbedding.integrable_kernelValue_prod": "27237892bbc77079",
 "MathlibExt.Probability.KernelMeanEmbedding.isCharacteristic_of_universal": "6ca83a2e7822a2ff",
 "MathlibExt.Probability.KernelMeanEmbedding.isGreatest_inner_closedBall": "a81cad8aaae28a90",
+"MathlibExt.Probability.KernelMeanEmbedding.isPosDefKernel_kernelValue": "2a79d511ae094315",
 "MathlibExt.Probability.KernelMeanEmbedding.kernelValue": "9c512102ad72f903",
 "MathlibExt.Probability.KernelMeanEmbedding.kernelValue_comm": "eeea3ab7fa46ee0c",
 "MathlibExt.Probability.KernelMeanEmbedding.kernel_eq_smul": "ab77b8a7b25c657b",

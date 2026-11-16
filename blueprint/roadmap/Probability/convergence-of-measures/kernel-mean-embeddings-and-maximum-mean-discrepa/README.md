@@ -11,6 +11,7 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 - [Reproducing property of the feature map](inner-feature-map.md)
 - [Kernel functions are feature maps](feature-map-apply.md)
 - [Symmetry of the kernel](kernel-value-comm.md)
+- [The kernel of an RKHS is a positive-definite kernel](is-pos-def-kernel-kernel-value.md)
 - [Norm of a feature map](norm-feature-map.md)
 - [Operator-valued and scalar kernels](kernel-eq-smul.md)
 - [Continuity of the feature map](continuous-feature-map-of-continuous-ker.md)

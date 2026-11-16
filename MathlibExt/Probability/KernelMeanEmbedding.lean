@@ -12,6 +12,7 @@ public import Mathlib.Analysis.InnerProductSpace.Reproducing
 public import Mathlib.MeasureTheory.Function.L2Space
 public import Mathlib.MeasureTheory.Integral.Prod
 public import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+public import MathlibExt.Analysis.InnerProductSpace.PositiveDefiniteKernel
 
 /-!
 # Kernel mean embeddings and the maximum mean discrepancy
@@ -47,7 +48,7 @@ integrable, the *kernel mean embedding* is `μ_P = ∫ φ(x) dP(x) ∈ H` (`mean
 
 @[expose] public section
 
-open MeasureTheory RKHS
+open MeasureTheory RKHS MathlibExt.Analysis.InnerProductSpace
 open scoped InnerProductSpace
 
 namespace MathlibExt.Probability.KernelMeanEmbedding
@@ -91,6 +92,14 @@ theorem kernelValue_comm (x y : X) : kernelValue H x y = kernelValue H y x :=
 test*, JMLR 13 (2012), proof of Lemma 3). -/
 theorem norm_featureMap (x : X) : ‖featureMap H x‖ = √(kernelValue H x x) := by
   rw [kernelValue, real_inner_self_eq_norm_sq, Real.sqrt_sq (norm_nonneg _)]
+
+/-- **The kernel of an RKHS is a positive-definite kernel.** Every kernel matrix
+`(k(xᵢ, xⱼ))ᵢⱼ` of `k(x, y) = ⟪φ(x), φ(y)⟫` is positive semidefinite, the converse direction of
+Aronszajn's theorem (F. Bach, *Learning Theory from First Principles*, MIT Press (2024),
+Section 7.3, Proposition 7.3). -/
+theorem isPosDefKernel_kernelValue :
+    PositiveDefiniteKernel.IsPosDefKernel (kernelValue H : X → X → ℝ) :=
+  PositiveDefiniteKernel.isPosDefKernel_of_eq_inner (featureMap H) fun _ _ => rfl
 
 variable [MeasurableSpace X]
 

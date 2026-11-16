@@ -52,3 +52,4 @@
 - [Singular value decomposition](../../../LinearAlgebra/matrix-decompositions/singular-value-decomposition/README.md)
 - [Eckart–Young theorem in operator norm](../../../Analysis/operator-theory/eigenvalue-inequalities/eckart-young-best-rank-approx-operator-n.md)
 - [Power iteration and the Rayleigh quotient](../../../LinearAlgebra/eigenvalues-and-canonical-forms/power-iteration-and-the-rayleigh-quotient/README.md)
+- [Kernel principal component analysis](../kernel-principal-component-analysis/README.md): principal component analysis in a feature space, reduced to the eigenproblem of the kernel matrix.
