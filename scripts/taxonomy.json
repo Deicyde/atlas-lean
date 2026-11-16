@@ -4723,6 +4723,7 @@
   "WantedExt/Analysis/HeatKernelWanted": {"to": "Analysis/partial-differential-equations", "title": "Heat equation"},
   "WantedExt/Analysis/HermanProblem290Wanted": {"to": "Dynamics/low-dimensional-dynamics", "title": "Linearization of circle diffeomorphisms"},
   "WantedExt/Analysis/HessianEstimatesWanted": {"to": "Analysis/partial-differential-equations", "title": "Hessian estimates for the σ₂ equation"},
+  "WantedExt/Analysis/InnerProductSpace/ExactRecoveryCoherenceWanted": {"to": "Analysis/approximation-theory", "title": "Sparse recovery by orthogonal matching pursuit"},
   "WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted": {"to": "Analysis/hilbert-spaces", "title": "Orthogonal polynomial bases of L²[−1, 1]"},
   "WantedExt/Analysis/IsingPhaseTransitionWanted": {"to": "StatisticalMechanics/exact-solutions", "title": "Onsager's solution of the two-dimensional Ising model"},
   "WantedExt/Analysis/KolmogorovArnoldWanted": {"to": "Analysis/approximation-theory", "title": "Kolmogorov superposition theorem"},

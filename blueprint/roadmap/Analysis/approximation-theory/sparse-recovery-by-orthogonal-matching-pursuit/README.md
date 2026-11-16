@@ -5,6 +5,7 @@ Greedy sparse approximation in an inner product space, following J. A. Tropp, *G
 - [Greedy selection bound](norm-inner-le-of-mem-span.md)
 - [A nonzero vector of the span sees some atom](exists-inner-ne-zero-of-mem-span.md)
 - [The Exact Recovery Condition forces a correct greedy choice](norm-inner-lt-sup-of-erc.md)
+- [Coherence implies the Exact Recovery Condition](exists-erc-of-coherence.md)
 - [OMP residuals stay in the optimal span](sub-star-projection-mem.md)
 - [OMP never selects an atom twice](inner-sub-star-projection-eq-zero.md)
 
