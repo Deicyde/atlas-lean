@@ -11,6 +11,7 @@ module
 public import MathlibExt.Analysis.PathSignature.Basic
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 @[expose] public section
@@ -100,5 +101,23 @@ example (v : Fin 2 → ℝ → ℝ) : signature (fun i u => -v i (0 + 1 - u)) 0 
     signature v 1 0 [0] := by
   rw [signature_reverse_eq]
   norm_num
+
+/-- Reparametrisation: running a path at double speed, `S(X_{2·})_{0,1} = S(X)_{0,2}`. -/
+example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (w : List (Fin 2)) :
+    signature (fun i u => v i (2 * u) * 2) 0 1 w = signature v 0 2 w := by
+  have h := signature_comp hv (ψ := fun u => 2 * u) (ψ' := fun _ => 2)
+    (fun x => by simpa using HasDerivAt.const_mul (2 : ℝ) (hasDerivAt_id x)) continuous_const 0 1 w
+  simpa using h
+
+/-- Equation (22) at the word `12`: `S(←X)^{12}_{a,b} = S(X)^{21}_{a,b}`. -/
+example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (a b : ℝ) :
+    signature (fun i u => -v i (a + b - u)) a b [0, 1] = signature v a b [1, 0] := by
+  rw [signature_reverse hv]
+  simp
+
+/-- First-letter recursion at a two-letter word. -/
+example (v : Fin 2 → ℝ → ℝ) (hv : ∀ i, Continuous (v i)) (c b : ℝ) :
+    signature v c b [0, 1] = ∫ r in c..b, v 0 r * signature v r b [1] :=
+  signature_cons hv c b 0 [1]
 
 end MathlibExtTest.Analysis.PathSignature.Basic

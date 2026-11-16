@@ -14,6 +14,7 @@ public import Mathlib.Analysis.Calculus.Deriv.Basic
 
 import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 /-!
@@ -283,6 +284,29 @@ theorem signature_piecewise_linear (hv : ∀ i a b, IntervalIntegrable (v i) vol
       List.foldl_append]
     rfl
 
+/-- **Reparametrisation invariance of the signature.** Let the velocity `v` be continuous and let
+`ψ : ℝ → ℝ` be differentiable with continuous derivative `ψ'`. The reparametrised path
+`X̃_u = X_{ψ(u)}` has velocity `ṽⁱ(u) = vⁱ(ψ(u)) ψ'(u)`, and for all `s, t` and every word,
+`S(X̃)^w_{s,t} = S(X)^w_{ψ(s),ψ(t)}`. For an increasing reparametrisation of `[a, b]` onto itself
+this is the invariance of the signature under time reparametrisation (Chevyrev and Kormilitzin,
+*A primer on the signature method in machine learning*, arXiv:1603.03788v2, §1.3.1); the
+statement holds for every continuously differentiable `ψ`, monotone or not. -/
+theorem signature_comp (hv : ∀ i, Continuous (v i)) {ψ ψ' : ℝ → ℝ}
+    (hψ : ∀ x, HasDerivAt ψ (ψ' x) x) (hψ' : Continuous ψ') (s t : ℝ) (w : List ι) :
+    signature (fun i u => v i (ψ u) * ψ' u) s t w = signature v (ψ s) (ψ t) w := by
+  induction w using List.reverseRecOn generalizing t with
+  | nil => simp
+  | append_singleton w i ih =>
+    rw [signature_concat, signature_concat]
+    simp_rw [ih]
+    have hg : Continuous fun r => signature v (ψ s) r w * v i r :=
+      (continuous_signature (fun i a b => (hv i).intervalIntegrable a b) (ψ s) w).mul (hv i)
+    have h := intervalIntegral.integral_comp_mul_deriv (a := s) (b := t)
+      (fun x _ => hψ x) hψ'.continuousOn hg
+    simp only [Function.comp_def] at h
+    rw [← h]
+    exact intervalIntegral.integral_congr fun u _ => by ring
+
 /-- **Signature of the time-reversed path over a sub-interval.** For the time reversal
 `←X_u = X_{a+b−u}` of a path, with velocity `←vⁱ(u) = −vⁱ(a + b − u)`, the iterated integrals of
 `←X` from `a` to `t` are those of `X` from `b` back to `a + b − t`:
@@ -314,5 +338,108 @@ theorem tensorMul_signature_reverse (hv : ∀ i a b, IntervalIntegrable (v i) vo
   rw [hrev, ← signature_eq_tensorMul hv a b a]
   funext w
   rw [signature_self, tensorOne]
+
+/-- **Lower-endpoint derivative of an iterated integral (its value).** The derivative of
+`c ↦ S^u_{c,b}` at `c₀` for continuous velocity: `0` for the empty word and `−vⁱ(c₀) S^w_{c₀,b}`
+for `u = i w` (see `hasDerivAt_signature_lower`). -/
+noncomputable def lowerDeriv (v : ι → ℝ → ℝ) (b c₀ : ℝ) : List ι → ℝ
+  | [] => 0
+  | i :: w => -(v i c₀ * signature v c₀ b w)
+
+private theorem hasDerivAt_signature_upper_self (hv : ∀ i, Continuous (v i)) (c₀ : ℝ)
+    (q : List ι) (hq : q ≠ []) :
+    HasDerivAt (fun c => signature v c₀ c q)
+      ((if q.dropLast = [] then 1 else 0) * v (q.getLast hq) c₀) c₀ := by
+  have h := hasDerivAt_signature_concat hv c₀ q.dropLast (q.getLast hq) c₀
+  rw [List.dropLast_append_getLast hq, signature_self] at h
+  exact h
+
+/-- **Derivative of the signature in its lower endpoint.** For a path with continuous velocity,
+`c ↦ S^{i w}_{c,b}` is differentiable with derivative `−vⁱ(c) S^w_{c,b}`, and `S^∅_{c,b} = 1` is
+constant. Proved from Chen's identity at the moving point and the derivative in the upper
+endpoint (`hasDerivAt_signature_concat`). -/
+theorem hasDerivAt_signature_lower (hv : ∀ i, Continuous (v i)) (b c₀ : ℝ) (u : List ι) :
+    HasDerivAt (fun c => signature v c b u) (lowerDeriv v b c₀ u) c₀ := by
+  have hvi : ∀ i a b, IntervalIntegrable (v i) volume a b := fun i a b =>
+    (hv i).intervalIntegrable a b
+  induction h : u.length using Nat.strong_induction_on generalizing u with
+  | _ k ih =>
+  rcases u with _ | ⟨i, w⟩
+  · simpa [lowerDeriv] using hasDerivAt_const c₀ (1 : ℝ)
+  -- Chen's identity at the moving point `c`, solved for `S^u_{c,b}`.
+  have hfun : (fun c => signature v c b (i :: w)) = fun c => signature v c₀ b (i :: w) -
+      ∑ m ∈ Finset.range (i :: w).length,
+        signature v c₀ c ((i :: w).take (m + 1)) * signature v c b ((i :: w).drop (m + 1)) := by
+    funext c
+    rw [signature_chen hvi c₀ c b, Finset.sum_range_succ']
+    simp
+  rw [hfun]
+  have hterm : ∀ m ∈ Finset.range (i :: w).length, HasDerivAt
+      (fun c => signature v c₀ c ((i :: w).take (m + 1)) *
+        signature v c b ((i :: w).drop (m + 1)))
+      ((if ((i :: w).take (m + 1)).dropLast = [] then 1 else 0) *
+          v (((i :: w).take (m + 1)).getLast (by simp)) c₀ *
+          signature v c₀ b ((i :: w).drop (m + 1)) +
+        signature v c₀ c₀ ((i :: w).take (m + 1)) *
+          lowerDeriv v b c₀ ((i :: w).drop (m + 1))) c₀ := by
+    intro m hm
+    exact (hasDerivAt_signature_upper_self hv c₀ _ (by simp)).mul
+      (ih _ (by simp at h ⊢; omega) _ rfl)
+  refine ((hasDerivAt_const c₀ (signature v c₀ b (i :: w))).sub
+    (HasDerivAt.fun_sum hterm)).congr_deriv ?_
+  rw [Finset.sum_eq_single 0]
+  · simp [lowerDeriv, signature_self]
+  · intro m hm hm0
+    have hw : w.take m ≠ [] := by
+      simp only [List.length_cons, Finset.mem_range] at hm
+      intro hnil
+      rcases List.take_eq_nil_iff.mp hnil with h0 | h0
+      · exact hm0 h0
+      · subst h0; exact hm0 (by simpa using hm)
+    have hnot : ¬ (i :: w.take m).dropLast = [] := by
+      rw [List.dropLast_cons_of_ne_nil hw]
+      simp
+    simp [hnot, signature_self]
+  · intro h0; simp at h0
+
+/-- **First-letter recursion of the signature.** For a path with continuous velocity, the
+iterated integral along `i w` is also `S^{i w}_{c,b} = ∫_c^b vⁱ(r) S^w_{r,b} dr`, integrating the
+first letter last; together with the defining last-letter recursion this is the iterated-integral
+formula `∫_{c<t₁<⋯<t_k<b}` read from either end. -/
+theorem signature_cons (hv : ∀ i, Continuous (v i)) (c b : ℝ) (i : ι) (w : List ι) :
+    signature v c b (i :: w) = ∫ r in c..b, v i r * signature v r b w := by
+  have hcont : Continuous fun r => signature v r b w :=
+    continuous_iff_continuousAt.2 fun r => (hasDerivAt_signature_lower hv b r w).continuousAt
+  have h := intervalIntegral.integral_eq_sub_of_hasDerivAt
+    (fun r _ => hasDerivAt_signature_lower hv b r (i :: w))
+    (((hv i).mul hcont).neg.intervalIntegrable c b)
+  simp only [lowerDeriv, intervalIntegral.integral_neg, signature_self, List.cons_ne_nil,
+    ↓reduceIte] at h
+  linarith
+
+/-- **Reversing the orientation of the interval.** For a path with continuous velocity and all
+reals `a, b`, `S(X)^{i₁…i_k}_{b,a} = (−1)^k S(X)^{i_k…i₁}_{a,b}`. -/
+theorem signature_swap (hv : ∀ i, Continuous (v i)) (a b : ℝ) (w : List ι) :
+    signature v b a w = (-1) ^ w.length * signature v a b w.reverse := by
+  induction w using List.reverseRecOn generalizing a with
+  | nil => simp
+  | append_singleton w i ih =>
+    rw [signature_concat, List.reverse_append, List.reverse_singleton, List.singleton_append,
+      signature_cons hv, intervalIntegral.integral_symm]
+    simp_rw [ih]
+    rw [← intervalIntegral.integral_neg]
+    rw [← intervalIntegral.integral_const_mul]
+    refine intervalIntegral.integral_congr fun u _ => ?_
+    simp only [List.length_append, List.length_singleton, pow_succ]
+    ring
+
+/-- **Time-reversed signature, coordinate form.** For a path with continuous velocity and its time
+reversal `←X_u = X_{a+b−u}` on `[a, b]`,
+`S(←X)^{i₁…i_k}_{a,b} = (−1)^k S(X)^{i_k…i₁}_{a,b}` (Chevyrev and Kormilitzin, *A primer on the
+signature method in machine learning*, arXiv:1603.03788v2, Theorem 1.25, equation (22)). -/
+theorem signature_reverse (hv : ∀ i, Continuous (v i)) (a b : ℝ) (w : List ι) :
+    signature (fun i u => -v i (a + b - u)) a b w =
+      (-1) ^ w.length * signature v a b w.reverse := by
+  rw [signature_reverse_eq, show a + b - b = a by ring, signature_swap hv]
 
 end MathlibExt.Analysis.PathSignature

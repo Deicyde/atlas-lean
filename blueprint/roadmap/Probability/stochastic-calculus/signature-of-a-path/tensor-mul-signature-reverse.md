@@ -7,10 +7,11 @@ in the algebra of tensor series. Together with [Chen's identity](signature-eq-te
 this makes the signatures of paths a group under $\otimes$, with inverse given by reversal; it is
 why a path followed by its own reversal has the same signature as a constant path.
 
-The source proves the coordinate formula
+The source proves it through the coordinate formula
 $S(\overleftarrow{X})^{i_1 \cdots i_k}_{a,b} = (-1)^k S(X)^{i_k \cdots i_1}_{a,b}$ (its
-equation (22)), which is not formalised here. The Lean proof of (21) applies Chen's identity at
-$b$ to $S(X)_{a,b} \otimes S(X)_{b,a} = S(X)_{a,a} = 1$, using
+equation (22), [formalised separately](signature-reverse.md) for continuous velocity). The Lean
+proof of (21) needs only a locally integrable velocity: it applies Chen's identity at $b$ to
+$S(X)_{a,b} \otimes S(X)_{b,a} = S(X)_{a,a} = 1$, using
 [the signature of the reversed path](signature-reverse-eq.md).
 
 ## Sources
