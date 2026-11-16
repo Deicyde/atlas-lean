@@ -8,3 +8,4 @@ Large deviation principles and rate functions, Cramér's theorem and Chernoff bo
 - [Contraction principle](contraction-principle/README.md)
 - [Varadhan's integral lemma](varadhan-s-integral-lemma/README.md)
 - [Tilted large deviation principle](tilted-large-deviation-principle/README.md)
+- [Sanov's theorem](sanov-s-theorem/README.md)
