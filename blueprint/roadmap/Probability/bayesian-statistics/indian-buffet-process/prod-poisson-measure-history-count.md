@@ -1,0 +1,5 @@
+# The Indian buffet process as independent Poisson history counts
+
+Let the number `K_h` of features with history `h` be `Poisson(α (m_h - 1)! (N - m_h)! / N!)`, independently over the `2^N - 1` non-zero histories `h`, where `m_h` is the number of ones in `h`. Then for every binary matrix `Z` whose columns are all non-zero, the probability that the counts equal those of `Z` is the Indian buffet process probability `α^{K₊} / ∏_h K_h! · exp(-α H_N) · ∏ₖ (N - mₖ)! (mₖ - 1)! / N!` of the `lof`-class of `Z` (Griffiths and Ghahramani 2011, Section 4.5). Since a `lof`-class is the same as a collection of histories with their multiplicities, and a product of Poisson laws is a probability distribution, this shows that Equation 14 defines a probability distribution on `lof`-classes (the distribution on classes itself is not constructed in Lean here).
+
+The product of the Poisson factors `exp(-λ_h)` is `exp(-α H_N)` by Equation 16, and regrouping the columns of `Z` by history turns `∏_h λ_h^{K_h}` into `α^{K₊} ∏ₖ (mₖ - 1)! (N - mₖ)! / N!`.
