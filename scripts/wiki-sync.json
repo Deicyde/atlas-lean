@@ -22626,6 +22626,8 @@
 "MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutDec": "e9ee8f6aa55babca",
 "MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP": "7f562f5a26851a02",
 "MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP_holds": "9790ec67f3dd1c1f",
+"MathlibExt.Computability.YaoMinimax.exists_le_expectedCost": "f45ecf6af56fcd38",
+"MathlibExt.Computability.YaoMinimax.yao_minimax": "9ef9c2c892004917",
 "MathlibExt.ComputerScience.AdditiveNoiseModelIdentifiabilityWanted.identifiability_ode_of_reversible": "38875e88b5727e85",
 "MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.GraphCode": "16ee525ac6e976e3",
 "MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.Isomorphic": "cd24bd11072bc02d",

@@ -8,3 +8,4 @@
 - [Nash's theorem](../nash-s-theorem/README.md): the generalisation to finite games with any number of players.
 - [Linear programming](../../../Geometry/convex-geometry/linear-programming/README.md): strong duality, equivalent to the minimax theorem.
 - [No-regret dynamics](../no-regret-dynamics/README.md): learning dynamics whose averages approach equilibrium.
+- [Yao's minimax principle](../../../TheoryOfComputation/randomized-and-quantum-complexity/yao-s-minimax-principle/README.md): the theorem applied to the game between an input player and an algorithm player, relating randomized and distributional complexity.

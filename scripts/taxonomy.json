@@ -2897,6 +2897,7 @@
   "MathlibExt/Computability/PartrecCode": {"to": "TheoryOfComputation/computability", "title": "S-m-n theorem"},
   "MathlibExt/Computability/RE": {"to": "TheoryOfComputation/computability", "title": "Decidable and recognizable predicates"},
   "MathlibExt/Computability/RiceTheorem": {"to": "TheoryOfComputation/computability", "title": "Rice's theorem for acceptable numberings"},
+  "MathlibExt/Computability/YaoMinimax": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Yao's minimax principle"},
   "MathlibExt/Computability/TuringMachine/BitOps": {"to": "TheoryOfComputation/turing-machines/multi-tape-and-multi-stack", "title": "Programming multi-stack machines"},
   "MathlibExt/Computability/TuringMachine/Cleanup": {"to": "TheoryOfComputation/turing-machines/multi-tape-and-multi-stack", "title": "Programming multi-stack machines"},
   "MathlibExt/Computability/TuringMachine/Composition": {"to": "TheoryOfComputation/turing-machines/multi-tape-and-multi-stack", "title": "Composition of multi-stack machines"},
