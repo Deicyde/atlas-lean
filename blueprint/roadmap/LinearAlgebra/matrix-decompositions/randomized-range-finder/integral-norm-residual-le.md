@@ -2,7 +2,7 @@
 
 Under the hypotheses of the Frobenius bound (real $m \times n$ matrix $A$, $k \ge 2$, $p \ge 2$, $k + p \le \min\{m,n\}$, $\Omega$ an $n \times (k+p)$ standard Gaussian matrix, $Y = A\Omega$),
 $$\mathbb{E}\,\|(I - P_Y)A\| \le \left(1 + \sqrt{\frac{k}{p-1}}\right)\sigma_{k+1} + \frac{e\sqrt{k+p}}{p}\Big(\sum_{j>k}\sigma_j^2\Big)^{1/2},$$
-where $\|\cdot\|$ is the spectral norm. The first term is comparable with the optimal rank-$k$ spectral error $\sigma_{k+1}$. The second term is the price of the spectral norm, and becomes small when the singular values decay.
+where $\|\cdot\|$ is the spectral norm. In Lean the singular values are Mathlib's `LinearMap.singularValues`, indexed from $0$, so $\sigma_{k+1}$ is `singularValues k`. The first term is comparable with the optimal rank-$k$ spectral error $\sigma_{k+1}$. The second term is the price of the spectral norm, and becomes small when the singular values decay.
 
 The statement is recorded as wanted: its proof is deferred.
 

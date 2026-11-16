@@ -10,7 +10,7 @@ module
 
 public import Batteries.Util.ProofWanted
 public import Mathlib.Analysis.InnerProductSpace.Projection.Basic
-public import Mathlib.Analysis.Matrix.Spectrum
+public import Mathlib.Analysis.InnerProductSpace.SingularValues
 public import Mathlib.Analysis.Normed.Module.FiniteDimension
 public import Mathlib.Probability.Distributions.Gaussian.Real
 
@@ -26,9 +26,11 @@ is the orthogonal projection onto the range of `Y`. Its error is compared with t
 error, which by the Eckart–Young theorem is `(∑_{j>k} σⱼ²)^{1/2}` in the Frobenius norm and
 `σ_{k+1}` in the spectral norm (`σ₁ ≥ σ₂ ≥ …` the singular values of `A`).
 
-Here the singular values are read from the eigenvalues of `AᵀA`, listed in decreasing order by
-`Matrix.IsHermitian.eigenvalues₀` (`σⱼ² = λⱼ(AᵀA)`, indices from `0`), and the Gaussian test
-matrix is the coordinate map of the product of standard Gaussian laws on `Fin n × Fin (k + p)`.
+Here the singular values are Mathlib's `LinearMap.singularValues` of the operator
+`Matrix.toEuclideanLin A : ℝⁿ → ℝᵐ`, listed in decreasing order from index `0` (so Halko,
+Martinsson and Tropp's `σⱼ` is `singularValues (j - 1)`), the notion used by the Eckart–Young
+pages. The Gaussian test matrix is the coordinate map of the product of standard Gaussian laws on
+`Fin n × Fin (k + p)`.
 The proofs are deferred.
 -/
 
@@ -67,27 +69,25 @@ J. A. Tropp, *Finding structure with randomness*, SIAM Rev. 53 (2011), arXiv:090
 Theorem 10.5). Let `A` be a real `m × n` matrix with singular values `σ₁ ≥ σ₂ ≥ …`, choose a
 target rank `k ≥ 2` and an oversampling parameter `p ≥ 2` with `k + p ≤ min(m, n)`, and let `Ω`
 be an `n × (k + p)` standard Gaussian matrix. Then
-`E ‖(I - P_{AΩ}) A‖_F ≤ (1 + k / (p - 1))^{1/2} (∑_{j>k} σⱼ²)^{1/2}`. -/
+`E ‖(I - P_{AΩ}) A‖_F ≤ (1 + k / (p - 1))^{1/2} (∑_{j>k} σⱼ²)^{1/2}`; with `σ` 0-indexed as
+`LinearMap.singularValues`, the sum runs over indices `k ≤ j < n`. -/
 theorem_wanted integral_residualFrobenius_le {k p : ℕ} (hk : 2 ≤ k) (hp : 2 ≤ p)
     (hkp : k + p ≤ min m n) (A : Matrix (Fin m) (Fin n) ℝ) :
     ∫ ω, residualFrobenius A (Matrix.of fun i j => ω (i, j)) ∂(gaussianMatrixLaw n (k + p)) ≤
       Real.sqrt (1 + k / (p - 1 : ℝ)) *
-        Real.sqrt (∑ j : Fin (Fintype.card (Fin n)) with k ≤ j.val,
-          (Matrix.isHermitian_conjTranspose_mul_self A).eigenvalues₀ j)
+        Real.sqrt (∑ j ∈ Finset.Ico k n, (Matrix.toEuclideanLin A).singularValues j ^ 2)
 
 /-- **Average spectral error of the randomized range finder** (N. Halko, P.-G. Martinsson and
 J. A. Tropp, *Finding structure with randomness*, SIAM Rev. 53 (2011), arXiv:0909.4061,
 Theorem 10.6). Under the hypotheses of Theorem 10.5,
 `E ‖(I - P_{AΩ}) A‖ ≤ (1 + (k / (p - 1))^{1/2}) σ_{k+1} + (e √(k + p) / p) (∑_{j>k} σⱼ²)^{1/2}`,
-where `‖·‖` is the spectral (operator) norm. -/
+where `‖·‖` is the spectral (operator) norm; with 0-indexed singular values, `σ_{k+1}` is
+`singularValues k`. -/
 theorem_wanted integral_norm_residual_le {k p : ℕ} (hk : 2 ≤ k) (hp : 2 ≤ p)
     (hkp : k + p ≤ min m n) (A : Matrix (Fin m) (Fin n) ℝ) :
     ∫ ω, ‖residual A (Matrix.of fun i j => ω (i, j))‖ ∂(gaussianMatrixLaw n (k + p)) ≤
-      (1 + Real.sqrt (k / (p - 1 : ℝ))) *
-          Real.sqrt ((Matrix.isHermitian_conjTranspose_mul_self A).eigenvalues₀
-            ⟨k, by rw [Fintype.card_fin]; omega⟩) +
+      (1 + Real.sqrt (k / (p - 1 : ℝ))) * (Matrix.toEuclideanLin A).singularValues k +
         Real.exp 1 * Real.sqrt (k + p : ℝ) / p *
-          Real.sqrt (∑ j : Fin (Fintype.card (Fin n)) with k ≤ j.val,
-            (Matrix.isHermitian_conjTranspose_mul_self A).eigenvalues₀ j)
+          Real.sqrt (∑ j ∈ Finset.Ico k n, (Matrix.toEuclideanLin A).singularValues j ^ 2)
 
 end MathlibExt.LinearAlgebra.Matrix.RandomizedRangeFinderWanted
