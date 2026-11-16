@@ -6,3 +6,4 @@ Largest or smallest families of finite sets under intersection, union or contain
 - [Hypergraph Turán problems](hypergraph-turan/README.md)
 - [Hypergraph colouring, matchings and covers](hypergraph-colouring-matching/README.md)
 - [Uniform hypergraphs](uniform-hypergraphs/README.md)
+- [The VC dimension is at most the size of the ground set](vc-dim-le-card.md)

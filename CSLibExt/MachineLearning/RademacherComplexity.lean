@@ -16,6 +16,7 @@ public import Mathlib.Combinatorics.SetFamily.Shatter
 public import Mathlib.Basic.Real.Pointwise
 public import MathlibExt.Analysis.InnerProductSpace.RademacherTypeCotype
 public import MathlibExt.Combinatorics.BinomialPartialSum
+public import MathlibExt.Combinatorics.SetFamily.VCDim
 
 /-!
 # Empirical Rademacher complexity of a set of vectors
@@ -55,8 +56,8 @@ Main results:
   subsets of the sample realizes, Massart's lemma and the Sauer–Shelah lemma give
   `R ≤ √(2 log (∑_{k ≤ d} C(n, k)) / n)` with `d` the VC dimension of `𝒜`, and
   `rademacherComplexity_signPatterns_le_vcDim`: `R ≤ √(2 d log (e n / d) / n)` when `d ≥ 1`
-  (Shalev-Shwartz and Ben-David, Section 28.1), through `sum_choose_le_exp_mul_div_pow`,
-  `∑_{k ≤ d} C(n, k) ≤ (e n / d)^d`.
+  (Shalev-Shwartz and Ben-David, Section 28.1), through `Real.sum_choose_le_exp_mul_div_pow`,
+  `∑_{k ≤ d} C(n, k) ≤ (e n / d)^d`, and `Finset.vcDim_le_card`.
 -/
 
 @[expose] public section
@@ -433,30 +434,6 @@ theorem rademacherComplexity_signPatterns_le {𝒜 : Finset (Finset (Fin n))} (h
     _ ≤ sqrt (2 * log (∑ k ∈ Iic 𝒜.vcDim, n.choose k : ℕ) / n) := by
         gcongr
 
-/-- The **Sauer–Shelah counting bound** `∑_{k ≤ d} C(n, k) ≤ (e n / d)^d` for `1 ≤ d ≤ n`
-(Shalev-Shwartz and Ben-David, *Understanding Machine Learning*, Lemma 6.10 and Lemma A.5),
-from `Real.pow_mul_sum_choose_le_exp` with weight `d / n`. -/
-theorem sum_choose_le_exp_mul_div_pow {d : ℕ} (hd : 1 ≤ d) (hdn : d ≤ n) :
-    ((∑ k ∈ Iic d, n.choose k : ℕ) : ℝ) ≤ (exp 1 * n / d) ^ d := by
-  have hdR : (0 : ℝ) < d := by exact_mod_cast hd
-  have hnR : (0 : ℝ) < n := by exact_mod_cast lt_of_lt_of_le hd hdn
-  have hrange : (∑ k ∈ Iic d, n.choose k : ℕ) = ∑ k ∈ range (d + 1), n.choose k := by
-    congr 1; ext k; simp
-  have hx1 : (d : ℝ) / n ≤ 1 := (div_le_one hnR).2 (by exact_mod_cast hdn)
-  have h := Real.pow_mul_sum_choose_le_exp hdn (div_pos hdR hnR).le hx1
-  rw [mul_div_cancel₀ _ hnR.ne'] at h
-  rw [hrange, Nat.cast_sum]
-  have heq : (exp 1 * n / d) ^ d = exp (d : ℝ) / ((d : ℝ) / n) ^ d := by
-    rw [← Real.exp_one_pow d, ← div_pow]; congr 1; field_simp
-  rw [heq, le_div_iff₀ (by positivity), mul_comm]
-  exact h
-
-/-- A family of subsets of `Fin n` has VC dimension at most `n`. -/
-lemma vcDim_le (𝒜 : Finset (Finset (Fin n))) : 𝒜.vcDim ≤ n := by
-  unfold Finset.vcDim
-  refine Finset.sup_le fun s _ => ?_
-  simpa using Finset.card_le_univ s
-
 /-- **Rademacher complexity of a VC class, explicit rate** (Shalev-Shwartz and Ben-David,
 *Understanding Machine Learning*, Section 28.1, from Lemma 26.8 and Lemma 6.10): for a nonempty
 family `𝒜` of subsets of an `n`-point sample with VC dimension `d ≥ 1`, the sign patterns
@@ -465,10 +442,14 @@ theorem rademacherComplexity_signPatterns_le_vcDim {𝒜 : Finset (Finset (Fin n
     (h𝒜 : 𝒜.Nonempty) (hd : 1 ≤ 𝒜.vcDim) :
     rademacherComplexity (signPatterns 𝒜) ≤
       sqrt (2 * 𝒜.vcDim * log (exp 1 * n / 𝒜.vcDim) / n) := by
-  have hdn := vcDim_le 𝒜
+  have hdn : 𝒜.vcDim ≤ n := by simpa using Finset.vcDim_le_card 𝒜
   have hn : 0 < n := lt_of_lt_of_le hd hdn
   refine (rademacherComplexity_signPatterns_le h𝒜 hn).trans ?_
-  have hS := sum_choose_le_exp_mul_div_pow hd hdn
+  have hrange : (∑ k ∈ Iic 𝒜.vcDim, n.choose k : ℕ) = ∑ k ∈ range (𝒜.vcDim + 1), n.choose k := by
+    congr 1; ext k; simp
+  have hS : ((∑ k ∈ Iic 𝒜.vcDim, n.choose k : ℕ) : ℝ) ≤ (exp 1 * n / 𝒜.vcDim) ^ 𝒜.vcDim := by
+    rw [hrange, Nat.cast_sum]
+    exact Real.sum_choose_le_exp_mul_div_pow hd hdn
   have hpos : (0 : ℝ) < ((∑ k ∈ Iic 𝒜.vcDim, n.choose k : ℕ) : ℝ) := by
     have : 1 ≤ ∑ k ∈ Iic 𝒜.vcDim, n.choose k :=
       le_trans (by simp) (Finset.single_le_sum (f := fun k => n.choose k)

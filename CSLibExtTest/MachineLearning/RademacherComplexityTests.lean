@@ -17,8 +17,7 @@ public import Mathlib.Tactic.NormNum
 The two-point set `{1, -1} ⊆ ℝ¹` has complexity exactly `1`: whatever the sign, one of the two
 points matches it. A single vector has complexity `0`. Closed checks instantiate scaling,
 convex-hull invariance, the contraction lemma with `|·|`, Massart's lemma, the VC bound on
-the full cube of sign patterns, the counting bound `∑_{k ≤ d} C(n, k) ≤ (e n / d)^d` at
-`d = n = 3`, and the explicit VC rate.
+the full cube of sign patterns, and the explicit VC rate.
 -/
 
 namespace Cslib.MachineLearning.Rademacher
@@ -75,12 +74,6 @@ example : rademacherComplexity (signPatterns (Finset.univ : Finset (Finset (Fin 
     √(2 * log (∑ k ∈ Iic (Finset.univ : Finset (Finset (Fin 2))).vcDim, (2 : ℕ).choose k : ℕ)
       / 2) := by
   simpa using rademacherComplexity_signPatterns_le (n := 2) Finset.univ_nonempty (by norm_num)
-
-/-- With `d = n = 3`, the counting bound reads `2³ ≤ e³`. -/
-example : ((∑ k ∈ Iic 3, (3 : ℕ).choose k : ℕ) : ℝ) ≤ (exp 1 * 3 / 3) ^ 3 :=
-  sum_choose_le_exp_mul_div_pow (n := 3) (by norm_num) le_rfl
-
-example (𝒜 : Finset (Finset (Fin 10))) : 𝒜.vcDim ≤ 10 := vcDim_le 𝒜
 
 example (𝒜 : Finset (Finset (Fin 10))) (h𝒜 : 𝒜.Nonempty) (hd : 1 ≤ 𝒜.vcDim) :
     rademacherComplexity (signPatterns 𝒜) ≤

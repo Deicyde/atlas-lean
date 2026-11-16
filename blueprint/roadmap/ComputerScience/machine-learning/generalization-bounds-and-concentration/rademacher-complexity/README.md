@@ -19,7 +19,7 @@ a generalization guarantee is recorded as a wanted statement.
 - [The contraction lemma](rademacher-complexity-coord-map-le.md)
 - [Massart's finite-class lemma](rademacher-complexity-le-of-finite.md)
 - [Rademacher complexity of a VC class](rademacher-complexity-sign-patterns-le.md)
-- [Sauer–Shelah counting bound](sum-choose-le-exp-mul-div-pow.md)
+- [Partial binomial sums are at most $(eD/r)^r$](../../../../Combinatorics/binomial-coefficients/binomial-sums/bounds-on-partial-sums-of-binomial-coefficients/sum-choose-le-exp-mul-div-pow.md) (in Combinatorics)
 - [Rademacher complexity of a VC class, explicit rate](rademacher-complexity-sign-patterns-le-v.md)
 - [The Rademacher risk bound](risk-le-empirical-add-rademacher.md)
 
@@ -43,7 +43,7 @@ a generalization guarantee is recorded as a wanted statement.
 - [One step of the contraction argument](sum-sup-corr-le-update.md)
 - [Sign pattern of a subset](sign-vector.md)
 - [Sign patterns of a set family](sign-patterns.md)
-- [The VC dimension on an n-point sample is at most n](vc-dim-le.md)
+- [The VC dimension is at most the size of the ground set](../../../../Combinatorics/extremal-set-theory/vc-dim-le-card.md) (in Combinatorics)
 - [Cost vectors on a sample](cost-vectors.md)
 
 ## Related topics
