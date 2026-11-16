@@ -15,3 +15,4 @@ For probability measures on an arbitrary measurable space, the total variation d
 ## Related topics
 
 - [Total variation distance](../../../Probability/convergence-of-measures/total-variation-distance/README.md)
+- [Strong data processing and Dobrushin's coefficient](../strong-data-processing-and-dobrushin-s-coefficie/README.md)

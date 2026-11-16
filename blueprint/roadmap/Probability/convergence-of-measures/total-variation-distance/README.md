@@ -12,3 +12,4 @@
 ## Related topics
 
 - [Total variation and Pinsker's inequality](../../../InformationTheory/information-inequalities/total-variation-and-pinsker-s-inequality/README.md)
+- [Strong data processing and Dobrushin's coefficient](../../../InformationTheory/information-inequalities/strong-data-processing-and-dobrushin-s-coefficie/README.md)

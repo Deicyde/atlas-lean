@@ -8,4 +8,5 @@ Inequalities relating entropies, divergences and mutual information, such as the
 - [Shearer's entropy inequality](shearer-s-entropy-inequality/README.md)
 - [Csiszár–Kullback–Pinsker inequality for strictly positive distributions](csiszar-kullback-pinsker.md)
 - [Total variation and Pinsker's inequality](total-variation-and-pinsker-s-inequality/README.md)
+- [Strong data processing and Dobrushin's coefficient](strong-data-processing-and-dobrushin-s-coefficie/README.md)
 - [Binary Pinsker inequality on the closed interval](binary-pinsker-of-mem-icc.md)

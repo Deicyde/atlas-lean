@@ -3032,6 +3032,7 @@
   "MathlibExt/InformationTheory/ChowLiu": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Chow–Liu trees"},
   "MathlibExt/InformationTheory/ConditionalEntropy": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Conditional entropy and mutual information"},
   "MathlibExt/InformationTheory/ConditionalMutualInformation": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Conditional mutual information"},
+  "MathlibExt/InformationTheory/DobrushinContraction": {"to": "InformationTheory/information-inequalities", "title": "Strong data processing and Dobrushin's coefficient"},
   "MathlibExt/InformationTheory/Fano": {"to": "InformationTheory/information-inequalities", "title": "Fano's inequality"},
   "MathlibExt/InformationTheory/FiniteChannelSimulation": {"to": "InformationTheory/channel-simulation", "title": "One-shot channel simulation"},
   "MathlibExt/InformationTheory/FiniteEntropy": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Shannon entropy and Kullback–Leibler divergence"},
