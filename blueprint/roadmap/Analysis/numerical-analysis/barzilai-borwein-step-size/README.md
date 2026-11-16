@@ -7,3 +7,4 @@ The two-point step-size gradient method of Barzilai and Borwein iterates $x_{k+1
 - [The second Barzilai–Borwein step is the shorter one](bb-step-le-bb-step.md)
 - [The first Barzilai–Borwein step is a least-squares secant fit](norm-inv-bb-step-smul-sub-le.md)
 - [The second Barzilai–Borwein step is a least-squares secant fit](norm-sub-bb-step-smul-le.md)
+- [Raydan's theorem](raydan-tendsto-gradient.md)

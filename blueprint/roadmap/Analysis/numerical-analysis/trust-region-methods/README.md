@@ -6,3 +6,4 @@ A trust-region method computes a trial step by minimising a model of the objecti
 - [Sufficient decrease of an exact trust-region step](pred-ge-of-is-min-on.md)
 - [Quadratic trust-region model](trust-region-model.md)
 - [Sufficient optimality condition for the trust-region subproblem](trust-region-model-le-of-optimality.md)
+- [Necessary optimality conditions for the trust-region subproblem](exists-optimality-of-is-min-on.md)
