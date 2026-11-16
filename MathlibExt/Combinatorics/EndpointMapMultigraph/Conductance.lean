@@ -204,6 +204,243 @@ private theorem sum_mul_weightedDegree (end₁ end₂ : E → V) (w : E → ℝ)
   simp only [mul_assoc, ← Finset.mul_sum, add_mul, Finset.sum_add_distrib, ite_mul, one_mul,
     zero_mul, Finset.sum_ite_eq, Finset.mem_univ, ite_true]
 
+/-- The thresholds of the sweep: the values of `z` and `0`. -/
+private noncomputable def cheegerThresholds (z : V → ℝ) : Finset ℝ :=
+  insert 0 (Finset.univ.image z)
+
+omit [DecidableEq E] in
+/-- With a centered `z`, the smaller side of a threshold cut is the side away from `0`. -/
+private theorem cheeger_min_volume_eq (end₁ end₂ : E → V) {w : E → ℝ} (hw : 0 ≤ w) (z : V → ℝ)
+    (hpos : volume end₁ end₂ w (Finset.univ.filter fun a => 0 < z a) ≤
+      volume end₁ end₂ w Finset.univ / 2)
+    (hneg : volume end₁ end₂ w (Finset.univ.filter fun a => z a < 0) ≤
+      volume end₁ end₂ w Finset.univ / 2) (τ : ℝ) :
+    min (volume end₁ end₂ w (Finset.univ.filter fun a => z a < τ))
+        (volume end₁ end₂ w (Finset.univ \ Finset.univ.filter fun a => z a < τ)) =
+      ∑ a, weightedDegree end₁ end₂ w a *
+        (if (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a) then 1 else 0) := by
+  classical
+  set d := weightedDegree end₁ end₂ w
+  set S : Finset V := Finset.univ.filter fun a => z a < τ
+  have hd0 : ∀ a, 0 ≤ d a := fun a => weightedDegree_nonneg end₁ end₂ hw a
+  have hvsplit : volume end₁ end₂ w S + volume end₁ end₂ w (Finset.univ \ S) =
+      volume end₁ end₂ w Finset.univ := by
+    simp only [volume]
+    rw [← Finset.sum_union Finset.disjoint_sdiff, Finset.union_sdiff_of_subset
+      (Finset.subset_univ S)]
+  have hvmono : ∀ A B : Finset V, A ⊆ B → volume end₁ end₂ w A ≤ volume end₁ end₂ w B :=
+    fun A B h => Finset.sum_le_sum_of_subset_of_nonneg h fun a _ _ => hd0 a
+  by_cases hτ : τ ≤ 0
+  · have hsub : S ⊆ Finset.univ.filter fun a => z a < 0 := fun a ha => by
+      simp only [S, Finset.mem_filter, Finset.mem_univ, true_and] at ha ⊢; linarith
+    have h1 := hvmono _ _ hsub
+    rw [min_eq_left (by linarith)]
+    simp only [volume, S, Finset.sum_filter, mul_ite, mul_one, mul_zero]
+    refine Finset.sum_congr rfl fun a _ => ?_
+    by_cases ha : z a < τ
+    · simp [ha, hτ, d]
+    · simp [ha, hτ, d]
+  · push Not at hτ
+    have hsub : Finset.univ \ S ⊆ Finset.univ.filter fun a => 0 < z a := fun a ha => by
+      simp only [S, Finset.mem_sdiff, Finset.mem_filter, Finset.mem_univ, true_and] at ha ⊢
+      linarith
+    have h1 := hvmono _ _ hsub
+    rw [min_eq_right (by linarith)]
+    simp only [volume, S]
+    rw [show Finset.univ \ Finset.univ.filter (fun a => z a < τ) =
+        Finset.univ.filter (fun a => ¬ z a < τ) by ext; simp]
+    simp only [Finset.sum_filter, mul_ite, mul_one, mul_zero]
+    refine Finset.sum_congr rfl fun a _ => ?_
+    by_cases ha : z a < τ
+    · simp [ha, not_le.2 hτ, d]
+    · simp [ha, not_le.2 hτ, hτ, not_lt.1 ha, d]
+
+omit [DecidableEq E] in
+/-- The expected smaller-side volume of the sweep is `zᵀDz`. -/
+private theorem cheeger_expected_volume (end₁ end₂ : E → V) (w : E → ℝ) (z : V → ℝ) :
+    ∑ τ ∈ cheegerThresholds z, cheegerMu (cheegerThresholds z) τ *
+        ∑ a, weightedDegree end₁ end₂ w a *
+          (if (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a) then 1 else 0) =
+      ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2 := by
+  classical
+  set T := cheegerThresholds z
+  set d := weightedDegree end₁ end₂ w
+  have hzT : ∀ a, z a ∈ T := fun a => Finset.mem_insert_of_mem (Finset.mem_image_of_mem z
+    (Finset.mem_univ a))
+  have h0T : (0 : ℝ) ∈ T := Finset.mem_insert_self _ _
+  simp only [Finset.mul_sum]
+  rw [Finset.sum_comm]
+  refine Finset.sum_congr rfl fun a _ => ?_
+  simp only [mul_ite, mul_one, mul_zero, mul_comm (cheegerMu T _) (d a)]
+  rw [← Finset.sum_filter, ← Finset.mul_sum]
+  congr 1
+  rcases lt_or_ge (z a) 0 with ha | ha
+  · rw [show T.filter (fun τ => (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a)) =
+        T.filter (fun τ => z a < τ ∧ τ ≤ 0) by
+      ext τ; simp only [Finset.mem_filter]
+      constructor
+      · rintro ⟨h, h' | h'⟩
+        · exact ⟨h, h'.2, h'.1⟩
+        · exact absurd (h'.1.trans_le h'.2) (by linarith)
+      · rintro ⟨h, h'⟩; exact ⟨h, Or.inl ⟨h'.2, h'.1⟩⟩]
+    rw [cheegerMu_sum T (hzT a) h0T ha.le]
+    simp [cheegerG, abs_of_neg ha]; ring
+  · rw [show T.filter (fun τ => (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a)) =
+        T.filter (fun τ => 0 < τ ∧ τ ≤ z a) by
+      ext τ; simp only [Finset.mem_filter]
+      constructor
+      · rintro ⟨h, h' | h'⟩
+        · exact absurd (h'.2.trans_le h'.1) (by linarith)
+        · exact ⟨h, h'⟩
+      · rintro ⟨h, h'⟩; exact ⟨h, Or.inr h'⟩]
+    rw [cheegerMu_sum T h0T (hzT a) ha]
+    simp [cheegerG, abs_of_nonneg ha]; ring
+
+omit [DecidableEq V] [DecidableEq E] in
+/-- The expected cut weight of the sweep is at most
+`∑_e w_e |z(a) - z(b)| (|z(a)| + |z(b)|)`. -/
+private theorem cheeger_expected_cut (end₁ end₂ : E → V) {w : E → ℝ} (hw : 0 ≤ w) (z : V → ℝ) :
+    ∑ τ ∈ cheegerThresholds z, cheegerMu (cheegerThresholds z) τ *
+        ∑ e ∈ cut end₁ end₂ (Finset.univ.filter fun a => z a < τ), w e ≤
+      ∑ e, w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) := by
+  classical
+  set T := cheegerThresholds z
+  set S : ℝ → Finset V := fun τ => Finset.univ.filter fun a => z a < τ
+  have hzT : ∀ a, z a ∈ T := fun a => Finset.mem_insert_of_mem (Finset.mem_image_of_mem z
+    (Finset.mem_univ a))
+  have hcutiff : ∀ τ e, e ∈ cut end₁ end₂ (S τ) ↔ (z (end₁ e) < τ ↔ ¬ z (end₂ e) < τ) := by
+    intro τ e
+    simp only [cut, S, Finset.mem_filter, Finset.mem_univ, true_and]
+    by_cases h1 : z (end₁ e) < τ <;> by_cases h2 : z (end₂ e) < τ <;> simp [h1, h2]
+  have key : ∀ e x y, x ≤ y → (∀ τ, e ∈ cut end₁ end₂ (S τ) ↔ x < τ ∧ τ ≤ y) → x ∈ T →
+      y ∈ T → ∑ τ ∈ T, cheegerMu T τ * (if e ∈ cut end₁ end₂ (S τ) then w e else 0) =
+        w e * (cheegerG y - cheegerG x) := by
+    intro e x y hxy hiff hx hy
+    simp only [mul_ite, mul_zero]
+    rw [← Finset.sum_filter, Finset.filter_congr (fun τ _ => hiff τ), ← Finset.sum_mul,
+      cheegerMu_sum T hx hy hxy]
+    ring
+  have hEXe : ∀ e, ∑ τ ∈ T, cheegerMu T τ * (if e ∈ cut end₁ end₂ (S τ) then w e else 0) ≤
+      w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) := by
+    intro e
+    rcases le_total (z (end₁ e)) (z (end₂ e)) with h | h
+    · rw [key e _ _ h (fun τ => by
+        rw [hcutiff]
+        constructor
+        · intro hh
+          by_cases h1 : z (end₁ e) < τ
+          · exact ⟨h1, not_lt.1 (hh.1 h1)⟩
+          · exfalso
+            by_cases h2 : z (end₂ e) < τ
+            · exact h1 (lt_of_le_of_lt h h2)
+            · exact h1 (hh.2 h2)
+        · rintro ⟨h1, h2⟩
+          exact ⟨fun _ => not_lt.2 h2, fun _ => h1⟩) (hzT _) (hzT _)]
+      refine mul_le_mul_of_nonneg_left ?_ (hw e)
+      rw [abs_sub_comm, abs_of_nonneg (sub_nonneg.2 h)]
+      exact cheegerG_sub_le h
+    · rw [key e _ _ h (fun τ => by
+        rw [hcutiff]
+        constructor
+        · intro hh
+          by_cases h2 : z (end₂ e) < τ
+          · refine ⟨h2, ?_⟩
+            by_contra h1
+            push Not at h1
+            exact (hh.1 h1) h2
+          · exfalso
+            by_cases h1 : z (end₁ e) < τ
+            · exact h2 (lt_of_le_of_lt h h1)
+            · exact h1 (hh.2 h2)
+        · rintro ⟨h2, h1⟩
+          exact ⟨fun h1' => absurd h1' (not_lt.2 h1), fun _ => absurd h2 ‹_›⟩) (hzT _) (hzT _)]
+      refine mul_le_mul_of_nonneg_left ?_ (hw e)
+      rw [abs_of_nonneg (sub_nonneg.2 h), add_comm]
+      exact cheegerG_sub_le h
+  have hX : ∀ τ, ∑ e ∈ cut end₁ end₂ (S τ), w e =
+      ∑ e, if e ∈ cut end₁ end₂ (S τ) then w e else 0 := fun τ => by
+    rw [Finset.sum_ite_mem, Finset.univ_inter]
+  simp only [S] at hX hEXe
+  simp only [hX, Finset.mul_sum]
+  rw [Finset.sum_comm]
+  exact Finset.sum_le_sum fun e _ => hEXe e
+
+/-- Cauchy–Schwarz for the sweep: `∑_e w_e |z(a) - z(b)| (|z(a)| + |z(b)|) ≤ √(2 zᵀLz / zᵀDz) zᵀDz`
+when `zᵀDz > 0` (Spielman, inequality (21.2)). -/
+private theorem cheeger_cauchy_schwarz (end₁ end₂ : E → V) {w : E → ℝ} (hw : 0 ≤ w) (z : V → ℝ)
+    (hz : 0 < ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2) :
+    ∑ e, w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) ≤
+      Real.sqrt (2 * (z ⬝ᵥ (laplacian end₁ end₂ w *ᵥ z)) /
+          ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2) *
+        ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2 := by
+  set Q := ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2
+  set Lz := z ⬝ᵥ (laplacian end₁ end₂ w *ᵥ z)
+  set P := ∑ e, w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|))
+  have h := Finset.sum_mul_sq_le_sq_mul_sq Finset.univ
+    (fun e => Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)|)
+    (fun e => Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|))
+  have hsq : ∀ e, Real.sqrt (w e) ^ 2 = w e := fun e => Real.sq_sqrt (hw e)
+  have hl : ∑ e, (Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)|) ^ 2 = Lz := by
+    simp only [Lz, dotProduct_mulVec_laplacian, mul_pow, hsq, sq_abs]
+  have hr : ∑ e, (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) ^ 2 ≤ 2 * Q := by
+    have hQ : Q = ∑ e, w e * (z (end₁ e) ^ 2 + z (end₂ e) ^ 2) :=
+      sum_mul_weightedDegree end₁ end₂ w (fun a => z a ^ 2)
+    rw [hQ, Finset.mul_sum]
+    refine Finset.sum_le_sum fun e _ => ?_
+    rw [mul_pow, hsq]
+    have : (|z (end₁ e)| + |z (end₂ e)|) ^ 2 ≤ 2 * (z (end₁ e) ^ 2 + z (end₂ e) ^ 2) := by
+      nlinarith [sq_nonneg (|z (end₁ e)| - |z (end₂ e)|), sq_abs (z (end₁ e)),
+        sq_abs (z (end₂ e))]
+    have := mul_le_mul_of_nonneg_left this (hw e)
+    linarith
+  have hP : ∑ e, Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)| *
+      (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) = P := by
+    refine Finset.sum_congr rfl fun e _ => ?_
+    rw [show Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)| *
+        (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) =
+        Real.sqrt (w e) ^ 2 * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) by
+      ring, hsq]
+  rw [hP, hl] at h
+  have hLz0 : 0 ≤ Lz := by
+    rw [← hl]; exact Finset.sum_nonneg fun e _ => sq_nonneg _
+  have hCS : P ^ 2 ≤ Lz * (2 * Q) := by nlinarith
+  have hcq : Real.sqrt (2 * Lz / Q) * Q = Real.sqrt (Lz * (2 * Q)) := by
+    rw [show Lz * (2 * Q) = (2 * Lz / Q) * Q ^ 2 by field_simp, Real.sqrt_mul' _ (sq_nonneg Q),
+      Real.sqrt_sq hz.le]
+  rw [hcq]
+  exact Real.le_sqrt_of_sq_le hCS
+
+/-- Averaging: if `∑ μ X ≤ c ∑ μ Y` with `μ, X, Y ≥ 0` and `∑ μ Y > 0`, some `τ` has `Y τ > 0`
+and `X τ ≤ c Y τ`. -/
+private theorem exists_le_mul_of_sum_le (T : Finset ℝ) (μ X Y : ℝ → ℝ) {c : ℝ}
+    (hμ : ∀ τ, 0 ≤ μ τ) (hX : ∀ τ, 0 ≤ X τ) (hY : ∀ τ, 0 ≤ Y τ)
+    (hsum : ∑ τ ∈ T, μ τ * X τ ≤ c * ∑ τ ∈ T, μ τ * Y τ) (hpos : 0 < ∑ τ ∈ T, μ τ * Y τ) :
+    ∃ τ, 0 < Y τ ∧ X τ ≤ c * Y τ := by
+  by_contra hcon
+  push Not at hcon
+  have hstrict : ∀ τ ∈ T, c * (μ τ * Y τ) ≤ μ τ * X τ := by
+    intro τ _
+    rcases (mul_nonneg (hμ τ) (hY τ)).eq_or_lt with h | h
+    · rw [← h, mul_zero]; exact mul_nonneg (hμ τ) (hX τ)
+    · have hYpos : 0 < Y τ := pos_of_mul_pos_right h (hμ τ)
+      have := hcon τ hYpos
+      have hμpos : 0 < μ τ := pos_of_mul_pos_left h (hY τ)
+      nlinarith
+  have hex : ∃ τ ∈ T, 0 < μ τ * Y τ := by
+    by_contra hne
+    push Not at hne
+    have : ∑ τ ∈ T, μ τ * Y τ ≤ 0 := Finset.sum_nonpos hne
+    linarith
+  obtain ⟨τ₀, hτ₀, hpos₀⟩ := hex
+  have hlt : ∑ τ ∈ T, c * (μ τ * Y τ) < ∑ τ ∈ T, μ τ * X τ := by
+    refine Finset.sum_lt_sum hstrict ⟨τ₀, hτ₀, ?_⟩
+    have hYpos : 0 < Y τ₀ := pos_of_mul_pos_right hpos₀ (hμ τ₀)
+    have hμpos : 0 < μ τ₀ := pos_of_mul_pos_left hpos₀ hYpos.le
+    have := hcon τ₀ hYpos
+    nlinarith
+  rw [← Finset.mul_sum] at hlt
+  linarith
+
 /-- **Cheeger's inequality, hard direction.** Let `w ≥ 0` be edge weights, `L` the Laplacian and
 `d` the weighted degrees. Let `z` be centered with respect to `d` (the vertices where `z > 0`, and
 those where `z < 0`, each have volume at most `d(V)/2`) with `zᵀDz = ∑_a d(a) z(a)² > 0`. Then
@@ -229,221 +466,15 @@ theorem exists_threshold_cut_le_sqrt (end₁ end₂ : E → V) {w : E → ℝ} (
             ∑ a, weightedDegree end₁ end₂ w a * z a ^ 2) *
           min (volume end₁ end₂ w (Finset.univ.filter fun a => z a < τ))
             (volume end₁ end₂ w (Finset.univ \ Finset.univ.filter fun a => z a < τ)) := by
-  classical
-  set d := weightedDegree end₁ end₂ w
-  set Q := ∑ a, d a * z a ^ 2
-  set Lz := z ⬝ᵥ (laplacian end₁ end₂ w *ᵥ z)
-  set S : ℝ → Finset V := fun τ => Finset.univ.filter fun a => z a < τ
-  set X : ℝ → ℝ := fun τ => ∑ e ∈ cut end₁ end₂ (S τ), w e
-  set Y : ℝ → ℝ := fun τ => min (volume end₁ end₂ w (S τ)) (volume end₁ end₂ w (Finset.univ \ S τ))
-  set T : Finset ℝ := insert 0 (Finset.univ.image z)
-  set μ := cheegerMu T
-  have hd0 : ∀ a, 0 ≤ d a := fun a =>
-    Finset.sum_nonneg fun e _ => mul_nonneg (hw e) (by split_ifs <;> norm_num)
+  have hmin := cheeger_min_volume_eq end₁ end₂ hw z hpos hneg
   have hvol0 : ∀ A : Finset V, 0 ≤ volume end₁ end₂ w A := fun A =>
-    Finset.sum_nonneg fun a _ => hd0 a
-  have hvsplit : ∀ A : Finset V, volume end₁ end₂ w A + volume end₁ end₂ w (Finset.univ \ A) =
-      volume end₁ end₂ w Finset.univ := fun A => by
-    simp only [volume]
-    rw [← Finset.sum_union Finset.disjoint_sdiff, Finset.union_sdiff_of_subset
-      (Finset.subset_univ A)]
-  have hvmono : ∀ A B : Finset V, A ⊆ B → volume end₁ end₂ w A ≤ volume end₁ end₂ w B :=
-    fun A B h => Finset.sum_le_sum_of_subset_of_nonneg h fun a _ _ => hd0 a
-  -- the minimum is the side away from zero
-  set Ylow : ℝ → ℝ := fun τ => ∑ a, d a *
-    (if (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a) then 1 else 0)
-  have hY : ∀ τ, Y τ = Ylow τ := by
-    intro τ
-    simp only [Y, Ylow]
-    by_cases hτ : τ ≤ 0
-    · have hsub : S τ ⊆ Finset.univ.filter fun a => z a < 0 := fun a ha => by
-        simp only [S, Finset.mem_filter, Finset.mem_univ, true_and] at ha ⊢; linarith
-      have h1 := hvmono _ _ hsub
-      have h2 := hvsplit (S τ)
-      rw [min_eq_left (by linarith)]
-      simp only [volume, S, Finset.sum_filter, mul_ite, mul_one, mul_zero]
-      refine Finset.sum_congr rfl fun a _ => ?_
-      by_cases ha : z a < τ
-      · simp [ha, hτ, d]
-      · simp [ha, hτ, d]
-    · push Not at hτ
-      have hsub : Finset.univ \ S τ ⊆ Finset.univ.filter fun a => 0 < z a := fun a ha => by
-        simp only [S, Finset.mem_sdiff, Finset.mem_filter, Finset.mem_univ, true_and] at ha ⊢
-        linarith
-      have h1 := hvmono _ _ hsub
-      have h2 := hvsplit (S τ)
-      rw [min_eq_right (by linarith)]
-      simp only [volume, S]
-      rw [show Finset.univ \ Finset.univ.filter (fun a => z a < τ) =
-          Finset.univ.filter (fun a => ¬ z a < τ) by ext; simp]
-      simp only [Finset.sum_filter, mul_ite, mul_one, mul_zero]
-      refine Finset.sum_congr rfl fun a _ => ?_
-      by_cases ha : z a < τ
-      · simp [ha, not_le.2 hτ, d]
-      · simp [ha, not_le.2 hτ, hτ, not_lt.1 ha, d]
-  have hzT : ∀ a, z a ∈ T := fun a => Finset.mem_insert_of_mem (Finset.mem_image_of_mem z
-    (Finset.mem_univ a))
-  have h0T : (0 : ℝ) ∈ T := Finset.mem_insert_self _ _
-  -- expected denominator
-  have hEY : ∑ τ ∈ T, μ τ * Ylow τ = Q := by
-    simp only [Ylow, Finset.mul_sum]
-    rw [Finset.sum_comm]
-    refine Finset.sum_congr rfl fun a _ => ?_
-    simp only [mul_ite, mul_one, mul_zero, mul_comm (μ _) (d a)]
-    rw [← Finset.sum_filter, ← Finset.mul_sum]
-    congr 1
-    rcases lt_or_ge (z a) 0 with ha | ha
-    · rw [show T.filter (fun τ => (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a)) =
-          T.filter (fun τ => z a < τ ∧ τ ≤ 0) by
-        ext τ; simp only [Finset.mem_filter]
-        constructor
-        · rintro ⟨h, h' | h'⟩
-          · exact ⟨h, h'.2, h'.1⟩
-          · exact absurd (h'.1.trans_le h'.2) (by linarith)
-        · rintro ⟨h, h'⟩; exact ⟨h, Or.inl ⟨h'.2, h'.1⟩⟩]
-      rw [cheegerMu_sum T (hzT a) h0T ha.le]
-      simp [cheegerG, abs_of_neg ha]; ring
-    · rw [show T.filter (fun τ => (τ ≤ 0 ∧ z a < τ) ∨ (0 < τ ∧ τ ≤ z a)) =
-          T.filter (fun τ => 0 < τ ∧ τ ≤ z a) by
-        ext τ; simp only [Finset.mem_filter]
-        constructor
-        · rintro ⟨h, h' | h'⟩
-          · exact absurd (h'.2.trans_le h'.1) (by linarith)
-          · exact ⟨h, h'⟩
-        · rintro ⟨h, h'⟩; exact ⟨h, Or.inr h'⟩]
-      rw [cheegerMu_sum T h0T (hzT a) ha]
-      simp [cheegerG, abs_of_nonneg ha]; ring
-  -- expected numerator
-  have hcutiff : ∀ τ e, e ∈ cut end₁ end₂ (S τ) ↔ (z (end₁ e) < τ ↔ ¬ z (end₂ e) < τ) := by
-    intro τ e
-    simp only [cut, S, Finset.mem_filter, Finset.mem_univ, true_and]
-    by_cases h1 : z (end₁ e) < τ <;> by_cases h2 : z (end₂ e) < τ <;> simp [h1, h2]
-  have hEXe : ∀ e, ∑ τ ∈ T, μ τ * (if e ∈ cut end₁ end₂ (S τ) then w e else 0) ≤
-      w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) := by
-    intro e
-    have key : ∀ x y, x ≤ y → (∀ τ, e ∈ cut end₁ end₂ (S τ) ↔ x < τ ∧ τ ≤ y) → x ∈ T → y ∈ T →
-        ∑ τ ∈ T, μ τ * (if e ∈ cut end₁ end₂ (S τ) then w e else 0) =
-          w e * (cheegerG y - cheegerG x) := by
-      intro x y hxy hiff hx hy
-      simp only [mul_ite, mul_zero]
-      rw [← Finset.sum_filter, Finset.filter_congr (fun τ _ => hiff τ), ← Finset.sum_mul,
-        cheegerMu_sum T hx hy hxy]
-      ring
-    rcases le_total (z (end₁ e)) (z (end₂ e)) with h | h
-    · rw [key _ _ h (fun τ => by
-        rw [hcutiff]
-        constructor
-        · intro hh
-          by_cases h1 : z (end₁ e) < τ
-          · exact ⟨h1, not_lt.1 (hh.1 h1)⟩
-          · exfalso
-            by_cases h2 : z (end₂ e) < τ
-            · exact h1 (lt_of_le_of_lt h h2)
-            · exact h1 (hh.2 h2)
-        · rintro ⟨h1, h2⟩
-          exact ⟨fun _ => not_lt.2 h2, fun _ => h1⟩) (hzT _) (hzT _)]
-      refine mul_le_mul_of_nonneg_left ?_ (hw e)
-      rw [abs_sub_comm, abs_of_nonneg (sub_nonneg.2 h)]
-      exact cheegerG_sub_le h
-    · rw [key _ _ h (fun τ => by
-        rw [hcutiff]
-        constructor
-        · intro hh
-          by_cases h2 : z (end₂ e) < τ
-          · refine ⟨h2, ?_⟩
-            by_contra h1
-            push Not at h1
-            exact (hh.1 h1) h2
-          · exfalso
-            by_cases h1 : z (end₁ e) < τ
-            · exact h2 (lt_of_le_of_lt h h1)
-            · exact h1 (hh.2 h2)
-        · rintro ⟨h2, h1⟩
-          exact ⟨fun h1' => absurd h1' (not_lt.2 h1), fun _ => absurd h2 ‹_›⟩) (hzT _) (hzT _)]
-      refine mul_le_mul_of_nonneg_left ?_ (hw e)
-      rw [abs_of_nonneg (sub_nonneg.2 h), add_comm]
-      exact cheegerG_sub_le h
-  have hEX : ∑ τ ∈ T, μ τ * X τ ≤
-      ∑ e, w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) := by
-    have hX : ∀ τ, X τ = ∑ e, if e ∈ cut end₁ end₂ (S τ) then w e else 0 := fun τ => by
-      simp only [X]; rw [Finset.sum_ite_mem, Finset.univ_inter]
-    simp only [hX, Finset.mul_sum]
-    rw [Finset.sum_comm]
-    exact Finset.sum_le_sum fun e _ => hEXe e
-  -- Cauchy–Schwarz
-  set P := ∑ e, w e * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|))
-  have hP0 : 0 ≤ P := Finset.sum_nonneg fun e _ => mul_nonneg (hw e) (by positivity)
-  have hCS : P ^ 2 ≤ Lz * (2 * Q) := by
-    have h := Finset.sum_mul_sq_le_sq_mul_sq Finset.univ
-      (fun e => Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)|)
-      (fun e => Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|))
-    have hsq : ∀ e, Real.sqrt (w e) ^ 2 = w e := fun e => Real.sq_sqrt (hw e)
-    have hl : ∑ e, (Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)|) ^ 2 = Lz := by
-      simp only [Lz, dotProduct_mulVec_laplacian, mul_pow, hsq, sq_abs]
-    have hr : ∑ e, (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) ^ 2 ≤ 2 * Q := by
-      have hQ : Q = ∑ e, w e * (z (end₁ e) ^ 2 + z (end₂ e) ^ 2) :=
-        sum_mul_weightedDegree end₁ end₂ w (fun a => z a ^ 2)
-      rw [hQ, Finset.mul_sum]
-      refine Finset.sum_le_sum fun e _ => ?_
-      rw [mul_pow, hsq]
-      have : (|z (end₁ e)| + |z (end₂ e)|) ^ 2 ≤ 2 * (z (end₁ e) ^ 2 + z (end₂ e) ^ 2) := by
-        nlinarith [sq_nonneg (|z (end₁ e)| - |z (end₂ e)|), sq_abs (z (end₁ e)),
-          sq_abs (z (end₂ e))]
-      have := mul_le_mul_of_nonneg_left this (hw e)
-      linarith
-    have hP : ∑ e, Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)| *
-        (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) = P := by
-      refine Finset.sum_congr rfl fun e _ => ?_
-      rw [show Real.sqrt (w e) * |z (end₁ e) - z (end₂ e)| *
-          (Real.sqrt (w e) * (|z (end₁ e)| + |z (end₂ e)|)) =
-          Real.sqrt (w e) ^ 2 * (|z (end₁ e) - z (end₂ e)| * (|z (end₁ e)| + |z (end₂ e)|)) by
-        ring, hsq]
-    rw [hP, hl] at h
-    have hLz0 : 0 ≤ Lz := by
-      rw [← hl]; exact Finset.sum_nonneg fun e _ => sq_nonneg _
-    nlinarith
-  set c := Real.sqrt (2 * Lz / Q)
-  have hc0 : 0 ≤ c := Real.sqrt_nonneg _
-  have hcQ : P ≤ c * Q := by
-    have hcq : c * Q = Real.sqrt (Lz * (2 * Q)) := by
-      rw [show Lz * (2 * Q) = (2 * Lz / Q) * Q ^ 2 by field_simp, Real.sqrt_mul' _ (sq_nonneg Q),
-        Real.sqrt_sq hz.le]
-    rw [hcq]
-    exact Real.le_sqrt_of_sq_le hCS
-  have hsum : ∑ τ ∈ T, μ τ * X τ ≤ ∑ τ ∈ T, c * (μ τ * Ylow τ) := by
-    rw [← Finset.mul_sum, hEY]; linarith
-  -- some threshold achieves the ratio
-  by_contra hcon
-  push Not at hcon
-  have hstrict : ∀ τ ∈ T, c * (μ τ * Ylow τ) ≤ μ τ * X τ := by
-    intro τ _
-    have hμ := cheegerMu_nonneg T τ
-    have hYl : 0 ≤ Ylow τ := by rw [← hY]; exact le_min (hvol0 _) (hvol0 _)
-    have hX0 : 0 ≤ X τ := Finset.sum_nonneg fun e _ => hw e
-    rcases (mul_nonneg hμ hYl).eq_or_lt with h | h
-    · rw [← h, mul_zero]; exact mul_nonneg hμ hX0
-    · have hYpos : 0 < Ylow τ := pos_of_mul_pos_right h hμ
-      have hc' := hcon τ
-      change 0 < Y τ → c * Y τ < X τ at hc'
-      rw [hY] at hc'
-      have := hc' hYpos
-      have hμpos : 0 < μ τ := pos_of_mul_pos_left h hYl
-      nlinarith
-  have hex : ∃ τ ∈ T, 0 < μ τ * Ylow τ := by
-    by_contra hne
-    push Not at hne
-    have : ∑ τ ∈ T, μ τ * Ylow τ ≤ 0 := Finset.sum_nonpos hne
-    linarith
-  obtain ⟨τ₀, hτ₀, hpos₀⟩ := hex
-  have hlt : ∑ τ ∈ T, c * (μ τ * Ylow τ) < ∑ τ ∈ T, μ τ * X τ := by
-    refine Finset.sum_lt_sum hstrict ⟨τ₀, hτ₀, ?_⟩
-    have hYpos : 0 < Ylow τ₀ := pos_of_mul_pos_right hpos₀ (cheegerMu_nonneg T τ₀)
-    have hμpos : 0 < μ τ₀ := pos_of_mul_pos_left hpos₀ hYpos.le
-    have hc' := hcon τ₀
-    change 0 < Y τ₀ → c * Y τ₀ < X τ₀ at hc'
-    rw [hY] at hc'
-    have := hc' hYpos
-    nlinarith
-  linarith
+    Finset.sum_nonneg fun a _ => weightedDegree_nonneg end₁ end₂ hw a
+  simp only [hmin]
+  refine exists_le_mul_of_sum_le (cheegerThresholds z) (cheegerMu (cheegerThresholds z)) _ _
+    (cheegerMu_nonneg _) (fun τ => Finset.sum_nonneg fun e _ => hw e)
+    (fun τ => by rw [← hmin]; exact le_min (hvol0 _) (hvol0 _)) ?_ ?_
+  · rw [cheeger_expected_volume]
+    exact (cheeger_expected_cut end₁ end₂ hw z).trans (cheeger_cauchy_schwarz end₁ end₂ hw z hz)
+  · rw [cheeger_expected_volume]; exact hz
 
 end EndpointMapMultigraph
