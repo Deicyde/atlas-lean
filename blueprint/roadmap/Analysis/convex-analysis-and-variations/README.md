@@ -1,6 +1,6 @@
 # Convex analysis and calculus of variations
 
-Convex functions and sets in analysis and optimization: first-order conditions for convexity and optimality, Lagrange duality (weak duality, Slater's condition and strong duality, sufficiency of the KKT conditions, the duality gap of the barrier method), Newton's method for minimization, ADMM, Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
+Convex functions and sets in analysis and optimization: first-order and second-order conditions for convexity and optimality, Lagrange duality (weak duality, Slater's condition and strong duality, sufficiency of the KKT conditions, the duality gap of the barrier method), Newton's method for minimization, ADMM, Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
 
 - [Alternating direction method of multipliers](alternating-direction-method-of-multipliers/README.md)
 - [Ekeland variational principle](ekeland-variational-principle/README.md)
@@ -14,6 +14,7 @@ Convex functions and sets in analysis and optimization: first-order conditions f
 - [Mountain pass theorem](mountain-pass-theorem/README.md)
 - [Newton's method for minimization](newton-s-method-for-minimization/README.md)
 - [Polar sets](polar-sets/README.md)
+- [Second-order condition for convexity](second-order-condition-for-convexity/README.md)
 - [Stampacchia's theorem](stampacchia-s-theorem/README.md)
 - [Tikhonov regularization](tikhonov-regularization/README.md)
 - [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
