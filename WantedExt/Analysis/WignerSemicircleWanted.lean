@@ -30,7 +30,8 @@ into a Batteries `theorem_wanted` (data/instance holes into
 `def_wanted`), replaced `EvalTools.Markers` with
 `Batteries.Util.ProofWanted`, inlined any `LeanEval` helper modules,
 and placed the declarations in the `MathlibExt.Analysis.WignerSemicircleWanted` namespace. Mathematical
-statements are unchanged. Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (Gaussian case). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
+statements are unchanged. ATLAS changes: the Wigner 1955 source note now says what that paper
+proves, and Tao's statement of this almost-sure form is cited. Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (convergence of the expected spectral distribution, for special classes of random real symmetric matrices). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
 -/
 module
 
@@ -50,10 +51,12 @@ For an iid family `X i j : Ω → ℝ` (`i ≤ j`) of mean-`0`, variance-`1`
 random variables, the empirical spectral measure of the rescaled
 real-symmetric matrix `W_n / √n` (with `W_n(i, j) = X (min i j) (max i j)`)
 converges weakly, almost surely as `n → ∞`, to the **semicircle measure**
-on `[−2, 2]` with density `√(4 − x²) / (2π)`. Wigner 1955 for the
-Gaussian case; Pastur 1972 extended it to all variances under finite
+on `[−2, 2]` with density `√(4 − x²) / (2π)`. Wigner 1955 proved
+convergence of the expected spectral distribution for special
+ensembles; Pastur 1972 extended it to all variances under finite
 second moments. §102 in Knill's *Some Fundamental Theorems in
 Mathematics*.
+Tao, *Topics in Random Matrix Theory*, Theorem 2.4.2, states this almost-sure form.
 
 Weak convergence is encoded against bounded continuous test functions:
 almost surely `∫ f dμ_n → ∫ f dμ_∞` for every bounded continuous `f`.
@@ -96,7 +99,7 @@ lemma wignerMatrix_isHermitian {Ω : Type*} (X : ℕ → ℕ → Ω → ℝ) (n 
 mean-`0`, variance-`1` real random variables, the empirical spectral
 measure of the rescaled real-symmetric matrix `W_n / √n` converges
 weakly, almost surely, to the semicircle measure on `[−2, 2]`. -/
-/-- Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (Gaussian case). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Via leanprover/lean-eval@38361be, problem `wigner_semicircle`. -/
+/-- Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (convergence of the expected spectral distribution, for special classes of random real symmetric matrices). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). This almost-sure form, for i.i.d. upper-triangular entries of mean 0 and variance 1, is T. Tao, *Topics in Random Matrix Theory*, AMS GSM 132 (2012), Theorem 2.4.2, which allows the diagonal entries a different law. Via leanprover/lean-eval@38361be, problem `wigner_semicircle`. -/
 public theorem_wanted wigner_semicircle
     {Ω : Type*} [MeasurableSpace Ω]
     (μ : Measure Ω) [IsProbabilityMeasure μ]
