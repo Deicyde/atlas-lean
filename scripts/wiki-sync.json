@@ -18247,6 +18247,7 @@
 "MathlibExt.Analysis.PathSignature.signature_self": "a43c93241c5b3444",
 "MathlibExt.Analysis.PathSignature.signature_singleton": "94bd72748c128067",
 "MathlibExt.Analysis.PathSignature.signature_swap": "6e5eea7a6f761c83",
+"MathlibExt.Analysis.PathSignature.sum_fin_succ_ofFn": "365b1a4ea6807243",
 "MathlibExt.Analysis.PathSignature.tendsto_signatureSeries": "5dee10ebc6a8ff5c",
 "MathlibExt.Analysis.PathSignature.tensorExp": "52445ad50ecc29a6",
 "MathlibExt.Analysis.PathSignature.tensorExp_smul": "d91f1b82a86fde0d",

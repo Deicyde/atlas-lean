@@ -60,15 +60,6 @@ noncomputable def signatureSeries [Fintype ι] (A : ι → E →L[ℝ] E) (v : �
   ∑ k ∈ Finset.range (n + 1), ∑ g : Fin k → ι,
     signature v s t (List.ofFn g) • wordOp A (List.ofFn g) y₀
 
-private theorem sum_fin_succ_ofFn [Fintype ι] {M : Type*} [AddCommMonoid M] (k : ℕ)
-    (F : List ι → M) :
-    ∑ g : Fin (k + 1) → ι, F (List.ofFn g) = ∑ i, ∑ g : Fin k → ι, F (List.ofFn g ++ [i]) := by
-  rw [← (Fin.snocEquiv (fun _ => ι)).sum_comp, Fintype.sum_prod_type]
-  refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun g _ => ?_
-  congr 1
-  rw [List.ofFn_succ']
-  simp [Fin.snocEquiv, Fin.snoc_castSucc, Fin.snoc_last]
-
 /-- **Picard recursion of the signature series.** For a path with continuous velocity, the
 truncated signature series satisfy the Picard recursion of the linear controlled equation
 `dy_t = ∑_i vⁱ(t) A_i y_t dt`: `y^{(0)} = y₀` and

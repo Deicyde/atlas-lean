@@ -95,15 +95,6 @@ theorem isMultiplicativeFunctional_signature (hv : ∀ i a b, IntervalIntegrable
   ⟨fun s _ t _ _ => signature_nil v s t, fun r _ s _ t _ _ _ w _ =>
     signature_chen hv r s t w⟩
 
-private theorem sum_fin_succ_ofFn' [Fintype ι] {M : Type*} [AddCommMonoid M] (k : ℕ)
-    (F : List ι → M) :
-    ∑ g : Fin (k + 1) → ι, F (List.ofFn g) = ∑ i, ∑ g : Fin k → ι, F (List.ofFn g ++ [i]) := by
-  rw [← (Fin.snocEquiv (fun _ => ι)).sum_comp, Fintype.sum_prod_type]
-  refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun g _ => ?_
-  congr 1
-  rw [List.ofFn_succ']
-  simp [Fin.snocEquiv, Fin.snoc_castSucc, Fin.snoc_last]
-
 /-- **Factorial decay of the signature.** For a path with continuous velocity over a finite
 alphabet and `s ≤ t`, the degree-`i` level of the signature is bounded by the length of the path:
 `‖Sⁱ_{s,t}‖₁ ≤ ω(s, t)^i / i!` with `ω(s, t) = ∫_s^t ∑_j |vʲ(u)| du` (T. Lyons, *Differential
@@ -122,7 +113,7 @@ theorem levelNorm_signature_le [Fintype ι] (hv : ∀ i, Continuous (v i)) {s t 
   | succ i ih =>
     set F : ℝ → ℝ := fun u => ∫ x in s..u, g x
     unfold levelNorm
-    rw [sum_fin_succ_ofFn' i (fun w => |signature v s t w|)]
+    rw [sum_fin_succ_ofFn i (fun w => |signature v s t w|)]
     simp_rw [signature_concat]
     have hFc : Continuous F := continuous_primitive (fun a b => hg.intervalIntegrable a b) s
     -- Bound each coordinate by the integral of absolute values.

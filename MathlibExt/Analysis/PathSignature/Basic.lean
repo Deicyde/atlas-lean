@@ -11,6 +11,7 @@ module
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 public import Mathlib.Data.Nat.Factorial.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Basic
+public import Mathlib.Algebra.BigOperators.Fin
 
 import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
@@ -152,6 +153,17 @@ theorem signature_replicate {i : ι} (hv : Continuous (v i)) (s t : ℝ) (k : �
       (((continuous_primitive (fun a b => hv.intervalIntegrable a b) s).pow k).div_const _).mul hv
     rw [intervalIntegral.integral_eq_sub_of_hasDerivAt hderiv (hcont.intervalIntegrable s t)]
     simp [F]
+
+/-- **Splitting a sum over words by the last letter.** A sum over the words of length `k + 1` is a
+sum over the last letter `i` and the words `w` of length `k`, of the term at `w i`. -/
+theorem sum_fin_succ_ofFn [Fintype ι] {M : Type*} [AddCommMonoid M] (k : ℕ)
+    (F : List ι → M) :
+    ∑ g : Fin (k + 1) → ι, F (List.ofFn g) = ∑ i, ∑ g : Fin k → ι, F (List.ofFn g ++ [i]) := by
+  rw [← (Fin.snocEquiv (fun _ => ι)).sum_comp, Fintype.sum_prod_type]
+  refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun g _ => ?_
+  congr 1
+  rw [List.ofFn_succ']
+  simp [Fin.snocEquiv, Fin.snoc_castSucc, Fin.snoc_last]
 
 /-- **Chen's identity.** For a path whose velocity is interval integrable on every interval, and
 all reals `a, b, c`, every iterated integral over `[a, c]` splits along `b`:
