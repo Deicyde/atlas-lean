@@ -10,8 +10,9 @@ G. Carlsson and F. Mémoli (*Characterization, stability and convergence of hier
 methods*, JMLR 11 (2010)) show that `u*` is the maximal subdominant ultrametric, that single
 linkage is functorial for distance non-increasing maps and stable under perturbation of the
 metric (Lemma 15, proved here; Gromov–Hausdorff stability, Prop. 26), and that it is the only
-hierarchical clustering method satisfying their three axioms (Thm. 18), in contrast with
-Kleinberg's impossibility theorem for flat clustering (their Thm. 1).
+hierarchical clustering method satisfying their three axioms (Thm. 18, proved here in both
+directions), in contrast with Kleinberg's impossibility theorem for flat clustering (their
+Thm. 1).
 
 - [`r`-equivalence (single-linkage clusters at scale `r`)](sl-equiv.md)
 - [Single-linkage clusters are nested](sl-equiv-mono.md)
@@ -25,6 +26,19 @@ Kleinberg's impossibility theorem for flat clustering (their Thm. 1).
 - [The dendrogram is the family of closed balls of `u*`](sl-equiv-iff-sl-dist-le.md)
 - [Perturbing the dissimilarity shifts the scale](sl-equiv-of-le-add.md)
 - [Stability of single linkage in the sup norm](abs-sl-dist-sub-le.md)
+- [Metric on a set, as a function](is-metric-fn.md)
+- [Ultrametric on a set, as a function](is-ultrametric-fn.md)
+- [Single linkage outputs an ultrametric](is-ultrametric-fn-sl-dist.md)
+- [Below the separation, clusters are singletons](eq-of-sl-equiv-of-lt.md)
+- [Single linkage never merges below the separation](le-sl-dist-of-sep.md)
+- [Candidate hierarchical clustering methods](hc-method.md)
+- [Hierarchical clustering method](is-hc-method.md)
+- [The two-point metric space](two-point-dist.md)
+- [Condition (I)](cm-condition-i.md)
+- [Condition (II), functoriality](cm-condition-ii.md)
+- [Condition (III)](cm-condition-iii.md)
+- [Single linkage satisfies the Carlsson–Mémoli axioms](sl-dist-axioms.md)
+- [Characterization of single linkage (Carlsson–Mémoli)](eq-sl-dist-of-axioms.md)
 
 ## Related topics
 

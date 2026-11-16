@@ -14,7 +14,9 @@ stability of persistence modules*, arXiv:1207.3674, Thm. 4.11), so small perturb
 data move the barcode by small amounts.
 
 The definitions, the symmetry of both notions and the triangle inequality for interleavings are
-proved; the decomposition, uniqueness and stability theorems are recorded as wanted statements.
+proved, as is the stability of zero-dimensional persistence (single-linkage clusters) under
+perturbation of the dissimilarity; the decomposition, uniqueness and stability theorems are
+recorded as wanted statements.
 
 - [Interval module](interval-module.md)
 - [Structure maps of an interval module](interval-module-map.md)
@@ -29,6 +31,8 @@ proved; the decomposition, uniqueness and stability theorems are recorded as wan
 - [Matchings are symmetric](is-matching-symm.md)
 - [Algebraic stability theorem](is-matching-of-interleaving.md)
 - [Converse stability for decomposable modules](interleaving-of-is-matching.md)
+- [The cluster functor (zero-dimensional persistence)](cluster-functor.md)
+- [Stability of zero-dimensional persistence](cluster-functor-interleaving.md)
 
 ## Related topics
 
