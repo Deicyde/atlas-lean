@@ -14,4 +14,4 @@ Each step costs two evaluations of $F$ and two prox steps. The $O(1/N)$ rate bea
 
 ## Sources
 
-- A. Nemirovski, *Prox-method with rate of convergence O(1/t) for variational inequalities with Lipschitz continuous monotone operators and smooth convex-concave saddle point problems*, SIAM J. Optim. 15(1) (2004), 229–251; author PDF at <https://www2.isye.gatech.edu/~nemirovs/SIOPT_042562-1.pdf>, Section 3, Theorem 3.2, efficiency estimate (3.9), with the step (3.2) and $\Theta = \Theta(z_0)$ of (2.13); the saddle-point form (3.10) is not formalized here.
+- A. Nemirovski, *Prox-method with rate of convergence O(1/t) for variational inequalities with Lipschitz continuous monotone operators and smooth convex-concave saddle point problems*, SIAM J. Optim. 15(1) (2004), 229–251; author PDF at <https://www2.isye.gatech.edu/~nemirovs/SIOPT_042562-1.pdf>, Section 3, Theorem 3.2, efficiency estimate (3.9), with the step (3.2) and $\Theta = \Theta(z_0)$ of (2.13); the saddle-point form (3.10) is [the saddle-point accuracy of mirror-prox](mirror-prox-saddle-le-sqrt-two.md).

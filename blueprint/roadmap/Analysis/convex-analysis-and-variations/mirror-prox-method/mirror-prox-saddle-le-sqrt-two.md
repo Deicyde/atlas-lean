@@ -6,7 +6,7 @@ $$
 f(\bar x_N, y) - f(x, \bar y_N) \le \frac{\sqrt{2}\,\Theta L}{\alpha N} \qquad \text{for all } x \in X,\ y \in Y .
 $$
 
-Taking the supremum over $y$ and the infimum over $x$, the saddle-point accuracy $\epsilon_f(\bar z_N) = \max_{y \in Y} f(\bar x_N, y) - \min_{x \in X} f(x, \bar y_N)$ is at most $\sqrt{2}\Theta L/(\alpha N)$. For a matrix game, the bilinear $x^T A y$ on $\Delta_p \times \Delta_q$ with the entropy-type setups of the source on both simplices, this gives $\epsilon_f(\bar z_N) \le O(1) \max_{i,j}|A_{ij}| \sqrt{\ln(p+1)\ln(q+1)}/N$ at the cost of four matrix-vector products per step.
+Taking the supremum over $y$ and the infimum over $x$, the gap $\sup_{y \in Y} f(\bar x_N, y) - \inf_{x \in X} f(x, \bar y_N)$ is at most $\sqrt{2}\Theta L/(\alpha N)$. The source's accuracy $\epsilon_f(\bar z_N)$, the sum of $\max_y f(\bar x_N, y) - \min_x \max_y f$ and $\max_y \min_x f - \min_x f(x, \bar y_N)$, is at most this gap, with equality when $\min_x \max_y f = \max_y \min_x f$, as for convex compact $X$ and $Y$. For a matrix game, the bilinear $x^T A y$ on $\Delta_p \times \Delta_q$ with the entropy-type setups of the source on both simplices, this gives $\epsilon_f(\bar z_N) \le O(1) \max_{i,j}|A_{ij}| \sqrt{\ln(p+1)\ln(q+1)}/N$ at the cost of four matrix-vector products per step.
 
 ## Sources
 

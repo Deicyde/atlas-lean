@@ -165,7 +165,7 @@ variational inequality satisfies `max_{u ∈ Z} F(u) (w̄_N - u) ≤ √2 Θ L /
 This is the efficiency estimate (3.9) of Theorem 3.2 in A. Nemirovski, *Prox-method with rate of
 convergence O(1/t) for variational inequalities with Lipschitz continuous monotone operators and
 smooth convex-concave saddle point problems*, SIAM J. Optim. 15 (2004), where `Θ = Θ(z_0)` and
-the step is (3.2); the saddle-point form (3.10) is not formalized here. -/
+the step is (3.2); the saddle-point form (3.10) is `mirror_prox_saddle_le_sqrt_two`. -/
 theorem mirror_prox_average_le_sqrt_two (ω : E → ℝ) (ω' : E → E →L[ℝ] ℝ) {α L Θ : ℝ}
     (hα : 0 < α) (hL : 0 < L) {Z : Set E}
     (hsc : ∀ x ∈ Z, ∀ u ∈ Z, α / 2 * ‖u - x‖ ^ 2 ≤ bregman ω ω' x u)

@@ -16,3 +16,4 @@ A trust-region method computes a trial step by minimising a model of the objecti
   approximation $B$ in the model.
 - [Newton's method for minimization](../../convex-analysis-and-variations/newton-s-method-for-minimization/README.md): the local method
   that trust-region steps reduce to when the radius is inactive and $B$ is the Hessian.
+- [Self-concordant functions and barriers](../../convex-analysis-and-variations/self-concordant-functions-and-barriers/README.md): the unit Dikin ellipsoid, a region shaped by the local Hessian norm in which a self-concordant function stays defined and is bounded by explicit models.

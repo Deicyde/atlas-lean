@@ -6,7 +6,7 @@ $$
 F(x) + DF(x)[h] + \rho(-r) \le F(x + h) \le F(x) + DF(x)[h] + \rho(r) .
 $$
 
-Here $D^kF(x)[h, \ldots, h]$ denotes the $k$-th derivative at $t = 0$ of the restriction $t \mapsto F(x + t h)$ of $F$ to the line through $x$ in direction $h$, and $|h|_x = (D^2F(x)[h, h])^{1/2}$ is the local norm defined by $F$ at $x$. These bounds replace the quadratic model of a function with Lipschitz Hessian, and give the affine-invariant analysis of the damped Newton method. The Lean statement is a `theorem_wanted`: its proof is deferred.
+Here $D^kF(x)[h, \ldots, h]$ denotes the $k$-th derivative at $t = 0$ of the restriction $t \mapsto F(x + t h)$ of $F$ to the line through $x$ in direction $h$, and $|h|_x = (D^2F(x)[h, h])^{1/2}$ is the local norm defined by $F$ at $x$. These bounds replace the quadratic model of a function with Lipschitz Hessian, and give the affine-invariant analysis of the damped Newton method. The source also notes that the lower bound holds for every $h$ with $x + h \in Q$, not only for $|h|_x < 1$; that extension is not part of this statement. The Lean statement is a `theorem_wanted`: its proof is deferred.
 
 ## Sources
 

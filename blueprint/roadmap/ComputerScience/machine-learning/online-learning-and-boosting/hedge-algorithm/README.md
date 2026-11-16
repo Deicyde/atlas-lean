@@ -40,4 +40,4 @@
 - [No-regret dynamics](../../../../GameTheory/noncooperative-games/no-regret-dynamics/README.md): when every player of a game runs a no-regret algorithm such as Hedge, play approaches the coarse correlated equilibria, and smoothness bounds the average social cost.
 - [Von Neumann's minimax theorem](../../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): Freund and Schapire's proof of the minimax theorem by multiplicative weights.
 - [Natural policy gradient](../../reinforcement-learning/natural-policy-gradient/README.md)
-- [Mirror descent](../../../../Analysis/convex-analysis-and-variations/mirror-descent/README.md): the Hedge update is the prox step of mirror descent with the entropy on the simplex, and its regret bound is the telescoped mirror descent bound in that setup.
+- [Mirror descent](../../../../Analysis/convex-analysis-and-variations/mirror-descent/README.md): the normalized Hedge update is the prox step of mirror descent with the entropy on the simplex. Hedge's regret bounds here are proved by the potential argument, not derived from the mirror descent bounds.

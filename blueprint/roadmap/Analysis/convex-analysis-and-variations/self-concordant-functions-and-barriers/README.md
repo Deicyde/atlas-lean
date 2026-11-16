@@ -15,3 +15,4 @@ Directional derivatives are written as derivatives of the restrictions $t \mapst
 
 - [Newton's method for minimization](../newton-s-method-for-minimization/README.md): the quadratic convergence phase under a Lipschitz Hessian in a fixed norm, which self-concordance makes affine-invariant.
 - [Lagrange duality](../lagrange-duality/README.md): the duality gap $m/t$ of the logarithmic barrier method.
+- [Trust-region methods](../../numerical-analysis/trust-region-methods/README.md): the unit Dikin ellipsoid $\{y : |y - x|_x < 1\}$ is a region shaped by the local norm in which a self-concordant function stays defined and is bounded by explicit models around $x$, the role a trust region plays for the quadratic model.

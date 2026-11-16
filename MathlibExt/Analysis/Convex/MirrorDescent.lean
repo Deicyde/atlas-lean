@@ -314,7 +314,9 @@ and `N ≥ 1` the weighted average `x̃_N = (∑_{t<N} γ_t)⁻¹ ∑_{t<N} γ_t
 This is inequality (2.39) of A. Nemirovski, A. Juditsky, G. Lan and A. Shapiro, *Robust
 stochastic approximation approach to stochastic programming*, SIAM J. Optim. 19 (2009),
 Section 2.3, which holds for every realization of the noise; taking expectations of it gives their
-efficiency estimates (2.41) and (2.44), which are not formalized here. -/
+efficiency estimate (2.44), which is
+`RobustStochasticApproximation.integral_robust_sa_average_sub_le` (with a bounded stochastic
+subgradient). -/
 theorem stochastic_mirror_descent_average_le (ω : E → ℝ) (ω' : E → E →L[ℝ] ℝ) {α : ℝ}
     (hα : 0 < α) {X Xo : Set E} (hXo : Xo ⊆ X)
     (hsc : ∀ x ∈ Xo, ∀ u ∈ X, α / 2 * ‖u - x‖ ^ 2 ≤ bregman ω ω' x u)

@@ -12,7 +12,7 @@ $$
 \big(\gamma c - \omega'(x) + \omega'(x^+)\big)(u - x^+) = 0 \qquad \text{whenever } \textstyle\sum_i u_i = 1 .
 $$
 
-Indeed $\log x^+_i = \log x_i - \gamma c_i - \log Z$, so the linear form is the constant $-\log Z$ times $\sum_i (u_i - x^+_i) = 0$. Mirror descent with the entropy on the simplex is therefore the multiplicative-weights (Hedge, exponentiated gradient) algorithm, and the [telescoped bound](mirror-descent-sum-le.md) gives its regret.
+Indeed $\log x^+_i = \log x_i - \gamma c_i - \log Z$, so the linear form is the constant $-\log Z$ times $\sum_i (u_i - x^+_i) = 0$. Mirror descent with the entropy on the simplex therefore runs the multiplicative-weights (Hedge, exponentiated gradient) update.
 
 ## Background
 
