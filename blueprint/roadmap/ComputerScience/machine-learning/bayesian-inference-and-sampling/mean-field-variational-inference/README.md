@@ -43,3 +43,4 @@
 ## Related topics
 
 - [Expectation–maximization algorithm](../expectation-maximization-algorithm/README.md): the evidence lower bound with the exact posterior, where it is tight.
+- [Exponential families](../../../../Probability/statistical-estimation/exponential-families/README.md): the ELBO for weights $\exp\langle\phi(x), \theta\rangle$ is the Gibbs variational objective, whose maximum over all distributions is the log-partition function $A(\theta)$ (Wainwright and Jordan); mean field maximizes it over product distributions only.
