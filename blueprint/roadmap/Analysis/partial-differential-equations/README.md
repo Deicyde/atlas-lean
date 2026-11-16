@@ -9,3 +9,4 @@ PDE existence, regularity and qualitative results: Cauchy–Kovalevskaya, heat a
 - [Pólya's conjecture on Laplacian eigenvalues](p-lya-s-conjecture-on-laplacian-eigenvalues/README.md)
 - [Radial symmetry of semilinear elliptic equations](radial-symmetry-of-semilinear-elliptic-equations/README.md)
 - [Singularity formation for the Euler equations](singularity-formation-for-the-euler-equations/README.md)
+- [Viscosity solutions of Hamilton–Jacobi equations](viscosity-solutions-of-hamilton-jacobi-equations/README.md)
