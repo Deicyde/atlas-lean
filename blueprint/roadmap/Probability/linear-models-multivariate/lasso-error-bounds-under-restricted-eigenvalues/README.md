@@ -25,6 +25,7 @@ constrained Lasso (Hastie, Tibshirani and Wainwright, *Statistical Learning with
 
 ## Related topics
 
+- [Exact recovery by basis pursuit](../exact-recovery-by-basis-pursuit/README.md)
 - [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
 - [Sub-exponential variables and Bernstein's inequality](../../concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/README.md)
 - [Gauss–Markov covariance minimality](../gauss-markov-covariance-minimality.md)

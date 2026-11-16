@@ -26151,6 +26151,8 @@
 "MathlibExt.Probability.StableDistribution.isStable_gaussianReal": "0d92d6425796b7e6",
 "MathlibExt.Probability.StableDistribution.not_isNondegenerate_dirac": "438d576a14b677bf",
 "MathlibExt.Probability.StableDistribution.not_isStable_gaussianReal_one": "2d01e7e4d4068485",
+"MathlibExt.Probability.Statistics.BasisPursuit.RestrictedNullspace": "97aebe3ef676117a",
+"MathlibExt.Probability.Statistics.BasisPursuit.basisPursuit_unique_iff_restrictedNullspace": "a0f4e79d269cb5d8",
 "MathlibExt.Probability.Statistics.Contiguity.IsContiguous": "efdd004a86faf885",
 "MathlibExt.Probability.Statistics.Contiguity.IsContiguous.tendsto_measure_abs_sub_ge": "fda224e42e49d80d",
 "MathlibExt.Probability.Statistics.Contiguity.gaussianReal_withDensity_exp": "2b932a7978589f60",
