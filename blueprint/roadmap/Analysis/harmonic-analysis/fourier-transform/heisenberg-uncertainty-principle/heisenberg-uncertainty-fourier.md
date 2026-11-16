@@ -1,4 +1,4 @@
-# Heisenberg's uncertainty principle
+# Heisenberg's uncertainty principle in Fourier form
 
 **Heisenberg's uncertainty principle** in Fourier form: with Mathlib's
 Fourier normalization, the Fourier second moment about zero is `∫ ξ² * ‖𝓕 f ξ‖²`, and

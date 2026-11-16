@@ -1,4 +1,4 @@
-# Heisenberg's uncertainty principle
+# Heisenberg's uncertainty principle about the mean position
 
 **Heisenberg's uncertainty principle** with the position factor centered: for
 `μ = (∫ y * ‖f y‖²) / (∫ ‖f x‖²)`, the position second moment about `μ` satisfies
