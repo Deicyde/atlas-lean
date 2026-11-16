@@ -6,3 +6,6 @@
 - [Linear functionals on doubly stochastic matrices are bounded below at a permutation](exists-perm-sum-le-of-mem-doubly-stochas.md)
 - [A pairing of eigenvalues bounds the trace of a product from below](exists-perm-sum-mul-eigenvalues-le-trace.md)
 - [A pairing of eigenvalues bounds the trace of a product from above](exists-perm-trace-mul-le-sum-mul-eigenva.md)
+- [A pairing of eigenvalues on the sorted indices](sum-mul-eigenvalues-eq-sum-eigenvalues.md)
+- [Von Neumann's trace inequality, sorted upper form](trace-mul-le-sum-eigenvalues-mul.md)
+- [Von Neumann's trace inequality, sorted lower form](sum-eigenvalues-mul-rev-le-trace-mul.md)
