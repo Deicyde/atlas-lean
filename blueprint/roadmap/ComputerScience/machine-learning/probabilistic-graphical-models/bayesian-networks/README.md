@@ -47,6 +47,13 @@
 - [The network of conditional tables of a law](cond-net.md)
 - [Markov laws factorize](exists-bayes-net-of-ordered-markov.md)
 - [The ordered Markov property is equivalent to factorization](ordered-markov-iff-exists-bayes-net.md)
+- [The global Markov property for a graph](global-markov-for.md)
+- [The local Markov property for a graph](local-markov-for.md)
+- [Parents separate a node from its other non-descendants](d-separated-local.md)
+- [Factorization implies the global Markov property](global-markov-for-of-factorizes.md)
+- [The global Markov property implies the local one](local-markov-for-of-global-markov-for.md)
+- [The local Markov property implies the ordered one](ordered-markov-of-local-markov-for.md)
+- [The directed Markov properties are equivalent](directed-markov-tfae.md)
 
 ## Related topics
 
