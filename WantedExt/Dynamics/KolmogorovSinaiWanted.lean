@@ -30,10 +30,11 @@ The central theorems of Sinai's entropy theory, stated with the definitions of
   `-∑ pᵢ log pᵢ` (Sarig, Proposition 4.6).
 * `ksEntropy_addCircle_rotation_eq_zero`: irrational rotations have entropy zero (Sarig,
   Proposition 4.7).
-* `ornstein_isomorphism`: Bernoulli schemes with equal entropy are isomorphic (Ornstein).
+* `ornstein_isomorphism`: Bernoulli schemes with equal entropy are isomorphic modulo null sets
+  (Ornstein).
 * `not_isomorphic_bernoulli_uniform_three_two`: the `(1/3, 1/3, 1/3)` and `(1/2, 1/2)` Bernoulli
-  schemes are not isomorphic (Sarig, Proposition 4.6). It follows from
-  `ksEntropy_bernoulliShift` and the proved invariance `ksEntropy_eq_of_isomorphic`.
+  schemes are not isomorphic modulo null sets (Sarig, Proposition 4.6). It follows from
+  `ksEntropy_bernoulliShift` and the proved invariance `ksEntropy_eq_of_isIsomorphicMod0`.
 
 The Bernoulli scheme on a finite alphabet `S` with probability vector `p` is the one-sided left
 shift `MathlibExt.Dynamics.Ergodic.BernoulliShift.shift` on `ℕ → S` with the product measure
@@ -88,15 +89,16 @@ theorem_wanted ksEntropy_bernoulliShift {S : Type*} [Fintype S] [MeasurableSpace
       ENNReal.ofReal (∑ s, Real.negMulLog (p {s}).toReal)
 
 /-- **Kolmogorov's non-isomorphism of Bernoulli schemes.** The `(1/3, 1/3, 1/3)` and the
-`(1/2, 1/2)` Bernoulli schemes are not measure-theoretically isomorphic: there is no
-measure-preserving measurable equivalence conjugating the two shifts, because their entropies
-are `log 3 ≠ log 2` (O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 4.6). -/
+`(1/2, 1/2)` Bernoulli schemes are not measure-theoretically isomorphic, even modulo null sets
+(`IsIsomorphicMod0`, the notion of O. Sarig, *Lecture Notes on Ergodic Theory*, Definition 1.3),
+because their entropies are `log 3 ≠ log 2` (Sarig, Proposition 4.6). Fixed and periodic points
+form null sets, so counting them proves nothing here: entropy is needed. -/
 theorem_wanted not_isomorphic_bernoulli_uniform_three_two :
-    ¬ ∃ e : (ℕ → Fin 3) ≃ᵐ (ℕ → Fin 2),
-      MeasurePreserving e
-        (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 3)))
-        (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 2))) ∧
-      Function.Semiconj e (shift : (ℕ → Fin 3) → ℕ → Fin 3) (shift : (ℕ → Fin 2) → ℕ → Fin 2)
+    ¬ IsIsomorphicMod0
+      (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 3)))
+      (shift : (ℕ → Fin 3) → ℕ → Fin 3)
+      (Measure.infinitePi fun _ : ℕ => ProbabilityTheory.uniformOn (Set.univ : Set (Fin 2)))
+      (shift : (ℕ → Fin 2) → ℕ → Fin 2)
 
 /-- **The irrational rotation has entropy zero.** For irrational `α`, the rotation
 `x ↦ x + α` of the circle `ℝ / ℤ` has Kolmogorov–Sinai entropy `0` with respect to the Haar
@@ -105,21 +107,21 @@ theorem_wanted ksEntropy_addCircle_rotation_eq_zero {α : ℝ} (hα : Irrational
     ksEntropy (volume : Measure (AddCircle (1 : ℝ))) (fun x => x + (α : AddCircle (1 : ℝ))) = 0
 
 /-- **Ornstein's isomorphism theorem.** Two invertible Bernoulli schemes with the same
-Kolmogorov–Sinai entropy are measure-theoretically isomorphic: if the two-sided shifts on
-`ℤ → S` and `ℤ → S'` with product measures `p^ℤ` and `q^ℤ` have equal entropy, some
-measure-preserving measurable equivalence conjugates them. With `ksEntropy_eq_of_isomorphic`,
-entropy is a complete invariant of Bernoulli schemes ("Two Bernoulli schemes are measure
-theoretically isomorphic iff their metric entropies are equal", O. Sarig, *Lecture Notes on
-Ergodic Theory*, introduction to Chapter 4 and its closing notes; D. Ornstein, 1970). The
-schemes are two-sided: for one-sided shifts equal entropy does not suffice. -/
+Kolmogorov–Sinai entropy are measure-theoretically isomorphic modulo null sets: if the two-sided
+shifts on `ℤ → S` and `ℤ → S'` with product measures `p^ℤ` and `q^ℤ` have equal entropy, they
+are `IsIsomorphicMod0` (isomorphism as in O. Sarig, *Lecture Notes on Ergodic Theory*,
+Definition 1.3). With `ksEntropy_eq_of_isIsomorphicMod0`, entropy is a complete invariant of
+Bernoulli schemes ("Two Bernoulli schemes are measure theoretically isomorphic iff their metric
+entropies are equal", Sarig, introduction to Chapter 4 and its closing notes; D. Ornstein, 1970).
+The isomorphism cannot in general be an everywhere conjugacy: the uniform scheme on 4 letters and
+`(1/2, 1/8, 1/8, 1/8, 1/8)` have equal entropy but different numbers of fixed points. The schemes
+are two-sided: for one-sided shifts equal entropy does not suffice. -/
 theorem_wanted ornstein_isomorphism {S S' : Type*} [Fintype S] [MeasurableSpace S]
     [MeasurableSingletonClass S] [Fintype S'] [MeasurableSpace S'] [MeasurableSingletonClass S']
     (p : Measure S) [IsProbabilityMeasure p] (q : Measure S') [IsProbabilityMeasure q]
     (h : ksEntropy (Measure.infinitePi fun _ : ℤ => p) (twoSidedShift : (ℤ → S) → ℤ → S) =
       ksEntropy (Measure.infinitePi fun _ : ℤ => q) (twoSidedShift : (ℤ → S') → ℤ → S')) :
-    ∃ e : (ℤ → S) ≃ᵐ (ℤ → S'),
-      MeasurePreserving e (Measure.infinitePi fun _ : ℤ => p)
-        (Measure.infinitePi fun _ : ℤ => q) ∧
-      Function.Semiconj e (twoSidedShift : (ℤ → S) → ℤ → S) (twoSidedShift : (ℤ → S') → ℤ → S')
+    IsIsomorphicMod0 (Measure.infinitePi fun _ : ℤ => p) (twoSidedShift : (ℤ → S) → ℤ → S)
+      (Measure.infinitePi fun _ : ℤ => q) (twoSidedShift : (ℤ → S') → ℤ → S')
 
 end MathlibExt.Dynamics.KolmogorovSinaiWanted

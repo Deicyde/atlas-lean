@@ -28,11 +28,15 @@ theorem); this module records the dynamical route.
 
 ## References
 
-* L. B. Koralov and Ya. G. Sinai, *Theory of Probability and Random Processes*, 2nd ed.,
-  Springer (2007), Chapter 16 (§16.1, stationary processes and measure-preserving
-  transformations; §16.2, the Birkhoff ergodic theorem; §16.3, ergodicity and mixing).
+* S. Lalley, *Birkhoff's ergodic theorem*, lecture notes for Statistics 381, University of
+  Chicago, https://galton.uchicago.edu/~lalley/Courses/381/Birkhoff.pdf, introduction: the
+  ergodic theorems of Birkhoff and Kingman "extend the validity of the strong law to stationary
+  sequences".
 * O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 1.7 (Bernoulli schemes are mixing,
   whence ergodic).
+* The point of view is that of L. B. Koralov and Ya. G. Sinai, *Theory of Probability and Random
+  Processes*, 2nd ed., Springer (2007), Chapter 16 (stationary processes, the Birkhoff ergodic
+  theorem, ergodicity and mixing), cited from its table of contents.
 -/
 
 @[expose] public section
@@ -57,8 +61,9 @@ theorem birkhoffAverage_shift_eval_zero (g : S → ℝ) (n : ℕ) (x : ℕ → S
 space and `g : S → ℝ` be `p`-integrable. For `p^ℕ`-almost every sequence `x = (x 0, x 1, …)`,
 the empirical means `(1/n) ∑_{k<n} g (x k)` converge to `∫ g dp`. The proof applies the Birkhoff
 pointwise ergodic theorem to `g ∘ (x ↦ x 0)` and the Bernoulli shift, which is ergodic because
-it is mixing (L. B. Koralov and Ya. G. Sinai, *Theory of Probability and Random Processes*,
-2nd ed., Chapter 16; O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 1.7). -/
+it is mixing (O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 1.7). That the ergodic
+theorem extends the strong law to stationary sequences is the remark opening S. Lalley's notes
+*Birkhoff's ergodic theorem* (University of Chicago, Statistics 381). -/
 theorem tendsto_average_coordinates_ae (p : Measure S) [IsProbabilityMeasure p] {g : S → ℝ}
     (hg : Integrable g p) :
     ∀ᵐ x ∂(Measure.infinitePi fun _ : ℕ => p),

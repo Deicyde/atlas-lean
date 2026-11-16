@@ -34,8 +34,10 @@ empty atoms contribute `negMulLog 0 = 0`. The entropy takes values in `ℝ≥0�
 * `ksEntropy`: the Kolmogorov–Sinai entropy (Ya. G. Sinai, *Kolmogorov–Sinai entropy*,
   Scholarpedia 4(3):2034, Definition 1).
 * `ksEntropy_le_of_factor`: a factor has at most the entropy of the system.
-* `ksEntropy_eq_of_isomorphic`: Kolmogorov–Sinai entropy is an invariant of measure-theoretic
-  isomorphism.
+* `ksEntropy_eq_of_isomorphic`: invariance under conjugacy by a measure-preserving measurable
+  equivalence.
+* `IsIsomorphicMod0`, `ksEntropy_eq_of_isIsomorphicMod0`: Kolmogorov–Sinai entropy is an
+  invariant of measure-theoretic isomorphism modulo null sets.
 * `ksEntropy_id`: the identity has zero entropy.
 
 ## References
@@ -175,10 +177,11 @@ theorem ksEntropy_le_of_factor {μ : Measure α} {ν : Measure β} {T : α → �
   rw [← entropyRel_preimage hπ hS hconj hη.measurableSet]
   exact entropyRel_le_ksEntropy T (hη.preimage hπ)
 
-/-- **Entropy is an isomorphism invariant.** If a measure-preserving measurable equivalence
-`e : α ≃ᵐ β` conjugates `T` to `S` (`e ∘ T = S ∘ e`), then `h_μ(T) = h_ν(S)`. "It is clear from
-the definition that this entropy is a metric invariant of dynamical system" (Ya. G. Sinai,
-*Kolmogorov–Sinai entropy*, Scholarpedia 4(3):2034, after Definition 1). -/
+/-- **Entropy is invariant under conjugacy by a measure-preserving measurable equivalence.** If
+a measure-preserving measurable equivalence `e : α ≃ᵐ β` conjugates `T` to `S` everywhere
+(`e ∘ T = S ∘ e`), then `h_μ(T) = h_ν(S)`. This everywhere version needs no measure preservation
+of `T` or `S`; measure-theoretic isomorphism modulo null sets, the notion in Sinai's remark that
+entropy is a metric invariant, is `ksEntropy_eq_of_isIsomorphicMod0`. -/
 theorem ksEntropy_eq_of_isomorphic {μ : Measure α} {ν : Measure β} {T : α → α} {S : β → β}
     (e : α ≃ᵐ β) (he : MeasurePreserving e μ ν) (hT : Measurable T) (hS : Measurable S)
     (hconj : Function.Semiconj e T S) : ksEntropy μ T = ksEntropy ν S := by
@@ -187,6 +190,100 @@ theorem ksEntropy_eq_of_isomorphic {μ : Measure α} {ν : Measure β} {T : α �
     apply e.injective
     rw [hconj (e.symm y), e.apply_symm_apply, e.apply_symm_apply]
   exact ksEntropy_le_of_factor (he.symm e) hT hconj'
+
+/-- **Isomorphism modulo null sets.** Two dynamical systems `(α, μ, T)` and `(β, ν, S)` are
+isomorphic modulo null sets if there are measure-preserving maps `π : α → β` and `ρ : β → α`
+that are inverse to each other almost everywhere (`ρ ∘ π = id` `μ`-a.e., `π ∘ ρ = id` `ν`-a.e.)
+and intertwine the dynamics almost everywhere (`π ∘ T = S ∘ π` `μ`-a.e.,
+`ρ ∘ S = T ∘ ρ` `ν`-a.e.). This encodes measure-theoretic isomorphism (O. Sarig, *Lecture Notes
+on Ergodic Theory*, Definition 1.3: a measure-preserving bijection between invariant sets of
+full measure that intertwines the maps) by maps defined almost everywhere: on nonempty spaces an
+isomorphism in Sarig's sense, extended by a constant off its domain, gives such `π` and `ρ`.
+Fixed points and other null sets play no role, unlike for an everywhere conjugacy. -/
+def IsIsomorphicMod0 (μ : Measure α) (T : α → α) (ν : Measure β) (S : β → β) : Prop :=
+  ∃ (π : α → β) (ρ : β → α), MeasurePreserving π μ ν ∧ MeasurePreserving ρ ν μ ∧
+    ρ ∘ π =ᵐ[μ] id ∧ π ∘ ρ =ᵐ[ν] id ∧ π ∘ T =ᵐ[μ] S ∘ π ∧ ρ ∘ S =ᵐ[ν] T ∘ ρ
+
+/-- **A conjugacy by a measure-preserving measurable equivalence is an isomorphism modulo null
+sets.** -/
+theorem isIsomorphicMod0_of_measurableEquiv {μ : Measure α} {ν : Measure β} {T : α → α}
+    {S : β → β} (e : α ≃ᵐ β) (he : MeasurePreserving e μ ν) (hconj : Function.Semiconj e T S) :
+    IsIsomorphicMod0 μ T ν S := by
+  have hconj' : Function.Semiconj e.symm S T := fun y => by
+    apply e.injective
+    rw [hconj (e.symm y), e.apply_symm_apply, e.apply_symm_apply]
+  refine ⟨e, e.symm, he, he.symm e, ?_, ?_, ?_, ?_⟩
+  · exact Filter.Eventually.of_forall fun x => e.symm_apply_apply x
+  · exact Filter.Eventually.of_forall fun y => e.apply_symm_apply y
+  · exact Filter.Eventually.of_forall fun x => hconj x
+  · exact Filter.Eventually.of_forall fun y => hconj' y
+
+omit [MeasurableSpace β] in
+/-- **Almost-everywhere semiconjugacy passes to iterates.** If `T` is quasi-measure-preserving
+and `π ∘ T = S ∘ π` almost everywhere, then `π ∘ T^[k] = S^[k] ∘ π` almost everywhere. -/
+theorem iterate_comp_ae_eq {μ : Measure α} {T : α → α} {S : β → β} {π : α → β}
+    (hT : QuasiMeasurePreserving T μ μ) (hπ : π ∘ T =ᵐ[μ] S ∘ π) (k : ℕ) :
+    π ∘ T^[k] =ᵐ[μ] S^[k] ∘ π := by
+  induction k with
+  | zero => exact Filter.EventuallyEq.rfl
+  | succ k ih =>
+    have h1 : (π ∘ T^[k]) ∘ T =ᵐ[μ] (S^[k] ∘ π) ∘ T := hT.ae_eq_comp ih
+    filter_upwards [h1, hπ] with x hx1 hx2
+    simp only [Function.comp_apply] at hx1 hx2 ⊢
+    rw [Function.iterate_succ_apply, hx1, hx2, ← Function.iterate_succ_apply]
+
+omit [MeasurableSpace β] in
+/-- **Dynamical refinement commutes with pullback, almost everywhere.** If `T` is
+quasi-measure-preserving and `π ∘ T = S ∘ π` almost everywhere, then each atom of the
+refinement of `π⁻¹η` under `T` agrees almost everywhere with the preimage under `π` of the
+corresponding atom of the refinement of `η` under `S`. -/
+theorem iterateJoin_preimage_ae_eq {μ : Measure α} {T : α → α} {S : β → β} {π : α → β}
+    (hT : QuasiMeasurePreserving T μ μ) (hπ : π ∘ T =ᵐ[μ] S ∘ π) {ι : Type*}
+    (η : ι → Set β) (n : ℕ) (w : Fin n → ι) :
+    iterateJoin T (fun i => π ⁻¹' η i) n w =ᵐ[μ] π ⁻¹' iterateJoin S η n w := by
+  have h : ∀ᵐ x ∂μ, ∀ k : Fin n, π (T^[(k : ℕ)] x) = S^[(k : ℕ)] (π x) :=
+    ae_all_iff.2 fun k => (iterate_comp_ae_eq hT hπ k).mono fun x hx => hx
+  filter_upwards [h] with x hx
+  apply propext
+  simp only [iterateJoin, Set.mem_iInter, Set.mem_preimage, hx]
+
+/-- **Relative entropy of a pulled-back partition under an a.e. factor map.** If
+`π : (α, μ) → (β, ν)` is measure-preserving, `T` is quasi-measure-preserving, `S` is measurable
+and `π ∘ T = S ∘ π` almost everywhere, then `h_μ(T, π⁻¹η) = h_ν(S, η)` for every finite
+measurable partition `η` of `β`. -/
+theorem entropyRel_preimage_of_ae {μ : Measure α} {ν : Measure β} {T : α → α} {S : β → β}
+    {π : α → β} (hπ : MeasurePreserving π μ ν) (hT : QuasiMeasurePreserving T μ μ)
+    (hS : Measurable S) (hconj : π ∘ T =ᵐ[μ] S ∘ π) {ι : Type*} [Fintype ι] {η : ι → Set β}
+    (hη : ∀ i, MeasurableSet (η i)) :
+    entropyRel μ T (fun i => π ⁻¹' η i) = entropyRel ν S η := by
+  have h : ∀ (n : ℕ) (w : Fin n → ι),
+      μ (iterateJoin T (fun i => π ⁻¹' η i) n w) = ν (iterateJoin S η n w) := fun n w => by
+    rw [measure_congr (iterateJoin_preimage_ae_eq hT hconj η n w),
+      hπ.measure_preimage (measurableSet_iterateJoin hS hη n w).nullMeasurableSet]
+  simp only [entropyRel, partitionEntropy, h]
+
+/-- **Entropy does not increase under factors (almost-everywhere form).** If
+`π : (α, μ) → (β, ν)` is measure-preserving, `T` is quasi-measure-preserving, `S` is
+measurable and `π ∘ T = S ∘ π` almost everywhere, then `h_ν(S) ≤ h_μ(T)`. -/
+theorem ksEntropy_le_of_factor_ae {μ : Measure α} {ν : Measure β} {T : α → α} {S : β → β}
+    {π : α → β} (hπ : MeasurePreserving π μ ν) (hT : QuasiMeasurePreserving T μ μ)
+    (hS : Measurable S) (hconj : π ∘ T =ᵐ[μ] S ∘ π) : ksEntropy ν S ≤ ksEntropy μ T := by
+  refine iSup_le fun r => iSup_le fun η => iSup_le fun hη => ?_
+  rw [← entropyRel_preimage_of_ae hπ hT hS hconj hη.measurableSet]
+  exact entropyRel_le_ksEntropy T (hη.preimage hπ)
+
+/-- **Entropy is an invariant of isomorphism modulo null sets.** If two measure-preserving
+systems `(α, μ, T)` and `(β, ν, S)` are isomorphic modulo null sets (`IsIsomorphicMod0`), then
+`h_μ(T) = h_ν(S)`: "It is clear from the definition that this entropy is a metric invariant of
+dynamical system" (Ya. G. Sinai, *Kolmogorov–Sinai entropy*, Scholarpedia 4(3):2034, after
+Definition 1), with isomorphism as in O. Sarig, *Lecture Notes on Ergodic Theory*,
+Definition 1.3. -/
+theorem ksEntropy_eq_of_isIsomorphicMod0 {μ : Measure α} {ν : Measure β} {T : α → α}
+    {S : β → β} (hT : MeasurePreserving T μ μ) (hS : MeasurePreserving S ν ν)
+    (h : IsIsomorphicMod0 μ T ν S) : ksEntropy μ T = ksEntropy ν S := by
+  obtain ⟨π, ρ, hπ, hρ, -, -, hπT, hρS⟩ := h
+  exact le_antisymm (ksEntropy_le_of_factor_ae hρ hS.quasiMeasurePreserving hT.measurable hρS)
+    (ksEntropy_le_of_factor_ae hπ hT.quasiMeasurePreserving hS.measurable hπT)
 
 /-- **Refinements under the identity.** For the identity map and `n ≥ 1`, the dynamical
 refinement `ξ ∨ ξ ∨ ⋯ ∨ ξ` of a measurable partition has the same entropy as `ξ`: the atom of

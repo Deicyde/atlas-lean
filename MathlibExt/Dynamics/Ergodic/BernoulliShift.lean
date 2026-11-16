@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Dynamics.Ergodic.Mixing
+public import Mathlib.Dynamics.SymbolicDynamics.Basic
 public import Mathlib.Probability.ProductMeasure
 public import Mathlib.MeasureTheory.Constructions.Cylinders
 import Mathlib.Probability.Independence.InfinitePi
@@ -31,6 +32,7 @@ product σ-algebra.
 
 ## Main results
 
+* `shift`, `twoSidedShift`: Mathlib's full shift by `1` on `ℕ → S` and on `ℤ → S`.
 * `measurePreserving_shift`: the shift preserves `p^ℕ`.
 * `measure_cylinder_inter_preimage_iterate`: exact independence of a cylinder and `σ⁻ⁿ B` for
   large `n`.
@@ -55,12 +57,19 @@ open scoped ENNReal symmDiff
 variable {S : Type*} [MeasurableSpace S]
 
 /-- **The one-sided left shift.** `shift x = (x 1, x 2, x 3, …)` for a sequence
-`x = (x 0, x 1, x 2, …)` in `ℕ → S`. -/
-def shift (x : ℕ → S) : ℕ → S := fun n => x (n + 1)
+`x = (x 0, x 1, x 2, …)` in `ℕ → S`. It is Mathlib's full shift by `1` on configurations
+indexed by `ℕ`, `SymbolicDynamics.FullShift.shift 1`, under a short name. -/
+def shift : (ℕ → S) → ℕ → S := SymbolicDynamics.FullShift.shift (1 : ℕ)
 
-/-- **The two-sided left shift.** `twoSidedShift x = (n ↦ x (n + 1))` on bi-infinite sequences
-`x : ℤ → S`; it is invertible, the setting of invertible Bernoulli schemes. -/
-def twoSidedShift (x : ℤ → S) : ℤ → S := fun n => x (n + 1)
+/-- **The two-sided left shift.** `twoSidedShift x = (n ↦ x (1 + n))` on bi-infinite sequences
+`x : ℤ → S`, Mathlib's full shift by `1` on configurations indexed by `ℤ`; it is invertible, the
+setting of invertible Bernoulli schemes. -/
+def twoSidedShift : (ℤ → S) → ℤ → S := SymbolicDynamics.FullShift.shift (1 : ℤ)
+
+omit [MeasurableSpace S] in
+/-- **The shift reads the next symbol.** `shift x n = x (n + 1)`. -/
+theorem shift_apply (x : ℕ → S) (n : ℕ) : shift x n = x (n + 1) := by
+  simp only [shift, SymbolicDynamics.FullShift.shift_apply, Nat.add_comm]
 
 omit [MeasurableSpace S] in
 /-- **Iterates of the shift.** `(shift^[n] x) k = x (k + n)`. -/
@@ -68,12 +77,12 @@ theorem shift_iterate_apply (n : ℕ) (x : ℕ → S) (k : ℕ) : shift^[n] x k 
   induction n generalizing x with
   | zero => rfl
   | succ n ih =>
-    rw [Function.iterate_succ_apply, ih]
-    simp only [shift, Nat.add_assoc]
+    rw [Function.iterate_succ_apply, ih, shift_apply]
+    congr 1
 
 /-- **The shift is measurable** for the product σ-algebra. -/
 theorem measurable_shift : Measurable (shift (S := S)) :=
-  Measurable.of_eval fun n => measurable_pi_apply (n + 1)
+  Measurable.of_eval fun n => measurable_pi_apply (1 + n)
 
 /-- **The shift preserves the product measure** `p^ℕ` (Sarig, *Lecture Notes on Ergodic
 Theory*, §1.5.3). -/
@@ -81,7 +90,8 @@ theorem measurePreserving_shift (p : Measure S) [IsProbabilityMeasure p] :
     MeasurePreserving shift (Measure.infinitePi fun _ : ℕ => p)
       (Measure.infinitePi fun _ : ℕ => p) :=
   ⟨measurable_shift,
-    Measure.map_infinitePi_infinitePi_of_inj (P := fun _ : ℕ => p) Nat.succ_injective⟩
+    Measure.map_infinitePi_infinitePi_of_inj (P := fun _ : ℕ => p) (f := fun i => 1 + i)
+      (add_right_injective 1)⟩
 
 /-- **A cylinder event is independent of the far future.** If the cylinder `cylinder s T` only
 constrains coordinates `< n`, then for every measurable `B`,

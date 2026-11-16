@@ -9,7 +9,7 @@ A partition $\xi = \{C_1, \dots, C_r\}$ turns every point $x$ into the sequence 
 $w_k(x) = j$ if $T^k x \in C_j$, a stationary random process when $\mu$ is an invariant probability;
 $h_\mu(T, \xi)$ is the entropy per symbol of that process and $h_\mu(T)$ the largest such rate. Kolmogorov
 introduced an entropy for a restricted class of systems; the definition over all finite partitions is
-Sinai's (1959). It is [an isomorphism invariant](ks-entropy-eq-of-isomorphic.md), it is computed by
+Sinai's (1959). It is [an invariant of isomorphism modulo null sets](ks-entropy-eq-of-is-isomorphic-mod0.md), it is computed by
 [Sinai's generator theorem](ks-entropy-eq-entropy-rel-of-is-generato.md), and for the Bernoulli shift
 with probability vector $p$ it equals [$-\sum_i p_i \log p_i$](ks-entropy-bernoulli-shift.md).
 

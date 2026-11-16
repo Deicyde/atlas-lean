@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.Dynamics.Ergodic.KolmogorovSinaiEntropy
 
+import Mathlib.MeasureTheory.Measure.Dirac.Basic
 import Mathlib.Tactic
 
 @[expose] public section
@@ -53,5 +54,31 @@ example {α : Type*} [MeasurableSpace α] (μ : Measure α) [IsProbabilityMeasur
     partitionEntropy μ (iterateJoin id (fun _ : Fin 1 => (Set.univ : Set α)) 5) = 0 := by
   rw [partitionEntropy_iterateJoin_id (isMeasurablePartition_univ μ) (by norm_num)]
   simp [partitionEntropy]
+
+/-- Isomorphism modulo null sets ignores null sets: a Dirac mass on `Bool` and on `Unit`, with
+the identity maps, are isomorphic although `Bool` and `Unit` have different cardinalities. -/
+theorem isIsomorphicMod0_dirac_bool_unit :
+    IsIsomorphicMod0 (Measure.dirac true) (id : Bool → Bool)
+      (Measure.dirac ()) (id : Unit → Unit) := by
+  refine ⟨fun _ => (), fun _ => true, ⟨measurable_const, by simp⟩,
+    ⟨measurable_const, by simp⟩,
+    ?_, ?_, ?_, ?_⟩
+  · change ∀ᵐ x ∂Measure.dirac true, true = x
+    rw [ae_dirac_eq, Filter.eventually_pure]
+  · exact Filter.Eventually.of_forall fun _ => rfl
+  · exact Filter.Eventually.of_forall fun _ => rfl
+  · exact Filter.Eventually.of_forall fun _ => rfl
+
+-- Hence both systems have the same entropy (zero, as identities).
+example : ksEntropy (Measure.dirac true) (id : Bool → Bool) =
+    ksEntropy (Measure.dirac ()) (id : Unit → Unit) :=
+  ksEntropy_eq_of_isIsomorphicMod0 (MeasurePreserving.id _) (MeasurePreserving.id _)
+    isIsomorphicMod0_dirac_bool_unit
+
+-- An everywhere conjugacy by a measure-preserving equivalence is an isomorphism modulo null sets.
+example {α β : Type*} [MeasurableSpace α] [MeasurableSpace β] {μ : Measure α}
+    (T : α → α) (e : α ≃ᵐ β) :
+    IsIsomorphicMod0 μ T (μ.map e) (e ∘ T ∘ e.symm) :=
+  isIsomorphicMod0_of_measurableEquiv e (e.measurable.measurePreserving μ) fun x => by simp
 
 end MathlibExtTest.Dynamics.Ergodic.KolmogorovSinaiEntropy

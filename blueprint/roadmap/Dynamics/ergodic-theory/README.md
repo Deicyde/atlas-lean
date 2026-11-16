@@ -16,4 +16,3 @@ Ergodic theory studies measure-preserving transformations and their statistical 
 - [Mixing](mixing/README.md)
 - [Kolmogorov–Sinai entropy](kolmogorov-sinai-entropy/README.md)
 - [Poincaré recurrence theorem](ae-frequently-mem-of-mem.md)
-- [Poincaré recurrence theorem](ae-frequently-mem-of-mem.md)

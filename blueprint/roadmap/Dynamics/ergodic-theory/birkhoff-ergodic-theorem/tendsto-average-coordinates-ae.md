@@ -10,7 +10,9 @@ from dynamics. Under $p^{\mathbb{N}}$ the coordinates are i.i.d. with law $p$, a
 ([Birkhoff averages along the Bernoulli shift are empirical means](birkhoff-average-shift-eval-zero.md)).
 Since the [Bernoulli shift is ergodic](../mixing/ergodic-shift.md), the Birkhoff pointwise ergodic theorem
 identifies the limit with the space average. In this sense the ergodic theorem is the law of large numbers
-for stationary processes, the point of view of Koralov and Sinai's Chapter 16. Pinned Mathlib also proves the
+for stationary processes: Birkhoff's theorem "extends the validity of the strong law to stationary sequences"
+(Lalley), and Koralov and Sinai's textbook develops ergodic theory as a chapter on strictly stationary
+processes. Pinned Mathlib also proves the
 strong law directly (`ProbabilityTheory.strong_law_ae`, Etemadi's version for pairwise independent identically
 distributed variables).
 
@@ -21,7 +23,8 @@ distributed variables).
 
 ## Sources
 
+- S. Lalley, *Birkhoff's ergodic theorem*, lecture notes for Statistics 381, University of Chicago,
+  https://galton.uchicago.edu/~lalley/Courses/381/Birkhoff.pdf, introduction.
+- O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 1.7 (Bernoulli schemes are mixing, whence ergodic).
 - L. B. Koralov and Ya. G. Sinai, *Theory of Probability and Random Processes*, 2nd ed., Springer (2007),
-  Chapter 16 (§16.1 stationary processes and measure-preserving transformations, §16.2 Birkhoff ergodic
-  theorem, §16.3 ergodicity, mixing and regularity).
-- O. Sarig, *Lecture Notes on Ergodic Theory*, Proposition 1.7.
+  Chapter 16 (strictly stationary processes; cited from the table of contents only).

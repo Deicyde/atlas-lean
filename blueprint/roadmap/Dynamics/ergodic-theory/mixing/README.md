@@ -11,6 +11,7 @@ mixing examples.
 - [Powers of a mixing map are mixing](iterate.md)
 - [Mixing maps are totally ergodic](ergodic-iterate.md)
 - [The one-sided left shift](shift.md)
+- [The shift reads the next symbol](shift-apply.md)
 - [Iterates of the shift](shift-iterate-apply.md)
 - [The two-sided left shift](two-sided-shift.md)
 - [The shift is measurable](measurable-shift.md)
