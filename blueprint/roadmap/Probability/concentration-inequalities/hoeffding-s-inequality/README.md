@@ -9,3 +9,4 @@
 ## Related topics
 
 - [Sub-exponential variables and Bernstein's inequality](../sub-exponential-variables-and-bernstein-s-inequa/README.md)
+- [Matrix concentration inequalities](../matrix-concentration-inequalities/README.md)

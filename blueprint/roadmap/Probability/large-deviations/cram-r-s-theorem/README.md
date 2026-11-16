@@ -25,3 +25,7 @@
 - [Cramér rate function as a real supremum under finite moments](cramer-rate-function-eq-of-real-i-sup.md)
 - [Cramér rate function vanishes at the mean](cramer-rate-function-eq-zero-at-mean.md)
 - [Cramér rate function of a constant law](cramer-rate-function-const.md)
+
+## Related topics
+
+- [Matrix concentration inequalities](../../concentration-inequalities/matrix-concentration-inequalities/README.md)

@@ -9,3 +9,7 @@
 - [Eigenvalues of a positive definite operator are positive](eigenvalues-pos-of-forall-pos-inner.md)
 - [Entropy tangent bound in an arbitrary orthonormal basis](klein-entropy-tangent.md)
 - [Klein's entropy inequality](klein-entropy.md)
+
+## Related topics
+
+- [Matrix concentration inequalities](../../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)

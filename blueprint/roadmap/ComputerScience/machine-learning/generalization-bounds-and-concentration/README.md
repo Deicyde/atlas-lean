@@ -24,3 +24,4 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Gradient descent](../../../Analysis/convex-analysis-and-variations/gradient-descent/README.md): the subgradient method and stochastic gradient descent, whose $1/\sqrt{t}$ rate matches the $1/\sqrt{n}$ estimation error.
 - [Sub-exponential variables and Bernstein's inequality](../../../Probability/concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/README.md)
 - [Uniform laws and Rademacher complexity](../../../Probability/high-dimensional-probability/uniform-laws-and-rademacher-complexity/README.md)
+- [Matrix concentration inequalities](../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)

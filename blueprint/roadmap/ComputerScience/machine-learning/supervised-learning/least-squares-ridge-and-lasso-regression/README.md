@@ -54,3 +54,4 @@
 - [Eigenvalues and spectral norm of Hermitian matrices](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-and-spectral-norm-of-hermitian-matri/README.md): the extreme eigenvalues of $\hat\Sigma$ are the smoothness and strong-convexity constants of the least-squares objective.
 - [Generalization bounds and concentration](../../generalization-bounds-and-concentration/README.md): estimation-error bounds for empirical risk minimization.
 - [Lasso error bounds under restricted eigenvalues](../../../../Probability/linear-models-multivariate/lasso-error-bounds-under-restricted-eigenvalues/README.md)
+- [Sparse recovery by orthogonal matching pursuit](../../../../Analysis/approximation-theory/sparse-recovery-by-orthogonal-matching-pursuit/README.md)

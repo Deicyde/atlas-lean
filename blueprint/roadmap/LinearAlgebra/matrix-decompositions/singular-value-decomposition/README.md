@@ -22,3 +22,4 @@ Every real or complex matrix factors as $A = U\Sigma V^*$ with $U, V$ unitary an
 - [Polar decomposition](../polar-decomposition/README.md)
 - [Condition numbers of sign matrices](../condition-numbers-of-sign-matrices/README.md)
 - [QR factorization](../qr-factorization/README.md)
+- [Randomized range finder](../randomized-range-finder/README.md)
