@@ -32,6 +32,7 @@ These procedures base inference on counts, ranks or random reassignments of the 
 - [Permutation tests](permutation-tests/README.md)
 - [Split conformal prediction](split-conformal-prediction/README.md)
 - [Conformalized quantile regression](conformalized-quantile-regression/README.md)
+- [Conformal prediction under covariate shift](conformal-prediction-under-covariate-shift/README.md)
 
 ## Other topics in hypothesis testing
 
