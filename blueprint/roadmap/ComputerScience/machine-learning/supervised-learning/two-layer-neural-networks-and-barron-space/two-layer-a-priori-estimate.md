@@ -22,7 +22,10 @@ norm of $f^*$ in the source's normalization (no bias, data in $[-1, 1]^d$). The 
 (it involves only the norm of the target), and its estimation part does not depend on the width:
 with $\lambda \asymp \lambda_n$ and $m \ge \sqrt n$ it is $O(n^{-1/2})$ up to logarithms, in the
 over-parametrized regime included. Measurability of $f^*$ is an added regularity assumption
-(the target is continuous on $X$ in the source).
+(on $X$ the representation already makes $f^*$ continuous). As in the
+[Rademacher risk bound](../../generalization-bounds-and-concentration/rademacher-complexity/risk-le-empirical-add-rademacher.md),
+"with probability at least $1 - \delta$" is stated with the outer measure of the product measure,
+since the event need not be measurable.
 
 This is a wanted statement: the proof is not formalized.
 

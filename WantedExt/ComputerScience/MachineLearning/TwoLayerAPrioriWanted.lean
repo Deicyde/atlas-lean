@@ -38,7 +38,9 @@ of naming `γ₂(f*)`; since the right-hand side is nondecreasing and continuous
 equivalent to the stated form. The source's proof combines the direct approximation theorem
 (Theorem 3.1) with the Rademacher bound for path-norm balls (bound (5.1)) and the Rademacher
 risk bound (Theorem 5.1), through the a posteriori bound of Theorem 5.2. Measurability of `f*`
-is assumed (the target is continuous on `X` in the source); every minimizer `θ̂` is covered.
+is assumed (on `X` the representation already makes `f*` continuous); every minimizer `θ̂` is
+covered. As for the repository's Rademacher risk bound, the probability is that of a possibly
+non-measurable event, measured by the outer measure of the product measure.
 -/
 
 @[expose] public section

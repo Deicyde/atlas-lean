@@ -187,8 +187,9 @@ private lemma lt_of_mul_inv_lt_one {a c : ℝ≥0∞} (h : a * c⁻¹ < 1) (hc0 
 
 /-- **Direct approximation theorem for the Barron space** (W. E, C. Ma and L. Wu, *The Barron
 space and the flow-induced function spaces for neural network models*, Constr. Approx. 55 (2022),
-Theorem 4; also Theorem 3.1 of E, Ma and Wu, *A priori estimates of the population risk for
-two-layer neural networks*, Commun. Math. Sci. 17 (2019)). Let `f` have finite Barron norm, let
+Theorem 4; Theorem 3.1 of E, Ma and Wu, *A priori estimates of the population risk for
+two-layer neural networks*, Commun. Math. Sci. 17 (2019), is the analogous statement for networks
+without bias on `[-1, 1]^d`). Let `f` have finite Barron norm, let
 `μ` be a probability measure carried by the cube `[0, 1]^d`, and let `m ≥ 1`. There are neuron
 parameters `θ₁, …, θₘ = (aₖ, bₖ, cₖ)` such that the network
 `f_m(x) = (1/m) ∑ₖ aₖ σ(⟨bₖ, x⟩ + cₖ)` satisfies `‖f - f_m‖²_{L²(μ)} ≤ 3 ‖f‖_B² / m`, and its

@@ -700,7 +700,7 @@
 "CSLibExt.MachineLearning.NeuralNetworks.IsBarronRepresentation": "74588bb5f07eb334",
 "CSLibExt.MachineLearning.NeuralNetworks.barronNorm": "114e7640e0fdc3f5",
 "CSLibExt.MachineLearning.NeuralNetworks.barronNorm_neuron_le": "b9371facce0502b1",
-"CSLibExt.MachineLearning.NeuralNetworks.barron_direct_approximation": "15663ad498237110",
+"CSLibExt.MachineLearning.NeuralNetworks.barron_direct_approximation": "e09e43d03b35de8e",
 "CSLibExt.MachineLearning.NeuralNetworks.barron_inverse_approximation": "21868654c4b83f3a",
 "CSLibExt.MachineLearning.NeuralNetworks.reluNeuron": "f4fd63d93f0053b0",
 "CSLibExt.MachineLearning.NeuralNetworks.residualNetwork_flow_error_le": "07f0e796202e4825",

@@ -28,8 +28,10 @@ jointly and Lipschitz in the state, `residualNetwork_flow_error_le` shows that t
 depth-`L` network is within `C / L` of the time-`1` value of the flow, uniformly in the depth. It
 is the first-order convergence of the explicit Euler method,
 `MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_first_order_convergence`, at
-`t₀ = 0`, `T = 1` and step `h = 1/L`. The `C²` hypothesis excludes ReLU blocks; it covers smooth
-activations with weights `U(t)`, `W(t)` depending smoothly on the depth variable.
+`t₀ = 0`, `T = 1` and step `h = 1/L`. The `C²` hypothesis excludes ReLU blocks. The blocks
+`U(t) σ(W(t) z)` are covered when the weights depend smoothly on the depth variable and `σ` is
+`C²` with bounded derivative (e.g. `tanh`), so that the block is globally Lipschitz in the state;
+a `C²` activation alone is not enough (`σ(s) = s²` gives `ż = z²`, which blows up).
 -/
 
 @[expose] public section

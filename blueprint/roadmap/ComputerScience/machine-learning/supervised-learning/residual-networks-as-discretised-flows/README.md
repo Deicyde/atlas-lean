@@ -5,7 +5,9 @@ $l = 0, \dots, L - 1$, is the explicit Euler scheme with step $1/L$ for an ordin
 equation $\dot z = g(t, z)$ on $[0, 1]$: deep networks are discretised dynamical systems, and their
 continuous-depth limit is a flow. This is the dynamical-systems view of deep learning of W. E
 and of E, Han and Li, in which training becomes an optimal control problem over the flow. For a
-smooth time-dependent block $g$, the output of the depth-$L$ network is within $C/L$ of the
+time-dependent block $g$ that is $C^2$ and globally Lipschitz in the state (for instance
+$U(t) \sigma(W(t) z)$ with smooth weights and a $C^2$ activation with bounded derivative, such as
+$\tanh$), the output of the depth-$L$ network is within $C/L$ of the
 time-$1$ value of the flow, uniformly in the depth, by the first-order convergence of Euler's
 method.
 

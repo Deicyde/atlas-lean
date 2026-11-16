@@ -13,7 +13,10 @@ The residual network with the $1/L$ scaling is the explicit Euler scheme with st
 ODE, and the bound is the first-order convergence of Euler's method with $t_0 = 0$, $T = 1$,
 $h = 1/L$. In the scaled residual networks of E, Ma, Wojtowytsch and Wu the block is
 $g_l(z) = U_l \sigma(W_l z)$; the theorem applies when $U_l = U(l/L)$ and $W_l = W(l/L)$ for
-smooth weight paths and a $C^2$ activation, and does not cover the ReLU, which is not $C^2$.
+smooth weight paths and a $C^2$ activation with bounded derivative (e.g. $\tanh$), which makes the
+block globally Lipschitz in the state as the theorem requires. A $C^2$ activation alone is not
+enough: $\sigma(s) = s^2$ with $U = W = 1$ gives $\dot z = z^2$, whose solution from $z_0 = 1$ blows
+up at $t = 1$. The theorem does not cover the ReLU, which is not $C^2$.
 
 ## Sources
 
