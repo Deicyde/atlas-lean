@@ -50,4 +50,25 @@ example {n : ℕ} (X : Matrix (Fin n) (Fin n) ℝ) (S : Finset (Fin n)) (θs : F
     θs - θs ∈ cone S 3 :=
   (lasso_basic_inequality X S θs θs 0 one_pos hsupp (by simp) le_rfl).1
 
+/-- The slow rate needs no restricted eigenvalue condition: with `θ* = 0` the bound forces the
+fitted values of any minimiser to vanish. -/
+example {n d : ℕ} (X : Matrix (Fin n) (Fin d) ℝ) (θhat : Fin d → ℝ) (w : Fin n → ℝ) {lam : ℝ}
+    (hlam : 0 ≤ lam) (hnoise : ∀ j, |(Xᵀ *ᵥ w) j| / n ≤ lam / 2)
+    (hmin : ∀ θ, lassoObjective X (X *ᵥ 0 + w) lam θhat ≤ lassoObjective X (X *ᵥ 0 + w) lam θ) :
+    (1 / n) * ∑ i, (X *ᵥ (θhat - 0)) i ^ 2 ≤ 12 * 0 * lam :=
+  lasso_prediction_error_le_slow X 0 θhat w hlam hnoise (by simp) hmin
+
+/-- The fast rate on the identity design, where `κ = 1 / n`. -/
+example {n : ℕ} (hn : 0 < n) (S : Finset (Fin n)) (θs θhat : Fin n → ℝ) (w : Fin n → ℝ)
+    {lam : ℝ} (hlam : 0 < lam) (hsupp : ∀ j ∉ S, θs j = 0)
+    (hnoise : ∀ j, |((1 : Matrix (Fin n) (Fin n) ℝ)ᵀ *ᵥ w) j| / n ≤ lam / 2)
+    (hmin : ∀ θ, lassoObjective (1 : Matrix (Fin n) (Fin n) ℝ)
+        ((1 : Matrix (Fin n) (Fin n) ℝ) *ᵥ θs + w) lam θhat ≤
+      lassoObjective (1 : Matrix (Fin n) (Fin n) ℝ)
+        ((1 : Matrix (Fin n) (Fin n) ℝ) *ᵥ θs + w) lam θ) :
+    (1 / n) * ∑ i, ((1 : Matrix (Fin n) (Fin n) ℝ) *ᵥ (θhat - θs)) i ^ 2 ≤
+      9 / (1 / n) * S.card * lam ^ 2 :=
+  lasso_prediction_error_le_fast (1 : Matrix (Fin n) (Fin n) ℝ) S θs θhat w hlam hsupp
+    (restrictedEigenvalue_one hn S 3) hnoise hmin
+
 end MathlibExtTest.Probability.Statistics.LassoRestrictedEigenvalue

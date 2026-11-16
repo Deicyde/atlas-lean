@@ -17,6 +17,12 @@ constrained Lasso (Hastie, Tibshirani and Wainwright, *Statistical Learning with
 - [ℓ₂-error bound for the Lagrangian Lasso](lasso-l2-error-le.md)
 - [ℓ₂-error bound for the constrained Lasso](constrained-lasso-l2-error-le.md)
 
+## Prediction error
+
+- [Slow rate for the Lasso prediction error, constant 3](lasso-prediction-error-le-three.md)
+- [Slow rate for the Lasso prediction error](lasso-prediction-error-le-slow.md)
+- [Fast rate for the Lasso prediction error](lasso-prediction-error-le-fast.md)
+
 ## Related topics
 
 - [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)

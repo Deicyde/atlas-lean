@@ -41,6 +41,11 @@ Press, 2019), §7.3:
   minimiser of the constrained Lasso `min {(1/(2n)) ‖y - X θ‖₂² | ‖θ‖₁ ≤ ‖θ*‖₁}` satisfies
   `‖θ̂ - θ*‖₂ ≤ (4 / κ) √s ‖Xᵀ w / n‖_∞` (Hastie et al. 2015, Theorem 11.1(a), whose proof only
   uses the cone `C(S; 1) ⊆ C(S; 3)`; Wainwright 2019, Theorem 7.13(b)).
+* `lasso_prediction_error_le_slow` and `lasso_prediction_error_le_fast`: the slow rate
+  `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 12 R₁ lam` when `‖θ*‖₁ ≤ R₁`, with no condition on `X`, and the fast
+  rate `≤ (9 / κ) |S| lam²` under the restricted eigenvalue condition over `C(S; 3)` (Hastie et
+  al. 2015, Theorem 11.2). `lasso_prediction_error_le_three` is the slow rate with the constant
+  `3 ‖θ*‖₁` that the argument gives.
 
 The statements are deterministic: they hold for every realisation of the noise. Norms are written
 as explicit sums, `‖Δ‖₂ = √(∑ j, Δ j ^ 2)` and `‖Δ‖₁ = ∑ j, |Δ j|`, and the sup norm
@@ -283,6 +288,97 @@ theorem constrainedLasso_l2_error_le (X : Matrix (Fin n) ι ℝ) (S : Finset ι)
   rcases hr0.eq_or_lt with h0 | hpos
   · rw [← h0]; positivity
   · rw [div_mul_eq_mul_div, div_mul_eq_mul_div, le_div_iff₀ hκ]
+    nlinarith
+
+omit [DecidableEq ι] in
+/-- **Slow rate for the Lasso prediction error**, with the constant of the argument: let
+`y = X θ* + w`, let `lam ≥ 2 ‖Xᵀ w / n‖_∞` and let `θ̂` have Lagrangian Lasso objective at most
+that of `θ*`. Then `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 3 lam ‖θ*‖₁`. No sparsity or restricted eigenvalue
+condition is needed. The modified basic inequality and Hölder's inequality of Hastie,
+Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015, proof of
+Theorem 11.2(a), give this constant directly; the source states `12`
+(`lasso_prediction_error_le_slow`). -/
+theorem lasso_prediction_error_le_three (X : Matrix (Fin n) ι ℝ) (θs θhat : ι → ℝ)
+    (w : Fin n → ℝ) {lam : ℝ} (hnoise : ∀ j, |(Xᵀ *ᵥ w) j| / n ≤ lam / 2)
+    (hopt : lassoObjective X (X *ᵥ θs + w) lam θhat ≤ lassoObjective X (X *ᵥ θs + w) lam θs) :
+    (1 / n) * ∑ i, (X *ᵥ (θhat - θs)) i ^ 2 ≤ 3 * lam * ∑ j, |θs j| := by
+  rcases isEmpty_or_nonempty ι with hι | ⟨⟨j0⟩⟩
+  · simp [mulVec, dotProduct]
+  have hlam : 0 ≤ lam := by
+    have h1 := hnoise j0
+    have h2 : 0 ≤ |(Xᵀ *ᵥ w) j0| / n := by positivity
+    linarith
+  set Δ := θhat - θs with hΔ
+  have hθhat : θhat = θs + Δ := by rw [hΔ]; abel
+  unfold lassoObjective at hopt
+  rw [hθhat, rss_expand] at hopt
+  have hself : ∀ i, ((X *ᵥ θs + w) i - (X *ᵥ θs) i) ^ 2 = w i ^ 2 := by
+    intro i; simp
+  simp_rw [hself] at hopt
+  have hnz := noise_le X w Δ hnoise
+  have htri : ∑ j, |Δ j| ≤ ∑ j, |θs j + Δ j| + ∑ j, |θs j| := by
+    rw [← sum_add_distrib]
+    refine sum_le_sum fun j _ => ?_
+    calc |Δ j| = |(θs j + Δ j) + (-θs j)| := by ring_nf
+      _ ≤ |θs j + Δ j| + |-θs j| := abs_add_le _ _
+      _ = |θs j + Δ j| + |θs j| := by rw [abs_neg]
+  have hθl1 : ∑ j, |(θs + Δ) j| = ∑ j, |θs j + Δ j| := rfl
+  rw [hθl1] at hopt
+  have hn : (1 / (2 * (n : ℝ))) = (1 / 2) * (1 / n) := by
+    rw [one_div_mul_one_div]
+  rw [hn] at hopt
+  have hθh : 0 ≤ ∑ j, |θs j + Δ j| := sum_nonneg fun _ _ => abs_nonneg _
+  nlinarith [mul_le_mul_of_nonneg_left htri hlam, mul_nonneg hlam hθh]
+
+omit [DecidableEq ι] in
+/-- **Slow rate for the Lasso prediction error** (Hastie, Tibshirani and Wainwright,
+*Statistical Learning with Sparsity*, 2015, Theorem 11.2(a)): for the Lagrangian Lasso with
+`lam ≥ 2 ‖Xᵀ w / n‖_∞` (so `lam ≥ 0`, assumed explicitly to cover an empty index type) and
+`‖θ*‖₁ ≤ R₁`, every minimiser `θ̂` satisfies `(1/n) ‖X (θ̂ - θ*)‖₂² ≤ 12 R₁ lam`. -/
+theorem lasso_prediction_error_le_slow (X : Matrix (Fin n) ι ℝ) (θs θhat : ι → ℝ)
+    (w : Fin n → ℝ) {lam R₁ : ℝ} (hlam : 0 ≤ lam) (hnoise : ∀ j, |(Xᵀ *ᵥ w) j| / n ≤ lam / 2)
+    (hR : ∑ j, |θs j| ≤ R₁)
+    (hmin : ∀ θ, lassoObjective X (X *ᵥ θs + w) lam θhat ≤ lassoObjective X (X *ᵥ θs + w) lam θ) :
+    (1 / n) * ∑ i, (X *ᵥ (θhat - θs)) i ^ 2 ≤ 12 * R₁ * lam := by
+  have h3 := lasso_prediction_error_le_three X θs θhat w hnoise (hmin θs)
+  have hθs : 0 ≤ ∑ j, |θs j| := sum_nonneg fun _ _ => abs_nonneg _
+  nlinarith [mul_le_mul_of_nonneg_left hR hlam, mul_nonneg hlam hθs]
+
+/-- **Fast rate for the Lasso prediction error** (Hastie, Tibshirani and Wainwright,
+*Statistical Learning with Sparsity*, 2015, Theorem 11.2(b)): if `θ*` vanishes off `S`, `X`
+satisfies the restricted eigenvalue condition with constant `κ` over `C(S; 3)`, `lam > 0` and
+`lam ≥ 2 ‖Xᵀ w / n‖_∞`, then every minimiser `θ̂` of the Lagrangian Lasso satisfies
+`(1/n) ‖X (θ̂ - θ*)‖₂² ≤ (9 / κ) |S| lam²`. -/
+theorem lasso_prediction_error_le_fast (X : Matrix (Fin n) ι ℝ) (S : Finset ι)
+    (θs θhat : ι → ℝ) (w : Fin n → ℝ) {lam κ : ℝ} (hlam : 0 < lam)
+    (hsupp : ∀ j ∉ S, θs j = 0) (hRE : RestrictedEigenvalue X S κ 3)
+    (hnoise : ∀ j, |(Xᵀ *ᵥ w) j| / n ≤ lam / 2)
+    (hmin : ∀ θ, lassoObjective X (X *ᵥ θs + w) lam θhat ≤ lassoObjective X (X *ᵥ θs + w) lam θ) :
+    (1 / n) * ∑ i, (X *ᵥ (θhat - θs)) i ^ 2 ≤ 9 / κ * S.card * lam ^ 2 := by
+  obtain ⟨hcone, hpred⟩ := lasso_basic_inequality X S θs θhat w hlam hsupp hnoise (hmin θs)
+  obtain ⟨hκ, hre⟩ := hRE
+  set Δ := θhat - θs
+  set P := (1 / (n : ℝ)) * ∑ i, (X *ᵥ Δ) i ^ 2 with hP
+  have hP0 : 0 ≤ P := mul_nonneg (by positivity) (sum_nonneg fun _ _ => sq_nonneg _)
+  set r := Real.sqrt (∑ j, Δ j ^ 2) with hr
+  have hrsq : r ^ 2 = ∑ j, Δ j ^ 2 := Real.sq_sqrt (sum_nonneg fun _ _ => sq_nonneg _)
+  have hCS := sum_abs_le_sqrt_card_mul S Δ
+  rw [← hr] at hCS
+  have hsq : Real.sqrt S.card ^ 2 = S.card := Real.sq_sqrt (Nat.cast_nonneg _)
+  -- `P ≤ 3 lam √s r` and `κ r² ≤ P`, hence `P² ≤ 9 lam² s r² ≤ 9 lam² s P / κ`.
+  have h1 : P ≤ 3 * lam * (Real.sqrt S.card * r) :=
+    hpred.trans (by gcongr)
+  have h2 : κ * r ^ 2 ≤ P := by rw [hrsq]; exact hre Δ hcone
+  have h3 : P ^ 2 ≤ 9 * lam ^ 2 * S.card * r ^ 2 := by
+    calc P ^ 2 ≤ (3 * lam * (Real.sqrt S.card * r)) ^ 2 := pow_le_pow_left₀ hP0 h1 2
+      _ = 9 * lam ^ 2 * Real.sqrt S.card ^ 2 * r ^ 2 := by ring
+      _ = 9 * lam ^ 2 * S.card * r ^ 2 := by rw [hsq]
+  rw [div_mul_eq_mul_div, div_mul_eq_mul_div, le_div_iff₀ hκ]
+  rcases hP0.eq_or_lt with h0 | hpos
+  · rw [← h0, zero_mul]; positivity
+  · have h4 : P ^ 2 * κ ≤ 9 * lam ^ 2 * S.card * P := by
+      have hs : (0 : ℝ) ≤ 9 * lam ^ 2 * S.card := by positivity
+      nlinarith [mul_le_mul_of_nonneg_left h2 hs]
     nlinarith
 
 end
