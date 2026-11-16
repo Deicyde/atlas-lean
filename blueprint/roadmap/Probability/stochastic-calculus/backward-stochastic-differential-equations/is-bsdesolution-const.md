@@ -8,7 +8,7 @@ the BSDE with terminal value `c`. With uniqueness of solutions, this is the prop
 
 ## Background
 
-- [Sublinear expectation](../../../foundations/sublinear-expectations-and-model-uncertainty/is-sublinear-expectation.md):
+- [Sublinear expectation](../../foundations/sublinear-expectations-and-model-uncertainty/is-sublinear-expectation.md):
   a g-expectation is a monotone, constant preserving nonlinear expectation; its uncertain models
   are all absolutely continuous with respect to the Wiener measure, a limitation that Peng's
   G-expectation removes (Proc. ICM 2010, §2, first paragraph).
