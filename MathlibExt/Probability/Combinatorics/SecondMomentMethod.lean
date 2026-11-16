@@ -49,8 +49,9 @@ variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω}
 
 /-- **First moment method.** If `X ≥ 0` is integrable, then `P(X ≥ 1) ≤ E X`. For a
 nonnegative integer-valued count `X` this says `P(X ≠ 0) ≤ E X`, so `E X → 0` forces `X = 0`
-with high probability (Y. Zhao, *The Probabilistic Method in Combinatorics*, MIT 18.218 notes,
-2019, proof of Proposition 4.11, via Markov's inequality). -/
+with high probability. It is Mathlib's Markov inequality `mul_meas_ge_le_integral_of_nonneg` at
+level `1`, named here as the first moment method (Y. Zhao, *The Probabilistic Method in
+Combinatorics*, MIT 18.218 notes, 2019, proof of Proposition 4.11, via Markov's inequality). -/
 theorem measureReal_one_le_le_integral [IsFiniteMeasure μ] {X : Ω → ℝ} (hX0 : 0 ≤ᵐ[μ] X)
     (hXi : Integrable X μ) : μ.real {ω | 1 ≤ X ω} ≤ ∫ ω, X ω ∂μ := by
   have h := mul_meas_ge_le_integral_of_nonneg hX0 hXi 1
@@ -80,9 +81,8 @@ theorem measureReal_eq_zero_le_variance_div_sq [IsProbabilityMeasure μ] {X : Ω
 
 /-- **Second moment method, Cauchy–Schwarz form.** If `X ≥ 0` is square-integrable, then
 `(E X)² ≤ E[X²] · P(X > 0)`; equivalently `P(X > 0) ≥ (E X)² / E[X²]` when `E[X²] > 0`. This is
-the case `θ = 0` of the Paley–Zygmund inequality (Y. Zhao, *The Probabilistic Method in
-Combinatorics*, MIT 18.218 notes, 2019, Section 4: the second moment method shows `X > 0` with
-high probability when `Var X = o((E X)²)`). -/
+the case `θ = 0` of the Paley–Zygmund inequality `ProbabilityTheory.paley_zygmund`, backported in
+this repository from Mathlib PR #40835. -/
 theorem sq_integral_le_integral_sq_mul_measureReal_pos [IsProbabilityMeasure μ] {X : Ω → ℝ}
     (hX0 : 0 ≤ᵐ[μ] X) (hX : MemLp X 2 μ) :
     (∫ ω, X ω ∂μ) ^ 2 ≤ (∫ ω, X ω ^ 2 ∂μ) * μ.real {ω | 0 < X ω} := by
