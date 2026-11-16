@@ -35,4 +35,5 @@ Chernoff upper bound in a fixed direction and the properties of the rate functio
 ## Related topics
 
 - [Sanov's theorem](../sanov-s-theorem/README.md)
+- [Gärtner–Ellis theorem (differentiable case)](../satisfies-ldp-of-tendsto-scaled-cgf.md)
 - [Matrix concentration inequalities](../../concentration-inequalities/matrix-concentration-inequalities/README.md)

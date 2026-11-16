@@ -26093,6 +26093,7 @@
 "MathlibExt.Probability.GaltonWatson.walkWeight_poisson": "50e29a79ce937ddd",
 "MathlibExt.Probability.GaussianRandomMatrixWanted.measureReal_sigmaMax_ge_le": "e9515203f558e510",
 "MathlibExt.Probability.GirsanovWanted.IsBrownianReal.hasLaw_sub_drift_withDensity": "cf05c310489d599b",
+"MathlibExt.Probability.GartnerEllisWanted.satisfiesLDP_of_tendsto_scaledCGF": "a528a52837eebc70",
 "MathlibExt.Probability.HewittSavageSequence.IsExchangeableEvent": "b4a96a26bfc31747",
 "MathlibExt.Probability.HewittSavageSequence.IsExchangeableEventWrt": "8ec709d362fe685e",
 "MathlibExt.Probability.HewittSavageSequence.IsExchangeableEventWrt.measurableSet": "26698902f191841c",

@@ -6489,6 +6489,7 @@
   "WantedExt/Probability/DiversityStatisticsWanted": {"to": "Combinatorics/integer-partitions/young-diagrams-statistics", "title": "Number of values of diversity indices"},
   "WantedExt/Probability/GaussianRandomMatrixWanted": {"to": "Probability/high-dimensional-probability", "title": "Singular values of Gaussian random matrices"},
   "WantedExt/Probability/HighDimensionalStatisticsWanted": {"to": "Probability/concentration-inequalities", "title": "Sub-exponential variables and Bernstein's inequality"},
+  "WantedExt/Probability/GartnerEllisWanted": {"to": "Probability/large-deviations", "title": "Gärtner–Ellis theorem"},
   "WantedExt/Probability/IsotropicConstantBoundsWanted": {"to": "Probability/high-dimensional-probability", "title": "Isotropic constant of log-concave laws"},
   "WantedExt/Probability/JansonInequalityWanted": {"to": "Combinatorics/probabilistic-combinatorics", "title": "Janson's inequalities"},
   "WantedExt/Probability/KimVuConcentrationWanted": {"to": "Probability/concentration-inequalities", "title": "Kim–Vu polynomial concentration"},
