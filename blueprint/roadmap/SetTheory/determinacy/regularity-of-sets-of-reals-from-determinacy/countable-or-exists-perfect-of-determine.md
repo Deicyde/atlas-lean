@@ -10,3 +10,5 @@ Part I*, Notices AMS 48 (2001)).
 Davis's proof uses the `*`-game, in which player I plays non-empty finite binary sequences and player II single bits. Player I wins it exactly when the set has a non-empty perfect subset, and player II exactly when the set is countable (Moschovakis 6A.10–6A.11). Its payoff set is a Borel preimage of the given set, so the hypothesis makes it determined.
 
 The family of all subsets of `ℕ^ℕ` satisfies the closure hypothesis, but there the determinacy hypothesis is the axiom of determinacy, which is false in Lean ([the axiom of determinacy contradicts choice](../non-determined-games/not-forall-determined.md)).
+
+Any family satisfying the closure hypothesis that contains a set other than `∅` and `ℕ^ℕ` contains every Borel set. A non-trivial instance therefore needs [Martin's Borel determinacy](../borel-and-analytic-determinacy/determined-of-measurable-set-borel.md), which is a wanted theorem here; the only instances provable in this repository today are the trivial families `∅`, `{∅}`, `{ℕ^ℕ}` and `{∅, ℕ^ℕ}`.

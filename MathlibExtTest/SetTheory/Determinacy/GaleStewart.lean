@@ -67,8 +67,10 @@ example : ¬ Determined (Set.univ : Set (ℕ → Empty)) := by
   · exact (τ []).elim
 
 /-- The hypotheses of the regularity theorems in `WantedExt.SetTheory.Determinacy.RegularityWanted`
-are jointly satisfiable: the family `{∅, univ}` is closed under all preimages and its members are
-determined. -/
+are trivially satisfiable: the family `{∅, univ}` is closed under all preimages and its members
+are determined. Its conclusions are trivial; by `mem_of_closed_under_borel_preimage`, any
+non-trivial instance contains every Borel set and so needs Martin's Borel determinacy, a wanted
+theorem here. -/
 example : let Γ : Set (Set (ℕ → ℕ)) := {∅, Set.univ}
     (∀ f : (ℕ → ℕ) → ℕ → ℕ, Measurable f → ∀ B ∈ Γ, f ⁻¹' B ∈ Γ) ∧ (∀ B ∈ Γ, Determined B) := by
   refine ⟨?_, ?_⟩
@@ -79,9 +81,25 @@ example : let Γ : Set (Set (ℕ → ℕ)) := {∅, Set.univ}
     · exact determined_of_isOpen isOpen_empty
     · exact determined_of_isOpen isOpen_univ
 
+/-- A family closed under preimages by Borel maps of `ℕ^ℕ` that contains a set other than `∅` and
+`ℕ^ℕ` contains every Borel set: `B` is the preimage of `S` by the map sending `B` to `p ∈ S` and
+its complement to `q ∉ S`. Hence the determinacy hypothesis of the regularity theorems, for such a
+family, includes the determinacy of every Borel set (Martin's theorem, wanted in
+`WantedExt.SetTheory.Determinacy.BorelDeterminacyWanted`). -/
+theorem mem_of_closed_under_borel_preimage (Γ : Set (Set (ℕ → ℕ)))
+    (hΓ : ∀ f : (ℕ → ℕ) → ℕ → ℕ, Measurable f → ∀ B ∈ Γ, f ⁻¹' B ∈ Γ)
+    {S : Set (ℕ → ℕ)} (hS : S ∈ Γ) {p q : ℕ → ℕ} (hp : p ∈ S) (hq : q ∉ S)
+    {B : Set (ℕ → ℕ)} (hB : MeasurableSet B) : B ∈ Γ := by
+  classical
+  have hf : Measurable (B.piecewise (fun _ => p) (fun _ => q)) :=
+    Measurable.piecewise hB measurable_const measurable_const
+  convert hΓ _ hf S hS using 1
+  ext x
+  by_cases hx : x ∈ B <;> simp [Set.piecewise, hx, hp, hq]
+
 /-- The Borel sets form a family closed under preimages by Borel maps, as in the regularity
 theorems; that its members are determined is Martin's theorem
-(`WantedExt.SetTheory.Determinacy.BorelDeterminacyWanted`). -/
+(`WantedExt.SetTheory.Determinacy.BorelDeterminacyWanted`), a wanted theorem here. -/
 example : ∀ f : (ℕ → ℕ) → ℕ → ℕ, Measurable f →
     ∀ B ∈ {B : Set (ℕ → ℕ) | MeasurableSet B}, f ⁻¹' B ∈ {B : Set (ℕ → ℕ) | MeasurableSet B} :=
   fun _ hf _ hB => hf hB

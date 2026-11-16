@@ -8,8 +8,10 @@ Stud. 39 (1957); Moschovakis, *Descriptive Set Theory*, 2nd ed., AMS 2009, 6A.13
 
 The proof uses the Banach–Mazur game, in which the players choose shrinking basic open sets. Player II wins it exactly when the set is meagre, and player I wins exactly when the set is comeagre in some basic open set (Banach; Oxtoby; Moschovakis 6A.14). Applying this to the set minus the union of the basic open sets in which it is comeagre gives the property of Baire (6A.15).
 
+The family of all subsets of `ℕ^ℕ` satisfies the closure hypothesis, but there the determinacy hypothesis is the axiom of determinacy, which is false in Lean ([the axiom of determinacy contradicts choice](../non-determined-games/not-forall-determined.md)).
+
+Any family satisfying the closure hypothesis that contains a set other than `∅` and `ℕ^ℕ` contains every Borel set. A non-trivial instance therefore needs [Martin's Borel determinacy](../borel-and-analytic-determinacy/determined-of-measurable-set-borel.md), which is a wanted theorem here; the only instances provable in this repository today are the trivial families `∅`, `{∅}`, `{ℕ^ℕ}` and `{∅, ℕ^ℕ}`.
+
 ## Background
 
 - [Banach–Mazur game theorem](../../../Topology/descriptive-set-theory/banach-mazur-game/banach-mazur-winning-strategy-characteri.md): the characterisation of the winners of the Banach–Mazur game, recorded there for intervals of the reals.
-
-The family of all subsets of `ℕ^ℕ` satisfies the closure hypothesis, but there the determinacy hypothesis is the axiom of determinacy, which is false in Lean ([the axiom of determinacy contradicts choice](../non-determined-games/not-forall-determined.md)).

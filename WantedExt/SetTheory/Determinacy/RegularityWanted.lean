@@ -38,9 +38,18 @@ is therefore the hypothesis used here.
 axiom of determinacy, which is false in Lean's ambient logic
 (`MathlibExt.SetTheory.Determinacy.not_forall_determined`); the classical corollary "under AD every
 set of reals is Lebesgue measurable, has the Baire property and the perfect set property" holds
-in ZF + AD and cannot be stated non-vacuously here. The useful instances are the Borel
-sets (determined by Martin's theorem, so these give the classical regularity of Borel sets), the
-analytic sets under a measurable cardinal, and the projective sets under projective determinacy.
+in ZF + AD and cannot be stated non-vacuously here.
+
+**Instances.** A family satisfying the closure hypothesis that contains a set `S` other than `∅`
+and `ℕ^ℕ` contains every Borel set `B`: it is the preimage of `S` by the Borel map sending `B` to a
+point of `S` and its complement to a point outside `S`. So every non-trivial instance of the
+determinacy hypothesis includes Martin's Borel determinacy, which is a wanted theorem here
+(`determined_of_measurableSet_borel`). The only instances provable in this repository today are
+the trivial families `∅`, `{∅}`, `{ℕ^ℕ}` and `{∅, ℕ^ℕ}`, whose conclusions are trivial. The
+intended instances, each resting on wanted theorems or further hypotheses, are the Borel sets
+(Martin's theorem; their regularity is anyway a theorem of ZFC), the analytic and co-analytic sets
+under a measurable cardinal (Moschovakis 6G.7 with 6A.4), and the projective sets under projective
+determinacy.
 -/
 
 @[expose] public section
