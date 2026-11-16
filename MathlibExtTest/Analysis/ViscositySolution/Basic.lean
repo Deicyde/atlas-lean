@@ -77,6 +77,28 @@ example : IsViscositySolution eikonal univ (fun x : ℝ => x) := by
       abs_of_pos (by positivity)]
     linarith
 
+/-- The general comparison principle applies with an `x`-dependent equation: for
+`u - ‖x‖ = 0` on the unit ball of `ℝ²` (`γ = 1`, structure condition with `ω = id` because
+`‖x‖ - ‖y‖ ≤ ‖x - y‖`), the constant `-1` is a subsolution and `1` a supersolution. -/
+example (x : EuclideanSpace ℝ (Fin 2)) (hx : x ∈ ball 0 1) : (fun _ => (-1 : ℝ)) x ≤ 1 := by
+  refine le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper (u := fun _ => -1)
+    (v := fun _ => 1) isOpen_ball isBounded_ball (fun x r _ => r - ‖x‖) one_pos
+    (fun _ _ r s _ _ => by simp) id (tendsto_nhdsWithin_of_tendsto_nhds (by
+      simpa using (continuous_id.tendsto (0 : ℝ))))
+    (fun x _ y _ r α hα => ?_) continuousOn_const continuousOn_const ?_ ?_
+    (fun _ _ => by norm_num) x hx
+  · have h1 : ‖x‖ - ‖y‖ ≤ ‖x - y‖ := norm_sub_norm_le x y
+    have h2 : 0 ≤ α * ‖x - y‖ ^ 2 := by positivity
+    simp only [id]
+    linarith
+  · exact isViscositySubsolution_of_classical isOpen_ball (fun _ _ => differentiableAt_const _)
+      fun y _ => show (-1 : ℝ) - ‖y‖ ≤ 0 by linarith [norm_nonneg y]
+  · exact isViscositySupersolution_of_classical isOpen_ball (fun _ _ => differentiableAt_const _)
+      fun y hy => by
+        have : ‖y‖ < 1 := by simpa using hy
+        show (0 : ℝ) ≤ 1 - ‖y‖
+        linarith
+
 /-- The hypotheses of the wanted comparison principle
 (`WantedExt.Analysis.ViscositySolution.ComparisonHopfLaxWanted`) are jointly satisfiable:
 `F(x, r, p) = r` is proper with `γ = 1` and satisfies the structure condition with `ω = id`. -/

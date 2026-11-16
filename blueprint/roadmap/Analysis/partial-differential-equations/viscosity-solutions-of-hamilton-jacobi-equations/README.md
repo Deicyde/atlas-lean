@@ -2,7 +2,7 @@
 
 Crandall and Lions introduced viscosity solutions (1983) to give first-order Hamilton–Jacobi equations $F(x, u, Du) = 0$ a theory with existence, uniqueness and stability for merely continuous solutions. A function is a subsolution when every $C^1$ test function $\varphi$ touching it from above at $x$ satisfies $F(x, u(x), D\varphi(x)) \le 0$, and a supersolution when every test function touching from below satisfies $F \ge 0$. The notion is consistent with classical solutions, is not symmetric in the sign of $F$ ($-|x|$ solves $(u')^2 - 1 = 0$, $|x|$ does not), is stable under locally uniform limits, and admits a comparison principle, proved by doubling the variables, that yields uniqueness. For convex superlinear Hamiltonians the Hopf–Lax formula gives the solution of the Cauchy problem $u_t + H(Du) = 0$ explicitly.
 
-Here the definitions, consistency, the eikonal example of the user's guide, stability under locally uniform limits and the comparison principle in the model case $\gamma u + H(Du) = f(x)$ are proved; the general first-order comparison theorem and the Hopf–Lax formula are recorded as wanted. Perron's method, second-order equations (the theorem on sums) and half-relaxed limits are not formalized.
+Here the definitions, consistency, the eikonal example of the user's guide, stability under locally uniform limits, and the comparison principle for continuous sub- and supersolutions (in the model case $\gamma u + H(Du) = f(x)$ and under the general structure conditions of the user's guide) are proved; comparison for semicontinuous sub- and supersolutions and the Hopf–Lax formula are recorded as wanted. Perron's method, second-order equations (the theorem on sums) and half-relaxed limits are not formalized.
 
 - [Viscosity subsolution of a first-order equation](is-viscosity-subsolution.md)
 - [Viscosity supersolution of a first-order equation](is-viscosity-supersolution.md)
@@ -21,6 +21,7 @@ Here the definitions, consistency, the eikonal example of the user's guide, stab
 - [Stability of viscosity solutions under locally uniform limits](solution-of-tendsto-locally-uniformly-on.md)
 - [Comparison principle for $\gamma u + H(Du) = f(x)$](comparison-principle-model-case.md)
 - [Uniqueness for the Dirichlet problem for $\gamma u + H(Du) = f(x)$](eq-on-of-is-viscosity-solution.md)
+- [Comparison principle for first-order equations, continuous case](comparison-principle-continuous-case.md)
 - [Comparison principle for first-order equations](comparison-principle-structure-conditions.md)
 - [The Hopf–Lax formula](hopf-lax-is-viscosity-solution.md)
 

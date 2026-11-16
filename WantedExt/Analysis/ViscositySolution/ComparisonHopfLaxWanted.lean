@@ -21,9 +21,9 @@ equations whose proofs are deferred:
 
 * `le_of_isViscositySubsolution_of_isViscositySupersolution_of_structure`: the comparison
   principle of Crandall, Ishii and Lions (*User's guide*, Theorem 3.3) for first-order equations,
-  semicontinuous sub- and supersolutions and the structure conditions (3.13)–(3.14). The
-  continuous model case `γ u + H(Du) = f(x)` is proved in
-  `MathlibExt.Analysis.ViscositySolution.Comparison`.
+  semicontinuous sub- and supersolutions and the structure conditions (3.13)–(3.14). The case of
+  continuous sub- and supersolutions is proved in `MathlibExt.Analysis.ViscositySolution.Comparison`
+  (`le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper`).
 * `hopfLax_isViscositySolution`: the Hopf–Lax formula gives a viscosity solution of
   `u_t + H(D_x u) = 0`, `u(·, 0) = g`, for convex superlinear `H` and bounded Lipschitz `g`.
 
@@ -54,7 +54,10 @@ If `u` is upper semicontinuous on `closure Ω` and a viscosity subsolution, `v` 
 semicontinuous on `closure Ω` and a viscosity supersolution of `F = 0` on `Ω`, and `u ≤ v` on
 `∂Ω`, then `u ≤ v` on `Ω`. Test functions are `C¹` here and `C²` in the user's guide; a
 `C¹`-tested subsolution is in particular a `C²`-tested one, so this is a special case of
-Theorem 3.3. -/
+Theorem 3.3. The case of continuous `u` and `v` is proved in
+`MathlibExt.Analysis.ViscositySolution` as
+`le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper`; what remains is
+semicontinuity. -/
 theorem_wanted le_of_isViscositySubsolution_of_isViscositySupersolution_of_structure
     {Ω : Set E} (hΩ : IsOpen Ω) (hΩb : Bornology.IsBounded Ω)
     (F : E → ℝ → (E →L[ℝ] ℝ) → ℝ)

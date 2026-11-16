@@ -12,9 +12,9 @@ semicontinuous on $\overline\Omega$ and a viscosity supersolution of $F = 0$ on 
 $u \le v$ on $\partial\Omega$, then $u \le v$ on $\Omega$.
 
 This is Theorem 3.3 of the user's guide for an $F$ that does not depend on the Hessian. The
-[model case](comparison-principle-model-case.md) $F = \gamma r + H(p) - f(x)$ with continuous $u, v$
-is proved. The general proof needs the full Lemma 3.1, $\alpha|x_\alpha - y_\alpha|^2 \to 0$, because
-(3.14) involves $\alpha|x - y|^2$; the model case only needs $|x_\alpha - y_\alpha| \to 0$.
+[continuous case](comparison-principle-continuous-case.md), with $u$ and $v$ continuous on
+$\overline\Omega$, is proved; what remains is semicontinuity, where the proof must locate the
+maximisers through limit points rather than moduli of continuity.
 
 ## Sources
 

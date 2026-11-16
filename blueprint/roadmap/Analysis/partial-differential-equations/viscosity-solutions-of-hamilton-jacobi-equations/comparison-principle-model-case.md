@@ -16,9 +16,9 @@ $\gamma\delta \le \gamma(u(\hat x) - v(\hat y)) \le f(\hat x) - f(\hat y)$, whic
 continuity of $f$. The formal proof chooses one large $\alpha$ quantitatively from the moduli of
 continuity of $u$, $v$ and $f$, instead of letting $\alpha \to \infty$.
 
-Theorem 3.3 itself covers semicontinuous $u, v$, $x$-dependent and second-order $F$ under the
-structure conditions (3.13)–(3.14); that general first-order statement is recorded as
-[wanted](comparison-principle-structure-conditions.md).
+Theorem 3.3 itself covers $x$-dependent $F$ under the structure conditions (3.13)–(3.14), proved
+here in the [continuous case](comparison-principle-continuous-case.md), as well as semicontinuous
+$u, v$ ([wanted](comparison-principle-structure-conditions.md)) and second-order equations.
 
 ## Background
 

@@ -14,11 +14,12 @@ public import Mathlib.Topology.UniformSpace.HeineCantor
 public import Mathlib.Topology.MetricSpace.ProperSpace
 
 /-!
-# Comparison principle for first-order Hamilton–Jacobi equations: the model case
+# Comparison principle for first-order Hamilton–Jacobi equations
 
-The doubling-of-variables proof of the comparison principle of Crandall and Lions, for the
-model equation `γ u + H(Du) = f(x)` with `γ > 0` on a bounded open subset of a
-finite-dimensional real inner product space, for continuous sub- and supersolutions.
+The doubling-of-variables proof of the comparison principle of Crandall and Lions on a bounded
+open subset of a finite-dimensional real inner product space, for continuous sub- and
+supersolutions: first for the model equation `γ u + H(Du) = f(x)` with `γ > 0`, then for a
+general first-order equation under the structure conditions of the user's guide.
 
 ## Main results
 
@@ -28,6 +29,9 @@ finite-dimensional real inner product space, for continuous sub- and supersoluti
   `u ≤ v` on `Ω`.
 * `eqOn_of_isViscositySolution`: uniqueness of viscosity solutions of the Dirichlet problem for
   that equation.
+* `le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper`: the comparison principle
+  for a general first-order `F(x, r, p)` under the structure conditions (3.13)–(3.14) of the
+  user's guide, for continuous sub- and supersolutions.
 
 ## References
 
@@ -209,5 +213,201 @@ theorem eqOn_of_isViscositySolution {Ω : Set E} (hΩ : IsOpen Ω) (hΩb : Borno
       (fun _ hy => (hbdry hy).le) x hx)
     (le_of_isViscositySubsolution_of_isViscositySupersolution hΩ hΩb hγ H hf hv hu hv'.1 hu'.2
       (fun _ hy => (hbdry hy).ge) x hx)
+
+/-- **Comparison principle for first-order equations, continuous case** (Crandall and Lions;
+Crandall, Ishii and Lions, *User's guide*, Bull. AMS 1992, Theorem 3.3 for an `F` independent of
+the Hessian variable, with continuous `u` and `v`; proof by Lemma 3.1's doubling of variables).
+Let `Ω` be a bounded open subset of a finite-dimensional real inner product space, `γ > 0`, and
+`F` satisfy
+* (3.13) `γ (r - s) ≤ F(x, r, p) - F(x, s, p)` for `r ≥ s` and `x ∈ closure Ω`;
+* (3.14) `F(y, r, α⟪x - y, ·⟫) - F(x, r, α⟪x - y, ·⟫) ≤ ω(α‖x - y‖² + ‖x - y‖)` for
+  `x, y ∈ closure Ω`, `r ∈ ℝ`, `α > 0`, with `ω(t) → 0` as `t → 0⁺`.
+If `u` is a viscosity subsolution and `v` a viscosity supersolution of `F = 0` on `Ω`, both
+continuous on `closure Ω`, and `u ≤ v` on `∂Ω`, then `u ≤ v` on `Ω`. No continuity of `F` is
+used. The penalisation parameter is chosen among `α₀ 2ᵏ` so that `α ‖x_α - y_α‖²` is small, the
+quantitative form of Lemma 3.1 (i). Theorem 3.3 also allows semicontinuous `u`, `v` and
+second-order `F`; that generality is not claimed here. -/
+theorem le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper {Ω : Set E}
+    (hΩ : IsOpen Ω) (hΩb : Bornology.IsBounded Ω) (F : E → ℝ → (E →L[ℝ] ℝ) → ℝ) {γ : ℝ}
+    (hγ : 0 < γ)
+    (hproper : ∀ x ∈ closure Ω, ∀ r s : ℝ, ∀ p : E →L[ℝ] ℝ, s ≤ r →
+      γ * (r - s) ≤ F x r p - F x s p)
+    (ω : ℝ → ℝ) (hω : Tendsto ω (𝓝[>] 0) (𝓝 0))
+    (hstruct : ∀ x ∈ closure Ω, ∀ y ∈ closure Ω, ∀ r : ℝ, ∀ α : ℝ, 0 < α →
+      F y r (α • innerSL ℝ (x - y)) - F x r (α • innerSL ℝ (x - y)) ≤
+        ω (α * ‖x - y‖ ^ 2 + ‖x - y‖))
+    {u v : E → ℝ} (hu : ContinuousOn u (closure Ω)) (hv : ContinuousOn v (closure Ω))
+    (hsub : IsViscositySubsolution F Ω u) (hsup : IsViscositySupersolution F Ω v)
+    (hbdry : ∀ x ∈ frontier Ω, u x ≤ v x) : ∀ x ∈ Ω, u x ≤ v x := by
+  intro z hz
+  by_contra hlt
+  replace hlt := not_le.mp hlt
+  set δ := u z - v z with hδ
+  have hδpos : 0 < δ := by linarith
+  set K := closure Ω with hKdef
+  have hK : IsCompact K := hΩb.isCompact_closure
+  have hzK : z ∈ K := subset_closure hz
+  have huc := hK.uniformContinuousOn_of_continuous hu
+  have hvc := hK.uniformContinuousOn_of_continuous hv
+  rw [Metric.uniformContinuousOn_iff] at huc hvc
+  obtain ⟨η₁, hη₁, hu'⟩ := huc (δ / 2) (by positivity)
+  obtain ⟨η₂, hη₂, hv'⟩ := hvc (δ / 2) (by positivity)
+  -- the modulus is below `γ δ` on `(0, ρ)`
+  obtain ⟨ρ, hρ, hωρ⟩ := Metric.tendsto_nhdsWithin_nhds.1 hω (γ * δ) (by positivity)
+  obtain ⟨Mu, hMu⟩ := hK.exists_bound_of_continuousOn hu
+  obtain ⟨Mv, hMv⟩ := hK.exists_bound_of_continuousOn hv
+  have hMu0 : 0 ≤ Mu := (norm_nonneg _).trans (hMu z hzK)
+  have hMv0 : 0 ≤ Mv := (norm_nonneg _).trans (hMv z hzK)
+  set B := Mu + Mv with hB
+  set μ := min (min η₁ η₂) (ρ / 2) with hμ
+  have hμpos : 0 < μ := lt_min (lt_min hη₁ hη₂) (by positivity)
+  set α₀ := 4 * (B + 1) / μ ^ 2 with hα₀
+  have hα₀pos : 0 < α₀ := by positivity
+  -- maximisers of the doubled functional for every penalisation
+  set Φ : ℝ → E × E → ℝ := fun α q => u q.1 - v q.2 - α / 2 * ‖q.1 - q.2‖ ^ 2 with hΦ
+  have hΦc : ∀ α, ContinuousOn (Φ α) (K ×ˢ K) := fun α =>
+    ((hu.comp continuousOn_fst fun q hq => hq.1).sub
+      (hv.comp continuousOn_snd fun q hq => hq.2)).sub
+      (continuous_const.mul ((continuous_fst.sub continuous_snd).norm.pow 2)).continuousOn
+  have hex : ∀ α, ∃ q ∈ K ×ˢ K, IsMaxOn (Φ α) (K ×ˢ K) q := fun α =>
+    (hK.prod hK).exists_isMaxOn ⟨(z, z), hzK, hzK⟩ (hΦc α)
+  choose q hqK hqmax using hex
+  set M : ℝ → ℝ := fun α => Φ α (q α) with hM
+  have hMδ : ∀ α, δ ≤ M α := fun α => by
+    have h0 : Φ α (z, z) = δ := by simp [hΦ, hδ]
+    have : Φ α (z, z) ≤ Φ α (q α) := hqmax α (show (z, z) ∈ K ×ˢ K from ⟨hzK, hzK⟩)
+    rw [h0] at this
+    exact this
+  have hbound : ∀ w ∈ K ×ˢ K, u w.1 - v w.2 ≤ B := fun w hw => by
+    have h1 : u w.1 ≤ Mu := (le_abs_self _).trans (hMu w.1 hw.1)
+    have h2 : -v w.2 ≤ Mv := (neg_le_abs _).trans (hMv w.2 hw.2)
+    linarith
+  -- halving the penalisation controls `α ‖x - y‖²` at the maximiser of `Φ (2α)`
+  have hstep : ∀ α, α / 2 * ‖(q (2 * α)).1 - (q (2 * α)).2‖ ^ 2 ≤ M α - M (2 * α) := fun α => by
+    have : Φ α (q (2 * α)) ≤ Φ α (q α) := hqmax α (hqK (2 * α))
+    change α / 2 * ‖(q (2 * α)).1 - (q (2 * α)).2‖ ^ 2 ≤ Φ α (q α) - Φ (2 * α) (q (2 * α))
+    simp only [hΦ] at this ⊢
+    nlinarith [this]
+  -- pick `k` with a small decrement along `α₀ 2ᵏ`
+  set a : ℕ → ℝ := fun k => α₀ * 2 ^ k with ha
+  obtain ⟨N, hN⟩ := exists_nat_gt (8 * B / ρ)
+  have hNpos : 0 < N := by
+    have : (0 : ℝ) ≤ 8 * B / ρ := by positivity
+    exact_mod_cast this.trans_lt hN
+  have htel : ∑ k ∈ Finset.range N, (M (a k) - M (a (k + 1))) ≤
+      ∑ _k ∈ Finset.range N, B / N := by
+    rw [Finset.sum_range_sub' (fun k => M (a k)), Finset.sum_const, Finset.card_range,
+      nsmul_eq_mul]
+    have h1 : M (a 0) ≤ B := by
+      have := hbound (q (a 0)) (hqK _)
+      have : 0 ≤ a 0 / 2 * ‖(q (a 0)).1 - (q (a 0)).2‖ ^ 2 := by
+        simp only [ha]; positivity
+      simp only [hM, hΦ] at *
+      linarith
+    have h2 := hMδ (a N)
+    have hNne : (N : ℝ) ≠ 0 := by exact_mod_cast hNpos.ne'
+    rw [mul_div_cancel₀ _ hNne]
+    linarith
+  obtain ⟨k, -, hk⟩ := Finset.exists_le_of_sum_le ⟨0, Finset.mem_range.2 hNpos⟩ htel
+  set α := a k with hαdef
+  have hαpos : 0 < α := by simp only [hαdef, ha]; positivity
+  have hα₀le : α₀ ≤ α := by
+    simp only [hαdef, ha]
+    exact le_mul_of_one_le_right hα₀pos.le (one_le_pow₀ (by norm_num))
+  have h2α : a (k + 1) = 2 * α := by simp only [ha, hαdef, pow_succ]; ring
+  set x := (q (2 * α)).1 with hx
+  set y := (q (2 * α)).2 with hy
+  have hxK : x ∈ K := (hqK (2 * α)).1
+  have hyK : y ∈ K := (hqK (2 * α)).2
+  have hBN : B / N < ρ / 8 := by
+    rw [div_lt_iff₀ (by exact_mod_cast hNpos)]
+    rw [div_lt_iff₀ hρ] at hN
+    linarith
+  have hsmall : 2 * α * ‖x - y‖ ^ 2 < ρ / 2 := by
+    have h1 := hstep α
+    have hk' : M α - M (2 * α) ≤ B / N := by rw [← h2α]; exact hk
+    nlinarith
+  -- `u x - v y ≥ δ` and `‖x - y‖ < μ`
+  have hgap : δ + (2 * α) / 2 * ‖x - y‖ ^ 2 ≤ u x - v y := by
+    have := hMδ (2 * α)
+    simp only [hM, hΦ] at this
+    linarith
+  have hsq : 0 ≤ (2 * α) / 2 * ‖x - y‖ ^ 2 := by positivity
+  have hxy : ‖x - y‖ < μ := by
+    have h3 : (2 * α) / 2 * ‖x - y‖ ^ 2 ≤ B := by
+      have := hbound (q (2 * α)) (hqK _)
+      linarith
+    have h4 : ‖x - y‖ ^ 2 < μ ^ 2 := by
+      have hμ2 : 0 < μ ^ 2 := by positivity
+      have hα₀' : α₀ * μ ^ 2 = 4 * (B + 1) := by
+        rw [hα₀]; field_simp
+      nlinarith
+    exact lt_of_pow_lt_pow_left₀ 2 hμpos.le h4
+  have hxyd : dist x y < μ := by rwa [dist_eq_norm]
+  have hdu : |u x - u y| < δ / 2 :=
+    hu' x hxK y hyK (hxyd.trans_le ((min_le_left _ _).trans (min_le_left _ _)))
+  have hdv : |v x - v y| < δ / 2 :=
+    hv' x hxK y hyK (hxyd.trans_le ((min_le_left _ _).trans (min_le_right _ _)))
+  have hxΩ : x ∈ Ω := by
+    by_contra hxΩ
+    have hfr : x ∈ frontier Ω := by rw [hΩ.frontier_eq]; exact ⟨hxK, hxΩ⟩
+    have := hbdry x hfr
+    have := (abs_lt.mp hdv).2
+    linarith
+  have hyΩ : y ∈ Ω := by
+    by_contra hyΩ
+    have hfr : y ∈ frontier Ω := by rw [hΩ.frontier_eq]; exact ⟨hyK, hyΩ⟩
+    have := hbdry y hfr
+    have := (abs_lt.mp hdu).2
+    linarith
+  -- the two viscosity tests, with the common gradient `p = 2α ⟪x - y, ·⟫`
+  set p : E →L[ℝ] ℝ := (2 * α) • innerSL ℝ (x - y) with hp
+  have hsubx : F x (u x) p ≤ 0 := by
+    have hφ := (hasFDerivAt_half_mul_norm_sub_sq (2 * α) y x).const_add (v y)
+    have h := hsub.2 x hxΩ (fun w => v y + (2 * α) / 2 * ‖w - y‖ ^ 2)
+      (contDiff_const.add (contDiff_half_mul_norm_sub_sq (2 * α) y)) ?_
+    · rw [hφ.fderiv] at h
+      exact h
+    refine IsMaxOn.isLocalMaxOn fun w hw => ?_
+    have : Φ (2 * α) (w, y) ≤ Φ (2 * α) (q (2 * α)) :=
+      hqmax (2 * α) (show (w, y) ∈ K ×ˢ K from ⟨subset_closure hw, hyK⟩)
+    simp only [hΦ, ← hx, ← hy] at this
+    change u w - (v y + (2 * α) / 2 * ‖w - y‖ ^ 2) ≤ u x - (v y + (2 * α) / 2 * ‖x - y‖ ^ 2)
+    linarith
+  have hsupy : 0 ≤ F y (v y) p := by
+    have hψ := (hasFDerivAt_half_mul_norm_sub_sq (2 * α) x y).const_sub (u x)
+    have hder : -((2 * α) • innerSL ℝ (y - x)) = p := by
+      ext w
+      simp [hp]
+      ring
+    have h := hsup.2 y hyΩ (fun w => u x - (2 * α) / 2 * ‖w - x‖ ^ 2)
+      (contDiff_const.sub (contDiff_half_mul_norm_sub_sq (2 * α) x)) ?_
+    · rw [hψ.fderiv, hder] at h
+      exact h
+    refine IsMinOn.isLocalMinOn fun w hw => ?_
+    have : Φ (2 * α) (x, w) ≤ Φ (2 * α) (q (2 * α)) :=
+      hqmax (2 * α) (show (x, w) ∈ K ×ˢ K from ⟨hxK, subset_closure hw⟩)
+    simp only [hΦ, ← hx, ← hy] at this
+    rw [norm_sub_rev x w, norm_sub_rev x y] at this
+    change v y - (u x - (2 * α) / 2 * ‖y - x‖ ^ 2) ≤ v w - (u x - (2 * α) / 2 * ‖w - x‖ ^ 2)
+    linarith
+  -- properness at `x`, then the structure condition between `y` and `x`
+  have hprop := hproper x hxK (u x) (v y) p (by linarith)
+  have hγδ : γ * δ ≤ γ * (u x - v y) := mul_le_mul_of_nonneg_left (by linarith) hγ.le
+  by_cases hxyeq : x = y
+  · have hFeq : F y (v y) p = F x (v y) p := by rw [hxyeq]
+    have := mul_pos hγ hδpos
+    linarith
+  · have htpos : 0 < 2 * α * ‖x - y‖ ^ 2 + ‖x - y‖ := by
+      have : 0 < ‖x - y‖ := norm_pos_iff.2 (sub_ne_zero.2 hxyeq)
+      positivity
+    have htlt : 2 * α * ‖x - y‖ ^ 2 + ‖x - y‖ < ρ := by
+      have : ‖x - y‖ < ρ / 2 := hxy.trans_le (min_le_right _ _)
+      linarith
+    have hωt := hωρ htpos (by rw [Real.dist_eq, sub_zero, abs_of_pos htpos]; exact htlt)
+    rw [Real.dist_eq, sub_zero] at hωt
+    have hst := hstruct x hxK y hyK (v y) (2 * α) (by positivity)
+    have := (abs_lt.mp hωt).2
+    linarith
 
 end MathlibExt.Analysis.ViscositySolution
