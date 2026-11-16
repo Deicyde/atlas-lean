@@ -77,7 +77,7 @@ private theorem sum_dart_snd_snd (u v : V) :
 weighted Laplacian of the multigraph whose edges are the darts (ordered adjacent pairs) of `G`,
 each with weight `1/2`, is `SimpleGraph.lapMatrix ℝ G = D - A`; each edge of `G` appears as two
 opposite darts. This identifies `L_G = ∑_{(a,b) ∈ E} (δ_a - δ_b)(δ_a - δ_b)ᵀ` with
-`L_G = D_G - A_G` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
+`L_G = D_G - A_G` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025,
 equation (3.3) and the remark after it). -/
 theorem laplacian_dart_eq_lapMatrix :
     laplacian (fun d : G.Dart => d.fst) (fun d => d.snd) (fun _ => (1 / 2 : ℝ)) =

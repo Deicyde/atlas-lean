@@ -22,7 +22,7 @@ For a finite multigraph with nonnegative edge weights (conductances) `w`, the ef
 conductance between vertices `s` and `t` is the minimum energy
 `xᵀ L x = ∑_e w_e (x(end₁ e) - x(end₂ e))²` of a potential `x` with `x(s) = 0` and `x(t) = 1`,
 and the effective resistance is its reciprocal (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, Section 12.2). This energy definition avoids the pseudo-inverse; its
+Theory*, draft of 2 April 2025, Section 12.2). This energy definition avoids the pseudo-inverse; its
 agreement with `(δ_s - δ_t)ᵀ L⁺ (δ_s - δ_t)` (Spielman, Section 12.1) is
 `effectiveResistance_eq_sub_of_laplacian_mulVec`.
 
@@ -49,15 +49,15 @@ variable {V E : Type*} [DecidableEq V] [DecidableEq E] [Fintype E] [Fintype V]
 /-- **Effective conductance.** For edge weights `w`, the infimum of the Laplacian energy
 `xᵀ L x` over all potentials `x` with `x s = 0` and `x t = 1`, i.e. twice the minimum spring
 energy when `s` and `t` are held at distance one (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, Section 12.2, where it is written `C_eff(s, t)`). It is `0` when `s = t`,
-where no potential is admissible. -/
+Theory*, draft of 2 April 2025, Section 12.2, where it is written `C_eff(s, t)`). It is `0` when
+`s = t`, where no potential is admissible. -/
 noncomputable def effectiveConductance (w : E → ℝ) (s t : V) : ℝ :=
   sInf {q | ∃ x : V → ℝ, x s = 0 ∧ x t = 1 ∧ q = x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x)}
 
 /-- **Effective resistance.** The reciprocal of the effective conductance (D. A. Spielman,
-*Spectral and Algebraic Graph Theory*, draft 2019, Section 12.2, `R_eff(s, t) = 1 / C_eff(s, t)`).
-With Lean's convention `0⁻¹ = 0` it is `0` when the effective conductance vanishes, for instance
-between different connected components. -/
+*Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Section 12.2,
+`R_eff(s, t) = 1 / C_eff(s, t)`). With Lean's convention `0⁻¹ = 0` it is `0` when the effective
+conductance vanishes, for instance between different connected components. -/
 noncomputable def effectiveResistance (w : E → ℝ) (s t : V) : ℝ :=
   (effectiveConductance end₁ end₂ w s t)⁻¹
 
@@ -83,7 +83,7 @@ theorem effectiveConductance_nonneg {w : E → ℝ} (hw : 0 ≤ w) (s t : V) :
 
 /-- **Every admissible potential bounds the effective conductance.** For nonnegative weights and
 any `x` with `x s = 0` and `x t = 1`, `C_eff(s, t) ≤ xᵀ L x` (D. A. Spielman, *Spectral and
-Algebraic Graph Theory*, draft 2019, Section 12.2). -/
+Algebraic Graph Theory*, draft of 2 April 2025, Section 12.2). -/
 theorem effectiveConductance_le_energy {w : E → ℝ} (hw : 0 ≤ w) {s t : V} {x : V → ℝ}
     (hs : x s = 0) (ht : x t = 1) :
     effectiveConductance end₁ end₂ w s t ≤ x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x) :=
@@ -92,7 +92,7 @@ theorem effectiveConductance_le_energy {w : E → ℝ} (hw : 0 ≤ w) {s t : V} 
 /-- **Rayleigh's monotonicity law.** If `0 ≤ w ≤ w'` edgewise, then the effective conductance
 between any two vertices for the weights `w` is at most that for `w'`: lowering conductances
 (raising resistances) cannot increase an effective conductance (D. A. Spielman, *Spectral and
-Algebraic Graph Theory*, draft 2019, Theorem 12.3.1). -/
+Algebraic Graph Theory*, draft of 2 April 2025, Theorem 12.3.1). -/
 theorem effectiveConductance_mono {w w' : E → ℝ} (hw : 0 ≤ w) (hle : w ≤ w') (s t : V) :
     effectiveConductance end₁ end₂ w s t ≤ effectiveConductance end₁ end₂ w' s t := by
   by_cases hne : {q | ∃ x : V → ℝ, x s = 0 ∧ x t = 1 ∧
@@ -122,8 +122,8 @@ theorem effectiveConductance_mono {w w' : E → ℝ} (hw : 0 ≤ w) (hle : w ≤
 /-- **Rayleigh's monotonicity law for effective resistance.** If `0 ≤ w ≤ w'` edgewise and the
 effective conductance between `s` and `t` is positive for `w`, then the effective resistance
 between them for `w'` is at most that for `w`: raising resistances cannot decrease an effective
-resistance (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, the remark after
-Theorem 12.3.1). -/
+resistance (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, the
+remark after Theorem 12.3.1). -/
 theorem effectiveResistance_anti {w w' : E → ℝ} (hw : 0 ≤ w) (hle : w ≤ w') {s t : V}
     (hpos : 0 < effectiveConductance end₁ end₂ w s t) :
     effectiveResistance end₁ end₂ w' s t ≤ effectiveResistance end₁ end₂ w s t :=
@@ -149,9 +149,9 @@ private theorem laplacian_mulVec_eq_zero_of_energy_eq_zero {w : E → ℝ} (hw :
 vertices `s` and `t`, if the potentials `v` satisfy `L v = δ_s - δ_t` (one unit of current injected
 at `s` and extracted at `t`), then the effective resistance between `s` and `t` is `v(s) - v(t)`,
 and this number is positive. Equivalently `R_eff(s, t) = (δ_s - δ_t)ᵀ L⁺ (δ_s - δ_t)`, which is how
-D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Section 12.1 defines it; the
-computation of Section 12.2 shows that its reciprocal is the minimum energy `C_eff(s, t)`. No
-connectivity hypothesis is needed: if `s` and `t` lie in different components, no such `v`
+D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Section 12.1 defines
+it; the computation of Section 12.2 shows that its reciprocal is the minimum energy `C_eff(s, t)`.
+No connectivity hypothesis is needed: if `s` and `t` lie in different components, no such `v`
 exists. -/
 theorem effectiveResistance_eq_sub_of_laplacian_mulVec {w : E → ℝ} (hw : 0 ≤ w) {s t : V}
     (hst : s ≠ t) {v : V → ℝ}

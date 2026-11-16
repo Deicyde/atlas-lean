@@ -23,8 +23,8 @@ For a finite multigraph given by endpoint maps `end₁ end₂ : E → V` and rea
 `w : E → ℝ`, the weighted Laplacian is `L = B · diag(w) · Bᵀ`, where `B` is the oriented
 incidence matrix of `MathlibExt.Combinatorics.EndpointMapMultigraph.OrientedIncidence`. This is
 the matrix `L_G = ∑_{(a,b) ∈ E} w_{a,b} (δ_a - δ_b)(δ_a - δ_b)ᵀ` of D. A. Spielman, *Spectral
-and Algebraic Graph Theory* (draft, 2019), equation (3.3). Parallel edges add their weights; a
-loop has a zero incidence column and contributes nothing.
+and Algebraic Graph Theory* (draft of 2 April 2025), equation (3.3). Parallel edges add their
+weights; a loop has a zero incidence column and contributes nothing.
 
 Main results:
 
@@ -55,7 +55,7 @@ variable {V E : Type*} [DecidableEq V] [DecidableEq E] [Fintype E] (end₁ end�
 /-- **Weighted Laplacian of a multigraph.** For endpoint maps `end₁ end₂ : E → V` and edge weights
 `w : E → ℝ`, the matrix `B · diag(w) · Bᵀ` where `B` is the oriented incidence matrix; it equals
 `∑_e w_e (δ_{end₁ e} - δ_{end₂ e})(δ_{end₁ e} - δ_{end₂ e})ᵀ` (D. A. Spielman, *Spectral and
-Algebraic Graph Theory*, draft 2019, equation (3.3)). -/
+Algebraic Graph Theory*, draft of 2 April 2025, equation (3.3)). -/
 noncomputable def laplacian (w : E → ℝ) : Matrix V V ℝ :=
   orientedIncidence end₁ end₂ * diagonal w * (orientedIncidence end₁ end₂)ᵀ
 
@@ -81,7 +81,7 @@ variable [Fintype V]
 
 /-- **Laplacian quadratic form.** For every real vector `x`,
 `xᵀ L x = ∑_e w_e (x(end₁ e) - x(end₂ e))²` (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, equation (3.1)). -/
+Theory*, draft of 2 April 2025, equation (3.1)). -/
 theorem dotProduct_mulVec_laplacian (w : E → ℝ) (x : V → ℝ) :
     x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x) = ∑ e, w e * (x (end₁ e) - x (end₂ e)) ^ 2 := by
   have h : x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x) =
@@ -104,8 +104,8 @@ theorem laplacian_mulVec_one (w : E → ℝ) : laplacian end₁ end₂ w *ᵥ 1 
 
 omit [Fintype V] in
 /-- **The Laplacian of nonnegative weights is positive semidefinite** (D. A. Spielman, *Spectral
-and Algebraic Graph Theory*, draft 2019, Section 3.1: the quadratic form (3.1) is a sum of
-nonnegative terms). -/
+and Algebraic Graph Theory*, draft of 2 April 2025, Section 3.1: the quadratic form (3.1) is a sum
+of nonnegative terms). -/
 theorem posSemidef_laplacian [Finite V] {w : E → ℝ} (hw : 0 ≤ w) :
     (laplacian end₁ end₂ w).PosSemidef := by
   have := Fintype.ofFinite V
@@ -118,8 +118,8 @@ theorem posSemidef_laplacian [Finite V] {w : E → ℝ} (hw : 0 ≤ w) :
 omit [Fintype V] in
 /-- **Loewner monotonicity in the weights.** If `w ≤ w'` edgewise then `L_{w'} - L_w` is positive
 semidefinite: increasing edge weights (in particular adding edges) can only increase the
-Laplacian in the Loewner order (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft
-2019, Section 6.2). -/
+Laplacian in the Loewner order (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of
+2 April 2025, Section 6.2). -/
 theorem posSemidef_laplacian_sub_of_le [Finite V] {w w' : E → ℝ} (h : w ≤ w') :
     (laplacian end₁ end₂ w' - laplacian end₁ end₂ w).PosSemidef := by
   rw [← laplacian_sub]
@@ -127,7 +127,8 @@ theorem posSemidef_laplacian_sub_of_le [Finite V] {w w' : E → ℝ} (h : w ≤ 
 
 /-- **Kernel of the Laplacian.** For a loopless finite multigraph with positive edge weights, a
 real vector `x` satisfies `L x = 0` if and only if `x` is constant on each connected component
-(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, proof of Lemma 3.1.1). -/
+(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, proof of Lemma
+3.1.1). -/
 theorem laplacian_mulVec_eq_zero_iff {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) (x : V → ℝ) :
     laplacian end₁ end₂ w *ᵥ x = 0 ↔
@@ -151,8 +152,8 @@ theorem laplacian_mulVec_eq_zero_iff {w : E → ℝ} (hw : ∀ e, 0 < w e)
 /-- **Rank of the Laplacian plus number of components.** For a loopless finite multigraph with
 positive edge weights, the rank of its weighted Laplacian plus the number of connected components
 equals the number of vertices; equivalently the multiplicity of the eigenvalue `0` is the number
-of components. This extends D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
-Lemma 3.1.1, whose proof shows that for a connected graph the constants span the kernel. -/
+of components. This extends D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April
+2025, Lemma 3.1.1, whose proof shows that for a connected graph the constants span the kernel. -/
 theorem rank_laplacian_add_card_connectedComponent {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) :
     (laplacian end₁ end₂ w).rank +
@@ -179,7 +180,8 @@ def indicator (S : Finset V) : V → ℝ := fun v => if v ∈ S then 1 else 0
 
 /-- **Quadratic form of an indicator is the cut weight.** For every vertex set `S`,
 `1_Sᵀ L 1_S` is the total weight of the edges with exactly one endpoint in `S`
-(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, proof of Theorem 20.1.1). -/
+(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, proof of Theorem
+20.1.1). -/
 theorem indicator_dotProduct_mulVec_laplacian (w : E → ℝ) (S : Finset V) :
     indicator S ⬝ᵥ (laplacian end₁ end₂ w *ᵥ indicator S) = ∑ e ∈ cut end₁ end₂ S, w e := by
   classical
@@ -191,8 +193,8 @@ theorem indicator_dotProduct_mulVec_laplacian (w : E → ℝ) (S : Finset V) :
 `xᵀ L x / xᵀ x` over all nonzero `x` orthogonal to the constant vector (the second-smallest
 Laplacian eigenvalue is the best such bound, by Courant–Fischer). Then for every vertex set `S`,
 `λ · |S| · |V \ S| ≤ |V| · w(∂S)`, where `w(∂S)` is the weight of the cut of `S`. With `s = |S|/|V|`
-this is `w(∂S)/|S| ≥ λ (1 - s)`, D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
-Theorem 20.1.1 (stated there for unit weights); in particular `θ_G ≥ λ/2`. -/
+this is `w(∂S)/|S| ≥ λ (1 - s)`, D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2
+April 2025, Theorem 20.1.1 (stated there for unit weights); in particular `θ_G ≥ λ/2`. -/
 theorem mul_card_mul_card_compl_le_of_forall (w : E → ℝ) {lam : ℝ}
     (hlam : ∀ x : V → ℝ, x ⬝ᵥ 1 = 0 → lam * (x ⬝ᵥ x) ≤ x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x))
     (S : Finset V) :

@@ -24,7 +24,7 @@ degree `d(a)` of a vertex, the volume `d(S) = ∑_{a ∈ S} d(a)` of a vertex se
 direction of Cheeger's inequality for conductance: if `λ · yᵀDy ≤ yᵀLy` for every `y` with
 `yᵀd = 0` (the second eigenvalue `ν₂` of the normalized Laplacian is the best such `λ`), then
 `λ d(S) d(V \ S) ≤ d(V) w(∂S)` for every `S` (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, Lemma 20.3.1 and inequality (20.2)); and the hard direction
+Theory*, draft of 2 April 2025, Lemma 20.3.1 and inequality (20.2)); and the hard direction
 (`exists_threshold_cut_le_sqrt`): a threshold cut of any degree-centered vector `z` has
 conductance at most `√(2 zᵀLz / zᵀDz)` (Spielman, Theorem 21.1.3).
 -/
@@ -58,7 +58,7 @@ and `λ` a lower bound for the generalized Rayleigh quotient `yᵀLy / yᵀDy` o
 `∑_a d(a) y(a) = 0` (the second-smallest eigenvalue `ν₂` of the normalized Laplacian is the best
 such bound). Then for every vertex set `S`, `λ · d(S) · d(V \ S) ≤ d(V) · w(∂S)`, i.e.
 `ν₂ ≤ d(V) w(∂S) / (d(S) d(V \ S))`, which gives `ν₂ / 2 ≤ φ(S)` (D. A. Spielman, *Spectral and
-Algebraic Graph Theory*, draft 2019, Lemma 20.3.1 and inequality (20.2)). -/
+Algebraic Graph Theory*, draft of 2 April 2025, Lemma 20.3.1 and inequality (20.2)). -/
 theorem mul_volume_mul_volume_compl_le_of_forall (end₁ end₂ : E → V) {w : E → ℝ} (hw : 0 ≤ w)
     {lam : ℝ}
     (hlam : ∀ y : V → ℝ, ∑ a, weightedDegree end₁ end₂ w a * y a = 0 →
@@ -447,9 +447,9 @@ those where `z < 0`, each have volume at most `d(V)/2`) with `zᵀDz = ∑_a d(a
 some threshold set `S_τ = {a : z(a) < τ}` has conductance
 `φ(S_τ) = w(∂S_τ) / min(d(S_τ), d(V \ S_τ)) ≤ √(2 zᵀLz / zᵀDz)`; the conductance is stated here
 multiplied out, with its denominator positive (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, Theorem 21.1.3 with Definition 21.1.1, stated there for positive weights).
-The proof is the one of that chapter, after Trevisan: a threshold drawn with density `2|τ|`
-gives `E[w(∂S_τ)] ≤ ∑_e w_e |z(a) - z(b)| (|z(a)| + |z(b)|) ≤ √(zᵀLz) √(2 zᵀDz)` by
+Theory*, draft of 2 April 2025, Theorem 21.1.3 with Definition 21.1.1, stated there for positive
+weights). The proof is the one of that chapter, after Trevisan: a threshold drawn with density
+`2|τ|` gives `E[w(∂S_τ)] ≤ ∑_e w_e |z(a) - z(b)| (|z(a)| + |z(b)|) ≤ √(zᵀLz) √(2 zᵀDz)` by
 Cauchy–Schwarz (inequality (21.2)) and `E[min(d(S_τ), d(V \ S_τ))] = zᵀDz` by centering; here the
 expectation is a finite sum over the thresholds at the values of `z` and at `0`. -/
 theorem exists_threshold_cut_le_sqrt (end₁ end₂ : E → V) {w : E → ℝ} (hw : 0 ≤ w) (z : V → ℝ)

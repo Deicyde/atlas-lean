@@ -27,7 +27,7 @@ decreasing order. This file connects the graph to the Courant–Fischer theorem 
 `MathlibExt.Analysis.InnerProductSpace.CourantFischer`:
 
 * `algebraicConnectivity_mul_le`: `λ₂ ‖x‖² ≤ xᵀ L x` for every `x` orthogonal to the constants
-  (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Section 3.2, from
+  (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Section 3.2, from
   Theorem 2.0.1);
 * `algebraicConnectivity_mul_card_mul_card_compl_le`: the easy direction of Cheeger's inequality,
   `λ₂ |S| |V \ S| ≤ |V| w(∂S)` (Spielman, Theorem 20.1.1, weighted form);
@@ -58,8 +58,8 @@ theorem isSymmetric_toEuclideanLin_laplacian (w : E → ℝ) :
 /-- **Algebraic connectivity.** The second-smallest eigenvalue `λ₂` of the weighted Laplacian
 `laplacian end₁ end₂ w`, i.e. the eigenvalue of index `|V| - 2` in the decreasing enumeration
 `LinearMap.IsSymmetric.eigenvalues`; it is set to `0` when there are fewer than two vertices
-(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Lemma 3.1.1, where the
-eigenvalues are written `0 = λ₁ ≤ λ₂ ≤ ⋯ ≤ λₙ`). -/
+(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Lemma 3.1.1, where
+the eigenvalues are written `0 = λ₁ ≤ λ₂ ≤ ⋯ ≤ λₙ`). -/
 noncomputable def algebraicConnectivity (w : E → ℝ) : ℝ :=
   if h : 2 ≤ Fintype.card V then
     (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).eigenvalues finrank_euclideanSpace
@@ -81,8 +81,8 @@ private theorem norm_toLp_sq (v : V → ℝ) :
 
 /-- **`λ₂` bounds the Rayleigh quotient on vectors orthogonal to the constants.** For nonnegative
 weights and every real `x` with `∑ x = 0`, `λ₂ · xᵀx ≤ xᵀ L x` (D. A. Spielman, *Spectral and
-Algebraic Graph Theory*, draft 2019, Section 3.2: the Courant–Fischer theorem, Theorem 2.0.1,
-gives `λ₂ = min_{x ⊥ 1} xᵀLx / xᵀx` because `1` spans an eigenvector of `λ₁ = 0`). -/
+Algebraic Graph Theory*, draft of 2 April 2025, Section 3.2: the Courant–Fischer theorem, Theorem
+2.0.1, gives `λ₂ = min_{x ⊥ 1} xᵀLx / xᵀx` because `1` spans an eigenvector of `λ₁ = 0`). -/
 theorem algebraicConnectivity_mul_le {w : E → ℝ} (hw : 0 ≤ w) {x : V → ℝ} (hx : x ⬝ᵥ 1 = 0) :
     algebraicConnectivity end₁ end₂ w * (x ⬝ᵥ x) ≤ x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x) := by
   set L := laplacian end₁ end₂ w
@@ -163,8 +163,8 @@ theorem algebraicConnectivity_mul_le {w : E → ℝ} (hw : 0 ≤ w) {x : V → �
 /-- **Easy direction of Cheeger's inequality, eigenvalue form.** For nonnegative weights and every
 vertex set `S`, `λ₂ · |S| · |V \ S| ≤ |V| · w(∂S)`; with `s = |S|/|V|` this reads
 `w(∂S)/|S| ≥ λ₂ (1 - s)`, hence the isoperimetric ratio satisfies `θ_G ≥ λ₂/2`
-(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Theorem 20.1.1, stated there
-for unit weights). -/
+(D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Theorem 20.1.1,
+stated there for unit weights). -/
 theorem algebraicConnectivity_mul_card_mul_card_compl_le {w : E → ℝ} (hw : 0 ≤ w)
     (S : Finset V) :
     algebraicConnectivity end₁ end₂ w * S.card * (Finset.univ \ S).card ≤
@@ -175,7 +175,7 @@ theorem algebraicConnectivity_mul_card_mul_card_compl_le {w : E → ℝ} (hw : 0
 /-- **`λ₂ > 0` exactly for connected graphs.** For a loopless finite multigraph with positive
 edge weights and at least two vertices, the second-smallest Laplacian eigenvalue is positive if
 and only if the multigraph is connected (D. A. Spielman, *Spectral and Algebraic Graph Theory*,
-draft 2019, Lemma 3.1.1). -/
+draft of 2 April 2025, Lemma 3.1.1). -/
 theorem algebraicConnectivity_pos_iff {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) (h2 : 2 ≤ Fintype.card V) :
     0 < algebraicConnectivity end₁ end₂ w ↔ (underlyingGraph end₁ end₂).Connected := by
@@ -313,8 +313,8 @@ private theorem eigenvalues_congr {T₁ T₂ : EuclideanSpace ℝ V →ₗ[ℝ] 
 /-- **Laplacian eigenvalues are monotone in the Loewner order.** If `L_{w'} - L_w` is positive
 semidefinite, then each eigenvalue of `L_w` (in the decreasing enumeration) is at most the
 corresponding eigenvalue of `L_{w'}`; with `G = (V, E, w')` and `H = (V, E, w)` this is
-D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Lemma 6.2.1 for `c = 1`
-(`G ≽ H` implies `λ_k(G) ≥ λ_k(H)` for all `k`), proved here from Weyl's inequality. -/
+D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April 2025, Lemma 6.2.1 for
+`c = 1` (`G ≽ H` implies `λ_k(G) ≥ λ_k(H)` for all `k`), proved here from Weyl's inequality. -/
 theorem eigenvalues_laplacian_le_of_posSemidef {w w' : E → ℝ}
     (h : (laplacian end₁ end₂ w' - laplacian end₁ end₂ w).PosSemidef) (k : Fin (Fintype.card V)) :
     (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).eigenvalues finrank_euclideanSpace k ≤
@@ -340,15 +340,15 @@ theorem eigenvalues_laplacian_le_of_posSemidef {w w' : E → ℝ}
 /-- **Raising weights raises every Laplacian eigenvalue.** If `w ≤ w'` edgewise, each eigenvalue
 of `L_w` is at most the corresponding eigenvalue of `L_{w'}`: removing an edge or decreasing its
 weight can only decrease the Laplacian eigenvalues (D. A. Spielman, *Spectral and Algebraic Graph
-Theory*, draft 2019, Corollary 6.2.2). -/
+Theory*, draft of 2 April 2025, Corollary 6.2.2). -/
 theorem eigenvalues_laplacian_mono {w w' : E → ℝ} (hle : w ≤ w') (k : Fin (Fintype.card V)) :
     (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).eigenvalues finrank_euclideanSpace k ≤
       (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w').eigenvalues finrank_euclideanSpace k :=
   eigenvalues_laplacian_le_of_posSemidef end₁ end₂ (posSemidef_laplacian_sub_of_le end₁ end₂ hle) k
 
 /-- **Algebraic connectivity is monotone in the weights.** If `w ≤ w'` edgewise then
-`λ₂(L_w) ≤ λ₂(L_{w'})` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
-Corollary 6.2.2 for `k = 2`). -/
+`λ₂(L_w) ≤ λ₂(L_{w'})` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft of 2 April
+2025, Corollary 6.2.2 for `k = 2`). -/
 theorem algebraicConnectivity_mono {w w' : E → ℝ} (hle : w ≤ w') :
     algebraicConnectivity end₁ end₂ w ≤ algebraicConnectivity end₁ end₂ w' := by
   unfold algebraicConnectivity
