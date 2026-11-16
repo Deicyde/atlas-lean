@@ -7,3 +7,7 @@ Complexity-theoretic foundations of cryptography and derandomization: one-way fu
 - [Yao's XOR lemma](yao-s-xor-lemma/README.md)
 - [Impagliazzo-Wigderson: exponential circuit hardness in E derandomizes BPP](nisan-wigderson.md)
 - [One-way functions imply P ≠ NP](owf-implies-p-ne-np.md)
+
+## Related topics
+
+- [Expander graphs](../../GraphTheory/graph-families-and-operations/expander-graphs/README.md): pseudorandom graphs; random walks on them reduce the randomness needed for error reduction, and they give unconditional derandomization of undirected connectivity.

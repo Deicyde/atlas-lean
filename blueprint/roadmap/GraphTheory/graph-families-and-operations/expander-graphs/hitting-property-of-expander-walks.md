@@ -6,3 +6,14 @@ random walk `V₀, V₁, …, V_t` with `t` steps from a uniformly random start 
 at all `t + 1` times with probability at most `(μ + λ (1 - μ)) ^ (t + 1)` (S. Vadhan,
 *Pseudorandomness* (2012), Theorem 4.17, where the walk `V₁, …, V_t` has `t - 1` steps and the
 bound is `(μ + λ (1 - μ)) ^ t`).
+
+Taking `B` the set of random strings on which a one-sided-error algorithm errs, a walk of `t`
+steps uses `log N + t log d` random bits, against `(t + 1) log N` for independent samples, and still
+drives the error down exponentially in `t`: error reduction for RP with few random bits.
+
+## Background
+
+- [Probability of an event for a random walk on a regular graph](walk-prob.md): the walk
+  distribution used in the statement.
+- [Bounded-error probabilistic classes RP and BPP](../../../TheoryOfComputation/randomized-and-quantum-complexity/bounded-error-probabilistic-classes-rp-and-bpp/README.md):
+  the hitting property is the tool for randomness-efficient error reduction of RP algorithms.
