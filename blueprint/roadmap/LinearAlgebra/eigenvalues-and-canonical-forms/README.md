@@ -3,6 +3,7 @@
 Eigenvalues, eigenspaces and characteristic polynomials of matrices and endomorphisms, and the normal forms they lead to: diagonalization, triangularization, Jordan and Smith normal forms.
 
 - [Diagonalization](diagonalization/README.md)
+- [Power iteration and the Rayleigh quotient](power-iteration-and-the-rayleigh-quotient/README.md)
 - [Eigenvalues and spectral norm of Hermitian matrices](eigenvalues-and-spectral-norm-of-hermitian-matri/README.md)
 - [Eigenvalues of the products AB and BA](eigenvalues-of-the-products-ab-and-ba/README.md)
 - [Generalized eigenvalues of max and min matrices](generalized-eigenvalues-of-max-and-min-matrices/README.md)
