@@ -3841,6 +3841,7 @@
   "MathlibExt/Probability/CorrelationInequalities/ReimerWeightedPairs": {"to": "Probability/correlation-inequalities/reimer-inequality", "title": "Weighted disjoint-pair sums"},
   "MathlibExt/Probability/CorrelationInequalities/Russo": {"to": "Probability/correlation-inequalities/harris-fkg-bk", "title": "Russo's formula and pivotal coordinates"},
   "MathlibExt/Probability/CramerDecomposition": {"to": "Probability/characteristic-functions", "title": "Cramér's decomposition theorem"},
+  "MathlibExt/Probability/CramerLDPUpperBound": {"to": "Probability/large-deviations", "title": "Cramér's theorem"},
   "MathlibExt/Probability/CramerRateFunction": {"to": "Probability/large-deviations", "title": "Cramér's theorem"},
   "MathlibExt/Probability/CramerUpperBound": {"to": "Probability/large-deviations", "title": "Cramér's theorem"},
   "MathlibExt/Probability/CramerWold": {"to": "Probability/convergence-of-measures", "title": "Cramér–Wold device"},

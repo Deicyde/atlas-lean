@@ -16,8 +16,10 @@ follows by truncation, and the contracted rate
 $\inf \{ \int b \log b \, d\alpha : \int z \, b(z) \, d\alpha(z) = x \}$ equals $\Lambda^*(x)$ by a minimax
 argument (Lemma 1.4 of Section 3 of the notes).
 
-Only the statement is recorded here. The repository proves the fixed-direction Chernoff bound and
-the convexity and lower semicontinuity of $\Lambda^*$.
+The full statement is recorded as wanted. Under the same hypotheses the repository proves that
+$\Lambda^*$ is a [good rate function](is-good-rate-function-cramer-rate-functi.md) and the
+[upper bound for closed sets](limsup-log-empirical-mean-measure-vec-le.md); what remains is the lower
+bound for open sets, by exponential tilting and the law of large numbers under the tilted law.
 
 ## Informally uses
 

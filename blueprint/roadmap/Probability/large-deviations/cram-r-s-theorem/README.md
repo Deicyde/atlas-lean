@@ -2,10 +2,13 @@
 
 For i.i.d. random vectors with a finite moment generating function, the empirical means satisfy a
 large deviation principle whose rate function is the Legendre transform of the logarithmic moment
-generating function. The theorem itself is recorded as wanted; the proved pages give the
-Chernoff upper bound in a fixed direction and the properties of the rate function.
+generating function. Under a finite moment generating function the upper bound for closed sets
+and the goodness of the rate function are proved; the lower bound, and so the full theorem,
+is recorded as wanted.
 
 - [Cramér's theorem in ℝᵈ](satisfies-ldp-empirical-mean-measure-vec.md)
+- [Cramér upper bound for closed sets](limsup-log-empirical-mean-measure-vec-le.md)
+- [Compact sub-level sets of the Cramér rate function](is-good-rate-function-cramer-rate-functi.md)
 - [Law of the empirical mean](empirical-mean-measure-vec.md)
 - [Real-valued log-MGF expression](log-mgfvec.md)
 - [Chernoff bound for the empirical mean of real-valued i.i.d. variables](measure-empirical-mean-le-of-threshold.md)
@@ -31,6 +34,16 @@ Chernoff upper bound in a fixed direction and the properties of the rate functio
 - [Cramér rate function as a real supremum under finite moments](cramer-rate-function-eq-of-real-i-sup.md)
 - [Cramér rate function vanishes at the mean](cramer-rate-function-eq-zero-at-mean.md)
 - [Cramér rate function of a constant law](cramer-rate-function-const.md)
+- [A bound for the log moment generating function in the coordinate directions](coord-bound.md)
+- [Fixed-direction Chernoff bound for every sample size](empirical-mean-measure-vec-le.md)
+- [Chernoff bound on a compact set](exists-empirical-mean-measure-vec-le-of.md)
+- [Exponential tightness of the empirical means](exists-is-compact-empirical-mean-measure.md)
+- [Local Chernoff bound near a point](exists-is-open-empirical-mean-measure-ve.md)
+- [Inner product with a coordinate vector](inner-single-one.md)
+- [Coordinate boxes are bounded](is-bounded-box.md)
+- [Coordinate boxes are compact](is-compact-box.md)
+- [The laws of the empirical means are probability measures](is-probability-measure-empirical-mean-me.md)
+- [The coordinate bound dominates the log moment generating function in the coordinate directions](log-mgfvec-single-le-coord-bound.md)
 
 ## Related topics
 

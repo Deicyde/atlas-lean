@@ -19,11 +19,11 @@ For i.i.d. random vectors `X₀, X₁, …` in `ℝᵈ` whose moment generating 
 `(1/n) ∑_{i<n} Xᵢ` satisfy the large deviation principle with the good rate function
 `Λ*(x) = sup_t (⟪t, x⟫ - log E[exp ⟪t, X₀⟫])`.
 
-The repository proves the ingredients: the fixed-direction Chernoff bound
-(`CramerUpperBound.cramer_upper_bound`) and the convexity and lower semicontinuity of `Λ*`
-(`CramerRateFunction`). The full principle needs, for the upper bound, exponential tightness
-and a covering of compact sets by half-spaces, and, for the lower bound, exponential tilting
-`dμ_θ/dμ = exp ⟪θ, x⟫ / E[exp ⟪θ, X₀⟫]` followed by the law of large numbers under `μ_θ`.
+Under the same hypotheses the repository proves the goodness of `Λ*`
+(`CramerLDPUpperBound.isGoodRateFunction_cramerRateFunction`) and the upper bound for closed sets
+(`CramerLDPUpperBound.limsup_log_empiricalMeanMeasureVec_le`). What remains is the lower bound for
+open sets: exponential tilting `dμ_θ/dμ = exp ⟪θ, x⟫ / E[exp ⟪θ, X₀⟫]` followed by the law of
+large numbers under `μ_θ`, with an approximation argument at points where no `θ` has mean `x`.
 
 ## Source
 
