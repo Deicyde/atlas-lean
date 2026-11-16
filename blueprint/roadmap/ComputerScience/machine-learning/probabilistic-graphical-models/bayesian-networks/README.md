@@ -30,3 +30,4 @@
 - [The law of an ancestral set depends only on its tables](marginal-joint-eq-anc-prod.md)
 - [Global Markov property for finite sets of nodes](cond-indep-of-d-separated-finset.md)
 - [The global Markov property](cond-indep-of-d-separated.md)
+- [Completeness of d-separation](exists-not-cond-indep-of-not-d-separated.md)

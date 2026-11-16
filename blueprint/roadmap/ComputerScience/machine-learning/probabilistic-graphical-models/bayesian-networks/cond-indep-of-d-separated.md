@@ -4,3 +4,8 @@
 Lauritzen, Dawid, Larsen & Leimer 1990): if `Z` d-separates `X` from `Y` in the graph of a
 Bayesian network, then `X` and `Y` are conditionally independent given `Z` under its joint
 law. No disjointness of `X`, `Y`, `Z` is needed.
+
+## Background
+
+- [Completeness of d-separation](exists-not-cond-indep-of-not-d-separated.md): the converse,
+  recorded as a wanted theorem.
