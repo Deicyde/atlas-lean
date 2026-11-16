@@ -5,8 +5,9 @@ vectors is M-convex if and only if it is the set of indicator vectors of the bas
 on $\iota$ whose ground set is all of $\iota$.
 
 This is the equivalence (7) ⇔ (8) of Brändén and Huh's Theorem 3.10. The other conditions of
-that theorem (a Lorentzian, or $c$-Rayleigh, polynomial with support $J$) are not formalised
-here.
+that theorem (a Lorentzian, or $c$-Rayleigh, polynomial with support $J$) are not proved
+here; the Lorentzian part for matroids is the wanted statement
+[basis generating polynomials of matroids are Lorentzian](basis-generating-polynomial-mem-l.md).
 
 ## Sources
 
