@@ -1775,6 +1775,7 @@
   "MathlibExt/Analysis/Convex/FenchelMoreau": {"to": "Analysis/convex-analysis-and-variations", "title": "Fenchel–Moreau theorem"},
   "MathlibExt/Analysis/Convex/FinsetSum": {"to": "Analysis/convex-analysis-and-variations", "title": "Operations preserving convexity"},
   "MathlibExt/Analysis/Convex/FirstOrderCondition": {"to": "Analysis/convex-analysis-and-variations", "title": "First-order conditions for convexity and optimality"},
+  "MathlibExt/Analysis/Convex/Cocoercivity": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/GradientDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/GradientDescentExponent": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},
   "MathlibExt/Analysis/Convex/GradientDescentStronglyConvex": {"to": "Analysis/convex-analysis-and-variations", "title": "Gradient descent"},

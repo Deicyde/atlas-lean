@@ -23,6 +23,15 @@
 - [Strong convexity modulus is at most the smoothness constant](le-of-strong-convex-on-of-lipschitz-with.md)
 - [Linear convergence of gradient descent for strongly convex functions](gradient-descent-strongly-convex-linear.md)
 
+## Expansiveness of the gradient step
+
+How far the gradient update $G(w) = w - \alpha \nabla f(w)$ can move two points apart; these properties drive the stability analysis of stochastic gradient descent.
+
+- [Co-coercivity of the gradient](inner-gradient-sub-ge.md)
+- [The gradient update is $(1 + \alpha\beta)$-expansive](norm-gradient-step-sub-le-one-add-mul.md)
+- [The gradient update of a convex smooth function is non-expansive](norm-gradient-step-sub-le.md)
+- [The gradient update of a Lipschitz function is $\alpha L$-bounded](norm-smul-gradient-le.md)
+
 ## Related topics
 
 - [First-order conditions for convexity and optimality](../first-order-conditions-for-convexity/README.md)
