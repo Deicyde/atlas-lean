@@ -31,6 +31,10 @@
 - [Assignments contradicting an intervention have probability zero](joint-intervene-eq-zero.md)
 - [Joint law as interventional law times the node's table](joint-eq-intervene-mul-cpt.md)
 - [The intervention `do(X_k = a)` does not change the law of the non-descendants of `k`](marginal-intervene-of-not-is-descendant.md)
+- [Overwriting an assignment on `T`](fill.md)
+- [Splitting a sum by the values on `T`](sum-filter-mul-eq-sum-marginal.md)
+- [Relating two nested interventions](joint-mutilate-set-mul.md)
+- [The empty intervention](joint-mutilate-set-empty.md)
 - [The back-door adjustment](backdoor-adjustment.md)
 - [The front-door adjustment](frontdoor-adjustment.md)
 - [The graph `G_{\underline Z}`](delete-out.md)
@@ -42,14 +46,10 @@
 - [Active paths of `G_{\bar Z}` avoid `Z`](not-mem-of-mem-active-path.md)
 - [The graphical step of Rule 2](d-separated-mutilate-set-parents.md)
 - [No node of `Y` is a parent of a node of `Z`](not-edge-of-d-separated-delete-out.md)
-- [Factorization against an intervention](joint-eq-mutilate-set-mul.md)
-- [Overwriting an assignment on `T`](fill-on.md)
-- [Splitting a sum by the values on `T`](sum-filter-mul-eq-sum-fill-on.md)
 - [Rule 2 of the do-calculus without a prior intervention](cond-mutilate-set-eq-cond.md)
 - [Rule 3 of the do-calculus](do-calculus-rule3.md)
 - [Arrows of `G_{\underline Z}`](edge-delete-out-iff.md)
 - [Assignments contradicting a set intervention have probability zero](joint-mutilate-set-eq-zero.md)
-- [Conditioning on the intervened variables is vacuous](marginal-mutilate-set-union.md)
 
 ## Related topics
 

@@ -18,5 +18,8 @@ to this augmented diagram.
 
 - [The global Markov property](../bayesian-networks/cond-indep-of-d-separated.md): d-separation
   in the augmented diagram implies the conditional independence that equates the two sides.
+
+## Background
+
 - [The truncated factorization for a set of nodes](joint-mutilate-set.md): the law of the
-  submodel of `do(x)` and of `do(x, z)`.
+  submodels of `do(x)` and of `do(x, z)` that the rule compares.

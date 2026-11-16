@@ -24,8 +24,6 @@ the do-calculus (Pearl 1995, Theorem 3, eq. (11)) says that if `Y` and `Z` are d
   d-separated by `S` in `G_{\underline Z}`, then `Y` is d-separated from the parents of `Z`
   outside `Z ∪ S` by `Z ∪ S` in `G_{\bar Z}`: an active path to such a parent `t` of `z ∈ Z`
   extends by the arrow `t → z` to an active back-door path from `Y` to `z`.
-* `BayesNet.joint_eq_mutilateSet_mul`: on assignments agreeing with `z` on `Z`, the joint law
-  is the interventional law of `do(z)` times the tables of the nodes of `Z`.
 * `BayesNet.cond_mutilateSet_eq_cond`: the case `X = ∅` of Rule 2, for any network, given
   `P(z, s) > 0`.
 * `BayesNet.doCalculus_rule2`: **Rule 2 of the do-calculus** for networks with strictly
@@ -197,84 +195,6 @@ theorem not_edge_of_dSeparated_deleteOut {Y Z S : Finset (Fin n)} (hYZ : Disjoin
 
 /-! ### The probabilistic step -/
 
-/-- **Factorization against an intervention.** On assignments agreeing with `v` on `Z`, the
-joint law is the interventional law of `do(X_Z = v_Z)` times the tables of the nodes of `Z`. -/
-theorem joint_eq_mutilateSet_mul (Z : Finset (Fin n)) (v x : Fin n → α)
-    (hx : ∀ i ∈ Z, x i = v i) :
-    c.joint x = (c.mutilateSet Z v).joint x *
-      ∏ j ∈ Z, (c.cpt j (c.paVal j x)).weights (x j) := by
-  classical
-  rw [joint_mutilateSet, joint_eq_prod]
-  have hZ : ∏ j, (if j ∈ Z then (if x j = v j then (1 : ℝ) else 0)
-      else (c.cpt j (c.paVal j x)).weights (x j)) =
-      ∏ j ∈ univ.filter (· ∉ Z), (c.cpt j (c.paVal j x)).weights (x j) := by
-    rw [← prod_filter_not_mul_prod_filter univ (· ∈ Z)]
-    have h1 : ∏ j ∈ univ.filter (· ∈ Z),
-        (if j ∈ Z then (if x j = v j then (1 : ℝ) else 0)
-          else (c.cpt j (c.paVal j x)).weights (x j)) = 1 :=
-      prod_eq_one fun j hj => by
-        have hj' : j ∈ Z := (mem_filter.1 hj).2
-        simp [hj', hx j hj']
-    rw [h1, mul_one]
-    refine prod_congr rfl fun j hj => ?_
-    have hj' : j ∉ Z := (mem_filter.1 hj).2
-    simp only [hj', ite_false]
-  rw [hZ, ← prod_filter_not_mul_prod_filter univ (· ∈ Z), filter_mem_eq_inter, univ_inter]
-  rfl
-
-/-- **Overwriting an assignment on `T`.** The assignment equal to `τ` on `T` and to `x'`
-elsewhere. -/
-def fillOn {n : ℕ} (T : Finset (Fin n)) (x' : Fin n → α) (τ : T → α) : Fin n → α :=
-  fun i => if h : i ∈ T then τ ⟨i, h⟩ else x' i
-
-omit [Nonempty α] in
-/-- **Splitting a sum by the values on `T`.** A sum against `P` over the assignments agreeing
-with `x'` on `R`, of a weight `g` depending only on `T ∪ R` (with `T` disjoint from `R`), is a
-sum over the values `τ` on `T` of `g` times the marginal of `P` on `T ∪ R`. -/
-theorem sum_filter_mul_eq_sum_fillOn [Fintype α] [DecidableEq α]
-    (P : (Fin n → α) → ℝ) {R T : Finset (Fin n)} (hTR : Disjoint T R) (x' : Fin n → α)
-    (g : (Fin n → α) → ℝ) (hg : ∀ x y, (∀ i ∈ T ∪ R, x i = y i) → g x = g y) :
-    ∑ x with ∀ i ∈ R, x i = x' i, P x * g x =
-      ∑ τ : T → α, g (fillOn T x' τ) * marginal P ↑(T ∪ R) (fillOn T x' τ) := by
-  rw [← Finset.sum_fiberwise (univ.filter fun x : Fin n → α => ∀ i ∈ R, x i = x' i)
-    (fun x => fun i : T => x i)]
-  refine sum_congr rfl fun τ _ => ?_
-  rw [filter_filter, marginal_coe, mul_sum]
-  have hiff : ∀ x : Fin n → α, ((∀ i ∈ R, x i = x' i) ∧ (fun i : T => x i) = τ) ↔
-      ∀ i ∈ T ∪ R, x i = fillOn T x' τ i := by
-    intro x
-    constructor
-    · rintro ⟨h1, h2⟩ i hi
-      by_cases hiT : i ∈ T
-      · simp only [fillOn, hiT, dite_true]
-        exact congrFun h2 ⟨i, hiT⟩
-      · simp only [fillOn, hiT, dite_false]
-        exact h1 i ((mem_union.1 hi).resolve_left hiT)
-    · intro h
-      refine ⟨fun i hi => ?_, funext fun i => ?_⟩
-      · have hiT : i ∉ T := fun hiT => disjoint_left.1 hTR hiT hi
-        rw [h i (mem_union_right _ hi)]
-        simp [fillOn, hiT]
-      · rw [h i (mem_union_left _ i.2)]
-        simp [fillOn]
-  refine sum_congr (filter_congr fun x _ => hiff x) fun x hx => ?_
-  rw [mul_comm, hg x (fillOn T x' τ) (mem_filter.1 hx).2]
-
-/-- **Fixing intervened variables is vacuous**, for any subset of the intervened set. -/
-theorem marginal_mutilateSet_union_of_subset [Fintype α] {X X' : Finset (Fin n)}
-    (hX' : X' ⊆ X) (S : Set (Fin n)) (v : Fin n → α) :
-    marginal (c.mutilateSet X v).joint (↑X' ∪ S) v = marginal (c.mutilateSet X v).joint S v := by
-  classical
-  unfold marginal
-  refine sum_subset (fun y hy => ?_) fun y hy hy' => ?_
-  · simp only [mem_filter, mem_univ, true_and] at hy ⊢
-    exact fun i hi => hy i (Or.inr hi)
-  · simp only [mem_filter, mem_univ, true_and, not_forall] at hy hy'
-    obtain ⟨i, hi, hne⟩ := hy'
-    rcases hi with hi | hi
-    · exact c.joint_mutilateSet_eq_zero (hX' (mem_coe.1 hi)) hne
-    · exact absurd (hy i hi) hne
-
 /-- **Rule 2 of the do-calculus without a prior intervention.** For any network, if `Y` and `Z`
 (disjoint) are d-separated by `S` in `G_{\underline Z}`, then
 `P(y | do(z), s) = P(y | z, s)` wherever `P(z, s) > 0`. -/
@@ -326,19 +246,20 @@ theorem cond_mutilateSet_eq_cond [Fintype α] {Y Z S : Finset (Fin n)}
     simp only [hxj, hpa]
   -- the marginals of the joint as sums over the values on `T`
   have hsum : ∀ R : Finset (Fin n), S' ⊆ R → Disjoint T R →
-      marginal c.joint ↑R v = ∑ τ : T → α, g (fillOn T v τ) *
-        marginal cz.joint ↑(T ∪ R) (fillOn T v τ) := by
+      marginal c.joint ↑R v = ∑ τ : T → α, g (fill T v τ) *
+        marginal cz.joint ↑(T ∪ R) (fill T v τ) := by
     intro R hR hTR
-    rw [marginal_coe, ← sum_filter_mul_eq_sum_fillOn cz.joint hTR v g (hg R hR)]
+    rw [marginal_coe, ← sum_filter_mul_eq_sum_marginal cz.joint hTR v g (hg R hR)]
     refine sum_congr rfl fun x hx => ?_
-    exact c.joint_eq_mutilateSet_mul Z v x fun i hi =>
-      (mem_filter.1 hx).2 i (hR (mem_union_left _ hi))
+    have hxZ : ∀ i ∈ Z, x i = v i := fun i hi => (mem_filter.1 hx).2 i (hR (mem_union_left _ hi))
+    rw [← c.joint_mutilateSet_empty v, c.joint_mutilateSet_mul (empty_subset Z) v hxZ,
+      sdiff_empty]
   have hfill : ∀ (τ : T → α) (R : Finset (Fin n)), Disjoint T R →
-      marginal cz.joint ↑R (fillOn T v τ) = marginal cz.joint ↑R v := by
+      marginal cz.joint ↑R (fill T v τ) = marginal cz.joint ↑R v := by
     intro τ R hTR
     refine marginal_congr_of_eqOn _ _ fun i hi => ?_
     have hiT : i ∉ T := fun h => disjoint_left.1 hTR h hi
-    simp [fillOn, hiT]
+    simp [fill, hiT]
   have hR1 : S' ⊆ Y ∪ Z ∪ S := fun i hi => by
     rcases mem_union.1 hi with h | h <;> simp [h]
   have hTR1 : Disjoint T (Y ∪ Z ∪ S) := by
@@ -352,15 +273,15 @@ theorem cond_mutilateSet_eq_cond [Fintype α] {Y Z S : Finset (Fin n)}
     apply hpos
     rw [h2]
     refine sum_eq_zero fun τ _ => ?_
-    have hle : marginal cz.joint ↑(T ∪ S') (fillOn T v τ) ≤ marginal cz.joint ↑S' v := by
+    have hle : marginal cz.joint ↑(T ∪ S') (fill T v τ) ≤ marginal cz.joint ↑S' v := by
       rw [← hfill τ S' hTS']
       exact marginal_le_of_subset hcz0 subset_union_right _
-    have hnn := marginal_nonneg hcz0 (↑(T ∪ S') : Set (Fin n)) (fillOn T v τ)
+    have hnn := marginal_nonneg hcz0 (↑(T ∪ S') : Set (Fin n)) (fill T v τ)
     rw [le_antisymm (h0 ▸ hle) hnn, mul_zero]
-  have hterm : ∀ τ : T → α, marginal cz.joint ↑(T ∪ (Y ∪ Z ∪ S)) (fillOn T v τ) =
-      ρ * marginal cz.joint ↑(T ∪ S') (fillOn T v τ) := by
+  have hterm : ∀ τ : T → α, marginal cz.joint ↑(T ∪ (Y ∪ Z ∪ S)) (fill T v τ) =
+      ρ * marginal cz.joint ↑(T ∪ S') (fill T v τ) := by
     intro τ
-    have hc := hci (fillOn T v τ)
+    have hc := hci (fill T v τ)
     rw [hfill τ S' hTS', hfill τ (Y ∪ S') (disjoint_union_right.2 ⟨hTY, hTS'⟩)] at hc
     have e1 : Y ∪ T ∪ S' = T ∪ (Y ∪ Z ∪ S) := by
       ext i; simp only [S', mem_union]; tauto

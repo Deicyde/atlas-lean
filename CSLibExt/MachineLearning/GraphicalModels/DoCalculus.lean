@@ -27,7 +27,7 @@ is `G_{\bar X}`; `BayesNet.deleteOut b Z` is the graph `G_{\underline Z}`.
 ## Main results
 
 * `BayesNet.edge_deleteOut_iff`: its arrows are those of `b` not leaving `Z`.
-* `BayesNet.marginal_mutilateSet_union`: under `do(X = x)`, also fixing the intervened
+* `BayesNet.marginal_mutilateSet_union_of_subset`: under `do(X = x)`, also fixing intervened
   variables at `x` does not change a marginal.
 * `BayesNet.doCalculus_rule1`: **Rule 1 of the do-calculus** (insertion and deletion of
   observations): if `Y` and `Z` are d-separated by `X ∪ W` in `G_{\bar X}`, then
@@ -89,12 +89,10 @@ theorem joint_mutilateSet_eq_zero {X : Finset (Fin n)} {v y : Fin n → α}
   rw [joint_mutilateSet]
   exact prod_eq_zero (mem_univ i) (by simp [hi, hy])
 
-/-- **Conditioning on the intervened variables is vacuous.** Under `do(X = x)`, fixing in
-addition the intervened variables at their forced values does
-not change a marginal: `P(x_S, x | do(x)) = P(x_S | do(x))`. -/
-theorem marginal_mutilateSet_union [Fintype α] (X : Finset (Fin n))
-    (S : Set (Fin n)) (v : Fin n → α) :
-    marginal (b.mutilateSet X v).joint (↑X ∪ S) v = marginal (b.mutilateSet X v).joint S v := by
+/-- **Fixing intervened variables is vacuous**, for any subset of the intervened set. -/
+theorem marginal_mutilateSet_union_of_subset [Fintype α] {X X' : Finset (Fin n)}
+    (hX' : X' ⊆ X) (S : Set (Fin n)) (v : Fin n → α) :
+    marginal (b.mutilateSet X v).joint (↑X' ∪ S) v = marginal (b.mutilateSet X v).joint S v := by
   classical
   unfold marginal
   refine sum_subset (fun y hy => ?_) fun y hy hy' => ?_
@@ -103,7 +101,7 @@ theorem marginal_mutilateSet_union [Fintype α] (X : Finset (Fin n))
   · simp only [mem_filter, mem_univ, true_and, not_forall] at hy hy'
     obtain ⟨i, hi, hne⟩ := hy'
     rcases hi with hi | hi
-    · exact b.joint_mutilateSet_eq_zero (mem_coe.1 hi) hne
+    · exact b.joint_mutilateSet_eq_zero (hX' (mem_coe.1 hi)) hne
     · exact absurd (hy i hi) hne
 
 /-- **Rule 1 of the do-calculus** (insertion and deletion of observations; Pearl 1995,
@@ -123,7 +121,7 @@ theorem doCalculus_rule1 [Fintype α] (X : Finset (Fin n)) {Y Z W : Set (Fin n)}
   have e2 : Y ∪ (↑X ∪ W) = ↑X ∪ (Y ∪ W) := by ext; simp only [Set.mem_union]; tauto
   have e3 : Z ∪ (↑X ∪ W) = ↑X ∪ (Z ∪ W) := by ext; simp only [Set.mem_union]; tauto
   rw [e1, e2, e3] at hci
-  simp only [marginal_mutilateSet_union] at hci
+  simp only [b.marginal_mutilateSet_union_of_subset (subset_refl X)] at hci
   have hW : marginal Q W v ≠ 0 := by
     have hle := marginal_anti hQ0 (Set.subset_union_right : W ⊆ Z ∪ W) v
     have hnn := marginal_nonneg hQ0 (Z ∪ W) v

@@ -39,7 +39,7 @@ Surveys* 2009, Definition 4, eq. (27)).
 * `SCM.doSet s W w`: the submodel of the intervention `do(X_W = w)`.
 * `SCM.counterfactual s W w u`: the counterfactual values `X_{W ← w}(u)`.
 * `SCM.cfProb s W w E Y`: the probability that the counterfactual event `Y` holds under
-  `do(X_W = w)` given that the factual event `E` was observed (abduction, action, prediction).
+  `do(X_W = w)` given that the factual event `E` was observed.
 
 ## Main results
 
@@ -250,11 +250,10 @@ theorem counterfactual_eq_solve {W : Finset (Fin n)} {w : Fin n → α} {u : Fin
   · simp only [doSet, hk, dite_false]
     exact (s.solve_eq u k).symm
 
-/-- **Counterfactual probability given evidence** (abduction, action, prediction; Pearl,
-*Statistics Surveys* 2009, §3.4, the computation of `P(Y_{x₁} = y₁ | Y = y₀, X = x₀)` following
-eq. (28)): the probability that the event `Y` holds for the counterfactual values
-`X_{W ← w}(u)`, under the law of the disturbances conditioned on the event that the factual
-values `X(u)` satisfy `E`. -/
+/-- **Counterfactual probability given evidence** (Pearl, *Statistics Surveys* 2009, §3.4,
+the computation of `P(Y_{x₁} = y₁ | Y = y₀, X = x₀)` following eq. (28)): the probability that
+the event `Y` holds for the counterfactual values `X_{W ← w}(u)`, under the law of the
+disturbances conditioned on the event that the factual values `X(u)` satisfy `E`. -/
 noncomputable def cfProb [Fintype β] (W : Finset (Fin n)) (w : Fin n → α)
     (E Y : (Fin n → α) → Prop) [DecidablePred E] [DecidablePred Y] : ℝ :=
   (∑ u : Fin n → β, (∏ k, (s.noise k).weights (u k)) *
@@ -312,12 +311,12 @@ theorem cfProb_of_consistent [Fintype β] [Fintype α] [DecidableEq α] {W : Fin
   rfl
 
 /-- **The probability of necessity under monotonicity** (Pearl, *Statistics Surveys* 2009,
-eq. (53) and Theorem 3): for a binary treatment `X_i` and a binary outcome `X_j`, the probability
-of necessity `PN = P(Y_{x'} = y' | X = x, Y = y)` (with `x, y` = `true` and `x', y'` = `false`)
-is identified from the observational law and the interventional law of `do(X_i = false)` when
-`Y` is monotonic in `X` (`Y_{x'}(u) = true` implies `Y_x(u) = true`):
-`PN = (P(y) - P(y | do(x'))) / P(x, y)`. `SCM.cfProb_necessity_eq` rewrites this as the
-right-hand side of eq. (54). -/
+eq. (53) and Theorem 3): in a model whose variables are all binary (the framework uses one
+value type), for the treatment `X_i` and the outcome `X_j`, the probability of necessity
+`PN = P(Y_{x'} = y' | X = x, Y = y)` (with `x, y` = `true` and `x', y'` = `false`) is identified
+from the observational law and the interventional law of `do(X_i = false)` when `Y` is monotonic
+in `X` (`Y_{x'}(u) = true` implies `Y_x(u) = true`): `PN = (P(y) - P(y | do(x'))) / P(x, y)`.
+`SCM.cfProb_necessity_eq` rewrites this as the right-hand side of eq. (54). -/
 theorem cfProb_necessity [Fintype β] (s : SCM Bool β n) (i j : Fin n)
     (hmono : ∀ u, s.counterfactual {i} (fun _ => false) u j = true →
       s.counterfactual {i} (fun _ => true) u j = true) :

@@ -1,12 +1,13 @@
 # The probability of necessity under monotonicity
 
 **The probability of necessity under monotonicity** (Pearl, *Statistics Surveys* 2009,
-eq. (53) and Theorem 3): for a binary treatment `X_i` and a binary outcome `X_j`, the probability
-of necessity `PN = P(Y_{x'} = y' | X = x, Y = y)` (with `x, y` = `true` and `x', y'` = `false`)
-is identified from the observational law and the interventional law of `do(X_i = false)` when
-`Y` is monotonic in `X` (`Y_{x'}(u) = true` implies `Y_x(u) = true`):
-`PN = (P(y) - P(y | do(x'))) / P(x, y)`. `SCM.cfProb_necessity_eq` rewrites this as the
-right-hand side of eq. (54).
+eq. (53) and Theorem 3): in a model whose variables are all binary (the framework uses one
+value type), for the treatment `X_i` and the outcome `X_j`, the probability of necessity
+`PN = P(Y_{x'} = y' | X = x, Y = y)` (with `x, y` = `true` and `x', y'` = `false`) is identified
+from the observational law and the interventional law of `do(X_i = false)` when `Y` is monotonic
+in `X` (`Y_{x'}(u) = true` implies `Y_x(u) = true`): `PN = (P(y) - P(y | do(x'))) / P(x, y)`.
+`SCM.cfProb_necessity_eq` rewrites this as the right-hand side of eq. (54). Pearl needs only the
+treatment and the outcome to be binary.
 
 The probability of necessity is a counterfactual (third-rung) quantity: it conditions on the
 factual treatment and outcome and asks about the outcome under the opposite treatment. It is not

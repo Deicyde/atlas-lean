@@ -10,8 +10,8 @@ the outcome node `y` that begins with an arrow into `k`, then
 
 - [Strong ignorability](../../../../Probability/nonparametric-survival/potential-outcomes-and-causal-identification/strongly-ignorable.md):
   the potential-outcome condition under which the same adjustment formula holds; Pearl (2009,
-  *Statistics Surveys*, §4.3) explains the back-door criterion as a graphical test for
-  conditional ignorability.
+  *Statistics Surveys*, §4.2, eqs. (39)–(40)) explains the back-door criterion as a graphical
+  test for conditional ignorability.
 - [Rule 2 of the do-calculus](do-calculus-rule2.md) and
   [Rule 3 of the do-calculus](do-calculus-rule3.md): the symbolic calculus that Pearl (1995, §4)
   introduces to derive causal-effect formulas such as this one step by step.

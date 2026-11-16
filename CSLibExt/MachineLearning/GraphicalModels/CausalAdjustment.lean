@@ -45,8 +45,10 @@ nodes removed.
   `∑_m P(M = m | X_k = a) ∑_{a'} P(X_y = v | X_k = a', M = m) P(X_k = a')`, assuming
   `P(X_k = a', M = m) > 0` for all `a'` and `m`.
 
-Both formulas are stated for a single outcome node. The three rules of the do-calculus (Pearl
-1995; Pearl 2009, Theorem 3.4.1) are not covered.
+Both formulas are stated for a single outcome node. The do-calculus (Pearl 1995, Theorem 3), of
+which both are consequences, is in `CSLibExt/MachineLearning/GraphicalModels/DoCalculus.lean`
+(Rule 1) and `CSLibExt/MachineLearning/GraphicalModels/DoCalculusExchange.lean` (Rule 2); Rule 3
+is recorded in `WantedExt/ComputerScience/DoCalculusWanted.lean`.
 
 ## References
 
@@ -63,13 +65,15 @@ open Finset Convexity MetaMathlibExt.FiniteWeight
 
 variable {α : Type*}
 
-/-- The assignment equal to `t` on `T` and to `x'` elsewhere. -/
-private def fill {n : ℕ} (T : Finset (Fin n)) (x' : Fin n → α) (t : T → α) : Fin n → α :=
+/-- **Overwriting an assignment on `T`.** The assignment equal to `t` on `T` and to `x'`
+elsewhere. -/
+def fill {n : ℕ} (T : Finset (Fin n)) (x' : Fin n → α) (t : T → α) : Fin n → α :=
   fun i => if h : i ∈ T then t ⟨i, h⟩ else x' i
 
-/-- Splitting a sum against `P` by the values `t` of the variables in `T` (disjoint from the
-fixed set `S`), for a weight `g` depending only on the variables in `T ∪ S`. -/
-private lemma sum_filter_mul_eq_sum_marginal {n : ℕ} [Fintype α] [DecidableEq α]
+/-- **Splitting a sum by the values on `T`.** A sum against `P` by the values `t` of the
+variables in `T` (disjoint from the fixed set `S`), for a weight `g` depending only on the
+variables in `T ∪ S`. -/
+theorem sum_filter_mul_eq_sum_marginal {n : ℕ} [Fintype α] [DecidableEq α]
     (P : (Fin n → α) → ℝ) {S T : Finset (Fin n)} (hTS : Disjoint T S) (x' : Fin n → α)
     (g : (Fin n → α) → ℝ) (hg : ∀ x y, (∀ i ∈ T ∪ S, x i = y i) → g x = g y) :
     ∑ x with ∀ i ∈ S, x i = x' i, P x * g x =
@@ -340,9 +344,10 @@ private lemma not_isDescendant_of_blocked {k m : Fin n} (hkm' : m ≠ k)
     exact absurd (h1'.1.trans this.1) (lt_irrefl _)
   · exact h2'
 
-/-- Relating two interventions `do(X_W = w)` and `do(X_{W'} = w)` for `W ⊆ W'` on assignments
-agreeing with `w` on `W'`: the larger one drops the tables of `W' \ W`. -/
-private lemma joint_mutilateSet_mul {W W' : Finset (Fin n)} (hWW' : W ⊆ W')
+/-- **Relating two nested interventions.** For `do(X_W = w)` and `do(X_{W'} = w)` with
+`W ⊆ W'`, on assignments agreeing with `w` on `W'`: the larger one drops the tables of
+`W' \ W`. -/
+theorem joint_mutilateSet_mul {W W' : Finset (Fin n)} (hWW' : W ⊆ W')
     (w : Fin n → α) {x : Fin n → α} (hx : ∀ j ∈ W', x j = w j) :
     (b.mutilateSet W w).joint x = (b.mutilateSet W' w).joint x *
       ∏ j ∈ W' \ W, (b.cpt j (b.paVal j x)).weights (x j) := by
@@ -356,8 +361,8 @@ private lemma joint_mutilateSet_mul {W W' : Finset (Fin n)} (hWW' : W ⊆ W')
     · simp [hj, hj', hx j hj']
     · simp [hj, hj']
 
-/-- Without intervened nodes, the joint is that of `b`. -/
-private lemma joint_mutilateSet_empty (w : Fin n → α) :
+/-- **The empty intervention.** Without intervened nodes, the joint is that of `b`. -/
+theorem joint_mutilateSet_empty (w : Fin n → α) :
     (b.mutilateSet ∅ w).joint = b.joint := by
   classical
   funext x

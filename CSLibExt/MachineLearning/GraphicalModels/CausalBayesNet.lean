@@ -55,8 +55,10 @@ The global Markov property (d-separation implies conditional independence) is in
 `CSLibExt/MachineLearning/GraphicalModels/GlobalMarkov.lean`; the general back-door adjustment
 (any `Z` meeting the back-door criterion, for example one containing nodes after the treatment
 in the order) and the front-door adjustment are in
-`CSLibExt/MachineLearning/GraphicalModels/CausalAdjustment.lean`; the do-calculus is not
-covered.
+`CSLibExt/MachineLearning/GraphicalModels/CausalAdjustment.lean`; the do-calculus is in
+`CSLibExt/MachineLearning/GraphicalModels/DoCalculus.lean` (Rule 1),
+`CSLibExt/MachineLearning/GraphicalModels/DoCalculusExchange.lean` (Rule 2) and
+`WantedExt/ComputerScience/DoCalculusWanted.lean` (Rule 3, wanted).
 
 ## References
 
