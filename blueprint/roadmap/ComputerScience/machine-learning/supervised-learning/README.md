@@ -17,4 +17,5 @@ Prediction from labelled data: least squares, ridge, lasso, logistic regression,
 - [Sufficient input subsets](sufficient-input-subsets/README.md)
 - [Matrix-aware optimizers](matrix-aware-optimizers/README.md)
 - [Effective ranks and benign overfitting](effective-ranks-and-benign-overfitting/README.md)
+- [Finite-sample expressivity of ReLU networks](finite-sample-expressivity-of-relu-networks/README.md)
 - [Classification-calibrated losses](classification-calibrated-losses/README.md)
