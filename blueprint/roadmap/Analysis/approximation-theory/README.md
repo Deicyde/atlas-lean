@@ -6,6 +6,7 @@ Approximation and interpolation of functions: Chebyshev equioscillation, best ap
 - [Best approximation in normed spaces](best-approximation-in-normed-spaces/README.md)
 - [Chebyshev equioscillation theorem](chebyshev-equioscillation-theorem/README.md)
 - [Minimax property of the Chebyshev polynomials](minimax-property-of-the-chebyshev-polynomials/README.md)
+- [Chebyshev series and interpolation](chebyshev-series-and-interpolation/README.md)
 - [Kolmogorov superposition theorem](kolmogorov-superposition-theorem/README.md)
 - [Korovkin's theorem](korovkin-s-theorem/README.md)
 - [Lagrange interpolation](lagrange-interpolation/README.md)

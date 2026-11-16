@@ -4506,6 +4506,7 @@
   "WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted": {"to": "AlgebraicGeometry/varieties-and-projective-geometry", "title": "Topological reconstruction of varieties"},
   "WantedExt/AlgebraicGeometry/WeilConjecturesWanted": {"to": "AlgebraicGeometry/arithmetic-geometry", "title": "Weil conjectures"},
   "WantedExt/Analysis/AMR22Problem7082Wanted": {"to": "Analysis/complex-analysis/geometric-function-theory", "title": "Holomorphic motions"},
+  "WantedExt/Analysis/Approximation/ChebyshevInterpolationWanted": {"to": "Analysis/approximation-theory", "title": "Chebyshev series and interpolation"},
   "WantedExt/Analysis/AreasBetweenCosinesWanted": {"to": "Analysis/real-functions/integration", "title": "Areas between cosine powers"},
   "WantedExt/Analysis/Asymptotics/NoncrossingChordDiagramNormalLimitWanted": {"to": "Combinatorics/set-partitions", "title": "Linear chord diagrams"},
   "WantedExt/Analysis/BVPComparisonWanted": {"to": "Analysis/ordinary-differential-equations", "title": "Comparison principle for boundary value problems"},
