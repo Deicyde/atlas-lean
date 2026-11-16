@@ -54,6 +54,17 @@ example (f : Fin 2 → ℝ) (hW : pigou.IsWardrop f)
   · intro x y _; simp [pigou]
   · intro x y h; simpa [pigou] using h
 
+/-- Braess's paradox: the Wardrop flow after adding the shortcut is strictly costlier than
+before, although the optimal cost cannot increase. -/
+example : braessBefore.cost ![1 / 2, 1 / 2] < braessAfter.cost ![0, 0, 1] := by
+  have hb : braessBefore.IsFeasible (fun _ => 1) ![1 / 2, 1 / 2] :=
+    ⟨fun p => by fin_cases p <;> norm_num, fun _ => by norm_num [braessBefore, Fin.sum_univ_two]⟩
+  have ha : braessAfter.IsFeasible (fun _ => 1) ![0, 0, 1] :=
+    ⟨fun p => by fin_cases p <;> norm_num, fun _ => by norm_num [braessAfter, Fin.sum_univ_three]⟩
+  rw [braess_paradox.1 _ hb braessBefore_isWardrop, braess_paradox.2 _ ha braessAfter_isWardrop]
+  norm_num
+
+#print axioms braess_paradox
 #print axioms RoutingInstance.IsWardrop.cost_le_of_affine
 #print axioms RoutingInstance.IsWardrop.mul_cost_le_of_feasible_one_add
 #print axioms RoutingInstance.IsWardrop.cost_eq

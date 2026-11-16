@@ -1,6 +1,6 @@
 # Selfish routing and the price of anarchy
 
-Nonatomic routing games: infinitely many users each control a negligible amount of traffic and choose a minimum-latency path. Equilibria are Wardrop flows; they exist when latencies are continuous, they all have the same cost when latencies are nondecreasing, they cost at most $4/3$ times the optimum when latencies are affine (Pigou's network shows this is tight), and never more than an optimal routing of twice the traffic.
+Nonatomic routing games: infinitely many users each control a negligible amount of traffic and choose a minimum-latency path. Equilibria are Wardrop flows; they exist when latencies are continuous, they all have the same cost when latencies are nondecreasing, they cost at most $4/3$ times the optimum when latencies are affine (Pigou's network shows this is tight), and never more than an optimal routing of twice the traffic. Braess's paradox shows that adding a link can make every user worse off.
 
 - [Nonatomic routing instance](routing-instance.md)
 - [Feasible flow for a demand vector](is-feasible.md)
@@ -29,6 +29,15 @@ Nonatomic routing games: infinitely many users each control a negligible amount 
 - [Cost of Pigou's equilibrium flow](pigou-cost-wardrop.md)
 - [Cost of Pigou's optimal flow](pigou-cost-optimal.md)
 - [Pigou's network attains the bound 4/3](pigou-cost-wardrop-eq.md)
+- [Latencies of Braess's network](braess-latency.md)
+- [Braess's latencies are nondecreasing](braess-latency-monotone.md)
+- [Braess's network without the shortcut](braess-before.md)
+- [Braess's network with the shortcut](braess-after.md)
+- [Edge flows without the shortcut](braess-before-edge-flow.md)
+- [Edge flows with the shortcut](braess-after-edge-flow.md)
+- [Equilibrium of Braess's network without the shortcut](braess-before-is-wardrop.md)
+- [Equilibrium of Braess's network with the shortcut](braess-after-is-wardrop.md)
+- [Braess's paradox](braess-paradox.md)
 
 ## Related topics
 

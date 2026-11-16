@@ -60,6 +60,8 @@ games of Roughgarden and Tardos (2004), for which all results below hold.
   for nonnegative nondecreasing latencies a Wardrop flow costs at most `1/γ` times
   any flow feasible for the demand `(1 + γ) r`, in particular at most any flow routing
   twice the traffic (Roughgarden–Tardos, Theorems 3.2 and 3.1).
+* `braess_paradox`: in Braess's network every Wardrop flow costs `3/2` before and `2` after a
+  zero-latency link is added (Roughgarden–Tardos, Figure 1).
 
 ## References
 
@@ -69,6 +71,8 @@ games of Roughgarden and Tardos (2004), for which all results below hold.
   nonatomic congestion games", Games Econom. Behav. 47 (2004), 389–403.
 * M. Beckmann, C. B. McGuire and C. B. Winsten, *Studies in the Economics of
   Transportation*, Yale University Press, 1956.
+* D. Braess, "Über ein Paradoxon aus der Verkehrsplanung", Unternehmensforschung 12 (1968),
+  258–268.
 * J. G. Wardrop, "Some theoretical aspects of road traffic research",
   Proc. Inst. Civil Engineers 1 (1952), 325–378.
 -/
@@ -362,5 +366,88 @@ theorem pigou_cost_optimal : pigou.cost pigouOptimal = 3 / 4 := by
 constant of `RoutingInstance.IsWardrop.cost_le_of_affine` cannot be improved. -/
 theorem pigou_cost_wardrop_eq : pigou.cost pigouWardrop = 4 / 3 * pigou.cost pigouOptimal := by
   rw [pigou_cost_wardrop, pigou_cost_optimal]; norm_num
+
+/-! ### Braess's paradox -/
+
+/-- The latencies of Braess's network on the edges `0 : s → v`, `1 : v → t`, `2 : s → w`,
+`3 : w → t` and `4 : v → w`: latency `x` on edges `0` and `3`, `1` on edges `1` and `2`, and
+`0` on the shortcut `4` (Roughgarden–Tardos 2002, Figure 1). -/
+def braessLatency (e : Fin 5) (x : ℝ) : ℝ :=
+  if e = 0 ∨ e = 3 then x else if e = 4 then 0 else 1
+
+/-- Braess's network before the shortcut: the two paths `s → v → t` and `s → w → t`. -/
+def braessBefore : RoutingInstance (Fin 5) Unit (Fin 2) where
+  commodity _ := ()
+  edges := ![{0, 1}, {2, 3}]
+  latency := braessLatency
+
+/-- Braess's network after adding the zero-latency shortcut `v → w`, which creates the third
+path `s → v → w → t`. -/
+def braessAfter : RoutingInstance (Fin 5) Unit (Fin 3) where
+  commodity _ := ()
+  edges := ![{0, 1}, {2, 3}, {0, 4, 3}]
+  latency := braessLatency
+
+/-- The latencies of Braess's network are nondecreasing. -/
+theorem braessLatency_monotone (e : Fin 5) : Monotone (braessLatency e) := by
+  fin_cases e
+  · exact fun x y h => by simpa [braessLatency] using h
+  · exact fun x y _ => by simp [braessLatency]
+  · exact fun x y _ => by simp [braessLatency]
+  · exact fun x y h => by simpa [braessLatency] using h
+  · exact fun x y _ => by simp [braessLatency]
+
+/-- Edge flows before the shortcut: edges `0, 1` carry the first path, edges `2, 3` the
+second. -/
+theorem braessBefore_edgeFlow (f : Fin 2 → ℝ) :
+    braessBefore.edgeFlow f = ![f 0, f 0, f 1, f 1, 0] := by
+  funext e
+  simp only [RoutingInstance.edgeFlow]
+  rw [Finset.sum_filter]
+  fin_cases e <;> simp [braessBefore, Fin.sum_univ_two]
+
+/-- Edge flows after the shortcut. -/
+theorem braessAfter_edgeFlow (f : Fin 3 → ℝ) :
+    braessAfter.edgeFlow f = ![f 0 + f 2, f 0, f 1, f 1 + f 2, f 2] := by
+  funext e
+  simp only [RoutingInstance.edgeFlow]
+  rw [Finset.sum_filter]
+  fin_cases e <;> simp [braessAfter, Fin.sum_univ_three]
+
+/-- Splitting one unit equally is a Wardrop flow of Braess's network before the shortcut. -/
+theorem braessBefore_isWardrop : braessBefore.IsWardrop ![1 / 2, 1 / 2] := by
+  intro p q _ _
+  simp only [RoutingInstance.pathLatency, braessBefore_edgeFlow]
+  fin_cases p <;> fin_cases q <;> norm_num [braessBefore, braessLatency]
+
+/-- Routing all traffic on the zigzag path is a Wardrop flow after the shortcut is added. -/
+theorem braessAfter_isWardrop : braessAfter.IsWardrop ![0, 0, 1] := by
+  intro p q _ hp
+  simp only [RoutingInstance.pathLatency, braessAfter_edgeFlow]
+  fin_cases p <;> fin_cases q <;> norm_num [braessAfter, braessLatency] at *
+
+/-- **Braess's paradox** (Braess 1968; Roughgarden–Tardos 2002, Figure 1). In Braess's
+network with one unit of traffic, every Wardrop flow costs `3/2` before the zero-latency
+shortcut `v → w` is added and `2` after: adding a link makes every user worse off. -/
+theorem braess_paradox :
+    (∀ f, braessBefore.IsFeasible (fun _ => 1) f → braessBefore.IsWardrop f →
+      braessBefore.cost f = 3 / 2) ∧
+    (∀ f, braessAfter.IsFeasible (fun _ => 1) f → braessAfter.IsWardrop f →
+      braessAfter.cost f = 2) := by
+  have hb : braessBefore.IsFeasible (fun _ => 1) ![1 / 2, 1 / 2] := by
+    refine ⟨fun p => ?_, fun _ => ?_⟩
+    · fin_cases p <;> norm_num
+    · norm_num [braessBefore, Fin.sum_univ_two]
+  have ha : braessAfter.IsFeasible (fun _ => 1) ![0, 0, 1] := by
+    refine ⟨fun p => ?_, fun _ => ?_⟩
+    · fin_cases p <;> norm_num
+    · norm_num [braessAfter, Fin.sum_univ_three]
+  refine ⟨fun f hf hW => ?_, fun f hf hW => ?_⟩
+  · rw [hW.cost_eq braessLatency_monotone hf braessBefore_isWardrop hb]
+    simp only [RoutingInstance.cost, braessBefore_edgeFlow]
+    norm_num [braessBefore, braessLatency, Fin.sum_univ_five]
+  · rw [hW.cost_eq braessLatency_monotone hf braessAfter_isWardrop ha]
+    simp only [RoutingInstance.cost, braessAfter_edgeFlow]
+    norm_num [braessAfter, braessLatency, Fin.sum_univ_five]
 
 end MathlibExt.GameTheory.SelfishRouting
