@@ -4,6 +4,8 @@
 - [The weighted Laplacian is symmetric](laplacian-transpose.md)
 - [The weighted Laplacian is additive in the weights](laplacian-add.md)
 - [The weighted Laplacian is linear in the weights: subtraction](laplacian-sub.md)
+- [Entries of the weighted Laplacian](laplacian-apply.md)
+- [Mathlib's graph Laplacian as a multigraph Laplacian](laplacian-dart-eq-lap-matrix.md)
 - [Laplacian quadratic form](dot-product-mul-vec-laplacian.md)
 - [Constants are in the kernel of the Laplacian](laplacian-mul-vec-one.md)
 - [The Laplacian of nonnegative weights is positive semidefinite](pos-semidef-laplacian.md)

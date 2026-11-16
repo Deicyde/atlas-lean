@@ -14456,6 +14456,8 @@
 "EndpointMapMultigraph.isSymmetric_toEuclideanLin_laplacian": "5f5f5cf824064a7e",
 "EndpointMapMultigraph.laplacian": "c1c3212efdd57fd4",
 "EndpointMapMultigraph.laplacian_add": "3875a4dbff6d715e",
+"EndpointMapMultigraph.laplacian_apply": "ca91e2f964d0da67",
+"EndpointMapMultigraph.laplacian_dart_eq_lapMatrix": "5a3f00ab449fc931",
 "EndpointMapMultigraph.laplacian_mulVec_eq_zero_iff": "1e71448ce3b900b2",
 "EndpointMapMultigraph.laplacian_mulVec_one": "b42e6303886796e9",
 "EndpointMapMultigraph.laplacian_sub": "eea9af00e8f38f37",

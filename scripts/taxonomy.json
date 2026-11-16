@@ -2282,6 +2282,7 @@
   "MathlibExt/Combinatorics/DobinskiBell": {"to": "Combinatorics/stirling-bell-eulerian/bell-fubini-numbers", "title": "Dobinski's formula"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph": {"to": "GraphTheory/graph-families-and-operations", "title": "Finite multigraphs"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/AlgebraicConnectivity": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
+  "MathlibExt/Combinatorics/EndpointMapMultigraph/DartLaplacian": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/EffectiveResistance": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/OrientedIncidence": {"to": "GraphTheory/algebraic-graph-theory", "title": "Oriented incidence matrices"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/WeightedLaplacian": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
