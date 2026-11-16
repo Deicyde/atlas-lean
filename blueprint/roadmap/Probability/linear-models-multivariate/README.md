@@ -12,4 +12,5 @@ Multivariate normal theory and linear models: Gaussian maximum likelihood, Cochr
 - [Student's t and Snedecor's F distributions](student-s-t-and-snedecor-s-f-distributions/README.md)
 - [Weighted means and scatter matrices](weighted-means-and-scatter-matrices/README.md)
 - [Gaussian maximum likelihood](gaussian-maximum-likelihood/README.md)
+- [Kernel principal component analysis](kernel-principal-component-analysis/README.md)
 - [Gauss–Markov covariance minimality](gauss-markov-covariance-minimality.md)
