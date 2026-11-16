@@ -1,9 +1,10 @@
 # Approximation theory
 
-Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation by greedy pursuits (matching pursuit and orthogonal matching pursuit).
+Approximation and interpolation of functions: Chebyshev equioscillation, best approximation, the minimax property of Chebyshev polynomials, Chebyshev series and interpolation, Lagrange interpolation, Bernstein polynomials and Voronovskaya, Korovkin, Müntz–Szász, Runge, Kolmogorov superposition, universal approximation, and sparse approximation: best $M$-term approximation in an orthonormal basis and greedy pursuits (matching pursuit and orthogonal matching pursuit).
 
 - [Bernstein polynomials](bernstein-polynomials/README.md)
 - [Best approximation in normed spaces](best-approximation-in-normed-spaces/README.md)
+- [Best M-term approximation](best-m-term-approximation/README.md)
 - [Chebyshev equioscillation theorem](chebyshev-equioscillation-theorem/README.md)
 - [Minimax property of the Chebyshev polynomials](minimax-property-of-the-chebyshev-polynomials/README.md)
 - [Chebyshev series and interpolation](chebyshev-series-and-interpolation/README.md)
