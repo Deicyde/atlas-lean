@@ -3946,6 +3946,7 @@
   "MathlibExt/Probability/OptionalStoppingUniformIntegrable": {"to": "Probability/martingales", "title": "Optional stopping theorem"},
   "MathlibExt/Probability/OrnsteinUhlenbeck": {"to": "Probability/stochastic-calculus", "title": "Ornstein–Uhlenbeck process"},
   "MathlibExt/Probability/OrnsteinUhlenbeckSDE": {"to": "Probability/stochastic-calculus", "title": "Ornstein–Uhlenbeck process"},
+  "MathlibExt/Probability/PACBayes": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "PAC-Bayes bounds"},
   "MathlibExt/Probability/PairwiseIndepSLLN": {"to": "Probability/laws-of-large-numbers", "title": "Strong law of large numbers"},
   "MathlibExt/Probability/PaleyZygmund": {"to": "Probability/concentration-inequalities", "title": "Paley–Zygmund inequality"},
   "MathlibExt/Probability/Percolation/ConnectionsInsideSet": {"to": "Probability/percolation/sharpness", "title": "Duminil-Copin–Tassion differential inequality"},

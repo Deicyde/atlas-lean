@@ -21,3 +21,4 @@ Relative entropy is the Legendre transform of the logarithmic moment generating 
 
 - [Large deviations](../../../Probability/large-deviations/README.md)
 - [Data-processing inequality](../data-processing-inequality/README.md)
+- [PAC-Bayes bounds](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/pac-bayes-bounds/README.md)

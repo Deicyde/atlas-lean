@@ -2,6 +2,8 @@
 
 Uniform deviation bounds between the empirical and the expected risk, obtained from concentration inequalities, and their use for empirical risk minimization: if every deviation is at most $s$, the empirical risk minimizer is within $2 s$ of the best predictor of the class. For a finite class, Hoeffding's inequality and a union bound give a deviation of order $\sqrt{\log |F| / n}$; for a general class, McDiarmid's bounded-differences inequality concentrates the supremum of the deviations around its mean, and Rademacher averages control that mean, dimension free for balls of linear predictors. The two pages marked as expositions are AI-authored expositions of published results without Lean formalization; each names what it relies on, and how, under Informally uses. The Rademacher complexity topic is formalized: the structural calculus of the empirical Rademacher complexity, Massart's finite-class lemma, the bound for classes of finite VC dimension through the Sauer–Shelah lemma, and the contraction lemma, with the Rademacher risk bound as a wanted statement.
 
+The [PAC-Bayes bounds](pac-bayes-bounds/README.md) are formalized in Lean: Catoni's bound for bounded losses holds with high probability simultaneously for every posterior, through the Donsker–Varadhan change of measure.
+
 - [Expected risk](risk.md)
 - [Empirical risk](empirical-risk.md)
 - [Measurability of the empirical risk](measurable-empirical-risk.md)
@@ -12,6 +14,7 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Concentration of the uniform deviation](bounded-differences-uniform-deviation.md) (exposition)
 - [Rademacher average of a ball of linear predictors](rademacher-average-linear-ball-le.md)
 - [Rademacher complexity](rademacher-complexity/README.md)
+- [PAC-Bayes bounds](pac-bayes-bounds/README.md)
 
 ## Related topics
 
