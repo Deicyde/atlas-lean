@@ -32,12 +32,13 @@ We prove the containment of the half-ellipsoid (through the Sherman-Morrison for
 and the algebraic facts behind the volume lemma: the determinant of the updated matrix (by the
 matrix determinant lemma, using `bᵀ A⁻¹ b = 1`), the identity between the square root of the
 determinant ratio and the volume factor, and the strict bound by `exp(-1 / (2 (n + 1)))` (from
-`1 + x < eˣ` for `x ≠ 0`). The volume formula for ellipsoids is not proved here.
+`1 + x < eˣ` for `x ≠ 0`). The volume formula `vol E(a, A) = √(det A) · vol E(0, I)` and the
+volume lemma itself are proved in `MathlibExt.Analysis.Convex.EllipsoidVolume`
+(`volume_ellipsoid`, `volume_nextEllipsoid_lt`), and the convergence of the method in
+`MathlibExt.Analysis.Convex.EllipsoidConvergence`.
 
 Source: M. X. Goemans, *Lecture notes on the ellipsoid algorithm*, MIT 18.433 Combinatorial
-Optimization, Handout 19 (4 May 2009), Definition 7.1, equations (3)-(5), Lemma 7.1 and its proof;
-the method is the one used by Grötschel, Lovász and Schrijver, *Geometric Algorithms and
-Combinatorial Optimization* (Springer, 1988), Chapter 3.
+Optimization, Handout 19 (4 May 2009), Definition 7.1, equations (3)-(5), Lemma 7.1 and its proof.
 -/
 
 @[expose] public section

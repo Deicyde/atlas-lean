@@ -15,12 +15,12 @@ public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 /-!
 # Lovász's umbrella: `ϑ(C₅) ≤ √5` and the Shannon capacity of the pentagon
 
-Lovász labels the five vertices of the pentagon by the ribs of an umbrella in `ℝ³`: unit-angle
-ribs `(h, cos (2πk / 5), sin (2πk / 5))` whose common height `h` makes the ribs two steps apart
-orthogonal. Against the handle `e₀` every cost is `1 / √5`, so `ϑ(C₅) ≤ √5`, and by Lovász's bound
-`Θ(G) ≤ ϑ(G)` the Shannon capacity of the pentagon is at most `√5`. (The matching lower bound
-`Θ(C₅) ≥ √5` comes from the five-element independent set `{(i, 2i)}` of `C₅ ⊠ C₅`; it is not
-formalised here.)
+Lovász labels the five vertices of the pentagon by the ribs of an umbrella in `ℝ³`: ribs
+`(h, cos (2πk / 5), sin (2πk / 5))` at angles `2πk / 5` around the axis, whose common height `h`
+makes the ribs two steps apart orthogonal. Against the handle `e₀` every cost is `1 / √5`, so
+`ϑ(C₅) ≤ √5`, and by Lovász's bound `Θ(G) ≤ ϑ(G)` the Shannon capacity of the pentagon is at most
+`√5`. (The matching lower bound `Θ(C₅) ≥ √5` comes from the five-element independent set
+`{(i, 2i)}` of `C₅ ⊠ C₅`; it is not formalised here.)
 
 Source: L. Lovász, "On the Shannon capacity of a graph", IEEE Trans. Inform. Theory 25 (1979),
 1-7.
