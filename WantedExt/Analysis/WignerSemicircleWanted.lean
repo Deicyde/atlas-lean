@@ -31,12 +31,15 @@ into a Batteries `theorem_wanted` (data/instance holes into
 `Batteries.Util.ProofWanted`, inlined any `LeanEval` helper modules,
 and placed the declarations in the `MathlibExt.Analysis.WignerSemicircleWanted` namespace. Mathematical
 statements are unchanged. ATLAS changes: the Wigner 1955 source note now says what that paper
-proves, and Tao's statement of this almost-sure form is cited. Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (convergence of the expected spectral distribution, for special classes of random real symmetric matrices). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
+proves, Tao's statement of this almost-sure form is cited, and the proved bridge
+`semicircleLaw_eq_semicircleReal` to `ProbabilityTheory.semicircleReal` and the resulting
+`IsProbabilityMeasure` instance are added. Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (convergence of the expected spectral distribution, for special classes of random real symmetric matrices). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
 -/
 module
 
 public import Batteries.Util.ProofWanted
 public import Mathlib
+public import MathlibExt.Probability.Distributions.Semicircle
 
 @[expose] public section
 
@@ -80,6 +83,15 @@ density `√(4 − x²) / (2π)` supported on `[−2, 2]`. -/
 noncomputable def semicircleLaw : Measure ℝ :=
   (volume.restrict (Set.Icc (-2 : ℝ) 2)).withDensity
     (fun x => ENNReal.ofReal (Real.sqrt (4 - x ^ 2) / (2 * Real.pi)))
+
+/-- The semicircle measure of this problem is the semicircle distribution
+`ProbabilityTheory.semicircleReal`, whose moments are the Catalan numbers. -/
+theorem semicircleLaw_eq_semicircleReal : semicircleLaw = ProbabilityTheory.semicircleReal :=
+  rfl
+
+/-- The semicircle measure is a probability measure. -/
+instance isProbabilityMeasure_semicircleLaw : IsProbabilityMeasure semicircleLaw := by
+  rw [semicircleLaw_eq_semicircleReal]; infer_instance
 
 /-- `n × n` real-symmetric random matrix built from the upper-
 triangular half of `X : ℕ → ℕ → Ω → ℝ`. -/
