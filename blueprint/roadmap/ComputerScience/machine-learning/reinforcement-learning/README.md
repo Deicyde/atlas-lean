@@ -5,6 +5,7 @@ Theory of reinforcement learning in finite discounted Markov decision processes:
 - [Stochastic policies and discounted occupancy](stochastic-policies-and-discounted-occupancy/README.md)
 - [Performance difference lemma](performance-difference-lemma/README.md)
 - [Simulation lemma](simulation-lemma/README.md)
+- [Greedy policies of approximate values](greedy-policies-of-approximate-values/README.md)
 - [Natural policy gradient](natural-policy-gradient/README.md)
 - [Policy gradients for softmax policies](policy-gradients-for-softmax-policies/README.md)
 

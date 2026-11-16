@@ -41,3 +41,4 @@
 ## Related topics
 
 - [Stochastic policies and discounted occupancy](../../machine-learning/reinforcement-learning/stochastic-policies-and-discounted-occupancy/README.md)
+- [Greedy policies of approximate values](../../machine-learning/reinforcement-learning/greedy-policies-of-approximate-values/README.md)

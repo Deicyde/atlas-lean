@@ -2934,6 +2934,8 @@
 "Cslib.Algorithms.Lean.MarkovDecision.occupancy_nonneg": "bb05ae221e926d2b",
 "Cslib.Algorithms.Lean.MarkovDecision.one_sub_le_visitation_self": "1abb970947809a58",
 "Cslib.Algorithms.Lean.MarkovDecision.optimalValue": "00caa41f8b120ee1",
+"Cslib.Algorithms.Lean.MarkovDecision.optimalValue_sub_policyValue_greedy_le": "2bebb6fc641f4f63",
+"Cslib.Algorithms.Lean.MarkovDecision.optimalValue_sub_policyValue_greedy_valueIteration_le": "dcafd4ffd4389578",
 "Cslib.Algorithms.Lean.MarkovDecision.optimalValue_sub_stochValue_npgPolicy_le": "8d6685ac6a45f4e7",
 "Cslib.Algorithms.Lean.MarkovDecision.performance_difference": "b4b72e78c808d562",
 "Cslib.Algorithms.Lean.MarkovDecision.performance_difference_initial": "0ca9811c6c66c5fe",
