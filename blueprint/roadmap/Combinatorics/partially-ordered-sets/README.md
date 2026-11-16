@@ -9,6 +9,7 @@ Finite posets as combinatorial objects: Dilworth's and Mirsky's theorems, Erdős
 - [Mirsky's theorem](mirsky-s-theorem/README.md)
 - [Möbius algebras and flag vectors](m-bius-algebras-and-flag-vectors/README.md)
 - [Neggers–Stanley conjecture](neggers-stanley-conjecture/README.md)
+- [Order polynomials](order-polynomials/README.md)
 - [Poset matrices and quasi-full rooted trees](poset-matrices-and-quasi-full-rooted-trees/README.md)
 - [Rowmotion on root posets](rowmotion-on-root-posets/README.md)
 - [Sperner property of the weak order](sperner-property-of-the-weak-order/README.md)
