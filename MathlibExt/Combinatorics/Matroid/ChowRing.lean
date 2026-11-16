@@ -233,4 +233,15 @@ theorem betaClass_eq [M.Finite] {i j : α} (hi : i ∈ M.E) (hj : j ∈ M.E) :
 theorem x_mem_gradedPiece_one (F : ProperFlat M) : x M F ∈ gradedPiece M 1 :=
   ⟨X F, isHomogeneous_X ℝ F, rfl⟩
 
+/-- The class `ℓ(c)` lies in the degree-one piece `A¹(M)_ℝ` (Adiprasito, Huh and Katz, *Hodge
+theory for combinatorial geometries*, Ann. of Math. 188 (2018), Section 1.2). -/
+theorem ellClass_mem_gradedPiece_one (c : Set α → ℝ) : ellClass M c ∈ gradedPiece M 1 := by
+  classical
+  refine ⟨∑ᶠ F : ProperFlat M, c F.1 • X F, ?_, rfl⟩
+  by_cases h : (Function.support fun F : ProperFlat M => c F.1 • (X F : MvPolynomial _ ℝ)).Finite
+  · rw [finsum_eq_sum _ h]
+    exact Submodule.sum_mem _ fun F _ => Submodule.smul_mem _ _ (isHomogeneous_X ℝ F)
+  · rw [finsum_of_infinite_support h]
+    exact Submodule.zero_mem _
+
 end MathlibExt.Combinatorics.Matroid.Chow

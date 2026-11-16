@@ -26,6 +26,7 @@ theorem, the Hodge–Riemann relations and the mixed-degree formula are wanted s
 - [Strictly submodular function](is-strictly-submodular.md)
 - [A strictly submodular function](is-strictly-submodular-ncard-mul-ncard-d.md)
 - [The class $\ell(c)$](ell-class.md)
+- [The Lefschetz class has degree one](ell-class-mem-graded-piece-one.md)
 - [Degree map of a matroid of rank $r + 1$](is-degree-map.md)
 - [The degree map of a matroid](exists-unique-is-degree-map.md)
 - [Hard Lefschetz theorem for matroids](hard-lefschetz.md)

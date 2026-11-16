@@ -31,7 +31,8 @@ open MathlibExt.Combinatorics.StrongMasonWanted.Combinatorics.StrongMason
 *Hodge theory for combinatorial geometries*, Ann. of Math. 188 (2018), Theorem 9.9 (3),
 answering Conjecture 1.2 of Welsh and Mason). For every finite matroid `M` and every `k ≥ 1`,
 `f_{k-1}(M) f_{k+1}(M) ≤ f_k(M)^2`, where `f_k(M)` is the number of independent sets of size
-`k`. (AHK state `1 ≤ k ≤ r`; for `k` above the rank both sides involve vanishing counts.) -/
+`k`. (AHK state `1 ≤ k ≤ r`, where `r + 1` is the rank; for larger `k` the factor
+`f_{k+1}(M)` vanishes, so the inequality is trivial.) -/
 theorem_wanted independentSetCount_logConcave {α : Type*} (M : _root_.Matroid α) [M.Finite]
     (k : ℕ) (hk : 1 ≤ k) :
     independentSetCount M (k - 1) * independentSetCount M (k + 1) ≤ independentSetCount M k ^ 2

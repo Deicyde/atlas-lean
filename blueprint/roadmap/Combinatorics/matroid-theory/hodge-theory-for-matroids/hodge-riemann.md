@@ -8,10 +8,15 @@ on $A^q(M)_\mathbb{R}$ is positive definite on the kernel of multiplication by
 $\ell^{r-2q+1}$: if $a \in A^q(M)_\mathbb{R}$ is nonzero and $\ell^{r-2q+1} a = 0$,
 then $(-1)^q \deg(a \, \ell^{r-2q} a) > 0$.
 
-This is part (2) of the main theorem of Adiprasito, Huh and Katz. In degree $q = 1$ it says
-that the form $(a_1, a_2) \mapsto \deg(a_1 \ell^{r-2} a_2)$ on $A^1(M)_\mathbb{R}$ has
-exactly one positive eigenvalue; through a limiting argument for nef classes this gives the
-inequality
+This is part (2) of the main theorem of Adiprasito, Huh and Katz. Suppose $r \ge 2$. The hard
+Lefschetz theorem gives the decomposition
+$A^1(M)_\mathbb{R} = \langle \ell \rangle \oplus P^1_\ell$ with
+$P^1_\ell = \ker(\ell^{r-1})$, orthogonal for the form
+$(a_1, a_2) \mapsto \deg(a_1 \ell^{r-2} a_2)$. The relation in degree $0$ makes this form
+positive on $\ell$ ($\deg \ell^r > 0$), and the relation in degree $1$ makes it negative
+definite on $P^1_\ell$. Together they say that the form has exactly one positive eigenvalue on
+$A^1(M)_\mathbb{R}$ (this is the argument in the proof of AHK Lemma 9.6). A limiting argument
+for nef classes then gives the inequality
 $\deg(\ell_1^2 \ell_2^{r-2}) \deg(\ell_2^r) \le \deg(\ell_1 \ell_2^{r-1})^2$
 (AHK Lemma 9.6), the source of the log-concavity of characteristic polynomials. Huh's ICM survey
 explains this "one positive eigenvalue" consequence of the Hodge–Riemann relations as the common

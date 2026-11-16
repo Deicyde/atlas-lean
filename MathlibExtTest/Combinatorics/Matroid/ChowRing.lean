@@ -43,6 +43,11 @@ example [M.Finite] {i j : α} (hi : i ∈ M.E) (hj : j ∈ M.E) : betaClass M i 
 example (F G : ProperFlat M) : x M F + x M G ∈ gradedPiece M 1 :=
   add_mem (x_mem_gradedPiece_one M F) (x_mem_gradedPiece_one M G)
 
+/-! The Lefschetz class has degree one. -/
+
+example (c : Set α → ℝ) : ellClass M c ∈ gradedPiece M 1 :=
+  ellClass_mem_gradedPiece_one M c
+
 /-! A function that is not strictly submodular: the zero function fails the strict inequality
 on any incomparable pair. -/
 
