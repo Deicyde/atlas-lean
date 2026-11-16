@@ -12,6 +12,16 @@
 - [The parameter of a uniform vertex expander is positive](pos-2.md)
 - [Small sets expand in a uniform vertex expander](small-expansion-2.md)
 - [Bipartite Ramanujan graphs of every degree](exists-bipartite-ramanujan.md)
+- [Spectral bound on the vectors orthogonal to the constants](is-spectral-bound.md)
+- [Spectral expander](is-spectral-expander.md)
+- [The complete graph is a spectral expander](is-spectral-expander-top.md)
+- [Edge count as a bilinear form](card-interedges-eq-indicator-dot-product.md)
+- [Expander mixing lemma for matrices](abs-indicator-dot-product-mul-vec-sub-le.md)
+- [Expander mixing lemma](expander-mixing-lemma.md)
+- [Expander mixing lemma, unnormalised form](abs-card-interedges-sub-le.md)
+- [Elementary lower bound on the spectral parameter](elementary-spectral-lower-bound.md)
+- [Probability of an event for a random walk on a regular graph](walk-prob.md)
+- [Random-walk probabilities have total mass one](walk-prob-true.md)
 
 ## Related topics
 
