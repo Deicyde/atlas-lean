@@ -16,6 +16,7 @@ Continuous-time processes with continuous paths or independent increments: the c
 - [Ornstein–Uhlenbeck process](ornstein-uhlenbeck-process/README.md)
 - [Signature of a path](signature-of-a-path/README.md)
 - [Tree-like paths and uniqueness of the signature](tree-like-paths-and-uniqueness-of-the-signature/README.md)
+- [Rough paths and the extension theorem](rough-paths-and-the-extension-theorem/README.md)
 
 ## Related topics
 
