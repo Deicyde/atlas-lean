@@ -36,4 +36,33 @@ example (S : Finset (Fin 2)) :
     rw [zero_mul, dotProduct_mulVec_laplacian]
     exact Finset.sum_nonneg fun _ _ => mul_nonneg (by norm_num) (sq_nonneg _)) S
 
+/-- Cheeger's hard direction applies to the centered vector `(-1, 1)` on one edge of weight `3`:
+some threshold cut has conductance at most `√(2 zᵀLz / zᵀDz)`. -/
+example : ∃ τ : ℝ,
+    0 < min (volume (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3)
+        (Finset.univ.filter fun a => (![-1, 1] : Fin 2 → ℝ) a < τ))
+      (volume (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3)
+        (Finset.univ \ Finset.univ.filter fun a => (![-1, 1] : Fin 2 → ℝ) a < τ)) ∧
+    ∑ e ∈ cut (fun _ : Unit => (0 : Fin 2)) (fun _ => 1)
+        (Finset.univ.filter fun a => (![-1, 1] : Fin 2 → ℝ) a < τ), (fun _ => (3 : ℝ)) e ≤
+      Real.sqrt (2 * ((![-1, 1] : Fin 2 → ℝ) ⬝ᵥ
+          (laplacian (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) *ᵥ ![-1, 1])) /
+          ∑ a, weightedDegree (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) a *
+            (![-1, 1] : Fin 2 → ℝ) a ^ 2) *
+        min (volume (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3)
+            (Finset.univ.filter fun a => (![-1, 1] : Fin 2 → ℝ) a < τ))
+          (volume (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3)
+            (Finset.univ \ Finset.univ.filter fun a => (![-1, 1] : Fin 2 → ℝ) a < τ)) := by
+  have hdeg : ∀ a : Fin 2,
+      weightedDegree (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) a = 3 := by
+    intro a; fin_cases a <;> simp [weightedDegree]
+  refine exists_threshold_cut_le_sqrt _ _ (fun _ => by norm_num) _ ?_ ?_ ?_
+  · simp only [volume, hdeg, Finset.sum_const, nsmul_eq_mul, Finset.card_univ, Fintype.card_fin]
+    rw [show (Finset.univ.filter fun a : Fin 2 => 0 < (![-1, 1] : Fin 2 → ℝ) a) = {1} by ext a; fin_cases a <;> simp]
+    norm_num
+  · simp only [volume, hdeg, Finset.sum_const, nsmul_eq_mul, Finset.card_univ, Fintype.card_fin]
+    rw [show (Finset.univ.filter fun a : Fin 2 => (![-1, 1] : Fin 2 → ℝ) a < 0) = {0} by ext a; fin_cases a <;> simp]
+    norm_num
+  · simp [hdeg, Fin.sum_univ_two]
+
 end EndpointMapMultigraphConductanceTest
