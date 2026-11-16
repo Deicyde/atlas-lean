@@ -13,6 +13,12 @@ for every $x \in K$.
 In words: single-hidden-layer feedforward networks with a continuous, non-polynomial activation
 approximate every continuous function uniformly on every compact set.
 
+## Background
+
+- [Universal approximation by linear functionals of the signature](../../Probability/stochastic-calculus/signature-of-a-path/exists-signature-linear-approx.md):
+  the corresponding density theorem for continuous functions of paths, with signature terms in
+  place of neurons.
+
 ## Sources
 
 - `universal-approximation-s1` from https://en.wikipedia.org/wiki/Universal_approximation_theorem; the continuous-activation case of M. Leshno, V. Ya. Lin, A. Pinkus and S. Schocken, *Multilayer feedforward networks with a nonpolynomial activation function can approximate any function*, Neural Networks 6(6) (1993), 861–867, doi:10.1016/S0893-6080(05)80131-5, which allows any locally bounded, piecewise continuous activation that is not almost everywhere equal to a polynomial; for continuous activations this is the same as the pointwise non-polynomial hypothesis.
