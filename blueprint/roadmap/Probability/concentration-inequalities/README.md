@@ -14,4 +14,5 @@ Non-asymptotic tail and moment bounds: Hoeffding, Azuma, McDiarmid, Kim–Vu, Ta
 - [Khintchine inequality](khintchine-inequality.md)
 - [The Paley–Zygmund inequality](paley-zygmund.md)
 - [Talagrand's transport inequality for the Gaussian measure](talagrand-std-gaussian.md)
+- [Transport-cost inequalities](transport-cost-inequalities/README.md)
 - [Azuma's inequality](azuma-inequality.md)
