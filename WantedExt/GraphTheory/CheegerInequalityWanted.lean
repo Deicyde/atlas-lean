@@ -9,7 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Batteries.Util.ProofWanted
-public import MathlibExt.Combinatorics.EndpointMapMultigraph.WeightedLaplacian
+public import MathlibExt.Combinatorics.EndpointMapMultigraph.Conductance
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-!
@@ -18,8 +18,9 @@ public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 The hard direction of Cheeger's inequality for the weighted Laplacian
 `EndpointMapMultigraph.laplacian`: a threshold set of a degree-centered vector has conductance at
 most `√(2 zᵀLz / zᵀDz)` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
-Theorem 21.1.3). The easy direction is proved in
-`MathlibExt.Combinatorics.EndpointMapMultigraph.AlgebraicConnectivity`.
+Theorem 21.1.3), for the weighted degrees and volumes of
+`MathlibExt.Combinatorics.EndpointMapMultigraph.Conductance`, where the easy direction is
+proved.
 -/
 
 @[expose] public section
@@ -29,16 +30,6 @@ namespace MathlibExt.GraphTheory.CheegerInequalityWanted
 open EndpointMapMultigraph Matrix
 
 variable {V E : Type*} [DecidableEq V] [DecidableEq E] [Fintype V] [Fintype E]
-
-/-- **Weighted degree.** The weighted degree `d(a) = ∑_e w_e [a is an endpoint of e]` of a vertex
-in the multigraph with endpoint maps `end₁ end₂` and weights `w` (a loop would count twice; the
-statement below assumes no loops). -/
-noncomputable def weightedDegree (end₁ end₂ : E → V) (w : E → ℝ) (a : V) : ℝ :=
-  ∑ e, w e * ((if end₁ e = a then 1 else 0) + (if end₂ e = a then 1 else 0))
-
-/-- **Volume of a vertex set.** `d(S) = ∑_{a ∈ S} d(a)`, the sum of the weighted degrees. -/
-noncomputable def volume (end₁ end₂ : E → V) (w : E → ℝ) (S : Finset V) : ℝ :=
-  ∑ a ∈ S, weightedDegree end₁ end₂ w a
 
 /-- **Cheeger's inequality, hard direction.** Let `w` be positive weights on a loopless
 multigraph, `L` its Laplacian and `d` its weighted degrees. Let `z` be centered with respect to
