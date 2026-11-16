@@ -2895,6 +2895,7 @@
   "MathlibExt/Combinatorics/ZigZagProduct": {"to": "GraphTheory/graph-families-and-operations", "title": "Zig-zag product and explicit expanders"},
   "MathlibExt/Computability/BinaryNatEncoding": {"to": "TheoryOfComputation/complexity-classes", "title": "The classes P, NP and coNP"},
   "MathlibExt/Computability/CommunicationComplexity/Deterministic": {"to": "TheoryOfComputation/communication-complexity", "title": "Deterministic communication protocols"},
+  "MathlibExt/Computability/CommunicationComplexity/Minimax": {"to": "TheoryOfComputation/communication-complexity", "title": "Randomized communication protocols"},
   "MathlibExt/Computability/CommunicationComplexity/Randomized": {"to": "TheoryOfComputation/communication-complexity", "title": "Randomized communication protocols"},
   "MathlibExt/Computability/Complexity": {"to": "TheoryOfComputation/complexity-classes", "title": "The classes P, NP and coNP"},
   "MathlibExt/Computability/PartrecCode": {"to": "TheoryOfComputation/computability", "title": "S-m-n theorem"},
