@@ -36,20 +36,24 @@ for every $f \in \mathcal{F}$, $R(\hat f) \le \hat R(\hat f) + s \le \hat R(f) +
 
 The source states this bound for a loss with values in $[0, \ell_\infty]$ and i.i.d. examples,
 with the per-predictor Hoeffding step for independent variables in $[0, 1]$; the exact forms above
-(the strict event, the measurability remark and the constants) are derived here. Only the case of a $\{0, 1\}$-valued loss with
-$\ell_\infty = 1$, such as the classification error, matches a statement formalized in this
-library; for other bounded losses the Hoeffding step is the classical inequality for bounded
-variables. Pinned Mathlib proves its one-sided form for independent variables with values in an
-interval (Hoeffding's lemma `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc_of_integral_eq_zero`
-with `ProbabilityTheory.HasSubgaussianMGF.measure_sum_ge_le_of_iIndepFun`; the uncentred form
-of Hoeffding's lemma is `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc`); applied to the
-centred losses and to their negatives it gives the per-predictor step, a specialisation this
-library does not state.
+(the strict event, the measurability remark and the constants) are derived here.
 
-This page is an AI-authored exposition; it has no Lean formalization in this library.
+This page is an AI-authored exposition. The library formalizes the bound for every loss with
+values in $[0, \ell_\infty]$, with the non-strict event $|\hat R(f) - R(f)| \ge t$, in
+[Uniform deviation of the empirical risk over a finite class](measure-real-exists-abs-empirical-risk-s.md),
+its high-probability form in
+[Uniform deviation over a finite class, high-probability form](one-sub-le-measure-real-forall-abs-empir.md),
+and the consequence for empirical risk minimization in
+[Empirical risk minimization under a uniform deviation bound](risk-le-add-two-mul-of-forall-abs-sub-le.md);
+the Hoeffding step for bounded variables is
+[Two-sided Hoeffding inequality for averages of bounded variables](../../../Probability/concentration-inequalities/hoeffding-s-inequality/measure-real-abs-avg-sub-ge-le.md).
 
 ## Informally uses
 
+- [Two-sided Hoeffding inequality for averages of bounded variables](../../../Probability/concentration-inequalities/hoeffding-s-inequality/measure-real-abs-avg-sub-ge-le.md):
+  mathematical prerequisite, the per-predictor bound $2 \exp(-2 n t^2 / \ell_\infty^2)$ for the
+  variables $\ell(y_i, f(x_i)) \in [0, \ell_\infty]$, here for the non-strict event, which contains
+  the strict one.
 - [Two-sided Hoeffding inequality for Bernoulli sums](../../../Probability/concentration-inequalities/hoeffding-s-inequality/hoeffding-bernoulli-sum-abs-tail.md):
   mathematical prerequisite in a restricted case, the per-predictor bound when the loss takes only
   the values $0$ and $1$ ($\ell_\infty = 1$): with $X_i = \ell(y_i, f(x_i))$ and

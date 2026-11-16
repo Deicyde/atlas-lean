@@ -10,6 +10,10 @@ with a quotient by $0$ read as $0$. The proof applies the one-sided bound to $Z_
 
 This is the per-predictor step of the uniform deviation bound for a finite class of predictors in learning theory.
 
+## Background
+
+- [Uniform deviation of the empirical risk over a finite class](../../../ComputerScience/machine-learning/generalization-bounds-and-concentration/measure-real-exists-abs-empirical-risk-s.md): background, the application in statistical learning theory, a union bound of this inequality over the predictors.
+
 ## Sources
 
 - F. Bach, *Learning Theory from First Principles*, MIT Press (2024); author PDF at <https://www.di.ens.fr/~fbach/ltfp_book.pdf>, Section 1.2.1, Corollary 1.1 (variables in $[0, 1]$) and the first remark after it (variables in $[a, b]$).

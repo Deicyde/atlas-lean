@@ -1,7 +1,15 @@
 # Generalization bounds and concentration
 
-Uniform deviation bounds between the empirical and the expected risk, obtained from concentration inequalities: for a finite class, Hoeffding's inequality and a union bound; for a general class, McDiarmid's bounded-differences inequality concentrates the supremum of the deviations around its mean. The two articles below are AI-authored expositions of published results without Lean formalization; each names what it relies on, and how, under Informally uses, and marks results not stated in its sources as derived. The Rademacher complexity topic is formalized: the structural calculus of the empirical Rademacher complexity, Massart's finite-class lemma, the bound for classes of finite VC dimension through the Sauer–Shelah lemma, and the contraction lemma, with the Rademacher risk bound as a wanted statement.
+Uniform deviation bounds between the empirical and the expected risk, obtained from concentration inequalities, and their use for empirical risk minimization: if every deviation is at most $s$, the empirical risk minimizer is within $2 s$ of the best predictor of the class. For a finite class, Hoeffding's inequality and a union bound give a deviation of order $\sqrt{\log |F| / n}$; for a general class, McDiarmid's bounded-differences inequality concentrates the supremum of the deviations around its mean, and Rademacher averages control that mean, dimension free for balls of linear predictors. The two pages marked as expositions are AI-authored expositions of published results without Lean formalization; each names what it relies on, and how, under Informally uses. The Rademacher complexity topic is formalized: the structural calculus of the empirical Rademacher complexity, Massart's finite-class lemma, the bound for classes of finite VC dimension through the Sauer–Shelah lemma, and the contraction lemma, with the Rademacher risk bound as a wanted statement.
 
+- [Expected risk](risk.md)
+- [Empirical risk](empirical-risk.md)
+- [Measurability of the empirical risk](measurable-empirical-risk.md)
+- [Empirical risk minimization under a uniform deviation bound](risk-le-add-two-mul-of-forall-abs-sub-le.md)
+- [Uniform deviation of the empirical risk over a finite class](measure-real-exists-abs-empirical-risk-s.md)
+- [Uniform deviation over a finite class, high-probability form](one-sub-le-measure-real-forall-abs-empir.md)
+- [Uniform deviation for a finite class](finite-class-uniform-deviation.md) (exposition)
+- [Concentration of the uniform deviation](bounded-differences-uniform-deviation.md) (exposition)
 - [Uniform deviation for a finite class](finite-class-uniform-deviation.md)
 - [Concentration of the uniform deviation](bounded-differences-uniform-deviation.md)
 - [Rademacher complexity](rademacher-complexity/README.md)
@@ -10,3 +18,5 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 
 - [Hedge algorithm](../online-learning-and-boosting/hedge-algorithm/README.md): regret bounds, the online counterpart of uniform deviation bounds; the $\sqrt{T \log n}$ regret of Hedge mirrors the $\sqrt{\log \lvert \mathcal{F} \rvert / n}$ deviation of a finite class.
 - [Effective ranks and benign overfitting](../supervised-learning/effective-ranks-and-benign-overfitting/README.md): the excess risk of the minimum-norm interpolating estimator is analysed through the spectrum of the covariance rather than through a uniform deviation bound over the class.
+- [Hoeffding's inequality](../../../Probability/concentration-inequalities/hoeffding-s-inequality/README.md): the per-predictor concentration step.
+- [McDiarmid's inequality](../../../Probability/concentration-inequalities/mcdiarmid-s-inequality/README.md): concentration of the supremum of the deviations.
