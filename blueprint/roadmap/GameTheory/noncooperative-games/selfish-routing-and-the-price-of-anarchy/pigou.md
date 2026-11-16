@@ -4,5 +4,5 @@ Pigou's network is the two-edge network of Pigou: one commodity, two parallel ed
 
 ## Sources
 
-- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, §4, Figure 3 (with $p = 1$).
+- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, §2.5, Figure 3 (with $p = 1$).
 - A. C. Pigou, *The Economics of Welfare*, Macmillan, 1920.

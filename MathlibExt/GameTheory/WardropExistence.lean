@@ -41,7 +41,7 @@ Tardos also assume, gives uniqueness of the equilibrium cost instead
 * M. Beckmann, C. B. McGuire and C. B. Winsten, *Studies in the Economics of
   Transportation*, Yale University Press, 1956.
 * T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002),
-  236–259, §1 and §2.3.
+  236–259, Lemma 2.9 (§2.4) and §2.3.
 -/
 
 namespace MathlibExt.GameTheory.SelfishRouting
@@ -104,7 +104,7 @@ private theorem isCompact_feasible {r : ι → ℝ} : IsCompact {f : P → ℝ |
 
 omit [Fintype E] in
 /-- **Existence of Wardrop equilibria** (Beckmann, McGuire and Winsten 1956; Roughgarden–Tardos
-2002, §1 and §2.3). If every latency is continuous on `[0, ∞)`, every commodity has at least
+2002, Lemma 2.9). If every latency is continuous on `[0, ∞)`, every commodity has at least
 one path and every demand is nonnegative, then some flow feasible for the demands is a Wardrop
 equilibrium. The proof minimises the Beckmann potential `∑ₑ ∫₀^{fₑ} ℓₑ` over the compact set of
 feasible flows. -/

@@ -24,5 +24,5 @@ feasible flow.
 
 - M. Beckmann, C. B. McGuire and C. B. Winsten, *Studies in the Economics of Transportation*,
   Yale University Press, 1956.
-- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, §1
-  (existence, attributed to Beckmann et al.) and §2.3 (Beckmann's convex program).
+- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, Lemma 2.9
+  (§2.4; stated there for continuous nondecreasing latencies) and §2.3 (the convex program).

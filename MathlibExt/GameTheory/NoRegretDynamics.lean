@@ -38,7 +38,7 @@ average regret `ε` tend to `0`.
 Roughgarden's *smoothness*: a game is `(λ, μ)`-smooth if
 `∑ᵢ costᵢ(t_i, s_{-i}) ≤ λ C(t) + μ C(s)` for all profiles `s, t`, where
 `C = ∑ᵢ costᵢ` is the social cost. For `μ < 1` every CCE then has expected social cost
-at most `λ / (1 − μ)` times the cost of any profile (plus the approximation term), so the
+at most `λ / (1 − μ)` times the cost of any profile (plus an additive approximation term), so the
 time-averaged social cost of no-regret dynamics obeys the same price-of-anarchy bound as
 pure Nash equilibria. This is the robustness phenomenon that Lykouris, Syrgkanis and
 Tardos extend to games with a dynamic population of learners.
@@ -75,7 +75,9 @@ def IsDistribution (μ : (∀ i, S i) → ℝ) : Prop :=
 
 /-- `μ` is an `ε`-coarse correlated equilibrium: it is a probability distribution on
 profiles, and no player lowers its expected cost by more than `ε` by switching to a fixed
-strategy `a` (Roughgarden 2015, §3.1). -/
+strategy `a`. The error `ε` is additive, as in Roughgarden, CS364A Lecture 17,
+Proposition 3.1; for `ε = 0` this is the coarse correlated equilibrium of Roughgarden 2015,
+§3.1, equation (15). (Roughgarden 2015, §4.1, uses a multiplicative variant instead.) -/
 def IsCoarseCorrelatedEq (cost : ι → (∀ i, S i) → ℝ) (μ : (∀ i, S i) → ℝ) (ε : ℝ) :
     Prop :=
   IsDistribution μ ∧
@@ -136,7 +138,7 @@ def IsSmooth (cost : ι → (∀ i, S i) → ℝ) (lam mu : ℝ) : Prop :=
 
 omit [∀ i, DecidableEq (S i)] in
 /-- **Extension theorem for coarse correlated equilibria** (Roughgarden 2015,
-Theorem 3.2, with the approximation term of an `ε`-CCE): in a `(λ, μ)`-smooth game, the
+Theorem 3.2, extended to an additive `ε`): in a `(λ, μ)`-smooth game, the
 expected social cost `E` of an `ε`-CCE satisfies `(1 − μ) E ≤ λ C(t) + |ι| ε` for every
 profile `t`; for `μ < 1` and `ε = 0` this is the robust price-of-anarchy bound
 `E ≤ λ / (1 − μ) · C(t)`. -/

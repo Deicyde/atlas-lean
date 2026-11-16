@@ -1,6 +1,6 @@
 # All Wardrop equilibria have the same cost
 
-Suppose every latency function $\ell_e$ is nondecreasing. If $f$ and $g$ are Wardrop equilibria
+Suppose every latency function $\ell_e$ is nondecreasing on $[0, \infty)$. If $f$ and $g$ are Wardrop equilibria
 feasible for the same demand, then $C(f) = C(g)$.
 
 ## Informally uses
@@ -11,4 +11,4 @@ feasible for the same demand, then $C(f) = C(g)$.
 ## Sources
 
 - M. Beckmann, C. B. McGuire and C. B. Winsten, *Studies in the Economics of Transportation*, Yale University Press, 1956.
-- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, §1.
+- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, Lemma 2.9 (§2.4), attributed there to Beckmann et al. and to Dafermos and Sparrow (1969).

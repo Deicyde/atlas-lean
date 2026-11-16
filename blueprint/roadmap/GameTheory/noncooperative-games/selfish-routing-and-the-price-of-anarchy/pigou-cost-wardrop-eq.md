@@ -10,4 +10,4 @@ affine latencies cannot be improved.
 
 ## Sources
 
-- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, §4, Figure 3 and the discussion before Theorem 4.5.
+- T. Roughgarden and É. Tardos, "How bad is selfish routing?", J. ACM 49(2) (2002), 236–259, Figure 3 (§2.5) and the opening discussion of §3.

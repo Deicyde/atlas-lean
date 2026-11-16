@@ -50,7 +50,7 @@ games of Roughgarden and Tardos (2004), for which all results below hold.
   (the cost of `f` is `∑ᵢ Lᵢ rᵢ`, Lemma 2.3, and every path has latency at least `Lᵢ`).
 * `IsWardrop.cost_le_sum_latency_mul_edgeFlow`: the variational inequality
   `C(f) ≤ ∑ₑ ℓₑ(fₑ) gₑ` against every feasible flow `g` for the same demand.
-* `IsWardrop.cost_eq`, `IsWardrop.latency_edgeFlow_eq`: for nondecreasing latencies
+* `IsWardrop.cost_eq`, `IsWardrop.latency_edgeFlow_eq`: for latencies nondecreasing on `[0, ∞)`
   any two Wardrop flows for the same demand have the same edge latencies and the
   same cost (Beckmann, McGuire and Winsten 1956).
 * `IsWardrop.cost_le_of_affine`: for affine latencies `aₑ x + bₑ` with
@@ -204,10 +204,11 @@ theorem IsWardrop.cost_le_sum_latency_mul_edgeFlow [Finite ι] {f g : P → ℝ}
 
 omit [Fintype E] in
 /-- Essential uniqueness of Wardrop equilibria (Beckmann, McGuire and Winsten 1956): for
-nondecreasing latencies, two Wardrop flows for the same demand induce the same latency
-on every edge. -/
+latencies nondecreasing on `[0, ∞)`, two Wardrop flows for the same demand induce the same
+latency on every edge. -/
 theorem IsWardrop.latency_edgeFlow_eq [Finite ι] [Finite E] {f g : P → ℝ} {r : ι → ℝ}
-    (hmono : ∀ e, Monotone (N.latency e)) (hWf : N.IsWardrop f) (hf : N.IsFeasible r f)
+    (hmono : ∀ e, MonotoneOn (N.latency e) (Set.Ici 0)) (hWf : N.IsWardrop f)
+    (hf : N.IsFeasible r f)
     (hWg : N.IsWardrop g) (hg : N.IsFeasible r g) (e : E) :
     N.latency e (N.edgeFlow f e) = N.latency e (N.edgeFlow g e) := by
   cases nonempty_fintype E
@@ -217,9 +218,11 @@ theorem IsWardrop.latency_edgeFlow_eq [Finite ι] [Finite E] {f g : P → ℝ} {
   have h2 := hWg.cost_le_sum_latency_mul_edgeFlow hg hf
   have hterm : ∀ e, 0 ≤ (ℓf e - ℓg e) * (N.edgeFlow f e - N.edgeFlow g e) := by
     intro e
+    have hfe : N.edgeFlow f e ∈ Set.Ici (0 : ℝ) := edgeFlow_nonneg hf.1 e
+    have hge : N.edgeFlow g e ∈ Set.Ici (0 : ℝ) := edgeFlow_nonneg hg.1 e
     rcases le_total (N.edgeFlow f e) (N.edgeFlow g e) with h | h
-    · exact mul_nonneg_of_nonpos_of_nonpos (sub_nonpos.2 (hmono e h)) (sub_nonpos.2 h)
-    · exact mul_nonneg (sub_nonneg.2 (hmono e h)) (sub_nonneg.2 h)
+    · exact mul_nonneg_of_nonpos_of_nonpos (sub_nonpos.2 (hmono e hfe hge h)) (sub_nonpos.2 h)
+    · exact mul_nonneg (sub_nonneg.2 (hmono e hge hfe h)) (sub_nonneg.2 h)
   have hsum : ∑ e, (ℓf e - ℓg e) * (N.edgeFlow f e - N.edgeFlow g e) = 0 := by
     refine le_antisymm ?_ (sum_nonneg fun e _ => hterm e)
     have : ∑ e, (ℓf e - ℓg e) * (N.edgeFlow f e - N.edgeFlow g e) =
@@ -233,10 +236,11 @@ theorem IsWardrop.latency_edgeFlow_eq [Finite ι] [Finite E] {f g : P → ℝ} {
   · exact sub_eq_zero.1 h
   · rw [sub_eq_zero.1 h]
 
-/-- For nondecreasing latencies all Wardrop flows for a given demand have the same cost
-(Beckmann, McGuire and Winsten 1956; quoted in Roughgarden–Tardos 2002, §1). -/
+/-- For latencies nondecreasing on `[0, ∞)` all Wardrop flows for a given demand have the same
+cost (Beckmann, McGuire and Winsten 1956; Roughgarden–Tardos 2002, Lemma 2.9). -/
 theorem IsWardrop.cost_eq [Finite ι] {f g : P → ℝ} {r : ι → ℝ}
-    (hmono : ∀ e, Monotone (N.latency e)) (hWf : N.IsWardrop f) (hf : N.IsFeasible r f)
+    (hmono : ∀ e, MonotoneOn (N.latency e) (Set.Ici 0)) (hWf : N.IsWardrop f)
+    (hf : N.IsFeasible r f)
     (hWg : N.IsWardrop g) (hg : N.IsFeasible r g) : N.cost f = N.cost g := by
   have hl := hWf.latency_edgeFlow_eq hmono hf hWg hg
   have h1 := hWf.cost_le_sum_latency_mul_edgeFlow hf hg
@@ -443,10 +447,10 @@ theorem braess_paradox :
     · fin_cases p <;> norm_num
     · norm_num [braessAfter, Fin.sum_univ_three]
   refine ⟨fun f hf hW => ?_, fun f hf hW => ?_⟩
-  · rw [hW.cost_eq braessLatency_monotone hf braessBefore_isWardrop hb]
+  · rw [hW.cost_eq (fun e => (braessLatency_monotone e).monotoneOn _) hf braessBefore_isWardrop hb]
     simp only [RoutingInstance.cost, braessBefore_edgeFlow]
     norm_num [braessBefore, braessLatency, Fin.sum_univ_five]
-  · rw [hW.cost_eq braessLatency_monotone hf braessAfter_isWardrop ha]
+  · rw [hW.cost_eq (fun e => (braessLatency_monotone e).monotoneOn _) hf braessAfter_isWardrop ha]
     simp only [RoutingInstance.cost, braessAfter_edgeFlow]
     norm_num [braessAfter, braessLatency, Fin.sum_univ_five]
 

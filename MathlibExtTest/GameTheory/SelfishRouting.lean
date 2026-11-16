@@ -51,8 +51,8 @@ example (f : Fin 2 → ℝ) (hW : pigou.IsWardrop f)
   rw [hW.cost_eq (fun e => ?_) hf pigou_isWardrop pigou_isFeasible_wardrop,
     pigou_cost_wardrop]
   fin_cases e
-  · intro x y _; simp [pigou]
-  · intro x y h; simpa [pigou] using h
+  · intro x _ y _ _; simp [pigou]
+  · intro x _ y _ h; simpa [pigou] using h
 
 /-- Braess's paradox: the Wardrop flow after adding the shortcut is strictly costlier than
 before, although the optimal cost cannot increase. -/
