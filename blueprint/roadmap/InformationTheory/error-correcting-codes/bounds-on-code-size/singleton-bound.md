@@ -10,6 +10,10 @@ retained coordinates can differ in at most the $d - 1$ deleted coordinates, cont
 minimum-distance hypothesis, so puncturing is injective on the code and the bound follows by
 counting the punctured words.
 
+## Background
+
+- [Reed-Solomon codes are MDS](../reed-solomon-codes/min-dist-code.md): Reed–Solomon codes meet the Singleton bound with equality, over alphabets of size at least $n$.
+
 ## Sources
 
 - R. C. Singleton, "Maximum distance q-nary codes", IEEE Transactions on Information Theory 10(2) (1964), 116–118, DOI 10.1109/TIT.1964.1053661.

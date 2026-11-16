@@ -22,3 +22,4 @@ The codeword states, their orthogonality and norms, and the action of Pauli erro
 - [Linear codes](../../../InformationTheory/error-correcting-codes/linear-codes/README.md): the classical codes $C_1$, $C_2$ and the dual code $C^{\perp}$ used in the construction.
 - [Hamming (7,4) code](../../../InformationTheory/error-correcting-codes/hamming-7-4-code/README.md): the classical code behind Calderbank and Shor's seven-qubit example.
 - [Knill–Laflamme conditions](../knill-laflamme-conditions/README.md): the correctability notion in which the error-correction theorem is stated.
+- [Bounds on code size](../../../InformationTheory/error-correcting-codes/bounds-on-code-size/README.md): the classical Hamming, Singleton and Gilbert–Varshamov bounds that frame the parameters of $C_1$ and $C_2^{\perp}$.

@@ -14,6 +14,10 @@ This is the $q$-ary generalization of Hamming's binary sphere-packing bound. The
 assumes binary words and derives the $2^n$ form; the same disjoint-ball counting argument gives
 the formula stated here for an arbitrary finite alphabet.
 
+## Background
+
+- [Gilbert–Varshamov bound](exists-code-pow-le-card-mul-sum.md): the covering counterpart; balls of radius $d - 1$ around a maximal code cover the space, giving a lower bound on the best code size.
+
 Binary source: R. W. Hamming, "Error Detecting and Error Correcting Codes",
 Bell System Technical Journal 29 (1950), 147–160,
 DOI 10.1002/j.1538-7305.1950.tb00463.x.

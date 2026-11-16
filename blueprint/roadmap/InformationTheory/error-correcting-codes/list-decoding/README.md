@@ -50,3 +50,4 @@ Johnson radius of these MDS codes.
 
 - [Bounds on code size](../bounds-on-code-size/README.md): Hamming-ball volumes and the unique-decoding bounds that list decoding goes beyond.
 - [Reed–Solomon codes](../reed-solomon-codes/README.md): the MDS codes whose unique decoding (Berlekamp–Welch) stops at half the minimum distance and which Guruswami–Sudan decodes up to the Johnson radius.
+- [Shannon's channel coding theorem](../../channel-coding/shannon-s-channel-coding-theorem/README.md): the capacity $1 - H_q(\rho)$ of the $q$-ary symmetric channel with crossover probability $\rho$ equals the list-decoding capacity for a fraction $\rho$ of worst-case errors (Guruswami, Rudra and Sudan, Section 7.4).
