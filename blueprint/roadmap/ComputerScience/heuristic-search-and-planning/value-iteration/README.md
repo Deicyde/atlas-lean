@@ -35,5 +35,9 @@
 - [Value iteration converges](tendsto-value-iteration.md)
 - [A priori error bound for value iteration](dist-value-iteration-le.md)
 - [Stopping test](dist-optimal-value-le.md)
-- [No policy beats the optimal value](policy-value-le-optimal-value.md)
+- [No deterministic policy beats the optimal value](policy-value-le-optimal-value.md)
 - [A greedy policy for the optimal value is optimal](policy-value-greedy.md)
+
+## Related topics
+
+- [Stochastic policies and discounted occupancy](../../machine-learning/reinforcement-learning/stochastic-policies-and-discounted-occupancy/README.md)
