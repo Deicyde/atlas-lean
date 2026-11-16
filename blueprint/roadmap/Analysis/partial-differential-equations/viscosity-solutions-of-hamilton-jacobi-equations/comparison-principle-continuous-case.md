@@ -1,11 +1,13 @@
 # Comparison principle for first-order equations, continuous case
 
 Let $\Omega$ be a bounded open subset of a finite-dimensional real inner product space, $\gamma > 0$,
-and let $F(x, r, p)$ satisfy, for $x, y \in \overline\Omega$,
+and let $F(x, r, p)$ satisfy
 
-- (3.13) $\gamma(r - s) \le F(x, r, p) - F(x, s, p)$ for $r \ge s$;
+- (3.13) $\gamma(r - s) \le F(x, r, p) - F(x, s, p)$ for $r \ge s$ and $x \in \overline\Omega$;
 - (3.14) $F(y, r, \alpha\langle x - y, \cdot\rangle) - F(x, r, \alpha\langle x - y, \cdot\rangle) \le \omega(\alpha|x - y|^2 + |x - y|)$
-  for $r \in \mathbb{R}$ and $\alpha > 0$, where $\omega(t) \to 0$ as $t \to 0^+$.
+  for $x, y \in \Omega$, $r \in \mathbb{R}$ and $\alpha > 0$, where $\omega(t) \to 0$ as $t \to 0^+$.
+
+As printed in the user's guide (p. 18), (3.13) is asked on $\overline\Omega$ and (3.14) on $\Omega$.
 
 If $u$ is a viscosity subsolution and $v$ a viscosity supersolution of $F = 0$ on $\Omega$, both
 continuous on $\overline\Omega$, and $u \le v$ on $\partial\Omega$, then $u \le v$ on $\Omega$.

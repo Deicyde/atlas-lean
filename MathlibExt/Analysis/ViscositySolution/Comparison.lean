@@ -221,7 +221,9 @@ Let `Ω` be a bounded open subset of a finite-dimensional real inner product spa
 `F` satisfy
 * (3.13) `γ (r - s) ≤ F(x, r, p) - F(x, s, p)` for `r ≥ s` and `x ∈ closure Ω`;
 * (3.14) `F(y, r, α⟪x - y, ·⟫) - F(x, r, α⟪x - y, ·⟫) ≤ ω(α‖x - y‖² + ‖x - y‖)` for
-  `x, y ∈ closure Ω`, `r ∈ ℝ`, `α > 0`, with `ω(t) → 0` as `t → 0⁺`.
+  `x, y ∈ Ω`, `r ∈ ℝ`, `α > 0`, with `ω(t) → 0` as `t → 0⁺`.
+
+As in the printed user's guide, (3.13) is asked on `closure Ω` and (3.14) only on `Ω`.
 If `u` is a viscosity subsolution and `v` a viscosity supersolution of `F = 0` on `Ω`, both
 continuous on `closure Ω`, and `u ≤ v` on `∂Ω`, then `u ≤ v` on `Ω`. No continuity of `F` is
 used. The penalisation parameter is chosen among `α₀ 2ᵏ` so that `α ‖x_α - y_α‖²` is small, the
@@ -233,7 +235,7 @@ theorem le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper {Ω :
     (hproper : ∀ x ∈ closure Ω, ∀ r s : ℝ, ∀ p : E →L[ℝ] ℝ, s ≤ r →
       γ * (r - s) ≤ F x r p - F x s p)
     (ω : ℝ → ℝ) (hω : Tendsto ω (𝓝[>] 0) (𝓝 0))
-    (hstruct : ∀ x ∈ closure Ω, ∀ y ∈ closure Ω, ∀ r : ℝ, ∀ α : ℝ, 0 < α →
+    (hstruct : ∀ x ∈ Ω, ∀ y ∈ Ω, ∀ r : ℝ, ∀ α : ℝ, 0 < α →
       F y r (α • innerSL ℝ (x - y)) - F x r (α • innerSL ℝ (x - y)) ≤
         ω (α * ‖x - y‖ ^ 2 + ‖x - y‖))
     {u v : E → ℝ} (hu : ContinuousOn u (closure Ω)) (hv : ContinuousOn v (closure Ω))
@@ -406,7 +408,7 @@ theorem le_of_isViscositySubsolution_of_isViscositySupersolution_of_proper {Ω :
       linarith
     have hωt := hωρ htpos (by rw [Real.dist_eq, sub_zero, abs_of_pos htpos]; exact htlt)
     rw [Real.dist_eq, sub_zero] at hωt
-    have hst := hstruct x hxK y hyK (v y) (2 * α) (by positivity)
+    have hst := hstruct x hxΩ y hyΩ (v y) (2 * α) (by positivity)
     have := (abs_lt.mp hωt).2
     linarith
 

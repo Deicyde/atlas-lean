@@ -3,6 +3,11 @@
 For real numbers $m_1, m_2$ and vectors $a, b$ of a real inner product space,
 $$\frac{m_1 - m_2}{2}\,(|a|^2 - |b|^2) - \langle a - b,\, m_1 a - m_2 b\rangle = -\frac{m_1 + m_2}{2}\,|a - b|^2 .$$
 
+The 2013 notes print the right-hand side of this display (proof of Theorem 3.6, p. 15) as
+$-\frac{\bar m}{2}|Du_1 - Du_2|^2$ with $\bar m = m_1 - m_2$. Expanding both sides gives the coefficient
+$\frac{m_1 + m_2}{2}$ (take $m_1 = m_2 = 1$: the left-hand side is $-|a - b|^2$), which is what the
+sign argument of the proof uses and what the Lean statement proves.
+
 This is the pointwise identity in the proof that the mean field game system
 $$-\partial_t u - \Delta u + \tfrac12 |Du|^2 = F(x, m), \qquad \partial_t m - \Delta m - \operatorname{div}(m\, Du) = 0,$$
 $m(0) = m_0$, $u(T) = G(x, m(T))$, has at most one classical solution when $F$ is strictly monotone

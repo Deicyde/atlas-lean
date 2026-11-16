@@ -3,9 +3,9 @@
 *Recorded as wanted.* Let $\Omega$ be a bounded open subset of a finite-dimensional real inner
 product space and $F$ continuous on $\overline\Omega \times \mathbb{R} \times E^*$, with
 
-- (3.13) $\gamma(r - s) \le F(x, r, p) - F(x, s, p)$ for $r \ge s$, for some $\gamma > 0$;
+- (3.13) $\gamma(r - s) \le F(x, r, p) - F(x, s, p)$ for $r \ge s$ and $x \in \overline\Omega$, for some $\gamma > 0$;
 - (3.14) $F(y, r, \alpha\langle x - y, \cdot\rangle) - F(x, r, \alpha\langle x - y, \cdot\rangle) \le \omega(\alpha|x - y|^2 + |x - y|)$
-  for $x, y \in \overline\Omega$, $r \in \mathbb{R}$, $\alpha > 0$, where $\omega \ge 0$ and $\omega(0+) = 0$.
+  for $x, y \in \Omega$, $r \in \mathbb{R}$, $\alpha > 0$, where $\omega \ge 0$ and $\omega(0+) = 0$.
 
 If $u$ is upper semicontinuous on $\overline\Omega$ and a viscosity subsolution, $v$ lower
 semicontinuous on $\overline\Omega$ and a viscosity supersolution of $F = 0$ on $\Omega$, and

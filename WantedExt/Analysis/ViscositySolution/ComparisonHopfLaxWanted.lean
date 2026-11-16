@@ -46,10 +46,12 @@ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDim
 and Lions, *User's guide*, Bull. AMS 1992, Theorem 3.3 for an `F` independent of the Hessian
 variable). Let `Ω` be a bounded open subset of a finite-dimensional real inner product space and
 `F` continuous on `closure Ω × ℝ × E*`, with
-* (3.13) properness: `γ (r - s) ≤ F(x, r, p) - F(x, s, p)` for `r ≥ s`, with `γ > 0`;
+* (3.13) properness: `γ (r - s) ≤ F(x, r, p) - F(x, s, p)` for `r ≥ s` and `x ∈ closure Ω`,
+  with `γ > 0`;
 * (3.14) a modulus `ω` with `ω(0+) = 0`, `ω ≥ 0`, such that
-  `F(y, r, α⟪x - y, ·⟫) - F(x, r, α⟪x - y, ·⟫) ≤ ω(α‖x - y‖² + ‖x - y‖)` for `x, y ∈ closure Ω`,
+  `F(y, r, α⟪x - y, ·⟫) - F(x, r, α⟪x - y, ·⟫) ≤ ω(α‖x - y‖² + ‖x - y‖)` for `x, y ∈ Ω`,
   `r ∈ ℝ` and `α > 0` (the matrix condition (3.10) is vacuous here, take `X = Y = 0`).
+As in the printed user's guide, (3.13) is asked on `closure Ω` and (3.14) only on `Ω`.
 If `u` is upper semicontinuous on `closure Ω` and a viscosity subsolution, `v` lower
 semicontinuous on `closure Ω` and a viscosity supersolution of `F = 0` on `Ω`, and `u ≤ v` on
 `∂Ω`, then `u ≤ v` on `Ω`. Test functions are `C¹` here and `C²` in the user's guide; a
@@ -67,7 +69,7 @@ theorem_wanted le_of_isViscositySubsolution_of_isViscositySupersolution_of_struc
     (hproper : ∀ x ∈ closure Ω, ∀ r s : ℝ, ∀ p : E →L[ℝ] ℝ, s ≤ r →
       γ * (r - s) ≤ F x r p - F x s p)
     (ω : ℝ → ℝ) (hω : Tendsto ω (𝓝[>] 0) (𝓝 0)) (hω0 : ∀ t, 0 ≤ t → 0 ≤ ω t)
-    (hstruct : ∀ x ∈ closure Ω, ∀ y ∈ closure Ω, ∀ r : ℝ, ∀ α : ℝ, 0 < α →
+    (hstruct : ∀ x ∈ Ω, ∀ y ∈ Ω, ∀ r : ℝ, ∀ α : ℝ, 0 < α →
       F y r (α • innerSL ℝ (x - y)) - F x r (α • innerSL ℝ (x - y)) ≤
         ω (α * ‖x - y‖ ^ 2 + ‖x - y‖))
     {u v : E → ℝ} (hu : UpperSemicontinuousOn u (closure Ω))

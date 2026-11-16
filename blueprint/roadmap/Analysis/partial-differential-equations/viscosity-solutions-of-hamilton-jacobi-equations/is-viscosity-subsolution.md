@@ -15,6 +15,11 @@ it is equivalent to the test-function form; Calder uses $C^\infty$ test function
 (Remark 2.7) that $C^1$ test functions give the same notion. The formalization uses $C^1$ test
 functions.
 
+The test functions are $C^1$ on the whole space $E$. In finite dimensions, the setting of every
+theorem here that needs more than the definition, this is the same as testing with functions
+that are $C^1$ near $x$, since multiplying by a smooth bump function equal to $1$ near $x$ changes
+neither the local maximum nor $D\varphi(x)$.
+
 ## Sources
 
 - M. G. Crandall and P.-L. Lions, "Viscosity solutions of Hamilton–Jacobi equations", Trans. Amer. Math. Soc. 277 (1983), 1–42.
