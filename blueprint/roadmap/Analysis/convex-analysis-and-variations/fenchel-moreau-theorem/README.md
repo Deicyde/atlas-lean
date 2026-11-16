@@ -9,3 +9,4 @@
 ## Related topics
 
 - [Lagrange duality](../lagrange-duality/README.md)
+- [Viscosity solutions of Hamilton–Jacobi equations](../../partial-differential-equations/viscosity-solutions-of-hamilton-jacobi-equations/README.md): the Hopf–Lax formula for $u_t + H(Du) = 0$ is written with the convex conjugate $L = H^*$ of the Hamiltonian.

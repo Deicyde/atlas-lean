@@ -36,3 +36,4 @@ controls the integrals of Lipschitz functions.
   gradient flows of energies for $W_2$, discretized by minimizing movements.
 - [Displacement convexity](../displacement-convexity/README.md): convexity of energies along the
   geodesics of $W_2$.
+- [Mean field games](../../../GameTheory/noncooperative-games/mean-field-games/README.md): the existence theory for the mean field game system measures the dependence of the costs on the distribution of players in the Kantorovich–Rubinstein distance $W_1$.

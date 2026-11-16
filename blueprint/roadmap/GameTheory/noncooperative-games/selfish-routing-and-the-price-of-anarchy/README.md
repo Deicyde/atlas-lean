@@ -45,3 +45,4 @@ Nonatomic routing games: infinitely many users each control a negligible amount 
 - [Potential games](../potential-games/README.md): the atomic counterpart, where Rosenthal's potential plays the role of Beckmann's.
 - [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): with atomic players the affine bound becomes $5/2$.
 - [No-regret dynamics](../no-regret-dynamics/README.md): price-of-anarchy bounds proved by smoothness extend to learning outcomes.
+- [Mean field games](../mean-field-games/README.md): nonatomic games with a continuum of players in general; Wardrop flows are mean field equilibria, and the uniqueness of latencies is the Lasry–Lions monotonicity argument.
