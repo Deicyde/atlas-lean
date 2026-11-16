@@ -1793,6 +1793,7 @@
   "MathlibExt/Analysis/Convex/MirrorDescent": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror descent"},
   "MathlibExt/Analysis/Convex/MirrorDescentEntropy": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror descent"},
   "MathlibExt/Analysis/Convex/MirrorProx": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror-prox method"},
+  "MathlibExt/Analysis/Convex/MirrorProxSaddle": {"to": "Analysis/convex-analysis-and-variations", "title": "Mirror-prox method"},
   "MathlibExt/Analysis/Convex/MoreauDecomposition": {"to": "Analysis/convex-analysis-and-variations", "title": "Moreau decomposition"},
   "MathlibExt/Analysis/Convex/NewtonMinimization": {"to": "Analysis/convex-analysis-and-variations", "title": "Newton's method for minimization"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},
