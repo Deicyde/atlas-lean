@@ -13,4 +13,5 @@ A Gröbner basis of an ideal `I` in a polynomial ring, for a monomial order, is 
 
 ## Related topics
 
+- [Toric ideals and Markov bases](../toric-ideals-and-markov-bases/README.md): a Gröbner basis of a toric ideal consists of binomials and is a Markov basis, which is how Diaconis and Sturmfels compute moves.
 - [Hilbert's Nullstellensatz](../hilbert-s-nullstellensatz/README.md): Gröbner bases decide the membership questions that the Nullstellensatz reduces to, such as whether a system of polynomial equations has no common zero.

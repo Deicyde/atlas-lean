@@ -8,5 +8,6 @@ Ideals and submodules under localization, Hilbert's Nullstellensatz, Gröbner ba
 - [Localization of ideals and submodules](localization-of-ideals-and-submodules/README.md)
 - [Locally integer polynomial functions](locally-integer-polynomial-functions/README.md)
 - [Products of rings and fields](products-of-rings-and-fields/README.md)
+- [Toric ideals and Markov bases](toric-ideals-and-markov-bases/README.md)
 - [Witt vectors](witt-vectors/README.md)
 - [Zero-divisor graph](zero-divisor-graph/README.md)
