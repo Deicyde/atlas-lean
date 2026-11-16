@@ -2,6 +2,7 @@
 
 Mathematical theory of learning from data, including the probabilistic modelling, inference and sampling methods used in machine learning.
 
+- [PAC learning](pac-learning/README.md)
 - [Online learning and boosting](online-learning-and-boosting/README.md)
 - [Reinforcement learning theory](reinforcement-learning/README.md)
 - [Supervised learning and regression](supervised-learning/README.md)
