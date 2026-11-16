@@ -21,6 +21,7 @@ controls the integrals of Lipschitz functions.
 - [Wasserstein distance between Dirac masses](wasserstein-dirac.md)
 - [Triangle inequality for the Wasserstein distance](wasserstein-triangle.md)
 - [Monotonicity of the Wasserstein distances in the exponent](wasserstein-mono.md)
+- [The Wasserstein distance is finite on measures with finite $p$-th moments](wasserstein-lt-top.md)
 - [Lipschitz test functions are controlled by $W_1$](lintegral-le-add-mul-wasserstein-one.md)
 - [Kantorovich–Rubinstein formula](wasserstein-one-eq-i-sup-lipschitz.md)
 - [The Wasserstein distance separates probability measures](eq-of-wasserstein-eq-zero.md)

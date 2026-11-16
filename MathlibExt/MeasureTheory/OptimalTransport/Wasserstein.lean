@@ -34,6 +34,7 @@ Definition 6.1 of Villani's book:
 * `exists_gluing`: the gluing lemma for couplings (Villani, Chapter 1);
 * `wasserstein_triangle`: the triangle inequality, from gluing and Minkowski's inequality;
 * `wasserstein_mono`: `W_p ≤ W_q` for `1 ≤ p ≤ q` (Remark 6.6);
+* `wasserstein_lt_top`: `W_p` is finite on measures with finite `p`-th moments (Definition 6.4);
 * `lintegral_le_add_mul_wasserstein_one`: the elementary half of the Kantorovich–Rubinstein
   formula (Remark 6.5) for nonnegative Lipschitz test functions;
 * `eq_of_wasserstein_eq_zero`: `W_p(μ, ν) = 0` forces `μ = ν`.
@@ -289,6 +290,48 @@ theorem wasserstein_mono [OpensMeasurableSpace X] [SecondCountableTopology X]
   have h := eLpNorm'_le_eLpNorm'_of_exponent_le (f := fun z : X × X => edist z.1 z.2) hp hpq
     (π : Measure (X × X)) measurable_edist.aestronglyMeasurable
   simpa only [eLpNorm', enorm_eq_self] using h
+
+/-- **The Wasserstein distance is finite on measures with finite `p`-th moments.** For `p ≥ 1`
+and `x₀ ∈ X`, if `∫ d(x₀, x)^p dμ` and `∫ d(x₀, y)^p dν` are finite then `W_p(μ, ν) < ∞`: the
+product coupling has cost at most `2^(p-1) (∫ d(x₀, x)^p dμ + ∫ d(x₀, y)^p dν)`
+(C. Villani, *Optimal Transport: Old and New*, Springer 2009, Definition 6.4 and the proof that
+`W_p` is finite on `P_p` that follows it). -/
+theorem wasserstein_lt_top [OpensMeasurableSpace X] [SecondCountableTopology X]
+    {p : ℝ} (hp : 1 ≤ p) (x₀ : X) {μ ν : ProbabilityMeasure X}
+    (hμ : ∫⁻ x, edist x₀ x ^ p ∂(μ : Measure X) < ⊤)
+    (hν : ∫⁻ y, edist x₀ y ^ p ∂(ν : Measure X) < ⊤) :
+    wasserstein p μ ν < ⊤ := by
+  have hp0 : 0 < p := zero_lt_one.trans_le hp
+  have hm : Measurable fun x : X => edist x₀ x ^ p :=
+    (measurable_const.edist measurable_id).pow_const p
+  obtain ⟨h1, h2⟩ := isCoupling_prod μ ν
+  have hcost : ∫⁻ z, edist z.1 z.2 ^ p ∂((μ.prod ν : ProbabilityMeasure (X × X)) : Measure (X × X))
+      ≤ 2 ^ (p - 1) * (∫⁻ x, edist x₀ x ^ p ∂(μ : Measure X) +
+        ∫⁻ y, edist x₀ y ^ p ∂(ν : Measure X)) := by
+    calc ∫⁻ z, edist z.1 z.2 ^ p ∂((μ.prod ν : ProbabilityMeasure (X × X)) : Measure (X × X))
+        ≤ ∫⁻ z, 2 ^ (p - 1) * (edist x₀ z.1 ^ p + edist x₀ z.2 ^ p)
+            ∂((μ.prod ν : ProbabilityMeasure (X × X)) : Measure (X × X)) := by
+          refine lintegral_mono fun z => ?_
+          calc edist z.1 z.2 ^ p ≤ (edist x₀ z.1 + edist x₀ z.2) ^ p := by
+                gcongr
+                calc edist z.1 z.2 ≤ edist z.1 x₀ + edist x₀ z.2 := edist_triangle _ _ _
+                  _ = edist x₀ z.1 + edist x₀ z.2 := by rw [edist_comm]
+            _ ≤ 2 ^ (p - 1) * (edist x₀ z.1 ^ p + edist x₀ z.2 ^ p) :=
+                ENNReal.rpow_add_le_mul_rpow_add_rpow _ _ hp
+      _ = 2 ^ (p - 1) * (∫⁻ x, edist x₀ x ^ p ∂(μ : Measure X) +
+            ∫⁻ y, edist x₀ y ^ p ∂(ν : Measure X)) := by
+          have hm1 : Measurable fun z : X × X => edist x₀ z.1 ^ p := hm.comp measurable_fst
+          have hm2 : Measurable fun z : X × X => edist x₀ z.2 ^ p := hm.comp measurable_snd
+          have hm12 : Measurable fun z : X × X => edist x₀ z.1 ^ p + edist x₀ z.2 ^ p :=
+            hm1.add hm2
+          rw [lintegral_const_mul _ hm12, lintegral_add_left hm1, h1, h2,
+            lintegral_map hm measurable_fst, lintegral_map hm measurable_snd]
+  have hT : transportCost p μ ν < ⊤ := by
+    refine (transportCost_le_of_isCoupling (isCoupling_prod μ ν)).trans_lt
+      (hcost.trans_lt ?_)
+    refine ENNReal.mul_lt_top ?_ (ENNReal.add_lt_top.2 ⟨hμ, hν⟩)
+    exact ENNReal.rpow_lt_top_of_nonneg (by linarith) ENNReal.ofNat_ne_top
+  exact ENNReal.rpow_lt_top_of_nonneg (by positivity) hT.ne
 
 /-- **Lipschitz test functions are controlled by `W_1`.** If `g : X → ℝ≥0` is `K`-Lipschitz,
 then `∫ g dμ ≤ ∫ g dν + K W_1(μ, ν)`. This is the elementary inequality behind the

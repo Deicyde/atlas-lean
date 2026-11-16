@@ -9,8 +9,8 @@ $p \in [1, \infty)$; the Lean definition accepts any real $p$ and any pseudo-ext
 the theorems state the hypotheses they need. $W_1$ is also called the Kantorovich–Rubinstein
 distance.
 
-$W_p$ may be infinite; it is finite on the Wasserstein space $P_p(X)$ of measures with a finite
-$p$-th moment (Villani, Definition 6.4), which is not formalised here.
+$W_p$ may be infinite; it is [finite](wasserstein-lt-top.md) on the Wasserstein space $P_p(X)$ of
+measures with a finite $p$-th moment (Villani, Definition 6.4).
 
 ## Sources
 

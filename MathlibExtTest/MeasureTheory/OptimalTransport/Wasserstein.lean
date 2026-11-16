@@ -54,4 +54,9 @@ example (μ ν : ProbabilityMeasure ℝ) :
       ∫⁻ x, (‖x‖₊ : ℝ≥0∞) ∂(ν : Measure ℝ) + (1 : NNReal) * wasserstein 1 μ ν :=
   lintegral_le_add_mul_wasserstein_one (g := fun x : ℝ => ‖x‖₊) lipschitzWith_one_nnnorm μ ν
 
+/-- Finite moments give a finite distance: `W_2(δ_0, δ_1) < ∞` via `wasserstein_lt_top`. -/
+example : wasserstein 2 (δ 0) (δ 1) < ⊤ :=
+  wasserstein_lt_top (by norm_num) (0 : ℝ)
+    (by simp [lintegral_dirac]) (by simp [lintegral_dirac, edist_dist])
+
 end MathlibExtTest.MeasureTheory.OptimalTransport.Wasserstein
