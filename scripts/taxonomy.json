@@ -1502,6 +1502,7 @@
   "CSLibExt/MachineLearning/Factorization/NMF": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Non-negative matrix factorization"},
   "CSLibExt/MachineLearning/GaussianProcessRegression": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Gaussian process regression"},
   "CSLibExt/MachineLearning/GeneralizationBounds/FiniteClass": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Uniform deviation for a finite class"},
+  "CSLibExt/MachineLearning/GeneralizationBounds/LinearBallRademacher": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
   "CSLibExt/MachineLearning/Generative/BayesClassifier": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bayes classifier"},
   "CSLibExt/MachineLearning/GraphicalModels/BayesianDirichletScore": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Markov equivalence and Bayesian network scores"},
   "CSLibExt/MachineLearning/GraphicalModels/BayesianNetwork": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Bayesian networks"},

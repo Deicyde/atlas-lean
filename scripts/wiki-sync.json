@@ -629,6 +629,7 @@
 "CSLibExt.MachineLearning.GeneralizationBounds.measurable_empiricalRisk": "015ce8c1b6911ec1",
 "CSLibExt.MachineLearning.GeneralizationBounds.measureReal_exists_abs_empiricalRisk_sub_risk_ge_le": "260f0db409d41de6",
 "CSLibExt.MachineLearning.GeneralizationBounds.one_sub_le_measureReal_forall_abs_empiricalRisk_sub_risk_lt": "70715e917ab5d46a",
+"CSLibExt.MachineLearning.GeneralizationBounds.rademacher_average_linear_ball_le": "0dc83e49bcb8d862",
 "CSLibExt.MachineLearning.GeneralizationBounds.risk": "efb05ca210ed1616",
 "CSLibExt.MachineLearning.GeneralizationBounds.risk_le_add_two_mul_of_forall_abs_sub_le": "8fb7cd3638e60ea7",
 "Cardinal.IsInaccessible.beth_lt": "28273feb4fed260c",

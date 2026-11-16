@@ -10,8 +10,7 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Uniform deviation over a finite class, high-probability form](one-sub-le-measure-real-forall-abs-empir.md)
 - [Uniform deviation for a finite class](finite-class-uniform-deviation.md) (exposition)
 - [Concentration of the uniform deviation](bounded-differences-uniform-deviation.md) (exposition)
-- [Uniform deviation for a finite class](finite-class-uniform-deviation.md)
-- [Concentration of the uniform deviation](bounded-differences-uniform-deviation.md)
+- [Rademacher average of a ball of linear predictors](rademacher-average-linear-ball-le.md)
 - [Rademacher complexity](rademacher-complexity/README.md)
 
 ## Related topics
@@ -20,4 +19,5 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Effective ranks and benign overfitting](../supervised-learning/effective-ranks-and-benign-overfitting/README.md): the excess risk of the minimum-norm interpolating estimator is analysed through the spectrum of the covariance rather than through a uniform deviation bound over the class.
 - [Hoeffding's inequality](../../../Probability/concentration-inequalities/hoeffding-s-inequality/README.md): the per-predictor concentration step.
 - [McDiarmid's inequality](../../../Probability/concentration-inequalities/mcdiarmid-s-inequality/README.md): concentration of the supremum of the deviations.
+- [Rademacher type and cotype](../../../Analysis/banach-spaces/geometry-of-banach-spaces/rademacher-type-and-cotype/README.md): Rademacher averages in Hilbert spaces, behind the bound for linear predictors.
 - [Positive-definite kernels](../../../Analysis/hilbert-spaces/positive-definite-kernels/README.md): feature maps of kernels, whose balls are balls of linear predictors.
