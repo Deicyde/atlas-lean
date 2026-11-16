@@ -4113,6 +4113,7 @@
   "MathlibExt/Probability/WaldSecondEquation": {"to": "Probability/martingales", "title": "Wald's equations"},
   "MathlibExt/QuantumInformation/Finite/KochenSpecker": {"to": "QuantumInformation/quantum-foundations", "title": "Kochen–Specker theorem"},
   "MathlibExt/QuantumInformation/Finite/NoCloning": {"to": "QuantumInformation/quantum-operations", "title": "No-cloning theorem"},
+  "MathlibExt/QuantumInformation/Finite/QuantumFourierTransform": {"to": "QuantumInformation/quantum-operations", "title": "Quantum Fourier transform"},
   "MathlibExt/QuantumInformation/Finite/TsirelsonTight": {"to": "QuantumInformation/quantum-foundations", "title": "Tsirelson's bound"},
   "MathlibExt/RepresentationTheory/CharacterInvEqConj": {"to": "RepresentationTheory/finite-group-representations", "title": "Characters of representations"},
   "MathlibExt/RepresentationTheory/CharacterIrreducibleCriterion": {"to": "RepresentationTheory/finite-group-representations", "title": "Characters of representations"},
