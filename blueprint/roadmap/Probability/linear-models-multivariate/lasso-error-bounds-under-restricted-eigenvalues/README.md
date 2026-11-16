@@ -16,3 +16,9 @@ constrained Lasso (Hastie, Tibshirani and Wainwright, *Statistical Learning with
 - [Basic inequality for the Lagrangian Lasso](lasso-basic-inequality.md)
 - [ℓ₂-error bound for the Lagrangian Lasso](lasso-l2-error-le.md)
 - [ℓ₂-error bound for the constrained Lasso](constrained-lasso-l2-error-le.md)
+
+## Related topics
+
+- [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
+- [Sub-exponential variables and Bernstein's inequality](../../concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/README.md)
+- [Gauss–Markov covariance minimality](../gauss-markov-covariance-minimality.md)

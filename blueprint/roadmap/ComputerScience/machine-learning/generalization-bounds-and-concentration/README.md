@@ -22,3 +22,4 @@ Uniform deviation bounds between the empirical and the expected risk, obtained f
 - [Rademacher type and cotype](../../../Analysis/banach-spaces/geometry-of-banach-spaces/rademacher-type-and-cotype/README.md): Rademacher averages in Hilbert spaces, behind the bound for linear predictors.
 - [Positive-definite kernels](../../../Analysis/hilbert-spaces/positive-definite-kernels/README.md): feature maps of kernels, whose balls are balls of linear predictors.
 - [Gradient descent](../../../Analysis/convex-analysis-and-variations/gradient-descent/README.md): the subgradient method and stochastic gradient descent, whose $1/\sqrt{t}$ rate matches the $1/\sqrt{n}$ estimation error.
+- [Sub-exponential variables and Bernstein's inequality](../../../Probability/concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/README.md)

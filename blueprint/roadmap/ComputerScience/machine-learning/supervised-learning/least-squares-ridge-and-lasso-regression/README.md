@@ -53,3 +53,4 @@
 - [Positive definite matrices and matrix inequalities](../../../../LinearAlgebra/positive-definite-matrices/README.md): the empirical covariance $\hat\Sigma = \frac{1}{n} \Phi^\top \Phi$ is positive semidefinite, and $\hat\Sigma + \lambda I$ positive definite for $\lambda > 0$.
 - [Eigenvalues and spectral norm of Hermitian matrices](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-and-spectral-norm-of-hermitian-matri/README.md): the extreme eigenvalues of $\hat\Sigma$ are the smoothness and strong-convexity constants of the least-squares objective.
 - [Generalization bounds and concentration](../../generalization-bounds-and-concentration/README.md): estimation-error bounds for empirical risk minimization.
+- [Lasso error bounds under restricted eigenvalues](../../../../Probability/linear-models-multivariate/lasso-error-bounds-under-restricted-eigenvalues/README.md)
