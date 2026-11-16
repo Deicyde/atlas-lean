@@ -315,7 +315,8 @@ private lemma zigzag_gap_arith {D2 lam₁ lam₂ c P S F T1 T2 T3 T4 : ℝ} (hD2
 rotation map `H` on `D₁` vertices describes a `(D₁, D₂, λ₂)`-graph, then their zig-zag product is
 an `(N₁ D₁, D₂², λ₁ + λ₂ + λ₂²)`-graph (O. Reingold, S. Vadhan and A. Wigderson, Ann. of Math. 155
 (2002), Theorem 3.2, the bound `f(λ₁, λ₂) ≤ λ₁ + λ₂ + λ₂²`, proved in their Section 4.1; see also
-Theorem 1.3). -/
+Theorem 1.3). This is the basic analysis; the tighter bound of their Theorem 4.3 is not formalized.
+-/
 theorem IsNDLambdaGraph.zigzag {G : RotationMap V K} {H : RotationMap K L} {lam₁ lam₂ : ℝ}
     (hG : G.IsNDLambdaGraph lam₁) (hH : H.IsNDLambdaGraph lam₂) :
     (G.zigzag H).IsNDLambdaGraph (lam₁ + lam₂ + lam₂ ^ 2) := by

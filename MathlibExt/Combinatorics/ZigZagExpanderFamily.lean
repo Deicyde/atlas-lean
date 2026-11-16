@@ -86,7 +86,9 @@ theorem IsNDLambdaGraph.mono [Fintype V] [Fintype L] [DecidableEq V] {G : Rotati
     pow_le_pow_left₀ (mul_nonneg hD h.1) (mul_le_mul_of_nonneg_left hle hD) 2
   exact mul_le_mul_of_nonneg_right this hx0
 
-/-- Vertex types of the zig-zag expander family: `K`, `K × K`, `(K × K) × K`, …. -/
+/-- **Vertex types of the zig-zag family.** The vertex type of the `t`-th graph of the zig-zag
+expander family: `K`, `K × K`, `(K × K) × K`, …, with `|K|^(t + 1)` elements
+(`card_zigzagFamilyVertex`). -/
 def ZigZagFamilyVertex (K : Type*) : ℕ → Type _
   | 0 => K
   | t + 1 => ZigZagFamilyVertex K t × K

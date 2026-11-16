@@ -29,8 +29,10 @@ definition of spectral expansion in S. Vadhan, *Pseudorandomness*, Foundations a
 Theoretical Computer Science 7 (2012), Section 4.1.2 (`λ(G) = max_{x ⊥ u} ‖x M‖ / ‖x‖`,
 Definition 4.5), and of an `(N, D, λ)`-graph in O. Reingold, S. Vadhan and A. Wigderson,
 *Entropy waves, the zig-zag graph product, and new constant-degree expanders*, Ann. of Math. 155
-(2002), Definition 1.1: for a regular undirected graph, the largest absolute value of a
-non-trivial eigenvalue of `M` is the smallest such `λ`.
+(2002), Definitions 1.1 and 2.2: for a `d`-regular undirected graph with `d ≥ 1`, the smallest
+such `λ` is the largest absolute value of an eigenvalue of `M` on the orthogonal complement of the
+constants (counted with multiplicity, the constant eigenvector removed), which is `1` when the
+graph is disconnected.
 
 The norm form is stated with squared Euclidean norms, as dot products, so that it needs no
 spectral theorem. The main results:

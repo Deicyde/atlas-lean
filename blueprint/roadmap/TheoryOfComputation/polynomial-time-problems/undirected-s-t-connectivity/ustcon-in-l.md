@@ -25,3 +25,7 @@ rotation maps (Reingold; S. Vadhan, *Pseudorandomness* (2012), Section 4.4, Theo
 ## Sources
 
 - O. Reingold, "Undirected connectivity in log-space", Journal of the ACM 55 (2008), 1-24 (STOC 2005).
+- O. Reingold, "Undirected ST-connectivity in log-space", ECCC TR04-094 (preliminary version, 2004): the
+  numbering of Proposition 2.2, Proposition 2.7 and Theorem 2.9 cited above is that of this version.
+- S. Vadhan, *Pseudorandomness*, Foundations and Trends in Theoretical Computer Science 7 (2012),
+  Section 4.4 and Theorem 4.46.

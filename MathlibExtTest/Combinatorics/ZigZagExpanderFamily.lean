@@ -25,7 +25,8 @@ example : (cycle5.relabel (Equiv.swap true false)).IsNDLambdaGraph 1 :=
 /-- The single-vertex rotation map with one label, a `(1, 1, λ)`-graph for every `λ ≥ 0` (no
 non-zero vector is orthogonal to the constants). It satisfies `|K| = |L|⁴`, so it is an admissible
 seed of the zig-zag family; this instance is degenerate (`N = 1`), and a non-degenerate seed needs
-an explicit `(D⁴, D, 1/5)`-graph, which forces `D` to be large by the Alon-Boppana bound. -/
+an explicit `(D⁴, D, 1/5)`-graph, whose degree must be large: the elementary lower bound
+`λ ≳ 1 / √D` forces `D ≳ 25`. -/
 def trivialSeed : RotationMap Unit Unit where
   rot p := p
   rot_rot _ := rfl

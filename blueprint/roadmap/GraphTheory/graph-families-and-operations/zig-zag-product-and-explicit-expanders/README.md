@@ -20,7 +20,7 @@ Regular multigraphs given by rotation maps, and the graph operations that build 
 - [Relabelling preserves the adjacency matrix](adj-matrix-relabel.md)
 - [Relabelling preserves the `(N, D, λ)` property](is-ndlambda-graph-relabel.md)
 - [The `(N, D, λ)` property is monotone in `λ`](is-ndlambda-graph-mono.md)
-- [Zig Zag Family Vertex](zig-zag-family-vertex.md)
+- [Vertex types of the zig-zag family](zig-zag-family-vertex.md)
 - [The zig-zag expander family](zigzag-family.md)
 - [Size of the zig-zag expander family](card-zigzag-family-vertex.md)
 - [The zig-zag expander family consists of expanders](is-ndlambda-graph-zigzag-family.md)

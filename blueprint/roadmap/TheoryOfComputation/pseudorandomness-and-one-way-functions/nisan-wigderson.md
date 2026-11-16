@@ -13,7 +13,9 @@ Corollary 7.64 (1) and attributes it to them in the chapter notes (Section 7.9).
 converts worst-case hardness into average-case hardness by a derandomized XOR lemma and then
 applies the Nisan-Wigderson generator. Nisan and Wigderson (1994) derived $\mathrm{BPP} = \mathrm{P}$
 from exponential *average-case* hardness: a function in E that no circuit of size $2^{\varepsilon n}$
-computes on noticeably more than half of the inputs (Vadhan, Theorem 7.19 and Corollary 7.20).
+computes correctly on more than a $1/2 + 2^{-\varepsilon n}$ fraction of the inputs, that is,
+$(s, 1/2 - 1/s)$ average-case hardness with $s = 2^{\varepsilon n}$ (Vadhan, Theorem 7.19 and
+Corollary 7.20).
 The Lean declaration keeps its original name, `nisan_wigderson`.
 
 The Nisan-Wigderson generator itself evaluates the hard function $f$ on the restrictions

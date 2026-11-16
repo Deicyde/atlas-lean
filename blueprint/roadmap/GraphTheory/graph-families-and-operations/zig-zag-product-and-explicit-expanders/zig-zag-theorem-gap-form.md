@@ -15,6 +15,9 @@ the notation of the [zig-zag theorem](zig-zag-theorem.md), `B̃ x = (1 - λ₂) 
 `⟨Ã B̃ x, B̃ x⟩` bounds the quadratic form by
 `(1 - λ₂)² λ₁ + 2 (1 - λ₂) λ₂ + λ₂² = 1 - (1 - λ₁)(1 - λ₂)²`.
 
+Like the [zig-zag theorem](zig-zag-theorem.md), this is weaker than the improved bound of
+Reingold, Vadhan and Wigderson, Theorem 4.3, which is not formalized.
+
 ## Background
 
 - [Zig-zag theorem](zig-zag-theorem.md): the original bound `λ₁ + λ₂ + λ₂²`; neither bound

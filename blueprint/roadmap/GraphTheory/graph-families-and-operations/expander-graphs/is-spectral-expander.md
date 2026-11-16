@@ -7,9 +7,12 @@ constant vector, stated without division as `‖A x‖ ≤ d λ ‖x‖` (S. Vad
 (2012), Definition 4.5 with `λ = 1 - γ`; O. Reingold, S. Vadhan and A. Wigderson, Ann. of Math.
 155 (2002), Definition 1.1).
 
-For a regular undirected graph the random-walk matrix is symmetric with the constant vector as an
-eigenvector, so the smallest admissible `λ` is the largest absolute value of an eigenvalue of
-`A / d` other than the trivial eigenvalue `1` (Reingold, Vadhan and Wigderson, Definition 2.2).
+For a `d`-regular undirected graph with `d ≥ 1` the random-walk matrix `A / d` is symmetric with
+the constant vector as an eigenvector, so it preserves the orthogonal complement of the constants,
+and the smallest admissible `λ` is the largest absolute value of an eigenvalue of `A / d` on that
+complement (eigenvalues counted with multiplicity, the constant eigenvector removed; Reingold,
+Vadhan and Wigderson, Definition 2.2). For a disconnected graph the eigenvalue `1` occurs again on
+the complement, so `λ = 1`.
 This two-sided measure differs from the one-sided second eigenvalue `λ₂`, and from the bipartite
 convention of [Bipartite Ramanujan graphs of every degree](exists-bipartite-ramanujan.md), which
 excludes both trivial eigenvalues `±d`. The equivalence with the eigenvalue formulation is not

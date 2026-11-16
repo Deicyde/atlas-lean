@@ -6,6 +6,10 @@ an `(N₁ D₁, D₂², λ₁ + λ₂ + λ₂²)`-graph (O. Reingold, S. Vadhan 
 (2002), Theorem 3.2, the bound `f(λ₁, λ₂) ≤ λ₁ + λ₂ + λ₂²`, proved in their Section 4.1; see also
 Theorem 1.3).
 
+This is the bound of the paper's basic analysis (Section 4.1). The tighter bound of its
+Theorem 4.3 ("Thm. 3.2, improved", Section 4.2), which Reingold quotes as his Theorem 2.9, is not
+formalized.
+
 The proof follows Section 4.1 of the paper. The adjacency operator of the product factors as
 `B̃ Ã B̃`, where `B̃` applies `H` inside every cloud `{v} × [D₁]` and `Ã` is the permutation of
 `[N₁] × [D₁]` given by the rotation map of `G`. A vector `x` orthogonal to the constants splits as
