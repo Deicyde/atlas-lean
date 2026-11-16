@@ -8,7 +8,7 @@ $$
 
 The pairs $(S, S^{(i, z')})$ are exactly the pairs of samples that differ in at most one example. Since $S$ is itself $(S^{(i, z')})^{(i, z_i)}$, the one-sided bound of the definition also holds with the two samples exchanged, so $\lvert L(A(S^{(i, z')}), z) - L(A(S), z)\rvert \le \varepsilon$.
 
-The Lean definition covers algorithms without internal randomness. For a randomized algorithm, Definition 2.1 of the source takes the expectation over the internal randomness inside the supremum; this is the deterministic definition applied to the expected loss $(S, z) \mapsto \mathbb{E}_A L(A(S), z)$.
+The Lean definition covers algorithms without internal randomness. For a randomized algorithm, Definition 2.1 of the source takes the expectation over the internal randomness inside the supremum; this is the deterministic definition applied to the expected loss $(S, z) \mapsto \mathbb{E}_A L(A(S), z)$, which is how [the stability of SGM](is-uniformly-stable-sgm.md) is stated.
 
 ## Sources
 

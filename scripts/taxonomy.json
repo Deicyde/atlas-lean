@@ -1510,6 +1510,7 @@
   "CSLibExt/MachineLearning/GaussianProcessRegression": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Gaussian process regression"},
   "CSLibExt/MachineLearning/GeneralizationBounds/FiniteClass": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Uniform deviation for a finite class"},
   "CSLibExt/MachineLearning/GeneralizationBounds/LinearBallRademacher": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
+  "CSLibExt/MachineLearning/GeneralizationBounds/SGDStability": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Algorithmic stability"},
   "CSLibExt/MachineLearning/GeneralizationBounds/Stability": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Algorithmic stability"},
   "CSLibExt/MachineLearning/GeneralizationBounds/TwoLayerReLURademacher": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Two-layer neural networks and Barron space"},
   "CSLibExt/MachineLearning/Generative/BayesClassifier": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bayes classifier"},

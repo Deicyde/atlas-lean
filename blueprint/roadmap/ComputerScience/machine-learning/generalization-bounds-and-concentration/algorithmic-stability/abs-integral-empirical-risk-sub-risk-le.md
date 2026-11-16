@@ -12,7 +12,7 @@ Proof: by [replace-one sampling](map-update-prod-pi.md), $\mathbb{E}\, L(A(S), z
 
 The source states the theorem without regularity hypotheses. Joint measurability makes the loss at a training example, $S \mapsto L(A(S), z_i)$, measurable, and boundedness makes every expectation in the proof finite; both are added here. The bound holds in expectation only.
 
-Unlike the [uniform deviation bounds](../measure-real-exists-abs-empirical-risk-s.md) of the parent topic and [Rademacher complexity](../rademacher-complexity/README.md), the bound involves no complexity of a class of predictors: only the sensitivity of the algorithm to one example.
+Unlike the [uniform deviation bounds](../measure-real-exists-abs-empirical-risk-s.md) of the parent topic and [Rademacher complexity](../rademacher-complexity/README.md), the bound involves no complexity of a class of predictors: only the sensitivity of the algorithm to one example. Combined with [the uniform stability of stochastic gradient descent](integral-abs-sgm-output-sub-le.md), it bounds the [generalization gap of SGD](abs-integral-empirical-risk-sub-risk-sgm.md) by $2L^2/n$ times the sum of its step sizes.
 
 ## Sources
 
