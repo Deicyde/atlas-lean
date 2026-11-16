@@ -29,6 +29,7 @@ rungs of Pearl's hierarchy: association, intervention, counterfactual.
 ## Interventions
 
 - [The submodel of the intervention `do(X_W = w)`](do-set.md)
+- [Disturbances of a submodel](do-set-noise.md)
 - [Network of a submodel](joint-to-bayes-net-do-set.md)
 - [Interventions are truncated factorizations](law-do-set.md)
 - [Single-node interventions in a structural causal model](law-do-set-singleton.md)
@@ -41,3 +42,16 @@ rungs of Pearl's hierarchy: association, intervention, counterfactual.
 - [Counterfactual probability given evidence](cf-prob.md)
 - [Without evidence, counterfactuals are interventions](cf-prob-true.md)
 - [Evidence that agrees with the antecedent](cf-prob-of-consistent.md)
+- [The probability of necessity under monotonicity](cf-prob-necessity.md)
+- [Pearl's formula for the probability of necessity](cf-prob-necessity-eq.md)
+
+## Related topics
+
+- [Causal Bayesian networks](../causal-bayesian-networks/README.md): the truncated factorization,
+  back-door and front-door adjustment and the do-calculus, which apply to the network
+  `toBayesNet` of a model.
+- [Bayesian networks](../bayesian-networks/README.md): the factorization and Markov properties
+  that the causal Markov condition delivers.
+- [Potential outcomes and causal identification](../../../../Probability/nonparametric-survival/potential-outcomes-and-causal-identification/README.md):
+  the potential-outcome framework takes `Y_x(u)` as primitive; here it is derived from the
+  submodel `M_x`, and consistency becomes a theorem.

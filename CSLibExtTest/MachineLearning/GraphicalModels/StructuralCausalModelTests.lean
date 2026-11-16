@@ -100,4 +100,36 @@ example (Y : (Fin 2 → Bool) → Prop) [DecidablePred Y] :
       ∑ x with Y x, (xorSCM.doSet {0} fun _ => true).law x :=
   xorSCM.cfProb_true _ _ Y
 
+/-! ### The probability of necessity in a monotone model -/
+
+/-- The structural equations `X₀ = U₀` and `X₁ = X₀ || U₁`: the outcome is monotone in the
+treatment. -/
+def orMech : (k : Fin 2) → (xorPa k → Bool) → Bool → Bool
+  | ⟨0, _⟩ => fun _ e => e
+  | ⟨1, _⟩ => fun z e => z ⟨0, by simp [xorPa]⟩ || e
+  | ⟨_ + 2, h⟩ => absurd h (by omega)
+
+/-- The monotone model. -/
+noncomputable def orSCM : SCM Bool Bool 2 where
+  pa := xorPa
+  noise _ := fair
+  mech := orMech
+
+/-- In every unit, the outcome under `do(X₀ = b)` is `b || U₁`. -/
+theorem orSCM_counterfactual (b : Bool) (u : Fin 2 → Bool) :
+    orSCM.counterfactual {0} (fun _ => b) u = ![b, b || u 1] := by
+  rw [SCM.counterfactual, SCM.solve_eq_iff]
+  intro k
+  fin_cases k <;> rfl
+
+/-- The model is monotone, so Pearl's formula for the probability of necessity applies. -/
+example : orSCM.cfProb {0} (fun _ => false) (fun x => x 0 = true ∧ x 1 = true)
+      (fun x => x 1 = false) =
+    ((∑ x with x 1 = true, orSCM.law x) -
+        ∑ x with x 1 = true, (orSCM.doSet {0} fun _ => false).law x) /
+      ∑ x with x 0 = true ∧ x 1 = true, orSCM.law x := by
+  refine orSCM.cfProb_necessity 0 1 fun u _ => ?_
+  rw [orSCM_counterfactual]
+  rfl
+
 end Cslib.MachineLearning.StructuralCausalModelTests

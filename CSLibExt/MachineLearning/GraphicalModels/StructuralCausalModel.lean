@@ -9,6 +9,9 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import CSLibExt.MachineLearning.GraphicalModels.CausalAdjustment
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
 
 /-!
 # Structural causal models, interventions and counterfactuals
@@ -56,6 +59,9 @@ Surveys* 2009, Definition 4, eq. (27)).
 * `SCM.cfProb_true`: without evidence, the counterfactual probability is the interventional
   probability `P(Y | do(X_W = w))`; `SCM.cfProb_of_consistent`: when the evidence forces
   `X_W = w`, it is the observational conditional probability `P(Y | E)`.
+* `SCM.cfProb_necessity`, `SCM.cfProb_necessity_eq`: **the probability of necessity under
+  monotonicity** (Pearl, *Statistics Surveys* 2009, Theorem 3, eq. (54)):
+  `PN = (P(y) - P(y | do(x'))) / P(x, y)`.
 
 ## References
 
@@ -297,6 +303,98 @@ theorem cfProb_of_consistent [Fintype β] [Fintype α] [DecidableEq α] {W : Fin
   · rw [s.counterfactual_eq_solve (hE _ hu)]
     simp [hu]
   · simp [hu]
+
+/-! ### The probability of necessity -/
+
+/-- **Disturbances of a submodel.** The disturbances of a submodel are those of the model. -/
+@[simp] theorem doSet_noise (W : Finset (Fin n)) (w : Fin n → α) :
+    (s.doSet W w).noise = s.noise :=
+  rfl
+
+/-- **The probability of necessity under monotonicity** (Pearl, *Statistics Surveys* 2009,
+eq. (53) and Theorem 3): for a binary treatment `X_i` and a binary outcome `X_j`, the probability
+of necessity `PN = P(Y_{x'} = y' | X = x, Y = y)` (with `x, y` = `true` and `x', y'` = `false`)
+is identified from the observational law and the interventional law of `do(X_i = false)` when
+`Y` is monotonic in `X` (`Y_{x'}(u) = true` implies `Y_x(u) = true`):
+`PN = (P(y) - P(y | do(x'))) / P(x, y)`. `SCM.cfProb_necessity_eq` rewrites this as the
+right-hand side of eq. (54). -/
+theorem cfProb_necessity [Fintype β] (s : SCM Bool β n) (i j : Fin n)
+    (hmono : ∀ u, s.counterfactual {i} (fun _ => false) u j = true →
+      s.counterfactual {i} (fun _ => true) u j = true) :
+    s.cfProb {i} (fun _ => false) (fun x => x i = true ∧ x j = true) (fun x => x j = false) =
+      ((∑ x with x j = true, s.law x) - ∑ x with x j = true, (s.doSet {i} fun _ => false).law x) /
+        ∑ x with x i = true ∧ x j = true, s.law x := by
+  rw [sum_law_filter, sum_law_filter, sum_law_filter, cfProb, doSet_noise, ← sum_sub_distrib]
+  congr 1
+  refine sum_congr rfl fun u _ => ?_
+  rw [← mul_sub]
+  congr 1
+  change _ = _ - (if s.counterfactual {i} (fun _ => false) u j = true then 1 else 0)
+  by_cases hX : s.solve u i = true
+  · have h1 : s.counterfactual {i} (fun _ => true) u = s.solve u :=
+      s.counterfactual_eq_solve (by simpa using hX)
+    have hm := hmono u
+    rw [h1] at hm
+    cases hY0 : s.counterfactual {i} (fun _ => false) u j <;> cases hY : s.solve u j <;>
+      simp_all
+  · have hX' : s.solve u i = false := by simpa using hX
+    have h0 : s.counterfactual {i} (fun _ => false) u = s.solve u :=
+      s.counterfactual_eq_solve (by simpa using hX')
+    rw [h0]
+    simp [hX]
+
+/-- **Pearl's formula for the probability of necessity** (Pearl, *Statistics Surveys* 2009,
+Theorem 3, eq. (54)): under monotonicity, and when `P(x, y) > 0`,
+`PN = (P(y|x) - P(y|x')) / P(y|x) + (P(y|x') - P(y | do(x'))) / P(x, y)`: the excess risk ratio
+plus a correction for confounding. -/
+theorem cfProb_necessity_eq [Fintype β] (s : SCM Bool β n) (i j : Fin n)
+    (hmono : ∀ u, s.counterfactual {i} (fun _ => false) u j = true →
+      s.counterfactual {i} (fun _ => true) u j = true)
+    (hxy : ∑ x with x i = true ∧ x j = true, s.law x ≠ 0) :
+    s.cfProb {i} (fun _ => false) (fun x => x i = true ∧ x j = true) (fun x => x j = false) =
+      ((∑ x with x i = true ∧ x j = true, s.law x) / (∑ x with x i = true, s.law x) -
+          (∑ x with x i = false ∧ x j = true, s.law x) / (∑ x with x i = false, s.law x)) /
+        ((∑ x with x i = true ∧ x j = true, s.law x) / (∑ x with x i = true, s.law x)) +
+      ((∑ x with x i = false ∧ x j = true, s.law x) / (∑ x with x i = false, s.law x) -
+          ∑ x with x j = true, (s.doSet {i} fun _ => false).law x) /
+        ∑ x with x i = true ∧ x j = true, s.law x := by
+  rw [s.cfProb_necessity i j hmono]
+  have h0 : ∀ x, 0 ≤ s.law x := fun x => by
+    rw [law_eq_joint]
+    exact s.toBayesNet.toChain.joint_nonneg n x
+  set a := ∑ x with x i = true ∧ x j = true, s.law x
+  set b := ∑ x with x i = false ∧ x j = true, s.law x
+  set px := ∑ x with x i = true, s.law x
+  set px' := ∑ x with x i = false, s.law x
+  set c := ∑ x with x j = true, (s.doSet {i} fun _ => false).law x
+  have hy : ∑ x with x j = true, s.law x = a + b := by
+    rw [← sum_filter_add_sum_filter_not (univ.filter fun x : Fin n → Bool => x j = true)
+      (fun x => x i = true), filter_filter, filter_filter]
+    congr 1
+    · exact sum_congr (filter_congr fun x _ => and_comm) fun _ _ => rfl
+    · refine sum_congr (filter_congr fun x _ => ?_) fun _ _ => rfl
+      simp only [Bool.not_eq_true]
+      exact and_comm
+  have hp : px + px' = 1 := by
+    rw [← s.sum_law, ← sum_filter_add_sum_filter_not univ (fun x : Fin n → Bool => x i = true)]
+    congr 1
+  have ha0 : 0 < a := lt_of_le_of_ne (sum_nonneg fun x _ => h0 x) (Ne.symm hxy)
+  have hapx : a ≤ px := sum_le_sum_of_subset_of_nonneg
+    (fun x hx => by simp only [mem_filter] at hx ⊢; exact ⟨hx.1, hx.2.1⟩) fun x _ _ => h0 x
+  have hbpx : b ≤ px' := sum_le_sum_of_subset_of_nonneg
+    (fun x hx => by simp only [mem_filter] at hx ⊢; exact ⟨hx.1, hx.2.1⟩) fun x _ _ => h0 x
+  have hb0 : 0 ≤ b := sum_nonneg fun x _ => h0 x
+  have hpx : 0 < px := lt_of_lt_of_le ha0 hapx
+  rw [hy]
+  by_cases hpx' : px' = 0
+  · have hb : b = 0 := le_antisymm (hpx' ▸ hbpx) hb0
+    rw [hpx', hb]
+    field_simp
+    ring
+  · have hpxe : px = 1 - px' := by linarith
+    rw [hpxe] at hpx ⊢
+    field_simp
+    ring
 
 end SCM
 
