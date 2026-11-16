@@ -2,7 +2,7 @@
 
 Let $\pi_{12}$ be a probability measure on $X_1 \times X_2$ and $\pi_{23}$ a probability measure on
 $X_2 \times X_3$ such that the second marginal of $\pi_{12}$ equals the first marginal of $\pi_{23}$.
-If $X_3$ is a nonempty standard Borel space, there is a probability measure $\pi$ on
+If $X_3$ is a standard Borel space, there is a probability measure $\pi$ on
 $(X_1 \times X_2) \times X_3$ whose marginal on $X_1 \times X_2$ is $\pi_{12}$ and whose marginal on
 $X_2 \times X_3$ is $\pi_{23}$.
 

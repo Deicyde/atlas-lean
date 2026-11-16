@@ -150,9 +150,10 @@ measures `μ` and `ν`, and let `c : X × Y → [0, ∞]` be continuous. Then so
 (C. Villani, *Optimal Transport: Old and New*, Springer 2009, Theorem 4.1, in the case
 `a = b = 0` with a continuous cost).
 
-This is the content of the `WantedExt` entry
-`MathlibExt.Analysis.OptimalTransportWanted.Analysis.monge_kantorovich_exists`, stated with
-`IsCoupling` and `ProbabilityMeasure`. -/
+It is stated with `IsCoupling` and `ProbabilityMeasure`; the formulation with
+`Couplings` and `kantorovichCost`,
+`MathlibExt.Analysis.OptimalTransportWanted.Analysis.monge_kantorovich_exists`, is deduced from it
+in `MathlibExt.MeasureTheory.OptimalTransport.MongeKantorovich`. -/
 theorem exists_isCoupling_forall_lintegral_le (μ : ProbabilityMeasure X)
     (ν : ProbabilityMeasure Y) {c : X × Y → ℝ≥0∞} (hc : Continuous c) :
     ∃ π : ProbabilityMeasure (X × Y), IsCoupling μ ν π ∧

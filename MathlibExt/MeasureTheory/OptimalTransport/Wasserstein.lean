@@ -33,7 +33,7 @@ Definition 6.1 of Villani's book:
 * `wasserstein_dirac`: `W_p(δ_x, δ_y) = d(x, y)` (Example 6.3);
 * `exists_gluing`: the gluing lemma for couplings (Villani, Chapter 1);
 * `wasserstein_triangle`: the triangle inequality, from gluing and Minkowski's inequality;
-* `wasserstein_mono`: `W_p ≤ W_q` for `1 ≤ p ≤ q` (Remark 6.6);
+* `wasserstein_mono`: `W_p ≤ W_q` for `0 < p ≤ q` (Remark 6.6);
 * `wasserstein_lt_top`: `W_p` is finite on measures with finite `p`-th moments (Definition 6.4);
 * `lintegral_le_add_mul_wasserstein_one`: the elementary half of the Kantorovich–Rubinstein
   formula (Remark 6.5) for nonnegative Lipschitz test functions;
@@ -60,12 +60,13 @@ marginal on `X₁ × X₂` is `π₁₂` and whose marginal on `X₂ × X₃` is
 (C. Villani, *Optimal Transport: Old and New*, Springer 2009, Chapter 1, "Gluing lemma";
 there the three spaces are Polish). -/
 theorem exists_gluing {X₁ X₂ X₃ : Type*} [MeasurableSpace X₁] [MeasurableSpace X₂]
-    [MeasurableSpace X₃] [StandardBorelSpace X₃] [Nonempty X₃]
+    [MeasurableSpace X₃] [StandardBorelSpace X₃]
     (π₁₂ : Measure (X₁ × X₂)) (π₂₃ : Measure (X₂ × X₃))
     [IsProbabilityMeasure π₁₂] [IsProbabilityMeasure π₂₃]
     (h : π₁₂.map Prod.snd = π₂₃.map Prod.fst) :
     ∃ π : Measure ((X₁ × X₂) × X₃), IsProbabilityMeasure π ∧
       π.map Prod.fst = π₁₂ ∧ π.map (fun z => (z.1.2, z.2)) = π₂₃ := by
+  have : Nonempty X₃ := nonempty_of_isProbabilityMeasure (π₂₃.map Prod.snd)
   set κ := π₂₃.condKernel
   set κ' := κ.comap Prod.snd measurable_snd
   refine ⟨π₁₂ ⊗ₘ κ', inferInstance, ?_, ?_⟩
@@ -239,7 +240,6 @@ theorem wasserstein_triangle [BorelSpace X] [SecondCountableTopology X]
     [StandardBorelSpace X] {p : ℝ} (hp : 1 ≤ p) (μ₁ μ₂ μ₃ : ProbabilityMeasure X) :
     wasserstein p μ₁ μ₃ ≤ wasserstein p μ₁ μ₂ + wasserstein p μ₂ μ₃ := by
   have hp0 : 0 < p := zero_lt_one.trans_le hp
-  have : Nonempty X := nonempty_of_isProbabilityMeasure (μ₁ : Measure X)
   rw [wasserstein_eq_iInf hp0 μ₁ μ₂, wasserstein_eq_iInf hp0 μ₂ μ₃]
   simp only [ENNReal.iInf_add, ENNReal.add_iInf]
   refine le_iInf₂ fun π₂₃ h₂₃ => le_iInf₂ fun π₁₂ h₁₂ => ?_
@@ -279,7 +279,7 @@ theorem wasserstein_triangle [BorelSpace X] [SecondCountableTopology X]
   gcongr with z
   exact edist_triangle _ _ _
 
-/-- **Monotonicity of the Wasserstein distances in the exponent.** For `1 ≤ p ≤ q`,
+/-- **Monotonicity of the Wasserstein distances in the exponent.** For `0 < p ≤ q`,
 `W_p(μ, ν) ≤ W_q(μ, ν)` (C. Villani, *Optimal Transport: Old and New*, Springer 2009,
 Remark 6.6, inequality (6.4)). -/
 theorem wasserstein_mono [OpensMeasurableSpace X] [SecondCountableTopology X]

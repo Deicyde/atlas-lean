@@ -19,3 +19,10 @@
 - [Flux of the Gibbs density under a rotational gradient drift](flux-rotational-gibbs.md)
 - [Rotational drifts share the Gibbs stationary density](divergence-flux-rotational-gibbs.md)
 - [An explicit rotational drift with nonzero flux](exists-rotational-flux-ne-zero.md)
+
+## Related topics
+
+- [Wasserstein distances](../../../MeasureTheory/optimal-transport/wasserstein-distances/README.md):
+  the Fokker–Planck equation is the gradient flow of the free energy for the Wasserstein distance
+  $W_2$ (Jordan, Kinderlehrer and Otto, 1998, as recalled in the free-energy module); only the
+  dissipation identity is formalised here.

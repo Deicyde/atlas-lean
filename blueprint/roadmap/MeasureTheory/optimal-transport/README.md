@@ -10,7 +10,8 @@ Couplings of probability measures, transport costs, existence of optimal couplin
 ## Related topics
 
 - [Total variation distance](../../Probability/convergence-of-measures/total-variation-distance/README.md):
-  total variation is the optimal transport cost for the cost $1_{x \ne y}$ (Villani, equation (6.11)),
+  with the repository's normalisation, total variation is the optimal transport cost for the cost
+  $1_{x \ne y}$ (Villani's equation (6.11) carries a factor 2 for his total variation norm),
   and it bounds $W_1$ on bounded spaces.
 - [Stochastic domination and Strassen's theorem](../../Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/README.md):
   Strassen's theorem is a coupling existence theorem, a transport problem with a cost valued in

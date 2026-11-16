@@ -9,8 +9,8 @@ Proof: the set of couplings is [tight](is-tight-measure-set-set-of-is-coupling.m
 (it contains $\mu \otimes \nu$); and the total cost is
 [lower semicontinuous](lower-semicontinuous-lintegral.md), so it attains its minimum.
 
-This proves the [Monge–Kantorovich existence theorem](monge-kantorovich-exists.md) recorded as
-wanted in this topic, stated there with its own coupling and cost definitions. Villani's
+The [Monge–Kantorovich existence theorem](monge-kantorovich-exists.md) of this topic, stated with
+its own coupling and cost definitions, is deduced from it. Villani's
 Theorem 4.1 allows a lower semicontinuous cost bounded below by $a(x) + b(y)$ with $a, b$
 integrable and upper semicontinuous; the case proved here is $a = b = 0$ with a continuous cost.
 

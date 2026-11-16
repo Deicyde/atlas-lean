@@ -13,9 +13,10 @@ $\alpha = (\mu - \nu)_+$ and deficit $\beta = (\mu - \nu)_-$, both of mass
 $a = \mu(S) - \nu(S) \le \sup_B |\mu(B) - \nu(B)|$, and use the coupling
 $\pi = (\mathrm{id}, \mathrm{id})_\# m + a^{-1}\, \alpha \otimes \beta$, whose cost is at most $D a$.
 
-Villani normalises the total variation as $\|\mu - \nu\|_{TV} = 2 \sup_B |\mu(B) - \nu(B)|$
-(equation (6.11)), so this bound, $W_1 \le \tfrac{D}{2} \|\mu - \nu\|_{TV}$, implies his Particular
-Case 6.16, $W_1(\mu, \nu) \le D \|\mu - \nu\|_{TV}$.
+Villani's $\|\mu - \nu\|_{TV}$ is the total variation norm (his Conventions), so
+$\|\mu - \nu\|_{TV} = 2 \sup_B |\mu(B) - \nu(B)|$; equation (6.11) reads
+$\|\mu - \nu\|_{TV} = 2 \inf P[X \ne Y]$. Hence this bound, $W_1 \le \tfrac{D}{2} \|\mu - \nu\|_{TV}$,
+implies his Particular Case 6.16, $W_1(\mu, \nu) \le D \|\mu - \nu\|_{TV}$.
 
 ## Sources
 

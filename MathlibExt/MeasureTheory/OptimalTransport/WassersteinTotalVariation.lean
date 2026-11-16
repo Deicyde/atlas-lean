@@ -22,7 +22,8 @@ spread the excess `(μ - ν)₊` uniformly over the deficit `(μ - ν)₋`
 (C. Villani, *Optimal Transport: Old and New*, Springer 2009, Theorem 6.15 and Particular
 Case 6.16).
 
-Villani writes `‖μ - ν‖_TV = 2 inf P[X ≠ Y] = 2 sup_B |μ(B) - ν(B)|` (equation (6.11)), while
+Villani's `‖μ - ν‖_TV` is the total variation norm (his Conventions), so
+`‖μ - ν‖_TV = 2 sup_B |μ(B) - ν(B)|`, and equation (6.11) reads `‖μ - ν‖_TV = 2 inf P[X ≠ Y]`; while
 `MathlibExt.Probability.TotalVariationDistance.totalVariationDist` is `sup_B |μ(B) - ν(B)|`; the
 bound here, `W_1 ≤ D · sup_B |μ(B) - ν(B)| = (D / 2) ‖μ - ν‖_TV`, therefore implies Particular
 Case 6.16, `W_1 ≤ D ‖μ - ν‖_TV`.
@@ -62,8 +63,8 @@ diameter at most `D` (second countable, with a σ-algebra containing the open se
 probability measures `μ, ν`,
 `W_1(μ, ν) ≤ D · sup_B |μ(B) - ν(B)|`, the supremum over measurable sets `B`
 (C. Villani, *Optimal Transport: Old and New*, Springer 2009, Particular Case 6.16, proved with
-the transference plan of the proof of Theorem 6.15; Villani's `‖μ - ν‖_TV` is twice the
-supremum used here, see equation (6.11), so this is the sharper form). -/
+the transference plan of the proof of Theorem 6.15; Villani's `‖μ - ν‖_TV`, the total variation
+norm, is twice the supremum used here, so this is the sharper form). -/
 theorem wasserstein_one_le_mul_totalVariationDist {X : Type*} [PseudoEMetricSpace X]
     [MeasurableSpace X] [OpensMeasurableSpace X] [SecondCountableTopology X] {D : ℝ≥0}
     (hD : ∀ x y : X, edist x y ≤ D) (μ ν : ProbabilityMeasure X) :
