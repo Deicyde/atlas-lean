@@ -572,7 +572,8 @@
    "description": "Quantum information studies states, channels, measurement, entanglement, communication, and quantum computation.",
    "fields": [
     {"slug": "quantum-foundations", "title": "Quantum foundations", "description": "Quantum foundations studies what quantum mechanics rules out and allows at the level of measurement outcomes, including contextuality, Bell nonlocality and bounds on quantum correlations.", "msc": ["81P10", "81P13", "81P40"], "subfields": []},
-    {"slug": "quantum-operations", "title": "Quantum operations and channels", "description": "Quantum operations and channels covers the physically allowed transformations of quantum states, such as isometries and completely positive maps, and impossibility results like the no-cloning theorem.", "msc": ["81P45", "81P47"], "subfields": []}
+    {"slug": "quantum-operations", "title": "Quantum operations and channels", "description": "Quantum operations and channels covers the physically allowed transformations of quantum states, such as isometries and completely positive maps, and impossibility results like the no-cloning theorem.", "msc": ["81P45", "81P47"], "subfields": []},
+    {"slug": "quantum-error-correction", "title": "Quantum error correction", "description": "Quantum error correction protects quantum information against noise by encoding it into a subspace of a larger system: quantum codes, the Knill–Laflamme conditions for correctability, and stabilizer and CSS codes.", "msc": ["81P73"], "subfields": []}
    ]
   },
   "RepresentationTheory": {
@@ -4111,6 +4112,7 @@
   "MathlibExt/Probability/WaldDiagonalTerms": {"to": "Probability/martingales", "title": "Wald's equations"},
   "MathlibExt/Probability/WaldEquation": {"to": "Probability/martingales", "title": "Wald's equations"},
   "MathlibExt/Probability/WaldSecondEquation": {"to": "Probability/martingales", "title": "Wald's equations"},
+  "MathlibExt/QuantumInformation/Finite/KnillLaflamme": {"to": "QuantumInformation/quantum-error-correction", "title": "Knill–Laflamme conditions"},
   "MathlibExt/QuantumInformation/Finite/KochenSpecker": {"to": "QuantumInformation/quantum-foundations", "title": "Kochen–Specker theorem"},
   "MathlibExt/QuantumInformation/Finite/NoCloning": {"to": "QuantumInformation/quantum-operations", "title": "No-cloning theorem"},
   "MathlibExt/QuantumInformation/Finite/QuantumFourierTransform": {"to": "QuantumInformation/quantum-operations", "title": "Quantum Fourier transform"},
@@ -6601,6 +6603,7 @@
   "WantedExt/Probability/TracyWidomWanted": {"to": "Probability/high-dimensional-probability", "title": "Tracy–Widom limit for Wishart matrices"},
   "WantedExt/Probability/WignerOperatorNormWanted": {"to": "Probability/high-dimensional-probability", "title": "Operator norm of random matrices"},
   "WantedExt/Probability/UniformLawsWanted": {"to": "Probability/high-dimensional-probability", "title": "Uniform laws and Rademacher complexity"},
+  "WantedExt/QuantumInformation/KnillLaflammeWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "Knill–Laflamme conditions"},
   "WantedExt/TheoryOfComputation/BusyBeaverWanted": {"to": "TheoryOfComputation/computability", "title": "Busy beaver"},
   "WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted": {"to": "ComputerScience/type-systems-and-lambda-calculi", "title": "Calculus of constructions"},
   "WantedExt/TheoryOfComputation/CookLevinSATWanted": {"to": "TheoryOfComputation/np-completeness/cook-levin", "title": "Cook–Levin theorem"},
