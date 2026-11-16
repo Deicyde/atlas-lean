@@ -1,0 +1,15 @@
+# Persistence modules and barcodes
+
+- [Interval module](interval-module.md)
+- [Structure maps of an interval module](interval-module-map.md)
+- [Crawley-Boevey's decomposition theorem](exists-iso-sigma-interval-module.md)
+- [Barcodes of tame `ℕ`-persistence modules (Zomorodian–Carlsson)](exists-iso-sigma-interval-module-nat-of.md)
+- [The barcode is unique (Krull–Remak–Schmidt–Azumaya)](interval-module-decomposition-unique.md)
+- [`δ`-interleaving](interleaving.md)
+- [Every functor is `δ`-interleaved with itself for every `δ ≥ 0`](interleaving-refl.md)
+- [Interleaving is symmetric](interleaving-symm.md)
+- [Triangle inequality for interleavings](interleaving-trans.md)
+- [`δ`-matching of barcodes](is-matching.md)
+- [Matchings are symmetric](is-matching-symm.md)
+- [Algebraic stability theorem](is-matching-of-interleaving.md)
+- [Converse stability for decomposable modules](interleaving-of-is-matching.md)

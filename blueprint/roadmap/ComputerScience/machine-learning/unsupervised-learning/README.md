@@ -6,6 +6,7 @@ Structure in unlabelled data: k-means, archetypal analysis, nonnegative matrix f
 - [k-means clustering](k-means-clustering/README.md)
 - [Non-negative matrix factorization](non-negative-matrix-factorization/README.md)
 - [Probabilistic principal component analysis](probabilistic-principal-component-analysis/README.md)
+- [Single-linkage hierarchical clustering](single-linkage-hierarchical-clustering/README.md)
 - [Successive projection algorithm](successive-projection-algorithm/README.md)
 
 ## Related topics
