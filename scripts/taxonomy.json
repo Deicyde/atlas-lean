@@ -1750,6 +1750,7 @@
   "MathlibExt/Analysis/Convex/LagrangeDuality": {"to": "Analysis/convex-analysis-and-variations", "title": "Lagrange duality"},
   "MathlibExt/Analysis/Convex/LinearProgrammingDuality": {"to": "Geometry/convex-geometry", "title": "Linear programming"},
   "MathlibExt/Analysis/Convex/MoreauDecomposition": {"to": "Analysis/convex-analysis-and-variations", "title": "Moreau decomposition"},
+  "MathlibExt/Analysis/Convex/NewtonMinimization": {"to": "Analysis/convex-analysis-and-variations", "title": "Newton's method for minimization"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},
   "MathlibExt/Analysis/Convex/Straszewicz": {"to": "Geometry/convex-geometry", "title": "Straszewicz's theorem"},
   "MathlibExt/Analysis/Fourier/AddCircle/C1FourierSummable": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Absolutely convergent Fourier series"},

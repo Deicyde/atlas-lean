@@ -40,3 +40,4 @@ Equality constraints are not covered yet: Boyd–Vandenberghe's Slater theorem a
 - [Fenchel–Moreau theorem](../fenchel-moreau-theorem/README.md)
 - [Linear programming](../../../Geometry/convex-geometry/linear-programming/README.md)
 - [Moreau decomposition](../moreau-decomposition/README.md)
+- [Newton's method for minimization](../newton-s-method-for-minimization/README.md)
