@@ -1,5 +1,18 @@
 # Single-linkage hierarchical clustering
 
+Single-linkage clustering at scale `r` puts two points in the same cluster when a chain of
+points joins them with every hop of length at most `r`. For a metric space the clusters are the
+connected components of the Vietoris–Rips complex at scale `r`, which is why G. Carlsson calls
+clustering the statistical counterpart of `π₀` (*Topology and data*, Bull. AMS 46 (2009), §1 and
+§3.2). Letting `r` vary gives a nested family of partitions, the dendrogram, which is the same
+datum as the ultrametric `u*(x, y)`, the smallest scale at which `x` and `y` are joined.
+G. Carlsson and F. Mémoli (*Characterization, stability and convergence of hierarchical clustering
+methods*, JMLR 11 (2010)) show that `u*` is the maximal subdominant ultrametric, that single
+linkage is functorial for distance non-increasing maps and stable under perturbation of the
+metric (Lemma 15, proved here; Gromov–Hausdorff stability, Prop. 26), and that it is the only
+hierarchical clustering method satisfying their three axioms (Thm. 18), in contrast with
+Kleinberg's impossibility theorem for flat clustering (their Thm. 1).
+
 - [`r`-equivalence (single-linkage clusters at scale `r`)](sl-equiv.md)
 - [Single-linkage clusters are nested](sl-equiv-mono.md)
 - [Chains concatenate](sl-equiv-trans-max.md)
@@ -12,3 +25,19 @@
 - [The dendrogram is the family of closed balls of `u*`](sl-equiv-iff-sl-dist-le.md)
 - [Perturbing the dissimilarity shifts the scale](sl-equiv-of-le-add.md)
 - [Stability of single linkage in the sup norm](abs-sl-dist-sub-le.md)
+
+## Related topics
+
+- [Simplicial complexes from point clouds](../../../../Topology/algebraic-topology/simplicial-complexes-from-point-clouds/README.md):
+  single-linkage clusters are the connected components of the Vietoris–Rips complex.
+- [Persistence modules and barcodes](../../../../Topology/algebraic-topology/persistence-modules-and-barcodes/README.md):
+  the zero-dimensional barcode of the Vietoris–Rips filtration records the merges of the
+  dendrogram.
+- [Mapper](../../../../Topology/algebraic-topology/mapper/README.md): Mapper clusters the
+  preimages of a cover by single linkage.
+- [Splits, compatibility, ultrametrics and UPGMA](../../../../Biology/phylogenetics/splits-compatibility-ultrametrics-and-upgma/README.md):
+  ultrametrics and the average-linkage method UPGMA in phylogenetics.
+- [Kruskal's algorithm](../../../graph-algorithms/spanning-trees-flows-matchings/kruskal-s-algorithm/README.md):
+  adding edges in increasing order of length and merging components, as Kruskal's algorithm does,
+  computes the single-linkage merges.
+- [k-means clustering](../k-means-clustering/README.md): a flat, centroid-based alternative.

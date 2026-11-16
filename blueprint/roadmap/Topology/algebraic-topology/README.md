@@ -1,6 +1,6 @@
 # Algebraic topology
 
-Homotopy groups, singular homology and other algebraic invariants of spaces, with classical theorems such as Borsuk–Ulam, Hurewicz and Hopf invariant one.
+Homotopy groups, singular homology and other algebraic invariants of spaces, with classical theorems such as Borsuk–Ulam, Hurewicz and Hopf invariant one, and their use on data in topological data analysis: Čech and Vietoris–Rips complexes, persistence modules and barcodes, and Mapper.
 
 - [Adapting families of maps to open covers](adapting-families-of-maps-to-open-covers/README.md)
 - [Bing's house with two rooms](bing-s-house-with-two-rooms/README.md)
