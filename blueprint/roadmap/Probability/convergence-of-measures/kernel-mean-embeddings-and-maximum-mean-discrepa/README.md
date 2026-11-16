@@ -2,7 +2,7 @@
 
 A probability measure $P$ on $X$ is represented by its kernel mean embedding $\mu_P = \mathbb{E}_{x \sim P}\, k(\cdot, x)$, an element of the reproducing kernel Hilbert space $H$ of a positive-definite kernel $k$; it represents expectation, $\langle f, \mu_P \rangle = \mathbb{E}_P f$ for every $f \in H$. The maximum mean discrepancy $\mathrm{MMD}(P, Q) = \sup_{\|f\|_H \le 1} (\mathbb{E}_P f - \mathbb{E}_Q f)$ is the integral probability metric of the unit ball of $H$, and equals $\|\mu_P - \mu_Q\|_H$; its square is a combination of kernel expectations, estimated from samples by V- and U-statistics. A kernel is characteristic when $P \mapsto \mu_P$ is injective, so that the MMD vanishes only for equal laws; universal kernels on compact metric spaces are characteristic. These are the objects of the kernel two-sample test of Gretton, Borgwardt, Rasch, Schölkopf and Smola (JMLR 2012).
 
-The pages follow Section 2 of the paper: the feature map and kernel of a real reproducing kernel Hilbert space (Mathlib's `RKHS`), the mean embedding and its reproducing property (Lemma 3), the MMD as a distance between embeddings (Lemma 4) and its kernel expression (Lemma 6), the empirical estimate (equations (2) and (5)), and characteristic and universal kernels (Theorem 5).
+The pages follow Section 2 of the paper: the feature map and kernel of a real reproducing kernel Hilbert space (Mathlib's `RKHS`), the mean embedding and its reproducing property (Lemma 3), the MMD as a distance between embeddings (Lemma 4) and its kernel expression (Lemma 6), the biased and unbiased empirical estimates (equations (2), (3) and (5)), and characteristic and universal kernels (Theorem 5).
 
 ## Feature map and kernel
 
@@ -42,6 +42,10 @@ The pages follow Section 2 of the paper: the feature map and kernel of a real re
 - [The biased empirical MMD is the distance between empirical mean embeddings](mmd-biased-eq.md)
 - [Inner product of empirical mean embeddings](inner-empirical-embedding-empirical-embe.md)
 - [The biased empirical MMD as a V-statistic](mmd-biased-sq-eq.md)
+- [Unbiased empirical estimate of the squared MMD](mmd-unbiased-sq.md)
+- [Coordinates of an i.i.d. sample](measure-preserving-eval-pi.md)
+- [Two coordinates of an i.i.d. sample are independent copies](measure-preserving-pair-pi.md)
+- [The unbiased MMD statistic is unbiased](integral-mmd-unbiased-sq.md)
 
 ## Characteristic and universal kernels
 

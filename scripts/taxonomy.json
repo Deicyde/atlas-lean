@@ -4126,6 +4126,7 @@
   "MathlibExt/Probability/TotalVariationDistance": {"to": "Probability/convergence-of-measures", "title": "Total variation distance"},
   "MathlibExt/Probability/TruncatedMomentRV": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Truncated moments of regularly varying tails"},
   "MathlibExt/Probability/Truncation": {"to": "Probability/laws-of-large-numbers", "title": "Kolmogorov's three-series theorem"},
+  "MathlibExt/Probability/UnbiasedMMD": {"to": "Probability/convergence-of-measures", "title": "Kernel mean embeddings and maximum mean discrepancy"},
   "MathlibExt/Probability/VaradhanIntegralLemma": {"to": "Probability/large-deviations", "title": "Varadhan's integral lemma"},
   "MathlibExt/Probability/WaldCrossTerms": {"to": "Probability/martingales", "title": "Wald's equations"},
   "MathlibExt/Probability/WaldDiagonalTerms": {"to": "Probability/martingales", "title": "Wald's equations"},
