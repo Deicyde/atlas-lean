@@ -27539,6 +27539,7 @@
 "MathlibExt.Probability.TotalVariationDistance.totalVariationDist_self": "f791cc6c54ec12d2",
 "MathlibExt.Probability.TotalVariationDistance.totalVariationDist_triangle": "5e259348b84ab670",
 "MathlibExt.Probability.TracyWidomWanted.johnstone_largest_eigenvalue_tracyWidom": "1e895e021ffe0b13",
+"MathlibExt.Probability.TranslationInvariantCharacteristicKernelWanted.isCharacteristic_iff_support_eq_univ": "60b6779a84c17769",
 "MathlibExt.Probability.TruncatedMoment.layerCake": "caa82cb3470030c6",
 "MathlibExt.Probability.TruncatedMoment.tailGe": "67f5cc9240d4eeb8",
 "MathlibExt.Probability.TruncatedMoment.tailGe_eq_combinedTail_add_atoms": "8a58185ebabcd374",
