@@ -11,3 +11,4 @@
 - [Uniform vertex expander](is-uniform-vertex-expander.md)
 - [The parameter of a uniform vertex expander is positive](pos-2.md)
 - [Small sets expand in a uniform vertex expander](small-expansion-2.md)
+- [Bipartite Ramanujan graphs of every degree](exists-bipartite-ramanujan.md)

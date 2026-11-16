@@ -18,3 +18,6 @@
 - [`λ₂` bounds the Rayleigh quotient on vectors orthogonal to the constants](algebraic-connectivity-mul-le.md)
 - [Easy direction of Cheeger's inequality, eigenvalue form](algebraic-connectivity-mul-card-mul-card.md)
 - [`λ₂ > 0` exactly for connected graphs](algebraic-connectivity-pos-iff.md)
+- [Weighted degree](weighted-degree.md)
+- [Volume of a vertex set](volume.md)
+- [Cheeger's inequality, hard direction](exists-threshold-cut-le-sqrt.md)
