@@ -3,9 +3,10 @@
 Every pre-Brownian
 motion `B` with measurable coordinates on a probability space has a modification `W` with
 measurable coordinates and continuous paths (on every sample), and `W` is a Brownian motion.
-This is the continuity step of the construction of Brownian motion (Le Gall, ENS notes
-*Intégration, Probabilités et Processus Aléatoires*, Théorème 14.2.1; Le Gall, *Brownian Motion,
-Martingales, and Stochastic Calculus*, Chapter 2), via Kolmogorov's lemma.
+The continuity comes from Kolmogorov's lemma (Le Gall, DEA notes 1994, Lemme 2.3), applied to
+the fourth moments of the increments. Le Gall's ENS notes *Intégration, Probabilités et
+Processus Aléatoires* obtain continuity differently, in the proof of Théorème 14.2.1, from the
+uniform convergence of the Haar–Schauder (Lévy–Ciesielski) series.
 
 ## Informally uses
 

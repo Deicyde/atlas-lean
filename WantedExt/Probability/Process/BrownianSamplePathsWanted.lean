@@ -24,7 +24,8 @@ repository does not yet prove. The proved neighbours are the existence of a cont
 
 ## References
 
-* P. Mörters and Y. Peres, *Brownian Motion*, Cambridge University Press, 2010, Chapter 1.
+* P. Mörters and Y. Peres, *Brownian Motion*, Cambridge University Press, 2010, Theorem 1.30
+  (Paley, Wiener and Zygmund 1933).
 -/
 
 @[expose] public section
@@ -36,7 +37,9 @@ namespace MathlibExt.Probability.BrownianSamplePathsWanted
 
 /-- **Brownian paths are nowhere differentiable** (Paley, Wiener and Zygmund). Almost surely, the
 path `s ↦ B s ω` is differentiable at no time `t > 0` (Mörters and Peres, *Brownian Motion*,
-Chapter 1). -/
+Cambridge University Press, 2010, Theorem 1.30). The statement is restricted to `t > 0` because
+the path is extended by `B 0` to negative times, so a two-sided derivative at `0` is not the
+Brownian one. -/
 theorem_wanted IsBrownianReal.ae_not_differentiableAt {Ω : Type*} [MeasurableSpace Ω]
     {P : Measure Ω} {B : ℝ≥0 → Ω → ℝ} (hB : IsBrownianReal B P) :
     ∀ᵐ ω ∂P, ∀ t : ℝ, 0 < t → ¬ DifferentiableAt ℝ (fun s : ℝ ↦ B s.toNNReal ω) t

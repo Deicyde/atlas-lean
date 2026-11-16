@@ -102,8 +102,8 @@ private lemma dyadicFloor_mem {x : ℝ} (hx : x ∈ Icc (0 : ℝ) 1) (k : ℕ) :
 /-- **Hölder continuity of Brownian paths.** For every exponent `α < 1/2` and every horizon `T`,
 almost every path of a Brownian motion is `α`-Hölder continuous on `[0, T]` (Le Gall, *Brownian
 Motion, Martingales, and Stochastic Calculus*, Chapter 2, section "The continuity of sample
-paths", a consequence of Kolmogorov's lemma applied to the moments
-`E |B t - B s|^β = c_β |t - s|^{β/2}`). -/
+paths"). The proof applies Kolmogorov's lemma (Le Gall, DEA notes 1994, Lemme 2.3) to the moments
+`E |B t - B s|^β = c_β |t - s|^{β/2}`. -/
 theorem IsBrownianReal.ae_holderOnWith {Ω : Type*} [MeasurableSpace Ω] {P : Measure Ω}
     {B : ℝ≥0 → Ω → ℝ} (hB : IsBrownianReal B P) {α : ℝ≥0} (hα : α < 1 / 2) (T : ℝ≥0) :
     ∀ᵐ ω ∂P, ∃ C : ℝ≥0, HolderOnWith C α (fun t ↦ B t ω) (Set.Icc 0 T) := by

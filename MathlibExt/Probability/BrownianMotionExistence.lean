@@ -10,6 +10,7 @@ module
 
 public import Mathlib.Probability.BrownianMotion.Basic
 public import MathlibExt.Probability.KolmogorovContinuousModification
+import MathlibExt.Probability.BrownianQuadraticVariation
 import MathlibExt.Probability.OrnsteinUhlenbeck
 
 /-!
@@ -36,7 +37,8 @@ Gaussian with variance `|s - t|`, so `E |B s - B t|⁴ = 3 |s - t|²`, and Kolmo
 ## References
 
 * J.-F. Le Gall, *Intégration, Probabilités et Processus Aléatoires* (ENS lecture notes),
-  Théorème 14.2.1 (existence of Brownian motion), Lemme 14.2.2.
+  Théorème 14.2.1 (existence of Brownian motion, proved there with the Haar–Schauder series),
+  Lemme 14.2.2.
 * J.-F. Le Gall, *Mouvement brownien, processus de branchement et superprocessus* (DEA lecture
   notes, 1994), Lemme 2.3 (Kolmogorov's lemma).
 * J.-F. Le Gall, *Brownian Motion, Martingales, and Stochastic Calculus*, Graduate Texts in
@@ -52,43 +54,6 @@ namespace ProbabilityTheory
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω} {B : ℝ≥0 → Ω → ℝ}
 
-/-- **Fourth moment of a centered Gaussian.** The fourth moment of the centered Gaussian law of
-variance `v` is `3 v²`, computed as the fourth derivative at `0` of its moment generating function
-`exp(v t² / 2)`; it is the moment used in Kolmogorov's criterion for Brownian motion (Le Gall,
-*Brownian Motion, Martingales, and Stochastic Calculus*, Chapter 1). -/
-lemma integral_pow_four_gaussianReal (v : ℝ≥0) :
-    ∫ x : ℝ, x ^ 4 ∂gaussianReal 0 v = 3 * (v : ℝ) ^ 2 := by
-  change (∫ x, ((fun x : ℝ ↦ x) ^ 4) x ∂gaussianReal 0 v) = _
-  rw [← iteratedDeriv_mgf_zero (by simp), mgf_fun_id_gaussianReal]
-  simp only [zero_mul, zero_add]
-  have h1 : deriv (fun t : ℝ ↦ Real.exp (v * t ^ 2 / 2)) =
-      fun t ↦ v * t * Real.exp (v * t ^ 2 / 2) := by
-    ext t
-    rw [_root_.deriv_exp (by fun_prop)]
-    simp only [deriv_div_const, differentiableAt_const, differentiableAt_fun_id,
-      Nat.cast_ofNat, DifferentiableAt.fun_pow, deriv_fun_mul, deriv_const', zero_mul,
-      deriv_fun_pow, Nat.add_one_sub_one, pow_one, deriv_id'', mul_one, zero_add]
-    ring
-  have h2 : deriv (fun t : ℝ ↦ v * t * Real.exp (v * t ^ 2 / 2)) =
-      fun t ↦ (v + (v : ℝ) ^ 2 * t ^ 2) * Real.exp (v * t ^ 2 / 2) := by
-    ext t
-    rw [deriv_fun_mul (by fun_prop) (by fun_prop), h1]
-    simp
-    ring
-  have h3 : deriv (fun t : ℝ ↦ (v + (v : ℝ) ^ 2 * t ^ 2) *
-      Real.exp (v * t ^ 2 / 2)) =
-      fun t ↦ (3 * (v : ℝ) ^ 2 * t + (v : ℝ) ^ 3 * t ^ 3) *
-        Real.exp (v * t ^ 2 / 2) := by
-    ext t
-    rw [deriv_fun_mul (by fun_prop) (by fun_prop), h1]
-    simp
-    ring
-  rw [iteratedDeriv_succ, iteratedDeriv_succ, iteratedDeriv_succ,
-    iteratedDeriv_one, h1, h2, h3]
-  rw [deriv_fun_mul (by fun_prop) (by fun_prop), h1]
-  rw [deriv_fun_add (by fun_prop) (by fun_prop)]
-  simp [deriv_fun_pow]
-
 private lemma edist_rpow_four (a b : ℝ) :
     edist a b ^ (4 : ℝ) = ENNReal.ofReal ((a - b) ^ 4) := by
   rw [edist_dist, Real.dist_eq, ENNReal.ofReal_rpow_of_nonneg (abs_nonneg _) (by norm_num)]
@@ -98,9 +63,9 @@ private lemma edist_rpow_four (a b : ℝ) :
 
 /-- **Kolmogorov's condition for pre-Brownian motion.** A pre-Brownian motion `B` with
 measurable coordinates satisfies `E |B s - B t|⁴ ≤ 3 |s - t|²` for all times `s, t`, that is,
-it is a Kolmogorov process with exponents `p = 4`, `q = 2` and constant `3` (Le Gall, DEA notes
-1994, Lemme 2.3, applied as in Le Gall, *Brownian Motion, Martingales, and Stochastic Calculus*,
-Chapter 2). -/
+it is a Kolmogorov process with exponents `p = 4`, `q = 2` and constant `3`: the moment
+hypothesis of Kolmogorov's lemma (Le Gall, DEA notes 1994, Lemme 2.3), with `d = 1` and
+`ε = 1`. -/
 theorem IsPreBrownianReal.isKolmogorovProcess (hB : IsPreBrownianReal B P)
     (hmeas : ∀ t, Measurable (B t)) :
     IsKolmogorovProcess B P 4 2 3 := by
@@ -137,9 +102,10 @@ theorem IsPreBrownianReal.isKolmogorovProcess (hB : IsPreBrownianReal B P)
 /-- **Brownian motion as a continuous modification of pre-Brownian motion.** Every pre-Brownian
 motion `B` with measurable coordinates on a probability space has a modification `W` with
 measurable coordinates and continuous paths (on every sample), and `W` is a Brownian motion.
-This is the continuity step of the construction of Brownian motion (Le Gall, ENS notes
-*Intégration, Probabilités et Processus Aléatoires*, Théorème 14.2.1; Le Gall, *Brownian Motion,
-Martingales, and Stochastic Calculus*, Chapter 2), via Kolmogorov's lemma. -/
+The continuity comes from Kolmogorov's lemma (Le Gall, DEA notes 1994, Lemme 2.3), applied to
+the fourth moments of the increments. Le Gall's ENS notes *Intégration, Probabilités et
+Processus Aléatoires* obtain continuity differently, in the proof of Théorème 14.2.1, from the
+uniform convergence of the Haar–Schauder (Lévy–Ciesielski) series. -/
 theorem IsPreBrownianReal.exists_isBrownianReal_modification [IsProbabilityMeasure P]
     (hB : IsPreBrownianReal B P) (hmeas : ∀ t, Measurable (B t)) :
     ∃ W : ℝ≥0 → Ω → ℝ, (∀ t, Measurable (W t)) ∧ (∀ ω, Continuous fun t ↦ W t ω) ∧

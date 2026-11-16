@@ -7,16 +7,18 @@ Gaussian increments with variance the length of the time interval). Le Gall, ENS
 *Intégration, Probabilités et Processus Aléatoires*, Théorème 14.2.1 ("Le mouvement brownien
 existe"); Le Gall, *Brownian Motion, Martingales, and Stochastic Calculus*, Chapter 2.
 
+The ENS notes build `B_t` as the Gaussian white-noise series `∑ ⟨1_[0,t], h⟩ N_h` over the Haar
+basis and get continuity from the uniform convergence of that series. The Lean proof takes
+another route: it realises the Brownian finite-dimensional laws by Kolmogorov extension
+([existence of a pre-Brownian motion on path space](../ornstein-uhlenbeck-process/exists-is-pre-brownian-real-eval.md))
+and then takes a continuous modification by Kolmogorov's lemma
+([Brownian motion as a continuous modification of pre-Brownian motion](exists-is-brownian-real-modification.md)).
+
 ## Informally uses
 
-- [Existence of a pre-Brownian motion on path space](../ornstein-uhlenbeck-process/exists-is-pre-brownian-real-eval.md):
-  the Brownian finite-dimensional laws are realised first, without any continuity (in Le Gall's
-  notes, by the Gaussian white noise isometry; here, by Kolmogorov extension).
-- [Brownian motion as a continuous modification of pre-Brownian motion](exists-is-brownian-real-modification.md):
-  the continuity step, which turns that pre-Brownian motion into a Brownian motion.
 - [Closure of real Gaussian laws under `L²` limits](../../distributions/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm-real.md):
-  Lemme 14.2.2 of the ENS notes, which shows that the white-noise series `∑ ⟨1_[0,t], h⟩ N_h`
-  defining `B_t` is Gaussian.
+  Lemme 14.2.2 of the ENS notes, which shows that the white-noise series defining `B_t` is
+  Gaussian.
 
 ## Background
 
