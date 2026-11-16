@@ -77,3 +77,7 @@
 - [Strong power of a graph](strong-power.md)
 - [Shannon capacity of a graph](has-shannon-capacity.md)
 - [Lovász's theorem: the Shannon capacity of the pentagon](shannon-capacity-pentagon.md)
+
+## Related topics
+
+- [Theta function of a graph](../theta-function-of-a-graph/README.md): the Lovász number, an upper bound on the Shannon capacity that is sandwiched between the independence number and the chromatic number of the complement.
