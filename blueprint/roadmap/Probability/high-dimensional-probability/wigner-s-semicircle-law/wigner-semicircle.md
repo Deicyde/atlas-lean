@@ -14,6 +14,25 @@ $$\int f \, dL_n(\omega) \to \int f \, d\sigma \quad (n \to \infty),$$
 
 where $\sigma$ is the semicircle distribution.
 
+## Informally uses
+
+- [The even moments of the semicircle distribution are the Catalan numbers](integral-pow-two-mul-semicircle-real.md):
+  the moment method shows that $\frac{1}{n}\mathbb{E}\operatorname{tr}(W_n/\sqrt{n})^{2k} \to C_k$
+  and identifies the limit through this computation.
+- [The odd moments of the semicircle distribution vanish](integral-pow-two-mul-add-one-semicircle.md):
+  the odd normalised traces tend to $0$, the odd moments of the limit.
+
+## Background
+
+- [Talagrand's concentration inequality around a median](../../concentration-inequalities/talagrand-s-concentration-inequality/talagrand-concentration-median.md):
+  background; concentration of the linear statistics $\frac{1}{n}\operatorname{tr} f(W_n/\sqrt{n})$
+  upgrades convergence in expectation to almost sure convergence.
+- [Hoffman–Wielandt inequality for Hermitian matrices](../../../LinearAlgebra/positive-definite-matrices/hoffman-wielandt-hermitian.md):
+  background; it bounds how far the empirical spectral distribution moves under a perturbation of
+  small Frobenius norm, which is how truncation reduces the theorem to bounded entries.
+- [Strong Bai–Yin theorem, upper bound](../operator-norm-of-random-matrices/wigner-op-norm-le-two-add.md):
+  background; under a fourth moment the spectrum also stays inside $[-2 - \varepsilon, 2 + \varepsilon]$.
+
 ## Sources
 
 - E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (convergence of the expected spectral distribution, for special classes of random real symmetric matrices). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `wigner_semicircle` of the lean-eval benchmark.

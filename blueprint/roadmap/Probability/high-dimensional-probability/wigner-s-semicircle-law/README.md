@@ -27,5 +27,7 @@ stated.
 
 ## Related topics
 
+- [Operator norm of random matrices](../operator-norm-of-random-matrices/README.md)
 - [Catalan numbers](../../../Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/catalan-numbers/README.md)
 - [Weyl's eigenvalue inequalities](../../../Analysis/operator-theory/eigenvalue-inequalities/weyl-s-eigenvalue-inequalities/README.md)
+- [Talagrand's concentration inequality](../../concentration-inequalities/talagrand-s-concentration-inequality/README.md)
