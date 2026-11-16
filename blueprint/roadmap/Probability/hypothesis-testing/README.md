@@ -11,6 +11,7 @@ These methods keep testing valid when many hypotheses are tested at once, by con
 - [Holm–Bonferroni method](holm-bonferroni-method/README.md)
 - [Closed testing principle](closed-testing-principle/README.md)
 - [Benjamini–Hochberg procedure](benjamini-hochberg-procedure/README.md)
+- [Knockoff filter](knockoff-filter/README.md)
 - [Two-groups model and local false discovery rates](two-groups-model-and-local-false-discovery-rates/README.md)
 
 ## Neyman–Pearson and likelihood-based tests
