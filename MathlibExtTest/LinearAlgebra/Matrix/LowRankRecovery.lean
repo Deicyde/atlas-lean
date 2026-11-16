@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 import MathlibExt.LinearAlgebra.Matrix.LowRankRecovery
+import Mathlib.Tactic.FinCases
 
 open Matrix
 open scoped Matrix.Norms.Frobenius
@@ -44,5 +45,16 @@ example (r : ℕ) : IsRestrictedIsometry entryMap r 0 := by
     rw [Matrix.frobenius_norm_def, ← Real.sqrt_eq_rpow]
     simp [entryMap, EuclideanSpace.norm_eq]
   simp [h]
+
+-- The hypotheses of the matrix completion theorem (Candès–Recht, Theorem 1.3, in
+-- `WantedExt.LinearAlgebra.MatrixCompletionWanted`) are jointly satisfiable: `n₁ = n₂ = r = 1`,
+-- `U = V = 1`, `σ = 1`, `μ₀ = μ₁ = 1`.
+example : (1 : Matrix (Fin 1) (Fin 1) ℝ)ᵀ * 1 = 1 ∧
+    (∀ i, ((1 : ℕ) : ℝ) / (1 : ℕ) * ∑ k, (1 : Matrix (Fin 1) (Fin 1) ℝ) i k ^ 2 ≤ 1) ∧
+    ∀ i j, |((1 : Matrix (Fin 1) (Fin 1) ℝ) * (1 : Matrix (Fin 1) (Fin 1) ℝ)ᵀ) i j| ≤
+      1 * √(((1 : ℕ) : ℝ) / ((1 : ℕ) * (1 : ℕ))) := by
+  refine ⟨by simp, fun i => ?_, fun i j => ?_⟩
+  · fin_cases i; simp [Matrix.one_apply]
+  · fin_cases i; fin_cases j; simp
 
 end MathlibExt.LinearAlgebra.Matrix.LowRankRecovery

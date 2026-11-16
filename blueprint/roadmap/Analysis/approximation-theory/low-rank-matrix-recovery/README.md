@@ -1,6 +1,6 @@
 # Low-rank matrix recovery
 
-Affine rank minimization asks for the matrix of least rank satisfying linear measurements $\mathcal{A}(X) = b$; it is NP-hard in general. Recht, Fazel and Parrilo (2010) replace the rank by the nuclear norm $\lVert X\rVert_* = \sum_i \sigma_i(X)$, its convex envelope on the unit ball of the operator norm, and prove that the two problems have the same solution when $\mathcal{A}$ satisfies a restricted isometry property on low-rank matrices, the matrix analogue of compressed sensing. The uniqueness of the low-rank solution under $\delta_{2r} < 1$ is proved; exact recovery by nuclear norm minimization under $\delta_{5r} < 1/10$ is recorded as a wanted statement.
+Affine rank minimization asks for the matrix of least rank satisfying linear measurements $\mathcal{A}(X) = b$; it is NP-hard in general. Recht, Fazel and Parrilo (2010) replace the rank by the nuclear norm $\lVert X\rVert_* = \sum_i \sigma_i(X)$, its convex envelope on the unit ball of the operator norm, and prove that the two problems have the same solution when $\mathcal{A}$ satisfies a restricted isometry property on low-rank matrices, the matrix analogue of compressed sensing. The uniqueness of the low-rank solution under $\delta_{2r} < 1$ is proved; exact recovery by nuclear norm minimization under $\delta_{5r} < 1/10$ is recorded as a wanted statement. Matrix completion, where the measurements are a uniformly random set of entries, is the case where no restricted isometry property can hold (a matrix with a single nonzero entry is invisible to most samples); Candès and Recht (2009) show that incoherence of the row and column spaces replaces it, and that nuclear norm minimization recovers a rank-$r$ $n_1 \times n_2$ matrix from $m \gtrsim n^{5/4} r \log n$ random entries with high probability ($n^{6/5}$ for ranks $r \lesssim n^{1/5}$), up to factors depending on the incoherence parameters. Their theorem is recorded as a wanted statement.
 
 - [Nuclear norm](nuclear-norm.md)
 - [The nuclear norm is nonnegative](nuclear-norm-nonneg.md)
@@ -8,6 +8,7 @@ Affine rank minimization asks for the matrix of least rank satisfying linear mea
 - [Subadditivity of the rank](rank-sub-le.md)
 - [Uniqueness of the low-rank solution under restricted isometry](eq-of-is-restricted-isometry-two-mul.md)
 - [Exact recovery by nuclear norm minimization under restricted isometry](nuclear-norm-lt-of-is-restricted-isometr.md) (wanted)
+- [Exact matrix completion (Candès–Recht)](exists-card-filter-unique-nuclear-norm-m.md) (wanted)
 
 ## Related topics
 

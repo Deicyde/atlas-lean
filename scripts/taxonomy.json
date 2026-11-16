@@ -6139,6 +6139,7 @@
   "WantedExt/LinearAlgebra/Matrix/LiebConcavityWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lieb's concavity theorem"},
   "WantedExt/LinearAlgebra/Matrix/RandomizedRangeFinderWanted": {"to": "LinearAlgebra/matrix-decompositions", "title": "Randomized range finder"},
   "WantedExt/LinearAlgebra/Matrix/SignConditionNumberDecayWanted": {"to": "LinearAlgebra/matrix-decompositions", "title": "Condition numbers of sign matrices"},
+  "WantedExt/LinearAlgebra/MatrixCompletionWanted": {"to": "Analysis/approximation-theory", "title": "Low-rank matrix recovery"},
   "WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Generalized eigenvalues of max and min matrices"},
   "WantedExt/LinearAlgebra/NuclearNormRecoveryWanted": {"to": "Analysis/approximation-theory", "title": "Low-rank matrix recovery"},
   "WantedExt/LinearAlgebra/PowerSumMatrixWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Newton's identities for traces of matrix powers"},

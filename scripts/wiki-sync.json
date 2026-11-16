@@ -24892,6 +24892,7 @@
 "MathlibExt.LinearAlgebra.Matrix.SimultaneousDiagonalizationWanted.simultaneous_diagonalization_posDef": "bead78fb50207b6d",
 "MathlibExt.LinearAlgebra.Matrix.SinkhornWanted.sinkhorn_scaling": "85bfa66f1160d103",
 "MathlibExt.LinearAlgebra.Matrix.VanDerWaerdenWanted.van_der_waerden_permanent": "aa55a5aca755cc52",
+"MathlibExt.LinearAlgebra.MatrixCompletionWanted.exists_card_filter_unique_nuclearNorm_min": "e8d5eaf8bf77b4b7",
 "MathlibExt.LinearAlgebra.NuclearNormRecoveryWanted.nuclearNorm_lt_of_isRestrictedIsometry_five_mul": "9de6a96c4b516ccf",
 "MathlibExt.LinearAlgebra.PowerSumMatrixWanted.integral_pow_one_sub_pow": "20853d7d3384f15f",
 "MathlibExt.LinearAlgebra.PowerSumMatrixWanted.trace_pow_two": "0cb780c9e756c47c",
