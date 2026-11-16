@@ -4,7 +4,7 @@ Let $M$ be a Markov decision process with a finite set of states $S$, a finite s
 
 $$V^{\pi_\alpha}(s_0) - V^\pi(s_0) \ge \frac{\alpha}{1-\gamma}\, \mathbb{A} - \frac{2\alpha^2\gamma\varepsilon}{(1-\gamma)^2},\qquad \mathbb{A} = \sum_s d^\pi_{s_0}(s) \sum_a \pi'(a \mid s)\, A^\pi(s,a).$$
 
-When the policy advantage $\mathbb{A}$ is positive, a small enough step $\alpha$ improves the value: the gain is first order in $\alpha$ and the distribution-shift penalty second order. Kakade and Langford's Theorem 4.1 has the sharper denominator $1 - \gamma(1-\alpha)$ in place of $1-\gamma$ in the penalty.
+When the policy advantage $\mathbb{A}$ is positive, a small enough step $\alpha$ improves the value: the gain is first order in $\alpha$ and the distribution-shift penalty second order. Kakade and Langford's Theorem 4.1 is sharper: it replaces one factor $1-\gamma$ of the penalty's denominator $(1-\gamma)^2$ by $1 - \gamma(1-\alpha)$.
 
 ## Sources
 

@@ -4,7 +4,7 @@ Let $M$ be a Markov decision process with a finite set of states $S$, a finite s
 
 $$V^{\pi_{t+1}}(s_0) - V^{\pi_t}(s_0) \ge \frac{1-\gamma}{\eta} \log Z_t(s_0) \ge 0.$$
 
-The published statement averages over a start distribution $\mu$; it follows by averaging.
+Here $Z_t(s) = \sum_a \pi_t(a \mid s) \exp\bigl(\eta A^{\pi_t}(s,a)/(1-\gamma)\bigr) = \exp\bigl(\operatorname{lse}_{\theta_{t+1}}(s) - \operatorname{lse}_{\theta_t}(s)\bigr)$. The published statement averages over a start distribution $\mu$; it follows by averaging.
 
 ## Sources
 

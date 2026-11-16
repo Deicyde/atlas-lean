@@ -4,7 +4,7 @@ Let $M$ be a Markov decision process with a finite set of states $S$, a finite s
 
 $$V^*(s_0) - V^{\pi_T}(s_0) \le \frac{\log |A|}{\eta T} + \frac{1}{(1-\gamma)^2 T}.$$
 
-Averaging over a start distribution $\rho$ gives the published form $V^{\pi_T}(\rho) \ge V^*(\rho) - \log|A|/(\eta T) - 1/((1-\gamma)^2 T)$. The rate depends on neither the number of states nor a distribution mismatch coefficient, although $V^{\pi_\theta}$ is not concave in $\theta$. The proof combines the performance difference lemma against an optimal deterministic policy with the regret analysis of multiplicative weights.
+Averaging over a start distribution $\rho$ gives the published form $V^{\pi_T}(\rho) \ge V^*(\rho) - \log|A|/(\eta T) - 1/((1-\gamma)^2 T)$. The rate depends on neither the number of states nor a distribution mismatch coefficient, although $V^{\pi_\theta}$ is not concave in $\theta$. The proof combines the performance difference lemma against an optimal deterministic policy with the regret analysis of multiplicative weights, as for the [Hedge algorithm](../../online-learning-and-boosting/hedge-algorithm/README.md), run in every state.
 
 ## Sources
 
@@ -13,5 +13,4 @@ Averaging over a start distribution $\rho$ gives the published form $V^{\pi_T}(\
 
 ## Informally uses
 
-- [Hedge algorithm](../../online-learning-and-boosting/hedge-algorithm/README.md): the telescoping relative-entropy argument is the Hedge regret bound, run in every state.
 - [Optimal value of a discounted Markov decision process](../../../heuristic-search-and-planning/value-iteration/optimal-value.md): the comparator $V^*$.

@@ -4,7 +4,7 @@ Let $M$ be a Markov decision process with a finite set of states $S$, a finite n
 
 $$0 \le V^*(s) - V^\pi(s) \le \frac{2\gamma d}{1-\gamma}.$$
 
-Acting greedily on an approximate value loses at most $2\gamma/(1-\gamma)$ times the approximation error. For an action-value estimate $Q$ with $\|Q - Q^*\|_\infty \le d$, the corresponding bound for the policy greedy in $Q$ has constant $2/(1-\gamma)$ (AJKS Lemma 1.11).
+Acting greedily on an approximate value loses at most $2\gamma/(1-\gamma)$ times the approximation error; the case $d = 0$ is [A greedy policy for the optimal value is optimal](../../../heuristic-search-and-planning/value-iteration/policy-value-greedy.md). For an action-value estimate $Q$ with $\|Q - Q^*\|_\infty \le d$, the corresponding bound for the policy greedy in $Q$ has constant $2/(1-\gamma)$ (AJKS Lemma 1.11).
 
 ## Sources
 
@@ -14,4 +14,3 @@ Acting greedily on an approximate value loses at most $2\gamma/(1-\gamma)$ times
 ## Informally uses
 
 - [Greedy policy](../../../heuristic-search-and-planning/value-iteration/greedy.md)
-- [A greedy policy for the optimal value is optimal](../../../heuristic-search-and-planning/value-iteration/policy-value-greedy.md): the case $d = 0$.

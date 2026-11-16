@@ -23,9 +23,11 @@ form `θ_{t+1} = θ_t + η / (1 - γ) * A^{π_t}` (Agarwal, Kakade, Lee and Maha
 Policy Gradient Methods*, JMLR 22 (2021), Lemma 5.1; AJKS Lemma 12.6): a soft policy iteration
 that multiplies `π_t(a | s)` by `exp (η A^{π_t}(s, a) / (1 - γ))` and renormalizes, that is,
 multiplicative weights run in every state with the advantages as gains. `npgLogits` is this
-iteration from `θ_0 = 0` (the uniform policy) and `npgPolicy` its policies. NPG is defined here by
-this closed form; its derivation from the Fisher-preconditioned gradient (AKLM Lemma 5.1) is not
-formalized.
+iteration from `θ_0 = 0` (the uniform policy) and `npgPolicy` its policies. The Fisher update
+takes this form on the states reachable from the start distribution `ρ` (AKLM, footnote 6), up
+to a state-dependent offset that the softmax ignores (AJKS Lemma 12.6); here the soft policy
+iteration is applied at every state. NPG is defined here by this closed form; its derivation
+from the Fisher-preconditioned gradient (AKLM Lemma 5.1) is not formalized.
 
 Main results, for a finite stochastic MDP with `0 ≤ γ < 1` and step size `η > 0`:
 
@@ -165,7 +167,9 @@ theorem sum_softmax_mul_log_sub_nonneg (θ θ' : S → A → ℝ) (s : S) :
 variable {M : MDP S A ℝ} {γ : ℝ} (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1)
 
 /-- The logits of natural policy gradient with softmax policies and step size `η`, from
-`θ_0 = 0`: `θ_{t+1} = θ_t + η / (1 - γ) * A^{π_{θ_t}}` (AKLM Lemma 5.1; AJKS Lemma 12.6). -/
+`θ_0 = 0`: `θ_{t+1} = θ_t + η / (1 - γ) * A^{π_{θ_t}}` (AKLM Lemma 5.1; AJKS Lemma 12.6). The
+Fisher update has this form on the states reachable from the start distribution (AKLM,
+footnote 6), up to a state-dependent offset; here it is applied at every state. -/
 noncomputable def npgLogits (η : ℝ) : ℕ → S → A → ℝ
   | 0 => 0
   | t + 1 => fun s a =>

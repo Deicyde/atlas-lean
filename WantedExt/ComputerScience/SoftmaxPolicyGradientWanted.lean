@@ -76,7 +76,8 @@ noncomputable def softmaxPGLogits (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : 
 /-- **Global convergence of softmax policy gradient** (AKLM Theorem 5.1; AJKS Theorem 12.3): for
 rewards in `[0, 1]`, a start distribution `μ` charging every state and a step size
 `0 < η ≤ (1 - γ)³ / 8`, the values of the gradient-ascent iterates converge to the optimal
-value in every state. -/
+value in every state. The iterates start from `θ_0 = 0`, a special case: the source fixes no
+initialization. -/
 public theorem_wanted tendsto_stochValue_softmaxPGLogits (hM : M.Stochastic) (hγ0 : 0 ≤ γ)
     (hγ1 : γ < 1) (hr : ∀ s a, 0 ≤ M.reward s a ∧ M.reward s a ≤ 1) (μ : S → ℝ)
     (hμ : ∀ s, 0 < μ s) (hμ1 : ∑ s, μ s = 1) {η : ℝ} (hη0 : 0 < η)

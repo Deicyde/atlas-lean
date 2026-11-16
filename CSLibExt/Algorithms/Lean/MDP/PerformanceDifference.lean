@@ -31,9 +31,9 @@ defines the action-value function `Q^π` (`stochQValue`), the advantage
   for the mixture `π_α = (1 - α) π + α π'` and `|f| ≤ C`,
   `|∑ s, (d^{π_α}_{s₀}(s) - d^π_{s₀}(s)) f s| ≤ 2 α γ C / (1 - γ)`.
 * `cpi_improvement`: **the conservative policy iteration improvement bound** (AJKS
-  Theorem 14.2; cf. Kakade and Langford 2002, Theorem 4.1, which has the sharper denominator
-  `1 - γ (1 - α)` in place of `1 - γ`): if `|∑ a, π'(a | s) A^π(s, a)| ≤ ε` for
-  all `s`, then
+  Theorem 14.2; cf. Kakade and Langford 2002, Theorem 4.1, which is sharper: it replaces one
+  factor `1 - γ` of the penalty's denominator `(1 - γ)²` by `1 - γ (1 - α)`): if
+  `|∑ a, π'(a | s) A^π(s, a)| ≤ ε` for all `s`, then
   `V^{π_α}(s₀) - V^π(s₀) ≥ α / (1 - γ) * 𝔸 - 2 α² γ ε / (1 - γ)²`, where
   `𝔸 = ∑ s, d^π_{s₀}(s) ∑ a, π'(a | s) A^π(s, a)` is the policy advantage of `π'` over `π`.
 
@@ -245,7 +245,8 @@ theorem abs_sum_occupancy_mix_sub_le (α : ℝ) (hα0 : 0 ≤ α) (hα1 : α ≤
     _ = 2 * α * γ * C / (1 - γ) := by field_simp
 
 /-- **Conservative policy iteration improves the policy** (AJKS Theorem 14.2; cf. Kakade and
-Langford 2002, Theorem 4.1, with the sharper denominator `1 - γ (1 - α)`): let
+Langford 2002, Theorem 4.1, which replaces one factor `1 - γ` of the penalty's denominator by
+`1 - γ (1 - α)`): let
 `π_α = (1 - α) π + α π'` with `0 ≤ α ≤ 1` and suppose `|∑ a, π'(a | s) A^π(s, a)| ≤ ε` for
 every state `s`. Then
 `V^{π_α}(s₀) - V^π(s₀) ≥ α / (1 - γ) * 𝔸 - 2 α² γ ε / (1 - γ)²`, where
