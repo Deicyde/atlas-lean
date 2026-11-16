@@ -36,8 +36,9 @@ Sources: L. Lovász, "On the Shannon capacity of a graph", IEEE Trans. Inform. T
 Conventions. Knuth measures the cost against the first coordinate vector; we allow any nonzero
 handle `c`, as Lovász does with a unit vector. An orthogonal change of coordinates (Knuth,
 Lemma 0) moves any unit handle to the first coordinate vector, so the two minima agree; that
-equivalence is not formalised here. Knuth's `ϑ(G)` is defined through the convex body `TH(G)`;
-its equality with the min-max form is Knuth's eq. (5.1) and is not formalised here either.
+equivalence is not formalised here. Knuth's `ϑ(G)` is defined through the convex body `TH(G)`
+(`LovaszThetaBody`); its equality with the min-max form is Knuth's eq. (5.1), recorded as wanted in
+`WantedExt.Combinatorics.LovaszThetaBodyWanted`.
 -/
 
 @[expose] public section
