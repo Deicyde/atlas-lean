@@ -6,7 +6,7 @@ sign vectors, in the convention of Shalev-Shwartz and Ben-David (Section 26.1, e
 Mendelson's convention $\mathbb{E} \sup_a \lvert \frac2n \sum_i \sigma_i a_i \rvert$ differs by
 the absolute value and the factor $2$. Its structural calculus (monotonicity, convex hulls,
 scaling, sums, translations and Lipschitz contraction), Massart's finite-class lemma and the
-resulting bound for classes of finite VC dimension are proved; the risk bound that turns it into
+resulting bound $\sqrt{2 d \log(e n / d) / n}$ for classes of VC dimension $d$ are proved; the risk bound that turns it into
 a generalization guarantee is recorded as a wanted statement.
 
 - [Empirical Rademacher complexity](rademacher-complexity.md)
@@ -19,6 +19,8 @@ a generalization guarantee is recorded as a wanted statement.
 - [The contraction lemma](rademacher-complexity-coord-map-le.md)
 - [Massart's finite-class lemma](rademacher-complexity-le-of-finite.md)
 - [Rademacher complexity of a VC class](rademacher-complexity-sign-patterns-le.md)
+- [Sauer–Shelah counting bound](sum-choose-le-exp-mul-div-pow.md)
+- [Rademacher complexity of a VC class, explicit rate](rademacher-complexity-sign-patterns-le-v.md)
 - [The Rademacher risk bound](risk-le-empirical-add-rademacher.md)
 
 ## Supporting definitions and lemmas
@@ -41,6 +43,7 @@ a generalization guarantee is recorded as a wanted statement.
 - [One step of the contraction argument](sum-sup-corr-le-update.md)
 - [Sign pattern of a subset](sign-vector.md)
 - [Sign patterns of a set family](sign-patterns.md)
+- [The VC dimension on an n-point sample is at most n](vc-dim-le.md)
 - [Cost vectors on a sample](cost-vectors.md)
 
 ## Related topics
