@@ -11,3 +11,14 @@ The non-commutative Fourier transform $\hat P(\rho) = \sum_s P(s)\rho(s)$ of a f
 - [The uniform distribution has zero Fourier transform at non-trivial irreducibles](fourier-uniform-eq-zero.md)
 - [An irreducible representation lives on a nonzero space](nontrivial-of-is-irreducible.md)
 - [Plancherel formula on a finite group](plancherel.md)
+
+## Related topics
+
+- [Random walks on finite groups](../../../Probability/random-walks/random-walks-on-finite-groups/README.md):
+  the probabilistic use of the transform, rates of convergence to uniformity.
+- [Schur's lemma and multiplicities](../schur-s-lemma-and-multiplicities/README.md): Schur's lemma,
+  which makes transforms of class functions scalar.
+- [Characters of representations](../characters-of-representations/README.md): the characters in
+  the scalar of a class function's transform.
+- [Fourier transform on finite abelian groups](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/README.md):
+  the commutative case, where every irreducible representation is a character.

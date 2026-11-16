@@ -1,8 +1,14 @@
 # Number of rising sequences of an arrangement
 
-Read `π : Sₙ` as an arrangement of a deck,
-card `π i` at position `i` (Bayer and Diaconis 1992, Section 3). A rising sequence is a maximal run
-of consecutive face values `v, v + 1, …` lying in increasing positions; the runs break exactly at
-the values `v` whose successor `v + 1` lies above `v` (`π⁻¹ (v + 1) < π⁻¹ v`), so the number of
-rising sequences is one plus the number of such `v` (Bayer and Diaconis 1992, Section 2, and the
-remark in Section 1 that `π` has `r` rising sequences iff `π⁻¹` has `r - 1` descents).
+Read $\pi \in S_n$ as an arrangement of a deck, card $\pi(i)$ at position $i$. A rising sequence is
+a maximal run of consecutive face values $v, v+1, \dots$ lying at increasing positions; for
+example $1, 5, 2, 3, 6, 7, 4$ has the two rising sequences $1, 2, 3, 4$ and $5, 6, 7$. The runs
+break exactly at the values $v$ whose successor $v + 1$ lies above $v$, that is
+$\pi^{-1}(v+1) < \pi^{-1}(v)$, so the number of rising sequences is one plus the number of such $v$.
+This is the Lean definition. Equivalently, $\pi$ has $r$ rising sequences iff $\pi^{-1}$ has $r - 1$
+descents.
+
+## Sources
+
+- D. Bayer and P. Diaconis, *Trailing the dovetail shuffle to its lair*, Ann. Appl. Probab. 2
+  (1992) 294–313, Sections 1–3.

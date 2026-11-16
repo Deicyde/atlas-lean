@@ -16,3 +16,16 @@ Random walks on a finite group $G$ driven by a probability $Q$: the $k$-step law
 - [Random transpositions: fewer than `(1/2) n log n` steps do not suffice (Diaconis–Shahshahani)](diaconis-shahshahani-lower.md)
 - [Random transpositions: `(1/2) n log n + c n` steps suffice (Diaconis–Shahshahani)](diaconis-shahshahani-upper.md)
 - [Upper bound lemma (Diaconis–Shahshahani)](upper-bound-lemma.md)
+
+## Related topics
+
+- [Fourier transform on finite groups](../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/README.md):
+  the representation-theoretic tools (convolution, Schur's lemma, Plancherel) behind the upper bound
+  lemma.
+- [Mixing times of Markov chains](../../markov-chains/mixing-times-of-markov-chains/README.md):
+  a random walk on a finite group is a Markov chain with uniform stationary law; total variation,
+  mixing and cutoff are defined there.
+- [Fourier transform on finite abelian groups](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/README.md):
+  the abelian transform used for walks on the circle and the cube.
+- [Fisher–Yates shuffle](../../../ComputerScience/randomized-algorithms/fisher-yates-shuffle/README.md):
+  exact generation of a uniform permutation, the benchmark for card-shuffling walks.

@@ -14,3 +14,6 @@
 - [Mixing](../../../Dynamics/ergodic-theory/mixing/README.md): mixing in ergodic theory, the asymptotic
   independence of events under a measure-preserving map, of which convergence of a chain to its stationary law
   is the probabilistic counterpart.
+- [Random walks on finite groups](../../random-walks/random-walks-on-finite-groups/README.md):
+  mixing times and cutoff computed by Fourier analysis, for random transpositions and riffle
+  shuffles.
