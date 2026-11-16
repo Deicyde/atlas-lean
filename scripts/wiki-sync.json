@@ -28785,7 +28785,7 @@
 "MetaMathlibExt.Complexity.KeyTheorems.RPSubsetBPP.rp_subset_bpp": "64bc5acfa8f645eb",
 "MetaMathlibExt.Complexity.KeyTheorems.RPSubsetNP.rp_subset_np": "77880f2cdb8b411e",
 "MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.cliqueHolds": "06943f4e769b444f",
-"MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.razborov_monotone_clique": "06a4fbb82914709f",
+"MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.razborov_monotone_clique": "fda4cae22b418faf",
 "MetaMathlibExt.Complexity.KeyTheorems.RegexSquaringEXPSPACEComplete.concatLang": "b4e735aeb30c1437",
 "MetaMathlibExt.Complexity.KeyTheorems.RegexSquaringEXPSPACEComplete.evalPostfix": "1bcfaa3a3912ae39",
 "MetaMathlibExt.Complexity.KeyTheorems.RegexSquaringEXPSPACEComplete.regexUnivDec": "6ee7f303bbb274b7",
