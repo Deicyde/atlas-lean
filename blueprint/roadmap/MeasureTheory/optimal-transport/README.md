@@ -6,6 +6,7 @@ Couplings of probability measures, transport costs, existence of optimal couplin
 - [Monge–Kantorovich existence theorem](monge-kantorovich-existence-theorem/README.md)
 - [Wasserstein distances](wasserstein-distances/README.md)
 - [Brenier's theorem](brenier.md)
+- [Wasserstein gradient flows and the JKO scheme](wasserstein-gradient-flows-and-the-jko-scheme/README.md)
 
 ## Related topics
 
