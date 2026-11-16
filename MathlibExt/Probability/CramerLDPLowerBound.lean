@@ -495,14 +495,10 @@ theorem le_liminf_log_empiricalMeanMeasureVec_of_differentiable
     · exact ENNReal.log_monotone (measure_mono hball)
     · exact EReal.inv_nonneg_of_nonneg (by exact_mod_cast Nat.zero_le n)
 
-/-- **Cramér's theorem in `ℝᵈ`, assuming a differentiable log moment generating function.**
-Let `X₀, X₁, …` be measurable i.i.d. random vectors in `ℝᵈ` on a probability space with
-`E[exp ⟪t, X₀⟫] < ∞` for every `t`, and suppose `Λ = log E[exp ⟪·, X₀⟫]` is differentiable.
-Then the laws of the empirical means satisfy the large deviation principle with the good rate
-function `Λ*`. Sources: S. R. S. Varadhan, *Large Deviations*, lecture notes, New York
-University, Spring 2010, Section 1 (https://math.nyu.edu/~varadhan/LDP/1-2.pdf); A. Dembo and
-O. Zeitouni, *Large Deviations Techniques and Applications*, 2nd ed., Section 2.2. -/
-theorem satisfiesLDP_empiricalMeanMeasureVec_of_differentiable
+/-- Cramér's theorem with the differentiability of `Λ` as an explicit hypothesis; a proof step of
+`satisfiesLDP_empiricalMeanMeasureVec`, where the hypothesis is discharged by
+`differentiable_logMGFVec` (it always holds under finite exponential moments). -/
+private theorem satisfiesLDP_empiricalMeanMeasureVec_of_differentiable
     (hXmeas : ∀ i, Measurable (X i)) (hXindep : iIndepFun X μ)
     (hXident : ∀ i, IdentDistrib (X i) (X 0) μ μ)
     (hInt : ∀ t : EuclideanSpace ℝ (Fin d), Integrable (fun ω => Real.exp ⟪t, X 0 ω⟫_ℝ) μ)
@@ -612,8 +608,11 @@ distributed random vectors in `ℝᵈ` on a probability space, with `E[exp ⟪t,
 `t ∈ ℝᵈ`. Then the laws `μₙ` of the empirical means `(1/n) ∑_{i<n} Xᵢ` satisfy the large
 deviation principle with the Cramér rate function `Λ*(x) = sup_t (⟪t, x⟫ - log E[exp ⟪t, X₀⟫])`,
 and `Λ*` is a good rate function. Sources: S. R. S. Varadhan, *Large Deviations*, lecture notes,
-New York University, Spring 2010, Section 1 (Chebyshev upper bound and tilting lower bound,
-https://math.nyu.edu/~varadhan/LDP/1-2.pdf); A. Dembo and O. Zeitouni, *Large Deviations
+New York University, Spring 2010, Section 3, Corollary 1.3 in the notes' numbering
+(https://math.nyu.edu/~varadhan/LDP/Spring2010.3.pdf; separable Banach spaces with
+`E[exp (θ ‖X₀‖)] < ∞` for every `θ > 0`, which in `ℝᵈ` is the finite-moment hypothesis here), and
+Section 1 for the Chebyshev upper bound and tilting lower bound followed here
+(https://math.nyu.edu/~varadhan/LDP/1-2.pdf); A. Dembo and O. Zeitouni, *Large Deviations
 Techniques and Applications*, 2nd ed., Section 2.2. -/
 theorem satisfiesLDP_empiricalMeanMeasureVec (hXmeas : ∀ i, Measurable (X i))
     (hXindep : iIndepFun X μ) (hXident : ∀ i, IdentDistrib (X i) (X 0) μ μ)

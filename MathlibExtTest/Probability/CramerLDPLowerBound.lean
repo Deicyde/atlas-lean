@@ -25,7 +25,7 @@ namespace MathlibExtTest.Probability.CramerLDPLowerBound
 
 /-- **Independence of constants.** Constant random vectors on a one-point probability space are
 independent. -/
-theorem iIndepFun_const_dirac' {d : ℕ} (c : EuclideanSpace ℝ (Fin d)) :
+private theorem iIndepFun_const_dirac' {d : ℕ} (c : EuclideanSpace ℝ (Fin d)) :
     iIndepFun (fun (_ : ℕ) (_ : Unit) => c) (Measure.dirac ()) := by
   rw [iIndepFun_iff_measure_inter_preimage_eq_mul]
   intro S sets _

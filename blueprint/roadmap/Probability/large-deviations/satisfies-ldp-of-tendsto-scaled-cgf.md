@@ -1,7 +1,8 @@
 # Gärtner–Ellis theorem (differentiable case)
 
-Let $\nu_n$ be probability measures on $\mathbb{R}^d$ (the laws of random vectors $Z_n$) whose
-scaled cumulant generating functions converge:
+Let $\nu_n$ be probability measures on $\mathbb{R}^d$ (the laws of random vectors $Z_n$) with
+$\int e^{n \langle t, x \rangle} \, d\nu_n(x) < \infty$ for all $n$ and $t$, whose scaled cumulant generating
+functions converge:
 
 $$\Lambda(t) = \lim_{n \to \infty} \frac{1}{n} \log \int e^{n \langle t, x \rangle} \, d\nu_n(x) \quad \text{for every } t \in \mathbb{R}^d,$$
 

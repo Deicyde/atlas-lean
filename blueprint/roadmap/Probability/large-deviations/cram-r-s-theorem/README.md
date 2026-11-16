@@ -51,7 +51,6 @@ function reduces every point to a gradient point.
 - [Exponential moments of the partial sums](integrable-and-integral-exp-inner-sum.md)
 - [Cramér lower bound on small balls at gradient points](cramer-lower-bound-ball.md)
 - [Cramér lower bound for open sets, assuming a differentiable log moment generating function](cramer-lower-bound-differentiable.md)
-- [Cramér's theorem in `ℝᵈ`, assuming a differentiable log moment generating function](cramer-theorem-differentiable.md)
 - [Tilted Chernoff bound for a half-space event](set-lintegral-tilt-le.md)
 
 ## Related topics
