@@ -104,9 +104,9 @@ such that the two-layer ReLU network `c(x) = ∑ⱼ wⱼ max(⟪a, x⟫ - bⱼ, 
 `c(xᵢ) = yᵢ` for every `i`. In `ℝ^d` the network has `2 n + d` weights.
 
 Source: C. Zhang, S. Bengio, M. Hardt, B. Recht and O. Vinyals, *Understanding deep learning
-requires rethinking generalization*, ICLR 2017, arXiv:1611.03530, Theorem 1 (stated for a sample
-of `n` points of `ℝ^d`; the proof in Appendix C uses that the points are distinct, which is
-assumed here, and works in any real inner product space). -/
+requires rethinking generalization*, ICLR 2017, arXiv:1611.03530, Theorem 1 (stated for samples
+`S ⊆ ℝ^d` with `|S| = n`, that is, `n` distinct points, as here; the proof in Appendix C works in
+any real inner product space). -/
 theorem exists_reluNet_eq {n : ℕ} {x : Fin n → E} (hx : Function.Injective x) (y : Fin n → ℝ) :
     ∃ (a : E) (b w : Fin n → ℝ), ∀ i, reluNet a b w (x i) = y i := by
   obtain ⟨a, ha⟩ := exists_inner_injective hx

@@ -27,4 +27,20 @@ example (w' : ℝ) (hw' : ⟪w', (1 : ℝ)⟫_ℝ = 3) : ‖(3 : ℝ)‖ ≤ ‖
     (by simp)
     (fun _ => by simp) (fun _ => hw')
 
+-- A run that interpolates after one exact step: from `0`, the step `-(-3) • 1` reaches `3` and the
+-- errors vanish afterwards; its limit `3` has minimum norm among the interpolants of `⟪w, 1⟫ = 3`.
+example (w' : ℝ) (hw' : ⟪w', (1 : ℝ)⟫_ℝ = 3) : ‖(3 : ℝ)‖ ≤ ‖w'‖ := by
+  have hrun : ∀ t, sgdIterate (fun _ : Fin 1 => (1 : ℝ)) (fun _ => 0) (fun _ => 1)
+      (fun t => if t = 0 then -3 else 0) (t + 1) = 3 := by
+    intro t
+    induction t with
+    | zero => simp [sgdIterate]
+    | succ t ih => rw [sgdIterate, ih]; simp
+  refine norm_le_of_tendsto_sgdIterate (x := fun _ : Fin 1 => (1 : ℝ)) (ι := fun _ => 0)
+    (η := fun _ => 1) (e := fun t => if t = 0 then -3 else 0) (y := fun _ => 3) ?_
+    (fun _ => by simp) (fun _ => hw')
+  refine tendsto_atTop_of_eventually_const (i₀ := 1) fun t ht => ?_
+  obtain ⟨s, rfl⟩ := Nat.exists_eq_add_of_le' ht
+  exact hrun s
+
 end CSLibExt.MachineLearning.MinimumNormInterpolation

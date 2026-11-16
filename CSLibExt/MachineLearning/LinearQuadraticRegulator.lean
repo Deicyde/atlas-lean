@@ -251,8 +251,8 @@ omit [DecidableEq ι] in
 states `x_t = lqrState A B x₀ u t`.
 
 Source: B. Recht, *A tour of reinforcement learning: the view from continuous control*,
-arXiv:1806.09460, Section 4 (the LQR cost, here deterministic, undiscounted and with a terminal
-cost `Q_f`). -/
+arXiv:1806.09460, Section 4, problem (4.1) without the noise `e_t` and without the factors `1/2`:
+`T = N + 1` stage costs and the terminal cost `Q_f`, which is the source's `S`. -/
 def lqrCost (A : Matrix σ σ ℝ) (B : Matrix σ ι ℝ) (Q : Matrix σ σ ℝ) (R : Matrix ι ι ℝ)
     (Qf : Matrix σ σ ℝ) (x₀ : σ → ℝ) (u : ℕ → ι → ℝ) (T : ℕ) : ℝ :=
   ∑ t ∈ Finset.range T, (lqrState A B x₀ u t ⬝ᵥ (Q *ᵥ lqrState A B x₀ u t) + u t ⬝ᵥ (R *ᵥ u t)) +
@@ -284,7 +284,7 @@ sequence `u`, `x₀ᵀ M_T x₀ ≤ lqrCost x₀ u T`, where `M_T = riccatiCostT
 
 Source: B. Recht, *A tour of reinforcement learning: the view from continuous control*,
 arXiv:1806.09460, Section 4 ("the standard LQR problem admits an elegant dynamic programming
-solution"), for the deterministic finite-horizon problem with terminal cost. -/
+solution"), for the deterministic version of problem (4.1). -/
 theorem lqrCost_ge {A : Matrix σ σ ℝ} {B : Matrix σ ι ℝ} {Q : Matrix σ σ ℝ} {R : Matrix ι ι ℝ}
     {Qf : Matrix σ σ ℝ} (hQ : Q.PosSemidef) (hR : R.PosDef) (hQf : Qf.PosSemidef) (T : ℕ) :
     ∀ (x₀ : σ → ℝ) (u : ℕ → ι → ℝ),
@@ -320,7 +320,7 @@ every horizon `T` and initial state `x₀` there is a control sequence `u` with
 Source: B. Recht, *A tour of reinforcement learning: the view from continuous control*,
 arXiv:1806.09460, Section 4 ("the control action is a linear function of the state
 `u_t = -K_t x_t` for some matrix `K_t` that can be computed via a simple linear algebraic
-recursion"), for the deterministic finite-horizon problem with terminal cost. -/
+recursion"), for the deterministic version of problem (4.1). -/
 theorem lqrCost_feedback {A : Matrix σ σ ℝ} {B : Matrix σ ι ℝ} {Q : Matrix σ σ ℝ}
     {R : Matrix ι ι ℝ} {Qf : Matrix σ σ ℝ} (hQ : Q.PosSemidef) (hR : R.PosDef)
     (hQf : Qf.PosSemidef) (T : ℕ) :

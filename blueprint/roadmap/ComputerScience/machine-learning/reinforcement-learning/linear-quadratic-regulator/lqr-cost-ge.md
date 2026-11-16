@@ -12,4 +12,4 @@ Proof: by induction on $T$. The cost splits into the stage cost at $x_0$ and the
 
 ## Sources
 
-- B. Recht, *A tour of reinforcement learning: the view from continuous control*, Annual Review of Control, Robotics, and Autonomous Systems 2 (2019), arXiv:1806.09460, Section 4 ("the standard LQR problem admits an elegant dynamic programming solution"), for the deterministic finite-horizon problem with terminal cost.
+- B. Recht, *A tour of reinforcement learning: the view from continuous control*, Annual Review of Control, Robotics, and Autonomous Systems 2 (2019), arXiv:1806.09460, Section 4 ("the standard LQR problem admits an elegant dynamic programming solution"), for the deterministic version of problem (4.1).
