@@ -39,7 +39,11 @@ with the per-predictor Hoeffding step for independent variables in $[0, 1]$; the
 (the strict event, the measurability remark and the constants) are derived here. Only the case of a $\{0, 1\}$-valued loss with
 $\ell_\infty = 1$, such as the classification error, matches a statement formalized in this
 library; for other bounded losses the Hoeffding step is the classical inequality for bounded
-variables, which this library does not formalize.
+variables. Pinned Mathlib proves its one-sided form for independent variables with values in an
+interval (Hoeffding's lemma `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc_of_integral_eq_zero`
+with `ProbabilityTheory.HasSubgaussianMGF.measure_sum_ge_le_of_iIndepFun`); applied to the
+centred losses and to their negatives it gives the per-predictor step, a specialisation this
+library does not state.
 
 This page is an AI-authored exposition; it has no Lean formalization in this library.
 
