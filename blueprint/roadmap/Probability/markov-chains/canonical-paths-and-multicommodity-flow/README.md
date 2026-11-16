@@ -28,3 +28,12 @@ Sinclair's geometric bounds on the spectral gap of a reversible Markov chain (A.
 - [Excess mass on a set is at most the total variation distance](sum-sub-le-tv-dist.md)
 - [Rapid mixing implies a low-congestion flow](exists-multicommodity-flow-load-le-sixte.md)
 - [Cheeger's inequality for reversible Markov chains, upper bound](le-one-sub-sq-div-two-of-eigenvector.md)
+
+## Related topics
+
+- [Mixing times of Markov chains](../mixing-times-of-markov-chains/README.md): the total variation distance and the `1/4`-mixing time that Lemma 7 and Theorem 8 start from.
+- [Kolmogorov's criterion for reversibility](../kolmogorov-s-criterion-for-reversibility/README.md): detailed balance, the standing hypothesis of every bound here.
+- [Conductance and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-02/conductance-and-cheeger-s-inequality/README.md): Cheeger's inequality for weighted graphs, the graph counterpart of the conductance bound for chains.
+- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): the Laplacian quadratic form, which for edge weights `π(u) P(u, v)` is the Dirichlet form compared with the variance here.
+- [Complexity of the permanent](../../../TheoryOfComputation/counting-complexity/complexity-of-the-permanent/README.md): Sinclair's 1992 paper uses these path bounds to improve the running time of randomised approximation algorithms for the permanent of a 0-1 matrix, which work by sampling from a Markov chain on matchings.
+- [Markov chain Monte Carlo](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/README.md): the sampling algorithms whose running time these bounds control.

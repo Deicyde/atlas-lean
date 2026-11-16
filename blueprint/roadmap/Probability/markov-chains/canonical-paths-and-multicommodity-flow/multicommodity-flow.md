@@ -1,7 +1,3 @@
 # Multicommodity flow in a Markov chain
 
-**Multicommodity flow in a Markov chain** (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
-Section 4). For each ordered pair `x ≠ y`, a finite set of paths from `x` (each given by the list
-of states it visits after `x`, as in `CanonicalPaths.pathEdges`) with nonnegative weights summing
-to `π(x) π(y)`; every path is simple, ends at `y`, and uses only oriented edges `(u, v)` of the
-graph of the chain, i.e. with `π(u) P(u, v) > 0`.
+View a Markov chain with transition matrix $P$ and weights $\pi$ as a network whose oriented edge $(u,v)$ has capacity $Q(u,v) = \pi(u)P(u,v)$. A multicommodity flow sends $\pi(x)\pi(y)$ units of commodity $(x,y)$ from $x$ to $y$ for every ordered pair $x \ne y$, split over finitely many simple paths of the chain's graph (paths using only edges with $\pi(u)P(u,v) > 0$) with nonnegative weights. This is the definition of a flow in Section 4 of A. Sinclair, *Improved bounds for mixing rates of Markov chains and multicommodity flow*, Combinatorics, Probability and Computing 1 (1992), 351–370, where a flow is a function on the set of all simple paths; here each commodity lists the paths it uses. Canonical paths are the special case of one path per pair. The least $\rho$ for which some flow has every edge load at most $\rho\,Q(u,v)$ is Sinclair's *resistance* of the chain (not the effective resistance of electrical network theory).

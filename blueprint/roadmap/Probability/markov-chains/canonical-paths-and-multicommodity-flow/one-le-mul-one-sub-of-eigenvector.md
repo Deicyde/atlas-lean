@@ -1,8 +1,14 @@
 # Sinclair's canonical-path bound on the spectral gap
 
-**Sinclair's canonical-path bound on the spectral gap** (A. Sinclair, *Combin. Probab.
-Comput.* 1 (1992), Theorem 5). Let `P` have unit row sums and satisfy detailed balance
-`π(x) P(x, y) = π(y) P(y, x)` with respect to a positive probability vector `π`. Let `γ x y` be
-a path from `x` to `y` for each pair `x ≠ y`, and let `B` bound every length-weighted edge load
-by `B · π(u) P(u, v)` (`B = ρ̄(Γ)`). Then every real eigenvalue `μ ≠ 1` of `P` satisfies
-`1 ≤ B (1 - μ)`: the spectral gap is at least `1/ρ̄(Γ)`.
+Let $P$ be a real matrix on a finite state space $S$ with unit row sums, reversible with respect to a probability vector $\pi > 0$: $\pi(x) P(x,y) = \pi(y) P(y,x)$ for all $x, y$. Give every ordered pair of distinct states a path $\gamma_{xy}$ from $x$ to $y$, and let $B$ satisfy
+
+$$\sum_{x \ne y} \pi(x)\pi(y)\,|\gamma_{xy}|\, m_{xy}(u,v) \;\le\; B\, \pi(u) P(u,v) \quad\text{for every oriented edge } (u,v),$$
+
+where $m_{xy}(u,v)$ counts the uses of $(u,v)$ by $\gamma_{xy}$. Then every real eigenvalue $\mu \ne 1$ of $P$ satisfies $1 \le B(1-\mu)$. When the paths use only transitions of positive probability, Sinclair's length-weighted congestion $\bar\rho(\Gamma)$ is such a $B$, so the spectral gap is at least $1/\bar\rho(\Gamma)$: this is Theorem 5 of A. Sinclair, *Improved bounds for mixing rates of Markov chains and multicommodity flow*, Combinatorics, Probability and Computing 1 (1992), 351–370, stated there as $\lambda_1 \le 1 - 1/\bar\rho$ for the second eigenvalue $\lambda_1$.
+
+The proof follows the paper: an eigenvector $f$ for $\mu \ne 1$ has $\pi$-mean zero because $\pi$ is stationary, so its variance and Dirichlet form are $\sum_x \pi(x) f(x)^2$ and $(1-\mu)\sum_x \pi(x) f(x)^2$, and the canonical-path Poincaré inequality compares them. No eigenvalue need be ordered, and no spectral theorem is used; nonnegativity of $P$ is not needed either.
+
+## Background
+
+- [Detailed balance](../kolmogorov-s-criterion-for-reversibility/detailed-balance.md): the reversibility hypothesis, in the repository's stochastic-matrix vocabulary.
+- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): the Dirichlet form $\tfrac12\sum_{x,y} \pi(x)P(x,y)(f(x)-f(y))^2$ is the Laplacian quadratic form of the graph with edge weights $\pi(x)P(x,y)$.

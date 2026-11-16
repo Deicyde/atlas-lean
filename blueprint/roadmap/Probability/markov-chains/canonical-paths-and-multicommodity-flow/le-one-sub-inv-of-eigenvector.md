@@ -1,5 +1,3 @@
-# Theorem 5 in the form `μ ≤ 1 - 1/ρ̄`
+# Theorem 5 in the form $\mu \le 1 - 1/\bar\rho$
 
-**Theorem 5 in the form `μ ≤ 1 - 1/ρ̄`** (A. Sinclair, *Combin. Probab. Comput.* 1 (1992),
-Theorem 5): with the hypotheses of `one_le_mul_one_sub_of_eigenvector` and `0 < B`, every real
-eigenvalue `μ ≠ 1` of `P` satisfies `μ ≤ 1 - 1/B`.
+Under the hypotheses of [Sinclair's canonical-path bound on the spectral gap](one-le-mul-one-sub-of-eigenvector.md), and with $B > 0$, every real eigenvalue $\mu \ne 1$ of $P$ satisfies $\mu \le 1 - 1/B$. With $B = \bar\rho(\Gamma)$ this is the statement $\lambda_1 \le 1 - 1/\bar\rho$ of Theorem 5 of A. Sinclair, *Improved bounds for mixing rates of Markov chains and multicommodity flow*, Combinatorics, Probability and Computing 1 (1992), 351–370.

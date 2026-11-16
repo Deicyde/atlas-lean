@@ -1,7 +1,3 @@
 # Flow of a path system through an oriented edge
 
-For canonical paths `γ x y` (a path from
-`x` for each ordered pair) and weights `π`, `pathLoad π γ u v = ∑_{x ≠ y} π(x) π(y) m_xy(u, v)`
-where `m_xy(u, v)` is the number of times `γ x y` uses the oriented edge `(u, v)`. For simple
-paths this is the numerator `∑_{γ_xy ∋ e} π(x) π(y)` of the congestion `ρ(Γ)` (A. Sinclair,
-*Combin. Probab. Comput.* 1 (1992), eq. (3)).
+For canonical paths $\gamma_{xy}$ and weights $\pi$, the load of the oriented edge $(u,v)$ is $\sum_{x \ne y}\pi(x)\pi(y)\,m_{xy}(u,v)$, where $m_{xy}(u,v)$ is the number of times $\gamma_{xy}$ uses $(u,v)$. For the simple paths of A. Sinclair, *Combinatorics, Probability and Computing* 1 (1992), $m_{xy}$ is $0$ or $1$ and this is the numerator $\sum_{\gamma_{xy} \ni e}\pi(x)\pi(y)$ of the congestion $\rho(\Gamma) = \max_e Q(e)^{-1}\sum_{\gamma_{xy} \ni e}\pi(x)\pi(y)$, his equation (3).
