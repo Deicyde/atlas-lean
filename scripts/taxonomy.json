@@ -3799,6 +3799,7 @@
   "MathlibExt/Probability/CondExpAntitoneLimit": {"to": "Probability/martingales", "title": "Backwards martingales and Lévy's downward theorem"},
   "MathlibExt/Probability/ConditionalOptionalStopping": {"to": "Probability/martingales", "title": "Optional stopping theorem"},
   "MathlibExt/Probability/ConditionalOptionalStoppingSubmartingale": {"to": "Probability/martingales", "title": "Optional stopping theorem"},
+  "MathlibExt/Probability/ContinuousDoob": {"to": "Probability/martingales", "title": "Doob's maximal inequalities"},
   "MathlibExt/Probability/Condorcet": {"to": "GameTheory/social-choice", "title": "Condorcet's jury theorem"},
   "MathlibExt/Probability/Configuration/CondDistribution": {"to": "Probability/random-fields", "title": "Gibbs conditional distributions"},
   "MathlibExt/Probability/Configuration/ConfigSpace": {"to": "Probability/random-fields", "title": "Spin and bond configuration spaces"},

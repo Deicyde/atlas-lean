@@ -27507,6 +27507,7 @@
 "MeasureTheory.Martingale.integral_stoppedValueAtTop_eq_of_uniformIntegrable": "26e4fd8dc4782ade",
 "MeasureTheory.Martingale.integral_sub_mul_eq_zero": "d6c499f9fd220c34",
 "MeasureTheory.Martingale.integral_sub_sq_eq": "8b782a4902bb9831",
+"MeasureTheory.Martingale.lintegral_iSup_sq_le_of_continuous": "b5fb75122ce3d614",
 "MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_limitProcess": "4dcf5d574d5b9278",
 "MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop": "a8a0c75526b3bb9a",
 "MeasureTheory.Martingale.submartingale_comp_convex": "552fdd77d15b5c71",

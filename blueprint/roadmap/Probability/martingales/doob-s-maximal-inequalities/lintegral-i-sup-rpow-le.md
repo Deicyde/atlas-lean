@@ -7,6 +7,9 @@ and Stochastic Calculus*, Chapter 3, section "Continuous time martingales and su
 the discrete-time inequality is Proposition 12.4.3 of his ENS notes). The integrals are lower
 Lebesgue integrals, so the statement needs no integrability assumption on `X_t^p`.
 
+The case `p = 2` for martingales is proved:
+[Doob's `L²` maximal inequality in continuous time](lintegral-i-sup-sq-le-of-continuous.md).
+
 ## Informally uses
 
 - [Doob's L² maximal inequality, finite horizon](doob-sq-maximal-ineq.md): the discrete-time
