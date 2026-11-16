@@ -1745,6 +1745,7 @@
   "MathlibExt/Analysis/Convex/HermiteHadamard": {"to": "Analysis/inequalities", "title": "Hermite–Hadamard inequality"},
   "MathlibExt/Analysis/Convex/KKM": {"to": "Geometry/convex-geometry", "title": "Knaster–Kuratowski–Mazurkiewicz lemma"},
   "MathlibExt/Analysis/Convex/KarushKuhnTucker": {"to": "Analysis/convex-analysis-and-variations", "title": "Karush–Kuhn–Tucker conditions"},
+  "MathlibExt/Analysis/Convex/LagrangeDuality": {"to": "Analysis/convex-analysis-and-variations", "title": "Lagrange duality"},
   "MathlibExt/Analysis/Convex/LinearProgrammingDuality": {"to": "Geometry/convex-geometry", "title": "Linear programming"},
   "MathlibExt/Analysis/Convex/MoreauDecomposition": {"to": "Analysis/convex-analysis-and-variations", "title": "Moreau decomposition"},
   "MathlibExt/Analysis/Convex/NewtonPolygon": {"to": "Algebra/polynomials", "title": "Newton polygon"},

@@ -1,6 +1,6 @@
 # First-order conditions for convexity and optimality
 
-A differentiable function is convex exactly when each of its first-order Taylor approximations is a global underestimator, $f(x) \ge f(a) + Df(a)(x - a)$. This one inequality turns local information into global information: it gives the optimality criterion $Df(a)(x - a) \ge 0$ for minimizing a convex function over a convex set, it shows that stationary points of convex functions are global minimizers, and it is the step that turns stationarity of the Lagrangian into optimality in Lagrange duality and the KKT conditions.
+A differentiable function is convex exactly when each of its first-order Taylor approximations is a global underestimator, $f(x) \ge f(a) + Df(a)(x - a)$. This one inequality turns local information into global information: it gives the optimality criterion $Df(a)(x - a) \ge 0$ for minimizing a convex function over a convex set, it shows that stationary points of convex functions are global minimizers, and it is the step that turns stationarity of the Lagrangian into optimality in [Lagrange duality](../lagrange-duality/README.md) and the KKT conditions.
 
 - [First-order condition for convexity](add-fderiv-le-of-convex-on.md)
 - [Supporting affine minorants imply convexity](convex-on-of-forall-add-le.md)
@@ -12,5 +12,6 @@ The MA-ProofBench formulation for $C^2$ functions on an open convex subset of a 
 
 ## Related topics
 
+- [Lagrange duality](../lagrange-duality/README.md)
 - [Gradient descent](../gradient-descent/README.md)
 - [Least squares, ridge and lasso regression](../../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md)
