@@ -10,22 +10,23 @@ module
 
 public import Batteries.Util.ProofWanted
 public import Mathlib.RepresentationTheory.FDRep
-public import Mathlib.Data.Fin.Tuple.Sort
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 public import MathlibExt.Probability.RandomWalkFiniteGroup
 
 /-!
 # Random walks on finite groups: wishlist
 
-Established results of Diaconis–Shahshahani and Bayer–Diaconis whose proofs are deferred. The
+Established results of Diaconis and Shahshahani whose proofs are deferred. The
 Plancherel formula they rest on is
 `MathlibExt.RepresentationTheory.FourierTransformFiniteGroupWanted.plancherel`.
 
 * `upper_bound_lemma`: the Diaconis–Shahshahani upper bound lemma on a finite group (the abelian
   case is proved as `MathlibExt.Probability.RandomWalkFiniteGroup.four_mul_tvDist_uniform_sq_le`);
 * `diaconis_shahshahani_upper`, `diaconis_shahshahani_lower`: random transpositions mix after
-  `(1/2) n log n + c n` steps, and not before;
-* `bayer_diaconis_rising_sequences`: the law of an `a`-shuffle in terms of rising sequences.
+  `(1/2) n log n + c n` steps, and not before.
+
+The Bayer–Diaconis formula for riffle shuffles is proved:
+`MathlibExt.Probability.RiffleShuffle.card_sort_eq`.
 
 Conventions. A complete set of irreducible complex representations of `G` is a finite family
 `V : ι → FDRep ℂ G` of simple objects, pairwise non-isomorphic, such that every simple object is
@@ -91,20 +92,5 @@ theorem_wanted diaconis_shahshahani_lower (k : ℕ → ℕ) (ε : ℝ) (hε : 0 
     ∀ᶠ n : ℕ in Filter.atTop,
       2 * (Real.exp (-1) - Real.exp (-Real.exp (-2 * (((k n : ℝ) - n * Real.log n / 2) / n))))
         - ε ≤ 2 * tvDist (convPow (randomTransposition n) (k n)) (uniform (Equiv.Perm (Fin n)))
-
-/-- **Bayer–Diaconis formula for `a`-shuffles.** In the inverse description of an `a`-shuffle of
-`n` cards, each position `i` receives a pile label `f i ∈ {0, …, a - 1}`, uniformly and
-independently, and the piles are stacked in label order keeping their internal order; the
-resulting inverse shuffle is the stable sorting permutation `Tuple.sort f`, so the `a`-shuffle is
-`π` exactly when `Tuple.sort f = π⁻¹`. The probability that an `a`-shuffle produces `π` is
-`C(a + n - r, n) / aⁿ` with `r` the number of rising sequences of `π`; equivalently, exactly
-`C(a + n - r, n)` of the `aⁿ` label maps give `π` (Bayer and Diaconis 1992, Theorem 3, with the
-inverse description of Section 3 and the equivalence of the descriptions, Lemma 1). For `a = 2`
-this is the Gilbert–Shannon–Reeds riffle shuffle, and Lemma 1 turns `m` riffle shuffles into one
-`2^m`-shuffle (Theorem 1). -/
-theorem_wanted bayer_diaconis_rising_sequences (n a : ℕ) (ha : 1 ≤ a)
-    (π : Equiv.Perm (Fin n)) :
-    (Finset.univ.filter (fun f : Fin n → Fin a => Tuple.sort f = π⁻¹)).card =
-      (a + n - risingSequences π).choose n
 
 end MathlibExt.Probability.RandomWalkFiniteGroupWanted

@@ -12,10 +12,10 @@ Random walks on a finite group $G$ driven by a probability $Q$: the $k$-step law
 - [Number of rising sequences of an arrangement](rising-sequences.md)
 - [Number of transpositions in the symmetric group](two-mul-card-is-swap.md)
 - [The uniform distribution on a finite set](uniform.md)
-- [Bayer–Diaconis formula for `a`-shuffles](bayer-diaconis-rising-sequences.md)
 - [Random transpositions: fewer than `(1/2) n log n` steps do not suffice (Diaconis–Shahshahani)](diaconis-shahshahani-lower.md)
 - [Random transpositions: `(1/2) n log n + c n` steps suffice (Diaconis–Shahshahani)](diaconis-shahshahani-upper.md)
 - [Upper bound lemma (Diaconis–Shahshahani)](upper-bound-lemma.md)
+- [Bayer–Diaconis formula for `a`-shuffles](card-sort-eq.md)
 
 ## Related topics
 

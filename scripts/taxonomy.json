@@ -4011,6 +4011,7 @@
   "MathlibExt/Probability/Quantile": {"to": "Probability/distributions", "title": "Quantile function and inverse transform sampling"},
   "MathlibExt/Probability/RandomWalkDichotomy": {"to": "Probability/random-walks", "title": "Drift and oscillation of random walks"},
   "MathlibExt/Probability/RandomWalkFiniteGroup": {"to": "Probability/random-walks", "title": "Random walks on finite groups"},
+  "MathlibExt/Probability/RiffleShuffle": {"to": "Probability/random-walks", "title": "Random walks on finite groups"},
   "MathlibExt/Probability/RandomWalkLimsup": {"to": "Probability/random-walks", "title": "Drift and oscillation of random walks"},
   "MathlibExt/Probability/RandomWalkTailMeasurability": {"to": "Probability/random-walks", "title": "Drift and oscillation of random walks"},
   "MathlibExt/Probability/RegularConditionalDistribution": {"to": "Probability/foundations", "title": "Regular conditional distributions"},

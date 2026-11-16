@@ -10,9 +10,16 @@ The Lean statement uses the inverse description of an $a$-shuffle (Section 3 of 
 position receives a pile label $f(i) \in \{0, \dots, a - 1\}$ uniformly and independently, and the
 piles are stacked in label order, each keeping its internal order. The resulting inverse shuffle is
 the stable sorting permutation `Tuple.sort f`, so the $a$-shuffle equals $\pi$ exactly when
-`Tuple.sort f` $= \pi^{-1}$. The statement is that, for $a \ge 1$, exactly $\binom{a + n - r}{n}$ of
-the $a^n$ label maps $f$ give $\pi$; Lemma 1 of the paper shows that this description generates
-the same distribution as the others.
+`Tuple.sort f` $= \pi^{-1}$. The theorem states that, for every $n$ and $a$, exactly
+$\binom{a + n - r}{n}$ of the $a^n$ label maps $f$ give $\pi$; Lemma 1 of the paper shows that this
+description generates the same distribution as the others.
+
+The proof is the paper's stars-and-bars count, made bijective. With $\sigma = \pi^{-1}$, the maps
+$f$ with `Tuple.sort f` $= \sigma$ are those for which $g = f \circ \sigma$ is monotone and strictly
+increases at each descent of $\sigma$ ($\sigma(i+1) < \sigma(i)$); there are $r - 1$ descents.
+Adding to $g(k)$ the number of non-descents before $k$ turns these maps into the strictly
+increasing maps $\{0, \dots, n-1\} \to \{0, \dots, a + n - r - 1\}$, of which there are
+$\binom{a + n - r}{n}$.
 
 The same Lemma 1 says that an $a$-shuffle followed by a $b$-shuffle is an $ab$-shuffle, so $m$
 riffle shuffles form one $2^m$-shuffle (Theorem 1). From this formula the paper derives that
@@ -22,8 +29,6 @@ $n = 52$ the total variation distance after $m = 5, 6, 7, 8$ shuffles is $0.924,
 
 ## Background
 
-- [Number of rising sequences of an arrangement](rising-sequences.md): the statistic in the
-  formula.
 - [Cutoff for a family of distance profiles](../../markov-chains/mixing-times-of-markov-chains/has-cutoff.md): the phenomenon that
   Theorem 2 of the paper quantifies for riffle shuffles.
 - [Fisher–Yates shuffle](../../../ComputerScience/randomized-algorithms/fisher-yates-shuffle/README.md):
@@ -32,4 +37,4 @@ $n = 52$ the total variation distance after $m = 5, 6, 7, 8$ shuffles is $0.924,
 ## Sources
 
 - D. Bayer and P. Diaconis, *Trailing the dovetail shuffle to its lair*, Ann. Appl. Probab. 2
-  (1992) 294–313, Theorem 3, Lemma 1 and Section 3.
+  (1992) 294–313, Theorem 3 (with its proof), Lemma 1 and Section 3.
