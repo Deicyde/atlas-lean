@@ -5394,6 +5394,7 @@
   "WantedExt/ComputerScience/GraphIsomorphismQuasipolynomialWanted": {"to": "TheoryOfComputation/fine-grained-complexity", "title": "Graph isomorphism in quasipolynomial time"},
   "WantedExt/ComputerScience/UnrelatedMachinesRoundingWanted": {"to": "ComputerScience/approximation-algorithms", "title": "Scheduling unrelated parallel machines"},
   "WantedExt/ComputerScience/MachineLearning/RademacherRiskBoundWanted": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
+  "WantedExt/ComputerScience/SoftmaxPolicyGradientWanted": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Policy gradients for softmax policies"},
   "WantedExt/Dynamics/AMR43Problem1Wanted": {"to": "Dynamics/topological-symbolic-dynamics", "title": "Conjugacy of aperiodic parts of shifts"},
   "WantedExt/Dynamics/BourgainErgodicWanted": {"to": "Dynamics/ergodic-theory", "title": "Bourgain's polynomial ergodic theorem"},
   "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted": {"to": "Dynamics/complex-dynamics", "title": "Parameter space of cubic polynomials"},

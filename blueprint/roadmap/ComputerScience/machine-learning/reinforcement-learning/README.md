@@ -6,6 +6,7 @@ Theory of reinforcement learning in finite discounted Markov decision processes:
 - [Performance difference lemma](performance-difference-lemma/README.md)
 - [Simulation lemma](simulation-lemma/README.md)
 - [Natural policy gradient](natural-policy-gradient/README.md)
+- [Policy gradients for softmax policies](policy-gradients-for-softmax-policies/README.md)
 
 ## Related topics
 
