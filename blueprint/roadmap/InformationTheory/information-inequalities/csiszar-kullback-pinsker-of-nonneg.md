@@ -8,6 +8,12 @@ $$
 
 This extends the [strictly positive case](csiszar-kullback-pinsker.md) to $p$ with zero entries, for instance a vertex of the simplex, by the same proof: split the coordinates by the sign of $p(a) - q(a)$, apply the [log-sum inequality](sum-mul-log-sum-div-sum-le-sum-mul-log-d.md) on each part, and conclude with the [binary Pinsker inequality on the closed interval](binary-pinsker-of-mem-icc.md). It is also a special case of [Pinsker's inequality for probability measures](total-variation-and-pinsker-s-inequality/of-real-two-mul-total-variation-dist-sq.md), stated here for finite vectors as used by the entropy setup of mirror descent.
 
+## Background
+
+- [Pinsker's inequality for probability measures](total-variation-and-pinsker-s-inequality/of-real-two-mul-total-variation-dist-sq.md):
+  background, the general inequality for probability measures, of which this finite-vector
+  statement is a special case.
+
 ## Sources
 
 - M. S. Pinsker, Information and Information Stability of Random Variables and Processes (1960; English translation 1964), with I. Csiszar, Information-type measures of difference of probability distributions and indirect observations, Studia Sci. Math. Hungar. 2 (1967), 299-318.
