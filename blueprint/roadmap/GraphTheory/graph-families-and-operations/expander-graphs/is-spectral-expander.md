@@ -19,4 +19,5 @@ formalized here.
 
 - [Graph Laplacians and Cheeger's inequality](../../algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md):
   for a `d`-regular graph the Laplacian is `d I - A`, so a bound on `λ` bounds the second-smallest
-  Laplacian eigenvalue `λ₂(L) ≥ d (1 - λ)`, the quantity in Cheeger's inequality.
+  Laplacian eigenvalue `λ₂(L) ≥ d (1 - λ)`, the quantity in Cheeger's inequality; the Rayleigh-quotient
+  form is proved in [Laplacian Rayleigh quotient of a spectral expander](laplacian-rayleigh-quotient.md).

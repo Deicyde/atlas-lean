@@ -2849,6 +2849,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/Saturation": {"to": "GraphTheory/extremal-graph-theory", "title": "Graph saturation"},
   "MathlibExt/Combinatorics/SimpleGraph/SimplexGraph": {"to": "GraphTheory/graph-families-and-operations", "title": "Simplex graphs"},
   "MathlibExt/Combinatorics/SimpleGraph/SpectralExpander": {"to": "GraphTheory/graph-families-and-operations", "title": "Expander graphs"},
+  "MathlibExt/Combinatorics/SimpleGraph/SpectralExpanderLaplacian": {"to": "GraphTheory/graph-families-and-operations", "title": "Expander graphs"},
   "MathlibExt/Combinatorics/SimpleGraph/Square": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Square of a graph"},
   "MathlibExt/Combinatorics/SimpleGraph/StrongSquareCycle": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Fleischner's theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/StronglyRegular": {"to": "GraphTheory/algebraic-graph-theory", "title": "Strongly regular graphs"},
