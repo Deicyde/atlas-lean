@@ -29,3 +29,10 @@ controls the integrals of Lipschitz functions.
 - [Convergence in Wasserstein distance implies weak convergence](tendsto-of-tendsto-wasserstein.md)
 - [The Wasserstein distance metrizes weak convergence in $P_p$](tendsto-wasserstein-iff.md)
 - [Wasserstein distance controlled by total variation](wasserstein-one-le-mul-total-variation-d.md)
+
+## Related topics
+
+- [Wasserstein gradient flows and the JKO scheme](../wasserstein-gradient-flows-and-the-jko-scheme/README.md):
+  gradient flows of energies for $W_2$, discretized by minimizing movements.
+- [Displacement convexity](../displacement-convexity/README.md): convexity of energies along the
+  geodesics of $W_2$.

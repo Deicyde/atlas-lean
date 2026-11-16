@@ -26,3 +26,6 @@ contraction of the porous medium semigroup in the Wasserstein distance from this
   are the heat and porous medium equations.
 - [Brenier's theorem](../brenier.md): the optimal map $\nabla \psi$ along which McCann
   interpolates.
+- [Transport-cost inequalities](../../../Probability/concentration-inequalities/transport-cost-inequalities/README.md):
+  convexity of the relative entropy along displacement interpolation underlies the HWI and
+  Talagrand inequalities.

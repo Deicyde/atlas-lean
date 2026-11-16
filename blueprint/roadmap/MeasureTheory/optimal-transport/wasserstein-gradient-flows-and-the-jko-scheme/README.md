@@ -42,6 +42,8 @@ wanted results.
 - [Fokker–Planck equation](../../../Probability/stochastic-calculus/fokker-planck-equation/README.md):
   the equation whose gradient-flow structure the JKO scheme expresses; that topic proves the
   free-energy dissipation identity in one dimension.
+- [Displacement convexity](../displacement-convexity/README.md): convexity of the driving
+  functional along Wasserstein geodesics, which makes these gradient flows contractive.
 - [Wasserstein distances](../wasserstein-distances/README.md): the metric of the scheme.
 - [Ekeland variational principle](../../../Analysis/convex-analysis-and-variations/ekeland-variational-principle/README.md):
   another variational principle on complete metric spaces built from a distance penalty.

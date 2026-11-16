@@ -26,3 +26,6 @@
   the Fokker–Planck equation is the gradient flow of the free energy for the Wasserstein distance
   $W_2$ (Jordan, Kinderlehrer and Otto, 1998, as recalled in the free-energy module); only the
   dissipation identity is formalised here.
+- [Wasserstein gradient flows and the JKO scheme](../../../MeasureTheory/optimal-transport/wasserstein-gradient-flows-and-the-jko-scheme/README.md):
+  the Jordan–Kinderlehrer–Otto scheme that makes the gradient-flow statement precise: its metric
+  a priori estimates are proved there, and its convergence to this equation is stated as wanted.

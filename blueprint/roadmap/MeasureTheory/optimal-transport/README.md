@@ -1,6 +1,6 @@
 # Optimal transport
 
-Couplings of probability measures, transport costs, existence of optimal couplings, Kantorovich duality, Wasserstein distances and Brenier's theorem.
+Couplings of probability measures, transport costs, existence of optimal couplings, Kantorovich duality, Wasserstein distances and Brenier's theorem, displacement convexity and Wasserstein gradient flows (the JKO scheme).
 
 - [Kantorovich duality](kantorovich-duality/README.md)
 - [Monge–Kantorovich existence theorem](monge-kantorovich-existence-theorem/README.md)
@@ -25,3 +25,8 @@ Couplings of probability measures, transport costs, existence of optimal couplin
 - [Concentration inequalities](../../Probability/concentration-inequalities/README.md): Talagrand's
   transport inequality bounds $W_2$ to the Gaussian measure by the relative entropy (Villani,
   Chapter 22).
+- [Transport-cost inequalities](../../Probability/concentration-inequalities/transport-cost-inequalities/README.md):
+  the logarithmic Sobolev inequality implies the transport inequality (Otto–Villani), and the HWI
+  inequality links entropy, $W_2$ and Fisher information.
+- [Fokker–Planck equation](../../Probability/stochastic-calculus/fokker-planck-equation/README.md):
+  the gradient flow of the free energy for $W_2$, through the JKO scheme.
