@@ -32,6 +32,7 @@ A randomized algorithm (a *mechanism*) is differentially private when changing o
 
 ## Related topics
 
+- [Laplace and exponential mechanisms](../laplace-and-exponential-mechanisms/README.md): the basic mechanisms that achieve pure differential privacy, built on this definition.
 - [Total variation distance](../../../Probability/convergence-of-measures/total-variation-distance/README.md): $(0, \delta)$-differential privacy says exactly that the output laws on neighbouring databases are at total variation distance at most $\delta$ (Dwork and Roth 2014, Section 3.5.1, statistical distance).
 - [Data-processing inequality](../../../InformationTheory/information-inequalities/data-processing-inequality/README.md): the information-theoretic counterpart of post-processing; processing an output cannot make two inputs easier to distinguish.
 - [Generalization bounds and concentration](../../machine-learning/generalization-bounds-and-concentration/README.md): differential privacy of an adaptive analyst gives generalization for adaptively chosen queries (Dwork, Feldman, Hardt, Pitassi, Reingold and Roth 2015), where union bounds over a fixed class do not apply.

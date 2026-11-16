@@ -7,6 +7,7 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [Differential privacy](differential-privacy/README.md)
 - [ElGamal encryption](elgamal-encryption/README.md)
 - [Lamport signature](lamport-signature/README.md)
+- [Laplace and exponential mechanisms](laplace-and-exponential-mechanisms/README.md)
 - [Merkle–Damgård construction](merkle-damg-rd-construction/README.md)
 - [One-time pad over a finite group](one-time-pad-over-a-finite-group/README.md)
 - [Pseudorandom functions](pseudorandom-functions/README.md)
