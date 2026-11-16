@@ -16,3 +16,4 @@
 - [Weighted vertex cover by the pricing method](../../../ComputerScience/approximation-algorithms/weighted-vertex-cover-by-the-pricing-method/README.md): a primal–dual approximation algorithm.
 - [Lagrange duality](../../../Analysis/convex-analysis-and-variations/lagrange-duality/README.md)
 - [Robust linear programming](../robust-linear-programming/README.md): linear programs whose data lie in uncertainty sets; under ellipsoidal uncertainty the robust counterpart is a conic quadratic program.
+- [Ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/README.md): the first polynomial-time algorithm for linear programming (Khachiyan, 1979).

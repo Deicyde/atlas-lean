@@ -21,3 +21,4 @@ The Lovász theta function $\vartheta(G)$ is defined by orthogonal labelings (or
 - [Shannon capacity of a graph](../shannon-capacity-of-a-graph/README.md): Lovász introduced $\vartheta$ to bound the Shannon capacity; his bound gives the capacity $\sqrt 5$ of the pentagon.
 - [Perfect graphs](../../graph-coloring/part-01/perfect-graphs/README.md): the graphs on which $\alpha(G) = \vartheta(G) = \chi(\bar G)$.
 - [Fractional colouring](../../graph-coloring/part-01/fractional-coloring/README.md): Knuth's $\kappa(G) = \max\{\mathbf 1 \cdot x : x \in \mathrm{QSTAB}(G)\}$, by LP duality the fractional chromatic number of $\bar G$, also lies between $\vartheta(G)$ and $\chi(\bar G)$ (Knuth, eq. (4.9)).
+- [Ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/README.md): the algorithm through which $\vartheta$, and hence $\alpha$ and $\chi$ of perfect graphs, are computed in polynomial time.

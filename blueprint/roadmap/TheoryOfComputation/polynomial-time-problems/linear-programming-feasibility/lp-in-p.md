@@ -9,6 +9,10 @@ $r$-th row of $A$ and $b_r$ is the $r$-th entry of $b$. Each integer is given as
 pair $(k, s)$ of a natural number $k$ and a boolean $s$, standing for $k$ if $s$ is true and $-k$
 if $s$ is false.
 
+## Background
+
+- [Volume reduction of the ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/volume-ratio-lt-exp.md): each central-cut step shrinks the volume by at least $e^{-1/(2(n+1))}$, which bounds the number of steps of the ellipsoid method.
+
 ## Sources
 
 - L. G. Khachiyan, "A polynomial algorithm in linear programming", Soviet Mathematics Doklady 20 (1979), 191-194.

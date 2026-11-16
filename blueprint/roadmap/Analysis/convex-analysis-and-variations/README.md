@@ -1,9 +1,10 @@
 # Convex analysis and calculus of variations
 
-Convex functions and sets in analysis and optimization: first-order and second-order conditions for convexity and optimality, Lagrange duality (weak duality, Slater's condition and strong duality, sufficiency of the KKT conditions, the duality gap of the barrier method), Newton's method for minimization, ADMM, Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent and mirror descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
+Convex functions and sets in analysis and optimization: first-order and second-order conditions for convexity and optimality, Lagrange duality (weak duality, Slater's condition and strong duality, sufficiency of the KKT conditions, the duality gap of the barrier method), Newton's method for minimization, ADMM, Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent and mirror descent rates, the ellipsoid method, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry. Ridge regression, Tikhonov regularization of a finite-dimensional least-squares problem, is under [least squares, ridge and lasso regression](../../ComputerScience/machine-learning/supervised-learning/least-squares-ridge-and-lasso-regression/README.md) in Machine learning.
 
 - [Alternating direction method of multipliers](alternating-direction-method-of-multipliers/README.md)
 - [Ekeland variational principle](ekeland-variational-principle/README.md)
+- [Ellipsoid method](ellipsoid-method/README.md)
 - [Euler–Lagrange equation](euler-lagrange-equation/README.md)
 - [Fenchel–Moreau theorem](fenchel-moreau-theorem/README.md)
 - [First-order conditions for convexity and optimality](first-order-conditions-for-convexity/README.md)
