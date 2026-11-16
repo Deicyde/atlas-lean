@@ -15,3 +15,8 @@
 - [Asymptotic normality of consistent roots of the likelihood equation](tendsto-in-distribution-sqrt-mul-sub-of-2.md)
 - [Fisher information of the affine Gaussian location family](fisher-information-gaussian-pdfreal-affi.md)
 - [Score of the affine Gaussian location family](score-gaussian-pdfreal-affine.md)
+- [Slutsky's theorem (ratio form)](div-of-tendsto-in-measure-const.md)
+- [Slutsky's theorem (product form)](mul-of-tendsto-in-measure-const.md)
+- [Slutsky's theorem (scalar-multiple form)](smul-of-tendsto-in-measure-const.md)
+- [Continuous mapping for convergence in probability to a constant](comp-const-of-continuous-at.md)
+- [Convergence in probability of reciprocals](inv-const.md)
