@@ -21,6 +21,8 @@ theorem, the Hodge–Riemann relations and the mixed-degree formula are wanted s
 - [The class $\alpha_M$](alpha-class.md)
 - [The class $\alpha_M$ does not depend on the element](alpha-class-eq.md)
 - [The class $\beta_M$](beta-class.md)
+- [The classes $\alpha_M$ and $\beta_M$ add up to the sum of all generators](alpha-class-add-beta-class.md)
+- [The class $\beta_M$ does not depend on the element](beta-class-eq.md)
 - [Strictly submodular function](is-strictly-submodular.md)
 - [A strictly submodular function](is-strictly-submodular-ncard-mul-ncard-d.md)
 - [The class $\ell(c)$](ell-class.md)

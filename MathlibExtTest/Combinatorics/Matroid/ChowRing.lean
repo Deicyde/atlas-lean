@@ -33,6 +33,11 @@ example (F G : ProperFlat M) (h₁ : ¬ F.1 ⊆ G.1) (h₂ : ¬ G.1 ⊆ F.1) :
 example {i j : α} (hi : i ∈ M.E) (hj : j ∈ M.E) : alphaClass M i = alphaClass M j :=
   alphaClass_eq M hi hj
 
+/-! For a finite matroid, `β_M` does not depend on the chosen element either. -/
+
+example [M.Finite] {i j : α} (hi : i ∈ M.E) (hj : j ∈ M.E) : betaClass M i = betaClass M j :=
+  betaClass_eq M hi hj
+
 /-! Generators have degree one, and so do their sums. -/
 
 example (F G : ProperFlat M) : x M F + x M G ∈ gradedPiece M 1 :=
