@@ -8,10 +8,6 @@ graphs on $n$ vertices without $K_{r+1}$ have at most $(1 - 1/r + o(1))\binom{n}
 
 The proof squeezes $t(n, r)/\binom{n}{2}$ between Mathlib's upper bound $2r\,t(n, r) \le (r-1)n^2$ (`SimpleGraph.mul_turanNumber_le`) and the [lower bound](turan-number-lower-bound.md) $2r\,t(n, r) \ge (r-1)(n^2 - r^2)$, after identifying the extremal number of $K_{r+1}$ with $t(n, r)$ (`SimpleGraph.extremalNumber_top`).
 
-## Informally uses
-
-- [Lower bound on the Turán number](turan-number-lower-bound.md): the lower half of the squeeze.
-
 ## Sources
 
 - P. Turán, On an extremal problem in graph theory (in Hungarian), Mat. Fiz. Lapok 48 (1941), 436-452.
