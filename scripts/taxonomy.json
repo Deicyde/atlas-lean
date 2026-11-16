@@ -1550,6 +1550,7 @@
   "CSLibExt/MachineLearning/PACLearning/RiskBridge": {"to": "ComputerScience/machine-learning/pac-learning", "title": "Risk of the 0-1 loss"},
   "CSLibExt/MachineLearning/Perceptron": {"to": "ComputerScience/machine-learning/online-learning-and-boosting", "title": "Perceptron"},
   "CSLibExt/MachineLearning/RademacherComplexity": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
+  "CSLibExt/MachineLearning/RandomFeatures": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Random Fourier features"},
   "CSLibExt/MachineLearning/Regression/BiasVariance": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Bias–variance decomposition"},
   "CSLibExt/MachineLearning/Regression/EffectiveRank": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Effective ranks and benign overfitting"},
   "CSLibExt/MachineLearning/Regression/GBLUP": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Kernel ridge regression and GBLUP"},

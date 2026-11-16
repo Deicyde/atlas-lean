@@ -14,6 +14,7 @@ Prediction from labelled data: least squares, ridge, lasso, logistic regression,
 - [Least squares, ridge and lasso regression](least-squares-ridge-and-lasso-regression/README.md)
 - [Logistic regression and support vector machines](logistic-regression-and-support-vector-machines/README.md)
 - [Kernel ridge regression and GBLUP](kernel-ridge-regression-and-gblup/README.md)
+- [Random Fourier features](random-fourier-features/README.md)
 - [Sufficient input subsets](sufficient-input-subsets/README.md)
 - [Matrix-aware optimizers](matrix-aware-optimizers/README.md)
 - [Effective ranks and benign overfitting](effective-ranks-and-benign-overfitting/README.md)
