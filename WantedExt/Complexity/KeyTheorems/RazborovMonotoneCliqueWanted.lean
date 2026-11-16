@@ -20,6 +20,8 @@ public import MathlibExt.Computability.Complexity
 public import MathlibExt.Computability.BinaryNatEncoding
 public import CSLibExt.Computability.CookLevin
 public import CSLibExt.Computability.Complexity.Classes
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Log.Base
 
 
 @[expose] public section
@@ -73,5 +75,29 @@ public theorem_wanted razborov_monotone_clique :
           ((circuitEval C (fun i => x.getD (i : ℕ) false)).getLast? = some true ↔
             cliqueHolds n x)) →
           C.length > p.eval (n * n)
+
+/-- **The clique function `CLIQUE(n, s)` on adjacency-matrix bits.** For a bitstring `x` read
+as an `n × n` adjacency matrix in row-major order (positions beyond the end read as false),
+the graph has a clique of size `s`: a set of `s` vertices among `0, …, n - 1` whose entries
+`(a, b)` are true for all distinct `a, b` in it. `cliqueHolds n` is `cliqueOfSize n (n / 3)`. -/
+def cliqueOfSize (n s : ℕ) (x : List Bool) : Prop :=
+  ∃ S : Finset ℕ, S.card = s ∧ (∀ v ∈ S, v < n) ∧
+    ∀ a ∈ S, ∀ b ∈ S, a ≠ b → x.getD (a * n + b) false = true
+
+/-- **Alon–Boppana: monotone circuits for clique need exponential size.** There are `c > 0` and
+`n₀` such that for every `n ≥ n₀`, with `s = ⌊(n / (8 log₂ n)) ^ (2/3)⌋`, every well-formed
+monotone circuit (input, and, or gates) on `n ^ 2` adjacency bits that computes `CLIQUE(n, s)`
+has at least `exp (c (n / log₂ n) ^ (1/3))` gates (N. Alon and R. B. Boppana, *The monotone
+circuit complexity of Boolean functions*, Combinatorica 7 (1987), 1-22, Section 1, refining
+Razborov's approximation method; logarithms base `2`). Their bound counts gates of fan-in two;
+a circuit here with `g` gates of any fan-in has a fan-in-two equivalent with at most `g ^ 2`
+gates, which only changes `c`. -/
+public theorem_wanted alon_boppana_monotone_clique :
+    ∃ c : ℝ, 0 < c ∧ ∃ n₀ : ℕ, ∀ n : ℕ, n₀ ≤ n →
+      ∀ C : List (ACGate (n * n)), WellFormedCircuit C → IsMonotoneCircuit C →
+        (∀ x : List Bool, x.length = n * n →
+          ((circuitEval C (fun i => x.getD (i : ℕ) false)).getLast? = some true ↔
+            cliqueOfSize n ⌊((n : ℝ) / (8 * Real.logb 2 n)) ^ ((2 : ℝ) / 3)⌋₊ x)) →
+          Real.exp (c * ((n : ℝ) / Real.logb 2 n) ^ ((1 : ℝ) / 3)) ≤ C.length
 
 end MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique

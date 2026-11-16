@@ -1,0 +1,3 @@
+# The clique function CLIQUE(n, s) on adjacency-matrix bits
+
+For a bitstring $x$ read as an $n \times n$ adjacency matrix in row-major order (positions beyond the end read as false), $\mathrm{CLIQUE}(n, s)$ holds when there is a set of $s$ vertices among $0, \dots, n-1$ whose entries $(a, b)$ are true for all distinct $a, b$ in it. Both entries $(a, b)$ and $(b, a)$ are read, so the function is a monotone projection of the usual clique function on $\binom{n}{2}$ edge variables (identify $(b, a)$ with $(a, b)$), and lower bounds for the usual function transfer. [The clique function on adjacency-matrix bits](clique-holds.md) is the case $s = \lfloor n/3 \rfloor$.
