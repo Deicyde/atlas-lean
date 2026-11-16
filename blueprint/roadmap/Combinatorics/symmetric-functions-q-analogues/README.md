@@ -8,6 +8,7 @@ Algebraic combinatorics of symmetric functions and Young tableaux, Gaussian bino
 - [Monotone column permanent conjecture](monotone-column-permanent-conjecture/README.md)
 - [Near-hook tableaux and first-quadrant lattice paths](near-hook-tableaux-and-first-quadrant-lattice-pa/README.md)
 - [q-Fuss–Catalan numbers of Coxeter groups](q-fuss-catalan-numbers-of-coxeter-groups/README.md)
+- [Standard Young tableaux and the hook length formula](standard-young-tableaux-and-the-hook-length-form/README.md)
 - [Stanley–Stembridge conjecture](stanley-stembridge-conjecture/README.md)
 - [Symmetric functions and skew Young tableaux](symmetric-functions-and-skew-young-tableaux/README.md)
 - [Unimodal and log-concave sequences](unimodal-and-log-concave-sequences/README.md)
