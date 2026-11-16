@@ -6,3 +6,11 @@
 - [Objective function of a linear program](objective.md)
 - [Maximum principle for linear programming](lp-maximum-principle.md)
 - [Optimal vertices of linear programs](simplex-algorithm.md)
+
+## Related topics
+
+- [Von Neumann's minimax theorem](../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): equivalent to LP duality.
+- [Max-flow min-cut theorem](../../../GraphTheory/matchings-and-flows/max-flow-min-cut-theorem/README.md): a combinatorial instance of LP duality.
+- [Bondareva–Shapley theorem](../../../GameTheory/cooperative-games/bondareva-shapley-theorem/README.md): nonemptiness of the core by LP duality.
+- [Scheduling unrelated parallel machines](../../../ComputerScience/approximation-algorithms/scheduling-unrelated-parallel-machines/README.md): an approximation algorithm by rounding an LP relaxation.
+- [Weighted vertex cover by the pricing method](../../../ComputerScience/approximation-algorithms/weighted-vertex-cover-by-the-pricing-method/README.md): a primal–dual approximation algorithm.

@@ -42,3 +42,6 @@ Nonatomic routing games: infinitely many users each control a negligible amount 
 ## Related topics
 
 - [Max-flow min-cut theorem](../../../GraphTheory/matchings-and-flows/max-flow-min-cut-theorem/README.md): network flows, of which routing flows are the congestion-dependent version; a feasible path flow decomposes an $s$–$t$ flow into paths.
+- [Potential games](../potential-games/README.md): the atomic counterpart, where Rosenthal's potential plays the role of Beckmann's.
+- [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): with atomic players the affine bound becomes $5/2$.
+- [No-regret dynamics](../no-regret-dynamics/README.md): price-of-anarchy bounds proved by smoothness extend to learning outcomes.

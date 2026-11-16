@@ -50,3 +50,7 @@
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
 - [No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut](cut-capacity-residual-cut-le.md)
 - [Integral flow theorem](exists-nat-max-flow.md)
+
+## Related topics
+
+- [Max-flow min-cut theorem](../../../../GraphTheory/matchings-and-flows/max-flow-min-cut-theorem/README.md): the theorem for real capacities, whose definitions the correctness statement uses.

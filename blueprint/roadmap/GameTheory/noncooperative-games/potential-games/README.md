@@ -30,3 +30,5 @@ A game has an exact potential when one function on strategy profiles tracks ever
 ## Related topics
 
 - [Selfish routing and the price of anarchy](../selfish-routing-and-the-price-of-anarchy/README.md): the nonatomic version of congestion games, where Beckmann's potential plays the role of Rosenthal's.
+- [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): price of anarchy $5/2$ of the equilibria given by Rosenthal's theorem.
+- [Nash's theorem](../nash-s-theorem/README.md): existence of mixed equilibria in every finite game.

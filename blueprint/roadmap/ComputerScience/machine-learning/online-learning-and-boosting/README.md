@@ -6,3 +6,7 @@ Mistake and regret bounds for sequential prediction: perceptron, weighted majori
 - [Perceptron](perceptron/README.md)
 - [AdaBoost](adaboost/README.md)
 - [Weighted majority algorithm](weighted-majority-algorithm/README.md)
+
+## Related topics
+
+- [No-regret dynamics](../../../GameTheory/noncooperative-games/no-regret-dynamics/README.md): regret bounds applied to repeated games.

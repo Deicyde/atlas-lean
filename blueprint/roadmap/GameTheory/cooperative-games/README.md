@@ -4,3 +4,8 @@ Cooperative game theory studies games in which coalitions of players can make bi
 
 - [Shapley value](shapley-value/README.md)
 - [Bondareva–Shapley theorem](bondareva-shapley-theorem/README.md)
+
+## Related topics
+
+- [Noncooperative games](../noncooperative-games/README.md): strategic games without binding agreements.
+- [Linear programming](../../Geometry/convex-geometry/linear-programming/README.md): LP duality, the tool behind the Bondareva–Shapley theorem.

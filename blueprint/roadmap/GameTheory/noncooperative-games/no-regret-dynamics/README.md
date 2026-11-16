@@ -19,3 +19,4 @@ When a game is played repeatedly and every player uses a no-regret learning algo
 - [Hedge algorithm](../../../ComputerScience/machine-learning/online-learning-and-boosting/hedge-algorithm/README.md): a no-regret algorithm with its loss bounds.
 - [Potential games](../potential-games/README.md): pure Nash equilibria and best-response dynamics, the equilibria that no-regret outcomes generalise.
 - [Von Neumann's minimax theorem](../von-neumann-s-minimax-theorem/README.md): in two-player zero-sum games, no-regret play approaches the value of the game.
+- [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): a smooth class of games, with robust price of anarchy $5/2$.
