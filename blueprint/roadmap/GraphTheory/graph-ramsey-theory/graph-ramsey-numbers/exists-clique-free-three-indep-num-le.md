@@ -6,7 +6,7 @@ $$\alpha(G) \le 9 \sqrt{n \log n}$$
 
 ## Background
 
-- [McDiarmid's inequality](../../../Probability/concentration-inequalities/mcdiarmid-s-inequality/README.md): the bounded-differences inequality; Kim's analysis uses Azuma–Hoeffding-type martingale inequalities adapted to parameters that occasionally change a lot (Section 4 of the paper).
+- [Azuma's inequality](../../../Probability/concentration-inequalities/azuma-inequality.md): the bounded-increment martingale inequality; Kim's analysis uses Azuma–Hoeffding-type martingale inequalities adapted to parameters that occasionally change a lot (Section 4 of the paper).
 - [Kim–Vu polynomial concentration](../../../Probability/concentration-inequalities/kim-vu-polynomial-concentration/README.md): a later, general concentration inequality for exactly this situation, by Kim and Vu.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Concentration inequalities
 
-Non-asymptotic tail and moment bounds: Hoeffding, McDiarmid, Talagrand, Efron–Stein, Khintchine and Paley–Zygmund inequalities, sampling without replacement, sub-exponential variables and Bernstein's inequality, chi-square and Gaussian Lipschitz concentration, sub-Gaussian convex comparison, hypercontractivity (Bonami–Beckner, p-biased two-point inequalities) on the discrete cube, and matrix concentration (the matrix Laplace transform method, matrix Chernoff and Bernstein inequalities).
+Non-asymptotic tail and moment bounds: Hoeffding, Azuma, McDiarmid, Kim–Vu, Talagrand, Efron–Stein, Khintchine and Paley–Zygmund inequalities, sampling without replacement, sub-exponential variables and Bernstein's inequality, chi-square and Gaussian Lipschitz concentration, sub-Gaussian convex comparison, hypercontractivity (Bonami–Beckner, p-biased two-point inequalities) on the discrete cube, and matrix concentration (the matrix Laplace transform method, matrix Chernoff and Bernstein inequalities).
 
 - [Bonami–Beckner hypercontractivity](bonami-beckner-hypercontractivity/README.md)
 - [Convex comparison under sub-Gaussian tails](convex-comparison-under-sub-gaussian-tails/README.md)
@@ -14,3 +14,4 @@ Non-asymptotic tail and moment bounds: Hoeffding, McDiarmid, Talagrand, Efron–
 - [Khintchine inequality](khintchine-inequality.md)
 - [The Paley–Zygmund inequality](paley-zygmund.md)
 - [Talagrand's transport inequality for the Gaussian measure](talagrand-std-gaussian.md)
+- [Azuma's inequality](azuma-inequality.md)
