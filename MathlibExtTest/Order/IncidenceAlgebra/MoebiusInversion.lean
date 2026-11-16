@@ -21,7 +21,7 @@ example (t : ℕ) : (1 : ℤ) = ∑ s ∈ Iic t, ((s : ℤ) + 1) * mu ℤ s t :=
   (moebius_inversion_iff (fun _ : ℕ => (1 : ℤ)) (fun t => (t : ℤ) + 1)).1
     (fun t => by simp [Nat.card_Iic]) t
 
-/-- The converse direction on `ℕ`, here in the dual form on the finite chain `Fin 4`. -/
+/-- The converse direction of the dual form, on the finite chain `Fin 4`. -/
 example (f g : Fin 4 → ℚ) (h : ∀ s, f s = ∑ t ∈ Ici s, mu ℚ s t * g t) (s : Fin 4) :
     g s = ∑ t ∈ Ici s, f t :=
   (moebius_inversion_dual_iff f g).2 h s

@@ -13,4 +13,4 @@ counts walks in Young's lattice instead.
 
 ## Sources
 
-- R. P. Stanley, *Algebraic Combinatorics: Walks, Trees, Tableaux, and More*, author's draft of 1 February 2013, https://math.mit.edu/~rstan/algcomb/algcomb.pdf, Corollary 8.5 and Theorem 8.13.
+- R. P. Stanley, *Topics in Algebraic Combinatorics*, author's draft of 1 February 2013, https://math.mit.edu/~rstan/algcomb/algcomb.pdf (published as *Algebraic Combinatorics: Walks, Trees, Tableaux, and More*, Springer, 2013), Corollary 8.5 and Theorem 8.13.

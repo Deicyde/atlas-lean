@@ -6,7 +6,7 @@ dimension of the irreducible representation of $\mathfrak S_n$ indexed by $\lamb
 facts about it: the hook length formula $f^\lambda = n! / \prod_{u \in \lambda} h(u)$, and
 $\sum_{\lambda \vdash n} (f^\lambda)^2 = n!$, which the Robinson–Schensted–Knuth (RSK) algorithm
 proves bijectively by sending a permutation of $[n]$ to a pair of standard Young tableaux of the
-same shape. Stanley, *Algebraic Combinatorics*, Chapter 8 and its appendix, and *Enumerative
+same shape. Stanley, *Topics in Algebraic Combinatorics*, Chapter 8 and its appendix, and *Enumerative
 Combinatorics*, vol. 2, Chapter 7, develop both.
 
 - [Straight shape as a skew shape](straight-shape.md)

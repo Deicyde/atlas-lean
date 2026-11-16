@@ -26,8 +26,9 @@ For a Young diagram `λ` (Mathlib's `YoungDiagram`, cells `(i, j)` indexed from 
 
 The hook length formula and `∑_{λ ⊢ n} (f^λ)² = n!` are recorded in
 `WantedExt.Combinatorics.YoungTableaux.HookLengthWanted`.
-Source: Stanley, *Algebraic Combinatorics: Walks, Trees, Tableaux, and More*, author's draft of
-1 February 2013 (https://math.mit.edu/~rstan/algcomb/algcomb.pdf), Chapter 8.
+Source: Stanley, *Topics in Algebraic Combinatorics*, author's draft of
+1 February 2013 (https://math.mit.edu/~rstan/algcomb/algcomb.pdf), Chapter 8; published as
+*Algebraic Combinatorics: Walks, Trees, Tableaux, and More* (Springer, 2013).
 -/
 
 @[expose] public section
@@ -44,8 +45,9 @@ def straightShape (μ : YoungDiagram) : SkewShape := ⟨μ, ⊥, bot_le⟩
 indexed from `0`), the hook length `h(u)` is the number of cells directly to the right of `u` in
 its row, directly below `u` in its column, plus `1` for `u` itself:
 `h(i, j) = (λᵢ - j) + (λ'ⱼ - i) - 1`, with `λᵢ` the length of row `i` and `λ'ⱼ` that of column
-`j` (Stanley, *Algebraic Combinatorics*, author's draft of 1 February 2013, Chapter 8, before
-Theorem 8.1). For `λ = (4, 2, 2)` the hook lengths of the first row are `6, 5, 2, 1`. -/
+`j` (Stanley, *Topics in Algebraic Combinatorics*, author's draft of 1 February 2013,
+Chapter 8, before Theorem 8.1). For `λ = (4, 2, 2)` the hook lengths of the first row are
+`6, 5, 2, 1`. -/
 def hookLength (μ : YoungDiagram) (c : ℕ × ℕ) : ℕ :=
   μ.rowLen c.1 - c.2 + (μ.colLen c.2 - c.1) - 1
 
@@ -58,8 +60,8 @@ theorem hookLength_pos {μ : YoungDiagram} {c : ℕ × ℕ} (hc : c ∈ μ) : 0 
 
 /-- **Number of standard Young tableaux.** `f^λ` is the number of standard Young tableaux of
 shape `λ`, that is, of fillings of the cells of `λ` with `1, 2, …, n` (`n = |λ|`), each used once,
-increasing along rows and down columns (Stanley, *Algebraic Combinatorics*, author's draft of
-1 February 2013, Chapter 8). -/
+increasing along rows and down columns (Stanley, *Topics in Algebraic Combinatorics*, author's
+draft of 1 February 2013, Chapter 8). -/
 noncomputable def sytCount (μ : YoungDiagram) : ℕ :=
   Nat.card (SkewStandardYoungTableau (straightShape μ))
 

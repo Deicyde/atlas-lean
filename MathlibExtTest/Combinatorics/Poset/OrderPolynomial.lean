@@ -50,4 +50,17 @@ example : ∃ Q : Polynomial ℚ, Q.natDegree = 4 ∧
   obtain ⟨Q, hdeg, -, heval⟩ := exists_orderPolynomial (Fin 2 × Fin 2)
   exact ⟨Q, by simpa using hdeg, heval⟩
 
+/-- A concrete value: `Ω_{2-chain}(3) = C(4, 2) = 6` order-preserving maps `Fin 2 → Fin 3`. -/
+example : orderPolynomialValue (Fin 2) 3 = 6 := by
+  classical
+  rw [orderPolynomialValue, Nat.card_eq_fintype_card]
+  rfl
+
+/-- `Fin 2 × Fin 2` has `e_P(4) = e(P) = 2` linear extensions, so the leading coefficient of its
+order polynomial is `2/4!`. -/
+example : surjMonotoneCount (Fin 2 × Fin 2) 4 = 2 := by
+  classical
+  rw [surjMonotoneCount, Nat.card_eq_fintype_card]
+  rfl
+
 end MathlibExtTest.Combinatorics.Poset.OrderPolynomial

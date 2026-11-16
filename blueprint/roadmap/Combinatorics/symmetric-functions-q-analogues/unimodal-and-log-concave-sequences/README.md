@@ -29,7 +29,7 @@ facts; his survey "Log-concave and unimodal sequences in algebra, combinatorics,
   real-rootedness of the generating polynomial is the strongest of the three properties and the
   usual way to prove log-concavity.
 - [Gaussian binomial coefficients](../gaussian-binomial-coefficients/README.md): the coefficients of
-  $\binom{m+n}{m}_q$ are symmetric and unimodal (Stanley, *Algebraic Combinatorics*, Corollary 6.10)
+  $\binom{m+n}{m}_q$ are symmetric and unimodal (Stanley, *Topics in Algebraic Combinatorics*, Corollary 6.10)
   but not log-concave in general: $\binom{4}{2}_q = 1 + q + 2q^2 + q^3 + q^4$.
 - [Neggers–Stanley conjecture](../../partially-ordered-sets/neggers-stanley-conjecture/README.md):
   a real-rootedness conjecture for $W$-polynomials of posets, now refuted; real-rootedness would

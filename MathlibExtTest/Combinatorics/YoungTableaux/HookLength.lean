@@ -34,4 +34,16 @@ example (μ : YoungDiagram) : Finite (SkewStandardYoungTableau (straightShape μ
 /-- The corner cell `(0, 0)` of a nonempty diagram has positive hook length. -/
 example (μ : YoungDiagram) (h : (0, 0) ∈ μ) : 0 < hookLength μ (0, 0) := hookLength_pos h
 
+/-- The partition `λ = (4, 2, 2)`, the example of the `hookLength` docstring. -/
+def lam422 : YoungDiagram := YoungDiagram.ofRowLens [4, 2, 2] (by decide)
+
+/-- The hook lengths of `λ = (4, 2, 2)` are `6 5 2 1 / 3 2 / 2 1` (Stanley, *Topics in Algebraic
+Combinatorics*, author's draft of 1 February 2013, Chapter 8, figure before Theorem 8.1). -/
+example : [hookLength lam422 (0, 0), hookLength lam422 (0, 1), hookLength lam422 (0, 2),
+      hookLength lam422 (0, 3)] = [6, 5, 2, 1] ∧
+    [hookLength lam422 (1, 0), hookLength lam422 (1, 1)] = [3, 2] ∧
+    [hookLength lam422 (2, 0), hookLength lam422 (2, 1)] = [2, 1] := by
+  simp only [hookLength, YoungDiagram.rowLen_eq_card, YoungDiagram.colLen_eq_card]
+  decide
+
 end MathlibExtTest.Combinatorics.YoungTableaux.HookLength

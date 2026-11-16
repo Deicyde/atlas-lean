@@ -33,7 +33,7 @@ Main results:
 * `isUnimodal_of_isLogConcave`: a log-concave sequence of nonnegative reals with no internal zeros
   is unimodal (Exercise 1.50(a)).
 * `choose_isLogConcave`, `choose_isUnimodal`: each row of Pascal's triangle is log-concave, hence
-  unimodal.
+  unimodal (a direct computation with the ratio of consecutive binomial coefficients).
 -/
 
 @[expose] public section
@@ -168,10 +168,12 @@ theorem isUnimodal_of_isLogConcave {a : ℕ → ℝ} {n : ℕ} (hnn : ∀ i ≤ 
     linarith
 
 /-- **Rows of Pascal's triangle are log-concave.** For every `n`, the sequence
-`(C(n, 0), C(n, 1), …, C(n, n))` satisfies `C(n, k) C(n, k + 2) ≤ C(n, k + 1)²`. This follows from
-the ratio `C(n, k + 1) / C(n, k) = (n - k) / (k + 1)` decreasing in `k`; it is the case
-`P(x) = (1 + x)ⁿ` of Newton's theorem in Stanley, *Enumerative Combinatorics*, vol. 1, 2nd ed.,
-author's draft of 15 July 2011, Chapter 1, Exercise 50(b). -/
+`(C(n, 0), C(n, 1), …, C(n, n))` satisfies `C(n, k) C(n, k + 2) ≤ C(n, k + 1)²`. Proof: by
+`C(n, j + 1) (j + 1) = C(n, j) (n - j)`, multiplying `C(n, k) C(n, k + 2)` by `(n - k)(k + 2)`
+gives `C(n, k + 1)² (k + 1)(n - k - 1)`, which is at most `C(n, k + 1)² (n - k)(k + 2)`; that is,
+the ratio `C(n, k + 1) / C(n, k) = (n - k) / (k + 1)` decreases with `k`. Log-concavity is in the
+sense of Stanley, *Enumerative Combinatorics*, vol. 1, 2nd ed., author's draft of 15 July 2011,
+Chapter 1, Exercise 50. -/
 theorem choose_isLogConcave (n : ℕ) : IsLogConcave (fun k => (n.choose k : ℝ)) n := by
   intro k hk
   simp only
