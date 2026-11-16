@@ -10,3 +10,9 @@
 - [The half squared norm is its own Legendre transform](legendre-transform-norm-sq-div-two.md)
 - [Legendre transform of the zero function at the origin](legendre-transform-zero.md)
 - [Legendre transform of the zero function away from the origin](legendre-transform-zero-of-ne.md)
+
+## Related topics
+
+- [Cramér's theorem](../cram-r-s-theorem/README.md)
+- [Varadhan's integral lemma](../varadhan-s-integral-lemma/README.md)
+- [Gärtner–Ellis theorem (differentiable case)](../satisfies-ldp-of-tendsto-scaled-cgf.md)
