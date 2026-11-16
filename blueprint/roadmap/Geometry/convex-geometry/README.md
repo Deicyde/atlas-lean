@@ -12,6 +12,7 @@ Convex sets and convex bodies in Euclidean space: Helly-type and Radon-type theo
 - [Linear programming](linear-programming/README.md)
 - [Robust linear programming](robust-linear-programming/README.md)
 - [Straszewicz's theorem](straszewicz-s-theorem/README.md)
+- [Total dual integrality](total-dual-integrality/README.md)
 - [Ulam's floating body problem](ulam-s-floating-body-problem/README.md)
 - [Isoperimetric inequality](isoperimetric-inequality.md)
 - [Jung's theorem](jung.md)
