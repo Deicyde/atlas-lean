@@ -6,7 +6,7 @@ $$\|T_\rho f\|_q \le \|f\|_p \qquad\text{for}\quad 0 \le \rho \le \sqrt{\frac{p 
 
 where $T_\rho$ is the noise operator and $\|g\|_r = (\mathbb{E}|g|^r)^{1/r}$ under the uniform
 measure. The source also allows $q = \infty$, which the Lean statement omits. The library proves
-the case $q = 2$, $p = 1 + \rho^2$.
+the cases $q = 2$, $p = 1 + \rho^2$ and, by duality, $p = 2$, $q = 4$, $\rho = 1/\sqrt3$.
 
 ## Sources
 

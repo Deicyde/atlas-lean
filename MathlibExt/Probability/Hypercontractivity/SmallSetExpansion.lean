@@ -44,8 +44,9 @@ open StatMech.Probability
 
 variable {n : ℕ}
 
-/-- The squared `L²` norm of `bnt_qnorm` is the second moment. -/
-private theorem bnt_qnorm_two_sq (g : BoolCube n → ℝ) : bnt_qnorm 2 g ^ 2 = 𝔼 x, g x ^ 2 := by
+/-- **Squared `L²` norm on the cube.** For every `g : BoolCube n → ℝ`, the square of the uniform
+`L²` norm `StatMech.Probability.bnt_qnorm 2 g` is the second moment `𝔼[g²]`. -/
+theorem bnt_qnorm_two_sq (g : BoolCube n → ℝ) : bnt_qnorm 2 g ^ 2 = 𝔼 x, g x ^ 2 := by
   have hpow : bnt_qnormPow 2 g = 𝔼 x, g x ^ 2 := by
     rw [bnt_qnormPow, bnt_uexp_eq_expect]
     refine Finset.expect_congr rfl fun x _ => ?_

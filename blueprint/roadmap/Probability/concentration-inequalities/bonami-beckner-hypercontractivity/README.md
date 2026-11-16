@@ -11,6 +11,8 @@
 - [(p,2)-hypercontractivity in noise-stability form](bool-noise-stab-le-bnt-qnorm-sq.md)
 - [Small-Set Expansion Theorem](bool-noise-stab-le-rpow-of-indicator.md)
 - [Hypercontractivity Theorem (Bonami–Beckner)](hypercontractivity-theorem.md)
+- [Squared `L²` norm on the cube](bnt-qnorm-two-sq.md)
+- [(2,4)-Hypercontractivity Theorem](expect-bool-noise-op-pow-four-le.md)
 
 ## Related topics
 

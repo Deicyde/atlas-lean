@@ -6,8 +6,11 @@ $\hat f(S)$ with $|S| > k$ vanishes), then
 $$\|f\|_4 \le \sqrt{3}^{\,k}\, \|f\|_2, \qquad\text{equivalently}\qquad
 \mathbb{E}[f^4] \le 9^k\, \mathbb{E}[f^2]^2.$$
 
-Low-degree polynomials of uniform random bits are "reasonable" random variables. The proof is a
-short induction on $n$ using $f = x_n D_n f + E_n f$. The Lean entry states the fourth-power form.
+Low-degree polynomials of uniform random bits are "reasonable" random variables. The source proves
+the lemma by a short induction on $n$ using $f = x_n D_n f + E_n f$. The Lean proof instead applies
+the $(2,4)$-hypercontractivity bound $\|T_{1/\sqrt3}\, g\|_4 \le \|g\|_2$ to $g = T_{\sqrt3} f$, for which
+$T_{1/\sqrt3}\, g = f$ and $\|g\|_2^2 = \sum_S 3^{|S|} \hat f(S)^2 \le 3^k \|f\|_2^2$. It states the
+fourth-power form.
 
 ## Sources
 
