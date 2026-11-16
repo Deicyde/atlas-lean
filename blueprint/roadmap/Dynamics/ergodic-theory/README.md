@@ -12,3 +12,6 @@ Ergodic theory studies measure-preserving transformations and their statistical 
 - [Kingman's subadditive ergodic theorem](kingman-s-subadditive-ergodic-theorem/README.md)
 - [Furstenberg multiple recurrence theorem](furstenberg-multiple-recurrence.md)
 - [Krylov–Bogolyubov theorem](krylov-bogolyubov.md)
+- [Mixing](mixing/README.md)
+- [Poincaré recurrence theorem](ae-frequently-mem-of-mem.md)
+- [Poincaré recurrence theorem](ae-frequently-mem-of-mem.md)
