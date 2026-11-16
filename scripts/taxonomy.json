@@ -5523,7 +5523,6 @@
   "WantedExt/GraphTheory/AMR11Problem33Wanted": {"to": "Probability/random-walks", "title": "Return probabilities of random walks on Cayley graphs"},
   "WantedExt/GraphTheory/CheegerInequalityWanted": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "WantedExt/GraphTheory/CycleContinuousAntichainWanted": {"to": "GraphTheory/algebraic-graph-theory", "title": "Cycle-continuous maps"},
-  "WantedExt/GraphTheory/EffectiveResistanceWanted": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
   "WantedExt/GraphTheory/ErdosProblem1034Wanted": {"to": "GraphTheory/extremal-graph-theory", "title": "Erdős–Faudree triangle conjecture"},
   "WantedExt/GraphTheory/ErdosProblem1077Wanted": {"to": "GraphTheory/extremal-graph-theory", "title": "Balanced subgraphs"},
   "WantedExt/GraphTheory/ErdosProblem22Wanted": {"to": "GraphTheory/graph-ramsey-theory", "title": "Ramsey–Turán theory"},
