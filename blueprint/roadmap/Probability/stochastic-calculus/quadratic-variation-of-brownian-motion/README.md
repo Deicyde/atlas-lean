@@ -7,3 +7,5 @@
 - [Processes with measurable coordinates are adapted to their natural filtration](adapted-natural-of-measurable.md)
 - [Quadratic variation of Brownian motion](tendsto-e-lp-norm-sum-sq-sub.md)
 - [Quadratic variation of Brownian motion in probability](tendsto-in-measure-sum-sq.md)
+- [Brownian paths have unbounded variation](ae-not-bounded-variation-on.md)
+- [Quadratic sums of a continuous function of bounded variation vanish](tendsto-sum-sq-increments-of-bounded-var.md)
