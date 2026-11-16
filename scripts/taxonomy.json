@@ -3800,6 +3800,7 @@
   "MathlibExt/Order/BooleanAlgebra/StoneRepresentation": {"to": "Order/lattices-boolean-algebras", "title": "Stone's representation theorem for Boolean algebras"},
   "MathlibExt/Order/BooleanFunction/SelfDual": {"to": "Combinatorics/boolean-functions", "title": "Self-dual monotone Boolean functions"},
   "MathlibExt/Order/FixedPoints/Finset": {"to": "Order/fixed-points-domain-theory", "title": "Least and greatest fixed points on finite sets"},
+  "MathlibExt/Order/IncidenceAlgebra": {"to": "Order/ordered-sets", "title": "Incidence algebras and the Möbius function"},
   "MathlibExt/Order/Monotone/Nat": {"to": "Order/ordered-sets", "title": "Monotone sequences"},
   "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom": {"to": "Order/fixed-points-domain-theory", "title": "Scott-continuous maps and least fixed points"},
   "MathlibExt/Order/PosetMatrix": {"to": "Combinatorics/partially-ordered-sets", "title": "Poset matrices and quasi-full rooted trees"},
