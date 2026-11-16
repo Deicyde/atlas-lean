@@ -15,3 +15,4 @@ Probabilistic methods and random discrete structures outside random graphs: the 
 - [Tomaszewski's conjecture](tomaszewski-s-conjecture/README.md)
 - [Isolation lemma](isolation-lemma.md)
 - [Symmetric Lovász Local Lemma](lovasz-local-lemma-symmetric-finite.md)
+- [Lovász local lemma, general form](lovasz-local-lemma-general-finite.md)

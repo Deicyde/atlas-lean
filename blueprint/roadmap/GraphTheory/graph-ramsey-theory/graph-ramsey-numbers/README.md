@@ -13,3 +13,8 @@
 - [Alon's theorem on linear Ramsey numbers](conjecture-holds-2.md)
 - [Superlinear threshold for triangle-good graphs (Erdős Problem 1182)](triangle-goodness-superlinear-threshold.md)
 - [No superlinear threshold for triangle-good graphs (Erdős Problem 1182)](triangle-goodness-superlinear-threshold-2.md)
+- [`R(3, t)` has order of magnitude `t² / log t`](graph-ramsey-three-is-theta.md)
+- [Kim's lower bound for `R(3, t)`](graph-ramsey-three-lower.md)
+- [Upper bound for `R(3, t)` (Ajtai–Komlós–Szemerédi, Shearer)](graph-ramsey-three-upper.md)
+- [Kim's triangle-free graphs with small independence number](exists-clique-free-three-indep-num-le.md)
+- [Chromatic number of Kim's triangle-free graphs](exists-clique-free-three-chromatic-numbe.md)

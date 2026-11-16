@@ -5,6 +5,10 @@ A random subset $R$ of a finite ground set contains each element independently; 
 - [Law of a random subset with independent elements](random-subset-law.md)
 - [The event that a random subset contains a given set](contains-event.md)
 - [Probability that a random subset contains a given set](random-subset-law-real-contains-event.md)
+- [Expected number of contained sets (Janson's `μ`)](janson-mu.md)
+- [Janson's correlation sum `Δ`](janson-delta.md)
+- [First Janson inequality](janson-inequality.md)
+- [Second Janson inequality](janson-inequality-of-le.md)
 
 ## Related topics
 
