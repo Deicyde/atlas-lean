@@ -8,6 +8,7 @@ Weak convergence and convergence in probability, tightness and Prokhorov's theor
 - [Tightness of probability measures](tightness-of-probability-measures/README.md)
 - [Total variation distance](total-variation-distance/README.md)
 - [Weak convergence in the space of continuous functions](weak-convergence-in-the-space-of-continuous-func/README.md)
+- [Kernel mean embeddings and maximum mean discrepancy](kernel-mean-embeddings-and-maximum-mean-discrepa/README.md)
 - [Cramér–Wold device](cramer-wold-device.md)
 - [Prokhorov's theorem, sequential form on $\mathbb{R}$](prokhorov-sequential.md)
 - [Skorokhod representation theorem](skorokhod-representation.md)

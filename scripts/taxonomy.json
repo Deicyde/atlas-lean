@@ -3970,6 +3970,7 @@
   "MathlibExt/Probability/ItoIntegralProperties": {"to": "Probability/stochastic-calculus", "title": "Itô integral"},
   "MathlibExt/Probability/ItoRiemannSums": {"to": "Probability/stochastic-calculus", "title": "Itô integral"},
   "MathlibExt/Probability/JointLaw": {"to": "Probability/distributions", "title": "Joint distribution"},
+  "MathlibExt/Probability/KernelMeanEmbedding": {"to": "Probability/convergence-of-measures", "title": "Kernel mean embeddings and maximum mean discrepancy"},
   "MathlibExt/Probability/KhintchineInequality": {"to": "Probability/concentration-inequalities", "title": "Khintchine inequality"},
   "MathlibExt/Probability/KolmogorovContinuity": {"to": "Probability/stochastic-calculus", "title": "Kolmogorov continuity theorem"},
   "MathlibExt/Probability/KolmogorovContinuousModification": {"to": "Probability/stochastic-calculus", "title": "Kolmogorov continuity theorem"},
