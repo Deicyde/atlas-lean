@@ -4,6 +4,7 @@ Point estimation theory: bias, risk and mean squared error, likelihood and maxim
 
 - [Bias and mean squared error of estimators](bias-and-mean-squared-error-of-estimators/README.md)
 - [Contiguity and Le Cam's lemmas](contiguity-and-le-cam-s-lemmas/README.md)
+- [Exponential families](exponential-families/README.md)
 - [Fisher information and the Cramér–Rao bound](fisher-information-and-the-cram-r-rao-bound/README.md)
 - [Asymptotic normality of maximum likelihood](asymptotic-normality-of-maximum-likelihood/README.md)
 - [Likelihood and maximum likelihood estimators](likelihood-and-maximum-likelihood-estimators/README.md)
