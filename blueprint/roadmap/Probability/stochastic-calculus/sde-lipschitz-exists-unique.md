@@ -16,7 +16,7 @@ Section 5.2.
 - [Itô isometry for progressive integrands](it-integral/lintegral-ito-integral-sq-of-is-progress.md):
   controls `E (∫ (σ(X) - σ(Y)) dB)²` by `K² E ∫ (X - Y)² ds` in the Picard iteration and in the
   uniqueness argument.
-- [Doob's L² maximal inequality, finite horizon](../martingales/doob-s-maximal-inequalities/doob-sq-maximal-ineq.md):
+- [Doob's `L²` maximal inequality in continuous time](../martingales/doob-s-maximal-inequalities/lintegral-i-sup-sq-le-of-continuous.md):
   turns the isometry into a bound on `E sup_{s ≤ t} |∫_0^s … dB|²`, so that the iterates converge
   uniformly on compacts.
 - [Continuous modification](it-integral/ito-integral-continuous-modification.md): the solution is
