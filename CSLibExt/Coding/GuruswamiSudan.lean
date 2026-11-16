@@ -33,8 +33,7 @@ and the coefficients `Q.coeff j ∈ F[X]` are polynomials in `X`. Substituting a
   i.e. `Y - P(X)` divides `Q` (`X_sub_C_dvd_of_agree`).
 * `card_le_of_agree_ge` (**Reed–Solomon codes are list decodable up to the Johnson radius**): if
   `t² > n (k - 1)`, at most `n (n - k + 1)` polynomials of degree less than `k` agree with a
-  received word in at least `t` positions; a consequence of the Johnson bound and the MDS
-  property.
+  received word in at least `t` positions; the Johnson bound for the MDS Reed–Solomon codes.
 * `hasRootMult_of_coeff`: if the translate `Q(X + a, Y + b)` has no monomial of total degree
   less than `r` (Definition 12.2.9 of Guruswami, Rudra and Sudan), then `HasRootMult Q a b r`.
 * `exists_interpolant` (**Guruswami–Sudan interpolation step**): if there are more monomials
@@ -43,7 +42,8 @@ and the coefficients `Q.coeff j ∈ F[X]` are polynomials in `X`. Substituting a
 * `exists_interpolant_dvd` (**Guruswami–Sudan list decoding**): one nonzero `Q`, depending only
   on the received word, is divisible by `Y - P(X)` for every `P` of degree at most `w` agreeing
   with the received word in more than `D / r` positions; there are at most `D / w` such `P`
-  (`card_le_div_of_dvd`).
+  (`card_le_div_of_dvd`). The choice of `D` and `r` reaching the `1 - √R` radius (Theorem
+  12.2.12 of Guruswami, Rudra and Sudan) is not formalized.
 
 ## References
 
@@ -333,9 +333,11 @@ most `w` with `P(αᵢ) = yᵢ` for more than `D / r` indices `i`.
 
 With `w = k - 1` this is the correctness of Algorithm 12.2.3 of Guruswami, Rudra and Sudan,
 *Essential Coding Theory* (draft of August 26, 2025): the interpolation step
-(`exists_interpolant`) followed by the root-finding lemma (`X_sub_C_dvd_of_agree`, Lemma 12.2.13);
-the choice of `D` and `r` in their Theorem 12.2.12 makes it decode Reed–Solomon codes up to
-agreement `√(k n)`. The running time is not formalized. Source: V. Guruswami, M. Sudan, "Improved
+(`exists_interpolant`) followed by the root-finding lemma (`X_sub_C_dvd_of_agree`, Lemma 12.2.13),
+for any parameters `D, r` satisfying the monomial-count hypothesis. Their Theorem 12.2.12 chooses
+`D` and `r` so that agreement `√(k n)` suffices, which decodes Reed–Solomon codes up to a
+`1 - √R` fraction of errors; that parameter choice and the running time are not formalized.
+Source: V. Guruswami, M. Sudan, "Improved
 decoding of Reed–Solomon and algebraic-geometry codes", *IEEE Transactions on Information Theory*
 45(6) (1999), 1757–1767. -/
 theorem exists_interpolant_dvd [DecidableEq F] {n : ℕ} {α : Fin n → F}
@@ -377,12 +379,12 @@ distinct, `1 ≤ k ≤ n`, `y ∈ Fⁿ`, and `t ≤ n` with `t² > n (k - 1)`. E
 polynomials of degree less than `k`, each agreeing with `y` in at least `t` positions, has at most
 `n (n - k + 1)` elements.
 
-This is the combinatorial content of Theorem 12.2.12 of Guruswami, Rudra and Sudan, *Essential
-Coding Theory* (draft of August 26, 2025): Reed–Solomon codes of rate `R = k / n` are list
-decodable with polynomial list size from a `1 - √R` fraction of errors (agreement
-`t > √(n (k - 1))`). It follows from the Johnson bound applied to the minimum distance
-`n - k + 1` (the MDS property); the algorithmic statement, that the Guruswami–Sudan algorithm
-finds the list in polynomial time, is not formalized. -/
+This is the Johnson bound (Theorem 7.3.3 of Guruswami, Rudra and Sudan, *Essential Coding
+Theory*, draft of August 26, 2025, strict case) applied to the Reed–Solomon codes, which are MDS
+with minimum distance `n - k + 1` (their Theorem 5.2.4): Reed–Solomon codes of rate `R = k / n`
+are list decodable with polynomial list size from any fraction of errors below `1 - √R`
+(agreement `t > √(n (k - 1))`). It is the list-size guarantee behind their Theorem 12.2.12, whose
+algorithmic statement is not formalized. -/
 theorem card_le_of_agree_ge [DecidableEq F] {n k t : ℕ} {α : Fin n → F}
     (hα : Function.Injective α) (hk : 1 ≤ k) (hkn : k ≤ n) (htn : t ≤ n) (y : Fin n → F)
     (hJ : n * (k - 1) < t ^ 2) (Ps : Finset F[X])

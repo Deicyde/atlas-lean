@@ -6,7 +6,8 @@ most $n d$ words: the denominator $(n-e)^2 - n(n-d)$ is a positive integer and t
 $n (d - e)$ is at most $n d$.
 
 Guruswami, Rudra and Sudan (Theorem 7.3.3) state the list size $q n d$; the bound $n d$ proved
-here is smaller.
+here is smaller. Their Exercise 7.5 gives the still smaller list size $n$ for radius at most
+$n - \sqrt{n(n-d)} - 1$, which is not formalized here.
 
 ## Sources
 

@@ -8,11 +8,13 @@ $P \in F[X]$ of degree at most $w$ with $P(\alpha_i) = y_i$ for more than $D / r
 At most $D / w$ polynomials $P$ have this property ([list size](card-le-div-of-dvd.md)).
 
 With $w = k - 1$ this is the correctness of the Guruswami–Sudan algorithm (Algorithm 12.2.3 of
-Guruswami, Rudra and Sudan): interpolate, then read off the factors $Y - P(X)$ of $Q$. Their
-choice $D = \lceil \sqrt{(k-1) n r (r+1)} \rceil$ with $r$ large makes the agreement threshold
-$D / r$ drop to about $\sqrt{(k-1) n}$, so Reed–Solomon codes of rate $R$ are decoded from up to a
-$1 - \sqrt{R}$ fraction of errors (Theorem 12.2.12). The polynomial running time is not
-formalized.
+Guruswami, Rudra and Sudan) for any parameters $D, r$ satisfying the monomial-count hypothesis:
+interpolate, then read off the factors $Y - P(X)$ of $Q$. What is proved is exactly this: every
+$P$ with $\deg P \le w$ and $t$ agreements, where $D < t r$, is found. Their choice
+$D = \lceil \sqrt{(k-1) n r (r+1)} \rceil$ with $r$ large makes the agreement threshold $D / r$
+drop to about $\sqrt{(k-1) n}$, so that Reed–Solomon codes of rate $R$ are decoded from up to a
+$1 - \sqrt{R}$ fraction of errors (Theorem 12.2.12); that parameter choice and the polynomial
+running time are not formalized.
 
 ## Informally uses
 

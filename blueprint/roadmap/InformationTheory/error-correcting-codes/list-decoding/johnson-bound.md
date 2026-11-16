@@ -14,7 +14,9 @@ at most $n (d - e) / ((n - e)^2 - n(n - d))$ codewords in any ball of radius $e$
 most $n d$ ([list size $n d$](card-le-mul-of-johnson.md)).
 
 This is the strict-inequality case of the alphabet-free Johnson bound, Theorem 7.3.3 of
-Guruswami, Rudra and Sudan, with an explicit list size (they give $q n d$). The proof is the
+Guruswami, Rudra and Sudan, with an explicit list size (they give $q n d$; their Exercise 7.5
+improves it to $n$ for radius at most $n - \sqrt{n(n-d)} - 1$, so $n d$ is not the best
+alphabet-free list size). The proof is the
 double-counting argument they give for the binary case of Theorem 7.3.1: with $m_j$ the number of
 words of $S$ agreeing with $y$ in coordinate $j$,
 
@@ -36,8 +38,8 @@ and the three combine into the stated inequality.
   Johnson radius $n - \sqrt{n(n-d)}$ is at least $d/2$ (as $(1 - s/2)^2 \ge 1 - s$), so list
   decoding up to it goes beyond unique decoding.
 - [Reed–Solomon codes are list decodable up to the Johnson radius](card-le-of-agree-ge.md): the
-  bound for the MDS codes, $d = n - k + 1$, where it gives the radius $1 - \sqrt{R}$ reached by
-  the Guruswami–Sudan algorithm.
+  bound for the MDS codes, $d = n - k + 1$, where it gives the radius $1 - \sqrt{R}$, which the
+  Guruswami–Sudan algorithm reaches with the parameters of Theorem 12.2.12.
 
 ## Sources
 

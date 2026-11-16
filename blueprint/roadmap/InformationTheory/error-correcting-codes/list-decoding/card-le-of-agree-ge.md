@@ -5,10 +5,12 @@ with $t^2 > n (k - 1)$. Every finite set of polynomials of degree less than $k$,
 with $y$ in at least $t$ positions, has at most $n (n - k + 1)$ elements.
 
 So [Reed–Solomon codes](../reed-solomon-codes/README.md) of rate $R = k/n$ are list decodable with
-polynomial list size from up to a $1 - \sqrt{R}$ fraction of errors (agreement
-$t > \sqrt{n(k-1)}$): the combinatorial content of Theorem 12.2.12 of Guruswami, Rudra and Sudan.
-The [Guruswami–Sudan decoder](exists-interpolant-dvd.md) finds the list (its correctness is
-proved; its polynomial running time is not formalized).
+polynomial list size from any fraction of errors below $1 - \sqrt{R}$ (agreement
+$t > \sqrt{n(k-1)}$). This is the Johnson bound (Theorem 7.3.3 of Guruswami, Rudra and Sudan,
+strict case) applied to the MDS Reed–Solomon codes (their Theorem 5.2.4): the list-size guarantee
+behind their Theorem 12.2.12. The [Guruswami–Sudan decoder](exists-interpolant-dvd.md) is proved
+correct for any admissible parameters $D, r$; the choice of $D, r$ that reaches this radius and
+the polynomial running time are not formalized.
 
 ## Informally uses
 
@@ -17,4 +19,4 @@ proved; its polynomial running time is not formalized).
 
 ## Sources
 
-- V. Guruswami, A. Rudra, M. Sudan, *Essential Coding Theory*, draft of August 26, 2025, Theorems 7.3.3 and 12.2.12.
+- V. Guruswami, A. Rudra, M. Sudan, *Essential Coding Theory*, draft of August 26, 2025, Theorems 5.2.4 and 7.3.3 (and Theorem 12.2.12 for context).

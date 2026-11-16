@@ -3,10 +3,13 @@
 A code is list decodable from $e$ errors with list size $L$ if every Hamming ball of radius $e$
 contains at most $L$ codewords. Allowing a short list instead of a unique answer lets a decoder
 correct far more than half the minimum distance. The Johnson bound guarantees polynomial lists for
-every code up to the radius $n - \sqrt{n(n-d)}$; the list-decoding capacity theorem identifies
-$1 - H_q(\rho)$ as the best rate for a fraction $\rho$ of errors; and the Guruswami–Sudan
-algorithm decodes Reed–Solomon codes of rate $R$ up to a $1 - \sqrt{R}$ fraction of errors, the
-Johnson radius of these MDS codes.
+every code up to the radius $n - \sqrt{n(n-d)}$, which for Reed–Solomon codes of rate $R$ is a
+$1 - \sqrt{R}$ fraction of errors; the list-decoding capacity theorem identifies $1 - H_q(\rho)$
+as the best rate for a fraction $\rho$ of errors. The Guruswami–Sudan algorithm finds, for any
+parameters $D, r$ with enough monomials, every message polynomial agreeing with the received word
+in more than $D / r$ positions; this correctness is proved here. Guruswami, Rudra and Sudan
+(Theorem 12.2.12) choose $D$ and $r$ so that it decodes up to the $1 - \sqrt{R}$ radius; that
+parameter choice and the running time are not formalized.
 
 ## Definition
 
@@ -49,5 +52,5 @@ Johnson radius of these MDS codes.
 ## Related topics
 
 - [Bounds on code size](../bounds-on-code-size/README.md): Hamming-ball volumes and the unique-decoding bounds that list decoding goes beyond.
-- [Reed–Solomon codes](../reed-solomon-codes/README.md): the MDS codes whose unique decoding (Berlekamp–Welch) stops at half the minimum distance and which Guruswami–Sudan decodes up to the Johnson radius.
+- [Reed–Solomon codes](../reed-solomon-codes/README.md): the MDS codes whose unique decoding (Berlekamp–Welch) stops at half the minimum distance, and which the Johnson bound makes list decodable up to a $1 - \sqrt{R}$ fraction of errors.
 - [Shannon's channel coding theorem](../../channel-coding/shannon-s-channel-coding-theorem/README.md): the capacity $1 - H_q(\rho)$ of the $q$-ary symmetric channel with crossover probability $\rho$ equals the list-decoding capacity for a fraction $\rho$ of worst-case errors (Guruswami, Rudra and Sudan, Section 7.4).

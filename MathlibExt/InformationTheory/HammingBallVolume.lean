@@ -34,6 +34,14 @@ namespace MathlibExt.InformationTheory.HammingBallVolume
 
 open Finset Real
 
+/-- The unfolding of Mathlib's `Real.qaryEntropy`, whose body is not exposed: the only use of
+`import all Mathlib.Analysis.SpecialFunctions.BinaryEntropy` in this file. -/
+private theorem qaryEntropy_eq (q : ℕ) (p : ℝ) :
+    qaryEntropy q p = p * log ((q : ℝ) - 1) + (-(p * log p) - (1 - p) * log (1 - p)) := by
+  rw [qaryEntropy, binEntropy, log_inv, log_inv]
+  push_cast
+  ring
+
 /-- **Volume of a Hamming ball, entropy upper bound.** Let `q ≥ 2`, `0 ≤ p ≤ 1 - 1/q` and let
 `e ≤ p n` be a natural number. Then
 `∑_{i=0}^{e} C(n, i) (q - 1) ^ i ≤ exp (n · Real.qaryEntropy q p) = q ^ {H_q(p) n}`,
@@ -52,7 +60,7 @@ theorem sum_choose_mul_pow_le_exp {q n e : ℕ} {p : ℝ} (hq : 2 ≤ q) (hp0 : 
       have : (e : ℝ) ≤ 0 := by simpa using he
       exact_mod_cast le_antisymm this (Nat.cast_nonneg e)
     subst this
-    simp [qaryEntropy, binEntropy]
+    simp [qaryEntropy_eq]
   have hp1' : p < 1 := by
     have : 0 < 1 / (q : ℝ) := by positivity
     linarith
@@ -69,8 +77,7 @@ theorem sum_choose_mul_pow_le_exp {q n e : ℕ} {p : ℝ} (hq : 2 ≤ q) (hp0 : 
     exact_mod_cast this
   set H := qaryEntropy q p with hH
   have hHdef : H = p * log ((q : ℝ) - 1) - p * log p - (1 - p) * log (1 - p) := by
-    rw [hH, qaryEntropy, binEntropy, log_inv, log_inv]
-    push_cast
+    rw [hH, qaryEntropy_eq]
     ring
   -- Termwise comparison with the binomial expansion.
   have hterm : ∀ i ∈ range (e + 1),
@@ -228,37 +235,38 @@ theorem choose_mul_pow_ge {q n m : ℕ} (hq : 2 ≤ q) (hn : 0 < n) (hm : m ≤ 
   set x : ℝ := m / n with hx
   have hxm : (n : ℝ) * x = m := by rw [hx]; field_simp
   have hcentral := central_term_ge hn hm
-  -- `x ^ m (1 - x) ^ (n - m) = exp (-n · h(x))` and `(q - 1) ^ m = exp (n x log (q - 1))`.
-  have hpow : x ^ m * (1 - x) ^ (n - m) = exp (-(n * binEntropy x)) := by
+  -- With `B = -x log x - (1 - x) log (1 - x)` (the binary entropy of `x`):
+  -- `x ^ m (1 - x) ^ (n - m) = exp (-n B)` and
+  -- `exp (n · Real.qaryEntropy q x) = (q - 1) ^ m exp (n B)`.
+  set B : ℝ := -(x * log x) - (1 - x) * log (1 - x) with hB
+  have hpow : x ^ m * (1 - x) ^ (n - m) = exp (-(n * B)) := by
     rcases Nat.eq_zero_or_pos m with h0 | hm0
-    · subst h0; simp [hx]
+    · subst h0; simp [hx, hB]
     rcases eq_or_lt_of_le hm with hmn | hmn
     · subst hmn
       have : x = 1 := by rw [hx]; field_simp
-      simp [this]
+      simp [this, hB]
     have hx0 : 0 < x := by rw [hx]; exact div_pos (by exact_mod_cast hm0) hn'
     have hx1 : x < 1 := by rw [hx, div_lt_one hn']; exact_mod_cast hmn
-    rw [binEntropy, log_inv, log_inv, ← exp_log (mul_pos (pow_pos hx0 m)
+    rw [← exp_log (mul_pos (pow_pos hx0 m)
       (pow_pos (by linarith : (0 : ℝ) < 1 - x) (n - m))), log_mul (pow_pos hx0 m).ne'
       (pow_pos (by linarith : (0 : ℝ) < 1 - x) (n - m)).ne', log_pow, log_pow,
       Nat.cast_sub hm]
     congr 1
-    rw [← hxm]
+    rw [hB, ← hxm]
     ring
-  have hH : exp (n * qaryEntropy q x) = ((q : ℝ) - 1) ^ m * exp (n * binEntropy x) := by
-    rw [qaryEntropy]
-    push_cast
-    rw [mul_add, exp_add, ← mul_assoc, hxm, exp_nat_mul, exp_log hq1]
-  have hone : exp (n * binEntropy x) * exp (-(n * binEntropy x)) = 1 := by
+  have hH : exp (n * qaryEntropy q x) = ((q : ℝ) - 1) ^ m * exp (n * B) := by
+    rw [qaryEntropy_eq, mul_add, exp_add, ← mul_assoc, hxm, exp_nat_mul, exp_log hq1]
+  have hone : exp (n * B) * exp (-(n * B)) = 1 := by
     rw [← exp_add, add_neg_cancel, exp_zero]
-  have hA : 0 ≤ ((q : ℝ) - 1) ^ m * exp (n * binEntropy x) := by positivity
+  have hA : 0 ≤ ((q : ℝ) - 1) ^ m * exp (n * B) := by positivity
   rw [hH]
-  calc ((q : ℝ) - 1) ^ m * exp (n * binEntropy x) / ((n : ℝ) + 1)
-      = ((q : ℝ) - 1) ^ m * exp (n * binEntropy x) * (1 / ((n : ℝ) + 1)) := by ring
-    _ ≤ ((q : ℝ) - 1) ^ m * exp (n * binEntropy x) *
+  calc ((q : ℝ) - 1) ^ m * exp (n * B) / ((n : ℝ) + 1)
+      = ((q : ℝ) - 1) ^ m * exp (n * B) * (1 / ((n : ℝ) + 1)) := by ring
+    _ ≤ ((q : ℝ) - 1) ^ m * exp (n * B) *
           (n.choose m * x ^ m * (1 - x) ^ (n - m)) := mul_le_mul_of_nonneg_left hcentral hA
     _ = ((q : ℝ) - 1) ^ m * n.choose m *
-          (exp (n * binEntropy x) * (x ^ m * (1 - x) ^ (n - m))) := by ring
+          (exp (n * B) * (x ^ m * (1 - x) ^ (n - m))) := by ring
     _ = n.choose m * ((q : ℝ) - 1) ^ m := by rw [hpow, hone]; ring
 
 /-- **Volume of a Hamming ball, entropy lower bound.** Let `q ≥ 2` and `0 ≤ p ≤ 1`. For every

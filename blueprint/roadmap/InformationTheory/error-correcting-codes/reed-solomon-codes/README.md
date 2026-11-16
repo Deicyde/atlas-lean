@@ -29,5 +29,5 @@
 
 ## Related topics
 
-- [List decoding](../list-decoding/README.md): beyond half the minimum distance, Reed–Solomon codes of rate $R$ are list decodable up to a $1 - \sqrt{R}$ fraction of errors (Johnson bound) and the Guruswami–Sudan algorithm finds the list.
+- [List decoding](../list-decoding/README.md): beyond half the minimum distance, Reed–Solomon codes of rate $R$ are list decodable up to a $1 - \sqrt{R}$ fraction of errors (Johnson bound), and the Guruswami–Sudan algorithm is proved correct for any admissible parameters.
 - [Bounds on code size](../bounds-on-code-size/README.md): the Singleton bound that Reed–Solomon codes meet with equality.
