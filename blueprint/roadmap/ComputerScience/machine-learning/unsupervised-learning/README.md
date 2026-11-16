@@ -10,4 +10,4 @@ Structure in unlabelled data: k-means, archetypal analysis, nonnegative matrix f
 
 ## Related topics
 
-- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): spectral clustering uses the bottom eigenvectors of a graph Laplacian, and Cheeger's inequality explains why the sweep cut of the second eigenvector is a good partition.
+- [Graph Laplacians and Cheeger's inequality](../../../GraphTheory/algebraic-graph-theory/part-01/graph-laplacians-and-cheeger-s-inequality/README.md): spectral clustering and Laplacian eigenmaps embed the data with the bottom nontrivial eigenvectors of a graph Laplacian, which minimise the total squared edge length (Hall's spectral drawing theorem), and Cheeger's inequality explains why a sweep cut of the second eigenvector is a good partition.

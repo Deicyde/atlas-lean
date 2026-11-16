@@ -2286,6 +2286,7 @@
   "MathlibExt/Combinatorics/EndpointMapMultigraph/DartLaplacian": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/EffectiveResistance": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/OrientedIncidence": {"to": "GraphTheory/algebraic-graph-theory", "title": "Oriented incidence matrices"},
+  "MathlibExt/Combinatorics/EndpointMapMultigraph/SpectralDrawing": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/WeightedLaplacian": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/Enumerative/AeratedCentralBinomialNumber": {"to": "Combinatorics/binomial-coefficients/central-binomial-harmonic-sums", "title": "Aerated central binomial numbers"},
   "MathlibExt/Combinatorics/Enumerative/AignerMotzkinInequality": {"to": "Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers", "title": "Aigner's ratio inequality for Motzkin numbers"},

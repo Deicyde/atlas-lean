@@ -25,6 +25,7 @@ The weighted Laplacian `L = B diag(w) Bᵀ` of a finite multigraph and its quadr
 - [Laplacian eigenvalues are monotone in the Loewner order](eigenvalues-laplacian-le-of-pos-semidef.md)
 - [Raising weights raises every Laplacian eigenvalue](eigenvalues-laplacian-mono.md)
 - [Algebraic connectivity is monotone in the weights](algebraic-connectivity-mono.md)
+- [Hall's spectral drawing is optimal](sum-eigenvalues-le-sum-quadratic-form.md)
 
 ## Related topics
 

@@ -151,8 +151,8 @@ theorem laplacian_mulVec_eq_zero_iff {w : E → ℝ} (hw : ∀ e, 0 < w e)
 /-- **Rank of the Laplacian plus number of components.** For a loopless finite multigraph with
 positive edge weights, the rank of its weighted Laplacian plus the number of connected components
 equals the number of vertices; equivalently the multiplicity of the eigenvalue `0` is the number
-of components (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Lemma 3.1.1 and
-the remark after it). -/
+of components. This extends D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
+Lemma 3.1.1, whose proof shows that for a connected graph the constants span the kernel. -/
 theorem rank_laplacian_add_card_connectedComponent {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) :
     (laplacian end₁ end₂ w).rank +
