@@ -59,3 +59,10 @@
 - [Every point is its own inverse](cube-mul-cube-mul-self.md)
 - [Signs multiply under the cube product](cube-val-beq.md)
 - [Translation-invariance of averages](expect-comp-cube-mul.md)
+
+## Related topics
+
+- [Influences and the noise operator on the Boolean cube](../influences-and-the-noise-operator-on-the-boolean/README.md): influences, total influence, the Poincaré inequality and noise stability, all computed from this Fourier expansion.
+- [Blum–Luby–Rubinfeld linearity test](../../../../TheoryOfComputation/pcp-and-inapproximability/blum-luby-rubinfeld-linearity-test/README.md): the first application of the convolution theorem: testing whether a function is a character.
+- [Goldreich–Levin theorem](../../../../TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/README.md): the hardcore-bit theorem; its proof is an algorithm that finds the large Fourier coefficients of a function given query access.
+- [Fourier transform on finite abelian groups](../fourier-transform-on-finite-abelian-groups/README.md): the cube is the group $\mathbb{F}_2^n$, and this expansion is its Fourier transform.

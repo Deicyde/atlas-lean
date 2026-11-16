@@ -8,3 +8,8 @@ The BLR test reads a function on the cube at three correlated points and accepts
 - [Relative Hamming distance on the Boolean cube](bool-dist.md)
 - [Distance to a character](bool-dist-cube-chi-eq.md)
 - [Characters are `±1`-valued](cube-chi-eq-one-or-neg-one.md)
+
+## Related topics
+
+- [Fourier analysis on the Boolean cube](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-analysis-on-the-boolean-cube/README.md): the characters, Plancherel and the convolution theorem used in the analysis of the test.
+- [Approximability of MAX-3SAT](../approximability-of-max-3sat/README.md): Håstad's optimal hardness results come from 3-query tests that extend the BLR test.

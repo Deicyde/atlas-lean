@@ -1,5 +1,10 @@
 # Characters are multiplicative
 
-For every `S` and `x, y ∈ {-1, 1}ⁿ`,
-`χ_S(x y) = χ_S(x) χ_S(y)` (R. O'Donnell, *Analysis of Boolean Functions*, 2014, equation (1.5),
-written there additively as `χ_S(x + y) = χ_S(x) χ_S(y)` on `𝔽₂ⁿ`).
+For every $S \subseteq \{0, \dots, n-1\}$ and all $x, y \in \{-1, 1\}^n$,
+$\chi_S(x y) = \chi_S(x)\,\chi_S(y)$, where $x y$ is the coordinatewise product. In additive
+notation on $\mathbb{F}_2^n$ this is $\chi_S(x + y) = \chi_S(x)\chi_S(y)$: the characters are the
+group homomorphisms from the cube to $\{-1, 1\}$.
+
+## Sources
+
+- R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014 (arXiv:2105.10386), equation (1.5).

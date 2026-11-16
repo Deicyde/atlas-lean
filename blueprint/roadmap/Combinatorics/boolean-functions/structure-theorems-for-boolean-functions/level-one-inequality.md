@@ -1,7 +1,14 @@
 # Level-1 Inequality
 
-There is a universal constant `C` such that every
-`f : BoolCube n → ℝ` with values in `{0, 1}` and mean `α = 𝔼[f] ≤ 1/2` satisfies
-`W¹[f] ≤ C α² log(1/α)` (R. O'Donnell, *Analysis of Boolean Functions*, 2014, Level-1
-Inequality, Section 5.4, stated there as `W¹[f] ≤ O(α² log(1/α))`; proved in Section 5.4 and,
-via hypercontractivity, in Section 9.5). For `α = 0` both sides vanish.
+There is a universal constant $C$ such that every $f : \{-1, 1\}^n \to \{0, 1\}$ with mean
+$\alpha = \mathbb{E}[f] \le 1/2$ satisfies
+
+$$\mathbf{W}^1[f] = \sum_{|S| = 1} \hat f(S)^2 \le C\, \alpha^2 \log(1/\alpha).$$
+
+Small subsets of the cube have little degree-1 Fourier weight. In additive combinatorics this is
+Chang's inequality. For $\alpha = 0$ both sides are $0$.
+
+## Sources
+
+- R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014 (arXiv:2105.10386), Level-1 Inequality, Section 5.4 (sharp form $2\alpha^2 \ln(1/\alpha)$ in Remark 5.28);
+  generalized to the Level-k Inequalities in Section 9.5.

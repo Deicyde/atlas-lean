@@ -74,3 +74,10 @@
 - [Noise stability at `ρ = 0`](bool-noise-stab-zero.md)
 - [The noise operator is self-adjoint](expect-bool-noise-op-mul-comm.md)
 - [Plancherel formula for the noise operator](expect-mul-bool-noise-op-eq-sum.md)
+
+## Related topics
+
+- [Bonami–Beckner hypercontractivity](../../../../Probability/concentration-inequalities/bonami-beckner-hypercontractivity/README.md): norm bounds for the noise operator $T_\rho$, including small-set expansion for noise stability.
+- [Kahn–Kalai–Linial inequality](../../../../Combinatorics/boolean-functions/kahn-kalai-linial-inequality/README.md): a lower bound on the largest influence, from hypercontractivity of $T_\rho$.
+- [Structure theorems for Boolean functions](../../../../Combinatorics/boolean-functions/structure-theorems-for-boolean-functions/README.md): FKN, Friedgut's junta theorem and Majority Is Stablest, stated with these influences and noise stability.
+- [OSSS inequality for decision trees](../../../../Combinatorics/boolean-functions/osss-inequality-for-decision-trees/README.md): a variance bound by influences weighted by the query probabilities of a decision tree, refining the Poincaré inequality.

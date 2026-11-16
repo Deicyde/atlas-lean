@@ -1,8 +1,21 @@
 # Friedgut–Kalai–Naor (FKN) Theorem
 
-There is a universal constant `C` such that for every
-`n ≥ 1` and every `f : BoolCube n → ℝ` with values `±1`, if `W¹[f] ≥ 1 - δ` then `f` is
-`Cδ`-close to a dictator `χ_i` or a negated dictator `-χ_i` for some coordinate `i` (E. Friedgut,
-G. Kalai and A. Naor, 2002; R. O'Donnell, *Analysis of Boolean Functions*, 2014, FKN Theorem,
-stated in Section 2.6 with closeness `O(δ)` and proved in Section 9.1). The hypothesis `n ≥ 1`
-is implicit in the source: for `n = 0` there is no coordinate to name.
+There is a universal constant $C$ such that for every $n \ge 1$: if
+$f : \{-1, 1\}^n \to \{-1, 1\}$ has degree-1 Fourier weight
+$\mathbf{W}^1[f] = \sum_{|S| = 1} \hat f(S)^2 \ge 1 - \delta$, then $f$ is $C\delta$-close to a
+dictator $\chi_i$ or a negated dictator $-\chi_i$ for some coordinate $i$.
+
+The source writes the closeness as $O(\delta)$; Section 5.4 of the same source improves it to
+$\delta/4 + O(\delta^2 \log(2/\delta))$. The hypothesis $n \ge 1$ is implicit in the source.
+
+## Sources
+
+- E. Friedgut, G. Kalai and A. Naor, "Boolean functions whose Fourier transform is concentrated on
+  the first two levels", *Adv. in Appl. Math.* 29 (2002), 427–437.
+- R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press, 2014 (arXiv:2105.10386), FKN Theorem, stated in Section 2.6, proved in Section 9.1.
+
+## Informally uses
+
+- [Bonami Lemma](../../../Probability/concentration-inequalities/bonami-beckner-hypercontractivity/bonami-lemma.md):
+  the proof in Section 9.1 applies Theorem 9.7, an anticoncentration bound for low-degree
+  polynomials derived from the Bonami Lemma, to $\ell^2$ where $\ell = f^{=1}$.
