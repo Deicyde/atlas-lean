@@ -6,9 +6,11 @@ $$
 \frac{1}{\sqrt 2} \, d_{\mathrm{TV}}(\mu, \nu) \le d_{\mathrm{Hell}}(\mu, \nu),
 $$
 
-with $d_{\mathrm{TV}}(\mu, \nu) = \sup_B |\mu(B) - \nu(B)|$. The proof factors
-$|a - b| = |\sqrt a - \sqrt b|\,(\sqrt a + \sqrt b)$ and applies the Cauchy–Schwarz inequality.
-This statement is recorded as wanted; its proof is deferred.
+with $d_{\mathrm{TV}}(\mu, \nu) = \sup_B |\mu(B) - \nu(B)|$. Dashti and Stuart factor
+$|a - b| = |\sqrt a - \sqrt b|\,(\sqrt a + \sqrt b)$ and apply the Cauchy–Schwarz inequality; the formal
+proof integrates the equivalent pointwise bound
+$|\sqrt a - \sqrt b|(\sqrt a + \sqrt b) \le \tfrac t2 (\sqrt a - \sqrt b)^2 + \tfrac1{2t} (\sqrt a + \sqrt b)^2$ and
+optimises over $t > 0$.
 
 ## Sources
 

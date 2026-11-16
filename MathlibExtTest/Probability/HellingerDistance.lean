@@ -37,4 +37,24 @@ example (f g : ℝ → ℝ≥0∞) (hf : Measurable f) (hg : Measurable g) (hf' 
   hellingerDist_withDensity hf hg (Filter.Eventually.of_forall hf')
     (Filter.Eventually.of_forall hg')
 
+/-- Comparison with total variation for two Gaussian laws. -/
+example : hellingerDist (gaussianReal 0 1) (gaussianReal 1 1) ≤
+    √(MathlibExt.Probability.TotalVariationDistance.totalVariationDist
+      (gaussianReal 0 1) (gaussianReal 1 1)) :=
+  hellingerDist_le_sqrt_totalVariationDist _ _
+
+example : MathlibExt.Probability.TotalVariationDistance.totalVariationDist
+    (gaussianReal 0 1) (gaussianReal 1 1) / √2 ≤
+      hellingerDist (gaussianReal 0 1) (gaussianReal 1 1) :=
+  totalVariationDist_div_sqrt_two_le_hellingerDist _ _
+
+example : hellingerDist (gaussianReal 0 1) (gaussianReal 1 1) ≤ 1 := hellingerDist_le_one _ _
+
+/-- The means of two Gaussian laws differ by at most `2 (E x² + E x²)^{1/2} d_Hell`. -/
+example : ‖∫ x, x ∂gaussianReal 0 1 - ∫ x, x ∂gaussianReal 1 1‖ ≤
+    2 * √(∫ x, ‖x‖ ^ 2 ∂gaussianReal 0 1 + ∫ x, ‖x‖ ^ 2 ∂gaussianReal 1 1) *
+      hellingerDist (gaussianReal 0 1) (gaussianReal 1 1) :=
+  norm_integral_sub_integral_le_hellingerDist _ _ id
+    (memLp_id_gaussianReal 2) (memLp_id_gaussianReal 2)
+
 end MathlibExtTest.Probability.HellingerDistance

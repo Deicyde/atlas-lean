@@ -6692,7 +6692,6 @@
   "WantedExt/Probability/DiversityStatisticsWanted": {"to": "Combinatorics/integer-partitions/young-diagrams-statistics", "title": "Number of values of diversity indices"},
   "WantedExt/Probability/EnsembleKalmanWanted": {"to": "Probability/bayesian-statistics", "title": "Ensemble Kalman inversion"},
   "WantedExt/Probability/GaussianRandomMatrixWanted": {"to": "Probability/high-dimensional-probability", "title": "Singular values of Gaussian random matrices"},
-  "WantedExt/Probability/HellingerDistanceWanted": {"to": "Probability/convergence-of-measures", "title": "Hellinger distance"},
   "WantedExt/Probability/HighDimensionalStatisticsWanted": {"to": "Probability/concentration-inequalities", "title": "Sub-exponential variables and Bernstein's inequality"},
   "WantedExt/Probability/GartnerEllisWanted": {"to": "Probability/large-deviations", "title": "Gärtner–Ellis theorem"},
   "WantedExt/Probability/IsotropicConstantBoundsWanted": {"to": "Probability/high-dimensional-probability", "title": "Isotropic constant of log-concave laws"},

@@ -8,10 +8,11 @@ $$
 $$
 
 This is why the Hellinger distance is the metric of choice for posterior stability: a Hellinger
-bound on posteriors transfers to posterior means and, with fourth moments, to posterior covariances.
-Dashti and Stuart state it on a separable Banach space; the proof (Cauchy–Schwarz after factoring
-the difference of densities) does not use that structure. This statement is recorded as wanted;
-its proof is deferred.
+bound on posteriors transfers to posterior means (and, by the second statement of the lemma, which
+is not formalised here, to posterior covariances). Dashti and Stuart state it on a separable Banach
+space; the proof does not use that structure. They apply the Cauchy–Schwarz inequality after
+factoring the difference of densities; the formal proof integrates the corresponding pointwise
+inequality with a free parameter $t > 0$ and optimises over $t$.
 
 ## Sources
 
