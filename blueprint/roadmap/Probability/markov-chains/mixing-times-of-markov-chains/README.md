@@ -8,3 +8,9 @@
 - [Being $1/4$-mixed at a given time](is-mixed-at.md)
 - [Number of monochromatic edges](mono-edges.md)
 - [Cutoff for a family of distance profiles](has-cutoff.md)
+
+## Related topics
+
+- [Mixing](../../../Dynamics/ergodic-theory/mixing/README.md): mixing in ergodic theory, the asymptotic
+  independence of events under a measure-preserving map, of which convergence of a chain to its stationary law
+  is the probabilistic counterpart.

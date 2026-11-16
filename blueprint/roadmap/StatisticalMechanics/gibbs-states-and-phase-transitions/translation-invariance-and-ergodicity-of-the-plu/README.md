@@ -47,3 +47,9 @@
 - [Cylinder events of the Ising configuration space](aetc-cring.md)
 - [Approximation in measure by events measurable outside every box](ae-approx-far-out.md)
 - [Nonvacuity of the a.s.-tail theorem via the all-plus Dirac mass](aetc-hae-tail-nonvacuous.md)
+
+## Related topics
+
+- [Mixing](../../../Dynamics/ergodic-theory/mixing/README.md): ergodicity of a single measure-preserving map
+  and its sufficient condition, mixing; here ergodicity under the group of lattice translations comes instead
+  from extremality and a trivial tail.

@@ -116,3 +116,8 @@
 - [Translate of a vertex of $\Lambda_N$ as a vertex of $\Lambda_{N+r}$](cbk-shift-box-vert.md)
 - [Translate of an edge of $\Lambda_N$ as an edge of $\Lambda_{N+r}$](cbk-shift-edge.md)
 - [Ergodicity of the wired random-cluster measure](cbk-wired-iv-is-ergodic.md)
+
+## Related topics
+
+- [Mixing](../../../Dynamics/ergodic-theory/mixing/README.md): self-mixing on cylinder events implies ergodicity
+  by the argument that shows a mixing measure-preserving map is ergodic.
