@@ -57,4 +57,18 @@ example : algebraicConnectivity (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun 
     ![1, -1] ⬝ᵥ (laplacian (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) *ᵥ ![1, -1]) :=
   algebraicConnectivity_mul_le _ _ (fun _ => by norm_num) (by simp [dotProduct])
 
+/-- Doubling the weight of the edge cannot lower `λ₂` (Corollary 6.2.2). -/
+example : algebraicConnectivity (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) ≤
+    algebraicConnectivity (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 6) :=
+  algebraicConnectivity_mono _ _ fun _ => by norm_num
+
+/-- Every Laplacian eigenvalue is monotone under a Loewner comparison. -/
+example (k : Fin (Fintype.card (Fin 2))) :
+    (isSymmetric_toEuclideanLin_laplacian (fun _ : Unit => (0 : Fin 2)) (fun _ => 1)
+        (fun _ => 3)).eigenvalues finrank_euclideanSpace k ≤
+      (isSymmetric_toEuclideanLin_laplacian (fun _ : Unit => (0 : Fin 2)) (fun _ => 1)
+        (fun _ => 6)).eigenvalues finrank_euclideanSpace k :=
+  eigenvalues_laplacian_le_of_posSemidef _ _
+    (posSemidef_laplacian_sub_of_le _ _ fun _ => by norm_num) k
+
 end EndpointMapMultigraphAlgebraicConnectivityTest

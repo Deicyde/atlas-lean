@@ -22,6 +22,9 @@ The weighted Laplacian `L = B diag(w) Bᵀ` of a finite multigraph and its quadr
 - [`λ₂` bounds the Rayleigh quotient on vectors orthogonal to the constants](algebraic-connectivity-mul-le.md)
 - [Easy direction of Cheeger's inequality, eigenvalue form](algebraic-connectivity-mul-card-mul-card.md)
 - [`λ₂ > 0` exactly for connected graphs](algebraic-connectivity-pos-iff.md)
+- [Laplacian eigenvalues are monotone in the Loewner order](eigenvalues-laplacian-le-of-pos-semidef.md)
+- [Raising weights raises every Laplacian eigenvalue](eigenvalues-laplacian-mono.md)
+- [Algebraic connectivity is monotone in the weights](algebraic-connectivity-mono.md)
 
 ## Related topics
 

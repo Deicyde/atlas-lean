@@ -12,6 +12,7 @@ public import MathlibExt.Combinatorics.EndpointMapMultigraph.WeightedLaplacian
 public import MathlibExt.Analysis.InnerProductSpace.CourantFischer
 public import Mathlib.Analysis.Matrix.Hermitian
 
+import MathlibExt.Analysis.InnerProductSpace.WeylEigenvalueSum
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Ring
@@ -31,7 +32,10 @@ decreasing order. This file connects the graph to the Courant–Fischer theorem 
 * `algebraicConnectivity_mul_card_mul_card_compl_le`: the easy direction of Cheeger's inequality,
   `λ₂ |S| |V \ S| ≤ |V| w(∂S)` (Spielman, Theorem 20.1.1, weighted form);
 * `algebraicConnectivity_pos_iff`: for positive weights and at least two vertices, `λ₂ > 0` if
-  and only if the multigraph is connected (Spielman, Lemma 3.1.1).
+  and only if the multigraph is connected (Spielman, Lemma 3.1.1);
+* `eigenvalues_laplacian_le_of_posSemidef`, `eigenvalues_laplacian_mono`,
+  `algebraicConnectivity_mono`: Laplacian eigenvalues are monotone in the Loewner order and in the
+  weights (Spielman, Lemma 6.2.1 and Corollary 6.2.2), from Weyl's inequality.
 -/
 
 @[expose] public section
@@ -287,5 +291,69 @@ theorem algebraicConnectivity_pos_iff {w : E → ℝ} (hw : ∀ e, 0 < w e)
     apply hyE0
     rw [hyz, hzc, hzv]
     rfl
+
+omit [DecidableEq E] [Fintype E] in
+/-- Every eigenvalue of the operator of a positive semidefinite real matrix is nonnegative. -/
+private theorem eigenvalues_nonneg_of_posSemidef {M : Matrix V V ℝ} (hM : M.PosSemidef)
+    (hS : (toEuclideanLin M).IsSymmetric) (k : Fin (Fintype.card V)) :
+    0 ≤ hS.eigenvalues finrank_euclideanSpace k := by
+  obtain ⟨-, -, -, x, -, -, hx⟩ := exists_tail_submodule hS finrank_euclideanSpace k.isLt
+  rw [← hx, show x = WithLp.toLp 2 (WithLp.ofLp x) from rfl, rayleighForm_toLp]
+  have := (posSemidef_iff_dotProduct_mulVec.1 hM).2 (WithLp.ofLp x)
+  simpa using this
+
+omit [DecidableEq V] [DecidableEq E] [Fintype E] in
+/-- Eigenvalues of equal symmetric operators agree, whatever the symmetry proofs. -/
+private theorem eigenvalues_congr {T₁ T₂ : EuclideanSpace ℝ V →ₗ[ℝ] EuclideanSpace ℝ V}
+    (h : T₁ = T₂) (h₁ : T₁.IsSymmetric) (h₂ : T₂.IsSymmetric) :
+    h₁.eigenvalues finrank_euclideanSpace = h₂.eigenvalues finrank_euclideanSpace := by
+  subst h
+  rfl
+
+/-- **Laplacian eigenvalues are monotone in the Loewner order.** If `L_{w'} - L_w` is positive
+semidefinite, then each eigenvalue of `L_w` (in the decreasing enumeration) is at most the
+corresponding eigenvalue of `L_{w'}`; with `G = (V, E, w')` and `H = (V, E, w)` this is
+D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019, Lemma 6.2.1 for `c = 1`
+(`G ≽ H` implies `λ_k(G) ≥ λ_k(H)` for all `k`), proved here from Weyl's inequality. -/
+theorem eigenvalues_laplacian_le_of_posSemidef {w w' : E → ℝ}
+    (h : (laplacian end₁ end₂ w' - laplacian end₁ end₂ w).PosSemidef) (k : Fin (Fintype.card V)) :
+    (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).eigenvalues finrank_euclideanSpace k ≤
+      (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w').eigenvalues finrank_euclideanSpace k := by
+  have hS : (toEuclideanLin (laplacian end₁ end₂ w' - laplacian end₁ end₂ w)).IsSymmetric := by
+    rw [isSymmetric_toEuclideanLin_iff]
+    exact h.1
+  have hb : Fintype.card V - 1 < Fintype.card V := by have := k.isLt; omega
+  have hweyl := MathlibExt.Analysis.InnerProductSpace.WeylEigenvalueSum.le_weyl_eigenvalue_add
+    (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w) hS finrank_euclideanSpace k.isLt hb
+    (by omega)
+  have hsum : toEuclideanLin (laplacian end₁ end₂ w) +
+      toEuclideanLin (laplacian end₁ end₂ w' - laplacian end₁ end₂ w) =
+        toEuclideanLin (laplacian end₁ end₂ w') := by
+    rw [← map_add, add_sub_cancel]
+  have hidx : (⟨k + (Fintype.card V - 1) - (Fintype.card V - 1), by omega⟩ :
+      Fin (Fintype.card V)) = k := Fin.ext (by simp)
+  rw [eigenvalues_congr hsum ((isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).add hS)
+    (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w'), hidx] at hweyl
+  have h0 := eigenvalues_nonneg_of_posSemidef h hS ⟨Fintype.card V - 1, hb⟩
+  linarith
+
+/-- **Raising weights raises every Laplacian eigenvalue.** If `w ≤ w'` edgewise, each eigenvalue
+of `L_w` is at most the corresponding eigenvalue of `L_{w'}`: removing an edge or decreasing its
+weight can only decrease the Laplacian eigenvalues (D. A. Spielman, *Spectral and Algebraic Graph
+Theory*, draft 2019, Corollary 6.2.2). -/
+theorem eigenvalues_laplacian_mono {w w' : E → ℝ} (hle : w ≤ w') (k : Fin (Fintype.card V)) :
+    (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w).eigenvalues finrank_euclideanSpace k ≤
+      (isSymmetric_toEuclideanLin_laplacian end₁ end₂ w').eigenvalues finrank_euclideanSpace k :=
+  eigenvalues_laplacian_le_of_posSemidef end₁ end₂ (posSemidef_laplacian_sub_of_le end₁ end₂ hle) k
+
+/-- **Algebraic connectivity is monotone in the weights.** If `w ≤ w'` edgewise then
+`λ₂(L_w) ≤ λ₂(L_{w'})` (D. A. Spielman, *Spectral and Algebraic Graph Theory*, draft 2019,
+Corollary 6.2.2 for `k = 2`). -/
+theorem algebraicConnectivity_mono {w w' : E → ℝ} (hle : w ≤ w') :
+    algebraicConnectivity end₁ end₂ w ≤ algebraicConnectivity end₁ end₂ w' := by
+  unfold algebraicConnectivity
+  split_ifs with h2
+  · exact eigenvalues_laplacian_mono end₁ end₂ hle _
+  · exact le_rfl
 
 end EndpointMapMultigraph
