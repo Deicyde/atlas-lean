@@ -3785,6 +3785,7 @@
   "MathlibExt/Probability/BrownianMotionExistence": {"to": "Probability/stochastic-calculus", "title": "Construction and sample paths of Brownian motion"},
   "MathlibExt/Probability/BrownianOscillation": {"to": "Probability/stochastic-calculus", "title": "Blumenthal zero–one law"},
   "MathlibExt/Probability/BrownianQuadraticVariation": {"to": "Probability/stochastic-calculus", "title": "Quadratic variation of Brownian motion"},
+  "MathlibExt/Probability/BrownianRecurrence": {"to": "Probability/stochastic-calculus", "title": "Construction and sample paths of Brownian motion"},
   "MathlibExt/Probability/BrownianUnboundedVariation": {"to": "Probability/stochastic-calculus", "title": "Quadratic variation of Brownian motion"},
   "MathlibExt/Probability/Causality/CausalIdentification": {"to": "Probability/nonparametric-survival", "title": "Potential outcomes and causal identification"},
   "MathlibExt/Probability/CdfContinuityPoints": {"to": "Probability/distributions", "title": "Cumulative distribution function"},
