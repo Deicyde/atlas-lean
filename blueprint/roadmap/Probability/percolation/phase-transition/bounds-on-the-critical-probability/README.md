@@ -45,3 +45,5 @@
 - [Nontrivial Bernoulli critical probability on $\mathbb{Z}^2$](pc-two-nontrivial.md)
 - [Bernoulli critical probability below one for $d \ge 2$](pc-lt-one-of-two-le-via-fk.md)
 - [Non-triviality of the percolation critical probability](pc-nontrivial-of-two-le.md)
+- [Path-counting lower bound on the critical probability](one-div-two-mul-le-pc.md)
+- [The critical probability is at most one](pc-le-one.md)
