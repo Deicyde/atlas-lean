@@ -17,6 +17,7 @@ The statement is recorded as wanted: its proof is deferred.
 
 ## Background
 
+- [Hermitian dilation](../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-and-spectral-norm-of-hermitian-matri/dilation.md): background, the dilation through which the rectangular version follows.
 - [Two-sided Hoeffding inequality for Bernoulli sums](../hoeffding-s-inequality/hoeffding-bernoulli-sum-abs-tail.md): background, the scalar exponential tail bound for bounded independent summands.
 
 ## Sources

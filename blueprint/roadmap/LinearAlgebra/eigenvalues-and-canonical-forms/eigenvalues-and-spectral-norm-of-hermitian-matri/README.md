@@ -21,6 +21,12 @@ The eigenvalues of a Hermitian matrix are real; the largest and smallest, $\lamb
 - [Trace exponential dominates each eigenvalue](exp-mul-eigenvalues-le-re-trace-exp.md)
 - [Trace exponential dominates the top eigenvalue](exp-mul-lambda-max-le-re-trace-exp.md)
 - [Trace exponential dominates the bottom eigenvalue](exp-mul-lambda-min-le-re-trace-exp.md)
+- [Hermitian dilation](dilation.md)
+- [The Hermitian dilation is Hermitian](is-hermitian-dilation.md)
+- [The Hermitian dilation is additive](dilation-add.md)
+- [The Hermitian dilation commutes with real scalars](dilation-smul.md)
+- [Square of the Hermitian dilation](dilation-mul-self.md)
+- [The spectrum of the Hermitian dilation is symmetric](signature-mul-dilation-mul-signature.md)
 
 ## Related topics
 
