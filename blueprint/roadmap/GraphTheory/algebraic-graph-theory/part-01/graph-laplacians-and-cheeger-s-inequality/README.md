@@ -13,3 +13,8 @@
 - [Indicator vector of a vertex set](indicator.md)
 - [Quadratic form of an indicator is the cut weight](indicator-dot-product-mul-vec-laplacian.md)
 - [Easy direction of Cheeger's inequality](mul-card-mul-card-compl-le-of-forall.md)
+- [The Laplacian as a symmetric operator](is-symmetric-to-euclidean-lin-laplacian.md)
+- [Algebraic connectivity](algebraic-connectivity.md)
+- [`λ₂` bounds the Rayleigh quotient on vectors orthogonal to the constants](algebraic-connectivity-mul-le.md)
+- [Easy direction of Cheeger's inequality, eigenvalue form](algebraic-connectivity-mul-card-mul-card.md)
+- [`λ₂ > 0` exactly for connected graphs](algebraic-connectivity-pos-iff.md)
