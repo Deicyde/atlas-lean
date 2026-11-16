@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.Combinatorics.SimpleGraph.GraphLimits.SidorenkoFourCycle
 public import MathlibExt.Combinatorics.SimpleGraph.GraphLimits.Graphon
+public import MathlibExt.Combinatorics.SimpleGraph.GraphLimits.WeakRegularity
 
 /-! Tests for homomorphism densities, the counting lemma and the four-cycle inequality. -/
 
@@ -58,5 +59,18 @@ example : homDensity (⊤ : SimpleGraph (Fin 2)) (adjWeight (⊤ : SimpleGraph (
 /-- A constant sequence of graphs is convergent. -/
 example : IsConvergentGraphSequence (N := fun _ => 3) fun _ => (⊤ : SimpleGraph (Fin 3)) :=
   fun _ _ _ => ⟨_, tendsto_const_nhds⟩
+
+/-- The weak regularity lemma for the triangle with `ε = 1 / 2`: a partition into at most
+`4 ^ 4` classes approximating `K₃` within `‖K₃‖₂ / 2` in the cut norm. -/
+example : ∃ P : Finpartition (Finset.univ : Finset (Fin 3)),
+    (P.parts.card : ℝ) ≤ (4 : ℝ) ^ (1 / (1 / 2 : ℝ) ^ 2) ∧
+      cutNorm (adjWeight (⊤ : SimpleGraph (Fin 3)) - partitionAverage P (adjWeight ⊤)) ≤
+        1 / 2 * kernelL2Norm (adjWeight (⊤ : SimpleGraph (Fin 3))) :=
+  exists_cutNorm_sub_partitionAverage_le _ (by norm_num)
+
+/-- Refining a partition by two sets multiplies the number of its classes by at most four. -/
+example (P : Finpartition (Finset.univ : Finset (Fin 5))) (S T : Finset (Fin 5)) :
+    (refineBy P S T).parts.card ≤ 4 * P.parts.card :=
+  card_refineBy_parts_le P S T
 
 end MathlibExtTest.Combinatorics.SimpleGraph.GraphLimits

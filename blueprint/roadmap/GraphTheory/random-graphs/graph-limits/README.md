@@ -27,6 +27,16 @@ Weak regularity:
 
 - [Partition average of a weighted graph](partition-average.md)
 - [L² norm of a weighted graph](kernel-l2-norm.md)
+- [Block-constant functions](is-block-constant.md)
+- [The partition average is block-constant](is-block-constant-partition-average.md)
+- [Orthogonality of the partition average](sum-sub-partition-average-mul-eq-zero.md)
+- [Energy of a partition](partition-energy.md)
+- [The energy is bounded by the total mass](partition-energy-le.md)
+- [Common refinement relation](refine-setoid.md)
+- [Refinement by two sets](refine-by.md)
+- [Refinement multiplies the number of classes by at most four](card-refine-by-parts-le.md)
+- [Energy increment](sq-sum-sub-partition-average-le.md)
+- [One refinement step](exists-refinement-of-lt-cut-norm.md)
 - [Weak regularity lemma (Frieze–Kannan)](exists-cut-norm-sub-partition-average-le.md)
 
 Graphons and convergence:

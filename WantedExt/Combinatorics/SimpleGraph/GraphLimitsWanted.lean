@@ -13,12 +13,13 @@ public import MathlibExt.Combinatorics.SimpleGraph.GraphLimits.Graphon
 public import WantedExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted
 
 /-!
-# Graph limits: weak regularity, the limit theorem and compactness (wanted)
+# Graph limits: the limit theorem, compactness and uniqueness (wanted)
 
 Central theorems of the theory of dense graph limits, stated on the repository's homomorphism
 densities (`homDensity`, `graphonHomDensity`), cut norms (`cutNorm`, `graphonCutNorm`) and cut
 distance (`cutDistance`), with graphons in the sense of the existing `IsGraphon` (jointly
-measurable, symmetric, values in `[0, 1]`).
+measurable, symmetric, values in `[0, 1]`). The finite counting lemma and the Frieze–Kannan weak
+regularity lemma are proved in `MathlibExt.Combinatorics.SimpleGraph.GraphLimits`.
 
 Sources:
 * L. Lovász and B. Szegedy, *Limits of dense graph sequences*, J. Combin. Theory Ser. B 96 (2006),
@@ -34,18 +35,7 @@ namespace MathlibExt.Combinatorics.SimpleGraph.GraphLimitsWanted
 
 open MathlibExt.Combinatorics.SimpleGraph.GraphLimits
 open MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted (IsGraphon)
-open Finset Filter Topology
-
-/-- **Weak regularity lemma (Frieze–Kannan).** For every `ε > 0`, every weighted graph `w` on a
-finite vertex set `V` (unit node weights) has a partition `P` of `V` into at most `4 ^ (1 / ε²)`
-classes with `d_□(G, G_P) ≤ ε ‖G‖₂`, where `G_P` is the partition average of `G`
-(Borgs–Chayes–Lovász–Sós–Vesztergombi, *Convergent sequences of dense graphs I* (2008), Lemma 2.4,
-inequality (2.10), after Frieze and Kannan, *Quick approximation to matrices and applications*,
-Combinatorica 19 (1999)). -/
-public theorem_wanted exists_cutNorm_sub_partitionAverage_le {V : Type*} [Fintype V]
-    [DecidableEq V] (w : Sym2 V → ℝ) {ε : ℝ} (hε : 0 < ε) :
-    ∃ P : Finpartition (univ : Finset V), (P.parts.card : ℝ) ≤ (4 : ℝ) ^ (1 / ε ^ 2) ∧
-      cutNorm (w - partitionAverage P w) ≤ ε * kernelL2Norm w
+open Filter Topology
 
 /-- **Counting lemma for graphons.** For graphons `U, W` with values in `[0, 1]` and every simple
 graph `F`, `|t(F, U) - t(F, W)| ≤ |E(F)| · ‖U - W‖_□` (Lovász–Szegedy, *Limits of dense graph

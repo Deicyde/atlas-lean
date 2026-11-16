@@ -2683,6 +2683,7 @@
   "MathlibExt/Combinatorics/SimpleGraph/GraphLimits/Graphon": {"to": "GraphTheory/random-graphs", "title": "Graph limits"},
   "MathlibExt/Combinatorics/SimpleGraph/GraphLimits/HomDensity": {"to": "GraphTheory/random-graphs", "title": "Graph limits"},
   "MathlibExt/Combinatorics/SimpleGraph/GraphLimits/SidorenkoFourCycle": {"to": "GraphTheory/extremal-graph-theory", "title": "Sidorenko's conjecture"},
+  "MathlibExt/Combinatorics/SimpleGraph/GraphLimits/WeakRegularity": {"to": "GraphTheory/random-graphs", "title": "Graph limits"},
   "MathlibExt/Combinatorics/SimpleGraph/GraphProducts/LexProduct": {"to": "GraphTheory/graph-families-and-operations", "title": "Lexicographic product of graphs"},
   "MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi": {"to": "GraphTheory/graph-coloring", "title": "Hajnal–Szemerédi theorem"},
   "MathlibExt/Combinatorics/SimpleGraph/HamiltonianCycle": {"to": "GraphTheory/paths-cycles-connectivity", "title": "Hamiltonian cycles"},
