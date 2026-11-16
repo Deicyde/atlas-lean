@@ -3782,6 +3782,7 @@
   "MathlibExt/Probability/BranchingProcess/GaltonWatson": {"to": "Probability/branching-processes", "title": "Galton–Watson process"},
   "MathlibExt/Probability/BranchingProcess/LinearBirthDeath": {"to": "Probability/branching-processes", "title": "Linear birth–death process"},
   "MathlibExt/Probability/BranchingProcess/TotalProgeny": {"to": "Probability/branching-processes", "title": "Total progeny and the hitting-time theorem"},
+  "MathlibExt/Probability/BrownianHolder": {"to": "Probability/stochastic-calculus", "title": "Construction and sample paths of Brownian motion"},
   "MathlibExt/Probability/BrownianMotionExistence": {"to": "Probability/stochastic-calculus", "title": "Construction and sample paths of Brownian motion"},
   "MathlibExt/Probability/BrownianOscillation": {"to": "Probability/stochastic-calculus", "title": "Blumenthal zero–one law"},
   "MathlibExt/Probability/BrownianQuadraticVariation": {"to": "Probability/stochastic-calculus", "title": "Quadratic variation of Brownian motion"},

@@ -12,6 +12,8 @@ reaches arbitrarily high and low levels and hits every real number.
 - [Brownian motion as a continuous modification of pre-Brownian motion](exists-is-brownian-real-modification.md)
 - [Kolmogorov's condition for pre-Brownian motion](is-kolmogorov-process.md)
 - [Fourth moment of a centered Gaussian](integral-pow-four-gaussian-real.md)
+- [Absolute moments of a centered Gaussian are integrable](integrable-abs-rpow-gaussian-real.md)
+- [Scaling of the absolute moments of a centered Gaussian](integral-abs-rpow-gaussian-real.md)
 - [Hölder continuity of Brownian paths](ae-holder-on-with.md)
 - [Brownian paths are nowhere differentiable](ae-not-differentiable-at.md)
 - [Brownian motion is unbounded above and below at infinity](ae-unbounded-at-top.md)
