@@ -9,3 +9,4 @@ The quantum Fourier transform on $q$ basis states is the unitary matrix $A_q$ wi
 ## Related topics
 
 - [Shor's order-finding algorithm](../../../ComputerScience/quantum-algorithms/shor-s-order-finding-algorithm/README.md): the algorithm that applies $A_q$ with $n^2 \le q < 2n^2$ and post-processes the observed output with continued fractions.
+- [Fast Fourier transform](../../../ComputerScience/algebraic-and-numerical-algorithms/fast-fourier-transform/README.md): the classical algorithm for the unnormalised discrete Fourier transform.

@@ -5,3 +5,7 @@ Algorithms for quantum computers and their analysis: Grover search, and Shor's f
 - [Grover's algorithm](grover-s-algorithm/README.md)
 - [Shor's order-finding algorithm](shor-s-order-finding-algorithm/README.md)
 - [Shor's reduction of factoring to order finding](shor-s-reduction-of-factoring-to-order-finding/README.md)
+
+## Related topics
+
+- [Quantum Information](../../QuantumInformation/README.md): states, channels, the quantum Fourier transform and error correction.

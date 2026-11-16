@@ -47,3 +47,7 @@
 - [Minimum distance is at most the length](min-dist-le-length.md)
 - [Singleton bound for linear codes](min-dist-le-of-ne-bot.md)
 - [Hamming bound for linear codes](pow-finrank-mul-sum-le-of-lt-min-dist.md)
+
+## Related topics
+
+- [CSS codes](../../../QuantumInformation/quantum-error-correction/css-codes/README.md): quantum error-correcting codes built from a pair of binary linear codes $C_2 \subseteq C_1$ and the dual code $C_2^{\perp}$.
