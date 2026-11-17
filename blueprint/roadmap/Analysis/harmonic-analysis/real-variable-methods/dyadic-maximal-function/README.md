@@ -31,6 +31,7 @@ The decomposition is the entry point for the weak type (1,1) of singular integra
 ## Related topics
 
 - [Bounded mean oscillation](../bounded-mean-oscillation/README.md): the John–Nirenberg inequality and the $H^1$–$\mathrm{BMO}$ inequality, built on the Calderón–Zygmund decomposition.
+- [Hardy–Littlewood maximal function](../../../../MeasureTheory/real-functions/hardy-littlewood-maximal-function/README.md): the maximal function over all intervals containing a point, used there in statements with an inline definition; on $\mathbb{R}$ it is at most $6$ times the larger of the dyadic maximal functions of the standard and of one shifted dyadic system (Hytönen's notes, Proposition 2.9), so the bounds here transfer to it.
 - [Haar system](../../wavelets/haar-system/README.md): the Haar wavelets live on the same dyadic intervals; the dyadic averages $A_k f$ are the projections onto the Haar approximation spaces $V_k$ of S. Mallat's multiresolution framework.
 - [Convergence of Fourier series](../../fourier-series/convergence-of-fourier-series/README.md): Carleson's theorem on almost-everywhere convergence is proved by a time–frequency refinement of these stopping-time arguments.
 - [Doob's maximal inequalities](../../../../Probability/martingales/doob-s-maximal-inequalities/README.md): on $[0,1)$ the dyadic averages form a martingale and the weak type (1,1) bound is Doob's maximal inequality.
