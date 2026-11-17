@@ -19,6 +19,7 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 ## Finite state spaces
 
 - [Dirichlet form of a sub-Markovian generator on a finite set](form.md)
+- [The form is symmetric](form-comm.md)
 - [Killing rate of a generator](killing-rate.md)
 - [The form of a reversible generator is `-⟨f, Q g⟩`](form-eq-neg-sum-mul-mul-vec.md)
 - [No killing for a Markov kernel](killing-rate-sub-one.md)
@@ -26,6 +27,8 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 - [Sinclair's identity in Dirichlet-form terms](form-sub-one-self-eq-sum-mul-sub-mul-vec.md)
 - [The Dirichlet form of a Markov kernel is nonnegative](form-sub-one-self-nonneg.md)
 - [Unit contraction](unit-contraction.md)
+- [The unit contraction is a normal contraction (differences)](abs-unit-contraction-sub-le.md)
+- [The unit contraction is a normal contraction (values)](abs-unit-contraction-le.md)
 - [Energy comparison under a normal contraction](form-le-form-of-normal-contraction.md)
 - [The Markov property of the form of a sub-Markovian generator](form-unit-contraction-le.md)
 - [The form of a sub-Markovian generator is nonnegative](form-self-nonneg.md)
@@ -36,37 +39,50 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 
 ## Spectral gap and log-Sobolev constant
 
-- [Variance of a function under a weight vector](variance.md)
+- [Variance of a function under a weight vector](weighted-variance.md)
+- [The variance is nonnegative](weighted-variance-nonneg.md)
 - [Spectral gap of a finite Markov kernel, in Dirichlet-form terms](spectral-gap.md)
-- [Poincaré inequality with the spectral gap](spectral-gap-mul-variance-le.md)
+- [The spectral gap is nonnegative](spectral-gap-nonneg.md)
+- [Poincaré inequality with the spectral gap](spectral-gap-mul-weighted-variance-le.md)
 - [Poincaré constants bound the spectral gap from below](le-spectral-gap.md)
 - [Sinclair's Poincaré hypothesis is a lower bound on the spectral gap](inv-le-spectral-gap-iff-poincare.md)
 - [Mixing of a lazy reversible chain from its spectral gap](is-mixed-at-of-le-spectral-gap.md)
-- [Entropy-like functional of the log-Sobolev inequality](entropy.md)
-- [The entropy-like functional is nonnegative](entropy-nonneg.md)
+- [Entropy-like functional of the log-Sobolev inequality](entropy-functional.md)
+- [The entropy-like functional is nonnegative](entropy-functional-nonneg.md)
 - [Log-Sobolev constant of a finite Markov kernel](log-sobolev-constant.md)
-- [Log-Sobolev inequality with the log-Sobolev constant](log-sobolev-constant-mul-entropy-le.md)
+- [The log-Sobolev constant is nonnegative](log-sobolev-constant-nonneg.md)
+- [Log-Sobolev inequality with the log-Sobolev constant](log-sobolev-constant-mul-entropy-functio.md)
 - [The log-Sobolev constant is at most half the spectral gap](two-mul-log-sobolev-constant-le-spectral.md)
-- [Expansion of the entropy functional near the constant `1`](entropy-one-add-mul-ge.md)
+- [Expansion of the entropy functional near the constant `1`](entropy-functional-one-add-mul-ge.md)
 - [Second-order expansion of `t log t` at `1`](abs-mul-log-one-add-sub-le.md)
 
 ## Forms on $L^2(X; m)$
 
 - [Symmetric form on `L²(X; m)`](symmetric-form.md)
 - [The form `E₁`](energy-one.md)
+- [`E₁` dominates the squared norm](norm-sq-le-energy-one.md)
+- [`E₁` dominates `E`](form-le-energy-one.md)
 - [Closed symmetric form](is-closed.md)
 - [Closable symmetric form](is-closable.md)
 - [A form with a closed extension is closable](is-closable-of-le.md)
 - [Closed forms are closable](is-closable-of-is-closed.md)
 - [The unit clamp `t ↦ (0 ∨ t) ∧ 1` is `1`-Lipschitz](lipschitz-with-unit-clamp.md)
 - [Unit contraction on `L²`](unit-contraction-lp.md)
+- [The unit contraction on `L²` is pointwise](unit-contraction-lp-ae-eq.md)
 - [The unit contraction does not increase the `L²` norm](norm-unit-contraction-lp-le.md)
-- [Markovian symmetric form (the unit contraction operates)](is-markovian.md)
+- [The unit contraction operates on a form](unit-contraction-operates.md)
 - [Dirichlet form](is-dirichlet-form.md)
-- [Beurling–Deny: a closed form is Markovian iff its resolvent is Markovian](is-markovian-iff-resolvent.md)
+- [Beurling–Deny: the unit contraction operates on a closed form iff its resolvent is Markovian](unit-contraction-operates-iff-resolvent.md)
 - [The Dirichlet form of linear Brownian motion is `½ ∫ f'²`](tendsto-brownian-approximating-form.md)
 
 ## Regularity, quasi-regularity and associated processes
+
+Hunt processes and right processes are not yet defined in the library. The two process-level
+statements below (Fukushima's theorem and the Albeverio–Ma–Röckner characterisation) are therefore
+placeholders, parametric in undefined predicates: as Lean reads them, each quantifies over every
+predicate on forms and is not literally true. Their intended meaning is obtained by substituting
+the standard notion of a Hunt or right process once that is defined. Regularity, nests,
+exceptional sets, quasi-continuity and quasi-regularity are genuine definitions.
 
 - [Regular symmetric form](is-regular.md)
 - [Elements of the domain vanishing outside a set](vanishing-outside.md)
@@ -78,10 +94,10 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 - [Continuous functions are `E`-quasi-continuous](is-quasi-continuous-of-continuous.md)
 - [Quasi-regular symmetric form](is-quasi-regular.md)
 - [Regular forms are quasi-regular](is-quasi-regular-of-is-regular.md)
-- [Existence of an associated `m`-symmetric Hunt process (opaque)](has-associated-hunt-process.md)
-- [Fukushima's theorem: regular Dirichlet forms have Hunt processes](has-associated-hunt-process-of-is-regula.md)
-- [Existence of an associated right process (opaque)](has-associated-right-process.md)
-- [Albeverio–Ma–Röckner: quasi-regular forms are exactly those with nice processes](is-quasi-regular-iff-has-associated-righ.md)
+- [Existence of an associated `m`-symmetric Hunt process (undefined placeholder)](has-associated-hunt-process.md)
+- [Fukushima's theorem: regular Dirichlet forms have Hunt processes (placeholder statement)](has-associated-hunt-process-of-is-regula.md)
+- [Existence of an associated right process (undefined placeholder)](has-associated-right-process.md)
+- [Albeverio–Ma–Röckner characterisation of quasi-regular forms (placeholder statement)](is-quasi-regular-iff-has-associated-righ.md)
 
 ## Related topics
 
@@ -102,5 +118,5 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 - [Transport-cost inequalities](../../concentration-inequalities/transport-cost-inequalities/README.md):
   log-Sobolev inequalities on metric measure spaces and the Otto–Villani theorem.
 - [Potential theory](../../../Analysis/potential-theory/README.md): Dirichlet forms were introduced by
-  Beurling and Deny as an axiomatic potential theory; capacities, exceptional sets and quasi-continuity
-  extend the classical notions.
+  Beurling and Deny as an axiomatic potential theory; nests, exceptional sets and quasi-continuity
+  extend the classical notions (capacity itself is not yet formalised here).

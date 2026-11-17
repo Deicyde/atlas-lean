@@ -13,4 +13,4 @@ Harmonic and subharmonic functions in the plane and in R^n, harmonic conjugates,
 
 ## Related topics
 
-- [Dirichlet forms](../../Probability/markov-chains/dirichlet-forms/README.md): Beurling and Deny's axiomatic potential theory: capacities, exceptional sets and quasi-continuity for Dirichlet forms.
+- [Dirichlet forms](../../Probability/markov-chains/dirichlet-forms/README.md): Beurling and Deny's axiomatic potential theory: nests, exceptional sets and quasi-continuity for Dirichlet forms (capacity not yet formalised).

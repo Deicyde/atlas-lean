@@ -5,8 +5,10 @@ stochastic matrix `P` (entries `≥ 0`, rows summing to `1`) and a positive prob
 `π`, `2 α(P, π) ≤ λ(P, π)` (P. Diaconis and L. Saloff-Coste, *Logarithmic Sobolev inequalities
 for finite Markov chains*, Ann. Appl. Probab. 6 (1996), Lemma 3.1, proved there by expanding
 `L(1 + ε g)` to second order, as here). Diaconis and Saloff-Coste state it for irreducible chains
-with stationary `π`; neither irreducibility nor stationarity is used. On a one-point space both
-constants are `0`.
+with stationary `π`; neither irreducibility nor stationarity is used. For a non-stationary `π`
+the constants are those of the symmetric form `½ ∑ π(x) P(x, y) (f x - f y)²`, which equals
+Diaconis and Saloff-Coste's `⟨(I - P) f, f⟩_π` only when `π` is stationary. On a one-point space
+both constants are `0`.
 
 ## Background
 

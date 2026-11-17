@@ -68,7 +68,8 @@ theorem innerForm_isClosed (m : Measure X) : (innerForm m).IsClosed := by
   have h := (tendsto_iff_norm_sub_tendsto_zero.mp hw).pow 2 |>.const_mul 2
   simpa [innerForm_energyOne] using h
 
-theorem innerForm_isMarkovian (m : Measure X) : (innerForm m).IsMarkovian := by
+theorem innerForm_unitContractionOperates (m : Measure X) :
+    (innerForm m).UnitContractionOperates := by
   intro u _
   refine ⟨Submodule.mem_top, ?_⟩
   rw [innerForm_form, innerForm_form, real_inner_self_eq_norm_sq, real_inner_self_eq_norm_sq]
@@ -77,7 +78,7 @@ theorem innerForm_isMarkovian (m : Measure X) : (innerForm m).IsMarkovian := by
   nlinarith
 
 theorem innerForm_isDirichletForm (m : Measure X) : (innerForm m).IsDirichletForm :=
-  ⟨innerForm_isClosed m, innerForm_isMarkovian m⟩
+  ⟨innerForm_isClosed m, innerForm_unitContractionOperates m⟩
 
 example (m : Measure X) : (innerForm m).IsClosable :=
   SymmetricForm.isClosable_of_isClosed _ (innerForm_isClosed m)

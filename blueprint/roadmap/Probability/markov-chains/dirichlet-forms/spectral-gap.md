@@ -5,7 +5,7 @@
 Probab.* 6 (1996), equation (1.4)). The infimum of the empty set is `0` (one-point spaces).
 
 The spectral gap is the best constant in the Poincaré inequality
-$\lambda \operatorname{Var}_\pi(f) \le \mathcal E(f, f)$ ([statement](spectral-gap-mul-variance-le.md)).
+$\lambda \operatorname{Var}_\pi(f) \le \mathcal E(f, f)$ ([statement](spectral-gap-mul-weighted-variance-le.md)).
 For an irreducible chain reversible with respect to $\pi > 0$ it is the second smallest eigenvalue of
 $I - P$; that spectral identification is not formalised here.
 

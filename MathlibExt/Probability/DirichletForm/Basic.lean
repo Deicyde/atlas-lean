@@ -28,13 +28,16 @@ revised and extended edition, de Gruyter Studies in Mathematics 19, 2011, §1.1:
 * the form is **closable** when it satisfies condition (1.1.2): an `E`-Cauchy sequence in `D[E]`
   tending to `0` in `L²` has energy tending to `0`;
 * the **unit contraction** `u ↦ (0 ∨ u) ∧ 1` operates on `E` when `D[E]` is stable under it and it
-  does not increase the energy (condition (E.4)′); we call such a form **Markovian**;
-* a **Dirichlet form** is a closed Markovian symmetric form.
+  does not increase the energy (condition (E.4)′, `UnitContractionOperates`);
+* a **Dirichlet form** is a closed symmetric form on which the unit contraction operates.
 
-FOT define "Markovian" by the ε-regularised condition (E.4) and show in Theorem 1.4.1 that, for
-closed forms, (E.4), (E.4)′ and (E.4)″ (normal contractions) are equivalent; we use the unit
-contraction (E.4)′ directly. The bilinear map is defined on all of `L²`, but only its values on
-`D[E]` enter the definitions (a bilinear form on a subspace always extends linearly).
+FOT define "Markovian" by the ε-regularised condition (E.4). They note (§1.1) that
+(E.4)″ ⇒ (E.4)′ ⇒ (E.4), that the three are equivalent for closed forms (Theorem 1.4.1), and that
+Markovian closable forms that are not closed need not satisfy (E.4)′. So `UnitContractionOperates`
+is FOT's "Markovian" only for closed forms; for closable forms it is strictly stronger. Dirichlet
+forms are closed, so FOT's definition of a Dirichlet form is recovered. The bilinear map is defined
+on all of `L²`, but only its values on `D[E]` enter the definitions (a bilinear form on a subspace
+always extends linearly).
 
 The non-symmetric theory of Z.-M. Ma and M. Röckner (*Introduction to the Theory of
 (Non-Symmetric) Dirichlet Forms*, Springer, 1992) replaces symmetry by a sector condition and
@@ -45,7 +48,7 @@ asks the unit contraction condition in both orders; see M. Röckner and B. Schmu
 
 * `SymmetricForm m`, `SymmetricForm.energyOne`.
 * `SymmetricForm.IsClosed`, `SymmetricForm.IsClosable`.
-* `unitContractionLp`, `SymmetricForm.IsMarkovian`, `SymmetricForm.IsDirichletForm`.
+* `unitContractionLp`, `SymmetricForm.UnitContractionOperates`, `SymmetricForm.IsDirichletForm`.
 
 ## Main results
 
@@ -106,11 +109,13 @@ def IsClosable : Prop :=
     Tendsto (fun n => ‖u n‖) atTop (𝓝 0) →
     Tendsto (fun n => E.form (u n) (u n)) atTop (𝓝 0)
 
+/-- **`E₁` dominates the squared norm.** For `u ∈ D[E]`, `‖u‖² ≤ E₁(u, u)`. -/
 theorem norm_sq_le_energyOne {u : Lp ℝ 2 m} (hu : u ∈ E.domain) : ‖u‖ ^ 2 ≤ E.energyOne u u := by
   unfold energyOne
   rw [real_inner_self_eq_norm_sq]
   linarith [E.nonneg u hu]
 
+/-- **`E₁` dominates `E`.** `E(u, u) ≤ E₁(u, u)` for every `u`. -/
 theorem form_le_energyOne (u : Lp ℝ 2 m) : E.form u u ≤ E.energyOne u u := by
   unfold energyOne
   rw [real_inner_self_eq_norm_sq]
@@ -186,6 +191,8 @@ Takeda, *Dirichlet Forms and Symmetric Markov Processes*, 2nd ed., 2011, §1.1, 
 noncomputable def unitContractionLp (u : Lp ℝ 2 m) : Lp ℝ 2 m :=
   lipschitzWith_unitClamp.compLp (by simp) u
 
+/-- **The unit contraction on `L²` is pointwise.** `(0 ∨ u) ∧ 1` is a.e. equal to
+`x ↦ max 0 (min (u x) 1)`. -/
 theorem unitContractionLp_ae_eq (u : Lp ℝ 2 m) :
     unitContractionLp u =ᵐ[m] fun x => max 0 (min (u x) 1) :=
   LipschitzWith.coeFn_compLp _ _ u
@@ -204,19 +211,23 @@ namespace SymmetricForm
 
 variable (E : SymmetricForm m)
 
-/-- **Markovian symmetric form (the unit contraction operates).** For every `u ∈ D[E]`, the unit
-contraction `v = (0 ∨ u) ∧ 1` lies in `D[E]` and `E(v, v) ≤ E(u, u)` (Fukushima, Oshima and
-Takeda, *Dirichlet Forms and Symmetric Markov Processes*, 2nd ed., 2011, §1.1, condition (E.4)′;
-by their Theorem 1.4.1 this is equivalent, for closed forms, to their Markov condition (E.4)). -/
-def IsMarkovian : Prop :=
+/-- **The unit contraction operates on a form.** For every `u ∈ D[E]`, the unit contraction
+`v = (0 ∨ u) ∧ 1` lies in `D[E]` and `E(v, v) ≤ E(u, u)` (Fukushima, Oshima and Takeda,
+*Dirichlet Forms and Symmetric Markov Processes*, 2nd ed., 2011, §1.1, condition (E.4)′). By
+their Theorem 1.4.1 this is equivalent, for closed forms, to their Markov condition (E.4). For
+closable forms that are not closed it is strictly stronger than (E.4): FOT §1.1 note that
+Markovian closable forms need not satisfy (E.4)′. -/
+def UnitContractionOperates : Prop :=
   ∀ u ∈ E.domain, unitContractionLp u ∈ E.domain ∧
     E.form (unitContractionLp u) (unitContractionLp u) ≤ E.form u u
 
-/-- **Dirichlet form.** A closed Markovian symmetric form on `L²(X; m)` (Fukushima, Oshima and
-Takeda, *Dirichlet Forms and Symmetric Markov Processes*, 2nd ed., 2011, §1.1: "a Dirichlet form
-is by definition a symmetric form on `L²(X; m)` which is not only Markovian but also closed"). -/
+/-- **Dirichlet form.** A closed symmetric form on `L²(X; m)` on which the unit contraction
+operates (Fukushima, Oshima and Takeda, *Dirichlet Forms and Symmetric Markov Processes*, 2nd
+ed., 2011, §1.1: "a Dirichlet form is by definition a symmetric form on `L²(X; m)` which is not
+only Markovian but also closed"; for closed forms Markovian (E.4) and the unit contraction
+condition (E.4)′ are equivalent, as FOT note on the same page and prove in Theorem 1.4.1). -/
 def IsDirichletForm : Prop :=
-  E.IsClosed ∧ E.IsMarkovian
+  E.IsClosed ∧ E.UnitContractionOperates
 
 end SymmetricForm
 

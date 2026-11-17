@@ -5,7 +5,10 @@ For weights `m` and a matrix
 `E(f, g) = ½ ∑_{x,y} m(x) Q(x, y) (f x - f y)(g x - g y) + ∑_x m(x) k(x) f(x) g(x)`
 with `k = killingRate Q` (Fukushima, Oshima and Takeda, *Dirichlet Forms and Symmetric Markov
 Processes*, 2nd ed., 2011, Example 1.2.5, equation (1.2.27), on a finite set). The diagonal
-entries of `Q` contribute only through `k`.
+entries of `Q` contribute only through `k`. FOT assume `m` symmetrising (`m(x) Q(x, y) = m(y)
+Q(y, x)`, their (1.2.26)); the definition here makes sense for every `(m, Q)`, and without detailed
+balance it is the form of the `m`-symmetrised generator (the Markov property below does not need
+detailed balance).
 
 On a finite set every bilinear form is closed, and the form is a Dirichlet form on $\ell^2(m)$ as soon as
 $m \ge 0$, the off-diagonal entries of $Q$ are nonnegative and $k \ge 0$ (see

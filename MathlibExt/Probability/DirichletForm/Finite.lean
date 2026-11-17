@@ -86,11 +86,15 @@ def killingRate (Q : Matrix S S ℝ) (x : S) : ℝ :=
 `E(f, g) = ½ ∑_{x,y} m(x) Q(x, y) (f x - f y)(g x - g y) + ∑_x m(x) k(x) f(x) g(x)`
 with `k = killingRate Q` (Fukushima, Oshima and Takeda, *Dirichlet Forms and Symmetric Markov
 Processes*, 2nd ed., 2011, Example 1.2.5, equation (1.2.27), on a finite set). The diagonal
-entries of `Q` contribute only through `k`. -/
+entries of `Q` contribute only through `k`. FOT assume `m` symmetrising (`m(x) Q(x, y) = m(y)
+Q(y, x)`, their (1.2.26)); the definition here makes sense for every `(m, Q)`, and without detailed
+balance it is the form of the `m`-symmetrised generator (the Markov property below does not need
+detailed balance). -/
 noncomputable def form (m : S → ℝ) (Q : Matrix S S ℝ) (f g : S → ℝ) : ℝ :=
   1 / 2 * ∑ x, ∑ y, m x * Q x y * (f x - f y) * (g x - g y) +
     ∑ x, m x * killingRate Q x * f x * g x
 
+/-- **The form is symmetric.** `E(f, g) = E(g, f)` for every `m`, `Q`, `f`, `g`. -/
 theorem form_comm (m : S → ℝ) (Q : Matrix S S ℝ) (f g : S → ℝ) :
     form m Q f g = form m Q g f := by
   unfold form
@@ -203,6 +207,8 @@ def unitContraction (u : S → ℝ) (x : S) : ℝ :=
   max 0 (min (u x) 1)
 
 omit [Fintype S] in
+/-- **The unit contraction is a normal contraction (differences).**
+`|((0 ∨ u) ∧ 1)(x) - ((0 ∨ u) ∧ 1)(y)| ≤ |u x - u y|`. -/
 theorem abs_unitContraction_sub_le (u : S → ℝ) (x y : S) :
     |unitContraction u x - unitContraction u y| ≤ |u x - u y| := by
   unfold unitContraction
@@ -213,6 +219,7 @@ theorem abs_unitContraction_sub_le (u : S → ℝ) (x y : S) :
     _ = |u x - u y| := by simp
 
 omit [Fintype S] in
+/-- **The unit contraction is a normal contraction (values).** `|((0 ∨ u) ∧ 1)(x)| ≤ |u x|`. -/
 theorem abs_unitContraction_le (u : S → ℝ) (x : S) : |unitContraction u x| ≤ |u x| := by
   unfold unitContraction
   rw [abs_le]

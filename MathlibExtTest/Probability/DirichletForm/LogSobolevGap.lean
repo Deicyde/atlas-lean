@@ -33,7 +33,8 @@ open MathlibExtTest.Probability.DirichletForm.SpectralGap
 namespace MathlibExtTest.Probability.DirichletForm.LogSobolevGap
 
 example : logSobolevConstant π₂ K₂ ≤ 1 / 2 := by
-  have h := two_mul_logSobolevConstant_le_spectralGap (π := π₂) (P := K₂) (fun _ => by norm_num [π₂])
+  have h := two_mul_logSobolevConstant_le_spectralGap (π := π₂) (P := K₂)
+    (fun _ => by norm_num [π₂])
     (by simp [π₂]) (fun _ _ => by simp [K₂]) (fun x => by simp [K₂])
   rw [spectralGap_K₂] at h
   linarith

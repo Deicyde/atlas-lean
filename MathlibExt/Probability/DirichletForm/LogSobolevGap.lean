@@ -76,9 +76,9 @@ theorem abs_mul_log_one_add_sub_le {u : ℝ} (hu : |u| ≤ 1 / 2) :
 variable {S : Type*} [Fintype S] [DecidableEq S]
 
 omit [DecidableEq S] in
-private theorem variance_eq_sum_sq_sub {π : S → ℝ} (hπ1 : ∑ x, π x = 1) (u : S → ℝ) :
-    variance π u = ∑ x, π x * u x ^ 2 - (∑ x, π x * u x) ^ 2 := by
-  unfold variance
+private theorem weightedVariance_eq_sum_sq_sub {π : S → ℝ} (hπ1 : ∑ x, π x = 1) (u : S → ℝ) :
+    weightedVariance π u = ∑ x, π x * u x ^ 2 - (∑ x, π x * u x) ^ 2 := by
+  unfold weightedVariance
   have e : ∀ x y, (u x - u y) ^ 2 * (π x * π y) =
       π y * (π x * u x ^ 2) + π x * (π y * u y ^ 2) - 2 * ((π x * u x) * (π y * u y)) := by
     intro x y; ring
@@ -87,9 +87,9 @@ private theorem variance_eq_sum_sq_sub {π : S → ℝ} (hπ1 : ∑ x, π x = 1)
   ring
 
 omit [DecidableEq S] in
-private theorem variance_smul (π : S → ℝ) (c : ℝ) (w : S → ℝ) :
-    variance π (fun x => c * w x) = c ^ 2 * variance π w := by
-  unfold variance
+private theorem weightedVariance_smul (π : S → ℝ) (c : ℝ) (w : S → ℝ) :
+    weightedVariance π (fun x => c * w x) = c ^ 2 * weightedVariance π w := by
+  unfold weightedVariance
   have e : ∀ x y, (c * w x - c * w y) ^ 2 * (π x * π y) =
       c ^ 2 * ((w x - w y) ^ 2 * (π x * π y)) := by
     intro x y; ring
@@ -98,11 +98,11 @@ private theorem variance_smul (π : S → ℝ) (c : ℝ) (w : S → ℝ) :
 
 omit [DecidableEq S] in
 /-- The variance of `2 g + ε g²` is at least `4 Var(g) - 4 ε K`. -/
-private theorem variance_two_mul_add_ge {π : S → ℝ} (hπ : ∀ x, 0 ≤ π x) (g : S → ℝ) {ε : ℝ}
+private theorem weightedVariance_two_mul_add_ge {π : S → ℝ} (hπ : ∀ x, 0 ≤ π x) (g : S → ℝ) {ε : ℝ}
     (hε : 0 ≤ ε) :
-    4 * variance π g - 4 * ε * (1 / 2 * ∑ x, ∑ y, |g x - g y| * |g x ^ 2 - g y ^ 2| *
-      (π x * π y)) ≤ variance π (fun x => 2 * g x + ε * g x ^ 2) := by
-  unfold variance
+    4 * weightedVariance π g - 4 * ε * (1 / 2 * ∑ x, ∑ y, |g x - g y| * |g x ^ 2 - g y ^ 2| *
+      (π x * π y)) ≤ weightedVariance π (fun x => 2 * g x + ε * g x ^ 2) := by
+  unfold weightedVariance
   have hpt : ∀ x y, 4 * ((g x - g y) ^ 2 * (π x * π y)) -
       4 * ε * (|g x - g y| * |g x ^ 2 - g y ^ 2| * (π x * π y)) ≤
       (2 * g x + ε * g x ^ 2 - (2 * g y + ε * g y ^ 2)) ^ 2 * (π x * π y) := by
@@ -129,11 +129,12 @@ vector, `g` a function, `ε ≥ 0` and `A` with `|2 g(x) + ε g(x)²| ≤ A` for
 `ε A ≤ 1/2`. Then
 `L_π(1 + ε g) ≥ 2 ε² Var_π(g) - ε³ (2 K + 8 A³)`, with
 `K = ½ ∑ |g x - g y| |g x² - g y²| π(x) π(y)`. -/
-theorem entropy_one_add_mul_ge {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
+theorem entropyFunctional_one_add_mul_ge {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1)
     (g : S → ℝ) {ε A : ℝ} (hε : 0 ≤ ε) (hA : ∀ x, |2 * g x + ε * g x ^ 2| ≤ A)
     (hεA : ε * A ≤ 1 / 2) :
-    2 * ε ^ 2 * variance π g - ε ^ 3 * (2 * (1 / 2 * ∑ x, ∑ y, |g x - g y| *
-      |g x ^ 2 - g y ^ 2| * (π x * π y)) + 8 * A ^ 3) ≤ entropy π (fun x => 1 + ε * g x) := by
+    2 * ε ^ 2 * weightedVariance π g - ε ^ 3 * (2 * (1 / 2 * ∑ x, ∑ y, |g x - g y| *
+      |g x ^ 2 - g y ^ 2| * (π x * π y)) + 8 * A ^ 3) ≤
+      entropyFunctional π (fun x => 1 + ε * g x) := by
   set K := 1 / 2 * ∑ x, ∑ y, |g x - g y| * |g x ^ 2 - g y ^ 2| * (π x * π y) with hK
   set w : S → ℝ := fun x => 2 * g x + ε * g x ^ 2 with hw
   set u : S → ℝ := fun x => ε * w x with hu
@@ -156,7 +157,7 @@ theorem entropy_one_add_mul_ge {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
     have := neg_abs_le (u x); linarith [hux2 x]
   have hUpos : 0 < 1 + U := by have := neg_abs_le U; linarith
   -- `L = ∑ π φ(1 + u) - φ(1 + U)`.
-  have hL : entropy π (fun x => 1 + ε * g x) =
+  have hL : entropyFunctional π (fun x => 1 + ε * g x) =
       ∑ x, π x * ((1 + u x) * Real.log (1 + u x)) - (1 + U) * Real.log (1 + U) := by
     change ∑ x, (1 + ε * g x) ^ 2 * Real.log ((1 + ε * g x) ^ 2 / ∑ y, π y * (1 + ε * g y) ^ 2) *
       π x = _
@@ -188,9 +189,9 @@ theorem entropy_one_add_mul_ge {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
     rw [hU, Finset.sum_div, Finset.mul_sum, ← Finset.sum_add_distrib, ← Finset.sum_sub_distrib]
     exact Finset.sum_congr rfl fun x _ => by ring
   -- The quadratic part is half the variance of `u = ε w`.
-  have hvar : (∑ x, π x * u x ^ 2) - U ^ 2 = ε ^ 2 * variance π w := by
-    rw [← variance_smul, variance_eq_sum_sq_sub hπ1]
-  have hw4 := variance_two_mul_add_ge (fun x => (hπ x).le) g hε
+  have hvar : (∑ x, π x * u x ^ 2) - U ^ 2 = ε ^ 2 * weightedVariance π w := by
+    rw [← weightedVariance_smul, weightedVariance_eq_sum_sq_sub hπ1]
+  have hw4 := weightedVariance_two_mul_add_ge (fun x => (hπ x).le) g hε
   -- Cubic remainders.
   have hcube : ∑ x, π x * |u x| ^ 3 ≤ (ε * A) ^ 3 := by
     calc ∑ x, π x * |u x| ^ 3 ≤ ∑ x, π x * (ε * A) ^ 3 :=
@@ -200,14 +201,15 @@ theorem entropy_one_add_mul_ge {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : 
   have hUcube : |U| ^ 3 ≤ (ε * A) ^ 3 := pow_le_pow_left₀ (abs_nonneg _) hUb 3
   rw [hL]
   have hε2 : 0 ≤ ε ^ 2 := sq_nonneg ε
-  have hw4' : ε ^ 2 * (4 * variance π g - 4 * ε * K) ≤ ε ^ 2 * variance π w :=
+  have hw4' : ε ^ 2 * (4 * weightedVariance π g - 4 * ε * K) ≤ ε ^ 2 * weightedVariance π w :=
     mul_le_mul_of_nonneg_left hw4 hε2
   nlinarith
 
 omit [DecidableEq S] in
 /-- On a space with two distinct points of positive weight, an indicator has positive variance. -/
-private theorem exists_variance_ne_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x) {x y : S} (hxy : x ≠ y) :
-    ∃ f, variance π f ≠ 0 := by
+private theorem exists_weightedVariance_ne_zero {π : S → ℝ} (hπ : ∀ x, 0 < π x) {x y : S}
+    (hxy : x ≠ y) :
+    ∃ f, weightedVariance π f ≠ 0 := by
   classical
   set e : S → ℝ := fun z => if z = x then 1 else 0 with he
   refine ⟨e, ne_of_gt ?_⟩
@@ -232,8 +234,10 @@ stochastic matrix `P` (entries `≥ 0`, rows summing to `1`) and a positive prob
 `π`, `2 α(P, π) ≤ λ(P, π)` (P. Diaconis and L. Saloff-Coste, *Logarithmic Sobolev inequalities
 for finite Markov chains*, Ann. Appl. Probab. 6 (1996), Lemma 3.1, proved there by expanding
 `L(1 + ε g)` to second order, as here). Diaconis and Saloff-Coste state it for irreducible chains
-with stationary `π`; neither irreducibility nor stationarity is used. On a one-point space both
-constants are `0`. -/
+with stationary `π`; neither irreducibility nor stationarity is used. For a non-stationary `π`
+the constants are those of the symmetric form `½ ∑ π(x) P(x, y) (f x - f y)²`, which equals
+Diaconis and Saloff-Coste's `⟨(I - P) f, f⟩_π` only when `π` is stationary. On a one-point space
+both constants are `0`. -/
 theorem two_mul_logSobolevConstant_le_spectralGap {π : S → ℝ} (hπ : ∀ x, 0 < π x)
     (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ} (hP : ∀ x y, 0 ≤ P x y)
     (hrow : ∀ x, ∑ y, P x y = 1) :
@@ -241,14 +245,14 @@ theorem two_mul_logSobolevConstant_le_spectralGap {π : S → ℝ} (hπ : ∀ x,
   have hπ0 : ∀ x, 0 ≤ π x := fun x => (hπ x).le
   have hα0 := logSobolevConstant_nonneg hπ0 hπ1 hP hrow
   set α := logSobolevConstant π P with hα
-  by_cases hne : ∃ f, variance π f ≠ 0
+  by_cases hne : ∃ f, weightedVariance π f ≠ 0
   swap
-  · -- All points coincide: the entropy functional vanishes identically, so `α = 0`.
+  · -- All points coincide: the entropyFunctional functional vanishes identically, so `α = 0`.
     have hsub : ∀ x y : S, x = y := by
-      intro x y; by_contra hxy; exact hne (exists_variance_ne_zero hπ hxy)
-    have hent : ∀ f, entropy π f = 0 := by
+      intro x y; by_contra hxy; exact hne (exists_weightedVariance_ne_zero hπ hxy)
+    have hent : ∀ f, entropyFunctional π f = 0 := by
       intro f
-      unfold entropy
+      unfold entropyFunctional
       refine Finset.sum_eq_zero fun x _ => ?_
       have hπx : π x = 1 := by
         rw [← hπ1, Finset.sum_eq_single x (fun b _ hb => absurd (hsub b x) hb)
@@ -260,13 +264,13 @@ theorem two_mul_logSobolevConstant_le_spectralGap {π : S → ℝ} (hπ : ∀ x,
       by_cases hf : f x ^ 2 = 0
       · rw [hf]; simp
       · rw [div_self hf, Real.log_one]; ring
-    have hset : {f : S → ℝ | entropy π f ≠ 0} = ∅ := by
+    have hset : {f : S → ℝ | entropyFunctional π f ≠ 0} = ∅ := by
       ext f; simp [hent f]
     have : α = 0 := by rw [hα, logSobolevConstant, hset, Set.image_empty, Real.sInf_empty]
     rw [this, mul_zero]
     exact spectralGap_nonneg hπ0 hP hrow
   refine le_spectralGap hπ0 hne fun g => ?_
-  set V := variance π g
+  set V := weightedVariance π g
   set E := form π (P - 1) g g
   set M := ∑ x, |g x| with hMdef
   have hM : ∀ x, |g x| ≤ M := fun x =>
@@ -294,8 +298,8 @@ theorem two_mul_logSobolevConstant_le_spectralGap {π : S → ℝ} (hπ : ∀ x,
             have := mul_le_mul hε1 hsq (sq_nonneg (g x)) zero_le_one
             linarith
         _ = A := by ring
-    have hL := entropy_one_add_mul_ge hπ hπ1 g hε0.le hAx hεA
-    have hls := logSobolevConstant_mul_entropy_le hπ0 hπ1 hP hrow (fun x => 1 + ε * g x)
+    have hL := entropyFunctional_one_add_mul_ge hπ hπ1 g hε0.le hAx hεA
+    have hls := logSobolevConstant_mul_entropyFunctional_le hπ0 hπ1 hP hrow (fun x => 1 + ε * g x)
     have hEf : form π (P - 1) (fun x => 1 + ε * g x) (fun x => 1 + ε * g x) = ε ^ 2 * E := by
       simp only [E, form_sub_one π hrow]
       have e : ∀ x y, π x * P x y * (1 + ε * g x - (1 + ε * g y)) * (1 + ε * g x - (1 + ε * g y)) =

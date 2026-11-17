@@ -40,41 +40,43 @@ noncomputable def K₂ : Matrix (Fin 2) (Fin 2) ℝ := Matrix.of fun _ _ => 1 / 
 /-- The uniform distribution on two states. -/
 noncomputable def π₂ : Fin 2 → ℝ := fun _ => 1 / 2
 
-theorem form_K₂ (f : Fin 2 → ℝ) : form π₂ (K₂ - 1) f f = variance π₂ f := by
+theorem form_K₂ (f : Fin 2 → ℝ) : form π₂ (K₂ - 1) f f = weightedVariance π₂ f := by
   rw [form_sub_one π₂ (fun x => by simp [K₂])]
-  simp [variance, π₂, K₂, Fin.sum_univ_two]
+  simp [weightedVariance, π₂, K₂, Fin.sum_univ_two]
   ring
 
 theorem lazy_eq : (1 / 2 : ℝ) • (1 + K₂) = Matrix.of fun i j => if i = j then 3 / 4 else 1 / 4 := by
   ext i j; fin_cases i <;> fin_cases j <;> simp [K₂] <;> norm_num
 
 theorem form_lazy (f : Fin 2 → ℝ) :
-    form π₂ ((1 / 2 : ℝ) • (1 + K₂) - 1) f f = 1 / 2 * variance π₂ f := by
+    form π₂ ((1 / 2 : ℝ) • (1 + K₂) - 1) f f = 1 / 2 * weightedVariance π₂ f := by
   rw [lazy_eq, form_sub_one π₂ (fun x => by fin_cases x <;> simp [Fin.sum_univ_two] <;> norm_num)]
-  simp [variance, π₂, Fin.sum_univ_two]
+  simp [weightedVariance, π₂, Fin.sum_univ_two]
   ring
 
-theorem variance_ne_zero : variance π₂ ![1, 0] ≠ 0 := by
-  simp [variance, π₂, Fin.sum_univ_two]
+theorem weightedVariance_ne_zero : weightedVariance π₂ ![1, 0] ≠ 0 := by
+  simp [weightedVariance, π₂, Fin.sum_univ_two]
 
 theorem spectralGap_K₂ : spectralGap π₂ K₂ = 1 := by
-  have : (fun f => form π₂ (K₂ - 1) f f / variance π₂ f) '' {f | variance π₂ f ≠ 0} = {1} := by
+  have : (fun f => form π₂ (K₂ - 1) f f / weightedVariance π₂ f) ''
+      {f | weightedVariance π₂ f ≠ 0} = {1} := by
     ext c
     simp only [Set.mem_image, Set.mem_ofPred_eq, Set.mem_singleton_iff]
     constructor
     · rintro ⟨f, hf, rfl⟩; rw [form_K₂, div_self hf]
-    · rintro rfl; exact ⟨_, variance_ne_zero, by rw [form_K₂, div_self variance_ne_zero]⟩
+    · rintro rfl
+      exact ⟨_, weightedVariance_ne_zero, by rw [form_K₂, div_self weightedVariance_ne_zero]⟩
   rw [spectralGap, this, csInf_singleton]
 
 theorem spectralGap_lazy : spectralGap π₂ ((1 / 2 : ℝ) • (1 + K₂)) = 1 / 2 := by
-  have : (fun f => form π₂ ((1 / 2 : ℝ) • (1 + K₂) - 1) f f / variance π₂ f) ''
-      {f | variance π₂ f ≠ 0} = {1 / 2} := by
+  have : (fun f => form π₂ ((1 / 2 : ℝ) • (1 + K₂) - 1) f f / weightedVariance π₂ f) ''
+      {f | weightedVariance π₂ f ≠ 0} = {1 / 2} := by
     ext c
     simp only [Set.mem_image, Set.mem_ofPred_eq, Set.mem_singleton_iff]
     constructor
     · rintro ⟨f, hf, rfl⟩; rw [form_lazy]; field_simp
     · rintro rfl
-      exact ⟨_, variance_ne_zero, by rw [form_lazy]; field_simp [variance_ne_zero]⟩
+      exact ⟨_, weightedVariance_ne_zero, by rw [form_lazy]; field_simp [weightedVariance_ne_zero]⟩
   rw [spectralGap, this, csInf_singleton]
 
 /-- Mixing of the lazy chain at time `2` from its spectral gap `1/2`. -/
@@ -87,14 +89,14 @@ example : IsMixedAt ((1 / 2 : ℝ) • (1 + K₂)) π₂ 2 := by
 
 /-- The log-Sobolev inequality holds with the log-Sobolev constant. -/
 example (f : Fin 2 → ℝ) :
-    logSobolevConstant π₂ K₂ * entropy π₂ f ≤ form π₂ (K₂ - 1) f f :=
-  logSobolevConstant_mul_entropy_le (fun _ => by norm_num [π₂]) (by simp [π₂])
+    logSobolevConstant π₂ K₂ * entropyFunctional π₂ f ≤ form π₂ (K₂ - 1) f f :=
+  logSobolevConstant_mul_entropyFunctional_le (fun _ => by norm_num [π₂]) (by simp [π₂])
     (fun _ _ => by simp [K₂]) (fun x => by simp [K₂]) f
 
 /-- On a one-point space every function has zero variance and the gap is `0`. -/
 example (P : Matrix Unit Unit ℝ) : spectralGap (fun _ => 1) P = 0 := by
-  have : {f : Unit → ℝ | variance (fun _ => 1) f ≠ 0} = ∅ := by
-    ext f; simp [variance]
+  have : {f : Unit → ℝ | weightedVariance (fun _ => 1) f ≠ 0} = ∅ := by
+    ext f; simp [weightedVariance]
   rw [spectralGap, this, Set.image_empty, Real.sInf_empty]
 
 end MathlibExtTest.Probability.DirichletForm.SpectralGap

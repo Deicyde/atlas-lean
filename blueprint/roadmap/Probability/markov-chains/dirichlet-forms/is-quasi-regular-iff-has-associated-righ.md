@@ -1,7 +1,6 @@
-# Albeverio–Ma–Röckner: quasi-regular forms are exactly those with nice processes
+# Albeverio–Ma–Röckner characterisation of quasi-regular forms (placeholder statement)
 
-Let `X`
-be a Polish space and `m` a σ-finite Borel measure. A Dirichlet form on `L²(X; m)` is
+Let `X` be a Polish space and `m` a σ-finite Borel measure. A Dirichlet form on `L²(X; m)` is
 quasi-regular if and only if there is a normal right-continuous strong Markov process associated
 with it (Z.-M. Ma and M. Röckner, *Introduction to the Theory of (Non-Symmetric) Dirichlet
 Forms*, Springer, 1992, Chapter IV, Theorem 6.7, as stated in M. Röckner and B. Schmuland,
@@ -9,6 +8,13 @@ Forms*, Springer, 1992, Chapter IV, Theorem 6.7, as stated in M. Röckner and B.
 case). The source theorem is for non-symmetric Dirichlet forms on metrizable Lusin spaces and a
 pair `(M, M̂)` of processes; this is its specialisation to symmetric forms (where `M̂ = M`) on
 Polish spaces.
+
+**Lean content.** This is a placeholder, parametric in the undefined predicate
+`HasAssociatedRightProcess`. As Lean reads it, that predicate is a variable ranging over every
+predicate on forms, so the statement quantifies over all predicates and is not literally true
+(it can be refuted by choosing the predicate). Its intended meaning is the theorem above,
+obtained by substituting the standard notion of a right process once that is defined; only the
+hypotheses are genuine Lean definitions.
 
 Quasi-regularity is what makes the theory work on infinite-dimensional state spaces (loop spaces,
 Banach spaces, measure-valued Fleming–Viot processes; Röckner and Schmuland 1995, Section 4), where
