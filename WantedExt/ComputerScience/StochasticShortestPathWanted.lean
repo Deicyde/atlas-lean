@@ -23,8 +23,10 @@ substochastic transitions, every action allowed in every state, rewards maximize
 Bertsekas's cost per stage is `-M.reward`), the *strong SSP conditions* are: (a) some stationary
 policy is proper, and (b) every improper stationary policy has infinite cost, that is, total reward
 `-∞`, from some initial state. Under them Bellman's equation `T V = V` has a unique solution `V*`,
-value iteration converges to it from every start, and the stationary policies `μ` with
-`T_μ V* = T V*` are exactly the optimal ones; an optimal policy is proper.
+value iteration converges to it from every start, no stationary policy does better than `V*` (in
+Bertsekas's limsup-cost sense, which also covers improper policies), and the stationary policies
+`μ` with `T_μ V* = T V*` are exactly the optimal stationary ones, which are proper. Non-stationary
+policies are not compared here.
 -/
 
 @[expose] public section
@@ -44,16 +46,23 @@ stationary policy `μ` there is a state `s` from which the `N`-stage total rewar
 
 * `V*` is the unique solution of Bellman's equation `T V* = V*` (`T = bellman M 1`);
 * value iteration `T^k J` converges to `V*` from every `J`;
-* no proper policy has a larger value: `sspValue M μ ≤ V*` for every proper `μ`;
+* no stationary policy does better than `V*`: for every stationary `μ` (proper or not) and every
+  state `s`, the `N`-stage total rewards `(T_μ^N 0)(s)` are frequently at most `V*(s) + ε`, for
+  every `ε > 0`; that is, `liminf_N (T_μ^N 0)(s) ≤ V*(s)`, the reward form of Bertsekas's
+  `J*(s) ≤ J_μ(s) = limsup_N` (`N`-stage cost);
+* in particular `sspValue M μ ≤ V*` for every proper `μ`;
 * a stationary policy `μ` satisfies `T_μ V* = T V*` exactly when it is proper and
-  `sspValue M μ = V*` (i.e. it is optimal). -/
+  `sspValue M μ = V*`, i.e. exactly when it is optimal among stationary policies.
+
+Non-stationary policies, over which the source's `J*` is also optimal, are not compared. -/
 theorem_wanted bellman_ssp {S A : Type*} [Fintype S] [DecidableEq S] [Fintype A] [Nonempty A]
-    {M : MDP S A ℝ} (hM : M.Substochastic) (hproper : ∃ μ : S → A, Proper M μ)
-    (himproper : ∀ μ : S → A, ¬ Proper M μ →
+    {M : MDP S A ℝ} (hM : M.Substochastic) (hproper : ∃ μ : S → A, M.Proper μ)
+    (himproper : ∀ μ : S → A, ¬ M.Proper μ →
       ∃ s, ¬ BddBelow (Set.range fun N : ℕ => (policyBellman M 1 μ)^[N] 0 s)) :
     ∃ V : S → ℝ, bellman M 1 V = V ∧ (∀ W, bellman M 1 W = W → W = V) ∧
       (∀ J, Tendsto (fun k => (bellman M 1)^[k] J) atTop (𝓝 V)) ∧
-      (∀ μ, Proper M μ → sspValue M μ ≤ V) ∧
-      ∀ μ, policyBellman M 1 μ V = bellman M 1 V ↔ Proper M μ ∧ sspValue M μ = V
+      (∀ (μ : S → A) (s : S), ∀ ε > 0, ∃ᶠ N in atTop, (policyBellman M 1 μ)^[N] 0 s ≤ V s + ε) ∧
+      (∀ μ, M.Proper μ → sspValue M μ ≤ V) ∧
+      ∀ μ, policyBellman M 1 μ V = bellman M 1 V ↔ M.Proper μ ∧ sspValue M μ = V
 
 end Cslib.Algorithms.Lean.MarkovDecision

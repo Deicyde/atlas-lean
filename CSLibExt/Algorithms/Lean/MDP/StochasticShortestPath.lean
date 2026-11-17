@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import CSLibExt.Algorithms.Lean.MDP.ValueIteration
+public import CSLibExt.Algorithms.Lean.MDP.StochasticPolicy
 public import Mathlib.Data.Matrix.Basic
 import Mathlib.Analysis.SpecificLimits.Basic
 import Mathlib.Algebra.BigOperators.Ring.Finset
@@ -26,7 +26,7 @@ this library rewards are maximized: Bertsekas's cost per stage `g(x, u)` is `-M.
 his `T_μ` and `T` are `policyBellman M 1 μ` and `bellman M 1` up to this sign change. Every action
 is allowed in every state.
 
-A stationary policy `μ` is *proper* (`Proper`) if, from every initial state, termination has
+A stationary policy `μ` is *proper* (`MDP.Proper`) if, from every initial state, termination has
 positive probability within `n = |S|` stages: every row sum of `P_μ ^ n` is `< 1`, where
 `P_μ = transitionMatrix M μ`. Main results, for a proper policy:
 
@@ -71,7 +71,7 @@ def transitionMatrix (M : MDP S A ℝ) (μ : S → A) : Matrix S S ℝ :=
 
 /-- **Proper policy.** A stationary policy is proper if from every initial state termination has
 positive probability within `|S|` stages: every row sum of `P_μ ^ |S|` is less than `1`. -/
-def Proper (M : MDP S A ℝ) (μ : S → A) : Prop :=
+def MDP.Proper (M : MDP S A ℝ) (μ : S → A) : Prop :=
   ∀ s, ∑ s', (transitionMatrix M μ ^ Fintype.card S) s s' < 1
 
 /-- **Value of a stationary policy in a stochastic shortest path problem**: the limit of its
@@ -85,6 +85,17 @@ variable {M : MDP S A ℝ}
 omit [Fintype S] [DecidableEq S] in
 private theorem transitionMatrix_apply (μ : S → A) (s s' : S) :
     transitionMatrix M μ s s' = M.prob s (μ s) s' := rfl
+
+omit [Fintype S] [DecidableEq S] in
+/-- **The transition matrix of a deterministic policy is its policy kernel**: for the Dirac policy
+`StochasticPolicy.ofDet μ`, the kernel `policyKernel M (ofDet μ)` of `StochasticPolicy.lean` is
+`transitionMatrix M μ`. (`policyKernel` is row-stochastic for stochastic MDPs; `transitionMatrix`
+is used here because SSP transitions are only substochastic.) -/
+theorem policyKernel_ofDet [Fintype A] (μ : S → A) :
+    policyKernel M (StochasticPolicy.ofDet μ) = transitionMatrix M μ := by
+  classical
+  ext s s'
+  simp [policyKernel, StochasticPolicy.ofDet_prob, transitionMatrix_apply]
 
 omit [DecidableEq S] in
 /-- **Undiscounted Bellman operators are affine**: with `γ = 1`, `T_μ J = r_μ + P_μ J`. -/
@@ -171,7 +182,7 @@ private theorem dist_iterate_le (hM : M.Substochastic) (μ : S → A) (k : ℕ) 
 (Bertsekas, *Abstract Dynamic Programming*, 3rd ed., Example 1.2.6): `T_μ^|S|` is a contraction
 for some modulus `K < 1` (the proof takes the largest row sum of `P_μ ^ |S|`). -/
 theorem contractingWith_policyBellman_iterate (hM : M.Substochastic) {μ : S → A}
-    (hμ : Proper M μ) :
+    (hμ : M.Proper μ) :
     ∃ K : NNReal, ContractingWith K (policyBellman M 1 μ)^[Fintype.card S] := by
   refine ⟨modulus hM μ, ?_, LipschitzWith.of_dist_le_mul fun J J' => ?_⟩
   · refine (Finset.sup_lt_iff
@@ -188,7 +199,7 @@ theorem contractingWith_policyBellman_iterate (hM : M.Substochastic) {μ : S →
 
 section Proper
 
-variable (hM : M.Substochastic) {μ : S → A} (hμ : Proper M μ)
+variable (hM : M.Substochastic) {μ : S → A} (hμ : M.Proper μ)
 include hM hμ
 
 /-- **Value iteration for a proper policy converges**, from every `J`, to a fixed point of `T_μ`. -/
@@ -299,7 +310,7 @@ theorem policyBellman_toSSP (μ : S → A) :
 /-- **Every policy of a discounted MDP is proper in its SSP**: for a stochastic MDP and
 `0 ≤ γ < 1`, termination has probability at least `1 - γ ^ |S| > 0` within `|S|` stages. -/
 theorem proper_toSSP (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1) (μ : S → A) :
-    Proper (M.toSSP γ) μ := by
+    (M.toSSP γ).Proper μ := by
   intro s
   have hn : 0 < Fintype.card S := Fintype.card_pos_iff.2 ⟨s⟩
   have hP : transitionMatrix (M.toSSP γ) μ = γ • transitionMatrix M μ := by

@@ -9,12 +9,13 @@ Then there is $V^* : S \to \mathbb{R}$ such that
 
 - $V^*$ is the unique solution of Bellman's equation $T V^* = V^*$;
 - value iteration converges: $T^k J \to V^*$ for every $J$;
-- every proper policy $\mu$ has [value](ssp-value.md) $J_\mu \le V^*$;
-- a stationary policy $\mu$ satisfies $T_\mu V^* = T V^*$ if and only if $\mu$ is proper and $J_\mu = V^*$, that is, $\mu$ is optimal.
+- no stationary policy does better than $V^*$: for every stationary policy $\mu$, proper or improper, and every state $s$, $\liminf_{N\to\infty} (T_\mu^N 0)(s) \le V^*(s)$ (stated in Lean as: for every $\varepsilon > 0$, frequently $(T_\mu^N 0)(s) \le V^*(s) + \varepsilon$). This is the reward form of Bertsekas's $J^*(s) \le J_\mu(s)$, where $J_\mu(s)$ is the $\limsup$ of the $N$-stage costs;
+- in particular every proper policy $\mu$ has [value](ssp-value.md) $J_\mu \le V^*$;
+- a stationary policy $\mu$ satisfies $T_\mu V^* = T V^*$ if and only if $\mu$ is proper and $J_\mu = V^*$, that is, if and only if $\mu$ is optimal among stationary policies.
 
 Recorded as a wanted theorem: its proof is deferred.
 
-In Bertsekas's cost formulation: $J^* = -V^*$ is the unique fixed point of $T$, and $\mu^*$ is optimal if and only if $T_{\mu^*} J^* = T J^*$. The Lean statement compares $V^*$ with stationary policies only. The source's $J^*$ is optimal over all policies; that comparison needs a model of general policies, which is not formalized.
+In Bertsekas's cost formulation: $J^* = -V^*$ is the unique fixed point of $T$, and $\mu^*$ is optimal if and only if $T_{\mu^*} J^* = T J^*$. The Lean statement compares $V^*$ with every stationary policy, proper or improper, but not with non-stationary policies. The source's $J^*$ is optimal over all policies; that comparison needs a model of general policies, which is not formalized.
 
 ## Sources
 

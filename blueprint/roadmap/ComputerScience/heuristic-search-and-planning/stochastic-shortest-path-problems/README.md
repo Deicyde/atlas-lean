@@ -6,6 +6,7 @@ A stationary policy is proper if termination has positive probability within $|S
 
 - [Substochastic transitions](substochastic.md)
 - [Transition matrix of a stationary policy](transition-matrix.md)
+- [The transition matrix of a deterministic policy is its policy kernel](policy-kernel-of-det.md)
 - [Proper policy](proper.md)
 - [Value of a stationary policy in a stochastic shortest path problem](ssp-value.md)
 - [Undiscounted Bellman operators are affine](policy-bellman-one-eq.md)

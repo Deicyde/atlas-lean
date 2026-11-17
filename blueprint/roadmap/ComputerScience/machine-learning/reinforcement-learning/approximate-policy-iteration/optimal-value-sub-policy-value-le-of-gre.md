@@ -14,3 +14,7 @@ The survey's proof (written there for costs) shows $T V^{\bar\mu} \le T \bar J +
 
 - [The Bellman optimality operator is monotone](../../../heuristic-search-and-planning/value-iteration/bellman-mono.md): the survey's proof applies $T$ to both sides of an inequality.
 - [Value iteration converges](../../../heuristic-search-and-planning/value-iteration/tendsto-value-iteration.md): the survey's proof concludes with $V^* = \lim_m T^m V^{\bar\mu}$.
+
+## Background
+
+- [The Bellman operator contracts by γ](../../../heuristic-search-and-planning/value-iteration/abs-bellman-sub-le.md): the last step of the Lean proof, in place of the survey's limit argument.
