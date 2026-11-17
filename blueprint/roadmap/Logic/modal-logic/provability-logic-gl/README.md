@@ -88,5 +88,3 @@ the sentences true in the standard model by the logic GLS; that part is not cove
 - [Soundness and completeness of normal modal logics](../soundness-and-completeness-of-normal-modal-logic/README.md):
   K4 and its completeness, used for every GL derivation here.
 - [Kripke semantics](../kripke-semantics/README.md): substitution and locality of truth.
-- [Gödel's incompleteness theorems](../../proof-theory/g-del-s-incompleteness-theorems/README.md): the
-  derivability conditions and the second incompleteness theorem whose modal form GL captures.
