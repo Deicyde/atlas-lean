@@ -56,7 +56,7 @@ The proof follows Lamport's Assertion 2: a process in its critical section has a
 
 @[expose] public section
 
-namespace Cslib.Concurrency.Bakery
+namespace Cslib.Algorithms.Concurrency.Bakery
 
 variable {N : ℕ}
 
@@ -350,10 +350,10 @@ theorem localInv_of_canReach {s : State N} (h : lts.CanReach init s) : ∀ i, Lo
   · intro i
     refine ⟨?_, ?_, ?_, ?_, ?_⟩ <;> simp [init, HasTicket, InDoorway]
 
-/-- **Mutual exclusion for the bakery algorithm** (Lamport 1974, p. 454, condition 1: "At any
-time, at most one computer may be in its critical section"; Assertion 2 and the remark after
-Assertion 3). In every reachable state, two processes in their critical sections are the same
-process. Proved for atomic reads and writes and atomic crash-resets, which is weaker than
+/-- **Mutual exclusion for the bakery algorithm** (Lamport 1974, condition 1 on p. 454: "At any
+time, at most one computer may be in its critical section"; Assertion 2 on p. 454 and the remark
+after Assertion 3 on p. 455). In every reachable state, two processes in their critical sections are
+the same process. Proved for atomic reads and writes and atomic crash-resets, which is weaker than
 Lamport's result for reads that may return arbitrary values when they overlap a write. -/
 theorem mutual_exclusion {s : State N} (h : lts.CanReach init s) {i k : Fin N}
     (hi : s.pc i = .cs) (hk : s.pc k = .cs) : i = k := by
@@ -376,4 +376,4 @@ theorem before_of_cs {s : State N} (h : lts.CanReach init s) {i k : Fin N}
   unfold AheadOf at hb
   cases hpk : s.pc k <;> simp_all [HasTicket]
 
-end Cslib.Concurrency.Bakery
+end Cslib.Algorithms.Concurrency.Bakery

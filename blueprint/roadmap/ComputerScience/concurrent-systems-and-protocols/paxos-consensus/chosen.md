@@ -1,6 +1,6 @@
 # Chosen value
 
-Some proposal with value `v` is chosen.
+In a [Paxos voting history](voting.md), the value $v$ is chosen when, for some proposal number $b$, the [proposal $(b, v)$ is chosen](chosen-at.md): every acceptor of some quorum accepted it.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # State of the bakery algorithm
 
-Program counters and the shared arrays.
+A state of the bakery algorithm for $N$ processes consists of a [program counter](program-counter.md) for each process and the two shared arrays: `choosing`, a Boolean per process (Lamport's $0$ or $1$), and `number`, a natural-number ticket per process.
 
 ## Sources
 

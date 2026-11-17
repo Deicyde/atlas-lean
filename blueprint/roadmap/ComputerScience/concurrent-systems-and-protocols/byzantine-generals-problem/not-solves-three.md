@@ -9,4 +9,4 @@ rounds.
 ## Sources
 
 - L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 2, pp. 384–385 (informal argument).
-- M. Pease, R. Shostak, L. Lamport, *Reaching Agreement in the Presence of Faults*, Journal of the ACM 27(2), 1980, 228–234: the rigorous three-general impossibility proof, cited by Lamport, Shostak and Pease as their reference [3] (not consulted here)
+- M. Pease, R. Shostak, L. Lamport, *Reaching Agreement in the Presence of Faults*, Journal of the ACM 27(2), 1980, 228–234: the rigorous three-general impossibility proof, cited by Lamport, Shostak and Pease as their reference [3] (not consulted here).

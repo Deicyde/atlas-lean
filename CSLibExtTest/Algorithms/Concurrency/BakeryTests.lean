@@ -23,7 +23,7 @@ public import CSLibExt.Algorithms.Concurrency.Bakery
 
 @[expose] public section
 
-namespace Cslib.Concurrency.Bakery.Tests
+namespace Cslib.Algorithms.Concurrency.Bakery.Tests
 
 example : Before 3 (0 : Fin 2) 3 1 := Or.inr ⟨rfl, by decide⟩
 example : ¬ Before 3 (1 : Fin 2) 3 0 := by unfold Before; decide
@@ -56,4 +56,4 @@ example : ∃ s : State 2, lts.CanReach init s ∧ s.pc 0 = .cs ∧ s.pc 1 ≠ .
   obtain ⟨s, hs, h0⟩ := exists_cs
   exact ⟨s, hs, h0, fun h1 => absurd (mutual_exclusion hs h0 h1) (by decide)⟩
 
-end Cslib.Concurrency.Bakery.Tests
+end Cslib.Algorithms.Concurrency.Bakery.Tests
