@@ -4236,6 +4236,7 @@
   "MathlibExt/Probability/StoppedSumMaximal": {"to": "Probability/martingales", "title": "Wald's equations"},
   "MathlibExt/Probability/StrassenCoupling": {"to": "Probability/correlation-inequalities", "title": "Stochastic domination and Strassen's theorem"},
   "MathlibExt/Probability/Streaming/AMSEstimator": {"to": "ComputerScience/randomized-algorithms", "title": "Frequency moments of data streams"},
+  "MathlibExt/Probability/Streaming/AMSFrequencyMoment": {"to": "ComputerScience/randomized-algorithms", "title": "Frequency moments of data streams"},
   "MathlibExt/Probability/Streaming/AMSSketch": {"to": "ComputerScience/randomized-algorithms", "title": "Frequency moments of data streams"},
   "MathlibExt/Probability/Streaming/Algorithm": {"to": "ComputerScience/randomized-algorithms", "title": "Frequency moments of data streams"},
   "MathlibExt/Probability/StrongMarkovChain": {"to": "Probability/markov-chains", "title": "Markov and strong Markov properties"},

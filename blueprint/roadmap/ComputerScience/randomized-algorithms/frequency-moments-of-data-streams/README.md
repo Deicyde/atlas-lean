@@ -7,17 +7,32 @@ be approximated to within a factor $1 \pm \lambda$ with probability $1 - \vareps
 $O(\lambda^{-2} \log(1/\varepsilon)(\log n + \log m))$ bits: keep the linear sketch
 $Z = \sum_i \varepsilon_i m_i$ for four-wise independent random signs $\varepsilon_i$, so that
 $\mathbb{E}[Z^2] = F_2$ and $\operatorname{Var}(Z^2) \le 2 F_2^2$; average $16/\lambda^2$ independent
-copies (Chebyshev) and take the median of $O(\log(1/\varepsilon))$ such averages. In contrast,
+copies (Chebyshev) and take the median of $O(\log(1/\varepsilon))$ such averages. For general
+$k \ge 1$ the same scheme applies to $X = m(r^k - (r-1)^k)$, where $r$ counts the occurrences of a
+uniformly random stream element from its position on: $\mathbb{E}[X] = F_k$ and
+$\mathbb{E}[X^2] \le k n^{1-1/k} F_k^2$, giving $O(k \lambda^{-2} \log(1/\varepsilon) n^{1-1/k}(\log n + \log m))$
+bits. In contrast,
 $F^*_\infty$ needs $\Omega(n)$ bits and $F_k$ for $k \ge 6$ needs $\Omega(n^{1-5/k})$ bits: an
 algorithm with $s$ bits of memory yields a communication protocol for set disjointness in which the
 memory content is the message. The presentation follows N. Alon, Y. Matias and M. Szegedy, "The
 space complexity of approximating the frequency moments", *J. Comput. System Sci.* 58 (1999)
 137–147 (STOC 1996).
 
-The moment and probability statements are proved; the space accounting of the upper bound (an
-explicit four-wise independent family of $O(n^2)$ sign vectors from BCH codes) is not formalized, and
-the two space lower bounds are stated as wanted results in a model whose random seed is free.
+Proved here: the first two moments of both estimators, the inequality
+$F_1 F_{2k-1} \le n^{1-1/k} F_k^2$, and the full median-of-means guarantee for $F_2$. Not formalized:
+the space accounting of the upper bounds (an explicit four-wise independent family of $O(n^2)$ sign
+vectors from BCH codes, reservoir sampling of the position when $m$ is unknown) and the end-to-end
+probability statement for $F_k$, $k \ne 2$. The two space lower bounds are stated as wanted results
+in a model whose random seed is free.
 
+- [Suffix count of a stream position](suffix-count.md)
+- [The AMS basic estimator of `F_k`](basic-estimator.md)
+- [Suffix counts enumerate each multiplicity once](sum-suffix-count.md)
+- [The AMS estimator is unbiased for `F_k`](average-basic-estimator.md)
+- [Second moment of the AMS estimator](average-basic-estimator-sq-le.md)
+- [The moment inequality `F₁ F_{2k-1} ≤ n^{1-1/k} F_k²`, polynomial form](sum-mul-sum-pow-le.md)
+- [The moment inequality `F₁ F_{2k-1} ≤ n^{1-1/k} F_k²`](sum-mul-sum-le-rpow.md)
+- [Second moment of the AMS estimator against `F_k²`](average-basic-estimator-sq-le-rpow.md)
 - [The AMS sketch of a stream](sketch.md)
 - [Frequency of an element in a stream](freq.md)
 - [Second frequency moment of a stream](second-moment.md)
