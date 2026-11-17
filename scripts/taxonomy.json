@@ -2552,6 +2552,7 @@
   "MathlibExt/Combinatorics/Enumerative/PellRiordan": {"to": "Combinatorics/riordan-arrays-transforms/riordan-arrays", "title": "Pell matrix as a Riordan array"},
   "MathlibExt/Combinatorics/Enumerative/PentagonalNumber": {"to": "Combinatorics/integer-partitions/counting-partitions", "title": "Partition function and the pentagonal number theorem"},
   "MathlibExt/Combinatorics/Enumerative/PerfectCompositions": {"to": "Combinatorics/integer-compositions", "title": "Perfect compositions"},
+  "MathlibExt/Combinatorics/Enumerative/PermutationInversions": {"to": "Combinatorics/permutations/permutation-statistics", "title": "Classical permutation statistics"},
   "MathlibExt/Combinatorics/Enumerative/PermutationStatistics": {"to": "Combinatorics/permutations/permutation-statistics", "title": "Classical permutation statistics"},
   "MathlibExt/Combinatorics/Enumerative/PollakPartialParkingFunctions": {"to": "Combinatorics/parking-functions", "title": "Parking functions"},
   "MathlibExt/Combinatorics/Enumerative/PolyInitialExpansion": {"to": "Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers", "title": "Stirling expansions of the Akiyama–Tanigawa algorithm"},
