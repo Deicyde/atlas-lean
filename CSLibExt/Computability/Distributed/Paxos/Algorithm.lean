@@ -43,10 +43,16 @@ The consensus ("synod") algorithm of L. Lamport, *Paxos Made Simple*, ACM SIGACT
 * `accept a n v`: acceptor `a` accepts the issued proposal `(n, v)` unless it responded to a
   prepare request numbered greater than `n` (rule P1a).
 
-Lamport's optimisation of ignoring a prepare request for a proposal already accepted is not
-required: the model allows more behaviours than the paper's algorithm, so its safety theorem
-covers the paper's algorithm. Liveness (Section 2.4) and learners (Section 2.3) are not
-modelled.
+**Coverage.** The acceptor's response follows step 1(b) of the derivation in Section 2.2
+(p. 4): "The proposal with the highest number less than n that it has accepted". The summary
+of Phase 1(b) on p. 5 omits the bound ("the highest-numbered proposal (if any) that it has
+accepted"). The two differ when an acceptor has accepted a proposal numbered above `n` without
+having responded to a prepare request numbered `n` or more, which rule P1a allows. Executions in
+which an acceptor reports such a proposal are not covered: the theorems here are about the
+algorithm of Section 2.2 with the response of step 1(b). Within that algorithm the model allows
+extra behaviours (an acceptor need not ignore a prepare request for a proposal it already
+accepted; any quorum system replaces majorities), so it covers the variants that make those
+choices. Liveness (Section 2.4) and learners (Section 2.3) are not modelled.
 
 **Results.** `inv_of_canReach`: an inductive invariant holds in every reachable state.
 `votingOfInv`: the reachable states are Paxos voting histories (`Voting`), with P2c.

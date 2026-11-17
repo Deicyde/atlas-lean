@@ -2,7 +2,7 @@
 
 In every state reachable from the initial state of [single-decree Paxos](lts.md), two [chosen values](value-chosen.md) are equal. Acceptances are never withdrawn, so a value chosen once stays chosen, and no other value is chosen later in the same run.
 
-This is the second safety requirement of Section 2.1, for the algorithm of Section 2.2 in the asynchronous non-Byzantine model, with any quorum system (majorities in the paper). The test module exhibits a reachable state in which a value is chosen, so the theorem is not vacuous.
+This is the second safety requirement of Section 2.1, for the algorithm of Section 2.2 with the acceptor response of step 1(b) (p. 4), in the asynchronous non-Byzantine model, with any quorum system (majorities in the paper). The unbounded response of the Phase 1(b) summary on p. 5 is not covered; see the topic page. The test module exhibits a reachable state in which a value is chosen, so the theorem is not vacuous.
 
 ## Informally uses
 
