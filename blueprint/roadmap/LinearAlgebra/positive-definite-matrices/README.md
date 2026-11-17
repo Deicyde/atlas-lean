@@ -12,6 +12,10 @@ Positive definite and semidefinite matrices, criteria for definiteness, and ineq
 - [Hoffman–Wielandt inequality for Hermitian matrices](hoffman-wielandt-hermitian.md)
 - [Lipschitz linear statistics of Hermitian spectra are stable](abs-sum-sub-sum-le-of-lipschitz-with.md)
 - [Log-determinant trace inequality](log-det-mul-le-trace.md)
+- [Golden–Thompson inequality](golden-thompson.md)
+- [Golden–Thompson equality for commuting matrices](trace-exp-add-of-commute.md)
+- [Golden–Thompson inequality for commuting matrices](golden-thompson-of-commute.md)
+- [The right side of Golden–Thompson is a nonnegative real](trace-exp-mul-exp-nonneg.md)
 
 ## Related topics
 
