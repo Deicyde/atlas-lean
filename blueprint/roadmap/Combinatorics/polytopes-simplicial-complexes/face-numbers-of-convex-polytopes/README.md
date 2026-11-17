@@ -3,6 +3,7 @@
 Linear relations and inequalities between the face numbers $f_0, f_1, \dots$ of convex polytopes: the Euler–Poincaré relation for all polytopes, McMullen's upper bound theorem, and the passage from simplicial polytopes to simplicial spheres, where the h-vector and the Dehn–Sommerville equations live.
 
 - [Euler–Poincaré relation](euler-poincare.md)
+- [Steinitz's lemma: the f-vectors of 3-polytopes](steinitz-lemma.md)
 - [The boundary complex of a simplicial polytope is a simplicial sphere](exists-simplicial-sphere-face-count-eq.md)
 - [Upper bound theorem (McMullen)](upper-bound-theorem.md)
 

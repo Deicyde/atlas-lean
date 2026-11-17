@@ -82,34 +82,6 @@ theorem eq_of_mem_convexHull_of_forall_eq {T : Set E} {l : StrongDual ℝ E} {c 
     (h : ∀ y ∈ T, l y = c) {x : E} (hx : x ∈ convexHull ℝ T) : l x = c :=
   convexHull_min (t := {w | l w = c}) h (convex_hyperplane l.toLinearMap.isLinear c) hx
 
-/-- **Faces cut out by a functional.** Let `s` be finite and `T` a set of points of `s`. If a
-functional `l` is at most `V` on `s`, equals `V` on `T`, and equals `V` at no other point of `s`,
-then `conv T` is a face of `conv s`. -/
-theorem isExposed_convexHull_of_forall_le (s : Finset E) (T : Set E) (l : StrongDual ℝ E)
-    (V : ℝ) (hle : ∀ y ∈ s, l y ≤ V) (hT : ∀ y ∈ T, y ∈ s ∧ l y = V)
-    (hTs : ∀ y ∈ s, l y = V → y ∈ T) :
-    IsExposed ℝ (convexHull ℝ (s : Set E)) (convexHull ℝ T) := by
-  rcases T.eq_empty_or_nonempty with rfl | ⟨y0, hy0⟩
-  · rw [convexHull_empty]
-    exact isExposed_empty
-  have hP : ∀ x ∈ convexHull ℝ (s : Set E), l x ≤ V := fun x hx =>
-    convexHull_min (t := {w | l w ≤ V}) (fun y hy => hle y hy)
-      (convex_halfSpace_le l.toLinearMap.isLinear V) hx
-  have hF : l.toExposed (convexHull ℝ (s : Set E)) ∈ faces s :=
-    ContinuousLinearMap.toExposed.isExposed
-  have hFs : l.toExposed (convexHull ℝ (s : Set E)) ∩ (s : Set E) = T := by
-    ext y
-    constructor
-    · rintro ⟨⟨-, hmax⟩, hys⟩
-      refine hTs y hys (le_antisymm (hle y hys) ?_)
-      have h := hmax y0 (subset_convexHull ℝ _ (hT y0 hy0).1)
-      rwa [(hT y0 hy0).2] at h
-    · intro hy
-      obtain ⟨hys, hly⟩ := hT y hy
-      exact ⟨⟨subset_convexHull ℝ _ hys, fun z hz => hly ▸ hP z hz⟩, hys⟩
-  rw [← hFs, ← eq_convexHull_inter_of_mem_faces hF]
-  exact hF
-
 end General
 
 /-- **Sign of a product of linear factors.** If `τ` differs from every `t_i`, `i ∈ S`, then

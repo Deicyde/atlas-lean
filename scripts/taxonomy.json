@@ -5862,7 +5862,7 @@
   "WantedExt/Geometry/PlatonicClassificationWanted": {"to": "Geometry/discrete-geometry", "title": "Platonic solids and regular polytopes"},
   "WantedExt/Geometry/Polyhedra/EulerPolyhedronFormulaWanted": {"to": "Geometry/discrete-geometry", "title": "Euler's polyhedron formula"},
   "WantedExt/Geometry/Polytope/FaceNumbersWanted": {"to": "Combinatorics/polytopes-simplicial-complexes", "title": "Face numbers of convex polytopes"},
-  "WantedExt/Geometry/Polytope/SteinitzWanted": {"to": "Combinatorics/polytopes-simplicial-complexes", "title": "Faces of convex polytopes"},
+  "WantedExt/Geometry/Polytope/GraphWanted": {"to": "Combinatorics/polytopes-simplicial-complexes", "title": "Faces of convex polytopes"},
   "WantedExt/Geometry/RadoTheoremWanted": {"to": "Geometry/complex-and-symplectic-geometry", "title": "Radó's theorem on Riemann surfaces"},
   "WantedExt/Geometry/RectangularPegProblemWanted": {"to": "Geometry/curves-and-surfaces", "title": "Inscribed rectangle problem"},
   "WantedExt/Geometry/ScottishBook117Wanted": {"to": "Geometry/curves-and-surfaces", "title": "Space curves with a tangent line at every point"},

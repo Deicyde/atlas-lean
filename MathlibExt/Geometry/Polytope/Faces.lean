@@ -109,6 +109,153 @@ theorem faces_finite (s : Finset E) : (faces s).Finite := by
   rw [hcoe]
   exact (eq_convexHull_inter_of_mem_faces hF).symm
 
+/-- **Faces cut out by a functional.** Let `s` be finite and `T` a set of points of `s`. If a
+functional `l` is at most `V` on `s`, equals `V` on `T`, and equals `V` at no other point of `s`,
+then `conv T` is a face of `conv s`. -/
+theorem isExposed_convexHull_of_forall_le (s : Finset E) (T : Set E) (l : StrongDual ℝ E)
+    (V : ℝ) (hle : ∀ y ∈ s, l y ≤ V) (hT : ∀ y ∈ T, y ∈ s ∧ l y = V)
+    (hTs : ∀ y ∈ s, l y = V → y ∈ T) :
+    IsExposed ℝ (convexHull ℝ (s : Set E)) (convexHull ℝ T) := by
+  rcases T.eq_empty_or_nonempty with rfl | ⟨y0, hy0⟩
+  · rw [convexHull_empty]
+    exact isExposed_empty
+  have hP : ∀ x ∈ convexHull ℝ (s : Set E), l x ≤ V := fun x hx =>
+    convexHull_min (t := {w | l w ≤ V}) (fun y hy => hle y hy)
+      (convex_halfSpace_le l.toLinearMap.isLinear V) hx
+  have hF : l.toExposed (convexHull ℝ (s : Set E)) ∈ faces s :=
+    ContinuousLinearMap.toExposed.isExposed
+  have hFs : l.toExposed (convexHull ℝ (s : Set E)) ∩ (s : Set E) = T := by
+    ext y
+    constructor
+    · rintro ⟨⟨-, hmax⟩, hys⟩
+      refine hTs y hys (le_antisymm (hle y hys) ?_)
+      have h := hmax y0 (subset_convexHull ℝ _ (hT y0 hy0).1)
+      rwa [(hT y0 hy0).2] at h
+    · intro hy
+      obtain ⟨hys, hly⟩ := hT y hy
+      exact ⟨⟨subset_convexHull ℝ _ hys, fun z hz => hly ▸ hP z hz⟩, hys⟩
+  rw [← hFs, ← eq_convexHull_inter_of_mem_faces hF]
+  exact hF
+
+/-- **A face of a face of a polytope is a face of the polytope.** If `F` is a face of
+`P = conv s` and `G` is a face of `F`, then `G` is a face of `P`. For general convex sets the
+analogous statement about exposed subsets fails (see the note in Mathlib's `IsExposed`); for
+polytopes it holds because finitely many vertices leave room to tilt the functional exposing
+`F` by a small multiple of the one exposing `G`. -/
+theorem mem_faces_of_isExposed {s : Finset E} {F G : Set E} (hF : F ∈ faces s)
+    (hG : IsExposed ℝ F G) : G ∈ faces s := by
+  classical
+  rcases G.eq_empty_or_nonempty with rfl | ⟨g0, hg0⟩
+  · exact isExposed_empty
+  have hGF : G ⊆ F := hG.subset
+  have hFne : F.Nonempty := ⟨g0, hGF hg0⟩
+  obtain ⟨l₁, hl₁⟩ := hF hFne
+  obtain ⟨l₂, hl₂⟩ := hG ⟨g0, hg0⟩
+  set P := convexHull ℝ (s : Set E) with hP
+  -- the polytope `F` is spanned by the points of `s` it contains
+  have hFeq : F = convexHull ℝ ((s.filter (· ∈ F) : Finset E) : Set E) := by
+    have h := eq_convexHull_inter_of_mem_faces hF
+    have hcoe : ((s.filter (· ∈ F) : Finset E) : Set E) = F ∩ s := by
+      ext y
+      simp [and_comm]
+    rw [hcoe]
+    exact h
+  have hGface : G ∈ faces (s.filter (· ∈ F)) := by
+    change IsExposed ℝ _ G
+    rw [← hFeq]
+    exact hG
+  -- values on the vertices
+  have hmem₁ : ∀ x ∈ F, x ∈ P ∧ ∀ y ∈ P, l₁ y ≤ l₁ x := by
+    intro x hx
+    rw [hl₁] at hx
+    exact hx
+  set M₁ := l₁ g0
+  have hFval : ∀ x ∈ F, l₁ x = M₁ := fun x hx =>
+    le_antisymm ((hmem₁ g0 (hGF hg0)).2 x (hmem₁ x hx).1)
+      ((hmem₁ x hx).2 g0 (hmem₁ g0 (hGF hg0)).1)
+  have hle₁ : ∀ y ∈ P, l₁ y ≤ M₁ := (hmem₁ g0 (hGF hg0)).2
+  have hnotF : ∀ y ∈ s, y ∉ F → l₁ y < M₁ := by
+    intro y hy hyF
+    refine lt_of_le_of_ne (hle₁ y (subset_convexHull ℝ _ hy)) fun h => hyF ?_
+    rw [hl₁]
+    exact ⟨subset_convexHull ℝ _ hy, fun z hz => h ▸ hle₁ z hz⟩
+  have hmem₂ : ∀ x ∈ G, x ∈ F ∧ ∀ y ∈ F, l₂ y ≤ l₂ x := by
+    intro x hx
+    rw [hl₂] at hx
+    exact hx
+  set M₂ := l₂ g0
+  have hle₂ : ∀ y ∈ F, l₂ y ≤ M₂ := (hmem₂ g0 hg0).2
+  have hGval : ∀ x ∈ G, l₂ x = M₂ := fun x hx =>
+    le_antisymm (hle₂ x (hmem₂ x hx).1) ((hmem₂ x hx).2 g0 (hGF hg0))
+  have hnotG : ∀ y ∈ F, y ∉ G → l₂ y < M₂ := by
+    intro y hy hyG
+    refine lt_of_le_of_ne (hle₂ y hy) fun h => hyG ?_
+    rw [hl₂]
+    exact ⟨hy, fun z hz => h ▸ hle₂ z hz⟩
+  -- a positive gap `δ` for `l₁` off `F`, and a bound `B` for `|l₂ - M₂|` on `s`
+  set out := s.filter (· ∉ F)
+  obtain ⟨δ, hδ, hδle⟩ : ∃ δ > 0, ∀ y ∈ out, l₁ y + δ ≤ M₁ := by
+    rcases out.eq_empty_or_nonempty with hout | hout
+    · exact ⟨1, one_pos, fun y hy => by simp [hout] at hy⟩
+    · obtain ⟨y₀, hy₀, hmax⟩ := out.exists_max_image (fun y => l₁ y) hout
+      have h₀ := hnotF y₀ (Finset.mem_filter.1 hy₀).1 (Finset.mem_filter.1 hy₀).2
+      exact ⟨M₁ - l₁ y₀, sub_pos.2 h₀, fun y hy => by linarith [hmax y hy]⟩
+  set B := ∑ y ∈ s, |l₂ y - M₂| with hB
+  have hBle : ∀ y ∈ s, |l₂ y - M₂| ≤ B := fun y hy =>
+    Finset.single_le_sum (f := fun y => |l₂ y - M₂|) (fun _ _ => abs_nonneg _) hy
+  have hB0 : 0 ≤ B := Finset.sum_nonneg fun _ _ => abs_nonneg _
+  set ε := δ / (B + 1) with hε
+  have hεpos : 0 < ε := div_pos hδ (by linarith)
+  have hεB : ε * B < δ := by
+    rw [hε, div_mul_eq_mul_div, div_lt_iff₀ (by linarith)]
+    nlinarith
+  set l := l₁ + ε • l₂
+  have hlapp : ∀ y, l y = l₁ y + ε * l₂ y := fun y => by simp [l]
+  set V := M₁ + ε * M₂
+  have hGfin : G = convexHull ℝ ((s.filter (· ∈ G) : Finset E) : Set E) := by
+    have h := eq_convexHull_inter_of_mem_faces hGface
+    have hcoe : G ∩ ((s.filter (· ∈ F) : Finset E) : Set E) =
+        ((s.filter (· ∈ G) : Finset E) : Set E) := by
+      ext y
+      simp only [Set.mem_inter_iff, Finset.coe_filter, Set.mem_ofPred_eq]
+      constructor
+      · rintro ⟨hyG, hys, -⟩
+        exact ⟨hys, hyG⟩
+      · rintro ⟨hys, hyG⟩
+        exact ⟨hyG, hys, hGF hyG⟩
+    rw [← hcoe]
+    exact h
+  rw [hGfin]
+  -- the tilted functional `l₁ + ε l₂` is maximal on `s` exactly at the points of `G`
+  refine isExposed_convexHull_of_forall_le s _ l V ?_ ?_ ?_
+  · intro y hy
+    rw [hlapp]
+    by_cases hyF : y ∈ F
+    · rw [hFval y hyF]
+      have := hle₂ y hyF
+      nlinarith
+    · have h1 := hδle y (Finset.mem_filter.2 ⟨hy, hyF⟩)
+      have h2 : ε * (l₂ y - M₂) ≤ ε * B :=
+        mul_le_mul_of_nonneg_left ((le_abs_self _).trans (hBle y hy)) hεpos.le
+      nlinarith
+  · intro y hy
+    obtain ⟨hys, hyG⟩ := Finset.mem_filter.1 (Finset.mem_coe.1 hy)
+    refine ⟨hys, ?_⟩
+    rw [hlapp, hFval y (hGF hyG), hGval y hyG]
+  · intro y hy hly
+    rw [hlapp] at hly
+    refine Finset.mem_coe.2 (Finset.mem_filter.2 ⟨hy, ?_⟩)
+    by_cases hyF : y ∈ F
+    · by_contra hyG
+      rw [hFval y hyF] at hly
+      have := hnotG y hyF hyG
+      nlinarith
+    · exfalso
+      have h1 := hδle y (Finset.mem_filter.2 ⟨hy, hyF⟩)
+      have h2 : ε * (l₂ y - M₂) ≤ ε * B :=
+        mul_le_mul_of_nonneg_left ((le_abs_self _).trans (hBle y hy)) hεpos.le
+      nlinarith
+
 /-- **Intersections of faces are faces.** For any family `A` of faces of `P = conv s`, the set
 `P ∩ ⋂₀ A` is a face of `P` (for empty `A` it is `P` itself). -/
 theorem inter_sInter_mem_faces (s : Finset E) (A : Set (Set E)) (hA : A ⊆ faces s) :

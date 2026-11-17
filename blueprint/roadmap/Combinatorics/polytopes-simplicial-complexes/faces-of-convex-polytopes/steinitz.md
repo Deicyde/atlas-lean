@@ -14,6 +14,11 @@ The direction from polytopes to graphs is the easy one: planarity comes from a S
 a stereographic projection, and 3-connectivity is the case $d = 3$ of Balinski's theorem. The hard
 direction constructs a polytope from a 3-connected planar graph.
 
+## Informally uses
+
+- [Balinski's theorem](balinski.md): the case $d = 3$ gives the 3-connectivity of the graph of a
+  3-polytope, in the easy direction.
+
 ## Sources
 
 - G. M. Ziegler, "Convex polytopes: extremal constructions and f-vector shapes", IAS/Park City Mathematics Series, Volume 14 (2004), arXiv:math/0411400v2 (7 December 2005). Numbering as in this arXiv version, which is the version read; the published version was not consulted. Theorem 1.2 and Section 1.2 (an informal statement of the bijection between 3-connected planar graphs and combinatorial types of 3-polytopes).

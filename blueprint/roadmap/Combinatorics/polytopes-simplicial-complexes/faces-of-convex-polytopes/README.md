@@ -5,6 +5,8 @@ A convex polytope is the convex hull $P = \operatorname{conv} s$ of a finite set
 - [Faces of a convex polytope](faces.md)
 - [A face of a polytope is the convex hull of the vertices it contains](eq-convex-hull-inter-of-mem-faces.md)
 - [A polytope has finitely many faces](faces-finite.md)
+- [Faces cut out by a functional](is-exposed-convex-hull-of-forall-le.md)
+- [A face of a face of a polytope is a face of the polytope](mem-faces-of-is-exposed.md)
 - [Intersections of faces are faces](inter-s-inter-mem-faces.md)
 - [Face lattice of a polytope](face-lattice.md)
 - [Top of the face lattice](coe-top.md)
@@ -15,6 +17,7 @@ A convex polytope is the convex hull $P = \operatorname{conv} s$ of a finite set
 - [The vertices of a polytope are among its spanning points](extreme-points-subset.md)
 - [The vertex set of a polytope is finite](extreme-points-finite.md)
 - [The graph of a polytope](graph.md)
+- [Balinski's theorem](balinski.md)
 - [Steinitz's theorem](steinitz.md)
 
 ## Related topics

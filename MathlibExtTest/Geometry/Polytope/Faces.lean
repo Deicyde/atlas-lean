@@ -34,4 +34,9 @@ example {E : Type*} [AddCommGroup E] [Module ℝ E] [TopologicalSpace E] (s : Fi
       (⊤ : FaceLattice s).1 = convexHull ℝ (s : Set E) :=
   ⟨inferInstance, FaceLattice.coe_bot, FaceLattice.coe_top⟩
 
+/-- Faces of faces are faces; non-vacuity with `F` the polytope itself. -/
+example {E : Type*} [AddCommGroup E] [Module ℝ E] [TopologicalSpace E] (s : Finset E)
+    (G : Set E) (hG : IsExposed ℝ (convexHull ℝ (s : Set E)) G) : G ∈ faces s :=
+  mem_faces_of_isExposed (IsExposed.refl _) hG
+
 end MathlibExtTest.Geometry.Polytope.Faces

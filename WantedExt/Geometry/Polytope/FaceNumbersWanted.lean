@@ -42,6 +42,18 @@ theorem_wanted euler_poincare {n : ℕ} (s : Finset (EuclideanSpace ℝ (Fin n))
     (hs : s.Nonempty) :
     ∑ k ∈ Finset.range (dim s + 1), (-1 : ℤ) ^ k * (faceNumber s k : ℤ) = 1
 
+/-- **Steinitz's lemma: the f-vectors of 3-polytopes.** A triple `(f₀, f₁, f₂)` of natural
+numbers is the f-vector of a 3-dimensional polytope in `ℝ^3` if and only if
+`f₀ - f₁ + f₂ = 2`, `f₂ ≤ 2 f₀ - 4` and `f₀ ≤ 2 f₂ - 4` (E. Steinitz, 1906; G. M. Ziegler,
+"Convex polytopes: extremal constructions and f-vector shapes", IAS/Park City Math. Ser. 14
+(2004), Lemma 1.1, arXiv:math/0411400v2). The source states it for integer triples; the
+conditions force `f₀, f₂ ≥ 4`, so nothing is lost by taking natural numbers. -/
+theorem_wanted steinitz_lemma (f₀ f₁ f₂ : ℕ) :
+    (∃ s : Finset (EuclideanSpace ℝ (Fin 3)),
+        (interior (convexHull ℝ (s : Set (EuclideanSpace ℝ (Fin 3))))).Nonempty ∧
+          faceNumber s 0 = f₀ ∧ faceNumber s 1 = f₁ ∧ faceNumber s 2 = f₂) ↔
+      ((f₀ : ℤ) - f₁ + f₂ = 2 ∧ (f₂ : ℤ) ≤ 2 * f₀ - 4 ∧ (f₀ : ℤ) ≤ 2 * f₂ - 4)
+
 /-- **Upper bound theorem (McMullen).** Let `P = conv s` be a polytope of dimension `d` with `m`
 vertices. Then for every `k < d` the number of `k`-dimensional faces of `P` is at most the
 number of `k`-dimensional faces of the cyclic polytope `C_d(m)`, given by the h-vector formula

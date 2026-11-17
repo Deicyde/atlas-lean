@@ -14,7 +14,6 @@ The cyclic polytope $C_d(n)$ is the convex hull of $n$ points on the moment curv
 - [Evaluating the polynomial of a functional](eval-functional-poly.md)
 - [Degree of the polynomial of a functional](nat-degree-functional-poly-le.md)
 - [A functional constant on a set is constant on its convex hull](eq-of-mem-convex-hull-of-forall-eq.md)
-- [Faces cut out by a functional](is-exposed-convex-hull-of-forall-le.md)
 - [Sign of a product of linear factors](neg-one-pow-mul-prod-sub-pos.md)
 - [Gale's evenness criterion](is-exposed-cyclic-polytope-iff-gale-even.md)
 - [Cyclic polytopes are neighborly](is-exposed-cyclic-polytope-of-two-mul-ca.md)
