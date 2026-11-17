@@ -16944,7 +16944,7 @@
 "MathlibExt.Analysis.Convex.EllipsoidMethod.volume_unitEllipsoid_pos": "e32371142ffedc36",
 "MathlibExt.Analysis.Convex.EstimateSequence.IsNesterovScheme": "ca926ed0906065c5",
 "MathlibExt.Analysis.Convex.EstimateSequence.accelerated_strongly_convex_rate": "88fff15fc8eddcb3",
-"MathlibExt.Analysis.Convex.EstimateSequence.estimateSequence_lambda_le": "e8259f192ade54cb",
+"MathlibExt.Analysis.Convex.EstimateSequence.estimateSequence_lambda_le": "2fd4dfc084424f10",
 "MathlibExt.Analysis.Convex.EstimateSequence.estimateSequence_optimal_rate": "dc10091f61bbf087",
 "MathlibExt.Analysis.Convex.EstimateSequence.estimateSequence_rate": "4e87b3378c94eab0",
 "MathlibExt.Analysis.Convex.EstimateSequence.estimateSequence_step": "19dfd74ebe0729f1",

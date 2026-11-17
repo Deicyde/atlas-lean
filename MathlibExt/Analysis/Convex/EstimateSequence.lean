@@ -212,8 +212,9 @@ theorem estimateSequence_rate {f : E → ℝ} {L μ : ℝ} {α γ : ℕ → ℝ}
   linarith
 
 /-- **Decay of the scaling sequence of Nesterov's scheme.** If the sequences follow Nesterov's
-scheme (2.2.6) (`IsNesterovScheme`) with `L > 0`, `0 ≤ μ ≤ γ 0`, then `λ k = ∏_{i < k} (1 - α i)` satisfies
-`λ k ≤ (1 - √(μ / L)) ^ k` and `λ k ≤ 4 L / (2 √L + k √(γ 0)) ^ 2`.
+scheme (2.2.6) (`IsNesterovScheme`) with `L > 0`, `0 ≤ μ ≤ γ 0`, then
+`λ k = ∏_{i < k} (1 - α i)` satisfies `λ k ≤ (1 - √(μ / L)) ^ k` and
+`λ k ≤ 4 L / (2 √L + k √(γ 0)) ^ 2`.
 
 This is Lemma 2.2.4 of Yu. Nesterov, *Introductory Lectures on Convex Programming, Volume I:
 Basic course* (lecture notes, July 2, 1998), which states the minimum of the two bounds. -/

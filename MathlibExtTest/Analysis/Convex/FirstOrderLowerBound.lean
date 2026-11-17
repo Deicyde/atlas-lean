@@ -39,7 +39,8 @@ example (x₀ : EuclideanSpace ℝ (Fin 3)) :
   exact ⟨f, xstar, hmin, (hlow (fun _ => x₀) rfl (fun j => by simp)).1⟩
 
 -- The coordinates beyond `m` of the minimiser vanish and the first one is `m / (m + 1)`.
-example : worstMinimizer 5 3 ⟨0, by norm_num⟩ = 3 / 4 ∧ worstMinimizer 5 3 ⟨4, by norm_num⟩ = 0 := by
+example :
+    worstMinimizer 5 3 ⟨0, by norm_num⟩ = 3 / 4 ∧ worstMinimizer 5 3 ⟨4, by norm_num⟩ = 0 := by
   simp [worstMinimizer]
   norm_num
 
