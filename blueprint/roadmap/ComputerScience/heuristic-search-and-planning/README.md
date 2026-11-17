@@ -7,6 +7,7 @@ Search and decision procedures from artificial intelligence: A* search, game-tre
 - [Alpha–beta pruning](alpha-beta-pruning/README.md)
 - [Value iteration](value-iteration/README.md)
 - [Policy iteration](policy-iteration/README.md)
+- [Optimality of stationary policies](optimality-of-stationary-policies/README.md)
 
 ## Related topics
 

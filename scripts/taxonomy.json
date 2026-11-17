@@ -914,6 +914,7 @@
   "CSLibExt/Algorithms/Lean/Greedy/OfflineCaching": {"to": "ComputerScience/greedy-algorithms-and-matroids", "title": "Furthest-in-future caching"},
   "CSLibExt/Algorithms/Lean/MDP/ApproximatePolicyIteration": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Approximate policy iteration"},
   "CSLibExt/Algorithms/Lean/MDP/GreedyPolicyBound": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Greedy policies of approximate values"},
+  "CSLibExt/Algorithms/Lean/MDP/MarkovPolicy": {"to": "ComputerScience/heuristic-search-and-planning", "title": "Optimality of stationary policies"},
   "CSLibExt/Algorithms/Lean/MDP/NaturalPolicyGradient": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Natural policy gradient"},
   "CSLibExt/Algorithms/Lean/MDP/PerformanceDifference": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Performance difference lemma"},
   "CSLibExt/Algorithms/Lean/MDP/PolicyIteration": {"to": "ComputerScience/heuristic-search-and-planning", "title": "Policy iteration"},
