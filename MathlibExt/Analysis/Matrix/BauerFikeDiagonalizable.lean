@@ -65,7 +65,7 @@ theorem one_le_norm_inverse_mul_of_mem_spectrum_add {𝕜 R : Type*} [Field 𝕜
   exact U.isUnit.mul h1
 
 /-- **Bauer–Fike exclusion theorem, product form.** Under the same hypotheses,
-`1 ≤ ‖(μ - A)⁻¹‖ ‖E‖` (Encyclopedia of Mathematics, *Bauer–Fike theorem*, the full chain (a2)).
+`1 ≤ ‖(μ - A)⁻¹‖ ‖E‖` (Encyclopedia of Mathematics, *Bauer–Fike theorem*, the outer inequality of the chain (a2)).
 This weaker form is the one that gives the Bauer–Fike theorem for diagonalizable matrices. -/
 theorem one_le_norm_inverse_mul_norm_of_mem_spectrum_add {𝕜 R : Type*} [Field 𝕜]
     [NormedRing R] [CompleteSpace R] [Algebra 𝕜 R] {A E : R} {μ : 𝕜}

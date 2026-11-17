@@ -119,7 +119,7 @@ theorem gamma_nonneg {k : ℕ} (hk : (k : K) * 2 ^ (-(p : ℤ)) < 1) : 0 ≤ (ga
 `dotFl`: rounded products added from left to right, each addition rounded (Demmel, Math 221
 Lecture 5 notes, 2024, recalling homework 1.10, in the first-order form `n u`; the exact `γₙ`
 form is the standard one of N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd
-ed., SIAM, 2002, chapter on summation and inner products). -/
+ed., SIAM, 2002). -/
 theorem abs_dotFl_sub_le (hp : 1 ≤ p) (x y : ℕ → K) (n : ℕ)
     (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1) :
     |dotFl p x y n - ∑ i ∈ range n, x i * y i| ≤ gamma p n * ∑ i ∈ range n, |x i * y i| := by
