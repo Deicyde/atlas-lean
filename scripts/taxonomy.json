@@ -1082,6 +1082,7 @@
   "CSLibExt/Computability/Automata/NA/EncodedNFA": {"to": "TheoryOfComputation/decision-procedures", "title": "Encoded finite automata"},
   "CSLibExt/Computability/Automata/NA/GeneralizedBuchi": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Generalized Büchi automata"},
   "CSLibExt/Computability/Automata/NA/Parity": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Parity automata"},
+  "CSLibExt/Computability/Automata/NA/PlainProduct": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Boolean closure of Büchi automata"},
   "CSLibExt/Computability/Automata/NA/RabinStreett": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Rabin and Streett automata"},
   "CSLibExt/Computability/Automata/PDA/Basic": {"to": "TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata", "title": "Pushdown automata"},
   "CSLibExt/Computability/Automata/Transducers/Sequential": {"to": "TheoryOfComputation/regular-languages/automata-and-expressions", "title": "Sequential transducers, Mealy and Moore machines"},

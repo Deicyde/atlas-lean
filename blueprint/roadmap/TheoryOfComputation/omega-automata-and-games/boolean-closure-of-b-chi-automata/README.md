@@ -7,6 +7,15 @@ Languages of finite-state nondeterministic Büchi automata (ω-regular languages
 - [Complement of an ω-regular language, over any alphabet](compl-of-is-regular.md)
 - [Büchi automata are closed under complementation](exists-buchi-compl.md)
 
+## Why the plain product fails
+
+- [Plain product of two Büchi automata](plain-product.md)
+- [Two-state cyclic Büchi automaton](two-cycle.md)
+- [The plain product accepts only words in the intersection](language-plain-product-le.md)
+- [A two-state cyclic automaton with an accepting state accepts every word](language-two-cycle.md)
+- [Vardi's plain product is empty](language-plain-product-two-cycle.md)
+- [The plain product does not compute the intersection of Büchi languages](exists-plain-product-ne-inf.md)
+
 ## Related topics
 
 - [Model checking for linear temporal logic](../../../Logic/temporal-logic/model-checking-for-linear-temporal-logic/README.md): model checking intersects the automaton of a system with the automaton of the negated specification and tests the product for emptiness.
