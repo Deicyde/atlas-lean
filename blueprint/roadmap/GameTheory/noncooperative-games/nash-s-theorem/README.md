@@ -6,6 +6,7 @@ Neumann's minimax theorem; potential games even have pure equilibria.
 - [Expected payoff of a mixed profile](expected-payoff.md)
 - [Mixed Nash equilibrium](is-mixed-nash.md)
 - [Nash's theorem](exists-is-mixed-nash.md)
+- [Nash's theorem, proved from Brouwer's theorem](exists-mixed-nash.md)
 
 ## Related topics
 

@@ -3027,6 +3027,7 @@
   "MathlibExt/GameTheory/ImpartialAcyclicGame": {"to": "GameTheory/combinatorial-games", "title": "Sprague–Grundy theorem"},
   "MathlibExt/GameTheory/MeanFieldEquilibrium": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "MathlibExt/GameTheory/MeanFieldGameSystem": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
+  "MathlibExt/GameTheory/NashExistence": {"to": "GameTheory/noncooperative-games", "title": "Nash's theorem"},
   "MathlibExt/GameTheory/NimSumLastPile": {"to": "GameTheory/combinatorial-games", "title": "Nim"},
   "MathlibExt/GameTheory/NoRegretDynamics": {"to": "GameTheory/noncooperative-games", "title": "No-regret dynamics"},
   "MathlibExt/GameTheory/PotentialGame": {"to": "GameTheory/noncooperative-games", "title": "Potential games"},

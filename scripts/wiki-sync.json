@@ -23283,6 +23283,7 @@
 "MathlibExt.GameTheory.MeanFieldGameSystem.IsMFGClassicalSolution": "dc2f82aaa00080c5",
 "MathlibExt.GameTheory.MeanFieldGameSystemWanted.isMFGClassicalSolution_unique": "e047f30d76a0404f",
 "MathlibExt.GameTheory.NashCorrelatedBridge.isCorrelatedEq_productDist_of_isMixedNash": "0ebad325746bb810",
+"MathlibExt.GameTheory.NashExistence.exists_mixed_nash": "38da0226ab298d26",
 "MathlibExt.GameTheory.NashExistenceWanted.IsMixedNash": "ea7e0c55cf22e9a2",
 "MathlibExt.GameTheory.NashExistenceWanted.exists_isMixedNash": "0f49a726cdfba979",
 "MathlibExt.GameTheory.NashExistenceWanted.expectedPayoff": "d8652c09dd7619e4",

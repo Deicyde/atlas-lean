@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Batteries.Util.ProofWanted
+public import MathlibExt.GameTheory.NashExistence
 public import Mathlib.Analysis.Convex.StdSimplex
 public import Mathlib.Data.Fintype.Pi
 
@@ -22,7 +22,11 @@ of player `i` is a probability vector on `S i` (a `Convexity.StdSimplex ℝ (S i
 randomise independently, so the expected payoff of a mixed profile `σ` is
 `∑ₛ (∏ⱼ σⱼ(sⱼ)) uᵢ(s)`. Nash proved that some mixed profile is an equilibrium: no player gains
 by changing its own mixed strategy. The proof uses Brouwer's (or Kakutani's) fixed-point
-theorem, which pinned Mathlib does not provide, so the statement is recorded here.
+theorem, which pinned Mathlib does not provide. The statement was first recorded here as wanted;
+it is now proved, by Nash's 1951 argument from Brouwer's theorem for products of simplices, in
+`MathlibExt.GameTheory.NashExistence.exists_mixed_nash`, of which `exists_isMixedNash` is a
+restatement in this module's vocabulary. The definitions stay in `WantedExt` so that their
+pages, and `NashCorrelatedBridge`, keep their declarations.
 
 The two-player zero-sum case is von Neumann's minimax theorem, proved in MathlibExt as
 `matrixGame_exists_isSaddlePointOn`; games with an exact potential have pure equilibria
@@ -60,7 +64,8 @@ at least one) pure strategies for each, has a mixed Nash equilibrium.
 Source: J. Nash, "Non-cooperative games", Ann. of Math. 54 (1951), 286–295, Theorem 1
 ("Every finite game has an equilibrium point"); announced in Proc. Natl. Acad. Sci. USA 36
 (1950), 48–49. -/
-theorem_wanted exists_isMixedNash [∀ i, Nonempty (S i)] (u : ι → (∀ j, S j) → ℝ) :
-    ∃ σ : ∀ j, StdSimplex ℝ (S j), IsMixedNash u σ
+theorem exists_isMixedNash [∀ i, Nonempty (S i)] (u : ι → (∀ j, S j) → ℝ) :
+    ∃ σ : ∀ j, StdSimplex ℝ (S j), IsMixedNash u σ :=
+  MathlibExt.GameTheory.NashExistence.exists_mixed_nash u
 
 end MathlibExt.GameTheory.NashExistenceWanted
