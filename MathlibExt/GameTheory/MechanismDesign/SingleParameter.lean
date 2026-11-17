@@ -271,7 +271,7 @@ theorem setIntegral_payment_eq {P₁ P₂ : ℝ → ℝ} (h₁ : IsIncentiveComp
 
 /-- **Individual rationality from the lowest type.** If `(Q, P)` is incentive compatible on
 `[a, b]`, `Q ≥ 0` on `[a, b]` and the lowest value gets `U a ≥ 0`, then every value gets a
-nonnegative truthfulUtility (Myerson 1981, proof of Lemma 2: (3.4) follows from (4.3) and (4.4)). -/
+nonnegative utility (Myerson 1981, proof of Lemma 2: (3.4) follows from (4.3) and (4.4)). -/
 theorem IsIncentiveCompatibleOn.utility_nonneg_of_lowest (h : IsIncentiveCompatibleOn Q P a b)
     (hQ : ∀ t ∈ Icc a b, 0 ≤ Q t) (ha : 0 ≤ truthfulUtility Q P a) {t : ℝ} (ht : t ∈ Icc a b) :
     0 ≤ truthfulUtility Q P t := by

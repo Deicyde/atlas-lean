@@ -15,5 +15,5 @@ monotonicity is needed.
 ## Sources
 
 - R. B. Myerson, "Optimal auction design", *Mathematics of Operations Research* 6(1) (1981), 58–73, Lemma 2.
-- N. Nisan, "Introduction to mechanism design (for computer scientists)", Chapter 9 of N. Nisan, T. Roughgarden, É. Tardos and V. V. Vazirani (eds.), *Algorithmic Game Theory*, Cambridge University Press, 2007, Theorem 9.39 (whose proof assumes differentiability).
+- N. Nisan, "Introduction to mechanism design (for computer scientists)", Chapter 9 of N. Nisan, T. Roughgarden, É. Tardos and V. V. Vazirani (eds.), *Algorithmic Game Theory*, Cambridge University Press, 2007, Theorem 9.39 (whose proof assumes differentiability almost everywhere).
 - J. D. Hartline and A. R. Karlin, "Profit maximization in mechanism design", Chapter 13 of the same volume, Theorem 13.6.

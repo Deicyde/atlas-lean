@@ -152,7 +152,7 @@ theorem clarkePayment_nonneg (f : (ι → A → ℝ) → A) (v : ι → A → �
 
 /-- **Individual rationality.** If `f v` maximizes the welfare at `v` and all valuations are
 nonnegative, then with Clarke pivot payments every agent reporting truthfully gets a nonnegative
-truthfulUtility (Nisan 2007, Lemma 9.20, second part). -/
+utility (Nisan 2007, Lemma 9.20, second part). -/
 theorem clarke_utility_nonneg {f : (ι → A → ℝ) → A} {v : ι → A → ℝ}
     (hf : ∀ a, welfare v a ≤ welfare v (f v)) (hv : ∀ i a, 0 ≤ v i a) (i : ι) :
     0 ≤ v i (f v) - grovesPayment f clarkePivot v i := by
