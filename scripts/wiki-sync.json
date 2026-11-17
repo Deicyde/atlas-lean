@@ -10019,6 +10019,8 @@
 "Cslib.Distributed.LamportClock.Step": "5cb04b9fe9504a20",
 "Cslib.Distributed.LamportClock.TotalBefore": "8b1e63c2e7e3689f",
 "Cslib.Distributed.LamportClock.WellFormed": "fb25bc92c2a29726",
+"Cslib.Distributed.LamportClock.clockBefore_of_happensBefore": "60abc8569b60cc04",
+"Cslib.Distributed.LamportClock.clockBefore_total": "81601237d0e9e888",
 "Cslib.Distributed.LamportClock.clockCondition_of_c1_c2": "492694ca741883aa",
 "Cslib.Distributed.LamportClock.clockStep": "25258c6b99d9ce36",
 "Cslib.Distributed.LamportClock.clock_condition": "cafd2eabaff5248b",

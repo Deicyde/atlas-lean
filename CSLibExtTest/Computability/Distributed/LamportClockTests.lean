@@ -113,4 +113,11 @@ example : ∃ C : ℕ → ℕ, ∀ a b, ClockBefore tr C a b ↔
     (fun _ _ h => totalBefore_of_happensBefore h)
   exact ⟨C, hiff⟩
 
+/-- Any clock satisfying the clock condition, here the position in the list, induces a strict
+total order extending happened-before. -/
+example : ClockBefore tr id 0 3 ∧ (ClockBefore tr id 3 4 ∨ ClockBefore tr id 4 3) ∧
+    ¬ ClockBefore tr id 2 2 :=
+  ⟨clockBefore_of_happensBefore (fun _ _ h => h.lt) hb03,
+    clockBefore_total (fun _ _ h => h.lt) rfl rfl (by decide), clockBefore_irrefl tr id 2⟩
+
 end Cslib.Distributed.LamportClock.Tests

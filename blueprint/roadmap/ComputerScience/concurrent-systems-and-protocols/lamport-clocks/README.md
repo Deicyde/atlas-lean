@@ -38,6 +38,8 @@ Happened-before is an irreflexive partial order here by construction (an event o
 ## The total order
 
 - [The order induced by a clock system](clock-before.md)
+- [The order induced by a clock satisfying the clock condition extends happened-before](clock-before-of-happens-before.md)
+- [The order induced by a clock satisfying the clock condition is total](clock-before-total.md)
 - [Lamport's total order](total-before.md)
 - [Lamport's total order is the order induced by the Lamport timestamps](total-before-eq-clock-before.md)
 - [Lamport's total order extends happened-before](total-before-of-happens-before.md)
@@ -48,7 +50,7 @@ Happened-before is an irreflexive partial order here by construction (an event o
 
 - [Vector clocks](../vector-clocks/README.md): the same execution model; vector timestamps characterise happened-before exactly, which Lamport timestamps cannot, since the converse of the clock condition fails.
 - [Linear extensions of posets](../../../Combinatorics/partially-ordered-sets/linear-extensions-of-posets/README.md): Lamport's total order is a linear extension of happened-before, and every linear extension arises from some clock system.
-- [Paxos consensus](../paxos-consensus/README.md): Lamport's state-machine approach needs a total order of commands; Paxos provides one despite crash failures.
+- [Paxos consensus](../paxos-consensus/README.md): Lamport's state-machine approach needs a total order of commands; Paxos, run once per command (*Paxos Made Simple*, Section 3), provides one despite crash failures.
 - [Bakery algorithm](../bakery-algorithm/README.md): the shared-memory counterpart, which breaks ties between equal tickets by process name, as the total order here breaks ties between equal clock values.
 
 ## Sources
