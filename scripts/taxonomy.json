@@ -703,6 +703,7 @@
   "CSLibExt/Algorithms/CCS/AlternatingBitData": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Alternating bit protocol"},
   "CSLibExt/Algorithms/CCS/FiniteState": {"to": "ComputerScience/process-calculi", "title": "Finite-state CCS agents"},
   "CSLibExt/Algorithms/CCS/GoBackN": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Go-back-N protocol"},
+  "CSLibExt/Algorithms/Concurrency/Bakery": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Bakery algorithm"},
   "CSLibExt/Algorithms/Concurrency/Banker": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Banker's algorithm"},
   "CSLibExt/Algorithms/Concurrency/Deadlock": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Deadlock and circular wait"},
   "CSLibExt/Algorithms/Concurrency/DeadlockDetection": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Deadlock detection"},

@@ -3,6 +3,7 @@
 Specific concurrent or distributed systems and their verified properties: deadlock and its detection, the banker's algorithm, dining philosophers, communication protocols such as the alternating-bit protocol and go-back-N, and fault-tolerant agreement with its impossibility results (Byzantine generals and Byzantine agreement, FLP, the round bound for crash failures). Each page on fault tolerance states its model: synchrony, failure type and message delivery.
 
 - [Alternating bit protocol](alternating-bit-protocol/README.md)
+- [Bakery algorithm](bakery-algorithm/README.md)
 - [Banker's algorithm](banker-s-algorithm/README.md)
 - [Byzantine agreement](byzantine-agreement/README.md)
 - [Byzantine generals problem](byzantine-generals-problem/README.md)
