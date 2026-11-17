@@ -3,6 +3,7 @@
 Algorithms on numbers, polynomials and matrices: integer and polynomial multiplication (Karatsuba, FFT and convolution), matrix multiplication (iterative, recursive, Strassen), Horner evaluation, floating-point rounding, modular exponentiation and linear congruences, Miller-Rabin primality testing, and bit-level polynomial and bitvector arithmetic.
 
 - [Bitvectors and Boolean lists](bitvectors-and-boolean-lists/README.md)
+- [Communication lower bounds](communication-lower-bounds/README.md)
 - [Binary polynomial arithmetic on bitvectors](binary-polynomial-arithmetic-on-bitvectors/README.md)
 - [Fast Fourier transform](fast-fourier-transform/README.md)
 - [Floating-point rounding](floating-point-rounding/README.md)

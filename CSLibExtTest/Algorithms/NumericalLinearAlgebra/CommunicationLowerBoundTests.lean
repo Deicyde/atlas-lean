@@ -1,0 +1,51 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+module
+
+public import CSLibExt.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
+
+@[expose] public section
+
+open Finset MathlibExt.Combinatorics.LoomisWhitney
+  Cslib.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
+
+namespace CSLibExtTest.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
+
+/-- The hypotheses are jointly satisfiable: `2 × 2` times `2 × 2` matrix multiplication done in
+a single segment with a fast memory of `M = 1` word (each projection has `4 ≤ 4M` elements),
+moving `W = 0` words; the bound reads `8 / 8 - 1 = 0 ≤ 0`. -/
+example : ((2 * 2 * 2 : ℕ) : ℝ) / (8 * √((1 : ℕ) : ℝ)) - (1 : ℕ) ≤ (0 : ℕ) :=
+  matmul_card_div_sub_le_words (n := 2) (m := 2) (r := 2) (s := 1) (fun _ => univ) 1 0
+    (fun p => ⟨0, mem_univ p⟩) (fun _ => by decide) (fun _ => by decide) (fun _ => by decide)
+    (by norm_num)
+
+/-- A segment using at most `4M` operands of each kind performs at most `8 M √M` evaluations:
+the cube `{0,1}³` with `M = 1` attains `8 = 8 · 1 · √1`. -/
+example : ((univ : Finset (Fin 2 × Fin 2 × Fin 2)).card : ℝ) ≤ 8 * (1 : ℕ) * √((1 : ℕ) : ℝ) :=
+  card_le_of_card_image_le _ 1 (by decide) (by decide) (by decide)
+
+/-- With `M = 0` no operand fits, so a segment evaluates nothing. -/
+example (E : Finset (ℕ × ℕ × ℕ)) (hA : (E.image projXZ).card ≤ 4 * 0)
+    (hB : (E.image projYZ).card ≤ 4 * 0) (hC : (E.image projXY).card ≤ 4 * 0) : E.card = 0 := by
+  have := card_le_of_card_image_le E 0 hA hB hC
+  simpa using this
+
+/-- The `2 × 2 × 2` block of index triples numbered `t`, for `4 × 4` matrices. -/
+def block (t : Fin 8) : Finset (Fin 4 × Fin 4 × Fin 4) :=
+  univ.filter fun p =>
+    p.1.val / 2 = t.val / 4 ∧ p.2.1.val / 2 = t.val / 2 % 2 ∧ p.2.2.val / 2 = t.val % 2
+
+/-- A nondegenerate instance: `4 × 4` times `4 × 4` matrix multiplication with `M = 4` cut into
+`8` segments, each a `2 × 2 × 2` block of index triples (`4 ≤ 16` operands of each kind),
+moving `W = 4 · 7 = 28` words; the bound gives `64 / 16 - 4 = 0 ≤ 28`. -/
+example : ((4 * 4 * 4 : ℕ) : ℝ) / (8 * √((4 : ℕ) : ℝ)) - (4 : ℕ) ≤ (28 : ℕ) :=
+  matmul_card_div_sub_le_words block 4 28 (by decide) (by decide) (by decide) (by decide)
+    (by norm_num)
+
+end CSLibExtTest.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
