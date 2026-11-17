@@ -10,3 +10,7 @@ This is Coron, *Control and Nonlinearity* (AMS 2007), Theorem 1.16, which Coron 
 
 - [Gramian criterion for controllability](is-controllable-on-iff-bijective-gramian.md): Coron derives the rank condition from Theorem 1.11.
 - [Kalman rank condition, dual form](kalman-subspace-eq-top-iff.md): the Cayley–Hamilton reduction to powers below $\dim E$.
+
+## Background
+
+- [Pole placement for single-input systems](../pole-placement/exists-charpoly-add-smul-right-eq.md): the rank condition with one input says that $b$ is a cyclic vector of $A$, the hypothesis of pole placement.

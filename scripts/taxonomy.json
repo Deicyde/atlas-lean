@@ -2055,6 +2055,8 @@
   "MathlibExt/Analysis/Normed/Series/NormalConvergence": {"to": "Analysis/sequences-and-series/convergence", "title": "Normal convergence of series of functions"},
   "MathlibExt/Analysis/Control/LinearControllability": {"to": "Analysis/control-theory", "title": "Controllability of linear systems"},
   "MathlibExt/Analysis/Control/Hautus": {"to": "Analysis/control-theory", "title": "Controllability of linear systems"},
+  "MathlibExt/Analysis/Control/PolePlacement": {"to": "Analysis/control-theory", "title": "Pole placement"},
+  "MathlibExt/Analysis/Control/LinearStabilization": {"to": "Analysis/control-theory", "title": "Pole placement"},
   "MathlibExt/Analysis/ODE/CauchyPeano": {"to": "Analysis/ordinary-differential-equations", "title": "Cauchy–Peano existence theorem"},
   "MathlibExt/Analysis/ODE/DirichletSineEigenfunctions": {"to": "Analysis/ordinary-differential-equations", "title": "Green's operator of the Dirichlet Laplacian on [0, 1]"},
   "MathlibExt/Analysis/ODE/Duhamel": {"to": "Analysis/ordinary-differential-equations", "title": "Duhamel's formula"},
