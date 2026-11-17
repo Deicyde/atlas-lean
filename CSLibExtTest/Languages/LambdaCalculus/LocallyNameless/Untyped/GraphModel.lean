@@ -43,3 +43,8 @@ example : ∃ ρ : ℕ → Set ℕ,
     denote ρ (.abs (.app (.fvar 0) (.bvar 0)) : Term ℕ) (fun _ : ℕ => (∅ : Set ℕ)) ≠
       denote ρ (.fvar 0) (fun _ : ℕ => (∅ : Set ℕ)) :=
   exists_denote_eta_ne 0 _
+
+/-- The denotation of `λy. x y` is Scott-continuous in the value of the free variable `x`. -/
+example : ScottContinuous fun ρ : ℕ → Set ℕ =>
+    denote ρ (.abs (.app (.fvar 0) (.bvar 0)) : Term ℕ) (fun _ => ∅) :=
+  scottContinuous_denote_fvar _ _

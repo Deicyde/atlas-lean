@@ -9,6 +9,7 @@ This topic interprets CSLib's locally nameless untyped λ-terms in Scott's graph
 - [Extending a bound-variable environment](cons-env.md)
 - [Denotation of an untyped λ-term in the graph model](denote.md)
 - [Scott's continuity theorem for the graph model](scott-continuous-denote.md)
+- [Denotations are Scott-continuous in the free variables](scott-continuous-denote-fvar.md)
 - [β at the level of denotations](app-denote-abs.md)
 - [Denotations depend only on the bound variables in scope](denote-congr-of-lc-at.md)
 - [Locally closed terms ignore the bound-variable environment](denote-congr-of-lc.md)
@@ -36,4 +37,3 @@ This topic interprets CSLib's locally nameless untyped λ-terms in Scott's graph
 - [Scott's inverse-limit theorem](../../../Order/fixed-points-domain-theory/scott-s-inverse-limit-theorem.md): the extensional model $D_\infty$, recorded as wanted.
 - [PCF and computational adequacy](../pcf-and-computational-adequacy/README.md): Scott's domains for a typed language with recursion.
 - [The existing untyped beta-conversion term model](../../type-systems-and-lambda-calculi/system-f/the-existing-untyped-beta-conversion-term-model/README.md): the syntactic model of the untyped calculus, terms modulo β-conversion.
-

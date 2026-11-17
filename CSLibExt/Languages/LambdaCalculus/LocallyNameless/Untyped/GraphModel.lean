@@ -20,8 +20,9 @@ interprets untyped λ-terms in `P(ω) = Set ℕ`: application is the graph-model
 This file gives that interpretation for CSLib's locally nameless untyped terms
 (`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term`) and proves:
 
-* `scottContinuous_denote`: every term denotes a Scott-continuous function of the values of its
-  bound variables (Scott's continuity theorem, Theorem 2.1);
+* `scottContinuous_denote`, `scottContinuous_denote_fvar`: every term denotes a Scott-continuous
+  function of the values of its bound variables and of its free variables (Scott's continuity
+  theorem, Theorem 2.1);
 * `denote_eq_of_fullBeta`, `denote_eq_of_reflTransGen_fullBeta`: full β-reduction, including
   reduction under λ (the ξ-rule), preserves denotations (the β and ξ parts of Scott's conversion
   theorem, Theorem 2.2);
@@ -133,6 +134,30 @@ theorem scottContinuous_denote (ρ : Var → Set ℕ) (M : Term Var) :
     refine ScottContinuous.of_map_sSup fun d hne hd => ?_
     have hv : ∀ v, denote ρ M (consEnv v (sSup d)) =
         sSup ((fun bs => denote ρ M (consEnv v bs)) '' d) := fun v => (hG v).map_sSup hne hd
+    ext k
+    simp only [denote, graph, Set.mem_ofPred_eq, hv, Set.sSup_eq_sUnion, Set.mem_sUnion,
+      Set.mem_image, exists_exists_and_eq_and]
+
+/-- **Denotations are Scott-continuous in the free variables.** For every term `M` and valuation
+`bs` of its bound variables, the denotation of `M` is a Scott-continuous function of the
+valuation `ρ` of its free variables, ordered pointwise (D. Scott, *Data types as lattices*, SIAM
+J. Comput. 5 (1976), Theorem 2.1: LAMBDA-definable functions of their free variables are
+continuous). -/
+theorem scottContinuous_denote_fvar (M : Term Var) (bs : ℕ → Set ℕ) :
+    ScottContinuous fun ρ : Var → Set ℕ => denote ρ M bs := by
+  induction M generalizing bs with
+  | bvar i => exact ScottContinuous.const (bs i)
+  | fvar x =>
+    refine ScottContinuous.of_map_sSup fun d _ _ => ?_
+    ext m
+    simp [denote, sSup_apply]
+  | app M N ihM ihN =>
+    exact ((ihM bs).prodMk (ihN bs)).comp scottContinuous_app
+  | abs M ih =>
+    refine ScottContinuous.of_map_sSup fun d hne hd => ?_
+    have hv : ∀ v, denote (sSup d) M (consEnv v bs) =
+        sSup ((fun ρ => denote ρ M (consEnv v bs)) '' d) := fun v =>
+      (ih (consEnv v bs)).map_sSup hne hd
     ext k
     simp only [denote, graph, Set.mem_ofPred_eq, hv, Set.sSup_eq_sUnion, Set.mem_sUnion,
       Set.mem_image, exists_exists_and_eq_and]
