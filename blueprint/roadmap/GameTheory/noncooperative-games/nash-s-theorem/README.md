@@ -7,7 +7,6 @@ Brouwer's fixed-point theorem for products of simplices, by Nash's 1951 argument
 - [Expected payoff of a mixed profile](expected-payoff.md)
 - [Mixed Nash equilibrium](is-mixed-nash.md)
 - [Nash's theorem](exists-is-mixed-nash.md)
-- [Nash's theorem, proved from Brouwer's theorem](exists-mixed-nash.md)
 
 ## Related topics
 

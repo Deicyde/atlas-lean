@@ -11,8 +11,8 @@ product of the players' mixed-strategy simplices is the domain of the fixed-poin
 
 - [Brouwer's fixed-point theorem for simplices with any finite vertex set](exists-fixed-point-of-finite.md): applied on the simplex of distributions on the product of the vertex sets.
 - [The marginals of a product distribution are its factors](marginal-prod-simplex.md): the product of simplices is a retract of that simplex.
-- [The product distribution depends continuously on its factors](continuous-prod-simplex.md) and [Marginals depend continuously on the distribution](continuous-marginal.md): continuity of the retraction.
+- [The product distribution depends continuously on its factors](continuous-prod-simplex.md): continuity of the section; the marginals are Mathlib's pushforwards `StdSimplex.map`, continuous by `StdSimplex.continuous_map`.
 
 ## Background
 
-- [Nash's theorem, proved from Brouwer's theorem](../../../GameTheory/noncooperative-games/nash-s-theorem/exists-mixed-nash.md): the application for which this form is stated.
+- [Nash's theorem](../../../GameTheory/noncooperative-games/nash-s-theorem/exists-is-mixed-nash.md): the application for which this form is stated.

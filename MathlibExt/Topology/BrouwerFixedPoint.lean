@@ -24,9 +24,10 @@ both weight vectors sum to `1`.
 
 So the chain Sperner ⟹ KKM ⟹ Brouwer, the combinatorial route to Brouwer that underlies the
 complexity class PPAD (Papadimitriou 1994; Daskalakis, Goldberg and Papadimitriou 2009,
-Section 3.3), is complete in the repository for simplices. The theorem is stated for the
-standard simplex only; spaces homeomorphic to it (balls, products of simplices, compact convex
-bodies) are not covered here.
+Section 3.3), is complete in the repository for simplices. The module covers the standard
+simplex, simplices on any finite nonempty vertex set (`exists_fixedPoint_of_finite`) and finite
+products of such simplices (`exists_fixedPoint_pi`, the form used in Nash's proof); balls and
+general compact convex bodies are not covered here.
 
 ## References
 
@@ -155,28 +156,35 @@ theorem exists_fixedPoint_of_finite {X : Type*} [Finite X] [Nonempty X]
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι] {S : ι → Type*} [∀ i, Fintype (S i)]
 
-/-- **Product of mixed strategies.** The product distribution `s ↦ ∏ᵢ σᵢ(sᵢ)` on `∀ i, S i`
-of independent distributions `σᵢ` on the finite sets `S i`. -/
+/-- **Product distribution.** The product distribution `s ↦ ∏ᵢ σᵢ(sᵢ)` on `∀ i, S i` of
+independent distributions `σᵢ` on the finite sets `S i` (in game theory, the distribution of
+pure profiles under independent mixed strategies). -/
 noncomputable def prodSimplex (σ : ∀ i, StdSimplex ℝ (S i)) : StdSimplex ℝ (∀ i, S i) :=
   ofFun (fun s => ∏ i, (σ i).weights (s i))
     (fun s => Finset.prod_nonneg (fun i _ => (σ i).weights_nonneg (s i)))
     (by rw [← Fintype.prod_sum]; simp)
 
-/-- **Marginal of a distribution on a product.** The `i`-th marginal
-`t ↦ ∑_{s : sᵢ = t} p(s)` of a distribution `p` on `∀ i, S i`. -/
-noncomputable def marginal [∀ i, DecidableEq (S i)] (p : StdSimplex ℝ (∀ i, S i)) (i : ι) :
-    StdSimplex ℝ (S i) :=
-  ofFun (fun t => ∑ s ∈ Finset.univ.filter (fun s : ∀ i, S i => s i = t), p.weights s)
-    (fun t => Finset.sum_nonneg (fun s _ => p.weights_nonneg s))
-    (by
-      rw [Finset.sum_fiberwise Finset.univ (fun s : ∀ i, S i => s i) p.weights]
-      simp)
+/-- **Weights of a pushforward distribution.** For a map `g` between finite types, the
+pushforward `p.map g` of a distribution `p` gives `y` the total weight `∑_{g x = y} p(x)` of its
+preimage; in particular the `i`-th marginal of a distribution on `∀ i, S i` is
+`p.map (fun s => s i)`. -/
+theorem map_weights_apply {X Y : Type*} [Fintype X] [DecidableEq Y] (g : X → Y)
+    (p : StdSimplex ℝ X) (y : Y) :
+    (p.map g).weights y = ∑ x ∈ Finset.univ.filter (fun x => g x = y), p.weights x := by
+  rw [StdSimplex.weights_map, Finsupp.mapDomain, Finsupp.sum_apply,
+    Finsupp.sum_fintype _ _ (by simp), Finset.sum_filter]
+  simp [Finsupp.single_apply]
 
-/-- **The marginals of a product distribution are its factors.** -/
-theorem marginal_prodSimplex [∀ i, DecidableEq (S i)] (σ : ∀ i, StdSimplex ℝ (S i)) (i : ι) :
-    marginal (prodSimplex σ) i = σ i := by
+/-- **The marginals of a product distribution are its factors.** The `i`-th marginal
+`(prodSimplex σ).map (fun s => s i)` of the product of independent distributions `σⱼ` is `σᵢ`:
+summing `∏ⱼ σⱼ(sⱼ)` over the profiles with `sᵢ = t` leaves `σᵢ(t)`, since every other factor sums
+to `1`. -/
+theorem marginal_prodSimplex (σ : ∀ i, StdSimplex ℝ (S i)) (i : ι) :
+    (prodSimplex σ).map (fun s => s i) = σ i := by
+  classical
   ext t
-  simp only [marginal, prodSimplex, ofFun_weights]
+  rw [map_weights_apply]
+  simp only [prodSimplex, ofFun_weights]
   rw [Finset.sum_filter]
   set g : ∀ j, S j → ℝ := Function.update (fun j => ⇑(σ j).weights) i
     (fun x => if x = t then (σ i).weights x else 0) with hg
@@ -199,20 +207,14 @@ theorem marginal_prodSimplex [∀ i, DecidableEq (S i)] (σ : ∀ i, StdSimplex 
   rw [hrest, mul_one, hg, Function.update_self]
   simp
 
-/-- **The product distribution depends continuously on its factors.** -/
+/-- **The product distribution depends continuously on its factors.** Each weight
+`∏ᵢ σᵢ(sᵢ)` is a product of coordinate functions, continuous on the product of simplices. -/
 theorem continuous_prodSimplex :
     Continuous (prodSimplex : (∀ i, StdSimplex ℝ (S i)) → StdSimplex ℝ (∀ i, S i)) := by
   refine continuous_of_continuous_weights (fun s => ?_)
   simp only [prodSimplex, ofFun_weights]
   exact continuous_finsetProd _ (fun i _ =>
     (StdSimplex.continuous_weights_apply ℝ (s i)).comp (continuous_apply i))
-
-/-- **Marginals depend continuously on the distribution.** -/
-theorem continuous_marginal [∀ i, DecidableEq (S i)] :
-    Continuous (fun p : StdSimplex ℝ (∀ i, S i) => fun i => marginal p i) := by
-  refine continuous_pi (fun i => continuous_of_continuous_weights (fun t => ?_))
-  simp only [marginal, ofFun_weights]
-  exact continuous_finsetSum _ (fun s _ => StdSimplex.continuous_weights_apply ℝ s)
 
 /-- **Brouwer's fixed-point theorem for products of simplices.** Every continuous self-map of
 a finite product `∏ᵢ Δ(Sᵢ)` of simplices with nonempty finite vertex sets has a fixed point.
@@ -228,11 +230,12 @@ theorem exists_fixedPoint_pi {ι : Type*} [Finite ι] {S : ι → Type*} [∀ i,
   have := Fintype.ofFinite ι
   have : ∀ i, Fintype (S i) := fun i => Fintype.ofFinite (S i)
   obtain ⟨p, hp⟩ := exists_fixedPoint_of_finite
-    (fun p => prodSimplex (g (fun i => marginal p i)))
-    (continuous_prodSimplex.comp (hg.comp continuous_marginal))
-  refine ⟨fun i => marginal p i, ?_⟩
+    (fun p => prodSimplex (g (fun i => p.map (fun s => s i))))
+    (continuous_prodSimplex.comp
+      (hg.comp (continuous_pi fun i => StdSimplex.continuous_map ℝ (fun s : ∀ i, S i => s i))))
+  refine ⟨fun i => p.map (fun s => s i), ?_⟩
   funext i
-  have := congrArg (fun q => marginal q i) hp
+  have := congrArg (fun q => q.map (fun s => s i)) hp
   simp only [marginal_prodSimplex] at this
   exact this
 

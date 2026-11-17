@@ -30,8 +30,8 @@ Section 2.4).
 
 The statement is recorded as wanted: it needs the combinatorics of the best-response
 polytopes, which the repository does not have. Existence of an equilibrium for every bimatrix
-game is the two-player case of Nash's theorem, proved from Brouwer's theorem in
-`MathlibExt.GameTheory.NashExistence.exists_mixed_nash`.
+game is the two-player case of Nash's theorem, proved from Brouwer's theorem as
+`MathlibExt.GameTheory.NashExistenceWanted.exists_isMixedNash`.
 
 ## References
 

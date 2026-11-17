@@ -75,7 +75,8 @@ theorem load_nonneg {w : ι → ℝ} (hw : ∀ i, 0 ≤ w i) (A : ι → Fin m) 
     0 ≤ load w A j :=
   sum_nonneg (fun i _ => hw i)
 
-/-- **Every load is at most the makespan.** -/
+/-- **Every load is at most the makespan.** The makespan is the maximum of the machine loads,
+so it bounds each of them. -/
 theorem load_le_makespan [NeZero m] (w : ι → ℝ) (A : ι → Fin m) (j : Fin m) :
     load w A j ≤ makespan w A :=
   le_sup' (load w A) (mem_univ j)

@@ -9,17 +9,17 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.GameTheory.CorrelatedEquilibrium
-public import WantedExt.GameTheory.NashExistenceWanted
+public import MathlibExt.GameTheory.NashExistence
 
 @[expose] public section
 
 /-! # Mixed Nash equilibria are correlated equilibria
 
-`NashExistenceWanted` defines mixed Nash equilibria in payoff form, in `WantedExt` because the
-existence theorem of Nash is wanted; `MathlibExt.GameTheory.CorrelatedEquilibrium` works in cost
-form and proves that product distributions of mutual best responses are correlated equilibria
-(`isCorrelatedEq_productDist`). This module connects the two definitions; it contains no wanted
-declaration and lives in `WantedExt` only because `IsMixedNash` does.
+`MathlibExt.GameTheory.NashExistence` defines mixed Nash equilibria in payoff form (under the
+namespace `NashExistenceWanted`, kept from when Nash's theorem was wanted) and proves Nash's
+theorem; `MathlibExt.GameTheory.CorrelatedEquilibrium` works in cost form and proves that
+product distributions of mutual best responses are correlated equilibria
+(`isCorrelatedEq_productDist`). This module connects the two definitions.
 
 ## References
 

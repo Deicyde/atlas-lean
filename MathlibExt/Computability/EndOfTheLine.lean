@@ -84,25 +84,6 @@ theorem forall_not_adj_to_iff {S P : V → V} {x : V} :
   · rintro h y ⟨hy, rfl⟩
     exact h hy
 
-/-- **END-OF-THE-LINE is total.** Let `V` be finite and `S P : V → V` with a standard vertex
-`o` satisfying `P o = o ≠ S o` (so `o` is a source with an outgoing edge to `S o` whenever
-`P (S o) = o`). Then some `x` satisfies `P (S x) ≠ x` (a sink) or `S (P x) ≠ x` with `x ≠ o`
-(a source other than `o`).
-
-This is the existence statement behind the definition of END-OF-THE-LINE and of PPAD in
-C. Daskalakis, P. W. Goldberg, C. H. Papadimitriou, "The complexity of computing a Nash
-equilibrium", SIAM J. Comput. 39(1) (2009), 195–259, Section 3.1, where `V = {0,1}ⁿ` and
-`o = 0ⁿ`. In fact the first alternative always occurs (`exists_sink`). -/
-theorem exists_solution [Finite V] (S P : V → V) (o : V) (hP : P o = o) (hS : S o ≠ o) :
-    ∃ x, P (S x) ≠ x ∨ (S (P x) ≠ x ∧ x ≠ o) := by
-  by_contra h
-  simp only [not_exists, not_or, not_and, not_not] at h
-  have hinj : Function.Injective S := fun a b hab => by
-    rw [← (h a).1, ← (h b).1, hab]
-  obtain ⟨y, hy⟩ := (Finite.injective_iff_surjective.mp hinj) o
-  have hyo : y = o := by rw [← (h y).1, hy, hP]
-  exact hS (hyo ▸ hy)
-
 /-- **Every END-OF-THE-LINE instance has a sink.** Under the hypotheses of `exists_solution`,
 some vertex `x` has `P (S x) ≠ x`, that is, has no outgoing edge (`forall_not_adj_iff`).
 Proof: otherwise `P ∘ S = id`, so `S` is injective, hence surjective on the finite set `V`;
@@ -118,5 +99,19 @@ theorem exists_sink [Finite V] (S P : V → V) (o : V) (hP : P o = o) (hS : S o 
   obtain ⟨y, hy⟩ := (Finite.injective_iff_surjective.mp hinj) o
   have hyo : y = o := by rw [← h y, hy, hP]
   exact hS (hyo ▸ hy)
+
+/-- **END-OF-THE-LINE is total.** Let `V` be finite and `S P : V → V` with a standard vertex
+`o` satisfying `P o = o ≠ S o` (so `o` is a source with an outgoing edge to `S o` whenever
+`P (S o) = o`). Then some `x` satisfies `P (S x) ≠ x` (a sink) or `S (P x) ≠ x` with `x ≠ o`
+(a source other than `o`).
+
+This is the existence statement behind the definition of END-OF-THE-LINE and of PPAD in
+C. Daskalakis, P. W. Goldberg, C. H. Papadimitriou, "The complexity of computing a Nash
+equilibrium", SIAM J. Comput. 39(1) (2009), 195–259, Section 3.1, where `V = {0,1}ⁿ` and
+`o = 0ⁿ`. In fact the first alternative always occurs (`exists_sink`). -/
+theorem exists_solution [Finite V] (S P : V → V) (o : V) (hP : P o = o) (hS : S o ≠ o) :
+    ∃ x, P (S x) ≠ x ∨ (S (P x) ≠ x ∧ x ≠ o) := by
+  obtain ⟨x, hx⟩ := exists_sink S P o hP hS
+  exact ⟨x, Or.inl (forall_not_adj_iff.mp hx)⟩
 
 end MathlibExt.Computability.EndOfTheLine

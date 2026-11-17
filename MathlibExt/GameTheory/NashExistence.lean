@@ -14,8 +14,14 @@ public import Mathlib.Algebra.BigOperators.Field
 /-!
 # Nash's theorem, proved from Brouwer's fixed-point theorem
 
-Every finite game has a mixed Nash equilibrium. The proof is Nash's 1951 argument: on the
-product of the players' mixed-strategy simplices define
+A finite strategic game has finitely many players `ι`, a finite nonempty strategy set `S i`
+for every player and payoffs `u i : (∀ j, S j) → ℝ`, which players maximise. A mixed strategy
+of player `i` is a probability vector on `S i` (a `Convexity.StdSimplex ℝ (S i)`); players
+randomise independently, so the expected payoff of a mixed profile `σ` is
+`∑ₛ (∏ⱼ σⱼ(sⱼ)) uᵢ(s)`. Every finite game has a mixed Nash equilibrium.
+
+The proof is Nash's 1951 argument: on the product of the players' mixed-strategy simplices
+define
 
   `σᵢ'(t) = (σᵢ(t) + gᵢ(t)) / (1 + ∑ₜ' gᵢ(t'))`,  with  `gᵢ(t) = max(0, vᵢ(t, σ) - uᵢ(σ))`,
 
@@ -27,13 +33,17 @@ Brouwer's theorem for products of simplices
 gain is `0`, and the fixed-point equation for it forces `∑ₜ' gᵢ(t') = 0`. Since expected payoff is
 linear in a player's own mixed strategy, no mixed deviation is profitable either.
 
-The statement is written out with the payoff formula of
-`MathlibExt.GameTheory.NashExistenceWanted.expectedPayoff` (in `WantedExt`), which this
-library cannot import; `MathlibExt.GameTheory.NashExistenceWanted.exists_isMixedNash` is now
-derived from it.
+The declarations keep the namespace `MathlibExt.GameTheory.NashExistenceWanted` of the
+`WantedExt` module where the theorem was first recorded as wanted, so that their published
+pages stay bound to the same names (as `MathlibExt.Combinatorics.SimpleGraph.NashWilliams`
+does). The two-player zero-sum case is von Neumann's minimax theorem, proved in MathlibExt as
+`matrixGame_exists_isSaddlePointOn`; games with an exact potential have pure equilibria
+(`MathlibExt.GameTheory.PotentialGame.IsExactPotential.exists_isPureNash`).
 
 ## References
 
+* J. Nash, "Equilibrium points in n-person games", Proc. Natl. Acad. Sci. USA 36 (1950),
+  48–49.
 * J. Nash, "Non-cooperative games", Ann. of Math. 54 (1951), 286–295, Theorem 1 and its proof.
 * C. H. Papadimitriou, "The complexity of finding Nash equilibria", Chapter 2 of *Algorithmic
   Game Theory* (Cambridge University Press 2007), Section 2.2.1 (Nash's proof as a reduction to
@@ -42,16 +52,24 @@ derived from it.
 
 @[expose] public section
 
-namespace MathlibExt.GameTheory.NashExistence
+namespace MathlibExt.GameTheory.NashExistenceWanted
 
 open Convexity Finset MathlibExt.Topology.BrouwerFixedPoint
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι] {S : ι → Type*} [∀ i, Fintype (S i)]
 
-/-- Expected payoff of player `i` under independent mixed strategies `σ`. -/
-private noncomputable def payoff (u : ι → (∀ j, S j) → ℝ) (σ : ∀ j, StdSimplex ℝ (S j))
+/-- The expected payoff of player `i` when every player `j` independently plays the mixed
+strategy `σ j` (Nash 1951, §2). -/
+noncomputable def expectedPayoff (u : ι → (∀ j, S j) → ℝ) (σ : ∀ j, StdSimplex ℝ (S j))
     (i : ι) : ℝ :=
   ∑ s : ∀ j, S j, (∏ j, (σ j).weights (s j)) * u i s
+
+/-- The mixed profile `σ` is a Nash equilibrium: no player can raise its expected payoff by
+switching to another mixed strategy while the others keep theirs (Nash 1951, §2, "equilibrium
+point"). -/
+def IsMixedNash (u : ι → (∀ j, S j) → ℝ) (σ : ∀ j, StdSimplex ℝ (S j)) : Prop :=
+  ∀ i (τ : StdSimplex ℝ (S i)),
+    expectedPayoff u (Function.update σ i τ) i ≤ expectedPayoff u σ i
 
 /-- Expected payoff of the pure strategy `t` of player `i` against the others' `σ`. -/
 private noncomputable def pv [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) → ℝ)
@@ -71,8 +89,8 @@ private lemma prod_update (σ : ∀ j, StdSimplex ℝ (S j)) (i : ι) (τ : StdS
 /-- Expected payoff is linear in a player's own mixed strategy. -/
 private lemma payoff_update [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) → ℝ)
     (σ : ∀ j, StdSimplex ℝ (S j)) (i : ι) (τ : StdSimplex ℝ (S i)) :
-    payoff u (Function.update σ i τ) i = ∑ t, τ.weights t * pv u σ i t := by
-  simp only [payoff, pv, mul_sum]
+    expectedPayoff u (Function.update σ i τ) i = ∑ t, τ.weights t * pv u σ i t := by
+  simp only [expectedPayoff, pv, mul_sum]
   rw [sum_comm]
   refine sum_congr rfl (fun s _ => ?_)
   rw [prod_update]
@@ -83,14 +101,14 @@ private lemma payoff_update [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) 
 
 private lemma payoff_eq [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) → ℝ)
     (σ : ∀ j, StdSimplex ℝ (S j)) (i : ι) :
-    payoff u σ i = ∑ t, (σ i).weights t * pv u σ i t := by
+    expectedPayoff u σ i = ∑ t, (σ i).weights t * pv u σ i t := by
   have := payoff_update u σ i (σ i)
   rwa [Function.update_eq_self] at this
 
 /-- Nash's gain of the pure strategy `t` over the current mixed strategy of player `i`. -/
 private noncomputable def gain [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) → ℝ)
     (σ : ∀ j, StdSimplex ℝ (S j)) (i : ι) (t : S i) : ℝ :=
-  max 0 (pv u σ i t - payoff u σ i)
+  max 0 (pv u σ i t - expectedPayoff u σ i)
 
 private lemma gain_nonneg [∀ i, DecidableEq (S i)] (u : ι → (∀ j, S j) → ℝ)
     (σ : ∀ j, StdSimplex ℝ (S j)) (i : ι) (t : S i) : 0 ≤ gain u σ i t :=
@@ -112,8 +130,8 @@ private noncomputable def nashMap [∀ i, DecidableEq (S i)] (u : ι → (∀ j,
       exact div_self (one_add_sum_gain_pos u σ i).ne')
 
 private lemma continuous_payoff (u : ι → (∀ j, S j) → ℝ) (i : ι) :
-    Continuous fun σ : ∀ j, StdSimplex ℝ (S j) => payoff u σ i := by
-  unfold payoff
+    Continuous fun σ : ∀ j, StdSimplex ℝ (S j) => expectedPayoff u σ i := by
+  unfold expectedPayoff
   refine continuous_finsetSum _ (fun s _ => ?_)
   exact (continuous_finsetProd _ (fun j _ =>
     (StdSimplex.continuous_weights_apply ℝ (s j)).comp (continuous_apply j))).mul
@@ -145,8 +163,8 @@ private lemma continuous_nashMap [∀ i, DecidableEq (S i)] (u : ι → (∀ j, 
 /-- A fixed point of Nash's map is a Nash equilibrium. -/
 private lemma isNash_of_nashMap_eq [∀ i, DecidableEq (S i)] {u : ι → (∀ j, S j) → ℝ}
     {σ : ∀ j, StdSimplex ℝ (S j)} (h : nashMap u σ = σ) (i : ι) (τ : StdSimplex ℝ (S i)) :
-    payoff u (Function.update σ i τ) i ≤ payoff u σ i := by
-  set E := payoff u σ i with hE
+    expectedPayoff u (Function.update σ i τ) i ≤ expectedPayoff u σ i := by
+  set E := expectedPayoff u σ i with hE
   -- some pure strategy in the support does no better than the mixed strategy
   obtain ⟨t, ht, hle⟩ : ∃ t, 0 < (σ i).weights t ∧ pv u σ i t ≤ E := by
     by_contra hno
@@ -185,20 +203,16 @@ private lemma isNash_of_nashMap_eq [∀ i, DecidableEq (S i)] {u : ι → (∀ j
         sum_le_sum (fun t' _ => mul_le_mul_of_nonneg_left (hall t') (τ.weights_nonneg t'))
     _ = E := by rw [← sum_mul, τ.total_of_fintype, one_mul]
 
-/-- **Nash's theorem.** Every finite game, with finitely many players `ι`, finitely many and at
-least one pure strategies `S i` for each player, and payoffs `u i : (∀ j, S j) → ℝ` (to be
-maximised), has a mixed-strategy profile `σ` from which no player `i` can raise its expected
-payoff `∑ₛ (∏ⱼ σⱼ(sⱼ)) uᵢ(s)` by switching alone to another mixed strategy `τ`.
+/-- **Nash's theorem.** Every finite game, with finitely many players and finitely many (and
+at least one) pure strategies for each, has a mixed Nash equilibrium.
 
-Source: J. Nash, "Non-cooperative games", Ann. of Math. 54 (1951), 286–295, Theorem 1, proved
-as there by applying Brouwer's fixed-point theorem to Nash's map on the product of the
-mixed-strategy simplices (`MathlibExt.Topology.BrouwerFixedPoint.exists_fixedPoint_pi`). -/
-theorem exists_mixed_nash [∀ i, Nonempty (S i)] (u : ι → (∀ j, S j) → ℝ) :
-    ∃ σ : ∀ j, StdSimplex ℝ (S j), ∀ i (τ : StdSimplex ℝ (S i)),
-      ∑ s : ∀ j, S j, (∏ j, (Function.update σ i τ j).weights (s j)) * u i s ≤
-        ∑ s : ∀ j, S j, (∏ j, (σ j).weights (s j)) * u i s := by
+Source: J. Nash, "Non-cooperative games", Ann. of Math. 54 (1951), 286–295, Theorem 1
+("Every finite game has an equilibrium point"); announced in Proc. Natl. Acad. Sci. USA 36
+(1950), 48–49. -/
+theorem exists_isMixedNash [∀ i, Nonempty (S i)] (u : ι → (∀ j, S j) → ℝ) :
+    ∃ σ : ∀ j, StdSimplex ℝ (S j), IsMixedNash u σ := by
   classical
   obtain ⟨σ, hσ⟩ := exists_fixedPoint_pi (nashMap u) (continuous_nashMap u)
   exact ⟨σ, fun i τ => isNash_of_nashMap_eq hσ i τ⟩
 
-end MathlibExt.GameTheory.NashExistence
+end MathlibExt.GameTheory.NashExistenceWanted

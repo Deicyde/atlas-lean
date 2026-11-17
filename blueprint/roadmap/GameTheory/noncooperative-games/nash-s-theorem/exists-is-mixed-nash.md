@@ -4,8 +4,13 @@ Every finite game, with finitely many players, each having a finite nonempty set
 strategies, has a mixed Nash equilibrium.
 
 Nash's proofs use Kakutani's fixed-point theorem (1950) and Brouwer's (1951), which pinned Mathlib
-does not provide. The repository proves the 1951 argument from its own Brouwer theorem for products of
-simplices; this statement, first recorded as wanted, is now derived from that proof.
+does not provide. The repository proves Brouwer's theorem for products of simplices and follows the
+1951 argument; the statement was first recorded as wanted.
+
+## Proof
+
+- Nash's map $\sigma_i'(t) = (\sigma_i(t) + g_i(t)) / (1 + \sum_{t'} g_i(t'))$, with gains $g_i(t) = \max(0, v_i(t, \sigma) - u_i(\sigma))$, where $u_i(\sigma)$ is the [expected payoff](expected-payoff.md) and $v_i(t, \sigma)$ that of the pure strategy $t$ against the others, is a continuous self-map of the product of the mixed-strategy simplices, so it has a fixed point.
+- At a fixed point, some pure strategy $t$ in the support of $\sigma_i$ does no better than $\sigma_i$ (expected payoff is the $\sigma_i$-average of the pure payoffs), so $g_i(t) = 0$ and the fixed-point equation at $t$ forces $\sum_{t'} g_i(t') = 0$: no pure strategy gains, hence, by linearity, no mixed one, and $\sigma$ is a [mixed Nash equilibrium](is-mixed-nash.md).
 
 ## Background
 
@@ -13,10 +18,12 @@ simplices; this statement, first recorded as wanted, is now derived from that pr
   background, the two-player zero-sum case, proved from Sion's minimax theorem.
 - [Finite potential games have pure Nash equilibria](../potential-games/exists-is-pure-nash.md):
   background, a class of games with pure equilibria and an elementary proof.
+- [A nondegenerate bimatrix game has an odd number of Nash equilibria](../bimatrix-games-and-the-lemke-howson-algorithm/odd-ncard-is-bimatrix-nash.md):
+  background, a combinatorial existence proof for two players (Lemke–Howson), recorded as wanted.
 
 ## Informally uses
 
-- [Nash's theorem, proved from Brouwer's theorem](exists-mixed-nash.md): the proof; this page restates it with [expected payoffs](expected-payoff.md) and [mixed Nash equilibria](is-mixed-nash.md).
+- [Brouwer's fixed-point theorem for products of simplices](../../../Topology/algebraic-topology/brouwer-fixed-point-theorem/exists-fixed-point-pi.md): applied to Nash's map.
 
 ## Sources
 

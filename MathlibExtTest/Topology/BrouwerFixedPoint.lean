@@ -39,7 +39,7 @@ example : ∃ σ : Fin 2 → StdSimplex ℝ (Fin 2), (fun σ : Fin 2 → StdSimp
   exists_fixedPoint_pi _ (continuous_pi fun _ => continuous_apply _)
 
 /-- The product distribution has the factors as marginals, on a concrete pair. -/
-example (σ : Fin 2 → StdSimplex ℝ (Fin 2)) : marginal (prodSimplex σ) 1 = σ 1 :=
+example (σ : Fin 2 → StdSimplex ℝ (Fin 2)) : (prodSimplex σ).map (fun s => s 1) = σ 1 :=
   marginal_prodSimplex σ 1
 
 /-- Brouwer for a simplex indexed by `Bool`. -/

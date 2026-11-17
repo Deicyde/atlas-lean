@@ -11,7 +11,7 @@ so oddness of `ncard` includes finiteness.)
 
 ## Background
 
-- [Nash's theorem, proved from Brouwer's theorem](../nash-s-theorem/exists-mixed-nash.md): existence of an equilibrium in every finite game, proved.
+- [Nash's theorem](../nash-s-theorem/exists-is-mixed-nash.md): existence of an equilibrium in every finite game, proved from Brouwer's theorem.
 - [Every END-OF-THE-LINE instance has a sink](../../../TheoryOfComputation/completeness-other-classes/ppad-and-the-end-of-the-line-problem/exists-sink.md): the parity principle that the Lemke–Howson path instantiates.
 
 ## Sources

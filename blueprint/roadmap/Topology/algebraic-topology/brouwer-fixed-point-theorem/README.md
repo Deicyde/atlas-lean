@@ -8,11 +8,10 @@ Every continuous map of a simplex (equivalently, of a closed ball) to itself has
 - [Brouwer's fixed-point theorem for simplices with any finite vertex set](exists-fixed-point-of-finite.md)
 - [Probability vector from a function](of-fun.md)
 - [Continuity criterion for maps into a simplex](continuous-of-continuous-weights.md)
-- [Product of mixed strategies](prod-simplex.md)
-- [Marginal of a distribution on a product](marginal.md)
+- [Product distribution](prod-simplex.md)
+- [Weights of a pushforward distribution](map-weights-apply.md)
 - [The marginals of a product distribution are its factors](marginal-prod-simplex.md)
 - [The product distribution depends continuously on its factors](continuous-prod-simplex.md)
-- [Marginals depend continuously on the distribution](continuous-marginal.md)
 - [Brouwer's fixed-point theorem for products of simplices](exists-fixed-point-pi.md)
 
 ## Related topics

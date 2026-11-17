@@ -13,7 +13,7 @@ wins. The partizan game [Snort](combinatorial-games/snort/README.md) is a second
 [cooperative games](cooperative-games/README.md) the
 [Bondareva–Shapley theorem](cooperative-games/bondareva-shapley-theorem/README.md): a game with transferable utility
 has a nonempty core exactly when it is balanced.
-[Noncooperative games](noncooperative-games/README.md) cover the minimax theorem, Nash's theorem (wanted),
+[Noncooperative games](noncooperative-games/README.md) cover the minimax theorem, Nash's theorem (proved from Brouwer's fixed-point theorem),
 potential and congestion games, and the algorithmic theory of the price of anarchy: Wardrop equilibria of
 routing games, the bounds $4/3$ and $5/2$ for affine costs, the $H(k)$ price of stability of fair cost
 sharing, Braess's paradox and no-regret dynamics.
