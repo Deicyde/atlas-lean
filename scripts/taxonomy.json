@@ -1532,6 +1532,7 @@
   "CSLibExt/Logics/Modal/FiniteModelProperty": {"to": "Logic/modal-logic", "title": "Filtration and the finite model property"},
   "CSLibExt/Logics/Modal/Hilbert": {"to": "Logic/modal-logic", "title": "Normal modal logics"},
   "CSLibExt/Logics/Modal/Kripke": {"to": "Logic/modal-logic", "title": "Kripke semantics"},
+  "CSLibExt/Logics/Modal/K4": {"to": "Logic/modal-logic", "title": "Soundness and completeness of normal modal logics"},
   "CSLibExt/Logics/Modal/LinearMuCalculus": {"to": "Logic/temporal-logic", "title": "Linear-time μ-calculus"},
   "CSLibExt/Logics/Modal/MuCalculus": {"to": "Logic/modal-logic", "title": "Modal μ-calculus"},
   "CSLibExt/Logics/Modal/MuCalculusEncoding": {"to": "Logic/modal-logic", "title": "Modal μ-calculus"},

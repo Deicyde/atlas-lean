@@ -53,3 +53,8 @@
 - [Completeness for CSLib's T](derivable-of-proposition-t-iff.md)
 - [Completeness for CSLib's S4](derivable-of-proposition-s4-iff.md)
 - [Completeness for CSLib's S5](derivable-of-proposition-s5-iff.md)
+- [Extra axioms of K4](k4.md)
+- [Soundness of K4 for transitive Kripke models](valid-k4.md)
+- [Strong completeness of K4](completeness-k4.md)
+- [K4-theorems are the formulas valid in every transitive Kripke model](derivable-k4-iff.md)
+- [Consistency of K4](not-derivable-bot-k4.md)
