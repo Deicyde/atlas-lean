@@ -9,6 +9,9 @@ the other three columns.
 
 - [The Apollonian flips are orthogonal reflections](../../../Geometry/euclidean-geometry/circles-and-conics/apollonian-group/apollonian-flip-eq-reflection.md):
   each $S_i$ is the reflection of the Descartes form along a basis vector, so this group is a reflection group.
+
+## Related topics
+
 - [Each Apollonian generator acts as an Apollonian flip](apollonian-generator-smul.md) and
   [the Apollonian group orbit is the Apollonian orbit](apollonian-group-orbit-eq.md): the formal bridge between this
   group and the proved Apollonian algebra.

@@ -8,9 +8,12 @@ circles form a Descartes quadruple; Kontorovich and Oh use the form with an extr
 
 ## Background
 
+- [Descartes' circle theorem](../descartes-circle-theorem.md): the geometric statement whose conclusion is $Q(k) = 0$.
+
+## Related topics
+
 - [The Descartes matrix represents the Descartes form](../../../../NumberTheory/arithmetic-geometry/local-global-conjecture-for-apollonian-circle-pa/descartes-matrix-form.md):
   the same form, as the matrix of the local-global statements.
-- [Descartes' circle theorem](../descartes-circle-theorem.md): the geometric statement whose conclusion is $Q(k) = 0$.
 
 ## Sources
 
