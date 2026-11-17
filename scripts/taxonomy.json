@@ -3194,6 +3194,7 @@
   "MathlibExt/GroupTheory/GroupGrowth": {"to": "GroupTheory/geometric-group-theory", "title": "Growth of groups"},
   "MathlibExt/GroupTheory/HNNEmbedding": {"to": "GroupTheory/presentations-and-decision-problems", "title": "Higman–Neumann–Neumann embedding theorem"},
   "MathlibExt/GroupTheory/HyperbolicGroup": {"to": "GroupTheory/geometric-group-theory", "title": "Hyperbolic groups"},
+  "MathlibExt/GroupTheory/HyperbolicGroupExamples": {"to": "GroupTheory/geometric-group-theory", "title": "Hyperbolic groups"},
   "MathlibExt/GroupTheory/InvariantFactors": {"to": "GroupTheory/abelian-groups", "title": "Structure of finitely generated abelian groups"},
   "MathlibExt/GroupTheory/IrreducibleCharacterBasis": {"to": "GroupTheory/characters-of-finite-groups", "title": "Irreducible characters and class functions"},
   "MathlibExt/GroupTheory/JordanLinearGroups": {"to": "GroupTheory/linear-groups", "title": "Jordan's theorem on finite linear groups"},
