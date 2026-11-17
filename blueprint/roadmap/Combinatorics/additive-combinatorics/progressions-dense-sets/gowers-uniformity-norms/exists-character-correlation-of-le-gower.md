@@ -2,7 +2,7 @@
 
 Let $f : G \to \mathbb{C}$ with $\mathbb{E} |f|^2 \le 1$ and let $0 \le c \le \|f\|_{U^2}$. Then some character $\psi$ satisfies
 $$|\mathbb{E}_x f(x)\overline{\psi(x)}| \ge c^2.$$
-This is Proposition 2.7 of Gowers (2010), stated there for $c > 0$; the case $c = 0$ is trivial. Conversely, correlation with a character forces a large $U^2$ norm, so characters "explain" the $U^2$ norm. Green and Tao's Proposition 2.2 is the same statement in the form $\|f\|_{u^2} \le \|f\|_{U^2} \le \|f\|_{u^2}^{1/2}$ for bounded $f$.
+This is Proposition 2.7 of Gowers (2010), stated there for $c > 0$; the case $c = 0$ is trivial. Conversely, correlation with a character forces a large $U^2$ norm, so characters "explain" the $U^2$ norm. Green and Tao's Proposition 2.2 is the same statement in the form $\|f\|_{u^2} \le \|f\|_{U^2} \le \|f\|_{u^2}^{1/2}$ for bounded $f$. For $U^3$ characters no longer suffice and one needs [quadratic phases](u3-inverse-f5.md).
 
 ## Informally uses
 

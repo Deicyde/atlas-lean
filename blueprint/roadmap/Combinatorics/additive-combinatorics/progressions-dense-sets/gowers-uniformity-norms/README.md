@@ -40,10 +40,16 @@ The definition follows Green and Tao's recursion $\|f\|_{U^{d+1}}^{2^{d+1}} = \m
 - [Generalized von Neumann theorem, general form](norm-expect-prod-le-gowers-norm.md)
 - [Generalized von Neumann theorem](norm-ap-count-le-gowers-norm.md)
 
+## Inverse theorems and bounds (statements only, proofs wanted)
+
+- [Inverse theorem for the `U³` norm over `𝔽₅ⁿ`](u3-inverse-f5.md)
+- [Gowers's bound for Szemerédi's theorem](szemeredi-gowers-bound.md)
+
 ## Related topics
 
 - [Fourier transform on finite abelian groups](../../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/README.md): the transform, inversion and Plancherel formula behind $\|f\|_{U^2} = \|\hat f\|_{\ell^4}$.
 - [Fourier transform on finite groups](../../../../RepresentationTheory/finite-group-representations/fourier-transform-on-finite-groups/README.md): the non-abelian Fourier transform, of which the abelian one is the case where every irreducible representation is a character.
+- [Freiman and Balog–Szemerédi–Gowers theorems](../../sumsets-inverse-theorems/freiman-and-balog-szemer-di-gowers-theorems/README.md): the inverse theorems of additive combinatorics used to prove inverse theorems for $U^3$ and $U^k$.
 - [Szemerédi's theorem](../szemeredi.md): the qualitative statement whose quantitative form motivated the norms.
 - [Number of arithmetic progressions in dense sets](../number-of-arithmetic-progressions-in-dense-sets/README.md): counts of progressions, which the generalized von Neumann theorem compares with those of random sets.
 - [Graph limits](../../../../GraphTheory/random-graphs/graph-limits/README.md): homomorphism densities and the counting lemma, the graph analogues of cube densities and of the generalized von Neumann theorem; $\|1_A\|_{U^2}^4$ is the four-cycle density of the sum graph $1_A(x + y)$.
