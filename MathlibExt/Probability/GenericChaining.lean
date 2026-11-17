@@ -14,6 +14,7 @@ public import Mathlib.Analysis.SpecificLimits.Basic
 public import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
 public import Mathlib.MeasureTheory.Integral.Bochner.Basic
 public import Mathlib.Topology.MetricSpace.Basic
+public import Mathlib.Topology.MetricSpace.CoveringNumbers
 
 /-!
 # Generic chaining: the `γ₂` functional and the chaining upper bound
@@ -129,8 +130,13 @@ theorem cell_subset_of_le (A : AdmissibleSequence T) {m n : ℕ} (h : m ≤ n) (
 end AdmissibleSequence
 
 /-- **Diameter for a distance function.** For `d : T → T → ℝ≥0∞` and `A ⊆ T`,
-`diamWith d A = sup_{s, t ∈ A} d(s, t)`; for `d = edist` this is `EMetric.diam A`. -/
+`diamWith d A = sup_{s, t ∈ A} d(s, t)`; for `d = edist` this is `Metric.ediam A`. -/
 noncomputable def diamWith (d : T → T → ℝ≥0∞) (A : Set T) : ℝ≥0∞ := ⨆ s ∈ A, ⨆ t ∈ A, d s t
+
+/-- **`diamWith` of the extended distance is the diameter.** For an extended metric space,
+`diamWith edist A = Metric.ediam A`. -/
+theorem diamWith_edist [EDist T] (A : Set T) :
+    diamWith (edist : T → T → ℝ≥0∞) A = Metric.ediam A := rfl
 
 theorem le_diamWith (d : T → T → ℝ≥0∞) {A : Set T} {s t : T} (hs : s ∈ A) (ht : t ∈ A) :
     d s t ≤ diamWith d A :=
@@ -641,6 +647,18 @@ theorem integral_iSup_le_gammaTwo_toReal [MetricSpace T] [Finite T] [Nonempty T]
 in `[0, ∞]`; Talagrand's `e_n` is `e_{2^n}` in the convention of operator theory. -/
 noncomputable def entropyNumber (d : T → T → ℝ≥0∞) (n : ℕ) : ℝ≥0∞ :=
   ⨅ (F : Finset T) (_ : F.card ≤ chainingCard n), ⨆ t, ⨅ s ∈ F, d t s
+
+/-- **Entropy numbers from Mathlib covers** (Talagrand, *Upper and Lower Bounds for Stochastic
+Processes*, 2nd ed., 2021, the reformulation of (2.36) by coverings with balls). If `T` has an
+internal `ε`-cover in the sense of Mathlib's `Metric.IsCover` by a finite set of at most `N_n`
+points, then `e_n(T) ≤ ε`. This connects (2.36) with Mathlib's `Metric.coveringNumber`, the
+least cardinality of such a cover. -/
+theorem entropyNumber_le_of_isCover [PseudoEMetricSpace T] {n : ℕ} {ε : ℝ≥0} {F : Finset T}
+    (hF : F.card ≤ chainingCard n) (hC : Metric.IsCover ε Set.univ (F : Set T)) :
+    entropyNumber (edist : T → T → ℝ≥0∞) n ≤ ε := by
+  refine (iInf₂_le F hF).trans (iSup_le fun t => ?_)
+  obtain ⟨y, hy, hty⟩ := hC (Set.mem_univ t)
+  exact (iInf₂_le y hy).trans hty
 
 /-- **Dudley's entropy bound** (Talagrand, *Upper and Lower Bounds for Stochastic Processes*,
 2nd ed., 2021, Proposition 2.5.1, from (2.34)). Let `T` be a finite nonempty metric space and

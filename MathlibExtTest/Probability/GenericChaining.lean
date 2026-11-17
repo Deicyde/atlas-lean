@@ -17,8 +17,8 @@ public import Mathlib.Probability.Distributions.Gaussian.Real
 # Tests for generic chaining
 
 Non-vacuity checks: the cardinality sequence, an admissible sequence, finiteness and positivity of
-`γ₂` on a three-point space, and a non-degenerate Gaussian process on a two-point space that
-satisfies every hypothesis of the generic chaining bound.
+`γ₂` on the three-point space `{0, 1, 2} ⊂ ℝ`, and a non-degenerate Gaussian process on that space
+that satisfies every hypothesis of the generic chaining, Dudley and Gaussian bounds.
 -/
 
 @[expose] public section

@@ -5,6 +5,8 @@ $$\gamma_\alpha(T, d) = \inf \sup_{t \in T} \sum_{n \ge 0} 2^{n/\alpha}\,\Delta(
 the infimum over all admissible sequences of partitions, where $\Delta$ is the diameter for $d$
 (Talagrand, *Upper and Lower Bounds for Stochastic Processes*, 2nd ed., 2021, Definition 2.7.3).
 The cases $\alpha = 2$ and $\alpha = 1$ matter most; $\gamma_2$ governs sub-Gaussian processes.
+The source requires $\alpha > 0$; the Lean definition accepts any real $\alpha$, and only
+$\alpha = 2$ (and $\alpha > 0$ in the general lemmas) is used.
 
 The value lies in $[0, \infty]$, so the definition makes sense for every admissible sequence,
 including those along which the series diverges. The distance is any function

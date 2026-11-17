@@ -9,8 +9,8 @@ proved.
 
 Behind them stands Talagrand's convex-distance inequality (1995). For $A \subseteq \Omega^N$ and
 $x \in \Omega^N$, the convex distance $f_c(A, x)$ is the Euclidean distance from $0$ to the convex
-hull of the sets of coordinates along which $x$ can be changed into a point of $A$; for every
-product probability $P$, $\int \exp(f_c(A, \cdot)^2/4)\,dP \le 1/P(A)$. The convex distance and
+hull of the sets of coordinates along which $x$ can be changed into a point of $A$; for the
+product probability $P = \mu^{\otimes N}$ of any probability measure $\mu$ on $\Omega$, $\int \exp(f_c(A, \cdot)^2/4)\,dP \le 1/P(A)$. The convex distance and
 its elementary properties are defined and proved. The inequality is proved when $\Omega$ is a
 finite set, by Talagrand's induction on $N$; for a general probability space it is stated, not
 yet proved.

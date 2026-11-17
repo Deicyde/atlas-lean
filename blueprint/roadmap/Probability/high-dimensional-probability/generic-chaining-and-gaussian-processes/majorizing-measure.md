@@ -12,9 +12,10 @@ proved; its upper half is proved when the canonical distance is a metric.
 
 ## Informally uses
 
-- [Generic chaining bound for Gaussian processes](integral-i-sup-le-gamma-two-of-is-gaussi.md):
-  the upper inequality is Theorem 2.7.11, proved here when the canonical distance is a metric;
-  with a pseudo-distance it applies after identifying indices at distance zero.
+- [Generic chaining bound for Gaussian processes, canonical form](integral-i-sup-le-gamma-two-canonical-di.md):
+  the upper inequality is Theorem 2.7.11, proved here, with $\gamma_2$ for the canonical distance
+  as in this statement and $L = 10$, when the canonical distance is a metric; with a
+  pseudo-distance it applies after identifying indices at distance zero (not formalized).
 - [Sudakov minoration](sudakov-minoration.md): the first ingredient of Talagrand's proof of the
   lower bound (Lemma 2.10.2), with Gaussian concentration (Lemma 2.10.6) and the partitioning
   scheme of Theorem 2.9.1.

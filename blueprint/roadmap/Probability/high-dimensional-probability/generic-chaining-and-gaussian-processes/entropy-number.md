@@ -5,3 +5,8 @@ the smallest radius $r$ such that $T$ is covered by at most $N_n$ balls of radiu
 $T$ (Talagrand, *Upper and Lower Bounds for Stochastic Processes*, 2nd ed., 2021, (2.36)). The
 value lies in $[0, \infty]$. Operator theory writes $e_{2^n}$ for Talagrand's $e_n$; in terms of
 covering numbers, $e_n(T) \le \varepsilon$ roughly when $\log N(T, d, \varepsilon) \le 2^n \log 2$.
+
+## Background
+
+- [Entropy numbers from Mathlib covers](entropy-number-le-of-is-cover.md): the bridge to
+  Mathlib's `Metric.IsCover` and `Metric.coveringNumber`, which count the same covers.

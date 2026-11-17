@@ -5,4 +5,5 @@ $d(s, t) = (\mathbb{E}(X_s - X_t)^2)^{1/2}$ (Talagrand, *Upper and Lower Bounds 
 Processes*, 2nd ed., 2021, (2.113)), taken here with values in $[0, \infty]$. It is a
 pseudo-distance: distinct indices carrying the same variable are at distance zero. For a centred
 Gaussian process it determines the law of the increments, which is why the majorizing measure
-theorem is a statement about the metric space $(T, d)$.
+theorem is a statement about the metric space $(T, d)$. It is defined in the proved library, so
+that the proved Gaussian bound and the wanted majorizing measure theorem use the same distance.

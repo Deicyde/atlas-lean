@@ -1,7 +1,7 @@
 # Sherrington–Kirkpatrick model
 
 The Sherrington–Kirkpatrick (SK) model has configurations $\sigma \in \{-1, 1\}^N$, the random
-Hamiltonian $H_N(\sigma) = \frac{\beta}{\sqrt N}\sum_{i<j} g_{ij}\sigma_i\sigma_j$ with independent
+Hamiltonian $H_N(\sigma) = -\frac{\beta}{\sqrt N}\sum_{i<j} g_{ij}\sigma_i\sigma_j$ with independent
 standard Gaussian couplings $g_{ij}$, and the free energy
 $F_N = \frac1N \mathbb{E}\log\sum_\sigma \exp\big(H_N(\sigma) + h\sum_i \sigma_i\big)$. Its
 covariance is a function of the overlap $R_{1,2} = \frac1N\sum_i \sigma^1_i\sigma^2_i$:

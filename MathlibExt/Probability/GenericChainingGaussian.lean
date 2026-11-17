@@ -39,6 +39,13 @@ namespace MathlibExt.Probability.GenericChaining
 open MeasureTheory ProbabilityTheory
 open scoped ENNReal NNReal
 
+/-- **Canonical distance of a process.** For random variables `(X_t)_{t ∈ T}`,
+`d(s, t) = (E(X_s - X_t)²)^{1/2}` (Talagrand, *Upper and Lower Bounds for Stochastic Processes*,
+2nd ed., 2021, (2.113)), as an extended-valued distance function; it is a pseudo-distance. -/
+noncomputable def canonicalDist {Ω T : Type*} [MeasurableSpace Ω] (P : Measure Ω)
+    (X : T → Ω → ℝ) (s t : T) : ℝ≥0∞ :=
+  ENNReal.ofReal (Real.sqrt (∫ ω, (X s ω - X t ω) ^ 2 ∂P))
+
 /-- **Two-sided Gaussian tail.** For `g ~ N(0, v)` and `u > 0`,
 `P(|g| ≥ u) ≤ 2 exp(-u² / (2v))`, from the sub-Gaussian moment generating function. -/
 theorem gaussianReal_abs_tail (v : ℝ≥0) {u : ℝ} (hu : 0 ≤ u) :
@@ -117,5 +124,29 @@ theorem integral_iSup_le_gammaTwo_of_isGaussian {Ω T : Type*} [MeasurableSpace 
   refine integral_iSup_le_gammaTwo P X hX hint hcen fun s t u hu => ?_
   have h := measureReal_abs_sub_ge_le_of_isGaussian P X hX hG hint hcen s t hu
   rwa [hdist, Real.sq_sqrt (integral_nonneg fun ω => sq_nonneg _)]
+
+/-- **The metric is the canonical distance.** If `d(s, t) = (E(X_s - X_t)²)^{1/2}` for all
+`s, t`, then `edist = canonicalDist P X`, so `γ₂` computed for the metric and for the canonical
+distance agree. -/
+theorem edist_eq_canonicalDist {Ω T : Type*} [MeasurableSpace Ω] [MetricSpace T] (P : Measure Ω)
+    (X : T → Ω → ℝ) (hdist : ∀ s t, dist s t = Real.sqrt (∫ ω, (X s ω - X t ω) ^ 2 ∂P)) :
+    (edist : T → T → ℝ≥0∞) = canonicalDist P X := by
+  funext s t
+  rw [edist_dist, hdist, canonicalDist]
+
+/-- **Generic chaining bound for Gaussian processes, canonical form** (Talagrand, *Upper and Lower
+Bounds for Stochastic Processes*, 2nd ed., 2021, the right-hand inequality of Theorem 2.10.1).
+Under the hypotheses of `integral_iSup_le_gammaTwo_of_isGaussian`,
+`E sup_{t ∈ T} X_t ≤ 10 γ₂(T, canonicalDist P X)`: the upper half of
+`MathlibExt.Probability.MajorizingMeasureWanted.majorizing_measure`, with `L = 10`, when the
+canonical distance is a metric on `T`. -/
+theorem integral_iSup_le_gammaTwo_canonicalDist {Ω T : Type*} [MeasurableSpace Ω]
+    [MetricSpace T] [Finite T] [Nonempty T] (P : Measure Ω) [IsProbabilityMeasure P]
+    (X : T → Ω → ℝ) (hX : ∀ t, Measurable (X t)) (hG : IsGaussian (P.map fun ω t => X t ω))
+    (hcen : ∀ t, ∫ ω, X t ω ∂P = 0)
+    (hdist : ∀ s t, dist s t = Real.sqrt (∫ ω, (X s ω - X t ω) ^ 2 ∂P)) :
+    ENNReal.ofReal (∫ ω, ⨆ t, X t ω ∂P) ≤ 10 * gammaFunctional 2 (canonicalDist P X) := by
+  rw [← edist_eq_canonicalDist P X hdist]
+  exact integral_iSup_le_gammaTwo_of_isGaussian P X hX hG hcen hdist
 
 end MathlibExt.Probability.GenericChaining

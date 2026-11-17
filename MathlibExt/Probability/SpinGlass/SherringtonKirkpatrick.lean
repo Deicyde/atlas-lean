@@ -17,10 +17,11 @@ public import Mathlib.Probability.Distributions.Gaussian.Real
 
 The Sherrington–Kirkpatrick (SK) model at inverse temperature `β` and external field `h` has
 configurations `σ ∈ {-1, 1}^N` and the random Hamiltonian
-`H_N(σ) = (β / √N) ∑_{i < j} g_{ij} σ_i σ_j`
+`H_N(σ) = -(β / √N) ∑_{i < j} g_{ij} σ_i σ_j` (Talagrand's (1.1))
 with independent standard Gaussian couplings `g_{ij}`. Its free energy is
-`F_N = (1 / N) E log ∑_σ exp(H_N(σ) + h ∑_i σ_i)`, with Talagrand's sign convention (no minus
-sign in front of `H_N`).
+`F_N = (1 / N) E log ∑_σ exp(H_N(σ) + h ∑_i σ_i)`: following Talagrand's (1.14), no minus sign
+is put in front of `H_N` in the exponent. Since `g ↦ -g` preserves the law of the couplings, the
+law of the free energy does not depend on the sign in (1.1).
 
 The Parisi functional `P_k(m, q)` of a mixed Hamiltonian with covariance function `ξ` is built
 from parameters `0 = m_0 ≤ m_1 ≤ ⋯ ≤ m_k = 1` and `0 = q_0 ≤ q_1 ≤ ⋯ ≤ q_{k+1} = 1`: with
@@ -52,9 +53,9 @@ def spin (b : Bool) : ℝ := if b then 1 else -1
 
 /-- **Sherrington–Kirkpatrick Hamiltonian** (Talagrand, *The Parisi formula*, Ann. of Math. 163
 (2006), (1.1)). For couplings `g` and a configuration `σ ∈ {-1, 1}^N`,
-`H_N(σ) = (β / √N) ∑_{i < j} g_{ij} σ_i σ_j`. -/
+`H_N(σ) = -(β / √N) ∑_{i < j} g_{ij} σ_i σ_j`. -/
 noncomputable def hamiltonian (β : ℝ) (N : ℕ) (g : Fin N → Fin N → ℝ) (σ : Fin N → Bool) : ℝ :=
-  β / Real.sqrt N * ∑ i, ∑ j, if i < j then g i j * spin (σ i) * spin (σ j) else 0
+  -(β / Real.sqrt N) * ∑ i, ∑ j, if i < j then g i j * spin (σ i) * spin (σ j) else 0
 
 /-- **Law of the couplings.** All `g_{ij}` are independent standard Gaussian variables (only
 those with `i < j` enter the Hamiltonian). -/

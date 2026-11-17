@@ -10,6 +10,7 @@ module
 
 public import Batteries.Util.ProofWanted
 public import MathlibExt.Probability.GenericChaining
+public import MathlibExt.Probability.GenericChainingGaussian
 public import Mathlib.Probability.Distributions.Gaussian.Basic
 
 /-!
@@ -17,7 +18,9 @@ public import Mathlib.Probability.Distributions.Gaussian.Basic
 
 For a centred Gaussian process `(X_t)_{t ∈ T}` with its canonical distance
 `d(s, t) = (E(X_s - X_t)²)^{1/2}`, the generic chaining bound `E sup_t X_t ≤ L γ₂(T, d)`
-(`MathlibExt.Probability.GenericChaining.integral_iSup_le_gammaTwo`) can be reversed: Fernique and
+(`MathlibExt.Probability.GenericChaining.integral_iSup_le_gammaTwo`; for Gaussian processes
+`integral_iSup_le_gammaTwo_canonicalDist`, stated with the canonical distance
+`MathlibExt.Probability.GenericChaining.canonicalDist` used below) can be reversed: Fernique and
 Talagrand's majorizing measure theorem says `γ₂(T, d) / L ≤ E sup_t X_t ≤ L γ₂(T, d)`. The lower
 bound rests on Sudakov's minoration, recorded below. Both are stated for a finite index set,
 which is the setting of the source (its (2.2) defines the supremum over an infinite set through
@@ -39,13 +42,6 @@ namespace MathlibExt.Probability.MajorizingMeasureWanted
 
 open MeasureTheory ProbabilityTheory MathlibExt.Probability.GenericChaining
 open scoped ENNReal
-
-/-- **Canonical distance of a process.** For random variables `(X_t)_{t ∈ T}`,
-`d(s, t) = (E(X_s - X_t)²)^{1/2}` (Talagrand, *Upper and Lower Bounds for Stochastic Processes*,
-2nd ed., 2021, (2.113)), as an extended-valued distance function; it is a pseudo-distance. -/
-noncomputable def canonicalDist {Ω T : Type*} [MeasurableSpace Ω] (P : Measure Ω)
-    (X : T → Ω → ℝ) (s t : T) : ℝ≥0∞ :=
-  ENNReal.ofReal (Real.sqrt (∫ ω, (X s ω - X t ω) ^ 2 ∂P))
 
 /-- **Majorizing measure theorem** (Fernique–Talagrand; Talagrand, *Upper and Lower Bounds for
 Stochastic Processes*, 2nd ed., 2021, Theorem 2.10.1). There is a universal constant `L > 0`
