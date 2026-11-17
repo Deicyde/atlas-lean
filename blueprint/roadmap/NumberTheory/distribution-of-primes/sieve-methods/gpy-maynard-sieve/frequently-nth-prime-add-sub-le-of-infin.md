@@ -9,6 +9,9 @@ Proof idea: if $n + a$ is the least prime among the $n + h$ and $j$ is its index
 ## Background
 
 - [Liminf of prime gaps](../../prime-gaps-short-intervals/prime-gaps/prime-gap-liminf.md): the case $m = 1$ of the quantity bounded here.
+
+## Related topics
+
 - [Maynard's explicit bound for gaps between $m + 1$ primes](../../prime-gaps-short-intervals/bounded-gaps-between-primes/frequently-nth-prime-add-sub-le-cube-mul.md): the theorem whose last step this is.
 
 ## Sources

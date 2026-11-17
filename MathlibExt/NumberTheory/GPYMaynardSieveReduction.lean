@@ -211,8 +211,10 @@ noncomputable def maynardJ (k : ℕ) (m : Fin k) (F : (Fin k → ℝ) → ℝ) :
 
 /-- **Admissible profiles for `M_k`.** `F : ℝ^k → ℝ` is measurable and bounded, vanishes off
 Maynard's simplex `R_k`, and has `I_k(F) ≠ 0` and `J_k^{(m)}(F) ≠ 0` for every `m`. Maynard takes
-Riemann-integrable `F` (*Small gaps between primes*, arXiv:1311.4600v3, Proposition 4.2); every
-Riemann-integrable profile is bounded and measurable, so this class contains Maynard's. -/
+Riemann-integrable `F` (*Small gaps between primes*, arXiv:1311.4600v3, Proposition 4.2). A
+Riemann-integrable profile is bounded and agrees almost everywhere with a Borel-measurable one,
+which has the same `I_k` and `J_k^{(m)}`; so this class contains an a.e.-equivalent of each of
+Maynard's profiles. -/
 def IsMaynardProfile (k : ℕ) (F : (Fin k → ℝ) → ℝ) : Prop :=
   Measurable F ∧ (∃ C : ℝ, ∀ x, |F x| ≤ C) ∧ (∀ x ∉ maynardSimplex k, F x = 0) ∧
     maynardI k F ≠ 0 ∧ ∀ m, maynardJ k m F ≠ 0
@@ -360,11 +362,13 @@ If `ρ < θ M_k / 2`, and for every admissible profile `F` and every small `δ >
 weights `w_N ≥ 0` with
 `S₁(N) / B(N) → I_k(F)` and `S₂(N) / B(N) → (θ / 2 - δ) ∑_m J_k^{(m)}(F)` for a normalisation
 `B(N) > 0`, then infinitely many `n` have more than `ρ` of the `n + h` prime, `h ∈ H`. With
-`ρ = m` this gives `m + 1` primes; with `θ = 1` the condition reads `M_k > 2m`. Maynard proves the
-asymptotics (Proposition 4.1) only for smooth `F` and passes to general `F` by approximation;
-the hypothesis here asks for them for every admissible profile, so it is stronger than
-Proposition 4.1 (Maynard, *Small gaps between primes*, arXiv:1311.4600v3, Proposition 4.2 and its
-proof). -/
+`ρ = m` this gives `m + 1` primes; with `θ = 1 - ε` the condition reads `M_k > 2m / (1 - ε)`.
+The weights are unconstrained: the hypothesis asks only for some non-negative weights with these
+limits, which abstracts Maynard's Proposition 4.1 (proved there for smooth `F` with his sieve
+weights). It is satisfiable for every admissible profile when `H` is admissible with `#H = k`,
+`θ` is a level of distribution and `δ₀ ≤ θ / 2`: reweighting a translate with more than `c`
+primes against one with none achieves any limit `c < θ M_k / 2` (Maynard, *Small gaps between
+primes*, arXiv:1311.4600v3, Proposition 4.2 and its proof). -/
 theorem infinite_lt_primeShiftCount_of_lt_maynardM (H : Finset ℕ) (k : ℕ) (θ ρ : ℝ)
     (hθ : 0 < θ)
     (hρ : ρ < θ * maynardM k / 2) (δ₀ : ℝ) (hδ₀ : 0 < δ₀)

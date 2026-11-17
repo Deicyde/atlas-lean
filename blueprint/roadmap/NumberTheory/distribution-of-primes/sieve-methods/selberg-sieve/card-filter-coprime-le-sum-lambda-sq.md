@@ -10,6 +10,10 @@ The bound holds for every choice of the real numbers $\lambda_d$; Selberg's meth
 
 ## Background
 
+- Mathlib's `BoundingSieve.siftedSum_le_sum_of_upperMoebius` together with `BoundingSieve.upperMoebius_lambdaSquared` (in `Mathlib/NumberTheory/SelbergSieve.lean`) gives the weighted version of this bound for a squarefree $P$ packaged as a `BoundingSieve`; the statement here needs neither the packaging nor squarefreeness.
+
+## Related topics
+
 - [Selberg's upper bound with the optimal level weights](sifted-sum-le-total-mass-div-level-sum-a.md): the same bound for weighted sets with the optimal $\lambda_d$.
 
 ## Sources

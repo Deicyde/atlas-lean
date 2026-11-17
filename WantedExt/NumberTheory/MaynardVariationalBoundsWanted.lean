@@ -18,9 +18,10 @@ public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 Statements of Maynard's Proposition 4.3 (J. Maynard, *Small gaps between primes*, Ann. of Math.
 181 (2015), 383-413; numbering of arXiv:1311.4600v3) for
 `MathlibExt.NumberTheory.GPYMaynard.maynardM`. That definition takes the supremum over bounded
-measurable profiles vanishing off the simplex, a class containing Maynard's Riemann-integrable
-profiles; the two suprema agree because `I_k` and every `J_k^{(m)}` are continuous for the `L²`
-norm on the simplex and Riemann-integrable profiles are dense there.
+measurable profiles vanishing off the simplex, a class containing an a.e.-equivalent, with the
+same `I_k` and `J_k^{(m)}`, of each of Maynard's Riemann-integrable profiles; the two suprema agree
+because `I_k` and every `J_k^{(m)}` are continuous for the `L²` norm on the simplex and
+Riemann-integrable profiles are dense there.
 -/
 
 @[expose] public section
