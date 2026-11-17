@@ -28,8 +28,8 @@ counterexample showing that `t ↦ t²` is *not* operator monotone, although it 
 
 Mathlib already proves the rest of the basic theory in C⋆-algebras: `CFC.monotone_rpow` and
 `CFC.concaveOn_rpow` (`t ↦ t ^ p` is operator monotone and operator concave for `p ∈ [0, 1]`),
-`CFC.log_le_log` and `CFC.concaveOn_log`, and `CStarAlgebra.inv_le_inv` (`t ↦ -t⁻¹` is operator
-monotone).
+`CFC.log_le_log` and `CFC.concaveOn_log`, `CStarAlgebra.inv_le_inv` (`t ↦ -t⁻¹` is operator
+monotone) and `CStarAlgebra.convexOn_ringInverse` (`t ↦ t⁻¹` is operator convex).
 -/
 
 @[expose] public section
