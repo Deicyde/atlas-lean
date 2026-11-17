@@ -21,7 +21,7 @@ open MeasureTheory MathlibExt.GameTheory.InteractiveEpistemology
 
 open Classical in
 -- The real measure of a set on a finite space is the sum of the masses of its points.
-theorem measureReal_eq_sum_ite {Ω : Type*} [Fintype Ω] [MeasurableSpace Ω]
+private theorem measureReal_eq_sum_ite {Ω : Type*} [Fintype Ω] [MeasurableSpace Ω]
     [MeasurableSingletonClass Ω] (μ : Measure Ω) [IsFiniteMeasure μ] (S : Set Ω) :
     μ.real S = ∑ x, if x ∈ S then μ.real {x} else 0 := by
   rw [← Finset.sum_filter, sum_measureReal_singleton]
