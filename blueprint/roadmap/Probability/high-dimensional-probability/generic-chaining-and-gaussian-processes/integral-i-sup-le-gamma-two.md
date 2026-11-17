@@ -14,13 +14,15 @@ $\operatorname{card} T + 1$ steps. The constant comes out as $7\sqrt 2 < 10$.
 
 ## Informally uses
 
-- [The chaining argument along a finite chain](lintegral-i-sup-sub-le-of-chain.md): Talagrand's
+- [The chaining bound for a centred process](of-real-integral-i-sup-le-of-chain.md): Talagrand's
   proof of Theorem 2.7.2 applies the bound (2.34) to one point from each cell.
 - [Talagrand's $\gamma_\alpha$ functional](gamma-functional.md): Theorem 2.7.11 combines
   Theorem 2.7.2 with Definition 2.7.3.
 
 ## Background
 
+- [Dudley's entropy bound](integral-i-sup-le-dudley.md): the classical bound, which the generic
+  chaining bound improves (Talagrand, Exercise 2.7.6).
 - [Majorizing measure theorem](majorizing-measure.md): for Gaussian processes the bound is sharp
   up to a universal factor.
 - [Concentration of Lipschitz functions of Gaussian variables](../../concentration-inequalities/sub-exponential-variables-and-bernstein-s-inequa/lipschitz-concentration-std-gaussian.md):

@@ -13,8 +13,10 @@ Talagrand gives $\gamma_2(T, d)/L \le \mathbb{E}\sup_t X_t$, and its proof start
 minoration.
 
 The index set is finite throughout, as in the source: for an infinite $T$ the supremum is defined
-through finite subsets. The chaining bound is proved with the explicit constant $L = 10$; the
-majorizing measure theorem and Sudakov's minoration are stated, not yet proved.
+through finite subsets. The generic chaining bound is proved with the explicit constant
+$L = 10$, and Dudley's entropy bound $\mathbb{E}\sup_t X_t \le 17\sum_n 2^{n/2} e_n(T)$, the
+classical form in which the sets of the chain are optimal coverings, with $L = 17$; the majorizing
+measure theorem and Sudakov's minoration are stated, not yet proved.
 
 Source: M. Talagrand, *Upper and Lower Bounds for Stochastic Processes: Decomposition Theorems*,
 2nd ed., Springer 2021, Chapter 2 (theorem numbers on these pages refer to this edition).
@@ -30,6 +32,10 @@ Source: M. Talagrand, *Upper and Lower Bounds for Stochastic Processes: Decompos
 - [Generic chaining bound](integral-i-sup-le-gamma-two.md)
 - [Generic chaining bound, real form](integral-i-sup-le-gamma-two-to-real.md)
 - [The chaining argument along a finite chain](lintegral-i-sup-sub-le-of-chain.md)
+- [The chaining bound for a centred process](of-real-integral-i-sup-le-of-chain.md)
+- [Entropy numbers](entropy-number.md)
+- [Dudley's entropy bound](integral-i-sup-le-dudley.md)
+- [Dudley's sum is finite on a finite space](tsum-entropy-number-lt-top.md)
 - [Canonical distance of a process](canonical-dist.md)
 - [Majorizing measure theorem](majorizing-measure.md)
 - [Sudakov minoration](sudakov-minoration.md)

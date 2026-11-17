@@ -117,4 +117,15 @@ example : ENNReal.ofReal (∫ ω, ⨆ t : Pts, (t : ℝ) * ω ∂gaussianReal 0 
     (fun t => hasSubgaussianMGF_id_gaussianReal.integrable.const_mul _)
     (fun t => by rw [integral_const_mul]; simp) (incrementCondition_linearGaussian {0, 1, 2})
 
+/-- Dudley's entropy bound applies to the same process, with a finite right-hand side. -/
+example : ENNReal.ofReal (∫ ω, ⨆ t : Pts, (t : ℝ) * ω ∂gaussianReal 0 1) ≤
+    17 * ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber (edist : Pts → Pts → ℝ≥0∞) n :=
+  integral_iSup_le_dudley (gaussianReal 0 1) (fun (t : Pts) (ω : ℝ) => (t : ℝ) * ω)
+    (fun t => measurable_id.const_mul _)
+    (fun t => hasSubgaussianMGF_id_gaussianReal.integrable.const_mul _)
+    (fun t => by rw [integral_const_mul]; simp) (incrementCondition_linearGaussian {0, 1, 2})
+
+example : ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber (edist : Pts → Pts → ℝ≥0∞) n < ⊤ :=
+  tsum_entropyNumber_lt_top
+
 end MathlibExtTest.Probability.GenericChaining

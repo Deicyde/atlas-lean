@@ -39,14 +39,18 @@ As in the source, the index set is **finite**: Talagrand defines `E sup_{t ∈ T
 * `gammaFunctional α d`: Talagrand's functional `γ_α(T, d)` (Definition 2.7.3), valued in
   `ℝ≥0∞` so that it is meaningful for every admissible sequence.
 * `SatisfiesIncrementCondition P X`: the sub-Gaussian increment condition (2.4).
+* `entropyNumber d n`: Talagrand's entropy numbers `e_n(T)` (2.36).
 
 ## Main results
 
 * `lintegral_iSup_sub_le_of_chain`: the chaining argument of Section 2.4 along a finite chain of
-  approximation maps, with explicit constant `7`.
+  approximation maps, with explicit constant `7`; `ofReal_integral_iSup_le_of_chain` adds the
+  centring step (2.5) and is shared by the two bounds below.
 * `integral_iSup_le_gammaTwo`, `integral_iSup_le_gammaTwo_toReal`: the generic chaining bound,
   Theorem 2.7.11 (via Theorem 2.7.2), `E sup_t X_t ≤ 10 γ₂(T, d)` for finite `T` (Talagrand's
   universal `L`, made explicit).
+* `integral_iSup_le_dudley`: Dudley's entropy bound, Proposition 2.5.1,
+  `E sup_t X_t ≤ 17 ∑_n 2^{n/2} e_n(T)`, with `tsum_entropyNumber_lt_top` for its finiteness.
 * `diamWith_univ_le_gammaFunctional`: `Δ(T) ≤ γ_α(T, d)` (remark after Definition 2.7.3).
 * `gammaFunctional_lt_top`: `γ_α(T, d) < ∞` for finite `T` and a finite distance.
 
@@ -54,7 +58,8 @@ As in the source, the index set is **finite**: Talagrand defines `E sup_{t ∈ T
 
 * M. Talagrand, *Upper and Lower Bounds for Stochastic Processes: Decomposition Theorems*,
   2nd ed., Ergebnisse der Mathematik und ihrer Grenzgebiete 60, Springer 2021: (2.2), (2.4),
-  (2.29), Section 2.4 (the bound (2.34)), Definitions 2.7.1 and 2.7.3, Theorems 2.7.2 and 2.7.11.
+  (2.29), Section 2.4 (the bound (2.34)), (2.36), Proposition 2.5.1, Definitions 2.7.1 and 2.7.3,
+  Theorems 2.7.2 and 2.7.11.
 -/
 
 @[expose] public section
@@ -464,6 +469,42 @@ theorem lintegral_iSup_sub_le_of_chain [MetricSpace T] [Fintype T] [DecidableEq 
     _ ≤ ENNReal.ofReal S * 7 := mul_le_mul_right hEZ _
     _ = 7 * ENNReal.ofReal S := mul_comm _ _
 
+/-- **The chaining bound for a centred process** (Talagrand, *Upper and Lower Bounds for
+Stochastic Processes*, 2nd ed., 2021, (2.5) and (2.34)). Under the hypotheses of
+`lintegral_iSup_sub_le_of_chain`, if moreover every `X_t` is integrable and centred, then
+`E sup_t X_t = E sup_t (X_t - X_{t₀})` and
+`E sup_t X_t ≤ 7 sup_t ∑_{n=1}^{M} 2^{n/2} d(π_n(t), π_{n-1}(t))`. -/
+theorem ofReal_integral_iSup_le_of_chain [MetricSpace T] [Fintype T] [DecidableEq T]
+    (P : Measure Ω) [IsProbabilityMeasure P] (X : T → Ω → ℝ) (hX : ∀ t, Measurable (X t))
+    (hint : ∀ t, Integrable (X t) P) (hcen : ∀ t, ∫ ω, X t ω ∂P = 0)
+    (hinc : SatisfiesIncrementCondition P X) (M : ℕ) (hM : 0 < M) (φ : ℕ → T → T) (t₀ : T)
+    (h0 : ∀ t, φ 0 t = t₀) (hMid : ∀ t, φ M t = t)
+    (hcard : ∀ i < M,
+      (Finset.univ.image fun t => (φ (i + 1) t, φ i t)).card ≤ 2 ^ 2 ^ (i + 2)) :
+    ENNReal.ofReal (∫ ω, ⨆ t, X t ω ∂P) ≤
+      7 * ENNReal.ofReal (⨆ t, ∑ i ∈ range M, √2 ^ (i + 1) * dist (φ (i + 1) t) (φ i t)) := by
+  have : Nonempty T := ⟨t₀⟩
+  have hcore := lintegral_iSup_sub_le_of_chain P X hX hinc M hM φ t₀ h0 hMid hcard
+  have hY0 : ∀ ω, 0 ≤ ⨆ t, (X t ω - X t₀ ω) := fun ω =>
+    (by simp : (0 : ℝ) ≤ X t₀ ω - X t₀ ω).trans
+      (le_ciSup (f := fun t => X t ω - X t₀ ω) (Set.finite_range _).bddAbove t₀)
+  have hYeq : ∀ ω, ⨆ t, (X t ω - X t₀ ω) = (⨆ t, X t ω) - X t₀ ω := fun ω => by
+    refine le_antisymm (ciSup_le fun t => sub_le_sub_right
+      (le_ciSup (f := fun t => X t ω) (Set.finite_range _).bddAbove t) _) ?_
+    rw [sub_le_iff_le_add]
+    refine ciSup_le fun t => ?_
+    rw [← sub_le_iff_le_add]
+    exact le_ciSup (f := fun t => X t ω - X t₀ ω) (Set.finite_range _).bddAbove t
+  by_cases hsup : Integrable (fun ω => ⨆ t, X t ω) P
+  · have hYint : Integrable (fun ω => ⨆ t, (X t ω - X t₀ ω)) P := by
+      simp_rw [hYeq]; exact hsup.sub (hint t₀)
+    have hInt : ∫ ω, ⨆ t, X t ω ∂P = ∫ ω, ⨆ t, (X t ω - X t₀ ω) ∂P := by
+      simp_rw [hYeq]; rw [integral_sub hsup (hint t₀), hcen, sub_zero]
+    rw [hInt, ofReal_integral_eq_lintegral_ofReal hYint (Filter.Eventually.of_forall hY0)]
+    exact hcore
+  · rw [integral_undef hsup, ENNReal.ofReal_zero]; exact bot_le
+
+
 private theorem two_rpow_half (n : ℕ) :
     (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) = ENNReal.ofReal (√2 ^ n) := by
   rw [show (2 : ℝ≥0∞) = ENNReal.ofReal 2 by simp,
@@ -536,7 +577,6 @@ theorem integral_iSup_le_gammaTwo [MetricSpace T] [Finite T] [Nonempty T] (P : M
         (Nat.lt_two_pow_self (n := Fintype.card T)).le.trans
           (Nat.pow_le_pow_right (by norm_num) (by omega))
       exact h1.le.trans (Nat.pow_le_pow_right (by norm_num) h2)
-  have hcore := lintegral_iSup_sub_le_of_chain P X hX hinc M (by omega) φ t₀ h0 hMid hcard
   -- bound the chain sum by `√2 · SA`
   have hchain : ENNReal.ofReal (⨆ t, ∑ i ∈ range M, √2 ^ (i + 1) * dist (φ (i + 1) t) (φ i t))
       ≤ ENNReal.ofReal √2 * SA := by
@@ -567,33 +607,17 @@ theorem integral_iSup_le_gammaTwo [MetricSpace T] [Finite T] [Nonempty T] (P : M
           refine mul_le_mul_right ?_ _
           exact (ENNReal.sum_le_tsum _).trans (le_iSup
             (fun t => ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * diamWith edist (A.cell n t)) t)
-  -- relate the expectation of the supremum to the lower integral
-  have hY0 : ∀ ω, 0 ≤ ⨆ t, (X t ω - X t₀ ω) := fun ω =>
-    (by simp : (0 : ℝ) ≤ X t₀ ω - X t₀ ω).trans
-      (le_ciSup (f := fun t => X t ω - X t₀ ω) (Set.finite_range _).bddAbove t₀)
-  have hYeq : ∀ ω, ⨆ t, (X t ω - X t₀ ω) = (⨆ t, X t ω) - X t₀ ω := fun ω => by
-    refine le_antisymm (ciSup_le fun t => sub_le_sub_right
-      (le_ciSup (f := fun t => X t ω) (Set.finite_range _).bddAbove t) _) ?_
-    rw [sub_le_iff_le_add]
-    refine ciSup_le fun t => ?_
-    rw [← sub_le_iff_le_add]
-    exact le_ciSup (f := fun t => X t ω - X t₀ ω) (Set.finite_range _).bddAbove t
   have hsqrt : ENNReal.ofReal √2 * 7 ≤ 10 := by
     rw [show (7 : ℝ≥0∞) = ENNReal.ofReal 7 by simp, ← ENNReal.ofReal_mul (by positivity),
       show (10 : ℝ≥0∞) = ENNReal.ofReal 10 by simp]
     refine ENNReal.ofReal_le_ofReal ?_
     nlinarith [Real.sq_sqrt (show (0 : ℝ) ≤ 2 by norm_num), Real.sqrt_nonneg 2]
-  by_cases hsup : Integrable (fun ω => ⨆ t, X t ω) P
-  · have hYint : Integrable (fun ω => ⨆ t, (X t ω - X t₀ ω)) P := by
-      simp_rw [hYeq]; exact hsup.sub (hint t₀)
-    have hInt : ∫ ω, ⨆ t, X t ω ∂P = ∫ ω, ⨆ t, (X t ω - X t₀ ω) ∂P := by
-      simp_rw [hYeq]; rw [integral_sub hsup (hint t₀), hcen, sub_zero]
-    rw [hInt, ofReal_integral_eq_lintegral_ofReal hYint (Filter.Eventually.of_forall hY0)]
-    calc ∫⁻ ω, ENNReal.ofReal (⨆ t, (X t ω - X t₀ ω)) ∂P
-        ≤ 7 * (ENNReal.ofReal √2 * SA) := hcore.trans (mul_le_mul_right hchain _)
-      _ = (ENNReal.ofReal √2 * 7) * SA := by ring
-      _ ≤ 10 * SA := mul_le_mul_left hsqrt _
-  · rw [integral_undef hsup, ENNReal.ofReal_zero]; exact bot_le
+  calc ENNReal.ofReal (∫ ω, ⨆ t, X t ω ∂P)
+      ≤ 7 * ENNReal.ofReal (⨆ t, ∑ i ∈ range M, √2 ^ (i + 1) * dist (φ (i + 1) t) (φ i t)) :=
+        ofReal_integral_iSup_le_of_chain P X hX hint hcen hinc M (by omega) φ t₀ h0 hMid hcard
+    _ ≤ 7 * (ENNReal.ofReal √2 * SA) := mul_le_mul_right hchain _
+    _ = (ENNReal.ofReal √2 * 7) * SA := by ring
+    _ ≤ 10 * SA := mul_le_mul_left hsqrt _
 
 /-- **Generic chaining bound, real form** (Talagrand, *Upper and Lower Bounds for Stochastic
 Processes*, 2nd ed., 2021, Theorem 2.7.11). Under the hypotheses of `integral_iSup_le_gammaTwo`,
@@ -609,5 +633,182 @@ theorem integral_iSup_le_gammaTwo_toReal [MetricSpace T] [Finite T] [Nonempty T]
   rw [ENNReal.ofReal_le_iff_le_toReal (ENNReal.mul_ne_top (by norm_num) hfin.ne),
     ENNReal.toReal_mul] at h
   simpa using h
+
+/-- **Entropy numbers** (Talagrand, *Upper and Lower Bounds for Stochastic Processes*, 2nd ed.,
+2021, (2.36)). `e_n(T) = inf_{T_n ⊆ T, card T_n ≤ N_n} sup_{t ∈ T} d(t, T_n)`: the smallest radius
+`r` such that `T` is covered by at most `N_n` balls of radius `r` centred in `T`. The value lies
+in `[0, ∞]`; Talagrand's `e_n` is `e_{2^n}` in the convention of operator theory. -/
+noncomputable def entropyNumber (d : T → T → ℝ≥0∞) (n : ℕ) : ℝ≥0∞ :=
+  ⨅ (F : Finset T) (_ : F.card ≤ chainingCard n), ⨆ t, ⨅ s ∈ F, d t s
+
+/-- **Dudley's entropy bound** (Talagrand, *Upper and Lower Bounds for Stochastic Processes*,
+2nd ed., 2021, Proposition 2.5.1, from (2.34)). Let `T` be a finite nonempty metric space and
+`(X_t)_{t ∈ T}` a process of integrable, centred random variables satisfying the increment
+condition (2.4). Then `E sup_{t ∈ T} X_t ≤ L ∑_{n ≥ 0} 2^{n/2} e_n(T)` with `L = 17`. -/
+theorem integral_iSup_le_dudley [MetricSpace T] [Finite T] [Nonempty T] (P : Measure Ω)
+    [IsProbabilityMeasure P] (X : T → Ω → ℝ) (hX : ∀ t, Measurable (X t))
+    (hint : ∀ t, Integrable (X t) P) (hcen : ∀ t, ∫ ω, X t ω ∂P = 0)
+    (hinc : SatisfiesIncrementCondition P X) :
+    ENNReal.ofReal (∫ ω, ⨆ t, X t ω ∂P) ≤
+      17 * ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber (edist : T → T → ℝ≥0∞) n := by
+  classical
+  have := Fintype.ofFinite T
+  set e : ℕ → ℝ≥0∞ := entropyNumber (edist : T → T → ℝ≥0∞) with he
+  set S := ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * e n with hSdef
+  by_cases hS : S = ⊤
+  · rw [hS, ENNReal.mul_top (by norm_num)]; exact le_top
+  -- the value of a finite set of centres
+  let val : Finset T → ℝ≥0∞ := fun F => ⨆ t, ⨅ s ∈ F, edist t s
+  -- optimal centres at every level
+  have hopt : ∀ n, ∃ F : Finset T, F.card ≤ chainingCard n ∧ val F = e n := by
+    intro n
+    have : Nonempty {F : Finset T // F.card ≤ chainingCard n} := ⟨⟨∅, by simp⟩⟩
+    obtain ⟨⟨F, hF⟩, hFeq⟩ :=
+      exists_eq_ciInf_of_finite (f := fun F : {F : Finset T // F.card ≤ chainingCard n} => val F)
+    refine ⟨F, hF, ?_⟩
+    rw [hFeq, he, entropyNumber, iInf_subtype']
+  choose F hFcard hFval using hopt
+  have hen : ∀ n, e n ≠ ⊤ := by
+    intro n hn
+    have hle : (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * e n ≤ S :=
+      ENNReal.le_tsum (f := fun n : ℕ => (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * e n) n
+    rw [hn, ENNReal.mul_top (ENNReal.rpow_pos (by norm_num) (by norm_num)).ne'] at hle
+    exact hS (top_le_iff.mp hle)
+  have hFne : ∀ n, (F n).Nonempty := by
+    intro n
+    by_contra hne
+    rw [Finset.not_nonempty_iff_eq_empty] at hne
+    have : val (F n) = ⊤ := by simp [val, hne]
+    exact hen n (hFval n ▸ this)
+  -- nearest centres
+  have hnear : ∀ n t, ∃ s ∈ F n, edist t s ≤ e n := by
+    intro n t
+    obtain ⟨s, hs, hmin⟩ := Finset.exists_min_image (F n) (edist t) (hFne n)
+    refine ⟨s, hs, ?_⟩
+    calc edist t s ≤ ⨅ s' ∈ F n, edist t s' := le_iInf₂ fun s' hs' => hmin s' hs'
+      _ ≤ val (F n) := le_iSup (fun t => ⨅ s' ∈ F n, edist t s') t
+      _ = e n := hFval n
+  choose near hnearF hneare using hnear
+  set M := Fintype.card T + 1 with hMdef
+  let φ : ℕ → T → T := fun n t => if n < M then near n t else t
+  obtain ⟨c, hc⟩ : ∃ c, F 0 = {c} := by
+    refine Finset.card_eq_one.mp (le_antisymm ?_ (Finset.card_pos.mpr (hFne 0)))
+    simpa [chainingCard] using hFcard 0
+  have h0 : ∀ t, φ 0 t = c := fun t => by
+    have := hnearF 0 t
+    rw [hc, Finset.mem_singleton] at this
+    simp [φ, M, this]
+  have hMid : ∀ t, φ M t = t := fun t => by simp [φ]
+  have hFcard' : ∀ n, (F n).card ≤ 2 ^ 2 ^ n := fun n =>
+    (hFcard n).trans (chainingCard_le_two_pow n)
+  have hcard : ∀ i < M,
+      (Finset.univ.image fun t => (φ (i + 1) t, φ i t)).card ≤ 2 ^ 2 ^ (i + 2) := by
+    intro i hi
+    by_cases hi1 : i + 1 < M
+    · have hsub : (Finset.univ.image fun t => (φ (i + 1) t, φ i t)) ⊆ F (i + 1) ×ˢ F i := by
+        intro q hq
+        obtain ⟨t, -, rfl⟩ := Finset.mem_image.mp hq
+        simp only [φ, ite_eq_left hi1, ite_eq_left hi, Finset.mem_product]
+        exact ⟨hnearF _ _, hnearF _ _⟩
+      refine (Finset.card_le_card hsub).trans ?_
+      rw [Finset.card_product]
+      calc _ ≤ 2 ^ 2 ^ (i + 1) * 2 ^ 2 ^ i := Nat.mul_le_mul (hFcard' _) (hFcard' _)
+        _ ≤ 2 ^ 2 ^ (i + 1) * 2 ^ 2 ^ (i + 1) :=
+            Nat.mul_le_mul_left _ (Nat.pow_le_pow_right (by norm_num)
+              (Nat.pow_le_pow_right (by norm_num) (Nat.le_succ i)))
+        _ = 2 ^ 2 ^ (i + 2) := by rw [← pow_add]; congr 1; ring
+    · refine Finset.card_image_le.trans ?_
+      rw [Finset.card_univ]
+      have h1 : Fintype.card T < 2 ^ Fintype.card T := Nat.lt_two_pow_self
+      have h2 : Fintype.card T ≤ 2 ^ (i + 2) :=
+        (Nat.lt_two_pow_self (n := Fintype.card T)).le.trans
+          (Nat.pow_le_pow_right (by norm_num) (by omega))
+      exact h1.le.trans (Nat.pow_le_pow_right (by norm_num) h2)
+  have hcore := ofReal_integral_iSup_le_of_chain P X hX hint hcen hinc M (by omega) φ c h0 hMid
+    hcard
+  -- every link is at most `e_{n} + e_{n-1}`
+  have hlink : ∀ i < M, ∀ t, edist (φ (i + 1) t) (φ i t) ≤ e (i + 1) + e i := by
+    intro i hi t
+    have h2 : edist t (φ i t) ≤ e i := by simp only [φ, ite_eq_left hi]; exact hneare i t
+    have h1 : edist (φ (i + 1) t) t ≤ e (i + 1) := by
+      by_cases hi1 : i + 1 < M
+      · simp only [φ, ite_eq_left hi1]; rw [edist_comm]; exact hneare _ t
+      · simp only [φ, ite_eq_right hi1, edist_self]; exact zero_le
+    exact (edist_triangle _ t _).trans (add_le_add h1 h2)
+  have hrpow : ∀ n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) = ENNReal.ofReal (√2 ^ n) := two_rpow_half
+  have hchain : ENNReal.ofReal (⨆ t, ∑ i ∈ range M, √2 ^ (i + 1) * dist (φ (i + 1) t) (φ i t))
+      ≤ (1 + ENNReal.ofReal √2) * S := by
+    have hfin : (1 + ENNReal.ofReal √2) * S ≠ ⊤ :=
+      ENNReal.mul_ne_top (ENNReal.add_ne_top.mpr ⟨by norm_num, ENNReal.ofReal_ne_top⟩) hS
+    rw [ENNReal.ofReal_le_iff_le_toReal hfin]
+    refine ciSup_le fun t => ?_
+    rw [← ENNReal.ofReal_le_iff_le_toReal hfin,
+      ENNReal.ofReal_sum_of_nonneg (fun i _ => by positivity)]
+    set f : ℕ → ℝ≥0∞ := fun n => (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * e n with hf
+    calc ∑ i ∈ range M, ENNReal.ofReal (√2 ^ (i + 1) * dist (φ (i + 1) t) (φ i t))
+        ≤ ∑ i ∈ range M, (f (i + 1) + ENNReal.ofReal √2 * f i) := by
+          refine Finset.sum_le_sum fun i hi => ?_
+          rw [ENNReal.ofReal_mul (by positivity), ← edist_dist]
+          calc ENNReal.ofReal (√2 ^ (i + 1)) * edist (φ (i + 1) t) (φ i t)
+              ≤ ENNReal.ofReal (√2 ^ (i + 1)) * (e (i + 1) + e i) :=
+                mul_le_mul_right (hlink i (Finset.mem_range.mp hi) t) _
+            _ = f (i + 1) + ENNReal.ofReal √2 * f i := by
+                rw [hf]; dsimp only
+                rw [hrpow, hrpow, mul_add, pow_succ', ENNReal.ofReal_mul (by positivity)]
+                ring
+      _ = ∑ i ∈ range M, f (i + 1) + ENNReal.ofReal √2 * ∑ i ∈ range M, f i := by
+          rw [Finset.sum_add_distrib, Finset.mul_sum]
+      _ ≤ S + ENNReal.ofReal √2 * S := by
+          gcongr
+          · calc ∑ i ∈ range M, f (i + 1) ≤ ∑ i ∈ range (M + 1), f i := by
+                  rw [Finset.sum_range_succ' f M]; exact le_self_add
+              _ ≤ S := ENNReal.sum_le_tsum _
+          · exact ENNReal.sum_le_tsum _
+      _ = (1 + ENNReal.ofReal √2) * S := by ring
+  have hconst : 7 * (1 + ENNReal.ofReal √2) ≤ 17 := by
+    rw [show (1 : ℝ≥0∞) = ENNReal.ofReal 1 by simp, ← ENNReal.ofReal_add (by norm_num)
+      (by positivity), show (7 : ℝ≥0∞) = ENNReal.ofReal 7 by simp,
+      ← ENNReal.ofReal_mul (by norm_num), show (17 : ℝ≥0∞) = ENNReal.ofReal 17 by simp]
+    refine ENNReal.ofReal_le_ofReal ?_
+    nlinarith [Real.sq_sqrt (show (0 : ℝ) ≤ 2 by norm_num), Real.sqrt_nonneg 2]
+  calc ENNReal.ofReal (∫ ω, ⨆ t, X t ω ∂P) ≤ 7 * ((1 + ENNReal.ofReal √2) * S) :=
+        hcore.trans (mul_le_mul_right hchain _)
+    _ = 7 * (1 + ENNReal.ofReal √2) * S := by ring
+    _ ≤ 17 * S := mul_le_mul_left hconst _
+
+/-- **Dudley's sum is finite on a finite space** (Talagrand, *Upper and Lower Bounds for Stochastic
+Processes*, 2nd ed., 2021, (2.36)). For a finite metric space, `e_n(T) = 0` as soon as
+`N_n ≥ card T` (take `T_n = T`), and every `e_n(T)` is finite, so
+`∑_{n ≥ 0} 2^{n/2} e_n(T) < ∞` and Dudley's bound is not vacuous. -/
+theorem tsum_entropyNumber_lt_top [MetricSpace T] [Finite T] :
+    ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber (edist : T → T → ℝ≥0∞) n < ⊤ := by
+  classical
+  have := Fintype.ofFinite T
+  have hzero : ∀ n, Fintype.card T ≤ n → entropyNumber (edist : T → T → ℝ≥0∞) n = 0 := by
+    intro n hn
+    have hcardn : Fintype.card T ≤ chainingCard n := by
+      rcases Nat.eq_zero_or_pos n with rfl | hpos
+      · omega
+      · unfold chainingCard
+        rw [ite_eq_right (hpos.ne')]
+        exact hn.trans ((Nat.lt_two_pow_self).le.trans
+          (Nat.pow_le_pow_right (by norm_num) (Nat.lt_two_pow_self).le))
+    refine le_antisymm ?_ zero_le
+    refine (iInf₂_le (Finset.univ : Finset T) (by simpa using hcardn)).trans ?_
+    exact iSup_le fun t => (iInf₂_le t (Finset.mem_univ t)).trans (by simp)
+  have hfin : ∀ n, entropyNumber (edist : T → T → ℝ≥0∞) n < ⊤ := by
+    intro n
+    rcases isEmpty_or_nonempty T with hT | ⟨⟨c⟩⟩
+    · refine lt_of_le_of_lt (iInf₂_le (∅ : Finset T) (by simp)) ?_
+      simp
+    refine lt_of_le_of_lt (iInf₂_le ({c} : Finset T) (by simpa using one_le_chainingCard n)) ?_
+    refine lt_of_le_of_lt (iSup_le fun t => (iInf₂_le c (Finset.mem_singleton_self c)).trans
+      (Finset.single_le_sum (f := fun t => edist t c) (fun _ _ => zero_le) (Finset.mem_univ t)))
+      ?_
+    exact ENNReal.sum_lt_top.mpr fun t _ => edist_lt_top t c
+  rw [tsum_eq_sum (s := range (Fintype.card T)) fun n hn => by
+    rw [hzero n (by simpa using hn), mul_zero]]
+  refine ENNReal.sum_lt_top.mpr fun n _ => ENNReal.mul_lt_top ?_ (hfin n)
+  exact (ENNReal.rpow_ne_top_of_ne_zero (by norm_num) (by norm_num)).lt_top
 
 end MathlibExt.Probability.GenericChaining
