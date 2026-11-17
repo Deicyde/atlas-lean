@@ -40,6 +40,9 @@ Main results:
 * `app_graph_diag`: Scott's first recursion theorem (Theorem 2.5) at the level of sets: with
   `d = graph (x ↦ app u (app x x))`, the self-application `app d d` (the value of the paradoxical
   combinator `Y` at `u`) is the least fixed point `⨆ k, (app u)^[k] ∅` of `app u`.
+* `graph_app_eq_iff`: Theorem 1.2 (iii), which sets are graphs.
+* `exists_continuous_extend_withScott`: Scott's extension theorem (Theorem 1.5): `P(ω)` is an
+  injective space.
 * `exists_graph_app_ne`: the retraction is not an isomorphism, so `P(ω)` is not extensional
   (η fails); Scott's Theorem 2.2 validates only α, β and ξ in `P(ω)`.
 
@@ -195,6 +198,22 @@ theorem subset_graph_app (u : Set ℕ) : u ⊆ graph (app u) := by
   refine ⟨k.unpair.1, subset_rfl, ?_⟩
   simpa [Nat.pair_unpair] using hk
 
+/-- **Scott's graph theorem, part (iii).** A set `u ⊆ ℕ` is the graph of the function it
+determines, `graph (app u) = u`, exactly when `u` is upward closed in the first coordinate:
+`⟨k, m⟩ ∈ u` and `e k ⊆ e n` imply `⟨n, m⟩ ∈ u` (D. Scott, *Data types as lattices*, SIAM J.
+Comput. 5 (1976), Theorem 1.2 (iii)). -/
+theorem graph_app_eq_iff (u : Set ℕ) :
+    graph (app u) = u ↔
+      ∀ k n m, Nat.pair k m ∈ u → finSet k ⊆ finSet n → Nat.pair n m ∈ u := by
+  constructor
+  · intro h k n m hk hkn
+    rw [← h]
+    exact mem_graph.2 ⟨k, hkn, hk⟩
+  · intro h
+    refine Subset.antisymm (fun j hj => ?_) (subset_graph_app u)
+    obtain ⟨k, hk, hku⟩ := hj
+    simpa [Nat.pair_unpair] using h k j.unpair.1 j.unpair.2 hku hk
+
 /-- **The graph model is not extensional.** Some `u ⊆ ℕ` differs from the graph of the function
 it determines, so `graph ∘ app ≠ id` and the η-rule fails in `P(ω)`. Scott's conversion
 theorem (D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976), Theorem 2.2) validates
@@ -338,6 +357,65 @@ theorem exists_isEmbedding_withScott (X : Type*) [TopologicalSpace X] [T0Space X
     rw [hpre n]
     exact isOpen_induced (isOpen_setOf_mem n)
   exact ⟨e, hind, fun x y h => (hind.inseparable_iff.1 (h ▸ Inseparable.refl _)).eq⟩
+
+/-- **Continuity into `P(ω)` is tested on the subbasic open sets.** A map `g` from a topological
+space to `P(ω)` with its Scott topology is continuous as soon as `{z | m ∈ g z}` is open for every
+`m`, because the Scott-open sets of `P(ω)` are unions of finite intersections of the sets
+`{y | m ∈ y}` (D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976), Appendix A, proof
+of Theorem 1.5). -/
+theorem continuous_of_isOpen_setOf_mem {Z : Type*} [TopologicalSpace Z]
+    {g : Z → WithScott (Set ℕ)} (h : ∀ m, IsOpen {z | m ∈ ofScott (g z)}) : Continuous g := by
+  refine continuous_def.2 fun V hV => ?_
+  have : g ⁻¹' V = ⋃ (F : Finset ℕ) (_ : toScott (F : Set ℕ) ∈ V),
+      ⋂ m ∈ F, {z | m ∈ ofScott (g z)} := by
+    ext z
+    simp only [mem_preimage, mem_iUnion, mem_iInter, exists_prop, mem_ofPred_eq]
+    constructor
+    · intro hz
+      obtain ⟨F, hF, hFV⟩ := exists_finset_mem_of_isOpen hV hz
+      exact ⟨F, hFV, fun m hm => hF hm⟩
+    · rintro ⟨F, hFV, hF⟩
+      exact (IsScott.isUpperSet_of_isOpen (D := univ) hV) (fun m hm => hF m hm) hFV
+  rw [this]
+  exact isOpen_iUnion fun F => isOpen_iUnion fun _ => isOpen_biInter_finset fun m _ => h m
+
+/-- **Scott's extension theorem.** Let `X` be a subspace of a topological space `Y`. Every
+continuous map `f : X → P(ω)`, for the Scott topology, extends to a continuous map `Y → P(ω)`,
+namely `y ↦ ⋃ {⋂ {f x | x ∈ X ∩ U} | U open, y ∈ U}`; so `P(ω)` is an injective space (D. Scott,
+*Data types as lattices*, SIAM J. Comput. 5 (1976), Theorem 1.5, with this extension). -/
+theorem exists_continuous_extend_withScott {Y : Type*} [TopologicalSpace Y] (X : Set Y)
+    {f : X → WithScott (Set ℕ)} (hf : Continuous f) :
+    ∃ F : Y → WithScott (Set ℕ), Continuous F ∧ ∀ x : X, F x = f x := by
+  let F : Y → WithScott (Set ℕ) := fun y =>
+    toScott {m | ∃ U : Set Y, IsOpen U ∧ y ∈ U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)}
+  refine ⟨F, continuous_of_isOpen_setOf_mem fun m => ?_, fun x => ?_⟩
+  · have : {y | m ∈ ofScott (F y)} =
+        ⋃ (U : Set Y) (_ : IsOpen U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)), U := by
+      ext y
+      simp only [F, ofScott_toScott, mem_ofPred_eq, mem_iUnion, exists_prop]
+      constructor
+      · rintro ⟨U, hU, hyU, hfU⟩
+        exact ⟨U, ⟨hU, hfU⟩, hyU⟩
+      · rintro ⟨U, ⟨hU, hfU⟩, hyU⟩
+        exact ⟨U, hU, hyU, hfU⟩
+    rw [this]
+    exact isOpen_iUnion fun U => isOpen_iUnion fun hU => hU.1
+  · change ofScott (F x) = ofScott (f x)
+    ext m
+    simp only [F, ofScott_toScott, mem_ofPred_eq]
+    constructor
+    · rintro ⟨U, _, hxU, hfU⟩
+      exact hfU x hxU
+    · intro hm
+      obtain ⟨U, hU, hUeq⟩ := isOpen_induced_iff.1 (hf.isOpen_preimage _ (isOpen_setOf_mem m))
+      refine ⟨U, hU, ?_, fun x' hx' => ?_⟩
+      · have : x ∈ Subtype.val ⁻¹' U := by
+          rw [hUeq]
+          exact hm
+        exact this
+      · have : x' ∈ Subtype.val ⁻¹' U := hx'
+        rw [hUeq] at this
+        exact this
 
 end Embedding
 

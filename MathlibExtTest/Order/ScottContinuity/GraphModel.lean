@@ -51,3 +51,21 @@ example : app (graph fun x => app ∅ (app x x)) (graph fun x => app ∅ (app x 
 /-- A concrete second-countable T₀ space, `Bool` with the discrete topology, embeds in `P(ω)`. -/
 example : ∃ e : Bool → Topology.WithScott (Set ℕ), Topology.IsEmbedding e :=
   exists_isEmbedding_withScott Bool
+
+/-- The empty set is a graph: Theorem 1.2 (iii) with a vacuous hypothesis. -/
+example : graph (app ∅) = ∅ :=
+  (graph_app_eq_iff ∅).2 fun _ _ _ h _ => h
+
+/-- The singleton `{⟨n₀, 0⟩}` with `e n₀ = ∅` is not a graph (Theorem 1.2 (iii) fails). -/
+example : ¬ ∀ k n m, Nat.pair k m ∈ ({Nat.pair 0 0} : Set ℕ) → finSet k ⊆ finSet n →
+    Nat.pair n m ∈ ({Nat.pair 0 0} : Set ℕ) := by
+  intro h
+  have h0 : finSet 0 = ∅ := by simp [finSet]
+  have := h 0 1 0 rfl (by rw [h0]; exact Set.empty_subset _)
+  simp [Nat.pair_eq_pair] at this
+
+/-- A continuous map on the subspace `{true}` of `Bool` extends to `Bool`. -/
+example : ∃ F : Bool → Topology.WithScott (Set ℕ), Continuous F ∧
+    ∀ x : ({true} : Set Bool), F x = Topology.WithScott.toScott {0} :=
+  exists_continuous_extend_withScott ({true} : Set Bool) (f := fun _ => .toScott {0})
+    continuous_const
