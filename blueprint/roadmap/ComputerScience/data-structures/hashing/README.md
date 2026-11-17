@@ -2,6 +2,7 @@
 
 Hash tables (chaining, open addressing, cuckoo, perfect), universal hash families and Bloom filters including their false-positive analysis.
 
+- [Analysis of linear probing](analysis-of-linear-probing/README.md)
 - [Bloom filter](bloom-filter/README.md)
 - [Cuckoo hashing](cuckoo-hashing/README.md)
 - [Hash table with separate chaining](hash-table-with-separate-chaining/README.md)
