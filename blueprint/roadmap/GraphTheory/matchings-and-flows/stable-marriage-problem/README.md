@@ -44,3 +44,8 @@
 - [At most one hell-couple in a stable matching](hell-couple-subsingleton.md)
 - [A hell-couple belongs to every stable matching](hell-couple-mem-all-stable.md)
 - [Profiles with a pair of outcasts](outcast-profiles-card.md)
+
+## Related topics
+
+- [Lattice of stable matchings](../../../GameTheory/matching-markets/lattice-of-stable-matchings/README.md): the structure of the set of stable matchings (Conway's join and the opposition of the two sides' interests).
+- [Stable matching mechanisms and incentives](../../../GameTheory/matching-markets/stable-matching-mechanisms-and-incentives/README.md): stable matchings chosen from stated preferences, and Roth's impossibility theorem.

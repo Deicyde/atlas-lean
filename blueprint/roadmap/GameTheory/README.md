@@ -22,4 +22,5 @@ sharing, Braess's paradox and no-regret dynamics.
 - [Cooperative game theory](cooperative-games/README.md)
 - [Mechanism design](mechanism-design/README.md)
 - [Noncooperative games](noncooperative-games/README.md)
+- [Matching markets](matching-markets/README.md)
 - [Social choice theory](social-choice/README.md)

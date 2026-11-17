@@ -294,6 +294,7 @@
     {"slug": "cooperative-games", "title": "Cooperative game theory", "description": "Cooperative game theory studies games in which coalitions of players can make binding agreements, and solution concepts such as the core and the Shapley value for dividing a coalition's worth.", "msc": ["91A12"], "subfields": []},
     {"slug": "mechanism-design", "title": "Mechanism design", "description": "Mechanism design studies how to choose the rules of a game, with or without money, so that self-interested agents with private information reach a desired outcome in equilibrium: the revelation principle, incentive compatibility and Myerson's characterization of single-parameter mechanisms, revenue equivalence and optimal auctions, Vickrey–Clarke–Groves mechanisms, and impossibility results for bilateral trade.", "msc": ["91B03", "91B26"], "subfields": []},
     {"slug": "noncooperative-games", "title": "Noncooperative games", "description": "Noncooperative game theory studies strategic games in which each player chooses a strategy to optimise its own payoff or cost: Nash equilibria and the minimax theorem, potential and congestion games, routing games with Wardrop equilibria, the price of anarchy and of stability, learning dynamics such as no-regret play, regret matching and Blackwell approachability together with correlated and coarse correlated equilibria, and mean field games with a continuum of players.", "msc": ["91A10", "91A05", "91A14", "91A43", "91A26", "90B20"], "subfields": []},
+    {"slug": "matching-markets", "title": "Matching markets", "description": "Two-sided matching markets: stable matchings of marriage and college-admissions markets, the lattice of stable matchings and the opposition of the two sides' interests, properties shared by all stable matchings such as the rural hospitals theorem, and the incentives of stable matching mechanisms, from Roth's impossibility theorem to the strategy-proofness of deferred acceptance for the proposing side. The stable marriage problem and the Gale–Shapley existence theorem are under GraphTheory/matchings-and-flows, and the deferred-acceptance algorithm under ComputerScience/graph-algorithms.", "msc": ["91B68"], "subfields": []},
     {"slug": "social-choice", "title": "Social choice theory", "description": "Social choice theory studies rules that aggregate individual preferences into a collective ranking or choice, and the impossibility theorems that limit them.", "msc": ["91B14", "91B12"], "subfields": []}
    ]
   },
@@ -933,6 +934,7 @@
   "CSLibExt/Algorithms/Lean/MDP/StochasticShortestPath": {"to": "ComputerScience/heuristic-search-and-planning", "title": "Stochastic shortest path problems"},
   "CSLibExt/Algorithms/Lean/MDP/ValueIteration": {"to": "ComputerScience/heuristic-search-and-planning", "title": "Value iteration"},
   "CSLibExt/Algorithms/Lean/Matching/GaleShapley": {"to": "ComputerScience/graph-algorithms/spanning-trees-flows-matchings", "title": "Gale–Shapley algorithm"},
+  "CSLibExt/Algorithms/Lean/Matching/GaleShapleyMechanism": {"to": "ComputerScience/graph-algorithms/spanning-trees-flows-matchings", "title": "Gale–Shapley algorithm"},
   "CSLibExt/Algorithms/Lean/Matrix/Assignments": {"to": "ComputerScience/graph-algorithms/shortest-paths", "title": "All-pairs shortest paths by min-plus products"},
   "CSLibExt/Algorithms/Lean/Matrix/Freivalds/Amplification": {"to": "ComputerScience/randomized-algorithms", "title": "Freivalds' algorithm"},
   "CSLibExt/Algorithms/Lean/Matrix/Freivalds/Basic": {"to": "ComputerScience/randomized-algorithms", "title": "Freivalds' algorithm"},
@@ -3094,6 +3096,8 @@
   "MathlibExt/GameTheory/InteractiveEpistemology/BayesRationality": {"to": "GameTheory/noncooperative-games", "title": "Correlated equilibria"},
   "MathlibExt/GameTheory/InteractiveEpistemology/CommonKnowledge": {"to": "GameTheory/noncooperative-games", "title": "Common knowledge and the agreement theorem"},
   "MathlibExt/GameTheory/LoadBalancing": {"to": "GameTheory/noncooperative-games", "title": "Selfish load balancing"},
+  "MathlibExt/GameTheory/Matching/StableMatchingLattice": {"to": "GameTheory/matching-markets", "title": "Lattice of stable matchings"},
+  "MathlibExt/GameTheory/Matching/StableMechanism": {"to": "GameTheory/matching-markets", "title": "Stable matching mechanisms and incentives"},
   "MathlibExt/GameTheory/MeanFieldEquilibrium": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "MathlibExt/GameTheory/MeanFieldGameSystem": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "MathlibExt/GameTheory/MechanismDesign/RevelationPrinciple": {"to": "GameTheory/mechanism-design", "title": "Revelation principle"},
@@ -5925,6 +5929,7 @@
   "WantedExt/GameTheory/MeanFieldEquilibriumWanted": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "WantedExt/GameTheory/MeanFieldGameSystemWanted": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "WantedExt/GameTheory/MyersonSatterthwaiteWanted": {"to": "GameTheory/mechanism-design", "title": "Myerson–Satterthwaite theorem"},
+  "WantedExt/GameTheory/Matching/StableMechanismIncentivesWanted": {"to": "GameTheory/matching-markets", "title": "Stable matching mechanisms and incentives"},
   "WantedExt/GameTheory/PenultsOfTakWanted": {"to": "GameTheory/combinatorial-games", "title": "Impartial placement games"},
   "WantedExt/GameTheory/PrincessAndRosesWanted": {"to": "GameTheory/combinatorial-games", "title": "Princess and the Roses game"},
   "WantedExt/GameTheory/RegretMatchingWanted": {"to": "GameTheory/noncooperative-games", "title": "Adaptive heuristics"},

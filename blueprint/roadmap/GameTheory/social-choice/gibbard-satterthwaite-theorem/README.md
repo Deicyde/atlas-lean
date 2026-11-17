@@ -28,3 +28,4 @@
 ## Related topics
 
 - [Vickrey–Clarke–Groves mechanisms](../../mechanism-design/vickrey-clarke-groves-mechanisms/README.md): strategy-proof mechanisms for every set of alternatives once utilities are quasi-linear and transfers are allowed.
+- [Stable matching mechanisms and incentives](../../matching-markets/stable-matching-mechanisms-and-incentives/README.md): Roth's impossibility theorem, the analogue for stable matching mechanisms.
