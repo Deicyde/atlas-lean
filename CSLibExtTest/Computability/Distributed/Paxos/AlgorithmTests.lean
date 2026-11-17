@@ -64,7 +64,7 @@ example : ∃ s : State (Fin 3) ℕ,
 
 /-- A run that exercises the value rule's second branch. The proposal `(1, 7)` is accepted by
 acceptor `0` only, so nothing is chosen; acceptor `0` then reports `(1, 7)` to the prepare
-request `2`, so the proposal numbered `2` must carry `7`, and it is chosen. -/
+request `2`, so the proposal numbered `2` can carry `7`, and it is chosen. -/
 theorem exists_chosen_adopted :
     ∃ s : State (Fin 3) ℕ, (lts Q3).CanReach init s ∧ (1, 7) ∈ s.proposals ∧
       (2, 7) ∈ s.proposals ∧ ValueChosen Q3 s 7 := by
