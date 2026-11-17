@@ -5,3 +5,7 @@ execution and let $t_k$ be the Lamport timestamp of $e_k$. If $i < j < n$ and $e
 belong to the same process, then $t_i < t_j$.
 
 This is Lamport's clock condition C1, which his implementation rule IR1 guarantees.
+
+## Sources
+
+- L. Lamport, *Time, Clocks, and the Ordering of Events in a Distributed System*, Communications of the ACM 21(7), July 1978, 558–565: "Logical Clocks", condition C1 and rule IR1, p. 560.
