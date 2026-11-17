@@ -18,6 +18,9 @@ Positive definite and semidefinite matrices, criteria for definiteness, and ineq
 - [The right side of Golden–Thompson is a nonnegative real](trace-exp-mul-exp-nonneg.md)
 - [Araki–Lieb–Thirring inequality](araki-lieb-thirring.md)
 - [Araki–Lieb–Thirring inequality, reversed range](araki-lieb-thirring-of-le-one.md)
+- [Lieb–Thirring trace inequality for `t = 2`](araki-lieb-thirring-two-one.md)
+- [`tr (XY)² ≤ tr X²Y²` for Hermitian matrices](trace-mul-mul-mul-mul-le.md)
+- [Commutator identity for traces](trace-commutator-conj-transpose-mul-self.md)
 
 ## Related topics
 
