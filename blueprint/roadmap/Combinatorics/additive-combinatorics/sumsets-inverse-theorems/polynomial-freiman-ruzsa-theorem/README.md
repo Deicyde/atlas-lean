@@ -19,3 +19,7 @@
 - [Liao's coset-cover bound with exponent 9](liao2024-upper-bound9-holds.md)
 - [Liao's simplified coset-cover bound with exponent 11](liao2024-simplified-upper-bound11-holds.md)
 - [Basis-vector lower bound for coset-cover exponents](basis-vectors-lower-bound1-holds.md)
+
+## Related topics
+
+- [Freiman and Balog–Szemerédi–Gowers theorems](../freiman-and-balog-szemer-di-gowers-theorems/README.md): Freiman's theorem over the integers, whose bounds the polynomial Freiman–Ruzsa conjecture asks to make polynomial, and the Balog–Szemerédi–Gowers theorem.
