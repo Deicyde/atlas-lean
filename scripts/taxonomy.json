@@ -625,7 +625,8 @@
     {"slug": "gibbs-states-and-phase-transitions", "title": "Gibbs states and phase transitions", "description": "Infinite-volume states of the Ising model and its phase transition: weak limits of box measures and the DLR condition, translation invariance, ergodicity and extremality of the plus state, spontaneous magnetization and the critical temperature, and Peierls' contour argument for long-range order.", "msc": ["82B26", "60K35"], "subfields": []},
     {"slug": "exact-solutions", "title": "Exact solutions and duality", "description": "Exact results for the two-dimensional Ising model: Kramers–Wannier duality between high- and low-temperature expansions, and Onsager's formula for the free energy through Kac–Ward determinants, Sherman's loop identities and the homology of the torus.", "msc": ["82B23"], "subfields": []},
     {"slug": "random-currents-and-sharpness", "title": "Random currents and sharpness", "description": "The random-current representation of Ising correlations and the switching lemma, and the sharpness of the Ising phase transition: the Simon–Lieb inequality, exponential decay of correlations below the critical point and the mean-field lower bound on the magnetization above it.", "msc": ["82B27", "60K35"], "subfields": []},
-    {"slug": "random-cluster-model", "title": "Random-cluster model", "description": "The random-cluster (Fortuin–Kasteleyn) model and its Edwards–Sokal coupling with the Potts and Ising models: finite-volume measures, the FKG inequality and comparison with Bernoulli percolation, infinite-volume limits, translation invariance and ergodicity, the free energy, agreement of free and wired measures, and the critical point.", "msc": ["82B43", "60K35"], "subfields": []}
+    {"slug": "random-cluster-model", "title": "Random-cluster model", "description": "The random-cluster (Fortuin–Kasteleyn) model and its Edwards–Sokal coupling with the Potts and Ising models: finite-volume measures, the FKG inequality and comparison with Bernoulli percolation, infinite-volume limits, translation invariance and ergodicity, the free energy, agreement of free and wired measures, and the critical point.", "msc": ["82B43", "60K35"], "subfields": []},
+    {"slug": "spin-glasses", "title": "Mean-field spin glasses", "description": "Disordered mean-field spin systems with Gaussian couplings: the Sherrington–Kirkpatrick model and its free energy, the Parisi functional, Guerra's replica-symmetry-breaking bound and the Parisi formula.", "msc": ["82D30", "82B44"], "subfields": []}
    ]
   },
   "TheoryOfComputation": {
@@ -4164,6 +4165,7 @@
   "MathlibExt/Probability/SampleEmpiricalMeasure": {"to": "Probability/large-deviations", "title": "Sanov's theorem"},
   "MathlibExt/Probability/Sampling/WithoutReplacement": {"to": "Probability/concentration-inequalities", "title": "Hoeffding's inequality"},
   "MathlibExt/Probability/SkorokhodRepresentation": {"to": "Probability/convergence-of-measures", "title": "Skorokhod representation theorem"},
+  "MathlibExt/Probability/SpinGlass/SherringtonKirkpatrick": {"to": "StatisticalMechanics/spin-glasses", "title": "Sherrington–Kirkpatrick model"},
   "MathlibExt/Probability/SqMartingaleConvergence": {"to": "Probability/martingales", "title": "Martingale convergence theorems"},
   "MathlibExt/Probability/StableDistribution": {"to": "Probability/infinite-divisibility-regular-variation", "title": "Stable distributions and domains of attraction"},
   "MathlibExt/Probability/Statistics/BasisPursuit": {"to": "Probability/linear-models-multivariate", "title": "Exact recovery by basis pursuit"},
@@ -6753,6 +6755,7 @@
   "WantedExt/Probability/MatrixConcentrationWanted": {"to": "Probability/concentration-inequalities", "title": "Matrix concentration inequalities"},
   "WantedExt/Probability/LangevinMonteCarloWanted": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Langevin Monte Carlo"},
   "WantedExt/Probability/LovaszLocalLemmaGeneralWanted": {"to": "Combinatorics/probabilistic-combinatorics", "title": "Lovász local lemma"},
+  "WantedExt/Probability/ParisiFormulaWanted": {"to": "StatisticalMechanics/spin-glasses", "title": "Sherrington–Kirkpatrick model"},
   "WantedExt/Probability/PengLimitTheoremsWanted": {"to": "Probability/central-limit-theorems", "title": "Limit theorems under sublinear expectations"},
   "WantedExt/Probability/MulticommodityFlowWanted": {"to": "Probability/markov-chains", "title": "Canonical paths and multicommodity flow"},
   "WantedExt/Probability/Percolation/BurtonKeaneWanted": {"to": "Probability/percolation/phase-transition", "title": "Uniqueness of the infinite cluster"},
