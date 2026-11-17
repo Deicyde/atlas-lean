@@ -31,8 +31,9 @@ Hilbert space, where `V` can be taken unitary and `κ(V) = 1`.
 
 ## Main results
 
-* `one_le_norm_inverse_mul_norm_of_mem_spectrum_add`: the exclusion statement (a2) in any
-  complete normed algebra.
+* `one_le_norm_inverse_mul_of_mem_spectrum_add` and
+  `one_le_norm_inverse_mul_norm_of_mem_spectrum_add`: the exclusion statement (a2),
+  `1 ≤ ‖(μ - A)⁻¹ E‖ ≤ ‖(μ - A)⁻¹‖ ‖E‖`, in any complete normed algebra.
 * `exists_norm_sub_le_of_mem_spectrum_add`: the Bauer–Fike theorem (a1) for complex square
   matrices with the spectral (`L²` operator) norm.
 -/
@@ -44,23 +45,33 @@ namespace MathlibExt.Analysis.Matrix.BauerFikeDiagonalizable
 open MathlibExt.Analysis.Normed.Operator.LinearSystemPerturbation
 
 /-- **Bauer–Fike exclusion theorem.** In a complete normed algebra over a field `𝕜`, if `μ` is
-in the spectrum of `A + E` and `μ - A` is invertible, then `1 ≤ ‖(μ - A)⁻¹‖ ‖E‖`
-(Encyclopedia of Mathematics, *Bauer–Fike theorem*, inequality (a2)). -/
-theorem one_le_norm_inverse_mul_norm_of_mem_spectrum_add {𝕜 R : Type*} [Field 𝕜]
+in the spectrum of `A + E` and `μ - A` is invertible, then `1 ≤ ‖(μ - A)⁻¹ E‖`
+(Encyclopedia of Mathematics, *Bauer–Fike theorem*, the left-hand inequality of (a2)). -/
+theorem one_le_norm_inverse_mul_of_mem_spectrum_add {𝕜 R : Type*} [Field 𝕜]
     [NormedRing R] [CompleteSpace R] [Algebra 𝕜 R] {A E : R} {μ : 𝕜}
     (hμ : μ ∈ spectrum 𝕜 (A + E)) (hA : IsUnit (algebraMap 𝕜 R μ - A)) :
-    1 ≤ ‖Ring.inverse (algebraMap 𝕜 R μ - A)‖ * ‖E‖ := by
+    1 ≤ ‖Ring.inverse (algebraMap 𝕜 R μ - A) * E‖ := by
   obtain ⟨U, hU⟩ := hA
   by_contra hlt
   push Not at hlt
   apply hμ
-  have hsmall : ‖E‖ * ‖(↑U⁻¹ : R)‖ < 1 := by
-    rw [← hU, Ring.inverse_unit] at hlt
-    linarith [mul_comm ‖E‖ ‖(↑U⁻¹ : R)‖]
-  have := isUnit_sub U E hsmall
-  rw [hU] at this
+  rw [← hU, Ring.inverse_unit] at hlt
+  have h1 : IsUnit (1 - (↑U⁻¹ : R) * E) := (Units.oneSub _ hlt).isUnit
+  have h2 : algebraMap 𝕜 R μ - (A + E) = (U : R) * (1 - (↑U⁻¹ : R) * E) := by
+    rw [mul_sub, mul_one, ← mul_assoc, Units.mul_inv, one_mul, hU]
+    abel
   change IsUnit (algebraMap 𝕜 R μ - (A + E))
-  simpa [sub_sub] using this
+  rw [h2]
+  exact U.isUnit.mul h1
+
+/-- **Bauer–Fike exclusion theorem, product form.** Under the same hypotheses,
+`1 ≤ ‖(μ - A)⁻¹‖ ‖E‖` (Encyclopedia of Mathematics, *Bauer–Fike theorem*, the full chain (a2)).
+This weaker form is the one that gives the Bauer–Fike theorem for diagonalizable matrices. -/
+theorem one_le_norm_inverse_mul_norm_of_mem_spectrum_add {𝕜 R : Type*} [Field 𝕜]
+    [NormedRing R] [CompleteSpace R] [Algebra 𝕜 R] {A E : R} {μ : 𝕜}
+    (hμ : μ ∈ spectrum 𝕜 (A + E)) (hA : IsUnit (algebraMap 𝕜 R μ - A)) :
+    1 ≤ ‖Ring.inverse (algebraMap 𝕜 R μ - A)‖ * ‖E‖ :=
+  (one_le_norm_inverse_mul_of_mem_spectrum_add hμ hA).trans (norm_mul_le _ _)
 
 open scoped Matrix.Norms.L2Operator
 
