@@ -5,11 +5,11 @@ $$I(\theta)_{ij} = \int \frac{\partial_i p_\theta \, \partial_j p_\theta}{p_\the
 Let $T$ be an estimator with $\int T^2 p_\theta \, d\nu < \infty$ that is unbiased for $g(\theta')$ for $\theta'$ near $\theta$, and suppose that $\int p_{\theta'} \, d\nu$ and $\int T p_{\theta'} \, d\nu$ can be differentiated under the integral sign at $\theta$. Then
 $$\nabla g(\theta)^{\mathsf T} \, I(\theta)^{-1} \, \nabla g(\theta) \le \operatorname{Var}_\theta T = \int (T - g(\theta))^2 \, p_\theta \, d\nu .$$
 
-For $k = 1$ this is the [Cramér–Rao inequality](cramer-rao.md). The usual proof applies the Cauchy–Schwarz inequality to $T - g(\theta)$ and the directional score $\sum_i a_i \partial_i p_\theta / p_\theta$, giving $\langle a, \nabla g(\theta)\rangle^2 \le (a^{\mathsf T} I(\theta) a) \operatorname{Var}_\theta T$ for every $a$, and then takes $a = I(\theta)^{-1} \nabla g(\theta)$.
+For $k = 1$ this is the [Cramér–Rao inequality](cramer-rao.md). The Lean proof takes the [directional Cramér–Rao inequality](sq-inner-le-quad-form-mul.md), $\langle a, \nabla g(\theta)\rangle^2 \le (a^{\mathsf T} I(\theta) a) \operatorname{Var}_\theta T$ for every $a \in \mathbb R^k$, at $a = I(\theta)^{-1} \nabla g(\theta)$: both $\langle a, \nabla g\rangle$ and $a^{\mathsf T} I a$ then equal $c = \nabla g^{\mathsf T} I^{-1} \nabla g$, so $c^2 \le c \operatorname{Var}_\theta T$, and $c \le \operatorname{Var}_\theta T$ follows whether $c > 0$ or $c \le 0$.
 
 ## Background
 
-- [Cramér–Rao inequality, multiplicative form](sq-deriv-le-fisher-information-mul.md): the one-parameter inequality, which gives the directional bound when applied to the line $t \mapsto \theta + t a$.
+- [Directional Cramér–Rao inequality](sq-inner-le-quad-form-mul.md): the bound along each direction, from which this one follows by linear algebra.
 - [Hájek's convolution theorem](../asymptotic-efficiency-and-adaptive-estimation/hajek-convolution.md): the asymptotic counterpart, which bounds regular rather than unbiased estimators.
 
 ## Sources

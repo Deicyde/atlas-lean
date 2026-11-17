@@ -5,8 +5,9 @@
 - [Cramér–Rao inequality, multiplicative form](sq-deriv-le-fisher-information-mul.md)
 - [Cramér–Rao inequality](cramer-rao-general.md)
 - [Cramér–Rao inequality](cramer-rao.md)
-- [Wald's consistency theorem for maximum likelihood](ae-tendsto-maximum-likelihood.md)
+- [Directional Cramér–Rao inequality](sq-inner-le-quad-form-mul.md)
 - [Multiparameter Cramér–Rao inequality](cramer-rao-multiparameter.md)
+- [Wald's consistency theorem for maximum likelihood](ae-tendsto-maximum-likelihood.md)
 
 ## Related topics
 
