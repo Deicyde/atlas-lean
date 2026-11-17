@@ -6,4 +6,5 @@ Valiant's model of learning from random examples, on CSLib's PAC library (error,
 - [Occam bound for consistent learners](occam-bound-for-consistent-learners/README.md)
 - [Learning k-CNF by elimination](learning-k-cnf-by-elimination/README.md)
 - [The fundamental theorem of PAC learning](is-paclearnable-realizable-family-iff-ha.md)
+- [Weak learnability](weak-learnability/README.md)
 - [Risk of the 0-1 loss](risk-of-the-0-1-loss/README.md)
