@@ -11,3 +11,9 @@
 - [Exact cost of Rabin–Karp matching on repeated-symbol words](rabin-karp-matches-time-replicate.md)
 - [Rabin–Karp offsets on repeated-symbol words](rabin-karp-matches-ret-replicate.md)
 - [Matching cost of Rabin–Karp on repeated-symbol words](rabin-karp-matches-matching-time-replica.md)
+
+## Related topics
+
+- [Fingerprinting with irreducible polynomials](../../../FieldTheory/finite-fields/fingerprinting-with-irreducible-polynomials/README.md):
+  Rabin's fingerprints modulo a random irreducible polynomial over GF(2), with the counting bound
+  behind their error probability.

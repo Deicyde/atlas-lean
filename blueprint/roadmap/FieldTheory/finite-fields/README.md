@@ -2,6 +2,7 @@
 
 Finite fields and polynomials over them: irreducible and primitive polynomials, permutation polynomials, and the arithmetic of squares.
 
+- [Fingerprinting with irreducible polynomials](fingerprinting-with-irreducible-polynomials/README.md)
 - [Permutation polynomials](permutation-polynomials/README.md)
 - [Primitive polynomials over finite fields](primitive-polynomials-over-finite-fields/README.md)
 - [Searching for irreducible polynomials over GF(2)](searching-for-irreducible-polynomials-over-gf-2/README.md)
