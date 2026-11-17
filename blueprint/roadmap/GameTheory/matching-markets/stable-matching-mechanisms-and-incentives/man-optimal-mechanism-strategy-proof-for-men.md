@@ -2,7 +2,7 @@
 
 Let `h` be a matching mechanism that returns, for every stated profile, the man-optimal stable matching of that profile. Then truthful revelation is a dominant strategy for every man: no man can obtain a partner he truly prefers by misreporting, whatever the others state.
 
-This is the men's side of Roth's Theorem 5, which Roth states for either side; the women's side follows by exchanging the roles. Dubins and Freedman obtained the result independently (Roth 1982, footnote 4; their paper was not consulted for this page). The statement is recorded as wanted: Roth's proof follows the men-proposing algorithm step by step (§5, Lemmas 1 and 2).
+This is the men's side of Roth's Theorem 5, which Roth states for either side; the women's side follows by exchanging the roles. Roth's footnote 4 notes that related conclusions were developed independently by Dubins and Freedman (their paper, *Amer. Math. Monthly* 88 (1981), was not consulted for this page). The statement is recorded as wanted: Roth's proof follows the men-proposing algorithm step by step (§5, Lemmas 1 and 2).
 
 The hypothesis is satisfiable for markets of every size `n` with `n` men and `n` women: deferred acceptance is such a mechanism.
 

@@ -24009,7 +24009,7 @@
 "MathlibExt.GameTheory.Matching.StableMechanism.roth_isStable_manMisreport_iff": "42a6d16b22821999",
 "MathlibExt.GameTheory.Matching.StableMechanism.roth_isStable_womanMisreport_iff": "365fb29329a14d06",
 "MathlibExt.GameTheory.Matching.StableMechanism.roth_stable_mechanism_manipulable": "65c6390239dffd78",
-"MathlibExt.GameTheory.Matching.StableMechanismIncentivesWanted.isTruthfulDominantForMan_of_isManOptimalStable": "69d0ef6893c75d38",
+"MathlibExt.GameTheory.Matching.StableMechanismIncentivesWanted.isTruthfulDominantForMan_of_isManOptimalStable": "0f9be7d6b4cd9c64",
 "MathlibExt.GameTheory.Matching.StableMechanismIncentivesWanted.not_forall_lt_of_isManOptimalStable": "76f9d56e4119404c",
 "MathlibExt.GameTheory.MeanFieldEquilibrium.IsMeanFieldEquilibrium": "f172e961ec9bed78",
 "MathlibExt.GameTheory.MeanFieldEquilibrium.eq_of_isMeanFieldEquilibrium": "82aaadd40963c22c",

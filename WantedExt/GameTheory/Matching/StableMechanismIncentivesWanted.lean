@@ -19,9 +19,9 @@ Roth, "The economics of matching: stability and incentives", *Mathematics of Ope
 7(4) (1982), 617–628:
 
 * Theorem 5: in the mechanism that always yields the man-optimal stable matching, truthful
-  revelation is a dominant strategy for every man (obtained independently by Dubins and Freedman,
-  "Machiavelli and the Gale–Shapley algorithm", *Amer. Math. Monthly* 88 (1981), cited by Roth,
-  footnote 4).
+  revelation is a dominant strategy for every man. Roth's footnote 4 notes that related
+  conclusions were developed independently by Dubins and Freedman (published as "Machiavelli and
+  the Gale–Shapley algorithm", *Amer. Math. Monthly* 88 (1981); not consulted here).
 * Theorem 6: no perfect matching, stable or not, is strictly preferred by every man to the
   man-optimal stable matching.
 
@@ -38,7 +38,8 @@ open MathlibExt.Combinatorics.Matching.GaleShapley
 open MathlibExt.GameTheory.Matching.StableMechanism
 
 /-- **Strategy-proofness of the man-optimal stable mechanism for the men** (Roth, *Math. Oper.
-Res.* 7 (1982), Theorem 5; Dubins and Freedman, *Amer. Math. Monthly* 88 (1981)). If a mechanism
+Res.* 7 (1982), Theorem 5; related conclusions of Dubins and Freedman are cited in its footnote
+4). If a mechanism
 `h` always returns the man-optimal stable matching of the stated profile, then truthful
 revelation is a dominant strategy for every man. Roth states it for either side; this is the
 men's side, the women's side being symmetric. Such mechanisms exist whenever the two sides have
