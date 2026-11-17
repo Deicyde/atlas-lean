@@ -5115,6 +5115,7 @@
   "WantedExt/Combinatorics/DenseGridSquareErdosProblem658Wanted": {"to": "Combinatorics/additive-combinatorics/progressions-dense-sets", "title": "Squares in dense subsets of the grid"},
   "WantedExt/Combinatorics/DensityRestrictedSumsetShiftErdosProblem656Wanted": {"to": "Combinatorics/additive-combinatorics/additive-bases", "title": "Shifted sumsets in sets of positive density"},
   "WantedExt/Combinatorics/DescendingWaveColoringErdosProblem781Wanted": {"to": "Combinatorics/ramsey-theory/van-der-waerden-theorems", "title": "Monochromatic descending waves"},
+  "WantedExt/Combinatorics/DiscreteHolderBrascampLiebWanted": {"to": "Combinatorics/extremal-set-theory", "title": "Loomis–Whitney and Brascamp–Lieb inequalities"},
   "WantedExt/Combinatorics/DisjunctiveRadoWanted": {"to": "Combinatorics/ramsey-theory/schur-rado-theorems", "title": "Disjunctive Rado numbers"},
   "WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted": {"to": "Combinatorics/partially-ordered-sets", "title": "Chain polynomials of posets"},
   "WantedExt/Combinatorics/DivisorSumFreeSetLowerBoundWanted": {"to": "Combinatorics/additive-combinatorics/sum-free-sets", "title": "Divisor-sum-free sets"},

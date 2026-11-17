@@ -21308,6 +21308,7 @@
 "MathlibExt.Combinatorics.DescendingWaveColoringErdosProblem781Wanted.waveNumberCubicOrder_holds": "9834904c8fa893d1",
 "MathlibExt.Combinatorics.DescendingWaveColoringErdosProblem781Wanted.waveNumberQuadratic": "70fb8854efc86bf4",
 "MathlibExt.Combinatorics.DescendingWaveColoringErdosProblem781Wanted.waveNumberQuadratic_refuted": "0aa597d9c346e062",
+"MathlibExt.Combinatorics.DiscreteHolderBrascampLiebWanted.rank_le_iff_card_le_prod": "dc418afef0c99eb6",
 "MathlibExt.Combinatorics.DisjunctiveRadoWanted.exists_bounded_rep": "49bbce0b5b187cee",
 "MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.chainPolynomial": "049a65d5014bf9e0",
 "MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted": "e55d8a520b98e790",
