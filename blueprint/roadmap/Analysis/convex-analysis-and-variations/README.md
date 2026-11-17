@@ -17,6 +17,7 @@ Convex functions and sets in analysis and optimization: first-order and second-o
 - [Mirror-prox method](mirror-prox-method/README.md)
 - [Moreau decomposition](moreau-decomposition/README.md)
 - [Mountain pass theorem](mountain-pass-theorem/README.md)
+- [Nesterov smoothing](nesterov-smoothing/README.md)
 - [Newton's method for minimization](newton-s-method-for-minimization/README.md)
 - [Polar sets](polar-sets/README.md)
 - [Second-order condition for convexity](second-order-condition-for-convexity/README.md)
