@@ -8,6 +8,7 @@ Logics of necessity and possibility interpreted on Kripke models, their axiomati
 - [Modal μ-calculus](modal-calculus/README.md)
 - [Model-checking game for the modal μ-calculus](model-checking-game-for-the-modal-calculus/README.md)
 - [Normal modal logics](normal-modal-logics/README.md)
+- [Provability logic GL](provability-logic-gl/README.md)
 - [Propositional dynamic logic](propositional-dynamic-logic/README.md)
 - [Sahlqvist formulas](sahlqvist-formulas/README.md)
 - [Soundness and completeness of normal modal logics](soundness-and-completeness-of-normal-modal-logic/README.md)
