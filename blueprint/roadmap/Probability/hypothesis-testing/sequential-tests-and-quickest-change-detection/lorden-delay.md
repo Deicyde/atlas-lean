@@ -10,4 +10,4 @@ The ess-sup form and the form used here agree: for $Y \ge 0$ and a $\sigma$-alge
 ## Sources
 
 - T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §3, p. 316.
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §IV, equation (51) and footnote 3.
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §IV, equation (51) and footnote 3.

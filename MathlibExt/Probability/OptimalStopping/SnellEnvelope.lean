@@ -20,8 +20,8 @@ Let `G = (G n)` be an integrable reward sequence adapted to a filtration `𝒢` 
 space, and fix a horizon `N`. The *Snell envelope* is built by backward induction,
 `S N = G N` and `S n = max (G n) (E[S (n + 1) | 𝒢 n])` for `n < N` (Peskir and Shiryaev,
 *Optimal Stopping and Free-Boundary Problems*, Birkhäuser 2006, Chapter I, equations
-(1.1.6)–(1.1.7)). This file proves the parts of Peskir–Shiryaev Theorem 1.2 (finite horizon)
-that concern expectations:
+(1.1.6)–(1.1.7)). This file proves Peskir–Shiryaev Theorem 1.2 (finite horizon):
+(1.1.9)–(1.1.10) at every time `n ≤ N`, and (1.1.11)–(1.1.14) at `n = 0`. In detail:
 
 * the envelope is a supermartingale dominating the reward up to the horizon, and it is the
   smallest such sequence (statement (1.1.13));

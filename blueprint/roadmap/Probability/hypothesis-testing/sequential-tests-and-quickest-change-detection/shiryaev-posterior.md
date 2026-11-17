@@ -7,4 +7,4 @@ Under a geometric prior
 
 ## Sources
 
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §III-A, equations (12)–(14).
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §III-A, equations (12)–(14).

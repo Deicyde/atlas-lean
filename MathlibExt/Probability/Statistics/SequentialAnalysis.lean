@@ -11,6 +11,7 @@ module
 public import Mathlib.Probability.Process.HittingTime
 public import Mathlib.Probability.ProductMeasure
 public import Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym
+public import Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
 
 /-!
 # Sequential analysis: likelihood ratios, the SPRT, CUSUM and Shiryaev's statistic
@@ -20,8 +21,8 @@ values in a measurable space `X`, modelled on the coordinate space `ℕ → X` (
 observation `X_{i+1}`):
 
 * `MeasureTheory.observationFiltration X`: the filtration `σ(X₁, …, Xₙ)`;
-* `MeasureTheory.logLikelihoodRatio P₀ P₁` and `MeasureTheory.llrSum P₀ P₁`: the log-likelihood
-  ratio `log (dP₁/dP₀)` of one observation and its partial sums `Λₙ`;
+* `MeasureTheory.llrSum P₀ P₁`: the partial sums `Λₙ` of the log-likelihood ratio
+  `log (dP₁/dP₀)` of the observations, written with Mathlib's `MeasureTheory.llr P₁ P₀`;
 * `MeasureTheory.sprtTime P₀ P₁ a b`: Wald's sequential probability ratio test
   `N = inf {n ≥ 1 : Λₙ ≤ a or Λₙ ≥ b}` (Lai 2001, equation (2.1), with `a = log B`,
   `b = log A`);
@@ -64,15 +65,11 @@ noncomputable def observationFiltration (X : Type*) [MeasurableSpace X] :
   mono' _ _ hij := Filtration.mono _ (Finset.range_mono hij)
   le' n := Filtration.le _ (Finset.range n)
 
-/-- **Log-likelihood ratio of one observation.** For probability measures `P₀` and `P₁` on `X`,
-`log (dP₁/dP₀)(x)`, with the Radon–Nikodym derivative read in `ℝ`. -/
-noncomputable def logLikelihoodRatio (P₀ P₁ : Measure X) (x : X) : ℝ :=
-  Real.log (P₁.rnDeriv P₀ x).toReal
-
 /-- **Cumulative log-likelihood ratio.** `Λₙ = ∑_{i=1}^{n} log (dP₁/dP₀)(Xᵢ)`, the logarithm of
-the likelihood ratio `Rₙ` of the first `n` observations (`Λ₀ = 0`). -/
+the likelihood ratio `Rₙ` of the first `n` observations (`Λ₀ = 0`); each term is Mathlib's
+log-likelihood ratio `llr P₁ P₀ = log (dP₁/dP₀)`, with the Radon–Nikodym derivative read in `ℝ`. -/
 noncomputable def llrSum (P₀ P₁ : Measure X) (n : ℕ) (ω : ℕ → X) : ℝ :=
-  ∑ i ∈ Finset.range n, logLikelihoodRatio P₀ P₁ (ω i)
+  ∑ i ∈ Finset.range n, llr P₁ P₀ (ω i)
 
 /-- **Wald's sequential probability ratio test.** With log-boundaries `a < 0 < b`, the SPRT stops
 at `N = inf {n ≥ 1 : Λₙ ≤ a or Λₙ ≥ b}` (`⊤` if this never happens) and accepts `P₁` when
@@ -99,7 +96,7 @@ noncomputable def changePointLaw (P₀ P₁ : Measure X) (ν : ℕ) : Measure (�
 `log L = log (dP₁/dP₀)` (Veeravalli–Banerjee, equation (45)). -/
 noncomputable def pageCusum (P₀ P₁ : Measure X) : ℕ → (ℕ → X) → ℝ
   | 0 => fun _ => 0
-  | n + 1 => fun ω => max (pageCusum P₀ P₁ n ω + logLikelihoodRatio P₀ P₁ (ω n)) 0
+  | n + 1 => fun ω => max (pageCusum P₀ P₁ n ω + llr P₁ P₀ (ω n)) 0
 
 /-- **CUSUM alarm time.** For a threshold `c`, `N_c = inf {n ≥ 1 : W_n ≥ c}`
 (Veeravalli–Banerjee, equation (43)); `⊤` if no alarm is raised. -/
@@ -112,7 +109,7 @@ segment of the first `n` observations (the empty segment contributes `0`). -/
 theorem pageCusum_eq_sup (P₀ P₁ : Measure X) (n : ℕ) (ω : ℕ → X) :
     pageCusum P₀ P₁ n ω =
       (Finset.range (n + 1)).sup' Finset.nonempty_range_add_one
-        fun j => ∑ i ∈ Finset.Ico j n, logLikelihoodRatio P₀ P₁ (ω i) := by
+        fun j => ∑ i ∈ Finset.Ico j n, llr P₁ P₀ (ω i) := by
   induction n with
   | zero => simp [pageCusum]
   | succ n ih =>

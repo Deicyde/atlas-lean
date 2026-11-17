@@ -13,7 +13,7 @@ Veeravalli and Banerjee prove it through a Lagrangian relaxation $\min_\tau \mat
 
 ## Sources
 
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §III-A, equations (7)–(16) and Theorem 3.1, crediting A. N. Shiryaev, *On optimum methods in quickest detection problems*, Theory Probab. Appl. 8 (1963) 22–46, and *Optimal Stopping Rules*, Springer, 1978.
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §III-A, equations (7)–(16) and Theorem 3.1, crediting A. N. Shiryaev, *On optimum methods in quickest detection problems*, Theory Probab. Appl. 8 (1963) 22–46, and *Optimal Stopping Rules*, Springer, 1978 (originals not consulted; statement as given in that survey).
 
 ## Background
 

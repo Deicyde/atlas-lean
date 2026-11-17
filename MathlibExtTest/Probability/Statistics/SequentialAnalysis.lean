@@ -26,7 +26,7 @@ namespace MathlibExtTest.Probability.Statistics.SequentialAnalysis
 variable {X : Type*} [MeasurableSpace X] (P₀ P₁ : Measure X) (ω : ℕ → X)
 
 /-- First CUSUM step from the closed form. -/
-example : pageCusum P₀ P₁ 1 ω = max (logLikelihoodRatio P₀ P₁ (ω 0)) 0 := by
+example : pageCusum P₀ P₁ 1 ω = max (llr P₁ P₀ (ω 0)) 0 := by
   rw [pageCusum_eq_sup]
   simp [Finset.sup'_insert, Finset.range_add_one]
   rw [max_comm]
@@ -38,7 +38,7 @@ theorem pageCusum_nonneg (n : ℕ) : 0 ≤ pageCusum P₀ P₁ n ω := by
 
 /-- The cumulative log-likelihood ratio is additive in the observations. -/
 example (n : ℕ) :
-    llrSum P₀ P₁ (n + 1) ω = llrSum P₀ P₁ n ω + logLikelihoodRatio P₀ P₁ (ω n) := by
+    llrSum P₀ P₁ (n + 1) ω = llrSum P₀ P₁ n ω + llr P₁ P₀ (ω n) := by
   simp [llrSum, Finset.sum_range_succ]
 
 end MathlibExtTest.Probability.Statistics.SequentialAnalysis

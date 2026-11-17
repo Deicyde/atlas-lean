@@ -5,7 +5,6 @@ Observations $X_1, X_2, \dots$ arrive one at a time and the statistician decides
 ## Observations and likelihood ratios
 
 - [Filtration of the first `n` observations](observation-filtration.md)
-- [Log-likelihood ratio of one observation](log-likelihood-ratio.md)
 - [Cumulative log-likelihood ratio](llr-sum.md)
 - [The cumulative log-likelihood ratio is adapted](adapted-llr-sum.md)
 - [Density of a finite product of absolutely continuous laws](pi-eq-with-density-rn-deriv.md)

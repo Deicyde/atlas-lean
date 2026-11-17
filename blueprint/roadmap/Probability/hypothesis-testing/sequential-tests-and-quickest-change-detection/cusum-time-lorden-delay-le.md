@@ -11,8 +11,8 @@ statistic `W_n` used here (Veeravalli–Banerjee, remark after equation (48)).
 
 ## Sources
 
-- T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §3, p. 316, statement of Moustakides' theorem (G. V. Moustakides, *Optimal stopping times for detecting changes in distributions*, Ann. Statist. 14 (1986) 1379–1387, which I did not read) and of Lorden's asymptotic result (G. Lorden, *Procedures for reacting to a change in distribution*, Ann. Math. Statist. 42 (1971) 1897–1908).
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §IV, after (53), and §IV-B, Corollary 3.
+- T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §3, p. 316, statement of Moustakides' theorem (G. V. Moustakides, *Optimal stopping times for detecting changes in distributions*, Ann. Statist. 14 (1986) 1379–1387; original not consulted, statement as given in Lai 2001) and of Lorden's asymptotic result (G. Lorden, *Procedures for reacting to a change in distribution*, Ann. Math. Statist. 42 (1971) 1897–1908; original not consulted).
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §IV, after (53), and §IV-B, Corollary 3.
 
 ## Background
 

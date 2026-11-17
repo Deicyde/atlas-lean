@@ -111,10 +111,6 @@ theorem infinitePi_apply_eq_setLIntegral_prod_rnDeriv (P₀ P₁ : Measure X) [I
       (Measure.measurable_rnDeriv _ _).comp (measurable_pi_apply i)
 
 
-theorem measurable_logLikelihoodRatio (P₀ P₁ : Measure X) :
-    Measurable (logLikelihoodRatio P₀ P₁) :=
-  (Measure.measurable_rnDeriv _ _).ennreal_toReal.log
-
 /-- **The cumulative log-likelihood ratio is adapted.** `Λₙ` is measurable with respect to
 `σ(X₁, …, Xₙ)`, so the SPRT decides after `n` observations from those observations only (Lai 2001,
 §2, equation (2.1)). -/
@@ -122,15 +118,15 @@ theorem adapted_llrSum (P₀ P₁ : Measure X) :
     Adapted (observationFiltration X) (llrSum P₀ P₁) := by
   intro n
   change Measurable[MeasurableSpace.pi.comap (range n).restrict] (llrSum P₀ P₁ n)
-  have hg : Measurable fun x : (range n) → X => ∑ i : range n, logLikelihoodRatio P₀ P₁ (x i) :=
+  have hg : Measurable fun x : (range n) → X => ∑ i : range n, llr P₁ P₀ (x i) :=
     Finset.measurable_sum _ fun i _ =>
-      (measurable_logLikelihoodRatio P₀ P₁).comp (measurable_pi_apply i)
+      (measurable_llr P₁ P₀).comp (measurable_pi_apply i)
   have : llrSum P₀ P₁ n =
-      (fun x : (range n) → X => ∑ i : range n, logLikelihoodRatio P₀ P₁ (x i)) ∘
+      (fun x : (range n) → X => ∑ i : range n, llr P₁ P₀ (x i)) ∘
         (range n).restrict := by
     funext ω
     simp only [llrSum, Function.comp_apply, Finset.restrict]
-    exact (Finset.sum_coe_sort (range n) (fun i => logLikelihoodRatio P₀ P₁ (ω i))).symm
+    exact (Finset.sum_coe_sort (range n) (fun i => llr P₁ P₀ (ω i))).symm
   rw [this]
   exact hg.comp (comap_measurable _)
 
@@ -159,7 +155,7 @@ private theorem prod_rnDeriv_eq_ofReal_exp (P₀ P₁ : Measure X) (n : ℕ) {ω
   refine prod_congr rfl fun i _ => ?_
   have hpos : 0 < (P₁.rnDeriv P₀ (ω i)).toReal :=
     ENNReal.toReal_pos (hω i).1.ne' (hω i).2.ne
-  rw [logLikelihoodRatio, Real.exp_log hpos, ENNReal.ofReal_toReal (hω i).2.ne]
+  rw [llr, Real.exp_log hpos, ENNReal.ofReal_toReal (hω i).2.ne]
 
 
 /-- **Wald's inequality on the acceptance of the null hypothesis.** For the SPRT with

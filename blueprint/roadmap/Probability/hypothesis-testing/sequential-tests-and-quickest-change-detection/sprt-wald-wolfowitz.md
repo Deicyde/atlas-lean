@@ -12,7 +12,7 @@ The expected sample sizes are lower integrals in $[0, \infty]$, so the statement
 
 ## Sources
 
-- T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §2, p. 305 (statement of the Wald–Wolfowitz theorem, with reference to A. Wald and J. Wolfowitz, *Optimum character of the sequential probability ratio test*, Ann. Math. Statist. 19 (1948) 326–339, which I did not read).
+- T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §2, p. 305 (statement of the Wald–Wolfowitz theorem, with reference to A. Wald and J. Wolfowitz, *Optimum character of the sequential probability ratio test*, Ann. Math. Statist. 19 (1948) 326–339; original not consulted, statement as given in Lai 2001).
 - B. Eisenberg, *Sequential probability ratio test*, Encyclopedia of Mathematics (online), equations (a1)–(a3), the paragraph after (a3).
 
 ## Background

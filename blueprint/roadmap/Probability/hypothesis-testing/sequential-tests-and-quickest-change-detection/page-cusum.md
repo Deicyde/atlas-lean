@@ -5,4 +5,4 @@
 
 ## Sources
 
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §IV, equations (43)–(45), crediting E. S. Page (1954).
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §IV, equations (43)–(45), crediting E. S. Page (1954).

@@ -7,5 +7,5 @@ first post-change observation, the convention of Lai 2001, §3, and of Veeravall
 
 ## Sources
 
-- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (a survey chapter; I read the revised arXiv version dated 27 November 2024), §III-A (the i.i.d. Bayesian setting).
+- V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (survey chapter; cited from the revised arXiv version dated 27 November 2024), §III-A (the i.i.d. Bayesian setting).
 - T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica 11 (2001) 303–408, §3, p. 315 (the model $P^{(\nu)}$).
