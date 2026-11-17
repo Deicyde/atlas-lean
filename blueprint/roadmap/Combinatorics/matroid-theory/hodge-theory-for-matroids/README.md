@@ -42,3 +42,6 @@ theorem, the Hodge–Riemann relations and the mixed-degree formula are wanted s
 - [Tropical varieties](../../../AlgebraicGeometry/varieties-and-projective-geometry/tropical-varieties/README.md):
   the Chow ring of $M$ is the Chow ring of the toric variety of its Bergman fan, the tropical
   linear space of $M$.
+- [Face numbers of convex polytopes](../../polytopes-simplicial-complexes/face-numbers-of-convex-polytopes/README.md):
+  the face numbers of simplicial polytopes, where McMullen's hard Lefschetz theorem for simple
+  polytopes, the model for the proof here, gives the necessity part of the g-theorem.
