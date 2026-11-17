@@ -20,7 +20,8 @@ A two-state SSP with one action: from state `0` the system moves to state `1` wi
 `1/2` and terminates otherwise, at reward `-1` (cost `1`); from state `1` it terminates at once, at
 reward `-2`. The unique policy is proper, its value is `(-2, -2)` (cost `2` from either state), and
 the hypotheses of the wanted Bellman theorem hold (all policies are proper). A self-loop with
-probability `1` gives an improper policy.
+probability `1` gives an improper policy, and the SSP of a discounted MDP has only proper policies,
+with the discounted values.
 -/
 
 set_option autoImplicit false
@@ -72,10 +73,18 @@ example (μ : St → Unit) : ¬ Proper loop μ := by
   have := h 0
   simp [transitionMatrix, sq, Matrix.mul_apply, loop] at this
 
+/-- A discounted MDP is an SSP in which every policy is proper, with the same values. -/
+example (M : MDP St Unit ℝ) (γ : ℝ) (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1)
+    (μ : St → Unit) :
+    Proper (M.toSSP γ) μ ∧ sspValue (M.toSSP γ) μ = policyValue M γ hM hγ0 hγ1 μ :=
+  ⟨proper_toSSP hM hγ0 hγ1 μ, sspValue_toSSP hM hγ0 hγ1 μ⟩
+
 #print axioms contractingWith_policyBellman_iterate
 #print axioms tendsto_policyBellman_iterate
 #print axioms policyBellman_sspValue
 #print axioms eq_sspValue_of_policyBellman_eq
 #print axioms tendsto_sum_pow_mulVec
+#print axioms proper_toSSP
+#print axioms sspValue_toSSP
 
 end Cslib.Algorithms.Lean.MarkovDecision

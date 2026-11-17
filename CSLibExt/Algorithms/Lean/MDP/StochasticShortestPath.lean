@@ -39,6 +39,11 @@ positive probability within `n = |S|` stages: every row sum of `P_μ ^ n` is `< 
 * `tendsto_sum_pow_mulVec`: `sspValue M μ` is the total expected reward until termination,
   `∑_{k ≥ 0} P_μ^k r_μ`.
 
+A discounted problem is an SSP in which the system terminates with probability `1 - γ` at every
+stage (`MDP.toSSP`; Bertsekas, *A Course in Reinforcement Learning*, 2nd ed., Section 1.4,
+item (b)): every policy is then proper (`proper_toSSP`) and its SSP value is its discounted value
+(`sspValue_toSSP`).
+
 Bellman's equation for the optimal value under the strong SSP conditions is recorded in
 `WantedExt.ComputerScience.StochasticShortestPathWanted`.
 -/
@@ -181,6 +186,8 @@ theorem contractingWith_policyBellman_iterate (hM : M.Substochastic) {μ : S →
           (transitionMatrix_pow_nonneg_and_sum_le hM μ _).1 s s'⟩ : NNReal)) (Finset.mem_univ s)
     exact this
 
+section Proper
+
 variable (hM : M.Substochastic) {μ : S → A} (hμ : Proper M μ)
 include hM hμ
 
@@ -255,5 +262,68 @@ theorem tendsto_sum_pow_mulVec :
     Tendsto (fun N => ∑ k ∈ Finset.range N, (transitionMatrix M μ ^ k) *ᵥ
       fun s => M.reward s (μ s)) atTop (𝓝 (sspValue M μ)) := by
   simpa only [policyBellman_iterate_zero] using tendsto_policyBellman_iterate hM hμ 0
+
+end Proper
+
+section Discounted
+
+variable {γ : ℝ}
+
+/-! ## Discounted problems as stochastic shortest path problems -/
+
+/-- **A discounted MDP as a stochastic shortest path problem.** The MDP with the same rewards and
+transition probabilities `γ * M.prob s a s'`: at every stage the system terminates with
+probability `1 - γ`, and otherwise moves as in `M`. -/
+def MDP.toSSP (M : MDP S A ℝ) (γ : ℝ) : MDP S A ℝ where
+  reward := M.reward
+  prob s a s' := γ * M.prob s a s'
+
+
+omit [DecidableEq S] in
+/-- **The SSP of a discounted MDP is substochastic**: for a stochastic MDP and `0 ≤ γ ≤ 1`, the
+transition probabilities `γ * M.prob s a s'` are nonnegative with row sums `γ ≤ 1`. -/
+theorem MDP.toSSP_substochastic (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ ≤ 1) :
+    (M.toSSP γ).Substochastic := by
+  refine ⟨fun s a s' => mul_nonneg hγ0 (hM.1 s a s'), fun s a => ?_⟩
+  simp only [MDP.toSSP, ← Finset.mul_sum, hM.2 s a, mul_one]
+  exact hγ1
+
+omit [DecidableEq S] in
+/-- **The undiscounted Bellman operator of the SSP is the discounted one**:
+`policyBellman (M.toSSP γ) 1 μ = policyBellman M γ μ`. -/
+theorem policyBellman_toSSP (μ : S → A) :
+    policyBellman (M.toSSP γ) 1 μ = policyBellman M γ μ := by
+  funext V s
+  simp only [policyBellman, qValue, MDP.toSSP, one_mul, Finset.mul_sum, mul_assoc]
+
+/-- **Every policy of a discounted MDP is proper in its SSP**: for a stochastic MDP and
+`0 ≤ γ < 1`, termination has probability at least `1 - γ ^ |S| > 0` within `|S|` stages. -/
+theorem proper_toSSP (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1) (μ : S → A) :
+    Proper (M.toSSP γ) μ := by
+  intro s
+  have hn : 0 < Fintype.card S := Fintype.card_pos_iff.2 ⟨s⟩
+  have hP : transitionMatrix (M.toSSP γ) μ = γ • transitionMatrix M μ := by
+    ext i j; simp [transitionMatrix, MDP.toSSP]
+  have hsub : M.Substochastic := ⟨hM.1, fun s a => (hM.2 s a).le⟩
+  rw [hP, smul_pow]
+  simp only [Matrix.smul_apply, smul_eq_mul, ← Finset.mul_sum]
+  calc γ ^ Fintype.card S * ∑ s', (transitionMatrix M μ ^ Fintype.card S) s s'
+      ≤ γ ^ Fintype.card S * 1 :=
+        mul_le_mul_of_nonneg_left ((transitionMatrix_pow_nonneg_and_sum_le hsub μ _).2 s)
+          (pow_nonneg hγ0 _)
+    _ < 1 := by rw [mul_one]; exact pow_lt_one₀ hγ0 hγ1 hn.ne'
+
+omit [DecidableEq S] in
+/-- **The SSP value of a discounted MDP's policy is its discounted value**: for a stochastic MDP
+and `0 ≤ γ < 1`, `sspValue (M.toSSP γ) μ = policyValue M γ μ`. -/
+theorem sspValue_toSSP (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1) (μ : S → A) :
+    sspValue (M.toSSP γ) μ = policyValue M γ hM hγ0 hγ1 μ := by
+  classical
+  refine (eq_sspValue_of_policyBellman_eq (M.toSSP_substochastic hM hγ0 hγ1.le)
+    (proper_toSSP hM hγ0 hγ1 μ) ?_).symm
+  rw [policyBellman_toSSP]
+  exact policyBellman_policyValue hM hγ0 hγ1 μ
+
+end Discounted
 
 end Cslib.Algorithms.Lean.MarkovDecision
