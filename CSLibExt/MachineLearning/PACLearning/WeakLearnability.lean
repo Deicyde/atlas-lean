@@ -19,7 +19,7 @@ fixed accuracy `ε < 1 / 2`, slightly better than random guessing, but at every 
 197–227, Section 2). CSLib's `IsPACLearnerFor` counts examples and imposes no running time, so this
 is the sample-complexity form of the notion. It matches the standard notion only over realizable
 distributions: `IsPACLearnerFor` measures error above the optimum of the class, which is `0`
-exactly in the realizable case. Schapire's definition also asks for polynomial running time and
+in the realizable case. Schapire's definition also asks for polynomial running time and
 an inverse-polynomial advantage in the size parameters.
 
 Main results:
