@@ -28,3 +28,4 @@ In a repeated game with vector payoffs, a closed convex set is approachable when
 - [Von Neumann's minimax theorem](../von-neumann-s-minimax-theorem/README.md): Blackwell's theorem is a vector analogue; a half-space is enforceable when a scalarised game has the right minimax value.
 - [Correlated equilibria](../correlated-equilibria/README.md): approaching the nonpositive orthant of conditional regrets leads to them.
 - [No-regret dynamics](../no-regret-dynamics/README.md): approaching the orthant of unconditional regrets gives Hannan-consistent strategies.
+- [Adaptive heuristics](../adaptive-heuristics/README.md): regret matching, a heuristic descendant of the Blackwell strategy.

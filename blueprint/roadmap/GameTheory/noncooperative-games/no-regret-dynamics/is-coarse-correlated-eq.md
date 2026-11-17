@@ -7,6 +7,13 @@ $$\mathbb E_{s \sim \sigma}[c_i(s)] \le \mathbb E_{s \sim \sigma}[c_i(a, s_{-i})
 for every player $i$ and every strategy $a \in S_i$. For $\varepsilon = 0$ these contain the
 correlated equilibria, the mixed Nash equilibria and the pure Nash equilibria.
 
+## Background
+
+- [Correlated equilibria are coarse correlated equilibria](../correlated-equilibria/is-coarse-correlated-eq.md):
+  the inclusion of the correlated equilibria, proved.
+- [Correlated equilibrium](../correlated-equilibria/is-correlated-eq.md): the conditional notion,
+  where a player may deviate depending on its recommendation.
+
 ## Sources
 
 - T. Roughgarden, "Intrinsic robustness of the price of anarchy", J. ACM 62(5) (2015), Article 32, §3.1,

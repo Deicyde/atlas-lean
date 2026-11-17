@@ -13,6 +13,11 @@ distribution to the set of correlated equilibria.
 - [Regret-invariant mixed action](is-regret-invariant.md): the hypothesis, used to telescope the
   double sum.
 
+## Background
+
+- [Blackwell approachability](../blackwell-approachability/README.md): the theorem this condition
+  feeds.
+
 ## Sources
 
 - S. Hart and A. Mas-Colell, "A simple adaptive procedure leading to correlated equilibrium", Econometrica 68(5) (2000), 1127–1150, §3, proof of Theorem A, (3.3).

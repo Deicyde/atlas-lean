@@ -44,4 +44,6 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 
 - [Nash's theorem](../nash-s-theorem/README.md): mixed Nash equilibria, the product correlated equilibria.
 - [No-regret dynamics](../no-regret-dynamics/README.md): coarse correlated equilibria (the Hannan set), which contain the correlated equilibria, and the unconditional regrets that lead to them.
+- [Adaptive heuristics](../adaptive-heuristics/README.md): regret matching, whose empirical play converges to the set of correlated equilibria.
+- [Blackwell approachability](../blackwell-approachability/README.md): the tool that makes conditional regrets vanish.
 - [Linear programming](../../../Geometry/convex-geometry/linear-programming/README.md): the correlated equilibria are the feasible set of a linear program, and linear duality proves that it is nonempty (Hart and Schmeidler 1989).

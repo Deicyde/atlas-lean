@@ -12,3 +12,5 @@ Neumann's minimax theorem; potential games even have pure equilibria.
 - [Von Neumann's minimax theorem](../von-neumann-s-minimax-theorem/README.md): the two-player zero-sum case, proved.
 - [Potential games](../potential-games/README.md): games in which a pure equilibrium exists.
 - [No-regret dynamics](../no-regret-dynamics/README.md): coarse correlated equilibria, which contain the mixed Nash equilibria and are reached by learning.
+- [Correlated equilibria](../correlated-equilibria/README.md): mixed Nash equilibria are the product correlated equilibria.
+- [Adaptive heuristics](../adaptive-heuristics/README.md): uncoupled dynamics cannot guarantee convergence to Nash equilibria.

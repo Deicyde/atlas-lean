@@ -20,3 +20,5 @@ When a game is played repeatedly and every player uses a no-regret learning algo
 - [Potential games](../potential-games/README.md): pure Nash equilibria and best-response dynamics, the equilibria that no-regret outcomes generalise.
 - [Von Neumann's minimax theorem](../von-neumann-s-minimax-theorem/README.md): in two-player zero-sum games, no-regret play approaches the value of the game.
 - [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): a smooth class of games, with robust price of anarchy $5/2$.
+- [Correlated equilibria](../correlated-equilibria/README.md): the conditional version, reached when conditional regrets vanish; correlated equilibria are coarse correlated equilibria.
+- [Blackwell approachability](../blackwell-approachability/README.md): the vector-payoff theorem behind regret-based strategies.
