@@ -6,6 +6,7 @@ A real function $f$ is operator convex when $f(tA + (1-t)B) \le t f(A) + (1-t) f
 - [The square is not operator monotone](not-monotone-sq.md)
 - [Convex-combination identity for squares](smul-sq-add-smul-sq-sub-sq.md)
 - [The square is operator convex](sq-convex-comb-le.md)
+- [Operator convexity of `t ^ p` for `1 ≤ p ≤ 2` (Loewner–Heinz)](convex-on-cfc-rpow.md)
 
 ## Related topics
 

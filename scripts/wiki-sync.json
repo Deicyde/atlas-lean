@@ -43613,6 +43613,7 @@
 "PerronKernel.vert_side_bound_left": "70f320cf8fa1118d",
 "PerronKernel.vert_side_bound_right": "69cf22dd7cfd0336",
 "PhyslibExt.QuantumInfo.LiebConcavity.lieb_concavity_trace_rpow": "ebcb227483ae2140",
+"PhyslibExt.QuantumInfo.LownerHeinz.convexOn_cfc_rpow": "bf4abb0ad8de7618",
 "PiFieldQuotient.exists_algEquiv": "9e39fe30928d2bdb",
 "PiFieldQuotient.exists_algEquiv_restrict": "d04c89f1ff5fd763",
 "PiFieldQuotient.exists_indexEquiv_algEquiv": "98f3bb5e5ee7b10a",

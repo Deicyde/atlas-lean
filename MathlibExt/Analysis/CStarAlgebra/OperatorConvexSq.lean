@@ -29,7 +29,10 @@ counterexample showing that `t ↦ t²` is *not* operator monotone, although it 
 Mathlib already proves the rest of the basic theory in C⋆-algebras: `CFC.monotone_rpow` and
 `CFC.concaveOn_rpow` (`t ↦ t ^ p` is operator monotone and operator concave for `p ∈ [0, 1]`),
 `CFC.log_le_log` and `CFC.concaveOn_log`, `CStarAlgebra.inv_le_inv` (`t ↦ -t⁻¹` is operator
-monotone) and `CStarAlgebra.convexOn_ringInverse` (`t ↦ t⁻¹` is operator convex).
+monotone) and `CStarAlgebra.convexOn_ringInverse` (`t ↦ t⁻¹` is operator convex). Physlib proves
+the convex half, `t ↦ t ^ p` operator convex on positive elements of a nontrivial C⋆-algebra for
+`p ∈ [1, 2]`, as `LownerHeinzCore.power_Icc_one_two_operatorConvexOn_Ici`; the result here is
+not subsumed by it, since it holds on all self-adjoint elements of any star-ordered real algebra.
 -/
 
 @[expose] public section
