@@ -29810,6 +29810,7 @@
 "MathlibExt.Probability.pgf_zero": "946b1c3594cc39b1",
 "MathlibExt.Probability.variance_sample_mean_of_iid": "f44c718915e12dce",
 "MathlibExt.QuantumInformation.Finite.KnillLaflamme.IsCorrectable": "44ed9f67487fcf26",
+"MathlibExt.QuantumInformation.Finite.KnillLaflamme.isCorrectable_iff_knillLaflamme": "b7eefc7e0cdad242",
 "MathlibExt.QuantumInformation.Finite.KnillLaflamme.knillLaflamme_of_isCorrectable": "19fc412168de8dd1",
 "MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three": "ba359f58f8b86cb2",
 "MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_linear": "a2ed796edbe948ad",

@@ -21,8 +21,8 @@ public import Mathlib.Data.Fin.VecNotation
 * The bit flip together with the identity is not correctable on the whole qubit space: the
   necessary condition fails because `X` is not a multiple of `1`.
 * On two qubits, the code spanned by `|00⟩` and `|11⟩` satisfies the Knill–Laflamme conditions
-  for the errors `{1, X ⊗ 1}`, so the hypotheses of the wanted sufficiency theorem are jointly
-  satisfiable by a nontrivial code.
+  for the errors `{1, X ⊗ 1}`, so the hypotheses of the sufficiency theorem are jointly
+  satisfiable by a nontrivial code, and the sufficiency theorem makes these errors correctable.
 -/
 
 @[expose] public section
@@ -56,9 +56,9 @@ def codeP : Matrix (Fin 4) (Fin 4) ℂ := Matrix.diagonal ![1, 0, 0, 1]
 def flipFirst : Matrix (Fin 4) (Fin 4) ℂ :=
   !![0, 0, 1, 0; 0, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0]
 
-/-- The Knill–Laflamme conditions hold for the code `span {|00⟩, |11⟩}` and errors
+/- The Knill–Laflamme conditions hold for the code `span {|00⟩, |11⟩}` and errors
 `{1, X ⊗ 1}`. -/
-example : codePᴴ = codeP ∧ codeP * codeP = codeP ∧
+private theorem codeP_knillLaflamme : codePᴴ = codeP ∧ codeP * codeP = codeP ∧
     ∀ a b : Fin 2, ∃ c : ℂ, codeP * (![1, flipFirst] a)ᴴ * ![1, flipFirst] b * codeP = c • codeP := by
   refine ⟨?_, ?_, ?_⟩
   · ext i j; fin_cases i <;> fin_cases j <;> simp [codeP]
@@ -75,5 +75,18 @@ example : codePᴴ = codeP ∧ codeP * codeP = codeP ∧
     · exact ⟨1, by
         ext i j; fin_cases i <;> fin_cases j <;>
           simp [codeP, flipFirst, Matrix.mul_apply, Fin.sum_univ_four]⟩
+
+/-- Sufficiency applied to a nontrivial code: `{1, X ⊗ 1}` is correctable on
+`span {|00⟩, |11⟩}`. -/
+example : IsCorrectable codeP ![1, flipFirst] :=
+  MathlibExt.QuantumInformation.KnillLaflammeWanted.isCorrectable_of_knillLaflamme codeP
+    codeP_knillLaflamme.1 codeP_knillLaflamme.2.1 _ codeP_knillLaflamme.2.2
+
+/-- The combined statement, read in the necessity direction on the same code. -/
+example : ∀ a b : Fin 2, ∃ c : ℂ,
+    codeP * (![1, flipFirst] a)ᴴ * ![1, flipFirst] b * codeP = c • codeP :=
+  (isCorrectable_iff_knillLaflamme codeP_knillLaflamme.1 codeP_knillLaflamme.2.1).1
+    (MathlibExt.QuantumInformation.KnillLaflammeWanted.isCorrectable_of_knillLaflamme codeP
+      codeP_knillLaflamme.1 codeP_knillLaflamme.2.1 _ codeP_knillLaflamme.2.2)
 
 end KnillLaflammeTest
