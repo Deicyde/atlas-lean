@@ -9,3 +9,4 @@ Representations of collections with their invariants, operations and costs (wors
 - [Range-query and spatial structures](range-query-structures/README.md)
 - [Tries, suffix structures and integer dictionaries](tries-and-integer-dictionaries/README.md)
 - [Disjoint sets and dynamic trees](disjoint-sets-and-dynamic-trees/README.md)
+- [Amortized analysis](amortized-analysis/README.md)
