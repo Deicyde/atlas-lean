@@ -2,6 +2,7 @@
 
 Erdős–Ko–Rado and its variants, Chvátal's conjecture, forbidden and singleton intersections, comparable pairs, union-free and union-closed families, shadows (Kruskal–Katona, Macaulay), Harper's isoperimetric inequality, and sunflower bounds.
 
+- [Bollobás's set-pairs inequality](bollob-s-s-set-pairs-inequality/README.md)
 - [Chvátal's conjecture](chv-tal-s-conjecture/README.md)
 - [Comparable pairs in set families](comparable-pairs-in-set-families/README.md)
 - [Erdős–Ko–Rado for d-cluster-free families](erd-s-ko-rado-for-d-cluster-free-families/README.md)
