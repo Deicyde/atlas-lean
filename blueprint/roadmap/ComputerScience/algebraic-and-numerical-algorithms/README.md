@@ -12,5 +12,6 @@ Algorithms on numbers, polynomials and matrices: integer and polynomial multipli
 - [Matrix multiplication algorithms](matrix-multiplication-algorithms/README.md)
 - [Modular exponentiation](modular-exponentiation/README.md)
 - [Miller–Rabin primality test](miller-rabin-primality-test/README.md)
+- [Rounding error analysis](rounding-error-analysis/README.md)
 - [Solving linear congruences](solving-linear-congruences/README.md)
 - [Strassen algorithm](strassen-algorithm/README.md)
