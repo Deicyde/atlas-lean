@@ -12,7 +12,8 @@ natural, and entropy and divergence are written as explicit finite sums.
 
 The exponential bounds give Sanov's theorem for finite alphabets: the probability that the
 empirical distribution of $n$ draws from $Q$ falls in a set $\Gamma$ is
-$\exp(-n D(\Gamma \| Q) + O(\log n))$ whenever the types in $\Gamma$ approach its infimum.
+$\exp(-n D(\Gamma \| Q) + o(n))$ under Csiszár's condition (III.21), that the divergences of the
+$n$-types in $\Gamma$ approach $D(\Gamma \| Q)$ for large $n$.
 
 - [Type of a sequence](seq-type.md)
 - [Type class](type-class.md)
@@ -30,6 +31,16 @@ $\exp(-n D(\Gamma \| Q) + O(\log n))$ whenever the types in $\Gamma$ approach it
 - [Lower bound on the probability of a type class](exp-le-card-sym-mul-iid-prob-type-class.md)
 - [Lower bound on the probability of a type class, polynomial form](exp-le-pow-mul-iid-prob-type-class.md)
 - [The type class of `P` is the most likely one under `Pⁿ`](iid-prob-empirical-type-class-le.md)
+- [The Sanov event as a union of type classes](iid-prob-empirical-mem-eq-sum.md)
+- [Sanov's upper bound, non-asymptotic](iid-prob-empirical-mem-le.md)
+- [Sanov's lower bound, non-asymptotic](exp-le-pow-mul-iid-prob-empirical-mem.md)
+- [The number of types is subexponential](eventually-pow-card-le-exp.md)
+- [Sanov's upper bound, asymptotic form](eventually-iid-prob-empirical-mem-le.md)
+- [Sanov's lower bound, asymptotic form](eventually-exp-le-iid-prob-empirical-mem.md)
+- [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md)
+- [Gibbs' conditioning principle, finite alphabet](gibbs-conditioning-principle.md)
+- [Entropy in nats and the repository's entropy in bits](entropy-in-nats-and-bits.md)
+- [Empirical distribution of a type agrees with the empirical measure](empirical-agrees-with-sample-empirical-measure.md)
 - [A letter count is at most the length](count-le.md)
 - [Letter counts of a sequence](count-seq-type.md)
 - [The empirical distribution is nonnegative](empirical-nonneg.md)
@@ -53,16 +64,6 @@ $\exp(-n D(\Gamma \| Q) + O(\log n))$ whenever the types in $\Gamma$ approach it
 ## Related topics
 
 - [Shannon entropy and Kullback–Leibler divergence](../shannon-entropy-and-kullback-leibler-divergence/README.md):
-- [Gibbs' conditioning principle, finite alphabet](gibbs-conditioning-principle.md)
-- [Empirical distribution of a type agrees with the empirical measure](empirical-agrees-with-sample-empirical-measure.md)
-- [Sanov's lower bound, asymptotic form](eventually-exp-le-iid-prob-empirical-mem.md)
-- [Sanov's upper bound, asymptotic form](eventually-iid-prob-empirical-mem-le.md)
-- [The number of types is subexponential](eventually-pow-card-le-exp.md)
-- [Sanov's lower bound, non-asymptotic](exp-le-pow-mul-iid-prob-empirical-mem.md)
-- [The Sanov event as a union of type classes](iid-prob-empirical-mem-eq-sum.md)
-- [Sanov's upper bound, non-asymptotic](iid-prob-empirical-mem-le.md)
-- [Entropy in nats and the repository's entropy in bits](entropy-in-nats-and-bits.md)
-- [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md)
   the entropy and divergence that the type-class bounds are expressed in.
 - [Sanov's theorem](../../../Probability/large-deviations/sanov-s-theorem/README.md): the large deviation
   principle for empirical measures on Polish spaces, whose finite-alphabet case is proved on this
