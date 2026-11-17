@@ -22,3 +22,7 @@
 - [Optional stopping for martingales at two bounded stopping times](expected-stopped-value-eq.md)
 - [Optional stopping for martingales at a bounded stopping time](expected-stopped-value-eq-zero.md)
 - [Optional stopping theorem in continuous time](stopped-value-ae-eq-cond-exp-of-le-of-co.md)
+
+## Related topics
+
+- [Optimal stopping and the Snell envelope](../optimal-stopping-and-the-snell-envelope/README.md): choosing the stopping time to maximise the expected gain; the optimality proof applies bounded optional stopping to the Snell envelope.
