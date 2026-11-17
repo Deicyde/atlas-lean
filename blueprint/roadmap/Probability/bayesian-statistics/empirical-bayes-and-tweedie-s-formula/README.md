@@ -2,7 +2,7 @@
 
 In the Gaussian location model a parameter $\mu$ is drawn from a prior $g$ and one observes $x \mid \mu \sim \mathcal N(\mu, \sigma^2)$ with $\sigma^2$ known. The Bayes rule needs the prior, but Tweedie's formula expresses the posterior mean through the marginal density $f(x) = \int \varphi_\sigma(x - \mu)\, g(d\mu)$ alone: $\mathbb E[\mu \mid x] = x + \sigma^2 (\log f)'(x)$, and similarly $\operatorname{var}[\mu \mid x] = \sigma^2 (1 + \sigma^2 (\log f)''(x))$. In empirical Bayes work many observations $x_1, \dots, x_N$ share the same prior, so $f$ can be estimated from all of them (Efron 2011, *Tweedie's formula and selection bias*). With a normal prior the formula gives linear shrinkage, and estimating the shrinkage factor from the data gives the James–Stein estimator.
 
-Both formulas are proved here for an arbitrary finite prior, atoms allowed, and the posterior mean is identified with the conditional expectation $\mathbb E[\mu \mid x]$ when the prior has a finite first moment.
+Robbins' formula $\mathbb E[\theta \mid x] = (x + 1) f(x + 1)/f(x)$ is the Poisson counterpart, where $f$ is the marginal probability of the count $x$. Tweedie's formulas are proved here for an arbitrary finite prior, atoms allowed, and the posterior mean is identified with the conditional expectation $\mathbb E[\mu \mid x]$ when the prior has a finite first moment.
 
 ## The model
 
@@ -23,6 +23,12 @@ Both formulas are proved here for an arbitrary finite prior, atoms allowed, and 
 ## The normal prior
 
 - [Posterior mean in the normal–normal model](gaussian-posterior-mean-gaussian-real.md)
+
+## Robbins' Poisson formula
+
+- [Marginal probability of a Poisson mixture](poisson-mixture-mass.md)
+- [Posterior mean in the Poisson model](poisson-posterior-mean.md)
+- [Robbins' formula](poisson-posterior-mean-eq.md)
 
 ## Related topics
 
