@@ -13,3 +13,4 @@ The general principles come first: an LDP transfers along continuous maps (the [
 - [Superexponential tightness and product LDPs](superexponential-tightness-and-product-ldps/README.md)
 - [Sanov's theorem](sanov-s-theorem/README.md)
 - [Gärtner–Ellis theorem (differentiable case)](satisfies-ldp-of-tendsto-scaled-cgf.md)
+- [Ben Arous–Guionnet large deviations](ben-arous-guionnet-large-deviations/README.md)
