@@ -1,6 +1,6 @@
 # Correlated equilibria
 
-A correlated equilibrium (Aumann 1974) is a probability distribution on strategy profiles such that, if a referee draws a profile from it and privately tells each player its own coordinate, no player gains by disobeying its recommendation. In a finite game the correlated equilibria are cut out of the simplex of distributions by finitely many linear inequalities, so they form a compact convex polytope. This polytope contains the Nash equilibria, which are exactly its product distributions, and is contained in the Hannan set of coarse correlated equilibria. Even simple games such as Chicken have correlated equilibria outside the convex hull of their Nash equilibria (Hart and Mas-Colell 2000, §2). Correlated equilibria are also what adaptive play reaches: the empirical distribution of play is a correlated approximate equilibrium exactly when every player's conditional regrets are small (Hart and Mas-Colell 2000).
+A correlated equilibrium (Aumann 1974) is a probability distribution on strategy profiles such that, if a referee draws a profile from it and privately tells each player its own coordinate, no player gains by disobeying its recommendation. In a finite game the correlated equilibria are cut out of the simplex of distributions by finitely many linear inequalities, so they form a compact convex polytope. This polytope contains the Nash equilibria, which are exactly its product distributions (both directions are proved, for Nash equilibria described by pure deviations; from the payoff-form definition of Nash's theorem only the inclusion is bridged), and is contained in the Hannan set of coarse correlated equilibria. Even simple games such as Chicken have correlated equilibria outside the convex hull of their Nash equilibria (Hart and Mas-Colell 2000, §2). Correlated equilibria are also what adaptive play reaches: the empirical distribution of play is a correlated approximate equilibrium exactly when every player's conditional regrets are small (Hart and Mas-Colell 2000).
 
 - [Correlated equilibrium](is-correlated-eq.md)
 - [Gain from a switched recommendation](switch-gain.md)
@@ -23,6 +23,7 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 - [Expected cost under a product distribution](sum-product-dist-mul.md)
 - [Correlated-equilibrium sums of a product distribution](sum-product-dist-mul-switch-gain.md)
 - [Nash equilibria are correlated equilibria](is-correlated-eq-product-dist.md)
+- [The product correlated equilibria are the Nash equilibria](is-correlated-eq-product-dist-iff.md)
 - [Mixed Nash equilibria are correlated equilibria](is-correlated-eq-product-dist-of-is-mixe.md)
 
 ## Conditional regrets

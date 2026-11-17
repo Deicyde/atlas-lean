@@ -12,6 +12,7 @@ conservation condition of their equation (2), which is the
 replacing one forecast by another; they take $k \approx 1/\varepsilon^2$. Their definition of
 $\varepsilon$-calibration asks that $\lim_t \Pr(C_t < \varepsilon) > 1 - \varepsilon$; the
 statement here asks for the inequality for all large $t$, without the existence of the limit.
+It is therefore weaker than their definition, which implies it.
 Section 4 of their paper records a non-constructive proof by Sergiu Hart through the minimax
 theorem.
 

@@ -84,3 +84,12 @@ example : IsCorrelatedEq chickenCost (productDist fun _ => ![3 / 4, 1 / 4]) 0 :=
   simp only [pureCost, othersWeight, erase_fin_two, productDist, Fin.prod_univ_two,
     sum_fin_two_pi']
   fin_cases i <;> fin_cases a <;> simp [chickenCost] <;> norm_num
+
+/-- Conversely, from the correlated equilibrium property of the product, no player of Chicken
+gains by a pure deviation from `(3/4, 1/4)`. -/
+example (h : IsCorrelatedEq chickenCost (productDist fun _ => ![3 / 4, 1 / 4]) 0) (i : Fin 2)
+    (a : Fin 2) :
+    ∑ s, productDist (fun _ => ![3 / 4, 1 / 4]) s * chickenCost i s ≤
+      pureCost chickenCost (fun _ => ![(3 : ℝ) / 4, 1 / 4]) i a :=
+  (isCorrelatedEq_productDist_iff (fun i a => by fin_cases a <;> norm_num)
+    (fun i => by simp [Fin.sum_univ_two]; norm_num)).1 h i a

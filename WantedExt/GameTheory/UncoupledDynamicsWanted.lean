@@ -35,22 +35,28 @@ equilibria (regret matching).
 
 namespace MathlibExt.GameTheory.UncoupledDynamicsWanted
 
-/-- The unique Nash equilibrium of the game of Jordan's family with parameters `a` (Hart and
-Mas-Colell 2003, §III): player `i` (with `i − 1` taken mod 3) plays its first action with
-probability `a (i − 1) / (a (i − 1) + 1)`. -/
+/-- The Nash equilibrium of the game of Jordan's family with parameters `a` close to `1`, where
+it is unique (Hart and Mas-Colell 2003, §III): player `i` (with `i − 1` taken mod 3) plays its
+first action with probability `a (i − 1) / (a (i − 1) + 1)`. -/
 noncomputable def jordanEq (a : Fin 3 → ℝ) (i : Fin 3) : ℝ :=
   a (i - 1) / (a (i - 1) + 1)
 
 /-- **Uncoupled dynamics do not lead to Nash equilibrium** (Hart and Mas-Colell 2003,
-Theorem 1, finite case of §III; Hart 2005, Theorem 3). Consider Jordan's three-player
-two-action games with parameters `a i ∈ (1 − ε, 1 + ε)`, in which player `i`'s payoff depends on
-the parameters only through `a i`, and dynamics `ẋ = F(x; a)` on the vector `x` of the
-probabilities of the players' first actions. No dynamic is simultaneously uncoupled (`F i`
-depends on the game only through `a i`) and, for every game of the family, `C¹` with the
-unique Nash equilibrium `jordanEq a` as a rest point whose Jacobian has only eigenvalues with
-negative real part. (Hart and Mas-Colell's Nash-convergent dynamics have these properties by
-§I; their proof in §III uses only these properties.) -/
-theorem_wanted not_exists_uncoupled_stable_dynamic {ε : ℝ} (hε : 0 < ε) :
+Theorem 1, finite case of §III; Hart 2005, Theorem 3). Let `0 < ε < 1` (Hart and Mas-Colell's
+"some small ε > 0"). Consider Jordan's three-player two-action games with parameters
+`a i ∈ (1 − ε, 1 + ε)`, in which player `i`'s payoff depends on the parameters only through
+`a i`, and dynamics `ẋ = F(x; a)` on the vector `x` of the probabilities of the players' first
+actions. No dynamic is simultaneously uncoupled on this family (`F i` depends on the game only
+through `a i`) and, for every game of the family, `C¹` with the Nash equilibrium `jordanEq a` as
+a rest point whose Jacobian has only eigenvalues with negative real part.
+
+This is stronger than Theorem 1 as worded: it drops the convergence of trajectories from the
+hypotheses and asks for uncoupledness only on Jordan's family. It is exactly what the argument of
+§III proves: `F¹(y¹, ½, ½; a) = 0` for the games with `a³ = y¹ / (1 − y¹)` forces
+`∂F¹/∂x¹ = 0` at the equilibrium, and likewise for the other players, so the Jacobian has trace
+`0` and its eigenvalues cannot all have negative real part (Hart and Mas-Colell note, footnote 15,
+that `det J ≠ 0` already suffices). -/
+theorem_wanted not_exists_uncoupled_stable_dynamic {ε : ℝ} (hε : 0 < ε) (hε1 : ε < 1) :
     ¬ ∃ F : (Fin 3 → ℝ) → (Fin 3 → ℝ) → (Fin 3 → ℝ),
       (∀ x a a' i, (∀ j, |a j - 1| < ε) → (∀ j, |a' j - 1| < ε) → a i = a' i →
         F x a i = F x a' i) ∧

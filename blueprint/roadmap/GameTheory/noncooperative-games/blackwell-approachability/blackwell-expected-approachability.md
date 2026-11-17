@@ -6,7 +6,8 @@ half-space containing $C$ is enforceable, the Blackwell strategy $\sigma$ (a map
 average expected payoff to a mixed action) satisfies, against every sequence $\beta$ of opponent
 actions and for every $c_0 \in C$,
 $$\operatorname{dist}(\bar x_n, C) \le \frac{3R + \|c_0\|}{\sqrt n} \qquad (n \ge 1),$$
-where $\bar x_n$ is the average of the first $n$ expected payoffs. Since the mixed actions are
+where $\bar x_n$ is the average of the first $n$ expected payoffs. The constant $3R + \|c_0\|$ bounds $\|y_n - c_n\|$ and plays the role of Hart's $M$ in
+the recursion (13); it is not Hart's constant. Since the mixed actions are
 determined by the opponent's sequence, this covers opponents who adapt to the past.
 
 This is the expected-payoff estimate in the proof of Blackwell's theorem; the almost-sure

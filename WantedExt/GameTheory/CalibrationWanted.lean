@@ -50,7 +50,8 @@ noncomputable def calibrationScore {k t : ℕ} (f : Fin t → Fin (k + 1)) (x : 
 randomised forecasting rule `μ`, choosing a distribution on the forecasts `0, 1/k, …, 1` from the
 history, such that against every Nature, who chooses each outcome knowing the past but not the
 current randomisation, the calibration score after `t` rounds is below `ε` with probability
-greater than `1 − ε` for all large `t`. -/
+greater than `1 − ε` for all large `t`. This is weaker than Foster and Vohra's `ε`-calibration,
+`lim_t Pr(C_t < ε) > 1 − ε`, which implies it; it does not require the limit to exist. -/
 theorem_wanted exists_calibrated_forecast {ε : ℝ} (hε : 0 < ε) :
     ∃ k : ℕ, 0 < k ∧
     ∃ μ : ∀ t : ℕ, (Fin t → Fin (k + 1) × Bool) → Convexity.StdSimplex ℝ (Fin (k + 1)),

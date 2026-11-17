@@ -32,7 +32,8 @@ a player told by a referee to play `j` cannot gain more than `ε` (in total over
 * `IsCorrelatedEq.isCoarseCorrelatedEq`: correlated equilibria are coarse correlated
   equilibria (the Hannan set of Hart 2005, §10.1).
 * `isCorrelatedEq_dirac`, `isCorrelatedEq_productDist`: pure Nash equilibria (as point
-  masses) and mixed Nash equilibria (as product distributions) are correlated equilibria.
+  masses) and mixed Nash equilibria (as product distributions) are correlated equilibria;
+  `isCorrelatedEq_productDist_iff`: conversely, product correlated equilibria are Nash.
 * `convex_setOf_isCorrelatedEq`, `isCompact_setOf_isCorrelatedEq`: the set of correlated
   `ε`-equilibria is convex and compact (a polytope: it is cut out of the simplex by finitely
   many linear inequalities).
@@ -350,6 +351,24 @@ theorem isCorrelatedEq_productDist {cost : ι → (∀ i, S i) → ℝ} {σ : �
       mul_nonneg (hσ0 i a) (sub_nonneg.2 (hnash i a))).1 hzero j (mem_univ j)
   have hk := hnash i k
   nlinarith [hσ0 i j]
+
+/-- **The product correlated equilibria are the Nash equilibria** (Hart and Mas-Colell 2000, §2:
+"Nash equilibria correspond to the special case where ψ is a product measure"). For mixed
+strategies `σᵢ`, the product distribution is a correlated equilibrium if and only if no player
+can lower its expected cost by switching to a pure strategy. -/
+theorem isCorrelatedEq_productDist_iff {cost : ι → (∀ i, S i) → ℝ} {σ : ∀ i, S i → ℝ}
+    (hσ0 : ∀ i a, 0 ≤ σ i a) (hσ1 : ∀ i, ∑ a, σ i a = 1) :
+    IsCorrelatedEq cost (productDist σ) 0 ↔
+      ∀ i a, ∑ s, productDist σ s * cost i s ≤ pureCost cost σ i a := by
+  refine ⟨fun h i k => ?_, isCorrelatedEq_productDist hσ0 hσ1⟩
+  have hj : ∀ j, σ i j * (pureCost cost σ i j - pureCost cost σ i k) ≤ 0 := fun j => by
+    have := h.2 i j k
+    rwa [sum_productDist_mul_switchGain] at this
+  have hsum : ∑ j, σ i j * (pureCost cost σ i j - pureCost cost σ i k) ≤ 0 :=
+    sum_nonpos fun j _ => hj j
+  simp only [mul_sub, sum_sub_distrib, ← sum_mul, hσ1, one_mul] at hsum
+  rw [sum_productDist_mul]
+  linarith
 
 /-! ### Chicken -/
 
