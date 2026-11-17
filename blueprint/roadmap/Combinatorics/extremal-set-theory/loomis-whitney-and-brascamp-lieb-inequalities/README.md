@@ -10,3 +10,8 @@ In numerical linear algebra these inequalities give communication lower bounds: 
 - [Projection onto the first and last coordinates](proj-xz.md)
 - [Projection onto the last two coordinates](proj-yz.md)
 - [Discrete Hölder–Brascamp–Lieb inequality](rank-le-iff-card-le-prod.md)
+
+## Related topics
+
+- [Shearer's entropy inequality](../../../InformationTheory/information-inequalities/shearer-s-entropy-inequality/README.md): the entropy form of projection inequalities.
+- [Communication lower bounds](../../../ComputerScience/algebraic-and-numerical-algorithms/communication-lower-bounds/README.md): the application to matrix multiplication and numerical linear algebra.

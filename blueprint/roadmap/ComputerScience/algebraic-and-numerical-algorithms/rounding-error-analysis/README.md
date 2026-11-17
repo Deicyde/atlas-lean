@@ -24,3 +24,9 @@ A sum of $n$ rounded products is accurate to $\gamma_n = nu/(1 - nu)$ relative t
 - [Error of a floating-point `c - ∑ aₖ bₖ`, measured by the result](abs-sub-dot-fl-add-sum-sub-le.md)
 - [Monotonicity of `γ`](gamma-mono.md)
 - [Composition of relative errors](one-add-gamma-mul-le.md)
+
+## Related topics
+
+- [Floating-point rounding](../floating-point-rounding/README.md): the rounding model.
+- [Perturbation theory for linear systems](../../../LinearAlgebra/matrix-decompositions/perturbation-theory-for-linear-systems/README.md): condition numbers, which turn backward errors into forward errors.
+- [LU decomposition](../../../LinearAlgebra/matrix-decompositions/lu-decomposition/README.md): the exact factorization.

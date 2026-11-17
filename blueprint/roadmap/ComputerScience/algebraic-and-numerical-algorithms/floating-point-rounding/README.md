@@ -36,3 +36,7 @@
 - [Sterbenz's lemma](is-float-sub.md)
 - [Sterbenz's lemma in a bounded format](is-float-in-sub.md)
 - [Floating-point subtraction is exact under Sterbenz's condition](fl-sub-eq-sub.md)
+
+## Related topics
+
+- [Rounding error analysis](../rounding-error-analysis/README.md): error bounds for dot products, matrix products and LU factorization built on the relative error bound of `fl`.

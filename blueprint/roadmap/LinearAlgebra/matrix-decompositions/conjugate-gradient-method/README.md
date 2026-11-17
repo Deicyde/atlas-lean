@@ -28,3 +28,4 @@
 - [Nonlinear conjugate gradient methods](../../../Analysis/numerical-analysis/nonlinear-conjugate-gradient-methods/README.md):
   the extension to smooth unconstrained minimisation, which reduces to this method on strictly
   convex quadratics with exact line searches.
+- [Perturbation theory for linear systems](../perturbation-theory-for-linear-systems/README.md): the condition number $\kappa(A) = \|A\|\,\|A^{-1}\|$, which for a positive definite $A$ in the 2-norm is the ratio $\kappa$ of extreme eigenvalues in the Chebyshev bound.
