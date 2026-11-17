@@ -8,6 +8,7 @@ Here $e_n$ is Scott's binary enumeration. The pairing $\langle n, m\rangle$ is M
 
 - [The `n`-th finite set of the graph model](fin-set.md)
 - [Elements of the `n`-th finite set are smaller than `n`](lt-of-mem-fin-set.md)
+- [The compact elements of `P(ω)` are the finite sets](is-compact-element-iff-finite.md)
 - [Graph of a function on `P(ω)`](graph.md)
 - [Application in the graph model](app.md)
 

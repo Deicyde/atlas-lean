@@ -27051,6 +27051,7 @@
 "MathlibExt.Order.ScottContinuity.GraphModel.graph": "ca84343cd3223268",
 "MathlibExt.Order.ScottContinuity.GraphModel.graph_app_eq_iff": "9c0968a69de82b64",
 "MathlibExt.Order.ScottContinuity.GraphModel.graph_sSup": "5a26f842711acd53",
+"MathlibExt.Order.ScottContinuity.GraphModel.isCompactElement_iff_finite": "da3cf03c55337959",
 "MathlibExt.Order.ScottContinuity.GraphModel.isOpen_setOf_mem": "f2bee56a1b05fa6e",
 "MathlibExt.Order.ScottContinuity.GraphModel.lt_of_mem_finSet": "169f18de6bd35352",
 "MathlibExt.Order.ScottContinuity.GraphModel.mem_iff_exists_finset_of_scottContinuous": "9095a83930d75a98",

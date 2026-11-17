@@ -69,3 +69,11 @@ example : ∃ F : Bool → Topology.WithScott (Set ℕ), Continuous F ∧
     ∀ x : ({true} : Set Bool), F x = Topology.WithScott.toScott {0} :=
   exists_continuous_extend_withScott ({true} : Set Bool) (f := fun _ => .toScott {0})
     continuous_const
+
+/-- A finite set is a compact element of `P(ω)`. -/
+example : IsCompactElement ({0, 1} : Set ℕ) :=
+  (isCompactElement_iff_finite _).2 (Set.toFinite _)
+
+/-- `ℕ` itself is not a compact element of `P(ω)`. -/
+example : ¬ IsCompactElement (Set.univ : Set ℕ) := fun h =>
+  Set.infinite_univ ((isCompactElement_iff_finite _).1 h)

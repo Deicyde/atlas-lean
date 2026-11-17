@@ -15,6 +15,7 @@ public import Mathlib.Data.Set.Finite.Lattice
 public import Mathlib.Topology.Order.ScottTopology
 public import Mathlib.Topology.Bases
 public import MathlibExt.Order.ScottContinuity.FunctionSpace
+public import Mathlib.Order.CompactlyGenerated.Basic
 
 /-!
 # Scott's graph model `P(ω)`
@@ -43,6 +44,8 @@ Main results:
 * `graph_app_eq_iff`: Theorem 1.2 (iii), which sets are graphs.
 * `exists_continuous_extend_withScott`: Scott's extension theorem (Theorem 1.5): `P(ω)` is an
   injective space.
+* `isCompactElement_iff_finite`: the compact elements of the algebraic lattice `P(ω)` are the
+  finite sets.
 * `exists_graph_app_ne`: the retraction is not an isomorphism, so `P(ω)` is not extensional
   (η fails); Scott's Theorem 2.2 validates only α, β and ξ in `P(ω)`.
 
@@ -230,6 +233,38 @@ theorem exists_graph_app_ne : ∃ u : Set ℕ, graph (app u) ≠ u := by
   subst this
   rw [hn₀] at hn₁
   simp at hn₁
+
+section Algebraic
+
+/-- **The compact elements of `P(ω)` are the finite sets.** A set `s ⊆ ℕ` is a compact element of
+the complete lattice `P(ω)`, that is, below a finite part of every union above it, iff `s` is
+finite. With Mathlib's instance `IsCompactlyGenerated (Set ℕ)`, this makes `P(ω)` an algebraic
+lattice whose compact elements are the finite sets `e n` (D. Scott, *Data types as lattices*,
+SIAM J. Comput. 5 (1976), §1: each `x` is the limit of its finite subsets). -/
+theorem isCompactElement_iff_finite (s : Set ℕ) : IsCompactElement s ↔ s.Finite := by
+  constructor
+  · intro hs
+    rw [isCompactElement_iff_exists_le_sSup_of_le_sSup] at hs
+    obtain ⟨t, ht, hst⟩ := hs ((fun x => ({x} : Set ℕ)) '' s) (fun x hx => ⟨{x}, ⟨x, hx, rfl⟩, rfl⟩)
+    refine (t.finite_toSet.biUnion (t := fun u => u) fun u hu => ?_).subset (fun x hx => ?_)
+    · obtain ⟨y, _, rfl⟩ := ht hu
+      exact finite_singleton y
+    · have := hst hx
+      rw [Finset.sup_id_set_eq_sUnion] at this
+      simpa using this
+  · intro hs
+    have h : s = ⨆ x ∈ s, ({x} : Set ℕ) := by
+      ext x
+      simp
+    rw [h]
+    refine IsCompactElement.biSup hs fun x _ => ?_
+    rw [isCompactElement_iff_exists_le_sSup_of_le_sSup]
+    intro S hS
+    obtain ⟨T, hT, hxT⟩ := hS (mem_singleton x)
+    classical
+    exact ⟨{T}, by simpa using hT, by simpa using hxT⟩
+
+end Algebraic
 
 section Recursion
 
