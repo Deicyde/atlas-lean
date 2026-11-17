@@ -1,0 +1,19 @@
+# PPAD and the END-OF-THE-LINE problem
+
+Problems such as finding a Nash equilibrium or a Brouwer fixed point always have a solution, so NP-completeness is the wrong yardstick for them: a reduction from SAT would give NP = coNP (Papadimitriou, *Algorithmic Game Theory*, Section 2.2). Papadimitriou (1994) classified such total search problems by the combinatorial lemma that proves their totality. PPAD ("polynomial parity argument, directed version") rests on the lemma that a directed graph with in- and out-degrees at most one that has a source has a sink. Daskalakis, Goldberg and Papadimitriou (SIAM J. Comput. 2009, Section 3.1) define PPAD as the total search problems polynomial-time reducible to END-OF-THE-LINE: given circuits $S$ and $P$ on $\{0,1\}^n$ with $P(0^n) = 0^n \neq S(0^n)$, find $x$ with $P(S(x)) \neq x$ or $S(P(x)) \neq x \neq 0^n$.
+
+The pages below prove the combinatorial principle for arbitrary finite graphs presented by $S$ and $P$. The class itself is not formalised: the repository's complexity vocabulary ([P, NP and coNP](../../complexity-classes/the-classes-p-np-and-conp/README.md)) has decision problems but no total search problems, circuit encodings or search-problem reductions. The main results of the theory, with theorem numbers from that paper (there r-Nash asks for an approximately well-supported $1/A$-Nash equilibrium of an r-player game in normal form, $A$ part of the input), are:
+
+- r-Nash is in PPAD for every number of players $r \geq 2$ (Theorem 3.1);
+- the problem BROUWER, a discretised three-dimensional Brouwer problem, is PPAD-complete (Theorem 3.9);
+- 3-Nash is PPAD-complete (Theorem 5.1), and so is 2-Nash, by Chen and Deng (Theorem 6.1 of the same paper gives a short proof).
+
+Insisting on a sink rather than "a sink or another source" gives the class PPADS (same paper, Section 3.1), even though, as proved below, a sink always exists.
+
+- [The END-OF-THE-LINE graph](adj.md)
+- [Out-degree at most one](out-unique.md)
+- [In-degree at most one](in-unique.md)
+- [Sinks of the END-OF-THE-LINE graph](forall-not-adj-iff.md)
+- [Sources of the END-OF-THE-LINE graph](forall-not-adj-to-iff.md)
+- [END-OF-THE-LINE is total](exists-solution.md)
+- [Every END-OF-THE-LINE instance has a sink](exists-sink.md)

@@ -2942,6 +2942,7 @@
   "MathlibExt/Computability/CommunicationComplexity/Minimax": {"to": "TheoryOfComputation/communication-complexity", "title": "Randomized communication protocols"},
   "MathlibExt/Computability/CommunicationComplexity/Randomized": {"to": "TheoryOfComputation/communication-complexity", "title": "Randomized communication protocols"},
   "MathlibExt/Computability/Complexity": {"to": "TheoryOfComputation/complexity-classes", "title": "The classes P, NP and coNP"},
+  "MathlibExt/Computability/EndOfTheLine": {"to": "TheoryOfComputation/completeness-other-classes", "title": "PPAD and the END-OF-THE-LINE problem"},
   "MathlibExt/Computability/PartrecCode": {"to": "TheoryOfComputation/computability", "title": "S-m-n theorem"},
   "MathlibExt/Computability/RE": {"to": "TheoryOfComputation/computability", "title": "Decidable and recognizable predicates"},
   "MathlibExt/Computability/RiceTheorem": {"to": "TheoryOfComputation/computability", "title": "Rice's theorem for acceptable numberings"},
