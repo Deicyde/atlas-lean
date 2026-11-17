@@ -23671,6 +23671,7 @@
 "MathlibExt.GameTheory.MechanismDesign.isPureNash_of_isDominantStrategyProfile": "8e298a6d1949e005",
 "MathlibExt.GameTheory.MechanismDesign.revelationPrinciple_bayesNash": "cc95c2fbaccce31d",
 "MathlibExt.GameTheory.MechanismDesign.revelationPrinciple_dominantStrategy": "a8b57cef4e2ba405",
+"MathlibExt.GameTheory.MyersonSatterthwaiteWanted.myerson_satterthwaite": "741c5f8e83d4a2ab",
 "MathlibExt.GameTheory.NashCorrelatedBridge.isCorrelatedEq_productDist_of_isMixedNash": "0ebad325746bb810",
 "MathlibExt.GameTheory.NashExistenceWanted.IsMixedNash": "ea7e0c55cf22e9a2",
 "MathlibExt.GameTheory.NashExistenceWanted.exists_isMixedNash": "0f49a726cdfba979",
