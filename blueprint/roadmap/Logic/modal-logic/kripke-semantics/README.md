@@ -46,3 +46,8 @@
 - [Composition of bounded morphisms](comp.md)
 - [Invariance of modal satisfaction under bounded morphisms](satisfies-iff.md)
 - [Surjective bounded morphisms preserve and reflect validity](valid-iff-of-surjective.md)
+- [Biconditional](iff.md)
+- [Substitution of a formula for an atom](subst.md)
+- [Truth depends only on the visible part of the valuation](satisfies-congr.md)
+- [Semantic substitution lemma](satisfies-subst.md)
+- [Kripke model with one atom reinterpreted](update-atom.md)
