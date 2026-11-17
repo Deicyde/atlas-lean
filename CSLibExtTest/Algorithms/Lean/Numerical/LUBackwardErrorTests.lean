@@ -36,6 +36,6 @@ example : ∃ E : Matrix (Fin 1) (Fin 1) ℝ,
       ∀ i j, |E i j| ≤ DotProductError.gamma 53 1 *
         ∑ k, |(Matrix.of fun _ _ : Fin 1 => (1 : ℝ)) i k| *
           |(Matrix.of fun _ _ : Fin 1 => (3 : ℝ)) k j| :=
-  exists_mul_eq_add_abs_le_gamma (by norm_num) (isFlLU_one_by_one 53 3) (fun _ => by norm_num)
+  exists_mul_eq_add_abs_le_gamma (by norm_num) (isFlLU_one_by_one 53 3) (fun _ _ => by norm_num)
 
 end CSLibExtTest.Algorithms.Lean.Numerical.LUBackwardErrorTests

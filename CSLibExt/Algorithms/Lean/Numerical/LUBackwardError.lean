@@ -235,13 +235,15 @@ theorem sum_fin_eq_sum_range_add {n m : ℕ} (hm : m < n) (f : Fin n → K)
 
 /-- **Backward error of floating-point LU factorization.** Let `L̂` and `Û` be the factors of an
 `n × n` matrix `A` computed by Gaussian elimination without pivoting in `p`-bit floating point
-(`IsFlLU`), with nonzero pivots `Û(j, j)`, and let `n u < 1` for `u = 2^(-p)`. Then
+(`IsFlLU`), with nonzero pivots `Û(j, j)` for `j < n - 1` (the last pivot is never divided by),
+and let `n u < 1` for `u = 2^(-p)`. Then
 `L̂ Û = A + E` with `|E(i, j)| ≤ γₙ ∑ₖ |L̂(i, k)| |Û(k, j)|` for all `i, j` (J. W. Demmel,
 Math 221, UC Berkeley, Lecture 5 notes, 2024: "If P, L and U are computed by the above algorithm,
 then `A - E = P*L*U` where `|E| <= n*macheps*P*|L|*|U|`", stated there to first order in
 `macheps`, for `P = I`). -/
 theorem exists_mul_eq_add_abs_le_gamma {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1)
-    {A L U : Matrix (Fin n) (Fin n) K} (hLU : IsFlLU p A L U) (hpiv : ∀ j, U j j ≠ 0) :
+    {A L U : Matrix (Fin n) (Fin n) K} (hLU : IsFlLU p A L U)
+    (hpiv : ∀ j : Fin n, (j : ℕ) + 1 < n → U j j ≠ 0) :
     ∃ E : Matrix (Fin n) (Fin n) K, L * U = A + E ∧
       ∀ i j, |E i j| ≤ gamma p n * ∑ k, |L i k| * |U k j| := by
   have hu : (0 : K) < 2 ^ (-(p : ℤ)) := two_zpow_pos _
@@ -320,7 +322,7 @@ theorem exists_mul_eq_add_abs_le_gamma {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)
       have h1 := abs_fl_sub_le_gamma_one_mul hu1 (sj / U j j)
       rw [← hLij] at h1
       have : L i j * U j j - sj = (L i j - sj / U j j) * U j j := by
-        field_simp [hpiv j]
+        field_simp [hpiv j (by omega)]
       rw [this, abs_mul]
       calc |L i j - sj / U j j| * |U j j| ≤ gamma p 1 * |L i j| * |U j j| := by gcongr
         _ = _ := by ring

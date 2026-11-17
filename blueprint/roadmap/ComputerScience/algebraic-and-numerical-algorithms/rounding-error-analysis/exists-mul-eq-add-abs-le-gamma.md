@@ -1,6 +1,6 @@
 # Backward error of floating-point LU factorization
 
-Let $\hat L$ and $\hat U$ be the [factors computed by Gaussian elimination without pivoting](is-fl-lu.md) in $p$-bit floating point from an $n \times n$ matrix $A$, with nonzero pivots $\hat U_{jj}$, and let $n u < 1$. Then
+Let $\hat L$ and $\hat U$ be the [factors computed by Gaussian elimination without pivoting](is-fl-lu.md) in $p$-bit floating point from an $n \times n$ matrix $A$, with nonzero pivots $\hat U_{jj}$ for $j < n - 1$ (the last pivot is never divided by), and let $n u < 1$. Then
 
 $$\hat L \hat U = A + E, \qquad |E_{ij}| \le \gamma_n \sum_k |\hat L_{ik}|\,|\hat U_{kj}| \quad \text{for all } i, j.$$
 

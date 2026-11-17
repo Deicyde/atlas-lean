@@ -239,7 +239,7 @@ theorem exists_add_mulVec_eq_of_isFlLU {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)
     {b y x : Fin n → K} (hy : IsFlLowerSolve p L b y) (hx : IsFlUpperSolve p U y x) :
     ∃ F : Matrix (Fin n) (Fin n) K, (A + F).mulVec x = b ∧
       ∀ i j, |F i j| ≤ (3 * gamma p n + gamma p n ^ 2) * ∑ k, |L i k| * |U k j| := by
-  obtain ⟨E, hE, hEb⟩ := exists_mul_eq_add_abs_le_gamma hn hLU hpiv
+  obtain ⟨E, hE, hEb⟩ := exists_mul_eq_add_abs_le_gamma hn hLU fun j _ => hpiv j
   obtain ⟨δL, hδL, hLy⟩ := exists_add_mulVec_eq_of_isFlLowerSolve hn hLU.L_upper_zero
     (fun i => by rw [hLU.diag_L i]; exact one_ne_zero) hy
   obtain ⟨δU, hδU, hUx⟩ := exists_add_mulVec_eq_of_isFlUpperSolve hn hLU.U_lower_zero hpiv hx
