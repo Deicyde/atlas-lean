@@ -7,6 +7,12 @@ law of a standard bivariate normal vector with correlation $\rho$). Then the ope
 $\{x \in \mathbb{R}^2 : x_1 > 0,\ x_2 > 0\}$ has $\gamma$-probability
 $\frac{1}{4} + \frac{\arcsin \rho}{2\pi}$.
 
+## Background
+
+- [Goemans–Williamson Lemma 3.2](../../../ComputerScience/approximation-algorithms/goemans-williamson-max-cut-algorithm/measure-real-sign-ne.md):
+  the same fact in hyperplane form: a random hyperplane separates two unit vectors with inner
+  product $\rho$ with probability $1 - 2\left(\frac14 + \frac{\arcsin\rho}{2\pi}\right) = \frac{\arccos\rho}{\pi}$.
+
 ## Sources
 
 - Y. L. Tong, The Multivariate Normal Distribution, Springer, 1990, Ch. 3; W. F. Sheppard, "On the application of the theory of error to cases of normal distribution and normal correlation", Phil. Trans. R. Soc. Lond. A 192 (1899), 101–167; https://en.wikipedia.org/wiki/Multivariate_normal_distribution

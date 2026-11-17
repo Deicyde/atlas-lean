@@ -1,6 +1,6 @@
 # Approximation algorithms
 
-Polynomial-time algorithms with proved approximation ratios for NP-hard optimization: vertex cover, set cover, metric TSP, list scheduling, maximum coverage.
+Polynomial-time algorithms with proved approximation ratios for NP-hard optimization: vertex cover, set cover, metric TSP, list scheduling, maximum coverage, MAX-CUT by semidefinite programming and random-hyperplane rounding, MAX-SAT by randomized rounding, and the primal–dual method for constrained forest problems.
 
 - [Double-tree approximation for metric TSP](double-tree-approximation-for-metric-tsp/README.md)
 - [Goemans–Williamson MAX-CUT algorithm](goemans-williamson-max-cut-algorithm/README.md)

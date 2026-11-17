@@ -12,3 +12,8 @@
 - [MAXSNP problems](maxsnpproblem.md)
 - [MAXSNP-completeness](maxsnpcomplete.md)
 - [MAX-3SAT is MAXSNP-complete](max-three-sat-maxsnp-complete.md)
+
+## Related topics
+
+- [Randomized rounding for MAX-SAT](../../../ComputerScience/approximation-algorithms/randomized-rounding-for-max-sat/README.md): the algorithmic side for MAX SAT with
+  clauses of any length, a $\frac34$-approximation.

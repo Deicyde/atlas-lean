@@ -65,3 +65,5 @@ extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 - [Inapproximability of MAX-CUT](../../../TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/README.md):
   the hardness side; Håstad's $16/17$ bound and the Unique-Games optimality of $\alpha$ are not
   formalized.
+- [Randomized rounding for MAX-SAT](../randomized-rounding-for-max-sat/README.md): the
+  linear-programming predecessor of the same rounding philosophy, by the same authors.
