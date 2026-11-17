@@ -19,13 +19,15 @@ Rabin's Theorem 1 says that a square-root algorithm taking $F(n)$ steps yields a
 algorithm taking $2F(n) + 2\log_2 n$ expected steps; its proof rests on the statement here
 (exactly four square roots of $k^2$, all equally likely, two of which give a factor). Running times
 are not formalized. Rabin takes $p$ and $q$ to be (large) primes and draws $0 < k < n$, discarding
-the negligible non-units; the statement here requires only $q$ odd and draws units. Rabin's
-Theorem 2, for an algorithm that succeeds on a fraction $1/e$ of the squares, is not formalized.
+the negligible non-units; the statement here requires only $q$ odd and draws units. The count
+behind Rabin's Theorem 2, for an algorithm that succeeds on a fraction $1/e$ of the squares, is
+[A partial square-root oracle factors pq on half of its domain](two-mul-card-gcd-mem-eq-card.md),
+from which this theorem is derived.
 
 ## Informally uses
 
-- [The gcd with pq is a prime factor exactly when one prime divides](gcd-mul-mem-iff.md): turns
-  the gcd test into vanishing modulo $p$ and $q$.
+- [A partial square-root oracle factors pq on half of its domain](two-mul-card-gcd-mem-eq-card.md):
+  the case where the oracle answers on every square.
 
 ## Background
 

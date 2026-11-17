@@ -23,6 +23,9 @@ set_option autoImplicit false
 
 namespace Cslib.Crypto.PublicKey.Rabin
 
+private instance fact_prime_three' : Fact (Nat.Prime 3) := ⟨by norm_num⟩
+private instance fact_prime_five' : Fact (Nat.Prime 5) := ⟨by norm_num⟩
+
 example : rabinFunction 15 4 2 = 12 := by decide
 
 example (x : ZMod 15) : rabinFunction 15 (2 * 3) x = (x + 3) ^ 2 - 9 := by
@@ -60,10 +63,18 @@ the `φ(15) = 8` units give a factor. -/
 example : 2 * (Finset.univ.filter fun k : (ZMod (3 * 5))ˣ =>
     Nat.gcd ((k : ZMod (3 * 5)) - someRoot ((k : ZMod (3 * 5)) ^ 2)).val (3 * 5) ∈
       ({3, 5} : Finset ℕ)).card = 8 := by
-  have : Fact (Nat.Prime 3) := ⟨by norm_num⟩
-  have : Fact (Nat.Prime 5) := ⟨by norm_num⟩
   rw [two_mul_card_gcd_mem_eq_totient (by norm_num) (by norm_num) someRoot
     (fun k => someRoot_sq _)]
+  decide
+
+/-- The partial-oracle count is not vacuous: an oracle answering only on `Q = {1}` with the root
+`1` succeeds on exactly the two square roots `4` and `11` of `1` modulo `15` other than `±1`. -/
+example : 2 * (Finset.univ.filter fun k : (ZMod (3 * 5))ˣ => (k : ZMod (3 * 5)) ^ 2 ∈
+    ({1} : Set (ZMod (3 * 5))) ∧
+      Nat.gcd ((k : ZMod (3 * 5)) - (fun _ => 1) ((k : ZMod (3 * 5)) ^ 2)).val (3 * 5) ∈
+        ({3, 5} : Finset ℕ)).card = 4 := by
+  rw [two_mul_card_gcd_mem_eq_card (by norm_num) (by norm_num) _ (fun _ => 1)
+    (fun k hk => by simp only [Set.mem_singleton_iff] at hk; rw [hk, one_pow])]
   decide
 
 end Cslib.Crypto.PublicKey.Rabin

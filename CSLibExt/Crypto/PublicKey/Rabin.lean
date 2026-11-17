@@ -31,13 +31,15 @@ exactly half of the units `k` modulo `p q` have `gcd(k - O(k²), p q) ∈ {p, q}
 a uniform unit factors `n` with probability exactly `1/2`, whatever the oracle.
 `isFactorization_of_gcd_mem` connects a successful trial with the factoring experiment of
 `Cslib.Crypto.PublicKey.Assumptions`.
+`two_mul_card_gcd_mem_eq_card` is the same count for an oracle that answers only on a set `Q` of
+squares (the core of Rabin's Theorem 2): exactly half of the units `k` with `k² ∈ Q` succeed.
 
 The proof pairs `k` with `c k`, where `c ≡ 1 (mod p)` and `c ≡ -1 (mod q)`: both have the same
 square, hence the same oracle answer `k₁`, and exactly one of `k - k₁`, `c k - k₁` vanishes modulo
 `q`, while both agree modulo `p`.
 
-**Scope.** Only the counting core is formalized: running times (Rabin's `2F(n) + 2 log₂ n` steps)
-and his Theorem 2 (an oracle that succeeds on a fraction `1/e` of the squares) are not. The
+**Scope.** Only the counting cores are formalized: running times (Rabin's `2F(n) + 2 log₂ n` and
+`2eF(n) + 2 log₂ n` steps) and the expected number of trials are not. The
 statement assumes only that `q` is odd; Rabin takes `p`, `q` to be large primes, so the statement
 here is slightly more general.
 -/
@@ -142,19 +144,22 @@ theorem isFactorization_of_gcd_mem (hp : p.Prime) (hq : q.Prime) {g : ℕ}
     rw [Nat.mul_div_cancel _ hq.pos]
     exact hp.one_lt
 
-/-- **A square-root oracle factors `p q` on exactly half of the units** (Rabin, MIT/LCS/TR-212,
-1979, Section 4, Theorem 1 and its proof, equation (6)). Let `p ≠ q` be primes with `q` odd and let
-`O` be any function with `O(k²)² = k²` for every unit `k` modulo `p q` (a deterministic algorithm
-that returns one square root of each unit square). Then exactly half of the units `k` satisfy
-`gcd(k - O(k²), p q) ∈ {p, q}`, that is, the trial "draw `k`, compute `gcd(k - O(k²), n)`"
-factors `n` with probability exactly `1/2`. Rabin states the probability `1/2` for `n` a product
-of two (large) primes; here only `q` needs to be odd. -/
-theorem two_mul_card_gcd_mem_eq_totient [hp : Fact p.Prime] [hq : Fact q.Prime] (hpq : p ≠ q)
-    (hq2 : q ≠ 2) (O : ZMod (p * q) → ZMod (p * q))
-    (hO : ∀ k : (ZMod (p * q))ˣ, O ((k : ZMod (p * q)) ^ 2) ^ 2 = (k : ZMod (p * q)) ^ 2) :
-    2 * (Finset.univ.filter fun k : (ZMod (p * q))ˣ =>
+/-- **A square-root oracle that answers on a set of squares factors `p q` on half of its
+domain** (Rabin, MIT/LCS/TR-212, 1979, Section 4, proof of Theorem 2). Let `p ≠ q` be primes with
+`q` odd, `Q` a set of residues modulo `p q`, and `O` any function with `O(k²)² = k²` for every unit
+`k` with `k² ∈ Q` (an algorithm that returns a square root on the squares in `Q` only). Then
+exactly half of the units `k` with `k² ∈ Q` satisfy `gcd(k - O(k²), p q) ∈ {p, q}`. Rabin's
+Theorem 2 takes `Q` to be the squares on which the algorithm succeeds within its time bound, a
+fraction `1/e` of them; then each trial succeeds with probability `1/(2e)`. -/
+theorem two_mul_card_gcd_mem_eq_card [hp : Fact p.Prime] [hq : Fact q.Prime] (hpq : p ≠ q)
+    (hq2 : q ≠ 2) (Q : Set (ZMod (p * q))) [DecidablePred (· ∈ Q)]
+    (O : ZMod (p * q) → ZMod (p * q))
+    (hO : ∀ k : (ZMod (p * q))ˣ, (k : ZMod (p * q)) ^ 2 ∈ Q →
+      O ((k : ZMod (p * q)) ^ 2) ^ 2 = (k : ZMod (p * q)) ^ 2) :
+    2 * (Finset.univ.filter fun k : (ZMod (p * q))ˣ => (k : ZMod (p * q)) ^ 2 ∈ Q ∧
         Nat.gcd ((k : ZMod (p * q)) - O ((k : ZMod (p * q)) ^ 2)).val (p * q) ∈
-          ({p, q} : Finset ℕ)).card = Nat.totient (p * q) := by
+          ({p, q} : Finset ℕ)).card =
+      (Finset.univ.filter fun k : (ZMod (p * q))ˣ => (k : ZMod (p * q)) ^ 2 ∈ Q).card := by
   have hcop : p.Coprime q := (Nat.coprime_primes hp.out hq.out).2 hpq
   have : NeZero (p * q) := ⟨Nat.mul_ne_zero hp.out.ne_zero hq.out.ne_zero⟩
   set e := ZMod.chineseRemainder hcop with he
@@ -191,8 +196,14 @@ theorem two_mul_card_gcd_mem_eq_totient [hp : Fact p.Prime] [hq : Fact q.Prime] 
     · exact hq.out.one_lt.ne' h1
     · exact hq2 h1
   -- the pairing `k ↦ c k` flips the success predicate
-  have hflip : ∀ k : (ZMod (p * q))ˣ, good (c * k) ↔ ¬ good k := by
+  have hsq' : ∀ k : (ZMod (p * q))ˣ,
+      ((c * k : (ZMod (p * q))ˣ) : ZMod (p * q)) ^ 2 = (k : ZMod (p * q)) ^ 2 := by
     intro k
+    push_cast
+    rw [mul_pow, sq c0, hc0sq, one_mul]
+  have hflip : ∀ k : (ZMod (p * q))ˣ, (k : ZMod (p * q)) ^ 2 ∈ Q →
+      (good (c * k) ↔ ¬ good k) := by
+    intro k hkQ
     have hsq : ((c * k : (ZMod (p * q))ˣ) : ZMod (p * q)) ^ 2 = (k : ZMod (p * q)) ^ 2 := by
       push_cast
       rw [mul_pow, sq c0, hc0sq, one_mul]
@@ -204,7 +215,7 @@ theorem two_mul_card_gcd_mem_eq_totient [hp : Fact p.Prime] [hq : Fact q.Prime] 
       rw [map_mul, Prod.snd_mul, h0, zero_mul] at h1
       exact zero_ne_one h1
     have hk1sq : ((e k1).2) ^ 2 = ((e (k : ZMod (p * q))).2) ^ 2 := by
-      have := congrArg (fun x => (e x).2) (hO k)
+      have := congrArg (fun x => (e x).2) (hO k hkQ)
       simpa [map_pow, Prod.pow_snd] using this
     simp only [good, hsq, ← hk1]
     have hck : e ((c * k : (ZMod (p * q))ˣ) : ZMod (p * q)) =
@@ -238,20 +249,39 @@ theorem two_mul_card_gcd_mem_eq_totient [hp : Fact p.Prime] [hq : Fact q.Prime] 
     rw [← mul_assoc]
     have : c * c = 1 := Units.ext hc0sq
     rw [this, one_mul]
-  have hcard : (Finset.univ.filter good).card = (Finset.univ.filter fun k => ¬ good k).card := by
+  set S := Finset.univ.filter fun k : (ZMod (p * q))ˣ => (k : ZMod (p * q)) ^ 2 ∈ Q with hS
+  have hcard : (S.filter good).card = (S.filter fun k => ¬ good k).card := by
     refine Finset.card_bij' (fun k _ => c * k) (fun k _ => c * k) ?_ ?_ ?_ ?_
     · intro k hk
-      simp only [Finset.mem_filter, Finset.mem_univ, true_and] at hk ⊢
-      exact fun h => ((hflip k).1 h) hk
+      simp only [hS, Finset.mem_filter, Finset.mem_univ, true_and] at hk ⊢
+      exact ⟨by rw [hsq']; exact hk.1, fun h => ((hflip k hk.1).1 h) hk.2⟩
     · intro k hk
-      simp only [Finset.mem_filter, Finset.mem_univ, true_and] at hk ⊢
-      exact (hflip k).2 hk
+      simp only [hS, Finset.mem_filter, Finset.mem_univ, true_and] at hk ⊢
+      exact ⟨by rw [hsq']; exact hk.1, (hflip k hk.1).2 hk.2⟩
     · intro k _; exact hcc k
     · intro k _; exact hcc k
-  have htot := Finset.card_filter_add_card_filter_not (s := Finset.univ) good
-  rw [Finset.card_univ, ZMod.card_units_eq_totient] at htot
-  rw [← htot, ← hcard, two_mul]
-  congr 1 <;> exact congrArg _ (Finset.filter_congr fun k _ => hgood k)
+  have htot := Finset.card_filter_add_card_filter_not (s := S) good
+  rw [← htot, ← hcard, two_mul, Finset.filter_filter]
+  congr 1 <;> exact congrArg _ (Finset.filter_congr fun k _ => and_congr_right fun _ => hgood k)
+
+/-- **A square-root oracle factors `p q` on exactly half of the units** (Rabin, MIT/LCS/TR-212,
+1979, Section 4, Theorem 1 and its proof, equation (6)). Let `p ≠ q` be primes with `q` odd and let
+`O` be any function with `O(k²)² = k²` for every unit `k` modulo `p q` (a deterministic algorithm
+that returns one square root of each unit square). Then exactly half of the units `k` satisfy
+`gcd(k - O(k²), p q) ∈ {p, q}`, that is, the trial "draw `k`, compute `gcd(k - O(k²), n)`"
+factors `n` with probability exactly `1/2`. Rabin states the probability `1/2` for `n` a product
+of two (large) primes; here only `q` needs to be odd. -/
+theorem two_mul_card_gcd_mem_eq_totient [hp : Fact p.Prime] [hq : Fact q.Prime] (hpq : p ≠ q)
+    (hq2 : q ≠ 2) (O : ZMod (p * q) → ZMod (p * q))
+    (hO : ∀ k : (ZMod (p * q))ˣ, O ((k : ZMod (p * q)) ^ 2) ^ 2 = (k : ZMod (p * q)) ^ 2) :
+    2 * (Finset.univ.filter fun k : (ZMod (p * q))ˣ =>
+        Nat.gcd ((k : ZMod (p * q)) - O ((k : ZMod (p * q)) ^ 2)).val (p * q) ∈
+          ({p, q} : Finset ℕ)).card = Nat.totient (p * q) := by
+  classical
+  have h := two_mul_card_gcd_mem_eq_card hpq hq2 Set.univ O (fun k _ => hO k)
+  simp only [Set.mem_univ, true_and, Finset.filter_true_of_mem fun _ _ => trivial,
+    Finset.card_univ, ZMod.card_units_eq_totient] at h
+  convert h using 2
 
 end Factoring
 

@@ -10,6 +10,7 @@ root of each square modulo $n$ factors $n$ with probability $1/2$ per random tri
 - [The gcd with pq is a prime factor exactly when one prime divides](gcd-mul-mem-iff.md)
 - [A successful trial factors pq](is-factorization-of-gcd-mem.md)
 - [A square-root oracle factors pq on exactly half of the units](two-mul-card-gcd-mem-eq-totient.md)
+- [A partial square-root oracle factors pq on half of its domain](two-mul-card-gcd-mem-eq-card.md)
 
 ## Related topics
 
