@@ -22,10 +22,15 @@ For the cyclic model of this topic the circle argument is proved directly, as
 
 ## Informally uses
 
+- [Number of hash sequences that leave a given cell empty](card-not-mem-occupancy.md): the
+  circle argument on $n + 1$ cells, the step of Knuth's proof.
+
+## Background
+
 - [Linear probing succeeds exactly on partial parking functions](../../../../Combinatorics/parking-functions/lin-success-iff-is-partial-parking-funct.md):
-  identifies the sequences counted here with partial parking functions.
+  the identification used by the Lean proof.
 - [Number of partial parking functions](../../../../Combinatorics/parking-functions/pollak-partial-parking-functions-card.md):
-  the count being transferred.
+  the count that the Lean proof transfers.
 
 ## Sources
 
