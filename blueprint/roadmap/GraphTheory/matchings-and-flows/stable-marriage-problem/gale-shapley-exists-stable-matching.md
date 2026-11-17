@@ -5,6 +5,13 @@ Suppose that each $m \in M$ has a strict total order of preference on $W$ and ea
 a strict total order of preference on $M$. Then some perfect matching between $M$ and $W$ is
 stable for these preferences.
 
+The Lean statement carries unused `DecidableEq` instances; the form without them is the general existence theorem.
+
+## Informally uses
+
+- [Existence of stable perfect matchings](gale-shapley-exists-stable-matching-gene.md): the same statement without decidability assumptions.
+
 ## Sources
 
-- D. Gale and L. S. Shapley, "College Admissions and the Stability of Marriage", American Mathematical Monthly 69 (1962), 9–15, DOI 10.2307/2312726. It follows from `gale_shapley_exists_stable_matching_general`; the instances `[DecidableEq M]` and `[DecidableEq W]` are unused and keep the source's shape.
+- D. Gale and L. S. Shapley, "College admissions and the stability of marriage", *American Mathematical Monthly* 69 (1962), 9–15, DOI 10.2307/2312726, Theorem 1.
+- A. E. Roth, "The economics of matching: stability and incentives", *Mathematics of Operations Research* 7(4) (1982), 617–628, Theorem 1.
