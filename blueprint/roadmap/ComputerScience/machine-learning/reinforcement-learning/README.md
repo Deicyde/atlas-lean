@@ -6,6 +6,7 @@ Theory of reinforcement learning in finite discounted Markov decision processes,
 - [Performance difference lemma](performance-difference-lemma/README.md)
 - [Simulation lemma](simulation-lemma/README.md)
 - [Greedy policies of approximate values](greedy-policies-of-approximate-values/README.md)
+- [Approximate policy iteration](approximate-policy-iteration/README.md)
 - [Natural policy gradient](natural-policy-gradient/README.md)
 - [Policy gradients for softmax policies](policy-gradients-for-softmax-policies/README.md)
 - [Linear quadratic regulator](linear-quadratic-regulator/README.md)

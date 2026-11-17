@@ -14,3 +14,4 @@
 
 - [Performance difference lemma](../../machine-learning/reinforcement-learning/performance-difference-lemma/README.md)
 - [Stochastic policies and discounted occupancy](../../machine-learning/reinforcement-learning/stochastic-policies-and-discounted-occupancy/README.md)
+- [Approximate policy iteration](../../machine-learning/reinforcement-learning/approximate-policy-iteration/README.md)
