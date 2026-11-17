@@ -17,6 +17,13 @@ quadratic residuosity assumption on circuits, the random self-reducibility of qu
 (their Theorems 1 and 2), and the fact that $y x^2$ is uniform among non-residues with Jacobi symbol
 $+1$ (the experiment is stated with $y x^2$ directly).
 
+In this concrete setting every function counts as an adversary, and an unbounded distinguisher can
+factor $N$; so the hypothesis "every distinguisher has residuosity advantage at most
+$\varepsilon$" holds only for large $\varepsilon$. The statements that carry over to efficient
+adversaries are the per-adversary ones: the exact reduction of eavesdropping security and the
+per-adversary semantic security, each of which builds one residuosity distinguisher from one call to
+the adversary.
+
 ## The scheme and its correctness
 
 - [Goldwasser–Micali encryption of one bit](encrypt-bit.md)
@@ -44,6 +51,7 @@ $+1$ (the experiment is stated with $y x^2$ directly).
 - [Distinguishing Goldwasser–Micali ciphertexts is deciding residuosity](ind-exp-scheme.md)
 - [Quadratic residuosity implies indistinguishable encryptions](ind-secure-of-qr-advantage-le.md)
 - [Quadratic residuosity implies semantic security](semantically-secure-of-qr-advantage-le.md)
+- [Semantic security of Goldwasser–Micali, per adversary](win-prob-ss-real-le-qr-advantage.md)
 
 ## Related topics
 

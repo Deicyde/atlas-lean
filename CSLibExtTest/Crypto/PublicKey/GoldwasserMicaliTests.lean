@@ -78,6 +78,17 @@ example {R : Type} (A : PubCPAAdversary Bool (ZMod 15)ˣ (ZMod 15)ˣ R) :
       qrAdvantage (PMF.pure (y, (3, 5))) A.coins (reduction A) / 2 :=
   pubCpaAdvantage_eq_qrAdvantage _ A
 
+/-- Semantic security per adversary, instantiated: guessing the plaintext bit itself. -/
+example (coins : PMF Unit) (A : (ZMod 15)ˣ → (ZMod 15)ˣ → Unit → Unit → Bool) :
+    winProb (SemanticSecurity.ssReal (scheme 15 (PMF.pure (y, (3, 5)))) coins A
+        (PMF.pure true) (fun _ => ()) id) ≤
+      winProb (SemanticSecurity.ssIdeal (fun _ => 0)
+        (SemanticSecurity.simulator (scheme 15 (PMF.pure (y, (3, 5)))) coins (fun _ => false) A)
+        (PMF.pure true) (fun _ => ()) id) +
+        qrAdvantage (PMF.pure (y, (3, 5))) coins
+          (SemanticSecurity.ssDistinguisher A (fun _ => ()) id true) :=
+  winProb_ssReal_le_qrAdvantage _ coins A _ _ _
+
 /-- The semantic-security corollary with the trivial error `1` (every advantage is at most `1`). -/
 example (coins : PMF Unit) :
     SemanticSecurity.SemanticallySecure (scheme 15 (PMF.pure (y, (3, 5)))) (fun _ => 0) coins

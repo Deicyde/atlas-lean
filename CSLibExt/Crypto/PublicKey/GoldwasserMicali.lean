@@ -51,6 +51,13 @@ experiment is stated with `y x²` directly). `qrAdvantage` is its distinguishing
   experiment) and hence, by `SemanticSecurity.IndSecure.semanticallySecure` (Goldreich,
   Proposition 5.2.6), is semantically secure with error `ε`: no adversary computes any function
   of the plaintext bit from the ciphertext better than a simulator that never sees it.
+* `winProb_ssReal_le_qrAdvantage` (**semantic security per adversary**): the success of any one
+  adversary exceeds that of its simulator by at most the residuosity advantage of one explicit
+  distinguisher that calls the adversary once. Since every function is an admissible adversary in
+  this concrete setting, and an unbounded distinguisher can factor `N`, the hypothesis "every
+  distinguisher has residuosity advantage at most `ε`" of the two previous results holds only for
+  large `ε`; the per-adversary statements (this one and `pubCpaAdvantage_eq_qrAdvantage`) are the
+  ones that transfer to efficient adversaries.
 
 **Scope.** Only the encryption of a single bit is treated as a framework scheme; messages of
 `ℓ` bits (bitwise encryption) and the hybrid argument that loses a factor `ℓ` are not formalized.
@@ -341,6 +348,26 @@ theorem indSecure_of_qrAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ �
   · rw [advantage_comm]; exact hqr D
   · exact hqr D
   · simpa using hε
+
+/-- **Semantic security of Goldwasser–Micali, per adversary** (one-bit messages, concrete form):
+for every adversary `A`, plaintext distribution `X`, information `h` and target `f`, `A` computes
+`f` of the plaintext bit at most `ε` more often than the simulator of Goldreich's Proposition 5.2.6
+(which runs `A` on an encryption of `0`), where `ε` is the quadratic-residuosity advantage of the
+single distinguisher `ssDistinguisher A h f true`, which calls `A` once. This is the form that
+transfers to efficient adversaries. -/
+theorem winProb_ssReal_le_qrAdvantage {R H T : Type*} [DecidableEq T]
+    (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
+    (A : (ZMod N)ˣ → (ZMod N)ˣ → H → R → T) (X : PMF Bool) (h : Bool → H) (f : Bool → T) :
+    winProb (SemanticSecurity.ssReal (scheme N kgen) coins A X h f) ≤
+      winProb (SemanticSecurity.ssIdeal (fun _ => 0)
+        (SemanticSecurity.simulator (scheme N kgen) coins (fun _ => false) A) X h f) +
+        qrAdvantage kgen coins (SemanticSecurity.ssDistinguisher A h f true) := by
+  refine SemanticSecurity.winProb_ssReal_le _ _ _ _ A X h f (advantage_nonneg _ _) fun x _ => ?_
+  rw [SemanticSecurity.indAdvantage, indExp_scheme, indExp_scheme]
+  cases x
+  · rw [advantage_self]
+    exact advantage_nonneg _ _
+  · exact le_of_eq (by rw [qrAdvantage])
 
 /-- **Quadratic residuosity implies semantic security** (Goldwasser and Micali, STOC 1982, for one
 bit; concrete form): if every distinguisher with coins from `coins` has quadratic-residuosity

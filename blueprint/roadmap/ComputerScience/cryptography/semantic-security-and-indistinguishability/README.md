@@ -10,7 +10,11 @@ $\varepsilon$ in place of Goldreich's $1/p(n)$. Both implications are proved: in
 with error $\varepsilon$ gives semantic security with error $\varepsilon$, and semantic security with
 error $\varepsilon$ gives indistinguishability with error $2\varepsilon$. There is no security parameter
 and no bound on the running time of adversaries, so the asymptotic Theorem 5.2.5 is not claimed; the
-reductions used are one call to the given adversary.
+reductions used are one call to the given adversary. Since every function is an admissible
+adversary, the two definitions with a small $\varepsilon$ describe information-theoretic security;
+for computational schemes the per-adversary statements (the one-adversary form of Proposition 5.2.6
+below, and the per-adversary reductions of the schemes linked under Related topics) are the ones that
+transfer to efficient adversaries.
 
 ## Indistinguishability of encryptions
 

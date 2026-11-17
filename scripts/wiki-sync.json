@@ -9138,6 +9138,7 @@
 "Cslib.Crypto.PublicKey.GoldwasserMicali.scheme": "803458347319b6f1",
 "Cslib.Crypto.PublicKey.GoldwasserMicali.scheme_correct": "9479fd46363b5ced",
 "Cslib.Crypto.PublicKey.GoldwasserMicali.semanticallySecure_of_qrAdvantage_le": "27fc1582f40f57bf",
+"Cslib.Crypto.PublicKey.GoldwasserMicali.winProb_ssReal_le_qrAdvantage": "99e7a6780fa81850",
 "Cslib.Crypto.PublicKey.HardCoreEncryption.hcAdvantage": "82cc681de4268436",
 "Cslib.Crypto.PublicKey.HardCoreEncryption.hcExp": "68b0fbaa595cfca4",
 "Cslib.Crypto.PublicKey.HardCoreEncryption.indAdvantage_eq": "8ba7748b0c29aba1",

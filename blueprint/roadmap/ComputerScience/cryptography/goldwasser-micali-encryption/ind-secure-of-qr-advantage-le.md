@@ -5,6 +5,9 @@ most $\varepsilon$, then the [one-bit Goldwasser–Micali scheme](scheme.md) has
 [indistinguishable encryptions with error $\varepsilon$](../semantic-security-and-indistinguishability/ind-secure.md),
 all one-bit messages being given the same length.
 
+The hypothesis quantifies over all functions, so against unbounded distinguishers it holds only for
+large $\varepsilon$; see the [per-adversary form](win-prob-ss-real-le-qr-advantage.md).
+
 ## Informally uses
 
 - [Distinguishing Goldwasser–Micali ciphertexts is deciding residuosity](ind-exp-scheme.md)

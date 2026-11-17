@@ -10,6 +10,9 @@ often.
 This is Goldwasser and Micali's main theorem for one bit, in concrete form, with no security
 parameter. The journal version, "Probabilistic encryption", J. Comput. System Sci. 28 (1984), 270-299, was not consulted for these pages.
 
+The hypothesis quantifies over all functions, so against unbounded distinguishers it holds only for
+large $\varepsilon$; see the [per-adversary form](win-prob-ss-real-le-qr-advantage.md).
+
 ## Informally uses
 
 - [Quadratic residuosity implies indistinguishable encryptions](ind-secure-of-qr-advantage-le.md)
