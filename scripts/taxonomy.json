@@ -2116,6 +2116,8 @@
   "MathlibExt/Analysis/Optimization/LineSearch": {"to": "Analysis/numerical-analysis", "title": "Line search methods"},
   "MathlibExt/Analysis/Optimization/QuasiNewton": {"to": "Analysis/numerical-analysis", "title": "Quasi-Newton methods"},
   "MathlibExt/Analysis/Optimization/TrustRegion": {"to": "Analysis/numerical-analysis", "title": "Trust-region methods"},
+  "MathlibExt/Analysis/PDE/HeatKernel": {"to": "Analysis/partial-differential-equations", "title": "Heat equation"},
+  "MathlibExt/Analysis/PDE/HeatMaximumPrinciple": {"to": "Analysis/partial-differential-equations", "title": "Heat equation"},
   "MathlibExt/Analysis/PDE/LaplaceMaximumPrinciple": {"to": "Analysis/potential-theory", "title": "Maximum principle for harmonic functions"},
   "MathlibExt/Analysis/PDE/WeakSolutions": {"to": "Analysis/partial-differential-equations", "title": "Weak solutions of elliptic equations"},
   "MathlibExt/Analysis/PathSignature/Basic": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Signature of a path"},
