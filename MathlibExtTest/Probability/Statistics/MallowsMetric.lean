@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.Statistics.MallowsMetric
+public import Mathlib.Probability.Distributions.Gaussian.Real
 
 @[expose] public section
 
@@ -60,7 +61,24 @@ example : wasserstein 2 (conv (δ 3) (δ 5)) (conv (δ 0) (δ 5)) ^ (2 : ℝ) �
     wasserstein 2 (δ 3) (δ 0) ^ (2 : ℝ) + wasserstein 2 (δ 5) (δ 5) ^ (2 : ℝ) :=
   wasserstein_two_conv_sq_le _ _ _ _ (memLp_δ 3) (memLp_δ 0) (memLp_δ 5) (memLp_δ 5) rfl
 
-/-- Mallows' contraction (2.2) for `δ₀` against `δ₁` and `m = 4` summands. -/
+/-- The Gaussian law `N(a, v)` as a probability measure. -/
+noncomputable abbrev gauss (a : ℝ) (v : NNReal) : ProbabilityMeasure ℝ :=
+  ⟨ProbabilityTheory.gaussianReal a v, inferInstance⟩
+
+/-- Mallows' contraction (2.2) on a non-degenerate pair: a Gaussian law against a Dirac mass,
+with `m = 3` summands. Both laws have finite second moments and the Gaussian one is not a point
+mass, so the normalised sums are not point masses either. -/
+example : wasserstein 2
+    ((convPow ((gauss 1 2).map (· - ∫ x, x ∂(gauss 1 2 : Measure ℝ))) 3).map
+      ((Real.sqrt 3)⁻¹ • ·))
+    ((convPow ((δ 5).map (· - ∫ x, x ∂(δ 5 : Measure ℝ))) 3).map ((Real.sqrt 3)⁻¹ • ·)) ≤
+      wasserstein 2 (gauss 1 2) (δ 5) := by
+  have h := wasserstein_two_normalizedSum_le (gauss 1 2) (δ 5)
+    (ProbabilityTheory.memLp_id_gaussianReal 2) (memLp_δ 5) 3
+  exact_mod_cast h
+
+/-- Mallows' contraction (2.2) for `δ₀` against `δ₁` and `m = 4` summands (a degenerate check:
+both centred laws are `δ₀`). -/
 example : wasserstein 2
     ((convPow ((δ 0).map (· - ∫ x, x ∂(δ 0 : Measure ℝ))) 4).map ((Real.sqrt 4)⁻¹ • ·))
     ((convPow ((δ 1).map (· - ∫ x, x ∂(δ 1 : Measure ℝ))) 4).map ((Real.sqrt 4)⁻¹ • ·)) ≤

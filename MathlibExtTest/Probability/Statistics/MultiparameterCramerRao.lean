@@ -15,7 +15,7 @@ public import Mathlib.MeasureTheory.Measure.Count
 public import Mathlib.Algebra.Order.Star.Real
 
 /-!
-# Tests for the multiparameter Cramér–Rao inequality
+# Tests for the Cramér–Rao inequality with a vector parameter
 
 The two-point model `p θ = ((1 + sin θ₀) / 2, (1 - sin θ₀) / 2)` with a parameter
 `θ ∈ ℝ¹ = EuclideanSpace ℝ (Fin 1)` satisfies every hypothesis of `cramerRao_multiparameter` at

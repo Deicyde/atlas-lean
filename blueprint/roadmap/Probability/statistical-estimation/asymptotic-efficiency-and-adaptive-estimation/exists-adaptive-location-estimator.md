@@ -4,11 +4,11 @@ Consider i.i.d. observations $X_i = \theta + \varepsilon_i$, where the law $G$ o
 $$I(G) = \int \frac{g'(x)^2}{g(x)} \, dx$$
 when $g$ is absolutely continuous (and $I(G) = \infty$ otherwise).
 
-There are measurable estimators $T_n(X_1, \dots, X_n)$, equivariant under translations ($T_n(x + c) = T_n(x) + c$) and under positive rescalings ($T_n(a x) = a T_n(x)$ for $a > 0$), such that for every symmetric $G$ with an absolutely continuous density and $I(G) < \infty$,
+There are measurable estimators $T_n(X_1, \dots, X_n)$, $n \ge 1$, equivariant under translations ($T_n(x + c) = T_n(x) + c$) and under positive rescalings ($T_n(a x) = a T_n(x)$ for $a > 0$), such that for every symmetric $G$ with an absolutely continuous density and $I(G) < \infty$,
 $$\sqrt n \, T_n(X_1, \dots, X_n) \xrightarrow{d} N\bigl(0, I(G)^{-1}\bigr) \quad\text{for } X_i \text{ i.i.d. } G .$$
 By translation equivariance the same holds at every $\theta$ for $\sqrt n(T_n - \theta)$. Since $I(G)^{-1}$ is the information bound of the parametric model in which $G$ is known, the estimators are *adaptive*: not knowing $G$ costs nothing asymptotically. Bickel (1982) derives sufficient conditions for adaptation, motivated by Stein's (1956) necessary condition, and applies them to the parameters of linear models and of multivariate elliptic distributions.
 
-In Lean, weak convergence is tested against bounded continuous functions, and the limit variance is written $(\int g'^2/g)^{-1}$; the integral is positive for every probability density covered by the hypotheses.
+In Lean, $T$ is indexed by all $n \in \mathbb N$ but the equivariance clauses are required only for samples of size $n \ge 1$: on the empty sample translation equivariance would force $T_0 = T_0 + c$, which no map satisfies. Weak convergence is tested against bounded continuous functions, and the limit variance is written $(\int g'^2/g)^{-1}$; the integral is positive for every probability density covered by the hypotheses.
 
 ## Background
 

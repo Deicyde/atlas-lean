@@ -7,7 +7,8 @@ error of the Lasso lies. The restricted eigenvalue condition asks for a lower bo
 $\frac1n \|X\Delta\|_2^2 \ge \kappa \|\Delta\|_2^2$ on that cone, and gives deterministic
 $\ell_2$-error bounds of order $\frac{1}{\kappa}\sqrt{s}\,\lambda$ for the regularized and the
 constrained Lasso (Hastie, Tibshirani and Wainwright, *Statistical Learning with Sparsity*, 2015,
-§11.2; Wainwright, *High-Dimensional Statistics*, 2019, §7.3). The restricted eigenvalue condition was introduced by Bickel, Ritov and Tsybakov
+§11.2; Wainwright, *High-Dimensional Statistics*, 2019, §7.3). The restricted eigenvalue condition was introduced, in a slightly different normalisation (their
+Assumption RE$(s, c_0)$ divides $\|X\Delta\|_2/\sqrt n$ by $\|\Delta_S\|_2$ rather than by $\|\Delta\|_2$), by Bickel, Ritov and Tsybakov
 ("Simultaneous analysis of Lasso and Dantzig selector", *Ann. Statist.* 37 (2009) 1705–1732),
 who proved bounds of this kind for the Lasso and the Dantzig selector together.
 

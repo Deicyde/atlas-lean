@@ -21,10 +21,12 @@ public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 /-!
 # The Cramér–Rao bound for a finite-dimensional parameter
 
-For a parameter `θ ∈ ℝ^k` with positive definite Fisher information matrix `I(θ)`, an unbiased
-estimator `T` of `g(θ)` satisfies `Var_θ T ≥ ∇g(θ)ᵀ I(θ)⁻¹ ∇g(θ)` (C. R. Rao, "Information and
-the accuracy attainable in the estimation of statistical parameters", *Bull. Calcutta Math.
-Soc.* 37 (1945) 81–91).
+For a parameter `θ ∈ ℝ^k` with positive definite Fisher information matrix `I(θ)`, a real-valued
+unbiased estimator `T` of a real function `g(θ)` satisfies `Var_θ T ≥ ∇g(θ)ᵀ I(θ)⁻¹ ∇g(θ)`
+(C. R. Rao, "Information and the accuracy attainable in the estimation of statistical
+parameters", *Bull. Calcutta Math. Soc.* 37 (1945) 81–91). This is the form for one real
+estimator. The matrix form `Cov_θ(T) ⪰ J I(θ)⁻¹ Jᵀ` for a vector of estimators follows by
+applying it to every linear combination `cᵀ T`, but it is not stated here.
 
 The proof reduces to the one-parameter inequality
 `MathlibExt.Probability.Statistics.FisherInformation.sq_deriv_le_fisherInformation_mul` along the
@@ -265,15 +267,17 @@ theorem sq_inner_le_quadForm_mul {ν : Measure 𝓧} {p : EuclideanSpace ℝ (Fi
   rw [hgline, hfish] at key
   simpa [hq0] using key
 
-/-- **Multiparameter Cramér–Rao inequality** (C. R. Rao, *Bull. Calcutta Math. Soc.* 37 (1945)
-81–91). Let `p θ'` (`θ' ∈ ℝ^k`) be nonnegative probability densities with respect to `ν` for
-`θ'` near `θ`, differentiable in the parameter at `θ`, with square-integrable partial scores
+/-- **Cramér–Rao inequality for a real estimand of a vector parameter** (C. R. Rao, *Bull.
+Calcutta Math. Soc.* 37 (1945) 81–91). Let `p θ'` (`θ' ∈ ℝ^k`) be nonnegative probability
+densities with respect to `ν` for `θ'` near `θ`, differentiable in the parameter at `θ`, with square-integrable partial scores
 `∂_i p θ / p θ` and positive definite Fisher information matrix
 `I(θ)_{ij} = ∫ ∂_i p θ ∂_j p θ / p θ dν`. Let `T` be an estimator with finite second moment
 under `p θ` that is unbiased for `g θ'` near `θ`, and suppose `∫ p θ' dν` and `∫ T p θ' dν`
 can be differentiated under the integral sign at `θ`. Then
-`∇g(θ)ᵀ I(θ)⁻¹ ∇g(θ) ≤ Var_θ T = ∫ (T - g θ)² p θ dν`. For `k = 1` this is
-`FisherInformation.cramerRao`. -/
+`∇g(θ)ᵀ I(θ)⁻¹ ∇g(θ) ≤ Var_θ T = ∫ (T - g θ)² p θ dν`. This is the bound for one real-valued
+estimator `T`; the matrix form `Cov_θ(T) ⪰ J I(θ)⁻¹ Jᵀ` for vector estimators follows by applying
+it to each `cᵀ T` but is not stated. For `k = 1` it corresponds to `FisherInformation.cramerRao`
+under the identification of `ℝ¹` with `ℝ`. -/
 theorem cramerRao_multiparameter {ν : Measure 𝓧} {p : EuclideanSpace ℝ (Fin k) → 𝓧 → ℝ}
     {T : 𝓧 → ℝ} {g : EuclideanSpace ℝ (Fin k) → ℝ} {θ : EuclideanSpace ℝ (Fin k)}
     (hp_nonneg : ∀ θ' x, 0 ≤ p θ' x)

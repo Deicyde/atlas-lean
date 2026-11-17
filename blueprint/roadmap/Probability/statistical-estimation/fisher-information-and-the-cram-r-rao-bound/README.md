@@ -6,7 +6,7 @@
 - [Cramér–Rao inequality](cramer-rao-general.md)
 - [Cramér–Rao inequality](cramer-rao.md)
 - [Directional Cramér–Rao inequality](sq-inner-le-quad-form-mul.md)
-- [Multiparameter Cramér–Rao inequality](cramer-rao-multiparameter.md)
+- [Cramér–Rao inequality for a real estimand of a vector parameter](cramer-rao-multiparameter.md)
 - [Wald's consistency theorem for maximum likelihood](ae-tendsto-maximum-likelihood.md)
 
 ## Related topics
