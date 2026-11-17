@@ -4276,6 +4276,7 @@
   "MathlibExt/Probability/Statistics/Survival/KaplanMeier": {"to": "Probability/nonparametric-survival", "title": "Kaplan–Meier estimator"},
   "MathlibExt/Probability/Statistics/TwoGroupsTesting": {"to": "Probability/hypothesis-testing", "title": "Two-groups model and local false discovery rates"},
   "MathlibExt/Probability/Statistics/UStatistic": {"to": "Probability/nonparametric-survival", "title": "U-statistics"},
+  "MathlibExt/Probability/Statistics/WaldInequalities": {"to": "Probability/hypothesis-testing", "title": "Sequential tests and quickest change detection"},
   "MathlibExt/Probability/Statistics/WeightedConformal": {"to": "Probability/hypothesis-testing", "title": "Conformal prediction under covariate shift"},
   "MathlibExt/Probability/StieltjesMeasureConstruction": {"to": "Probability/foundations", "title": "Probability measures from distribution functions"},
   "MathlibExt/Probability/StochasticOrder": {"to": "Probability/correlation-inequalities", "title": "Stochastic domination and Strassen's theorem"},

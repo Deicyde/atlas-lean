@@ -1,16 +1,20 @@
 # Sequential tests and quickest change detection
 
-Observations $X_1, X_2, \dots$ arrive one at a time and the statistician decides after each one whether to stop. To test $P_0$ against $P_1$ with i.i.d. observations, Wald's sequential probability ratio test stops when the log-likelihood ratio $\Lambda_n$ leaves an interval $(a, b)$; Wald's inequalities bound its error probabilities by the boundaries, and the Wald–Wolfowitz theorem says that no test with smaller or equal error probabilities has smaller expected sample size under either hypothesis. In quickest change detection the law switches from $P_0$ to $P_1$ at an unknown time: with a geometric prior on the change point, Shiryaev's rule (stop when the posterior probability of a change exceeds a threshold) minimises the expected delay under a false-alarm constraint, and without a prior Page's CUSUM minimises Lorden's worst-case delay for a given mean time to false alarm (Moustakides 1986). The definitions and the closed form of CUSUM are proved; Wald's inequalities and the three optimality theorems are wanted statements. All of these problems reduce to optimal stopping problems (Peskir and Shiryaev, *Optimal Stopping and Free-Boundary Problems*, 2006, Introduction (B) and Chapter VI, where the continuous-time Wiener and Poisson versions are solved).
+Observations $X_1, X_2, \dots$ arrive one at a time and the statistician decides after each one whether to stop. To test $P_0$ against $P_1$ with i.i.d. observations, Wald's sequential probability ratio test stops when the log-likelihood ratio $\Lambda_n$ leaves an interval $(a, b)$; Wald's inequalities bound its error probabilities by the boundaries, and the Wald–Wolfowitz theorem says that no test with smaller or equal error probabilities has smaller expected sample size under either hypothesis. In quickest change detection the law switches from $P_0$ to $P_1$ at an unknown time: with a geometric prior on the change point, Shiryaev's rule (stop when the posterior probability of a change exceeds a threshold) minimises the expected delay under a false-alarm constraint, and without a prior Page's CUSUM minimises Lorden's worst-case delay for a given mean time to false alarm (Moustakides 1986). The definitions, the closed form of CUSUM and Wald's inequalities (through the likelihood-ratio change of measure on the first $n$ observations) are proved; the three optimality theorems are wanted statements. All of these problems reduce to optimal stopping problems (Peskir and Shiryaev, *Optimal Stopping and Free-Boundary Problems*, 2006, Introduction (B) and Chapter VI, where the continuous-time Wiener and Poisson versions are solved).
 
 ## Observations and likelihood ratios
 
 - [Filtration of the first `n` observations](observation-filtration.md)
 - [Log-likelihood ratio of one observation](log-likelihood-ratio.md)
 - [Cumulative log-likelihood ratio](llr-sum.md)
+- [The cumulative log-likelihood ratio is adapted](adapted-llr-sum.md)
+- [Density of a finite product of absolutely continuous laws](pi-eq-with-density-rn-deriv.md)
+- [Likelihood-ratio change of measure on the first `n` observations](infinite-pi-apply-eq-set-lintegral-prod.md)
 
 ## Wald's sequential probability ratio test
 
 - [Wald's sequential probability ratio test](sprt-time.md)
+- [The SPRT stopping time is a stopping time](is-stopping-time-sprt-time.md)
 - [Event that the SPRT stops and accepts `P₁`](sprt-accept-one.md)
 - [Event that the SPRT stops and accepts `P₀`](sprt-accept-zero.md)
 - [Wald's inequality on the acceptance of the null hypothesis](sprt-accept-zero-le.md)

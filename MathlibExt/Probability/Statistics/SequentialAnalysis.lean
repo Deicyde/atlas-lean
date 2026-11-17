@@ -33,10 +33,10 @@ observation `X_{i+1}`):
   probability of a change under a geometric prior, and the Shiryaev alarm time.
 
 The main proved statement is the closed form of the CUSUM recursion,
-`MeasureTheory.pageCusum_eq_sup`. The optimality theorems of sequential analysis (Wald's
-inequalities, the Wald–Wolfowitz theorem, Shiryaev's Bayesian optimality, the optimality of CUSUM
-under Lorden's criterion) are recorded in
-`WantedExt.Probability.Statistics.SequentialAnalysisWanted`.
+`MeasureTheory.pageCusum_eq_sup`. Wald's inequalities for the SPRT are proved in
+`MathlibExt.Probability.Statistics.WaldInequalities`; the optimality theorems (the
+Wald–Wolfowitz theorem, Shiryaev's Bayesian optimality, the optimality of CUSUM under Lorden's
+criterion) are recorded in `WantedExt.Probability.Statistics.SequentialAnalysisWanted`.
 
 ## References
 

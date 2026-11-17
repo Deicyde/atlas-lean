@@ -9,7 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Batteries.Util.ProofWanted
-public import MathlibExt.Probability.Statistics.SequentialAnalysis
+public import MathlibExt.Probability.Statistics.WaldInequalities
 public import Mathlib.InformationTheory.KullbackLeibler.Basic
 
 /-!
@@ -26,7 +26,7 @@ integrability hypothesis is hidden.
 
 * T. L. Lai, *Sequential analysis: some classical problems and new challenges*, Statistica Sinica
   11 (2001) 303–408, §2 (p. 305) and §3 (p. 316).
-* B. Eisenberg, *Sequential probability ratio test*, Encyclopedia of Mathematics, equation (a2).
+* B. Eisenberg, *Sequential probability ratio test*, Encyclopedia of Mathematics.
 * V. V. Veeravalli and T. Banerjee, *Quickest change detection*, arXiv:1210.5552 (revised
   version dated 27 November 2024), Theorem 3.1.
 -/
@@ -39,32 +39,6 @@ open scoped ENNReal
 namespace MeasureTheory
 
 variable {X : Type*} [MeasurableSpace X]
-
-/-- **Wald's inequality on the acceptance of the null hypothesis.** For the SPRT with
-log-boundaries `a < 0 < b`, `P₁(accept P₀) ≤ e^a P₀(accept P₀)`, where both events require the
-test to stop. This is the first line of Wald's inequalities, `β = ∫_{λ_N ≤ A} λ_N dP₀ ≤ A (1 - α)`
-(Encyclopedia of Mathematics, *Sequential probability ratio test*, equation (a2), whose lower
-boundary `A` is `e^a` here); `1 - α` equals `P₀(accept P₀)` when the SPRT stops `P₀`-almost
-surely. -/
-theorem_wanted sprt_acceptZero_le {P₀ P₁ : Measure X} [IsProbabilityMeasure P₀]
-    [IsProbabilityMeasure P₁] (h₁₀ : P₁ ≪ P₀) (h₀₁ : P₀ ≪ P₁) {a b : ℝ} (ha : a < 0)
-    (hb : 0 < b) :
-    Measure.infinitePi (fun _ : ℕ => P₁) (sprtAcceptZero P₀ P₁ a b) ≤
-      ENNReal.ofReal (Real.exp a) *
-        Measure.infinitePi (fun _ : ℕ => P₀) (sprtAcceptZero P₀ P₁ a b)
-
-/-- **Wald's inequality on the acceptance of the alternative.** For the SPRT with log-boundaries
-`a < 0 < b`, `e^b P₀(accept P₁) ≤ P₁(accept P₁)`: the second line of Wald's inequalities,
-`1 - β = ∫_{λ_N ≥ B} λ_N dP₀ ≥ B α` (Encyclopedia of Mathematics, *Sequential probability ratio
-test*, equation (a2), whose upper boundary `B` is `e^b` here). With the first inequality it gives
-Wald's approximations `e^b ≈ (1 - β)/α` and `e^a ≈ β/(1 - α)`, which are equalities when the
-log-likelihood ratio has no overshoot. -/
-theorem_wanted sprt_acceptOne_ge {P₀ P₁ : Measure X} [IsProbabilityMeasure P₀]
-    [IsProbabilityMeasure P₁] (h₁₀ : P₁ ≪ P₀) (h₀₁ : P₀ ≪ P₁) {a b : ℝ} (ha : a < 0)
-    (hb : 0 < b) :
-    ENNReal.ofReal (Real.exp b) *
-        Measure.infinitePi (fun _ : ℕ => P₀) (sprtAcceptOne P₀ P₁ a b) ≤
-      Measure.infinitePi (fun _ : ℕ => P₁) (sprtAcceptOne P₀ P₁ a b)
 
 /-- **Wald–Wolfowitz theorem: optimality of the SPRT.** Let `P₀ ≠ P₁` be mutually absolutely
 continuous and consider the SPRT with log-boundaries `a < 0 < b`. Let `(T, D)` be any test: a
