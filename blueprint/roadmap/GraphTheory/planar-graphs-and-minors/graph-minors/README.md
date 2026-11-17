@@ -10,3 +10,9 @@
 - [A single minor step gives a minor](of-step.md)
 - [An isomorphic copy is a minor](of-iso.md)
 - [Robertson–Seymour theorem](robertson-seymour.md)
+- [Graph minor theorem (Robertson–Seymour)](graph-minor-theorem.md)
+
+## Related topics
+
+- [Tree-width](../tree-width/README.md): the width parameter that does not increase under minors,
+  and the tree-width and grid theorems used to prove the graph minor theorem.

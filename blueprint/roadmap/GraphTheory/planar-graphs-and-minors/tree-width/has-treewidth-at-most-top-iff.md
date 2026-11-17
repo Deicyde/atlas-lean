@@ -1,0 +1,16 @@
+# Tree-width of complete graphs
+
+Let $V$ be a finite set with $n$ elements. The complete graph on $V$ has tree-width at most $k$
+if and only if $n \le k + 1$. Hence $\mathrm{tw}(K_n) = n - 1$ for every $n \ge 1$; for $n = 0$ the
+statement says that the graph with no vertices has tree-width at most every $k$.
+
+The upper bound puts all vertices in a single bag. The lower bound is the case $K = V$ of the
+fact that every clique lies in a bag.
+
+## Informally uses
+
+- [Every clique lies in a bag](exists-bag-superset.md): applied to the whole vertex set of $K_n$.
+
+## Sources
+
+- R. Diestel, *Graph Theory*, 6th edition, author's online preview of Chapter 12 (PDF dated 28 June 2024, https://diestel-graph-theory.com/), Section 12.4 and Corollary 12.3.5.
