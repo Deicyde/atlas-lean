@@ -27,3 +27,4 @@ Nesterov's own analysis uses estimate sequences: quadratic functions $\varphi_k(
 - [Mirror descent](../mirror-descent/README.md): the $z$-sequence of the accelerated method is a weighted mirror-descent step; the Bregman Lagrangian is written with the same Bregman divergence.
 - [Euler–Lagrange equation](../euler-lagrange-equation/README.md): the variational principle behind the continuous-time flows.
 - [Lower complexity bounds for first-order methods](../lower-complexity-bounds-for-first-order-methods/README.md): no method querying only gradients beats these rates by more than a constant factor.
+- [Nesterov smoothing](../nesterov-smoothing/README.md): applies the optimal method to a smooth approximation of a nonsmooth max-type function.
