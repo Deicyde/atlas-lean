@@ -12,3 +12,5 @@
 - [Word balls of a finite generating family are finite](finite-word-length-le.md)
 - [Growth functions of two generating families dominate each other](growth-le-growth-mul.md)
 - [Polynomial growth is independent of the finite generating set](has-polynomial-growth-iff.md)
+- [Virtually nilpotent groups have polynomial growth](has-polynomial-growth-of-virtually-nilpo.md)
+- [Gromov's polynomial growth theorem](virtually-nilpotent-of-has-polynomial-gr.md)

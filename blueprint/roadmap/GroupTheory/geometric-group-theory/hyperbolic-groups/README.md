@@ -9,3 +9,7 @@
 - [Finite groups are word-hyperbolic](of-finite.md)
 - [Word metrics isometric to a hyperbolic space are hyperbolic](is-delta-hyperbolic-of-dist-eq-word-leng.md)
 - [The infinite cyclic group is word-hyperbolic](is-hyperbolic-multiplicative-int.md)
+- [Free groups are `0`-hyperbolic](free-group-is-delta-hyperbolic-zero.md)
+- [Hyperbolicity does not depend on the finite generating set](is-delta-hyperbolic-of-is-hyperbolic.md)
+- [Hyperbolic groups are finitely presented](is-finitely-presented-of-is-hyperbolic.md)
+- [Hyperbolic groups have solvable word problem](word-problem-solvable-of-is-hyperbolic.md)
