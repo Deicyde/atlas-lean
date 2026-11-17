@@ -5,9 +5,12 @@ partition $\mathcal P_i$ and plays $s_i(\omega)$ at the state $\omega$. Player $
 $\omega$ when no action $k$ has a lower conditional expected cost given $i$'s information:
 $$\mathbb E\bigl[c_i(s) \mid \mathcal P_i\bigr](\omega) \le \mathbb E\bigl[c_i(k, s_{-i}) \mid \mathcal P_i\bigr](\omega)\quad\text{for every action } k.$$
 Aumann states the condition for payoffs $h_i = -c_i$, with the inequality reversed. On a null cell
-the conditional expectations are $0$ (Lean's $x/0 = 0$) and the condition holds trivially; on
-nonnull cells it is equivalent to the unnormalised inequality of
-[Bayes rationality without normalisation](is-bayes-rational-iff-sum.md).
+the conditional expectations are $0$ (Lean's $x/0 = 0$) and the condition holds trivially.
+
+## Related topics
+
+- [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md): on nonnull cells,
+  the equivalent inequality between sums weighted by the prior.
 
 ## Sources
 

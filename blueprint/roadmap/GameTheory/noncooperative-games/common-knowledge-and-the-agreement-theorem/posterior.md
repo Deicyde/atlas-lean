@@ -5,9 +5,13 @@ an agent's information partition. The agent's posterior probability of the event
 $\omega$ is
 $$q(\omega) = \frac{\mu(A \cap P(\omega))}{\mu(P(\omega))}.$$
 It is the conditional probability of $A$ given the cell $P(\omega)$, and agrees with Mathlib's
-conditional measure $\mu[\,\cdot \mid P(\omega)]$
-([Posteriors are conditional probabilities](posterior-eq-cond.md)). If the cell is null, Lean's
+conditional measure $\mu[\,\cdot \mid P(\omega)]$. If the cell is null, Lean's
 convention $x / 0 = 0$ makes the posterior $0$; Aumann assumes the relevant cells nonnull.
+
+## Related topics
+
+- [Posteriors are conditional probabilities](posterior-eq-cond.md): the bridge to Mathlib's
+  conditional probability.
 
 ## Sources
 

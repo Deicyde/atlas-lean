@@ -24,10 +24,13 @@ source-fidelity note in `MathlibExt/GameTheory/ShapleyValue.lean`).
 
 ## Background
 
-- [The Shapley value is given by Shapley's formula](eq-shapley-formula.md): the classical
-  formula, an average of marginal contributions, derived from this uniqueness.
 - [Bondareva–Shapley theorem](../bondareva-shapley-theorem/README.md): the core, the other
   classical solution concept for TU games.
+
+## Related topics
+
+- [The Shapley value is given by Shapley's formula](eq-shapley-formula.md): the classical
+  formula, an average of marginal contributions, derived from this uniqueness.
 
 ## Sources
 

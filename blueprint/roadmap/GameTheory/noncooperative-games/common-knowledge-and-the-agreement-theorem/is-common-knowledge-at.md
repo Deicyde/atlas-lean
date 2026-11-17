@@ -14,11 +14,14 @@ directly. The name "meet" refers to partitions ordered by refinement, where the 
 
 ## Background
 
-- [Common knowledge as iterated knowledge](is-common-knowledge-at-iff-forall-knows.md): the
-  equivalence with the informal definition "everyone knows that everyone knows that …".
 - [Epistemic logic](../../../Logic/modal-logic/epistemic-logic/README.md): the syntactic
   counterpart, multi-agent S5 on Kripke models, whose accessibility relations play the role of
   the partitions here.
+
+## Related topics
+
+- [Common knowledge as iterated knowledge](is-common-knowledge-at-iff-forall-knows.md): the
+  equivalence with the informal definition "everyone knows that everyone knows that …".
 
 ## Sources
 
