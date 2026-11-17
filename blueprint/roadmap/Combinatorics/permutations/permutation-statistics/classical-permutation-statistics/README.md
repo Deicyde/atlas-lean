@@ -30,3 +30,5 @@
 - [Total number of inversions over all permutations](four-mul-sum-perm-inversion-count.md)
 - [Expected number of inversions of a random permutation](expect-enn-perm-inversion-count.md)
 - [Expected number of inversions, as a real number](expect-enn-perm-inversion-count-to-real.md)
+- [A permutation and its inverse have the same number of inversions](perm-inversion-count-inv.md)
+- [Generating function of inversions](sum-x-pow-perm-inversion-count.md)

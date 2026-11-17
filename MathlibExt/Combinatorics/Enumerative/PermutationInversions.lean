@@ -36,6 +36,8 @@ which is the statement proved here.
 
 ## Main results
 
+* `permInversionCount_inv`: `inv(σ⁻¹) = inv(σ)` (Stanley, *Enumerative Combinatorics*, Vol. 1,
+  2nd ed., Proposition 1.3.14).
 * `two_mul_card_filter_lt`: for distinct positions `i ≠ j`, exactly half of the permutations put
   `σ j` below `σ i`.
 * `four_mul_sum_permInversionCount`: `4 ∑_σ inv(σ) = n! · n (n - 1)`.
@@ -60,6 +62,22 @@ def permInversions (σ : Equiv.Perm (Fin n)) : Finset (Fin n × Fin n) :=
 `i < j` with `σ j < σ i`. -/
 def permInversionCount (σ : Equiv.Perm (Fin n)) : ℕ :=
   (permInversions σ).card
+
+/-- **A permutation and its inverse have the same number of inversions** (Stanley,
+*Enumerative Combinatorics*, Vol. 1, 2nd ed., Proposition 1.3.14). The pair of positions
+`(i, j)` is an inversion of `σ` exactly when the pair `(σ j, σ i)` is an inversion of `σ⁻¹`. -/
+theorem permInversionCount_inv (σ : Equiv.Perm (Fin n)) :
+    permInversionCount σ⁻¹ = permInversionCount σ := by
+  refine Finset.card_bij' (fun p _ => (σ⁻¹ p.2, σ⁻¹ p.1)) (fun p _ => (σ p.2, σ p.1))
+    ?_ ?_ ?_ ?_
+  · intro p hp
+    simp only [permInversions, Finset.mem_filter, Finset.mem_univ, true_and] at hp ⊢
+    exact ⟨hp.2, by simpa using hp.1⟩
+  · intro p hp
+    simp only [permInversions, Finset.mem_filter, Finset.mem_univ, true_and] at hp ⊢
+    exact ⟨hp.2, by simpa using hp.1⟩
+  · intro p _; simp
+  · intro p _; simp
 
 /-- **Each pair of positions is inverted by exactly half of the permutations.** For distinct
 positions `i ≠ j` of `Fin n`, twice the number of permutations `σ` with `σ j < σ i` is `n!`. -/

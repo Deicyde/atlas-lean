@@ -40,4 +40,16 @@ example : ((PMF.uniformFintype (Equiv.Perm (Fin 4))).expectENN
   rw [expectENN_permInversionCount_toReal]
   norm_num
 
+/-- `inv(σ⁻¹) = inv(σ)` on a 3-cycle, whose inverse is a different permutation. -/
+example : permInversionCount (finRotate 3)⁻¹ = permInversionCount (finRotate 3) :=
+  permInversionCount_inv _
+
+example : permInversionCount (finRotate 3) = 2 := by decide
+
+/-- Numerical check of the generating function of inversions (Stanley, Corollary 1.3.13) at
+`q = 2` for `n = 3`: `∑_σ 2 ^ inv(σ) = 1 · (1 + 2) · (1 + 2 + 4) = 21`. -/
+example : ∑ σ : Equiv.Perm (Fin 3), 2 ^ permInversionCount σ =
+    ∏ k ∈ Finset.range 3, ∑ i ∈ Finset.range (k + 1), 2 ^ i := by
+  decide
+
 end MetaMathlibExt.Test.PermutationInversions

@@ -5288,6 +5288,7 @@
   "WantedExt/Combinatorics/Enumerative/PartitionGenusWanted": {"to": "Combinatorics/set-partitions", "title": "Genus of a set partition"},
   "WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted": {"to": "Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers", "title": "α-Stirling matrices"},
   "WantedExt/Combinatorics/Enumerative/PermutationFixedPointIdentitiesWanted": {"to": "Combinatorics/permutations/permutation-statistics", "title": "Fixed-point identities for permutations"},
+  "WantedExt/Combinatorics/Enumerative/PermutationInversionsWanted": {"to": "Combinatorics/permutations/permutation-statistics", "title": "Classical permutation statistics"},
   "WantedExt/Combinatorics/Enumerative/PermutationWordleWanted": {"to": "Combinatorics/permutations/permutation-statistics", "title": "Permutation Wordle"},
   "WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted": {"to": "Combinatorics/integer-compositions", "title": "Positional colored compositions"},
   "WantedExt/Combinatorics/Enumerative/RascalNumbersWanted": {"to": "Combinatorics/binomial-coefficients/generalized-binomial-coefficients", "title": "Rascal triangle"},
