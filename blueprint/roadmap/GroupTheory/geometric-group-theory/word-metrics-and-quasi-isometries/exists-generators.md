@@ -4,7 +4,7 @@ Let a group $G$ act on a proper geodesic metric space $X$ by isometries, properl
 $$d(g x_0, h x_0) \le L\,|g^{-1} h|_S + C, \qquad |g^{-1} h|_S \le L\, d(g x_0, h x_0) + C,$$
 and every point of $X$ is within $C$ of the orbit. The orbit map $g \mapsto g x_0$ is thus a quasi-isometry from $G$ with its word metric to $X$.
 
-Proper discontinuity is Mathlib's `ProperlyDiscontinuousSMul` (for compact $K, L$, only finitely many $g$ have $gK \cap L \ne \emptyset$), equivalent to Gromov's "for every compact $B$, $B \cap \gamma B = \emptyset$ for almost all $\gamma$". Cocompactness is that every orbit meets a fixed compact set. Gromov states the lemma for a Riemannian manifold $X$: with a cocompact isometric action such a manifold is complete, hence a proper geodesic space by the Hopf–Rinow theorem, so the statement here contains his (that implication is not formalised).
+Proper discontinuity is Mathlib's `ProperlyDiscontinuousSMul` (for compact $K, L$, only finitely many $g$ have $gK \cap L \ne \emptyset$), equivalent to Gromov's "for every compact $B$, $B \cap \gamma B = \emptyset$ for almost all $\gamma$". Cocompactness is that every orbit meets a fixed compact set. Gromov states the lemma for a Riemannian manifold $X$: with a cocompact isometric action such a manifold is complete, hence a proper geodesic space by the Hopf–Rinow theorem (Gromov's 1987 paper, 1.6.A, for the geodesic part), so the statement here contains his (that implication is not formalised).
 
 The proof walks from $x_0$ to $g x_0$ along a geodesic in unit steps and chooses an orbit point within $R$ of each step; consecutive orbit points differ by an element of $S$. Conversely each element of $S$ moves $x_0$ by at most $2R + 1$.
 
