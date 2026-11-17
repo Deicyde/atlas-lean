@@ -107,9 +107,9 @@ number of probes needed to find an item, which equals the number needed to inser
 def successfulSearchCost (N n : ℕ) : ℚ :=
   (∑ i ∈ Finset.range n, insertionCost N i) / n
 
-/-- **Knuth's auxiliary sums for linear probing.** `E_r(N, k) = ∑_{j = 0}^{k - 1} C(r + j, r) (k - 1)(k - 2)⋯(k - j)
-/ N ^ j`, the sums in which Knuth's 1963 note expresses the exact mean costs of linear
-probing. -/
+/-- **Knuth's auxiliary sums for linear probing.**
+`E_r(N, k) = ∑_{j = 0}^{k - 1} C(r + j, r) (k - 1)(k - 2)⋯(k - j) / N ^ j`,
+the sums in which Knuth's 1963 note expresses the exact mean costs of linear probing. -/
 def knuthE (r N k : ℕ) : ℚ :=
   ∑ j ∈ Finset.range k, ((r + j).choose r * (k - 1).descFactorial j : ℚ) / (N : ℚ) ^ j
 

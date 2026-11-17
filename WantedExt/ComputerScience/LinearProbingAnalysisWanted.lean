@@ -26,7 +26,10 @@ independent uniform hash addresses). Source: D. E. Knuth, *Notes on "open" addre
 * `tendsto_insertionCost`, `tendsto_successfulSearchCost`: with `n` items in `N` cells and
   `n / N → α < 1`, the costs tend to `(1 + 1 / (1 - α) ^ 2) / 2` and `(1 + 1 / (1 - α)) / 2`.
   Section 8 of the note derives these as the approximations `E_r(N, k) ≈ (1 - α) ^ -(r + 1)`
-  with `α = (k - 1) / N`, and states that they become exact as `N → ∞` for fixed `α`.
+  with `α = (k - 1) / N`, and states that they become exact as `N → ∞` for fixed `α`. The
+  limit of the sums, `tendsto_knuthE` in
+  `CSLibExt.Algorithms.Lean.DataStructures.LinearProbingAsymptotics`, is proved; with the exact
+  formulas it yields these two limits.
 -/
 
 @[expose] public section

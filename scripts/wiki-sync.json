@@ -2940,6 +2940,7 @@
 "Cslib.Algorithms.Lean.LinearProbing.successfulSearchCost_eq": "82219c53ad972083",
 "Cslib.Algorithms.Lean.LinearProbing.successfulSearchCost_one": "259e75b491833300",
 "Cslib.Algorithms.Lean.LinearProbing.tendsto_insertionCost": "79093f309cf125ce",
+"Cslib.Algorithms.Lean.LinearProbing.tendsto_knuthE": "e1440c49cc6d321d",
 "Cslib.Algorithms.Lean.LinearProbing.tendsto_successfulSearchCost": "a92f3e4849fee66d",
 "Cslib.Algorithms.Lean.LinkCutTree.Adjacent": "88625b3cc67aa884",
 "Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_left": "8ab1475cd8829f85",

@@ -30,6 +30,7 @@ $\alpha < 1$.
 
 ## Asymptotics at a fixed load factor
 
+- [Limit of Knuth's sums at a fixed load factor](tendsto-knuth-e.md)
 - [Expected cost of an unsuccessful linear-probing search at a fixed load factor](tendsto-insertion-cost.md)
 - [Expected cost of a successful linear-probing search at a fixed load factor](tendsto-successful-search-cost.md)
 

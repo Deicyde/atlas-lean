@@ -20,6 +20,8 @@ This is a wanted statement.
 
 - [Knuth's exact mean successful-search cost for linear probing](successful-search-cost-eq.md):
   the exact formula whose limit is taken.
+- [Limit of Knuth's sums at a fixed load factor](tendsto-knuth-e.md): the limit of $E_0$, applied
+  with $n_N - 1$ items, which is proved; only the exact formula is missing for a full proof.
 
 ## Sources
 

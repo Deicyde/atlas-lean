@@ -10,7 +10,7 @@ $$M(N, n_N + 1) \longrightarrow \frac{1}{2}\left(1 + \frac{1}{(1 - \alpha)^2}\ri
 Section 8 of Knuth's 1963 note gives $\frac12\bigl(1 + (1-\alpha)^{-2}\bigr)$ with
 $\alpha = (k - 1)/N$ as an approximation and an upper bound for $M(N, k)$, and says that it becomes
 exact as $N \to \infty$ for fixed $\alpha$. The limit statement here is that claim; it follows
-from [Theorem 2](insertion-cost-eq.md) and the convergence of $E_1(N, k)$ to
+from [Theorem 2](insertion-cost-eq.md) and the [convergence of $E_1$](tendsto-knuth-e.md) to
 $(1-\alpha)^{-2}$. The hypotheses hold for instance with $\alpha = 0$ and $n_N = 0$, where the
 cost is $1$ for every $N$.
 
@@ -21,6 +21,8 @@ cell costs $M(N, N) = (N + 1)/2$ probes on average (Section 8 of the note), whic
 
 - [Knuth's exact mean insertion cost for linear probing](insertion-cost-eq.md): the exact formula
   whose limit is taken.
+- [Limit of Knuth's sums at a fixed load factor](tendsto-knuth-e.md): the limit of $E_1$, which is
+  proved; only the exact formula is missing for a full proof.
 
 ## Sources
 
