@@ -36835,6 +36835,8 @@
 "MetaMathlibExt.isAddPiecewiseSyndetic_univ": "454c0046cba7db1a",
 "MetaMathlibExt.isAddThick_univ": "a27c7c965e08d4eb",
 "MetaMathlibExt.isAdmissibleFinset_empty": "3162a316f9b650e6",
+"MetaMathlibExt.isAdmissibleFinset_iff_bounded": "f9b497d59cdda5f1",
+"MetaMathlibExt.isAdmissibleFinset_iff_forall_prime_le_card": "3191557041d6cd4d",
 "MetaMathlibExt.isAdmissibleFinset_singleton_zero": "a51008b3fbf6c3a5",
 "MetaMathlibExt.isAdmissibleLuckySet_one_pred_two_mul_sub_two_iff": "58c71ea1e18707e2",
 "MetaMathlibExt.isAdmissibleLuckySet_pair_iff": "260e9cdd17b15aa4",

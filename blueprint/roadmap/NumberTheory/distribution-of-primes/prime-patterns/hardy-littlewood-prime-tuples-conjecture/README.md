@@ -10,4 +10,11 @@
 - [Hardy–Littlewood admissibility via the set of entries](is-hardy-littlewood-admissible-iff-is-ad.md)
 - [The empty set is admissible](is-admissible-finset-empty.md)
 - [The set $\{0\}$ is admissible](is-admissible-finset-singleton-zero.md)
+- [Admissibility needs only the primes up to the size of the set](is-admissible-finset-iff-forall-prime-le.md)
+- [Bounded search form of admissibility](is-admissible-finset-iff-bounded.md)
 - [Hardy–Littlewood prime-tuple conjecture](hardy-littlewood-prime-tuple-conjecture.md)
+
+## Related topics
+
+- [Bounded gaps between primes](../../prime-gaps-short-intervals/bounded-gaps-between-primes/README.md): results of GPY, Zhang and Maynard giving two or more primes in infinitely many translates of admissible tuples.
+- [GPY–Maynard sieve](../../sieve-methods/gpy-maynard-sieve/README.md): the sieve method for primes in admissible tuples.
