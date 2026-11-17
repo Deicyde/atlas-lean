@@ -14,9 +14,6 @@ The impossibility rests on stability: a constant mechanism is strategy-proof, an
 
 - [Gibbard–Satterthwaite theorem](../../social-choice/gibbard-satterthwaite-theorem/README.md): Roth compares his result to the impossibility theorems of Gibbard and Satterthwaite for social choice functions (Roth 1982, §1).
 - [Gale–Shapley theorem](../../../GraphTheory/matchings-and-flows/stable-marriage-problem/gale-shapley-exists-stable-matching.md): stable mechanisms exist, so the theorem is not vacuous.
-
-## Related topics
-
 - [Strategy-proofness of the man-optimal stable mechanism for the men](man-optimal-mechanism-strategy-proof-for-men.md): the positive counterpart, where incentives to misreport are confined to one side.
 
 ## Sources

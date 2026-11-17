@@ -16,11 +16,11 @@ namespace Cslib.Algorithms.Lean.Matching.GaleShapley
 
 open MathlibExt.GameTheory.Matching.StableMechanism
 
-/-- On Roth's market the man-optimal stable mechanism returns Roth's matching `x`. -/
-example : ∃ h : MatchingMechanism (Fin 3) (Fin 3),
+/-- On Roth's market every man-optimal stable mechanism, deferred acceptance included, returns
+Roth's matching `x`. -/
+example (h : MatchingMechanism (Fin 3) (Fin 3))
+    (hh : ∀ mp wp, IsManOptimalStable mp wp (h mp wp)) :
     h rothMenPrefs rothWomenPrefs = rothX := by
-  obtain ⟨h, hh⟩ := exists_isManOptimalStable_mechanism 3
-  refine ⟨h, ?_⟩
   obtain ⟨hs, hopt⟩ := hh rothMenPrefs rothWomenPrefs
   rcases (roth_isStable_iff _).1 hs with e | e
   · exact e
@@ -30,6 +30,10 @@ example : ∃ h : MatchingMechanism (Fin 3) (Fin 3),
     have := hopt rothX hx 0
     rw [e] at this
     exact this (by decide)
+
+/-- Such mechanisms exist: deferred acceptance on rankings. -/
+example : ∃ h : MatchingMechanism (Fin 3) (Fin 3), ∀ mp wp, IsManOptimalStable mp wp (h mp wp) :=
+  exists_isManOptimalStable_mechanism 3
 
 #print axioms exists_isManOptimalStable_mechanism
 

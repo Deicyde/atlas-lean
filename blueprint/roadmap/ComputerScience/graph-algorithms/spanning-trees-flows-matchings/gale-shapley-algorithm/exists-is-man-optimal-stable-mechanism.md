@@ -6,7 +6,7 @@ For every `n` there is a matching mechanism on `n` men and `n` women that return
 
 - [Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers](exists-rankings-gs-matching.md): the rankings presenting a profile and the stability and proposer-optimality of the resulting matching.
 
-## Related topics
+## Background
 
 - [Strategy-proofness of the man-optimal stable mechanism for the men](../../../../GameTheory/matching-markets/stable-matching-mechanisms-and-incentives/man-optimal-mechanism-strategy-proof-for-men.md): the wanted incentive property of this mechanism.
 

@@ -23,7 +23,7 @@ is again a perfect matching, that it is stable, and that every woman receives th
 likes less among `μ.symm w` and `ν.symm w`. This is the marriage case of Roth, "On the allocation
 of residents to rural hospitals", *Econometrica* 54 (1986), Lemma 2 (all quotas equal to one and
 all partners acceptable). It is the join of the lattice of stable matchings under the men's
-common order.
+common order. In Roth's Lemma 2 the men play the hospitals, the side whose choice set is taken.
 -/
 
 @[expose] public section

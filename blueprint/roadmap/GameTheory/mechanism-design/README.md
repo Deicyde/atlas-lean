@@ -16,3 +16,4 @@ The [revelation principle](revelation-principle/README.md) reduces the design pr
 - [Selfish routing and the price of anarchy](../noncooperative-games/selfish-routing-and-the-price-of-anarchy/README.md): how inefficient the equilibria of a given game can be, the question mechanism design answers by changing the game.
 - [Correlated equilibria](../noncooperative-games/correlated-equilibria/README.md): equilibria with a mediator who sends private recommendations, the communication counterpart of direct mechanisms.
 - [Social choice theory](../social-choice/README.md): aggregation of preferences without money, where the Gibbard–Satterthwaite theorem rules out nontrivial strategy-proof rules.
+- [Matching markets](../matching-markets/README.md): mechanisms without money for two-sided matching with ordinal preferences and private outcomes, where Roth's impossibility theorem rules out stable mechanisms that are strategy-proof for both sides.

@@ -12,3 +12,4 @@ Two-sided matching markets: stable matchings of marriage and college-admissions 
 - [Gale–Shapley algorithm](../../ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/README.md): the executable deferred-acceptance algorithm, its proposer-optimality and receiver-pessimality.
 - [Gibbard–Satterthwaite theorem](../social-choice/gibbard-satterthwaite-theorem/README.md): the social-choice impossibility theorem that Roth's impossibility theorem for stable matching mechanisms parallels.
 - [Cooperative game theory](../cooperative-games/README.md): stable matchings are the core of the cooperative game in which any man and woman may marry (Roth 1982, §2).
+- [Mechanism design](../mechanism-design/README.md): the general theory of incentive-compatible mechanisms (the revelation principle, Myerson's lemma, Vickrey–Clarke–Groves), stated with cardinal utilities; stable matching mechanisms are ordinal and give each agent a private outcome.

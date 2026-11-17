@@ -48,3 +48,4 @@ A *matching mechanism* maps every stated preference profile of a marriage market
 - [Lattice of stable matchings](../lattice-of-stable-matchings/README.md): the structure of the set of stable matchings, in which the man-optimal stable matching is the top element for the men.
 - [Gale–Shapley algorithm](../../../ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/README.md): deferred acceptance computes the man-optimal stable matching, so it implements the mechanism of Roth's Theorem 5.
 - [Gibbard–Satterthwaite theorem](../../social-choice/gibbard-satterthwaite-theorem/README.md): the impossibility theorem for social choice functions that Roth's Theorem 3 parallels (Roth 1982, §1).
+- [Mechanism design](../../mechanism-design/README.md): dominant-strategy incentive compatibility and the revelation principle for mechanisms with cardinal utilities; the strategy-proofness here is the ordinal, matching-specific counterpart.
