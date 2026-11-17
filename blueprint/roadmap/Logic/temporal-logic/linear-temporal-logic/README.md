@@ -26,3 +26,8 @@
 - [Satisfaction of an atom at a position](satisfies-at-atom.md)
 - [Relabelling the letters of an ω-word](satisfies-map.md)
 - [Membership in the language of a formula](mem-language.md)
+
+## Related topics
+
+- [Büchi automata for a fragment of linear temporal logic](../b-chi-automata-for-a-fragment-of-linear-temporal/README.md): direct automata for invariants, recurrence, persistence and a safety fragment.
+- [Model checking for linear temporal logic](../model-checking-for-linear-temporal-logic/README.md): the automata-theoretic treatment of LTL: the Vardi–Wolper translation into Büchi automata, satisfiability as nonemptiness, and model checking as language inclusion.

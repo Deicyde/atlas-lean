@@ -45,3 +45,10 @@
 - [The language of the system automaton is the set of runs](mem-system-automaton-iff.md)
 - [LTL model checking is language inclusion](models-iff-language-le.md)
 - [LTL model checking is emptiness of an intersection](models-iff-inf-language-not-eq-bot.md)
+
+## Related topics
+
+- [Labelled transition systems](../../../ComputerScience/process-calculi/labelled-transition-systems/README.md): the models checked here are CSLib labelled transition systems, the same objects that give process calculi their operational semantics.
+- [Program logics and verification](../../../ComputerScience/program-logics-and-verification/README.md): deductive verification of programs, the proof-based counterpart of algorithmic model checking of finite-state systems.
+- [Concurrent systems and protocols](../../../ComputerScience/concurrent-systems-and-protocols/README.md): finite-state protocols such as the alternating-bit protocol, the typical inputs of LTL model checking.
+
