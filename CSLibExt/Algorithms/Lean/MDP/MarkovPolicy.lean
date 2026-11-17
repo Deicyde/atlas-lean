@@ -24,8 +24,13 @@ operators,
   `nStageValue M γ π N V = T_{π 0} (T_{π 1} ( ⋯ (T_{π (N - 1)} V)))`,
 
 and its infinite-horizon value is the limit as `N → ∞`. Over the setting of `ValueIteration.lean`
-(finite states and actions, stochastic transitions, real rewards, `0 ≤ γ < 1`):
+(finite states and actions, stochastic transitions, real rewards, `0 ≤ γ < 1` unless stated):
 
+* `isGreatest_nStageValue`: over a finite horizon `N`, the value iterate `T^N V` is the greatest
+  `N`-stage value of a Markov policy, attained by the dynamic programming policy `dpPolicy`, which
+  acts greedily for `T^(N - 1 - k) V` at stage `k` (the finite-horizon DP algorithm, Bertsekas,
+  *A Course in Reinforcement Learning*, 2nd ed., Section 1.3.1). This needs only `γ ≥ 0`, in any
+  ordered field.
 * `tendsto_nStageValue`: the `N`-stage values converge, to a limit `markovValue π` that does not
   depend on the terminal value `V` (`dist_nStageValue_le`: two terminal values are forgotten at
   rate `γ ^ N`).
@@ -94,6 +99,41 @@ theorem nStageValue_le_iterate [Fintype A] [Nonempty A] (hM : M.Stochastic) (hγ
   | succ N ih =>
       rw [nStageValue, Function.iterate_succ_apply']
       exact (policyBellman_mono hM hγ _ (ih _)).trans (policyBellman_le_bellman _ _)
+
+/-- **The dynamic programming policy**: for horizon `N` and terminal value `V`, the Markov policy
+that at stage `k < N` acts greedily for the value iterate `T^(N - 1 - k) V`. -/
+noncomputable def dpPolicy [Fintype A] [Nonempty A] (M : MDP S A K) (γ : K) (N : ℕ)
+    (V : S → K) : ℕ → S → A :=
+  fun k => greedy M γ ((bellman M γ)^[N - 1 - k] V)
+
+omit [IsStrictOrderedRing K] in
+/-- **The dynamic programming policy attains the value iterate**: its `N`-stage value with
+terminal value `V` is `T^N V`. -/
+theorem nStageValue_dpPolicy [Fintype A] [Nonempty A] (N : ℕ) (V : S → K) :
+    nStageValue M γ (dpPolicy M γ N V) N V = (bellman M γ)^[N] V := by
+  induction N with
+  | zero => rfl
+  | succ N ih =>
+      have hshift : (fun k => dpPolicy M γ (N + 1) V (k + 1)) = dpPolicy M γ N V := by
+        funext k
+        simp only [dpPolicy]
+        congr 2
+        omega
+      rw [nStageValue, hshift, ih, Function.iterate_succ_apply']
+      simp only [dpPolicy, Nat.add_sub_cancel, Nat.sub_zero]
+      exact policyBellman_greedy _
+
+/-- **Optimality of the dynamic programming algorithm** (finite horizon; Bertsekas, *A Course in
+Reinforcement Learning*, 2nd ed., Section 1.3.1, the DP algorithm (1.15), here with stationary
+data and discount `γ ≥ 0`): for a stochastic MDP, a horizon `N` and a terminal value `V`, the
+value iterate `T^N V` is the greatest `N`-stage value of a Markov policy, in every state at once,
+and the dynamic programming policy `dpPolicy M γ N V` attains it. -/
+theorem isGreatest_nStageValue [Fintype A] [Nonempty A] (hM : M.Stochastic) (hγ : 0 ≤ γ)
+    (N : ℕ) (V : S → K) :
+    IsGreatest (Set.range fun π => nStageValue M γ π N V) ((bellman M γ)^[N] V) :=
+  ⟨⟨dpPolicy M γ N V, nStageValue_dpPolicy N V⟩, by
+    rintro _ ⟨π, rfl⟩
+    exact nStageValue_le_iterate hM hγ π N V⟩
 
 variable {M : MDP S A ℝ} {γ : ℝ} (hM : M.Stochastic) (hγ0 : 0 ≤ γ) (hγ1 : γ < 1)
 include hM hγ0 hγ1

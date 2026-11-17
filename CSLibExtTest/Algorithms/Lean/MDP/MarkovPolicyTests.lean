@@ -25,6 +25,9 @@ and checks `nStageValue ≤ (bellman)^[N]` (`nStageValue_le_iterate`), the recur
 `nStageValue_succ`, and the geometric forgetting of the terminal value
 (`dist_nStageValue_le`, in the sup norm); it throws otherwise.
 
+A second run enumerates all `8 * 8` two-stage Markov policies and checks that the best two-stage
+value is `T^2 V`, attained by one policy in every state (`isGreatest_nStageValue`).
+
 Closed checks over `ℝ`: an alternating policy of an arbitrary stochastic MDP is no better than
 optimal, and `isGreatest_markovValue` instantiates.
 -/
@@ -79,6 +82,30 @@ private meta def tab (V : St → ℚ) : St → ℚ :=
         checks := checks + 1
   IO.println s!"Markov policies: {checks} exact checks passed"
 
+/-- All eight deterministic decision rules of the maintenance MDP. -/
+private meta def allRules : List (St → Ac) :=
+  (List.finRange 2).flatMap fun a => (List.finRange 2).flatMap fun b =>
+    (List.finRange 2).map fun c => ![a, b, c]
+
+-- Finite horizon `N = 2`: the best two-stage value over all `8 * 8` Markov policies is `T^2 V`,
+-- attained by one policy in every state at once (`isGreatest_nStageValue`).
+#eval do
+  let terminals : List (St → ℚ) := [![0, 0, 0], ![10, -5, 3], ![-20, 20, 0]]
+  let mut checks := 0
+  for V in terminals do
+    let T2 := tab (bellman machine γm (tab (bellman machine γm V)))
+    let mut attained := false
+    for μ0 in allRules do
+      for μ1 in allRules do
+        let π : ℕ → St → Ac := fun k => if k = 0 then μ0 else μ1
+        let W := tab (nStageValue machine γm π 2 V)
+        unless sts.all fun s => W s ≤ T2 s do
+          throw (IO.userError "a two-stage policy beats T^2 V")
+        if sts.all fun s => W s == T2 s then attained := true
+        checks := checks + 1
+    unless attained do throw (IO.userError "T^2 V is not attained by a Markov policy")
+  IO.println s!"finite horizon: {checks} two-stage policies checked against T^2 V"
+
 /-! Closed checks over `ℝ` -/
 
 section Closed
@@ -97,11 +124,17 @@ example (π : ℕ → St → Ac) (V : St → ℝ) :
 example : IsGreatest (Set.range (markovValue M γ)) (optimalValue M γ hM hγ0 hγ1) :=
   isGreatest_markovValue hM hγ0 hγ1
 
+/-- Finite horizon: the dynamic programming policy is optimal over `N` stages. -/
+example (N : ℕ) (V : St → ℝ) :
+    IsGreatest (Set.range fun π => nStageValue M γ π N V) ((bellman M γ)^[N] V) :=
+  isGreatest_nStageValue hM hγ0 N V
+
 end Closed
 
 #print axioms tendsto_nStageValue
 #print axioms markovValue_const
 #print axioms markovValue_le_optimalValue
 #print axioms isGreatest_markovValue
+#print axioms isGreatest_nStageValue
 
 end Cslib.Algorithms.Lean.MarkovDecision

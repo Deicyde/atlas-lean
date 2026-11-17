@@ -18,5 +18,6 @@ The linear quadratic regulator (LQR) controls the linear system $x_{t+1} = A x_t
 ## Related topics
 
 - [Value iteration](../../../heuristic-search-and-planning/value-iteration/README.md): dynamic programming for finite Markov decision processes; the Riccati recursion is value iteration for quadratic value functions.
+- [Optimality of stationary policies](../../../heuristic-search-and-planning/optimality-of-stationary-policies/README.md): the finite-horizon DP algorithm for finite Markov decision processes; the Riccati recursion is its linear-quadratic case.
 - [Positive-definite matrices](../../../../LinearAlgebra/positive-definite-matrices/README.md): the positive semidefiniteness that keeps the recursion well defined.
 - [Viscosity solutions of Hamilton–Jacobi equations](../../../../Analysis/partial-differential-equations/viscosity-solutions-of-hamilton-jacobi-equations/README.md): in continuous time the dynamic programming equation becomes the Hamilton–Jacobi–Bellman equation, whose value functions are viscosity solutions.
