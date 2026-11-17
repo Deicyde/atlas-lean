@@ -1205,6 +1205,8 @@
   "CSLibExt/Computability/Distributed/Byzantine/Impossibility": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Byzantine generals problem"},
   "CSLibExt/Computability/Distributed/Byzantine/OralMessages": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Byzantine generals problem"},
   "CSLibExt/Computability/Distributed/ChangRoberts": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Chang–Roberts leader election"},
+  "CSLibExt/Computability/Distributed/FLP/Bivalence": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "FLP impossibility"},
+  "CSLibExt/Computability/Distributed/FLP/Original": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "FLP impossibility"},
   "CSLibExt/Computability/Distributed/LamportClock": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Lamport clocks"},
   "CSLibExt/Computability/Distributed/TwoPhaseCommit": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Two-phase commit"},
   "CSLibExt/Computability/Distributed/VectorClock": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Vector clocks"},

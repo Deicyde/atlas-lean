@@ -10,6 +10,7 @@ Specific concurrent or distributed systems and their verified properties: deadlo
 - [Deadlock and circular wait](deadlock-and-circular-wait/README.md)
 - [Deadlock detection](deadlock-detection/README.md)
 - [Dining philosophers problem](dining-philosophers-problem/README.md)
+- [FLP impossibility](flp-impossibility/README.md)
 - [Go-back-N protocol](go-back-n-protocol/README.md)
 - [Lamport clocks](lamport-clocks/README.md)
 - [Two-phase commit](two-phase-commit/README.md)

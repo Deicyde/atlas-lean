@@ -23,3 +23,4 @@ Byzantine agreement (consensus with Byzantine faults) in the sense of Fischer, L
 ## Related topics
 
 - [Byzantine generals problem](../byzantine-generals-problem/README.md): the commander version (one general sends an order), to which the impossibility here is reduced.
+- [FLP impossibility](../flp-impossibility/README.md): consensus with crash faults in an asynchronous system, impossible already with one fault.
