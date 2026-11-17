@@ -20,8 +20,9 @@ modulo `15` (by the Euler test of `isSquare_iff_euler`: `2 ^ (3 / 2) = 2 ≠ 1` 
 Jacobi symbol is `(2 / 15) = (2 / 3)(2 / 5) = (-1)(-1) = 1`, so it is a pseudo-square, as
 Goldwasser and Micali require. With randomness `x = 7`, the encryptions of `0` and `1` are
 `49 ≡ 4` and `2 · 49 ≡ 8`, and trapdoor decryption returns `0` and `1`. The scheme with the point
-key distribution on this key is correct, and the reduction and the semantic-security corollary
-are instantiated.
+key distribution on this key is correct, and the per-adversary reduction is instantiated. The
+all-distinguisher hypothesis is shown to force `ε ≥ 1` on this key, and the scheme is shown not to
+be `IndSecure` with error `1/2` against unbounded distinguishers.
 -/
 
 @[expose] public section
@@ -89,7 +90,19 @@ example (coins : PMF Unit) (A : (ZMod 15)ˣ → (ZMod 15)ˣ → Unit → Unit �
           (SemanticSecurity.ssDistinguisher A (fun _ => ()) id true) :=
   winProb_ssReal_le_qrAdvantage _ coins A _ _ _
 
-/-- The semantic-security corollary with the trivial error `1` (every advantage is at most `1`). -/
+/-- The all-distinguisher hypothesis is vacuous: on this key it forces `ε ≥ 1`. -/
+example (coins : PMF Unit) {ε : ℝ}
+    (hqr : ∀ D : (ZMod 15)ˣ → (ZMod 15)ˣ → Unit → Bool,
+      qrAdvantage (PMF.pure (y, (3, 5))) coins D ≤ ε) : 1 ≤ ε :=
+  one_le_of_forall_qrAdvantage_le _ y_not_isSquare coins hqr
+
+/-- Against unbounded distinguishers the scheme is not indistinguishable with error `1/2`. -/
+example (coins : PMF Unit) :
+    ¬ SemanticSecurity.IndSecure (scheme 15 (PMF.pure (y, (3, 5)))) (fun _ => 0) coins (1 / 2) :=
+  not_indSecure_scheme _ y_not_isSquare coins (by norm_num)
+
+/-- The all-distinguisher semantic-security corollary, with `ε = 1`: the only error its
+hypothesis allows (`one_le_of_forall_qrAdvantage_le`), at which it says nothing. -/
 example (coins : PMF Unit) :
     SemanticSecurity.SemanticallySecure (scheme 15 (PMF.pure (y, (3, 5)))) (fun _ => 0) coins
       Unit Bool 1 :=

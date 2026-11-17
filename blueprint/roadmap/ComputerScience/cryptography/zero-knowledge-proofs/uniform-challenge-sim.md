@@ -1,4 +1,4 @@
 # The uniform-challenge simulator
 
-**The uniform-challenge simulator** built from a per-challenge simulator `sim`: draw a uniform
-challenge `e`, then `(a, z) ← sim x e`, and output `(a, e, z)`.
+From a per-challenge simulator: draw a uniform challenge $e$, run the simulator for $e$ to get
+$(a, z)$, and output the transcript $(a, e, z)$.

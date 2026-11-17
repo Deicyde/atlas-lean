@@ -1,18 +1,22 @@
-# The security of Goldwasser–Micali reduces to quadratic residuosity
+# Goldwasser–Micali's main theorem for one bit, per adversary
 
 For every key distribution and every eavesdropper $A$, the eavesdropping ($\mathsf{PubK}^{\mathrm{eav}}$)
-advantage of $A$ against the [one-bit Goldwasser–Micali scheme](scheme.md) equals half the
-[quadratic-residuosity advantage](qr-advantage.md) of the [reduction](reduction.md) built from $A$,
-with the same coins. No assumption on the keys is needed for this identity.
+advantage of $A$ against the [one-bit Goldwasser–Micali scheme](scheme.md) equals half the advantage,
+in the [residuosity experiment](qr-exp.md), of the [reduction](reduction.md) built from $A$ with one
+call and the same coins. So an eavesdropper with guessing advantage $\varepsilon$ gives a
+distinguisher of $x^2$ from $y x^2$ with advantage $2\varepsilon$, and an efficient eavesdropper an
+efficient distinguisher. No assumption on the keys is needed for this identity.
 
-This is the single-bit case of Goldwasser and Micali's security theorem, as an exact concrete
-equality: the factor $\tfrac12$ is the usual one between the guessing advantage
-$\lvert \Pr[\text{win}] - \tfrac12 \rvert$ and a distinguishing advantage.
+The factor $\tfrac12$ is the usual one between the guessing advantage
+$\lvert \Pr[\text{win}] - \tfrac12 \rvert$ and a distinguishing advantage. The residuosity experiment
+gives the distinguisher the key element $y$ and samples $x^2$ against $y x^2$; its identification with
+the standard problem (uniform residues against uniform non-residues of Jacobi symbol $+1$) is not
+formalized, so this reduction is close to definitional.
 
 ## Informally uses
 
 - [The reduction for one key and one coin](inner-identity.md)
-- [Linearity of `bind`](bind-add-eq.md)
+- [Averaging a pointwise identity between sums of success probabilities](../games-and-advantages/apply-true-bind-add-eq.md)
 
 ## Sources
 

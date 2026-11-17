@@ -8,7 +8,7 @@ passes $T$.
 
 ## Informally uses
 
-- [One rewinding attempt simulates the real view](win-prob-attempt-dist.md)
+- [One rewinding attempt simulates the real view](../zero-knowledge-proofs/win-prob-attempt-dist.md)
 - [Perfect special honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-special-hvzk.md)
 
 ## Sources

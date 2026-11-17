@@ -1,11 +1,14 @@
-# Statistical zero knowledge against an arbitrary verifier, one round
+# Zero knowledge against an arbitrary verifier, one round
 
 Let a Sigma protocol have a perfect special honest-verifier zero-knowledge simulator and a finite
 challenge set $\mathrm{Ch}$, and let $x$ have a witness. For every verifier $V^*$ (its challenge any
 function of the commitment and of its coins), every test $T$ of its view and every $k$, the
 [rewinding simulator with $k$ attempts](simulator-k.md), which never sees the witness, and
 [the real interaction](real-view-dist.md) produce views passing $T$ with probabilities that differ by
-at most $(1 - 1/\lvert \mathrm{Ch} \rvert)^k$, a failed simulation counting as failing $T$.
+at most $(1 - 1/\lvert \mathrm{Ch} \rvert)^k$, a failed simulation counting as failing $T$. (For
+tests that count a failed simulation as passing, the gap is
+$(1 - 1/\lvert \mathrm{Ch} \rvert)^k (1 - \Pr[T])$, so the statistical distance between the two
+views is also at most $(1 - 1/\lvert \mathrm{Ch} \rvert)^k$; that second case is not formalized.)
 
 For a two-element challenge set the error is $2^{-k}$. Goldwasser, Micali and Rackoff's Theorem 1 (for
 quadratic residuosity) and Goldreich, Micali and Wigderson's Theorem 2 (for graph isomorphism) assert

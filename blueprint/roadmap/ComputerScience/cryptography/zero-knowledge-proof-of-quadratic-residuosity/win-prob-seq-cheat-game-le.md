@@ -5,7 +5,7 @@ If $y$ is not a square, every adaptive cheating prover passes all $m$ rounds of 
 
 ## Informally uses
 
-- [Soundness error of sequential repetition](../zero-knowledge-proofs/win-prob-seq-cheat-game-le-2.md)
+- [Soundness error of sequential repetition](../zero-knowledge-proofs/soundness-error-of-sequential-repetition.md)
 - [Special soundness of the quadratic-residuosity protocol](sigma-special-sound.md)
 
 ## Sources

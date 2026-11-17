@@ -27,11 +27,17 @@ every one-round verifier whose challenge is any function of the commitment and o
   `Pr[the attempt succeeds and T holds] = Pr[T holds of the real view] / |Ch|`. So an attempt
   succeeds with probability exactly `1 / |Ch|`, whatever the verifier does, and a successful
   attempt has exactly the distribution of the real view.
+* Each attempt draws fresh verifier coins together with a fresh guess. GMR's machine `M` and
+  GMW's simulator fix the verifier's random tape once and retry only the guess; for one round with
+  a perfect special-HVZK simulator both work, and fixing the tape is what composing rounds needs.
 * `simulatorK sim x Vstar k`: up to `k` independent attempts, outputting the first successful
   view or `none`. `winProb_simulatorK`: it outputs a view passing `T` with probability exactly
   `(1 - (1 - 1/|Ch|)^k) Pr[T holds of the real view]`. `abs_winProb_simulatorK_sub_le`
-  (**statistical zero knowledge against an arbitrary verifier, one round**): the two
-  probabilities differ by at most `(1 - 1/|Ch|)^k`.
+  (**zero knowledge against an arbitrary verifier, one round**): for every test `T`, counting a
+  failed simulation as failing `T`, the two probabilities differ by at most `(1 - 1/|Ch|)^k`.
+  (The same bound holds for tests that count a failure as passing, with gap
+  `(1 - 1/|Ch|)^k (1 - Pr[T])`, so the statistical distance is at most `(1 - 1/|Ch|)^k`; that
+  second case is not formalized.)
 
 **Scope.** One round only; the composition over sequential rounds (with a verifier depending on
 the earlier rounds), GMR's simulator that repeats until success (perfect, in expected polynomial
@@ -186,7 +192,7 @@ theorem winProb_simulatorK [DecidableEq Ch] {sim : X → Ch → PMF (Cm × Z)}
     rw [hreal, hatt, hfail, ih]
     ring
 
-/-- **Statistical zero knowledge against an arbitrary verifier, one round**: for a perfect special
+/-- **Zero knowledge against an arbitrary verifier, one round**: for a perfect special
 HVZK simulator and a statement with a witness, the truncated rewinding simulator with `k` attempts
 (which never sees the witness) and the real interaction produce views passing any test `T` with
 probabilities that differ by at most `(1 - 1/|Ch|)^k`, a failed simulation counting as failing

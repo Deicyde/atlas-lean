@@ -44,15 +44,15 @@ One round is a three-move public-coin protocol with challenge set `Bool`, so it 
   simulator of `CSLibExt.Crypto.Identification.RewindingSimulator`. For any verifier whose
   challenge is any function of the prover's graph and of its coins, one attempt (guess the
   challenge, simulate, keep the attempt if the guess was right) succeeds with probability exactly
-  `1/2` and then reproduces the real view exactly; `k` attempts give statistical distance at most
-  `2^{-k}`.
+  `1/2` and then reproduces the real view exactly; with `k` attempts, every test of the view
+  (counting a failed simulation as failing the test) has probabilities within `2^{-k}`.
 
 **Scope.** GMW's simulator repeats attempts until one succeeds and is perfect in expected
-polynomial time; here it is truncated after `k` attempts, which gives statistical rather than
-perfect zero knowledge. Only one round is simulated, against verifiers modelled as functions of
-the graph `H` and of their coins; the composition over `m` rounds (with a verifier whose challenges
-depend on the earlier rounds) and the completeness of the `m`-round protocol (round by round from
-`GraphIso.sigma_complete`) are not formalized.
+polynomial time; here it is truncated after `k` attempts, which gives an approximation within
+`2^{-k}` on every test rather than perfect zero knowledge. Only one round is simulated, against
+verifiers modelled as functions of the graph `H` and of their coins; the composition over `m`
+rounds (with a verifier whose challenges depend on the earlier rounds) and the completeness of
+the `m`-round protocol (round by round from `GraphIso.sigma_complete`) are not formalized.
 
 Graphs are Mathlib's `SimpleGraph V`, relabelled by `SimpleGraph.map`; the statement `x` is the
 pair `(G₀, G₁)` and the witness is a permutation `φ` of `V` with `G₀.map φ = G₁`
@@ -261,7 +261,7 @@ theorem winProb_attemptDist_half {G₀ G₁ : SimpleGraph V} {φ : Equiv.Perm V}
   have := sigma.winProb_attemptDist sigma_specialHVZK (x := (G₀, G₁)) hφ Vstar T
   simpa using this
 
-/-- **Statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier,
+/-- **Zero knowledge of the graph-isomorphism protocol against an arbitrary verifier,
 one round** (Goldreich, Micali and Wigderson, J. ACM 1991, Theorem 2, truncated form): for
 isomorphic graphs, every verifier and every test `T` of its view, the rewinding simulator with `k`
 attempts (which never sees the witness) and the real interaction pass `T` with probabilities that

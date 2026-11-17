@@ -1,12 +1,16 @@
-# Quadratic residuosity implies indistinguishable encryptions
+# All-distinguisher form: residuosity against every distinguisher gives indistinguishable encryptions (vacuous against unbounded distinguishers)
 
-If every distinguisher (with the given coins) has [quadratic-residuosity advantage](qr-advantage.md) at
-most $\varepsilon$, then the [one-bit Goldwasser–Micali scheme](scheme.md) has
-[indistinguishable encryptions with error $\varepsilon$](../semantic-security-and-indistinguishability/ind-secure.md),
-all one-bit messages being given the same length.
+If every distinguisher (with the given coins) has advantage at most $\varepsilon$ in the
+[residuosity experiment](qr-exp.md), then the [one-bit Goldwasser–Micali scheme](scheme.md) has
+[indistinguishable encryptions with error $\varepsilon$](../semantic-security-and-indistinguishability/ind-secure.md), all one-bit messages
+being given the same length.
 
-The hypothesis quantifies over all functions, so against unbounded distinguishers it holds only for
-large $\varepsilon$; see the [per-adversary form](win-prob-ss-real-le-qr-advantage.md).
+Every function counts as a distinguisher, so for a key whose $y$ is not a square the hypothesis holds
+only for $\varepsilon \ge 1$ ([an unbounded distinguisher decides
+residuosity](one-le-of-forall-qr-advantage-le.md)), and then the conclusion holds for every scheme;
+indeed the scheme is [not indistinguishable](not-ind-secure-scheme.md) for any $\varepsilon < 1$. The
+security content is [Goldwasser–Micali's main theorem for one bit, per
+adversary](pub-cpa-advantage-eq-qr-advantage.md).
 
 ## Informally uses
 

@@ -9,10 +9,13 @@ $\varepsilon$.
 
 This is Goldreich's Definition 5.2.4 in concrete form: the error $1/p(n)$ "for every positive
 polynomial $p$ and all sufficiently large $n$" is replaced by one number $\varepsilon$, and every
-function is an admissible distinguisher (Goldreich quantifies over polynomial-size circuit families).
-A correct public-key scheme with a deterministic encryption algorithm never satisfies it with
-$\varepsilon < 1$ once two distinct messages have the same length, as Goldreich observes after
-Definition 5.2.4.
+function is an admissible distinguisher, where Goldreich quantifies over polynomial-size circuit
+families. In this concrete model every function counts as an adversary, so no correct public-key scheme with two distinct messages of the same length meets it with $\varepsilon < 1$, deterministic or probabilistic
+([unattainability](not-ind-secure-of-correct.md)): a distinguisher may decrypt with any secret key
+matching the public key. With a small $\varepsilon$ the definition therefore describes
+information-theoretic security; for public-key schemes the content lies in the per-adversary
+statements, such as [indistinguishability implies semantic security, per
+adversary](win-prob-ss-real-le.md), which carry over to efficient adversaries.
 
 ## Sources
 

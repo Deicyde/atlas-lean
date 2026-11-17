@@ -1,4 +1,4 @@
-# Semantic security implies indistinguishability
+# Semantic security implies indistinguishability, all-adversary form
 
 Let $\varepsilon \ge 0$. If a public-key scheme is
 [semantically secure with error $\varepsilon$](semantically-secure.md), already for trivial a priori
@@ -6,13 +6,14 @@ information and Boolean guesses, then it has
 [indistinguishable encryptions with error $2\varepsilon$](ind-secure.md).
 
 The proof applies semantic security to the adversaries that run a distinguisher $D$ and its negation
-on the [two-point instance](win-prob-ss-real-two-point.md), which bounds the advantage of $D$ in both
-directions. This is the converse direction of Goldreich's Theorem 5.2.5 in concrete form; the factor
-$2$ comes from the two-point instance.
+on the [two-point instance](win-prob-ss-real-two-point.md); the factor $2$ comes from that instance.
+For a correct public-key scheme the hypothesis fails for every $\varepsilon < \tfrac12$
+([unattainability](not-semantically-secure-of-correct.md)); the content is the
+[per-adversary form](win-prob-ss-real-two-point.md).
 
 ## Informally uses
 
-- [The two-point instance of Goldreich's Proposition 5.2.7](win-prob-ss-real-two-point.md)
+- [Semantic security implies indistinguishability, per adversary](win-prob-ss-real-two-point.md)
 
 ## Sources
 

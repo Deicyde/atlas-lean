@@ -39,25 +39,23 @@ with Jacobi symbol `+1`, `y x²` is a uniform element of the non-residues with J
 (this identification uses that the squares have index `2` in the Jacobi-`+1` subgroup; it is the
 reason for the choice of `y` in Goldwasser and Micali, and it is **not** formalized here, so the
 experiment is stated with `y x²` directly). `qrAdvantage` is its distinguishing advantage.
-* `pubCpaAdvantage_eq_qrAdvantage` (**the security of Goldwasser–Micali reduces to quadratic
-  residuosity**, single-bit messages, exact form): for every eavesdropper `A`,
+* `pubCpaAdvantage_eq_qrAdvantage` (**Goldwasser–Micali's main theorem for one bit, per
+  adversary**, exact form): for every eavesdropper `A`,
   `pubCpaAdvantage (scheme N kgen) A = qrAdvantage kgen (reduction A) / 2`, where the reduction
   `reduction A` uses the challenge `z` as the ciphertext of the first challenge message (after
   multiplying by `y` when that message is `1`), and outputs `0` when the two messages coincide.
-* `indSecure_of_qrAdvantage_le` and `semanticallySecure_of_qrAdvantage_le` (**quadratic
-  residuosity implies semantic security**, single-bit messages, concrete form): if no
-  distinguisher has quadratic-residuosity advantage more than `ε`, the scheme has
-  indistinguishable encryptions with error `ε` (the distinguishing experiment *is* the residuosity
-  experiment) and hence, by `SemanticSecurity.IndSecure.semanticallySecure` (Goldreich,
-  Proposition 5.2.6), is semantically secure with error `ε`: no adversary computes any function
-  of the plaintext bit from the ciphertext better than a simulator that never sees it.
-* `winProb_ssReal_le_qrAdvantage` (**semantic security per adversary**): the success of any one
-  adversary exceeds that of its simulator by at most the residuosity advantage of one explicit
-  distinguisher that calls the adversary once. Since every function is an admissible adversary in
-  this concrete setting, and an unbounded distinguisher can factor `N`, the hypothesis "every
-  distinguisher has residuosity advantage at most `ε`" of the two previous results holds only for
-  large `ε`; the per-adversary statements (this one and `pubCpaAdvantage_eq_qrAdvantage`) are the
-  ones that transfer to efficient adversaries.
+* `winProb_ssReal_le_qrAdvantage` (**semantic security for one bit, per adversary**): the success
+  of any one adversary in computing a function of the plaintext bit exceeds that of a simulator
+  that never sees the ciphertext by at most the residuosity advantage of one explicit
+  distinguisher that calls the adversary once.
+* `indSecure_of_qrAdvantage_le` and `semanticallySecure_of_qrAdvantage_le`: the all-distinguisher
+  forms ("if every distinguisher has residuosity advantage at most `ε`, then …"). They are
+  **vacuous against unbounded distinguishers**: in this concrete model every function counts, and
+  for a key whose `y` is not a square the distinguisher that tests squareness has advantage `1`, so
+  the hypothesis forces `ε ≥ 1` (`one_le_of_forall_qrAdvantage_le`), at which point the conclusions
+  hold for every scheme; indeed the scheme is not `IndSecure` for any `ε < 1`
+  (`not_indSecure_scheme`). The per-adversary statements are the ones that transfer to efficient
+  adversaries.
 
 **Messages of `ℓ` bits.** `schemeVec N kgen` encrypts each bit independently (`encryptVec`);
 `schemeVec_correct`. `indExp_schemeVec_hybrid`: for two messages that differ exactly at position
@@ -236,7 +234,7 @@ theorem scheme_correct {kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)} (hkgen : ∀ k �
 
 variable {N}
 
-/-- **The quadratic-residuosity experiment** for the modulus `N` (Goldwasser and Micali, Section
+/-- **The residuosity experiment** for the modulus `N` (Goldwasser and Micali, Section
 3.2, as a concrete experiment): for a key `(y, (p, q))` from `kgen` and the distinguisher's coins
 `r`, the distinguisher `D` receives `y` and either a uniform square `x ^ 2` (`b = false`) or
 `y * x ^ 2` (`b = true`), a uniform non-residue with Jacobi symbol `+1` when `y` is one. -/
@@ -245,15 +243,15 @@ noncomputable def qrExp {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coi
   kgen.bind fun k => coins.bind fun r =>
     (uniformOfFintype (ZMod N)ˣ).map fun x => D k.1 (if b then k.1 * x ^ 2 else x ^ 2) r
 
-/-- **Quadratic-residuosity advantage** of a distinguisher: how well it tells a uniform square
+/-- **Residuosity advantage** of a distinguisher: how well it tells a uniform square
 from `y` times a uniform square. -/
 noncomputable def qrAdvantage {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
     (D : (ZMod N)ˣ → (ZMod N)ˣ → R → Bool) : ℝ :=
   advantage (qrExp kgen coins D true) (qrExp kgen coins D false)
 
-/-- **The reduction from Goldwasser–Micali to quadratic residuosity.** From an eavesdropper `A`:
-on the public key `y`, the challenge `z` and coins `r`, let `(m₀, m₁)` be `A`'s messages; if they
-are equal output `false`, otherwise give `A` the ciphertext `z` (if `m₀ = false`) or `y z` (if
+/-- **The reduction from Goldwasser–Micali to the residuosity experiment.** From an eavesdropper
+`A`: on the public key `y`, the challenge `z` and coins `r`, let `(m₀, m₁)` be `A`'s messages; if
+they are equal output `false`, otherwise give `A` the ciphertext `z` (if `m₀ = false`) or `y z` (if
 `m₀ = true`) and output its guess. A square `z` is then an encryption of `m₀`, and `z = y x²` an
 encryption of `m₁ = !m₀`. -/
 def reduction {R : Type*} (A : PubCPAAdversary Bool (ZMod N)ˣ (ZMod N)ˣ R) :
@@ -295,17 +293,14 @@ theorem inner_identity {R : Type*} (A : PubCPAAdversary Bool (ZMod N)ˣ (ZMod N)
         rw [mul_pow, ← mul_assoc, ← sq]
       simp [encryptBit, hshift, add_comm]
 
-/-- **Linearity of `bind`**, used to lift `inner_identity` through key generation and the coins:
-a pointwise identity between sums of success probabilities survives averaging. -/
-theorem bind_add_eq {α : Type*} (μ : PMF α) (f g f' g' : α → PMF Bool)
-    (h : ∀ a, f a true + g a true = f' a true + g' a true) :
-    (μ.bind f) true + (μ.bind g) true = (μ.bind f') true + (μ.bind g') true := by
-  simp only [PMF.bind_apply, ← ENNReal.tsum_add, ← mul_add, h]
-
-/-- **The security of Goldwasser–Micali reduces to quadratic residuosity** (single-bit messages,
-exact concrete form; Goldwasser and Micali, STOC 1982, Section 4 and Theorem 3, for one bit): for
-every eavesdropper `A`, the `PubK^eav` advantage of `A` against `scheme N kgen` is half the
-quadratic-residuosity advantage of `reduction A`. -/
+/-- **Goldwasser–Micali's main theorem for one bit, per adversary** (exact concrete form;
+Goldwasser and Micali, STOC 1982, Section 4 and Theorem 3, for one bit): for every eavesdropper
+`A`, the `PubK^eav` advantage of `A` against `scheme N kgen` is half the advantage of the
+distinguisher `reduction A` (one call to `A`) in the residuosity experiment `qrExp`. So an
+eavesdropper with guessing advantage `ε` gives a distinguisher of `x²` from `y x²` with advantage
+`2 ε`, and an efficient eavesdropper an efficient distinguisher. `qrExp` gives the distinguisher
+the key element `y`; its identification with the standard problem (uniform residues against
+uniform non-residues of Jacobi symbol `+1`) is not formalized. -/
 theorem pubCpaAdvantage_eq_qrAdvantage {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ))
     (A : PubCPAAdversary Bool (ZMod N)ˣ (ZMod N)ˣ R) :
     pubCpaAdvantage (scheme N kgen) A = qrAdvantage kgen A.coins (reduction A) / 2 := by
@@ -316,7 +311,8 @@ theorem pubCpaAdvantage_eq_qrAdvantage {R : Type*} (kgen : PMF ((ZMod N)ˣ × �
       (qrExp kgen A.coins (reduction A) false) true +
       (pubCpaExp (scheme N kgen) A true) true := by
     unfold qrExp pubCpaExp
-    refine bind_add_eq _ _ _ _ _ fun k => bind_add_eq _ _ _ _ _ fun r => ?_
+    refine apply_true_bind_add_eq _ _ _ _ _ fun k =>
+      apply_true_bind_add_eq _ _ _ _ _ fun r => ?_
     simp only [scheme, PMF.map_comp, Function.comp_def, ite_true, Bool.false_eq_true, ite_false]
     exact inner_identity A k.1 r
   have hfin : ∀ G : PMF Bool, G true ≠ ⊤ := fun G => G.apply_ne_top _
@@ -326,9 +322,9 @@ theorem pubCpaAdvantage_eq_qrAdvantage {R : Type*} (kgen : PMF ((ZMod N)ˣ × �
   congr 1
   linarith
 
-/-- **Residuosity bounds transfer to Goldwasser–Micali.** Any bound on the quadratic-residuosity
-advantage of the reduction bounds the `PubK^eav`
-advantage against the Goldwasser–Micali scheme. -/
+/-- **Residuosity bounds transfer to Goldwasser–Micali, per adversary.** A bound `ε` on the
+advantage of `reduction A` in the residuosity experiment `qrExp` bounds the `PubK^eav` advantage of
+`A` against the Goldwasser–Micali scheme by `ε / 2`. -/
 theorem pubCpaAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ))
     (A : PubCPAAdversary Bool (ZMod N)ˣ (ZMod N)ˣ R) {ε : ℝ}
     (hε : qrAdvantage kgen A.coins (reduction A) ≤ ε) :
@@ -344,11 +340,54 @@ theorem indExp_scheme {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins
     SemanticSecurity.indExp (scheme N kgen) coins D b = qrExp kgen coins D b := by
   simp only [SemanticSecurity.indExp, scheme, qrExp, PMF.map_comp, Function.comp_def, encryptBit]
 
-/-- **Quadratic residuosity implies indistinguishable encryptions** (Goldwasser–Micali, one-bit
-messages, concrete form): if every distinguisher with coins from `coins` has quadratic-residuosity
-advantage at most `ε`, then the scheme has indistinguishable encryptions with error `ε`
-(Goldreich, *Foundations of Cryptography*, Vol. II, Definition 5.2.4, concrete form; all one-bit
-messages have the same length). -/
+/-- **An unbounded distinguisher decides residuosity**: for a key whose `y` is not a square, the
+distinguisher that tests whether its challenge is a square has advantage `1` in the residuosity
+experiment, so the hypothesis "every distinguisher has residuosity advantage at most `ε`" forces
+`ε ≥ 1`. -/
+theorem one_le_of_forall_qrAdvantage_le {R : Type*} (k : (ZMod N)ˣ × ℕ × ℕ) (hy : ¬ IsSquare k.1)
+    (coins : PMF R) {ε : ℝ}
+    (hqr : ∀ D : (ZMod N)ˣ → (ZMod N)ˣ → R → Bool, qrAdvantage (PMF.pure k) coins D ≤ ε) :
+    1 ≤ ε := by
+  classical
+  have h := hqr fun _ z _ => decide (¬ IsSquare z)
+  have h1 : qrExp (PMF.pure k) coins (fun _ z _ => decide (¬ IsSquare z)) true = PMF.pure true := by
+    simp only [qrExp, PMF.pure_bind, ite_true]
+    have : (fun x : (ZMod N)ˣ => decide (¬ IsSquare (k.1 * x ^ 2))) = fun _ => true := by
+      funext x
+      simpa [encryptBit] using not_isSquare_encryptBit_true hy x
+    rw [this, show ((uniformOfFintype (ZMod N)ˣ).map fun _ => true) = PMF.pure true from
+      PMF.map_const _ true, PMF.bind_const]
+  have h0 : qrExp (PMF.pure k) coins (fun _ z _ => decide (¬ IsSquare z)) false =
+      PMF.pure false := by
+    simp only [qrExp, PMF.pure_bind, Bool.false_eq_true, ite_false]
+    have : (fun x : (ZMod N)ˣ => decide (¬ IsSquare (x ^ 2))) = fun _ => false := by
+      funext x
+      simpa [encryptBit] using isSquare_encryptBit_false k.1 x
+    rw [this, show ((uniformOfFintype (ZMod N)ˣ).map fun _ => false) = PMF.pure false from
+      PMF.map_const _ false, PMF.bind_const]
+  rw [qrAdvantage, h1, h0, advantage, winProb_pure, winProb_pure] at h
+  norm_num at h
+  exact h
+
+/-- **The one-bit Goldwasser–Micali scheme is not indistinguishable against unbounded
+distinguishers**: for the point key distribution on a key whose `y` is not a square, `IndSecure`
+fails for every error `ε < 1` (an instance of `SemanticSecurity.not_indSecure_of_correct`). -/
+theorem not_indSecure_scheme {R : Type*} (k : (ZMod N)ˣ × ℕ × ℕ) (hy : ¬ IsSquare k.1)
+    (coins : PMF R) {ε : ℝ} (hε : ε < 1) :
+    ¬ SemanticSecurity.IndSecure (scheme N (PMF.pure k)) (fun _ => 0) coins ε := by
+  intro hS
+  have : 1 ≤ ε := one_le_of_forall_qrAdvantage_le k hy coins fun D => by
+    have := hS D true false rfl
+    rwa [SemanticSecurity.indAdvantage, indExp_scheme, indExp_scheme] at this
+  linarith
+
+/-- **All-distinguisher form: residuosity against every distinguisher gives indistinguishable
+encryptions (vacuous against unbounded distinguishers)**. If every distinguisher with coins from
+`coins` has advantage at most `ε` in the residuosity experiment, the one-bit scheme has
+indistinguishable encryptions with error `ε`. Every function counts as a distinguisher, so for a
+key whose `y` is not a square the hypothesis holds only for `ε ≥ 1`
+(`one_le_of_forall_qrAdvantage_le`), and then the conclusion holds for every scheme. The security
+content is the per-adversary `pubCpaAdvantage_eq_qrAdvantage`. -/
 theorem indSecure_of_qrAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
     {ε : ℝ} (hqr : ∀ D : (ZMod N)ˣ → (ZMod N)ˣ → R → Bool, qrAdvantage kgen coins D ≤ ε) :
     SemanticSecurity.IndSecure (scheme N kgen) (fun _ => 0) coins ε := by
@@ -361,7 +400,7 @@ theorem indSecure_of_qrAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ �
   · exact hqr D
   · simpa using hε
 
-/-- **Semantic security of Goldwasser–Micali, per adversary** (one-bit messages, concrete form):
+/-- **Semantic security of Goldwasser–Micali for one bit, per adversary** (concrete form):
 for every adversary `A`, plaintext distribution `X`, information `h` and target `f`, `A` computes
 `f` of the plaintext bit at most `ε` more often than the simulator of Goldreich's Proposition 5.2.6
 (which runs `A` on an encryption of `0`), where `ε` is the quadratic-residuosity advantage of the
@@ -381,20 +420,21 @@ theorem winProb_ssReal_le_qrAdvantage {R H T : Type*} [DecidableEq T]
     exact advantage_nonneg _ _
   · exact le_of_eq (by rw [qrAdvantage])
 
-/-- **Quadratic residuosity implies semantic security** (Goldwasser and Micali, STOC 1982, for one
-bit; concrete form): if every distinguisher with coins from `coins` has quadratic-residuosity
-advantage at most `ε`, then for every adversary `A` there is a simulator that never sees the
-ciphertext and computes every function `f` of the plaintext bit, with any a priori information
-`h`, at most `ε` less often than `A` does. Combines `indSecure_of_qrAdvantage_le` with
-Goldreich's Proposition 5.2.6 (`SemanticSecurity.IndSecure.semanticallySecure`). -/
+/-- **All-distinguisher form: residuosity against every distinguisher gives semantic security
+(vacuous against unbounded distinguishers)**. Under the hypothesis of
+`indSecure_of_qrAdvantage_le`, the one-bit scheme is semantically secure with error `ε`
+(`indSecure_of_qrAdvantage_le` with Goldreich's Proposition 5.2.6,
+`SemanticSecurity.semanticallySecure_of_indSecure`). For a key whose `y` is not a square the
+hypothesis forces `ε ≥ 1` (`one_le_of_forall_qrAdvantage_le`), so the conclusion is true of every
+scheme; the security content is the per-adversary `winProb_ssReal_le_qrAdvantage`. -/
 theorem semanticallySecure_of_qrAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ))
     (coins : PMF R) {ε : ℝ}
     (hqr : ∀ D : (ZMod N)ˣ → (ZMod N)ˣ → R → Bool, qrAdvantage kgen coins D ≤ ε)
     (H T : Type*) [DecidableEq T] :
     SemanticSecurity.SemanticallySecure (scheme N kgen) (fun _ => 0) coins H T ε :=
   have hε : 0 ≤ ε := (advantage_nonneg _ _).trans (hqr fun _ _ _ => false)
-  (indSecure_of_qrAdvantage_le kgen coins hqr).semanticallySecure _ hε (fun _ => false)
-    (fun _ => rfl) H T
+  SemanticSecurity.semanticallySecure_of_indSecure _ hε (fun _ => false) (fun _ => rfl)
+    (indSecure_of_qrAdvantage_le kgen coins hqr) H T
 
 /-! ### Messages of several bits -/
 
@@ -576,9 +616,9 @@ theorem indAdvantage_schemeVec_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × 
     obtain ⟨h₁, h₂⟩ := indExp_schemeVec_hybrid kgen coins D hv hne
     rw [h₁, h₂, qrAdvantage, advantage_comm]
 
-/-- **Bitwise Goldwasser–Micali loses a factor `ℓ`**: if each hybrid reduction has
-quadratic-residuosity advantage at most `ε`, a distinguisher between encryptions of two `ℓ`-bit
-messages has advantage at most `ℓ ε`. -/
+/-- **Bitwise Goldwasser–Micali loses a factor `ℓ`**: if each of the `ℓ` hybrid reductions built
+from a distinguisher `D` has advantage at most `ε` in the residuosity experiment, then `D` has
+advantage at most `ℓ ε` between encryptions of the two `ℓ`-bit messages. -/
 theorem indAdvantage_schemeVec_le_mul {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ))
     (coins : PMF R) (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool) (m m' : Fin ℓ → Bool)
     {ε : ℝ}

@@ -35,20 +35,18 @@ Concrete form, for one fixed index distribution and a finite domain `D`:
   it answers `1` predicts `b α x` with probability
   `1/2 + (Pr[D(b) = 1] - Pr[D(¬ b) = 1]) / 2`. This is the step that Goldreich's proof delegates to
   "the second proof of Theorem 3.4.1".
-* `indAdvantage_eq` (**Proposition 5.3.14, per adversary, exact form**): the advantage of a
-  distinguisher between encryptions of `0` and `1` is twice the prediction advantage of the
-  predictor built from it.
-* `indSecure_of_predict_le` and `semanticallySecure_of_predict_le` (**Proposition 5.3.14,
-  concrete form**): if no predictor guesses the hard-core bit with probability more than
-  `1/2 + ε`, the scheme has indistinguishable encryptions with error `2 ε`, hence (by
-  Goldreich's Proposition 5.2.6) is semantically secure with error `2 ε`.
+* `indAdvantage_eq_two_mul_predictAdvantage` (**Proposition 5.3.14, per adversary, exact
+  form**, the security theorem): the advantage of a distinguisher between encryptions of `0` and
+  `1` is twice the prediction advantage of the predictor built from it with one call.
+* `indSecure_of_predict_le` and `semanticallySecure_of_predict_le`: the all-predictor forms. They
+  are **vacuous against unbounded predictors**: their hypothesis forces `ε ≥ 1/2`
+  (`half_le_of_forall_predict_le`), and then the conclusion (error `2 ε ≥ 1`) holds for every
+  scheme.
 
 **Scope.** No security parameter and no complexity bounds; the domain is a fixed finite type and
-the index distribution `gen` is arbitrary. The Goldreich–Levin theorem itself is not used. Since
-every function is an admissible adversary here, the hypothesis of `indSecure_of_predict_le`, which
-quantifies over all predictors, can only hold with `ε ≥ 1/2` (an unbounded predictor inverts
-`p α`); the per-adversary identity `indAdvantage_eq` is the statement that transfers to bounded
-adversaries, because the predictor makes one call to the distinguisher.
+the index distribution `gen` is arbitrary. The Goldreich–Levin theorem itself is not used. The
+per-adversary identity is the statement that transfers to bounded adversaries, because the
+predictor makes one call to the distinguisher.
 
 ## References
 
@@ -125,35 +123,6 @@ output `c` if `A` answers `1`, and `¬ c` otherwise. -/
 def predictor (A : I → D × Bool → R → Bool) : I → D → R × Bool → Bool :=
   fun α y rc => if A α (y, rc.2) rc.1 then rc.2 else !rc.2
 
-/-- **Success probability of an average**: `Pr[μ.bind F = 1] = ∑ₐ μ(a) Pr[F a = 1]`. -/
-theorem winProb_bind {α : Type*} (μ : PMF α) (F : α → PMF Bool) :
-    winProb (μ.bind F) = ∑' a, (μ a).toReal * winProb (F a) := by
-  rw [winProb, PMF.bind_apply, ENNReal.tsum_toReal_eq fun a =>
-    ENNReal.mul_ne_top (μ.apply_ne_top a) ((F a).apply_ne_top true)]
-  simp only [ENNReal.toReal_mul, winProb]
-
-/-- **Averaging an affine identity**: if `Pr[F a = 1] = 1/2 + (Pr[G a = 1] - Pr[H a = 1]) / 2` for
-every `a`, the same identity holds after drawing `a` from `μ`. -/
-theorem winProb_bind_affine {α : Type*} (μ : PMF α) (F G H : α → PMF Bool)
-    (h : ∀ a, winProb (F a) = 1 / 2 + (winProb (G a) - winProb (H a)) / 2) :
-    winProb (μ.bind F) = 1 / 2 + (winProb (μ.bind G) - winProb (μ.bind H)) / 2 := by
-  have hμ : Summable fun a => (μ a).toReal := ENNReal.summable_toReal (by simp [μ.tsum_coe])
-  have hone : ∑' a, (μ a).toReal = 1 := by
-    rw [← ENNReal.tsum_toReal_eq fun a => μ.apply_ne_top a, μ.tsum_coe, ENNReal.toReal_one]
-  have hs : ∀ K : α → PMF Bool, Summable fun a => (μ a).toReal * winProb (K a) := fun K =>
-    hμ.of_nonneg_of_le (fun a => mul_nonneg ENNReal.toReal_nonneg (winProb_nonneg _))
-      (fun a => mul_le_of_le_one_right ENNReal.toReal_nonneg (winProb_le_one _))
-  rw [winProb_bind, winProb_bind, winProb_bind]
-  simp_rw [h]
-  have : ∀ a, (μ a).toReal * (1 / 2 + (winProb (G a) - winProb (H a)) / 2) =
-      (1 / 2) * (μ a).toReal + (1 / 2) * ((μ a).toReal * winProb (G a)) -
-        (1 / 2) * ((μ a).toReal * winProb (H a)) := fun a => by ring
-  simp_rw [this]
-  rw [((hμ.mul_left _).add ((hs G).mul_left _)).tsum_sub ((hs H).mul_left _),
-    (hμ.mul_left _).tsum_add ((hs G).mul_left _), tsum_mul_left, tsum_mul_left, tsum_mul_left,
-    hone]
-  ring
-
 /-- **The predictor's success for one key and one coin**: with a fair coin `c`, the predictor
 built from `A` wins with probability `1/2 + (Pr[A(b) = 1] - Pr[A(¬ b) = 1]) / 2`, the
 probabilities being over a uniform `x`. -/
@@ -206,12 +175,14 @@ fair bit. -/
 noncomputable def predictorCoins (coins : PMF R) : PMF (R × Bool) :=
   coins.bind fun r => fairCoin.map fun c => (r, c)
 
-/-- **Distinguishing advantage equals twice the prediction advantage** (exact, per adversary): for
-the scheme of Construction 5.3.13, the advantage of `A` between encryptions of `0` and `1` is
-`2 |Pr[predictor A wins] - 1/2|`. This is the per-adversary content of Proposition 5.3.14: an
-efficient distinguisher gives an equally efficient predictor of the hard-core bit. -/
-theorem indAdvantage_eq (gen : PMF (I × T)) (p : I → D ≃ D) (inv : T → D → D)
-    (b : I → D → Bool) (coins : PMF R) (A : I → D × Bool → R → Bool) :
+/-- **Goldreich's Proposition 5.3.14, per adversary** (exact form): for the scheme of
+Construction 5.3.13, the advantage of a distinguisher `A` between encryptions of `0` and `1` is
+`2 |Pr[predictor A wins] - 1/2|`, twice the prediction advantage of the predictor built from `A`
+with one call. So a distinguisher with advantage `ε` gives a predictor of the hard-core bit with
+advantage `ε / 2`, and an efficient distinguisher an equally efficient predictor: this is the
+security of encryption from a hard-core predicate. -/
+theorem indAdvantage_eq_two_mul_predictAdvantage (gen : PMF (I × T)) (p : I → D ≃ D)
+    (inv : T → D → D) (b : I → D → Bool) (coins : PMF R) (A : I → D × Bool → R → Bool) :
     indAdvantage (scheme gen p inv b) coins A false true =
       2 * |winProb (predictGame gen p b (predictorCoins coins) (predictor A)) - 1 / 2| := by
   rw [indAdvantage, indExp_scheme, indExp_scheme, advantage, predictorCoins,
@@ -229,11 +200,30 @@ theorem winProb_hcExp_not (gen : PMF (I × T)) (p : I → D ≃ D) (b : I → D 
   rw [this, ← toReal_apply_false, winProb, PMF.map_apply, tsum_fintype, Fintype.sum_bool]
   simp
 
-/-- **Encryption from a hard-core predicate has indistinguishable encryptions** (Goldreich,
-*Foundations of Cryptography*, Vol. II, Proposition 5.3.14, concrete form): if no predictor with
-coins from `predictorCoins coins` guesses the hard-core bit `b α x` from `(α, p α x)` with
-probability more than `1/2 + ε`, then the scheme of Construction 5.3.13 has indistinguishable
-encryptions with error `2 ε` against distinguishers with coins from `coins`. -/
+/-- **An unbounded predictor always wins**: the hypothesis "every predictor guesses the hard-core
+bit with probability at most `1/2 + ε`" forces `ε ≥ 1/2`, since the predictor
+`b α ((p α).symm y)` inverts the permutation. -/
+theorem half_le_of_forall_predict_le (gen : PMF (I × T)) (p : I → D ≃ D) (b : I → D → Bool)
+    (coins : PMF R) {ε : ℝ}
+    (hpred : ∀ P : I → D → R × Bool → Bool,
+      winProb (predictGame gen p b (predictorCoins coins) P) ≤ 1 / 2 + ε) :
+    1 / 2 ≤ ε := by
+  have h := hpred fun α y _ => b α ((p α).symm y)
+  have hone : predictGame gen p b (predictorCoins coins) (fun α y _ => b α ((p α).symm y)) =
+      PMF.pure true := by
+    simp only [predictGame, Equiv.symm_apply_apply, BEq.rfl, PMF.bind_const]
+    exact PMF.map_const _ true
+  rw [hone, winProb_pure] at h
+  simp at h
+  linarith
+
+/-- **All-predictor form of Proposition 5.3.14 (vacuous against unbounded predictors)**: if every
+predictor with coins from `predictorCoins coins` guesses the hard-core bit with probability at most
+`1/2 + ε`, the scheme of Construction 5.3.13 has indistinguishable encryptions with error `2 ε`.
+Every function counts as a predictor, so the hypothesis holds only for `ε ≥ 1/2`
+(`half_le_of_forall_predict_le`), and then the conclusion, with error `2 ε ≥ 1`, holds for every
+scheme. The security content is the per-adversary
+`indAdvantage_eq_two_mul_predictAdvantage`. -/
 theorem indSecure_of_predict_le (gen : PMF (I × T)) (p : I → D ≃ D) (inv : T → D → D)
     (b : I → D → Bool) (coins : PMF R) {ε : ℝ}
     (hpred : ∀ P : I → D → R × Bool → Bool,
@@ -262,10 +252,12 @@ theorem indSecure_of_predict_le (gen : PMF (I × T)) (p : I → D ≃ D) (inv : 
   · rw [abs_le]; constructor <;> linarith
   · simpa using hε
 
-/-- **Encryption from a hard-core predicate is semantically secure** (Goldreich, *Foundations of
-Cryptography*, Vol. II, Proposition 5.3.14 with Proposition 5.2.6, concrete form): under the
-hypothesis of `indSecure_of_predict_le`, the scheme of Construction 5.3.13 is semantically secure
-with error `2 ε`. -/
+/-- **All-predictor form of semantic security from a hard-core predicate (vacuous against
+unbounded predictors)**: under the hypothesis of `indSecure_of_predict_le`, the scheme of
+Construction 5.3.13 is semantically secure with error `2 ε` (Goldreich, Propositions 5.3.14 and
+5.2.6). The hypothesis forces `ε ≥ 1/2` (`half_le_of_forall_predict_le`), so the conclusion is
+true of every scheme; the content is the per-adversary
+`indAdvantage_eq_two_mul_predictAdvantage` with `SemanticSecurity.winProb_ssReal_le`. -/
 theorem semanticallySecure_of_predict_le (gen : PMF (I × T)) (p : I → D ≃ D) (inv : T → D → D)
     (b : I → D → Bool) (coins : PMF R) {ε : ℝ}
     (hpred : ∀ P : I → D → R × Bool → Bool,
@@ -275,7 +267,7 @@ theorem semanticallySecure_of_predict_le (gen : PMF (I × T)) (p : I → D ≃ D
   have hε : 0 ≤ 2 * ε := by
     have h := (indSecure_of_predict_le gen p inv b coins hpred) (fun _ _ _ => false) false false rfl
     exact (advantage_nonneg _ _).trans h
-  exact (indSecure_of_predict_le gen p inv b coins hpred).semanticallySecure _ hε (fun _ => false)
-    (fun _ => rfl) H T'
+  exact semanticallySecure_of_indSecure _ hε (fun _ => false) (fun _ => rfl)
+    (indSecure_of_predict_le gen p inv b coins hpred) H T'
 
 end Cslib.Crypto.PublicKey.HardCoreEncryption

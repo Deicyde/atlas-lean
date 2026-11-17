@@ -8,13 +8,13 @@ of $0$ and $1$ cannot be told apart (Proposition 5.3.14); with the Goldreich–L
 gives every one-way permutation a hard-core predicate, this yields public-key encryption from any
 trapdoor permutation (Theorem 5.3.15).
 
-Here the construction is formalized for one key distribution and a finite domain, with correctness,
-the exact per-adversary relation between distinguishing encryptions and predicting the hard-core bit,
-and the resulting indistinguishability and semantic security. Because every function is an admissible
-adversary in this concrete setting, the hypothesis "no predictor at all succeeds with probability
-more than $\tfrac12 + \varepsilon$" holds only for $\varepsilon \ge \tfrac12$ (an unbounded predictor
-inverts $p_\alpha$); the per-adversary identity is the part that transfers to efficient adversaries,
-since the predictor calls the distinguisher once.
+Here the construction is formalized for one key distribution and a finite domain. The security
+theorem is **per adversary**: the advantage of any distinguisher between encryptions of $0$ and $1$ is
+exactly twice the prediction advantage of a predictor that calls it once, which carries over to
+efficient adversaries. The all-predictor forms ("if every predictor wins with probability at most
+$\tfrac12 + \varepsilon$, then …") are also proved but are vacuous in this concrete model: an
+unbounded predictor inverts $p_\alpha$ and always wins, so their hypothesis forces
+$\varepsilon \ge \tfrac12$.
 
 ## The scheme
 
@@ -32,17 +32,19 @@ since the predictor calls the distinguisher once.
 
 - [The predictor built from a distinguisher](predictor.md)
 - [The coins of the predictor](predictor-coins.md)
-- [Success probability of an average](win-prob-bind.md)
-- [Averaging an affine identity](win-prob-bind-affine.md)
 - [The predictor's success for one key and one coin](win-prob-inner.md)
 - [Distinguishing implies predicting](win-prob-predict-game-predictor.md)
 
 ## Security
 
 - [Distinguishing encryptions is distinguishing the hard-core bit](ind-exp-scheme.md)
-- [Distinguishing advantage equals twice the prediction advantage](ind-advantage-eq.md)
-- [Encryption from a hard-core predicate has indistinguishable encryptions](ind-secure-of-predict-le.md)
-- [Encryption from a hard-core predicate is semantically secure](semantically-secure-of-predict-le.md)
+- [Goldreich's Proposition 5.3.14, per adversary](ind-advantage-eq-two-mul-predict-advantage.md)
+
+## All-predictor forms (vacuous against unbounded predictors)
+
+- [An unbounded predictor always wins](half-le-of-forall-predict-le.md)
+- [All-predictor form of Proposition 5.3.14 (vacuous against unbounded predictors)](ind-secure-of-predict-le.md)
+- [All-predictor form of semantic security from a hard-core predicate (vacuous against unbounded predictors)](semantically-secure-of-predict-le.md)
 
 ## Related topics
 

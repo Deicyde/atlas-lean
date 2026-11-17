@@ -4,23 +4,29 @@ Goldwasser and Micali's definition of secure encryption: a ciphertext must not h
 adversary compute any partial information on the plaintext (*semantic security*), and the technical
 condition that implies it, that encryptions of any two messages of equal length cannot be told apart
 (*indistinguishability of encryptions*). The two notions are equivalent (Goldreich, *Foundations of
-Cryptography*, Vol. II, Theorem 5.2.5). Here both are stated for public-key schemes in concrete form:
-one fixed scheme, adversaries given as functions of their random coins, and an explicit error
-$\varepsilon$ in place of Goldreich's $1/p(n)$. Both implications are proved: indistinguishability
-with error $\varepsilon$ gives semantic security with error $\varepsilon$, and semantic security with
-error $\varepsilon$ gives indistinguishability with error $2\varepsilon$. There is no security parameter
-and no bound on the running time of adversaries, so the asymptotic Theorem 5.2.5 is not claimed; the
-reductions used are one call to the given adversary. Since every function is an admissible
-adversary, the two definitions with a small $\varepsilon$ describe information-theoretic security;
-for computational schemes the per-adversary statements (the one-adversary form of Proposition 5.2.6
-below, and the per-adversary reductions of the schemes linked under Related topics) are the ones that
-transfer to efficient adversaries.
+Cryptography*, Vol. II, Theorem 5.2.5).
+
+Here both are stated for public-key schemes in concrete form: one fixed scheme, adversaries given as
+functions of their random coins, an explicit error $\varepsilon$ in place of Goldreich's $1/p(n)$, and
+no bound on running time. The theorems that matter are **per adversary**: a distinguisher with
+advantage $\varepsilon$ against the hardwired plaintexts gives semantic security with error
+$\varepsilon$ against the given adversary, and a distinguisher with advantage $\delta$ gives an
+adversary that beats every simulator by $\delta/2$. Each transformation makes one call to the given
+adversary, so it carries over to efficient adversaries, which is what Goldreich's asymptotic
+Theorem 5.2.5 needs.
+
+Against unbounded adversaries, which this model allows, no correct public-key scheme has
+indistinguishable encryptions with an error below $1$, or is semantically secure with an error below
+$\tfrac12$: a distinguisher may decrypt with any secret key matching the public key. The
+all-adversary implications between the two definitions are proved too, but for public-key schemes
+they relate statements that are trivially true or false; they are labelled "all-adversary form".
 
 ## Indistinguishability of encryptions
 
 - [The indistinguishability experiment](ind-exp.md)
 - [Distinguishing advantage between encryptions](ind-advantage.md)
 - [Indistinguishability of encryptions with error `ε`](ind-secure.md)
+- [`PubK^eav` with fixed messages is the indistinguishability experiment](pub-cpa-exp-eq-ind-exp.md)
 
 ## Semantic security
 
@@ -32,23 +38,26 @@ transfer to efficient adversaries.
 
 - [The simulator of Goldreich's Proposition 5.2.6](simulator.md)
 - [The distinguisher hardwiring one plaintext](ss-distinguisher.md)
-- [Averaging a pointwise bound](win-prob-bind-le.md)
-- [Indistinguishability implies semantic security, for one adversary](win-prob-ss-real-le.md)
-- [Indistinguishability implies semantic security](semantically-secure-2.md)
+- [Indistinguishability implies semantic security, per adversary](win-prob-ss-real-le.md)
+- [Indistinguishability implies semantic security, all-adversary form](semantically-secure-of-ind-secure.md)
 
 ## Semantic security implies indistinguishability
 
-- [The two-point plaintext distribution](two-point.md)
-- [Averaging over the two-point distribution](win-prob-two-point-bind.md)
-- [The two-point instance of Goldreich's Proposition 5.2.7](win-prob-ss-real-two-point.md)
-- [Semantic security implies indistinguishability](ind-secure-2.md)
+- [Semantic security implies indistinguishability, per adversary](win-prob-ss-real-two-point.md)
+- [Semantic security implies indistinguishability, all-adversary form](ind-secure-of-semantically-secure.md)
+
+## Unattainability against unbounded adversaries
+
+- [Indistinguishability is unattainable against unbounded distinguishers](not-ind-secure-of-correct.md)
+- [Semantic security is unattainable against unbounded adversaries](not-semantically-secure-of-correct.md)
 
 ## Related topics
 
+- [Games and advantages](../games-and-advantages/README.md): the averaging lemmas the reductions use.
 - [Goldwasser–Micali encryption](../goldwasser-micali-encryption/README.md): the first scheme proved
   semantically secure, from the hardness of deciding quadratic residuosity.
 - [ElGamal encryption](../elgamal-encryption/README.md): an eavesdropping (indistinguishability)
   security proof from the decisional Diffie–Hellman assumption.
 - [Encryption from hard-core predicates](../encryption-from-hard-core-predicates/README.md):
-  Goldreich's construction of public-key encryption with indistinguishable encryptions from a
-  trapdoor permutation and a hard-core predicate (Construction 5.3.13, Proposition 5.3.14).
+  Goldreich's construction of public-key encryption from a trapdoor permutation and a hard-core
+  predicate (Construction 5.3.13, Proposition 5.3.14).

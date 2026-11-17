@@ -11,7 +11,7 @@ protocol, with a simulator that repeats attempts until success.
 
 ## Informally uses
 
-- [Statistical zero knowledge against an arbitrary verifier, one round](../zero-knowledge-proofs/abs-win-prob-simulator-k-sub-le.md)
+- [Zero knowledge against an arbitrary verifier, one round](../zero-knowledge-proofs/abs-win-prob-simulator-k-sub-le.md)
 - [Perfect special honest-verifier zero knowledge of the quadratic-residuosity protocol](sigma-special-hvzk.md)
 
 ## Sources

@@ -9,6 +9,9 @@ the left side for [one rewinding attempt](attempt-dist.md) and the right side fo
 $1/\lvert \mathrm{Ch} \rvert$ whatever $V^*$ does; conditioned on success, the simulated view has exactly
 the distribution of the real view.
 
+Here each attempt redraws the verifier's coins ([one rewinding attempt](attempt-dist.md)); the cited
+proofs fix them and retry only the guess.
+
 The proof: by [special honest-verifier zero knowledge](special-hvzk.md) the simulator's pair for the
 guess $e'$ is distributed as the honest pair for the challenge $e'$, and the successful triples
 $(r, e', k)$ with $e' = V^*(a_k, r)$ are in bijection with the real runs $(r, k)$.

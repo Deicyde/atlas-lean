@@ -1,4 +1,4 @@
-# Statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier, one round
+# Zero knowledge of the graph-isomorphism protocol against an arbitrary verifier, one round
 
 For isomorphic graphs, every verifier and every test $T$ of its view, the rewinding simulator with $k$
 attempts (which never sees the isomorphism) and the real interaction pass $T$ with probabilities that
@@ -6,7 +6,7 @@ differ by at most $2^{-k}$.
 
 ## Informally uses
 
-- [Statistical zero knowledge against an arbitrary verifier, one round](abs-win-prob-simulator-k-sub-le.md)
+- [Zero knowledge against an arbitrary verifier, one round](../zero-knowledge-proofs/abs-win-prob-simulator-k-sub-le.md)
 - [Perfect special honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-special-hvzk.md)
 
 ## Sources

@@ -2,7 +2,7 @@
 
 Let $u$ and $v$ be $\ell$-bit messages that differ exactly at position $j$. For every distinguisher
 $D$, the [indistinguishability experiments](../semantic-security-and-indistinguishability/ind-exp.md) of the [`ℓ`-bit scheme](scheme-vec.md) on
-$u$ and on $v$ are the worlds $0$ and $1$ of the [quadratic-residuosity experiment](qr-exp.md) for the
+$u$ and on $v$ are the worlds $0$ and $1$ of the [residuosity experiment](qr-exp.md) for the
 [hybrid reduction](hybrid-reduction.md) built from $D$, $u$ and $j$, with
 [its coins](hybrid-coins.md). In world $1$ with $u_j = 1$ the component $y \cdot y x^2 = (y x)^2$ is
 an encryption of $0$ because $y x$ is uniform when $x$ is.

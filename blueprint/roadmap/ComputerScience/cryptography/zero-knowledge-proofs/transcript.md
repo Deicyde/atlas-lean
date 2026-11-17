@@ -1,4 +1,4 @@
 # The distribution of honest transcripts
 
-Uniform prover coins and a uniform challenge (an
-honest verifier).
+The distribution of [honest transcripts](honest-transcript.md) when the prover's coins and the
+challenge are drawn uniformly and independently: the view of an honest verifier.

@@ -6,7 +6,7 @@ round may depend on its coins and on the earlier challenges, passes all $m$ roun
 
 ## Informally uses
 
-- [Soundness error of sequential repetition](win-prob-seq-cheat-game-le-2.md)
+- [Soundness error of sequential repetition](../zero-knowledge-proofs/soundness-error-of-sequential-repetition.md)
 - [Special soundness of the graph-isomorphism protocol](sigma-special-sound.md)
 
 ## Sources

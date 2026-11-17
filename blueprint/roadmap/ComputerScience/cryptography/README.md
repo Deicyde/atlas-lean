@@ -7,6 +7,7 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [Differential privacy](differential-privacy/README.md)
 - [ElGamal encryption](elgamal-encryption/README.md)
 - [Encryption from hard-core predicates](encryption-from-hard-core-predicates/README.md)
+- [Games and advantages](games-and-advantages/README.md)
 - [Goldwasser–Micali encryption](goldwasser-micali-encryption/README.md)
 - [Lamport signature](lamport-signature/README.md)
 - [Laplace and exponential mechanisms](laplace-and-exponential-mechanisms/README.md)
@@ -16,6 +17,7 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [RSA cryptosystem](rsa-cryptosystem/README.md)
 - [Schnorr identification scheme](schnorr-identification-scheme/README.md)
 - [Semantic security and indistinguishability](semantic-security-and-indistinguishability/README.md)
+- [Zero-knowledge proof of graph isomorphism](zero-knowledge-proof-of-graph-isomorphism/README.md)
 - [Zero-knowledge proof of quadratic residuosity](zero-knowledge-proof-of-quadratic-residuosity/README.md)
 - [Zero-knowledge proofs](zero-knowledge-proofs/README.md)
 

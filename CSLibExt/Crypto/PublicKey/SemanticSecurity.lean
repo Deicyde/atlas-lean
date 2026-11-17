@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import CSLibExt.Crypto.Framework.Games
+public import CSLibExt.Crypto.Framework.Averaging
 
 /-!
 # Semantic security and indistinguishability of encryptions
@@ -35,24 +35,37 @@ implications with explicit constants:
   an `A'` such that for every `X`, `h`, `f` the success probability of `A` exceeds that of `A'` by
   at most `ε` (Goldreich, Definition 5.2.2, in the order of quantifiers "for every `A` there is
   `A'` for every `X, h, f`").
-* `winProb_ssReal_le` and `IndSecure.semanticallySecure` (**indistinguishability implies semantic
-  security**, Goldreich, Proposition 5.2.6, concrete form): the ideal adversary `simulator S A`
+* `winProb_ssReal_le` (**indistinguishability implies semantic security, per adversary**,
+  Goldreich, Proposition 5.2.6, concrete form) and its all-adversary form
+  `semanticallySecure_of_indSecure`: the ideal adversary `simulator S A`
   runs `A` on an encryption of a dummy message of the right length, and loses at most `ε`. It
   makes one call to `A`, does not depend on `X`, `h` or `f`, and the distinguishers used are the
   `ssDistinguisher A h f x` obtained by hardwiring `h x` and `f x` into `A`, as in Goldreich's
   proof.
-* `winProb_ssReal_two_point` and `SemanticallySecure.indSecure` (**semantic security implies
-  indistinguishability**, Goldreich, Proposition 5.2.7, concrete form): for two messages `m ≠ m'`
+* `winProb_ssReal_two_point` (**semantic security implies indistinguishability, per
+  adversary**, Goldreich, Proposition 5.2.7, concrete form) and its all-adversary form
+  `indSecure_of_semanticallySecure`: for two messages `m ≠ m'`
   of equal length, the plaintext distribution uniform on `{m, m'}`, no a priori information and
   the target "is the plaintext `m'`?", every ideal adversary succeeds with probability exactly
   `1/2` while the adversary that runs `D` succeeds with probability `1/2 + (Pr[D(E(m')) = 1] -
   Pr[D(E(m)) = 1]) / 2`. Hence semantic security with error `ε` implies indistinguishability with
   error `2 ε`.
 
-**Scope.** No security parameter or complexity bound: in the concrete form every function is an
-admissible adversary, so these are statements about one scheme and one error `ε`, not Goldreich's
-asymptotic Theorem 5.2.5 (which also needs the reductions to be polynomial-size; both are, being
-one call to the given adversary). The plaintext space `M` comes with a length function `len`, and
+**The definitions are unattainable for public-key schemes in this model.** No security parameter
+or complexity bound is imposed: every function is an admissible adversary. Against such unbounded
+adversaries no correct public-key scheme with two distinct messages of the same length has
+indistinguishable encryptions with an error below `1` (`not_indSecure_of_correct`: a distinguisher
+can decrypt with any secret key matching the public key), nor is it semantically secure with an
+error below `1/2` (`not_semanticallySecure_of_correct`). So `IndSecure` and `SemanticallySecure`
+with small errors describe information-theoretic security, and for public-key encryption the
+all-adversary implications `semanticallySecure_of_indSecure` and `indSecure_of_semanticallySecure`
+relate statements that are trivially true or false. The content that carries over to efficient
+adversaries is in the **per-adversary** statements `winProb_ssReal_le` and
+`winProb_ssReal_two_point`: each turns one adversary into one distinguisher (or back) with one
+call, which is what Goldreich's asymptotic Theorem 5.2.5 needs. `pubCpaExp_eq_indExp` identifies
+`indExp` with the framework's `PubK^eav` experiment for an adversary with fixed messages.
+
+**Scope.** The plaintext space `M` comes with a length function `len`, and
 `dummy n` must be a message of length `n` for every length that occurs (Goldreich's `1^{|x|}`).
 
 ## References
@@ -79,13 +92,24 @@ distinguisher's coins `r`, a ciphertext `c` of `m`; output `D pk c r`. -/
 noncomputable def indExp (coins : PMF R) (D : PK → C → R → Bool) (m : M) : PMF Bool :=
   S.gen.bind fun kp => coins.bind fun r => (S.enc kp.1 m).map fun c => D kp.1 c r
 
+/-- **`PubK^eav` with fixed messages is the indistinguishability experiment**: for an eavesdropper
+whose messages `(m₀, m₁)` do not depend on the key or its coins, the framework's left-or-right
+experiment `pubCpaExp` with challenge bit `b` is `indExp` on the selected message. -/
+theorem pubCpaExp_eq_indExp {m₀ m₁ : M} (A : PubCPAAdversary M PK C R)
+    (hA : ∀ pk r, A.choose pk r = (m₀, m₁)) (b : Bool) :
+    pubCpaExp S A b = indExp S A.coins A.guess (pick (m₀, m₁) b) := by
+  simp only [pubCpaExp, indExp, hA]
+
 /-- **Distinguishing advantage between encryptions** of `m` and of `m'`. -/
 noncomputable def indAdvantage (coins : PMF R) (D : PK → C → R → Bool) (m m' : M) : ℝ :=
   advantage (indExp S coins D m) (indExp S coins D m')
 
 /-- **Indistinguishability of encryptions with error `ε`** (Goldreich, *Foundations of
 Cryptography*, Vol. II, Definition 5.2.4, concrete form): every distinguisher with coins drawn
-from `coins` has advantage at most `ε` between encryptions of any two messages of equal length. -/
+from `coins` has advantage at most `ε` between encryptions of any two messages of equal length.
+Every function counts as a distinguisher, so no correct public-key scheme meets this with `ε < 1`
+when two distinct messages have the same length (`not_indSecure_of_correct`); for public-key
+schemes use the per-adversary statements. -/
 def IndSecure (len : M → ℕ) (coins : PMF R) (ε : ℝ) : Prop :=
   ∀ (D : PK → C → R → Bool) (m m' : M), len m = len m' → indAdvantage S coins D m m' ≤ ε
 
@@ -112,7 +136,11 @@ noncomputable def ssIdeal (len : M → ℕ) (A' : ℕ → H → PMF T) (X : PMF 
 Definition 5.2.2, concrete form): for every adversary `A` with coins from `coins` there is an
 ideal adversary `A'`, which sees neither the key nor the ciphertext, such that for every plaintext
 distribution `X`, a priori information `h` and target `f`, `A` guesses `f x` with probability at
-most `ε` more than `A'` does. -/
+most `ε` more than `A'` does. Unlike Goldreich's definition, `A` is not given the length `len x`
+(only `A'` is); this weakens the definition slightly, and is harmless when ciphertexts reveal the
+length. Every function counts as an adversary, so no correct public-key scheme meets this with
+`ε < 1/2` when two distinct messages have the same length
+(`not_semanticallySecure_of_correct`). -/
 def SemanticallySecure (len : M → ℕ) (coins : PMF R) (H T : Type*) [DecidableEq T] (ε : ℝ) :
     Prop :=
   ∀ A : PK → C → H → R → T, ∃ A' : ℕ → H → PMF T, ∀ (X : PMF M) (h : M → H) (f : M → T),
@@ -129,34 +157,6 @@ Proposition 5.2.6): it runs `A` with the information `h x` and outputs whether t
 `f x`. -/
 def ssDistinguisher (A : PK → C → H → R → T) (h : M → H) (f : M → T) (x : M) :
     PK → C → R → Bool := fun pk c r => decide (A pk c (h x) r = f x)
-
-/-- **Averaging a pointwise bound.** If the success probabilities of two families of games
-differ by at most `ε` on the support of
-`X`, so do their averages over `X`. -/
-theorem winProb_bind_le {α : Type*} (X : PMF α) (F G : α → PMF Bool) {ε : ℝ} (hε : 0 ≤ ε)
-    (h : ∀ x ∈ X.support, winProb (F x) ≤ winProb (G x) + ε) :
-    winProb (X.bind F) ≤ winProb (X.bind G) + ε := by
-  have hle : (X.bind F) true ≤ (X.bind G) true + ENNReal.ofReal ε := by
-    rw [PMF.bind_apply, PMF.bind_apply]
-    calc ∑' x, X x * F x true ≤ ∑' x, (X x * G x true + X x * ENNReal.ofReal ε) := by
-          refine ENNReal.tsum_le_tsum fun x => ?_
-          rw [← mul_add]
-          by_cases hx : x ∈ X.support
-          · gcongr
-            have := h x hx
-            rw [winProb, winProb] at this
-            rw [← ENNReal.ofReal_toReal ((F x).apply_ne_top true),
-              ← ENNReal.ofReal_toReal ((G x).apply_ne_top true),
-              ← ENNReal.ofReal_add ENNReal.toReal_nonneg hε]
-            exact ENNReal.ofReal_le_ofReal this
-          · rw [PMF.mem_support_iff, not_not] at hx
-            simp [hx]
-      _ = ∑' x, X x * G x true + ENNReal.ofReal ε := by
-          rw [ENNReal.tsum_add, ENNReal.tsum_mul_right, X.tsum_coe, one_mul]
-  have := ENNReal.toReal_mono
-    (ENNReal.add_ne_top.mpr ⟨(X.bind G).apply_ne_top _, ENNReal.ofReal_ne_top⟩) hle
-  rwa [ENNReal.toReal_add ((X.bind G).apply_ne_top _) ENNReal.ofReal_ne_top,
-    ENNReal.toReal_ofReal hε] at this
 
 /-- **Indistinguishability implies semantic security, for one adversary** (Goldreich, *Foundations
 of Cryptography*, Vol. II, Proposition 5.2.6, concrete form): if every hardwired distinguisher
@@ -181,10 +181,12 @@ theorem winProb_ssReal_le (len : M → ℕ) (coins : PMF R) (dummy : ℕ → M)
   rw [indAdvantage, advantage, abs_le] at this
   linarith [this.2]
 
-/-- **Indistinguishability implies semantic security** (Goldreich, *Foundations of Cryptography*,
-Vol. II, Proposition 5.2.6, concrete form), as an implication between the two definitions, given
-a dummy message of every length. -/
-theorem IndSecure.semanticallySecure {len : M → ℕ} {coins : PMF R} {ε : ℝ} (hε : 0 ≤ ε)
+/-- **Indistinguishability implies semantic security, all-adversary form** (Goldreich,
+*Foundations of Cryptography*, Vol. II, Proposition 5.2.6, concrete form): given a dummy message
+of every length, `IndSecure` with error `ε` implies `SemanticallySecure` with error `ε`. For a
+correct public-key scheme the hypothesis fails for `ε < 1` (`not_indSecure_of_correct`), so the
+content is the per-adversary `winProb_ssReal_le`. -/
+theorem semanticallySecure_of_indSecure {len : M → ℕ} {coins : PMF R} {ε : ℝ} (hε : 0 ≤ ε)
     (dummy : ℕ → M) (hdummy : ∀ x, len (dummy (len x)) = len x)
     (hS : IndSecure S len coins ε) (H T : Type*) [DecidableEq T] :
     SemanticallySecure S len coins H T ε :=
@@ -199,22 +201,6 @@ end Semantic
 section Converse
 
 variable [DecidableEq M]
-
-/-- **The two-point plaintext distribution**, uniform on the two messages `m` and `m'`. -/
-noncomputable def twoPoint (m m' : M) : PMF M := fairCoin.map (pick (m, m'))
-
-omit [DecidableEq M] in
-/-- **Averaging over the two-point distribution**: the success probability is the mean of the
-success probabilities on `m` and on `m'`. -/
-theorem winProb_twoPoint_bind (m m' : M) (F : M → PMF Bool) :
-    winProb ((twoPoint m m').bind F) = (winProb (F m) + winProb (F m')) / 2 := by
-  rw [twoPoint, PMF.bind_map, winProb, PMF.bind_apply, tsum_fintype, Fintype.sum_bool]
-  simp only [fairCoin, Cslib.Probability.PMF.uniformOfFintype_apply, Fintype.card_bool,
-    Function.comp, pick, ite_true, Bool.false_eq_true, ite_false]
-  rw [ENNReal.toReal_add (by simp [ENNReal.mul_eq_top, PMF.apply_ne_top])
-      (by simp [ENNReal.mul_eq_top, PMF.apply_ne_top]), ENNReal.toReal_mul, ENNReal.toReal_mul]
-  simp only [Nat.cast_ofNat, ENNReal.toReal_inv, ENNReal.toReal_ofNat, winProb]
-  ring
 
 /-- **The two-point instance of Goldreich's Proposition 5.2.7.** For distinct messages `m ≠ m'`
 of equal length, the plaintext uniform on `{m, m'}`, no a priori information and the target
@@ -256,11 +242,13 @@ theorem winProb_ssReal_two_point (len : M → ℕ) (coins : PMF R) (D : PK → C
 
 end Converse
 
-/-- **Semantic security implies indistinguishability** (Goldreich, *Foundations of Cryptography*,
-Vol. II, Proposition 5.2.7, concrete form): semantic security with error `ε` (already for one-bit
-targets and no a priori information) gives indistinguishability of encryptions with error
-`2 ε`. -/
-theorem SemanticallySecure.indSecure {len : M → ℕ} {coins : PMF R} {ε : ℝ} (hε : 0 ≤ ε)
+/-- **Semantic security implies indistinguishability, all-adversary form** (Goldreich,
+*Foundations of Cryptography*, Vol. II, Proposition 5.2.7, concrete form): semantic security
+with error `ε` (already for one-bit targets and no a priori information) gives
+indistinguishability of encryptions with error `2 ε`. For a correct public-key scheme the
+hypothesis fails for `ε < 1/2` (`not_semanticallySecure_of_correct`), so the content is the
+per-adversary `winProb_ssReal_two_point`. -/
+theorem indSecure_of_semanticallySecure {len : M → ℕ} {coins : PMF R} {ε : ℝ} (hε : 0 ≤ ε)
     (hS : SemanticallySecure S len coins Unit Bool ε) : IndSecure S len coins (2 * ε) := by
   classical
   intro D m m' hlen
@@ -284,5 +272,57 @@ theorem SemanticallySecure.indSecure {len : M → ℕ} {coins : PMF R} {ε : ℝ
   rw [indAdvantage, advantage, abs_le]
   constructor <;> linarith
 
+
+/-! ### No correct public-key scheme is secure against unbounded adversaries -/
+
+section Unbounded
+
+/-- **Indistinguishability is unattainable against unbounded distinguishers.** In this concrete
+model, where every function is an admissible distinguisher, a correct public-key scheme with two
+distinct messages `m ≠ m'` of the same length does not have indistinguishable encryptions with any
+error `ε < 1`: the distinguisher that outputs `1` exactly when some secret key matching the public
+key decrypts the ciphertext to `m'` has advantage `1` (by correctness, encryptions of `m` never
+decrypt to `m'`). So `IndSecure` with a small error is a property of information-theoretic, not
+public-key, encryption; for public-key schemes the content of this file is in its per-adversary
+statements. -/
+theorem not_indSecure_of_correct (hS : S.Correct) {len : M → ℕ} (coins : PMF R) {m m' : M}
+    (hne : m ≠ m') (hlen : len m = len m') {ε : ℝ} (hε : ε < 1) :
+    ¬ IndSecure S len coins ε := by
+  classical
+  intro h
+  let D : PK → C → R → Bool := fun pk c _ =>
+    decide (∃ sk, (pk, sk) ∈ S.gen.support ∧ S.dec sk c = some m')
+  have h1 : indExp S coins D m' = PMF.pure true := by
+    refine eq_pure_of_not_mem_support ?_
+    simp only [indExp, PMF.mem_support_bind_iff, PMF.mem_support_map_iff, not_exists, not_and]
+    intro kp hkp r _ c hc hD
+    simp only [Bool.not_true, decide_eq_false_iff_not, not_exists, not_and, D] at hD
+    exact hD kp.2 hkp (hS kp hkp m' c hc)
+  have h0 : indExp S coins D m = PMF.pure false := by
+    refine eq_pure_of_not_mem_support ?_
+    simp only [indExp, PMF.mem_support_bind_iff, PMF.mem_support_map_iff, not_exists, not_and]
+    intro kp hkp r _ c hc hD
+    simp only [Bool.not_false, decide_eq_true_eq, D] at hD
+    obtain ⟨sk, hsk, hdec⟩ := hD
+    have := hS (kp.1, sk) hsk m c hc
+    rw [this] at hdec
+    exact hne (Option.some_injective _ hdec)
+  have := h D m m' hlen
+  rw [indAdvantage, h0, h1, advantage, winProb_pure, winProb_pure] at this
+  norm_num at this
+  linarith
+
+/-- **Semantic security is unattainable against unbounded adversaries.** Under the hypotheses of
+`not_indSecure_of_correct`, a correct public-key scheme is not semantically secure with any error
+`ε < 1/2` (already for trivial information and Boolean targets), since semantic security with
+error `ε` would give indistinguishability with error `2 ε < 1`
+(`indSecure_of_semanticallySecure`). -/
+theorem not_semanticallySecure_of_correct (hS : S.Correct) {len : M → ℕ} (coins : PMF R)
+    {m m' : M} (hne : m ≠ m') (hlen : len m = len m') {ε : ℝ} (hε₀ : 0 ≤ ε) (hε : ε < 1 / 2) :
+    ¬ SemanticallySecure S len coins Unit Bool ε := fun h =>
+  not_indSecure_of_correct S hS coins hne hlen (by linarith)
+    (indSecure_of_semanticallySecure S hε₀ h)
+
+end Unbounded
 
 end Cslib.Crypto.PublicKey.SemanticSecurity

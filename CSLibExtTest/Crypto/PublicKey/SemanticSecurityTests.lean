@@ -19,7 +19,8 @@ Two extreme one-bit schemes make the definitions non-vacuous.
   semantically secure with error `0`.
 * `clear`: the ciphertext is the plaintext. The distinguisher that outputs the ciphertext has
   advantage `1`, so `clear` is not `IndSecure` with any error `ε < 1`, and by Proposition 5.2.7
-  it is not semantically secure with any error `ε < 1/2`.
+  it is not semantically secure with any error `ε < 1/2`. `clear` is correct, so the general
+  impossibility `not_indSecure_of_correct` applies to it (as to every correct public-key scheme).
 -/
 
 @[expose] public section
@@ -45,7 +46,8 @@ theorem blind_indSecure : IndSecure blind (fun _ => 0) (PMF.pure ()) 0 := by
   simp [indAdvantage, indExp, blind]
 
 example : SemanticallySecure blind (fun _ => 0) (PMF.pure ()) Bool Bool 0 :=
-  blind_indSecure.semanticallySecure blind le_rfl (fun _ => false) (fun _ => rfl) Bool Bool
+  semanticallySecure_of_indSecure blind le_rfl (fun _ => false) (fun _ => rfl) blind_indSecure
+    Bool Bool
 
 theorem clear_indAdvantage :
     indAdvantage clear (PMF.pure ()) (fun _ c _ => c) false true = 1 := by
@@ -58,8 +60,23 @@ example {ε : ℝ} (hε : ε < 1) : ¬ IndSecure clear (fun _ => 0) (PMF.pure ()
 
 example {ε : ℝ} (hε₀ : 0 ≤ ε) (hε : ε < 1 / 2) :
     ¬ SemanticallySecure clear (fun _ => 0) (PMF.pure ()) Unit Bool ε := fun h => by
-  have := (h.indSecure clear hε₀) (fun _ c _ => c) false true rfl
+  have := (indSecure_of_semanticallySecure clear hε₀ h) (fun _ c _ => c) false true rfl
   rw [clear_indAdvantage] at this
   linarith
+
+/-- `clear` is correct, so the general impossibility applies to it. -/
+theorem clear_correct : clear.Correct := by
+  intro kp _ m c hc
+  simp only [clear, PMF.support_pure, Set.mem_singleton_iff] at hc
+  simp [clear, hc]
+
+example {ε : ℝ} (hε : ε < 1) : ¬ IndSecure clear (fun _ => 0) (PMF.pure ()) ε :=
+  not_indSecure_of_correct clear clear_correct _ (m := false) (m' := true) (by decide) rfl hε
+
+/-- `PubK^eav` with fixed messages is the indistinguishability experiment. -/
+example (b : Bool) :
+    pubCpaExp clear ⟨PMF.pure (), fun _ _ => (false, true), fun _ c _ => c⟩ b =
+      indExp clear (PMF.pure ()) (fun _ c _ => c) (pick (false, true) b) :=
+  pubCpaExp_eq_indExp clear _ (fun _ _ => rfl) b
 
 end Cslib.Crypto.SemanticSecurityTests

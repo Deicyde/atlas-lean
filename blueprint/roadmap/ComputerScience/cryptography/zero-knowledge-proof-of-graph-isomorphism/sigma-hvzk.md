@@ -6,7 +6,7 @@ challenge $\alpha$ and a uniform permutation $\sigma$ and outputs $(\sigma(G_\al
 This is perfect zero knowledge with respect to the honest verifier only; Goldreich, Micali and
 Wigderson's Theorem 2 proves perfect zero knowledge against every expected polynomial-time verifier.
 A truncated, one-round form of that statement is
-[statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier](abs-win-prob-simulator-k-sub-le-half-pow.md).
+[zero knowledge of the graph-isomorphism protocol against an arbitrary verifier](abs-win-prob-simulator-k-sub-le-half-pow.md).
 
 ## Informally uses
 

@@ -8,23 +8,29 @@ and as $y x^2$ if $b = 1$; a string is encrypted bit by bit. With the factorizat
 quadratic residuosity by Euler's criterion modulo $p$ and modulo $q$. Without it, deciding whether a
 number with Jacobi symbol $+1$ is a square modulo $N$ is the quadratic residuosity problem.
 
-Here the scheme is formalized for a fixed modulus $N$: correctness, the exact reduction of the
-eavesdropping security of one-bit encryption to a quadratic-residuosity experiment, semantic security
-through [Goldreich's Proposition 5.2.6](../semantic-security-and-indistinguishability/semantically-secure-2.md),
-and for messages of $\ell$ bits the hybrid argument (Goldwasser and Micali's Theorem 3), which loses a
-factor $\ell$. In the STOC version, the partial-information security of Section 4.1 is proved for a
-uniformly distributed message space and easily computable predicates; the general definition used
-here is Goldreich's. Not formalized: the asymptotic statements under Goldwasser and Micali's
-quadratic residuosity assumption on circuits, the random self-reducibility of quadratic residuosity
-(their Theorems 1 and 2), and the fact that $y x^2$ is uniform among non-residues with Jacobi symbol
-$+1$ (the experiment is stated with $y x^2$ directly).
+Here the scheme is formalized for a fixed modulus $N$. Correctness rests on Goldwasser and Micali's
+Lemma 2 (Euler's criterion modulo $p$ and $q$, glued by the Chinese remainder theorem). The security
+theorems are **per adversary**: an eavesdropper with advantage $\varepsilon$ against one-bit encryption
+gives a distinguisher with advantage $2\varepsilon$ in the residuosity experiment
+(Goldwasser–Micali's main theorem for one bit), every adversary computing a function of the plaintext
+bit is matched by a simulator up to the residuosity advantage of one distinguisher built from it, and
+for messages of $\ell$ bits the hybrid argument (their Theorem 3) bounds a distinguisher's advantage by
+the sum of $\ell$ residuosity advantages. Each reduction calls the adversary once, so the statements
+carry over to efficient adversaries.
 
-In this concrete setting every function counts as an adversary, and an unbounded distinguisher can
-factor $N$; so the hypothesis "every distinguisher has residuosity advantage at most
-$\varepsilon$" holds only for large $\varepsilon$. The statements that carry over to efficient
-adversaries are the per-adversary ones: the exact reduction of eavesdropping security and the
-per-adversary semantic security, each of which builds one residuosity distinguisher from one call to
-the adversary.
+In this concrete model every function counts as an adversary, and an unbounded distinguisher can
+decide residuosity: for any key whose $y$ is not a square, the hypothesis "every distinguisher has
+residuosity advantage at most $\varepsilon$" forces $\varepsilon \ge 1$, and the scheme is not
+indistinguishable for any error below $1$. The all-distinguisher corollaries are kept, labelled as
+vacuous, and proved to be so.
+
+In the STOC version, the partial-information security of Section 4.1 is proved for a uniformly
+distributed message space and easily computable predicates; the general definition used here is
+Goldreich's. Not formalized: the asymptotic statements under Goldwasser and Micali's quadratic
+residuosity assumption on circuits, the random self-reducibility of quadratic residuosity (their
+Theorems 1 and 2), and the fact that $y x^2$ is uniform among non-residues with Jacobi symbol $+1$ (the
+residuosity experiment is stated with $y x^2$ directly, and does not require $y$ to have Jacobi
+symbol $+1$).
 
 ## The scheme and its correctness
 
@@ -41,19 +47,16 @@ the adversary.
 - [The Goldwasser–Micali scheme for one-bit messages](scheme.md)
 - [Correctness of the Goldwasser–Micali scheme](scheme-correct.md)
 
-## Security from quadratic residuosity
+## Security from the residuosity experiment, per adversary
 
-- [The quadratic-residuosity experiment](qr-exp.md)
-- [Quadratic-residuosity advantage](qr-advantage.md)
-- [The reduction from Goldwasser–Micali to quadratic residuosity](reduction.md)
+- [The residuosity experiment](qr-exp.md)
+- [Residuosity advantage](qr-advantage.md)
+- [The reduction from Goldwasser–Micali to the residuosity experiment](reduction.md)
 - [The reduction for one key and one coin](inner-identity.md)
-- [Linearity of `bind`](bind-add-eq.md)
-- [The security of Goldwasser–Micali reduces to quadratic residuosity](pub-cpa-advantage-eq-qr-advantage.md)
-- [Residuosity bounds transfer to Goldwasser–Micali](pub-cpa-advantage-le.md)
+- [Goldwasser–Micali's main theorem for one bit, per adversary](pub-cpa-advantage-eq-qr-advantage.md)
+- [Residuosity bounds transfer to Goldwasser–Micali, per adversary](pub-cpa-advantage-le.md)
 - [Distinguishing Goldwasser–Micali ciphertexts is deciding residuosity](ind-exp-scheme.md)
-- [Quadratic residuosity implies indistinguishable encryptions](ind-secure-of-qr-advantage-le.md)
-- [Quadratic residuosity implies semantic security](semantically-secure-of-qr-advantage-le.md)
-- [Semantic security of Goldwasser–Micali, per adversary](win-prob-ss-real-le-qr-advantage.md)
+- [Semantic security of Goldwasser–Micali for one bit, per adversary](win-prob-ss-real-le-qr-advantage.md)
 
 ## Messages of several bits
 
@@ -70,10 +73,18 @@ the adversary.
 - [The hybrid argument for bitwise Goldwasser–Micali encryption](ind-advantage-scheme-vec-le.md)
 - [Bitwise Goldwasser–Micali loses a factor `ℓ`](ind-advantage-scheme-vec-le-mul.md)
 
+## All-distinguisher forms (vacuous against unbounded distinguishers)
+
+- [An unbounded distinguisher decides residuosity](one-le-of-forall-qr-advantage-le.md)
+- [The one-bit Goldwasser–Micali scheme is not indistinguishable against unbounded distinguishers](not-ind-secure-scheme.md)
+- [All-distinguisher form: residuosity against every distinguisher gives indistinguishable encryptions (vacuous against unbounded distinguishers)](ind-secure-of-qr-advantage-le.md)
+- [All-distinguisher form: residuosity against every distinguisher gives semantic security (vacuous against unbounded distinguishers)](semantically-secure-of-qr-advantage-le.md)
+
 ## Related topics
 
 - [Semantic security and indistinguishability](../semantic-security-and-indistinguishability/README.md):
   the definitions that Goldwasser and Micali introduced with this scheme.
+- [Games and advantages](../games-and-advantages/README.md): the averaging lemmas the reductions use.
 - [RSA cryptosystem](../rsa-cryptosystem/README.md): a deterministic trapdoor-function scheme of the
   kind whose leakage of partial information motivated probabilistic encryption.
 - [ElGamal encryption](../elgamal-encryption/README.md): a later probabilistic scheme, with security

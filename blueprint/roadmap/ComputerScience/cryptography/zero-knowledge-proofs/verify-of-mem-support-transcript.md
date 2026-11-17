@@ -1,4 +1,4 @@
 # Honest transcripts are accepted
 
-Under completeness, every transcript in the support of the
-honest distribution is accepted.
+For a [complete](complete.md) Sigma protocol and a statement–witness pair in the relation, every
+transcript in the support of the [distribution of honest transcripts](transcript.md) is accepted.

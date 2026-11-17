@@ -10,7 +10,7 @@ Theorem 3.4.1" (of his Volume I, not consulted here).
 ## Informally uses
 
 - [The predictor's success for one key and one coin](win-prob-inner.md)
-- [Averaging an affine identity](win-prob-bind-affine.md)
+- [Averaging an affine identity](../games-and-advantages/win-prob-bind-affine.md)
 
 ## Sources
 

@@ -1,19 +1,19 @@
-# Indistinguishability implies semantic security
+# Indistinguishability implies semantic security, all-adversary form
 
 Let $\varepsilon \ge 0$ and suppose that a public-key scheme has
 [indistinguishable encryptions with error $\varepsilon$](ind-secure.md) and that for each length $n$
 of a message there is a dummy message of length $n$. Then the scheme is
 [semantically secure with error $\varepsilon$](semantically-secure.md), for any types of a priori
-information and of guesses. The ideal adversary is the [simulator](simulator.md), which depends on
-$A$ only.
+information and of guesses, with the [simulator](simulator.md) as ideal adversary.
 
-This is the "useful direction" of Goldreich's Theorem 5.2.5 in concrete form, with the same error
-$\varepsilon$; the furthermore-clause of Proposition 5.2.6 (one fixed oracle machine works for every
-$A$) is visible in the construction.
+For a correct public-key scheme with two distinct messages of the same length the hypothesis fails
+for every $\varepsilon < 1$ ([unattainability](not-ind-secure-of-correct.md)), so in this unbounded
+model the implication relates statements that are trivially true or false. The content is the
+[per-adversary form](win-prob-ss-real-le.md).
 
 ## Informally uses
 
-- [Indistinguishability implies semantic security, for one adversary](win-prob-ss-real-le.md)
+- [Indistinguishability implies semantic security, per adversary](win-prob-ss-real-le.md)
 
 ## Sources
 

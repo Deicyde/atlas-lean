@@ -1,11 +1,11 @@
-# Semantic security of Goldwasser–Micali, per adversary
+# Semantic security of Goldwasser–Micali for one bit, per adversary
 
 For every adversary $A$ against the [one-bit Goldwasser–Micali scheme](scheme.md), every distribution
 $X$ of the plaintext bit, every a priori information function $h$ and every target function $f$, the
 probability that $A$ wins the [real semantic-security experiment](../semantic-security-and-indistinguishability/ss-real.md) is at most the
 probability that [Goldreich's simulator](../semantic-security-and-indistinguishability/simulator.md) (which runs $A$ on an encryption of $0$)
 wins the [ideal experiment](../semantic-security-and-indistinguishability/ss-ideal.md), plus the
-[quadratic-residuosity advantage](qr-advantage.md) of the single distinguisher
+[residuosity advantage](qr-advantage.md) of the single distinguisher
 [hardwiring the plaintext $1$](../semantic-security-and-indistinguishability/ss-distinguisher.md), which calls $A$ once.
 
 This is the form of Goldwasser and Micali's theorem for one bit that transfers to efficient

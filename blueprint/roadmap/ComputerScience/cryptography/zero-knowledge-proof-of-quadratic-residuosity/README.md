@@ -9,10 +9,10 @@ with probability at least $\tfrac12$ (Claim 1); and the protocol is perfectly ze
 (Theorem 1).
 
 Here the protocol is stated in any finite commutative group (the units modulo $x$ in the paper), as
-a Sigma protocol in the framework of [zero-knowledge proofs](../zero-knowledge-proofs/README.md), with soundness error
-$2^{-m}$, perfect special honest-verifier zero knowledge with the paper's simulator, and statistical
-zero knowledge against an arbitrary verifier in one round, with error $2^{-k}$ for $k$ rewinding
-attempts. Not formalized: the composition of the simulation over $m$ rounds, perfect simulation in
+a Sigma protocol in the framework of [zero-knowledge proofs](../zero-knowledge-proofs/README.md),
+with soundness error $2^{-m}$, perfect special honest-verifier zero knowledge with the paper's
+simulator, and, against an arbitrary verifier in one round, a rewinding simulator whose $k$ attempts
+reproduce every test of the verifier's view within $2^{-k}$. Not formalized: the composition of the simulation over $m$ rounds, perfect simulation in
 expected polynomial time, and the proof for quadratic non-residuosity (Section 6).
 
 - [The quadratic-residuosity protocol as a Sigma protocol](sigma.md)

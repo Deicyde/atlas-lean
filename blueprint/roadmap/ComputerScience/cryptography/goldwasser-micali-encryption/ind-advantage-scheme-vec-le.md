@@ -6,8 +6,9 @@ the [`ℓ`-bit scheme](scheme-vec.md) is at most
 $$\sum_{j < \ell} \mathrm{Adv}^{\mathrm{QR}}\bigl(B_j\bigr),$$
 where $B_j$ is the [hybrid reduction](hybrid-reduction.md) at position $j$ built from $D$ and the
 [$j$-th hybrid message](hybrid-msg.md), and $\mathrm{Adv}^{\mathrm{QR}}$ is the
-[quadratic-residuosity advantage](qr-advantage.md). Positions where $m$ and $m'$ agree contribute
-nothing on the left-hand side.
+[residuosity advantage](qr-advantage.md). For positions where $m$ and $m'$ agree,
+consecutive hybrid messages coincide and the term is not needed; the stated bound keeps it and is loose
+there.
 
 This is the concrete form of Goldwasser and Micali's Theorem 3: a decision function that tells two
 "$n$-signatures" (residuosity patterns of ciphertexts) apart yields a residuosity decider, through a

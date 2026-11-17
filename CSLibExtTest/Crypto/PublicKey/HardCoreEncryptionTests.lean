@@ -17,7 +17,7 @@ The toy instance on the domain `ZMod 5` with the permutation `x ↦ x + 2` (its 
 inverse `y ↦ y - 2`) and the predicate "`x` is `0`": the scheme is correct, a ciphertext decrypts
 as computed by hand, and the per-adversary identity and the semantic-security corollary are
 instantiated (the latter with the trivial error `ε = 1/2`, the only one available against
-unbounded predictors).
+unbounded predictors: `half_le_of_forall_predict_le`).
 -/
 
 @[expose] public section
@@ -51,7 +51,7 @@ example : (scheme gen shift unshift isZero).dec ((), ()) (0, true) = some true :
 example {R : Type} (coins : PMF R) (A : Unit → ZMod 5 × Bool → R → Bool) :
     indAdvantage (scheme gen shift unshift isZero) coins A false true =
       2 * |winProb (predictGame gen shift isZero (predictorCoins coins) (predictor A)) - 1 / 2| :=
-  indAdvantage_eq gen shift unshift isZero coins A
+  indAdvantage_eq_two_mul_predictAdvantage gen shift unshift isZero coins A
 
 example {R : Type} (coins : PMF R) :
     SemanticallySecure (scheme gen shift unshift isZero) (fun _ => 0) coins Unit Bool

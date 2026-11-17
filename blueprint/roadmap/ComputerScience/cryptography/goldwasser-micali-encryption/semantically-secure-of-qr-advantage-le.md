@@ -1,22 +1,20 @@
-# Quadratic residuosity implies semantic security
+# All-distinguisher form: residuosity against every distinguisher gives semantic security (vacuous against unbounded distinguishers)
 
-If every distinguisher (with the given coins) has [quadratic-residuosity advantage](qr-advantage.md) at
-most $\varepsilon$, then the [one-bit Goldwasser–Micali scheme](scheme.md) is
-[semantically secure with error $\varepsilon$](../semantic-security-and-indistinguishability/semantically-secure.md),
-for any types of a priori information and of guesses: for every adversary there is a simulator that
-never sees the ciphertext and computes any function of the plaintext bit at most $\varepsilon$ less
-often.
+Under the hypothesis of the [all-distinguisher form for indistinguishability](ind-secure-of-qr-advantage-le.md),
+the [one-bit Goldwasser–Micali scheme](scheme.md) is
+[semantically secure with error $\varepsilon$](../semantic-security-and-indistinguishability/semantically-secure.md), for any types of a priori
+information and of guesses.
 
-This is Goldwasser and Micali's main theorem for one bit, in concrete form, with no security
-parameter. The journal version, "Probabilistic encryption", J. Comput. System Sci. 28 (1984), 270-299, was not consulted for these pages.
-
-The hypothesis quantifies over all functions, so against unbounded distinguishers it holds only for
-large $\varepsilon$; see the [per-adversary form](win-prob-ss-real-le-qr-advantage.md).
+For a key whose $y$ is not a square the hypothesis forces $\varepsilon \ge 1$ ([an unbounded
+distinguisher decides residuosity](one-le-of-forall-qr-advantage-le.md)), so the conclusion is true of
+every scheme. Goldwasser and Micali's main theorem for one bit is the
+[per-adversary semantic security](win-prob-ss-real-le-qr-advantage.md), which builds one residuosity
+distinguisher from one call to the adversary.
 
 ## Informally uses
 
-- [Quadratic residuosity implies indistinguishable encryptions](ind-secure-of-qr-advantage-le.md)
-- [Indistinguishability implies semantic security](../semantic-security-and-indistinguishability/semantically-secure-2.md)
+- [All-distinguisher form for indistinguishability](ind-secure-of-qr-advantage-le.md)
+- [Indistinguishability implies semantic security, all-adversary form](../semantic-security-and-indistinguishability/semantically-secure-of-ind-secure.md)
 
 ## Sources
 

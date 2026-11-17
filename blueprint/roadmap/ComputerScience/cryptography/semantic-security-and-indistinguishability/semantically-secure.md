@@ -7,10 +7,13 @@ for every plaintext distribution $X$, every function $h$ and every target functi
 probability that $A$ wins the [real experiment](ss-real.md) is at most $\varepsilon$ more than the
 probability that $A'$ wins the [ideal experiment](ss-ideal.md).
 
-The quantifiers are in Goldreich's order: $A'$ may depend on $A$ but not on $X$, $h$ or $f$. As in
-[indistinguishability with error $\varepsilon$](ind-secure.md), the definition is concrete: one scheme,
-one error, and no complexity bound on $A$ or $A'$ (Goldreich requires both to be probabilistic
-polynomial time, and allows $h$ and $f$ to depend on the security parameter).
+The quantifiers are in Goldreich's order: $A'$ may depend on $A$ but not on $X$, $h$ or $f$. Unlike
+Goldreich's definition, the real adversary $A$ is not given the length of the plaintext (only $A'$ is);
+this weakens the definition slightly and is harmless when ciphertexts reveal the length. The
+definition is concrete: one scheme, one error, and no complexity bound on $A$ or $A'$ (Goldreich
+requires both to be probabilistic polynomial time). In this concrete model every function counts as an adversary, so no correct public-key scheme with two distinct messages of the same length meets it with $\varepsilon < \tfrac12$
+([unattainability](not-semantically-secure-of-correct.md)); the per-adversary statements carry the
+content for public-key schemes.
 
 ## Sources
 

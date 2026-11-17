@@ -1,8 +1,8 @@
 # Bitwise Goldwasser–Micali loses a factor `ℓ`
 
-If each of the $\ell$ [hybrid reductions](hybrid-reduction.md) has
-[quadratic-residuosity advantage](qr-advantage.md) at most $\varepsilon$, then every distinguisher
-between encryptions of two $\ell$-bit messages has advantage at most $\ell \varepsilon$.
+If each of the $\ell$ [hybrid reductions](hybrid-reduction.md) built from a distinguisher $D$ has
+[residuosity advantage](qr-advantage.md) at most $\varepsilon$, then $D$ has advantage at most
+$\ell \varepsilon$ between encryptions of the two $\ell$-bit messages.
 
 ## Informally uses
 
