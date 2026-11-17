@@ -33,5 +33,4 @@ theorem on covering the cube minus one vertex by hyperplanes.
 
 - [Sumsets and inverse theorems](../sumsets-inverse-theorems/README.md): the Cauchy–Davenport–Chowla and Vosper theorems on sumsets modulo $q$, of which the restricted-sum bound is a variant.
 - [Zero-sum problems and subset sums](../zero-sum-subset-sums/README.md): zero-sum results of Erdős–Ginzburg–Ziv type, which the paper reaches through the permanent lemma.
-- [Dias da Silva–Hamidoune theorem for `h = 2`](dias-da-silva-hamidoune-two.md)
 - [Sumsets with at least r distinct terms](../sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/README.md): the general Dias da Silva–Hamidoune theorem for sums of $h$ distinct elements (wanted), whose case $h = 2$ is proved here.

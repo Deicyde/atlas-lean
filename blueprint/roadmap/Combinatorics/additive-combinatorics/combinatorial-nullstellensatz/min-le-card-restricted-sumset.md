@@ -20,8 +20,12 @@ $p$ does not divide because $m < p$, so the Combinatorial Nullstellensatz gives 
 
 ## Background
 
-- [Dias da Silva–Hamidoune theorem](../sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/dias-da-silva-hamidoune.md): the general statement for sums of $h$ distinct elements (wanted); this page proves the case $h = 2$, and [its $h = 2$ instance](dias-da-silva-hamidoune-two.md) is derived from it.
+- [Dias da Silva–Hamidoune theorem](../sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/dias-da-silva-hamidoune.md): the general statement for sums of $h$ distinct elements (wanted); this page proves the case $h = 2$.
 - [Cauchy–Davenport–Chowla theorem](../sumsets-inverse-theorems/cauchy-davenport-chowla.md): the unrestricted sumset bound $|A + B| \ge \min(p, |A| + |B| - 1)$ and its extension to composite moduli.
+
+## Related topics
+
+- [Dias da Silva–Hamidoune theorem for $h = 2$](dias-da-silva-hamidoune-two.md): the $h = 2$ instance of the general statement, derived from this page.
 
 ## Sources
 
