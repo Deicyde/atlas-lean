@@ -17,4 +17,3 @@
 
 - [Matrix concentration inequalities](../../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)
 - [Lieb's concavity theorem](../../../../LinearAlgebra/positive-definite-matrices/lieb-s-concavity-theorem/README.md)
-- [Quantum entropy](../../../../QuantumInformation/quantum-entropy/README.md): von Neumann entropy, whose subadditivity rests on Klein's entropy inequality.
