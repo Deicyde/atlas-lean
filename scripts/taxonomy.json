@@ -5789,6 +5789,7 @@
   "WantedExt/GameTheory/ChocolateBarNSPropertyWanted": {"to": "GameTheory/combinatorial-games", "title": "Chocolate bar games"},
   "WantedExt/GameTheory/EuclidGameCalkinWilfWanted": {"to": "GameTheory/combinatorial-games", "title": "Game of Euclid"},
   "WantedExt/GameTheory/ExactSlowNimRemotenessWanted": {"to": "GameTheory/combinatorial-games", "title": "Slow Nim"},
+  "WantedExt/GameTheory/LemkeHowsonWanted": {"to": "GameTheory/noncooperative-games", "title": "Bimatrix games and the Lemke–Howson algorithm"},
   "WantedExt/GameTheory/MeanFieldEquilibriumWanted": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "WantedExt/GameTheory/MeanFieldGameSystemWanted": {"to": "GameTheory/noncooperative-games", "title": "Mean field games"},
   "WantedExt/GameTheory/NashCorrelatedBridge": {"to": "GameTheory/noncooperative-games", "title": "Correlated equilibria"},
