@@ -10,9 +10,9 @@ letter by one.
 
 Wanted statement (no proof in the library yet). The slides state it for GLP; the RC form follows
 by Dashkov's theorem. The theorem is due to Beklemishev, "Provability algebras and proof-theoretic
-ordinals, I", *Annals of Pure and Applied Logic* 128 (2004), as attributed in R. Verbrugge,
-"Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §5.4 ("GLP and
-proof-theoretic ordinals"); that paper was not read here, so no theorem number is given. The instance $0^k <_0 1$ is proved.
+ordinals, I", *Annals of Pure and Applied Logic* 128 (2004), listed in R. Verbrugge,
+"Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §5.4 under "GLP and
+proof-theoretic ordinals"; that paper was not read here, so no theorem number is given. The instance $0^k <_0 1$ is proved.
 
 ## Background
 
