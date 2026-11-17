@@ -3313,6 +3313,7 @@
   "MathlibExt/InformationTheory/HammingBall": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
   "MathlibExt/InformationTheory/HammingBallVolume": {"to": "InformationTheory/error-correcting-codes", "title": "Bounds on code size"},
   "MathlibExt/InformationTheory/HammingExpansion": {"to": "Combinatorics/extremal-set-theory/intersecting-families", "title": "Harper's isoperimetric inequality"},
+  "MathlibExt/InformationTheory/IProjection": {"to": "InformationTheory/information-inequalities", "title": "I-projections"},
   "MathlibExt/InformationTheory/KraftMcMillan": {"to": "InformationTheory/source-coding", "title": "Kraft–McMillan inequality"},
   "MathlibExt/InformationTheory/LogSum": {"to": "InformationTheory/information-inequalities", "title": "Log-sum inequality"},
   "MathlibExt/InformationTheory/MeasurePinsker": {"to": "InformationTheory/information-inequalities", "title": "Total variation and Pinsker's inequality"},

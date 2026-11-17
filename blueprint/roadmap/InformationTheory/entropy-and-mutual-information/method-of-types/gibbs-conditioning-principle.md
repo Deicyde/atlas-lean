@@ -11,6 +11,13 @@ that is, conditioned on the rare event $P_x \in \Gamma$, the first $k$ draws are
 i.i.d. with law $P^*$. The statement is recorded as wanted (not proved). It is weaker than the
 source in one respect: it assumes $Q > 0$, while Csiszár allows any $Q$.
 
+## Background
+
+- [I-projection: support and Pythagorean inequality](../../information-inequalities/i-projections/pythagorean-inequality-for-i-projections.md):
+  when $\Gamma$ is convex, $P^*$ is the I-projection of $Q$ on the closure of $\Gamma$, and the
+  Pythagorean inequality is the step of the classical proof that forces types near the minimum to
+  concentrate near $P^*$.
+
 ## Sources
 
 - I. Csiszár, "The method of types", *IEEE Trans. Inform. Theory* 44(6) (1998), 2505–2523, Corollary to Theorem III.3.

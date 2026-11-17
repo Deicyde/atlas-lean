@@ -12,6 +12,7 @@ Inequalities relating entropies, divergences and mutual information, such as the
 - [Total variation and Pinsker's inequality](total-variation-and-pinsker-s-inequality/README.md)
 - [Strong data processing and Dobrushin's coefficient](strong-data-processing-and-dobrushin-s-coefficie/README.md)
 - [Binary Pinsker inequality on the closed interval](binary-pinsker-of-mem-icc.md)
+- [I-projections](i-projections/README.md)
 
 ## Related topics
 
