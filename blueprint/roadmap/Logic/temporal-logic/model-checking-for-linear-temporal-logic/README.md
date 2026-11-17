@@ -29,3 +29,12 @@
 - [Büchi transition test via the computable counter update](buchi-tr-iff.md)
 - [Executable full-LTL model checker](check-b.md)
 - [Correctness of the executable LTL model checker](check-b-iff.md)
+
+## Size of the Büchi automaton
+
+- [Size of an LTL formula](size.md)
+- [Formulas have positive size](one-le-size.md)
+- [Exact state count of the LTL tableau](nat-card-state.md)
+- [Fairness obligations are fewer than the formula size](obligation-count-lt-size.md)
+- [Exponential state bound for the Büchi automaton of an LTL formula](nat-card-buchi-state-le.md)
+- [Vardi–Wolper translation with an exponential state bound](exists-buchi-card-le.md)

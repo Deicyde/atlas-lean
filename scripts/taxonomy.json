@@ -1490,6 +1490,7 @@
   "CSLibExt/Logics/FirstOrder/PropositionalBridge": {"to": "Logic/first-order-logic", "title": "Embedding propositional logic into first-order logic"},
   "CSLibExt/Logics/FirstOrder/Symbols": {"to": "Logic/first-order-logic", "title": "First-order syntax"},
   "CSLibExt/Logics/FirstOrder/Syntax": {"to": "Logic/first-order-logic", "title": "First-order syntax"},
+  "CSLibExt/Logics/LTL/BuchiSize": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/DecidableModelChecking": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/FragmentBuchi": {"to": "Logic/temporal-logic", "title": "Büchi automata for a fragment of linear temporal logic"},
   "CSLibExt/Logics/LTL/FullBuchi": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
