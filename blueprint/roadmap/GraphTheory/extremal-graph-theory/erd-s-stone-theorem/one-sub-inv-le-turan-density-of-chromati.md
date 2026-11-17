@@ -4,4 +4,4 @@ If $\chi(H) = r + 1$ with $r \ge 1$, then $\pi(H) \ge 1 - 1/r$. A graph with chr
 
 ## Sources
 
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, Example 3.3.1.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, Example 3.3.1.

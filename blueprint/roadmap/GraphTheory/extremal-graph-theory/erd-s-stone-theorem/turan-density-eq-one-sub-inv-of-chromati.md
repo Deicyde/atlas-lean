@@ -15,4 +15,4 @@ For bipartite $H$ ($r = 1$) the formula gives $\pi(H) = 0$, that is, $\mathrm{ex
 
 ## Sources
 
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, Example 3.3.1 and Theorem 3.3.10. There the formula is stated as $\pi(H) = (\chi(H) - 2)/(\chi(H) - 1)$ for every graph with at least one edge and attributed to Erdős and Stone.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, Example 3.3.1 and Theorem 3.3.10. There the formula is stated as $\pi(H) = (\chi(H) - 2)/(\chi(H) - 1)$ for every graph with at least one edge and attributed to Erdős and Stone.

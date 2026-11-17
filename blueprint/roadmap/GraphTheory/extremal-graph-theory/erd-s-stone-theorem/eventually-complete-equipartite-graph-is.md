@@ -23,4 +23,4 @@ Proof: set $\beta = 1 - 1/r + \varepsilon/2$ and delete vertices of small degree
 
 - P. Erdős and A. H. Stone, "On the structure of linear graphs", *Bull. Amer. Math. Soc.* 52 (1946), 1087–1091 (not consulted directly).
 - B. Bollobás, P. Erdős and M. Simonovits, "On the structure of edge graphs II", *J. London Math. Soc. (2)* 12 (1976), 219–224, introduction and Theorem.
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, Section 3.3: Lemma 3.3.12 (deletion) and the proof of Theorem 3.3.10.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, Section 3.3: Lemma 3.3.12 (deletion) and the proof of Theorem 3.3.10.

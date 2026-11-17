@@ -8,4 +8,4 @@ This is the deletion argument of Lemma 3.3.12 of the source, which tracks the ed
 
 ## Sources
 
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, Lemma 3.3.12.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, Lemma 3.3.12.

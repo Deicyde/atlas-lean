@@ -12,4 +12,4 @@ Let $\delta > 0$. By the [Erdős–Stone theorem](eventually-complete-equipartit
 
 ## Sources
 
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, proof of Theorem 3.3.10.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, proof of Theorem 3.3.10.

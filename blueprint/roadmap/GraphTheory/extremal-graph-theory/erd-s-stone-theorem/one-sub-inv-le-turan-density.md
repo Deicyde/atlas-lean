@@ -13,4 +13,4 @@ For every $n$, $\mathrm{ex}(n, H) \ge \mathrm{ex}(n, K_{r+1})$. Dividing by $\bi
 
 ## Sources
 
-- *Extremal Combinatorics* lecture notes, extremalcombinatorics.com, Example 3.3.1.
+- J. Noel, *Extremal Combinatorics* lecture notes (version of 15 Nov 2026), extremalcombinatorics.com, Example 3.3.1.
