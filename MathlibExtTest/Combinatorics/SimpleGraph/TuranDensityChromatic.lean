@@ -32,4 +32,12 @@ example (n : ℕ) : extremalNumber n (⊤ : SimpleGraph (Fin 3)) ≤
     simp at this
     exact absurd this (by decide)) n
 
+/-- The general formula recovers `π(K₄) = 2/3`. -/
+example : turanDensity (⊤ : SimpleGraph (Fin 4)) = 1 - 1 / ((3 : ℕ) : ℝ) :=
+  turanDensity_eq_one_sub_inv_of_chromaticNumber _ (by norm_num) (by simp; rfl)
+
+/-- The octahedron `K_3(2)` has Turán density at most `1/2`. -/
+example : turanDensity (completeEquipartiteGraph (2 + 1) 2) ≤ 1 - 1 / ((2 : ℕ) : ℝ) :=
+  turanDensity_completeEquipartiteGraph_le (by norm_num) 2
+
 end MathlibExtTest.Combinatorics.SimpleGraph.TuranDensityChromatic

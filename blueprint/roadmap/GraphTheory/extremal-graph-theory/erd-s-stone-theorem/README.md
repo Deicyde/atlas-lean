@@ -8,14 +8,18 @@ $$\pi(H) = 1 - \frac{1}{\chi(H) - 1},$$
 
 the Erdős–Simonovits corollary. For bipartite $H$ it only says $\mathrm{ex}(n, H) = o(n^2)$, and the [Kővári–Sós–Turán bound](../kovari-sos-turan.md) gives the order of magnitude for $K_{s,t}$.
 
-Mathlib proves the minimum-degree form of the Erdős–Stone theorem (`SimpleGraph.eventually_completeEquipartiteGraph_isContained_of_minDegree`). The edge form and the density formula are recorded as wanted statements. The lower bound $\pi(H) \ge 1 - 1/r$ is proved here from the $r$-colourability of Turán graphs.
+Mathlib proves the minimum-degree form of the Erdős–Stone theorem (`SimpleGraph.eventually_completeEquipartiteGraph_isContained_of_minDegree`). The edge form is derived here from it by deleting vertices of small degree. It gives the upper bound in the density formula; the lower bound comes from the $r$-colourability of Turán graphs. Both the edge form and the density formula are proved.
 
 - [Erdős–Stone theorem](eventually-complete-equipartite-graph-is.md)
 - [Turán density of a general graph (Erdős–Stone–Simonovits)](turan-density-eq-one-sub-inv-of-chromati.md)
+- [Turán density of complete multipartite graphs](turan-density-complete-equipartite-graph.md)
+- [Deletion of low-degree vertices](exists-subset-forall-le-deg-in.md)
 - [Lower bound on the Turán density, chromatic form](one-sub-inv-le-turan-density-of-chromati.md)
 - [Lower bound on the Turán density](one-sub-inv-le-turan-density.md)
 - [Extremal numbers dominate those of cliques](extremal-number-top-le.md)
 - [Turán graphs are `r`-colourable](turan-graph-colorable.md)
+- [Degree inside a vertex set](deg-in.md)
+- [Ordered adjacent pairs inside a vertex set](adj-pairs-in.md)
 
 ## Related topics
 
