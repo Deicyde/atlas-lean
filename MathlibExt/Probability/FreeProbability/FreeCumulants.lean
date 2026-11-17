@@ -104,6 +104,25 @@ theorem freeCumulant_one (m : ℕ → ℂ) : freeCumulant m 1 = m 1 := by
     ext x; simp only [mem_univ, mem_singleton, true_iff]; exact Subsingleton.elim x ⊤
   rw [this, sum_empty, sub_zero]
 
+/-- **The second free cumulant is the variance**, `κ₂ = m₂ - m₁²`: the noncrossing partitions of two
+points other than `1₂` reduce to the partition into singletons (Anderson, Guionnet and Zeitouni,
+*An Introduction to Random Matrices*, equation (5.3.5) at `n = 2`). -/
+theorem freeCumulant_two (m : ℕ → ℂ) : freeCumulant m 2 = m 2 - m 1 ^ 2 := by
+  rw [freeCumulant]
+  have herase : (univ : Finset (_root_.NoncrossingPartition 2)).erase ⊤ = {discrete 2} := by
+    ext P
+    simp only [mem_erase, mem_univ, and_true, mem_singleton]
+    constructor
+    · intro hP
+      rcases eq_discrete_or_indiscrete_two P with h | h
+      · exact h
+      · exact absurd h hP
+    · rintro rfl
+      exact discrete_two_ne_indiscrete_two
+  rw [herase, sum_singleton, discrete_parts, prod_map]
+  simp only [Function.Embedding.coeFn_mk, card_singleton, Nat.one_lt_ofNat, dite_true,
+    freeCumulant_one, prod_const, card_univ, Fintype.card_fin]
+
 /-- **The R-transform** (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*,
 Definition 5.3.22): the formal power series `R(z) = ∑_{n ≥ 0} κ_{n+1} zⁿ` of the free cumulants
 of the moment sequence `m`. -/

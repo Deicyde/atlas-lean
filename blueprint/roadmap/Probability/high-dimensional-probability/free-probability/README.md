@@ -15,17 +15,20 @@ convolution, as the logarithm of the Fourier transform linearises classical conv
 semicircle law plays the role of the Gaussian: its only nonzero free cumulant is $\kappa_2$, its
 R-transform is $z$, and it is the limit in the free central limit theorem.
 
-Proved here: the definitions of freeness, free cumulants and the R-transform, the moment-cumulant
-formula, and the free cumulants and R-transform of the semicircle law. Stated: additivity of free
+Proved here: the definitions of freeness, free cumulants and the R-transform, that free variables
+are uncorrelated, the moment-cumulant formula, $\kappa_1$ and $\kappa_2$ as mean and variance, and
+the free cumulants and R-transform of the semicircle law. Stated: additivity of free
 cumulants and the free central limit theorem.
 
 - [Free independence](is-freely-independent.md)
 - [Free random variables](are-free.md)
 - [A family with at most one member is free](of-subsingleton.md)
 - [Scalars are free from everything](is-freely-independent-of-eq-bot.md)
+- [Free variables are uncorrelated](map-mul.md)
 - [Free cumulants of a moment sequence](free-cumulant.md)
 - [Moment-cumulant formula](moment-eq-sum-noncrossing-prod-free-cumu.md)
 - [The first free cumulant is the mean](free-cumulant-one.md)
+- [The second free cumulant is the variance](free-cumulant-two.md)
 - [The R-transform](r-transform.md)
 - [Moments of the semicircle law](semicircle-moment.md)
 - [The free cumulants of the semicircle law](free-cumulant-semicircle.md)

@@ -44,6 +44,15 @@ example (φ : A →ₗ[ℂ] ℂ) (B : Fin 2 → Subalgebra ℂ A) (hB : IsFreely
     (by intro i; fin_cases i <;> simpa) (by intro i; fin_cases i <;> simpa)
   simpa using this
 
+/-- Free elements are uncorrelated: `φ (x y) = φ x φ y` for `x, y` free. -/
+example (φ : A →ₗ[ℂ] ℂ) (hφ : φ 1 = 1) (x y : A) (h : AreFree φ ![x, y]) :
+    φ (x * y) = φ x * φ y :=
+  h.map_mul hφ (i := 0) (j := 1) (by decide) (by simp) (by simp)
+
+/-- The second free cumulant of the semicircle moments is its variance `1 - 0²`. -/
+example (m : ℕ → ℂ) (h1 : m 1 = 0) (h2 : m 2 = 1) : freeCumulant m 2 = 1 := by
+  rw [freeCumulant_two, h1, h2]; norm_num
+
 /-- The first free cumulant is the mean. -/
 example (m : ℕ → ℂ) : freeCumulant m 1 = m 1 := freeCumulant_one m
 

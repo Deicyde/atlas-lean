@@ -12,6 +12,9 @@ public import Mathlib.RingTheory.Adjoin.Basic
 public import Mathlib.Algebra.BigOperators.Group.List.Basic
 public import Mathlib.Basic.Complex.Basic
 
+import Mathlib.Tactic.LinearCombination
+import Mathlib.Tactic.FinCases
+
 /-!
 # Free independence in a noncommutative probability space
 
@@ -34,6 +37,8 @@ are free.
 * `IsFreelyIndependent.of_subsingleton`: a family with at most one member is free.
 * `isFreelyIndependent_of_eq_bot`: a family in which every member but one is the algebra of
   scalars is free (scalars are free from everything), when `φ 1 = 1`.
+* `IsFreelyIndependent.map_mul`: elements of two different free subalgebras satisfy
+  `φ (a b) = φ a φ b`.
 
 ## References
 
@@ -97,5 +102,30 @@ theorem isFreelyIndependent_of_eq_bot {φ : A →ₗ[ℂ] ℂ} (hφ : φ 1 = 1) 
       · exact ⟨0, eq_zero_of_mem_bot hφ (by simpa [hB _ h0] using ha 0) (hφa 0)⟩
     obtain ⟨t, ht⟩ := hzero
     rw [List.prod_eq_zero (List.mem_ofFn.2 ⟨t, ht⟩), map_zero]
+
+/-- **Free variables are uncorrelated**: if `a ∈ B i` and `b ∈ B j` with `i ≠ j` in a freely
+independent family and `φ 1 = 1`, then `φ (a b) = φ a · φ b`. Apply the definition to the centred
+elements `a - φ a` and `b - φ b` (Anderson, Guionnet and Zeitouni, *An Introduction to Random
+Matrices*, Definition 5.3.1; the computation of mixed moments in Remark 5.3.2(ii)). -/
+theorem IsFreelyIndependent.map_mul {φ : A →ₗ[ℂ] ℂ} (hφ : φ 1 = 1) {ι : Type*}
+    {B : ι → Subalgebra ℂ A} (h : IsFreelyIndependent φ B) {i j : ι} (hij : i ≠ j) {a b : A}
+    (ha : a ∈ B i) (hb : b ∈ B j) : φ (a * b) = φ a * φ b := by
+  set a' := a - φ a • (1 : A)
+  set b' := b - φ b • (1 : A)
+  have ha' : a' ∈ B i := sub_mem ha (Subalgebra.smul_mem _ (one_mem _) _)
+  have hb' : b' ∈ B j := sub_mem hb (Subalgebra.smul_mem _ (one_mem _) _)
+  have hca : φ a' = 0 := by simp [a', hφ]
+  have hcb : φ b' = 0 := by simp [b', hφ]
+  have h0 := h 1 ![i, j] ![a', b'] (fun k => by fin_cases k; simpa using hij)
+    (fun k => by fin_cases k <;> simpa) (fun k => by fin_cases k <;> simpa)
+  have hprod : (List.ofFn ![a', b']).prod = a' * b' := by simp
+  rw [hprod] at h0
+  have hexp : a' * b' = a * b - φ b • a - φ a • b + (φ a * φ b) • (1 : A) := by
+    simp only [a', b', sub_mul, mul_sub, smul_mul_assoc, mul_smul_comm, one_mul, mul_one]
+    rw [smul_sub, smul_smul, mul_comm (φ b) (φ a)]
+    abel
+  rw [hexp] at h0
+  simp only [map_add, map_sub, map_smul, hφ, smul_eq_mul, mul_one] at h0
+  linear_combination h0
 
 end MathlibExt.Probability.FreeProbability
