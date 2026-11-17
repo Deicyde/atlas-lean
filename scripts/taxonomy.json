@@ -780,6 +780,7 @@
   "CSLibExt/Algorithms/Lean/DataStructures/SkipList/Erase": {"to": "ComputerScience/data-structures/search-trees", "title": "Skip list"},
   "CSLibExt/Algorithms/Lean/DataStructures/SparseTable": {"to": "ComputerScience/data-structures/range-query-structures", "title": "Sparse table"},
   "CSLibExt/Algorithms/Lean/DataStructures/SplayTree": {"to": "ComputerScience/data-structures/search-trees", "title": "Splay tree"},
+  "CSLibExt/Algorithms/Lean/DataStructures/SplayTree/Amortized": {"to": "ComputerScience/data-structures/search-trees", "title": "Splay tree"},
   "CSLibExt/Algorithms/Lean/DataStructures/Stack/Basic": {"to": "ComputerScience/data-structures/linear-structures", "title": "Stack with multipop"},
   "CSLibExt/Algorithms/Lean/DataStructures/Stack/Multipop": {"to": "ComputerScience/data-structures/linear-structures", "title": "Stack with multipop"},
   "CSLibExt/Algorithms/Lean/DataStructures/SuffixArray": {"to": "ComputerScience/data-structures/tries-and-integer-dictionaries", "title": "Suffix array"},

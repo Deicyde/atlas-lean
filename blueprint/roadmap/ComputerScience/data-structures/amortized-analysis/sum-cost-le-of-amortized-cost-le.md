@@ -14,8 +14,8 @@ trees this way from the access lemma.
 
 ## Background
 
-- [Splay tree](../search-trees/splay-tree/README.md): the splay-tree
-  topic, where the access lemma supplies the per-operation bound.
+- [Balance theorem for splay trees](../search-trees/splay-tree/balance-theorem.md): the splay-tree
+  instance, where the access lemma supplies the per-operation bound.
 
 ## Sources
 

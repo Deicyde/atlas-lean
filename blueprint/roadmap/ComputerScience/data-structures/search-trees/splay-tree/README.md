@@ -1,5 +1,10 @@
 # Splay tree
 
+A splay tree is a binary search tree that, after every access, moves the accessed node to the
+root by splaying. Its amortized analysis uses the sum-of-logs potential: the access lemma bounds
+the amortized cost of a splay by $3 \log_2 n + 1$, and the balance theorem follows by the
+potential method (Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 32(3) (1985)).
+
 - [Root key of a splay tree](root.md)
 - [Splay operation](splay.md)
 - [Splaying the empty tree](splay-nil.md)
@@ -22,3 +27,20 @@
 - [Splay-tree insertion preserves the search-tree property](ordered-insert.md)
 - [Splay-tree insertion puts the inserted key at the root](root-insert.md)
 - [Correctness of the splay-tree membership test](contains-eq-true-iff.md)
+- [Splay-tree potential](potential.md)
+- [Number of rotations performed by splaying](rotations.md)
+- [Cost of a splay](cost.md)
+- [Subtree at the end of the search path](focus.md)
+- [Access lemma for splay trees (unit weights)](access-lemma.md)
+- [Amortized cost of a splay is at most `3 log₂ n + 1`](amortized-cost-le.md)
+- [The splay-tree potential is nonnegative](potential-nonneg.md)
+- [Upper bound on the splay-tree potential](potential-le.md)
+- [Trees of a run of splays](splay-run.md)
+- [Splaying preserves the number of nodes along a run](num-nodes-splay-run.md)
+- [Balance theorem for splay trees](balance-theorem.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md)
+- [Binary search tree](../binary-search-tree/README.md)
+- [Link-cut tree](../../disjoint-sets-and-dynamic-trees/link-cut-tree/README.md)
