@@ -11,9 +11,10 @@
 
 ## Related topics
 
-- [Yao's XOR lemma](../yao-s-xor-lemma/README.md): Yao's hardness amplification, the other basic
-  tool turning weak unpredictability into strong unpredictability.
-- [Semantic security and indistinguishability](../../../ComputerScience/cryptography/semantic-security-and-indistinguishability/README.md):
-  the security notion that encryption built from hard-core predicates achieves.
+- [Yao's XOR lemma](../yao-s-xor-lemma/README.md): hardness amplification, turning a mildly
+  unpredictable Boolean function into a strongly unpredictable one; the Goldreich–Levin theorem
+  instead extracts a strongly unpredictable bit from one-wayness.
+- [Encryption from hard-core predicates](../../../ComputerScience/cryptography/encryption-from-hard-core-predicates/README.md):
+  public-key encryption from a trapdoor permutation and a hard-core predicate, semantically secure.
 - [Goldwasser–Micali encryption](../../../ComputerScience/cryptography/goldwasser-micali-encryption/README.md):
   probabilistic encryption from a specific hard decision problem, quadratic residuosity.

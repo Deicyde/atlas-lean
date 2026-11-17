@@ -45,6 +45,6 @@ reductions used are one call to the given adversary.
   semantically secure, from the hardness of deciding quadratic residuosity.
 - [ElGamal encryption](../elgamal-encryption/README.md): an eavesdropping (indistinguishability)
   security proof from the decisional Diffie–Hellman assumption.
-- [Goldreich–Levin theorem](../../../TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/README.md):
-  hard-core predicates, from which public-key encryption with indistinguishable encryptions is built
-  from any trapdoor permutation (Goldreich, Vol. II, Construction 5.3.13 and Proposition 5.3.14).
+- [Encryption from hard-core predicates](../encryption-from-hard-core-predicates/README.md):
+  Goldreich's construction of public-key encryption with indistinguishable encryptions from a
+  trapdoor permutation and a hard-core predicate (Construction 5.3.13, Proposition 5.3.14).
