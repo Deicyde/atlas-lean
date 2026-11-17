@@ -13,3 +13,4 @@ Probability in high dimension and on geometric objects: log-concave and uniform 
 - [Operator norm of random matrices](operator-norm-of-random-matrices/README.md)
 - [Johnstone's Tracy–Widom limit](johnstone-largest-eigenvalue-tracy-widom.md)
 - [Largest singular value of a standard Gaussian matrix](measure-real-sigma-max-ge-le.md)
+- [Free probability](free-probability/README.md)
