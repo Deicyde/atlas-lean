@@ -16,3 +16,11 @@ Probabilistic methods and random discrete structures outside random graphs: the 
 - [Isolation lemma](isolation-lemma.md)
 - [Symmetric Lovász Local Lemma](lovasz-local-lemma-symmetric-finite.md)
 - [Lovász local lemma, general form](lovasz-local-lemma-general-finite.md)
+
+## Related topics
+
+- [Kim–Vu polynomial concentration](../../Probability/concentration-inequalities/kim-vu-polynomial-concentration/README.md): concentration of polynomials of independent bits, the tool for counting small subgraphs where martingale bounds are too weak.
+- [Graph Ramsey numbers](../../GraphTheory/graph-ramsey-theory/graph-ramsey-numbers/README.md): Kim's lower bound $R(3, t) = \Omega(t^2/\log t)$ by a semi-random construction, matching the upper bound of Ajtai, Komlós, Szemerédi and Shearer.
+- [Expander graphs](../../GraphTheory/graph-families-and-operations/expander-graphs/README.md): pseudorandom graphs through eigenvalues, with the expander mixing lemma (edge counts close to those of a random graph) and the [Alon–Boppana bound](../../GraphTheory/graph-families-and-operations/expander-graphs/alon-boppana.md) on the second eigenvalue of regular graphs.
+- [Median-of-means amplification](../../Probability/concentration-inequalities/median-of-means-amplification/README.md): boosting a constant success probability by independent repetition, as in the streaming algorithms of Alon, Matias and Szegedy.
+
