@@ -120,3 +120,4 @@ exceptional sets, quasi-continuity and quasi-regularity are genuine definitions.
 - [Potential theory](../../../Analysis/potential-theory/README.md): Dirichlet forms were introduced by
   Beurling and Deny as an axiomatic potential theory; nests, exceptional sets and quasi-continuity
   extend the classical notions (capacity itself is not yet formalised here).
+- [Effective resistance and electrical networks](../../../GraphTheory/algebraic-graph-theory/part-01/effective-resistance-and-electrical-networks/README.md): for a reversible chain with conductances `π(x) P(x, y)`, the Dirichlet form is the network energy, whose minimum over potentials equal to `0` and `1` at two states is their effective conductance (Dirichlet's principle).

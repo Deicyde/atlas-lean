@@ -15,4 +15,4 @@
 ## Related topics
 
 - [Graph Laplacians and Cheeger's inequality](../graph-laplacians-and-cheeger-s-inequality/README.md): `lapMatrix` as the multigraph Laplacian of the darts, with its quadratic form and spectrum.
-- [Effective resistance and electrical networks](../effective-resistance-and-electrical-networks/README.md): the same Laplacian read as the operator of a resistor network; Spielman, *Spectral and Algebraic Graph Theory*, Theorem 13.5.1, relates effective resistances to random spanning trees.
+- [Effective resistance and electrical networks](../effective-resistance-and-electrical-networks/README.md): the same Laplacian read as the operator of a resistor network; Spielman, *Spectral and Algebraic Graph Theory*, Theorem 13.5.1, relates effective resistances to random spanning trees, and the unit-conductance case is recorded there as the wanted [Kirchhoff's effective resistance formula](../effective-resistance-and-electrical-networks/kirchhoff-effective-resistance-formula.md).
