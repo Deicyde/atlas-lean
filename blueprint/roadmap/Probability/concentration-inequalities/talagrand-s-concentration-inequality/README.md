@@ -11,7 +11,9 @@ Behind them stands Talagrand's convex-distance inequality (1995). For $A \subset
 $x \in \Omega^N$, the convex distance $f_c(A, x)$ is the Euclidean distance from $0$ to the convex
 hull of the sets of coordinates along which $x$ can be changed into a point of $A$; for every
 product probability $P$, $\int \exp(f_c(A, \cdot)^2/4)\,dP \le 1/P(A)$. The convex distance and
-its elementary properties are defined and proved; the inequality is stated, not yet proved.
+its elementary properties are defined and proved. The inequality is proved when $\Omega$ is a
+finite set, by Talagrand's induction on $N$; for a general probability space it is stated, not
+yet proved.
 
 - [Talagrand's concentration inequality around a median](talagrand-concentration-median.md)
 - [Talagrand's concentration inequality around the mean](talagrand-concentration-mean.md)
@@ -21,6 +23,15 @@ its elementary properties are defined and proved; the inequality is stated, not 
 - [The convex distance is at most the square root of the Hamming distance](convex-distance-le-sqrt-card.md)
 - [Talagrand's convex-distance inequality](lintegral-exp-convex-distance-sq-le.md)
 - [Tail form of the convex-distance inequality](measure-le-convex-distance-le.md)
+- [Product weights](prod-weight.md)
+- [Weight of a set](weight-of.md)
+- [Section at the first coordinate](section-at.md)
+- [Projection forgetting the first coordinate](projection.md)
+- [Talagrand's geometric step](convex-distance-cons-sq-le.md)
+- [Weighted Hölder inequality for two factors](sum-mul-rpow-mul-rpow-le.md)
+- [Talagrand's numerical lemma](exists-exp-le-two-sub-mul-rpow.md)
+- [Talagrand's convex-distance inequality on a product of finite sets](sum-exp-convex-distance-mul-weight-of-le.md)
+- [Tail form on a product of finite sets](weight-of-le-convex-distance-mul-weight.md)
 
 ## Related topics
 

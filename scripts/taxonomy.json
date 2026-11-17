@@ -3956,6 +3956,7 @@
   "MathlibExt/Probability/ContractionPrinciple": {"to": "Probability/large-deviations", "title": "Contraction principle"},
   "MathlibExt/Probability/ConvergenceInProbability": {"to": "Probability/convergence-of-measures", "title": "Convergence in probability"},
   "MathlibExt/Probability/ConvexDistance": {"to": "Probability/concentration-inequalities", "title": "Talagrand's concentration inequality"},
+  "MathlibExt/Probability/ConvexDistanceFinite": {"to": "Probability/concentration-inequalities", "title": "Talagrand's concentration inequality"},
   "MathlibExt/Probability/ConvexSubGaussianComparison": {"to": "Probability/concentration-inequalities", "title": "Convex comparison under sub-Gaussian tails"},
   "MathlibExt/Probability/FiniteExponentialFamily": {"to": "Probability/statistical-estimation", "title": "Exponential families"},
   "MathlibExt/Probability/FunctionalInequalities/LogSobolevTalagrand": {"to": "Probability/concentration-inequalities", "title": "Transport-cost inequalities"},

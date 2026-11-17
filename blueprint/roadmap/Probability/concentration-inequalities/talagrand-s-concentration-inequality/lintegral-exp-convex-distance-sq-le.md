@@ -8,14 +8,17 @@ Math. IHÉS 81 (1995), Theorem 4.1.1, (4.1.2)). Neither $N$ nor $\mu$ enters the
 
 The source treats $f_c(A, \cdot)$ as measurable and otherwise reads the integral as an upper
 integral. The Lean statement uses Mathlib's lower Lebesgue integral, which is at most the upper
-integral, so it follows from the source's statement. Stated, not yet proved.
+integral, so it follows from the source's statement. Stated, not yet proved in this generality;
+for a finite $\Omega$ it is proved, as a finite sum, in
+[the convex-distance inequality on a product of finite sets](sum-exp-convex-distance-mul-weight-of-le.md).
 
 ## Informally uses
 
-- [Talagrand's convex distance](convex-distance.md): the distance being integrated. Talagrand's
-  proof is an induction on $N$ that combines Hölder's inequality with the elementary bound
-  $\inf_{0 \le \lambda \le 1} r^{-\lambda} e^{(1-\lambda)^2/4} \le 2 - r$ for $0 \le r \le 1$
-  (Lemma 4.1.3, taken from Johnson and Schechtman).
+- [Talagrand's convex distance](convex-distance.md): the distance being integrated.
+- [Talagrand's geometric step](convex-distance-cons-sq-le.md): the inequality (4.1.7) of the
+  induction on $N$.
+- [Talagrand's numerical lemma](exists-exp-le-two-sub-mul-rpow.md): Lemma 4.1.3, combined with
+  Hölder's inequality in the induction step.
 
 ## Background
 
