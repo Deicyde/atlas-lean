@@ -5,6 +5,7 @@ Algorithms whose identity is their use of randomness or whose analysis averages 
 - [Average-case running time](average-case-running-time/README.md)
 - [Fisher–Yates shuffle](fisher-yates-shuffle/README.md)
 - [Freivalds' algorithm](freivalds-algorithm/README.md)
+- [Frequency moments of data streams](frequency-moments-of-data-streams/README.md)
 - [Hiring problem](hiring-problem/README.md)
 - [Karger's algorithm](karger-s-algorithm/README.md)
 - [MinHash and Jaccard similarity](minhash-and-jaccard-similarity/README.md)

@@ -17,7 +17,9 @@ Newman's theorem, stated here as a wanted result, says that for $0 < \varepsilon
 coins cost at most $\log_2(n/\varepsilon^2) + O(1)$ extra bits, at the price of doubling the
 error, which gives equality an $O(\log n)$-bit private-coin
 protocol. The presentation follows A. Rao and A. Yehudayoff, *Communication Complexity* (early
-draft), Chapter 3.
+draft), Chapter 3. The randomized complexity of set disjointness is linear (Kalyanasundaram and
+Schnitger; Razborov), stated here as a wanted result; Alon, Matias and Szegedy derive from it that
+approximating the largest multiplicity of a data stream needs linear memory.
 
 - [Public-coin randomized protocol](public-coin-protocol.md)
 - [Cost of a public-coin protocol](public-coin-protocol-cost.md)
@@ -44,8 +46,11 @@ draft), Chapter 3.
 - [Yao's minimax principle for communication complexity](rand-complexity-eq-i-sup-dist-complexity.md)
 - [Error probability of a private-coin protocol](private-error-prob.md)
 - [Newman's theorem](newman-private-coins.md)
+- [Set intersection function](disj-fn.md)
+- [Randomized communication complexity of disjointness](rand-complexity-disj-fn-ge.md)
 
 ## Related topics
 
 - [Deterministic communication protocols](../deterministic-communication-protocols/README.md): the deterministic model these protocols randomize, and the $n + 1$ lower bound for equality.
 - [Yao's minimax principle](../../randomized-and-quantum-complexity/yao-s-minimax-principle/README.md): the same principle for finitely many algorithms and inputs with arbitrary costs.
+- [Frequency moments of data streams](../../../ComputerScience/randomized-algorithms/frequency-moments-of-data-streams/README.md): streaming space lower bounds obtained from the disjointness bound, the memory content being the message.

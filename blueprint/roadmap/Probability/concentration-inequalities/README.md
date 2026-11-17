@@ -9,6 +9,7 @@ Non-asymptotic tail and moment bounds: Hoeffding, Azuma, McDiarmid, Kim–Vu, Ta
 - [Matrix concentration inequalities](matrix-concentration-inequalities/README.md)
 - [Kim–Vu polynomial concentration](kim-vu-polynomial-concentration/README.md)
 - [McDiarmid's inequality](mcdiarmid-s-inequality/README.md)
+- [Median-of-means amplification](median-of-means-amplification/README.md)
 - [Talagrand's concentration inequality](talagrand-s-concentration-inequality/README.md)
 - [Sub-exponential variables and Bernstein's inequality](sub-exponential-variables-and-bernstein-s-inequa/README.md)
 - [Khintchine inequality](khintchine-inequality.md)
