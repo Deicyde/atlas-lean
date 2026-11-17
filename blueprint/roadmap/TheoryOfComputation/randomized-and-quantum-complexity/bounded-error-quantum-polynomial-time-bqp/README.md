@@ -2,3 +2,4 @@
 
 - [BQP is contained in PP](bqp-subset-pp.md)
 - [BQP is contained in PSPACE](bqp-subset-pspace.md)
+- [BPP is contained in BQP](bpp-subset-bqp.md)

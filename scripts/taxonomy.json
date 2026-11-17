@@ -5636,6 +5636,7 @@
   "WantedExt/Complexity/KeyTheorems/AdlemanWanted": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Adleman's theorem"},
   "WantedExt/Complexity/KeyTheorems/AlgebrizationWanted": {"to": "TheoryOfComputation/hierarchy-theorems-and-barriers", "title": "Algebrization barrier"},
   "WantedExt/Complexity/KeyTheorems/BPPSubsetPSPACEWanted": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Bounded-error probabilistic classes RP and BPP"},
+  "WantedExt/Complexity/KeyTheorems/BPPSubsetBQPWanted": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Bounded-error quantum polynomial time (BQP)"},
   "WantedExt/Complexity/KeyTheorems/BQPSubsetPPWanted": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Bounded-error quantum polynomial time (BQP)"},
   "WantedExt/Complexity/KeyTheorems/BQPSubsetPSPACEWanted": {"to": "TheoryOfComputation/randomized-and-quantum-complexity", "title": "Bounded-error quantum polynomial time (BQP)"},
   "WantedExt/Complexity/KeyTheorems/BakerGillSolovayWanted": {"to": "TheoryOfComputation/hierarchy-theorems-and-barriers", "title": "Relativization and oracle separations"},
