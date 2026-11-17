@@ -1,10 +1,10 @@
 # Dyadic interval
 
 For integers $k$ and $m$, the dyadic interval of level $k$ and index $m$ is
-$$I_{k,m} = \,m 2^{-k},\ (m+1) 2^{-k}\,).$$
+$$I_{k,m} = [\,m 2^{-k},\ (m+1) 2^{-k}\,).$$
 For fixed $k$ the intervals $I_{k,m}$, $m \in \mathbb{Z}$, partition $\mathbb{R}$, they have length $2^{-k}$, and every interval of level $k$ is the disjoint union of two intervals of level $k+1$. Larger $k$ means finer intervals. This is the collection $\mathcal{D}_k = \{2^{-k}([0,1)^d + m)\}$ of T. Hytönen, *Dyadic analysis and weights*, lecture notes, University of Helsinki, version of 2 May 2014, §1.A, in dimension $d = 1$.
 
-The Lean development identifies the level-$k$ interval containing $x$ through its [index $\lfloor 2^k x \rfloor$; the length of $I_{k,m}$ is `volume_dyadicInterval`, and $I_{k,m}$ agrees with the closed interval $[m 2^{-k}, (m+1) 2^{-k}]$ up to a null set (`dyadicInterval_ae_eq_closedBall`).
+The Lean development identifies the level-$k$ interval containing $x$ through its index $\lfloor 2^k x \rfloor$; the length of $I_{k,m}$ is `volume_dyadicInterval`, and $I_{k,m}$ agrees with the closed interval $[m 2^{-k}, (m+1) 2^{-k}]$ up to a null set (`dyadicInterval_ae_eq_closedBall`).
 
 ## Background
 
