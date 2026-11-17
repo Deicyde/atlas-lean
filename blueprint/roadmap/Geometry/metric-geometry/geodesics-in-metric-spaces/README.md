@@ -15,3 +15,8 @@
 - [Geodesic metric space](is-geodesic-space.md)
 - [Points along a geodesic segment](exists-dist-eq-dist-eq.md)
 - [Normed spaces are geodesic](is-geodesic-space-of-normed-space.md)
+
+## Related topics
+
+- [Gromov-hyperbolic spaces](../gromov-hyperbolic-spaces/README.md): in a geodesic space, hyperbolicity is equivalent to thinness of geodesic triangles.
+- [Word metrics and quasi-isometries](../../../GroupTheory/geometric-group-theory/word-metrics-and-quasi-isometries/README.md): the Švarc–Milnor lemma for groups acting on proper geodesic spaces.

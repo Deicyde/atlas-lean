@@ -1,7 +1,14 @@
 # Change of finite generating set is bi-Lipschitz
 
-For two finite generating families `P`
-and `Q` of `G` there is `K ≥ 1` with `|g|_P ≤ K |g|_Q` and `|g|_Q ≤ K |g|_P` for every `g`; since
-the word metric is `d(g, h) = |g⁻¹ h|`, the identity of `G` is a `K`-bi-Lipschitz map between the
-two word metrics (Gromov, *Groups of polynomial growth and expanding maps*, Publ. Math. IHÉS 53
-(1981), p. 53: `C⁻¹ ‖γ‖_old ≤ ‖γ‖_new ≤ C ‖γ‖_old`).
+For two finite generating families $P$ and $Q$ of a group $G$ there is an integer $K \ge 1$ with $|g|_P \le K |g|_Q$ and $|g|_Q \le K |g|_P$ for every $g \in G$. Since the word metric is $d(g, h) = |g^{-1} h|$, the identity of $G$ is a $K$-bi-Lipschitz map between the two word metrics. One can take for $K$ the largest length of a generator of one family written in the other.
+
+So the word metric of a finitely generated group is well defined up to bi-Lipschitz equivalence, and every quasi-isometry invariant of $(G, d_P)$ is an invariant of the group $G$.
+
+## Informally uses
+
+- [Word lengths of two generating families are comparable](exists-word-length-le-mul.md): the one-sided bound, applied in both directions.
+
+## Sources
+
+- M. Gromov, *Groups of polynomial growth and expanding maps*, Publ. Math. IHÉS 53 (1981), 53–73, p. 53 ("Elementary properties of the norm").
+- M. Gromov, *Asymptotic invariants of infinite groups*, in *Geometric Group Theory*, vol. 2 (G. A. Niblo and M. A. Roller, eds.), London Math. Soc. Lecture Note Ser. 182, Cambridge University Press, 1993, §0.2.C, Example.

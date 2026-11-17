@@ -1,6 +1,13 @@
 # Hyperbolicity with respect to one base point gives hyperbolicity
 
-**Hyperbolicity with respect to one base point gives hyperbolicity** (Gromov, *Hyperbolic
-groups*, 1987, Corollary 1.1.B). If `X` is `δ`-hyperbolic with respect to one base point `o`
-(the `δ`-inequality (*) of §1.1 holds for all `x y z` with base point `o`) and `0 ≤ δ`, then `X`
-is `2δ`-hyperbolic (with respect to every base point, Definition 1.1.C).
+If a pseudometric space $X$ satisfies the $\delta$-inequality $(x \cdot y)_o \ge \min((x \cdot z)_o, (y \cdot z)_o) - \delta$ for one base point $o$ and all $x, y, z$, and $\delta \ge 0$, then $X$ is $2\delta$-hyperbolic with respect to every base point, that is, `IsDeltaHyperbolic X (2 * δ)`.
+
+The proof is Gromov's: the left side of the four-point inequality at $o$ does not depend on $o$, and equals $(t \cdot y)_x - \min((t \cdot z)_x, (y \cdot z)_x)$, which is the $\delta$-inequality at the base point $x$.
+
+## Informally uses
+
+- [The four-point inequality from one base point](four-point-of-basepoint.md): the base-point-free inequality with constant $2\delta$.
+
+## Sources
+
+- M. Gromov, *Hyperbolic groups*, in *Essays in Group Theory* (S. M. Gersten, ed.), Math. Sci. Res. Inst. Publ. 8, Springer, 1987, 75–263, Corollary 1.1.B and Definition 1.1.C.
