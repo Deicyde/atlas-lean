@@ -6,7 +6,7 @@ With at least two processes, no deterministic asynchronous message-passing algor
 
 **Relation to the source.** The correctness condition is stronger than the one of Fischer, Lynch and Paterson, who require only partial correctness (agreement, and both decision values reachable) and that some process decides in every admissible run. An impossibility for a stronger requirement is a weaker theorem, so this is weaker than their Theorem 1; their statement is proved as [FLP impossibility of asynchronous consensus, original form](flp-original.md). With one process the hypothesis fails and consensus is trivial.
 
-## Background
+## Related topics
 
 - [FLP impossibility of asynchronous consensus, original form](flp-original.md): the stronger original statement, proved in the same model by the original bivalence argument.
 

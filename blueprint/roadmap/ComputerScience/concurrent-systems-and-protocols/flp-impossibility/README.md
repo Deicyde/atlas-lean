@@ -17,3 +17,4 @@ The theorem of Fischer, Lynch and Paterson (1985): in an asynchronous message-pa
 - [Two-phase commit](../two-phase-commit/README.md): a commit protocol; by the theorem every asynchronous commit protocol has a "window of vulnerability" in which one slow or crashed process can block it.
 - [Byzantine agreement](../byzantine-agreement/README.md): consensus in synchronous rounds, where crash faults are tolerable but Byzantine faults need $n > 3m$.
 - [Labelled transition systems](../../process-calculi/labelled-transition-systems/README.md): CSLib's model of an algorithm is a labelled transition system whose labels are message receipts.
+- [Synchronous consensus with crash failures](../synchronous-consensus-with-crash-failures/README.md): with synchrony consensus tolerates crashes, but $f$ crashes cost $f + 1$ rounds.
