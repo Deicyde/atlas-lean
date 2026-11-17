@@ -5,6 +5,7 @@ How many edges or copies of a subgraph a graph can have while avoiding a forbidd
 - [Balanced subgraphs](balanced-subgraphs/README.md)
 - [Books in graphs](books-in-graphs/README.md)
 - [Erdős–Faudree triangle conjecture](erd-s-faudree-triangle-conjecture/README.md)
+- [Erdős–Stone theorem](erd-s-stone-theorem/README.md)
 - [Extremal graphs of girth five](extremal-graphs-of-girth-five/README.md)
 - [Four-cycle-free graphs](four-cycle-free-graphs/README.md)
 - [Generalized Turán numbers](generalized-tur-n-numbers/README.md)
