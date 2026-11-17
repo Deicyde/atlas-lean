@@ -9,6 +9,7 @@ Multivariate normal theory and linear models: Gaussian maximum likelihood, Cochr
 - [Lasso error bounds under restricted eigenvalues](lasso-error-bounds-under-restricted-eigenvalues/README.md)
 - [Exact recovery by basis pursuit](exact-recovery-by-basis-pursuit/README.md)
 - [Principal component analysis](principal-component-analysis/README.md)
+- [Regularized covariance estimation by banding](regularized-covariance-estimation-by-banding/README.md)
 - [Student's t and Snedecor's F distributions](student-s-t-and-snedecor-s-f-distributions/README.md)
 - [Weighted means and scatter matrices](weighted-means-and-scatter-matrices/README.md)
 - [Gaussian maximum likelihood](gaussian-maximum-likelihood/README.md)
