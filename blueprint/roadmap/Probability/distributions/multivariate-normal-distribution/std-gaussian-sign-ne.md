@@ -25,8 +25,8 @@ are treated separately.
 
 - [Sheppard's formula](sheppard-quadrant-probability-arcsine.md): for a standard bivariate normal
   pair with correlation $\rho = \langle u, v\rangle \in (-1, 1)$ the two statements are equivalent, since
-  $1 - 2\left(\frac14 + \frac{\arcsin \rho}{2\pi}\right) = \frac{\arccos \rho}{\pi}$; Sheppard's formula itself, stated
-  for the multivariate Gaussian with that covariance matrix, remains wanted.
+  $1 - 2\left(\frac14 + \frac{\arcsin \rho}{2\pi}\right) = \frac{\arccos \rho}{\pi}$; Sheppard's formula is deduced from this
+  page through the [quadrant probability](std-gaussian-pos-pos.md).
 
 ## Sources
 

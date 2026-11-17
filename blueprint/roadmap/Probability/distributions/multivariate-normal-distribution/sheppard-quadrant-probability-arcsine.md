@@ -7,15 +7,25 @@ law of a standard bivariate normal vector with correlation $\rho$). Then the ope
 $\{x \in \mathbb{R}^2 : x_1 > 0,\ x_2 > 0\}$ has $\gamma$-probability
 $\frac{1}{4} + \frac{\arcsin \rho}{2\pi}$.
 
+The proof realises $\gamma$ as the law of $(\langle u, r\rangle, \langle v, r\rangle)$ for a standard Gaussian vector
+$r$ in the plane and unit vectors $u$, $v$ with $\langle u, v\rangle = \rho$, by comparing characteristic
+functions, and then uses the quadrant probability for two directions. That in turn rests on the
+random-hyperplane computation of Goemans and Williamson rather than on Sheppard's own argument.
+The statement keeps the hypothesis $|\rho| < 1$ of the former wanted entry; the same argument
+would also cover $\rho = \pm 1$, where the covariance matrix is singular, but that case is not
+stated.
+
+## Informally uses
+
+- [Quadrant probability for two directions](std-gaussian-pos-pos.md): the probability in
+  terms of the inner product $\rho$ of the two directions.
+- [Characteristic function of a pair of inner products](char-fun-map-inner-pair.md): the
+  identification of $\gamma$ with the law of $(\langle u, r\rangle, \langle v, r\rangle)$.
+
 ## Background
 
-- [Separation probability of two directions](std-gaussian-sign-ne.md) (proved): the same fact in
-  hyperplane form, as in Goemans and Williamson's Lemma 3.2: a random hyperplane separates two
-  unit vectors with inner product $\rho$ with probability
-  $1 - 2\left(\frac14 + \frac{\arcsin\rho}{2\pi}\right) = \frac{\arccos\rho}{\pi}$. Deducing the quadrant form
-  stated here needs the identification of the multivariate Gaussian with covariance
-  $\begin{pmatrix} 1 & \rho \\ \rho & 1 \end{pmatrix}$ as the law of $(\langle u, r\rangle, \langle v, r\rangle)$, which is not
-  done yet.
+- [Goemans–Williamson Lemma 3.2](../../../ComputerScience/approximation-algorithms/goemans-williamson-max-cut-algorithm/measure-real-sign-ne.md):
+  the same fact in hyperplane form, which is how semidefinite rounding uses it.
 
 ## Sources
 

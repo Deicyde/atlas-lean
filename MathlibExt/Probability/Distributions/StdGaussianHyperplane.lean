@@ -228,6 +228,25 @@ theorem map_inner_stdGaussian {u : E} (hu : ‖u‖ = 1) :
   push_cast
   ring
 
+/-- **Characteristic function of a pair of inner products.** For vectors `u`, `v` and a standard
+Gaussian vector `r`, the characteristic function of `(⟪u, r⟫, ⟪v, r⟫) ∈ ℝ²` at `t` is
+`exp(-‖t₀ u + t₁ v‖² / 2)`. -/
+theorem charFun_map_inner_pair (u v : E) (t : EuclideanSpace ℝ (Fin 2)) :
+    charFun ((stdGaussian E).map fun r => WithLp.toLp 2 ![inner ℝ u r, inner ℝ v r]) t =
+      Complex.exp (-(‖t 0 • u + t 1 • v‖ : ℂ) ^ 2 / 2) := by
+  have hPc : Continuous fun r : E => WithLp.toLp 2 ![inner ℝ u r, inner ℝ v r] :=
+    (PiLp.continuous_toLp 2 _).comp (continuous_pi fun i => by fin_cases i <;> fun_prop)
+  rw [charFun_apply, integral_map hPc.measurable.aemeasurable (by fun_prop)]
+  have h := charFun_stdGaussian (E := E) (t 0 • u + t 1 • v)
+  rw [charFun_apply] at h
+  have hint : ∀ x : E, inner ℝ (WithLp.toLp 2 ![inner ℝ u x, inner ℝ v x] :
+      EuclideanSpace ℝ (Fin 2)) t = inner ℝ x (t 0 • u + t 1 • v) := by
+    intro x
+    simp only [PiLp.inner_apply, Fin.sum_univ_two, Matrix.cons_val_zero, Matrix.cons_val_one,
+      inner_add_right, real_inner_smul_right, RCLike.inner_apply, conj_trivial,
+      real_inner_comm x]
+  simp_rw [hint, h]
+
 /-- **Two-dimensional marginal of the standard Gaussian.** For orthonormal `e₁`, `e₂`, the law of
 `(⟪e₁, r⟫, ⟪e₂, r⟫)` under the standard Gaussian measure is the product of two standard normal
 laws. -/
@@ -380,5 +399,89 @@ theorem stdGaussian_sign_ne {u v : E} (hu : ‖u‖ = 1) (hv : ‖v‖ = 1) :
       rw [this]; ring
     rw [this, arccos_cos (by linarith) (by linarith)]
   rw [h2a]
+
+/-- **Hyperplanes through the origin are null for the standard Gaussian.** For a unit vector `u`,
+the set `{r : ⟪u, r⟫ = 0}` has standard Gaussian measure `0`. -/
+theorem stdGaussian_inner_eq_zero {u : E} (hu : ‖u‖ = 1) :
+    stdGaussian E {r | inner ℝ u r = 0} = 0 := by
+  have hmeas : Measurable fun r : E => inner ℝ u r :=
+    (continuous_const.inner continuous_id).measurable
+  have : {r : E | inner ℝ u r = 0} = (fun r => inner ℝ u r) ⁻¹' {0} := rfl
+  rw [this, ← Measure.map_apply hmeas (measurableSet_singleton 0), map_inner_stdGaussian hu,
+    gaussianReal_of_var_ne_zero 0 one_ne_zero]
+  exact withDensity_absolutelyContinuous _ _ Real.volume_singleton
+
+/-- **Quadrant probability for two directions.** For unit vectors `u`, `v` of a
+finite-dimensional real inner product space and a standard Gaussian vector `r`,
+`P[⟪u, r⟫ > 0, ⟪v, r⟫ > 0] = 1/4 + arcsin ⟪u, v⟫ / (2π)`. The proof combines
+`stdGaussian_sign_ne` with the symmetry `r ↦ -r` and the nullity of hyperplanes. -/
+theorem stdGaussian_pos_pos {u v : E} (hu : ‖u‖ = 1) (hv : ‖v‖ = 1) :
+    (stdGaussian E).real {r | 0 < inner ℝ u r ∧ 0 < inner ℝ v r} =
+      1 / 4 + arcsin (inner ℝ u v) / (2 * π) := by
+  have hpi := pi_pos
+  set μ := stdGaussian E
+  have hcu : Continuous fun r : E => inner ℝ u r := continuous_const.inner continuous_id
+  have hcv : Continuous fun r : E => inner ℝ v r := continuous_const.inner continuous_id
+  set P := {r : E | 0 < inner ℝ u r ∧ 0 < inner ℝ v r} with hP
+  set TT := {r : E | 0 ≤ inner ℝ u r ∧ 0 ≤ inner ℝ v r} with hTT
+  set FF := {r : E | inner ℝ u r < 0 ∧ inner ℝ v r < 0} with hFF
+  set D := {r : E | (0 ≤ inner ℝ u r) ≠ (0 ≤ inner ℝ v r)} with hD
+  have hPm : MeasurableSet P :=
+    (measurableSet_lt measurable_const hcu.measurable).inter
+      (measurableSet_lt measurable_const hcv.measurable)
+  have hTTm : MeasurableSet TT :=
+    (measurableSet_le measurable_const hcu.measurable).inter
+      (measurableSet_le measurable_const hcv.measurable)
+  have hFFm : MeasurableSet FF :=
+    (measurableSet_lt hcu.measurable measurable_const).inter
+      (measurableSet_lt hcv.measurable measurable_const)
+  have hDm : MeasurableSet D := measurableSet_sign_ne hcu hcv
+  -- `FF` is the reflection of `P`
+  have hFF_eq : μ.real FF = μ.real P := by
+    have hneg : μ.map (LinearIsometryEquiv.neg ℝ (E := E)) = μ := stdGaussian_map _
+    have hpre : (LinearIsometryEquiv.neg ℝ (E := E)) ⁻¹' P = FF := by
+      ext r
+      simp [hP, hFF, inner_neg_right]
+    rw [← hpre, ← map_measureReal_apply
+      (LinearIsometryEquiv.neg ℝ (E := E)).continuous.measurable hPm, hneg]
+  -- `TT` and `P` differ by a null set
+  have hTT_eq : μ.real TT = μ.real P := by
+    have hsub : P ⊆ TT := fun r hr => ⟨hr.1.le, hr.2.le⟩
+    have hnull : μ (TT \ P) = 0 := by
+      refine measure_mono_null (t := {r | inner ℝ u r = 0} ∪ {r | inner ℝ v r = 0}) ?_
+        (measure_union_null (stdGaussian_inner_eq_zero hu) (stdGaussian_inner_eq_zero hv))
+      rintro r ⟨⟨h1, h2⟩, h3⟩
+      by_contra hc
+      simp only [mem_union, mem_ofPred_eq, not_or] at hc
+      exact h3 ⟨lt_of_le_of_ne h1 (Ne.symm hc.1), lt_of_le_of_ne h2 (Ne.symm hc.2)⟩
+    rw [← measureReal_sdiff_add_inter hPm, inter_eq_right.2 hsub, measureReal_def,
+      hnull, ENNReal.toReal_zero, zero_add]
+  -- the complement of `D` is `TT ∪ FF`
+  have hDc : Dᶜ = TT ∪ FF := by
+    ext r
+    simp only [hD, hTT, hFF, mem_compl_iff, mem_ofPred_eq, mem_union, ne_eq, eq_iff_iff,
+      not_not]
+    constructor
+    · intro h
+      by_cases h1 : 0 ≤ inner ℝ u r
+      · exact Or.inl ⟨h1, h.1 h1⟩
+      · right
+        refine ⟨lt_of_not_ge h1, lt_of_not_ge fun h2 => h1 (h.2 h2)⟩
+    · rintro (⟨h1, h2⟩ | ⟨h1, h2⟩)
+      · exact ⟨fun _ => h2, fun _ => h1⟩
+      · exact ⟨fun h => absurd h (not_le.2 h1), fun h => absurd h (not_le.2 h2)⟩
+  have hdisj : Disjoint TT FF := by
+    rw [Set.disjoint_left]
+    rintro r ⟨h1, _⟩ ⟨h3, _⟩
+    linarith
+  have htot : μ.real D + μ.real Dᶜ = 1 := by
+    rw [measureReal_add_measureReal_compl hDm, probReal_univ]
+  rw [hDc, measureReal_union hdisj hFFm, hTT_eq, hFF_eq] at htot
+  have hDval : μ.real D = arccos (inner ℝ u v) / π := by
+    rw [measureReal_def, stdGaussian_sign_ne hu hv,
+      ENNReal.toReal_ofReal (div_nonneg (arccos_nonneg _) hpi.le)]
+  rw [hDval, arccos_eq_pi_div_two_sub_arcsin] at htot
+  field_simp at htot ⊢
+  linarith
 
 end MathlibExt.Probability.Distributions.StdGaussianHyperplane
