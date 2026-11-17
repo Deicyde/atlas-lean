@@ -33,11 +33,11 @@ balancing", Chapter 20 of *Algorithmic Game Theory* (Nisan, Roughgarden, Tardos,
 Cambridge University Press 2007): the characterisation of pure Nash equilibria
 (Proposition 20.2) and the price-of-anarchy bound `2 - 2/(m+1)` (Theorem 20.5). The mixed
 equilibria studied in Koutsoupias and Papadimitriou's paper (expected makespan, the
-`Θ(log m / log log m)` bound of Theorem 20.12 and Czumaj–Vöcking) are not formalised.
+`Θ(log m / log log m)` bounds of Theorems 20.12 and 20.13) are not formalised.
 
 ## References
 
-* E. Koutsoupias, C. H. Papadimitriou, "Worst-case equilibria", STACS 1999, LNCS 1563,
+* E. Koutsoupias, C. H. Papadimitriou, "Worst-case equilibria", Proc. 16th STACS (1999),
   404–413 (not consulted directly; content as reported in the chapter below, Section 20.7).
 * B. Vöcking, "Selfish load balancing", in *Algorithmic Game Theory*, Cambridge University
   Press 2007, Chapter 20, Sections 20.1–20.2.
