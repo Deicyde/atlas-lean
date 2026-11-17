@@ -47,6 +47,8 @@ log-Sobolev constant of a finite chain are the best constants in $\lambda \opera
 - [Log-Sobolev constant of a finite Markov kernel](log-sobolev-constant.md)
 - [Log-Sobolev inequality with the log-Sobolev constant](log-sobolev-constant-mul-entropy-le.md)
 - [The log-Sobolev constant is at most half the spectral gap](two-mul-log-sobolev-constant-le-spectral.md)
+- [Expansion of the entropy functional near the constant `1`](entropy-one-add-mul-ge.md)
+- [Second-order expansion of `t log t` at `1`](abs-mul-log-one-add-sub-le.md)
 
 ## Forms on $L^2(X; m)$
 

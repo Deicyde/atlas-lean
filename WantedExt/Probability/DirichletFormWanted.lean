@@ -10,7 +10,6 @@ module
 
 public import Batteries.Util.ProofWanted
 public import MathlibExt.Probability.DirichletForm.QuasiRegular
-public import MathlibExt.Probability.DirichletForm.SpectralGap
 public import Mathlib.Probability.Distributions.Gaussian.Real
 public import Mathlib.Topology.MetricSpace.Polish
 
@@ -32,8 +31,6 @@ Central theorems of the theory of Dirichlet forms whose proofs are deferred.
   Röckner and Schmuland 1995, Theorem 0.1), here for symmetric forms on Polish spaces.
 * `tendsto_brownian_approximatingForm`: the Dirichlet form of linear Brownian motion is
   `½ ∫ f'²` (FOT, Example 4.2.1 and Lemma 1.3.4).
-* `two_mul_logSobolevConstant_le_spectralGap`: `2α ≤ λ` for finite chains (P. Diaconis and
-  L. Saloff-Coste, *Ann. Appl. Probab.* 6 (1996), Lemma 3.1).
 
 Hunt processes and right processes are not available in Mathlib. The two process-level theorems
 are therefore stated through opaque `def_wanted` predicates, `HasAssociatedHuntProcess` and
@@ -134,16 +131,5 @@ theorem_wanted tendsto_brownian_approximatingForm {f : ℝ → ℝ} (hf : ContDi
     (hfc : HasCompactSupport f) :
     Tendsto (fun t : ℝ≥0 => (t : ℝ)⁻¹ * ∫ x, f x * (f x - ∫ y, f (x + y) ∂gaussianReal 0 t))
       (𝓝[>] 0) (𝓝 (1 / 2 * ∫ x, deriv f x ^ 2))
-
-/-- **The log-Sobolev constant is at most half the spectral gap.** For a finite chain with
-stochastic matrix `P` and positive stationary probability vector `π`, `2 α(P, π) ≤ λ(P, π)`
-(P. Diaconis and L. Saloff-Coste, *Logarithmic Sobolev inequalities for finite Markov chains*,
-Ann. Appl. Probab. 6 (1996), Lemma 3.1, proved by expanding `L(1 + ε g)` to second order).
-Diaconis and Saloff-Coste work with irreducible chains; irreducibility is not assumed here (when
-every function has zero variance both constants are `0` by convention). -/
-theorem_wanted two_mul_logSobolevConstant_le_spectralGap {S : Type*} [Fintype S] [DecidableEq S]
-    {π : S → ℝ} (hπ : ∀ x, 0 < π x) (hπ1 : ∑ x, π x = 1) {P : Matrix S S ℝ}
-    (hP : P ∈ rowStochastic ℝ S) (hstat : π ᵥ* P = π) :
-    2 * logSobolevConstant π P ≤ spectralGap π P
 
 end MathlibExt.Probability.DirichletFormWanted

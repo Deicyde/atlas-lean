@@ -54,8 +54,8 @@ spectral gap.
 * `entropy_nonneg`, `logSobolevConstant_mul_entropy_le`: the log-Sobolev inequality
   `α L(f) ≤ E(f, f)`.
 
-The comparison `2α ≤ λ` (Diaconis and Saloff-Coste 1996, Lemma 3.1) is stated as a wanted
-theorem in `WantedExt/Probability/DirichletFormWanted.lean`.
+The comparison `2α ≤ λ` (Diaconis and Saloff-Coste 1996, Lemma 3.1) is proved in
+`MathlibExt.Probability.DirichletForm.LogSobolevGap`.
 
 ## References
 
