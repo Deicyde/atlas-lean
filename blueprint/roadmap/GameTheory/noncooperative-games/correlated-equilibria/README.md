@@ -41,6 +41,15 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 - [Aumann's correlated equilibrium of Chicken](chicken-ce-is-correlated-eq.md)
 - [Chicken's correlated equilibrium is not a product](chicken-ce-not-product.md)
 
+## Bayesian rationality
+
+Aumann (1987) derived correlated equilibrium from Bayesian decision theory: in a partition model with a common prior, where each player's action is part of the state of the world, if every player maximises expected payoff given its own information at every state, then the distribution of the action profile is a correlated equilibrium.
+
+- [Correlated equilibrium as an expression of Bayesian rationality](is-correlated-eq-of-is-bayes-rational.md)
+- [Bayes rationality](is-bayes-rational.md)
+- [Conditional expectation given a partition](cond-exp-cell.md)
+- [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md)
+
 ## Related topics
 
 - [Nash's theorem](../nash-s-theorem/README.md): mixed Nash equilibria, the product correlated equilibria.
@@ -53,3 +62,4 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 - [Conditional expectation given a partition](cond-exp-cell.md)
 - [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md)
 - [Correlated equilibrium as an expression of Bayesian rationality](is-correlated-eq-of-is-bayes-rational.md)
+- [Common knowledge and the agreement theorem](../common-knowledge-and-the-agreement-theorem/README.md): the partition model with a common prior that underlies Aumann's Bayesian view of correlated equilibrium.

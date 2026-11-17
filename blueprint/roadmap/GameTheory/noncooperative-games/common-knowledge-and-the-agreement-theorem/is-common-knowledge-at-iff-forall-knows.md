@@ -1,8 +1,23 @@
 # Common knowledge as iterated knowledge
 
-The event `E` is common knowledge at `ω`
-(it contains the cell of the meet that contains `ω`) if and only if, for every finite chain
-of agents `i₁, …, iₖ`, it is true at `ω` that `i₁` knows that `i₂` knows that … `iₖ` knows
-`E`. This is the equivalence of the formal and the informal definitions of common knowledge
-argued in Aumann 1976, p. 1237 (for two agents, via chains of cells that alternately belong
-to the two partitions); here the family of agents is arbitrary.
+An event $E$ is common knowledge at $\omega$ (it contains the meet cell of $\omega$) if and only
+if, for every finite sequence of agents $i_1, \dots, i_k$ (repetitions allowed, $k \ge 0$),
+$$\omega \in K_{i_1} K_{i_2} \cdots K_{i_k}(E),$$
+that is, at $\omega$ agent $i_1$ knows that agent $i_2$ knows that … agent $i_k$ knows $E$.
+
+The proof follows Aumann's argument: a state lies in the meet cell of $\omega$ exactly when it is
+reachable from $\omega$ by a finite chain of states in which consecutive states share a cell of
+some agent's partition, and that chain gives the sequence of agents.
+
+Compared with the source: Aumann argues the equivalence informally for two agents, with chains
+that alternate between the two partitions; here the family of agents is arbitrary.
+
+## Informally uses
+
+- [Common knowledge](is-common-knowledge-at.md): the formal definition through the meet.
+- [Iterated knowledge along a chain of agents](knows-chain.md): the event
+  $K_{i_1} \cdots K_{i_k}(E)$.
+
+## Sources
+
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, p. 1237 (the paragraph beginning "To see that the formal definition of 'common knowledge' is equivalent to the informal description").

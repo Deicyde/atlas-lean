@@ -1,7 +1,14 @@
 # Bayes rationality
 
-Player `i`, with information partition `r i`, is Bayes rational at
-`ω` under the action profile `s : Ω → ∀ i, S i` when, for every action `k` of `i`, the
-conditional expected cost `E(cost i (s) | 𝒫ⁱ)(ω)` is at most the conditional expected cost
-`E(cost i (s₋ᵢ, k) | 𝒫ⁱ)(ω)` of switching to `k` (Aumann 1987, §3, p. 7, in cost form: there
-`E(hⁱ(s) | 𝒫ⁱ)(ω) ≥ E(hⁱ(s₋ᵢ, σⁱ) | 𝒫ⁱ)(ω)` for payoffs `hⁱ`).
+In a partition model with prior $p$ on a finite set $\Omega$ of states, player $i$ has information
+partition $\mathcal P_i$ and plays $s_i(\omega)$ at the state $\omega$. Player $i$ is Bayes rational at
+$\omega$ when no action $k$ has a lower conditional expected cost given $i$'s information:
+$$\mathbb E\bigl[c_i(s) \mid \mathcal P_i\bigr](\omega) \le \mathbb E\bigl[c_i(k, s_{-i}) \mid \mathcal P_i\bigr](\omega)\quad\text{for every action } k.$$
+Aumann states the condition for payoffs $h_i = -c_i$, with the inequality reversed. On a null cell
+the conditional expectations are $0$ (Lean's $x/0 = 0$) and the condition holds trivially; on
+nonnull cells it is equivalent to the unnormalised inequality of
+[Bayes rationality without normalisation](is-bayes-rational-iff-sum.md).
+
+## Sources
+
+- R. J. Aumann, "Correlated equilibrium as an expression of Bayesian rationality", Econometrica 55(1) (1987), 1–18, §3, p. 7 (definition of Bayes rationality) and footnote 8 (conditional expectation given a partition).

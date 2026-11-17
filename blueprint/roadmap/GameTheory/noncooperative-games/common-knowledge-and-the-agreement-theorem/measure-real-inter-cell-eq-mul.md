@@ -1,7 +1,18 @@
 # The tower step of the agreement theorem
 
-Let `r` be finer than `s`. If the posterior of
-`A` for partition `r` equals `a` throughout the `s`-cell of `ω`, then
-`μ(A ∩ S) = a · μ(S)` for that cell `S`. This is the computation "`p(A ∩ Pⱼ) = q₁ p(Pⱼ)` for all
-`j`; hence, summing over `j`, `p(A ∩ P) = q₁ p(P)`" of Aumann 1976, p. 1237. No cell needs to
-be nonnull: on a null `r`-cell both sides vanish.
+Let $\mathcal P$ be finer than $\mathcal Q$, and let $Q$ be a cell of $\mathcal Q$. If the posterior of
+$A$ given $\mathcal P$ equals $a$ at every state of $Q$, then
+$$\mu(A \cap Q) = a\,\mu(Q).$$
+Indeed $Q$ is a disjoint union of cells $P_j$ of $\mathcal P$, on each of which
+$\mu(A \cap P_j) = a\,\mu(P_j)$; summing over $j$ gives the claim. No cell needs to be nonnull: on
+a null cell $P_j$ both sides vanish.
+
+## Informally uses
+
+- [Posterior probability](posterior.md): the hypothesis.
+- [Summing over the cells (equality)](sum-eq-zero-of-forall-sum-cell-eq-zero.md): the summation
+  over the cells of $\mathcal P$.
+
+## Sources
+
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, p. 1237 (proof of the Proposition: "$p(A \cap P_j) = q_1 p(P_j)$ for all $j$; hence by summing over $j$ we get $p(A \cap P) = q_1 p(P)$").

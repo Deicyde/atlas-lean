@@ -1,5 +1,25 @@
 # Common knowledge
 
-The event `E` is common knowledge at `ω` among agents with
-information partitions `r i` when `E` includes the cell of the meet `⨆ i, r i` (finest common
-coarsening) that contains `ω` (Aumann 1976, p. 1237, with footnote 6 for the meet).
+Let agents $i$ have information partitions $\mathcal P_i$ of $\Omega$, and let $\mathcal M$ be their
+meet, the finest partition that is coarser than every $\mathcal P_i$. An event $E$ is common
+knowledge at $\omega$ when $E$ contains the cell $M(\omega)$ of the meet that contains $\omega$.
+
+In Mathlib's order on equivalence relations ($r \le s$ when $r$ is finer than $s$), the meet in
+Aumann's sense is the supremum $\bigsqcup_i r_i$, and the Lean definition uses that supremum
+directly. The name "meet" refers to partitions ordered by refinement, where the order is reversed.
+
+## Informally uses
+
+- [Information cell](cell.md): the meet cell of the true state.
+
+## Background
+
+- [Common knowledge as iterated knowledge](is-common-knowledge-at-iff-forall-knows.md): the
+  equivalence with the informal definition "everyone knows that everyone knows that …".
+- [Epistemic logic](../../../Logic/modal-logic/epistemic-logic/README.md): the syntactic
+  counterpart, multi-agent S5 on Kripke models, whose accessibility relations play the role of
+  the partitions here.
+
+## Sources
+
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, p. 1237 (definition, for two agents) and footnote 6 (the meet as finest common coarsening).

@@ -25,3 +25,7 @@
 - [Agent 0 knows the coin is tails exactly at tails](sat-know-zero-not-atom.md)
 - [Agent 1 does not know that the coin is heads](muddy-not-know-one-p-true.md)
 - [Agent 1 knows that agent 0 knows whether the coin is heads](muddy-know-one-knows-whether.md)
+
+## Related topics
+
+- [Common knowledge and the agreement theorem](../../../GameTheory/noncooperative-games/common-knowledge-and-the-agreement-theorem/README.md): the semantic, event-based model of knowledge with information partitions, common knowledge as the meet of the partitions, and Aumann's agreement theorem.

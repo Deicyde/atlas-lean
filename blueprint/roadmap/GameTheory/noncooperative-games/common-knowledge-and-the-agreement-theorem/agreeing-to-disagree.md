@@ -1,8 +1,24 @@
 # Agreeing to disagree
 
-**Agreeing to disagree** (Aumann 1976, Theorem, p. 1236, and Proposition, p. 1237). Two
-agents with common prior `μ` and information partitions `r₁`, `r₂`: if at `ω` it is common
-knowledge that agent 1's posterior of `A` is `q₁` and agent 2's is `q₂` (the event is
-contained in the cell of the meet `r₁ ⊔ r₂` that contains `ω`), and that cell is not null,
-then `q₁ = q₂`. Aumann assumes instead that all cells of the join are nonnull, which implies
-the hypothesis used here.
+Two agents share a prior $\mu$ on a finite set $\Omega$ of states and have information partitions
+$\mathcal P_1, \mathcal P_2$. If at $\omega$ it is common knowledge that agent 1's posterior of $A$
+is $q_1$ and agent 2's is $q_2$ (the cell of the meet of $\mathcal P_1$ and $\mathcal P_2$ that
+contains $\omega$ lies in the event where the posteriors take these values), and that cell is not
+null, then $q_1 = q_2$.
+
+This is Aumann's theorem in his two-agent setting. His hypothesis that all cells of the join are
+nonnull implies the one used here, which concerns only the meet cell of $\omega$; the statement is
+therefore slightly stronger than the source.
+
+## Informally uses
+
+- [The tower step of the agreement theorem](measure-real-inter-cell-eq-mul.md): applied once for
+  each agent.
+
+## Background
+
+- [Agreement theorem](agreement.md): the same statement for any family of agents.
+
+## Sources
+
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, Theorem (p. 1236) and Proposition (p. 1237).

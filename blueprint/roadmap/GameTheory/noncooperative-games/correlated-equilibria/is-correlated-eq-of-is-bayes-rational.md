@@ -1,12 +1,36 @@
 # Correlated equilibrium as an expression of Bayesian rationality
 
-**Correlated equilibrium as an expression of Bayesian rationality** (Aumann 1987, Main
-Theorem, p. 7). Let `p` be a common prior on the finite state space `Ω`, `r i` the information
-partitions, and `s ω` the profile of actions at `ω`, each player knowing its own action
-(`r i ≤ Setoid.ker (s · i)`). If every player is Bayes rational at every state, then the
-distribution of `s`, `ψ(t) = p{ω | s ω = t}`, is a correlated equilibrium (`IsCorrelatedEq`
-with `ε = 0`).
+Let $p$ be a common prior on a finite set $\Omega$ of states, $\mathcal P_i$ the information
+partitions of the players of a finite game, and $s(\omega)$ the profile of actions at $\omega$,
+each player knowing its own action ($s_i$ is constant on the cells of $\mathcal P_i$). If every
+player is Bayes rational at every state, then the distribution of $s$,
+$$\psi(t) = p\{\omega : s(\omega) = t\},$$
+is a correlated equilibrium.
 
-The proof is Aumann's: for a deviation that depends only on the recommended action `j`, the
-Bayes-rationality inequalities on the cells of `𝒫ⁱ` inside `{sᵢ = j}` are summed over those
-cells.
+The proof is Aumann's: for player $i$, recommendation $j$ and deviation $k$, the event
+$\{s_i = j\}$ is a union of cells of $\mathcal P_i$; Bayes rationality on each such cell, multiplied
+by its probability and summed over the cells, is the correlated-equilibrium inequality.
+
+Statement and source agree, with costs in place of payoffs. The correlated equilibrium is in the
+sense of [Correlated equilibrium](is-correlated-eq.md) (the distributional definition of Hart and
+Mas-Colell, which is how Aumann's Main Theorem phrases its conclusion: "the distribution of the
+action $n$-tuple $s$ is a correlated equilibrium distribution"). The test file exhibits a public
+coin in a coordination game whose correlated equilibrium is not a product distribution.
+
+## Informally uses
+
+- [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md): the cell-wise
+  inequality.
+- [Summing over the cells (inequality)](../common-knowledge-and-the-agreement-theorem/sum-nonpos-of-forall-sum-cell-nonpos.md):
+  the summation over the cells of $\mathcal P_i$.
+
+## Background
+
+- [Agreement theorem](../common-knowledge-and-the-agreement-theorem/agreement.md): the same
+  partition model with a common prior.
+- [Nash equilibria are correlated equilibria](is-correlated-eq-product-dist.md): the case of
+  independent randomisation.
+
+## Sources
+
+- R. J. Aumann, "Correlated equilibrium as an expression of Bayesian rationality", Econometrica 55(1) (1987), 1–18, §3, Main Theorem and its proof (p. 7–8), and condition (2.2) of §2.

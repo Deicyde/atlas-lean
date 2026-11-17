@@ -1,14 +1,35 @@
 # Existence and uniqueness of the Shapley value
 
-On a fixed finite set of players there is
-exactly one linear map `φ` from TU games (`CoopGame`) to payoff vectors that is efficient
-(`IsEfficient`), symmetric (`IsSymmetric`) and gives nothing to null players
-(`SatisfiesNullPlayerAxiom`). The map constructed in the proof assigns to player `i` the sum,
-over the coalitions `T` containing `i`, of `c_T(v) / |T|`, where the `c_T(v)` are the
-coefficients of `v` in the basis of unanimity games (Möbius inversion).
+On a fixed finite set $N$ of players, there is exactly one linear map $\varphi$ from TU games on
+$N$ to payoff vectors in $\mathbb R^N$ that is
 
-This is an adapted, fixed-player-set form of Shapley's theorem (L. S. Shapley, "A value for
-n-person games", Contributions to the Theory of Games II, Ann. of Math. Stud. 28, Princeton
-Univ. Press, 1953, 307–317), with linearity in place of additivity and the null-player axiom
-made explicit; see the source-fidelity note at the top of this file. Axioms as summarised in
-Encyclopedia of Mathematics, "Shapley value" (secondary source).
+- efficient: $\sum_{i \in N} \varphi_i(v) = v(N)$;
+- symmetric: if a permutation $\sigma$ of $N$ leaves $v$ invariant, then $\varphi_{\sigma i}(v) = \varphi_i(v)$;
+- null for null players: if $v(S \cup \{i\}) = v(S)$ for every coalition $S$ not containing $i$, then $\varphi_i(v) = 0$.
+
+The proof writes $v$ in the basis of unanimity games $u_T(S) = [T \subseteq S]$ by Möbius
+inversion, $v = \sum_{T \neq \emptyset} c_T(v)\, u_T$, and shows that the axioms force
+$\varphi_i(u_T) = 1/|T|$ for $i \in T$ and $0$ otherwise; hence
+$\varphi_i(v) = \sum_{T \ni i} c_T(v)/|T|$. The classical formula
+$\varphi_i(v) = \sum_{S \not\ni i} \frac{|S|!\,(n - |S| - 1)!}{n!}\bigl(v(S \cup \{i\}) - v(S)\bigr)$ is
+not stated in the Lean file.
+
+Compared with the source: Shapley works with superadditive games on a universe of players with
+finite carriers and an additivity axiom; this is an adapted characterisation on a fixed finite
+player set, with linearity in place of additivity and the null-player axiom made explicit (see the
+source-fidelity note in `MathlibExt/GameTheory/ShapleyValue.lean`).
+
+## Informally uses
+
+- [Efficient value](is-efficient.md), [Symmetric value](is-symmetric.md) and
+  [Null player axiom](satisfies-null-player-axiom.md): the three axioms.
+
+## Background
+
+- [Bondareva–Shapley theorem](../bondareva-shapley-theorem/README.md): the core, the other
+  classical solution concept for TU games.
+
+## Sources
+
+- L. S. Shapley, "A value for n-person games", in Contributions to the Theory of Games II, Ann. of Math. Stud. 28, Princeton Univ. Press (1953), 307–317 (cited as in the module's source-fidelity note; not read for this page).
+- Encyclopedia of Mathematics, "Shapley value" (secondary source: the axioms of efficiency, symmetry and linearity), https://encyclopediaofmath.org/wiki/Shapley_value.
