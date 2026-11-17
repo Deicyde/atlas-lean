@@ -6991,6 +6991,8 @@
 "Cslib.CodingTheory.ReedSolomon.le_minDist_code": "86938d9425e45ae3",
 "Cslib.CodingTheory.ReedSolomon.minDist_code": "eafeac9c5efe6cf2",
 "Cslib.CodingTheory.ReedSolomon.minDist_code_eq_singleton": "05369f252d8648c5",
+"Cslib.CodingTheory.Shor.shorCodeword": "cc7d1de429338309",
+"Cslib.CodingTheory.ShorCodeWanted.shorCodeword_distance_three": "f0f0c9d5a303c5b4",
 "Cslib.CodingTheory.StabilizerCodeWanted.finrank_stabilizerCode": "210aa799580a93b9",
 "Cslib.CodingTheory.dotForm": "f9d2fcf655d8564e",
 "Cslib.CodingTheory.hammingDist_eq_hammingNorm_sub": "95ddc0ab73031ce2",

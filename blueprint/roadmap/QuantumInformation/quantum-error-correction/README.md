@@ -2,7 +2,7 @@
 
 Quantum error correction protects quantum information against noise by encoding it into a subspace of a larger system: quantum codes, the Knill–Laflamme conditions for correctability, and stabilizer and CSS codes.
 
-The topics follow the order of Preskill's lecture notes (Chapter 7): the Knill–Laflamme criterion for correctability, the bit-flip code as the first example, the distance of a code and the correction of $t$ errors by a code of distance $2t + 1$, the CSS construction from classical linear codes, and the stabilizer formalism, whose dimension formula is recorded as a wanted theorem. The threshold theorem for fault-tolerant computation (Preskill, Chapter 8; Aharonov and Ben-Or; Knill, Laflamme and Zurek; Kitaev) is not yet stated here: a faithful statement needs a model of noisy circuits.
+The topics follow the order of Preskill's lecture notes (Chapter 7): the Knill–Laflamme criterion for correctability, the bit-flip code as the first example, the distance of a code and the correction of $t$ errors by a code of distance $2t + 1$, the CSS construction from classical linear codes, and the stabilizer formalism, whose dimension formula is recorded as a wanted theorem. The threshold theorem for fault-tolerant quantum computation, the subject of Chapter 8 of the same notes, is not yet stated here: a faithful statement needs a model of noisy circuits.
 
 - [Knill–Laflamme conditions](knill-laflamme-conditions/README.md)
 - [Bit-flip and Shor codes](bit-flip-and-shor-codes/README.md)

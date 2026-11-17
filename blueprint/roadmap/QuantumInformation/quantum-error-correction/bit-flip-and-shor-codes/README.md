@@ -1,14 +1,16 @@
 # Bit-flip and Shor codes
 
-The three-qubit bit-flip code encodes one qubit as $a|0\rangle + b|1\rangle \mapsto a|000\rangle + b|111\rangle$. A single bit flip moves the code space to an orthogonal subspace, which the two-qubit parities $Z_1 Z_2$ and $Z_2 Z_3$ identify without disturbing the encoded state; the flipped qubit is then flipped back. The code does not protect against phase errors. Shor's nine-qubit code repeats a three-qubit cat state $\tfrac{1}{\sqrt 2}(|000\rangle \pm |111\rangle)$ three times, so that the inner blocks correct bit flips and the outer repetition corrects phase flips; it corrects an arbitrary error on any one qubit (Preskill, Section 7.1). Shor's code is not formalized here.
+The three-qubit bit-flip code encodes one qubit as $a|0\rangle + b|1\rangle \mapsto a|000\rangle + b|111\rangle$. A single bit flip moves the code space to an orthogonal subspace, which the two-qubit parities $Z_1 Z_2$ and $Z_2 Z_3$ identify without disturbing the encoded state; the flipped qubit is then flipped back. The code does not protect against phase errors. Shor's nine-qubit code repeats a three-qubit cat state $\tfrac{1}{\sqrt 2}(|000\rangle \pm |111\rangle)$ three times, so that the inner blocks correct bit flips and the outer repetition corrects phase flips; it corrects an arbitrary error on any one qubit (Preskill, Section 7.1).
 
-Here the bit-flip code is proved to correct the identity and the three single bit flips, by checking the Knill–Laflamme conditions.
+Here the bit-flip code is proved to correct the identity and the three single bit flips, by checking the Knill–Laflamme conditions. Shor's codewords are defined, and the statement that Shor's code has distance three is recorded as a wanted theorem.
 
 - [Code space of the three-qubit bit-flip code](code-projector.md)
 - [The code projector is an orthogonal projector](code-projector-is-proj.md)
 - [Single bit flips on three qubits](single-flip.md)
 - [Knill–Laflamme conditions for the bit-flip code](knill-laflamme-bit-flip.md)
 - [The three-qubit bit-flip code corrects any single bit flip](is-correctable-bit-flip.md)
+- [Codewords of Shor's nine-qubit code](shor-codeword.md)
+- [Shor's code has distance three](shor-codeword-distance-three.md)
 
 ## Related topics
 
@@ -18,4 +20,5 @@ Here the bit-flip code is proved to correct the identity and the three single bi
 
 ## Sources
 
-- J. Preskill, *Lecture Notes for Physics 229: Quantum Information and Computation*, Chapter 7 "Quantum Error Correction" (Caltech, 1998; https://www.preskill.caltech.edu/ph229/notes/chap7.pdf), Section 7.1, equation (7.2).
+- J. Preskill, *Lecture Notes for Physics 229: Quantum Information and Computation*, Chapter 7 "Quantum Error Correction" (Caltech, 1998; https://www.preskill.caltech.edu/ph229/notes/chap7.pdf), Section 7.1, equations (7.1)–(7.2).
+- D. Gottesman, *Stabilizer codes and quantum error correction*, PhD thesis, California Institute of Technology (1997), arXiv:quant-ph/9705052, Section 3.1.
