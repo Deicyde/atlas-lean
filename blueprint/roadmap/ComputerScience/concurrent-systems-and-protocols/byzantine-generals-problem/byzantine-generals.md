@@ -7,3 +7,7 @@ lieutenants. Then, whatever the traitors send, any two loyal lieutenants decide 
 and if $c$ is loyal, every loyal lieutenant decides $v$.
 
 This is Theorem 1 of Lamport–Shostak–Pease, applied to all the generals.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 3, Theorem 1, p. 390.

@@ -15,3 +15,7 @@ This is the theorem of Lamport, Shostak and Pease, proved by reduction to three 
 ## Related topics
 
 - [No synchronous protocol reaches Byzantine agreement when $3 \le n \le 3m$](../byzantine-agreement/not-solves-of-card-le-three-mul.md): the same bound for agreement with an input at every process, deduced from this one.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 2, the reduction of $3m$ or fewer generals to three ("Albanian generals"), pp. 385–386, and footnote 1 (three or more generals).

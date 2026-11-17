@@ -37,3 +37,8 @@ A commander sends an order to the other generals, some of whom, possibly includi
 ## Related topics
 
 - [Byzantine agreement](../byzantine-agreement/README.md): the version in which every process has an input (Fischer, Lynch and Merritt), reduced here to the commander version.
+- [Paxos consensus](../paxos-consensus/README.md): consensus without synchrony but with only crash failures; Lamport's non-Byzantine counterpart.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 1 (the problem, IC1 and IC2, p. 384), Section 2 (impossibility with oral messages, pp. 384–386, footnote 1 on two generals), Section 3 (assumptions A1–A3, Algorithm OM(m), Lemma 1 and Theorem 1, pp. 387–390).

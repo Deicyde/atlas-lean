@@ -7,3 +7,7 @@ $c \notin S$) and at most $k$ of the generals in $S \cup \{c\}$ are traitors, th
 traitors send, every loyal lieutenant $p \in S$ decides $v$.
 
 This is Lemma 1 of Lamport–Shostak–Pease.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 3, Lemma 1, p. 390.

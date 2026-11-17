@@ -18,3 +18,4 @@ The theorem of Fischer, Lynch and Paterson (1985): in an asynchronous message-pa
 - [Byzantine agreement](../byzantine-agreement/README.md): consensus in synchronous rounds, where crash faults are tolerable but Byzantine faults need $n > 3m$.
 - [Labelled transition systems](../../process-calculi/labelled-transition-systems/README.md): CSLib's model of an algorithm is a labelled transition system whose labels are message receipts.
 - [Synchronous consensus with crash failures](../synchronous-consensus-with-crash-failures/README.md): with synchrony consensus tolerates crashes, but $f$ crashes cost $f + 1$ rounds.
+- [Paxos consensus](../paxos-consensus/README.md): in this asynchronous crash-failure setting Paxos keeps safety (at most one value chosen) unconditionally and gives up guaranteed termination, as the theorem requires.

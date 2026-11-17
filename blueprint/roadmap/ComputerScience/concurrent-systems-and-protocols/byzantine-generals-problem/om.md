@@ -10,3 +10,7 @@ by recursion on $m$. Under $\mathrm{OM}(0)$, $p$ decides $r_p$. Under $\mathrm{O
 decides the majority of the multiset of values $w_q$ for $q \in S$, where $w_p = r_p$ and, for
 $q \ne p$, $w_q$ is the value $p$ decides under $\mathrm{OM}(m)$ when $q$, holding $r_q$ with the
 superiors $\sigma c$, sends it to the lieutenants $S \setminus \{q\}$.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 3, Algorithm OM(m), p. 388.
