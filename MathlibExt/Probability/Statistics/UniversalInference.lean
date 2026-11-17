@@ -39,7 +39,10 @@ two halves).
 Ratios are written multiplicatively in `ℝ≥0∞`: `T(θ) ≤ 1/α` is `L₀(θ̂₁) ≤ α⁻¹ * L₀(θ)` and
 `U > 1/α` is `α⁻¹ * L₀(θ̂₀) < L₀(θ̂₁)`. This fixes the convention `0/0 = 0` for the ratios
 (a parameter with `L₀(θ̂₁) = L₀(θ) = 0` is kept in the set, and the test does not reject when
-`L₀(θ̂₁) = L₀(θ̂₀) = 0`); such samples have probability zero under the true parameter. For the
+`L₀(θ̂₁) = L₀(θ̂₀) = 0`). The convention does not affect the coverage and type I error
+statements, for which it matters only on samples of probability zero under the true parameter;
+it does decide which other parameters belong to the set (when `L₀(θ̂₁) = 0`, every `θ` with
+`L₀(θ) = 0` is in it, which can happen with positive probability). For the
 test only the inequality `L₀(θ) ≤ L₀(θ̂₀)` for `θ ∈ Θ₀` is assumed, which every maximiser of the
 likelihood over `Θ₀` satisfies. The crossfit variants and the sequential (anytime-valid)
 version are not formalized here.

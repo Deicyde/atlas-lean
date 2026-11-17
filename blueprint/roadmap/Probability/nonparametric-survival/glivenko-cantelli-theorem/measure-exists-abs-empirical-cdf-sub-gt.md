@@ -7,7 +7,14 @@ $n + 1$ observations satisfies
 
 $$P\Bigl(\exists x \in \mathbb{R},\ \lvert F_{n+1}(x) - F(x) \rvert > \varepsilon\Bigr) \le 2 \exp\bigl(-2 (n + 1) \varepsilon^2\bigr).$$
 
-No continuity of $F$ is assumed. The event is $\sup_x \lvert F_{n+1}(x) - F(x) \rvert > \varepsilon$.
+No continuity of $F$ is assumed.
+
+This two-sided bound follows from Massart's one-sided Theorem 1 (see Sources) by a union bound
+over the two deviations. The upper deviation $\sup_x (F_N - F)$ is bounded with
+$\lambda = \sqrt N \varepsilon$. The lower deviation $\sup_x (F - F_N)$ is at most the upper
+deviation of the sample $-X_1, \dots, -X_N$ (compare left limits), so it obeys the same bound.
+When $\sqrt N \varepsilon < \sqrt{\log 2/2}$ the right-hand side exceeds $1$ and there is
+nothing to prove, so the restriction on $\lambda$ in Massart's Theorem 1 costs nothing. The event is $\sup_x \lvert F_{n+1}(x) - F(x) \rvert > \varepsilon$.
 The sample size is $N = n + 1$ because the statement reuses the empirical count of the
 Glivenko–Cantelli theorem, which counts the indices $0, \dots, n$; with $N$ in place of $n + 1$
 this is the usual $P(\lVert F_N - F \rVert_\infty > \varepsilon) \le 2 e^{-2 N \varepsilon^2}$.
@@ -29,9 +36,13 @@ the proof of their Theorem 2.4 (arXiv:1604.04173v2, Appendix A.1).
 ## Sources
 
 - P. Massart, *The tight constant in the Dvoretzky–Kiefer–Wolfowitz inequality*, Ann. Probab. 18
-  (1990) 1269–1283: the constant $2$, for every $\varepsilon > 0$. The paper itself was not
-  available to the author of this page, so no theorem number is given; the statement follows its
-  standard citation.
+  (1990) 1269–1283, Theorem 1. As stated on p. 2 of Reeve (below), it gives the one-sided bound
+  $P(\sup_x \sqrt N (F_N(x) - F(x)) > \lambda) \le e^{-2\lambda^2}$ for
+  $\lambda \ge \min\{\sqrt{\log 2 / 2},\ 1.0841\, N^{-1/6}\}$. Massart's paper was not read for
+  this page; the theorem number and statement are taken from Reeve.
+- H. W. J. Reeve, *A short proof of the Dvoretzky–Kiefer–Wolfowitz–Massart inequality*, arXiv:2403.16651v1 (25 March 2024), p. 2 and Corollary 2. Corollary 2 is the one-sided bound $e^{-2\xi^2}$
+  (indeed slightly smaller) for every $\xi \ge 0$, for independent $X_1, \dots, X_N$ with an
+  arbitrary distribution function $F$. This is the source read.
 - A. Dvoretzky, J. Kiefer and J. Wolfowitz, *Asymptotic minimax character of the sample
   distribution function and of the classical multinomial estimator*, Ann. Math. Statist. 27 (1956)
   642–669: the inequality with an unspecified constant.

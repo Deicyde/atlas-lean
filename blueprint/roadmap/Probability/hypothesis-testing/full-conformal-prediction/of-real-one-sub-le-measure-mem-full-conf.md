@@ -22,7 +22,7 @@ endpoint $\alpha = 0$ (the set is all of $\mathcal Y$) is a trivial case.
 
 ## Background
 
-- [Validity of permutation p-values](../permutation-tests/is-valid-pvalue-permutation-pvalue.md): the split conformal bound is itself the validity of the permutation p-value of the test score; $1 - \pi(Y_{n+1})$ in Lei et al. plays the role of that p-value.
+- [Validity of permutation p-values](../permutation-tests/is-valid-pvalue-permutation-pvalue.md): the split conformal bound is itself the validity of the permutation p-value of the test score, $\#\{i \le n+1 : R_i \ge R_{n+1}\}/(n+1)$, which equals $1 - \pi(Y_{n+1}) + 1/(n+1)$ when there are no ties.
 
 ## Sources
 

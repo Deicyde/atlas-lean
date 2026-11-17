@@ -9,7 +9,10 @@ $$C = \bigl\{\theta : q_{\theta_1}(y) \le \alpha^{-1} q_\theta(y)\bigr\},$$
 that is, $\{\theta : T(\theta) \le 1/\alpha\}$ with the split likelihood ratio statistic
 $T(\theta) = \mathcal L_0(\hat\theta_1)/\mathcal L_0(\theta)$ of equation (3). Ratios are written without division: $T(\theta) \le 1/\alpha$ is
 $\mathcal L_0(\hat\theta_1) \le \alpha^{-1} \mathcal L_0(\theta)$ in $[0, \infty]$. This fixes the
-convention $0/0 = 0$, which matters only on samples of probability zero under the true parameter.
+convention $0/0 = 0$. The convention does not affect the coverage and type I error statements:
+for them it matters only on samples of probability zero under the true parameter. It does decide
+which other parameters belong to the set. When $\mathcal L_0(\hat\theta_1) = 0$, every $\theta$ with
+$\mathcal L_0(\theta) = 0$ is in the set, and this can happen with positive probability.
 
 ## Sources
 

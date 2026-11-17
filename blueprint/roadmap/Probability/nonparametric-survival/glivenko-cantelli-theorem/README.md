@@ -1,6 +1,6 @@
 # Glivenko–Cantelli theorem
 
-The empirical distribution function $F_N(x) = \#\{i \le N : X_i \le x\}/N$ of an i.i.d. sample
+The empirical distribution function $F_N(x) = \#\{1 \le i \le N : X_i \le x\}/N$ of an i.i.d. sample $X_1, \dots, X_N$
 estimates the distribution function $F$ with no assumption on $F$. The Glivenko–Cantelli theorem
 says that $\sup_x \lvert F_N(x) - F(x) \rvert \to 0$ almost surely. The Dvoretzky–Kiefer–Wolfowitz
 inequality makes this quantitative and non-asymptotic:

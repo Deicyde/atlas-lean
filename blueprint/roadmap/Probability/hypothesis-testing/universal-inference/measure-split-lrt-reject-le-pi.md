@@ -12,9 +12,10 @@ $$\sup_{\theta^* \in \Theta_0} P_{\theta^*}\bigl(U_n > 1/\alpha\bigr) \le \alpha
 The test applies to irregular models, such as testing the number of components of a Gaussian
 mixture, where the ordinary likelihood ratio statistic has no tractable limit. The crossfit
 version, which averages $U_n$ with the statistic obtained by swapping the two halves, satisfies the
-same bound by the same argument but is not formalized here. Ratios are written without division: $T(\theta) \le 1/\alpha$ is
-$\mathcal L_0(\hat\theta_1) \le \alpha^{-1} \mathcal L_0(\theta)$ in $[0, \infty]$. This fixes the
-convention $0/0 = 0$, which matters only on samples of probability zero under the true parameter.
+same bound by the same argument but is not formalized here. The ratio is written without division: $U_n > 1/\alpha$ is
+$\alpha^{-1} \mathcal L_0(\hat\theta_0) < \mathcal L_0(\hat\theta_1)$ in $[0, \infty]$. This fixes the
+convention $0/0 = 0$ (no rejection when both likelihoods vanish), which matters for the type I
+error only on samples of probability zero under the true parameter.
 
 ## Informally uses
 
