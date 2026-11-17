@@ -13,3 +13,4 @@ The empirical measures $L_n = \frac1n \sum_{i<n} \delta_{X_i}$ of an i.i.d. samp
 - [Donsker–Varadhan variational formula](../../../InformationTheory/information-inequalities/donsker-varadhan-variational-formula/README.md)
 - [Contraction principle](../contraction-principle/README.md)
 - [Cramér's theorem](../cram-r-s-theorem/README.md)
+- [Ben Arous–Guionnet large deviations](../ben-arous-guionnet-large-deviations/README.md)
