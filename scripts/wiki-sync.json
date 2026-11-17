@@ -25699,6 +25699,8 @@
 "MathlibExt.LinearAlgebra.KernelsLemmaWanted.supIndep_ker_aeval_of_pairwise_isCoprime": "43e4203bf36e1fa6",
 "MathlibExt.LinearAlgebra.LidskiiInequalityWanted.LinearAlgebra.lidskii_inequality": "ed6c19cc8e12b8df",
 "MathlibExt.LinearAlgebra.LidskiiWanted.LinearAlgebra.lidskii_last": "606b4d1d3d2184e1",
+"MathlibExt.LinearAlgebra.Matrix.ArakiLiebThirringWanted.araki_lieb_thirring": "33ea46c3e85bd32c",
+"MathlibExt.LinearAlgebra.Matrix.ArakiLiebThirringWanted.araki_lieb_thirring_of_le_one": "e7e2f97dd2b590d1",
 "MathlibExt.LinearAlgebra.Matrix.CholeskyNoGrowth.sum_abs_mul_abs_le_of_diag_le": "9f8e4efcc10839dd",
 "MathlibExt.LinearAlgebra.Matrix.CholeskyNoGrowth.sum_abs_mul_abs_le_sqrt_mul_sqrt": "6dbf9081a9927e5d",
 "MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.circulantEigenvalue": "0c75641f2292c18b",

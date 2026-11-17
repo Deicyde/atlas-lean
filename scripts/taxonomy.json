@@ -6323,6 +6323,7 @@
   "WantedExt/InformationTheory/StrongDataProcessingWanted": {"to": "InformationTheory/information-inequalities", "title": "Strong data processing and Dobrushin's coefficient"},
   "WantedExt/LinearAlgebra/LidskiiInequalityWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lidskii's eigenvalue inequality"},
   "WantedExt/LinearAlgebra/LidskiiWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lidskii's eigenvalue inequality"},
+  "WantedExt/LinearAlgebra/Matrix/ArakiLiebThirringWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Araki–Lieb–Thirring inequality"},
   "WantedExt/LinearAlgebra/Matrix/GoldenThompsonWanted": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Golden–Thompson inequality"},
   "WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted": {"to": "LinearAlgebra/eigenvalues-and-canonical-forms", "title": "Eigenvalues of the inverse matrix"},
   "WantedExt/LinearAlgebra/Matrix/JacobiDetDerivativeWanted": {"to": "LinearAlgebra/determinants-and-matrix-identities", "title": "Jacobi's formula"},

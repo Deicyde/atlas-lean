@@ -16,6 +16,8 @@ Positive definite and semidefinite matrices, criteria for definiteness, and ineq
 - [Golden–Thompson equality for commuting matrices](trace-exp-add-of-commute.md)
 - [Golden–Thompson inequality for commuting matrices](golden-thompson-of-commute.md)
 - [The right side of Golden–Thompson is a nonnegative real](trace-exp-mul-exp-nonneg.md)
+- [Araki–Lieb–Thirring inequality](araki-lieb-thirring.md)
+- [Araki–Lieb–Thirring inequality, reversed range](araki-lieb-thirring-of-le-one.md)
 
 ## Related topics
 
