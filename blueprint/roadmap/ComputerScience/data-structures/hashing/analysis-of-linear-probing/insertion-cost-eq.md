@@ -13,7 +13,7 @@ statement indexes the cost by the number $k - 1$ of items already present.
 
 This is a wanted statement: the proof (through the probability $P(N, k, m)$ that the $k$-th item
 needs $m$ comparisons, Theorem 1 of the note, and Abel's generalized binomial theorem) is not
-formalized. The formula has been checked against the definition by computer for $N = 3, 4, 5$ and all $k \le N$; the Lean tests verify
+formalized. The Lean tests verify
 the instance $N = 5$, $k = 4$.
 
 ## Informally uses
