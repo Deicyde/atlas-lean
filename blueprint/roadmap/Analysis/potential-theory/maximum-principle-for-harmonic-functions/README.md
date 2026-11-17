@@ -1,0 +1,43 @@
+# Maximum principle for harmonic functions
+
+The maximum principle is the first structural property of harmonic functions in the classical
+theory of Laplace's equation, and the reason the Dirichlet problem is well posed. On a bounded open
+set $U \subseteq \mathbb{R}^n$, a function $u \in C^2(U) \cap C(\overline U)$ with
+$\Delta u \ge 0$ attains its maximum over $\overline U$ on $\partial U$ (weak maximum principle);
+for harmonic $u$ the same holds for the minimum, so two solutions of $-\Delta u = f$ with the same
+boundary values coincide. On a connected $U$, an interior maximum forces a harmonic function to be
+constant (strong maximum principle), a consequence of the mean-value property: a $C^2$ function is
+harmonic exactly when its average over every ball $\overline{B}(x, r) \subseteq U$ equals $u(x)$.
+
+Here the weak maximum and minimum principles and uniqueness for the Dirichlet problem are proved,
+in any finite-dimensional real inner product space and for Mathlib's harmonic functions
+(`InnerProductSpace.HarmonicOnNhd`), by the perturbation argument: $u + \varepsilon |x|^2$ has
+positive Laplacian, while the Laplacian of a $C^2$ function is nonpositive at an interior maximum.
+The mean-value property in dimension $n$ and the strong maximum principle are recorded as wanted;
+Mathlib has the planar mean-value property through circle averages.
+
+- [Second derivative along a line](iterated-fderiv-two-apply-eq-deriv-deriv.md)
+- [Nonpositive second derivatives at a local maximum](iterated-fderiv-two-nonpos-of-is-local-m.md)
+- [The Laplacian is nonpositive at an interior maximum](laplacian-nonpos-of-is-local-max.md)
+- [Laplacian of the squared norm](laplacian-norm-sq.md)
+- [Weak maximum principle for subharmonic functions](exists-mem-frontier-is-max-on-of-laplaci.md)
+- [Weak maximum principle for harmonic functions](exists-mem-frontier-is-max-on-of-harmoni.md)
+- [Weak minimum principle for harmonic functions](exists-mem-frontier-is-min-on-of-harmoni.md)
+- [Uniqueness for the Dirichlet problem for Poisson's equation](eq-on-closure-of-neg-laplacian-eq.md)
+- [Mean-value property of harmonic functions, and its converse](harmonic-on-nhd-iff-forall-average-close.md)
+- [Strong maximum principle for harmonic functions](eq-on-closure-of-is-max-on-harmonic-on-n.md)
+
+## Related topics
+
+- [Subharmonic functions](../subharmonic-functions/README.md): subharmonicity through the
+  sub-mean-value property, the setting in which the maximum principle extends beyond $C^2$.
+- [Fundamental solutions of the Laplacian](../fundamental-solutions-of-the-laplacian/README.md):
+  the explicit harmonic functions behind Green's representation and the mean-value formulas.
+- [Heat equation](../../partial-differential-equations/heat-equation/README.md): the parabolic
+  maximum principle on space-time cylinders, proved by the same perturbation argument.
+- [Weak solutions of elliptic equations](../../partial-differential-equations/weak-solutions-of-elliptic-equations/README.md):
+  existence for the Dirichlet problem in $H^1_0(U)$, complementing the uniqueness proved here for
+  classical solutions.
+- [Viscosity solutions of Hamilton–Jacobi equations](../../partial-differential-equations/viscosity-solutions-of-hamilton-jacobi-equations/README.md):
+  comparison principles for nonlinear equations, which extend the maximum-principle argument
+  (touching from above at a maximum) to merely continuous solutions.

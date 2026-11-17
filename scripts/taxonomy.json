@@ -65,7 +65,7 @@
      {"slug": "several-complex-variables", "title": "Several complex variables", "description": "Holomorphic functions on C^n: Hartogs extension and separate analyticity, Weierstrass preparation, complex Hessians."},
      {"slug": "analytic-function-spaces", "title": "Spaces of analytic functions", "description": "Hardy, Bergman, Dirichlet and Fock spaces and their reproducing kernels, H^∞, boundary behaviour (Fatou, F. and M. Riesz), cyclicity and polynomial density."}
     ]},
-    {"slug": "potential-theory", "title": "Potential theory", "description": "Harmonic and subharmonic functions in the plane and in R^n, harmonic conjugates, the Newton and logarithmic potentials and fundamental solutions of the Laplacian.", "msc": ["31A", "31B"], "subfields": []},
+    {"slug": "potential-theory", "title": "Potential theory", "description": "Harmonic and subharmonic functions in the plane and in R^n, the maximum principle, harmonic conjugates, the Newton and logarithmic potentials and fundamental solutions of the Laplacian.", "msc": ["31A", "31B"], "subfields": []},
     {"slug": "harmonic-analysis", "title": "Harmonic analysis", "description": "Fourier series, the Fourier transform on R^n, Fourier analysis on finite groups and the Boolean cube, wavelets and multiscale analysis, singular integrals, and other integral transforms and moment problems.", "msc": ["42A", "42B", "42C40", "43A", "44A"], "subfields": [
      {"slug": "fourier-series", "title": "Fourier series", "description": "Fourier series on the circle and torus: Fejér and Dirichlet kernels, pointwise and Cesàro convergence, Riemann–Lebesgue, uniqueness, absolutely convergent series and Wiener's theorems, periodic convolution, Fourier optimization on the torus."},
      {"slug": "fourier-transform", "title": "Fourier transform and uncertainty principles", "description": "The Fourier transform on R^n and Schwartz functions: convolution, Bochner, Hausdorff–Young, Heisenberg and fractal uncertainty, band-limited functions and Bernstein inequalities, sampling and Fourier interpolation, Kakeya sets, Beurling–Ahlfors and other singular integrals."},
@@ -2116,6 +2116,7 @@
   "MathlibExt/Analysis/Optimization/LineSearch": {"to": "Analysis/numerical-analysis", "title": "Line search methods"},
   "MathlibExt/Analysis/Optimization/QuasiNewton": {"to": "Analysis/numerical-analysis", "title": "Quasi-Newton methods"},
   "MathlibExt/Analysis/Optimization/TrustRegion": {"to": "Analysis/numerical-analysis", "title": "Trust-region methods"},
+  "MathlibExt/Analysis/PDE/LaplaceMaximumPrinciple": {"to": "Analysis/potential-theory", "title": "Maximum principle for harmonic functions"},
   "MathlibExt/Analysis/PDE/WeakSolutions": {"to": "Analysis/partial-differential-equations", "title": "Weak solutions of elliptic equations"},
   "MathlibExt/Analysis/PathSignature/Basic": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Signature of a path"},
   "MathlibExt/Analysis/PathSignature/LinearCDE": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Signature of a path"},
@@ -5141,6 +5142,7 @@
   "WantedExt/Analysis/Optimization/FletcherReevesWanted": {"to": "Analysis/numerical-analysis", "title": "Nonlinear conjugate gradient methods"},
   "WantedExt/Analysis/Optimization/TrustRegionWanted": {"to": "Analysis/numerical-analysis", "title": "Trust-region methods"},
   "WantedExt/Analysis/PDE/EllipticRegularityWanted": {"to": "Analysis/partial-differential-equations", "title": "Weak solutions of elliptic equations"},
+  "WantedExt/Analysis/PDE/LaplaceMeanValueWanted": {"to": "Analysis/potential-theory", "title": "Maximum principle for harmonic functions"},
   "WantedExt/Analysis/PathSignature/ExtensionTheoremWanted": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Rough paths and the extension theorem"},
   "WantedExt/Analysis/PathSignature/TreeLikeWanted": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Tree-like paths and uniqueness of the signature"},
   "WantedExt/Analysis/PathSignature/UniversalApproximationWanted": {"to": "Analysis/rough-paths-and-path-signatures", "title": "Signature of a path"},
