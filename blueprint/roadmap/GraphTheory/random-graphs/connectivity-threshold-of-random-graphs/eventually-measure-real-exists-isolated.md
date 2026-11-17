@@ -1,10 +1,10 @@
 # Isolated vertices are rare beyond `e^{-c}`
 
-If $p_n = (\log n + c)/n$ for all large $n$, then for every $\delta > 0$, for all large $n$,
+If $n p_n - \log n \to c$, for instance $p_n = (\log n + c)/n$, then for every $\delta > 0$, for all large $n$,
 
 $$\Pr[G(n, p_n) \text{ has an isolated vertex}] \le e^{-c} + \delta.$$
 
-This is the first-moment method: the probability is at most the expected number of isolated vertices, which tends to $e^{-c}$. The true limit, $1 - e^{-e^{-c}}$, is smaller than $e^{-c}$; it is the wanted [Poisson statement](tendsto-measure-real-no-isolated.md).
+This is the first-moment method: the probability is at most the expected number of isolated vertices, which tends to $e^{-c}$. The true limit, $1 - e^{-e^{-c}}$, is smaller than $e^{-c}$; it is the wanted [Poisson statement](tendsto-measure-real-no-isolated.md), Theorem 3.1 (ii) of the source.
 
 ## Informally uses
 
@@ -13,4 +13,4 @@ This is the first-moment method: the probability is at most the expected number 
 
 ## Sources
 
-- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), proof of Theorem 4.1.
+- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), Section 3.1.

@@ -4,9 +4,9 @@ In the binomial random graph $G(n, p)$, take $p = (\log n + c)/n$ with $c$ a fix
 
 $$\Pr[G(n, p) \text{ is connected}] \to e^{-e^{-c}} \qquad (n \to \infty),$$
 
-as proved by Erdős and Rényi (1959). The proof has two parts. First, the number $X$ of isolated vertices has mean $n(1-p)^{n-1} \to e^{-c}$ and is asymptotically Poisson, so $\Pr[X = 0] \to e^{-e^{-c}}$. Second, with high probability $G(n, p)$ has no component with between $2$ and $n/2$ vertices, so it is connected exactly when $X = 0$. As $c$ runs over $\mathbb{R}$ this describes the whole window. For $p = (\log n + \omega(n))/n$ with $\omega(n) \to \infty$ the graph is connected with high probability; for $\omega(n) \to -\infty$ it is disconnected with high probability.
+as proved by Erdős and Rényi (1959). The proof has two parts. First, the number $X$ of isolated vertices has mean $n(1-p)^{n-1} \to e^{-c}$ and is asymptotically Poisson; this holds whenever $np - \log n \to c$, so $\Pr[X = 0] \to e^{-e^{-c}}$. Second, with high probability $G(n, p)$ has no component with between $2$ and $n/2$ vertices, so it is connected exactly when $X = 0$. As $c$ runs over $\mathbb{R}$ this describes the whole window. For $p = (\log n + \omega(n))/n$ with $\omega(n) \to \infty$ the graph is connected with high probability; for $\omega(n) \to -\infty$ it is disconnected with high probability.
 
-The exact probability that a given vertex is isolated, the first-moment bound and the limit of the first moment are proved. The Poisson limit and the connectivity limit are wanted statements. $G(n, p)$ is the [graph of a random set of pairs](../../graph-ramsey-theory/graph-ramsey-numbers/pair-graph.md), each pair kept independently with probability $p$, as in the [threshold for triangles](../threshold-for-triangles/README.md). Hypotheses of the form "$p_n = (\log n + c)/n$ for all large $n$" are satisfiable for every $c$.
+The exact probability that a given vertex is isolated, the first-moment bound and the limit of the first moment are proved. The Poisson limit and the connectivity limit are wanted statements. $G(n, p)$ is the [graph of a random set of pairs](../../graph-ramsey-theory/graph-ramsey-numbers/pair-graph.md), each pair kept independently with probability $p$, as in the [threshold for triangles](../threshold-for-triangles/README.md). The hypotheses used, $p_n = (\log n + c)/n$ for all large $n$ or more generally $n p_n - \log n \to c$, are satisfiable for every $c$.
 
 - [Connectivity threshold of `G(n, p)` (Erdős–Rényi)](tendsto-measure-real-connected.md)
 - [No isolated vertex at the connectivity threshold (Erdős–Rényi)](tendsto-measure-real-no-isolated.md)
@@ -17,6 +17,7 @@ The exact probability that a given vertex is isolated, the first-moment bound an
 - [Isolation is avoidance of the pairs at a vertex](set-of-isolated-eq-avoid-event.md)
 - [Pairs at a vertex](pairs-at.md)
 - [The threshold probabilities exist](exists-prob-eventually-eq.md)
+- [The exact threshold sequence satisfies `n pₙ - log n → c`](tendsto-mul-sub-log-of-eventually-eq.md)
 
 ## Related topics
 

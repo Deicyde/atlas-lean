@@ -20,13 +20,15 @@ mean `e^{-c}`, and with high probability `G(n, p)` has no component of order bet
 `n/2`, so `G(n, p)` is connected exactly when it has no isolated vertex and
 `P(G(n, p) is connected) → e^{-e^{-c}}` (P. Erdős and A. Rényi, "On random graphs I", *Publ.
 Math. Debrecen* 6 (1959); A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge
-University Press 2016, Theorem 4.1 and its proof, which states the `G(n, p)` form used here).
+University Press 2016, Theorem 3.1 (ii) for the Poisson limit, and Theorem 4.1 with its proof,
+which states the `G(n, p)` form used here).
 The first moment of the isolated-vertex count is proved in
 `MathlibExt.Combinatorics.SimpleGraph.RandomGraphIsolatedVertices`.
 
 `G(n, p)` is `pairGraph ω` for `ω` drawn from `randomSubsetLaw` with constant probability `p`.
 The hypothesis `pₙ = (log n + c)/n` for all large `n` is satisfiable for every real `c`
-(`RandomGraphIsolatedVertices.exists_prob_eventually_eq`).
+(`RandomGraphIsolatedVertices.exists_prob_eventually_eq`), and implies `n pₙ - log n → c`
+(`RandomGraphIsolatedVertices.tendsto_mul_sub_log_of_eventually_eq`).
 -/
 
 @[expose] public section
@@ -37,14 +39,14 @@ open MeasureTheory Filter Topology unitInterval
 
 namespace MathlibExt.Combinatorics.SimpleGraph.RandomGraphConnectivityWanted
 
-/-- **No isolated vertex at the connectivity threshold (Erdős–Rényi).** If `pₙ = (log n + c)/n`
-for all large `n`, then `P(G(n, pₙ) has no isolated vertex) → e^{-e^{-c}}`: the number of isolated
-vertices converges in distribution to a Poisson law of mean `e^{-c}` (Frieze and Karoński,
-*Introduction to Random Graphs*, 2016, proof of Theorem 4.1; the first moment
+/-- **No isolated vertex at the connectivity threshold (Erdős–Rényi).** If `n pₙ - log n → c`,
+then `P(G(n, pₙ) has no isolated vertex) → e^{-e^{-c}}`: the number of isolated vertices converges
+in distribution to a Poisson law of mean `e^{-c}` (Frieze and Karoński, *Introduction to Random
+Graphs*, 2016, Theorem 3.1 (ii) and (3.2) with `k = 0`; the first moment
 `n (1 - pₙ)^{n-1} → e^{-c}` is
 `MathlibExt.Combinatorics.SimpleGraph.RandomGraphIsolatedVertices.tendsto_mul_one_sub_pow`). -/
 theorem_wanted tendsto_measureReal_no_isolated (c : ℝ) (p : ℕ → I)
-    (hp : ∀ᶠ n : ℕ in atTop, (p n : ℝ) = (Real.log n + c) / n) :
+    (hp : Tendsto (fun n : ℕ => (n : ℝ) * p n - Real.log n) atTop (𝓝 c)) :
     Tendsto (fun n : ℕ => (randomSubsetLaw (fun _ : Pair n => p n)).real
       {ω | ∀ v, ∃ w, (pairGraph ω).Adj v w}) atTop (𝓝 (Real.exp (-Real.exp (-c))))
 

@@ -4,4 +4,4 @@ For an indicator $\omega$ of a set of pairs of vertices of $\{0, \dots, n-1\}$, 
 
 ## Sources
 
-- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), proof of Theorem 4.1, where an isolated vertex is a component of order one.
+- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), Section 3.1, the indicator $I_v$ of an isolated vertex.

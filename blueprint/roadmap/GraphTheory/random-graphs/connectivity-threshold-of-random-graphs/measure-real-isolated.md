@@ -13,4 +13,4 @@ The vertex $v$ is isolated exactly when none of the $n - 1$ pairs containing it 
 
 ## Sources
 
-- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), proof of Theorem 4.1.
+- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), Section 3.1: $\mathbb{E} X_0 = \sum_v \mathbb{E} I_v = n(1-p)^{n-1}$, in (3.3).

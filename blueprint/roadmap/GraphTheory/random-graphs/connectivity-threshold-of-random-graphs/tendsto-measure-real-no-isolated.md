@@ -1,6 +1,6 @@
 # No isolated vertex at the connectivity threshold (Erdős–Rényi)
 
-Let $c \in \mathbb{R}$ and let $p_n \in [0, 1]$ satisfy $p_n = (\log n + c)/n$ for all large $n$. Then
+Let $c \in \mathbb{R}$ and let $p_n \in [0, 1]$ satisfy $n p_n - \log n \to c$, for instance $p_n = (\log n + c)/n$. Then
 
 $$\Pr[G(n, p_n) \text{ has no isolated vertex}] \to e^{-e^{-c}}.$$
 
@@ -13,4 +13,4 @@ The number of isolated vertices converges in distribution to a Poisson law with 
 
 ## Sources
 
-- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), proof of Theorem 4.1.
+- A. Frieze and M. Karoński, *Introduction to Random Graphs*, Cambridge University Press (2016), Theorem 3.1 (ii) and (3.2) with $k = 0$; the proof there uses the method of moments.
