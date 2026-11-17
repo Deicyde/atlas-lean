@@ -5,6 +5,7 @@ The $n$-qubit Pauli operators $X^a Z^b$ ($a, b \in \mathbb{F}_2^n$) form a basis
 Here "distance at least $d$" is defined with the Pauli operators of [CSS codes](../css-codes/README.md), and the correction of $t$ errors is proved from the sufficiency of the Knill–Laflamme conditions. The quantum Singleton bound $n - k \ge 2(d - 1)$ (Preskill, equation (7.103)) is recorded as a wanted theorem.
 
 - [Weight of a Pauli operator](pauli-weight.md)
+- [Pauli weight as a Hamming norm](pauli-weight-eq-hamming-norm.md)
 - [Product of two Pauli operators](conj-transpose-pauli-mul-pauli.md)
 - [Weight of a product of Pauli operators](pauli-weight-add-le.md)
 - [Distance of a quantum code (lower bound)](has-distance-at-least.md)

@@ -10,6 +10,7 @@ module
 
 public import CSLibExt.Coding.CSSCode
 public import MathlibExt.QuantumInformation.Finite.KnillLaflamme
+public import Mathlib.InformationTheory.Hamming
 
 /-!
 # Distance of a quantum code
@@ -91,6 +92,18 @@ nontrivially, that is with `a i ≠ 0` or `b i ≠ 0` (J. Preskill, Ph219 lectur
 Section 7.2: "the weight is the number of qubits acted on by a nontrivial Pauli matrix"). -/
 def pauliWeight (a b : Fin n → ZMod 2) : ℕ :=
   (Finset.univ.filter fun i => a i ≠ 0 ∨ b i ≠ 0).card
+
+/-- **Pauli weight as a Hamming norm.** The weight of `X^a Z^b` is the Hamming norm (number of
+nonzero entries) of the vector `i ↦ (a i, b i)` over `F₂ × F₂`, the symplectic representation of
+the Pauli operator up to phase (J. Preskill, Ph219 lecture notes, Chapter 7, Section 7.9.2). -/
+theorem pauliWeight_eq_hammingNorm (a b : Fin n → ZMod 2) :
+    pauliWeight a b = hammingNorm fun i => (a i, b i) := by
+  classical
+  unfold pauliWeight hammingNorm
+  congr 1
+  ext i
+  simp only [Finset.mem_filter, Finset.mem_univ, true_and, ne_eq, Prod.ext_iff, Prod.fst_zero,
+    Prod.snd_zero, not_and_or]
 
 /-- **Weight of a product of Pauli operators.** The Pauli operator `X^{a + a'} Z^{b + b'}`, the
 product of `X^a Z^b` and `X^{a'} Z^{b'}` up to a sign, has weight at most the sum of their

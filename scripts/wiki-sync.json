@@ -6969,6 +6969,7 @@
 "Cslib.CodingTheory.QuantumCode.isCorrectable_of_hasDistanceAtLeast": "fd50b58833457143",
 "Cslib.CodingTheory.QuantumCode.pauliWeight": "12e9f507d4bab011",
 "Cslib.CodingTheory.QuantumCode.pauliWeight_add_le": "fdce9dcecdf19779",
+"Cslib.CodingTheory.QuantumCode.pauliWeight_eq_hammingNorm": "d615fa7c4f225e83",
 "Cslib.CodingTheory.QuantumSingletonWanted.quantum_singleton_bound": "d7c2327a656a6a1c",
 "Cslib.CodingTheory.ReedSolomon.IsKeySolution": "f4246540fb3b1f1a",
 "Cslib.CodingTheory.ReedSolomon.KeySolver": "7907adac6a684db9",
