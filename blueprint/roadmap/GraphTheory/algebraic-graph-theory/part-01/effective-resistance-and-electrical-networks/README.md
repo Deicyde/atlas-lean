@@ -2,7 +2,7 @@
 
 A weighted graph read as a resistor network with conductances `w`: potentials, the energy `xᵀLx`, effective conductance and effective resistance (D. A. Spielman, *Spectral and Algebraic Graph Theory*, Chapters 11 and 12). Effective resistances drive the sampling sparsifiers of Spielman and Srivastava, where an edge is kept with probability proportional to `w_e R_eff(e)`.
 
-In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026, Chapter 2, the same quantities are organised around energy. Effective conductance is a minimum energy over potentials (Dirichlet's principle, Exercise 2.13), effective resistance is a minimum energy over unit flows (Thomson's principle, Section 2.4), and Rayleigh's monotonicity law follows from either. The network random walk enters through the commute-time identity (Corollary 2.21), and uniform spanning trees through Kirchhoff's effective resistance formula (Section 4.2). Here effective conductance is defined by the Dirichlet minimum; Lyons and Peres define it through escape probabilities, (2.4), and that agreement is not formalised.
+In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026, Chapter 2, the same quantities are organised around energy. Effective conductance is a minimum energy over potentials (Dirichlet's principle, Exercise 2.13), effective resistance is a minimum energy over unit flows (Thomson's principle, Section 2.4), and Rayleigh's monotonicity law follows from either; the Nash-Williams inequality (2.13) bounds effective resistance from below by disjoint cutsets. The network random walk enters through the commute-time identity (Corollary 2.21), and uniform spanning trees through Kirchhoff's effective resistance formula (Section 4.2). Here effective conductance is defined by the Dirichlet minimum; Lyons and Peres define it through escape probabilities, (2.4), and that agreement is not formalised.
 
 ## Energy, effective conductance and effective resistance
 
@@ -27,6 +27,12 @@ In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees a
 - [Thomson's principle](effective-resistance-le-flow-energy.md)
 - [Thomson's principle, equality case](flow-energy-eq-effective-resistance-iff.md)
 - [Effective resistance as minimum energy (Thomson's principle)](is-least-flow-energy.md)
+
+## The Nash-Williams inequality
+
+- [Separating edge set (cutset)](separating-edge-set.md)
+- [A unit flow crosses every cutset](unit-flow-crosses-every-cutset.md)
+- [The Nash-Williams inequality](nash-williams-inequality.md)
 
 ## Foster's identity and spanning trees
 

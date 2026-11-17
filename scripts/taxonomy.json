@@ -2454,6 +2454,7 @@
   "MathlibExt/Combinatorics/EndpointMapMultigraph/DartLaplacian": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/CommuteTime": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/EffectiveResistance": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
+  "MathlibExt/Combinatorics/EndpointMapMultigraph/NashWilliams": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/OrientedIncidence": {"to": "GraphTheory/algebraic-graph-theory", "title": "Oriented incidence matrices"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/SpectralDrawing": {"to": "GraphTheory/algebraic-graph-theory", "title": "Graph Laplacians and Cheeger's inequality"},
   "MathlibExt/Combinatorics/EndpointMapMultigraph/ThomsonPrinciple": {"to": "GraphTheory/algebraic-graph-theory", "title": "Effective resistance and electrical networks"},
