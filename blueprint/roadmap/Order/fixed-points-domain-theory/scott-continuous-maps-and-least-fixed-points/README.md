@@ -24,4 +24,5 @@ The denotational semantics of PCF in this repository uses the ω-chain variant: 
 
 ## Related topics
 
+- [Scott's graph model](../scott-s-graph-model/README.md): a concrete universal domain, $P(\omega)$, where these notions become finitary.
 - [PCF and computational adequacy](../../../ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/README.md): the denotational semantics built on the ω-chain variant.
