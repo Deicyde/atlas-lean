@@ -56,3 +56,7 @@
 - [Switching lists after the first request](offline-cost-switch-le.md)
 - [Online and offline costs on the adversary's sequence](adversary-vs-offline.md)
 - [No deterministic online list-update algorithm beats $2 - 2/(\ell + 1)$](not-competitive.md)
+
+## Related topics
+
+- [Amortized analysis](../../data-structures/amortized-analysis/README.md)

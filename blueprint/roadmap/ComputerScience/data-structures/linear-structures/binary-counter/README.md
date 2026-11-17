@@ -25,3 +25,7 @@
 - [Reset is idempotent](reset-ret-idempotent.md)
 - [A second reset costs nothing](reset-time-after-reset.md)
 - [Potential identity for reset](reset-potential.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md)

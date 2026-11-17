@@ -32,3 +32,7 @@
 - [Deletion removes the last item from the contents](table-delete-contents.md)
 - [Deletion preserves lookups below the last position](get-delete-of-lt.md)
 - [Lookup at the vacated position after deletion](get-delete-last.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md)
