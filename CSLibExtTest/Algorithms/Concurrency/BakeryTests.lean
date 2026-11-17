@@ -19,6 +19,8 @@ public import CSLibExt.Algorithms.Concurrency.Bakery
   and L2/L3 for `j = 0, 1`), so the mutual exclusion theorem is about reachable critical
   sections.
 * In that state process `1`, in its noncritical section, is not in its critical section.
+* Contention: process `0` enters its critical section while process `1` holds a larger ticket
+  and waits at L2; Assertion 2 orders their (ticket, name) pairs.
 -/
 
 @[expose] public section
@@ -55,5 +57,42 @@ requires. -/
 example : ∃ s : State 2, lts.CanReach init s ∧ s.pc 0 = .cs ∧ s.pc 1 ≠ .cs := by
   obtain ⟨s, hs, h0⟩ := exists_cs
   exact ⟨s, hs, h0, fun h1 => absurd (mutual_exclusion hs h0 h1) (by decide)⟩
+
+/-- Contention: process `0` takes ticket `1`, then process `1` reads it and takes ticket `2`;
+process `0` passes both loop indices and enters its critical section while process `1` holds
+the larger ticket and waits at L2. -/
+theorem exists_cs_contended : ∃ s : State 2, lts.CanReach init s ∧ s.pc 0 = .cs ∧
+    s.pc 1 = .l2 0 ∧ s.number 0 = 1 ∧ s.number 1 = 2 := by
+  refine ⟨?s, ⟨[0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0], ?run⟩, ?hcs⟩
+  case run =>
+    refine .stepL ⟨_, _, _, LocalStep.enter (by simp [init]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.read _ _ 0 rfl (by decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.read _ _ 1 rfl (by decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.endRead 0 (by simp [setLocal, init]; decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.write _ rfl, rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.exit (by simp [setLocal]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.enter (by simp [setLocal, init]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.read _ _ 0 rfl (by decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.read _ _ 1 rfl (by decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.endRead 1 (by simp [setLocal, init]; decide), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.write _ rfl, rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.exit (by simp [setLocal]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.l2 0 (by decide) (by simp [setLocal])
+      (by simp [setLocal]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.l3 0 (by decide) (by simp [setLocal])
+      (by simp [setLocal, Before]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.l2 1 (by decide) (by simp [setLocal])
+      (by simp [setLocal]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.l3 1 (by decide) (by simp [setLocal])
+      (by simp [setLocal, init, Before]), rfl⟩ ?_
+    refine .stepL ⟨_, _, _, LocalStep.enterCS (by simp [setLocal]), rfl⟩ ?_
+    exact .refl
+  case hcs => simp [setLocal, init]
+
+/-- In the contended state, Assertion 2 orders the ticket holders: `(1, 0) < (2, 1)`. -/
+example : ∃ s : State 2, lts.CanReach init s ∧ s.pc 0 = .cs ∧ s.pc 1 ≠ .cs ∧
+    Before (s.number 0) (0 : Fin 2) (s.number 1) 1 := by
+  obtain ⟨s, hs, h0, h1, -, -⟩ := exists_cs_contended
+  exact ⟨s, hs, h0, by simp [h1], before_of_cs hs h0 (by simp [h1, HasTicket]) (by decide)⟩
 
 end Cslib.Algorithms.Concurrency.Bakery.Tests
