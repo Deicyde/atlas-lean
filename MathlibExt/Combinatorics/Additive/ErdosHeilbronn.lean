@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Combinatorics.Nullstellensatz
+public import MathlibExt.Combinatorics.Additive.RestrictedSignedSumset
 public import Mathlib.Data.ZMod.Basic
 public import Mathlib.FieldTheory.Finite.Basic
 public import Mathlib.Algebra.MvPolynomial.Polynomial
@@ -19,7 +20,9 @@ public import Mathlib.Data.Nat.Prime.Factorial
 
 For a prime `p` and a nonempty `A ⊆ ℤ_p`, the sums `a + a'` of two distinct elements of `A` take at
 least `min(p, 2|A| - 3)` values. Erdős and Heilbronn conjectured this; Dias da Silva and Hamidoune
-proved it, and Alon, Nathanson and Ruzsa found the polynomial proof presented in N. Alon,
+proved it (for `h`-fold sums of distinct elements in general, stated as the wanted
+`MetaMathlibExt.dias_da_silva_hamidoune`; this file proves its case `h = 2`), and Alon, Nathanson
+and Ruzsa found the polynomial proof presented in N. Alon,
 "Combinatorial Nullstellensatz", Combin. Probab. Comput. 8 (1999), Section 4, which is the proof
 formalized here.
 
@@ -40,23 +43,22 @@ open Finset MvPolynomial
 
 namespace MathlibExt.Combinatorics.Additive.ErdosHeilbronn
 
-/-- **Restricted sumset.** The set `A ∔ A = {a + a' : a, a' ∈ A, a ≠ a'}` of sums of two distinct
-elements of `A` (N. Alon, "Combinatorial Nullstellensatz", Combin. Probab. Comput. 8 (1999),
-Section 4). -/
-def restrictedSumset {G : Type*} [AddCommMonoid G] [DecidableEq G] (A : Finset G) : Finset G :=
-  ((A ×ˢ A).filter fun x => x.1 ≠ x.2).image fun x => x.1 + x.2
+/-- A sum of two distinct elements of `A` lies in the restricted sumset `2^∧ A`
+(`MetaMathlibExt.restrictedSumset 2 A`). -/
+private theorem add_mem_restrictedSumset {G : Type*} [AddCommMonoid G] [DecidableEq G]
+    {A : Finset G} {a b : G} (ha : a ∈ A) (hb : b ∈ A) (hab : a ≠ b) :
+    a + b ∈ MetaMathlibExt.restrictedSumset 2 A := by
+  unfold MetaMathlibExt.restrictedSumset
+  refine mem_image.2 ⟨{a, b}, mem_powersetCard.2 ⟨?_, card_pair hab⟩, sum_pair hab⟩
+  intro x hx
+  simp only [mem_insert, mem_singleton] at hx
+  rcases hx with rfl | rfl <;> assumption
 
-theorem add_mem_restrictedSumset {G : Type*} [AddCommMonoid G] [DecidableEq G] {A : Finset G}
-    {a b : G} (ha : a ∈ A) (hb : b ∈ A) (hab : a ≠ b) : a + b ∈ restrictedSumset A := by
-  unfold restrictedSumset
-  exact mem_image.2 ⟨(a, b), mem_filter.2 ⟨mem_product.2 ⟨ha, hb⟩, hab⟩, rfl⟩
-
-theorem restrictedSumset_mono {G : Type*} [AddCommMonoid G] [DecidableEq G] {A B : Finset G}
-    (h : A ⊆ B) : restrictedSumset A ⊆ restrictedSumset B := by
-  unfold restrictedSumset
-  refine image_subset_image fun x hx => ?_
-  simp only [mem_filter, mem_product] at hx ⊢
-  exact ⟨⟨h hx.1.1, h hx.1.2⟩, hx.2⟩
+private theorem restrictedSumset_mono {G : Type*} [AddCommMonoid G] [DecidableEq G]
+    {A B : Finset G} (h : A ⊆ B) :
+    MetaMathlibExt.restrictedSumset 2 A ⊆ MetaMathlibExt.restrictedSumset 2 B := by
+  unfold MetaMathlibExt.restrictedSumset
+  exact image_subset_image (powersetCard_mono h)
 
 section Coefficients
 
@@ -152,17 +154,18 @@ private theorem choose_sub_ne_zero {p : ℕ} [Fact p.Prime] (k : ℕ) (hk : 2 * 
   omega
 
 /-- **Erdős–Heilbronn conjecture (Dias da Silva–Hamidoune theorem).** If `p` is a prime and `A` a
-nonempty subset of `ℤ_p`, then `|{a + a' : a, a' ∈ A, a ≠ a'}| ≥ min(p, 2|A| - 3)` (N. Alon,
+nonempty subset of `ℤ_p`, then the restricted sumset `2^∧ A = {a + a' : a, a' ∈ A, a ≠ a'}`
+(`MetaMathlibExt.restrictedSumset 2 A`) satisfies `|2^∧ A| ≥ min(p, 2|A| - 3)` (N. Alon,
 "Combinatorial Nullstellensatz", Combin. Probab. Comput. 8 (1999), Theorem 4.3, attributed there
 to J. A. Dias da Silva and Y. O. Hamidoune, Bull. London Math. Soc. 26 (1994); the proof is the
 paper's, through its Theorem 4.1 with `k = 1` and `h = x₁ - x₀`). Natural-number subtraction makes
 the bound `0` when `|A| = 1`, where the paper's `2|A| - 3` is negative. -/
 theorem min_le_card_restrictedSumset {p : ℕ} (hp : p.Prime) {A : Finset (ZMod p)}
-    (hA : A.Nonempty) : min p (2 * A.card - 3) ≤ (restrictedSumset A).card := by
+    (hA : A.Nonempty) : min p (2 * A.card - 3) ≤ (MetaMathlibExt.restrictedSumset 2 A).card := by
   have := Fact.mk hp
   -- Reduction to `2|A| - 3 ≤ p`.
   suffices key : ∀ B : Finset (ZMod p), 2 ≤ B.card → 2 * B.card - 3 ≤ p →
-      2 * B.card - 3 ≤ (restrictedSumset B).card by
+      2 * B.card - 3 ≤ (MetaMathlibExt.restrictedSumset 2 B).card by
     rcases Nat.lt_or_ge A.card 2 with h1 | h2
     · have : 2 * A.card - 3 = 0 := by omega
       simp [this]
@@ -181,17 +184,18 @@ theorem min_le_card_restrictedSumset {p : ℕ} (hp : p.Prime) {A : Finset (ZMod 
       have hB := key B (by omega) (by omega)
       calc min p (2 * A.card - 3) ≤ p := min_le_left _ _
         _ = 2 * B.card - 3 := by omega
-        _ ≤ (restrictedSumset B).card := hB
-        _ ≤ (restrictedSumset A).card := card_le_card (restrictedSumset_mono hBA)
+        _ ≤ (MetaMathlibExt.restrictedSumset 2 B).card := hB
+        _ ≤ (MetaMathlibExt.restrictedSumset 2 A).card := card_le_card (restrictedSumset_mono hBA)
   intro B hB2 hBp
   by_contra hlt
   push Not at hlt
   set n := B.card with hn
   set m := 2 * n - 4 with hm
-  -- A set `C ⊇ B ∔ B` of exactly `m` elements.
+  -- A set `C ⊇ 2^∧ B` of exactly `m` elements.
   have hmp : m ≤ Fintype.card (ZMod p) := by rw [ZMod.card]; omega
-  obtain ⟨C, hSC, hCcard⟩ := Finset.exists_superset_card_eq (s := restrictedSumset B) (n := m)
-    (by omega) hmp
+  obtain ⟨C, hSC, hCcard⟩ :=
+    Finset.exists_superset_card_eq (s := MetaMathlibExt.restrictedSumset 2 B) (n := m)
+      (by omega) hmp
   obtain ⟨a, ha⟩ : B.Nonempty := by rw [← card_pos]; omega
   set S : Fin 2 → Finset (ZMod p) := ![B, B.erase a] with hS
   set Q : MvPolynomial (Fin 2) (ZMod p) :=
@@ -293,5 +297,18 @@ theorem min_le_card_restrictedSumset {p : ℕ} (hp : p.Prime) {A : Finset (ZMod 
       · simp [hS, ht]; omega
       · simp [hS, ht, Finset.card_erase_of_mem ha]; omega)
   exact hne (hvanish s hs)
+
+/-- **Dias da Silva–Hamidoune theorem for `h = 2`.** The case `h = 2` of the wanted
+`MetaMathlibExt.dias_da_silva_hamidoune`, in its form: for a prime `p` and `A ⊆ ℤ_p` with
+`2 ≤ |A|`, `|2^∧ A| ≥ min(p, 2|A| - 2² + 1)` (J. Bhanja, *Sumsets with a Minimum Number of
+Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 2 with `h = 2`; N. Alon, "Combinatorial
+Nullstellensatz", Combin. Probab. Comput. 8 (1999), Theorem 4.3). It is
+`min_le_card_restrictedSumset`, since `2|A| - 4 + 1 = 2|A| - 3` when `|A| ≥ 2`. -/
+theorem dias_da_silva_hamidoune_two {p : ℕ} (hp : p.Prime) (A : Finset (ZMod p))
+    (hA : A.Nonempty) (hk : 2 ≤ A.card) :
+    min p (2 * A.card - 2 ^ 2 + 1) ≤ (MetaMathlibExt.restrictedSumset 2 A).card := by
+  have : 2 * A.card - 2 ^ 2 + 1 = 2 * A.card - 3 := by omega
+  rw [this]
+  exact min_le_card_restrictedSumset hp hA
 
 end MathlibExt.Combinatorics.Additive.ErdosHeilbronn

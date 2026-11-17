@@ -7,3 +7,5 @@ variables `xᵢ` (`i ∈ σ`, finitely many), `Sᵢ` nonempty finite subsets of 
 Nullstellensatz", Combin. Probab. Comput. 8 (1999), Theorem 1.1). The degree bound is stated
 as `deg hᵢ + deg gᵢ ≤ deg f`, which is the same for `hᵢ ≠ 0` and avoids truncated subtraction;
 the paper's "moreover" clause about subrings is not included.
+
+This restates Mathlib's `MvPolynomial.combinatorial_nullstellensatz_exists_linearCombination` in the paper's notation.

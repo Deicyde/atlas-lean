@@ -5,6 +5,10 @@ $\mathbb{Z}/p\mathbb{Z}$ with $|A| = k$, and $h$ a natural number with $1 \le h 
 restricted sumset $h^{\wedge}A$ of sums of $h$ distinct elements of $A$ satisfies
 $|h^{\wedge}A| \ge \min(p,\ hk - h^2 + 1)$.
 
+## Background
+
+- [Erdős–Heilbronn conjecture (Dias da Silva–Hamidoune theorem)](../../combinatorial-nullstellensatz/min-le-card-restricted-sumset.md): the case $h = 2$, proved by Alon's Combinatorial Nullstellensatz argument; its [instance in this page's form](../../combinatorial-nullstellensatz/dias-da-silva-hamidoune-two.md) is derived there.
+
 ## Sources
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 2 (Dias da Silva–Hamidoune theorem).

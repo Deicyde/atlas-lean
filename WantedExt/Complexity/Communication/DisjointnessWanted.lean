@@ -32,16 +32,21 @@ def disjFn (n : ℕ) (x y : Fin n → Bool) : Bool :=
   decide (∃ i, x i = true ∧ y i = true)
 
 /-- **Randomized communication complexity of disjointness.** For every fixed `0 ≤ ε < 1/2` there
-is `c > 0` such that `randComplexity (disjFn n) ε ≥ c n` for every `n`. This is the theorem of
-B. Kalyanasundaram and G. Schnitger, "The probabilistic communication complexity of set
-intersection", SIAM J. Discrete Math. 5 (1992) 545–557, as quoted in N. Alon, Y. Matias and
-M. Szegedy, J. Comput. System Sci. 58 (1999), Section 3 ("for any fixed `ε < 1/2`,
-`C_ε(DIS_n) ≥ Ω(n)`"); A. A. Razborov, "On the distributional complexity of disjointness",
-Theoret. Comput. Sci. 106 (1992) 385–390, proves an `Ω(n)` distributional bound for one input
-distribution, which gives the same conclusion for small `ε` through
-`distComplexity_le_randComplexity`. The source measures the expected number of bits of a
-private-coin protocol; `randComplexity` measures the worst-case cost of a public-coin protocol,
-which is at least as powerful in this respect, so this statement follows from the source's. -/
+is `c > 0` such that `randComplexity (disjFn n) ε ≥ c n` for every `n`. Here `randComplexity` is
+the least worst-case depth of a public-coin protocol (a distribution over deterministic protocols)
+with error at most `ε` on every input.
+
+This is the linear lower bound of B. Kalyanasundaram and G. Schnitger, "The probabilistic
+communication complexity of set intersection", SIAM J. Discrete Math. 5 (1992) 545–557, and of
+A. A. Razborov, "On the distributional complexity of disjointness", Theoret. Comput. Sci. 106
+(1992) 385–390, as quoted in N. Alon, Y. Matias and M. Szegedy, J. Comput. System Sci. 58 (1999),
+Section 3 ("for any fixed `ε < 1/2`, `C_ε(DIS_n) ≥ Ω(n)`"; "Razborov exhibited a simple measure
+`μ` … and showed that for this measure `D_ε(DIS_n | μ) ≥ Ω(n)`"). The public-coin form follows
+from Razborov's distributional bound: every public-coin protocol of error `ε'` on every input has
+`μ`-error at most `ε'`, so its depth is at least the distributional complexity
+(`distComplexity_le_randComplexity`), which is `Ω(n)` at Razborov's fixed small error `ε'`. A
+protocol with error `ε < 1/2` reaches error `ε'` by taking the majority answer of `O_ε(1)`
+independent runs, which multiplies the depth by a constant depending only on `ε`. -/
 theorem_wanted randComplexity_disjFn_ge :
     ∀ ε : ℝ, 0 ≤ ε → ε < 1 / 2 → ∃ c : ℝ, 0 < c ∧
       ∀ n : ℕ, c * n ≤ randComplexity (disjFn n) ε

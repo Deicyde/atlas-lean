@@ -21,9 +21,25 @@ A randomized streaming algorithm over an alphabet `α` with `s` bits of memory r
 Its randomness is a seed `r` drawn uniformly from a finite nonempty set `R` and visible at every
 step. This is the model of N. Alon, Y. Matias and M. Szegedy, "The space complexity of
 approximating the frequency moments", J. Comput. System Sci. 58 (1999) 137–147, Section 1, with
-one difference: the seed is not charged to the memory. The model is therefore at least as
-powerful as theirs, so space lower bounds in it imply the corresponding lower bounds for their
-algorithms (whose random bits are stored in memory or drawn during the pass).
+one difference: the seed is not charged to the memory. This is the standard public-randomness
+(random-oracle) streaming model. Every algorithm of the source's model, whose random bits are
+stored in memory or drawn during the pass, is an algorithm of this model with the same memory,
+so a space lower bound proved here is at least as strong as the source's.
+
+The free seed does not weaken the source's lower bounds (`space_lower_bound_maxFreq`,
+`space_lower_bound_freqMoment`), because their proofs turn the seed into the public coin of a
+communication protocol, and the communication bounds hold against arbitrary public randomness:
+
+- Proposition 3.1: Alice and Bob share the seed `r` as a public coin. Alice runs the algorithm
+  on the elements of `x` and sends the `s`-bit memory content, and Bob finishes the run on `y`.
+  This is a one-way public-coin protocol for disjointness of cost `s + O(1)`, and the
+  public-coin bound `randComplexity_disjFn_ge` applies.
+- Theorem 3.2: Proposition 3.3 is proved distributionally ("it suffices to exhibit a
+  distribution on the inputs and prove that any deterministic communication protocol … errs
+  with probability `Ω(1)`"). Amplify the algorithm by independent copies (seed space `R^k`,
+  memory `k s` bits, still an algorithm of this model), average the error over the input
+  distribution, and fix one seed. The result is a deterministic state-passing protocol with
+  small distributional error, so the size of the seed space never enters.
 
 ## Main definitions
 
@@ -43,8 +59,10 @@ namespace MathlibExt.Probability.Streaming
 /-- **Randomized streaming algorithm with `s` bits of memory.** A one-pass algorithm over the
 alphabet `α` whose state is one of `2 ^ s` memory contents, given by an initial state, a
 transition reading one stream element, and a real output, all depending on a random seed in `R`
-(N. Alon, Y. Matias and M. Szegedy, J. Comput. System Sci. 58 (1999), Section 1; here the seed
-is not counted in the memory, which only strengthens lower bounds). -/
+(N. Alon, Y. Matias and M. Szegedy, J. Comput. System Sci. 58 (1999), Section 1). The seed is not
+counted in the memory (the public-randomness model). The source's algorithms are special cases,
+and the source's lower-bound proofs use the seed only as a public coin, as explained in the module
+documentation. -/
 structure StreamingAlgorithm (α R : Type*) (s : ℕ) where
   /-- The initial memory content for each seed. -/
   init : R → Fin (2 ^ s)

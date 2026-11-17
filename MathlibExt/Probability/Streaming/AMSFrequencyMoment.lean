@@ -268,9 +268,9 @@ theorem sum_mul_sum_le_rpow {σ : Type*} [Fintype σ] (x : σ → ℝ) (hx : ∀
 
 /-- **Second moment of the AMS estimator against `F_k²`.** For `k ≥ 1` and every stream `l` over
 a set `ι` of `n` symbols, the average of `X²` over the positions is at most
-`k n^{1-1/k} F_k²`; hence the mean `Y` of `s₁` independent copies has
-`Var(Y) ≤ k n^{1-1/k} F_k² / s₁` (N. Alon, Y. Matias and M. Szegedy, J. Comput. System Sci. 58
-(1999), proof of Theorem 2.1). -/
+`k n^{1-1/k} F_k²`. Consequently (informally; this is not part of the statement) the mean `Y`
+of `s₁` independent copies has `Var(Y) ≤ k n^{1-1/k} F_k² / s₁` (N. Alon, Y. Matias and
+M. Szegedy, J. Comput. System Sci. 58 (1999), proof of Theorem 2.1). -/
 theorem average_basicEstimator_sq_le_rpow [Fintype ι] (k : ℕ) (hk : 1 ≤ k) (l : List ι) :
     (1 / l.length : ℝ) * ∑ p, basicEstimator k l p ^ 2 ≤
       k * (Fintype.card ι : ℝ) ^ (1 - 1 / (k : ℝ)) * (∑ i, (l.count i : ℝ) ^ k) ^ 2 := by

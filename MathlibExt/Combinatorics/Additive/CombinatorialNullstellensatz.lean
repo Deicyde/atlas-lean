@@ -42,7 +42,8 @@ variables `xᵢ` (`i ∈ σ`, finitely many), `Sᵢ` nonempty finite subsets of 
 `f = ∑ᵢ hᵢ gᵢ` for polynomials `hᵢ` with `deg hᵢ ≤ deg f - deg gᵢ` (N. Alon, "Combinatorial
 Nullstellensatz", Combin. Probab. Comput. 8 (1999), Theorem 1.1). The degree bound is stated
 as `deg hᵢ + deg gᵢ ≤ deg f`, which is the same for `hᵢ ≠ 0` and avoids truncated subtraction;
-the paper's "moreover" clause about subrings is not included. -/
+the paper's "moreover" clause about subrings is not included. This restates Mathlib's
+`MvPolynomial.combinatorial_nullstellensatz_exists_linearCombination` in the paper's notation. -/
 theorem exists_eq_sum_mul_of_vanishing (S : σ → Finset F) (hS : ∀ i, (S i).Nonempty)
     (f : MvPolynomial σ F) (hf : ∀ x : σ → F, (∀ i, x i ∈ S i) → eval x f = 0) :
     ∃ h : σ → MvPolynomial σ F,
@@ -72,7 +73,9 @@ theorem exists_eq_sum_mul_of_vanishing (S : σ → Finset F) (hS : ∀ i, (S i).
 finitely many variables `xᵢ` (`i ∈ σ`) of total degree `∑ᵢ tᵢ`, where the coefficient of the
 monomial `∏ᵢ xᵢ^{tᵢ}` in `f` is nonzero. If `Sᵢ ⊆ F` are finite sets with `|Sᵢ| > tᵢ`, then
 there is a point `s ∈ ∏ᵢ Sᵢ` with `f(s) ≠ 0` (N. Alon, "Combinatorial Nullstellensatz", Combin.
-Probab. Comput. 8 (1999), Theorem 1.2). -/
+Probab. Comput. 8 (1999), Theorem 1.2). This restates Mathlib's
+`MvPolynomial.combinatorial_nullstellensatz_exists_eval_nonzero` with an exponent function
+instead of a finsupp. -/
 theorem exists_eval_ne_zero (f : MvPolynomial σ F) (t : σ → ℕ)
     (hdeg : f.totalDegree = ∑ i, t i) (hcoeff : f.coeff (Finsupp.equivFunOnFinite.symm t) ≠ 0)
     (S : σ → Finset F) (hS : ∀ i, t i < (S i).card) :

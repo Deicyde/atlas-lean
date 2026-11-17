@@ -23,7 +23,9 @@ $F_1 F_{2k-1} \le n^{1-1/k} F_k^2$, and the full median-of-means guarantee for $
 the space accounting of the upper bounds (an explicit four-wise independent family of $O(n^2)$ sign
 vectors from BCH codes, reservoir sampling of the position when $m$ is unknown) and the end-to-end
 probability statement for $F_k$, $k \ne 2$. The two space lower bounds are stated as wanted results
-in a model whose random seed is free.
+in the public-randomness model, where the random seed is not charged to the memory; this is
+harmless because the source's reductions use the seed only as the public coin of a communication
+protocol (see [the model](streaming-algorithm.md)).
 
 - [Suffix count of a stream position](suffix-count.md)
 - [The AMS basic estimator of `F_k`](basic-estimator.md)

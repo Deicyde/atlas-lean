@@ -1,7 +1,8 @@
 # Erdős–Heilbronn conjecture (Dias da Silva–Hamidoune theorem)
 
-If $p$ is a prime and $A$ a nonempty subset of $\mathbb{Z}_p$, then
-$$\big|\{a + a' : a, a' \in A,\ a \ne a'\}\big| \ge \min(p, 2|A| - 3).$$
+If $p$ is a prime and $A$ a nonempty subset of $\mathbb{Z}_p$, then the
+[restricted sumset](../sumsets-inverse-theorems/restricted-signed-sumsets/restricted-sumset.md) $2^{\wedge}A = \{a + a' : a, a' \in A,\ a \ne a'\}$ satisfies
+$$|2^{\wedge}A| \ge \min(p, 2|A| - 3).$$
 Natural-number subtraction makes the bound $0$ when $|A| = 1$, where the paper's $2|A| - 3$ is
 negative. The bound is attained by arithmetic progressions; the test module checks
 $A = \{0, 1, 2\} \subseteq \mathbb{Z}_7$, whose restricted sums are $\{1, 2, 3\}$.
@@ -10,8 +11,8 @@ The proof is the paper's. After passing to a subset one may assume $2|A| - 3 \le
 restricted sumset had at most $m = 2|A| - 4$ elements, it would lie in a set $C$ of exactly $m$
 elements, and $Q = (x_1 - x_0) \prod_{c \in C} (x_0 + x_1 - c)$ would vanish on
 $A \times (A \setminus \{a\})$. The coefficient of $x_0^{|A|-1} x_1^{|A|-2}$ in $Q$ is
-$\binom{m}{|A|-1} - \binom{m}{|A|-2}$, a nonzero multiple of a Catalan number that $p$ does not
-divide because $m < p$, so the Combinatorial Nullstellensatz gives a point where $Q \ne 0$.
+$\binom{m}{|A|-1} - \binom{m}{|A|-2} = -\mathrm{Cat}(|A| - 2)$, a Catalan number up to sign, which
+$p$ does not divide because $m < p$, so the Combinatorial Nullstellensatz gives a point where $Q \ne 0$.
 
 ## Informally uses
 
@@ -19,6 +20,7 @@ divide because $m < p$, so the Combinatorial Nullstellensatz gives a point where
 
 ## Background
 
+- [Dias da Silva–Hamidoune theorem](../sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/dias-da-silva-hamidoune.md): the general statement for sums of $h$ distinct elements (wanted); this page proves the case $h = 2$, and [its $h = 2$ instance](dias-da-silva-hamidoune-two.md) is derived from it.
 - [Cauchy–Davenport–Chowla theorem](../sumsets-inverse-theorems/cauchy-davenport-chowla.md): the unrestricted sumset bound $|A + B| \ge \min(p, |A| + |B| - 1)$ and its extension to composite moduli.
 
 ## Sources
