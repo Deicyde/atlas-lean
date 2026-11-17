@@ -18,14 +18,15 @@ public import Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpo
 Lieb's concavity theorem (E. A. Carlen, *Trace inequalities and quantum entropy: an introductory
 course*, lecture-notes draft of May 3, 2009, Theorem 6.1) asserts that
 `(A, B) ↦ tr (K* A^q K B^r)` is jointly concave on pairs of positive-definite matrices when
-`q, r ≥ 0` and `q + r ≤ 1`. It is recorded as wanted in
-`WantedExt.LinearAlgebra.Matrix.LiebConcavityWanted.lieb_concavity_trace_rpow`.
+`q, r ≥ 0` and `q + r ≤ 1`. For square `K` it is proved in
+`PhyslibExt.QuantumInfo.LiebConcavity.lieb_concavity_trace_rpow`, from Physlib for `q, r > 0` and
+from this file for the boundary cases.
 
 This file proves the two degenerate cases where one exponent vanishes, `r = 0` and `q = 0`.
 There the map depends on one matrix only, and its concavity follows from the operator concavity of
 `t ↦ t ^ q` for `0 ≤ q ≤ 1` (Carlen, Theorem 2.6; Mathlib's `CFC.concaveOn_rpow`) composed with the
 monotone linear functional `X ↦ re tr (K* X K)`. The joint concavity for `q, r > 0` is the real
-content of Lieb's theorem and is not proved here.
+content of Lieb's theorem; it is not proved here.
 -/
 
 @[expose] public section
@@ -87,8 +88,8 @@ private lemma convex_posDef : Convex ℝ {A : Matrix m m ℂ | A.PosDef} := by
 positive-definite matrices. This
 is the instance `r = 0` of Lieb's concavity theorem (E. A. Carlen, *Trace inequalities and quantum
 entropy: an introductory course*, lecture-notes draft of May 3, 2009, Theorem 6.1), stated in the
-same form as the wanted
-`MathlibExt.LinearAlgebra.Matrix.LiebConcavityWanted.lieb_concavity_trace_rpow`; since `B^0 = 1`
+same form as the joint statement
+`PhyslibExt.QuantumInfo.LiebConcavity.lieb_concavity_trace_rpow`; since `B^0 = 1`
 it reduces to the concavity of `A ↦ re tr (K* A^q K)`. -/
 theorem lieb_concavity_trace_rpow_of_right_eq_zero (K : Matrix m n ℂ) {q : ℝ} (hq₀ : 0 ≤ q)
     (hq₁ : q ≤ 1) :
@@ -113,7 +114,7 @@ theorem lieb_concavity_trace_rpow_of_right_eq_zero (K : Matrix m n ℂ) {q : ℝ
 positive-definite matrices. This
 is the instance `q = 0` of Lieb's concavity theorem (E. A. Carlen, *Trace inequalities and quantum
 entropy: an introductory course*, lecture-notes draft of May 3, 2009, Theorem 6.1), in the form of
-the wanted `MathlibExt.LinearAlgebra.Matrix.LiebConcavityWanted.lieb_concavity_trace_rpow`; since
+the joint statement `PhyslibExt.QuantumInfo.LiebConcavity.lieb_concavity_trace_rpow`; since
 `A^0 = 1` and `tr (K* K B^r) = tr (K B^r K*)` it reduces to the concavity of
 `B ↦ re tr (K B^r K*)`. -/
 theorem lieb_concavity_trace_rpow_of_left_eq_zero (K : Matrix m n ℂ) {r : ℝ} (hr₀ : 0 ≤ r)

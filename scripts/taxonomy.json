@@ -4759,6 +4759,7 @@
   "PhyslibExt/CondensedMatter/IsingModel/TailEventsErgodic": {"to": "StatisticalMechanics/gibbs-states-and-phase-transitions", "title": "Translation invariance and ergodicity of the plus state"},
   "PhyslibExt/CondensedMatter/IsingModel/TwoReplica": {"to": "StatisticalMechanics/random-currents-and-sharpness", "title": "Random currents and the switching lemma"},
   "PhyslibExt/CondensedMatter/IsingModel/TwoReplicaWeighted": {"to": "StatisticalMechanics/random-currents-and-sharpness", "title": "Random currents and the switching lemma"},
+  "PhyslibExt/QuantumInfo/LiebConcavity": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lieb's concavity theorem"},
   "PhyslibExt/StatisticalMechanics/RandomCluster": {"to": "StatisticalMechanics/random-cluster-model", "title": "Infinite-volume random-cluster measures"},
   "PhyslibExt/StatisticalMechanics/RandomCluster/AdditiveGluing": {"to": "StatisticalMechanics/random-cluster-model", "title": "Free energy of the random-cluster model"},
   "PhyslibExt/StatisticalMechanics/RandomCluster/BoundaryInfluenceDecay": {"to": "StatisticalMechanics/random-cluster-model", "title": "Per-box agreement of free and wired random-cluster measures"},
