@@ -33,6 +33,8 @@ agreement with `(δ_s - δ_t)ᵀ L⁺ (δ_s - δ_t)` (Spielman, Section 12.1) is
   resistance;
 * `effectiveResistance_eq_sub_of_laplacian_mulVec`: the effective resistance is the potential
   difference `v(s) - v(t)` of any solution of `L v = δ_s - δ_t`;
+* `range_laplacian_eq_range_orientedIncidence`: with positive weights and no loops, `L` and the
+  oriented incidence matrix have the same range;
 * `sum_mul_effectiveResistance`: Foster's identity `∑_e w_e R_eff(e) = n - 1` for connected
   graphs.
 -/
@@ -212,8 +214,15 @@ theorem effectiveResistance_eq_sub_of_laplacian_mulVec {w : E → ℝ} (hw : 0 �
   refine ⟨?_, hr⟩
   rw [effectiveResistance, hC, inv_inv]
 
-/-- With positive weights, the Laplacian and the oriented incidence matrix have the same range. -/
-private theorem range_laplacian_eq {w : E → ℝ} (hw : ∀ e, 0 < w e)
+/-- **Range of the weighted Laplacian.** For a finite loopless multigraph with positive weights,
+the weighted Laplacian `L = B diag(w) Bᵀ` and the oriented incidence matrix `B` have the same range:
+every net outflow `B θ` of an edge function is the net outflow `L v = B (w · Bᵀ v)` of the current
+of some potential `v`. This is the existence part of R. Lyons and Y. Peres, *Probability on Trees
+and Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026,
+Section 2.4, equation (2.9) and the note after Thomson's principle: for every flow `θ` the current
+`i = P_⋆ θ` satisfies `d* i = d* θ`. The proof here compares ranks instead
+(`rank L = rank B = |V| - #components`). -/
+theorem range_laplacian_eq_range_orientedIncidence {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) :
     LinearMap.range (laplacian end₁ end₂ w).mulVecLin =
       LinearMap.range (orientedIncidence end₁ end₂).mulVecLin := by
@@ -245,7 +254,7 @@ theorem sum_mul_effectiveResistance {w : E → ℝ} (hw : ∀ e, 0 < w e)
   have hex : ∀ e, ∃ v : V → ℝ, L *ᵥ v = B *ᵥ Pi.single e 1 := by
     intro e
     have hmem : B *ᵥ Pi.single e 1 ∈ LinearMap.range L.mulVecLin := by
-      rw [range_laplacian_eq end₁ end₂ hw hloop]
+      rw [range_laplacian_eq_range_orientedIncidence end₁ end₂ hw hloop]
       exact ⟨Pi.single e 1, rfl⟩
     obtain ⟨v, hv⟩ := hmem
     exact ⟨v, hv⟩

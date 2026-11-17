@@ -18,7 +18,7 @@ import Mathlib.Tactic.Ring
 /-!
 # The commute-time identity
 
-The network random walk on a finite multigraph with positive conductances `w` sits at a
+The network random walk on a finite loopless multigraph with positive conductances `w` sits at a
 vertex `x` and crosses an incident edge `e` with probability `w_e / π(x)`, where
 `π(x) = ∑_{e ∋ x} w_e` is the weighted degree. The expected hitting times `h(x) = E_x[τ_z]` of a
 vertex `z` solve the first-step equations `h(z) = 0` and
@@ -37,7 +37,10 @@ statement about the linear system that characterises hitting times, not about a 
 process.
 
 The weighted degree is `EndpointMapMultigraph.weightedDegree` (from the conductance module), which
-counts a loop at both of its ends.
+counts a loop at both of its ends; so does `neighbourSum`. With a loop, the first-step equations
+below would describe the walk that takes a loop `e` with probability `2 w_e / π(x)`, not the
+source's walk, which counts a loop once. The hitting-time and commute-time theorems therefore
+assume that the multigraph has no loops.
 
 * `laplacian_mulVec_apply`: `(L h)(x) = π(x) h(x) - ∑_{e ∋ x} w_e h(other end of e)`;
 * `sum_weightedDegree`: `∑_x π(x) = 2 ∑_e w_e`;
@@ -45,8 +48,7 @@ counts a loop at both of its ends.
   exactly one solution on a connected loopless multigraph;
 * `hitting_time_identity`: Tetali's formula `h_z(a) = ∑_x π(x) v(x)` for the potential `v` of a
   unit current from `a` to `z` with `v(z) = 0`;
-* `commute_time_identity`: `h_z(a) + h_a(z) = 2 (∑_e w_e) R_eff(a, z)` (no looplessness needed,
-  with loops counted at both ends; the source counts a loop once in `γ`);
+* `commute_time_identity`: `h_z(a) + h_a(z) = 2 (∑_e w_e) R_eff(a, z)` for loopless multigraphs;
 * `commute_time_identity_one`: for unit conductances, `h_z(a) + h_a(z) = 2 |E| R_eff(a, z)`.
 -/
 
@@ -59,17 +61,23 @@ open Matrix
 variable {V E : Type*} [DecidableEq V] [DecidableEq E] [Fintype E] [Fintype V]
   (end₁ end₂ : E → V)
 
-/-- **Neighbour sum of the network walk.** `∑_{e ∋ x} w_e h(other end of e)`: `π(x)` times the
-expected value of `h` after one step of the network random walk from `x`. -/
+/-- **Neighbour sum of the network walk.** `∑_{e ∋ x} w_e h(other end of e)`: in a loopless
+multigraph, `π(x)` times the expected value of `h` after one step of the network random walk from
+`x` (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016,
+corrected online version of 19 August 2026, Section 2.2: the walk moves along an edge chosen with
+probability proportional to its conductance). A loop at `x` is counted at both of its ends,
+contributing `2 w_e h(x)`. -/
 noncomputable def neighbourSum (w : E → ℝ) (h : V → ℝ) (x : V) : ℝ :=
   ∑ e, ((if end₁ e = x then w e * h (end₂ e) else 0) + if end₂ e = x then w e * h (end₁ e) else 0)
 
-/-- **First-step equations for hitting times.** `h` solves the linear system satisfied by the
-expected hitting times of `z` for the network random walk: `h(z) = 0` and, for `x ≠ z`,
-`h(x) = 1 + ∑_{e ∋ x} (w_e / π(x)) h(other end of e)` (R. Lyons and Y. Peres, *Probability on
-Trees and Networks*, Cambridge University Press 2016, corrected online version of
-19 August 2026, Section 2.7; the walk crosses an edge with probability proportional to its
-conductance, Section 2.2). -/
+/-- **First-step equations for hitting times.** `h(z) = 0` and, for `x ≠ z`,
+`h(x) = 1 + ∑_{e ∋ x} (w_e / π(x)) h(other end of e)`. On a loopless multigraph this is the
+linear system satisfied by the expected hitting times of `z` for the network random walk
+(R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016,
+corrected online version of 19 August 2026, Section 2.7; the walk crosses an edge with
+probability proportional to its conductance, Section 2.2). With a loop it is the system of a
+different walk: `weightedDegree` and `neighbourSum` count a loop at both ends, so the loop is taken
+with probability `2 w_e / π(x)` instead of the source's `w_e / π(x)`. -/
 def IsHittingTimeSolution (w : E → ℝ) (z : V) (h : V → ℝ) : Prop :=
   h z = 0 ∧ ∀ x, x ≠ z → h x = 1 + neighbourSum end₁ end₂ w h x / weightedDegree end₁ end₂ w x
 
@@ -77,7 +85,8 @@ def IsHittingTimeSolution (w : E → ℝ) (z : V) (h : V → ℝ) : Prop :=
 `(L h)(x) = π(x) h(x) - ∑_{e ∋ x} w_e h(other end of e)`, that is `L = D - A` for the weighted
 degree `D` and the weighted adjacency `A` (R. Lyons and Y. Peres, *Probability on Trees and
 Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026,
-Exercise 2.62, the network Laplacian `Δ_G`). Loops contribute to neither side. -/
+Exercise 2.62, the network Laplacian `Δ_G`). A loop `e` at `x` contributes `2 w_e h(x)` to both
+terms, and the two contributions cancel. -/
 theorem laplacian_mulVec_apply (w : E → ℝ) (h : V → ℝ) (x : V) :
     (laplacian end₁ end₂ w *ᵥ h) x =
       weightedDegree end₁ end₂ w x * h x - neighbourSum end₁ end₂ w h x := by
@@ -163,13 +172,14 @@ private theorem laplacian_mulVec_of_isHittingTimeSolution {w : E → ℝ} (hw : 
     linarith
   · simp only [hoff x hx, hx, ↓reduceIte, sub_zero]
 
-/-- **Hitting-time identity.** In a finite connected multigraph with positive conductances, if `h`
+/-- **Hitting-time identity.** In a finite connected loopless multigraph with positive
+conductances, if `h`
 solves the first-step equations of the expected hitting times of `z` and `v` is the potential of a
 unit current from `a` to `z` that vanishes at `z` (`L v = δ_a - δ_z`, `v(z) = 0`), then
 `h(a) = ∑_x π(x) v(x)` (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge
 University Press 2016, corrected online version of 19 August 2026, Proposition 2.20, due to
 Tetali, with `Z = {z}`). -/
-theorem hitting_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e)
+theorem hitting_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e) (_hloop : ∀ e, end₁ e ≠ end₂ e)
     (hconn : (underlyingGraph end₁ end₂).Connected) {a z : V} {h v : V → ℝ}
     (hh : IsHittingTimeSolution end₁ end₂ w z h)
     (hv : laplacian end₁ end₂ w *ᵥ v = Pi.single a 1 - Pi.single z 1) (hvz : v z = 0) :
@@ -247,15 +257,15 @@ theorem isHittingTimeSolution_unique [Finite V] {w : E → ℝ} (hw : ∀ e, 0 <
   simp only [Pi.sub_apply, hh.1, hh'.1, sub_zero] at this
   linarith
 
-/-- **Commute-time identity.** In a finite connected multigraph with positive conductances `w`,
+/-- **Commute-time identity.** In a finite connected loopless multigraph with positive
+conductances `w`,
 if `h_z` and `h_a` solve the first-step equations of the expected hitting times of `z` and of `a`,
 then `h_z(a) + h_a(z) = γ R_eff(a, z)` with `γ = 2 ∑_e w_e = ∑_x π(x)` (R. Lyons and Y. Peres,
 *Probability on Trees and Networks*, Cambridge University Press 2016, corrected online version of
 19 August 2026, Corollary 2.21, due to Chandra, Raghavan, Ruzzo, Smolensky and Tiwari). For
-`a = z` both sides are `0`. Loops are allowed; `weightedDegree` and `neighbourSum` count a loop
-at both of its ends, whereas the source counts it once, so the constant agrees with the source's
-`γ` exactly for loopless multigraphs. -/
-theorem commute_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e)
+`a = z` both sides are `0`. The proof does not use looplessness; it is assumed because with a loop
+the first-step equations describe a different walk (see `IsHittingTimeSolution`). -/
+theorem commute_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e) (_hloop : ∀ e, end₁ e ≠ end₂ e)
     (hconn : (underlyingGraph end₁ end₂).Connected) {a z : V} {ha hz : V → ℝ}
     (hha : IsHittingTimeSolution end₁ end₂ w a ha) (hhz : IsHittingTimeSolution end₁ end₂ w z hz) :
     hz a + ha z = 2 * (∑ e, w e) * effectiveResistance end₁ end₂ w a z := by
@@ -274,11 +284,8 @@ theorem commute_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e)
     rw [effectiveResistance, hC, _root_.inv_zero, mul_zero, hhz.1, hha.1, add_zero]
   set γ := ∑ y, weightedDegree end₁ end₂ w y with hγ
   have hγpos : 0 < γ := by
-    have hnonneg : ∀ y ∈ (Finset.univ : Finset V), 0 ≤ weightedDegree end₁ end₂ w y := by
-      intro y _
-      refine Finset.sum_nonneg fun f _ => ?_
-      have := (hw f).le
-      split_ifs <;> nlinarith
+    have hnonneg : ∀ y ∈ (Finset.univ : Finset V), 0 ≤ weightedDegree end₁ end₂ w y :=
+      fun y _ => weightedDegree_nonneg end₁ end₂ (fun e => (hw e).le) y
     exact lt_of_lt_of_le (weightedDegree_pos end₁ end₂ hw hconn haz)
       (Finset.single_le_sum hnonneg (Finset.mem_univ a))
   have hγne : γ ≠ 0 := hγpos.ne'
@@ -300,18 +307,18 @@ theorem commute_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e)
   field_simp
   ring
 
-/-- **Commute-time identity for unit conductances.** In a finite connected multigraph with every
-conductance `1` (loops counted at both ends, as in `commute_time_identity`), solutions `h_z`,
+/-- **Commute-time identity for unit conductances.** In a finite connected loopless multigraph
+with every conductance `1`, solutions `h_z`,
 `h_a` of the first-step equations for simple random walk satisfy
 `h_z(a) + h_a(z) = 2 |E| R_eff(a, z)` (R. Lyons and Y. Peres, *Probability on Trees and
 Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026,
 Corollary 2.21 with `c ≡ 1`). -/
-theorem commute_time_identity_one
+theorem commute_time_identity_one (hloop : ∀ e, end₁ e ≠ end₂ e)
     (hconn : (underlyingGraph end₁ end₂).Connected) {a z : V} {ha hz : V → ℝ}
     (hha : IsHittingTimeSolution end₁ end₂ (fun _ => 1) a ha)
     (hhz : IsHittingTimeSolution end₁ end₂ (fun _ => 1) z hz) :
     hz a + ha z = 2 * Fintype.card E * effectiveResistance end₁ end₂ (fun _ => 1) a z := by
-  rw [commute_time_identity end₁ end₂ (fun _ => one_pos) hconn hha hhz]
+  rw [commute_time_identity end₁ end₂ (fun _ => one_pos) hloop hconn hha hhz]
   simp
 
 end EndpointMapMultigraph

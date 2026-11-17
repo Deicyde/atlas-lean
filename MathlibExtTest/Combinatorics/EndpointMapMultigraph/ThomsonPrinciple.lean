@@ -85,4 +85,42 @@ example : IsLeast {q | ∃ x : Fin 3 → ℝ, x 0 = 0 ∧ x 2 = 1 ∧
     norm_num
   rwa [hC] at h
 
+/-! Non-uniform instances: two parallel unit edges, and one edge of conductance `3`. -/
+
+/-- Two parallel edges between `0` and `1`. -/
+abbrev p₁ : Fin 2 → Fin 2 := ![0, 0]
+/-- Second endpoints of the two parallel edges. -/
+abbrev p₂ : Fin 2 → Fin 2 := ![1, 1]
+
+/-- Parallel unit resistors: `R_eff(0, 1) = 1 / 2`. -/
+example : effectiveResistance p₁ p₂ (fun _ => 1) 0 1 = 1 / 2 := by
+  have hv : laplacian p₁ p₂ (fun _ => 1) *ᵥ ![1 / 2, 0] = Pi.single 0 1 - Pi.single 1 1 := by
+    funext x
+    fin_cases x <;>
+      simp [laplacian, Matrix.mulVec, dotProduct, Matrix.mul_apply, orientedIncidence_apply,
+        Fin.sum_univ_two] <;> norm_num
+  have h := (effectiveResistance_eq_sub_of_laplacian_mulVec p₁ p₂ (fun _ => zero_le_one)
+    (by decide) hv).1
+  rw [h]
+  norm_num
+
+/-- Splitting the unit flow evenly over the parallel edges attains `R_eff = 1 / 2`; sending it all
+along one edge costs `1`. -/
+example : flowEnergy (fun _ : Fin 2 => (1 : ℝ)) ![1 / 2, 1 / 2] = 1 / 2 ∧
+    flowEnergy (fun _ : Fin 2 => (1 : ℝ)) ![1, 0] = 1 := by
+  constructor <;> norm_num [flowEnergy, Fin.sum_univ_two]
+
+/-- A single edge of conductance `3`: `R_eff(0, 1) = 1 / 3`, so `w` enters as a conductance. -/
+example : effectiveResistance (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) 0 1 =
+    1 / 3 := by
+  have hv : laplacian (fun _ : Unit => (0 : Fin 2)) (fun _ => 1) (fun _ => 3) *ᵥ ![1 / 3, 0] =
+      Pi.single 0 1 - Pi.single 1 1 := by
+    funext x
+    fin_cases x <;>
+      simp [laplacian, Matrix.mulVec, dotProduct, Matrix.mul_apply, orientedIncidence_apply]
+  have h := (effectiveResistance_eq_sub_of_laplacian_mulVec (fun _ : Unit => (0 : Fin 2))
+    (fun _ => 1) (fun _ => by norm_num) (by decide) hv).1
+  rw [h]
+  norm_num
+
 end EndpointMapMultigraphThomsonPrincipleTest

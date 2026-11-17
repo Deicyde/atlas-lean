@@ -48,7 +48,7 @@ theorem hit0 : IsHittingTimeSolution e₁ e₂ (fun _ => 1) 0 ![0, 3, 4] := by
 /-- The commute time `4 + 4 = 8` between the ends of the path equals `2 |E| R_eff = 2 · 2 · 2`,
 recovering the series resistance `R_eff(0, 2) = 2`. -/
 example : effectiveResistance e₁ e₂ (fun _ => 1) 0 2 = 2 := by
-  have h := commute_time_identity_one e₁ e₂ connected hit0 hit2
+  have h := commute_time_identity_one e₁ e₂ (by decide) connected hit0 hit2
   simp at h
   linarith
 
@@ -72,7 +72,8 @@ theorem laplacian_mulVec_210 :
 /-- Tetali's hitting-time identity on the path: `E_0[τ_2] = 4 = 1 · 2 + 2 · 1 + 1 · 0`. -/
 example : (![4, 3, 0] : Fin 3 → ℝ) 0 =
     ∑ x, weightedDegree e₁ e₂ (fun _ => 1) x * (![2, 1, 0] : Fin 3 → ℝ) x :=
-  hitting_time_identity e₁ e₂ (fun _ => one_pos) connected hit2 laplacian_mulVec_210 rfl
+  hitting_time_identity e₁ e₂ (fun _ => one_pos) (by decide) connected hit2
+    laplacian_mulVec_210 rfl
 
 /-- The first-step equations have a solution, and it is the one computed above. -/
 example : ∃ h, IsHittingTimeSolution e₁ e₂ (fun _ => (1 : ℝ)) 2 h ∧ h 0 = 4 := by
@@ -81,5 +82,31 @@ example : ∃ h, IsHittingTimeSolution e₁ e₂ (fun _ => (1 : ℝ)) 2 h ∧ h 
   refine ⟨h, hh, ?_⟩
   rw [isHittingTimeSolution_unique e₁ e₂ (fun _ => one_pos) (by decide) connected hh hit2]
   rfl
+
+/-! The loop convention. Edge `0` joins `0` and `1`, edge `1` is a loop at `0`, unit conductances.
+`weightedDegree` counts the loop at both ends, so `π(0) = 3`, and the first-step equations for
+`z = 1` have the solution `h(0) = 3`. The source's network walk counts the loop once (it stays at
+`0` with probability `1/2`), so `E_0[τ_1] = 2`: with loops the system describes the walk with the
+loop's conductance doubled, which is why the hitting-time theorems assume no loops. -/
+
+/-- First endpoints for the loop example. -/
+abbrev l₁ : Fin 2 → Fin 2 := ![0, 0]
+/-- Second endpoints for the loop example. -/
+abbrev l₂ : Fin 2 → Fin 2 := ![1, 0]
+
+example : weightedDegree l₁ l₂ (fun _ => (1 : ℝ)) 0 = 3 := by
+  simp [weightedDegree, Fin.sum_univ_two]; norm_num
+
+example : IsHittingTimeSolution l₁ l₂ (fun _ => 1) 1 ![3, 0] := by
+  refine ⟨rfl, fun x hx => ?_⟩
+  fin_cases x
+  · simp [weightedDegree, neighbourSum, Fin.sum_univ_two]; norm_num
+  · exact absurd rfl hx
+
+example : ¬ IsHittingTimeSolution l₁ l₂ (fun _ => 1) 1 ![2, 0] := by
+  rintro ⟨-, h⟩
+  have := h 0 (by decide)
+  simp [weightedDegree, neighbourSum, Fin.sum_univ_two] at this
+  norm_num at this
 
 end EndpointMapMultigraphCommuteTimeTest
