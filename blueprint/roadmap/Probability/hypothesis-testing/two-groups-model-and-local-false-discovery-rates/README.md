@@ -49,3 +49,10 @@
 - [q-value is at most the pFDR of the smallest region](q-value-le.md)
 - [q-value is monotone in the statistic](monotone-q-value.md)
 - [q-value equals the pFDR when the pFDR is monotone](q-value-eq-of-monotone.md)
+
+## Related topics
+
+- [Benjamini–Hochberg procedure](../benjamini-hochberg-procedure/README.md): the frequentist false discovery rate control whose Bayesian reading is the tail-area false discovery rate $\operatorname{Fdr}$ (Efron 2008, Section 2).
+- [Knockoff filter](../knockoff-filter/README.md): Barber and Candès's false discovery rate control for variable selection in regression.
+- [Valid p-values and false discovery proportion](../valid-p-values-and-false-discovery-proportion/README.md): the false discovery proportion whose expectation is the false discovery rate.
+- [Empirical Bayes and Tweedie's formula](../../bayesian-statistics/empirical-bayes-and-tweedie-s-formula/README.md): empirical Bayes estimation in the same normal-means setting, where the marginal density of the z-values again carries the Bayes rule.
