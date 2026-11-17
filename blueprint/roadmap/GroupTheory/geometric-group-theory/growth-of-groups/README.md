@@ -14,6 +14,7 @@ Growth functions of finitely generated groups, polynomial growth, its independen
 - [Polynomial growth transfers between generating families](of-generators.md)
 - [Polynomial growth is independent of the finite generating set](has-polynomial-growth-iff.md)
 - [Polynomial growth is a quasi-isometry invariant](of-quasi-isometric-embedding.md)
+- [The infinite cyclic group has polynomial growth](has-polynomial-growth-int-generators.md)
 - [Virtually nilpotent groups have polynomial growth](has-polynomial-growth-of-virtually-nilpo.md)
 - [Gromov's polynomial growth theorem](virtually-nilpotent-of-has-polynomial-gr.md)
 

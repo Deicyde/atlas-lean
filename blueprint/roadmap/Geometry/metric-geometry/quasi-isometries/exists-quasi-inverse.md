@@ -4,10 +4,6 @@ An $(L, C)$-quasi-isometry $f : X \to Y$ has a quasi-inverse: an $(L, 3LC)$-quas
 
 The map $g$ sends $y$ to any $x$ with $d(f x, y) \le C$ (a choice). The distance bounds for $g$ follow from those of $f$ by the triangle inequality. This is the half of Gromov's definition saying that $f \circ g$ and $g \circ f$ are "translations", that is, at bounded distance from the identity.
 
-## Informally uses
-
-- [Quasi-isometry](is-quasi-isometry.md): the coarse density of the image is what lets $g$ be defined everywhere.
-
 ## Sources
 
 - M. Gromov, *Infinite groups as geometric objects*, Proceedings of the International Congress of Mathematicians, Warszawa 1983, vol. 1, 385–392, §1.B.

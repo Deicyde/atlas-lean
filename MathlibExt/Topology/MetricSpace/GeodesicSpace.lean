@@ -50,7 +50,8 @@ def IsGeodesicSegment (γ : ℝ → X) (x y : X) : Prop :=
 
 /-- **Geodesic metric space.** A pseudometric space `X` is geodesic if any two points `x y : X`
 are joined by a geodesic segment (`Metric.IsGeodesicSegment`) (Gromov, *Hyperbolic groups*, 1987,
-§1.6). -/
+§1.6). A segment between points at distance `0` is constant, so a pseudometric space with two
+distinct points at distance `0` is never geodesic; the notion is meant for metric spaces. -/
 def IsGeodesicSpace (X : Type*) [PseudoMetricSpace X] : Prop :=
   ∀ x y : X, ∃ γ : ℝ → X, IsGeodesicSegment γ x y
 

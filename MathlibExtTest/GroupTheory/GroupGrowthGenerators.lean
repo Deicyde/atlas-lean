@@ -9,7 +9,6 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.GroupTheory.GroupGrowthGenerators
-public import MathlibExt.GroupTheory.HyperbolicGroupExamples
 
 @[expose] public section
 

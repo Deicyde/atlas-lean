@@ -4,10 +4,9 @@ For two finite generating families $P$ and $Q$ of a group $G$, $P$ has polynomia
 
 The balls of radius $n$ for $P$ lie in the balls of radius $K n$ for $Q$, with $K$ the bi-Lipschitz constant of the word metrics, so $\gamma_P(n) \le \gamma_Q(Kn) \le C (Kn + 1)^d \le C (K + 1)^d (n + 1)^d$.
 
-## Informally uses
+## Background
 
-- [Change of finite generating set is bi-Lipschitz](../word-metrics-and-quasi-isometries/exists-word-length-bilipschitz.md): the comparison of word lengths.
-- [Polynomial growth transfers between generating families](of-generators.md): each direction.
+- [Change of finite generating set is bi-Lipschitz](../word-metrics-and-quasi-isometries/exists-word-length-bilipschitz.md): the two-sided comparison of word lengths behind the argument (the Lean proof uses the one-sided bound twice).
 
 ## Sources
 

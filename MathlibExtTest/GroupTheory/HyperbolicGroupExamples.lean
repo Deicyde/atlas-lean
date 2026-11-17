@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.GroupTheory.HyperbolicGroupExamples
+public import MathlibExt.GroupTheory.GroupGrowthGenerators
 public import Mathlib.Algebra.Group.TypeTags.Finite
 public import Mathlib.Data.ZMod.Defs
 
@@ -17,9 +18,6 @@ public import Mathlib.Data.ZMod.Defs
 namespace MathlibExtTest.HyperbolicGroupExamples
 
 open Group Group.Generators
-
-example : intGenerators.wordLength (Multiplicative.ofAdd (-7 : ℤ)) = 7 := by
-  rw [wordLength_intGenerators]; rfl
 
 /-- Non-degenerate instances of the hypotheses of the wanted theorems on hyperbolic groups and
 groups of polynomial growth: an infinite cyclic group and a nontrivial finite group. -/

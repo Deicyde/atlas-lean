@@ -6,6 +6,8 @@ Word metrics of finitely generated groups, their independence of the finite gene
 - [Word lengths of two generating families are comparable](exists-word-length-le-mul.md)
 - [Change of finite generating set is bi-Lipschitz](exists-word-length-bilipschitz.md)
 - [Images of words under a homomorphism](word-length-map-word-prod-le-mul.md)
+- [The standard generator of the infinite cyclic group](int-generators.md)
+- [Word length in the infinite cyclic group](word-length-int-generators.md)
 - [Homomorphisms are Lipschitz for word lengths](exists-word-length-le-mul-of-monoid-hom.md)
 - [Orbit maps are Lipschitz for the word length](dist-smul-le-mul-word-length.md)
 - [Distance between orbit points](dist-smul-smul-eq.md)

@@ -2,11 +2,11 @@
 
 A pseudometric space $X$ is geodesic if any two points $x, y$ are joined by a geodesic segment: a map $\gamma : \mathbb{R} \to X$ with $\gamma(0) = x$, $\gamma(d(x, y)) = y$ and $d(\gamma s, \gamma t) = |s - t|$ for $s, t \in [0, d(x, y)]$.
 
-These segments realise the distance globally, unlike the local geodesics of this topic (`IsGeodesicOn`), which only realise it near each time. Real normed spaces are geodesic, and so is every complete Riemannian manifold (Hopf–Rinow, Gromov's 1.6.A, not formalised). Geodesic spaces are the setting of the thin-triangle description of hyperbolicity and of the Švarc–Milnor lemma.
+A segment between two points at distance $0$ is constant, so a pseudometric space with two distinct points at distance $0$ is never geodesic: the notion is meant for metric spaces. These segments realise the distance globally, unlike the local geodesics of this topic (`IsGeodesicOn`), which only realise it near each time. Real normed spaces are geodesic, and so is every connected complete Riemannian manifold (Hopf–Rinow, Gromov's 1.6.A; not proved: the repository's wanted Hopf–Rinow entry states the equivalence of geodesic and metric completeness, not this existence of minimising geodesics). Geodesic spaces are the setting of the thin-triangle description of hyperbolicity and of the Švarc–Milnor lemma.
 
-## Informally uses
+## Background
 
-- [Geodesic segment](is-geodesic-segment.md): the paths required between any two points.
+- [Hopf–Rinow theorem](../../riemannian-geometry/hopf-rinow-theorem/hopf-rinow.md): the wanted statement of the Hopf–Rinow theorem, whose full form also gives minimising geodesics between any two points of a complete connected Riemannian manifold, making it a geodesic space.
 
 ## Sources
 

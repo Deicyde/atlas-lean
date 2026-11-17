@@ -6,11 +6,6 @@ Given $w, x, y, z$, let $t_0 = \min((x \cdot y)_w, (y \cdot z)_w)$ and take the 
 
 This is stronger than the source: Gromov's Lemma 6.3.B and Proposition 6.3.C conclude $2\delta$-hyperbolicity, because the lower bound (**) in his proof, $|x_1' - x_2'| \ge 2(t - (x_1 \cdot x_2) - \delta)$, holds without the $-\delta$.
 
-## Informally uses
-
-- [Thin geodesic triangles](triangles-thin.md): the hypothesis.
-- [Geodesic metric space](../geodesics-in-metric-spaces/is-geodesic-space.md): segments from $w$ to $x$, $y$ and $z$ exist.
-
 ## Sources
 
 - M. Gromov, *Hyperbolic groups*, in *Essays in Group Theory* (S. M. Gersten, ed.), Math. Sci. Res. Inst. Publ. 8, Springer, 1987, 75–263, Lemma 6.3.B and Proposition 6.3.C (constant $2\delta$).

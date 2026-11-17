@@ -8,13 +8,6 @@ Proper discontinuity is Mathlib's `ProperlyDiscontinuousSMul` (for compact $K, L
 
 The proof walks from $x_0$ to $g x_0$ along a geodesic in unit steps and chooses an orbit point within $R$ of each step; consecutive orbit points differ by an element of $S$. Conversely each element of $S$ moves $x_0$ by at most $2R + 1$.
 
-## Informally uses
-
-- [Geodesic metric space](../../../Geometry/metric-geometry/geodesics-in-metric-spaces/is-geodesic-space.md): the geodesics along which the walk is made.
-- [Cocompactness gives a covering radius](exists-covering-radius.md): the constant $R$.
-- [Walking along a geodesic](exists-chain.md): the word-length bound $|g|_S \le d(x_0, g x_0) + 2$.
-- [Orbit maps are Lipschitz for the word length](dist-smul-le-mul-word-length.md): the bound $d(x_0, g x_0) \le (2R + 1) |g|_S$.
-
 ## Background
 
 - [Quasi-isometry](../../../Geometry/metric-geometry/quasi-isometries/is-quasi-isometry.md): the notion the conclusion instantiates; see also the corollary [Švarc–Milnor as a quasi-isometry](is-quasi-isometry.md).

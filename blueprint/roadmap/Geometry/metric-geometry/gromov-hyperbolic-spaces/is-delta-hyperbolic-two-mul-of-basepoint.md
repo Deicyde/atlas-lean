@@ -4,10 +4,6 @@ If a pseudometric space $X$ satisfies the $\delta$-inequality $(x \cdot y)_o \ge
 
 The proof is Gromov's: the left side of the four-point inequality at $o$ does not depend on $o$, and equals $(t \cdot y)_x - \min((t \cdot z)_x, (y \cdot z)_x)$, which is the $\delta$-inequality at the base point $x$.
 
-## Informally uses
-
-- [The four-point inequality from one base point](four-point-of-basepoint.md): the base-point-free inequality with constant $2\delta$.
-
 ## Sources
 
 - M. Gromov, *Hyperbolic groups*, in *Essays in Group Theory* (S. M. Gersten, ed.), Math. Sci. Res. Inst. Publ. 8, Springer, 1987, 75–263, Corollary 1.1.B and Definition 1.1.C.

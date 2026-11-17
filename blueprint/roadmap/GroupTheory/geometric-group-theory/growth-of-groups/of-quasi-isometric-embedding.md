@@ -4,10 +4,6 @@ Let $P$ and $Q$ be finite generating families of groups $G$ and $H$, and let $f 
 
 The ball of radius $n$ of $G$ maps into a ball of radius $L' n + C'$ around $f(1)$, with $L' = \lceil L \rceil$ and $C' = \lceil C \rceil$, and each fibre of $f$ lies in a translate of the ball of radius $C'$; so $\gamma_P(n) \le \gamma_Q(L'n + C')\, \gamma_P(C')$. Hence quasi-isometric finitely generated groups have polynomial growth together, which is how Gromov combines his theorem with quasi-isometry: a finitely generated group quasi-isometric to a nilpotent group is virtually nilpotent.
 
-## Informally uses
-
-- [Word balls of a finite generating family are finite](finite-word-length-le.md): the balls being counted are finite.
-
 ## Background
 
 - [Quasi-isometric embedding](../../../Geometry/metric-geometry/quasi-isometries/is-quasi-isometric-embedding.md): the general metric notion, here written out for word metrics.

@@ -4,10 +4,6 @@ For two finite generating families $P$ and $Q$ of a group $G$ there is an intege
 
 So the word metric of a finitely generated group is well defined up to bi-Lipschitz equivalence, and every quasi-isometry invariant of $(G, d_P)$ is an invariant of the group $G$.
 
-## Informally uses
-
-- [Word lengths of two generating families are comparable](exists-word-length-le-mul.md): the one-sided bound, applied in both directions.
-
 ## Sources
 
 - M. Gromov, *Groups of polynomial growth and expanding maps*, Publ. Math. IHÉS 53 (1981), 53–73, p. 53 ("Elementary properties of the norm").

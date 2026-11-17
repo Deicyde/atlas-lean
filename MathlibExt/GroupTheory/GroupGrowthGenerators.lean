@@ -11,6 +11,7 @@ module
 public import MathlibExt.GroupTheory.GroupGrowth
 public import MathlibExt.GroupTheory.WordMetricComparison
 public import Mathlib.Data.Set.Finite.List
+public import MathlibExt.GroupTheory.IntWordMetric
 
 /-!
 # Polynomial growth does not depend on the finite generating set, and is a quasi-isometry invariant
@@ -33,6 +34,8 @@ of radius `n` for one finite generating family lies in the ball of radius `K n` 
   growth, then `G` has polynomial growth. In particular polynomial growth is invariant under
   quasi-isometry of finitely generated groups (Gromov, *Infinite groups as geometric objects*,
   Proc. ICM Warszawa 1983, §2.B: "the polynomial growth property ... is q.i. invariant").
+* `Group.Generators.hasPolynomialGrowth_intGenerators`: the infinite cyclic group has polynomial
+  growth (its balls have `2n + 1` elements).
 -/
 
 @[expose] public section
@@ -96,8 +99,9 @@ theorem hasPolynomialGrowth_iff [Finite ι] [Finite κ] (P : Generators G ι)
 families of groups `G` and `H`, and let `f : G → H` be a quasi-isometric embedding for the
 (left-invariant) word metrics: `|g⁻¹ g'|_P ≤ L |f(g)⁻¹ f(g')|_Q + C` and
 `|f(g)⁻¹ f(g')|_Q ≤ L |g⁻¹ g'|_P + C` for all `g g'`. If `Q` has polynomial growth, so does `P`.
-The map `f` need not be a homomorphism, injective or coarsely surjective (Gromov, *Infinite groups
-as geometric objects*, Proc. ICM Warszawa 1983, §2.B). -/
+The map `f` need not be a homomorphism, injective or coarsely surjective. In particular
+polynomial growth is invariant under quasi-isometry of finitely generated groups (Gromov,
+*Infinite groups as geometric objects*, Proc. ICM Warszawa 1983, §2.B). -/
 theorem HasPolynomialGrowth.of_quasiIsometricEmbedding {H κ' : Type*} [Group H] [Finite ι]
     (P : Generators G ι) (Q : Generators H κ') (f : G → H) {L C : ℝ}
     (hlow : ∀ g g' : G, (P.wordLength (g⁻¹ * g') : ℝ) ≤ L * Q.wordLength ((f g)⁻¹ * f g') + C)
@@ -153,5 +157,29 @@ theorem HasPolynomialGrowth.of_quasiIsometricEmbedding {H κ' : Type*} [Group H]
     _ ≤ A * (L' * n + C' + 1) ^ d * P.growth C' := Nat.mul_le_mul_right _ (hAd _)
     _ ≤ A * ((L' + C' + 1) * (n + 1)) ^ d * P.growth C' := by gcongr
     _ = A * P.growth C' * (L' + C' + 1) ^ d * (n + 1) ^ d := by rw [mul_pow]; ring
+
+/-- **The infinite cyclic group has polynomial growth.** The ball of radius `n` of
+`Multiplicative ℤ` for the generator `ofAdd 1` is finite with at most `2 (n + 1)` elements (it has
+exactly `2n + 1`), so `intGenerators` has polynomial growth of degree `1`. -/
+theorem hasPolynomialGrowth_intGenerators : intGenerators.HasPolynomialGrowth := by
+  have hinj : ∀ n : ℕ, Function.Injective
+      (fun g : {g : Multiplicative ℤ // intGenerators.wordLength g ≤ n} =>
+        (⟨(Multiplicative.toAdd g.1 + n).toNat, by
+          have h := g.2
+          rw [← ofAdd_toAdd g.1, wordLength_intGenerators] at h
+          omega⟩ : Fin (2 * n + 1))) := by
+    intro n a b hab
+    have ha := a.2
+    have hb := b.2
+    rw [← ofAdd_toAdd a.1, wordLength_intGenerators] at ha
+    rw [← ofAdd_toAdd b.1, wordLength_intGenerators] at hb
+    simp only [Fin.mk.injEq] at hab
+    apply Subtype.ext
+    apply Multiplicative.toAdd.injective
+    omega
+  refine ⟨fun n => Finite.of_injective _ (hinj n), 2, 1, fun n => ?_⟩
+  calc intGenerators.growth n ≤ Nat.card (Fin (2 * n + 1)) :=
+        Nat.card_le_card_of_injective _ (hinj n)
+    _ ≤ 2 * (n + 1) ^ 1 := by rw [Nat.card_fin, pow_one]; omega
 
 end Group.Generators
