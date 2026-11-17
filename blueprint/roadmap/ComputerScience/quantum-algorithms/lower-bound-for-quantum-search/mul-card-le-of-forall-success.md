@@ -11,7 +11,7 @@ $\Omega(\sqrt N)$ queries.
 This is the query lower bound that Bennett, Bernstein, Brassard and Vazirani (Section 3.1) derive from
 Theorem 3.3 and Corollary 3.4 and use to prove Theorem 3.5 (relative to a random oracle, NP is not
 contained in BQTime$(o(2^{n/2}))$). The forms differ: their final step bounds the error probability of
-an algorithm with $T \le 2^{n/2}/20$ on a random input through the total variation estimate of
+an algorithm with $T \le 2^{n/2}/20$ relative to a random oracle through the total variation estimate of
 Theorem 3.1, while the statement here concerns algorithms that succeed on every $y$ and ends with a
 direct counting argument. Theorem 3.5 itself (an oracle separation of complexity classes) is not
 formalised. The hypothesis $\|O_y v - v\| \le 2\|P_y v\|$ holds for the phase oracle and also for the
