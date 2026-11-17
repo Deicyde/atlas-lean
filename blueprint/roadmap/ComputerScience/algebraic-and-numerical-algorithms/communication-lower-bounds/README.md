@@ -7,6 +7,7 @@ The argument cuts the execution into segments of $M$ loads and stores, bounds by
 - [Bandwidth lower bound, segment-counting form](card-div-sub-le-words.md)
 - [Evaluations per segment](card-le-of-card-image-le.md)
 - [Communication lower bound for classical matrix multiplication](matmul-card-div-sub-le-words.md)
+- [Parallel bandwidth lower bound](exists-card-div-sub-le-words-of-parallel.md)
 
 ## Related topics
 

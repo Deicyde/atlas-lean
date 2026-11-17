@@ -50,6 +50,8 @@ arrays `a`, `b`, `c` is allowed, as in the source, since each projection is boun
 * `matmul_card_div_sub_le_words`: for dense `n × r` times `r × m` classical matrix multiplication,
   `n m r / (8 √M) - M ≤ W`, the `Ω(n³ / √M)` bound of Hong and Kung (1981) and Irony, Toledo
   and Tiskin (2004) for `n = m = r`.
+* `exists_card_div_sub_le_words_of_parallel`: with the work shared among `P` processors, some
+  processor moves at least `G / (8 P √M) - M` words.
 
 ## Cost model
 
@@ -144,5 +146,44 @@ theorem matmul_card_div_sub_le_words {n m r s : ℕ}
     exact mem_biUnion.2 ⟨t, mem_univ _, ht⟩
   have := card_div_sub_le_words univ seg M W hcov hA hB hC hW
   simpa [card_univ, Fintype.card_prod, Fintype.card_fin, mul_assoc] using this
+
+/-- **Parallel bandwidth lower bound.** Let the evaluations `G` be shared among `P > 0`
+processors, processor `q` evaluating the triples `Gq q` (together covering `G`), each with a local
+memory of `M` words and with an execution satisfying the segment hypotheses of
+`card_div_sub_le_words` for `W q` words moved. Then some processor moves at least
+`G / (8 P √M) - M` words: at least one processor performs at least `G / P` evaluations
+(Ballard, Demmel, Holtz and Schwartz, arXiv:0905.2485, Section 3.1, the argument of
+Corollary 5, there stated as `Ω(G / √(P · NNZ) - NNZ / P)` under memory balance,
+`M = O(NNZ / P)`). -/
+theorem exists_card_div_sub_le_words_of_parallel (G : Finset (ι × κ × μ)) {P : ℕ} (hP : 0 < P)
+    (Gq : Fin P → Finset (ι × κ × μ)) (hcover : G ⊆ univ.biUnion Gq)
+    (s : Fin P → ℕ) (seg : (q : Fin P) → Fin (s q) → Finset (ι × κ × μ)) (M : ℕ)
+    (W : Fin P → ℕ)
+    (hseg : ∀ q, Gq q ⊆ univ.biUnion (seg q))
+    (hA : ∀ q t, ((seg q t).image projXZ).card ≤ 4 * M)
+    (hB : ∀ q t, ((seg q t).image projYZ).card ≤ 4 * M)
+    (hC : ∀ q t, ((seg q t).image projXY).card ≤ 4 * M)
+    (hW : ∀ q, M * (s q - 1) ≤ W q) :
+    ∃ q, (G.card : ℝ) / (P * (8 * √(M : ℝ))) - M ≤ W q := by
+  -- some processor performs at least `|G| / P` evaluations
+  obtain ⟨q, -, hq⟩ : ∃ q ∈ (univ : Finset (Fin P)), (G.card : ℝ) / P ≤ (Gq q).card := by
+    by_contra hcon
+    push Not at hcon
+    have hsum : (G.card : ℝ) ≤ ∑ q, ((Gq q).card : ℝ) := by
+      exact_mod_cast (card_le_card hcover).trans card_biUnion_le
+    have hlt : ∑ q : Fin P, ((Gq q).card : ℝ) < ∑ _q : Fin P, (G.card : ℝ) / P :=
+      sum_lt_sum_of_nonempty ⟨⟨0, hP⟩, mem_univ _⟩ fun q _ => hcon q (mem_univ q)
+    have hP' : (0 : ℝ) < P := by exact_mod_cast hP
+    simp only [sum_const, card_univ, Fintype.card_fin, nsmul_eq_mul] at hlt
+    rw [mul_div_cancel₀ _ hP'.ne'] at hlt
+    linarith
+  refine ⟨q, ?_⟩
+  have h := card_div_sub_le_words (Gq q) (seg q) M (W q) (hseg q) (hA q) (hB q) (hC q) (hW q)
+  have hP' : (0 : ℝ) < P := by exact_mod_cast hP
+  have hden : (0 : ℝ) ≤ 8 * √(M : ℝ) := by positivity
+  calc (G.card : ℝ) / (P * (8 * √(M : ℝ))) - M = (G.card : ℝ) / P / (8 * √(M : ℝ)) - M := by
+        rw [div_div]
+    _ ≤ ((Gq q).card : ℝ) / (8 * √(M : ℝ)) - M := by gcongr
+    _ ≤ W q := h
 
 end Cslib.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound

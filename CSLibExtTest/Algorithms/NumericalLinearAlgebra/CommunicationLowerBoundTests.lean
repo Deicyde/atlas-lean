@@ -48,4 +48,17 @@ example : ((4 * 4 * 4 : ℕ) : ℝ) / (8 * √((4 : ℕ) : ℝ)) - (4 : ℕ) ≤
   matmul_card_div_sub_le_words block 4 28 (by decide) (by decide) (by decide) (by decide)
     (by norm_num)
 
+/-- The triples of `2 × 2` matrix multiplication with inner index `k = q`. -/
+def half (q : Fin 2) : Finset (Fin 2 × Fin 2 × Fin 2) := univ.filter fun p => p.2.2 = q
+
+/-- The parallel hypotheses are satisfiable: two processors split `2 × 2` matrix multiplication by
+the inner index, each in one segment with `M = 1`; some processor moves at least
+`8 / (2 · 8) - 1 < 0` words. -/
+example : ∃ q : Fin 2, ((univ : Finset (Fin 2 × Fin 2 × Fin 2)).card : ℝ) /
+    ((2 : ℕ) * (8 * √((1 : ℕ) : ℝ))) - (1 : ℕ) ≤ (fun _ : Fin 2 => (0 : ℕ)) q :=
+  exists_card_div_sub_le_words_of_parallel univ (P := 2) (by norm_num) half (by decide)
+    (fun _ => 1) (fun q _ => half q) 1 (fun _ => 0) (fun q => by decide +revert)
+    (fun q _ => by decide +revert) (fun q _ => by decide +revert) (fun q _ => by decide +revert)
+    (fun _ => by norm_num)
+
 end CSLibExtTest.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
