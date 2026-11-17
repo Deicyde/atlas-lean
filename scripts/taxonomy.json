@@ -3336,6 +3336,7 @@
   "MathlibExt/LinearAlgebra/Matrix/SylvesterCriterion": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Sylvester's criterion"},
   "MathlibExt/LinearAlgebra/Matrix/SylvesterInertia": {"to": "LinearAlgebra/bilinear-and-quadratic-forms", "title": "Sylvester's law of inertia"},
   "MathlibExt/LinearAlgebra/Matrix/Toeplitz": {"to": "LinearAlgebra/special-matrices", "title": "Toeplitz matrices"},
+  "MathlibExt/LinearAlgebra/Matrix/TraceRpowConcave": {"to": "LinearAlgebra/positive-definite-matrices", "title": "Lieb's concavity theorem"},
   "MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant": {"to": "LinearAlgebra/special-matrices", "title": "Toeplitz–Hessenberg determinants"},
   "MathlibExt/LinearAlgebra/Matrix/VanDerWaerden": {"to": "LinearAlgebra/special-matrices", "title": "Van der Waerden's permanent bound"},
   "MathlibExt/LinearAlgebra/Matrix/WeightedScatter": {"to": "Probability/linear-models-multivariate", "title": "Weighted means and scatter matrices"},

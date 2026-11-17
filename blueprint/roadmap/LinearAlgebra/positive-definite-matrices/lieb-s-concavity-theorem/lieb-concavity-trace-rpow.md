@@ -12,10 +12,12 @@ For fixed $B$ (take $r = 0$) the concavity in $A$ alone already follows from the
 
 Carlen's notes give Ando's tensor-product proof. Taking $K = I$, $q = 1 - p$, $r = p$ and differentiating at $p = 0$ gives the joint convexity of the relative entropy $(A, B) \mapsto \operatorname{tr} A \log A - \operatorname{tr} A \log B$ (Carlen, Theorem 6.3), from which monotonicity of relative entropy under partial traces and strong subadditivity follow (Carlen, Theorems 6.4 and 6.6).
 
-The statement is recorded as wanted: its proof is deferred. Theorem numbers refer to the lecture-notes draft of May 3, 2009.
+The statement is recorded as wanted: its proof is deferred. Its degenerate instances $r = 0$ and $q = 0$, where only one matrix varies, are proved. Theorem numbers refer to the lecture-notes draft of May 3, 2009.
 
 ## Background
 
+- [Lieb's concavity theorem, case `r = 0`](lieb-concavity-trace-rpow-of-right-eq-ze.md): the proved instance $r = 0$.
+- [Lieb's concavity theorem, case `q = 0`](lieb-concavity-trace-rpow-of-left-eq-zer.md): the proved instance $q = 0$.
 - [Lieb's concavity theorem](lieb-concavity.md): the exponential form $A \mapsto \operatorname{tr}\exp(H + \log A)$, from the same 1973 paper.
 - [The square is operator convex](../../../Analysis/operator-algebras/sq-convex-comb-le.md): an example of operator convexity, the operator-level notion behind the one-variable concavity of $t^q$.
 
