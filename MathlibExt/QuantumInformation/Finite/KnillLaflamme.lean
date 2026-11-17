@@ -34,6 +34,8 @@ This file proves both halves of the Knill–Laflamme conditions. Necessity is
 full name under which it was first recorded as a wanted theorem; its proof builds the recovery
 channel of Knill and Laflamme (proof of Theorem 3.2) and of Preskill's notes (equations
 (7.28)–(7.32)). The two halves are combined in `isCorrectable_iff_knillLaflamme`.
+`IsCorrectable.of_forall_mem_span` records that correctable families are linearly closed
+(Knill and Laflamme, Theorem 3.1).
 
 ## Source
 
@@ -91,6 +93,33 @@ theorem knillLaflamme_of_isCorrectable {P : Matrix n n ℂ} (hP : Pᴴ = P) (hPP
         rw [hf r a, hf r b, conjTranspose_smul, hP, Matrix.smul_mul, Matrix.mul_smul, hPP,
           smul_smul]
     _ = (∑ r, star (f r a) * f r b) • P := Finset.sum_smul.symm
+
+/-- **Correctable errors form a linear space.** If the errors `A a` are correctable on the code
+with projector `P`, then so is every family `B b` of linear combinations of them, with the same
+recovery channel (E. Knill and R. Laflamme, Phys. Rev. A 55 (1997), Theorem 3.1: "The family
+`A(C, R)` is linearly closed"). This is why correcting a basis of errors, such as the Pauli
+operators of weight at most `t`, corrects every error they span (J. Preskill, Ph219 lecture
+notes, Chapter 7, Section 7.2). -/
+theorem IsCorrectable.of_forall_mem_span {P : Matrix n n ℂ} {A : ι → Matrix n n ℂ}
+    (h : IsCorrectable P A) {κ : Type*} {B : κ → Matrix n n ℂ}
+    (hB : ∀ b, B b ∈ Submodule.span ℂ (Set.range A)) : IsCorrectable P B := by
+  obtain ⟨N, R, hR, hRA⟩ := h
+  refine ⟨N, R, hR, fun r b => ?_⟩
+  suffices key : ∀ X ∈ Submodule.span ℂ (Set.range A), ∃ c : ℂ, R r * X * P = c • P from
+    key _ (hB b)
+  intro X hX
+  induction hX using Submodule.span_induction with
+  | mem x hx =>
+    obtain ⟨a, rfl⟩ := hx
+    exact hRA r a
+  | zero => exact ⟨0, by simp⟩
+  | add x y _ _ hx hy =>
+    obtain ⟨c, hc⟩ := hx
+    obtain ⟨d, hd⟩ := hy
+    exact ⟨c + d, by rw [Matrix.mul_add, Matrix.add_mul, hc, hd, add_smul]⟩
+  | smul e x _ hx =>
+    obtain ⟨c, hc⟩ := hx
+    exact ⟨e * c, by rw [Matrix.mul_smul, Matrix.smul_mul, hc, smul_smul]⟩
 
 end MathlibExt.QuantumInformation.Finite.KnillLaflamme
 

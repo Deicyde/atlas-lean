@@ -6,10 +6,11 @@ error, or a bit flip on one of the three qubits) are
 Preskill's remark in Section 7.1 that "a three-qubit code would suffice to protect against a
 single bit flip".
 
-The statement is for the four Pauli errors. By the Knill–Laflamme theorem the same recovery also
-corrects every linear combination of them, for example a coherent rotation
-$\cos\theta\, I - i \sin\theta\, X_1$ of the first qubit; that extension is not stated in Lean
-here. Two bit flips are not corrected: the test module
+The statement is for the four Pauli errors. Because
+[correctable errors form a linear space](../knill-laflamme-conditions/is-correctable-of-forall-mem-span.md),
+the same recovery also corrects every linear combination of them, for example a coherent rotation
+$\cos\theta\, I - i \sin\theta\, X_1$ of the first qubit; the test module checks this for
+$c I + d X_1$. Two bit flips are not corrected: the test module
 `CSLibExtTest/Coding/BitFlipCodeTests.lean` checks that $X_1$ and $X_2 X_3$ together violate the
 necessary condition.
 

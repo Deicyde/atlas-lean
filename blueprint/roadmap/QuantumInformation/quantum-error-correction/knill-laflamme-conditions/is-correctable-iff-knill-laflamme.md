@@ -11,8 +11,10 @@ Hermitian and positive semidefinite, which is not part of the statement here.
 
 It combines the [necessity](knill-laflamme-of-is-correctable.md) and the
 [sufficiency](is-correctable-of-knill-laflamme.md) halves. The conditions are sesquilinear in the errors, so they hold for a family exactly when they
-hold for its linear span; this is why a code that corrects the Pauli errors on $t$ qubits corrects
-every error on those qubits (Preskill, Section 7.2). That consequence is not stated in Lean here.
+hold for its linear span, in line with the fact that
+[correctable errors form a linear space](is-correctable-of-forall-mem-span.md): a code that
+corrects the Pauli errors on $t$ qubits corrects every error on those qubits (Preskill,
+Section 7.2).
 
 ## Informally uses
 

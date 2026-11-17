@@ -20,6 +20,8 @@ public import CSLibExt.Coding.BitFlipCode
 * A bit flip on one qubit together with a bit flip on the other two is not correctable: their
   product `X₁X₂X₃` maps `|000⟩` to `|111⟩`, so the Knill–Laflamme condition fails. The weight
   restriction in `isCorrectable_bitFlip` is therefore needed.
+* A coherent error `c I + d X₁` (for instance a small rotation of the first qubit) is correctable,
+  since correctable families are linearly closed.
 * `(X^a)ᴴ X^a = 1`: each bit flip is unitary (a special case of the Pauli product formula).
 -/
 
@@ -61,5 +63,11 @@ example : ¬ IsCorrectable codeProjector ![pauli flip0 0, pauli flip12 0] := by
   simp only [hsum, codeProjector, diagonal_mul, mul_diagonal, pauli, of_apply, zero_dotProduct,
     sign_zero, Matrix.smul_apply, diagonal_apply, smul_eq_mul] at h00 h10
   norm_num at h00 h10
+
+example (c d : ℂ) :
+    IsCorrectable codeProjector fun _ : Unit => c • pauli 0 0 + d • pauli (Pi.single 0 1) 0 :=
+  isCorrectable_bitFlip.of_forall_mem_span fun _ =>
+    Submodule.add_mem _ (Submodule.smul_mem _ _ (Submodule.subset_span ⟨none, rfl⟩))
+      (Submodule.smul_mem _ _ (Submodule.subset_span ⟨some 0, rfl⟩))
 
 end Cslib.CodingTheory.BitFlip.Tests
