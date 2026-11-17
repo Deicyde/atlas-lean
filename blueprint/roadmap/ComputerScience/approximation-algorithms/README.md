@@ -3,6 +3,7 @@
 Polynomial-time algorithms with proved approximation ratios for NP-hard optimization: vertex cover, set cover, metric TSP, list scheduling, maximum coverage.
 
 - [Double-tree approximation for metric TSP](double-tree-approximation-for-metric-tsp/README.md)
+- [Goemans–Williamson MAX-CUT algorithm](goemans-williamson-max-cut-algorithm/README.md)
 - [Greedy set cover](greedy-set-cover/README.md)
 - [List scheduling on identical machines](list-scheduling-on-identical-machines/README.md)
 - [Maximum n-times coverage](maximum-n-times-coverage/README.md)
