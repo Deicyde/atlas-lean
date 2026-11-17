@@ -31,8 +31,13 @@ when there are at least two processes. They are therefore stated under the hypot
 proofs use: partial correctness (agreement for Lemma 3, both values decidable for Lemma 2) and
 CSLib's `PseudoTermination 1` (a decision reachable from every reachable state without any one
 process), which follows from the contradiction hypothesis
-(`CSLibExt.Computability.Distributed.FLP.Original`). No algorithm satisfying these hypotheses is
-formalized here, so their non-vacuity is not checked in Lean.
+(`CSLibExt.Computability.Distributed.FLP.Original`). The hypotheses of Lemma 2 are jointly
+satisfiable: the test module checks them for an algorithm on two processes. By an informal
+argument, those of Lemma 3 cannot all hold with exactly two processes and a reachable bivalent
+state: by Lemma 1 and agreement, the solo runs of either process from a state decide one common
+value, which no step changes. For three or more processes a Paxos-type algorithm satisfies
+them, but no such algorithm is formalized here, so the non-vacuity of Lemma 3 is not checked in
+Lean.
 
 ## Model (CSLib's `Cslib.FLP.Algorithm`)
 
@@ -43,7 +48,8 @@ formalized here, so their non-vacuity is not checked in Lean.
   it is in flight but it receives nothing more; at most `f` processes are faulty.
 * **Communication:** a reliable asynchronous message buffer (a multiset: unordered, no loss,
   no duplication, no corruption). A fair run delivers every message to a process that is not
-  faulty. Each process's input bit arrives as a first message.
+  faulty. Each process's input bit is a message to it that is in flight in the initial state;
+  it may be received after other messages.
 * **Protocols:** deterministic; a process's step depends on its state and the message it
   receives; decisions are write-once.
 * **Consensus** (`Cslib.FLP.Algorithm.Consensus`): in every reachable state the decided values

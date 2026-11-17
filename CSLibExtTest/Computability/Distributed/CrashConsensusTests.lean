@@ -98,6 +98,21 @@ example : ¬ crash2.Good 2 := by
   intro h
   exact absurd (h.2 0 1 0 ∅ ∅ (by simp [crash2]) (by simp [crash2])) (by decide)
 
+/-- Aguilera and Toueg's form: no protocol for three processes solves consensus in one round
+against one crash. -/
+example {σ M : Type} (Q : CrashProtocol (Fin 3) Bool σ M) : ¬ Q.SolvesOnePerRound 1 :=
+  Q.not_solvesOnePerRound (by simp)
+
+/-- With a single process, `follow0` solves consensus in one round against one crash per round,
+so `SolvesOnePerRound` is satisfiable (and the hypothesis `T + 2 ≤ n` cannot be dropped). -/
+example : (follow0 0).SolvesOnePerRound 1 := by
+  intro x π _
+  refine ⟨fun i j _ _ => by rw [Fin.fin_one_eq_zero i, Fin.fin_one_eq_zero j],
+    fun i _ => ⟨0, ?_⟩⟩
+  rw [Fin.fin_one_eq_zero i]
+  simp only [decision, state, follow0]
+  split <;> simp
+
 /-- No protocol for three processes solves consensus with one crash in one round. -/
 example {σ M : Type} (Q : CrashProtocol (Fin 3) Bool σ M) : ¬ Q.Solves 1 1 := fun h => by
   have := Q.f_add_one_le_of_solves (by simp) h

@@ -49,7 +49,10 @@ Lemmas 3 and 4 give a bivalent partial run up to round `T - 1`, contradicting Le
   `CrashPattern.card_faulty_le`: such a pattern has at most `T` faulty processes.
 * `CrashProtocol.state_congr`, `CrashProtocol.state_succ_eq`, `CrashProtocol.state_eq_of_silent`:
   what a process computes depends only on the messages delivered to it.
-* `CrashProtocol.f_add_one_le_of_solves`: the `f + 1` round lower bound.
+* `CrashProtocol.SolvesOnePerRound`, `CrashProtocol.not_solvesOnePerRound`: Aguilera and Toueg's
+  Theorem 1 in their system (at most one crash per round).
+* `CrashProtocol.f_add_one_le_of_solves`: the `f + 1` round lower bound when any `f` processes may
+  crash, a corollary.
 
 ## References
 
@@ -157,6 +160,20 @@ theorem state_succ_eq (x : G → V) {π π' : CrashPattern G} {r : ℕ} {i : G}
     Q.state x π (r + 1) i = Q.state x π' (r + 1) i := by
   simp only [state, h, hd]
 
+/-- **Solving consensus against at most one crash per round.** `Q` solves consensus in `T`
+rounds against every admissible crash pattern for `T` rounds (crashes before round `T`, at most
+one per round): no two correct processes decide differently, and the value decided by a correct
+process is the input of some process. This is the system of Aguilera and Toueg's Theorem 1. -/
+def SolvesOnePerRound (T : ℕ) : Prop :=
+  ∀ (x : G → V) (π : CrashPattern G), π.Good T →
+    (∀ i j, π i = none → π j = none → Q.decision x π T i = Q.decision x π T j) ∧
+      ∀ i, π i = none → ∃ j, x j = Q.decision x π T i
+
+/-- **Solving consensus against `f ≥ T` crashes includes one crash per round.** -/
+theorem solvesOnePerRound_of_solves [Fintype G] {f T : ℕ} (hQ : Q.Solves f T) (hT : T ≤ f) :
+    Q.SolvesOnePerRound T :=
+  fun x π hπ => hQ x π ((CrashPattern.card_faulty_le hπ).trans hT)
+
 /-! ### The proof of Aguilera and Toueg -/
 
 section Proof
@@ -218,11 +235,12 @@ private theorem exists_valence {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (hT : T
   obtain ⟨c, -, hc⟩ := exists_correct_ne T hG hT h.1 (Classical.arbitrary G)
   exact ⟨c, hc, π, ext_refl h, c, hc, rfl⟩
 
+omit [Fintype G] in
 /-- Agreement in an admissible pattern. -/
-private theorem agree {f : ℕ} (hQ : Q.Solves f T) (hT : T ≤ f) {π : CrashPattern G}
+private theorem agree (hQ : Q.SolvesOnePerRound T) {π : CrashPattern G}
     (hπ : π.Good T) {i j : G} (hi : π i = none) (hj : π j = none) :
     Q.decision x π T i = Q.decision x π T j :=
-  (hQ x π ((CrashPattern.card_faulty_le hπ).trans hT)).1 i j hi hj
+  (hQ x π hπ).1 i j hi hj
 
 omit [Fintype G] in
 /-- Deliveries of a crashed process. -/
@@ -233,8 +251,9 @@ private theorem delivers_some {π : CrashPattern G} {j : G} {ρ : ℕ} {D : Fins
   simp [CrashPattern.delivers, h]
 
 /-- **Lemma 2 of Aguilera and Toueg.** A partial run up to round `T - 1` is univalent. -/
-private theorem univalent_last {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (hQ : Q.Solves f T)
-    (hT : T ≤ f) (hT1 : 1 ≤ T) {π : CrashPattern G} (hπ : PartialAt T (T - 1) π) :
+private theorem univalent_last {f : ℕ} (hG : f + 2 ≤ Fintype.card G)
+    (hQ : Q.SolvesOnePerRound T) (hT : T ≤ f) (hT1 : 1 ≤ T) {π : CrashPattern G}
+    (hπ : PartialAt T (T - 1) π) :
     Univalent Q x T (T - 1) π := by
   obtain ⟨c₀, hc₀, -⟩ := exists_valence (Q := Q) (x := x) hG hT hπ
   set v₀ := Q.decision x π T c₀
@@ -271,7 +290,7 @@ private theorem univalent_last {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (hQ : Q
     have e := Q.state_succ_eq x hs₁ hd
     rw [Nat.sub_add_cancel hT1] at e
     simp only [decision, e]
-    exact agree hQ hT hπ.1 hjπ hc₀
+    exact agree hQ hπ.1 hjπ hc₀
   by_cases hp : ∃ p ρ D, π' p = some (ρ, D) ∧ π p = none
   · obtain ⟨p, ρ, D, hp, hpπ⟩ := hp
     have hρ := hnewT p ρ D hp hpπ
@@ -347,11 +366,11 @@ private theorem univalent_last {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (hQ : Q
           rwa [Nat.sub_add_cancel hT1] at this
         have hj₁ : π₁ j = none := by rw [hne₁ j hjp]; exact hj
         simp only [decision, e]
-        exact (agree hQ hT hg₁ hj₁ hc₁).trans hdc
+        exact (agree hQ hg₁ hj₁ hc₁).trans hdc
       by_cases hic : i = c
       · subst hic
         obtain ⟨j, hjc, hj⟩ := exists_correct_ne T hG hT hgood i
-        exact (agree hQ hT hgood hi hj).trans (hother j hjc hj)
+        exact (agree hQ hgood hi hj).trans (hother j hjc hj)
       · exact hother i hic hi
   · -- No new crash: `π'` is `π`.
     push Not at hp
@@ -364,7 +383,7 @@ private theorem univalent_last {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (hQ : Q
           | none => rfl
           | some c => exact absurd hj (hp j c.1 c.2 hj')
     subst this
-    exact agree hQ hT hπ.1 hi hc₀
+    exact agree hQ hπ.1 hi hc₀
 
 /-- The pattern with no crash. -/
 private def noCrash : CrashPattern G := fun _ => none
@@ -377,7 +396,7 @@ private theorem partialAt_noCrash (k : ℕ) : PartialAt T k (noCrash : CrashPatt
 /-- **Lemma 3 of Aguilera and Toueg.** If `T ≥ 1`, some input assignment gives a bivalent
 initial configuration. -/
 private theorem exists_bivalent_initial [Nontrivial V] {f : ℕ} (hG : f + 2 ≤ Fintype.card G)
-    (hQ : Q.Solves f T) (hT : T ≤ f) (hT1 : 1 ≤ T) :
+    (hQ : Q.SolvesOnePerRound T) (hT : T ≤ f) (hT1 : 1 ≤ T) :
     ∃ x : G → V, ¬ Univalent Q x T 0 noCrash := by
   obtain ⟨v, w, hvw⟩ := exists_pair_ne V
   let e := Fintype.equivFin G
@@ -387,7 +406,7 @@ private theorem exists_bivalent_initial [Nontrivial V] {f : ℕ} (hG : f + 2 ≤
   -- Validity: every value decided from `x k` is an input.
   have hvalid : ∀ k u, Valence Q (x k) T 0 noCrash u → ∃ j, x k j = u := by
     rintro k u ⟨π', ⟨-, -, hg⟩, i, hi, rfl⟩
-    exact (hQ (x k) π' ((CrashPattern.card_faulty_le hg).trans hT)).2 i hi
+    exact (hQ (x k) π' hg).2 i hi
   have key : ∀ k, k ≤ Fintype.card G → Valence Q (x k) T 0 noCrash v := by
     intro k
     induction k with
@@ -716,21 +735,31 @@ private theorem exists_bivalent_succ {f : ℕ} (hG : f + 2 ≤ Fintype.card G) (
 
 end Proof
 
-/-- **Consensus with `f` crash failures needs `f + 1` rounds** (Aguilera and Toueg, *A simple
-bivalency proof that t-resilient consensus requires t + 1 rounds*, Information Processing
-Letters 71, 1999, Theorem 1). If there are at least `f + 2` processes and at least two values,
-and a deterministic synchronous protocol solves consensus (agreement and validity, every correct
-process deciding at the end of round `T`) tolerating `f` crash failures, then `T ≥ f + 1`. The
-proof uses only crash patterns in which at most one process crashes in each round, as Aguilera
-and Toueg's does. -/
-theorem f_add_one_le_of_solves [Fintype G] [Nontrivial V] (Q : CrashProtocol G V σ M) {f T : ℕ}
-    (hG : f + 2 ≤ Fintype.card G) (hQ : Q.Solves f T) : f + 1 ≤ T := by
-  by_contra hlt
-  have hT : T ≤ f := by omega
+/-- **Consensus against `T` crashes, at most one per round, needs more than `T` rounds**
+(Aguilera and Toueg, *A simple bivalency proof that t-resilient consensus requires t + 1
+rounds*, Information Processing Letters 71, 1999, Theorem 1, with `t = T`). If there are at
+least `T + 2` processes and at least two values, no deterministic synchronous protocol solves
+consensus in `T` rounds against the crash patterns with crashes before round `T` and at most one
+crash per round. Aguilera and Toueg's system also allows crashes in later rounds, which change
+nothing before the decisions, so this hypothesis is weaker than theirs and the theorem is at
+least as strong as their Theorem 1. -/
+theorem not_solvesOnePerRound [Fintype G] [Nontrivial V] (Q : CrashProtocol G V σ M) {T : ℕ}
+    (hG : T + 2 ≤ Fintype.card G) : ¬ Q.SolvesOnePerRound T := by
+  intro hQ
   rcases Nat.eq_zero_or_pos T with h0 | hT1
-  · subst h0
-    exact Q.not_solves_zero (by omega) f hQ
-  obtain ⟨x, hx⟩ := exists_bivalent_initial (Q := Q) hG hQ hT hT1
+  · -- Zero rounds: each process decides a function of its own input.
+    subst h0
+    obtain ⟨i, j, hij⟩ := Fintype.exists_pair_of_one_lt_card (by omega : 1 < Fintype.card G)
+    obtain ⟨v, w, hvw⟩ := exists_pair_ne V
+    have hg : (noCrash : CrashPattern G).Good 0 := (partialAt_noCrash (T := 0) 0).1
+    have hconst : ∀ (u : V) (k : G), Q.decide k (Q.init k u) = u := by
+      intro u k
+      obtain ⟨l, hl⟩ := (hQ (fun _ => u) _ hg).2 k rfl
+      exact hl.symm
+    have h := (hQ (fun k => if k = i then v else w) _ hg).1 i j rfl rfl
+    simp only [decision, state, ite_true, hij.symm, ite_false, hconst] at h
+    exact hvw h
+  obtain ⟨x, hx⟩ := exists_bivalent_initial (Q := Q) hG hQ le_rfl hT1
   -- Extend the bivalent initial configuration round by round, up to round `T - 1`.
   have key : ∀ k, k ≤ T - 1 → ∃ π, PartialAt T k π ∧ ¬ Univalent Q x T k π := by
     intro k
@@ -739,10 +768,20 @@ theorem f_add_one_le_of_solves [Fintype G] [Nontrivial V] (Q : CrashProtocol G V
     | succ k ih =>
         intro hk
         obtain ⟨π, hπ, hb⟩ := ih (by omega)
-        exact exists_bivalent_succ hG hT (by omega) hπ hb
+        exact exists_bivalent_succ hG le_rfl (by omega) hπ hb
   obtain ⟨π, hπ, hb⟩ := key (T - 1) le_rfl
-  exact hb (univalent_last hG hQ hT hT1 hπ)
+  exact hb (univalent_last hG hQ le_rfl hT1 hπ)
 
+/-- **Consensus with `f` crash failures needs `f + 1` rounds.** If there are at least `f + 2`
+processes and at least two values, and a deterministic synchronous protocol solves consensus
+(agreement and validity, every correct process deciding at the end of round `T`) tolerating `f`
+crash failures, then `T ≥ f + 1`. This is weaker than Aguilera and Toueg's Theorem 1 (*A simple
+bivalency proof that t-resilient consensus requires t + 1 rounds*, 1999), which allows at most
+one crash per round; it follows from their form, `not_solvesOnePerRound`. -/
+theorem f_add_one_le_of_solves [Fintype G] [Nontrivial V] (Q : CrashProtocol G V σ M) {f T : ℕ}
+    (hG : f + 2 ≤ Fintype.card G) (hQ : Q.Solves f T) : f + 1 ≤ T := by
+  by_contra hlt
+  exact Q.not_solvesOnePerRound (T := T) (by omega) (Q.solvesOnePerRound_of_solves hQ (by omega))
 
 end CrashProtocol
 

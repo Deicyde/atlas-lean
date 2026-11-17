@@ -4,4 +4,4 @@ With at least two processes and at least two values, no protocol solves consensu
 
 ## Related topics
 
-- [Consensus with $f$ crash failures needs $f + 1$ rounds](f-add-one-le-of-solves.md): the general bound, of which this is the case $f = 0$, and whose proof uses it for $T = 0$.
+- [Consensus with $f$ crash failures needs $f + 1$ rounds](f-add-one-le-of-solves.md): the general bound, of which this is the case $f = 0$; its proof repeats this argument when $T = 0$.

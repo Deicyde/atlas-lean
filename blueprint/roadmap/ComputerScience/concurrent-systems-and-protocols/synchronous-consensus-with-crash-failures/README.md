@@ -18,6 +18,9 @@ Consensus in synchronous rounds when processes may crash. The model on these pag
 - [Decision under crash failures](decision.md)
 - [Solving consensus with crash failures](solves.md)
 - [Consensus needs a round](not-solves-zero.md)
+- [Solving consensus against at most one crash per round](solves-one-per-round.md)
+- [Consensus against $T$ crashes, at most one per round, needs more than $T$ rounds](not-solves-one-per-round.md)
+- [Solving consensus against $f \ge T$ crashes includes one crash per round](solves-one-per-round-of-solves.md)
 - [Consensus with $f$ crash failures needs $f + 1$ rounds](f-add-one-le-of-solves.md)
 
 ## Related topics
