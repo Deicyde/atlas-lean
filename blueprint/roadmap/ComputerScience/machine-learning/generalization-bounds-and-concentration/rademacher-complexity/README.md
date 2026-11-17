@@ -45,6 +45,13 @@ a generalization guarantee is recorded as a wanted statement.
 - [Sign patterns of a set family](sign-patterns.md)
 - [The VC dimension is at most the size of the ground set](../../../../Combinatorics/extremal-set-theory/vc-dim-le-card.md) (in Combinatorics)
 - [Cost vectors on a sample](cost-vectors.md)
+- [The margin cost vectors](margin-costs.md)
+- [The margin costs of voting classifiers are no more complex than the base classifiers](rademacher-complexity-margin-costs-conve.md)
+- [The ramp cost](ramp.md)
+- [The ramp dominates the zero-one loss](indicator-le-ramp.md)
+- [The ramp is dominated by the margin error](ramp-le-indicator.md)
+- [The ramp $\rho_\theta$ is $1/\theta$-Lipschitz](lipschitz-with-ramp.md)
+- [The complexity term of the margin bound for voting classifiers](rademacher-complexity-ramp-costs-convex.md)
 
 ## Related topics
 
@@ -52,3 +59,4 @@ a generalization guarantee is recorded as a wanted statement.
 - [Rademacher type and cotype](../../../../Analysis/banach-spaces/geometry-of-banach-spaces/rademacher-type-and-cotype/README.md): the same uniform averages over sign vectors, in Banach-space geometry.
 - [Hedge algorithm](../../online-learning-and-boosting/hedge-algorithm/README.md): the online counterpart, where regret replaces generalization error.
 - [Two-layer neural networks and Barron space](../../supervised-learning/two-layer-neural-networks-and-barron-space/README.md): homogeneity, contraction and Massart's lemma combine into the bound $2 Q \sqrt{2 \log(2d) / n}$ for path-norm balls of two-layer ReLU networks, independent of the width.
+- [AdaBoost](../../online-learning-and-boosting/adaboost/README.md): voting classifiers whose training margins AdaBoost drives up; the margin-cost bounds here are the complexity side of the margins explanation.

@@ -1564,6 +1564,7 @@
   "CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Probabilistic principal component analysis"},
   "CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Probabilistic principal component analysis"},
   "CSLibExt/MachineLearning/LinearQuadraticRegulator": {"to": "ComputerScience/machine-learning/reinforcement-learning", "title": "Linear quadratic regulator"},
+  "CSLibExt/MachineLearning/MarginRademacher": {"to": "ComputerScience/machine-learning/generalization-bounds-and-concentration", "title": "Rademacher complexity"},
   "CSLibExt/MachineLearning/MatrixFactorization/SuccessiveProjection": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Successive projection algorithm"},
   "CSLibExt/MachineLearning/NeuralNetworks/BarronApproximation": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Two-layer neural networks and Barron space"},
   "CSLibExt/MachineLearning/NeuralNetworks/BarronSpace": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Two-layer neural networks and Barron space"},

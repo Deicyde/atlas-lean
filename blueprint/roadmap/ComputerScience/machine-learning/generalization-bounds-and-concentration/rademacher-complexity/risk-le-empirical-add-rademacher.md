@@ -14,7 +14,11 @@ This statement is recorded as wanted: its proof is not formalized.
 
 - [Concentration of the uniform deviation](../bounded-differences-uniform-deviation.md): mathematical prerequisite, the bounded-differences step of the proof.
 - [Translation invariance](rademacher-complexity-add-singleton.md): why the costs need no recentring.
-- [The contraction lemma](rademacher-complexity-coord-map-le.md): applied with a Lipschitz margin cost, it turns this into Bartlett and Mendelson's margin bound (their Theorem 7).
+
+## Background
+
+- [The contraction lemma](rademacher-complexity-coord-map-le.md): applied with a Lipschitz margin cost, it turns this into Bartlett and Mendelson's margin bound (their Theorem 7). That margin bound is a consequence of this theorem; the lemma is not a step of its proof.
+- [The margin costs of voting classifiers are no more complex than the base classifiers](rademacher-complexity-margin-costs-conve.md): the complexity term of that margin bound when the class is a convex hull, as for boosting.
 
 ## Sources
 
