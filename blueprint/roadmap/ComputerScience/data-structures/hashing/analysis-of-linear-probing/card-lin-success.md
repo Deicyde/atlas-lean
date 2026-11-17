@@ -16,6 +16,9 @@ sequences, and the sequences leaving the last cell empty are exactly the non-ove
 $n$ cells. The Lean proof transfers [Pollak's count of partial parking functions](../../../../Combinatorics/parking-functions/pollak-partial-parking-functions-card.md),
 which is proved by the same circle argument, along the equivalence between
 [non-overflow sequences and partial parking functions](../../../../Combinatorics/parking-functions/lin-success-iff-is-partial-parking-funct.md).
+For the cyclic model of this topic the circle argument is proved directly, as
+[rotational symmetry of linear probing](mul-card-not-mem-occupancy.md) and the
+[number of sequences that leave a given cell empty](card-not-mem-occupancy.md).
 
 ## Informally uses
 

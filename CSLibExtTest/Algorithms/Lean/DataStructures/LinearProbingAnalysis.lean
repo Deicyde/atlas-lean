@@ -80,6 +80,20 @@ example : (1 + knuthE 0 3 2) / 2 = successfulSearchCost 3 2 := by
   rw [insertionCost, h]
   norm_num
 
+/-- The circle argument on a table of 3 cells with 2 items: `(3 - 2) · 3 = 3` of the `9` hash
+sequences leave cell `0` empty, by the theorem and by enumeration. -/
+example : (Finset.univ.filter fun a : Fin 2 → Fin 3 => (0 : Fin 3) ∉ occupancy (List.ofFn a)).card =
+    3 := by
+  decide
+
+example : (Finset.univ.filter fun a : Fin 2 → Fin 3 => (0 : Fin 3) ∉ occupancy (List.ofFn a)).card =
+    (3 - 2) * 3 ^ (2 - 1) :=
+  card_not_mem_occupancy (by norm_num) (by norm_num) 0
+
+/-- Three items fill a table of three cells. -/
+example (l : List (Fin 3)) (hl : l.length = 3) : (occupancy l).card = 3 := by
+  rw [card_occupancy (by omega), hl]
+
 /-- Lemma 1 for `k = n = 3`: there are `4 ^ 2 = 16` parking functions of length 3. -/
 example : Nat.card {f : Fin 3 → Fin 3 // MetaMathlibExt.PollakPartialParking.LinSuccess 3 3 f} =
     16 :=

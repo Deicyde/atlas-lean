@@ -14,11 +14,16 @@ $\alpha < 1$.
 - [Probes of a linear-probing insertion](probes.md)
 - [Cell taken by a linear-probing insertion](insert-cell.md)
 - [Occupied cells after a hash sequence](occupancy.md)
+- [An insertion into a table that is not full lands on an empty cell](insert-cell-not-mem.md)
+- [Linear probing places every item while the table has room](card-occupancy.md)
+- [Linear probing commutes with rotations of the table](occupancy-map-rotate.md)
 - [An insertion into an empty table has displacement zero](displacement-empty.md)
 - [An insertion into an empty table makes one probe](probes-empty.md)
 
 ## Exact results
 
+- [Rotational symmetry of linear probing](mul-card-not-mem-occupancy.md)
+- [Number of hash sequences that leave a given cell empty](card-not-mem-occupancy.md)
 - [Number of hash sequences without overflow](card-lin-success.md)
 - [Expected cost of a linear-probing insertion](insertion-cost.md)
 - [Expected cost of a successful linear-probing search](successful-search-cost.md)
