@@ -8,19 +8,28 @@ $f(1), \dots, f(M) \in \mathcal{A}^n$ and a decoder $g : \mathcal{B}^n \to \{1, 
 maximal error probability is at most $\varepsilon$:
 $W^{\otimes n}(\{y : g(y) \ne m\} \mid f(m)) \le \varepsilon$ for every message $m$.
 
-This is an established result recorded as a wanted statement; it is not proved here.
+The proof here follows Gallager (1965), not the cited book. Pick an input law $p$ with
+$R < I(p; W)$ (if $R \le 0$ a single code word suffices) and a rate $R'$ in nats with
+$R \ln 2 < R' < I(p; W) \ln 2$. Some $0 < \rho \le 1$ has $E = E_0(\rho, p) - \rho R' > 0$. For each
+$n$ take $M = \lceil 2^{nR} \rceil$, which is at most $e^{nR'}$ for large $n$. The expurgated random
+coding bound gives a code whose every word has error at most
+$4 M^\rho e^{-n E_0(\rho, p)} \le 4 e^{-nE}$ under maximum-likelihood decoding, and a
+maximum-likelihood decoder errs with at most that probability. For large $n$,
+$4 e^{-nE} \le \varepsilon$.
+
+The theorem keeps the full name it had as a wanted statement and is now proved in the
+`MathlibExt` library.
 
 ## Informally uses
 
 - [Mutual information of a finite joint law](../../entropy-and-mutual-information/conditional-mutual-information/finite-mutual-information.md):
   defines the capacity.
-
-## Background
-
-- [Coding theorem, exponential achievability for average error](../random-coding-bound-and-gallager-s-exponent/exists-pos-exponent-avg-error-le.md):
-  Gallager's random coding route, proved for the average error and a fixed input law $p$, at every
-  rate below $I(p; W)$ in nats; the maximal-error form stated here follows by expurgation.
+- [Positive random coding exponent below the mutual information](../random-coding-bound-and-gallager-s-exponent/exists-gallager-e0-sub-pos.md)
+- [Expurgated random coding bound, maximal error](../random-coding-bound-and-gallager-s-exponent/exists-code-ml-error-prob-le.md)
+- [A maximum-likelihood decoder exists](exists-ml-decoder.md)
+- [Maximum-likelihood decoding errs only on ties or worse](measure-real-pi-le-ml-error-prob.md)
 
 ## Sources
 
 - Y. Polyanskiy and Y. Wu, Information Theory: From Coding to Learning (Cambridge University Press, 2025), Theorem 19.9 with Corollary 19.5 (in particular `C^(max) = C`); C. E. Shannon (1948), Theorem 11.
+- R. G. Gallager, "A simple derivation of the coding theorem and some applications", IEEE Trans. Inform. Theory IT-11(1):3–18, January 1965, Theorem 1 and Corollary 2 (the route of the proof).

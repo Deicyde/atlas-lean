@@ -3221,6 +3221,7 @@
   "MathlibExt/GroupTheory/Subgroup/SupZpowers": {"to": "NumberTheory/modular-forms-q-series/modular-forms", "title": "Modular group and congruence subgroups"},
   "MathlibExt/GroupTheory/SzeleCyclicNumber": {"to": "GroupTheory/orders-and-spectra", "title": "Cyclic numbers"},
   "MathlibExt/GroupTheory/TwoPowerRank": {"to": "GroupTheory/abelian-groups", "title": "Two-power ranks of finite abelian groups"},
+  "MathlibExt/InformationTheory/ChannelCodingAchievability": {"to": "InformationTheory/channel-coding", "title": "Shannon's channel coding theorem"},
   "MathlibExt/InformationTheory/ChowLiu": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Chow–Liu trees"},
   "MathlibExt/InformationTheory/ConditionalEntropy": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Conditional entropy and mutual information"},
   "MathlibExt/InformationTheory/ConditionalMutualInformation": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Conditional mutual information"},

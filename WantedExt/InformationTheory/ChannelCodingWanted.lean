@@ -26,13 +26,14 @@ blocklength `n` with `M` messages is an encoder `f : Fin M → (Fin n → α)` a
 `g : (Fin n → β) → Fin M` without an erasure output; message `m` is decoded wrongly with probability
 `W^{⊗n}(· | f m){y | g y ≠ m}`, the product law `Measure.pi fun i => (W (f m i)).toMeasure`.
 
-The three statements below are the coding theorem as Polyanskiy and Wu state it: every rate
-below capacity is achievable with vanishing maximal error, every rate above capacity forces the
-average error to one (strong converse), and Fano's inequality bounds every code at every
-blocklength (weak converse). None is proved here. The book's codes may be randomised and their
-decoders may output an erasure; for achievability deterministic codes lose nothing, while the two
-converses below are stated for deterministic erasure-free codes only, which makes them weaker
-than the book's.
+The coding theorem as Polyanskiy and Wu state it has three parts: every rate below capacity is
+achievable with vanishing maximal error, every rate above capacity forces the average error to one
+(strong converse), and Fano's inequality bounds every code at every blocklength (weak converse).
+Achievability, `channelCoding_achievability`, is proved, under the same name, in
+`MathlibExt.InformationTheory.ChannelCodingAchievability` by Gallager's random coding bound. The
+two converses below are not proved here. The book's codes may be randomised and their decoders may
+output an erasure; the two converses below are stated for deterministic erasure-free codes only,
+which makes them weaker than the book's.
 
 ## References
 
@@ -48,23 +49,6 @@ namespace MathlibExt.InformationTheory.ChannelCodingWanted
 @[expose] public section
 
 open MeasureTheory _root_.InformationTheory
-
-/-- **Shannon's channel coding theorem, achievability.** For a discrete memoryless channel
-`W : α → PMF β` on finite alphabets (`α` nonempty), every rate `R < C(W)` (bits per channel use)
-is achievable
-with maximal error probability at most `ε`, for every `ε > 0` and all large blocklengths `n`:
-there is a code with `M ≥ 2^{nR}` codewords of length `n` whose every message is decoded wrongly
-with probability at most `ε`.
-Source: Y. Polyanskiy and Y. Wu, Information Theory: From Coding to Learning (Cambridge
-University Press, 2025), Theorem 19.9 with Corollary 19.5 (in particular `C^(max) = C`);
-C. E. Shannon (1948), Theorem 11. -/
-public theorem_wanted channelCoding_achievability {α β : Type*} [Fintype α] [Nonempty α]
-    [Fintype β] [MeasurableSpace β] [DiscreteMeasurableSpace β] (W : α → PMF β) {R : ℝ}
-    (hR : R < ⨆ p : PMF α, finiteMutualInformation (p.bind fun a => (W a).map (Prod.mk a)))
-    {ε : ℝ} (hε : 0 < ε) :
-    ∀ᶠ n in Filter.atTop, ∃ (M : ℕ) (f : Fin M → Fin n → α) (g : (Fin n → β) → Fin M),
-      (2 : ℝ) ^ ((n : ℝ) * R) ≤ M ∧
-        ∀ m, (Measure.pi fun i => (W (f m i)).toMeasure).real {y | g y ≠ m} ≤ ε
 
 /-- **Strong converse** (Wolfowitz). For a discrete memoryless channel `W` on finite alphabets,
 every rate `R > C(W)` and every `ε < 1`, for all large blocklengths `n` every code with
