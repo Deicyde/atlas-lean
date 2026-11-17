@@ -6,6 +6,7 @@ Let $D$ be a pointed directed-complete partial order and $f : D \to D$ a Scott-c
 
 - [Kleene's fixed-point theorem for pointed dcpos](map-i-sup-iterate-bot.md): the supremum of the iterates is a fixed point.
 - [The least fixed point lies below every prefixed point](lfp-le.md): the same statement for ω-continuous maps on ω-complete partial orders.
+- [Kleene's supremum for dcpos is the repository's least fixed point](i-sup-iterate-bot-eq-lfp.md): the equation from which this theorem is derived.
 
 ## Sources
 

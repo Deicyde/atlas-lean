@@ -37,7 +37,11 @@ Here $e_n$ is Scott's binary enumeration. The pairing $\langle n, m\rangle$ is M
 - [The sets of naturals containing `n` are Scott-open](is-open-set-of-mem.md)
 - [Scott-open sets of `P(ω)` have finite character](exists-finset-mem-of-is-open.md)
 - [Continuity into `P(ω)` is tested on the subbasic open sets](continuous-of-is-open-set-of-mem.md)
+- [Scott's embedding map](is-embedding-set-of-mem.md)
 - [Scott's embedding theorem](exists-is-embedding-with-scott.md)
+- [Scott's extension of a map into `P(ω)`](extend-scott.md)
+- [Scott's extension is continuous](continuous-extend-scott.md)
+- [Scott's extension extends a continuous map](extend-scott-apply.md)
 - [Scott's extension theorem](exists-continuous-extend-with-scott.md)
 
 ## Related topics
@@ -45,3 +49,4 @@ Here $e_n$ is Scott's binary enumeration. The pairing $\langle n, m\rangle$ is M
 - [Models of the untyped lambda calculus](../../../ComputerScience/programming-language-semantics/models-of-the-untyped-lambda-calculus/README.md): the interpretation of λ-terms in $P(\omega)$, with soundness of β-reduction.
 - [Scott-continuous maps and least fixed points](../scott-continuous-maps-and-least-fixed-points/README.md): function spaces and Kleene's fixed-point theorem in general dcpos.
 - [Scott's inverse-limit theorem](../scott-s-inverse-limit-theorem.md): the extensional model $D_\infty \cong [D_\infty \to D_\infty]$.
+- [Continuous lattices](../continuous-lattices/README.md): the injective spaces, of which $P(\omega)$ is one.

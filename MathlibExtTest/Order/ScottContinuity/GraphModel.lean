@@ -77,3 +77,9 @@ example : IsCompactElement ({0, 1} : Set ℕ) :=
 /-- `ℕ` itself is not a compact element of `P(ω)`. -/
 example : ¬ IsCompactElement (Set.univ : Set ℕ) := fun h =>
   Set.infinite_univ ((isCompactElement_iff_finite _).1 h)
+
+/-- Scott's explicit extension agrees with a continuous map on the subspace. -/
+example : extendScott ({true} : Set Bool) (fun _ => Topology.WithScott.toScott ({0} : Set ℕ))
+    true = Topology.WithScott.toScott {0} :=
+  extendScott_apply (X := ({true} : Set Bool))
+    (f := fun _ => Topology.WithScott.toScott ({0} : Set ℕ)) continuous_const ⟨true, rfl⟩

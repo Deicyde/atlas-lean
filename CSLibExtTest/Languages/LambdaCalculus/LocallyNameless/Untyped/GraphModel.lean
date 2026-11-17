@@ -48,3 +48,13 @@ example : ∃ ρ : ℕ → Set ℕ,
 example : ScottContinuous fun ρ : ℕ → Set ℕ =>
     denote ρ (.abs (.app (.fvar 0) (.bvar 0)) : Term ℕ) (fun _ => ∅) :=
   scottContinuous_denote_fvar _ _
+
+/-- β-soundness under λ: the step `λ.((λ.0) 0) ⟶ λ.0`, which contracts a redex below a binder
+(the `Xi.abs` case of full β-reduction), preserves denotations. -/
+example (ρ : ℕ → Set ℕ) (bs : ℕ → Set ℕ) :
+    denote ρ (.abs (.app (.abs (.bvar 0)) (.bvar 0)) : Term ℕ) bs =
+      denote ρ (.abs (.bvar 0)) bs := by
+  have h1 : Term.LC (.abs (.bvar 0) : Term ℕ) := (Term.lcAt_iff_LC _).1 (by decide)
+  have hstep : Term.FullBeta (.abs (.app (.abs (.bvar 0)) (.bvar 0)) : Term ℕ) (.abs (.bvar 0)) :=
+    Term.Xi.abs ∅ fun x _ => Term.Xi.base (Term.Beta.beta h1 (Term.LC.fvar x))
+  exact denote_eq_of_fullBeta hstep ρ bs

@@ -8,6 +8,7 @@ Here Scott continuity is for directed sets, Mathlib's `ScottContinuous`. The sta
 
 - [Kleene's fixed point is the least prefixed point](i-sup-iterate-bot-le.md): the other half of Kleene's theorem.
 - [The least fixed point is a fixed point](lfp-eq.md): the same statement for ω-continuous maps on ω-complete partial orders.
+- [Kleene's supremum for dcpos is the repository's least fixed point](i-sup-iterate-bot-eq-lfp.md): the equation from which this theorem is derived.
 
 ## Sources
 

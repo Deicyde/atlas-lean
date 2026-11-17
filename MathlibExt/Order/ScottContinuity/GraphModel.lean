@@ -36,14 +36,16 @@ Main results:
   `app (graph f) = f` for every Scott-continuous `f`, and `u ⊆ graph (app u)` for every `u`.
   So the Scott-continuous self-maps of `P(ω)` form a retract of `P(ω)`, which is what makes
   `P(ω)` a model of the untyped λ-calculus with β-conversion.
-* `exists_isEmbedding_withScott`: Scott's embedding theorem (Theorem 1.6): every second-countable
-  T₀ space embeds topologically in `P(ω)` with its Scott topology.
+* `isEmbedding_setOf_mem`, `exists_isEmbedding_withScott`: Scott's embedding theorem (Theorem
+  1.6): every second-countable T₀ space embeds topologically in `P(ω)` with its Scott topology,
+  by Scott's map `x ↦ {n | x ∈ Uₙ}`.
 * `app_graph_diag`: Scott's first recursion theorem (Theorem 2.5) at the level of sets: with
   `d = graph (x ↦ app u (app x x))`, the self-application `app d d` (the value of the paradoxical
   combinator `Y` at `u`) is the least fixed point `⨆ k, (app u)^[k] ∅` of `app u`.
 * `graph_app_eq_iff`: Theorem 1.2 (iii), which sets are graphs.
-* `exists_continuous_extend_withScott`: Scott's extension theorem (Theorem 1.5): `P(ω)` is an
-  injective space.
+* `extendScott`, `continuous_extendScott`, `extendScott_apply`,
+  `exists_continuous_extend_withScott`: Scott's extension theorem (Theorem 1.5), with Scott's
+  formula for the extension: `P(ω)` is an injective space.
 * `isCompactElement_iff_finite`: the compact elements of the algebraic lattice `P(ω)` are the
   finite sets.
 * `exists_graph_app_ne`: the retraction is not an isomorphism, so `P(ω)` is not extensional
@@ -238,14 +240,16 @@ section Algebraic
 
 /-- **The compact elements of `P(ω)` are the finite sets.** A set `s ⊆ ℕ` is a compact element of
 the complete lattice `P(ω)`, that is, below a finite part of every union above it, iff `s` is
-finite. With Mathlib's instance `IsCompactlyGenerated (Set ℕ)`, this makes `P(ω)` an algebraic
-lattice whose compact elements are the finite sets `e n` (D. Scott, *Data types as lattices*,
-SIAM J. Comput. 5 (1976), §1: each `x` is the limit of its finite subsets). -/
-theorem isCompactElement_iff_finite (s : Set ℕ) : IsCompactElement s ↔ s.Finite := by
+finite; the same holds in the powerset of any type. With Mathlib's instance `IsCompactlyGenerated
+(Set ℕ)`, this makes `P(ω)` an algebraic lattice whose compact elements are the finite sets `e n`
+(D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976), §1: each `x` is the limit of its
+finite subsets). -/
+theorem isCompactElement_iff_finite {α : Type*} (s : Set α) :
+    IsCompactElement s ↔ s.Finite := by
   constructor
   · intro hs
     rw [isCompactElement_iff_exists_le_sSup_of_le_sSup] at hs
-    obtain ⟨t, ht, hst⟩ := hs ((fun x => ({x} : Set ℕ)) '' s) (fun x hx => ⟨{x}, ⟨x, hx, rfl⟩, rfl⟩)
+    obtain ⟨t, ht, hst⟩ := hs ((fun x => ({x} : Set α)) '' s) (fun x hx => ⟨{x}, ⟨x, hx, rfl⟩, rfl⟩)
     refine (t.finite_toSet.biUnion (t := fun u => u) fun u hu => ?_).subset (fun x hx => ?_)
     · obtain ⟨y, _, rfl⟩ := ht hu
       exact finite_singleton y
@@ -253,7 +257,7 @@ theorem isCompactElement_iff_finite (s : Set ℕ) : IsCompactElement s ↔ s.Fin
       rw [Finset.sup_id_set_eq_sUnion] at this
       simpa using this
   · intro hs
-    have h : s = ⨆ x ∈ s, ({x} : Set ℕ) := by
+    have h : s = ⨆ x ∈ s, ({x} : Set α) := by
       ext x
       simp
     rw [h]
@@ -352,47 +356,6 @@ theorem exists_finset_mem_of_isOpen {V : Set (WithScott (Set ℕ))} (hV : IsOpen
   obtain ⟨_, ⟨e, he, rfl⟩, heV⟩ := hV.2 hne hdir hlub hy
   exact ⟨e, he, heV⟩
 
-/-- **Scott's embedding theorem.** Every T₀ space `X` with a countable basis embeds
-topologically in `P(ω)` with its Scott topology: for open sets `U₀, U₁, …` generating the
-topology of `X`, the map `x ↦ {n | x ∈ Uₙ}` is a topological embedding (D. Scott, *Data types
-as lattices*, SIAM J. Comput. 5 (1976), Theorem 1.6, stated with this map). -/
-theorem exists_isEmbedding_withScott (X : Type*) [TopologicalSpace X] [T0Space X]
-    [SecondCountableTopology X] : ∃ e : X → WithScott (Set ℕ), IsEmbedding e := by
-  obtain ⟨b, hbc, hgen⟩ := SecondCountableTopology.is_open_generated_countable (α := X)
-  obtain ⟨U, hU⟩ := (hbc.insert ∅).exists_eq_range (insert_nonempty ∅ b)
-  have hUopen : ∀ n, IsOpen (U n) := by
-    intro n
-    have hmem : U n ∈ insert ∅ b := hU ▸ mem_range_self n
-    rcases hmem with h | h
-    · rw [h]
-      exact isOpen_empty
-    · rw [hgen]
-      exact isOpen_generateFrom_of_mem h
-  let e : X → WithScott (Set ℕ) := fun x => toScott {n | x ∈ U n}
-  have hpre : ∀ n, U n = e ⁻¹' {y | n ∈ ofScott y} := fun n => rfl
-  have hcont : Continuous e := by
-    refine continuous_def.2 fun V hV => ?_
-    have : e ⁻¹' V = ⋃ (F : Finset ℕ) (_ : toScott (F : Set ℕ) ∈ V), ⋂ n ∈ F, U n := by
-      ext x
-      simp only [mem_preimage, mem_iUnion, mem_iInter, exists_prop]
-      constructor
-      · intro hx
-        obtain ⟨F, hF, hFV⟩ := exists_finset_mem_of_isOpen hV hx
-        exact ⟨F, hFV, fun n hn => hF hn⟩
-      · rintro ⟨F, hFV, hF⟩
-        exact (IsScott.isUpperSet_of_isOpen (D := univ) hV) (fun n hn => hF n hn) hFV
-    rw [this]
-    exact isOpen_iUnion fun F => isOpen_iUnion fun _ =>
-      isOpen_biInter_finset fun n _ => hUopen n
-  have hind : IsInducing e := by
-    refine ⟨le_antisymm (continuous_iff_le_induced.1 hcont) ?_⟩
-    conv_rhs => rw [hgen]
-    refine le_generateFrom_iff_subset_isOpen.2 fun s hs => ?_
-    obtain ⟨n, rfl⟩ : s ∈ range U := hU ▸ mem_insert_of_mem ∅ hs
-    rw [hpre n]
-    exact isOpen_induced (isOpen_setOf_mem n)
-  exact ⟨e, hind, fun x y h => (hind.inseparable_iff.1 (h ▸ Inseparable.refl _)).eq⟩
-
 /-- **Continuity into `P(ω)` is tested on the subbasic open sets.** A map `g` from a topological
 space to `P(ω)` with its Scott topology is continuous as soon as `{z | m ∈ g z}` is open for every
 `m`, because the Scott-open sets of `P(ω)` are unions of finite intersections of the sets
@@ -414,43 +377,95 @@ theorem continuous_of_isOpen_setOf_mem {Z : Type*} [TopologicalSpace Z]
   rw [this]
   exact isOpen_iUnion fun F => isOpen_iUnion fun _ => isOpen_biInter_finset fun m _ => h m
 
+/-- **Scott's embedding map.** If open sets `U₀, U₁, …` generate the topology of a T₀ space `X`,
+the map `x ↦ {n | x ∈ Uₙ}` is a topological embedding of `X` into `P(ω)` with its Scott topology
+(D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976), Theorem 1.6, where the `Uₙ` form a
+countable basis; here they need only generate the topology). -/
+theorem isEmbedding_setOf_mem {X : Type*} [t : TopologicalSpace X] [T0Space X] (U : ℕ → Set X)
+    (hgen : t = generateFrom (range U)) : IsEmbedding fun x => toScott {n | x ∈ U n} := by
+  have hUopen : ∀ n, IsOpen (U n) := fun n => by
+    rw [hgen]
+    exact isOpen_generateFrom_of_mem (mem_range_self n)
+  set e : X → WithScott (Set ℕ) := fun x => toScott {n | x ∈ U n} with he
+  have hcont : Continuous e := continuous_of_isOpen_setOf_mem fun n => hUopen n
+  have hind : IsInducing e := by
+    refine ⟨le_antisymm (continuous_iff_le_induced.1 hcont) ?_⟩
+    conv_rhs => rw [hgen]
+    refine le_generateFrom_iff_subset_isOpen.2 ?_
+    rintro _ ⟨n, rfl⟩
+    exact isOpen_induced (isOpen_setOf_mem n)
+  exact ⟨hind, fun x y h => (hind.inseparable_iff.1 (h ▸ Inseparable.refl _)).eq⟩
+
+/-- **Scott's embedding theorem.** Every T₀ space `X` with a countable basis embeds
+topologically in `P(ω)` with its Scott topology (D. Scott, *Data types as lattices*, SIAM J.
+Comput. 5 (1976), Theorem 1.6). The embedding is `isEmbedding_setOf_mem`, for an enumeration of a
+countable family of open sets generating the topology. -/
+theorem exists_isEmbedding_withScott (X : Type*) [TopologicalSpace X] [T0Space X]
+    [SecondCountableTopology X] : ∃ e : X → WithScott (Set ℕ), IsEmbedding e := by
+  obtain ⟨b, hbc, hgen⟩ := SecondCountableTopology.is_open_generated_countable (α := X)
+  obtain ⟨U, hU⟩ := (hbc.insert ∅).exists_eq_range (insert_nonempty ∅ b)
+  refine ⟨_, isEmbedding_setOf_mem U ?_⟩
+  rw [← hU, hgen, generateFrom_insert_of_generateOpen]
+  simpa using (GenerateOpen.sUnion ∅ (by simp) : GenerateOpen b (⋃₀ ∅))
+
+/-- **Scott's extension of a map into `P(ω)`.** For a subset `X` of a topological space `Y` and a
+map `f : X → P(ω)`, the map `Y → P(ω)` sending `y` to `⋃ {⋂ {f x | x ∈ X ∩ U} | U open, y ∈ U}`,
+the empty intersection being `ℕ` (D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976),
+Theorem 1.5, the formula for the extension). -/
+def extendScott {Y : Type*} [TopologicalSpace Y] (X : Set Y) (f : X → WithScott (Set ℕ)) :
+    Y → WithScott (Set ℕ) := fun y =>
+  toScott {m | ∃ U : Set Y, IsOpen U ∧ y ∈ U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)}
+
+/-- **Scott's extension is continuous.** For every map `f : X → P(ω)` on a subset `X` of `Y`,
+continuous or not, the extension `extendScott X f : Y → P(ω)` is continuous for the Scott
+topology (D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976), Appendix A, proof of
+Theorem 1.5, which notes that the extension is continuous "no matter what function f is
+given"). -/
+theorem continuous_extendScott {Y : Type*} [TopologicalSpace Y] (X : Set Y)
+    (f : X → WithScott (Set ℕ)) : Continuous (extendScott X f) := by
+  refine continuous_of_isOpen_setOf_mem fun m => ?_
+  have : {y | m ∈ ofScott (extendScott X f y)} =
+      ⋃ (U : Set Y) (_ : IsOpen U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)), U := by
+    ext y
+    simp only [extendScott, ofScott_toScott, mem_ofPred_eq, mem_iUnion, exists_prop]
+    constructor
+    · rintro ⟨U, hU, hyU, hfU⟩
+      exact ⟨U, ⟨hU, hfU⟩, hyU⟩
+    · rintro ⟨U, ⟨hU, hfU⟩, hyU⟩
+      exact ⟨U, hU, hyU, hfU⟩
+  rw [this]
+  exact isOpen_iUnion fun U => isOpen_iUnion fun hU => hU.1
+
+/-- **Scott's extension extends a continuous map.** If `f : X → P(ω)` is continuous on the
+subspace `X` of `Y`, then `extendScott X f` agrees with `f` on `X` (D. Scott, *Data types as
+lattices*, SIAM J. Comput. 5 (1976), Theorem 1.5). -/
+theorem extendScott_apply {Y : Type*} [TopologicalSpace Y] {X : Set Y}
+    {f : X → WithScott (Set ℕ)} (hf : Continuous f) (x : X) : extendScott X f x = f x := by
+  change ofScott (extendScott X f x) = ofScott (f x)
+  ext m
+  simp only [extendScott, ofScott_toScott, mem_ofPred_eq]
+  constructor
+  · rintro ⟨U, _, hxU, hfU⟩
+    exact hfU x hxU
+  · intro hm
+    obtain ⟨U, hU, hUeq⟩ := isOpen_induced_iff.1 (hf.isOpen_preimage _ (isOpen_setOf_mem m))
+    refine ⟨U, hU, ?_, fun x' hx' => ?_⟩
+    · have : x ∈ Subtype.val ⁻¹' U := by
+        rw [hUeq]
+        exact hm
+      exact this
+    · have : x' ∈ Subtype.val ⁻¹' U := hx'
+      rw [hUeq] at this
+      exact this
+
 /-- **Scott's extension theorem.** Let `X` be a subspace of a topological space `Y`. Every
-continuous map `f : X → P(ω)`, for the Scott topology, extends to a continuous map `Y → P(ω)`,
-namely `y ↦ ⋃ {⋂ {f x | x ∈ X ∩ U} | U open, y ∈ U}`; so `P(ω)` is an injective space (D. Scott,
-*Data types as lattices*, SIAM J. Comput. 5 (1976), Theorem 1.5, with this extension). -/
+continuous map `f : X → P(ω)`, for the Scott topology, extends to a continuous map `Y → P(ω)`, so
+`P(ω)` is an injective space (D. Scott, *Data types as lattices*, SIAM J. Comput. 5 (1976),
+Theorem 1.5). The extension is `extendScott X f`. -/
 theorem exists_continuous_extend_withScott {Y : Type*} [TopologicalSpace Y] (X : Set Y)
     {f : X → WithScott (Set ℕ)} (hf : Continuous f) :
-    ∃ F : Y → WithScott (Set ℕ), Continuous F ∧ ∀ x : X, F x = f x := by
-  let F : Y → WithScott (Set ℕ) := fun y =>
-    toScott {m | ∃ U : Set Y, IsOpen U ∧ y ∈ U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)}
-  refine ⟨F, continuous_of_isOpen_setOf_mem fun m => ?_, fun x => ?_⟩
-  · have : {y | m ∈ ofScott (F y)} =
-        ⋃ (U : Set Y) (_ : IsOpen U ∧ ∀ x : X, (x : Y) ∈ U → m ∈ ofScott (f x)), U := by
-      ext y
-      simp only [F, ofScott_toScott, mem_ofPred_eq, mem_iUnion, exists_prop]
-      constructor
-      · rintro ⟨U, hU, hyU, hfU⟩
-        exact ⟨U, ⟨hU, hfU⟩, hyU⟩
-      · rintro ⟨U, ⟨hU, hfU⟩, hyU⟩
-        exact ⟨U, hU, hyU, hfU⟩
-    rw [this]
-    exact isOpen_iUnion fun U => isOpen_iUnion fun hU => hU.1
-  · change ofScott (F x) = ofScott (f x)
-    ext m
-    simp only [F, ofScott_toScott, mem_ofPred_eq]
-    constructor
-    · rintro ⟨U, _, hxU, hfU⟩
-      exact hfU x hxU
-    · intro hm
-      obtain ⟨U, hU, hUeq⟩ := isOpen_induced_iff.1 (hf.isOpen_preimage _ (isOpen_setOf_mem m))
-      refine ⟨U, hU, ?_, fun x' hx' => ?_⟩
-      · have : x ∈ Subtype.val ⁻¹' U := by
-          rw [hUeq]
-          exact hm
-        exact this
-      · have : x' ∈ Subtype.val ⁻¹' U := hx'
-        rw [hUeq] at this
-        exact this
+    ∃ F : Y → WithScott (Set ℕ), Continuous F ∧ ∀ x : X, F x = f x :=
+  ⟨extendScott X f, continuous_extendScott X f, extendScott_apply hf⟩
 
 end Embedding
 

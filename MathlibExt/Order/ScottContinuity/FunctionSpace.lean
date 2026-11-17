@@ -11,6 +11,7 @@ module
 public import Mathlib.Order.CompletePartialOrder
 public import Mathlib.Order.ScottContinuity.Complete
 public import Mathlib.Order.FixedPoints
+public import MathlibExt.Order.OmegaCompletePartialOrder.ContinuousHom
 
 /-!
 # Scott-continuous function spaces and Kleene's fixed-point theorem for dcpos
@@ -31,7 +32,8 @@ directed-set versions used in Scott's domain theory:
   PRG-7 (1971), proof of Theorem 3.3);
 * `map_iSup_iterate_bot` and `iSup_iterate_bot_le`: Kleene's fixed-point theorem for a
   Scott-continuous self-map of a pointed dcpo (Abramsky and Jung, Theorem 2.1.19 (1)),
-  obtained from Mathlib's ω-chain version.
+  obtained through `iSup_iterate_bot_eq_lfp` from the repository's ω-chain least fixed point
+  `OmegaCompletePartialOrder.ContinuousHom.lfp`.
 -/
 
 @[expose] public section
@@ -96,7 +98,8 @@ end Directed
 member of a set `s` of maps between complete lattices is Scott-continuous, so is the pointwise
 supremum `sSup s`; hence the Scott-continuous maps form a complete join-subsemilattice of all
 maps (D. Scott, *Continuous Lattices*, Oxford PRG-7 (1971), proof of Theorem 3.3: "arbitrary
-⊔ are [computed pointwise]"). -/
+⊔ are [computed pointwise]", stated there for continuous lattices and topological continuity; the
+statement here is for all complete lattices and Mathlib's `ScottContinuous`). -/
 theorem scottContinuous_sSup [CompleteLattice α] [CompleteLattice β] {s : Set (α → β)}
     (hs : ∀ f ∈ s, ScottContinuous f) : ScottContinuous (sSup s) := by
   refine ScottContinuous.of_map_sSup fun d hne hd => ?_
@@ -112,19 +115,19 @@ section Kleene
 
 variable [CompletePartialOrder α] {f : α → α}
 
-private theorem iSup_iterate_eq_ωSup (hf : ScottContinuous f) :
-    ⨆ n, f^[n] ⊥ =
-      ωSup (fixedPoints.iterateChain (ContinuousHom.ofFun f hf.ωScottContinuous : α →o α) ⊥
-        bot_le) := rfl
+/-- **Kleene's supremum for dcpos is the repository's least fixed point.** For a Scott-continuous
+self-map `f` of a pointed dcpo, `⨆ n, f^[n] ⊥` is, by definition, the least fixed point
+`ContinuousHom.lfp` of `f` viewed as an ω-Scott-continuous map. -/
+theorem iSup_iterate_bot_eq_lfp (hf : ScottContinuous f) :
+    ⨆ n, f^[n] ⊥ = ContinuousHom.lfp (ContinuousHom.ofFun f hf.ωScottContinuous) := rfl
 
 /-- **Kleene's fixed-point theorem for pointed dcpos.** If `f` is a Scott-continuous self-map of a
 pointed dcpo, then `⨆ n, f^[n] ⊥` is a fixed point of `f` (Abramsky and Jung, *Domain Theory*,
 Handbook of Logic in Computer Science vol. 3 (1994), Theorem 2.1.19 (1); D. Scott, *Continuous
 Lattices*, Oxford PRG-7 (1971), Proposition 3.14, for continuous lattices). -/
 theorem map_iSup_iterate_bot (hf : ScottContinuous f) : f (⨆ n, f^[n] ⊥) = ⨆ n, f^[n] ⊥ := by
-  rw [iSup_iterate_eq_ωSup hf]
-  exact fixedPoints.ωSup_iterate_mem_fixedPoint (ContinuousHom.ofFun f hf.ωScottContinuous) ⊥
-    bot_le
+  rw [iSup_iterate_bot_eq_lfp hf]
+  exact ContinuousHom.lfp_eq (ContinuousHom.ofFun f hf.ωScottContinuous)
 
 /-- **Kleene's fixed point is the least prefixed point.** If `f` is a Scott-continuous self-map of a
 pointed dcpo and `f a ≤ a`, then `⨆ n, f^[n] ⊥ ≤ a`; so `⨆ n, f^[n] ⊥` is the least fixed point, and
@@ -132,9 +135,8 @@ even the least prefixed point, of `f` (Abramsky and Jung, *Domain Theory*, Handb
 Computer Science vol. 3 (1994), Theorem 2.1.19 (1)). -/
 theorem iSup_iterate_bot_le (hf : ScottContinuous f) {a : α} (ha : f a ≤ a) :
     ⨆ n, f^[n] ⊥ ≤ a := by
-  rw [iSup_iterate_eq_ωSup hf]
-  exact fixedPoints.ωSup_iterate_le_prefixedPoint (ContinuousHom.ofFun f hf.ωScottContinuous) ⊥
-    bot_le ha bot_le
+  rw [iSup_iterate_bot_eq_lfp hf]
+  exact ContinuousHom.lfp_le (ContinuousHom.ofFun f hf.ωScottContinuous) ha
 
 end Kleene
 

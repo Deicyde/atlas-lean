@@ -41,3 +41,9 @@ example : (⨆ n, (fun x : Set ℕ => x ⊔ {0})^[n] ⊥) = {0} := by
   intro m hm
   rw [← h]
   exact Or.inr hm
+
+/-- The dcpo Kleene supremum is the repository's ω-chain least fixed point, by definition. -/
+example : (⨆ n, (fun x : Set ℕ => x ⊔ {0})^[n] ⊥) =
+    OmegaCompletePartialOrder.ContinuousHom.lfp
+      (OmegaCompletePartialOrder.ContinuousHom.ofFun _ scottContinuous_sup_zero.ωScottContinuous) :=
+  iSup_iterate_bot_eq_lfp scottContinuous_sup_zero
