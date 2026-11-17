@@ -1,5 +1,11 @@
 # Disjoint-set data structure
 
+The canonical union-find (Batteries `UnionFind`) represents each class by a rooted tree of parent
+pointers; union links roots by rank and find compresses the path it follows. Linking by rank
+gives every root at least $2^{\mathrm{rank}}$ nodes, hence paths of at most $\log_2 n$ edges and
+an $O(n + m \log n)$ cost bound; with compression, Tarjan and van Leeuwen prove the optimal
+$O(n + m\,\alpha(m + n, n))$ (J. ACM 31(2) (1984)).
+
 - [Parent forest with a depth certificate](forest.md)
 - [Root of a vertex in a parent forest](find.md)
 - [Path length to the root](path-length.md)
@@ -49,3 +55,27 @@
 - [Union by rank with operation counts](counted-union.md)
 - [Counted union returns the union's array](counted-union-ret.md)
 - [The FIND phases of a union make two more root tests than parent writes](counted-union-find-balance.md)
+- [Union-find structures built by make-set, find and union](reachable.md)
+- [Class size in a union-find structure](class-size.md)
+- [Rank invariant of linking by rank](rank-bounded.md)
+- [Rank lemma for linking by rank (roots)](two-pow-rank-le-class-size.md)
+- [Ranks are at most `log₂ n`](rank-le-log.md)
+- [Find paths have at most `log₂ n` edges](iterate-parent-log.md)
+- [Set-union operations](op.md)
+- [Length of a find path](find-path-length.md)
+- [Find paths are short under union by rank](find-path-length-le-log.md)
+- [One set-union operation with its cost](step.md)
+- [A sequence of set-union operations with its total cost](run.md)
+- [Number of make-set operations](num-make-set.md)
+- [Number of finds](num-finds.md)
+- [Cost bound `O(n + m log n)` for union by rank with path compression](run-cost-le-log.md)
+- [Cost bound `O(n + m log n)` from the empty structure](run-empty-cost-le-log.md)
+- [Tarjan–van Leeuwen's Ackermann function](ackermann-tv-l.md)
+- [Inverse Ackermann function of Tarjan and van Leeuwen](inverse-ackermann-tv-l.md)
+- [Tarjan–van Leeuwen bound for union by rank with path compression](run-empty-cost-le-inverse-ackermann.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md)
+- [Link-cut tree](../link-cut-tree/README.md)
+- [Spanning trees, flows and matchings](../../../graph-algorithms/spanning-trees-flows-matchings/README.md)
