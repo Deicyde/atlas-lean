@@ -23,7 +23,8 @@ and recorded as wanted:
 * the mean-value property and its converse: a `C²` function is harmonic on `U` if and only if its
   average over every closed ball `closedBall x r ⊆ U` equals its value at the centre;
 * the strong maximum principle: a harmonic function on a bounded connected open set that attains
-  its maximum over the closure at an interior point is constant.
+  its maximum over the closure at an interior point is constant;
+* Harnack's inequality for nonnegative harmonic functions on `V ⊂⊂ U`, `V` connected.
 
 Mathlib proves the mean-value property for harmonic functions on the plane through circle
 averages (`InnerProductSpace.HarmonicOnNhd.circleAverage_eq`); the `n`-dimensional ball-average
@@ -35,10 +36,10 @@ proved in `MathlibExt.Analysis.PDE.LaplaceMaximumPrinciple`.
 * M. Schmidt, *Partial Differential Equations*, lecture notes, Universität Mannheim, HWS 2025,
   Chapter 3 (Laplace equation),
   https://www.wim.uni-mannheim.de/media/Lehrstuehle/wim/schmidt/HWS2025/chapter_3.pdf: Mean Value
-  Property 3.3 and Strong Maximum Principle 3.10.
+  Property 3.3, Harnack's Inequality 3.8 and Strong Maximum Principle 3.10.
 * L. C. Evans, *Entropy and Partial Differential Equations*, lecture notes,
-  https://math.berkeley.edu/~evans/entropy.and.PDE.pdf, Chapter IV.A.3, Corollary (strong maximum
-  principle for `-∑ (aⁱʲ u_{xᵢ})_{xⱼ} = 0`, from Harnack's inequality).
+  https://math.berkeley.edu/~evans/entropy.and.PDE.pdf, Chapter IV.A.3, Theorem 3 (Harnack's
+  inequality) and Corollary (strong maximum principle) for `-∑ (aⁱʲ u_{xᵢ})_{xⱼ} = 0`.
 -/
 
 @[expose] public section
@@ -72,5 +73,18 @@ theorem_wanted eqOn_closure_of_isMaxOn_harmonicOnNhd {U : Set E} (hU : IsOpen U)
     (hUb : Bornology.IsBounded U) (hconn : IsConnected U) {u : E → ℝ}
     (hu : HarmonicOnNhd u U) (hc : ContinuousOn u (closure U)) {x₀ : E} (hx₀ : x₀ ∈ U)
     (hmax : IsMaxOn u (closure U) x₀) : ∀ x ∈ closure U, u x = u x₀
+
+/-- **Harnack's inequality for harmonic functions.** Let `U` be open and let `V` be open and
+connected with `closure V` compact and contained in `U`. There is a constant `C > 0`, depending
+only on `V` and `U`, such that every nonnegative harmonic function `u` on `U` satisfies
+`u x ≤ C u y` for all `x, y ∈ V`; equivalently `sup_V u ≤ C inf_V u`. This is Harnack's
+Inequality 3.8 of M. Schmidt, *Partial Differential Equations*, lecture notes, Universität
+Mannheim, HWS 2025, Chapter 3 (in its pointwise form "for all `x, y ∈ Ω′`"), and the case
+`aⁱʲ = δⁱʲ` of Theorem 3 of Chapter IV.A.3 of L. C. Evans, *Entropy and Partial Differential
+Equations*. -/
+theorem_wanted harnack_inequality {U V : Set E} (hU : IsOpen U) (hV : IsOpen V)
+    (hVconn : IsConnected V) (hVc : IsCompact (closure V)) (hVU : closure V ⊆ U) :
+    ∃ C : ℝ, 0 < C ∧ ∀ u : E → ℝ, HarmonicOnNhd u U → (∀ x ∈ U, 0 ≤ u x) →
+      ∀ x ∈ V, ∀ y ∈ V, u x ≤ C * u y
 
 end MathlibExt.Analysis.PDE.LaplaceMeanValueWanted

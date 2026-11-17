@@ -13,8 +13,11 @@ Here the weak maximum and minimum principles and uniqueness for the Dirichlet pr
 in any finite-dimensional real inner product space and for Mathlib's harmonic functions
 (`InnerProductSpace.HarmonicOnNhd`), by the perturbation argument: $u + \varepsilon |x|^2$ has
 positive Laplacian, while the Laplacian of a $C^2$ function is nonpositive at an interior maximum.
-The mean-value property in dimension $n$ and the strong maximum principle are recorded as wanted;
-Mathlib has the planar mean-value property through circle averages.
+In the plane the strong maximum principle is proved too, by writing a harmonic function locally as
+the real part of a holomorphic one and applying Mathlib's maximum modulus principle. The
+mean-value property in dimension $n$, Harnack's inequality and the strong maximum principle in
+every dimension are recorded as wanted; Mathlib has the planar mean-value property through circle
+averages.
 
 - [Second derivative along a line](iterated-fderiv-two-apply-eq-deriv-deriv.md)
 - [Nonpositive second derivatives at a local maximum](iterated-fderiv-two-nonpos-of-is-local-m.md)
@@ -26,6 +29,9 @@ Mathlib has the planar mean-value property through circle averages.
 - [Uniqueness for the Dirichlet problem for Poisson's equation](eq-on-closure-of-neg-laplacian-eq.md)
 - [Mean-value property of harmonic functions, and its converse](harmonic-on-nhd-iff-forall-average-close.md)
 - [Strong maximum principle for harmonic functions](eq-on-closure-of-is-max-on-harmonic-on-n.md)
+- [A planar harmonic function is constant near an interior maximum](exists-ball-eq-on-of-is-max-on-complex.md)
+- [Strong maximum principle for planar harmonic functions](eq-on-of-is-max-on-complex.md)
+- [Harnack's inequality for harmonic functions](harnack-inequality.md)
 
 ## Related topics
 
