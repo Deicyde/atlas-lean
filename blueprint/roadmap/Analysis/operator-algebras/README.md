@@ -11,3 +11,7 @@ Banach algebras and C*- and von Neumann algebras: exponentials and product formu
 - [Gelfand–Naimark theorem](c-star-algebra-gelfand-naimark.md)
 - [Russo–Dye theorem](c-star-algebra-russo-dye.md)
 - [Stinespring dilation theorem](stinespring-dilation.md)
+- [The square is operator convex, as a convex function](convex-on-mul-self.md)
+- [The square is not operator monotone](not-monotone-sq.md)
+- [Convex-combination identity for squares](smul-sq-add-smul-sq-sub-sq.md)
+- [The square is operator convex](sq-convex-comb-le.md)
