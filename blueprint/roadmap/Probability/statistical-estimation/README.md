@@ -8,6 +8,7 @@ Point estimation theory: bias, risk and mean squared error, likelihood and maxim
 - [Exponential families](exponential-families/README.md)
 - [Fisher information and the Cramér–Rao bound](fisher-information-and-the-cram-r-rao-bound/README.md)
 - [Asymptotic normality of maximum likelihood](asymptotic-normality-of-maximum-likelihood/README.md)
+- [Asymptotic efficiency and adaptive estimation](asymptotic-efficiency-and-adaptive-estimation/README.md)
 - [Likelihood and maximum likelihood estimators](likelihood-and-maximum-likelihood-estimators/README.md)
 - [Minimax lower bounds](minimax-lower-bounds/README.md)
 - [Stein's lemma and James–Stein estimation](stein-s-lemma-and-james-stein-estimation/README.md)

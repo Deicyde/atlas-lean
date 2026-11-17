@@ -6,3 +6,8 @@
 - [Cramér–Rao inequality](cramer-rao-general.md)
 - [Cramér–Rao inequality](cramer-rao.md)
 - [Wald's consistency theorem for maximum likelihood](ae-tendsto-maximum-likelihood.md)
+- [Multiparameter Cramér–Rao inequality](cramer-rao-multiparameter.md)
+
+## Related topics
+
+- [Asymptotic efficiency and adaptive estimation](../asymptotic-efficiency-and-adaptive-estimation/README.md): Hájek's convolution theorem, the asymptotic form of the information bound for regular estimators.
