@@ -55,3 +55,4 @@
 - [Generalization bounds and concentration](../../generalization-bounds-and-concentration/README.md): estimation-error bounds for empirical risk minimization.
 - [Lasso error bounds under restricted eigenvalues](../../../../Probability/linear-models-multivariate/lasso-error-bounds-under-restricted-eigenvalues/README.md)
 - [Sparse recovery by orthogonal matching pursuit](../../../../Analysis/approximation-theory/sparse-recovery-by-orthogonal-matching-pursuit/README.md)
+- [Recursive least squares](../../../../Analysis/control-theory/recursive-least-squares/README.md): the same estimates computed one observation at a time by rank-one updates; started at $\theta_0 = 0$, $P_0 = \lambda^{-1} I$ the recursion returns the ridge estimate.
