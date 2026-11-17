@@ -95,4 +95,31 @@ example (coins : PMF Unit) :
       Unit Bool 1 :=
   semanticallySecure_of_qrAdvantage_le _ coins (fun _ => advantage_le_one _ _) Unit Bool
 
+/-! ### Messages of several bits -/
+
+/-- The bitwise scheme on the key `(2, (3, 5))` is correct. -/
+example : (schemeVec (N := 15) (ℓ := 3) (PMF.pure (y, (3, 5)))).Correct :=
+  schemeVec_correct fun k hk => by
+    rw [PMF.support_pure, Set.mem_singleton_iff] at hk
+    exact hk ▸ isKey
+
+/-- Bitwise encryption of `(1, 0)` with randomness `(7, 7)` is `(8, 4)`. -/
+example :
+    (fun i => ((encryptVec y ![true, false] ![x, x] i : (ZMod 15)ˣ) : ZMod 15)) = ![8, 4] := by
+  funext i; fin_cases i <;> decide
+
+/-- The hybrid messages between `(0, 0, 0)` and `(1, 1, 1)`: after one step, `(1, 0, 0)`. -/
+example : hybridMsg ![false, false, false] ![true, true, true] 1 = ![true, false, false] := by
+  funext i; fin_cases i <;> rfl
+
+/-- The hybrid bound with `ℓ = 3`. -/
+example {R : Type} (coins : PMF R) (D : (ZMod 15)ˣ → (Fin 3 → (ZMod 15)ˣ) → R → Bool)
+    (m m' : Fin 3 → Bool) {ε : ℝ}
+    (hε : ∀ j : Fin 3, qrAdvantage (PMF.pure (y, (3, 5))) (hybridCoins coins)
+      (hybridReduction D (hybridMsg m m' j) j) ≤ ε) :
+    SemanticSecurity.indAdvantage (schemeVec (N := 15) (PMF.pure (y, (3, 5)))) coins D m m' ≤
+      3 * ε := by
+  have := indAdvantage_schemeVec_le_mul _ coins D m m' hε
+  simpa using this
+
 end Cslib.Crypto.GoldwasserMicaliTests

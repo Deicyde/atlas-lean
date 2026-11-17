@@ -59,10 +59,22 @@ experiment is stated with `y x²` directly). `qrAdvantage` is its distinguishing
   large `ε`; the per-adversary statements (this one and `pubCpaAdvantage_eq_qrAdvantage`) are the
   ones that transfer to efficient adversaries.
 
-**Scope.** Only the encryption of a single bit is treated as a framework scheme; messages of
-`ℓ` bits (bitwise encryption) and the hybrid argument that loses a factor `ℓ` are not formalized.
-There is no security parameter: the asymptotic statement (Goldwasser and Micali's Theorems 3-6,
-under their quadratic residuosity assumption on circuits) is not claimed, and neither is the
+**Messages of `ℓ` bits.** `schemeVec N kgen` encrypts each bit independently (`encryptVec`);
+`schemeVec_correct`. `indExp_schemeVec_hybrid`: for two messages that differ exactly at position
+`j`, the indistinguishability experiments are the two worlds of the residuosity experiment for
+`hybridReduction D u j`, which encrypts the other bits itself and plants the challenge at `j`
+(`uniform_map_update`: resampling one coordinate of a uniform vector keeps it uniform).
+`indAdvantage_schemeVec_le` (**the hybrid argument**): the advantage of a distinguisher between
+encryptions of `m` and `m'` is at most the sum over `j < ℓ` of the residuosity advantages of the
+hybrid reductions between the hybrid messages `hybridMsg m m' j` and `hybridMsg m m' (j + 1)`;
+`indAdvantage_schemeVec_le_mul` gives the factor `ℓ`.
+
+This is the concrete form of Goldwasser and Micali's Theorem 3 (two "n-signatures" that a decision
+function tells apart give a residuosity decider; the proof walks through adjacent signatures).
+
+**Scope.** There is no security parameter: the asymptotic statements (Goldwasser and Micali's
+Theorems 3-6, under their quadratic residuosity assumption on circuits) are not claimed, and
+neither is the
 random self-reducibility of quadratic residuosity (their Theorems 1 and 2). Key generation is an
 arbitrary distribution `kgen` on keys `(y, (p, q))` for the fixed modulus `N`.
 
@@ -383,5 +395,201 @@ theorem semanticallySecure_of_qrAdvantage_le {R : Type*} (kgen : PMF ((ZMod N)ˣ
   have hε : 0 ≤ ε := (advantage_nonneg _ _).trans (hqr fun _ _ _ => false)
   (indSecure_of_qrAdvantage_le kgen coins hqr).semanticallySecure _ hε (fun _ => false)
     (fun _ => rfl) H T
+
+/-! ### Messages of several bits -/
+
+section MultiBit
+
+variable {ℓ : ℕ}
+
+/-- **Bitwise Goldwasser–Micali encryption** of an `ℓ`-bit message `m` with randomness
+`xs : Fin ℓ → (ZMod N)ˣ`: the `i`-th ciphertext component is `encryptBit y (m i) (xs i)`. -/
+def encryptVec (y : (ZMod N)ˣ) (m : Fin ℓ → Bool) (xs : Fin ℓ → (ZMod N)ˣ) :
+    Fin ℓ → (ZMod N)ˣ :=
+  fun i => encryptBit y (m i) (xs i)
+
+/-- **The Goldwasser–Micali scheme for `ℓ`-bit messages** (Goldwasser and Micali, STOC 1982,
+Section 4): each bit is encrypted independently with fresh uniform randomness, and decrypted with
+`decryptBit`. -/
+noncomputable def schemeVec (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) :
+    PKEScheme (Fin ℓ → Bool) (ZMod N)ˣ (ℕ × ℕ) (Fin ℓ → (ZMod N)ˣ) where
+  gen := kgen
+  enc y m := (uniformOfFintype (Fin ℓ → (ZMod N)ˣ)).map (encryptVec y m)
+  dec sk c := some fun i => decryptBit sk.1 sk.2 (c i : ZMod N)
+
+/-- **Correctness of bitwise Goldwasser–Micali encryption**: if every key in the support of `kgen`
+is valid, the `ℓ`-bit scheme is correct. -/
+theorem schemeVec_correct {kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)}
+    (hkgen : ∀ k ∈ kgen.support, IsKey N k) : (schemeVec (ℓ := ℓ) kgen).Correct := by
+  intro k hk m c hc
+  simp only [schemeVec, PMF.support_map, Set.mem_image] at hc
+  obtain ⟨xs, -, rfl⟩ := hc
+  exact congrArg some (funext fun i => decryptBit_encryptBit (hkgen k hk) (m i) (xs i))
+
+/-- **Resampling one coordinate of a uniform vector**: drawing a uniform vector and replacing its
+`j`-th coordinate by an independent uniform value gives a uniform vector. -/
+theorem uniform_map_update (j : Fin ℓ) :
+    ((uniformOfFintype (Fin ℓ → (ZMod N)ˣ)).bind fun xs =>
+      (uniformOfFintype (ZMod N)ˣ).map fun x => Function.update xs j x) =
+    uniformOfFintype (Fin ℓ → (ZMod N)ˣ) := by
+  classical
+  let e : (Fin ℓ → (ZMod N)ˣ) × (ZMod N)ˣ ≃ (Fin ℓ → (ZMod N)ˣ) × (ZMod N)ˣ :=
+    { toFun := fun p => (Function.update p.1 j p.2, p.1 j)
+      invFun := fun p => (Function.update p.1 j p.2, p.1 j)
+      left_inv := fun p => by simp
+      right_inv := fun p => by simp }
+  have h := Cslib.Probability.PMF.uniformOfFintype_prod (Fin ℓ → (ZMod N)ˣ) (ZMod N)ˣ
+  have h2 : (uniformOfFintype ((Fin ℓ → (ZMod N)ˣ) × (ZMod N)ˣ)).map Prod.fst =
+      uniformOfFintype (Fin ℓ → (ZMod N)ˣ) := by
+    have hc : ∀ a : Fin ℓ → (ZMod N)ˣ,
+        (uniformOfFintype (ZMod N)ˣ).map (fun _ => a) = PMF.pure a := fun a =>
+      PMF.map_const _ a
+    rw [← h, PMF.map_bind]
+    simp only [PMF.map_comp, Function.comp_def, hc, PMF.bind_pure]
+  conv_rhs => rw [← h2, ← uniformOfFintype_map_equiv e, PMF.map_comp, ← h, PMF.map_bind]
+  simp only [PMF.map_comp, Function.comp_def, e, Equiv.coe_fn_mk]
+
+omit [NeZero N] in
+/-- **Encrypting with updated randomness**: changing the `j`-th randomness changes only the
+`j`-th ciphertext component. -/
+theorem encryptVec_update (y : (ZMod N)ˣ) (m : Fin ℓ → Bool) (xs : Fin ℓ → (ZMod N)ˣ)
+    (j : Fin ℓ) (x : (ZMod N)ˣ) :
+    encryptVec y m (Function.update xs j x) =
+      Function.update (encryptVec y m xs) j (encryptBit y (m j) x) := by
+  funext i
+  by_cases h : i = j
+  · subst h; simp [encryptVec]
+  · simp [encryptVec, Function.update_of_ne h]
+
+/-- **The hybrid reduction at position `j`**: from a distinguisher `D` for `ℓ`-bit ciphertexts and
+a message `u`, on the public key `y`, a residuosity challenge `z` and coins `(r, xs)`, encrypt `u`
+with randomness `xs`, replace the `j`-th component by `z` (if `u j = false`) or `y z` (if
+`u j = true`), and run `D`. -/
+def hybridReduction {R : Type*} (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool)
+    (u : Fin ℓ → Bool) (j : Fin ℓ) :
+    (ZMod N)ˣ → (ZMod N)ˣ → R × (Fin ℓ → (ZMod N)ˣ) → Bool := fun y z rs =>
+  D y (Function.update (encryptVec y u rs.2) j (if u j then y * z else z)) rs.1
+
+/-- **The coins of the hybrid reduction**: the distinguisher's coins and a uniform vector. -/
+noncomputable def hybridCoins {R : Type*} (coins : PMF R) : PMF (R × (Fin ℓ → (ZMod N)ˣ)) :=
+  coins.bind fun r => (uniformOfFintype (Fin ℓ → (ZMod N)ˣ)).map fun xs => (r, xs)
+
+/-- **The `ℓ`-bit experiment with one coordinate resampled**: the indistinguishability experiment
+of the `ℓ`-bit scheme, with the `j`-th randomness drawn separately. -/
+theorem indExp_schemeVec_eq {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
+    (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool) (w : Fin ℓ → Bool) (j : Fin ℓ) :
+    SemanticSecurity.indExp (schemeVec kgen) coins D w =
+      kgen.bind fun k => coins.bind fun r =>
+        (uniformOfFintype (Fin ℓ → (ZMod N)ˣ)).bind fun xs =>
+          (uniformOfFintype (ZMod N)ˣ).map fun x =>
+            D k.1 (Function.update (encryptVec k.1 w xs) j (encryptBit k.1 (w j) x)) r := by
+  simp only [SemanticSecurity.indExp, schemeVec]
+  congr 1; funext k; congr 1; funext r
+  conv_lhs => rw [← uniform_map_update j]
+  simp only [PMF.map_bind, PMF.map_comp, Function.comp_def, encryptVec_update]
+
+/-- **One hybrid step**: if the messages `u` and `v` differ exactly at position `j`, the
+indistinguishability experiments on `u` and on `v` are the two worlds of the residuosity
+experiment for `hybridReduction D u j`. -/
+theorem indExp_schemeVec_hybrid {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
+    (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool) {u v : Fin ℓ → Bool} {j : Fin ℓ}
+    (hj : v j = !u j) (hne : ∀ i, i ≠ j → u i = v i) :
+    SemanticSecurity.indExp (schemeVec kgen) coins D u =
+        qrExp kgen (hybridCoins coins) (hybridReduction D u j) false ∧
+      SemanticSecurity.indExp (schemeVec kgen) coins D v =
+        qrExp kgen (hybridCoins coins) (hybridReduction D u j) true := by
+  have hvec : ∀ (y : (ZMod N)ˣ) (xs : Fin ℓ → (ZMod N)ˣ), Function.update (encryptVec y v xs) j =
+      Function.update (encryptVec y u xs) j := by
+    intro y xs
+    funext w i
+    by_cases h : i = j
+    · subst h; simp
+    · simp [Function.update_of_ne h, encryptVec, hne i h]
+  constructor
+  · rw [indExp_schemeVec_eq _ _ _ _ j]
+    simp only [qrExp, hybridCoins, hybridReduction, PMF.bind_bind, PMF.bind_map,
+      Function.comp_def, ite_false, Bool.false_eq_true]
+    rfl
+  · rw [indExp_schemeVec_eq _ _ _ _ j]
+    simp only [qrExp, hybridCoins, hybridReduction, PMF.bind_bind, PMF.bind_map,
+      Function.comp_def, ite_true, hvec]
+    congr 1; funext k; congr 1; funext r; congr 1; funext xs
+    cases huj : u j
+    · simp [huj] at hj
+      simp [hj, encryptBit]
+    · simp [huj] at hj
+      simp only [hj, encryptBit, Bool.false_eq_true, ite_false, ite_true]
+      conv_lhs => rw [← uniformOfFintype_map_equiv (Equiv.mulLeft k.1)]
+      rw [PMF.map_comp]
+      congr 1
+      funext x
+      simp only [Function.comp, Equiv.coe_mulLeft]
+      rw [mul_pow, ← mul_assoc, ← sq]
+
+/-- **The `j`-th hybrid message** between `m` and `m'`: the bits of `m'` before position `j` and
+the bits of `m` from position `j` on. -/
+def hybridMsg (m m' : Fin ℓ → Bool) (j : ℕ) : Fin ℓ → Bool :=
+  fun i => if i.val < j then m' i else m i
+
+/-- **The hybrid argument for bitwise Goldwasser–Micali encryption** (Goldwasser and Micali,
+STOC 1982, Section 4, Theorem 3, concrete form): for every distinguisher `D` and all `ℓ`-bit
+messages `m`, `m'`, the advantage of `D` between encryptions of `m` and of `m'` is at most the
+sum over the positions `j` of the quadratic-residuosity advantages of the hybrid reductions
+`hybridReduction D (hybridMsg m m' j) j`, each of which calls `D` once. -/
+theorem indAdvantage_schemeVec_le {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ)) (coins : PMF R)
+    (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool) (m m' : Fin ℓ → Bool) :
+    SemanticSecurity.indAdvantage (schemeVec kgen) coins D m m' ≤
+      ∑ j : Fin ℓ,
+        qrAdvantage kgen (hybridCoins coins) (hybridReduction D (hybridMsg m m' j) j) := by
+  set H : ℕ → PMF Bool := fun j =>
+    SemanticSecurity.indExp (schemeVec kgen) coins D (hybridMsg m m' j) with hH
+  have h0 : hybridMsg m m' 0 = m := by funext i; simp [hybridMsg]
+  have hℓ : hybridMsg m m' ℓ = m' := by funext i; simp [hybridMsg, i.isLt]
+  have hsum := advantage_le_sum H ℓ
+  simp only [hH, h0, hℓ] at hsum
+  rw [SemanticSecurity.indAdvantage]
+  refine hsum.trans ?_
+  rw [Finset.sum_range (fun j => advantage (H j) (H (j + 1)))]
+  refine Finset.sum_le_sum fun j _ => ?_
+  simp only [hH]
+  by_cases hj : m j = m' j
+  · have : hybridMsg m m' (j + 1) = hybridMsg m m' j := by
+      funext i
+      simp only [hybridMsg]
+      by_cases hij : i = j
+      · subst hij; simp [hj]
+      · have : i.val < j.val + 1 ↔ i.val < j.val := by
+          have : i.val ≠ j.val := fun h => hij (Fin.ext h)
+          omega
+        simp [this]
+    rw [this, advantage_self]
+    exact advantage_nonneg _ _
+  · have hv : hybridMsg m m' (j + 1) j = !hybridMsg m m' j j := by
+      simp only [hybridMsg, lt_irrefl, ite_false, Nat.lt_succ_self, ite_true]
+      cases h₁ : m j <;> cases h₂ : m' j <;> simp_all
+    have hne : ∀ i, i ≠ j → hybridMsg m m' j i = hybridMsg m m' (j + 1) i := by
+      intro i hij
+      have : i.val < j.val + 1 ↔ i.val < j.val := by
+        have : i.val ≠ j.val := fun h => hij (Fin.ext h)
+        omega
+      simp [hybridMsg, this]
+    obtain ⟨h₁, h₂⟩ := indExp_schemeVec_hybrid kgen coins D hv hne
+    rw [h₁, h₂, qrAdvantage, advantage_comm]
+
+/-- **Bitwise Goldwasser–Micali loses a factor `ℓ`**: if each hybrid reduction has
+quadratic-residuosity advantage at most `ε`, a distinguisher between encryptions of two `ℓ`-bit
+messages has advantage at most `ℓ ε`. -/
+theorem indAdvantage_schemeVec_le_mul {R : Type*} (kgen : PMF ((ZMod N)ˣ × ℕ × ℕ))
+    (coins : PMF R) (D : (ZMod N)ˣ → (Fin ℓ → (ZMod N)ˣ) → R → Bool) (m m' : Fin ℓ → Bool)
+    {ε : ℝ}
+    (hε : ∀ j : Fin ℓ,
+      qrAdvantage kgen (hybridCoins coins) (hybridReduction D (hybridMsg m m' j) j) ≤ ε) :
+    SemanticSecurity.indAdvantage (schemeVec kgen) coins D m m' ≤ ℓ * ε := by
+  refine (indAdvantage_schemeVec_le kgen coins D m m').trans ?_
+  calc ∑ j : Fin ℓ, qrAdvantage kgen (hybridCoins coins) (hybridReduction D (hybridMsg m m' j) j)
+      ≤ ∑ _j : Fin ℓ, ε := Finset.sum_le_sum fun j _ => hε j
+    _ = ℓ * ε := by simp
+
+end MultiBit
 
 end Cslib.Crypto.PublicKey.GoldwasserMicali

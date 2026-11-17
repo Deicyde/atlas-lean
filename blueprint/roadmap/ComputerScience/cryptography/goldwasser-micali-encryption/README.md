@@ -8,11 +8,13 @@ and as $y x^2$ if $b = 1$; a string is encrypted bit by bit. With the factorizat
 quadratic residuosity by Euler's criterion modulo $p$ and modulo $q$. Without it, deciding whether a
 number with Jacobi symbol $+1$ is a square modulo $N$ is the quadratic residuosity problem.
 
-Here the scheme is formalized for single-bit messages and a fixed modulus $N$: correctness, the exact
-reduction of its eavesdropping security to a quadratic-residuosity experiment, and, through
-[Goldreich's Proposition 5.2.6](../semantic-security-and-indistinguishability/semantically-secure-2.md),
-semantic security with the same error. Not formalized: messages of several bits (the hybrid argument
-that loses a factor equal to their length), the asymptotic statements under Goldwasser and Micali's
+Here the scheme is formalized for a fixed modulus $N$: correctness, the exact reduction of the
+eavesdropping security of one-bit encryption to a quadratic-residuosity experiment, semantic security
+through [Goldreich's Proposition 5.2.6](../semantic-security-and-indistinguishability/semantically-secure-2.md),
+and for messages of $\ell$ bits the hybrid argument (Goldwasser and Micali's Theorem 3), which loses a
+factor $\ell$. In the STOC version, the partial-information security of Section 4.1 is proved for a
+uniformly distributed message space and easily computable predicates; the general definition used
+here is Goldreich's. Not formalized: the asymptotic statements under Goldwasser and Micali's
 quadratic residuosity assumption on circuits, the random self-reducibility of quadratic residuosity
 (their Theorems 1 and 2), and the fact that $y x^2$ is uniform among non-residues with Jacobi symbol
 $+1$ (the experiment is stated with $y x^2$ directly).
@@ -52,6 +54,21 @@ the adversary.
 - [Quadratic residuosity implies indistinguishable encryptions](ind-secure-of-qr-advantage-le.md)
 - [Quadratic residuosity implies semantic security](semantically-secure-of-qr-advantage-le.md)
 - [Semantic security of Goldwasser–Micali, per adversary](win-prob-ss-real-le-qr-advantage.md)
+
+## Messages of several bits
+
+- [Bitwise Goldwasser–Micali encryption](encrypt-vec.md)
+- [The Goldwasser–Micali scheme for `ℓ`-bit messages](scheme-vec.md)
+- [Correctness of bitwise Goldwasser–Micali encryption](scheme-vec-correct.md)
+- [Resampling one coordinate of a uniform vector](uniform-map-update.md)
+- [Encrypting with updated randomness](encrypt-vec-update.md)
+- [The `ℓ`-bit experiment with one coordinate resampled](ind-exp-scheme-vec-eq.md)
+- [The hybrid reduction at position `j`](hybrid-reduction.md)
+- [The coins of the hybrid reduction](hybrid-coins.md)
+- [One hybrid step](ind-exp-scheme-vec-hybrid.md)
+- [The `j`-th hybrid message](hybrid-msg.md)
+- [The hybrid argument for bitwise Goldwasser–Micali encryption](ind-advantage-scheme-vec-le.md)
+- [Bitwise Goldwasser–Micali loses a factor `ℓ`](ind-advantage-scheme-vec-le-mul.md)
 
 ## Related topics
 
