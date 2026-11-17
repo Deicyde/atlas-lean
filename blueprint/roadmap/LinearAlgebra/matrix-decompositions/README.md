@@ -13,6 +13,7 @@ Factorizations of matrices (QR, singular value, polar, Schur and LU decompositio
 - [QR factorization](qr-factorization/README.md)
 - [Linear least squares](linear-least-squares/README.md)
 - [Polar decomposition](polar-decomposition/README.md)
+- [Perturbation theory for linear systems](perturbation-theory-for-linear-systems/README.md)
 - [Convergence of the Jacobi method for strictly diagonally dominant matrices](jacobi-iteration-converges.md)
 - [Rouché–Capelli theorem](rouche-capelli.md)
 - [Schur decomposition of a complex square matrix](exists-unitary-group-is-upper-triangular.md)
