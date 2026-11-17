@@ -1,11 +1,12 @@
 # Sanov's lower bound, asymptotic form
 
-Let $s_n$ be an $n$-type in $\Gamma$ for every $n \ge 1$, with $Q(a) > 0$ wherever its empirical
-distribution is positive, and suppose $D(P_{s_n} \| Q) \to r$. Then for every $\varepsilon > 0$,
-eventually $e^{-n(r+\varepsilon)} \le Q^n\{x : P_x \in \Gamma\}$.
+Let $s_n$ be an $n$-type for each $n$, and suppose that for all large $n$ it lies in $\Gamma$ with
+$Q(a) > 0$ wherever its empirical distribution is positive, and that $D(P_{s_n} \| Q) \to r$. Then for
+every $\varepsilon > 0$, eventually $e^{-n(r+\varepsilon)} \le Q^n\{x : P_x \in \Gamma\}$.
 
-With $r = D(\Gamma \| Q)$, the existence of such $s_n$ is Csiszár's condition (III.21),
-$D(\Gamma \cap \mathcal P_n \| Q) \to D(\Gamma \| Q)$.
+With $r = D(\Gamma \| Q) < \infty$, the existence of such $s_n$ is equivalent to Csiszár's condition
+(III.21), $D(\Gamma \cap \mathcal P_n \| Q) \to D(\Gamma \| Q)$, as explained on
+[Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md).
 
 ## Sources
 

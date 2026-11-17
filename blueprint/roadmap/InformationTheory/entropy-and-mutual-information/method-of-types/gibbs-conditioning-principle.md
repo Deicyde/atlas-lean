@@ -1,8 +1,10 @@
 # Gibbs' conditioning principle (finite alphabet)
 
 Let $Q > 0$ be a distribution on a finite alphabet and $\Gamma$ a set of distributions satisfying
-(III.21) in the explicit form of [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md),
-with $r = D(\Gamma \| Q)$. If a unique $P^*$ in the closure of $\Gamma$ has $D(P^* \| Q) = r$, then for
+(III.21) in the explicit form of [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md):
+$r \le D(P\|Q)$ on $\Gamma$, and $n$-types $s_n$, in $\Gamma$ for all large $n$, with
+$D(P_{s_n}\|Q) \to r$. Since $Q > 0$, $D(\Gamma\|Q) < \infty$ for nonempty $\Gamma$, so this form is
+equivalent to (III.21), and $r = D(\Gamma \| Q)$. If a unique $P^*$ in the closure of $\Gamma$ has $D(P^* \| Q) = r$, then for
 every $k$ and every word $y$ of length $k$,
 
 $$\frac{Q^n\{x : P_x \in \Gamma,\ x_0 \dots x_{k-1} = y\}}{Q^n\{x : P_x \in \Gamma\}} \longrightarrow \prod_{i<k} P^*(y_i),$$

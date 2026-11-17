@@ -19,7 +19,7 @@ Csiszár, "The method of types", IEEE Trans. Inform. Theory 44 (1998), Theorem I
 `Γ` of distributions on a finite alphabet and an i.i.d. sample from `Q`, the probability that the
 empirical distribution lies in `Γ` is at most `(n + 1)^{|α|} exp(-n D(Γ ‖ Q))`, and it is at least
 `(n + 1)^{-|α|} exp(-n D(P ‖ Q))` for every `n`-type `P ∈ Γ`. Hence `(1/n) log Pr → -D(Γ ‖ Q)`
-whenever the divergences of the `n`-types in `Γ` approach `D(Γ ‖ Q)` (condition (III.21)).
+under condition (III.21), `D(Γ ∩ 𝒫ₙ ‖ Q) → D(Γ ‖ Q)`, a condition on large `n` only.
 
 * `iidProb_empirical_mem_eq_sum`: the event is the union of the type classes of the types in `Γ`
   (equation (III.24));
@@ -27,9 +27,13 @@ whenever the divergences of the `n`-types in `Γ` approach `D(Γ ‖ Q)` (condit
 * `eventually_iidProb_empirical_mem_le`: the upper bound (III.20), in exponential form;
 * `tendsto_log_iidProb_empirical_mem_div`: the limit (III.22).
 
-The divergence bound is passed as a number `r` with `r ≤ D(P ‖ Q)` for every `P ∈ Γ` with
-`P ≪ Q`; this is `r ≤ D(Γ ‖ Q) = inf_{P ∈ Γ} D(P ‖ Q)` with the source's convention `D = ∞`
-off `P ≪ Q`, and avoids an infimum of real-valued junk divergences.
+The divergence bound is passed as a number `r` with `r ≤ D(P ‖ Q)` for every probability vector
+`P ∈ Γ` with `P ≪ Q`; this is `r ≤ D(Γ ‖ Q) = inf_{P ∈ Γ} D(P ‖ Q)` over the distributions in `Γ`,
+with the source's convention `D = ∞` off `P ≪ Q`, and avoids an infimum of real-valued junk
+divergences. Condition (III.21) is passed as a sequence of `n`-types `s n`, eventually in `Γ`
+with `P̂_{s n} ≪ Q`, whose divergences tend to `r`. When `D(Γ ‖ Q) < ∞` this is equivalent to
+(III.21): each `Γ ∩ 𝒫ₙ` is finite, so a minimiser can be chosen for every large `n`. The case
+`D(Γ ‖ Q) = ∞` is covered by the upper bound only.
 
 The last section relates the types of this file to the repository's empirical measure
 (`sampleEmpiricalMeasure`, used by the general Sanov theorem) and to its entropy in bits.
@@ -62,12 +66,14 @@ theorem iidProb_empirical_mem_eq_sum (Q : α → ℝ) (Γ : Set (α → ℝ)) [D
 /-- **Sanov's upper bound, non-asymptotic** (Csiszár, "The method of types", IEEE Trans. Inform.
 Theory 44 (1998), right half of (III.25), with Lemma II.1). Let `Q ≥ 0` on a finite alphabet, `Γ`
 any set of functions `α → ℝ`, and `r` a number with `r ≤ ∑ₐ P(a) log (P(a) / Q(a))` for every
-`P ∈ Γ` such that `Q(a) > 0` wherever `P(a) > 0` (that is, `r ≤ D(Γ ‖ Q)`). Then for `n ≥ 1`, the
+probability vector `P ∈ Γ` such that `Q(a) > 0` wherever `P(a) > 0` (that is, `r` is at most the
+divergence from `Q` of the distributions in `Γ`). Then for `n ≥ 1`, the
 probability that the empirical distribution of `n` independent draws from `Q` lies in `Γ` is at
 most `(n + 1)^{|α|} exp(-n r)`. No topological hypothesis on `Γ` is needed. -/
 theorem iidProb_empirical_mem_le (hn : n ≠ 0) {Q : α → ℝ} (hQ : ∀ a, 0 ≤ Q a)
     (Γ : Set (α → ℝ)) [DecidablePred (· ∈ Γ)] {r : ℝ}
-    (hr : ∀ P ∈ Γ, (∀ a, 0 < P a → 0 < Q a) → r ≤ ∑ a, P a * log (P a / Q a)) :
+    (hr : ∀ P ∈ Γ, (∀ a, 0 ≤ P a) → ∑ a, P a = 1 → (∀ a, 0 < P a → 0 < Q a) →
+      r ≤ ∑ a, P a * log (P a / Q a)) :
     iidProb Q (univ.filter fun x : Fin n → α => empirical (seqType x) ∈ Γ) ≤
       ((n : ℝ) + 1) ^ Fintype.card α * exp (-(n : ℝ) * r) := by
   rw [iidProb_empirical_mem_eq_sum]
@@ -75,7 +81,7 @@ theorem iidProb_empirical_mem_le (hn : n ≠ 0) {Q : α → ℝ} (hQ : ∀ a, 0 
     intro s hs
     by_cases hsupp : ∀ a, 0 < empirical s a → 0 < Q a
     · refine (iidProb_typeClass_le_exp hn s hQ).trans (exp_le_exp.mpr ?_)
-      have := hr _ hs hsupp
+      have := hr _ hs (empirical_nonneg s) (sum_empirical hn s) hsupp
       have hn0 : (0 : ℝ) ≤ n := Nat.cast_nonneg n
       nlinarith
     · push Not at hsupp
@@ -140,7 +146,8 @@ every `ε > 0`, eventually `Pr(empirical distribution of n draws ∈ Γ) ≤ exp
 `limsup (1/n) log Pr ≤ -r` stated without the junk value `log 0 = 0`. -/
 theorem eventually_iidProb_empirical_mem_le {Q : α → ℝ} (hQ : ∀ a, 0 ≤ Q a)
     (Γ : Set (α → ℝ)) [DecidablePred (· ∈ Γ)] {r : ℝ}
-    (hr : ∀ P ∈ Γ, (∀ a, 0 < P a → 0 < Q a) → r ≤ ∑ a, P a * log (P a / Q a))
+    (hr : ∀ P ∈ Γ, (∀ a, 0 ≤ P a) → ∑ a, P a = 1 → (∀ a, 0 < P a → 0 < Q a) →
+      r ≤ ∑ a, P a * log (P a / Q a))
     {ε : ℝ} (hε : 0 < ε) :
     ∀ᶠ n : ℕ in atTop,
       iidProb Q (univ.filter fun x : Fin n → α => empirical (seqType x) ∈ Γ) ≤
@@ -152,14 +159,14 @@ theorem eventually_iidProb_empirical_mem_le {Q : α → ℝ} (hQ : ∀ a, 0 ≤ 
     _ = exp (-(n : ℝ) * (r - ε)) := by rw [← exp_add]; ring_nf
 
 /-- **Sanov's lower bound, asymptotic form** (Csiszár, "The method of types", IEEE Trans. Inform.
-Theory 44 (1998), Theorem III.3, lower half of (III.22)). Let `s n` be an `n`-type in `Γ` for
-every `n ≥ 1`, with `Q(a) > 0` wherever its empirical distribution is positive, and suppose
-`D(P̂_{s n} ‖ Q) → r`. Then for every `ε > 0`, eventually
+Theory 44 (1998), Theorem III.3, lower half of (III.22)). Let `s n` be an `n`-type, and suppose
+that for all large `n` it lies in `Γ` with `Q(a) > 0` wherever its empirical distribution is
+positive, and that `D(P̂_{s n} ‖ Q) → r`. Then for every `ε > 0`, eventually
 `exp(-n (r + ε)) ≤ Pr(empirical distribution of n draws ∈ Γ)`. -/
 theorem eventually_exp_le_iidProb_empirical_mem {Q : α → ℝ} (hQ0 : ∀ a, 0 ≤ Q a)
     {Γ : Set (α → ℝ)} [DecidablePred (· ∈ Γ)] {r : ℝ} (s : ∀ n : ℕ, Sym α n)
-    (hs : ∀ n, n ≠ 0 → empirical (s n) ∈ Γ)
-    (hQ : ∀ n, ∀ a, 0 < empirical (s n) a → 0 < Q a)
+    (hs : ∀ᶠ n in atTop, empirical (s n) ∈ Γ)
+    (hQ : ∀ᶠ n in atTop, ∀ a, 0 < empirical (s n) a → 0 < Q a)
     (hlim : Tendsto (fun n => ∑ a, empirical (s n) a * log (empirical (s n) a / Q a))
       atTop (𝓝 r)) {ε : ℝ} (hε : 0 < ε) :
     ∀ᶠ n : ℕ in atTop,
@@ -167,8 +174,9 @@ theorem eventually_exp_le_iidProb_empirical_mem {Q : α → ℝ} (hQ0 : ∀ a, 0
         iidProb Q (univ.filter fun x : Fin n → α => empirical (seqType x) ∈ Γ) := by
   have hε2 : 0 < ε / 2 := half_pos hε
   filter_upwards [eventually_pow_card_le_exp (α := α) hε2, eventually_gt_atTop 0,
-    hlim.eventually (gt_mem_nhds (show r < r + ε / 2 by linarith))] with n hpow hn hD
-  have hlow := exp_le_pow_mul_iidProb_empirical_mem hn.ne' hQ0 (s n) (hs n hn.ne') (hQ n)
+    hlim.eventually (gt_mem_nhds (show r < r + ε / 2 by linarith)), hs, hQ]
+    with n hpow hn hD hsn hQn
+  have hlow := exp_le_pow_mul_iidProb_empirical_mem hn.ne' hQ0 (s n) hsn hQn
   set D := ∑ a, empirical (s n) a * log (empirical (s n) a / Q a)
   set p := iidProb Q (univ.filter fun x : Fin n → α => empirical (seqType x) ∈ Γ)
   have hnR : (0 : ℝ) ≤ n := Nat.cast_nonneg n
@@ -182,15 +190,18 @@ theorem eventually_exp_le_iidProb_empirical_mem {Q : α → ℝ} (hQ0 : ∀ a, 0
 
 /-- **Sanov's theorem for finite alphabets** (Csiszár, "The method of types", IEEE Trans. Inform.
 Theory 44 (1998), Theorem III.3, (III.22); Csiszár–Shields, *Information Theory and Statistics: A
-Tutorial*, 2004, Theorem 2.1). Let `Q ≥ 0` on a finite alphabet and `Γ` a set of functions
-`α → ℝ`. Suppose `r ≤ D(P ‖ Q)` for every `P ∈ Γ` with `P ≪ Q`, and that there are `n`-types
-`s n ∈ Γ` with `P̂_{s n} ≪ Q` and `D(P̂_{s n} ‖ Q) → r` (so `r = D(Γ ‖ Q)` and condition (III.21)
-holds). Then `(1/n) log Pr(empirical distribution of n draws ∈ Γ) → -r`, natural logarithm. -/
+Tutorial*, 2004, Theorem 2.1). Let `Q ≥ 0` on a finite alphabet and `Γ` a set of functions `α → ℝ`.
+Suppose `r ≤ D(P ‖ Q)` for every probability vector `P ∈ Γ` with `P ≪ Q`, and that there are
+`n`-types `s n`, in `Γ` with `P̂_{s n} ≪ Q` for all large `n`, such that `D(P̂_{s n} ‖ Q) → r`. Then
+`r = D(Γ ‖ Q)` over the distributions in `Γ`, and the hypothesis is condition (III.21) (equivalent
+to it when `D(Γ ‖ Q) < ∞`). Then `(1/n) log Pr(empirical distribution of n draws ∈ Γ) → -r`, natural
+logarithm. -/
 theorem tendsto_log_iidProb_empirical_mem_div {Q : α → ℝ} (hQ0 : ∀ a, 0 ≤ Q a)
     {Γ : Set (α → ℝ)} [DecidablePred (· ∈ Γ)] {r : ℝ}
-    (hr : ∀ P ∈ Γ, (∀ a, 0 < P a → 0 < Q a) → r ≤ ∑ a, P a * log (P a / Q a))
-    (s : ∀ n : ℕ, Sym α n) (hs : ∀ n, n ≠ 0 → empirical (s n) ∈ Γ)
-    (hQ : ∀ n, ∀ a, 0 < empirical (s n) a → 0 < Q a)
+    (hr : ∀ P ∈ Γ, (∀ a, 0 ≤ P a) → ∑ a, P a = 1 → (∀ a, 0 < P a → 0 < Q a) →
+      r ≤ ∑ a, P a * log (P a / Q a))
+    (s : ∀ n : ℕ, Sym α n) (hs : ∀ᶠ n in atTop, empirical (s n) ∈ Γ)
+    (hQ : ∀ᶠ n in atTop, ∀ a, 0 < empirical (s n) a → 0 < Q a)
     (hlim : Tendsto (fun n => ∑ a, empirical (s n) a * log (empirical (s n) a / Q a))
       atTop (𝓝 r)) :
     Tendsto (fun n : ℕ =>

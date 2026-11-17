@@ -1,18 +1,27 @@
 # Sanov's theorem for finite alphabets
 
 Let $Q \ge 0$ on a finite alphabet $\alpha$ and $\Gamma$ a set of functions $\alpha \to \mathbb R$.
-Suppose that $r \le D(P\|Q)$ for every $P \in \Gamma$ with $P \ll Q$, and that there are $n$-types
-$s_n \in \Gamma$ with $P_{s_n} \ll Q$ and $D(P_{s_n}\|Q) \to r$. Then $r = D(\Gamma\|Q)$, condition
-(III.21) holds, and
+Suppose that $r \le D(P\|Q)$ for every probability vector $P \in \Gamma$ with $P \ll Q$, and that
+there are $n$-types $s_n$ such that, **for all large $n$**, $s_n \in \Gamma$ and $P_{s_n} \ll Q$, and
+$D(P_{s_n}\|Q) \to r$. Then $r = D(\Gamma\|Q)$, the infimum over the distributions in $\Gamma$, and
 
 $$\frac1n \log Q^n\{x \in \alpha^n : P_x \in \Gamma\} \longrightarrow -r \qquad (n \to \infty),$$
 
 natural logarithm. The probability is positive for large $n$, so the logarithm is not a junk value.
 
-Comparison with the sources. Csiszár (1998) phrases the hypothesis as (III.21); the sequence $s_n$
-is that hypothesis made explicit, together with $r$ as the infimum. Csiszár–Shields (2004) assume
-instead that $\Gamma$ is the closure of its interior and $Q$ is strictly positive, which implies
-(III.21); that topological form is not proved here.
+Comparison with the sources. Csiszár (1998) assumes (III.21),
+$\lim_n D(\Gamma \cap \mathcal P_n \| Q) = D(\Gamma \| Q)$, a condition on large $n$ only. When
+$D(\Gamma\|Q) < \infty$ the hypothesis above is equivalent to it: (III.21) makes $\Gamma \cap \mathcal P_n$
+contain a type of finite divergence for every large $n$, and since $\Gamma \cap \mathcal P_n$ is finite
+one can take $s_n$ to be a minimiser; conversely $D(\Gamma\|Q) \le D(\Gamma \cap \mathcal P_n\|Q) \le
+D(P_{s_n}\|Q) \to r = D(\Gamma\|Q)$. The case $D(\Gamma\|Q) = \infty$, where the source's limit is
+$-\infty$, is covered only by the [upper bound](eventually-iid-prob-empirical-mem-le.md), which then
+holds for every $r$. The hypothesis may fail for small $n$: for instance
+$\Gamma = \{P : P(\mathrm{true}) \in [2/5, 9/20]\}$ on $\{\mathrm{true}, \mathrm{false}\}$ contains no
+$1$-type and no $2$-type, and the theorem applies to it (a test in
+`MathlibExtTest.InformationTheory.FiniteSanov`). Csiszár–Shields (2004) assume instead that
+$\Gamma$ is the closure of its interior and $Q$ is strictly positive, which implies (III.21); that
+implication is not proved here.
 
 The proof is the method of types: the [union of type classes](iid-prob-empirical-mem-eq-sum.md),
 the [non-asymptotic upper bound](iid-prob-empirical-mem-le.md) and the

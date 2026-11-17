@@ -37,8 +37,10 @@ open Finset Real Filter Topology MathlibExt.InformationTheory.MethodOfTypes
 
 /-- **Gibbs' conditioning principle, finite alphabet** (Csiszár, "The method of types", IEEE
 Trans. Inform. Theory 44 (1998), Corollary to Theorem III.3). Let `Q > 0` be a distribution on a
-finite alphabet and `Γ` a set of distributions satisfying (III.21): `r ≤ D(P ‖ Q)` on `Γ` and some
-`n`-types `s n ∈ Γ` have `D(P̂_{s n} ‖ Q) → r`, so `r = D(Γ ‖ Q)`. If a unique `P*` in the closure
+finite alphabet and `Γ` a set of distributions satisfying (III.21), in the form: `r ≤ D(P ‖ Q)` on
+`Γ`, and some `n`-types `s n`, in `Γ` for all large `n`, have `D(P̂_{s n} ‖ Q) → r`, so
+`r = D(Γ ‖ Q)`; for nonempty `Γ` this form is equivalent to (III.21), since `D(Γ ‖ Q) < ∞` when
+`Q > 0`. If a unique `P*` in the closure
 of `Γ` has `D(P* ‖ Q) = r`, then for every `k` and every word `y` of length `k`, the conditional
 probability that the first `k` of `n` independent draws from `Q` spell `y`, given that their
 empirical distribution lies in `Γ`, tends to `∏ᵢ P*(yᵢ)`. The source allows any `Q`; this
@@ -48,7 +50,7 @@ theorem_wanted tendsto_iidProb_prefix_div_iidProb {α : Type*} [Fintype α] [Dec
     {Γ : Set (α → ℝ)} [DecidablePred (· ∈ Γ)]
     (hΓ : ∀ P ∈ Γ, (∀ a, 0 ≤ P a) ∧ ∑ a, P a = 1)
     {r : ℝ} (hr : ∀ P ∈ Γ, r ≤ ∑ a, P a * log (P a / Q a))
-    (s : ∀ n : ℕ, Sym α n) (hs : ∀ n, n ≠ 0 → empirical (s n) ∈ Γ)
+    (s : ∀ n : ℕ, Sym α n) (hs : ∀ᶠ n in atTop, empirical (s n) ∈ Γ)
     (hlim : Tendsto (fun n => ∑ a, empirical (s n) a * log (empirical (s n) a / Q a))
       atTop (𝓝 r))
     {Ps : α → ℝ} (hPs : Ps ∈ closure Γ) (hPsD : ∑ a, Ps a * log (Ps a / Q a) = r)
