@@ -50,6 +50,7 @@ constants such as Catalan's constant; and [numerical analysis](numerical-analysi
 - [Function spaces and Sobolev inequalities](function-spaces/README.md)
 - [Distributions](distributions/README.md)
 - [Ordinary differential equations](ordinary-differential-equations/README.md)
+- [Control theory](control-theory/README.md)
 - [Rough paths and path signatures](rough-paths-and-path-signatures/README.md)
 - [Partial differential equations](partial-differential-equations/README.md)
 - [Convex analysis and calculus of variations](convex-analysis-and-variations/README.md)
