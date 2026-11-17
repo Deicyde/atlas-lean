@@ -604,7 +604,8 @@
     {"slug": "syzygies-and-resolutions", "title": "Syzygies and free resolutions", "description": "Free resolutions of modules over polynomial rings, Hilbert's syzygy theorem, and graded Betti numbers and Poincaré series of multigraded modules.", "msc": ["13D02", "13A02"], "subfields": []},
     {"slug": "formal-power-series", "title": "Formal power series", "description": "Rings of formal power series in one or several variables and Hahn series, with formal exponentials, derivatives, coefficient operators and Lagrange inversion.", "msc": ["13F25", "13J05", "05A15"], "subfields": []},
     {"slug": "modules", "title": "Modules over commutative rings", "description": "Projective, free and finitely generated modules over commutative rings and module-finite extensions: Kaplansky's theorem, the Quillen–Suslin theorem, descent of Noetherianness (Eakin–Nagata) and the direct summand theorem.", "msc": ["13C", "13D", "13E"], "subfields": []},
-    {"slug": "invariant-theory", "title": "Invariant theory", "description": "Rings of invariants of finite groups acting on commutative rings: finiteness of invariant rings and Hilbert–Poincaré series of modular invariant rings of polynomial algebras.", "msc": ["13A50"], "subfields": []}
+    {"slug": "invariant-theory", "title": "Invariant theory", "description": "Rings of invariants of finite groups acting on commutative rings: finiteness of invariant rings and Hilbert–Poincaré series of modular invariant rings of polynomial algebras.", "msc": ["13A50"], "subfields": []},
+    {"slug": "cluster-algebras", "title": "Cluster algebras", "description": "Cluster algebras of Fomin and Zelevinsky: exchange matrices and matrix mutation, seeds and seed mutation, the Laurent phenomenon, rank-two cluster algebras and their periodicity in finite type, Somos sequences, and the finite type classification by Cartan–Killing types. Total positivity of matrices is under Linear algebra.", "msc": ["13F60", "05E99"], "subfields": []}
    ]
   },
   "SetTheory": {
@@ -4385,6 +4386,9 @@
   "MathlibExt/RingTheory/Adjoin/LinearRelations": {"to": "RingTheory/algebras-and-differentials", "title": "Algebra homomorphisms into an algebraically closed field"},
   "MathlibExt/RingTheory/AdjoinRoot/BitVec": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Binary polynomial arithmetic on bitvectors"},
   "MathlibExt/RingTheory/AdjoinRoot/LocalMaximal": {"to": "RingTheory/local-rings", "title": "Maximal ideals in integral extensions of local rings"},
+  "MathlibExt/RingTheory/ClusterAlgebra/Mutation": {"to": "RingTheory/cluster-algebras", "title": "Seed mutation and the Laurent phenomenon"},
+  "MathlibExt/RingTheory/ClusterAlgebra/RankTwo": {"to": "RingTheory/cluster-algebras", "title": "Cluster algebras of rank two"},
+  "MathlibExt/RingTheory/ClusterAlgebra/SomosFour": {"to": "RingTheory/cluster-algebras", "title": "Seed mutation and the Laurent phenomenon"},
   "MathlibExt/RingTheory/ClassGroup/CoprimeRepresentative": {"to": "RingTheory/dedekind-domains", "title": "Ideal class group"},
   "MathlibExt/RingTheory/ClassGroup/IdealSimilarity": {"to": "RingTheory/dedekind-domains", "title": "Ideal class group"},
   "MathlibExt/RingTheory/ConductorIdeal": {"to": "RingTheory/dedekind-domains", "title": "Conductor ideal"},
@@ -6967,6 +6971,8 @@
   "WantedExt/Probability/WignerMatrixMomentsWanted": {"to": "Probability/high-dimensional-probability", "title": "Wigner's semicircle law"},
   "WantedExt/QuantumInformation/CSSCodeWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "CSS codes"},
   "WantedExt/QuantumInformation/KnillLaflammeWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "Knill–Laflamme conditions"},
+  "WantedExt/RingTheory/ClusterAlgebra/FiniteTypeWanted": {"to": "RingTheory/cluster-algebras", "title": "Finite type classification of cluster algebras"},
+  "WantedExt/RingTheory/ClusterAlgebra/LaurentPhenomenonWanted": {"to": "RingTheory/cluster-algebras", "title": "Seed mutation and the Laurent phenomenon"},
   "WantedExt/SetTheory/Determinacy/BorelDeterminacyWanted": {"to": "SetTheory/determinacy", "title": "Borel and analytic determinacy"},
   "WantedExt/SetTheory/Determinacy/RegularityWanted": {"to": "SetTheory/determinacy", "title": "Regularity of sets of reals from determinacy"},
   "WantedExt/TheoryOfComputation/BenSassonWigdersonWanted": {"to": "Logic/propositional-logic", "title": "Resolution size and width"},
