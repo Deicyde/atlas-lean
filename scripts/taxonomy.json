@@ -877,6 +877,7 @@
   "CSLibExt/Algorithms/Lean/Graph/DirectedAdjacency": {"to": "ComputerScience/graph-algorithms/traversal-and-connectivity", "title": "Adjacency list"},
   "CSLibExt/Algorithms/Lean/Graph/DirectedAdjacency/EraseEdge": {"to": "ComputerScience/graph-algorithms/traversal-and-connectivity", "title": "Adjacency list"},
   "CSLibExt/Algorithms/Lean/Graph/EdmondsKarp": {"to": "ComputerScience/graph-algorithms/spanning-trees-flows-matchings", "title": "Edmonds–Karp algorithm"},
+  "CSLibExt/Algorithms/Lean/Graph/EdmondsKarpDistances": {"to": "ComputerScience/graph-algorithms/spanning-trees-flows-matchings", "title": "Edmonds–Karp algorithm"},
   "CSLibExt/Algorithms/Lean/Graph/HamiltonianCycle/Basic": {"to": "TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs", "title": "Undirected Hamiltonian cycle"},
   "CSLibExt/Algorithms/Lean/Graph/HamiltonianCycle/Bounds": {"to": "TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs", "title": "Undirected Hamiltonian cycle"},
   "CSLibExt/Algorithms/Lean/Graph/HamiltonianCycle/Correctness": {"to": "TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs", "title": "Undirected Hamiltonian cycle"},

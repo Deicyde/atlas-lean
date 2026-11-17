@@ -50,6 +50,16 @@
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
 - [No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut](cut-capacity-residual-cut-le.md)
 - [Integral flow theorem](exists-nat-max-flow.md)
+- [A step of a chain splits it into two walks](exists-split-of-mem-path-edges.md)
+- [Distances from the source do not decrease (abstract form of Edmonds–Karp, Proposition 3 (1))](relates-within-steps-source-of-shortest.md)
+- [Distances to the sink do not decrease (abstract form of Edmonds–Karp, Proposition 3 (2))](relates-within-steps-sink-of-shortest.md)
+- [Augmentation decreases a skew flow only against the path](edge-delta-nonneg-of-not-mem.md)
+- [New residual arcs reverse the augmenting path (Edmonds–Karp, Proposition 2)](residual-graph-edge-augment.md)
+- [Bottlenecks of residual chains are nonnegative](path-bottleneck-nonneg-of-is-chain.md)
+- [One Edmonds–Karp step does not shorten distances from the source (Proposition 3 (1))](walk-step-source.md)
+- [One Edmonds–Karp step does not shorten distances to the sink (Proposition 3 (2))](walk-step-sink.md)
+- [Breadth-first-search distances from the source do not decrease along Edmonds–Karp](bfs-distance-source-le-step.md)
+- [Breadth-first-search distances to the sink do not decrease along Edmonds–Karp](bfs-distance-sink-le-step.md)
 
 ## Related topics
 
