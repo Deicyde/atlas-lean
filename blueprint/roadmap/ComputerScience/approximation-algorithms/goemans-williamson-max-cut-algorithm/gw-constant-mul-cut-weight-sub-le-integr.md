@@ -6,10 +6,12 @@ $S'$ the random-hyperplane cut $S = \{i : v_i \cdot r \ge 0\}$ satisfies
 
 $$\mathbb{E}[w(S, \bar S)] \ge \alpha \left(w(S', \bar{S'}) - \varepsilon\right).$$
 
-This is the form in which Goemans and Williamson state the guarantee: a semidefinite-programming
-algorithm returns, in time polynomial in the input size and $\log(1/\varepsilon)$, vectors of value
-greater than $Z_P - \varepsilon$, and the cut then has expected weight at least
-$\alpha(Z_P - \varepsilon) \ge \alpha(\mathrm{OPT} - \varepsilon)$. The algorithm is not formalized.
+Goemans and Williamson state the guarantee in the slightly stronger form
+$\alpha(Z_P - \varepsilon)$: a semidefinite-programming algorithm returns, in time polynomial in the
+input size and $\log(1/\varepsilon)$, vectors of value greater than $Z_P - \varepsilon$, and the cut
+then has expected weight at least $\alpha(Z_P - \varepsilon) \ge \alpha(\mathrm{OPT} - \varepsilon)$. The
+Lean statement gives the consequence for every cut, $\alpha(w(S', \bar{S'}) - \varepsilon)$, which
+with $S'$ a maximum cut is $\alpha(\mathrm{OPT} - \varepsilon)$. The algorithm is not formalized.
 
 ## Informally uses
 

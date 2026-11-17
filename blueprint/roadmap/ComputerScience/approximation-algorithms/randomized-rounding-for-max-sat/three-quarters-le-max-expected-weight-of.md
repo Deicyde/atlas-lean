@@ -5,8 +5,13 @@ assignment $a$,
 
 $$\max(\hat W_1, \hat W_2) \ge \frac34 \sum_{j : a \models C_j} w_j .$$
 
-So the better of Johnson's assignment and randomized rounding has expected weight at least
-$\frac34$ of the optimum. Expected weights are in closed form; derandomization by conditional
+Here $\hat W_1$, $\hat W_2$ are the closed forms of the [expected weights](expected-weight.md).
+For instances whose clauses use distinct variables, the paper's setting, they are expected
+weights, so the better of Johnson's assignment and randomized rounding has expected weight at
+least $\frac34$ of the optimum. For clauses that repeat a variable this reading fails: for the
+single clause $x_0 \vee x_0$ of weight $1$, $y_0 = \frac12$, $z = 1$ is optimal for the relaxation
+(which counts the literal twice) and both closed forms equal $\frac34$, while both roundings
+satisfy the clause with probability $\frac12$. derandomization by conditional
 probabilities, which turns this into a deterministic $\frac34$-approximation algorithm, is not
 formalized.
 

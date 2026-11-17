@@ -17,11 +17,8 @@ The uniform-sphere statement itself is not formalized.
   the same statement in any finite-dimensional real inner product space, proved by reduction to
   the plane and polar coordinates rather than by the paper's spherical-digon argument.
 
-## Background
-
-- [Sheppard's formula](../../../Probability/distributions/multivariate-normal-distribution/sheppard-quadrant-probability-arcsine.md):
-  for $u \cdot v = \rho \in (-1, 1)$ the pair $(u \cdot r, v \cdot r)$ is a standard bivariate normal
-  vector with correlation $\rho$, and the two statements are equivalent.
+For $u \cdot v = \rho \in (-1, 1)$ the pair $(u \cdot r, v \cdot r)$ is a standard bivariate normal
+vector with correlation $\rho$, so the lemma is equivalent to Sheppard's quadrant formula.
 
 ## Sources
 

@@ -12,7 +12,10 @@ better of the two has expected weight at least $\frac34 Z^*_{LP} \ge \frac34 \ma
 
 Proved here, for clauses given as the repository's CNF clauses and satisfaction probabilities in
 closed form: Johnson's bound, Lemma 3.1, Theorem 4.1, and the comparison with the MAX SAT
-optimum. Not formalized: the probability space, derandomization, and the other $\frac34$
+optimum. The closed forms are the true probabilities, and these results the paper's
+probabilistic statements, for clauses whose literals use distinct variables. A CNF clause may
+repeat a variable, and then the closed form is not a probability: for $x_0 \vee x_0$ with
+$p_0 = \frac12$ it is $\frac34$, not $\frac12$. Not formalized: the probability space, derandomization, and the other $\frac34$
 algorithms of §5 (rounding with a function $f(y_i)$).
 
 - [Probability that a literal is true](literal-prob.md)

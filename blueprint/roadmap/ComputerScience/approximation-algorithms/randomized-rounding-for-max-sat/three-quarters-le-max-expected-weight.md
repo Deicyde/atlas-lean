@@ -6,8 +6,9 @@ weight under $p_i = 1/2$ and $\hat W_2$ under $p_i = y_i$. Then
 $$\max(\hat W_1, \hat W_2) \ge \frac{\hat W_1 + \hat W_2}{2} \ge \frac34 \sum_j w_j z_j .$$
 
 The paper states the theorem for an optimal solution $(y^*, z^*)$, where the right-hand side is
-$\frac34 Z^*_{LP}$; the proof, and the Lean statement, use only feasibility. Expected weights are
-in the closed form of the [satisfaction probability](clause-sat-prob.md).
+$\frac34 Z^*_{LP}$; the proof, and the Lean statement, use only feasibility. $\hat W_1$ and $\hat W_2$ are
+the closed forms of the [expected weights](expected-weight.md); they are true expected weights
+when every clause uses distinct variables.
 
 ## Informally uses
 

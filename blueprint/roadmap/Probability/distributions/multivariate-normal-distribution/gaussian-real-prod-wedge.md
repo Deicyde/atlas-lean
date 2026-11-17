@@ -11,7 +11,5 @@ $e^{-(x^2+y^2)/2}/(2\pi)$ is radial, the event depends only on the angle $\varph
 $\cos(\varphi + a)$ against $\cos(\varphi - a)$), the radial integral
 $\int_0^\infty r e^{-r^2/2}\, dr$ is $1$, and the angular set is two arcs of length $2a$.
 
-## Related topics
-
-- [Sheppard's formula](sheppard-quadrant-probability-arcsine.md): the same computation for the
-  quadrant probability of a correlated normal pair.
+The same computation, through the quadrant probability for two directions, gives Sheppard's
+formula.

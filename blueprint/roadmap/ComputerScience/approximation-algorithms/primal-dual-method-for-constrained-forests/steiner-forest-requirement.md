@@ -8,7 +8,7 @@ union of two sets separating no pair separates no pair), but that is not formali
 With a single pair this is the shortest path problem, and with all pairs from a terminal set
 $T$ the Steiner tree problem (their Table 1).
 
-## Related topics
+## Background
 
 - [Steiner tree](../../../TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/steiner-tree/README.md):
   NP-completeness of the special case with one terminal set.

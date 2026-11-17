@@ -15,10 +15,6 @@ Taylor bounds of degree up to $9$ (proved in the module by comparing derivatives
 $\pi$ by Mathlib's 20-digit bounds. The constant is within $3 \times 10^{-6}$ of the true value
 $0.8785672\ldots$ of $\alpha$.
 
-## Informally uses
-
-- [Ellipsoid method](../../../Analysis/convex-analysis-and-variations/ellipsoid-method/README.md): not used. (No link needed.)
-
 ## Sources
 
 - M. X. Goemans and D. P. Williamson, "Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming", *J. ACM* 42(6) (1995), 1115–1145 (journal version), proof of Lemma 3.5 (p. 1122).

@@ -3,7 +3,7 @@
 For a vertex set $S$, the weight $w(S, \bar S) = \sum w_{ij}$ over the pairs $i < j$ with
 exactly one endpoint in $S$. The maximum of this quantity over all $S$ is the MAX CUT optimum.
 
-## Related topics
+## Background
 
 - [MAXIMUM CUT is NP-complete](../../../TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/maximum-cut/max-cut-np-complete.md):
   the decision version of the problem whose optimum is the largest cut weight; this is why one

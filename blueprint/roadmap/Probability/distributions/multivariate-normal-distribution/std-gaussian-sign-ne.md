@@ -21,12 +21,10 @@ are treated separately.
 - [One-dimensional marginal of the standard Gaussian](map-inner-std-gaussian.md): the case
   $v = -u$.
 
-## Background
-
-- [Sheppard's formula](sheppard-quadrant-probability-arcsine.md): for a standard bivariate normal
-  pair with correlation $\rho = \langle u, v\rangle \in (-1, 1)$ the two statements are equivalent, since
-  $1 - 2\left(\frac14 + \frac{\arcsin \rho}{2\pi}\right) = \frac{\arccos \rho}{\pi}$; Sheppard's formula is deduced from this
-  page through the [quadrant probability](std-gaussian-pos-pos.md).
+For a standard bivariate normal pair with correlation $\rho = \langle u, v\rangle \in (-1, 1)$ this is
+equivalent to Sheppard's formula, since
+$1 - 2\left(\frac14 + \frac{\arcsin \rho}{2\pi}\right) = \frac{\arccos \rho}{\pi}$; Sheppard's formula is deduced from this
+page through the quadrant probability for two directions.
 
 ## Sources
 

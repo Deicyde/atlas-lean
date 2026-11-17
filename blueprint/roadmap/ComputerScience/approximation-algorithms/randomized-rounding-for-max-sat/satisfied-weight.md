@@ -5,7 +5,7 @@ satisfies, with satisfaction as in the repository's
 [CNF semantics](../../../Logic/propositional-logic/conjunctive-normal-form/satisfies-2.md). MAX SAT
 maximizes it over $a$.
 
-## Related topics
+## Background
 
 - [MAXIMUM SATISFIABILITY is NP-complete](../../../TheoryOfComputation/np-completeness/satisfiability/maximum-satisfiability/max-sat-np-complete.md):
   the decision version of this maximization.

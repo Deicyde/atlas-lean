@@ -7,7 +7,7 @@ nonzero root of $\cos\theta + \theta \sin\theta = 1$; the Lean definition is the
 attainment is not needed for anything proved here. Proved: $0.87856 < \alpha$
 ([Lemma 3.5](lt-gw-constant.md)) and $\alpha \le 1$ ([at $\theta = \pi$](gw-constant-le-one.md)).
 
-## Related topics
+## Background
 
 - [Majority Is Stablest](../../../Combinatorics/boolean-functions/structure-theorems-for-boolean-functions/majority-is-stablest.md):
   through Khot–Kindler–Mossel–O'Donnell it shows that, assuming the Unique Games Conjecture, no

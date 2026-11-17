@@ -5,7 +5,8 @@ $0 \le z \le \min\left(1, \sum_{i \in P} y_i + \sum_{i \in N}(1 - y_i)\right)$,
 
 $$\frac{\Pr_{1/2}[C] + \Pr_y[C]}{2} \ge \frac34 z ,$$
 
-where $\Pr_{1/2}$ is Johnson's assignment and $\Pr_y$ randomized rounding, both in closed form.
+where $\Pr_{1/2}$ is Johnson's assignment and $\Pr_y$ randomized rounding, both in closed form,
+which are the true probabilities when the literals of $C$ use distinct variables.
 The empty clause is covered: then $z = 0$.
 
 ## Informally uses
