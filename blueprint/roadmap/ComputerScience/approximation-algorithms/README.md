@@ -7,6 +7,7 @@ Polynomial-time algorithms with proved approximation ratios for NP-hard optimiza
 - [Greedy set cover](greedy-set-cover/README.md)
 - [List scheduling on identical machines](list-scheduling-on-identical-machines/README.md)
 - [Maximum n-times coverage](maximum-n-times-coverage/README.md)
+- [Primal–dual method for constrained forests](primal-dual-method-for-constrained-forests/README.md)
 - [Randomized rounding for MAX-SAT](randomized-rounding-for-max-sat/README.md)
 - [Scheduling unrelated parallel machines](scheduling-unrelated-parallel-machines/README.md)
 - [Vertex cover 2-approximation](vertex-cover-2-approximation/README.md)
