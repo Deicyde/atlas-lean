@@ -22,6 +22,7 @@ These results compare hypotheses through their likelihoods: the Neyman–Pearson
 - [Monotone likelihood ratio](monotone-likelihood-ratio/README.md)
 - [Score, Wald and likelihood-ratio tests](score-wald-and-likelihood-ratio-tests/README.md)
 - [Local power of the likelihood-ratio test](local-power-of-the-likelihood-ratio-test/README.md)
+- [Universal inference](universal-inference/README.md)
 
 ## Exact, rank and randomisation inference
 
