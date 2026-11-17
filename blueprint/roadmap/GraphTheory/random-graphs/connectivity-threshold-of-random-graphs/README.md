@@ -1,12 +1,26 @@
 # Connectivity threshold of random graphs
 
-At $p = (\log n + c)/n$ the binomial random graph $G(n, p)$ is connected with probability tending to $e^{-e^{-c}}$; isolated vertices are the obstruction.
+In the binomial random graph $G(n, p)$, take $p = (\log n + c)/n$ with $c$ a fixed real number. Then
+
+$$\Pr[G(n, p) \text{ is connected}] \to e^{-e^{-c}} \qquad (n \to \infty),$$
+
+as proved by Erdős and Rényi (1959). The proof has two parts. First, the number $X$ of isolated vertices has mean $n(1-p)^{n-1} \to e^{-c}$ and is asymptotically Poisson, so $\Pr[X = 0] \to e^{-e^{-c}}$. Second, with high probability $G(n, p)$ has no component with between $2$ and $n/2$ vertices, so it is connected exactly when $X = 0$. As $c$ runs over $\mathbb{R}$ this describes the whole window. For $p = (\log n + \omega(n))/n$ with $\omega(n) \to \infty$ the graph is connected with high probability; for $\omega(n) \to -\infty$ it is disconnected with high probability.
+
+The exact probability that a given vertex is isolated, the first-moment bound and the limit of the first moment are proved. The Poisson limit and the connectivity limit are wanted statements. $G(n, p)$ is the [graph of a random set of pairs](../../graph-ramsey-theory/graph-ramsey-numbers/pair-graph.md), each pair kept independently with probability $p$, as in the [threshold for triangles](../threshold-for-triangles/README.md). Hypotheses of the form "$p_n = (\log n + c)/n$ for all large $n$" are satisfiable for every $c$.
+
 - [Connectivity threshold of `G(n, p)` (Erdős–Rényi)](tendsto-measure-real-connected.md)
 - [No isolated vertex at the connectivity threshold (Erdős–Rényi)](tendsto-measure-real-no-isolated.md)
+- [First moment of isolated vertices at the connectivity threshold](tendsto-mul-one-sub-pow.md)
 - [Isolated vertices are rare beyond `e^{-c}`](eventually-measure-real-exists-isolated.md)
-- [The threshold probabilities exist](exists-prob-eventually-eq.md)
 - [First moment bound for isolated vertices of `G(n, p)`](measure-real-exists-isolated-le.md)
 - [Probability that a vertex of `G(n, p)` is isolated](measure-real-isolated.md)
-- [Pairs at a vertex](pairs-at.md)
 - [Isolation is avoidance of the pairs at a vertex](set-of-isolated-eq-avoid-event.md)
-- [First moment of isolated vertices at the connectivity threshold](tendsto-mul-one-sub-pow.md)
+- [Pairs at a vertex](pairs-at.md)
+- [The threshold probabilities exist](exists-prob-eventually-eq.md)
+
+## Related topics
+
+- [Threshold for triangles](../threshold-for-triangles/README.md): the first- and second-moment analysis of another threshold in the same model.
+- [Connectivity of random k-out graphs](../connectivity-of-random-k-out-graphs/README.md): connectivity in a different random graph model.
+- [First and second moment methods](../../../Combinatorics/probabilistic-combinatorics/first-and-second-moment-methods/README.md): the general tools; the bound $\Pr[X > 0] \le \mathbb{E} X$ is used here.
+- [Kim–Vu polynomial concentration](../../../Probability/concentration-inequalities/kim-vu-polynomial-concentration/README.md): concentration of subgraph counts in $G(n, p)$, used when the expectation alone does not control the count.
