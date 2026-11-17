@@ -59,4 +59,5 @@
 
 ## Related topics
 
-- [Amortized analysis](../../data-structures/amortized-analysis/README.md)
+- [Amortized analysis](../../data-structures/amortized-analysis/README.md): the potential
+  method behind the move-to-front analysis.

@@ -76,6 +76,8 @@ $O(n + m\,\alpha(m + n, n))$ (J. ACM 31(2) (1984)).
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
-- [Link-cut tree](../link-cut-tree/README.md)
-- [Spanning trees, flows and matchings](../../../graph-algorithms/spanning-trees-flows-matchings/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): the potential method, of which
+  the inverse-Ackermann bound is an amortized instance.
+- [Link-cut tree](../link-cut-tree/README.md): the other dynamic-forest structure of this field.
+- [Spanning trees, flows and matchings](../../../graph-algorithms/spanning-trees-flows-matchings/README.md):
+  Kruskal's algorithm, which uses union-find.

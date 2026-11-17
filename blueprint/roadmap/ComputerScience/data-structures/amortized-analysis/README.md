@@ -15,10 +15,17 @@ configurations, the cost model and the ordered group of values; the data-structu
 
 ## Related topics
 
-- [Two-list queue](../linear-structures/two-list-queue/README.md)
-- [Dynamic table](../linear-structures/dynamic-table/README.md)
-- [Binary counter](../linear-structures/binary-counter/README.md)
-- [Stack with multipop](../linear-structures/stack-with-multipop/README.md)
-- [Splay tree](../search-trees/splay-tree/README.md)
-- [Disjoint-set data structure](../disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/README.md)
-- [List update problem](../../online-algorithms/list-update-problem/README.md)
+- [Two-list queue](../linear-structures/two-list-queue/README.md): potential equal to the
+  length of the enqueue list.
+- [Dynamic table](../linear-structures/dynamic-table/README.md): potential $2n - m$ for table
+  doubling.
+- [Binary counter](../linear-structures/binary-counter/README.md): potential equal to the number
+  of one bits.
+- [Stack with multipop](../linear-structures/stack-with-multipop/README.md): Tarjan's stack
+  example, potential equal to the stack size.
+- [Splay tree](../search-trees/splay-tree/README.md): the sum-of-logs potential and the access
+  lemma, combined through the per-operation form of the potential method.
+- [Disjoint-set data structure](../disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/README.md):
+  union by rank with path compression, whose inverse-Ackermann bound is an amortized one.
+- [List update problem](../../online-algorithms/list-update-problem/README.md): move-to-front,
+  analysed with the inversion potential.

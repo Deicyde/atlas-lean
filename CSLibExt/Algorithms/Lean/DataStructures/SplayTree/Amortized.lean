@@ -49,7 +49,8 @@ search path per step starting from the root, so when the access depth is odd its
 rotation (zig) happens at the bottom of the path rather than at the root as in Sleator and
 Tarjan's bottom-up splaying; the resulting tree can differ. The access-lemma argument applies
 verbatim, since the bound for a zig step, `1 + 3 (r'(x) - r(x))`, holds wherever the step
-occurs; `access_lemma` checks this for the recursive formulation.
+occurs; `access_lemma_weighted` (hence `access_lemma`) proves this for the recursive
+formulation.
 -/
 
 @[expose] public section
@@ -182,7 +183,8 @@ theorem weight_eq_sum_inorder (w : α → ℝ) : ∀ t : BinaryTree α,
       simp [List.sum_cons]
       ring
 
-/-- Splaying preserves the weight of a tree. -/
+/-- **Splaying preserves the weight of a tree.** For every weight function `w`, the splayed tree
+`splay x t` has the same weight as `t`, since splaying preserves the inorder sequence of keys. -/
 theorem weight_splay [LinearOrder α] (w : α → ℝ) (x : α) (t : BinaryTree α) :
     weight w (splay x t) = weight w t := by
   rw [weight_eq_sum_inorder, weight_eq_sum_inorder, inorder_splay]
@@ -657,7 +659,8 @@ theorem access_lemma_weighted [LinearOrder α] {w : α → ℝ} (hw : ∀ a, 0 <
       3 * (Real.logb 2 (weight w t) - Real.logb 2 (weight w (focus x t))) + 1 :=
   access_aux hw x t.numNodes t le_rfl
 
-/-- With unit weights, the weight of a tree is its number of nodes. -/
+/-- **Unit weights give the number of nodes.** With every weight equal to one, the weight of a
+binary tree is its number of nodes. -/
 theorem weight_one : ∀ t : BinaryTree α, weight (fun _ => (1 : ℝ)) t = t.numNodes
   | .nil => by simp [weight]
   | .node k l r => by
@@ -665,7 +668,8 @@ theorem weight_one : ∀ t : BinaryTree α, weight (fun _ => (1 : ℝ)) t = t.nu
       push_cast [BinaryTree.numNodes]
       ring
 
-/-- With unit weights, the weighted potential is the potential. -/
+/-- **Unit-weight potential is the splay-tree potential.** With every weight equal to one, the
+weighted potential `potentialW` of a binary tree equals its unit-weight potential `potential`. -/
 theorem potential_eq_potentialW_one : ∀ t : BinaryTree α,
     potential t = potentialW (fun _ => (1 : ℝ)) t
   | .nil => rfl
@@ -782,7 +786,9 @@ private theorem mem_node_iff {x k : α} {l r : BinaryTree α} :
     x ∈ BinaryTree.node k l r ↔ x ∈ l ∨ x = k ∨ x ∈ r :=
   Iff.rfl
 
-/-- In a search tree, the search for a present key ends at the node holding it. -/
+/-- **In a search tree the search for a present key ends at its node.** If `t` is a binary search
+tree containing `x`, the subtree `focus x t` at the end of the search path is rooted at a node
+holding `x`. -/
 theorem focus_eq_node_of_mem {x : α} :
     ∀ {t : BinaryTree α}, BinarySearchTree.Ordered t → x ∈ t → ∃ l r, focus x t = .node x l r
   | .nil, _, hx => False.elim hx

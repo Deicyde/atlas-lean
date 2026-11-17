@@ -28,4 +28,4 @@
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): its amortized increment cost is an instance of the potential method.

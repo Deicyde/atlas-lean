@@ -42,11 +42,11 @@ frequencies) (Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 3
 - [Balance theorem for splay trees](balance-theorem.md)
 - [Weight of a binary tree](weight.md)
 - [Weighted splay-tree potential](potential-w.md)
-- [Weight one](weight-one.md)
-- [Potential eq potential W one](potential-eq-potential-w-one.md)
-- [Weight splay](weight-splay.md)
+- [Unit weights give the number of nodes](weight-one.md)
+- [Unit-weight potential is the splay-tree potential](potential-eq-potential-w-one.md)
+- [Splaying preserves the weight of a tree](weight-splay.md)
 - [Access lemma for splay trees](access-lemma-weighted.md)
-- [Focus eq node of mem](focus-eq-node-of-mem.md)
+- [In a search tree the search for a present key ends at its node](focus-eq-node-of-mem.md)
 - [Amortized cost of accessing a present key](amortized-cost-le-weighted.md)
 - [Splay-tree access bound for arbitrary weights](access-sequence-le-weighted.md)
 - [Access frequency](access-count.md)
@@ -54,6 +54,9 @@ frequencies) (Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 3
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
-- [Binary search tree](../binary-search-tree/README.md)
-- [Link-cut tree](../../disjoint-sets-and-dynamic-trees/link-cut-tree/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): the potential method used for the
+  balance theorem and static optimality.
+- [Binary search tree](../binary-search-tree/README.md): the underlying tree, inorder traversal
+  and search-tree invariant.
+- [Link-cut tree](../../disjoint-sets-and-dynamic-trees/link-cut-tree/README.md): Sleator and
+  Tarjan's dynamic trees, whose amortized analysis uses splaying.

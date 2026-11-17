@@ -44,5 +44,7 @@ a vertex is the root of its component exactly when its LOWLINK is itself (Tarjan
 
 ## Related topics
 
-- [Depth-first search](../depth-first-search/README.md)
-- [Topological sorting](../topological-sorting/README.md)
+- [Depth-first search](../depth-first-search/README.md): the search whose numbering properties
+  the lowlink test uses.
+- [Topological sorting](../topological-sorting/README.md): the components form an acyclic
+  condensation, which can be sorted topologically.

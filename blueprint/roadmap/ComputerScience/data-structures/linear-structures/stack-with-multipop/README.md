@@ -20,4 +20,4 @@
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): Tarjan's stack example of the potential method.

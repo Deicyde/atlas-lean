@@ -43,4 +43,4 @@
 
 ## Related topics
 
-- [Strongly connected components](../strongly-connected-components/README.md)
+- [Strongly connected components](../strongly-connected-components/README.md): Tarjan's lowlink test, built on the numbering properties of this search.

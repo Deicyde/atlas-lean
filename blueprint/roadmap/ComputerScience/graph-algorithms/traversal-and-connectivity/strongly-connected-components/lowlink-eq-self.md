@@ -8,6 +8,12 @@ $\mathrm{num}(v) \le \mathrm{num}(w)$. Allowing any final edge, not only fronds 
 does not change the minimum: tree arcs and edges from ancestors to descendants lead to
 descendants of $v$, which are numbered after $v$.
 
+Tarjan's displayed formula asks instead that the tail $u$ of the final edge and its head $w$ lie in
+the same strongly connected component; his prose, followed here, asks that $w$ lie in the
+component of $v$. The minimum is the same: if $u$ and $w$ lie in a component $C' \ne C(v)$, the
+root of $C'$ is a descendant of $v$ (Corollary 11), so $w$ is numbered after $v$; and if
+$w \in C(v)$, then $u$, which lies on the tree path from $v$ and reaches $w$, is in $C(v)$ as well.
+
 ## Sources
 
 - R. E. Tarjan, *Depth-first search and linear graph algorithms*, SIAM J. Comput. 1(2) (1972)

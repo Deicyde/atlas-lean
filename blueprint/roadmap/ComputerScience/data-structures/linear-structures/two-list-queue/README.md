@@ -23,4 +23,4 @@
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): its amortized costs are an instance of the potential method.

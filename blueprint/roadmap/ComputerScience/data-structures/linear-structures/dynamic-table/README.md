@@ -35,4 +35,4 @@
 
 ## Related topics
 
-- [Amortized analysis](../../amortized-analysis/README.md)
+- [Amortized analysis](../../amortized-analysis/README.md): its amortized insertion cost is an instance of the potential method.

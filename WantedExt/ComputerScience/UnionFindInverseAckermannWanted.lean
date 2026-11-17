@@ -18,16 +18,15 @@ Tarjan and van Leeuwen, *Worst-case analysis of set union algorithms*, J. ACM 31
 245–281, §3, Theorem 3: the set union algorithm with linking by rank (or by size) and
 compression (or splitting, or halving) runs in `O(n + m α(m + n, n))` time, where `n` is the
 number of make-set operations, `m` the number of finds and `α` their inverse Ackermann
-function. The bound is optimal for separable algorithms (their §1, Theorem 2), and was first
-obtained for compression with linking by size, under the assumption `m ≥ n`, by Tarjan
-(*Efficiency of a good but not linear set union algorithm*, J. ACM 22(2) (1975)), as Tarjan and
-van Leeuwen recall in §3.
+function. The bound is optimal for separable algorithms (their §1, Theorem 2). Their proof
+uses, and extends, the multiple partition technique of Tarjan, *Efficiency of a good but not
+linear set union algorithm*, J. ACM 22(2) (1975) 215–225 (their §3).
 
 The statement uses the cost model of `CSLibExt.Algorithms.Lean.DataStructures.UnionFind.
 SequenceCost` for the canonical Batteries union-find (`find` with path compression, union by
 rank): a make-set and a link cost one, a find costs the number of nodes on its find path, and a
-union is two finds and a link. The proof, by Tarjan's multiple-partition technique (their §3,
-Lemmas 3–7), is not yet formalized; the weaker `O(n + m log n)` bound is proved as
+union is two finds and a link. The proof (their §3: Lemmas 4–6 and the proof of Theorem 3) is
+not yet formalized; the weaker `O(n + m log n)` bound is proved as
 `UnionByRank.run_empty_cost_le_log`.
 -/
 
