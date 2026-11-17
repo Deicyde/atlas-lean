@@ -14721,6 +14721,8 @@
 "Cslib.ωLanguage.Example.eventuallyAlwaysNa": "4e485d191bfaeb26",
 "Cslib.ωLanguage.Example.infinitelyOften": "f2ec6e36a7bd7a7b",
 "Cslib.ωLanguage.Example.infinitelyOftenNa": "06e5742dd2c2017c",
+"Cslib.ωLanguage.Example.nondeterministic_buchi_strictly_more_expressive": "c40e878c022a6d44",
+"Cslib.ωLanguage.Example.not_exists_da_buchi_eventuallyZero": "78592da14f2f03e6",
 "Cslib.ωLanguage.IsRegular.compl_of_isRegular": "47b2298407348412",
 "Cslib.ωSequence.IsMaxInfOcc": "93a6f93ebddf5a54",
 "Cslib.ωSequence.IsMaxInfOcc.eventually_le": "441590d2c1e6dd9b",
