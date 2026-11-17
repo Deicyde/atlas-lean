@@ -9,3 +9,4 @@ Bayesian inference and nonparametric priors: the Dirichlet process and stick-bre
 - [Bayesian inverse problems](bayesian-inverse-problems/README.md)
 - [Function-space MCMC](function-space-mcmc/README.md)
 - [Ensemble Kalman inversion](ensemble-kalman-inversion/README.md)
+- [Empirical Bayes and Tweedie's formula](empirical-bayes-and-tweedie-s-formula/README.md)
