@@ -1260,6 +1260,7 @@
   "CSLibExt/Computability/Languages/ContextSensitive/Basic": {"to": "TheoryOfComputation/context-sensitive-languages", "title": "Context-sensitive grammars"},
   "CSLibExt/Computability/Languages/ContextSensitive/LBA": {"to": "TheoryOfComputation/context-sensitive-languages", "title": "Linear bounded automata"},
   "CSLibExt/Computability/Languages/ExampleInfinitelyOften": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Büchi automata for infinitely often and eventually always"},
+  "CSLibExt/Computability/Languages/OmegaRegularClosure": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Boolean closure of Büchi automata"},
   "CSLibExt/Computability/Languages/Finite": {"to": "TheoryOfComputation/regular-languages/automata-and-expressions", "title": "Finite languages"},
   "CSLibExt/Computability/Languages/GeneralizedRegularExpression": {"to": "TheoryOfComputation/regular-languages/automata-and-expressions", "title": "Star height"},
   "CSLibExt/Computability/Languages/KleeneConverse": {"to": "TheoryOfComputation/regular-languages/automata-and-expressions", "title": "Kleene's theorem"},
