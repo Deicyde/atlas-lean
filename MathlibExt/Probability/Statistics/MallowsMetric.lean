@@ -29,11 +29,13 @@ Laws of sums of independent variables are convolutions of probability measures (
 
 * `wasserstein_conv_le` (Lemma 8.6, two summands): `d_p(U₁ + U₂, V₁ + V₂) ≤ d_p(U₁, V₁) +
   d_p(U₂, V₂)` for independent pairs, `p ≥ 1`.
+* `wasserstein_convPow_le` (Lemma 8.6, `m` identically distributed pairs):
+  `d_p(μ^{∗m}, ν^{∗m}) ≤ m d_p(μ, ν)`.
 * `wasserstein_map_smul` (equation (8.2)): `d_p(aU, aV) = |a| d_p(U, V)`.
 * `transportCost_two_conv_le` (Lemma 8.7, two summands): in a Hilbert space, if `U₂` and `V₂`
   have the same mean, `d₂(U₁ + U₂, V₁ + V₂)² ≤ d₂(U₁, V₁)² + d₂(U₂, V₂)²`.
-* `transportCost_two_center_add_le` (the inequality `≤` of Lemma 8.8 read as
-  `d₂(U - EU, V - EV)² + ‖EU - EV‖² ≤ d₂(U, V)²`).
+* `transportCost_two_center_add_le` and `transportCost_two_eq_center_add` (Lemma 8.8):
+  `d₂(U, V)² = d₂(U - EU, V - EV)² + ‖EU - EV‖²`.
 * `wasserstein_two_normalizedSum_le` (equation (2.2), C. L. Mallows, "A note on asymptotic joint
   normality", *Ann. Math. Statist.* 43 (1972) 508–515, Lemma 3 as quoted by Bickel and
   Freedman): the law `G⁽ᵐ⁾` of `m^{-1/2} ∑_{j<m} (Z_j - E Z_j)` satisfies
@@ -134,6 +136,27 @@ theorem wasserstein_conv_le {p : ℝ} (hp : 1 ≤ p) (μ₁ ν₁ μ₂ ν₂ : 
         ENNReal.lintegral_Lp_add_le hf.aemeasurable hg.aemeasurable hp
     _ = _ := by
         rw [hP, lintegral_comp_fst_prod π₁ π₂ hed, lintegral_comp_snd_prod π₁ π₂ hed]
+
+/-- **Convolution powers.** `convPow μ m` is the law of `Z₁ + ⋯ + Z_m` for independent
+`Z_j ∼ μ` (the Dirac mass at `0` for `m = 0`), defined by `μ^{∗(m+1)} = μ^{∗m} ∗ μ`. -/
+noncomputable def convPow (μ : ProbabilityMeasure E) : ℕ → ProbabilityMeasure E
+  | 0 => ⟨Measure.dirac 0, inferInstance⟩
+  | m + 1 => conv (convPow μ m) μ
+
+/-- **Mallows metric of convolution powers, general `p`** (Bickel and Freedman, *Ann. Statist.* 9
+(1981), Lemma 8.6 for `m` identically distributed pairs). For `p ≥ 1`,
+`d_p(μ^{∗m}, ν^{∗m}) ≤ m · d_p(μ, ν)`. -/
+theorem wasserstein_convPow_le {p : ℝ} (hp : 1 ≤ p) (μ ν : ProbabilityMeasure E) :
+    ∀ m : ℕ, wasserstein p (convPow μ m) (convPow ν m) ≤ m * wasserstein p μ ν
+  | 0 => by
+      have hρ : convPow ν 0 = convPow μ 0 := rfl
+      rw [hρ, wasserstein_self (lt_of_lt_of_le zero_lt_one hp)]
+      exact zero_le
+  | m + 1 => by
+      refine (wasserstein_conv_le hp (convPow μ m) (convPow ν m) μ ν).trans ?_
+      refine (add_le_add (wasserstein_convPow_le hp μ ν m) le_rfl).trans (le_of_eq ?_)
+      push_cast
+      ring
 
 end Normed
 
@@ -358,8 +381,8 @@ theorem wasserstein_two_conv_sq_le (μ₁ ν₁ μ₂ ν₂ : ProbabilityMeasure
 `d₂(U - EU, V - EV)² ≤ d₂(U, V)² - ‖EU - EV‖²` proved first there). For laws `μ, ν` with finite
 second moments on a separable real Hilbert space, with means `a = ∫ x dμ` and `b = ∫ x dν`, the
 centred laws `μ.map (· - a)` (the law of `U - EU`) and `ν.map (· - b)` satisfy
-`d₂(μ.map (· - a), ν.map (· - b))² + ‖a - b‖² ≤ d₂(μ, ν)²`. Only this half of Lemma 8.8 is
-proved here. -/
+`d₂(μ.map (· - a), ν.map (· - b))² + ‖a - b‖² ≤ d₂(μ, ν)²`. The equality is
+`transportCost_two_eq_center_add`. -/
 theorem transportCost_two_center_add_le (μ ν : ProbabilityMeasure E)
     (hμ : MemLp id 2 (μ : Measure E)) (hν : MemLp id 2 (ν : Measure E)) :
     transportCost 2 (μ.map (· - ∫ x, x ∂(μ : Measure E))) (ν.map (· - ∫ x, x ∂(ν : Measure E))) +
@@ -438,11 +461,83 @@ theorem integral_map_sub {μ : ProbabilityMeasure E} (hμ : MemLp id 2 (μ : Mea
     integral_sub (f := fun x : E => x) (hμ.integrable one_le_two) (integrable_const c)]
   simp
 
-/-- **Convolution powers.** `convPow μ m` is the law of `Z₁ + ⋯ + Z_m` for independent
-`Z_j ∼ μ` (the Dirac mass at `0` for `m = 0`), defined by `μ^{∗(m+1)} = μ^{∗m} ∗ μ`. -/
-noncomputable def convPow (μ : ProbabilityMeasure E) : ℕ → ProbabilityMeasure E
-  | 0 => ⟨Measure.dirac 0, inferInstance⟩
-  | m + 1 => conv (convPow μ m) μ
+/-- **Mallows metric and centring** (Bickel and Freedman, *Ann. Statist.* 9 (1981), Lemma 8.8).
+For laws `μ, ν` with finite second moments on a separable real Hilbert space, with means
+`a = ∫ x dμ` and `b = ∫ x dν`,
+`d₂(μ, ν)² = d₂(μ.map (· - a), ν.map (· - b))² + ‖a - b‖²`: the squared Mallows distance splits
+into the distance of the centred laws and the squared distance of the means. -/
+theorem transportCost_two_eq_center_add (μ ν : ProbabilityMeasure E)
+    (hμ : MemLp id 2 (μ : Measure E)) (hν : MemLp id 2 (ν : Measure E)) :
+    transportCost 2 μ ν =
+      transportCost 2 (μ.map (· - ∫ x, x ∂(μ : Measure E)))
+          (ν.map (· - ∫ x, x ∂(ν : Measure E))) +
+        ENNReal.ofReal (‖∫ x, x ∂(μ : Measure E) - ∫ x, x ∂(ν : Measure E)‖ ^ 2) := by
+  refine le_antisymm ?_ (transportCost_two_center_add_le μ ν hμ hν)
+  set a := ∫ x, x ∂(μ : Measure E)
+  set b := ∫ x, x ∂(ν : Measure E)
+  set μc := μ.map (· - a)
+  set νc := ν.map (· - b)
+  have hμc : MemLp id 2 (μc : Measure E) := memLp_map_sub hμ a
+  have hνc : MemLp id 2 (νc : Measure E) := memLp_map_sub hν b
+  have hed : Measurable (fun z : E × E => edist z.1 z.2 ^ (2 : ℝ)) :=
+    (measurable_fst.edist measurable_snd).pow_const _
+  have hsh : Measurable (fun z : E × E => (z.1 + a, z.2 + b)) := by fun_prop
+  have hback : ∀ (ρ : ProbabilityMeasure E) (c : E), ((ρ.map (· - c)).map (· + c)) = ρ := by
+    intro ρ c
+    apply Subtype.ext
+    change ((ρ : Measure E).map (· - c)).map (· + c) = (ρ : Measure E)
+    rw [Measure.map_map (by fun_prop) (by fun_prop)]
+    simp [Function.comp_def]
+  conv_rhs => rw [transportCost]
+  rw [ENNReal.iInf_add]
+  refine le_iInf fun π => ?_
+  rw [ENNReal.iInf_add]
+  refine le_iInf fun h => ?_
+  have hc : IsCoupling μ ν (π.map (fun z => (z.1 + a, z.2 + b))) := by
+    obtain ⟨h1, h2⟩ := h
+    have e1 := congrArg (fun ρ : ProbabilityMeasure E => (ρ : Measure E)) (hback μ a)
+    have e2 := congrArg (fun ρ : ProbabilityMeasure E => (ρ : Measure E)) (hback ν b)
+    simp only [ProbabilityMeasure.toMeasure_map] at e1 e2
+    constructor
+    · rw [ProbabilityMeasure.toMeasure_map, Measure.map_map measurable_fst hsh, ← e1]
+      change ((μc : Measure E)).map (· + a) = _
+      rw [h1, Measure.map_map (by fun_prop) measurable_fst]
+      rfl
+    · rw [ProbabilityMeasure.toMeasure_map, Measure.map_map measurable_snd hsh, ← e2]
+      change ((νc : Measure E)).map (· + b) = _
+      rw [h2, Measure.map_map (by fun_prop) measurable_snd]
+      rfl
+  refine (transportCost_le_of_isCoupling hc).trans (le_of_eq ?_)
+  have hd := memLp_sub_of_isCoupling h hμc hνc
+  have hmean : ∫ z, (z.1 - z.2) ∂(π : Measure (E × E)) = 0 := by
+    rw [integral_sub_of_isCoupling h hμc hνc, integral_map_sub hμ, integral_map_sub hν]
+    simp [a, b]
+  have iD := (memLp_two_iff_integrable_sq_norm hd.aestronglyMeasurable).1 hd
+  have iI := hd.integrable one_le_two
+  rw [ProbabilityMeasure.toMeasure_map, lintegral_map hed hsh, lintegral_edist_rpow_two hd]
+  have hsq : ∀ z : E × E, edist (z.1 + a) (z.2 + b) ^ (2 : ℝ) =
+      ENNReal.ofReal (‖(z.1 - z.2) + (a - b)‖ ^ 2) := fun z => by
+    rw [edist_rpow_two]; congr 2; abel_nf
+  simp only [hsq]
+  have hexp : ∀ z : E × E, ‖(z.1 - z.2) + (a - b)‖ ^ 2 =
+      ‖z.1 - z.2‖ ^ 2 + 2 * ⟪z.1 - z.2, a - b⟫_ℝ + ‖a - b‖ ^ 2 := fun z => norm_add_sq_real _ _
+  have iG : Integrable (fun z : E × E => ⟪z.1 - z.2, a - b⟫_ℝ) (π : Measure (E × E)) := by
+    simp_rw [real_inner_comm (a - b)]
+    exact iI.const_inner (a - b)
+  have hG : ∫ z, ⟪z.1 - z.2, a - b⟫_ℝ ∂(π : Measure (E × E)) = 0 := by
+    simp_rw [real_inner_comm (a - b)]
+    rw [integral_inner iI, hmean, inner_zero_right]
+  have iE : Integrable (fun z : E × E => ‖z.1 - z.2‖ ^ 2 + 2 * ⟪z.1 - z.2, a - b⟫_ℝ)
+      (π : Measure (E × E)) := iD.add (iG.const_mul 2)
+  have iF : Integrable (fun z : E × E => ‖(z.1 - z.2) + (a - b)‖ ^ 2) (π : Measure (E × E)) := by
+    simp_rw [hexp]; exact iE.add (integrable_const _)
+  rw [← ofReal_integral_eq_lintegral_ofReal iF (ae_of_all _ fun _ => by positivity),
+    ← ENNReal.ofReal_add (integral_nonneg fun _ => by positivity) (by positivity)]
+  congr 1
+  simp_rw [hexp]
+  rw [integral_add iE (integrable_const _), integral_add iD (iG.const_mul 2), integral_const_mul,
+    hG]
+  simp
 
 omit [InnerProductSpace ℝ E] [CompleteSpace E] in
 /-- **Second moments of convolution powers.** If `μ` has a finite second moment, so does every
