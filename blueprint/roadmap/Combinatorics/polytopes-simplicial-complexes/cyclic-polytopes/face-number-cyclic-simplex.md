@@ -8,8 +8,9 @@ $(5, 10, 10, 5)$, as in the PCMI notes, Lecture 4. These values satisfy the Eule
 and attain the upper bound theorem with $n = d + 1$ vertices.
 
 This is a concrete computation with the face-number function used by the Euler–Poincaré relation,
-the upper bound theorem, Balinski's and Steinitz's theorems and the simplicial-sphere bridge, and
-it shows that the function computes the expected values.
+the upper bound theorem, Steinitz's lemma and the simplicial-sphere bridge, and it shows that the
+function computes the expected values. (Balinski's and Steinitz's theorems use the graph and the
+dimension of the polytope, not its face numbers.)
 
 ## Sources
 
