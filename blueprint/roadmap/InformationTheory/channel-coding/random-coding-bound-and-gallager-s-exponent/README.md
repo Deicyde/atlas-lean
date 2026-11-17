@@ -73,3 +73,6 @@ follows.
   Gallager's other ensemble.
 - [List decoding](../../error-correcting-codes/list-decoding/README.md): list-decoding capacity is a
   random-coding argument for worst-case errors.
+- [Method of types](../../entropy-and-mutual-information/method-of-types/README.md): the
+  counting approach to error exponents; Csiszár ("The method of types", 1998, Section IV) derives
+  error exponents of discrete memoryless channels from constant-composition codes and joint types.

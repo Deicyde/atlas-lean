@@ -70,3 +70,8 @@ $\exp(-n D(\Gamma \| Q) + O(\log n))$ whenever the types in $\Gamma$ approach it
 - [Random coding bound and Gallager's exponent](../../channel-coding/random-coding-bound-and-gallager-s-exponent/README.md):
   error exponents for channel coding; Csiszár (1998, Section IV) rederives such exponents with
   joint types.
+- [I-projections](../../information-inequalities/i-projections/README.md): the minimiser of $D(\cdot\|Q)$
+  over $\Gamma$, which is the limit law in Gibbs' conditioning principle.
+- [Ben Arous–Guionnet large deviations](../../../Probability/large-deviations/ben-arous-guionnet-large-deviations/README.md):
+  a large deviation principle for empirical (spectral) measures at speed $N^2$, where the counting of
+  types gives way to a Coulomb-gas energy.
