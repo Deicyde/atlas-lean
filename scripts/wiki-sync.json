@@ -27084,6 +27084,7 @@
 "MathlibExt.Probability.ConvexDistance.convexDistance_le_sqrt_card": "caf776ff16847204",
 "MathlibExt.Probability.ConvexDistance.convexSupport": "67e218c46bf5f506",
 "MathlibExt.Probability.ConvexDistance.exists_exp_le_two_sub_mul_rpow": "e435997d86517a98",
+"MathlibExt.Probability.ConvexDistance.lintegral_exp_convexDistance_sq_le_of_fintype": "59d9a102dff49941",
 "MathlibExt.Probability.ConvexDistance.prodWeight": "3693ab4499570fa2",
 "MathlibExt.Probability.ConvexDistance.projection": "fc7077fcc652a01a",
 "MathlibExt.Probability.ConvexDistance.sectionAt": "64013d585b2f8e68",

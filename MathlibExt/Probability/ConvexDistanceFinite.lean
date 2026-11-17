@@ -14,6 +14,9 @@ public import Mathlib.Analysis.MeanInequalities
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.Analysis.Convex.Topology
 public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Countable
+public import Mathlib.MeasureTheory.Measure.Real
 
 /-!
 # Talagrand's convex-distance inequality on a product of finite sets
@@ -538,5 +541,56 @@ theorem weightOf_le_convexDistance_mul_weightOf_le (p : Ω → ℝ) (hp0 : ∀ �
       _ ≤ 1 := hmain
   rw [show -t ^ 2 / 4 = -(t ^ 2 / 4) by ring, exp_neg, ← one_div, le_div_iff₀ (exp_pos _)]
   linarith
+
+omit [Fintype Ω] in
+open MeasureTheory in
+/-- **The convex-distance inequality for a finite probability space, measure form** (Talagrand,
+*Concentration of measure and isoperimetric inequalities in product spaces*, Publ. Math. IHÉS 81
+(1995), Theorem 4.1.1, (4.1.2), for a finite `Ω`). For a probability measure `μ` on a finite set
+`Ω` with measurable singletons and every `A ⊆ Ω^N`, with `P = μ^{⊗N}`:
+`∫ exp(f_c(A, x)² / 4) dP(x) ≤ 1 / P(A)`. This is the finite case of
+`MathlibExt.Probability.ConvexDistanceWanted.lintegral_exp_convexDistance_sq_le`. -/
+theorem lintegral_exp_convexDistance_sq_le_of_fintype [Finite Ω] [MeasurableSpace Ω]
+    [MeasurableSingletonClass Ω] (μ : Measure Ω) [IsProbabilityMeasure μ] (N : ℕ)
+    (A : Set (Fin N → Ω)) :
+    ∫⁻ x, ENNReal.ofReal (exp (convexDistance A x ^ 2 / 4)) ∂Measure.pi (fun _ => μ) ≤
+      (Measure.pi (fun _ => μ) A)⁻¹ := by
+  classical
+  have := Fintype.ofFinite Ω
+  set p : Ω → ℝ := fun ω => μ.real {ω}
+  have hp0 : ∀ ω, 0 ≤ p ω := fun ω => MeasureTheory.measureReal_nonneg
+  have hp1 : ∑ ω, p ω = 1 := by
+    simp only [p]
+    rw [MeasureTheory.sum_measureReal_singleton, Finset.coe_univ, MeasureTheory.probReal_univ]
+  have hsing : ∀ x : Fin N → Ω, Measure.pi (fun _ => μ) {x} = ENNReal.ofReal (prodWeight p x) := by
+    intro x
+    rw [Measure.pi_singleton, prodWeight, ENNReal.ofReal_prod_of_nonneg (fun i _ => hp0 _)]
+    refine Finset.prod_congr rfl fun i _ => ?_
+    simp only [p]
+    rw [MeasureTheory.ofReal_measureReal]
+  have hint : ∫⁻ x, ENNReal.ofReal (exp (convexDistance A x ^ 2 / 4)) ∂Measure.pi (fun _ => μ) =
+      ENNReal.ofReal (∑ x, prodWeight p x * exp (convexDistance A x ^ 2 / 4)) := by
+    rw [lintegral_fintype, ENNReal.ofReal_sum_of_nonneg
+      (fun x _ => mul_nonneg (prodWeight_nonneg hp0 x) (exp_pos _).le)]
+    refine Finset.sum_congr rfl fun x _ => ?_
+    rw [hsing, ENNReal.ofReal_mul (prodWeight_nonneg hp0 x), mul_comm]
+  have hA : Measure.pi (fun _ => μ) A = ENNReal.ofReal (weightOf p A) := by
+    have hmeas : MeasurableSet A := (Set.toFinite A).measurableSet
+    rw [← lintegral_indicator_one hmeas, lintegral_fintype, weightOf,
+      ENNReal.ofReal_sum_of_nonneg (fun x _ => by
+        by_cases hx : x ∈ A <;> simp [Set.indicator, hx, prodWeight_nonneg hp0 x])]
+    refine Finset.sum_congr rfl fun x _ => ?_
+    by_cases hx : x ∈ A <;> simp [Set.indicator, hx, hsing]
+  have hmain := sum_exp_convexDistance_mul_weightOf_le p hp0 hp1 N A
+  have hS0 : 0 ≤ ∑ x, prodWeight p x * exp (convexDistance A x ^ 2 / 4) :=
+    Finset.sum_nonneg fun x _ => mul_nonneg (prodWeight_nonneg hp0 x) (exp_pos _).le
+  rw [hint, hA]
+  rcases (weightOf_nonneg hp0 A).lt_or_eq with hpos | hzero
+  · rw [← ENNReal.ofReal_inv_of_pos hpos]
+    refine ENNReal.ofReal_le_ofReal ?_
+    rw [← one_div, le_div_iff₀ hpos]
+    exact hmain
+  · rw [← hzero, ENNReal.ofReal_zero, ENNReal.inv_zero]
+    exact le_top
 
 end MathlibExt.Probability.ConvexDistance

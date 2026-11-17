@@ -69,4 +69,13 @@ example (N : ℕ) (x : Fin (N + 1) → Bool) :
     exact hi (by rw [Function.update_of_ne h0])
   exact_mod_cast (Finset.card_le_card this).trans (by simp)
 
+/-- The measure form, here for the Dirac mass at `true` on `Bool` (the fair coin is covered by the
+sum form above). -/
+example (N : ℕ) :
+    ∫⁻ x, ENNReal.ofReal (Real.exp (convexDistance (startsTrue N) x ^ 2 / 4))
+        ∂MeasureTheory.Measure.pi (fun _ => MeasureTheory.Measure.dirac true) ≤
+      (MeasureTheory.Measure.pi (fun _ => MeasureTheory.Measure.dirac true)
+        (startsTrue N))⁻¹ :=
+  lintegral_exp_convexDistance_sq_le_of_fintype _ (N + 1) _
+
 end MathlibExtTest.Probability.ConvexDistanceFinite

@@ -32,6 +32,7 @@ yet proved.
 - [Talagrand's numerical lemma](exists-exp-le-two-sub-mul-rpow.md)
 - [Talagrand's convex-distance inequality on a product of finite sets](sum-exp-convex-distance-mul-weight-of-le.md)
 - [Tail form on a product of finite sets](weight-of-le-convex-distance-mul-weight.md)
+- [The convex-distance inequality for a finite probability space, measure form](lintegral-exp-convex-distance-sq-le-of-f.md)
 
 ## Related topics
 
