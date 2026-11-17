@@ -15,6 +15,7 @@ public import MathlibExt.Analysis.HarmonicAnalysis.DyadicMaximal
 
 Non-vacuity checks: for `f = 1_{[0,1)}` the hypotheses of the Calderón–Zygmund decomposition
 hold, the set `{M_d f > 1/2}` contains `0`, and `0` has a stopping level at height `1/2`.
+Non-vacuity of the `L^p` bound: `M_d 1_{[0,1)}` is square integrable.
 -/
 
 @[expose] public section
@@ -75,5 +76,19 @@ example : ∀ᵐ x, dyadicMaximalFunction f₀ x ≤ 1 / 2 → ‖f₀ x‖ₑ �
   (calderonZygmund (f := f₀)
     (measurable_const.indicator measurableSet_Ico).enorm.aemeasurable (by rw [lintegral_f₀]; exact ENNReal.one_ne_top)
     (by simp)).2.1
+
+theorem lintegral_f₀_sq : ∫⁻ y, ‖f₀ y‖ₑ ^ (2 : ℝ) = 1 := by
+  rw [show (fun y => ‖f₀ y‖ₑ ^ (2 : ℝ)) = (Ico (0 : ℝ) 1).indicator fun _ => (1 : ℝ≥0∞) by
+    ext y; by_cases hy : y ∈ Ico (0 : ℝ) 1 <;> simp [f₀, hy]]
+  rw [lintegral_indicator measurableSet_Ico, setLIntegral_const, Real.volume_Ico]
+  simp
+
+/-- The sharp `L^2` bound applies to `1_{[0,1)}` and shows that `M_d 1_{[0,1)}` is square
+integrable. -/
+example : ∫⁻ x, dyadicMaximalFunction f₀ x ^ (2 : ℝ) ≠ ∞ := by
+  refine ne_top_of_le_ne_top ?_ (lintegral_rpow_dyadicMaximalFunction_le
+    (measurable_const.indicator measurableSet_Ico).enorm.aemeasurable (by norm_num : (1 : ℝ) < 2))
+  rw [lintegral_f₀_sq, mul_one]
+  exact ENNReal.ofReal_ne_top
 
 end MathlibExtTest.Analysis.HarmonicAnalysis.DyadicMaximal

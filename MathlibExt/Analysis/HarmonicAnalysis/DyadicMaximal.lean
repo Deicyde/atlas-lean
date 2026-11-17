@@ -12,6 +12,9 @@ public import Mathlib.MeasureTheory.Covering.DensityTheorem
 public import Mathlib.MeasureTheory.Function.Floor
 public import Mathlib.MeasureTheory.Integral.Average
 public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 
 /-!
 # Dyadic maximal function and Calderón–Zygmund decomposition on the real line
@@ -31,6 +34,9 @@ index `⌊x 2^k⌋`, so membership, nesting and the stopping-time argument reduc
   `IsUnifLocDoublingMeasure.tendsto_closedBall_filterAt`).
 * `calderonZygmund`: the dyadic Calderón–Zygmund decomposition at height `c`, in terms of
   stopping levels (`IsStoppingLevel`).
+* `lintegral_rpow_dyadicMaximalFunction_le`: `‖M_d f‖_p ≤ p / (p - 1) ‖f‖_p` for `1 < p < ∞`,
+  from the Doob-type inequality, Hölder's inequality, and a Marcinkiewicz bound with constant
+  `2^p p / (p - 1)` that supplies the finiteness needed to divide.
 
 Mathlib has no Hardy–Littlewood maximal function; the averages here are Mathlib's `laverage`
 and the differentiation theorem is Mathlib's, so nothing is redefined.
@@ -418,5 +424,389 @@ theorem calderonZygmund {f : ℝ → E} (hf : AEMeasurable (fun y => ‖f y‖�
   · obtain ⟨k, hk⟩ := exists_isStoppingLevel hf' hc hx
     exact ⟨k, hk, hk.1, hk.dyadicAverage_le_two_mul, fun y hy =>
       ⟨hk.of_mem hy, (hk.of_mem hy).lt_dyadicMaximalFunction⟩⟩
+
+/-! ### Strong type `(p, p)` -/
+
+theorem rpow_eq_lintegral_of_ne_top {a : ℝ≥0∞} (ha : a ≠ ∞) {q : ℝ} (hq : 0 < q) :
+    a ^ q = ∫⁻ t in Ioi (0 : ℝ), {t : ℝ | ENNReal.ofReal t < a}.indicator
+      (fun t => ENNReal.ofReal (q * t ^ (q - 1))) t := by
+  have hset : ∀ t ∈ Ioi (0 : ℝ), {t : ℝ | ENNReal.ofReal t < a}.indicator
+      (fun t => ENNReal.ofReal (q * t ^ (q - 1))) t =
+      (Iio a.toReal).indicator (fun t => ENNReal.ofReal (q * t ^ (q - 1))) t := by
+    intro t ht
+    have : (t ∈ {t : ℝ | ENNReal.ofReal t < a}) ↔ t ∈ Iio a.toReal :=
+      ENNReal.ofReal_lt_iff_lt_toReal (le_of_lt ht) ha
+    by_cases h : t ∈ Iio a.toReal
+    · rw [indicator_of_mem h, indicator_of_mem (this.2 h)]
+    · rw [indicator_of_notMem h, indicator_of_notMem (fun h' => h (this.1 h'))]
+  rw [setLIntegral_congr_fun measurableSet_Ioi hset, lintegral_indicator measurableSet_Iio,
+    Measure.restrict_restrict measurableSet_Iio, Iio_inter_Ioi]
+  rcases eq_or_lt_of_le (ENNReal.toReal_nonneg (a := a)) with h0 | hpos
+  · have ha0 : a = 0 := by
+      rcases (ENNReal.toReal_eq_zero_iff a).1 h0.symm with h | h
+      · exact h
+      · exact absurd h ha
+    subst ha0
+    simp [ENNReal.zero_rpow_of_pos hq]
+  · have hint : IntegrableOn (fun t : ℝ => q * t ^ (q - 1)) (Ioo 0 a.toReal) := by
+      have := (intervalIntegral.intervalIntegrable_rpow' (r := q - 1) (by linarith)
+        (a := 0) (b := a.toReal)).const_mul q
+      rw [intervalIntegrable_iff_integrableOn_Ioo_of_le hpos.le] at this
+      exact this
+    rw [← ofReal_integral_eq_lintegral_ofReal hint]
+    · rw [← integral_Ioc_eq_integral_Ioo, ← intervalIntegral.integral_of_le hpos.le,
+        intervalIntegral.integral_const_mul, integral_rpow (Or.inl (by linarith))]
+      have hq1 : q - 1 + 1 = q := by ring
+      rw [hq1, Real.zero_rpow hq.ne', sub_zero, mul_div_cancel₀ _ hq.ne',
+        ← ENNReal.ofReal_rpow_of_nonneg ENNReal.toReal_nonneg hq.le, ENNReal.ofReal_toReal ha]
+    · refine (ae_restrict_iff' measurableSet_Ioo).2 (Eventually.of_forall fun t ht => ?_)
+      exact mul_nonneg hq.le (Real.rpow_nonneg ht.1.le _)
+
+theorem rpow_eq_lintegral (a : ℝ≥0∞) {q : ℝ} (hq : 0 < q) :
+    a ^ q = ∫⁻ t in Ioi (0 : ℝ), {t : ℝ | ENNReal.ofReal t < a}.indicator
+      (fun t => ENNReal.ofReal (q * t ^ (q - 1))) t := by
+  rcases eq_or_ne a ∞ with rfl | ha
+  · rw [ENNReal.top_rpow_of_pos hq, eq_comm, eq_top_iff]
+    have hn : ∀ n : ℕ, ((n : ℝ≥0∞)) ^ q ≤ ∫⁻ t in Ioi (0 : ℝ),
+        {t : ℝ | ENNReal.ofReal t < ∞}.indicator (fun t => ENNReal.ofReal (q * t ^ (q - 1))) t := by
+      intro n
+      rw [rpow_eq_lintegral_of_ne_top (ENNReal.natCast_ne_top n) hq]
+      have hsub : {t : ℝ | ENNReal.ofReal t < (n : ℝ≥0∞)} ⊆ {t : ℝ | ENNReal.ofReal t < ∞} :=
+        fun t _ => ENNReal.ofReal_lt_top
+      exact lintegral_mono fun t => indicator_le_indicator_of_subset hsub (fun _ => bot_le) t
+    have h := ((ENNReal.continuous_rpow_const (y := q)).tendsto ⊤).comp
+      ENNReal.tendsto_nat_nhds_top
+    rw [ENNReal.top_rpow_of_pos hq] at h
+    exact le_of_tendsto' h hn
+  · exact rpow_eq_lintegral_of_ne_top ha hq
+
+
+theorem dyadicAverage_le_indicator_add (k : ℤ) (f : ℝ → E) (s : ℝ≥0∞) (x : ℝ) :
+    dyadicAverage k f x ≤
+      dyadicAverage k ({y | s < ‖f y‖ₑ}.indicator fun y => ‖f y‖ₑ) x + s := by
+  simp only [dyadicAverage, setLAverage_eq]
+  set I := dyadicInterval k (dyadicIndex k x)
+  have hle : ∫⁻ y in I, ‖f y‖ₑ ≤
+      ∫⁻ y in I, (‖({y | s < ‖f y‖ₑ}.indicator fun y => ‖f y‖ₑ) y‖ₑ + s) := by
+    refine lintegral_mono fun y => ?_
+    by_cases h : s < ‖f y‖ₑ
+    · rw [indicator_of_mem (show y ∈ {y | s < ‖f y‖ₑ} from h), enorm_eq_self]
+      exact le_self_add
+    · rw [indicator_of_notMem (show y ∉ {y | s < ‖f y‖ₑ} from h), enorm_zero, zero_add]
+      exact not_lt.1 h
+  rw [lintegral_add_right _ measurable_const, setLIntegral_const] at hle
+  calc (∫⁻ y in I, ‖f y‖ₑ) / volume I
+      ≤ ((∫⁻ y in I, ‖({y | s < ‖f y‖ₑ}.indicator fun y => ‖f y‖ₑ) y‖ₑ) + s * volume I) /
+          volume I := ENNReal.div_le_div_right hle _
+    _ = _ := by
+      rw [ENNReal.add_div, ENNReal.mul_div_cancel_right (volume_dyadicInterval_pos _ _).ne'
+        (volume_dyadicInterval_ne_top _ _)]
+
+theorem volume_two_mul_lt_dyadicMaximalFunction_le (f : ℝ → E) {s : ℝ≥0∞} (hs0 : s ≠ 0)
+    (hs : s ≠ ∞) :
+    volume {x | 2 * s < dyadicMaximalFunction f x} ≤
+      s⁻¹ * ∫⁻ y, {y | s < ‖f y‖ₑ}.indicator (fun y => ‖f y‖ₑ) y := by
+  set g : ℝ → ℝ≥0∞ := {y | s < ‖f y‖ₑ}.indicator fun y => ‖f y‖ₑ with hg
+  have hsub : {x | 2 * s < dyadicMaximalFunction f x} ⊆ {x | s < dyadicMaximalFunction g x} := by
+    intro x hx
+    simp only [mem_ofPred_eq, dyadicMaximalFunction, lt_iSup_iff] at hx ⊢
+    obtain ⟨k, hk⟩ := hx
+    refine ⟨k, ?_⟩
+    by_contra h
+    push Not at h
+    have h2 : dyadicAverage k g x + s ≤ s + s := by gcongr
+    have := (dyadicAverage_le_indicator_add k f s x).trans h2
+    rw [two_mul] at hk
+    exact absurd (hk.trans_le this) (lt_irrefl _)
+  have hweak := dyadicMaximalFunction_mul_volume_le_lintegral g s
+  simp only [enorm_eq_self] at hweak
+  calc volume {x | 2 * s < dyadicMaximalFunction f x}
+      ≤ volume {x | s < dyadicMaximalFunction g x} := measure_mono hsub
+    _ = s⁻¹ * (s * volume {x | s < dyadicMaximalFunction g x}) := by
+      rw [ENNReal.inv_mul_cancel_left hs0 hs]
+    _ ≤ s⁻¹ * ∫⁻ y, g y := by gcongr
+
+
+theorem lintegral_rpow_eq_lintegral_volume_mul {M : ℝ → ℝ≥0∞} (hM : Measurable M) {p : ℝ}
+    (hp : 0 < p) :
+    ∫⁻ x, M x ^ p =
+      ∫⁻ t in Ioi (0 : ℝ), volume {x | ENNReal.ofReal t < M x} *
+        ENNReal.ofReal (p * t ^ (p - 1)) := by
+  have hFm : Measurable fun t : ℝ => ENNReal.ofReal (p * t ^ (p - 1)) :=
+    ENNReal.measurable_ofReal.comp (measurable_const.mul (measurable_id.pow_const _))
+  simp_rw [rpow_eq_lintegral (M _) hp]
+  rw [lintegral_lintegral_swap]
+  · refine lintegral_congr fun t => ?_
+    have : (fun x => {t : ℝ | ENNReal.ofReal t < M x}.indicator
+        (fun t => ENNReal.ofReal (p * t ^ (p - 1))) t) =
+        {x | ENNReal.ofReal t < M x}.indicator (fun _ => ENNReal.ofReal (p * t ^ (p - 1))) := by
+      ext x; simp [Set.indicator_apply]
+    rw [this, lintegral_indicator_const (measurableSet_lt measurable_const hM), mul_comm]
+  · apply Measurable.aemeasurable
+    have hs : MeasurableSet {z : ℝ × ℝ | ENNReal.ofReal z.2 < M z.1} :=
+      measurableSet_lt (ENNReal.measurable_ofReal.comp measurable_snd) (hM.comp measurable_fst)
+    have : Function.uncurry (fun x t => {t : ℝ | ENNReal.ofReal t < M x}.indicator
+        (fun t => ENNReal.ofReal (p * t ^ (p - 1))) t) =
+        {z : ℝ × ℝ | ENNReal.ofReal z.2 < M z.1}.indicator
+          (fun z => ENNReal.ofReal (p * z.2 ^ (p - 1))) := by
+      ext ⟨x, t⟩; simp [Set.indicator_apply]
+    rw [this]
+    exact (hFm.comp measurable_snd).indicator hs
+
+theorem volume_mul_le_lintegral_split (f : ℝ → E) {p t : ℝ} (ht : 0 < t) :
+    volume {x | ENNReal.ofReal t < dyadicMaximalFunction f x} *
+        ENNReal.ofReal (p * t ^ (p - 1)) ≤
+      ∫⁻ x, {x | ENNReal.ofReal (t / 2) < ‖f x‖ₑ}.indicator (fun y => ‖f y‖ₑ) x *
+        ENNReal.ofReal (2 * p * t ^ (p - 2)) := by
+  have ht2 : 0 < t / 2 := half_pos ht
+  have hs0 : ENNReal.ofReal (t / 2) ≠ 0 := by simpa using ht2
+  have h2s : ENNReal.ofReal t = 2 * ENNReal.ofReal (t / 2) := by
+    rw [← ENNReal.ofReal_ofNat 2, ← ENNReal.ofReal_mul (by norm_num)]
+    congr 1; ring
+  have hw := volume_two_mul_lt_dyadicMaximalFunction_le f hs0 ENNReal.ofReal_ne_top
+  rw [← h2s] at hw
+  have hinv : (ENNReal.ofReal (t / 2))⁻¹ * ENNReal.ofReal (p * t ^ (p - 1)) =
+      ENNReal.ofReal (2 * p * t ^ (p - 2)) := by
+    rw [← ENNReal.ofReal_inv_of_pos ht2, ← ENNReal.ofReal_mul (inv_nonneg.2 ht2.le)]
+    congr 1
+    have : t ^ (p - 1) = t ^ (p - 2) * t := by
+      rw [show p - 1 = (p - 2) + 1 by ring, Real.rpow_add ht, Real.rpow_one]
+    rw [this]
+    have ht0 : t ≠ 0 := (ne_of_lt ht).symm
+    field_simp
+  calc volume {x | ENNReal.ofReal t < dyadicMaximalFunction f x} *
+        ENNReal.ofReal (p * t ^ (p - 1))
+      ≤ ((ENNReal.ofReal (t / 2))⁻¹ *
+          ∫⁻ y, {y | ENNReal.ofReal (t / 2) < ‖f y‖ₑ}.indicator (fun y => ‖f y‖ₑ) y) *
+          ENNReal.ofReal (p * t ^ (p - 1)) := by gcongr
+    _ = (∫⁻ y, {y | ENNReal.ofReal (t / 2) < ‖f y‖ₑ}.indicator (fun y => ‖f y‖ₑ) y) *
+          ENNReal.ofReal (2 * p * t ^ (p - 2)) := by
+        rw [mul_comm (ENNReal.ofReal (t / 2))⁻¹, mul_assoc, hinv]
+    _ = _ := (lintegral_mul_const' _ _ ENNReal.ofReal_ne_top).symm
+
+theorem lintegral_indicator_mul_le (a : ℝ≥0∞) {p : ℝ} (hp : 1 < p) :
+    ∫⁻ t in Ioi (0 : ℝ), {t : ℝ | ENNReal.ofReal (t / 2) < a}.indicator (fun _ => a) t *
+        ENNReal.ofReal (2 * p * t ^ (p - 2)) ≤
+      ENNReal.ofReal (2 ^ p * p / (p - 1)) * a ^ p := by
+  have hp1 : 0 < p - 1 := by linarith
+  have hcongr : ∀ t ∈ Ioi (0 : ℝ),
+      {t : ℝ | ENNReal.ofReal (t / 2) < a}.indicator (fun _ => a) t *
+        ENNReal.ofReal (2 * p * t ^ (p - 2)) = (a * ENNReal.ofReal (2 * p / (p - 1))) *
+      {t : ℝ | ENNReal.ofReal t < 2 * a}.indicator
+        (fun t => ENNReal.ofReal ((p - 1) * t ^ (p - 1 - 1))) t := by
+    intro t ht
+    have hiff : ENNReal.ofReal (t / 2) < a ↔ ENNReal.ofReal t < 2 * a := by
+      have h2s : ENNReal.ofReal t = 2 * ENNReal.ofReal (t / 2) := by
+        rw [← ENNReal.ofReal_ofNat 2, ← ENNReal.ofReal_mul (by norm_num)]
+        congr 1; ring
+      rw [h2s, ENNReal.mul_lt_mul_iff_right two_ne_zero ENNReal.ofNat_ne_top]
+    by_cases h : ENNReal.ofReal (t / 2) < a
+    · rw [indicator_of_mem (show t ∈ {t : ℝ | ENNReal.ofReal (t / 2) < a} from h),
+        indicator_of_mem (show t ∈ {t : ℝ | ENNReal.ofReal t < 2 * a} from hiff.1 h),
+        mul_assoc a, ← ENNReal.ofReal_mul (by positivity), show p - 1 - 1 = p - 2 by ring]
+      congr 2
+      field_simp
+    · rw [indicator_of_notMem (show t ∉ {t : ℝ | ENNReal.ofReal (t / 2) < a} from h),
+        indicator_of_notMem (show t ∉ {t : ℝ | ENNReal.ofReal t < 2 * a} from
+          fun h' => h (hiff.2 h')), zero_mul, mul_zero]
+  rw [setLIntegral_congr_fun measurableSet_Ioi hcongr, lintegral_const_mul]
+  · rw [← rpow_eq_lintegral (2 * a) hp1, ENNReal.mul_rpow_of_nonneg _ _ hp1.le]
+    have hap : a ^ p = a * a ^ (p - 1) := by
+      conv_lhs => rw [show p = 1 + (p - 1) by ring]
+      rw [ENNReal.rpow_add_of_nonneg (x := a) 1 (p - 1) zero_le_one hp1.le, ENNReal.rpow_one]
+    have h2 : (2 : ℝ≥0∞) ^ (p - 1) = ENNReal.ofReal (2 ^ (p - 1)) := by
+      rw [← ENNReal.ofReal_rpow_of_nonneg (by norm_num) hp1.le, ENNReal.ofReal_ofNat]
+    have hc : ENNReal.ofReal (2 * p / (p - 1)) * ENNReal.ofReal (2 ^ (p - 1)) =
+        ENNReal.ofReal (2 ^ p * p / (p - 1)) := by
+      rw [← ENNReal.ofReal_mul (by positivity)]
+      congr 1
+      rw [Real.rpow_sub_one (by norm_num : (2 : ℝ) ≠ 0)]
+      field_simp
+    rw [hap, h2, ← hc]
+    apply le_of_eq
+    ring
+  · exact (ENNReal.measurable_ofReal.comp (measurable_const.mul
+      (measurable_id.pow_const _))).indicator
+      (measurableSet_lt ENNReal.measurable_ofReal measurable_const)
+
+/-- **`L^p` bound for the dyadic maximal function with constant `2^p p / (p - 1)`.** For `1 < p`
+and `‖f‖ₑ` a.e. measurable, `∫ (M_d f)^p ≤ 2^p p / (p - 1) ∫ ‖f‖^p`. The proof is the
+Marcinkiewicz argument: split `f` at height `t / 2`, apply the weak type (1,1) bound to the large
+part, and integrate in `t` (layer-cake formula and Tonelli). It needs no finiteness assumption
+and is used to obtain the sharp constant in `lintegral_rpow_dyadicMaximalFunction_le`. -/
+theorem lintegral_rpow_dyadicMaximal_le_two_rpow_mul {f : ℝ → E}
+    (hf : AEMeasurable (fun y => ‖f y‖ₑ)) {p : ℝ} (hp : 1 < p) :
+    ∫⁻ x, dyadicMaximalFunction f x ^ p ≤
+      ENNReal.ofReal (2 ^ p * p / (p - 1)) * ∫⁻ x, ‖f x‖ₑ ^ p := by
+  have hH : Measurable fun z : ℝ × ℝ≥0∞ =>
+      {z : ℝ × ℝ≥0∞ | ENNReal.ofReal (z.1 / 2) < z.2}.indicator (fun z => z.2) z *
+        ENNReal.ofReal (2 * p * z.1 ^ (p - 2)) := by
+    refine Measurable.mul (measurable_snd.indicator ?_) ?_
+    · exact measurableSet_lt (ENNReal.measurable_ofReal.comp
+        (measurable_fst.div_const 2)) measurable_snd
+    · exact ENNReal.measurable_ofReal.comp
+        (measurable_const.mul (measurable_fst.pow_const _))
+  have hΦm : AEMeasurable (Function.uncurry fun (t x : ℝ) =>
+      {x | ENNReal.ofReal (t / 2) < ‖f x‖ₑ}.indicator (fun y => ‖f y‖ₑ) x *
+        ENNReal.ofReal (2 * p * t ^ (p - 2))) ((volume.restrict (Ioi (0 : ℝ))).prod volume) := by
+    have := hH.comp_aemeasurable (measurable_fst.aemeasurable.prodMk hf.comp_snd)
+      (μ := (volume.restrict (Ioi (0 : ℝ))).prod volume)
+    refine this.congr (Eventually.of_forall fun z => ?_)
+    rcases z with ⟨t, x⟩
+    simp [Set.indicator_apply]
+  calc ∫⁻ x, dyadicMaximalFunction f x ^ p
+      = ∫⁻ t in Ioi (0 : ℝ), volume {x | ENNReal.ofReal t < dyadicMaximalFunction f x} *
+          ENNReal.ofReal (p * t ^ (p - 1)) :=
+        lintegral_rpow_eq_lintegral_volume_mul (measurable_dyadicMaximalFunction f)
+          (by linarith)
+    _ ≤ ∫⁻ t in Ioi (0 : ℝ), ∫⁻ x,
+          {x | ENNReal.ofReal (t / 2) < ‖f x‖ₑ}.indicator (fun y => ‖f y‖ₑ) x *
+            ENNReal.ofReal (2 * p * t ^ (p - 2)) :=
+        setLIntegral_mono' measurableSet_Ioi fun t ht => volume_mul_le_lintegral_split f ht
+    _ = ∫⁻ x, ∫⁻ t in Ioi (0 : ℝ),
+          {x | ENNReal.ofReal (t / 2) < ‖f x‖ₑ}.indicator (fun y => ‖f y‖ₑ) x *
+            ENNReal.ofReal (2 * p * t ^ (p - 2)) := lintegral_lintegral_swap hΦm
+    _ ≤ ∫⁻ x, ENNReal.ofReal (2 ^ p * p / (p - 1)) * ‖f x‖ₑ ^ p := by
+        refine lintegral_mono fun x => le_of_eq_of_le ?_ (lintegral_indicator_mul_le ‖f x‖ₑ hp)
+        refine lintegral_congr fun t => ?_
+        simp [Set.indicator_apply]
+    _ = ENNReal.ofReal (2 ^ p * p / (p - 1)) * ∫⁻ x, ‖f x‖ₑ ^ p :=
+      lintegral_const_mul' _ _ ENNReal.ofReal_ne_top
+
+/-- **Doob-type inequality for the dyadic maximal function.** For `1 < p` and `‖f‖ₑ` a.e.
+measurable, `∫ (M_d f)^p ≤ p / (p - 1) ∫ ‖f‖ (M_d f)^{p - 1}`: integrate the localized weak
+type (1,1) bound `t |{M_d f > t}| ≤ ∫_{M_d f > t} ‖f‖` against `p t^{p - 2} dt`. -/
+theorem lintegral_rpow_le_lintegral_mul_dyadicMaximalFunction {f : ℝ → E}
+    (hf : AEMeasurable (fun y => ‖f y‖ₑ)) {p : ℝ} (hp : 1 < p) :
+    ∫⁻ x, dyadicMaximalFunction f x ^ p ≤
+      ENNReal.ofReal (p / (p - 1)) *
+        ∫⁻ x, ‖f x‖ₑ * dyadicMaximalFunction f x ^ (p - 1) := by
+  have hp0 : 0 < p := by linarith
+  have hp1 : 0 < p - 1 := by linarith
+  have hMm := measurable_dyadicMaximalFunction f
+  have hstep : ∀ t ∈ Ioi (0 : ℝ),
+      volume {x | ENNReal.ofReal t < dyadicMaximalFunction f x} *
+          ENNReal.ofReal (p * t ^ (p - 1)) ≤
+        ∫⁻ x, {x | ENNReal.ofReal t < dyadicMaximalFunction f x}.indicator
+          (fun y => ‖f y‖ₑ) x * ENNReal.ofReal (p * t ^ (p - 2)) := by
+    intro t ht
+    have hw := mul_volume_lt_dyadicMaximalFunction_le f (ENNReal.ofReal t)
+    rw [← lintegral_indicator (measurableSet_lt measurable_const hMm)] at hw
+    have hsplit : ENNReal.ofReal (p * t ^ (p - 1)) =
+        ENNReal.ofReal t * ENNReal.ofReal (p * t ^ (p - 2)) := by
+      rw [← ENNReal.ofReal_mul (le_of_lt ht)]
+      congr 1
+      rw [show p - 1 = (p - 2) + 1 by ring, Real.rpow_add ht, Real.rpow_one]
+      ring
+    rw [hsplit, ← mul_assoc, mul_comm (volume _) (ENNReal.ofReal t),
+      lintegral_mul_const' _ _ ENNReal.ofReal_ne_top]
+    gcongr
+  have hH : Measurable fun z : ℝ × (ℝ≥0∞ × ℝ≥0∞) =>
+      {z : ℝ × (ℝ≥0∞ × ℝ≥0∞) | ENNReal.ofReal z.1 < z.2.2}.indicator (fun z => z.2.1) z *
+        ENNReal.ofReal (p * z.1 ^ (p - 2)) := by
+    refine Measurable.mul (measurable_snd.fst.indicator ?_) ?_
+    · exact measurableSet_lt (ENNReal.measurable_ofReal.comp measurable_fst)
+        measurable_snd.snd
+    · exact ENNReal.measurable_ofReal.comp
+        (measurable_const.mul (measurable_fst.pow_const _))
+  have hΦm : AEMeasurable (Function.uncurry fun (t x : ℝ) =>
+      {x | ENNReal.ofReal t < dyadicMaximalFunction f x}.indicator (fun y => ‖f y‖ₑ) x *
+        ENNReal.ofReal (p * t ^ (p - 2))) ((volume.restrict (Ioi (0 : ℝ))).prod volume) := by
+    have := hH.comp_aemeasurable (measurable_fst.aemeasurable.prodMk
+      (hf.comp_snd.prodMk (hMm.comp measurable_snd).aemeasurable))
+      (μ := (volume.restrict (Ioi (0 : ℝ))).prod volume)
+    refine this.congr (Eventually.of_forall fun z => ?_)
+    rcases z with ⟨t, x⟩
+    simp [Set.indicator_apply]
+  have hinner : ∀ x, ∫⁻ t in Ioi (0 : ℝ),
+      {x | ENNReal.ofReal t < dyadicMaximalFunction f x}.indicator (fun y => ‖f y‖ₑ) x *
+        ENNReal.ofReal (p * t ^ (p - 2)) =
+      ENNReal.ofReal (p / (p - 1)) * (‖f x‖ₑ * dyadicMaximalFunction f x ^ (p - 1)) := by
+    intro x
+    have hcongr : ∀ t ∈ Ioi (0 : ℝ),
+        {x | ENNReal.ofReal t < dyadicMaximalFunction f x}.indicator (fun y => ‖f y‖ₑ) x *
+          ENNReal.ofReal (p * t ^ (p - 2)) =
+        (‖f x‖ₑ * ENNReal.ofReal (p / (p - 1))) *
+          {t : ℝ | ENNReal.ofReal t < dyadicMaximalFunction f x}.indicator
+            (fun t => ENNReal.ofReal ((p - 1) * t ^ (p - 1 - 1))) t := by
+      intro t ht
+      by_cases h : ENNReal.ofReal t < dyadicMaximalFunction f x
+      · rw [indicator_of_mem (show x ∈ {x | ENNReal.ofReal t < dyadicMaximalFunction f x} from h),
+          indicator_of_mem (show t ∈ {t : ℝ | ENNReal.ofReal t < dyadicMaximalFunction f x}
+            from h), mul_assoc, ← ENNReal.ofReal_mul (by positivity),
+          show p - 1 - 1 = p - 2 by ring]
+        congr 2
+        field_simp
+      · rw [indicator_of_notMem
+          (show x ∉ {x | ENNReal.ofReal t < dyadicMaximalFunction f x} from h),
+          indicator_of_notMem
+            (show t ∉ {t : ℝ | ENNReal.ofReal t < dyadicMaximalFunction f x} from h),
+          zero_mul, mul_zero]
+    rw [setLIntegral_congr_fun measurableSet_Ioi hcongr, lintegral_const_mul,
+      ← rpow_eq_lintegral _ hp1]
+    · ring
+    · exact (ENNReal.measurable_ofReal.comp (measurable_const.mul
+        (measurable_id.pow_const _))).indicator
+        (measurableSet_lt ENNReal.measurable_ofReal measurable_const)
+  calc ∫⁻ x, dyadicMaximalFunction f x ^ p
+      = ∫⁻ t in Ioi (0 : ℝ), volume {x | ENNReal.ofReal t < dyadicMaximalFunction f x} *
+          ENNReal.ofReal (p * t ^ (p - 1)) := lintegral_rpow_eq_lintegral_volume_mul hMm hp0
+    _ ≤ _ := setLIntegral_mono' measurableSet_Ioi hstep
+    _ = _ := lintegral_lintegral_swap hΦm
+    _ = ∫⁻ x, ENNReal.ofReal (p / (p - 1)) *
+          (‖f x‖ₑ * dyadicMaximalFunction f x ^ (p - 1)) := lintegral_congr hinner
+    _ = _ := lintegral_const_mul' _ _ ENNReal.ofReal_ne_top
+
+/-- **`L^p` bound for the dyadic maximal function.** For `1 < p < ∞` and every `f : ℝ → E` with
+`‖f‖ₑ` a.e. measurable, `∫ (M_d f)^p ≤ (p / (p - 1))^p ∫ ‖f‖^p`, that is `‖M_d f‖_p ≤ p' ‖f‖_p`
+with `p' = p / (p - 1)` (T. Hytönen, *Dyadic analysis and weights*, lecture notes, University of
+Helsinki, version of 2 May 2014, Theorem 3.8, with `μ = ν` the Lebesgue measure on `ℝ`; the case
+`p = ∞` there is not stated). Hölder's inequality turns the Doob-type inequality into
+`X ≤ p' G^{1/p} X^{1/p'}` with `X = ∫ (M_d f)^p`, `G = ∫ ‖f‖^p`; the bound with constant
+`2^p p / (p - 1)` shows `X < ∞` when `G < ∞`, so `X^{1/p'}` can be cancelled. -/
+theorem lintegral_rpow_dyadicMaximalFunction_le {f : ℝ → E}
+    (hf : AEMeasurable (fun y => ‖f y‖ₑ)) {p : ℝ} (hp : 1 < p) :
+    ∫⁻ x, dyadicMaximalFunction f x ^ p ≤
+      ENNReal.ofReal ((p / (p - 1)) ^ p) * ∫⁻ x, ‖f x‖ₑ ^ p := by
+  have hp0 : 0 < p := by linarith
+  have hp1 : 0 < p - 1 := by linarith
+  set X := ∫⁻ x, dyadicMaximalFunction f x ^ p with hXdef
+  set G := ∫⁻ x, ‖f x‖ₑ ^ p with hGdef
+  have hcpos : 0 < (p / (p - 1)) ^ p := Real.rpow_pos_of_pos (div_pos hp0 hp1) p
+  rcases eq_or_ne G ∞ with hG | hG
+  · rw [hG, ENNReal.mul_top (by simpa using hcpos)]
+    exact le_top
+  have hX : X ≠ ∞ := by
+    refine ne_top_of_le_ne_top ?_ (lintegral_rpow_dyadicMaximal_le_two_rpow_mul hf hp)
+    exact ENNReal.mul_ne_top ENNReal.ofReal_ne_top hG
+  rcases eq_or_ne X 0 with hX0 | hX0
+  · rw [hX0]; exact zero_le
+  set q := p / (p - 1) with hq
+  have hpq : p.HolderConjugate q := (Real.holderConjugate_iff_eq_conjExponent hp).2 rfl
+  have hq0 : 0 < q := div_pos hp0 hp1
+  have hMq : ∀ x, (dyadicMaximalFunction f x ^ (p - 1)) ^ q = dyadicMaximalFunction f x ^ p := by
+    intro x
+    rw [← ENNReal.rpow_mul]
+    congr 1
+    rw [hq]; field_simp
+  have hholder := ENNReal.lintegral_mul_le_Lp_mul_Lq volume hpq hf
+    ((measurable_dyadicMaximalFunction f).pow_const (p - 1)).aemeasurable
+  simp only [Pi.mul_apply, hMq] at hholder
+  have hmain := (lintegral_rpow_le_lintegral_mul_dyadicMaximalFunction hf hp).trans
+    (mul_le_mul_of_nonneg_left hholder zero_le)
+  rw [← hXdef, ← hGdef] at hmain
+  have hsum : 1 / p + 1 / q = 1 := by rw [hq]; field_simp; ring
+  have hsplit : X = X ^ (1 / p) * X ^ (1 / q) := by
+    rw [← ENNReal.rpow_add _ _ hX0 hX, hsum, ENNReal.rpow_one]
+  have hXq0 : X ^ (1 / q) ≠ 0 := (ENNReal.rpow_pos (pos_iff_ne_zero.2 hX0) hX).ne'
+  have hXqt : X ^ (1 / q) ≠ ∞ := ENNReal.rpow_ne_top_of_nonneg (by positivity) hX
+  have h1 : X ^ (1 / p) ≤ ENNReal.ofReal q * G ^ (1 / p) := by
+    rw [← ENNReal.mul_le_mul_iff_left hXq0 hXqt, ← hsplit, mul_assoc]
+    exact hmain
+  have h2 := ENNReal.rpow_le_rpow h1 hp0.le
+  rw [← ENNReal.rpow_mul, one_div_mul_cancel hp0.ne', ENNReal.rpow_one,
+    ENNReal.mul_rpow_of_nonneg _ _ hp0.le, ← ENNReal.rpow_mul, one_div_mul_cancel hp0.ne',
+    ENNReal.rpow_one, ENNReal.ofReal_rpow_of_nonneg hq0.le hp0.le] at h2
+  exact h2
 
 end MathlibExt.Analysis.HarmonicAnalysis.DyadicMaximal
