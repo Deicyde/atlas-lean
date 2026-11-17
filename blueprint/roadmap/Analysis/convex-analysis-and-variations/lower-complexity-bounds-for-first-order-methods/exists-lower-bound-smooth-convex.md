@@ -1,7 +1,5 @@
 # Lower complexity bound for smooth convex minimisation
 
-*Wanted (statement only, proof deferred).*
-
 Let $L > 0$ and integers $k \ge 1$, $n \ge 2k + 1$. For every $x_0 \in \mathbb{R}^n$ there are a convex $C^\infty$ function $f$ on $\mathbb{R}^n$ with $L$-Lipschitz gradient and a minimiser $x^*$ of $f$ such that every sequence $(x_j)$ with $x_0$ given and
 
 $$
@@ -22,9 +20,19 @@ $$
 f_{2k+1}(x) = \frac{L}{4}\Big(\frac{1}{2}\Big[(x^{(1)})^2 + \sum_{i=1}^{2k} (x^{(i)} - x^{(i+1)})^2 + (x^{(2k+1)})^2\Big] - x^{(1)}\Big),
 $$
 
-a quadratic with tridiagonal Hessian $0 \preceq \nabla^2 f_{2k+1} \preceq L I$, minimised at $\bar x^{(i)} = 1 - \frac{i}{2k+2}$ for $i \le 2k+1$ and $\bar x^{(i)} = 0$ otherwise. From $x_0 = 0$, the $j$-th iterate of any method in the class has nonzero entries only in its first $j$ coordinates, so $f(x_k) \ge \min f_k$. For $n > 2k + 1$ the minimiser is not unique; the statement asks for one minimiser, and the source's $x^*$ is the shift of $\bar x$.
+a quadratic with tridiagonal Hessian $0 \preceq \nabla^2 f_{2k+1} \preceq L I$, minimised at $\bar x^{(i)} = 1 - \frac{i}{2k+2}$ for $i \le 2k+1$ and $\bar x^{(i)} = 0$ otherwise. From $x_0 = 0$, the $j$-th iterate of any method in the class has nonzero entries only in its first $j$ coordinates, so $f(x_k) \ge \min f_k$. For $n > 2k + 1$ the minimiser is not unique; the statement asks for one minimiser, and the one provided is the source's $x^*$, the shift of $\bar x$.
 
 The bound is a **lower** bound on the error of every method in the class, valid for $k \le (n-1)/2$; it does not say that the error stays large after more than $(n-1)/2$ iterations. The source remarks that a finer analysis gives $L\|x_0 - x^*\|^2/(8(k+1)^2)$ and a constant arbitrarily close to $1$ in the second inequality; those sharper constants are not stated here. The 1998 draft's second constant is $1/32$; the constants of the published editions were not checked.
+
+The proof follows the source. Shifting by $x_0$ reduces to $x_0 = 0$. The Krylov argument (Lemma 2.1.3 of the source) shows by strong induction that $x_j$ is supported on the first $j$ coordinates, because a gradient of $f_{{2k+1}}$ at a vector supported on the first $j$ coordinates is supported on the first $j + 1$. Then $f(x_k) - f^* \ge f_k^* - f_{{2k+1}}^* = \frac{L}{16(k+1)}$, and $\|\bar x\|^2 \le \frac{2k+2}{3}$ (from $\sum_{l=1}^{m} l^2 \le (m+1)^3/3$) turns this into the first bound. For the second, the coordinates $k+1, \dots, 2k+1$ of $x_k - \bar x$ are those of $-\bar x$, and $\sum_{l=1}^{k+1} l^2 \ge (k+1)^3/3$ gives $\|x_k - \bar x\|^2 \ge \frac{k+1}{12}$, stronger than the needed $\frac{k+1}{48}$.
+
+## Informally uses
+
+- [Nesterov's worst function in the world](worst-function.md): the witness $f = f_{2k+1}(\cdot - x_0)$.
+- [The worst function is smooth, convex and $L$-smooth](worst-function-mem-class.md): the class $F^{\infty,1}_L$, through the lemmas it collects.
+- [Minimum of the worst function on the first $k$ coordinates](worst-function-ge-of-support.md): with $k$ for the lower bound on $f(x_k)$ and with $2k + 1$ for the minimality of $x^*$.
+- [Minimum value of the worst function](worst-function-worst-minimizer.md): $f^* = f_{2k+1}(\bar x)$.
+- [Minimiser of the worst function](worst-minimizer.md): $x^* = x_0 + \bar x$.
 
 ## Background
 

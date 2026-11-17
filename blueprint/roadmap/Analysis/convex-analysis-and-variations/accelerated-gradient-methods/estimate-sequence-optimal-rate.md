@@ -6,7 +6,7 @@ $$
 f(x_k) - f(x^*) \le L \min\Big\{\Big(1 - \sqrt{\mu / L}\Big)^k,\ \frac{4}{(k + 2)^2}\Big\}\, \|x_0 - x^*\|^2 .
 $$
 
-This is exactly the inequality of the source. For $\mu = 0$ (plain convexity) it is the accelerated rate $4L\|x_0 - x^*\|^2/(k+2)^2$, against $O(L\|x_0 - x^*\|^2/k)$ for gradient descent. It is within the constant factor $128/3$ of the [lower complexity bound](../lower-complexity-bounds-for-first-order-methods/exists-lower-bound-smooth-convex.md) $3L\|x_0 - x^*\|^2/(32(k+1)^2)$ (valid while $2k + 1 \le n$ in dimension $n$), which is the sense in which the source calls the scheme optimal; the lower bound is a wanted entry, so the optimality claim itself is not proved here.
+This is exactly the inequality of the source. For $\mu = 0$ (plain convexity) it is the accelerated rate $4L\|x_0 - x^*\|^2/(k+2)^2$, against $O(L\|x_0 - x^*\|^2/k)$ for gradient descent. It is within the constant factor $128/3$ of the [lower complexity bound](../lower-complexity-bounds-for-first-order-methods/exists-lower-bound-smooth-convex.md) $3L\|x_0 - x^*\|^2/(32(k+1)^2)$ (valid while $2k + 1 \le n$ in dimension $n$), which is the sense in which the source calls the scheme optimal. The two statements are proved separately; the comparison itself is this remark, not a Lean theorem.
 
 The proof combines the [convergence theorem](estimate-sequence-rate.md) at $u = x^*$, the [decay of $\lambda_k$](estimate-sequence-lambda-le.md) with $\gamma_0 = L$ (for which $4L/(2\sqrt{L} + k\sqrt{L})^2 = 4/(k+2)^2$), and the bound $f(x_0) - f(x^*) \le \frac{L}{2}\|x_0 - x^*\|^2$, which follows from the [descent lemma](../gradient-descent/gradient-descent-descent-lemma.md) at $x^*$, where $\nabla f(x^*) = 0$.
 

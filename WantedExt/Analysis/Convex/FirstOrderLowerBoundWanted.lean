@@ -12,20 +12,19 @@ public import Batteries.Util.ProofWanted
 public import Mathlib.Analysis.Calculus.Gradient.Basic
 public import Mathlib.Analysis.Calculus.ContDiff.Defs
 public import Mathlib.Analysis.Convex.Strong
-public import Mathlib.Analysis.InnerProductSpace.PiL2
 public import Mathlib.Analysis.InnerProductSpace.l2Space
 public import Mathlib.Analysis.SpecialFunctions.Sqrt
 public import Mathlib.Topology.MetricSpace.Lipschitz
 
 /-!
-# Lower complexity bounds for first-order methods (wanted)
+# Lower complexity bound for strongly convex first-order minimisation (wanted)
 
-The lower complexity bounds of Section 2.1 of Yu. Nesterov, *Introductory Lectures on Convex
-Programming, Volume I: Basic course* (lecture notes, July 2, 1998): no method whose iterates stay
-in `x 0 + span {∇f (x 0), …, ∇f (x (j - 1))}` (Assumption 2.1.4 there) can beat the rates of the
-optimal methods by more than a constant factor. The proofs use Nesterov's "worst function in the
-world", a quadratic with a tridiagonal Hessian. The span condition is stated for every `j`; for
-`j = 0` it only says `x 0 = x₀`.
+The strongly convex lower complexity bound of Section 2.1.4 of Yu. Nesterov, *Introductory
+Lectures on Convex Programming, Volume I: Basic course* (lecture notes, July 2, 1998): no method
+whose iterates stay in `x 0 + span {∇f (x 0), …, ∇f (x (j - 1))}` (Assumption 2.1.4 there) can
+contract faster than `((√Q - 1) / (√Q + 1)) ^ (2 k)`. The span condition is stated for every `j`;
+for `j = 0` it only says `x 0 = x₀`. The smooth convex bound, Theorem 2.1.6 there, is proved in
+`MathlibExt.Analysis.Convex.FirstOrderLowerBound`.
 -/
 
 @[expose] public section
@@ -33,29 +32,6 @@ world", a quadratic with a tridiagonal Hessian. The span condition is stated for
 open scoped ContDiff
 
 namespace WantedExt.Analysis.Convex.FirstOrderLowerBoundWanted
-
-/-- **Lower complexity bound for smooth convex minimisation.** Let `L > 0`, `1 ≤ k` and
-`2 k + 1 ≤ n`. For every `x₀ ∈ ℝⁿ` there is a convex `C^∞` function `f` on `ℝⁿ` with `L`-Lipschitz
-gradient and a minimiser `x⋆` of `f` such that every sequence with `x 0 = x₀` and
-`x j - x₀ ∈ span {∇f (x i) : i < j}` for all `j` satisfies
-`f (x k) - f x⋆ ≥ 3 L ‖x₀ - x⋆‖ ^ 2 / (32 (k + 1) ^ 2)` and
-`‖x k - x⋆‖ ^ 2 ≥ ‖x₀ - x⋆‖ ^ 2 / 32`.
-
-This is Theorem 2.1.6 of Yu. Nesterov, *Introductory Lectures on Convex Programming, Volume I:
-Basic course* (lecture notes, July 2, 1998), whose hypothesis `1 ≤ k ≤ (n - 1) / 2` is
-`2 k + 1 ≤ n`. The function is the shift by `x₀` of
-`f_{2k+1}(x) = L / 4 (1 / 2 ((x₁)² + ∑_{i=1}^{2k} (xᵢ - x_{i+1})² + (x_{2k+1})²) - x₁)`, and
-`x⋆` is the shift of its minimiser `x̄ᵢ = 1 - i / (2 k + 2)` (`i ≤ 2 k + 1`), `x̄ᵢ = 0` otherwise;
-for `n > 2 k + 1` the minimiser is not unique and the bound is claimed for this one. -/
-theorem_wanted exists_lower_bound_smooth_convex {n k : ℕ} (hk : 1 ≤ k) (hkn : 2 * k + 1 ≤ n)
-    {L : ℝ} (hL : 0 < L) (x₀ : EuclideanSpace ℝ (Fin n)) :
-    ∃ f : EuclideanSpace ℝ (Fin n) → ℝ, ContDiff ℝ ∞ f ∧ ConvexOn ℝ Set.univ f ∧
-      LipschitzWith ⟨L, hL.le⟩ (gradient f) ∧
-      ∃ xstar : EuclideanSpace ℝ (Fin n), (∀ z, f xstar ≤ f z) ∧
-        ∀ x : ℕ → EuclideanSpace ℝ (Fin n), x 0 = x₀ →
-          (∀ j, x j - x₀ ∈ Submodule.span ℝ ((fun i => gradient f (x i)) '' Set.Iio j)) →
-          3 * L * ‖x₀ - xstar‖ ^ 2 / (32 * ((k : ℝ) + 1) ^ 2) ≤ f (x k) - f xstar ∧
-            ‖x₀ - xstar‖ ^ 2 / 32 ≤ ‖x k - xstar‖ ^ 2
 
 /-- **Lower complexity bound for smooth strongly convex minimisation.** Let `μ > 0` and `Q > 1`.
 For every `x₀ ∈ ℓ²` there is a `μ`-strongly convex `C^∞` function `f` on `ℓ²` with
