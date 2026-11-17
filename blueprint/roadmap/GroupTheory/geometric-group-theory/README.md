@@ -14,3 +14,4 @@ Large-scale and analytic properties of finitely generated groups: growth, word-h
 - [Power quotients of hyperbolic groups](power-quotients-of-hyperbolic-groups/README.md)
 - [Property (T) for automorphism groups of free groups](property-t-for-automorphism-groups-of-free-group/README.md)
 - [Sofic groups](sofic-groups/README.md)
+- [Word metrics and quasi-isometries](word-metrics-and-quasi-isometries/README.md)
