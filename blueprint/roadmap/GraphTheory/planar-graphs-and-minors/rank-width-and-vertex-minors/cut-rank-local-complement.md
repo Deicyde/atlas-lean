@@ -8,10 +8,6 @@ $v$ in $X$; this is left multiplication by an invertible matrix (it squares to t
 $\mathrm{GF}(2)$), so the rank does not change. The source calls this observation fundamental: it
 is what makes vertex-minors the right containment relation for rank-width.
 
-## Informally uses
-
-- [Cut-rank is symmetric](cut-rank-compl.md): to assume $v \in X$.
-
 ## Sources
 
 - S. Oum, *Rank-width and vertex-minors*, J. Combin. Theory Ser. B 95 (2005) 79–100; read in the author's revised preprint of 18 April 2005 (https://sangil.dimag.kr/pdf/vertexminor-revision.pdf), whose numbering is cited here, Proposition 2.6.

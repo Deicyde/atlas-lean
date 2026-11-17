@@ -3,14 +3,23 @@
 A finite graph of tree-width at most $k$ has rank-width at most $k + 1$. The converse fails:
 complete graphs have rank-width at most one but unbounded tree-width.
 
-The survey derives this from a theorem of Oum: if $G$ has branch-width $k \ne 0$, its incidence
-graph has rank-width $k$ or $k - 1$; since $G$ is a vertex-minor of its incidence graph,
-$\mathrm{rw}(G) \le \mathrm{bw}(G)$ unless $\mathrm{bw}(G) = 0$.
+The derivation has two steps.
+
+1. $\mathrm{rw}(G) \le \mathrm{bw}(G)$ unless $\mathrm{bw}(G) = 0$. The survey derives this from a
+   theorem of Oum: if $G$ has branch-width $k \ne 0$, its incidence graph has rank-width $k$ or
+   $k - 1$, and $G$ is a vertex-minor of its incidence graph.
+2. $\mathrm{bw}(G) \le \mathrm{tw}(G) + 1$, a theorem of Robertson and Seymour (*Graph Minors. X.
+   Obstructions to tree-decomposition*, J. Combin. Theory Ser. B, 1991; not consulted here). The
+   survey states the conclusion $\mathrm{rw}(G) \le \mathrm{tw}(G) + 1$ without spelling out this
+   step. When $\mathrm{bw}(G) = 0$, step 1 does not apply and the bound is checked separately.
+
+## Informally uses
+
+- [Rank-width does not increase under vertex-minors](has-rank-width-at-most-3.md): $G$ is a
+  vertex-minor of its incidence graph.
 
 ## Background
 
-- [Rank-width does not increase under vertex-minors](has-rank-width-at-most-3.md): used in the
-  survey's derivation.
 - [Tree-width at most k](../tree-width/has-treewidth-at-most.md) and
   [complete graphs have cut-rank at most one](cut-rank-top-le-one.md).
 

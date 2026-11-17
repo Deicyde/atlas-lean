@@ -81,7 +81,9 @@ rank-width at most `k` if and only if every vertex-minor of `G` with at most `(6
 vertices has rank-width at most `k`. Equivalently, the class of graphs of rank-width at most `k`
 is characterised by excluded vertex-minors with at most `(6 ^ (k + 1) - 1) / 5` vertices, so there
 are finitely many excluded vertex-minors (Oum, *Rank-width and vertex-minors*, J. Combin. Theory
-Ser. B 95 (2005), main theorem stated in Section 1 and proved in Section 5). -/
+Ser. B 95 (2005), Theorem 5.4 and Corollary 5.5 in the author's revised preprint; Theorem 5.4
+bounds the size of a graph of rank-width greater than `k` all of whose proper pivot-minors have
+rank-width at most `k`). -/
 theorem_wanted hasRankWidthAtMost_iff_forall_isVertexMinor (G : SimpleGraph V) {k : ℕ}
     (hk : 1 ≤ k) :
     G.HasRankWidthAtMost k ↔ ∀ (n : ℕ) (H : SimpleGraph (Fin n)),

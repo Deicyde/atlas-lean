@@ -22,9 +22,10 @@ only if no member of `Obstructions` is a minor of `G` (Diestel, *Graph Theory*, 
 online preview of Chapter 12, Corollary 12.7.2, "the Kuratowski set for any minor-closed graph
 property is finite", a consequence of the graph minor theorem, Theorem 12.7.1,
 `MetaMathlibExt.graph_minor_theorem`). The statement also records that graphs which are minors
-of each other are isomorphic; that conjunct is elementary (no minor step increases the number of
-vertices plus edges, so graphs that are minors of each other are linked by isomorphism steps
-only) and is not part of the theorem of Robertson and Seymour.
+of each other are isomorphic; that conjunct is elementary (every minor step other than an
+isomorphism strictly decreases the number of vertices plus edges, so graphs that are minors of
+each other are linked by isomorphism steps only) and is not part of the theorem of Robertson and
+Seymour.
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem. -/
 theorem_wanted robertson_seymour
     (F : Set FinGraph)

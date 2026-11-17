@@ -7,10 +7,6 @@ statement says that the graph with no vertices has tree-width at most every $k$.
 The upper bound puts all vertices in a single bag. The lower bound is the case $K = V$ of the
 fact that every clique lies in a bag.
 
-## Informally uses
-
-- [Every clique lies in a bag](exists-bag-superset.md): applied to the whole vertex set of $K_n$.
-
 ## Background
 
 - [Complete graphs have cut-rank at most one](../rank-width-and-vertex-minors/cut-rank-top-le-one.md):

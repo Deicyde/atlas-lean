@@ -151,8 +151,10 @@ end TreeDecomposition
 
 /-- **Tree-width at most `k`.** A graph `G` has tree-width at most `k` if it has a
 tree-decomposition of width at most `k`, that is, one whose bags all have at most `k + 1`
-vertices (Diestel, *Graph Theory*, 6th ed., Section 12.4). For `k : ℕ` this is `tw(G) ≤ k`; the
-graph with no vertices satisfies it for every `k`, matching its tree-width `-1`. -/
+vertices (Diestel, *Graph Theory*, 6th ed., Section 12.4). For a finite vertex type `V` and
+`k : ℕ` this is `tw(G) ≤ k`; the graph with no vertices satisfies it for every `k`, matching its
+tree-width `-1`. For an infinite vertex type the predicate is always false, since the
+decomposition tree is finite and the bags are finite. -/
 def HasTreewidthAtMost (G : SimpleGraph V) (k : ℕ) : Prop :=
   ∃ D : G.TreeDecomposition, D.HasWidthAtMost k
 

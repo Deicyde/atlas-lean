@@ -7,8 +7,9 @@ a finite graph $G$ belongs to $F$ if and only if no graph in $O$ is a minor of $
 This is the forbidden-minor form of the graph minor theorem: the minimal graphs not in $F$ (the
 Kuratowski set of $F$) are pairwise incomparable under the minor relation, hence finitely many.
 The Lean statement also records that any two finite graphs that are minors of each other are
-isomorphic. That conjunct is elementary, since no minor step increases the number of vertices
-plus edges, and is not part of the theorem of Robertson and Seymour.
+isomorphic. That conjunct is elementary: every minor step other than an isomorphism strictly
+decreases the number of vertices plus edges, so graphs that are minors of each other are linked by
+isomorphism steps only. It is not part of the theorem of Robertson and Seymour.
 
 ## Informally uses
 
