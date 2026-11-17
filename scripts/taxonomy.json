@@ -3012,6 +3012,7 @@
   "MathlibExt/GameTheory/SocialChoice/ArrowImpossibility": {"to": "GameTheory/social-choice", "title": "Arrow's impossibility theorem"},
   "MathlibExt/GameTheory/SocialChoice/GibbardSatterthwaite": {"to": "GameTheory/social-choice", "title": "Gibbard–Satterthwaite theorem"},
   "MathlibExt/GameTheory/SpragueGrundy": {"to": "GameTheory/combinatorial-games", "title": "Sprague–Grundy theorem"},
+  "MathlibExt/GameTheory/UnconditionalRegretMatching": {"to": "GameTheory/noncooperative-games", "title": "No-regret dynamics"},
   "MathlibExt/GameTheory/WardropExistence": {"to": "GameTheory/noncooperative-games", "title": "Selfish routing and the price of anarchy"},
   "MathlibExt/GameTheory/ZeroSumMinimax": {"to": "GameTheory/noncooperative-games", "title": "Von Neumann's minimax theorem"},
   "MathlibExt/Geometry/CAT0": {"to": "Geometry/metric-geometry", "title": "CAT(0) spaces"},

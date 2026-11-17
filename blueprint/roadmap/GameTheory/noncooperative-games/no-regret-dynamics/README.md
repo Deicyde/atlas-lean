@@ -1,6 +1,6 @@
 # No-regret dynamics
 
-When a game is played repeatedly and every player uses a no-regret learning algorithm, the empirical distribution of play converges to the set of coarse correlated equilibria. Roughgarden's smoothness framework shows that price-of-anarchy bounds proved by a smoothness argument hold for these outcomes too, so the time-averaged social cost of no-regret play is nearly as good as that of any Nash equilibrium.
+When a game is played repeatedly and every player uses a no-regret learning algorithm, the empirical distribution of play converges to the set of coarse correlated equilibria. Roughgarden's smoothness framework shows that price-of-anarchy bounds proved by a smoothness argument hold for these outcomes too, so the time-averaged social cost of no-regret play is nearly as good as that of any Nash equilibrium. A simple strategy with vanishing regret is unconditional regret matching, which plays each action with probability proportional to the positive part of its average regret; it is Blackwell's approachability strategy for the nonpositive orthant of regret vectors (Hart and Mas-Colell 2000, Theorem B).
 
 - [Distribution on strategy profiles](is-distribution.md)
 - [Coarse correlated equilibrium](is-coarse-correlated-eq.md)
@@ -13,6 +13,23 @@ When a game is played repeatedly and every player uses a no-regret learning algo
 - [Smooth game](is-smooth.md)
 - [Extension theorem for coarse correlated equilibria](expected-social-cost-le.md)
 - [Robust price of anarchy for no-regret dynamics](average-social-cost-le.md)
+
+## Unconditional regret matching
+
+- [Regret vector](regret-vector.md)
+- [Unconditional regret matching](urm.md)
+- [Regret-matching probabilities are nonnegative](urm-nonneg.md)
+- [Regret-matching probabilities add up to one](sum-urm.md)
+- [Coordinates of the expected regret vector](mixed-payoff-regret-vector-apply.md)
+- [Nonpositive orthant](orthant.md)
+- [Positive part of a vector](pos-part.md)
+- [Negative part of a vector](neg-part.md)
+- [A vector minus its negative part](sub-neg-part.md)
+- [Positive and negative parts are orthogonal](inner-pos-part-neg-part.md)
+- [Distance to the nonpositive orthant](norm-pos-part-eq-inf-dist.md)
+- [Norm of the negative part](norm-neg-part-le.md)
+- [Regret matching meets Blackwell's condition with equality](inner-pos-part-mixed-payoff-urm.md)
+- [Unconditional regret matching has vanishing expected regret](average-regret-le-of-urm.md)
 
 ## Related topics
 
