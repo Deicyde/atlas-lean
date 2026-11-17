@@ -9,8 +9,11 @@
 - [Eigenvalues of a positive definite operator are positive](eigenvalues-pos-of-forall-pos-inner.md)
 - [Entropy tangent bound in an arbitrary orthonormal basis](klein-entropy-tangent.md)
 - [Klein's entropy inequality](klein-entropy.md)
+- [Peierls–Bogoliubov inequality](sum-exp-eigenvalues-convex-comb-le.md)
+- [Peierls–Bogoliubov inequality, logarithmic form](log-sum-exp-eigenvalues-convex-comb-le.md)
 
 ## Related topics
 
 - [Matrix concentration inequalities](../../../../Probability/concentration-inequalities/matrix-concentration-inequalities/README.md)
 - [Lieb's concavity theorem](../../../../LinearAlgebra/positive-definite-matrices/lieb-s-concavity-theorem/README.md)
+- [Quantum entropy](../../../../QuantumInformation/quantum-entropy/README.md): von Neumann entropy, whose subadditivity rests on Klein's entropy inequality.
