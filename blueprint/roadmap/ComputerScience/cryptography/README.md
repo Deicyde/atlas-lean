@@ -15,3 +15,4 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [RSA cryptosystem](rsa-cryptosystem/README.md)
 - [Schnorr identification scheme](schnorr-identification-scheme/README.md)
 - [Semantic security and indistinguishability](semantic-security-and-indistinguishability/README.md)
+- [Zero-knowledge proofs](zero-knowledge-proofs/README.md)
