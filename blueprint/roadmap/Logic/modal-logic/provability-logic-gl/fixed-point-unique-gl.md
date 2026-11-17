@@ -6,7 +6,10 @@ $$\mathrm{GL} \vdash \boxdot(\psi \leftrightarrow A(\psi)) \to \boxdot(\chi \lef
 (\psi \leftrightarrow \chi),$$
 where $\boxdot\theta$ abbreviates $\theta \wedge \Box\theta$; the Lean statement spells out the four
 hypotheses as curried implications. In particular two fixed points of $A$ are GL-provably
-equivalent.
+equivalent: if $\mathrm{GL} \vdash \psi \leftrightarrow A(\psi)$ and
+$\mathrm{GL} \vdash \chi \leftrightarrow A(\chi)$, necessitation gives the four hypotheses, so
+$\mathrm{GL} \vdash \psi \leftrightarrow \chi$. This rule is the form in which the source below
+states uniqueness; the internal form above is stronger and is derived here.
 
 Proof: let $r = \psi \leftrightarrow \chi$. On a transitive model, assume the hypotheses at $w$. At a
 successor $v$ of $w$ where $\Box r$ holds, $A(\psi)$ and $A(\chi)$ agree, because $p$ is read only
@@ -25,4 +28,5 @@ theorem; modus ponens with the Löb instance gives the GL theorem.
 
 ## Sources
 
-- R. Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §2.2 (uniqueness clause of the fixed point theorem).
+- R. Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §2.2
+  (uniqueness of fixed points, stated as a rule).

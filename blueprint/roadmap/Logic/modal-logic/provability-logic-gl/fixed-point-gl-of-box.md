@@ -16,8 +16,10 @@ $\Box C(H) \leftrightarrow \Box X$ on the cone of any world where Löb's axiom f
 necessitation hold, and there $H \leftrightarrow A(H)$ by locality. This implication is a K4
 theorem, and the Löb instance for $X$ and its necessitation are GL theorems.
 
-The general theorem, for any formula in which $p$ is modalised, is built from this case by
-induction on the number of boxed subformulas containing $p$; it is recorded as a wanted statement.
+The source below states the de Jongh–Sambin theorem for every formula in which $p$ is modalised,
+and the example $\neg\Box p$ with fixed point $\neg\Box\bot$; it does not give the explicit
+formula $B(\Box C(B(\top)))$, which is derived here together with its proof. The general theorem
+is recorded as a wanted statement.
 
 ## Informally uses
 
@@ -29,6 +31,5 @@ induction on the number of boxed subformulas containing $p$; it is recorded as a
 
 ## Sources
 
-- R. Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §2.2 (the fixed point theorem).
-- G. Sambin, "An effective fixed-point theorem in intuitionistic diagonalizable algebras",
-  *Studia Logica* 35 (1976), 345–361.
+- R. Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §2.2
+  (the fixed point theorem and the example $\neg\Box p$).

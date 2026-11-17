@@ -49,7 +49,10 @@ exactly the ordinals below `ε₀`; that is, worms modulo RC-equivalence, ordere
 order-isomorphic to `ε₀`. Beklemishev states this for GLP, with `α <₀ β` iff
 `GLP ⊢ β → ⟨0⟩α`, together with the fact that every closed strictly positive formula is
 GLP-equivalent to a worm ("Provability algebras: an overview and current progress", slides, 2012,
-on the positive closed fragment as an ordinal notation system). The RC form stated here
+on the positive closed fragment as an ordinal notation system); the result is due to
+Beklemishev, "Provability algebras and proof-theoretic ordinals, I", *Annals of Pure and Applied
+Logic* 128 (2004), as attributed in Verbrugge, "Provability logic", *Stanford Encyclopedia of
+Philosophy*, §5.4 (that paper was not read here). The RC form stated here
 follows because RC axiomatizes the strictly positive fragment of GLP (Dashkov, as reported in
 arXiv:1304.4396v3, Section 2). The proved
 `WormLt.replicate_zero_one` is the instance `o(0^k) = k < ω = o(1)`. -/

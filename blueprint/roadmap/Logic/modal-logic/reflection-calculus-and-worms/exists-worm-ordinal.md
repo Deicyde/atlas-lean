@@ -3,13 +3,16 @@
 There is a map $o$ from worms to ordinals such that two worms are RC-equivalent iff they have the
 same value, $\alpha <_0 \beta$ iff $o(\alpha) < o(\beta)$, and the values are exactly the ordinals
 below $\varepsilon_0$. Equivalently, worms modulo RC-equivalence, ordered by $<_0$, are
-order-isomorphic to $(\varepsilon_0, <)$. The value is computed recursively: $o(0^k) = k$, and if
+order-isomorphic to $(\varepsilon_0, <)$. The value is computed recursively: $o(0^k) = k$; otherwise, if
 $\alpha = \alpha_1 0 \alpha_2 0 \cdots 0 \alpha_n$ with each $\alpha_i$ free of $0$, then
 $o(\alpha) = \omega^{o(\alpha_n^-)} + \cdots + \omega^{o(\alpha_1^-)}$, where $\alpha^-$ lowers every
 letter by one.
 
-Wanted statement (no proof in the library yet). The source states it for GLP; the RC form follows
-by Dashkov's theorem. The instance $0^k <_0 1$ is proved.
+Wanted statement (no proof in the library yet). The slides state it for GLP; the RC form follows
+by Dashkov's theorem. The theorem is due to Beklemishev, "Provability algebras and proof-theoretic
+ordinals, I", *Annals of Pure and Applied Logic* 128 (2004), as attributed in R. Verbrugge,
+"Provability logic", *Stanford Encyclopedia of Philosophy*, current edition, §5.4 ("GLP and
+proof-theoretic ordinals"); that paper was not read here, so no theorem number is given. The instance $0^k <_0 1$ is proved.
 
 ## Background
 

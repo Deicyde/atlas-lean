@@ -11,8 +11,14 @@ world of the canonical model at which $\Gamma$ holds and $\varphi$ fails (truth 
 
 ## Informally uses
 
-- [Strong completeness of K](completeness-k.md): the same canonical-model argument, with the
-  transitivity of the canonical relation added.
+- [Completeness relative to the canonical model](of-canonical-model.md): a set that does not
+  deduce $\varphi$ is satisfied at a world of the canonical model where $\varphi$ fails.
+- [Truth lemma](satisfies-canonical-iff.md): truth in the canonical model is membership.
+
+## Background
+
+- [Strong completeness of K](completeness-k.md): the same canonical-model argument, without the
+  transitivity condition.
 
 ## Sources
 

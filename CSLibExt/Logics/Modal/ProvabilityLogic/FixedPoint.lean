@@ -21,13 +21,14 @@ occurrence of the atom `p` in `A(p)` lies under a box, then there is a formula `
 whose atoms occur in `A`, with `GL ⊢ H ↔ A(H)`; and any two such fixed points are GL-provably
 equivalent. This file proves
 
-* `Derivable.fixedPoint_unique_GL` (**uniqueness of fixed points**, de Jongh, Sambin, Bernardi):
-  for `A` modalised in `p` and arbitrary formulas `ψ`, `χ`, GL proves
-  `⊡(ψ ↔ A(ψ)) → ⊡(χ ↔ A(χ)) → (ψ ↔ χ)`, where `⊡θ` is `θ ∧ □θ` (written as curried hypotheses);
+* `Derivable.fixedPoint_unique_GL` (**uniqueness of fixed points**): for `A` modalised in `p` and
+  arbitrary formulas `ψ`, `χ`, GL proves `⊡(ψ ↔ A(ψ)) → ⊡(χ ↔ A(χ)) → (ψ ↔ χ)`, where `⊡θ` is
+  `θ ∧ □θ` (written as curried hypotheses); this internal form implies the uniqueness rule stated
+  in the reference below;
 * `Derivable.fixedPoint_GL_of_box` (**existence, one boxed occurrence**): if `A(p) = B(□C(p))`,
   that is `A = B[r := □C]` with `p` not occurring in `B`, then `H = B(□C(B(⊤)))` satisfies
   `GL ⊢ H ↔ A(H)`. This covers `¬□p` (fixed point `¬□¬⊤`, equivalent to `¬□⊥`), `□p`,
-  `□(p → q)` and `□¬p`.
+  `□(p → q)` and `□¬p`. The explicit formula is derived here.
 
 The general existence theorem (any number of boxed occurrences) is recorded in `WantedExt`.
 
@@ -39,10 +40,9 @@ truth of a formula at a world depends only on the valuation on the worlds it can
 ## References
 
 * R. Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy* (current edition),
-  §2.2 (statement of the fixed point theorem, with uniqueness).
-* G. Sambin, "An effective fixed-point theorem in intuitionistic diagonalizable algebras",
-  *Studia Logica* 35 (1976), 345–361.
-* G. Boolos, *The Logic of Provability*, Cambridge University Press, 1993 (fixed point theorem).
+  §2.2 (statement of the fixed point theorem; uniqueness as a rule). It attributes the theorem to
+  de Jongh and Sambin (1975) and lists proofs by Smoryński (1985), Boolos (1993), Sambin and
+  Valentini (1982), Lindström (2006) and Reidhaar-Olson (1990); none of these was read here.
 -/
 
 namespace Cslib
@@ -122,12 +122,14 @@ private theorem subst_iff_of_box_iff {World : Type v} (M : KripkeModel World Ato
   exact satisfies_updateAtom_congr_of_modalised M hA {u | M.rel v u}
     (fun _ hu _ h ↦ trans hu h) v (fun _ h ↦ h) h
 
-/-- **Uniqueness of fixed points in GL** (de Jongh, Sambin, Bernardi). If every occurrence of
-`p` in `A` is under a box, then for all formulas `ψ` and `χ`, GL proves
+/-- **Uniqueness of fixed points in GL.** If every occurrence of `p` in `A` is under a box, then
+for all formulas `ψ` and `χ`, GL proves
 `(ψ ↔ A(ψ)) → □(ψ ↔ A(ψ)) → (χ ↔ A(χ)) → □(χ ↔ A(χ)) → (ψ ↔ χ)`, i.e. any two fixed points of
-`A` are equivalent under `⊡`-hypotheses (Verbrugge, "Provability logic", *Stanford Encyclopedia of
-Philosophy*, §2.2, uniqueness clause). The derivation uses one instance of Löb's axiom, for
-`ψ ↔ χ`. -/
+`A` are equivalent under `⊡`-hypotheses. Verbrugge, "Provability logic", *Stanford Encyclopedia of
+Philosophy*, §2.2, states uniqueness as a rule: if `GL ⊢ B ↔ A(B)` and `GL ⊢ C ↔ A(C)`, then
+`GL ⊢ B ↔ C`. The internal form proved here is stronger and gives the rule by necessitation; it
+is derived here, not quoted from a source read in this work. The derivation uses one instance of
+Löb's axiom, for `ψ ↔ χ`. -/
 theorem fixedPoint_unique_GL {A : Formula Atom} {p : Atom} (hA : A.Modalised p)
     (psi chi : Formula Atom) :
     Derivable Axioms.GL
@@ -215,10 +217,11 @@ private theorem fixedPoint_semantic {World : Type v} (M : KripkeModel World Atom
 /-- **The de Jongh–Sambin fixed point for one boxed occurrence.** Let `A(p) = B(□C(p))`, i.e.
 `A = B[r := □C]`, where the atom `p` does not occur in `B`. Then `H = B(□C(B(⊤)))`, i.e.
 `H = B[r := □(C[p := B[r := ⊤]])]`, is a fixed point of `A` in GL: `GL ⊢ H ↔ A(H)`. Every
-occurrence of `p` in `A` lies inside the one boxed subformula `□C`, so `A` is modalised in `p`;
-the general de Jongh–Sambin theorem (Verbrugge, "Provability logic", *Stanford Encyclopedia of
-Philosophy*, §2.2) is built from this case by induction on the number of boxed subformulas
-containing `p`. The derivation uses Löb's axiom for `C(B(⊤))` and its necessitation. -/
+occurrence of `p` in `A` lies inside the one boxed subformula `□C`, so `A` is modalised in `p`.
+Verbrugge, "Provability logic", *Stanford Encyclopedia of Philosophy*, §2.2, states the
+de Jongh–Sambin theorem (existence of a fixed point for every modalised `A`) and the example
+`¬□p ↦ ¬□⊥`, but not this explicit formula; the formula and its proof are derived here. The
+derivation uses Löb's axiom for `C(B(⊤))` and its necessitation. -/
 theorem fixedPoint_GL_of_box {B C : Formula Atom} {p r : Atom} (hB : p ∉ B.atoms) :
     Derivable Axioms.GL
       ((B.subst r (.box (C.subst p (B.subst r .top)))).iff
