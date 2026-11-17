@@ -10,9 +10,7 @@ $N$ to payoff vectors in $\mathbb R^N$ that is
 The proof writes $v$ in the basis of unanimity games $u_T(S) = [T \subseteq S]$ by Möbius
 inversion, $v = \sum_{T \neq \emptyset} c_T(v)\, u_T$, and shows that the axioms force
 $\varphi_i(u_T) = 1/|T|$ for $i \in T$ and $0$ otherwise; hence
-$\varphi_i(v) = \sum_{T \ni i} c_T(v)/|T|$. The classical formula
-$\varphi_i(v) = \sum_{S \not\ni i} \frac{|S|!\,(n - |S| - 1)!}{n!}\bigl(v(S \cup \{i\}) - v(S)\bigr)$ is
-not stated in the Lean file.
+$\varphi_i(v) = \sum_{T \ni i} c_T(v)/|T|$.
 
 Compared with the source: Shapley works with superadditive games on a universe of players with
 finite carriers and an additivity axiom; this is an adapted characterisation on a fixed finite
@@ -26,6 +24,8 @@ source-fidelity note in `MathlibExt/GameTheory/ShapleyValue.lean`).
 
 ## Background
 
+- [The Shapley value is given by Shapley's formula](eq-shapley-formula.md): the classical
+  formula, an average of marginal contributions, derived from this uniqueness.
 - [Bondareva–Shapley theorem](../bondareva-shapley-theorem/README.md): the core, the other
   classical solution concept for TU games.
 

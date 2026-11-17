@@ -3093,6 +3093,7 @@
   "MathlibExt/GameTheory/PotentialGame": {"to": "GameTheory/noncooperative-games", "title": "Potential games"},
   "MathlibExt/GameTheory/SelfishRouting": {"to": "GameTheory/noncooperative-games", "title": "Selfish routing and the price of anarchy"},
   "MathlibExt/GameTheory/ShapleyValue": {"to": "GameTheory/cooperative-games", "title": "Shapley value"},
+  "MathlibExt/GameTheory/ShapleyValueFormula": {"to": "GameTheory/cooperative-games", "title": "Shapley value"},
   "MathlibExt/GameTheory/SmithRemoteness": {"to": "GameTheory/combinatorial-games", "title": "Smith's remoteness function"},
   "MathlibExt/GameTheory/SocialChoice/Arrow": {"to": "GameTheory/social-choice", "title": "Arrow's impossibility theorem"},
   "MathlibExt/GameTheory/SocialChoice/ArrowImpossibility": {"to": "GameTheory/social-choice", "title": "Arrow's impossibility theorem"},
