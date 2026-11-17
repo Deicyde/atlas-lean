@@ -49,3 +49,7 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 - [Blackwell approachability](../blackwell-approachability/README.md): the tool that makes conditional regrets vanish.
 - [Linear programming](../../../Geometry/convex-geometry/linear-programming/README.md): the correlated equilibria are the feasible set of a linear program, and linear duality proves that it is nonempty (Hart and Schmeidler 1989).
 - [Revelation principle](../../mechanism-design/revelation-principle/README.md): the reduction to direct, obeyed recommendations is the revelation argument for mechanisms with private information.
+- [Bayes rationality](is-bayes-rational.md)
+- [Conditional expectation given a partition](cond-exp-cell.md)
+- [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md)
+- [Correlated equilibrium as an expression of Bayesian rationality](is-correlated-eq-of-is-bayes-rational.md)
