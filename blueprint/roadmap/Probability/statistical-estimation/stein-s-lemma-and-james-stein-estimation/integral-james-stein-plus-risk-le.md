@@ -1,10 +1,8 @@
 # The positive-part James–Stein estimator is at least as good as James–Stein
 
-*Wanted: stated, not yet proved.*
-
-For $p \ge 3$ and $X \sim \mathcal N_p(\theta, I)$,
+For $p \ge 3$ and $X \sim \mathcal N_p(\theta, I)$, the loss $\|\delta^+(X) - \theta\|^2$ is integrable and
 $$\mathbb E\, \|\delta^+(X) - \theta\|^2 \le \mathbb E\, \|\delta(X) - \theta\|^2 \qquad \text{for every } \theta,$$
-where $\delta^+$ is the [positive-part estimator](james-stein-plus.md) and $\delta$ the [James–Stein estimator](james-stein.md). Johnstone's draft states after equation (2.65) that $\delta^+$ "has necessarily even better MSE" than $\delta$, leaving the proof as Exercise 2.12; the statement here is the non-strict form. Combined with [James–Stein dominance](integral-james-stein-risk-lt.md) it would show that $\delta^+$ also dominates $X$.
+where $\delta^+$ is the [positive-part estimator](james-stein-plus.md) and $\delta$ the [James–Stein estimator](james-stein.md). Johnstone's draft states after equation (2.65) that $\delta^+$ "has necessarily even better MSE" than $\delta$, leaving the proof as Exercise 2.12; the statement here is the non-strict form. The classical form of the result is a strict inequality; it is not stated here because the source consulted says only "even better". The integrability conjunct (true because $|\delta^+_i(x)| \le |x_i|$) keeps the inequality from holding vacuously. Combined with [James–Stein dominance](integral-james-stein-risk-lt.md) it would show that $\delta^+$ also dominates $X$.
 
 ## Sources
 

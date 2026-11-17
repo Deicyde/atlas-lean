@@ -2,7 +2,7 @@
 
 The James–Stein estimator of the mean of $\mathcal N_p(\theta, I)$ is
 $$\delta(x) = \Bigl(1 - \frac{p - 2}{\|x\|^2}\Bigr) x,$$
-Johnstone's draft, equation (2.63). At $x = 0$ Lean's convention $a / 0 = 0$ makes the factor $1$, so $\delta(0) = 0$; this point has probability zero. Efron (2021), Theorem 1, states the variant that shrinks towards the grand mean $\bar x$ with factor $1 - (N - 3)\sigma_0^2/S$: see [the grand-mean estimator](james-stein-grand-mean.md).
+Johnstone's draft, equation (2.63). At $x = 0$ Lean's convention $a / 0 = 0$ makes the factor $1$, so $\delta(0) = 0$; this point has probability zero. Efron (2021), Theorem 1, which Efron credits to James and Stein (1961), states the variant that shrinks towards the grand mean $\bar x$ with factor $1 - (N - 3)\sigma_0^2/S$: see [the grand-mean estimator](james-stein-grand-mean.md).
 
 ## Sources
 

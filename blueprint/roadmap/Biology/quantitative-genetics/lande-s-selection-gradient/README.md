@@ -1,6 +1,6 @@
 # Lande's selection gradient
 
-- [Stein's lemma](integral-sub-mul-gaussian-real.md)
+- [Stein's lemma in Lande's form](integral-sub-mul-gaussian-real.md)
 - [Mean fitness of a normally distributed trait](mean-fitness.md)
 - [Directional selection differential](selection-differential.md)
 - [Derivative of mean fitness with respect to the trait mean](has-deriv-at-mean-fitness.md)

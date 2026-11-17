@@ -31,4 +31,4 @@
 - [Disintegration of the Normal–Normal joint law](comp-prod-normal-posterior-kernel.md)
 - [Normal–Normal conjugacy with known variance](posterior-gaussian-likelihood-gaussian-r.md)
 - [Normal–Normal posterior predictive](gaussian-likelihood-comp-posterior.md)
-- [The Bayes-ratio posterior mean of the normal–normal model is `normalPostMean`](gaussian-posterior-mean-gaussian-real-eq.md)
+- [The Bayes-ratio posterior mean of the normal–normal model is the conjugate posterior mean](gaussian-posterior-mean-gaussian-real-eq.md)

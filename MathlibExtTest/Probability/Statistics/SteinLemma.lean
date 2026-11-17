@@ -94,11 +94,11 @@ example : jamesSteinGrandMean 1 (![1, 1, 1, 1] : Fin 4 → ℝ) = ![1, 1, 1, 1] 
   funext i
   fin_cases i <;> norm_num [jamesSteinGrandMean, Fin.sum_univ_four]
 
-/-- Efron's Theorem 1 in dimension `4` with unit noise at `θ = 0`. -/
+/-- Grand-mean James–Stein dominance in dimension `4` with unit noise at `θ = 0`. -/
 example : ∫ x, ∑ i, (jamesSteinGrandMean 1 x i - 0) ^ 2
     ∂(Measure.pi fun _ : Fin 4 => gaussianReal 0 1) < 4 := by
-  have h := integral_jamesSteinGrandMean_risk_lt (le_refl 4) (σ2 := 1) one_ne_zero
-    (fun _ => (0 : ℝ))
+  have h := (integral_jamesSteinGrandMean_risk_lt (le_refl 4) (σ2 := 1) one_ne_zero
+    (fun _ => (0 : ℝ))).2
   simpa using h
 
 end MathlibExtTest.Probability.Statistics.SteinLemma

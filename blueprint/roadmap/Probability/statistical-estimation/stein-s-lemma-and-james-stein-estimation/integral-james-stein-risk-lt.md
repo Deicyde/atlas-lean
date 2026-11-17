@@ -1,6 +1,6 @@
 # James–Stein dominance
 
-For $p \ge 3$ the [James–Stein estimator](james-stein.md) has strictly smaller quadratic risk than $X$ at every mean: $\mathbb E \|\delta(X) - \theta\|^2 < p$ for all $\theta \in \mathbb R^p$, so $X$ is inadmissible under squared error loss. Johnstone's draft derives this from equation (2.64). Efron (2021), Theorem 1, states the same conclusion for the variant that shrinks towards the grand mean, with $N \ge 4$; this page is the shrink-towards-zero version with $p \ge 3$, and [Efron's Theorem 1](integral-james-stein-grand-mean-risk-lt.md) is the grand-mean version.
+For $p \ge 3$ the [James–Stein estimator](james-stein.md) has strictly smaller quadratic risk than $X$ at every mean: $\mathbb E \|\delta(X) - \theta\|^2 < p$ for all $\theta \in \mathbb R^p$, so $X$ is inadmissible under squared error loss. Johnstone's draft derives this from equation (2.64). Efron (2021), Theorem 1, which Efron credits to James and Stein (1961), states the same conclusion for the variant that shrinks towards the grand mean, with $N \ge 4$; this page is the shrink-towards-zero version with $p \ge 3$, and [grand-mean dominance](integral-james-stein-grand-mean-risk-lt.md) is the grand-mean version.
 
 ## Informally uses
 

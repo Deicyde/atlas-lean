@@ -54,8 +54,9 @@ covered.
 * `integral_inv_sum_sq_pi_gaussianReal_zero`, `integral_jamesStein_factor_pi_gaussianReal`:
   `E‖X‖⁻² = 1/(p - 2)` at `θ = 0`, and the James–Stein factor estimates `1/V` without bias (the
   empirical Bayes reading of Efron and Morris).
-* `jamesSteinGrandMean`, `integral_jamesSteinGrandMean_risk_lt`: Efron's Theorem 1, shrinkage
-  towards the grand mean dominates `X` for `N ≥ 4` and any known `σ² > 0`.
+* `jamesSteinGrandMean`, `integral_jamesSteinGrandMean_risk_lt`: shrinkage towards the grand mean
+  dominates `X` for `N ≥ 4` and any known `σ² > 0` (Efron 2021, Theorem 1, credited there to James
+  and Stein 1961).
 * `jamesSteinPlus`: the positive-part estimator (its improvement over James–Stein is recorded in
   `WantedExt.Probability.JamesSteinWanted`).
 
@@ -834,7 +835,7 @@ theorem integral_jamesStein_factor_pi_gaussianReal {p : ℕ} (hp : 3 ≤ p) {V :
     linarith
   field_simp
 
-/-! ### Shrinkage towards the grand mean (Efron's Theorem 1) -/
+/-! ### Shrinkage towards the grand mean -/
 
 private lemma integrableOn_ball_reciprocal {p : ℕ} (hp : 3 ≤ p) :
     IntegrableOn (fun x : Fin p → ℝ => (∑ j, x j ^ 2)⁻¹) (Metric.ball 0 1) volume := by
@@ -1156,6 +1157,8 @@ private lemma sum_gm_correction {N : ℕ} (hN : 0 < N) (x : Fin N → ℝ)
 /-- The risk of the grand-mean James–Stein estimator with unit noise variance:
 `N - (N - 3)² E[1 / S]`. -/
 private lemma integral_jamesSteinGrandMean_one_risk {N : ℕ} (hN : 4 ≤ N) (θ : Fin N → ℝ) :
+    Integrable (fun x => ∑ i, (jamesSteinGrandMean 1 x i - θ i) ^ 2)
+      (Measure.pi fun j => gaussianReal (θ j) 1) ∧
     ∫ x, ∑ i, (jamesSteinGrandMean 1 x i - θ i) ^ 2 ∂(Measure.pi fun j => gaussianReal (θ j) 1) =
       N - ((N : ℝ) - 3) ^ 2 * ∫ x : Fin N → ℝ, (∑ l, x l ^ 2 - (∑ l, x l) ^ 2 / (N : ℝ))⁻¹
         ∂(Measure.pi fun j => gaussianReal (θ j) 1) := by
@@ -1203,12 +1206,20 @@ private lemma integral_jamesSteinGrandMean_one_risk {N : ℕ} (hN : 4 ≤ N) (θ
     obtain ⟨j, k, hjk⟩ : ∃ j k : Fin N, j ≠ k := ⟨⟨0, by omega⟩, ⟨1, by omega⟩, by simp⟩
     filter_upwards [ae_ne_of_ne θ hjk] with x hx
     exact (grandMeanS_pos_of_ne hN0 x hx).ne'
-  calc
-    _ = ∫ x, ∑ i, (x i + gmG a i x - θ i) ^ 2 ∂P := by
-      refine integral_congr_ae (Filter.Eventually.of_forall fun x => ?_)
-      refine Finset.sum_congr rfl fun i _ => ?_
+  have hpt : ∀ x : Fin N → ℝ, ∑ i, (jamesSteinGrandMean 1 x i - θ i) ^ 2 =
+      ∑ i, (x i + gmG a i x - θ i) ^ 2 := fun x =>
+    Finset.sum_congr rfl fun i _ => by
       simp only [jamesSteinGrandMean, gmG, grandMeanS_eq hN0, a]
       ring
+  refine ⟨?_, ?_⟩
+  · refine (integrable_finsetSum Finset.univ fun i _ =>
+      ((memLp_sub_eval_pi θ i).add (hg2 i)).integrable_sq).congr
+      (Filter.Eventually.of_forall fun x => ?_)
+    simp only [hpt x, Pi.add_apply]
+    exact Finset.sum_congr rfl fun i _ => by ring
+  calc
+    _ = ∫ x, ∑ i, (x i + gmG a i x - θ i) ^ 2 ∂P :=
+      integral_congr_ae (Filter.Eventually.of_forall hpt)
     _ = N + ∫ x, ∑ i, (gmG a i x ^ 2 + 2 * gmDG a i x) ∂P :=
       integral_sum_sq_add_sub_pi_gaussianReal θ hd hdi hg2
     _ = N + ∫ x, -a ^ 2 * (∑ l, x l ^ 2 - (∑ l, x l) ^ 2 / N)⁻¹ ∂P := by
@@ -1241,20 +1252,22 @@ private lemma jamesSteinGrandMean_smul {N : ℕ} {c : ℝ} (hc : c ≠ 0) (x : F
   · simp [hS]
   · field_simp
 
-/-- **Efron's Theorem 1: James–Stein shrinkage towards the grand mean dominates the MLE.** Let
-`N ≥ 4`, `σ² > 0` and `X ~ N(θ, σ² I_N)`. Then for every `θ`,
-`E ∑ᵢ (θ̂ᵢ - θᵢ)² < N σ²` for the estimator `θ̂ = jamesSteinGrandMean σ² X`
-(B. Efron, *Empirical Bayes: Concepts and Methods*, 2021 manuscript, Theorem 1, equations
-(3.1)–(3.5)). -/
+/-- **James–Stein shrinkage towards the grand mean dominates the MLE.** Let `N ≥ 4`, `σ² > 0` and
+`X ~ N(θ, σ² I_N)`. Then for every `θ` the loss `∑ᵢ (θ̂ᵢ - θᵢ)²` of the estimator
+`θ̂ = jamesSteinGrandMean σ² X` is integrable and its mean is `< N σ²` (B. Efron, *Empirical Bayes:
+Concepts and Methods*, 2021 manuscript, Theorem 1, equations (3.1)–(3.5), which credits James and
+Stein 1961). -/
 theorem integral_jamesSteinGrandMean_risk_lt {N : ℕ} (hN : 4 ≤ N) {σ2 : NNReal}
     (hσ : σ2 ≠ 0) (θ : Fin N → ℝ) :
-    ∫ x, ∑ i, (jamesSteinGrandMean σ2 x i - θ i) ^ 2
+    Integrable (fun x => ∑ i, (jamesSteinGrandMean σ2 x i - θ i) ^ 2)
+        (Measure.pi fun j => gaussianReal (θ j) σ2) ∧
+      ∫ x, ∑ i, (jamesSteinGrandMean σ2 x i - θ i) ^ 2
         ∂(Measure.pi fun j => gaussianReal (θ j) σ2) < N * σ2 := by
   have hN0 : 0 < N := by omega
   have h1 : ∀ θ' : Fin N → ℝ, ∫ x, ∑ i, (jamesSteinGrandMean 1 x i - θ' i) ^ 2
       ∂(Measure.pi fun j => gaussianReal (θ' j) 1) < N := by
     intro θ'
-    rw [integral_jamesSteinGrandMean_one_risk hN θ']
+    rw [(integral_jamesSteinGrandMean_one_risk hN θ').2]
     set P := Measure.pi fun j => gaussianReal (θ' j) 1
     have hr := integrable_inv_grandMeanS hN θ'
     obtain ⟨j, k, hjk⟩ : ∃ j k : Fin N, j ≠ k := ⟨⟨0, by omega⟩, ⟨1, by omega⟩, by simp⟩
@@ -1296,13 +1309,19 @@ theorem integral_jamesSteinGrandMean_risk_lt {N : ℕ} (hN : 4 ≤ N) {σ2 : NNR
       ((measurable_jamesSteinGrandMean _ i).sub measurable_const).pow_const 2
   have hsc : Measurable fun (x : Fin N → ℝ) (j : Fin N) => c * x j :=
     Measurable.of_eval fun j => by fun_prop
-  rw [← hmap, integral_map hsc.aemeasurable hF.aestronglyMeasurable]
   have hpt : ∀ x : Fin N → ℝ, ∑ i, (jamesSteinGrandMean σ2 (fun j => c * x j) i - θ i) ^ 2 =
       σ2 * ∑ i, (jamesSteinGrandMean 1 x i - θ i / c) ^ 2 := fun x => by
     rw [Finset.mul_sum]
     refine Finset.sum_congr rfl fun i _ => ?_
     rw [← hc2, jamesSteinGrandMean_smul hc.ne']
     field_simp
+  rw [← hmap]
+  refine ⟨?_, ?_⟩
+  · refine (integrable_map_measure hF.aestronglyMeasurable hsc.aemeasurable).mpr ?_
+    refine (((integral_jamesSteinGrandMean_one_risk hN fun j => θ j / c).1).const_mul
+      (σ2 : ℝ)).congr (Filter.Eventually.of_forall fun x => ?_)
+    simp only [Function.comp_apply, hpt x]
+  rw [integral_map hsc.aemeasurable hF.aestronglyMeasurable]
   simp_rw [hpt]
   rw [integral_const_mul]
   calc (σ2 : ℝ) * ∫ x, ∑ i, (jamesSteinGrandMean 1 x i - θ i / c) ^ 2

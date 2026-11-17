@@ -4,7 +4,7 @@ For every prior $g$ on the Poisson rate and every count $x \in \mathbb N$,
 $$\mathbb E[\theta \mid x] = \frac{(x + 1)\, f(x + 1)}{f(x)},$$
 where the left side is the Bayes [posterior mean](poisson-posterior-mean.md) and $f$ is the [marginal probability](poisson-mixture-mass.md). This is Efron (2021), equation (1.7), Robbins' (1956) derivation. Replacing $f(x)$ and $f(x + 1)$ by the observed proportions $y_x/N$ and $y_{x+1}/N$ of counts equal to $x$ and $x + 1$ gives Robbins' empirical Bayes estimate $(x + 1) y_{x+1}/y_x$ (Efron 2021, equation (1.3)), which needs no knowledge of the prior. The estimation step is not formalized.
 
-The identity holds for any measure $g$, with no moment assumption, because $\theta\, e^{-\theta}\theta^x/x! = (x + 1)\, e^{-\theta}\theta^{x+1}/(x + 1)!$ pointwise.
+The identity holds for any measure $g$, with no moment assumption, because $\theta\, e^{-\theta}\theta^x/x! = (x + 1)\, e^{-\theta}\theta^{x+1}/(x + 1)!$ pointwise. It reads as a statement about $\mathbb E[\theta \mid x]$ when $g$ is a probability measure: then both integrals are finite, since $\theta\, e^{-\theta}\theta^x/x! \le x + 1$, and $f(x) > 0$ for every $x$ as soon as $g$ is not the point mass at $0$. For a measure with infinite mass both integrals may fail to converge, in which case Lean's integral convention makes the two sides equal to $0$ and the formula says nothing about a posterior mean.
 
 ## Background
 
