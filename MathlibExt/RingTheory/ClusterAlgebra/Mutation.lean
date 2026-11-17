@@ -14,6 +14,8 @@ public import Mathlib.LinearAlgebra.Matrix.Defs
 public import Mathlib.Algebra.Field.Basic
 public import Mathlib.Data.Set.Defs
 import Mathlib.Tactic.Ring
+import Mathlib.Tactic.LinearCombination
+import Mathlib.Tactic.Linarith
 
 /-!
 # Matrix mutation and seed mutation
@@ -72,6 +74,39 @@ theorem matrixMutation_matrixMutation (k : n) (B : Matrix n n ℤ) :
   set b := B k j
   rcases lt_trichotomy a 0 with ha | ha | ha <;> rcases lt_trichotomy b 0 with hb | hb | hb <;>
     simp [ha, hb, ha.le, hb.le, not_lt.mpr, mul_comm]
+
+/-- **Matrix mutation preserves skew-symmetrizability.** If positive integers `dᵢ` satisfy
+`dᵢ bᵢⱼ = -dⱼ bⱼᵢ`, then they also skew-symmetrize `μₖ B` (Fomin, Williams and Zelevinsky,
+*Introduction to cluster algebras, Chapters 1–3*, arXiv:1608.05735v5, Exercise 2.7.7(1), square
+case). -/
+theorem IsSkewSymmetrizable.matrixMutation {B : Matrix n n ℤ} (hB : IsSkewSymmetrizable B)
+    (k : n) : IsSkewSymmetrizable (matrixMutation k B) := by
+  obtain ⟨d, hd, hdB⟩ := hB
+  refine ⟨d, hd, fun i j => ?_⟩
+  have hij := hdB i j
+  have hik := hdB i k
+  have hkj := hdB k j
+  have hdi := hd i
+  have hdj := hd j
+  have hdk := hd k
+  by_cases hi : i = k
+  · subst hi; simp [ClusterAlgebra.matrixMutation, hij]
+  by_cases hj : j = k
+  · subst hj; simp [ClusterAlgebra.matrixMutation, hij]
+  have hkey : d i * (B i k * B k j) = d j * (B j k * B k i) := by
+    refine mul_left_cancel₀ hdk.ne' ?_
+    linear_combination (d k * B k j) * hik - (d k * B k i) * hkj
+  have s1 : 0 < B i k ↔ B k i < 0 := by constructor <;> intro h <;> nlinarith
+  have s2 : B i k < 0 ↔ 0 < B k i := by constructor <;> intro h <;> nlinarith
+  have s3 : 0 < B k j ↔ B j k < 0 := by constructor <;> intro h <;> nlinarith
+  have s4 : B k j < 0 ↔ 0 < B j k := by constructor <;> intro h <;> nlinarith
+  simp only [ClusterAlgebra.matrixMutation, Matrix.of_apply, hi, hj, or_self, ite_false]
+  split_ifs <;>
+    first
+    | linear_combination hij + hkey
+    | linear_combination hij - hkey
+    | linear_combination hij
+    | (exfalso; simp only [s1, s2, s3, s4] at *; omega)
 
 /-- **Seed mutation without frozen variables.** For a cluster `x : n → K` in a field `K` and an
 exchange matrix `B`, the mutation in direction `k` replaces `xₖ` by

@@ -12,6 +12,9 @@ public import Mathlib.Algebra.Order.Field.Basic
 public import Mathlib.Tactic.FieldSimp
 public import Mathlib.Tactic.Ring
 public import Mathlib.Tactic.Positivity
+public import MathlibExt.RingTheory.ClusterAlgebra.Mutation
+public import Mathlib.LinearAlgebra.Matrix.Notation
+import Mathlib.Algebra.BigOperators.Fin
 
 /-!
 # Cluster algebras of rank two
@@ -263,5 +266,93 @@ theorem rankTwoSeq_one_three_periodic {x y : K} (hz : ∀ k, rankTwoSeq 1 3 x y 
     field_simp
   refine rankTwoSeq_periodic_of_base 8 (fun j => ?_) e8 e9 k
   simp [Nat.add_mod]
+
+/-- **Exchange matrix of `A(b, c)`.** The matrix `[[0, b], [-c, 0]]`, whose mutations alternate
+between it and its negative (Fomin, Williams and Zelevinsky, *Introduction to cluster algebras,
+Chapters 1–3*, arXiv:1608.05735v5, Section 3.2, the seed pattern displayed before
+equation (3.2.2)). -/
+def rankTwoMatrix (b c : ℕ) : Matrix (Fin 2) (Fin 2) ℤ := !![0, (b : ℤ); -(c : ℤ), 0]
+
+/-- **The exchange matrix of `A(b, c)` is skew-symmetrizable.** For positive `b, c` the
+integers `d = (c, b)` satisfy `dᵢ bᵢⱼ = -dⱼ bⱼᵢ` for `[[0, b], [-c, 0]]` (Fomin, Williams and
+Zelevinsky, *Introduction to cluster algebras, Chapters 1–3*, arXiv:1608.05735v5, Section 3.2,
+where `b` and `c` are both positive or both zero, and Definition 2.7.4). -/
+theorem isSkewSymmetrizable_rankTwoMatrix {b c : ℕ} (hb : 0 < b) (hc : 0 < c) :
+    IsSkewSymmetrizable (rankTwoMatrix b c) := by
+  refine ⟨![(c : ℤ), (b : ℤ)], fun i => ?_, fun i j => ?_⟩
+  · fin_cases i <;> simp [hb, hc]
+  · fin_cases i <;> fin_cases j <;> simp [rankTwoMatrix] <;> ring
+
+private lemma matrixMutation_zero_rankTwoMatrix (b c : ℕ) :
+    matrixMutation 0 (rankTwoMatrix b c) = -rankTwoMatrix b c := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [matrixMutation, rankTwoMatrix, (Int.natCast_nonneg c).not_gt,
+      (Int.natCast_nonneg b).not_gt]
+
+private lemma matrixMutation_one_neg_rankTwoMatrix (b c : ℕ) :
+    matrixMutation 1 (-rankTwoMatrix b c) = rankTwoMatrix b c := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [matrixMutation, rankTwoMatrix, (Int.natCast_nonneg c).not_gt,
+      (Int.natCast_nonneg b).not_gt]
+
+private lemma rankTwo_exchange (c : ℕ) (u : K) :
+    (if (0 : ℤ) < -(c : ℤ) then u ^ (-(c : ℤ)).toNat else 1) +
+      (if -(c : ℤ) < 0 then u ^ (-(-(c : ℤ))).toNat else 1) = u ^ c + 1 := by
+  rcases Nat.eq_zero_or_pos c with rfl | hc
+  · norm_num
+  · have h1 : ¬ ((0 : ℤ) < -(c : ℤ)) := by omega
+    have h2 : -(c : ℤ) < 0 := by omega
+    simp only [h1, h2, ite_false, ite_true, neg_neg, Int.toNat_natCast]
+    ring
+
+private lemma seedMutation_zero_rankTwo (b c : ℕ) (u v : K) :
+    seedMutation 0 (![u, v], rankTwoMatrix b c) =
+      (![(v ^ c + 1) / u, v], -rankTwoMatrix b c) := by
+  have h := rankTwo_exchange c v
+  simp only [seedMutation, matrixMutation_zero_rankTwoMatrix, Fin.prod_univ_two]
+  refine Prod.ext ?_ rfl
+  ext i
+  fin_cases i
+  · simp [rankTwoMatrix, ← h]
+  · simp [rankTwoMatrix]
+
+private lemma seedMutation_one_rankTwo (b c : ℕ) (u v : K) :
+    seedMutation 1 (![u, v], -rankTwoMatrix b c) =
+      (![u, (u ^ b + 1) / v], rankTwoMatrix b c) := by
+  have h := rankTwo_exchange b u
+  simp only [seedMutation, matrixMutation_one_neg_rankTwoMatrix, Fin.prod_univ_two]
+  refine Prod.ext ?_ rfl
+  ext i
+  fin_cases i
+  · simp [rankTwoMatrix]
+  · simp [rankTwoMatrix, ← h]
+
+private lemma mutateSeq_append (w₁ w₂ : List (Fin 2)) (s : (Fin 2 → K) × Matrix (Fin 2) (Fin 2) ℤ) :
+    mutateSeq (w₁ ++ w₂) s = mutateSeq w₂ (mutateSeq w₁ s) := by
+  simp [mutateSeq, List.foldl_append]
+
+/-- **Bridge: seed mutation in rank two is the rank-two recurrence.** Starting from the seed
+`((x, y), [[0, b], [-c, 0]])` and mutating alternately in directions `0` and `1`, `m` times
+each, gives the seed whose cluster is `(z (2m), z (2m + 1))` for `z = rankTwoSeq b c x y`, with
+the same exchange matrix (Fomin, Williams and Zelevinsky, *Introduction to cluster algebras,
+Chapters 1–3*, arXiv:1608.05735v5, Section 3.2: the seed pattern of `A(b, c)` and its exchange
+relations (3.2.2)). So `rankTwoSeq` lists the cluster variables of `A(b, c)` produced by
+`seedMutation`. -/
+theorem mutateSeq_rankTwoMatrix (b c : ℕ) (x y : K) (m : ℕ) :
+    mutateSeq ((List.replicate m [(0 : Fin 2), 1]).flatten) (![x, y], rankTwoMatrix b c) =
+      (![rankTwoSeq b c x y (2 * m), rankTwoSeq b c x y (2 * m + 1)], rankTwoMatrix b c) := by
+  induction m with
+  | zero => simp [mutateSeq]
+  | succ m ih =>
+    rw [List.replicate_succ', List.flatten_append, mutateSeq_append, ih]
+    simp only [List.flatten_cons, List.flatten_nil, List.append_nil, mutateSeq, List.foldl_cons,
+      List.foldl_nil]
+    rw [seedMutation_zero_rankTwo, seedMutation_one_rankTwo]
+    have e1 : 2 * (m + 1) = 2 * m + 2 := by ring
+    have e2 : 2 * m + 2 + 1 = (2 * m + 1) + 2 := by ring
+    rw [e1, e2, rankTwoSeq_add_two_of_odd (k := 2 * m + 1) (by omega),
+      rankTwoSeq_add_two_of_even (k := 2 * m) (by omega)]
 
 end MathlibExt.RingTheory.ClusterAlgebra

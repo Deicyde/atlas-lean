@@ -49,4 +49,17 @@ example : rankTwoSeq 1 4 (1 : ℚ) 1 2 = 2 ∧ rankTwoSeq 1 4 (1 : ℚ) 1 3 = 3 
     rankTwoSeq 1 4 (1 : ℚ) 1 4 = 41 ∧ rankTwoSeq 1 4 (1 : ℚ) 1 5 = 14 := by
   refine ⟨?_, ?_, ?_, ?_⟩ <;> norm_num [rankTwoSeq]
 
+/-- Two rounds of alternating seed mutations of `A(1, 1)` from `(1, 1)` give the cluster
+`(z 4, z 5) = (2, 1)`. -/
+example : (mutateSeq ((List.replicate 2 [(0 : Fin 2), 1]).flatten)
+    (![(1 : ℚ), 1], rankTwoMatrix 1 1)).1 0 = 2 := by
+  rw [mutateSeq_rankTwoMatrix]
+  norm_num [rankTwoSeq]
+
+example : IsSkewSymmetrizable (rankTwoMatrix 1 4) :=
+  isSkewSymmetrizable_rankTwoMatrix one_pos (by norm_num)
+
+example : IsSkewSymmetrizable (matrixMutation 0 (rankTwoMatrix 2 3)) :=
+  (isSkewSymmetrizable_rankTwoMatrix (by norm_num) (by norm_num)).matrixMutation 0
+
 end MathlibExtTest.RingTheory.ClusterAlgebra.RankTwo
