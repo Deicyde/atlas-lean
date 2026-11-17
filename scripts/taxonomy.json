@@ -1311,6 +1311,7 @@
   "CSLibExt/Crypto/Identification/GraphIsomorphism": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},
   "CSLibExt/Crypto/Identification/Schnorr": {"to": "ComputerScience/cryptography", "title": "Schnorr identification scheme"},
   "CSLibExt/Crypto/Identification/SequentialRepetition": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},
+  "CSLibExt/Crypto/Identification/Sigma": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},
   "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad": {"to": "ComputerScience/cryptography", "title": "One-time pad over a finite group"},
   "CSLibExt/Crypto/PublicKey/DiffieHellman": {"to": "ComputerScience/cryptography", "title": "Diffie–Hellman key exchange"},
   "CSLibExt/Crypto/PublicKey/ElGamal": {"to": "ComputerScience/cryptography", "title": "ElGamal encryption"},

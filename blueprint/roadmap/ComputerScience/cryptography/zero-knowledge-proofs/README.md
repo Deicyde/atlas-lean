@@ -9,12 +9,32 @@ knows only that the statement is true.
 The archetype is the protocol of Goldreich, Micali and Wigderson for graph isomorphism: the prover
 sends a random relabelling $H$ of $G_1$, the verifier asks for an isomorphism from $G_0$ or from $G_1$
 to $H$, and the prover answers. Here one round is formalized as a Sigma protocol (a three-move
-public-coin protocol with a uniform challenge), with completeness, special soundness, soundness error
+public-coin protocol with a uniform challenge; the framework below was already in the library), with completeness, special soundness, soundness error
 $\tfrac12$ per round and $2^{-m}$ over $m$ sequential rounds against adaptive cheating provers, and
 perfect honest-verifier zero knowledge. Zero knowledge against arbitrary (cheating) verifiers, which
 needs a rewinding simulator and a model of interactive machines, is not formalized; neither are the
 general definitions of interactive proofs and zero knowledge as classes of languages (the
 interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below).
+
+## Sigma protocols
+
+- [A Sigma protocol](sigma-protocol.md)
+- [Completeness of a Sigma protocol](complete.md)
+- [Special soundness of a Sigma protocol](special-sound.md)
+- [A witness from two accepting transcripts](exists-witness-of-verify-of-verify.md)
+- [The honest transcript](honest-transcript.md)
+- [The distribution of honest transcripts](transcript.md)
+- [Honest transcripts are accepted](verify-of-mem-support-transcript.md)
+- [Perfect honest-verifier zero knowledge](hvzk.md)
+- [Statistical honest-verifier zero knowledge](stat-hvzk.md)
+- [Perfect HVZK is statistical HVZK with error `0`](stat-hvzk-zero.md)
+- [The honest transcript for a fixed challenge](challenge-transcript.md)
+- [Perfect special honest-verifier zero knowledge](special-hvzk.md)
+- [The uniform-challenge simulator](uniform-challenge-sim.md)
+- [Special HVZK implies HVZK](hvzk-2.md)
+- [Simulated transcripts are accepted](verify-of-mem-support-sim.md)
+- [The experiment of a cheating prover](cheat-game.md)
+- [Soundness error for false statements](win-prob-cheat-game-le.md)
 
 ## Sequential repetition of Sigma protocols
 
@@ -40,6 +60,18 @@ interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below
 - [The per-challenge simulator](sim-at.md)
 - [Perfect special honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-special-hvzk.md)
 - [Perfect honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-hvzk.md)
+
+## Schnorr identification as a Sigma protocol
+
+- [The Schnorr identification protocol as a Sigma protocol](sigma-2.md)
+- [The Schnorr Sigma-protocol verifier](sigma-verify-eq-true-iff.md)
+- [Completeness of Schnorr as a Sigma protocol](sigma-complete-2.md)
+- [The Schnorr extractor](sigma-extract.md)
+- [Special soundness of Schnorr as a Sigma protocol](sigma-special-sound-2.md)
+- [Honest Schnorr transcripts](sigma-transcript.md)
+- [Perfect honest-verifier zero knowledge of Schnorr as a Sigma protocol](sigma-hvzk-2.md)
+- [The per-challenge Schnorr simulator](sigma-sim-at.md)
+- [Perfect special honest-verifier zero knowledge of Schnorr as a Sigma protocol](sigma-special-hvzk-2.md)
 
 ## Related topics
 
