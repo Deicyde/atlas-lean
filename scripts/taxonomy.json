@@ -7009,6 +7009,8 @@
   "WantedExt/Probability/UniformLawsWanted": {"to": "Probability/high-dimensional-probability", "title": "Uniform laws and Rademacher complexity"},
   "WantedExt/Probability/WignerMatrixMomentsWanted": {"to": "Probability/high-dimensional-probability", "title": "Wigner's semicircle law"},
   "WantedExt/QuantumInformation/CSSCodeWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "CSS codes"},
+  "WantedExt/QuantumInformation/QuantumSingletonWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "Distance of a quantum code"},
+  "WantedExt/QuantumInformation/StabilizerCodeWanted": {"to": "QuantumInformation/quantum-error-correction", "title": "Stabilizer codes"},
   "WantedExt/RingTheory/ClusterAlgebra/FiniteTypeWanted": {"to": "RingTheory/cluster-algebras", "title": "Finite type classification of cluster algebras"},
   "WantedExt/RingTheory/ClusterAlgebra/LaurentPhenomenonWanted": {"to": "RingTheory/cluster-algebras", "title": "Seed mutation and the Laurent phenomenon"},
   "WantedExt/SetTheory/Determinacy/BorelDeterminacyWanted": {"to": "SetTheory/determinacy", "title": "Borel and analytic determinacy"},
