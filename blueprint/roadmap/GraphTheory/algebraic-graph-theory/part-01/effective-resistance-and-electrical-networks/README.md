@@ -11,6 +11,7 @@ In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees a
 - [Effective conductance is nonnegative](effective-conductance-nonneg.md)
 - [Every admissible potential bounds the effective conductance](effective-conductance-le-energy.md)
 - [Effective resistance is a potential difference](effective-resistance-eq-sub-of-laplacian.md)
+- [Range of the weighted Laplacian](range-of-the-weighted-laplacian.md)
 - [Rayleigh's monotonicity law](effective-conductance-mono.md)
 - [Rayleigh's monotonicity law for effective resistance](effective-resistance-anti.md)
 
@@ -36,7 +37,10 @@ In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees a
 - [The Laplacian of a multigraph applied to a potential](laplacian-mul-vec-apply.md)
 - [Neighbour sum of the network walk](neighbour-sum.md)
 - [First-step equations for hitting times](is-hitting-time-solution.md)
+- [Existence of hitting times](exists-is-hitting-time-solution.md)
+- [Uniqueness of hitting times](is-hitting-time-solution-unique.md)
 - [Sum of the weighted degrees](sum-weighted-degree.md)
+- [Hitting-time identity](hitting-time-identity.md)
 - [Commute-time identity](commute-time-identity.md)
 - [Commute-time identity for unit conductances](commute-time-identity-one.md)
 

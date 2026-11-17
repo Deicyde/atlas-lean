@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import MathlibExt.Combinatorics.EndpointMapMultigraph.EffectiveResistance
+public import MathlibExt.Combinatorics.EndpointMapMultigraph.ThomsonPrinciple
 public import MathlibExt.Combinatorics.EndpointMapMultigraph.Conductance
 
 import Mathlib.Tactic.Linarith
@@ -29,16 +29,22 @@ The commute-time identity of Chandra, Raghavan, Ruzzo, Smolensky and Tiwari says
 (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016,
 corrected online version of 19 August 2026, Corollary 2.21; for unit conductances `γ = 2|E|`).
 
-Here the identity is proved for any two functions solving the first-step equations
-(`commute_time_identity`). That the expected hitting times of the walk solve them is first-step
-analysis and is not formalised here; this is therefore a statement about the linear system that
-characterises hitting times, not about a stochastic process.
+Here the identity is proved for the solutions of the first-step equations
+(`commute_time_identity`), which exist and are unique on a connected loopless multigraph
+(`exists_isHittingTimeSolution`, `isHittingTimeSolution_unique`). That the expected hitting times
+of the walk solve them is first-step analysis and is not formalised here; this is therefore a
+statement about the linear system that characterises hitting times, not about a stochastic
+process.
 
 The weighted degree is `EndpointMapMultigraph.weightedDegree` (from the conductance module), which
 counts a loop at both of its ends.
 
 * `laplacian_mulVec_apply`: `(L h)(x) = π(x) h(x) - ∑_{e ∋ x} w_e h(other end of e)`;
 * `sum_weightedDegree`: `∑_x π(x) = 2 ∑_e w_e`;
+* `exists_isHittingTimeSolution`, `isHittingTimeSolution_unique`: the first-step equations have
+  exactly one solution on a connected loopless multigraph;
+* `hitting_time_identity`: Tetali's formula `h_z(a) = ∑_x π(x) v(x)` for the potential `v` of a
+  unit current from `a` to `z` with `v(z) = 0`;
 * `commute_time_identity`: `h_z(a) + h_a(z) = 2 (∑_e w_e) R_eff(a, z)` (no looplessness needed,
   with loops counted at both ends; the source counts a loop once in `γ`);
 * `commute_time_identity_one`: for unit conductances, `h_z(a) + h_a(z) = 2 |E| R_eff(a, z)`.
@@ -156,6 +162,90 @@ private theorem laplacian_mulVec_of_isHittingTimeSolution {w : E → ℝ} (hw : 
     rw [← Finset.add_sum_erase _ _ (Finset.mem_univ x)]
     linarith
   · simp only [hoff x hx, hx, ↓reduceIte, sub_zero]
+
+/-- **Hitting-time identity.** In a finite connected multigraph with positive conductances, if `h`
+solves the first-step equations of the expected hitting times of `z` and `v` is the potential of a
+unit current from `a` to `z` that vanishes at `z` (`L v = δ_a - δ_z`, `v(z) = 0`), then
+`h(a) = ∑_x π(x) v(x)` (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge
+University Press 2016, corrected online version of 19 August 2026, Proposition 2.20, due to
+Tetali, with `Z = {z}`). -/
+theorem hitting_time_identity {w : E → ℝ} (hw : ∀ e, 0 < w e)
+    (hconn : (underlyingGraph end₁ end₂).Connected) {a z : V} {h v : V → ℝ}
+    (hh : IsHittingTimeSolution end₁ end₂ w z h)
+    (hv : laplacian end₁ end₂ w *ᵥ v = Pi.single a 1 - Pi.single z 1) (hvz : v z = 0) :
+    h a = ∑ x, weightedDegree end₁ end₂ w x * v x := by
+  classical
+  have hLh := laplacian_mulVec_of_isHittingTimeSolution end₁ end₂ hw hconn hh
+  have hsym : v ⬝ᵥ (laplacian end₁ end₂ w *ᵥ h) = h ⬝ᵥ (laplacian end₁ end₂ w *ᵥ v) := by
+    rw [Matrix.dotProduct_mulVec, ← Matrix.mulVec_transpose, laplacian_transpose,
+      dotProduct_comm]
+  rw [hv, hLh, dotProduct_sub, dotProduct_single, dotProduct_single, mul_one, mul_one,
+    hh.1, sub_zero] at hsym
+  rw [← hsym, dotProduct]
+  simp only [mul_sub, Finset.sum_sub_distrib, mul_ite, mul_zero, Finset.sum_ite_eq',
+    Finset.mem_univ, ↓reduceIte, hvz, zero_mul, sub_zero]
+  exact Finset.sum_congr rfl fun x _ => mul_comm _ _
+
+omit [DecidableEq E] [Fintype V] in
+/-- **Existence of hitting times.** On a finite connected loopless multigraph with positive
+conductances, the first-step equations of the expected hitting times of any vertex `z` have a
+solution. In R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press
+2016, corrected online version of 19 August 2026, the solution is the vector of expected hitting
+times, finite by the hitting-time identity (Proposition 2.20); here existence is proved by linear
+algebra, solving `L h = π - γ δ_z`. -/
+theorem exists_isHittingTimeSolution [Finite V] {w : E → ℝ} (hw : ∀ e, 0 < w e)
+    (hloop : ∀ e, end₁ e ≠ end₂ e) (hconn : (underlyingGraph end₁ end₂).Connected) (z : V) :
+    ∃ h, IsHittingTimeSolution end₁ end₂ w z h := by
+  have := Fintype.ofFinite V
+  classical
+  set G := underlyingGraph end₁ end₂
+  set γ := ∑ y, weightedDegree end₁ end₂ w y
+  set b : V → ℝ := fun x => weightedDegree end₁ end₂ w x - if x = z then γ else 0 with hb
+  have hmem : b ∈ LinearMap.range (orientedIncidence end₁ end₂).mulVecLin := by
+    rw [mem_range_orientedIncidence_iff end₁ end₂ hloop]
+    intro c
+    have hall : ∀ x : V, G.connectedComponentMk x = c := fun x => by
+      have := hconn.preconnected.subsingleton_connectedComponent
+      exact Subsingleton.elim _ _
+    have hfilter : (Finset.univ.filter fun x => G.connectedComponentMk x = c) = Finset.univ :=
+      Finset.filter_true_of_mem fun x _ => hall x
+    change ∑ x ∈ Finset.univ.filter (fun x => G.connectedComponentMk x = c), b x = 0
+    rw [hfilter, hb]
+    simp only [Finset.sum_sub_distrib, Finset.sum_ite_eq', Finset.mem_univ, ↓reduceIte, γ,
+      sub_self]
+  rw [← range_laplacian_eq_range_orientedIncidence end₁ end₂ hw hloop] at hmem
+  obtain ⟨g, hg⟩ := hmem
+  change laplacian end₁ end₂ w *ᵥ g = b at hg
+  refine ⟨g - g z • 1, by simp, fun x hx => ?_⟩
+  have hπ := (weightedDegree_pos end₁ end₂ hw hconn hx).ne'
+  have hLx : (laplacian end₁ end₂ w *ᵥ (g - g z • 1)) x = weightedDegree end₁ end₂ w x := by
+    rw [Matrix.mulVec_sub, Matrix.mulVec_smul, laplacian_mulVec_one, smul_zero, sub_zero, hg,
+      hb]
+    simp [hx]
+  rw [laplacian_mulVec_apply] at hLx
+  field_simp
+  linarith
+
+omit [DecidableEq E] [Fintype V] in
+/-- **Uniqueness of hitting times.** On a finite connected loopless multigraph with positive
+conductances, the first-step equations of the expected hitting times of `z` have at most one
+solution (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University Press
+2016, corrected online version of 19 August 2026, Section 2.1, Uniqueness Principle, applied to
+the difference of two solutions, which is harmonic off `z` and vanishes at `z`). -/
+theorem isHittingTimeSolution_unique [Finite V] {w : E → ℝ} (hw : ∀ e, 0 < w e)
+    (hloop : ∀ e, end₁ e ≠ end₂ e) (hconn : (underlyingGraph end₁ end₂).Connected) {z : V}
+    {h h' : V → ℝ} (hh : IsHittingTimeSolution end₁ end₂ w z h)
+    (hh' : IsHittingTimeSolution end₁ end₂ w z h') : h = h' := by
+  have := Fintype.ofFinite V
+  classical
+  have hL : laplacian end₁ end₂ w *ᵥ (h - h') = 0 := by
+    rw [Matrix.mulVec_sub, laplacian_mulVec_of_isHittingTimeSolution end₁ end₂ hw hconn hh,
+      laplacian_mulVec_of_isHittingTimeSolution end₁ end₂ hw hconn hh', sub_self]
+  have hconst := (laplacian_mulVec_eq_zero_iff end₁ end₂ hw hloop _).1 hL
+  funext x
+  have := hconst x z (hconn.preconnected x z)
+  simp only [Pi.sub_apply, hh.1, hh'.1, sub_zero] at this
+  linarith
 
 /-- **Commute-time identity.** In a finite connected multigraph with positive conductances `w`,
 if `h_z` and `h_a` solve the first-step equations of the expected hitting times of `z` and of `a`,

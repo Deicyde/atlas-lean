@@ -1,0 +1,10 @@
+# Hitting-time identity
+
+In a finite connected multigraph with positive conductances, if `h`
+solves the first-step equations of the expected hitting times of `z` and `v` is the potential of a
+unit current from `a` to `z` that vanishes at `z` (`L v = δ_a - δ_z`, `v(z) = 0`), then
+`h(a) = ∑_x π(x) v(x)` (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge
+University Press 2016, corrected online version of 19 August 2026, Proposition 2.20, due to
+Tetali, with `Z = {z}`).
+
+The source states the identity for a vertex set `Z` and the expected hitting time of the walk; this page covers a single vertex `z` and the solution of the [first-step equations](is-hitting-time-solution.md) (see the scope note of the [commute-time identity](commute-time-identity.md)). On the path `0 - 1 - 2` with unit conductances, `E_0[τ_2] = 4 = 1 · 2 + 2 · 1 + 1 · 0` (see the test module).

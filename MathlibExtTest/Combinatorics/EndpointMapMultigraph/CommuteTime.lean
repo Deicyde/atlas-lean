@@ -61,4 +61,25 @@ example : (laplacian e₁ e₂ (fun _ => 1) *ᵥ ![4, 3, 0]) 1 = 2 := by
 example : ∑ x, weightedDegree e₁ e₂ (fun _ => (1 : ℝ)) x = 4 := by
   rw [sum_weightedDegree]; simp; norm_num
 
+/-- The potential `(2, 1, 0)` of a unit current from `0` to `2`. -/
+theorem laplacian_mulVec_210 :
+    laplacian e₁ e₂ (fun _ => 1) *ᵥ ![2, 1, 0] = Pi.single 0 1 - Pi.single 2 1 := by
+  funext x
+  fin_cases x <;>
+    simp [laplacian, Matrix.mulVec, dotProduct, Matrix.mul_apply, orientedIncidence_apply,
+      Fin.sum_univ_two, Fin.sum_univ_three] <;> norm_num
+
+/-- Tetali's hitting-time identity on the path: `E_0[τ_2] = 4 = 1 · 2 + 2 · 1 + 1 · 0`. -/
+example : (![4, 3, 0] : Fin 3 → ℝ) 0 =
+    ∑ x, weightedDegree e₁ e₂ (fun _ => 1) x * (![2, 1, 0] : Fin 3 → ℝ) x :=
+  hitting_time_identity e₁ e₂ (fun _ => one_pos) connected hit2 laplacian_mulVec_210 rfl
+
+/-- The first-step equations have a solution, and it is the one computed above. -/
+example : ∃ h, IsHittingTimeSolution e₁ e₂ (fun _ => (1 : ℝ)) 2 h ∧ h 0 = 4 := by
+  obtain ⟨h, hh⟩ := exists_isHittingTimeSolution e₁ e₂ (w := fun _ => (1 : ℝ))
+    (fun _ => one_pos) (by decide) connected 2
+  refine ⟨h, hh, ?_⟩
+  rw [isHittingTimeSolution_unique e₁ e₂ (fun _ => one_pos) (by decide) connected hh hit2]
+  rfl
+
 end EndpointMapMultigraphCommuteTimeTest

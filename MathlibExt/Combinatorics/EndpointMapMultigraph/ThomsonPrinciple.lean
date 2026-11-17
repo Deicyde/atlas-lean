@@ -34,6 +34,8 @@ Dirichlet's principles (Lyons and Peres, Exercise 2.13).
   `E(θ) = R_eff(s, t) + E(θ - i)` with `i` the unit current;
 * `effectiveResistance_le_flowEnergy`: every unit flow has energy at least `R_eff(s, t)`;
 * `flowEnergy_eq_effectiveResistance_iff`: equality holds only for the unit current;
+* `range_laplacian_eq_range_orientedIncidence`: with positive weights and no loops, `L` and `B`
+  have the same range;
 * `isLeast_flowEnergy`: when `s` and `t` are connected, `R_eff(s, t)` is the minimum energy of a
   unit flow.
 -/
@@ -130,11 +132,19 @@ Press 2016, corrected online version of 19 August 2026, Section 2.4, `E(θ) = �
 theorem flowEnergy_nonneg {w : E → ℝ} (hw : ∀ e, 0 < w e) (θ : E → ℝ) : 0 ≤ flowEnergy w θ :=
   Finset.sum_nonneg fun e _ => div_nonneg (sq_nonneg _) (hw e).le
 
-/-- With positive weights, the Laplacian and the oriented incidence matrix have the same range. -/
-private theorem range_laplacian_eq_range_orientedIncidence {w : E → ℝ} (hw : ∀ e, 0 < w e)
+/-- **Range of the weighted Laplacian.** For a finite loopless multigraph with positive weights,
+the weighted Laplacian `L = B diag(w) Bᵀ` and the oriented incidence matrix `B` have the same range:
+every net outflow `B θ` of an edge function is the net outflow `L v = B (w · Bᵀ v)` of the current
+of some potential `v`. This is the existence part of R. Lyons and Y. Peres, *Probability on Trees
+and Networks*, Cambridge University Press 2016, corrected online version of 19 August 2026,
+Section 2.4, equation (2.9) and the note after Thomson's principle: for every flow `θ` the current
+`i = P_⋆ θ` satisfies `d* i = d* θ`. The proof here compares ranks instead
+(`rank L = rank B = |V| - #components`). -/
+theorem range_laplacian_eq_range_orientedIncidence {w : E → ℝ} (hw : ∀ e, 0 < w e)
     (hloop : ∀ e, end₁ e ≠ end₂ e) :
     LinearMap.range (laplacian end₁ end₂ w).mulVecLin =
       LinearMap.range (orientedIncidence end₁ end₂).mulVecLin := by
+  -- Same argument as the private `range_laplacian_eq` of `EffectiveResistance`, made public here.
   have hle : LinearMap.range (laplacian end₁ end₂ w).mulVecLin ≤
       LinearMap.range (orientedIncidence end₁ end₂).mulVecLin := by
     rw [laplacian, Matrix.mul_assoc, Matrix.mulVecLin_mul]
