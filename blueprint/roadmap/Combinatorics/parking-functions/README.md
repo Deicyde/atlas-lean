@@ -11,3 +11,7 @@ Parking functions and their variants (partial, weakly increasing, k-Naples, mete
 - [Lucky and displacement statistics of Stirling permutations](lucky-and-displacement-statistics-of-stirling-pe/README.md)
 - [Metered parking functions](metered-parking-functions/README.md)
 - [Number of partial parking functions](pollak-partial-parking-functions-card.md)
+- [Linear probing without overflow](lin-success.md)
+- [First free cell at or after a hash address](lin-first-free.md)
+- [Occupied cells after linear probing without wrap-around](lin-occ-aux.md)
+- [Linear probing succeeds exactly on partial parking functions](lin-success-iff-is-partial-parking-funct.md)
