@@ -6775,6 +6775,7 @@
   "WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted": {"to": "NumberTheory/digits-numeration/numeration-automatic", "title": "Zeckendorf sum of digits"},
   "WantedExt/NumberTheory/ZetaStrideSeriesWanted": {"to": "NumberTheory/zeta-l-functions/riemann-zeta", "title": "Stride series for zeta and eta values"},
   "WantedExt/NumberTheory/ZetaSubconvexityBoundsWanted": {"to": "NumberTheory/zeta-l-functions/riemann-zeta", "title": "Moments and subconvexity of the zeta function"},
+  "WantedExt/Order/InverseLimitDomainWanted": {"to": "Order/fixed-points-domain-theory", "title": "Recursive domain equations"},
   "WantedExt/Probability/AzumaInequalityWanted": {"to": "Probability/concentration-inequalities", "title": "Azuma's inequality"},
   "WantedExt/Probability/BeardwoodHaltonHammersleyConstantWanted": {"to": "Probability/high-dimensional-probability", "title": "Beardwood–Halton–Hammersley theorem"},
   "WantedExt/Probability/BenArousGuionnetWanted": {"to": "Probability/large-deviations", "title": "Ben Arous–Guionnet large deviations"},

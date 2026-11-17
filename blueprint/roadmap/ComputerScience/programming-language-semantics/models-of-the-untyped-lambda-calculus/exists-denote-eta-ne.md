@@ -5,3 +5,4 @@ For a free variable $x$, the η-redex $\lambda y.\, x\,y$ and $x$ have different
 ## Background
 
 - [The graph model is not extensional](../../../Order/fixed-points-domain-theory/scott-s-graph-model/exists-graph-app-ne.md): the set-level fact.
+- [Scott's inverse-limit theorem](../../../Order/fixed-points-domain-theory/scott-s-inverse-limit-theorem.md): a model in which η holds.

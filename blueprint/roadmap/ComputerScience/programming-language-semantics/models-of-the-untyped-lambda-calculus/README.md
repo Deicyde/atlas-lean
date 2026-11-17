@@ -33,6 +33,7 @@ This topic interprets CSLib's locally nameless untyped λ-terms in Scott's graph
 ## Related topics
 
 - [Scott's graph model](../../../Order/fixed-points-domain-theory/scott-s-graph-model/README.md): the domain $P(\omega)$, its application and graph operations, and the graph theorem.
+- [Scott's inverse-limit theorem](../../../Order/fixed-points-domain-theory/scott-s-inverse-limit-theorem.md): the extensional model $D_\infty$, recorded as wanted.
 - [PCF and computational adequacy](../pcf-and-computational-adequacy/README.md): Scott's domains for a typed language with recursion.
 - [The existing untyped beta-conversion term model](../../type-systems-and-lambda-calculi/system-f/the-existing-untyped-beta-conversion-term-model/README.md): the syntactic model of the untyped calculus, terms modulo β-conversion.
 
