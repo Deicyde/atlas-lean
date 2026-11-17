@@ -4,6 +4,6 @@ Let $V$ be an $n$-dimensional vector space over a field, $U$ a vector space, and
 
 This is Heymann's lemma (Heymann 1968), as stated in Coron, *Control and Nonlinearity* (AMS 2007), Lemma 10.3, whose proof follows Hautus. The proof formalized is Coron's: take $f$ with $Bf \ne 0$, build a longest linearly independent chain $x_1 = Bf, x_2, \dots, x_k$ with $x_{j+1} \in A x_j + B U$; maximality gives $A x_k + BU \subseteq E = \operatorname{Span}\{x_1, \dots, x_k\}$, hence $BU \subseteq E$ and $AE \subseteq E$, so $E$ contains the Kalman subspace and $k = n$; then $C x_j = u_j$, where $x_{j+1} = A x_j + B u_j$, gives $(A + BC)^{j} x_1 = x_{j+1}$.
 
-## Informally uses
+## Background
 
-- [Kalman rank condition](../controllability-of-linear-systems/is-controllable-on-iff-kalman.md): Coron uses it to conclude $E = \mathbb{R}^n$ from $BU \subseteq E$ and $AE \subseteq E$, and again to conclude that the single-input system is controllable.
+- [Kalman rank condition](../controllability-of-linear-systems/is-controllable-on-iff-kalman.md): the hypothesis and the conclusion are Kalman rank conditions, equivalent to controllability of $(A, B)$ and of $(A + BC, Bf)$; Coron states the lemma for controllable systems and passes through this equivalence, the statement formalized here does not need it.

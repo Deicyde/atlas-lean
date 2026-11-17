@@ -66,8 +66,8 @@ locally asymptotically stable for `ẋ = X(x)` if there is `δ > 0` such that fo
 there is `M > 0` with `‖x(t)‖ < ε` for every solution `x` with `‖x(0)‖ < δ` and every time
 `t > M` in its interval of definition (Coron, *Control and Nonlinearity*, Definition 10.6, at
 `x_e = 0`). Since `X` is only continuous, solutions need not be unique; the condition is imposed
-on every solution defined on an interval `[0, τ)`, which is equivalent to imposing it on every
-maximal solution as Coron does. -/
+on every solution defined on an interval `[0, τ)`; for finite-dimensional `E` this is equivalent to
+imposing it on every maximal solution as Coron does. -/
 def IsLocallyAsymptoticallyStable (X : E → E) : Prop :=
   ∃ δ > 0, ∀ ε > 0, ∃ M > 0, ∀ τ : ℝ, ∀ x : ℝ → E,
     (∀ t ∈ Ico 0 τ, HasDerivWithinAt x (X (x t)) (Ico 0 τ) t) → ‖x 0‖ < δ →

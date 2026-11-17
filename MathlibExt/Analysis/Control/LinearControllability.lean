@@ -33,9 +33,11 @@ classical criteria that Coron attributes to Kalman, Ho and Narendra (1963):
 * `isControllableOn_iff_kalman`: controllable on `[0, T]` iff the Kalman rank condition holds
   (Coron, Theorem 1.16; Sontag, *Mathematical Control Theory*, 2nd ed., Theorem 3).
 
-Controls are continuous functions of time. Coron's Definition 1.2 uses `L^∞` controls; his
-Remark 1.3 notes that the class of controls does not change the notion, and indeed the controls
-constructed here are continuous, while the obstruction proved here holds for continuous controls.
+Controls are continuous functions of time. Coron's Definition 1.2 uses `L^∞` controls. The two
+notions agree for these time-invariant systems: an `L^∞`-controllable system has an invertible
+Gramian by Coron's Theorem 1.11, and then the Gramian criterion proved here gives continuous
+controls; conversely continuous controls on `[0, T]` are `L^∞` (compare Coron's Remark 1.3, which
+treats `L²` and `L¹`).
 -/
 
 open MeasureTheory Set
@@ -53,7 +55,8 @@ local notation "⟪" x ", " y "⟫" => @inner ℝ _ _ x y
 controllable on `[0, T]` if every state `x₀` can be steered to every state `x₁`: there is a
 continuous control `u` and a solution `x` of `ẋ(t) = A x(t) + B u(t)` with `x 0 = x₀` and
 `x T = x₁` (Coron, *Control and Nonlinearity*, AMS 2007, Definition 1.2, with continuous instead
-of `L^∞` controls; by his Remark 1.3 and Theorem 1.11 the notion is the same). -/
+of `L^∞` controls; the notions agree by Coron's Theorem 1.11 together with the Gramian criterion
+`isControllableOn_iff_bijective_gramian`, compare his Remark 1.3). -/
 def IsControllableOn (A : E →L[ℝ] E) (B : U →L[ℝ] E) (T : ℝ) : Prop :=
   ∀ x₀ x₁ : E, ∃ u : ℝ → U, Continuous u ∧ ∃ x : ℝ → E, x 0 = x₀ ∧
     (∀ t, HasDerivAt x (A (x t) + B (u t)) t) ∧ x T = x₁
@@ -286,7 +289,6 @@ private theorem inner_exp_eq_zero_of_forall_pow {A : E →L[ℝ] E} {B : U →L[
   rw [smul_pow, smul_apply, smul_apply, inner_smul_right,
     inner_smul_right, h k v, mul_zero, mul_zero]
 
-omit [FiniteDimensional ℝ U] in
 omit [FiniteDimensional ℝ U] in
 /-- **Kalman rank condition, dual form.** `Span {A^i B u : u ∈ U, 0 ≤ i < dim E} = E` if and
 only if no nonzero vector is orthogonal to every `A^k B v`, `k ∈ ℕ`, `v ∈ U` (the powers `k ≥ dim E`
