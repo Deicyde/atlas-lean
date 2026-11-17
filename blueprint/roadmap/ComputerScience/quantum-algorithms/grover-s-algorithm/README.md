@@ -22,3 +22,7 @@
 - [Exact success probability of Grover search](marked-probability-grover-iterate-unifor.md)
 - [Standard Grover iteration count](floor-iterations.md)
 - [One Grover iteration suffices when a quarter is marked](one-step-success-of-four-mul-card-eq.md)
+
+## Related topics
+
+- [Lower bound for quantum search](../lower-bound-for-quantum-search/README.md): $\Omega(\sqrt N)$ queries are necessary, so Grover's algorithm is optimal up to a constant factor.

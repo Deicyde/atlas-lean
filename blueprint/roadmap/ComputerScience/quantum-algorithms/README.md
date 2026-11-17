@@ -11,3 +11,4 @@ Algorithms for quantum computers and their analysis: Fourier sampling with the D
 ## Related topics
 
 - [Quantum Information](../../QuantumInformation/README.md): states, channels, the quantum Fourier transform and error correction.
+- [Bounded-error quantum polynomial time (BQP)](../../TheoryOfComputation/randomized-and-quantum-complexity/bounded-error-quantum-polynomial-time-bqp/README.md): the complexity class of problems solved efficiently by quantum algorithms.
