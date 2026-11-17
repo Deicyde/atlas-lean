@@ -486,11 +486,11 @@ theorem exists_lower_bound_smooth_convex {k : ℕ} (hk : 1 ≤ k) (hkn : 2 * k +
     have h2 := h.comp x ((hasFDerivAt_id x).sub_const x₀)
     simp only [ContinuousLinearMap.comp_id] at h2
     exact (hasGradientAt_iff_hasFDerivAt.mpr h2).gradient
+  obtain ⟨hcd, hcv, hlip⟩ := worstFunction_mem_class (n := n) m hL.le
   refine ⟨f, ?_, ?_, ?_, x₀ + worstMinimizer n m, ?_, ?_⟩
-  · exact (contDiff_worstFunction m L).comp (contDiff_id.sub contDiff_const)
+  · exact hcd.comp (contDiff_id.sub contDiff_const)
   · refine ⟨convex_univ, fun x _ y _ a b ha hb hab => ?_⟩
-    have h := (convexOn_worstFunction (n := n) m hL.le).2 (Set.mem_univ (x - x₀))
-      (Set.mem_univ (y - x₀)) ha hb hab
+    have h := hcv.2 (Set.mem_univ (x - x₀)) (Set.mem_univ (y - x₀)) ha hb hab
     have e : a • (x - x₀) + b • (y - x₀) = a • x + b • y - x₀ := by
       rw [smul_sub, smul_sub, ← sub_eq_zero]
       have : x₀ = (a + b) • x₀ := by rw [hab, one_smul]
@@ -500,8 +500,8 @@ theorem exists_lower_bound_smooth_convex {k : ℕ} (hk : 1 ≤ k) (hkn : 2 * k +
     exact h
   · rw [show gradient f = fun x => worstGrad n m L (x - x₀) from funext hgradf]
     refine LipschitzWith.of_dist_le_mul fun x y => ?_
-    have := (lipschitzWith_worstGrad (n := n) m hL.le).dist_le_mul (x - x₀) (y - x₀)
-    rwa [dist_sub_right] at this
+    have := hlip.dist_le_mul (x - x₀) (y - x₀)
+    rwa [dist_sub_right, gradient_worstFunction] at this
   · intro z
     simp only [f, g, add_sub_cancel_left]
     rw [worstFunction_worstMinimizer (by omega) hkn]

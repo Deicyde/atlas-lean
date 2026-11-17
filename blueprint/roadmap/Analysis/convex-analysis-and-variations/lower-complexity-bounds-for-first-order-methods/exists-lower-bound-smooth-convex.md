@@ -29,7 +29,7 @@ The proof follows the source. Shifting by $x_0$ reduces to $x_0 = 0$. The Krylov
 ## Informally uses
 
 - [Nesterov's worst function in the world](worst-function.md): the witness $f = f_{2k+1}(\cdot - x_0)$.
-- [The worst function is smooth, convex and $L$-smooth](worst-function-mem-class.md): the class $F^{\infty,1}_L$, through the lemmas it collects.
+- [The worst function is smooth, convex and $L$-smooth](worst-function-mem-class.md): smoothness, convexity and the $L$-Lipschitz gradient of the witness, transported by the shift $x \mapsto x - x_0$.
 - [Minimum of the worst function on the first $k$ coordinates](worst-function-ge-of-support.md): with $k$ for the lower bound on $f(x_k)$ and with $2k + 1$ for the minimality of $x^*$.
 - [Minimum value of the worst function](worst-function-worst-minimizer.md): $f^* = f_{2k+1}(\bar x)$.
 - [Minimiser of the worst function](worst-minimizer.md): $x^* = x_0 + \bar x$.
