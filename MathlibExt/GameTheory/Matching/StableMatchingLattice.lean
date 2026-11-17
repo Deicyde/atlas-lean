@@ -10,6 +10,9 @@ module
 
 public import MathlibExt.Combinatorics.Matching.GaleShapley
 public import Mathlib.Data.Fintype.EquivFin
+public import Mathlib.Data.Fintype.Perm
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Data.Finset.Max
 
 /-! # The men's join of two stable matchings
 
@@ -205,5 +208,55 @@ theorem not_lt_menJoin_symm_right {μ ν : PerfectMatching M W} (hμ : IsStable 
   · have hne : μ m ≠ ν m := fun e => hνm (e ▸ hj)
     have : (mp m).lt (μ m) (ν m) := ((mp m).total hne).resolve_right hlt
     exact hν m w ⟨by rw [← hj]; exact this, h⟩
+
+omit [Fintype M] in
+/-- Number of women a man prefers to `w`, a potential that strictly drops when he trades up. -/
+private theorem card_better_lt {m : M} {a b : W} (h : (mp m).lt a b) :
+    (Finset.univ.filter fun x => (mp m).lt x a).card <
+      (Finset.univ.filter fun x => (mp m).lt x b).card := by
+  refine Finset.card_lt_card ⟨fun x hx => ?_, fun hsub => ?_⟩
+  · simp only [Finset.mem_filter, Finset.mem_univ, true_and] at hx ⊢
+    exact (mp m).trans hx h
+  · have := hsub (Finset.mem_filter.2 ⟨Finset.mem_univ a, h⟩)
+    exact (mp m).irrefl a (Finset.mem_filter.1 this).2
+
+omit [∀ m, DecidableRel (mp m).lt] in
+/-- **Existence of a man-optimal stable matching, through the men's join** (Gale and Shapley, *Amer.
+Math. Monthly* 69 (1962), Theorem 2; Roth, *Math. Oper. Res.* 7 (1982), Theorem 2). In a market with
+finite sides of equal size and strict preferences, some stable perfect matching is weakly preferred
+by every man to every stable perfect matching. The proof is not the sources' (which run deferred
+acceptance): a stable matching minimising the total number of women the men prefer to their partners
+is unchanged by the men's join with any stable matching, so it is man-optimal. -/
+theorem exists_stable_forall_not_lt (hCard : Fintype.card M = Fintype.card W) :
+    ∃ μ : PerfectMatching M W, IsStable mp wp μ ∧
+      ∀ ν, IsStable mp wp ν → ∀ m, ¬ (mp m).lt (ν m) (μ m) := by
+  classical
+  let pot : PerfectMatching M W → ℕ := fun μ =>
+    ∑ m, (Finset.univ.filter fun x => (mp m).lt x (μ m)).card
+  obtain ⟨μ₀, hμ₀⟩ := gale_shapley_exists_stable_matching_general hCard mp wp
+  obtain ⟨μ, hμS, hmin⟩ := (Finset.univ.filter (IsStable mp wp)).exists_min_image pot
+    ⟨μ₀, Finset.mem_filter.2 ⟨Finset.mem_univ _, hμ₀⟩⟩
+  have hμ : IsStable mp wp μ := (Finset.mem_filter.1 hμS).2
+  refine ⟨μ, hμ, fun ν hν m hlt => ?_⟩
+  set J := menJoin wp hμ hν
+  have hJ : IsStable mp wp J := isStable_menJoin wp hμ hν
+  have hle : ∀ m', (Finset.univ.filter fun x => (mp m').lt x (J m')).card ≤
+      (Finset.univ.filter fun x => (mp m').lt x (μ m')).card := by
+    intro m'
+    rcases eq_or_ne (J m') (μ m') with e | e
+    · rw [e]
+    · have : (mp m').lt (J m') (μ m') := by
+        rcases (mp m').total e with h | h
+        · exact h
+        · exact absurd h (not_lt_menJoinFun_left (mp := mp) μ ν m')
+      exact (card_better_lt this).le
+  have hJm : (mp m).lt (J m) (μ m) := by
+    rw [menJoin_apply]
+    unfold menJoinFun
+    simp only [hlt, ↓reduceIte]
+  have : pot J < pot μ :=
+    Finset.sum_lt_sum (fun m' _ => hle m') ⟨m, Finset.mem_univ _, card_better_lt hJm⟩
+  exact absurd (hmin J (Finset.mem_filter.2 ⟨Finset.mem_univ _, hJ⟩)) (not_le.2 this)
+
 
 end MathlibExt.GameTheory.Matching.StableMatchingLattice

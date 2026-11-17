@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Combinatorics.Matching.GaleShapley
+public import MathlibExt.GameTheory.Matching.StableMatchingLattice
 public import Mathlib.Data.Fintype.Pi
 public import Mathlib.Data.Fin.VecNotation
 import Mathlib.Tactic.FinCases
@@ -78,6 +79,26 @@ stable matching (Gale and Shapley, *Amer. Math. Monthly* 69 (1962), Theorem 2; R
 Res.* 7 (1982), Theorem 2). -/
 def IsManOptimalStable (mp : MPrefs M W) (wp : WPrefs M W) (μ : PerfectMatching M W) : Prop :=
   IsStable mp wp μ ∧ ∀ ν, IsStable mp wp ν → ∀ m, ¬ (mp m).lt (ν m) (μ m)
+
+/-- **Every market with sides of equal size has a man-optimal stable matching** (Gale and Shapley,
+*Amer. Math. Monthly* 69 (1962), Theorem 2; Roth, *Math. Oper. Res.* 7 (1982), Theorem 2), for
+finite sides of equal size; proved through the men's join of stable matchings
+(`StableMatchingLattice.exists_stable_forall_not_lt`). -/
+theorem exists_isManOptimalStable [Fintype M] [Fintype W]
+    (hCard : Fintype.card M = Fintype.card W) (mp : MPrefs M W) (wp : WPrefs M W) :
+    ∃ μ, IsManOptimalStable mp wp μ :=
+  StableMatchingLattice.exists_stable_forall_not_lt (mp := mp) wp hCard
+
+/-- **Uniqueness of the man-optimal stable matching.** Two man-optimal stable matchings of the
+same profile are equal, since preferences are strict (Roth, *Math. Oper. Res.* 7 (1982), §4:
+"a unique optimal stable outcome" for each side). -/
+theorem IsManOptimalStable.eq {mp : MPrefs M W} {wp : WPrefs M W} {μ ν : PerfectMatching M W}
+    (hμ : IsManOptimalStable mp wp μ) (hν : IsManOptimalStable mp wp ν) : μ = ν := by
+  ext m
+  by_contra h
+  rcases (mp m).total h with h' | h'
+  · exact hν.2 μ hμ.1 m h'
+  · exact hμ.2 ν hν.1 m h'
 
 /-- **Stability without the inverse matching.** A perfect matching is stable iff no man `m` and
 woman `w` are such that `m` prefers `w` to his partner and `w` prefers `m` to every man matched

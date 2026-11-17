@@ -42,7 +42,8 @@ Res.* 7 (1982), Theorem 5; Dubins and Freedman, *Amer. Math. Monthly* 88 (1981))
 `h` always returns the man-optimal stable matching of the stated profile, then truthful
 revelation is a dominant strategy for every man. Roth states it for either side; this is the
 men's side, the women's side being symmetric. Such mechanisms exist whenever the two sides have
-the same size (`Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching`). -/
+the same size (`exists_isManOptimalStable`, and deferred acceptance on `Fin n`,
+`Cslib.Algorithms.Lean.Matching.GaleShapley.exists_isManOptimalStable_mechanism`). -/
 theorem_wanted isTruthfulDominantForMan_of_isManOptimalStable {M W : Type*} [Fintype M]
     [Fintype W] [DecidableEq M] (h : MatchingMechanism M W)
     (hh : ∀ mp wp, IsManOptimalStable mp wp (h mp wp)) (m : M) :

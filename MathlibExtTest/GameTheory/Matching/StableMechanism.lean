@@ -46,6 +46,21 @@ example : IsStrategyProof (fun _ _ => Equiv.refl (Fin 3) : MatchingMechanism (Fi
 example (h : MatchingMechanism (Fin 3) (Fin 3)) (hh : IsStableMechanism h) :
     ¬ IsStrategyProof h := fun hsp => not_exists_stable_strategyProof ⟨h, hh, hsp⟩
 
+/-- The man-optimal stable matching of Roth's market is `x`. -/
+example : IsManOptimalStable rothMenPrefs rothWomenPrefs rothX := by
+  obtain ⟨μ, hμ⟩ := exists_isManOptimalStable rfl rothMenPrefs rothWomenPrefs
+  rcases (roth_isStable_iff μ).1 hμ.1 with rfl | rfl
+  · exact hμ
+  · exact absurd (hμ.2 rothX ((roth_isStable_iff _).2 (Or.inl rfl)) 0) (by decide)
+
+/-- A mechanism returning man-optimal stable matchings exists on every market with sides of
+equal size, so the wanted Theorem 5 has satisfiable hypotheses. -/
+example (n : ℕ) : ∃ h : MatchingMechanism (Fin n) (Fin n),
+    ∀ mp wp, IsManOptimalStable mp wp (h mp wp) :=
+  ⟨fun mp wp => (exists_isManOptimalStable rfl mp wp).choose,
+    fun mp wp => (exists_isManOptimalStable rfl mp wp).choose_spec⟩
+
+#print axioms exists_isManOptimalStable
 #print axioms not_exists_stable_strategyProof
 #print axioms roth_stable_mechanism_manipulable
 #print axioms roth_isStable_iff

@@ -10,6 +10,8 @@ A *matching mechanism* maps every stated preference profile of a marriage market
 - [Truthful revelation is dominant for a woman](is-truthful-dominant-for-woman.md)
 - [Strategy-proof matching mechanism](is-strategy-proof.md)
 - [Man-optimal stable matching](is-man-optimal-stable.md)
+- [Every market with sides of equal size has a man-optimal stable matching](exists-is-man-optimal-stable.md)
+- [Uniqueness of the man-optimal stable matching](man-optimal-stable-matching-unique.md)
 - [Stability without the inverse matching](is-stable-iff-forall-partner.md)
 
 ## Roth's impossibility theorem

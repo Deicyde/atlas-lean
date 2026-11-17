@@ -1,6 +1,6 @@
 # Lattice of stable matchings
 
-For two stable matchings of a marriage market, giving every man the partner he prefers among his two partners yields again a stable perfect matching, in which every woman receives the partner she likes less. Roth (1986, Lemma 2) proves the college-admissions version of this observation, uses it for the rural hospitals theorem, and attributes the marriage case to Conway as reported by Knuth (*Mariages stables*, 1976); this is the property that makes the set of stable matchings a lattice under the men's common order. The pages here prove the join and the opposition of interests in the marriage model with complete preference lists. The lattice axioms and the women's join (the same construction with the sides exchanged) are not formalized.
+For two stable matchings of a marriage market, giving every man the partner he prefers among his two partners yields again a stable perfect matching, in which every woman receives the partner she likes less. Roth (1986, Lemma 2) proves the college-admissions version of this observation, uses it for the rural hospitals theorem, and attributes the marriage case to Conway as reported by Knuth (*Mariages stables*, 1976); this is the property that makes the set of stable matchings a lattice under the men's common order. The pages here prove the join and the opposition of interests in the marriage model with complete preference lists. The join also gives an algorithm-free proof that a man-optimal stable matching exists. The lattice axioms and the women's join (the same construction with the sides exchanged) are not formalized.
 
 ## The join and its stability
 
@@ -20,6 +20,10 @@ For two stable matchings of a marriage market, giving every man the partner he p
 - [Each woman's partner in the men's join is one of her two partners](men-join-symm-eq-or.md)
 - [Opposition of interests: no woman prefers her men's-join partner to her first partner](not-lt-men-join-symm-left.md)
 - [Opposition of interests: no woman prefers her men's-join partner to her second partner](not-lt-men-join-symm-right.md)
+
+## The man-optimal stable matching
+
+- [Existence of a man-optimal stable matching, through the men's join](exists-stable-forall-not-lt.md)
 
 ## Related topics
 
