@@ -8,7 +8,7 @@ The dyadic intervals $I_{k,m} = [m 2^{-k}, (m+1) 2^{-k})$ of the real line are n
 4. **Strong type.** Integrating the localized bound gives the [Doob-type inequality](lintegral-rpow-le-lintegral-mul-dyadic-m.md) $\int (M_d f)^p \le p' \int \|f\| (M_d f)^{p-1}$, and with Hölder's inequality the [$L^p$ bound](lintegral-rpow-dyadic-maximal-function-l.md) $\|M_d f\|_p \le p' \|f\|_p$, $p' = p/(p-1)$, for $1 < p < \infty$; the Marcinkiewicz splitting gives the [cruder constant $2^p p/(p-1)$](lintegral-rpow-dyadic-maximal-le-two-rpo.md) without any finiteness assumption, which the sharp proof needs.
 5. **Calderón–Zygmund decomposition.** For integrable $f$ the stopping intervals at height $c$ exist ([existence](exists-is-stopping-level.md)), partition $\{M_d f > c\}$, carry averages in $(c, 2c]$, and $\|f\| \le c$ a.e. off their union ([dyadic Calderón–Zygmund decomposition](calderon-zygmund.md)).
 
-The decomposition is the entry point for the weak type (1,1) of singular integrals, the John–Nirenberg inequality and the Fefferman–Stein vector-valued inequality. Everything here is on $\mathbb{R}$; the sources work on $\mathbb{R}^d$ with dyadic cubes, where the constant $2$ in step 5 becomes $2^d$.
+The decomposition is the entry point for the weak type (1,1) of singular integrals, the John–Nirenberg inequality (see Related topics) and the [Fefferman–Stein vector-valued inequality](exists-lintegral-tsum-rpow-dyadic-maxima.md) (recorded as a statement). Everything here is on $\mathbb{R}$; the sources work on $\mathbb{R}^d$ with dyadic cubes, where the constant $2$ in step 5 becomes $2^d$.
 
 - [Dyadic interval](dyadic-interval.md)
 - [Dyadic index](dyadic-index.md)
@@ -26,9 +26,11 @@ The decomposition is the entry point for the weak type (1,1) of singular integra
 - [Stopping level](is-stopping-level.md)
 - [Existence of the stopping level](exists-is-stopping-level.md)
 - [Calderón–Zygmund decomposition, dyadic form](calderon-zygmund.md)
+- [Dyadic Fefferman–Stein vector-valued maximal inequality](exists-lintegral-tsum-rpow-dyadic-maxima.md) (statement only, proof wanted)
 
 ## Related topics
 
+- [Bounded mean oscillation](../bounded-mean-oscillation/README.md): the John–Nirenberg inequality and the $H^1$–$\mathrm{BMO}$ inequality, built on the Calderón–Zygmund decomposition.
 - [Haar system](../../wavelets/haar-system/README.md): the Haar wavelets live on the same dyadic intervals; the dyadic averages $A_k f$ are the projections onto the Haar approximation spaces $V_k$ of S. Mallat's multiresolution framework.
 - [Convergence of Fourier series](../../fourier-series/convergence-of-fourier-series/README.md): Carleson's theorem on almost-everywhere convergence is proved by a time–frequency refinement of these stopping-time arguments.
 - [Doob's maximal inequalities](../../../../Probability/martingales/doob-s-maximal-inequalities/README.md): on $[0,1)$ the dyadic averages form a martingale and the weak type (1,1) bound is Doob's maximal inequality.
