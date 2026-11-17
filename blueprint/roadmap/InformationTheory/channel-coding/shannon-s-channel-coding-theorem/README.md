@@ -7,6 +7,9 @@
 ## Related topics
 
 - [Fano's inequality](../../information-inequalities/fano-s-inequality/README.md)
+- [Random coding bound and Gallager's exponent](../random-coding-bound-and-gallager-s-exponent/README.md):
+  Gallager's proof of achievability for the average error, with an exponentially small error
+  probability below the mutual information.
 - [Shannon's source coding theorem](../../source-coding/shannon-s-source-coding-theorem/README.md)
 - [Bounds on code size](../../error-correcting-codes/bounds-on-code-size/README.md)
 - [List decoding](../../error-correcting-codes/list-decoding/README.md): for worst-case errors, list decoding with small lists reaches the rate $1 - H_q(\rho)$, the capacity of the $q$-ary symmetric channel.

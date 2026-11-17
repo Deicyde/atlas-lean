@@ -15,6 +15,12 @@ This is an established result recorded as a wanted statement; it is not proved h
 - [Mutual information of a finite joint law](../../entropy-and-mutual-information/conditional-mutual-information/finite-mutual-information.md):
   defines the capacity.
 
+## Background
+
+- [Coding theorem, exponential achievability for average error](../random-coding-bound-and-gallager-s-exponent/exists-pos-exponent-avg-error-le.md):
+  Gallager's random coding route, proved for the average error and a fixed input law $p$, at every
+  rate below $I(p; W)$ in nats; the maximal-error form stated here follows by expurgation.
+
 ## Sources
 
 - Y. Polyanskiy and Y. Wu, Information Theory: From Coding to Learning (Cambridge University Press, 2025), Theorem 19.9 with Corollary 19.5 (in particular `C^(max) = C`); C. E. Shannon (1948), Theorem 11.
