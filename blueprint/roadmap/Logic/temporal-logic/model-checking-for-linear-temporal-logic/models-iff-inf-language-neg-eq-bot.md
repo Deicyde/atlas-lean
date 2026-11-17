@@ -10,11 +10,15 @@ synchronized product, and its emptiness is decided by the lasso test.
 
 ## Informally uses
 
-- [LTL model checking is language inclusion](models-iff-language-le.md): the inclusion form.
+- [LTL satisfaction iff the counterexample language is empty](models-iff-language-empty.md):
+  the counterexample product is the intersection.
 - [Product accepts exactly the runs accepted by the recognizer](mem-product-iff.md): the product
   computes the intersection.
 
 ## Background
+
+- [LTL model checking is language inclusion](models-iff-language-le.md): the inclusion form,
+  from which Vardi derives this emptiness form.
 
 - [Büchi automata are closed under complementation](../../../TheoryOfComputation/omega-automata-and-games/boolean-closure-of-b-chi-automata/exists-buchi-compl.md):
   the general complementation that the negated formula avoids.

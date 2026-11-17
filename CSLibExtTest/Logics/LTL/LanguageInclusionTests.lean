@@ -63,6 +63,6 @@ example : language (systemAutomaton loops {true}) ≤
 
 example : language (systemAutomaton loops {true}) ⊓
     language (Tableau.buchi loopVal (.not (Formula.always (.atom 0)))) = ⊥ :=
-  (models_iff_inf_language_not_eq_bot _ _ _ _).mp models_true
+  (models_iff_inf_language_neg_eq_bot _ _ _ _).mp models_true
 
 end Cslib.LTL.LanguageInclusionTests

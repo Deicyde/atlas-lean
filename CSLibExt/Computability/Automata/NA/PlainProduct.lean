@@ -22,8 +22,9 @@ infinite word but visit their accepting states at alternate instants, have an em
 product (`Cslib.Automata.NA.Buchi.exists_plainProduct_ne_inf`). This is why the intersection
 construction behind `Cslib.Automata.NA.Buchi.exists_buchi_inf` carries a pointer.
 
-The plain product is upstream CSLib's `Cslib.Automata.NA.iProd` over the index `Bool`, with
-the accepting set `F₁ × F₂`.
+The plain product is upstream CSLib's `Cslib.Automata.NA.iProd` over the index `Bool`, for
+automata with possibly different state types (in one universe), with the accepting set
+`F₁ × F₂`.
 
 ## References
 
@@ -40,15 +41,21 @@ namespace Cslib.Automata.NA.Buchi
 
 open ωAcceptor
 
-variable {S Symbol : Type*}
+universe u
+
+variable {S₁ S₂ : Type u} {Symbol : Type*}
 
 /-- **Plain product of two Büchi automata.** The automaton that runs `a₁` and `a₂`
 synchronously on the same input, as the upstream product `Cslib.Automata.NA.iProd`, and accepts
 when both components are accepting at the same time: its accepting set is `F₁ × F₂` (Vardi,
 "An automata-theoretic approach to linear temporal logic", LNCS 1043, 1996, Section 2.2,
 the automaton `A₁ × A₂` before Proposition 6). -/
-def plainProduct (a₁ a₂ : Buchi S Symbol) : Buchi (Bool → S) Symbol where
-  toNA := NA.iProd (fun i : Bool => if i then a₂.toNA else a₁.toNA)
+def plainProduct (a₁ : Buchi S₁ Symbol) (a₂ : Buchi S₂ Symbol) :
+    Buchi ((i : Bool) → cond i S₂ S₁) Symbol where
+  toNA := NA.iProd (State := fun i => cond i S₂ S₁) fun i =>
+    match i with
+    | true => a₂.toNA
+    | false => a₁.toNA
   accept := {p | p false ∈ a₁.accept ∧ p true ∈ a₂.accept}
 
 /-- **Two-state cyclic Büchi automaton.** The Büchi automaton over a one-letter alphabet
@@ -132,7 +139,7 @@ theorem language_plainProduct_twoCycle :
 
 /-- **The plain product accepts only words in the intersection.** Every word accepted by the
 plain product of two Büchi automata is accepted by each of them. -/
-theorem language_plainProduct_le (a₁ a₂ : Buchi S Symbol) :
+theorem language_plainProduct_le (a₁ : Buchi S₁ Symbol) (a₂ : Buchi S₂ Symbol) :
     language (plainProduct a₁ a₂) ≤ language a₁ ⊓ language a₂ := by
   intro xs ⟨ss, hrun, hacc⟩
   change (NA.iProd _).Run xs ss at hrun

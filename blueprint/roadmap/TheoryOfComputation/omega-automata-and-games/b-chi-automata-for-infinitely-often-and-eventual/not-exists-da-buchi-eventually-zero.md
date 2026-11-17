@@ -6,9 +6,10 @@ or infinite, accepts exactly the infinite words that are eventually constantly $
 Vardi's Proposition 8 states this for $(0 + 1)^* 1^\omega$, the same language with the two
 letters exchanged. His proof builds, from a hypothetical deterministic automaton, a word with
 infinitely many $0$s whose run visits accepting states infinitely often. The Lean proof
-applies upstream CSLib: the language of a deterministic Büchi automaton is the ω-limit of the
-language of finite words accepted by the same automaton, and "eventually always $0$" is not
-the ω-limit of any language of finite words.
+is the one of upstream CSLib's `Cslib.ωLanguage.IsRegular.not_da_buchi`, copied from CSLib: the
+language of a deterministic Büchi automaton is the ω-limit of the language of finite words
+accepted by the same automaton, and "eventually always $0$" is not the ω-limit of any language
+of finite words.
 
 ## Background
 

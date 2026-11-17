@@ -8,7 +8,7 @@ $\mu_n$ is the probability that $\varphi$ holds in a uniformly random structure 
 elements. For a relational language with finitely many symbols both counts are finite and the
 denominator is positive.
 
-## Informally uses
+## Background
 
 - [Finitely many structures on a finite set](finite-structure.md): the counts are finite.
 - [Relational languages have structures on every type](nonempty-structure.md): the denominator

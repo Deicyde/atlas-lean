@@ -44,7 +44,7 @@
 - [Büchi automaton of a transition system](system-automaton.md)
 - [The language of the system automaton is the set of runs](mem-system-automaton-iff.md)
 - [LTL model checking is language inclusion](models-iff-language-le.md)
-- [LTL model checking is emptiness of an intersection](models-iff-inf-language-not-eq-bot.md)
+- [LTL model checking is emptiness of an intersection](models-iff-inf-language-neg-eq-bot.md)
 
 ## Satisfiability and validity
 

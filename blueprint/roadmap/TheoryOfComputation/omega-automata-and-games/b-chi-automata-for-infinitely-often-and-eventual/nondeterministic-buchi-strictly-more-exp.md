@@ -1,8 +1,10 @@
 # Nondeterministic Büchi automata are strictly more expressive than deterministic ones
 
-The ω-language of the infinite words over $\{0, 1\}$ that are eventually constantly $0$ is
-accepted by a nondeterministic Büchi automaton with two states, which guesses the point after
-which only $0$ occurs, but by no deterministic Büchi automaton.
+Every deterministic Büchi automaton over $\{0, 1\}$ can be read as a nondeterministic one with
+the same states and language (upstream CSLib, `Cslib.Automata.DA.Buchi.toNABuchi_language_eq`).
+Conversely, the ω-language of the infinite words over $\{0, 1\}$ that are eventually constantly
+$0$ is accepted by a nondeterministic Büchi automaton with two states, which guesses the point
+after which only $0$ occurs, but by no deterministic Büchi automaton.
 
 Unlike automata on finite words, Büchi automata cannot be determinized. This is why
 complementation of Büchi automata cannot proceed by the subset construction, and why LTL is

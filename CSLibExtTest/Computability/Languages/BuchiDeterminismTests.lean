@@ -34,6 +34,6 @@ example : ωSequence.const (1 : Fin 2) ∉ language eventuallyZeroNa := by
   exact absurd hk (by simp)
 
 example : ¬ ∃ (State : Type) (da : DA.Buchi State (Fin 2)), language da = eventuallyZero :=
-  nondeterministic_buchi_strictly_more_expressive.2
+  nondeterministic_buchi_strictly_more_expressive.2.2
 
 end Cslib.BuchiDeterminismTests

@@ -4,7 +4,7 @@ Languages of finite-state nondeterministic Büchi automata (ω-regular languages
 
 - [Büchi automata are closed under union](exists-buchi-sup.md)
 - [Büchi automata are closed under intersection](exists-buchi-inf.md)
-- [Complement of an ω-regular language, over any alphabet](compl-of-is-regular.md)
+- [Complement of an ω-regular language, over any alphabet](compl-any.md)
 - [Büchi automata are closed under complementation](exists-buchi-compl.md)
 
 ## Why the plain product fails

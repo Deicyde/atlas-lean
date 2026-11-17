@@ -27,7 +27,7 @@ state of the transition system and the valuation is on states; Vardi's `A_P` rea
 * `Cslib.LTL.ModelChecking.mem_systemAutomaton_iff`: its language is the set of initial
   infinite runs.
 * `Cslib.LTL.ModelChecking.models_iff_language_le`: model checking is language inclusion.
-* `Cslib.LTL.ModelChecking.models_iff_inf_language_not_eq_bot`: model checking is emptiness
+* `Cslib.LTL.ModelChecking.models_iff_inf_language_neg_eq_bot`: model checking is emptiness
   of the intersection with the language of the negated formula.
 
 ## References
@@ -94,7 +94,7 @@ transition system satisfy `φ` iff no word is accepted both by the system automa
 Büchi automaton of `¬φ`; the automaton of the negated formula replaces the complement of the
 automaton of `φ` (Vardi, "An automata-theoretic approach to linear temporal logic", LNCS
 1043, 1996, Section 4.2: `L_ω(A_P) ∩ L_ω(A_¬φ) = ∅`). -/
-theorem models_iff_inf_language_not_eq_bot (lts : LTS State Action) (initial : Set State)
+theorem models_iff_inf_language_neg_eq_bot (lts : LTS State Action) (initial : Set State)
     (valuation : State → Atom → Prop) (φ : Formula Atom) :
     Models lts initial valuation φ ↔
       language (systemAutomaton lts initial) ⊓ language (Tableau.buchi valuation (.not φ)) =

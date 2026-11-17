@@ -10,8 +10,9 @@ whose plain product is empty. The construction runs both automata and keeps a po
 of the two tracks; the pointer moves to the other track whenever the track it points to visits
 an accepting state, and the accepting states are those of $F_1 \times S_2$ with the pointer on
 the first track. This is Vardi's Proposition 6, credited there to Choueka (1974). The Lean
-proof applies the upstream CSLib theorem `Cslib.ωLanguage.IsRegular.inf`, which builds the same
-product with a Boolean pointer.
+proof applies the upstream CSLib theorem `Cslib.ωLanguage.IsRegular.inf`, which builds a variant
+of this product with a Boolean pointer (its accepting set also allows $F_2$ with the pointer on
+the second track; the language is the same).
 
 ## Sources
 

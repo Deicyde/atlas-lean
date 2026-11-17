@@ -2,7 +2,8 @@
 
 For every finite-state nondeterministic Büchi automaton $A$ over an alphabet $\Sigma$, some
 finite-state nondeterministic Büchi automaton $\bar A$ satisfies $L_\omega(\bar A) =
-\Sigma^\omega \setminus L_\omega(A)$. No assumption is made on $\Sigma$.
+\Sigma^\omega \setminus L_\omega(A)$. No assumption is made on $\Sigma$, whereas the source works over
+a finite nonempty alphabet.
 
 Complementing a Büchi automaton is much harder than complementing an automaton on finite
 words, even for deterministic automata: making the non-accepting states accepting does not
@@ -12,7 +13,7 @@ optimal (Michel 1988). This page claims existence only, with no bound on the num
 
 ## Informally uses
 
-- [Complement of an ω-regular language, over any alphabet](compl-of-is-regular.md): the same
+- [Complement of an ω-regular language, over any alphabet](compl-any.md): the same
   statement for languages; the automaton form unfolds it.
 
 ## Sources

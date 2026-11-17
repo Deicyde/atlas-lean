@@ -3,11 +3,12 @@
 For finitely many states, the language of a nondeterministic Büchi automaton is nonempty iff
 some accepting state is reachable from a start state and lies on a nonempty cycle.
 
-The cycle must have positive length. Vardi states the criterion as "$t$ is connected to $s_0$
-and $t$ is connected to itself", with a definition of connectedness that also admits the path
-of length $0$; read literally, the second condition is then always true. His proof uses a
-genuine cycle (an accepting state occurring twice in an accepting run), which is the condition
-stated here. The finiteness of the state set is used only in the direction from an accepted
+The cycle must have positive length. In the proof of his Proposition 13, Vardi states the
+criterion as "$t$ is connected to $s_0$ and $t$ is connected to itself", with a definition of
+connectedness that also admits the path of length $0$; read literally, the second condition is
+then always true. His argument uses a genuine cycle (an accepting state occurring twice in an
+accepting run), and his linear-time algorithm asks for a nontrivial strongly connected
+component, which is the condition stated here. The finiteness of the state set is used only in the direction from an accepted
 word to a lasso.
 
 ## Informally uses

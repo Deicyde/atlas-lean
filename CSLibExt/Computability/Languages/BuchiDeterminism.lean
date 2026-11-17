@@ -20,7 +20,10 @@ nondeterministic Büchi automaton, and shows that it is not the ω-limit of a re
 deterministic Büchi automaton; its theorem `Cslib.ωLanguage.IsRegular.not_da_buchi` only
 records that some such ω-regular language exists. This file states the separation for this
 specific language, as in Vardi's Proposition 8 (whose language `(0 + 1)* 1^ω` is the same up
-to exchanging the two letters).
+to exchanging the two letters). The proof of `not_exists_da_buchi_eventuallyZero` is the
+second half of the proof of upstream `Cslib.ωLanguage.IsRegular.not_da_buchi`, copied from
+CSLib; the converse inclusion (every deterministic Büchi language is a nondeterministic one)
+is upstream `Cslib.Automata.DA.Buchi.toNABuchi_language_eq`.
 
 ## References
 
@@ -39,7 +42,7 @@ open Automata Automata.ωAcceptor
 automaton over `Fin 2`, with any set of states, finite or not, accepts exactly the infinite words
 that are eventually constantly `0` (Vardi, "An automata-theoretic approach to linear temporal
 logic", LNCS 1043, 1996, Proposition 8, for `(0 + 1)* 1^ω`, the same language with the letters
-exchanged). -/
+exchanged). The proof is the one of upstream `Cslib.ωLanguage.IsRegular.not_da_buchi`. -/
 theorem not_exists_da_buchi_eventuallyZero :
     ¬ ∃ (State : Type) (da : DA.Buchi State (Fin 2)), language da = eventuallyZero := by
   rintro ⟨State, ⟨da, acc⟩, h⟩
@@ -47,13 +50,18 @@ theorem not_exists_da_buchi_eventuallyZero :
   grind [DA.buchi_eq_finAcc_omegaLim]
 
 /-- **Nondeterministic Büchi automata are strictly more expressive than deterministic ones.**
-The language of the infinite words over `Fin 2` that are eventually constantly `0` is accepted
-by a nondeterministic Büchi automaton with two states but by no deterministic Büchi automaton
-(Vardi, "An automata-theoretic approach to linear temporal logic", LNCS 1043, 1996,
-Proposition 8 and the automaton before it). -/
+Every deterministic Büchi automaton over `Fin 2` has a nondeterministic Büchi automaton with
+the same states and language, while the language of the infinite words over `Fin 2` that are
+eventually constantly `0` is accepted by a nondeterministic Büchi automaton with two states
+but by no deterministic Büchi automaton (Vardi, "An automata-theoretic approach to linear
+temporal logic", LNCS 1043, 1996, Proposition 8 and the automaton before it). The inclusion
+is upstream `Cslib.Automata.DA.Buchi.toNABuchi_language_eq`. -/
 theorem nondeterministic_buchi_strictly_more_expressive :
+    (∀ (State : Type) (da : DA.Buchi State (Fin 2)),
+      ∃ na : NA.Buchi State (Fin 2), language na = language da) ∧
     (∃ na : NA.Buchi (Fin 2) (Fin 2), language na = eventuallyZero) ∧
       ¬ ∃ (State : Type) (da : DA.Buchi State (Fin 2)), language da = eventuallyZero :=
-  ⟨⟨eventuallyZeroNa, eventuallyZero_accepted_by_na_buchi⟩, not_exists_da_buchi_eventuallyZero⟩
+  ⟨fun _ da => ⟨da.toNABuchi, DA.Buchi.toNABuchi_language_eq⟩,
+    ⟨eventuallyZeroNa, eventuallyZero_accepted_by_na_buchi⟩, not_exists_da_buchi_eventuallyZero⟩
 
 end Cslib.ωLanguage.Example

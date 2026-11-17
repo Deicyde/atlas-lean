@@ -1,6 +1,7 @@
 # Plain product of two Büchi automata
 
-The plain product of Büchi automata $A_1$ and $A_2$ over the same alphabet runs both
+The plain product of Büchi automata $A_1$ and $A_2$ over the same alphabet (their state types
+may differ, within one universe) runs both
 synchronously on the input and has accepting set $F_1 \times F_2$: a run is accepting when both
 components are in accepting states at the same instants, infinitely often. It is the upstream
 CSLib product of automata over the index set $\{\mathsf{false}, \mathsf{true}\}$.

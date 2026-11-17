@@ -16,7 +16,8 @@ extension axiom has probability tending to $1$; the theory they axiomatize has n
 and is $\aleph_0$-categorical (its countable model is the random structure), hence complete; so
 every sentence or its negation follows from finitely many extension axioms, and has probability
 tending to $1$. The same argument decides the limit, in contrast with Trakhtenbrot's theorem
-that validity on all finite structures is undecidable. The law fails for existential
+that validity on all finite structures is undecidable as soon as the vocabulary has a binary
+relation symbol. The law fails for existential
 second-order logic, since the parity of the domain size is definable there.
 
 ## Informally uses
