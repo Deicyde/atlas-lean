@@ -14,6 +14,7 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [Merkle–Damgård construction](merkle-damg-rd-construction/README.md)
 - [One-time pad over a finite group](one-time-pad-over-a-finite-group/README.md)
 - [Pseudorandom functions](pseudorandom-functions/README.md)
+- [Rabin cryptosystem](rabin-cryptosystem/README.md)
 - [RSA cryptosystem](rsa-cryptosystem/README.md)
 - [Schnorr identification scheme](schnorr-identification-scheme/README.md)
 - [Semantic security and indistinguishability](semantic-security-and-indistinguishability/README.md)
