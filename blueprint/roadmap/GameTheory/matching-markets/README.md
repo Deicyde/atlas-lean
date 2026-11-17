@@ -3,6 +3,7 @@
 Two-sided matching markets: stable matchings of marriage and college-admissions markets, the lattice of stable matchings and the opposition of the two sides' interests, properties shared by all stable matchings such as the rural hospitals theorem, and the incentives of stable matching mechanisms, from Roth's impossibility theorem to the strategy-proofness of deferred acceptance for the proposing side. The stable marriage problem and the Gale–Shapley existence theorem are under GraphTheory/matchings-and-flows, and the deferred-acceptance algorithm under ComputerScience/graph-algorithms.
 
 - [Lattice of stable matchings](lattice-of-stable-matchings/README.md)
+- [Rural hospitals theorem](rural-hospitals-theorem/README.md)
 - [Stable matching mechanisms and incentives](stable-matching-mechanisms-and-incentives/README.md)
 
 ## Related topics

@@ -29,3 +29,4 @@ For two stable matchings of a marriage market, giving every man the partner he p
 
 - [Stable marriage problem](../../../GraphTheory/matchings-and-flows/stable-marriage-problem/README.md): the model and the existence of stable matchings.
 - [Stable matching mechanisms and incentives](../stable-matching-mechanisms-and-incentives/README.md): Roth's market, whose two stable matchings `x` and `y` have men's join `x`, is the test case of these pages.
+- [Rural hospitals theorem](../rural-hospitals-theorem/README.md): Roth (1986) combines the join (his Lemma 2) with the invariance of the number of positions filled (his Lemma 1) to prove the rural hospitals theorem.
