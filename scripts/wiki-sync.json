@@ -11908,6 +11908,7 @@
 "Cslib.MachineLearning.AdaBoost.normalizer": "3d198922f0eea922",
 "Cslib.MachineLearning.AdaBoost.normalizer_eq": "f8604bc8d6797af7",
 "Cslib.MachineLearning.AdaBoost.reweight": "4631ce31dbd5d294",
+"Cslib.MachineLearning.AdaBoost.reweight_eq_hedge_update": "11bc8059e668e808",
 "Cslib.MachineLearning.AdaBoost.score": "807a6aec571da46a",
 "Cslib.MachineLearning.AdaBoost.sum_mul_exp_eq": "3b405a5d5d3c4caf",
 "Cslib.MachineLearning.AdaBoost.trainErr": "3825596942937e18",

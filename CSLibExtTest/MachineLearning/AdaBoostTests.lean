@@ -111,6 +111,16 @@ example (y : Fin 3 → Bool) (T : ℕ) (a : ℝ) :
   exact expLoss_score_succ_le (by norm_num) T (eps_argminLearner y T).1 hle _ le_rfl
     (by unfold eps hyp at hle ⊢; linarith) a
 
+-- AdaBoost's first reweighting on three points is a normalized Hedge step
+example (y : Fin 3 → Bool) (h : Fin 3 → Bool) :
+    reweight y (fun _ => 1 / 3) h = fun i =>
+      Hedge.update (log ((1 - err y (fun _ => 1 / 3) h) / err y (fun _ => 1 / 3) h)) (fun _ => 1 / 3)
+          (fun j => if h j = y j then 1 else 0) i /
+        Hedge.total (Hedge.update (log ((1 - err y (fun _ => 1 / 3) h) / err y (fun _ => 1 / 3) h))
+          (fun _ => 1 / 3) (fun j => if h j = y j then 1 else 0)) :=
+  reweight_eq_hedge_update y (fun _ => by norm_num) (by norm_num) h
+
+#print axioms reweight_eq_hedge_update
 #print axioms trainErr_le_exp_sum_sq
 #print axioms expLoss_score_succ_le
 #print axioms marginErr_le

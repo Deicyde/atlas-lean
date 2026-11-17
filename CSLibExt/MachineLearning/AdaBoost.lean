@@ -10,6 +10,7 @@ module
 
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import CSLibExt.MachineLearning.Hedge
 public import CSLibExt.MachineLearning.Perceptron
 import Mathlib.Algebra.BigOperators.Field
 import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
@@ -55,7 +56,8 @@ infinite and boosting would stop). The scalar estimates `√(1 - 4 γ²) ≤ exp
 products also appear in `Ch10.lean` of
 `FormalizedTextbooks/UnderstandingMachineLearningFromTheoryToAlgorithms/`, which this layer cannot
 import; that file has no algorithm. Multiplicative weights over experts is
-`MachineLearning/Hedge.lean`.
+`MachineLearning/Hedge.lean`; `reweight_eq_hedge_update` shows that AdaBoost's reweighting is a
+normalized Hedge step over the training points (Freund and Schapire's Figure 2).
 
 ## Cost model
 
@@ -470,5 +472,40 @@ theorem marginErr_le (hm : 0 < m) (θ : ℝ) (T : ℕ)
         rw [show zee y wl t = 2 * sqrt (eps y wl t * (1 - eps y wl t)) from
           normalizer_eq y (sum_dist hm t) _ h0 h1]
         exact exp_mul_alpha_mul_two_sqrt θ h0 h1
+
+/-! ## AdaBoost runs Hedge on the training points -/
+
+/-- **AdaBoost's reweighting is a normalized Hedge step** (Freund and Schapire, *J. Comput. Syst.
+Sci.* 55, 1997, Figure 2, steps 4 and 5): for positive weights `D` on `m > 0` training points and
+a hypothesis `h` with weighted error `ε`, AdaBoost's new weights are Hedge's update of `D` with
+learning rate `log ((1 - ε) / ε)` (their `β = ε / (1 - ε)`) and the losses `ℓᵢ = 1` if `h` is
+correct on point `i` and `0` otherwise, divided by the total weight. The examples play the
+experts, and a point's weight shrinks when the weak hypothesis gets it right. -/
+theorem reweight_eq_hedge_update (y : Fin m → Bool) {D : Fin m → ℝ} (hD : ∀ i, 0 < D i)
+    (hm : 0 < m) (h : Fin m → Bool) :
+    reweight y D h = fun i =>
+      Hedge.update (log ((1 - err y D h) / err y D h)) D (fun j => if h j = y j then 1 else 0) i /
+        Hedge.total (Hedge.update (log ((1 - err y D h) / err y D h)) D
+          (fun j => if h j = y j then 1 else 0)) := by
+  funext i
+  set a := alpha (err y D h) with ha
+  have hlog : log ((1 - err y D h) / err y D h) = 2 * a := by rw [ha, alpha]; ring
+  have key : ∀ j, exp (-a * ((sign (y j) : ℝ) * sign (h j))) =
+      exp a * exp (-(2 * a) * (if h j = y j then 1 else 0)) := by
+    intro j
+    rw [sign_mul_sign_eq_ite, ← exp_add]
+    split_ifs <;> ring_nf
+  have hnorm : normalizer y D h =
+      exp a * Hedge.total (Hedge.update (2 * a) D (fun j => if h j = y j then 1 else 0)) := by
+    simp only [normalizer, Hedge.total, Hedge.update, Finset.mul_sum]
+    refine Finset.sum_congr rfl fun j _ => ?_
+    rw [← ha, key]
+    ring
+  have : Nonempty (Fin m) := ⟨⟨0, hm⟩⟩
+  have htot : 0 < Hedge.total (Hedge.update (2 * a) D (fun j => if h j = y j then 1 else 0)) :=
+    Finset.sum_pos (fun j _ => mul_pos (hD j) (exp_pos _)) Finset.univ_nonempty
+  rw [hlog, reweight, hnorm, ← ha, key]
+  simp only [Hedge.update]
+  field_simp
 
 end Cslib.MachineLearning.AdaBoost

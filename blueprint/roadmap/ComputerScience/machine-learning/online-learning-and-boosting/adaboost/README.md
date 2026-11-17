@@ -4,6 +4,7 @@
 - [AdaBoost's hypothesis weight](alpha.md)
 - [Normalizer of a boosting round](normalizer.md)
 - [AdaBoost reweighting](reweight.md)
+- [AdaBoost's reweighting is a normalized Hedge step](reweight-eq-hedge-update.md)
 - [The normalizer of a round is $2\sqrt{\varepsilon(1 - \varepsilon)}$](normalizer-eq.md)
 - [One round's factor is at most `exp (-2 γ²)`](two-mul-sqrt-le-exp.md)
 - [AdaBoost's weights](dist.md)
