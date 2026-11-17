@@ -1,5 +1,7 @@
 # Total positivity
 
+A real matrix is totally nonnegative (totally positive) if all its minors are nonnegative (positive). Fomin and Zelevinsky's account (*Total positivity: tests and parametrizations*, Math. Intelligencer 22 (2000), arXiv:math/9912128v1) starts from planar networks: by Lindström's lemma every minor of the weight matrix of a planar network is a sum of weights of families of vertex-disjoint paths, so nonnegative weights give a totally nonnegative matrix (Corollary 2) and positive weights on a totally connected network give a totally positive one (Corollary 3); conversely every totally positive matrix arises this way (Theorem 5), which yields the test by $n^2$ initial minors (Theorem 9, due to Gasca and Peña). Here the two corollaries are proved from a weighted Lindström–Gessel–Viennot lemma, the predicate for rectangular matrices is bridged to Mathlib's `Matrix.IsTotallyNonneg`, and the initial-minor test is recorded as a wanted theorem.
+
 - [Matrices with nonnegative minors](has-nonnegative-minors.md)
 - [Matrices with positive minors](has-positive-minors.md)
 - [Entries of a matrix with positive minors are positive](entry-pos.md)
@@ -20,3 +22,16 @@
 - [Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices](generalized-hyper-fibonacci-toeplitz-pos.md)
 - [Total positivity of hyper $p$-Fibonacci Toeplitz matrices](hyper-pfibonacci-toeplitz-has-positive-m.md)
 - [Total positivity of hyper $p$-Lucas Toeplitz matrices](hyper-plucas-toeplitz-has-positive-minor.md)
+- [Bridge to Mathlib's total nonnegativity](has-nonnegative-minors-iff-is-totally-no.md)
+- [Nonnegative edge weights give nonnegative path weights](lgv-path-weight-nonneg.md)
+- [Positive edge weights give positive path weights](lgv-path-weight-pos.md)
+- [Total positivity of totally connected planar networks](planar-network-has-positive-minors.md)
+- [Total nonnegativity of planar networks](planar-network-is-totally-nonneg.md)
+
+## Related topics
+
+- [Lindström–Gessel–Viennot lemma](../../../Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/lindstrom-gessel-viennot-weighted.md): the determinant identity behind the positivity of minors of planar networks.
+- [Cluster algebras](../../../RingTheory/cluster-algebras/README.md): introduced by Fomin and Zelevinsky as an algebraic framework for total positivity; for example the flag minors of $SL_3$ satisfy the exchange relation $P_2 P_{13} = P_1 P_{23} + P_3 P_{12}$ (Fomin, Williams and Zelevinsky, arXiv:1608.05735v5, Example 3.2.1).
+- [Standard Young tableaux and the hook length formula](../../../Combinatorics/symmetric-functions-q-analogues/standard-young-tableaux-and-the-hook-length-form/README.md): the Robinson–Schensted–Knuth correspondence and Stanley's enumeration of tableaux; Jacobi–Trudi determinants for Schur functions are a classical application of Lindström–Gessel–Viennot.
+- [Lorentzian polynomials](../../../Combinatorics/matroid-theory/lorentzian-polynomials/README.md): Brändén and Huh's positivity theory for polynomials, a different notion of positivity with log-concavity consequences.
+- [Tropical varieties](../../../AlgebraicGeometry/varieties-and-projective-geometry/tropical-varieties/README.md): tropical geometry in the sense of Maclagan and Sturmfels; the tropicalisation of the totally positive part of a Grassmannian is a further meeting point of total positivity and tropical geometry, not formalized here.
