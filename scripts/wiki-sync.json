@@ -22172,6 +22172,7 @@
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_le": "fe26b868c1c06ffc",
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_le_one": "c61acc240c66993b",
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_mul_cutWeight_le_integral": "71321b85c2c2ac68",
+"MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_mul_cutWeight_sub_le_integral": "1f392f489ac8b1c1",
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_mul_le": "6a6a93df24179b2d",
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_mul_le_arccos_div_pi": "785780b86ed3d602",
 "MathlibExt.Combinatorics.Optimization.GoemansWilliamson.gwConstant_mul_vectorObjective_le": "a4e4edfba26faf0c",

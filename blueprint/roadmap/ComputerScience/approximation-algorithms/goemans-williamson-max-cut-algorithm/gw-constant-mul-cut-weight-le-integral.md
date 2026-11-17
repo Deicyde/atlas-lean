@@ -6,11 +6,9 @@ $S = \{i : v_i \cdot r \ge 0\}$ satisfies
 
 $$\mathbb{E}[w(S, \bar S)] \ge \alpha \cdot w(S', \bar{S'}),$$
 
-so its expected weight is at least $\alpha > 0.87856$ times the maximum cut. The hypothesis that
-the supremum is attained is what the Lean statement assumes; Goemans and Williamson work with
-vectors of value at least $Z_P - \varepsilon$, which a semidefinite-programming solver returns in
-polynomial time, and obtain $(\alpha - \varepsilon)$-approximation; that version, and the solver,
-are not formalized.
+so its expected weight is at least $\alpha > 0.87856$ times the maximum cut. The Lean statement assumes
+that the supremum is attained; Goemans and Williamson work with vectors of value at least
+$Z_P - \varepsilon$, which is the [version for nearly optimal vectors](gw-constant-mul-cut-weight-sub-le-integr.md).
 
 ## Informally uses
 

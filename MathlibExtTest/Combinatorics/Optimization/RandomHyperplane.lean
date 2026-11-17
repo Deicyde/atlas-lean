@@ -33,4 +33,19 @@ example : ∫ r, cutWeight (fun _ _ : Fin 2 => (1 : ℝ))
   integral_cutWeight_hyperplane _
     (vectorObjective_cutSign_single Nat.one_pos (fun _ _ => (1 : ℝ)) {0}).1
 
+/-- Non-vacuity of the `ε`-version: any unit vectors qualify with
+`ε = Z_P - (their objective)`. -/
+example (S : Finset (Fin 2)) :
+    let v := fun i => cutSign ({0} : Finset (Fin 2)) i • EuclideanSpace.single (0 : Fin 1) (1 : ℝ)
+    gwConstant * (cutWeight (fun _ _ : Fin 2 => (1 : ℝ)) S -
+        (relaxationValue (fun _ _ : Fin 2 => (1 : ℝ)) 1 -
+          vectorObjective (fun _ _ : Fin 2 => (1 : ℝ)) v)) ≤
+      ∫ r, cutWeight (fun _ _ : Fin 2 => (1 : ℝ))
+        (Finset.univ.filter fun i => 0 ≤ inner ℝ (v i) r)
+        ∂(stdGaussian (EuclideanSpace ℝ (Fin 1))) := by
+  intro v
+  exact gwConstant_mul_cutWeight_sub_le_integral Nat.one_pos (fun _ _ => zero_le_one)
+    (vectorObjective_cutSign_single Nat.one_pos (fun _ _ => (1 : ℝ)) {0}).1
+    (le_of_eq (sub_sub_cancel _ _)) S
+
 end MathlibExtTest.Combinatorics.Optimization.RandomHyperplane

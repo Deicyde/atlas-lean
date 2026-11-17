@@ -25,7 +25,8 @@ Here `r` is standard Gaussian.
 * `integral_cutWeight_hyperplane`: their Theorem 3.1, the expected cut weight;
 * `gwConstant_mul_vectorObjective_le_integral`: their Theorem 3.3;
 * `gwConstant_mul_cutWeight_le_integral`: with optimal vectors, the expected cut is at least `α`
-  times every cut.
+  times every cut; `gwConstant_mul_cutWeight_sub_le_integral` is the version for vectors within
+  `ε` of optimal, as in the paper.
 -/
 
 @[expose] public section
@@ -105,6 +106,24 @@ theorem gwConstant_mul_cutWeight_le_integral {ι : Type*} [Fintype ι] [LinearOr
   have hα : 0 ≤ gwConstant := le_trans (by norm_num) (le_of_lt lt_gwConstant)
   calc gwConstant * cutWeight w S ≤ gwConstant * vectorObjective w v := by
         rw [hopt]; exact mul_le_mul_of_nonneg_left (cutWeight_le_relaxationValue hn w S) hα
+    _ ≤ _ := gwConstant_mul_vectorObjective_le_integral hw hv
+
+/-- **The Goemans–Williamson guarantee for nearly optimal vectors.** For nonnegative weights, if
+unit vectors `v_i ∈ ℝ^n` have relaxation objective at least `Z_P - ε`, the random-hyperplane cut
+has expected weight at least `α · (w(S, S̄) - ε)` for every vertex set `S` (Goemans and
+Williamson, *J. ACM* 42(6) (1995), §2: vectors of value greater than `Z_P - ε`, as returned by a
+semidefinite-programming algorithm, give a cut of expected weight at least `α (Z_P - ε)`). -/
+theorem gwConstant_mul_cutWeight_sub_le_integral {ι : Type*} [Fintype ι] [LinearOrder ι]
+    {n : ℕ} (hn : 0 < n) {w : ι → ι → ℝ} (hw : ∀ i j, 0 ≤ w i j)
+    {v : ι → EuclideanSpace ℝ (Fin n)} (hv : ∀ i, ‖v i‖ = 1) {ε : ℝ}
+    (hε : relaxationValue w n - ε ≤ vectorObjective w v) (S : Finset ι) :
+    gwConstant * (cutWeight w S - ε) ≤
+      ∫ r, cutWeight w (Finset.univ.filter fun i => 0 ≤ inner ℝ (v i) r)
+        ∂(stdGaussian (EuclideanSpace ℝ (Fin n))) := by
+  have hα : 0 ≤ gwConstant := le_trans (by norm_num) (le_of_lt lt_gwConstant)
+  have hcut := cutWeight_le_relaxationValue hn w S
+  calc gwConstant * (cutWeight w S - ε) ≤ gwConstant * vectorObjective w v :=
+        mul_le_mul_of_nonneg_left (by linarith) hα
     _ ≤ _ := gwConstant_mul_vectorObjective_le_integral hw hv
 
 end MathlibExt.Combinatorics.Optimization.GoemansWilliamson

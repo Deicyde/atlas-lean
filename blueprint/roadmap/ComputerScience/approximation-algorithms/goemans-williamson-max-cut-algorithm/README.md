@@ -61,6 +61,7 @@ extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 - [Goemans–Williamson Theorem 3.3 with the numerical constant](mul-vector-objective-le-hyperplane-expec.md)
 - [Goemans–Williamson Theorem 3.3](gw-constant-mul-vector-objective-le-inte.md)
 - [The Goemans–Williamson guarantee](gw-constant-mul-cut-weight-le-integral.md)
+- [The Goemans–Williamson guarantee for nearly optimal vectors](gw-constant-mul-cut-weight-sub-le-integr.md)
 
 ## Related topics
 
