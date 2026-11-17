@@ -32,6 +32,16 @@ where $\sigma$ is the semicircle distribution.
   small Frobenius norm, which is how truncation reduces the theorem to bounded entries.
 - [Lipschitz linear statistics of Hermitian spectra are stable](../../../LinearAlgebra/positive-definite-matrices/abs-sum-sub-sum-le-of-lipschitz-with.md):
   background; the form of that bound used for linear statistics $\frac{1}{n}\sum_i f(\lambda_i)$.
+- [Expected moments of a Wigner matrix converge to the semicircle moments](tendsto-expected-moment-wigner-matrix-re.md):
+  background; the first half of the moment method under moments of all orders (Anderson, Guionnet
+  and Zeitouni, Lemma 2.1.6).
+- [Concentration of linear spectral statistics](concentration-trace-lipschitz.md):
+  background; for entries satisfying a logarithmic Sobolev inequality, the fluctuations of
+  $\operatorname{tr} f(X_N)$ are exponentially small at scale $N^2$, which gives almost sure
+  convergence by Borel–Cantelli.
+- [Ben Arous–Guionnet large deviation principle](../../large-deviations/ben-arous-guionnet-large-deviations/ben-arous-guionnet-ldp.md):
+  background; for Gaussian ensembles the empirical spectral measure satisfies a large deviation
+  principle at speed $N^2$ whose rate function vanishes only at $\sigma$, another route to the law.
 - [Strong Bai–Yin theorem, upper bound](../operator-norm-of-random-matrices/wigner-op-norm-le-two-add.md):
   background; under a fourth moment the spectrum also stays inside $[-2 - \varepsilon, 2 + \varepsilon]$.
 
