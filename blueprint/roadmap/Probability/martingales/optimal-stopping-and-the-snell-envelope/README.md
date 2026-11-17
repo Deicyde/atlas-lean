@@ -35,5 +35,6 @@ The first time the envelope meets the gain is a stopping time; it is optimal and
 
 - [Optional stopping theorem](../optional-stopping-theorem/README.md): the optimality proof applies bounded optional stopping to the envelope.
 - [Wald's equations](../wald-s-equations/README.md): the other classical use of stopping times in sums of i.i.d. variables, behind the average sample number of sequential tests.
+- [Secretary problem](../secretary-problem/README.md): the classical finite-horizon example solved by backward induction.
 - [Strong Markov property of i.i.d. sequences](../../random-walks/strong-markov-property-of-i-i-d-sequences/README.md): stopping times of i.i.d. observations.
 - [Optimality of stationary policies](../../../ComputerScience/heuristic-search-and-planning/optimality-of-stationary-policies/README.md): the finite-horizon dynamic programming algorithm for Markov decision processes (Bertsekas); optimal stopping of a function of a finite Markov chain is the case of two actions, stop or continue.

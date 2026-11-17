@@ -19,3 +19,4 @@ In other words, $V^N_0 = \sup_{\tau \le N} \mathsf E\, G_\tau = \mathsf E\, S_0 
 ## Background
 
 - [Optimality of the dynamic programming algorithm](../../../ComputerScience/heuristic-search-and-planning/optimality-of-stationary-policies/is-greatest-n-stage-value.md): the analogous optimality of backward induction for finite Markov decision processes (Bertsekas).
+- [The optimal threshold rule of the secretary problem](../secretary-problem/win-prob-le-win-prob-optimal-threshold.md): a classical instance of a finite-horizon stopping problem.
