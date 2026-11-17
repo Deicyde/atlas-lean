@@ -9,6 +9,8 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Analysis.InnerProductSpace.GramMatrix
+public import Mathlib.Analysis.InnerProductSpace.Positive
 public import MathlibExt.Combinatorics.Optimization.GoemansWilliamsonConstant
 
 /-!
@@ -26,6 +28,11 @@ Vertices are a finite linearly ordered type `ι`, and `w i j` is the weight of t
 * `vectorObjective` is the objective of the vector relaxation (P), §2, and `relaxationValue`
   its optimal value over unit vectors in `ℝ^m`. `cutWeight_le_relaxationValue` is the
   relaxation property `Z_P ≥ Z_MC` (p. 1120): every cut weighs at most the relaxation value.
+* `sdpObjective` and `SDPFeasible` are the semidefinite form of (P) (§4 of the paper, and
+  program (11) of Goemans's survey *Math. Programming* 79 (1997)): maximize
+  `∑_{i<j} w_ij (1 - Y_ij) / 2` over positive semidefinite `Y` with unit diagonal.
+  `sdpFeasible_gram` and `exists_gram_eq_of_sdpFeasible` show that these are exactly the Gram
+  matrices of unit vectors, with the same objective.
 * `hyperplaneExpectation` is the right-hand side `∑_{i<j} w_ij arccos(v_i · v_j) / π` of their
   Theorem 3.1, which is the expected weight of the random-hyperplane cut (that probabilistic
   identity is proved in `MathlibExt.Combinatorics.Optimization.RandomHyperplane`).
@@ -180,5 +187,50 @@ theorem mul_vectorObjective_le_hyperplaneExpectation {m : ℕ} {w : ι → ι �
     (0.87856 : ℝ) * vectorObjective w v ≤ hyperplaneExpectation w v :=
   (mul_le_mul_of_nonneg_right (le_of_lt lt_gwConstant) (vectorObjective_nonneg hw hv)).trans
     (gwConstant_mul_vectorObjective_le hw hv)
+
+/-- **Objective of the MAX CUT semidefinite program.** For a matrix `Y`,
+`∑_{i<j} w_ij (1 - Y_ij) / 2` (Goemans and Williamson, *J. ACM* 42(6) (1995), §4; program (11)
+of Goemans, "Semidefinite programming in combinatorial optimization", *Math. Programming* 79
+(1997), 143–161). -/
+noncomputable def sdpObjective (w : ι → ι → ℝ) (Y : Matrix ι ι ℝ) : ℝ :=
+  ∑ p ∈ pairs ι, w p.1 p.2 * (1 - Y p.1 p.2) / 2
+
+omit [Fintype ι] [LinearOrder ι] in
+/-- **Feasible matrices of the MAX CUT semidefinite program.** `Y` is positive semidefinite with
+all diagonal entries equal to `1` (Goemans and Williamson, *J. ACM* 42(6) (1995), §4; Goemans,
+*Math. Programming* 79 (1997), program (11)). -/
+def SDPFeasible (Y : Matrix ι ι ℝ) : Prop := Y.PosSemidef ∧ ∀ i, Y i i = 1
+
+/-- **Unit vectors give feasible matrices.** For unit vectors `v_i ∈ ℝ^m`, the Gram matrix
+`Y_ij = v_i · v_j` is feasible for the semidefinite program, with the same objective as the
+vector program (P) (Goemans and Williamson, *J. ACM* 42(6) (1995), §4). -/
+theorem sdpFeasible_gram (w : ι → ι → ℝ) {m : ℕ} {v : ι → EuclideanSpace ℝ (Fin m)}
+    (hv : ∀ i, ‖v i‖ = 1) :
+    SDPFeasible (Matrix.gram ℝ v) ∧ sdpObjective w (Matrix.gram ℝ v) = vectorObjective w v := by
+  refine ⟨⟨Matrix.posSemidef_gram ℝ v, fun i => ?_⟩, ?_⟩
+  · rw [Matrix.gram_apply, real_inner_self_eq_norm_sq, hv i, one_pow]
+  · simp [sdpObjective, vectorObjective, Matrix.gram_apply]
+
+omit [Fintype ι] [LinearOrder ι] in
+/-- **Feasible matrices are Gram matrices of unit vectors.** Every positive semidefinite `Y`
+with unit diagonal is the Gram matrix of unit vectors `v_i ∈ ℝ^m` for some `m` (Goemans and
+Williamson, *J. ACM* 42(6) (1995), §4, where `m = n` by an incomplete Cholesky decomposition;
+here `m` comes from a decomposition `Y = ∑_k u_k u_kᵀ` and is not bounded). -/
+theorem exists_gram_eq_of_sdpFeasible [Finite ι] {Y : Matrix ι ι ℝ} (hY : SDPFeasible Y) :
+    ∃ m : ℕ, ∃ v : ι → EuclideanSpace ℝ (Fin m), (∀ i, ‖v i‖ = 1) ∧ Matrix.gram ℝ v = Y := by
+  obtain ⟨m, u, hu⟩ := Matrix.posSemidef_iff_eq_sum_vecMulVec.1 hY.1
+  let v : ι → EuclideanSpace ℝ (Fin m) := fun i => WithLp.toLp 2 fun k => u k i
+  have hgram : Matrix.gram ℝ v = Y := by
+    ext i j
+    rw [hu, Matrix.gram_apply, Matrix.sum_apply]
+    simp only [v, PiLp.inner_apply, RCLike.inner_apply, conj_trivial, Matrix.vecMulVec_apply,
+      star_trivial]
+    refine Finset.sum_congr rfl fun k _ => ?_
+    ring
+  refine ⟨m, v, fun i => ?_, hgram⟩
+  have h : ‖v i‖ ^ 2 = 1 := by
+    rw [← real_inner_self_eq_norm_sq, ← Matrix.gram_apply (𝕜 := ℝ) v i i, hgram, hY.2 i]
+  have := norm_nonneg (v i)
+  nlinarith [sq_nonneg (‖v i‖ - 1)]
 
 end MathlibExt.Combinatorics.Optimization.GoemansWilliamson

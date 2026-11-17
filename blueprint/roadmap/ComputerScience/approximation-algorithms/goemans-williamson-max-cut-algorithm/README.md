@@ -15,7 +15,10 @@ Proved here, for a standard Gaussian direction $r$ (which the paper notes gives 
 uniform point on the sphere): the relaxation property ($Z_P \ge$ every cut), Lemma 3.2,
 Theorem 3.1, the constant $\alpha$ with Lemma 3.4 and a certified proof of Lemma 3.5, and
 Theorem 3.3, hence the guarantee $\mathbb{E}[w(S, \bar S)] \ge \alpha \cdot \mathrm{OPT}$ for vectors attaining
-$Z_P$. Not formalized: the semidefinite-programming form of (P), its polynomial-time solution, and the
+$Z_P$. Also proved: (P) and its semidefinite form, $\max \frac12\sum_{i<j} w_{ij}(1 - Y_{ij})$ over
+positive semidefinite $Y$ with unit diagonal, have the same feasible values when vectors of any
+dimension are allowed (Gram matrices).
+Not formalized: the polynomial-time solution of the semidefinite program, and the
 extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 
 ## The relaxation
@@ -31,6 +34,13 @@ extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 - [The relaxation objective is nonnegative for nonnegative weights](vector-objective-nonneg.md)
 - [Cuts embed in the vector relaxation](vector-objective-cut-sign-single.md)
 - [The vector relaxation bounds every cut](cut-weight-le-relaxation-value.md)
+
+## The semidefinite program
+
+- [Objective of the MAX CUT semidefinite program](sdp-objective.md)
+- [Feasible matrices of the MAX CUT semidefinite program](sdpfeasible.md)
+- [Unit vectors give feasible matrices](sdp-feasible-gram.md)
+- [Feasible matrices are Gram matrices of unit vectors](exists-gram-eq-of-sdp-feasible.md)
 
 ## The constant
 

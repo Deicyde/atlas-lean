@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Combinatorics.Optimization.MaxCutRelaxation
+public import Mathlib.Algebra.Order.Star.Real
 
 @[expose] public section
 
@@ -35,5 +36,14 @@ example : gwConstant * vectorObjective edgeWeight
       (fun i => cutSign ({0} : Finset (Fin 2)) i • EuclideanSpace.single (0 : Fin 1) (1 : ℝ)) :=
   gwConstant_mul_vectorObjective_le (fun _ _ => zero_le_one)
     (vectorObjective_cutSign_single Nat.one_pos edgeWeight {0}).1
+
+/-- The identity matrix is feasible for the semidefinite program (orthonormal vectors). -/
+theorem sdpFeasible_one : SDPFeasible (1 : Matrix (Fin 3) (Fin 3) ℝ) :=
+  ⟨Matrix.PosSemidef.one, fun i => by simp⟩
+
+/-- Non-vacuity: the identity is the Gram matrix of unit vectors in some `ℝ^m`. -/
+example : ∃ m : ℕ, ∃ v : Fin 3 → EuclideanSpace ℝ (Fin m), (∀ i, ‖v i‖ = 1) ∧
+    Matrix.gram ℝ v = 1 :=
+  exists_gram_eq_of_sdpFeasible sdpFeasible_one
 
 end MathlibExtTest.Combinatorics.Optimization.MaxCutRelaxation
