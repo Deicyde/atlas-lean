@@ -3,7 +3,7 @@
 For $A \subseteq \Omega^N$ and $x \in \Omega^N$, $f_c(A, x)$ is the Euclidean distance from $0$ to
 the convex hull $V_A(x)$ of $U_A(x)$ in $\mathbb{R}^N$ (Talagrand, *Concentration of measure and
 isoperimetric inequalities in product spaces*, Publ. Math. IHÉS 81 (1995), Section 4.1). By
-duality (Lemma 4.1.2 of the source), $f_c(A, x) \le t$ means that for every weight vector
+duality (Lemma 4.1.2 of the source), $f_c(A, x) \le t$ means that for every nonnegative weight vector
 $\alpha$ some $y \in A$ differs from $x$ on a set of coordinates of $\alpha$-weight at most
 $t\,\|\alpha\|_2$: one distance controls all weighted Hamming distances at once.
 

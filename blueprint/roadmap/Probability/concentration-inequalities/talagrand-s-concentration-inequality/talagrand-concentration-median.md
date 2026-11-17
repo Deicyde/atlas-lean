@@ -18,6 +18,9 @@ event is certain while the bound tends to $0$.
 - [McDiarmid's inequality](../mcdiarmid-s-inequality/README.md): background; for a $1$-Lipschitz
   $F$ the bounded-differences inequality gives fluctuations of order $\sqrt{n}\,K$, while
   convexity brings them down to $O(K)$.
+- [Talagrand's convex-distance inequality](lintegral-exp-convex-distance-sq-le.md): background;
+  the product-space inequality of Talagrand's 1995 paper, cited in the sources, for the convex
+  distance to a set.
 
 ## Sources
 
