@@ -26,5 +26,5 @@ vacuous and the face is $C_d(n)$ itself; for $d = 0$, $S = \emptyset$ and the fa
 
 ## Sources
 
-- G. M. Ziegler, "Convex polytopes: extremal constructions and f-vector shapes", IAS/Park City Mathematics Series, Volume 14 (2004), arXiv:math/0411400v2 (7 December 2005). Numbering as in this arXiv version, which is the version read; the published version was not consulted. Example 2.6. The statement there is informal (facets correspond to $d$-subsets whose elements split into adjacent pairs, for $d$ even and indices read cyclically); the version here is Gale's original formulation, valid for all $d$.
+- G. M. Ziegler, "Convex polytopes: extremal constructions and f-vector shapes", IAS/Park City Mathematics Series, Volume 14 (2004), arXiv:math/0411400v2 (7 December 2005). Numbering as in this arXiv version, which is the version read; the published version was not consulted. Example 2.6. The statement there is informal (facets correspond to $d$-subsets whose elements split into adjacent pairs, for $d$ even and indices read cyclically); the version here is the usual form of Gale's evenness criterion, valid for all $d$.
 - D. Gale, "Neighborly and cyclic polytopes", in *Convexity*, Proc. Sympos. Pure Math. 7, American Mathematical Society, 1963 (reference [30] of the PCMI notes; not read).
