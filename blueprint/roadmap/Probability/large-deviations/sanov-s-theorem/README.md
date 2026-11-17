@@ -14,3 +14,5 @@ The empirical measures $L_n = \frac1n \sum_{i<n} \delta_{X_i}$ of an i.i.d. samp
 - [Contraction principle](../contraction-principle/README.md)
 - [Cramér's theorem](../cram-r-s-theorem/README.md)
 - [Ben Arous–Guionnet large deviations](../ben-arous-guionnet-large-deviations/README.md)
+- [Method of types](../../../InformationTheory/entropy-and-mutual-information/method-of-types/README.md):
+  the finite-alphabet Sanov theorem proved by counting type classes (Csiszár 1998, Theorem III.3).

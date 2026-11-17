@@ -53,4 +53,20 @@ $\exp(-n D(\Gamma \| Q) + O(\log n))$ whenever the types in $\Gamma$ approach it
 ## Related topics
 
 - [Shannon entropy and Kullback–Leibler divergence](../shannon-entropy-and-kullback-leibler-divergence/README.md):
+- [Gibbs' conditioning principle, finite alphabet](gibbs-conditioning-principle.md)
+- [Empirical distribution of a type agrees with the empirical measure](empirical-agrees-with-sample-empirical-measure.md)
+- [Sanov's lower bound, asymptotic form](eventually-exp-le-iid-prob-empirical-mem.md)
+- [Sanov's upper bound, asymptotic form](eventually-iid-prob-empirical-mem-le.md)
+- [The number of types is subexponential](eventually-pow-card-le-exp.md)
+- [Sanov's lower bound, non-asymptotic](exp-le-pow-mul-iid-prob-empirical-mem.md)
+- [The Sanov event as a union of type classes](iid-prob-empirical-mem-eq-sum.md)
+- [Sanov's upper bound, non-asymptotic](iid-prob-empirical-mem-le.md)
+- [Entropy in nats and the repository's entropy in bits](entropy-in-nats-and-bits.md)
+- [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md)
   the entropy and divergence that the type-class bounds are expressed in.
+- [Sanov's theorem](../../../Probability/large-deviations/sanov-s-theorem/README.md): the large deviation
+  principle for empirical measures on Polish spaces, whose finite-alphabet case is proved on this
+  topic by counting types.
+- [Random coding bound and Gallager's exponent](../../channel-coding/random-coding-bound-and-gallager-s-exponent/README.md):
+  error exponents for channel coding; Csiszár (1998, Section IV) rederives such exponents with
+  joint types.

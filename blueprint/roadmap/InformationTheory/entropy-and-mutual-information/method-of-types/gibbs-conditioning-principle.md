@@ -1,0 +1,18 @@
+# Gibbs' conditioning principle (finite alphabet)
+
+Let $Q > 0$ be a distribution on a finite alphabet and $\Gamma$ a set of distributions satisfying
+(III.21) in the explicit form of [Sanov's theorem for finite alphabets](sanov-theorem-for-finite-alphabets.md),
+with $r = D(\Gamma \| Q)$. If a unique $P^*$ in the closure of $\Gamma$ has $D(P^* \| Q) = r$, then for
+every $k$ and every word $y$ of length $k$,
+
+$$\frac{Q^n\{x : P_x \in \Gamma,\ x_0 \dots x_{k-1} = y\}}{Q^n\{x : P_x \in \Gamma\}} \longrightarrow \prod_{i<k} P^*(y_i),$$
+
+that is, conditioned on the rare event $P_x \in \Gamma$, the first $k$ draws are asymptotically
+i.i.d. with law $P^*$. The statement is recorded as wanted (not proved). It is weaker than the
+source in one respect: it assumes $Q > 0$, while Csiszár allows any $Q$.
+
+## Sources
+
+- I. Csiszár, "The method of types", *IEEE Trans. Inform. Theory* 44(6) (1998), 2505–2523, Corollary to Theorem III.3.
+- I. Csiszár, "Sanov property, generalized I-projection and a conditional limit theorem",
+  *Ann. Probab.* 12 (1984), 768–793: the general version; not consulted for this statement.

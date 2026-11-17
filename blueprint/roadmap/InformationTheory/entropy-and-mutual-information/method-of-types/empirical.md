@@ -6,6 +6,9 @@ the empirical distribution $P_x$; for $n \ge 1$ it is a probability vector
 ([it sums to one](sum-empirical.md)). For $n = 0$ the Lean definition returns the zero function
 (division by zero), so every theorem using it assumes $n \ge 1$.
 
+The bridge [empirical distribution of a type agrees with the empirical measure](empirical-agrees-with-sample-empirical-measure.md)
+identifies it with the repository's `sampleEmpiricalMeasure`, used by the general Sanov theorem.
+
 ## Sources
 
 - I. Csiszár, "The method of types", *IEEE Trans. Inform. Theory* 44(6) (1998), 2505–2523, Section II (the type $P_{\mathbf x}(a)$ as the relative frequency of $a$ in $\mathbf x$).
