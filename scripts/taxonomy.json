@@ -1312,6 +1312,7 @@
   "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad": {"to": "ComputerScience/cryptography", "title": "One-time pad over a finite group"},
   "CSLibExt/Crypto/PublicKey/DiffieHellman": {"to": "ComputerScience/cryptography", "title": "Diffie–Hellman key exchange"},
   "CSLibExt/Crypto/PublicKey/ElGamal": {"to": "ComputerScience/cryptography", "title": "ElGamal encryption"},
+  "CSLibExt/Crypto/PublicKey/GoldwasserMicali": {"to": "ComputerScience/cryptography", "title": "Goldwasser–Micali encryption"},
   "CSLibExt/Crypto/PublicKey/RSA": {"to": "ComputerScience/cryptography", "title": "RSA cryptosystem"},
   "CSLibExt/Crypto/PublicKey/SemanticSecurity": {"to": "ComputerScience/cryptography", "title": "Semantic security and indistinguishability"},
   "CSLibExt/Crypto/Signatures/Lamport": {"to": "ComputerScience/cryptography", "title": "Lamport signature"},

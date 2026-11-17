@@ -6,6 +6,7 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [Diffie–Hellman key exchange](diffie-hellman-key-exchange/README.md)
 - [Differential privacy](differential-privacy/README.md)
 - [ElGamal encryption](elgamal-encryption/README.md)
+- [Goldwasser–Micali encryption](goldwasser-micali-encryption/README.md)
 - [Lamport signature](lamport-signature/README.md)
 - [Laplace and exponential mechanisms](laplace-and-exponential-mechanisms/README.md)
 - [Merkle–Damgård construction](merkle-damg-rd-construction/README.md)

@@ -41,6 +41,8 @@ reductions used are one call to the given adversary.
 
 ## Related topics
 
+- [Goldwasser–Micali encryption](../goldwasser-micali-encryption/README.md): the first scheme proved
+  semantically secure, from the hardness of deciding quadratic residuosity.
 - [ElGamal encryption](../elgamal-encryption/README.md): an eavesdropping (indistinguishability)
   security proof from the decisional Diffie–Hellman assumption.
 - [Goldreich–Levin theorem](../../../TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/README.md):
