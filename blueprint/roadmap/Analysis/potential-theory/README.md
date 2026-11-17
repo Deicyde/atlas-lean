@@ -10,3 +10,7 @@ Harmonic and subharmonic functions in the plane and in R^n, harmonic conjugates,
 - [A harmonic function vanishing on a set of positive measure is zero](eq-zero-of-harmonic-on-nhd-of-vanishing.md)
 - [Harmonic functions on simply connected domains are real parts](exists-differentiable-on-re-eq-of-harmon.md)
 - [Nonnegative harmonic functions on the upper half-plane integrable along the imaginary axis vanish](eq-zero-of-harmonic-on-nhd-upper-half-pl.md)
+
+## Related topics
+
+- [Dirichlet forms](../../Probability/markov-chains/dirichlet-forms/README.md): Beurling and Deny's axiomatic potential theory: capacities, exceptional sets and quasi-continuity for Dirichlet forms.

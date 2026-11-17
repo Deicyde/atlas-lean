@@ -32,3 +32,4 @@ Random walks on a finite group $G$ driven by a probability $Q$: the $k$-step law
   the abelian transform used for walks on the circle and the cube.
 - [Fisher–Yates shuffle](../../../ComputerScience/randomized-algorithms/fisher-yates-shuffle/README.md):
   exact generation of a uniform permutation, the benchmark for card-shuffling walks.
+- [Dirichlet forms](../../markov-chains/dirichlet-forms/README.md): the Dirichlet form, spectral gap and log-Sobolev constant of a finite reversible chain.

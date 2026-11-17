@@ -27,3 +27,4 @@ reaches arbitrarily high and low levels and hits every real number.
 - [Strong Markov property and reflection principle](../strong-markov-property-and-reflection-principle/README.md)
 - [Random walks](../../random-walks/README.md)
 - [Weierstrass function](../../../Analysis/real-functions/continuity-and-functional-equations/weierstrass-function/README.md)
+- [Dirichlet forms](../../markov-chains/dirichlet-forms/README.md): the Dirichlet form of Brownian motion is $\tfrac12 \int |\nabla f|^2$, the model of the general theory.

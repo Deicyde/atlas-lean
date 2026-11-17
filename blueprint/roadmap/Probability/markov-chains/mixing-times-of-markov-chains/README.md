@@ -27,3 +27,4 @@
   mixing times and cutoff computed by Fourier analysis, for random transpositions and riffle
   shuffles.
 - [Canonical paths and multicommodity flow](../canonical-paths-and-multicommodity-flow/README.md): geometric bounds on the spectral gap of a reversible chain by canonical paths and flows, and Sinclair's converse that fast mixing yields a low-congestion flow.
+- [Dirichlet forms](../dirichlet-forms/README.md): the Dirichlet form of a reversible chain, its spectral gap and log-Sobolev constant, and Sinclair's mixing bound restated through the spectral gap.

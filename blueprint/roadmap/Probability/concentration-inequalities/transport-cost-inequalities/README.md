@@ -33,3 +33,4 @@ the model case, listed directly under concentration inequalities.
   the relative entropy on the Wasserstein space.
 - [Large deviations](../../large-deviations/README.md): Sanov's theorem has the relative entropy
   as rate function, the quantity that transport inequalities compare with $W_2$.
+- [Dirichlet forms](../../markov-chains/dirichlet-forms/README.md): the log-Sobolev constant of a finite Markov chain, defined through its Dirichlet form (Diaconis and Saloff-Coste).

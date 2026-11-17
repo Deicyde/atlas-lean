@@ -25,3 +25,7 @@
 - [Identity operator gives the identity kernel](markov-kernel-of-positive-operator-id.md)
 - [Identity operator kernel is pointwise Dirac](markov-kernel-of-positive-operator-id-ap.md)
 - [Operator composition corresponds to kernel composition](markov-kernel-of-positive-operator-comp.md)
+
+## Related topics
+
+- [Dirichlet forms](../dirichlet-forms/README.md): Fukushima's and Albeverio–Ma–Röckner's constructions of Markov processes with regular paths from Dirichlet forms.
