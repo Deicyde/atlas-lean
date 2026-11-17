@@ -78,3 +78,5 @@ the adversary.
   kind whose leakage of partial information motivated probabilistic encryption.
 - [ElGamal encryption](../elgamal-encryption/README.md): a later probabilistic scheme, with security
   from the decisional Diffie–Hellman assumption.
+- [Zero-knowledge proof of quadratic residuosity](../zero-knowledge-proof-of-quadratic-residuosity/README.md):
+  proving that a number is a quadratic residue without revealing a square root.

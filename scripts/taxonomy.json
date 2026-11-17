@@ -1309,6 +1309,7 @@
   "CSLibExt/Crypto/Privacy/Laplace": {"to": "ComputerScience/cryptography", "title": "Laplace and exponential mechanisms"},
   "CSLibExt/Crypto/Hash/MerkleDamgard": {"to": "ComputerScience/cryptography", "title": "Merkle–Damgård construction"},
   "CSLibExt/Crypto/Identification/GraphIsomorphism": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},
+  "CSLibExt/Crypto/Identification/QuadraticResiduosity": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proof of quadratic residuosity"},
   "CSLibExt/Crypto/Identification/RewindingSimulator": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},
   "CSLibExt/Crypto/Identification/Schnorr": {"to": "ComputerScience/cryptography", "title": "Schnorr identification scheme"},
   "CSLibExt/Crypto/Identification/SequentialRepetition": {"to": "ComputerScience/cryptography", "title": "Zero-knowledge proofs"},

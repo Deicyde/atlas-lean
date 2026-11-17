@@ -90,6 +90,8 @@ interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below
 
 ## Related topics
 
+- [Zero-knowledge proof of quadratic residuosity](../zero-knowledge-proof-of-quadratic-residuosity/README.md):
+  the first zero-knowledge proof (Goldwasser, Micali and Rackoff), in the same framework.
 - [Schnorr identification scheme](../schnorr-identification-scheme/README.md): another Sigma protocol,
   for knowledge of a discrete logarithm, with the same honest-verifier simulation.
 - [Graph isomorphism and Arthur–Merlin proofs](../../../TheoryOfComputation/randomized-and-quantum-complexity/graph-isomorphism-and-arthur-merlin-proofs/README.md):
