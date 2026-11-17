@@ -6,7 +6,7 @@ $$\sum_{i<j} w_{ij} \, \frac{\arccos(v_i \cdot v_j)}{\pi}.$$
 
 By Theorem 3.1 of Goemans and Williamson it is the expected weight of the cut
 $\{i : v_i \cdot r \ge 0\}$ for a random direction $r$, when the $v_i$ are unit vectors. The
-definition is only the expression; the probabilistic identity is the wanted statement
+definition is only the expression; the probabilistic identity is
 [Theorem 3.1](integral-cut-weight-hyperplane.md).
 
 ## Sources

@@ -8,17 +8,20 @@ with $\operatorname{sgn} x = 1$ for $x \ge 0$ and $-1$ otherwise. Goemans and Wi
 lemma for $r$ uniform on the unit sphere and prove it by symmetry: the set of $r$ with
 $u \cdot r \ge 0 > v \cdot r$ meets the sphere in a spherical digon of angle
 $\theta = \arccos(u \cdot v)$. They remark (p. 1121) that $r$ may be taken Gaussian without
-normalization, since normalizing does not change the signs; this page records that Gaussian
-form. Recorded as wanted.
+normalization, since normalizing does not change the signs; this page proves that Gaussian form.
+The uniform-sphere statement itself is not formalized.
+
+## Informally uses
+
+- [Separation probability in an inner product space](../../../Probability/distributions/multivariate-normal-distribution/std-gaussian-sign-ne.md):
+  the same statement in any finite-dimensional real inner product space, proved by reduction to
+  the plane and polar coordinates rather than by the paper's spherical-digon argument.
 
 ## Background
 
 - [Sheppard's formula](../../../Probability/distributions/multivariate-normal-distribution/sheppard-quadrant-probability-arcsine.md):
   for $u \cdot v = \rho \in (-1, 1)$ the pair $(u \cdot r, v \cdot r)$ is a standard bivariate normal
-  vector with correlation $\rho$, and the two statements are equivalent:
-  $1 - 2\left(\frac14 + \frac{\arcsin \rho}{2\pi}\right) = \frac{\arccos \rho}{\pi}$.
-- [Standard Gaussian density](../../../Probability/distributions/multivariate-normal-distribution/std-gaussian-eq-with-density.md):
-  the rotation-invariant density behind the reduction to two dimensions.
+  vector with correlation $\rho$, and the two statements are equivalent.
 
 ## Sources
 

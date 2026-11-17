@@ -5,10 +5,6 @@ vector $r$, the cut $S = \{i : v_i \cdot r \ge 0\}$ has expected weight
 
 $$\mathbb{E}[w(S, \bar S)] = \sum_{i<j} w_{ij} \frac{\arccos(v_i \cdot v_j)}{\pi}.$$
 
-Recorded as wanted. With the proved
-[term-by-term comparison](gw-constant-mul-vector-objective-le.md) it yields Theorem 3.3:
-$\mathbb{E}[w(S, \bar S)] \ge \alpha \cdot \frac12 \sum_{i<j} w_{ij}(1 - v_i \cdot v_j)$ for nonnegative weights.
-
 ## Informally uses
 
 - [Lemma 3.2](measure-real-sign-ne.md): each pair is separated with probability

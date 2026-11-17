@@ -28,7 +28,7 @@ Vertices are a finite linearly ordered type `ι`, and `w i j` is the weight of t
   relaxation property `Z_P ≥ Z_MC` (p. 1120): every cut weighs at most the relaxation value.
 * `hyperplaneExpectation` is the right-hand side `∑_{i<j} w_ij arccos(v_i · v_j) / π` of their
   Theorem 3.1, which is the expected weight of the random-hyperplane cut (that probabilistic
-  identity is recorded as wanted in `WantedExt.Combinatorics.Optimization.RandomHyperplaneWanted`).
+  identity is proved in `MathlibExt.Combinatorics.Optimization.RandomHyperplane`).
   `gwConstant_mul_vectorObjective_le` is the term-by-term comparison that proves their
   Theorem 3.3: for nonnegative weights and unit vectors, `α · (P-objective) ≤ ∑ w arccos / π`.
 -/
@@ -140,8 +140,7 @@ theorem cutWeight_le_relaxationValue {m : ℕ} (hm : 0 < m) (w : ι → ι → �
 /-- **Expected weight of the random-hyperplane cut.** `∑_{i<j} w_ij arccos(v_i · v_j) / π`,
 the closed form of Goemans and Williamson's Theorem 3.1 (*J. ACM* 42(6) (1995)) for the
 expected weight of the cut `{i : v_i · r ≥ 0}` cut out by a random hyperplane. Here it is only
-the closed-form expression; the probabilistic identity is wanted
-(`RandomHyperplaneWanted.integral_cutWeight_hyperplane`). -/
+the closed-form expression; the probabilistic identity is `integral_cutWeight_hyperplane`. -/
 noncomputable def hyperplaneExpectation {m : ℕ} (w : ι → ι → ℝ)
     (v : ι → EuclideanSpace ℝ (Fin m)) : ℝ :=
   ∑ p ∈ pairs ι, w p.1 p.2 * (arccos (inner ℝ (v p.1) (v p.2)) / π)

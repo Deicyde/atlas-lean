@@ -11,10 +11,11 @@ term with the objective of (P) (Lemma 3.4) gives an expected cut of at least $\a
 relaxation value, hence at least $\alpha \cdot \mathrm{OPT}$, with
 $\alpha = \min_{0<\theta\le\pi} \frac{2}{\pi} \frac{\theta}{1-\cos\theta} > 0.87856$ (Theorem 3.3, Lemma 3.5).
 
-Proved here: the relaxation property ($Z_P \ge$ every cut), the constant $\alpha$ with
-Lemma 3.4 and a certified proof of Lemma 3.5, and the term-by-term inequality of Theorem 3.3.
-Recorded as wanted: the probabilistic Lemma 3.2 and Theorem 3.1 for a standard Gaussian $r$.
-Not formalized: the semidefinite-programming form of (P), its polynomial-time solution, and the
+Proved here, for a standard Gaussian direction $r$ (which the paper notes gives the same cut as a
+uniform point on the sphere): the relaxation property ($Z_P \ge$ every cut), Lemma 3.2,
+Theorem 3.1, the constant $\alpha$ with Lemma 3.4 and a certified proof of Lemma 3.5, and
+Theorem 3.3, hence the guarantee $\mathbb{E}[w(S, \bar S)] \ge \alpha \cdot \mathrm{OPT}$ for vectors attaining
+$Z_P$. Not formalized: the semidefinite-programming form of (P), its polynomial-time solution, and the
 extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 
 ## The relaxation
@@ -48,6 +49,8 @@ extensions to MAX 2SAT and MAX DICUT in §7 of the paper.
 - [Goemans–Williamson Theorem 3.1: expected weight of the random-hyperplane cut](integral-cut-weight-hyperplane.md)
 - [Goemans–Williamson Theorem 3.3, term-by-term comparison](gw-constant-mul-vector-objective-le.md)
 - [Goemans–Williamson Theorem 3.3 with the numerical constant](mul-vector-objective-le-hyperplane-expec.md)
+- [Goemans–Williamson Theorem 3.3](gw-constant-mul-vector-objective-le-inte.md)
+- [The Goemans–Williamson guarantee](gw-constant-mul-cut-weight-le-integral.md)
 
 ## Related topics
 

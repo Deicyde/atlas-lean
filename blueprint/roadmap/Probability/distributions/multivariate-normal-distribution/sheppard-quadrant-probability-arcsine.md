@@ -9,9 +9,13 @@ $\frac{1}{4} + \frac{\arcsin \rho}{2\pi}$.
 
 ## Background
 
-- [Goemans–Williamson Lemma 3.2](../../../ComputerScience/approximation-algorithms/goemans-williamson-max-cut-algorithm/measure-real-sign-ne.md):
-  the same fact in hyperplane form: a random hyperplane separates two unit vectors with inner
-  product $\rho$ with probability $1 - 2\left(\frac14 + \frac{\arcsin\rho}{2\pi}\right) = \frac{\arccos\rho}{\pi}$.
+- [Separation probability of two directions](std-gaussian-sign-ne.md) (proved): the same fact in
+  hyperplane form, as in Goemans and Williamson's Lemma 3.2: a random hyperplane separates two
+  unit vectors with inner product $\rho$ with probability
+  $1 - 2\left(\frac14 + \frac{\arcsin\rho}{2\pi}\right) = \frac{\arccos\rho}{\pi}$. Deducing the quadrant form
+  stated here needs the identification of the multivariate Gaussian with covariance
+  $\begin{pmatrix} 1 & \rho \\ \rho & 1 \end{pmatrix}$ as the law of $(\langle u, r\rangle, \langle v, r\rangle)$, which is not
+  done yet.
 
 ## Sources
 

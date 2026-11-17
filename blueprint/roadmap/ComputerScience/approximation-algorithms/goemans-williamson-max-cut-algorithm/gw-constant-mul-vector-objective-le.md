@@ -6,7 +6,7 @@ $$\alpha \cdot \frac12 \sum_{i<j} w_{ij}(1 - v_i \cdot v_j) \le \sum_{i<j} w_{ij
 
 This is the inequality by which Goemans and Williamson prove Theorem 3.3; the right-hand side is
 the expected weight of the random-hyperplane cut by their
-[Theorem 3.1](integral-cut-weight-hyperplane.md), which is wanted here. Applied to vectors whose
+[Theorem 3.1](integral-cut-weight-hyperplane.md); combined, they give [Theorem 3.3](gw-constant-mul-vector-objective-le-inte.md). Applied to vectors whose
 value is within $\varepsilon$ of $Z_P$, it gives a random cut of expected weight at least
 $\alpha (Z_P - \varepsilon) \ge \alpha(\mathrm{OPT} - \varepsilon)$. Nonnegativity of the
 weights is used: each term is multiplied by $w_{ij}$.
