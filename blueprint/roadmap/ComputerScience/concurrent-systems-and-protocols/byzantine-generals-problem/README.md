@@ -1,5 +1,7 @@
 # Byzantine generals problem
 
+A commander sends an order to the other generals, some of whom, possibly including the commander, are traitors; the loyal generals must agree (IC1), on the commander's order if it is loyal (IC2). The model on these pages is synchronous (lock-step rounds), with Byzantine failures (a traitor may send anything to anyone, differently to each recipient), on a complete network of reliable links on which a receiver knows the sender of every message, without signatures ("oral messages"). With at least three generals and two orders the problem is solvable with at most $m$ traitors exactly when there are more than $3m$ generals.
+
 - [Oral-message protocol](oral-protocol.md)
 - [Local views determine states](states-eq-of-inbox-eq.md)
 - [Initial state of a general](init-state.md)
@@ -31,3 +33,7 @@
 - [Agreement under oral messages (IC1)](om-agree.md)
 - [Oral messages achieve interactive consistency](om-interactive-consistency.md)
 - [The oral messages algorithm solves the Byzantine generals problem](byzantine-generals.md)
+
+## Related topics
+
+- [Byzantine agreement](../byzantine-agreement/README.md): the version in which every process has an input (Fischer, Lynch and Merritt), reduced here to the commander version.

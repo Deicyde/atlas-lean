@@ -8,3 +8,5 @@ condition (IC1) or the validity condition (IC2) fails after $T$ rounds.
 
 This is the theorem of Pease, Shostak and Lamport, proved here by a commander version of the
 hexagon argument of Fischer, Lynch and Merritt.
+
+**Model.** Synchronous rounds; one Byzantine traitor, which may send different messages to different generals in every round; reliable links with known senders; no signatures; deterministic protocols. With unforgeable signatures the problem is solvable for three generals (Lamport, Shostak and Pease, §4, Theorem 2), so the absence of signatures is essential.

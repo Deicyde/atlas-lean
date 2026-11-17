@@ -9,3 +9,9 @@ behaviour of the traitors for which the agreement condition (IC1) or the validit
 (IC2) fails after $T$ rounds.
 
 This is the theorem of Lamport, Shostak and Pease, proved by reduction to three generals.
+
+**Model.** Synchronous rounds; at most $m$ Byzantine traitors; a complete network of reliable links with known senders; no signatures; deterministic protocols. The hypothesis $3 \le n$ is needed: with two generals there is a single lieutenant, and obeying the commander tolerates one traitor.
+
+## Related topics
+
+- [No synchronous protocol reaches Byzantine agreement when $3 \le n \le 3m$](../byzantine-agreement/not-solves-of-card-le-three-mul.md): the same bound for agreement with an input at every process, deduced from this one.
