@@ -4034,6 +4034,7 @@
   "MathlibExt/Probability/FiniteMarkovChainConstruction": {"to": "Probability/markov-chains", "title": "Construction of Markov chains"},
   "MathlibExt/Probability/FiniteMarkovChainConvergence": {"to": "Probability/markov-chains", "title": "Convergence theorem for finite Markov chains"},
   "MathlibExt/Probability/FiniteWeight": {"to": "Probability/random-fields", "title": "Conditional independence on finite configuration spaces"},
+  "MathlibExt/Probability/GenericChainingGaussian": {"to": "Probability/high-dimensional-probability", "title": "Generic chaining and Gaussian processes"},
   "MathlibExt/Probability/GenericChaining": {"to": "Probability/high-dimensional-probability", "title": "Generic chaining and Gaussian processes"},
   "MathlibExt/Probability/FreeProbability": {"to": "Probability/high-dimensional-probability", "title": "Free probability"},
   "MathlibExt/Probability/Geometry/IntrinsicIsotropicConstant": {"to": "Probability/high-dimensional-probability", "title": "Isotropic constant of log-concave laws"},

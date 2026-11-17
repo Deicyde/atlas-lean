@@ -15,8 +15,10 @@ minoration.
 The index set is finite throughout, as in the source: for an infinite $T$ the supremum is defined
 through finite subsets. The generic chaining bound is proved with the explicit constant
 $L = 10$, and Dudley's entropy bound $\mathbb{E}\sup_t X_t \le 17\sum_n 2^{n/2} e_n(T)$, the
-classical form in which the sets of the chain are optimal coverings, with $L = 17$; the majorizing
-measure theorem and Sudakov's minoration are stated, not yet proved.
+classical form in which the sets of the chain are optimal coverings, with $L = 17$. For a centred
+Gaussian process whose canonical distance is the metric, the increments satisfy the sub-Gaussian
+condition, so the upper half of the majorizing measure theorem is proved; its lower half and
+Sudakov's minoration are stated, not yet proved.
 
 Source: M. Talagrand, *Upper and Lower Bounds for Stochastic Processes: Decomposition Theorems*,
 2nd ed., Springer 2021, Chapter 2 (theorem numbers on these pages refer to this edition).
@@ -37,6 +39,9 @@ Source: M. Talagrand, *Upper and Lower Bounds for Stochastic Processes: Decompos
 - [Dudley's entropy bound](integral-i-sup-le-dudley.md)
 - [Dudley's sum is finite on a finite space](tsum-entropy-number-lt-top.md)
 - [Entropy numbers are controlled by $\gamma_2$](two-rpow-mul-entropy-number-le-gamma-two.md)
+- [Two-sided Gaussian tail](gaussian-real-abs-tail.md)
+- [Increments of a centred Gaussian process](measure-real-abs-sub-ge-le-of-is-gaussia.md)
+- [Generic chaining bound for Gaussian processes](integral-i-sup-le-gamma-two-of-is-gaussi.md)
 - [Canonical distance of a process](canonical-dist.md)
 - [Majorizing measure theorem](majorizing-measure.md)
 - [Sudakov minoration](sudakov-minoration.md)

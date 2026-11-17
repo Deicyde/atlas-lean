@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.GenericChaining
+public import MathlibExt.Probability.GenericChainingGaussian
 public import Mathlib.Probability.Moments.SubGaussian
 public import Mathlib.Probability.Distributions.Gaussian.Real
 
@@ -127,5 +128,30 @@ example : ENNReal.ofReal (∫ ω, ⨆ t : Pts, (t : ℝ) * ω ∂gaussianReal 0 
 
 example : ∑' n : ℕ, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber (edist : Pts → Pts → ℝ≥0∞) n < ⊤ :=
   tsum_entropyNumber_lt_top
+
+/-- The second moment of a standard Gaussian. -/
+theorem integral_sq_gaussianReal : ∫ x, x ^ 2 ∂gaussianReal 0 1 = 1 := by
+  have h := variance_fun_id_gaussianReal (μ := 0) (v := 1)
+  rw [variance_eq_integral (X := fun x : ℝ => x) measurable_id.aemeasurable,
+    integral_id_gaussianReal] at h
+  simpa using h
+
+/-- The Gaussian version applies to `X_t = t g` on `{0, 1, 2}`: its law is Gaussian and its
+canonical distance is the metric `|s - t|`. -/
+example : ENNReal.ofReal (∫ ω, ⨆ t : Pts, (t : ℝ) * ω ∂gaussianReal 0 1) ≤
+    10 * gammaFunctional 2 (edist : Pts → Pts → ℝ≥0∞) := by
+  set L : ℝ →L[ℝ] (Pts → ℝ) := ContinuousLinearMap.smulRight (1 : ℝ →L[ℝ] ℝ) fun t => (t : ℝ)
+  have hL : (fun (ω : ℝ) (t : Pts) => (t : ℝ) * ω) = ⇑L := by
+    funext ω t; simp [L, mul_comm]
+  have hG : IsGaussian ((gaussianReal 0 1).map fun (ω : ℝ) (t : Pts) => (t : ℝ) * ω) := by
+    rw [hL]; infer_instance
+  refine integral_iSup_le_gammaTwo_of_isGaussian (gaussianReal 0 1)
+    (fun (t : Pts) (ω : ℝ) => (t : ℝ) * ω) (fun t => measurable_id.const_mul _) hG
+    (fun t => by rw [integral_const_mul]; simp) fun s t => ?_
+  have hfac : ∀ ω : ℝ, ((s : ℝ) * ω - (t : ℝ) * ω) ^ 2 = ((s : ℝ) - t) ^ 2 * ω ^ 2 :=
+    fun ω => by ring
+  simp_rw [hfac]
+  rw [integral_const_mul, integral_sq_gaussianReal, mul_one, Real.sqrt_sq_eq_abs,
+    Subtype.dist_eq, Real.dist_eq]
 
 end MathlibExtTest.Probability.GenericChaining

@@ -7,14 +7,14 @@ $$\frac1L\,\gamma_2(T, d) \le \mathbb{E}\sup_{t \in T} X_t \le L\,\gamma_2(T, d)
 (Fernique and Talagrand; Talagrand, *Upper and Lower Bounds for Stochastic Processes*, 2nd ed.,
 2021, Theorem 2.10.1). The upper bound is the generic chaining bound; the lower bound says that
 control of $\mathbb{E}\sup_t X_t$ forces the existence of a small admissible sequence. A process
-is Gaussian when its law on $\mathbb{R}^T$ is a Gaussian measure; the theorem is stated, not yet
-proved.
+is Gaussian when its law on $\mathbb{R}^T$ is a Gaussian measure. The theorem is stated, not yet
+proved; its upper half is proved when the canonical distance is a metric.
 
 ## Informally uses
 
-- [Generic chaining bound](integral-i-sup-le-gamma-two.md): the upper inequality is Theorem
-  2.7.11, for a metric; with the canonical pseudo-distance it applies after identifying indices
-  at distance zero.
+- [Generic chaining bound for Gaussian processes](integral-i-sup-le-gamma-two-of-is-gaussi.md):
+  the upper inequality is Theorem 2.7.11, proved here when the canonical distance is a metric;
+  with a pseudo-distance it applies after identifying indices at distance zero.
 - [Sudakov minoration](sudakov-minoration.md): the first ingredient of Talagrand's proof of the
   lower bound (Lemma 2.10.2), with Gaussian concentration (Lemma 2.10.6) and the partitioning
   scheme of Theorem 2.9.1.
