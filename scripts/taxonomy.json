@@ -5826,6 +5826,7 @@
   "WantedExt/ComputerScience/DSeparationCompletenessWanted": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Bayesian networks"},
   "WantedExt/ComputerScience/DoCalculusWanted": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Causal Bayesian networks"},
   "WantedExt/ComputerScience/GraphIsomorphismQuasipolynomialWanted": {"to": "TheoryOfComputation/fine-grained-complexity", "title": "Graph isomorphism in quasipolynomial time"},
+  "WantedExt/ComputerScience/KarpMinimumCycleMeanWanted": {"to": "ComputerScience/graph-algorithms/shortest-paths", "title": "Minimum cycle mean"},
   "WantedExt/ComputerScience/LinearNonGaussianIdentifiabilityWanted": {"to": "ComputerScience/machine-learning/probabilistic-graphical-models", "title": "Additive noise models and causal identifiability"},
   "WantedExt/ComputerScience/LinearProbingAnalysisWanted": {"to": "ComputerScience/data-structures/hashing", "title": "Analysis of linear probing"},
   "WantedExt/ComputerScience/ShorOrderToFactorProbabilityWanted": {"to": "ComputerScience/quantum-algorithms", "title": "Shor's reduction of factoring to order finding"},
