@@ -19,3 +19,4 @@
 
 - [Gaussian conditioning](../../../../Probability/distributions/gaussian-conditioning/README.md): the Gaussian Bayes update behind each filtering step.
 - [Hidden Markov models](../hidden-markov-models/README.md): the discrete-state analogue with the forward algorithm.
+- [Controllability of linear systems](../../../../Analysis/control-theory/controllability-of-linear-systems/README.md): the control problem dual to estimation; observability of $(A, C)$ is the Kalman rank condition for the pair $(A^\top, C^\top)$.

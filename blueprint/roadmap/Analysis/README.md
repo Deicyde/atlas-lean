@@ -34,6 +34,9 @@ subject includes [special functions](special-functions/README.md) such as the ga
 additive maps; [sequences and series](sequences-and-series/README.md), with Tauberian theorems and series for
 constants such as Catalan's constant; and [numerical analysis](numerical-analysis/README.md), from Newton's method to
 [Céa's lemma](numerical-analysis/c-a-s-lemma/README.md) for Galerkin approximation.
+[Control theory](control-theory/README.md) proves the Kalman rank condition, the Hautus test and the pole-shifting
+theorem for linear systems, and records the Rashevskii–Chow theorem and Brockett's obstruction to continuous feedback
+stabilisation for nonlinear ones.
 
 - [Real functions and calculus](real-functions/README.md)
 - [Inequalities](inequalities/README.md)
