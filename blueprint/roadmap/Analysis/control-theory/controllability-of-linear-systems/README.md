@@ -17,6 +17,7 @@ Here all three criteria are proved for time-invariant systems on finite-dimensio
 ## Related topics
 
 - [Pole placement](../pole-placement/README.md): controllability is exactly what allows a linear state feedback to place the closed-loop eigenvalues anywhere.
+- [Nonlinear controllability and stabilisation](../nonlinear-controllability-and-stabilisation/README.md): the Kalman condition is the linear test for small-time local controllability of nonlinear systems, and the Lie algebra rank condition is its nonlinear analogue.
 - [Duhamel's formula](../../ordinary-differential-equations/duhamel-variation-of-constants.md): the variation of constants formula that expresses the endpoint of a trajectory in terms of the control.
 - [Linear systems and fundamental matrices](../../ordinary-differential-equations/linear-systems-and-fundamental-matrices/README.md): the resolvent $R(t, \tau)$ of a time-varying system, which replaces $e^{(t - \tau) A}$ in Coron's Gramian for time-varying systems.
 - [Linear quadratic regulator](../../../ComputerScience/machine-learning/reinforcement-learning/linear-quadratic-regulator/README.md): the Gramian is the matrix of the minimum-energy control problem, the simplest linear-quadratic optimal control problem.

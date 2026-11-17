@@ -4,3 +4,4 @@ Mathematical control theory of finite-dimensional systems: controllability of li
 
 - [Controllability of linear systems](controllability-of-linear-systems/README.md)
 - [Pole placement](pole-placement/README.md)
+- [Nonlinear controllability and stabilisation](nonlinear-controllability-and-stabilisation/README.md)
