@@ -47,4 +47,5 @@ as wanted theorems.
 - [Linear quadratic regulator](../../../ComputerScience/machine-learning/reinforcement-learning/linear-quadratic-regulator/README.md): Recht's dynamic programming pages; adaptive linear-quadratic control combines least-squares estimates of the system with the Riccati feedback by certainty equivalence.
 - [Optimality of stationary policies](../../../ComputerScience/heuristic-search-and-planning/optimality-of-stationary-policies/README.md): Bertsekas's dynamic programming, the optimisation side of feedback design when the model is known.
 - [Martingales and optional stopping](../../../Probability/martingales/README.md): the martingale convergence and estimation theorems on which the stochastic convergence theory rests.
+- [Capability and limits of feedback](../capability-and-limits-of-feedback/README.md): what feedback, adaptive or not, can achieve for uncertain systems.
 - [Pole placement](../pole-placement/README.md): Coron's stabilisation of known linear systems by state feedback, the problem adaptive control solves when the system is unknown.

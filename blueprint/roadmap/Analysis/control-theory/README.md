@@ -1,11 +1,12 @@
 # Control theory
 
-Mathematical control theory of finite-dimensional systems: controllability of linear systems (controllability Gramian, Kalman rank condition, Hautus test), pole placement and stabilisation by state feedback, Lie-bracket conditions for nonlinear controllability, Brockett's obstruction to continuous feedback stabilisation and the return method; system identification by recursive least squares. Optimal control and dynamic programming are under Convex analysis and calculus of variations and Computer science.
+Mathematical control theory of finite-dimensional systems: controllability of linear systems (controllability Gramian, Kalman rank condition, Hautus test), pole placement and stabilisation by state feedback, Lie-bracket conditions for nonlinear controllability, Brockett's obstruction to continuous feedback stabilisation and the return method; system identification by recursive least squares and the capability and limits of feedback for uncertain discrete-time systems. Optimal control and dynamic programming are under Convex analysis and calculus of variations and Computer science.
 
 - [Controllability of linear systems](controllability-of-linear-systems/README.md)
 - [Pole placement](pole-placement/README.md)
 - [Nonlinear controllability and stabilisation](nonlinear-controllability-and-stabilisation/README.md)
 - [Recursive least squares](recursive-least-squares/README.md)
+- [Capability and limits of feedback](capability-and-limits-of-feedback/README.md)
 
 ## Related topics
 
