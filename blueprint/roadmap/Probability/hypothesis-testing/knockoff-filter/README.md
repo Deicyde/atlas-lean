@@ -36,3 +36,4 @@ recorded as wanted statements.
 - [Benjamini–Hochberg procedure](../benjamini-hochberg-procedure/README.md): the p-value-based procedure with the same target, FDR at most `q`; knockoff+ replaces the uniform null p-values by fair null signs, and the BH step-up threshold by a sequential, stopping-time threshold.
 - [Valid p-values and false discovery proportion](../valid-p-values-and-false-discovery-proportion/README.md): the false discovery proportion `|R ∩ H0| / max |R| 1` used here.
 - [Permutation tests](../permutation-tests/README.md): the other exchangeability-based route to finite-sample validity; knockoffs exploit invariance under swapping each variable with its copy.
+- [Split conformal prediction](../split-conformal-prediction/README.md): exchangeability gives finite-sample guarantees for prediction too; there the test score is exchangeable with the calibration scores, here each null statistic is invariant in law under a swap.

@@ -9,6 +9,11 @@ coverage is exactly `⌈(1 - α)(n + 1)⌉ / (n + 1)`, hence at most `1 - α + 1
 bound is proved here through the permutation p-value; the exact value and the upper bound through
 a rank count.
 
+Lei, G'Sell, Rinaldo, Tibshirani and Wasserman (arXiv:1604.04173v2, Theorem 2.2) state the two
+bounds for a sample of `n` points split into halves, which gives `1 - α + 2/(n + 2)`; with
+`n₂ = n/2` calibration points this is `1 - α + 1/(n₂ + 1)`, the bound here with `n₂` in place of
+`n`.
+
 - [Order statistic with multiplicity](order-statistic.md)
 - [Strict-count criterion for the order statistic](coe-le-order-statistic-iff.md)
 - [Characterisation of the order statistic](order-statistic-eq-coe-iff.md)
@@ -36,6 +41,7 @@ a rank count.
 
 ## Related topics
 
+- [Full conformal prediction](../full-conformal-prediction/README.md): the transductive version, with no held-out calibration set; its coverage bounds reduce to the ones here for the exchangeable vector of augmented scores.
 - [Conformalized quantile regression](../conformalized-quantile-regression/README.md): split conformal prediction with the CQR score, giving adaptive intervals with the same two coverage bounds.
 - [Conformal prediction under covariate shift](../conformal-prediction-under-covariate-shift/README.md): the weighted extension when the test covariates follow a different law, with a weighted quantile in place of the order statistic.
 - [Permutation tests](../permutation-tests/README.md): the lower coverage bound is the validity of the permutation p-value of the test score.

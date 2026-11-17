@@ -16,7 +16,7 @@ These methods keep testing valid when many hypotheses are tested at once, by con
 
 ## Neyman–Pearson and likelihood-based tests
 
-These results compare hypotheses through their likelihoods: the Neyman–Pearson lemma for two simple hypotheses, monotone likelihood ratio families, and the score, Wald and likelihood-ratio tests with their local power.
+These results compare hypotheses through their likelihoods: the Neyman–Pearson lemma for two simple hypotheses, monotone likelihood ratio families, the score, Wald and likelihood-ratio tests with their local power, and universal inference, which splits the sample to make likelihood-ratio sets and tests valid in finite samples without regularity.
 
 - [Neyman–Pearson lemma](neyman-pearson-dominated-two-simple.md)
 - [Monotone likelihood ratio](monotone-likelihood-ratio/README.md)
@@ -26,7 +26,7 @@ These results compare hypotheses through their likelihoods: the Neyman–Pearson
 
 ## Exact, rank and randomisation inference
 
-These procedures base inference on counts, ranks or random reassignments of the data, from exact conditional tests and rank statistics to permutation p-values and conformal prediction sets.
+These procedures base inference on counts, ranks or random reassignments of the data, from exact conditional tests and rank statistics to permutation p-values and split and full conformal prediction sets.
 
 - [Fisher's exact test](fisher-s-exact-test/README.md)
 - [Exact test for Hardy–Weinberg equilibrium](exact-test-for-hardy-weinberg-equilibrium/README.md)
