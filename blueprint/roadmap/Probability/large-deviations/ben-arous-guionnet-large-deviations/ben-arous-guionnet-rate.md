@@ -17,4 +17,4 @@ $\iint \log|x-y|\,d\sigma\,d\sigma = -\frac{1}{4}$, so $I_\beta(\sigma) = \frac{
 - A. Guionnet, "Large deviations and stochastic calculus for large random matrices", *Probability
   Surveys* 1 (2004), 72–172, Theorem 3.1(1).
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, the function $I^V_\beta$ of Theorem 2.6.1 with $V(x) = \beta x^2/4$.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), the function $I^V_\beta$ of Theorem 2.6.1 with $V(x) = \beta x^2/4$.

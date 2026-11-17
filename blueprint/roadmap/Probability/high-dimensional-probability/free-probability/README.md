@@ -15,6 +15,8 @@ convolution, as the logarithm of the Fourier transform linearises classical conv
 semicircle law plays the role of the Gaussian: its only nonzero free cumulant is $\kappa_2$, its
 R-transform is $z$, and it is the limit in the free central limit theorem.
 
+No non-trivial free family is constructed here: the only instances proved are trivial (a family with at most one member, and families in which all but one member is the algebra of scalars). Non-trivial free families, such as the group algebra of a free group with its canonical trace or a free semicircular family on the full Fock space, exist but are only argued, not constructed.
+
 Proved here: the definitions of freeness, free cumulants and the R-transform, that free variables
 are uncorrelated, the moment-cumulant formula, $\kappa_1$ and $\kappa_2$ as mean and variance, and
 the free cumulants and R-transform of the semicircle law. Stated: additivity of free

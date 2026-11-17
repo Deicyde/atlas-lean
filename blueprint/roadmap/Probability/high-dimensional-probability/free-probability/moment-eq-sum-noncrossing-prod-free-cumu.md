@@ -13,4 +13,4 @@ $\kappa_n$, and every other noncrossing partition has blocks of fewer than $n$ e
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, equation (5.3.5).
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), equation (5.3.5).

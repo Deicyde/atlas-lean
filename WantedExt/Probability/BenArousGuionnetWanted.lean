@@ -93,7 +93,8 @@ noncomputable def benArousGuionnetRate (β : ℝ) (μ : ProbabilityMeasure ℝ) 
 
 /-- **Ben Arous–Guionnet large deviation principle** (Guionnet, "Large deviations and stochastic
 calculus for large random matrices", *Probability Surveys* 1 (2004), Theorem 3.1(1c) and (2), for
-`β = 1, 2, 4`; Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*, Theorem 2.6.1
+`β = 1, 2, 4`; Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices* (manuscript
+numbering), Theorem 2.6.1
 with `V(x) = βx²/4`, for every `β > 0`). For `β > 0`, the laws of the empirical spectral measure
 `L_N` of the Gaussian `β`-ensemble satisfy, in the space of probability measures on `ℝ` with the
 weak topology, a large deviation principle at speed `N²` with the good rate function `I_β`.
@@ -106,7 +107,8 @@ theorem_wanted benArousGuionnet_ldp {β : ℝ} (hβ : 0 < β)
       IsGoodRateFunction (benArousGuionnetRate β)
 
 /-- **The semicircle law is the unique zero of the Ben Arous–Guionnet rate function** (Guionnet,
-*Probability Surveys* 1 (2004), Theorem 3.1(1e); Anderson, Guionnet and Zeitouni, Lemma 2.6.2(e)).
+*Probability Surveys* 1 (2004), Theorem 3.1(1e); Anderson, Guionnet and Zeitouni (manuscript
+numbering), Lemma 2.6.2(e)).
 For `β > 0`, `I_β(μ) = 0` if and only if `μ` is the semicircle law on `[-2, 2]`. -/
 theorem_wanted benArousGuionnetRate_eq_zero_iff {β : ℝ} (hβ : 0 < β) (μ : ProbabilityMeasure ℝ) :
     benArousGuionnetRate β μ = 0 ↔ (μ : Measure ℝ) = ProbabilityTheory.semicircleReal

@@ -10,4 +10,4 @@ $R_{a+b} = R_a + R_b$ when $a$ and $b$ are free: it linearises free additive con
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Definition 5.3.22 and Corollary 5.3.23.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Definition 5.3.22 and Corollary 5.3.23.

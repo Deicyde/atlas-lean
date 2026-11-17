@@ -20,5 +20,5 @@ plays no role.
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Definition 5.3.13 (equation (5.3.5)) and Lemma 5.3.14 (the cumulants are
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Definition 5.3.13 (equation (5.3.5)) and Lemma 5.3.14 (the cumulants are
   well defined because the system is triangular).

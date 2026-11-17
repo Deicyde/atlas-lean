@@ -12,4 +12,4 @@ order four, where the crossing partition $\{\{1,3\},\{2,4\}\}$ is excluded from 
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, equation (5.3.5) at $n = 2$.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), equation (5.3.5) at $n = 2$.

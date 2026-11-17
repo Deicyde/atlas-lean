@@ -26,4 +26,4 @@ family on the full Fock space, which is not constructed here.
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Lemma 5.3.32 and its proof.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Lemma 5.3.32 and its proof.

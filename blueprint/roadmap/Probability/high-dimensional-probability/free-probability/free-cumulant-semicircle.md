@@ -20,5 +20,5 @@ otherwise.
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Example 5.3.26 (there obtained from the Stieltjes transform:
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Example 5.3.26 (there obtained from the Stieltjes transform:
   $k_n(a) = 0$ except for $n = 2$, $k_2(a) = \varphi(a^2)$).

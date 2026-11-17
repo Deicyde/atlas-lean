@@ -19,4 +19,4 @@ multilinearity of the multivariate cumulants and use that mixed cumulants of fre
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Lemma 5.3.21 and Corollary 5.3.23 (via Theorem 5.3.15).
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Lemma 5.3.21 and Corollary 5.3.23 (via Theorem 5.3.15).

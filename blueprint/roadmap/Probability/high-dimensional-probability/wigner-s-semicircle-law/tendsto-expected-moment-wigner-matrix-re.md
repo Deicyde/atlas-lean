@@ -26,4 +26,4 @@ pair partitions (Proposition 2.1.11), each contributing $1$ in the limit.
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Lemma 2.1.6 under the assumptions (2.1.1)–(2.1.2); proof in §2.1.3.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Lemma 2.1.6 under the assumptions (2.1.1)–(2.1.2); proof in §2.1.3.

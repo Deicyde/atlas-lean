@@ -17,8 +17,10 @@ public import MathlibExt.Probability.Distributions.Semicircle
 The `n`-th moment of the semicircle distribution `σ` is the number of noncrossing pair partitions
 of `{1, …, n}`. This is the form in which the semicircle law enters both the moment method for
 Wigner matrices (the Wigner words of length `n + 1` are indexed by noncrossing pair partitions,
-Anderson, Guionnet and Zeitouni, Proposition 2.1.11) and the free central limit theorem (the limit
-moments are `♯{π ∈ NC(n) : π a pair partition}`, Anderson, Guionnet and Zeitouni, Lemma 5.3.32).
+Anderson, Guionnet and Zeitouni (manuscript numbering), Proposition 2.1.11) and the free central
+limit theorem (the limit
+moments are `♯{π ∈ NC(n) : π a pair partition}`, Anderson, Guionnet and Zeitouni (manuscript
+numbering), Lemma 5.3.32).
 
 ## Main results
 
@@ -28,7 +30,9 @@ moments are `♯{π ∈ NC(n) : π a pair partition}`, Anderson, Guionnet and Ze
 ## References
 
 * G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  Studies in Advanced Mathematics 118, Cambridge University Press, 2010, §2.1.1 (equation (2.1.4)),
+  Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+  pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §2.1.1
+  (equation (2.1.4)),
   Proposition 2.1.11 and the proof of Lemma 5.3.32.
 -/
 
@@ -40,7 +44,8 @@ namespace ProbabilityTheory
 
 /-- **The moments of the semicircle law count noncrossing pair partitions**: for every `n`,
 `∫ xⁿ dσ(x) = ♯{π ∈ NC(n) : every block of π has two elements}`, which is `C_{n/2}` for `n` even and
-`0` for `n` odd (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*, §2.1.1,
+`0` for `n` odd (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices* (manuscript
+numbering), §2.1.1,
 equation (2.1.4) with Proposition 2.1.11; the same count is the limit in the proof of the free
 central limit theorem, Lemma 5.3.32). -/
 theorem integral_pow_semicircleReal_eq_card_noncrossing_pairPartition (n : ℕ) :

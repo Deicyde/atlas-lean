@@ -51,7 +51,9 @@ points to its right, which gives the Catalan recursion
 ## References
 
 * G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  Studies in Advanced Mathematics 118, Cambridge University Press, 2010, §2.1.1 (Definition 2.1.4
+  Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+  pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §2.1.1
+  (Definition 2.1.4
   and the recursion for noncrossing partitions) and Proposition 2.1.11 (noncrossing pair partitions
   of `{1, …, k}` index the Wigner words, hence the semicircle moments).
 
@@ -607,7 +609,8 @@ def pairPartitionEquivNCMatching :
 end Bridge
 
 /-- **Noncrossing pair partitions of `{1, …, 2k}` are counted by the Catalan number `C_k`**
-(Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*, §2.1.1 and
+(Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices* (manuscript numbering),
+§2.1.1 and
 Proposition 2.1.11). -/
 theorem card_noncrossing_pairPartition_two_mul (k : ℕ) :
     Fintype.card {P : _root_.NoncrossingPartition (2 * k) // IsPairPartition P.val} =
@@ -623,7 +626,7 @@ theorem card_noncrossing_pairPartition_two_mul_add_one (k : ℕ) :
 
 /-- **Counting noncrossing pair partitions.** The number of noncrossing pair partitions of
 `{1, …, n}` is `C_{n/2}` for `n` even and `0` for `n` odd (Anderson, Guionnet and Zeitouni,
-*An Introduction to Random Matrices*, §2.1.1 and Proposition 2.1.11). -/
+*An Introduction to Random Matrices* (manuscript numbering), §2.1.1 and Proposition 2.1.11). -/
 theorem card_noncrossing_pairPartition (n : ℕ) :
     Fintype.card {P : _root_.NoncrossingPartition n // IsPairPartition P.val} =
       if n % 2 = 0 then catalan (n / 2) else 0 := by

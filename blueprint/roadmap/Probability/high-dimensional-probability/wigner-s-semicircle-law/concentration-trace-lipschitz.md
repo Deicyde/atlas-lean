@@ -31,7 +31,7 @@ constant $c/N$ (tensorisation), and Herbst's argument (Lemma 2.3.3) gives the Ga
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Theorem 2.3.5, inequality (2.3.9), with Lemmas 2.3.1 and 2.3.3.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Theorem 2.3.5, inequality (2.3.9), with Lemmas 2.3.1 and 2.3.3.
 - A. Guionnet and O. Zeitouni, "Concentration of the spectral measure for large matrices",
   *Electron. Comm. Probab.* 5 (2000), 119–136, as reproduced in A. Guionnet, *Probability Surveys*
   1 (2004), Theorem 3.2(b).

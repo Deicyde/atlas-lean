@@ -28,7 +28,9 @@ exponentially small at scale `N²` (Theorem 2.3.5, the Guionnet–Zeitouni conce
 ## Source
 
 G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-Studies in Advanced Mathematics 118, Cambridge University Press, 2010, §2.1 (the Wigner matrices
+Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §2.1 (the Wigner
+matrices
 (2.1.1)–(2.1.2), Lemma 2.1.6) and §2.3.3 (Theorem 2.3.5); A. Guionnet and O. Zeitouni,
 "Concentration of the spectral measure for large matrices", *Electron. Comm. Probab.* 5 (2000),
 119–136, as reproduced in A. Guionnet, *Probability Surveys* 1 (2004), Theorem 3.2.
@@ -49,7 +51,8 @@ noncomputable def wignerMatrixReal {Ω : Type*} (Z : ℕ → ℕ → Ω → ℝ)
   fun i j => Z (min (i : ℕ) j) (max (i : ℕ) j) ω / Real.sqrt N
 
 /-- **Expected moments of a Wigner matrix converge to the semicircle moments** (Anderson, Guionnet
-and Zeitouni, *An Introduction to Random Matrices*, Lemma 2.1.6). Let the entries `Z i j`
+and Zeitouni, *An Introduction to Random Matrices* (manuscript numbering), Lemma 2.1.6). Let the
+entries `Z i j`
 (`i ≤ j`) be independent, with the off-diagonal entries (`i < j`) identically distributed, the
 diagonal entries identically distributed, all centred, the off-diagonal ones of variance `1`, and
 all of finite moments of every order (the assumptions (2.1.1) of the source). Then for every `k`,
@@ -57,12 +60,12 @@ all of finite moments of every order (the assumptions (2.1.1) of the source). Th
 noncrossing pair partitions of `{1, …, k}`. -/
 theorem_wanted tendsto_expected_moment_wignerMatrixReal {Ω : Type*} [MeasurableSpace Ω]
     (P : Measure Ω) [IsProbabilityMeasure P] (Z : ℕ → ℕ → Ω → ℝ)
-    (hmeas : ∀ i j, Measurable (Z i j))
+    (hmeas : ∀ i j, i ≤ j → Measurable (Z i j))
     (hindep : iIndepFun (fun p : {p : ℕ × ℕ // p.1 ≤ p.2} => Z p.1.1 p.1.2) P)
     (hoff : ∀ i j i' j', i < j → i' < j' → IdentDistrib (Z i j) (Z i' j') P P)
     (hdiag : ∀ i i', IdentDistrib (Z i i) (Z i' i') P P)
-    (hmom : ∀ i j (k : ℕ), Integrable (fun ω => Z i j ω ^ k) P)
-    (hmean : ∀ i j, ∫ ω, Z i j ω ∂P = 0)
+    (hmom : ∀ i j, i ≤ j → ∀ k : ℕ, Integrable (fun ω => Z i j ω ^ k) P)
+    (hmean : ∀ i j, i ≤ j → ∫ ω, Z i j ω ∂P = 0)
     (hvar : ∀ i j, i < j → ∫ ω, Z i j ω ^ 2 ∂P = 1) (k : ℕ) :
     Tendsto (fun N : ℕ => ∫ ω, (N : ℝ)⁻¹ * Matrix.trace (wignerMatrixReal Z N ω ^ k) ∂P)
       atTop (𝓝 (∫ x, x ^ k ∂semicircleReal))
@@ -90,7 +93,7 @@ for every `L`-Lipschitz `f : ℝ → ℝ` and `δ > 0`,
 where `tr f(X_N) = ∑ᵢ f(λᵢ)` over the eigenvalues. -/
 theorem_wanted concentration_trace_lipschitz {Ω : Type*} [MeasurableSpace Ω] (P : Measure Ω)
     [IsProbabilityMeasure P] {N : ℕ} (hN : 0 < N) {c : ℝ} (hc : 0 < c)
-    (X : Fin N → Fin N → Ω → ℝ) (hmeas : ∀ i j, Measurable (X i j))
+    (X : Fin N → Fin N → Ω → ℝ) (hmeas : ∀ i j, i ≤ j → Measurable (X i j))
     (hindep : iIndepFun (fun p : {p : Fin N × Fin N // p.1 ≤ p.2} => X p.1.1 p.1.2) P)
     (hLSI : ∀ i j, i ≤ j → SatisfiesLogSobolev (P.map (X i j)) (N / c))
     {f : ℝ → ℝ} {L : NNReal} (hf : LipschitzWith L f) {δ : ℝ} (hδ : 0 < δ) :

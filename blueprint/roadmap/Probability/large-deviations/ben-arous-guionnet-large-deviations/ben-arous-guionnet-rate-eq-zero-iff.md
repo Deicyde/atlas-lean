@@ -16,4 +16,4 @@ solves it.
 - A. Guionnet, "Large deviations and stochastic calculus for large random matrices", *Probability
   Surveys* 1 (2004), 72–172, Theorem 3.1(1d, 1e).
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Lemma 2.6.2(d, e), equations (2.6.9)–(2.6.10).
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Lemma 2.6.2(d, e), equations (2.6.9)–(2.6.10).

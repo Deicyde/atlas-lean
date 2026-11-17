@@ -14,8 +14,8 @@ public import MathlibExt.Probability.FreeProbability.Freeness
 /-!
 # Tests for free independence, free cumulants and the R-transform
 
-Non-vacuity of free independence (a scalar is free from any element, so the additivity entry's
-hypotheses hold for `b = 0`; a family with one member is free), the first free cumulant, the
+Non-vacuity of free independence, in trivial instances only (a scalar is free from any element, so
+the additivity entry's hypotheses hold for `b = 0`; a family with one member is free), the first free cumulant, the
 semicircle cumulants and the semicircle R-transform.
 -/
 

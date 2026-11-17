@@ -19,7 +19,8 @@ public import Mathlib.Analysis.Complex.Order
 
 In a noncommutative probability space `(A, φ)`, free cumulants linearise free additive convolution:
 if `a` and `b` are free then `κₙ(a + b) = κₙ(a) + κₙ(b)` for every `n ≥ 1`, so the R-transform is
-additive (Anderson, Guionnet and Zeitouni, Lemma 5.3.21 and Corollary 5.3.23). As a consequence,
+additive (Anderson, Guionnet and Zeitouni (manuscript numbering), Lemma 5.3.21 and Corollary
+5.3.23). As a consequence,
 normalised sums of free, centred, unit-variance variables converge in moments to the semicircle law,
 the free Gaussian: this is the free central limit theorem (Lemma 5.3.32), whose limit moments count
 noncrossing pair partitions.
@@ -27,7 +28,9 @@ noncrossing pair partitions.
 ## Source
 
 G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-Studies in Advanced Mathematics 118, Cambridge University Press, 2010, §5.3.2–5.3.4: Lemma 5.3.21,
+Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §5.3.2–5.3.4:
+Lemma 5.3.21,
 Corollary 5.3.23 and Lemma 5.3.32.
 -/
 

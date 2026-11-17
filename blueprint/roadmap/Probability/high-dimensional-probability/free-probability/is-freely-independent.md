@@ -12,8 +12,10 @@ commuting independent variables $\varphi(xyxy) = \varphi(x^2)\varphi(y^2)$. In L
 indexed by `Fin (n + 1)`, so that they are nonempty, and the definition does not itself require
 $\varphi(1) = 1$; results that need it assume it.
 
+No non-trivial free family is constructed here: the only instances proved are trivial (a family with at most one member, and families in which all but one member is the algebra of scalars). Non-trivial free families, such as the group algebra of a free group with its canonical trace or a free semicircular family on the full Fock space, exist but are only argued, not constructed.
+
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Definition 5.2.1 (noncommutative probability space) and Definition 5.3.1;
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Definition 5.2.1 (noncommutative probability space) and Definition 5.3.1;
   Remark 5.3.2 for the comparison with independence.

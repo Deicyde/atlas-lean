@@ -16,5 +16,5 @@ This is the recursion that Anderson, Guionnet and Zeitouni use for all noncrossi
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, §2.1.1, the recursion $\gamma_k = \sum_{j=1}^{k} \gamma_{k-j}\gamma_{j-1}$
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §2.1.1, the recursion $\gamma_k = \sum_{j=1}^{k} \gamma_{k-j}\gamma_{j-1}$
   for noncrossing partitions after Definition 2.1.4.

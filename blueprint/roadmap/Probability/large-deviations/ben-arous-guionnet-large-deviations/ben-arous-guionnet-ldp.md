@@ -32,7 +32,7 @@ holds on $\mathbb{R}$ but is not yet an instance in Mathlib.
 - A. Guionnet, "Large deviations and stochastic calculus for large random matrices", *Probability
   Surveys* 1 (2004), 72–172, arXiv:math/0409277, Theorem 3.1 (for $\beta = 1, 2, 4$).
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Theorem 2.6.1 (for every $\beta > 0$ and potentials $V$; here
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Theorem 2.6.1 (for every $\beta > 0$ and potentials $V$; here
   $V(x) = \beta x^2/4$).
 - G. Ben Arous and A. Guionnet, "Large deviations for Wigner's law and Voiculescu's non-commutative
   entropy", *Probab. Theory Related Fields* 108 (1997), 517–542 (cited by both as the original).

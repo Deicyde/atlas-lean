@@ -7,5 +7,5 @@ unital subalgebras $\mathbb{C}\langle a_i \rangle$ they generate are
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, Definition 5.3.1 (last paragraph: sets of variables are free if the
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Definition 5.3.1 (last paragraph: sets of variables are free if the
   algebras they generate are free).

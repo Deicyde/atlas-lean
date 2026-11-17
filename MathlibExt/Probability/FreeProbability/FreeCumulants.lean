@@ -18,7 +18,8 @@ public import MathlibExt.Probability.Distributions.SemicircleNoncrossingPairings
 The free cumulants `κ₁, κ₂, …` of a moment sequence `m` are defined by the moment-cumulant formula
 over noncrossing partitions,
 `mₙ = ∑_{π ∈ NC(n)} ∏_{V ∈ π} κ_{|V|}` for `n ≥ 1`
-(Anderson, Guionnet and Zeitouni, Definition 5.3.13, for the cumulants `kₙ(a) = kₙ(a, …, a)` of a
+(Anderson, Guionnet and Zeitouni (manuscript numbering), Definition 5.3.13, for the cumulants
+`kₙ(a) = kₙ(a, …, a)` of a
 single variable). The formula is triangular: the term for the one-block partition `1ₙ` is `κₙ`, and
 every other noncrossing partition has blocks of size `< n`, so `κₙ` is determined recursively
 (Lemma 5.3.14). The R-transform is the formal power series `R(z) = ∑_{n ≥ 0} κ_{n+1} zⁿ`
@@ -45,7 +46,9 @@ partitions.
 ## References
 
 * G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  Studies in Advanced Mathematics 118, Cambridge University Press, 2010, §5.3.2: Definition 5.3.13,
+  Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+  pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §5.3.2:
+  Definition 5.3.13,
   Lemma 5.3.14, Definition 5.3.22 and Example 5.3.26.
 -/
 
@@ -56,7 +59,8 @@ open Finset NoncrossingPartition
 namespace MathlibExt.Probability.FreeProbability
 
 /-- **Free cumulants of a moment sequence** (Anderson, Guionnet and Zeitouni, *An Introduction to
-Random Matrices*, Definition 5.3.13 and Lemma 5.3.14). For a moment sequence `m : ℕ → ℂ`, `κₙ` is
+Random Matrices* (manuscript numbering), Definition 5.3.13 and Lemma 5.3.14). For a moment sequence
+`m : ℕ → ℂ`, `κₙ` is
 defined recursively by solving the moment-cumulant formula
 `mₙ = ∑_{π ∈ NC(n)} ∏_{V ∈ π} κ_{|V|}` for its one-block term:
 `κₙ = mₙ - ∑_{π ∈ NC(n), π ≠ 1ₙ} ∏_{V ∈ π} κ_{|V|}`.
@@ -106,7 +110,7 @@ theorem freeCumulant_one (m : ℕ → ℂ) : freeCumulant m 1 = m 1 := by
 
 /-- **The second free cumulant is the variance**, `κ₂ = m₂ - m₁²`: the noncrossing partitions of two
 points other than `1₂` reduce to the partition into singletons (Anderson, Guionnet and Zeitouni,
-*An Introduction to Random Matrices*, equation (5.3.5) at `n = 2`). -/
+*An Introduction to Random Matrices* (manuscript numbering), equation (5.3.5) at `n = 2`). -/
 theorem freeCumulant_two (m : ℕ → ℂ) : freeCumulant m 2 = m 2 - m 1 ^ 2 := by
   rw [freeCumulant]
   have herase : (univ : Finset (_root_.NoncrossingPartition 2)).erase ⊤ = {discrete 2} := by
@@ -123,7 +127,8 @@ theorem freeCumulant_two (m : ℕ → ℂ) : freeCumulant m 2 = m 2 - m 1 ^ 2 :=
   simp only [Function.Embedding.coeFn_mk, card_singleton, Nat.one_lt_ofNat, dite_true,
     freeCumulant_one, prod_const, card_univ, Fintype.card_fin]
 
-/-- **The R-transform** (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*,
+/-- **The R-transform** (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*
+(manuscript numbering),
 Definition 5.3.22): the formal power series `R(z) = ∑_{n ≥ 0} κ_{n+1} zⁿ` of the free cumulants
 of the moment sequence `m`. -/
 noncomputable def rTransform (m : ℕ → ℂ) : PowerSeries ℂ :=

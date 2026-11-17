@@ -19,7 +19,8 @@ import Mathlib.Tactic.FinCases
 # Free independence in a noncommutative probability space
 
 A *noncommutative probability space* is a unital complex algebra `A` with a linear functional
-`φ : A → ℂ` such that `φ 1 = 1` (Anderson, Guionnet and Zeitouni, Definition 5.2.1). A family of
+`φ : A → ℂ` such that `φ 1 = 1` (Anderson, Guionnet and Zeitouni (manuscript numbering), Definition
+5.2.1). A family of
 unital subalgebras `(A_j)` is *freely independent* if `φ (a₁ ⋯ aₙ) = 0` whenever each `aᵢ` lies in
 some `A_{k(i)}`, is centred (`φ aᵢ = 0`), and consecutive indices differ, `k(i) ≠ k(i + 1)`
 (Definition 5.3.1). Repetitions of indices are allowed as long as they are not consecutive, so this
@@ -43,7 +44,9 @@ are free.
 ## References
 
 * G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  Studies in Advanced Mathematics 118, Cambridge University Press, 2010, Definition 5.2.1 and
+  Studies in Advanced Mathematics 118, Cambridge University Press, 2010 (numbering of the authors'
+  pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), Definition
+  5.2.1 and
   Definition 5.3.1.
 -/
 
@@ -53,7 +56,8 @@ namespace MathlibExt.Probability.FreeProbability
 
 variable {A : Type*} [Ring A] [Algebra ℂ A]
 
-/-- **Free independence** (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*,
+/-- **Free independence** (Anderson, Guionnet and Zeitouni, *An Introduction to Random Matrices*
+(manuscript numbering),
 Definition 5.3.1). A family `B : ι → Subalgebra ℂ A` of unital subalgebras is freely independent
 with respect to the linear functional `φ` if, for every `n ≥ 1`, indices `k : Fin n → ι` with
 consecutive indices distinct (`k i ≠ k (i + 1)`) and elements `aᵢ ∈ B (k i)` with `φ aᵢ = 0`, one
@@ -65,7 +69,8 @@ def IsFreelyIndependent (φ : A →ₗ[ℂ] ℂ) {ι : Type*} (B : ι → Subalg
 
 /-- **Free random variables.** A family of elements `a : ι → A` is free with respect to `φ` if the
 unital subalgebras `ℂ⟨a i⟩` that they generate are freely independent (Anderson, Guionnet and
-Zeitouni, *An Introduction to Random Matrices*, Definition 5.3.1, last paragraph). -/
+Zeitouni, *An Introduction to Random Matrices* (manuscript numbering), Definition 5.3.1, last
+paragraph). -/
 def AreFree (φ : A →ₗ[ℂ] ℂ) {ι : Type*} (a : ι → A) : Prop :=
   IsFreelyIndependent φ fun i => Algebra.adjoin ℂ {a i}
 

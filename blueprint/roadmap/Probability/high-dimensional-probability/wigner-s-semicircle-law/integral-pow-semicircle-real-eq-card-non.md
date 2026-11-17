@@ -26,4 +26,4 @@ moment-cumulant formula over noncrossing partitions leaves exactly the noncrossi
 ## Sources
 
 - G. W. Anderson, A. Guionnet and O. Zeitouni, *An Introduction to Random Matrices*, Cambridge
-  University Press, 2010, §2.1.1, equation (2.1.4); Proposition 2.1.11; proof of Lemma 5.3.32.
+  University Press, 2010 (numbering of the authors' pre-publication manuscript (2009), https://www.math.nyu.edu/~zeitouni/cupbook.pdf), §2.1.1, equation (2.1.4); Proposition 2.1.11; proof of Lemma 5.3.32.
