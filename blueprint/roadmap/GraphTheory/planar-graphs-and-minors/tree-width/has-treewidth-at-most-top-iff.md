@@ -11,6 +11,12 @@ fact that every clique lies in a bag.
 
 - [Every clique lies in a bag](exists-bag-superset.md): applied to the whole vertex set of $K_n$.
 
+## Background
+
+- [Complete graphs have cut-rank at most one](../rank-width-and-vertex-minors/cut-rank-top-le-one.md):
+  in contrast, complete graphs have rank-width at most one, so tree-width is not bounded by any
+  function of rank-width.
+
 ## Sources
 
 - R. Diestel, *Graph Theory*, 6th edition, author's online preview of Chapter 12 (PDF dated 28 June 2024, https://diestel-graph-theory.com/), Section 12.4 and Corollary 12.3.5.

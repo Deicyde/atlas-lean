@@ -36,5 +36,7 @@ tree-width at most every $k$.
 
 ## Related topics
 
+- [Rank-width and vertex-minors](../rank-width-and-vertex-minors/README.md): the analogous width
+  parameter for dense graphs; rank-width is at most tree-width plus one.
 - [Graph minors](../graph-minors/README.md): the minor relation under which tree-width is
   monotone and the graph minor theorem.

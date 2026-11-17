@@ -6,6 +6,7 @@ Graphs drawn in the plane and on the square lattice, crossing numbers, Euler's f
 - [Euler's formula and cycle rank](euler-s-formula-and-cycle-rank/README.md)
 - [Graph minors](graph-minors/README.md)
 - [Tree-width](tree-width/README.md)
+- [Rank-width and vertex-minors](rank-width-and-vertex-minors/README.md)
 - [Self-duality of the square lattice](self-duality-of-the-square-lattice/README.md)
 - [Straight-line planar drawings](straight-line-planar-drawings/README.md)
 - [Two-regular minors](two-regular-minors/README.md)
