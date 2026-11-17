@@ -3305,6 +3305,7 @@
   "MathlibExt/InformationTheory/DonskerVaradhan": {"to": "InformationTheory/information-inequalities", "title": "Donsker–Varadhan variational formula"},
   "MathlibExt/InformationTheory/DonskerVaradhanFormula": {"to": "InformationTheory/information-inequalities", "title": "Donsker–Varadhan variational formula"},
   "MathlibExt/InformationTheory/Fano": {"to": "InformationTheory/information-inequalities", "title": "Fano's inequality"},
+  "MathlibExt/InformationTheory/FDivergence": {"to": "InformationTheory/information-inequalities", "title": "f-divergences"},
   "MathlibExt/InformationTheory/FiniteChannelSimulation": {"to": "InformationTheory/channel-simulation", "title": "One-shot channel simulation"},
   "MathlibExt/InformationTheory/FiniteEntropy": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Shannon entropy and Kullback–Leibler divergence"},
   "MathlibExt/InformationTheory/FiniteSanov": {"to": "InformationTheory/entropy-and-mutual-information", "title": "Method of types"},
