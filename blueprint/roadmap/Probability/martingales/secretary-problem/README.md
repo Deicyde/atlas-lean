@@ -1,6 +1,6 @@
 # Secretary problem
 
-$n$ applicants are interviewed in uniformly random order; after each interview one may only compare the applicant with those already seen, and must accept or reject at once. The goal is to select the best applicant. Following Ferguson (*Optimal Stopping and Applications*, Chapter 2, §2.1), an optimal rule is a threshold rule $N_r$: reject the first $r - 1$ applicants, then accept the first applicant better than all previous ones. Its win probability is $P_r = \frac{r-1}{n} \sum_{k=r}^{n} \frac{1}{k-1}$, and the best threshold is $r_1 = \min\{r \ge 1 : \sum_{k=r+1}^{n} \frac{1}{k-1} \le 1\}$, with $r_1/n \to 1/e$ and $P_{r_1} \to 1/e$. The pages prove the threshold optimisation and the $1/e$ limits from Ferguson's closed form of $P_r$; the derivation of $P_r$ from the random-order model and the reduction from all rank-based rules to threshold rules are recorded as wanted statements (both checked by exhaustive enumeration for $n \le 7$ while writing them).
+$n$ applicants are interviewed in uniformly random order; after each interview one may only compare the applicant with those already seen, and must accept or reject at once. The goal is to select the best applicant. Following Ferguson (*Optimal Stopping and Applications*, Chapter 2, §2.1), an optimal rule is a threshold rule $N_r$: reject the first $r - 1$ applicants, then accept the first applicant better than all previous ones. Its win probability is $P_r = \frac{r-1}{n} \sum_{k=r}^{n} \frac{1}{k-1}$, and the best threshold is $r_1 = \min\{r \ge 1 : \sum_{k=r+1}^{n} \frac{1}{k-1} \le 1\}$, with $r_1/n \to 1/e$ and $P_{r_1} \to 1/e$. The pages derive $P_r$ from the random-order model and prove the threshold optimisation and the $1/e$ limits; the reduction from all rank-based rules to threshold rules is recorded as a wanted statement (checked by exhaustive enumeration for $n \le 7$ while writing it).
 
 ## Threshold rules and the 1/e law
 
@@ -16,7 +16,7 @@ $n$ applicants are interviewed in uniformly random order; after each interview o
 
 ## The random-order model
 
-Wanted statements connecting the closed form with permutations of the applicants.
+The closed form of $P_r$ as a proportion of permutations of the applicants, and the wanted optimality of threshold rules among all rules based on relative ranks.
 
 - [Win probability of a threshold rule in the random-order model](card-threshold-rule-wins-div-factorial.md)
 - [Optimality of the threshold rule among all rank-based rules](card-rank-rule-wins-div-factorial-le.md)

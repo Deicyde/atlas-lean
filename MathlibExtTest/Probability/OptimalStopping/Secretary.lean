@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.OptimalStopping.Secretary
+public import MathlibExt.Probability.OptimalStopping.SecretaryModel
 
 /-!
 # Tests for the secretary problem
@@ -49,5 +50,16 @@ example : optimalThreshold 4 = 2 := by
     subst this
     simp [harmonicTail, Finset.sum_Ico_succ_top] at hT
     norm_num at hT
+
+/-- The random-order model with `n = 3` applicants and threshold `r = 2`: the rule wins for half
+of the `3! = 6` permutations. -/
+example :
+    ((Finset.univ.filter fun σ : Equiv.Perm (Fin 3) =>
+        ∃ i : Fin 3, 2 - 1 ≤ (i : ℕ) ∧ (∀ j, j < i → σ j < σ i) ∧
+          (∀ k : Fin 3, 2 - 1 ≤ (k : ℕ) → k < i → ∃ j, j < k ∧ σ k < σ j) ∧
+          ∀ j, σ j ≤ σ i).card : ℝ) / (Nat.factorial 3) = 1 / 2 := by
+  rw [card_thresholdRule_wins_div_factorial (by norm_num) (by norm_num)]
+  simp [winProb, harmonicTail]
+  norm_num
 
 end MathlibExtTest.Probability.OptimalStopping.Secretary

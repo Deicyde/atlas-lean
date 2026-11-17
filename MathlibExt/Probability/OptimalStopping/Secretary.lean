@@ -35,8 +35,10 @@ This file proves the analytic part of Ferguson's §2.1:
   `MathlibExt.Probability.Secretary.tendsto_winProb_optimalThreshold`: `r₁/n → 1/e` and
   `P_{r₁} → 1/e` as `n → ∞`.
 
-The derivation of equation (3) from the random-order model, and the reduction from all rules to
-threshold rules, are not formalised here.
+Equation (3) itself is derived from the random-order model in
+`MathlibExt.Probability.OptimalStopping.SecretaryModel`; the reduction from all rank-based rules to
+threshold rules is the wanted statement
+`MathlibExt.Probability.Secretary.card_rankRule_wins_div_factorial_le`.
 -/
 
 @[expose] public section
