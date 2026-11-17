@@ -1,5 +1,7 @@
 # Edmonds–Karp algorithm
 
+The augmenting-path method of Ford and Fulkerson with the rule of Edmonds and Karp (1972): augment along a residual path with fewest arcs, found by breadth-first search. The pages below implement it on a capacity matrix with integer skew flows, prove that it returns a maximum flow and a minimum cut, and prove the paper's analysis: residual distances from the source and to the sink never decrease (Propositions 2 and 3), an arc used as a bottleneck must be used in reverse before it is a bottleneck again, at a cost of two arcs in path length (Lemmas 1 and 2), and hence at most $(n^3 - n)/4$ augmentations take place on $n$ vertices, independently of the capacities (Theorem 1).
+
 - [Flow](flow.md)
 - [Flow value](flow-value.md)
 - [Feasible flow](is-feasible.md)
@@ -60,7 +62,25 @@
 - [One Edmonds–Karp step does not shorten distances to the sink (Proposition 3 (2))](walk-step-sink.md)
 - [Breadth-first-search distances from the source do not decrease along Edmonds–Karp](bfs-distance-source-le-step.md)
 - [Breadth-first-search distances to the sink do not decrease along Edmonds–Karp](bfs-distance-sink-le-step.md)
+- [Endpoints of path steps lie on the path](mem-of-mem-path-edges.md)
+- [Steps of a duplicate-free path join distinct vertices](ne-of-mem-path-edges.md)
+- [Augmentation does not touch pairs at vertices off the path](edge-delta-eq-zero-of-not-mem.md)
+- [Augmentation adds exactly the amount on the steps of a duplicate-free path](edge-delta-eq-one-of-mem.md)
+- [The bottleneck of a path is attained](exists-mem-path-edges-residual-amount-eq.md)
+- [The path used by one Edmonds–Karp step](step-path.md)
+- [Distances from the source never decrease along Edmonds–Karp (Proposition 3, iterated)](walk-iterate-step-source.md)
+- [Distances to the sink never decrease along Edmonds–Karp (Proposition 3, iterated)](walk-iterate-step-sink.md)
+- [Shortest augmenting paths never get shorter](length-step-path-le-of-le.md)
+- [A bottleneck arc is saturated (Edmonds–Karp, Proposition 1)](not-edge-iterate-succ-of-bottleneck.md)
+- [Between two uses of a bottleneck arc, its reverse is used (Edmonds–Karp, Lemma 1)](exists-reverse-between-of-bottleneck.md)
+- [Using an arc and then its reverse costs two arcs (Edmonds–Karp, Lemma 2)](length-add-two-le-of-reverse.md)
+- [Edmonds–Karp augmentation count, sharp form](le-choose-mul-of-reachable.md)
+- [Edmonds–Karp augmentation bound (Edmonds and Karp, Theorem 1)](four-mul-le-of-reachable.md)
+- [Edmonds–Karp terminates within $(n^3 - n)/4$ augmentations](exists-not-reachable-iterate-step.md)
 
 ## Related topics
 
 - [Max-flow min-cut theorem](../../../../GraphTheory/matchings-and-flows/max-flow-min-cut-theorem/README.md): the theorem for real capacities, whose definitions the correctness statement uses.
+- [Maximum bipartite matching](../maximum-bipartite-matching/README.md): Hopcroft and Karp's phases use the same shortest-augmenting-path principle on matchings, with the same monotonicity of alternating distances and an $O(\sqrt{V})$ bound on the number of phases.
+- [Maximum flow is in P](../../../../TheoryOfComputation/polynomial-time-problems/maximum-flow/README.md): the complexity statement for binary-encoded capacities, for which a bound on augmentations independent of the capacities is needed.
+- [Disjoint sets and dynamic trees](../../../data-structures/disjoint-sets-and-dynamic-trees/README.md): the dynamic (link-cut) trees of Sleator and Tarjan, which speed up shortest-augmenting-path methods to $O(VE \log V)$.

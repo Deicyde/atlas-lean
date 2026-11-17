@@ -35,8 +35,7 @@ becomes "every walk of length `h` in `N^{k+1}` can be replaced by a walk of leng
 in `N^k`", which also covers unreachable nodes (distance `∞`).
 
 The paper's Theorem 1, the bound of `(n³ - n) / 4` augmentations, uses Proposition 3 through its
-Lemmas 1 and 2; it is recorded as a wanted statement in
-`WantedExt.ComputerScience.EdmondsKarpAugmentationBoundWanted`.
+Lemmas 1 and 2; it is proved in `CSLibExt.Algorithms.Lean.Graph.EdmondsKarpAugmentationBound`.
 -/
 
 @[expose] public section
