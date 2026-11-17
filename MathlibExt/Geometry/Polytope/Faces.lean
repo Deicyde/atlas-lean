@@ -14,14 +14,19 @@ public import Mathlib.Analysis.Convex.Extreme
 public import Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional
 public import Mathlib.Combinatorics.SimpleGraph.Basic
 public import Mathlib.Topology.Instances.Real.Lemmas
+public import Mathlib.Analysis.Normed.Module.Basic
 
 /-!
 # Faces of convex polytopes
 
-A convex polytope is the convex hull of a finite set `s` of points. Following Ziegler,
-*Lectures on Polytopes* (GTM 152), a face of a polytope `P` is the set of points of `P` where
-some linear functional attains its maximum over `P`, together with the empty face. In Mathlib
-this is `IsExposed ℝ P F`, whose convention also admits `∅` and `P` itself (the zero functional).
+A convex polytope is the convex hull of a finite set `s` of points of a real normed space `E`.
+Following Ziegler, *Lectures on Polytopes* (GTM 152), a face of a polytope `P` is the set of points
+of `P` where some linear functional attains its maximum over `P`, together with the empty face. In
+Mathlib this is `IsExposed ℝ P F`, which uses continuous linear functionals and also admits `∅` and
+`P` itself (the zero functional). In a normed space this loses nothing: a linear functional on the
+finite-dimensional span of `s` is continuous and extends to a continuous functional on `E`
+(Hahn–Banach), with the same maximisers on `P`. On a space with a coarser topology the continuous
+dual can be too small, which is why `E` is a normed space here.
 
 This file proves that every face of `conv s` is the convex hull of the points of `s` it
 contains, so that a polytope has only finitely many faces, and defines the face numbers
@@ -34,14 +39,15 @@ open Set
 
 namespace MathlibExt.Geometry.Polytope
 
-variable {E : Type*} [AddCommGroup E] [Module ℝ E] [TopologicalSpace E]
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
 
 /-- **Faces of a convex polytope.** The faces of the polytope `P = conv s` spanned by a finite
-set `s` are its exposed subsets: the empty set, and the sets of points of `P` at which some
-continuous linear functional attains its maximum over `P` (the zero functional gives `P`
-itself). This is the standard notion of face of a convex polytope (G. M. Ziegler, *Lectures on
-Polytopes*, GTM 152, cited without a theorem number) used in his "Face numbers of
-4-polytopes and 3-spheres", Proc. ICM 2002, Section 2 (arXiv:math/0208073v2). -/
+set `s` in a real normed space are its exposed subsets: the empty set, and the sets of points of
+`P` at which some continuous linear functional attains its maximum over `P` (the zero functional
+gives `P` itself). In a normed space every linear functional on the span of `s` extends to a
+continuous one (Hahn–Banach), so these are exactly the faces of `P` in the standard sense
+(G. M. Ziegler, *Lectures on Polytopes*, GTM 152, cited without a theorem number), as used in his
+"Face numbers of 4-polytopes and 3-spheres", Proc. ICM 2002, Section 2 (arXiv:math/0208073v2). -/
 def faces (s : Finset E) : Set (Set E) :=
   {F | IsExposed ℝ (convexHull ℝ (s : Set E)) F}
 
@@ -344,17 +350,9 @@ def IsSimplicial (s : Finset E) : Prop :=
     Module.finrank ℝ (affineSpan ℝ F).direction + 1 = dim s →
       (F ∩ (convexHull ℝ (s : Set E)).extremePoints ℝ).ncard = dim s
 
-omit [TopologicalSpace E] in
-/-- **The vertices of a polytope are among its spanning points.** Every extreme point of
-`conv s` lies in `s`. -/
-theorem extremePoints_subset (s : Finset E) :
-    (convexHull ℝ (s : Set E)).extremePoints ℝ ⊆ s :=
-  extremePoints_convexHull_subset
-
-omit [TopologicalSpace E] in
 /-- **The vertex set of a polytope is finite.** -/
 theorem extremePoints_finite (s : Finset E) :
     ((convexHull ℝ (s : Set E)).extremePoints ℝ).Finite :=
-  s.finite_toSet.subset (extremePoints_subset s)
+  s.finite_toSet.subset extremePoints_convexHull_subset
 
 end MathlibExt.Geometry.Polytope

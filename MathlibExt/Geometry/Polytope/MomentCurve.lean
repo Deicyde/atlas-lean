@@ -39,6 +39,13 @@ theorem momentCurve_apply (d : ℕ) (t : ℝ) (i : Fin d) :
     momentCurve d t i = t ^ (i.val + 1) :=
   rfl
 
+/-- **The moment curve is injective in positive dimension.** For `d ≥ 1`, distinct parameters
+give distinct points `γ(t)`, already in the first coordinate `t`. -/
+theorem momentCurve_injective {d : ℕ} (hd : 1 ≤ d) : Function.Injective (momentCurve d) := by
+  intro a b h
+  have := congrArg (fun v : EuclideanSpace ℝ (Fin d) => v ⟨0, hd⟩) h
+  simpa using this
+
 /-- **The moment curve has order `d`.** Any `m ≤ d + 1` points `γ(t_1), …, γ(t_m)` of the moment
 curve in `ℝ^d` with distinct parameters are affinely independent; for `m = d + 1` this says that
 no `d + 1` points of the curve lie on a common affine hyperplane (Ziegler, PCMI lecture notes,

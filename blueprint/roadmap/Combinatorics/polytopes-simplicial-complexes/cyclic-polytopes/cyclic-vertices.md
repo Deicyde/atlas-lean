@@ -2,8 +2,9 @@
 
 For parameters $t_1, \dots, t_n \in \mathbb{R}$, the finite set
 $\{\gamma(t_1), \dots, \gamma(t_n)\} \subset \mathbb{R}^d$ of points on the moment curve. When the
-parameters are distinct and $d \ge 1$ these are $n$ distinct points, and all of them are vertices
-of their convex hull, the cyclic polytope.
+parameters are distinct and $d \ge 1$ these are $n$ distinct points. For $d \ge 2$ all of them
+are vertices of their convex hull, the cyclic polytope, because the parabola $(t, t^2)$ is strictly
+convex. For $d = 1$ the points lie on a line and only the smallest and the largest are vertices.
 
 ## Sources
 

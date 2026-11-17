@@ -17,6 +17,14 @@ The cyclic polytope $C_d(n)$ is the convex hull of $n$ points on the moment curv
 - [Sign of a product of linear factors](neg-one-pow-mul-prod-sub-pos.md)
 - [Gale's evenness criterion](is-exposed-cyclic-polytope-iff-gale-even.md)
 - [Cyclic polytopes are neighborly](is-exposed-cyclic-polytope-of-two-mul-ca.md)
+- [The moment curve is injective in positive dimension](moment-curve-injective.md)
+- [Every vertex set of a cyclic simplex spans a face](is-exposed-cyclic-simplex.md)
+- [The faces of a cyclic simplex](mem-faces-cyclic-simplex-iff.md)
+- [The vertices of a cyclic simplex](extreme-points-cyclic-simplex.md)
+- [Dimension of a face of a cyclic simplex](finrank-direction-cyclic-simplex.md)
+- [Dimension of a cyclic simplex](dim-cyclic-simplex.md)
+- [Face numbers of a cyclic simplex](face-number-cyclic-simplex.md)
+- [A cyclic simplex is simplicial](is-simplicial-cyclic-simplex.md)
 
 ## Related topics
 

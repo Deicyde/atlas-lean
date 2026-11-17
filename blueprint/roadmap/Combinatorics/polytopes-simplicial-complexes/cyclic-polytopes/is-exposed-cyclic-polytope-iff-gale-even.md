@@ -4,8 +4,8 @@ Let $t_1 < t_2 < \cdots < t_n$ be real numbers and let $S$ be a set of $d$ indic
 points $\gamma(t_i)$, $i \in S$, span a face of the cyclic polytope
 $C_d(n) = \operatorname{conv}\{\gamma(t_1), \dots, \gamma(t_n)\} \subset \mathbb{R}^d$, that is,
 $\operatorname{conv}\{\gamma(t_i) : i \in S\}$ is a face of $C_d(n)$, if and only if $S$ satisfies
-Gale's evenness condition. Since $d$ points of the moment curve are affinely independent, such a
-face is a facet, so the criterion lists the facets of $C_d(n)$; in particular the combinatorial
+Gale's evenness condition. Since $d$ points of the moment curve are affinely independent, for
+$n > d$ such a face is a facet, so the criterion lists the facets of $C_d(n)$; in particular the combinatorial
 type of $C_d(n)$ does not depend on the parameters.
 
 Proof. A linear functional $\ell$ on $\mathbb{R}^d$ restricted to the moment curve is a polynomial

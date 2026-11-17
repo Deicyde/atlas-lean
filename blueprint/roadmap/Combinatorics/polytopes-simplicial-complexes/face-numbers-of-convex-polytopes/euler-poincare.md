@@ -19,8 +19,6 @@ $2 - 1 = 1$; a triangle has $3 - 3 + 1 = 1$.
 - [Euler's polyhedron formula](../../../Geometry/discrete-geometry/part-01/euler-polyhedron-formula.md):
   the case $d = 3$, stated there for an arbitrary polygonal cellulation of the boundary of a
   3-polytope rather than for its face lattice.
-- [Face numbers of a polytope](../faces-of-convex-polytopes/face-number.md): the numbers $f_k$
-  counted here.
 
 ## Sources
 

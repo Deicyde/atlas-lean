@@ -65,10 +65,11 @@ theorem_wanted upper_bound_theorem {n d m k : ℕ} (s : Finset (EuclideanSpace �
     faceNumber s k ≤ cyclicPolytopeFaceCount m d k
 
 /-- **The boundary complex of a simplicial polytope is a simplicial sphere.** If `P = conv s` is a
-full-dimensional simplicial polytope in `ℝ^d`, then its proper faces form a finite simplicial
-`(d-1)`-sphere `X` in `ℝ^d` with the same face numbers: `f_k(X) = f_k(P)` for every `k < d`.
-Together with the Dehn–Sommerville equations for simplicial spheres this gives the
-Dehn–Sommerville equations `h_k = h_{d-k}` for simplicial polytopes. -/
+full-dimensional simplicial polytope in `ℝ^d`, then there is a finite simplicial `(d-1)`-sphere
+`X` in `ℝ^d` with the same face numbers as `P`: `f_k(X) = f_k(P)` for every `k < d`. The
+boundary complex of `P`, whose simplices are the proper faces of `P`, is such a sphere; the
+statement asserts only the existence of `X` with these face numbers, which is what is needed to
+transfer the Dehn–Sommerville equations for simplicial spheres to simplicial polytopes. -/
 theorem_wanted exists_simplicialSphere_faceCount_eq {d : ℕ}
     (s : Finset (EuclideanSpace ℝ (Fin d)))
     (hfull : (interior (convexHull ℝ (s : Set (EuclideanSpace ℝ (Fin d))))).Nonempty)

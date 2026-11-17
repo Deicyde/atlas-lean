@@ -14,7 +14,6 @@ A convex polytope is the convex hull $P = \operatorname{conv} s$ of a finite set
 - [Dimension of a polytope](dim.md)
 - [Face numbers of a polytope](face-number.md)
 - [Simplicial polytope](is-simplicial.md)
-- [The vertices of a polytope are among its spanning points](extreme-points-subset.md)
 - [The vertex set of a polytope is finite](extreme-points-finite.md)
 - [The graph of a polytope](graph.md)
 - [Balinski's theorem](balinski.md)

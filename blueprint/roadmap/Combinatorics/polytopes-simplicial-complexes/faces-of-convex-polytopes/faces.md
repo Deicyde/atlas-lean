@@ -1,6 +1,6 @@
 # Faces of a convex polytope
 
-Let $s$ be a finite set of points in a real topological vector space $E$ and let
+Let $s$ be a finite set of points in a real normed space $E$ (for example $\mathbb{R}^n$) and let
 $P = \operatorname{conv} s$. A face of $P$ is either the empty set or a set of the form
 $$F = \{x \in P : \ell(x) \ge \ell(y) \text{ for all } y \in P\}$$
 for a continuous linear functional $\ell$ on $E$: the points where $\ell$ attains its maximum over
@@ -8,9 +8,16 @@ $P$. The zero functional gives $F = P$, so $P$ is a face of itself; the empty se
 convention. In Lean, `faces s` is the set of all $F$ with `IsExposed ℝ (convexHull ℝ s) F`, which
 is exactly this definition.
 
-For a polytope this agrees with the usual definition of a face as the intersection of $P$ with a
-valid inequality $\ell(x) \le c$ (taking $c = \max_P \ell$), and for polytopes exposed and
-extreme subsets coincide, so no distinction between them is needed.
+Using continuous functionals loses nothing in a normed space. Every linear functional on the
+finite-dimensional span of $s$ is continuous and, by the Hahn–Banach theorem, extends to a
+continuous linear functional on $E$ with the same values on $P$. So these are exactly the faces of
+the standard definition: the intersections of $P$ with a valid inequality $\ell(x) \le c$ (taking
+$c = \max_P \ell$) for an arbitrary linear functional $\ell$. For polytopes, exposed and extreme
+subsets also coincide.
+
+The normed-space hypothesis matters. On a vector space with a coarser topology the continuous dual
+can be trivial, for instance $\mathbb{R}$ with the indiscrete topology. Only $\emptyset$ and $P$
+would then be "faces" in this sense, so the definition is stated for normed spaces only.
 
 ## Sources
 

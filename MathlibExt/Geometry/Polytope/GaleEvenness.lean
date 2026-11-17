@@ -14,6 +14,7 @@ public import Mathlib.Algebra.Polynomial.BigOperators
 public import Mathlib.Algebra.Polynomial.Div
 public import Mathlib.Algebra.Polynomial.Eval.Degree
 public import Mathlib.Algebra.Polynomial.RingDivision
+public import Mathlib.LinearAlgebra.Lagrange
 public import Mathlib.RingTheory.Coprime.Lemmas
 
 /-!
@@ -182,9 +183,9 @@ theorem isExposed_cyclicPolytope_of_two_mul_card_le {d n : ℕ} {t : Fin n → �
 
 /-- **Gale's evenness criterion.** Let `t_1 < ⋯ < t_n` and let `S` be a set of `d` indices. Then
 the points `γ(t_i)`, `i ∈ S`, of the moment curve span a face of the cyclic polytope
-`C_d(n) ⊂ ℝ^d` (necessarily a facet, as they are affinely independent) if and only if `S`
-satisfies Gale's evenness condition: any two indices outside `S` are separated by an even number
-of elements of `S` (D. Gale, "Neighborly and cyclic polytopes", Proc. Sympos. Pure Math. 7
+`C_d(n) ⊂ ℝ^d` (for `n > d` necessarily a facet, as they are affinely independent) if and only
+if `S` satisfies Gale's evenness condition: any two indices outside `S` are separated by an even
+number of elements of `S` (D. Gale, "Neighborly and cyclic polytopes", Proc. Sympos. Pure Math. 7
 (1963); Ziegler, PCMI lecture notes, arXiv:math/0411400v2, Example 2.6). -/
 theorem isExposed_cyclicPolytope_iff_galeEvenness {d n : ℕ} {t : Fin n → ℝ} (ht : StrictMono t)
     (S : Finset (Fin n)) (hS : S.card = d) :
@@ -328,5 +329,218 @@ theorem isExposed_cyclicPolytope_iff_galeEvenness {d n : ℕ} {t : Fin n → ℝ
         have := hsign j hj
         rw [hε j hj] at this
         linarith
+
+/-- **Every vertex set of a cyclic simplex spans a face.** For `d + 1` distinct parameters, the
+cyclic polytope `C_d(d+1)` is a `d`-simplex, and for every set `T` of indices the points
+`γ(t_i)`, `i ∈ T`, span a face of it that contains no other `γ(t_j)`. The face is cut out by the
+functional of the Lagrange interpolation polynomial equal to `0` at the `t_i`, `i ∈ T`, and to
+`-1` at the other parameters. -/
+theorem isExposed_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t)
+    (T : Finset (Fin (d + 1))) :
+    IsExposed ℝ (cyclicPolytope d t)
+        (convexHull ℝ ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1))))) ∧
+      ∀ j, momentCurve d (t j) ∈
+          convexHull ℝ ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1)))) → j ∈ T := by
+  classical
+  have hinj : Set.InjOn t (Finset.univ : Finset (Fin (d + 1))) := ht.injOn
+  set r : Fin (d + 1) → ℝ := fun i => if i ∈ T then 0 else 1 with hr
+  set q : ℝ[X] := Lagrange.interpolate Finset.univ t r with hq
+  have hqeval : ∀ i, q.eval (t i) = r i := fun i =>
+    Lagrange.eval_interpolate_at_node r hinj (Finset.mem_univ i)
+  have hqdeg : q.natDegree ≤ d := by
+    have h := Lagrange.degree_interpolate_lt (r := r) hinj
+    rw [Finset.card_univ, Fintype.card_fin] at h
+    exact natDegree_le_of_degree_le (Order.le_of_lt_succ (by exact_mod_cast h))
+  set p : ℝ[X] := -q with hp
+  have hpdeg : p.natDegree ≤ d := by rw [hp, natDegree_neg]; exact hqdeg
+  have hl : ∀ i, polyFunctional d p (momentCurve d (t i)) =
+      -(if i ∈ T then 0 else 1) - p.coeff 0 := fun i => by
+    rw [polyFunctional_momentCurve hpdeg, hp, eval_neg, hqeval]
+  constructor
+  · refine isExposed_convexHull_of_forall_le (cyclicVertices d t) _ (polyFunctional d p)
+      (-p.coeff 0) ?_ ?_ ?_
+    · intro y hy
+      obtain ⟨j, -, rfl⟩ := Finset.mem_image.1 hy
+      rw [hl]
+      split_ifs <;> linarith
+    · rintro y ⟨i, hi, rfl⟩
+      refine ⟨Finset.mem_image.2 ⟨i, Finset.mem_univ _, rfl⟩, ?_⟩
+      rw [hl]
+      simp [Finset.mem_coe.1 hi]
+    · intro y hy hly
+      obtain ⟨j, -, rfl⟩ := Finset.mem_image.1 hy
+      rw [hl] at hly
+      by_cases hj : j ∈ T
+      · exact ⟨j, hj, rfl⟩
+      · simp only [hj, ite_false] at hly
+        linarith
+  · intro j hj
+    by_contra hjT
+    have h := eq_of_mem_convexHull_of_forall_eq (l := polyFunctional d p) (c := -p.coeff 0)
+      (by
+        rintro y ⟨i, hi, rfl⟩
+        rw [hl]
+        simp [Finset.mem_coe.1 hi]) hj
+    rw [hl] at h
+    simp only [hjT, ite_false] at h
+    linarith
+
+/-- **The faces of a cyclic simplex.** For `d + 1` distinct parameters, the faces of `C_d(d+1)`
+are exactly the convex hulls of the sets of vertices `γ(t_i)`, `i ∈ T`, for `T` ranging over all
+sets of indices. -/
+theorem mem_faces_cyclicSimplex_iff {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t)
+    {F : Set (EuclideanSpace ℝ (Fin d))} :
+    F ∈ faces (cyclicVertices d t) ↔ ∃ T : Finset (Fin (d + 1)),
+      F = convexHull ℝ ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1)))) := by
+  classical
+  constructor
+  · intro hF
+    refine ⟨Finset.univ.filter fun i => momentCurve d (t i) ∈ F, ?_⟩
+    refine (eq_convexHull_inter_of_mem_faces hF).trans ?_
+    congr 1
+    ext y
+    simp only [Set.mem_inter_iff, cyclicVertices, Finset.coe_image, Finset.coe_univ,
+      Set.image_univ, Set.mem_range, Finset.coe_filter, Set.mem_image, Set.mem_ofPred_eq,
+      Finset.mem_univ, true_and]
+    constructor
+    · rintro ⟨hyF, i, rfl⟩
+      exact ⟨i, hyF, rfl⟩
+    · rintro ⟨i, hiF, rfl⟩
+      exact ⟨hiF, i, rfl⟩
+  · rintro ⟨T, rfl⟩
+    exact (isExposed_cyclicSimplex ht T).1
+
+/-- **Dimension of a face of a cyclic simplex.** For `d + 1` distinct parameters and any set `T`
+of indices, the affine hull of `conv {γ(t_i) : i ∈ T}` has dimension `|T| - 1` (read as `0` for
+`T = ∅`), because these points are affinely independent. -/
+theorem finrank_direction_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ}
+    (ht : Function.Injective t) (T : Finset (Fin (d + 1))) :
+    Module.finrank ℝ (affineSpan ℝ (convexHull ℝ
+      ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1)))))).direction = T.card - 1 := by
+  classical
+  rw [affineSpan_convexHull, direction_affineSpan]
+  rcases T.eq_empty_or_nonempty with rfl | hT
+  · simp
+  have hind : AffineIndependent ℝ (fun i : (T : Set (Fin (d + 1))) => momentCurve d (t i)) :=
+    (affineIndependent_momentCurve le_rfl ht).comp_embedding (Function.Embedding.subtype _)
+  have hrange : Set.range (fun i : (T : Set (Fin (d + 1))) => momentCurve d (t i)) =
+      (fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1))) := by
+    ext y
+    simp
+  rw [← hrange]
+  exact hind.finrank_vectorSpan (by simp; have := hT.card_pos; omega)
+
+/-- **Face numbers of a cyclic simplex.** For `d + 1` distinct parameters, the polytope
+`C_d(d+1) = conv {γ(t_0), …, γ(t_d)}` is a `d`-simplex and has `f_k = C(d+1, k+1)` faces of
+dimension `k` for every `k`. For `d = 2` this is a triangle, with f-vector `(3, 3)` and
+`f_2 = 1`. -/
+theorem faceNumber_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t)
+    (k : ℕ) : faceNumber (cyclicVertices d t) k = (d + 1).choose (k + 1) := by
+  classical
+  set g : Finset (Fin (d + 1)) → Set (EuclideanSpace ℝ (Fin d)) :=
+    fun T => convexHull ℝ ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1)))) with hg
+  have hginj : Function.Injective g := by
+    intro T T' h
+    ext j
+    constructor
+    · intro hj
+      refine (isExposed_cyclicSimplex ht T').2 j ?_
+      have : momentCurve d (t j) ∈ g T := subset_convexHull ℝ _ ⟨j, hj, rfl⟩
+      rwa [h] at this
+    · intro hj
+      refine (isExposed_cyclicSimplex ht T).2 j ?_
+      have : momentCurve d (t j) ∈ g T' := subset_convexHull ℝ _ ⟨j, hj, rfl⟩
+      rwa [← h] at this
+  have hne : ∀ T : Finset (Fin (d + 1)), (g T).Nonempty ↔ T.Nonempty := by
+    intro T
+    constructor
+    · rintro ⟨x, hx⟩
+      by_contra h
+      rw [Finset.not_nonempty_iff_eq_empty] at h
+      simp [hg, h] at hx
+    · rintro ⟨i, hi⟩
+      exact ⟨_, subset_convexHull ℝ _ ⟨i, hi, rfl⟩⟩
+  have hset : {F | F ∈ faces (cyclicVertices d t) ∧ F.Nonempty ∧
+      Module.finrank ℝ (affineSpan ℝ F).direction = k} = g '' {T | T.card = k + 1} := by
+    ext F
+    constructor
+    · rintro ⟨hF, hFne, hdim⟩
+      obtain ⟨T, rfl⟩ := (mem_faces_cyclicSimplex_iff ht).1 hF
+      refine ⟨T, ?_, rfl⟩
+      have hT := ((hne T).1 hFne).card_pos
+      rw [finrank_direction_cyclicSimplex ht] at hdim
+      change T.card = k + 1
+      omega
+    · rintro ⟨T, hT, rfl⟩
+      change T.card = k + 1 at hT
+      refine ⟨(mem_faces_cyclicSimplex_iff ht).2 ⟨T, rfl⟩, (hne T).2 ?_, ?_⟩
+      · exact Finset.card_pos.1 (by omega)
+      · rw [finrank_direction_cyclicSimplex ht]
+        omega
+  rw [faceNumber, hset, Set.ncard_image_of_injective _ hginj]
+  have hT : {T : Finset (Fin (d + 1)) | T.card = k + 1} =
+      ((Finset.univ.powersetCard (k + 1) : Finset (Finset (Fin (d + 1)))) :
+        Set (Finset (Fin (d + 1)))) := by
+    ext T
+    simp
+  rw [hT, Set.ncard_coe_finset, Finset.card_powersetCard, Finset.card_univ, Fintype.card_fin]
+
+/-- **Dimension of a cyclic simplex.** For `d + 1` distinct parameters, `C_d(d+1)` has
+dimension `d`. -/
+theorem dim_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t) :
+    dim (cyclicVertices d t) = d := by
+  have hc : ((cyclicVertices d t : Finset (EuclideanSpace ℝ (Fin d))) :
+      Set (EuclideanSpace ℝ (Fin d))) =
+      (fun i => momentCurve d (t i)) ''
+        ((Finset.univ : Finset (Fin (d + 1))) : Set (Fin (d + 1))) := by
+    simp [cyclicVertices]
+  rw [dim, hc, finrank_direction_cyclicSimplex ht]
+  simp
+
+/-- **The vertices of a cyclic simplex.** For `d + 1` distinct parameters, every point
+`γ(t_i)` is a vertex (extreme point) of `C_d(d+1)`, and these are all its vertices. -/
+theorem extremePoints_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t) :
+    (cyclicPolytope d t).extremePoints ℝ =
+      ((cyclicVertices d t : Finset (EuclideanSpace ℝ (Fin d))) :
+        Set (EuclideanSpace ℝ (Fin d))) := by
+  classical
+  refine Set.Subset.antisymm extremePoints_convexHull_subset ?_
+  intro y hy
+  obtain ⟨i, -, rfl⟩ := Finset.mem_image.1 hy
+  have h := (isExposed_cyclicSimplex ht {i}).1
+  simp only [Finset.coe_singleton, Set.image_singleton, convexHull_singleton] at h
+  exact h.isExtreme.mem_extremePoints
+
+/-- **A cyclic simplex is simplicial.** For `d + 1` distinct parameters, every facet of `C_d(d+1)`
+contains exactly `d` of its vertices. -/
+theorem isSimplicial_cyclicSimplex {d : ℕ} {t : Fin (d + 1) → ℝ} (ht : Function.Injective t) :
+    IsSimplicial (cyclicVertices d t) := by
+  classical
+  intro F hF hne hdim
+  obtain ⟨T, rfl⟩ := (mem_faces_cyclicSimplex_iff ht).1 hF
+  rw [finrank_direction_cyclicSimplex ht, dim_cyclicSimplex ht] at hdim
+  rw [dim_cyclicSimplex ht]
+  have hTne : T.Nonempty := by
+    by_contra h
+    rw [Finset.not_nonempty_iff_eq_empty] at h
+    obtain ⟨x, hx⟩ := hne
+    simp [h] at hx
+  have hTcard : T.card = d := by have := hTne.card_pos; omega
+  have hd : 1 ≤ d := by have := hTne.card_pos; omega
+  have hinter : convexHull ℝ ((fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1)))) ∩
+      (cyclicPolytope d t).extremePoints ℝ =
+      (fun i => momentCurve d (t i)) '' (T : Set (Fin (d + 1))) := by
+    rw [extremePoints_cyclicSimplex ht]
+    ext y
+    constructor
+    · rintro ⟨hyF, hy⟩
+      obtain ⟨j, -, rfl⟩ := Finset.mem_image.1 hy
+      exact ⟨j, (isExposed_cyclicSimplex ht T).2 j hyF, rfl⟩
+    · rintro ⟨i, hi, rfl⟩
+      exact ⟨subset_convexHull ℝ _ ⟨i, hi, rfl⟩,
+        Finset.mem_image.2 ⟨i, Finset.mem_univ _, rfl⟩⟩
+  change (_ ∩ (cyclicPolytope d t).extremePoints ℝ).ncard = d
+  rw [hinter, Set.ncard_image_of_injective (f := fun i => momentCurve d (t i)) _
+    ((momentCurve_injective hd).comp ht), Set.ncard_coe_finset, hTcard]
 
 end MathlibExt.Geometry.Polytope
