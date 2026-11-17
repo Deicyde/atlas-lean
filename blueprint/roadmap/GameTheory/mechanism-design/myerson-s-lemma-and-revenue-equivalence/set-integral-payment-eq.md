@@ -6,3 +6,11 @@ Under the hypotheses of
 Corollary: the seller's
 expected revenue is determined by the allocation rule and the utilities of the lowest
 types).
+
+## Informally uses
+
+- [Revenue equivalence (pointwise)](payment-eq-on-of-is-incentive-compatible.md): integrated against the distribution of values.
+
+## Sources
+
+- R. B. Myerson, "Optimal auction design", *Mathematics of Operations Research* 6(1) (1981), 58–73, Corollary (the revenue-equivalence theorem).

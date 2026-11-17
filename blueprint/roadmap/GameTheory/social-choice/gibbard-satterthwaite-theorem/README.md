@@ -24,3 +24,7 @@
 - [Dictatorial social choice function](is-dictatorial.md)
 - [Gibbard–Satterthwaite theorem, finiteness form](gibbard-satterthwaite-general.md)
 - [Gibbard–Satterthwaite theorem](gibbard-satterthwaite.md)
+
+## Related topics
+
+- [Vickrey–Clarke–Groves mechanisms](../../mechanism-design/vickrey-clarke-groves-mechanisms/README.md): strategy-proof mechanisms for every set of alternatives once utilities are quasi-linear and transfers are allowed.

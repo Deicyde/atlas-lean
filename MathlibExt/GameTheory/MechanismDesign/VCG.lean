@@ -72,7 +72,8 @@ theorem welfare_eq (v : ι → A → ℝ) (i : ι) (a : A) :
   unfold welfare othersWelfare
   rw [← add_sum_erase _ _ (mem_univ i)]
 
-/-- The welfare of the agents other than `i` does not depend on agent `i`'s valuation. -/
+/-- **The others' welfare ignores the own valuation.** The welfare of the agents other than `i`
+does not depend on agent `i`'s valuation. -/
 theorem othersWelfare_update (v : ι → A → ℝ) (i : ι) (w : A → ℝ) (a : A) :
     othersWelfare (Function.update v i w) i a = othersWelfare v i a := by
   unfold othersWelfare

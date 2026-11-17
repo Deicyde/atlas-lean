@@ -9,8 +9,8 @@ a Nim heap, and the field works out P-positions and Grundy values game by game, 
 $(\lfloor n\varphi \rfloor, \lfloor n\varphi \rfloor + n)$ and their reflections, to variants of Nim, chocolate bar
 games and [Sylver Coinage](combinatorial-games/sylver-coinage/README.md), where opening with a prime greater than $3$
 wins. The partizan game [Snort](combinatorial-games/snort/README.md) is a second-player win on opposable graphs.
-[Social choice](social-choice/README.md) has the theorems of Arrow and of Gibbard and Satterthwaite, and
-[cooperative games](cooperative-games/README.md) the
+[Social choice](social-choice/README.md) has the theorems of Arrow and of Gibbard and Satterthwaite; with money and quasi-linear utilities, [mechanism design](mechanism-design/README.md) has the revelation principle, Myerson's characterization of incentive-compatible auctions with revenue equivalence and the optimal posted price, Vickrey–Clarke–Groves mechanisms and the Myerson–Satterthwaite impossibility of efficient bilateral trade.
+[Cooperative games](cooperative-games/README.md) have the
 [Bondareva–Shapley theorem](cooperative-games/bondareva-shapley-theorem/README.md): a game with transferable utility
 has a nonempty core exactly when it is balanced.
 [Noncooperative games](noncooperative-games/README.md) cover the minimax theorem, Nash's theorem (proved from Brouwer's fixed-point theorem),
@@ -20,5 +20,6 @@ sharing, Braess's paradox and no-regret dynamics.
 
 - [Combinatorial game theory](combinatorial-games/README.md)
 - [Cooperative game theory](cooperative-games/README.md)
+- [Mechanism design](mechanism-design/README.md)
 - [Noncooperative games](noncooperative-games/README.md)
 - [Social choice theory](social-choice/README.md)

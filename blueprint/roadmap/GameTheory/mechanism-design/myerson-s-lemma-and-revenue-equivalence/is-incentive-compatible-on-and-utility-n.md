@@ -6,3 +6,12 @@ If `0 ≤ Q` on `[a, b]` and `a ≤ b`, the mechanism
 `U t = U a + ∫_a^t Q` holds on `[a, b]`, and `U a ≥ 0` (Myerson 1981, Lemma 2, (4.2)–(4.4), for
 a single bidder without revision effects; the probability conditions (3.3) are the separate
 hypothesis `0 ≤ Q`).
+
+## Informally uses
+
+- [Myerson's lemma](is-incentive-compatible-on-iff.md): the incentive constraints.
+- [Individual rationality from the lowest type](utility-nonneg-of-lowest.md): the participation constraints.
+
+## Sources
+
+- R. B. Myerson, "Optimal auction design", *Mathematics of Operations Research* 6(1) (1981), 58–73, Lemma 2.

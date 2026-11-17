@@ -23,3 +23,4 @@ Every finite game has a mixed equilibrium ([Nash's theorem](nash-s-theorem/READM
 - [Linear programming](../../Geometry/convex-geometry/linear-programming/README.md): LP duality, equivalent to the minimax theorem and behind the Bondareva–Shapley theorem.
 - [Online learning and boosting](../../ComputerScience/machine-learning/online-learning-and-boosting/README.md): Hedge and weighted majority, the no-regret algorithms used in repeated games.
 - [Matchings and flows](../../GraphTheory/matchings-and-flows/README.md): network flows, the combinatorial model behind routing games.
+- [Mechanism design](../mechanism-design/README.md): designing the game so that its equilibria, in dominant strategies or Bayesian Nash, achieve a given outcome.

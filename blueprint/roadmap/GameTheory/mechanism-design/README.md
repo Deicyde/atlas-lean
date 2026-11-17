@@ -10,3 +10,10 @@ The [revelation principle](revelation-principle/README.md) reduces the design pr
 - [Vickrey–Clarke–Groves mechanisms](vickrey-clarke-groves-mechanisms/README.md)
 - [Myerson–Satterthwaite theorem](myerson-satterthwaite.md)
 - [Myerson–Satterthwaite theorem](myerson-satterthwaite.md)
+
+## Related topics
+
+- [Noncooperative games](../noncooperative-games/README.md): Nash equilibrium and its existence ([Nash's theorem](../noncooperative-games/nash-s-theorem/README.md)), the solution concept that mechanisms are designed to induce.
+- [Selfish routing and the price of anarchy](../noncooperative-games/selfish-routing-and-the-price-of-anarchy/README.md): how inefficient the equilibria of a given game can be, the question mechanism design answers by changing the game.
+- [Correlated equilibria](../noncooperative-games/correlated-equilibria/README.md): equilibria with a mediator who sends private recommendations, the communication counterpart of direct mechanisms.
+- [Social choice theory](../social-choice/README.md): aggregation of preferences without money, where the Gibbard–Satterthwaite theorem rules out nontrivial strategy-proof rules.
