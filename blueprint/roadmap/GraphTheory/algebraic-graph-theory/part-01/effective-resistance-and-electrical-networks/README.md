@@ -31,6 +31,8 @@ In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees a
 
 - [Foster's identity](sum-mul-effective-resistance.md)
 - [Kirchhoff's effective resistance formula](kirchhoff-effective-resistance-formula.md) (wanted)
+- [Kirchhoff's effective resistance formula, weighted](kirchhoff-effective-resistance-formula-weighted.md) (wanted)
+- [Weighted matrix-tree theorem](weighted-matrix-tree.md) (wanted)
 
 ## Random walks and the commute-time identity
 

@@ -24603,6 +24603,8 @@
 "MathlibExt.GraphTheory.ErdosProblem63Wanted.conjecture": "0ba018772752cc70",
 "MathlibExt.GraphTheory.ErdosProblem63Wanted.conjecture_holds": "35a58d0aa7516e60",
 "MathlibExt.GraphTheory.KirchhoffEffectiveResistanceWanted.card_spanningTree_adj_div_numSpanningTrees": "365fccee1d9d56b9",
+"MathlibExt.GraphTheory.KirchhoffEffectiveResistanceWanted.weighted_matrix_tree": "414211e29e842a84",
+"MathlibExt.GraphTheory.KirchhoffEffectiveResistanceWanted.weighted_spanningTree_adj_div": "5721e61cf7d7b88c",
 "MathlibExt.GraphTheory.OddDistanceGraphInfiniteChromaticWanted.ODGIC.OddDistanceChromaticInfinite": "c4944d4722988485",
 "MathlibExt.GraphTheory.OddDistanceGraphInfiniteChromaticWanted.ODGIC.OddDistanceGraph": "266f411ca3696b3b",
 "MathlibExt.GraphTheory.OddDistanceGraphInfiniteChromaticWanted.OddDistanceChromaticInfinite_holds": "a188491a32edb3b5",
