@@ -22,7 +22,8 @@ negation defines strong pseudoprimes, and the one counted here.
   gcd-based witnesses; that case is not formalized.
 - The integer bound $\lfloor (n - 1)/4 \rfloor$ is equivalent to Rabin's real bound, since the
   count is an integer.
-- The constant is sharp in Rabin's sense: for a Carmichael number $n = pqr$ with
+- The constant 1/4 is attained: for n = 9 exactly 2 of the 8 units are non-witnesses. For a
+  Carmichael number $n = pqr$ with
   $p \equiv q \equiv r \equiv 3 \pmod 4$, exactly $\tfrac34 \varphi(n)$ of the units are witnesses
   (p. 133), and Rabin lists $652969351 = 271 \cdot 811 \cdot 2971$, with a witness fraction of
   $0.7513$.
