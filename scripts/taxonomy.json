@@ -1498,6 +1498,7 @@
   "CSLibExt/Logics/LTL/LanguageInclusion": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/ModelChecking": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/OmegaWord": {"to": "Logic/temporal-logic", "title": "Linear temporal logic"},
+  "CSLibExt/Logics/LTL/Satisfiability": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/Syntax": {"to": "Logic/temporal-logic", "title": "Linear temporal logic"},
   "CSLibExt/Logics/LTL/Tableau": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LinearLogic/CLL": {"to": "Logic/proof-theory", "title": "Cut elimination for classical linear logic"},

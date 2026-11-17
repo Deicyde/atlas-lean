@@ -46,9 +46,18 @@
 - [LTL model checking is language inclusion](models-iff-language-le.md)
 - [LTL model checking is emptiness of an intersection](models-iff-inf-language-not-eq-bot.md)
 
+## Satisfiability and validity
+
+- [Satisfiable LTL formula](satisfiable.md)
+- [Valid LTL formula](valid.md)
+- [Validity is unsatisfiability of the negation](valid-iff-not-satisfiable-not.md)
+- [LTL satisfiability is Büchi nonemptiness](satisfiable-iff-language-ne-bot.md)
+- [LTL satisfiability by the lasso criterion](satisfiable-iff-has-lasso.md)
+- [Executable LTL satisfiability test](sat-b.md)
+- [Correctness of the executable satisfiability test](sat-b-iff.md)
+
 ## Related topics
 
 - [Labelled transition systems](../../../ComputerScience/process-calculi/labelled-transition-systems/README.md): the models checked here are CSLib labelled transition systems, the same objects that give process calculi their operational semantics.
 - [Program logics and verification](../../../ComputerScience/program-logics-and-verification/README.md): deductive verification of programs, the proof-based counterpart of algorithmic model checking of finite-state systems.
 - [Concurrent systems and protocols](../../../ComputerScience/concurrent-systems-and-protocols/README.md): finite-state protocols such as the alternating-bit protocol, the typical inputs of LTL model checking.
-
