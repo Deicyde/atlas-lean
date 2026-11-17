@@ -22,12 +22,20 @@ performs none (Sleator–Tarjan, §2: "As a measure of the running time of a spl
 we use the number of rotations done, unless there are no rotations, in which case we charge one
 for the splaying"). A zig-zig or zig-zag step counts two rotations, a zig step one.
 
-**Potential.** Every item has weight one, so the size of a node is the number of nodes of its
-subtree and its rank is `log₂` of that size; the potential of a tree is the sum of the ranks of
-its nodes. This is the Sleator–Tarjan potential with unit weights.
+**Potential.** Each item `i` has a positive weight `w(i)`; the size of a node is the total
+weight of its subtree (`weight`), its rank is `log₂` of that size, and the potential of a tree
+is the sum of the ranks of its nodes (`potentialW`). With unit weights the size is the number of
+nodes of the subtree (`potential`).
 
 **Results.**
-* `access_lemma`: the amortized cost of splaying `t` at `x` is at most
+* `access_lemma_weighted`: for any positive weights, the amortized cost of splaying `t` at `x`
+  is at most `3 (log₂ W(t) - log₂ W(focus x t)) + 1`, Lemma 1 (Access Lemma) of Sleator–Tarjan;
+  for a present key of a search tree, at most `3 (log₂ W(t) - log₂ w(x)) + 1`
+  (`amortized_cost_le_weighted`);
+* `access_sequence_le_weighted`: the total cost of a sequence of accesses is at most
+  `∑_j (3 log₂ (W / w(x_j)) + 1) + ∑_i log₂ (W / w(i))`, from which Sleator and Tarjan derive
+  their Theorems 1–3 by choosing weights; `static_optimality` is Theorem 2 (Static Optimality);
+* `access_lemma`: with unit weights, the amortized cost of splaying `t` at `x` is at most
   `3 (log₂ |t| - log₂ |focus x t|) + 1`, where `focus x t` is the subtree rooted at the last
   node of the search path for `x` (the node containing `x` when `x` is present). This is
   Lemma 1 (Access Lemma) of Sleator–Tarjan with unit weights.
@@ -132,118 +140,124 @@ private theorem lg_mono {m n : ℕ} (hm : 1 ≤ m) (h : m ≤ n) :
     Real.logb 2 (m : ℝ) ≤ Real.logb 2 (n : ℝ) :=
   Real.logb_le_logb_of_le (by norm_num) (by exact_mod_cast hm) (by exact_mod_cast h)
 
-/-- The concavity step of the access lemma: for positive `a`, `b` with `a + b ≤ c`,
-`log₂ a + log₂ b ≤ 2 log₂ c - 2`. -/
-private theorem lg_add_lg_le {a b c : ℕ} (ha : 1 ≤ a) (hb : 1 ≤ b) (h : a + b ≤ c) :
-    Real.logb 2 (a : ℝ) + Real.logb 2 (b : ℝ) ≤ 2 * Real.logb 2 (c : ℝ) - 2 := by
-  have ha' : (0 : ℝ) < a := by exact_mod_cast ha
-  have hb' : (0 : ℝ) < b := by exact_mod_cast hb
-  have hc' : (0 : ℝ) < c := by
-    have : 1 ≤ c := by omega
-    exact_mod_cast this
-  have hsum : (a : ℝ) + b ≤ c := by exact_mod_cast h
-  have hab : (a : ℝ) * b ≤ (c : ℝ) ^ 2 / 4 := by nlinarith [sq_nonneg ((a : ℝ) - b)]
-  have hlog : Real.logb 2 ((a : ℝ) * b) ≤ Real.logb 2 ((c : ℝ) ^ 2 / 4) :=
+end Arithmetic
+
+/-- **Weight of a binary tree.** The sum of the weights `w` of the keys stored in its nodes; for
+`w = 1` it is the number of nodes. With positive weights, this is the size `s(x)` of Sleator and
+Tarjan (*Self-adjusting binary search trees*, J. ACM 32(3) (1985), §2). -/
+def weight (w : α → ℝ) : BinaryTree α → ℝ
+  | .nil => 0
+  | .node k l r => weight w l + w k + weight w r
+
+/-- **Weighted splay-tree potential.** The sum over the nodes of a binary tree of `log₂` of the
+weight of the subtree rooted there: the potential of Sleator and Tarjan for item weights `w`
+(*Self-adjusting binary search trees*, J. ACM 32(3) (1985), §2). -/
+noncomputable def potentialW (w : α → ℝ) : BinaryTree α → ℝ
+  | .nil => 0
+  | .node k l r => potentialW w l + potentialW w r + Real.logb 2 (weight w (.node k l r))
+
+theorem weight_nonneg {w : α → ℝ} (hw : ∀ a, 0 < w a) : ∀ t : BinaryTree α, 0 ≤ weight w t
+  | .nil => le_rfl
+  | .node k l r => by
+      have := weight_nonneg hw l
+      have := weight_nonneg hw r
+      have := hw k
+      simp only [weight]
+      linarith
+
+theorem weight_node_pos {w : α → ℝ} (hw : ∀ a, 0 < w a) (k : α) (l r : BinaryTree α) :
+    0 < weight w (.node k l r) := by
+  have := weight_nonneg hw l
+  have := weight_nonneg hw r
+  have := hw k
+  simp only [weight]
+  linarith
+
+theorem weight_eq_sum_inorder (w : α → ℝ) : ∀ t : BinaryTree α,
+    weight w t = ((BinarySearchTree.inorder t).map w).sum
+  | .nil => by simp [weight, BinarySearchTree.inorder, BinarySearchTree.inorderAux]
+  | .node k l r => by
+      rw [weight, weight_eq_sum_inorder w l, weight_eq_sum_inorder w r,
+        BinarySearchTree.inorder_node]
+      simp [List.sum_cons]
+      ring
+
+/-- Splaying preserves the weight of a tree. -/
+theorem weight_splay [LinearOrder α] (w : α → ℝ) (x : α) (t : BinaryTree α) :
+    weight w (splay x t) = weight w t := by
+  rw [weight_eq_sum_inorder, weight_eq_sum_inorder, inorder_splay]
+
+private theorem splay_eq_node_of_node_w [LinearOrder α] (w : α → ℝ) (x a : α)
+    (b c : BinaryTree α) :
+    ∃ d A B, splay x (.node a b c) = .node d A B ∧
+      weight w A + w d + weight w B = weight w (.node a b c) := by
+  cases hs : splay x (.node a b c) with
+  | nil =>
+      have h := numNodes_splay (x := x) (t := .node a b c)
+      rw [hs] at h
+      simp at h
+  | node d A B =>
+      refine ⟨d, A, B, rfl, ?_⟩
+      have h := weight_splay w x (.node a b c)
+      rw [hs] at h
+      exact h
+
+private theorem lgR_mono {a b : ℝ} (ha : 0 < a) (h : a ≤ b) :
+    Real.logb 2 a ≤ Real.logb 2 b :=
+  Real.logb_le_logb_of_le (by norm_num) ha h
+
+private theorem lgR_add_le {a b c : ℝ} (ha : 0 < a) (hb : 0 < b) (h : a + b ≤ c) :
+    Real.logb 2 a + Real.logb 2 b ≤ 2 * Real.logb 2 c - 2 := by
+  have hc : 0 < c := by linarith
+  have hab : a * b ≤ c ^ 2 / 4 := by nlinarith [sq_nonneg (a - b)]
+  have hlog : Real.logb 2 (a * b) ≤ Real.logb 2 (c ^ 2 / 4) :=
     Real.logb_le_logb_of_le (by norm_num) (by positivity) hab
   have h4 : Real.logb 2 (4 : ℝ) = 2 := by
     rw [show (4 : ℝ) = 2 ^ 2 by norm_num, Real.logb_pow, Real.logb_self_eq_one (by norm_num)]
     norm_num
-  rw [Real.logb_mul ha'.ne' hb'.ne', Real.logb_div (by positivity) (by norm_num),
+  rw [Real.logb_mul ha.ne' hb.ne', Real.logb_div (by positivity) (by norm_num),
     Real.logb_pow, h4] at hlog
   push_cast at hlog
   linarith
 
-/-- Amortized bound for a single rotation (zig). -/
-private theorem zig_step {T K L : ℕ} (hK : 1 ≤ K) (hKT : K ≤ T) (hL : 1 ≤ L) (hLT : L ≤ T) :
-    Real.logb 2 (K : ℝ) - Real.logb 2 (L : ℝ) ≤
-      3 * (Real.logb 2 (T : ℝ) - Real.logb 2 (L : ℝ)) := by
-  have h1 := lg_mono hK hKT
-  have h2 := lg_mono hL hLT
+private theorem zig_stepW {T K L : ℝ} (hK : 0 < K) (hKT : K ≤ T) (hL : 0 < L) (hLT : L ≤ T) :
+    Real.logb 2 K - Real.logb 2 L ≤ 3 * (Real.logb 2 T - Real.logb 2 L) := by
+  have h1 := lgR_mono hK hKT
+  have h2 := lgR_mono hL hLT
   linarith
 
-/-- Amortized bound for a zig-zig step, beyond the inner splay. -/
-private theorem zigzig_step {T L M K N : ℕ} (hL : 1 ≤ L) (hLM : L ≤ M) (hN : 1 ≤ N)
-    (hNT : N ≤ T) (hK : 1 ≤ K) (hLK : L + K ≤ T) :
-    2 + Real.logb 2 (K : ℝ) + Real.logb 2 (N : ℝ) - Real.logb 2 (L : ℝ) -
-        Real.logb 2 (M : ℝ) ≤ 3 * (Real.logb 2 (T : ℝ) - Real.logb 2 (L : ℝ)) := by
-  have h1 := lg_mono hL hLM
-  have h2 := lg_mono hN hNT
-  have h3 := lg_add_lg_le hL hK hLK
+private theorem zigzig_stepW {T L M K N : ℝ} (hL : 0 < L) (hLM : L ≤ M) (hN : 0 < N)
+    (hNT : N ≤ T) (hK : 0 < K) (hLK : L + K ≤ T) :
+    2 + Real.logb 2 K + Real.logb 2 N - Real.logb 2 L - Real.logb 2 M ≤
+      3 * (Real.logb 2 T - Real.logb 2 L) := by
+  have h1 := lgR_mono hL hLM
+  have h2 := lgR_mono hN hNT
+  have h3 := lgR_add_le hL hK hLK
   linarith
 
-/-- Amortized bound for a zig-zag step, beyond the inner splay. -/
-private theorem zigzag_step {T L M K N : ℕ} (hL : 1 ≤ L) (hLM : L ≤ M) (hLT : L ≤ T)
-    (hN : 1 ≤ N) (hK : 1 ≤ K) (hNK : N + K ≤ T) :
-    2 + Real.logb 2 (N : ℝ) + Real.logb 2 (K : ℝ) - Real.logb 2 (L : ℝ) -
-        Real.logb 2 (M : ℝ) ≤ 3 * (Real.logb 2 (T : ℝ) - Real.logb 2 (L : ℝ)) := by
-  have h1 := lg_mono hL hLM
-  have h2 := lg_mono hL hLT
-  have h3 := lg_add_lg_le hN hK hNK
+private theorem zigzag_stepW {T L M K N : ℝ} (hL : 0 < L) (hLM : L ≤ M) (hLT : L ≤ T)
+    (hN : 0 < N) (hK : 0 < K) (hNK : N + K ≤ T) :
+    2 + Real.logb 2 N + Real.logb 2 K - Real.logb 2 L - Real.logb 2 M ≤
+      3 * (Real.logb 2 T - Real.logb 2 L) := by
+  have h1 := lgR_mono hL hLM
+  have h2 := lgR_mono hL hLT
+  have h3 := lgR_add_le hN hK hNK
   linarith
 
-end Arithmetic
-
-private theorem numNodes_pos_of_ne_nil {t : BinaryTree α} (h : t ≠ .nil) : 1 ≤ t.numNodes := by
-  cases t with
-  | nil => exact absurd rfl h
-  | node _ _ _ => simp
-
-private theorem splay_eq_node_of_node [LinearOrder α] (x a : α) (b c : BinaryTree α) :
-    ∃ d A B, splay x (.node a b c) = .node d A B ∧
-      A.numNodes + B.numNodes + 1 = (BinaryTree.node a b c).numNodes := by
-  have h := numNodes_splay (x := x) (t := .node a b c)
-  cases hs : splay x (.node a b c) with
-  | nil => rw [hs] at h; simp at h
-  | node d A B => exact ⟨d, A, B, rfl, by rw [hs] at h; simpa using h⟩
-
-private theorem numNodes_focus_le [LinearOrder α] (x : α) :
-    ∀ t : BinaryTree α, (focus x t).numNodes ≤ t.numNodes
-  | .nil => by simp [focus]
-  | .node k l r => by
-      unfold focus
-      split_ifs
-      · exact le_rfl
-      · cases l with
-        | nil => exact le_rfl
-        | node a b c =>
-            have := numNodes_focus_le x (.node a b c)
-            simp only [BinaryTree.numNodes] at this ⊢
-            omega
-      · cases r with
-        | nil => exact le_rfl
-        | node a b c =>
-            have := numNodes_focus_le x (.node a b c)
-            simp only [BinaryTree.numNodes] at this ⊢
-            omega
-
-private theorem numNodes_focus_pos [LinearOrder α] (x : α) :
-    ∀ t : BinaryTree α, t ≠ .nil → 1 ≤ (focus x t).numNodes
-  | .nil, h => absurd rfl h
-  | .node k l r, _ => by
-      unfold focus
-      split_ifs
-      · simp
-      · cases l with
-        | nil => simp
-        | node a b c => exact numNodes_focus_pos x (.node a b c) (by simp)
-      · cases r with
-        | nil => simp
-        | node a b c => exact numNodes_focus_pos x (.node a b c) (by simp)
-
-private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
+private theorem access_aux [LinearOrder α] {w : α → ℝ} (hw : ∀ a, 0 < w a) (x : α) (n : ℕ) :
     ∀ t : BinaryTree α, t.numNodes ≤ n →
-      (cost x t : ℝ) + potential (splay x t) - potential t ≤
-        3 * (Real.logb 2 (t.numNodes : ℝ) - Real.logb 2 ((focus x t).numNodes : ℝ)) + 1 := by
+      (cost x t : ℝ) + potentialW w (splay x t) - potentialW w t ≤
+        3 * (Real.logb 2 (weight w t) - Real.logb 2 (weight w (focus x t))) + 1 := by
   induction n with
   | zero =>
       intro t ht
       cases t with
-      | nil => rw [cost, rotations.eq_def]; simp [focus, potential]
+      | nil => rw [cost, rotations.eq_def]; simp [focus, potentialW, weight]
       | node _ _ _ => simp at ht
   | succ n ih =>
       intro t ht
       cases t with
-      | nil => rw [cost, rotations.eq_def]; simp [focus, potential]
+      | nil => rw [cost, rotations.eq_def]; simp [focus, potentialW, weight]
       | node k l r =>
       by_cases hxk : x = k
       · -- the key is at the root: nothing happens
@@ -268,15 +282,20 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
             have hf : focus x (.node k (.node x ll lr) r) = .node x ll lr := by
               simp [focus, hxk, hlt]
             rw [hs, hc, hf]
-            have := zig_step (T := (BinaryTree.node k (.node x ll lr) r).numNodes)
-              (K := (BinaryTree.node k lr r).numNodes) (L := (BinaryTree.node x ll lr).numNodes)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-            have hT : (BinaryTree.node x ll (.node k lr r)).numNodes =
-                (BinaryTree.node k (.node x ll lr) r).numNodes := by simp; omega
-            simp only [potential, hT]
+            have := weight_nonneg hw ll
+            have := weight_nonneg hw lr
+            have := weight_nonneg hw r
+            have := hw x
+            have := hw k
+            have := zig_stepW (T := weight w (BinaryTree.node k (.node x ll lr) r))
+              (K := weight w (BinaryTree.node k lr r)) (L := weight w (BinaryTree.node x ll lr))
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+            have hT : weight w (BinaryTree.node x ll (.node k lr r)) =
+                weight w (BinaryTree.node k (.node x ll lr) r) := by simp only [weight]; linarith
+            simp only [potentialW, hT]
             push_cast
             linarith
           by_cases hll : x < lk
@@ -291,21 +310,26 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 have hf : focus x (.node k (.node lk .nil lr) r) = .node lk .nil lr := by
                   simp [focus, hxk, hlt, hxl, hll]
                 rw [hs, hc, hf]
-                have := zig_step (T := (BinaryTree.node k (.node lk .nil lr) r).numNodes)
-                  (K := (BinaryTree.node k lr r).numNodes)
-                  (L := (BinaryTree.node lk .nil lr).numNodes)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node lk .nil (.node k lr r)).numNodes =
-                    (BinaryTree.node k (.node lk .nil lr) r).numNodes := by simp; omega
-                simp only [potential, hT]
+                have := weight_nonneg hw lr
+                have := weight_nonneg hw r
+                have := hw lk
+                have := hw k
+                have := zig_stepW (T := weight w (BinaryTree.node k (.node lk .nil lr) r))
+                  (K := weight w (BinaryTree.node k lr r))
+                  (L := weight w (BinaryTree.node lk .nil lr))
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node lk .nil (.node k lr r)) =
+                    weight w (BinaryTree.node k (.node lk .nil lr) r) := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT]
                 push_cast
                 linarith
             | node a b c =>
                 -- zig-zig
-                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node x a b c
+                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node_w w x a b c
                 have hs : splay x (.node k (.node lk (.node a b c) lr) r) =
                     .node d A (.node lk B (.node k lr r)) := by
                   unfold splay; simp [hxk, hlt, hxl, hll, hsp]
@@ -326,22 +350,30 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 rw [hsp] at hih
                 rw [hs, hc, hf]
                 set ll : BinaryTree α := .node a b c with hlldef
-                have hll1 : 1 ≤ ll.numNodes := by simp [hlldef]
-                have := zigzig_step (T := (BinaryTree.node k (.node lk ll lr) r).numNodes)
-                  (L := ll.numNodes) (M := (BinaryTree.node lk ll lr).numNodes)
-                  (K := (BinaryTree.node k lr r).numNodes)
-                  (N := (BinaryTree.node lk B (.node k lr r)).numNodes)
-                  hll1 (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes] at hAB ⊢; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node d A (.node lk B (.node k lr r))).numNodes =
-                    (BinaryTree.node k (.node lk ll lr) r).numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                have hD : (BinaryTree.node d A B).numNodes = ll.numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                simp only [potential, hT] at hih ⊢
+                have hll1 : 0 < weight w ll := weight_node_pos hw a b c
+                have := weight_nonneg hw A
+                have := weight_nonneg hw B
+                have := weight_nonneg hw ll
+                have := weight_nonneg hw lr
+                have := weight_nonneg hw r
+                have := hw d
+                have := hw lk
+                have := hw k
+                have := zigzig_stepW (T := weight w (BinaryTree.node k (.node lk ll lr) r))
+                  (L := weight w ll) (M := weight w (BinaryTree.node lk ll lr))
+                  (K := weight w (BinaryTree.node k lr r))
+                  (N := weight w (BinaryTree.node lk B (.node k lr r)))
+                  hll1 (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node d A (.node lk B (.node k lr r))) =
+                    weight w (BinaryTree.node k (.node lk ll lr) r) := by
+                  simp only [weight]; linarith
+                have hD : weight w (BinaryTree.node d A B) = weight w ll := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT] at hih ⊢
                 rw [hD] at hih
                 push_cast at hih ⊢
                 linarith
@@ -355,21 +387,26 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 have hf : focus x (.node k (.node lk ll .nil) r) = .node lk ll .nil := by
                   simp [focus, hxk, hlt, hxl, hll]
                 rw [hs, hc, hf]
-                have := zig_step (T := (BinaryTree.node k (.node lk ll .nil) r).numNodes)
-                  (K := (BinaryTree.node k .nil r).numNodes)
-                  (L := (BinaryTree.node lk ll .nil).numNodes)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node lk ll (.node k .nil r)).numNodes =
-                    (BinaryTree.node k (.node lk ll .nil) r).numNodes := by simp; omega
-                simp only [potential, hT]
+                have := weight_nonneg hw ll
+                have := weight_nonneg hw r
+                have := hw lk
+                have := hw k
+                have := zig_stepW (T := weight w (BinaryTree.node k (.node lk ll .nil) r))
+                  (K := weight w (BinaryTree.node k .nil r))
+                  (L := weight w (BinaryTree.node lk ll .nil))
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node lk ll (.node k .nil r)) =
+                    weight w (BinaryTree.node k (.node lk ll .nil) r) := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT]
                 push_cast
                 linarith
             | node a b c =>
                 -- zig-zag
-                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node x a b c
+                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node_w w x a b c
                 have hs : splay x (.node k (.node lk ll (.node a b c)) r) =
                     .node d (.node lk ll A) (.node k B r) := by
                   unfold splay; simp [hxk, hlt, hxl, hll, hsp]
@@ -390,22 +427,30 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 rw [hsp] at hih
                 rw [hs, hc, hf]
                 set lr : BinaryTree α := .node a b c with hlrdef
-                have hlr1 : 1 ≤ lr.numNodes := by simp [hlrdef]
-                have := zigzag_step (T := (BinaryTree.node k (.node lk ll lr) r).numNodes)
-                  (L := lr.numNodes) (M := (BinaryTree.node lk ll lr).numNodes)
-                  (N := (BinaryTree.node lk ll A).numNodes)
-                  (K := (BinaryTree.node k B r).numNodes)
-                  hlr1 (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes] at hAB ⊢; omega)
-                have hT : (BinaryTree.node d (.node lk ll A) (.node k B r)).numNodes =
-                    (BinaryTree.node k (.node lk ll lr) r).numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                have hD : (BinaryTree.node d A B).numNodes = lr.numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                simp only [potential, hT] at hih ⊢
+                have hlr1 : 0 < weight w lr := weight_node_pos hw a b c
+                have := weight_nonneg hw ll
+                have := weight_nonneg hw A
+                have := weight_nonneg hw B
+                have := weight_nonneg hw lr
+                have := weight_nonneg hw r
+                have := hw d
+                have := hw lk
+                have := hw k
+                have := zigzag_stepW (T := weight w (BinaryTree.node k (.node lk ll lr) r))
+                  (L := weight w lr) (M := weight w (BinaryTree.node lk ll lr))
+                  (N := weight w (BinaryTree.node lk ll A))
+                  (K := weight w (BinaryTree.node k B r))
+                  hlr1 (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node d (.node lk ll A) (.node k B r)) =
+                    weight w (BinaryTree.node k (.node lk ll lr) r) := by
+                  simp only [weight]; linarith
+                have hD : weight w (BinaryTree.node d A B) = weight w lr := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT] at hih ⊢
                 rw [hD] at hih
                 push_cast at hih ⊢
                 linarith
@@ -425,15 +470,20 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
             have hf : focus x (.node k l (.node x rl rr)) = .node x rl rr := by
               simp [focus, hxk, hlt]
             rw [hs, hc, hf]
-            have := zig_step (T := (BinaryTree.node k l (.node x rl rr)).numNodes)
-              (K := (BinaryTree.node k l rl).numNodes) (L := (BinaryTree.node x rl rr).numNodes)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-              (by simp only [BinaryTree.numNodes]; omega)
-            have hT : (BinaryTree.node x (.node k l rl) rr).numNodes =
-                (BinaryTree.node k l (.node x rl rr)).numNodes := by simp; omega
-            simp only [potential, hT]
+            have := weight_nonneg hw l
+            have := weight_nonneg hw rl
+            have := weight_nonneg hw rr
+            have := hw x
+            have := hw k
+            have := zig_stepW (T := weight w (BinaryTree.node k l (.node x rl rr)))
+              (K := weight w (BinaryTree.node k l rl)) (L := weight w (BinaryTree.node x rl rr))
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+              (by simp only [weight]; linarith)
+            have hT : weight w (BinaryTree.node x (.node k l rl) rr) =
+                weight w (BinaryTree.node k l (.node x rl rr)) := by simp only [weight]; linarith
+            simp only [potentialW, hT]
             push_cast
             linarith
           by_cases hrr : rk < x
@@ -448,21 +498,26 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 have hf : focus x (.node k l (.node rk rl .nil)) = .node rk rl .nil := by
                   simp [focus, hxk, hlt, hxr, hnot]
                 rw [hs, hc, hf]
-                have := zig_step (T := (BinaryTree.node k l (.node rk rl .nil)).numNodes)
-                  (K := (BinaryTree.node k l rl).numNodes)
-                  (L := (BinaryTree.node rk rl .nil).numNodes)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node rk (.node k l rl) .nil).numNodes =
-                    (BinaryTree.node k l (.node rk rl .nil)).numNodes := by simp; omega
-                simp only [potential, hT]
+                have := weight_nonneg hw l
+                have := weight_nonneg hw rl
+                have := hw rk
+                have := hw k
+                have := zig_stepW (T := weight w (BinaryTree.node k l (.node rk rl .nil)))
+                  (K := weight w (BinaryTree.node k l rl))
+                  (L := weight w (BinaryTree.node rk rl .nil))
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node rk (.node k l rl) .nil) =
+                    weight w (BinaryTree.node k l (.node rk rl .nil)) := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT]
                 push_cast
                 linarith
             | node a b c =>
                 -- zig-zig
-                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node x a b c
+                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node_w w x a b c
                 have hs : splay x (.node k l (.node rk rl (.node a b c))) =
                     .node d (.node rk (.node k l rl) A) B := by
                   unfold splay; simp [hxk, hlt, hxr, hrr, hsp]
@@ -483,22 +538,30 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 rw [hsp] at hih
                 rw [hs, hc, hf]
                 set rr : BinaryTree α := .node a b c with hrrdef
-                have hrr1 : 1 ≤ rr.numNodes := by simp [hrrdef]
-                have := zigzig_step (T := (BinaryTree.node k l (.node rk rl rr)).numNodes)
-                  (L := rr.numNodes) (M := (BinaryTree.node rk rl rr).numNodes)
-                  (K := (BinaryTree.node k l rl).numNodes)
-                  (N := (BinaryTree.node rk (.node k l rl) A).numNodes)
-                  hrr1 (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes] at hAB ⊢; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node d (.node rk (.node k l rl) A) B).numNodes =
-                    (BinaryTree.node k l (.node rk rl rr)).numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                have hD : (BinaryTree.node d A B).numNodes = rr.numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                simp only [potential, hT] at hih ⊢
+                have hrr1 : 0 < weight w rr := weight_node_pos hw a b c
+                have := weight_nonneg hw l
+                have := weight_nonneg hw rl
+                have := weight_nonneg hw A
+                have := weight_nonneg hw B
+                have := weight_nonneg hw rr
+                have := hw d
+                have := hw rk
+                have := hw k
+                have := zigzig_stepW (T := weight w (BinaryTree.node k l (.node rk rl rr)))
+                  (L := weight w rr) (M := weight w (BinaryTree.node rk rl rr))
+                  (K := weight w (BinaryTree.node k l rl))
+                  (N := weight w (BinaryTree.node rk (.node k l rl) A))
+                  hrr1 (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node d (.node rk (.node k l rl) A) B) =
+                    weight w (BinaryTree.node k l (.node rk rl rr)) := by
+                  simp only [weight]; linarith
+                have hD : weight w (BinaryTree.node d A B) = weight w rr := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT] at hih ⊢
                 rw [hD] at hih
                 push_cast at hih ⊢
                 linarith
@@ -513,21 +576,26 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 have hf : focus x (.node k l (.node rk .nil rr)) = .node rk .nil rr := by
                   simp [focus, hxk, hlt, hxr, hlt']
                 rw [hs, hc, hf]
-                have := zig_step (T := (BinaryTree.node k l (.node rk .nil rr)).numNodes)
-                  (K := (BinaryTree.node k l .nil).numNodes)
-                  (L := (BinaryTree.node rk .nil rr).numNodes)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                have hT : (BinaryTree.node rk (.node k l .nil) rr).numNodes =
-                    (BinaryTree.node k l (.node rk .nil rr)).numNodes := by simp; omega
-                simp only [potential, hT]
+                have := weight_nonneg hw l
+                have := weight_nonneg hw rr
+                have := hw rk
+                have := hw k
+                have := zig_stepW (T := weight w (BinaryTree.node k l (.node rk .nil rr)))
+                  (K := weight w (BinaryTree.node k l .nil))
+                  (L := weight w (BinaryTree.node rk .nil rr))
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node rk (.node k l .nil) rr) =
+                    weight w (BinaryTree.node k l (.node rk .nil rr)) := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT]
                 push_cast
                 linarith
             | node a b c =>
                 -- zig-zag
-                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node x a b c
+                obtain ⟨d, A, B, hsp, hAB⟩ := splay_eq_node_of_node_w w x a b c
                 have hs : splay x (.node k l (.node rk (.node a b c) rr)) =
                     .node d (.node k l A) (.node rk B rr) := by
                   unfold splay; simp [hxk, hlt, hxr, hrr, hsp]
@@ -548,25 +616,62 @@ private theorem access_aux [LinearOrder α] (x : α) (n : ℕ) :
                 rw [hsp] at hih
                 rw [hs, hc, hf]
                 set rl : BinaryTree α := .node a b c with hrldef
-                have hrl1 : 1 ≤ rl.numNodes := by simp [hrldef]
-                have := zigzag_step (T := (BinaryTree.node k l (.node rk rl rr)).numNodes)
-                  (L := rl.numNodes) (M := (BinaryTree.node rk rl rr).numNodes)
-                  (N := (BinaryTree.node k l A).numNodes)
-                  (K := (BinaryTree.node rk B rr).numNodes)
-                  hrl1 (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes]; omega)
-                  (by simp only [BinaryTree.numNodes] at hAB ⊢; omega)
-                have hT : (BinaryTree.node d (.node k l A) (.node rk B rr)).numNodes =
-                    (BinaryTree.node k l (.node rk rl rr)).numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                have hD : (BinaryTree.node d A B).numNodes = rl.numNodes := by
-                  simp only [BinaryTree.numNodes] at hAB ⊢; omega
-                simp only [potential, hT] at hih ⊢
+                have hrl1 : 0 < weight w rl := weight_node_pos hw a b c
+                have := weight_nonneg hw l
+                have := weight_nonneg hw A
+                have := weight_nonneg hw B
+                have := weight_nonneg hw rl
+                have := weight_nonneg hw rr
+                have := hw d
+                have := hw rk
+                have := hw k
+                have := zigzag_stepW (T := weight w (BinaryTree.node k l (.node rk rl rr)))
+                  (L := weight w rl) (M := weight w (BinaryTree.node rk rl rr))
+                  (N := weight w (BinaryTree.node k l A))
+                  (K := weight w (BinaryTree.node rk B rr))
+                  hrl1 (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                  (by simp only [weight]; linarith)
+                have hT : weight w (BinaryTree.node d (.node k l A) (.node rk B rr)) =
+                    weight w (BinaryTree.node k l (.node rk rl rr)) := by
+                  simp only [weight]; linarith
+                have hD : weight w (BinaryTree.node d A B) = weight w rl := by
+                  simp only [weight]; linarith
+                simp only [potentialW, hT] at hih ⊢
                 rw [hD] at hih
                 push_cast at hih ⊢
                 linarith
+
+/-- **Access lemma for splay trees.** For every assignment of positive weights `w` to the keys,
+every binary tree `t` and every key `x`, the amortized cost of splaying `t` at `x`, namely its
+cost (rotations, or one if none) plus the change in the weighted potential, is at most
+`3 (log₂ W(t) - log₂ W(focus x t)) + 1`, where `W` is the total weight of a subtree and
+`focus x t` is the subtree rooted at the node that splaying brings to the root (Sleator and
+Tarjan, *Self-adjusting binary search trees*, J. ACM 32(3) (1985), Lemma 1 (Access Lemma)).
+No search-tree ordering is needed. -/
+theorem access_lemma_weighted [LinearOrder α] {w : α → ℝ} (hw : ∀ a, 0 < w a) (x : α)
+    (t : BinaryTree α) :
+    (cost x t : ℝ) + potentialW w (splay x t) - potentialW w t ≤
+      3 * (Real.logb 2 (weight w t) - Real.logb 2 (weight w (focus x t))) + 1 :=
+  access_aux hw x t.numNodes t le_rfl
+
+/-- With unit weights, the weight of a tree is its number of nodes. -/
+theorem weight_one : ∀ t : BinaryTree α, weight (fun _ => (1 : ℝ)) t = t.numNodes
+  | .nil => by simp [weight]
+  | .node k l r => by
+      rw [weight, weight_one l, weight_one r]
+      push_cast [BinaryTree.numNodes]
+      ring
+
+/-- With unit weights, the weighted potential is the potential. -/
+theorem potential_eq_potentialW_one : ∀ t : BinaryTree α,
+    potential t = potentialW (fun _ => (1 : ℝ)) t
+  | .nil => rfl
+  | .node k l r => by
+      rw [potential, potentialW, potential_eq_potentialW_one l, potential_eq_potentialW_one r,
+        weight_one]
 
 /-- **Access lemma for splay trees (unit weights).** For every binary tree `t` and key `x`, the
 amortized cost of splaying `t` at `x`, namely its cost (rotations, or one if none) plus the
@@ -577,8 +682,10 @@ brings to the root (Sleator and Tarjan, *Self-adjusting binary search trees*, J.
 needed. -/
 theorem access_lemma [LinearOrder α] (x : α) (t : BinaryTree α) :
     (cost x t : ℝ) + potential (splay x t) - potential t ≤
-      3 * (Real.logb 2 (t.numNodes : ℝ) - Real.logb 2 ((focus x t).numNodes : ℝ)) + 1 :=
-  access_aux x t.numNodes t le_rfl
+      3 * (Real.logb 2 (t.numNodes : ℝ) - Real.logb 2 ((focus x t).numNodes : ℝ)) + 1 := by
+  have h := access_lemma_weighted (w := fun _ : α => (1 : ℝ)) (fun _ => one_pos) x t
+  rwa [← potential_eq_potentialW_one, ← potential_eq_potentialW_one, weight_one,
+    weight_one] at h
 
 /-- **Amortized cost of a splay is at most `3 log₂ n + 1`.** On a tree with `n` nodes, the
 cost of `splay x t` plus the change in potential is at most `3 log₂ n + 1` (Sleator and
@@ -665,6 +772,276 @@ theorem balance_theorem [LinearOrder α] (xs : ℕ → α) (t : BinaryTree α) (
   have hm := potential_nonneg (splayRun xs t m)
   simp only [Finset.sum_const, Finset.card_range, nsmul_eq_mul] at key
   linarith
+
+section Weighted
+
+variable [LinearOrder α]
+
+omit [LinearOrder α] in
+private theorem mem_node_iff {x k : α} {l r : BinaryTree α} :
+    x ∈ BinaryTree.node k l r ↔ x ∈ l ∨ x = k ∨ x ∈ r :=
+  Iff.rfl
+
+/-- In a search tree, the search for a present key ends at the node holding it. -/
+theorem focus_eq_node_of_mem {x : α} :
+    ∀ {t : BinaryTree α}, BinarySearchTree.Ordered t → x ∈ t → ∃ l r, focus x t = .node x l r
+  | .nil, _, hx => False.elim hx
+  | .node k l r, hord, hx => by
+      obtain ⟨hl, hr, hlk, hkr⟩ := hord
+      rcases mem_node_iff.mp hx with hxl | rfl | hxr
+      · have hxk : x < k := (BinarySearchTree.all_iff_forall_mem.mp hlk) x hxl
+        cases l with
+        | nil => exact False.elim hxl
+        | node a b c =>
+            obtain ⟨l', r', h⟩ := focus_eq_node_of_mem hl hxl
+            refine ⟨l', r', ?_⟩
+            have hf : focus x (.node k (.node a b c) r) = focus x (.node a b c) := by
+              simp [focus, hxk.ne, hxk]
+            rw [hf]
+            exact h
+      · exact ⟨l, r, by simp [focus]⟩
+      · have hkx : k < x := (BinarySearchTree.all_iff_forall_mem.mp hkr) x hxr
+        cases r with
+        | nil => exact False.elim hxr
+        | node a b c =>
+            obtain ⟨l', r', h⟩ := focus_eq_node_of_mem hr hxr
+            refine ⟨l', r', ?_⟩
+            have hf : focus x (.node k l (.node a b c)) = focus x (.node a b c) := by
+              simp [focus, hkx.ne', not_lt.mpr hkx.le]
+            rw [hf]
+            exact h
+
+/-- **Amortized cost of accessing a present key.** For positive weights and a search tree `t`
+containing `x`, the amortized cost of splaying `t` at `x` is at most `3 (log₂ W(t) - log₂ w(x)) + 1`
+(Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 32(3) (1985), Lemma 1,
+`3 (r(t) - r(x)) + 1 = O(log (s(t) / s(x)))`, with `s(x) ≥ w(x)`). -/
+theorem amortized_cost_le_weighted {w : α → ℝ} (hw : ∀ a, 0 < w a) {x : α} {t : BinaryTree α}
+    (hord : BinarySearchTree.Ordered t) (hx : x ∈ t) :
+    (cost x t : ℝ) + potentialW w (splay x t) - potentialW w t ≤
+      3 * (Real.logb 2 (weight w t) - Real.logb 2 (w x)) + 1 := by
+  have h := access_lemma_weighted hw x t
+  obtain ⟨l, r, hf⟩ := focus_eq_node_of_mem hord hx
+  have hle : Real.logb 2 (w x) ≤ Real.logb 2 (weight w (focus x t)) := by
+    rw [hf]
+    apply lgR_mono (hw x)
+    have := weight_nonneg hw l
+    have := weight_nonneg hw r
+    simp only [weight]
+    linarith
+  linarith
+
+omit [LinearOrder α] in
+theorem sum_logb_le_potentialW {w : α → ℝ} (hw : ∀ a, 0 < w a) : ∀ t : BinaryTree α,
+    ((BinarySearchTree.inorder t).map (fun i => Real.logb 2 (w i))).sum ≤ potentialW w t
+  | .nil => by simp [BinarySearchTree.inorder, BinarySearchTree.inorderAux, potentialW]
+  | .node k l r => by
+      have hl := sum_logb_le_potentialW hw l
+      have hr := sum_logb_le_potentialW hw r
+      have hk : Real.logb 2 (w k) ≤ Real.logb 2 (weight w (.node k l r)) := by
+        apply lgR_mono (hw k)
+        have := weight_nonneg hw l
+        have := weight_nonneg hw r
+        simp only [weight]
+        linarith
+      rw [BinarySearchTree.inorder_node, potentialW]
+      simp only [List.map_append, List.map_cons, List.sum_append, List.sum_cons]
+      linarith
+
+omit [LinearOrder α] in
+theorem potentialW_le_card_mul {w : α → ℝ} (hw : ∀ a, 0 < w a) : ∀ t : BinaryTree α,
+    potentialW w t ≤ (t.numNodes : ℝ) * Real.logb 2 (weight w t)
+  | .nil => by simp [potentialW]
+  | .node k l r => by
+      have hl := potentialW_le_card_mul hw l
+      have hr := potentialW_le_card_mul hw r
+      have hT : 0 < weight w (.node k l r) := weight_node_pos hw k l r
+      have hlT : (l.numNodes : ℝ) * Real.logb 2 (weight w l) ≤
+          l.numNodes * Real.logb 2 (weight w (.node k l r)) := by
+        cases l with
+        | nil => simp
+        | node a b c =>
+            apply mul_le_mul_of_nonneg_left _ (by positivity)
+            apply lgR_mono (weight_node_pos hw a b c)
+            have := weight_nonneg hw r
+            have := hw k
+            simp only [weight] at *
+            linarith
+      have hrT : (r.numNodes : ℝ) * Real.logb 2 (weight w r) ≤
+          r.numNodes * Real.logb 2 (weight w (.node k l r)) := by
+        cases r with
+        | nil => simp
+        | node a b c =>
+            apply mul_le_mul_of_nonneg_left _ (by positivity)
+            apply lgR_mono (weight_node_pos hw a b c)
+            have := weight_nonneg hw l
+            have := hw k
+            simp only [weight] at *
+            linarith
+      rw [potentialW]
+      push_cast [BinaryTree.numNodes]
+      nlinarith
+
+theorem inorder_splayRun (xs : ℕ → α) (t : BinaryTree α) :
+    ∀ i, BinarySearchTree.inorder (splayRun xs t i) = BinarySearchTree.inorder t
+  | 0 => rfl
+  | i + 1 => by rw [splayRun, inorder_splay, inorder_splayRun xs t i]
+
+theorem ordered_splayRun (xs : ℕ → α) {t : BinaryTree α} (h : BinarySearchTree.Ordered t) :
+    ∀ i, BinarySearchTree.Ordered (splayRun xs t i)
+  | 0 => h
+  | i + 1 => ordered_splay (ordered_splayRun xs h i)
+
+theorem weight_splayRun (w : α → ℝ) (xs : ℕ → α) (t : BinaryTree α) :
+    ∀ i, weight w (splayRun xs t i) = weight w t
+  | 0 => rfl
+  | i + 1 => by rw [splayRun, weight_splay, weight_splayRun w xs t i]
+
+/-- **Splay-tree access bound for arbitrary weights.** For positive item weights `w`, a search
+tree `t` of total weight `W` and keys `x₀, …, x_{m-1}` of `t`, the total cost of splaying
+successively at them is at most
+`∑_j (3 log₂ (W / w(x_j)) + 1) + ∑_{i ∈ t} log₂ (W / w(i))`: each access has amortized cost at
+most `3 log₂ (W / w(x_j)) + 1`, and the potential drops by at most `∑_i log₂ (W / w(i))` since
+the subtree at the node holding `i` has weight between `w(i)` and `W` (Sleator and Tarjan,
+*Self-adjusting binary search trees*, J. ACM 32(3) (1985), §2, the remark before Theorem 1;
+Theorems 1–3 are its instances). -/
+theorem access_sequence_le_weighted {w : α → ℝ} (hw : ∀ a, 0 < w a) (xs : ℕ → α)
+    {t : BinaryTree α} (hord : BinarySearchTree.Ordered t) (m : ℕ)
+    (hmem : ∀ j < m, xs j ∈ t) :
+    (∑ j ∈ Finset.range m, (cost (xs j) (splayRun xs t j) : ℝ)) ≤
+      ∑ j ∈ Finset.range m, (3 * (Real.logb 2 (weight w t) - Real.logb 2 (w (xs j))) + 1) +
+        ((BinarySearchTree.inorder t).map
+          (fun i => Real.logb 2 (weight w t) - Real.logb 2 (w i))).sum := by
+  have key := PotentialMethod.sum_cost_le_of_amortizedCost_le (potentialW w) (splayRun xs t)
+    (fun j => (cost (xs j) (splayRun xs t j) : ℝ))
+    (fun j => 3 * (Real.logb 2 (weight w t) - Real.logb 2 (w (xs j))) + 1) m (by
+      intro j hj
+      have hx : xs j ∈ splayRun xs t j := by
+        rw [← BinarySearchTree.mem_inorder, inorder_splayRun, BinarySearchTree.mem_inorder]
+        exact hmem j hj
+      have h := amortized_cost_le_weighted hw (ordered_splayRun xs hord j) hx
+      rw [weight_splayRun] at h
+      simpa [PotentialMethod.amortizedCost, splayRun] using h)
+  have h0 : potentialW w (splayRun xs t 0) ≤
+      ((BinarySearchTree.inorder t).map (fun _ => Real.logb 2 (weight w t))).sum := by
+    have := potentialW_le_card_mul hw t
+    simp only [List.map_const', List.sum_replicate, nsmul_eq_mul]
+    rw [← BinarySearchTree.numNodes_eq_length_inorder]
+    exact this
+  have hm := sum_logb_le_potentialW hw (splayRun xs t m)
+  rw [inorder_splayRun] at hm
+  have hsplit : ((BinarySearchTree.inorder t).map
+      (fun i => Real.logb 2 (weight w t) - Real.logb 2 (w i))).sum =
+      ((BinarySearchTree.inorder t).map (fun _ => Real.logb 2 (weight w t))).sum -
+        ((BinarySearchTree.inorder t).map (fun i => Real.logb 2 (w i))).sum := by
+    induction BinarySearchTree.inorder t with
+    | nil => simp
+    | cons a l ih =>
+        simp only [List.map_cons, List.sum_cons] at ih ⊢
+        rw [ih]
+        ring
+  rw [hsplit]
+  linarith
+
+/-- **Access frequency.** The number of indices `j < m` with `xs j = i`, the `q(i)` of Sleator and
+Tarjan (*Self-adjusting binary search trees*, J. ACM 32(3) (1985), §2). -/
+def accessCount (xs : ℕ → α) (m : ℕ) (i : α) : ℕ :=
+  ((Finset.range m).filter (fun j => xs j = i)).card
+
+private theorem sum_range_eq_sum_inorder (xs : ℕ → α) {t : BinaryTree α}
+    (hord : BinarySearchTree.Ordered t) (m : ℕ) (hmem : ∀ j < m, xs j ∈ t) (F : α → ℝ) :
+    ∑ j ∈ Finset.range m, F (xs j) =
+      ((BinarySearchTree.inorder t).map (fun i => (accessCount xs m i : ℝ) * F i)).sum := by
+  have hnd : (BinarySearchTree.inorder t).Nodup :=
+    (BinarySearchTree.ordered_inorder hord).imp (fun h => ne_of_lt h)
+  have hmaps : ∀ j ∈ Finset.range m, xs j ∈ (BinarySearchTree.inorder t).toFinset := by
+    intro j hj
+    rw [List.mem_toFinset, BinarySearchTree.mem_inorder]
+    exact hmem j (Finset.mem_range.mp hj)
+  rw [← Finset.sum_fiberwise_of_maps_to' hmaps, ← List.sum_toFinset _ hnd]
+  refine Finset.sum_congr rfl fun i _ => ?_
+  rw [Finset.sum_const, nsmul_eq_mul]
+  rfl
+
+omit [LinearOrder α] in
+private theorem list_sum_aux (l : List α) (q a : α → ℝ) :
+    (l.map (fun i => q i * (3 * a i + 1))).sum =
+      (l.map (fun i => q i * 1)).sum + 3 * (l.map (fun i => q i * a i)).sum := by
+  induction l with
+  | nil => simp
+  | cons b l ih =>
+      simp only [List.map_cons, List.sum_cons] at ih ⊢
+      rw [ih]
+      ring
+
+/-- **Static optimality of splay trees.** Let `t` be a search tree and `x₀, …, x_{m-1}` keys of
+`t` such that every key of `t` is accessed, `q(i) ≥ 1` times. Then splaying successively at
+`x₀, …, x_{m-1}` costs in total at most
+`m + 3 ∑_{i ∈ t} q(i) log₂ (m / q(i)) + ∑_{i ∈ t} log₂ (m / q(i))`, which is
+`O(m + ∑_i q(i) log (m / q(i)))`: within a constant factor of the cost of a static optimum
+search tree for these frequencies (Sleator and Tarjan, *Self-adjusting binary search trees*,
+J. ACM 32(3) (1985), §2, Theorem 2 (Static Optimality Theorem), proved as there by choosing the
+weights `w(i) = q(i)`). -/
+theorem static_optimality (xs : ℕ → α) {t : BinaryTree α} (hord : BinarySearchTree.Ordered t)
+    (m : ℕ) (hmem : ∀ j < m, xs j ∈ t) (hall : ∀ i ∈ t, 1 ≤ accessCount xs m i) :
+    (∑ j ∈ Finset.range m, (cost (xs j) (splayRun xs t j) : ℝ)) ≤
+      m + 3 * ((BinarySearchTree.inorder t).map (fun i => (accessCount xs m i : ℝ) *
+          (Real.logb 2 m - Real.logb 2 (accessCount xs m i)))).sum +
+        ((BinarySearchTree.inorder t).map
+          (fun i => Real.logb 2 m - Real.logb 2 (accessCount xs m i))).sum := by
+  classical
+  set q := accessCount xs m with hq
+  let w : α → ℝ := fun i => if q i = 0 then 1 else (q i : ℝ)
+  have hw : ∀ a, 0 < w a := by
+    intro a
+    by_cases h : q a = 0
+    · simp [w, h]
+    · simp only [w, ite_eq_right h]
+      exact_mod_cast Nat.pos_of_ne_zero h
+  have hwq : ∀ i ∈ t, w i = q i := by
+    intro i hi
+    have := hall i hi
+    simp only [w, ite_eq_right (by omega : q i ≠ 0)]
+  have hWm : weight w t = m := by
+    rw [weight_eq_sum_inorder]
+    have h1 : ((BinarySearchTree.inorder t).map w).sum =
+        ((BinarySearchTree.inorder t).map (fun i => (q i : ℝ) * 1)).sum := by
+      congr 1
+      refine List.map_congr_left fun i hi => ?_
+      rw [mul_one]
+      exact hwq i (BinarySearchTree.mem_inorder.mp hi)
+    rw [h1, ← sum_range_eq_sum_inorder xs hord m hmem (fun _ => 1)]
+    all_goals simp
+  have key := access_sequence_le_weighted hw xs hord m hmem
+  rw [hWm] at key
+  have hF : ∀ F : ℝ → ℝ, ((BinarySearchTree.inorder t).map (fun i => F (w i))).sum =
+      ((BinarySearchTree.inorder t).map (fun i => F (q i : ℝ))).sum := by
+    intro F
+    congr 1
+    refine List.map_congr_left fun i hi => ?_
+    rw [hwq i (BinarySearchTree.mem_inorder.mp hi)]
+  have hsum : ∑ j ∈ Finset.range m, (3 * (Real.logb 2 m - Real.logb 2 (w (xs j))) + 1) =
+      m + 3 * ((BinarySearchTree.inorder t).map (fun i => (q i : ℝ) *
+          (Real.logb 2 m - Real.logb 2 (q i)))).sum := by
+    rw [sum_range_eq_sum_inorder xs hord m hmem
+      (fun i => 3 * (Real.logb 2 m - Real.logb 2 (w i)) + 1)]
+    have h2 : ((BinarySearchTree.inorder t).map (fun i => (q i : ℝ) *
+        (3 * (Real.logb 2 m - Real.logb 2 (w i)) + 1))).sum =
+        ((BinarySearchTree.inorder t).map (fun i => (q i : ℝ) *
+          (3 * (Real.logb 2 m - Real.logb 2 (q i)) + 1))).sum := by
+      congr 1
+      refine List.map_congr_left fun i hi => ?_
+      rw [hwq i (BinarySearchTree.mem_inorder.mp hi)]
+    rw [h2]
+    have h3 : (m : ℝ) = ((BinarySearchTree.inorder t).map (fun i => (q i : ℝ) * 1)).sum := by
+      rw [← sum_range_eq_sum_inorder xs hord m hmem (fun _ => 1)]
+      simp
+    rw [list_sum_aux (BinarySearchTree.inorder t) (fun i => (q i : ℝ))
+      (fun i => Real.logb 2 m - Real.logb 2 (q i))]
+    linarith
+  rw [hsum, hF (fun z => Real.logb 2 m - Real.logb 2 z)] at key
+  exact key
+
+end Weighted
 
 end SplayTree
 end Cslib.Algorithms.Lean

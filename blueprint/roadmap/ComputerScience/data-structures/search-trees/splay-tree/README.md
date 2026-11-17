@@ -1,9 +1,11 @@
 # Splay tree
 
 A splay tree is a binary search tree that, after every access, moves the accessed node to the
-root by splaying. Its amortized analysis uses the sum-of-logs potential: the access lemma bounds
-the amortized cost of a splay by $3 \log_2 n + 1$, and the balance theorem follows by the
-potential method (Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 32(3) (1985)).
+root by splaying. Its amortized analysis uses a sum-of-logs potential built from arbitrary
+positive item weights: the access lemma bounds the amortized cost of a splay by
+$3 \log_2 (W / s(x)) + 1$, and the potential method turns it into bounds on access sequences,
+the balance theorem (unit weights) and static optimality (weights equal to the access
+frequencies) (Sleator and Tarjan, *Self-adjusting binary search trees*, J. ACM 32(3) (1985)).
 
 - [Root key of a splay tree](root.md)
 - [Splay operation](splay.md)
@@ -38,6 +40,17 @@ potential method (Sleator and Tarjan, *Self-adjusting binary search trees*, J. A
 - [Trees of a run of splays](splay-run.md)
 - [Splaying preserves the number of nodes along a run](num-nodes-splay-run.md)
 - [Balance theorem for splay trees](balance-theorem.md)
+- [Weight of a binary tree](weight.md)
+- [Weighted splay-tree potential](potential-w.md)
+- [Weight one](weight-one.md)
+- [Potential eq potential W one](potential-eq-potential-w-one.md)
+- [Weight splay](weight-splay.md)
+- [Access lemma for splay trees](access-lemma-weighted.md)
+- [Focus eq node of mem](focus-eq-node-of-mem.md)
+- [Amortized cost of accessing a present key](amortized-cost-le-weighted.md)
+- [Splay-tree access bound for arbitrary weights](access-sequence-le-weighted.md)
+- [Access frequency](access-count.md)
+- [Static optimality of splay trees](static-optimality.md)
 
 ## Related topics
 

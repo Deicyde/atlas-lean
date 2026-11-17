@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import CSLibExt.Algorithms.Lean.DataStructures.SplayTree.Amortized
+public import Mathlib.Tactic.IntervalCases
 
 /-!
 # Tests for the amortized analysis of splaying
@@ -65,6 +66,35 @@ example : (∑ i ∈ Finset.range 10, (cost (i % 4 + 1) (splayRun (fun j => j % 
   have := balance_theorem (fun j => j % 4 + 1) path4 10
   push_cast at this ⊢
   exact this
+
+/-- The path is a search tree. -/
+theorem ordered_path4 : BinarySearchTree.Ordered path4 := by
+  simp [path4, BinarySearchTree.Ordered, BinarySearchTree.All]
+
+/-- Accessing `1, 2, 3, 4` once each: static optimality applies with `q(i) = 1`. -/
+example : (∑ j ∈ Finset.range 4, (cost (j + 1) (splayRun (fun j => j + 1) path4 j) : ℝ)) ≤
+    4 + 3 * ((BinarySearchTree.inorder path4).map (fun i => (accessCount (fun j => j + 1) 4 i : ℝ) *
+        (Real.logb 2 4 - Real.logb 2 (accessCount (fun j => j + 1) 4 i)))).sum +
+      ((BinarySearchTree.inorder path4).map
+        (fun i => Real.logb 2 4 - Real.logb 2 (accessCount (fun j => j + 1) 4 i))).sum := by
+  have h := static_optimality (fun j => j + 1) ordered_path4 4 (by
+    intro j hj
+    interval_cases j <;> simp [path4, Membership.mem, BinarySearchTree.Mem]) (by
+    intro i hi
+    have h4 : i = 1 ∨ i = 2 ∨ i = 3 ∨ i = 4 := by
+      have hin : BinarySearchTree.inorder path4 = [1, 2, 3, 4] := rfl
+      rw [← BinarySearchTree.mem_inorder, hin] at hi
+      simpa using hi
+    rcases h4 with rfl | rfl | rfl | rfl <;> decide)
+  push_cast at h ⊢
+  exact h
+
+/-- The weighted access lemma with weights `1, 2, 3, 4` on the path. -/
+example : (cost 1 path4 : ℝ) + potentialW (fun i : ℕ => (i : ℝ) + 1) (splay 1 path4) -
+    potentialW (fun i : ℕ => (i : ℝ) + 1) path4 ≤
+      3 * (Real.logb 2 (weight (fun i : ℕ => (i : ℝ) + 1) path4) -
+        Real.logb 2 (weight (fun i : ℕ => (i : ℝ) + 1) (focus 1 path4))) + 1 :=
+  access_lemma_weighted (fun i => by positivity) 1 path4
 
 /-- A single node has potential zero. -/
 example : potential (.node (7 : ℕ) .nil .nil) = 0 := by
