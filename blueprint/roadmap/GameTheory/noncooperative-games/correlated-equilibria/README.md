@@ -43,9 +43,11 @@ A correlated equilibrium (Aumann 1974) is a probability distribution on strategy
 
 ## Bayesian rationality
 
-Aumann (1987) derived correlated equilibrium from Bayesian decision theory: in a partition model with a common prior, where each player's action is part of the state of the world, if every player maximises expected payoff given its own information at every state, then the distribution of the action profile is a correlated equilibrium.
+Aumann (1987) derived correlated equilibrium from Bayesian decision theory: in a partition model with a common prior, where each player's action is part of the state of the world, if every player maximises expected payoff given its own information at every state, then the distribution of the action profile is a correlated equilibrium. Conversely, every correlated equilibrium arises in this way.
 
 - [Correlated equilibrium as an expression of Bayesian rationality](is-correlated-eq-of-is-bayes-rational.md)
+- [Every correlated equilibrium is the distribution of Bayes-rational play](is-bayes-rational-of-is-correlated-eq.md)
+- [Correlated equilibria are exactly the distributions of Bayes-rational play](is-correlated-eq-iff-exists-is-bayes-rat.md)
 - [Bayes rationality](is-bayes-rational.md)
 - [Conditional expectation given a partition](cond-exp-cell.md)
 - [Bayes rationality without normalisation](is-bayes-rational-iff-sum.md)

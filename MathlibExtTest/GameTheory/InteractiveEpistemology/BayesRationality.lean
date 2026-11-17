@@ -55,3 +55,11 @@ example : (∑ _ω ∈ Finset.univ.filter (fun ω => coinPlay ω = ![0, 0]), (1 
   · have : Finset.univ.filter (fun ω : Fin 2 => coinPlay ω = ![0, 1]) = ∅ := by
       ext ω; fin_cases ω <;> simp [coinPlay, funext_iff, Fin.forall_fin_two]
     simp [this]
+
+/-- The converse applied to Aumann's correlated equilibrium of Chicken: it is the distribution of
+Bayes-rational play in an information system (the profiles themselves, each player told only
+its own recommendation). -/
+example (i : Fin 2) (t : Fin 2 → Fin 2) :
+    IsBayesRational chickenCE (fun i => Setoid.ker fun t : Fin 2 → Fin 2 => t i) chickenCost id
+      i t :=
+  isBayesRational_of_isCorrelatedEq chickenCE_isCorrelatedEq i t
