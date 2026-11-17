@@ -1,6 +1,6 @@
 # Bootstrap and the Mallows metric
 
-Efron's bootstrap estimates the sampling distribution of a statistic by recomputing it on samples drawn with replacement from the data. Bickel and Freedman (1981) proved that the bootstrap of the mean is asymptotically valid whenever the variance is finite. Their tool is the Mallows metric $d_p$, which is the Wasserstein distance $W_p$: the empirical law converges to the true law in $d_2$, and normalised sums contract $d_2$, so the bootstrap law of the normalised mean inherits the central limit theorem. The contraction lemmas are proved here in a separable Hilbert space; the bootstrap limit theorems are recorded as wanted statements.
+Efron's bootstrap estimates the sampling distribution of a statistic by recomputing it on samples drawn with replacement from the data. Bickel and Freedman (1981) proved that the bootstrap of the mean is asymptotically valid whenever the variance is finite. Their tool is the Mallows metric $d_p$, which is the Wasserstein distance $W_p$: the empirical law converges to the true law in $d_2$, and normalised sums contract $d_2$, so the bootstrap law of the normalised mean inherits the central limit theorem. The contraction lemmas are proved here in a separable Hilbert space; the bootstrap limit theorems are recorded as wanted statements. The bootstrap does not always work: for the sample maximum of uniform data, Bickel and Freedman's Counter-example 2, proved here, shows that the bootstrap law keeps an atom of mass about $0.63$ where the true limit law is continuous.
 
 - [Convolution of probability measures](conv.md)
 - [Convolution powers](conv-pow.md)
@@ -22,6 +22,10 @@ Efron's bootstrap estimates the sampling distribution of a statistic by recomput
 - [Bickel–Freedman bootstrap central limit theorem for the mean](bootstrap-mean-tendsto-gaussian-real.md)
 - [Consistency of the bootstrap standard deviation](bootstrap-sd-tendsto.md)
 - [Bootstrap of the mean in $\mathbb R^k$](bootstrap-mean-tendsto-multivariate-gaus.md)
+- [Resamples that reproduce the maximum](card-resample-sup-eq.md)
+- [Bootstrap probability that the maximum is reproduced](bootstrap-prob-max-eq.md)
+- [The bootstrap of the maximum has an atom of mass $1 - e^{-1}$ at $0$](tendsto-bootstrap-prob-max.md)
+- [Bootstrap of the maximum for atomless data](ae-bootstrap-prob-max-eq.md)
 
 ## Related topics
 
