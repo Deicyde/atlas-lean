@@ -4468,6 +4468,7 @@
   "MathlibExt/Topology/Algebra/PeterWeyl": {"to": "RepresentationTheory/lie-and-topological-representations", "title": "Representations of compact groups"},
   "MathlibExt/Topology/Algebra/RestrictedProduct/DirectLimit": {"to": "Topology/general-topology", "title": "Restricted products of topological spaces"},
   "MathlibExt/Topology/Algebra/StrongCompleteness": {"to": "GroupTheory/profinite-and-topological-groups", "title": "Strong completeness of profinite groups"},
+  "MathlibExt/Topology/BrouwerFixedPoint": {"to": "Topology/algebraic-topology", "title": "Brouwer fixed-point theorem"},
   "MathlibExt/Topology/Connected/Frontier": {"to": "Topology/general-topology", "title": "Connectedness"},
   "MathlibExt/Topology/ContinuousFunction/IntervalCutoff": {"to": "Analysis/real-functions/continuity-and-functional-equations", "title": "Trapezoidal cutoff functions"},
   "MathlibExt/Topology/Continuum/HahnMazurkiewicz": {"to": "Topology/continua-infinite-dimensional", "title": "Hahn–Mazurkiewicz theorem"},

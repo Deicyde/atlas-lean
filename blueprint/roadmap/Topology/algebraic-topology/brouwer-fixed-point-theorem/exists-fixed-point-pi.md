@@ -1,0 +1,8 @@
+# Brouwer's fixed-point theorem for products of simplices
+
+Every continuous self-map of
+a finite product `∏ᵢ Δ(Sᵢ)` of simplices with nonempty finite vertex sets has a fixed point.
+The product is a retract of the simplex `Δ(∏ᵢ Sᵢ)` (product distribution, then marginals), so
+the statement follows from `exists_fixedPoint_of_finite`. This is the form of Brouwer's
+theorem used in J. Nash, "Non-cooperative games", Ann. of Math. 54 (1951), 286–295, where the
+product of the players' mixed-strategy simplices is the domain of the fixed-point map.
