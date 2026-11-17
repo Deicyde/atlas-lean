@@ -5128,6 +5128,7 @@
   "WantedExt/Analysis/GleasonWanted": {"to": "QuantumInformation/quantum-foundations", "title": "Gleason's theorem"},
   "WantedExt/Analysis/HadamardProductCircleBoundWanted": {"to": "Analysis/complex-analysis/geometric-function-theory", "title": "Hadamard products of univalent functions"},
   "WantedExt/Analysis/HardySpaceWanted": {"to": "Analysis/complex-analysis/analytic-function-spaces", "title": "Hardy space"},
+  "WantedExt/Analysis/HarmonicAnalysis/BallMultiplierWanted": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Kakeya sets"},
   "WantedExt/Analysis/HarmonicAnalysis/BoundedMeanOscillationWanted": {"to": "Analysis/harmonic-analysis/real-variable-methods", "title": "Bounded mean oscillation"},
   "WantedExt/Analysis/HarmonicAnalysis/CarlesonWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Convergence of Fourier series"},
   "WantedExt/Analysis/HarmonicAnalysis/VectorValuedMaximalWanted": {"to": "Analysis/harmonic-analysis/real-variable-methods", "title": "Dyadic maximal function"},

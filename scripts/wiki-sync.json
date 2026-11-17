@@ -17783,6 +17783,7 @@
 "MathlibExt.Analysis.HadamardProductCircleBoundWanted.hadamardProduct": "031b339baa646e85",
 "MathlibExt.Analysis.HardySpaceWanted.Analysis.H1": "372c7be35b54e59c",
 "MathlibExt.Analysis.HardySpaceWanted.Analysis.H1_not_closedComplemented": "d5f3e19f471a6f06",
+"MathlibExt.Analysis.HarmonicAnalysis.BallMultiplierWanted.not_exists_eLpNorm_ballMultiplier_le": "09e1c32fbb68740a",
 "MathlibExt.Analysis.HarmonicAnalysis.BoundedMeanOscillationWanted.exists_enorm_integral_mul_le_poissonMaximal": "1eef234eba18a45c",
 "MathlibExt.Analysis.HarmonicAnalysis.BoundedMeanOscillationWanted.exists_volume_abs_sub_average_gt_le": "2e99b899923ac8e5",
 "MathlibExt.Analysis.HarmonicAnalysis.CarlesonWanted.carleson_ae_tendsto": "8f964eefa48b6759",
