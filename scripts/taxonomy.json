@@ -1494,6 +1494,7 @@
   "CSLibExt/Logics/LTL/DecidableModelChecking": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/FragmentBuchi": {"to": "Logic/temporal-logic", "title": "Büchi automata for a fragment of linear temporal logic"},
   "CSLibExt/Logics/LTL/FullBuchi": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
+  "CSLibExt/Logics/LTL/LanguageInclusion": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/ModelChecking": {"to": "Logic/temporal-logic", "title": "Model checking for linear temporal logic"},
   "CSLibExt/Logics/LTL/OmegaWord": {"to": "Logic/temporal-logic", "title": "Linear temporal logic"},
   "CSLibExt/Logics/LTL/Syntax": {"to": "Logic/temporal-logic", "title": "Linear temporal logic"},

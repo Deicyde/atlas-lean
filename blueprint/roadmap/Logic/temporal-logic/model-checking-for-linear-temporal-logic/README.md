@@ -38,3 +38,10 @@
 - [Fairness obligations are fewer than the formula size](obligation-count-lt-size.md)
 - [Exponential state bound for the Büchi automaton of an LTL formula](nat-card-buchi-state-le.md)
 - [Vardi–Wolper translation with an exponential state bound](exists-buchi-card-le.md)
+
+## Model checking as language inclusion
+
+- [Büchi automaton of a transition system](system-automaton.md)
+- [The language of the system automaton is the set of runs](mem-system-automaton-iff.md)
+- [LTL model checking is language inclusion](models-iff-language-le.md)
+- [LTL model checking is emptiness of an intersection](models-iff-inf-language-not-eq-bot.md)
