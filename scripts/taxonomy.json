@@ -6846,6 +6846,7 @@
   "WantedExt/Probability/ScottishBook38Wanted": {"to": "GraphTheory/random-graphs", "title": "Connectivity of random k-out graphs"},
   "WantedExt/Probability/Statistics/BootstrapWanted": {"to": "Probability/statistical-estimation", "title": "Bootstrap and the Mallows metric"},
   "WantedExt/Probability/Statistics/CovarianceBandingWanted": {"to": "Probability/linear-models-multivariate", "title": "Regularized covariance estimation by banding"},
+  "WantedExt/Probability/Statistics/DKWInequalityWanted": {"to": "Probability/nonparametric-survival", "title": "Glivenko–Cantelli theorem"},
   "WantedExt/Probability/Statistics/EfficiencyWanted": {"to": "Probability/statistical-estimation", "title": "Asymptotic efficiency and adaptive estimation"},
   "WantedExt/Probability/Statistics/HalmosSavageFactorizationWanted": {"to": "Probability/statistical-estimation", "title": "Sufficient statistics and the factorization theorem"},
   "WantedExt/Probability/Statistics/NormalTheoryWanted": {"to": "Probability/linear-models-multivariate", "title": "Student's t and Snedecor's F distributions"},
