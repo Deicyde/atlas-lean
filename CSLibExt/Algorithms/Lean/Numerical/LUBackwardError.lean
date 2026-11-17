@@ -215,9 +215,9 @@ theorem abs_subDotFl_add_sum_sub_le (c : K) (a b : ℕ → K) (m : ℕ)
       _ = gamma p (k + 1) * (P + |a k * b k| + |s'|) := by ring
 
 omit [LinearOrder K] [IsStrictOrderedRing K] [FloorRing K] in
-/-- A sum over `Fin n` whose terms vanish beyond index `m < n`, split as the sum of the padded
-terms below `m` plus the term at `m`. -/
-private theorem sum_fin_eq_sum_range_add {n m : ℕ} (hm : m < n) (f : Fin n → K)
+/-- **Splitting a sum at its last nonzero term.** A sum over `Fin n` whose terms vanish beyond
+index `m < n` is the sum of the zero-padded terms below `m` plus the term at `m`. -/
+theorem sum_fin_eq_sum_range_add {n m : ℕ} (hm : m < n) (f : Fin n → K)
     (hf : ∀ k : Fin n, m < (k : ℕ) → f k = 0) :
     ∑ k, f k = ∑ k ∈ range m, (if h : k < n then f ⟨k, h⟩ else 0) + f ⟨m, hm⟩ := by
   set g : ℕ → K := fun k => if h : k < n then f ⟨k, h⟩ else 0

@@ -2,7 +2,7 @@
 
 Rounding error analysis bounds the error of an algorithm run in floating point, from the model $\mathrm{fl}(a \mathbin{\mathrm{op}} b) = (a \mathbin{\mathrm{op}} b)(1 + \delta)$, $|\delta| \le u$, of [floating-point rounding](../floating-point-rounding/README.md). Its central notion is backward stability: an algorithm is backward stable if its computed result is the exact result for slightly perturbed data. The error of a backward stable algorithm is then at most its backward error times the [condition number](../../../LinearAlgebra/matrix-decompositions/perturbation-theory-for-linear-systems/README.md) of the problem.
 
-A sum of $n$ rounded products is accurate to $\gamma_n = nu/(1 - nu)$ relative to $\sum_i |x_i y_i|$, so a floating-point matrix product satisfies $|\mathrm{fl}(AB) - AB| \le \gamma_n |A|\,|B|$ entrywise. The same analysis applied to the Doolittle formulas shows that Gaussian elimination computes the exact LU factors of $A + E$ with $|E| \le \gamma_n |\hat L|\,|\hat U|$: it is backward stable exactly when $|\hat L|\,|\hat U|$ is not much larger than $A$, which partial pivoting achieves in practice. For Cholesky factorization $|L|\,|L^T|$ is always bounded by the largest diagonal entry of $A$, so no pivoting is needed.
+A sum of $n$ rounded products is accurate to $\gamma_n = nu/(1 - nu)$ relative to $\sum_i |x_i y_i|$, so a floating-point matrix product satisfies $|\mathrm{fl}(AB) - AB| \le \gamma_n |A|\,|B|$ entrywise. The same analysis applied to the Doolittle formulas shows that Gaussian elimination computes the exact LU factors of $A + E$ with $|E| \le \gamma_n |\hat L|\,|\hat U|$: with the two triangular solves, the computed solution of $Ax = b$ solves $(A + F)\hat x = b$ with $|F| \le (3\gamma_n + \gamma_n^2)|\hat L|\,|\hat U|$, so Gaussian elimination is backward stable exactly when $|\hat L|\,|\hat U|$ is not much larger than $A$, which partial pivoting achieves in practice. For Cholesky factorization $|L|\,|L^T|$ is always bounded by the largest diagonal entry of $A$, so no pivoting is needed.
 - [Forward error of the floating-point dot product](abs-dot-fl-sub-le.md)
 - [Forward error of floating-point matrix multiplication](abs-mat-mul-fl-sub-le.md)
 - [Floating-point dot product](dot-fl.md)
@@ -24,6 +24,15 @@ A sum of $n$ rounded products is accurate to $\gamma_n = nu/(1 - nu)$ relative t
 - [Error of a floating-point `c - ∑ aₖ bₖ`, measured by the result](abs-sub-dot-fl-add-sum-sub-le.md)
 - [Monotonicity of `γ`](gamma-mono.md)
 - [Composition of relative errors](one-add-gamma-mul-le.md)
+- [Forward substitution in floating point](is-fl-lower-solve.md)
+- [Back substitution in floating point](is-fl-upper-solve.md)
+- [Residual bound for one division step](abs-sub-sum-sub-mul-le.md)
+- [Backward stability of Gaussian elimination](exists-add-mul-vec-eq-of-is-fl-lu.md)
+- [Backward error of floating-point forward substitution](exists-add-mul-vec-eq-of-is-fl-lower-sol.md)
+- [Backward error of floating-point back substitution](exists-add-mul-vec-eq-of-is-fl-upper-sol.md)
+- [Residuals as componentwise perturbations](exists-perturbation-of-abs-le.md)
+- [Vector as a sequence](vec-seq.md)
+- [Splitting a sum at its last nonzero term](sum-fin-eq-sum-range-add.md)
 
 ## Related topics
 
