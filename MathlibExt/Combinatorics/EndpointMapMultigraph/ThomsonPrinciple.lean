@@ -37,7 +37,8 @@ Dirichlet's principles (Lyons and Peres, Exercise 2.13).
 * `range_laplacian_eq_range_orientedIncidence`: with positive weights and no loops, `L` and `B`
   have the same range;
 * `isLeast_flowEnergy`: when `s` and `t` are connected, `R_eff(s, t)` is the minimum energy of a
-  unit flow.
+  unit flow;
+* `isLeast_dirichletEnergy`: Dirichlet's principle, the infimum defining `C_eff(s, t)` is attained.
 -/
 
 @[expose] public section
@@ -207,15 +208,11 @@ theorem flowEnergy_eq_effectiveResistance_iff {w : E → ℝ} (hw : ∀ e, 0 < w
   · rintro rfl
     simp [flowEnergy]
 
-/-- **Effective resistance as minimum energy (Thomson's principle).** In a finite loopless
-multigraph with positive conductances, if `s ≠ t` lie in the same connected component then
-`R_eff(s, t) = min { ∑_e θ_e² / w_e : θ a unit flow from s to t }`, the minimum being attained by
-the unit current (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University
-Press 2016, corrected online version of 19 August 2026, Exercise 2.13, first display). -/
-theorem isLeast_flowEnergy {w : E → ℝ} (hw : ∀ e, 0 < w e) (hloop : ∀ e, end₁ e ≠ end₂ e)
-    {s t : V} (hst : s ≠ t) (hreach : (underlyingGraph end₁ end₂).Reachable s t) :
-    IsLeast {q | ∃ θ, IsUnitFlow end₁ end₂ s t θ ∧ q = flowEnergy w θ}
-      (effectiveResistance end₁ end₂ w s t) := by
+/-- Two vertices in one component have a potential solving `L v = δ_s - δ_t`. -/
+private theorem exists_laplacian_mulVec_of_reachable {w : E → ℝ} (hw : ∀ e, 0 < w e)
+    (hloop : ∀ e, end₁ e ≠ end₂ e) {s t : V}
+    (hreach : (underlyingGraph end₁ end₂).Reachable s t) :
+    ∃ v : V → ℝ, laplacian end₁ end₂ w *ᵥ v = Pi.single s 1 - Pi.single t 1 := by
   classical
   set G := underlyingGraph end₁ end₂
   -- `δ_s - δ_t` lies in the range of the incidence matrix
@@ -232,10 +229,56 @@ theorem isLeast_flowEnergy {w : E → ℝ} (hw : ∀ e, 0 < w e) (hloop : ∀ e,
   obtain ⟨θ₀, hθ₀⟩ := hmemB
   obtain ⟨v, hv⟩ := exists_laplacian_mulVec_of_isUnitFlow end₁ end₂ hw hloop
     (θ := θ₀) hθ₀
+  exact ⟨v, hv⟩
+
+/-- **Effective resistance as minimum energy (Thomson's principle).** In a finite loopless
+multigraph with positive conductances, if `s ≠ t` lie in the same connected component then
+`R_eff(s, t) = min { ∑_e θ_e² / w_e : θ a unit flow from s to t }`, the minimum being attained by
+the unit current (R. Lyons and Y. Peres, *Probability on Trees and Networks*, Cambridge University
+Press 2016, corrected online version of 19 August 2026, Exercise 2.13, first display). -/
+theorem isLeast_flowEnergy {w : E → ℝ} (hw : ∀ e, 0 < w e) (hloop : ∀ e, end₁ e ≠ end₂ e)
+    {s t : V} (hst : s ≠ t) (hreach : (underlyingGraph end₁ end₂).Reachable s t) :
+    IsLeast {q | ∃ θ, IsUnitFlow end₁ end₂ s t θ ∧ q = flowEnergy w θ}
+      (effectiveResistance end₁ end₂ w s t) := by
+  obtain ⟨v, hv⟩ := exists_laplacian_mulVec_of_reachable end₁ end₂ hw hloop hreach
   refine ⟨⟨currentOf end₁ end₂ w v, isUnitFlow_currentOf end₁ end₂ hv, ?_⟩, ?_⟩
   · exact ((flowEnergy_eq_effectiveResistance_iff end₁ end₂ hw hst hv
       (isUnitFlow_currentOf end₁ end₂ hv)).2 rfl).symm
   · rintro q ⟨θ, hθ, rfl⟩
     exact effectiveResistance_le_flowEnergy end₁ end₂ hw hloop hst hθ
+
+/-- **Dirichlet's principle.** In a finite loopless multigraph with positive conductances, if
+`s ≠ t` lie in the same connected component then the effective conductance is attained:
+`C_eff(s, t) = min { xᵀ L x : x(s) = 0, x(t) = 1 }`, the minimum being attained by the normalised
+voltage `x = (v(s) - v) / (v(s) - v(t))` for any `v` with `L v = δ_s - δ_t` (R. Lyons and
+Y. Peres, *Probability on Trees and Networks*, Cambridge University Press 2016, corrected online
+version of 19 August 2026, Exercise 2.13, second display, with `F = 1 - x`, `A = {s}`,
+`Z = {t}`). -/
+theorem isLeast_dirichletEnergy {w : E → ℝ} (hw : ∀ e, 0 < w e) (hloop : ∀ e, end₁ e ≠ end₂ e)
+    {s t : V} (hst : s ≠ t) (hreach : (underlyingGraph end₁ end₂).Reachable s t) :
+    IsLeast {q | ∃ x : V → ℝ, x s = 0 ∧ x t = 1 ∧ q = x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x)}
+      (effectiveConductance end₁ end₂ w s t) := by
+  classical
+  have hw0 : 0 ≤ w := fun e => (hw e).le
+  obtain ⟨v, hv⟩ := exists_laplacian_mulVec_of_reachable end₁ end₂ hw hloop hreach
+  obtain ⟨hR, hr⟩ := effectiveResistance_eq_sub_of_laplacian_mulVec end₁ end₂ hw0 hst hv
+  set r := v s - v t with hrdef
+  have hC : effectiveConductance end₁ end₂ w s t = r⁻¹ := by
+    rw [← hR, effectiveResistance, inv_inv]
+  set x : V → ℝ := r⁻¹ • (v s • (1 : V → ℝ) - v) with hx
+  have hxs : x s = 0 := by simp [hx]
+  have hxt : x t = 1 := by
+    simp only [hx, Pi.smul_apply, Pi.sub_apply, Pi.one_apply, smul_eq_mul, mul_one]
+    exact inv_mul_cancel₀ hr.ne'
+  have hLx : laplacian end₁ end₂ w *ᵥ x = -(r⁻¹ • (Pi.single s 1 - Pi.single t 1)) := by
+    rw [hx, Matrix.mulVec_smul, Matrix.mulVec_sub, Matrix.mulVec_smul, laplacian_mulVec_one,
+      smul_zero, zero_sub, hv, smul_neg]
+  have hE : x ⬝ᵥ (laplacian end₁ end₂ w *ᵥ x) = r⁻¹ := by
+    rw [hLx, dotProduct_neg, dotProduct_smul, dotProduct_sub, dotProduct_single,
+      dotProduct_single, hxs, hxt, smul_eq_mul]
+    ring
+  refine ⟨⟨x, hxs, hxt, by rw [hE, hC]⟩, ?_⟩
+  rintro q ⟨y, hy0, hy1, rfl⟩
+  exact effectiveConductance_le_energy end₁ end₂ hw0 hy0 hy1
 
 end EndpointMapMultigraph

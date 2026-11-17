@@ -10,6 +10,7 @@ In the probabilistic treatment of R. Lyons and Y. Peres, *Probability on Trees a
 - [Effective resistance](effective-resistance.md)
 - [Effective conductance is nonnegative](effective-conductance-nonneg.md)
 - [Every admissible potential bounds the effective conductance](effective-conductance-le-energy.md)
+- [Dirichlet's principle](is-least-dirichlet-energy.md)
 - [Effective resistance is a potential difference](effective-resistance-eq-sub-of-laplacian.md)
 - [Range of the weighted Laplacian](range-of-the-weighted-laplacian.md)
 - [Rayleigh's monotonicity law](effective-conductance-mono.md)

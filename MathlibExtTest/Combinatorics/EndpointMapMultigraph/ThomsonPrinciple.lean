@@ -72,4 +72,17 @@ example : IsLeast {q | ∃ θ, IsUnitFlow e₁ e₂ 0 2 θ ∧ q = flowEnergy (f
     reach02
   rwa [effectiveResistance_02] at h
 
+/-- Dirichlet's principle on the path: `C_eff(0, 2) = 1 / 2` is the least energy of a potential
+that is `0` at `0` and `1` at `2`. -/
+example : IsLeast {q | ∃ x : Fin 3 → ℝ, x 0 = 0 ∧ x 2 = 1 ∧
+    q = x ⬝ᵥ (laplacian e₁ e₂ (fun _ => 1) *ᵥ x)} (1 / 2) := by
+  have h := isLeast_dirichletEnergy e₁ e₂ (w := fun _ => 1) (fun _ => one_pos) loopless
+    (by decide) reach02
+  have hC : effectiveConductance e₁ e₂ (fun _ => 1) 0 2 = 1 / 2 := by
+    have := effectiveResistance_02
+    rw [effectiveResistance] at this
+    rw [← inv_inv (effectiveConductance e₁ e₂ (fun _ => 1) 0 2), this]
+    norm_num
+  rwa [hC] at h
+
 end EndpointMapMultigraphThomsonPrincipleTest

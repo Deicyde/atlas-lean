@@ -15350,6 +15350,7 @@
 "EndpointMapMultigraph.indicator": "f8ad8af94bb91e52",
 "EndpointMapMultigraph.indicator_dotProduct_mulVec_laplacian": "0ced4779d4acc718",
 "EndpointMapMultigraph.isHittingTimeSolution_unique": "f61d54819e06c030",
+"EndpointMapMultigraph.isLeast_dirichletEnergy": "73f03e8e1f3abafd",
 "EndpointMapMultigraph.isLeast_flowEnergy": "6bd948480b73cb39",
 "EndpointMapMultigraph.isSymmetric_toEuclideanLin_laplacian": "5f5f5cf824064a7e",
 "EndpointMapMultigraph.isUnitFlow_currentOf": "df2b19ad24d2b9f9",
