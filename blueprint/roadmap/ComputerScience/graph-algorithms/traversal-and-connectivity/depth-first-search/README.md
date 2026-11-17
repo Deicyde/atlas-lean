@@ -37,8 +37,10 @@
 - [Whole-graph decreasing finish order has no repeated vertices](decreasing-finish-all-nodup.md)
 - [Exact transition count of depth-first search](dfs-exact-steps.md)
 - [Exact transition count of whole-graph depth-first search](dfs-all-exact-steps.md)
+- [White-path theorem](tree-ancestor-iff-white-path.md)
+- [White-path theorem for the repository's depth-first search](dfs-all-tree-ancestor-iff-white-path.md)
+- [Ancestors by interval nesting](dfs-all-tree-ancestor-iff.md)
 
 ## Related topics
 
-- [Strongly connected components](../strongly-connected-components/README.md): the numbering
-  properties of this search and Tarjan's lowlink test for component roots.
+- [Strongly connected components](../strongly-connected-components/README.md)

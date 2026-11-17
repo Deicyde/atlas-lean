@@ -223,7 +223,7 @@ section DepthFirstSearch
 variable [BEq V] [Hashable V] [LawfulBEq V]
 
 omit [Hashable V] in
-private theorem idxOf_lt_of_before {x y : V} {xs : List V} (h : Before x y xs) (hnd : xs.Nodup) :
+theorem idxOf_lt_of_before {x y : V} {xs : List V} (h : Before x y xs) (hnd : xs.Nodup) :
     xs.idxOf x < xs.idxOf y := by
   obtain ⟨a, b, c, rfl⟩ := h
   have hnd' : (a ++ x :: (b ++ y :: c)).Nodup := by simpa using hnd
