@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.SupermartingaleOptionalStopping
+public import MathlibExt.Probability.BoundedOptionalStopping
 public import Mathlib.Probability.Martingale.Basic
 public import Mathlib.Probability.Process.HittingTime
 
@@ -29,10 +30,12 @@ that concern expectations:
   `E[G τ*] = E[S 0]`, so `τ*` is optimal and the value of the problem is `E[S 0]`
   (statements (1.1.10)–(1.1.11) in expectation form);
 * `τ*` is the smallest optimal stopping time (statement (1.1.12)), and the envelope stopped at
-  `τ*` is a martingale (statement (1.1.14)), both for `n = 0`.
+  `τ*` is a martingale (statement (1.1.14)), both for `n = 0`;
+* the conditional statements (1.1.9)–(1.1.10) at every time `n ≤ N`:
+  `E[G τ | 𝒢 n] ≤ S n` for every stopping time `n ≤ τ ≤ N`, with equality almost everywhere for
+  the first time `τₙ ≥ n` at which `S = G`.
 
-The conditional forms (1.1.9)–(1.1.10) for general `n` and the infinite-horizon theory
-(Theorems 1.4 and 1.6, essential suprema) are not formalised here.
+The infinite-horizon theory (Theorems 1.4 and 1.6, essential suprema) is not formalised here.
 
 The integrability condition (1.1.3) of the book, `E sup_{k ≤ N} |G k| < ∞`, is equivalent for a
 finite horizon to the integrability of every `G k` with `k ≤ N`; it is assumed here for all `k`
@@ -53,6 +56,8 @@ for simplicity (the values after the horizon do not enter the envelope).
 * `MeasureTheory.snellStoppingTime_optimal`
 * `MeasureTheory.snellStoppingTime_le_of_optimal`
 * `MeasureTheory.martingale_stoppedProcess_snellEnvelope`
+* `MeasureTheory.condExp_stoppedValue_le_snellEnvelope`
+* `MeasureTheory.snellEnvelope_ae_eq_condExp_stoppedValue`
 -/
 
 @[expose] public section
@@ -378,5 +383,138 @@ theorem snellStoppingTime_le_of_optimal [IsFiniteMeasure μ]
       (Nat.zero_le _) hkN (Set.mem_singleton_iff.mpr (sub_eq_zero.mpr heq))
   rw [hτω]
   exact_mod_cast hle
+
+/-- **First time from `n` on that the Snell envelope meets the reward.** For `n ≤ N`,
+`τₙ = min {k ∈ [n, N] : S k = G k}` (Peskir–Shiryaev, equation (1.1.8)); for `n = 0` it is
+`snellStoppingTime`. -/
+noncomputable def snellStoppingTimeFrom (𝒢 : Filtration ℕ m0) (μ : Measure Ω) (G : ℕ → Ω → ℝ)
+    (N n : ℕ) : Ω → ℕ :=
+  hittingBtwn (fun k ω => snellEnvelope 𝒢 μ G N k ω - G k ω) {0} n N
+
+theorem snellStoppingTimeFrom_zero :
+    snellStoppingTimeFrom 𝒢 μ G N 0 = snellStoppingTime 𝒢 μ G N := rfl
+
+private theorem snellStoppingTimeFrom_mem (hn : n ≤ N) (ω : Ω) :
+    snellStoppingTimeFrom 𝒢 μ G N n ω ∈ Set.Icc n N :=
+  hittingBtwn_mem_Icc hn ω
+
+private theorem snellEnvelope_snellStoppingTimeFrom (hn : n ≤ N) (ω : Ω) :
+    snellEnvelope 𝒢 μ G N (snellStoppingTimeFrom 𝒢 μ G N n ω) ω =
+      G (snellStoppingTimeFrom 𝒢 μ G N n ω) ω := by
+  have hex : ∃ j ∈ Set.Icc n N, (fun k ω => snellEnvelope 𝒢 μ G N k ω - G k ω) j ω ∈
+      ({0} : Set ℝ) :=
+    ⟨N, ⟨hn, le_rfl⟩, by simp [snellEnvelope_of_le le_rfl]⟩
+  have := hittingBtwn_mem_set (u := fun k ω => snellEnvelope 𝒢 μ G N k ω - G k ω)
+    (s := {0}) (n := n) (m := N) (ω := ω) hex
+  simpa [sub_eq_zero, snellStoppingTimeFrom] using this
+
+private theorem snellEnvelope_eq_condExp_of_lt_snellStoppingTimeFrom {k : ℕ} {ω : Ω}
+    (hnk : n ≤ k) (hk : k < snellStoppingTimeFrom 𝒢 μ G N n ω) :
+    snellEnvelope 𝒢 μ G N k ω = μ[snellEnvelope 𝒢 μ G N (k + 1) | 𝒢 k] ω := by
+  have hkN : k < N := hk.trans_le (hittingBtwn_le ω)
+  have hne : snellEnvelope 𝒢 μ G N k ω ≠ G k ω := by
+    intro heq
+    have : snellStoppingTimeFrom 𝒢 μ G N n ω ≤ k :=
+      hittingBtwn_le_of_mem hnk hkN.le (by simp [heq])
+    omega
+  rw [snellEnvelope_of_lt hkN] at hne ⊢
+  rcases max_choice (G k ω) (μ[snellEnvelope 𝒢 μ G N (k + 1) | 𝒢 k] ω) with hm | hm
+  · exact absurd hm hne
+  · exact hm
+
+/-- **The first meeting time from `n` on is a stopping time.** -/
+theorem isStoppingTime_snellStoppingTimeFrom (hG : StronglyAdapted 𝒢 G) (n : ℕ) :
+    IsStoppingTime 𝒢 (fun ω => (snellStoppingTimeFrom 𝒢 μ G N n ω : WithTop ℕ)) := by
+  have hadp : Adapted 𝒢 (fun k ω => snellEnvelope 𝒢 μ G N k ω - G k ω) := fun k =>
+    ((stronglyMeasurable_snellEnvelope hG k).sub (hG k)).measurable
+  exact hadp.isStoppingTime_hittingBtwn (measurableSet_singleton 0)
+
+/-- **The Snell envelope dominates every conditional stopped reward** (Peskir–Shiryaev,
+Theorem 1.2, (1.1.9)). For a strongly adapted, integrable reward on a finite measure space,
+`n ≤ N` and every stopping time `τ` with `n ≤ τ ≤ N`, `E[G τ | 𝒢 n] ≤ S n` almost everywhere. -/
+theorem condExp_stoppedValue_le_snellEnvelope [IsFiniteMeasure μ]
+    (hG : StronglyAdapted 𝒢 G) (hint : ∀ k, Integrable (G k) μ) {τ : Ω → WithTop ℕ}
+    (hτ : IsStoppingTime 𝒢 τ) (hnτ : ∀ ω, (n : WithTop ℕ) ≤ τ ω) (hbdd : ∀ ω, τ ω ≤ N) :
+    μ[stoppedValue G τ | 𝒢 n] ≤ᵐ[μ] snellEnvelope 𝒢 μ G N n := by
+  have hS := supermartingale_snellEnvelope (N := N) hG hint
+  have hc : IsStoppingTime 𝒢 (fun _ : Ω => ((n : ℕ) : ℕ∞)) := isStoppingTime_const 𝒢 n
+  have h := hS.condExp_stoppedValue_le_stoppedValue hc hτ hnτ hbdd
+  rw [IsStoppingTime.measurableSpace_const] at h
+  have hmono : μ[stoppedValue G τ | 𝒢 n] ≤ᵐ[μ]
+      μ[stoppedValue (snellEnvelope 𝒢 μ G N) τ | 𝒢 n] :=
+    condExp_mono (integrable_stoppedValue ℕ hτ hint hbdd)
+      (integrable_stoppedValue ℕ hτ (integrable_snellEnvelope hint) hbdd)
+      (Eventually.of_forall fun ω => le_snellEnvelope (untopA_le_of_le (hbdd ω)) ω)
+  filter_upwards [hmono, h] with ω h1 h2
+  exact h1.trans (by simpa [stoppedValue] using h2)
+
+/-- **The first meeting time from `n` on attains the envelope conditionally** (Peskir–Shiryaev,
+Theorem 1.2, (1.1.10)). For a strongly adapted, integrable reward on a finite measure space and
+`n ≤ N`, `S n = E[G τₙ | 𝒢 n]` almost everywhere, where `τₙ` is the first time in `[n, N]` at
+which `S = G`. -/
+theorem snellEnvelope_ae_eq_condExp_stoppedValue [IsFiniteMeasure μ]
+    (hG : StronglyAdapted 𝒢 G) (hint : ∀ k, Integrable (G k) μ) (hn : n ≤ N) :
+    snellEnvelope 𝒢 μ G N n =ᵐ[μ]
+      μ[stoppedValue G (fun ω => (snellStoppingTimeFrom 𝒢 μ G N n ω : WithTop ℕ)) | 𝒢 n] := by
+  set S := snellEnvelope 𝒢 μ G N with hSdef
+  set π : Ω → WithTop ℕ := fun ω => (snellStoppingTimeFrom 𝒢 μ G N n ω : WithTop ℕ) with hπdef
+  set τ : Ω → WithTop ℕ := fun _ => ((n : ℕ) : WithTop ℕ) with hτdef
+  have hπ : IsStoppingTime 𝒢 π := isStoppingTime_snellStoppingTimeFrom hG n
+  have hτ : IsStoppingTime 𝒢 τ := isStoppingTime_const 𝒢 n
+  have hle : τ ≤ π := fun ω => by
+    simpa [hτdef, hπdef] using (snellStoppingTimeFrom_mem (𝒢 := 𝒢) (μ := μ) (G := G) hn ω).1
+  have hbdd : ∀ ω, π ω ≤ N := fun ω => by
+    simpa [hπdef] using (snellStoppingTimeFrom_mem (𝒢 := 𝒢) (μ := μ) (G := G) hn ω).2
+  have hSint : ∀ k, Integrable (S k) μ := integrable_snellEnvelope hint
+  have hGS : stoppedValue G π = stoppedValue S π := by
+    funext ω
+    simp only [stoppedValue, hπdef]
+    exact (snellEnvelope_snellStoppingTimeFrom hn ω).symm
+  have hSn : stoppedValue S τ = S n := by
+    funext ω
+    rfl
+  have hiπ := integrable_stoppedValue ℕ hπ hSint hbdd
+  rw [hGS]
+  refine ae_eq_condExp_of_forall_setIntegral_eq (𝒢.le n) hiπ
+    (fun s _ _ => (hSint n).integrableOn) (fun s hs _ => ?_)
+    (stronglyMeasurable_snellEnvelope hG n).aestronglyMeasurable
+  have hA : ∀ i, MeasurableSet[𝒢 i] {ω | τ ω ≤ i ∧ i < π ω} := by
+    intro i
+    simp_rw [Set.ofPred_and, ← not_le, ← Set.compl_ofPred]
+    exact (hτ i).inter (hπ i).compl
+  have hmeas : ∀ i, MeasurableSet[𝒢 i] (s ∩ {ω | τ ω ≤ i ∧ i < π ω}) := by
+    intro i
+    rcases le_or_gt n i with hni | hin
+    · exact (𝒢.mono hni _ hs).inter (hA i)
+    · have hempty : s ∩ {ω | τ ω ≤ i ∧ i < π ω} = ∅ := by
+        ext ω
+        simp only [Set.mem_inter_iff, Set.mem_ofPred_eq, Set.mem_empty_iff_false, iff_false,
+          not_and, hτdef]
+        intro _ h
+        have : n ≤ i := by exact_mod_cast h
+        omega
+      rw [hempty]
+      exact @MeasurableSet.empty _ (𝒢 i)
+  rw [eq_comm, ← sub_eq_zero, ← integral_sub (hiπ.integrableOn) (hSint n).integrableOn]
+  have hsum : (fun ω => stoppedValue S π ω - S n ω) = fun ω =>
+      ∑ i ∈ Finset.range (N + 1),
+        Set.indicator {ω | τ ω ≤ i ∧ i < π ω} (S (i + 1) - S i) ω := by
+    have := stoppedValue_sub_eq_sum' (u := S) hle hbdd
+    rw [hSn] at this
+    funext ω
+    have h := congrFun this ω
+    simpa using h
+  rw [hsum, integral_finsetSum]
+  · refine Finset.sum_eq_zero fun i _ => ?_
+    rw [setIntegral_indicator (𝒢.le _ _ (hA i)),
+      integral_sub' (hSint _).integrableOn (hSint _).integrableOn, sub_eq_zero,
+      ← setIntegral_condExp (𝒢.le i) (hSint (i + 1)) (hmeas i)]
+    refine setIntegral_congr_fun (𝒢.le _ _ (hmeas i)) fun ω hω => ?_
+    have h2 := hω.2
+    simp only [Set.mem_ofPred_eq, hτdef, hπdef] at h2
+    exact (snellEnvelope_eq_condExp_of_lt_snellStoppingTimeFrom
+      (by exact_mod_cast h2.1) (by exact_mod_cast h2.2)).symm
+  · intro i _
+    exact (((hSint _).sub (hSint _)).indicator (𝒢.le _ _ (hA i))).integrableOn
 
 end MeasureTheory

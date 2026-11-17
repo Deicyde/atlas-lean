@@ -56,4 +56,12 @@ example (c : ℕ → ℝ) :
   snellStoppingTime_optimal (fun _ => stronglyMeasurable_const) (fun _ => integrable_const _)
     (isStoppingTime_const 𝒢 0) (fun _ => by exact_mod_cast Nat.zero_le 1)
 
+/-- The conditional form at time `n = 1 ≤ N = 2` applies to the constant stopping time `2`. -/
+example (c : ℕ → ℝ) :
+    μ[stoppedValue (fun n (_ : Ω) => c n) (fun _ => ((2 : ℕ) : WithTop ℕ)) | 𝒢 1] ≤ᵐ[μ]
+      snellEnvelope 𝒢 μ (fun n _ => c n) 2 1 :=
+  condExp_stoppedValue_le_snellEnvelope (fun _ => stronglyMeasurable_const)
+    (fun _ => integrable_const _) (isStoppingTime_const 𝒢 2)
+    (fun _ => by exact_mod_cast (by norm_num : 1 ≤ 2)) (fun _ => le_rfl)
+
 end MathlibExtTest.Probability.OptimalStopping.SnellEnvelope
