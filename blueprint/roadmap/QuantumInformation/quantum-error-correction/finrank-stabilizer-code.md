@@ -21,9 +21,10 @@ forces $r \le n$, so $2^{n - r}$ involves no truncated subtraction. Preskill's p
 dimension one generator at a time, using an element of the Pauli group that commutes with
 $M_1, \dots, M_{j-1}$ and anticommutes with $M_j$.
 
-The hypotheses are jointly satisfiable: the single generator $Z$ on one qubit ($r = 1$) meets
-them, and its code is spanned by $|0\rangle$, of dimension $2^0$ (test module
-`CSLibExtTest/Coding/QuantumCodeDistanceTests.lean`).
+The hypotheses are jointly satisfiable: the single generator $Z$ on one qubit ($r = 1$) squares to
+$I$ and has the nonzero vector $(0, 1)$, as checked in the test module
+`CSLibExtTest/Coding/QuantumCodeDistanceTests.lean`; commutation of a single generator with itself
+is automatic. Its code is spanned by $|0\rangle$, of dimension $2^0$, which the test does not check.
 
 ## Background
 

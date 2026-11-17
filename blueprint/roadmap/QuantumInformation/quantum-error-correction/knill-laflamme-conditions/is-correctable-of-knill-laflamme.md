@@ -20,15 +20,12 @@ $C$ in Preskill's equation (7.28). The recovery has Kraus operators $R_i = P F_i
 (7.29)) and $R_0 = I - Q$, where $Q = \sum_i F_i F_i^{*}$ is the projector onto the span of the
 corrupted code spaces (equation (7.32)). Then $\sum_r R_r^{*} R_r = Q + (I - Q) = I$, each
 $R_i A_a P$ is the $i$-th coefficient of $A_a P$ in the $F_j$ times $P$, and $R_0 A_a P = 0$.
+These Kraus operators, built from the $F_i$, are the recovery channel required by the definition
+of correctability.
 
 The hypotheses are satisfiable by nontrivial codes: on two qubits, the code spanned by
 $|00\rangle$ and $|11\rangle$ satisfies them for the errors $\{I, X \otimes I\}$, and the test
 module derives the correctability of these errors from this theorem.
-
-## Informally uses
-
-- [Correctable errors on a quantum code](is-correctable.md): the conclusion is this definition,
-  with the recovery built from the $F_i$.
 
 ## Sources
 

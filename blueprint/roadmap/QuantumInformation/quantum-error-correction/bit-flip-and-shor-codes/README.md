@@ -2,7 +2,7 @@
 
 The three-qubit bit-flip code encodes one qubit as $a|0\rangle + b|1\rangle \mapsto a|000\rangle + b|111\rangle$. A single bit flip moves the code space to an orthogonal subspace, which the two-qubit parities $Z_1 Z_2$ and $Z_2 Z_3$ identify without disturbing the encoded state; the flipped qubit is then flipped back. The code does not protect against phase errors. Shor's nine-qubit code repeats a three-qubit cat state $\tfrac{1}{\sqrt 2}(|000\rangle \pm |111\rangle)$ three times, so that the inner blocks correct bit flips and the outer repetition corrects phase flips; it corrects an arbitrary error on any one qubit (Preskill, Section 7.1).
 
-Here the bit-flip code is proved to correct the identity and the three single bit flips, by checking the Knill–Laflamme conditions. Shor's codewords are defined, and the statement that Shor's code has distance three is recorded as a wanted theorem.
+Here the bit-flip code is proved to correct the identity and the three single bit flips, by checking the Knill–Laflamme conditions. Shor's codewords are defined and the distance is proved to be at most three; that it is exactly three is recorded as a wanted theorem.
 
 - [Code space of the three-qubit bit-flip code](code-projector.md)
 - [The code projector is an orthogonal projector](code-projector-is-proj.md)
@@ -10,6 +10,7 @@ Here the bit-flip code is proved to correct the identity and the three single bi
 - [Knill–Laflamme conditions for the bit-flip code](knill-laflamme-bit-flip.md)
 - [The three-qubit bit-flip code corrects any single bit flip](is-correctable-bit-flip.md)
 - [Codewords of Shor's nine-qubit code](shor-codeword.md)
+- [Shor's code has distance at most three](shor-code-distance-at-most-three.md)
 - [Shor's code has distance three](shor-codeword-distance-three.md)
 
 ## Related topics

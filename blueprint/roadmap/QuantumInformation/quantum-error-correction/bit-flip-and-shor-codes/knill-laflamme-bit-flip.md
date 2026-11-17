@@ -13,9 +13,9 @@ $u = v + c$. If $c = 0$ this is $P$; otherwise $c = u + v$ would be $000$ or $11
 nonzero vector of weight at most $2$ is not, so $P X^{c} P = 0$. This finite check over the
 $16$ pairs of errors and $64$ pairs of basis states is done by `decide`.
 
-## Informally uses
+## Background
 
-- [The code projector is an orthogonal projector](code-projector-is-proj.md): the shape of $P$ used in the entrywise computation.
+- [The code projector is an orthogonal projector](code-projector-is-proj.md): the companion fact that makes $P$ a valid code projector for the Knill–Laflamme theorem; the computation here uses only the diagonal form of $P$.
 
 ## Sources
 
