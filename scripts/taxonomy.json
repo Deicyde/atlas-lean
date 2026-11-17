@@ -5448,6 +5448,7 @@
   "WantedExt/Combinatorics/HockeyStickWanted": {"to": "Combinatorics/binomial-coefficients/binomial-sums", "title": "Hockey-stick identity"},
   "WantedExt/Combinatorics/HomogeneousSetLogWeightErdosProblem191Wanted": {"to": "Combinatorics/ramsey-theory/structural-ramsey", "title": "Homogeneous sets of large logarithmic weight"},
   "WantedExt/Combinatorics/HoneycombConnectiveConstantWanted": {"to": "Combinatorics/tilings-board-placements", "title": "Self-avoiding walks on the honeycomb lattice"},
+  "WantedExt/Combinatorics/HopcroftKarpAugmentingPathsWanted": {"to": "GraphTheory/matchings-and-flows", "title": "Berge's lemma"},
   "WantedExt/Combinatorics/HypergraphChromaticEdgeCountErdosProblem832Wanted": {"to": "Combinatorics/extremal-set-theory/hypergraph-colouring-matching", "title": "Hypergraph chromatic number"},
   "WantedExt/Combinatorics/HypergraphColoringShared": {"to": "Combinatorics/extremal-set-theory/hypergraph-colouring-matching", "title": "Hypergraph chromatic number"},
   "WantedExt/Combinatorics/HypergraphSizeRamseyBinomialAIMCombinatoricsProblem52Wanted": {"to": "Combinatorics/ramsey-theory/structural-ramsey", "title": "Size Ramsey numbers of hypergraphs"},
