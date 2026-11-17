@@ -16,3 +16,14 @@ Cryptographic schemes and their correctness and security reductions: public-key 
 - [Schnorr identification scheme](schnorr-identification-scheme/README.md)
 - [Semantic security and indistinguishability](semantic-security-and-indistinguishability/README.md)
 - [Zero-knowledge proofs](zero-knowledge-proofs/README.md)
+
+## Related topics
+
+- [Pseudorandomness and one-way functions](../../TheoryOfComputation/pseudorandomness-and-one-way-functions/README.md):
+  the complexity-theoretic foundations: one-way functions, hard-core predicates (Goldreich–Levin)
+  and hardness amplification (Yao's XOR lemma).
+- [Natural proofs barrier](../../TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/README.md):
+  Razborov and Rudich's link from cryptography back to circuit lower bounds: pseudorandom function
+  families in P/poly rule out natural proofs of lower bounds against P/poly.
+- [Graph isomorphism and Arthur–Merlin proofs](../../TheoryOfComputation/randomized-and-quantum-complexity/graph-isomorphism-and-arthur-merlin-proofs/README.md):
+  the complexity of the problem behind the graph-isomorphism zero-knowledge proof.
