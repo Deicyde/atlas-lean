@@ -2347,6 +2347,7 @@
   "MathlibExt/CategoryTheory/Monoidal/Braided": {"to": "CategoryTheory/monoidal-categories", "title": "Braided monoidal categories"},
   "MathlibExt/CategoryTheory/Monoidal/Tor/Additive": {"to": "CategoryTheory/homological-algebra", "title": "Additivity of derived functors"},
   "MathlibExt/Combinatorics/AP/Basic": {"to": "Combinatorics/additive-combinatorics/progressions-dense-sets", "title": "Arithmetic progressions and progression-free sets"},
+  "MathlibExt/Combinatorics/Additive/AlonFurediCover": {"to": "Combinatorics/additive-combinatorics", "title": "Combinatorial Nullstellensatz"},
   "MathlibExt/Combinatorics/Additive/Basis": {"to": "Combinatorics/additive-combinatorics/additive-bases", "title": "Asymptotic additive bases"},
   "MathlibExt/Combinatorics/Additive/BhSet": {"to": "Combinatorics/additive-combinatorics/sidon-sets-difference-sets", "title": "B_h-sets"},
   "MathlibExt/Combinatorics/Additive/CauchyDavenportChowla": {"to": "Combinatorics/additive-combinatorics/sumsets-inverse-theorems", "title": "Cauchy–Davenport–Chowla theorem"},

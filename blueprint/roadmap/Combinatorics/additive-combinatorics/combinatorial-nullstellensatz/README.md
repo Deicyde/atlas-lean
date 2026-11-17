@@ -18,13 +18,15 @@ $\mathbb{Z}/p$ (`ZMod.cauchy_davenport`, the paper's Theorem 3.2), the Chevalley
 its divisibility form (`char_dvd_card_solutions_of_sum_lt`) and the Erdős–Ginzburg–Ziv theorem for
 every modulus (`ZMod.erdos_ginzburg_ziv`, the paper's Proposition 8.2 for primes). The pages below
 restate the Nullstellensatz in the paper's notation, derive the paper's form of Chevalley–Warning,
-and prove the Erdős–Heilbronn bound by the paper's polynomial argument.
+and prove, by the paper's polynomial arguments, the Erdős–Heilbronn bound and the Alon–Füredi
+theorem on covering the cube minus one vertex by hyperplanes.
 
 - [Combinatorial Nullstellensatz, Theorem 1.1](exists-eq-sum-mul-of-vanishing.md)
 - [Combinatorial Nullstellensatz, Theorem 1.2](exists-eval-ne-zero.md)
 - [Chevalley–Warning theorem, existence form](exists-ne-common-zero.md)
 - [Restricted sumset](restricted-sumset.md)
 - [Erdős–Heilbronn conjecture (Dias da Silva–Hamidoune theorem)](min-le-card-restricted-sumset.md)
+- [Covering the cube minus a vertex by hyperplanes (Alon–Füredi)](le-card-of-covers.md)
 
 ## Related topics
 

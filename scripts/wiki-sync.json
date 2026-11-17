@@ -21167,6 +21167,7 @@
 "MathlibExt.Combinatorics.AcyclicLinksIntervalDecompositionAMR156Problem0004Wanted.HasRankIntervalDecomposition": "03d27353c07fbdcc",
 "MathlibExt.Combinatorics.AcyclicLinksIntervalDecompositionAMR156Problem0004Wanted.acyclicLinksIntervalDecomposition": "56197d971ebbc601",
 "MathlibExt.Combinatorics.AcyclicLinksIntervalDecompositionAMR156Problem0004Wanted.acyclicLinksIntervalDecomposition_refuted": "55d4c626f14e420e",
+"MathlibExt.Combinatorics.Additive.AlonFurediCover.le_card_of_covers": "425755bf3538f642",
 "MathlibExt.Combinatorics.Additive.CauchyDavenportChowlaWanted.cauchy_davenport_chowla": "c8109b06e1939c05",
 "MathlibExt.Combinatorics.Additive.CombinatorialNullstellensatz.exists_eq_sum_mul_of_vanishing": "65d782cdc2619247",
 "MathlibExt.Combinatorics.Additive.CombinatorialNullstellensatz.exists_eval_ne_zero": "5875414070b132ba",
