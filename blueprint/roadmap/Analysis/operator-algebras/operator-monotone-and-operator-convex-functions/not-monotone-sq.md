@@ -16,4 +16,4 @@ The check is explicit: $x^* (B^2 - A^2) x = -5$ for $x = (1, -4)$. So the square
 
 ## Sources
 
-- E. A. Carlen, *Trace inequalities and quantum entropy: an introductory course*, lecture-notes draft of May 3, 2009, Definition 2.1 and Theorem 2.6. Theorem numbers refer to that draft.
+- E. A. Carlen, *Trace inequalities and quantum entropy: an introductory course*, lecture-notes draft of May 3, 2009, Example 2.2 (non-monotonicity of the square), Definition 2.1 and Theorem 2.6. Theorem numbers refer to that draft.

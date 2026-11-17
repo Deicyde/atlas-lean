@@ -11,6 +11,8 @@ With $q = 1$ and $r = t$ this is the Lieb–Thirring trace inequality $\operator
 
 Matrix powers are $\mathrm{cfc}(x \mapsto x^p)$ with Lean's real power, for which $0^0 = 1$; at $q = 0$ both sides equal the dimension. The Lean statement compares real parts of the two traces, which are real because both matrices inside are positive semidefinite.
 
+Physlib proves the case $q = 1$, $0 < r \le 1$ as `HermitianMat.lieb_thirring_le_one` (in the form $\operatorname{tr}[B^r A^r B^r] \le \operatorname{tr}[(BAB)^r]$, in `QuantumInfo/ForMathlib/HermitianMat/Rpow.lean`). That file depends on the Physlib module that declares `Commute.log_left`, which clashes with Mathlib's `Mathlib.Analysis.Normed.Algebra.Logarithm`, so it cannot be bridged into ATLAS for now.
+
 The statement is recorded as wanted: its proof is deferred.
 
 ## Background

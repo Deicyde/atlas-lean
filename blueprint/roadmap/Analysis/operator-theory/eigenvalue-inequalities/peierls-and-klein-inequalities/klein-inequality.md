@@ -5,7 +5,7 @@ differentiable at the eigenvalues of `S`, the tangent-line sum at the
 eigenvalues of `S` evaluated on the diagonal of `T` is at most the sum
 of `f` over the eigenvalues of `T`.
 
-When the basis is an eigenbasis of $S$ the left side is $\operatorname{tr} f(S) + \operatorname{tr}(f'(S)(T - S))$, and the inequality reads $\operatorname{tr}[f(T) - f(S) - (T - S) f'(S)] \ge 0$, Klein's inequality in Carlen's form.
+When the basis is the eigenbasis `hS.eigenvectorBasis hn` of $S$, so that $b_i$ is the eigenvector for the $i$-th listed eigenvalue of $S$, the left side is $\operatorname{tr} f(S) + \operatorname{tr}(f'(S)(T - S))$, and the inequality reads $\operatorname{tr}[f(T) - f(S) - (T - S) f'(S)] \ge 0$, Klein's inequality in Carlen's form.
 
 ## Sources
 
