@@ -5,7 +5,7 @@ $$m \le \binom{n}{2} \left\lfloor \frac{n}{2} \right\rfloor .$$
 
 Every augmentation has a bottleneck arc, and hence an unordered bottleneck pair $\{u, v\}$ of distinct vertices. If two augmentations $i < j$ have the same bottleneck pair, then $|P_j| \ge |P_i| + 2$: when the orientations agree, Lemma 1 gives an intermediate step using the reverse arc and Lemma 2 with the monotonicity of path lengths applies; when they are opposite, Lemma 2 applies directly. Path lengths lie between $2$ and $n$ entries, so the map sending a step to its bottleneck pair and to $\lfloor |P_i| / 2 \rfloor$ is injective into a set with $\binom{n}{2} \lfloor n/2 \rfloor$ elements.
 
-This is Edmonds and Karp's counting argument, organised as an injection; it gives slightly more than their count $\binom{n}{2} \cdot \frac{n + 1}{2} = \frac{n^3 - n}{4}$, since each pair is a bottleneck at most $\lfloor n/2 \rfloor \le \frac{n + 1}{2}$ times.
+This is Edmonds and Karp's counting argument, organised as an injection; it gives a slightly sharper bound than their count $\binom{n}{2} \cdot \frac{n + 1}{2} = \frac{n^3 - n}{4}$, since each pair is a bottleneck at most $\lfloor n/2 \rfloor \le \frac{n + 1}{2}$ times.
 
 ## Informally uses
 
