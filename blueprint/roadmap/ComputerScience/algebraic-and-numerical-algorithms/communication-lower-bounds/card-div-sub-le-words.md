@@ -10,7 +10,7 @@ $$\frac{|G|}{8\sqrt{M}} - M \le W.$$
 
 This is Theorem 2 of G. Ballard, J. Demmel, O. Holtz and O. Schwartz, *Minimizing communication in numerical linear algebra*, SIAM J. Matrix Anal. Appl. 32 (2011); arXiv:0905.2485. The source assumes no operand is created and discarded within a segment without memory traffic (no "S2/D2" operands); with that assumption, the facts about the machine, namely the segment structure and the $4M$ operand count, are the hypotheses here, and the Lean proof covers the counting. Aliasing between the arrays $a$, $b$ and $c$ is allowed, since each projection is bounded separately. The model covers classical matrix multiplication, LU, Cholesky and $LDL^T$ factorisations, dense or sparse; it does not cover Strassen-like algorithms.
 
-With $M = 0$ no operand fits, so $G$ must be empty. Dividing by the largest message size $M$ gives the latency bound $|G|/(8 M^{3/2}) - 1$ messages of Corollary 3 of the same paper.
+The bound is negative, hence vacuous, when $|G| \le 8 M^{3/2}$, that is when the whole computation fits in about one segment; it is informative only for $|G| \gg M^{3/2}$. Just after Theorem 2 the source notes the refinement $\max(|G|/(8\sqrt M) - M,\ \#\text{inputs} + \#\text{outputs})$, which is not formalised here. The test file has an instance with a strictly positive bound ($3 \times 3$ matrix multiplication with $M = 1$: $27/8 - 1 > 0$). With $M = 0$ no operand fits, so $G$ must be empty. Dividing by the largest message size $M$ gives the latency bound $|G|/(8 M^{3/2}) - 1$ messages of Corollary 3 of the same paper.
 
 ## Informally uses
 

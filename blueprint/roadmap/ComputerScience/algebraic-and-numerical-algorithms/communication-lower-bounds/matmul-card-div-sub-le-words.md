@@ -4,9 +4,9 @@ Multiplying a dense $n \times r$ matrix $A$ by a dense $r \times m$ matrix $B$ b
 
 $$\frac{n m r}{8 \sqrt{M}} - M$$
 
-words between fast and slow memory, under the segment hypotheses of the [bandwidth lower bound](card-div-sub-le-words.md). For square matrices this is the $\Omega(n^3/\sqrt{M})$ bound of J.-W. Hong and H. T. Kung, *I/O complexity: the red-blue pebble game*, STOC 1981, as restated in Lemma 2.1 of D. Irony, S. Toledo and A. Tiskin, *Communication lower bounds for distributed-memory matrix multiplication*, J. Parallel Distrib. Comput. 64 (2004), 1017–1026, who proved it with explicit constants through the discrete Loomis–Whitney inequality. Blocked algorithms that multiply $\sqrt{M/3} \times \sqrt{M/3}$ blocks attain the bound up to a constant factor.
+words between fast and slow memory, under the segment hypotheses of the [bandwidth lower bound](card-div-sub-le-words.md). For square matrices this is the $\Omega(n^3/\sqrt{M})$ bound of J.-W. Hong and H. T. Kung, *I/O complexity: the red-blue pebble game*, STOC 1981, as restated in Lemma 2.1 of D. Irony, S. Toledo and A. Tiskin, *Communication lower bounds for distributed-memory matrix multiplication*, J. Parallel Distrib. Comput. 64 (2004), 1017–1026. Their Theorem 7.1 proves it with explicit constants through the discrete Loomis–Whitney inequality: at least $n^3/(2\sqrt{2}\,\sqrt{M}) - M$ words for $n \times n$ matrices, with an accounting of at most $2M$ operands of each kind per phase; the constant $8$ here comes from the $4M$ accounting of Ballard, Demmel, Holtz and Schwartz, which also allows the arrays to alias. Blocked algorithms that multiply $\sqrt{M/3} \times \sqrt{M/3}$ blocks attain the bound up to a constant factor.
 
-The test file checks the hypotheses on a $4 \times 4$ instance cut into eight $2 \times 2 \times 2$ blocks with $M = 4$.
+The bound is negative, hence vacuous, when $nmr \le 8M^{3/2}$. The test file checks the hypotheses on a $4 \times 4$ instance cut into eight $2 \times 2 \times 2$ blocks with $M = 4$, where the bound is $0$, and on a $3 \times 3$ instance with $M = 1$, where it is $27/8 - 1 > 0$.
 
 ## Informally uses
 

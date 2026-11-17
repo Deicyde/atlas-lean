@@ -47,7 +47,8 @@ variable {R : Type*} [NormedRing R] [CompleteSpace R]
 
 /-- **Small perturbations of an invertible element stay invertible.** If `‖E‖ ‖A⁻¹‖ < 1`, then
 `A - E` is invertible (Demmel, Math 221 Lecture 3 notes, 2024, the lemma "`A - E` invertible if
-`norm(E) < 1/norm(inv(A))`"). -/
+`norm(E) < 1/norm(inv(A))`"). It restates Mathlib's `Units.add` (built from the Neumann series)
+in the form used in perturbation theory. -/
 theorem isUnit_sub (A : Rˣ) (E : R) (h : ‖E‖ * ‖(↑A⁻¹ : R)‖ < 1) : IsUnit ((A : R) - E) := by
   nontriviality R
   have hpos : 0 < ‖(↑A⁻¹ : R)‖ := Units.norm_pos A⁻¹
@@ -112,7 +113,8 @@ theorem norm_inverse_sub_sub_le (A : Rˣ) (E : R) (h : ‖E‖ * ‖(↑A⁻¹ :
 omit [CompleteSpace R] in
 /-- **The condition number is at least one.** In a normed ring with `‖1‖ = 1`,
 `1 ≤ ‖A‖ ‖A⁻¹‖` (Demmel, Math 221 Lecture 3 notes, 2024: "`kappa(A) >= 1`", from
-`1 = norm(I) = norm(A*Z) <= norm(A)*norm(Z)`). -/
+`1 = norm(I) = norm(A*Z) <= norm(A)*norm(Z)`). For continuous linear equivalences between
+normed spaces, Mathlib's `ContinuousLinearEquiv.one_le_norm_mul_norm_symm` is the analogue. -/
 theorem one_le_norm_mul_norm_inv [NormOneClass R] (A : Rˣ) :
     1 ≤ ‖(A : R)‖ * ‖(↑A⁻¹ : R)‖ := by
   calc (1 : ℝ) = ‖((A : R) * ↑A⁻¹)‖ := by rw [Units.mul_inv, norm_one]

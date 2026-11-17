@@ -4,7 +4,7 @@ Let the evaluations $G$ of a computation of matrix-multiplication form be shared
 
 $$\frac{|G|}{8 P \sqrt{M}} - M$$
 
-words, because some processor performs at least $|G|/P$ evaluations. This is the argument of Corollary 5 of G. Ballard, J. Demmel, O. Holtz and O. Schwartz, *Minimizing communication in numerical linear algebra*, arXiv:0905.2485, which assumes memory balance, $M = O(\mathrm{NNZ}/P)$ for $\mathrm{NNZ}$ nonzero entries, and states the bound as $\Omega(|G|/\sqrt{P \cdot \mathrm{NNZ}} - \mathrm{NNZ}/P)$; for dense $n \times n$ matrices with $M = \Theta(n^2/P)$ it is $\Omega(n^2/\sqrt{P})$ words, which Cannon's algorithm attains.
+words, because some processor performs at least $|G|/P$ evaluations. As in the sequential case the bound is vacuous (negative) unless $|G|/P \gg M^{3/2}$. This is the argument of Corollary 5 of G. Ballard, J. Demmel, O. Holtz and O. Schwartz, *Minimizing communication in numerical linear algebra*, arXiv:0905.2485, which assumes memory balance, $M = O(\mathrm{NNZ}/P)$ for $\mathrm{NNZ}$ nonzero entries, and states the bound as $\Omega(|G|/\sqrt{P \cdot \mathrm{NNZ}} - \mathrm{NNZ}/P)$; for dense $n \times n$ matrices with $M = \Theta(n^2/P)$ it is $\Omega(n^2/\sqrt{P})$ words, which Cannon's algorithm attains.
 
 ## Informally uses
 

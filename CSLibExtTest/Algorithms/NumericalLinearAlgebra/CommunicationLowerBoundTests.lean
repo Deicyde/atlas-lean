@@ -61,4 +61,18 @@ example : ∃ q : Fin 2, ((univ : Finset (Fin 2 × Fin 2 × Fin 2)).card : ℝ) 
     (fun q _ => by decide +revert) (fun q _ => by decide +revert) (fun q _ => by decide +revert)
     (fun _ => by norm_num)
 
+/-- The singleton segment `{t}` of `3 × 3` matrix multiplication, for `t < 27`. -/
+def singleton (t : Fin 27) : Finset (Fin 3 × Fin 3 × Fin 3) :=
+  {(⟨t / 9, by omega⟩, ⟨t / 3 % 3, by omega⟩, ⟨t % 3, by omega⟩)}
+
+/-- A strictly positive bound: `3 × 3` matrix multiplication with `M = 1`, one evaluation per
+segment (27 segments), so at least `M (27 - 1) = 26` words move; the bound gives
+`27 / 8 - 1 = 19/8 > 0`. -/
+example : ((3 * 3 * 3 : ℕ) : ℝ) / (8 * √((1 : ℕ) : ℝ)) - (1 : ℕ) ≤ (26 : ℕ) ∧
+    (0 : ℝ) < ((3 * 3 * 3 : ℕ) : ℝ) / (8 * √((1 : ℕ) : ℝ)) - (1 : ℕ) := by
+  refine ⟨matmul_card_div_sub_le_words singleton 1 26 (by decide) (fun t => ?_) (fun t => ?_)
+    (fun t => ?_) (by norm_num), by norm_num⟩ <;>
+  · refine card_image_le.trans ?_
+    simp [singleton]
+
 end CSLibExtTest.Algorithms.NumericalLinearAlgebra.CommunicationLowerBound
