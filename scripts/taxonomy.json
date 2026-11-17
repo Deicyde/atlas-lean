@@ -945,6 +945,7 @@
   "CSLibExt/Algorithms/Lean/Matrix/Strassen/Costs": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Strassen algorithm"},
   "CSLibExt/Algorithms/Lean/NumberTheory/MillerRabin": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Miller–Rabin primality test"},
   "CSLibExt/Algorithms/Lean/NumberTheory/MillerRabinErrorBound": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Miller–Rabin primality test"},
+  "CSLibExt/Algorithms/Lean/NumberTheory/MillerRabinStrongPseudoprime": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Miller–Rabin primality test"},
   "CSLibExt/Algorithms/Lean/NumberTheory/ModularExponentiation": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Modular exponentiation"},
   "CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Solving linear congruences"},
   "CSLibExt/Algorithms/Lean/Numerical/DotProductError": {"to": "ComputerScience/algebraic-and-numerical-algorithms", "title": "Rounding error analysis"},

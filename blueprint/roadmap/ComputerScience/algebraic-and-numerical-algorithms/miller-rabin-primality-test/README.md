@@ -27,3 +27,12 @@
 - [At most a quarter of the bases are non-witnesses for an odd prime power](card-nonwitnesses-le-quarter-of-prime-po.md)
 - [At most a quarter of the bases are non-witnesses](card-nonwitnesses-le-quarter.md)
 - [Quarter error bound for Miller–Rabin with several bases](card-miller-rabin-errors-le-quarter.md)
+- [Rabin's `1/4` bound for strong pseudoprimes](card-is-strong-pseudoprime-le-quarter.md)
+- [Miller–Rabin non-witnesses are exactly the bases to which `n` is a strong pseudoprime](is-strong-pseudoprime-iff-witness-eq-fal.md)
+- [Converse for the squaring loop](witness-loop-eq-false-of.md)
+- [The Miller–Rabin non-witnesses, by congruences](witness-eq-false-iff.md)
+
+## Related topics
+
+- [Strong pseudoprimes](../../../NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/README.md): the number-theoretic side of the non-witnesses, bridged by
+  [Miller–Rabin non-witnesses are exactly the bases to which n is a strong pseudoprime](is-strong-pseudoprime-iff-witness-eq-fal.md).
