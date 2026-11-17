@@ -7,3 +7,8 @@
 - [The growth function is bounded by the order of the group](growth-le-card.md)
 - [Finite groups have polynomial growth](has-polynomial-growth-of-finite.md)
 - [Polynomial growth makes the growth function positive](growth-pos-2.md)
+- [Polynomial growth transfers between generating families](of-generators.md)
+- [Polynomial growth is a quasi-isometry invariant](of-quasi-isometric-embedding.md)
+- [Word balls of a finite generating family are finite](finite-word-length-le.md)
+- [Growth functions of two generating families dominate each other](growth-le-growth-mul.md)
+- [Polynomial growth is independent of the finite generating set](has-polynomial-growth-iff.md)

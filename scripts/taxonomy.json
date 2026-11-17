@@ -3192,6 +3192,7 @@
   "MathlibExt/GroupTheory/GroupAction/StabilizerDivides": {"to": "GroupTheory/permutation-groups/finite-permutation-groups", "title": "Orders of subset stabilizers"},
   "MathlibExt/GroupTheory/GroupAction/UniformFixedPoints": {"to": "GroupTheory/permutation-groups/finite-permutation-groups", "title": "Burnside's lemma"},
   "MathlibExt/GroupTheory/GroupGrowth": {"to": "GroupTheory/geometric-group-theory", "title": "Growth of groups"},
+  "MathlibExt/GroupTheory/GroupGrowthGenerators": {"to": "GroupTheory/geometric-group-theory", "title": "Growth of groups"},
   "MathlibExt/GroupTheory/HNNEmbedding": {"to": "GroupTheory/presentations-and-decision-problems", "title": "Higman–Neumann–Neumann embedding theorem"},
   "MathlibExt/GroupTheory/HyperbolicGroup": {"to": "GroupTheory/geometric-group-theory", "title": "Hyperbolic groups"},
   "MathlibExt/GroupTheory/HyperbolicGroupExamples": {"to": "GroupTheory/geometric-group-theory", "title": "Hyperbolic groups"},
