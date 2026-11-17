@@ -1,7 +1,16 @@
 # Bayes rationality without normalisation
 
-For a nonnegative prior, player `i` is Bayes
-rational at `ω` if and only if, for every action `k`,
-`∑_{x ∈ Pⁱ(ω)} p(x) (cost i (s x) − cost i (s₋ᵢ x, k)) ≤ 0`. On a nonnull cell this is the
-conditional inequality multiplied by `p(Pⁱ(ω)) > 0`; on a null cell both sides hold
-trivially.
+For a nonnegative prior $p$, player $i$ is Bayes rational at $\omega$ if and only if, for every
+action $k$,
+$$\sum_{x \in P_i(\omega)} p(x)\,\bigl(c_i(s(x)) - c_i(k, s_{-i}(x))\bigr) \le 0.$$
+On a cell of positive probability this is the conditional inequality multiplied by the probability
+of the cell; on a null cell both conditions hold trivially.
+
+## Informally uses
+
+- [Bayes rationality](is-bayes-rational.md): the condition rewritten.
+- [Conditional expectation given a partition](cond-exp-cell.md): the normalised form.
+
+## Sources
+
+- R. J. Aumann, "Correlated equilibrium as an expression of Bayesian rationality", Econometrica 55(1) (1987), 1–18, p. 7–8 (the cell-wise inequality $E(h^i(s) \mid P) \ge E(h^i(s^{-i}, s^i) \mid P)$ in the proof of the Main Theorem).

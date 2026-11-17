@@ -33,8 +33,9 @@ posterior of `A` at `ω` is `μ(A ∩ P(ω)) / μ(P(ω))`, where `P(ω) = cell (
 
 * `agreement`: for any family of agents, if it is common knowledge at `ω` that the posteriors
   of `A` are `a i`, and the cell of the meet containing `ω` is not null, then all `a i` are
-  equal (Aumann 1976, Theorem and Proposition, p. 1236–1237).
-* `agreeing_to_disagree`: the two-agent statement exactly as in Aumann 1976.
+  equal (Aumann 1976, Theorem and Proposition, p. 1236–1237, there on any probability space
+  for two agents; here on a finite state space).
+* `agreeing_to_disagree`: Aumann's two-agent statement, on a finite state space.
 * `geanakoplos_polemarchakis`: if all agents repeatedly announce their posteriors publicly and
   refine their partitions by the announcements, the partitions stop changing after finitely
   many rounds, and from then on all posteriors agree at every state whose meet cell is not
@@ -101,7 +102,7 @@ theorem posterior_eq_cond (r : Setoid Ω) (A : Set Ω) (ω : Ω) :
 omit [Finite Ω] in
 open Classical in
 -- The real measure of a set on a finite space is the sum of the masses of its points.
-theorem measureReal_eq_sum_ite [Fintype Ω] [IsFiniteMeasure μ] (S : Set Ω) :
+private theorem measureReal_eq_sum_ite [Fintype Ω] [IsFiniteMeasure μ] (S : Set Ω) :
     μ.real S = ∑ x, if x ∈ S then μ.real {x} else 0 := by
   rw [← Finset.sum_filter, sum_measureReal_singleton]
   congr 1
@@ -160,9 +161,12 @@ theorem measureReal_inter_cell_eq_mul [IsFiniteMeasure μ] {r s : Setoid Ω} (hr
 `ω` that each agent's posterior of `A` equals `a i`, and the cell of the meet `⨆ i, r i`
 containing `ω` is not null, then `a i = a j` for all `i, j`.
 
-Compared with the source: Aumann treats two agents and assumes that every cell of the join
-(coarsest common refinement) is nonnull; here any family of agents is allowed and only the meet
-cell of `ω` must be nonnull, which is weaker. -/
+Compared with the source, the two statements are incomparable. Aumann works on an arbitrary
+probability space, with two agents whose join (coarsest common refinement) consists of nonnull
+events; here the state space is finite. Within finite state spaces the statement is stronger:
+any family of agents is allowed, and only the meet cell of `ω` must be nonnull. That extra
+generality is stated through the convention that the posterior on a null cell is `0`
+(`posterior`, Lean's `x / 0 = 0`): the common-knowledge hypothesis is read with that value. -/
 theorem agreement [IsFiniteMeasure μ] {ι : Type*} (r : ι → Setoid Ω) (A : Set Ω) (ω : Ω) (a : ι → ℝ)
     (hck : IsCommonKnowledgeAt r {ω' | ∀ i, posterior μ (r i) A ω' = a i} ω)
     (hM : μ.real (cell (⨆ i, r i) ω) ≠ 0) (i j : ι) : a i = a j := by
@@ -176,8 +180,12 @@ theorem agreement [IsFiniteMeasure μ] {ι : Type*} (r : ι → Setoid Ω) (A : 
 agents with common prior `μ` and information partitions `r₁`, `r₂`: if at `ω` it is common
 knowledge that agent 1's posterior of `A` is `q₁` and agent 2's is `q₂` (the event is
 contained in the cell of the meet `r₁ ⊔ r₂` that contains `ω`), and that cell is not null,
-then `q₁ = q₂`. Aumann assumes instead that all cells of the join are nonnull, which implies
-the hypothesis used here. -/
+then `q₁ = q₂`.
+
+This is Aumann's two-agent theorem on a finite state space; Aumann works on an arbitrary
+probability space whose join cells are nonnull, so the statements are incomparable. On finite
+spaces Aumann's hypothesis implies the one used here (only the meet cell of `ω` must be nonnull),
+which is stated through the convention that the posterior on a null cell is `0`. -/
 theorem agreeing_to_disagree [IsFiniteMeasure μ] (r₁ r₂ : Setoid Ω) (A : Set Ω) (ω : Ω) (q₁ q₂ : ℝ)
     (hck : cell (r₁ ⊔ r₂) ω ⊆ {ω' | posterior μ r₁ A ω' = q₁ ∧ posterior μ r₂ A ω' = q₂})
     (hM : μ.real (cell (r₁ ⊔ r₂) ω) ≠ 0) : q₁ = q₂ := by
@@ -209,8 +217,9 @@ partitions by the announcements. Then after finitely many rounds `T` the partiti
 changing, and at round `T` all agents' posteriors of `A` are equal at every state whose meet
 cell is not null.
 
-Compared with the source: Geanakoplos and Polemarchakis let two agents announce in turn; here
-any finite family announces simultaneously. No bound on `T` is claimed. -/
+Compared with the source: Geanakoplos and Polemarchakis let two agents announce in turn and
+assume finite information partitions; here any finite family announces simultaneously and the
+state space is finite. No bound on `T` is claimed. -/
 theorem geanakoplos_polemarchakis [IsFiniteMeasure μ] {ι : Type*} [Finite ι] (A : Set Ω)
     (r₀ : ι → Setoid Ω) :
     ∃ T, (∀ n, T ≤ n → dialogue μ A r₀ n = dialogue μ A r₀ T) ∧

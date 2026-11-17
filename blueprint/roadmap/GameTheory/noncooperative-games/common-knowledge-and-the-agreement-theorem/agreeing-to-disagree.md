@@ -6,9 +6,10 @@ is $q_1$ and agent 2's is $q_2$ (the cell of the meet of $\mathcal P_1$ and $\ma
 contains $\omega$ lies in the event where the posteriors take these values), and that cell is not
 null, then $q_1 = q_2$.
 
-This is Aumann's theorem in his two-agent setting. His hypothesis that all cells of the join are
-nonnull implies the one used here, which concerns only the meet cell of $\omega$; the statement is
-therefore slightly stronger than the source.
+This is Aumann's two-agent theorem on a finite state space. Aumann works on an arbitrary
+probability space whose join cells are nonnull, so the two statements are incomparable. On finite
+spaces his hypothesis implies the one used here, which concerns only the meet cell of $\omega$;
+that extra generality relies on the convention that the posterior on a null cell is $0$.
 
 ## Informally uses
 
@@ -21,4 +22,4 @@ therefore slightly stronger than the source.
 
 ## Sources
 
-- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, Theorem (p. 1236) and Proposition (p. 1237).
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, Theorem (p. 1236), model (p. 1236) and Proposition (p. 1237).

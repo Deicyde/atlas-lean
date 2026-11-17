@@ -1,5 +1,9 @@
 # Averaging cell sums
 
-On a finite state space, the total sum of `f` equals the sum over
-all states `ω` of the sum of `f` over the cell of `ω`, divided by the size of that cell: each
-cell is counted once in total.
+On a finite set $\Omega$ with a partition $\mathcal P$, for every real function $f$,
+$$\sum_{x \in \Omega} f(x) = \sum_{\omega \in \Omega} \frac{1}{|P(\omega)|} \sum_{x \in P(\omega)} f(x):$$
+each cell $P$ appears $|P|$ times on the right, once for each of its states, with weight $1/|P|$.
+
+## Informally uses
+
+- [Information cell as a finset](cell-finset.md): the inner sums.

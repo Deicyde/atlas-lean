@@ -1,3 +1,8 @@
 # What is known is true
 
-`knows r E ⊆ E` (the truth axiom of knowledge).
+For every partition and every event $E$, the event "the agent knows $E$" is contained in $E$:
+$K(E) \subseteq E$, because the state $\omega$ lies in its own cell $P(\omega)$.
+
+## Informally uses
+
+- [Knowledge operator](knows.md): the definition of $K$.

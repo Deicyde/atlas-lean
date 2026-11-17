@@ -11,7 +11,8 @@ sequence stabilises. At a fixed point every agent's posterior is constant on eve
 hence on the cells of the meet; the posteriors are then common knowledge and the
 [agreement theorem](agreement.md) applies.
 
-Compared with the source: in Geanakoplos and Polemarchakis the two agents communicate back and
+Compared with the source: Geanakoplos and Polemarchakis assume finite information partitions,
+whereas here the state space is finite; in their paper the two agents communicate back and
 forth, and the abstract also states that any number of rounds can be needed and that the limit
 need not be the posterior given the pooled information; here any finite family announces
 simultaneously, no bound on $T$ is claimed, and those complements are not formalised.

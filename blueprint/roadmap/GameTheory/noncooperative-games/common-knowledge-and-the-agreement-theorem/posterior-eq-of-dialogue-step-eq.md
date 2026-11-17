@@ -1,6 +1,12 @@
 # At a fixed point of the dialogue, posteriors agree
 
-If one more round of announcements
-leaves the partitions `r` unchanged, then every agent's posterior is constant on the cells of
-the meet, hence common knowledge, and by the agreement theorem all posteriors coincide at
-every state whose meet cell is not null.
+Suppose one more round of announcing posteriors of $A$ leaves every agent's partition unchanged.
+Then each agent's posterior is constant on every agent's cells, so its value is common knowledge;
+by the agreement theorem, at every state whose meet cell is not null all agents' posteriors of $A$
+are equal.
+
+## Informally uses
+
+- [Values of commonly known functions are common knowledge](is-common-knowledge-at-level-set.md):
+  the announced posteriors are common knowledge at a fixed point.
+- [Agreement theorem](agreement.md): the conclusion.

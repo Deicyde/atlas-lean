@@ -1,5 +1,13 @@
 # Summing over the cells (equality)
 
-On a finite state space, if the sum of `f` over every
-cell of the partition `r` vanishes, then the total sum of `f` vanishes ("summing over `j`",
-Aumann 1976, p. 1237).
+On a finite set with a partition, if the sum of $f$ over every cell vanishes, then the total sum of
+$f$ vanishes. This is the step "summing over $j$" in Aumann's proof of the agreement theorem.
+
+## Informally uses
+
+- [Averaging cell sums](sum-eq-sum-inv-card-mul-sum-cell.md): the total as an average of cell
+  sums.
+
+## Sources
+
+- R. J. Aumann, "Agreeing to disagree", Ann. Statist. 4(6) (1976), 1236–1239, p. 1237 (proof of the Proposition).

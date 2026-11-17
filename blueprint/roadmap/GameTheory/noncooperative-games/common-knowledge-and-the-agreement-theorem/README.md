@@ -42,3 +42,4 @@ In Aumann's partition model of differential information, a finite set of states 
 - [Correlated equilibria](../correlated-equilibria/README.md): Aumann's Main Theorem (1987) uses the same partition model with a common prior to derive correlated equilibrium from Bayes rationality.
 - [Epistemic logic](../../../Logic/modal-logic/epistemic-logic/README.md): the syntactic side of knowledge, multi-agent S5 on Kripke models; equivalence relations there play the role of information partitions here.
 - [Bayesian statistics](../../../Probability/bayesian-statistics/README.md): priors and posteriors, the probabilistic setting of the agreement theorem.
+- [Revelation principle](../../mechanism-design/revelation-principle/README.md): Bayesian games and mechanisms with private information use the same common-prior model of beliefs.
