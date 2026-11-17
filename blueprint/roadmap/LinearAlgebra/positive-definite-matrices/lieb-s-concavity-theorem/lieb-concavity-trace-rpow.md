@@ -19,7 +19,7 @@ The statement is recorded as wanted: its proof is deferred. Its degenerate insta
 - [Lieb's concavity theorem, case `r = 0`](lieb-concavity-trace-rpow-of-right-eq-ze.md): the proved instance $r = 0$.
 - [Lieb's concavity theorem, case `q = 0`](lieb-concavity-trace-rpow-of-left-eq-zer.md): the proved instance $q = 0$.
 - [Lieb's concavity theorem](lieb-concavity.md): the exponential form $A \mapsto \operatorname{tr}\exp(H + \log A)$, from the same 1973 paper.
-- [The square is operator convex](../../../Analysis/operator-algebras/sq-convex-comb-le.md): an example of operator convexity, the operator-level notion behind the one-variable concavity of $t^q$.
+- [The square is operator convex](../../../Analysis/operator-algebras/operator-monotone-and-operator-convex-functions/sq-convex-comb-le.md): an example of operator convexity, the operator-level notion behind the one-variable concavity of $t^q$.
 
 ## Sources
 

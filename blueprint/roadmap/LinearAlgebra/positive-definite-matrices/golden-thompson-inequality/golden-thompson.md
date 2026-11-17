@@ -15,8 +15,8 @@ The statement is recorded as wanted: its proof is deferred. The usual proof comb
 
 - [Golden–Thompson equality for commuting matrices](trace-exp-add-of-commute.md): the equality case, proved.
 - [The right side of Golden–Thompson is a nonnegative real](trace-exp-mul-exp-nonneg.md): why the inequality compares two real numbers, proved.
-- [Peierls–Bogoliubov inequality for Hermitian matrices](../../Analysis/operator-theory/eigenvalue-inequalities/peierls-and-klein-inequalities/re-trace-exp-convex-comb-le.md): a companion trace-exponential bound, the convexity of $A \mapsto \log \operatorname{tr} e^A$, proved.
-- [Exponential limits and the Lie–Trotter formula](../../Analysis/operator-algebras/exponential-limits-and-the-lie-trotter-formula/README.md): the product formula $e^{a+b} = \lim (e^{a/n} e^{b/n})^n$, proved in complete normed algebras, which the usual proof uses.
+- [Peierls–Bogoliubov inequality for Hermitian matrices](../../../Analysis/operator-theory/eigenvalue-inequalities/peierls-and-klein-inequalities/re-trace-exp-convex-comb-le.md): a companion trace-exponential bound, the convexity of $A \mapsto \log \operatorname{tr} e^A$, proved.
+- [Exponential limits and the Lie–Trotter formula](../../../Analysis/operator-algebras/exponential-limits-and-the-lie-trotter-formula/README.md): the product formula $e^{a+b} = \lim (e^{a/n} e^{b/n})^n$, proved in complete normed algebras, which the usual proof uses.
 
 ## Sources
 

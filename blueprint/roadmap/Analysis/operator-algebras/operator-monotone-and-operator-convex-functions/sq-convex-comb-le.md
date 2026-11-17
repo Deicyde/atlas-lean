@@ -16,7 +16,7 @@ Operator convexity is much stronger than convexity of the trace functional $A \m
 
 ## Background
 
-- [Klein's inequality for the square function](../operator-theory/eigenvalue-inequalities/peierls-and-klein-inequalities/klein-sq.md): a trace inequality for the same function $t \mapsto t^2$, the weaker, scalar kind of convexity statement that Carlen's notes contrast with operator convexity.
+- [Klein's inequality for the square function](../../operator-theory/eigenvalue-inequalities/peierls-and-klein-inequalities/klein-sq.md): a trace inequality for the same function $t \mapsto t^2$, the weaker, scalar kind of convexity statement that Carlen's notes contrast with operator convexity.
 
 ## Sources
 

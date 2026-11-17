@@ -15,7 +15,7 @@ The statement is recorded as wanted: its proof is deferred.
 
 ## Background
 
-- [Golden–Thompson inequality](golden-thompson.md): a consequence of the Lieb–Thirring case via the Lie–Trotter product formula.
+- [Golden–Thompson inequality](../golden-thompson-inequality/golden-thompson.md): a consequence of the Lieb–Thirring case via the Lie–Trotter product formula.
 - [Araki–Lieb–Thirring inequality, reversed range](araki-lieb-thirring-of-le-one.md): the companion inequality for $0 \le r \le 1$.
 
 ## Sources

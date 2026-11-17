@@ -19,7 +19,7 @@ The statement is recorded as wanted: its proof is deferred.
 
 - [Gagliardo–Nirenberg inequality](gagliardo-nirenberg-inequality/README.md): the case of one function is an inequality of this type.
 - [Sobolev embedding theorem](sobolev-embedding-theorem/README.md): the Lieb–Thirring inequality is a Sobolev inequality for orthonormal families.
-- [Araki–Lieb–Thirring inequality](../../LinearAlgebra/positive-definite-matrices/araki-lieb-thirring.md): the matrix trace inequality that Lieb and Thirring proved in their 1976 paper on the eigenvalue moments.
+- [Araki–Lieb–Thirring inequality](../../LinearAlgebra/positive-definite-matrices/araki-lieb-thirring-inequality/araki-lieb-thirring.md): the matrix trace inequality that Lieb and Thirring proved in their 1976 paper on the eigenvalue moments.
 
 ## Sources
 

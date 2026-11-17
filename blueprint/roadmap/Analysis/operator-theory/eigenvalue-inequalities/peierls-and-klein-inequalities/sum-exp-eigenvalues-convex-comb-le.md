@@ -15,7 +15,7 @@ In physics notation, with $Z(H) = \operatorname{tr} e^{-\beta H}$ the partition 
 
 ## Background
 
-- [Golden–Thompson inequality](../../../../LinearAlgebra/positive-definite-matrices/golden-thompson.md): another trace inequality for $\operatorname{tr} e^{A + B}$, from the same circle of statistical-mechanics bounds.
+- [Golden–Thompson inequality](../../../../LinearAlgebra/positive-definite-matrices/golden-thompson-inequality/golden-thompson.md): another trace inequality for $\operatorname{tr} e^{A + B}$, from the same circle of statistical-mechanics bounds.
 
 ## Sources
 

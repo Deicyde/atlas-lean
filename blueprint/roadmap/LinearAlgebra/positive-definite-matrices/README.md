@@ -12,15 +12,8 @@ Positive definite and semidefinite matrices, criteria for definiteness, and ineq
 - [Hoffman–Wielandt inequality for Hermitian matrices](hoffman-wielandt-hermitian.md)
 - [Lipschitz linear statistics of Hermitian spectra are stable](abs-sum-sub-sum-le-of-lipschitz-with.md)
 - [Log-determinant trace inequality](log-det-mul-le-trace.md)
-- [Golden–Thompson inequality](golden-thompson.md)
-- [Golden–Thompson equality for commuting matrices](trace-exp-add-of-commute.md)
-- [Golden–Thompson inequality for commuting matrices](golden-thompson-of-commute.md)
-- [The right side of Golden–Thompson is a nonnegative real](trace-exp-mul-exp-nonneg.md)
-- [Araki–Lieb–Thirring inequality](araki-lieb-thirring.md)
-- [Araki–Lieb–Thirring inequality, reversed range](araki-lieb-thirring-of-le-one.md)
-- [Lieb–Thirring trace inequality for `t = 2`](araki-lieb-thirring-two-one.md)
-- [`tr (XY)² ≤ tr X²Y²` for Hermitian matrices](trace-mul-mul-mul-mul-le.md)
-- [Commutator identity for traces](trace-commutator-conj-transpose-mul-self.md)
+- [Golden–Thompson inequality](golden-thompson-inequality/README.md)
+- [Araki–Lieb–Thirring inequality](araki-lieb-thirring-inequality/README.md)
 
 ## Related topics
 

@@ -14,7 +14,7 @@ Both traces on the right are positive reals, being sums of exponentials of eigen
 
 ## Background
 
-- [Golden–Thompson inequality](../../../../LinearAlgebra/positive-definite-matrices/golden-thompson.md): the other classical upper bound on $\operatorname{tr} e^{A + B}$-type quantities.
+- [Golden–Thompson inequality](../../../../LinearAlgebra/positive-definite-matrices/golden-thompson-inequality/golden-thompson.md): the other classical upper bound on $\operatorname{tr} e^{A + B}$-type quantities.
 
 ## Sources
 

@@ -15,7 +15,7 @@ For the Pauli matrices $\sigma_z, \sigma_x$ the two sides are $-2$ and $2$, so t
 
 ## Background
 
-- [Golden–Thompson inequality](golden-thompson.md): the inequality whose usual proof starts with this step.
+- [Golden–Thompson inequality](../golden-thompson-inequality/golden-thompson.md): the inequality whose usual proof starts with this step.
 
 ## Sources
 
