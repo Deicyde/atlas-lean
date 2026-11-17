@@ -9,3 +9,7 @@ This is the existence statement behind the definition of END-OF-THE-LINE and of 
 C. Daskalakis, P. W. Goldberg, C. H. Papadimitriou, "The complexity of computing a Nash
 equilibrium", SIAM J. Comput. 39(1) (2009), 195–259, Section 3.1, where `V = {0,1}ⁿ` and
 `o = 0ⁿ`. In fact the first alternative always occurs (`exists_sink`).
+
+## Informally uses
+
+- [Every END-OF-THE-LINE instance has a sink](exists-sink.md): the first alternative always holds.

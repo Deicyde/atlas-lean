@@ -1,10 +1,11 @@
 # Completeness for other complexity classes
 
-Problems complete for classes other than NP: P (circuit value), NL (s-t connectivity), coNP (UNSAT), PSPACE (TQBF, Geography), levels of the polynomial hierarchy (QSAT_k), EXP, NEXP and EXPSPACE (succinct problems, regular expressions with squaring).
+Problems complete for classes other than NP: P (circuit value), NL (s-t connectivity), coNP (UNSAT), PSPACE (TQBF, Geography), levels of the polynomial hierarchy (QSAT_k), EXP, NEXP and EXPSPACE (succinct problems, regular expressions with squaring), and the class PPAD of total search problems, whose complete problems include approximate Nash equilibria and Brouwer fixed points.
 
 - [Circuit value problem](circuit-value-problem/README.md)
 - [Directed s-t connectivity](directed-s-t-connectivity/README.md)
 - [Generalized geography](generalized-geography/README.md)
+- [PPAD and the END-OF-THE-LINE problem](ppad-and-the-end-of-the-line-problem/README.md)
 - [Quantified Boolean formulas with bounded alternation](quantified-boolean-formulas-with-bounded-alterna/README.md)
 - [Regular expressions with squaring](regular-expressions-with-squaring/README.md)
 - [Satisfiability and model checking for the linear-time μ-calculus](satisfiability-and-model-checking-for-the-linear/README.md)

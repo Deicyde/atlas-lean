@@ -8,3 +8,12 @@ This is the two-dimensional case of E. Sperner, "Neuer Beweis für die Invarianz
 Dimensionszahl und des Gebietes", Abh. Math. Sem. Univ. Hamburg 6 (1928), 265–272, for the
 particular triangulation by the unit grid; Sperner proves it for arbitrary triangulations of a
 simplex, which this statement does not cover. The proof counts `{0, 1}`-doors modulo 2.
+
+## Informally uses
+
+- [Sperner's lemma in dimension one](odd-card-bichromatic.md): the bottom side, coloured with $0$ and $1$ from corner to corner, carries an odd number of doors.
+
+## Background
+
+- [Every END-OF-THE-LINE instance has a sink](../../../TheoryOfComputation/completeness-other-classes/ppad-and-the-end-of-the-line-problem/exists-sink.md): the directed parity principle that the door-to-door walk instantiates.
+- [Knaster–Kuratowski–Mazurkiewicz lemma](../../../Geometry/convex-geometry/kkm-lemma.md): the $n$-dimensional lemma on barycentric subdivisions is its main step.

@@ -11,6 +11,14 @@ spanned by the vertices of its support, so "every face `conv {eᵢ : i ∈ I}` i
 cell at every level, and passes to the limit using compactness, the mesh bound `(n/(n+1))ᵏ` and
 closedness of the `Fᵢ`.
 
+## Informally uses
+
+- [Sperner's lemma](../../Combinatorics/polytopes-simplicial-complexes/sperner-s-lemma/README.md): the $n$-dimensional lemma on iterated barycentric subdivisions, which the Lean proof establishes as a private step; the pages of that topic prove the one- and two-dimensional cases on the grid.
+
+## Background
+
+- [Brouwer's fixed-point theorem for the standard simplex](../../Topology/algebraic-topology/brouwer-fixed-point-theorem/exists-fixed-point.md): the consequence announced in the title of the KKM paper, derived from this lemma.
+
 ## Sources
 
 - B. Knaster, C. Kuratowski, S. Mazurkiewicz, "Ein Beweis des Fixpunktsatzes für n-dimensionale Simplexe", Fundamenta Mathematicae 14 (1929), 132–137.

@@ -12,3 +12,10 @@ Selfish agents each place one task on one of $m$ identical machines and want the
 - [A single task bounds every makespan](weight-le-makespan.md)
 - [Price of anarchy for pure equilibria on identical machines (multiplicative form)](succ-mul-makespan-le.md)
 - [Price of anarchy for pure equilibria on identical machines](makespan-le-of-is-pure-nash.md)
+
+## Related topics
+
+- [Selfish routing and the price of anarchy](../selfish-routing-and-the-price-of-anarchy/README.md): the nonatomic counterpart, with price of anarchy $4/3$ for affine latencies.
+- [Atomic congestion games with affine delays](../atomic-congestion-games-with-affine-delays/README.md): atomic players and a utilitarian social cost, price of anarchy $5/2$.
+- [List scheduling on identical machines](../../../ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/README.md): Graham's greedy algorithm for the same makespan problem; its $2 - 1/m$ analysis is the model for the equilibrium bound (Vöcking, Section 20.2.1).
+- [Nash's theorem](../nash-s-theorem/README.md): existence of mixed equilibria; load balancing games even have pure ones (Vöcking, Proposition 20.3, not formalised).

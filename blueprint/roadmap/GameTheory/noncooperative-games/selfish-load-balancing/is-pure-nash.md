@@ -4,3 +4,7 @@ No task can lower its cost by moving
 alone: for every task `i` and every other machine `k`, the load of `i`'s machine is at most the
 load `ℓₖ + wᵢ` that `i` would experience on `k` (Vöcking, *Algorithmic Game Theory*,
 Proposition 20.2, specialised to identical machines).
+
+## Remarks
+
+- Moving to its own machine is not a deviation, so the condition is required only for $k \neq A(i)$; for nonnegative weights it would hold trivially there.

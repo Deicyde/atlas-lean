@@ -9,3 +9,8 @@ Colour the vertices of a triangulated simplex so that each vertex avoids the col
 - [Sperner colouring of the grid triangle](is-sperner-colouring.md)
 - [Sperner's lemma in dimension two (parity form)](odd-card-rainbow.md)
 - [Sperner's lemma in dimension two](exists-rainbow.md)
+
+## Related topics
+
+- [Brouwer fixed-point theorem](../../../Topology/algebraic-topology/brouwer-fixed-point-theorem/README.md): proved from the $n$-dimensional lemma through the Knaster–Kuratowski–Mazurkiewicz lemma.
+- [PPAD and the END-OF-THE-LINE problem](../../../TheoryOfComputation/completeness-other-classes/ppad-and-the-end-of-the-line-problem/README.md): the complexity class defined by this kind of parity argument; Sperner is among the problems Papadimitriou (1994) showed PPAD-complete, as reported by Daskalakis, Goldberg and Papadimitriou (2009, Section 3.1).
