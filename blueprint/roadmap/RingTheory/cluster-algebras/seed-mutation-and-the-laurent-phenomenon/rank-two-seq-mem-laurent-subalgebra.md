@@ -14,4 +14,4 @@ It is the case `n = 2`, `B = rankTwoMatrix b c` of `laurent_phenomenon`, by the 
 ## Background
 
 - [Laurent phenomenon (coefficient-free)](laurent-phenomenon.md): the general statement, of which this is the rank-two case.
-- [Bridge: seed mutation in rank two is the rank-two recurrence](../cluster-algebras-of-rank-two/mutate-seq-rank-two-matrix.md): identifies `rankTwoSeq` with the cluster variables produced by seed mutation.
+- [Bridge: seed mutation in rank two is the rank-two recurrence](../cluster-algebras-of-rank-two/mutate-seq-rank-two-matrix.md): identifies `rankTwoSeq` with z₁, z₂, …, the cluster variables reached by forward alternating mutation; when bc ≥ 4 the backward variables z₀, z₋₁, … are not included.

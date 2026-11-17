@@ -338,8 +338,8 @@ private lemma mutateSeq_append (w₁ w₂ : List (Fin 2)) (s : (Fin 2 → K) × 
 each, gives the seed whose cluster is `(z (2m), z (2m + 1))` for `z = rankTwoSeq b c x y`, with
 the same exchange matrix (Fomin, Williams and Zelevinsky, *Introduction to cluster algebras,
 Chapters 1–3*, arXiv:1608.05735v5, Section 3.2: the seed pattern of `A(b, c)` and its exchange
-relations (3.2.2)). So `rankTwoSeq` lists the cluster variables of `A(b, c)` produced by
-`seedMutation`. -/
+relations (3.2.2)). So `rankTwoSeq` lists z₁, z₂, …, the cluster variables reached by forward
+alternating mutation; when bc ≥ 4 the backward variables z₀, z₋₁, … are not included. -/
 theorem mutateSeq_rankTwoMatrix (b c : ℕ) (x y : K) (m : ℕ) :
     mutateSeq ((List.replicate m [(0 : Fin 2), 1]).flatten) (![x, y], rankTwoMatrix b c) =
       (![rankTwoSeq b c x y (2 * m), rankTwoSeq b c x y (2 * m + 1)], rankTwoMatrix b c) := by
