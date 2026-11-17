@@ -1217,6 +1217,8 @@
   "CSLibExt/Computability/Distributed/FLP/Bivalence": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "FLP impossibility"},
   "CSLibExt/Computability/Distributed/FLP/Original": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "FLP impossibility"},
   "CSLibExt/Computability/Distributed/LamportClock": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Lamport clocks"},
+  "CSLibExt/Computability/Distributed/Paxos/Algorithm": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Paxos consensus"},
+  "CSLibExt/Computability/Distributed/Paxos/Voting": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Paxos consensus"},
   "CSLibExt/Computability/Distributed/TwoPhaseCommit": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Two-phase commit"},
   "CSLibExt/Computability/Distributed/VectorClock": {"to": "ComputerScience/concurrent-systems-and-protocols", "title": "Vector clocks"},
   "CSLibExt/Computability/Games/Attractor": {"to": "TheoryOfComputation/omega-automata-and-games", "title": "Parity games"},

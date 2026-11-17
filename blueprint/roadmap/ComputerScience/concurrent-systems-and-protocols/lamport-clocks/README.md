@@ -48,6 +48,7 @@ Happened-before is an irreflexive partial order here by construction (an event o
 
 - [Vector clocks](../vector-clocks/README.md): the same execution model; vector timestamps characterise happened-before exactly, which Lamport timestamps cannot, since the converse of the clock condition fails.
 - [Linear extensions of posets](../../../Combinatorics/partially-ordered-sets/linear-extensions-of-posets/README.md): Lamport's total order is a linear extension of happened-before, and every linear extension arises from some clock system.
+- [Paxos consensus](../paxos-consensus/README.md): Lamport's state-machine approach needs a total order of commands; Paxos provides one despite crash failures.
 
 ## Sources
 

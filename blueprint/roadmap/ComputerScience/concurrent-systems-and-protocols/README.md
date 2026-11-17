@@ -13,6 +13,7 @@ Specific concurrent or distributed systems and their verified properties: deadlo
 - [FLP impossibility](flp-impossibility/README.md)
 - [Go-back-N protocol](go-back-n-protocol/README.md)
 - [Lamport clocks](lamport-clocks/README.md)
+- [Paxos consensus](paxos-consensus/README.md)
 - [Synchronous consensus with crash failures](synchronous-consensus-with-crash-failures/README.md)
 - [Two-phase commit](two-phase-commit/README.md)
 - [Vector clocks](vector-clocks/README.md)

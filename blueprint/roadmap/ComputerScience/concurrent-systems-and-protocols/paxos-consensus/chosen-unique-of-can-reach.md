@@ -1,0 +1,15 @@
+# Paxos safety: at most one value is chosen
+
+In every state reachable from the initial state of [single-decree Paxos](lts.md), two [chosen values](value-chosen.md) are equal. Acceptances are never withdrawn, so a value chosen once stays chosen, and no other value is chosen later in the same run.
+
+This is the second safety requirement of Section 2.1, for the algorithm of Section 2.2 in the asynchronous non-Byzantine model, with any quorum system (majorities in the paper). The test module exhibits a reachable state in which a value is chosen, so the theorem is not vacuous.
+
+## Informally uses
+
+- [Reachable states are Paxos voting histories](voting-of-inv.md): every reachable state is a voting history.
+- [The Paxos invariant holds in every reachable state](inv-of-can-reach.md): the invariant behind it.
+- [At most one value is chosen](chosen-unique.md): the voting argument.
+
+## Sources
+
+- L. Lamport, *Paxos Made Simple*, ACM SIGACT News 32(4), December 2001, 51–58; author's version dated 01 Nov 2001: Sections 2.1 and 2.2.
