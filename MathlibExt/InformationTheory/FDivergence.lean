@@ -27,7 +27,8 @@ Tutorial*, 2004, Section 4). For `f` convex on `[0, ∞)`:
 
 Restrictions with respect to the source: `Q` is strictly positive, so the conventions for
 `Q(a) = 0` are not needed, and `f` is real-valued and convex on `[0, ∞)`, which excludes `f(t) =
--log t` (the reversed divergence) at `P(a) = 0`.
+-log t` (the reversed divergence) at `P(a) = 0`. The value `f 0` is used as given; it is the
+source's `f(0) = lim_{t → 0⁺} f(t)` when `f` is continuous at `0` from the right.
 -/
 
 @[expose] public section
@@ -41,7 +42,9 @@ variable {α β : Type*} [Fintype α] [Fintype β] [DecidableEq β]
 /-- **f-divergence on a finite alphabet** (Csiszár–Shields, *Information Theory and Statistics: A
 Tutorial*, 2004, Section 4, definition of `D_f(P ‖ Q)`). For `f : ℝ → ℝ` and `P, Q : α → ℝ`,
 `fDiv f P Q = ∑ₐ Q(a) f(P(a) / Q(a))`. It is meant for `Q > 0`; where `Q(a) = 0` the term is `0`
-(Lean's `0 * x = 0`), which is the source's convention only when `P(a) = 0`. -/
+(Lean's `0 * x = 0`), which is the source's convention only when `P(a) = 0`. The value `f 0` is
+used as given, whereas the source sets `f(0) = lim_{t → 0⁺} f(t)`; the two agree when `f` is
+continuous at `0` from the right. -/
 noncomputable def fDiv (f : ℝ → ℝ) (P Q : α → ℝ) : ℝ :=
   ∑ a, Q a * f (P a / Q a)
 
