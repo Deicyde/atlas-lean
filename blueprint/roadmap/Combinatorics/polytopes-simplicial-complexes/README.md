@@ -3,6 +3,10 @@
 Face numbers and h-vectors of simplicial spheres and polytopes (Dehn–Sommerville, upper bound theorem), Cohen–Macaulay, partitionable and interval-decomposable complexes, simplicial homology, Sperner's lemma on coloured triangulations, Ehrhart polynomials, h*-vectors and the integer decomposition property, lattice parallelograms, and hyperplane arrangements.
 
 - [Ordinary Ehrhart count](ordinary-ehrhart-count.md)
+- [Faces of convex polytopes](faces-of-convex-polytopes/README.md)
+- [Face numbers of convex polytopes](face-numbers-of-convex-polytopes/README.md)
+- [Cyclic polytopes](cyclic-polytopes/README.md)
+- [Gale diagrams](gale-diagrams/README.md)
 - [Clean lattice parallelograms](clean-lattice-parallelograms/README.md)
 - [Face numbers of simplicial spheres](face-numbers-of-simplicial-spheres/README.md)
 - [Colour groups of sphere triangulations](colour-groups-of-sphere-triangulations/README.md)
