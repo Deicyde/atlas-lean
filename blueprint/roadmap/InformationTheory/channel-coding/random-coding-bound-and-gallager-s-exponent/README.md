@@ -70,7 +70,6 @@ follows.
 - [Shannon entropy and Kullback–Leibler divergence](../../entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/README.md):
   the entropies in which that mutual information is expanded.
 - [Low-density parity-check codes](../../error-correcting-codes/low-density-parity-check-codes/README.md):
-  Gallager's other ensemble; the random coding bound needs only pairwise independent code words,
-  which parity-check ensembles provide.
+  Gallager's other ensemble.
 - [List decoding](../../error-correcting-codes/list-decoding/README.md): list-decoding capacity is a
   random-coding argument for worst-case errors.

@@ -9,8 +9,8 @@ maximum-likelihood decoding, ties counted as errors) at most $e^{-NE}$.
 This is the achievability half of Shannon's coding theorem as Gallager derives it from Theorem 1 and
 the properties of $E_0$, for the average error and one input law $p$. Choosing $p$ with $I(p; W)$
 close to the capacity gives every rate below capacity; the
-[maximal-error achievability](../shannon-s-channel-coding-theorem/channel-coding-achievability.md) is a separate wanted statement, which
-follows by expurgation ([Corollary 2](exists-code-ml-error-prob-le.md)).
+[maximal-error achievability](../shannon-s-channel-coding-theorem/channel-coding-achievability.md) is proved from this
+bound by expurgation ([Corollary 2](exists-code-ml-error-prob-le.md)).
 
 ## Informally uses
 
