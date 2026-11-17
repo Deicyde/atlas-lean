@@ -1,6 +1,6 @@
 # The Hellinger distance is nonnegative
 
-For all measures $\mu$ and $\nu$, $d_{\mathrm{Hell}}(\mu, \nu) \ge 0$, since it is a square root.
+For all finite measures $\mu$ and $\nu$ (indeed for all measures, as a property of the definition), $d_{\mathrm{Hell}}(\mu, \nu) \ge 0$, since it is a square root.
 
 ## Sources
 

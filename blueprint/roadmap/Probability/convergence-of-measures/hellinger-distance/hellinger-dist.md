@@ -1,6 +1,7 @@
 # Hellinger distance
 
-For measures $\mu$ and $\nu$ on the same measurable space, the Hellinger distance is
+For finite measures $\mu$ and $\nu$ on the same measurable space (in practice probability measures),
+the Hellinger distance is
 
 $$
 d_{\mathrm{Hell}}(\mu, \nu) = \sqrt{\frac12 \int \Big(\sqrt{\tfrac{d\mu}{d\zeta}} - \sqrt{\tfrac{d\nu}{d\zeta}}\Big)^2 \, d\zeta}, \qquad \zeta = \mu + \nu .
@@ -10,6 +11,11 @@ Any other measure dominating both gives the same value
 ([change of reference measure](hellinger-dist-with-density.md)), so the choice $\zeta = \mu + \nu$
 only makes the definition free of choices. The factor $\tfrac12$ is the normalisation of Dashti and
 Stuart, for which the distance between probability measures lies in $[0, 1]$.
+
+The Lean definition accepts any measures, but it is meaningful only for finite ones: for infinite
+measures the integral can diverge, and Mathlib's convention that a non-integrable function has
+integral $0$ then gives a meaningless value (Lebesgue measure and twice Lebesgue measure on
+$\mathbb R$ come out at distance $0$).
 
 ## Background
 

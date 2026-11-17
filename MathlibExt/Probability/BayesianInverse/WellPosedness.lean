@@ -318,22 +318,31 @@ private lemma exists_closedBall_pos (μ₀ : Measure E) [IsProbabilityMeasure μ
   simp at this
 
 omit [NormedSpace ℝ E] [FiniteDimensional ℝ E] [BorelSpace E] in
-/-- `exp(-Φ)` is integrable when `-M₁ ≤ Φ`, `Φ` is measurable and `exp(M₁)(1 + M₂²)` is
-integrable. -/
-private lemma integrable_exp_neg {μ₀ : Measure E} {Φ : E → ℝ} {M₁ M₂ : ℝ → ℝ}
+/-- `exp(-Φ)` is integrable when `-M₁ ≤ Φ`, `Φ` is measurable and `exp(M₁)` is integrable. -/
+private lemma integrable_exp_neg {μ₀ : Measure E} {Φ : E → ℝ} {M₁ : ℝ → ℝ}
     (hΦ : Measurable Φ) (hlow : ∀ u, -M₁ ‖u‖ ≤ Φ u)
-    (hint : Integrable (fun u ↦ Real.exp (M₁ ‖u‖) * (1 + M₂ ‖u‖ ^ 2)) μ₀) :
+    (hint : Integrable (fun u ↦ Real.exp (M₁ ‖u‖)) μ₀) :
     Integrable (fun u ↦ Real.exp (-Φ u)) μ₀ :=
   hint.mono' (by fun_prop) (Eventually.of_forall fun u ↦ by
     rw [Real.norm_eq_abs, abs_of_pos (Real.exp_pos _)]
-    exact (Real.exp_le_exp.2 (by linarith [hlow u])).trans
-      (le_mul_of_one_le_right (Real.exp_pos _).le (by nlinarith [sq_nonneg (M₂ ‖u‖)])))
+    exact Real.exp_le_exp.2 (by linarith [hlow u]))
+
+omit [NormedSpace ℝ E] [FiniteDimensional ℝ E] in
+/-- Integrability of `exp(M₁)(1 + M₂²)` implies that of `exp(M₁)`. -/
+private lemma integrable_exp_of_integrable_mul {μ₀ : Measure E} {M₁ M₂ : ℝ → ℝ}
+    (hM₁ : Measurable M₁)
+    (hint : Integrable (fun u ↦ Real.exp (M₁ ‖u‖) * (1 + M₂ ‖u‖ ^ 2)) μ₀) :
+    Integrable (fun u ↦ Real.exp (M₁ ‖u‖)) μ₀ :=
+  hint.mono' (hM₁.comp measurable_norm).exp.aestronglyMeasurable
+    (Eventually.of_forall fun u ↦ by
+      rw [Real.norm_eq_abs, abs_of_pos (Real.exp_pos _)]
+      exact le_mul_of_one_le_right (Real.exp_pos _).le (by nlinarith [sq_nonneg (M₂ ‖u‖)]))
 
 /-- **The normalising constants are uniformly positive on bounded data sets.** For a
 finite-dimensional unknown, a prior probability measure `μ₀` and a potential `Φ(u; y)` that is
 continuous in `u`, bounded below by `-M₁(‖u‖)` and Lipschitz in `y` with constant `M₂(‖u‖)` on
-`‖y‖ ≤ r` (`M₂` nondecreasing), and with `exp(M₁(‖u‖))(1 + M₂(‖u‖)²)` integrable, there is
-`z > 0` with `z ≤ Z(y)` for all `‖y‖ ≤ r`. Since the hypotheses also make `exp(-Φ(·; y))`
+`‖y‖ ≤ r` (`M₂` nondecreasing), and with `exp(M₁(‖u‖))` integrable, there is `z > 0` with
+`z ≤ Z(y)` for all `‖y‖ ≤ r`. Since the hypotheses also make `exp(-Φ(·; y))`
 integrable, `isProbabilityMeasure_posterior` then shows that each posterior is a probability
 measure: Dashti and Stuart (arXiv:1302.6989v4), Theorem 4.3, with `X' = X` finite-dimensional. -/
 theorem exists_pos_le_normalizer {Y : Type*} [SeminormedAddCommGroup Y]
@@ -341,7 +350,7 @@ theorem exists_pos_le_normalizer {Y : Type*} [SeminormedAddCommGroup Y]
     (hr : 0 ≤ r) (hcont : ∀ y, Continuous fun u ↦ Φ u y) (hM₂ : Monotone M₂)
     (hlip : ∀ u y y', ‖y‖ ≤ r → ‖y'‖ ≤ r → |Φ u y - Φ u y'| ≤ M₂ ‖u‖ * ‖y - y'‖)
     (hlow : ∀ u y, ‖y‖ ≤ r → -M₁ ‖u‖ ≤ Φ u y)
-    (hint : Integrable (fun u ↦ Real.exp (M₁ ‖u‖) * (1 + M₂ ‖u‖ ^ 2)) μ₀) :
+    (hint : Integrable (fun u ↦ Real.exp (M₁ ‖u‖)) μ₀) :
     ∃ z > 0, ∀ y, ‖y‖ ≤ r → z ≤ normalizer μ₀ fun u ↦ Φ u y := by
   obtain ⟨R, hR, hKpos⟩ := exists_closedBall_pos μ₀
   set K := Metric.closedBall (0 : E) R
@@ -379,7 +388,8 @@ theorem hellingerDist_posterior_le_mul_dist {Y : Type*} [SeminormedAddCommGroup 
         C * ‖y - y'‖ := by
   rcases lt_or_ge r 0 with hr | hr
   · exact ⟨0, fun y _ hy _ ↦ absurd (hy.trans_lt hr) (not_lt.2 (norm_nonneg y))⟩
-  obtain ⟨z, hz, hZ⟩ := exists_pos_le_normalizer μ₀ Φ M₁ M₂ hr hcont hM₂ hlip hlow hint
+  obtain ⟨z, hz, hZ⟩ := exists_pos_le_normalizer μ₀ Φ M₁ M₂ hr hcont hM₂ hlip hlow
+    (integrable_exp_of_integrable_mul hM₁.measurable hint)
   set W := ∫ u, Real.exp (M₁ ‖u‖) * (1 + M₂ ‖u‖ ^ 2) ∂μ₀
   refine ⟨√(W / (4 * z) + W ^ 2 / (2 * z ^ 2)), fun y y' hy hy' ↦ ?_⟩
   have h := hellingerDist_posterior_le μ₀ (Φ₁ := fun u ↦ Φ u y) (Φ₂ := fun u ↦ Φ u y')
@@ -425,12 +435,14 @@ theorem hellingerDist_posterior_approx_le (μ₀ : Measure E) [IsProbabilityMeas
   have hB0 : 0 ≤ B := by positivity
   have hZ₁ : z ≤ normalizer μ₀ Φ := by
     refine le_trans ?_ (le_normalizer_of_le_on (T := S) Metric.isClosed_closedBall.measurableSet
-      (measure_ne_top _ _) (integrable_exp_neg hcont.measurable hlow hint)
+      (measure_ne_top _ _) (integrable_exp_neg hcont.measurable hlow
+        (integrable_exp_of_integrable_mul hM₁.measurable hint))
       fun u hu ↦ hS ⟨u, hu, rfl⟩)
     exact mul_le_mul_of_nonneg_right (Real.exp_le_exp.2 (by linarith)) measureReal_nonneg
   have hZ₂ : z ≤ normalizer μ₀ (Φₙ N) := by
     refine le_normalizer_of_le_on Metric.isClosed_closedBall.measurableSet (measure_ne_top _ _)
-      (integrable_exp_neg (hmeas N) (hlowN N) hint) fun u hu ↦ ?_
+      (integrable_exp_neg (hmeas N) (hlowN N)
+        (integrable_exp_of_integrable_mul hM₁.measurable hint)) fun u hu ↦ ?_
     have h1 : Φ u ≤ S := hS ⟨u, hu, rfl⟩
     have h2 : M₂ ‖u‖ * ψ N ≤ 1 := by
       calc M₂ ‖u‖ * ψ N ≤ |M₂ ‖u‖ * ψ N| := le_abs_self _

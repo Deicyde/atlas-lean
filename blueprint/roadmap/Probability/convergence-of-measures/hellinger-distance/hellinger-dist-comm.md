@@ -1,6 +1,6 @@
 # The Hellinger distance is symmetric
 
-For all measures $\mu$ and $\nu$, $d_{\mathrm{Hell}}(\mu, \nu) = d_{\mathrm{Hell}}(\nu, \mu)$: the reference
+For all finite measures $\mu$ and $\nu$ (indeed for all measures, as an identity of the definition), $d_{\mathrm{Hell}}(\mu, \nu) = d_{\mathrm{Hell}}(\nu, \mu)$: the reference
 measure $\mu + \nu$ is symmetric and so is the squared difference of square roots.
 
 ## Sources

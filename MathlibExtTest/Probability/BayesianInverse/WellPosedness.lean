@@ -55,19 +55,29 @@ example (r : ℝ) (hr : 0 ≤ r) : ∃ z > 0, ∀ y : ℝ, ‖y‖ ≤ r →
   rw [abs_le] at hy hy' hs ⊢
   constructor <;> linarith [hy.1, hy.2, hy'.1, hy'.2, hs.1, hs.2]
 
-/-- Non-degenerate instance of the approximation theorem: the potential is perturbed by
-`ψ(N) = 1/(N+1)`, with `M₁ = 0` and `M₂ = 1`. -/
+/-- Non-degenerate instance of the approximation theorem: the forward model `G = sin` is
+replaced by `Gᴺ = sin + 1/(N+1)`, which changes the posterior, with `M₁ = 0`, `M₂ = |y| + 2` and
+`ψ(N) = 1/(N+1)`. -/
 example (y : ℝ) : ∃ C, ∀ᶠ N : ℕ in atTop,
     hellingerDist (posterior (gaussianReal 0 1) fun u ↦ (y - Real.sin u) ^ 2 / 2)
-      (posterior (gaussianReal 0 1) fun u ↦ (y - Real.sin u) ^ 2 / 2 + 1 / ((N : ℝ) + 1)) ≤
+      (posterior (gaussianReal 0 1) fun u ↦ (y - Real.sin u - 1 / ((N : ℝ) + 1)) ^ 2 / 2) ≤
         C * |1 / ((N : ℝ) + 1)| := by
   refine hellingerDist_posterior_approx_le (gaussianReal 0 1)
-    (fun u ↦ (y - Real.sin u) ^ 2 / 2) (fun N u ↦ (y - Real.sin u) ^ 2 / 2 + 1 / ((N : ℝ) + 1))
-    (fun N ↦ 1 / ((N : ℝ) + 1)) (fun _ ↦ 0) (fun _ ↦ 1) (by fun_prop)
+    (fun u ↦ (y - Real.sin u) ^ 2 / 2) (fun N u ↦ (y - Real.sin u - 1 / ((N : ℝ) + 1)) ^ 2 / 2)
+    (fun N ↦ 1 / ((N : ℝ) + 1)) (fun _ ↦ 0) (fun _ ↦ |y| + 2) (by fun_prop)
     (fun N ↦ by fun_prop) monotone_const monotone_const
     (fun u ↦ by simp only [neg_zero]; positivity) (fun N u ↦ by simp only [neg_zero]; positivity)
     (fun N u ↦ ?_) tendsto_one_div_add_atTop_nhds_zero_nat (integrable_const _)
-  rw [show (y - Real.sin u) ^ 2 / 2 - ((y - Real.sin u) ^ 2 / 2 + 1 / ((N : ℝ) + 1)) =
-    -(1 / ((N : ℝ) + 1)) by ring, abs_neg, one_mul, abs_of_pos (by positivity)]
+  set ε : ℝ := 1 / ((N : ℝ) + 1) with hε
+  have hε0 : 0 < ε := by positivity
+  have hε1 : ε ≤ 1 := by
+    rw [hε, div_le_one (by positivity)]; linarith [(Nat.cast_nonneg N : (0 : ℝ) ≤ N)]
+  have hfac : (y - Real.sin u) ^ 2 / 2 - (y - Real.sin u - ε) ^ 2 / 2 =
+      ε * (y - Real.sin u - ε / 2) := by ring
+  rw [hfac, abs_mul, abs_of_pos hε0, mul_comm]
+  refine mul_le_mul_of_nonneg_right ?_ hε0.le
+  have hs := abs_le.1 (Real.abs_sin_le_one u)
+  rw [abs_le]
+  constructor <;> linarith [neg_abs_le y, le_abs_self y, hs.1, hs.2]
 
 end MathlibExtTest.Probability.BayesianInverse.WellPosedness

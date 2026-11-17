@@ -7,7 +7,8 @@ $$
 \Phi(u; y) \ge -M_1(\|u\|), \qquad |\Phi(u; y) - \Phi(u; y')| \le M_2(\|u\|) \, \|y - y'\|,
 $$
 
-with $M_2$ nondecreasing and $\exp(M_1(\|u\|))(1 + M_2(\|u\|)^2)$ integrable. Then there is $z > 0$ with
+with $M_2$ nondecreasing and $\exp(M_1(\|u\|))$ integrable under $\mu_0$ (Theorem 4.3's condition; the
+well-posedness theorem needs the stronger $\exp(M_1)(1 + M_2^2) \in L^1$). Then there is $z > 0$ with
 $z \le Z(y)$ for every $\|y\| \le r$. The hypotheses also make $\exp(-\Phi(\cdot\,; y))$ integrable, so
 each posterior is then a [probability measure](is-probability-measure-posterior.md).
 

@@ -1,6 +1,6 @@
 # The Hellinger distance from a measure to itself is zero
 
-For every measure $\mu$, $d_{\mathrm{Hell}}(\mu, \mu) = 0$.
+For every finite measure $\mu$ (indeed for every measure, as an identity of the definition), $d_{\mathrm{Hell}}(\mu, \mu) = 0$.
 
 ## Sources
 

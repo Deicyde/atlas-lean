@@ -17,14 +17,18 @@ public import MathlibExt.InformationTheory.MeasurePinsker
 /-!
 # The Hellinger distance between measures
 
-For measures `μ` and `ν` on the same space, the Hellinger distance is
+For finite measures `μ` and `ν` on the same space (in practice probability measures), the
+Hellinger distance is
 
 `d_Hell(μ, ν) = (½ ∫ (√(dμ/dζ) - √(dν/dζ))² dζ)^{1/2}`,
 
 where `ζ` is a measure dominating both. Here `ζ = μ + ν`, which makes the definition free of
 choices. The normalising constant `½` is the one of Dashti and Stuart, *The Bayesian Approach to
 Inverse Problems* (arXiv:1302.6989v4, 2015), Section 7.2.4, Definition 7.11; with it the distance
-between probability measures lies in `[0, 1]` (their remark after (7.21)).
+between probability measures lies in `[0, 1]` (their remark after (7.21)). The definition below
+accepts any measures, but it is meaningful only for finite ones: for infinite measures the integral
+can diverge, and Mathlib's convention that a non-integrable function has integral `0` then gives a
+meaningless value (Lebesgue measure and twice Lebesgue measure on `ℝ` are at "distance" `0`).
 
 ## Main results
 
@@ -56,10 +60,13 @@ open scoped ENNReal
 
 variable {Ω : Type*} [MeasurableSpace Ω]
 
-/-- **Hellinger distance.** For measures `μ` and `ν`, `d_Hell(μ, ν)` is the square root of
+/-- **Hellinger distance.** For finite measures `μ` and `ν` (in practice probability measures),
+`d_Hell(μ, ν)` is the square root of
 `½ ∫ (√(dμ/dζ) - √(dν/dζ))² dζ` with `ζ = μ + ν` (Dashti and Stuart, *The Bayesian Approach to
 Inverse Problems*, arXiv:1302.6989v4, Section 7.2.4, Definition 7.11, with reference measure
-`μ + ν`). -/
+`μ + ν`). The definition accepts any measures, but for infinite ones the integral may diverge
+and the value, which then follows Mathlib's convention for non-integrable functions, is not
+meaningful. -/
 noncomputable def hellingerDist (μ ν : Measure Ω) : ℝ :=
   √((1 / 2 : ℝ) * ∫ x, (√((μ.rnDeriv (μ + ν) x).toReal) - √((ν.rnDeriv (μ + ν) x).toReal)) ^ 2
     ∂(μ + ν))
@@ -93,7 +100,8 @@ private lemma mul_sqrt_sub_sq {h : ℝ} (a b : ℝ) (hh : 0 ≤ h) :
 `μ = ρ.withDensity f` and `ν = ρ.withDensity g`, with `ρ` σ-finite and `f`, `g` measurable and
 finite `ρ`-almost everywhere, then `d_Hell(μ, ν) = (½ ∫ (√f - √g)² dρ)^{1/2}`. This is
 Definition 7.11 of Dashti and Stuart (arXiv:1302.6989v4, Section 7.2.4) with reference measure
-`ρ`, and shows that the value does not depend on the dominating measure. -/
+`ρ`, and shows that the value does not depend on the dominating measure. The identity holds for
+every σ-finite `ρ`; it is meaningful when `μ` and `ν` are finite measures. -/
 theorem hellingerDist_withDensity {ρ : Measure Ω} [SigmaFinite ρ] {f g : Ω → ℝ≥0∞}
     (hf : Measurable f) (hg : Measurable g) (hf_top : ∀ᵐ x ∂ρ, f x ≠ ∞)
     (hg_top : ∀ᵐ x ∂ρ, g x ≠ ∞) :

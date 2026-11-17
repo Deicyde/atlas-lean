@@ -1,6 +1,6 @@
 # Hellinger distance
 
-The Hellinger distance $d_{\mathrm{Hell}}(\mu, \nu) = \big(\tfrac12 \int (\sqrt{d\mu/d\zeta} - \sqrt{d\nu/d\zeta})^2 \, d\zeta\big)^{1/2}$ between measures, computed against any measure $\zeta$ dominating both, with the normalisation of Dashti and Stuart that puts the distance between probability measures in $[0, 1]$. It is the metric in which Bayesian posteriors are shown to depend continuously on the data and on approximations of the forward model, because it controls differences of expectations of functions with second moments.
+The Hellinger distance $d_{\mathrm{Hell}}(\mu, \nu) = \big(\tfrac12 \int (\sqrt{d\mu/d\zeta} - \sqrt{d\nu/d\zeta})^2 \, d\zeta\big)^{1/2}$ between finite (in practice probability) measures, computed against any measure $\zeta$ dominating both, with the normalisation of Dashti and Stuart that puts the distance between probability measures in $[0, 1]$. It is the metric in which Bayesian posteriors are shown to depend continuously on the data and on approximations of the forward model, because it controls differences of expectations of functions with second moments.
 
 - [Hellinger distance](hellinger-dist.md)
 - [Hellinger distance through densities against any dominating measure](hellinger-dist-with-density.md)

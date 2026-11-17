@@ -10,7 +10,8 @@ $$
 where $\rho f$ denotes the measure with density $f$ with respect to $\rho$. So the distance can be
 computed against any common dominating measure, as in Dashti and Stuart's definition; taking
 $\rho = \mu$ gives their formula (7.21). In the Bayesian setting the natural reference measure is the
-prior, against which posteriors have explicit densities.
+prior, against which posteriors have explicit densities. The identity holds for every σ-finite
+$\rho$, but it is meaningful only when $\rho f$ and $\rho g$ are finite measures.
 
 The proof writes $f = (f + g)\, \tfrac{d\mu}{d\zeta}$ and $g = (f + g)\, \tfrac{d\nu}{d\zeta}$
 $\rho$-almost everywhere, for $\zeta = \mu + \nu = \rho (f + g)$.

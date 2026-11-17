@@ -8,7 +8,8 @@ $\mu \propto e^{-\Phi} \mu_0$.
 The proof is that of Dashti and Stuart: $e^{-\Phi(u)} a(u, v) = \min\{e^{-\Phi(u)}, e^{-\Phi(v)}\}$ is
 symmetric in $(u, v)$, and prior reversibility makes the joint law $\mu_0(du) Q(u, dv)$ symmetric; the
 rejection part is supported on the diagonal and is symmetric automatically. The formal statement
-needs neither positivity of the normalising constant nor any topology on the state space.
+needs neither positivity of the normalising constant nor any topology on the state space; when
+$Z = 0$ or $e^{-\Phi}$ is not integrable, the posterior is the zero measure and the statement is vacuous.
 
 ## Background
 
