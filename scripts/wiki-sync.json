@@ -2935,7 +2935,7 @@
 "Cslib.Algorithms.Lean.LinearProbing.insertionCost": "b88b6844f06c8ea1",
 "Cslib.Algorithms.Lean.LinearProbing.insertionCost_eq": "18da76aa55f0be18",
 "Cslib.Algorithms.Lean.LinearProbing.insertionCost_zero": "e56f777ff177e112",
-"Cslib.Algorithms.Lean.LinearProbing.knuthE": "f48d0fb7e8923e9e",
+"Cslib.Algorithms.Lean.LinearProbing.knuthE": "697247001d47b962",
 "Cslib.Algorithms.Lean.LinearProbing.mul_card_not_mem_occupancy": "ffd12d074bd0dfdd",
 "Cslib.Algorithms.Lean.LinearProbing.occupancy": "58c542a2baa32841",
 "Cslib.Algorithms.Lean.LinearProbing.occupancy_map_rotate": "3a67b7c7cb034f62",
