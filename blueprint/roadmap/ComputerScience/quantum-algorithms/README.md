@@ -4,6 +4,7 @@ Algorithms for quantum computers and their analysis: Fourier sampling with the D
 
 - [Deutsch–Jozsa and Bernstein–Vazirani algorithms](deutsch-jozsa-and-bernstein-vazirani-algorithms/README.md)
 - [Grover's algorithm](grover-s-algorithm/README.md)
+- [Lower bound for quantum search](lower-bound-for-quantum-search/README.md)
 - [Shor's order-finding algorithm](shor-s-order-finding-algorithm/README.md)
 - [Shor's reduction of factoring to order finding](shor-s-reduction-of-factoring-to-order-finding/README.md)
 
