@@ -16941,6 +16941,7 @@
 "MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnLines": "354d472cb5e99b25",
 "MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.cube": "70980dde89d7425d",
 "MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.theorem_1_1": "3507d30181e3b8aa",
+"MathlibExt.Analysis.FunctionSpaces.LiebThirringWanted.lieb_thirring_kinetic": "5bab2b492680905e",
 "MathlibExt.Analysis.FunctionalAnalysis.AgmonInequalitySchwartzLineWanted.exists_norm_toLp_top_le_mul_sqrt_norm_toLp_two_mul_sqrt_deriv": "e11112e13bd46e23",
 "MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedHardyInequalityWanted.B": "9854f852d01d436c",
 "MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedHardyInequalityWanted.Omega1": "0142947be2b412f8",

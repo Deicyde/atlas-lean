@@ -5015,6 +5015,7 @@
   "WantedExt/Analysis/Fourier/TorusLogarithmicRemainderWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Brezis–Gallouët inequality on the two-dimensional torus"},
   "WantedExt/Analysis/FourierConvergenceWanted": {"to": "Analysis/harmonic-analysis/fourier-series", "title": "Convergence of Fourier series"},
   "WantedExt/Analysis/FractalUncertaintyWanted": {"to": "Analysis/harmonic-analysis/fourier-transform", "title": "Fractal uncertainty principle"},
+  "WantedExt/Analysis/FunctionSpaces/LiebThirringWanted": {"to": "Analysis/function-spaces", "title": "Lieb–Thirring inequality"},
   "WantedExt/Analysis/FunctionalAnalysis/AgmonInequalitySchwartzLineWanted": {"to": "Analysis/function-spaces", "title": "Agmon's inequality"},
   "WantedExt/Analysis/FunctionalAnalysis/AnnulusWeightedHardyInequalityWanted": {"to": "Analysis/function-spaces", "title": "Weighted Hardy–Sobolev inequalities on an annulus"},
   "WantedExt/Analysis/FunctionalAnalysis/AnnulusWeightedSobolevCriticalWanted": {"to": "Analysis/function-spaces", "title": "Weighted Hardy–Sobolev inequalities on an annulus"},
