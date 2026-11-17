@@ -39,3 +39,7 @@
 - [Hedge algorithm](../hedge-algorithm/README.md): AdaBoost is Hedge run on the training points, with
   the step size chosen per round; Freund and Schapire derive its training-error bound from Hedge's
   weight-decay argument.
+- [Boosting and the minimax theorem](../boosting-and-the-minimax-theorem/README.md): why a weak learner
+  on every distribution makes the target a weighted majority vote, the object AdaBoost approximates.
+- [Rademacher complexity](../../generalization-bounds-and-concentration/rademacher-complexity/README.md):
+  the margin costs of voting classifiers, the generalization side of the training-margin bound here.

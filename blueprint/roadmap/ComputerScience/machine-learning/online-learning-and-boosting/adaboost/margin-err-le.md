@@ -10,6 +10,10 @@ For $\theta = 0$ this is [the training-error bound](train-err-le-prod-sqrt-of-ep
 
 - [Freund and Schapire's training-error bound with per-round errors](train-err-le-prod-sqrt-of-eps.md): Schapire, Freund, Bartlett and Lee obtain Theorem 5 by extending its proof, bounding the indicator by $\exp(-y F_T(x) + \theta \sum_t \alpha_t)$.
 
+## Background
+
+- [The complexity term of the margin bound for voting classifiers](../../generalization-bounds-and-concentration/rademacher-complexity/rademacher-complexity-ramp-costs-convex.md): the generalization side of the margins explanation.
+
 ## Sources
 
 - R. E. Schapire, Y. Freund, P. Bartlett and W. S. Lee, "Boosting the margin: a new explanation for the effectiveness of voting methods", *Ann. Statist.* 26 (1998), 1651–1686, Theorem 5, equation (11).

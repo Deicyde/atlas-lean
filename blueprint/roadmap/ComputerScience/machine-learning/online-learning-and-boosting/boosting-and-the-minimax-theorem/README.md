@@ -12,3 +12,4 @@ Freund and Schapire's game-theoretic account of boosting: weak learnability on e
 - [Von Neumann's minimax theorem](../../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): the theorem applied to the mistake matrix.
 - [Hedge algorithm](../hedge-algorithm/README.md): the multiplicative-weights method whose regret bound proves the minimax theorem and, run on the dual game, gives boosting.
 - [AdaBoost](../adaboost/README.md): the algorithm that approximates the weighting.
+- [Weak learnability](../../pac-learning/weak-learnability/README.md): the PAC notion of which this is the finite, distribution-by-distribution form.
