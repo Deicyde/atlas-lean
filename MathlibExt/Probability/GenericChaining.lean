@@ -51,6 +51,7 @@ As in the source, the index set is **finite**: Talagrand defines `E sup_{t ∈ T
   universal `L`, made explicit).
 * `integral_iSup_le_dudley`: Dudley's entropy bound, Proposition 2.5.1,
   `E sup_t X_t ≤ 17 ∑_n 2^{n/2} e_n(T)`, with `tsum_entropyNumber_lt_top` for its finiteness.
+* `two_rpow_mul_entropyNumber_le_gammaTwo`: `2^{n/2} e_n(T) ≤ γ₂(T, d)` (Exercise 2.7.8 (a)).
 * `diamWith_univ_le_gammaFunctional`: `Δ(T) ≤ γ_α(T, d)` (remark after Definition 2.7.3).
 * `gammaFunctional_lt_top`: `γ_α(T, d) < ∞` for finite `T` and a finite distance.
 
@@ -810,5 +811,42 @@ theorem tsum_entropyNumber_lt_top [MetricSpace T] [Finite T] :
     rw [hzero n (by simpa using hn), mul_zero]]
   refine ENNReal.sum_lt_top.mpr fun n _ => ENNReal.mul_lt_top ?_ (hfin n)
   exact (ENNReal.rpow_ne_top_of_ne_zero (by norm_num) (by norm_num)).lt_top
+
+/-- **Entropy numbers are controlled by `γ₂`** (Talagrand, *Upper and Lower Bounds for
+Stochastic Processes*, 2nd ed., 2021, Exercise 2.7.8 (a), (2.57)). For every distance function
+`d` and every `n`, `2^{n/2} e_n(T) ≤ γ₂(T, d)`: one point from each cell of `A_n` gives at most
+`N_n` centres within `Δ(A_n(t))` of every `t`. Here the constant is `1`. -/
+theorem two_rpow_mul_entropyNumber_le_gammaTwo (d : T → T → ℝ≥0∞) (n : ℕ) :
+    (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber d n ≤ gammaFunctional 2 d := by
+  classical
+  rcases isEmpty_or_nonempty T with hT | ⟨⟨t₀⟩⟩
+  · have : entropyNumber d n = 0 :=
+      le_antisymm ((iInf₂_le (∅ : Finset T) (by simp)).trans (by simp)) zero_le
+    simp [this]
+  refine le_iInf fun A => ?_
+  let f : Set T → T := fun C => if h : C.Nonempty then h.some else t₀
+  have hf : ∀ t, f (A.cell n t) ∈ A.cell n t := fun t => by
+    have h : (A.cell n t).Nonempty := ⟨t, A.mem_cell n t⟩
+    simp only [f, dite_eq_left h]; exact h.some_mem
+  have hfin : (Set.range (A.cell n)).Finite :=
+    Set.finite_of_encard_le_coe (A.encard_range_le n)
+  let F : Finset T := (hfin.image f).toFinset
+  have hFcard : F.card ≤ chainingCard n := by
+    have h1 : (F.card : ℕ∞) = (f '' Set.range (A.cell n)).encard := by
+      rw [← Set.encard_coe_eq_coe_finsetCard]; simp [F]
+    have h2 : (F.card : ℕ∞) ≤ chainingCard n :=
+      h1 ▸ (Set.encard_image_le f _).trans (A.encard_range_le n)
+    exact_mod_cast h2
+  have hmem : ∀ t, f (A.cell n t) ∈ F := fun t => by
+    simp only [F, Set.Finite.mem_toFinset]; exact ⟨A.cell n t, ⟨t, rfl⟩, rfl⟩
+  have he : entropyNumber d n ≤ ⨆ t, diamWith d (A.cell n t) := by
+    refine (iInf₂_le F hFcard).trans (iSup_mono fun t => ?_)
+    exact (iInf₂_le _ (hmem t)).trans (le_diamWith d (A.mem_cell n t) (hf t))
+  calc (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * entropyNumber d n
+      ≤ (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * ⨆ t, diamWith d (A.cell n t) := mul_le_mul_right he _
+    _ = ⨆ t, (2 : ℝ≥0∞) ^ ((n : ℝ) / 2) * diamWith d (A.cell n t) := ENNReal.mul_iSup _ _
+    _ ≤ ⨆ t, ∑' k : ℕ, (2 : ℝ≥0∞) ^ ((k : ℝ) / 2) * diamWith d (A.cell k t) :=
+        iSup_mono fun t => ENNReal.le_tsum
+          (f := fun k : ℕ => (2 : ℝ≥0∞) ^ ((k : ℝ) / 2) * diamWith d (A.cell k t)) n
 
 end MathlibExt.Probability.GenericChaining

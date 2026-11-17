@@ -27324,6 +27324,7 @@
 "MathlibExt.Probability.GenericChaining.lintegral_iSup_sub_le_of_chain": "1419b3d7f2afe20a",
 "MathlibExt.Probability.GenericChaining.ofReal_integral_iSup_le_of_chain": "bc0ce85638acc607",
 "MathlibExt.Probability.GenericChaining.tsum_entropyNumber_lt_top": "720da19aed239f08",
+"MathlibExt.Probability.GenericChaining.two_rpow_mul_entropyNumber_le_gammaTwo": "72dbaf46721ac8ec",
 "MathlibExt.Probability.GirsanovWanted.IsBrownianReal.hasLaw_sub_drift_withDensity": "cf05c310489d599b",
 "MathlibExt.Probability.HellingerDistance.hellingerDist": "0ceb4a4b704c6035",
 "MathlibExt.Probability.HellingerDistance.hellingerDist_comm": "d43c9421dad4ea2d",
