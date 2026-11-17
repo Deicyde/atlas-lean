@@ -50,4 +50,6 @@
 
 ## Related topics
 
+- [Low-density parity-check codes](../low-density-parity-check-codes/README.md): codes of sparse
+  regular parity-check matrices, whose rate is at least $1 - j/k$.
 - [CSS codes](../../../QuantumInformation/quantum-error-correction/css-codes/README.md): quantum error-correcting codes built from a pair of binary linear codes $C_2 \subseteq C_1$ and the dual code $C_2^{\perp}$.

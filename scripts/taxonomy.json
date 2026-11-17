@@ -1061,6 +1061,7 @@
   "CSLibExt/Coding/GuruswamiSudan": {"to": "InformationTheory/error-correcting-codes", "title": "List decoding"},
   "CSLibExt/Coding/Hamming74": {"to": "InformationTheory/error-correcting-codes", "title": "Hamming (7,4) code"},
   "CSLibExt/Coding/LinearCode": {"to": "InformationTheory/error-correcting-codes", "title": "Linear codes"},
+  "CSLibExt/Coding/LowDensityParityCheck": {"to": "InformationTheory/error-correcting-codes", "title": "Low-density parity-check codes"},
   "CSLibExt/Coding/ReedSolomon": {"to": "InformationTheory/error-correcting-codes", "title": "Reed–Solomon codes"},
   "CSLibExt/Combinatorics/RandomThreeSat": {"to": "Combinatorics/probabilistic-combinatorics", "title": "Random 3-SAT threshold"},
   "CSLibExt/Complexity/Algebraic/ArithmeticCircuit": {"to": "TheoryOfComputation/algebraic-complexity", "title": "Arithmetic circuits"},
