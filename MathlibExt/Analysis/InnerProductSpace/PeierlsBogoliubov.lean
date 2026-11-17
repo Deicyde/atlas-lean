@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.Analysis.InnerProductSpace.PeierlsKlein
 public import Mathlib.Analysis.MeanInequalities
+public import MathlibExt.LinearAlgebra.Matrix.HermitianTraceExp
 
 /-!
 # The Peierls–Bogoliubov inequality: convexity of `log tr e^T`
@@ -25,6 +26,9 @@ The proof here is the classical one from Peierls' inequality. In an orthonormal 
 Hölder's inequality with exponents `1/t` and `1/(1 - t)` gives
 `∑ exp λᵢ(C) ≤ (∑ exp aᵢ)^t (∑ exp bᵢ)^{1-t}`, and Peierls' inequality
 `∑ exp aᵢ ≤ Z(S)`, `∑ exp bᵢ ≤ Z(T)` finishes.
+
+`re_trace_exp_convex_comb_le` restates the inequality for Hermitian matrices with the matrix
+exponential: `re tr e^{t A + (1 - t) B} ≤ (re tr e^A)^t (re tr e^B)^{1-t}`.
 -/
 
 @[expose] public section
@@ -123,5 +127,48 @@ theorem log_sum_exp_eigenvalues_convex_comb_le {n : ℕ} (hn : Module.finrank �
   have := Real.log_le_log (hpos _) h
   rwa [Real.log_mul (Real.rpow_pos_of_pos (hpos _) _).ne' (Real.rpow_pos_of_pos (hpos _) _).ne',
     Real.log_rpow (hpos _), Real.log_rpow (hpos _)] at this
+
+section Matrix
+
+variable {m : Type*} [Fintype m] [DecidableEq m]
+
+/-- The real trace exponential of a Hermitian matrix is the exponential sum of the eigenvalues of
+the associated symmetric operator on Euclidean space. -/
+private lemma re_trace_exp_eq_sum_exp_eigenvalues {A : Matrix m m ℂ} (hA : A.IsHermitian) :
+    RCLike.re (NormedSpace.exp A).trace =
+      ∑ j, Real.exp ((Matrix.isSymmetric_toEuclideanLin_iff.mpr hA).eigenvalues
+        finrank_euclideanSpace j) := by
+  have h := hA.re_trace_exp_smul_eq_sum 1
+  simp only [one_smul, one_mul] at h
+  rw [h]
+  exact Fintype.sum_equiv (Fintype.equivOfCardEq (Fintype.card_fin _)).symm _ _ (fun _ => rfl)
+
+/-- **Peierls–Bogoliubov inequality for Hermitian matrices.** For Hermitian complex matrices `A`
+and `B` and `0 ≤ t ≤ 1`, `re tr e^{t A + (1 - t) B} ≤ (re tr e^A)^t (re tr e^B)^{1-t}`, with the
+matrix exponential; equivalently `A ↦ log tr e^A` is convex on Hermitian matrices (E. A. Carlen,
+*Trace inequalities and quantum entropy: an introductory course*, lecture-notes draft of May 3,
+2009, Theorem 2.12). -/
+theorem re_trace_exp_convex_comb_le {A B : Matrix m m ℂ} (hA : A.IsHermitian)
+    (hB : B.IsHermitian) {t : ℝ} (ht₀ : 0 ≤ t) (ht₁ : t ≤ 1) :
+    RCLike.re (NormedSpace.exp (t • A + (1 - t) • B)).trace ≤
+      RCLike.re (NormedSpace.exp A).trace ^ t * RCLike.re (NormedSpace.exp B).trace ^ (1 - t) := by
+  have hC : (t • A + (1 - t) • B).IsHermitian :=
+    ((IsSelfAdjoint.all t).smul hA).add ((IsSelfAdjoint.all (1 - t)).smul hB)
+  have hS := Matrix.isSymmetric_toEuclideanLin_iff.mpr hA
+  have hT := Matrix.isSymmetric_toEuclideanLin_iff.mpr hB
+  have hC' : ((t : ℂ) • Matrix.toEuclideanLin A +
+      ((1 - t : ℝ) : ℂ) • Matrix.toEuclideanLin B).IsSymmetric :=
+    (hS.smul (Complex.conj_ofReal t)).add (hT.smul (Complex.conj_ofReal _))
+  have heq : Matrix.toEuclideanLin (t • A + (1 - t) • B) =
+      (t : ℂ) • Matrix.toEuclideanLin A + ((1 - t : ℝ) : ℂ) • Matrix.toEuclideanLin B := by
+    rw [map_add, ← Complex.coe_smul, ← Complex.coe_smul, map_smul, map_smul]
+  have key := sum_exp_eigenvalues_convex_comb_le finrank_euclideanSpace hS hT ht₀ ht₁ hC'
+  have e := sum_eigenvalues_congr (E := EuclideanSpace ℂ m) finrank_euclideanSpace Real.exp
+    (Matrix.isSymmetric_toEuclideanLin_iff.mpr hC) hC' heq
+  rw [re_trace_exp_eq_sum_exp_eigenvalues hC, re_trace_exp_eq_sum_exp_eigenvalues hA,
+    re_trace_exp_eq_sum_exp_eigenvalues hB, e]
+  exact key
+
+end Matrix
 
 end MathlibExt.Analysis.InnerProductSpace.PeierlsBogoliubov

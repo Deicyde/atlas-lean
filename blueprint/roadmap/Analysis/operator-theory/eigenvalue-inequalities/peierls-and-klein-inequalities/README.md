@@ -11,6 +11,7 @@
 - [Klein's entropy inequality](klein-entropy.md)
 - [Peierls–Bogoliubov inequality](sum-exp-eigenvalues-convex-comb-le.md)
 - [Peierls–Bogoliubov inequality, logarithmic form](log-sum-exp-eigenvalues-convex-comb-le.md)
+- [Peierls–Bogoliubov inequality for Hermitian matrices](re-trace-exp-convex-comb-le.md)
 
 ## Related topics
 

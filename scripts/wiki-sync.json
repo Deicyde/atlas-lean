@@ -18062,6 +18062,7 @@
 "MathlibExt.Analysis.InnerProductSpace.OrthonormalWeakConvergence.tendsto_inner_atTop_zero": "15e3a84ad299b74f",
 "MathlibExt.Analysis.InnerProductSpace.OrthonormalWeakConvergence.tendsto_inner_cofinite_zero": "e720ff03e190bcdf",
 "MathlibExt.Analysis.InnerProductSpace.PeierlsBogoliubov.log_sum_exp_eigenvalues_convex_comb_le": "c336ac1d471f8287",
+"MathlibExt.Analysis.InnerProductSpace.PeierlsBogoliubov.re_trace_exp_convex_comb_le": "d10824a8176b1a68",
 "MathlibExt.Analysis.InnerProductSpace.PeierlsBogoliubov.sum_exp_eigenvalues_convex_comb_le": "11a1dca2e7578d18",
 "MathlibExt.Analysis.InnerProductSpace.PeierlsKlein.add_deriv_mul_sub_le_of_convexOn": "3507378e68b3f29b",
 "MathlibExt.Analysis.InnerProductSpace.PeierlsKlein.eigenvalues_nonneg_of_forall_nonneg_inner": "501f1aa799c593f3",

@@ -41,4 +41,13 @@ example {S T : EuclideanSpace ℂ (Fin 2) →ₗ[ℂ] EuclideanSpace ℂ (Fin 2)
         (∑ j, Real.exp (hT.eigenvalues finrank_euclideanSpace_fin j)) ^ (1 - 2⁻¹ : ℝ) :=
   sum_exp_eigenvalues_convex_comb_le _ hS hT (by norm_num) (by norm_num) hC
 
+/-- The matrix form, for the noncommuting Pauli matrices `σ_z` and `σ_x` at `t = 1/2`. -/
+example : RCLike.re (NormedSpace.exp ((2⁻¹ : ℝ) • (!![1, 0; 0, -1] : Matrix (Fin 2) (Fin 2) ℂ) +
+      (1 - 2⁻¹ : ℝ) • (!![0, 1; 1, 0] : Matrix (Fin 2) (Fin 2) ℂ))).trace ≤
+    RCLike.re (NormedSpace.exp (!![1, 0; 0, -1] : Matrix (Fin 2) (Fin 2) ℂ)).trace ^ (2⁻¹ : ℝ) *
+      RCLike.re (NormedSpace.exp (!![0, 1; 1, 0] : Matrix (Fin 2) (Fin 2) ℂ)).trace ^
+        (1 - 2⁻¹ : ℝ) := by
+  refine re_trace_exp_convex_comb_le ?_ ?_ (by norm_num) (by norm_num) <;>
+  · ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.conjTranspose_apply]
+
 end MathlibExtTest.Analysis.InnerProductSpace.PeierlsBogoliubov
