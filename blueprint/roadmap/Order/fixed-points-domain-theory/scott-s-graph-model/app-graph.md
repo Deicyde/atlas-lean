@@ -12,3 +12,7 @@ $$\operatorname{app}(\operatorname{graph}(f), x) = f(x) \quad \text{for all } x 
 
 - [Scott's graph theorem, part (ii)](subset-graph-app.md): the other half of the retraction.
 - [Soundness of a β-contraction in the graph model](../../../ComputerScience/programming-language-semantics/models-of-the-untyped-lambda-calculus/denote-eq-of-beta.md): this theorem applied to λ-terms.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

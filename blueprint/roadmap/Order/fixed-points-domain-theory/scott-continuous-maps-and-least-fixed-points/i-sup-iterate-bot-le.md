@@ -6,3 +6,7 @@ Let $D$ be a pointed directed-complete partial order and $f : D \to D$ a Scott-c
 
 - [Kleene's fixed-point theorem for pointed dcpos](map-i-sup-iterate-bot.md): the supremum of the iterates is a fixed point.
 - [The least fixed point lies below every prefixed point](lfp-le.md): the same statement for ω-continuous maps on ω-complete partial orders.
+
+## Sources
+
+- S. Abramsky and A. Jung, *Domain Theory*, in *Handbook of Logic in Computer Science*, vol. 3, Clarendon Press, Oxford, 1994. Read in the authors' corrected and expanded online version, which keeps the Handbook's numbering: <https://www.cs.ox.ac.uk/people/samson.abramsky/handbook.pdf>.

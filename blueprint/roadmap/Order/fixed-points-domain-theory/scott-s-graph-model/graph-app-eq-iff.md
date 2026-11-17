@@ -6,3 +6,7 @@ A set $u \subseteq \mathbb{N}$ is the graph of the function it determines, $\ope
 
 - [Scott's graph theorem, part (ii)](subset-graph-app.md): the inclusion that always holds.
 - [The graph model is not extensional](exists-graph-app-ne.md): a set for which the condition fails.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

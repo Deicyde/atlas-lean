@@ -8,3 +8,8 @@ Here Scott continuity is for directed sets, Mathlib's `ScottContinuous`. The sta
 
 - [Kleene's fixed point is the least prefixed point](i-sup-iterate-bot-le.md): the other half of Kleene's theorem.
 - [The least fixed point is a fixed point](lfp-eq.md): the same statement for ω-continuous maps on ω-complete partial orders.
+
+## Sources
+
+- D. Scott, *Continuous Lattices*, Technical Monograph PRG-7, Oxford University Computing Laboratory, August 1971, <http://www.cs.ox.ac.uk/files/3229/PRG07.pdf>. This is the pre-publication monograph version of the paper in *Toposes, Algebraic Geometry and Logic*, Lecture Notes in Mathematics 274 (1972), 97–136; theorem numbers here are those of PRG-7.
+- S. Abramsky and A. Jung, *Domain Theory*, in *Handbook of Logic in Computer Science*, vol. 3, Clarendon Press, Oxford, 1994. Read in the authors' corrected and expanded online version, which keeps the Handbook's numbering: <https://www.cs.ox.ac.uk/people/samson.abramsky/handbook.pdf>.

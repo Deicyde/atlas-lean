@@ -9,3 +9,7 @@ Equality holds exactly when $u$ is upward closed in its first coordinate (Theore
 - [Scott's graph theorem, part (i)](app-graph.md): the other half of the retraction.
 - [Scott's graph theorem, part (iii)](graph-app-eq-iff.md): when the inclusion is an equality.
 - [The graph model is not extensional](exists-graph-app-ne.md): the inclusion can be strict.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

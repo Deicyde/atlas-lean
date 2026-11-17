@@ -5,3 +5,7 @@ Let $\alpha$ and $\beta$ be complete lattices. If every member of a set $s$ of m
 ## Background
 
 - [The pointwise directed supremum of Scott-continuous maps is Scott-continuous](scott-continuous-s-sup-image-of-directed.md): the directed version, for dcpos.
+
+## Sources
+
+- D. Scott, *Continuous Lattices*, Technical Monograph PRG-7, Oxford University Computing Laboratory, August 1971, <http://www.cs.ox.ac.uk/files/3229/PRG07.pdf>. This is the pre-publication monograph version of the paper in *Toposes, Algebraic Geometry and Logic*, Lecture Notes in Mathematics 274 (1972), 97–136; theorem numbers here are those of PRG-7.

@@ -8,3 +8,7 @@ So the retraction of $P(\omega)$ onto the continuous functions is not a bijectio
 
 - [Scott's graph theorem, part (ii)](subset-graph-app.md): the inclusion that is strict here.
 - [The η-rule is not sound in the graph model](../../../ComputerScience/programming-language-semantics/models-of-the-untyped-lambda-calculus/exists-denote-eta-ne.md): the same fact for λ-terms.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

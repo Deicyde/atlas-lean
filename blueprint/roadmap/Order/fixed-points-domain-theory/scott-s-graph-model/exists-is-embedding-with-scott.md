@@ -14,3 +14,7 @@ With Scott's extension theorem (Theorem 1.5), this is why $P(\omega)$ is a unive
 ## Background
 
 - [Scott's extension theorem](exists-continuous-extend-with-scott.md): the companion theorem; together they make $P(\omega)$ universal.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

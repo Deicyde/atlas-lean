@@ -11,3 +11,7 @@ One step of full β-reduction, contracting a redex anywhere in a term, including
 
 - [Soundness of a β-contraction in the graph model](denote-eq-of-beta.md): the base case.
 - [The η-rule is not sound in the graph model](exists-denote-eta-ne.md): η is not among the valid rules.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

@@ -15,3 +15,7 @@ Scott's proof shows by β-conversion that $\operatorname{app}(d, d)$ is a fixed 
 
 - [Kleene's fixed-point theorem for pointed dcpos](../scott-continuous-maps-and-least-fixed-points/map-i-sup-iterate-bot.md): the least fixed point as the union of the iterates. Scott remarks that his proof does not use the fixed-point theorem itself.
 - [Scott's first recursion theorem](../../../ComputerScience/programming-language-semantics/models-of-the-untyped-lambda-calculus/app-denote-y.md): the same theorem for the λ-term $Y$.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

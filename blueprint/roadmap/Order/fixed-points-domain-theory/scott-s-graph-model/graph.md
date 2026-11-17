@@ -10,3 +10,7 @@ Scott uses the Cantor pairing $\langle n, m\rangle = \tfrac12 (n+m)(n+m+1) + m$;
 
 - [The `n`-th finite set of the graph model](fin-set.md): the finite sets $e_n$ at which $f$ is sampled.
 - [Application in the graph model](app.md): the operation that reads a function back from its graph.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

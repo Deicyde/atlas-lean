@@ -7,3 +7,7 @@ For every term $M$ and valuation $\rho$ of its free variables, the denotation $b
 - [Application in `P(ω)` is jointly Scott-continuous](../../../Order/fixed-points-domain-theory/scott-s-graph-model/scott-continuous-app.md): the application case.
 - [The graph of a pointwise union](../../../Order/fixed-points-domain-theory/scott-s-graph-model/graph-s-sup.md): the abstraction case, the counterpart of the lemma in Scott's proof that λ-abstraction preserves continuity.
 - [Denotations are Scott-continuous in the free variables](scott-continuous-denote-fvar.md): the same theorem for the free variables.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

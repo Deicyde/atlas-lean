@@ -7,3 +7,7 @@ Scott's proof of the first recursion theorem uses this property of the enumerati
 ## Background
 
 - [The `n`-th finite set of the graph model](fin-set.md): the enumeration whose property this is.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

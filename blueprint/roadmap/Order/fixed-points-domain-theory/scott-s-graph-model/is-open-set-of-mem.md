@@ -5,3 +5,7 @@ For every $n \in \mathbb{N}$, the set $\{y \subseteq \mathbb{N} \mid n \in y\}$ 
 ## Background
 
 - [Scott-open sets of `P(ω)` have finite character](exists-finset-mem-of-is-open.md): the converse description of the open sets.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

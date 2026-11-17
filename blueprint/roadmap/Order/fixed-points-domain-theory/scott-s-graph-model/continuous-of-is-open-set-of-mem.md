@@ -5,3 +5,7 @@ A map $g : Z \to P(\omega)$ from a topological space to $P(\omega)$ with its Sco
 ## Background
 
 - [Scott-open sets of `P(ω)` have finite character](exists-finset-mem-of-is-open.md): the description of the open sets.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

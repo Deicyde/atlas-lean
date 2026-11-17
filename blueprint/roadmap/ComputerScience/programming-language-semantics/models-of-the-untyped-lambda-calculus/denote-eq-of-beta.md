@@ -10,3 +10,7 @@ If $(\lambda.M)\,N$ contracts to $M[N]$ (CSLib's β-step, with $\lambda.M$ and $
 ## Background
 
 - [Substitution lemma for opening](denote-open-rec.md): the semantics of $M[N]$.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

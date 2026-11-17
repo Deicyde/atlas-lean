@@ -5,3 +5,7 @@ For every $x \subseteq \mathbb{N}$, the map $u \mapsto \operatorname{app}(u, x)$
 ## Background
 
 - [Application in the graph model](app.md): the definition.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

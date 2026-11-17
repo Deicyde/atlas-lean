@@ -5,3 +5,7 @@ The closed term $Y = \lambda u.(\lambda x.\,u(x\,x))(\lambda x.\,u(x\,x))$, writ
 ## Background
 
 - [Scott's first recursion theorem](app-denote-y.md): what $Y$ denotes.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

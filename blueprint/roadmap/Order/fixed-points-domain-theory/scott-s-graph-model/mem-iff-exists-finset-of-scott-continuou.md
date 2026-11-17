@@ -9,3 +9,7 @@ Scott's Theorem 1.1 (D. Scott, *Data types as lattices*, SIAM J. Comput. 5(3) (1
 ## Background
 
 - [Scott's graph theorem, part (i)](app-graph.md): the main consequence, that $f$ is recovered from its graph.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

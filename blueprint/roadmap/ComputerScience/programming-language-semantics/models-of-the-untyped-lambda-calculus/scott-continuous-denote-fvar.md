@@ -6,3 +6,7 @@ For every term $M$ and valuation $bs$ of its bound variables, the denotation $\r
 
 - [Scott's continuity theorem for the graph model](scott-continuous-denote.md): continuity in the bound variables, used for the soundness of β.
 - [Application in `P(ω)` is jointly Scott-continuous](../../../Order/fixed-points-domain-theory/scott-s-graph-model/scott-continuous-app.md): the application case.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

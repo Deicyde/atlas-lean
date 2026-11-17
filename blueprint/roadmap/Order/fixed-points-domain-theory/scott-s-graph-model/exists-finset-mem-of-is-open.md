@@ -5,3 +5,7 @@ If $V$ is a Scott-open set of subsets of $\mathbb{N}$ and $y \in V$, then some f
 ## Background
 
 - [The sets of naturals containing `n` are Scott-open](is-open-set-of-mem.md): the subbasic open sets.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.

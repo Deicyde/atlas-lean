@@ -21,3 +21,8 @@ With application and abstraction transported along the isomorphism, $D_\infty$ i
 - [Arbitrary pointwise suprema of Scott-continuous maps between complete lattices](scott-continuous-maps-and-least-fixed-points/scott-continuous-s-sup.md): $[D \to D]$ is again a complete lattice, so the iteration $D_{n+1} = [D_n \to D_n]$ stays among complete lattices.
 - [Scott's graph model](scott-s-graph-model/README.md): a simpler model, where $[P(\omega) \to P(\omega)]$ is only a retract of $P(\omega)$ and η fails.
 - [Models of the untyped lambda calculus](../../ComputerScience/programming-language-semantics/models-of-the-untyped-lambda-calculus/README.md): the λ-calculus side.
+
+## Sources
+
+- D. Scott, *Continuous Lattices*, Technical Monograph PRG-7, Oxford University Computing Laboratory, August 1971, <http://www.cs.ox.ac.uk/files/3229/PRG07.pdf>. This is the pre-publication monograph version of the paper in *Toposes, Algebraic Geometry and Logic*, Lecture Notes in Mathematics 274 (1972), 97–136; theorem numbers here are those of PRG-7.
+- S. Abramsky and A. Jung, *Domain Theory*, in *Handbook of Logic in Computer Science*, vol. 3, Clarendon Press, Oxford, 1994. Read in the authors' corrected and expanded online version, which keeps the Handbook's numbering: <https://www.cs.ox.ac.uk/people/samson.abramsky/handbook.pdf>.

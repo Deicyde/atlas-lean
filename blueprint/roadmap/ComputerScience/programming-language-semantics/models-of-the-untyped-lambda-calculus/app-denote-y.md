@@ -6,3 +6,7 @@ In the graph model, the paradoxical combinator $Y$ applied to any $u \subseteq \
 
 - [Scott's first recursion theorem in `P(ω)`](../../../Order/fixed-points-domain-theory/scott-s-graph-model/app-graph-diag.md): the set-level statement, to which this reduces by unfolding the denotation of $Y$.
 - [The paradoxical combinator `Y`](y.md): the term.
+
+## Sources
+
+- D. Scott, *Data types as lattices*, SIAM Journal on Computing 5(3) (1976), 522–587, doi:10.1137/0205037.
