@@ -4,8 +4,9 @@ For isomorphic graphs, the transcripts of the [graph-isomorphism protocol](sigma
 verifier (uniform challenge) have exactly the distribution of the simulator that draws a uniform
 challenge $\alpha$ and a uniform permutation $\sigma$ and outputs $(\sigma(G_\alpha), \alpha, \sigma)$.
 This is perfect zero knowledge with respect to the honest verifier only; Goldreich, Micali and
-Wigderson's Theorem 2 proves perfect zero knowledge against every expected polynomial-time verifier,
-which is not formalized here.
+Wigderson's Theorem 2 proves perfect zero knowledge against every expected polynomial-time verifier.
+A truncated, one-round form of that statement is
+[statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier](abs-win-prob-simulator-k-sub-le-half-pow.md).
 
 ## Informally uses
 

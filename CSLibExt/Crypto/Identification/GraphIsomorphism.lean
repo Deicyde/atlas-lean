@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import CSLibExt.Crypto.Identification.RewindingSimulator
 public import CSLibExt.Crypto.Identification.SequentialRepetition
 public import Mathlib.Combinatorics.SimpleGraph.Maps
 
@@ -38,10 +39,21 @@ One round is a three-move public-coin protocol with challenge set `Bool`, so it 
   `(σ G_α, σ)` for a uniform permutation `σ`, which the simulator `GraphIso.simAt` samples from the
   graphs alone.
 
-**Scope.** This is the honest-verifier part of GMW Theorem 2. Zero knowledge against an arbitrary
-(cheating) verifier, which GMW prove with a rewinding simulator that guesses the challenge, is
-not formalized here, and neither is the completeness of the `m`-round protocol (it follows round
-by round from `GraphIso.sigma_complete`).
+* `GraphIso.winProb_attemptDist_half` and `GraphIso.abs_winProb_simulatorK_sub_le_half_pow`
+  (**zero knowledge against an arbitrary verifier, one round**): instances of the generic rewinding
+  simulator of `CSLibExt.Crypto.Identification.RewindingSimulator`. For any verifier whose
+  challenge is any function of the prover's graph and of its coins, one attempt (guess the
+  challenge, simulate, keep the attempt if the guess was right) succeeds with probability exactly
+  `1/2` and then reproduces the real view exactly; `k` attempts give statistical distance at most
+  `2^{-k}`.
+
+**Scope.** GMW's simulator repeats attempts until one succeeds and is perfect in expected
+polynomial time; here it is truncated after `k` attempts, which gives statistical rather than
+perfect zero knowledge. Only one round is simulated, against verifiers modelled as functions of
+the graph `H` and of their coins; the composition over `m` rounds (with a verifier whose challenges
+depend on the earlier rounds) and the completeness of the `m`-round protocol (round by round from
+`GraphIso.sigma_complete`) are not formalized.
+
 Graphs are Mathlib's `SimpleGraph V`, relabelled by `SimpleGraph.map`; the statement `x` is the
 pair `(G₀, G₁)` and the witness is a permutation `φ` of `V` with `G₀.map φ = G₁`
 (`GraphIso.exists_rel_iff_nonempty_iso`: such a `φ` exists exactly when `G₀ ≃g G₁`).
@@ -227,6 +239,43 @@ theorem sigma_hvzk :
   sigma_specialHVZK.hvzk
 
 end Finite
+
+
+/-! ### Zero knowledge against an arbitrary verifier -/
+
+section CheatingVerifier
+
+variable [Fintype V] [DecidableEq V] {R : Type*} [Fintype R] [Nonempty R]
+
+/-- **One rewinding attempt for the graph-isomorphism protocol** (Goldreich, Micali and Wigderson,
+J. ACM 1991, proof of Theorem 2, exact form): for isomorphic graphs with witness `φ`, every
+verifier `Vstar` (its challenge any function of the prover's graph `H` and of its coins) and every
+test `T` of its view, one attempt of the simulator (guess `α'`, send `G_{α'}.map σ`, keep the
+attempt if the verifier asks `α'`) succeeds and passes `T` with probability exactly half the
+probability that the real view passes `T`. -/
+theorem winProb_attemptDist_half {G₀ G₁ : SimpleGraph V} {φ : Equiv.Perm V}
+    (hφ : G₀.map φ = G₁) (Vstar : SimpleGraph V → R → Bool)
+    (T : R × SimpleGraph V × Equiv.Perm V → Bool) :
+    winProb ((SigmaProtocol.attemptDist simAt (G₀, G₁) Vstar).map fun p => p.1 && T p.2) =
+      winProb ((sigma.realViewDist (G₀, G₁) φ Vstar).map T) / 2 := by
+  have := sigma.winProb_attemptDist sigma_specialHVZK (x := (G₀, G₁)) hφ Vstar T
+  simpa using this
+
+/-- **Statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier,
+one round** (Goldreich, Micali and Wigderson, J. ACM 1991, Theorem 2, truncated form): for
+isomorphic graphs, every verifier and every test `T` of its view, the rewinding simulator with `k`
+attempts (which never sees the witness) and the real interaction pass `T` with probabilities that
+differ by at most `1 / 2 ^ k`. -/
+theorem abs_winProb_simulatorK_sub_le_half_pow {G₀ G₁ : SimpleGraph V} {φ : Equiv.Perm V}
+    (hφ : G₀.map φ = G₁) (Vstar : SimpleGraph V → R → Bool)
+    (T : R × SimpleGraph V × Equiv.Perm V → Bool) (k : ℕ) :
+    |winProb ((SigmaProtocol.simulatorK simAt (G₀, G₁) Vstar k).map fun o => o.elim false T) -
+        winProb ((sigma.realViewDist (G₀, G₁) φ Vstar).map T)| ≤ 1 / 2 ^ k := by
+  have := sigma.abs_winProb_simulatorK_sub_le sigma_specialHVZK (x := (G₀, G₁)) hφ Vstar T k
+  norm_num at this ⊢
+  simpa [inv_pow] using this
+
+end CheatingVerifier
 
 end GraphIso
 

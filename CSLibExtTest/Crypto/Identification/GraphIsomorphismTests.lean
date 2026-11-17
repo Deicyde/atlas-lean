@@ -16,6 +16,9 @@ public import CSLibExt.Crypto.Identification.GraphIsomorphism
 * **A true statement.** On `Fin 3`, the path `G₀` with edges `0 – 1`, `1 – 2` and its image `G₁`
   under the transposition `φ = (0 1)`; `φ` is a witness. Every honest transcript is accepted, and
   the honest pair for each challenge is distributed as the simulator's.
+* **A cheating verifier.** The verifier that asks `α = 1` exactly when the prover's graph contains
+  the edge `0 – 2` (using no coins) is simulated: one attempt succeeds and matches the real view
+  up to the factor `1/2`, and the truncated simulator is within `2^{-k}` of the real view.
 * **A false statement.** On `Fin 2`, the empty graph and the complete graph are not isomorphic,
   so every cheating prover passes one round with probability at most `1/2`, and `m` rounds with
   probability at most `1 / 2 ^ m`.
@@ -48,6 +51,29 @@ example (π : Equiv.Perm (Fin 3)) (α : Bool) :
 /-- The honest pair for challenge `false` is distributed as the simulator's. -/
 example : sigma.challengeTranscript (G₀, G₁) φ false = simAt (G₀, G₁) false :=
   sigma_specialHVZK _ _ rel false
+
+open Classical in
+/-- A verifier whose challenge depends on the prover's graph. -/
+noncomputable def edgeVerifier : SimpleGraph (Fin 3) → Unit → Bool :=
+  fun H _ => decide (H.Adj 0 2)
+
+example (T : Unit × SimpleGraph (Fin 3) × Equiv.Perm (Fin 3) → Bool) :
+    winProb ((SigmaProtocol.attemptDist simAt (G₀, G₁) edgeVerifier).map fun p => p.1 && T p.2) =
+      winProb ((sigma.realViewDist (G₀, G₁) φ edgeVerifier).map T) / 2 :=
+  winProb_attemptDist_half rfl edgeVerifier T
+
+example (T : Unit × SimpleGraph (Fin 3) × Equiv.Perm (Fin 3) → Bool) (k : ℕ) :
+    |winProb ((SigmaProtocol.simulatorK simAt (G₀, G₁) edgeVerifier k).map
+        fun o => o.elim false T) -
+      winProb ((sigma.realViewDist (G₀, G₁) φ edgeVerifier).map T)| ≤ 1 / 2 ^ k :=
+  abs_winProb_simulatorK_sub_le_half_pow rfl edgeVerifier T k
+
+/-- With zero attempts the simulator always fails. -/
+example (T : Unit × SimpleGraph (Fin 3) × Equiv.Perm (Fin 3) → Bool) :
+    winProb ((SigmaProtocol.simulatorK simAt (G₀, G₁) edgeVerifier 0).map
+      fun o => o.elim false T) = 0 := by
+  rw [SigmaProtocol.simulatorK, PMF.pure_map]
+  simp
 
 /-- The empty and the complete graph on two vertices are not isomorphic. -/
 theorem not_iso : IsEmpty ((⊥ : SimpleGraph (Fin 2)) ≃g (⊤ : SimpleGraph (Fin 2))) := by

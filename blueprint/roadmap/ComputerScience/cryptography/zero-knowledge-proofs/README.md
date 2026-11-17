@@ -11,9 +11,13 @@ sends a random relabelling $H$ of $G_1$, the verifier asks for an isomorphism fr
 to $H$, and the prover answers. Here one round is formalized as a Sigma protocol (a three-move
 public-coin protocol with a uniform challenge; the framework below was already in the library), with completeness, special soundness, soundness error
 $\tfrac12$ per round and $2^{-m}$ over $m$ sequential rounds against adaptive cheating provers, and
-perfect honest-verifier zero knowledge. Zero knowledge against arbitrary (cheating) verifiers, which
-needs a rewinding simulator and a model of interactive machines, is not formalized; neither are the
-general definitions of interactive proofs and zero knowledge as classes of languages (the
+perfect honest-verifier zero knowledge. For every Sigma protocol with a perfect special
+honest-verifier simulator, the rewinding simulator of Goldwasser, Micali and Rackoff handles an
+arbitrary (cheating) verifier in one round: each attempt succeeds with probability exactly
+$1/\lvert \mathrm{Ch} \rvert$ and a successful attempt reproduces the real view exactly, so $k$
+attempts give statistical zero knowledge with error $(1 - 1/\lvert \mathrm{Ch} \rvert)^k$, that is
+$2^{-k}$ for the graph-isomorphism protocol. Not formalized: the composition over $m$ rounds, perfect
+simulation in expected polynomial time, and the general definitions of interactive proofs and zero knowledge as classes of languages (the
 interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below).
 
 ## Sigma protocols
@@ -35,6 +39,15 @@ interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below
 - [Simulated transcripts are accepted](verify-of-mem-support-sim.md)
 - [The experiment of a cheating prover](cheat-game.md)
 - [Soundness error for false statements](win-prob-cheat-game-le.md)
+
+## Simulating an arbitrary verifier by rewinding
+
+- [The view of an arbitrary verifier in one round](real-view-dist.md)
+- [One rewinding attempt](attempt-dist.md)
+- [One rewinding attempt simulates the real view](win-prob-attempt-dist.md)
+- [The rewinding simulator truncated after `k` attempts](simulator-k.md)
+- [The truncated rewinding simulator reproduces the real view](win-prob-simulator-k.md)
+- [Statistical zero knowledge against an arbitrary verifier, one round](abs-win-prob-simulator-k-sub-le.md)
 
 ## Sequential repetition of Sigma protocols
 
@@ -60,6 +73,8 @@ interactive-proof class used for $\mathsf{IP} = \mathsf{PSPACE}$ is linked below
 - [The per-challenge simulator](sim-at.md)
 - [Perfect special honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-special-hvzk.md)
 - [Perfect honest-verifier zero knowledge of the graph-isomorphism protocol](sigma-hvzk.md)
+- [One rewinding attempt for the graph-isomorphism protocol](win-prob-attempt-dist-half.md)
+- [Statistical zero knowledge of the graph-isomorphism protocol against an arbitrary verifier, one round](abs-win-prob-simulator-k-sub-le-half-pow.md)
 
 ## Schnorr identification as a Sigma protocol
 
