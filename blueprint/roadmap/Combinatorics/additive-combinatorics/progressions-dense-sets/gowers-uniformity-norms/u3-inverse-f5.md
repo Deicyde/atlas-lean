@@ -6,13 +6,10 @@ This is the "in particular" form of Theorem 2.3(i) of Green and Tao, whose concl
 
 For $U^2$ the corresponding statement needs only characters ([$U^2$ inverse theorem](exists-character-correlation-of-le-gower.md)); for $U^3$ quadratic phases are necessary, because $\|e(q)\|_{U^3} = 1$ for every quadratic $q$ while $e(q)$ need not correlate with any character. Over $\mathbb{Z}_N$ even global quadratic phases do not suffice (Green and Tao, Example 2.4), which is why their Theorem 2.7 uses Bohr sets.
 
-## Informally uses
-
-- [Balog–Szemerédi–Gowers theorem](../../sumsets-inverse-theorems/freiman-and-balog-szemer-di-gowers-theorems/balog-szemeredi-gowers.md): Green and Tao use it in the form of their Theorem 5.2 (stated for arbitrary additive groups, with different constants).
-
 ## Background
 
 - [Gowers's bound for Szemerédi's theorem](szemeredi-gowers-bound.md): Gowers's proof rests on a weaker inverse theorem for every $U^k$, obtained with the same tools.
+- [Balog–Szemerédi–Gowers theorem](../../sumsets-inverse-theorems/freiman-and-balog-szemer-di-gowers-theorems/balog-szemeredi-gowers.md): background rather than a prerequisite, since the entry is Gowers's version for $\mathbb{Z}^n$, while Green and Tao use the version of their Theorem 5.2 (stated for arbitrary additive groups, with different constants).
 
 ## Sources
 
