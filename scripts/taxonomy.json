@@ -1525,6 +1525,7 @@
   "CSLibExt/MachineLearning/Bayesian/DirichletMultinomial": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Conjugate priors"},
   "CSLibExt/MachineLearning/Bayesian/LinearRegression": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Bayesian linear regression"},
   "CSLibExt/MachineLearning/Bayesian/NormalNormal": {"to": "ComputerScience/machine-learning/bayesian-inference-and-sampling", "title": "Conjugate priors"},
+  "CSLibExt/MachineLearning/BoostingMinimax": {"to": "ComputerScience/machine-learning/online-learning-and-boosting", "title": "Boosting and the minimax theorem"},
   "CSLibExt/MachineLearning/Classification/LogisticSVM": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Logistic regression and support vector machines"},
   "CSLibExt/MachineLearning/ClassificationCalibration": {"to": "ComputerScience/machine-learning/supervised-learning", "title": "Classification-calibrated losses"},
   "CSLibExt/MachineLearning/Factorization/NMF": {"to": "ComputerScience/machine-learning/unsupervised-learning", "title": "Non-negative matrix factorization"},
