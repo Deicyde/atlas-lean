@@ -4,7 +4,7 @@ Under the hypotheses of [the previous theorem](exists-forall-mistake-le.md) with
 
 $$\sum_j P_j\, \mathbf{1}[h_j(x) = c(x)] \ge \tfrac12 + \gamma \qquad\text{and}\qquad \operatorname{vote}_P(x) = c(x),$$
 
-where $\operatorname{vote}_P$ is the [weighted majority vote](weighted-vote.md). In $\pm 1$ notation every instance has margin at least $2\gamma$ under $P$, and in Freund and Schapire's words the weights are a minmax strategy of the mistake game, not just any weights. This is the representation that AdaBoost approximates.
+where $\operatorname{vote}_P$ is the [weighted majority vote](weighted-vote.md). In $\pm 1$ notation every instance has margin at least $2\gamma$ under $P$. This is the representation that AdaBoost approximates.
 
 ## Sources
 

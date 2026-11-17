@@ -14,4 +14,4 @@ In a margin bound of the form "true error $\le$ empirical ramp cost $+$ $2\,\mat
 
 ## Sources
 
-- P. L. Bartlett and S. Mendelson, "Rademacher and Gaussian complexities: risk bounds and structural results", *J. Mach. Learn. Res.* 3 (2002), 463–482, <https://jmlr.csail.mit.edu/papers/volume3/bartlett02a/bartlett02a.pdf>, Theorem 7, with $L = 1/\theta$.
+- P. L. Bartlett and S. Mendelson, "Rademacher and Gaussian complexities: risk bounds and structural results", *J. Mach. Learn. Res.* 3 (2002), 463–482, <https://jmlr.csail.mit.edu/papers/volume3/bartlett02a/bartlett02a.pdf>, Theorem 12, parts 2 and 4 (in this library's convention, as in [the general bound](rademacher-complexity-margin-costs-conve.md)); the bounded quantity is the complexity term of their Theorem 7 with $L = 1/\theta$.

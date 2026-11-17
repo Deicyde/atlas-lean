@@ -50,12 +50,14 @@ variable {n k : ℕ}
 def mistakeMatrix (H : Fin k → Fin n → Bool) (c : Fin n → Bool) : Matrix (Fin n) (Fin k) ℝ :=
   fun x j => if H j x = c x then 0 else 1
 
-theorem dotProduct_mulVec_single (A : Matrix (Fin n) (Fin k) ℝ) (p : Fin n → ℝ) (j : Fin k) :
+private theorem dotProduct_mulVec_single (A : Matrix (Fin n) (Fin k) ℝ) (p : Fin n → ℝ)
+    (j : Fin k) :
     p ⬝ᵥ (A *ᵥ ((StdSimplex.single j : StdSimplex ℝ (Fin k)).weights : Fin k → ℝ)) =
       ∑ x, p x * A x j := by
   simp [dotProduct, mulVec, Finsupp.single_apply]
 
-theorem single_dotProduct_mulVec (A : Matrix (Fin n) (Fin k) ℝ) (q : Fin k → ℝ) (x : Fin n) :
+private theorem single_dotProduct_mulVec (A : Matrix (Fin n) (Fin k) ℝ) (q : Fin k → ℝ)
+    (x : Fin n) :
     ((StdSimplex.single x : StdSimplex ℝ (Fin n)).weights : Fin n → ℝ) ⬝ᵥ (A *ᵥ q) =
       ∑ j, A x j * q j := by
   simp [dotProduct, mulVec, Finsupp.single_apply]

@@ -13,5 +13,5 @@ A voting classifier $f = \sum_h a_h h$ with $a_h \ge 0$ and $\sum_h a_h = 1$ has
 
 ## Sources
 
-- P. L. Bartlett and S. Mendelson, "Rademacher and Gaussian complexities: risk bounds and structural results", *J. Mach. Learn. Res.* 3 (2002), 463–482, <https://jmlr.csail.mit.edu/papers/volume3/bartlett02a/bartlett02a.pdf>, Theorem 7 (whose complexity term $2 L R_n(F)$ this bounds for $F$ a convex hull, in this library's convention).
+- P. L. Bartlett and S. Mendelson, "Rademacher and Gaussian complexities: risk bounds and structural results", *J. Mach. Learn. Res.* 3 (2002), 463–482, <https://jmlr.csail.mit.edu/papers/volume3/bartlett02a/bartlett02a.pdf>, Theorem 12, parts 2 (convex hulls) and 4 (Lipschitz composition), of which the two ingredients are this library's analogues; the result bounds the complexity term $2 L R_n(F)$ of their Theorem 7 when $F$ is a convex hull.
 - R. E. Schapire, Y. Freund, P. Bartlett and W. S. Lee, "Boosting the margin: a new explanation for the effectiveness of voting methods", *Ann. Statist.* 26 (1998), 1651–1686, Section 2 (the convex hull $\mathcal{C}$ of the base classifiers and the margin $y f(x)$).

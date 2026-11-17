@@ -307,12 +307,13 @@ points, with labels read as `±1`. -/
 noncomputable def expLoss (y : Fin m → Bool) (F : Fin m → ℝ) : ℝ :=
   (∑ i, exp (-(sign (y i) * F i))) / m
 
-theorem err_nonneg (y : Fin m → Bool) {D : Fin m → ℝ} (hD : ∀ i, 0 ≤ D i) (h : Fin m → Bool) :
+private theorem err_nonneg (y : Fin m → Bool) {D : Fin m → ℝ} (hD : ∀ i, 0 ≤ D i)
+    (h : Fin m → Bool) :
     0 ≤ err y D h :=
   Finset.sum_nonneg fun i _ => by split_ifs <;> simp [hD i]
 
-theorem err_le_one (y : Fin m → Bool) {D : Fin m → ℝ} (hD : ∀ i, 0 ≤ D i) (hD1 : ∑ i, D i = 1)
-    (h : Fin m → Bool) : err y D h ≤ 1 := by
+private theorem err_le_one (y : Fin m → Bool) {D : Fin m → ℝ} (hD : ∀ i, 0 ≤ D i)
+    (hD1 : ∑ i, D i = 1) (h : Fin m → Bool) : err y D h ≤ 1 := by
   rw [← hD1]
   exact Finset.sum_le_sum fun i _ => by split_ifs <;> simp [hD i]
 
@@ -424,7 +425,7 @@ noncomputable def marginErr (y : Fin m → Bool) (wl : (Fin m → ℝ) → Fin m
   (∑ i, if sign (y i) * score y wl T i ≤ θ * ∑ t ∈ Finset.range T, alpha (eps y wl t)
     then (1 : ℝ) else 0) / m
 
-theorem exp_mul_alpha_mul_two_sqrt {ε : ℝ} (θ : ℝ) (h0 : 0 < ε) (h1 : ε < 1) :
+private theorem exp_mul_alpha_mul_two_sqrt {ε : ℝ} (θ : ℝ) (h0 : 0 < ε) (h1 : ε < 1) :
     exp (θ * alpha ε) * (2 * sqrt (ε * (1 - ε))) =
       2 * sqrt (ε ^ (1 - θ) * (1 - ε) ^ (1 + θ)) := by
   have hb : 0 < 1 - ε := by linarith

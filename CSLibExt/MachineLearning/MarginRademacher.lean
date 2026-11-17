@@ -14,9 +14,11 @@ public import CSLibExt.MachineLearning.RademacherComplexity
 # Rademacher complexity of the margin costs of voting classifiers
 
 The structural step of the margin bounds for voting methods (Schapire, Freund, Bartlett and Lee,
-*Boosting the margin*, Ann. Statist. 26, 1998, Section 2, for the setting; Bartlett and
-Mendelson, *Rademacher and Gaussian complexities*, JMLR 3, 2002, Theorem 7, for the bound whose
-complexity term this controls):
+*Boosting the margin*, Ann. Statist. 26, 1998, Section 2, for the setting). It combines the
+analogues, in the convention of `rademacherComplexity`, of Bartlett and Mendelson's Theorem 12,
+part 2 (the convex hull) and part 4 (Lipschitz composition) (*Rademacher and Gaussian
+complexities*, JMLR 3, 2002); the result bounds the complexity term `2 L R_n(F)` of their margin
+bound, Theorem 7, when `F` is a convex hull:
 on a fixed sample with labels `yᵢ ∈ {±1}`, let `B ⊆ ℝⁿ` be the value vectors of the base
 classifiers. A voting classifier `f = ∑ₕ aₕ h` (`aₕ ≥ 0`, `∑ aₕ = 1`) has its value vector in
 the convex hull of `B`, and its margins on the sample are `yᵢ f(xᵢ)`. For a cost `φ` that is
@@ -49,9 +51,10 @@ def marginCosts (φ : ℝ → ℝ) (y : Fin n → ℝ) (A : Set (Fin n → ℝ))
   (fun a i => φ (y i * a i)) '' A
 
 /-- **The margin costs of voting classifiers are no more complex than the base classifiers**
-(the complexity step of Bartlett and Mendelson's margin bound, *JMLR* 3, 2002, Theorem 7,
-obtained from `rademacherComplexity_convexHull` and the contraction lemma
-`rademacherComplexity_coordMap_le`): for a nonempty bounded `B ⊆ ℝⁿ`, labels with `|yᵢ| ≤ 1` and an
+(Bartlett and Mendelson, *JMLR* 3, 2002, Theorem 12, parts 2 and 4, combined, in the convention
+of `rademacherComplexity`: `rademacherComplexity_convexHull` and the contraction lemma
+`rademacherComplexity_coordMap_le`; it bounds the complexity term of their margin bound, Theorem 7,
+for a convex hull): for a nonempty bounded `B ⊆ ℝⁿ`, labels with `|yᵢ| ≤ 1` and an
 `L`-Lipschitz cost `φ`, `R({(φ(yᵢ aᵢ))ᵢ : a ∈ conv B}) ≤ L R(B)`. -/
 theorem rademacherComplexity_marginCosts_convexHull_le {B : Set (Fin n → ℝ)} (hne : B.Nonempty)
     (hB : Bornology.IsBounded B) (φ : ℝ → ℝ) {L : NNReal} (hφ : LipschitzWith L φ)
@@ -74,10 +77,10 @@ theorem rademacherComplexity_marginCosts_convexHull_le {B : Set (Fin n → ℝ)}
 in between. -/
 noncomputable def ramp (θ u : ℝ) : ℝ := min 1 (max 0 (1 - u / θ))
 
-theorem ramp_nonneg (θ u : ℝ) : 0 ≤ ramp θ u :=
+private theorem ramp_nonneg (θ u : ℝ) : 0 ≤ ramp θ u :=
   le_min zero_le_one (le_max_left _ _)
 
-theorem ramp_le_one (θ u : ℝ) : ramp θ u ≤ 1 := min_le_left _ _
+private theorem ramp_le_one (θ u : ℝ) : ramp θ u ≤ 1 := min_le_left _ _
 
 /-- **The ramp dominates the zero-one loss**: `1[u ≤ 0] ≤ ρ_θ(u)` for `θ > 0`. -/
 theorem indicator_le_ramp {θ : ℝ} (hθ : 0 < θ) (u : ℝ) :
@@ -116,8 +119,9 @@ theorem lipschitzWith_ramp {θ : ℝ} (hθ : 0 < θ) :
 /-- **The complexity term of the margin bound for voting classifiers**: for a nonempty bounded
 `B ⊆ ℝⁿ` of base-classifier value vectors, labels with `|yᵢ| ≤ 1` and `θ > 0`, the ramp costs of
 the margins of all voting classifiers satisfy `R({(ρ_θ(yᵢ aᵢ))ᵢ : a ∈ conv B}) ≤ R(B) / θ`
-(Bartlett and Mendelson, *JMLR* 3, 2002, Theorem 7 with `L = 1 / θ`, in the convention of
-`rademacherComplexity`). -/
+(Bartlett and Mendelson, *JMLR* 3, 2002, Theorem 12, parts 2 and 4, in the convention of
+`rademacherComplexity`, with the `1 / θ`-Lipschitz ramp; this is the complexity term of their
+Theorem 7 with `L = 1 / θ`). -/
 theorem rademacherComplexity_rampCosts_convexHull_le {B : Set (Fin n → ℝ)} (hne : B.Nonempty)
     (hB : Bornology.IsBounded B) (y : Fin n → ℝ) (hy : ∀ i, |y i| ≤ 1) {θ : ℝ} (hθ : 0 < θ) :
     rademacherComplexity (marginCosts (ramp θ) y (convexHull ℝ B)) ≤
