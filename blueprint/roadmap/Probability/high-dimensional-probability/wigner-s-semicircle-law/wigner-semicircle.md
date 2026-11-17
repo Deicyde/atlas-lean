@@ -34,7 +34,7 @@ where $\sigma$ is the semicircle distribution.
   background; the form of that bound used for linear statistics $\frac{1}{n}\sum_i f(\lambda_i)$.
 - [Expected moments of a Wigner matrix converge to the semicircle moments](tendsto-expected-moment-wigner-matrix-re.md):
   background; the first half of the moment method under moments of all orders (Anderson, Guionnet
-  and Zeitouni, Lemma 2.1.6).
+  and Zeitouni, Lemma 2.1.6 in the authors' 2009 pre-publication manuscript).
 - [Concentration of linear spectral statistics](concentration-trace-lipschitz.md):
   background; for entries satisfying a logarithmic Sobolev inequality, the fluctuations of
   $\operatorname{tr} f(X_N)$ are exponentially small at scale $N^2$, which gives almost sure
