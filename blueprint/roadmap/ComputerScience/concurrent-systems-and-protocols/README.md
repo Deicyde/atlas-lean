@@ -4,6 +4,7 @@ Specific concurrent or distributed systems and their verified properties: deadlo
 
 - [Alternating bit protocol](alternating-bit-protocol/README.md)
 - [Banker's algorithm](banker-s-algorithm/README.md)
+- [Byzantine agreement](byzantine-agreement/README.md)
 - [Byzantine generals problem](byzantine-generals-problem/README.md)
 - [Chang–Roberts leader election](chang-roberts-leader-election/README.md)
 - [Deadlock and circular wait](deadlock-and-circular-wait/README.md)
