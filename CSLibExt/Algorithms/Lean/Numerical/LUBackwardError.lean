@@ -240,7 +240,9 @@ and let `n u < 1` for `u = 2^(-p)`. Then
 `L̂ Û = A + E` with `|E(i, j)| ≤ γₙ ∑ₖ |L̂(i, k)| |Û(k, j)|` for all `i, j` (J. W. Demmel,
 Math 221, UC Berkeley, Lecture 5 notes, 2024: "If P, L and U are computed by the above algorithm,
 then `A - E = P*L*U` where `|E| <= n*macheps*P*|L|*|U|`", stated there to first order in
-`macheps`, for `P = I`). -/
+`macheps`, for `P = I`; the exact `γₙ` form is the one of N. J. Higham, *Accuracy and Stability of
+Numerical Algorithms*, 2nd ed., SIAM, 2002, chapter on LU
+factorization). -/
 theorem exists_mul_eq_add_abs_le_gamma {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1)
     {A L U : Matrix (Fin n) (Fin n) K} (hLU : IsFlLU p A L U)
     (hpiv : ∀ j : Fin n, (j : ℕ) + 1 < n → U j j ≠ 0) :

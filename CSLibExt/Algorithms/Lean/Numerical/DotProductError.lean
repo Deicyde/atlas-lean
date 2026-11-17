@@ -28,7 +28,8 @@ Applied entrywise, the classical floating-point product `Ĉ = fl(A B)` of an `m 
 `n × r` matrix satisfies `|Ĉ - A B| ≤ γₙ |A| |B|` entrywise. J. W. Demmel's Math 221 course
 (UC Berkeley, Lecture 5 notes of 19 September 2024, recalling homework 1.10) uses this bound,
 in its first-order form `n ε |A| |B|`, as the model for the backward error analysis of LU
-factorization.
+factorization. The exact `γₙ` forms proved here are the standard ones of
+N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002.
 
 ## Main results
 
@@ -116,7 +117,9 @@ theorem gamma_nonneg {k : ℕ} (hk : (k : K) * 2 ^ (-(p : ℤ)) < 1) : 0 ≤ (ga
 /-- **Forward error of the floating-point dot product.** If `n u < 1` with `u = 2^(-p)`, then
 `|fl(∑_{i<n} xᵢ yᵢ) - ∑_{i<n} xᵢ yᵢ| ≤ γₙ ∑_{i<n} |xᵢ yᵢ|`, where the floating-point sum is
 `dotFl`: rounded products added from left to right, each addition rounded (Demmel, Math 221
-Lecture 5 notes, 2024, recalling homework 1.10; the first-order form of `γₙ` is `n u`). -/
+Lecture 5 notes, 2024, recalling homework 1.10, in the first-order form `n u`; the exact `γₙ`
+form is the standard one of N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd
+ed., SIAM, 2002, chapter on summation and inner products). -/
 theorem abs_dotFl_sub_le (hp : 1 ≤ p) (x y : ℕ → K) (n : ℕ)
     (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1) :
     |dotFl p x y n - ∑ i ∈ range n, x i * y i| ≤ gamma p n * ∑ i ∈ range n, |x i * y i| := by
@@ -198,7 +201,8 @@ def matMulFl (p : ℕ) {m n r : ℕ} (A : Matrix (Fin m) (Fin n) K) (B : Matrix 
 /-- **Forward error of floating-point matrix multiplication.** If `n u < 1`, the floating-point
 product of an `m × n` matrix `A` and an `n × r` matrix `B` satisfies, entrywise,
 `|fl(A B) - A B| ≤ γₙ |A| |B|` (Demmel, Math 221 Lecture 5 notes, 2024: "`C = fl(A*B) = A*B + E`
-where `|E| <= n*macheps*|A|*|B|`", in first-order form). -/
+where `|E| <= n*macheps*|A|*|B|`", in first-order form; the exact `γₙ` form is the standard
+one of N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002). -/
 theorem abs_matMulFl_sub_le (hp : 1 ≤ p) {m n r : ℕ} (A : Matrix (Fin m) (Fin n) K)
     (B : Matrix (Fin n) (Fin r) K) (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1) (i : Fin m) (j : Fin r) :
     |matMulFl p A B i j - (A * B) i j| ≤ gamma p n * ∑ k, |A i k| * |B k j| := by

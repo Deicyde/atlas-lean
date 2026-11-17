@@ -4,7 +4,7 @@ If $L$ is an $n \times n$ lower triangular matrix with nonzero diagonal, $\hat y
 
 $$(L + \delta L)\,\hat y = b \quad \text{for some } \delta L \text{ with } |\delta L_{ik}| \le \gamma_n |L_{ik}|.$$
 
-Triangular solves are thus backward stable componentwise, whatever the conditioning of $L$; this is homework 1.11 of J. W. Demmel's Math 221 course, recalled in the Lecture 5 notes (UC Berkeley, 2024) in first-order form $|\delta L| \le n\,\varepsilon\,|L|$. The perturbation keeps the zero pattern of $L$.
+Triangular solves are thus backward stable componentwise, whatever the conditioning of $L$; this is homework 1.11 of J. W. Demmel's Math 221 course, recalled in the Lecture 5 notes (UC Berkeley, 2024) in first-order form $|\delta L| \le n\,\varepsilon\,|L|$; the exact form $\gamma_n|L|$ is the one of N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002, in the chapter on triangular systems. The perturbation keeps the zero pattern of $L$.
 
 **Proof.** Row $i$ of the residual $b - L\hat y$ is bounded by $\gamma_{i+1} \sum_k |L_{ik}|\,|\hat y_k|$ by the [residual bound for one division step](abs-sub-sum-sub-mul-le.md), and $\gamma_{i+1} \le \gamma_n$; such a residual is a [componentwise perturbation](exists-perturbation-of-abs-le.md) of $L$.
 

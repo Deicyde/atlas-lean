@@ -22,6 +22,10 @@ three steps together, the computed `x̂` solves `(A + F) x̂ = b` with
 `|F| ≤ (3 γₙ + γₙ²) |L̂| |Û|` entrywise (J. W. Demmel, Math 221, UC Berkeley, Lecture 5 notes
 of 19 September 2024: the corollary "`(A-F)*xhat = b` where `|F| <= 3*n*macheps*P*|L|*|U|`" and
 homework 1.11 for the triangular solves, there to first order in `macheps`, with `P = I`).
+The exact forms follow N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed.,
+SIAM, 2002: the triangular-solve bound `γₙ |T|`, and the GE-solve bound in its usual form
+`γ₃ₙ |L̂| |Û|` (`exists_add_mulVec_eq_of_isFlLU_gamma`). The bound `(3 γₙ + γₙ²) |L̂| |Û|` proved
+first is slightly stronger, since `3γₙ + γₙ² ≤ γ₃ₙ`, and needs only `n u < 1`.
 
 ## Main results
 
@@ -33,6 +37,8 @@ homework 1.11 for the triangular solves, there to first order in `macheps`, with
   `(L + δL) ŷ = b` with `|δL| ≤ γₙ |L|`, and likewise for `U`.
 * `exists_add_mulVec_eq_of_isFlLU`: **backward stability of Gaussian elimination**:
   `(A + F) x̂ = b` with `|F| ≤ (3 γₙ + γₙ²) |L̂| |Û|`.
+* `three_mul_gamma_add_sq_le_gamma`, `exists_add_mulVec_eq_of_isFlLU_gamma`: the `γ₃ₙ` form, when
+  `3 n u < 1`.
 
 ## Cost model
 
@@ -158,7 +164,9 @@ theorem exists_perturbation_of_abs_le {n : ℕ} (M : Matrix (Fin n) (Fin n) K) (
 /-- **Backward error of floating-point forward substitution.** If `L` is lower triangular with
 nonzero diagonal, `ŷ` is computed by forward substitution in floating point (`IsFlLowerSolve`) and
 `n u < 1`, then `(L + δL) ŷ = b` for some `δL` with `|δLᵢₖ| ≤ γₙ |Lᵢₖ|` (Demmel, Math 221
-Lecture 5 notes, 2024, recalling homework 1.11, there to first order). -/
+Lecture 5 notes, 2024, recalling homework 1.11, there to first order; exact form as in
+N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002, chapter on
+triangular systems). -/
 theorem exists_add_mulVec_eq_of_isFlLowerSolve {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1)
     {L : Matrix (Fin n) (Fin n) K} (hL : ∀ i k, i < k → L i k = 0) (hdiag : ∀ i, L i i ≠ 0)
     {b y : Fin n → K} (hy : IsFlLowerSolve p L b y) :
@@ -210,7 +218,9 @@ theorem exists_add_mulVec_eq_of_isFlLowerSolve {n : ℕ} (hn : (n : K) * 2 ^ (-(
 /-- **Backward error of floating-point back substitution.** If `U` is upper triangular with
 nonzero diagonal, `x̂` is computed by back substitution in floating point (`IsFlUpperSolve`) and
 `n u < 1`, then `(U + δU) x̂ = y` for some `δU` with `|δUᵢₖ| ≤ γₙ |Uᵢₖ|` (Demmel, Math 221
-Lecture 5 notes, 2024, recalling homework 1.11, there to first order). -/
+Lecture 5 notes, 2024, recalling homework 1.11, there to first order; exact form as in
+N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002, chapter on
+triangular systems). -/
 theorem exists_add_mulVec_eq_of_isFlUpperSolve {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1)
     {U : Matrix (Fin n) (Fin n) K} (hU : ∀ i k, k < i → U i k = 0) (hdiag : ∀ i, U i i ≠ 0)
     {y x : Fin n → K} (hx : IsFlUpperSolve p U y x) :
@@ -233,7 +243,9 @@ computing `L̂, Û` by Gaussian elimination without pivoting (`IsFlLU`, nonzero 
 by forward substitution with `L̂` and `x̂` by back substitution with `Û`. If `n u < 1`, then
 `(A + F) x̂ = b` with `|Fᵢⱼ| ≤ (3 γₙ + γₙ²) ∑ₖ |L̂ᵢₖ| |Ûₖⱼ|` (Demmel, Math 221 Lecture 5 notes,
 2024: "`(A-F)*xhat = b` where `|F| <= 3*n*macheps*P*|L|*|U|`", to first order and with
-`P = I`). -/
+`P = I`). The usual statement has `γ₃ₙ |L̂| |Û|` (N. J. Higham, *Accuracy and Stability of
+Numerical Algorithms*, 2nd ed., SIAM, 2002, chapter on LU factorization); since
+`3γₙ + γₙ² ≤ γ₃ₙ` the bound here is slightly stronger, and it needs only `n u < 1`. -/
 theorem exists_add_mulVec_eq_of_isFlLU {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)) < 1)
     {A L U : Matrix (Fin n) (Fin n) K} (hLU : IsFlLU p A L U) (hpiv : ∀ j, U j j ≠ 0)
     {b y x : Fin n → K} (hy : IsFlLowerSolve p L b y) (hx : IsFlUpperSolve p U y x) :
@@ -286,5 +298,46 @@ theorem exists_add_mulVec_eq_of_isFlLU {n : ℕ} (hn : (n : K) * 2 ^ (-(p : ℤ)
           exact abs_add_le _ _
       _ ≤ gamma p n * T + gamma p n * T + gamma p n * T + gamma p n ^ 2 * T := by gcongr
       _ = (3 * gamma p n + gamma p n ^ 2) * T := by ring
+
+/-- **`3γₙ + γₙ² ≤ γ₃ₙ`** when `3 n u < 1`. -/
+theorem three_mul_gamma_add_sq_le_gamma {n : ℕ} (hn : ((3 * n : ℕ) : K) * 2 ^ (-(p : ℤ)) < 1) :
+    3 * gamma p n + gamma p n ^ 2 ≤ (gamma p (3 * n) : K) := by
+  have hu : (0 : K) < 2 ^ (-(p : ℤ)) := two_zpow_pos _
+  have h3 : ((3 * n : ℕ) : K) = 3 * n := by push_cast; ring
+  have hn0 : (0 : K) ≤ n := Nat.cast_nonneg n
+  have h1 : (n : K) * 2 ^ (-(p : ℤ)) < 1 := by rw [h3] at hn; nlinarith
+  have h2 : ((n + n : ℕ) : K) * 2 ^ (-(p : ℤ)) < 1 := by push_cast; rw [h3] at hn; nlinarith
+  have h3' : ((n + n + n : ℕ) : K) * 2 ^ (-(p : ℤ)) < 1 := by
+    have : (n + n + n : ℕ) = 3 * n := by ring
+    rw [this]; exact hn
+  have hγ : 0 ≤ (gamma p n : K) := gamma_nonneg h1
+  have hA := one_add_gamma_mul_le (K := K) (p := p) (a := n) (b := n) h2
+  have hB := one_add_gamma_mul_le (K := K) (p := p) (a := n + n) (b := n) h3'
+  have hγ2 : 0 ≤ (gamma p (n + n) : K) := gamma_nonneg (by push_cast at h2 ⊢; linarith)
+  have : (n + n + n : ℕ) = 3 * n := by ring
+  rw [this] at hB
+  nlinarith [mul_le_mul_of_nonneg_right hA (by linarith : (0 : K) ≤ 1 + gamma p n),
+    mul_nonneg hγ hγ, mul_nonneg (mul_nonneg hγ hγ) hγ]
+
+/-- **Backward stability of Gaussian elimination, `γ₃ₙ` form.** Under the hypotheses of
+`exists_add_mulVec_eq_of_isFlLU` and `3 n u < 1`, `(A + F) x̂ = b` with
+`|Fᵢⱼ| ≤ γ₃ₙ ∑ₖ |L̂ᵢₖ| |Ûₖⱼ|`, the form in which the bound is usually stated (N. J. Higham,
+*Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002, chapter on LU
+factorization). -/
+theorem exists_add_mulVec_eq_of_isFlLU_gamma {n : ℕ}
+    (hn : ((3 * n : ℕ) : K) * 2 ^ (-(p : ℤ)) < 1)
+    {A L U : Matrix (Fin n) (Fin n) K} (hLU : IsFlLU p A L U) (hpiv : ∀ j, U j j ≠ 0)
+    {b y x : Fin n → K} (hy : IsFlLowerSolve p L b y) (hx : IsFlUpperSolve p U y x) :
+    ∃ F : Matrix (Fin n) (Fin n) K, (A + F).mulVec x = b ∧
+      ∀ i j, |F i j| ≤ gamma p (3 * n) * ∑ k, |L i k| * |U k j| := by
+  have hu : (0 : K) < 2 ^ (-(p : ℤ)) := two_zpow_pos _
+  have hn1 : (n : K) * 2 ^ (-(p : ℤ)) < 1 := by
+    have : ((3 * n : ℕ) : K) = 3 * n := by push_cast; ring
+    have hn0 : (0 : K) ≤ n := Nat.cast_nonneg n
+    rw [this] at hn; nlinarith
+  obtain ⟨F, hF, hFb⟩ := exists_add_mulVec_eq_of_isFlLU hn1 hLU hpiv hy hx
+  refine ⟨F, hF, fun i j => (hFb i j).trans ?_⟩
+  exact mul_le_mul_of_nonneg_right (three_mul_gamma_add_sq_le_gamma hn)
+    (Finset.sum_nonneg fun _ _ => by positivity)
 
 end Cslib.Algorithms.Lean.FloatingPoint.GaussianEliminationBackwardError
