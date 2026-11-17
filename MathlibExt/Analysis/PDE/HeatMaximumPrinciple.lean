@@ -53,9 +53,11 @@ open MathlibExt.Analysis.PDE.LaplaceMaximumPrinciple
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 
 /-- **Parabolic boundary of a space-time cylinder.** For `U` and `T`, the set
-`({0} × closure U) ∪ ([0, T] × ∂U)` of pairs `(t, x)`: the closure of the cylinder `(0, T] × U`
-minus the cylinder itself, as defined in §4.4 of M. Schmidt, *Partial Differential Equations*,
-lecture notes, Universität Mannheim, HWS 2025, Chapter 4 (written `∂Ω_T` there). -/
+`({0} × closure U) ∪ ([0, T] × ∂U)` of pairs `(t, x)`. For open `U` and `T > 0` it is the closure
+of the cylinder `(0, T] × U` minus the cylinder itself, as defined in §4.4 of M. Schmidt, *Partial
+Differential Equations*, lecture notes, Universität Mannheim, HWS 2025, Chapter 4 (written `∂Ω_T`
+there); for `T = 0` the cylinder is empty and the set is `{0} × closure U`, the initial time
+slice. -/
 def parabolicBoundary (U : Set E) (T : ℝ) : Set (ℝ × E) :=
   ({0} ×ˢ closure U) ∪ (Icc 0 T ×ˢ frontier U)
 

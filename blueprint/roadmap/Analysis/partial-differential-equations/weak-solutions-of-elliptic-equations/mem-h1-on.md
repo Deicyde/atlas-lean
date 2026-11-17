@@ -1,7 +1,8 @@
 # Sobolev space $H^1(U)$
 
 A function $u : \mathbb{R}^n \to \mathbb{R}$ belongs to $H^1(U)$ when $u \in L^2(U)$ and, for every
-$i$, the weak partial derivative $\partial_i u$ on $U$ exists and lies in $L^2(U)$.
+$i$, the weak partial derivative $\partial_i u$ on $U$ exists and lies in $L^2(U)$: the Sobolev
+space $H^1(U) = W^{1,2}(U)$.
 
 ## Informally uses
 
@@ -9,9 +10,10 @@ $i$, the weak partial derivative $\partial_i u$ on $U$ exists and lies in $L^2(U
 
 ## Background
 
-- [Sobolev space $W^{k,p}(\mathbb{R}^n)$](../../function-spaces/sobolev-embedding-theorem/mem-sobolev-wk.md):
-  the whole-space Sobolev spaces of any order.
+- [Sobolev space $W^{k,p}(\mathbb{R}^n)$](../../function-spaces/sobolev-embedding-theorem/mem-sobolev-wk.md): the whole-space Sobolev spaces of
+  any order; a bridge lemma in this topic proves that $H^1(\mathbb{R}^n)$ here is
+  $W^{1,2}(\mathbb{R}^n)$ there.
 
 ## Sources
 
-- P. Howard, MATH 612 lecture slides, Texas A&M University, Spring 2020: [Weak solutions](https://people.tamu.edu/~phoward/m612/s20/elliptic1.pdf).
+- J. K. Hunter, *Notes on Partial Differential Equations*, UC Davis, [Chapter 3 (Sobolev spaces)](https://www.math.ucdavis.edu/~hunter/pdes/ch3.pdf), Definition 3.23 with $k = 1$, $p = 2$.

@@ -15,5 +15,6 @@ finite dimension.
 
 ## Sources
 
-- M. Schmidt, *Partial Differential Equations*, lecture notes, Universität Mannheim, HWS 2025, [Chapter 4 (Heat equation)](https://www.wim.uni-mannheim.de/media/Lehrstuehle/wim/schmidt/HWS2025/chapter_4.pdf), §4.1 and Theorem 4.3 (ii).
+- M. Schmidt, *Partial Differential Equations*, lecture notes, Universität Mannheim, HWS 2025, [Chapter 4 (Heat equation)](https://www.wim.uni-mannheim.de/media/Lehrstuehle/wim/schmidt/HWS2025/chapter_4.pdf), §4.1 (the self-similar ansatz that produces $\Phi$ as a solution); the fact is used in the proof
+  of Theorem 4.3 (ii), which concerns the convolution $\Phi * h$.
 - L. C. Evans, *Partial Differential Equations*, 2nd ed., AMS Graduate Studies in Mathematics 19 (2010), Chapter 2. The book was not available to this formalization; no theorem number is cited from it.

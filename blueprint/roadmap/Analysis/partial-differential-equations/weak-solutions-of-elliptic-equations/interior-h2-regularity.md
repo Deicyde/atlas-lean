@@ -14,8 +14,9 @@ So $u \in H^2_{\mathrm{loc}}(U)$. The left side is a norm equivalent to the $H^2
 is existential, the statement is equivalent to the source's estimate for
 $\|u\|_{H^2(V)}$. Ellipticity is assumed at every point of $U$ rather than almost everywhere,
 which is equivalent for continuous coefficients. Recorded as wanted; the classical proof uses
-difference quotients. The hypotheses are jointly satisfiable, for example by the
-[coefficients of the Laplacian](laplacian-coeff-uniformly-elliptic.md).
+difference quotients. All the hypotheses hold for the
+[coefficients of the Laplacian on nested balls](interior-h2-regularity-hypotheses-laplac.md),
+which is proved, so the statement is not vacuous.
 
 ## Informally uses
 

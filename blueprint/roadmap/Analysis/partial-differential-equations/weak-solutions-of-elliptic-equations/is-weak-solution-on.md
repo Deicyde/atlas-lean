@@ -10,7 +10,8 @@ $B[u, v] = \int_U \big(\sum a^{ij} u_{x_i} v_{x_j} + \sum b^i u_{x_i} v + c u v\
 
 Howard's slides test against all $v \in H^1_0(U)$. For $u \in H^1(U)$, bounded coefficients and
 $f \in L^2(U)$ both sides are continuous in $v$ for the $H^1$ norm, and $H^1_0(U)$ is the closure of
-$C^\infty_c(U)$, so the two formulations agree. Boundary conditions are not part of this notion.
+$C^\infty_c(U)$, so the two formulations agree (argued here, not formalized). Boundary conditions
+are not part of this notion.
 
 ## Informally uses
 

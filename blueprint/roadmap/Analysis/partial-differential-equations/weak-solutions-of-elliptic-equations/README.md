@@ -25,12 +25,15 @@ recorded as wanted.
 - [Dirichlet's principle](is-min-on-energy-iff.md)
 - [Test function on an open set](is-test-function-on.md)
 - [Weak partial derivative on an open set](is-weak-partial-deriv-on.md)
+- [Weak partial derivatives on the whole space](is-weak-partial-deriv-on-univ-iff.md)
 - [Sobolev space $H^1(U)$](mem-h1-on.md)
+- [$H^1$ on the whole space](mem-h1-on-univ-iff.md)
 - [Sobolev space $H^1_0(U)$](mem-h10-on.md)
 - [Weak solution of a divergence-form elliptic equation](is-weak-solution-on.md)
 - [Coefficients of the Laplacian](laplacian-coeff.md)
 - [The Laplacian is uniformly elliptic](laplacian-coeff-uniformly-elliptic.md)
 - [Existence and uniqueness of weak solutions of the Dirichlet problem for Poisson's equation](exists-unique-weak-solution-poisson.md)
+- [The hypotheses of interior $H^2$ regularity are satisfiable](interior-h2-regularity-hypotheses-laplac.md)
 - [Interior $H^2$ regularity](interior-h2-regularity.md)
 
 ## Related topics

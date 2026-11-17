@@ -2,9 +2,10 @@
 
 For $U \subseteq \mathbb{R}^n$, a test function on $U$ is a function
 $\varphi : \mathbb{R}^n \to \mathbb{R}$ of class $C^\infty$ with compact support contained in $U$;
-for open $U$ these are the functions of $C^\infty_c(U)$. Smoothness is `ContDiff ℝ ∞`
-($C^\infty$), not the analytic `ContDiff ℝ ⊤`.
+for open $U$ these are the functions of $C^\infty_c(U)$ (written $C^\infty_0(\Omega)$ by Schmidt).
+Smoothness is `ContDiff ℝ ∞` ($C^\infty$), not the analytic `ContDiff ℝ ⊤`.
 
 ## Sources
 
-- P. Howard, MATH 612 lecture slides, Texas A&M University, Spring 2020: [Weak solutions](https://people.tamu.edu/~phoward/m612/s20/elliptic1.pdf).
+- M. Schmidt, *Partial Differential Equations*, lecture notes, Universität Mannheim, HWS 2025, [Chapter 2 (General concepts)](https://www.wim.uni-mannheim.de/media/Lehrstuehle/wim/schmidt/HWS2025/chapter_2.pdf), §2.4.
+- J. K. Hunter, *Notes on Partial Differential Equations*, UC Davis, [Chapter 3 (Sobolev spaces)](https://www.math.ucdavis.edu/~hunter/pdes/ch3.pdf), Definition 3.1, where these are the functions tested against.

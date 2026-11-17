@@ -5,9 +5,11 @@ on $U \subseteq \mathbb{R}^n$ when
 
 $$\int_U u \, \partial_i \varphi \, dx = - \int_U g \, \varphi \, dx$$
 
-for every test function $\varphi \in C^\infty_c(U)$. The integrals are Lebesgue integrals, taken
-to be $0$ when the integrand is not integrable; the Sobolev notions built on this one require
-$u, g \in L^2(U)$, which makes both integrands integrable on bounded $U$.
+for every test function $\varphi \in C^\infty_c(U)$. Hunter's Definition 3.1 also requires
+$u, g \in L^1_{\mathrm{loc}}(U)$; here that requirement is carried by the Sobolev notions built on
+this one, which ask for $u, g \in L^2(U)$. The integrals are Lebesgue integrals, taken to be $0$
+when the integrand is not integrable; with $u, g \in L^2(U)$ both integrands are integrable,
+because $\varphi$ and $\partial_i \varphi$ are bounded with compact support.
 
 ## Informally uses
 
@@ -15,9 +17,9 @@ $u, g \in L^2(U)$, which makes both integrands integrable on bounded $U$.
 
 ## Background
 
-- [Weak derivative](../../function-spaces/sobolev-embedding-theorem/is-weak-deriv.md): the
-  whole-space weak derivative of any order, the case $U = \mathbb{R}^n$ for first derivatives.
+- [Weak derivative](../../function-spaces/sobolev-embedding-theorem/is-weak-deriv.md): the whole-space weak derivative of any order; a bridge
+  lemma in this topic proves that the two agree on $\mathbb{R}^n$ for first derivatives.
 
 ## Sources
 
-- P. Howard, MATH 612 lecture slides, Texas A&M University, Spring 2020: [Weak solutions](https://people.tamu.edu/~phoward/m612/s20/elliptic1.pdf).
+- J. K. Hunter, *Notes on Partial Differential Equations*, UC Davis, [Chapter 3 (Sobolev spaces)](https://www.math.ucdavis.edu/~hunter/pdes/ch3.pdf), Definition 3.1.

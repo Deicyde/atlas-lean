@@ -5,7 +5,9 @@ and its parabolic boundary is
 
 $$\Gamma_T = \big(\{0\} \times \overline U\big) \cup \big([0, T] \times \partial U\big),$$
 
-the closure of $U_T$ minus $U_T$ itself. It does not contain the points $(T, x)$ with $x \in U$.
+For open $U$ and $T > 0$ it is the closure of $U_T$ minus $U_T$ itself; it does not contain the
+points $(T, x)$ with $x \in U$. For $T = 0$ the cylinder is empty and $\Gamma_0 = \{0\} \times
+\overline U$, the initial time slice, which is what the weak maximum principle needs in that case.
 
 ## Sources
 
