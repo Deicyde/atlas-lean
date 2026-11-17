@@ -1,6 +1,6 @@
 # Pointwise domination by the dyadic maximal function
 
-Under the hypotheses of the [dyadic Lebesgue differentiation theorem](ae-tendsto-dyadic-average.md) ($\|f\|$ a.e. measurable, $\int \|f\| < \infty$), one has $\|f(x)\| \le M_d f(x)$ for almost every $x$: the limit of the averages is at most their supremum. In the [Calderón–Zygmund decomposition](calderon-zygmund.md) this gives $|f| \le c$ almost everywhere outside $\{M_d f > c\}$, as in the proof of T. Hytönen, *Dyadic analysis and weights*, lecture notes, University of Helsinki, version of 2 May 2014, Proposition 7.11.
+Under the hypotheses of the [dyadic Lebesgue differentiation theorem](ae-tendsto-dyadic-average.md) ($\|f\|$ a.e. measurable, $\int \|f\| < \infty$), one has $\|f(x)\| \le M_d f(x)$ for almost every $x$: the limit of the averages is at most their supremum. In the Calderón–Zygmund decomposition this gives $|f| \le c$ almost everywhere outside $\{M_d f > c\}$, as in the proof of T. Hytönen, *Dyadic analysis and weights*, lecture notes, University of Helsinki, version of 2 May 2014, Proposition 7.11.
 
 ## Informally uses
 

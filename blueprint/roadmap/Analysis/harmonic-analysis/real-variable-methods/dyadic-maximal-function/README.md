@@ -4,7 +4,7 @@ The dyadic intervals $I_{k,m} = [m 2^{-k}, (m+1) 2^{-k})$ of the real line are n
 
 1. **Stopping time.** For a height $c$, the maximal dyadic intervals with average above $c$ are disjoint ([stopping level](is-stopping-level.md), [finite-level estimate](mul-volume-window-le.md)).
 2. **Weak type (1,1).** Summing over these disjoint intervals gives $c\,|\{M_d f > c\}| \le \int_{\{M_d f > c\}} \|f\|$ ([localized form](mul-volume-lt-dyadic-maximal-function-le.md), [weak type (1,1)](dyadic-maximal-function-mul-volume-le-li.md)), proved here for every $f$, with constant $1$ and no covering lemma.
-3. **Differentiation.** The averages over the dyadic intervals containing $x$ converge to $\|f(x)\|$ almost everywhere ([dyadic Lebesgue differentiation](ae-tendsto-dyadic-average.md)), obtained from Mathlib's Vitali-family differentiation theorem; hence $\|f\| \le M_d f$ a.e. ([domination](ae-enorm-le-dyadic-maximal-function.md)).
+3. **Differentiation.** For locally integrable $f$ the averages of $f$ over the dyadic intervals containing $x$ converge to $f(x)$ almost everywhere ([dyadic Lebesgue differentiation](ae-tendsto-set-average-dyadic-interval.md)); the form used below, for the averages of $\|f\|$ with $f$ integrable, is [its norm version](ae-tendsto-dyadic-average.md). Both are obtained from Mathlib's Vitali-family differentiation theorem; hence $\|f\| \le M_d f$ a.e. ([domination](ae-enorm-le-dyadic-maximal-function.md)).
 4. **Strong type.** Integrating the localized bound gives the [Doob-type inequality](lintegral-rpow-le-lintegral-mul-dyadic-m.md) $\int (M_d f)^p \le p' \int \|f\| (M_d f)^{p-1}$, and with Hölder's inequality the [$L^p$ bound](lintegral-rpow-dyadic-maximal-function-l.md) $\|M_d f\|_p \le p' \|f\|_p$, $p' = p/(p-1)$, for $1 < p < \infty$; the Marcinkiewicz splitting gives the [cruder constant $2^p p/(p-1)$](lintegral-rpow-dyadic-maximal-le-two-rpo.md) without any finiteness assumption, which the sharp proof needs.
 5. **Calderón–Zygmund decomposition.** For integrable $f$ the stopping intervals at height $c$ exist ([existence](exists-is-stopping-level.md)), partition $\{M_d f > c\}$, carry averages in $(c, 2c]$, and $\|f\| \le c$ a.e. off their union ([dyadic Calderón–Zygmund decomposition](calderon-zygmund.md)).
 
@@ -21,7 +21,8 @@ The decomposition is the entry point for the weak type (1,1) of singular integra
 - [Doob-type inequality for the dyadic maximal function](lintegral-rpow-le-lintegral-mul-dyadic-m.md)
 - [`L^p` bound for the dyadic maximal function with constant $2^p p/(p-1)$](lintegral-rpow-dyadic-maximal-le-two-rpo.md)
 - [`L^p` bound for the dyadic maximal function](lintegral-rpow-dyadic-maximal-function-l.md)
-- [Dyadic Lebesgue differentiation theorem](ae-tendsto-dyadic-average.md)
+- [Dyadic Lebesgue differentiation theorem for locally integrable functions](ae-tendsto-set-average-dyadic-interval.md)
+- [Dyadic differentiation of the norm of an integrable function](ae-tendsto-dyadic-average.md)
 - [Pointwise domination by the dyadic maximal function](ae-enorm-le-dyadic-maximal-function.md)
 - [Stopping level](is-stopping-level.md)
 - [Existence of the stopping level](exists-is-stopping-level.md)
@@ -32,7 +33,8 @@ The decomposition is the entry point for the weak type (1,1) of singular integra
 
 - [Bounded mean oscillation](../bounded-mean-oscillation/README.md): the John–Nirenberg inequality and the $H^1$–$\mathrm{BMO}$ inequality, built on the Calderón–Zygmund decomposition.
 - [Hardy–Littlewood maximal function](../../../../MeasureTheory/real-functions/hardy-littlewood-maximal-function/README.md): the maximal function over all intervals containing a point, used there in statements with an inline definition; on $\mathbb{R}$ it is at most $6$ times the larger of the dyadic maximal functions of the standard and of one shifted dyadic system (Hytönen's notes, Proposition 2.9), so the bounds here transfer to it.
-- [Haar system](../../wavelets/haar-system/README.md): the Haar wavelets live on the same dyadic intervals; the dyadic averages $A_k f$ are the projections onto the Haar approximation spaces $V_k$ of S. Mallat's multiresolution framework.
+- [Lebesgue differentiation along shrinking off-center intervals](../../../../Probability/stochastic-calculus/it-integral/ae-tendsto-average-icc.md): a real-valued differentiation theorem along any intervals $[a_n, b_n]$ with lengths tending to $0$ and $|u - (a_n + b_n)/2| \le 2(b_n - a_n)$; it contains the real-valued case of the dyadic theorem, since $x$ lies in its dyadic interval $I_n(x)$, at distance at most half the length from the midpoint.
+- [Haar system](../../wavelets/haar-system/README.md): the Haar wavelets live on the same dyadic intervals; the averages of $f$ over the level-$k$ dyadic intervals are the orthogonal projection of $f$ onto the Haar approximation space $V_k$ of S. Mallat's multiresolution framework ($A_k f$ is the same average taken for $\|f\|$).
 - [Convergence of Fourier series](../../fourier-series/convergence-of-fourier-series/README.md): Carleson's theorem on almost-everywhere convergence is proved by a time–frequency refinement of these stopping-time arguments.
 - [Doob's maximal inequalities](../../../../Probability/martingales/doob-s-maximal-inequalities/README.md): on $[0,1)$ the dyadic averages form a martingale and the weak type (1,1) bound is Doob's maximal inequality.
 - [Fundamental solutions of the Laplacian](../../../potential-theory/fundamental-solutions-of-the-laplacian/README.md): the Calderón–Zygmund decomposition is the tool behind $L^p$ bounds for the second derivatives of the Newton potential $\Gamma * f$, the singular integrals that motivate the theory.

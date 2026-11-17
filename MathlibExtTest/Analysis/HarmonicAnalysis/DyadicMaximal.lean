@@ -73,8 +73,9 @@ example : (1 / 2 : ℝ≥0∞) * volume {x | 1 / 2 < dyadicMaximalFunction f₀ 
   simpa [lintegral_f₀] using dyadicMaximalFunction_mul_volume_le_lintegral f₀ (1 / 2)
 
 example : ∀ᵐ x, dyadicMaximalFunction f₀ x ≤ 1 / 2 → ‖f₀ x‖ₑ ≤ 1 / 2 :=
-  (calderonZygmund (f := f₀)
-    (measurable_const.indicator measurableSet_Ico).enorm.aemeasurable (by rw [lintegral_f₀]; exact ENNReal.one_ne_top)
+  (calderon_zygmund (f := f₀)
+    (measurable_const.indicator measurableSet_Ico).enorm.aemeasurable
+    (by rw [lintegral_f₀]; exact ENNReal.one_ne_top)
     (by simp)).2.1
 
 theorem lintegral_f₀_sq : ∫⁻ y, ‖f₀ y‖ₑ ^ (2 : ℝ) = 1 := by
@@ -90,5 +91,12 @@ example : ∫⁻ x, dyadicMaximalFunction f₀ x ^ (2 : ℝ) ≠ ∞ := by
     (measurable_const.indicator measurableSet_Ico).enorm.aemeasurable (by norm_num : (1 : ℝ) < 2))
   rw [lintegral_f₀_sq, mul_one]
   exact ENNReal.ofReal_ne_top
+
+/-- Dyadic Lebesgue differentiation applies to the indicator of the unit interval. -/
+example : ∀ᵐ x, Filter.Tendsto
+    (fun n : ℕ => ⨍ y in dyadicInterval n (dyadicIndex n x), f₀ y) Filter.atTop
+      (nhds (f₀ x)) :=
+  ae_tendsto_setAverage_dyadicInterval
+    ((locallyIntegrable_const (1 : ℝ)).indicator measurableSet_Ico)
 
 end MathlibExtTest.Analysis.HarmonicAnalysis.DyadicMaximal

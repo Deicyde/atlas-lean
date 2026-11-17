@@ -47,8 +47,11 @@ public theorem_wanted exists_volume_abs_sub_average_gt_le :
 /-- **Fefferman's `H¹`–`BMO` inequality.** There is an absolute constant `C > 0` such that for
 every locally integrable `b : ℝ → ℝ` whose mean oscillation over every bounded interval is at
 most `B > 0`, and every bounded, measurable, compactly supported `f : ℝ → ℝ`,
-`|∫ f b| ≤ C B ‖f‖_{H¹}`, where `‖f‖_{H¹} = ∫ sup_{t > 0} |P_t * f|` is the `L¹` norm of the
-radial maximal function of the Poisson integral, `P_t(x) = t / (π (t² + x²))`. This is the
+`|∫ f b| ≤ C B ‖f‖_{H¹}`, where `‖f‖_{H¹} = ∫ sup_{|y - x| ≤ t} |P_t * f (y)| dx` is the `L¹`
+norm of the non-tangential maximal function of the Poisson integral,
+`P_t(x) = t / (π (t² + x²))`; this norm characterizes `H¹(ℝ)` (P. Auscher and E. Russ,
+*Hardy spaces and divergence operators on strongly Lipschitz domains of ℝⁿ*,
+arXiv:math/0201301v1, §1, display (1), citing Fefferman–Stein 1972, Theorem 11). This is the
 inclusion `BMO ⊆ (H¹)*` of the duality theorem `(H¹)* = BMO`
 (C. Fefferman, *Characterizations of bounded mean oscillation*, Bull. Amer. Math. Soc. 77
 (1971), 587–588; C. Fefferman and E. M. Stein, *H^p spaces of several variables*, Acta Math.
@@ -60,7 +63,7 @@ public theorem_wanted exists_enorm_integral_mul_le_poissonMaximal :
       (∀ a c : ℝ, a < c → ⨍ x in Icc a c, |b x - ⨍ y in Icc a c, b y| ≤ B) →
       ∀ f : ℝ → ℝ, Measurable f → (∃ M : ℝ, ∀ x, |f x| ≤ M) → HasCompactSupport f →
         ‖∫ x, f x * b x‖ₑ ≤ ENNReal.ofReal (C * B) *
-          ∫⁻ x, ⨆ t : ℝ, ⨆ (_ : 0 < t),
-            ‖∫ y, t / (Real.pi * (t ^ 2 + (x - y) ^ 2)) * f y‖ₑ
+          ∫⁻ x, ⨆ t : ℝ, ⨆ (_ : 0 < t), ⨆ y : ℝ, ⨆ (_ : |y - x| ≤ t),
+            ‖∫ z, t / (Real.pi * (t ^ 2 + (y - z) ^ 2)) * f z‖ₑ
 
 end MathlibExt.Analysis.HarmonicAnalysis.BoundedMeanOscillationWanted

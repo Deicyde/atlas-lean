@@ -28,11 +28,13 @@ index `⌊x 2^k⌋`, so membership, nesting and the stopping-time argument reduc
   written with Mathlib's `laverage`, and `dyadicMaximalFunction f x` is its supremum over `k`.
 * `mul_volume_lt_dyadicMaximalFunction_le`: `λ |{M_d f > λ}| ≤ ∫_{M_d f > λ} ‖f‖`, for every
   function `f` and every `λ`, with no integrability hypothesis.
-* `ae_tendsto_dyadicAverage`: the dyadic Lebesgue differentiation theorem, obtained from
+* `ae_tendsto_setAverage_dyadicInterval`: the dyadic Lebesgue differentiation theorem for
+  locally integrable Banach-valued `f`, from `IsUnifLocDoublingMeasure.ae_tendsto_average`.
+* `ae_tendsto_dyadicAverage`: its extended-real form for `‖f‖ₑ`, `f` integrable, obtained from
   Mathlib's Vitali-family differentiation theorem for doubling measures
   (`VitaliFamily.ae_tendsto_lintegral_div` and
   `IsUnifLocDoublingMeasure.tendsto_closedBall_filterAt`).
-* `calderonZygmund`: the dyadic Calderón–Zygmund decomposition at height `c`, in terms of
+* `calderon_zygmund`: the dyadic Calderón–Zygmund decomposition at height `c`, in terms of
   stopping levels (`IsStoppingLevel`).
 * `lintegral_rpow_dyadicMaximalFunction_le`: `‖M_d f‖_p ≤ p / (p - 1) ‖f‖_p` for `1 < p < ∞`,
   from the Doob-type inequality, Hölder's inequality, and a Marcinkiewicz bound with constant
@@ -296,6 +298,44 @@ theorem ae_tendsto_dyadicAverage {f : ℝ → E} (hf : AEMeasurable (fun y => �
   simp only [Function.comp_apply, hw, hδ]
   rw [dyadicAverage, setLAverage_eq, setLIntegral_congr hae, measure_congr hae]
 
+/-- **Dyadic Lebesgue differentiation theorem for locally integrable functions.** For every
+locally integrable `f : ℝ → F` with values in a real Banach space, for almost every `x` the
+averages `⨍_{I_n(x)} f` over the level-`n` dyadic intervals containing `x` tend to `f x` as
+`n → ∞` (T. Hytönen, *Dyadic analysis and weights*, lecture notes, University of Helsinki,
+version of 2 May 2014, Theorem 5.1, along dyadic intervals and with `d = 1`). The proof applies
+Mathlib's `IsUnifLocDoublingMeasure.ae_tendsto_average` to the closed intervals
+`[m 2^{-n}, (m + 1) 2^{-n}]`, which differ from the dyadic intervals by a null set. -/
+theorem ae_tendsto_setAverage_dyadicInterval {F : Type*} [NormedAddCommGroup F]
+    [NormedSpace ℝ F] [CompleteSpace F] {f : ℝ → F} (hf : LocallyIntegrable f) :
+    ∀ᵐ x, Tendsto (fun n : ℕ => ⨍ y in dyadicInterval n (dyadicIndex n x), f y) atTop
+      (𝓝 (f x)) := by
+  filter_upwards [IsUnifLocDoublingMeasure.ae_tendsto_average volume hf 1] with x hx
+  set w : ℕ → ℝ := fun n => ((dyadicIndex n x : ℝ) + 1 / 2) / 2 ^ (n : ℤ) with hw
+  set δ : ℕ → ℝ := fun n => ((2 : ℝ) ^ (n : ℤ))⁻¹ / 2 with hδ
+  have hδlim : Tendsto δ atTop (𝓝[>] 0) := by
+    refine tendsto_nhdsWithin_iff.2 ⟨?_, Eventually.of_forall fun n => ?_⟩
+    · have : Tendsto (fun n : ℕ => ((1 : ℝ) / 2) ^ n / 2) atTop (𝓝 (0 / 2)) :=
+        (tendsto_pow_atTop_nhds_zero_of_lt_one (by norm_num) (by norm_num)).div_const 2
+      rw [zero_div] at this
+      refine this.congr fun n => ?_
+      simp [hδ, zpow_natCast]
+    · simp only [hδ, mem_Ioi]; positivity
+  have hmem : ∀ᶠ n in atTop, x ∈ Metric.closedBall (w n) (1 * δ n) := by
+    refine Eventually.of_forall fun n => ?_
+    have hx' : x ∈ dyadicInterval n (dyadicIndex n x) := mem_dyadicInterval_iff.2 rfl
+    have h2 : (0 : ℝ) < 2 ^ (n : ℤ) := zpow_pos two_pos _
+    rw [dyadicInterval, mem_Ico] at hx'
+    rw [one_mul, Real.closedBall_eq_Icc, mem_Icc]
+    have e1 : w n - δ n = (dyadicIndex n x : ℝ) / 2 ^ (n : ℤ) := by
+      simp only [hw, hδ]; field_simp; ring
+    have e2 : w n + δ n = ((dyadicIndex n x : ℝ) + 1) / 2 ^ (n : ℤ) := by
+      simp only [hw, hδ]; field_simp; ring
+    rw [e1, e2]
+    exact ⟨hx'.1, hx'.2.le⟩
+  refine (hx w δ hδlim hmem).congr fun n => ?_
+  simp only [hw, hδ]
+  exact setAverage_congr (dyadicInterval_ae_eq_closedBall _ _).symm
+
 /-- **Pointwise domination by the dyadic maximal function.** Under the hypotheses of the dyadic
 Lebesgue differentiation theorem, `‖f(x)‖ₑ ≤ M_d f(x)` for almost every `x`. -/
 theorem ae_enorm_le_dyadicMaximalFunction {f : ℝ → E} (hf : AEMeasurable (fun y => ‖f y‖ₑ))
@@ -410,7 +450,7 @@ construction in the proof of T. Hytönen, *Dyadic analysis and weights*, lecture
 Helsinki, version of 2 May 2014, Proposition 7.11, with `d = 1` (so `2^d = 2`).
 The good and bad parts `g = f 1_{Ωᶜ} + ∑_Q ⟨f⟩_Q 1_Q`, `b = f - g` are not formed here; their
 bounds follow from the stated properties. -/
-theorem calderonZygmund {f : ℝ → E} (hf : AEMeasurable (fun y => ‖f y‖ₑ))
+theorem calderon_zygmund {f : ℝ → E} (hf : AEMeasurable (fun y => ‖f y‖ₑ))
     (hf' : ∫⁻ y, ‖f y‖ₑ ≠ ∞) {c : ℝ≥0∞} (hc : c ≠ 0) :
     c * volume {x | c < dyadicMaximalFunction f x} ≤ ∫⁻ y, ‖f y‖ₑ ∧
     (∀ᵐ x, dyadicMaximalFunction f x ≤ c → ‖f x‖ₑ ≤ c) ∧
