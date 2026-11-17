@@ -722,4 +722,91 @@ theorem integral_jamesStein_risk_lt {p : ℕ} (hp : 3 ≤ p) (θ : Fin p → ℝ
     nlinarith
   nlinarith
 
+/-- **Mean of the inverse squared norm of a standard Gaussian vector.** For `p ≥ 3` and
+`X ~ N(0, I_p)`, `E[‖X‖⁻²] = 1 / (p - 2)`: the mean of the inverse of a `χ²_p` variable
+(Johnstone, *Gaussian estimation: Sequence and wavelet models*, draft of 16 September 2019,
+equation (2.67)). The proof reads it off the James–Stein risk formula at `θ = 0`. -/
+theorem integral_inv_sum_sq_pi_gaussianReal_zero {p : ℕ} (hp : 3 ≤ p) :
+    ∫ x, (∑ j, x j ^ 2)⁻¹ ∂(Measure.pi fun _ : Fin p => gaussianReal 0 1) = 1 / ((p : ℝ) - 2) := by
+  set P := Measure.pi fun _ : Fin p => gaussianReal 0 1
+  have h := integrable_and_integral_jamesStein_risk hp (fun _ => 0)
+  have hS : ∫ x, ∑ j, x j ^ 2 ∂P = p := by
+    simpa using integral_sum_sq_sub_pi_gaussianReal (p := p) (fun _ => 0)
+  have hSi : Integrable (fun x : Fin p → ℝ => ∑ j, x j ^ 2) P :=
+    integrable_finsetSum _ fun i _ => by
+      simpa using integrable_sq_sub_eval_pi (p := p) (fun _ => 0) i
+  set E := ∫ x, (∑ j, x j ^ 2)⁻¹ ∂P with hE
+  have hp2 : (0 : ℝ) < (p : ℝ) - 2 := by
+    have : (3 : ℝ) ≤ p := by exact_mod_cast hp
+    linarith
+  have hexp : ∫ x, ∑ i, (jamesStein x i - 0) ^ 2 ∂P =
+      p - 2 * ((p : ℝ) - 2) + ((p : ℝ) - 2) ^ 2 * E := by
+    have hae : (fun x : Fin p → ℝ => ∑ i, (jamesStein x i - 0) ^ 2) =ᵐ[P]
+        fun x => (∑ j, x j ^ 2) - 2 * ((p : ℝ) - 2) + ((p : ℝ) - 2) ^ 2 * (∑ j, x j ^ 2)⁻¹ := by
+      filter_upwards [ae_sum_sq_pos (by omega) (fun _ : Fin p => (0 : ℝ))] with x hx
+      simp only [jamesStein, sub_zero, mul_pow]
+      rw [← Finset.mul_sum]
+      field_simp
+      ring
+    rw [integral_congr_ae hae]
+    have hA : Integrable (fun x : Fin p → ℝ => (∑ j, x j ^ 2) - 2 * ((p : ℝ) - 2)) P :=
+      hSi.sub (integrable_const _)
+    rw [integral_add hA (h.1.const_mul _), integral_sub hSi (integrable_const _),
+      integral_const_mul, hS]
+    simp only [P, hE]
+    rw [integral_const]
+    simp only [integral_const_mul]
+    simp
+  have h2 := h.2
+  rw [hexp] at h2
+  have : ((p : ℝ) - 2) * E = 1 := by
+    have h3 : 2 * ((p : ℝ) - 2) ^ 2 * E = 2 * ((p : ℝ) - 2) := by linarith
+    have h4 : 2 * ((p : ℝ) - 2) * (((p : ℝ) - 2) * E - 1) = 0 := by linarith
+    rcases mul_eq_zero.mp h4 with h5 | h5
+    · exact absurd h5 (by positivity)
+    · linarith
+  field_simp
+  linarith
+
+/-- **The James–Stein shrinkage factor estimates `1 / V` without bias.** If `z ~ N(0, V I_p)`
+with `V > 0` and `p ≥ 3`, then `E[(p - 2) / ‖z‖²] = 1 / V`. In the normal–normal model
+`μᵢ ~ N(0, A)`, `zᵢ | μᵢ ~ N(μᵢ, 1)`, the marginal law of `z` is `N(0, V I_p)` with `V = A + 1`
+and the Bayes rule is `(1 - 1/V) zᵢ`; substituting this unbiased estimate for `1 / V` gives the
+James–Stein rule. This is Efron and Morris's empirical Bayes reading of James–Stein, as stated in
+B. Efron, *Tweedie's formula and selection bias*, J. Amer. Statist. Assoc. 106 (2011), equations
+(3.7)–(3.9). -/
+theorem integral_jamesStein_factor_pi_gaussianReal {p : ℕ} (hp : 3 ≤ p) {V : NNReal}
+    (hV : V ≠ 0) :
+    ∫ x, ((p : ℝ) - 2) / ∑ j, x j ^ 2 ∂(Measure.pi fun _ : Fin p => gaussianReal 0 V) =
+      1 / (V : ℝ) := by
+  have hVpos : 0 < (V : ℝ) := NNReal.coe_pos.mpr (pos_iff_ne_zero.mpr hV)
+  set c : ℝ := Real.sqrt V
+  have hc2 : c ^ 2 = V := Real.sq_sqrt hVpos.le
+  have hmap1 : (gaussianReal 0 1).map (c * ·) = gaussianReal 0 V := by
+    rw [gaussianReal_map_const_mul, mul_zero, mul_one]
+    congr 1
+    ext
+    simp [hc2]
+  have hmap : (Measure.pi fun _ : Fin p => gaussianReal 0 1).map (fun x i => c * x i) =
+      Measure.pi fun _ : Fin p => gaussianReal 0 V := by
+    rw [Measure.pi_map_pi (fun _ => (measurable_const_mul c).aemeasurable)]
+    simp only [hmap1]
+  have hmeas : Measurable fun (x : Fin p → ℝ) (i : Fin p) => c * x i := by fun_prop
+  have hFm : Measurable fun x : Fin p → ℝ => ((p : ℝ) - 2) / ∑ j, x j ^ 2 :=
+    measurable_const.div (by fun_prop)
+  rw [← hmap, integral_map hmeas.aemeasurable hFm.aestronglyMeasurable]
+  have hpt : ∀ x : Fin p → ℝ, ((p : ℝ) - 2) / ∑ j, (c * x j) ^ 2 =
+      ((p : ℝ) - 2) / V * (∑ j, x j ^ 2)⁻¹ := by
+    intro x
+    simp only [mul_pow, hc2, ← Finset.mul_sum]
+    by_cases hx : ∑ j, x j ^ 2 = 0
+    · simp [hx]
+    · field_simp
+  simp_rw [hpt]
+  rw [integral_const_mul, integral_inv_sum_sq_pi_gaussianReal_zero hp]
+  have hp2 : (0 : ℝ) < (p : ℝ) - 2 := by
+    have : (3 : ℝ) ≤ p := by exact_mod_cast hp
+    linarith
+  field_simp
+
 end ProbabilityTheory

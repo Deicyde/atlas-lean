@@ -72,4 +72,15 @@ example : ∫ x, ∑ i, (jamesStein x i - 0) ^ 2 ∂(Measure.pi fun _ : Fin 3 =>
   rw [integral_sum_sq_sub_pi_gaussianReal] at h
   simpa using h
 
+/-- The mean of `‖X‖⁻²` for `X ~ N(0, I_3)` is `1 / (3 - 2) = 1`. -/
+example : ∫ x, (∑ j, x j ^ 2)⁻¹ ∂(Measure.pi fun _ : Fin 3 => gaussianReal 0 1) = 1 := by
+  rw [integral_inv_sum_sq_pi_gaussianReal_zero (le_refl 3)]
+  norm_num
+
+/-- The James–Stein factor `(p - 2)/‖z‖²` estimates `1 / V` without bias: `p = 3`, `V = 2`. -/
+example : ∫ x, ((3 : ℕ) - 2 : ℝ) / ∑ j, x j ^ 2
+    ∂(Measure.pi fun _ : Fin 3 => gaussianReal 0 2) = 1 / 2 := by
+  have h := integral_jamesStein_factor_pi_gaussianReal (le_refl 3) (V := 2) two_ne_zero
+  simpa using h
+
 end MathlibExtTest.Probability.Statistics.SteinLemma
