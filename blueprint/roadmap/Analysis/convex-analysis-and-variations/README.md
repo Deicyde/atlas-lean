@@ -12,6 +12,7 @@ Convex functions and sets in analysis and optimization: first-order and second-o
 - [Gradient descent](gradient-descent/README.md)
 - [Lagrange duality](lagrange-duality/README.md)
 - [Lipschitz regularization by inf-convolution](lipschitz-regularization-by-inf-convolution/README.md)
+- [Lower complexity bounds for first-order methods](lower-complexity-bounds-for-first-order-methods/README.md)
 - [Mirror descent](mirror-descent/README.md)
 - [Mirror-prox method](mirror-prox-method/README.md)
 - [Moreau decomposition](moreau-decomposition/README.md)

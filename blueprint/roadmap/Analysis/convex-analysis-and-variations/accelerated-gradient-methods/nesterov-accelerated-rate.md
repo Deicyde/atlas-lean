@@ -26,6 +26,7 @@ The method couples a gradient step ($y$) with a dual-averaging step of growing w
 
 - [Sublinear rate of gradient descent for smooth convex functions](../gradient-descent/gradient-descent-convex-sublinear-rate.md): the unaccelerated $O(1/k)$ rate under the same hypotheses.
 - [Su–Boyd–Candès rate](su-boyd-candes-rate.md): the continuous-time limit of this method and its $O(1/t^2)$ rate, with $t \approx k/\sqrt{L}$.
+- [Lower complexity bound for smooth convex minimisation](../lower-complexity-bounds-for-first-order-methods/exists-lower-bound-smooth-convex.md): no method querying only gradients can improve the order $1/k^2$ while $k \le (n-1)/2$.
 
 ## Sources
 
