@@ -12035,6 +12035,7 @@
 "Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_gaussianPDFReal": "c5af40097d478b6d",
 "Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_linRegLikelihoodPDFReal": "b64a173ec6e45f5a",
 "Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_linRegLikelihoodPDFReal'": "14080085ae02afc8",
+"Cslib.MachineLearning.Bayesian.gaussianPosteriorMean_gaussianReal_eq_normalPostMean": "9cfb5240b5561e6d",
 "Cslib.MachineLearning.Bayesian.inv_linRegPostVar": "2bf1481f5976ab3d",
 "Cslib.MachineLearning.Bayesian.inv_normalPostVar": "6b9203469c4e03c7",
 "Cslib.MachineLearning.Bayesian.isMAP_iff": "16caef1622b04587",

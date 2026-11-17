@@ -12,3 +12,7 @@ Only the finite-sum calculus is formalized. That `p` is the density of `Î» X + Ï
 the identity that S. Mei and Y. Wu, *Deep networks as denoising algorithms: sample-efficient
 learning of diffusion models in high-dimensional graphical models*, arXiv:2309.11420 (version 1),
 page 5, state without proof for general laws of `X`; the general case is not proved here.
+
+## Background
+
+- [Tweedie's formula](../../../../Probability/bayesian-statistics/empirical-bayes-and-tweedie-s-formula/gaussian-posterior-mean-eq-add-mul-deriv.md): the one-dimensional formula for an arbitrary prior on the mean, with the posterior mean identified with a conditional expectation when the prior has a finite first moment; it covers the general one-dimensional case that this page leaves open.

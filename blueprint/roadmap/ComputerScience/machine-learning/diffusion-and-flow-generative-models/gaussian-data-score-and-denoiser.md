@@ -71,6 +71,8 @@ This page is an AI-authored exposition; it has no Lean formalization in this lib
 
 ## Background
 
+- [Tweedie's formula](../../../Probability/bayesian-statistics/empirical-bayes-and-tweedie-s-formula/gaussian-posterior-mean-eq-add-mul-deriv.md):
+  background, the general formula $\mathbb E[\mu \mid x] = x + \sigma^2 (\log f)'(x)$ for an arbitrary prior, proved in dimension one; (d) above is its Gaussian-data case in dimension $D$.
 - [The quadratic form of a symmetric matrix in an orthonormal eigenbasis](../../../LinearAlgebra/positive-definite-matrices/von-neumann-s-trace-inequality/inner-to-euclidean-lin-self-eq-sum.md):
   background, it uses the real orthonormal eigenbasis of a real symmetric matrix from the spectral
   theorem, which is the basis in the spectral form above; the basis-free statements do not need it.
