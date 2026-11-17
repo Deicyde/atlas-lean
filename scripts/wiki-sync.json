@@ -25754,6 +25754,7 @@
 "MathlibExt.LinearAlgebra.Matrix.LUDecompositionWanted.exists_lu_decomposition_of_minors_ne_zero": "6864e9818a197994",
 "MathlibExt.LinearAlgebra.Matrix.LUDecompositionWanted.lu_decomposition_unique": "c8a60fcdb86fbb3b",
 "MathlibExt.LinearAlgebra.Matrix.LiebConcavityWanted.lieb_concavity": "2661243ba6534c00",
+"MathlibExt.LinearAlgebra.Matrix.LiebConcavityWanted.lieb_concavity_trace_rpow": "6ed8e8f5adff6b3b",
 "MathlibExt.LinearAlgebra.Matrix.LowRankRecovery.IsRestrictedIsometry": "2158f1b9f5e89ca2",
 "MathlibExt.LinearAlgebra.Matrix.LowRankRecovery.eq_of_isRestrictedIsometry_two_mul": "4d87de543b34e7a6",
 "MathlibExt.LinearAlgebra.Matrix.LowRankRecovery.nuclearNorm": "253fa32f9cf275ad",
