@@ -27,6 +27,15 @@
 - [Relabelling the letters of an ω-word](satisfies-map.md)
 - [Membership in the language of a formula](mem-language.md)
 
+## Token encoding
+
+- [Token encoding of an LTL formula](tokens.md)
+- [One token per occurrence](length-tokens.md)
+- [Fuelled parsing of LTL tokens](parse-fuel.md)
+- [Parsing inverts the token encoding](parse-fuel-tokens.md)
+- [Decoding a token list](decode-list.md)
+- [Decoding inverts the token encoding](decode-list-tokens.md)
+
 ## Related topics
 
 - [Büchi automata for a fragment of linear temporal logic](../b-chi-automata-for-a-fragment-of-linear-temporal/README.md): direct automata for invariants, recurrence, persistence and a safety fragment.
