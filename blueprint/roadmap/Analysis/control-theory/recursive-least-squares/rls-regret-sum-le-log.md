@@ -18,7 +18,7 @@ Source: Xie, Zhang and Guo, *Convergence of a distributed least squares*, IEEE T
 restricted to the event $\sum_k |\varphi_k|^2 = \infty$, where $\log(1 + \sum_{k \le t} |\varphi_k|^2)$ and the source's
 $\log r_t$ differ by a factor tending to one. Without the restriction the bound cannot hold literally: with
 $P_0 = 100 I$ in dimension one, $\varphi_0 = 0.1$ and $\varphi_k = 0$ for $k \ge 1$, $r_t = 0.01 + 0.01 = 0.02$, so
-$\log r_t < 0$, while $R_0 = 0.01 (\theta_0 - \theta)^2 > 0$ whenever $\theta_0 \ne \theta$.
+$\log r_t < 0$, while $R_0 = 0.01 (\theta_0 - \theta)^2 > 0$ whenever $\theta_0 \ne \theta$. (The source's $O(b_t)$ is defined only for positive $b_t$, Section II.A; here $\log r_t \le 0$, so the stated bound is either undefined or, read as $\|A_t\| \le M \log r_t$, false.)
 
 ## Informally uses
 

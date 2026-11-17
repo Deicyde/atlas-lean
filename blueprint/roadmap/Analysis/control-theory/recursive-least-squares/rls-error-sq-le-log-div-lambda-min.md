@@ -23,7 +23,7 @@ non-integrable function is zero. It is restricted to the event $\sum_k |\varphi_
 $\log(1 + \sum_{k \le t} |\varphi_k|^2)$ and the source's $\log r_t$, $r_t = \lambda_{\max}(P_0^{-1}) + \sum_{k \le t} |\varphi_k|^2$,
 differ by a factor tending to one. Without such a restriction the bound $O(\log r_t / \lambda_{\min}(t))$ cannot hold
 literally in degenerate cases: with $P_0 = I$ and $\varphi_k = 0$ for all $k$, $r_t = 1$ and $\log r_t = 0$, while
-$\theta_t = \theta_0$ for all $t$, so the error is $|\theta_0 - \theta|^2 \ne 0$ whenever $\theta_0 \ne \theta$.
+$\theta_t = \theta_0$ for all $t$, so the error is $|\theta_0 - \theta|^2 \ne 0$ whenever $\theta_0 \ne \theta$. (The source's $O(b_t)$ is defined only for positive $b_t$, Section II.A; here $\log r_t \le 0$, so the stated bound is either undefined or, read as $\|A_t\| \le M \log r_t$, false.)
 
 The hypotheses are jointly satisfiable in a non-degenerate way: $d = 1$, $\varphi_k = 1$, and $w_k$ independent standard
 Gaussian variables with $\mathcal F_k = \sigma(w_1, \dots, w_k)$; then $\lambda_{\min}(t) = P_0^{-1} + t + 1$ and the
