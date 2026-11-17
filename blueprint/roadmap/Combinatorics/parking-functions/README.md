@@ -15,3 +15,9 @@ Parking functions and their variants (partial, weakly increasing, k-Naples, mete
 - [First free cell at or after a hash address](lin-first-free.md)
 - [Occupied cells after linear probing without wrap-around](lin-occ-aux.md)
 - [Linear probing succeeds exactly on partial parking functions](lin-success-iff-is-partial-parking-funct.md)
+
+## Related topics
+
+- [Analysis of linear probing](../../ComputerScience/data-structures/hashing/analysis-of-linear-probing/README.md):
+  linear probing without overflow is parking, and Knuth's 1963 count of non-overflow hash
+  sequences is Pollak's count.

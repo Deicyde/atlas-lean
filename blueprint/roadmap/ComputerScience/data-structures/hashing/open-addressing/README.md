@@ -25,3 +25,8 @@
 - [Open-addressing insertion leaves other keys' bindings unchanged](stored-insert-of-ne.md)
 - [Insertion does not affect lookups of other keys](lookup-insert-of-ne.md)
 - [Failed open-addressing insertion finds every probed slot taken](occupied-of-insert-eq-none.md)
+
+## Related topics
+
+- [Analysis of linear probing](../analysis-of-linear-probing/README.md): Knuth's expected number
+  of probes for the linear-probing probe sequence, with uniformly random hash addresses.

@@ -25,3 +25,8 @@
 ## Time M
 
 - [KMP search on the empty pattern](kmp-search-nil-pattern.md)
+
+## Sources
+
+- D. E. Knuth, J. H. Morris, Jr. and V. R. Pratt, "Fast pattern matching in strings", *SIAM J.
+  Comput.* 6(2) (1977) 323–350, DOI 10.1137/0206024.

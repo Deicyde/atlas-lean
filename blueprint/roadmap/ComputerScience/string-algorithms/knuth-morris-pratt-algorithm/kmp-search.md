@@ -18,3 +18,13 @@ and while $t$ is scanned. List operations, array access and arithmetic cost noth
 
 When the boolean equality is lawful, the returned offset is the least offset at which $p$ occurs
 in $t$, and no offset is returned exactly when $p$ does not occur in $t$.
+
+The paper describes the same scan with 1-based arrays and the improved table `next`; the
+search here uses the plain failure function (the paper's `f`), which gives the same matches and
+the same linear bound.
+
+## Sources
+
+- D. E. Knuth, J. H. Morris, Jr. and V. R. Pratt, "Fast pattern matching in strings", *SIAM J.
+  Comput.* 6(2) (1977) 323–350, DOI 10.1137/0206024, Section 2 (the matching program, its invariant and the
+  computation of `f`).
