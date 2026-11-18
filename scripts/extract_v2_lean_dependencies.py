@@ -14,9 +14,10 @@ definitions), together with what its value reaches when it is a definition (its
 body) or an inductive type (its constructors' types). A theorem's proof
 dependencies are those its value reaches the same way, minus the statement
 ones. Mutually recursive definitions and mutual inductive types depend on each
-other, which a dependency DAG can't show, so statement edges inside such a group
-are left out and the group is listed under "mutual". The build adds the result
-to the articles' Depends on lists; it is never committed.
+other. The DAG omits links within a mutual statement group, gives each member
+the group's external statement dependencies, and records the group under
+"mutual". The build adds the result to the articles' Depends on lists; it is
+never committed.
 """
 
 from __future__ import annotations
@@ -184,6 +185,23 @@ def mutual_groups(edges: dict[str, set[str]]) -> list[list[str]]:
     return sorted(groups)
 
 
+def share_mutual_prerequisites(articles: dict[str, dict]) -> list[list[str]]:
+    """Preserve the external statement prerequisites of every mutual group."""
+    groups = mutual_groups({name: set(entry["statement"]) for name, entry in articles.items()})
+    for group in groups:
+        members = set(group)
+        shared = {use for name in group for use in articles[name]["statement"]} - members
+        statement = sorted(shared)
+        # Autoform's DAG includes proof edges too. Keep member-specific proof
+        # prerequisites that are neither internal nor shared statement uses.
+        omitted = members | shared
+        for name in group:
+            entry = articles[name]
+            entry["statement"] = statement
+            entry["proof"] = [use for use in entry["proof"] if use not in omitted]
+    return groups
+
+
 def main() -> int:
     if len(sys.argv) != 3:
         print(__doc__.strip(), file=sys.stderr)
@@ -218,10 +236,7 @@ def main() -> int:
             "statement": sorted(statement),
             "proof": sorted(proof),
         }
-    groups = mutual_groups({name: set(entry["statement"]) for name, entry in result.items()})
-    for group in groups:
-        for name in group:
-            result[name]["statement"] = [use for use in result[name]["statement"] if use not in group]
+    groups = share_mutual_prerequisites(result)
     output = Path(sys.argv[2])
     output.parent.mkdir(parents=True, exist_ok=True)
     # A target with no compiled row has no module to name its library, so its own name has to. A name outside

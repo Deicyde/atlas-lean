@@ -16,7 +16,7 @@ def row(name: str, kind: str, type_uses: list[str], value_uses: list[str]) -> di
             "type": type_uses, "value": value_uses}
 
 
-def run_extract(rows: list[dict], articles: list[str]) -> dict:
+def extract_payload(rows: list[dict], articles: list[str]) -> dict:
     with tempfile.TemporaryDirectory() as directory:
         dump = Path(directory) / "dump.jsonl"
         dump.write_text("".join(json.dumps(r) + "\n" for r in rows))
@@ -24,7 +24,11 @@ def run_extract(rows: list[dict], articles: list[str]) -> dict:
         with patch.object(extract, "article_manifest", lambda: set(articles)), \
                 patch("sys.argv", ["extract", str(dump), str(output)]):
             assert extract.main() == 0
-        return json.loads(output.read_text())["articles"]
+        return json.loads(output.read_text())
+
+
+def run_extract(rows: list[dict], articles: list[str]) -> dict:
+    return extract_payload(rows, articles)["articles"]
 
 
 class Buckets(unittest.TestCase):
@@ -87,11 +91,26 @@ class MissingRows(unittest.TestCase):
 
 
 class Mutual(unittest.TestCase):
-    def test_mutual_definitions_drop_their_edges_to_each_other(self) -> None:
+    def test_mutual_definitions_share_external_statement_prerequisites(self) -> None:
+        payload = extract_payload(
+            [row("E", "def", [], []), row("F", "def", [], []), row("Win", "def", [], ["Lose", "E"]),
+             row("Lose", "def", [], ["Win", "F"]), row("Play", "theorem", ["Lose"], [])],
+            ["E", "F", "Win", "Lose", "Play"])
+        self.assertEqual(payload["mutual"], [["Lose", "Win"]])
+        found = payload["articles"]
+        self.assertEqual(found["Win"]["statement"], ["E", "F"])
+        self.assertEqual(found["Lose"]["statement"], ["E", "F"])
+        self.assertEqual(found["Play"]["statement"], ["Lose"])
+
+    def test_mutual_proof_edges_exclude_group_members_and_shared_statements(self) -> None:
         found = run_extract(
-            [row("E", "def", [], []), row("Win", "def", [], ["Lose", "E"]), row("Lose", "def", [], ["Win"])],
-            ["E", "Win", "Lose"])
-        self.assertEqual((found["Win"]["statement"], found["Lose"]["statement"]), (["E"], []))
+            [row("A", "theorem", ["B"], ["C", "E", "P"]), row("B", "def", [], ["C", "E"]),
+             row("C", "def", [], ["A"]), row("E", "def", [], []), row("P", "theorem", [], [])],
+            ["A", "B", "C", "E", "P"])
+        self.assertEqual(found["A"]["statement"], ["E"])
+        self.assertEqual(found["A"]["proof"], ["P"])
+        self.assertEqual(found["B"]["proof"], [])
+        self.assertEqual(found["C"]["proof"], [])
 
     def test_groups(self) -> None:
         edges = {"a": {"b"}, "b": {"c"}, "c": {"a"}, "d": {"a"}, "e": {"e"}, "f": set()}
