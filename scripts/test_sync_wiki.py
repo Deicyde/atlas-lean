@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import io
 import json
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
@@ -498,15 +500,75 @@ class Declarations(Vault):
         self.assertEqual((wiki.ROADMAP / "Algebra" / "README.md").read_text(),
                          "# Algebra\n\n- [Fields](fields/README.md)\n- [Rings](rings/README.md)\n")
 
-    def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
+    def test_sync_keeps_changed_docstrings_pending_until_reviewed(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
-        self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
+        old = self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
         self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.old"}}])])
-        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")], INDEX)["changed"], [])
-        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")], INDEX)["changed"], [])
-        changed = sync.apply_declarations([declaration("Ext.old", "old", "Old", "Second.")], INDEX)["changed"]
-        self.assertEqual(changed, ["Ext.old (Algebra/groups/old.md)"])
-        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "old.md").read_text(), "# Old\n\nWiki text.\n")
+        initial = {"Ext.old": sync.digest("First.")}
+        sync.STATE.write_text(json.dumps({"docstrings": initial}))
+        targets = [
+            declaration("Ext.old", "old", "Old", "Second."),
+            declaration("Ext.new", "new", "New", "New text."),
+        ]
+        for _ in range(2):
+            self.assertEqual(sync.apply_declarations(targets, INDEX)["changed"], ["Ext.old (Algebra/groups/old.md)"])
+            self.assertEqual(json.loads(sync.STATE.read_text())["docstrings"], initial | {"Ext.new": sync.digest("New text.")})
+            self.assertEqual(old.read_text(), "# Old\n\nWiki text.\n")
+
+    def test_report_only_leaves_the_vault_and_baseline_untouched(self) -> None:
+        self.page("Algebra/old.md", "# Old\n\nWiki text.\n")
+        self.page("Algebra/gone.md", "# Gone\n")
+        self.page("Algebra/unreviewed.md", "# Unreviewed\n")
+        self.annotate([
+            self.about(f"Algebra/{short}.md", object=[{"location": {"declaration": f"Ext.{short}"}}])
+            for short in ("old", "gone", "unreviewed")
+        ])
+        reviewed = sync.digest("First.")
+        sync.STATE.write_text(json.dumps({"docstrings": {"Ext.old": reviewed}}))
+        targets = [
+            declaration("Ext.old", "old", "Old", "Second."),
+            declaration("Ext.new", "new", "New", "New text."),
+            declaration("Ext.unreviewed", "unreviewed", "Unreviewed", "Pending text."),
+        ]
+
+        def generate(titles, dependency_file, out, index):
+            out.extend(targets)
+            return {}
+
+        before = {path: path.read_bytes() for path in self.tmp.rglob("*") if path.is_file()}
+        output = io.StringIO()
+        with patch.object(wiki, "generate", generate), patch("autoform_cli.lean.index_project", return_value=INDEX), redirect_stdout(output):
+            self.assertEqual(sync.main(["declarations", "--report-only"]), 0)
+        self.assertEqual({path: path.read_bytes() for path in self.tmp.rglob("*") if path.is_file()}, before)
+        report = json.loads(output.getvalue())
+        self.assertEqual(report["schema"], "atlas-wiki-declaration-report/v1")
+        self.assertEqual(report["new"], [{"declaration": "Ext.new", "module": "Ext.Groups"}])
+        self.assertEqual(report["missing"], [{"declaration": "Ext.gone", "article": "Algebra/gone.md"}])
+        self.assertEqual(report["docstrings_to_review"], [
+            {"declaration": "Ext.old", "article": "Algebra/old.md", "digest": sync.digest("Second."), "reviewed_digest": reviewed},
+            {"declaration": "Ext.unreviewed", "article": "Algebra/unreviewed.md", "digest": sync.digest("Pending text."),
+             "reviewed_digest": None},
+        ])
+
+    def test_acknowledgements_are_exact_and_leave_other_docstrings_pending(self) -> None:
+        names = ("one", "two")
+        pages = {short: self.page(f"Algebra/{short}.md", "# Reviewed separately\n") for short in names}
+        self.annotate([
+            self.about(f"Algebra/{short}.md", object=[{"location": {"declaration": f"Ext.{short}"}}])
+            for short in names
+        ])
+        original = json.dumps({"docstrings": {f"Ext.{short}": sync.digest("Old.") for short in names}})
+        sync.STATE.write_text(original)
+        targets = [declaration(f"Ext.{short}", short, short.title(), f"New {short}.") for short in names]
+        inventory = sync.DeclarationInventory.read(targets)
+        acknowledged = f"Ext.one={sync.digest('New one.')}"
+        with self.assertRaisesRegex(ValueError, "rerun --report-only"):
+            inventory.acknowledge([acknowledged, f"Ext.two={sync.digest('Old.')}"])
+        self.assertEqual(sync.STATE.read_text(), original)
+        inventory.acknowledge([acknowledged])
+        pending = sync.DeclarationInventory.read(targets).pending_docstrings()
+        self.assertEqual([row["declaration"] for row in pending], ["Ext.two"])
+        self.assertTrue(all(path.read_text() == "# Reviewed separately\n" for path in pages.values()))
 
 
 class Titles(unittest.TestCase):

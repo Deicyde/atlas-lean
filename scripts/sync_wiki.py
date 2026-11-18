@@ -4,6 +4,8 @@
     python scripts/sync_wiki.py import TITLES.jsonl DEPENDENCIES.json   seed blueprint/ once from the Lean docstrings
     python scripts/sync_wiki.py lean-facts DEPENDENCIES.json            the Lean's facts, at build; never committed
     python scripts/sync_wiki.py declarations                            new declarations' pages, after an upstream merge
+    python scripts/sync_wiki.py declarations --report-only              report changes as JSON without writing
+    python scripts/sync_wiki.py declarations --acknowledge NAME=DIGEST  record an editorial decision without adding pages
 
 The wiki owns every page's text: titles, statements, sources, prose and the page
 tree under blueprint/roadmap/. Each article's annotation in blueprint/links/
@@ -18,10 +20,10 @@ order, and marks it as taken from the docstring. A module with no pages yet gets
 the folders and folder pages generate_wiki lays out where scripts/taxonomy.json
 places it, and its topmost new folder joins its parent's list. A deprecated
 declaration gets no page: upstream is retiring it, and the wiki may have dropped
-its page. It lists pages whose declaration is gone and docstrings that changed
-since the last run (scripts/wiki-sync.json keeps their digests), and changes no
-article that exists. Its first run records the digests only. The source-derived
-area catalog and coverage summary are refreshed with the same source snapshot.
+its page. It lists pages whose declaration is gone and docstrings that differ
+from the reviewed baseline in scripts/wiki-sync.json. It leaves existing
+articles and their reviewed digests alone. The source-derived area catalog and
+coverage summary are refreshed with the same source snapshot.
 
 import runs once, on a tree whose Lean still holds the wiki's English. TITLES.jsonl
 holds checked titles, one {"file", "name", "opening", "title"} per line: a
@@ -34,12 +36,14 @@ Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
 import sys
 import unicodedata
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 
 if __package__:
@@ -478,14 +482,82 @@ def deprecated(target) -> bool:
     return False
 
 
+@dataclass
+class DeclarationInventory:
+    files: dict[Path, list[dict]]
+    pages: dict[str, Path]
+    current: dict[str, wiki.Target]
+    reviewed: dict[str, str]
+
+    @classmethod
+    def read(cls, targets: list[wiki.Target]) -> DeclarationInventory:
+        files = read_annotations()
+        pages = {key: subject_path(a) for rows in files.values() for a in rows if (key := annotation_key(a))}
+        current = {declaration_key(target): target for target in targets}
+        reviewed = json.loads(STATE.read_text())["docstrings"] if STATE.is_file() else {}
+        return cls(files, pages, current, reviewed)
+
+    def new_targets(self):
+        for key, target in sorted(self.current.items()):
+            if key not in self.pages and not deprecated(target):
+                yield key, target
+
+    def missing(self, index) -> list[dict[str, str]]:
+        # A page without a docstring still has Lean unless the declaration itself is gone.
+        return [
+            {"declaration": key, "article": path.relative_to(wiki.ROADMAP).as_posix()}
+            for key, path in sorted(self.pages.items())
+            if key not in self.current and not declared(key, index)
+        ]
+
+    def pending_docstrings(self) -> list[dict[str, str | None]]:
+        pending = []
+        for key, path in sorted(self.pages.items()):
+            if key not in self.current:
+                continue
+            observed = digest(self.current[key].description)
+            if self.reviewed.get(key) != observed:
+                pending.append({
+                    "declaration": key,
+                    "article": path.relative_to(wiki.ROADMAP).as_posix(),
+                    "digest": observed,
+                    "reviewed_digest": self.reviewed.get(key),
+                })
+        return pending
+
+    def save_reviewed(self, updates: dict[str, str]) -> None:
+        reviewed = self.reviewed | updates
+        if reviewed != self.reviewed:
+            STATE.write_text(json.dumps({"docstrings": dict(sorted(reviewed.items()))}, indent=0, ensure_ascii=False) + "\n")
+
+    def acknowledge(self, requests: list[str]) -> None:
+        updates = {}
+        for request in requests:
+            key, sep, observed = request.partition("=")
+            if not sep or not key or not observed:
+                raise ValueError(f"expected DECLARATION=DIGEST, got {request!r}")
+            if key not in self.current or key not in self.pages or not self.pages[key].is_file():
+                raise ValueError(f"{key}: no existing wiki article with a current Lean docstring")
+            if observed != digest(self.current[key].description):
+                raise ValueError(f"{key}: the reviewed digest doesn't match the current docstring; rerun --report-only")
+            updates[key] = observed
+        self.save_reviewed(updates)
+
+
 def apply_declarations(targets: list, index, generated: dict[Path, str] | None = None) -> dict[str, list[str]]:
     """Pages for new declarations, and the report; see the module docstring. ``generated`` holds generate_wiki's
     pages by path, whose folder pages a new page's folder takes when it has none."""
     generated = generated or {}
-    files = read_annotations()
-    pages = {annotation_key(a): subject_path(a) for rows in files.values() for a in rows if annotation_key(a)}
-    current = {declaration_key(target): target for target in targets}
-    report: dict[str, list[str]] = {"added": [], "folders": [], "gone": [], "changed": []}
+    inventory = DeclarationInventory.read(targets)
+    files, pages, current = inventory.files, inventory.pages, inventory.current
+    report: dict[str, list[str]] = {
+        "added": [], "folders": [],
+        "gone": [f"{row['declaration']} ({row['article']})" for row in inventory.missing(index)],
+        "changed": [], "unreviewed": [],
+    }
+    for row in inventory.pending_docstrings():
+        kind = "unreviewed" if row["reviewed_digest"] is None else "changed"
+        report[kind].append(f"{row['declaration']} ({row['article']})")
     folders: dict[tuple[str, ...], Counter] = defaultdict(Counter)
     for key, target in current.items():
         if key in pages:
@@ -494,9 +566,8 @@ def apply_declarations(targets: list, index, generated: dict[Path, str] | None =
     for target in sorted(targets, key=lambda target: target.idx):
         in_source_order[target.module].append(target)
     created: dict[Path, str] = {}
-    for key, target in sorted(current.items()):
-        if key in pages or deprecated(target):
-            continue
+    added_digests = {}
+    for key, target in inventory.new_targets():
         # Beside the module's pages, else on the generated path. A folder with no page of its own takes the folder
         # pages generate_wiki lays out on the way to it; without them, the deepest folder on the way that has one.
         folder = folders[target.module].most_common(1)[0][0] if folders[target.module] else target.path.parent
@@ -547,6 +618,8 @@ def apply_declarations(targets: list, index, generated: dict[Path, str] | None =
         files.setdefault(links_file(target.path), []).append(annotation)
         pages[key] = target.path
         report["added"].append(f"{key} -> {target.path.relative_to(wiki.ROADMAP)}")
+        added_digests[key] = digest(target.description)
+
     def title(path: Path) -> str | None:
         if path.is_file():
             return page_heading(path.read_text()) or path.stem
@@ -572,20 +645,8 @@ def apply_declarations(targets: list, index, generated: dict[Path, str] | None =
             link = f"{readme.parent.name}/README.md"
             position = order.index(link) if link in order else len(order)
             add_to_listing(parent, f"- [{wiki.link_text(title(readme))}]({link})", order[:position], order[position + 1:])
-    # A declaration upstream never documented keeps its page; only one the Lean no longer declares is gone.
-    report["gone"] = sorted(
-        f"{key} ({path.relative_to(wiki.ROADMAP)})" for key, path in pages.items() if key not in current and not declared(key, index)
-    )
-    before = json.loads(STATE.read_text())["docstrings"] if STATE.is_file() else None
-    digests = {key: digest(target.description) for key, target in current.items()}
-    if before is not None:
-        report["changed"] = sorted(
-            f"{key} ({pages[key].relative_to(wiki.ROADMAP)})"
-            for key, value in digests.items()
-            if key in before and before[key] != value and key in pages
-        )
-    STATE.write_text(json.dumps({"docstrings": dict(sorted(digests.items()))}, indent=0, ensure_ascii=False) + "\n")
     write_annotations(files)
+    inventory.save_reviewed(added_digests)
     return report
 
 
@@ -596,16 +657,39 @@ def refresh_catalog(generated: dict[Path, str]) -> None:
         path.write_text(generated[path])
 
 
-def run_declarations() -> int:
+def run_declarations(argv: list[str]) -> int:
     from autoform_cli.lean import index_project
 
+    parser = argparse.ArgumentParser(prog="sync_wiki.py declarations")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--report-only", action="store_true", help="report new, missing and changed declarations as JSON")
+    mode.add_argument("--acknowledge", metavar="DECLARATION=DIGEST", action="append", help="record reviewed docstrings only")
+    args = parser.parse_args(argv)
     index = index_project(wiki.ROOT, exclude_roots=("v1", "Atlas"))
-    targets: list = []
+    targets: list[wiki.Target] = []
     generated = wiki.generate(None, None, targets, index)
+    if args.report_only:
+        inventory = DeclarationInventory.read(targets)
+        report = {
+            "schema": "atlas-wiki-declaration-report/v1",
+            "new": [{"declaration": key, "module": ".".join(target.module)} for key, target in inventory.new_targets()],
+            "missing": inventory.missing(index),
+            "docstrings_to_review": inventory.pending_docstrings(),
+        }
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
+    if args.acknowledge:
+        try:
+            DeclarationInventory.read(targets).acknowledge(args.acknowledge)
+        except ValueError as error:
+            print(f"error: {error}", file=sys.stderr)
+            return 1
+        return 0
     report = apply_declarations(targets, index, generated)
     refresh_catalog(generated)
     for kind, title in (("added", "New pages, taken from docstrings"), ("folders", "New folders, as the taxonomy places their modules"),
-                        ("gone", "Pages whose declaration is gone"), ("changed", "Pages whose declaration's docstring changed")):
+                        ("gone", "Pages whose declaration is gone"), ("changed", "Pages whose declaration's docstring changed"),
+                        ("unreviewed", "Existing pages with no reviewed docstring digest")):
         print(f"{title}: {len(report[kind])}")
         for row in report[kind]:
             print(f"  {row}")
@@ -617,8 +701,8 @@ def main(argv: list[str]) -> int:
         return run_import(Path(argv[1]), Path(argv[2]))
     if len(argv) == 2 and argv[0] == "lean-facts":
         return run_lean_facts(Path(argv[1]))
-    if argv == ["declarations"]:
-        return run_declarations()
+    if argv and argv[0] == "declarations":
+        return run_declarations(argv[1:])
     print(__doc__, file=sys.stderr)
     return 2
 

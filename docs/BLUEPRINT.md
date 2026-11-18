@@ -89,19 +89,39 @@ for the libraries' build and trust-policy checks.
 
 ## Maintaining articles
 
+Start with the read-only report after Lean updates:
+
+```sh
+python scripts/sync_wiki.py declarations --report-only > wiki-drift.json
+```
+
+The JSON lists new declaration candidates, missing declarations, and existing
+articles with changed or unreviewed docstrings. Use this mode for recurring
+reports. Before applying additions, check for moves and renames so the existing
+article and its ID can follow the declaration.
+
 ```sh
 python scripts/sync_wiki.py declarations
 ```
 
-Run this deliberately after Lean updates, review its additions, and commit
-only the editorial/source changes. It creates pages for new documented
-non-deprecated declarations, preserves existing article prose, and reports
-removed declarations and changed docstrings. It also refreshes the source-derived
-area catalog and coverage metadata without replacing article prose.
-`scripts/wiki-sync.json` is the
-reviewed docstring-digest baseline. Removed declarations' articles are kept
-as unlinked mathematical articles during rendering until an editor resolves
-the report; no old Lean-source link is fabricated.
+Review the additions and commit only editorial and source changes. The apply
+command creates pages for new documented non-deprecated declarations and
+refreshes the catalog and coverage. It records the initial digest for each
+new page it writes. Existing prose and its reviewed digest stay unchanged;
+unresolved changes keep appearing on subsequent reports.
+
+After reviewing a particular docstring and updating the article or deciding
+to keep its prose, record that decision using the exact declaration and
+digest from the report:
+
+```sh
+python scripts/sync_wiki.py declarations --acknowledge 'DECLARATION=DIGEST'
+```
+
+This command updates only the selected entries in `scripts/wiki-sync.json`.
+It refuses a digest that differs from the current docstring. Commit the
+baseline change with the editorial decision. Removed declarations' articles
+remain unlinked during rendering until an editor rebinds or retires them.
 
 Changing AutoformBot requires a reviewed `.github/autoform-ref` update and
 passing tests. The workflow has no automatic pin push, upstream-sync bot,
