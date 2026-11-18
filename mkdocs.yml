@@ -15,6 +15,9 @@ hooks:
   # Material eagerly builds its search index in every browser tab. Keep one
   # title-only record per page so the ~5,000-page wiki stays bounded.
   - hooks/title_only_search.py
+  # Material indents every navigation item it writes. Cutting that whitespace
+  # keeps each page's text and layout and takes about a fifth off the site.
+  - hooks/squeeze_whitespace.py
 
 # The nav is not listed here. `autoform render` writes it to SUMMARY.md from
 # the vault's own page order, which mkdocs-literate-nav reads, so a project's
@@ -73,6 +76,8 @@ markdown_extensions:
 extra_css:
   - stylesheets/blueprint.css
 
+# mathjax.js loads MathJax once the page is parsed, and blueprint-mermaid.js
+# loads Mermaid only on a page with a diagram, so neither library is listed.
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/blueprint-mermaid.js
