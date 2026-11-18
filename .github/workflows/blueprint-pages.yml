@@ -198,7 +198,15 @@ jobs:
           mkdocs build --strict
 
       - name: Check routes, anchors, and article cards
-        run: python scripts/check_blueprint_site.py site-src site
+        env:
+          PUBLISH_PAGES: ${{ vars.BLUEPRINT_PAGES == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && github.event_name != 'merge_group' }}
+        run: |
+          set -euo pipefail
+          args=(--summary "$GITHUB_STEP_SUMMARY")
+          if [ "$PUBLISH_PAGES" = true ]; then
+            args+=(--max-site-bytes 900000000)
+          fi
+          python scripts/check_blueprint_site.py site-src site "${args[@]}"
 
       - name: Keep dependency diagnostics
         if: always()

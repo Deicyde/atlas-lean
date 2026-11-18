@@ -161,3 +161,8 @@ other branches never upload a Pages artifact or request deployment. Successful
 `main` builds also keep the built site for a day as the `blueprint-site`
 artifact, so it can be downloaded or mirrored while Pages is off. No
 repository setting is changed merely by adding this workflow.
+
+Each run records the uncompressed site size and the sizes of the Autoform and
+MkDocs search indexes. An opted-in Pages build must fit within 900,000,000 bytes,
+leaving 100 MB below the host's 1 GB limit. Check the sizes on the complete
+corpus before enabling Pages or adding sync batches.

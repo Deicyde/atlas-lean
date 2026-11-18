@@ -34,9 +34,9 @@ class NavigationPayloadTests(unittest.TestCase):
     def write_json(self, path: Path, payload: object) -> None:
         self.write(path, json.dumps(payload))
 
-    def check(self) -> tuple[int, str, str]:
+    def check(self, *options: str) -> tuple[int, str, str]:
         stdout, stderr = io.StringIO(), io.StringIO()
-        argv = ["check_blueprint_site.py", str(self.docs), str(self.site)]
+        argv = ["check_blueprint_site.py", str(self.docs), str(self.site), *options]
         with patch.object(sys, "argv", argv), redirect_stdout(stdout), redirect_stderr(stderr):
             result = checker.main()
         return result, stdout.getvalue(), stderr.getvalue()
@@ -120,6 +120,25 @@ class NavigationPayloadTests(unittest.TestCase):
         self.assertEqual(result, 0, stderr)
         self.assertEqual(stderr, "")
         self.assertTrue(stdout.startswith("OK:"), stdout)
+
+    def test_size_gate_counts_bytes_from_the_full_site_before_publishing(self) -> None:
+        card = '<div class="bp-thmwrapper" data-autoform-node-id="lemma">λ</div>'
+        self.write(self.docs / "roadmap/lemma.md", card)
+        self.write(self.site / "roadmap/lemma.html", card)
+        self.write(self.site / "dependencies/index.json", "{}")
+        self.write(self.site / "search/search_index.json", '{"docs":[]}')
+        budget = len(card.encode("utf-8")) + 2 + 11
+        summary = self.site.parent / "summary.md"
+
+        result, _, stderr = self.check("--summary", str(summary), "--max-site-bytes", str(budget))
+        self.assertEqual(result, 0, stderr)
+        self.assertIn(f"Uncompressed site: {budget} bytes", summary.read_text())
+        self.assertIn("`dependencies/index.json`: 2 bytes", summary.read_text())
+        self.assertIn("`search/search_index.json`: 11 bytes", summary.read_text())
+        self.write(self.site / "extra.css", "a")
+        result, _, stderr = self.check("--max-site-bytes", str(budget))
+        self.assertEqual(result, 1)
+        self.assertIn(f"site is {budget + 1} bytes, above the Pages budget of {budget} bytes", stderr)
 
 
 if __name__ == "__main__":
