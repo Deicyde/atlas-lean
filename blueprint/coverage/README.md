@@ -14,10 +14,10 @@ counts cover only the decomposed rows below; they are not repository-wide covera
 
 | Area | Coverage | Evidence |
 | --- | --- | --- |
-| v2 / MathlibExt | DECOMPOSED | [27834 documented public declarations](../roadmap/README.md) across 28 subjects; 378 instances and 6009 undocumented public declarations are not articles. |
-| v2 / CSLibExt | DECOMPOSED | [18336 documented public declarations](../roadmap/README.md) across 10 subjects; 348 instances and 5010 undocumented public declarations are not articles. |
-| v2 / PhyslibExt | DECOMPOSED | [4787 documented public declarations](../roadmap/README.md) across 7 subjects; 112 instances and 5262 undocumented public declarations are not articles. |
-| v2 / WantedExt | DECOMPOSED | [28594 documented public declarations](../roadmap/README.md) across 27 subjects; 282 instances and 334 undocumented public declarations are not articles. |
+| v2 / MathlibExt | DECOMPOSED | [25073 documented public declarations](../roadmap/README.md) across 28 subjects; 348 instances and 5776 undocumented public declarations are not articles. |
+| v2 / CSLibExt | DECOMPOSED | [17316 documented public declarations](../roadmap/README.md) across 7 subjects; 340 instances and 4854 undocumented public declarations are not articles. |
+| v2 / PhyslibExt | DECOMPOSED | [4791 documented public declarations](../roadmap/README.md) across 6 subjects; 112 instances and 5262 undocumented public declarations are not articles. |
+| v2 / WantedExt | DECOMPOSED | [28185 documented public declarations](../roadmap/README.md) across 26 subjects; 280 instances and 326 undocumented public declarations are not articles. |
 | v2 tests (MathlibExtTest, CSLibExtTest, PhyslibExtTest) | OUT | Tests and diagnostics rather than mathematical results. |
 | Atlas/StatisticalMechanics | MAPPED | Standalone Lean files; no roadmap articles yet. |
 | Atlas/FC | MAPPED | Standalone Lean files; no roadmap articles yet. |
