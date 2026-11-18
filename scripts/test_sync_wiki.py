@@ -217,6 +217,16 @@ class LeanFacts(Vault):
         self.assertEqual(row, {"subject": [{"type": "generic", "uri": "../roadmap/Algebra/gone.md"}], "id": "af_1"})
         self.assertEqual((wiki.ROADMAP / "Algebra" / "gone.md").read_text(), "# Gone\n\nRemoved upstream.\n")
 
+    def test_a_docstring_page_that_lost_its_declaration_survives_a_second_run(self) -> None:
+        # The first run drops the page's link and writes its annotation back with OWN's "from" alone.
+        self.page("Algebra/gone.md", "# Gone\n\nRemoved upstream.\n")
+        self.annotate([self.about("Algebra/gone.md", object=[{"location": {"declaration": "Ext.gone"}}],
+                                  extensions={"org.atlas-wiki": {"from": "docstring"}})])
+        sync.apply_lean_facts(SimpleNamespace(declarations={}), {})
+        counts, unlinked = sync.apply_lean_facts(SimpleNamespace(declarations={}), {})
+        self.assertEqual((counts["unresolved"], unlinked), (1, []))
+        self.assertIsNone(sync.annotation_key(sync.read_annotations()[sync.LINKS / "Algebra.jsonl"][0]))
+
 
 def declaration(name: str | None, short: str, title: str, text: str, module=("Ext", "Groups")) -> wiki.Target:
     return wiki.Target(book="Ext", idx=0, title=title, slug=wiki.slugify(short), location="Algebra", description=text,
@@ -319,6 +329,23 @@ class Declarations(Vault):
         self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "README.md").read_text(),
                          "# Groups\n\n## Basics\n\n- [Z](z.md)\n- [A](a.md)\n- [B](b.md)\n- [C](c.md)\n\n"
                          "## Results\n\n- [D](d.md)\n- [E](e.md)\n- [F](f.md)\n")
+
+    def test_a_page_opening_a_section_joins_it_whatever_its_namespace(self) -> None:
+        # The headings come from the doc headings, so a namespace change below one doesn't start a section.
+        self.page("Algebra/groups/README.md", "# Groups\n\n## Basics\n\n- [A](a.md)\n\n## Results\n\n- [E](e.md)\n")
+        for short in "ae":
+            self.page(f"Algebra/groups/{short}.md", f"# {short.upper()}\n")
+        self.annotate([self.about(f"Algebra/groups/{short}.md", object=[{"location": {"declaration": f"Ext.{short}"}}])
+                       for short in "ae"])
+        targets = []
+        for number, (short, labels) in enumerate([("a", ("Basics", "", "Ext.N")), ("d", ("Results", "", "Ext.N")),
+                                                  ("e", ("Results", "", "Ext.M"))]):
+            target = declaration(f"Ext.{short}", short, short.upper(), f"{short}.")
+            target.idx, target.sections = number, labels
+            targets.append(target)
+        sync.apply_declarations(targets, SimpleNamespace(declarations={f"Ext.{short}": None for short in "ade"}))
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "README.md").read_text(),
+                         "# Groups\n\n## Basics\n\n- [A](a.md)\n\n## Results\n\n- [D](d.md)\n- [E](e.md)\n")
 
     def test_a_new_module_joins_a_folder_where_generate_wiki_lists_it(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n- [Late](late.md)\n")

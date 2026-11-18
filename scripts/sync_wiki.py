@@ -216,7 +216,8 @@ def lean_facts_for(name: str | None, own: dict | None, index, sorry) -> tuple[st
         if keyword in wiki.DEFINITION_DECLARATIONS:
             return keyword, None if has_sorry else "formalized"
         return keyword, "stated" if has_sorry else "formalized"
-    if own:
+    # A docstring page that lost its declaration keeps OWN's "from" alone.
+    if own and "module" in own:
         source = wiki.ROOT / Path(*own["module"].split(".")).with_suffix(".lean")
         if source.is_file():
             for line in source.read_text().splitlines():
@@ -339,7 +340,7 @@ def annotation_key(annotation: dict) -> str | None:
     if name:
         return name
     own = annotation.get("extensions", {}).get(OWN)
-    return f"{own['module']}:{own['name']}" if own else None
+    return f"{own['module']}:{own['name']}" if own and "module" in own else None
 
 
 def digest(text: str) -> str:
@@ -495,9 +496,12 @@ def apply_declarations(targets: list, index, generated: dict[Path, str] | None =
             # with its section.
             order = listing(generated.get(readme, ""))
             if target.path.name not in [entry[0] for entry in order]:
-                order = [(target.path.name if other is target else pages[declaration_key(other)].name, other.sections)
-                         for other in in_source_order[target.module]
-                         if other is target or (there := pages.get(declaration_key(other))) and there.parent == folder]
+                here = [other for other in in_source_order[target.module]
+                        if other is target or (there := pages.get(declaration_key(other))) and there.parent == folder]
+                # Grouped as generate_wiki would head them, which is one group when it shows no headings.
+                groups = wiki.module_groups(here) or [""] * len(here)
+                order = [(target.path.name if other is target else pages[declaration_key(other)].name, group)
+                         for other, group in zip(here, groups)]
             listed = set(listed_links(readme))
             position = [entry[0] for entry in order].index(target.path.name)
             earlier = [entry for entry in order[:position] if entry[0] in listed]
