@@ -7,3 +7,6 @@
 - [Maximality of the Benjamini–Hochberg index](le-bh-index.md)
 - [Number of Benjamini–Hochberg rejections](card-bh-rejections.md)
 - [Benjamini–Hochberg FDR control](integral-false-discovery-proportion-bh-r.md)
+- [Benjamini–Hochberg FDR control for super-uniform nulls](integral-false-discovery-proportion-bh-r-2.md)
+- [Harmonic numbers are at least one](one-le-harmonic.md)
+- [Benjamini–Yekutieli FDR control under arbitrary dependence](integral-false-discovery-proportion-bh-r-3.md)

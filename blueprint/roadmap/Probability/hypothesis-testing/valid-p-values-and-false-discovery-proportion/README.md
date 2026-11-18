@@ -1,5 +1,9 @@
 # Valid p-values and false discovery proportion
 
+- [Upper tail of a measure on the natural numbers](upper-tail.md)
+- [Exact upper-tail p-value](upper-tail-pvalue.md)
+- [Upper tails decrease with the cutoff](upper-tail-antitone.md)
+- [Validity of the upper-tail p-value](is-valid-pvalue-upper-tail-pvalue.md)
 - [Valid p-value](is-valid-pvalue.md)
 - [Uniform p-values are valid](is-valid-pvalue-of-has-law-uniform.md)
 - [Number of p-values below a threshold](num-below.md)
