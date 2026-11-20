@@ -1,8 +1,10 @@
 name: Sync upstream main
 
-# Once a day, merges facebookresearch/atlas-lean's main into this fork's wiki
-# branch and publishes the wiki, as long as the merge is clean and the merged
-# wiki still builds.
+# Merges facebookresearch/atlas-lean's main into this fork's wiki branch and
+# publishes the wiki, as long as the merge is clean and the merged wiki still
+# builds. It no longer runs daily: the wiki is now part of
+# facebookresearch/atlas-lean, which publishes it, and this fork's copy stays
+# as it is until its curated pages are there too. Run it by hand if needed.
 #
 # - check merges and builds the wiki without Lean, with a read-only token. It
 #   also writes the report of .github/upstream-sync/statement_changes.py: the
@@ -23,8 +25,6 @@ name: Sync upstream main
 # this workflow to hold the wiki at its current upstream commit.
 
 on:
-  schedule:
-    - cron: "41 5 * * *"
   workflow_dispatch:
 
 permissions: {}
