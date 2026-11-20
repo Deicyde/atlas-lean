@@ -1,3 +1,3 @@
 # PARTITION instance as a list of naturals
 
-A partition instance: a list of natural numbers.
+A PARTITION instance is a finite list of natural numbers; entries may repeat and may be $0$.

@@ -7,4 +7,4 @@ $n \to \infty$.
 
 ## Sources
 
-- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 21 (`jis-2025-25.1.1-cor-21`).
+- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 21.

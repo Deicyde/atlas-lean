@@ -1,4 +1,3 @@
 # Positivity of the island-model equilibrium denominator
 
-The denominator `M - (M - 1) (1 - m) ^ 2` of the equilibrium is positive (at least `1`) for
-`M ≥ 1` and `0 ≤ m ≤ 1`.
+For every natural number $M \ge 1$ and every real $0 \le m \le 1$, $M - (M - 1)(1 - m)^2 > 0$.

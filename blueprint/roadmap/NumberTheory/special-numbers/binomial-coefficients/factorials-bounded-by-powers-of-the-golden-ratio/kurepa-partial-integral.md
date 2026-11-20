@@ -12,4 +12,4 @@ agrees with $\frac{t^n - 1}{t - 1}$ for $t \ne 1$, and the singularity at $t = 1
 
 ## Sources
 
-- Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 1 (the function `!z(x)`) and Sections 3.1-3.3.
+- Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 1 (the function $!z(x)$) and Sections 3.1–3.3.

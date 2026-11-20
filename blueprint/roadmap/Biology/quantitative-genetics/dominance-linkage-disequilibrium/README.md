@@ -1,11 +1,8 @@
 # Dominance linkage disequilibrium
 
-## Dominance LD
+## Genotypes under random union of gametes
 
 - [Two-locus diploid genotype under random union of gametes](random-union.md)
-
-## Random Union
-
 - [Allele frequency at the first locus](freq-a.md)
 - [Allele frequency at the second locus](freq-b.md)
 - [Haplotype variance at the first locus](var-a.md)
@@ -15,6 +12,9 @@
 - [Additive coding at the second locus](add-b.md)
 - [Dominance coding at the first locus](dom-a.md)
 - [Dominance coding at the second locus](dom-b.md)
+
+## Moments of the codings
+
 - [Additive linkage disequilibrium is twice the gametic one](integral-add-a-mul-add-b.md)
 - [Second moment of the additive coding at the first locus](integral-add-a-sq.md)
 - [Second moment of the additive coding at the second locus](integral-add-b-sq.md)
@@ -25,7 +25,7 @@
 - [Correlation of additive codings equals the gametic correlation](add-corr-eq.md)
 - [Dominance LD is the square of additive LD](dom-corr-eq-add-corr-sq.md)
 
-## Dominance LD
+## The dominance encoding
 
 - [Dominance encoding of a biallelic genotype](dominance-encoding.md)
 - [Dominance coding of allele indicators equals the dominance encoding](dom-code-eq-dominance-encoding.md)

@@ -1,4 +1,4 @@
-# Comparators inside $(0, n)$ keep a false value inside $(0, n)$
+# Comparators inside $[0, n)$ keep a false value inside $[0, n)$
 
 Let $n$ be a natural
 number, let $p$ be a list of comparators, each joining two wires in $[0, n)$, and let $f$ assign a

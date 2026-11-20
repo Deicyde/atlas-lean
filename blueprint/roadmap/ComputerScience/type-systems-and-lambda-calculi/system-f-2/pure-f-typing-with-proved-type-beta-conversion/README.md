@@ -1,10 +1,10 @@
-# Pure Fω typing with proved type-beta conversion
+# Typing of pure Fω up to type β-conversion
 
 ## Typing rules
 
 - [Typing rules of pure Fω](typing.md)
 
-## Typing
+## Typing under substitution and renaming
 
 - [Type substitution preserves Fω typing](ty-subst.md)
 - [Type renaming preserves Fω typing](ty-rename.md)

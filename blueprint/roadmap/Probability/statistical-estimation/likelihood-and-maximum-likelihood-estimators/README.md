@@ -1,10 +1,10 @@
 # Likelihood and maximum likelihood estimators
 
-## Probability Theory
+## Definition
 
 - [Normalized density family](normalized-density-family.md)
 
-## Normalized Density Family
+## Likelihood and maximum likelihood
 
 - [Normalized density families are determined by their densities](ext.md)
 - [Population law](law.md)

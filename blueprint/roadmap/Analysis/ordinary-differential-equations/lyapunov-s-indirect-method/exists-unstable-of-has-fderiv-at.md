@@ -1,9 +1,3 @@
 # Lyapunov's indirect method, instability
 
-**Lyapunov's indirect method, instability** (Khalil 2002, Theorem 4.7). If `f` is `C¹`,
-`f x⋆ = 0`, and the Jacobian matrix `A` of `f` at `x⋆` has an eigenvalue with positive real
-part, then `x⋆` is unstable: for some `ε > 0`, every neighbourhood of `x⋆` contains an initial
-point `x₀` from which a solution segment of `x' = f(x)` on some finite interval `[0, T]`
-reaches distance `≥ ε` from `x⋆`. Quantifying over finite segments (rather than only over
-solutions on all of `[0, ∞)`) keeps the statement non-vacuous when solutions blow up in
-finite time.
+Let $\iota$ be a finite set, give $\mathbb{R}^\iota$ the maximum norm, and let $f : \mathbb{R}^\iota \to \mathbb{R}^\iota$ be continuously differentiable with $f(x^\star) = 0$. Suppose the Jacobian matrix $A$ of $f$ at $x^\star$ has a complex eigenvalue $\mu$ with $\operatorname{Re} \mu > 0$. Then $x^\star$ is unstable: there is $\varepsilon > 0$ such that for every $\delta > 0$ there are an initial point $x_0$ with $\|x_0 - x^\star\| < \delta$, a time $T \ge 0$ and a curve $x : \mathbb{R} \to \mathbb{R}^\iota$ with $x(0) = x_0$, $x'(t) = f(x(t))$ for every $t \in [0, T]$, and $\|x(T) - x^\star\| \ge \varepsilon$. Quantifying over solution segments on finite intervals $[0, T]$, rather than over solutions on all of $[0, \infty)$, keeps the statement meaningful when solutions blow up in finite time.

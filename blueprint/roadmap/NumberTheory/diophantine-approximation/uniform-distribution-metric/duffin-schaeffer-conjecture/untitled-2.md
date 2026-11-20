@@ -6,3 +6,7 @@ $\alpha \in [0, 1]$ for which inequality (1.7), $|\alpha - a/q| \le \psi(q)/q$, 
 many solutions $(a, q)$ with $a$ a natural number and $q$ a positive integer such that $a \le q$.
 
 The fractions $a/q$ need not be reduced.
+
+## Sources
+
+- D. Koukoulopoulos and J. Maynard, *On the Duffin–Schaeffer conjecture*, Ann. of Math. 192 (2020), 251–307, inequality (1.7) and Theorem 2.

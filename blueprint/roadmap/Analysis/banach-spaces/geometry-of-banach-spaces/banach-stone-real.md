@@ -7,4 +7,4 @@ onto $C(Y, \mathbb{R})$, then $X$ and $Y$ are homeomorphic.
 
 ## Sources
 
-- S. Banach, Theorie des operations lineaires, 1932 and M. Stone, Trans. Amer. Math. Soc. 41 (1937) 375-381; textbook Semadeni, Banach Spaces of Continuous Functions, 1971; Lean states compact Hausdorff case with Banach-space linear isometric isomorphism implies homeomorphism, real coefficient field specialization.
+- S. Banach, Théorie des opérations linéaires, 1932, and M. H. Stone, Applications of the theory of Boolean rings to general topology, Trans. Amer. Math. Soc. 41 (1937), 375–481, DOI 10.1090/S0002-9947-1937-1501905-7; textbook Semadeni, Banach Spaces of Continuous Functions, 1971. The statement here is the case of real scalars and compact Hausdorff spaces: a linear isometric isomorphism between the spaces of continuous functions implies that the spaces are homeomorphic.

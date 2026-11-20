@@ -6,4 +6,4 @@ operator $E(G_s) = G_{s+1}$.
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 3 (definition of an annihilator).
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), no. 4, 290–304, Section 3 (definition of an annihilator).

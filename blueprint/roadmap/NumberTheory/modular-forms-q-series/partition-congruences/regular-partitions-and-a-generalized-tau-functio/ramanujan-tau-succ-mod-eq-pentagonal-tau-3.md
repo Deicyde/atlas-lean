@@ -8,10 +8,10 @@ $$\tau(n + 1) \equiv \sum_{19P(r) \le n} (-1)^r \tau_5(n - 19P(r) + 1) \pmod{19}
 
 the sum running over all integers $r$ with $19P(r) \le n$.
 
-The source record prints $\tau_5(s)$ in place of $\tau_5(s + 1)$, where $n = 19P(r) + s$;
+The paper prints $\tau_5(s)$ in place of $\tau_5(s + 1)$, where $n = 19P(r) + s$;
 that version is false at $n = 1$. The shifted index comes from the identity
 $\prod_{m \ge 1} (1 - q^m)^5 (1 - q^{19m}) = \sum_{r, s} (-1)^r \tau_5(s + 1) q^{19P(r) + s}$,
-which follows from Definition 1.1 and is used in the proof.
+which follows from Definition 1 and is used in the proof.
 
 ## Sources
 

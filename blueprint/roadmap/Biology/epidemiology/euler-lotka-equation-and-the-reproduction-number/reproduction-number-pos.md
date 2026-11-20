@@ -1,3 +1,5 @@
 # Positivity of the reproductive number
 
-The reproductive number is positive when `M_g(-r)` is finite.
+Let $g$ be a probability measure on $\mathbb{R}$ and $r \in \mathbb{R}$. If $a \mapsto e^{-ra}$ is
+$g$-integrable, then the [reproductive number](reproduction-number.md) of $g$ at growth rate $r$ is
+positive.

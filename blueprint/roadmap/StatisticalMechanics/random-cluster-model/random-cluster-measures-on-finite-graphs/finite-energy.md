@@ -1,6 +1,7 @@
 # Finite-energy property
 
-**Finite-energy property** of the random-cluster measure. For `p ∈ (0, 1)` and `q ≥ 1`, the
-conditional probability that an edge is open given all other edges lies in
-`[cFE p q, 1 - cFE p q]`. For edges of `G` the sharper bounds `p / (p + q (1 - p))` and `p` are
-proved along the way. See G. Grimmett, *The Random-Cluster Model* (2006), Chapter 3.
+Let $G = (V, E)$ be a simple graph on a finite set $V$, $0 < p < 1$ and $q \ge 1$. For every unordered pair $e$ of elements of $V$ and every configuration $\omega$, the [conditional open probability](cond-open.md) $\pi_e(\omega)$ satisfies
+
+$$c_{\mathrm{FE}}(p, q) \le \pi_e(\omega) \le 1 - c_{\mathrm{FE}}(p, q),$$
+
+where $c_{\mathrm{FE}}(p, q) = \min\big(p/(p + q(1 - p)),\ 1 - p\big)$ is the [finite-energy constant](c-fe.md) (Grimmett, *The Random-Cluster Model* (2006), Chapter 3).

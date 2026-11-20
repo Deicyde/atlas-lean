@@ -1,8 +1,3 @@
 # Argmax over an initial segment
 
-For a function $f : \mathbb{N} \to \mathbb{Z}$ and
-$n \in \mathbb{N}$, the argmax of $f$ over $\{0, \dots, n\}$ is the least $k \le n$ such that
-$f(j) \le f(k)$ for all $j \le n$.
-
-It is computed as the first maximizer of $f$ on the list $[0, 1, \dots, n]$, which is never
-empty.
+For an integer-valued function $f$ on the natural numbers and a natural number $n$, the argmax of $f$ over $\{0, \dots, n\}$ is the least $k \le n$ at which $f$ attains its maximum on $\{0, \dots, n\}$.

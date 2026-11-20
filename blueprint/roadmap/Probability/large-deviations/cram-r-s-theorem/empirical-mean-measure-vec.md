@@ -1,6 +1,5 @@
 # Law of the empirical mean
 
-**Law of the empirical mean** `Aₙ = (1/n) ∑_{i<n} Xᵢ` for an `ℝᵈ`-valued sample.
-
-Pushforward of `μ` under the map `ω ↦ (1/n) ∑_{i<n} Xᵢ(ω)`. Ported verbatim
-from v1.
+For random vectors $X_0, X_1, \dots : \Omega \to \mathbb{R}^d$ under a measure $\mu$ and
+$n \in \mathbb{N}$, the law of the empirical mean $A_n = \frac{1}{n} \sum_{i < n} X_i$ is the image
+measure $\mu_n = \mu \circ A_n^{-1}$ on $\mathbb{R}^d$ (with $\frac{1}{0} = 0$, so $A_0 = 0$).

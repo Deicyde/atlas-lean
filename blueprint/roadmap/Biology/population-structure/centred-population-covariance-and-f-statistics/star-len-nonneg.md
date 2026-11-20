@@ -1,5 +1,3 @@
 # Nonnegativity of the matching star-tree edge lengths
 
-The matching star tree has nonnegative edge lengths when `0 ≤ α ≤ 1`, `a, b ≥ 0`, and the
-private drift of `C` is at least `α (1 - α)(a + b)`, i.e. when `f3 C A B ≥ 0` in the admixture
-model.
+Let $0 \le \alpha \le 1$, $a, b \ge 0$ and $c \ge \alpha (1 - \alpha)(a + b)$. Then every [matching star-tree edge length](star-len.md) is nonnegative. The last condition says that $f_3(C; A, B) \ge 0$ in the admixture model: post-admixture drift masks the admixture.

@@ -1,4 +1,3 @@
 # Somatic allelic fraction decreases with copy number
 
-The somatic allelic fraction decreases with the local copy number (`0 ≤ α ≤ 1`,
-`0 ≤ s`, `0 < q ≤ q'`).
+For $0 \le \alpha \le 1$, $0 < q \le q'$ and $s \ge 0$, the [somatic allelic fraction](somatic-af.md) satisfies $f(\alpha, q', s) \le f(\alpha, q, s)$.

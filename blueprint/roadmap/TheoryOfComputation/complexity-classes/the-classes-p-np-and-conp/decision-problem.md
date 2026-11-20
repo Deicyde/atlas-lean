@@ -5,4 +5,4 @@ A decision problem is a function from finite lists of booleans
 
 ## Sources
 
-- inlined from FormalConjectures (absent from Mathlib).
+- Definition adapted from the Formal Conjectures project, https://github.com/google-deepmind/formal-conjectures.

@@ -15,4 +15,4 @@ and the inner sum is empty when $n - k < 3$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set", Journal of Integer Sequences 13 (2010), Article 10.6.8, Corollary 2, lines 388-394, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.tex>.
+- Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set", Journal of Integer Sequences 13 (2010), Article 10.6.8, Corollary 2.10, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.pdf>.

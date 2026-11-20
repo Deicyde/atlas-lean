@@ -1,5 +1,3 @@
-# Van Hove limit
+# Van Hove limit of the random-cluster free energy
 
-**Van Hove limit** of the random-cluster free energy: for `d ≥ 1` and `q ≥ 1`, the per-edge
-free energy on the box `[-n, n]^d` converges. See D. Ruelle, *Statistical Mechanics: Rigorous
-Results* (1969), and G. Grimmett, *The Random-Cluster Model* (2006), Chapter 4.
+For $d \ge 1$, $s \in \mathbb{R}$ and $q \ge 1$, the [per-edge box free energy](fkc-f.md) $f(n)$ of $\Lambda_n = \{-n, \dots, n\}^d$ [converges](fkc-per-edge-density-converges.md) as $n \to \infty$ (D. Ruelle, *Statistical Mechanics: Rigorous Results* (1969); G. Grimmett, *The Random-Cluster Model* (2006), Chapter 4).

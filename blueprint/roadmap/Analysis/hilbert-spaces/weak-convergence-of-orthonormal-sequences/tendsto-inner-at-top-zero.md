@@ -1,4 +1,4 @@
-# Fourier coefficients along an orthonormal sequence tend to `0`
+# Fourier coefficients along an orthonormal sequence tend to $0$
 
 Let $H$ be an inner
 product space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $(v_n)_{n \in \mathbb{N}}$ be

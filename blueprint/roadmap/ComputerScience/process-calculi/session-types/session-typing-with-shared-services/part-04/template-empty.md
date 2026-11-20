@@ -1,4 +1,4 @@
 # Typed service templates retype at empty ownership
 
-Clearing completed template annotations produces the EXACT empty BODY
-required by replica admission; this is not unconditional active-resource erasure.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ an ownership context and $p$ a
+service template for $\Gamma$ with $\Gamma; \Delta \vdash_n p$. Then $\Gamma; \emptyset \vdash_n p$.

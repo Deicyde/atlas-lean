@@ -6,4 +6,4 @@ to the complexity class P.
 
 ## Sources
 
-- M. Agrawal, N. Kayal, and N. Saxena, "PRIMES is in P", Annals of Mathematics 160 (2004), 781-793.
+- Manindra Agrawal, Neeraj Kayal, and Nitin Saxena, "PRIMES is in P", Annals of Mathematics 160 (2004), 781-793.

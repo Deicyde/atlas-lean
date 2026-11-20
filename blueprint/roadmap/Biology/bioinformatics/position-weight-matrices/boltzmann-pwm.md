@@ -1,3 +1,3 @@
 # Boltzmann position weight matrix
 
-The Boltzmann PWM `q b e^{-λ ε i b} / Zᵢ` of an energy matrix `ε`.
+For a background $q$, an energy matrix $\varepsilon_i(b)$ and a real $\lambda$, the Boltzmann matrix has entries $p_i(b) = q(b)\, e^{-\lambda \varepsilon_i(b)} / Z_i$, where $Z_i$ is the [partition function](partition-fn.md) of column $i$, with the convention $x/0 = 0$.

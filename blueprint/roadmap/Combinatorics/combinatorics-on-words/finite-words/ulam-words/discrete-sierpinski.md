@@ -6,4 +6,4 @@ stages $S_n$ of the discrete Sierpiński triangle.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4.
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4.

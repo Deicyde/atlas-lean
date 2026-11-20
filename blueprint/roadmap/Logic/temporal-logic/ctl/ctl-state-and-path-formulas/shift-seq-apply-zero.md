@@ -1,4 +1,4 @@
 # A run shifted by k starts at its k-th state
 
-`(shiftSeq run k) 0 = run k`: the `0 + k` is discharged by
-`Nat.zero_add`.
+For an infinite run and $k \in \mathbb{N}$, the run shifted by $k$ starts at the $k$-th state of
+the run.

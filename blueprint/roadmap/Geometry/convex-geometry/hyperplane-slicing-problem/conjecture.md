@@ -9,4 +9,4 @@ $H$ such that the $(n-1)$-dimensional Lebesgue volume of $\varphi^{-1}(K \cap H)
 
 ## Sources
 
-- `OWR-12337-001` (DOI 10.4171/owr/2013/09), where it is posed as an open problem; it has since been resolved.
+- *Mini-Workshop: Stochastic Analysis for Poisson Point Processes: Malliavin Calculus, Wiener–Itô Chaos Expansions and Stochastic Geometry*, Oberwolfach Reports 10 (2013), 483–520, DOI 10.4171/OWR/2013/09, where it is posed as an open problem; it has since been resolved.

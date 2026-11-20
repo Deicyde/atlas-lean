@@ -10,4 +10,5 @@ minimum-weight member of $\mathcal{F}$ is unique with probability at least $1/2$
 
 ## Sources
 
+- Ketan Mulmuley, Umesh V. Vazirani and Vijay V. Vazirani, *Matching is as easy as matrix inversion*, Combinatorica 7(1) (1987), 105–113.
 - https://en.wikipedia.org/wiki/Isolation_lemma

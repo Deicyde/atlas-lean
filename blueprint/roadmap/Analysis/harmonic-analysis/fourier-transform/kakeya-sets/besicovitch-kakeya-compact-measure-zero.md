@@ -11,4 +11,4 @@ construction.
 
 ## Sources
 
-- A. S. Besicovitch, Math. Z. 27 (1928) 312–320 and S. Kakeya, Tohoku Rep. 6 (1917); Perron-tree gives compact measure-zero Kakeya set; Lean states compact Lebesgue-null oriented version in ℝ² with segments `a+t•v`, `t∈[0, 1]`.
+- A. S. Besicovitch, Math. Z. 27 (1928) 312–320 and S. Kakeya, Tohoku Rep. 6 (1917); Perron-tree gives compact measure-zero Kakeya set. The statement here is the version with a compact Lebesgue-null set in $\mathbb{R}^2$ containing, for every direction $v$, a segment $a + t v$, $t \in [0, 1]$.

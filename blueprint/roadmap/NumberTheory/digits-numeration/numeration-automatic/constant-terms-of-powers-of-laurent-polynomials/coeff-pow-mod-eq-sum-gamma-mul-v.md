@@ -7,7 +7,9 @@ be a natural number with $\deg P \le m + 1$. Write $T = [-m, m]^r \subseteq \mat
 $[x^e]F$ for the coefficient of $x^e$ in a Laurent polynomial $F$. Then for every natural number
 $k < p$, every natural number $n$ and every $i \in T$,
 
-$$[x^{-i}]P^{pn+k} \equiv \sum_{j \in T} [x^{pj - i}]P^k \cdot [x^{-j}]P^n \pmod{p}.$$
+$$
+[x^{-i}]P^{pn+k} \equiv \sum_{j \in T} [x^{pj - i}]P^k \cdot [x^{-j}]P^n \pmod{p}.
+$$
 
 With Kohen's $a^n_i = [x^{-i}]P^n$, $\gamma(k) = (a^k_{i-pj})_{i,j \in T}$ and
 $V(n) = (a^n_i)_{i \in T}$, this is the entrywise form of $\gamma(k) V(n) = V(pn + k)$ over

@@ -9,4 +9,4 @@ For $q \le 1$ the base-$q$ digit expansion is degenerate and $s_q(n) = n$.
 
 ## Sources
 
-- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Section 1 (definition of `s_q` and of `s_q^{(k)}`).
+- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Sections 1 and 2 (definitions of $s_q$ and of $s_q^{(k)}$).

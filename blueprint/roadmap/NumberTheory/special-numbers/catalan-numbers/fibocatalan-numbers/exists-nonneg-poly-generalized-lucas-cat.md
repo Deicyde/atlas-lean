@@ -11,4 +11,4 @@ coefficients.
 
 ## Sources
 
-- Kendra Killpatrick, "Super FiboCatalan Numbers and Their Lucas Analogues", Theorem 4.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, Theorem 4.

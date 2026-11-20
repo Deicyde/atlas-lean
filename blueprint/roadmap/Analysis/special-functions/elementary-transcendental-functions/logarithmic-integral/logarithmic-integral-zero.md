@@ -5,4 +5,4 @@ satisfies $\mathrm{li}(0) = 0$; here $0$ lies in its domain since $0 \ge 0$ and 
 
 ## Sources
 
-- `∫₀⁰ = 0` for Lebesgue interval integrals; holds for any domain proof `hx` with `x = 0`.
+- Immediate from the definition, since $\int_0^0 dt/\log t = 0$; see Shane Chern, *Hitting a prime by rolling a die with infinitely many faces*, arXiv:2306.14073v1 (2023), and M. Boran, J. Byun, Z. Li, S. J. Miller and S. Reyes, *Sums of Powers of Primes in Arithmetic Progression*, arXiv:2309.16007v1 (2023).

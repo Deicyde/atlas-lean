@@ -5,7 +5,7 @@ formal power series $\sum_{n \ge 0} \binom{n+r}{r} t^n$ with integer coefficient
 $\left(\sum_{n \ge 0} \binom{n+r}{r} t^n\right)(1-t)^{r+1} = 1$ in $\mathbb{Z}[[t]]$, that is,
 $\sum_{n \ge 0} \binom{n+r}{r} t^n = 1/(1-t)^{r+1}$.
 
-The paper states this for positive $r$; it holds for every $r \ge 0$ and is stated so.
+The paper states this for positive $r$; the identity holds for every $r \ge 0$.
 
 ## Sources
 

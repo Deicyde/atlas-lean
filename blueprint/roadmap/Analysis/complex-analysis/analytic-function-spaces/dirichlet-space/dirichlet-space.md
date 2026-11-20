@@ -7,4 +7,4 @@ measure. The values of $f$ outside the disc are unconstrained.
 
 ## Sources
 
-- `AMR-022-8011` (Hayman, Research Problems in Function Theory (2018), Problem 8.11, https://arxiv.org/abs/1809.07200).
+- `AMR-022-8011` (W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), Problem 8.11, https://arxiv.org/abs/1809.07200).

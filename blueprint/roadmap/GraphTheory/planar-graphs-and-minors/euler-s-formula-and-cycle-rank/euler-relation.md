@@ -1,4 +1,5 @@
 # Combinatorial Euler relation for finite graphs
 
-The combinatorial Euler relation `|V| + F = |E| + c + 1` for a finite graph, where `F =
-faceCount G` is defined from the cycle rank.
+For every simple graph $G$ on a finite vertex set $V$, with $E$ its edge set, $c$ its number of connected components and $F = \beta(G) + 1$ its face count, where $\beta(G) = |E| + c - |V|$ is the cycle rank,
+
+$$|V| + F = |E| + c + 1.$$

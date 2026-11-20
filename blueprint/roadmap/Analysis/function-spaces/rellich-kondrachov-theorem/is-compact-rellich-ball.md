@@ -1,4 +1,3 @@
 # Rellich–Kondrachov, compactness form
 
-The Rellich ball is compact in
-`ℓ²(ℕ, 𝕜)`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and $M \in \mathbb{R}$. The [Rellich ball](rellich-ball.md) of radius $M$ is a compact subset of $\ell^2(\mathbb{N}, \mathbb{K})$.

@@ -11,4 +11,4 @@ f\!\left(\frac{t^3}{(1-t+t^2)(1-t)}\right).$$
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 32 (`jis-2025-25.3.5-thm-32`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Theorem 32, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-thm-32).

@@ -1,4 +1,3 @@
 # Heterozygosity of a Wright–Fisher state
 
-The heterozygosity `H(j) = 2 (j/M) (1 - j/M)` of state `j`: the probability that two
-gene copies drawn with replacement carry different alleles.
+For a natural number $M$ and a state $j \in \{0, \dots, M\}$, the heterozygosity is $H(j) = 2 z_j (1 - z_j)$ with $z_j = j/M$ (and $j/0 = 0$): the probability that two gene copies drawn with replacement carry different alleles.

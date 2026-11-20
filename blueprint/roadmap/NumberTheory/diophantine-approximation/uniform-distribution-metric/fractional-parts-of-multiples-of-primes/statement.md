@@ -6,4 +6,4 @@ $p_0 = 2, p_1 = 3, p_2 = 5, \dots$ is not well-distributed.
 
 ## Sources
 
-- EP-997 (Erdős Problem #997) [Erdős Problems].
+- Erdős Problem #997, https://www.erdosproblems.com/997.

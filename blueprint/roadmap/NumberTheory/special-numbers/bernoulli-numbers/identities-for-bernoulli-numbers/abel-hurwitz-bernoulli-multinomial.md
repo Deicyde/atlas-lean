@@ -15,4 +15,4 @@ its specialization to rational $x_1, \dots, x_m$.
 
 ## Sources
 
-- Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities," Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition [Abel-Hurwitz-Bernoulli identity] (a), equation (5.16), lines 821–829, https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex
+- Claudio de J. Pita Ruiz V., *Carlitz-Type and Other Bernoulli Identities*, Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition 10 (Abel–Hurwitz–Bernoulli identity) (a), equation (81), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.html>.

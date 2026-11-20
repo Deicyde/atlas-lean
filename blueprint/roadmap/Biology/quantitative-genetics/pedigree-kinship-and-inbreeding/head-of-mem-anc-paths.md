@@ -1,3 +1,3 @@
 # Ancestral paths are nonempty with the starting individual as head
 
-Every path in `ancPaths i` starts at `i` and is nonempty.
+In every [pedigree](pedigree.md), every [ancestral path](anc-paths.md) from $i$ is nonempty and its first element is $i$.

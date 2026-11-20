@@ -13,4 +13,4 @@ $\Delta p_b(n + j) = \Delta p_b(n)$ for all $n \ge 1$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 16 (`jis-2025-25.1.5-lem-16`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 16 (`jis-2025-25.1.5-lem-16`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

@@ -1,3 +1,5 @@
 # Semantic advancement preserves scoping of owned keys
 
-Canonical scope of the whole owned domain is preserved.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ advances semantically to $\Xi$, and $n$
+a natural number. If every endpoint of $\Delta$ has a name scoped at depth $n$, then so does every
+endpoint of $\Xi$.

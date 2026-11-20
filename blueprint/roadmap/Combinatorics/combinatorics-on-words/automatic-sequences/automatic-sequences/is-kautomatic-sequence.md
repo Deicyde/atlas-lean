@@ -11,4 +11,4 @@ digit first) stops in a state $t$ with $\tau(t) = w(n)$.
 
 ## Sources
 
-- Sunic Definition 3, lines 556-560 of `cubefree.tex`. The universal clause over all representing words enforces tolerance of trailing high-order zeros.
+- Zoran Šunić, *Rational Tree Morphisms and Transducer Integer Sequences: Definition and Examples*, Journal of Integer Sequences 10 (2007), Article 07.4.3, Section 3, Definition 3.1 ($k$-ary automatic sequences, read by automata that tolerate trailing zeros), https://cs.uwaterloo.ca/journals/JIS/VOL10/Sunic/cubefree.html. Requiring the output for every digit word representing $n$ is what makes the automaton tolerate trailing high-order zeros.

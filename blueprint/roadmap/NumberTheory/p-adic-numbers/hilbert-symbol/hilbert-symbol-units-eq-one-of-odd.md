@@ -6,4 +6,4 @@ as units of $\mathbb{Q}_p$, equals $1$.
 
 ## Sources
 
-- Lemma 10.5.
+- ATLAS ArithmeticGeometry, Section 10.1, Lemma 10.5.

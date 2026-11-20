@@ -14,4 +14,4 @@ $$A^r(x,u) = A(x,u) \exp\left(-u - x \sum_{j=1}^{r-1} \frac{A_j(x)\, u^{j+1}}{(j
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 32 (`jis-2025-25.5.7-thm-32`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 32.

@@ -1,3 +1,4 @@
 # Protocol tree equivalence is an equivalence relation
 
-The semantic type relation is a genuine equivalence relation.
+Tree equivalence $\simeq$ (bisimilarity of protocol trees) is reflexive, symmetric and transitive on
+protocols.

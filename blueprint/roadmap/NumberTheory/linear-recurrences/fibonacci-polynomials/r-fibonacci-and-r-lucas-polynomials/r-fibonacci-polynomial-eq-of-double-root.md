@@ -1,4 +1,4 @@
-# Binet formula for the r-Fibonacci polynomials with one double zero
+# Binet formula for the $r$-Fibonacci polynomials (one double zero)
 
 Let $K$ be a field
 of characteristic zero, let $r \ge 1$ be a natural number, and let $x, y, \alpha \in K$. Let
@@ -18,4 +18,4 @@ $\alpha = rx/(r+1)$ the double zero) is replaced by the factorization it yields.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.

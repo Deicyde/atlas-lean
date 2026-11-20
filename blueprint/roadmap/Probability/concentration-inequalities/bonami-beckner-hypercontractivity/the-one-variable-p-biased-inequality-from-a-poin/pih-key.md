@@ -1,4 +1,8 @@
 # Pointwise bound behind the p-biased inequality
 
-The pointwise bound `(q/2) m^(q-2) V ≤ (1-p) + p z^q - m^q` for all `z ≥ 0`, with
-`m = pih_m p z`, `V = pih_V p q z`.
+For real $p$ and $q$, the pointwise bound is the statement: for every $z \ge 0$,
+
+$$\frac{q}{2}\, m^{q-2}\, V \le (1 - p) + p z^q - m^q ,$$
+
+where $m = (1 - p) + pz$ is the [mean](pih-m.md) and $V = 4(q-1) p^2 (1-p)^2 (z - 1)^2$ the
+[variance term](pih-v.md).

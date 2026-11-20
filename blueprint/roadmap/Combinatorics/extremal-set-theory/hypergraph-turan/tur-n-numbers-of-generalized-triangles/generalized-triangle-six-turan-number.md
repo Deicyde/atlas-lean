@@ -8,4 +8,4 @@ of $D$ along a map $\{0, \dots, n-1\} \to \{0, \dots, 11\}$.
 
 ## Sources
 
-- AimPL Problem 2.1 (Hypergraph Turán problem), case `k = 6`.
+- AimPL: Hypergraph Turán problem, Problem 2.1, case $k = 6$, http://aimpl.org/hypergraphturan/2/.

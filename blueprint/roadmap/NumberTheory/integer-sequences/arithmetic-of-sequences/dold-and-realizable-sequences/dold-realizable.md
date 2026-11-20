@@ -9,4 +9,4 @@ The divisibility condition alone is the classical Dold condition.
 
 ## Sources
 
-- Wójcik, Lemma 3, for an equivalent form of the Dold condition.
+- Klaudiusz Wójcik, *Binomial Transform and Dold Sequences*, Journal of Integer Sequences 18 (2015), Article 15.1.1, Lemma 6, for an equivalent form of the Dold condition.

@@ -11,4 +11,4 @@ Both sequences are bounded, so these are the classical upper and lower limits in
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 29 (`jis-2025-25.1.5-cor-29`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 29 (`jis-2025-25.1.5-cor-29`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

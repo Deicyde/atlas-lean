@@ -17,4 +17,4 @@ $$\frac{d^s}{du^s} F(x,u) = x^s \Bigl(\prod_{i=0}^{s-1}
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 62 (`jis-2025-25.5.7-thm-62`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 62.

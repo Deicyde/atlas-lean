@@ -9,4 +9,4 @@ The claim fails already for one function.
 
 ## Sources
 
-- S. Ulam, Problem 167 of the Scottish Book; refuted via V. Klee's homeomorphism of the Hilbert sphere onto the whole Hilbert space: composing that homeomorphism with a translation gives a continuous `T` and a continuous `f` with no point `p0` satisfying `f (T p0) = f p0`. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
+- S. Ulam, Problem 167 of the Scottish Book; refuted via V. Klee's homeomorphism of the Hilbert sphere onto the whole Hilbert space: composing that homeomorphism with a translation gives a continuous $T$ and a continuous $f$ with no point $p_0$ satisfying $f(T(p_0)) = f(p_0)$. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).

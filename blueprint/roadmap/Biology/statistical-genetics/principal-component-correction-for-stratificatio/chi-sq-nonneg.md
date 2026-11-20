@@ -1,3 +1,3 @@
 # Nonnegativity of the EIGENSTRAT statistic
 
-The EIGENSTRAT statistic is nonnegative when `K + 1 ≤ N`.
+Let $V \subseteq \mathbb{R}^N$ be a linear subspace and $K$ a natural number with $K + 1 \le N$. Then for all $y, g \in \mathbb{R}^N$ the [EIGENSTRAT statistic](chi-sq.md) is nonnegative.

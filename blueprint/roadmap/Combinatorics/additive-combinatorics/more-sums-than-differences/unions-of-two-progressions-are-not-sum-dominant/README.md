@@ -7,7 +7,7 @@
 - [MSTD set](is-mstdset.md)
 - [A single point is not an MSTD set](not-is-mstdset-singleton.md)
 - [The union of two separated arithmetic progressions is not an MSTD set](not-is-mstdset-union-two-ap.md)
-- [Interval plus integer progression starting in $(n + 1, 2n - 2)$ is not MSTD](not-is-mstdset-interval-ap-nat-of-le-two.md)
+- [Interval plus integer progression starting between $n + 1$ and $2n - 2$ is not MSTD](not-is-mstdset-interval-ap-nat-of-le-two.md)
 - [Interval plus integer progression starting at $2n - 1$ or later is not MSTD](not-is-mstdset-interval-ap-nat-of-two-mu.md)
 - [Interval plus integer progression starting after the interval is not MSTD](not-is-mstdset-interval-ap-nat-of-lt.md)
 - [Interval plus irrational-step progression with natural start is not MSTD](not-is-mstdset-interval-ap-irrational-di.md)

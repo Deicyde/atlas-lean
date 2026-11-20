@@ -1,4 +1,6 @@
 # Mean total progeny equals $1/(1-m)$
 
-The mean total progeny is `(1 - m)⁻¹` in `[0, ∞]`: it is `1 / (1 - m)` for `m < 1` and `∞`
-for `m ≥ 1` (`m` the mean offspring number).
+Let $\nu$ be a probability measure on $\mathbb{N}$ (the offspring law) with [mean](../galton-watson-process/mean.md)
+$m \in [0, \infty]$. Then the [mean total progeny](mean-total-progeny.md) equals $(1 - m)^{-1}$
+in $[0, \infty]$, with truncated subtraction and $0^{-1} = \infty$: it is $1 / (1 - m)$ if
+$m < 1$ and $\infty$ if $m \ge 1$.

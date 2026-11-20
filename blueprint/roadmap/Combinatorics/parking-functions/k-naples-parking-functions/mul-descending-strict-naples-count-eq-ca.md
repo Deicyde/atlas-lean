@@ -13,4 +13,4 @@ up to rotation with a distinguished edge on the $(2k + 2)$-gon.
 
 ## Sources
 
-- J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 6.3 (published as Proposition 6).
+- João Pedro Carvalho, Pamela E. Harris, Gordon Rojas Kirby, Nico Tripeny, and Andrés R. Vindas-Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 6.

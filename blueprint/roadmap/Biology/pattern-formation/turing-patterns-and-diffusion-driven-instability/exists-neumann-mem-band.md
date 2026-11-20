@@ -1,5 +1,5 @@
 # Long intervals have a squared Neumann wavenumber in any given band
 
-Every long enough interval has a squared Neumann wavenumber inside a given nonempty open band
-`(qlo, qhi)` with `0 < qhi`: there is `L₀ > 0` such that for all `L ≥ L₀` some `(n π / L)²` lies
-in `(qlo, qhi)`.
+Let $q_{\mathrm{lo}} < q_{\mathrm{hi}}$ be real numbers with $q_{\mathrm{hi}} > 0$. Then there is
+$L_0 > 0$ such that for every $L \ge L_0$ some $n \in \mathbb{N}$ satisfies
+$q_{\mathrm{lo}} < (n\pi/L)^2 < q_{\mathrm{hi}}$.

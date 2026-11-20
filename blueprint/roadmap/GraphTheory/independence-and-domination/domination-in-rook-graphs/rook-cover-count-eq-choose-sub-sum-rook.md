@@ -11,4 +11,4 @@ where the sum runs over all pairs $(r, c) \ne (0, 0)$ with $0 \le r \le n$ and $
 
 ## Sources
 
-- Stephan Mertens, "Domination Polynomial of the Rook Graph", Theorem 2 (`thm:E-recursion`).
+- Stephan Mertens, *Domination Polynomial of the Rook Graph*, Journal of Integer Sequences 27 (2024), Article 24.3.7, https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens/mertens6.html, Theorem 2 (`thm:E-recursion`).

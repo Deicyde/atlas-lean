@@ -14,7 +14,7 @@ function $P$ and every $z$ with $|z| < \rho$. The conjecture is the proposition 
 good radius $r$ with $0 < r \le 1$ such that no real number $r'$ with $r < r' \le 1$ is a good
 radius.
 
-This is Problem 6.22 of Hayman, Research Problems in Function Theory (2018), source record
+This is Problem 6.22 of W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), source record
 AMR-022-6022.
 
 ## Sources

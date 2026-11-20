@@ -13,4 +13,4 @@ The paper states $m \in \mathbb{N}_0$; at $m = 0$ the printed right side is twic
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.5.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 2.5.

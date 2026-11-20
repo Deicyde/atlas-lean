@@ -10,4 +10,4 @@ and any other letter for the digit $0$; the empty word occurs at every position.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (digit blocks `d_{m-1} ⋯ d_0` and `d_{-1} ⋯ d_{-m}`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (digit blocks $d_{m-1} \cdots d_0$ and $d_{-1} \cdots d_{-m}$).

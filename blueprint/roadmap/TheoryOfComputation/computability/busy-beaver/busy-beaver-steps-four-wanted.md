@@ -6,4 +6,4 @@ blank tape, the largest halting time is $107$.
 
 ## Sources
 
-- Brady (1983), determination of `S(4) = 107`.
+- A. H. Brady, "The determination of the value of Rado's noncomputable function $\Sigma(k)$ for four-state Turing machines", *Mathematics of Computation* 40 (1983), 647–665: $S(4) = 107$.

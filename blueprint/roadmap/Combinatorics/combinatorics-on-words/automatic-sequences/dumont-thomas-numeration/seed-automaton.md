@@ -10,4 +10,4 @@ and undefined on every word whose first digit is at least $2$.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6 (the automaton `𝒜_{η,s}`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6 (the automaton $\mathcal{A}_{\eta,s}$).

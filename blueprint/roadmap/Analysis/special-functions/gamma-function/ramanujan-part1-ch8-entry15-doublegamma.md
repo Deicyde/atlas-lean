@@ -10,7 +10,7 @@ O\left(\frac{1}{a(x)^8}\right)$$
 
 as $x \to \infty$ through the real numbers, where the power is the principal complex power.
 
-Proof: Convexity of `log Γ` gives crude digamma bounds. A telescoped centered expansion and
+Proof: Convexity of $\log \Gamma$ gives crude digamma bounds. A telescoped centered expansion and
 Taylor's formula for the complex exponential then give the stated coefficients and remainder.
 
 ## Sources

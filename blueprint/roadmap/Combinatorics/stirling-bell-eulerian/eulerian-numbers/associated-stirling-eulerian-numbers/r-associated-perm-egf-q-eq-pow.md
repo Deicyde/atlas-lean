@@ -17,4 +17,4 @@ This is the paper's $A^r(q,x,u) = (A^r(x,u))^q$, with the power read through the
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 35 (`jis-2025-25.5.7-thm-35`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 35.

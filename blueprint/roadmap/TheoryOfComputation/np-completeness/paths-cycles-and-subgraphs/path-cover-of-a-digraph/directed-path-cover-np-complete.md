@@ -6,4 +6,4 @@ DIRECTED PATH COVER.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PATH COVER (the `K = 1` slice is Hamiltonian path).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), PATH COVER (the case $K = 1$ is HAMILTONIAN PATH).

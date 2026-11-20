@@ -9,4 +9,4 @@ angle at $A$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Angle_bisector_theorem. It follows from `angle_bisector_converse_general`; the hypotheses `hAB`, `hAC` and `hAD` are unused and keep the source's shape.
+- https://en.wikipedia.org/wiki/Angle_bisector_theorem. The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ are not needed for the conclusion.

@@ -10,4 +10,4 @@ number of elements.
 
 ## Sources
 
-- Rocha-Neves, A Fourier-analytic Uniqueness Theorem for Lattice-point Enumerators, arXiv:2608.11078v1, lines 24-31.
+- António Rocha-Neves, A Fourier-analytic Uniqueness Theorem for Lattice-point Enumerators, arXiv:2608.11078v1 (2026), lines 24-31.

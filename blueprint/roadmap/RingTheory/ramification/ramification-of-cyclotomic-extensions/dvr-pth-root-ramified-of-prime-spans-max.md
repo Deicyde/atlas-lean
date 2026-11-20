@@ -12,4 +12,4 @@ $\mathfrak m_A$ (the largest $n$ with $\mathfrak m_A B \subseteq \mathfrak m_B^n
 
 ## Sources
 
-- ATLAS NumberTheoryI, Section 10.2, Corollary 10.18, a special case of the ramified implication: the source does not assume $\mathfrak m_A = (p)$, and the converse is not proved.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 10, Corollary 10.18, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. This page states one implication, in the special case $\mathfrak m_A = (p)$, which the notes do not assume.

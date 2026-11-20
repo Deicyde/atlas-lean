@@ -9,4 +9,4 @@ where ${a \brace b}$ denotes the Stirling number of the second kind (and $0^0 = 
 
 ## Sources
 
-- A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
+- Andrei Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.

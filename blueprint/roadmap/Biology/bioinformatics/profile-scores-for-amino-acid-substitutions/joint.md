@@ -1,4 +1,3 @@
 # Joint probability of class and features in naive Bayes
 
-The joint probability of class `c` (`true` = damaging) and feature values `x`:
-`π ∏ P_D(x_j)` or `(1 - π) ∏ P_B(x_j)`.
+In a [naive Bayes model](naive-bayes.md) with finitely many features, the joint weight of feature values $x = (x_j)_j$ is $\pi \prod_j D_j(x_j)$ with the class "damaging" and $(1 - \pi) \prod_j B_j(x_j)$ with the class "benign".

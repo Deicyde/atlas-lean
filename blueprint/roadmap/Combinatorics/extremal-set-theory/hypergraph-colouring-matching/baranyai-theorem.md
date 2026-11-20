@@ -10,4 +10,5 @@ whose union is $V$.
 
 ## Sources
 
+- Zsolt Baranyai, On the factorization of the complete uniform hypergraph, in *Infinite and Finite Sets* (Colloq. Keszthely, 1973), Colloq. Math. Soc. János Bolyai 10, North-Holland (1975), 91–108.
 - https://en.wikipedia.org/wiki/Baranyai%27s_theorem.

@@ -7,8 +7,7 @@ let $\rho^{-1}$ be read as $0$ when $\rho = 0$. For a monic irreducible polynomi
 write $|P| = q^{\deg P}$, $y = (\rho^{-1})^{\deg P}$ and $K(P, h, j) = (1 - y)/(|P|(1 - y) + 1)$,
 read as $0$ when the denominator vanishes. Then the constant $\kappa_j$ attached to $F$, $h$, $\xi$
 and $j$ equals $\sum_P (K(P, h, j) - 1/|P|)$, the sum over all monic irreducible polynomials $P$
-over $F$, taken as an unconditional sum that is $0$ when the family is not summable. This holds
-by definition.
+over $F$, taken as an unconditional sum that is $0$ when the family is not summable.
 
 ## Sources
 

@@ -13,4 +13,4 @@ with both sides multiplied by $f_1 f_2^3 f_6 f_{12} f_{36}$.
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 7 (`jis-2025-25.6.1-lem-7`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 7 (`jis-2025-25.6.1-lem-7`).

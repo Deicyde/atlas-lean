@@ -1,4 +1,3 @@
 # Edge weight of a walk
 
-The edge weight `Λ e₀ e₁ * Λ e₁ e₂ * ⋯ * Λ eₖ₋₁ eₖ` of a walk `[e₀, …, eₖ]`; walks with at most
-one entry have weight `1`.
+For a set $E$, a matrix $\Lambda \in \mathbb{C}^{E \times E}$ and a list $(s_0, \dots, s_m)$ of elements of $E$, the edge weight is $\prod_{i=0}^{m-1} \Lambda(s_i, s_{i+1})$, which is $1$ for the empty list and for lists of length $1$.

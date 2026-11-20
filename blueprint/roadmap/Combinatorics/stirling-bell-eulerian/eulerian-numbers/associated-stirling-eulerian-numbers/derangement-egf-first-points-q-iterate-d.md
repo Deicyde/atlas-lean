@@ -14,4 +14,4 @@ which is the paper's $q^s x^s (A(x,u) - 1)^s (A(x,u) e^{-u})^q$ with the power r
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 51 (`jis-2025-25.5.7-cor-51`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 51.

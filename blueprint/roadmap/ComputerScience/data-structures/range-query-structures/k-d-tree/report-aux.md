@@ -12,4 +12,3 @@ otherwise; the result is $acc'$ if $s < lo_a$ and the report of $L$ onto $acc'$ 
 The accumulator avoids repeatedly appending the results of left subtrees, so building the
 output list costs work linear in the number of reported points; the traversal still visits
 every node that pruning does not cut, which can be the whole tree even for an empty report.
-No complexity bound is formalized.

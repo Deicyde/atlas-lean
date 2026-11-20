@@ -1,4 +1,4 @@
 # Runtime typing transfers to an equivalent linear context
 
-ALL10 runtime rules retype at arbitrary equivalent linear contexts, with Γ
-UNCHANGED. Actual payload codes, literal cap ranks and empty BODY contexts are retained.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta \approx \Xi$ equivalent
+ownership contexts and $p$ a process. If $\Gamma; \Delta \vdash_n p$, then $\Gamma; \Xi \vdash_n p$.

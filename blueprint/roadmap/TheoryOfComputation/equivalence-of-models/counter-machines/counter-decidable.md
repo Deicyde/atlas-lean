@@ -7,4 +7,4 @@ defined and equals $1$ if $P(n)$ holds and $0$ otherwise.
 
 ## Sources
 
-- Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
+- M. L. Minsky, *Computation: Finite and Infinite Machines*, Prentice-Hall, 1967, Chapter 11.

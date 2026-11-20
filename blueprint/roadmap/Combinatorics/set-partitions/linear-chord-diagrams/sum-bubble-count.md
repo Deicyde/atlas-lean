@@ -10,4 +10,4 @@ The hypothesis $n \ge 2$ is needed: for $n = 1$ the left side is $0$ and the rig
 
 ## Sources
 
-- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Lemma 3 (`jis-2024-24.4.2-lem-3`).
+- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Lemma 3.

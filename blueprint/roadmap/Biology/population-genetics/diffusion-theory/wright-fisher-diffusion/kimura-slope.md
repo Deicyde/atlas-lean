@@ -1,4 +1,3 @@
 # Slope constant of Kimura's fixation probability
 
-The constant `K σ` such that `(kimuraFixation σ)' x = K σ · e^{-2σx}`:
-`1` if `σ = 0`, and `2σ / (1 - e^{-2σ})` otherwise.
+For a real number $\sigma$, let $K_\sigma = 1$ if $\sigma = 0$ and $K_\sigma = \frac{2\sigma}{1 - e^{-2\sigma}}$ otherwise: the constant such that the derivative of [Kimura's fixation probability](kimura-fixation.md) is $u_\sigma'(x) = K_\sigma\, e^{-2\sigma x}$.

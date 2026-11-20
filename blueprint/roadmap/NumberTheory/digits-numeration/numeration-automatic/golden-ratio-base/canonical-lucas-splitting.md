@@ -15,7 +15,7 @@ Recursive Structure Theorem
 $\Lambda_m = (\Lambda_{m-2} + L_{m-1}) \cup (\Lambda_{m-3} + L_m) \cup (\Lambda_{m-2} + L_m)$
 (the paper's splittings of $\Lambda_6, \Lambda_7, \Lambda_8$, "continuing in this fashion").
 That for $m \ge 3$ the result splits $\Lambda_m$ into adjacent translates of $\Lambda_3$,
-$\Lambda_4$ and $\Lambda_5$ is the paper's Theorem 4. Only $m \ge 3$ is used.
+$\Lambda_4$ and $\Lambda_5$ is the paper's Theorem 4. The values for $m \le 2$ are a convention.
 
 ## Sources
 

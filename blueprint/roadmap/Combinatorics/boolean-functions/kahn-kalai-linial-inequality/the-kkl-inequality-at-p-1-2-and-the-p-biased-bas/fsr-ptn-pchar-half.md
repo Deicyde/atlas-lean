@@ -1,3 +1,5 @@
 # $p$-biased character at $p = 1/2$ is the Walsh character up to sign
 
-At `p = 1/2` the `p`-biased character is `(-1)^{|S|}` times the Walsh character.
+For a finite subset $S$ of a set $E$ and $\omega \in \{0, 1\}^E$, the [$p$-biased character](../../../../Probability/concentration-inequalities/bonami-beckner-hypercontractivity/pbiased-tensorize/ptn-pchar.md) at $p = 1/2$ satisfies
+
+$$\varphi_S(\omega) = (-1)^{\lvert S\rvert} \chi_S(\omega), \qquad \chi_S(\omega) = \prod_{i \in S} (-1)^{\omega_i}.$$

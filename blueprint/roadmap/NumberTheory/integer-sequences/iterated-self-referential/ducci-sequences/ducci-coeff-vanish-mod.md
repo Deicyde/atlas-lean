@@ -9,4 +9,4 @@ $a^{(n)}_{c p^k, s} \equiv 0 \pmod{p}$.
 
 ## Sources
 
-- Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 3.
+- Mark L. Lewis and Shannon M. Tefft, *The Maximum Length for Ducci Sequences on $\mathbb{Z}_m^n$ when $n$ is Even*, arXiv:2410.18204, Lemma 6.

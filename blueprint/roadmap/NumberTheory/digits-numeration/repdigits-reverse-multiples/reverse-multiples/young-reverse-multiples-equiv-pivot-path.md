@@ -23,4 +23,4 @@ $(d_{h+1}, d_{h+1})$ from $(r, s)$ to $(s, r)$.
 
 ## Sources
 
-- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Theorem [Young's Theorem], lines 192-197, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>, after Theorems 1 and 2 of Young's first paper on reverse multiples.
+- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Theorem 4 (Young's Theorem), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>, after Theorems 1 and 2 of Young's first paper on reverse multiples.

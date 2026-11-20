@@ -1,4 +1,3 @@
 # Planar drawings of rooted binary trees on a taxon set
 
-The planar drawings of rooted binary trees on the taxa `X`: planar trees whose leaves are
-labeled by `X`, each taxon labeling exactly one leaf.
+For a finite set $X$ of taxa, the planar drawings on $X$ are the [planar binary trees](plane-tree.md) whose [multiset of leaf labels](leaves.md) is exactly $X$, each taxon labeling exactly one leaf.

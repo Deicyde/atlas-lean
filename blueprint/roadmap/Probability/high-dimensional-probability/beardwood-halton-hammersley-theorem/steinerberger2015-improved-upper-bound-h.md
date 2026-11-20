@@ -5,4 +5,4 @@ $\beta_2$ satisfies $\beta_2 \le 0.92117 - \frac{9}{16} \cdot 10^{-6}$.
 
 ## Sources
 
-- Steinerberger, New Bounds for the Traveling Salesman Constant (2015).
+- S. Steinerberger, *New bounds for the traveling salesman constant*, Adv. in Appl. Probab. 47 (2015), 27–36, arXiv:1311.6338; catalogue https://github.com/teorth/optimizationproblems, `constants/12a.md`.

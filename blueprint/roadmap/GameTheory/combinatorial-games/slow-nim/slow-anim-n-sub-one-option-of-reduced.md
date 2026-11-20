@@ -14,4 +14,4 @@ fails for $n = 3$ at $p = (0, 1, 1)$, whose only move omits the empty stack.
 
 ## Sources
 
-- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 5.
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow$A$-Nim*, INTEGERS 26 (2026), Article G3, Lemma 5.

@@ -9,4 +9,4 @@ classes $\{[f_i] : i \in \iota\}$ in the weak topology of $L^1(\mu)$ is weakly c
 
 ## Sources
 
-- N. Dunford and B. J. Pettis, Linear Operations on Summable Functions, Trans. Amer. Math. Soc. 47 (1940), 323–392, DOI 10.1090/S0002-9947-1940-0002020-4, criterion for weak compactness in `L¹`; Dunford-Schwartz IV; Lean states finite-measure real `L¹` specialization with weak-space closure characterization.
+- N. Dunford and B. J. Pettis, Linear Operations on Summable Functions, Trans. Amer. Math. Soc. 47 (1940), 323–392, DOI 10.1090/S0002-9947-1940-0002020-4, criterion for weak compactness in $L^1$; Dunford-Schwartz IV. The statement here is the case of real $L^1$ of a finite measure, with relative weak compactness expressed through the weak closure.

@@ -1,3 +1,3 @@
 # Law of the proportion coordinate of Sethuraman's space
 
-The proportion coordinate of the canonical space has law `⊗ₖ Beta(1, α)`.
+For $\alpha > 0$ and a probability measure $H$, the projection of [Sethuraman's canonical space](sethuraman-measure.md) onto its proportion coordinate $\mathbb{R}^{\mathbb{N}}$ has law $\bigotimes_k \mathrm{Beta}(1, \alpha)$.

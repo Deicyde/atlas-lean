@@ -9,4 +9,4 @@ If this set has at most $\ell$ elements, then $n_\ell = 0$ by convention.
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Definition 1.

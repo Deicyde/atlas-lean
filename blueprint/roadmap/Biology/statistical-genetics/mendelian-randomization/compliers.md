@@ -1,3 +1,3 @@
 # Compliers in a potential-outcomes model
 
-The compliers, `D(0) = 0` and `D(1) = 1`.
+In a [potential-outcomes model](potential-outcomes.md), the compliers are the units $\omega$ with $D(0)(\omega) = 0$ and $D(1)(\omega) = 1$, that is, the units of [compliance type](type.md) complier.

@@ -1,3 +1,3 @@
 # Number of amplified copies
 
-The number of original copies amplified by the event (`desc i ≥ 2`).
+For a [gain history](gain-history.md) with descendant counts $\delta_i$, the number of amplified copies is $\#\{i : \delta_i \ge 2\}$.

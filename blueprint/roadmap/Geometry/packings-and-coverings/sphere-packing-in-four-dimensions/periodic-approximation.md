@@ -13,4 +13,4 @@ $\Delta_4 \le \overline{\delta}(P) + \varepsilon$.
 
 ## Sources
 
-- CE2003 introduction and Appendix A, periodic packings come arbitrarily close to the greatest density. Positive error does not assert attainment.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, introduction and Appendix A: periodic packings come arbitrarily close to the greatest density. A positive error does not assert attainment.

@@ -5,4 +5,4 @@ $c$, the effective enumeration of oracle codes sends the code number of $c$ to $
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (standard enumerations).

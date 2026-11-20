@@ -13,4 +13,4 @@ strictly below both neighbours.
 
 ## Sources
 
-- Christian Hercher, "There are no Collatz m-Cycles with m ≤ 91," Journal of Integer Sequences 26 (2023), Article 23.3.5, Main Theorem, lines 541–543, https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.tex with the operator at lines 104–111 and the m-cycle definition at lines 149–151.
+- Christian Hercher, *There are no Collatz $m$-Cycles with $m \le 91$*, Journal of Integer Sequences 26 (2023), Article 23.3.5, Theorem 23 (Main Theorem), with the map in Definition 1 and $m$-cycles in Definition 5, https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.tex.

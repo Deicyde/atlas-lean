@@ -1,4 +1,3 @@
 # Open subgraph of an edge configuration
 
-The open subgraph of `G` under the edge configuration `ω`: the edges of `G` that `ω`
-declares open.
+Let $G = (V, E)$ be a simple graph on a finite set $V$. For a configuration $\omega$, the open subgraph is the graph on $V$ in which $x$ and $y$ are adjacent when $\{x, y\}$ is an edge of $G$ and is open in $\omega$.

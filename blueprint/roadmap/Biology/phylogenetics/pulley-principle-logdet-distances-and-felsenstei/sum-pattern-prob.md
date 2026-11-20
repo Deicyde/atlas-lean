@@ -1,3 +1,3 @@
 # Site pattern probabilities sum to one
 
-The pattern probabilities sum to `1`, for all parameters.
+For all real $p_A, p_B, p_C, p_D, p_I$, the [pattern probabilities](pattern-prob.md) of the sixteen site patterns sum to $1$.

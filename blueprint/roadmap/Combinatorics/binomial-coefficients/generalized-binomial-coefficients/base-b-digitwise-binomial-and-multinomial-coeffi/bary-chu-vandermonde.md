@@ -12,4 +12,4 @@ The product $C(x, y)$ is the $b$-ary binomial coefficient $\binom{x}{y}_b$.
 
 ## Sources
 
-- Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (equation bChuVandermonde), lines 371–377, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
+- Lin Jiu and Christophe Vignat, *On Binomial Identities in Arbitrary Bases*, J. Integer Seq. 19 (2016), Article 16.5.5, Theorem 8 (equation (14)), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.html>.

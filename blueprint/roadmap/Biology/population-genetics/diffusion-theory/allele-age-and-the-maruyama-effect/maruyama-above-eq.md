@@ -1,4 +1,7 @@
 # Sojourn density above the current frequency via fixation probability
 
-`Ψ₂` through Kimura's fixation probability:
-`Ψ₂(z) = 2 u(x)(1 - u(z))² / ((1 - u(x)) z (1 - z) u'(z))` on `(0, 1)`.
+For every real $\sigma$ and all $x, z \in (0, 1)$, the [closed form above the current frequency](maruyama-above.md) is
+
+$$\Psi_2^\sigma(x, z) = \frac{2\, u_\sigma(x)\bigl(1 - u_\sigma(z)\bigr)^2}{\bigl(1 - u_\sigma(x)\bigr)\, z(1 - z)\, K_\sigma\, e^{-2\sigma z}},$$
+
+where $u_\sigma$ is [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md) and $K_\sigma$ its [slope constant](../wright-fisher-diffusion/kimura-slope.md).

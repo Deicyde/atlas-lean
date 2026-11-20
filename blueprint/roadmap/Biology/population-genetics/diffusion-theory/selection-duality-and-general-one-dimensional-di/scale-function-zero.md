@@ -1,3 +1,3 @@
 # Scale function vanishes at zero
 
-The scale function vanishes at `0`.
+For all real functions $b$ and $a$, the [scale function](scale-function.md) satisfies $S(0) = 0$.

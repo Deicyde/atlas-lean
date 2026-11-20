@@ -15,4 +15,4 @@ $\tau_{1,2} = 2$ and $M (2, 1)^T = (0, 3)^T$ is not a multiple of $(2, 1)^T$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 63 (`jis-2025-25.1.5-thm-63`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 63 (`jis-2025-25.1.5-thm-63`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

@@ -1,3 +1,3 @@
 # Nonnegative edge lengths of a tree
 
-Edge lengths are nonnegative: every dart's undirected edge has nonnegative length.
+Edge lengths $w$ on an [unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md) are nonnegative if $w(e) \ge 0$ for every edge $e$ of the tree.

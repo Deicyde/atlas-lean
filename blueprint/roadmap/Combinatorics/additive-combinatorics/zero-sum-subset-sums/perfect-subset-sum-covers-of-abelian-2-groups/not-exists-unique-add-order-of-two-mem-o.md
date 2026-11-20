@@ -8,4 +8,4 @@ exactly one element of order $2$: it contains none or at least two.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 18 (`jis-2025-25.7.8-lem-18`). "No elements of order `2`, or at least two" is stated as "not exactly one".
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 18 (`jis-2025-25.7.8-lem-18`). "No elements of order $2$, or at least two" is stated as "not exactly one".

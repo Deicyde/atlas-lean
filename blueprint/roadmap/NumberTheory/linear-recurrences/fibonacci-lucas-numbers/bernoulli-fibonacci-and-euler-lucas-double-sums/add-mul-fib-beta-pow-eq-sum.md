@@ -19,4 +19,4 @@ $x = \sqrt{5}$, $m = 2$.
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 15.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Theorem 15.

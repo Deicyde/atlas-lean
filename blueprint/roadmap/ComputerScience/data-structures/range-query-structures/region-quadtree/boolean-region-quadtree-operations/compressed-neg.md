@@ -1,3 +1,3 @@
 # Quadtree complementation preserves compression
 
-Complementation preserves compression of the input.
+If a Boolean region quadtree $t$ is compressed, then its complement is compressed.

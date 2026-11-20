@@ -8,4 +8,4 @@ only if $a_0 \equiv a_1 \pmod 3$.
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting E. Fiorini, M. Lind, A. Woldar, and T. W. H. Wong, J. Integer Sequences 24 (2021), Article 21.6.4.
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting E. Fiorini, M. Lind, A. Woldar, and T. W. H. Wong, J. Integer Sequences 24 (2021), Article 21.6.4.

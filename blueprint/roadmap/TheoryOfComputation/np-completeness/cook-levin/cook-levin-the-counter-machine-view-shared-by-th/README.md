@@ -7,4 +7,4 @@
 - [The multiplication routine of a counter machine](mul-s.md)
 - [Gap emission in the counter view](gap-s.md)
 - [Budgeted runs transport along equal counter values](bud-st.md)
-- [A runtime `for` loop in the counter view](st-loop.md)
+- [A runtime for-loop in the counter view](st-loop.md)

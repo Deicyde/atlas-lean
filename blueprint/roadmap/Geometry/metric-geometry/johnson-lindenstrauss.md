@@ -13,4 +13,4 @@ over pairs of points.
 
 ## Sources
 
-- W. B. Johnson and J. Lindenstrauss, "Extensions of Lipschitz mappings into a Hilbert space," Contemporary Mathematics 26, Conference on Modern Analysis and Probability, American Mathematical Society (1984), 189--206, DOI 10.1090/conm/026/737400. ATLAS source-to-API map, item N147; ATLAS adds the hypothesis that N is at least 2.
+- W. B. Johnson and J. Lindenstrauss, "Extensions of Lipschitz mappings into a Hilbert space," Contemporary Mathematics 26, Conference on Modern Analysis and Probability, American Mathematical Society (1984), 189--206, DOI 10.1090/conm/026/737400. The hypothesis $N \ge 2$ is added to the original statement.

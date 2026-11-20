@@ -6,4 +6,4 @@ of the first kind $c(b, a)$, the number of permutations of $b$ elements with exa
 
 ## Sources
 
-- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, proof of Theorem 2.2.
+- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, proof of Theorem 4.

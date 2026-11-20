@@ -11,4 +11,4 @@ many elements as $I$.
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 18 (`jis-2024-24.8.1-thm-18`).
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 18 (`jis-2024-24.8.1-thm-18`).

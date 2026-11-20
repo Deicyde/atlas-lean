@@ -1,3 +1,4 @@
 # Energy with general couplings and a uniform field
 
-The energy `∑_e J_e σ_e + h ∑_x σ_x`.
+For a finite simple graph $G = (V, E)$, couplings $J$, $h \in \mathbb{R}$ and a spin configuration $\sigma$, this is
+$\sum_{e = \{x, y\} \in E} J_e \sigma_x \sigma_y + h \sum_{x \in V} \sigma_x$.

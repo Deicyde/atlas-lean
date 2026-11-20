@@ -1,10 +1,10 @@
 # Existence of a Bruhat section for a closed subgroup
 
-A Bruhat section: given a closed subgroup `T` of a locally compact group
-and a set `E` contained in `T * C` for compact `C`, there is a compactly
-supported nonnegative measurable function `w` whose integral over each
-`T`-translate meeting `E` equals `1`.
+Let $G$ be a locally compact topological group with its Borel $\sigma$-algebra, $T \le G$ a closed
+subgroup with its Borel $\sigma$-algebra and a Haar measure $\tau$ that is also right-invariant,
+$C \subseteq G$ compact and $E \subseteq TC$. Then there is a nonnegative, measurable, compactly
+supported $w : G \to \mathbb{R}$ with $\int_T w(tx)\, d\tau(t) = 1$ for every $x \in E$.
 
-Use `exists_continuous_cutoff_of_subset_mul` when continuity or boundedness is
-needed. These functions normalize subgroup integrals; they are not sections
-of the quotient map.
+A continuous such function also exists ([continuous Bruhat
+cutoff](exists-continuous-cutoff-of-subset-mul.md)). These functions normalize subgroup integrals;
+they are not sections of the quotient map.

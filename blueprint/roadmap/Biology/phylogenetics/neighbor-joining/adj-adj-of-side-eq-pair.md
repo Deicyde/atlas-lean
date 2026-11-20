@@ -1,4 +1,3 @@
 # A two-taxon side forms a cherry
 
-If a side of the edge `{a, b}` is the pair `{x, y}`, then `a` is a common neighbor of the
-leaves `ι x` and `ι y`: they form a cherry.
+If $(G, \iota)$ is a [binary phylogenetic tree](is-binary-phylogenetic-tree.md), $a, b$ are adjacent, $x \ne y$, and the [$a$-side](side.md) of $\{a, b\}$ is $\{x, y\}$, then $\iota(x)$ and $\iota(y)$ are both adjacent to $a$.

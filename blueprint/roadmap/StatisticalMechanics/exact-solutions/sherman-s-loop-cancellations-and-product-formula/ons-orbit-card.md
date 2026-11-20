@@ -1,4 +1,3 @@
 # Number of sequences with a given orbit representative
 
-The number of sequences whose chosen orbit representative is `r`; for a representative `r` this
-is the size of its rotation orbit, and `0` otherwise.
+For a finite set $E$, $n \ge 1$ and a sequence $r \in E^n$, the orbit count is the number of sequences $v \in E^n$ whose [chosen rotation-orbit representative](ons-rep.md) equals $r$.

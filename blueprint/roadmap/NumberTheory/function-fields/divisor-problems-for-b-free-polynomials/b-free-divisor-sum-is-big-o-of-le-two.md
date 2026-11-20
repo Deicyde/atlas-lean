@@ -1,4 +1,4 @@
-# Asymptotic for B-free divisor sums when h is at most 2
+# Asymptotic for $B_\kappa$-free divisor sums when $h \le 2$
 
 Let $F$ be a finite field with $q$
 elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\kappa$ assign a natural
@@ -20,4 +20,4 @@ The paper states this for every $h \ge 1$, but its main term is not correct for 
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 2, cases `h = 1, 2`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 2, cases $h = 1, 2$.

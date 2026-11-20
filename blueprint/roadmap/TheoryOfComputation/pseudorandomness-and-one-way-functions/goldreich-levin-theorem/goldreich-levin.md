@@ -13,6 +13,18 @@ at most $p(n)$ gates in $C'_n$ for all $n$, the function $n \mapsto \max(0, s_n 
 negligible, where $s_n$ is the prediction success probability of $C'_n$ against $\pi_n$ for the
 inner product modulo 2.
 
+This statement is weaker than the theorem of the cited paper in one respect: it assumes that $\pi$
+is a family of permutations of $\{0,1\}^n$, whereas Goldreich and Levin's theorem, as the title of
+their paper says, applies to every one-way function $f$, the inner product $\langle x, r\rangle$
+being hard-core for $(x, r) \mapsto (f(x), r)$. The permutation case is the one used to build
+pseudorandom generators from one-way permutations; Arora and Barak state it with explicit
+concrete-security bounds (an algorithm running in time $S(n) = \min(s(n), 1/\varepsilon(n))^{1/8}$
+predicts $\langle x, r\rangle$ with probability at most $\tfrac12 + O(1/S(n))$, where $s$ and
+$\varepsilon$ are the security and the success bound of the permutation).
+
 ## Sources
 
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Internet draft dated January
+  2007 (a pre-publication draft), Theorem 10.14 (the concrete-security form for one-way
+  permutations).
 - O. Goldreich and L. A. Levin, "A hard-core predicate for all one-way functions", Proceedings of the Twenty-First Annual ACM Symposium on Theory of Computing (STOC 1989), 25-32.

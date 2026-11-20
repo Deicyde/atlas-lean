@@ -1,7 +1,6 @@
 # Weight sets with prescribed weighted Davenport constant on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, divisible case
 
-**Weight sets with prescribed weighted Davenport constant on
-$\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, divisible case.** Let $n \ge 2$ and
+Let $n \ge 2$ and
 $k \ge 1$ be natural numbers, let $m \ge 2$ be a divisor of $n$, let
 $\alpha = \lceil n/(m-1) \rceil - 1$, and suppose that $\alpha$ divides $n$. Then for every finite
 set $A$ of natural numbers with $n/m \in A \subseteq \{1, \dots, \alpha\}$, the $A$-weighted

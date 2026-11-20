@@ -5,4 +5,4 @@ $a$ indexed by $\mathbb{N}$ is $k$-automatic when $k \ge 2$ and the $k$-kernel o
 
 ## Sources
 
-- Adamczewski--Bell, arXiv:1205.4091v1, lines 160--195 for the finite-automaton (DFAO) definition, and lines 1105--1129 for Eilenberg's equivalence between `k`-automaticity and finiteness of the `k`-kernel. A sequence is `k`-automatic when `2 ≤ k` and its `k`-kernel `kKernel k a` is finite.
+- Boris Adamczewski and Jason P. Bell, *On vanishing coefficients of algebraic power series over fields of positive characteristic*, Invent. Math. 187 (2012), 343–393; arXiv:1205.4091, Definition 1.1 ($k$-automatic sequences via finite automata) and Theorem 5.1 (Eilenberg: a sequence is $k$-automatic if and only if its $k$-kernel is finite), https://arxiv.org/abs/1205.4091

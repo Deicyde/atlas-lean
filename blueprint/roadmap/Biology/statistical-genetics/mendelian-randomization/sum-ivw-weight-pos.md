@@ -1,3 +1,3 @@
 # Positivity of the total IVW weight
 
-The total weight is positive as soon as some SNP has `β̂_{Xj} ≠ 0`.
+Let $\iota$ be a finite set of SNPs, let $\sigma_j > 0$ for every $j$, and let $\hat\beta_{Xj} \ne 0$ for some $j$. Then the [inverse-variance weights](ivw-weight.md) satisfy $\sum_j w_j > 0$.

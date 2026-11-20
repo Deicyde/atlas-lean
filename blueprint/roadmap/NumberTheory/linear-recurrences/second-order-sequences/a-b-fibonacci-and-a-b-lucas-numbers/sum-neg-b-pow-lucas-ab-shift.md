@@ -15,4 +15,4 @@ and this sum also equals $F_{n+m+1} L_{n+m} + (-1)^n b^{n+1} F_m L_{m-1}$.
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Theorem 5(b).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Theorem 5(b).

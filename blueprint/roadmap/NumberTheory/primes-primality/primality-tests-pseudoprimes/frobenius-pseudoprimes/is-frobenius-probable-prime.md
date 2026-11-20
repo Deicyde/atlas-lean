@@ -15,4 +15,4 @@ $q_i$, indexed by $i \in \mathbb{N}$, such that:
 
 ## Sources
 
-- pseudo1.tex lines 713-741.
+- J. Grantham, *Frobenius pseudoprimes*, Math. Comp. 70 (2001), 873–891, DOI 10.1090/S0025-5718-00-01197-2; author deposit arXiv:1903.06820v1, file pseudo1.tex, lines 713–741.

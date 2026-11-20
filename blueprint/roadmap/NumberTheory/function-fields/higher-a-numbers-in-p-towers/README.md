@@ -1,4 +1,4 @@
-# Higher a-numbers in ℤ_p-towers
+# Higher $a$-numbers in $\mathbb{Z}_p$-towers
 
 - [Sum of a periodic sequence](sum-icc-of-periodic.md)
 - [Sum of an eventually periodic sequence](sum-icc-of-eventually-periodic.md)

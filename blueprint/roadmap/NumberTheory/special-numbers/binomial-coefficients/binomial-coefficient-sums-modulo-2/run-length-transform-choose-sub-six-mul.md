@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 7
+# Sum of $\binom{n-k}{6k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $(N_j)_{j \ge 0}$ be Narayana's cows sequence, $N_0 = 0$,
 $N_1 = N_2 = 1$ and $N_j = N_{j-1} + N_{j-3}$ for $j \ge 3$, and let $T$ be the run length

@@ -1,6 +1,14 @@
 # Detailed balance
 
-The row vector `π` is in **detailed balance** with the matrix `Q`:
-`π i * Q i j = π j * Q j i` for all `i j` (Norris 1997, §3.7). This is only the algebraic
-equation: it holds for `π = 0` and every `Q`. For a probability vector `π` and a stochastic
-matrix it is the reversibility of the chain started from `π`.
+Let $S$ be a finite set. A row vector $\pi : S \to \mathbb{R}$ is in detailed balance with a real
+$S \times S$ matrix $Q$ if
+
+$$\pi(i)\, Q(i, j) = \pi(j)\, Q(j, i) \qquad \text{for all } i, j \in S .$$
+
+This is only the algebraic equation: it holds for $\pi = 0$ and every $Q$. For a probability vector
+$\pi$ and a stochastic matrix (or a rate matrix) it is the reversibility of the chain started from
+$\pi$.
+
+## Sources
+
+- J. R. Norris, *Markov Chains*, Cambridge Series in Statistical and Probabilistic Mathematics 2, Cambridge University Press, 1997, Section 3.7.

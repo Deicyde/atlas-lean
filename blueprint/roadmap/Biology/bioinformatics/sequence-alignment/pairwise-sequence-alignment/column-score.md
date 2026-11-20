@@ -1,6 +1,3 @@
 # Score of an alignment column
 
-Given a substitution score $\sigma$, which assigns an
-integer $\sigma(a, b)$ to all letters $a, b \in \alpha$, and a gap score $g \in \mathbb{Z}$, a
-column pairing letters $a$ and $b$ scores $\sigma(a, b)$, a column pairing a letter with a gap
-(on either side) scores $g$, and a column with a gap on both sides scores $0$.
+For integer substitution scores $\sigma(a, b)$ and an integer gap score $g$, the score of a column is $\sigma(a, b)$ for a column $(a, b)$ of two letters, $g$ for a column with exactly one letter, and $0$ for $(-, -)$.

@@ -1,3 +1,3 @@
 # Sojourn density above the current frequency vanishes at one
 
-At `z = 1` the closed form `Ψ₂` vanishes (a null set for the integral).
+For all real $\sigma$ and $x$, the [closed form above the current frequency](maruyama-above.md) satisfies $\Psi_2^\sigma(x, 1) = 0$.

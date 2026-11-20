@@ -19,5 +19,5 @@ $|G(re^{i\theta})| \le \varepsilon\,|G(r)|/\sqrt{B(r)}$.
 
 The capture, locality and decay conditions follow the Flajolet-Sedgewick formulation rather than
 the abbreviated maximum-modulus restatement (Jiyou Li, "Asymptotic Estimate for the Multinomial
-Coefficients", Journal of Integer Sequences 23 (2020), Article 20.1.3, Lemma [Hayman] `lem2`),
+Coefficients", Journal of Integer Sequences 23 (2020), Article 20.1.3, Lemma [Hayman]),
 whose maximum-modulus condition is insufficient as stated and is not used.

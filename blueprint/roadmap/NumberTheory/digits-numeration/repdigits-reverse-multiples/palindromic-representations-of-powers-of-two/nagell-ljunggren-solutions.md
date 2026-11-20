@@ -11,4 +11,4 @@ displayed in the paper).
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 8, quoting Bugeaud and Mihăilescu.
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 8, quoting Bugeaud and Mihăilescu.

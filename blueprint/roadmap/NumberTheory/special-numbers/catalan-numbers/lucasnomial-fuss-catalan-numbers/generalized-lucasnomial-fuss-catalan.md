@@ -15,4 +15,4 @@ $U_{(a-1)n+r} = 0$.
 
 ## Sources
 
-- Ballot, JIS Vol. 21.
+- Christian Ballot, *Lucasnomial Fuss-Catalan Numbers and Related Divisibility Questions*, Journal of Integer Sequences 21 (2018), Article 18.6.5, equation (3), <https://cs.uwaterloo.ca/journals/JIS/VOL21/Ballot/ballot30.html>.

@@ -6,4 +6,4 @@ satisfies $\sigma_n \le C$.
 
 ## Sources
 
-- Klartag and Lehec, arXiv:2507.15495v1, Introduction and Theorem 1.1.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Introduction and Theorem 1.1.

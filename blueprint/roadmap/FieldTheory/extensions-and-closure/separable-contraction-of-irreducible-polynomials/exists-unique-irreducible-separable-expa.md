@@ -9,4 +9,4 @@ $f(x) = g'(x^{p^{n'}})$ we have $n' = n$ and $g' = g$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 4.5.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 4, Corollary 4.5, https://math.mit.edu/classes/18.785/2021fa/LectureNotes4.pdf.

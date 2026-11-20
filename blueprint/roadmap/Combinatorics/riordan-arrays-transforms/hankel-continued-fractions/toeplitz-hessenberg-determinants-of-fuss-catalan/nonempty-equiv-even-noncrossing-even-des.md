@@ -8,4 +8,4 @@ for each peak $UD$: the run of down steps starting at the $D$ of that peak.
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 10 (`jis-2026-26.1.2-lem-10`).
+- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 10.

@@ -10,4 +10,4 @@ $a' \in A$ of $f$ with $v(f'(a_0)) < v(a' - a_0)$ equals $a$.
 
 ## Sources
 
-- ATLAS Hensel endpoint; the published statement dropped the condition $v(f'(a_0)) < v(a - a_0)$ on the root, which is kept here so that uniqueness applies to it.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 9, Lemma 9.16 (Hensel's Lemma II), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. The condition $v(f'(a_0)) < v(a - a_0)$ on the root is what makes it unique.

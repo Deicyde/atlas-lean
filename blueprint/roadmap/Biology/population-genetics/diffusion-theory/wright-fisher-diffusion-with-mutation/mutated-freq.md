@@ -1,5 +1,3 @@
 # Allele frequency after one generation of two-way mutation
 
-Allele frequency after one generation of two-way mutation, before random sampling: an `a`
-copy mutates to `A` with probability `u₁` and an `A` copy to `a` with probability `u₂`, so the
-frequency `x` of `A` becomes `(1 - u₂) x + u₁ (1 - x) ∈ [0, 1]`.
+For mutation probabilities $u_1, u_2 \in [0, 1]$ and a frequency $x \in [0, 1]$ of allele $A$, the frequency after one generation of mutation, before random sampling, is $p' = (1 - u_2)\,x + u_1 (1 - x) \in [0, 1]$: an $a$ copy mutates to $A$ with probability $u_1$ and an $A$ copy to $a$ with probability $u_2$.

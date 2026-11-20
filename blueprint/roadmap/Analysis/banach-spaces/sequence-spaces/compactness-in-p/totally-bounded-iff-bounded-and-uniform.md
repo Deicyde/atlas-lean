@@ -1,5 +1,3 @@
 # Riesz–Fréchet–Kolmogorov criterion for total boundedness in $\ell^p$
 
-The Riesz–Fréchet–Kolmogorov criterion for `ℓ^p (ℕ, 𝕜)`, `1 ≤ p < ∞`:
-a set is totally bounded if and only if it is bounded and its tails vanish
-uniformly.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and $1 \le p < \infty$. A set $K \subseteq \ell^p(\mathbb{N}, \mathbb{K})$ is totally bounded if and only if it is bounded and its tails [vanish uniformly](uniform-tail-vanishing.md).

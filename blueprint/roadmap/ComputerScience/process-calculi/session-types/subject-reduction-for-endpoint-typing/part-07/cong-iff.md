@@ -1,5 +1,4 @@
 # Structural congruence preserves endpoint typing
 
-Every existing canonical structural congruence preserves endpoint typing
-in both directions with exactly the same depth and ownership. Unsupported
-choice/replication shapes are rejected by the typing-derived finite invariant.
+Let $p \equiv q$ be structurally congruent processes. Then for every natural number $n$ and
+ownership context $\Delta$, $\Delta \vdash_n p$ if and only if $\Delta \vdash_n q$.

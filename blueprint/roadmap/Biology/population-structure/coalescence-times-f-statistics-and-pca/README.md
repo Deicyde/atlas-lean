@@ -4,7 +4,7 @@
 
 - [Probability that two genes differ at a biallelic site](het-pair.md)
 - [Squared frequency difference via pairwise heterozygosity](sq-sub-eq-het-pair.md)
-- [Expected heterozygosity between populations](mean-het.md)
+- [Mean heterozygosity between populations](mean-het.md)
 - [Integrability of pairwise heterozygosity](integrable-het-pair.md)
 - [Peter's formula for $f_2$ via expected heterozygosity](f2-eq-mean-het.md)
 - [Coalescent model linking heterozygosity and coalescence times](coalescent-model.md)

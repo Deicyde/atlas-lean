@@ -7,3 +7,7 @@ endomorphism of the Levi-Civita connection of $g$, $(e_i)$ is a fixed basis of $
 $(e_i^*)$ is its dual basis; the contraction itself uses no metric. Since $z \mapsto R(z, v) w$ is
 linear, this is its trace and does not depend on the basis ([Lang, Def. 2.7]). The unit
 $n$-sphere has $\operatorname{Ric} = (n - 1) g$.
+
+## Sources
+
+- [Lang] Lang, *Lecture Notes on Riemannian Geometry*, ETH Zürich, 2020.

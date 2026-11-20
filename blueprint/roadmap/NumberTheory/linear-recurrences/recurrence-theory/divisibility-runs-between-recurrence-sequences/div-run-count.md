@@ -12,4 +12,4 @@ $\mathcal{C}_B$.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Equation (2).
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Equation (2).

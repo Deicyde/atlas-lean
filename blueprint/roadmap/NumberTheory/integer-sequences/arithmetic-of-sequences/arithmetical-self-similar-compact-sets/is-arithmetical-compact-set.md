@@ -19,4 +19,4 @@ type $\omega^\omega$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 4, displays (4) and (5).
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 4, displays (4) and (5).

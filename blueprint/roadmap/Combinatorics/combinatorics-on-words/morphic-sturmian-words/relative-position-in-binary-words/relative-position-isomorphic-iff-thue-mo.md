@@ -9,4 +9,4 @@ sequence with $0$ read as $a$ and $1$ as $b$).
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 71 (`jis-2025-25.1.5-cor-71`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 71 (`jis-2025-25.1.5-cor-71`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

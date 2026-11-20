@@ -7,4 +7,4 @@ is $4098$.
 
 ## Sources
 
-- Busy Beaver Challenge (2025), determination of `Σ(5) = 4098`.
+- The bbchallenge Collaboration, "Determination of the fifth Busy Beaver value", arXiv:2509.12337, 2025: $\Sigma(5) = 4098$.

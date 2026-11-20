@@ -1,3 +1,5 @@
 # Ginibre's duplicated-variable change of variables
 
-Ginibre's duplicated-variable change of variables `(σ, q) ↦ (σ, σ q)` as an equivalence.
+For a finite set $V$, Ginibre's duplicated-variable change of variables $(\sigma, q) \mapsto (\sigma, \sigma q)$,
+with $\sigma q$ the [pointwise product](xnor.md) of the configurations, is a bijection of the pairs of
+spin configurations on $V$ that is its own inverse.

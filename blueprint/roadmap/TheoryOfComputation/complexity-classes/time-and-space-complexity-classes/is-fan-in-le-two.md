@@ -9,4 +9,4 @@ would be the unbounded-fan-in classes $\mathsf{AC}^k$.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 6.21; M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Definition 9.20.

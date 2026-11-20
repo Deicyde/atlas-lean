@@ -1,3 +1,3 @@
 # Top rule of the cut-free system
 
-Rule `⊤` for CF.
+For every sequent `Γ`, the cut-free system CF proves `⊢ ⊤, Γ`.

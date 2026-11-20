@@ -1,3 +1,7 @@
 # Cardinality of an intersection as a sum of indicators
 
-The size of `S ∩ T` as the sum over `T` of the indicator of `S`. See also `Finset.sum_boole`.
+For finite sets $S, T \subseteq \mathbb{Z}^2$,
+
+$$|S \cap T| = \sum_{t \in T} \mathbf{1}[t \in S]$$
+
+as integers.

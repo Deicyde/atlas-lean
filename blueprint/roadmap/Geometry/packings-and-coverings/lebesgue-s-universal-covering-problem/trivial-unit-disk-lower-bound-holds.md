@@ -7,4 +7,4 @@ of radius $1/2$.
 
 ## Sources
 
-- Radius-half disk lower-bound row, optimization catalogue constant 13b.
+- Disk of radius $1/2$ lower bound, listed in the optimization constants repository, constant 13b, https://github.com/teorth/optimizationproblems/blob/2c1968cd520b60f1cf3cf50749f7285e800e4e15/constants/13b.md.

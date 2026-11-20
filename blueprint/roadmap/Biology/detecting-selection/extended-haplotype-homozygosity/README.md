@@ -1,6 +1,6 @@
 # Extended haplotype homozygosity
 
-## Sample
+## Haplotype samples
 
 - [Haplotype window around the core](window.md)
 - [Equality of haplotype windows](window-eq-iff.md)
@@ -15,7 +15,7 @@
 - [Relative extended haplotype homozygosity (REHH)](rehh.md)
 - [Criterion for relative EHH to exceed one](one-lt-rehh-iff.md)
 
-## Neutral
+## The neutral coalescent
 
 - [Probability of no recombination on a pair's genealogy](pair-no-recomb.md)
 - [No-recombination probability decays with distance](pair-no-recomb-antitone.md)

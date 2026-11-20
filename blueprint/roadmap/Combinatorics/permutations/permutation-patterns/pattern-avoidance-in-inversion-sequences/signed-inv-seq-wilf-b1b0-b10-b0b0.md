@@ -1,4 +1,4 @@
-# Mansour–Safadi Lemma 9: a Wilf-equivalence of three-pattern sets
+# Wilf-equivalence of $\{\bar1\bar0, \bar10, \bar0\bar0\}$ and $\{\bar1\bar0, \bar10, \bar00\}$
 
 Length-2 signed
 patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that

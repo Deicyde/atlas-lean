@@ -3,7 +3,7 @@
 Let $U = U(P, Q)$ and
 $V = V(P, Q)$ be the Lucas sequences with integer parameters $P$ and $Q \ne 0$, and let $m$ and
 $n$ be natural numbers with $m \mid n$. Then $U_m \mid U_n$, and if moreover $n/m$ is odd, then
-$V_m \mid V_n$.
+$V_m \mid V_n$. For $m = 0$, which forces $n = 0$, the quotient $n/m$ is taken to be $0$.
 
 ## Sources
 

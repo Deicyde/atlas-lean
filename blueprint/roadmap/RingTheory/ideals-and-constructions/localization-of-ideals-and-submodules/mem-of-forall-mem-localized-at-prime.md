@@ -7,4 +7,4 @@ $s v \in M$ for some $s \in A \setminus \mathfrak p$. Then $v \in M$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Section 2.3, Proposition 2.6, element form.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 2, Proposition 2.6 (the form for elements), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -1,3 +1,3 @@
 # Reverse-complement filter
 
-The reverse-complement filter: `rcFilter W k b = W (Fin.rev k) (comp b)`.
+For a complement map and a filter $W$ of width $w$, the reverse-complement filter has entries $W_{w-1-k}(\bar b)$ at row $k$ and letter $b$.

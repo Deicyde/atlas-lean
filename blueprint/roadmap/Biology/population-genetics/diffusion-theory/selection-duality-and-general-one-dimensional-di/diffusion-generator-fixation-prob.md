@@ -1,4 +1,7 @@
-# Kimura (1962)
+# The scale-function ratio solves the backward equation
 
-The scale-function ratio `S / S(1)` solves the backward equation
-`a / 2 · u'' + b · u' = 0` on `(0, 1)`.
+For every [regular diffusion](is-regular-diffusion.md) with drift $b$ and variance $a$ and every $x \in (0, 1)$, the [scale-function ratio](fixation-prob.md) $u = S/S(1)$ satisfies $\frac{a(x)}{2} u''(x) + b(x) u'(x) = 0$, that is, $(L_{b,a} u)(x) = 0$ with the [backward generator](diffusion-generator.md).
+
+## Sources
+
+- M. Kimura, *On the probability of fixation of mutant genes in a population*, Genetics 47 (1962), 713–719.

@@ -7,4 +7,4 @@ at most $w_1$, and every lucky car parks in one of the spots $1, \dots, w_1$.
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Lemma 3.10 (`jis-2024-24.6.7-lem-30`).
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Lemma 30.

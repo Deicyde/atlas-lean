@@ -1,11 +1,3 @@
 # Gotoh continuation value after a gap in the first sequence
 
-Fix an integer-valued
-scoring function $\sigma$ on pairs of letters and integer gap-open and gap-extend penalties $g_o$
-and $g_e$. For sequences $u$ and $v$, the value $Y(u, v)$ is the fuel-bounded Gotoh recursion on
-$u$ and $v$, run with fuel equal to the sum of their lengths and started in the gap state where
-the previous column was a gap in $u$.
-
-It is the best affine-gap score of an alignment of $u$ with $v$ scored from that state. It is a
-continuation value, not an endpoint-restricted matrix: the next column may be a match or either
-gap, and the previous state only makes a next gap in $u$ cost $g_e$ instead of $g_o$.
+The value $Y(x, y) = G_{|x| + |y|}(x, y, Y)$, where $G$ is the [fuel-bounded recursion](gotoh-aux.md): the best affine score of an alignment of $x$ and $y$ given that the previous column was a gap in the first sequence. The first column is unrestricted; the previous state only makes a following gap in the first sequence cost $e$ instead of $o$.

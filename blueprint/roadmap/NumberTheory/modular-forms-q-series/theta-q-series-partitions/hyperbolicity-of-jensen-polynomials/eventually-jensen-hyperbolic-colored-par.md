@@ -13,8 +13,7 @@ Jensen polynomial $J^{d,n}(X) = \sum_{j=0}^{d} \binom{d}{j} C_r(n + j) X^j$ is h
 number of its real roots, counted with multiplicity, equals its degree.
 
 In the source, $C_r(n)$ is the coefficient of $q^{tn}$ in $1/(q^t; q^t)_\infty^r$ for any
-$t \ge 1$; the source also proves a Hermite-limit statement and higher order Turán inequalities,
-which are not part of this statement.
+$t \ge 1$; the source also proves a Hermite-limit statement and higher order Turán inequalities.
 
 ## Sources
 

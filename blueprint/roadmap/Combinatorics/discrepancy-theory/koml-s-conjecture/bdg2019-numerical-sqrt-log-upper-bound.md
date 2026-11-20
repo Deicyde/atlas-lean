@@ -9,4 +9,5 @@ Only this numerical bound is stated, not the polynomial-time algorithm of the so
 
 ## Sources
 
-- Bansal, Dadush, and Garg, arXiv1605.02882, retained introduction lines 52-60, Theorem `komlos`; efficient randomized/high-probability computation is an explicit separate gap.
+- Nikhil Bansal, Daniel Dadush and Shashwat Garg, *An algorithm for Komlós conjecture matching Banaszczyk's bound*, SIAM J. Comput. 48(2) (2019), 534–553, arXiv:1605.02882.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

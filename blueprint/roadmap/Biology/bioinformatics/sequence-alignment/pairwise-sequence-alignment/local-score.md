@@ -1,6 +1,3 @@
 # Local alignment score
 
-For an integer substitution score $\sigma$, an integer gap score
-$g$ and sequences $x$ and $y$, the local score of $x$ and $y$ is the maximum of the
-Needleman–Wunsch score of $(x', y')$ over all pairs of an infix $x'$ of $x$ and an infix $y'$ of
-$y$ (contiguous and possibly empty).
+The local score of $x$ and $y$ is $\mathrm{Loc}(x, y) = \max\bigl(0, \max_{(x', y')} \mathrm{NW}(x', y')\bigr)$, the maximum over the [infix pairs](infix-pairs.md), where $\mathrm{NW}$ is the [Needleman–Wunsch score](nw-score.md).

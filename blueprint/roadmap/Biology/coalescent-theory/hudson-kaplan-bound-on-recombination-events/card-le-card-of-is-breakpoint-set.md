@@ -1,5 +1,7 @@
-# Validity of the bound
+# A valid breakpoint set is at least as large as any disjoint family of four-gamete intervals
 
-**Validity of the bound** (Hudson–Kaplan 1985): a valid breakpoint set has at least as
-many points as any family of pairwise disjoint four-gamete intervals, since each interval needs
-its own breakpoint.
+Let $M$ be a sample of haplotypes over biallelic sites, $F$ a [disjoint family of four-gamete intervals](is-disjoint-family.md) and $B$ a [valid breakpoint set](is-breakpoint-set.md). Then $|F| \le |B|$: each interval of $F$ needs its own breakpoint.
+
+## Sources
+
+- R. R. Hudson and N. L. Kaplan, *Statistical properties of the number of recombination events in the history of a sample of DNA sequences*, Genetics 111 (1985), 147–164.

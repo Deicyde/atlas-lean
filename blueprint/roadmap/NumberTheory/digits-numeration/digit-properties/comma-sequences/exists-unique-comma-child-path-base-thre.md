@@ -5,8 +5,8 @@ sequence $a_0, a_1, \dots$ of natural numbers with $a_0 = 1$ such that for every
 comma candidate digit $y$ of $a_i$ in base $3$ with $a_{i+1} = a_i + 3\,(a_i \bmod 3) + y$,
 that is, each $a_{i+1}$ is a base-3 comma-child of $a_i$.
 
-The paper also describes this path (at branch points it alternately takes the lower and the
-higher child); that description is not part of this statement.
+The source also describes this path: at branch points it alternately takes the lower and the
+higher child.
 
 ## Sources
 

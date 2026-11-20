@@ -6,4 +6,5 @@ $K$ is a log-concave density.
 
 ## Sources
 
-- the uniform convex-body example in `constants/20b.md`.
+- B. Klartag and J. Lehec, *Affirmative resolution of Bourgain's slicing problem using Guan's bound*, arXiv:2412.15044v1 (2024), Introduction, definition of log-concave functions and the remark that uniform measures on convex bodies are log-concave; Geom. Funct. Anal. 35 (2025), 1147–1168.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20b.md`, the uniform law on a convex body.

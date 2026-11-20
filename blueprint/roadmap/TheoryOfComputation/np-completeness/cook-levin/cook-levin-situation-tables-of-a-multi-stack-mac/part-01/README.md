@@ -6,7 +6,7 @@
 - [Symbols a statement tree can push](push-sym.md)
 - [The symbolic effect grows by at most the number of stack operations](eff-bound.md)
 - [Pushed symbols come from the start or from push nodes](eff-pushed.md)
-- [Encoding data for a finite TM2 machine](enc.md)
+- [Encoding data for a finite multi-stack Turing machine](enc.md)
 - [Window depth of a machine](depth.md)
 - [The situation step](sit-step.md)
 - [Symbol-code bound](g.md)

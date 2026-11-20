@@ -22,4 +22,4 @@ These are rows $1$ to $7$ of Garvan's matrix as printed in Tables 1 and 2 of the
 
 ## Sources
 
-- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1, Tables 1 and 2.
+- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of $7^k$*, INTEGERS 26 (2026), Article A94, Section 1, Tables 1 and 2.

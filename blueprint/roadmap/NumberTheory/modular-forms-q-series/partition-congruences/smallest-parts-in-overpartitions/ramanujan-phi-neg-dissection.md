@@ -2,8 +2,8 @@
 
 Let $q$ be
 a complex number with $|q| < 1$, and for $k \ge 1$ let
-$f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the raw infinite
-q-Pochhammer product. Then
+$f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the infinite
+$q$-Pochhammer product. Then
 
 $$\frac{f_1^2}{f_2} = \frac{f_9^2}{f_{18}} - 2q \frac{f_3 f_{18}^2}{f_6 f_9}.$$
 

@@ -10,8 +10,8 @@ import Lean
 
 /-!
 Dump, for every constant declared in the given ATLAS v2 modules, the v2 constants
-its type and its value (including theorem proofs) use, and whether it is private,
-documented or an instance. An inductive type has no value, so its constructors'
+its type and its value (including theorem proofs) use, and whether it is private
+or documented. An inductive type has no value, so its constructors'
 types stand in for one: they hold a structure's fields and a class's parents. One JSON object per line;
 `scripts/extract_v2_lean_dependencies.py` collapses the result onto wiki articles.
 
@@ -63,7 +63,6 @@ def main (args : List String) : IO UInt32 := do
       ("kind", toJson (kindOf info)),
       ("private", toJson (isPrivateName name)),
       ("doc", toJson doc),
-      ("instance", toJson (Meta.isInstanceCore env name)),
       ("type", uses #[info.type]),
       ("value", value)]).compress
   return 0

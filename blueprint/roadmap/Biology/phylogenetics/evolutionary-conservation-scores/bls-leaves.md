@@ -1,4 +1,3 @@
-# All species give the whole tree
+# All species give the whole tree length
 
-The BLS of the set of all leaves is the total branch
-length.
+For every tree $T$ on a nonempty finite set $X$ and all real edge lengths $w$, the [branch length score](bls.md) satisfies $\mathrm{BLS}(X) = L(T, w)$, the [total branch length](total-length.md).

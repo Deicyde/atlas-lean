@@ -9,4 +9,4 @@ $\sum_{i=0}^{n} \mathcal{L}_{p,k}(i) = \mathcal{L}_{p,k}(n+p+1) - k(n+1) - 1$.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 3.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 3.

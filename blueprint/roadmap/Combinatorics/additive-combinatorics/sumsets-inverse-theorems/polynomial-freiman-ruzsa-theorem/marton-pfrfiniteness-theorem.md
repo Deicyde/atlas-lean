@@ -12,4 +12,4 @@ Gowers, Green, Manners and Tao.
 
 ## Sources
 
-- Optimization Problems constant 18a and GGMT, arXiv:2311.05762.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{18a}$ (Marton's conjecture constant), https://teorth.github.io/optimizationproblems/constants/18a.html and William Timothy Gowers, Ben Green, Freddie Manners and Terence Tao, "On a conjecture of Marton", arXiv:2311.05762.

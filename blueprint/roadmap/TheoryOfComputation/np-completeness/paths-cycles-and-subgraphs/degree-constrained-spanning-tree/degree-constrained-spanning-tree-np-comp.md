@@ -6,4 +6,4 @@ polynomial-time many-one reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), DEGREE-CONSTRAINED SPANNING TREE (the `K = 2` slice is Hamiltonian path).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), DEGREE-CONSTRAINED SPANNING TREE (the case $K = 2$ is HAMILTONIAN PATH).

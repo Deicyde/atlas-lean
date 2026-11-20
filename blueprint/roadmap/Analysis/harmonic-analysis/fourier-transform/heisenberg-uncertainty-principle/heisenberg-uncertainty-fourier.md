@@ -1,5 +1,7 @@
-# Heisenberg's uncertainty principle
+# Heisenberg's uncertainty principle in Fourier form
 
-**Heisenberg's uncertainty principle** in Fourier form: with Mathlib's
-Fourier normalization, the Fourier second moment about zero is `∫ ξ² * ‖𝓕 f ξ‖²`, and
-`(∫ ‖f x‖²)² ≤ 16 * π² * (∫ x² * ‖f x‖²) * (∫ ξ² * ‖𝓕 f ξ‖²)`.
+Let $f$ be a complex-valued Schwartz function on $\mathbb{R}$. With the Fourier transform $\hat f(\xi) = \int_{\mathbb{R}} f(x)\, e^{-2\pi i x \xi}\, dx$,
+
+$$
+\Big( \int_{\mathbb{R}} |f(x)|^2\, dx \Big)^2 \le 16 \pi^2 \Big( \int_{\mathbb{R}} x^2 |f(x)|^2\, dx \Big) \Big( \int_{\mathbb{R}} \xi^2 |\hat f(\xi)|^2\, d\xi \Big).
+$$

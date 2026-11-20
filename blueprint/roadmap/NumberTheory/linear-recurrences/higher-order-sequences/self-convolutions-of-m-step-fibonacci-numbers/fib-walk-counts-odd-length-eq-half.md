@@ -8,4 +8,4 @@ $E_{2k-1} = v_{2k-1}/2$ and $O_{2k-1} = v_{2k-1}/2$.
 
 ## Sources
 
-- Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 6.
+- Jan Sedlák and Antonín Slavík, *Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.7, Theorem 6.

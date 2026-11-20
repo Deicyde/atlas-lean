@@ -10,8 +10,8 @@ $(a, b)$.
 In the billiard argument for the $a \times b$ rectangle, the unfolded diagonal from the
 corner $(0, 0)$ first meets a corner of the tiling at $(t, t)$ (coprimality is the first-hit
 condition), $N$ counts the reflections, and folding back yields the corner
-$(\varepsilon_k a, \varepsilon_l b)$. This lemma covers only that lattice step; it does not
-formalize the reflected trajectory and does not prove Problem 147.
+$(\varepsilon_k a, \varepsilon_l b)$. This lemma is only the lattice step of that argument; the
+reflected trajectory itself, and Problem 147 as a whole, are not part of it.
 
 ## Sources
 

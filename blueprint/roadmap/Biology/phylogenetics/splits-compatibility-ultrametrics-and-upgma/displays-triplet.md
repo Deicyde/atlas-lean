@@ -1,4 +1,3 @@
 # Cluster system displaying a triplet
 
-The cluster system `H` **displays** the triplet `xy|z`: some cluster contains `x` and `y`
-but not `z`.
+A family $H$ of sets displays the [triplet](triplet.md) $xy \mid z$ if some $C \in H$ contains $x$ and $y$ but not $z$.

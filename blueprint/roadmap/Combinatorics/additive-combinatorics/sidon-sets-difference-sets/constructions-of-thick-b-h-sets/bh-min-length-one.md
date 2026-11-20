@@ -6,4 +6,4 @@ exactly one element is $1$; that is, $R_h^{-1}(1) = 1$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the paragraph before Theorem 7 ("Clearly, `R_h⁻¹(1) = 1`").
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Section 5 ("Clearly, $R_h^{-1}(1) = 1$").

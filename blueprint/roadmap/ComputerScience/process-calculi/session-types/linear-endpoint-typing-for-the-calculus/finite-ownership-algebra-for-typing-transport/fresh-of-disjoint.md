@@ -1,3 +1,4 @@
 # Owned keys are absent from the other side of a disjoint split
 
-A sent endpoint is absent from the other side of a linear split.
+Let $\Delta$, $\Theta$ be ownership contexts with disjoint domains, $e$ an endpoint and $c$ a
+capability with $\Delta(e) = c$. Then $e$ is not in the domain of $\Theta$.

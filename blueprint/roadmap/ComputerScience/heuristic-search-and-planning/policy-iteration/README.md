@@ -9,3 +9,9 @@
 - [Policy iteration never decreases the value](policy-value-policy-iteration-mono.md)
 - [Once optimal, policy iteration stays optimal](policy-value-policy-iteration-of-eq.md)
 - [Policy iteration terminates](policy-value-policy-iteration.md)
+
+## Related topics
+
+- [Performance difference lemma](../../machine-learning/reinforcement-learning/performance-difference-lemma/README.md)
+- [Stochastic policies and discounted occupancy](../../machine-learning/reinforcement-learning/stochastic-policies-and-discounted-occupancy/README.md)
+- [Approximate policy iteration](../../machine-learning/reinforcement-learning/approximate-policy-iteration/README.md)

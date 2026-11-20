@@ -35,7 +35,7 @@
 - [Dual cumulative rate inverts the cumulative rate](cum-rate-dual-cum-rate.md)
 - [Cumulative rate is strictly increasing](cum-rate-strict-mono-on.md)
 - [Bhaskar–Song identifiability](size-fn-eq-of-first-coal-mean-eq.md)
-- [Tightness of `n ≥ 2K`](exists-ne-first-coal-mean-eq-of-lt.md)
+- [Tightness of the sample-size bound $n \ge 2K$](exists-ne-first-coal-mean-eq-of-lt.md)
 - [Measurability of the piecewise size function](measurable-size-fn.md)
 - [Size function lies between the extreme piece sizes](exists-le-size-fn-le.md)
 - [Size function is locally constant to the right](exists-size-fn-eq-ico.md)

@@ -1,4 +1,4 @@
 # Erasing a different key commutes with insertion
 
-Erasing a different endpoint commutes with insertion, which is needed
-when an unused completed slot passes through a delegation prefix.
+Let $\Delta$ be an ownership context, $e \ne d$ endpoints and $c$ a capability. Then $\Delta[e
+\mapsto c] \setminus d = (\Delta \setminus d)[e \mapsto c]$.

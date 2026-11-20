@@ -13,4 +13,4 @@ only if it is the image of an integral unit.
 
 ## Sources
 
-- ATLAS `exactSeq_exact_at_quotient`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

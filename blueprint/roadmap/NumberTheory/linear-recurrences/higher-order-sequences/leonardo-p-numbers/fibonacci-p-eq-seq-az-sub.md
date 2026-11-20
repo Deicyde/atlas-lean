@@ -8,4 +8,4 @@ integer $t$.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 5.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 5.

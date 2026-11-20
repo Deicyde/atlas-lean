@@ -1,3 +1,3 @@
-# $k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$
+# $k + 2 \ne k$ modulo $n$ for $n \ge 3$
 
-In `Fin n` with `n ≥ 3`, `k + 2 ≠ k`.
+For every natural number $n \ge 3$ and every $k \in \mathbb{Z}/n\mathbb{Z}$, $k + 1 + 1 \neq k$.

@@ -1,3 +1,3 @@
 # Mean loss-of-function frequency of a distribution
 
-The mean LoF frequency `∑ μ_i (i / N)` of a distribution `μ` on `Fin (N + 1)`.
+For a natural number $N$ and a real vector $\mu$ on $\{0, \dots, N\}$, the mean frequency $\sum_{i=0}^{N} \mu_i\, \frac{i}{N}$, with the convention $i/0 = 0$.

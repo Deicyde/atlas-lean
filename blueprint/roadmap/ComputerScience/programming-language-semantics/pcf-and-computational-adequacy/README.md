@@ -64,7 +64,6 @@
 - [Composition of PCF contexts](comp.md)
 - [Plugging into a composite PCF context](plug-comp.md)
 - [Associativity of PCF context composition](comp-assoc.md)
-- [Filling a PCF context hole is plugging](fill-eq-plug.md)
 - [Contextual equivalence in PCF](ctx-equiv.md)
 - [Equal denotations are preserved by plugging into PCF contexts](denote-plug-congr.md)
 - [Equal denotations imply contextual equivalence in PCF](ctx-equiv-of-denote-eq.md)
@@ -75,3 +74,8 @@
 - [Contextual equivalence in PCF is a congruence](congr.md)
 - [Contextual approximation in PCF is reflexive](refl-2.md)
 - [Contextual equivalence is mutual contextual approximation in PCF](ctx-equiv-iff-ctx-approx.md)
+
+## Related topics
+
+- [Scott-continuous maps and least fixed points](../../../Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/README.md): the ω-complete partial orders, continuous function spaces and least fixed points that the denotational semantics uses.
+- [Models of the untyped lambda calculus](../models-of-the-untyped-lambda-calculus/README.md): Scott's graph model of the untyped calculus.

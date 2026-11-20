@@ -9,8 +9,9 @@ covering cell $1$, together with its phase, followed by the sequence of the rema
 clockwise, each a curved square or a curved $p$-mino; the lengths of all pieces sum to $n$. In
 particular $B_{p,0}$ is empty.
 
-The source sets $|B_{p,0}| = p^2 + p + 1$ by convention; that value is not modelled here.
+The source sets $|B_{p,0}| = p^2 + p + 1$ by convention, whereas the set $B_{p,0}$ defined above is
+empty.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 3, the set `B_{p,n}` before Proposition 12.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Section 3, the set $B_{p,n}$ before Proposition 12.

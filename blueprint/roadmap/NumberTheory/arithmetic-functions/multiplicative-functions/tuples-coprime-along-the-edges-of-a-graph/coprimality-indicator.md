@@ -7,4 +7,4 @@ natural number $1$ if $\gcd(n_i, n_j) = 1$ for every $(i, j) \in E$, and $0$ oth
 
 ## Sources
 
-- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, display (def_delta_G).
+- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, the display labelled `def_delta_G` in the TeX source, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex.

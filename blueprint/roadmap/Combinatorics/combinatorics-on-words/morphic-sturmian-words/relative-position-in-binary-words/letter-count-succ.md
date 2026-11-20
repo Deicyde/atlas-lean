@@ -7,4 +7,4 @@ $\#_\alpha(m) + 1$ if $\ell_m = \alpha$, and $\#_\alpha(m)$ otherwise.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 3 (definition of the counting function).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 3 (definition of the counting function), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

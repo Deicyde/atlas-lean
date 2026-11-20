@@ -1,5 +1,8 @@
-# Itô–Riemann sums of a deterministic `C¹` integrand
+# Itô–Riemann sums of a deterministic $C^1$ integrand
 
-Along every continuous path of `B`,
-the elementary Itô integrals at time `t` of the left-point approximations of `g` converge to
-Wiener's integration-by-parts expression `g t B t - g 0 B 0 - ∫_0^t g'(u) B u du`.
+Let $F$ be a filtration, $g$ of class $C^1$, $B$ a real process and $\omega$ such that $u \mapsto B_u(\omega)$ is
+continuous. Then for every $t \ge 0$ the [elementary Itô integrals](ito-integral.md) at time $t$ of the
+[left-point approximations](riemann.md) of $g$ converge, as $n \to \infty$, to Wiener's integration-by-parts
+expression
+
+$$g(t) B_t(\omega) - g(0) B_0(\omega) - \int_0^t g'(u) B_u(\omega)\, du .$$

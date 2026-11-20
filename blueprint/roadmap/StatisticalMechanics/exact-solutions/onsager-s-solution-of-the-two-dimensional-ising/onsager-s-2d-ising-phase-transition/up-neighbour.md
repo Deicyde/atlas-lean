@@ -1,5 +1,3 @@
 # Upward neighbour
 
-For a positive integer $L$, the upward neighbour of a site $(i, j)$ of
-the periodic $L \times L$ square lattice is $(i, j + 1)$, with addition in
-$\mathbb{Z}/L\mathbb{Z}$.
+For $L \ge 1$ and a site $p = (p_1, p_2)$ of $(\mathbb{Z}/L\mathbb{Z})^2$, the upward neighbour is $(p_1, p_2 + 1)$.

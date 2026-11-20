@@ -6,4 +6,4 @@ product. The series $f_5^5 / f_1$ is the generating function of 5-core partition
 
 ## Sources
 
-- Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation for `∑ c_t(n) q^n` with `t = 5` (OEIS A053723).
+- Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation for $\sum c_t(n) q^n$ with $t = 5$ (OEIS A053723).

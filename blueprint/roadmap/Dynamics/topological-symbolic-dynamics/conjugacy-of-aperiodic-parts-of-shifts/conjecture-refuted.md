@@ -12,4 +12,5 @@ conjugate.
 
 ## Sources
 
-- Ville Salo, Conjugacy of transitive SFTs minus periodic points, Proc. London Math. Soc. (accepted; arXiv v3 2023), arXiv:2104.09860, https://arxiv.org/abs/2104.09860.
+- Ville Salo, *Conjugacy of transitive SFTs minus periodic points*, Proc. Lond. Math. Soc. (3) 127 (2023), no. 6,
+  1681–1692, DOI 10.1112/plms.12567, Theorem 1; arXiv:2104.09860, <https://arxiv.org/abs/2104.09860>.

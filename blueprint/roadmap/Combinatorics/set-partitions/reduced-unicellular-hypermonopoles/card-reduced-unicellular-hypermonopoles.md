@@ -15,4 +15,4 @@ $(\sigma, \alpha)$ with $\sigma = (1, \dots, n)$ and $z(\alpha) = k$.
 
 ## Sources
 
-- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Proposition 12 (`jis-2025-25.3.3-prop-12`).
+- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Proposition 12.

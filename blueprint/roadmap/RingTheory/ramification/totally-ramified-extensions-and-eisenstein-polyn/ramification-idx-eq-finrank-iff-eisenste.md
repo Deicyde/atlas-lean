@@ -9,4 +9,4 @@ minimal polynomial of $\pi$ over $A$ is Eisenstein at the maximal ideal of $A$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Theorem 11.5 (Sutherland, MIT 18.785, Lecture 11).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 11, Theorem 11.5, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -9,4 +9,4 @@ ray-one elements lie in the kernel of the ray-element class map.
 
 ## Sources
 
-- ATLAS `exactSeq_map3`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

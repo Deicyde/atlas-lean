@@ -8,4 +8,4 @@ These values come from the Ulam words $001$, $011$, $100$, $110$ of length $3$.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1.
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1.

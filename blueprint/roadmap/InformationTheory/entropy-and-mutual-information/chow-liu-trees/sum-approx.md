@@ -1,3 +1,4 @@
 # Chow–Liu approximation sums to one
 
-The approximation is a probability law: `∑_x P_τ(x) = 1`.
+Let $\iota$ be a finite set of variables, $X = (X_i)_{i \in \iota}$ a random vector with values in $\prod_i \alpha_i$, each $\alpha_i$ finite, and joint law $P$ (a probability mass function), $\tau$ a dependence forest with parent map $j$, and $P_\tau$ the Chow–Liu approximation of $P$ along $\tau$.
+Then $P_\tau$ is a probability law: $\sum_x P_\tau(x) = 1$.

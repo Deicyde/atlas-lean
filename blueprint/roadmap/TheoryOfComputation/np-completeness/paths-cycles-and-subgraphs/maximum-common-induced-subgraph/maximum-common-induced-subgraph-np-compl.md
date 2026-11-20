@@ -6,4 +6,4 @@ polynomial-time many-one reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MAXIMUM COMMON INDUCED SUBGRAPH.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), MAXIMUM COMMON INDUCED SUBGRAPH.

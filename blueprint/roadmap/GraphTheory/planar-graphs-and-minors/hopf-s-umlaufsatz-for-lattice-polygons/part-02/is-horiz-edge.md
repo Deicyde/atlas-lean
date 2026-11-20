@@ -1,3 +1,3 @@
 # Horizontal lattice direction
 
-The direction `w` is horizontal (east or west).
+A direction $w \in \{0, 1, 2, 3\}$ is horizontal when $w = 0$ (east) or $w = 2$ (west).

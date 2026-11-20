@@ -6,4 +6,4 @@ Padovan–Perrin coefficient $\rho(n, s + p)$ attached to $k_1, k_2, p, s$ equal
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 4.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 4.

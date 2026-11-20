@@ -1,3 +1,3 @@
 # Positive definiteness of the GBLUP matrix
 
-For `λ > 0` the GBLUP matrix `ZZᵀ + λI` is positive definite.
+For a finite set $\iota$ of markers, a genotype matrix $Z \in \mathbb{R}^{m \times \iota}$ and $\lambda > 0$, the GBLUP matrix $Z Z^\top + \lambda I$ is positive definite.

@@ -1,5 +1,7 @@
 # Counting binary phylogenetic trees
 
+## Rooted trees
+
 - [Planar rooted binary tree with labeled leaves](plane-tree.md)
 - [Leaf labels of a planar binary tree](leaves.md)
 - [Every planar binary tree has a leaf](leaves-ne-zero.md)
@@ -7,6 +9,9 @@
 - [Planar drawings of rooted binary trees on a taxon set](on.md)
 - [Rooted binary phylogenetic tree](rooted-binary-tree.md)
 - [Schröder's count of rooted binary phylogenetic trees](nat-card-rooted-binary-tree.md)
+
+## Unrooted trees and binary hierarchies
+
 - [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
 - [Isomorphism of unrooted binary phylogenetic trees](iso.md)
 - [Binary hierarchy on a finite set](is-binary-hierarchy.md)
@@ -19,5 +24,5 @@
 - [Clusters determine an unrooted binary tree](iso-of-cluster-set-eq.md)
 - [Every binary hierarchy is a cluster set of a tree](exists-cluster-set-eq.md)
 - [Unrooted binary trees correspond to binary hierarchies](quot-equiv-hierarchy.md)
-- [Number of unrooted binary phylogenetic trees](nat-card-unrooted-binary-tree-of-two-le.md)
+- [Number of unrooted binary phylogenetic trees from two taxa on](nat-card-unrooted-binary-tree-of-two-le.md)
 - [The number of unrooted binary phylogenetic trees](nat-card-unrooted-binary-tree.md)

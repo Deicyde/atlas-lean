@@ -7,4 +7,4 @@ adjacent: $i \in S$ implies $i + 1 \notin S$) and its value $\sum_{i \in S} \var
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 1 (definition of `β(N)`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 1 (definition of $\beta(N)$).

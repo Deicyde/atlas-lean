@@ -6,4 +6,4 @@ reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), HAMILTONIAN CIRCUIT; R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), HAMILTONIAN CIRCUIT; Richard M. Karp, "Reducibility among combinatorial problems" (1972).

@@ -7,4 +7,4 @@ distinct. The empty sum $0$ is not counted among the partial sums.
 
 ## Sources
 
-- Noah Kravitz, "Rearranging Small Sets for Distinct Partial Sums", Theorem 2.
+- Noah Kravitz, "Rearranging Small Sets for Distinct Partial Sums", INTEGERS 24 (2024), Article A113, Theorem 2.

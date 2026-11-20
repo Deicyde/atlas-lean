@@ -11,4 +11,4 @@ true for a $1$-peak and false for a $0$-valley.
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, factorization (1).
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, factorization (1).

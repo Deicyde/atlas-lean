@@ -6,3 +6,7 @@ counter, initially $0$. For $k = 0, \dots, n-1$ in turn, let $c$ be the current 
 the process of $e_k$, and let $m = t_i$ if $e_k$ receives the message sent by the event at
 position $i$ with $i < k$, and $m = 0$ otherwise. Then $t_k = \max(c, m) + 1$, and the
 counter of the process of $e_k$ is set to $t_k$.
+
+## Sources
+
+- L. Lamport, *Time, Clocks, and the Ordering of Events in a Distributed System*, Communications of the ACM 21(7), July 1978, 558–565: "Logical Clocks", implementation rules IR1 and IR2, p. 560.

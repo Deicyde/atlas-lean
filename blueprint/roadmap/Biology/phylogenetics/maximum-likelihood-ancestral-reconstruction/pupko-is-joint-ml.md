@@ -1,5 +1,11 @@
-# Pupko et al. (2000): joint maximum likelihood
+# Pupko's reconstruction is a joint maximum-likelihood reconstruction
 
-With nonnegative root, transition and leaf
-weights, no root state `s` and labeling `z` of the non-root nodes has larger joint likelihood
-`π s * weight obs t s z` than Pupko's reconstruction.
+Let $\mathrm{obs}(l, s) \ge 0$ for all $l, s$, let the tree $t$ have [nonnegative weights](nonneg-weights.md), and let $\pi(s) \ge 0$ for every $s$. Then for every root state $s$ and every [labeling](../felsenstein-s-pruning-algorithm/labeling.md) $z$,
+
+$$\pi(s)\, W(t, s, z) \le \pi(\hat s)\, W(t, \hat s, \hat z),$$
+
+where $(\hat s, \hat z)$ is Pupko's [joint reconstruction](pupko.md) and $W$ the [weight](../felsenstein-s-pruning-algorithm/weight.md) (Pupko et al. 2000).
+
+## Sources
+
+- T. Pupko, I. Pe'er, R. Shamir and D. Graur, *A fast algorithm for joint reconstruction of ancestral amino acid sequences*, Mol. Biol. Evol. 17 (2000), 890–896.

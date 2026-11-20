@@ -1,9 +1,9 @@
 # Contiguity transfers convergence in probability
 
-If `Q ◁ P` (a fixed `P`) and the
-measurable functions `T n` converge to `c` in `P`-probability, then
-`Q n {ω | ε ≤ |T n ω - c|} → 0` for every `ε > 0`.
+Let $P$ be a measure on $\Omega$ and $(Q_n)$ a sequence of measures [contiguous](is-contiguous.md) with respect to the constant sequence $(P)$. If measurable $T_n : \Omega \to \mathbb{R}$ converge to $c \in \mathbb{R}$ in $P$-measure, then for every $\varepsilon > 0$,
+
+$$Q_n\{\omega : |T_n(\omega) - c| \ge \varepsilon\} \to 0.$$
 
 ## Sources
 
-- van der Vaart (1998), ch. 6.
+- A. W. van der Vaart, *Asymptotic Statistics*, Cambridge University Press, 1998, Chapter 6.

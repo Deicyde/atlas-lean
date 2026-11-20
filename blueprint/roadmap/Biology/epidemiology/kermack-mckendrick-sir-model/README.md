@@ -1,10 +1,10 @@
 # Kermack–McKendrick SIR model
 
-## SIR
+## The SIR system
 
 - [Solution of the Kermack–McKendrick SIR system](is-solution.md)
 
-## Is Solution
+## Properties of solutions
 
 - [Conservation of the population](total-eq.md)
 - [Threshold theorem (Kermack–McKendrick 1927)](deriv-infected-pos-iff.md)

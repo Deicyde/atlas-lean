@@ -8,4 +8,4 @@ $\varphi(g_1 g_2 \in E(G), h_1 h_2 \in E(H), g_1 = g_2, h_1 = h_2)$ is true.
 
 ## Sources
 
-- Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 2 (graph products `GφH`).
+- Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 2 (graph products $G \varphi H$).

@@ -15,4 +15,4 @@ The paper prints this identity with a factor $\tfrac{1}{2}$ on part of the right
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 28.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 28.

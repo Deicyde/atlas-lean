@@ -7,4 +7,4 @@ $1 \le j \le n$ some $s_i$ has additive order $2^j$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 12 (`jis-2025-25.7.8-thm-12`). The multiplicity `m` is existentially quantified.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 12 (`jis-2025-25.7.8-thm-12`). The multiplicity $m$ is existentially quantified.

@@ -1,5 +1,3 @@
 # Every binary hierarchy is a cluster set of a tree
 
-Every binary hierarchy on the taxa other than `a` is the cluster set, seen from the leaf
-`a`, of some unrooted binary phylogenetic tree (vertices: the leaf `a` and the members of the
-hierarchy; each member is joined to the smallest member strictly containing it).
+For every finite set $X$, every $a \in X$ and every [binary hierarchy](is-binary-hierarchy.md) $H$ on $X \setminus \{a\}$, there is an [unrooted binary phylogenetic tree](unrooted-binary-tree.md) on $X$ whose [cluster set](cluster-set.md) seen from $a$ is $H$.

@@ -5,4 +5,4 @@ hyper-Leonardo numbers $Le^{(r)}_n$ satisfy $Le^{(r+1)}_n = \sum_{k=0}^{n} Le^{(
 
 ## Sources
 
-- Spreafico and Catarino, INTEGERS 26 (2026), Article A48, Definition 1.
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Definition 1.

@@ -7,8 +7,8 @@ $V^{(-r)}_n = 0$ for $1 \le n < r$, $V^{(-r)}_r = r y^{-1}$ and
 $V^{(-r)}_{n+1} = y^{-1} V^{(-r)}_{n-r+1} - y^{-1} x V^{(-r)}_{n-r}$ for $n \ge r$. If $r = 0$,
 then $V^{(-r)}_n = 0$ for all $n \ge 1$.
 
-The paper takes $r \ge 2$; the case $r = 0$ only makes the definition total.
+The paper takes $r \ge 2$; the values for $r = 0$ are a convention.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.

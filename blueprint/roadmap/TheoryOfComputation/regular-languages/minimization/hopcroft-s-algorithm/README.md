@@ -1,5 +1,8 @@
 # Hopcroft's algorithm
 
+Throughout, a DFA has finitely many states, and its input alphabet, when it is finite, is listed in a fixed
+order.
+
 - [Preimage of a set under a letter](preimage.md)
 - [A set of states split by another](splits.md)
 - [Splitting a block by a set](split-block.md)
@@ -41,8 +44,8 @@
 - [Smaller-half splitters have at most half the block size](two-mul-card-le-of-mem-new-splitters-sma.md)
 - [Trace of splitters popped by Hopcroft's algorithm](hopcroft-splitters.md)
 - [Predecessor cost of a Hopcroft splitter trace](hopcroft-cost.md)
-- [The splitter trace records exactly the splitters the loop pops](hopcroft-splitters-length-le.md)
-- [Hopcroft splitter trace length equals loop fuel](hopcroft-loop-eq-hopcroft-loop-of-length.md)
+- [The splitter trace has at most as many entries as the fuel](hopcroft-splitters-length-le.md)
+- [Running Hopcroft's loop for the length of its trace gives the same result](hopcroft-loop-eq-hopcroft-loop-of-length.md)
 - [Splitter count of a state and letter](splitter-count.md)
 - [Splitter count of newly added splitters](splitter-count-new-splitters.md)
 - [Splitter count update after one Hopcroft round](splitter-count-round-w.md)

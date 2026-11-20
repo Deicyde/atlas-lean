@@ -9,4 +9,4 @@ allowed.
 
 ## Sources
 
-- Paul Thomas Young, *On the Brocard-Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Theorem 1 normalization note.
+- Paul Thomas Young, *On the Brocard-Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Section 2 (Theorems 1 and 2 concern positive indices only) and Section 3 (the values of $T_n$ for $-10 \le n \le 10$).

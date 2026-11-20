@@ -1,7 +1,7 @@
 # Word problem for orderable groups
 
 - [Bi-invariant linear orders on a group](bi-orders.md)
-- [Kourovka Problem 17.29 (V. V. Bludov, A. M. W. Glass)](finitely-presented-orderable-insoluble-w.md)
+- [Finitely presented orderable groups with insoluble word problem (Kourovka 17.29)](finitely-presented-orderable-insoluble-w.md)
 - [Bludov–Glass: a finitely presented orderable group with insoluble word problem](finitely-presented-orderable-insoluble-w-2.md)
 - [Recursively presented group](is-recursively-presented.md)
 - [Right orders of a group](right-orders.md)

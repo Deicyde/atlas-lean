@@ -1,3 +1,5 @@
 # Updating an owned key keeps absent keys absent
 
-Advancing another already-owned carrier does not create a payload alias.
+Let $\Delta$ be an ownership context, $d$ an endpoint not in the domain of $\Delta$, $e$ an endpoint
+in the domain of $\Delta$ and $c$ a capability. Then $d$ is not in the domain of $\Delta[e \mapsto
+c]$.

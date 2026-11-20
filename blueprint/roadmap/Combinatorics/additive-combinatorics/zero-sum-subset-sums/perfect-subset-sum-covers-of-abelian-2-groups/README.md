@@ -1,6 +1,6 @@
 # Perfect subset-sum covers of abelian 2-groups
 
-## Perfect Subset Sum Cover
+## Perfect subset-sum covers and odd combinations
 
 - [Cover count](cover-count.md)
 - [Perfect $m$-cover](is-perfect-mcover.md)

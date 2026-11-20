@@ -10,4 +10,4 @@ $$\sum_{i=k}^{n} \frac{s(n, i) \, S(i, k)}{i} =
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 15.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Corollary 15.

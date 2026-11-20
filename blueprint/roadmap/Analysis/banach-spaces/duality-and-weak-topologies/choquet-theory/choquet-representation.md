@@ -8,4 +8,4 @@ for $\mu$, and $\int_E y \, d\mu(y) = x$.
 
 ## Sources
 
-- G. Choquet, Seminaire Bourbaki 1956 and Lectures 1962; Bishop-de Leeuw and Choquet-Bishop-de Leeuw integral representation; Phelps, Lectures on Choquet's Theorem, 1966; Lean states compact-source specialization in second-countable real Banach space with `ProbabilityMeasure` carried by `extremePoints` and Bochner integral barycenter.
+- G. Choquet; E. Bishop and K. de Leeuw, The representations of linear functionals by measures on sets of extreme points, Ann. Inst. Fourier (Grenoble) 9 (1959), 305–331 (the Choquet–Bishop–de Leeuw integral representation); R. R. Phelps, Lectures on Choquet's Theorem, Van Nostrand, Princeton, 1966. The statement here is the case of a compact convex set in a second-countable real Banach space, with a probability measure carried by the extreme points whose barycenter is the given point.

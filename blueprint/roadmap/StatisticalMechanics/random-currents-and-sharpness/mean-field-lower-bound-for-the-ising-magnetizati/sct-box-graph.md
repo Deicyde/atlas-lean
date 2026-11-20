@@ -1,3 +1,3 @@
 # Nearest-neighbour graph on a box
 
-The nearest-neighbour graph induced on `Λ_n`.
+For $d, n \in \mathbb{N}$, this is the nearest-neighbour graph of $\mathbb{Z}^d$ induced on the box $\Lambda_n = \{-n, \dots, n\}^d$.

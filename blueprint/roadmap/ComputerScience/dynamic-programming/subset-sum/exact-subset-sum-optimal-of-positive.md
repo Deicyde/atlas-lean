@@ -6,4 +6,5 @@ the exact subset sum algorithm on $x$ with target $t$. Then $r$ is the sum of so
 $x$ (a subsequence, not necessarily contiguous), $r \le t$, and every sublist of $x$ whose sum
 is at most $t$ has sum at most $r$.
 
-These are the hypotheses of CLRS, Section 35.5; the proof does not use them.
+These are the hypotheses of CLRS, Section 35.5; the conclusion holds without them, for every list
+of natural numbers and every target.

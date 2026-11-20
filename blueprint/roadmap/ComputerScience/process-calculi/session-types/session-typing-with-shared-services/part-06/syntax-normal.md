@@ -1,4 +1,6 @@
 # Runtime-typed processes are congruent to a guarded normal form
 
-ALL10 runtime rules derive a syntactic normal form internally. Replicas
-remain actual guarded templates; no recursive process is erased to finite typing.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ an ownership context and $p$ a
+process with $\Gamma; \Delta \vdash_n p$ (runtime typing with shared services). Then there is a
+process $q$ in guarded normal form for $\Gamma$ (a parallel composition of service templates and
+prefixed processes under zero or more restrictions) with $p \equiv q$.

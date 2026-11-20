@@ -1,3 +1,4 @@
 # Erasing an absent key changes nothing
 
-Erasing an absent key changes no ownership entry.
+Let $\Delta$ be an ownership context and $e$ an endpoint not in the domain of $\Delta$. Then $\Delta
+\setminus e = \Delta$.

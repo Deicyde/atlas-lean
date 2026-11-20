@@ -5,4 +5,4 @@ decision problem in P is log-space many-one reducible to the Circuit Value Probl
 
 ## Sources
 
-- R. E. Ladner, "The circuit value problem is log space complete for P", SIGACT News 7 (1975), 18-20; S. A. Cook, "A hierarchy for nondeterministic time complexity", Journal of Computer and System Sciences 7 (1973), 343-353.
+- Richard E. Ladner, "The circuit value problem is log space complete for P", SIGACT News 7 (1975), 18-20; Stephen A. Cook, "A hierarchy for nondeterministic time complexity", Journal of Computer and System Sciences 7 (1973), 343-353.

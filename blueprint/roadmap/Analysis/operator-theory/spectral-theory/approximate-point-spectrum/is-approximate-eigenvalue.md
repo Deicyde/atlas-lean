@@ -1,4 +1,3 @@
 # Approximate eigenvalue of an operator
 
-`μ` is an **approximate eigenvalue** of `T` if there is a sequence of
-unit vectors `xₙ` with `(μ • 1 - T) xₙ → 0`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be an inner product space over $\mathbb{K}$. A scalar $\mu \in \mathbb{K}$ is an **approximate eigenvalue** of a bounded operator $T$ on $E$ if there is a sequence of unit vectors $(x_n)$ in $E$ with $(\mu I - T) x_n \to 0$.

@@ -1,4 +1,4 @@
-# The identity acts trivially on $W(p)$
+# The identity acts trivially on $p$-torsion points
 
 Let $W$ be a Weierstrass curve over $\mathbb{Q}$,
 $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular points of $W$ with

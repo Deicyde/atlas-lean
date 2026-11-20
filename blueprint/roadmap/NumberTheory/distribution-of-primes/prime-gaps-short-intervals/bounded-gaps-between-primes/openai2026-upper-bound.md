@@ -6,4 +6,4 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 ## Sources
 
-- OpenAI, Improved short gaps between primes, 30 August 2026, quoted in constants/88a.md.
+- OpenAI, Improved short gaps between primes, 30 August 2026, quoted in teorth/optimizationproblems, `constants/88a.md`.

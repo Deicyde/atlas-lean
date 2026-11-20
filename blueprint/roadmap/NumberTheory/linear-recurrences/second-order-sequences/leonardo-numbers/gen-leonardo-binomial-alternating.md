@@ -14,4 +14,4 @@ The hypothesis $n \ge 1$ is needed: for $n = 0$ the two sums equal $L_{k,r}$ and
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.3.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 3.3.

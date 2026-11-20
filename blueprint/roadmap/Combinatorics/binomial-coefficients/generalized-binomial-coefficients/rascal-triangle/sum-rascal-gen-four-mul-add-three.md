@@ -9,4 +9,4 @@ This was Conjecture 7.5 of Gregory et al.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Corollary 21.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Corollary 21, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

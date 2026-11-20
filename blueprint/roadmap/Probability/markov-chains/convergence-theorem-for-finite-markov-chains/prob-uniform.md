@@ -1,3 +1,4 @@
 # Transition probabilities of the uniform chain
 
-The uniform chain has constant transition probabilities `1 / (M + 1)`.
+For every $M$ and all states $i, j \in \{0, \dots, M\}$, the [uniform chain](uniform.md) has
+transition probability $P(i, j) = 1/(M + 1)$.

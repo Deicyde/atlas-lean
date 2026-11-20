@@ -1,8 +1,11 @@
 # PhyloCSF's score threshold test is most powerful for unnormalized weights
 
-With
-positive site likelihoods under both models, a randomized test `φ` whose weighted size under
-the non-coding weights is at most that of `scoreTest c` has at most its weighted power under
-the coding weights. This is the dominated Neyman–Pearson inequality for the unnormalized
-alignment weights `alignLik`; it becomes a statement about statistical size and power only
-under additional normalization hypotheses (`∑ A, alignLik = 1` for each model).
+Let the leaf set be finite, and suppose every column has positive [site likelihood](site-lik.md) under both models. Let $c$ be real and $\phi$ any map from alignments of $m$ columns to $[0, 1]$ such that
+
+$$\sum_{A} \phi(A)\, \mathcal{L}_N(A) \le \sum_{A} \phi_c(A)\, \mathcal{L}_N(A).$$
+
+Then
+
+$$\sum_{A} \phi(A)\, \mathcal{L}_C(A) \le \sum_{A} \phi_c(A)\, \mathcal{L}_C(A),$$
+
+where the sums run over all alignments, $\mathcal{L}_C, \mathcal{L}_N$ are the [alignment likelihoods](align-lik.md) and $\phi_c$ the [threshold test](score-test.md). The weights need not sum to one; size and power in the probabilistic sense need $\sum_A \mathcal{L}(A) = 1$ for each model.

@@ -6,7 +6,7 @@ with the colors $0, 1, \dots, r - 1$ and every natural number $k \ge 1$ there ar
 $x_0, \dots, x_{k-1}$ that are monochromatic for $c$ and form a $D$-AP: there are a positive
 integer $a$ and some $d \in D$ with $x_i = a + i d$ for all $i < k$.
 
-Quantifying over every length $k \ge 1$ formalizes "arbitrarily long" monochromatic $D$-APs.
+Requiring every length $k \ge 1$ expresses "arbitrarily long" monochromatic $D$-APs.
 
 ## Sources
 

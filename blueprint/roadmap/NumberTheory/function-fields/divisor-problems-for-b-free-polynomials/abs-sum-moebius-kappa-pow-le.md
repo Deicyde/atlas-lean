@@ -1,4 +1,4 @@
-# Bound on the Möbius sum over κ-th powers
+# Bound on the Möbius sum over $\kappa$-th powers
 
 Let $F$ be a finite field with $q$ elements and
 let $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for

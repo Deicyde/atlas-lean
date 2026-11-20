@@ -1,10 +1,10 @@
 # Deadlock detection
 
-## Deadlock Detection
+## Resource-allocation states
 
 - [Resource-allocation state](state.md)
 
-## State
+## Reduction sequences and detection
 
 - [Reduction sequences](reduces.md)
 - [Letting a process that fits finish first preserves reduction sequences](erase.md)

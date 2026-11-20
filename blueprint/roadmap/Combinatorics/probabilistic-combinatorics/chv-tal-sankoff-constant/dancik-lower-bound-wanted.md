@@ -7,4 +7,5 @@ subsequence of two independent uniformly random binary strings of length $n$.
 
 ## Sources
 
-- Dančík (1994), catalogue computer-assisted lower bound `0.773911`.
+- Vlado Dančík, *Expected length of longest common subsequences*, PhD thesis, University of Warwick, 1994 (computer assisted).
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{31a}$, Chvátal–Sankoff constant for a binary alphabet, https://teorth.github.io/optimizationproblems/constants/31a.html.

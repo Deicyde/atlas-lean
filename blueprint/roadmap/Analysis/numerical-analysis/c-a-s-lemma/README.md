@@ -13,6 +13,6 @@
 - [Existence of a Galerkin solution](exists-galerkin-solution.md)
 - [Galerkin orthogonality](galerkin-orthogonality.md)
 - [Céa's lemma](norm-sub-galerkin-solution-le.md)
-- [Céa's lemma](norm-sub-galerkin-solution-le-i-inf.md)
+- [Céa's lemma, infimum form](norm-sub-galerkin-solution-le-i-inf.md)
 - [Stability bound for the variational solution](norm-variational-solution-le.md)
 - [Stability bound for the Galerkin solution](norm-galerkin-solution-le.md)

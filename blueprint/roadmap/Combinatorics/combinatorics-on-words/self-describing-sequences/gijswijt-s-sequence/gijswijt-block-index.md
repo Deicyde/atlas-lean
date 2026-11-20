@@ -8,4 +8,4 @@ block $B_t^{(m)}$; if there is no such $t$, then $t(m, n) = 0$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 3 (definition of `t(m, n)`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 3 (definition of $t(m, n)$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

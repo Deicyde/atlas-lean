@@ -9,4 +9,4 @@ Statements that use $p^d_j$ assume $j \le d$, where the truncation plays no role
 
 ## Sources
 
-- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of `pᵈⱼ`.
+- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of $p^d_j$.

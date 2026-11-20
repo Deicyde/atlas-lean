@@ -1,4 +1,4 @@
-# VERTEX-COVER (exact size `k`) is NP-complete
+# VERTEX-COVER (exact size $k$) is NP-complete
 
 The decision problem VERTEX-COVER, which
 accepts exactly the valid encodings of a number $k$ and a graph $G$ such that $G$ has a vertex

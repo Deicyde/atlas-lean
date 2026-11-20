@@ -1,7 +1,7 @@
-# Ramanujan–Petersson conjecture for τ (Deligne's theorem)
+# Ramanujan–Petersson conjecture for $\tau$ (Deligne's theorem)
 
 For every prime $p$, the
-Ramanujan τ-function satisfies $|\tau(p)| \le 2p^{11/2}$, where $|\cdot|$ is the absolute value
+Ramanujan $\tau$-function satisfies $|\tau(p)| \le 2p^{11/2}$, where $|\cdot|$ is the absolute value
 of a complex number.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Variance term in the p-biased inequality
 
-The variance term `4(q-1) p²(1-p)²(z - 1)²`.
+For real $p$, $q$ and $z$, $V = 4(q - 1)\, p^2 (1 - p)^2 (z - 1)^2$.

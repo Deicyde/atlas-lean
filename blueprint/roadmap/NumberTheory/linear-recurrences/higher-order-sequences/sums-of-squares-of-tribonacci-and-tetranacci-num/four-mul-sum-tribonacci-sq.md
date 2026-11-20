@@ -8,4 +8,4 @@ $$4 \sum_{k=1}^{n} T(k)^2 = 4\,T(n)\,T(n+1) - 4\,T(0)\,T(1) -
 
 ## Sources
 
-- Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Theorem 1.
+- Karol Gryszka, *A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared*, INTEGERS 25 (2025), Article A110, Theorem 1.

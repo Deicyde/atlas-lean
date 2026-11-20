@@ -8,6 +8,4 @@ all sequences $(n_k)$ and $(t_k)$ of natural numbers with $n_k \ge 2$ for every 
 $t_k / n_k^{\alpha} \to \infty$ as $k \to \infty$, the ratio $N_{n_k, 4t_k} / A_{n_k, 4t_k}$
 tends to $1$.
 
-The catalogue constant $C_{23c}$ also allows corrected asymptotic formulas below the cubic scale;
-this predicate is its precise leading-term specialization, whose exact threshold the source
-records as $3$.
+The catalogue constant $C_{23c}$ also allows corrected asymptotic formulas below the cubic scale; for the uncorrected leading term the source records the exact threshold $3$.

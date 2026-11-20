@@ -16,4 +16,4 @@ $B_{n,k} = 0$.
 
 ## Sources
 
-- Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Proposition 2 (`jis-2024-24.5.2-prop-2`), citing Mansour and Sun.
+- Juan B. Gil, Emma G. Hoover, and Jessica A. Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Proposition 2, citing Mansour and Sun.

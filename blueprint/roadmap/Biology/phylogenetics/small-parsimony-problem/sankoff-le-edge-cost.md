@@ -1,4 +1,3 @@
 # Sankoff's cost is a lower bound
 
-Sankoff's cost is a lower bound for the cost of every labeling that agrees with the leaf
-states.
+For every labeling $z$ with root state $s$ that [agrees](agrees.md) with $\sigma$, $\mathrm{Sk}(t, s) \le C(t, s, z)$, where $\mathrm{Sk}$ is [Sankoff's cost](sankoff.md) and $C$ the [total cost](edge-cost.md).

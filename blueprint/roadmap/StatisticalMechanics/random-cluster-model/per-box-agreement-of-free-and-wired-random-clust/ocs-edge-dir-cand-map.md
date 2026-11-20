@@ -1,3 +1,3 @@
 # Adjacent box vertices differ by a signed unit vector
 
-The difference of adjacent box vertices is a signed unit vector. See also `rot_edge_dir`.
+For $d, m \in \mathbb{N}$ and adjacent vertices $u, v$ of $\Lambda_m = \{-m, \dots, m\}^d$, there are a coordinate $j$ and a sign such that $v - u = \pm e_j$, where $e_j$ is the $j$-th coordinate vector.

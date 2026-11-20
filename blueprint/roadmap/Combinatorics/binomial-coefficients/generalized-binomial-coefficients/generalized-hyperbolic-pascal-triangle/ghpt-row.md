@@ -10,4 +10,4 @@ $(0, \beta_{n+1})$. Row $0$ (the indeterminate root $\Omega$) is represented by 
 
 ## Sources
 
-- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Section 1 (construction of the triangle linked to `{4, q}`, Figure 1).
+- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Section 1 (construction of the triangle linked to $\{4, q\}$, Figure 1).

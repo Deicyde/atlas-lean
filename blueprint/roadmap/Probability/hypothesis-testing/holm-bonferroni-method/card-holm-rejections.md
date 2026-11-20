@@ -1,3 +1,3 @@
 # Number of hypotheses rejected by Holm's procedure
 
-Holm's procedure at level `α ≥ 0` rejects exactly `holmIndex α p` hypotheses.
+Let $m \in \mathbb{N}$, $\alpha \ge 0$ and $p_0, \dots, p_{m-1} \in \mathbb{R}$. Holm's procedure at level $\alpha$ rejects exactly $r$ hypotheses, where $r$ is [Holm's step-down count](holm-index.md).

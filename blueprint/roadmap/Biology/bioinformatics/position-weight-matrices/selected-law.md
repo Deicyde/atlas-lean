@@ -1,4 +1,7 @@
 # Law of energy-selected background sites
 
-The law of background sites selected with weight `e^{-λ E(s)}` for the additive energy
-`E s = score ε s = ∑ᵢ ε i (s i)`: `q(s) e^{-λ E(s)} / ∑_{s'} q(s') e^{-λ E(s')}`.
+For a background $q$, an energy matrix $\varepsilon$, a real $\lambda$ and a site $s$, put
+
+$$\mu(s) = \frac{\beta(s)\, e^{-\lambda E(s)}}{\sum_{s'} \beta(s')\, e^{-\lambda E(s')}},$$
+
+where $\beta$ is the [background likelihood](bg-lik.md), $E(s) = \mathrm{sc}_\varepsilon(s)$ the additive energy and $x/0 = 0$.

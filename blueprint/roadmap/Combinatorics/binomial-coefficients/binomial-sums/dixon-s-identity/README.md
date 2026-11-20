@@ -14,5 +14,5 @@
 - [Integer binomial coefficients vanish when the lower index exceeds the upper](int-binom-of-lt.md)
 - [Term of Dixon's alternating sum](dixon-summand.md)
 - [Bound of the Dixon summation window](dixon-bound.md)
-- [The Dixon sum $\upsilon_3$](upsilon.md)
+- [The Dixon sum $\Upsilon_3$](upsilon.md)
 - [Dixon's summation theorem](dixon-summation.md)

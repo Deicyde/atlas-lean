@@ -13,4 +13,4 @@ $r \ge 1$, where $H_r = \sum_{j=1}^{r} 1/j$ is the $r$-th harmonic number.
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Theorem 8.
+- Horst Alzer and Man Kam Kwong, *Ramanujan and a Combinatorial Identity Involving Harmonic Numbers*, Journal of Integer Sequences 29 (2026), Article 26.4.8, Theorem 8.

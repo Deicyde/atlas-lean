@@ -6,7 +6,8 @@ absolute value of an exponent of a variable occurring in $F$, and $\Lambda_p$ fo
 that keeps the terms whose exponents are all multiples of $p$ and substitutes $x_s^p \mapsto x_s$.
 For every finite list $k_1, \dots, k_n$ of natural numbers with each $k_t < p$, starting from $Q$
 and applying $R \mapsto \Lambda_p(P^{k_t} R)$ for $t = 1, \dots, n$ in turn gives a Laurent
-polynomial of degree at most $\max(\deg P - 1, \deg Q)$.
+polynomial of degree at most $\max(\deg P - 1, \deg Q)$, where $\deg P - 1$ is read as $0$ when
+$\deg P = 0$.
 
 ## Sources
 

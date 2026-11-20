@@ -11,4 +11,5 @@ bounds the thin-shell width from above.
 
 ## Sources
 
-- Jambulapati, Lee and Vempala, arXiv:2208.11644v1, Theorem 22.
+- A. Jambulapati, Y. T. Lee and S. S. Vempala, *A slightly improved bound for the KLS constant*, arXiv:2208.11644v1
+  (2022), Theorem 22.

@@ -6,4 +6,5 @@ $\psi_n \le C n^{1/4}$.
 
 ## Sources
 
-- Lee and Vempala, Ann. of Math. 199 (2024), 1--104; optimizationproblems `constants/20c.md`, LV2024 row.
+- Y. T. Lee and S. S. Vempala, *Eldan's stochastic localization and the KLS conjecture: isoperimetry, concentration
+  and mixing*, Ann. of Math. (2) 199 (2024), no. 3, 1043–1092 (conference version: FOCS 2017); catalogue https://github.com/teorth/optimizationproblems, `constants/20c.md`.

@@ -12,4 +12,4 @@ $c = 4/(7m)$ for an integer $m \ge 1$ it is the paper's $A_{n,m}$.
 
 ## Sources
 
-- Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 3.1 (the lower branch `W₋₁` defining `a n` and `A n m`).
+- Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 3.1 (the lower branch $W_{-1}$ defining $a_n$ and $A_{n,m}$).

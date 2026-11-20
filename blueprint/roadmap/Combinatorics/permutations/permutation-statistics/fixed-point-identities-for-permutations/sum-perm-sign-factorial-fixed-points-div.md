@@ -12,4 +12,4 @@ $$\sum_{\sigma} \operatorname{sgn}(\sigma)
 
 ## Sources
 
-- Jean-Christophe Pain, "Identities for Permutations with Fixed Points", Theorem 3.
+- Jean-Christophe Pain, "Identities for Permutations with Fixed Points", Journal of Integer Sequences 28 (2025), Article 25.6.4, Theorem 3.

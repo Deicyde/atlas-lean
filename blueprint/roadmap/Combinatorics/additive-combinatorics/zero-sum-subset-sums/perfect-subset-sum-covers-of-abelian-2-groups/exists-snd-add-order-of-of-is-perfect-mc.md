@@ -7,4 +7,4 @@ every $j$ with $1 \le j \le n$ the second coordinate of some $s_i$ has additive 
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 14 (`jis-2025-25.7.8-cor-14`). The family has any finite index type (the record reuses `n` for its length).
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 14 (`jis-2025-25.7.8-cor-14`). The family has any finite index type (the paper reuses $n$ for its length).

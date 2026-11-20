@@ -8,4 +8,4 @@ $2^{n/24} \le C a_n$ for all sufficiently large $n$.
 
 ## Sources
 
-- Ali Aberkane and James D. Currie, *The Number of Ternary Words Avoiding Abelian Cubes Grows Exponentially*, Journal of Integer Sequences 7 (2004), Article 04.2.7, <https://cs.uwaterloo.ca/journals/JIS/VOL7/Currie/currie18.tex>, Second Main Theorem, lines 558-561.
+- Ali Aberkane, James D. Currie and Narad Rampersad, *The Number of Ternary Words Avoiding Abelian Cubes Grows Exponentially*, Journal of Integer Sequences 7 (2004), Article 04.2.7, Section 5, Theorem 5.1 (Second Main Theorem), https://cs.uwaterloo.ca/journals/JIS/VOL7/Currie/currie18.html

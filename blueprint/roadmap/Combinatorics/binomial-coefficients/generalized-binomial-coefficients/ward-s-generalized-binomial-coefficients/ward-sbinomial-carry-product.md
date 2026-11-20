@@ -17,4 +17,4 @@ theorem.
 
 ## Sources
 
-- Tom Edgar and Michael Z. Spivey, "Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.6, Theorem [Ward] `thmward` (equation `wardeqn`), lines 475–482, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex>; attributed there to M. Ward.
+- Tom Edgar and Michael Z. Spivey, *Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers*, J. Integer Seq. 19 (2016), Article 16.1.6, Theorem 20 (Ward), equation (3), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.html>; attributed there to Morgan Ward.

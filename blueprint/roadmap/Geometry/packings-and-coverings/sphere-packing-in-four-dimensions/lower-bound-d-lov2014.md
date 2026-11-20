@@ -6,4 +6,4 @@ all packings of congruent balls in $\mathbb{R}^4$, satisfies $\frac{\pi^2}{16} \
 
 ## Sources
 
-- dLOV2014 Table 1, center-density lower bound `0.12500 = 1/8`, converted exactly to `π²/16`; `0.616850` is only an approximation.
+- D. de Laat, F. M. de Oliveira Filho and F. Vallentin, *Upper bounds for packings of spheres of several radii*, Forum Math. Sigma 2 (2014), e23, arXiv:1206.2608, Table 1: center-density lower bound $0.12500 = 1/8$, converted exactly to $\pi^2/16$; $0.616850$ is only an approximation.

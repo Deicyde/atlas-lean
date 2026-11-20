@@ -8,4 +8,4 @@ For $n \le 1$ the polynomial is $0$ since $N_0 = N_1 = 0$.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 14.
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 14.

@@ -14,4 +14,4 @@ with one family $\delta_i$ for every $p$, is a special case.
 
 ## Sources
 
-- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Theorem 9.
+- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, J. Integer Seq. 27 (2024), Article 24.3.4, Theorem 9, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Brietzke/bri3.html>.

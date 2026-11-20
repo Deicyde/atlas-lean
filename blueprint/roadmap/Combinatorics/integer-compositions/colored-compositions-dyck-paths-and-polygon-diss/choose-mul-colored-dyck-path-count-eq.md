@@ -12,4 +12,4 @@ $$\binom{n+k}{k} d_{n,k}(\gamma) = \binom{n+1}{k} p_{n,k}(\gamma).$$
 
 ## Sources
 
-- Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Theorem 6 (`jis-2024-24.5.2-thm-6`).
+- Juan B. Gil, Emma G. Hoover, and Jessica A. Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Theorem 6.

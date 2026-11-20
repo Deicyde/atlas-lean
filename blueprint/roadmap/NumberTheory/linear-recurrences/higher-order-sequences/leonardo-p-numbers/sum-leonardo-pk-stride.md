@@ -11,4 +11,4 @@ $S = \mathcal{L}_{p,k}((p+1)(n+1)) - k(n+1) - 1$ if $m = p$.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 4.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 4.

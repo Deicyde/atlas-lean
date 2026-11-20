@@ -13,4 +13,4 @@ over these configurations.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 2.
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 2.

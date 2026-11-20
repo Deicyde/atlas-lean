@@ -15,4 +15,4 @@ even product coefficients stay nonzero.
 
 ## Sources
 
-- Dennis E. Davenport, Louis W. Shapiro, Lara K. Pudwell, and Leon C. Woodson, "The Boundary of Ordered Trees," Journal of Integer Sequences 18 (2015). Source file: <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davenport/dav3.tex> (Bender's lemma, lines 521-523). It follows from `bender_product_coefficient_asymptotic_general`; the hypothesis `hB` is unused and keeps the source's shape.
+- Dennis E. Davenport, Louis W. Shapiro, Lara K. Pudwell, and Leon C. Woodson, "The Boundary of Ordered Trees," Journal of Integer Sequences 18 (2015). Source file: <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davenport/dav3.tex> (Bender's lemma, lines 521-523).

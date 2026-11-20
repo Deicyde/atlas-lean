@@ -12,4 +12,4 @@ and $m_1(i)$, $m_2(i)$ count how often $i$ appears in the top and bottom rows.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Section 1 (definition of `φ_k(n)`, after Andrews).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Section 1 (definition of $\varphi_k(n)$, after Andrews).

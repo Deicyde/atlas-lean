@@ -1,3 +1,3 @@
 # Largest valid offset on a diagonal
 
-The largest valid offset on diagonal `k`: `h ≤ |ys|` and `v = h - k ≤ |xs|`.
+For sequences $x, y$ and an integer diagonal $k$ (cells $(v, h)$ with $h - v = k$, $v$ letters of $x$ and $h$ letters of $y$ consumed), the largest valid offset is $\min(|y|, |x| + k)$.

@@ -5,4 +5,4 @@ class NP, and every decision problem in NP has a polynomial-time many-one reduct
 
 ## Sources
 
-- U. Feige, G. Kortsarz, and D. Peleg, "The dense k-subgraph problem" (2001); M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), DENSEST k-SUBGRAPH.
+- Uriel Feige, Guy Kortsarz, and David Peleg, "The dense k-subgraph problem" (2001); Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), DENSEST k-SUBGRAPH.

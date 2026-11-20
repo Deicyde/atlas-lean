@@ -11,4 +11,4 @@ a prefix of $u$.
 
 ## Sources
 
-- [OWR-4425-004] Labbé, A counterexample to a question of Hof, Knill and Simon, EJC 21 (2014) #P3.11, Theorem 1.
+- Sébastien Labbé, *A Counterexample to a Question of Hof, Knill and Simon*, Electronic Journal of Combinatorics 21 (2014), #P3.11, Section 3, main theorem (Theorem 10 in arXiv:1307.1589v1), https://doi.org/10.37236/3758

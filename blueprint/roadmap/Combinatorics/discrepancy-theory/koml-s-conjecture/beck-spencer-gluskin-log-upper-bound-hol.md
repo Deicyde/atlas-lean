@@ -8,4 +8,5 @@ where $\log$ is the natural logarithm.
 
 ## Sources
 
-- optimization catalogue C24a, line 35, Beck, Spencer, and Gluskin.
+- József Beck, *Roth's estimate of the discrepancy of integer sequences is nearly sharp*, Combinatorica 1(4) (1981), 319–325; Joel Spencer, *Six standard deviations suffice*, Trans. Amer. Math. Soc. 289(2) (1985), 679–706; Efim D. Gluskin, *Extremal properties of orthogonal parallelepipeds and their applications to the geometry of Banach spaces*, Mat. Sb. (N.S.) 136(178) (1988), 85–96, English translation in Math. USSR-Sb. 64 (1989), 85–96.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

@@ -15,7 +15,7 @@
 - [One pointer-jumping round on arrays](round-tab-2.md)
 - [List-ranking rounds on arrays](rounds-tab-2.md)
 - [List ranking by pointer jumping](list-ranks.md)
-- [Pointer jumping ranks every list in ⌈log₂ n⌉ rounds](list-ranks-get-d.md)
+- [Pointer jumping ranks every list in $\lceil \log_2 n \rceil$ rounds](list-ranks-get-d.md)
 - [The value $k$ steps ahead](step-val.md)
 - [Segment sums](seg-sum.md)
 - [Segment sums add up](seg-sum-add.md)

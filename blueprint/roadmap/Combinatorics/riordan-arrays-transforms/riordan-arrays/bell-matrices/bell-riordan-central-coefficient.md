@@ -10,4 +10,4 @@ The source writes the right-hand side as $(n+1)\,[x^n]\,\tfrac{1}{x} u(x)$.
 
 ## Sources
 
-- Paul Barry, "On the Central Coefficients of Bell Matrices," Journal of Integer Sequences 14 (2011), Article 11.4.3, Theorem `laterthm`, lines 167-169, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry3/barry132.tex>.
+- Paul Barry, "On the Central Coefficients of Bell Matrices," Journal of Integer Sequences 14 (2011), Article 11.4.3, Theorem 3, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry3/barry132.pdf>.

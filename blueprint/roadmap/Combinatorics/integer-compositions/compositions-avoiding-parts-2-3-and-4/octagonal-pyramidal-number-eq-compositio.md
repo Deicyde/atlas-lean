@@ -6,4 +6,4 @@ $3$ or $4$ is the $k$-th octagonal pyramidal number $k(k+1)(2k-1)/2$.
 
 ## Sources
 
-- Milan Janjić, *Binomial Coefficients and Enumeration of Restricted Words*, Journal of Integer Sequences 19 (2016), Article 16.7.3, the corollary.
+- Milan Janjić, *Binomial Coefficients and Enumeration of Restricted Words*, Journal of Integer Sequences 19 (2016), Article 16.7.3, Corollary 20, item 10.

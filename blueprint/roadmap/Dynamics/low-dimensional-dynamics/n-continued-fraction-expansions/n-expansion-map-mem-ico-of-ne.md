@@ -8,4 +8,5 @@ Indeed $T_\alpha(x) = \alpha + \{N/x - \alpha\}$, where $\{\cdot\}$ denotes the 
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

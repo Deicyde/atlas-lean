@@ -1,4 +1,4 @@
-# Generalized FiboCatalan numbers at r = 0
+# Generalized FiboCatalan numbers at $r = 0$
 
 For every natural number $n$, the generalized
 FiboCatalan number with parameters $r = 0$ and $n$ equals the FiboCatalan number

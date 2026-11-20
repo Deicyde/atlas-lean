@@ -8,4 +8,4 @@ converges, and its sum is $\log 2 - \frac{1}{2}$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 1, printed p. 26 / PDF p. 36.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 1, p. 26.

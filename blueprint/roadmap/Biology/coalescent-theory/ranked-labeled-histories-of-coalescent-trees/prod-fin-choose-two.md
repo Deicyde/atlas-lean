@@ -1,3 +1,7 @@
 # Reindexing the product of pair counts
 
-Reindexing: `∏_{i < n - 1} C(n - i, 2) = ∏_{k=2}^n C(k, 2)`.
+For every natural number $n$,
+
+$$\prod_{i=0}^{n-2} \binom{n-i}{2} = \prod_{k=2}^{n} \binom{k}{2},$$
+
+where the left product is empty when $n \le 1$.

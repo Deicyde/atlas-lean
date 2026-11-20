@@ -11,4 +11,4 @@ $\alpha = 2$ and $n \ge 1$ these are the terms of OEIS A064062.
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)`, quoting W. Whitt, J. Integer Seq. 14 (2011)).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of $C(\alpha, n+1)$, quoting W. Whitt, J. Integer Seq. 14 (2011)).

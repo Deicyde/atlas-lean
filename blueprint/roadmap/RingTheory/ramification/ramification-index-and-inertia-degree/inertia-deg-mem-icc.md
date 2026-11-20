@@ -8,4 +8,4 @@ $\mathfrak{p}$ satisfies $1 \le f_{\mathfrak{q}} \le n$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 5.36 (the $f_{\mathfrak{q}}$ part).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 5, Corollary 5.36 (the statement for $f_{\mathfrak{q}}$), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

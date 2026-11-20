@@ -7,8 +7,7 @@ simple graph $H$ and a natural number $k \ge 2$, let $H^{k-1}$ be the graph obta
 replacing each edge with a path of length $k$ through $k - 1$ new vertices (internally disjoint
 for different edges). Then for every even natural number $k \ge 2$, every natural number $m$ and
 every simple graph $H$ on the vertex set $\{0, \dots, m - 1\}$, there are real numbers
-$\delta > 0$ and $C$ such that $\mathrm{ex}(n, H^{k-1}) \le C \cdot n^{1 + 1/k - \delta}$ for
-every natural number $n$.
+$\delta > 0$ and $C$ such that $\mathrm{ex}(n, H^{k-1}) \le C \cdot n^{1 + 1/k - \delta}$ for every natural number $n$ (where $0^a = 0$ for every real $a \ne 0$).
 
 This was proved by Janzer (Bull. London Math. Soc. 53 (2021) 108–118, Theorem 1.7).
 

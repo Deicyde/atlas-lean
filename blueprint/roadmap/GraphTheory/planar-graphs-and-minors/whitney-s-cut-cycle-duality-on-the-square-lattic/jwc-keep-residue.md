@@ -1,5 +1,3 @@
 # Whitney duality in the bridge direction
 
-Whitney's duality in the bridge direction for `P`: for every subgraph `K` of `P` and edge
-`xy` of `P` not in `K` with dual edge `f0g0`, if `x` and `y` are disconnected in `K`, then
-`f0` and `g0` are connected in the face-region graph of `K` with `f0g0` deleted.
+Let $P$ be a finite graph $G = (V, E)$ with an injective map $\iota : V \to \mathbb{Z}^2$ sending edges to lattice edges. $P$ satisfies Whitney's duality in the bridge direction when, for every subgraph $K \le G$, every edge $\{x, y\}$ of $G$ not in $K$ and every pair of adjacent faces $f_0, g_0$ whose separating primal edge is $\{\iota(x), \iota(y)\}$: if $x$ and $y$ are not joined by a walk in $K$, then $f_0$ and $g_0$ are joined by a walk in the face-region graph of $\iota(K)$ with the edge $\{f_0, g_0\}$ deleted.

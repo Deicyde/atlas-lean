@@ -12,4 +12,4 @@ C_t(z) = \sum_{n \ge 0} \frac{1}{(t-1)n + 1} \binom{tn}{n} z^n.$$
 
 ## Sources
 
-- Naiomi T. Cameron and Jillian E. McLeod, "Returns and Hills on Generalized Dyck Paths," Journal of Integer Sequences 19 (2016), Article 16.6.1, Theorem (binomial `[t]`-Motzkin generating function), lines 987–989, https://cs.uwaterloo.ca/journals/JIS/VOL19/McLeod/mcleod3.tex
+- Naiomi T. Cameron and Jillian E. McLeod, "Returns and Hills on Generalized Dyck Paths," Journal of Integer Sequences 19 (2016), Article 16.6.1, Theorem 18, <https://cs.uwaterloo.ca/journals/JIS/VOL19/McLeod/mcleod3.tex>

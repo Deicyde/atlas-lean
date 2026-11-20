@@ -1,3 +1,3 @@
 # Boundary phase of a step in a direction
 
-The phase of a step in direction `μ`: `u, v, u⁻¹, v⁻¹` for east, north, west, south.
+For $u, v \in \mathbb{C}$ and a direction $\mu \in \{0, 1, 2, 3\}$, the direction phase $\pi_{u,v}(\mu)$ is $u$, $v$, $u^{-1}$, $v^{-1}$ for $\mu = 0, 1, 2, 3$ respectively, with the convention $0^{-1} = 0$.

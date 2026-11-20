@@ -1,4 +1,3 @@
 # Expectation under Bernoulli product weights
 
-The expectation `∑_ω f(ω) W(ω)` of `f` under the Bernoulli(`p`) product weights on a finite
-edge set.
+For a finite set $E$, $p \in [0, 1]$ and $f : \{0, 1\}^E \to \mathbb{R}$, the expectation $\sum_{\omega \in \{0, 1\}^E} f(\omega)\, W(\omega)$ of $f$ under the [product weights](w.md) $W$.

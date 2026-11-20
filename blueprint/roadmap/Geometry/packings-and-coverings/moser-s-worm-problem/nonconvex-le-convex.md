@@ -6,4 +6,4 @@ worm cover constant (the infimal area of convex universal covers of unit arcs).
 
 ## Sources
 
-- Optimization Problems, constant 13a; source-specific interval-arc adaptation.
+- Moser's worm problem, constant 13a of the optimization constants repository, https://github.com/teorth/optimizationproblems/blob/2c1968cd520b60f1cf3cf50749f7285e800e4e15/constants/13a.md.

@@ -5,7 +5,7 @@ $|\mathrm{Aut}(G)| = \varphi(|G|)$ is cyclic: there is a non-cyclic finite group
 $|\mathrm{Aut}(G)| = \varphi(|G|)$, where $\varphi$ is Euler's totient function and
 $\mathrm{Aut}(G)$ is the group of automorphisms of $G$.
 
-Bray and Wilson prove more than is stated here: there are infinitely many such non-cyclic groups.
+Bray and Wilson prove more: there are infinitely many such non-cyclic groups.
 
 ## Sources
 

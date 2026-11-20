@@ -5,7 +5,7 @@
 - [Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$](ramanujan-psi-f-chi-eq-q-pochhammer.md)
 - [Ramanujan's Entry 30 (i)–(iii) for the general theta function](ramanujan-theta-entry30.md)
 - [Odd Lambert series for Ramanujan's continued fractions of order sixteen](lambert-odd-order-sixteen-eq-continued-f.md)
-- [Raw Jacobi theta function $\theta_1$](jacobi-theta-one-sine-raw.md)
+- [The Jacobi theta series $\theta_1$ for arbitrary $\tau$](jacobi-theta-one-sine-raw.md)
 - [Jacobi theta function $\theta_1$](jacobi-theta-one-sine.md)
 - [The Jacobi theta function $\theta_1$ vanishes at $z = 0$](jacobi-theta-one-sine-zero.md)
 - [Oddness of the Jacobi theta function $\theta_1$](jacobi-theta-one-sine-neg.md)

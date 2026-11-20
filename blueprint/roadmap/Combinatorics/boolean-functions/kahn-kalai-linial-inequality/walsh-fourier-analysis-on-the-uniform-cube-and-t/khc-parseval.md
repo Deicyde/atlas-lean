@@ -1,5 +1,7 @@
 # Parseval's identity on the Boolean cube
 
-Parseval's identity: `𝔼[f g] = ∑_S f̂(S) ĝ(S)`.
+For a finite set $E$ and $f, g : \{0, 1\}^E \to \mathbb{R}$,
 
-Transported from `BooleanCube.expect_mul_eq_sum_boolFourierCoeff_mul`.
+$$\mathbb{E}[f g] = \sum_{S \subseteq E} \hat f(S)\, \hat g(S),$$
+
+where $\mathbb{E}$ is the expectation under the uniform measure and $\hat f(S)$, $\hat g(S)$ are the [Walsh–Fourier coefficients](khc-fourier-coeff.md).

@@ -12,4 +12,4 @@ at least $2/3$ if $L(x)$ is true and at most $1/3$ if $L(x)$ is false.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 10.1; M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4; E. Bernstein and U. Vazirani, "Quantum complexity theory", SIAM Journal on Computing 26 (1997), 1411-1473.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 10.1; M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4; E. Bernstein and U. Vazirani, "Quantum complexity theory", SIAM Journal on Computing 26 (1997), 1411-1473.

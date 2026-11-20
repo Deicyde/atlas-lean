@@ -7,4 +7,4 @@ arm of the equivalent star from the centre of the triangle to its bottom-left ve
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Figure 2 (`Y₈ = Δ(B, L, R)`).
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), no. 4, 290–304, Figure 2 ($Y_8 = \Delta(B, L, R)$).

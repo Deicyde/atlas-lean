@@ -1,4 +1,3 @@
 # Positivity criterion for the PSIC difference
 
-The PSIC difference is positive iff the wild type is more enriched in the profile, relative
-to background, than the mutant.
+If $p(a) > 0$ and $q(a) > 0$ for every residue $a$, then the [PSIC difference](psic-difference.md) is positive if and only if $p(\mathrm{mt})/q(\mathrm{mt}) < p(\mathrm{wt})/q(\mathrm{wt})$.

@@ -1,5 +1,7 @@
-# The `W` update is monotone
+# The W update does not increase the objective
 
-It does not increase
-`D_1(V | W H) / φ + ∑ w_fk / λ_k`, for `φ > 0`, `λ > 0`, `V ≥ 0`, `H ≥ 0` with no zero column,
-and `W > 0` entrywise (the transpose of `objectiveH_updateH_le`).
+Let $\phi > 0$, $\lambda_k > 0$ for every $k$, $V \ge 0$ and $H \ge 0$ entrywise with every column of $H$ having a positive entry, and $W > 0$ entrywise. Then
+
+$$C_W(W') \le C_W(W),$$
+
+where $C_W$ is the [W-dependent objective](objective-w.md) and $W'$ the [updated matrix](update-w.md).

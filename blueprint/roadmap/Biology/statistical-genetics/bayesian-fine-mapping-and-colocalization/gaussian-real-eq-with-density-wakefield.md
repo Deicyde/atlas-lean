@@ -1,4 +1,3 @@
 # Wakefield's Bayes factor as a density ratio of Gaussians
 
-The alternative marginal `N(0, V + W)` has density `wakefieldABF V W` with respect to the null
-law `N(0, V)`.
+Let $V$ and $W$ be nonnegative reals with $V \ne 0$. Then the normal distribution $N(0, V + W)$ on $\mathbb{R}$ is the measure with density $b \mapsto \mathrm{ABF}(V, W, b)$ with respect to $N(0, V)$, where $\mathrm{ABF}$ is [Wakefield's approximate Bayes factor](wakefield-abf.md).

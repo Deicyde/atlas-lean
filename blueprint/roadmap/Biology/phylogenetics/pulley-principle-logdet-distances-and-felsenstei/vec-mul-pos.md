@@ -1,4 +1,3 @@
 # Nonsingular transition matrices preserve positive distributions
 
-Under a nonnegative, nonsingular transition matrix, a positive distribution stays positive:
-every column of `M` has a positive entry. This puts the LogDet logarithms in their domain.
+If $p_i > 0$ for every $i$, $M$ is a real square matrix with nonnegative entries and $\det M \ne 0$, then $(pM)_j = \sum_i p_i M_{ij} > 0$ for every $j$.

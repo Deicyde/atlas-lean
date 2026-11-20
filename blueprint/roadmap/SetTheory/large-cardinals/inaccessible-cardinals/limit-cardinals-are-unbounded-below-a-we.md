@@ -1,10 +1,8 @@
 # Limit cardinals are unbounded below a weakly inaccessible cardinal
 
-Limit cardinals are unbounded below a weakly inaccessible `κ`: the sup of
-the `ω`-chain `μ 0 = succ (max a ℵ₀)`, `μ (n+1) = succ (μ n)` stays below `κ`
-(`sum_lt_of_isRegular`), exceeds `a`, and is a limit since every `x < σ`
-lies below some `μ n` (`exists_lt_of_lt_ciSup`).
+Let $\kappa$ be a weakly inaccessible cardinal. For every cardinal $a < \kappa$ there is a limit
+cardinal $\mu$ with $a < \mu < \kappa$.
 
-## Sources
-
-- Above any a < κ with κ weakly inaccessible sits a limit cardinal below κ.
+Proof: let $\mu_0 = \max(a, \aleph_0)^+$ and $\mu_{n+1} = \mu_n^+$. Each $\mu_n$ is below $\kappa$ because $\kappa$ is a limit cardinal,
+and so is their supremum $\mu$ because $\kappa$ is regular and uncountable. Then $a < \mu$, and $\mu$ is a limit cardinal because every cardinal below $\mu$ lies
+below some $\mu_n$.

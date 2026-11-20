@@ -6,4 +6,4 @@ dimension $n$ satisfies $\sigma_n \le C \log \log n$.
 
 ## Sources
 
-- Guan, arXiv:2412.09075; catalogue `constants/20a.md`.
+- Q. Guan, *A note on Bourgain's slicing problem*, arXiv:2412.09075 (2024); catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

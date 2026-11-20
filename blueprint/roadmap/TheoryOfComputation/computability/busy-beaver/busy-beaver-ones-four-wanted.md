@@ -6,4 +6,4 @@ started on the blank tape, the largest number of ones left on the tape at the ha
 
 ## Sources
 
-- Brady (1983), determination of `Σ(4) = 13`.
+- A. H. Brady, "The determination of the value of Rado's noncomputable function $\Sigma(k)$ for four-state Turing machines", *Mathematics of Computation* 40 (1983), 647–665: $\Sigma(4) = 13$.

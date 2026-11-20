@@ -6,4 +6,4 @@ when $a_0 \equiv a_2 \pmod 3$, $a_1 \equiv a_3 \pmod 3$ and $a_0 \not\equiv a_1 
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{abab}`).
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of $X_{abab}$).

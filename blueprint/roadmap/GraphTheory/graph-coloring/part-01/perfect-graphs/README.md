@@ -11,3 +11,7 @@
 - [The perfect-graph decision problem](perfect-graph-problem.md)
 - [Edmonds's question: an NP description of perfect graphs](conjecture.md)
 - [Perfect graphs have an NP description](conjecture-holds.md)
+
+## Related topics
+
+- [Theta function of a graph](../../../graph-invariants-and-labelings/theta-function-of-a-graph/README.md): on perfect graphs the Lovász number equals the independence number, which makes stable sets and colourings of perfect graphs computable in polynomial time.

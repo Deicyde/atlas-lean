@@ -15,4 +15,4 @@ bounds (the elementary proof in Albiac–Kalton, *Topics in Banach Space Theory*
 
 ## Sources
 
-- J. Lindenstrauss and H. Rosenthal, Israel J. Math. 7 (1969) 325-349, principle of local reflexivity; Johnson-Rosenthal-Zippin 1971 refinements; Albiac and Kalton, Topics in Banach Space Theory; Lean states `RCLike` Banach finite- dimensional `M, N` version with `(1+ε)`-isometry and pairing preservation.
+- J. Lindenstrauss and H. Rosenthal, Israel J. Math. 7 (1969) 325-349, principle of local reflexivity; Johnson-Rosenthal-Zippin 1971 refinements; Albiac and Kalton, Topics in Banach Space Theory. The statement here is the version for a Banach space over $\mathbb{R}$ or $\mathbb{C}$ with finite-dimensional subspaces $M$ and $N$, a $(1+\varepsilon)$-isometry and preservation of the pairing.

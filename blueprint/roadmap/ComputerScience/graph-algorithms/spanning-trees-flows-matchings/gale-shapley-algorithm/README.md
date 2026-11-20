@@ -24,7 +24,7 @@
 - [Rejected proposals bound stable partners](le-rank-of-rejected.md)
 - [Cases of the receiver's new holder](new-holder-cases.md)
 
-## Termination within `n²` proposals
+## Termination within $n^2$ proposals
 
 - [Remaining proposals](remaining.md)
 - [A proposal adds one to the proposal count](sum-next-propose.md)
@@ -50,3 +50,8 @@
 - [Rank under a strict total order](order-rank.md)
 - [Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking](exists-to-order-eq.md)
 - [Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers](exists-rankings-gs-matching.md)
+- [Deferred acceptance is a man-optimal stable mechanism](exists-is-man-optimal-stable-mechanism.md)
+
+## Related topics
+
+- [Stable matching mechanisms and incentives](../../../../GameTheory/matching-markets/stable-matching-mechanisms-and-incentives/README.md): deferred acceptance read as a mechanism, and its incentive properties (Roth 1982).

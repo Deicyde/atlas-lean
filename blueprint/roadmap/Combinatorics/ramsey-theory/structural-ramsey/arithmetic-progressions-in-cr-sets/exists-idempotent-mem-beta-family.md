@@ -8,4 +8,4 @@ $p \in \beta(\mathcal F)$ with $pp = p$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2, the paragraph after Theorem 3.

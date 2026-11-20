@@ -1,3 +1,3 @@
 # Reverse of a closed walk
 
-The reverse of a closed walk: position `k` carries the reverse of the dart at position `-k`.
+For $L \in \mathbb{N}$, $n \ge 1$ and a cyclic sequence $(v_0, \dots, v_{n-1})$ of darts of the torus $T_L = (\mathbb{Z}/L\mathbb{Z})^2$, the reverse is $k \mapsto \bar v_{-k}$, indices mod $n$, where $\bar d$ is the reverse of a dart $d$ and the reverse of a dart $(p, \mu)$ is $(p + s(\mu), \mu + 2)$, with $s(\mu)$ the unit step of direction $\mu$.

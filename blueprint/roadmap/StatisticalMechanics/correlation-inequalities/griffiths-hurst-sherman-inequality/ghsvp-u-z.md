@@ -1,3 +1,5 @@
 # Zero-field induced-subgraph partition function with doubled coupling
 
-The zero-field partition function on the induced subgraph on `A` with couplings `2β`.
+Let $G = (V, E)$ be a finite simple graph, $\beta \in \mathbb{R}$ and $A \subseteq V$. This is the zero-field
+partition function with the edges of $G$ having both endpoints in $A$ and coupling $2\beta$,
+summed over all spin configurations of $V$.

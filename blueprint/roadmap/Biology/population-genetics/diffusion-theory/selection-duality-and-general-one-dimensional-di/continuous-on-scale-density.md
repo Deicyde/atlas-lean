@@ -1,3 +1,3 @@
-# Continuity of the scale density on $(0, 1)$
+# Continuity of the scale density on the closed unit interval
 
-The scale density is continuous on `[0, 1]`.
+For every [regular diffusion](is-regular-diffusion.md) with drift $b$ and variance $a$, the [scale density](scale-density.md) $\psi$ is continuous on $[0, 1]$.

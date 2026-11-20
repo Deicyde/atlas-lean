@@ -1,5 +1,5 @@
 # Number of literals of a transition clause
 
-For a layout $L$ with $KK$ stacks and window
-depth $d$, a label-transition clause has $KK \cdot d + 2$ literals: the current label, the
-$KK \cdot d$ window cells and the next label.
+For a layout $L$ with $K$ stacks and window
+depth $d$, a label-transition clause has $K d + 2$ literals: the current label, the
+$K d$ window cells and the next label.

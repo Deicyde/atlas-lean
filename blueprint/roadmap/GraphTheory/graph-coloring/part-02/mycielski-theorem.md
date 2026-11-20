@@ -7,7 +7,7 @@ triangle-free whenever $G$ is, and such that $\chi(H) = \chi(G) + 1$ whenever $\
 finite. Moreover, for every natural number $k$ there is a triangle-free simple graph $H$ on a
 finite vertex set with $\chi(H) \ge k$.
 
-The explicit Mycielski construction is abstracted here to the existence of such a graph $H$.
+The statement asserts only the existence of such a graph $H$; Mycielski's construction provides one.
 
 ## Sources
 

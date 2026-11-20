@@ -9,4 +9,4 @@ $n \to \infty$.
 
 ## Sources
 
-- D. Harvey and J. van der Hoeven, `Integer multiplication in time O(n log n)`, Annals of Math, 193 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_integer_multiplication` of the lean-eval benchmark.
+- D. Harvey and J. van der Hoeven, "Integer multiplication in time $O(n \log n)$", *Annals of Mathematics* 193 (2021), 563–617. Statement adapted from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, commit e32eb14), with the binary encoding of natural numbers in place of the upstream unary encoding. Problem `annals_integer_multiplication` of the lean-eval benchmark.

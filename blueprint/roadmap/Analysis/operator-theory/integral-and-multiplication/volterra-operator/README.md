@@ -18,6 +18,6 @@
 - [Factorial bound for powers of the Volterra operator](norm-volterra-operator-pow-le.md)
 - [Nonzero reals lie in the resolvent set of the Volterra operator](volterra-operator-mem-resolvent-set-of-n.md)
 - [The Volterra operator is not invertible](not-is-unit-volterra-operator.md)
-- [The spectrum of the Volterra operator is `{0}`](volterra-operator-spectrum.md)
+- [The spectrum of the Volterra operator is $\{0\}$](volterra-operator-spectrum.md)
 - [The spectral radius of the Volterra operator is zero](spectral-radius-volterra-operator.md)
 - [Expansion of $(XV)^n$ in Bessel numbers](x-mul-volterra-iterate-eq-sum-bessel.md)

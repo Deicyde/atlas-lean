@@ -1,5 +1,7 @@
 # Unbiased sample covariance matrix
 
-The unbiased sample covariance matrix `(n - 1)⁻¹ (X - x̄)ᵀ (X - x̄)` of an `n × p` data
-matrix. The divisor needs `2 ≤ n`; for `n = 1` the factor is the junk value `(0 : ℝ)⁻¹ = 0`
-(and for `n = 0` the product is the zero matrix).
+Let $X$ be a real $n \times p$ data matrix whose rows are observations. With $X_c$ the [column-centered matrix](center.md), the unbiased sample covariance matrix is
+
+$$S = \frac{1}{n - 1}\, X_c^\top X_c.$$
+
+The divisor needs $n \ge 2$; for $n = 1$ the factor $(n-1)^{-1} = 0^{-1}$ is $0$ by convention, so $S = 0$ (and for $n = 0$ the product $X_c^\top X_c$ is the zero matrix).

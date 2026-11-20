@@ -1,3 +1,4 @@
 # Session type duality is an involution
 
-Duality is an involution, including at completion.
+For every finite binary session type $S$, the dual of the dual of $S$ is $S$:
+$\overline{\overline{S}} = S$.

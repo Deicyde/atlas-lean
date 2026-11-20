@@ -1,3 +1,5 @@
-# Unfolding commutes with protocol duality
+# One-step unrolling commutes with protocol duality
 
-Guarded unfolding commutes with duality, including recursive payloads.
+For every protocol $S$, $\mathrm{unf}(\overline{S}) = \overline{\mathrm{unf}(S)}$, where
+$\mathrm{unf}$ unrolls a graph cursor once (and fixes every other protocol) and
+$\overline{\,\cdot\,}$ is protocol duality.

@@ -12,4 +12,4 @@ Only $t_0, \dots, t_n$ matter.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 3 (Craven and Csordas, Theorem 3.7).
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 3 (Craven and Csordas, Theorem 3.7).

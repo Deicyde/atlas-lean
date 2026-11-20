@@ -1,4 +1,9 @@
 # Factored tensor network with shape parameter
 
-A network of shape parameter `P`: at most `2 ^ P` states per vertex, symmetric
-capacities summing to at most `P` at each vertex, and at most `2 ^ c` labels per edge.
+A factored tensor network on a finite linearly ordered vertex set $J$ has shape parameter
+$P \in \mathbb{N}$ when
+
+- every vertex $a$ has at most $2^P$ allowed states;
+- capacities are symmetric: $c_{a,b} = c_{b,a}$ for all $a, b$;
+- at every vertex $a$, $\sum_{b \ne a} c_{a,b} \le P$;
+- for all distinct $a, b$, the label set of $\{a, b\}$ has at most $2^{c_{a,b}}$ elements.

@@ -8,4 +8,4 @@ the graph obtained from $H_0$ by joining $z$ to $x$ and to $y$ is a tree of tria
 
 ## Sources
 
-- AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: any graph built recursively by starting with a triangle, and then adding two edges at a time that forms a single new triangle with an existing edge.
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 7 *Local trees of triangles*, Problem 1.14 (Vojtěch Rödl), http://www.aimpl.org/graphramsey/1/: any graph built recursively by starting with a triangle, and then adding two edges at a time that forms a single new triangle with an existing edge.

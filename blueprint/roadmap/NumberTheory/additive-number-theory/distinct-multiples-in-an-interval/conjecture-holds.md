@@ -9,8 +9,10 @@ interval $(x, x + 2N)$ with $a_i \mid b_i$ for every $i$. Then $f(m) = \min(m,
 $f(m) \le \sqrt{m}$ for every natural number $m$; $\sqrt{m} \le f(m)$ for every natural number
 $m$; and $f(m^2) \le 2m$ for every natural number $m$.
 
-Solved by Erdős–Surányi [ErSu59], Erdős–Selfridge [Er78], [Er86c] and van Doorn–Li–Tang [VLT26].
+The lower bound $\sqrt{m} \le f(m)$ is due to Erdős and Surányi [ErSu59] and the bound $f(m^2) \le 2m$ to Erdős and Selfridge [Er78], [Er86c]. The upper bound $f(m) \le \lceil 2\sqrt{m}\,\rceil$ was proved by GPT-5.4 Pro (prompted by He, Li and Tang), a matching lower bound was given by GPT-5.4 Pro and Aristotle, and the exact value is established in the paper of van Doorn, Li and Tang [VLT26].
 
 ## Sources
 
-- [VLT26] W. van Doorn, Y. Li and Q. Tang, Optimal bounds for an Erdős problem on matching integers to distinct multiples, arXiv:2603.28636 (2026), https://arxiv.org/abs/2603.28636; W. van Doorn, Lean formalization of Erdős Problem 650 (Aristotle-assisted), https://github.com/Woett/Lean-files/blob/c100ed4a4429e987a9555ee428a1aa524a46e16d/ErdosProblem650.lean.
+- [VLT26] Wouter van Doorn, Yanyang Li and Quanyu Tang, *Optimal bounds for an Erdős problem on matching integers to distinct multiples*, arXiv:2603.28636 (2026), https://arxiv.org/abs/2603.28636.
+- T. F. Bloom, Erdős Problem #650, https://www.erdosproblems.com/650.
+- Wouter van Doorn, Lean formalization of Erdős Problem 650 (Aristotle-assisted), https://github.com/Woett/Lean-files/blob/c100ed4a4429e987a9555ee428a1aa524a46e16d/ErdosProblem650.lean.

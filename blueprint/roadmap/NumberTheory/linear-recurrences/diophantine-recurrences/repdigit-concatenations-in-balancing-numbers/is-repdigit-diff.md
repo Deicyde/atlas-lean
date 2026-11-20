@@ -5,4 +5,4 @@ there are repdigits $a$ and $b$ with $a = n + b$, that is, $n = a - b$.
 
 ## Sources
 
-- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorems 2 and 3.
+- Monalisa Mohapatra, Pritam Kumar Bhoi, and Gopal Krishna Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorems 2 and 3.

@@ -1,6 +1,6 @@
 # System F erasure and closing environments
 
-## System F
+## Shifting untyped terms
 
 - [Shift of untyped bound indices above a cutoff](shift-at.md)
 - [Lifting a raw erasure environment under a binder](lift-raw.md)

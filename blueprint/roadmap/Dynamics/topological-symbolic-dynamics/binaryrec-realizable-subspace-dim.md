@@ -13,4 +13,5 @@ of an integer.
 
 ## Sources
 
-- G. Everest, A. J. van der Poorten, Y. Puri, and T. Ward, "Integer Sequences and Periodic Points," Journal of Integer Sequences 5 (2002), Article 02.2.3, Theorem, lines 243–254, https://cs.uwaterloo.ca/journals/JIS/VOL5/Ward/ward2.tex
+- Graham Everest, Alfred J. van der Poorten, Yash Puri and Thomas Ward, *Integer Sequences and Periodic Points*,
+  J. Integer Seq. 5 (2002), Article 02.2.3, Theorem 2.1, <https://cs.uwaterloo.ca/journals/JIS/VOL5/Ward/ward2.html>.

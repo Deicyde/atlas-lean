@@ -1,3 +1,4 @@
 # Mean of the binomial approximation tends to the Poisson rate
 
-The expected number of successes tends to the rate: `n * (λ / (n + λ)) → λ`.
+For $\lambda \ge 0$, the expected number of successes of the binomial approximation tends to the
+rate: $n \cdot \lambda / (n + \lambda) \to \lambda$ as $n \to \infty$.

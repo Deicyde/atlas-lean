@@ -1,4 +1,3 @@
 # Normalized count agrees with the totalized uniform measure
 
-`normalizedCount` agrees with Mathlib's totalized uniform measure on all start tuples.
-This measure is a probability law only when the sample space is nonempty.
+For every set $E$ of start tuples, the [normalized count](normalized-count.md) of $E$ equals the mass of $E$ under the uniform measure on the set of all $G^N$ start tuples, where this measure is the counting measure divided by $G^N$ when there is at least one tuple, and the zero measure otherwise.

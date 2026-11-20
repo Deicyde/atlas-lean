@@ -1,3 +1,3 @@
 # Squared normalized Gaussian is chi-square with one degree of freedom
 
-If `Y ~ N(0, v)` with `v ≠ 0`, then `Y² / v ~ χ²₁`.
+Let $v > 0$. If $Y \sim N(0, v)$, then $Y^2/v \sim \chi^2_1$.

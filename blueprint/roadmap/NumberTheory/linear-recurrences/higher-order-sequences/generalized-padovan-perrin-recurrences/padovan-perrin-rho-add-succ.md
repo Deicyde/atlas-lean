@@ -12,4 +12,4 @@ Together with $\rho(m, s+p) = 0$ for $m < s + p$ and $\rho(s+p, s+p) = 1$, this 
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.

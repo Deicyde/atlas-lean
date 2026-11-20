@@ -8,4 +8,4 @@ $\sum_{n \ge 0} D_n x^n / n!$ is summable with sum $\exp\bigl(x + (e^{2x} - 1)/2
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 3, generating function.
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 3, generating function.

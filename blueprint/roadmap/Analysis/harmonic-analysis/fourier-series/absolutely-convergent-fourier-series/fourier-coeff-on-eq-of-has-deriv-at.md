@@ -1,5 +1,9 @@
-# Coefficient identity for a `C¹` periodic function
+# Coefficient identity for a $C^1$ periodic function
 
-For `n ≠ 0`,
-`ĉₙ(f) = (T / (2π i n)) · ĉₙ(f')`. The boundary term in integration by parts
-vanishes by periodicity.
+For $T > 0$ and $g : \mathbb{R} \to \mathbb{C}$, write $\hat g(n) = \frac{1}{T} \int_0^T g(x)\, e^{-2\pi i n x/T}\, dx$, $n \in \mathbb{Z}$, for the Fourier coefficients of $g$ on the period $(0, T]$ (an integral whose integrand is not integrable being read as $0$). Let $T > 0$ and let $f, f' : \mathbb{R} \to \mathbb{C}$ be such that $f$ is $T$-periodic and differentiable at every point with derivative $f'$, with $f'$ interval integrable on $[0, T]$. For every integer $n \ne 0$,
+
+$$
+\hat f(n) = \frac{T}{2\pi i n}\, \widehat{f'}(n).
+$$
+
+The boundary term in the integration by parts vanishes by periodicity.

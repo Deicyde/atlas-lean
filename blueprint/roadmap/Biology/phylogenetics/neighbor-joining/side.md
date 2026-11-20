@@ -1,4 +1,3 @@
 # Taxa on one side of a tree edge
 
-The taxa on the `a`-side of the edge `{a, b}`: those whose vertex is still joined to `a`
-once the edge `{a, b}` is deleted.
+For a graph $G$, a map $\iota$ from a finite set $X$ of taxa to its vertices, and vertices $a, b$, the $a$-side of $\{a, b\}$ is the set of taxa $x$ such that $\iota(x)$ is joined to $a$ by a walk in $G$ with the edge $\{a, b\}$ deleted.

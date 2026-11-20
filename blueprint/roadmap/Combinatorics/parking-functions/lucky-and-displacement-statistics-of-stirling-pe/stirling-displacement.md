@@ -9,4 +9,4 @@ $d(i) = p(i) - w_i$, where the subtraction is truncated at $0$.
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Definition 5.1; the tuple `i ↦ d(i + 1)` is the displacement composition `dis(w)` (Definition 5.4).
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Definition 36; the tuple `i ↦ d(i + 1)` is the displacement composition `dis(w)` (Definition 39).

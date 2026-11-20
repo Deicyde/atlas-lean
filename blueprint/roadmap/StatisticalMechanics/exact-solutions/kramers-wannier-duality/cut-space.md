@@ -1,3 +1,3 @@
 # Cut space of a graph
 
-The cut space: the edge sets `∂s` cut by configurations `s`.
+Let $G$ be a simple graph on a finite set $V$. The cut space is the set of all [cut sets](cut-edges.md) of spin configurations $s : V \to \{+1, -1\}$ in $G$ (each cut set arises from exactly two configurations when $G$ is connected and $V$ nonempty).

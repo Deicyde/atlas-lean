@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} \binom{n}{k}^2 U_{n-k} V_k = \binom{2n}{n} U_n.$$
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.3.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 2.3.

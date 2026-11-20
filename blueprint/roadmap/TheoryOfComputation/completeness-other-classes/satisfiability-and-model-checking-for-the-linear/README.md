@@ -1,7 +1,7 @@
 # Satisfiability and model checking for the linear-time μ-calculus
 
-- [Satisfiability of a closed linear μ-calculus formula](linear-mu-sat.md)
-- [Validity of a closed linear μ-calculus formula](linear-mu-valid.md)
+- [Satisfiability of a linear μ-calculus formula](linear-mu-sat.md)
+- [Validity of a linear μ-calculus formula](linear-mu-valid.md)
 - [Linear μ-calculus model checking on a finite Kripke structure](linear-mu-model-check.md)
 - [Linear μ-calculus satisfiability as a decision problem](linear-mu-sat-dec.md)
 - [Linear μ-calculus validity as a decision problem](linear-mu-valid-dec.md)

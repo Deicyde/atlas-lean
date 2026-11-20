@@ -1,4 +1,3 @@
 # LogDet distance of a vertex to itself is zero
 
-The distance of a vertex to itself is `0`: the joint distribution of `X` with itself is the
-diagonal matrix of its (positive) marginal.
+If $p_i > 0$ for every $i$, then the [LogDet distance](paralinear.md) of the diagonal matrix $\operatorname{diag}(p)$ is $0$.

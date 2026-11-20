@@ -8,4 +8,4 @@ for every $n \ge 0$.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 1.
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 1.

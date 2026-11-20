@@ -1,4 +1,5 @@
 # Ergodic finite Markov chain
 
-A finite-state Markov chain (given by its stochastic transition matrix `P`) is
-*ergodic* if some positive power `P^n` has all strictly positive entries.
+A [stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md) $P$ on
+the states $\{0, \dots, M\}$, the transition matrix of a finite-state Markov chain, is ergodic if
+there is $n > 0$ such that every entry of the matrix power $P^n$ is strictly positive.

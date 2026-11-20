@@ -6,4 +6,4 @@ in $S$ whose last letter $w_n$ is $k$. When $n = 0$ this set is empty.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `𝒜_{n,i}`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of $\mathcal{A}_{n,i}$.

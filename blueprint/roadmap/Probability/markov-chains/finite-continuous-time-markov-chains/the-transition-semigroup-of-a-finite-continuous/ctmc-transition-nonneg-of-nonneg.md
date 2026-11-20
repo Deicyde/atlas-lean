@@ -1,3 +1,4 @@
 # Exponential of a nonnegative matrix is nonnegative
 
-If `A` has nonnegative entries, so does `exp (t • A)` for `t ≥ 0`.
+Let $A$ be a real square matrix indexed by a finite set with nonnegative entries. Then for every
+$t \ge 0$ all entries of $e^{tA}$ are nonnegative.

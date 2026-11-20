@@ -1,5 +1,7 @@
 # Inf-sup and nondegeneracy make the associated operator surjective
 
-The inf–sup condition plus nondegeneracy make `bilinearFormSharp B`
-surjective: the orthogonal complement of its range is trivial, and a closed
-subspace of a Hilbert space with trivial orthogonal complement is everything.
+Let $E$ be a real Banach space, $F$ a real Hilbert space and $B$ a bounded bilinear form on
+$E \times F$ satisfying the [inf–sup condition](is-inf-sup.md) and [nondegeneracy](is-nondegenerate.md).
+Then the [associated operator](bilinear-form-sharp.md) $B^\sharp$ is surjective: the orthogonal
+complement of its range is trivial, and a closed subspace of a Hilbert space with trivial
+orthogonal complement is the whole space.

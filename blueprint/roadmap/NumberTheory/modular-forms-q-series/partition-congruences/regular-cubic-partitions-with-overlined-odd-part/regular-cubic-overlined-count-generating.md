@@ -15,4 +15,4 @@ partitions of $n$ with odd parts overlined.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Section 1, eq. (2).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for $\ell$-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Section 1, eq. (2).

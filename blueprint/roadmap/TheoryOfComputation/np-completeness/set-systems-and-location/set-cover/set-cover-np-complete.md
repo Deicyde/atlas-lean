@@ -5,4 +5,4 @@ problem $L$ in NP has a polynomial-time many-one reduction to SET COVER.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), SET COVER; R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), SET COVER; Richard M. Karp, "Reducibility among combinatorial problems" (1972).

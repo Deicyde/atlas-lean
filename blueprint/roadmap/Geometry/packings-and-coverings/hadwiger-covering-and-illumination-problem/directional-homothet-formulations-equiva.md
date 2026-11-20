@@ -8,4 +8,4 @@ allowed.
 
 ## Sources
 
-- Bezdek and Khan, arXiv:1602.06040v2, introduction.
+- Károly Bezdek and Muhammad A. Khan, The geometry of homothetic covering and illumination, in Discrete Geometry and Symmetry, Springer Proc. Math. Stat. 234 (2018), 1–30, arXiv:1602.06040v2, introduction.

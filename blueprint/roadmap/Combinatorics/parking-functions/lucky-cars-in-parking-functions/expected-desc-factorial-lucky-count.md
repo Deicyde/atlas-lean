@@ -13,4 +13,4 @@ is the $\ell$-th falling-factorial moment of $X$ for a uniformly random parking 
 
 ## Sources
 
-- Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Proposition 6.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions", Journal of Integer Sequences 29 (2026), Article 26.1.1, Proposition 6.

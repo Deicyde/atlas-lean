@@ -1,4 +1,4 @@
-# Galois automorphisms act bijectively on $W(p)$
+# Galois automorphisms act bijectively on $p$-torsion points
 
 Let $W$ be a Weierstrass curve over
 $\mathbb{Q}$, $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular points of

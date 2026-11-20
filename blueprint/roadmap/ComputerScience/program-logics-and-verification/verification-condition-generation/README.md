@@ -1,10 +1,10 @@
 # Verification-condition generation
 
-## IMP
+## Annotated commands
 
 - [Annotated commands](acmd.md)
 
-## Annotated commands and verification conditions
+## Verification conditions
 
 - [Erasing annotations](strip.md)
 - [Precondition of an annotated command](pre.md)

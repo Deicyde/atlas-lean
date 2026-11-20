@@ -1,7 +1,9 @@
 # Linear parent–offspring regression model
 
-The linear parent–offspring model on a population described by a probability measure `μ`:
-the parental (mid-parent) value `parent` and the offspring value `offspring` are integrable,
-`mean` is the population mean of the parental value, and the offspring value regresses linearly
-on the parental value, `𝔼[O | P] = mean + h2 * (P - mean)` (equivalently
-`O = mean + h2 (P - mean) + e` with `𝔼[e | P] = 0`). Here `h2` is the heritability.
+Let $\mu$ be a probability measure on a measurable space $\Omega$ (the population). A linear parent–offspring model consists of real numbers $m$ (the population mean) and $h^2$ (the heritability, the regression slope) and real functions $P$ (the parental, or mid-parent, value) and $O$ (the offspring value) on $\Omega$ such that
+
+- $P$ is measurable and $\mu$-integrable, and $O$ is $\mu$-integrable;
+- $\int P \, d\mu = m$;
+- the conditional expectation of $O$ given $\sigma(P)$ equals $m + h^2 (P - m)$ $\mu$-almost everywhere.
+
+Equivalently $O = m + h^2 (P - m) + e$ with the conditional expectation of $e$ given $P$ equal to $0$. The biological heritability lies in $[0, 1]$, but no such condition is imposed.

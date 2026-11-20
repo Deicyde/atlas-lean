@@ -1,4 +1,7 @@
 # Majority splits are compatible
 
-**Majority splits are compatible** (Margush & McMorris 1981): two clusters each in more than
-half of the trees are both clusters of a common tree (pigeonhole), hence nested or disjoint.
+Any two [majority splits](majority-splits.md) $A, B$ of a finite family of trees (seen from the same taxon) satisfy $A \subseteq B$, $B \subseteq A$ or $A \cap B = \emptyset$ (Margush & McMorris 1981).
+
+## Sources
+
+- T. Margush and F. R. McMorris, *Consensus n-trees*, Bull. Math. Biol. 43 (1981), 239–244.

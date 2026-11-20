@@ -7,4 +7,4 @@ increasing order.
 
 ## Sources
 
-- EP-997 (Erdős Problem #997) [Erdős Problems].
+- Erdős Problem #997, https://www.erdosproblems.com/997.

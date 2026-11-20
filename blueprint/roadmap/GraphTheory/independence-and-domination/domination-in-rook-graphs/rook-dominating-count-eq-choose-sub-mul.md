@@ -8,4 +8,4 @@ $$d_{n,m}(k) = \binom{nm}{k} - nm \binom{(n-1)(m-1)}{k}.$$
 
 ## Sources
 
-- Stephan Mertens, "Domination Polynomial of the Rook Graph", Corollary 3 (`cor:high-density`).
+- Stephan Mertens, *Domination Polynomial of the Rook Graph*, Journal of Integer Sequences 27 (2024), Article 24.3.7, https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens/mertens6.html, Corollary 3 (`cor:high-density`).

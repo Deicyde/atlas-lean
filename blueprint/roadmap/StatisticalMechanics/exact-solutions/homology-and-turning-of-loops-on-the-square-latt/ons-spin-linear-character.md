@@ -1,3 +1,3 @@
 # Linear character of the boundary phases
 
-The linear character `(-1)^{a h₁ + b h₂}` of the boundary phases on homology classes mod 2.
+For $a, b \in \{0, 1\}$ and $h = (h_1, h_2) \in \{0, 1\}^2$, the linear character is $(-1)^{a h_1 + b h_2} \in \mathbb{C}$.

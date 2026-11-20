@@ -1,3 +1,3 @@
 # Norm of a natural-number multiple
 
-Norm of a natural-number multiple in a real normed space.
+Let $G$ be a real normed space, $n$ a natural number and $x \in G$. Then $\|n x\| = n \|x\|$.

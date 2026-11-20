@@ -6,4 +6,4 @@ and $b$ are both even and at least one of $a$ and $b$ is zero.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 10.
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 10.

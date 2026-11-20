@@ -1,3 +1,4 @@
 # Language denoted by a regular expression
 
-A language is denoted by a regular expression when it is `r.matches'` for some `r`.
+Let $\alpha$ be an alphabet. A language $L$ over $\alpha$ is denoted by a regular expression if there is a regular
+expression $r$ over $\alpha$ whose language is exactly $L$.

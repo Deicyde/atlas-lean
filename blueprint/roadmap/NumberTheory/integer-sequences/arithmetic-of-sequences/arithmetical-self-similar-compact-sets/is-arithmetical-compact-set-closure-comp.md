@@ -9,4 +9,4 @@ with module $3$ and ratio $3$ equals the stable complexity $\lVert n \rVert_{\ma
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Theorem 2.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Theorem 2.

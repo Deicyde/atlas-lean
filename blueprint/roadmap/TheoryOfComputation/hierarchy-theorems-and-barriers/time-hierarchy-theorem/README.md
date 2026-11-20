@@ -45,7 +45,7 @@
 - [The cell-by-cell check recognizes code stacks](chk-from-iff.md)
 - [Stacks of the checking machine](k.md)
 - [Labels of the checking machine](lab.md)
-- [Stack alphabet of the layout machine](untitled.md)
+- [Stack alphabet of the checking machine](untitled.md)
 - [Branch after comparing states](out-q.md)
 - [Branch after comparing symbols](out-a.md)
 - [Program of the checking machine](prog.md)

@@ -1,3 +1,5 @@
 # Uniform Markov chain on finitely many states
 
-The uniform chain: every transition has probability `1 / (M + 1)`.
+For a natural number $M$, the uniform chain is the [stochastic
+matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md) on the states
+$\{0, \dots, M\}$ with every transition probability $P(i, j) = 1/(M + 1)$.

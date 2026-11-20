@@ -12,4 +12,4 @@ $$\frac{(k+2)((k+2)n-1)((2k+1)(k+1)n-2)(n-1)}{(k+1)^2((k+1)n+1)^2((k+1)n+2)}.$$
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Corollary 11 (`jis-2024-24.2.4-cor-11`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Corollary 11 (`jis-2024-24.2.4-cor-11`).

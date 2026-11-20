@@ -6,4 +6,9 @@ has the shadowing property for $T$.
 
 ## Sources
 
-- D.V. Anosov, 'Geodesic flows on closed Riemannian manifolds with negative curvature', Trudy Mat. Inst. Steklov. 90 (1967); R. Bowen, 'ω-limit sets for Axiom A diffeomorphisms', J. Differential Equations 18 (1975) 333–339. Listed as §67 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `anosov_bowen_shadowing` of the lean-eval benchmark.
+- D. V. Anosov, *Geodesic flows on closed Riemannian manifolds with negative curvature*, Trudy Mat. Inst. Steklov.
+  90 (1967).
+- Rufus Bowen, *ω-limit sets for Axiom A diffeomorphisms*, J. Differential Equations 18 (1975), no. 2, 333–339,
+  DOI 10.1016/0022-0396(75)90065-0.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §67 (Shadowing), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `anosov_bowen_shadowing` of the lean-eval benchmark.

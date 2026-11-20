@@ -19,4 +19,8 @@ This is Theorem 1.17(i) of Krause, Mirek and Tao.
 
 ## Sources
 
-- B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.
+- Ben Krause, Mariusz Mirek and Terence Tao, *Pointwise ergodic theorems for non-conventional bilinear polynomial
+  averages*, Ann. of Math. (2) 195 (2022), no. 3, 997–1109, DOI 10.4007/annals.2022.195.3.4, Theorem 1.17(i);
+  arXiv:2008.00857.
+- Annals Challenge (Imperial College London), <https://github.com/ImperialCollegeLondon/AnnalsChallenge>; problem
+  `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.

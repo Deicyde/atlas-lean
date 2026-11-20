@@ -9,4 +9,4 @@ $$\sum_{j=0}^{n} F_j T_{n-j} = T_{n+2} - F_{n+2}.$$
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 2.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 2.

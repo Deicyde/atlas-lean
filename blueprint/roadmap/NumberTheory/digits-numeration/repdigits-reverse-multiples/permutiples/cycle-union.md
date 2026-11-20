@@ -7,4 +7,4 @@ with multiplicity: each list $j$ contributes its edges as often as $j$ occurs in
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3 (multiset cycle union `C_I`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3 (multiset cycle union $C_I$).

@@ -7,4 +7,4 @@ complex differentiable) map $f : M \to N$ that is not constant is an open map.
 
 ## Sources
 
-- O. Forster, Lectures on Riemann Surfaces, open mapping theorem for Riemann surfaces; Lean states one-complex-dimensional specialization. It is `MDifferentiable.isOpenMap_of_finrank_eq_one`, kept under the source's name.
+- O. Forster, Lectures on Riemann Surfaces, open mapping theorem for Riemann surfaces.

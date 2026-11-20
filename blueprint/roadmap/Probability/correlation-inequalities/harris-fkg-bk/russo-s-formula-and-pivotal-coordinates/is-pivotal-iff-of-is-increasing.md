@@ -1,4 +1,5 @@
 # Pivotal coordinates of an increasing event
 
-For an increasing event `A`, the coordinate `e` is pivotal at `ω` iff `setClosed e ω ∉ A`
-and `setOpen e ω ∈ A`.
+Let $E$ be a set, $A \subseteq \{0,1\}^E$ an increasing event, $e \in E$ and $\omega \in \{0,1\}^E$. Then $e$ is pivotal for $A$ at $\omega$ if and only if
+
+$$\omega^{e,0} \notin A \quad \text{and} \quad \omega^{e,1} \in A.$$

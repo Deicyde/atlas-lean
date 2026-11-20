@@ -8,4 +8,4 @@ $e_{n+p} = e_n$ for all $n \ge N$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Theorem 1.
+- Jonathan Caalim and Yu-ichi Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Theorem 1.

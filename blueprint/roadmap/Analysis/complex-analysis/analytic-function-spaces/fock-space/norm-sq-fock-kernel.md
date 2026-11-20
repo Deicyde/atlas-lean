@@ -1,3 +1,3 @@
 # Squared norm of the Fock kernel
 
-The squared norm of the Fock kernel is `Real.exp ‖z‖²`.
+For every $z \in \mathbb{C}$, the [Fock kernel](fock-kernel.md) satisfies $\|k_z\|^2 = e^{|z|^2}$.

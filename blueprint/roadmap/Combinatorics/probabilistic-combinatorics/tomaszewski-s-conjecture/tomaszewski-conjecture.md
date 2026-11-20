@@ -6,4 +6,4 @@ the $2^n$ sign vectors $x \in \{-1, 1\}^n$ satisfy $|a_1 x_1 + \dots + a_n x_n| 
 
 ## Sources
 
-- O'Donnell, Open Problems in Analysis of Boolean Functions, Problem 2. A sign vector is a map `x : Fin n → Bool`, with `true` read as `1` and `false` as `-1`.
+- Ryan O'Donnell, *Open problems in analysis of Boolean functions* (2012), arXiv:1204.6447, entry "Tomaszewski's Conjecture".

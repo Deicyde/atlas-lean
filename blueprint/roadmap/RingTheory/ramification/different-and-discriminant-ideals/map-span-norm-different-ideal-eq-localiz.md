@@ -16,4 +16,4 @@ $N_{B/A}(\mathfrak{D}_{B/A})$ is $N_{B_S/A_S}(\mathfrak{D}_{B_S/A_S})$.
 
 ## Sources
 
-- ATLAS NumberTheoryI Proposition 12.15 (norm-of-the-different form), canonical-localization scope; transport to an arbitrary base localization is deferred.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 12, Proposition 12.15 and Theorem 12.17 (the discriminant is the norm of the different), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

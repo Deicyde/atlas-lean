@@ -9,4 +9,4 @@ The finite state set is what makes the automaton a certificate of ω-regularity:
 ω-language is accepted by some Büchi automaton with infinitely many states. The fragment applies
 the always operator $\mathbf{G}$ only to propositional formulas, so for example
 $\mathbf{G}(p \vee \mathbf{X}\,q)$, for atoms $p$ and $q$ and the next operator $\mathbf{X}$, is
-not covered.
+not in the fragment.

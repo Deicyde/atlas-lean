@@ -1,3 +1,7 @@
 # Centred mixed fourth moment $E(\alpha_1 \alpha_2^3)$
 
-The centred mixed fourth moment: `E(α₁ α₂³) - 3 ρ_g = κ_π q₁ q₂³`.
+In every [latent causal variable model](model.md) on a probability measure $P$,
+
+$$\int \alpha_1 \alpha_2^3 \, dP - 3\, q_1 q_2 = \kappa_\pi\, q_1 q_2^3,$$
+
+where $\alpha_1, \alpha_2$ are the [marginal effects](alpha1.md) and $\kappa_\pi$ the [excess kurtosis](kurtosis.md).

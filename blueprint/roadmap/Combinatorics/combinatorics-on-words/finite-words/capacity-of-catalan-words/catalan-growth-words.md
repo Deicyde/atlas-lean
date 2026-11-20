@@ -7,4 +7,4 @@ is $j$. It is empty when $m = 0$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `𝒞_{m,j}`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of $\mathcal{C}_{m,j}$.

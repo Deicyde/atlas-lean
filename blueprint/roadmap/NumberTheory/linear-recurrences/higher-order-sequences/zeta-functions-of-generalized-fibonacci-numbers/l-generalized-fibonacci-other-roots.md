@@ -1,7 +1,7 @@
 # Other roots of the ℓ-generalized Fibonacci characteristic polynomial
 
 For a natural number
-$\ell$ and a real number $\alpha$, this is the finite set of distinct complex roots of the
+$\ell$ and a real number $\alpha$, the set of other roots is the finite set of distinct complex roots of the
 characteristic polynomial $\varphi_\ell(X) = X^\ell - \sum_{i=0}^{\ell-1} X^i$ other than $\alpha$.
 In applications $\alpha$ is the dominant real root of $\varphi_\ell$.
 
@@ -9,4 +9,4 @@ Each root is listed once, without multiplicity; the roots of $\varphi_\ell$ are 
 
 ## Sources
 
-- Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Root notation preceding Proposition 1.
+- Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Section 1 (notation for the roots of Equation (1)).

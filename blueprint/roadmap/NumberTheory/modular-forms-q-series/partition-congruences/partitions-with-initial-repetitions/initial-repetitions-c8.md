@@ -13,4 +13,4 @@ contradicting Theorem 11 of the paper since $31$ is not a square).
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of `c₈`, from Nyirenda and Mugwangwavari).
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of $c_8$, from Nyirenda and Mugwangwavari).

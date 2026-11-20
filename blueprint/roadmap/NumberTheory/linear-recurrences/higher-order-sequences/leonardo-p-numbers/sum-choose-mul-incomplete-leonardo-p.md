@@ -1,4 +1,4 @@
-# Binomial sum identity for incomplete Leonardo p-numbers
+# Binomial sum identity for incomplete Leonardo $p$-numbers
 
 For natural numbers $p \ge 1$,
 $n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$, the
@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 7.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 7.

@@ -9,4 +9,4 @@ reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MULTIWAY CUT; E. Dahlhaus et al., "The complexity of multiterminal cuts" (1994).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), MULTIWAY CUT; Elias Dahlhaus, David S. Johnson, Christos H. Papadimitriou, Paul D. Seymour and Mihalis Yannakakis, "The complexity of multiterminal cuts", SIAM Journal on Computing 23 (1994), 864-894.

@@ -10,4 +10,4 @@ the natural numbers (ordinal arithmetic in the index).
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Proposition 4.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Proposition 4.

@@ -11,4 +11,5 @@ every $x$ and $f_n(x)/n$ converges to $g(x)$ as $n \to \infty$ for $\mu$-almost 
 
 ## Sources
 
-- J. F. C. Kingman, "The Ergodic Theory of Subadditive Stochastic Processes", Journal of the Royal Statistical Society Series B 30 (1968), 499–510, DOI 10.1111/j.2517-6161.1968.tb00749.x.
+- J. F. C. Kingman, *The ergodic theory of subadditive stochastic processes*, J. Roy. Statist. Soc. Ser. B 30
+  (1968), no. 3, 499–510, DOI 10.1111/j.2517-6161.1968.tb00749.x.

@@ -8,4 +8,4 @@ $ri + j(k+s) + s + 1 = n$ (an empty sum when $n \le s$).
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 10 (`jis-2024-24.6.5-thm-10`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 10.

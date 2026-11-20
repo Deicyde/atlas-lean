@@ -8,4 +8,4 @@ written in binary: started on the binary word of $n$, it halts with the binary w
 
 ## Sources
 
-- Sipser, *Introduction to the Theory of Computation*, 3rd ed., §3.1 (Church–Turing thesis) and §3.3 (equivalence of models).
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, §3.2 (variants of Turing machines) and §3.3 (the Church–Turing thesis).

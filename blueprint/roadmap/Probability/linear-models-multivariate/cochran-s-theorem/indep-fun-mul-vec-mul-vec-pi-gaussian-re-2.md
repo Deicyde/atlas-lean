@@ -1,5 +1,7 @@
-# Independence of complementary projections of a standard Gaussian vector
+# Independence of Gaussian images under complementary symmetric matrices
 
-For a standard Gaussian vector $Z$ in $\mathbb{R}^\iota$ and square matrices $H$ and $M$ with $M$
-symmetric and $HM = 0$, for instance complementary orthogonal projections, the vectors $HZ$ and $MZ$ are
-independent.
+Let $\iota$ be a finite index set, $Z$ a standard Gaussian vector in $\mathbb{R}^\iota$, and $H$, $M$ real $\iota \times \iota$ matrices with $M$ symmetric and $HM = 0$ (for instance complementary orthogonal projections). Then $HZ$ and $MZ$ are independent.
+
+## Sources
+
+- C. R. Rao, *Linear Statistical Inference and its Applications*, 2nd ed., Wiley, 1973, ch. 3b (normal distribution: linear and quadratic forms).

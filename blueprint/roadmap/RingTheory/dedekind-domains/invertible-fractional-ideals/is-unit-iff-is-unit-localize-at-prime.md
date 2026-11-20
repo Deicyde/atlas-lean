@@ -1,4 +1,5 @@
-# Theorem 3.2
+# Invertibility of a fractional ideal is local at the maximal ideals
 
-**Theorem 3.2** (maximal-ideal form). A fractional ideal of a Noetherian domain is invertible
-iff its localization at every maximal ideal is invertible.
+A fractional ideal $I$ of a Noetherian domain $A$ is invertible if and only if, for every maximal
+ideal $\mathfrak m$ of $A$, its localization $I_{\mathfrak m}$ is an invertible fractional ideal of
+$A_{\mathfrak m}$.

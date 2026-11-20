@@ -13,4 +13,4 @@
 - [Boyer–Moore agrees with the naive matcher](boyer-moore-matches-eq-naive-matches.md)
 - [Worst-case cost of Boyer–Moore matching](boyer-moore-matches-time-le.md)
 - [Exact Boyer–Moore cost when pattern and text repeat the same letter](boyer-moore-matches-time-replicate.md)
-- [Exact Boyer–Moore cost when the pattern repeats one letter and ends in another, which alone makes up the text](boyer-moore-matches-time-replicate-appen.md)
+- [Exact Boyer–Moore cost on the pattern $a^{m-1}b$ and the text $b^n$](boyer-moore-matches-time-replicate-appen.md)

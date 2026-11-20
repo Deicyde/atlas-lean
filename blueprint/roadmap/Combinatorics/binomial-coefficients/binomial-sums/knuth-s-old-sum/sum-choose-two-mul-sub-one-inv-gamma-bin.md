@@ -12,7 +12,7 @@ $$
 $$
 
 This is equation (17) of the source, the case $n = 1$ of its two-parameter identity (14), whose
-parameter $m$ is called $n$ here.
+parameter $m$ is called $n$ above.
 
 ## Sources
 

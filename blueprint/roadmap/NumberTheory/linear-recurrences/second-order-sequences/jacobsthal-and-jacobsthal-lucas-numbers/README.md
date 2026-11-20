@@ -1,4 +1,4 @@
 # Jacobsthal and Jacobsthal–Lucas numbers
 
 - [Jacobsthal–Lucas numbers](jacobsthal-lucas-number.md)
-- [Jacobsthal closed form](jacobsthal-closed-form.md)
+- [Closed form for the Jacobsthal numbers](jacobsthal-closed-form.md)

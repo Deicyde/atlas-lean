@@ -1,3 +1,4 @@
 # Restriction of a configuration to an inner box
 
-The restriction of a configuration on `Λ_m` to `Λ_n`.
+For $d \in \mathbb{N}$ and $n \le m$, this is the restriction to $\Lambda_n$ of a spin assignment on
+$\Lambda_m$.

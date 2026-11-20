@@ -8,4 +8,4 @@ is the generalized binomial coefficient, and $2^N$ and $(\cos \theta)^N$ are rea
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 1.
+- Horst Alzer and Man Kam Kwong, *Ramanujan and a Combinatorial Identity Involving Harmonic Numbers*, Journal of Integer Sequences 29 (2026), Article 26.4.8, Lemma 4, equation (2.1).

@@ -1,3 +1,3 @@
 # Dirichlet condition of the Green's function at zero
 
-Dirichlet condition at `0`: `∫₀¹ G(0, x) g(x) dx = 0` (for every `b`, `a`, `g`).
+For all real functions $b$, $a$ and $g$, $\int_0^1 G(0, x)\, g(x)\, dx = 0$, where $G$ is the [Green's function](green-function.md).

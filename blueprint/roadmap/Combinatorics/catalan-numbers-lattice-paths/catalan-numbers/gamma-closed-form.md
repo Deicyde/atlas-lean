@@ -12,4 +12,4 @@ $k \le \lfloor n/2 \rfloor$, where $C_k$ is the $k$-th Catalan number.
 
 ## Sources
 
-- Paul Eloe and Catherine Kublik, "When Numerical Analysis Crosses Paths with Catalan and Generalized Motzkin Numbers," Journal of Integer Sequences 21 (2018), Article 18.8.4, Theorem `closedform_thm`, lines 390-396, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Kublik/kublik2.tex>; the recursion and initial conditions are equation `gamma_linear_recursion`, lines 87-91.
+- Paul Eloe and Catherine Kublik, "When Numerical Analysis Crosses Paths with Catalan and Generalized Motzkin Numbers," Journal of Integer Sequences 21 (2018), Article 18.8.4, Theorem 6, with the recursion and initial conditions (1), <https://cs.uwaterloo.ca/journals/JIS/VOL21/Kublik/kublik2.tex>.

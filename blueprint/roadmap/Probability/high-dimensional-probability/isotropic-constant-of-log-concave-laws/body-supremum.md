@@ -7,4 +7,5 @@ isotropic constant of $K$.
 
 ## Sources
 
-- `constants/20b.md`, the sharp-value body constant.
+- B. Klartag and J. Lehec, *Affirmative resolution of Bourgain's slicing problem using Guan's bound*, arXiv:2412.15044v1 (2024), Introduction, definition (2) of $L_n$ and Theorem 1.2 ($\sup_n L_n < \infty$); Geom. Funct. Anal. 35 (2025), 1147–1168.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20b.md`.

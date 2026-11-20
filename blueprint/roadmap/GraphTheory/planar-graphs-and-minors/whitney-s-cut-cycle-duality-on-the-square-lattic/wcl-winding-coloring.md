@@ -1,3 +1,3 @@
 # Face coloring by parity of flips
 
-The face coloring given by the parity of the number of flips along the chosen walk from `o`.
+For a relation $F$ on $\mathbb{Z}^2$ and a base face $o$, the colouring of faces in which $f$ is coloured when the fixed chosen lattice walk from $o$ to $f$ has an odd number of steps $\{a, b\}$ with $F(a, b)$ or $F(b, a)$.

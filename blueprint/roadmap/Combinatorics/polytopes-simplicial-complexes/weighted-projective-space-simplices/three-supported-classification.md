@@ -8,7 +8,7 @@ $1 + \sum_{i=1}^{3} x_i (r_i \bmod r_j) = r_j$ for every $j$ (the support form o
 necessary condition). Then either $r = F_c(0, 0; x)$ for some $c \in \{0, \dots, 6\}$, or there
 are integers $k, s \ge 1$ with $x_3 = skx_2 + s - k + 1$ and $r = F_7(k, s; x)$.
 
-Only this direction is stated: the case $c = 7$ with $x = (1, 1, 2)$, $k = 2$, $s = 1$ gives
+The converse fails: the case $c = 7$ with $x = (1, 1, 2)$, $k = 2$, $s = 1$ gives
 $r = (3, 20, 24)$, which fails the necessary condition.
 
 ## Sources

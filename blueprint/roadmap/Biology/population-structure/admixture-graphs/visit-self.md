@@ -1,3 +1,3 @@
 # A lineage visits its own node with probability one
 
-A lineage passes through its own node with probability `1`.
+In every [admixture graph](admixture-graph.md) and for every node $X$, the [visit probability](visit.md) satisfies $v(X, X) = 1$.

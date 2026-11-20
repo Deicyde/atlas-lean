@@ -5,4 +5,4 @@ of $n$. For every natural number $m$, one has $m + 19 \le \|2^m \cdot 10^5\|_2 \
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 6 and Theorem 2.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 6 and Theorem 2.

@@ -1,6 +1,3 @@
 # Horizontal and vertical crossings meet
 
-For the configuration `ω`: whenever `x_L` (left side of `[α, β] × [c, d]`) is joined to the
-right side and `x_B` (bottom of the overlap `[m, m'] × [c, d]`) is joined to its top, there is a
-point `z` of the overlap reached from `x_L` inside `[α, β] × [c, d]` and from `x_B` inside the
-overlap.
+Let $\omega$ be a bond configuration on $\mathbb{Z}^2$, $\alpha, \beta, m, m', c, d \in \mathbb{Z}$, $R = [\alpha, \beta] \times [c, d]$ and $O = [m, m'] \times [c, d]$. The condition is: if $\alpha \le m \le m' \le \beta$, then whenever a site $x_L$ of the left side of $R$ is joined inside $R$ by an open path to a site of the right side of $R$, and a site $x_B$ of the bottom side of $O$ is joined inside $O$ by an open path to a site of the top side of $O$, there is a site $z \in O$ (hence $z \in R$) joined to $x_L$ by an open path inside $R$ and to $x_B$ by an open path inside $O$.

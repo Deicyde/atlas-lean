@@ -1,3 +1,4 @@
 # Bond parameter $1 - e^{-\beta}$
 
-The bond parameter `1 - exp(-β)` as an element of `ℝ≥0`.
+For $\beta \in \mathbb{R}$, the bond parameter is $\max(1 - e^{-\beta}, 0) \in [0, 1)$, which is $1 - e^{-\beta}$ for $\beta \ge 0$ and $0$ for
+$\beta < 0$.

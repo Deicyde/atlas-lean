@@ -7,7 +7,9 @@ $r \ge 1$ and let $f : \mathbb{Z} \to \mathbb{C}$ be such that $f \circ \Delta^{
 $\mu$-integrable, where $\Delta^{(r)}$ is the variation on $\mathbb{X}$. Write $s(n)$ for the
 number of terms in the Zeckendorf representation of $n$. Then
 
-$$\frac{1}{N} \sum_{n=0}^{N-1} f\bigl(s(n + r) - s(n)\bigr) \to \int f(\Delta^{(r)}(x))\, d\mu(x)$$
+$$
+\frac{1}{N} \sum_{n=0}^{N-1} f\bigl(s(n + r) - s(n)\bigr) \to \int f(\Delta^{(r)}(x))\, d\mu(x)
+$$
 
 as $N \to \infty$.
 

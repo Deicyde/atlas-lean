@@ -1,6 +1,3 @@
 # Pedigree
 
-A pedigree on the individuals `Fin n`, numbered so that parents precede their children
-(every finite pedigree, a finite DAG, has such a numbering). `parents i = some g` means that
-`g 0` is the father and `g 1` the mother of `i`; `parents i = none` means that `i` is a founder.
-Founders are unrelated and not inbred (their `2 n_F` gene copies are distinct).
+A pedigree on $n$ individuals $\{0, \dots, n-1\}$ assigns to each individual $i$ either nothing ($i$ is a founder) or an ordered pair of parents $(f(i), m(i))$ (father and mother) with $f(i) < i$ and $m(i) < i$: individuals are numbered so that parents precede their children. Founders are taken to be unrelated and not inbred.

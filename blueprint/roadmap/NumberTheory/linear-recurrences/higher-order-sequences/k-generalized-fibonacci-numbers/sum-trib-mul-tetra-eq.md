@@ -12,4 +12,4 @@ the left side is $0$ and the right side is $1$.
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 13.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 13.

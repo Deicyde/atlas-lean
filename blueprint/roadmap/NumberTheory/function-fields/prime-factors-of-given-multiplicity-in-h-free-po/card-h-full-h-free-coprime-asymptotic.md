@@ -11,8 +11,10 @@ $1 + (x^{h+1} - x^\ell - x^{2h} + x^{h+\ell})/(1 - x)$, where $x = u^{\deg P}$. 
 constant $C$ (which may depend on $P_0$) such that for every $n \ge \ell$ the number $N$ of monic
 polynomials of degree $n$ over $F$ that are $h$-full, $\ell$-free and coprime to $P_0$ satisfies
 
-$$\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1})
-\frac{1 - y_j}{1 - y_j + y_j^h - y_j^\ell} \Bigr| \le C q^{n/(h+1) + \varepsilon n}.$$
+$$
+\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1})
+\frac{1 - y_j}{1 - y_j + y_j^h - y_j^\ell} \Bigr| \le C q^{n/(h+1) + \varepsilon n}.
+$$
 
 ## Sources
 

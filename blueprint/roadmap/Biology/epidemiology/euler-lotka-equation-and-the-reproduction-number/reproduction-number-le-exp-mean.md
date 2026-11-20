@@ -1,5 +1,7 @@
 # Jensen bound
 
-If the generation interval has finite mean `T̄ = ∫ a g(da)` and finite
-`M_g(-r)`, then `R ≤ e^{r T̄}` (any real `r`); Wallinga and Lipsitch (2007, §3) note that the
-fixed interval gives this upper bound.
+Let $g$ be a probability measure on $\mathbb{R}$ with finite mean $\bar T = \int a \, g(da)$ (the
+identity is $g$-integrable), let $r \in \mathbb{R}$, and suppose $a \mapsto e^{-ra}$ is
+$g$-integrable. Then the [reproductive number](reproduction-number.md) of $g$ at growth rate $r$
+satisfies $R \le e^{r\bar T}$. Wallinga and Lipsitch (2007, §3) note that the fixed generation
+interval $\bar T$ gives this upper bound.

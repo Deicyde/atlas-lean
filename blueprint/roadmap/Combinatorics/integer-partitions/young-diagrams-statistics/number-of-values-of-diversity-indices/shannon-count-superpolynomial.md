@@ -9,4 +9,4 @@ size $N$). Then for every nonzero polynomial $q$ with real coefficients, $\sigma
 
 ## Sources
 
-- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Theorem 9.
+- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Journal of Integer Sequences 29 (2026), Article 26.1.5, Theorem 9.

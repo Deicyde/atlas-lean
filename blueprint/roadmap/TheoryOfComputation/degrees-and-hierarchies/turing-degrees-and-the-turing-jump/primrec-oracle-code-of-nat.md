@@ -7,4 +7,4 @@ code otherwise, is primitive recursive.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (standard enumerations).

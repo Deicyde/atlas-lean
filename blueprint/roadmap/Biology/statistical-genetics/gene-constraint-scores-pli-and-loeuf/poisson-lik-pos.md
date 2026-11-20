@@ -1,3 +1,3 @@
 # Positivity of the Poisson likelihood
 
-The likelihood is positive at a positive mean.
+For every real $\mu > 0$ and natural number $o$, the [Poisson likelihood](poisson-lik.md) is positive: $L(\mu, o) > 0$.

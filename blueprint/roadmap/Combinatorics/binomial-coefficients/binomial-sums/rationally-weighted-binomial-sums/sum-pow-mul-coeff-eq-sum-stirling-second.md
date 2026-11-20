@@ -9,4 +9,4 @@ $$\sum_{k=0}^{N} k^r a_k x^k = \sum_{i=0}^{r} S(r, i) \, x^i f^{(i)}(x).$$
 
 ## Sources
 
-- Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.1, equation (2.1).
+- Andreea M. Stănică, Gabriela N. Stănică and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, Fibonacci Quart. 62 (2024), no. 1, 45–56, Theorem 2.1, equation (2.1).

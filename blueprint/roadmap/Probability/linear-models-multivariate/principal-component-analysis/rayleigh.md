@@ -1,3 +1,7 @@
 # Rayleigh quotient of a matrix
 
-The Rayleigh quotient `wᵀ S w / wᵀ w` of a real matrix (junk value `0` at `w = 0`).
+Let $S$ be a real $p \times p$ matrix. The Rayleigh quotient of $w \in \mathbb{R}^p$ is
+
+$$R_S(w) = \frac{w^\top S w}{w^\top w},$$
+
+with $R_S(0) = 0$ by convention.

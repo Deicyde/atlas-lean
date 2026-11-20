@@ -13,9 +13,9 @@ non-anti-Fibonacci numbers are $Y_{2n-1} = A_n$ and $Y_{2n} = B_n$, so the formu
 $X_{2k+1} = 10k + 3$, $X_{2k+2} = 10k + 8 + \mathrm{PD}[k]$, $Y_{4k+1} = 5k + 1$,
 $Y_{4k+2} = 5k + 2$, $Y_{4k+3} = 5k + 3 + \mathrm{PD}[k]$ and $Y_{4k+4} = 5(k + 1)$ (the
 source's $Y_{4k} = 5k$ for $k \ge 1$). The source's prose writes the period-doubling word
-over letters $a, b$ with $a = 0$, but its Walnut code and its values $X_2 = 9$ and $Y_3 = 4$
+over letters $a, b$ with $a = 0$, but its computations and its values $X_2 = 9$ and $Y_3 = 4$
 need $\mathrm{PD}[0] = 1$.
 
 ## Sources
 
-- Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 11 (`jis-2025-25.3.8-thm-11`), due to Zaslavsky.
+- Wieb Bosma, René Bruin, Robbert Fokkink, Jonathan Grube, Anniek Reuijl and Thian Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 11 (`jis-2025-25.3.8-thm-11`), due to Zaslavsky, https://cs.uwaterloo.ca/journals/JIS/VOL28/Fokkink/fokkink9.html

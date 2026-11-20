@@ -1,5 +1,5 @@
 # Statements of the Hamiltonian-path verifier
 
-A statement of the verifier is a statement of
-a multi-stack Turing machine whose stacks are indexed by the verifier's stacks $K$, each stack
-over the alphabet $\mathrm{Sym}$, with labels $\mathrm{Lab}$ and a Boolean internal variable.
+The type of statements of the verifier as a multi-stack Turing machine: each of its twelve
+[stacks](k.md) holds symbols of the SAT verifier's alphabet, the labels are the verifier's
+[labels](lab.md), and the internal state is a single bit.

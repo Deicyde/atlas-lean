@@ -7,4 +7,4 @@ $\log_2 n \le \|n\|_2 \le 2 \log_2 n - 1$, where $\log_2$ is the real base-2 log
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Lemma 3.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Lemma 3.

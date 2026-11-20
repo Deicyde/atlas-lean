@@ -1,8 +1,8 @@
 # Algorithm W
 
-Given a typing context $\Gamma$, an expression $e$ and a counter $n$,
-Algorithm W either fails or returns a substitution, a monotype and a new counter; type variables
-$\alpha_m$ with $m \ge n$ serve as fresh. Write $\tau_1 \to \tau_2$ for the arrow type, $s\Gamma$
+Let the base types have decidable equality, as unification compares them. Given a typing context $\Gamma$, an expression $e$ and a counter $n$,
+Algorithm W either fails or returns a substitution, a monotype and a new counter. W is defined for every counter $n$; the type
+variables $\alpha_m$ with $m \ge n$ serve as fresh, which is meaningful when every type variable free in $\Gamma$ is below $n$. Write $\tau_1 \to \tau_2$ for the arrow type, $s\Gamma$
 for $\Gamma$ with the substitution $s$ applied to every type scheme, and $s(\tau)$ for $s$
 applied to a monotype $\tau$. Algorithm W is defined by recursion on $e$, and fails as soon
 as a recursive call or a unification fails:

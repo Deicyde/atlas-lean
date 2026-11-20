@@ -1,4 +1,4 @@
 # Maximal genome length
 
-For per-site fidelity `0 < q < 1` and `σ > 0`,
-`σ q ^ L > 1` iff `L < log σ / (-log q)`.
+Let $\sigma > 0$ and let $0 < q < 1$ be the per-site copying fidelity. For every genome length
+$L \in \mathbb{N}$, $\sigma q^L > 1$ if and only if $L < \log \sigma / (-\log q)$.

@@ -1,3 +1,3 @@
 # Complementary base pairing of two positions
 
-Positions `i` and `j` of `s` both lie in `s` and carry complementary bases.
+For a sequence $s = s_0 s_1 \cdots s_{n-1}$ over an alphabet with a complementarity relation, positions $i$ and $j$ can pair if both are less than $n$ and $s_i$ is complementary to $s_j$.

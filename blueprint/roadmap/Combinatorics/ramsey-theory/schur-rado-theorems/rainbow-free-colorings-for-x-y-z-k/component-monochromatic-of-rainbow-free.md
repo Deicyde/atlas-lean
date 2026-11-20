@@ -9,7 +9,7 @@ $f^m(a) = f^{m'}(v)$ for some natural numbers $m, m'$ the component of $v$, wher
 $m$-th iterate of $f$. If no element of the component of $v$ has the color $c(0)$, then all its
 elements have the same color.
 
-The source record prints the equation as $x - y = f(x)$; the paper's proof uses the solution
+The source prints the equation as $x - y = f(x)$; the paper's proof uses the solution
 $(f(a), 0, a)$ of $x - y = f(z)$, and the reading $x - y = f(x)$ fails on small examples.
 
 ## Sources

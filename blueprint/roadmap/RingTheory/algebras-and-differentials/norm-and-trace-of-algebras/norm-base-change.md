@@ -7,4 +7,4 @@ $N_{(A' \otimes_A B)/A'}(1 \otimes b)$ of $1 \otimes b$ in the $A'$-algebra $A' 
 
 ## Sources
 
-- ATLAS `NumberTheoryI`, Lemma 4.49 (norm clause).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 4, Lemma 4.49 (the statement for the norm), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

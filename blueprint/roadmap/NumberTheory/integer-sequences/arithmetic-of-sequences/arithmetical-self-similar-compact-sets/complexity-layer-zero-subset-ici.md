@@ -6,4 +6,4 @@ $\lVert n \rVert$ the integer complexity of $n$), is a nonnegative real number.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 3, equation (7).
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 3, equation (7).

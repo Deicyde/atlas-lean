@@ -6,4 +6,4 @@ index at most $n$.
 
 ## Sources
 
-- D. Y. Kang, T. Kelly, D. Kühn, A. Methuku, and D. Osthus, `A proof of the Erdős–Faber–Lovász conjecture`, Annals of Math, 198 (2) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_erdos_faber_lovasz_conjecture` of the lean-eval benchmark.
+- Dong Yeap Kang, Tom Kelly, Daniela Kühn, Abhishek Methuku, and Deryk Osthus, *A proof of the Erdős–Faber–Lovász conjecture*, Annals of Math. 198 (2), 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_erdos_faber_lovasz_conjecture` of the lean-eval benchmark.

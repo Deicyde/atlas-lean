@@ -1,10 +1,7 @@
 # Regular cardinals are unbounded below an uncountable limit cardinal
 
-Regular cardinals are unbounded below an uncountable limit cardinal `κ` (in
-particular a weakly inaccessible one): above any `a < κ` sits
-`succ (max a ℵ₀)`, regular by `isRegular_succ` and below `κ` since `κ` is a
-limit.
+Let $\kappa$ be an uncountable limit cardinal, for instance a weakly inaccessible one. For every
+cardinal $a < \kappa$ there is a regular cardinal $r$ with $a < r < \kappa$.
 
-## Sources
-
-- Regular cardinals are unbounded below any uncountable limit cardinal.
+Proof: take $r = \max(a, \aleph_0)^+$. It is regular, as the successor of an infinite cardinal,
+and it is below $\kappa$ because $\kappa$ is an uncountable limit cardinal.

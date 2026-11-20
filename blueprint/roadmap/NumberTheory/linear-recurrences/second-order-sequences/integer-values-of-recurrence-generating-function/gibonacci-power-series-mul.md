@@ -11,4 +11,4 @@ function of $(G_n)$.
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 5 (`jis-2024-24.3.1-lem-5`).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 5 (`jis-2024-24.3.1-lem-5`).

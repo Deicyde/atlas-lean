@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (equation eq:barybinomialgeneratingfunction), lines 322–329, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
+- Lin Jiu and Christophe Vignat, *On Binomial Identities in Arbitrary Bases*, J. Integer Seq. 19 (2016), Article 16.5.5, Theorem 6 (equation (13)), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.html>.

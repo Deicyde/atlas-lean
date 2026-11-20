@@ -1,3 +1,3 @@
 # First family in the weighted-pair counterexamples
 
-The family `{∅, {0}}` on `Fin 2`, used in the counterexamples of this file.
+The family $\{\emptyset, \{0\}\}$ of subsets of the two-element set $\{0, 1\}$, used in the [compression counterexample](rby-separate-compression-strictly-decrea.md).

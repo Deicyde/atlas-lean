@@ -9,4 +9,4 @@ $\operatorname{Re} s > 1$.
 
 ## Sources
 
-- NumberTheoryI Lemma 16.11.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 16, Lemma 16.11, https://math.mit.edu/classes/18.785/2021fa/LectureNotes16.pdf.

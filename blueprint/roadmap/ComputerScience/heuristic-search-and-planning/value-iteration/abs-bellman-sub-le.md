@@ -1,4 +1,4 @@
-# The Bellman operator contracts by $\gamma$
+# The Bellman optimality operator is $\gamma$-Lipschitz in the sup norm
 
 Let $M$ be a Markov decision process with
 finitely many states, a nonempty finite set of actions, and rewards and stochastic transition

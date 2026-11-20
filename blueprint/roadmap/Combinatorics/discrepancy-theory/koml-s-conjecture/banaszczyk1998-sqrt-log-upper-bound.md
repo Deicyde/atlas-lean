@@ -6,4 +6,5 @@ constant in dimension $n$ is at most $c \sqrt{\log n}$, where $\log$ is the natu
 
 ## Sources
 
-- optimization catalogue C24a, line 36, Banaszczyk (1998), also reported in retained BJ2025 introduction and BDG2019 Theorem `komlos`.
+- Wojciech Banaszczyk, *Balancing vectors and Gaussian measures of $n$-dimensional convex bodies*, Random Structures & Algorithms 12(4) (1998), 351–360.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

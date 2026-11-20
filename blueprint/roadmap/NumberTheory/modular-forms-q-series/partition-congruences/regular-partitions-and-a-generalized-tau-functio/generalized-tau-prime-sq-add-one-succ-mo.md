@@ -5,7 +5,7 @@ and for an integer $j$ let $P(j) = j(3j - 1)/2$ be the generalized pentagonal nu
 $\tau_{p^2 + 1}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^{r + s}$ over the pairs of
 integers $(r, s)$ with $-n \le r, s \le n$ and $n = P(r) + p^2 P(s)$.
 
-The record prints the condition as $n + 1 = P(r) + p^2 P(s)$; that is false, and the proof's
+The paper prints the condition as $n + 1 = P(r) + p^2 P(s)$; that is false, and the proof's
 identity $\sum \tau_{p^2+1}(n + 1) q^n \equiv \prod (1 - q^m)(1 - q^{p^2 m}) \pmod{p}$ gives the
 index $n$.
 

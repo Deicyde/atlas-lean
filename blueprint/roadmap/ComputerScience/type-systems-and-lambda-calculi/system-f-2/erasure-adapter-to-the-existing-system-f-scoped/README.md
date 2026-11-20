@@ -1,4 +1,4 @@
-# Erasure adapter to the existing System F scoped syntax
+# Erasure of Fω terms to scoped System F terms
 
 - [Erasure of Fω terms to System F syntax](erase-syntax.md)
 - [Fω erasure ignores type substitution](erase-syntax-ty-subst.md)

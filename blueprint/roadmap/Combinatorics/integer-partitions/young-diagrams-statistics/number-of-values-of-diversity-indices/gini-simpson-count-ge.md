@@ -9,4 +9,4 @@ $$\tfrac{1}{2} \left( \lfloor N^2 / 5 \rfloor - N \right) \le \gamma(N).$$
 
 ## Sources
 
-- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 6.
+- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Journal of Integer Sequences 29 (2026), Article 26.1.5, Proposition 6.

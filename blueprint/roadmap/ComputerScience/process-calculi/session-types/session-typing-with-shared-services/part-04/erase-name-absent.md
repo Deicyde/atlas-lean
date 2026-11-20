@@ -1,4 +1,5 @@
 # Erasing a key whose name is absent preserves runtime typing
 
-ALL10 runtime rules support erasure only under real all-position absence.
-Accept/serve ambient erasure does NOT alter their exact fresh/empty BODY domains.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ an ownership context, $p$ a
+process and $z$ an endpoint whose name does not occur in $p$. If $\Gamma; \Delta \vdash_n p$, then
+$\Gamma; \Delta \setminus z \vdash_n p$.

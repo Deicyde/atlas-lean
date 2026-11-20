@@ -8,4 +8,4 @@ followed by the projection onto the ray class group.
 
 ## Sources
 
-- ATLAS `exactSeq_map3`, before the quotient lift.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

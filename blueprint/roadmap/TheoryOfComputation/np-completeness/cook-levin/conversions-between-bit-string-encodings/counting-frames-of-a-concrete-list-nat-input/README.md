@@ -1,4 +1,4 @@
-# Counting frames of a concrete List Nat input
+# Counting the frames of a coded list of naturals
 
 - [Stacks of the frame counter for lists of naturals](k.md)
 - [Control labels of the frame counter for lists of naturals](lab.md)

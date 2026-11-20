@@ -1,4 +1,4 @@
-# Binomial sum for supergeneralized Leonardo p-numbers with linear initial values
+# Binomial sum for supergeneralized Leonardo $p$-numbers with linear initial values
 
 Let
 $p \ge 1$ be a natural number and $y$ the real sequence $y_i = i + 1$, so that the initial values
@@ -7,6 +7,9 @@ Leonardo $p$-numbers $\mathcal{L}_{p,1,y}$ with $k = 1$ and initial values $y$ s
 
 $$\mathcal{L}_{p,1,y}(n) = \sum_{i=0}^{\lfloor (n+1)/(p+1) \rfloor} \binom{n+1-pi}{i+1}.$$
 
+The source prints $y = (1, \dots, p)$; the formula above gives $\mathcal{L}_{p,1,y}(p) = p + 1$, so the
+initial values are $1, \dots, p + 1$.
+
 ## Sources
 
-- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 5.
+- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo $p$-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 5.

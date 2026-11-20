@@ -1,4 +1,5 @@
 # Canonical payloads of a decoded pair are bounded by the raw input
 
-Canonical output payload sizes are bounded by the raw input size,
-even when either field had a noncanonical final zero bit.
+For every bit string $x$, if the [decoder of pairs of natural numbers](decode-pair-nat.md) returns $(m, n)$ on $x$,
+then the binary codes of $m$ and $n$ have total length at most $|x| + 1$. This holds even when a field of $x$ ends
+with a $0$.

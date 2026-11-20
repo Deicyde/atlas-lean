@@ -5,4 +5,4 @@ $4$-tuples with the standard Euclidean inner product and the distance it induces
 
 ## Sources
 
-- CE2003, the ambient Euclidean space `ℝ⁴`.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009: the ambient Euclidean space $\mathbb{R}^4$.

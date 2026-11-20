@@ -1,7 +1,3 @@
 # Linear gaps as affine gaps, from any gap state
 
-Let $\sigma$ be an integer substitution
-score and $g$ an integer. If the gap-open cost and the gap-extend cost both equal $g$, then for
-every alignment $A$ and every gap state $p$, the affine-gap score of $A$ started from state $p$,
-with substitution score $\sigma$, equals the alignment score of $A$ with substitution score
-$\sigma$ and gap penalty $g$.
+If $o = e = g$, then for every alignment $A$ and gap state $p$, the [score from $p$](affine-score-aux.md) $V(A, p)$ equals the linear-gap [alignment score](../pairwise-sequence-alignment/alignment-score.md) of $A$ with gap score $g$.

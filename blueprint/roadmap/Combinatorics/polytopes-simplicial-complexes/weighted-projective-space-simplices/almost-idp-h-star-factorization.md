@@ -1,6 +1,6 @@
 # The $h^*$-polynomial of $\Delta_{(1,q(n))}$ factors
 
-**The $h^*$-polynomial of $\Delta_{(1,q(n))}$ factors.** Let $n \ge 2$, let
+Let $n \ge 2$, let
 $q(n) = (1^{2n-1}, 3n, 10n, 15n)$, that is, $2n - 1$ ones followed by $3n$, $10n$, $15n$, and let
 $\Delta_{(1,q(n))} \subseteq \mathbb{R}^{2n+2}$ be the weighted projective simplex. For $t \ge 0$,
 let $L(t) = \#\big(t\,\Delta_{(1,q(n))} \cap \mathbb{Z}^{2n+2}\big)$ be the number of lattice

@@ -1,3 +1,3 @@
 # Norm of Dirichlet-space point evaluation at the origin
 
-The operator norm of point evaluation at `0` is `1`.
+The [point-evaluation functional](dirichlet-eval-clm.md) at $0$ has operator norm $1$.

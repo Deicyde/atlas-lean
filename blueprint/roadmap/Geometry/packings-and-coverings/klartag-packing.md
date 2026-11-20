@@ -9,4 +9,4 @@ The map $\varphi$ is not required to be invertible; a degenerate $\varphi$ would
 
 ## Sources
 
--. Problem `klartag_packing` of the lean-eval benchmark.
+- B. Klartag, *Lattice packing of spheres in high dimensions using a stochastically evolving ellipsoid*, arXiv:2504.05042 (2025). Problem `klartag_packing` of the lean-eval benchmark.

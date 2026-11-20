@@ -11,4 +11,4 @@ $i, j \le n + (k-1)(m+1)$.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 17 (`jis-2024-24.6.5-thm-17`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 17.

@@ -1,4 +1,3 @@
 # Patterson's f2 basis spans the f-statistic space
 
-Patterson's `f2` basis: the forms `f2Form i j`, `i < j`, span `V_F`, i.e. every
-f-statistic is a linear combination of the `f2 Pᵢ Pⱼ`, `i < j`.
+Let $P$ be a linearly ordered set of populations. Then the [f2 forms](f2-form.md) $\phi_2^{i,j}$ with $i < j$ span the [f-statistic space](f-space.md) $V_F$: every per-locus f-statistic is a linear combination of them.

@@ -4,7 +4,7 @@
 
 - [Bisection sequence](is-bisection-sequence.md)
 
-## Is Bisection Sequence
+## Properties of bisection sequences
 
 - [Bisection intervals stay inside the initial interval](le-and-le.md)
 - [Bisection invariants](invariants.md)

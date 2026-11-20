@@ -6,3 +6,4 @@ Relations between formal theories and their structures: first-order languages of
 - [Quantifier elimination for real closed fields](quantifier-elimination-for-real-closed-fields/README.md)
 - [Wilkie's conjecture](wilkie-s-conjecture/README.md)
 - [Morley's categoricity theorem](morley-categoricity-theorem.md)
+- [Zero-one law for first-order logic](zero-one-law-for-first-order-logic/README.md)

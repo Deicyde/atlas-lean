@@ -9,4 +9,4 @@ The Burnside conclusion of Theorem 22 is not part of this single-element fixed-p
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.

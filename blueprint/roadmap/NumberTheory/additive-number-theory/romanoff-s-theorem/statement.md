@@ -9,4 +9,5 @@ $1 - \varepsilon$.
 
 ## Sources
 
-- EP-851 [Erdős Problems].
+- T. F. Bloom, Erdős Problem #851, https://www.erdosproblems.com/851.
+- N. P. Romanoff, *Über einige Sätze der additiven Zahlentheorie*, Mathematische Annalen 109 (1934), 668–678.

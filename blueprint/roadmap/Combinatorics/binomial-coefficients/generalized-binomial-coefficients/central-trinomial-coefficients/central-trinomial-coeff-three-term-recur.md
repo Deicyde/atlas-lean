@@ -9,4 +9,4 @@ $$(n + 1)\,T_{n+1} = (2n + 1)\,T_n + 3n\,T_{n-1}.$$
 
 ## Sources
 
-- P. Blasiak, G. Dattoli, A. Horzela, K. A. Penson, and K. Zhukovsky, "Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials," Journal of Integer Sequences 11 (2008), Article 08.1.1, Corollary containing Equation (24), lines 364–369, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.tex>.
+- Paweł Błasiak, Giuseppe Dattoli, Andrzej Horzela, Karol A. Penson and Konstantin Zhukovsky, *Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials*, J. Integer Seq. 11 (2008), Article 08.1.1, Corollary 10 (equation (29)), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.html>.

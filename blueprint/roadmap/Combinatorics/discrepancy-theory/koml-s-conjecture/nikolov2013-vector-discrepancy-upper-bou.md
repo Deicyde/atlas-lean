@@ -9,4 +9,5 @@ This bounds the unit-vector relaxation, not the discrepancy over sign vectors.
 
 ## Sources
 
-- Nikolov, arXiv1301.4039, retained KomlosSDP.tex, Theorem `thm:main`, and optimization catalogue C24a, line 55.
+- Aleksandar Nikolov, *The Komlós conjecture holds for vector colorings*, arXiv:1301.4039 (2013), Theorem 1.1.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

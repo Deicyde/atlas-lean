@@ -1,3 +1,4 @@
 # Equilibria of the master-sequence frequency
 
-The equilibria of the master frequency are `0` and `x* = (σ Q - 1)/(σ - 1)`.
+Let $\sigma > 1$ and $Q, x \in \mathbb{R}$. The right-hand side of the [master-sequence equation](master-field.md) $x' = \sigma Q x - (\sigma x + (1 - x)) x$ vanishes at $x$
+if and only if $x = 0$ or $x$ is the [interior equilibrium](master-equilibrium.md) $x^* = (\sigma Q - 1)/(\sigma - 1)$.

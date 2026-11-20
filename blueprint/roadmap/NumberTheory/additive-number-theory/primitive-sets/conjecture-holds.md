@@ -7,8 +7,11 @@ $\sum_{a \in A} \frac{1}{a \log a}$ is summable and $\sum_{a \in A} \frac{1}{a \
 Here a set of natural numbers is primitive if no element divides a different element, and the
 term for $a = 1$, where $\log a = 0$, is taken to be $0$.
 
-Resolved true: Resolved affirmatively (GPT-5.4 Pro prompted by Price; account [ABLLPSTT26]), per
-erdosproblems.com/1196. Source: B. Alexeev, K. Barreto, Y. Li, J. D. Lichtman, L. Price, J. I.
-Shah, Q. Tang, T. Tao, Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond,
-arXiv:2605.00301 (2026), https://arxiv.org/abs/2605.00301. Moved from
-`OpenConjectures/NumberTheory/ErdosProblem1196`.
+This answers affirmatively a question of Erdős, Sárközy and Szemerédi. It was solved by
+GPT-5.4 Pro (prompted by Price), which proved the stronger bound
+$\sum_{a \in A,\ a > x} \frac{1}{a \log a} \le 1 + O(1/\log x)$ for every primitive set $A$.
+
+## Sources
+
+- T. F. Bloom, Erdős Problem #1196, https://www.erdosproblems.com/1196.
+- Boris Alexeev, Kevin Barreto, Yanyang Li, Jared Duker Lichtman, Liam Price, Jibran Iqbal Shah, Quanyu Tang, and Terence Tao, *Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond*, arXiv:2605.00301 (2026), https://arxiv.org/abs/2605.00301.

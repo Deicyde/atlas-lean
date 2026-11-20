@@ -1,7 +1,3 @@
 # Band check from a starting offset
 
-Let $w \in \mathbb{N}$ be a band width. For natural
-numbers $i$, $j$ and an alignment $A$, the band check of $A$ with width $w$ from offset $(i, j)$
-is true exactly when every prefix $P$ of $A$ (including the empty prefix and $A$ itself)
-satisfies $|(i + p) - (j + q)| \le w$, where $p$ and $q$ are the numbers of columns of $P$
-whose first, respectively second, entry is present.
+For a band width $w$, a starting offset $(i, j)$ of natural numbers and an [alignment](../pairwise-sequence-alignment/alignment.md) $A$, the band check passes if for every prefix of $A$ (the empty prefix and $A$ itself included), with $i'$ and $j'$ the starting offsets increased by the numbers of letters of the first and second rows in the prefix, $|i' - j'| \le w$.

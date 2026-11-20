@@ -11,4 +11,4 @@ Ulam words of length $n$.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 3, definition of `ρ_{a,N}(n)`).
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 3, definition of $\rho_{a,N}(n)$).

@@ -45,7 +45,7 @@ The exponent $m(y-2)+1$ of $\log x$ may be negative; the power is then an intege
 
 The paper prints the first two items with the type I numbers $H_\ell^{(p,2y+1,1)}$, but their
 asymptotics carry $\bar\zeta(p)$, the section treats type III, and the proof sums
-$H_\ell^{(p,2y+1,3)}$; they are read here with type III.
+$H_\ell^{(p,2y+1,3)}$; the statement above reads them with type III.
 
 ## Sources
 

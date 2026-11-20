@@ -1,3 +1,3 @@
 # Variance of the selection coefficient under the gamma DFE
 
-The variance of the scaled selection coefficient under the gamma DFE is `a / r ^ 2`.
+For $a > 0$ and $r > 0$, the [gamma DFE](gamma-dfe.md) has variance $a / r^2$.

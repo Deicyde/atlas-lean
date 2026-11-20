@@ -1,5 +1,5 @@
 # One column step of the score-distribution recursion
 
-One column of the score-distribution recursion: from the distribution `d` of the score of
-the first columns, the distribution after adding a column `c` with background `q`,
-`∑_b q b · (d shifted by c b)`.
+For a background $q$ on $A$, a finitely supported real function $d$ on $\mathbb{Z}$ and an integer column $c : A \to \mathbb{Z}$, put
+
+$$(d \star c)(x) = \sum_{b \in A} q(b)\, d\bigl(x - c(b)\bigr).$$

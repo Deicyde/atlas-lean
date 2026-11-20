@@ -16,4 +16,4 @@ negative indices by the recurrence, the left side is $2$ and the printed right s
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.1 (i),(ii).
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 3.1 (i),(ii).

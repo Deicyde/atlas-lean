@@ -7,4 +7,4 @@ is exactly one way to write $w = uv$ with $u$ and $v$ nonempty, distinct Ulam wo
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (definition of Ulam words, after Bade, Cui, Labelle, and Li).
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (definition of Ulam words, after Bade, Cui, Labelle, and Li).

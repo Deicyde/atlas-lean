@@ -1,3 +1,4 @@
-# Stationary law
+# Stationary law of the Ornstein–Uhlenbeck process
 
-Each `X t` of a stationary OU process is `N(0, σ² / (2θ))`.
+If $X$ is a [stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md) with rate $\theta > 0$ and
+noise amplitude $\sigma$, then every $X_t$ has law $N(0, \sigma^2/(2\theta))$.

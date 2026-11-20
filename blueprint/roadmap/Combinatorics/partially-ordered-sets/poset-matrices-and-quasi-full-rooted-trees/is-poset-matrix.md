@@ -8,4 +8,4 @@ then $M_{ik}$ is true.
 
 ## Sources
 
-- JIS `mohammad3.tex`, lines 171–176.
+- Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Section 3 (definition of a poset matrix).

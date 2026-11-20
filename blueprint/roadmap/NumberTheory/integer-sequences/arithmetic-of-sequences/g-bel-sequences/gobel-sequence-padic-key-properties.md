@@ -20,4 +20,4 @@ $g_{k,l_1}(n) - g_{k,l_2}(n) \in p^{r - \nu_p(n!)} \mathbb{Z}_{(p)}$.
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 5 (`jis-2024-24.8.1-lem-5`).
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 5 (`jis-2024-24.8.1-lem-5`).

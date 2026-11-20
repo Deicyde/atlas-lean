@@ -7,4 +7,4 @@ $$\sum_{k=0}^{n} \frac{\binom{n}{k}}{\binom{x}{k+b}} = \frac{x+1}{(x-n+1)\binom{
 
 ## Sources
 
-- H. W. Gould and Jocelyn Quaintance, "On the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 19 (2016), Article 16.7.7, Eq. `klam1a`, lines 105–107, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Gould/gould8.tex>.
+- Henry W. Gould and Jocelyn Quaintance, *On the Binomial Identities of Frisch and Klamkin*, J. Integer Seq. 19 (2016), Article 16.7.7, equation (3), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Gould/gould8.tex>.

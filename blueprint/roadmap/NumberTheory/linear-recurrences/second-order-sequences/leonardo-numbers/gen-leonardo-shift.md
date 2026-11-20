@@ -12,4 +12,4 @@ The paper also allows $t = 0$, reading $L_{k,-1}$ by extending the sequence to n
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.5.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 2.5.

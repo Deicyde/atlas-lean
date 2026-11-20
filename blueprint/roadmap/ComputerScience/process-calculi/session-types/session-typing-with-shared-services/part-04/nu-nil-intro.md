@@ -1,3 +1,4 @@
 # Adding a restriction around nil preserves runtime typing
 
-Introducing a nil restriction chooses a genuinely completed literal-dual pair.
+Let $n$ be a natural number, $\Gamma$ a service environment and $\Delta$ an ownership context. If
+$\Gamma; \Delta \vdash_n \mathbf{0}$, then $\Gamma; \Delta \vdash_n \nu\,\mathbf{0}$.

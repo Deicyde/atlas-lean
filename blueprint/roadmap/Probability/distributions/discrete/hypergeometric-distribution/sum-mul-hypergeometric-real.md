@@ -1,3 +1,7 @@
-# Mean
+# Mean of the hypergeometric distribution
 
-For `0 < N`, `K ≤ N` and `n ≤ N` the hypergeometric law has mean `n K / N`.
+For $N, K, n \in \mathbb{N}$ with $0 < N$, $K \le N$ and $n \le N$,
+
+$$\sum_{k=0}^{n} k\, h(N, K, n, k) = \frac{n K}{N},$$
+
+where $h$ is the [hypergeometric mass function](hypergeometric-real.md).

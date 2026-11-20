@@ -6,4 +6,4 @@ $\ell$, then the state after $t + 1$ steps of $P$ from $s$ equals the state afte
 
 ## Sources
 
-- Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
+- A. V. Aho, J. E. Hopcroft and J. D. Ullman, *The Design and Analysis of Computer Algorithms*, Addison-Wesley, 1974, Section 1.2.

@@ -1,7 +1,3 @@
 # Lineages after the first coalescence events of a ranked history
 
-The lineages after the first `t` coalescence events of the ranked history `h` (of `m`
-lineages), starting from the lineages `bs`, each given as the set of sampled genes it is
-ancestral to. Events follow the encoding of `RankedHistory`: the pair `{a, b}` with `a < b`
-merges into position `a`, and position `b` is removed (`mergeBlocks`). With the singletons as
-starting lineages this is `blocksAfter` (`mergeAlong_singletons`).
+Let $m$ and $t$ be natural numbers, let $h$ be a ranked history of $m$ lineages (at step $i < m - 1$ it records a pair of lineages among the $m - i$ current ones), and let $b$ be a list of lineages, each given as a set of sampled genes. The lineages after the first $t$ coalescence events of $h$ are obtained from $b$ by applying the events of steps $0, 1, \dots, \min(t, m-1) - 1$ in turn: the event recording the pair of positions $a < c$ replaces the lineage at position $a$ by the union of the lineages at positions $a$ and $c$, and removes position $c$. Starting from the singletons $\{0\}, \dots, \{m-1\}$, this gives the ancestral blocks of $h$ after $t$ events ([Merging lineages from singletons gives the ancestral blocks](merge-along-singletons.md)).

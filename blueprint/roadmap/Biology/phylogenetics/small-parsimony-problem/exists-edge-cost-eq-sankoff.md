@@ -1,5 +1,3 @@
 # Sankoff's cost is attained
 
-Sankoff's cost is attained: if it is finite, some labeling that agrees with the leaf states
-has exactly this cost. (It is `⊤` exactly when every agreeing labeling uses a forbidden change,
-or when `t` is a single leaf whose observed state is not `s`.)
+If $\mathrm{Sk}(t, s) \ne \infty$, then some labeling $z$ with root state $s$ [agreeing](agrees.md) with $\sigma$ has $C(t, s, z) = \mathrm{Sk}(t, s)$, where $\mathrm{Sk}$ is [Sankoff's cost](sankoff.md) and $C$ the [total cost](edge-cost.md).

@@ -1,3 +1,3 @@
-# Total surviving weight is positive iff some event survives
+# Total surviving weight is positive when some event survives
 
-The total surviving weight is positive iff some event has `α < N j`.
+If $\alpha < N_{j_0}$ for some event $j_0$, then $\sum_k w_k > 0$, where $w$ is the [surviving weight](survivor-weight.md).

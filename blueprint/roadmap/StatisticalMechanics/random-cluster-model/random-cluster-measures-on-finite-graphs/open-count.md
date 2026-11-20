@@ -1,3 +1,3 @@
 # Number of open edges
 
-The number `o(ω)` of open edges of `G` in `ω`.
+Let $G = (V, E)$ be a simple graph on a finite set $V$. For a configuration $\omega$, $o(\omega)$ is the number of edges of $G$ that are open in $\omega$ (non-edge pairs are not counted).

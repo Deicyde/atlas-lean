@@ -6,4 +6,4 @@ so $\tau_D = 1$).
 
 ## Sources
 
-- Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`τ_D`).
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 ($\tau_D$).

@@ -9,3 +9,7 @@ random multiplicative function $f_\omega$, given by $f_\omega(m) = \prod_{p \mid
 for squarefree $m$ and $f_\omega(m) = 0$ otherwise.
 
 This is the question asked in Erdős Problem 520.
+
+## Sources
+
+- Erdős Problem #520, https://www.erdosproblems.com/520.

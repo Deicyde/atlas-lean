@@ -6,4 +6,4 @@ $f \colon M \to \mathbb{R}$.
 
 ## Sources
 
-- J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963); M. Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed.; Lean states boundaryless finite-dimensional second-countable specialization.
+- J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963); M. Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed.

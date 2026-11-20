@@ -30,3 +30,36 @@
 - [The law of an ancestral set depends only on its tables](marginal-joint-eq-anc-prod.md)
 - [Global Markov property for finite sets of nodes](cond-indep-of-d-separated-finset.md)
 - [The global Markov property](cond-indep-of-d-separated.md)
+- [Descendants come later in the topological order](le.md)
+- [The local directed Markov property](cond-indep-local.md)
+- [Completeness of d-separation](exists-not-cond-indep-of-not-d-separated.md)
+- [Parents as nodes](parent-set.md)
+- [Membership in the parent set](mem-parent-set.md)
+- [Parents come first](lt-of-mem-parent-set.md)
+- [Non-parent predecessors](non-parent-pred.md)
+- [Ordered Markov property of a law](ordered-markov.md)
+- [Factorizing laws have the ordered Markov property](ordered-markov-joint.md)
+- [Extension of parent values](extend-pa.md)
+- [The extension has the prescribed parent values](extend-pa-apply-cast-le.md)
+- [The conditional law of a node given its parents](cond-table.md)
+- [Value of the conditional table of a law](cond-table-weights.md)
+- [The network of conditional tables of a law](cond-net.md)
+- [Markov laws factorize](exists-bayes-net-of-ordered-markov.md)
+- [The ordered Markov property is equivalent to factorization](ordered-markov-iff-exists-bayes-net.md)
+- [The global Markov property for a graph](global-markov-for.md)
+- [The local Markov property for a graph](local-markov-for.md)
+- [Parents separate a node from its other non-descendants](d-separated-local.md)
+- [Factorization implies the global Markov property](global-markov-for-of-factorizes.md)
+- [The global Markov property implies the local one](local-markov-for-of-global-markov-for.md)
+- [The local Markov property implies the ordered one](ordered-markov-of-local-markov-for.md)
+- [The directed Markov properties are equivalent](directed-markov-tfae.md)
+
+## Related topics
+
+- [Conditional independence on finite configuration spaces](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/README.md):
+  the notion of conditional independence used by the global Markov property.
+- [Gaussian graphical models](../../../../Probability/linear-models-multivariate/gaussian-graphical-models/README.md):
+  the undirected, Gaussian counterpart, where conditional independence is read off the zeros of
+  the precision matrix.
+- [Causal Bayesian networks](../causal-bayesian-networks/README.md): the same networks read
+  causally, with interventions.

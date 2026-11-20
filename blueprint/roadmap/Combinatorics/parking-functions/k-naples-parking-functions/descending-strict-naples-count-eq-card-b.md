@@ -9,4 +9,4 @@ subtree of $t$ has at least $k + 1$ nodes.
 
 ## Sources
 
-- J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 4.12 (published as Proposition 5).
+- João Pedro Carvalho, Pamela E. Harris, Gordon Rojas Kirby, Nico Tripeny, and Andrés R. Vindas-Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 5.

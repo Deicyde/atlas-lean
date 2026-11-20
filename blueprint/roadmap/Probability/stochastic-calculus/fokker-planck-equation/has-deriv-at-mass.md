@@ -1,5 +1,6 @@
 # Mass conservation
 
-If `p` is `C²` and solves the no-flux equation on `[a, b]` for times
-in `I` (positivity is not needed), the total mass `∫ₐᵇ p(t, x) dx` has zero time derivative at
-every `t ∈ I`.
+Let $a \le b$, $D \in \mathbb{R}$, $\Psi$ of class $C^2$, $I \subseteq \mathbb{R}$, and $p$ of class $C^2$ in $(t, x)$, a [no-flux
+solution](is-no-flux-solution-on.md) of the gradient-drift Fokker–Planck equation on $[a, b]$ for $t \in I$
+(positivity is not needed). Then for every $t \in I$ the total mass $s \mapsto \int_a^b p(s, x)\, dx$ has
+derivative $0$ at $t$.

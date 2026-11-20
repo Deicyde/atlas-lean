@@ -1,4 +1,3 @@
 # Rooted binary tree with edge lengths
 
-A rooted binary tree with leaf labels in `X`; `node a l b r` has the child `l` at the end of
-an edge of length `a` and the child `r` at the end of an edge of length `b`.
+A rooted binary tree with leaf labels in a set $X$ and real edge lengths is defined inductively: it is either a leaf with a label $x \in X$, or an internal vertex with two children $l$ and $r$ at the ends of edges of real lengths $a$ and $b$.

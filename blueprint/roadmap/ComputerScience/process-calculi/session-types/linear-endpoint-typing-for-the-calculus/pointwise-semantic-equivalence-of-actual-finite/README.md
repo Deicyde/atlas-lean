@@ -1,10 +1,10 @@
-# Pointwise semantic equivalence of actual finite ownership maps
+# Pointwise semantic equivalence of finite ownership maps
 
-## Endpoint
+## Definition
 
 - [Pointwise equivalence of ownership maps](context-equivalent.md)
 
-## Context Equivalent
+## Properties of ownership-map equivalence
 
 - [Reflexivity of ownership-map equivalence](refl.md)
 - [Lookups transfer along ownership-map equivalence](lookup.md)
@@ -21,7 +21,7 @@
 - [Binding equivalent fresh pairs preserves ownership-map equivalence](bind.md)
 - [Ownership-map equivalence preserves semantic compatibility](compatible.md)
 
-## Endpoint
+## Key projection and splitting
 
 - [Projection of an ownership map onto another map's keys](project-keys.md)
 - [Lookups in a key projection](lookup-project-keys.md)

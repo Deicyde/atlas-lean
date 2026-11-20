@@ -1,4 +1,4 @@
-# Source exponential multicut for the locked CLL calculus
+# Exponential multicut in classical linear logic
 
 - [Cut admissibility at a fixed proposition](cut-admissible-at.md)
 - [Cut admissibility below a size bound](cut-admissible-below.md)

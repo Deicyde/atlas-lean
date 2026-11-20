@@ -11,4 +11,4 @@ $f(z, w) = u(z, w) \bigl(w^d + \sum_{j=0}^{d-1} a_j(z) w^j\bigr)$ for all $(z, w
 
 ## Sources
 
-- Weierstrass preparation theorem in several complex variables; see Hörmander; Lean is finite-dimensional E × ℂ product form, order d slice factorization w^d g w, Weierstrass polynomial with vanishing coefficients and unit u, local open U, fixed field ℂ specialization.
+- Weierstrass preparation theorem in several complex variables; see Hörmander. The statement here is the form on a product $E \times \mathbb{C}$ with $E$ finite-dimensional, for a function of order $d$ on the slice: near the origin it factors as a unit times a Weierstrass polynomial of degree $d$ in $w$ whose lower coefficients vanish at the origin.

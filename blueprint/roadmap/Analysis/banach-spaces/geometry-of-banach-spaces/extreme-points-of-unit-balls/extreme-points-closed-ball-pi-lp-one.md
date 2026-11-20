@@ -1,12 +1,3 @@
 # Extreme points of the unit ball of finite $\ell^1$
 
-The extreme points of the closed unit ball of `PiLp 1 (fun _ : ι => 𝕜)`
-are exactly the unit multiples of the coordinate vectors. The proof: an
-extreme point must have norm `1` (otherwise a one-coordinate perturbation
-stays in the ball and exhibits it as a midpoint), and it cannot have two
-nonzero coordinates (otherwise mass can be transferred between them, in
-the direction of the phases of the two coordinates, staying at norm `1`
-on both sides). Conversely, a unit multiple of a coordinate vector is
-extreme: a convex combination equalling it must have total norm `1`,
-hence coordinatewise triangle equality, hence vanishing off the
-coordinate, and strict convexity of the scalar field at the coordinate.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $\iota$ be a finite nonempty set. The extreme points of the closed unit ball of $\mathbb{K}^\iota$ with the $\ell^1$ norm, viewed as a real convex set, are exactly the vectors $c\, e_i$ with $i \in \iota$, $e_i$ the $i$-th coordinate vector and $|c| = 1$. An extreme point must have norm $1$, since otherwise a perturbation of one coordinate stays in the ball and exhibits it as a midpoint, and it cannot have two nonzero coordinates, since otherwise mass can be moved between them along their phases while staying at norm $1$. Conversely, a convex combination equal to $c\, e_i$ has total norm $1$, so equality holds in the triangle inequality coordinatewise, the combined points vanish off $i$, and strict convexity of the disc of $\mathbb{K}$ at the $i$-th coordinate concludes.

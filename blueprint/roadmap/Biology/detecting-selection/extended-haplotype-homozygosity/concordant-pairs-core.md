@@ -1,6 +1,3 @@
 # Concordant haplotype pairs sharing a core allele
 
-The number of ordered pairs of distinct haplotypes of `C` whose core alleles (under
-`core`) agree and whose windows of radius `d` agree. The extended haplotype includes the
-core, so pairs carrying different core alleles are never concordant, even when their
-outward windows match.
+For a haplotype sample $h$, a labelling of haplotypes by core alleles, a finite set $C$ and a radius $d$, the number of core-concordant pairs is the number of ordered pairs $(i, j) \in C \times C$ with $i \ne j$ that carry the same core allele and have equal [windows](window.md) of radius $d$.

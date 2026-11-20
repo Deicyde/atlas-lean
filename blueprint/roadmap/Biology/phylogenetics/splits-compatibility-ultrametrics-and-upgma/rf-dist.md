@@ -1,6 +1,7 @@
 # Robinson–Foulds distance
 
-The **Robinson–Foulds distance**: the number of splits in exactly one of the two trees.
-Each split is counted once, by its side away from the leaf `a` (its cluster seen from `a`);
-trivial splits are common to all trees and cancel. The value does not depend on `a`
-(`rfDist_eq_rfDist`).
+For [unrooted binary phylogenetic trees](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md) $T, T'$ on a finite set $X$ and a taxon $a$, the Robinson–Foulds distance is
+
+$$d_{RF}(T, T') = |\mathcal{C}_a(T) \,\triangle\, \mathcal{C}_a(T')|,$$
+
+the number of clusters seen from $a$ ([cluster sets](../counting-binary-phylogenetic-trees/cluster-set.md)) belonging to exactly one of the two trees: each split is counted once, by its side away from $a$.

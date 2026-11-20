@@ -9,4 +9,4 @@ The paper states this for sequences of complex numbers.
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Lemma 3.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Lemma 3.

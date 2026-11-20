@@ -6,4 +6,4 @@ at $x$ and ending at $y$, in which consecutive cells are face adjacent.
 
 ## Sources
 
-- Luther–Mertens, JIS 20 (2017), Article 17.9.5, lines 115–117: a `d`-dimensional polycube is a set of face-connected cells in `ℤ^d`. Connectivity is expressed by reflexive transitive closure of face adjacency restricted to the set `S`.
+- Sebastian Luther and Stephan Mertens, *The Perimeter of Proper Polycubes*, Journal of Integer Sequences 20 (2017), Article 17.9.5, Section 1: a $d$-dimensional polycube is a set of face-connected cells in $\mathbb{Z}^d$, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Mertens/mert4.pdf>.

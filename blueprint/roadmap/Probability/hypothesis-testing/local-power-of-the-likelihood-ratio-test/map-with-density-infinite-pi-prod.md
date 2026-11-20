@@ -1,5 +1,3 @@
 # Reweighting an infinite product measure by a product density
 
-If `μ.withDensity r` is a
-probability measure, then reweighting the product measure `μ^ℕ` by `∏_{i<n} r (xᵢ)` and
-projecting onto the first `n` coordinates gives the product measure `(μ.withDensity r)^n`.
+Let $\mu$ be a probability measure on a measurable space $\mathcal{X}$ and $r : \mathcal{X} \to [0, \infty]$ measurable such that $r\mu$ (the measure with density $r$ with respect to $\mu$) is a probability measure. For every $n \in \mathbb{N}$, reweighting the product measure $\mu^{\otimes \mathbb{N}}$ by the density $x \mapsto \prod_{i<n} r(x_i)$ and projecting onto the first $n$ coordinates gives the product measure $(r\mu)^{\otimes n}$.

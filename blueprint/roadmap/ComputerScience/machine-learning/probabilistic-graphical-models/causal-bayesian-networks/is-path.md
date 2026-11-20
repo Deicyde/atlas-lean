@@ -1,4 +1,5 @@
 # Path in the skeleton of a Bayesian network
 
-A path of the skeleton from `x` to `y`: a list of distinct nodes, consecutive ones
-adjacent, starting at `x` and ending at `y`.
+Let $B$ be a Bayesian network on the nodes $0, \dots, n - 1$. A path of the skeleton from $x$ to
+$y$ is a finite sequence of distinct nodes, consecutive ones [adjacent](adj.md), starting at $x$
+and ending at $y$.

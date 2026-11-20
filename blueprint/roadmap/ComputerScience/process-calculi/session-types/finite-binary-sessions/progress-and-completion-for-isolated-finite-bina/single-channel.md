@@ -1,3 +1,4 @@
 # Single active channel condition for a session context
 
-All active obligations of this thread belong to one physical channel.
+Let $\Gamma$ be a session context and $a$ a channel number. The context has the single channel $a$
+when $\Gamma(c) = \mathrm{end}$ for every channel number $c \ne a$.

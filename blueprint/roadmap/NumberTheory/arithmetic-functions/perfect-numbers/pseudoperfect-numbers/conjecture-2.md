@@ -5,3 +5,7 @@ integer $n$, and call $n$ pseudoperfect if $n$ is the sum of the elements of som
 divisors of $n$. The statement is the conjunction of two claims: there is a real $C > 0$ such
 that every positive integer $n$ with $\sigma(n) > Cn$ is pseudoperfect, and every real $C > 0$
 with this property satisfies $C > 2$.
+
+## Sources
+
+- Erdős Problem #825, https://www.erdosproblems.com/825.

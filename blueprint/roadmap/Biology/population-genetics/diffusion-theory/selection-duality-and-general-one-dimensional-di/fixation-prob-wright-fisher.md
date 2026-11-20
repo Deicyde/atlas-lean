@@ -1,4 +1,3 @@
 # Kimura's formula as a corollary
 
-For genic selection the general scale-function ratio
-is `kimuraFixation σ p` on `[0, 1]`.
+For every real $\sigma$ and every $p \in [0, 1]$, the [scale-function ratio](fixation-prob.md) of the diffusion with drift $\sigma x(1 - x)$ and variance $x(1 - x)$ is [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md) $u_\sigma(p)$.

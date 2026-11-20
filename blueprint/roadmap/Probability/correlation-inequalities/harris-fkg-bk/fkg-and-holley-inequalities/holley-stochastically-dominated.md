@@ -1,7 +1,11 @@
 # Holley's inequality
 
-If `μ₁, μ₂ ≥ 0` on `{0,1}^E` have equal total mass and satisfy
-the Holley lattice condition `μ₁(a) μ₂(b) ≤ μ₁(a ∧ b) μ₂(a ∨ b)`, then `measOfMass μ₁` is
-stochastically dominated by `measOfMass μ₂`. Strict positivity, assumed in Holley's paper, is not
-needed. See R. Holley, *Remarks on the FKG inequalities*, Comm. Math. Phys. 36 (1974); the
-real-valued form is `StatMech.holley_dominates`, from Mathlib's `holley`.
+Let $E$ be a finite set and $\mu_1, \mu_2 : \{0,1\}^E \to \mathbb{R}$ nonnegative weights with equal total mass satisfying the Holley lattice condition
+
+$$\mu_1(a)\,\mu_2(b) \le \mu_1(a \wedge b)\,\mu_2(a \vee b) \quad \text{for all } a, b \in \{0,1\}^E.$$
+
+Let $m_i = \sum_\omega \mu_i(\omega)\,\delta_\omega$ be the corresponding measures. Then $m_1$ is stochastically dominated by $m_2$: $m_1(A) \le m_2(A)$ for every increasing event $A$. Strict positivity of $\mu_1, \mu_2$, assumed in Holley's paper, is not needed.
+
+## Sources
+
+- R. Holley, *Remarks on the FKG inequalities*, Comm. Math. Phys. 36 (1974), 227–231.

@@ -7,4 +7,4 @@ second-smallest element of the lucky set $\mathrm{Lucky}(w)$. If $x > n$, then $
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Proposition 3.8 (`jis-2024-24.6.7-prop-28`).
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Proposition 28.

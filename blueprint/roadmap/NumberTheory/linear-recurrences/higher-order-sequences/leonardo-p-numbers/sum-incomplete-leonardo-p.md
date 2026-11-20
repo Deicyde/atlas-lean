@@ -1,4 +1,4 @@
-# Partial sums of incomplete Leonardo p-numbers
+# Partial sums of incomplete Leonardo $p$-numbers
 
 For natural numbers $p \ge 1$, $n$, $k$ and
 $r$ with $n \ge (p + 1)(k + 1)$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
@@ -13,4 +13,4 @@ where the sum is empty when $r = 0$.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 8.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 8.

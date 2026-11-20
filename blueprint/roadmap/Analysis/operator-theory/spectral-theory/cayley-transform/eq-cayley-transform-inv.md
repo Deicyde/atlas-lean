@@ -1,3 +1,7 @@
 # Inverse Cayley formula
 
-The inverse Cayley formula: `A = i • (1 + U) * (1 - U)⁻¹`.
+Let $H$ be a complex Hilbert space, $A$ a bounded self-adjoint operator on $H$ and $U$ its [Cayley transform](cayley-transform.md). Then $A$ is recovered from $U$ by
+
+$$
+A = i(I + U)(I - U)^{-1}.
+$$

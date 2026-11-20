@@ -9,8 +9,6 @@ $\lfloor (b_i + b_{i + L/3} + b_{i + 2L/3})/n \rfloor = 1$ for every $0 \le i < 
 if and only if columns $2a + 1$ and $4a + 2$ are equal and columns $8a + 4$ and $10a + 5$ are
 equal.
 
-The proportion conjectured in the source is not stated here.
-
 ## Sources
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 4.

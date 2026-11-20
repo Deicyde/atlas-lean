@@ -1,4 +1,3 @@
 # Exactness of the wavefront alignment algorithm
 
-The wavefront algorithm is exact: the end cell is reached by some score `s' ≤ s` iff some
-alignment of `xs` and `ys` costs at most `s`. Hence the least such `s` is the optimal cost.
+For every natural number $s$: some $s' \le s$ has [wavefront offset](wavefront.md) $W(s', |y| - |x|) = |y|$ if and only if some [valid alignment](../pairwise-sequence-alignment/is-alignment.md) of $x$ and $y$ has [cost](cost.md) at most $s$. Hence the least such $s$ is the optimal cost.

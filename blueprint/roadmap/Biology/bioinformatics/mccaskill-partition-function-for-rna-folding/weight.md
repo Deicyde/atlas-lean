@@ -1,3 +1,3 @@
 # Weight of a secondary structure
 
-The weight of a structure: the product of the weights of its base pairs.
+For weights $w(i, j)$ in a commutative monoid and a finite set $P$ of pairs, the weight of $P$ is $\prod_{(i, j) \in P} w(i, j)$.

@@ -8,4 +8,4 @@ to $l$.
 
 ## Sources
 
-- S. Banach, Theorie des operations lineaires, 1932, definition of generalised limit; G. Lorentz, Acta Math. 80 (1948) 167-190; Lean formalizes ℓ∞ via `BoundedContinuousFunction ℕ ℝ` and real field `ℝ` with all four classical axioms.
+- S. Banach, Theorie des operations lineaires, 1932, definition of generalised limit; G. Lorentz, Acta Math. 80 (1948) 167-190. The statement here takes $\ell^\infty$ to be the bounded real sequences, over the real field, with all four classical axioms.

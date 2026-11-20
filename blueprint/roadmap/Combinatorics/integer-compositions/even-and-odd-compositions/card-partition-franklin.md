@@ -7,4 +7,4 @@ $k$.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 14 (Franklin) (`jis-2024-24.6.5-thm-14`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 14 (Franklin).

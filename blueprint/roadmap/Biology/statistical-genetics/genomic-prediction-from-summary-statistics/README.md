@@ -38,13 +38,13 @@
 - [Association statistic in the stratified LD-score model](chi-sq.md)
 - [Expected association statistic in the stratified LD-score model](integral-chi-sq.md)
 - [Stratified LD-score regression](integral-chi-sq-of-standardized.md)
-- [One causal variant](integral-chi-sq-single-causal.md)
+- [Expected association statistic with one causal variant](integral-chi-sq-single-causal.md)
 - [In-sample LD correlation](sample-corr.md)
 - [Bivariate LD-score model](cross-trait-model.md)
 - [Scaled marginal score for the first trait](z1.md)
 - [Scaled marginal score for the second trait](z2.md)
 - [Cross-trait scaled-score identity, exact form](integral-z-mul-z.md)
-- [Equal normalized-cross-product specialization of the residual cross-moment identity](integral-z-mul-z-of-same-ld.md)
+- [Cross-trait scaled-score identity with equal in-sample LD](integral-z-mul-z-of-same-ld.md)
 
 ## The Cochran–Armitage trend test
 
@@ -56,7 +56,7 @@
 - [Pooled allele frequency](allele-freq.md)
 - [Pearson's chi-squared statistic of a 2 × 2 table](pearson2x2.md)
 - [Allelic test statistic](allelic-stat.md)
-- [The trend test is `N r²`](trend-stat-eq-total-mul-corr-sq.md)
+- [The trend statistic is $N$ times a squared correlation](trend-stat-eq-total-mul-corr-sq.md)
 - [Departure of the genotype-score variance from Hardy–Weinberg](score-var-sub-hwe-var.md)
 - [Allelic versus trend test](allelic-stat-mul-hwe-var.md)
 - [The allelic test equals the trend test iff the pooled sample is in Hardy–Weinberg proportions](allelic-stat-eq-trend-stat-iff.md)

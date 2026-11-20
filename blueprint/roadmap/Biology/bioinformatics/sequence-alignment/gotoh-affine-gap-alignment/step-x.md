@@ -1,3 +1,3 @@
 # Gotoh cell recurrence against an empty second suffix
 
-The cell of `(a :: xs, [])` from the cell `o` of `(xs, [])`: one more gap column in `ys`.
+For an integer triple $c = (c_M, c_X, c_Y)$, the step gives $(c_X + o,\ c_X + e,\ c_X + o)$.

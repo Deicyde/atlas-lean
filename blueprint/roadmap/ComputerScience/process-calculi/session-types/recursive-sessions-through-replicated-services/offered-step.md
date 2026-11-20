@@ -1,4 +1,5 @@
 # Persistent service offers survive one reduction step
 
-ALL5 canonical Step rules retain every actual persistent source service offer.
-This is valid for arbitrary Pi syntax, WITHOUT a HasType premise.
+Let $s$ be a natural number and $p$, $q$ processes with $p \to q$. If $p$ offers $\mathrm{c}_s$
+persistently (it contains, under parallel compositions and restrictions only, a replication whose
+body has an unguarded input on $\mathrm{c}_s$), then so does $q$.

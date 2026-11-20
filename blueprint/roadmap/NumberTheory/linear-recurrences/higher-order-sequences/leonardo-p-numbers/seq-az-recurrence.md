@@ -6,4 +6,4 @@ $n \equiv 1 \pmod p$, and $A_p(n) = A_p(n-1) + A_p(n-p-1)$ otherwise.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 7.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 7.

@@ -6,9 +6,6 @@ with $F(\varphi(c)) = \sigma(F(c))$ for every cell $c$, where $\varphi$ is the i
 cells and $\sigma$ is the identity permutation of designs, equals $4$; that is, all $2^2$ tilings
 are fixed.
 
-This is a sanity check of the definition of fixed tilings, not one of the paper's enumerative
-theorems.
-
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Encoding check.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Section 2.7, Theorem 20 (special case).

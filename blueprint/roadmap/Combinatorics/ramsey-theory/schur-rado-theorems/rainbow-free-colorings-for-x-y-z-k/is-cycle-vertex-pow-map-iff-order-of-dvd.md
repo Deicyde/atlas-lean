@@ -5,8 +5,7 @@ number, and $t$ the largest divisor of $p - 1$ that is coprime to $k$. A nonzero
 $a \in \mathbb{Z}/p\mathbb{Z}$ lies on a cycle of the map $x \mapsto x^k$, that is,
 $a^{k^m} = a$ for some $m \ge 1$, if and only if the multiplicative order of $a$ divides $t$.
 
-Only this characterization is stated; the source's further claims (there are $t + 1$ cycle
-vertices, and two components exactly when $t = 1$) are not.
+For $k \ge 1$, the source also states that the map has $t + 1$ cycle vertices, and that its functional graph has two components exactly when $t = 1$.
 
 ## Sources
 

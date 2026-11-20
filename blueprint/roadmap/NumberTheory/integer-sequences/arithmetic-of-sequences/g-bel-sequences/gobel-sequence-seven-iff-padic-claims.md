@@ -18,4 +18,4 @@ Statement (i) is Theorem 2 of the source.
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 6 (`jis-2024-24.8.1-lem-6`).
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 6 (`jis-2024-24.8.1-lem-6`).

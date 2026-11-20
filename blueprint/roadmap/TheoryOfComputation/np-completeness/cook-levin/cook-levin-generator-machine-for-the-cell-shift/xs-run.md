@@ -16,6 +16,6 @@ Then for every $n \le g$, every output word $o$ and every flag $v$ there is a fl
 the generator for these data, started at the entry label of the in-range chain for $n$ in block
 $(i, k)$ with flag $v$, counters $F$ and output $o$, reaches the in-range drain stage
 $\mathrm{dCB}$ of block $(i, k)$ with flag $v'$, counters $F$ and output $e_0 e_1 \cdots e_{n-1}$
-followed by $o$ in at most $n \cdot \mathrm{clauseB}(V)$ steps, where
-$\mathrm{clauseB}(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ and $e_x$ is the encoding of the dense
+followed by $o$ in at most $n \cdot B(V)$ steps, where
+$B(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ and $e_x$ is the encoding of the dense
 clause over $V$ variables whose literals are the in-range shift literals for $(t, i, k, u, x)$.

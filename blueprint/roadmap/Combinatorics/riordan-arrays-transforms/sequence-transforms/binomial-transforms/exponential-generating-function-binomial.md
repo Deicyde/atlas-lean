@@ -11,4 +11,4 @@ assumed only at the point $t$ under consideration.
 
 ## Sources
 
-- Ayhan Dil, Veli Kurt, and Mehmet Cenkci, *Algorithms for Bernoulli and Related Polynomials*, Journal of Integer Sequences 10 (2007), Article 07.5.4, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex>, Proposition `prop2` (proof attributed to Seidel), lines 221-233; the binomial-transform relation `a_0^n = Σᵢ C(n,i) a_i^0` is equation (8)/(9), lines 188-199.
+- Ayhan Dil, Veli Kurt, and Mehmet Cenkci, *Algorithms for Bernoulli and Related Polynomials*, Journal of Integer Sequences 10 (2007), Article 07.5.4, Proposition 1.2 (proof attributed to Seidel), with the binomial-transform relations (8) and (9), <https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.pdf>.

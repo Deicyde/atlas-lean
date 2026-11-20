@@ -6,4 +6,4 @@ nonzero principal ideal.
 
 ## Sources
 
-- ATLAS NumberTheoryI Theorem 3.23(6), corrected: the recorded condition omits both nonzero qualifiers, which makes it vacuous (take $J = 0$).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 3, Theorem 3.23 (the sixth condition), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. The two nonzero qualifiers are added here: as stated there, the condition holds in every domain (take $J = 0$).

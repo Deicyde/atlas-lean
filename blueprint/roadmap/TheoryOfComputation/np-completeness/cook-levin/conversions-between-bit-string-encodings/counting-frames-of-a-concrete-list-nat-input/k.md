@@ -1,3 +1,4 @@
 # Stacks of the frame counter for lists of naturals
 
-Input, one-block scratch, and a unary element counter.
+The frame counter has three stacks: the input, a scratch stack holding the payload of one block, and a counter
+holding the number of blocks read in unary.

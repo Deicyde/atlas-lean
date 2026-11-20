@@ -1,13 +1,3 @@
 # Per-box uniqueness of the random-cluster measures off a countable set
 
-For `d ≥ 1`,
-`q ≥ 1`, and every box `Λ_N`, the free and wired infinite-volume random-cluster measures on
-`ℤ^d` at `p = logistic(t)` give the same mass to every increasing event of `Λ_N`, for all `t`
-outside a countable set.
-
-This is a per-box statement only: the countable exceptional set may depend on `N`, the
-statement is in the logit parameter `t` rather than in `p ∈ (0, 1)` directly, and it concludes
-agreement on increasing events of that one finite restriction, not equality of the
-infinite-volume measures. No declaration here takes the countable union over `N`, transfers
-it to `p`, or derives equality of the infinite-volume measures. (Grimmett, *The Random-Cluster
-Model*, 2006, Theorem 4.60.)
+Let $d \ge 1$, $N \in \mathbb{N}$ and $q \ge 1$. Then the set of $t \in \mathbb{R}$ for which some increasing set $A$ of configurations of $\Lambda_N = \{-N, \dots, N\}^d$ satisfies $\mu^0_{q,t}(A) \ne \mu^1_{q,t}(A)$ is countable, where $\mu^0_{q,t}$ and $\mu^1_{q,t}$ are the [free](fkgq-free-mass.md) and [wired mass functions](fkgq-wired-mass.md) on configurations of $\Lambda_N$ (the probability, under the free, resp. wired, infinite-volume random-cluster measure on $\mathbb{Z}^d$ at $p = \sigma(t)$ and cluster weight $q$, that the restriction to the pairs of vertices of $\Lambda_N$ equals the given configuration) and $\mu(A) = \sum_{\omega \in A} \mu(\omega)$. The countable exceptional set may depend on $N$, and the agreement concerns the restrictions of the two measures to $\Lambda_N$ (Grimmett, *The Random-Cluster Model*, 2006, Theorem 4.60).

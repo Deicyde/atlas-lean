@@ -13,4 +13,4 @@ $y \in \mathcal{O}_L$, then the restriction of $\sigma_M$ to $L$ equals $\sigma_
 
 ## Sources
 
-- ATLAS Proposition 7.13, generalized from the chosen Frobenius elements at chosen primes to arbitrary Frobenius elements at explicit primes.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 7, Proposition 7.22 (its second statement) and Proposition 7.13 (the diagram of decomposition and inertia groups it rests on), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. Proposition 7.22 assumes the prime of the top field unramified; here only the prime $Q_L$ of the intermediate field needs to be unramified over $\mathcal{O}_K$, and the Frobenius elements are any elements satisfying the congruences.

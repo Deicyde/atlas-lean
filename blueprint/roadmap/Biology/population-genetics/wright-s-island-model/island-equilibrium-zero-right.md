@@ -1,3 +1,3 @@
 # Complete identity by descent in isolated demes
 
-Isolated demes (`m = 0`): the equilibrium is complete identity by descent, `F* = 1`.
+For every natural number $M$, the [equilibrium](island-equilibrium.md) without migration ($m = 0$) is $F^* = 1$.

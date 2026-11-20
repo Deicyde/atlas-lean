@@ -12,4 +12,4 @@ where an inner sum whose upper limit $n - m - k$ is negative counts as $0$.
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 3.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 3.

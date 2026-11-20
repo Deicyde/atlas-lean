@@ -6,4 +6,4 @@ to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), SUBSET SUM; NP-completeness via the zero-padding reduction from ordinary subset sum.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), SUBSET SUM; NP-completeness via the zero-padding reduction from ordinary subset sum.

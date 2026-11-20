@@ -8,4 +8,4 @@ $k$-binomial transform of $a$. In both cases the equality is one of integer sequ
 
 ## Sources
 
-- Michael Z. Spivey and Laura L. Steil, "The k-Binomial Transforms and the Hankel Transform", Journal of Integer Sequences 9 (2006), Article 06.1.1, Theorem `falling_equiv`, lines 636-640, <https://cs.uwaterloo.ca/journals/JIS/VOL9/Spivey/spivey7.tex>.
+- Michael Z. Spivey and Laura L. Steil, "The k-Binomial Transforms and the Hankel Transform", Journal of Integer Sequences 9 (2006), Article 06.1.1, Theorem 3.2, <https://cs.uwaterloo.ca/journals/JIS/VOL9/Spivey/spivey7.pdf>.

@@ -9,4 +9,5 @@ $v_n(a_n) \le v_n(x)$ for every $n$ and every $x \in S$.
 
 ## Sources
 
-- Takeda, Introduction, lines 52-60.
+- M. Bhargava, *P-orderings and polynomial functions on arbitrary subsets of Dedekind rings*, J. Reine Angew. Math. 490 (1997), 101–128.
+- W. Takeda, *On the Bhargava factorial of polynomial maps*, Comm. Algebra 51 (2023), no. 7, 3124–3133, arXiv:2304.02946, Introduction.

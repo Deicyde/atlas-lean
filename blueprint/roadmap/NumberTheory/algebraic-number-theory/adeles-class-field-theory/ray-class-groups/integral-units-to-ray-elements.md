@@ -9,4 +9,4 @@ $\mathcal{O}_K^\times \to K_{\mathfrak{m}}$ sending a unit $u$ to its image in $
 
 ## Sources
 
-- ATLAS `okUnitsToUnitsCoprime`; ATLAS `valuation_algebraMap_unit_eq_one` is discharged inline in the definition.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

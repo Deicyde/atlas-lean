@@ -1,4 +1,4 @@
 # Every π step source has an unguarded input
 
-Every existing π step requires an exposed input in its source,
-including pre-congruence, selection, context closure and replication folding.
+Let $p$, $q$ be processes with $p \to q$ in π-calculus reduction. Then $p$ has an unguarded input
+(an input prefix occurring under $\mid$, $+$, $\nu$ and replication only).

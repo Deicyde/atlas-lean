@@ -6,3 +6,7 @@ $d_k(p) \le d_k(q)$ for all primes $p$ and $q$ with $p \le q \le p_0$, and $d_k(
 all primes $p$ and $q$ with $p_0 \le p \le q$. Here $d_k(p)$ is the natural density of the set of
 natural numbers whose $k$-th smallest prime factor is $p$ (an unspecified real number if this
 density does not exist).
+
+## Sources
+
+- Erdős Problem #690, https://www.erdosproblems.com/690.

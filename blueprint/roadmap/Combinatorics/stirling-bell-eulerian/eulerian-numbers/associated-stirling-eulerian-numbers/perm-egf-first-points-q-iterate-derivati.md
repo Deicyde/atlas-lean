@@ -15,4 +15,4 @@ $$\frac{d^s}{du^s} A_{[s]}(q,x,u) = q^s \bigl(A(x,u) \exp((x-1)u)\bigr)^s \exp(q
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 47 (`jis-2025-25.5.7-cor-47`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 47.

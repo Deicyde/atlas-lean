@@ -6,4 +6,4 @@ in deterministic logarithmic space.
 
 ## Sources
 
-- R. W. Stearns, J. Hartmanis, and P. M. Lewis II, "Hierarchies of memory limited computations" (1965); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009.
+- R. W. Stearns, J. Hartmanis, and P. M. Lewis II, "Hierarchies of memory limited computations" (1965); S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009.

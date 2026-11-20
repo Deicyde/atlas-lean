@@ -1,3 +1,3 @@
 # Positive position weight matrices
 
-PWMs with positive entries and columns summing to `1`: the EM parameter space.
+The positive position weight matrices of width $w$ over $A$ are the real matrices $\theta$ with $\theta_i(b) > 0$ for all $i, b$ and $\sum_b \theta_i(b) = 1$ for every column $i$.

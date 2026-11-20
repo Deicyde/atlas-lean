@@ -6,7 +6,7 @@ Let $p \in \{2, 3, 5\}$ and let $n > 5040$ be a natural number not divisible by 
 inequality $\sigma(n) < e^{\gamma} n \log \log n$ holds.
 
 The paper prints Robin's inequality as $\sigma(n) < e^{\gamma} \log \log n$, dropping the factor
-$n$; the standard form, which the paper uses in Section 2, is formalized.
+$n$; the standard form above is the one the paper uses in Section 2.
 
 ## Sources
 

@@ -1,3 +1,3 @@
 # Morphogen profile is strictly decreasing
 
-The profile is strictly decreasing in `x` for a positive source.
+For $D, k, j > 0$, the [morphogen profile](profile.md) $c(x) = (j/\sqrt{Dk})\, e^{-x/\lambda}$, $\lambda = \sqrt{D/k}$, is strictly decreasing on $\mathbb{R}$.

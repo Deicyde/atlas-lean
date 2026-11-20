@@ -1,3 +1,3 @@
 # Positivity of the sweep duration
 
-The time to reach a higher frequency is positive.
+Let $s > 0$ and $0 < a < b < 1$. Then the [sweep duration](sweep-duration.md) satisfies $\tau_s(a, b) > 0$.

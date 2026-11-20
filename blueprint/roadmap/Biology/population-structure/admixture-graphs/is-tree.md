@@ -1,3 +1,3 @@
 # Tree-shaped admixture graph
 
-The graph is a tree: no node has two parents.
+An [admixture graph](admixture-graph.md) is a tree if every node has at most one parent.

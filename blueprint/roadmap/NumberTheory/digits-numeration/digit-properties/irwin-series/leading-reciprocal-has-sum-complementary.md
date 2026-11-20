@@ -9,8 +9,7 @@ $n$ and contains exactly $k$ occurrences of $d$ have sum $S$, and the series
 $\sum_{m \ge 0} v_{k - k(n);m} / (n+1)^{m+1}$ also has sum $S$. Moreover every term
 $v_{k - k(n);m} / (n+1)^{m+1}$ of this series is positive, and the series is summable.
 
-Positivity plus summability renders the paper's phrase "positive series with geometric
-convergence"; no explicit ratio is asserted.
+The source adds that the convergence of this positive series is geometric.
 
 ## Sources
 

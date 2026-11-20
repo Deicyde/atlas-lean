@@ -1,7 +1,3 @@
 # Read with no successor
 
-Read `j` has no successor when no other read starts in the `L - 1` positions after it,
-`starts j + 1, …, starts j + L - 1 (mod G)` (reads starting at the same position are not
-successors of each other). In Lander and Waterman's terms such a read is counted as ending
-an island, but several no-successor reads can lie in one island, so this is not the island
-count.
+For read length $L$ and start positions $s_1, \dots, s_N$ on a circular genome of length $G$, read $j$ has no successor if no other read $j' \ne j$ satisfies $0 < (s_{j'} - s_j) \bmod G < L$: no other read starts in the $L - 1$ positions after $s_j$. Several no-successor reads can lie in one island, so their number is not the island count.

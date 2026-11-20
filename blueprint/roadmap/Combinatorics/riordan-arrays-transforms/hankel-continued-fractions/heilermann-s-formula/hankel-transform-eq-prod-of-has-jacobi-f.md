@@ -13,4 +13,4 @@ that is, $\mu_0^{n+1} \beta_1^n \beta_2^{n-1} \cdots \beta_n$, which is $\mu_0$ 
 
 ## Sources
 
-- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117. Zero-indexed: `hankelTransform a n` is the determinant of the `(n + 1) x (n + 1)` Hankel matrix, and the product over `Finset.range n` with shift `beta (j + 1)` and exponent `n - j` gives `beta_1 ^ n, ..., beta_n ^ 1`; for `n = 0` the empty product yields `mu0`. Scope: only the determinant identity is stated; the Jacobi continued fraction data itself is carried by `HasJacobiFraction`.
+- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, Section 1 (Heilermann's formula), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.pdf>.

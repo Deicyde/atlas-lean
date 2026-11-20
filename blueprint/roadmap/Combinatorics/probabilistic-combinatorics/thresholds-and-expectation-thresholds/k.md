@@ -1,10 +1,11 @@
 # The constant of the Frankston–Kahn–Narayanan–Park theorem
 
-A real number $K$, not yet
-specified, that is to serve as the universal constant in the bound of the threshold of an
-increasing family by $K$ times its fractional expectation-threshold times the logarithm of the
-size of its largest minimal element.
+The absolute constant $K$ of the
+[Frankston–Kahn–Narayanan–Park theorem](theorem-1-1.md): a real number such that the threshold of
+every increasing family $\mathcal F$ of subsets of a finite set with $\ell(\mathcal F) \ge 2$ is
+at most $K$ times its fractional expectation-threshold times $\log \ell(\mathcal F)$, where
+$\ell(\mathcal F)$ is the size of a largest minimal element of $\mathcal F$.
 
 ## Sources
 
-- K. Frankston, J. Kahn, B. Narayanan, and J. Park, `Thresholds versus fractional expectation-thresholds`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_fractional_expectation_thresholds` of the lean-eval benchmark.
+- Keith Frankston, Jeff Kahn, Bhargav Narayanan and Jinyoung Park, *Thresholds versus fractional expectation-thresholds*, Ann. of Math. 194(2) (2021). Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge, problem `annals_fractional_expectation_thresholds` of the lean-eval benchmark.

@@ -10,4 +10,4 @@ trivial on $P_{\mathfrak m}$; it sends the ray class of $I$ to $[I]$.
 
 ## Sources
 
-- ATLAS `exactSeq_map4`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

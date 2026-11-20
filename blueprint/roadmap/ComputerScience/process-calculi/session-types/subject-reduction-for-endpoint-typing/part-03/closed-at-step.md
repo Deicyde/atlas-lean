@@ -1,4 +1,4 @@
 # Reduction steps preserve process scoping
 
-Every existing π step preserves canonical scope, not just direct
-head communication. Substitution is the existing capture-avoiding one.
+Let $p$, $q$ be processes with $p \to q$ and $n$ a natural number. If $p$ is scoped at depth $n$
+(every variable under $m$ binders has index $< n + m$), then so is $q$.

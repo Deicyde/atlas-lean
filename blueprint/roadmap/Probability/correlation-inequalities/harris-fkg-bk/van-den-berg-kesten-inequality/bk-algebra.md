@@ -1,5 +1,9 @@
 # Scalar inequality behind the BK induction step
 
-The scalar inequality behind the induction step of the BK inequality: with `q = 1 - p`,
-`p, q ≥ 0`, if `c0 ≤ m ≤ a0 b0`, `c1 ≤ a0 b1 + a1 b0 - m` and `c1 ≤ a1 b1`, then
-`q c0 + p c1 ≤ (q a0 + p a1) (q b0 + p b1)`.
+Let $a_0, a_1, b_0, b_1, c_0, c_1, m, p, q$ be real numbers with $q = 1 - p$, $p \ge 0$ and $q \ge 0$. If
+
+$$c_0 \le m \le a_0 b_0, \qquad c_1 \le a_0 b_1 + a_1 b_0 - m, \qquad c_1 \le a_1 b_1,$$
+
+then
+
+$$q c_0 + p c_1 \le (q a_0 + p a_1)(q b_0 + p b_1).$$

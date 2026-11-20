@@ -1,4 +1,4 @@
-# Binomial sum formula for Fibonacci p-numbers
+# Binomial sum formula for Fibonacci $p$-numbers
 
 For all natural numbers $p \ge 1$ and $n$,
 the Fibonacci $p$-numbers $F_p$ satisfy
@@ -13,4 +13,4 @@ $\binom{0}{0} = 1$, so $p \ge 1$ is assumed.
 
 ## Sources
 
-- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 8 (Kuhapatanakul).
+- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo $p$-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 8 (Kuhapatanakul).

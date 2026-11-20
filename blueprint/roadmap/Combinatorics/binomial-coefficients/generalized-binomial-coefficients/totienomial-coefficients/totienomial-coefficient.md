@@ -11,4 +11,4 @@ Since $\varphi(i) > 0$ for every $i > 0$, the denominator is never $0$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
+- Tom Edgar and Michael Z. Spivey, *Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers*, J. Integer Seq. 19 (2016), Article 16.1.6, Section 3, Corollary 7, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.html>.

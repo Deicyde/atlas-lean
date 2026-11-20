@@ -1,3 +1,3 @@
 # Every f3 form lies in the f-statistic space
 
-Every `f3Form` lies in `V_F`.
+For all populations $C, A, B$, the [f3 form](f3-form.md) $\phi_3^{C;A,B}$ lies in the [f-statistic space](f-space.md) $V_F$.

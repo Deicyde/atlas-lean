@@ -1,10 +1,10 @@
 # Varieties over a field
 
-## Algebraic Geometry
+## Definition
 
 - [Geometrically reduced variety over a field](is-variety.md)
 
-## Is Variety
+## Properties of varieties
 
 - [Characterization of varieties](is-variety-iff.md)
 - [Varieties are quasi-separated](quasi-separated.md)

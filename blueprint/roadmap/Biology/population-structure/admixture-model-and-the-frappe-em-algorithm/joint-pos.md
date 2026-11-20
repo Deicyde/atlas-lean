@@ -1,3 +1,3 @@
 # Positivity of the admixture joint weight
 
-The joint weight is positive (the standing hypothesis of the generic EM).
+For all [admixture parameters](params.md) $\theta$, observations $(i, j, a)$ and populations $k$, the [joint weight](joint.md) satisfies $p_\theta((i, j, a), k) > 0$.

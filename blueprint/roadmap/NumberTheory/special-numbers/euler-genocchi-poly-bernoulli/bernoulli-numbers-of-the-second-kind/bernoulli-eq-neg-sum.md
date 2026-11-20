@@ -8,4 +8,4 @@ $$B_n = -\sum_{k=1}^{n} \frac{n}{k} \, S(n-1, k-1) \, B_k^*.$$
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 2.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Corollary 2.

@@ -7,7 +7,7 @@
 - [Sample homozygosity of an allelic partition](homozygosity.md)
 - [Positivity of the cycle-type weight](cycle-type-weight-pos.md)
 - [Factorization of the Ewens sampling formula](ewens-prob-eq-mul-cycle-type-weight.md)
-- [`K` is sufficient for `θ`](ewens-cond-prob-eq.md)
+- [The number of alleles is sufficient for the mutation parameter](ewens-cond-prob-eq.md)
 - [Cauchy's count by number of cycles](sum-cycle-type-weight-eq-stirling-first.md)
 - [Law of the number of alleles](num-alleles-prob-eq.md)
 - [The Ewens–Watterson conditional law](ewens-cond-prob-eq-stirling-first.md)

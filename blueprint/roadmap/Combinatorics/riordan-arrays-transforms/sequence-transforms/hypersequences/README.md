@@ -38,7 +38,7 @@
 - [Hypersequences through elementary symmetric polynomials](factorial-mul-hypersequence-eq-sum-esymm.md)
 - [The inverse of Parisse's matrix $C(n)$](hyperseq-c-inv-eq-hyperseq-b-div-factori.md)
 - [The inverse of Parisse's matrix $B(n)$](hyperseq-b-inv-eq-hyperseq-c-div-factori.md)
-- [The product of Parisse's matrices B(n) and C(n)](sum-hyperseq-b-mul-hyperseq-c.md)
+- [The product of Parisse's matrices $B(n)$ and $C(n)$](sum-hyperseq-b-mul-hyperseq-c.md)
 - [Recurrence, closed form and row sums of Parisse's $b_{j,k}(n)$](hyperseq-b-recurrence-closed-form-row-su.md)
 - [Parisse's $b_{j,k}(0)$ and Stirling numbers of the first kind](hyperseq-b-zero-recurrence-stirling.md)
 - [Parisse's coefficients at $n$ from their values at $-1$](hyperseq-entries-eq-sum-at-neg-one.md)

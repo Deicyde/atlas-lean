@@ -1,10 +1,10 @@
 # Deadlock and circular wait
 
-## Deadlock
+## Resource-allocation snapshots
 
 - [Resource-allocation snapshot](alloc-state.md)
 
-## Alloc State
+## Deadlock and circular wait
 
 - [Wait-for relation](waits-for.md)
 - [Deadlocked set of processes](deadlocked.md)

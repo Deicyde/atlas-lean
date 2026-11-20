@@ -1,3 +1,3 @@
 # Coordinate state as a real number
 
-The state of coordinate `e` as a real number in `{0, 1}`.
+For a set $E$, a configuration $\omega \in \{0, 1\}^E$ and $e \in E$, the real state is $1$ if $e$ is open in $\omega$ and $0$ otherwise.

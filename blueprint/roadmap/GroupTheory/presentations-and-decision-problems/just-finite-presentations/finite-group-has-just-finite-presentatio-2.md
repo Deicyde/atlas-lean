@@ -6,7 +6,8 @@ such that the group $\langle x_1, \dots, x_n \mid R \rangle$ is isomorphic to $G
 $r \in R$, the group $\langle x_1, \dots, x_n \mid R \setminus \{r\} \rangle$ is infinite. That is,
 the answer to Kourovka Problem 21.10 is positive.
 
-Lackenby's paper acknowledges assistance from the Google DeepMind AI co-mathematician tool.
+Lackenby (Theorem 1) proves that every finite group admits a finite, just finite presentation; the
+Kourovka Notebook (21st issue) answers 21.10 "Yes, it is true".
 
 ## Sources
 

@@ -40,7 +40,7 @@
 - [Block stages of the cell-shift generator](st-p.md)
 - [Loop body of the cell-shift generator](bd-p.md)
 - [The cell-shift generator](prog.md)
-- [The cell-shift generator as a finite stack machine](sh-tm.md)
+- [The cell-shift generator as a finite multi-stack Turing machine](sh-tm.md)
 
 ## Clause kinds: literal positions
 
@@ -57,7 +57,7 @@
 - [The literal routines of one clause of the cell-shift generator](lits-run.md)
 - [One clause of the cell-shift generator](clause-run.md)
 
-## The shift and overflow clauses; the `x` chain; the decrement chain
+## The shift and overflow clauses; the $x$ chain; the decrement chain
 
 - [First cell variable of a block](kbv.md)
 - [Literal positions of an in-range shift clause](sh-pos.md)
@@ -75,7 +75,7 @@
 - [One iteration of the in-range loop of the cell-shift generator](sbody-run.md)
 - [One iteration of the overflow loop of the cell-shift generator](obody-run.md)
 
-## Correctness: one `(i, k)` block, the label chains, the time loop, the generator
+## Correctness: one $(i, k)$ block, the label chains, the time loop, the generator
 
 - [Counter state at the start of a block](blk.md)
 - [Step budget for one block of the shift generator](ik-b.md)

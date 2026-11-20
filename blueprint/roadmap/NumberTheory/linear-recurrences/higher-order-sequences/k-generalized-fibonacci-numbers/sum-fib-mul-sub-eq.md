@@ -10,4 +10,4 @@ $$\sum_{j=0}^{n} F_j (T_{n-j} - Q_{n-j}) = \sum_{j=0}^{n-1} (F_j - T_j) Q_{n-1-j
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 11.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 11.

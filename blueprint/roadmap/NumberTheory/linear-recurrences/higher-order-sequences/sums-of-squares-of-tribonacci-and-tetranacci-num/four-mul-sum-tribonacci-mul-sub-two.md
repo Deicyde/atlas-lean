@@ -8,4 +8,4 @@ $$4 \sum_{k=1}^{n} T(k)\,T(k-2) = \bigl(T(n+1) - T(n-1)\bigr)^2 - \bigl(T(1) - T
 
 ## Sources
 
-- Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Lemma 1.
+- Karol Gryszka, *A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared*, INTEGERS 25 (2025), Article A110, Lemma 1.

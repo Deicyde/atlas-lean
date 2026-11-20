@@ -8,4 +8,4 @@ $t(m, j; q) = \sum_{w \in \mathcal{T}_{m,j}} q^{w_1 + \cdots + w_m}$ in $\mathbb
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of `𝒯_{m,j}` and `t(m, j; q)`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of $\mathcal{T}_{m,j}$ and $t(m, j; q)$.

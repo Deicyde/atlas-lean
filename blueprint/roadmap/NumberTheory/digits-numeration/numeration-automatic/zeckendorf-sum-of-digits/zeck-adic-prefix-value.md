@@ -12,4 +12,4 @@ levels $\{v_k = F_{k+1} + j - 1\}$ for $1 \le j \le F_k$.
 
 ## Sources
 
-- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.1 (cylinders of order `k` and the two towers).
+- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.1 (cylinders of order $k$ and the two towers).

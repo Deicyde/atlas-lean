@@ -1,3 +1,3 @@
-# Start label of the KG-map machine
+# Start label of the CLIQUE/VERTEX-COVER reduction machine
 
-The KG-map machine starts at the label read $k$.
+The CLIQUE/VERTEX-COVER reduction machine starts at the label read $k$.

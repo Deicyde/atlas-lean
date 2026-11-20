@@ -5,4 +5,4 @@ modulo $m$ of $z$, viewed as a rational number, is the image of $z$ in $\mathbb{
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Section 4.
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Section 4.

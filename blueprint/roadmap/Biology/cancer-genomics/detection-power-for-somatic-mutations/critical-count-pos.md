@@ -1,3 +1,3 @@
 # Positivity of the critical count
 
-The critical count is positive when `FPR < 1`.
+For $0 \le \mathrm{FPR} < 1$, every natural number $n$ and every real $p_0$, the [critical count](critical-count.md) satisfies $k > 0$.

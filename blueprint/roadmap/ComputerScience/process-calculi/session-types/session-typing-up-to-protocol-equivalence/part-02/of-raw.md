@@ -1,4 +1,5 @@
 # Base endpoint typing embeds into conversion typing
 
-Actual seven-rule induction embeds the raw judgement. This does not
-transport the raw judgement's substitution or progress theorem to new terms.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$ a process. If $\Delta \vdash_n p$
+in endpoint typing, then $\Delta \vdash^{\simeq}_n p$ in conversion typing (where a delegated
+payload need only carry a capability equivalent to the announced one).

@@ -14,4 +14,4 @@ of $(-\beta)^{m-n}$ and without the last term of $c_n$, the sum at $m = 2$ is $-
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 12.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Corollary 12.

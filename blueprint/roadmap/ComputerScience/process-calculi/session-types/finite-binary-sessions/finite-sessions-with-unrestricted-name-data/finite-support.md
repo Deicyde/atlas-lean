@@ -1,4 +1,5 @@
 # Session typing derivations have finite support
 
-A derivation has only finitely many active channel obligations: above
-some bound every channel is completed. Contexts are total functions.
+Let $n$ be a natural number, $\Gamma$ a session context and $p$ a process. If $\Gamma \vdash_n p$,
+then there is a natural number $N$ such that $\Gamma(c) = \mathrm{end}$ for every channel number $c
+\ge N$.

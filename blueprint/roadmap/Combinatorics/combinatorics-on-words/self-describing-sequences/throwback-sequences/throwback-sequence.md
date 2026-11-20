@@ -7,4 +7,4 @@ operation in which each entry's weight is its own value.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 2.
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 2, https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

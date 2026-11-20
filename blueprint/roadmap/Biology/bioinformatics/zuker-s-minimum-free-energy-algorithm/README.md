@@ -14,5 +14,5 @@
 - [Zuker's recursion](zuker-vw.md)
 - [Zuker exterior-loop recursion](zuker-exterior.md)
 - [Zuker minimum free energy](zuker-mfe.md)
-- [Zuker's algorithm](zuker-mfe-eq-inf.md)
+- [Zuker's algorithm computes the minimum free energy](zuker-mfe-eq-inf.md)
 - [Minimum free energy is at most zero](zuker-mfe-le-zero.md)

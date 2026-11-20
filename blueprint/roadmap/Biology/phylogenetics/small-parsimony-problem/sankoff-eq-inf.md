@@ -1,9 +1,11 @@
 # Sankoff's algorithm computes the small-parsimony cost
 
-`sankoff σ t s` is the minimum
-total edge cost over all labelings of the non-root vertices that agree with the observed states
-at the leaves (with root state `s`).
+For all observed states $\sigma$, trees $t$ with costs and states $s$,
+
+$$\mathrm{Sk}(t, s) = \min\{C(t, s, z) : z \text{ agrees with } \sigma\},$$
+
+the minimum of the [total cost](edge-cost.md) over the labelings with root state $s$ that [agree](agrees.md) with $\sigma$, where the minimum over the empty set is $\infty$ (for example when $t$ is a single leaf $l$ and $s \ne \sigma(l)$).
 
 ## Sources
 
-- Sankoff (1975).
+- D. Sankoff, *Minimal mutation trees of sequences*, SIAM J. Appl. Math. 28 (1975), 35–42.

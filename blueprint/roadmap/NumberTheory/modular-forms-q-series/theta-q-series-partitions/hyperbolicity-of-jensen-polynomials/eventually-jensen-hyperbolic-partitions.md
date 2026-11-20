@@ -9,8 +9,7 @@ real roots, counted with multiplicity, equals its degree.
 
 In the source, $b_{a,p}(n)$ is the coefficient of $q^n$ in $1/(q^a; q^p)_\infty$, and the case
 $a = 0$ is also admitted there, although $(1; q^p)_\infty = 0$; the source also gives an asymptotic
-formula, a Hermite-limit statement and higher order Turán inequalities, which are not part of
-this statement.
+formula, a Hermite-limit statement and higher order Turán inequalities.
 
 ## Sources
 

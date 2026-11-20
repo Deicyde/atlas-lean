@@ -8,4 +8,4 @@ position $i$ is replaced by digits $1$ at positions $i - 1$ and $i - 2$, which w
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Sections 1 and 2 (the map `T_i`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Sections 1 and 2 (the map $T_i$).

@@ -5,6 +5,6 @@
 - [Fourier transform of a dilation](fourier-comp-mul-left.md)
 - [Fourier transform of a dilation by a positive factor](fourier-comp-mul-left-of-pos.md)
 
-## Schwartz Map
+## Schwartz functions
 
 - [Fourier transform of a dilated Schwartz function](fourier-coe-comp-mul-left-of-pos.md)

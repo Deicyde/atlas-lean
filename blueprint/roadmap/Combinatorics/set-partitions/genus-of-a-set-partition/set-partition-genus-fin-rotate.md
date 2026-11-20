@@ -8,4 +8,4 @@ single block has genus $0$.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 ("one-part partitions (`k = 1`) necessarily have genus 0").
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 ("one-part partitions (`k = 1`) necessarily have genus 0").

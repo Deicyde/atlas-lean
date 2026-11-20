@@ -1,4 +1,3 @@
 # Free growing-box collapse at $q = 2$
 
-Free growing-box collapse: for every edge `e'` of `Λ_N` and every `t`, the average free edge
-density of `Λ_n` converges to the free infinite-volume density of `e'`.
+For $d, N \in \mathbb{N}$, free growing-box collapse holds when for every edge $e'$ of $\Lambda_N = \{-N, \dots, N\}^d$ and every $t \in \mathbb{R}$, the [average edge density](../convexity-of-the-free-energy-and-edge-densities/fpd-avg-density.md) of $\Lambda_n$ at $t$ (at $q = 2$) converges to $\theta^0_{e'}(\sigma(t))$ as $n \to \infty$; here $\theta^0_e(p)$ is the [free edge density](free-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the free infinite-volume random-cluster measure on $\mathbb{Z}^d$, a chosen subsequential weak limit of the free box measures) and $\sigma(t) = e^t/(1 + e^t)$ is the [logistic function](../convexity-of-the-free-energy-and-edge-densities/fsc-logistic.md).

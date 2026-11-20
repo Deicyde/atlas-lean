@@ -6,4 +6,4 @@ $g_{k,p,r}(n) = F$, then $g_{k,p,r}(n + 1) = F$.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`).
+- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of $g_{k,p,r}$).

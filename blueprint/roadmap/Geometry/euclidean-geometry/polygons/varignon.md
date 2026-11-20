@@ -13,4 +13,4 @@ that is, the signed area of $PQRS$ is half the signed area of $ABCD$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Varignon%27s_theorem. `A B C D` are arbitrary points in the Euclidean plane, including degenerate or self-crossing configurations. `P Q R S` are the midpoints of sides AB, BC, CD, DA (`2 • P = A + B`, etc.). Conclusion: `P + R = Q + S` (the diagonals of PQRS bisect each other, i.e. PQRS is a parallelogram via parallel opposite sides / bisecting diagonals), and twice the signed area of PQRS, expressed through `EuclideanGeometry.orientedTriangleArea`, equals the signed area of ABCD.
+- https://en.wikipedia.org/wiki/Varignon%27s_theorem. $A, B, C, D$ are arbitrary points in the Euclidean plane, including degenerate or self-crossing configurations, and $P, Q, R, S$ are the midpoints of the sides $AB, BC, CD, DA$ ($2P = A + B$, and so on). Conclusion: $P + R = Q + S$ (the diagonals of $PQRS$ bisect each other, so $PQRS$ is a parallelogram), and twice the signed area of $PQRS$, computed from oriented triangle areas, equals the signed area of $ABCD$.

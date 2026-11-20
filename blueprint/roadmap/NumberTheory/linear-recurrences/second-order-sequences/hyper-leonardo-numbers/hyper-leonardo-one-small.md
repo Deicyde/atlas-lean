@@ -5,4 +5,4 @@ order $1$ satisfy $Le^{(1)}_0 = 1$, $Le^{(1)}_1 = 2$, $Le^{(1)}_2 = 5$ and $Le^{
 
 ## Sources
 
-- Spreafico and Catarino, INTEGERS 26 (2026), Article A48, Proposition 1 (`Le^{(1)}_0 = 1`, `Le^{(1)}_1 = 2`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Proposition 1 ($Le^{(1)}_0 = 1$, $Le^{(1)}_1 = 2$).

@@ -1,3 +1,3 @@
 # Identity renaming fixes every type
 
-Type renaming by the identity does not change a type.
+For every type $A \in \mathrm{Ty}_n$, [renaming](../scoped-pure-system-f/rename.md) $A$ by the identity gives $A$.

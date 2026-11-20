@@ -22,6 +22,6 @@
 - [Synonymous rate does not depend on ω](syn-rate-eq.md)
 - [Nonsynonymous rate is linear in ω](nonsyn-rate-eq.md)
 - [Synonymous and nonsynonymous sites sum to three](syn-sites-add-nonsyn-sites.md)
-- [`dN / dS = ω`](d-n-div-d-s.md)
+- [The ratio dN/dS equals ω](d-n-div-d-s.md)
 - [Positivity of the synonymous rate](syn-rate-pos-of-mem.md)
 - [Positivity of the nonsynonymous rate](nonsyn-rate-pos-of-mem.md)

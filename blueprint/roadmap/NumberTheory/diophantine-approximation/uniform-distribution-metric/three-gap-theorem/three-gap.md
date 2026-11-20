@@ -7,7 +7,7 @@ lengths of the gaps between cyclically consecutive points, including the gap tha
 from the greatest point to the least, is finite and has at most three elements. If it has exactly
 three elements, the largest of them is the sum of the other two.
 
-Proof: We formalize the standard successor argument of Sós (1958) and Świerczkowski (1959),
+Proof: This is the standard successor argument of Sós (1958) and Świerczkowski (1959),
 following Alessandri and Berthé, *Three distance theorems and combinatorics on words*, §2.
 
 ## Sources

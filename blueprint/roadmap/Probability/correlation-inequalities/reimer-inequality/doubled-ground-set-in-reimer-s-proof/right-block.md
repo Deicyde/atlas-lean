@@ -1,3 +1,3 @@
 # Right copy in the doubled ground set
 
-The right copy `{inr a}` of `α` in `α ⊕ α`.
+Let $\alpha$ be a set. The right copy of $\alpha$ in $\alpha \sqcup \alpha$ is the set $\{a^R : a \in \alpha\}$.

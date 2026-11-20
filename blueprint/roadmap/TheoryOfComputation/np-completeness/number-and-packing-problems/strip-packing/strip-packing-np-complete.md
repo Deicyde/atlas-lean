@@ -5,4 +5,4 @@ decision problem $L$ in NP reduces to STRIP PACKING by a polynomial-time many-on
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), STRIP PACKING (axis-aligned, no rotations).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), STRIP PACKING (axis-aligned, no rotations).

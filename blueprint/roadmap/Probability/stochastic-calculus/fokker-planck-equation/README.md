@@ -19,3 +19,15 @@
 - [Flux of the Gibbs density under a rotational gradient drift](flux-rotational-gibbs.md)
 - [Rotational drifts share the Gibbs stationary density](divergence-flux-rotational-gibbs.md)
 - [An explicit rotational drift with nonzero flux](exists-rotational-flux-ne-zero.md)
+
+## Related topics
+
+- [Wasserstein distances](../../../MeasureTheory/optimal-transport/wasserstein-distances/README.md):
+  for a gradient drift $b = -\nabla \Psi$, a constant diffusion coefficient $D > 0$ and sufficiently
+  regular probability densities, the Fokker–Planck equation is the gradient flow of the free energy
+  for the Wasserstein distance $W_2$ (Jordan, Kinderlehrer and Otto, 1998); the dissipation identity
+  is its infinitesimal form.
+- [Wasserstein gradient flows and the JKO scheme](../../../MeasureTheory/optimal-transport/wasserstein-gradient-flows-and-the-jko-scheme/README.md):
+  the Jordan–Kinderlehrer–Otto scheme that makes the gradient-flow statement precise, with its
+  metric a priori estimates and its convergence to this equation.
+- [Mean field games](../../../GameTheory/noncooperative-games/mean-field-games/README.md): the mean field game system couples a Fokker–Planck equation for the distribution of players with a Hamilton–Jacobi–Bellman equation for their value.

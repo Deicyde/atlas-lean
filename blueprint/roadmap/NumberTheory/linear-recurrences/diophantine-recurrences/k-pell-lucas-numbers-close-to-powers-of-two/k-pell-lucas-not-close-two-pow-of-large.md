@@ -1,7 +1,6 @@
 # No $k$-Pell–Lucas number with $k > 350$ and index $n \ge k + 1$ is close to a power of two (Lemma 10)
 
-**No $k$-Pell–Lucas number with $k > 350$ and index $n \ge k + 1$ is close to a power of
-two (Lemma 10).** For all natural numbers $k$, $n$ and $m$ with $k > 350$ and $n \ge k + 1$, the
+For all natural numbers $k$, $n$ and $m$ with $k > 350$ and $n \ge k + 1$, the
 $n$th $k$-Pell–Lucas number $Q^{(k)}_n$ satisfies $|Q^{(k)}_n - 2^m| \ge 2^{m/2}$.
 
 ## Sources

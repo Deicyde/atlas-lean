@@ -7,4 +7,4 @@ $A \in F$ or $B \in F$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (families and the Ramsey property).
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (families and the Ramsey property).

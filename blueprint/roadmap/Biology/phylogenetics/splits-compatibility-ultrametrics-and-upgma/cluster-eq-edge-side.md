@@ -1,4 +1,3 @@
 # Clusters seen from a leaf are edge sides
 
-The cluster of a vertex `v` seen from `a` is the side of `v` of the edge from `v` to its
-neighbor `p` toward `a`.
+Let $T$ be an [unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md), $a$ a taxon with leaf $\ell_a$, and $p, v$ adjacent vertices with $\mathrm{dist}(\ell_a, v) = \mathrm{dist}(\ell_a, p) + 1$. Then the [cluster](../counting-binary-phylogenetic-trees/cluster.md) of $v$ seen from $a$ is the [$v$-side](edge-side.md) of $p\,v$.

@@ -6,4 +6,4 @@ is a point $x \in S^n$ with $f(x) = f(-x)$.
 
 ## Sources
 
-- K. Borsuk, Fund. Math. 20 (1933) 177–190 antipodal theorem; S. Ulam; J. Matoušek, Using the Borsuk–Ulam Theorem; Lean states `EuclideanSpace ℝ (Fin (n+1))` to `Fin n` specialization.
+- K. Borsuk, Fund. Math. 20 (1933) 177–190 antipodal theorem; S. Ulam; J. Matoušek, Using the Borsuk–Ulam Theorem.

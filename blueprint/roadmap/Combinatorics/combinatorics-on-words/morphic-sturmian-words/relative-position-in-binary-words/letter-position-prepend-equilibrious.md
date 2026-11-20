@@ -10,4 +10,4 @@ and $r_{uw}(n+k) = r_w(n)$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 22 (`jis-2025-25.1.5-lem-22`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 22 (`jis-2025-25.1.5-lem-22`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

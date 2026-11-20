@@ -7,4 +7,4 @@ the digits of $87912$ in reverse order.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Introduction.
+- Benjamin V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Introduction.

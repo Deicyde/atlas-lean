@@ -13,6 +13,16 @@ similarities of ratio $\lambda$ under the open set condition has Hausdorff dimen
 set and the [Banach–Tarski paradox](measures/banach-tarski-paradox/README.md), and integration, Lebesgue spaces, Haar
 measure and optimal transport make up most of the rest.
 
+The pages below extend the textbook core of the subject, which in the order of Tao's *An
+Introduction to Measure Theory* is: Lebesgue outer measure and Carathéodory's construction (Tao's
+definition of Lebesgue measurability is compared with null-measurability in [Lebesgue
+measurability](lebesgue-measure/lebesgue-measurability/README.md)); the monotone convergence
+theorem, Fatou's lemma and the dominated convergence theorem; Egorov's theorem and the
+Borel–Cantelli lemma; Tonelli's and Fubini's theorems (their $\sigma$-finiteness hypothesis is shown
+necessary in [Fubini–Tonelli theorem](integration/fubini-tonelli-theorem/README.md)); Hölder's and
+Minkowski's inequalities and the completeness of $L^p$; the Lebesgue differentiation theorem and
+the almost everywhere differentiability of monotone functions.
+
 - [Measures and measurable sets](measures/README.md)
 - [Lebesgue measure](lebesgue-measure/README.md)
 - [Haar measure and fundamental domains](haar-measure/README.md)

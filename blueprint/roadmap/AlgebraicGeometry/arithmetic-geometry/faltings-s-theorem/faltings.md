@@ -8,4 +8,4 @@ has dimension $1$ over $K$.
 
 ## Sources
 
--. Problem `faltings` of the lean-eval benchmark.
+- Gerd Faltings, *Endlichkeitssätze für abelsche Varietäten über Zahlkörpern*, Inventiones Mathematicae 73 (1983), no. 3, 349–366. Problem `faltings` of the lean-eval benchmark (https://github.com/leanprover/lean-eval/blob/38361be884302c7edce1908c4aef8296eb2cb27e/manifests/problems/faltings.toml).

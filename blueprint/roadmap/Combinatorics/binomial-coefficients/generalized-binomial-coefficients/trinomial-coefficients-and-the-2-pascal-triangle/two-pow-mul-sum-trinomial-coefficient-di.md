@@ -9,4 +9,4 @@ $2^n \sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} = \lambda_
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 33 (`jis-2025-25.3.5-cor-33`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Corollary 33, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-cor-33).

@@ -9,4 +9,4 @@ $\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Theorem 2 (`thm:diffs`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Theorem 2.

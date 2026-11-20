@@ -1,8 +1,10 @@
 # Leftist invariant with correct stored ranks
 
-Leftist invariant: stored rank is correct and left rank ≥ right rank
-   For every node `N storedRank x l r`, require:
-   - `storedRank = rank r + 1`;
-   - `rank l ≥ rank r`;
-   - `ltree l`;
-   - `ltree r`.
+The leftist invariant of a leftist heap is defined recursively: the empty heap satisfies it, and
+a node $\langle k, x, \ell, r \rangle$ satisfies it exactly when
+
+- $k$ equals the rank of $r$ plus $1$;
+- the rank of $\ell$ is at least the rank of $r$;
+- $\ell$ and $r$ both satisfy the leftist invariant.
+
+Here the rank of a heap is $0$ for the empty heap and the stored rank of the root otherwise.

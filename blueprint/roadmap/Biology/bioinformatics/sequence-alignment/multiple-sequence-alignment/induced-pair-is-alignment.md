@@ -1,5 +1,3 @@
 # Induced pairwise alignments are valid
 
-Let $A$ be a valid multiple alignment of sequences
-$s_0, \dots, s_{k-1}$. Then for all rows $i, j < k$, the pairwise alignment induced by $A$ on rows
-$i$ and $j$ is a valid pairwise alignment of $s_i$ and $s_j$.
+If $A$ is a [valid multiple alignment](is-msalignment.md) of $s_0, \dots, s_{k-1}$, then for all rows $i, j$ the [induced pairwise alignment](induced-pair.md) is a [valid alignment](../pairwise-sequence-alignment/is-alignment.md) of $s_i$ and $s_j$.

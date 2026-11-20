@@ -11,9 +11,9 @@ $$
 {1 - m x - m^{r+1} y} - 1.
 $$
 
-The paper takes $m$ a positive integer (here any element of $K$) and states no range for $n$; for
+The paper takes $m$ a positive integer (the identity holds for every $m \in K$) and states no range for $n$; for
 $n < r - 1$ the right side involves $V$ at negative indices.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 5.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 5.

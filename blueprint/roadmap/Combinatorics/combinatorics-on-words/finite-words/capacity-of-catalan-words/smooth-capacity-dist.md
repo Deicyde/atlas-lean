@@ -6,4 +6,4 @@ words of length $n$ whose last letter is $i$ and $\operatorname{cap}(w)$ is the 
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of `r(n, i; q)`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of $r(n, i; q)$.

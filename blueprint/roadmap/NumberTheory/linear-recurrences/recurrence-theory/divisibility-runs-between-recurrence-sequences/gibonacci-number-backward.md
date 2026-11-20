@@ -8,4 +8,4 @@ The paper indexes the sequence from $1$ and states these identities for $n \ge 4
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 3.
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 3.

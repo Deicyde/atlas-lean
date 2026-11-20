@@ -10,4 +10,4 @@ otherwise.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.tex, lines 349-359.
+- Lin Jiu and Christophe Vignat, *On Binomial Identities in Arbitrary Bases*, J. Integer Seq. 19 (2016), Article 16.5.5, Theorem 7 (definition of the $b$-ary multinomial coefficient), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.html>.

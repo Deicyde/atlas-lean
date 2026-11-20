@@ -33,4 +33,4 @@
 - [The Poisson-random-field log-likelihood](log-pi-poisson-measure-real-singleton.md)
 - [Derivative of the Poisson log-likelihood](has-fderiv-at-poisson-log-lik.md)
 - [Score equations](score-eq-zero-of-is-max-on.md)
-- [Profile maximum in `θ`](poisson-log-lik-le-profile.md)
+- [Profile maximum in the mutation parameter](poisson-log-lik-le-profile.md)

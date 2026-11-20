@@ -7,4 +7,4 @@ $\mathbb{N} \rightharpoonup \mathbb{N}$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.3.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

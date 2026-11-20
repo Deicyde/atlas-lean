@@ -5,4 +5,4 @@ proposition that the continuous Erdős minimum-overlap constant $C_{1b}$ is at m
 
 ## Sources
 
-- Yuksekgonul et al. 2026 (TTT-Discover); Optimization Problems, Constant 1b.
+- Mert Yuksekgonul et al., *Learning to Discover at Test Time*, arXiv:2601.16175 (2026) (TTT-Discover); *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html.

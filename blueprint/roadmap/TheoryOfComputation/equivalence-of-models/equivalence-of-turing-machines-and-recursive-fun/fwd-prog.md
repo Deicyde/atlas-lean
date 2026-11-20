@@ -1,12 +1,12 @@
 # The program of the wrapped machine
 
 Let $c$ be a partial recursive code and let
-$\mathrm{tr}$ be Mathlib's multi-stack machine that evaluates such codes, with stacks
+$\mathrm{tr}$ be the standard four-stack machine that evaluates such codes, with stacks
 $\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}$ and alphabet
 $\Gamma' = \{\mathtt{cons}_l, \mathtt{cons}, \mathtt{bit0}, \mathtt{bit1}\}$. The program of the
 wrapped machine for $c$ assigns a statement to each of its labels, namely the five adapter labels
 $\mathrm{pre}_0, \mathrm{pre}_1, \mathrm{pre}_2, \mathrm{post}_1, \mathrm{post}_2$ and the labels
-in Mathlib's finite support $\mathrm{supp}(c)$ of $\mathrm{tr}$ for $c$ with the halting
+in the finite support $\mathrm{supp}(c)$ of $\mathrm{tr}$ for $c$ with the halting
 continuation. The internal state $v$ is a symbol of $\Gamma'$ or none, the input stack is the bit
 stack $\mathrm{false}$ and the output stack is the bit stack $\mathrm{true}$.
 

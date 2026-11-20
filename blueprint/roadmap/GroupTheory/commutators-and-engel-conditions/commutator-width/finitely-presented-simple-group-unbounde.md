@@ -1,4 +1,4 @@
-# Kourovka Problem 14.13(b) (Bardakov)
+# Finitely presented simple groups of unbounded commutator length (Kourovka 14.13(b))
 
 The statement that there is a finitely presented
 simple group $G$ such that for every natural number $n$ some element of the derived subgroup

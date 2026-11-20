@@ -1,4 +1,7 @@
 # Binomial upper tail probability
 
-The binomial upper tail `ℙ_p(X ≥ m) = ∑_{m ≤ i ≤ n} C(n, i) p^i (1 - p)^(n - i)`, Carter's
-`P(m)` with `p = ε / 3`.
+For a natural number $n$, a real $p$ and a natural number $m$, the upper tail is
+
+$$P_p(m) = \sum_{i = m}^{n} B(i \mid n, p),$$
+
+where $B$ is the [binomial probability](binom-pmf.md) (an empty sum when $m > n$). With $p = \varepsilon/3$ it is Carter's $P(m)$.

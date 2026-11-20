@@ -8,4 +8,4 @@ $f(x) = h(x)$ for almost every $x \in \mathbb{R}$.
 
 ## Sources
 
-- erdosproblems.com/1126 (record FC-ErdosProblem1126).
+- T. F. Bloom, Erdős Problems, Problem #1126, https://www.erdosproblems.com/1126.

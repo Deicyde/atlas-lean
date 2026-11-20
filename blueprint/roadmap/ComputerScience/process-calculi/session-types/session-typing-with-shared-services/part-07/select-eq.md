@@ -1,4 +1,5 @@
 # Choice selection is the identity on runtime-typed processes
 
-Canonical choice selection is identity on an actually runtime-typed root:
-there is no sum rule, although replication is admitted. No finiteLinear erasure.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ an ownership context and $p$,
+$q$ processes with $\Gamma; \Delta \vdash_n p$. If $q$ is obtained from $p$ by guarded-choice
+resolution (repeatedly replacing a top-level choice by one of its branches), then $q = p$.

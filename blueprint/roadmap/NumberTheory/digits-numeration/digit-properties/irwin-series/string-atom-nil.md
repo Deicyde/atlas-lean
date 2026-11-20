@@ -9,4 +9,4 @@ places at $0$ once all strings with the same value are combined.
 
 ## Sources
 
-- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k` and Remark `rem:zero`.
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Definition 1 and Remark 5.

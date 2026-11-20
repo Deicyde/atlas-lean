@@ -1,3 +1,3 @@
 # Base frequencies are invariant for the GTR generator
 
-The base frequencies are invariant for the GTR generator: `π Q = 0`.
+If $s$ is symmetric, then for all real $\pi$ the [GTR matrix](gtr-rate.md) satisfies $\pi Q = 0$, that is, $\sum_i \pi_i Q_{ij} = 0$ for every $j$.

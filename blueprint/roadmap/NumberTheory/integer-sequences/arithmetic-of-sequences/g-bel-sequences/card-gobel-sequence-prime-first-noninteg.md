@@ -7,4 +7,4 @@ and $g_{k,2}(n)$ is an integer for every $1 \le n < q$.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.

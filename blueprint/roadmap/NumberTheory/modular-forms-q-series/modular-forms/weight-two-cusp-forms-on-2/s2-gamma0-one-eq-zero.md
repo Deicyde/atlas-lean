@@ -1,4 +1,6 @@
 # No nonzero weight-two cusp forms of level one
 
-Every weight-two cusp form on `Γ₀(1)` is zero: `Γ₀(1)` is the full
-modular group, and the dimension formula gives rank zero below weight 12.
+Every cusp form of weight $2$ for $\Gamma_0(1) = \mathrm{SL}_2(\mathbb{Z})$ is zero.
+
+Proof: By the dimension formula for level one, there are no nonzero cusp forms of level one and
+weight less than $12$.

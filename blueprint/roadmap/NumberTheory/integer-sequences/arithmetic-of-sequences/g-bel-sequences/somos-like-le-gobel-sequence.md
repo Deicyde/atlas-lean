@@ -10,4 +10,4 @@ for $n \ge 1$; for odd $k$, $x \mapsto x^k$ is monotone), so that hypothesis is 
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 9 (`jis-2024-24.8.1-lem-9`).
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 9 (`jis-2024-24.8.1-lem-9`).

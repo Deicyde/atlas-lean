@@ -7,4 +7,5 @@ $\mathbb{E}\,(|X| - \sqrt{n})^2$ over isotropic log-concave random vectors $X$ i
 
 ## Sources
 
-- Lee and Vempala, FOCS 2017, 998--1007; catalogue `constants/20a.md`.
+- Y. T. Lee and S. S. Vempala, *Eldan's stochastic localization and the KLS hyperplane conjecture: an improved lower
+  bound for expansion*, FOCS 2017, 998–1007; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

@@ -1,4 +1,4 @@
-# FIFO misses at most `k` times per phase
+# FIFO misses at most $k$ times per phase
 
 Let $S$ be a list of at most $k$ distinct pages
 (the pages already in the current phase), let $c$ be any list of pages (a FIFO cache, oldest page

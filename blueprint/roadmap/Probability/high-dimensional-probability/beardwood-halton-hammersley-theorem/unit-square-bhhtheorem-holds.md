@@ -10,4 +10,6 @@ surely satisfies $L_n / \sqrt{n} \to \beta$.
 
 ## Sources
 
-- Beardwood, Halton and Hammersley (1959), quoted in Steinerberger (2015).
+- J. Beardwood, J. H. Halton and J. M. Hammersley, *The shortest path through many points*, Proc. Cambridge Philos.
+  Soc. 55 (1959), 299–327.
+- S. Steinerberger, *New bounds for the traveling salesman constant*, Adv. in Appl. Probab. 47 (2015), 27–36.

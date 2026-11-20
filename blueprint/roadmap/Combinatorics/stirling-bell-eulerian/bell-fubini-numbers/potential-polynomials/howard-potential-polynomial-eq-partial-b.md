@@ -19,4 +19,4 @@ is the sequence with $\tilde a_j = a_j$ for $j \ge r$ and $\tilde a_j = 0$ for $
 
 ## Sources
 
-- G. Nemes, Journal of Integer Sequences 13 (2010), https://cs.uwaterloo.ca/journals/JIS/VOL13/Nemes/nemes2.tex, lines 120-133 (generic) and 166-173 (specialization).
+- Gergő Nemes, *On the Coefficients of the Asymptotic Expansion of n!*, Journal of Integer Sequences 13 (2010), Article 10.6.6, Theorem 3 (Howard's theorem), equation (9), and its case $r = 2$, equation (16), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Nemes/nemes2.pdf>.

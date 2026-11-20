@@ -1,11 +1,12 @@
 # Nonnegative harmonic functions on the upper half-plane integrable along the imaginary axis vanish
 
-**Nonnegative harmonic functions on the upper half-plane integrable along the imaginary axis
-vanish.** Let $\mathbb{C}_{+}=\{z\in\mathbb{C}:\Im z>0\}$ be the upper half-plane. Suppose
+Let $\mathbb{C}_{+}=\{z\in\mathbb{C}:\Im z>0\}$ be the upper half-plane. Suppose
 $f:\mathbb{C}_{+}\to\mathbb{R}$ is harmonic and non-negative, and satisfies
-\[
+
+$$
 \int_{0}^{\infty}\lvert f(iy)\rvert\,dy\lt \infty.
-\]
+$$
+
 Then $f(z)=0$ for every $z\in\mathbb{C}_{+}$.
 
 ## Sources

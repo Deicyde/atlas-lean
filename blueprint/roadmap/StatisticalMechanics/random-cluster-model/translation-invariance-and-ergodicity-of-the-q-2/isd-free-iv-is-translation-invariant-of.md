@@ -1,5 +1,3 @@
 # Free translation invariance from decay on a dense set
 
-The free infinite-volume FK measure is translation invariant if, for every shift and every
-convergent box subsequence, `D_n` decays on a dense set. See also
-`bdp_freeIV_isTranslationInvariant` (unconditional for `q = 2`).
+Let $d \in \mathbb{N}$, $0 < p < 1$ and $q > 0$. Suppose that for every $g \in \mathbb{Z}^d$ and for every strictly increasing $\varphi : \mathbb{N} \to \mathbb{N}$ along which the free box measures $\phi^0_{\varphi(n)}$ converge weakly to $\phi^0_{p,q}$, [free dense decay](isd-free-dense-decay.md) holds for $(g, \varphi)$. Then $\phi^0_{p,q}$ is translation invariant: every shift $\tau_g$, $g \in \mathbb{Z}^d$, preserves it, where $\mathbb{Z}^d$ acts on configurations by $(\tau_g\omega)(e) = \omega(e - g)$, where $e - g$ is the pair $e$ translated by $-g$, $\phi^0_{p,q}$ is the [free infinite-volume random-cluster measure](../infinite-volume-random-cluster-measures/finite-and-infinite-volume-fk-measures-on-d/free-infinite-volume.md) on $\mathbb{Z}^d$ (a chosen subsequential weak limit of the free box measures), and $\phi^0_k$ is the [free box measure](../infinite-volume-random-cluster-measures/finite-and-infinite-volume-fk-measures-on-d/free-finite-measure.md) on $\Lambda_k = \{-k, \dots, k\}^d$ at $(p, q)$.

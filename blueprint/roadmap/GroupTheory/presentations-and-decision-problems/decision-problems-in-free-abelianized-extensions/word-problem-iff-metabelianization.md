@@ -1,4 +1,4 @@
-# Kourovka Problem 12.98(a) (V. E. Shpil'rain)
+# Word problem and the free abelianized extension (Kourovka 12.98(a))
 
 The statement that for every natural
 number $n$ and every recursively enumerable normal subgroup $R$ of the free group $F$ on $n$

@@ -1,7 +1,7 @@
 # Conditional estimate as a fit to the first-block residual
 
-Unconditionally, the conditional formula equals the nonsingular-inverse formula applied to
-the algebraic residual `y - X₁ ((X₁ᵀX₁)⁻¹ X₁ᵀ y)`. If both Gram determinants are units, these
-are the successive least-squares fits on blocks 1 and 2. With a singular Gram matrix they need
-not minimize residual error. This is in general not the block-2 part of the joint formula on
-both blocks (the formulas agree when `X₂ᵀX₁ = 0`).
+For all real $n \times \iota_1$ and $n \times \iota_2$ matrices $X_1, X_2$ ($\iota_1, \iota_2$ finite sets) and $y \in \mathbb{R}^n$, the [conditional estimate](conditional-estimate.md) satisfies
+
+$$\hat b_{2 \mid 1} = (X_2^\top X_2)^{-1} X_2^\top \bigl(y - X_1 (X_1^\top X_1)^{-1} X_1^\top y\bigr),$$
+
+with the convention that the inverse of a singular matrix is $0$. When both Gram matrices are invertible, these are the successive least-squares fits on blocks 1 and 2. In general this is not the block-2 part of the joint estimate on both blocks; the two agree when both Gram matrices are invertible and $X_2^\top X_1 = 0$.

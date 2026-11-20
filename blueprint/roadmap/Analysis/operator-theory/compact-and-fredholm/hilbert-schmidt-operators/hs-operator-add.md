@@ -1,3 +1,3 @@
 # Additivity of the Hilbert–Schmidt operator
 
-The Hilbert–Schmidt operator of a sum is the sum of the operators.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. If $a$ and $b$ are [Hilbert–Schmidt matrices](is-hilbert-schmidt.md), their [Hilbert–Schmidt operators](hs-operator.md) satisfy $T_{a+b} = T_a + T_b$.

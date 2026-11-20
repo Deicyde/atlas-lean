@@ -7,4 +7,4 @@ $U D^k L$ has semilength at least $(k+2)n - 1$.
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 1 (`jis-2024-24.2.4-prop-1`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 1 (`jis-2024-24.2.4-prop-1`).

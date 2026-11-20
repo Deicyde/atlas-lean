@@ -1,22 +1,22 @@
 # Birational maps and the Cremona group
 
-## Scheme
+## Birational maps
 
 - [Birational map](birational-map.md)
 
-## Birational Map
+## Operations on birational maps
 
 - [Identity birational map](refl.md)
 - [Inverse birational map](symm.md)
 - [Composition of birational maps](trans.md)
 - [Birational maps over a base](is-over.md)
 
-## Scheme
+## Birational automorphisms
 
 - [Birational automorphisms over a base](birational-aut-over.md)
 - [Birational map of a partial isomorphism](to-birational-map.md)
 
-## Motivic Invariants
+## Cremona groups and pseudo-regularizable elements
 
 - [Integral variety over a field](variety.md)
 - [Pseudo-isomorphism](is-pseudo-iso.md)

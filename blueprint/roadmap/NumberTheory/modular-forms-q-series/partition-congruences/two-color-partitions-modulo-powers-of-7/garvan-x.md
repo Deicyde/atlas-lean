@@ -10,7 +10,8 @@ if $k$ is odd and
 
 $$x_{k+1,i} = \sum_{j=1}^{7^k} x_{k,j}\, m_{4j+1,j+i}$$
 
-if $k$ is even. Values at index $0$ are conventions outside the source's range.
+if $k$ is even. The same formulas also give values at $i = 0$, and
+$x_{0,i} = 0$ for every $i$; the source uses only $k, i \ge 1$.
 
 The source sums over all $j \ge 1$; the cut at $7^k$ loses nothing, since $m_{i,j} = 0$ for
 $j > 2i$, so the largest index of a nonzero entry of $x_{k+1}$ is at most $7$ times that of
@@ -18,4 +19,4 @@ $x_k$ plus $2$, which stays below $7^{k+1}$.
 
 ## Sources
 
-- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
+- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of $7^k$*, INTEGERS 26 (2026), Article A94, Section 1.

@@ -20,3 +20,15 @@
 - [Number of positions with two successors](card-filter-add-two-lt.md)
 - [Local shape of a position in a permutation](ite-is-double-ascent-at-add-ite-is-doubl.md)
 - [Sum of the four local statistics of a permutation](perm-double-ascents-add-perm-double-desc.md)
+
+## Inversions
+
+- [Inversions of a permutation](perm-inversions.md)
+- [Number of inversions of a permutation](perm-inversion-count.md)
+- [Each pair of positions is inverted by exactly half of the permutations](two-mul-card-filter-lt.md)
+- [Number of pairs of positions](two-mul-card-filter-fst-lt-snd.md)
+- [Total number of inversions over all permutations](four-mul-sum-perm-inversion-count.md)
+- [Expected number of inversions of a random permutation](expect-enn-perm-inversion-count.md)
+- [Expected number of inversions, as a real number](expect-enn-perm-inversion-count-to-real.md)
+- [A permutation and its inverse have the same number of inversions](perm-inversion-count-inv.md)
+- [Generating function of inversions](sum-x-pow-perm-inversion-count.md)

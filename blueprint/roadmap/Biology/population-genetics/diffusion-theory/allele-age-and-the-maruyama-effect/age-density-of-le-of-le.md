@@ -1,4 +1,3 @@
 # Closed form below the current frequency
 
-For `0 < p ≤ z ≤ x < 1` the conditional sojourn
-density is the paper's `Ψ₁(z)`; it depends neither on `p` nor on `x`.
+For all real $\sigma$, $p$, $x$ and $z$ with $0 < p \le z \le x < 1$, the [conditional sojourn density](age-density.md) equals the [closed form below the current frequency](maruyama-below.md): $\Psi_\sigma(p, x; z) = \Psi_1^\sigma(z)$, which depends neither on $p$ nor on $x$.

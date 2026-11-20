@@ -11,8 +11,6 @@ $\sum \prod_{i=1}^{r} (-2)^{c_i - 1} (2 c_i + 3) = J_{n+3}$,
 $\sum \prod_{i=1}^{r} c_i 2^{c_i - 1} = J_{2n}$ and
 $\sum \prod_{i=1}^{r} 4 c_i = 2 P_{2n}$.
 
-Identity (14) of the source is not included.
-
 ## Sources
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 3, equations (13) and (15)-(18).

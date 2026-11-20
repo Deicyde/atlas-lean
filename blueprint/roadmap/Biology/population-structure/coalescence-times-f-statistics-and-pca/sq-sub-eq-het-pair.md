@@ -1,3 +1,7 @@
 # Squared frequency difference via pairwise heterozygosity
 
-`(a - b) ^ 2 = hetPair a b - (hetPair a a + hetPair b b) / 2`.
+For all real numbers $a, b$,
+
+$$(a - b)^2 = h(a, b) - \frac{h(a, a) + h(b, b)}{2},$$
+
+where $h$ is the [pairwise difference probability](het-pair.md).

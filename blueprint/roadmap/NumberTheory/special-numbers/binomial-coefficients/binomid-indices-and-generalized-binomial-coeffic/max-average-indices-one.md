@@ -6,4 +6,4 @@ $1 \le i \le m$ at which $A_i$ is maximal among $A_1, \dots, A_m$ is $\{1\}$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3.
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3.

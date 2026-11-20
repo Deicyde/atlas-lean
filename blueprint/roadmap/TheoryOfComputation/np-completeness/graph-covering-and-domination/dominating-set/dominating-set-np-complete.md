@@ -5,4 +5,4 @@ every decision problem in NP reduces to DOMINATING SET by a polynomial-time many
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), DOMINATING SET.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), DOMINATING SET.

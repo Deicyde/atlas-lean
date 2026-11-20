@@ -13,4 +13,4 @@ $$A_O(x, y) \left(1 - x^2 + x^6 - x^4 (1 + y^2)\right) = (1 - x^4)(1 - x^2 + x y
 
 ## Sources
 
-- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 7 (`jis-2025-25.3.6-cor-7`).
+- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 7.

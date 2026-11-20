@@ -8,3 +8,7 @@ type $T$ under $\Gamma$ and $S'$ and $\mu'$ is well typed under $\Gamma$ and $S'
 
 This is TAPL Theorem 13.5.3, with the extension of store typings taken as the prefix order on
 lists.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Theorem 13.5.3.

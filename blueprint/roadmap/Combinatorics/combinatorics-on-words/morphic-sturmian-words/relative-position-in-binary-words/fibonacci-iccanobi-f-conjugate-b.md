@@ -13,4 +13,4 @@ and $ba\,\varrho_F^{2n}(b) = (\varrho_F')^{2n}(b)\,ab$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 52 (`jis-2025-25.1.5-prop-52`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 52 (`jis-2025-25.1.5-prop-52`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

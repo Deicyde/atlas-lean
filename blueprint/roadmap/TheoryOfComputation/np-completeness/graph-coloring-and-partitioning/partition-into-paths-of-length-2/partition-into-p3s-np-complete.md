@@ -6,4 +6,4 @@ reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PARTITION INTO PATHS; M. E. Dyer and A. M. Frieze, "On the complexity of partitioning graphs into connected subgraphs", Discrete Applied Mathematics 10 (1985), 139-153.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), PARTITION INTO PATHS; Martin E. Dyer and Alan M. Frieze, "On the complexity of partitioning graphs into connected subgraphs", Discrete Applied Mathematics 10 (1985), 139-153.

@@ -11,4 +11,4 @@ $$\Big(\sum_{n \ge 0} c(n) x^n\Big) (1 - x - 3x^2 + x^3 + 2x^4 - 4x^5 - x^6 + x^
 
 ## Sources
 
-- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 18 (`jis-2025-25.3.6-cor-18`).
+- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 18.

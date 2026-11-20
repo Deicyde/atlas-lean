@@ -12,18 +12,18 @@
 - [Uniformly recurrent sequences are recurrent](is-recurrent-seq-2.md)
 - [Constant sequences are linearly recurrent](is-linearly-recurrent-seq-const.md)
 
-## Section 2: the Rowland–Zeilberger congruence and the degree bound
+## The Rowland–Zeilberger congruence and the degree bound (Section 2)
 
 - [Rowland–Zeilberger congruence](constant-term-pow-mul-mod-eq-laurent-car.md)
 - [Degree bound for the Rowland–Zeilberger states](laurent-deg-foldl-laurent-cartier-le.md)
 
-## Section 3: the linear representation mod `p`
+## The linear representation modulo $p$ (Section 3)
 
 - [Cartier operator applied to a power times a monomial](laurent-cartier-pow-mul-single-eq-sum.md)
 - [Kohen's linear representation step modulo $p$](coeff-pow-mod-eq-sum-gamma-mul-v.md)
 - [Powers of $\gamma(0)$ modulo $p$ stabilize at a matrix unit](exists-gamma-zero-pow-eq-single.md)
 
-## Section 4: classification mod `p`
+## Recurrence and zero density of constant terms modulo $p$ (Section 4)
 
 - [Divisibility of constant terms of powers is decided on a bounded prefix](exists-bound-constant-term-pow-dvd.md)
 - [Density-one zeros of constant terms modulo $p$](constant-term-zero-density-mod-prime.md)
@@ -32,7 +32,7 @@
 - [Linear recurrence of combinations of constant terms modulo $p$](is-linearly-recurrent-seq-combination-mo.md)
 - [Recurrence of constant-term sequences modulo a prime](is-recurrent-seq-constant-term-mod-prime.md)
 
-## Section 5: prime powers
+## Constant terms modulo prime powers $p^a$ (Section 5)
 
 - [Divisibility of constant terms of powers of $P$ and $\tilde P$](exists-constant-term-pow-dvd-iff-tilde.md)
 - [Passing from $P$ to $\tilde P$ modulo $p^a$](constant-term-pow-mul-mod-eq-tilde.md)

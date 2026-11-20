@@ -9,4 +9,7 @@ group.
 
 ## Sources
 
-- D. Cristofaro-Gardiner, V. Humilière, and S. Seyfaddini, `Proof of the simplicity conjecture`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_simplicity_conjecture` of the lean-eval benchmark.
+- Daniel Cristofaro-Gardiner, Vincent Humilière and Sobhan Seyfaddini, *Proof of the simplicity conjecture*, Ann. of
+  Math. (2) 199 (2024), no. 1, 181–257, DOI 10.4007/annals.2024.199.1.3, Theorem 1.2; arXiv:2001.01792.
+- Annals Challenge (Imperial College London), <https://github.com/ImperialCollegeLondon/AnnalsChallenge>; problem
+  `annals_simplicity_conjecture` of the lean-eval benchmark.

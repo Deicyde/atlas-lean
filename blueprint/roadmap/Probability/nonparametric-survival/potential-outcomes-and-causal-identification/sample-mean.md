@@ -1,4 +1,7 @@
 # Sample mean over a set of units
 
-The mean of `y` over a set of units `S`, `(1/|S|) ∑_{i ∈ S} yᵢ` (the junk value `0` for
-`S = ∅`).
+For values $y_i \in \mathbb{R}$ indexed by units $i$ and a finite set $S$ of units, the mean of $y$ over $S$ is
+
+$$\bar y_S = \frac{1}{|S|} \sum_{i \in S} y_i,$$
+
+with $\bar y_\emptyset = 0$ by convention.

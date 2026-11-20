@@ -1,3 +1,5 @@
 # V-structure in a directed graph
 
-`u → w ← z` is a v-structure: two non-adjacent distinct parents of a common child.
+Let $\mathrm{Pa}$ be a structure on a set $V$, assigning to each vertex a finite set of parents.
+Vertices $u, w, z$ form a v-structure $u \to w \leftarrow z$ if $u \ne z$, $u$ and $z$ are both
+parents of $w$, and $u$ and $z$ are not [adjacent](adjacent.md).

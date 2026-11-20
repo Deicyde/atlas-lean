@@ -8,4 +8,4 @@ $1, 1, 1, 2, 1, 2, 2, 1, 3$.
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (the listed values of `Tot_FIB`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (the listed values of $\mathrm{Tot}_{\mathrm{FIB}}$).

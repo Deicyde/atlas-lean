@@ -8,4 +8,4 @@ no perfect cover of $G$ contains both $a$ and $b$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 10 (`jis-2025-25.7.8-thm-10`). `a, b ≠ 0` added and `a ≠ b` added for (3): for `a = 0, b ≠ 0` conditions (2) and (3) hold vacuously while (1) fails, and for `a = b ≠ 0` condition (3) fails (Theorem 1 puts `a` in a perfect cover) while (1) holds.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 10 (`jis-2025-25.7.8-thm-10`). $a, b \ne 0$ added and $a \ne b$ added for (3): for $a = 0$, $b \ne 0$ conditions (2) and (3) hold vacuously while (1) fails, and for $a = b \ne 0$ condition (3) fails (Theorem 1 puts $a$ in a perfect cover) while (1) holds.

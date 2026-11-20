@@ -1,3 +1,4 @@
-# Boundary tag on the first cell of a longer tape
+# Boundary tag on the first cell of a tape of length other than one
 
-The boundary tag at the head of the first cell of a longer tape.
+Let $h, n \in \mathbb{N}$ with $h = 0$ and $n \ne 1$. The boundary tag of head position $h$ on a tape of
+length $n$ is left. (This includes $n = 0$.)

@@ -9,4 +9,4 @@ $$A_{n+2} - A_1 A_{n+1} = (A_2 - A_1^2) \sum_{i=0}^{n} t^{n-i} A_i.$$
 
 ## Sources
 
-- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 1.
+- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Journal of Integer Sequences 29 (2026), Article 26.3.2, Theorem 1.

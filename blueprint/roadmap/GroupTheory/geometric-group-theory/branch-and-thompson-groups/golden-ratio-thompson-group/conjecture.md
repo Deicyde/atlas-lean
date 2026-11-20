@@ -10,4 +10,4 @@ Since $F_\tau$ is a group under composition, this says that $F_\tau$ embeds in $
 
 ## Sources
 
-- record OWR-16167-018.
+- J. Hyde and J. T. Moore, *Subgroups of $\mathrm{PL}_+ I$ which do not embed into Thompson's group $F$*, Groups Geom. Dyn. 17 (2023), 533–554, arXiv:2103.14911, Section 7 (the setting) and Corollary 1.4 (the answer), https://arxiv.org/abs/2103.14911.

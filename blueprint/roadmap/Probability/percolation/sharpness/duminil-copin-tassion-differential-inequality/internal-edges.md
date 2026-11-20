@@ -1,3 +1,3 @@
 # Edges of $\mathbb{Z}^d$ inside a set
 
-The edges of `ℤ^d` with both endpoints in `S`.
+For $S \subseteq \mathbb{Z}^d$, the set of unordered pairs $\{x, y\}$ with $x, y \in S$ (not necessarily nearest neighbours, and including the pairs $\{x, x\}$).

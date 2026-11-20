@@ -1,3 +1,3 @@
 # Number of pairs of lineages
 
-The number of pairs of `k` lineages is `k.choose 2`.
+For every natural number $k$, there are $\binom{k}{2}$ unordered pairs of lineages among $k$ lineages.

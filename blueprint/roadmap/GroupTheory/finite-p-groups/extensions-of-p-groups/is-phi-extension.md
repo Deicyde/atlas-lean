@@ -1,4 +1,4 @@
-# $\Phi$-extension (Berkovich)
+# $\Phi$-extension
 
 For a natural number $p$ and groups $H$ and $G$, $H$ is a
 $\Phi$-extension of $G$ when $H$ is a finite $p$-group with a normal subgroup $N$ of order $p$

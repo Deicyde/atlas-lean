@@ -13,4 +13,4 @@ The remaining $s - r$ faces of such a dissection are triangles.
 
 ## Sources
 
-- J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 6 (Definition 6.1).
+- João Pedro Carvalho, Pamela E. Harris, Gordon Rojas Kirby, Nico Tripeny, and Andrés R. Vindas-Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 5, Definition 4.

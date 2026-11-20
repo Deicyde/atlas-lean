@@ -1,5 +1,4 @@
 # Ranked subject reduction at the empty interface
 
-Empty-interface ranked typing is preserved by any canonical step at any
-ambient depth and through pre/post congruence. The empty context supplies
-balance and therefore the required compatibility.
+Let $n$ be a natural number and $p$, $q$ processes. If $\emptyset \vdash^{\mathrm{rk}}_n p$ (ranked
+typing in the empty ownership context) and $p \to q$, then $\emptyset \vdash^{\mathrm{rk}}_n q$.

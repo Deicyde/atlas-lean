@@ -1,3 +1,4 @@
 # Nonnegativity of the Poisson-binomial mass function
 
-The Poisson-binomial mass function is nonnegative for probabilities in `[0, 1]`.
+For $p \in [0, 1]^m$ and every $j \in \mathbb{N}$, the [Poisson-binomial mass
+function](poisson-binomial-pmf.md) satisfies $\pi_p(j) \ge 0$.

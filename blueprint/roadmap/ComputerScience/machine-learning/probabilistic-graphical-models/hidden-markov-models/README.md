@@ -46,3 +46,8 @@
 - [Posterior expected number of correctly decoded states](expected-correct.md)
 - [The expected number of correct states is a sum of posteriors](expected-correct-eq-sum-smoothed.md)
 - [Posterior decoding maximizes the expected number of correctly decoded states](expected-correct-le-posterior-path.md)
+
+## Related topics
+
+- [Baum–Welch algorithm](../baum-welch-algorithm/README.md): learning the parameters by EM.
+- [Kalman filter](../kalman-filter/README.md): the linear-Gaussian state-space analogue, where filtering is Gaussian conditioning.

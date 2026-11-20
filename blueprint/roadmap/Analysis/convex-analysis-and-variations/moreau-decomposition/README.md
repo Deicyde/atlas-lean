@@ -7,7 +7,7 @@
 - [Negative polar cone](polar-cone.md)
 - [Membership in the negative polar cone](mem-polar-cone.md)
 - [Cone projection residual lies in the negative polar](sub-convex-projection-mem-polar-cone.md)
-- [Negative polar agrees with the inner dual of the negated cone](polar-cone-eq-inner-dual-neg.md)
+- [Negative polar agrees with the dual of the negated cone](polar-cone-eq-inner-dual-neg.md)
 - [Moreau decomposition, polar form](convex-projection-polar-cone.md)
 - [Moreau decomposition](moreau-decomposition.md)
 - [Bipolar theorem for closed convex cones](polar-cone-polar-cone.md)

@@ -13,4 +13,4 @@ with $r = -(6g-1)/2$, evaluated at $X = -4u$.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 11 (`jis-2024-24.2.6-prop-11`).
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 11.

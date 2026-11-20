@@ -8,4 +8,4 @@ replacing each letter $D^{(k)}$ by $U D^{k-1} L D$, where $D^{k-1}$ means $k - 1
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.

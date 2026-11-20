@@ -30,7 +30,7 @@
 - [Typing inversion for variables](has-type-var-iff.md)
 - [No monotype is an arrow out of itself](ne-node-self-left.md)
 - [The abstraction $\lambda f.\, f\, f$ has no type](not-has-type-lam-self-app.md)
-- [`let` generalizes](has-type-let-id-app-id.md)
+- [Let-polymorphism types the self-application of the identity](has-type-let-id-app-id.md)
 - [The let rule under a type substitution](let-subst-ty.md)
 - [Bound-variable supremum of a type scheme](bound-sup.md)
 - [Algorithm W](w.md)

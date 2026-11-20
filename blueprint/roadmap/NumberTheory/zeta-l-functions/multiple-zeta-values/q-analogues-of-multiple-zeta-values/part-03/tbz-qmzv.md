@@ -8,7 +8,7 @@ entry is at least $1$ and $k_1 \ne 1$, this is
 $$\zeta_q^{TBZ}(k_1, \dots, k_r) = \sum_{m_1 > \cdots > m_r > 0} f(k_1, m_1) \cdots f(k_r, m_r),$$
 
 with $f(\bar 1, m) = q^m / (1 - q^m)$ and $f(k, m) = q^{(k-1)m} / (1 - q^m)^k$; the empty index
-gives $1$. For $k_1 = 1$, or when some entry is $0$, the value is a junk value.
+gives $1$. For $k_1 = 1$, or when some entry is $0$, the value has no intended meaning.
 
 ## Sources
 

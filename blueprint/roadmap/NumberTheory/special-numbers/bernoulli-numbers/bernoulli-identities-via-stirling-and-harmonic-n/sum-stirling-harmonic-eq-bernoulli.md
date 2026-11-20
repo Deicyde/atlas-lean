@@ -12,7 +12,7 @@ $$
 $$
 
 The paper also covers the diagonal case $n = j$, reading the right-hand side as a limit (both
-sides are then $H_j$); that case is not included here.
+sides are then $H_j$); the statement above excludes that case.
 
 ## Sources
 

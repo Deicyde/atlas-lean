@@ -10,4 +10,4 @@ the coefficient of $t^i$ in the power series $(1-t)^{d+1} \sum_{k \ge 0} f(k)\, 
 
 ## Sources
 
-- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of the `h*`-polynomial.
+- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of the $h^*$-polynomial.

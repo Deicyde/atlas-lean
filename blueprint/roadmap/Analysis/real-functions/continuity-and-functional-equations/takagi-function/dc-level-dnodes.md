@@ -9,4 +9,4 @@ divide-and-conquer tree on $n$ leaves.
 
 ## Sources
 
-- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 11 (`exp_D_closed`).
+- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 11.

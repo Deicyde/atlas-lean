@@ -1,4 +1,4 @@
-# Odd part of the Fibonacci walk count
+# Odd part of the Fibonacci self-convolution
 
 For a natural number $n$, this is the sum of
 $F_{j+1} F_{n-j+1}$ over the odd $j$ with $0 \le j \le n$, where $F_k$ are the Fibonacci numbers

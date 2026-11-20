@@ -10,4 +10,4 @@ $\chi$, the set of $h \in G$ with $|\chi(h)| = \chi(1)$.
 
 ## Sources
 
-- Bielefeld Theorem 5.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Theorem 5, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

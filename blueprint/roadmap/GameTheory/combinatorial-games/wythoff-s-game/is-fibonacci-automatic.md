@@ -9,4 +9,4 @@ $\mathrm{rep}_F(n)$ with $\delta$, most significant digit first.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Section 2 (Fibonacci-automatic sequences, DFAO fed with `rep_F(n)`).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Section 2 (Fibonacci-automatic sequences, DFAO fed with $\mathrm{rep}_F(n)$).

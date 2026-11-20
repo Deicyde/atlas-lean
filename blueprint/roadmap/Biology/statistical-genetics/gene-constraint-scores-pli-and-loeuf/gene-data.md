@@ -1,3 +1,3 @@
 # Loss-of-function count data for a gene
 
-A gene's data: observed LoF count `o` and positive expected count `E`.
+The loss-of-function data of a gene are a pair $(o, E)$ of a natural number $o$ (the observed number of loss-of-function variants) and a real number $E > 0$ (the expected number under neutrality).

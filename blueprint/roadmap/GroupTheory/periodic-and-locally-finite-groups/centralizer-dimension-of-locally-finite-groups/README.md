@@ -1,6 +1,5 @@
 # Centralizer dimension of locally finite groups
 
-- [Locally finite groups](is-locally-finite.md)
 - [Locally soluble subgroups](is-locally-soluble.md)
 - [Centralizer dimension at most $k$](cdim-le.md)
 - [Minimal normal subgroups](is-minimal-normal.md)

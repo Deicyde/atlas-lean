@@ -1,4 +1,4 @@
-# Linear endpoint typing of the existing π syntax
+# Linear endpoint typing of π-calculus processes
 
 - [Linear endpoint typing of π-calculus processes](has-type.md)
 - [Endpoint-typed processes are scoped at the ambient depth](closed-at.md)

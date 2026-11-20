@@ -8,4 +8,4 @@ the diagonal matrix with diagonal entries $d_i$.
 
 ## Sources
 
-- AlgebraNotes, Section: The Spectral Theorem, Subsection: The Spectral Theorem, Theorem (Spectral Theorem) (normal-matrix case; the Hermitian cases are Mathlib's `Matrix.IsHermitian.spectral_theorem`).
+- S. Axler, *Linear Algebra Done Right*, 4th edition, Springer, 2024 (open access, https://linear.axler.net/LADR4e.pdf), 7.31 (complex spectral theorem), applied to the operator $x \mapsto Mx$ on $\mathbb{C}^n$ with its standard inner product.

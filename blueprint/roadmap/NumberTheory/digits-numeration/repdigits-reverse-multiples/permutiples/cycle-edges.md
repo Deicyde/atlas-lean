@@ -8,4 +8,4 @@ $[(v_0, v_0)]$, and the empty list gives the empty edge list.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of `M`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of $M$).

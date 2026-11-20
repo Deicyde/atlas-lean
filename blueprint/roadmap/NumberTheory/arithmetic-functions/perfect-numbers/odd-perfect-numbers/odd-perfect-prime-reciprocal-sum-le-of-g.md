@@ -5,7 +5,7 @@ dividing $n$. If $\gcd(15, n) = 1$ then $T(n) \le 0.693148$; if $\gcd(15, n) = 3
 $T(n) \le 0.657304$; if $\gcd(15, n) = 5$ then $T(n) \le 0.678036$; and if $\gcd(15, n) = 15$
 then $T(n) \le 0.673770$.
 
-The source table also gives lower bounds, which are not stated here.
+The source table also gives lower bounds for $T(n)$.
 
 ## Sources
 

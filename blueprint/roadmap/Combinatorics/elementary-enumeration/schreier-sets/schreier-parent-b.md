@@ -6,7 +6,7 @@ $b^{(s)}_{p,n} = 1$ for $(p - 1)s < n \le ps + 1$, and
 $b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for $n \ge ps + 2$, where $p - 1$ is read
 as $0$ when $p = 0$.
 
-The paper indexes from $n = 1$; here $b^{(s)}_{p,0} = 0$.
+The paper indexes from $n = 1$; the definition above also gives $b^{(s)}_{p,0} = 0$.
 
 ## Sources
 

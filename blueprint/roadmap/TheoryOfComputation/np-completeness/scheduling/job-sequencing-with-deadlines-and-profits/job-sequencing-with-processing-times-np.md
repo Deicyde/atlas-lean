@@ -7,4 +7,4 @@ reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), SEQUENCING WITH DEADLINES AND PROFITS (arbitrary processing times); R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), SEQUENCING WITH DEADLINES AND PROFITS (arbitrary processing times); Richard M. Karp, "Reducibility among combinatorial problems" (1972).

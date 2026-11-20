@@ -1,4 +1,3 @@
 # Positivity persists under a nonnegative derivative
 
-A continuous function on `[0, T]` that is positive at `0` and has a nonnegative derivative at
-every interior point where it is positive stays positive on `[0, T]`.
+Let $T \in \mathbb{R}$ and let $f : \mathbb{R} \to \mathbb{R}$ be continuous on $[0, T]$ with $f(0) > 0$. Suppose that at every $s \in (0, T)$ with $f(s) > 0$, $f$ is differentiable at $s$ with $f'(s) \ge 0$. Then $f(s) > 0$ for every $s \in [0, T]$.

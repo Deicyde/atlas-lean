@@ -8,7 +8,8 @@ M_N(n) = \frac{2 n \log 2}{\pi} + 2 \sum_{r=1}^{N-1}
 \frac{(-1)^{r+1} (2^{2r-1} - 1)(2^{2r} - 1) \pi^{2r-1} B_{2r}^2}{r \, (2r)! \, n^{2r-1}},
 $$
 
-where $B_{2r}$ is the $2r$-th Bernoulli number. For $N \le 1$ the sum is empty.
+where $B_{2r}$ is the $2r$-th Bernoulli number. For $N \le 1$ the sum is empty. For $n = 0$ each
+quotient with denominator $0$ is read as $0$, so $M_N(0) = 0$.
 
 ## Sources
 

@@ -8,4 +8,4 @@ $b_{2,p}(pn + r) \equiv 0 \pmod 2$ for every natural number $n$.
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 2 (`jis-2025-25.6.1-thm-2`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 2 (`jis-2025-25.6.1-thm-2`).

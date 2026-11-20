@@ -1,6 +1,3 @@
 # Absolute summability of a synthesis series
 
-The norms of the terms of a synthesis series are summable when the
-coefficient sequence is in `ℓ²` and the synthesized family is square-summable:
-this is Cauchy–Schwarz for `ℓ²`, via `lp.tsum_mul_le_mul_norm` applied to the
-two real `ℓ²` sequences of norms.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be an inner product space over $\mathbb{K}$. If $(d_i)_{i \in \iota}$ is a family in $E$ with $\sum_i \|d_i\|^2 < \infty$ and $c \in \ell^2(\iota, \mathbb{K})$, then $\sum_i \|c_i d_i\| < \infty$; this is the Cauchy–Schwarz inequality in $\ell^2(\iota, \mathbb{R})$ applied to the sequences $(|c_i|)$ and $(\|d_i\|)$.

@@ -1,4 +1,3 @@
 # Duality-mapping characterization of Birkhoff–James orthogonality
 
-Birkhoff–James orthogonality to `y` is equivalent to the existence of a
-functional in the duality mapping at `x` that vanishes at `y`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a normed space over $\mathbb{K}$. For $x, y \in E$, $x$ is [Birkhoff–James orthogonal](birkhoff-james-orthogonal.md) to $y$ if and only if some functional in the [duality mapping](duality-mapping.md) $J(x)$ vanishes at $y$.

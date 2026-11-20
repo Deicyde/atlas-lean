@@ -1,3 +1,4 @@
 # Nil typing lifts to ranked typing
 
-Nil has no guard: its refinement is exactly the base completed/scoped context.
+Let $n$ be a natural number and $\Delta$ an ownership context. If $\Delta \vdash_n \mathbf{0}$ in
+endpoint typing, then $\Delta \vdash^{\mathrm{rk}}_n \mathbf{0}$ in ranked typing.

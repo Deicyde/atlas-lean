@@ -1,6 +1,6 @@
-# The KG-map machine
+# The CLIQUE/VERTEX-COVER reduction machine
 
-For a mode $m$ (flip or vc), the KG-map machine $M_m$ is the
+For a mode $m$ (flip or vc), the CLIQUE/VERTEX-COVER reduction machine $M_m$ is the
 multi-stack machine with stacks $X$, $A$, $B$, $D$, $Y$ of symbols and an output stack $O$ of
 bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit symbol.
 

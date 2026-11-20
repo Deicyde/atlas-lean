@@ -6,4 +6,4 @@ $\log_l n \le \|n\|_l \le l \log_l n - 1$, where $\log_l$ is the real logarithm 
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 1.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 1.

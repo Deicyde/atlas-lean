@@ -1,5 +1,6 @@
 # Dual advancement under restriction splits, keeping the private step
 
-Projection additionally retains an actual private old-head/continuation
-transition when the communication is hidden by ν. It does not reduce private
-advancement to an arbitrary capability with the same rank.
+Let $c$ be a capability and $\Delta$, $\Xi$ ownership contexts such that $\nu_c\Delta$ dual-advances
+to $\Xi$. Then either there is a capability $d$ with the rank of $c$ such that $\nu_c\emptyset$
+dual-advances to $\nu_d\emptyset$ and $\Xi = \nu_d\Delta$, or $\Xi = \nu_c\Delta'$ for some
+$\Delta'$ to which $\Delta$ dual-advances.

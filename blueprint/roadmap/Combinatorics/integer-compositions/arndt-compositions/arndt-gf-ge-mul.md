@@ -9,4 +9,4 @@ $$B(x, y; \ell) \left(1 - x - x^2 + x^3 - x^{2\ell+1} y^2\right) = (1 - x^2)(1 -
 
 ## Sources
 
-- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 6 (`jis-2025-25.3.6-cor-6`).
+- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 6.

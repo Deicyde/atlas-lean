@@ -7,8 +7,8 @@ $\kappa = k\tau + 1$. If $a$ is $A_1$-bounded, that is, $A_1 \le (k - 1)\tau + 2
 integer sequence $n \mapsto A_{n+1} - \kappa(n + 1)$, indexed from $n = 0$, is $\tau$-automatic:
 $\tau \ge 2$ and its $\tau$-kernel is finite.
 
-Automaticity is stated through Eilenberg's characterization by a finite kernel, in place of the
-paper's definition by a finite automaton with output.
+By Eilenberg's theorem, a finite $\tau$-kernel is equivalent to the paper's definition of
+$\tau$-automaticity by a finite automaton with output.
 
 ## Sources
 

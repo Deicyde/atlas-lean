@@ -6,4 +6,4 @@ strategy in exactly three guesses.
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Lemma 9 (`jis-2026-26.1.7-lem-9`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Lemma 9.

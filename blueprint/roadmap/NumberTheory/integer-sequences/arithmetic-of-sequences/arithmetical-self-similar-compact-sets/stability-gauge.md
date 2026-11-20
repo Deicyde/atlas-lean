@@ -13,4 +13,4 @@ $\rho$; this definition applies to every set $K$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 3.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 3.

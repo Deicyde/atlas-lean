@@ -12,4 +12,4 @@ Bordellès, Luca, Moree and Shparlinski prove the asymptotic with $\kappa = 2$.
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Corollary 4, quoting Bordellès, Luca, Moree, and Shparlinski (2018), Corollary 1.6 (`jis-2024-24.2.8-cor-4`).
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Corollary 4, quoting Olivier Bordellès, Florian Luca, Pieter Moree, and Igor E. Shparlinski, *Denominators of Bernoulli polynomials*, Mathematika 64 (2018), 519–541, Corollary 1.6 (`jis-2024-24.2.8-cor-4`).

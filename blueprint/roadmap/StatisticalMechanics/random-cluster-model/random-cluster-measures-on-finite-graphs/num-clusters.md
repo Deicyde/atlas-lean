@@ -1,4 +1,3 @@
 # Number of open clusters
 
-The number `k(ω)` of open clusters: connected components of the open subgraph, isolated
-vertices included.
+Let $G = (V, E)$ be a simple graph on a finite set $V$. For a configuration $\omega$, $k(\omega)$ is the number of connected components of the [open subgraph](open-sub.md) (the edges of $G$ open in $\omega$), isolated vertices counted as components.

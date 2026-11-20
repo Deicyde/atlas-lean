@@ -11,4 +11,4 @@ equal to any element $g$ of $P$ viewed in $\mathbb{F}_2[P]$; that is, $u$ is a n
 
 ## Sources
 
-- G. Gardam, `A counterexample to the unit conjecture for group rings`, Annals of Math, 194 (3) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_unit_conjecture` of the lean-eval benchmark.
+- G. Gardam, *A counterexample to the unit conjecture for group rings*, Ann. of Math. (2) 194 (2021), no. 3. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_unit_conjecture` of the lean-eval benchmark.

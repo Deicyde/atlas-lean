@@ -15,4 +15,4 @@ $\sum_{i=1}^{n} L^{a,b}_{n-i} F^{a,d}_i = (L^{a,b}_{n+1} - L^{a,d}_{n+1})/(b - d
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Corollary 14(a).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Corollary 14(a).

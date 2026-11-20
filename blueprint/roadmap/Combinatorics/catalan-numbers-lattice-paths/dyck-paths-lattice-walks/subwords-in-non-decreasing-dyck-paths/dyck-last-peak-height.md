@@ -7,4 +7,4 @@ $D$ steps in $l$ up to and including the $U$ of that factor, taken to be $0$ whe
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.

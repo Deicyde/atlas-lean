@@ -1,9 +1,17 @@
 # Finite-state Markov chain with a given transition matrix
 
-`IsFiniteMarkovChain X P ℱ μ` asserts that the sequence `X : ℕ → Ω → Fin (M+1)`
-is a Markov chain with transition matrix `P`, adapted to the filtration `ℱ`,
-under the measure `μ`. Concretely: each `X n` is `ℱ n`-measurable, and the conditional
-probability that `X (n+1) = j` given `ℱ n` equals `P.prob (X n) j`, matching the
-Markov property `P(X_{n+1} = j | X_n = i, ...) = P_{ij}`.
-Ported verbatim from `v1/Atlas/TheoryOfProbability/code/FiniteMarkovChain.lean`;
-`v1` writes the filtration as `DiscreteFiltration Ω m`, which is `Filtration ℕ m`.
+Let $\mu$ be a measure on a measurable space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be
+a filtration, and let $P$ be a [stochastic
+matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md) on the states
+$\{0, 1, \dots, M\}$. A sequence of maps $X_n : \Omega \to \{0, 1, \dots, M\}$ is a finite-state
+Markov chain with transition matrix $P$ with respect to $(\mathcal{F}_n)$ under $\mu$ if
+
+1. each $X_n$ is $\mathcal{F}_n$-measurable, and
+2. for every $n \in \mathbb{N}$ and every state $j$,
+
+    $$\mathbb{E}_\mu[\mathbf{1}_{\{X_{n+1} = j\}} \mid \mathcal{F}_n] = P(X_n, j)$$
+
+    $\mu$-almost everywhere.
+
+For a probability measure $\mu$, condition 2 is the Markov property
+$P(X_{n+1} = j \mid \mathcal{F}_n) = P_{X_n j}$.

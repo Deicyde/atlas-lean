@@ -1,5 +1,4 @@
-# Martingale property
+# Martingale property of the elementary Itô integral
 
-For a pre-Brownian motion `B` adapted to `F` whose increments
-`B t - B s` are independent of `F s`, the elementary Itô integral `t ↦ ∫_0^t H dB` is an
-`F`-martingale.
+Let $B$ be a pre-Brownian motion (the finite-dimensional laws of Brownian motion) adapted to a filtration $F$, with increments $B_t - B_s$ independent of $F_s$ for $s \le t$, and let $t \ge 0$. Let $H$ be an [elementary integrand](elementary-integrand.md). Then the [elementary Itô
+integral](ito-integral.md) $t \mapsto \int_0^t H\, dB$ is an $F$-martingale.

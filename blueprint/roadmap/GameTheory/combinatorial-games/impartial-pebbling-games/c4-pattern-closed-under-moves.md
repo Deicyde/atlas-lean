@@ -9,4 +9,4 @@ $b \in X_{aaab} \cup X_{abab} \cup X_{aabc}$.
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 15.
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 15.

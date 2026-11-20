@@ -11,7 +11,7 @@
 - [Preorder walk](preorder-walk.md)
 - [The APPROX-TSP-TOUR algorithm](approx-tsptour.md)
 - [Result of the preorder walk with an accumulator](preorder-walk-aux-ret.md)
-- [Running time of `APPROX-TSP-TOUR`](approx-tsptour-time.md)
+- [Running time of APPROX-TSP-TOUR](approx-tsptour-time.md)
 - [Changing the starting vertex of a walk](path-from-le-add.md)
 - [Shortcutting a closed walk through its base point](path-from-append-append-le.md)
 - [Rerouting the end of a walk](path-from-append-singleton-le.md)

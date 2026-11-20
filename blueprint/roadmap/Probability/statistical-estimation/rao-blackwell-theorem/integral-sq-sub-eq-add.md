@@ -1,6 +1,7 @@
 # Squared-error decomposition
 
-For `W` with a finite second moment and any target `c`,
-`E (W - c)² = E (μ[W | m] - c)² + E (W - μ[W | m])²`. This is the Pythagorean identity
-`MeasureTheory.integral_sq_sub_eq_integral_sq_sub_condExp_add` with the constant predictor
-`fun _ => c`, with the two summands commuted; it is not a second Pythagorean proof.
+Let $(\Omega, \mathcal{F}, \mu)$ be a probability space and $\mathcal{G} \subseteq \mathcal{F}$ a sub-σ-algebra. For $W \in L^2(\mu)$ and every $c \in \mathbb{R}$, with $\eta = \mathbb{E}_\mu[W \mid \mathcal{G}]$,
+
+$$\mathbb{E}_\mu (W - c)^2 = \mathbb{E}_\mu (\eta - c)^2 + \mathbb{E}_\mu (W - \eta)^2.$$
+
+This is the Pythagorean identity for conditional expectation with the constant predictor $c$.

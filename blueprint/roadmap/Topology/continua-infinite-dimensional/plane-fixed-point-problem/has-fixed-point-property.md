@@ -6,4 +6,4 @@ $x \in K$ with $f(x) = x$.
 
 ## Sources
 
-- Open Problem Garden, node ID 37295, http://www.openproblemgarden.org/op/nonseparating_planar_continuum.
+- Open Problem Garden, "Nonseparating planar continuum" (node 37295), http://www.openproblemgarden.org/op/nonseparating_planar_continuum.

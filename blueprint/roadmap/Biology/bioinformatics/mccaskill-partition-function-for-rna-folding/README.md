@@ -1,5 +1,7 @@
 # McCaskill partition function for RNA folding
 
+## Inside and outside recursions
+
 - [Complementary base pairing of two positions](can-pair.md)
 - [Inside recursion](inside.md)
 - [Outside recursion](outside.md)
@@ -11,17 +13,17 @@
 - [Inside value sums the weights of all secondary structures](inside-eq-sum-structures.md)
 - [Outside algorithm](outside-mul-eq-sum.md)
 
-## Min-plus: the Nussinov maximum
+## Min-plus weights: the Nussinov maximum
 
-- [Tropical semiring](inside-min-tropical.md)
+- [Inside value in the min-plus semiring is minus the Nussinov maximum](inside-min-tropical.md)
 
 ## Counting: Waterman, Motzkin, Stein–Waterman
 
 - [Waterman's recursion](waterman-number.md)
-- [Counting semiring](card-structures-eq-waterman-number.md)
+- [Number of secondary structures is Waterman's number](card-structures-eq-waterman-number.md)
 - [Waterman numbers with no hairpin constraint are Motzkin numbers](waterman-number-zero-eq-motzkin-number.md)
 
-## Sum-product: the McCaskill partition function
+## Sum-product weights: the McCaskill partition function
 
 - [Additive base-pair energy model](energy.md)
 - [McCaskill partition function of RNA secondary structures](partition-function.md)

@@ -10,4 +10,4 @@ This is the identity $(-q;-q)_\infty = f_2^3 / (f_1 f_4)$ with the denominator c
 
 ## Sources
 
-- Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 4, equation f1-q.
+- Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 4, Equation (9).

@@ -1,6 +1,7 @@
-# Count of no-successor reads (exact)
+# Count of no-successor reads
 
-For `L ≤ G`, summed over the
-reads, the number of start tuples in which read `j` has no successor is
-`N * G * (G - (L - 1)) ^ (N - 1)`. This counts no-successor reads, not island ends:
-a start tuple can have several no-successor reads in one island.
+For $L \le G$,
+
+$$\sum_{j=1}^{N} \#\{\text{start tuples in which read } j \text{ has no successor}\} = N\, G\, \bigl(G - \max(L - 1, 0)\bigr)^{\max(N - 1, 0)},$$
+
+where [no successor](no-successor.md) is as defined.

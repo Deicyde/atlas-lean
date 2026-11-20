@@ -11,4 +11,4 @@ has $Ux \in L^\gamma(\mu)$ and $\|Ux\|_\gamma \le M_\gamma \|x\|_\gamma$.
 
 ## Sources
 
-- S. Banach, Problem 87 of the Scottish Book; affirmative solution by L. Maligranda, commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015). The linear case follows from the Riesz interpolation theorem, and Banach showed the case `α = ∞`; Maligranda's solution covers the nonlinear case as stated here, with `α = ⊤` allowed.
+- S. Banach, Problem 87 of the Scottish Book; affirmative solution by L. Maligranda, commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015). The linear case follows from the Riesz interpolation theorem, and Banach showed the case $\alpha = \infty$; Maligranda's solution covers the nonlinear case as stated here, with $\alpha = \infty$ allowed.

@@ -11,4 +11,4 @@ The source states the recurrence without a range, but it fails at $n = 0$, $1$ a
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Proposition 11.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Proposition 11.

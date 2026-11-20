@@ -1,3 +1,3 @@
 # Quadrant below and left of a site
 
-The quadrant of sites `p` with `p 0 ≤ z 0 - 1` and `p 1 ≤ z 1 - 1`.
+For a site $z \in \mathbb{Z}^2$, the quadrant $\{p \in \mathbb{Z}^2 : p_0 \le z_0 - 1 \text{ and } p_1 \le z_1 - 1\}$ of sites strictly below and strictly to the left of $z$.

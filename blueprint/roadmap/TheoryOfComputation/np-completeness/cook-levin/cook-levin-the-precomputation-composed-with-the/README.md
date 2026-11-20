@@ -68,7 +68,7 @@
 - [The full machine as a finite multi-stack Turing machine](full-tm.md)
 - [Initial configuration of the full machine](init-list-full.md)
 
-## The step bound is a polynomial in `|s|`
+## The step bound is a polynomial in $|s|$
 
 - [Polynomial functions on the naturals](is-poly.md)
 - [The Horner step count is polynomial](horn-t-2.md)

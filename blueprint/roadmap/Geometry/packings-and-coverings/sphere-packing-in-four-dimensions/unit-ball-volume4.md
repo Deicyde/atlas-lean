@@ -6,4 +6,4 @@ the origin in four-dimensional Euclidean space $\mathbb{R}^4$.
 
 ## Sources
 
-- dLOV2014 Section 1.4, volume of a unit ball in `ℝ⁴`.
+- D. de Laat, F. M. de Oliveira Filho and F. Vallentin, *Upper bounds for packings of spheres of several radii*, Forum Math. Sigma 2 (2014), e23, arXiv:1206.2608, Section 1.4: the volume of a unit ball in $\mathbb{R}^4$.

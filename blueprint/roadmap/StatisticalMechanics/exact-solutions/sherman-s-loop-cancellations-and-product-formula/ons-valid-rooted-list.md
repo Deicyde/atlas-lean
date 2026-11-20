@@ -1,4 +1,3 @@
 # Rooted closed walk at a state avoiding another
 
-A rooted closed walk at `e` avoiding `r`: a list starting and ending at `e` that never contains
-`r`.
+For a set $E$, $e, r \in E$ and a list $w$, $w$ is a valid rooted list when its first and last entries are both $e$ (so $w$ is nonempty) and no entry equals $r$.

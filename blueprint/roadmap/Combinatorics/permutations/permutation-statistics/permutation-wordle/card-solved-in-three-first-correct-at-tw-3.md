@@ -10,4 +10,4 @@ that has a correct position, is $L_n - n - 1$, where $L_n$ is the $n$-th Lucas n
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 15 (`jis-2026-26.1.7-thm-15`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 15.

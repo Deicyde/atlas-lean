@@ -6,4 +6,4 @@ the $t$th block length.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks `B_t^{(m)}`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks $B_t^{(m)}$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

@@ -10,4 +10,4 @@ of schemes $X \cong Y$ whose underlying map is $h$.
 
 ## Sources
 
-- János Kollár, Max Lieblich, Martin Olsson, and Will Sawin. The Zariski topology, linear systems, and algebraic varieties. Problem `kollar_lieblich_olsson_sawin` of the lean-eval benchmark.
+- János Kollár, Max Lieblich, Martin Olsson and Will Sawin, *What Determines an Algebraic Variety?*, Annals of Mathematics Studies 216, Princeton University Press, 2023; preprint *Topological reconstruction theorems for varieties*, arXiv:2003.04847. Problem `kollar_lieblich_olsson_sawin` of the lean-eval benchmark, which cites the work as *The Zariski topology, linear systems, and algebraic varieties*.

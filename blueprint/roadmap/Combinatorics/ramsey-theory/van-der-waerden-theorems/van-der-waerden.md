@@ -10,6 +10,11 @@ of words over the alphabet $\{0, \dots, k - 1\}$, so that a combinatorial line b
 arithmetic progression. This follows the standard derivation in Graham, Rothschild, and
 Spencer, *Ramsey Theory*, Section 2.3, from van der Waerden (1927).
 
+## Background
+
+- [Gowers's bound for Szemerédi's theorem](../../additive-combinatorics/progressions-dense-sets/gowers-uniformity-norms/szemeredi-gowers-bound.md): its density bound gives, for two colours, $N = 2 \uparrow 2 \uparrow 2 \uparrow 2 \uparrow 2 \uparrow (k + 9)$ (Gowers, Corollary 18.7).
+
 ## Sources
 
+- Bartel L. van der Waerden, Beweis einer Baudetschen Vermutung, Nieuw Arch. Wisk. 15 (1927), 212–216.
 - https://en.wikipedia.org/wiki/Van_der_Waerden%27s_theorem

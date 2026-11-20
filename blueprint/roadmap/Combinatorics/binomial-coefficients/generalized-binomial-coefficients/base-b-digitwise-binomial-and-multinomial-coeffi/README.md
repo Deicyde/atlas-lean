@@ -1,4 +1,4 @@
-# Base-b digitwise binomial and multinomial coefficients
+# Base-$b$ digitwise binomial and multinomial coefficients
 
 - [The $b$-ary binomial coefficient](b-ary-binomial-coefficient.md)
 - [Digitwise product formula for the $b$-ary binomial coefficient](b-ary-binomial-coefficient-eq-prod-get-d.md)

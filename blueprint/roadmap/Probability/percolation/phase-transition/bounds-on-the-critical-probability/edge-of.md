@@ -1,3 +1,3 @@
-# Edges of a lattice path encoded by a step sequence
+# Edges of a lattice path given by a step sequence
 
-The `k`-th edge `{vertOf g k, vertOf g (k + 1)}` of the path encoded by `g`.
+Let $d \in \mathbb{N}$, let $g : \mathbb{N} \to \{1, \dots, d\} \times \{+1, -1\}$ be a step sequence with [vertices](vert-of.md) $v_0 = 0, v_1, v_2, \dots$, and let $k \in \mathbb{N}$. The $k$-th edge of the path given by $g$ is the unordered pair $\{v_k, v_{k+1}\}$.

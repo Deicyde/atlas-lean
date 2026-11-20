@@ -5,4 +5,4 @@ problem in coNP has a polynomial-time many-one reduction to it.
 
 ## Sources
 
-- S. A. Cook, "The complexity of theorem-proving procedures", Proceedings of the Third Annual ACM Symposium on Theory of Computing (STOC 1971), 151-158; L. A. Levin, "Universal search problems", Problems of Information Transmission 9 (1973), 265-266.
+- Stephen A. Cook, "The complexity of theorem-proving procedures", Proceedings of the Third Annual ACM Symposium on Theory of Computing (STOC 1971), 151-158; Leonid A. Levin, "Universal search problems", Problems of Information Transmission 9 (1973), 265-266.

@@ -9,11 +9,13 @@ $\kappa(P)$ over the monic irreducible $P$. Let $m \in F[T]$ be monic, let $h \g
 $d_{h-1}$ be the $(h-1)$-divisor function, and put $C_P = \binom{h + \kappa(P) - 1}{\kappa(P)}$.
 Then for every $\varepsilon > 0$, as $N \to \infty$,
 
-$$\sum_{\substack{r \text{ monic},\ \deg r^\kappa \le N \\ \gcd(r, m) = 1}}
+$$
+\sum_{\substack{r \text{ monic},\ \deg r^\kappa \le N \\ \gcd(r, m) = 1}}
 \frac{\mu(r)}{|r^\kappa|} \sum_{f \mid r^\kappa} d_{h-1}(f) \sum_{g \mid f} \frac{\mu(g)}{|g|} =
 \prod_{P \nmid m} \left(1 - \frac{1}{|P|^{\kappa(P)}}
 \left(C_P + \frac{1}{|P|} (1 - C_P)\right)\right) +
-O\left(q^{(1/\kappa_{\min} + \varepsilon - 1)(N + 1)}\right),$$
+O\left(q^{(1/\kappa_{\min} + \varepsilon - 1)(N + 1)}\right),
+$$
 
 where $f$ runs over the monic divisors of $r^\kappa$, $g$ over the monic divisors of $f$, and $P$
 over the monic irreducible polynomials not dividing $m$.

@@ -1,4 +1,6 @@
 # Communicating subjects in a compatible split have dual capabilities
 
-Disjoint complementary subjects in a compatible interface have exactly
-dual protocol capabilities, including their ranks and endpoint payload sorts.
+Let $\Delta$, $\Theta$ be ownership contexts with disjoint domains such that $\Delta \cup \Theta$ is
+compatible (whenever it maps an endpoint to $c$ and its opposite to $d$, then $d = \bar c$), $e$,
+$d$ endpoints with the same name and $c$, $t$ capabilities with $\Delta(e) = c$ and $\Theta(d) = t$.
+Then $t = \bar c$.

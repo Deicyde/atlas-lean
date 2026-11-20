@@ -9,8 +9,9 @@ $$\sum_{n=0}^{\infty} \left(\frac{1}{g_{2n+1}^{\lambda}} - \frac{1}{g_{2n+1+2k}^
 \sum_{r=1}^{k} \frac{1}{g_{2r-1}^{\lambda}}.$$
 
 The source quotes this lemma from Koshy as the sum over $n \ge (k + 1)/2$ of
-$1/g_{2n-k}^{\lambda} - 1/g_{2n+k}^{\lambda}$; here the summation index is shifted to start at $0$.
+$1/g_{2n-k}^{\lambda} - 1/g_{2n+k}^{\lambda}$; the sum above is that sum with the index shifted
+to start at $0$.
 
 ## Sources
 
-- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.2.
+- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), no. 2, 147–156, Lemma 2.2.

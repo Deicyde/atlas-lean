@@ -1,8 +1,7 @@
 # Cheng–Kinlaw–Nguyen reciprocal-sum bounds
 
-The sum of the
-reciprocals of all even pseudoprimes lies strictly between `0.000011`
-and `0.0059`.
+The series $\sum_N 1/N$ over all even pseudoprimes $N$ (even $N > 2$ with
+$2^N \equiv 2 \pmod N$) converges, and its sum lies strictly between $0.000011$ and $0.0059$.
 
 ## Sources
 

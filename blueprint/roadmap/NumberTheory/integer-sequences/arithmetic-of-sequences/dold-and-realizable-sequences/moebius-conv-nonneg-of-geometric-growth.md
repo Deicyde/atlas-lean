@@ -4,7 +4,9 @@ Let $b$ be a sequence of real numbers and $C \ge 1.221$ a real number such that 
 $b(n+1) \ge C\, b(n)$ for every $n \ge 1$. Then for every $n \ge 1$, with $\mu$ the Möbius
 function,
 
-$$\sum_{d \mid n} \mu(n/d)\, b(d) \ge 0,$$
+$$
+\sum_{d \mid n} \mu(n/d)\, b(d) \ge 0,
+$$
 
 that is, the Dirichlet convolution $\mu * b$ is nonnegative at $n$.
 

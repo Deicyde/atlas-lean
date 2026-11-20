@@ -6,4 +6,4 @@ the positive integer whose decimal expansion consists of $m$ copies of the digit
 
 ## Sources
 
-- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Section 1 (definition of repdigit).
+- Monalisa Mohapatra, Pritam Kumar Bhoi, and Gopal Krishna Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Section 1 (definition of repdigit).

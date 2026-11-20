@@ -7,4 +7,4 @@ $(0,0,1,2) \in X_{aabc}$, $(0,1,0,2) \in X_{abac}$, and $(0,0,0,0) \notin X_{aaa
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definitions of the sets `X`).
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definitions of the sets $X$).

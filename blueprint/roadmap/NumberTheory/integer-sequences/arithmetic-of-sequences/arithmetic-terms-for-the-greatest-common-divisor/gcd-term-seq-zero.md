@@ -5,4 +5,4 @@ sequence satisfies $s_{a,b}(0) = 1$.
 
 ## Sources
 
-- Prunescu and Shunia, *Arithmetic-Term Representations for the Greatest Common Divisor*, INTEGERS 26 (2026), Article A96, Section 2.
+- Mihai Prunescu and Joseph M. Shunia, *Arithmetic-Term Representations for the Greatest Common Divisor*, INTEGERS 26 (2026), Article A96, Definition 2.

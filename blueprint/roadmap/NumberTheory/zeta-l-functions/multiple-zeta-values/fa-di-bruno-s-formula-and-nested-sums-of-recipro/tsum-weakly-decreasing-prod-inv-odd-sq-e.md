@@ -10,7 +10,7 @@ and $E^*_{2k} = \sec^{(2k)}(0)$ is the $2k$-th derivative at $0$ of $\sec x = 1/
 zig number, OEIS A000364). For $k = 0$ the sum has the single empty term and both sides equal $1$.
 
 The source also claims that the sum equals $(\pi/4)\,\beta(2k+1)$, where $\beta$ is Dirichlet's beta
-function; this is false as printed and is not stated here: at $k = 0$ the sum is $1$ but
+function; this is false as printed and is not part of this statement: at $k = 0$ the sum is $1$ but
 $(\pi/4)\,\beta(1) = \pi^2/16$, and at $k = 1$ it is $\pi^2/8$ but $(\pi/4)\,\beta(3) = \pi^4/128$
 (the correct factor is $4/\pi$).
 

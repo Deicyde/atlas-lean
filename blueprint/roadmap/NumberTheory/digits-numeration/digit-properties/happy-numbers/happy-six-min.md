@@ -8,4 +8,4 @@ $m, m + 1, \dots, m + 5$ are all happy satisfies $m \ge N_0$.
 
 ## Sources
 
-- Robert Styer, "Smallest Examples of Strings of Consecutive Happy Numbers," Journal of Integer Sequences 13 (2010), Article 10.6.3, Proposition, lines 135–136, https://cs.uwaterloo.ca/journals/JIS/VOL13/Styer/styer5.tex
+- Robert Styer, *Smallest Examples of Strings of Consecutive Happy Numbers*, Journal of Integer Sequences 13 (2010), Article 10.6.3, Proposition 1, https://cs.uwaterloo.ca/journals/JIS/VOL13/Styer/styer5.tex

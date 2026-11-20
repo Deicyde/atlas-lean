@@ -1,3 +1,4 @@
 # Monic irreducible binary polynomials exist in every degree
 
-Over `ZMod 2`, there is a monic irreducible polynomial of every positive degree.
+For every integer $s \ge 1$ there is a monic irreducible polynomial of degree $s$ over
+$\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$.

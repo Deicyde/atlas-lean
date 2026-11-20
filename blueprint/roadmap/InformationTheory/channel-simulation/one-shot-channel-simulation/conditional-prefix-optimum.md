@@ -7,4 +7,4 @@ $H(Y \mid X, S) = 0$. The infimum of the empty set is $+\infty$.
 
 ## Sources
 
-- Li, arXiv:2501.13736v4, equation cs_h_c.
+- Li, arXiv:2501.13736v4, Section VI-A, equation (25); adapted to finite auxiliary alphabets with exact recovery of $Y$ from $(X, S)$.

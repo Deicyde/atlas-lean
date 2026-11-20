@@ -1,5 +1,11 @@
 # MR-Egger slope
 
-The MR-Egger slope (Bowden, Davey Smith & Burgess 2015): the slope of the weighted linear
-regression of `β̂_{Yj}` on `β̂_{Xj}` with an intercept, `Cov_v(β̂_X, β̂_Y) / Var_v(β̂_X)`. The
-paper's weights are `v_j = σ_j⁻²`.
+For a finite set $\iota$ of SNPs, weights $v$ and associations $\hat\beta_X, \hat\beta_Y$ in $\mathbb{R}^\iota$, the MR-Egger slope is
+
+$$b_E = \frac{\operatorname{Cov}_v(\hat\beta_X, \hat\beta_Y)}{\operatorname{Var}_v(\hat\beta_X)},$$
+
+with the [weighted covariance](weighted-cov.md) and the convention $x/0 = 0$. For nonnegative weights with positive sum and $\operatorname{Var}_v(\hat\beta_X) > 0$, it is the slope of the weighted least-squares regression of $\hat\beta_Y$ on $\hat\beta_X$ with an intercept. Bowden, Davey Smith and Burgess (2015) use the weights $v_j = \sigma_j^{-2}$.
+
+## Sources
+
+- J. Bowden, G. Davey Smith and S. Burgess, *Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression*, Int. J. Epidemiol. 44 (2015), 512–525.

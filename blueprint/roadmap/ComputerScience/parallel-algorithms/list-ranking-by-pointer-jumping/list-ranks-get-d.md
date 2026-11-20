@@ -1,4 +1,4 @@
-# Pointer jumping ranks every list in ⌈log₂ n⌉ rounds
+# Pointer jumping ranks every list in $\lceil \log_2 n \rceil$ rounds
 
 Let $\mathrm{succ}$ be a successor map
 on the nodes $0, \dots, n-1$ whose lists terminate. Then for every node $v$, entry $v$ of the table

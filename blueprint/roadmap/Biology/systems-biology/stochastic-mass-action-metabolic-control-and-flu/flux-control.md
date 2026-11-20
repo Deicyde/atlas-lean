@@ -1,5 +1,10 @@
 # Flux control coefficient
 
-The flux control coefficient `C^{J_j}_{e_i} = (e_i / J_j) ∂J_j/∂e_i`. It is meaningful
-when `J_j ≠ 0` and the steady-state flux is differentiable at `e`; otherwise Lean's `x / 0 = 0`
-and `fderiv` of a non-differentiable map, `0`, give junk values.
+Let $M$ (metabolites) and $R$ (reactions) be index sets with $R$ finite, let $f_i \colon \mathbb{R}^M \to \mathbb{R}$ be rate laws, $\sigma \colon \mathbb{R}^R \to \mathbb{R}^M$
+a steady-state map, $J(e) = v(e, \sigma(e))$ the [steady-state fluxes](steady-flux.md), $e \in \mathbb{R}^R$
+and $i, j \in R$. The flux control coefficient is
+
+$$C^{J_j}_{e_i} = \frac{e_i}{J_j(e)}\, \frac{\partial J_j}{\partial e_i}(e),$$
+
+with quotients by $0$ read as $0$ and the derivative of a map that is not differentiable at the point taken to be $0$. It is meaningful when $J_j(e) \ne 0$ and the steady-state flux is differentiable at
+$e$.

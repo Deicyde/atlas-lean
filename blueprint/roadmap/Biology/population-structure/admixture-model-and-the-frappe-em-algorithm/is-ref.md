@@ -1,4 +1,3 @@
 # Reference-allele indicator for a genotype copy
 
-Whether copy `c` of the genotype `g i j` (with `g i j` reference copies) carries the
-reference allele: copies `c < g i j` do.
+For a genotype matrix $g$ with entries $g_{ij} \in \{0, 1, 2\}$ (the number of reference alleles of individual $i$ at SNP $j$) and a copy index $c \in \{0, 1\}$, copy $c$ of $(i, j)$ carries the reference allele if and only if $c < g_{ij}$.

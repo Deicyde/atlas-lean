@@ -8,4 +8,4 @@ Lebesgue measure zero.
 
 ## Sources
 
-- A. Sard, Bull. Amer. Math. Soc. 48 (1942) 883–890 measure of critical values; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Guillemin-Pollack, Differential Topology; Lean states finite-dimensional manifold to `EuclideanSpace ℝ (Fin n)` specialization.
+- A. Sard, Bull. Amer. Math. Soc. 48 (1942) 883–890 measure of critical values; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Guillemin-Pollack, Differential Topology.

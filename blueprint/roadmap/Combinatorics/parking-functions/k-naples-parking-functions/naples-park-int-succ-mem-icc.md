@@ -10,4 +10,4 @@ Every $k \ge 0$ is admitted (the source's proof treats any $k \ge 0$).
 
 ## Sources
 
-- J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Lemma 1.
+- João Pedro Carvalho, Pamela E. Harris, Gordon Rojas Kirby, Nico Tripeny, and Andrés R. Vindas-Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Lemma 1.

@@ -7,4 +7,4 @@ $\psi$ by $f$, and for a finite list $\Gamma$ of such formulas write $f(\Gamma)$
 obtained by renaming each member of $\Gamma$. If $\Gamma$ is such a list, $\varphi$ is such a
 formula and $\Gamma \vdash \varphi$ in natural deduction, then $f(\Gamma) \vdash f(\varphi)$.
 
-On formulas this renaming coincides with Mathlib's relabeling of free variables.
+On formulas this renaming coincides with the relabeling of free variables.

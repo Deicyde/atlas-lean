@@ -3,8 +3,8 @@
 A finite word $u$ over the binary alphabet $\{0, 1\}$ is
 equilibrious when the letters $0$ and $1$ occur the same number of times in $u$.
 
-The letters $a$ and $b$ of the source alphabet $\Sigma = \{a, b\}$ are represented by $0$ and $1$.
+The source uses the alphabet $\Sigma = \{a, b\}$; we write its letters as $0$ and $1$.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.tex>, lines 543–575.
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of equilibrious words, before Lemma 21), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

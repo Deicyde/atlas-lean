@@ -8,4 +8,4 @@ This is the recursion (9) for $m = 2$.
 
 ## Sources
 
-- John M. Campbell, "A Binary Version of the Mahler-Popken Complexity Function", Proposition 1.
+- John M. Campbell, *A Binary Version of the Mahler-Popken Complexity Function*, INTEGERS 24 (2024), Article A94, Proposition 1.

@@ -7,4 +7,4 @@ $\ell$; these triples are the $\ell$-regular tripartitions of $n$.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Section 1, definition of `T_ℓ(n)` (with generating function `f_ℓ³ / f_1³`, Section 1, eq. (1)).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Section 1, definition of $T_\ell(n)$ (with generating function $f_\ell^3/f_1^3$, Section 1, eq. (1)).

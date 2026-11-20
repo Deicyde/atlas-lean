@@ -9,4 +9,4 @@ $$\sum_{j=0}^{n} F^{(m-1)}_j F^{(m)}_{n-j} =
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 12.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 12.

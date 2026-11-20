@@ -19,3 +19,9 @@
 - [Composite Fermat numbers are strong pseudoprimes to every power of $2$](fermat-number-is-strong-pseudoprime-two.md)
 - [Strong pseudoprime bases $2^{2^{k-1}+t} \pm 2^t$ of composite Fermat numbers](fermat-number-is-strong-pseudoprime-two-2.md)
 - [A subgroup of strong pseudoprime bases of a composite Fermat number](fermat-number-strong-pseudoprime-bases-s.md)
+
+## Related topics
+
+- [Miller–Rabin primality test](../../../../ComputerScience/algebraic-and-numerical-algorithms/miller-rabin-primality-test/README.md):
+  the test whose non-witnesses are the strong pseudoprime bases, with Rabin's bound of at most
+  $(n - 1)/4$ such bases.

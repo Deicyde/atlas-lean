@@ -1,5 +1,9 @@
-# Bhatia–Davis inequality
+# Bhatia–Davis inequality for symmetric operators
 
-**Bhatia–Davis inequality** for a symmetric operator: the variance of `T`
-at a unit vector is at most `(M - μ) * (μ - m)`, where `μ` is the Rayleigh
-quotient.
+Let $T$ be a symmetric linear operator on a finite-dimensional real inner product space $E$, and let $m, M$ be real
+numbers with $m\|x\|^2 \le \langle x, Tx \rangle \le M\|x\|^2$ for all $x \in E$. Then for every unit vector $x$, with $\mu = \langle x, Tx \rangle$ the Rayleigh
+quotient,
+
+$$
+\langle x, T^2 x \rangle - \mu^2 \le (M - \mu)(\mu - m).
+$$

@@ -1,6 +1,5 @@
 # Endomorphisms of braid groups
 
-- [Artin's braid relators](braid-relators.md)
 - [Braid group on n strands](braid-group.md)
 - [Kourovka Problem 14.102(a): non-injective braid endomorphisms with non-cyclic image](braid-non-injective-noncyclic-endomorphi.md)
 - [Kourovka Problem 14.102(b): endomorphisms of the braid commutator subgroup](braid-commutator-endomorphism-automorphi.md)

@@ -1,6 +1,6 @@
 # Birkhoff–James orthogonality
 
-## Birkhoff–James orthogonality
+## Orthogonality in normed spaces
 
 - [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
 - [Zero is Birkhoff–James orthogonal to every vector](birkhoff-james-orthogonal-zero-left.md)
@@ -14,6 +14,6 @@
 - [Duality mapping is nonempty](duality-mapping-nonempty.md)
 - [Duality-mapping characterization of Birkhoff–James orthogonality](birkhoff-james-orthogonal-iff-exists-dua.md)
 
-## Inner Product
+## Inner product spaces
 
 - [Birkhoff–James orthogonality in inner product spaces](birkhoff-james-orthogonal-iff-inner-eq-z.md)

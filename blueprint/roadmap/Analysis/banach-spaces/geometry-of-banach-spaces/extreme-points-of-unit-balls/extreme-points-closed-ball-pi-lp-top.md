@@ -1,9 +1,3 @@
 # Extreme points of the unit ball of finite $\ell^\infty$
 
-The extreme points of the closed unit ball of `PiLp ∞ (fun _ : ι => 𝕜)`
-are exactly the vectors all of whose coordinates have norm `1`. If some
-coordinate has norm `< 1`, a small perturbation of that coordinate stays
-in the ball and exhibits the point as a midpoint; conversely, a vector
-with all coordinates of norm `1` that is a convex combination of two ball
-points must agree with both of them coordinatewise, by strict convexity
-of the scalar field.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $\iota$ be a finite nonempty set. The extreme points of the closed unit ball of $\mathbb{K}^\iota$ with the maximum norm, viewed as a real convex set, are exactly the vectors $x$ with $|x_i| = 1$ for every $i$. If some coordinate has modulus less than $1$, a small perturbation of that coordinate stays in the ball and exhibits $x$ as a midpoint; conversely, if every coordinate has modulus $1$ and $x$ is a convex combination of two points of the ball, those points agree with $x$ coordinatewise, by strict convexity of the closed unit disc of $\mathbb{K}$.

@@ -8,5 +8,5 @@ finite set of indices $i$ with $x_i \notin U_i$. Sending $x$ to its class in $X_
 direct limit $\varinjlim_S X_S$, and then sending that class to the tuple carried by its
 representative, returns $x$.
 
-This holds definitionally: unfolding both maps, the quotient lift applied to the canonical
-representative returns the representative itself.
+This holds by construction: the backward map applied to the class of the canonical representative
+returns that representative.

@@ -19,4 +19,4 @@ $-x$ instead of $V^{(-r)}_1 = 0$); both are excluded.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.

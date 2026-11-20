@@ -1,5 +1,5 @@
 # Equality in the Horn–Jackson inequality
 
-Under the hypotheses of
-`helmholtzRate_nonpos`, the rate of change of the pseudo-Helmholtz function vanishes at a
-positive `c` exactly when `c` is an equilibrium. Source: Horn & Jackson (1972).
+Let $N$ be a [chemical reaction network](reaction-network.md) with finite species set $S$ and finite reaction set $\rho$, let $k_r > 0$ be rate constants and let $c^* \in \mathbb{R}_{>0}^S$ be [complex balanced](is-complex-balanced.md) for $k$. For every $c \in \mathbb{R}_{>0}^S$, the
+[rate of change of the pseudo-Helmholtz function](helmholtz-rate.md) vanishes at $c$ if and only if
+$c$ is an equilibrium of the [mass-action vector field](mass-action-field.md) $f$, $f(c) = 0$ (Horn and Jackson 1972).

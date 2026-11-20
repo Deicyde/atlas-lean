@@ -1,3 +1,3 @@
 # Average effects have mean zero
 
-The average effects have mean zero: `∑ i p i α i = 0`.
+Let $p$ be real allele weights with $\sum_i p_i = 1$ and $G$ any genotypic values. Then the [average effects](avg-effect.md) satisfy $\sum_{i} p_i\, \alpha_i = 0$.

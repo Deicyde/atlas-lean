@@ -6,7 +6,7 @@ and $q_1 \ge 3$, and let $x = s_1 + p_1/q_1$ and $d = s_2 + p_2/q_2$. Then for a
 $i$ and $j$, neither $x + id$ nor $2x + jd$ is a nonnegative integer.
 
 The paper's further hypotheses ($p_1, p_2, q_2 > 0$, $\gcd(p_2, q_2) = 1$, $d \notin \mathbb{N}$)
-are not needed and are not stated ($p_1 > 0$ and $q_2 > 0$ already follow from the two coprimality
+are not needed ($p_1 > 0$ and $q_2 > 0$ already follow from the two coprimality
 conditions and $q_1 \ge 3$).
 
 ## Sources

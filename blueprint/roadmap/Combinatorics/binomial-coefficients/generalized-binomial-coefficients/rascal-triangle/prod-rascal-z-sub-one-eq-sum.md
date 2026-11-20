@@ -9,4 +9,4 @@ where $R_{n,k}$ denotes the Rascal numbers.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Theorem 14.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Theorem 14, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

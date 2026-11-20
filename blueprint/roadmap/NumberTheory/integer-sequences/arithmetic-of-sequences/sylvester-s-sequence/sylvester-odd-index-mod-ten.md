@@ -6,4 +6,4 @@ $S_{2i+1} \equiv 3 \pmod{10}$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 2, congruence (9), odd indices.
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 2, congruence (9), odd indices.

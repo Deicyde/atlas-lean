@@ -1,3 +1,3 @@
 # Boundary conditions for a bond model
 
-Boundary conditions for a bond model on a finite graph.
+The three boundary conditions for a bond model on a finite graph: free, wired and periodic.

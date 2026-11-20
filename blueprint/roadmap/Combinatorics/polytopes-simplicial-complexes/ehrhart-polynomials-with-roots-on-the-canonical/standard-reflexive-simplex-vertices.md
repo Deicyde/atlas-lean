@@ -8,4 +8,4 @@ reflexive simplex $\Delta^d_{\mathrm{sr}}$.
 
 ## Sources
 
-- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2.2 (definition of `Δᵈ_sr`).
+- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2.2 (definition of $\Delta^d_{sr}$).

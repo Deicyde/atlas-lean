@@ -17,9 +17,9 @@ with equality every normalized fluctuation would have supremum norm at most $1$,
 Theorem 2 of Article A61 could not be the negative Takagi–Landsberg function $-\mathcal{T}_a$
 (for example $\mathcal{T}_{3/4}(1/3) = 4/3$). This matches the sources' usage, where
 $\varphi^{l_n,R_n}$ is parametrized by the chosen $R_n$ (e.g. $R_n = (2q)^{n-1}$ along
-$l_n = 2^n$ in Article A61, Section 3); unbounded growth of $R_n$ is the necessary condition for
+$l_n = 2^n$ in Article A61, Section 4); unbounded growth of $R_n$ is the necessary condition for
 a limiting curve recorded in the odometer paper.
 
 ## Sources
 
-- Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, Definition 1 and Section 3.1, restated in *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3.
+- Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, arXiv:1801.03120, Definition 1 and Section 3.1, restated in *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 4.

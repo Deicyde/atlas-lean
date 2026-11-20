@@ -6,4 +6,4 @@ increasing order and counting from $\ell = 0$. Then $n_0 = 1$; this is the paper
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Definition 1 and Table 3.

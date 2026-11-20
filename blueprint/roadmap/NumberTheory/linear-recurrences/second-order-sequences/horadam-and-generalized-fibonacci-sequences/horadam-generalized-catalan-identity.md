@@ -8,10 +8,9 @@ Then for all $s, i, j \in \mathbb{N}$,
 $$W_{s+i}\,Y_{s+j} - W_s\,Y_{s+i+j} = (-c_2)^s\,(W_1 Y_j - W_0 Y_{j+1})\,U_i.$$
 
 The source states the identity over the integers, with integer coefficients, all integer
-indices and $c_2 \ne 0$. This version restricts the indices to natural numbers and allows
-coefficients in any commutative ring, so no invertibility of $c_2$ is needed; the bi-infinite
-version is not claimed.
+indices and $c_2 \ne 0$. The identity above has natural-number indices and coefficients in any
+commutative ring, so no invertibility of $c_2$ is needed.
 
 ## Sources
 
-- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Proposition "Generalized Catalan Identity," lines 111–126 of <https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex>.
+- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Section 2, Proposition 1 (Generalized Catalan Identity), https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.html.

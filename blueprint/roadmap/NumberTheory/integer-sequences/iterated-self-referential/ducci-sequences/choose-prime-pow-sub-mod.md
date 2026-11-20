@@ -7,4 +7,4 @@ $\binom{p^k - p^{k-1}}{j} \equiv 0 \pmod{p}$.
 
 ## Sources
 
-- Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 2.
+- Mark L. Lewis and Shannon M. Tefft, *The Maximum Length for Ducci Sequences on $\mathbb{Z}_m^n$ when $n$ is Even*, arXiv:2410.18204, Lemma 5.

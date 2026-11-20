@@ -13,4 +13,4 @@ period $p = 2$.
 
 ## Sources
 
-- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, proof of Proposition 9.2 (`W_max = 01`).
+- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, proof of Proposition 9.2 ($W_{\max} = 01$).

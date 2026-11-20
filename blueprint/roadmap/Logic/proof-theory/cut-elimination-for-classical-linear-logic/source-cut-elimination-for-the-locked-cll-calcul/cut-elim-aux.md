@@ -1,5 +1,5 @@
 # Cut elimination by structural recursion on the proof
 
-Compute cut-free proofs by structural recursion on the original (possibly
-non-cut-free) proof. Each case recursively normalises the premises, then uses
-`cutAdm` at each cut. The list `Γ` is the explicit sequent for the current subgoal.
+Cut-free proofs are computed by structural recursion on an arbitrary proof: each case first
+normalises the premises, then applies cut admissibility at each cut. The sequent of the current
+subgoal is carried as an explicit list.

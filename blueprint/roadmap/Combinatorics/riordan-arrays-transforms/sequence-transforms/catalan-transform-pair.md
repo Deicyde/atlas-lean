@@ -28,4 +28,4 @@ In the hypothesis, the terms with $j > k$ vanish because $\binom{k}{j} = 0$ ther
 
 ## Sources
 
-- Paul Barry, "A Catalan Transform and Related Transformations on Integer Sequences", Journal of Integer Sequences 8 (2005), Article 05.4.5, proposition lines 302--311, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Barry/barry84.tex>.
+- Paul Barry, "A Catalan Transform and Related Transformations on Integer Sequences", Journal of Integer Sequences 8 (2005), Article 05.4.5, Proposition 3, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Barry/barry84.pdf>.

@@ -1,6 +1,7 @@
 # Base-pair probability
 
-The **base-pair probability** `P(i, j)`: the total weight of the structures containing the
-pair `(i, j)`, divided by the total weight `Z` of all structures. For nonnegative weights `Z ≥ 1`
-(the empty structure has weight `1`), so the denominator is positive; for Boltzmann weights this
-is the probability of `(i, j)` under the Boltzmann distribution on structures.
+For real weights $w$ and positions $i, j$, the base-pair probability is
+
+$$P(i, j) = \frac{\sum_{P \ni (i, j)} \prod_{(a, b) \in P} w(a, b)}{\sum_{P} \prod_{(a, b) \in P} w(a, b)},$$
+
+sums over the [secondary structures](structures.md) (containing $(i, j)$ in the numerator), with the convention $x/0 = 0$. For nonnegative weights the denominator is [at least one](one-le-sum-weight.md); for Boltzmann weights it is the probability of $(i, j)$ under the Boltzmann distribution on structures.

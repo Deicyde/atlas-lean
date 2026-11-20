@@ -9,4 +9,4 @@ $\gamma_{a_1} \cdots \gamma_{a_k}$.
 
 ## Sources
 
-- Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Compositions).
+- Juan B. Gil, Emma G. Hoover, and Jessica A. Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 1.1 (Compositions).

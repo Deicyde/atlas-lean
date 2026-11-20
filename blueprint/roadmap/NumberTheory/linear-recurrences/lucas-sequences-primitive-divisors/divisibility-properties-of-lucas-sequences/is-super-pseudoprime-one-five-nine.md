@@ -6,4 +6,4 @@ $9$, a Lucas pseudoprime with these parameters.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.13 (example).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.13 (the definition this example illustrates; the example is not printed in the source).

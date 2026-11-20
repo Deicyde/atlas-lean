@@ -1,4 +1,7 @@
-# The GCTA diagonal estimator is unbiased for `1 + F_i`
+# The GCTA diagonal estimator is unbiased for $1 + F_i$
 
-**The GCTA diagonal estimator is unbiased for `1 + F_i`** (Yang et al. 2011):
-`𝔼[1 + (x_i² - (1 + 2p) x_i + 2p²) / (2p(1 - p))] = 1 + F_i`.
+In every [identity-by-descent model](ibdmodel.md) on a probability measure $\mu$ and for every individual $i$, the [diagonal estimator](grm-diag.md) satisfies $\int \tilde A_{ii} \, d\mu = 1 + F_i$, where $F_i$ is the [inbreeding coefficient](inbreeding.md) (Yang et al. 2011).
+
+## Sources
+
+- J. Yang, S. H. Lee, M. E. Goddard, P. M. Visscher, *GCTA: a tool for genome-wide complex trait analysis*, Am. J. Hum. Genet. 88 (2011), 76–82.

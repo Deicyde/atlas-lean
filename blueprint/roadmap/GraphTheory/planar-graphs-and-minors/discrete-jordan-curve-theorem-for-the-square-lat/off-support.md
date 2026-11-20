@@ -1,4 +1,3 @@
 # Square lattice with a closed walk's vertices removed
 
-The square lattice with the vertices of the closed walk `Vc` removed. It is the same graph as
-`StatMech.Lattice.ffc_offSupportLattice {z | z ∈ Vc.support}`.
+For a closed walk $w$ at a site $a$ of the square lattice, the simple graph on $\mathbb{Z}^2$ in which $x$ and $y$ are adjacent when they are nearest neighbours and neither is visited by $w$: the square lattice with every edge having an endpoint on $w$ deleted.

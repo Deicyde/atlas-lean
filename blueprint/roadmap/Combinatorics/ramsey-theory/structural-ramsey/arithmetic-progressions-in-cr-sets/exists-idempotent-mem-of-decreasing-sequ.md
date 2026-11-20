@@ -10,10 +10,9 @@ $C_0 \supseteq C_1 \supseteq C_2 \supseteq \cdots$ be members of $F$ contained i
 for every $n$ and every $x \in C_n$ there is an $m$ with $C_m \subseteq x^{-1}C_n$. Then some
 $p \in \beta(F)$ satisfies $p \cdot p = p$ and $A \in p$; that is, $A$ is an essential $F$-set.
 
-This is the implication (d) ⇒ (a) of the paper's Theorem 6; statements (b) (trees of functions)
-and (c) (downward directed families) are omitted. The sequence is indexed from $0$ rather
+This is the implication (d) ⇒ (a) of the paper's Theorem 6, which also has equivalent forms (b) (trees of functions) and (c) (downward directed families). The sequence is indexed from $0$ rather
 than $1$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.

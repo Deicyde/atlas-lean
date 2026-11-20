@@ -80,4 +80,4 @@
 - [Sources on a graph's edge set agree with random-current sources](sources-edge-finset-eq.md)
 - [Reflection as an involution of the sub-currents of a current](reflect-equiv.md)
 - [Weighted sum over splittings with prescribed sources](split-weighted-sum.md)
-- [Switching lemma](ising-switching-weighted.md)
+- [Switching lemma (weighted form)](ising-switching-weighted.md)

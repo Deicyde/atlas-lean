@@ -12,4 +12,4 @@ $\|Hu(0)\|_F \le C(\|u\|_{C^1(B_1(0))})$.
 
 ## Sources
 
-- R. Shankar and Y. Yuan, `Hessian estimates for the sigma-2 equation in dimension four`, Annals of Math, 201 (2) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hessian_estimates` of the lean-eval benchmark.
+- R. Shankar and Y. Yuan, *Hessian estimates for the sigma-2 equation in dimension four*, Annals of Math, 201 (2) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hessian_estimates` of the lean-eval benchmark.

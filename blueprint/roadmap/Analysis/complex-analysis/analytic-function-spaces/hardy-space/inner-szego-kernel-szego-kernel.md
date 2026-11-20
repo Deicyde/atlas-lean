@@ -1,4 +1,7 @@
 # Inner product of two Szegő kernels
 
-The inner product of two Szegő kernels is the Szegő kernel function
-`1 / (1 - z * conj w)`.
+For all $z, w \in \mathbb{C}$ with $|z| < 1$ and $|w| < 1$, the [Szegő kernels](szego-kernel.md) satisfy
+
+$$
+\langle k_z, k_w \rangle = \frac{1}{1 - z \bar w}.
+$$

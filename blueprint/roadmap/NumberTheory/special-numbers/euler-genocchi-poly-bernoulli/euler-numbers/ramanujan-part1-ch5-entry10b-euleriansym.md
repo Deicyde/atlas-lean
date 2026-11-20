@@ -6,4 +6,4 @@ $B_m$ are the Bernoulli numbers and $E_{2k}$ are the even-index Euler numbers.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.
+- Bruce C. Berndt, *Ramanujan's Notebooks, Part I*, Springer-Verlag, New York, 1985, Chapter 5.

@@ -6,4 +6,5 @@ $\mu$ on the Borel $\sigma$-algebra of $X$ whose pushforward under $T$ equals $\
 
 ## Sources
 
-- N. M. Krylov and N. N. Bogolyubov, Ann. Math. 38 (1937), 65-113, DOI 10.2307/1968511.
+- N. Kryloff and N. Bogoliouboff, *La théorie générale de la mesure dans son application à l'étude des
+  systèmes dynamiques de la mécanique non linéaire*, Ann. of Math. 38 (1937), 65–113, DOI 10.2307/1968511.

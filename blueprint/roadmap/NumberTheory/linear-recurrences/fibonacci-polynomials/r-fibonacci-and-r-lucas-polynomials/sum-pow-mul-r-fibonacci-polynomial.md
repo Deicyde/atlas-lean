@@ -11,8 +11,8 @@ $$
 
 where the terms of the inner sum with $n - r + j \le 0$ are zero.
 
-The paper takes $m$ a positive integer; here $m$ is any element of $K$.
+The paper takes $m$ a positive integer; the identity holds for every $m \in K$.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 4.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 4.

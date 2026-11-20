@@ -1,8 +1,8 @@
 # Göbel sequences
 
-- [The (k, l)-Göbel sequence](gobel-sequence.md)
+- [The $(k, l)$-Göbel sequence](gobel-sequence.md)
 - [Initial value of the $(k, l)$-Göbel sequence](gobel-sequence-one.md)
-- [Recursion for the (k, l)-Göbel sequence](gobel-sequence-succ.md)
+- [Recursion for the $(k, l)$-Göbel sequence](gobel-sequence-succ.md)
 - [Göbel's original sequence](gobel-sequence-two-two-small.md)
 - [Integrality of the early terms of $(k, l)$-Göbel sequences](gobel-sequence-integral-le-six-and-seven.md)
 - [Asymptotic expansion of the $(k, l)$-Göbel sequence](gobel-sequence-asymptotic-expansion.md)

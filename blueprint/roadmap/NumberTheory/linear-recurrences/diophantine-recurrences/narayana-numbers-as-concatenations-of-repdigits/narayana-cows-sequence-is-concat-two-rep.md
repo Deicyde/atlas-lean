@@ -1,13 +1,12 @@
 # Narayana numbers that concatenate two repdigits in bases 2 to 9
 
-Let $(N_n)$ be
-Narayana's cows sequence and let $2 \le b \le 9$. Then $N_n$ is a concatenation of two repdigits
-in base $b$ if and only if $(n, b)$ is one of the following $43$ pairs: $n = 4$ and $b = 2$;
-$n = 5$ and $b = 3$; $n = 6$ and $b \in \{2, 4\}$; $n = 7$ and $b \in \{2, 3, 4, 6\}$; $n = 8$
-and $b \in \{3, 4, 5, 6, 7, 9\}$; $n = 9$ and $b \in \{4, 5, 6, 7, 8, 9\}$; $n = 10$ and
-$b \in \{5, 6, 7, 8, 9\}$; $n = 11$ and $b \in \{2, 7, 8, 9\}$; $n = 12$ and
-$b \in \{3, 4, 7, 8, 9\}$; $n = 13$ and $b \in \{2, 4, 5, 7, 8\}$; $n = 14$ and $b = 6$;
-$n = 17$ and $b \in \{7, 9\}$; $n = 18$ and $b = 5$.
+Let $(N_n)_{n \ge 0}$ be Narayana's cows sequence, given by $N_0 = 0$, $N_1 = N_2 = 1$ and
+$N_{n+3} = N_{n+2} + N_n$, and let $2 \le b \le 9$. Then $N_n$ is a concatenation of two repdigits
+in base $b$ if and only if $(n, b)$ is one of the following $43$ pairs: $n = 4$ and $b = 2$; $n = 5$
+and $b = 3$; $n = 6$ and $b \in \{2, 4\}$; $n = 7$ and $b \in \{2, 3, 4, 6\}$; $n = 8$ and $b \in
+\{3, 4, 5, 6, 7, 9\}$; $n = 9$ and $b \in \{4, 5, 6, 7, 8, 9\}$; $n = 10$ and $b \in \{5, 6, 7, 8,
+9\}$; $n = 11$ and $b \in \{2, 7, 8, 9\}$; $n = 12$ and $b \in \{3, 4, 7, 8, 9\}$; $n = 13$ and $b
+\in \{2, 4, 5, 7, 8\}$; $n = 14$ and $b = 6$; $n = 17$ and $b \in \{7, 9\}$; $n = 18$ and $b = 5$.
 
 The corresponding values and expansions are $N_4 = 2 = (10)_2$, $N_5 = 3 = (10)_3$,
 $N_6 = 4 = (100)_2 = (10)_4$, $N_7 = 6 = (110)_2 = (20)_3 = (12)_4 = (10)_6$,

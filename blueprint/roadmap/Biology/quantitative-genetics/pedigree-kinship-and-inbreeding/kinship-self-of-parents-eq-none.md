@@ -1,3 +1,3 @@
 # Tabular self-kinship of a founder
 
-The tabular recursion on the diagonal for a founder: `φ i i = 1 / 2`.
+In a [pedigree](pedigree.md), if $i$ is a founder, then the [tabular kinship](kinship.md) satisfies $\varphi_{ii} = \frac12$.

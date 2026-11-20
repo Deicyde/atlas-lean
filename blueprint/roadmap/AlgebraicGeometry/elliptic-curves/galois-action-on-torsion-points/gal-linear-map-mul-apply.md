@@ -1,4 +1,4 @@
-# The linear Galois action on $W(p)$ respects products
+# The linear Galois action on $p$-torsion points respects products
 
 Let $W$ be a Weierstrass curve
 over $\mathbb{Q}$, $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular

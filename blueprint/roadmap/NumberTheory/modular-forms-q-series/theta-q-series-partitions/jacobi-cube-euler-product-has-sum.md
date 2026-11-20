@@ -7,4 +7,4 @@ $(q;q)_\infty = \prod_{n=0}^{\infty} (1 - q^{n+1})$.
 
 ## Sources
 
-- Robson da Silva and James A. Sellers, "Parity Considerations for the Mex-Related Partition Functions of Andrews and Newman", <https://cs.uwaterloo.ca/journals/JIS/VOL23/Sellers/sellers52.tex>, lines 150-161 (equation `Jacobi` of the lemma; Eq. (1.3.24) of Berndt).
+- Robson da Silva and James A. Sellers, "Parity Considerations for the Mex-Related Partition Functions of Andrews and Newman", Journal of Integer Sequences 23 (2020), Article 20.5.7, Lemma 3, Equation (2) (Jacobi's identity, quoted there as Eq. (1.3.24) of Berndt), https://cs.uwaterloo.ca/journals/JIS/VOL23/Sellers/sellers52.html.

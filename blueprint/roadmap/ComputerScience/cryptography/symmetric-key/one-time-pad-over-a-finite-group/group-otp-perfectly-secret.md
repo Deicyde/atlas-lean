@@ -7,4 +7,4 @@ of the message given that the ciphertext is $c$ equals the prior distribution of
 
 ## Sources
 
-- Katz and Lindell, Lemma 11.15.
+- J. Katz and Y. Lindell, *Introduction to Modern Cryptography*, 2nd ed., CRC Press, 2014, Lemma 11.15.

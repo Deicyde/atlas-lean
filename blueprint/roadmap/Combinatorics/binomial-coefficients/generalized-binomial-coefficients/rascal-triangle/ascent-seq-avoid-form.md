@@ -9,4 +9,4 @@ of $x$. When $k = 0$ the initial part $0, 1, \ldots, k-1$ is empty.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Lemma 16.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Lemma 16, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

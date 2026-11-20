@@ -1,5 +1,6 @@
-# The sum of a nonempty list does not depend on the nonemptiness proof
+# The left-to-right sum of a nonempty sequence is well defined
 
-For every list $l$
-of elements of a type with an addition and any two proofs $e_1$ and $e_2$ that $l$ is nonempty,
-the sum of $l$ computed with $e_1$ equals the sum of $l$ computed with $e_2$.
+Let $G$ be a set with a binary operation $+$ (not necessarily associative, commutative or
+unital). For every nonempty finite sequence $(a_1, \dots, a_k)$ of elements of $G$, the
+left-to-right sum $(\cdots((a_1 + a_2) + a_3) + \cdots) + a_k$ is determined by the sequence
+alone: it does not depend on how the sequence is shown to be nonempty.

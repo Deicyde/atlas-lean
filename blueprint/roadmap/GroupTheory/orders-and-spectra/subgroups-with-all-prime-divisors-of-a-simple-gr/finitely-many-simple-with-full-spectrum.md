@@ -1,4 +1,4 @@
-# Kourovka Problem 11.64 (Monakhov)
+# Finiteness of simple groups with a proper subgroup of the same prime set (Kourovka 11.64)
 
 The statement that there is a natural number $N$ such
 that every finite simple group $G$ that is not isomorphic to the alternating group $A_n$ for any

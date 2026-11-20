@@ -6,4 +6,4 @@ that for every $n$, $P(n)$ holds if and only if $Q(f(n))$ holds.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 7.1.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

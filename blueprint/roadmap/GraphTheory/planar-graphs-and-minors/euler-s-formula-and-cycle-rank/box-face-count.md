@@ -1,3 +1,3 @@
-# Number of faces of the grid $(-n, n)^2$
+# Number of faces of the grid $\{-n, \dots, n\}^2$
 
-The number of faces of the grid `[-n, n]²`: its unit squares and the unbounded face.
+For a natural number $n$, the number of faces of the grid on $\{-n, \dots, n\}^2$: the number $(2n)^2$ of its unit squares (lower left corners in $\{-n, \dots, n-1\}^2$) plus one for the unbounded face.

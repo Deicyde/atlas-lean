@@ -7,10 +7,10 @@ $A$ is a Sidon set when $a + b = c + d$ with $a, b, c, d \in A$ implies $\{a, b\
 and an element $s$ of $A + A$ is isolated when $s + 1 \notin A + A$ and either $s = 0$ or
 $s - 1 \notin A + A$.
 
-This answers Erdős Problem 152 affirmatively: Tsoukalas et al. show, with a Lean proof, that
+This answers Erdős Problem 152 affirmatively: Tsoukalas et al. show that
 every Sidon set $A$ of $n$ natural numbers has at least $(n^2 - 100n - 16)/16$ isolated elements
 in $A + A$.
 
 ## Sources
 
-- George Tsoukalas et al., Advancing Mathematics Research with AI-Driven Formal Proof Search, arXiv preprint (2026), arXiv:2605.22763, https://arxiv.org/abs/2605.22763.
+- George Tsoukalas, Anton Kovsharov, Sergey Shirobokov, Anja Surina, Moritz Firsching, Gergely Bérczi, Francisco J. R. Ruiz, Arun Suggala, Adam Zsolt Wagner, Eric Wieser, Lei Yu, Aja Huang, Miklós Z. Horváth, Andrew Ferraiuolo, Henryk Michalewski, Edward Lockhart, Codrut Grosu, Thomas Hubert, Matej Balog, Pushmeet Kohli and Swarat Chaudhuri, *Advancing Mathematics Research with AI-Driven Formal Proof Search*, arXiv:2605.22763 (2026), appendix proof of Erdős Problem #152, https://arxiv.org/abs/2605.22763. The paper reports that its AI agent, AlphaProof Nexus, found this result with a Lean proof, https://github.com/google-deepmind/alphaproof-nexus-results/blob/main/APNOutputs/ErdosProblems/erdos_152.lean.

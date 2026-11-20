@@ -5,4 +5,4 @@ $\mathbb{Z}/M\mathbb{Z}$ is affinely equivalent to itself (take $d = 1$ and $s =
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.

@@ -9,4 +9,4 @@ base-$p$ digits of $x$.
 
 ## Sources
 
-- Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `D_x` and Lemma 2.
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 6 and Lemma 2.

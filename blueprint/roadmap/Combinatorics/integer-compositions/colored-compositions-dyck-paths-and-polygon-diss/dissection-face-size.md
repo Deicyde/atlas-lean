@@ -12,4 +12,4 @@ dissection lies directly under exactly one such chord.
 
 ## Sources
 
-- Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Polygon partitions).
+- Juan B. Gil, Emma G. Hoover, and Jessica A. Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 1.3 (Polygon partitions).

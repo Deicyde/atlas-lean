@@ -1,7 +1,7 @@
 # Existence of a locally constant normalized subgroup cutoff
 
-A compact set in a topological group with a compact open subgroup has a
-nonnegative locally constant cutoff whose integral over every left
-`T`-orbit meeting that set is one, for a closed commutative subgroup `T`.
-The same compactly supported function works simultaneously on all of
-`T * Ω`. The Haar measure need not have any prescribed normalization.
+Let $G$ be a topological group with a compact open subgroup, $T \le G$ a closed commutative subgroup
+with its Borel $\sigma$-algebra and a Haar measure $\tau$, and $\Omega \subseteq G$ compact. Then
+there is a nonnegative, locally constant, compactly supported $w : G \to \mathbb{R}$ with
+$\int_T w(tx)\, d\tau(t) = 1$ for every $x \in T\Omega$. The Haar measure $\tau$ may have any
+normalization.

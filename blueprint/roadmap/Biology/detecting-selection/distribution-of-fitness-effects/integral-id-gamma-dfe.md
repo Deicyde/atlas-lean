@@ -1,3 +1,3 @@
 # Mean selection coefficient under the gamma DFE
 
-The mean scaled selection coefficient under the gamma DFE is `-a / r`.
+For $a > 0$ and $r > 0$, the [gamma DFE](gamma-dfe.md) has mean $\int \sigma \, d\mathrm{DFE}(\sigma) = -a / r$.

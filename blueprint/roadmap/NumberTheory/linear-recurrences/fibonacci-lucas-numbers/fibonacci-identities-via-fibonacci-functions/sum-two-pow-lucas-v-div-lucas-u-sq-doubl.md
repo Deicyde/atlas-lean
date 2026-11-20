@@ -12,7 +12,7 @@ and the real series $\sum_{j \ge 0} 2^j V_{k 2^j} / U_{k 2^j}^2$ has sum
 
 $$\frac{2(-1)^k + V_k}{U_k^2} + \frac{2(1 - (-1)^k) V_{2k}}{U_{2k}^2}.$$
 
-The paper's real parameter $p$ is restricted here to integers $P$.
+The source allows a real parameter $p$; the statement above takes an integer parameter $P$.
 
 ## Sources
 

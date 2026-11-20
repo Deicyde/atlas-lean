@@ -10,4 +10,4 @@ this reads $s(a(n)) = F_n$.
 
 ## Sources
 
-- Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Proposition 9.
+- Anton Shakov, *A 2-Regular Sequence That Counts The Divisors of $n^2 + 1$*, Journal of Integer Sequences 28 (2025), Article 25.6.2, arXiv:2510.22805, Proposition 9.

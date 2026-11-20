@@ -10,4 +10,4 @@ included.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 2.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 2.

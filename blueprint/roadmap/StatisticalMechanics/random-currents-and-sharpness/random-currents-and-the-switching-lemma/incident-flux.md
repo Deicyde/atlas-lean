@@ -1,3 +1,3 @@
 # Incident flux of a current at a vertex
 
-The total multiplicity `∑_{e ∋ x} n_e` of the edges of `G` incident to `x`.
+For a finite simple graph $G = (V, E)$, a current $n$ and $x \in V$, the incident flux is $\sum_{e \in E,\ x \in e} n_e$.

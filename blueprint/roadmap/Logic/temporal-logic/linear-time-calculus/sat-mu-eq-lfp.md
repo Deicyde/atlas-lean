@@ -1,3 +1,4 @@
 # μ-formulas denote least fixed points
 
-The μ fixed point is Mathlib's least fixed point of the operator.
+The set of positions where $\mu X.\, \varphi$ holds is the least fixed point of the monotone
+operator $S \mapsto \llbracket \varphi \rrbracket_{X := S}$ on sets of positions.

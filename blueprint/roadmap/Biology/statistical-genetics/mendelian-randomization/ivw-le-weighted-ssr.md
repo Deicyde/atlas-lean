@@ -1,6 +1,7 @@
 # IVW estimator minimizes the weighted residual sum of squares
 
-The IVW estimator is the weighted least-squares slope through the origin: it minimizes
-the weighted residual sum of squares. This holds for all data: if every `β̂_{Xj} = 0` the sum
-does not depend on the slope (and `ivw` is the junk value `0`), and a SNP with `σ_j = 0` has
-weight `0` on both sides by Lean's `x / 0 = 0`.
+For every finite set $\iota$ of SNPs, all data $\hat\beta_X, \hat\beta_Y, \sigma \in \mathbb{R}^\iota$ and every $b \in \mathbb{R}$,
+
+$$S(\hat\beta_{\mathrm{IVW}}) \le S(b),$$
+
+where $S$ is the [weighted residual sum of squares through the origin](weighted-ssr.md) and $\hat\beta_{\mathrm{IVW}}$ the [IVW estimator](ivw.md) (with the convention $x/0 = 0$ throughout).

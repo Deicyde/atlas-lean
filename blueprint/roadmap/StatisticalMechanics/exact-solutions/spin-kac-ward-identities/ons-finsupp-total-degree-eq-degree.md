@@ -1,3 +1,3 @@
-# Total degree of an exponent agrees with Mathlib's degree
+# Total degree of an exponent as the sum of its entries
 
-`ons_finsuppTotalDegree` agrees with Mathlib's `Finsupp.degree`.
+For a set $E$ and a finitely supported exponent $m : E \to \mathbb{N}$, the [total degree](ons-finsupp-total-degree.md) $\sum_{e} m(e)$ equals the degree of $m$, the sum of its values over its support.

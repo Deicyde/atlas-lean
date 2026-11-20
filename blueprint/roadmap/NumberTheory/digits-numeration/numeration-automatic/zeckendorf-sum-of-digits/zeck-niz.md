@@ -10,4 +10,4 @@ as $0$ when $k = 0$ (so $\mathrm{NIZ}_0 = \emptyset$).
 
 ## Sources
 
-- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 (definition of `NIZ_k`).
+- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 (definition of $\mathrm{NIZ}_k$).

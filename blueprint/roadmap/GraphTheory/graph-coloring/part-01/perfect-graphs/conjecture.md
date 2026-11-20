@@ -9,4 +9,4 @@ most $p(|x|)$.
 
 ## Sources
 
-- [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4, Contributor Jack Edmonds.
+- ARCC workshop *The Perfect Graph Conjecture* (American Institute of Mathematics, 2002), workshop materials, *Recognition of Perfect Graphs*, item 4, *NP Characterization of Perfect Graphs*, contributed by Jack Edmonds, https://aimath.org/pastworkshops/perfectgraph.html.

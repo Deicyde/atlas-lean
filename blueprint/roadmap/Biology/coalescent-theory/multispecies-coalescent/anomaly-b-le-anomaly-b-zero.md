@@ -1,4 +1,3 @@
 # Three-anomaly boundary is maximal at zero
 
-`b` is maximal at `0`: `b(x) ≤ log (7/6)` for `x ≥ 0`, so for `y ≥ log (7/6)` at most one
-gene tree is anomalous.
+For every real $x \ge 0$, the [boundary for three anomalous gene trees](anomaly-b.md) satisfies $b(x) \le b(0) = \log(7/6)$. So for a shallower branch $y \ge \log(7/6)$, at most one gene tree is anomalous.

@@ -10,4 +10,4 @@ of $I_K^{\mathfrak m}$.
 
 ## Sources
 
-- direct native counterpart of ATLAS `primesCoprime_eq_range`.
+- ATLAS NumberTheoryI, Proposition 21.1 and its proof.

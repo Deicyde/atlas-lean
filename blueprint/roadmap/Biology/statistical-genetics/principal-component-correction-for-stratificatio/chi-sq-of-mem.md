@@ -1,4 +1,3 @@
 # Genotypes in the axis span carry no signal after adjustment
 
-A genotype lying in the axis span carries no signal after adjustment (its residual is zero,
-and the statistic is the junk value `0` of the zero denominator).
+Let $V \subseteq \mathbb{R}^N$ be a linear subspace, $K$ a natural number, $y \in \mathbb{R}^N$ and $g \in V$. Then the [EIGENSTRAT statistic](chi-sq.md) of $y$ and $g$ is $0$ (the residual of $g$ vanishes and $x/0 = 0$).

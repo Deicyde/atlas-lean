@@ -9,4 +9,4 @@ semilength $n$ with $k$ peaks, of the product of $\gamma_j$ over their primitive
 
 ## Sources
 
-- Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Dyck paths).
+- Juan B. Gil, Emma G. Hoover, and Jessica A. Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 1.2 (Dyck paths).

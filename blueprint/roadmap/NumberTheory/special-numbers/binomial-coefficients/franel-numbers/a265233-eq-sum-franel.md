@@ -8,4 +8,4 @@ $$a_n = \frac{1}{6} \sum_{m=0}^{n} \binom{n}{m} 4^{n-m} f_m.$$
 
 ## Sources
 
-- Juntao Jin, "An Explicit Formula and a Recurrence for OEIS A265233", Theorem 1.
+- Juntao Jin, *An Explicit Formula and a Recurrence for OEIS A265233*, Journal of Integer Sequences 29 (2026), Article 26.5.3, Theorem 1(a).

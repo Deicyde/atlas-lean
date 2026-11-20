@@ -10,6 +10,12 @@ active constraints, those $i$ with $g_i(x) = 0$, are linearly independent. Then 
 multipliers $\lambda_1, \dots, \lambda_m \ge 0$ such that $\lambda_i g_i(x) = 0$ for every $i$
 and $Df(x) + \sum_{i=1}^m \lambda_i Dg_i(x) = 0$.
 
+## Background
+
+- [Sufficiency of the KKT conditions for convex problems](lagrange-duality/kkt-sufficient.md):
+  background, the converse for convex problems, where the KKT conditions certify global
+  optimality and zero duality gap without any constraint qualification.
+
 ## Sources
 
 - W. Karush, Minima of Functions of Several Variables with Inequalities as Side Conditions (M.Sc. thesis, Univ. Chicago, 1939); H. W. Kuhn and A. W. Tucker, Nonlinear Programming, Proc. Second Berkeley Symposium (1951), 481–492, DOI 10.1525/9780520411586-036.

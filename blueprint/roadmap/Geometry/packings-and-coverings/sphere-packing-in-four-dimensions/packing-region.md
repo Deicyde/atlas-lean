@@ -6,4 +6,4 @@ closed balls $\{x \in \mathbb{R}^4 : \|x - c\| \le r\}$.
 
 ## Sources
 
-- CE2003 Appendix A, the union `P` of all packed balls.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, Appendix A: the union $P$ of all packed balls.

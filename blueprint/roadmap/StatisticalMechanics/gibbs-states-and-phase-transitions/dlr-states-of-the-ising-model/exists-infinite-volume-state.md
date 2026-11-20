@@ -1,4 +1,5 @@
 # Existence of infinite-volume states
 
-Every sequence of probability measures on configurations has an infinite-volume state, by
-Prokhorov compactness.
+For $d \in \mathbb{N}$, every sequence $(\rho_n)$ of probability measures on the spin configurations $\omega \in \{+, -\}^{\mathbb{Z}^d}$ (with the product topology and its Borel σ-algebra) has an
+[infinite-volume state](infinite-volume-state.md): some subsequence converges weakly, by compactness
+(Prokhorov's theorem).

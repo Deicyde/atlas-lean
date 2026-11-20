@@ -11,4 +11,4 @@ whose coefficient of $z^m$ is $c_{(k_r, \dots, k_1)}(m)$.
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of `Li_k(z)`.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of $\mathrm{Li}_{\mathbf{k}}(z)$.

@@ -7,7 +7,8 @@ $N_k(a; T, F)$ be the number of a-points of the $k$-th derivative $F^{(k)}$, cou
 multiplicity, in $E_2 < \operatorname{Re} s < E_1$, $0 < \operatorname{Im} s < T$. Then
 $N_k(a; T + 1, F) - N_k(a; T, F) = O(\log T)$ as $T \to \infty$.
 
-The paper takes $E_1$ and $E_2$ from Lemmas 1 and 3; the bound is stated here for every strip.
+The paper takes $E_1$ and $E_2$ from Lemmas 1 and 3; the statement above gives the bound for every
+strip.
 
 ## Sources
 

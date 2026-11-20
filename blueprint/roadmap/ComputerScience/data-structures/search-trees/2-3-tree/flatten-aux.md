@@ -6,5 +6,4 @@ a 2-node with key $a$ and children $l, r$, $F(t, s)$ is $F(l, s')$ where $s'$ is
 to $F(r, s)$; for a 3-node with keys $a, b$ and children $l, m, r$, $F(t, s)$ is $F(l, s')$
 where $s'$ is $a$ prepended to $F(m, s'')$ and $s''$ is $b$ prepended to $F(r, s)$.
 
-The result is the inorder traversal of $t$ followed by $s$. It is built without recopying the
-traversals of left subtrees.
+The result is the inorder traversal of $t$ followed by $s$.

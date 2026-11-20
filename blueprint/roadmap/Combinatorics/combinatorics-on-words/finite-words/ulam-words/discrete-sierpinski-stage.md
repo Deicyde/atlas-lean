@@ -7,4 +7,4 @@ $S + (u, v) = \{(x + u, y + v) : (x, y) \in S\}$ denotes a translate.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4 (recursive definition of `S_n`).
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4 (recursive definition of $S_n$).

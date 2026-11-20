@@ -1,3 +1,5 @@
 # Magnetization vanishes at zero field
 
-At zero field the global spin-flip symmetry forces the magnetization `⟨σ_o⟩_{β,0}` to vanish.
+Let $G = (V, E)$ be a finite simple graph, $\beta \in \mathbb{R}$ and $o \in V$. At zero field the
+magnetization vanishes: $\langle \sigma_o \rangle_{\beta, 0} = 0$, by the symmetry of the Gibbs
+distribution under the [global spin flip](flip-cfg.md).

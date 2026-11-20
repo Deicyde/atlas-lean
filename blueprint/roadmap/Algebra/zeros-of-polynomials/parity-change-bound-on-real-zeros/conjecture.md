@@ -9,4 +9,5 @@ $0 \le k \le n$ has at most $v(f)$ distinct real zeros.
 
 ## Sources
 
-- AMR-021-0014.
+- B. Shapiro, "Problems with polynomials: the good, the bad and the ugly", *Arnold Mathematical Journal* 1 (2015), 91–99, Conjecture 9.
+- Olga Katkova, Boris Shapiro and Anna Vishnyakova, In search of Newton-type inequalities, arXiv:2403.12200v1 (2024), Conjecture 2 (restating Conjecture 9 of Shapiro's paper), which bounds the number of real zeros; this page counts distinct real zeros.

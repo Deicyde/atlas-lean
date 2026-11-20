@@ -9,4 +9,4 @@ $$\sum_{j=0}^{n} F^{(m-2)}_j \bigl(F^{(m)}_{n-j} - F^{(m-1)}_{n-j}\bigr) =
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 10.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 10.

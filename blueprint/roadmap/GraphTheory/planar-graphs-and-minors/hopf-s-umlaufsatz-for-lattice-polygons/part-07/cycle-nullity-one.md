@@ -1,3 +1,3 @@
 # Cycle graph has cycle rank one
 
-The cycle graph has nullity (cycle rank) `1`.
+For every natural number $m$, the cycle graph $C_{m+3}$ has cycle rank $|E| + c - |V| = (m + 3) + 1 - (m + 3) = 1$.

@@ -26,3 +26,8 @@
 - [What the decoder returns](decode-eq-some-iff.md)
 - [The decoder fails exactly when no codeword is close](decode-eq-none-iff.md)
 - [Berlekamp-Welch corrects every error of weight at most $\lfloor (n-k)/2 \rfloor$](decode-encode-add.md)
+
+## Related topics
+
+- [List decoding](../list-decoding/README.md): beyond half the minimum distance, Reed–Solomon codes of rate $R$ are list decodable up to a $1 - \sqrt{R}$ fraction of errors (Johnson bound), and the Guruswami–Sudan algorithm is proved correct for any admissible parameters.
+- [Bounds on code size](../bounds-on-code-size/README.md): the Singleton bound that Reed–Solomon codes meet with equality.

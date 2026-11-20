@@ -5,4 +5,4 @@ $\delta_0$ of the rounding indicator for $p$ and $d$ satisfies $\delta_0(0) = 0$
 
 ## Sources
 
-- Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `δ₀` (`δ₀(0) = 0`).
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 7 ($\delta_0(0) = 0$).

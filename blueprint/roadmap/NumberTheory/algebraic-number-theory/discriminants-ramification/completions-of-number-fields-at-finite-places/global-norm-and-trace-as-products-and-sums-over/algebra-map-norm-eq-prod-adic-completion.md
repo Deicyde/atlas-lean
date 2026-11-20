@@ -10,4 +10,4 @@ viewed in $L_w$ and the product runs over the finite places $w$ of $L$ lying ove
 
 ## Sources
 
-- Corollary 11.24, norm part.
+- ATLAS NumberTheoryI, Section 11.4, Corollary 11.24 (norm part).

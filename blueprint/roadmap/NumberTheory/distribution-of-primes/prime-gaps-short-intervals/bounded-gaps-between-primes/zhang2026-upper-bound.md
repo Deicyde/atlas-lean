@@ -6,4 +6,4 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 ## Sources
 
-- Zhang, Zenodo 10.5281/zenodo.22135842, 28 August 2026, as quoted in constants/88a.md.
+- Zhang, Zenodo 10.5281/zenodo.22135842, 28 August 2026, as quoted in teorth/optimizationproblems, `constants/88a.md`.

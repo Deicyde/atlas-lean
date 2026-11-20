@@ -5,4 +5,5 @@ is Euler's totient function, has positive lower density in $\mathbb{N}$.
 
 ## Sources
 
+- Erdős Problem #822, https://www.erdosproblems.com/822.
 - M. R. Gabdullin, V. V. Iudelevich, and F. Luca, Numbers of the form k + f(k), Journal of Number Theory 262 (2024), 58–85, https://doi.org/10.1016/j.jnt.2024.03.010.

@@ -1,4 +1,6 @@
 # Preimage of SAT under a polynomial-time map is in NP
 
-Pulling SAT back along a polynomial map preserves NP membership.
-SAT verifier soundness holds even for certificates above its length bound.
+Let $\mathrm{SAT}$ be the decision problem that accepts exactly the bitstrings encoding a
+satisfiable formula in conjunctive normal form. If $f$ is a map from bitstrings to bitstrings
+computable in polynomial time with the canonical bitstring encodings, then the decision problem
+$x \mapsto \mathrm{SAT}(f(x))$ is in NP.

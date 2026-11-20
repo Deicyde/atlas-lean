@@ -9,4 +9,5 @@ $\psi_n^2 \le C (\log n)^2 \, \Sigma$.
 
 ## Sources
 
-- Jambulapati--Lee--Vempala, arXiv:2208.11644v1, KLS/thin-shell comparison.
+- A. Jambulapati, Y. T. Lee and S. S. Vempala, *A slightly improved bound for the KLS constant*, arXiv:2208.11644v1
+  (2022), the comparison of the KLS and thin-shell constants.

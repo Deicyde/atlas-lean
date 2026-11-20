@@ -1,4 +1,4 @@
-# Proved type-beta conversion for pure Fω
+# Type β-conversion for pure Fω
 
 - [Type-beta conversion in Fω](conv.md)
 - [Soundness of type-beta conversion in kind algebras](sound.md)

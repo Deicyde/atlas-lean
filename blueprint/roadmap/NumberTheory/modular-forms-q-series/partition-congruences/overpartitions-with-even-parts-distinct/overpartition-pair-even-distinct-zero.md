@@ -6,4 +6,4 @@ with even parts distinct equals $1$ (the pair of empty overpartitions).
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
+- Adam Paksok and Nipen Saikia, *New Congruences for $[j, k]$-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).

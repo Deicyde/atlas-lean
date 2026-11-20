@@ -1,5 +1,3 @@
 # Face count of a finite graph from its cycle rank
 
-The face count `nullity G + 1`. For a finite subgraph of `ℤ²` it is the number of faces,
-including the unbounded one (`StatMech.Lattice.jed_faithfulDiscreteJordan` counts the bounded
-ones); as a definition it is purely combinatorial.
+For a simple graph $G$ on a vertex set $V$, the face count is $F(G) = \beta(G) + 1$, where $\beta(G) = (|E(G)| + c(G)) - |V|$ is the cycle rank, $c(G)$ the number of connected components, and cardinalities of infinite sets are taken to be $0$. The definition is purely combinatorial; for a finite graph in the square lattice it equals the number of faces, the unbounded one included.

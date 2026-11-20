@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 17.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Theorem 17.

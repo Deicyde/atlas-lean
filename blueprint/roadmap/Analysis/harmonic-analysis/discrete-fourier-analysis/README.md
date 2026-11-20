@@ -10,3 +10,4 @@ Fourier analysis on finite abelian groups and the Boolean cube: DFT and FFT, Pla
 - [Hausdorff–Young inequality on finite abelian groups](hausdorff-young-inequality-on-finite-abelian-gro/README.md)
 - [Young's convolution inequality on finite groups](young-s-convolution-inequality-on-finite-groups/README.md)
 - [Convolution theorem for the discrete Fourier transform](inv-dft-mul-dft.md)
+- [Spectral structure of Boolean functions](spectral-structure-of-boolean-functions/README.md)

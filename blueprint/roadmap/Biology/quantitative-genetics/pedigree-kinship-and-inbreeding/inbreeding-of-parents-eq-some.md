@@ -1,4 +1,3 @@
-# Malécot
+# Inbreeding coefficient is the kinship of the parents
 
-The inbreeding coefficient of `i` is the kinship of its parents,
-`F i = φ f m`, under gene dropping.
+In a [pedigree](pedigree.md), if $i$ has parents $f(i), m(i)$, then its [inbreeding coefficient](inbreeding.md) is the [gene-dropping kinship](gene-drop-kinship.md) of its parents: $F_i = \varphi^{\mathrm{gd}}_{f(i) m(i)}$ (Malécot).

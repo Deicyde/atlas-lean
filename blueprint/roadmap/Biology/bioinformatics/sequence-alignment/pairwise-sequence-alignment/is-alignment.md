@@ -1,6 +1,7 @@
 # Valid alignment of two sequences
 
-A list $A$ of columns, each a pair of optional letters,
-is an alignment of sequences $x$ and $y$ when no column has both entries empty, the letters
-present in the first entries of the columns, read in order, form $x$, and the letters present in
-the second entries, read in order, form $y$.
+An [alignment](alignment.md) is a valid alignment of the sequences $x$ and $y$ if
+
+- no column is $(-, -)$;
+- the letters of its first row, read in order, are $x$;
+- the letters of its second row, read in order, are $y$.

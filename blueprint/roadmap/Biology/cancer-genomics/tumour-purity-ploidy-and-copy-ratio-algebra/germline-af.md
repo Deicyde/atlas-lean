@@ -1,5 +1,11 @@
 # Expected allelic fraction of a germline variant
 
-Expected allelic fraction `((1 - α) + α g) / (α q + 2 (1 - α))` of a heterozygous germline
-variant present in `g` copies per cancer cell at a locus of copy number `q` (Carter et al.
-2012, Eq. 11).
+For real numbers $\alpha$ (purity), $q$ (local copy number) and $g$ (copies per cancer cell), the expected allelic fraction of a heterozygous germline variant is
+
+$$\frac{(1 - \alpha) + \alpha g}{\alpha q + 2(1 - \alpha)},$$
+
+with the convention $x/0 = 0$ (Carter et al. 2012, Eq. 11).
+
+## Sources
+
+- S. L. Carter et al., *Absolute quantification of somatic DNA alterations in human cancer*, Nat. Biotechnol. 30 (2012), 413–421, Eq. 11.

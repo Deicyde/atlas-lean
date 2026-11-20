@@ -1,7 +1,7 @@
 # Homozygosity recursion in the infinite-alleles model
 
-One generation of drift and mutation in the infinite-alleles model with `M` gene copies and
-mutation probability `u` per copy: `F' = (1 - u)² (1/M + (1 - 1/M) F)`. The model domain is
-`2 ≤ M` (two distinct copies must exist) and `0 ≤ u ≤ 1`; the theorems below assume only
-`1 ≤ M`, and `M = 1` is an algebraic extension with no biological meaning. For `M = 0` the
-definition uses the junk value `1/0 = 0`.
+For a natural number $M$ and real numbers $u$ and $F$, let
+
+$$F' = (1 - u)^2 \Bigl(\frac{1}{M} + \Bigl(1 - \frac{1}{M}\Bigr) F\Bigr),$$
+
+with the convention $1/0 = 0$. For $M \ge 2$ gene copies, mutation probability $0 \le u \le 1$ per copy and $0 \le F \le 1$, it is the homozygosity after one generation of drift and mutation in the infinite-alleles model, starting from homozygosity $F$.

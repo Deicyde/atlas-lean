@@ -1,3 +1,3 @@
 # Nonnegativity of the Moran up-step probability
 
-The up-step probability is nonnegative on the states `0 ≤ i ≤ N`.
+For every real $r > 0$ and natural numbers $i \le N$, the [up-step probability](moran-up.md) satisfies $a_i \ge 0$.

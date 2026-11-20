@@ -1,3 +1,3 @@
 # Origin of the hypercubic lattice
 
-The origin `0 ∈ ℤ^d`.
+For $d \in \mathbb{N}$, the origin of $\mathbb{Z}^d$ is the site $0 = (0, \dots, 0)$.

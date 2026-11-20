@@ -1,6 +1,3 @@
-# The representer theorem
+# The representer theorem for finite-dimensional outputs
 
-**The representer theorem** (Schölkopf, Herbrich and Smola, Theorem 1): for a
-finite-dimensional output space `V` (for instance a scalar kernel, `V = 𝕜`) and `Ω` strictly
-increasing on `[0, ∞)`, every global minimizer of `L (f x₁, …, f xₙ) + Ω ‖f‖` is a kernel
-expansion `∑ i, kerFun H (x i) (c i)`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $V$ be a finite-dimensional Hilbert space over $\mathbb{K}$ (for instance $V = \mathbb{K}$, a scalar kernel), let $H$ be a reproducing kernel Hilbert space of functions $X \to V$ with kernel functions $k_x$, and let $x_1, \dots, x_n \in X$, $L : V^n \to \mathbb{R}$ and $\Omega : \mathbb{R} \to \mathbb{R}$ with $\Omega$ strictly increasing on $[0, \infty)$. Every global minimizer $f \in H$ of the [regularized risk](regularized-risk.md) $L(f(x_1), \dots, f(x_n)) + \Omega(\|f\|)$ is a [kernel expansion](kernel-expansion.md): $f = \sum_{i=1}^n k_{x_i} c_i$ for some $c \in V^n$. This is a version, with finite-dimensional outputs, of the generalized representer theorem of B. Schölkopf, R. Herbrich and A. J. Smola, *A generalized representer theorem*, COLT 2001.

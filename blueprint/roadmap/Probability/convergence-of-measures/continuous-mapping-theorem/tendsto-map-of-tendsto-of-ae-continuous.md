@@ -6,7 +6,7 @@ $g : \mathbb{R} \to \mathbb{R}$ be a measurable function whose set of discontinu
 $\mu$-measure zero. If $\mu_n$ converges weakly to $\mu$ as $n \to \infty$, then the pushforward
 probability measures $\mu_n \circ g^{-1}$ converge weakly to $\mu \circ g^{-1}$.
 
-This generalizes the case where $g$ is continuous everywhere, which is already in Mathlib.
+This generalizes the case where $g$ is continuous everywhere.
 
 ## Sources
 

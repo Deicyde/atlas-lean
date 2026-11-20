@@ -9,4 +9,4 @@ $$\gamma(N) \le \tfrac{1}{2} N^2 - \tfrac{1}{2} N + 1.$$
 
 ## Sources
 
-- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 4.
+- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Journal of Integer Sequences 29 (2026), Article 26.1.5, Proposition 4.

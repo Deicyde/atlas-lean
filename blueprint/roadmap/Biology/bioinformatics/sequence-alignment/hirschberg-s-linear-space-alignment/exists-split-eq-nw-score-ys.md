@@ -1,8 +1,3 @@
-# Every cut of the second list extends to an optimal split
+# Every cut of the second sequence extends to an optimal split
 
-Fix a type $\alpha$, a
-substitution score $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$.
-Write $S(u, v)$ for the Needleman–Wunsch score of lists $u$, $v$, and $u_{\lt m}$ for the first
-$m$ elements of $u$ and $u_{\ge m}$ for the rest. For all lists $xs$, $ys$ over $\alpha$ and
-every $m \le |ys|$, there is $k \le |xs|$ with
-$S(xs_{\lt k}, ys_{\lt m}) + S(xs_{\ge k}, ys_{\ge m}) = S(xs, ys)$.
+For all sequences $x, y$ and $m \le |y|$, there is $k \le |x|$ with $\mathrm{NW}(x_{<k}, y_{<m}) + \mathrm{NW}(x_{\ge k}, y_{\ge m}) = \mathrm{NW}(x, y)$, with the notation of [the split bound](split-score-le-nw-score-ys.md).

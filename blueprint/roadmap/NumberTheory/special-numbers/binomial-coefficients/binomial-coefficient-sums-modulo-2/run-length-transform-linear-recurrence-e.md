@@ -1,4 +1,4 @@
-# Run length transform of a linear recurrence (Rampersad–Wiebe Theorem 1)
+# Linear representation of the run length transform of a linear recurrence
 
 Let $r \ge 0$, let
 $d_0, \dots, d_r$ be integers, and let $S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = 1$ and

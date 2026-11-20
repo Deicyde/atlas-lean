@@ -12,4 +12,4 @@ $\varphi + 1$). In particular $g(0) = 1$ and $g(1) = 0$.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fg` (arXiv:2512.11601v1).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition 1, p. 2 (the sequence $g$), and Table 1, p. 3 (its values); arXiv:2512.11601v1.

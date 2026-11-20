@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 6
+# Wilf-equivalence of $\{\bar10, \bar00, 0\bar1, 00\}$ and $\{\bar10, 0\bar1, 0\bar0, 00\}$
 
 Write $\bar{I}_n(B)$ for the set of signed inversion
 sequences of length $n$ that avoid every length-2 signed pattern in $B$, where a pattern is

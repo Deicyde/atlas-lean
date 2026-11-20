@@ -2,7 +2,10 @@
 
 There is a 2-adic integer $z \in \mathbb{Z}_2$
 such that $z \equiv \operatorname{od}((2^{e-1})!) \pmod{2^e}$ in $\mathbb{Z}_2$ for every natural
-number $e \ge 1$, where $\operatorname{od}(n)$ is the odd part of $n$.
+number $e \ge 3$, where $\operatorname{od}(n)$ is the odd part of $n$.
+
+The congruences start at $e = 3$: at $e = 2$ and $e = 3$ they would require $z \equiv 1 \pmod 4$
+and $z \equiv 3 \pmod 8$, which no $z$ satisfies.
 
 ## Sources
 

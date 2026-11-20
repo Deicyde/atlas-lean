@@ -6,4 +6,4 @@ modulo the integers from $1$ to $\lfloor n/2 \rfloor$.
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of `S(n)`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of $S(n)$).

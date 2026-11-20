@@ -14,4 +14,4 @@ formula, and equality on all natural complex points finishes the polynomial argu
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex, lines 662-670.
+- Redha Chellal, Farid Bencherif, and Mohamed Mehbali, *An Identity for Generalized Bernoulli Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.11.2, Section 5.8 (Neto's identity), equation (59), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.html>; originally A. F. Neto, *Carlitz's identity for the Bernoulli numbers and Zeon algebra*, Journal of Integer Sequences 18 (2015), Article 15.5.6.

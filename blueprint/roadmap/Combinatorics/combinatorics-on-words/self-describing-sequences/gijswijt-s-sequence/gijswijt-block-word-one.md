@@ -7,4 +7,4 @@ and hence the empty string.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, proof of Lemma 11 (case `u = 1`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, proof of Lemma 11 (case $u = 1$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

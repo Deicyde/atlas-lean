@@ -1,4 +1,4 @@
-# Negative polar agrees with the inner dual of the negated cone
+# Negative polar agrees with the dual of the negated cone
 
-In a complete ambient space, the negative polar agrees with Mathlib's
-inner dual of the negated carrier.
+Let $E$ be a real Hilbert space and $K \subseteq E$. The [negative polar cone](polar-cone.md) of $K$
+is the dual cone $\{y : \langle x, y\rangle \ge 0 \text{ for all } x \in -K\}$ of $-K$.

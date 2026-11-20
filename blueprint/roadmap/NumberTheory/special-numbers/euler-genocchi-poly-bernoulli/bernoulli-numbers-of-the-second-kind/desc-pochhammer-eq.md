@@ -10,4 +10,4 @@ $$X^{\underline{n}} = B_n^* + \sum_{k=1}^{n} \frac{n}{k} \, s(n-1, k-1) \, B_k(X
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 5.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Theorem 5.

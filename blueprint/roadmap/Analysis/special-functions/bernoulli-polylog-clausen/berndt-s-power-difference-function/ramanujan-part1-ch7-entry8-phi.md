@@ -11,4 +11,4 @@ $Z_r(x) = \sum_{k=1}^{\lfloor r/2 \rfloor} \binom{r+1}{2k}\, k\, \zeta(1 - 2k)\,
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8, for Berndt's `φ_r` (`chapter7Phi`) on its domain `-1 < x < 0`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8, for Berndt's $\varphi_r$ on its domain $-1 < x < 0$.

@@ -5,4 +5,4 @@ nonnegative integers, the initial average $A_{1,0}(\eta)$ of its first entry equ
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 2.
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 2.

@@ -1,6 +1,8 @@
-# Switching lemma
+# Switching lemma (weighted form)
 
-**Switching lemma** (weighted form). If `u ≠ v` are connected by odd edges of `m`, the
-weighted sums over splittings with sources `A ∆ {u, v}` and `A` agree.
+Let $G = (V, E)$ be a finite simple graph, $\beta \in \mathbb{R}$, $J$ real couplings, $m$ a current and $u \ne v$ vertices connected through the edges of $G$ with
+odd $m_e$, and let $F \in \mathbb{R}$. With the [weight](weight.md) $w$, for every $A \subseteq V$,
 
-M. Aizenman, *Geometric analysis of φ⁴ fields and Ising models*, Comm. Math. Phys. 86 (1982).
+$$\sum_{K \le m,\ \partial K = A \triangle \{u, v\}} F\, w(K)\, w(m - K) = \sum_{K \le m,\ \partial K = A} F\, w(K)\, w(m - K),$$
+
+the sums over the currents $K \le m$ pointwise (M. Aizenman, *Geometric analysis of $\varphi^4$ fields and Ising models*, Comm. Math. Phys. 86 (1982) 1–48).

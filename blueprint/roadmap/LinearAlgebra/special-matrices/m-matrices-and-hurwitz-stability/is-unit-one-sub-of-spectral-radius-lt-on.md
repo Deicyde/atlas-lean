@@ -1,4 +1,5 @@
 # Invertibility of 1 − K when the spectral radius is below one
 
-If the spectral radius of `K` is `< 1`, then `1` is not an eigenvalue of `K`, so `1 - K`
-is invertible.
+Let $K$ be a real square matrix, with rows and columns indexed by a finite set, whose spectral
+radius, as a complex matrix, is less than $1$. Then $1$ is not an eigenvalue of $K$, so $I - K$ is
+invertible.

@@ -7,4 +7,4 @@ $q$ of $x$ in Slow $A$-Nim, that is, of some position reached from $x$ by one le
 
 ## Sources
 
-- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition 3.
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow$A$-Nim*, INTEGERS 26 (2026), Article G3, Definition 3.

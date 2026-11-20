@@ -1,4 +1,4 @@
 # Leading principal submatrix
 
-The leading `k × k` principal submatrix of `A`: the submatrix on the
-first `k` rows and columns.
+For a square $n \times n$ matrix $A$ and $0 \le k \le n$, the leading principal submatrix of order
+$k$ is the $k \times k$ submatrix of $A$ formed by its first $k$ rows and first $k$ columns.

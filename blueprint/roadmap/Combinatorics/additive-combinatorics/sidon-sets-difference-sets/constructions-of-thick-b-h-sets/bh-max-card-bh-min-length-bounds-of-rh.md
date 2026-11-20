@@ -10,4 +10,4 @@ every natural number $n$ satisfies $R_h(n) \ge n^{1/h} - (7 + (\log n)/h)\, n^{1
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(d) (`jis-2024-24.1.2-thm-5`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(d) (`jis-2024-24.1.2-thm-5`).

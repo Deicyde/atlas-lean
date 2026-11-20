@@ -10,4 +10,4 @@ factors in opposite orders, which agree because $R$ is commutative.
 
 ## Sources
 
-- JIS VOL18/Wojcik, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Wojcik/wojcik6.tex>, lines 276–280; JIS VOL8/Huang, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>, lines 176–179.
+- Klaudiusz Wójcik, *Binomial Transform and Dold Sequences*, Journal of Integer Sequences 18 (2015), Article 15.1.1, Section 2 (definition of a Newton sequence), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Wojcik/wojcik6.tex>; Bau-Sen Du, Sen-Shan Huang and Ming-Chia Li, *Newton, Fermat, and Exactly Realizable Sequences*, Journal of Integer Sequences 8 (2005), Article 05.1.2, Section 2 (Newton's identities), <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>.

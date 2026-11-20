@@ -7,4 +7,5 @@ $i$-th coordinate.
 
 ## Sources
 
-- `constants/20b.md`, covariance definition.
+- B. Klartag and J. Lehec, *Affirmative resolution of Bourgain's slicing problem using Guan's bound*, arXiv:2412.15044v1 (2024), Introduction, definition of the covariance matrix $\operatorname{Cov}(\mu)$; Geom. Funct. Anal. 35 (2025), 1147–1168.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20b.md`.

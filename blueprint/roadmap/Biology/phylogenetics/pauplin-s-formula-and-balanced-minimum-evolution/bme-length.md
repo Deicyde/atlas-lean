@@ -1,7 +1,11 @@
 # Balanced minimum-evolution length
 
-The **balanced minimum-evolution length** of the topology of `T` for a dissimilarity `d`
-(Desper and Gascuel 2002): `∑_{i<j} 2^{1-τ_ij} (d(i, j) + d(j, i)) / 2`. It depends on `T`
-only through the topological distances `τ_ij`. Each term is symmetrized, so the value does
-not depend on the orientation `T.pairs` happens to assign to a pair: swapping the children of
-a node, or the two sides of the root edge, leaves `bmeLength` unchanged.
+For an [unrooted binary tree](utree.md) $T$ and a real dissimilarity $d$ on $X$, the balanced minimum-evolution length is
+
+$$\mathrm{BME}(T, d) = \sum_{(x, y, \ell, \tau)} 2^{1 - \tau}\, \frac{d(x, y) + d(y, x)}{2},$$
+
+the sum over the [leaf pairs](pairs-2.md) of $T$ (Desper and Gascuel 2002). It depends on $T$ only through the edge counts $\tau$.
+
+## Sources
+
+- R. Desper and O. Gascuel, *Fast and accurate phylogeny reconstruction algorithms based on the minimum-evolution principle*, J. Comput. Biol. 9 (2002), 687–705.

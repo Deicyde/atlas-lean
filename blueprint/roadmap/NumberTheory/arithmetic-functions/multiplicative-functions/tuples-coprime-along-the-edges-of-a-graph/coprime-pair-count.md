@@ -9,4 +9,4 @@ exactly when it is at least $r$, and $\beta = \beta_0$.
 
 ## Sources
 
-- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, displays (def_beta), (def_beta_exact), (def_beta_least).
+- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, the displays labelled `def_beta`, `def_beta_exact` and `def_beta_least` in the TeX source, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex.

@@ -12,4 +12,4 @@ Here subtraction of natural numbers is truncated at $0$.
 
 ## Sources
 
-- A. Dzhumadil'daev and D. Yeliussizov, *Power Sums of Binomial Coefficients*, Journal of Integer Sequences 16 (2013), Article 13.1.4, Theorem Worpitzky, lines 212-217, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Yeliussizov/dzhuma6.tex>, quoting A. S. Dzhumadil'daev, *Worpitzky identity for multipermutations*, Mat. Zametki 90 (2011), 464-466.
+- Askar Dzhumadil'daev and Damir Yeliussizov, *Power Sums of Binomial Coefficients*, Journal of Integer Sequences 16 (2013), Article 13.1.4, Theorem 2, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Yeliussizov/dzhuma6.pdf>, quoting A. S. Dzhumadil'daev, *Worpitzky identity for multipermutations*, Mat. Zametki 90 (2011), 464–466.

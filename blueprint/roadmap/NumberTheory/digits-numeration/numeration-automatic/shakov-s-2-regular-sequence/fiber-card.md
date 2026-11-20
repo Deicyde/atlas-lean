@@ -10,4 +10,4 @@ $\sum_{m \ge 0} \tau(m^2 + 1) x^m = \sum_{n \ge 1} x^{s(n)}$ of formal power ser
 
 ## Sources
 
-- Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Theorem 4.
+- Anton Shakov, *A 2-Regular Sequence That Counts The Divisors of $n^2 + 1$*, Journal of Integer Sequences 28 (2025), Article 25.6.2, arXiv:2510.22805, Theorem 4.

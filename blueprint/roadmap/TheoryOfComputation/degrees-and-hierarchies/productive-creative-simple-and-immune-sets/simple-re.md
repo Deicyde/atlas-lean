@@ -1,7 +1,8 @@
 # A simple set is recursively enumerable
 
-**A simple set is recursively enumerable**, by definition.
+Every simple set of natural numbers is recursively enumerable; this is part of the definition of a
+simple set.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 5.3.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

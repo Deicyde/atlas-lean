@@ -13,4 +13,4 @@ is, taken by a car that prefers it.
 
 ## Sources
 
-- Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Corollary 23.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions", Journal of Integer Sequences 29 (2026), Article 26.1.1, Corollary 23.

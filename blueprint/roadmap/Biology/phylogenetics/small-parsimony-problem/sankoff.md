@@ -1,4 +1,3 @@
 # Sankoff's algorithm
 
-The minimum cost of the subtree `t` given the state `s` at its
-root, computed by Felsenstein's pruning recursion over the tropical semiring.
+For observed states $\sigma$, a tree $t$ with costs and a state $s$, Sankoff's cost $\mathrm{Sk}(t, s)$ is the [pruning recursion](../felsenstein-s-pruning-algorithm/prune.md) over the [cost semiring](cost.md) with the [tropical leaf weights](leaf-obs.md) of $\sigma$: the minimum cost of the subtree given state $s$ at its root.

@@ -6,4 +6,4 @@ for some augmented $(k+1)$-Dyck paths $\mu_1, \ldots, \mu_{k+1}$, each of some s
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 4 (`jis-2024-24.2.4-lem-4`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 4 (`jis-2024-24.2.4-lem-4`).

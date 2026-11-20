@@ -6,4 +6,4 @@ $R_3(n + 3p) \equiv R_3(n) \pmod{p}$.
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, second part (`jis-2026-26.2.6-thm-6`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, second part.

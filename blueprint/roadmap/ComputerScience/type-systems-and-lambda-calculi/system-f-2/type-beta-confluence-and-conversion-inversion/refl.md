@@ -1,3 +1,4 @@
 # Reflexivity of parallel type-beta reduction
 
-Parallel reduction is reflexive on every kinded operator.
+For every [type operator](../intrinsically-kinded-type-operators-for-pure-f/ty.md) $A$, $A
+\Rrightarrow A$ ([parallel type β-reduction](par.md)).

@@ -1,4 +1,4 @@
-# Explicit sum for the (-r)-Lucas polynomials, second form
+# Explicit sum for the companion sequence $V^{(-r)}$, second form
 
 Let $K$ be a field of
 characteristic zero, $r \ge 2$, $x \in K$ and $y \in K$ nonzero, and write
@@ -12,4 +12,4 @@ plus $r y^{-n/r}$ when $r \mid n$.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.

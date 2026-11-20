@@ -6,4 +6,4 @@ from left to right, of its maximal runs of equal consecutive letters, each recor
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3 (blocks of maximal length of consecutive `1`-peaks and `0`-valleys).
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3 (blocks of maximal length of consecutive $1$-peaks and $0$-valleys).

@@ -1,3 +1,5 @@
 # Gametic linkage disequilibrium
 
-The gametic linkage disequilibrium `D = E (X₁ - p) (Y₁ - q)`.
+For a [two-locus genotype under random union](random-union.md) on $P$ with allele frequencies $p$ and $q$, the gametic linkage disequilibrium is
+
+$$D = \int (X_1 - p)(Y_1 - q) \, dP.$$

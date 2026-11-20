@@ -4,4 +4,4 @@ Every decision problem in BPP lies in PSPACE.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009 (BPP ⊆ PSPACE).
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009 (BPP ⊆ PSPACE).

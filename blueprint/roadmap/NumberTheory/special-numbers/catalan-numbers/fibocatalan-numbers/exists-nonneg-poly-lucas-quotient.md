@@ -1,7 +1,6 @@
 # The Lucas quotient $\{2n+1\} \{2\} \{2n\}!/(\{n+2\}! \, \{n\}!)$ has non-negative coefficients
 
-**The Lucas quotient $\{2n+1\} \{2\} \{2n\}!/(\{n+2\}! \, \{n\}!)$ has non-negative
-coefficients.** Let $\{k\}$ be the Lucas polynomials in $s$ and $t$ ($\{0\} = 0$, $\{1\} = 1$,
+Let $\{k\}$ be the Lucas polynomials in $s$ and $t$ ($\{0\} = 0$, $\{1\} = 1$,
 $\{k+2\} = s\{k+1\} + t\{k\}$) and let $\{k\}! = \{1\}\{2\} \cdots \{k\}$ be the Lucas
 factorial. For every natural number $n \ge 1$,
 
@@ -15,4 +14,4 @@ with non-negative integer coefficients.
 
 ## Sources
 
-- Kendra Killpatrick, "Super FiboCatalan Numbers and Their Lucas Analogues", Corollary 12.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, Corollary 12.

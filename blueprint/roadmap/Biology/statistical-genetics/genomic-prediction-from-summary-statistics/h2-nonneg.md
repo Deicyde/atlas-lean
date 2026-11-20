@@ -1,3 +1,3 @@
 # Nonnegativity of heritability in the effect-estimate model
 
-The model forces `h² ≥ 0` when there is at least one marker.
+In every [effect-estimate model](prsmodel.md) with $M > 0$ markers, the heritability satisfies $h^2 \ge 0$.

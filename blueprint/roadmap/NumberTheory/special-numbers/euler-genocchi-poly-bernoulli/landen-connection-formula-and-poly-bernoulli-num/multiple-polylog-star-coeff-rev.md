@@ -15,4 +15,4 @@ $\sum_{0 < m_1 \le \cdots \le m_r} z^{m_r} / (m_1^{k_1} \cdots m_r^{k_r})$.
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of `Li⋆_k(z)`.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of $\mathrm{Li}^\star_{\mathbf{k}}(z)$.

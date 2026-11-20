@@ -1,6 +1,7 @@
-# Auxiliary row computation for the Smith–Waterman table
+# Remaining cells of a Smith–Waterman table row
 
-The cells `H[i+1][j+1], H[i+1][j+2], …` of a row from the remaining letters `b :: ys` of the
-second sequence, the remaining cells `up :: prev` of the previous row, the previous row's cell
-`diag` to the upper left and the cell `left` just computed. A previous row that is too short ends
-the row early (this does not happen for rows of the table, `nextRow_eq`).
+For a letter $a$, remaining letters $b_1 \cdots b_k$ of the second sequence, remaining cells $u_1, u_2, \dots$ of the previous row, an upper-left value $d$ and a left value $l$, the remaining cells are empty if $k = 0$ or if the previous row has no remaining cell; otherwise the first cell is
+
+$$c = \max\bigl(0,\ d + \sigma(a, b_1),\ u_1 + g,\ l + g\bigr),$$
+
+followed by the remaining cells for $a$, $b_2 \cdots b_k$, $u_2, u_3, \dots$, upper-left value $u_1$ and left value $c$.

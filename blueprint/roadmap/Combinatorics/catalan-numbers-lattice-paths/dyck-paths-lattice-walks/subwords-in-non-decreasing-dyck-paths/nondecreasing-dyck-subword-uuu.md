@@ -12,4 +12,4 @@ for every $n \ge 1$, $10\, d_{UUU}(n) = -(5n + 4) F_{2n} + 3n L_{2n}$.
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 4 (`jis-2025-25.1.6-thm-4`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 4 (`jis-2025-25.1.6-thm-4`).

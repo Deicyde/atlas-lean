@@ -4,7 +4,9 @@ Let $F$ be a field. The Dirichlet convolution
 of functions $\alpha$ and $\beta$ from $F[T]$ to $\mathbb{C}$ is the function $\alpha * \beta$
 given at $f \in F[T]$ by
 
-$$(\alpha * \beta)(f) = \sum_{g \text{ monic},\ g \mid f} \alpha(g)\, \beta(f/g),$$
+$$
+(\alpha * \beta)(f) = \sum_{g \text{ monic},\ g \mid f} \alpha(g)\, \beta(f/g),
+$$
 
 the sum running over the monic divisors $g$ of $f$.
 

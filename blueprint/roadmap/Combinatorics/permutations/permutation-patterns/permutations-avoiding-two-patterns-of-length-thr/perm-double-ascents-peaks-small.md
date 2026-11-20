@@ -10,4 +10,4 @@ $\operatorname{vl}(213) = 1$.
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`, `ddes`, `pk`, `vl`).
+- Tian Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`, `ddes`, `pk`, `vl`).

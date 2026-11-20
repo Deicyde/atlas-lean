@@ -8,4 +8,5 @@ $x_i x_j$ is $\mu$-integrable, and $f \log f$ is Lebesgue integrable.
 
 ## Sources
 
-- `constants/20b.md`; finite moments and entropy integrability ensure the displayed real integrals do not use the non-integrable default value.
+- B. Klartag and J. Lehec, *Affirmative resolution of Bourgain's slicing problem using Guan's bound*, arXiv:2412.15044v1 (2024), Introduction, definition of log-concave functions and measures, and definition (3) of the isotropic constant $L_\mu$; Geom. Funct. Anal. 35 (2025), 1147–1168.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20b.md`.

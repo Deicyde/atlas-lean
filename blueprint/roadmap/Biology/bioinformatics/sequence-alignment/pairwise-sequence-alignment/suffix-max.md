@@ -1,9 +1,3 @@
 # Suffix maximum of Needleman–Wunsch scores
 
-Given a substitution score $\sigma$ and an
-integer gap score $g$, the suffix maximum of lists $xs$ and $ys$ is the maximum of the
-Needleman–Wunsch scores of all pairs $(u, v)$ with $u$ a suffix of $xs$ and $v$ a suffix of
-$ys$.
-
-The maximum is taken with floor $0$, which changes nothing, since the pair of empty suffixes
-scores $0$.
+The suffix maximum of $x$ and $y$ is $S(x, y) = \max\bigl(0, \max_{(x', y')} \mathrm{NW}(x', y')\bigr)$, the maximum over the [suffix pairs](suffix-pairs.md), where $\mathrm{NW}$ is the [Needleman–Wunsch score](nw-score.md).

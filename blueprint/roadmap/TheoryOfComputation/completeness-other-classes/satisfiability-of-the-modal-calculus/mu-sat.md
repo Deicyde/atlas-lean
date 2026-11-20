@@ -1,4 +1,5 @@
-# Satisfiability of a closed modal μ-calculus formula
+# Satisfiability of a modal μ-calculus formula
 
-A closed μ-calculus formula is satisfiable: some Kripke model has a world
-satisfying it under the empty environment.
+A modal μ-calculus formula $\varphi$ with atoms in $\mathbb{N}$ is satisfiable when some Kripke
+model has a world at which $\varphi$ holds in the empty environment, which interprets every free
+fixpoint variable as the empty set of worlds.

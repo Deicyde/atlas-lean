@@ -7,4 +7,4 @@ $x_{i+1} = x_i + d$.
 
 ## Sources
 
-- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "`S`-diffsequence", i.e. `x_{i+1} - x_i ∈ S`, stated additively as `x (i+1) = x i + d` with `d ∈ S`.
+- Open Problem Garden, *2-accessibility of primes*, http://www.openproblemgarden.org/op/2_accessibility_of_primes: definition of $S$-diffsequences, $x_{i+1} - x_i \in S$.

@@ -1,3 +1,4 @@
 # Mutant frequency at the interior equilibrium
 
-The mutant frequency at the interior equilibrium is `1 - x* = σ (1 - Q)/(σ - 1)`.
+For $\sigma > 1$ and every real $Q$, the mutant frequency at the [interior equilibrium](master-equilibrium.md) $x^* = (\sigma Q - 1)/(\sigma - 1)$ is
+$1 - x^* = \sigma(1 - Q)/(\sigma - 1)$.

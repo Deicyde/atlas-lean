@@ -8,4 +8,4 @@ $$\frac{1}{e^2 n} \left(\frac{\pi e^2}{4}\right)^n <
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Corollary 14.26 (second inequality), with $n$ the degree of a number field and $s$ its number of complex places.
+- ATLAS NumberTheoryI, Corollary 14.26 (second inequality), with $n$ the degree of a number field and $s$ its number of complex places.

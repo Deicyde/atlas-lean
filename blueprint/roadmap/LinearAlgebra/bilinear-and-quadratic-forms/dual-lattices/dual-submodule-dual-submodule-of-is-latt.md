@@ -12,4 +12,4 @@ torsion-free module is flat, hence projective, hence reflexive.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Proposition 5.16.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 5, Proposition 5.16, https://math.mit.edu/classes/18.785/2021fa/LectureNotes5.pdf.

@@ -9,7 +9,7 @@
 - [Continuously differentiable functions with Hölder derivative](is-cont-diff-holder.md)
 - [Continuously differentiable functions with Hölder derivative on a set](is-cont-diff-holder-on.md)
 
-## Finite Time Singularity
+## The Euler equations and Elgindi's theorem
 
 - [Spatial directional derivative of a time-dependent vector field](directional-deriv.md)
 - [Time derivative](time-deriv.md)

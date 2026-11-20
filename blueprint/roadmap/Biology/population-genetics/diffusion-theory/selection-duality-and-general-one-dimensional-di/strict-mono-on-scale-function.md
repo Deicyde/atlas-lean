@@ -1,3 +1,3 @@
 # Scale function is strictly increasing
 
-The scale function is strictly increasing on `[0, 1]`.
+For every [regular diffusion](is-regular-diffusion.md) with drift $b$ and variance $a$, the [scale function](scale-function.md) $S$ is strictly increasing on $[0, 1]$.

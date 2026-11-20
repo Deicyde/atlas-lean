@@ -7,4 +7,4 @@ primes $p$ with $s_p(n) \ge p$, equals the denominator of the polynomial $B_n(x)
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, definition of `𝔻_n` and equation (2.3), quoting Kellner (2017), Section 5.
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, definition of $\mathbb{D}_n$ and equation (8), quoting Bernd C. Kellner, *On a product of certain primes*, Journal of Number Theory 179 (2017), 126–141, Section 5.

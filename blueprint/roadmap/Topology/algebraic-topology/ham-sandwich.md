@@ -8,4 +8,4 @@ $\{x : \langle v, x \rangle \ge t\}$ have $\mu_i$-measure equal to $\mu_i(\mathb
 
 ## Sources
 
-- A. H. Stone and J. W. Tukey, Duke Math. J. 9 (1942) 356–359 ham sandwich theorem; J. Matoušek, Using the Borsuk–Ulam Theorem; Lean states measure-theoretic Euclidean specialization with `μ i ≪ volume` making the bisecting hyperplane null.
+- A. H. Stone and J. W. Tukey, Duke Math. J. 9 (1942) 356–359 ham sandwich theorem; J. Matoušek, Using the Borsuk–Ulam Theorem.

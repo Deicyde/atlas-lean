@@ -1,8 +1,10 @@
 # Normalization of Levene's distribution
 
-For `nA ≤ 2N` the probabilities
-`leveneProb N nA h` over the admissible heterozygote counts `h` sum to one.
+Let $N, n_A \in \mathbb{N}$ with $n_A \le 2N$. Then [Levene's probabilities](levene-prob.md) sum to one over the possible heterozygote counts:
+
+$$\sum_{h=0}^{n_A} L(N, n_A, h) = 1.$$
 
 ## Sources
 
-- Levene (1949); Wigginton, Cutler and Abecasis (2005).
+- H. Levene, *On a matching problem arising in genetics*, Ann. Math. Statist. 20 (1949), 91–94.
+- J. E. Wigginton, D. J. Cutler and G. R. Abecasis, *A note on exact tests of Hardy–Weinberg equilibrium*, Amer. J. Hum. Genet. 76 (2005), 887–893.

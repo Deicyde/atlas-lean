@@ -6,4 +6,4 @@ with $k$ elements and largest element $m_1$. Then $\|\sum_{e \in S} 2^e\|_2 \le 
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Lemma 3.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Lemma 3.

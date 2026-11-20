@@ -1,4 +1,3 @@
 # Information content is a Kullback–Leibler divergence
 
-For laws `P ≪ Q`, the information
-content of `P` against `Q` is `KL(P ‖ Q) / log 2`, Mathlib's `klDiv` in bits.
+For probability laws $P, Q$ on a finite alphabet with $P(a) = 0$ whenever $Q(a) = 0$, the [information content](info-content.md) of $P$ against $Q$ equals $\mathrm{KL}(P \,\|\, Q) / \log 2$.

@@ -7,6 +7,7 @@
 - [Least-squares estimates exist](exists-normal.md)
 - [Closed-form solution of the normal equations](normal-inv.md)
 - [Convexity of the residual sum of squares](convex-on-rss.md)
+- [Leave-one-out least squares: leverage and deleted residual](leave-one-out-leverage-residual.md)
 
 ## Gaussian noise: least squares is maximum likelihood
 
@@ -38,3 +39,20 @@
 - [Soft thresholding](soft-threshold.md)
 - [Soft thresholding solves the one-dimensional lasso](soft-threshold-le.md)
 - [Lasso with an orthonormal design](lasso-soft-threshold-le.md)
+
+## Related topics
+
+- [Linear least squares](../../../../LinearAlgebra/matrix-decompositions/linear-least-squares/README.md)
+- [QR factorization](../../../../LinearAlgebra/matrix-decompositions/qr-factorization/README.md)
+- [Tikhonov regularization](../../../../Analysis/convex-analysis-and-variations/tikhonov-regularization/README.md)
+- [First-order conditions for convexity and optimality](../../../../Analysis/convex-analysis-and-variations/first-order-conditions-for-convexity/README.md)
+- [Gradient descent](../../../../Analysis/convex-analysis-and-variations/gradient-descent/README.md): the convergence rates of first-order methods applied to these convex objectives.
+- [Matrix decompositions and linear systems](../../../../LinearAlgebra/matrix-decompositions/README.md)
+- [Hilbert projection theorem](../../../../Analysis/hilbert-spaces/hilbert-projection-theorem/README.md): the least-squares fit is the orthogonal projection of the response onto the column space of the design.
+- [Singular value decomposition](../../../../LinearAlgebra/matrix-decompositions/singular-value-decomposition/README.md): the closed forms of least squares and ridge regression diagonalize in the singular basis of the design, where ridge shrinks each singular direction.
+- [Positive definite matrices and matrix inequalities](../../../../LinearAlgebra/positive-definite-matrices/README.md): the empirical covariance $\hat\Sigma = \frac{1}{n} \Phi^\top \Phi$ is positive semidefinite, and $\hat\Sigma + \lambda I$ positive definite for $\lambda > 0$.
+- [Eigenvalues and spectral norm of Hermitian matrices](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-and-spectral-norm-of-hermitian-matri/README.md): the extreme eigenvalues of $\hat\Sigma$ are the smoothness and strong-convexity constants of the least-squares objective.
+- [Generalization bounds and concentration](../../generalization-bounds-and-concentration/README.md): estimation-error bounds for empirical risk minimization.
+- [Lasso error bounds under restricted eigenvalues](../../../../Probability/linear-models-multivariate/lasso-error-bounds-under-restricted-eigenvalues/README.md)
+- [Sparse recovery by orthogonal matching pursuit](../../../../Analysis/approximation-theory/sparse-recovery-by-orthogonal-matching-pursuit/README.md)
+- [Recursive least squares](../../../../Analysis/control-theory/recursive-least-squares/README.md): the same estimates computed one observation at a time by rank-one updates; started at $\theta_0 = 0$, $P_0 = \lambda^{-1} I$ the recursion returns the ridge estimate.

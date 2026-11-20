@@ -13,11 +13,12 @@ $$V^{(r,s)}_n(x, y) = \frac{\alpha^{n+r-1}}{\tilde P(\alpha)} \left( n \, \frac{
 
 The paper's hypothesis $y = -\frac{1}{r} \left( \frac{rx}{r+1} \right)^{r+1}$ (which makes
 $\alpha = rx/(r+1)$ the double zero) is replaced by the factorization it yields. The paper takes
-$1 \le s \le r$; the identity holds for every $s$. The hypothesis $\alpha \ne 0$ is added: for
-$r = 2$, $y = 0$ the factorization $t^2 (t - x)$ has $\alpha = 0$ and the formula fails at $n = 0$
-(for $x = s = 1$: $V_0 = 2$, right side $1$). In the paper's setting $\alpha = rx/(r+1)$ with
-$x \ne 0$, so $\alpha \ne 0$; the only other $\alpha = 0$ case, $r = 1$, $x = y = 0$, is dropped.
+$1 \le s \le r$; the identity holds for every $s$. The assumption $\alpha \ne 0$, absent from the
+paper, is needed: for $r = 2$, $y = 0$ the factorization $t^2 (t - x)$ has $\alpha = 0$ and the
+formula fails at $n = 0$ (for $x = s = 1$: $V_0 = 2$, right side $1$). In the paper's setting
+$\alpha = rx/(r+1)$ with $x \ne 0$, so $\alpha \ne 0$; apart from $r = 2$, $y = 0$, the assumption
+excludes only the case $r = 1$, $x = y = 0$.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.

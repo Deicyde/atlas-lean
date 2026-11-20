@@ -9,4 +9,4 @@ of $H$.
 
 ## Sources
 
-- J.-J. Liao, arXiv:2404.09639, Theorem 1.2 and the implication `C ≤ C' + 1`.
+- Jyun-Jie Liao, *Improved Exponent for Marton's Conjecture in $\mathbb{F}_2^n$*, arXiv:2404.09639 (2024), Theorem 4 and the implication $C \le C' + 1$ stated after it (from Green, Manners and Tao, *Sumsets and entropy revisited*, arXiv:2306.13403).

@@ -1,11 +1,8 @@
 # Knot diagrams
 
-## Regular Projection
+## Dart diagrams
 
 - [Dart diagram](dart-diagram.md)
-
-## Dart Diagram
-
 - [Darts of a dart diagram](dart.md)
 - [Number of crossings of a dart diagram](crossing-count.md)
 - [Rotation of a dart](rot.md)
@@ -25,14 +22,14 @@
 - [Isolated components are counted in the component count](isolated-le-component-count.md)
 - [Empty dart diagram](empty.md)
 
-## Regular Projection
+## The standard projection
 
 - [Euclidean plane](r2.md)
 - [Standard projection to the plane](plane.md)
 - [Height in the standard projection frame](height.md)
 - [Parameter point](param-point.md)
 
-## Euclidean
+## Regular projections, crossings and the crossing number
 
 - [Point of a link at a parameter point](point.md)
 - [Projected curve of a link component](proj-curve.md)

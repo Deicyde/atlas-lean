@@ -5,7 +5,7 @@ recursion on $n$: $d_{u,n} = 1$ if $n < 2u$ or $u = 0$, and otherwise
 $d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}$.
 
 The paper takes $u \ge 2$ and indexes from $n = 1$, with $d_{u,n} = 1$ for $1 \le n \le 2u - 1$;
-here $d_{u,0} = 1$ as well, and the degenerate case $u = 0$ is set to $1$.
+the definition above also gives $d_{u,0} = 1$, and $d_{0,n} = 1$ for every $n$ in the degenerate case $u = 0$.
 
 ## Sources
 

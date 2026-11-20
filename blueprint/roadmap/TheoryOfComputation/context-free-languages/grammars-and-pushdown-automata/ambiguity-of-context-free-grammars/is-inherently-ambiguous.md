@@ -1,4 +1,6 @@
 # Inherently ambiguous language
 
-A language is inherently ambiguous when it is context-free and every grammar
-generating it is ambiguous.
+Let $T$ be an alphabet. A language $L$ over $T$ is inherently ambiguous if it is context-free and every
+context-free grammar with terminals $T$ generating $L$ is ambiguous, that is, has a word $w$ over $T$ with two
+different sequences of productions each of which is a leftmost derivation of $w$ from the initial
+nonterminal.

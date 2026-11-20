@@ -1,4 +1,3 @@
 # Strict and uniform convexity agree in finite dimensions
 
-In finite dimensions, strict convexity and uniform convexity are
-equivalent.
+Let $E$ be a finite-dimensional real normed space. Then $E$ is strictly convex if and only if it is uniformly convex.

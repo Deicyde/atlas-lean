@@ -8,4 +8,4 @@ monochromatic ordered copy of $(H, \lt _H)$. It is $0$ if no such $N$ exists.
 
 ## Sources
 
-- [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 21 *Ordered Ramsey numbers*, question under Problem 1.42 (David Conlon, Jacob Fox, Choongbum Lee and Benny Sudakov), http://www.aimpl.org/graphramsey/1/ (workshop notes also at https://www.overleaf.com/read/mnvcscjjysvg).

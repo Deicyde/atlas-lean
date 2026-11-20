@@ -6,4 +6,4 @@ perfect square: there is no natural number $z$ with $x^n + y^n = z^2$.
 
 ## Sources
 
-- Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Theorem 1.
+- Sérgio Mendes, "The Diophantine Equation $Q_n^x + Q_{n+1}^x = y^2$", INTEGERS 26 (2026), Article A72, Theorem 1.

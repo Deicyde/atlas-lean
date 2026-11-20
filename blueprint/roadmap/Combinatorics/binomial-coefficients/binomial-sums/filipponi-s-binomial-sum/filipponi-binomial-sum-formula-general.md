@@ -10,4 +10,4 @@ above it holds for all $n$, $h$ and $k$.
 
 ## Sources
 
-- Hacène Belbachir and Amine Belkhir, "Combinatorial Expressions Involving Fibonacci, Hyperfibonacci, and Incomplete Fibonacci Numbers", Journal of Integer Sequences 17 (2014), Article 14.4.3, definition of `f_r(s)` at lines 304–319 and the formula at lines 347–371 of <https://cs.uwaterloo.ca/journals/JIS/VOL17/Belbachir/belb2.tex>; the formula is attributed there to P. Filipponi, "Incomplete Fibonacci and Lucas numbers", Rend. Circ. Mat. Palermo 45 (1996), 37–56, DOI 10.1007/BF02845088.
+- Hacène Belbachir and Amine Belkhir, *Combinatorial Expressions Involving Fibonacci, Hyperfibonacci, and Incomplete Fibonacci Numbers*, J. Integer Seq. 17 (2014), Article 14.4.3, Theorem 10 (equation (14)) for $f_r(s)$ and Theorem 13 (equation (17)), <https://cs.uwaterloo.ca/journals/JIS/VOL17/Belbachir/belb2.tex>; the formula is attributed there to Piero Filipponi, *Incomplete Fibonacci and Lucas numbers*, Rend. Circ. Mat. Palermo 45 (1996), 37–56, DOI 10.1007/BF02845088.

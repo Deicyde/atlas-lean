@@ -13,4 +13,4 @@ where $\delta_{n-1,k}$ is $1$ if $k = n - 1$ and $0$ otherwise.
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 10.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Corollary 10.

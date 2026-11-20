@@ -1,3 +1,3 @@
 # Symmetry of the Hilbert kernel
 
-The Hilbert kernel is symmetric.
+$K(m, n) = K(n, m)$ for all $m, n \in \mathbb{N}$.

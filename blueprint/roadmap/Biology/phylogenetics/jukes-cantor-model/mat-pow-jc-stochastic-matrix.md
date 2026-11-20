@@ -1,4 +1,3 @@
 # Chapman–Kolmogorov equation for the Jukes–Cantor chain
 
-The `n`-step matrix of the Jukes–Cantor chain observed every `t` time units is the
-transition matrix over the branch length `n * t` (Chapman–Kolmogorov).
+For real $\mu, t$ with $\mu t \ge 0$ and every natural number $n$, the $n$-th power of the [Jukes–Cantor stochastic matrix](jc-stochastic-matrix.md) $P(t)$ is $P(nt)$.

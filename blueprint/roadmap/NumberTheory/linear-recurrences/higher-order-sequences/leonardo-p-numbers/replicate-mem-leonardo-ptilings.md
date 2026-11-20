@@ -5,4 +5,4 @@ linear tiling of an $n$-board by $n$ squares, with no $p$-tile, lies in the tili
 
 ## Sources
 
-- Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 2.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Section 2.

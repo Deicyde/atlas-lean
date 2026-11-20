@@ -15,7 +15,7 @@
 - [Reduction computed in each mode](f.md)
 - [Stacks of the CLIQUE to VERTEX-COVER reduction machine](k.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)
-- [Labels of the KG-map machine](lab.md)
+- [Labels of the CLIQUE/VERTEX-COVER reduction machine](lab.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [Test for the input bit true](is-t.md)
 - [Test for the moved bit true](is-v.md)

@@ -11,4 +11,4 @@ where $c$ runs over all these isomorphism classes.
 
 ## Sources
 
-- Zimmerman, Proposition 4 (setup).
+- J.-P. Serre, *Linear Representations of Finite Groups*, Graduate Texts in Mathematics 42, Springer, 1977, Section 2.5, Theorem 6.

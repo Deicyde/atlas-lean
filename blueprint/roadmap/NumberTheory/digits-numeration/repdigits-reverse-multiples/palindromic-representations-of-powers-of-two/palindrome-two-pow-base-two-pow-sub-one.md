@@ -9,4 +9,4 @@ is the binomial form $2^r (\binom{k}{k}, \dots, \binom{k}{0})_b$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 4.
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 4.

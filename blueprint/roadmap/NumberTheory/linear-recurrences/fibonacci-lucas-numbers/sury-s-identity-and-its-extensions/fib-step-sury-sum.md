@@ -9,4 +9,4 @@ When $n = 0$ the index $j(n-1) = -j$ is negative, so $F_{-j} = (-1)^{j+1} F_j$ e
 
 ## Sources
 
-- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 3.
+- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Journal of Integer Sequences 29 (2026), Article 26.3.2, Theorem 3.

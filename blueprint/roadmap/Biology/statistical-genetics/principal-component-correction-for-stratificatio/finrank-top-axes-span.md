@@ -1,3 +1,3 @@
 # Dimension of the span of the top axes
 
-The top `K` axes span a `K`-dimensional subspace.
+For every real $N \times M$ genotype matrix $C$ and natural number $K \le N$, the [span of the top $K$ axes](top-axes-span.md) has dimension $K$.

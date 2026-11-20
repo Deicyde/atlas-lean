@@ -1,5 +1,6 @@
 # Banach–Nečas–Babuška theorem
 
-The **Banach–Nečas–Babuška theorem**: a bilinear form satisfying the
-inf–sup condition and nondegeneracy is itself a continuous linear equivalence
-`E ≃L[ℝ] (F →L[ℝ] ℝ)`.
+Let $E$ be a real Banach space, $F$ a real Hilbert space and $B$ a bounded bilinear form on
+$E \times F$ satisfying the [inf–sup condition](is-inf-sup.md) and [nondegeneracy in the second
+variable](is-nondegenerate.md). Then $x \mapsto B(x, \cdot)$ is an isomorphism of Banach spaces
+(a continuous linear bijection with continuous inverse) from $E$ onto the dual $F^*$.

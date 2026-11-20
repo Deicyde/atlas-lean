@@ -11,4 +11,4 @@ over $A$ is separable over $k_A$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 10.15.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 10, Corollary 10.15, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -6,4 +6,5 @@ $\omega(F) \le 3 \log_{436} 196$.
 
 ## Sources
 
-- C15a [P1979], Pan's `3 log₄₃₆ 196` bound.
+- V. Ya. Pan, "Field extension and trilinear aggregating, uniting and canceling for the acceleration of matrix multiplication", *20th Annual Symposium on Foundations of Computer Science (FOCS 1979)*, 28–38.
+- Optimization Constants in Mathematics, constant $C_{15a}$ (the matrix multiplication exponent $\omega$), https://github.com/teorth/optimizationproblems/blob/87b4ebbd426ff8db597a2004cc45da17903bdcf2/constants/15a.md.

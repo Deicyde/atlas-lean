@@ -1,4 +1,4 @@
-# Sets recognizable in base k
+# Sets recognizable in base $k$
 
 For a natural number $k$, a set $S$ of natural numbers is
 recognizable in base $k$ when $k \ge 2$ and some deterministic finite automaton with a nonempty

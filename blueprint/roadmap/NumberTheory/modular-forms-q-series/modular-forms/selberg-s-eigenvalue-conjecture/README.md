@@ -22,7 +22,7 @@
 - [Selberg's constant is at most one half](selberg-constant-le-half.md)
 - [Exceptional eigenvalues bound Selberg's constant](sqrt-le-selberg-constant.md)
 - [Selberg's constant vanishes exactly under Selberg's eigenvalue conjecture](selberg-constant-eq-zero-iff.md)
-- [Selberg's 3/16 theorem](selberg-three-sixteenths-wanted.md)
+- [Selberg's $3/16$ theorem](selberg-three-sixteenths-wanted.md)
 - [Selberg's bound on the spectral-gap constant](selberg-upper-bound-wanted.md)
 - [Kim–Sarnak eigenvalue bound](kim-sarnak975-wanted.md)
 - [Kim–Sarnak bound on the spectral-gap constant](kim-sarnak-upper-bound-wanted.md)

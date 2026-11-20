@@ -1,5 +1,3 @@
 # Right neighbour
 
-For a positive integer $L$, the right neighbour of a site $(i, j)$ of
-the periodic $L \times L$ square lattice is $(i + 1, j)$, with addition in
-$\mathbb{Z}/L\mathbb{Z}$.
+For $L \ge 1$ and a site $p = (p_1, p_2)$ of $(\mathbb{Z}/L\mathbb{Z})^2$, the right neighbour is $(p_1 + 1, p_2)$.

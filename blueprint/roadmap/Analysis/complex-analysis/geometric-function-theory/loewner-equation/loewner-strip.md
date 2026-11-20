@@ -1,3 +1,3 @@
 # Closed half-plane above a horizontal line
 
-The closed strip `{w ∈ ℂ : δ ≤ Im w}`.
+For $\delta \in \mathbb{R}$, this is the closed half-plane $\{w \in \mathbb{C} : \operatorname{Im} w \ge \delta\}$.

@@ -12,4 +12,4 @@ $c \, y_{\sigma(i)} = b_i x_i$ for every $i$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.6.
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of $\mathbb{Z}_n$*, INTEGERS 24 (2024), Article A38, Theorem 6.6.

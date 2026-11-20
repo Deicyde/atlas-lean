@@ -1,3 +1,3 @@
 # Derivative of the neutral mean absorption time
 
-On `(0, 1)`, `T'(x) = -2 (log x - log (1 - x))`.
+For every $x \in (0, 1)$, the [neutral mean absorption time](mean-absorption-time.md) is differentiable at $x$ with $T'(x) = -2\bigl(\log x - \log(1 - x)\bigr)$.

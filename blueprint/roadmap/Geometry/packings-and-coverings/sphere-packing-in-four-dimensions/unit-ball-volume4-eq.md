@@ -5,4 +5,4 @@ ball centred at the origin of $\mathbb{R}^4$ equals $\pi^2/2$.
 
 ## Sources
 
-- the standard four-dimensional unit-ball volume `π²/2`.
+- the standard four-dimensional unit-ball volume $\pi^2/2$.

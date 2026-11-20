@@ -7,4 +7,4 @@ $\sum_{m=0}^{n-1} \nu_2(H_n - H_m) = -a(n)$.
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2: `∑_{m=0}^{n-1} ν₂(H_n - H_m) = -a(n)`, where `a(n) = weightedBinaryDigitSum n`.
+- Tamás Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2, stated there as $\nu_2\bigl(\prod_{m=0}^{n-1} (H_n - H_m)\bigr) = -a(n)$ with $a(n)$ the weighted binary digit sum.

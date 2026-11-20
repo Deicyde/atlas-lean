@@ -15,4 +15,4 @@ $\eta(u_{-1})$ and $\eta(u_0)$.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (periodic points `Per(η)`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (periodic points $\mathrm{Per}(\eta)$).

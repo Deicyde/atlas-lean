@@ -1,3 +1,3 @@
 # EHH at radius zero equals one
 
-At radius `0` every pair of haplotypes agrees, so `EHH(0) = 1`.
+For every haplotype sample and every finite set $C$ with $|C| \ge 2$, the [EHH](ehh.md) satisfies $\mathrm{EHH}_C(0) = 1$.

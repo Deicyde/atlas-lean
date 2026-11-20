@@ -13,4 +13,4 @@ variants are classical Wythoff's game.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (the move sets `M₁, M₂, M₃, M₄, M₄'` and the Grundy numbers `𝒢₁`, `𝒢₂`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (the move sets $M_1, M_2, M_3, M_4, M_4'$ and the Grundy numbers $\mathcal{G}_1$, $\mathcal{G}_2$).

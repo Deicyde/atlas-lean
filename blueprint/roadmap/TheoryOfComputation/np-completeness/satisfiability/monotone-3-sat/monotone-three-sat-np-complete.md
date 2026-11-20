@@ -5,4 +5,4 @@ every decision problem in NP has a polynomial-time many-one reduction to MONOTON
 
 ## Sources
 
-- T. J. Schaefer, "The complexity of satisfiability problems", Proceedings of the Tenth Annual ACM Symposium on Theory of Computing (STOC 1978), ACM, 1978, 216-226 (dichotomy theorem).
+- Thomas J. Schaefer, "The complexity of satisfiability problems", Proceedings of the Tenth Annual ACM Symposium on Theory of Computing (STOC 1978), ACM, 1978, 216-226 (dichotomy theorem).

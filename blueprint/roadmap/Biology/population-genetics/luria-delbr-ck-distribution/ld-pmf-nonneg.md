@@ -1,3 +1,3 @@
 # Nonnegativity of Luria–Delbrück probabilities
 
-The Luria–Delbrück probabilities are nonnegative for `m ≥ 0`.
+For every real $m \ge 0$ and every natural number $n$, the [Luria–Delbrück probability](ld-pmf.md) satisfies $p_n(m) \ge 0$.

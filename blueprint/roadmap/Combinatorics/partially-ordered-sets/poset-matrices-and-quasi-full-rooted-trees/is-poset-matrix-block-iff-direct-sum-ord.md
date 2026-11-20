@@ -9,8 +9,7 @@ is true for all $i < m \le j$ if and only if there are poset matrices $A$ of ord
 order $k$ such that $M$ is their ordinal sum: the same diagonal blocks, $M_{ij}$ true for all
 $i < m \le j$, and $M_{ij}$ false for all $j < m \le i$.
 
-Only one block length is stated; the version with several lengths $n_1 < \dots < n_r$ follows by
-iterating it.
+The version with several lengths $n_1 < \dots < n_r$ follows by iterating.
 
 ## Sources
 

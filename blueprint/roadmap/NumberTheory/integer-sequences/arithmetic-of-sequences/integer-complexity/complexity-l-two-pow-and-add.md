@@ -6,4 +6,4 @@ $m_1 > m_2 \ge 1$, one has $\|2^{m_1}\|_2 = m_1$ and $\|2^{m_1} + 2^{m_2}\|_2 = 
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Lemma 3.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Lemma 3.

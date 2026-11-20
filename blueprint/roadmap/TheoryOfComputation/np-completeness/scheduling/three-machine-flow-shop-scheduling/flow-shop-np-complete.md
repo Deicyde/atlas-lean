@@ -6,4 +6,4 @@ polynomial-time many-one reduction.
 
 ## Sources
 
-- M. R. Garey, D. S. Johnson, and R. Sethi, "The complexity of flowshop and jobshop scheduling", Mathematics of Operations Research 1 (1976), 117-129; T. F. Gonzalez and S. Sahni, "Flowshop and jobshop schedules: complexity and approximation", Operations Research 26 (1978), 36-52.
+- Michael R. Garey, David S. Johnson, and Ravi Sethi, "The complexity of flowshop and jobshop scheduling", Mathematics of Operations Research 1 (1976), 117-129; Teofilo F. Gonzalez and Sartaj Sahni, "Flowshop and jobshop schedules: complexity and approximation", Operations Research 26 (1978), 36-52.

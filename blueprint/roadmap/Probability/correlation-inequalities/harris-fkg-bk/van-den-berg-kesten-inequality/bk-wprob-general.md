@@ -1,5 +1,7 @@
 # BK inequality for product weights on a finite set
 
-The **BK inequality** for a product probability weight on a finite set `E`: if `φ ≥ 0`
-and `φ x false + φ x true = 1` for all `x`, then `wprob φ (A □ B) ≤ wprob φ A * wprob φ B` for
-all increasing events `A, B`.
+Let $E$ be a finite set and $\varphi : E \times \{0,1\} \to \mathbb{R}$ a product probability weight: $\varphi_x(b) \ge 0$ and $\varphi_x(0) + \varphi_x(1) = 1$ for all $x \in E$, $b \in \{0,1\}$. For all increasing events $A, B \subseteq \{0,1\}^E$,
+
+$$P_\varphi(A \mathbin{\square} B) \le P_\varphi(A)\, P_\varphi(B),$$
+
+where $P_\varphi$ is the [weighted probability](wprob.md).

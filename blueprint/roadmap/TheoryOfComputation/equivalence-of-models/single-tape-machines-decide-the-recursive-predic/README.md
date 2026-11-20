@@ -1,5 +1,8 @@
 # Single-tape machines decide the recursive predicates
 
+A single-tape Turing machine here has finitely many states and a nonempty finite alphabet
+$\Sigma$; each tape cell holds a symbol of $\Sigma$ or the blank.
+
 - [The machine that prepends a symbol](cons-computer.md)
 - [Prepending a symbol by stepping left](write-move-left-mk.md)
 - [Prepending a symbol takes at most two steps](cons-computer-outputs-within-time.md)
@@ -41,7 +44,7 @@
 - [The final tape of a run is partial recursive in the input word](partrec-eval.md)
 - [The halting set of a single-tape machine is r.e](re-pred-halts-on.md)
 - [The halting set of a single-tape machine on binary inputs is r.e](re-pred-halts-on-encode-nat.md)
-- [A predicate recognized by a single-tape machine is r.e](re-pred.md)
+- [A predicate recognized by a single-tape machine is recursively enumerable](re-pred.md)
 - [A predicate decided by a single-tape machine is computable](computable-pred.md)
 - [Single-tape decidable predicates are exactly the computable predicates](single-tape-decidable-iff-computable-pre.md)
 - [Single-tape recognizable predicates are exactly the r.e. predicates](single-tape-recognizable-iff-re-pred.md)

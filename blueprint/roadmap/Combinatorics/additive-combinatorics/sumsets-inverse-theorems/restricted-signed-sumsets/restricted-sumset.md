@@ -5,7 +5,7 @@ commutative monoid $G$, the restricted sumset $h^{\wedge} A$ is the set of all s
 $\sum_{a \in B} a$ with $B$ an $h$-element subset of $A$, that is, the sums of $h$ distinct
 elements of $A$. In particular $0^{\wedge} A = \{0\}$.
 
-The source works in the integers; here $G$ is an arbitrary additive commutative monoid.
+The source works in the integers; the definition makes sense in any additive commutative monoid.
 
 ## Sources
 

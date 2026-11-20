@@ -1,3 +1,3 @@
 # Summand of the anchored Peierls series
 
-The summand `2ℓ · 4^ℓ · (1 - p)^ℓ`.
+For $p \in \mathbb{R}$ and $\ell \in \mathbb{N}$, the summand $2\ell \cdot 4^\ell \cdot (1 - p)^\ell$.

@@ -13,4 +13,4 @@ q^{16}.$$
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 4 (`jis-2026-26.2.6-thm-4`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 4.

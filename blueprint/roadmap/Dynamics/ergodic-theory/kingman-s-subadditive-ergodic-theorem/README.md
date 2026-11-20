@@ -37,7 +37,7 @@
 - [Windowed greedy bound from time zero](greedy-windowed.md)
 - [Time constant is at most the integral of the lower limit](gamma-le-integral-g-low.md)
 - [Upper and lower limits of a nonnegative cocycle agree](g-star-le-g-star-low-ae.md)
-- [Kingman's subadditive ergodic theorem](tendsto-div-kingman-limit-ae-of-nonneg.md)
+- [Almost-everywhere convergence in Kingman's theorem for nonnegative cocycles](tendsto-div-kingman-limit-ae-of-nonneg.md)
 - [Additive cocycle of Birkhoff sums of the first term](add-coc.md)
 - [Subadditivity defect of a cocycle](zc.md)
 - [Negative subadditivity defect of a cocycle](wc.md)

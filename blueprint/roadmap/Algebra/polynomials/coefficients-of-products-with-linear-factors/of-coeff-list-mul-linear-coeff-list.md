@@ -1,4 +1,5 @@
 # Coefficient-list multiplication agrees with polynomial multiplication
 
-Interpreting the dense output as a little-endian polynomial is left multiplication by the
-linear polynomial `C r + X * C c`.
+Read as the coefficients of a polynomial in increasing degree, the coefficient list of
+$(r + cX) \cdot l$ is the polynomial $(r + cX)\, p$, where $p$ is the polynomial with coefficient
+list $l$.

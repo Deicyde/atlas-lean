@@ -1,6 +1,3 @@
 # Conditional distribution given the outside of a region
 
-The conditional distribution of a finite measure `μ` on `ConfigSpace E` given the
-configuration outside `Λ`: a regular version of `μ(· | outsideSigma Λ)`, namely Mathlib's
-`condExpKernel μ (outsideSigma Λ)`. For a Gibbs measure this is the Gibbs specification in `Λ`
-(DLR condition).
+Let $E$ be a countable set, $\mu$ a finite measure on $\{0, 1\}^E$ and $\Lambda \subseteq E$. The conditional distribution of $\mu$ given the configuration outside $\Lambda$ is a regular version $\kappa_\Lambda$ of the conditional probability $\mu(\cdot \mid \mathcal{F}_{\Lambda^c})$ given the [outside σ-algebra](outside-sigma.md) $\mathcal{F}_{\Lambda^c}$: a Markov kernel from $(\{0, 1\}^E, \mathcal{F}_{\Lambda^c})$ to $\{0, 1\}^E$ with its product σ-algebra, namely the conditional expectation kernel of $\mu$ given $\mathcal{F}_{\Lambda^c}$. For a Gibbs measure it is the Gibbs specification in $\Lambda$ (DLR condition).

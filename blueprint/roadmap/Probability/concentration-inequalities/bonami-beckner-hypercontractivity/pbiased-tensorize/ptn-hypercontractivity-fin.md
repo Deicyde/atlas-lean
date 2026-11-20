@@ -1,4 +1,9 @@
 # $p$-biased hypercontractivity on $\{0, 1\}^n$
 
-`p`-biased hypercontractivity on `{0, 1}^n`: `‖T_ρ f‖₂ ≤ ‖f‖_q` for `0 < p < 1`, `1 ≤ q ≤ 2` and
- `ρ² = 4p(1-p)(q - 1)`. The noise rate is not optimal for `p ≠ 1/2`.
+Let $0 < p < 1$, $0 \le \rho \le 1$ and $1 \le q \le 2$ with $\rho^2 = 4p(1-p)(q-1)$. Then for every
+$n \in \mathbb{N}$ and $f : \{0, 1\}^n \to \mathbb{R}$, the [$p$-biased noise operator](ptn-kop.md)
+satisfies
+
+$$\|T_\rho f\|_{L^2(\mu_p)} \le \|f\|_{L^q(\mu_p)} .$$
+
+The noise rate is not optimal for $p \ne 1/2$.

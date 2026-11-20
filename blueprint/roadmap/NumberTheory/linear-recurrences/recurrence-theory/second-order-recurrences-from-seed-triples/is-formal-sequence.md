@@ -11,4 +11,4 @@ coefficient and the constant term of the formal-sequence recurrence.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL23/Kocik/kocik5.tex>, lines 482–499.
+- Jerzy Kocik, "Lens Sequences," Journal of Integer Sequences 23 (2020), Article 20.11.6, Definition 6, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Kocik/kocik5.tex>.

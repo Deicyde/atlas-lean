@@ -14,7 +14,8 @@ $x > b$ and $S_x(D) = (d; D_1, D_2)$, it is the zig-zig $(d; (b; (k; L, C), D_1)
 $x < b$ and $S_x(C) = (d; C_1, C_2)$, it is the zig-zag $(d; (k; L, C_1), (b; C_2, D))$; and if
 the splayed subtree is empty, it is the zig $(b; (k; L, C), D)$.
 
-The search path for $x$ runs from the root to the node with key $x$, or to the last node visited
-if $x$ is absent. Each recursive step consumes two edges of this path, starting at the root, so
+The search path for $x$ follows the comparisons with $x$ from the root and ends at a node with key
+$x$ or at the last node visited; in a binary search tree it ends at the node with key $x$ exactly
+when $x$ is present. Each recursive step consumes two edges of this path, starting at the root, so
 when the path has an odd number of edges the single rotation is performed on its last edge, the
 one farthest from the root.

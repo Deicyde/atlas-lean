@@ -10,4 +10,4 @@ where a quotient by $0$ is read as $0$.
 
 ## Sources
 
-- Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 2, `μ_g(n)` as the mean of the gap distribution `p_n`).
+- Paul Adutwum, Hopper Clark, Ro Emerson, Alexandra Sheydvasser, Arseniy Sheydvasser and Axelle Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 2, $\mu_g(n)$ as the mean of the gap distribution $p_n$).

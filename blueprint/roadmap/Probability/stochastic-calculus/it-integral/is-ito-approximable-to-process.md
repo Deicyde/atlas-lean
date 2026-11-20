@@ -1,3 +1,4 @@
 # Elementary integrands are Itô-approximable
 
-An elementary integrand is Itô-approximable on every `[0, t]` (by itself).
+For every measure $P$, every [elementary integrand](elementary-integrand.md) $K$ and every $t \ge 0$, the
+[process](to-process.md) of $K$ is [Itô-approximable](is-ito-approximable.md) on $[0, t]$ (by itself).

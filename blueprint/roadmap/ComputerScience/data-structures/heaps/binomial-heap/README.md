@@ -9,7 +9,7 @@
 - [Elements of a binomial tree](elements.md)
 - [The root of a binomial tree is one of its elements](root-mem-elements.md)
 - [Valid binomial tree](valid.md)
-- [Singleton binomial heap](singleton.md)
+- [Singleton binomial tree](singleton.md)
 - [Linking two binomial trees](link.md)
 - [Linking binomial trees adds their elements](elements-link.md)
 - [Singleton binomial trees are valid](valid-singleton.md)

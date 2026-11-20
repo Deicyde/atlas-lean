@@ -1,10 +1,9 @@
 # Weak power below a strong limit cardinal equals the cardinal
 
-For `2 ≤ x < κ` with `κ` a strong limit, `x ^< κ = κ`: every smaller power is
-below `κ` (`IsStrongLimit.power_lt`), while every `y < κ` sits below
-`2 ^ y ≤ x ^< κ`.  No infiniteness hypothesis is needed — it is automatic by
-`IsStrongLimit.aleph0_le`.
+Let $\kappa$ be a strong limit cardinal and $x$ a cardinal with $2 \le x < \kappa$. Then
+$x^{<\kappa} = \kappa$, where $x^{<\kappa}$ is the supremum of the powers $x^y$ over the cardinals
+$y < \kappa$.
 
-## Sources
-
-- For 2 ≤ x < κ with κ a strong limit, x ^< κ = κ.
+Proof: each $x^y$ with $y < \kappa$ is below $\kappa$, since $\kappa$ is a strong limit, so
+$x^{<\kappa} \le \kappa$. Conversely every $y < \kappa$ satisfies $y < 2^y \le x^y \le x^{<\kappa}$,
+so $x^{<\kappa} \ge \kappa$.

@@ -1,6 +1,6 @@
 # $\delta^*$ is not differentiable at the evaluations of $\bar E^*$
 
-**$\delta^*$ is not differentiable at the evaluations of $\bar E^*$.** Let $L$ and $\tilde L$
+Let $L$ and $\tilde L$
 be lists of natural numbers of length at least $2$ with nonzero first entries whose periodic
 Zeckendorf collections $E$ and $\tilde E$ satisfy $E \subsetneq \tilde E$. Let $Q$ be a fundamental
 sequence of the collection $E^*$ determined by $L$, let $\tilde Q$ be a fundamental sequence of the

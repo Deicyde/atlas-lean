@@ -5,4 +5,4 @@ NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), EDGE DOMINATING SET; M. Yannakakis and F. Gavril, "Edge dominating sets in graphs" (1980).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), EDGE DOMINATING SET; Mihalis Yannakakis and Fănică Gavril, "Edge dominating sets in graphs" (1980).

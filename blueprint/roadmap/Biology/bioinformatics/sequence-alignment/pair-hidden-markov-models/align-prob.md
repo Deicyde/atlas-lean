@@ -1,5 +1,3 @@
 # Joint weight of sequences and an alignment's state path
 
-The joint weight of the sequences and the state path of an alignment `A` (the path visits
-`colState c` for each column `c`): the product of the transition and emission weights along the
-path, from the begin state to the end state.
+For a pair HMM with weights in a semiring and an [alignment](../pairwise-sequence-alignment/alignment.md) $A$, the joint weight is the [weight](align-weight.md) of $A$ read from the begin state by the [associated automaton](to-automaton.md): the product of the transition and emission weights along the state path visiting the state of each column, from the begin state to the end state.

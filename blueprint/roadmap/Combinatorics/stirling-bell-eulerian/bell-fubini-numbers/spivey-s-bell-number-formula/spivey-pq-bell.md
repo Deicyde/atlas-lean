@@ -14,9 +14,6 @@ q^{jk} \, \tilde B_j\bigl(p^{n+m-j}\bigr),$$
 
 with $0^0 = 1$.
 
-Proof: We formalize the operator proof around equations `eq1`, `eq2'`, `eq4`, `meq`,
-`pqexpn`, and `lasteq` in Oussi's paper, using formal power series in place of convergent series.
-
 ## Sources
 
-- L. Oussi, *A (p,q)-Deformed Recurrence for the Bell Numbers*, Journal of Integer Sequences 23 (2020), Article 20.5.2, main theorem equation `lasteq`, lines 214-220, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Oussi/oussi5.tex>.
+- Lahcen Oussi, *A (p,q)-Deformed Recurrence for the Bell Numbers*, Journal of Integer Sequences 23 (2020), Article 20.5.2, Theorem 6, equation (17), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Oussi/oussi5.pdf>.

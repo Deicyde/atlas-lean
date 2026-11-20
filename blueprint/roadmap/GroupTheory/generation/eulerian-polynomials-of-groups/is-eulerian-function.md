@@ -1,4 +1,4 @@
-# Eulerian function of a group (G. E. Wall)
+# Eulerian function of a group
 
 Let $G$ be a group and let $f$ be the order
 polynomial. A function $\varphi$ from the subgroups of $G$ to the integer polynomial ring

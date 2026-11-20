@@ -1,4 +1,4 @@
-# Normalized expected LCS lengths lie in $(0,1)$
+# Normalized expected LCS lengths lie in $[0,1]$
 
 For every natural number $n$, the
 normalized expected LCS length at $n$ (the expected length of a longest common subsequence of

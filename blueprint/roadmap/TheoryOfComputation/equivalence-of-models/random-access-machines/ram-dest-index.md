@@ -6,4 +6,4 @@ indirect destination $n$ resolves to the contents $r(n)$ of register $n$.
 
 ## Sources
 
-- Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
+- A. V. Aho, J. E. Hopcroft and J. D. Ullman, *The Design and Analysis of Computer Algorithms*, Addison-Wesley, 1974, Section 1.2.

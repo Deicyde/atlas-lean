@@ -1,10 +1,7 @@
 # Onsager's formula
 
-**Onsager's formula** (L. Onsager, *Crystal statistics. I. A two-dimensional model with an
-order-disorder transition*, Phys. Rev. 65, 1944). For the zero-field nearest-neighbor Ising model
-with unit coupling on the `L × L` torus, the pressure `log Z_L(β) / L²` converges, for every
-`β ≥ 0`, to `log 2 + (1 / 8π²) ∫∫_{[-π, π]²} log (cosh² 2β - sinh 2β (cos k₁ + cos k₂))`.
+For every $\beta \ge 0$, the torus pressures $p_L(\beta)$ converge as $L \to \infty$ to
 
-The limit runs over all `L` (the sequence is `0` for `L ≤ 2`, which does not affect it). Negative
-`β` (antiferromagnetic coupling) is not covered: the right-hand side is even in `β`, but on odd tori the corresponding limit involves frustrated configurations.
-Non-analyticity at `β_c` is not part of the statement.
+$$\log 2 + \frac{1}{8\pi^2} \int_{-\pi}^{\pi} \int_{-\pi}^{\pi} \log\big(\cosh^2(2\beta) - \sinh(2\beta)(\cos k_1 + \cos k_2)\big)\, dk_2\, dk_1$$
+
+where $p_L(\beta)$ is the [torus pressure sequence](../ons-torus-pressure-seq.md): $\log Z_{T_L}(\beta)/L^2$ for $L > 2$ and $0$ for $L \le 2$ (with $T_L$ the [$L \times L$ torus graph](../the-square-lattice-torus/ons-torus-graph.md) and $Z$ the zero-field Ising partition function with unit couplings), and $\log$ is the real logarithm (Onsager, *Crystal statistics. I. A two-dimensional model with an order-disorder transition*, Phys. Rev. 65 (1944)).

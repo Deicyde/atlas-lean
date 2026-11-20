@@ -1,4 +1,5 @@
 # Square of a finite sum as diagonal plus cross terms
 
-Algebraic identity expanding the square of a finite sum into diagonal and
-cross-term contributions: `(∑_{i<n} f i)^2 = ∑_{i<n} (f i)^2 + 2 ∑_{i<n} ∑_{j<i} f j · f i`.
+For every $n \in \mathbb{N}$ and $f : \mathbb{N} \to \mathbb{R}$,
+
+$$\Big(\sum_{i < n} f(i)\Big)^2 = \sum_{i < n} f(i)^2 + 2 \sum_{i < n} \sum_{j < i} f(j)\, f(i) .$$

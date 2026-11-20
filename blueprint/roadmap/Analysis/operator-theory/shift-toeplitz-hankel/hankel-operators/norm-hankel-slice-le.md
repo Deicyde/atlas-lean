@@ -1,3 +1,3 @@
 # Anti-diagonal slice operator has norm at most one
 
-The operator norm of a slice is at most `1`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. For every $k \in \mathbb{N}$, the [anti-diagonal slice operator](hankel-slice.md) $\eta_k$ on $\ell^2(\mathbb{N}, \mathbb{K})$ satisfies $\|\eta_k\| \le 1$.

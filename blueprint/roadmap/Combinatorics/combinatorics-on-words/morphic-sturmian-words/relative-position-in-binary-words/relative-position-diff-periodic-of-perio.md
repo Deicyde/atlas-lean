@@ -11,4 +11,4 @@ $\Delta r(n + \operatorname{lcm}(k, j)) = \Delta r(n)$ for all $n \ge 1$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 17 (`jis-2025-25.1.5-cor-17`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 17 (`jis-2025-25.1.5-cor-17`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

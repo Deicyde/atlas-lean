@@ -1,3 +1,3 @@
 # Expected nonsynonymous polymorphisms
 
-Expected nonsynonymous polymorphisms `E P_n = θ_P f₀ L_n`.
+In an [expected-count model](mkmodel.md), the expected number of nonsynonymous polymorphisms is $\mathbb{E}P_n = \theta_P f_0 L_n$.

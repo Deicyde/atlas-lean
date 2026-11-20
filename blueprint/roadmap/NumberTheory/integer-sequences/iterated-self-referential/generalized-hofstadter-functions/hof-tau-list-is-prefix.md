@@ -7,4 +7,4 @@ if $u$ is a prefix of $v$, then $\tau_k(u)$ is a prefix of $\tau_k(v)$.
 
 ## Sources
 
-- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.2 (`τ_k` is a morphism).
+- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.3 ($\tau_k$ is a morphism).

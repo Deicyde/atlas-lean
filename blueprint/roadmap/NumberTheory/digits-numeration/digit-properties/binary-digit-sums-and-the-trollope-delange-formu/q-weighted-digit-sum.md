@@ -8,4 +8,4 @@ are nonzero.
 
 ## Sources
 
-- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1 (definition of `s_q`).
+- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1 (definition of $s_q$).

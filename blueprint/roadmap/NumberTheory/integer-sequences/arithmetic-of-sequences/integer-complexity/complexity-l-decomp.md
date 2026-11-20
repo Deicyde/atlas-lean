@@ -6,4 +6,4 @@ number with $a \le l - 1$, and let $n = b + a l$. Then $\|n\|_l = \|b\|_l + a$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 2.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 2.

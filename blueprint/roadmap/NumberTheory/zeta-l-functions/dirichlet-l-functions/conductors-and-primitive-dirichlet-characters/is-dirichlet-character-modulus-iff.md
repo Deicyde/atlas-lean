@@ -13,4 +13,4 @@ $\chi$ is $0$, so $\chi$ is a Dirichlet character of no modulus.
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Lemma 18.8. Forward: minimality gives the divisibility, and a prime divisor of `m'` divides `m` (else `χ p` is simultaneously zero and nonzero). Backward: periodicity lifts along `m ∣ m'`, and the nonvanishing locus transfers via the two lemmas above.
+- ATLAS NumberTheoryI, Lemma 18.8.

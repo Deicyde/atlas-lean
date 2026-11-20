@@ -21,4 +21,4 @@ $\mathrm{exc}(w) = k$, $\mathrm{dexc}(w) = 0$, $\mathrm{cyc}(w) = i$ and $\mathr
 
 ## Sources
 
-- Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Theorem 7 (`jis-2024-24.1.5-thm-7`).
+- Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Theorem 7.

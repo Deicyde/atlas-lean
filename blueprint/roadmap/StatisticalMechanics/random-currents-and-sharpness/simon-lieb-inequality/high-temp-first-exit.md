@@ -1,5 +1,5 @@
 # First-exit data for a high-temperature edge set
 
-First-exit data for an edge set `K` with boundary `{o} ∆ {z}` and a set `S ∋ o`, `z ∉ S`: an
-exit edge `xy` of `K` with `x ∈ S`, `y ∉ S`, and a subset `Q ⊆ K` of edges inside `S` with boundary
-`{o} ∆ {x}` not containing `xy`.
+For a finite set $V$, a finite set $K$ of unordered pairs, vertices $o, z$ and $S \subseteq V$, first-exit data consist of
+vertices $x \ne y$ and a set $Q$ of pairs such that $x \in S$, $y \notin S$, $\{x, y\} \in K$, $Q \subseteq K$, every pair of $Q$ lies
+inside $S$, $\{x, y\} \notin Q$, and the [odd-degree vertices](has-odd-boundary.md) of $Q$ form $\{o\} \,\triangle\, \{x\}$.

@@ -1,4 +1,4 @@
 # Eigenvector basis equation with real eigenvalues
 
-Real-valued form of `LinearMap.IsSymmetric.apply_eigenvectorBasis`: the
-eigenvalue is a plain real scalar, with no `ℝ → 𝕜` coercion.
+Let $T$ be a symmetric linear operator on a finite-dimensional real inner product space $E$ of dimension $n$, with orthonormal eigenvector basis $(e_i)_{i < n}$ and eigenvalues $\lambda_i$. Then $T e_i = \lambda_i e_i$ for every $i$, with $\lambda_i$ a real
+number.

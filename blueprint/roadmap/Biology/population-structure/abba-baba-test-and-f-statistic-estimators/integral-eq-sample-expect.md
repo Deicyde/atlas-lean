@@ -1,5 +1,7 @@
 # Sampling expectation is an expectation of independent indicators
 
-`sampleExpect` is the expectation under independent sampling: if the derived-allele
-indicators `X i` are independent random variables with `P(X i = true) = q i`, then
-`E[g (X 0, …, X (n - 1))] = sampleExpect g q`.
+Let $\nu$ be a probability measure on a measurable space $\Omega$, let $n$ be a natural number, and let $X_1, \dots, X_n : \Omega \to \{0, 1\}$ be measurable and mutually independent under $\nu$ with $\nu(X_i = 1) = q_i$ for each $i$. Then for every $g : \{0, 1\}^n \to \mathbb{R}$,
+
+$$\int g(X_1, \dots, X_n) \, d\nu = \mathbb{E}_q[g],$$
+
+where $\mathbb{E}_q$ is the [sampling expectation](sample-expect.md).

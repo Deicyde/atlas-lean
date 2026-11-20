@@ -1,4 +1,7 @@
 # Likelihood of right-censored data
 
-The censored-data likelihood of a law `μ` of the survival time:
-`∏ⱼ μ{tⱼ}^{dⱼ} · μ(tⱼ, ∞)^{cⱼ}`.
+For [grouped right-censored data](censored-data.md) and a measure $\mu$ on $\mathbb{R}$ (in the model, the law of the survival time), the censored-data likelihood is
+
+$$L(\mu) = \prod_{j=1}^{k} \mu(\{t_j\})^{d_j}\, \mu\big((t_j, \infty)\big)^{c_j},$$
+
+with masses read as real numbers (an infinite mass is read as $0$).

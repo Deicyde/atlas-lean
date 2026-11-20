@@ -8,4 +8,4 @@ on $U$, such that $F_{\varphi(n)} \to f$ locally uniformly on $U$ as $n \to \inf
 
 ## Sources
 
-- Montel's theorem on normal families, P. Montel 1912/1927; see Ahlfors, Functions of One Complex Variable II; Lean is locally uniformly bounded holomorphic family with strictly monotone subsequence locally uniform convergent to holomorphic limit, open U form.
+- Montel's theorem on normal families, P. Montel 1912/1927; see J. B. Conway, Functions of One Complex Variable II, Springer (1995). The statement here is the form on an open set $U$: a locally uniformly bounded sequence of holomorphic functions has a subsequence converging locally uniformly to a holomorphic limit.

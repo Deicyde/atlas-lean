@@ -1,9 +1,15 @@
-# Lemma 3
+# Twelfth-moment asymptotic for the Riemann zeta function
 
-**Lemma 3** (quoted twelfth-moment asymptotic). For fixed `5/7 < σ < 1` and every `ε > 0`,
-`∫_1^T |ζ(σ + i t)|^{12} dt = T ∑_{n ≥ 1} d_6(n)^2 n^{-2σ} + O(T^{(9 - 7σ)/4 + ε})`, where
-`d_6 = ζ^{*6}` is the six-fold divisor function. The printed side condition `|t| ≥ 1` is implied
-by the integration range and omitted.
+Let $\zeta$ be the Riemann zeta function and let $d_6 = \mathbf{1} * \mathbf{1} * \mathbf{1} *
+\mathbf{1} * \mathbf{1} * \mathbf{1}$ be the six-fold divisor function, the six-fold Dirichlet
+convolution of the constant function $1$. For fixed $\sigma$ with $5/7 < \sigma < 1$ and every
+$\varepsilon > 0$,
+
+$$\int_1^T |\zeta(\sigma + it)|^{12}\, dt = T \sum_{n \ge 1} \frac{d_6(n)^2}{n^{2\sigma}} +
+O\bigl(T^{(9 - 7\sigma)/4 + \varepsilon}\bigr) \qquad (T \to \infty).$$
+
+The source states the estimate with the side condition $|t| \ge 1$, which holds on the range of
+integration.
 
 ## Sources
 

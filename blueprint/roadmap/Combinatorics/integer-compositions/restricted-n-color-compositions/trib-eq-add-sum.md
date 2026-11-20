@@ -8,4 +8,4 @@ $$t(n) = t(n-2) + 2 \sum_{i=3}^{n} t(n-i).$$
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Proposition 6.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Proposition 6.

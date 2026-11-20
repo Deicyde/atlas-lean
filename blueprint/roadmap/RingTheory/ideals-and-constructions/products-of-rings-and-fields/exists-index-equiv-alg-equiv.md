@@ -8,4 +8,4 @@ $G_{\sigma(i)}$ as a $K$-algebra for every $i \in I$.
 
 ## Sources
 
-- ATLAS N83, Corollary 4.33.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 4, Corollary 4.33, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

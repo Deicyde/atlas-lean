@@ -11,4 +11,12 @@ $\varepsilon \ge 1$). No invertibility of $T$ is assumed.
 
 ## Sources
 
-- V. A. Rokhlin, *A general measure-preserving transformation is not mixing*, Doklady Akademii Nauk SSSR 60 (1948), 349-351 (original Russian; English translation later); S. Kakutani, *Induced measure-preserving transformations*, Proc. Imp. Acad. Tokyo 19 (1943), 635-641 (independent discovery); S.-M. Heinemann and O. Schmitt, *Rokhlin's lemma for non-invertible maps*, Dynam. Systems Appl. 10 (2001), no. 2, 201-213. The classical form is listed as §109 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `rokhlin_lemma` of the lean-eval benchmark.
+- V. A. Rokhlin, *A general measure-preserving transformation is not mixing* (in Russian), Dokl. Akad. Nauk SSSR
+  60 (1948), 349–351.
+- Shizuo Kakutani, *Induced measure preserving transformations*, Proc. Imp. Acad. Tokyo 19 (1943), 635–641,
+  DOI 10.3792/pia/1195573248 (independent discovery).
+- S.-M. Heinemann and O. Schmitt, *Rokhlin's lemma for non-invertible maps*, Dynam. Systems Appl. 10 (2001),
+  no. 2, 201–213 (the non-invertible case).
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §109 (Rokhlin-Kakutani approximation, the
+  invertible case), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `rokhlin_lemma` of the lean-eval benchmark.

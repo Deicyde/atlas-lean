@@ -7,4 +7,4 @@ $a_1 x_1^2 + \dots + a_n x_n^2 = 0$.
 
 ## Sources
 
-- ArithmeticGeometry:75.
+- ATLAS ArithmeticGeometry, Section 11.1, Theorem 11.1.

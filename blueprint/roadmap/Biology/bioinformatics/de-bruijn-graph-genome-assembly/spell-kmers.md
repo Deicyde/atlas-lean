@@ -1,3 +1,3 @@
 # The (k-1)-mer walk of a string spells the string
 
-The `(k-1)`-mer walk of `s` spells `s` back (`2 ≤ k`, `k - 1 ≤ |s|`).
+For $k \ge 2$ and every string $s$ of length at least $k - 1$, the walk of [$(k-1)$-mers](kmers.md) of $s$ [spells](spell.md) $s$.

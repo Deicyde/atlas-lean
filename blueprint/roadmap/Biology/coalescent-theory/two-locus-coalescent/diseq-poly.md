@@ -1,3 +1,3 @@
 # Linkage disequilibrium polynomial
 
-The linkage disequilibrium `D = x_AB x_ab - x_Ab x_aB` as a polynomial.
+The real polynomial $D = x_{AB}\, x_{ab} - x_{Ab}\, x_{aB}$ in the four gamete frequencies $x_{AB}, x_{Ab}, x_{aB}, x_{ab}$: the linkage disequilibrium.

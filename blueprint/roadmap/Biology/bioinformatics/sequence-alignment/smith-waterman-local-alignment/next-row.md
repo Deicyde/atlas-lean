@@ -1,4 +1,3 @@
 # Next row of the Smith–Waterman table
 
-The row of the table for the prefix extended by `a`, from the previous row: `H[i+1][0] = 0`,
-then the recurrence left to right.
+For a letter $a$, a sequence $y$ and a previous row $r = (r_0, r_1, \dots)$, the next row is $0$ followed by the [remaining cells](next-row-aux.md) for $a$, $y$, $(r_1, r_2, \dots)$, upper-left value $r_0$ (read as $0$ if $r$ is empty) and left value $0$.

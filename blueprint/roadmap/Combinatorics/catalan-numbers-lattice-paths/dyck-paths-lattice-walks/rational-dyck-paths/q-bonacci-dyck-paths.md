@@ -11,4 +11,4 @@ inequality $p s \le r v$ is required only when $p < r$ and $v \ne 0$.
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 4.
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 4.

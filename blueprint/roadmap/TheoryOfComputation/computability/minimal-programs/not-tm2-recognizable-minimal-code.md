@@ -7,4 +7,4 @@ encoding of $c$ exactly when $c$ is minimal.
 
 ## Sources
 
-- M. Sipser, Introduction to the Theory of Computation, 3rd ed., Theorem 6.7.
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Theorem 6.7.

@@ -1,6 +1,3 @@
 # Vertical overlap crossings separate the sides of a rectangle
 
-For the configuration `ω`: whenever `x_B` on the bottom of the overlap is joined to its top,
-there is a set `L` containing the left side of `[α, β] × [c, d]` and disjoint from its right side
-such that every lattice edge of the rectangle crossing the boundary of `L` has an endpoint in the
-open cluster of `x_B` inside the overlap.
+Let $\omega$ be a bond configuration on $\mathbb{Z}^2$, $\alpha, \beta, m, m', c, d \in \mathbb{Z}$, $R = [\alpha, \beta] \times [c, d]$ and $O = [m, m'] \times [c, d]$. The condition is: if $\alpha \le m \le m' \le \beta$, then for every site $x_B$ on the bottom side of $O$ that is joined inside $O$ by an open path to some site of the top side of $O$, there is a set $L \subseteq \mathbb{Z}^2$ containing every site of $R$ with first coordinate $\alpha$, containing no site of $R$ with first coordinate $\beta$, and such that every lattice edge $\{u, v\}$ with $u, v \in R$ and exactly one endpoint in $L$ has an endpoint in the [open cluster $C_O(x_B)$ of $x_B$ inside $O$](../horizontal-and-vertical-crossings-meet/overlap-comp.md).

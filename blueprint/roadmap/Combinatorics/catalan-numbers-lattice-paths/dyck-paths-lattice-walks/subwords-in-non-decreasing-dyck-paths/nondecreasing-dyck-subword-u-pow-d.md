@@ -15,4 +15,4 @@ is stated for $n \ge m + 2$.
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 15 (`jis-2025-25.1.6-thm-15`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 15 (`jis-2025-25.1.6-thm-15`).

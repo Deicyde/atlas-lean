@@ -7,4 +7,4 @@ after $t_2$ steps equals the state reached after $t_1$ steps.
 
 ## Sources
 
-- Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
+- M. L. Minsky, *Computation: Finite and Infinite Machines*, Prentice-Hall, 1967, Chapter 11.

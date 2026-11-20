@@ -23,4 +23,4 @@ the route of Barry's Proposition Char following He and Sprugnoli's Theorems 2.1 
 
 ## Sources
 
-- P. Barry, *A Note on a Family of Generalized Pascal Matrices Defined by Riordan Arrays*, Journal of Integer Sequences 16 (2013), Article 13.5.4, Proposition Char, lines 173-180, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry2/barry231.tex>, after Theorems 2.1 and 2.2 of He.
+- Paul Barry, *A Note on a Family of Generalized Pascal Matrices Defined by Riordan Arrays*, Journal of Integer Sequences 16 (2013), Article 13.5.4, Proposition 2 (after Theorems 2.1 and 2.2 of He), <https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry2/barry231.pdf>.

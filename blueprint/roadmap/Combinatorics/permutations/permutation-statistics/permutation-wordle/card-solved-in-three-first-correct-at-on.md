@@ -9,4 +9,4 @@ $1 - 2^{n+1} + 3^n + n^2/2 + 5n/2 - n \cdot 2^n$.
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 10 (`jis-2026-26.1.7-thm-10`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 10.

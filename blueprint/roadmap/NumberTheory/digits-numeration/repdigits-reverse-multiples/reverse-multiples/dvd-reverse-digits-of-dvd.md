@@ -6,4 +6,4 @@ base-$B$ reversal of every multiple of $n$.
 
 ## Sources
 
-- Mohamed Ayad and Rachid Bouchenna, "Which Integer Divides the Reverse of Any of Its Multiples?", Proposition 5.
+- Mohamed Ayad and Rachid Bouchenna, *Which Integer Divides the Reverse of Any of Its Multiples?*, INTEGERS 25 (2025), Article A37, Proposition 5.

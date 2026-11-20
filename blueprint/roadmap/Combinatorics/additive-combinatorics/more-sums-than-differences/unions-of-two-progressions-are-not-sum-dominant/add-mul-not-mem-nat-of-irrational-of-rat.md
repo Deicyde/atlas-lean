@@ -4,8 +4,7 @@ Let
 $x$ be an irrational real number and $d$ a rational number. Then for all natural numbers $i$ and
 $j$, neither $x + id$ nor $2x + jd$ is a nonnegative integer.
 
-The paper assumes $d \in \mathbb{Q} \setminus \mathbb{N}$; the claim holds for every rational $d$,
-so that restriction is not stated.
+The paper assumes $d \in \mathbb{Q} \setminus \mathbb{N}$; the claim holds for every rational $d$.
 
 ## Sources
 

@@ -7,4 +7,4 @@ $X^{n+1} = X^n X = \{yx : y \in X^n,\ x \in X\}$.
 
 ## Sources
 
-- 2310.10246 D01 (main.tex:146).
+- S. Machado, *Approximate lattices and $S$-adic linear groups*, arXiv:2310.10246v1 (2023), Section 1, Notation, https://arxiv.org/abs/2310.10246.

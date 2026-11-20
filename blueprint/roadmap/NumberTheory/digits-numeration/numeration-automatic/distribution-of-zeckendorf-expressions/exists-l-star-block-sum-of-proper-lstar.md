@@ -1,6 +1,6 @@
 # Decomposing $L^*$-blocks into $\tilde L^*$-blocks
 
-**Decomposing $L^*$-blocks into $\tilde L^*$-blocks.** Let $L$ and $\tilde L$ be lists of
+Let $L$ and $\tilde L$ be lists of
 natural numbers of length at least $2$ with nonzero first entries whose periodic Zeckendorf
 collections satisfy $E \subsetneq \tilde E$. If $\zeta$ is a nonzero proper $L^*$-block with
 support interval $[i, b]$, then $\zeta$ is a sum of disjoint proper $\tilde L^*$-blocks whose

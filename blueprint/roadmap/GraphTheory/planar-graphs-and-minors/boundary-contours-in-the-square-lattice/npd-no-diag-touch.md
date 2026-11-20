@@ -1,3 +1,3 @@
 # Set with no diagonal touches
 
-`K` has no diagonal touch at any face.
+A set $K \subseteq \mathbb{Z}^2$ has no diagonal touches when there is no unit face of the square lattice exactly two opposite corners of which lie in $K$.

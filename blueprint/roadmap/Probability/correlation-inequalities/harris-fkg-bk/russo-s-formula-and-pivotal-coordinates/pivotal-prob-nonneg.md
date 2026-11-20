@@ -1,3 +1,3 @@
 # Nonnegativity of the pivotal weight
 
-The pivotal weight `pivotalProb p A e` is nonnegative for `p ∈ [0, 1]`.
+Let $E$ be a finite set and $p \in [0,1]$. For every event $A \subseteq \{0,1\}^E$ and every $e \in E$, the [pivotal weight](pivotal-prob.md) is nonnegative: $\mathrm{Piv}_p(A, e) \ge 0$.

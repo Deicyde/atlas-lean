@@ -6,4 +6,4 @@ $1 \le k \le \lfloor n/2 \rfloor$ (OEIS A283190).
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of `s(n)`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of $s(n)$).

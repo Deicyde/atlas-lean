@@ -28,7 +28,7 @@
 - [IDP-necessary condition](satisfies-idpnecessary.md)
 - [Support form of the IDP necessary condition](satisfies-support-idpnecessary.md)
 
-## Theorems 1--9
+## Theorems 1–9
 
 - [Reflexivity criterion for weighted projective simplices](reflexive-iff-weight-dvd.md)
 - [Reflexivity criterion in support form](reflexive-support-iff-lcm-dvd.md)
@@ -53,7 +53,7 @@
 - [Cases (i)–(vii) of the three-support family give IDP reflexive simplices](first-seven-three-supported-families-are.md)
 - [Case (viii) of the three-supported classification is reflexive but not IDP](eighth-three-supported-family-is-not-idp.md)
 
-## Reflexive stabilizations and Theorems 10--13
+## Reflexive stabilizations and Theorems 10–13
 
 - [Reflexive stabilization number](reflexive-stabilization-number.md)
 - [Reflexive stabilization](reflexive-stabilization.md)

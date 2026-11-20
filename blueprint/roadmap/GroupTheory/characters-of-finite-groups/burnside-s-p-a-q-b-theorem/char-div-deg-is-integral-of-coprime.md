@@ -7,4 +7,4 @@ $g$ is coprime to $\dim V$, then $\chi(g)/\chi(1)$ is an algebraic integer.
 
 ## Sources
 
-- Bielefeld Theorem 5, integrality step.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Theorem 5, the integrality step of its proof, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

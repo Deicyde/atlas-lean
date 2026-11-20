@@ -16,7 +16,7 @@
 - [Explicit step bound of the SAT verifier machine](total-steps.md)
 - [Initial configuration of the SAT verifier machine](init-list-tm.md)
 - [Step bound of the SAT verifier machine](time.md)
-- [The `TM2` SAT verifier](verifier.md)
+- [The SAT verifier as a finite multi-stack Turing machine](verifier.md)
 - [The SAT host's answer is polynomial-time](is-poly-time-ans.md)
 - [The SAT verifier is polynomial-time](is-poly-time-sat-verifier.md)
 - [SAT is in NP](sat-dec-mem-np.md)

@@ -6,7 +6,9 @@ if $P^h \mid f$ for every monic irreducible $P$ dividing $f$, and $\omega_h(f)$ 
 distinct monic irreducible $P$ that divide $f$ with multiplicity exactly $h$. For each $n$, let
 $p_n$ be the number of $h$-full monic polynomials $f$ of degree $n$ over $F$ with
 
-$$\alpha \le \frac{\omega_h(f) - \log(n/h)}{\sqrt{\log(n/h)}} \le \beta,$$
+$$
+\alpha \le \frac{\omega_h(f) - \log(n/h)}{\sqrt{\log(n/h)}} \le \beta,
+$$
 
 divided by the number of all $h$-full monic polynomials of degree $n$ over $F$, where $n/h$ is
 real division. Then $p_n \to \frac{1}{\sqrt{2\pi}} \int_\alpha^\beta e^{-t^2/2}\,dt$ as

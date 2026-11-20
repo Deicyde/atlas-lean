@@ -11,4 +11,4 @@ ends in the state $0$.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Section 4 (the language `L` and `L`-walks).
+- Benjamin V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Section 5 (the language $L$ and $L$-walks).

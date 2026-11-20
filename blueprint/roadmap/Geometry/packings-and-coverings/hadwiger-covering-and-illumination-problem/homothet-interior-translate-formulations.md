@@ -8,4 +8,4 @@ interior $\operatorname{int} K$, repetitions allowed.
 
 ## Sources
 
-- Bezdek and Khan, arXiv:1602.06040v2, introduction; Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction.
+- Károly Bezdek and Muhammad A. Khan, The geometry of homothetic covering and illumination, in Discrete Geometry and Symmetry, Springer Proc. Math. Stat. 234 (2018), 1–30, arXiv:1602.06040v2, introduction; Andrii Arman, Jaskaran Singh Kaire and Andriy Prymak, Hadwiger's conjecture for cap bodies, arXiv:2510.25968v3 (2025), introduction.

@@ -1,7 +1,6 @@
 # Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (Kourovka 16.106)
 
-**Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other
-(Kourovka 16.106).** There exist finite groups $G_1$ and $G_2$ such that:
+There exist finite groups $G_1$ and $G_2$ such that:
 
 - $G_1$ and $G_2$ have the same spectrum, where the spectrum $\pi_e(G)$ of a group $G$ is the set
   of orders of its elements;

@@ -5,4 +5,4 @@ every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources
 
-- J. K. Lanctot et al., "Distinguishing string selection problems" (2003); M. Frances and A. Litman, "On covering problems of codes" (1997).
+- J. Kevin Lanctot, Ming Li, Bin Ma, Shaojiu Wang and Louxin Zhang, "Distinguishing string selection problems", Information and Computation 185 (2003), 41-55; Moti Frances and Ami Litman, "On covering problems of codes" (1997).

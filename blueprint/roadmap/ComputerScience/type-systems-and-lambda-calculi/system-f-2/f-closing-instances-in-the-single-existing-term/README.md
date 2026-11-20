@@ -1,4 +1,4 @@
-# Fω closing instances in the single existing term model
+# Closing Fω terms in the untyped term model
 
 - [Closing Fω terms in the System F term model](close.md)
 - [Erasure of closed Fω terms to the term model](erase-model.md)

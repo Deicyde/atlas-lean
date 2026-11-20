@@ -15,5 +15,5 @@ are $\lnot p_{b_{k,j} + x}$ and $\lnot p_{b_{k,j} + y}$. Let $E$ be the concaten
 $E_{k,j}$ for $k = 0, \dots, K - 1$ and within each for $j = 0, \dots, H - 1$. Then for every
 output list $o$ and every flag $v$, the one-hot generator of $L$, started at the first label of
 the stage computing $TW := t W$ with flag $v$, output stack $o$ and each counter $c$ holding
-$F(c)$, reaches within the time-step budget of $L$, $T$ and $H$ (T Body B) steps the head of the
+$F(c)$, reaches within the time-step budget of $L$, $T$ and $H$ (see [the step budget for one time step](t-body-b.md)) steps the head of the
 time loop with flag false, the same counters, and output stack $E \, o$ (concatenation).

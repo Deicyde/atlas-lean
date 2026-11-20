@@ -1,6 +1,5 @@
-# Total-correctness Hoare logic as an inference system
+# Total-correctness Hoare logic as a labelled proof system
 
-A Hoare triple, given by a
-precondition $P$, a command $c$ and a postcondition $Q$, is derivable in the inference system on
-Hoare triples tagged total correctness, which is total-correctness Hoare logic, if and only if
-it is valid for total correctness.
+For every Hoare triple $\{P\}\,c\,\{Q\}$, the triple is derivable in total-correctness Hoare logic,
+viewed as the proof system on Hoare triples with the total-correctness label, if and only if it is
+valid for total correctness.

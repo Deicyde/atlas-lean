@@ -1,3 +1,4 @@
 # LTL tableau accepts exactly the satisfying words
 
-The full tableau recognizes exactly the existing LTL satisfaction relation.
+An infinite word is accepted by the generalized Büchi tableau of an LTL formula $\varphi$ if and
+only if it satisfies $\varphi$.

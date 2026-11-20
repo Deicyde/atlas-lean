@@ -8,4 +8,4 @@ integer $k \ge 1$.
 
 ## Sources
 
-- OPG-37402, Lucas Numbers Modulo m [OpenGarden].
+- Brandon Avila and Yongyi Chen, *On Moduli for Which the Lucas Numbers Contain a Complete Residue System*, The Fibonacci Quarterly 51 (2013), no. 2, 151–152, Theorem, https://doi.org/10.1080/00150517.2013.12427958.

@@ -1,4 +1,4 @@
-# Generalized FiboCatalan numbers at r = 1
+# Generalized FiboCatalan numbers at $r = 1$
 
 For every natural number $n$, the generalized
 FiboCatalan number with parameters $r = 1$ and $n$ equals $2 F_{2n}! / (F_{n+2}! \, F_n!)$, where

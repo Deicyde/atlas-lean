@@ -1,3 +1,3 @@
 # Vertex of the next box lying in the inner box
 
-A vertex of `Λ_{n+1}` lies in `Λ_n`.
+For $d, n \in \mathbb{N}$, a vertex $v$ of $\Lambda_{n+1}$ is inner when $v \in \Lambda_n$, where $\Lambda_m = \{-m, \dots, m\}^d$.

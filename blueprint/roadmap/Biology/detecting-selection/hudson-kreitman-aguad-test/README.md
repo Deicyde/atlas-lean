@@ -9,6 +9,6 @@
 - [Hudson–Kreitman–Aguadé statistic](hka-statistic.md)
 - [Positivity of the HKA polymorphism variance](hka-poly-var-pos.md)
 - [Positivity of the HKA divergence variance](hka-div-var-pos.md)
-- [The HKA statistic has mean `3 L` at the true parameters](integral-hka-statistic.md)
+- [The HKA statistic has mean 3L at the true parameters](integral-hka-statistic.md)
 - [HKA's estimating equations](hka-equations.md)
 - [True parameters solve the HKA estimating equations](hka-equations-expected.md)

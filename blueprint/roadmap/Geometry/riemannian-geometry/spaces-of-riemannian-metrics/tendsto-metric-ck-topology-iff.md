@@ -13,4 +13,4 @@ derivative within $T_\varphi$ of the coordinate expression of $g_0$ in $\varphi$
 
 ## Sources
 
-- Burns-Matveev v3 §8.3.
+- K. Burns and V. S. Matveev, Open problems and questions about geodesics, Ergodic Theory Dynam. Systems 41 (2021), 641–684, arXiv:1308.5417, §8.3 of the third arXiv version.

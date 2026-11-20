@@ -1,3 +1,4 @@
 # Membership of a doubled-box site in a translated box
 
-A site of `Λ_{2n}` lies in `Λ_n - y`.
+For $d, n \in \mathbb{N}$, $y \in \Lambda_n$ and a site $z$ of $\Lambda_{2n}$, this condition holds when $z$ lies in the translated
+box $\Lambda_n - y$.

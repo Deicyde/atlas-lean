@@ -11,4 +11,4 @@ cutoff and one-variable identity continuation.
 
 ## Sources
 
-- Hartogs extension phenomenon, F. Hartogs, Math. Ann. 62 (1906); see Hörmander, An Introduction to Complex Analysis in Several Variables; Lean is ℂⁿ n ≥ 2 finite-dimensional form via EuclideanSpace ℂ (Fin n) with U open connected K compact U\K connected.
+- Hartogs extension phenomenon, F. Hartogs, Math. Ann. 62 (1906); see Hörmander, An Introduction to Complex Analysis in Several Variables. The statement here is the form in $\mathbb{C}^n$, $n \ge 2$, with $U$ open and connected, $K \subseteq U$ compact and $U \setminus K$ connected.

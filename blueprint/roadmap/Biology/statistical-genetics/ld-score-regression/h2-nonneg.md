@@ -1,3 +1,3 @@
 # Nonnegativity of heritability in the LD-score model
 
-The heritability is nonnegative when there is at least one marker.
+In every [LD-score model](model.md) with $M > 0$ markers, $h^2 \ge 0$.

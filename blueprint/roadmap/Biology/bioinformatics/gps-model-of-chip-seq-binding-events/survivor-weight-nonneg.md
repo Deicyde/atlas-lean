@@ -1,3 +1,3 @@
 # Nonnegativity of surviving weights
 
-Surviving weights are nonnegative.
+For all real $\alpha$ and $N$ and every event $j$, the [surviving weight](survivor-weight.md) satisfies $w_j \ge 0$.

@@ -8,4 +8,5 @@ The source derives this from the recursion $|d_n| = 2|d_{n-1}| - 3(-1)^n$.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 7.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 7,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

@@ -6,4 +6,4 @@ many-one reduction.
 
 ## Sources
 
-- C. J. Colbourn, "The complexity of completing partial Latin squares" (1984).
+- Charles J. Colbourn, "The complexity of completing partial Latin squares" (1984).

@@ -12,4 +12,4 @@ This is the standing hypothesis of Sections 4 to 9 of the source.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Sections 2 and 4 (two-sided periodic point with growing seed `s = u₋₁|u₀`, and its period).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Sections 2 and 4 (two-sided periodic point with growing seed $s = u_{-1} \mid u_0$, and its period).

@@ -1,7 +1,10 @@
 # Solving a system of language equations
 
-If the languages `X i` satisfy
-`X i = (∑ j, A i j * X j) + B i` with every coefficient `A i j` excluding the empty word
-and every coefficient and constant term denoted by a regular expression, then every `X i`
-is denoted by a regular expression. The proof eliminates the last state with Arden's lemma
-and applies the induction hypothesis to the reduced system.
+Let $\alpha$ be an alphabet and $n \in \mathbb{N}$. A language over $\alpha$ is regex-denoted if it is the language matched by some regular expression over $\alpha$ (regular expressions being built from $0$, $1$ and single letters by sum, concatenation and Kleene star). Let $A_{ij}$, $B_i$ and $X_i$ ($0 \le i, j < n$) be languages over
+$\alpha$ such that every $A_{ij}$ and every $B_i$ is regex-denoted, no $A_{ij}$ contains the empty word, and
+
+$$X_i = \bigcup_{j < n} A_{ij} X_j \cup B_i \qquad \text{for all } i < n.$$
+
+Then every $X_i$ is regex-denoted.
+
+The last unknown is eliminated by Arden's lemma and the reduced system is solved by induction on $n$.

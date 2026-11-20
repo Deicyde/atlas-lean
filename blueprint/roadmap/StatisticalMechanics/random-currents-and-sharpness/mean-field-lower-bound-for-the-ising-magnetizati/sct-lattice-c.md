@@ -1,3 +1,4 @@
 # Minimal origin-to-site magnetization ratio in a box
 
-The minimal ratio `min_{x ∈ Λ_n} ⟨σ_0⟩_{Λ_n}/⟨σ_x⟩_{Λ_n}`.
+For $d, n \in \mathbb{N}$ and $\beta, h \in \mathbb{R}$, this is $c_n = \min_{x \in \Lambda_n} \langle \sigma_0 \rangle / \langle \sigma_x \rangle$,
+the magnetizations taken in the free-boundary Ising model on the [nearest-neighbour graph of $\Lambda_n$](sct-box-graph.md) at $(\beta, h)$, with the convention $a/0 = 0$.

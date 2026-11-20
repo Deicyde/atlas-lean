@@ -6,4 +6,4 @@ $p + km \le n + m$, then $J_k(n + m) = p + km$.
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Lemma 6.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Analytical Study and Efficient Evaluation of the Josephus Function*, Journal of Integer Sequences 27 (2024), Article 24.3.8, Lemma 6.

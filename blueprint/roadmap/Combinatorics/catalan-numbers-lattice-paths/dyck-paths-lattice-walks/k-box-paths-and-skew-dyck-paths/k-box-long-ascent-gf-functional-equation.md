@@ -19,4 +19,4 @@ The source's displayed sum for $\acute G_k$ omits the empty path; here $\acute G
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 12 (`jis-2024-24.2.4-lem-12`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 12 (`jis-2024-24.2.4-lem-12`).

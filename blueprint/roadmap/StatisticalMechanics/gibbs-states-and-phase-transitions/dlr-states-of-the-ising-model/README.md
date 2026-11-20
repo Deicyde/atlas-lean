@@ -2,7 +2,7 @@
 
 - [Measurable increasing events of the configuration space](up-meas-system.md)
 - [Weighted mixture of two measures](gibbs-mix.md)
-- [Box $(-n, n)^d$ as a finite set of sites](box-finset.md)
+- [Box $\{-n, \dots, n\}^d$ as a finite set of sites](box-finset.md)
 - [Ordered nearest-neighbour pairs touching the box](bond-pairs-touch.md)
 - [Ordered nearest-neighbour pairs inside the box](bond-pairs-internal.md)
 - [Bonds touching the box](bond-finset-touch.md)
@@ -30,7 +30,7 @@
 - [Ising specification in a box](ising-spec.md)
 - [Convexity of the set of DLR states](convex-is-dlrstate.md)
 - [Stochastic domination on increasing clopen events](stochastically-dominated-clopen.md)
-- [Stochastic domination implies clopen domination, upper measure finite](to-clopen.md)
+- [Stochastic domination implies domination on increasing clopen events](to-clopen.md)
 - [Increasing clopen events](clopen-up-system.md)
 - [Uniqueness of the Gibbs state](gsi-gibbs-unique-of-phases-eq.md)
 - [Specification applied to a function](spec-apply.md)

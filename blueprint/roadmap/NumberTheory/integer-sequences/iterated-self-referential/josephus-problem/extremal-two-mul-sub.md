@@ -8,4 +8,4 @@ and $2k - 1$ is low extremal. In particular, $2k - 2$ is always a low or a high 
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Corollary 7.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Analytical Study and Efficient Evaluation of the Josephus Function*, Journal of Integer Sequences 27 (2024), Article 24.3.8, Corollary 7.

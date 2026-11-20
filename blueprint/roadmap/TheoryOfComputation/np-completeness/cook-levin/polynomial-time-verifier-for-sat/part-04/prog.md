@@ -11,7 +11,7 @@ unit symbol $\mathsf{cl}$), and one bit of internal state. Its instruction at ea
   go to $\mathsf{rej}$.
 - $\mathsf{cls}$: pop $CC$; if it was non-empty go to $\mathsf{un}(\mathrm{false})$, else go to
   $\mathsf{fin}$.
-- $\mathsf{lits}$: pop $LC$; if it was non-empty go to $\mathsf{nm}(\mathrm{none})$, else push
+- $\mathsf{lits}$: pop $LC$; if it was non-empty go to $\mathsf{nm}(\bot)$, else push
   $\mathsf{cl}$ onto $T$ and go to $\mathsf{cls}$.
 - $\mathsf{nm}(\ell)$, where $\ell$ is an optional bit: if the top of $X$ is the bit true, pop it;
   then if the top of $X$ is a bit $s$, pop it, push the name bit $s$ onto $T$ and onto $B$ and go to

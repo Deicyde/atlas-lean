@@ -11,4 +11,4 @@ $U \cap V = 0$ and $U + V = (\mathbb{Z}_2)^m$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 23 (`jis-2025-25.7.8-lem-23`). Indices are `0`-based (`i < k + 1` are the odd ones, and `k + 1 ≤ m + n` makes `y_1, …, y_{k+1}` exist); the perfect cover is an indexed family (perfect covers have distinct entries); `(ℤ₂)^m = U ⊕ V` is stated as `U ⊔ V = ⊤`.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 23 (`jis-2025-25.7.8-lem-23`). The perfect cover is taken as an indexed family $y_1, \dots, y_{m+n}$ (perfect covers have distinct entries), and $k + 1 \le m + n$ makes $y_1, \dots, y_{k+1}$ exist; the decomposition $(\mathbb{Z}_2)^m = U \oplus V$ is stated as $U + V = (\mathbb{Z}_2)^m$.

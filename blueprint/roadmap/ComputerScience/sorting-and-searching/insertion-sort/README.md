@@ -5,7 +5,7 @@
 - [Insertion sort with comparison cost](insertion-sort.md)
 - [Costed insertion returns the ordered insertion](ret-insertion-sort-insert.md)
 - [Cost-annotated insertion sort returns the standard insertion sort](ret-insertion-sort.md)
-- [Agreement with CSLib's monadic insertion sort](insertion-sort-eq-insertion-sort-m.md)
+- [Costed insertion sort as a monadic insertion sort](insertion-sort-eq-insertion-sort-m.md)
 - [Insertion sort returns a sorted list](insertion-sort-sorted.md)
 - [Insertion sort permutes its input](insertion-sort-perm.md)
 - [Correctness of insertion sort](insertion-sort-correct.md)

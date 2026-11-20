@@ -8,8 +8,9 @@ $$a(0, t) = \sum_{m=0}^{t} (-1)^m \, m! \, S(t, m) \, a(m, 0),$$
 
 where $S(t, m)$ is the Stirling number of the second kind.
 
-This recurrence is a variant of the Akiyama–Tanigawa algorithm.
+This recurrence is a variant of the Akiyama–Tanigawa algorithm. The identity is the case $x = 0$ of the
+[expansion by generalized Stirling numbers of the second kind](poly-initial-expansion.md).
 
 ## Sources
 
-- K.-W. Chen, "Algorithms for Bernoulli numbers and Euler numbers," Journal of Integer Sequences 4 (2001), Article 01.1.6, as stated in Dil, Kurt, and Cenkci (2007), Proposition 4. It is the `x = 0` case of `poly_initial_expansion`.
+- Kwang-Wu Chen, "Algorithms for Bernoulli numbers and Euler numbers," Journal of Integer Sequences 4 (2001), Article 01.1.6, as stated in Dil, Kurt, and Cenkci (2007), Proposition 4.

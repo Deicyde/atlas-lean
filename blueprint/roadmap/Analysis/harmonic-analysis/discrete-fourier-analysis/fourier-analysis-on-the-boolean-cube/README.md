@@ -32,7 +32,7 @@
 - [The two-bit AND has Boolean degree two](boolean-degree-all-true-two.md)
 - [Fourier degree is at most Boolean degree](multilinear-degree-le-indicator.md)
 
-## Finset Fourier
+## Fourier analysis on the subsets of a finite set
 
 - [Fourier character on finite sets](fourier-char.md)
 - [Fourier coefficient on the subsets of a finite set](fourier-coeff.md)
@@ -46,7 +46,24 @@
 - [Subset characters agree with cube characters](fourier-char-eq-cube-chi.md)
 - [Subset Fourier coefficients agree with cube Fourier coefficients](fourier-coeff-eq-bool-fourier-coeff.md)
 
-## Fourier Laws
+## Inversion, Plancherel and convolution
 
 - [Fourier inversion on the subsets of a finite set](fourier-inversion.md)
 - [Plancherel identity on the subsets of a finite set](fourier-plancherel.md)
+- [Convolution on the Boolean cube](bool-conv.md)
+- [Convolution is commutative](bool-conv-comm.md)
+- [Convolution theorem on the Boolean cube](bool-fourier-coeff-bool-conv.md)
+- [Characters are multiplicative](cube-chi-cube-mul.md)
+- [Product on the Boolean cube](cube-mul.md)
+- [The cube product is commutative](cube-mul-comm.md)
+- [Every point is its own inverse](cube-mul-cube-mul-self.md)
+- [Signs multiply under the cube product](cube-val-beq.md)
+- [Translation-invariance of averages](expect-comp-cube-mul.md)
+
+## Related topics
+
+- [Influences and the noise operator on the Boolean cube](../influences-and-the-noise-operator-on-the-boolean/README.md): influences, total influence, the Poincaré inequality and noise stability, all computed from this Fourier expansion.
+- [Blum–Luby–Rubinfeld linearity test](../../../../TheoryOfComputation/pcp-and-inapproximability/blum-luby-rubinfeld-linearity-test/README.md): the first application of the convolution theorem: testing whether a function is a character.
+- [Goldreich–Levin theorem](../../../../TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/README.md): the hardcore-bit theorem; its proof is an algorithm that finds the large Fourier coefficients of a function given query access.
+- [Fourier transform on finite abelian groups](../fourier-transform-on-finite-abelian-groups/README.md): the cube is the group $\mathbb{F}_2^n$, and this expansion is its Fourier transform.
+- [Haar system](../../wavelets/haar-system/README.md): identifying $\mathbb{F}_2^m$ with the dyadic intervals of length $2^{-m}$ in $[0,1)$, the characters become Walsh functions, and the first $m$ levels of the Haar basis are another orthonormal basis of the same step functions, localized in space rather than in frequency.

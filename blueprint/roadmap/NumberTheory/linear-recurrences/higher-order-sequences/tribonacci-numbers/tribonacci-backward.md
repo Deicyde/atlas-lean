@@ -9,4 +9,4 @@ recursion is the Tribonacci recurrence $T_{n+3} = T_{n+2} + T_{n+1} + T_n$ solve
 
 ## Sources
 
-- Paul Thomas Young, *On the Brocard-Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Proposition 1.
+- Paul Thomas Young, *On the Brocard–Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Proposition 1.

@@ -1,7 +1,6 @@
-# The intervention `do(X_k = a)`
+# The intervention $\mathrm{do}(X_k = a)$
 
-The mechanism of node `k` is replaced by the point mass
-at `a`, and all incoming arrows to `k` are deleted (its parent set becomes `∅`); every other
-node keeps its parents and its table. (The new table of `k` is the point mass on the empty
-parent set; the tables of the other nodes are transported along the equality of their
-parent sets.)
+Let $B$ be a Bayesian network on the nodes $0, \dots, n - 1$ with values in $\alpha$, let $k$ be a
+node and $a \in \alpha$. The network of the intervention $\mathrm{do}(X_k = a)$ replaces the
+mechanism of node $k$ by the point mass at $a$ and deletes all incoming arrows to $k$ (its parent
+set becomes empty); every other node keeps its parents and its table.

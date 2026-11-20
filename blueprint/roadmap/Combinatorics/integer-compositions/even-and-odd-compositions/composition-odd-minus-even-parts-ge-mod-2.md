@@ -7,4 +7,4 @@ number with an even number of parts is $1$ if $n = s + 1$ and $0$ otherwise.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Corollary 12 (`jis-2024-24.6.5-cor-12`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Corollary 12.

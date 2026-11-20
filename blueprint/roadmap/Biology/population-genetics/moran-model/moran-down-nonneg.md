@@ -1,3 +1,3 @@
 # Nonnegativity of the Moran down-step probability
 
-The down-step probability is nonnegative on the states `0 ≤ i ≤ N`.
+For every real $r > 0$ and natural numbers $i \le N$, the [down-step probability](moran-down.md) satisfies $b_i \ge 0$.

@@ -6,7 +6,7 @@ CL-polynomial with scale $a$ and parameters $c_1, \dots, c_m$ when $a \ne 0$, ev
 $m = \lfloor d/2 \rfloor$, and $f = a \prod_{i=1}^{m} (X^2 + X + c_i)$ if $d$ is even and
 $f = a (2X + 1) \prod_{i=1}^{m} (X^2 + X + c_i)$ if $d$ is odd.
 
-The parameters form a list so that later statements can refer to individual parameters.
+
 
 ## Sources
 

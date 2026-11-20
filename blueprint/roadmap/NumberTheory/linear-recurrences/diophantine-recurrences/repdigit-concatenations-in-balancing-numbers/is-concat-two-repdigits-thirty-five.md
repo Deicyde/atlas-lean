@@ -5,4 +5,4 @@ of the one-digit blocks $3$ and $5$, is a concatenation of two repdigits.
 
 ## Sources
 
-- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3.
+- Monalisa Mohapatra, Pritam Kumar Bhoi, and Gopal Krishna Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3.

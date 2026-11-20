@@ -11,4 +11,4 @@ of $P_5 \times P_{2n-2}$ (OEIS A003775) and $g_n$ is OEIS A004253.
 
 ## Sources
 
-- James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, second Theorem (`d_n = g_n h_n`), lines 153–154, with `d` defined at lines 146–150 and `g` at line 164, https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.tex
+- James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, equations (6), (7), <https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.pdf>.

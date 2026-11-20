@@ -6,4 +6,4 @@ $O_n = H_{2n} - \frac{H_n}{2}$.
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 1 (definition of `O_n`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 1 (definition of $O_n$) and the proof of Theorem 3, where $O_n = H_{2n} - \frac{1}{2} H_n$ is used.

@@ -27,3 +27,9 @@
 - [Upper bound for the expected partial sums along the subsequence](es-slln-subseq-upper-bound.md)
 - [Ratios of consecutive subsequence expectations tend to one](es-subseq-ratio-tendsto-one.md)
 - [Pairwise-independent strong law for indicator sums](pairwise-indep-slln.md)
+
+## Related topics
+
+- [Birkhoff ergodic theorem](../../../Dynamics/ergodic-theory/birkhoff-ergodic-theorem/README.md): the strong
+  law for i.i.d. sequences is the Birkhoff ergodic theorem for the Bernoulli shift
+  ([Strong law of large numbers from the ergodic theorem](../../../Dynamics/ergodic-theory/birkhoff-ergodic-theorem/tendsto-average-coordinates-ae.md)).

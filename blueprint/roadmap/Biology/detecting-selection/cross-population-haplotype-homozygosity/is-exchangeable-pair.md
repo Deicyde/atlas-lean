@@ -1,7 +1,5 @@
 # Exchangeable pair of statistics
 
-The pair of statistics `(X, Y)` is exchangeable under `μ`: the joint law is unchanged by
-swapping the two coordinates. This is an additional calibration assumption for a two-group
-haplotype test, stronger than the ordinary neutral null.
-Defined as `IdentDistrib` of the two orderings, so the measurability of the joint laws is
-part of the hypothesis rather than restored separately in each theorem.
+Let $\mu$ be a measure on a measurable space $\Omega$ and $X, Y : \Omega \to \mathbb{R}$. The pair $(X, Y)$ is exchangeable under $\mu$ if $(X, Y)$ and $(Y, X)$ are identically distributed under $\mu$: both are $\mu$-almost everywhere measurable and their laws coincide.
+
+For a two-group haplotype test this is a calibration assumption stronger than the ordinary neutral null: two neutral populations can have different histories or sample sizes.

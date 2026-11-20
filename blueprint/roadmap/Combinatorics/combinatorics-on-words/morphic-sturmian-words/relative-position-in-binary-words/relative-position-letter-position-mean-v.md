@@ -12,4 +12,4 @@ then $p_b(n)/n \to 1$ and $p_a(n)/n \to \infty$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 34 (`jis-2025-25.1.5-thm-34`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 34 (`jis-2025-25.1.5-thm-34`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

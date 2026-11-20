@@ -1,3 +1,3 @@
 # Binary-coded PARTITION is in NP
 
-Exact binary-coded PARTITION belongs to canonical NP.
+The decision problem [PARTITION](partition-dec.md) belongs to the class NP.

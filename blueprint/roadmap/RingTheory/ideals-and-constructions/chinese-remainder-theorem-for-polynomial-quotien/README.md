@@ -6,4 +6,4 @@
 
 ## Adjoin Root
 
-- [Base change of $K(X)/(f)$ along a factorization of $f$ over $K'$](tensor-product-alg-equiv-pi.md)
+- [Base change of $K[X]/(f)$ along a factorization of $f$ over $K'$](tensor-product-alg-equiv-pi.md)

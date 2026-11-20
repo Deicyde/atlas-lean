@@ -1,3 +1,3 @@
 # Positivity of the column partition function
 
-The partition function of a positive background is positive.
+For a nonempty alphabet and $q(b) > 0$ for every $b$, the [partition function](partition-fn.md) is positive for all energies and every $\lambda$.

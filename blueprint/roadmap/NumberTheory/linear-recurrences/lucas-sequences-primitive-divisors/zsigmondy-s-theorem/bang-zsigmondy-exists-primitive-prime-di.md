@@ -8,4 +8,4 @@ with $1 \le m < n$.
 
 ## Sources
 
-- Bayarmagnai lines 133–137 invoke the general theorem, with the explicit exception families per Jones Theorem `Bang` lines 211–215.
+- Gombodorj Bayarmagnai, *A Note on a Theorem of Rotkiewicz*, Journal of Integer Sequences 18 (2015), Article 15.3.6, Section 2 (proof of Theorem 1, invoking Zsigmondy's theorem), with the two exception families as in Lenny Jones, *Variations on a Theme of Sierpiński*, Journal of Integer Sequences 10 (2007), Article 07.4.4, Theorem 2.2 (Bang's theorem, the case $b = 1$).

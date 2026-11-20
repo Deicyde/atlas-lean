@@ -1,4 +1,4 @@
 # Structural congruence preserves the finite linear fragment
 
-All existing structural congruences preserve the finite linear
-fragment. In particular, folding replication cannot introduce it.
+Let $p$ and $q$ be structurally congruent processes, $p \equiv q$. Then $p$ is finite linear
+(contains no replication and no choice) if and only if $q$ is.

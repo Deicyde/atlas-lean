@@ -5,4 +5,4 @@ let $M$ and $B$ be subsets of $\alpha$. If $B$ is a basis of $M$, then $0 \notin
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4.
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4.

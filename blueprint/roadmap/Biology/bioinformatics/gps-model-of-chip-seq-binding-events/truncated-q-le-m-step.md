@@ -1,8 +1,7 @@
 # The update is an upper bound for the truncated objective
 
-**The update is an upper bound for the truncated objective** over the positive
-probability vectors (derived characterization of the elimination rule). Upper-bound
-statement only: this does not prove the value at `mStep` is the supremum (no
-approximation or `sSup` theorem is given). When elimination occurs `mStep` itself is not
-a positive vector (eliminated coordinates are zero), so it is the boundary point on the
-face where eliminated coordinates vanish, not a maximizer inside the positive simplex.
+Suppose $\alpha < N_{j_0}$ for some event $j_0$. Then for every $\pi$ with $\pi_j > 0$ for all $j$ and $\sum_j \pi_j = 1$,
+
+$$\tilde Q_\alpha(\pi) \le \tilde Q_\alpha(\hat\pi),$$
+
+where $\tilde Q_\alpha$ is the [truncated objective](truncated-q.md) and $\hat\pi$ the [M-step update](m-step.md). Here $\hat\pi$ lies on the closed probability simplex, with $\hat\pi_j = 0$ exactly for the eliminated events $N_j \le \alpha$; when some event is eliminated it is not itself a positive vector.

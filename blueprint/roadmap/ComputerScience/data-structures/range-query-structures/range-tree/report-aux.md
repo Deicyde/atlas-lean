@@ -8,5 +8,3 @@ interval $[l, h]$ returns $\mathit{acc}$ if $h < a$ or $b < l$; otherwise, if $a
 $h \le b$, it returns the node's leaf values from left to right followed by $\mathit{acc}$;
 otherwise it returns the report of the left child starting from the report of the right child
 starting from $\mathit{acc}$.
-
-The cached bounds make each pruning test constant-time.

@@ -5,4 +5,4 @@ alternating generalized harmonic number $\overline{H}_0^{(s)}$ is $0$.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definition of `H̄_n^{(p)}`).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definition of $\overline{H}_n^{(p)}$).

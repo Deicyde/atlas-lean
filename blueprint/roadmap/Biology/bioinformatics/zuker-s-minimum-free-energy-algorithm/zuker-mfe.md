@@ -1,3 +1,3 @@
 # Zuker minimum free energy
 
-Zuker's minimum free energy of `s`: the exterior recursion on the whole sequence.
+The Zuker minimum free energy of a sequence $s$ is $W(|s|)$, the [exterior-loop recursion](zuker-exterior.md) on the whole sequence.

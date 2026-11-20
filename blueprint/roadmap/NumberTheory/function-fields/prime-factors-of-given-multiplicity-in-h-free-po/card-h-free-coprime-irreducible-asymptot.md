@@ -7,7 +7,9 @@ constant $C \ge 0$ such that for every monic irreducible polynomial $P$ over $F$
 with $|P| = q^{d}$, and every natural number $n$, the number $N$ of $\ell$-free monic polynomials
 of degree $n$ over $F$ that are coprime to $P$ satisfies
 
-$$\left| N - \frac{q^n (1 - q^{1-\ell})(1 - |P|^{-1})}{1 - |P|^{-\ell}} \right| \le C.$$
+$$
+\left| N - \frac{q^n (1 - q^{1-\ell})(1 - |P|^{-1})}{1 - |P|^{-\ell}} \right| \le C.
+$$
 
 So $C$ depends on $F$, $\ell$ and $d$ but not on $P$ or $n$.
 

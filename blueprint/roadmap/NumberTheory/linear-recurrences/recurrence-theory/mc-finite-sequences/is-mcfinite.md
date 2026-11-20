@@ -7,4 +7,4 @@ such that $s(n + p) \equiv \sum_{i=0}^{p-1} c_i\, s(n + i) \pmod{m}$ for all $n 
 
 ## Sources
 
-- Filmus, Fischer, Makowsky, and Rakita, "MC-Finiteness of Restricted Set Partition Functions," Journal of Integer Sequences 26 (2023), Article 23.7.4, lines 281–286.
+- Yuval Filmus, Eldar Fischer, Johann A. Makowsky, and Vsevolod Rakita, "MC-Finiteness of Restricted Set Partition Functions," Journal of Integer Sequences 26 (2023), Article 23.7.4, Section 2 (definition of MC-finite sequences).

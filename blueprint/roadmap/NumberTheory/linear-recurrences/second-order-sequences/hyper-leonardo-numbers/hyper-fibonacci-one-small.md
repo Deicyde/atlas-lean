@@ -6,4 +6,4 @@ $F^{(1)}_3 = 4$.
 
 ## Sources
 
-- Spreafico and Catarino, INTEGERS 26 (2026), Article A48, after Proposition 5 (`F^{(r)}_0 = 0`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, after Proposition 5 ($F^{(r)}_0 = 0$).

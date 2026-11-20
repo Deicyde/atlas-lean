@@ -1,3 +1,3 @@
 # Lower left corner of a face $f$
 
-The lower left corner of the face `f`. This is `StatMech.Lattice.faceCorner00 (f 0) (f 1)`.
+For a unit face labelled by its lower left corner $f = (f_0, f_1) \in \mathbb{Z}^2$, its lower left corner, the site $(f_0, f_1)$.

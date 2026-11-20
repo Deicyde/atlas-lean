@@ -6,4 +6,4 @@ $0, 0, 1, 1, 2, 4, \dots$ (OEIS A000073).
 
 ## Sources
 
-- Jiaqiang Pan, *Multiple Binomial Transforms and Families of Integer Sequences*, Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Pan/pan8.tex>.
+- Jiaqiang Pan, *Multiple Binomial Transforms and Families of Integer Sequences*, Journal of Integer Sequences 13 (2010), Article 10.4.2, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Pan/pan8.tex>.

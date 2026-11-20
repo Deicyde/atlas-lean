@@ -1,3 +1,4 @@
 # Smaller box as a subtype of a larger box
 
-For `n ≤ m`, `Λ_n` is equivalent to the subtype of `Λ_m` of sites lying in `Λ_n`.
+For $d \in \mathbb{N}$ and $n \le m$, the sites of $\Lambda_n$ correspond bijectively to the sites of $\Lambda_m$ that lie in
+$\Lambda_n$, each site being sent to itself.

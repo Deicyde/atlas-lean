@@ -7,4 +7,4 @@ if $z \in A$; that is, $f^{-1}(B) = A$.
 
 ## Sources
 
-- Research Problems in Function Theory, Problem 2.31 (record AMR-022-2031).
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory, Problem 2.31 (record AMR-022-2031).

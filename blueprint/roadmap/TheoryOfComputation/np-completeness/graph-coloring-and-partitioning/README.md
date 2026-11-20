@@ -3,6 +3,7 @@
 Vertex, edge, list and precoloring-extension coloring, achromatic number, graph homomorphism, maximum and k-cuts, bisection, multiway cut, partition into triangles or paths, bandwidth, linear arrangement and linear ordering.
 
 - [Achromatic number](achromatic-number/README.md)
+- [Clique cover](clique-cover/README.md)
 - [Edge coloring](edge-coloring/README.md)
 - [Graph 3-coloring](graph-3-coloring/README.md)
 - [Graph bandwidth](graph-bandwidth/README.md)

@@ -15,4 +15,4 @@ The paper assumes $\ell \ge 2$; the identity also holds for $\ell = 0, 1$.
 
 ## Sources
 
-- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 5 (`jis-2025-25.3.6-cor-5`).
+- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 5.

@@ -5,8 +5,7 @@ set of size $n$, and write $tP = \{t y : y \in P\}$. Then $P$ is reflexive when 
 point $c$ in the interior of $P$ such that, for every integer $t \ge 1$, the lattice points in the
 interior of $tP$ are exactly the points $c + y$ with $y$ a lattice point of $(t-1)P$.
 
-This is the interior-point characterisation of reflexivity, stated height by height; it is not
-the divisibility criterion for weighted simplices.
+This is the interior-point characterisation of reflexivity, stated height by height.
 
 ## Sources
 

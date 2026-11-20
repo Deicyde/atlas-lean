@@ -8,4 +8,5 @@ pseudoperfect if moreover no proper divisor of $n$ is pseudoperfect.
 
 ## Sources
 
-- [EP-469].
+- Erdős Problem #469, https://www.erdosproblems.com/469.
+- S. J. Benkoski and P. Erdős, *On weird and pseudoperfect numbers*, Math. Comp. 28 (1974), 617–623, p. 620.

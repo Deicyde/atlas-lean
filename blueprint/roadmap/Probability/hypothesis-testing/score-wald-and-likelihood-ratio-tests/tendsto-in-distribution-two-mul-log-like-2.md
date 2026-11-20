@@ -1,13 +1,12 @@
 # Likelihood ratio on the boundary
 
-**Likelihood ratio on the boundary** (one-sided parameter space `θ ∈ [0, ∞)`, true value
-`θ₀ = 0`). Let the model be defined and regular on a ball about `0` as in
-`tendstoInDistribution_two_mul_logLikelihood_sub` (so `0` is interior to the domain of the
-family, though not to the parameter space), and let `θ̂ₙ` be a consistent root of the
-likelihood equation. The statistic `2 (ℓₙ(max θ̂ₙ 0) - ℓₙ(0))` of the estimator projected onto
-`[0, ∞)` converges in distribution to the mixture `½ δ₀ + ½ χ²₁`. The projection `max θ̂ₙ 0`
-is the restricted maximizer when, for example, `ℓₙ` is concave; that is not assumed here.
+Consider the one-sided parameter space $\theta \in [0, \infty)$ with true value $\theta_0 = 0$. Assume the hypotheses of [Wilks' theorem (simple null)](tendsto-in-distribution-two-mul-log-like.md) at $\theta_0 = 0$: the family is defined and regular on a ball about $0$ (so $0$ is interior to the domain of the family, though not to the parameter space), and $\hat\theta_n$ is a consistent root of the likelihood equation. Then the statistic of the estimator projected onto $[0, \infty)$ converges in distribution to a mixture:
+
+$$2\big(\ell_n(\max(\hat\theta_n, 0)) - \ell_n(0)\big) \to \tfrac12 \delta_0 + \tfrac12 \chi^2_1.$$
+
+The projection $\max(\hat\theta_n, 0)$ is the restricted maximizer when, for example, $\ell_n$ is concave; that is not assumed.
 
 ## Sources
 
-- Chernoff (1954); van der Vaart (1998), ch. 16.
+- H. Chernoff, *On the distribution of the likelihood ratio*, Ann. Math. Statist. 25 (1954), 573–578.
+- A. W. van der Vaart, *Asymptotic Statistics*, Cambridge University Press, 1998, Chapter 16.

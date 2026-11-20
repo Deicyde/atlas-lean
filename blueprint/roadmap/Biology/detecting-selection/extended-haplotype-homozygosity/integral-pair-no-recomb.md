@@ -1,7 +1,7 @@
 # Mean no-recombination probability under the neutral coalescent
 
-Averaging over the pair coalescence time `T₂`, which is exponential of rate `1` in units of
-`2N` generations under the neutral coalescent, the probability that no recombination falls on
-the pair's genealogy within distance `d` is `1 / (1 + ρ d)`. In a mutation-free model, since
-a recombined lineage can still carry an identical haplotype, this is a lower bound for
-`E[EHH(d)]`; without that assumption the bound is not established.
+Let $\rho \ge 0$ and $d \ge 0$. Then
+
+$$\int q(\rho, d, t) \, d\mathrm{Exp}(1)(t) = \frac{1}{1 + \rho d},$$
+
+where $q$ is the [no-recombination probability](pair-no-recomb.md) and $\mathrm{Exp}(1)$ the exponential law of rate $1$, the law of the pair coalescence time under the neutral coalescent. In a mutation-free model this is a lower bound for the expected EHH, not its value.

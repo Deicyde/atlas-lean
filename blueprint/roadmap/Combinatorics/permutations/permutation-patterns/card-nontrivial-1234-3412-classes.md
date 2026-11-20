@@ -11,10 +11,10 @@ reverse moves. Then the number of equivalence classes with more than one element
 $(n^3 + 6n^2 - 55n + 54)/6$.
 
 This formula was conjectured by Ma; its values form sequence A330395 in the OEIS. The proof
-decomposes the exceptional set into swap classes and a generic part. Kernel-checked finite
-certificates handle the $S_5$ and $S_6$ classes, reachability in $S_7$ and the deletion boundary
-in $S_8$. Point insertion then gives a recurrence, whose solution is the displayed polynomial.
+decomposes the exceptional set into swap classes and a generic part, settles the classes in
+$S_5$ and $S_6$, reachability in $S_7$ and the deletion boundary in $S_8$ by finite computation,
+and obtains from point insertion a recurrence whose solution is the displayed polynomial.
 
 ## Sources
 
-- Quinn Perian, Bella Xu, and Alexander Lu Zhang, "Counting the Nontrivial Equivalence Classes of Sn Under {1234,3412}-Pattern-Replacement", Journal of Integer Sequences 23 (2020), Article 20.10.2, Theorem `thm:nontrivial`, lines 172-175, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Zhang/zhang6.tex>.
+- Quinn Perian, Bella Xu, and Alexander Lu Zhang, "Counting the Nontrivial Equivalence Classes of Sn Under {1234,3412}-Pattern-Replacement", Journal of Integer Sequences 23 (2020), Article 20.10.2, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Zhang/zhang6.pdf>.

@@ -11,8 +11,8 @@ $(i, j) = (1, 2), (2, 3), (3, 4), (4, 1)$. For the pairs $ij = 12, 23, 34, 41, 1
 $t_{ij} > 0$ satisfy $t_{ij}^2 = |c_i c_j|^2 - (r_i - r_j)^2$, the length of an exterior common
 tangent of the circles $i$ and $j$. Then $t_{12} t_{34} + t_{23} t_{41} = t_{13} t_{24}$.
 
-Configurations with a consecutive angular gap of at least $\pi$ are not covered here; they are
-covered by the cyclic-order form of Casey's theorem.
+Configurations with a consecutive angular gap of at least $\pi$ are excluded by these hypotheses;
+the cyclic-order form of Casey's theorem covers them.
 
 ## Sources
 

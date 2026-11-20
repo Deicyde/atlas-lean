@@ -12,4 +12,4 @@
 - [Cochran's minimum-variance theorem for weighted averages](variance-inverse-variance-le.md)
 - [Cochran's heterogeneity statistic Q](cochran-q.md)
 - [Cochran's Q as a squared projection norm](cochran-q-eq-norm-sq.md)
-- [Cochran (1954)](has-law-cochran-q.md)
+- [Cochran's Q is chi-square under homogeneity](has-law-cochran-q.md)

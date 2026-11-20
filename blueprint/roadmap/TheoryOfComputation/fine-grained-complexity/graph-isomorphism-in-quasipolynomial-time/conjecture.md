@@ -11,4 +11,6 @@ are isomorphic.
 
 ## Sources
 
-- ALG-016.
+- L. Babai, "Graph isomorphism in quasipolynomial time", in *Proceedings of the 48th Annual ACM
+  Symposium on Theory of Computing (STOC 2016)*, 684–697; arXiv:1512.03547,
+  https://arxiv.org/abs/1512.03547.

@@ -1,7 +1,7 @@
 # Levene's exact Hardy–Weinberg probability
 
-Levene's conditional probability of `h` heterozygotes among `N` diploid individuals given
-`nA` copies of allele `A` (and `nB = 2N - nA` of `B`) under Hardy–Weinberg equilibrium:
-`N! nA! nB! 2^h / (nAA! h! nBB! (2N)!)` with `nAA = (nA - h) / 2`, `nBB = (nB - h) / 2`, when
-`h ≤ nA`, `h ≤ nB` and `nA - h` is even, and `0` otherwise. The parameter domain is
-`nA ≤ 2N`; for `nA > 2N` the value is `0`.
+Let $N, n_A, h \in \mathbb{N}$ and $n_B = 2N - n_A$. Levene's probability of $h$ heterozygotes among $N$ diploid individuals carrying $n_A$ copies of allele $A$ (and $n_B$ copies of $B$) under Hardy–Weinberg equilibrium is
+
+$$L(N, n_A, h) = \frac{N!\, n_A!\, n_B!\, 2^h}{n_{AA}!\, h!\, n_{BB}!\, (2N)!}, \qquad n_{AA} = \frac{n_A - h}{2},\quad n_{BB} = \frac{n_B - h}{2},$$
+
+when $h \le n_A$, $h + n_A \le 2N$ (that is, $h \le n_B$) and $n_A - h$ is even, and $L(N, n_A, h) = 0$ otherwise. The meaningful parameter domain is $n_A \le 2N$; for $n_A > 2N$ the value is $0$.

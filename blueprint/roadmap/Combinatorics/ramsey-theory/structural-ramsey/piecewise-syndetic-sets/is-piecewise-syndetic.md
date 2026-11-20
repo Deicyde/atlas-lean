@@ -7,4 +7,4 @@ $A + [0, d]^t = \{y + z : y \in A,\ z \in [0, d]^t\}$ contains a lattice cube of
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Proof 1 of Theorem 2 (meaning of piecewise syndetic).
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Proof 1 of Theorem 2 (meaning of piecewise syndetic).

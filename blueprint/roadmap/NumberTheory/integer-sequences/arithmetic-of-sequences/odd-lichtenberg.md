@@ -9,4 +9,4 @@ $k \mapsto 4k + 1$.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL25/Hinz/hinz5.tex>.
+- Andreas M. Hinz and Paul K. Stockmeyer, *Precious Metal Sequences and Sierpiński-Type Graphs*, Journal of Integer Sequences 25 (2022), Article 22.4.8, Section 2, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Hinz/hinz5.tex>.

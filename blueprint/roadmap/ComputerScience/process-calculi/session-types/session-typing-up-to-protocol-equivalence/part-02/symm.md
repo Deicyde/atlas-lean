@@ -1,3 +1,4 @@
 # Symmetry of capability equivalence
 
-Symmetry preserves the separately required rank equality.
+For all capabilities $c$, $d$, if $c \approx d$ then $d \approx c$, where $\approx$ requires equal
+ranks and tree-equivalent protocols.

@@ -13,8 +13,7 @@ has the $A$-property if there is a positive integer $i$ with $c(i + t j^k) = B$ 
 $t \ge 0$. If $j_1$ and $j_2$ are coprime positive integers with $c(j_1) = c(j_2) = G$, then
 $j_1$ and $j_2$ do not both have the $A$-property.
 
-The density hypothesis comes from Lemma 4 of the source; it is added because the source's proof
-of this lemma ends by contradicting Lemma 4.
+The density hypothesis is that of Lemma 4 of the source, whose proof of this lemma ends by contradicting Lemma 4.
 
 ## Sources
 

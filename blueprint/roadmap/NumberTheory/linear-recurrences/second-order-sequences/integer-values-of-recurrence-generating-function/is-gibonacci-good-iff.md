@@ -10,4 +10,4 @@ $a \equiv -bp(q - p)^{-1} \equiv -bqp^{-1} \pmod{m}$.
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 6 (`jis-2024-24.3.1-lem-6`).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 6 (`jis-2024-24.3.1-lem-6`).

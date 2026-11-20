@@ -1,4 +1,4 @@
-# Singleton binomial heap
+# Singleton binomial tree
 
-For a value $a$ in a linear order, the binomial heap whose list of
-trees consists of exactly one tree: the tree of rank $0$ with root $a$ and no children.
+For a value $a$ of any type, the singleton binomial tree of $a$ is the binomial tree of rank
+$0$ with root $a$ and no children.

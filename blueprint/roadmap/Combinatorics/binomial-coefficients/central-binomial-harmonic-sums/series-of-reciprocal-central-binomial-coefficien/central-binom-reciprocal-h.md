@@ -11,4 +11,4 @@ $H(x) = \sum_{n \ge 0} x^n / \binom{2n}{n}$.
 
 ## Sources
 
-- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Section 2.
+- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, J. Integer Seq. 27 (2024), Article 24.6.8, Section 2.

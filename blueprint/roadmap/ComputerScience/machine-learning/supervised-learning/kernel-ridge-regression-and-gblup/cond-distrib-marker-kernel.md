@@ -1,8 +1,3 @@
 # The GBLUP posterior
 
-If the genetic values `Z' β` of individuals with genotypes `Z'` and
-the phenotypes `y = Z β + ε` of the training individuals are jointly Gaussian with the covariance
-of the marker kernel (marker-effect variance `s > 0`, residual variance `σ² > 0`), then given `y`
-the genetic values are Gaussian with mean `Z' Zᵀ (ZZᵀ + (σ²/s) I)⁻¹ y`, which is the RR-BLUP
-prediction `Z' β̂` (`gpMean_markerKernel_mulVec`), and covariance
-`s (Z' Z'ᵀ - Z' Zᵀ (ZZᵀ + (σ²/s) I)⁻¹ Z Z'ᵀ)`.
+Let $\iota$ (markers) and $\tau$ (new individuals) be finite index sets, $Z' \in \mathbb{R}^{\tau \times \iota}$ and $Z \in \mathbb{R}^{m \times \iota}$ genotype matrices, and $s, \sigma^2 > 0$ the marker-effect and residual variances. Let $V = (G, Y)$ be a measurable random vector in $\mathbb{R}^{\tau \sqcup m}$ on a probability space whose law is the Gaussian $N(0, \Sigma)$ with the [joint covariance](../gaussian-process-regression/joint-cov.md) of the [marker kernel](marker-kernel.md) with variance $s$, noise variance $\sigma^2$, test inputs the rows of $Z'$ and training inputs the rows of $Z$; here $G$ plays the genetic values $Z' \beta$ and $Y$ the phenotypes $Z \beta + \varepsilon$. Then for almost every $y$ with respect to the law of $Y$, the conditional distribution of $G$ given $Y = y$ is Gaussian with mean $Z' Z^\top (Z Z^\top + (\sigma^2/s) I)^{-1} y$, which is the [RR-BLUP prediction](gp-mean-marker-kernel-mul-vec.md) $Z' \hat\beta$, and covariance $s \big(Z' Z'^\top - Z' Z^\top (Z Z^\top + (\sigma^2/s) I)^{-1} Z Z'^\top\big)$.

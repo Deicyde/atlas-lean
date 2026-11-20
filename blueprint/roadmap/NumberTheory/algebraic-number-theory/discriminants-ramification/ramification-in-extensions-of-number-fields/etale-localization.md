@@ -12,4 +12,4 @@ the localization $(\mathcal{O}_K)_Q$ at a single such prime $Q$.
 
 ## Sources
 
-- packages the primewise unramified hypothesis used in ATLAS N390, Proposition 19.14.
+- ATLAS NumberTheoryI, Proposition 19.14 and its proof.

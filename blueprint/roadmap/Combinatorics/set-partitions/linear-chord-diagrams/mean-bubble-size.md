@@ -9,4 +9,4 @@ The hypothesis $n \ge 2$ is added: for $n = 1$ there are no bubbles.
 
 ## Sources
 
-- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 5 (`jis-2024-24.4.2-thm-5`).
+- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 5.

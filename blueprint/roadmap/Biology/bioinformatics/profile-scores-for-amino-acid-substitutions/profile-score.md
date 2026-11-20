@@ -1,5 +1,3 @@
 # Profile log-odds score of a residue
 
-The profile log-odds score `log (p a / q a)` of residue `a`: `p` is the position-specific
-profile probability (estimated from aligned homologs), `q` the background probability.
-Meaningful for `p a, q a > 0`; otherwise Lean's `log 0 = 0` and `x / 0 = 0` give junk.
+For real functions $p$ (the position-specific profile) and $q$ (the background) on an alphabet of residues, the profile score of residue $a$ is $\log\bigl(p(a) / q(a)\bigr)$, with the conventions $x/0 = 0$, $\log 0 = 0$ and $\log x = \log|x|$ for $x < 0$. It is meaningful for $p(a), q(a) > 0$.

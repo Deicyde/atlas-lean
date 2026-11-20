@@ -12,4 +12,4 @@ This is Rohrbach's theorem on symmetric restricted additive bases.
 
 ## Sources
 
-- Jukka Kohonen, "A Meet-in-the-Middle Algorithm for Finding Extremal Restricted Additive 2-Bases", Journal of Integer Sequences 17 (2014), Article 14.6.8, theorem `theorem:symmrest`, lines 274–288, with notation and basis definitions at lines 226–248, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Kohonen2/kohonen5.tex>.
+- Jukka Kohonen, "A Meet-in-the-Middle Algorithm for Finding Extremal Restricted Additive 2-Bases", Journal of Integer Sequences 17 (2014), Article 14.6.8, Theorem 4, with the notation and definitions of Section 3, https://cs.uwaterloo.ca/journals/JIS/VOL17/Kohonen2/kohonen5.html.

@@ -6,4 +6,4 @@ $L_{n+2} = a L_{n+1} + b L_n$ for all $n \ge 0$.
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Section 1 (sequence definition).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1 (sequence definition).

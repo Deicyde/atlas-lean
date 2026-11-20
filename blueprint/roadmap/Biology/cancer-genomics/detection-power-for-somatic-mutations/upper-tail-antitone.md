@@ -1,3 +1,3 @@
 # Binomial upper tail is decreasing
 
-`m ↦ P(m)` is antitone for `0 ≤ p ≤ 1`.
+For $0 \le p \le 1$ and every natural number $n$, the map $m \mapsto P_p(m)$ is nonincreasing, where $P_p$ is the [upper tail](upper-tail.md).

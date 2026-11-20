@@ -1,10 +1,10 @@
 # Cubic surfaces
 
-## Algebraic Geometry
+## Cubic surfaces
 
 - [Cubic surface](cubic-surface.md)
 
-## Cubic Surface
+## Singular points and smoothness
 
 - [The defining cubic has total degree three](total-degree-defining.md)
 - [The partial derivatives of a cubic form are quadratic](is-homogeneous-pderiv.md)
@@ -13,7 +13,7 @@
 - [Vanishing partial derivatives force the cubic to vanish when $3 \neq 0$](aeval-defining-eq-zero-of-pderiv.md)
 - [Singular points via partial derivatives](is-singular-point-iff.md)
 
-## Algebraic Geometry
+## Examples
 
 - [Fermat cubic surface](fermat-cubic-surface.md)
 - [Triple plane](triple-plane.md)

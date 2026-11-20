@@ -1,7 +1,6 @@
 # When the absolute discriminant of a $k$-generalized Fibonacci polynomial is a $k$-generalized Fibonacci number
 
-**When the absolute discriminant of a $k$-generalized Fibonacci polynomial is a
-$k$-generalized Fibonacci number.** Let $k \ge 2$ be a natural number and let
+Let $k \ge 2$ be a natural number and let
 $F : \mathbb{Z} \to \mathbb{Z}$ satisfy $F(n) = 0$ for every integer $n$ with
 $2 - k \le n \le 0$, $F(1) = 1$, and $F(n) = F(n-1) + F(n-2) + \cdots + F(n-k)$ for every
 integer $n \ge 2$, so that $F(n)$ for $n \ge 0$ is the $k$-generalized Fibonacci sequence. Then

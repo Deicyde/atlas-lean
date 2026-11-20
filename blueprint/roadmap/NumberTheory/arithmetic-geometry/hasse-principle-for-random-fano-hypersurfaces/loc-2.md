@@ -9,6 +9,7 @@ $\mathbb{V}^{\mathrm{loc}}_{d,n} \cap \mathbb{V}_{d,n}(A)$ divided by the number
 $\mathbb{V}_{d,n}(A)$, a quotient taken to be $0$ when $\mathbb{V}_{d,n}(A)$ is empty; when this
 limit does not exist, $\rho^{\mathrm{loc}}_{d,n}$ is an unspecified real number.
 
-By a theorem of Poonen–Voloch [17, Th. 3.6], this limit exists (and is positive) when
+By a theorem of Poonen and Voloch (*Random Diophantine equations*, Progress in Mathematics 226, Birkhäuser, 2004,
+175–184, Theorem 3.6), this limit exists (and is positive) when
 $d \ge 2$, $n \ge 2$ and $(d, n) \ne (2, 2)$, and equals a product of local densities over all
 places of $\mathbb{Q}$.

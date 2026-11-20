@@ -13,4 +13,4 @@ In the double-root case the hypotheses give $P = 2 \alpha$ and $Q = \alpha^2$.
 
 ## Sources
 
-- Christian Ballot, "A Further Generalization of a Congruence of Wolstenholme", Journal of Integer Sequences 15 (2012), Article 12.8.6, sequence definitions and formulas at lines 274–289, https://cs.uwaterloo.ca/journals/JIS/VOL15/Ballot/ballot4.tex
+- Christian Ballot, "A Further Generalization of a Congruence of Wolstenholme", Journal of Integer Sequences 15 (2012), Article 12.8.6, Section 1, equations (3)–(5), https://cs.uwaterloo.ca/journals/JIS/VOL15/Ballot/ballot4.tex

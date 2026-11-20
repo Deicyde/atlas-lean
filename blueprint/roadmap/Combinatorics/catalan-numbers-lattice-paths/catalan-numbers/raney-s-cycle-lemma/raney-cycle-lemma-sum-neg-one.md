@@ -11,4 +11,6 @@ integer lists proves the same conclusion without it.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL24/Haupt/haupt4.tex>, lines 804-807. Lean's zero-based left rotation is a bijective reindexing of the source's cut after `a_r`; `t < a.length` ranges over every proper prefix, with `t = 0` giving the true empty-prefix condition. The lower bound `hlower` is not needed; see `raney_cycle_lemma_sum_neg_one_general`.
+- Alexander M. Haupt, *Enumeration of $S$-omino Towers and Row-Convex $k$-omino Towers*, Journal of Integer
+  Sequences 24 (2021), Article 21.3.6, Lemma 25 (a version of Raney's lemma, stated with indices from $1$),
+  <https://cs.uwaterloo.ca/journals/JIS/VOL24/Haupt/haupt4.tex>.

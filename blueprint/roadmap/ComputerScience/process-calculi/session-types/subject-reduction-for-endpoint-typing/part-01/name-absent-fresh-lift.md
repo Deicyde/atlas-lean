@@ -1,4 +1,5 @@
 # The inserted name is absent from a lifted process
 
-The inserted name is absent from every position of the actual lifted
-π term, including payloads and all nested input/restriction binders.
+For every natural number $k$ and process $p$, the variable $\mathrm{v}_k$ is absent from $\uparrow_k
+p$, where $\uparrow_k$ adds one to every variable index $\ge k$ (so no free occurrence of index $k$
+remains).

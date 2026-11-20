@@ -1,4 +1,6 @@
 # Greedy backward-selection rule
 
-`pick` is a greedy backward-selection rule for `g`: from a nonempty remaining set `R` it
-masks a feature `i ∈ R` maximizing `g (R.erase i)`.
+Let $g$ be a real function on the finite subsets of a set $\iota$ of features. A rule $\pi$
+choosing an element $\pi(R) \in R$ of every nonempty finite set $R$ is a greedy backward-selection
+rule for $g$ if it masks a feature maximizing the remaining prediction:
+$g(R \setminus \{i\}) \le g(R \setminus \{\pi(R)\})$ for every nonempty $R$ and every $i \in R$.

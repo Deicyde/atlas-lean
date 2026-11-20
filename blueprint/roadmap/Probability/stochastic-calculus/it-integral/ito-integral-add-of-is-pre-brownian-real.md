@@ -1,7 +1,9 @@
-# Linearity (additivity)
+# Additivity of the Itô integral for a pre-Brownian integrator
 
-The Itô integral is additive in the integrand: for
-`F`-progressive integrands `H₁, H₂` with `E ∫_0^t H_i² du < ∞`, the integral of the sum is almost
-surely the sum of the integrals. Together with homogeneity and the difference isometry this pins
-down the integral on the whole `L²` space of progressive integrands. Only the pre-Brownian
-finite-dimensional laws are used; path continuity is not required.
+Let $B$ be a pre-Brownian motion (the finite-dimensional laws of Brownian motion) adapted to a filtration $F$, with increments $B_t - B_s$ independent of $F_s$ for $s \le t$, and let $t \ge 0$. Let $H_1, H_2$ be $F$-progressive with $\mathbb E \int_0^t H_i(u)^2\, du < \infty$. Then almost surely
+
+$$\int_0^t (H_1 + H_2)\, dB = \int_0^t H_1\, dB + \int_0^t H_2\, dB,$$
+
+with the [Itô integral](ito-integral-2.md). Together with homogeneity and the difference isometry this
+determines the integral on the whole $L^2$ space of progressive integrands; path continuity of $B$ is not
+needed.

@@ -14,4 +14,4 @@ the following holds:
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `5` on `U`.
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value $5$ on $U$.

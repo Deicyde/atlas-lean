@@ -6,4 +6,5 @@ at most $1$, taken in $[0, \infty]$) is at least $1 + \sqrt{2}$.
 
 ## Sources
 
-- Kunisky, arXiv2111.02974v1, Theorem 1.1; catalogue C24a, line 45.
+- Dmitriy Kunisky, *The discrepancy of unsatisfiable matrices and a lower bound for the Komlós conjecture constant*, SIAM J. Discrete Math. 37(2) (2023), 586–603, arXiv:2111.02974, Theorem 1.1.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

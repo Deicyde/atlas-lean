@@ -9,4 +9,4 @@ $$\sum_{j=2}^{a} (-1)^j\, (j-2)!\, S(a, j) = a - 1.$$
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Lemma 6.
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Journal of Integer Sequences 29 (2026), Article 26.2.7, Lemma 6.

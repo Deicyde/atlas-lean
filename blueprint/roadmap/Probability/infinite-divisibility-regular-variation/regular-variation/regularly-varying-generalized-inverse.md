@@ -1,6 +1,6 @@
 # Generalized inverse of a regularly varying function
 
-For a regularly
-varying function `f` of index `-α` with `α > 0` that is eventually
-non-increasing, there exists a sequence `a : ℕ → ℝ` of positive reals such
-that `n · f (a n) → 1` as `n → ∞`.
+Let $\alpha > 0$ and let $f : \mathbb{R} \to \mathbb{R}$ be regularly varying of index $-\alpha$
+and eventually nonincreasing: there is $x_0$ such that $f(y) \le f(x)$ whenever
+$x_0 \le x \le y$. Then there is a sequence $(a_n)_{n \in \mathbb{N}}$ of positive reals such that
+$n\, f(a_n) \to 1$ as $n \to \infty$.

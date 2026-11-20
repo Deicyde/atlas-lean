@@ -7,4 +7,4 @@ and if $P$ is in the class $\Pi_n$, then so is $\{w \in \mathbb{N} : g(w) \in P\
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

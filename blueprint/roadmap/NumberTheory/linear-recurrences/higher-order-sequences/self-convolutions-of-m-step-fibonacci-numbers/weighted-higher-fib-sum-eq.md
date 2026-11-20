@@ -14,4 +14,4 @@ $$
 
 ## Sources
 
-- Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 2.
+- Jan Sedlák and Antonín Slavík, *Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.7, Theorem 2.

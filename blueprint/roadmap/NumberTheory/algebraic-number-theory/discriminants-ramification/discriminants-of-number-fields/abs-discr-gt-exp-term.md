@@ -9,4 +9,4 @@ so the absolute discriminant grows at least exponentially in the degree.
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Corollary 14.26 (second inequality).
+- ATLAS NumberTheoryI, Corollary 14.26 (second inequality).

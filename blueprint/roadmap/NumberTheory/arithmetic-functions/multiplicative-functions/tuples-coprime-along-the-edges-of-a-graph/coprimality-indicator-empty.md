@@ -6,4 +6,4 @@ $\delta_G(n) = 1$ for every $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$.
 
 ## Sources
 
-- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, remark after display (def_delta_G).
+- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, remark after the display labelled `def_delta_G` in the TeX source, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex.

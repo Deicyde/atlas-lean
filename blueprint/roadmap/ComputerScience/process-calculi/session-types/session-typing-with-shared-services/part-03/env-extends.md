@@ -1,3 +1,4 @@
 # Extension of a shared service environment
 
-Old shared declarations retain their EXACT signature in the larger environment.
+A service environment $\Xi$ extends a service environment $\Gamma$ when $\Gamma(s) = \sigma$ implies
+$\Xi(s) = \sigma$ for every natural number $s$ and service signature $\sigma$.

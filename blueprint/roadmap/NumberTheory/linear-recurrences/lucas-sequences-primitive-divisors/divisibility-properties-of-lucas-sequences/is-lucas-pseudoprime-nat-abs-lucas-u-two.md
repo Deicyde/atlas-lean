@@ -1,4 +1,4 @@
-# Lucas pseudoprimes from even-index Lucas terms divided by P
+# Lucas pseudoprimes of the form $|U_{2m}/P|$
 
 Let $U$ be the Lucas sequence
 with parameters $P$ and $Q$ forming a nondegenerate Lucas pair, with $\gcd(P, Q) = 1$ and

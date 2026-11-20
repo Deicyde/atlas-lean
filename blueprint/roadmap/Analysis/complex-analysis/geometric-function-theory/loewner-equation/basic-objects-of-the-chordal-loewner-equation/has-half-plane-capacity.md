@@ -1,4 +1,9 @@
 # Hydrodynamic normalization with half-plane capacity
 
-`g` is hydrodynamically normalized at infinity with half-plane capacity `a`: `g(z) - z → 0`
-and `z (g(z) - z) → a` as `z → ∞`, i.e. `g(z) = z + a/z + o(1/z)`.
+A map $g : \mathbb{C} \to \mathbb{C}$ is hydrodynamically normalized at infinity with half-plane capacity $a \in \mathbb{R}$ if
+
+$$
+g(z) - z \to 0 \quad \text{and} \quad z\,(g(z) - z) \to a \qquad \text{as } |z| \to \infty,
+$$
+
+that is, $g(z) = z + a/z + o(1/z)$.

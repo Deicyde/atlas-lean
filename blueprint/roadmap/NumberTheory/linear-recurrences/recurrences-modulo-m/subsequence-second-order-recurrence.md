@@ -12,8 +12,8 @@ The source writes the recurrence as $w_{n+2} = a w_{n+1} + b w_n$,
 with subsequence coefficients $a' = V_t$ and $b' = (-1)^{t+1} b^t$ and discriminant
 $D(a, b) = a^2 + 4b$; this is the statement above with $P = a$ and $Q = -b$. The source's
 identification of the characteristic roots of the new recurrence as $\alpha^t$ and $\beta^t$ is
-not part of this statement.
+not part of the statement above.
 
 ## Sources
 
-- Somer and Křížek, *Generalization of a Theorem of Vélez on Uniform Distribution in Second-Order Linear Recurrences*, INTEGERS 25 (2025), Article A1, Theorem 2.4.
+- Lawrence Somer and Michal Křížek, *Generalization of a Theorem of Vélez on Uniform Distribution in Second-Order Linear Recurrences*, INTEGERS 25 (2025), Article A1, Theorem 2.4.

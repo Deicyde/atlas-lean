@@ -8,4 +8,4 @@ of $P$ on $x$ is defined and equals $y$.
 
 ## Sources
 
-- Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
+- M. L. Minsky, *Computation: Finite and Infinite Machines*, Prentice-Hall, 1967, Chapter 11.

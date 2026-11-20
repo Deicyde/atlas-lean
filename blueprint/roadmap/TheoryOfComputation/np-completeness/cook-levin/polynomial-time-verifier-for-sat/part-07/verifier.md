@@ -1,4 +1,4 @@
-# The `TM2` SAT verifier
+# The SAT verifier as a finite multi-stack Turing machine
 
 For a flag $\mathit{cap}$, the host machine with that flag computes
 the host's answer in polynomial time. For every pair $(x, w)$ of bit lists, started on the input

@@ -1,3 +1,5 @@
-# Integrability of $x^k e^{-cx}$ under the Gamma law
+# Integrability of $x^k e^{-cx}$ under the gamma law
 
-For `a, b > 0` and `c ≥ 0`, `x ↦ x ^ k e^{-c x}` is integrable for `Gamma(a, b)`.
+Let $a, b > 0$ and $c$ real with $b + c > 0$, and let $k \in \mathbb{N}$. Then
+$x \mapsto x^k e^{-cx}$ is integrable with respect to the gamma law $\Gamma(a, b)$ with shape $a$
+and rate $b$. The parameter $c$ may be negative as long as it does not cancel the rate.

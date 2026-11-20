@@ -1,7 +1,6 @@
 # The map $\varphi$ is a bijection from type $B$ set partitions onto flattened Stirling permutations
 
-**The map $\varphi$ is a bijection from type $B$ set partitions onto flattened Stirling
-permutations.** For a natural number $n$, let $\varphi$ be the map of Buck et al.
+For a natural number $n$, let $\varphi$ be the map of Buck et al.
 (Proposition 1) that sends a set partition $P$ of $\{-n, \dots, n\}$ to a word of length
 $2(n + 1)$ over the natural numbers, built from the zero block of $P$ and its Adler-labelled
 blocks with each element $i$ replaced by $|i| + 1$. Then $\varphi$ sends the set of type $B$
@@ -13,4 +12,4 @@ $\{-n, \dots, n\}$.
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 3.
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 3.

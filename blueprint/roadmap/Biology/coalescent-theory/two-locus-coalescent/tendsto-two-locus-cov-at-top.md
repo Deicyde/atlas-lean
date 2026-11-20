@@ -1,3 +1,3 @@
 # Two-locus covariance vanishes under free recombination
 
-Free recombination: `Cov(T_A, T_B) → 0` as `ρ → ∞`.
+The [two-locus covariance](two-locus-cov.md) satisfies $\operatorname{Cov}(\rho) \to 0$ as $\rho \to \infty$.

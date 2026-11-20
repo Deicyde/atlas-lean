@@ -1,3 +1,4 @@
 # Closing an Fω variable
 
-Closing a variable returns its actual model environment image.
+For every environment $\sigma$ of model terms for $m$ term variables and every $i < m$,
+$x_i\{\sigma\} = \sigma(i)$ ([closing](close.md)).

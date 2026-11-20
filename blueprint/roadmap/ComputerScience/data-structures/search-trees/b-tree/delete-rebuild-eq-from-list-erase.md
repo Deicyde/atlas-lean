@@ -1,4 +1,4 @@
-# Rebuilding deletion unfolds to erase and rebuild
+# Rebuilding deletion erases from the flattening and rebuilds
 
 For every minimum degree $t$, key $x$
 and tree $T$, the rebuilding deletion of $x$ from $T$ with minimum degree $t$ equals the tree

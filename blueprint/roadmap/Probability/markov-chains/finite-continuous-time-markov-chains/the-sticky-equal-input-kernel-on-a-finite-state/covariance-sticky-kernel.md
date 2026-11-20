@@ -1,6 +1,10 @@
 # Covariance under the sticky kernel
 
-If `(X, Y)` has joint law `P(X = i, Y = j) =
-π i K i j` (stationary start, one step of the kernel), then
-`Cov(f X, g Y) = c Cov_π(f, g)`. The algebraic identity holds for all real `π`, `f`, `g`, `c`;
-it is a covariance of a probability law when `π` is a probability vector and `0 ≤ c ≤ 1`.
+Let $S$ be a finite set, $\pi, f, g : S \to \mathbb{R}$, $c \in \mathbb{R}$ and $K = K_\pi(c)$ the
+[sticky kernel](sticky-kernel.md). Then
+
+$$\sum_{i, j} \pi(i) K(i, j)\, f(i) g(j) - \Bigl(\sum_i \pi(i) f(i)\Bigr)\Bigl(\sum_j \pi(j) g(j)\Bigr) = c \Bigl( \sum_i \pi(i) f(i) g(i) - \Bigl(\sum_i \pi(i) f(i)\Bigr)\Bigl(\sum_j \pi(j) g(j)\Bigr) \Bigr) .$$
+
+When $\pi$ is a probability vector and $0 \le c \le 1$, so that $P(X = i, Y = j) = \pi(i) K(i, j)$ is
+the law of a stationary start followed by one step of the kernel, this reads
+$\operatorname{Cov}(f(X), g(Y)) = c \operatorname{Cov}_\pi(f, g)$.

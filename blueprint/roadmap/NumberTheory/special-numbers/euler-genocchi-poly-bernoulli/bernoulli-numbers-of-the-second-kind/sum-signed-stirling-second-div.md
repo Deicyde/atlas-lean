@@ -9,4 +9,4 @@ $$\sum_{i=k}^{n} \frac{s(n-1, i-1) \, S(i, k)}{i} = \frac{1}{n} \binom{n}{k} \, 
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 13.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Theorem 13.

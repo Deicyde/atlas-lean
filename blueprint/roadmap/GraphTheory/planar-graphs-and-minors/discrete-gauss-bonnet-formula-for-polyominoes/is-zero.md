@@ -1,3 +1,3 @@
 # Indicator of zero
 
-The indicator of `m = 0`.
+For an integer $m$, the indicator $\mathbf{1}[m = 0]$: $1$ if $m = 0$ and $0$ otherwise.

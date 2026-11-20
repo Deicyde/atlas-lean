@@ -1,7 +1,6 @@
-# Raw Jacobi theta function $\theta_1$
+# The Jacobi theta series $\theta_1$ for arbitrary $\tau$
 
-For complex numbers $z$ and $\tau$, the raw Jacobi
-theta function is
+For complex numbers $z$ and $\tau$, put
 
 $$\theta_1(z \mid \tau) = 2 \sum_{n=0}^{\infty} (-1)^n e^{\pi i \tau (2n+1)^2/4} \sin((2n+1) z)$$
 
@@ -9,8 +8,8 @@ when this series is summable, and $0$ otherwise. With $q = e^{2 \pi i \tau}$, th
 $e^{\pi i \tau (2n+1)^2/4}$ is $q^{(2n+1)^2/8}$.
 
 The value $0$ for a non-summable series is a convention; it occurs, for example, at $\tau = 0$
-and $z = \pi/2$. The intended object is the Jacobi theta function on the upper half-plane
-$\operatorname{Im} \tau > 0$, where the series converges for every $z$.
+and $z = \pi/2$. On the upper half-plane $\operatorname{Im} \tau > 0$ the series converges for
+every $z$, and its sum is the Jacobi theta function $\theta_1(z \mid \tau)$.
 
 ## Sources
 

@@ -9,4 +9,4 @@ $p = 2$, $a = 1$, $\ell = 1$, $d = 1$ (the number $2$ of Corollary 1).
 
 ## Sources
 
-- Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 3.
+- Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On near $F_k$-perfect and deficient $F_k$-perfect numbers", INTEGERS 25 (2025), #A86, https://math.colgate.edu/~integers/z86/z86.pdf, Theorem 3.

@@ -1,4 +1,3 @@
 # Internal-edge bits completing port bits at a site
 
-The internal-edge bits `(b₀, b₀ + b₁, b₀ + b₁ + b₂)` that complete port bits `b₀, …, b₃` at one
-site to an even subgraph.
+For bits $b_0, b_1, b_2 \in \mathbb{Z}/2$, the chain completion is the triple $(b_0,\ b_0 + b_1,\ b_0 + b_1 + b_2)$ of bits for the three chain edges at a site.

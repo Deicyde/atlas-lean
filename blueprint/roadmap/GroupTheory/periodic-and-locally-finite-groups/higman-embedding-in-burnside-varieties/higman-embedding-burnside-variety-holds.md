@@ -6,7 +6,7 @@ enumerable set of relators embeds in a group finitely presented in the Burnside 
 $\mathfrak{B}_n$: a group with generators $x_0, \dots, x_{m-1}$ for some $m$ whose relators are a
 finite set $S$ together with $w^n$ for every word $w$.
 
-Olshanskii proves this with the ambient group 2-generated; the statement here does not require it.
+Olshanskii proves more: the finitely presented group in $\mathfrak{B}_n$ can be taken 2-generated.
 
 ## Sources
 

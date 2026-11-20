@@ -8,4 +8,4 @@ $$\sum_{k=0}^{n} \left([t^n]\,d(t)\,h(t)^k\right) [t^k]\,f = [t^n]\,d(t)\,f(h(t)
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 1 (`jis-2025-25.3.5-thm-1`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-thm-1).

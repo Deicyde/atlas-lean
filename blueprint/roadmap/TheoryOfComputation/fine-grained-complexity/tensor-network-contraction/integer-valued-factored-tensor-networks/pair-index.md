@@ -1,3 +1,4 @@
 # Ordered representative of an unordered pair
 
-The ordered representative `(min a b, max a b)` of the pair `{a, b}`.
+For elements $a$ and $b$ of a linear order, the ordered representative of the pair $\{a, b\}$ is
+$(\min(a, b), \max(a, b))$. For $a = b$ it is $(a, a)$.

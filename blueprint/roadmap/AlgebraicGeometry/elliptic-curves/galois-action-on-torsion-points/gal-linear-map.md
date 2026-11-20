@@ -1,4 +1,4 @@
-# Linear Galois action on $W(p)$
+# Linear Galois action on $p$-torsion points
 
 Let $W$ be a Weierstrass curve over $\mathbb{Q}$,
 $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular points of $W$ with

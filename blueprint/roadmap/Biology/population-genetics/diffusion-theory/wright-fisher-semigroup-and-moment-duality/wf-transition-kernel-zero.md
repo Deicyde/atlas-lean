@@ -1,3 +1,3 @@
 # Wright–Fisher transition kernel is the identity at time zero
 
-At time zero the Wright–Fisher transition is the identity kernel.
+At time $0$ the [Wright–Fisher transition kernel](wf-transition-kernel.md) $K_0$ is the identity kernel.

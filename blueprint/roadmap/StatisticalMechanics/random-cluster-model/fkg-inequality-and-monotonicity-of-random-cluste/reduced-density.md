@@ -1,3 +1,7 @@
 # Reduced density $p/(p + q(1-p))$
 
-The reduced density `p / (p + q(1 - p))`: the Bernoulli parameter dominated by `φ_{p,q}`.
+For $p, q \in \mathbb{R}$, the reduced density is
+
+$$r(p, q) = \frac{p}{p + q(1 - p)},$$
+
+where the quotient is read as $0$ when $p + q(1 - p) = 0$.

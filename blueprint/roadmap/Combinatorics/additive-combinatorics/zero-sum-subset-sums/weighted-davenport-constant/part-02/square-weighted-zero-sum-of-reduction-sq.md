@@ -9,7 +9,7 @@ $a_1, \dots, a_k \in U(p^2)^2$ with $a_1 \bar t_1 + \dots + a_k \bar t_k = 0$ in
 $\mathbb{Z}/p^2\mathbb{Z}$, then there are $b_1, \dots, b_k \in S(p^r)$ with
 $b_1 t_1 + \dots + b_k t_k = 0$ in $\mathbb{Z}/p^r\mathbb{Z}$.
 
-The paper states the lemma for $p > 0$; the stronger hypothesis $p \ge 2$ is deliberate.
+The paper states the lemma for $p \ge 2$; it fails for $p = 1$, where $S(1)$ is empty while $U(1)^2 = \{0\}$.
 
 ## Sources
 

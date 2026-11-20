@@ -8,4 +8,4 @@ $2^n E_n(x) = \sum_{\ell=0}^{n} \frac{(-1)^\ell}{\ell + 1}
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.3.
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Theorem 4.3.

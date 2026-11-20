@@ -1,3 +1,4 @@
 # Quadtree union preserves compression
 
-Union preserves compression when both inputs are compressed.
+If Boolean region quadtrees $s$ and $t$ are both compressed, then their union $s \cup t$ is
+compressed.

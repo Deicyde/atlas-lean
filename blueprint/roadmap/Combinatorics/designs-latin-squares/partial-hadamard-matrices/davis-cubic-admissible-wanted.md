@@ -9,4 +9,4 @@ $t_k / n_k^3 \to \infty$ as $k \to \infty$, the ratio $N_{n_k, 4t_k} / A_{n_k, 4
 
 ## Sources
 
-- Davis, *Counting partial Hadamard matrices in the cubic regime*, arXiv:2603.30013 (2026): the leading term is asymptotic in the regime `t / n³ → ∞`.
+- Damek Davis, *Counting partial Hadamard matrices in the cubic regime*, arXiv:2603.30013 (2026): the asymptotic formula in the regime $t / n^3 \to \infty$.

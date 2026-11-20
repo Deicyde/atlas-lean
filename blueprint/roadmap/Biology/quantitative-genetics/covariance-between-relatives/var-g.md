@@ -1,3 +1,5 @@
 # Genetic variance at a single locus
 
-The genetic variance `V_G = ∑ p_a p_b (g(a, b) - μ)²`.
+In a [single-locus model](locus-model.md) with frequencies $p$, genotypic values $g$ and [mean](mean.md) $\mu$, the genetic variance is
+
+$$V_G = \sum_{a, b \in A} p_a p_b\, \bigl(g(a, b) - \mu\bigr)^2.$$

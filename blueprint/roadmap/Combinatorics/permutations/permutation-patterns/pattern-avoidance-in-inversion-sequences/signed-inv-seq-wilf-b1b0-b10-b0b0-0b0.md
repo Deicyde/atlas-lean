@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 9: a Wilf-equivalence of four-pattern sets
+# Wilf-equivalence of $\{\bar1\bar0, \bar10, \bar0\bar0, 0\bar0\}$ and $\{\bar1\bar0, \bar10, \bar00, 0\bar0\}$
 
 Length-2 signed
 patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that

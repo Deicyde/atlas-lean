@@ -5,9 +5,7 @@ set $\iota$, has the integer decomposition property (IDP) if for every integer $
 lattice point $w \in \mathbb{Z}^\iota$ of the dilate $mP = \{m y : y \in P\}$ is a sum
 $w = x_1 + \dots + x_m$ of $m$ lattice points $x_1, \dots, x_m \in \mathbb{Z}^\iota$ of $P$.
 
-This is the height-by-height version of the paper's cone definition; for a convex lattice
-polytope, the height-$m$ slice of the cone is $mP$. It also implements the paper's intended
-$(m,w)$, correcting its displayed $(k,w)$ typo.
+This is the paper's cone definition read height by height: for a convex lattice polytope, the height-$m$ slice of the cone is $mP$. The paper's display writes $(k,w)$ for $(m,w)$, a typo.
 
 ## Sources
 

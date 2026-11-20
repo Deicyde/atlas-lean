@@ -7,4 +7,6 @@ $4 \psi_\mu^2$.
 
 ## Sources
 
-- optimizationproblems `constants/20c.md`, comparison display, and Klartag, arXiv:2303.14938v1, Introduction.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20c.md`, the comparison of $\psi_\mu$ and $C_P(\mu)$.
+- B. Klartag, *Logarithmic bounds for isoperimetry and slices of convex sets*, Ars Inveniendi Analytica (2023),
+  Paper No. 4, arXiv:2303.14938v1, Introduction, inequality (4).

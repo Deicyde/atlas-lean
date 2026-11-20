@@ -1,3 +1,3 @@
-# Complementary-edge map of K₄ on unordered pairs
+# Complementary-edge map of $K_4$ on unordered pairs
 
-The complementary edge of `K₄`, as a function on `Sym2 (Fin 4)`.
+The complementary-edge map sends an unordered pair $\{a, b\}$ of elements of $\{0, 1, 2, 3\}$ to its [complementary pair](k4-comp-pair.md): $\{a, b\} \mapsto \{0, 1, 2, 3\} \setminus \{a, b\}$ for $a \ne b$, and loops to themselves.

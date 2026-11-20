@@ -8,4 +8,4 @@ $(i, j)$ satisfy $j < i$, that is, lie strictly below the main diagonal.
 
 ## Sources
 
-- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 3.1.
+- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 11.

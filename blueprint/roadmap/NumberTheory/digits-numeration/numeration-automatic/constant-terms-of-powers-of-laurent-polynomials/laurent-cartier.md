@@ -9,4 +9,4 @@ $\Lambda_0 f = 0$ (the paper uses only positive $k$).
 
 ## Sources
 
-- Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Section 2 (definition of `Λ_k`).
+- Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 2 (the operator $\Lambda_k$).

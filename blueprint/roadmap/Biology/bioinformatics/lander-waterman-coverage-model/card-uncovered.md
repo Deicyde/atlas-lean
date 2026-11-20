@@ -1,4 +1,3 @@
-# Exact coverage count
+# Number of start tuples leaving a base uncovered
 
-For `L ≤ G`, base `x` is uncovered by all `N` reads for exactly
-`(G - L) ^ N` of the `G ^ N` start tuples.
+For $L \le G$ and every base $x$, the number of start tuples in $\{0, \dots, G-1\}^N$ for which no read [covers](covers.md) $x$ is $(G - L)^N$.

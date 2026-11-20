@@ -1,6 +1,6 @@
 # Dimension of an irreducible representation divides the group order
 
-If `ρ` is an irreducible representation of a finite group `G` over an
-algebraically closed field `k` of characteristic zero, then
-`dim_k ρ ∣ |G|`. In particular, over `ℂ`, every irreducible degree divides
-the order of the group.
+Let $G$ be a finite group, $k$ an algebraically closed field of characteristic zero, and $\rho$ an
+irreducible representation of $G$ on a finite-dimensional $k$-vector space $V$. Then $\dim_k V$
+divides $|G|$. In particular, the degree of every irreducible complex representation of a finite
+group divides the order of the group.

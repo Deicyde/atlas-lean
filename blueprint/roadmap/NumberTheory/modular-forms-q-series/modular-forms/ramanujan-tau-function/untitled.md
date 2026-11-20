@@ -1,4 +1,4 @@
-# Ramanujan τ-function
+# Ramanujan $\tau$-function
 
 For a natural number $n$, $\tau(n)$ is the complex number given by
 the coefficient of $q^n$ in the $q$-expansion of the modular discriminant $\Delta = \eta^{24}$,

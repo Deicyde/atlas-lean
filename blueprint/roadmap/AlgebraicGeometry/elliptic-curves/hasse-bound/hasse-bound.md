@@ -8,8 +8,10 @@ Proof: Manin's elementary polynomial-degree argument on a twist over the rationa
 $F(t)$, done separately for the odd-characteristic and characteristic-two normal forms. In
 characteristic two the point count uses the fibres of the additive maps $y \mapsto y^2 + by$ with
 $b \in F$, followed by the same projective neighboring-degree recurrence, as in
-Chahal--Soomro--Top, *Rocky Mountain J. Math.* 44 (2014).
+Chahal, Soomro and Top (Rocky Mountain J. Math. 44 (2014)).
 
 ## Sources
 
-- H. Hasse, J. Reine Angew. Math. 1936; modern Silverman, The Arithmetic of Elliptic Curves, 2nd ed.; Lean states integral squared form of |N-(q+1)| ≤ 2√q including point at infinity.
+- Helmut Hasse, *Zur Theorie der abstrakten elliptischen Funktionenkörper III. Die Struktur des Meromorphismenrings. Die Riemannsche Vermutung*, J. Reine Angew. Math. 175 (1936), 193–208.
+- Joseph H. Silverman, *The Arithmetic of Elliptic Curves*, 2nd ed., GTM 106, Springer, 2009, Theorem V.1.1.
+- Jasbir S. Chahal, Afzal Soomro and Jaap Top, *A supplement to Manin's proof of the Hasse inequality*, Rocky Mountain J. Math. 44 (2014), no. 5, 1457–1470.

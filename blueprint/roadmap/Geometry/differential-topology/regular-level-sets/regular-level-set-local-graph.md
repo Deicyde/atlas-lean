@@ -9,7 +9,7 @@ that is $C^1$ on $U$, and a neighbourhood $V$ of $x_0$ such that a point $x \in 
 $f(x) = f(x_0)$ if and only if $e(x) = (u, g(u))$ for some $u \in U$.
 
 Proof: A projection onto the derivative kernel supplies adapted linear coordinates. The
-product-space implicit function theorem then identifies the level set with a local `C¹` graph
+product-space implicit function theorem then identifies the level set with a local $C^1$ graph
 (https://en.wikipedia.org/wiki/Implicit_function_theorem).
 
 ## Sources

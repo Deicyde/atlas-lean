@@ -9,3 +9,7 @@ N(T) \le \frac{T}{2\pi} \log \frac{T}{2\pi e} + 0.10076 \log T + 0.24460 \log \l
 $$
 
 This bound is sharper than the second Bellotti–Wong bound for $T$ above about $e^{447.981}$.
+
+## Sources
+
+- Chiara Bellotti and Peng-Jie Wong, *Improved estimates for the argument and zero-counting function of the Riemann zeta-function* (with an appendix by Andrew Fiori), arXiv:2412.15470v2, Theorem 1.1.

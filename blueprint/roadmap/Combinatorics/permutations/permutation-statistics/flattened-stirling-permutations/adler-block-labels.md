@@ -14,4 +14,4 @@ kept blocks as $\beta_1, \dots, \beta_m$.
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Notation 2.3 (arXiv:2306.13034).
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 2, Notation 1.

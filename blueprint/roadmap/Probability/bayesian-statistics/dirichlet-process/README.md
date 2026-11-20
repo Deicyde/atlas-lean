@@ -37,7 +37,7 @@
 - [Second moment of $1 - X$ under $\mathrm{Beta}(1, \alpha)$](integral-one-sub-sq-beta-measure-one.md)
 - [Mean proportion of a Dirichlet process](integral.md)
 - [Mean of a Dirichlet-process weight](integral-weight-2.md)
-- [The Dirichlet-process weights sum to `1` almost surely](ae-has-sum-weight-2.md)
+- [The Dirichlet-process weights sum to $1$ almost surely](ae-has-sum-weight-2.md)
 - [Dirichlet process is almost surely a probability measure](ae-is-probability-measure-g.md)
 - [Mean of the Dirichlet process](lintegral-g-apply-2.md)
 - [Probability that two Dirichlet process draws pick the same piece](sum-sq-weight-eq.md)
@@ -52,7 +52,14 @@
 - [Sethuraman's construction](sethuraman.md)
 - [Sethuraman's canonical model is a Dirichlet process](is-dirichlet-sethuraman.md)
 - [Dirichlet process](dirichlet-process.md)
-- [Mean of the Dirichlet process](lintegral-dirichlet-process-apply.md)
+- [Mean of the Dirichlet process, law form](lintegral-dirichlet-process-apply.md)
 - [Finite-dimensional marginals of the Dirichlet process](map-dirichlet-process-partition.md)
 - [The moments of the Dirichlet process are the Blackwell–MacQueen urn](lintegral-dirichlet-process-prod.md)
 - [Ferguson's conjugacy](set-lintegral-dirichlet-process-prod.md)
+
+## Related topics
+
+- [Blackwell–MacQueen urn](../blackwell-macqueen-urn/README.md): the predictive rule of successive draws from a Dirichlet process.
+- [Ewens sampling formula and the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/README.md): the law of the partition of the draws into ties.
+- [Infinite mixture models](../infinite-mixture-models/README.md): the same partition law as the limit of the closed-form partition probability of finite symmetric Dirichlet mixtures, the prior of a Dirichlet process mixture.
+- [Indian buffet process](../indian-buffet-process/README.md): the analogous prior for latent features, where objects may share several features.

@@ -10,4 +10,4 @@ sequence with $0$ read as $a$ and $1$ as $b$).
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 72 (`jis-2025-25.1.5-thm-72`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 72 (`jis-2025-25.1.5-thm-72`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

@@ -14,4 +14,4 @@ in the textbook definition.
 
 ## Sources
 
-- Burns and Matveev (2021), §10.2, for motivation: a Killing field $V$ gives the linear first integral $\xi \mapsto g(V, \xi)$ of geodesic flow.
+- K. Burns and V. S. Matveev, Open problems and questions about geodesics, Ergodic Theory Dynam. Systems 41 (2021), 641–684, arXiv:1308.5417, §10.2, for motivation: a Killing field $V$ gives the linear first integral $\xi \mapsto g(V, \xi)$ of geodesic flow.

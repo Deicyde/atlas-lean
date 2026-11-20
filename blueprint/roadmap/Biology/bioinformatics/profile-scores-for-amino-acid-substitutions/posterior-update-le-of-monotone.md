@@ -1,5 +1,3 @@
-# Monotonicity in a feature value
+# Monotonicity of the posterior in a feature value
 
-Let feature `j` carry a numerical value `g v` (for
-example a PSIC-difference bin) such that its likelihood ratio `P_D(v) / P_B(v)` is monotone in
-`g v`. With the other features fixed, the posterior is monotone in `g`.
+In a [naive Bayes model](naive-bayes.md) with finitely many features, let $j$ be a feature and $g : X_j \to \mathbb{R}$ such that $g(v) \le g(v')$ implies $D_j(v)/B_j(v) \le D_j(v')/B_j(v')$. Then for all feature values $x$ and $v, v' \in X_j$ with $g(v) \le g(v')$, the [posterior](posterior.md) of $x$ with $x_j$ replaced by $v$ is at most that with $x_j$ replaced by $v'$.

@@ -10,4 +10,4 @@ This was first shown by Klarner and generalized by Kolpakov and Talambutsa.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #481, https://www.erdosproblems.com/481 (status PROVED (LEAN)); resolution: D. A. Klarner, A sufficient condition for certain semigroups to be free, J. Algebra (1982), 140-148; A. Kolpakov and A. Talambutsa, On free semigroups of affine maps on the real line, Proc. Amer. Math. Soc. (2022), 2301-2307, erdosproblems.com/481: true, first shown by Klarner; generalized by Kolpakov and Talambutsa, https://www.erdosproblems.com/481.
+- T. F. Bloom, Erdős Problem #481, https://www.erdosproblems.com/481 (proved: first shown by Klarner, generalized by Kolpakov and Talambutsa); David A. Klarner, *A sufficient condition for certain semigroups to be free*, Journal of Algebra 74 (1982), no. 1, 140–148; Alexander Kolpakov and Alexey Talambutsa, *On free semigroups of affine maps on the real line*, Proceedings of the American Mathematical Society 150 (2022), no. 6, 2301–2307.

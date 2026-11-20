@@ -12,4 +12,4 @@ $j = 0$ and $j = r + 1$ have exponent $-1$.
 
 ## Sources
 
-- Redha Chellal and Farid Bencherif, *An Identity for Generalized Bernoulli Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.11.2, formula `t5` (the special case `ℓ = n` with `r` odd), lines 142–149, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex>. Quoted there from H. Belbachir and M. Rahmani, *On Gessel-Kaneko's identity for Bernoulli numbers*, Appl. Anal. Discrete Math. 7 (2013), 1–10. Original: I. M. Gessel, *Applications of the classical umbral calculus*, Algebra Universalis 49 (2003), 397–434.
+- Redha Chellal, Farid Bencherif, and Mohamed Mehbali, *An Identity for Generalized Bernoulli Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.11.2, Section 1, equation (7) (the special case $\ell = n$ with $r$ odd), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.html>. Quoted there from H. Belbachir and M. Rahmani, *On Gessel-Kaneko's identity for Bernoulli numbers*, Appl. Anal. Discrete Math. 7 (2013), 1–10. Original: I. M. Gessel, *Applications of the classical umbral calculus*, Algebra Universalis 49 (2003), 397–434.

@@ -1,4 +1,4 @@
-# Kourovka Problem 20.13(a) (Bergman)
+# The abelian-image question for ultraproducts (Kourovka 20.13(a))
 
 The proposition that for every abelian group $A$, every
 sequence $(G_i)_{i \in \mathbb{N}}$ of (not necessarily abelian) groups and every nonprincipal

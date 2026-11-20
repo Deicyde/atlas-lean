@@ -17,7 +17,7 @@ $$\sum_{k=0}^{n} (-1)^{n+k} \binom{n}{k} (\log x)^k \psi_{n-k}(x) = n! \, x -
 as $x \to \infty$ through the natural numbers, where $B_j$ are the Bernoulli numbers with
 $B_1 = -1/2$.
 
-Proof: Analytic continuation of ζ to `re s > -1` by Euler–Maclaurin, Cauchy estimates for the
+Proof: Analytic continuation of $\zeta$ to $\operatorname{Re} s > -1$ by Euler–Maclaurin, Cauchy estimates for the
 remainder's derivatives, and the Euler–Maclaurin tail expansion of the log-power sums.
 
 ## Sources

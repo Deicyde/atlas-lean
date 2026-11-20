@@ -9,4 +9,5 @@ entries for exactly one starting position $i$.
 
 ## Sources
 
-- Chung/Diaconis/Graham as cited in Cooper, Combinatorial Problems I Like, Words and Codes bullet 78 [AMR-030-0078].
+- Fan Chung, Persi Diaconis and Ron Graham, *Universal cycles for combinatorial structures*, Discrete Mathematics 110 (1992), 43–59.
+- Listed in Cooper, *Combinatorial Problems I Like*, section Words and Codes, problem 78.

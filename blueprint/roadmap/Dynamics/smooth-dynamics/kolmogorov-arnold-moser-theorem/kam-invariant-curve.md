@@ -10,4 +10,9 @@ $$q(t + \alpha) - 2q(t) + q(t - \alpha) = c\, f(q(t)).$$
 
 ## Sources
 
-- A. N. Kolmogorov (1954); V. I. Arnold (1963); J. Moser, *On invariant curves of area-preserving mappings of an annulus*, Nachr. Akad. Wiss. Göttingen (1962). Knill, *Some fundamental theorems in mathematics*, §83. Problem `kam_invariant_curve` of the lean-eval benchmark.
+- A. N. Kolmogorov (1954); V. I. Arnold (1963).
+- Jürgen Moser, *On invariant curves of area-preserving mappings of an annulus*, Nachr. Akad. Wiss. Göttingen
+  Math.-Phys. Kl. II (1962), 1–20.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §83 (KAM; the theorem of the section),
+  <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `kam_invariant_curve` of the lean-eval benchmark.

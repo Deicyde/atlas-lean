@@ -3,8 +3,8 @@
 
     scripts/extract_v2_lean_dependencies.py DUMP.jsonl[.gz] OUTPUT.json
 
-The dump (from scripts/dump_v2_dependencies.lean, run by the Pages build's
-edges job) lists, for every constant in the v2 modules, the v2 constants its
+The dump (from scripts/dump_v2_dependencies.lean, which the Pages build runs
+after building the libraries) lists, for every constant in the v2 modules, the v2 constants its
 type and value use. Articles are exactly the Lean names the wiki's articles
 link, as Autoform reads them, so source-level commands and compiled constants
 cannot disagree about projections, wrappers, wanted declarations, or docstrings. An
@@ -29,7 +29,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BLUEPRINT = ROOT / "blueprint"
 LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "PhyslibExt", "WantedExt"})
-# A definition is its body and an inductive type its constructors, so their values are part of the statement.
+# The key of `missing_articles` for absent targets whose names start with no library name.
+UNPREFIXED = "unprefixed"
+# A definition is its body and an inductive type its constructors, so their values are part of the statement
+# (`abbrev`, and `instance` of a class of data, compile to `def`; an `instance` of a proposition compiles to
+# `theorem`). Lean cannot unfold a theorem's proof or an `opaque` body, so no statement can depend on them: those
+# values give proof dependencies only.
 STATEMENT_VALUE = frozenset({"def", "inductive"})
 
 
@@ -76,35 +81,76 @@ def article_manifest() -> set[str]:
     return set(load_graph(BLUEPRINT).lean_names())
 
 
-def frontiers(rows: dict[str, dict], articles: set[str]) -> dict[str, frozenset[str]]:
-    """For every non-article constant, the articles reachable through non-articles."""
+def frontiers(rows: dict[str, dict], articles: set[str], statement: bool = False) -> dict[str, frozenset[str]]:
+    """For every non-article constant, the articles reachable through non-articles.
+
+    With *statement*, only what a constant states counts: its type, and its value only when that value is
+    part of what it states (a definition's body, an inductive type's constructors). A hidden theorem's proof
+    then reaches nothing, so an article whose statement uses that theorem depends on what the theorem says,
+    not on how it is proved.
+
+    Mutually recursive non-articles reach the same articles, so the non-article graph is first cut into
+    strongly connected components (Tarjan's algorithm): a component is finished only after every
+    component it uses, and all its members get the union of what any of them reaches. The result does not
+    depend on the order in which the constants are visited.
+    """
+
+    def uses(name: str) -> list[str]:
+        row = rows.get(name)
+        if not row:
+            return []
+        if statement and row.get("kind") not in STATEMENT_VALUE:
+            return row["type"]
+        return row["type"] + row["value"]
+
     memo: dict[str, frozenset[str]] = {}
-    for start in rows:
-        if start in articles or start in memo:
+    index: dict[str, int] = {}
+    low: dict[str, int] = {}
+    stack: list[str] = []
+    on_stack: set[str] = set()
+    for root in rows:
+        if root in articles or root in index:
             continue
-        stack = [(start, False)]
-        active: set[str] = set()
-        while stack:
-            name, expanded = stack.pop()
-            if name in memo:
-                continue
-            row = rows.get(name)
-            uses = (row["type"] + row["value"]) if row else []
-            if not expanded:
-                if name in active:  # mutual recursion: resolve with what is known
+        index[root] = low[root] = len(index)
+        stack.append(root)
+        on_stack.add(root)
+        work = [(root, iter(uses(root)))]
+        while work:
+            node, children = work[-1]
+            child = next(children, None)
+            if child is not None:
+                if child in articles:
                     continue
-                active.add(name)
-                stack.append((name, True))
-                stack.extend((use, False) for use in uses if use not in articles and use not in memo)
+                if child not in index:
+                    index[child] = low[child] = len(index)
+                    stack.append(child)
+                    on_stack.add(child)
+                    work.append((child, iter(uses(child))))
+                elif child in on_stack:
+                    low[node] = min(low[node], index[child])
                 continue
+            work.pop()
+            if work:
+                low[work[-1][0]] = min(low[work[-1][0]], low[node])
+            if low[node] != index[node]:
+                continue
+            component: list[str] = []
+            while True:
+                member = stack.pop()
+                on_stack.discard(member)
+                component.append(member)
+                if member == node:
+                    break
+            members = set(component)
             reached: set[str] = set()
-            for use in uses:
-                if use in articles:
-                    reached.add(use)
-                else:
-                    reached |= memo.get(use, frozenset())
-            memo[name] = frozenset(reached)
-            active.discard(name)
+            for member in component:
+                for use in uses(member):
+                    if use in articles:
+                        reached.add(use)
+                    elif use not in members:
+                        reached |= memo[use]
+            for member in component:
+                memo[member] = frozenset(reached)
     return memo
 
 
@@ -162,12 +208,13 @@ def main() -> int:
             print(f"warning: roadmap Lean target is absent from the compiled dependency dump: {name}", file=sys.stderr)
         print(f"warning: {len(missing)} roadmap targets have no compiled dependency row", file=sys.stderr)
     articles = manifest & rows.keys()
-    reach = frontiers(rows, articles)
+    # Statements reach through what hidden constants state; proofs through everything they use.
+    reach_statement, reach = frontiers(rows, articles, statement=True), frontiers(rows, articles)
 
-    def collapse(name: str, uses: list[str]) -> set[str]:
+    def collapse(name: str, uses: list[str], through: dict[str, frozenset[str]]) -> set[str]:
         found: set[str] = set()
         for use in uses:
-            found |= {use} if use in articles else reach.get(use, frozenset())
+            found |= {use} if use in articles else through.get(use, frozenset())
         found.discard(name)
         return found
 
@@ -175,10 +222,10 @@ def main() -> int:
     for name in sorted(articles):
         row = rows[name]
         if row["kind"] in STATEMENT_VALUE:
-            statement, proof = collapse(name, row["type"] + row["value"]), set()
+            statement, proof = collapse(name, row["type"] + row["value"], reach_statement), set()
         else:
-            statement = collapse(name, row["type"])
-            proof = collapse(name, row["value"]) - statement
+            statement = collapse(name, row["type"], reach_statement)
+            proof = collapse(name, row["value"], reach) - statement
         result[name] = {
             "module": row["module"],
             "statement": sorted(statement),
@@ -190,12 +237,14 @@ def main() -> int:
             result[name]["statement"] = [use for use in result[name]["statement"] if use not in group]
     output = Path(sys.argv[2])
     output.parent.mkdir(parents=True, exist_ok=True)
-    # A target with no compiled row has no module to name its library, so its own name has to.
+    # A target with no compiled row has no module to name its library, so its own name has to. A name outside
+    # the libraries' namespaces (`CategoryTheory.foo`) is kept under UNPREFIXED, so `lean-facts` still sees it.
     missing_by_library = {
         library: [name for name in missing if name.split(".")[0] == library]
         for library in sorted(LIBRARIES)
     }
     unplaced = [name for name in missing if name.split(".")[0] not in LIBRARIES]
+    missing_by_library[UNPREFIXED] = unplaced
     if unplaced:
         print(f"warning: {len(unplaced)} targets without a compiled row name no library: {unplaced[:5]}", file=sys.stderr)
     output.write_text(

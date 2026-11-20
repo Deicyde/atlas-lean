@@ -14,7 +14,7 @@
 - [Expected LCS length is nonnegative](expected-lcslength-nonneg.md)
 - [Expected LCS length is at most the string length](expected-lcslength-le.md)
 - [Normalized expected LCS length](normalized-expected-lcs.md)
-- [Normalized expected LCS lengths lie in $(0,1)$](normalized-expected-lcs-mem-icc.md)
+- [Normalized expected LCS lengths lie in $[0,1]$](normalized-expected-lcs-mem-icc.md)
 - [Binary Chvátal–Sankoff constant](binary-chvatal-sankoff-constant.md)
 - [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 - [Statement of the Chvátal–Sankoff limit theorem](chvatal-sankoff-limit-exists.md)

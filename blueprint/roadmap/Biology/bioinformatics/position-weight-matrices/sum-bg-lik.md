@@ -1,3 +1,3 @@
 # Background likelihoods form a distribution
 
-The background law of independent letters is a distribution on sequences.
+If $q$ is a distribution on $A$, then for every length $m$ the [background likelihoods](bg-lik.md) of the sequences in $A^m$ sum to $1$.

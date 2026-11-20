@@ -7,7 +7,7 @@ $0 \le i < N$) with $(u + \theta)^n = \sum_{i=0}^{N-1} a_{n,i} \theta^i$ for eve
 $n \ge 1$ and $p$ is a prime dividing $D_n = \gcd(a_{n,0}, \dots, a_{n,N-1})$, then $p$ divides
 $u^N + (-1)^{N+1} v$, the norm of $u + \theta$.
 
-The paper's section assumes $N \ge 4$ and $u, v$ coprime; neither is needed here.
+The paper's section assumes $N \ge 4$ and $u, v$ coprime; neither is needed for the statement above.
 
 ## Sources
 

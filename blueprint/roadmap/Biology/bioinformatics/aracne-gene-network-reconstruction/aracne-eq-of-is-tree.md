@@ -1,7 +1,7 @@
 # ARACNE recovers tree networks exactly
 
-**ARACNE recovers tree networks exactly** (Margolin et al. 2006, Theorem 1): if the true
-network `T` is a tree whose edges all carry mutual information above `I₀`, and the strict
-data-processing inequality holds on every separated triple, then ARACNE returns `T`. Strictness
-is the explicit form of the paper's exclusion of exact cancellations; with equality ARACNE can
-keep an indirect edge (see the tests).
+Let $T$ be a tree on $V$, $I$ symmetric and $I_0$ real, such that $I_0 < I(i, k)$ for every edge $ik$ of $T$, and $I(a, b) < \min(I(a, c), I(c, b))$ whenever $c \notin \{a, b\}$ and every walk in $T$ from $a$ to $b$ visits $c$. Then the [ARACNE network](aracne.md) equals $T$ (Margolin et al. 2006, Theorem 1). With equality allowed in the data-processing inequality, an indirect edge can be kept.
+
+## Sources
+
+- A. A. Margolin, I. Nemenman, K. Basso, C. Wiggins, G. Stolovitzky, R. Dalla Favera and A. Califano, *ARACNE: an algorithm for the reconstruction of gene regulatory networks in a mammalian cellular context*, BMC Bioinformatics 7 (Suppl. 1) (2006), S7, Theorem 1.

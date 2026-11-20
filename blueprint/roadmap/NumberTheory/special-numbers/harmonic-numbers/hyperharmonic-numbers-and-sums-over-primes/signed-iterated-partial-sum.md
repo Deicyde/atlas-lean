@@ -16,4 +16,4 @@ $H_n^{(p,r,2)}$, and alternating signs give type III, $H_n^{(p,r,3)}$.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definitions of `H_n^{(p,r)}` and `H_n^{(p,r,i)}`, `i = 1, 2, 3`).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definitions of $H_n^{(p,r)}$ and $H_n^{(p,r,i)}$, $i = 1, 2, 3$).

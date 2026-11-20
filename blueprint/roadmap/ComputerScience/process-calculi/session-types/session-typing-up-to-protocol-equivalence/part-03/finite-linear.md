@@ -1,3 +1,4 @@
 # Conversion-typed processes have no sum or replication
 
-Typing excludes sum and repl by syntax, not by a caller fragment premise.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$ a process. If $\Delta
+\vdash^{\simeq}_n p$ (conversion typing), then $p$ contains no replication and no choice.

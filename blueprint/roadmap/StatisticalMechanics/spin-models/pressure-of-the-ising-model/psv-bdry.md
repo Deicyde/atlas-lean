@@ -1,3 +1,4 @@
 # Outer vertex boundary of a box
 
-The outer vertex boundary `Λ_{n+1} ∖ Λ_n` of the box.
+For $d, n \in \mathbb{N}$, the outer vertex boundary of the box $\Lambda_n = \{-n, \dots, n\}^d$ is the
+set $\Lambda_{n+1} \setminus \Lambda_n$ of sites of $\mathbb{Z}^d$.

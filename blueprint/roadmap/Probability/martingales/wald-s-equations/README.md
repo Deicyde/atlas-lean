@@ -14,3 +14,7 @@
 - [Successor step of the predictable filtration](predictable-filtration-succ.md)
 - [Square-integrability of a stopped partial sum](integrable-stopped-partial-sum-sq.md)
 - [Square-integrability of the maximal stopped partial sum](integrable-maximal-stopped-partial-sum-s.md)
+
+## Related topics
+
+- [Sequential tests and quickest change detection](../../hypothesis-testing/sequential-tests-and-quickest-change-detection/README.md): Wald's identity gives the average sample number of the sequential probability ratio test.

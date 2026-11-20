@@ -1,4 +1,3 @@
 # Exact uncovered probability
 
-**Exact uncovered probability** (Clarke–Carbon, Lander–Waterman, circular genome):
-`(1 - L / G) ^ N` for `L ≤ G`.
+For $L \le G$ and every base $x$, the [normalized count](normalized-count.md) of the start tuples leaving $x$ uncovered is $(1 - L/G)^N$ (with $x/0 = 0$).

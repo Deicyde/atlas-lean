@@ -1,4 +1,5 @@
 # Runtime typing under passive name substitution
 
-Passive substitution has NO owned var0 and adds NO capability. A scoped shared
-constant can be received as data without becoming a linear/service subject.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ an ownership context, $p$ a
+process and $b$ a name scoped at depth $n$. If $\Gamma; \uparrow_0\Delta \vdash_{n+1} p$, then
+$\Gamma; \Delta \vdash_n p\{b\}$.

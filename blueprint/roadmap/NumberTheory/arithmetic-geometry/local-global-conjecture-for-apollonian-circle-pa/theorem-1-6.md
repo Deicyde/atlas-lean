@@ -6,4 +6,4 @@ integer $n$, $n^2$ does not belong to the curvature set of $\mathcal{A}$.
 
 ## Sources
 
-- S. Haag, C. Kertzer, J. Rickards, and K. E. Stange, `The local-global conjecture for Apollonian circle packings is false`, Annals of Math, 200 (2) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_local_global_apollonian_circle_packings` of the lean-eval benchmark.
+- Summer Haag, Clyde Kertzer, James Rickards and Katherine E. Stange, *The local-global conjecture for Apollonian circle packings is false*, Annals of Mathematics 200 (2024), no. 2, 749–770, Theorem 1.6. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_local_global_apollonian_circle_packings` of the lean-eval benchmark.

@@ -6,4 +6,4 @@ with $k \ge 1$, $m \ge k$ and $n \ge k$, the integer $(S_k - 1)^2$ divides $S_n 
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 1, divisibility (4).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 1, divisibility (4).

@@ -6,4 +6,4 @@ a unit $z_0$ of $\mathbb{Z}_p$ with $z_0^2 = u x_0^2 + v y_0^2$.
 
 ## Sources
 
-- Lemma 10.5, key step.
+- ATLAS ArithmeticGeometry, Section 10.1, the proof of Lemma 10.5.

@@ -10,4 +10,4 @@ density $\mu(d)$.
 
 ## Sources
 
-- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Theorem 3 (`jis-2024-24.3.2-thm-3`, for `ℓ ≥ 3`) and its restatement in Section 6 (`jis-2024-24.3.2-thm-unnumbered-1`, for `ℓ ≥ 2`).
+- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Theorem 3 (`jis-2024-24.3.2-thm-3`, for $\ell \ge 3$) and its restatement in Section 6 (`jis-2024-24.3.2-thm-unnumbered-1`, for $\ell \ge 2$).

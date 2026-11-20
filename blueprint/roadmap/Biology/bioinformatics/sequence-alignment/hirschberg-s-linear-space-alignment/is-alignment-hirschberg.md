@@ -1,5 +1,3 @@
 # Hirschberg reconstruction is valid
 
-For every substitution score $\sigma$ assigning an
-integer to each pair of letters, integer gap score $g$ and sequences $x$, $y$, the Hirschberg
-alignment of $x$ and $y$ is a valid alignment of $x$ and $y$.
+For all sequences $x, y$, the [Hirschberg alignment](hirschberg.md) is a [valid alignment](../pairwise-sequence-alignment/is-alignment.md) of $x$ and $y$.

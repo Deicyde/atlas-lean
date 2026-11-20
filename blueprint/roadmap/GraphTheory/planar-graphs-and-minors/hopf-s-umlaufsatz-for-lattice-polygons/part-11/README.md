@@ -3,7 +3,7 @@
 - [Interior cells have connected lower-left corners](interior-representatives-reachable.md)
 - [Connectedness of the skeleton of the interior](interior-cell-skeleton-connected.md)
 - [Interior of a simple closed walk has Euler characteristic at most 1](euler-char-interior-cells-le-one.md)
-- [Hopf's Umlaufsatz](turn-sum-eq-four-or-neg-four.md)
+- [Umlaufsatz for simple closed lattice walks](turn-sum-eq-four-or-neg-four.md)
 - [Agreement of the two definitions of the left cell](left-cell-bridge.md)
 - [A walk without right turns is positively oriented](left-parity-zero.md)
 - [Ray-parity interior equals the bounded face](interior-cells-bridge.md)

@@ -12,4 +12,4 @@ $x$ exactly when MINIMUM ONES 3-SAT accepts $f(x)$.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MINIMUM ONES 3-SAT.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MINIMUM ONES 3-SAT.

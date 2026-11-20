@@ -13,12 +13,12 @@ $$\sum_{n \ge 0} \sum_{w \in W_{n,k}} q^{\mathrm{pk}(w)} x^n = x^k (1-q)^k \prod
 \frac{1 + x + x^2 (1-q) - R_j}{1 + x (1-q) - R_j}.$$
 
 Set partitions of $\{1, \dots, n\}$ with $k$ blocks are encoded by the strings in $W_{n,k}$, and
-$\mathrm{pk}(w)$ counts the peaks of the encoded partition. Division is total in the fraction
-field, so the statement carries no nonvanishing hypotheses.
+$\mathrm{pk}(w)$ counts the peaks of the encoded partition. Quotients are taken in the fraction
+field with the convention $a/0 = 0$, so no denominator is assumed to be nonzero.
 
-Proof: Following Mansour and Shattuck, Lemmas 2.1, 2.2, and 2.6 and Theorem 2.7,
+Proof: Following Mansour and Shattuck, Theorem 2.3 and Lemma 2.7,
 the proof combines first-occurrence decompositions with the Chebyshev recurrence.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set," Journal of Integer Sequences 13 (2010), Article 10.6.8, Theorem, lines 313–317, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.tex>.
+- Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set," Journal of Integer Sequences 13 (2010), Article 10.6.8, Theorem 2.8, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.pdf>.

@@ -1,3 +1,3 @@
 # Positivity of Slatkin's mean total coalescence time
 
-The denominator of Slatkin's `F_ST` is positive: `0 < T̄` for `d ≥ 1` and `M > 0`.
+For every natural number $d \ge 1$ and every real $M > 0$, [Slatkin's mean total coalescence time](total-time.md) is positive: $\bar T > 0$.

@@ -11,12 +11,14 @@ $s = \max(D + 1, 0)$ and $\bar F = \frac{1}{L} \sum_{e=s}^{s+L-1} F_{x^{-1}}(e)$
 function $B : \mathbb{N} \to \mathbb{Q}$ with $B(n + L) = B(n)$ for every natural number
 $n \ge D$ such that for every natural number $n \ge D$,
 
-$$\sum_{i=1}^{\lfloor p^n/x \rfloor} \delta(i) =
+$$
+\sum_{i=1}^{\lfloor p^n/x \rfloor} \delta(i) =
 \frac{1}{2} x^{-1} \left(1 - \frac{1}{\tau_D}\right) p^n +
-\left(\bar F - \frac{\overline{x^{-1}}}{2p} \left(1 - \frac{1}{\tau_D}\right)\right) n + B(n).$$
+\left(\bar F - \frac{\overline{x^{-1}}}{2p} \left(1 - \frac{1}{\tau_D}\right)\right) n + B(n).
+$$
 
 The paper's explicit $B$ (Equation (6)) is replaced by an existential.
 
 ## Sources
 
-- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 5.
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 5.

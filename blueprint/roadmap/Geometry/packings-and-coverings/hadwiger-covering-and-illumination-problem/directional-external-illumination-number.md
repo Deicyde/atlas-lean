@@ -8,4 +8,4 @@ family does.
 
 ## Sources
 
-- Bezdek and Khan, arXiv:1602.06040v2, introduction; follows from its finite-count equivalence, whose Lean proof is also requested here.
+- Bezdek and Khan, arXiv:1602.06040v2, introduction; it follows from the equivalence of the two formulations for each finite count.

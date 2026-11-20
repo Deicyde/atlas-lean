@@ -10,4 +10,4 @@ $$\sum_{j=1}^{n} B_k(X + j) = \frac{1}{k+1} \sum_{r=0}^{k} \binom{k+1}{r+1}
 
 ## Sources
 
-- Claudio de J. Pita Ruiz V., *Carlitz-Type and Other Bernoulli Identities*, Journal of Integer Sequences 19 (2016), Article 16.1.8, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex>, Proposition [Faulhaber-type formula], equation (5.32), lines 1001-1007.
+- Claudio de J. Pita Ruiz V., *Carlitz-Type and Other Bernoulli Identities*, Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition 17 (Faulhaber-type formula), equation (102), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.html>.

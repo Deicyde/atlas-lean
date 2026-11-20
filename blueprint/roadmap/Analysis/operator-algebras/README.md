@@ -11,3 +11,4 @@ Banach algebras and C*- and von Neumann algebras: exponentials and product formu
 - [Gelfand–Naimark theorem](c-star-algebra-gelfand-naimark.md)
 - [Russo–Dye theorem](c-star-algebra-russo-dye.md)
 - [Stinespring dilation theorem](stinespring-dilation.md)
+- [Operator monotone and operator convex functions](operator-monotone-and-operator-convex-functions/README.md)

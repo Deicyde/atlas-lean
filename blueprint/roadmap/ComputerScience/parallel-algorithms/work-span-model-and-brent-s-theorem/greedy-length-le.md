@@ -8,4 +8,4 @@ Each complete step runs $p$ tasks, and each of the at most $D$ incomplete steps 
 
 ## Sources
 
-- the unit-task case of Graham's list-scheduling argument, Graham, *Bounds for certain multiprocessing anomalies*, Bell System Tech. J. 45, 1966.
+- R. L. Graham, "Bounds for certain multiprocessing anomalies", *Bell System Technical Journal* 45(9) (1966), 1563–1581: the unit-task case of the list-scheduling argument.

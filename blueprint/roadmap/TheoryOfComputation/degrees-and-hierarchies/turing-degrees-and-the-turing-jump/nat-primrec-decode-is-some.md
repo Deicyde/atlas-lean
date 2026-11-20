@@ -6,4 +6,4 @@ otherwise is primitive recursive.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (Gödel numberings; decoding).

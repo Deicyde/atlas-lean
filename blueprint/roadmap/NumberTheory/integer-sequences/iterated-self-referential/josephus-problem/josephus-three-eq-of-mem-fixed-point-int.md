@@ -6,7 +6,9 @@ function $J_3$, and let $m = \nu_2(3a + 2)$ be the $2$-adic valuation of $3a + 2
 natural number $n$ with $a + 1 \le n \le b$, put
 $\mathfrak{m} = \lceil \log_{3/2}((2n + 1)/(3a + 2)) \rceil$; then, in the real numbers,
 
-$$J_3(n) = 3n + 1 - \left(\tfrac{2}{3}\right)^{m - \mathfrak{m}} (2b + 1).$$
+$$
+J_3(n) = 3n + 1 - \left(\tfrac{2}{3}\right)^{m - \mathfrak{m}} (2b + 1).
+$$
 
 ## Sources
 

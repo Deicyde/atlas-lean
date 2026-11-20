@@ -1,3 +1,3 @@
 # Left and right eigenvector matrices are mutually inverse
 
-The left and right eigenvector matrices are mutually inverse: `W V = 1`.
+For every natural number $n$, the [matrix of left eigenvectors](block-counting-left-eigen.md) $W_n$ and the [matrix of right eigenvectors](block-counting-right-eigen.md) $V_n$ of the block-counting generator satisfy $W_n V_n = I$.

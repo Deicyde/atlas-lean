@@ -5,4 +5,4 @@ number $F^{(N)}_1$ equals $1$.
 
 ## Sources
 
-- Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
+- Joshua P. Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.

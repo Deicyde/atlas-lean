@@ -1,3 +1,5 @@
 # Leftist invariant for every heap in a list
 
-Every heap in the list has correct stored ranks and is leftist.
+A list of leftist heaps satisfies the leftist invariant when every heap in the list does: correct
+stored ranks and the rank of each left subheap at least the rank of the corresponding right
+subheap.

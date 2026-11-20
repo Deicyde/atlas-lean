@@ -12,4 +12,4 @@ $s_p(n+1) < p$.
 
 ## Sources
 
-- Bernd C. Kellner, "On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients," Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem `thm:triple`, lines 351–358, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kellner/kell2.tex>, restating B. C. Kellner and J. Sondow, "On Carmichael and polygonal numbers, Bernoulli polynomials, and sums of base-p digits," Integers 21 (2021), Theorem 3.1. Factor definitions `eq:ddprod2` at lines 341–346.
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 7, with the factors defined in equation (13), <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kellner/kell2.html>, restating Bernd C. Kellner and Jonathan Sondow, *On Carmichael and polygonal numbers, Bernoulli polynomials, and sums of base-$p$ digits*, Integers 21 (2021), Theorem 3.1.

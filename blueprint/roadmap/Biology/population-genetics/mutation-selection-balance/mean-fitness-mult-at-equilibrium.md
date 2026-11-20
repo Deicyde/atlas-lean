@@ -1,5 +1,3 @@
 # Mean fitness at the multiplicative mutation–selection equilibrium
 
-At the multiplicative equilibrium the mean fitness is `(1 - U)²`, independent of `s`.
-Requires `U ≠ 1`, so that `U / s` is genuinely a fixed point (`diploidStep_mult_fixed`):
-for `U = 1` the point `U / s` is not an equilibrium.
+For real numbers $s \ne 0$ and $U \ne 1$, with the multiplicative homozygote cost $t = 2s - s^2$, the [mean fitness](mean-fitness.md) at the equilibrium frequency $q = U/s$ is $(1 - U)^2$, independent of $s$. The condition $U \ne 1$ makes $U/s$ a fixed point of the [diploid generation map](diploid-step-mult-fixed.md).

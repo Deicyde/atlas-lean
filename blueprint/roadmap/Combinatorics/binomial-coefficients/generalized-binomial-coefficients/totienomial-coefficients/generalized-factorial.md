@@ -6,4 +6,4 @@ the values $f(i)$ for $1 \le i \le n$; for $n = 0$ it is the empty product $1$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
+- Tom Edgar and Michael Z. Spivey, *Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers*, J. Integer Seq. 19 (2016), Article 16.1.6, Section 1 (definition of the generalized binomial coefficient), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.html>.

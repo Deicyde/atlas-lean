@@ -20,4 +20,4 @@ Lehmer's arcsine series.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 22, pp. 270–271. The printed range `0 ≤ x ≤ π / 2` is false. This target uses `0 ≤ x ≤ π / 4`, the range supported by the source proof's substitution of `2 * x` into Entry 20; the endpoint remains an explicit proof obligation.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 22, pp. 270–271. The printed range $0 \le x \le \pi/2$ is false; the statement above uses $0 \le x \le \pi/4$, the range supported by the source proof's substitution of $2x$ into Entry 20.

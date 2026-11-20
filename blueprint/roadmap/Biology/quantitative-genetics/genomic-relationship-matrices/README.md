@@ -1,11 +1,8 @@
 # Genomic relationship matrices
 
-## Relatedness
+## The identity-by-descent model
 
 - [Malécot's identity-by-descent model](ibdmodel.md)
-
-## Identity by descent
-
 - [Genotype of an individual at a biallelic locus](genotype.md)
 - [Kinship coefficient](kinship.md)
 - [Inbreeding coefficient](inbreeding.md)
@@ -17,6 +14,9 @@
 - [Symmetry of identity by descent](ibd-comm.md)
 - [Self-kinship equals $(1 + F_i)/2$](kinship-self.md)
 - [Symmetry of kinship](kinship-comm.md)
+
+## Moments of genotypes and relationship estimators
+
 - [Integrability of genotypes](integrable-genotype.md)
 - [Integrability of products of genotypes](integrable-genotype-mul.md)
 - [Expected genotype equals $2p$](integral-genotype.md)
@@ -25,5 +25,5 @@
 - [The GRM is unbiased for twice the kinship](integral-grm.md)
 - [Diagonal GRM entry is unbiased for $1 + F_i$](integral-grm-self.md)
 - [The KING moment](integral-sub-sq.md)
-- [The KING moment](integral-sub-sq-of-inbreeding-eq-zero.md)
-- [The GCTA diagonal estimator is unbiased for `1 + F_i`](integral-grm-diag.md)
+- [The KING moment for non-inbred individuals](integral-sub-sq-of-inbreeding-eq-zero.md)
+- [The GCTA diagonal estimator is unbiased for $1 + F_i$](integral-grm-diag.md)

@@ -1,5 +1,3 @@
 # Derivative of the norm has operator norm one
 
-The Fréchet derivative of the norm at a nonzero point has operator norm `1`:
-the norming functional is a norming functional. This statement needs the inner
-product structure, so `K` is an explicit argument.
+Let $E$ be a real normed space whose norm is induced by an inner product over $\mathbb{K}$, where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. For every $x \ne 0$ in $E$, the Fréchet derivative of the norm at $x$ has operator norm $1$.

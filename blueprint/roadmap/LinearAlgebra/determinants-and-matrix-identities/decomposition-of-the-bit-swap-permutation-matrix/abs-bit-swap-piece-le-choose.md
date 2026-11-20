@@ -1,3 +1,4 @@
 # Binomial entry bound for bit-swap pieces
 
-Each entry of the `i`th piece is bounded by the number of `i`-subsets of the bit positions.
+For all $n, i \in \mathbb{N}$, every entry of the [piece](bit-swap-piece.md) $\Pi_{n,i}$ has
+absolute value at most $\binom{n}{i}$, the number of $i$-element sets of bit positions.

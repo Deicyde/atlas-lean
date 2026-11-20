@@ -1,4 +1,4 @@
 # Endpoint typing is preserved by reverse scope extrusion
 
-Reverse scope transport recovers the exact external ownership split
-from the actual restriction/parallel typing, with no closed-hole premise.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$, $q$ processes. If $\Delta
+\vdash_n \nu\,(p \mid \uparrow_0 q)$, then $\Delta \vdash_n (\nu\,p) \mid q$.

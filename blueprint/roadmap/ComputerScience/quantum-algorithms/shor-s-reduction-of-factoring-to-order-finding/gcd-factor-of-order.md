@@ -7,8 +7,8 @@ classical post-processing, is a nontrivial factor of $N$: $d$ divides $N$ and $1
 
 In the algorithm $r$ is the multiplicative order of $a$ modulo $N$, so the hypothesis
 $a^{r/2} \not\equiv 1 \pmod{N}$ is the minimality of the order, and the hypothesis
-$a^{r/2} \not\equiv -1 \pmod{N}$ is the "good unit" condition. This module assumes that
-condition; it does not prove its prevalence among units.
+$a^{r/2} \not\equiv -1 \pmod{N}$ is the "good unit" condition. How often that condition
+holds among units is the subject of [most units give a factor in Shor's reduction](card-units-good-for-factoring-ge.md).
 
 ## Sources
 

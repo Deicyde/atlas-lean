@@ -7,4 +7,4 @@ exception, $f$ takes every complex value infinitely often on every punctured dis
 
 ## Sources
 
-- Great Picard theorem, E. Picard 1879; see Ahlfors, Complex Analysis; Lean is essential isolated singularity version with finite-fiber exceptional set subsingleton, at most one value finitely often near c.
+- Great Picard theorem, E. Picard 1879; see Ahlfors, Complex Analysis. The statement here is the version at an essential isolated singularity $c$: at most one value is taken only finitely often near $c$.

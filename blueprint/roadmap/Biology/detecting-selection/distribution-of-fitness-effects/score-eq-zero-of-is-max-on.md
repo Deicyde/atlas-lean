@@ -1,5 +1,7 @@
 # Score equations
 
-If `ψ` maximizes the Poisson log-likelihood over a parameter set `S`
-that is a neighborhood of `ψ`, and the means are positive and differentiable at `ψ`, then
-`∑ (k_i / E_i(ψ) - 1) · DE_i(ψ) = 0`.
+Let $\iota$ be a finite index set, $V$ a real normed space, $k : \iota \to \mathbb{N}$, $E_i : V \to \mathbb{R}$ and $S \subseteq V$ a neighbourhood of $\psi \in V$. If $\psi$ maximizes $\phi \mapsto \ell(E(\phi), k)$ over $S$, and each $E_i$ is differentiable at $\psi$ with $E_i(\psi) > 0$, then
+
+$$\sum_{i \in \iota} \Bigl(\frac{k_i}{E_i(\psi)} - 1\Bigr) DE_i(\psi) = 0,$$
+
+where $\ell$ is the [Poisson log-likelihood](poisson-log-lik.md).

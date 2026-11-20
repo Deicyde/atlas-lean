@@ -1,4 +1,4 @@
-# Base change of $K(X)/(f)$ along a factorization of $f$ over $K'$
+# Base change of $K[X]/(f)$ along a factorization of $f$ over $K'$
 
 Let $K$ and $K'$
 be fields with $K'$ a $K$-algebra, let $f \in K[X]$, and let $(g_i)_{i \in \iota}$ be a family
@@ -14,4 +14,4 @@ classes of $c\,p$ modulo the $g_i$, with $p$ read in $K'[X]$.
 
 ## Sources
 
-- This is the algebraic decomposition in ATLAS N86, Corollary 4.39 of [MIT 18.785 *Number Theory I*](https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/). The corresponding upstream declaration is [`TensorSplitting.adjoinRoot_tensor_algEquiv_prod`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/Chapter4/TensorSplitting.lean#L146-L160). There, `L` is presented as `K[X] / (f)`, the extension `K' / K` is arbitrary, and the distinct irreducible factors of `f` over `K'` are represented here by `g`, `hirr`, `hne`, and `hprod`. The source assumes that `f` is irreducible and separable in order to say that `L / K` is a finite separable field extension. Those assumptions are not needed for this CRT decomposition of the explicitly presented algebra `AdjoinRoot f`; accordingly, this theorem makes no stronger field or finite-etale claim about its factors.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 4, Corollary 4.39, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. There $f$ is irreducible and separable, so that $K[X]/(f)$ is a finite separable field extension; the decomposition does not need these hypotheses. The corresponding upstream declaration is [`TensorSplitting.adjoinRoot_tensor_algEquiv_prod`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/Chapter4/TensorSplitting.lean#L146-L160).

@@ -7,4 +7,5 @@ discrepancy of $A$ is at most $1$.
 
 ## Sources
 
-- Nikolov, arXiv1301.4039, retained Theorem `thm:main`; catalogue line 55.
+- Aleksandar Nikolov, *The Komlós conjecture holds for vector colorings*, arXiv:1301.4039 (2013), Theorem 1.1.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

@@ -16,4 +16,4 @@ Such a $T$ is unique: it is the paper's polynomial $T_{l-1}$ (Definition 4, with
 
 ## Sources
 
-- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Lemma 6 (`jis-2024-24.6.8-lem-6`).
+- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, J. Integer Seq. 27 (2024), Article 24.6.8, Lemma 6 (catalogue key jis-2024-24.6.8-lem-6).

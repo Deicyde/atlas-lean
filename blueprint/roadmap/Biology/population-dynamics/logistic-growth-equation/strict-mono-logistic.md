@@ -1,4 +1,5 @@
 # Logistic solution is strictly increasing
 
-For `r > 0` and `0 < x₀ < K` the logistic solution is strictly increasing, so the transit
-time of `logistic_transitTime` is the unique time at which `1 - a` is reached.
+Let $r > 0$, $K > 0$ and $0 < x_0 < K$. Then the [explicit logistic solution](logistic.md) $x(t) = K x_0 e^{rt}/(K + x_0(e^{rt} - 1))$ is strictly increasing on $\mathbb{R}$.
+So the [transit time](logistic-transit-time.md) at which the frequency reaches $1 - a$ is the unique
+such time.

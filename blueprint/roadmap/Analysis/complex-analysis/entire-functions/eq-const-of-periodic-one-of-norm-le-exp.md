@@ -11,4 +11,4 @@ $\operatorname{Im} s \ge 0$, and is not constant.
 
 ## Sources
 
-- ATLAS `NumberTheoryI`, Lemma 17.14, corrected; the book prints the one-sided bound, under which the lemma is false.
+- ATLAS NumberTheoryI, Lemma 17.14, corrected; the book prints the one-sided bound, under which the lemma is false.

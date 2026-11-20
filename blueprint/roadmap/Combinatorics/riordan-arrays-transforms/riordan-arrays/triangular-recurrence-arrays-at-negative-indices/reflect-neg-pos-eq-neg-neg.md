@@ -13,7 +13,7 @@ integers $k \le n < 0$ if and only if $w(n, k) \ne 0$ for all integers $n < 0 \l
 
 Thus the divisor condition of Definition 1 for $\tilde a$ is equivalent to that of Definition 2
 for $a$, and conversely, so the left-hand sides exist exactly when the right-hand sides do.
-With junk value $0$ for a zero divisor, the two identities need no existence hypothesis.
+Since a quotient by $0$ is read as $0$, the two identities need no existence hypothesis.
 
 ## Sources
 

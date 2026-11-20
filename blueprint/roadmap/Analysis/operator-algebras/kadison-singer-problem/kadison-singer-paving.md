@@ -7,10 +7,10 @@ $\mathbb{C}^n$, there is a colouring $c$ of the indices $\{0, \dots, n-1\}$ with
 $\{0, \dots, r-1\}$ such that $\|P_j A P_j\| \le \varepsilon$ for every colour $j$, where $P_j$ is
 the paving projection of $c$ onto colour $j$.
 
-Proof: We formalize the Marcus--Spielman--Srivastava mixed-characteristic-polynomial bound via
-real stability, interlacing families, and the barrier argument, then use Timotin's projection
+The proof establishes the Marcus–Spielman–Srivastava mixed-characteristic-polynomial bound via
+real stability, interlacing families and the barrier argument, then uses Timotin's projection
 dilation reduction to derive Anderson paving.
 
 ## Sources
 
-- Anderson paving formulation equivalent to Kadison–Singer conjecture; proved by Marcus–Spielman–Srivastava, Ann. of Math. 182 (2015), 327–350; original Kadison–Singer, Amer. J. Math. 81 (1959) and Anderson, Trans. Amer. Math. Soc. 249 (1979); Lean is finite-dimensional Hermitian zero-diagonal paving with r(ε) independent of n.
+- Anderson paving formulation equivalent to Kadison–Singer conjecture; proved by Marcus–Spielman–Srivastava, Ann. of Math. 182 (2015), 327–350; original Kadison–Singer, Amer. J. Math. 81 (1959) and Anderson, Trans. Amer. Math. Soc. 249 (1979). The statement here is the finite-dimensional paving of Hermitian matrices with zero diagonal, with $r(\varepsilon)$ independent of $n$.

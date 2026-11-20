@@ -6,4 +6,4 @@ and only if the sphere-packing density $\Delta_4$ of $\mathbb{R}^4$ is at most $
 
 ## Sources
 
-- exact conversion between a nonnegative center-density upper bound and its `π²/2`-scaled volume-density bound.
+- exact conversion between a nonnegative center-density upper bound and its $\pi^2/2$-scaled volume-density bound.

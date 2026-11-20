@@ -10,4 +10,4 @@ The integrability that the mean squared error and the bias require follows from 
 
 ## Sources
 
-- Casella–Berger, equation (7.3.1); blueprint `af_3a1bafba0b7dff99554b01f0`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, equation (7.3.1).

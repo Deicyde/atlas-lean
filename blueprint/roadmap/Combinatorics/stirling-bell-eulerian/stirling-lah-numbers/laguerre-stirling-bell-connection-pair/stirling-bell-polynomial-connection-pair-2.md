@@ -23,4 +23,4 @@ The hypothesis $\beta \neq 0$ is not used: the same two identities hold for ever
 
 ## Sources
 
-- Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem, equations, lines 330–339, https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.tex
+- Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem 11, equation (23), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.pdf>.

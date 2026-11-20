@@ -12,7 +12,7 @@ In other words, the two numbers agree modulo $p^{t+1}$; equality is listed as a 
 because the $p$-adic valuation of $0$ is taken to be $0$.
 
 Proof: We use Voronoi's finite-sum congruence in p-adic norm form, following
-Ireland--Rosen, Ch. 15 §2, and Washington, Cor. 5.14, back to Kummer's 1851 paper.
+Ireland–Rosen, Ch. 15 §2, and Washington, Cor. 5.14, back to Kummer's 1851 paper.
 
 ## Sources
 

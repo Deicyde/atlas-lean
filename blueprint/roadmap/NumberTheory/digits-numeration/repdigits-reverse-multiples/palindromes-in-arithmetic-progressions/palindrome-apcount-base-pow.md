@@ -5,8 +5,10 @@ $q \ge 1$ be natural numbers and let $r$ be a natural number with $r < q$. Write
 for the number of base-$b$ palindromes $n$ with $1 \le n \le m$ and $n \equiv r \pmod q$, and
 $[r = 0]$ for $1$ if $r = 0$ and $0$ otherwise. If $q \mid b$, then
 
-$$A_b(b^k, q, r) = \left(\frac{b}{q} - [r = 0]\right)
-\frac{b^{\lceil k/2 \rceil} + b^{\lfloor k/2 \rfloor} - 2}{b - 1}.$$
+$$
+A_b(b^k, q, r) = \left(\frac{b}{q} - [r = 0]\right)
+\frac{b^{\lceil k/2 \rceil} + b^{\lfloor k/2 \rfloor} - 2}{b - 1}.
+$$
 
 If $b \equiv 1 \pmod q$, then $A_b(b^k, q, r)$ equals
 $(b^{\lceil k/2 \rceil} + b^{\lfloor k/2 \rfloor} - 2)/q$ if $q$ is odd,
@@ -16,4 +18,4 @@ even. All these identities hold as identities of rational numbers.
 
 ## Sources
 
-- K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Corollary 11.
+- Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Phakhinkon Napp Phunphayap and Prapanpong Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Corollary 11.

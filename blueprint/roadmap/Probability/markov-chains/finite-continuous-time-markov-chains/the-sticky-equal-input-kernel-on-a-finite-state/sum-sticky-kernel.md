@@ -1,3 +1,5 @@
 # Rows of the sticky kernel sum to one
 
-With `∑ π = 1`, the rows of the sticky kernel sum to `1` (for every real `c`).
+Let $S$ be a finite set and $\pi : S \to \mathbb{R}$ with $\sum_i \pi(i) = 1$. For every real $c$
+and every $i \in S$, $\sum_j K_\pi(c)(i, j) = 1$, where $K_\pi(c)$ is the [sticky
+kernel](sticky-kernel.md).

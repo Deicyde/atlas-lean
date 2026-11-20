@@ -1,6 +1,6 @@
 # Wired random-cluster measures decrease with the box
 
-## A. Conditioning on the configuration outside the inner box
+## Conditioning on the configuration outside the inner box
 
 - [Outer part of a configuration on $\Lambda_{n+1}$](out-proj.md)
 - [Outer projection closes the edges of $\Lambda_n$](out-proj-eq-false-of-range.md)
@@ -13,14 +13,14 @@
 - [Masses of the conditioning fibres sum to one](sum-fibre-mass-eq-one.md)
 - [Wired $\Lambda_{n+1}$ measure decomposed over outer configurations](wired-succ-bc-prob-decompose.md)
 
-## B. Domination by the smaller wired box
+## Domination by the smaller wired box
 
 - [Conditional wired decrease on inner increasing events for $q \ge 1$](cond-bc-prob-inner-restrict-le.md)
 - [Wired box measures decrease on inner increasing events for $q \ge 1$](wired-succ-bc-prob-inner-event-le.md)
 - [Wired $\Lambda_{n+1}$ measure of a $\Lambda_n$ cylinder event as a sum](wired-finite-measure-succ-real-inner-res.md)
 - [Wired box measures decrease on increasing cylinder events at $q = 2$](wired-finite-measure-succ-le-smaller-box.md)
 
-## C. Box-boundary connection events
+## Box-boundary connection events
 
 - [Origin-to-boundary connection is an increasing event](is-increasing-conn-to-bdry-event.md)
 - [Wired $q = 2$ probability of $0 \leftrightarrow \partial\Lambda_n$ in $\Lambda_{n+1}$ at most in $\Lambda_n$](wired-finite-measure-succ-le-box-bdry-co.md)
@@ -31,7 +31,7 @@
 - [One-step decrease of the events $0 \leftrightarrow \partial\Lambda_n$](box-bdry-conn-event-succ-subset.md)
 - [Wired $q = 2$ probability of $0 \leftrightarrow \partial\Lambda_n$ in $\Lambda_n$ is nonincreasing in $n$](wired-finite-measure-box-bdry-conn-event.md)
 
-## D. Restriction between nested boxes
+## Restriction between nested boxes
 
 - [Inclusion of $\Lambda_n$ into $\Lambda_m$ for $n \le m$](box-vert-incl-le.md)
 - [Inclusion of edges of $\Lambda_n$ into edges of $\Lambda_m$](inner-edge-le.md)
@@ -47,7 +47,7 @@
 - [Wired $q = 2$ probability of $0 \leftrightarrow \partial\Lambda_n$ in $\Lambda_{m+1}$ at most in $\Lambda_m$, $m \ge n$](wired-finite-measure-succ-le-box-bdry-co-2.md)
 - [Wired $q = 2$ probability of $0 \leftrightarrow \partial\Lambda_n$ in $\Lambda_{n+k+1}$ at most in $\Lambda_{n+k}$](wired-finite-measure-box-bdry-conn-event-2.md)
 
-## E. Convergence of box-boundary connection probabilities
+## Convergence of box-boundary connection probabilities
 
 - [Open edges of a box are open edges of $\mathbb{Z}^d$](open-subgraph-adj-of-box-graph.md)
 - [Open connections in a box are open connections in $\mathbb{Z}^d$](connected-of-box-connected.md)

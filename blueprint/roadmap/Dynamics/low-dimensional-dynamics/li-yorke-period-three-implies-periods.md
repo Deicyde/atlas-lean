@@ -6,4 +6,5 @@ positive integer $n$ some point of $[0, 1]$ has minimal period $n$ under $f$.
 
 ## Sources
 
-- T.-Y. Li and J. A. Yorke, Period Three Implies Chaos, Amer. Math. Monthly 82 (1975), 985-992, DOI 10.2307/2318254.
+- Tien-Yien Li and James A. Yorke, *Period three implies chaos*, Amer. Math. Monthly 82 (1975), no. 10, 985–992,
+  DOI 10.2307/2318254.

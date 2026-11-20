@@ -16,4 +16,4 @@ singleton block; with the convention above, $S(0) = 0$.
 
 ## Sources
 
-- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 27 (`jis-2025-25.1.1-prop-27`).
+- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 27.

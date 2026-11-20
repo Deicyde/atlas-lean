@@ -7,7 +7,7 @@ in $g f^k$, and suppose that for all natural numbers $n$ and $k$
 
 $$r_{n+1,0} = (b + \varepsilon)\, r_{n,0} + (\lambda + \delta)\, r_{n,1},$$
 
-
+and
 
 $$r_{n+1,k+1} = r_{n,k} + b\, r_{n,k+1} + \lambda\, r_{n,k+2},$$
 
@@ -22,5 +22,5 @@ $(g, f) = (P_b \ast C_\lambda) \ast F_{\varepsilon,\delta}$.
 
 ## Sources
 
-- Cameron and Nkwanta, Riordan multiplication at lines 113–117 and the dot-diagram recursions at lines 124–138.
-- Naiomi T. Cameron and Asamoah Nkwanta, *On Some (Pseudo) Involutions in the Riordan Group*, Journal of Integer Sequences 8 (2005), Article 05.3.7, Triple Factorization theorem due to Peart and Woodson, line 339, reused in the proof at line 373, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Cameron/cameron46.tex>.
+- Naiomi T. Cameron and Asamoah Nkwanta, *On Some (Pseudo) Involutions in the Riordan Group*, Journal of Integer Sequences 8 (2005), Article 05.3.7, Section 1 (Riordan multiplication and dot diagrams), <https://cs.uwaterloo.ca/journals/JIS/VOL8/Cameron/cameron46.pdf>.
+- Naiomi T. Cameron and Asamoah Nkwanta, *On Some (Pseudo) Involutions in the Riordan Group*, Journal of Integer Sequences 8 (2005), Article 05.3.7, Theorem 1, equation (5), <https://cs.uwaterloo.ca/journals/JIS/VOL8/Cameron/cameron46.pdf>.

@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 15
+# Sum of $\binom{8k-2n}{n+k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $T$ be the run length transform of the periodic sequence
 $S$ with $S(i) = 0$ if $i \equiv 2 \pmod 3$ and $S(i) = 1$ otherwise, i.e. of

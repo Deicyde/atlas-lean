@@ -6,4 +6,4 @@ lucky: $\mathrm{Lucky}(1122) = \{1\}$ and $\mathrm{Lucky}(1221) = \{1, 2\}$.
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Definitions 1.2 and 3.1.
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Definitions 2 and 21.

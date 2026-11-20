@@ -1,3 +1,3 @@
 # Slope constant of Kimura's formula is nonzero
 
-The slope constant of Kimura's formula never vanishes.
+For every real $\sigma$, the [slope constant](kimura-slope.md) satisfies $K_\sigma \ne 0$.

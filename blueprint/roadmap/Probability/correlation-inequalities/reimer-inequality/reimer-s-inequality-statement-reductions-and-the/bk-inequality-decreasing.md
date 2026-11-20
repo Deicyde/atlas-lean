@@ -1,4 +1,5 @@
 # BK inequality for decreasing events
 
-The **BK inequality for decreasing events**: under the product Bernoulli(`p`) measure on a
-finite set, `P_p(A □ B) ≤ P_p(A) * P_p(B)` for decreasing `A, B`.
+Let $E$ be a finite set, $p \in [0,1]$ and $\mathbb{P}_p$ the Bernoulli product measure on $\{0,1\}^E$. If $A, B \subseteq \{0,1\}^E$ are decreasing, then
+
+$$\mathbb{P}_p(A \mathbin{\square} B) \le \mathbb{P}_p(A)\, \mathbb{P}_p(B).$$

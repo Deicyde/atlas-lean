@@ -1,4 +1,5 @@
 # Lee–Yang polynomial with complex coefficients
 
-The Lee–Yang polynomial with complex coefficients, whose zeros the Lee–Yang circle theorem
-locates.
+Let $G$ be a finite simple graph and $\beta \in \mathbb{R}$. The Lee–Yang polynomial with complex
+coefficients is the [Lee–Yang polynomial](lee-yang-polynomial.md) of $G$ at $\beta$, a polynomial with
+real coefficients, viewed in $\mathbb{C}[X]$; the Lee–Yang circle theorem locates its complex zeros.

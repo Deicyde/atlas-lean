@@ -8,4 +8,4 @@ blocks themselves are unordered; only the vertices within a block are ordered.
 
 ## Sources
 
-- Gonzales, JIS VOL25, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex>.
+- Ken Joffaniel Gonzales, *Cyclic and Linear Graph Partitions and Normal Ordering*, Journal of Integer Sequences 25 (2022), Article 22.1.1, Definition 13, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.pdf>.

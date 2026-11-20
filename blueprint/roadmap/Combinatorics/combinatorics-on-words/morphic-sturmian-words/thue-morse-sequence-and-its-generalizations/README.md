@@ -6,7 +6,7 @@
 - [Cyclic shifting preserves word length](shift-word-length.md)
 - [Value of the cyclic letter shift](shift-letter-val.md)
 - [Blocks of the generalized Thue–Morse sequence](block.md)
-- [Length of a concatenation of equal-length lists](length-flatten-eq.md)
+- [Length of a concatenation of words of equal length](length-flatten-eq.md)
 - [Length of the generalized Thue–Morse blocks](block-length.md)
 - [Each generalized Thue–Morse block is a prefix of the next](block-prefix-succ.md)
 - [The generalized Thue–Morse blocks form a chain of prefixes](block-prefix.md)

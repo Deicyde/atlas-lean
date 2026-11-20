@@ -30,4 +30,6 @@
 - [Russo's formula on a single fiber](russo-per-eta.md)
 - [Contribution of one coordinate to Russo's formula](russo-per-edge.md)
 - [Russo's formula](has-deriv-at-prob-eq-sum-pivotal-prob.md)
-- [Russo's formula](deriv-prob-eq-sum-pivotal-prob.md)
+- [Russo's formula, derivative form](deriv-prob-eq-sum-pivotal-prob.md)
+- [Covariance with one coordinate, for an arbitrary event](cov-open-edge-eq.md)
+- [Russo's formula, covariance form, for an arbitrary event](has-deriv-at-prob-eq-sum-cov.md)

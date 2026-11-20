@@ -8,4 +8,4 @@ irrationals.
 
 ## Sources
 
-- Nimbran–Levrie line 136.
+- Amrik Singh Nimbran and Paul Levrie, "Patterns in Continued Fractions of Square Roots", Journal of Integer Sequences 26 (2023), the Euler–Lagrange theorem: https://cs.uwaterloo.ca/journals/JIS/VOL26/Nimbran/nimbran14.tex

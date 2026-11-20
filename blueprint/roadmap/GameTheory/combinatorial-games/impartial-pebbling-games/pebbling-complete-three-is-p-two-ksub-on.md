@@ -8,4 +8,4 @@ $2k - 1 - \ell_1 - \ell_2$, $k - \ell_1$ and $k - \ell_2$ in some order is a P-p
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 5.
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 5.

@@ -9,4 +9,4 @@ The source indexes both families by all integers ($n \ne -1$ for the first).
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Corollary 2 (`jis-2024-24.3.1-cor-2`).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Corollary 2 (`jis-2024-24.3.1-cor-2`).

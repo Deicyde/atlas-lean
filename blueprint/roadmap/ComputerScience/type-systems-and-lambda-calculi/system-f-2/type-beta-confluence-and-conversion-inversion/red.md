@@ -1,3 +1,4 @@
 # Multistep parallel type-beta reduction
 
-Finitely many parallel beta reductions, including zero reductions.
+Multistep type β-reduction $A \Rrightarrow^* B$ on $\mathrm{Ty}^{\kappa}_{\Delta}$ is the reflexive
+and transitive closure of [parallel type β-reduction](par.md).

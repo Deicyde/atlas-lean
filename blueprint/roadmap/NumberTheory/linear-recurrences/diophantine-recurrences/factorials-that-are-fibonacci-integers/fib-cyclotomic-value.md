@@ -11,4 +11,4 @@ $m = 0$ is treated as having no divisors, so $\Phi_0 = 1$.
 
 ## Sources
 
-- Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2.
+- Florian Luca, *$F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!$*, INTEGERS 24 (2024), Article A72, Section 2.

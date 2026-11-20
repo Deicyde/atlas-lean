@@ -1,17 +1,17 @@
 # Finite continuous-time Markov chains as path processes
 
-## Probability Theory
+## The jump matrix
 
 - [Jump matrix of a rate matrix](ctmc-jump-matrix.md)
 
-## Is Rate Matrix
+## The jump matrix of a rate matrix
 
 - [Nonnegativity of the jump matrix](ctmc-jump-matrix-nonneg.md)
 - [Rows of the jump matrix sum to one](sum-ctmc-jump-matrix.md)
-- [Jump matrix is row-stochastic](ctmc-jump-matrix-mem-row-stochastic.md)
+- [Jump matrix is stochastic](ctmc-jump-matrix-mem-row-stochastic.md)
 - [Row of the jump matrix as a probability mass function](ctmc-jump-pmf.md)
 
-## Probability Theory
+## Construction of the chain from its steps
 
 - [Law of one step of the chain construction](ctmc-step-measure.md)
 - [Law of the driving step sequence of a Markov chain](ctmc-input-measure.md)
@@ -33,10 +33,10 @@
 - [Joint measurability of the chain path in time and steps](measurable-ctmc-path-uncurry.md)
 - [Measurability of the chain state at a fixed time](measurable-ctmc-path.md)
 
-## Is Rate Matrix
+## The chain of a rate matrix
 
 - [Non-explosion](ae-tendsto-ctmc-jump-time.md)
 - [Strong Markov property at jump times](ctmc-input-measure-ctmc-path-jump-time-a.md)
-- [Kolmogorov](ctmc-input-measure-real-ctmc-path-eq.md)
+- [Transition probabilities of the constructed chain](ctmc-input-measure-real-ctmc-path-eq.md)
 - [Restart law at a fixed time](ctmc-input-measure-real-ctmc-path-add.md)
 - [Finite-dimensional distributions](ctmc-input-measure-real-ctmc-path-fdd.md)

@@ -8,9 +8,9 @@ $k$-th Catalan number (these sums are the Motzkin numbers). Then for every $n \g
 $T_{n+1} = T_n + 2n \, M_{n-1}$.
 
 The source attributes the recurrence to Barcucci, Pinzani, and Sprugnoli, "The Motzkin family",
-and proves it with hybrid-polynomial operator calculus; the proof here instead uses the binomial
-sum for $T_n$ and an elementary termwise binomial identity.
+and proves it with hybrid-polynomial operator calculus; it also follows from the binomial sum
+for $T_n$ and an elementary termwise binomial identity.
 
 ## Sources
 
-- P. Blasiak, G. Dattoli, A. Horzela, K. A. Penson, and K. Zhukovsky, "Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials," Journal of Integer Sequences 11 (2008), Article 08.1.1, Theorem (equation eq34), lines 459–464, https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.tex
+- P. Blasiak, G. Dattoli, A. Horzela, K. A. Penson, and K. Zhukovsky, *Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials*, Journal of Integer Sequences 11 (2008), Article 08.1.1, Theorem 16, equation (39), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.tex>

@@ -1,6 +1,11 @@
-# Zero probability flux (Wright 1931)
+# Zero probability flux of the Beta density
 
-On `(0, 1)` the Beta`(θ₁, θ₂)` density `π`
-satisfies `½ (x (1 - x) π)' - (θ₁ (1 - x) - θ₂ x) / 2 · π = 0`. The identity holds for all real
-`θ₁, θ₂` (it is linear in `π`; Mathlib's density is identically `0` when `B(θ₁, θ₂) = 0`);
-`π` is a probability density when `θ₁, θ₂ > 0` (`isProbabilityMeasureBeta`).
+For all real $\theta_1$, $\theta_2$ and every $x \in (0, 1)$, the Beta density $\beta = \beta_{\theta_1,\theta_2}$ satisfies
+
+$$\frac{1}{2}\, \frac{d}{dx}\bigl(x(1 - x)\,\beta(x)\bigr) - \frac{\theta_1(1 - x) - \theta_2 x}{2}\, \beta(x) = 0.$$
+
+The density, defined with the convention $1/0 = 0$, is identically $0$ when $B(\theta_1, \theta_2) = 0$; it is a probability density when $\theta_1, \theta_2 > 0$.
+
+## Sources
+
+- S. Wright, *Evolution in Mendelian populations*, Genetics 16 (1931), 97–159.

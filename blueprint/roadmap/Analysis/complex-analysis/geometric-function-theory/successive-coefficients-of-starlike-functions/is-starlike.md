@@ -6,4 +6,4 @@ $z \ne 0$ in $\mathbb{D}$, $f(z) \ne 0$ and $\operatorname{Re}\bigl(z f'(z) / f(
 
 ## Sources
 
-- Hayman, Research Problems in Function Theory (2018), Problem 6.46, https://arxiv.org/abs/1809.07200.
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), Problem 6.46, https://arxiv.org/abs/1809.07200.

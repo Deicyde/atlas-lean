@@ -10,4 +10,4 @@ quantitative proof.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #658, https://www.erdosproblems.com/658 (status PROVED (LEAN)); resolution: H. Furstenberg and Y. Katznelson, A density version of the Hales-Jewett theorem, J. Anal. Math. (1991), 64-119, erdosproblems.com/658: the qualitative statement follows from the density Hales-Jewett theorem; a quantitative proof was given by Solymosi (Combin. Probab. Comput. 2004), https://www.erdosproblems.com/658.
+- T. F. Bloom, Erdős Problems, Problem #658, https://www.erdosproblems.com/658 (status PROVED (LEAN)); resolution: Hillel Furstenberg and Yitzhak Katznelson, A density version of the Hales-Jewett theorem, J. Anal. Math. (1991), 64-119, erdosproblems.com/658: the qualitative statement follows from the density Hales-Jewett theorem; a quantitative proof was given by Solymosi (Combin. Probab. Comput. 2004), https://www.erdosproblems.com/658.

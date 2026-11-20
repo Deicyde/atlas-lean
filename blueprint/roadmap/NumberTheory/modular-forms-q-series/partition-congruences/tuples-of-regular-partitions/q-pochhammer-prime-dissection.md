@@ -16,4 +16,4 @@ All the divisions are exact and all the exponents of $q$ are nonnegative integer
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 5, eq. (8), quoting S. Cui and N. Gu, *Arithmetic Properties of ℓ-Regular Partitions*, Adv. Appl. Math. 51 (2013), 507–523, Theorem 2.2. The same identity is Nayaka, Dharmendra and Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 4, eq. (43).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Lemma 5, eq. (8), quoting Su-Ping Cui and Nancy S. S. Gu, *Arithmetic Properties of ℓ-Regular Partitions*, Advances in Applied Mathematics 51(4) (2013), 507–523, Theorem 2.2. The same identity is S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 4, eq. (43).

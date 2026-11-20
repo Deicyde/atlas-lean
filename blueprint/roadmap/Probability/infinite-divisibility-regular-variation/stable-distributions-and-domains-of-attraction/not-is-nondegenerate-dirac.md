@@ -1,3 +1,4 @@
 # Dirac measure is degenerate
 
-A Dirac measure is degenerate, by definition.
+For every $a \in \mathbb{R}$, the Dirac measure $\delta_a$ is not
+[nondegenerate](is-nondegenerate.md).

@@ -7,4 +7,4 @@ guesses. Then $[x^1] f_S = 1$ and $[x^2] f_S = 2^n - n - 1$, the Eulerian number
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 5 (`jis-2026-26.1.7-thm-5`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 5.

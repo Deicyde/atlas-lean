@@ -2,3 +2,7 @@
 
 The statement that the set $\{n + \varphi(n) : n \in \mathbb{N}\}$,
 where $\varphi$ is Euler's totient function, has positive lower density in $\mathbb{N}$.
+
+## Sources
+
+- Erdős Problem #822, https://www.erdosproblems.com/822.

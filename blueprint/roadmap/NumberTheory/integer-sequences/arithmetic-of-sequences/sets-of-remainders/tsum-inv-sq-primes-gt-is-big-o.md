@@ -6,4 +6,4 @@ than $n$ is $O(1/(n \log n))$.
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 8 (`lem:psquared_sum_est`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 8.

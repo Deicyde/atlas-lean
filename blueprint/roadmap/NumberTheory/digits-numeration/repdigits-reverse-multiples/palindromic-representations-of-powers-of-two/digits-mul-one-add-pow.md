@@ -8,4 +8,4 @@ to the least significant.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 1.
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 1.

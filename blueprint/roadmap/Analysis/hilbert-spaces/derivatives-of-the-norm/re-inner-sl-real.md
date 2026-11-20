@@ -1,3 +1,3 @@
 # Over the reals the norming functional is the inner product
 
-Over `ℝ`, the norming functional is just `innerSL ℝ x`.
+Let $E$ be a real inner product space. For every $x \in E$, the functional $y \mapsto \operatorname{Re} \langle x, y \rangle$ is the functional $y \mapsto \langle x, y \rangle$.

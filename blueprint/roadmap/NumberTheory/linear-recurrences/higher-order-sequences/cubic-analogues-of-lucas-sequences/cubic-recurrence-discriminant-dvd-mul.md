@@ -7,4 +7,4 @@ and $m \ge 1$, $D_n$ divides $D_{nm}$.
 
 ## Sources
 
-- E. L. Roettger and H. C. Williams, "Some Arithmetic Properties of Certain Sequences", Journal of Integer Sequences 18 (2015), Article 15.6.2, Theorem `Dndivis`, line 269, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Roettger/roettger4.tex>.
+- E. L. Roettger and H. C. Williams, "Some Arithmetic Properties of Certain Sequences", Journal of Integer Sequences 18 (2015), Article 15.6.2, Theorem 4, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Roettger/roettger4.html>.

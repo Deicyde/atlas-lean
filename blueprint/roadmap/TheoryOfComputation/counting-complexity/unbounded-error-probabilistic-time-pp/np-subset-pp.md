@@ -5,4 +5,4 @@ decision problems decided in probabilistic polynomial time with unbounded error.
 
 ## Sources
 
-- J. Gill, "Computational complexity of probabilistic Turing machines" (1977).
+- J. Gill, "Computational complexity of probabilistic Turing machines", *SIAM Journal on Computing* 6 (1977), 675–695.

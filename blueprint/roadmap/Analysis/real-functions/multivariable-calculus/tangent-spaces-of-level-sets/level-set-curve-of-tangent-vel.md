@@ -7,7 +7,7 @@ $v \in E$ with $Df(x)v = 0$ there is a curve $\gamma : \mathbb{R} \to E$ with $\
 $\gamma'(0) = v$ and $f(\gamma(t)) = c$ for all $t \in \mathbb{R}$.
 
 Proof: Use the implicit function theorem to construct a local curve tangent to the kernel vector,
-then compose it with a bounded arctangent reparametrization to obtain a curve on all of `ℝ`
+then compose it with a bounded arctangent reparametrization to obtain a curve on all of $\mathbb{R}$
 (implicit function theorem, Banach space version:
 https://en.wikipedia.org/wiki/Implicit_function_theorem).
 

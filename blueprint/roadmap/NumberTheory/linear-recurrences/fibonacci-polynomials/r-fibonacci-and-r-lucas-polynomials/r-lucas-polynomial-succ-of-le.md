@@ -6,4 +6,4 @@ polynomials of type $s$, $V_m = V^{(r,s)}_m(x, y)$, satisfy $V_{n+1} = x \, V_n 
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.

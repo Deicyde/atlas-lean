@@ -12,4 +12,4 @@ occur infinitely often is needed.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 31 (`jis-2025-25.1.5-cor-31`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 31 (`jis-2025-25.1.5-cor-31`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

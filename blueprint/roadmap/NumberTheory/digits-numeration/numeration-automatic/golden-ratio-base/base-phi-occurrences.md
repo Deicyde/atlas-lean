@@ -12,4 +12,4 @@ positions $-1, \dots, -\ell$ spell $w$, is the case $k = -1$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (occurrence sequences `R_w`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (occurrence sequences $R_w$).

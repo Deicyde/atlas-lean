@@ -1,4 +1,4 @@
 # Degree of a vertex equals the number of edges containing it
 
-The degree of a vertex is the number of edges containing it. See also
-`SimpleGraph.card_incidenceFinset_eq_degree`.
+For a finite simple graph $G$ and a vertex $x$, the degree of $x$ equals the number of edges of $G$
+containing $x$.

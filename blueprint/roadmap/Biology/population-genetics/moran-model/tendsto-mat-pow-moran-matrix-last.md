@@ -1,6 +1,3 @@
 # Fixation probability of the chain
 
-For `N ≠ 0`, the probability that the Moran chain
-started at `i` is in state `N` after `t` steps tends to `φ_i` as `t → ∞`. Since `N` absorbs,
-this `t`-step probability is the probability of fixation by time `t`, so its limit is the
-probability of eventual fixation.
+Let $r > 0$ be real, $N \ne 0$ a natural number, $P$ the [Moran transition matrix](moran-matrix.md) on $\{0, \dots, N\}$ and $i$ a state. Then the $t$-step transition probability $P^t(i, N)$ tends to the [fixation probability](moran-fixation.md) $\varphi_i$ as $t \to \infty$. Since $N$ is absorbing, $P^t(i, N)$ is the probability of fixation by time $t$, so its limit is the probability of eventual fixation.

@@ -1,3 +1,3 @@
 # Synonymous substitution rate per synonymous site (dS)
 
-The synonymous rate per synonymous site, `dS = ρ_S(ω) / S`.
+$d_S = \rho_S(\omega) / S$, where $\rho_S$ is the [synonymous rate](syn-rate.md) and $S$ the number of [synonymous sites](syn-sites.md), with the convention $x/0 = 0$.

@@ -5,8 +5,10 @@ denote the sum of the base-$q$ digits of $n$, let $F$ be the Trollope–Delange 
 $q$, and let $F_M = \sup_{t \in \mathbb{R}} |F(t)|$ (taken to be $0$ if $|F|$ is unbounded). For
 all real numbers $x > 0$ and $y$,
 
-$$\sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n} \, F\left(\frac{\log(x/n)}{\log q}\right) \le
-F_M \sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n}.$$
+$$
+\sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n} \, F\left(\frac{\log(x/n)}{\log q}\right) \le
+F_M \sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n}.
+$$
 
 ## Sources
 

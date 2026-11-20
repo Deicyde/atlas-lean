@@ -7,4 +7,4 @@ characteristic function of $P$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.2.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

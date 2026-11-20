@@ -11,4 +11,4 @@ $\log^{O(1)}(\varepsilon^{-1} \alpha^{-1})$.
 
 ## Sources
 
-- cites [AIM-COMBINATORICS-0031], aim-combinatorics-notes.json notes[30].
+- AIM Problem Lists, Additive combinatorics and its applications, Problem 2.5, http://aimpl.org/addcombapp/2/.

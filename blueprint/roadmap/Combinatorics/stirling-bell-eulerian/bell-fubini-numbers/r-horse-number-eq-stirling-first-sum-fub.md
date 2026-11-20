@@ -12,10 +12,6 @@ $$
 where $c(r, i)$ is the unsigned Stirling number of the first kind (the number of permutations of
 $r$ elements with exactly $i$ cycles) and $F_m$ is the $m$-th Fubini number.
 
-The proof follows Schreyer's: the signed falling-factorial expansion is evaluated at integers and
-transported to surjection counts by image decomposition and binomial inversion, rather than by
-shift operators.
-
 ## Sources
 
-- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity," Journal of Integer Sequences 28 (2025), Article 25.4.1, Theorem, lines 211–215, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex
+- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity," Journal of Integer Sequences 28 (2025), Article 25.4.1, Theorem 7, equation (11), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.pdf>.

@@ -7,4 +7,4 @@ function $s(n) = q$.
 
 ## Sources
 
-- S. Arora, C. Lund, R. Motwani, M. Sudan, and M. Szegedy, "Proof verification and the hardness of approximation problems", Journal of the ACM 45 (1998), 501-555 (FOCS 1992); S. Arora and S. Safra, "Probabilistic checking of proofs: a new characterization of NP", Journal of the ACM 45 (1998), 70-122.
+- Sanjeev Arora, Carsten Lund, Rajeev Motwani, Madhu Sudan, and Mario Szegedy, "Proof verification and the hardness of approximation problems", Journal of the ACM 45 (1998), 501-555 (FOCS 1992); Sanjeev Arora and Shmuel Safra, "Probabilistic checking of proofs: a new characterization of NP", Journal of the ACM 45 (1998), 70-122.

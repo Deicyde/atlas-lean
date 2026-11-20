@@ -1,3 +1,3 @@
 # A fixed mutant stays fixed
 
-A mutant that is already fixed stays fixed: `φ_N = 1` (for `N ≠ 0`).
+For every real $r > 0$ and every natural number $N \ne 0$, the [fixation probability](moran-fixation.md) from $N$ mutants is $\varphi_N = 1$.

@@ -12,8 +12,7 @@ Resolved true: for a matroid of rank $r$, a generic weight and a threshold $t \l
 where $w$ is the total weight, the proper flats of weight greater than $t$ form an
 $(r - 3)$-connected poset (Adiprasito–Björner, Theorem 2.1, settling the Mikhalkin–Ziegler
 conjecture); for $r = 3$, a small generic perturbation with $t$ slightly below $0$ gives the
-connectivity of the non-negative points through non-negative lines. Shellability in the omitted
-rank-$r$ part is open (their Open Problem 3.2).
+connectivity of the non-negative points through non-negative lines.
 
 ## Sources
 

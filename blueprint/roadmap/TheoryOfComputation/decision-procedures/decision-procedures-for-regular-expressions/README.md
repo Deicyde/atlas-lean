@@ -54,4 +54,4 @@
 - [The Thompson state count of an encoding is primitive recursive](primrec-num-thompson-states.md)
 - [The equivalence search bound is primitive recursive](primrec-eq-bound.md)
 - [The equivalence test is primitive recursive](primrec-eq-b.md)
-- [EQ_REX is decidable](tm2-decidable-matches-eq.md)
+- [Equivalence of regular expressions is decidable](tm2-decidable-matches-eq.md)

@@ -10,4 +10,4 @@ $p_a(n)/n \to 1/(1 - d)$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 30 (`jis-2025-25.1.5-thm-30`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 30 (`jis-2025-25.1.5-thm-30`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

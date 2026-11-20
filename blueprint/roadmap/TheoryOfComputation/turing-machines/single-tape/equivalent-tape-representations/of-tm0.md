@@ -11,5 +11,5 @@ enters $q'$, it writes $s$ back, moves in direction $d$ and enters $q'$. If $M$ 
 enters $q'$, it writes the blank cell when $a' = b$ and otherwise the cell holding $a'$, does not
 move, and enters $q'$.
 
-CSLib machines need a chosen symbol of their alphabet, so an alphabet whose only symbol is the
-blank is excluded.
+The tape alphabet of a single-tape machine comes with a chosen symbol, so $\Gamma_0$ is assumed to
+have a non-blank symbol: an alphabet whose only symbol is the blank is excluded.

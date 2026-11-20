@@ -6,4 +6,4 @@ $S^1$ or to the real line $\mathbb{R}$.
 
 ## Sources
 
-- Classification of connected boundaryless 1-manifolds; Milnor (1965); Hirsch; Lean states dichotomy specialization for `𝓡 1`.
+- Classification of connected boundaryless 1-manifolds; Milnor (1965); Hirsch.

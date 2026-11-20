@@ -6,4 +6,4 @@ Property FA.
 
 ## Sources
 
-- Farb Question 2.8 [AMR-109-0276] (PDF p. 331).
+- M. R. Bridson and K. Vogtmann, *Automorphism groups of free groups, surface groups and free abelian groups*, in B. Farb (ed.), *Problems on Mapping Class Groups and Related Topics*, Proc. Sympos. Pure Math. 74, Amer. Math. Soc., 2006, Question 2.8, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.

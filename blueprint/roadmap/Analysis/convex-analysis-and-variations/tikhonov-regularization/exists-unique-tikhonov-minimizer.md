@@ -1,3 +1,6 @@
 # Existence and uniqueness of the Tikhonov minimizer
 
-The Tikhonov functional has a unique minimizer when `Λ > 0`.
+Let $H$ and $K$ be Hilbert spaces over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, $A : H \to K$ a
+bounded linear operator, $b \in K$ and $\Lambda > 0$. Then the [Tikhonov
+functional](tikhonov-functional.md) $J(x) = \|Ax - b\|^2 + \Lambda \|x\|^2$ has exactly one
+minimizer over $H$.

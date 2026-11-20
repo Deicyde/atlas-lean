@@ -1,4 +1,10 @@
 # Upper incomplete gamma function at natural shapes
 
-The closed form at natural shapes (DLMF 8.4.8): for `x ≥ 0`,
-`Γ(n + 1, x) = n! e^{-x} ∑_{k = 0}^{n} x ^ k / (k!)`.
+For $n \in \mathbb{N}$ and $x \ge 0$, the [upper incomplete gamma function](upper-incomplete-gamma.md)
+satisfies
+
+$$\Gamma(n + 1, x) = n!\, e^{-x} \sum_{k=0}^{n} \frac{x^k}{k!} .$$
+
+## Sources
+
+- F. W. J. Olver et al. (eds.), *NIST Digital Library of Mathematical Functions*, https://dlmf.nist.gov/, equation 8.4.8.

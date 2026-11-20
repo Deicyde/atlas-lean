@@ -1,4 +1,4 @@
 # Equivalence of endpoint capabilities
 
-Capability equivalence explicitly retains the enclosing capability rank,
-which is not an observation of Protocol.TreeEquiv.
+Two capabilities $c = (k,S)$ and $d = (k',S')$ are equivalent, $c \approx d$, when $k = k'$ and $S
+\simeq S'$ (the protocols denote the same tree).

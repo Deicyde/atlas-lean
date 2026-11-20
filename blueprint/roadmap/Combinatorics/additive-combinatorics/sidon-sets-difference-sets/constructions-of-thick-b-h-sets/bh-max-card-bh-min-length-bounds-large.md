@@ -8,4 +8,4 @@ $k \ge e^{e^{34}}$ satisfies $R_h^{-1}(k) \le k^h + (3k)^{h - 1/3}$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(b) (`jis-2024-24.1.2-thm-5`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(b) (`jis-2024-24.1.2-thm-5`).

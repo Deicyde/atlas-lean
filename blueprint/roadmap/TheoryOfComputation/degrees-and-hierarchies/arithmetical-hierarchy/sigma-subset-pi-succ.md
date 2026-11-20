@@ -12,4 +12,4 @@ The proof adds a dummy universal quantifier.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

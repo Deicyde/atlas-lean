@@ -1,4 +1,3 @@
-# Box-boundary connection probability tends to percolation probability
+# Box-boundary connection mass tends to the mass of percolation
 
-For any finite measure, the probability that the origin is connected to the boundary of the box
-of radius `n` inside the box tends to the percolation probability.
+Let $d \in \mathbb{N}$ and let $\mu$ be a finite measure on configurations of $\mathbb{Z}^d$ (assignments of open/closed states to all unordered pairs of sites). Then $\mu(0 \leftrightarrow \partial\Lambda_n) \to \mu(|C(0)| = \infty)$ as $n \to \infty$ (masses of events, which may exceed $1$ unless $\mu$ is a probability measure), where $\{0 \leftrightarrow \partial\Lambda_n\}$ is the [box-boundary connection event](../box-boundary-connection-probabilities-for-the-wi/box-bdry-conn-event.md) (the origin joined to $\partial\Lambda_n = \Lambda_n \setminus \Lambda_{n-1}$ by open edges of $\Lambda_n$) and $\{|C(0)| = \infty\}$ is the event that the open cluster of the origin is infinite.

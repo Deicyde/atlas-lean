@@ -1,5 +1,7 @@
 # Sankoff's recursion at an internal vertex
 
-Sankoff's recursion at an internal vertex: the cost of state `s` is the sum, over the two
-children, of the minimum over the child's state `a` of the edge cost from `s` to `a` plus the
-child's cost at `a`.
+For every internal node with edge costs $P, Q$ and children $l, r$, and every state $s$,
+
+$$\mathrm{Sk}(t, s) = \min_{a} \bigl(P(s, a) + \mathrm{Sk}(l, a)\bigr) + \min_{b} \bigl(Q(s, b) + \mathrm{Sk}(r, b)\bigr),$$
+
+where $\mathrm{Sk}$ is [Sankoff's cost](sankoff.md).

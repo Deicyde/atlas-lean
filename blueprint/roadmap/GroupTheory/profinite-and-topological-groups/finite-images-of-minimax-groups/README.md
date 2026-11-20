@@ -6,4 +6,4 @@
 - [Groups with the same finite images](same-finite-images.md)
 - [Residually finite groups](is-residually-finite.md)
 - [Minimax groups and finite images (Kourovka 12.90)](minimax-determined-by-finite-images.md)
-- [Finite images determine minimaxity (Mann–Segal)](minimax-determined-by-finite-images-hold.md)
+- [Finite images determine minimaxity](minimax-determined-by-finite-images-hold.md)

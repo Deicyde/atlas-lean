@@ -1,5 +1,8 @@
 # Coefficient after eliminating the last state
 
-The coefficient of the reduced system obtained by eliminating the last state: the old
-coefficient, plus the detour through the last state, which may loop there any number of
-times.
+Let $\alpha$ be an alphabet, $n \in \mathbb{N}$, and let $A = (A_{ij})_{0 \le i, j \le n}$ be languages over $\alpha$.
+Eliminating the last index $n$ gives the coefficients $(A'_{ij})_{0 \le i, j < n}$ defined by
+
+$$A'_{ij} = A_{ij} \cup A_{in}\, A_{nn}^*\, A_{nj},$$
+
+the old coefficient together with the detour through $n$, which may loop at $n$ any number of times.

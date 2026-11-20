@@ -7,4 +7,4 @@ of whose parts are congruent to $1$ or $2$ modulo $3$.
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Theorem 4.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Theorem 4.

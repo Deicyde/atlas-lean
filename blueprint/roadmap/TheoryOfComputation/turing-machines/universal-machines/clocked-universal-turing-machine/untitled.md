@@ -1,4 +1,3 @@
 # Stack alphabet of the clocked universal machine
 
-Every stack $k$ of the clocked universal
-machine holds bits: its alphabet is $\Gamma(k) = \mathrm{Bool}$.
+Every stack of the clocked universal machine has the two bits false and true as its alphabet.

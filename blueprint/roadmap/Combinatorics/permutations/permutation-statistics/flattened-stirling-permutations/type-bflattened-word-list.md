@@ -1,4 +1,4 @@
-# The word of a set partition of $(-n, n)$, as a list
+# The word of a set partition of $[-n, n]$, as a list
 
 Let $n$ be a natural number and let
 $P$ be a set partition of $[-n, n] = \{-n, \dots, n\}$. For a finite set $S$ of integers let
@@ -15,4 +15,4 @@ $$g(h(P_0))\, f(h(N_1))\, g(h(P_1)) \cdots f(h(N_m))\, g(h(P_m)).$$
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`), with Definition 2.
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`), with Definition 2.

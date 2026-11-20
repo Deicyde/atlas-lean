@@ -7,4 +7,5 @@ $C_{31a} > 0$.
 
 ## Sources
 
-- Chvátal--Sankoff (1975), catalogue strict lower bound `> 0`.
+- Václav Chvátal and David Sankoff, *Longest common subsequences of two random sequences*, J. Appl. Probab. 12(2) (1975), 306–315.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{31a}$, Chvátal–Sankoff constant for a binary alphabet, https://teorth.github.io/optimizationproblems/constants/31a.html.

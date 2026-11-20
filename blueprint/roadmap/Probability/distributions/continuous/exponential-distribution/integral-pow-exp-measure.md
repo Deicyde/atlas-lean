@@ -1,3 +1,6 @@
 # Moments of the exponential law
 
-The `n`-th moment of the exponential law of rate `r > 0` is `n! / r ^ n`.
+For $r > 0$ and $n \in \mathbb{N}$, the exponential law $\operatorname{Exp}(r)$ of density
+$r e^{-rx}$ on $[0, \infty)$ satisfies
+
+$$\int x^n \, d\operatorname{Exp}(r)(x) = \frac{n!}{r^n} .$$

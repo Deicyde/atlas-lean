@@ -1,5 +1,7 @@
 # Pedigree kinship and inbreeding
 
+## Pedigrees
+
 - [Pedigree](pedigree.md)
 - [Parent relation in a pedigree](is-parent.md)
 - [Ancestor relation in a pedigree](is-ancestor.md)
@@ -25,7 +27,7 @@
 - [Tabular kinship when the first individual is a later founder](kinship-of-gt-of-parents-eq-none.md)
 - [Symmetry of tabular kinship](kinship-comm.md)
 
-## Wright's path formula
+## Ancestral paths
 
 - [Ancestral paths from an individual](anc-paths.md)
 - [Ancestral paths ending at a given ancestor](paths-to.md)
@@ -45,14 +47,14 @@
 - [Malécot's recursion step for identity by descent](ibd-of-parents-eq-some.md)
 - [Self-kinship under gene dropping](gene-drop-kinship-self.md)
 - [Founders are not inbred](inbreeding-of-parents-eq-none.md)
-- [Malécot](inbreeding-of-parents-eq-some.md)
-- [Malécot's recursion](gene-drop-kinship-of-parents-eq-some.md)
+- [Inbreeding coefficient is the kinship of the parents](inbreeding-of-parents-eq-some.md)
+- [Malécot's recursion for gene-dropping kinship](gene-drop-kinship-of-parents-eq-some.md)
 - [Zero kinship with an unrelated founder](gene-drop-kinship-of-parents-eq-none.md)
 - [Symmetry of gene-dropping kinship](gene-drop-kinship-comm.md)
 - [Malécot's recursion computes gene-dropping kinship](gene-drop-kinship-eq-kinship.md)
 - [Malécot's recursion computes the inbreeding coefficient](inbreeding-eq-kinship-inbreeding.md)
 
-## Wright's path formula: proof
+## Wright's path formula
 
 - [Ancestral paths from a founder](mem-anc-paths-of-parents-eq-none.md)
 - [Ancestral paths from a non-founder](mem-anc-paths-of-parents-eq-some.md)
@@ -60,5 +62,5 @@
 - [Ancestral path as its start followed by a tail](exists-eq-cons-of-mem-anc-paths.md)
 - [An ancestral path returning to its start is trivial](eq-singleton-of-mem-anc-paths.md)
 - [Trivial ancestral path](singleton-mem-anc-paths.md)
-- [Wright's path formula](kinship-eq-sum-paths.md)
-- [Wright's path formula](inbreeding-eq-sum-paths.md)
+- [Wright's path formula for kinship](kinship-eq-sum-paths.md)
+- [Wright's path formula for the inbreeding coefficient](inbreeding-eq-sum-paths.md)

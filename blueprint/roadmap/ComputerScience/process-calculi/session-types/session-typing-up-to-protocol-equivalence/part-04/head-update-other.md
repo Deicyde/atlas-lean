@@ -1,4 +1,5 @@
 # Head update leaves other lookups unchanged
 
-Exact two-insert head updates leave every other actual lookup unchanged,
-without requiring the receiver-tail code to equal the sender's dual.
+For every ownership context $\Delta$, endpoints $e$, $x$ with $x \ne e$ and $x \ne \bar e$, and
+capabilities $c$, $d$, the context $\Delta[e \mapsto c][\bar e \mapsto d]$ has the same entry at $x$
+as $\Delta$ (or both have none).

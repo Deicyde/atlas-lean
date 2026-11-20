@@ -1,4 +1,4 @@
 # Dual advancement preserves balance
 
-Faithful subject advancement retains balance if the initial external
-interface is balanced.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ dual-advances to $\Xi$. If $\Delta$ is
+balanced, then so is $\Xi$.

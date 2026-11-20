@@ -1,3 +1,4 @@
 # Büchi automaton accepts exactly the satisfying words
 
-The ordinary Büchi recognizer accepts exactly satisfaction of the formula.
+An infinite word is accepted by the Büchi automaton of an LTL formula $\varphi$ if and only if it
+satisfies $\varphi$.

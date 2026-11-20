@@ -1,5 +1,11 @@
 # Fourier-form KKL inequality given the measure–influence bound
 
-The KKL inequality at `p = 1/2` in Fourier form, with the bound `m - m^{2/(1+ρ²)} ≤ (1 - ρ²) I /
- 4` (for all `ρ ∈ [0, 1]`) as a hypothesis, where `m` is the measure and `I` the total influence
- of `φ`. The hypothesis always holds (`klo_master_le`).
+For a real number $c$, this is the assertion that for every finite nonempty set $E$ and every indicator $f = 1_A$ of a set $A \subseteq \{0, 1\}^E$, with mean $m = \mathbb{E} f$ under the uniform measure and $W = \sum_{S \subseteq E} 4 \lvert S\rvert \hat f(S)^2$: if
+
+$$m - m^{2/(1 + \rho^2)} \le \frac{(1 - \rho^2)\, W}{4}$$
+
+for every $\rho \in [0, 1]$, then
+
+$$c \Big(\sum_{\emptyset \ne S \subseteq E} \hat f(S)^2\Big) \log \frac{1}{\delta} \le W$$
+
+(with $\log(1/\delta)$ read as $0$ when $\delta = 0$). Here $\hat f(S)$ are the Walsh–Fourier coefficients of $f$ and $\delta = \max_e \mathrm{Inf}_e$ is its maximal [influence](../../osss-inequality-for-decision-trees/infl.md) under the uniform measure; $W$ is the total influence. The hypothesis always holds by the [bound on $m - m^{2/(1+\rho^2)}$](klo-master-le.md).

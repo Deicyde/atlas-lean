@@ -5,4 +5,4 @@ this is the finite set of positive integers $n \in A$ with $n \le x$; it is empt
 
 ## Sources
 
-- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
+- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Section 1 (notation of Theorem 1).

@@ -6,4 +6,4 @@ $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{n-k}{m}_2 = \binom{n}{m-n}$.
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 18 (`jis-2025-25.3.5-thm-18`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Theorem 18, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-thm-18).

@@ -11,4 +11,4 @@ $n$-th Bernoulli number.
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (2.3) (`eq:ddprod`); OEIS A195441.
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (8); OEIS A195441.

@@ -1,3 +1,3 @@
 # Contextual barbed equivalence is closed under contexts
 
-Contextual barbed equivalence survives filling a context.
+If $P$ and $Q$ are [contextually strong barbed equivalent](contextual-barbed-equiv.md), then so are $D[P]$ and $D[Q]$ for every [context](context.md) $D$, with [lexical filling](fill.md).

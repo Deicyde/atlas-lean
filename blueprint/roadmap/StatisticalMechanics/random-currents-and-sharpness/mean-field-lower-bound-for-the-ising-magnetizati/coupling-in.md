@@ -1,3 +1,4 @@
 # Coupling restricted to the edges inside a set
 
-The coupling `J` restricted to the edges inside `S` (zero on all other edges).
+For a set $V$, couplings $J$ on unordered pairs and $S \subseteq V$, the restricted coupling is $J_e$ on the pairs
+$e$ with both endpoints in $S$ and $0$ on all other pairs.

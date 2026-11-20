@@ -1,5 +1,8 @@
-# Bhatia–Davis inequality
+# Weighted Bhatia–Davis inequality for real numbers
 
-**Bhatia–Davis inequality**, scalar weighted form: if the weights are
-nonnegative, sum to `1`, and every `λ i` lies in `[m, M]`, then the weighted
-variance is at most `(M - μ) * (μ - m)`, where `μ` is the weighted mean.
+Let $w_1, \dots, w_n \ge 0$ with $\sum_i w_i = 1$, and let $\lambda_1, \dots, \lambda_n \in [m, M]$.
+With $\mu = \sum_i w_i \lambda_i$ the weighted mean,
+
+$$
+\sum_i w_i \lambda_i^2 - \mu^2 \le (M - \mu)(\mu - m).
+$$

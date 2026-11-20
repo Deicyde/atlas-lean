@@ -7,8 +7,8 @@ such that $1 \le \pi(i) < i$ and $S_i = S_{\pi(i)} + S_{i - \pi(i)}$ for every $
 $k < i \le l$.
 
 The paper takes the specific bound $l = l(k)$ from its proof of the preceding lemma; the
-statement here holds for every $l$.
+statement above holds for every $l$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 4.
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 4.

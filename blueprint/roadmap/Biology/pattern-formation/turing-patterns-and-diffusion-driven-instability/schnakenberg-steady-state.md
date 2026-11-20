@@ -1,4 +1,8 @@
 # Steady state of the Schnakenberg kinetics
 
-The homogeneous steady state `(u₀, v₀) = (a + b, b / (a + b)²)` of the Schnakenberg
-kinetics (meaningful for `a + b ≠ 0`; at `a + b = 0` the division gives the junk `v₀ = 0`).
+For real $a$ and $b$, the homogeneous steady state of the [Schnakenberg kinetics](schnakenberg.md) is
+
+$$(u_0, v_0) = \left(a + b, \frac{b}{(a + b)^2}\right),$$
+
+with the quotient read as $0$ when $a + b = 0$. It is an [equilibrium](schnakenberg-steady-state-2.md)
+when $a + b \ne 0$.

@@ -14,7 +14,7 @@ the $k$-th complex derivative in $r$ followed by the $p$-th complex derivative i
 
 The source also states the identity at positive integers $r$, after removing the singularity of
 $\Gamma(1 - r)$, and at nonpositive integers $a$, and extends it by analytic continuation; those
-cases are not included here.
+cases are not part of the statement above.
 
 ## Sources
 

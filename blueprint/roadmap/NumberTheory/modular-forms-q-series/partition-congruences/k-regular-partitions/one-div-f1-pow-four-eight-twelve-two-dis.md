@@ -31,4 +31,4 @@ $1/f_1^{12} = f_4^{42}/(f_2^{42} f_8^{12}) + 12q f_4^{30}/(f_2^{38} f_8^4) +
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 10 (`jis-2025-25.6.1-lem-10`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 10 (`jis-2025-25.6.1-lem-10`).

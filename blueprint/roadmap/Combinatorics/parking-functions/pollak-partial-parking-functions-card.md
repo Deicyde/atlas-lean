@@ -10,4 +10,4 @@ The proof is Pollak's circle argument.
 
 ## Sources
 
-- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, “Lucky Cars and Lucky Spots in Parking Functions”, Journal of Integer Sequences 29 (2026), Article 26.1.1, proposition at lines 330–332 of https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.tex.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, “Lucky Cars and Lucky Spots in Parking Functions”, Journal of Integer Sequences 29 (2026), Article 26.1.1, Proposition 8, <https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.pdf>.

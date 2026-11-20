@@ -1,7 +1,8 @@
 # Csima–Datta: sufficiency of total support
 
-A symmetric nonnegative matrix with total
-support has a positive vector `d` with `diag(d) A diag(d)` doubly stochastic.
+Let $A$ be a real symmetric $n \times n$ matrix with nonnegative entries and total support. Then
+there is a vector $d \in \mathbb{R}^n$ with positive entries such that
+$\operatorname{diag}(d)\, A \operatorname{diag}(d)$ is doubly stochastic.
 
 ## Sources
 

@@ -1,3 +1,7 @@
 # Decomposition of the genotypic value
 
-The decomposition `G i j = μ + α i + α j + δ i j` (an identity by definition of `δ`).
+For all real allele weights $p$, genotypic values $G$ and alleles $i, j$,
+
+$$G_{ij} = \mu + \alpha_i + \alpha_j + \delta_{ij},$$
+
+where $\mu$ is the [mean](mean-value.md), $\alpha$ the [average effects](avg-effect.md) and $\delta$ the [dominance deviations](dom-dev.md).

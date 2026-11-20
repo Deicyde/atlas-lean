@@ -7,4 +7,4 @@ $\mathrm{rep}_F(4) = 101$, $\mathrm{rep}_F(7) = 1010$ and $\mathrm{rep}_F(12) = 
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep` and Table `tab:K1`.
+- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition 5, p. 5 (the greedy Fibonacci representation), and the table of the P-positions of $K^1$.

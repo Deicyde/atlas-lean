@@ -10,4 +10,4 @@ $b_{n+1} - b_n \in \{2, 3\}$ and $b_{n+1} - b_n = (a_{n+1} - a_n) + 1$.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Lemma 18 (`jis-2026-26.1.6-lem-18`).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Lemma 18.

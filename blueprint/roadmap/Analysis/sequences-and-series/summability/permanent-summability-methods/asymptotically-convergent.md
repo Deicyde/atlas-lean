@@ -6,4 +6,4 @@ one such that $x_{s(n)} \to S$ as $n \to \infty$.
 
 ## Sources
 
-- this is the typescript's definition, verbatim in content.
+- S. Mazur, Problem 5 of the Scottish Book: the typescript's definition of asymptotic convergence, verbatim in content.

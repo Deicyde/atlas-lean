@@ -8,4 +8,4 @@ $N(I) = |\mathcal{O}_K / I|$ satisfies $N(I) \le M$ is at most $(nM)^k$.
 
 ## Sources
 
-- ATLAS `NumberTheoryI:295`, *Number Theory I*, Section 14.5, Lemma 14.21; this is a discrete strengthening with an integer threshold, valid also at $M = 0$ and $M = 1$, not the source's literal positive-real statement.
+- ATLAS NumberTheoryI, Section 14.5, Lemma 14.21. The statement here is a discrete strengthening with an integer threshold, valid also at $M = 0$ and $M = 1$, rather than the source's statement for positive real thresholds.

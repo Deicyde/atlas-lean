@@ -1,8 +1,11 @@
 # Bootstrap support
 
-**Bootstrap support** (Felsenstein 1985) of the split with side `A` away from `a`, for a
-tree estimator `est` and an alignment `M` of `m` sites: the fraction of the `m ^ m` site
-resamplings with replacement `w : Fin m → Fin m` (uniform draws, whose site counts are
-multinomial) for which the tree estimated from the resampled alignment `M ∘ w` has the
-cluster `A`. This is the exact bootstrap proportion; Felsenstein's procedure estimates it from a
-sample of resamplings.
+For a tree estimator $\mathrm{est}$ (a map from alignments of $m$ sites to [unrooted binary phylogenetic trees](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md) on $X$), a taxon $a$, an alignment $M$ of $m$ sites and a set $A$, the bootstrap support of $A$ is
+
+$$\frac{\#\{w : \{1, \dots, m\} \to \{1, \dots, m\} \;:\; A \in \mathcal{C}_a(\mathrm{est}(M \circ w))\}}{m^m},$$
+
+the fraction of the $m^m$ site resamplings with replacement whose estimated tree has $A$ among its clusters seen from $a$ (Felsenstein 1985), with the convention $x/0 = 0$.
+
+## Sources
+
+- J. Felsenstein, *Confidence limits on phylogenies: an approach using the bootstrap*, Evolution 39 (1985), 783–791.

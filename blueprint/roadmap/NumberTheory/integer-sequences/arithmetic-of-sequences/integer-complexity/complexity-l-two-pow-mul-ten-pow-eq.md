@@ -6,4 +6,4 @@ $\|2^m \cdot 10^r\|_2 = m + 4r$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 6 and Theorem 2.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 6 and Theorem 2.

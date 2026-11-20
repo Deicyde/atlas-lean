@@ -7,4 +7,4 @@ equal to $1$. We write $\overline{\mathcal{S}}$ for $\overline{\mathcal{S}}_1$.
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1 (`\overline{𝒮}`) and Section 3 (`\overline{𝒮}_k`).
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1 ($\overline{\mathcal{S}}$) and Section 3 ($\overline{\mathcal{S}}_k$).

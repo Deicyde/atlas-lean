@@ -11,4 +11,4 @@ Equivalently, $\frac{1}{(m!)^2} \prod_{k=1}^{m} (R_{n,k} - 1) = \binom{n-1}{m}$.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Corollary 15.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Corollary 15, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

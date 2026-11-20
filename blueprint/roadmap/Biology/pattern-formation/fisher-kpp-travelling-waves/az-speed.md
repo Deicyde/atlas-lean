@@ -1,3 +1,4 @@
 # Speed of the Ablowitz–Zeppetella wave
 
-The Ablowitz–Zeppetella speed `c = 5 √(r D / 6)` (`5 / √6` when `D = r = 1`).
+For real $D$ and $r$, the Ablowitz–Zeppetella speed is $c = 5\sqrt{rD/6}$, where the square root of a negative number is read as $0$. For
+$D = r = 1$ it is $5/\sqrt{6}$.

@@ -1,4 +1,3 @@
 # Background likelihood of a sequence
 
-The likelihood `∏ₖ q (x k)` of a sequence of length `m` under the background of independent
-letters with law `q`.
+For a real background $q$ on $A$ and a sequence $x = (x_0, \dots, x_{m-1})$, the background likelihood is $\prod_{k<m} q(x_k)$.

@@ -10,11 +10,11 @@ and the composition sum $\sum p(a_1) p(a_2) \cdots p(a_k)$, taken over all $k$-t
 $(a_1, \dots, a_k)$ of natural numbers with $a_1 + \cdots + a_k = n$, is congruent modulo $l$ to
 the same right-hand side.
 
-The record prints $\tau_{l-k}(t)$ in place of $\tau_{l-k}(t + 1)$, writing $n = t + ls$; that is
+The paper prints $\tau_{l-k}(t)$ in place of $\tau_{l-k}(t + 1)$, writing $n = t + ls$; that is
 false. The proof's identity
 $\prod (1 - q^m)^{-k} \equiv \prod (1 - q^m)^{l-k} (1 - q^{lm})^{-1} \pmod{l}$ together with
-Definition 1.1 ($\prod (1 - q^m)^j = \sum \tau_j(t + 1) q^t$) gives $\tau_{l-k}(t + 1)$;
-Corollary 4.3 (the record's Corollary 6) uses this shifted form, $\omega(t) = \tau_1(t + 1)$.
+Definition 1 ($\prod (1 - q^m)^j = \sum \tau_j(t + 1) q^t$) gives $\tau_{l-k}(t + 1)$;
+Corollary 6 uses this shifted form, $\omega(t) = \tau_1(t + 1)$.
 
 ## Sources
 

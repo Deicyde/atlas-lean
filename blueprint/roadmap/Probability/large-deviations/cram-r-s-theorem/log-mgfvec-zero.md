@@ -1,3 +1,4 @@
 # Log moment generating function vanishes at zero
 
-The canonical real log moment is zero at the zero direction.
+Let $\mu$ be a probability measure and $X : \Omega \to \mathbb{R}^d$. Then the [real log moment
+generating function](log-mgfvec.md) satisfies $\Lambda(0) = 0$.

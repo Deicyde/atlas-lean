@@ -10,4 +10,4 @@ that case is trivial, all parts being $0$.
 
 ## Sources
 
-- Srashti Dwivedi and Amitabha Tripathi, "On the Two-Color Disjunctive Rado Number for the Equations `∑_{i=1}^{m-2} x_i + a x_{m-1} - x_m = c_j`, `j = 1, 2`", Proposition 4.
+- Srashti Dwivedi and Amitabha Tripathi, *On the Two-Color Disjunctive Rado Number for the Equations $\sum_{i=1}^{m-2} x_i + a x_{m-1} - x_m = c_j$, $j = 1, 2$*, INTEGERS 25 (2025), Article A108, Proposition 4.

@@ -19,4 +19,4 @@ Theorems 2 and 4, and Kaneko's original formula.
 
 ## Sources
 
-- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, Theorem 4 (symmetric formula), lines 180–186, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex>; the closed formula identifying `B` is Theorem 2 there, lines 156–166. Both are attributed there to M. Kaneko, "Poly-Bernoulli numbers," Journal de Théorie des Nombres de Bordeaux 9 (1997), 221–228.
+- Y. Hamahata and H. Masubuchi, *Special Multi-Poly-Bernoulli Numbers*, Journal of Integer Sequences 10 (2007), Article 07.4.1, Theorem 4 (symmetric formula), attributed there to M. Kaneko, *Poly-Bernoulli numbers*, Journal de Théorie des Nombres de Bordeaux 9 (1997), 221–228; the closed formula identifying $B_{n,k}$ is Theorem 2, attributed there to T. Arakawa and M. Kaneko, *On poly-Bernoulli numbers*, Commentarii Mathematici Universitatis Sancti Pauli 48 (1999), 159–167, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.html>.

@@ -6,4 +6,4 @@ $c_0, \dots, c_{n-1} \in F$ with $f = X^n + \sum_{i=0}^{n-1} c_i X^i$.
 
 ## Sources
 
-- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
+- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (notation).

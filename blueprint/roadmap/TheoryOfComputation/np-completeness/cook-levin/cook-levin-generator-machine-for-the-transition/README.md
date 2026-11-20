@@ -48,7 +48,7 @@
 - [Polarity of a transition-clause literal](sgn.md)
 - [Literal routine of the transition-clause generator](lit-p.md)
 - [Generator machine for the transition clause families](prog.md)
-- [The clause-family generator as a finite stack machine](gen-tm.md)
+- [The clause-family generator as a finite multi-stack Turing machine](gen-tm.md)
 
 ## Correctness: one literal
 
@@ -77,7 +77,7 @@
 - [Correctness of the clause-family generator, with its explicit time bound](gen-run.md)
 - [Correctness of the clause-family generator](gen-correct.md)
 
-## The time bound is polynomial: `genBound ≤ genC · (T + H + 1)^5`
+## The time bound is polynomial
 
 - [Uniform layout](uni.md)
 - [Uniform bound on the generator's time](gen-bound-uni.md)

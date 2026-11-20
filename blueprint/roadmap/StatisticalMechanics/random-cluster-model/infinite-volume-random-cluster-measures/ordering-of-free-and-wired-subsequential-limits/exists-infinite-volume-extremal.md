@@ -1,4 +1,3 @@
 # Ordered free and wired subsequential limits exist for $q \ge 1$
 
-For `q ≥ 1` there are a subsequence and weak limits `φ0` (free) and `φ1` (wired) along it with
-`φ0(A) ≤ φ1(A)` for all clopen increasing `A`.
+For $d \in \mathbb{N}$, $0 < p < 1$ and $q \ge 1$, there are a strictly increasing $\psi : \mathbb{N} \to \mathbb{N}$ and probability measures $\phi_0, \phi_1$ on configurations of $\mathbb{Z}^d$ (assignments of open/closed states to all unordered pairs of sites) such that $\phi^0_{\Lambda_{\psi(n)},p,q} \to \phi_0$ and $\phi^1_{\Lambda_{\psi(n)},p,q} \to \phi_1$ weakly (free and wired [box measures](../finite-and-infinite-volume-fk-measures-on-d/free-finite-measure.md)), and $\phi_0(A) \le \phi_1(A)$ for every increasing event $A$ that is both open and closed.

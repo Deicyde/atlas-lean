@@ -21,4 +21,4 @@ $$\sum_{k=-n}^{n} \binom{2n}{n+k} V_{k+m} U_{k+r} = \Delta^{n} U_{m+r}.$$
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 3.2.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 3.2.

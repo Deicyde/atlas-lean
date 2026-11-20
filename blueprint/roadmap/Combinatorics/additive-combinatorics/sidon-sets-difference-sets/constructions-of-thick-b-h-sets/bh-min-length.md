@@ -7,4 +7,4 @@ example when $k = 0$, since a $B_h$-set is nonempty.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the paragraph before Theorem 5.
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definitions of $R_h(n)$ and $R_h^{-1}(k)$ in Section 1, before Theorem 5.

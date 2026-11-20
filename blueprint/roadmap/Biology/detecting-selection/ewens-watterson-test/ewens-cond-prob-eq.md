@@ -1,5 +1,11 @@
-# `K` is sufficient for `θ`
+# The number of alleles is sufficient for the mutation parameter
 
-**`K` is sufficient for `θ`** (Ewens 1972): for `θ > 0`, the conditional law of the
-allelic partition given the number of alleles is `w(π) / ∑_{K(π') = K(π)} w(π')`, which does
-not depend on `θ`.
+Let $\theta > 0$. Then for every partition $\pi$ of $n$,
+
+$$P_\theta(\pi \mid K = K(\pi)) = \frac{w(\pi)}{\sum_{\pi' :\, K(\pi') = K(\pi)} w(\pi')},$$
+
+where the left side is the [conditional probability](ewens-cond-prob.md) and $w$ the [cycle-type weight](cycle-type-weight.md): the conditional law of the allelic partition given the number of alleles does not depend on $\theta$ (Ewens 1972).
+
+## Sources
+
+- W. J. Ewens, *The sampling theory of selectively neutral alleles*, Theor. Popul. Biol. 3 (1972), 87–112.

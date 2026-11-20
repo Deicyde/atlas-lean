@@ -5,4 +5,5 @@ constant $\beta_2$ of the unit square satisfies $\beta_2 < 0.90304$.
 
 ## Sources
 
-- Yu and Carlsson (2023), strict upper-bound row in the catalogue.
+- J. Yu and J. G. Carlsson, *A new upper bound for the Euclidean TSP constant*, preprint, Optimization Online (2023),
+  https://optimization-online.org/?p=23315; catalogue https://github.com/teorth/optimizationproblems, `constants/12a.md`.

@@ -1,4 +1,3 @@
-# Identifiability
+# Identifiability of rate and timing from the multiplicity spectrum
 
-If some copy is amplified, two parameter pairs `(μ, t)`, `(μ', t')`
-with `μ, μ' ≠ 0` and the same expected multiplicity spectrum are equal.
+Let a [gain history](gain-history.md) have at least one [amplified copy](amplified.md), and let $\mu, \mu' \ne 0$ and $t, t'$ be real. If the [expected counts](expected-count.md) agree for every multiplicity, $E_m(\mu, t) = E_m(\mu', t')$ for all $m$, then $\mu = \mu'$ and $t = t'$.

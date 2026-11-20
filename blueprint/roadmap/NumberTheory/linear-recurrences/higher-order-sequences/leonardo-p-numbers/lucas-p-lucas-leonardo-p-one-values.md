@@ -6,4 +6,4 @@ $R_{1,0}, \dots, R_{1,5}$ are $3, 1, 5, 7, 13, 21$.
 
 ## Sources
 
-- Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Section 1.

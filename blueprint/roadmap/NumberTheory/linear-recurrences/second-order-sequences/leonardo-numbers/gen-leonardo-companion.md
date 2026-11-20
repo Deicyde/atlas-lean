@@ -10,4 +10,4 @@ $M_{k,n+1} = M_{k,n} + M_{k,n-1} + 2k$ for $n \ge 1$.
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly 62.3 (2024), Definition 2.1 and identity (2.1).
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Definition 2.1 and identity (2.1).

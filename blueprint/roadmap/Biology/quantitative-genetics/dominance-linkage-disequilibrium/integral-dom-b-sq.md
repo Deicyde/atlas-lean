@@ -1,3 +1,3 @@
 # Second moment of the dominance coding at the second locus
 
-The dominance coding has second moment `E(d_B²) = V_B²`.
+For every [two-locus genotype under random union](random-union.md) on a measure $P$, the [dominance coding](dom-b.md) satisfies $\int d_B^2 \, dP = V_B^2$, where $V_B$ is the [haplotype variance](var-b.md).

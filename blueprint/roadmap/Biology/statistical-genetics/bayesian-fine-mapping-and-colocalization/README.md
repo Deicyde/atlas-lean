@@ -6,7 +6,7 @@
 - [Wakefield's closed form](wakefield-abf-eq.md)
 - [Positivity of Wakefield's approximate Bayes factor](wakefield-abf-pos.md)
 - [Wakefield's Bayes factor as a density ratio of Gaussians](gaussian-real-eq-with-density-wakefield.md)
-- [The ABF is the Bayes factor](rn-deriv-map-add-ae-eq.md)
+- [Wakefield's Bayes factor is a Radon–Nikodym derivative](rn-deriv-map-add-ae-eq.md)
 
 ## Single-effect regression
 

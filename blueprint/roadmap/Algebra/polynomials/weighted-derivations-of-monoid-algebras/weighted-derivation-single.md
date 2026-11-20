@@ -1,3 +1,4 @@
 # Weighted derivation of a basis term
 
-A basis term keeps its exponent and has its coefficient multiplied by the weight.
+For an additive weight $w : \Gamma \to R$, the weighted derivation $D_w$ of $R[\Gamma]$ sends the
+basis term $r\, x^g$ to $w(g)\, r\, x^g$, for every $g \in \Gamma$ and $r \in R$.

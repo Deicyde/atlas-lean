@@ -6,4 +6,4 @@ $4$ or by $9$, equals $1$: the only such partition is the empty partition.
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Section 1 (definition of `b_{ℓ,k}(n)`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Section 1 (definition of $b_{\ell,k}(n)$).

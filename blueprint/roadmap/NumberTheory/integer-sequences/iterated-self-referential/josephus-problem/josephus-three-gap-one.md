@@ -10,4 +10,4 @@ Here $n_1 = 2$ and $n_2 = 13$, and the three pure high extremal points counted a
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Definition 1 and Table 3.

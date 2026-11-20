@@ -16,4 +16,4 @@ $\mu'$ is $\mu$ with its entry at $l$ replaced by $v$.
 
 ## Sources
 
-- TAPL Figure 13-1, with each fresh location allocated at the end of the store.
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Figure 13-1, with each fresh location allocated at the end of the store.

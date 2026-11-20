@@ -9,4 +9,4 @@ and $y \in L$ are mapped into each $L_w$.
 
 ## Sources
 
-- ATLAS N236, Theorem 11.23(5), with the tensor factors swapped; used later in N265.
+- ATLAS NumberTheoryI, Theorem 11.23(5), with the tensor factors swapped.

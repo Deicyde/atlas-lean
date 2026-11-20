@@ -6,8 +6,8 @@ $2 \sum F_{k_1} T_{k_2} Q_{k_3} P_{k_4} = P_{n+4} - P_{n+3} + P_{n+2} + T_{n+3} 
 F_n - 2Q_{n+3} - 2Q_{n+1}$, where the sum runs over all $4$-tuples $(k_1, k_2, k_3, k_4)$ of
 nonnegative integers with $k_1 + k_2 + k_3 + k_4 = n - 5$.
 
-The source prints this identity with a factor $1/2$; it is stated here multiplied by $2$.
+The source prints this identity with a factor $1/2$; the identity above is multiplied by $2$.
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 32.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 32.

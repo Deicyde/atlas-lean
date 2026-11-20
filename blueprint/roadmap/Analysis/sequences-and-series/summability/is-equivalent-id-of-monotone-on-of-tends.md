@@ -9,4 +9,4 @@ No monotonicity is assumed below $1$.
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Lemma 16.8.
+- ATLAS NumberTheoryI, Lemma 16.8.

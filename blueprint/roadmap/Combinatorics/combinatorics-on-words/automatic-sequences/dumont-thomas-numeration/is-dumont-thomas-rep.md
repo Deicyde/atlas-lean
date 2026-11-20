@@ -19,4 +19,4 @@ when $N = L_k$) and $w$ is the digit word $1, |m_{k-1}|, \ldots, |m_0|$.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of Dumont–Thomas complement numeration systems for `ℤ`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of Dumont–Thomas complement numeration systems for $\mathbb{Z}$).

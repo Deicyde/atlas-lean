@@ -13,4 +13,6 @@ onto the parameter component.
 
 ## Sources
 
-- Pascale Roesch, Hyperbolic components of polynomials with a fixed critical point of maximal order, Ann. Sci. Ecole Norm. Sup. (4) 40 (2007), arXiv:math/0612172, https://arxiv.org/abs/math/0612172.
+- Pascale Roesch, *Hyperbolic components of polynomials with a fixed critical point of maximal order*, Ann. Sci.
+  École Norm. Sup. (4) 40 (2007), no. 6, 901–949, DOI 10.1016/j.ansens.2007.10.001, Theorem 2;
+  arXiv:math/0612172, <https://arxiv.org/abs/math/0612172>.

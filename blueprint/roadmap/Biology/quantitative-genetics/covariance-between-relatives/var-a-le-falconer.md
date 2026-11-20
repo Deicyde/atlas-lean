@@ -1,3 +1,3 @@
 # Phantom heritability inequality
 
-The phantom-heritability inequality in covariance form: `V_A ≤ 2 (Cov_MZ - Cov_DZ)`.
+For all [Cockerham–Kempthorne components](cockerham-components.md) and every real $C$, the [additive variance](var-a-2.md) and [Falconer's estimator](falconer.md) satisfy $V_A \le F(C)$.

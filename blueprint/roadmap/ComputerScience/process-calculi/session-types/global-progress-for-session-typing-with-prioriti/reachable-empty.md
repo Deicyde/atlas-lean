@@ -1,4 +1,5 @@
 # Reachable states of closed ranked networks stay typed
 
-Every state reached by finitely many actual canonical steps retains exact
-empty-interface ranked typing. This is preservation, not finite termination.
+Let $n$ be a natural number and $p$, $q$ processes. If $\emptyset \vdash^{\mathrm{rk}}_n p$ and $q$
+is reachable from $p$ by finitely many (possibly zero) π-calculus reduction steps, then $\emptyset
+\vdash^{\mathrm{rk}}_n q$.

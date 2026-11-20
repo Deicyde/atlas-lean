@@ -7,4 +7,4 @@ $|C|\,\chi(g)/\chi(1)$ is an algebraic integer.
 
 ## Sources
 
-- Bielefeld Prop 1.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Proposition 1, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

@@ -1,3 +1,3 @@
 # Decoding inverts the μ-calculus number code
 
-Decoding inverts encoding.
+Decoding the pairing code of a μ-calculus formula returns that formula.

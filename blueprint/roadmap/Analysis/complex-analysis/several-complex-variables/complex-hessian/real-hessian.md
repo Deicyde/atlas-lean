@@ -6,4 +6,4 @@ points $z, a, b \in \mathbb{C}^n$, the real Hessian $D^2u(z)(a, b)$ is the real 
 by taking the real Fréchet derivative at $z$ of the map $w \mapsto Du(w)$, applying it to $a$,
 and applying the result to $b$.
 
-As usual in Mathlib, a derivative that does not exist is taken to be zero.
+A derivative that does not exist is taken to be zero.

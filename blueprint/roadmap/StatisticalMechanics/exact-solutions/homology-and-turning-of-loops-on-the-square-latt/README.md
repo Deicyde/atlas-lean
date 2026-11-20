@@ -30,7 +30,7 @@
 - [Prefix sum of a function on $\mathbb{Z}/L$](ons-zmod-prefix.md)
 - [Horizontal part of the zero-flux potential construction](ons-zero-flux-horizontal.md)
 - [Vertical part of the zero-flux potential construction](ons-zero-flux-vertical.md)
-- [Face potential of an even subgraph of zero homology](ons-zero-flux-potential.md)
+- [Zero-flux face potential of a torus edge set](ons-zero-flux-potential.md)
 - [Intersection number of torus edge sets in the field $\mathbb{Z}/2$](ons-edge-cycle-zintersection.md)
 - [Parity of an integer as a bit](ons-int-parity.md)
 - [Mod 2 homology class of a winding](ons-winding-parity.md)

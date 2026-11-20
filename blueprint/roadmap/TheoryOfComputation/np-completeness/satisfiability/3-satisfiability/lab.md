@@ -4,8 +4,7 @@ The emitter machine has the labels
 $\mathrm{start}$, $\mathrm{clause}$, $\mathrm{fin}$ and $\mathrm{done}$, and, for Booleans
 $f, p, s, x, e$, the labels $\mathrm{lit}(f)$, $\mathrm{fa}(s, x)$, $\mathrm{fb}(s, x)$,
 $\mathrm{fc}(s, x)$, $\mathrm{fd}(s, x)$, $\mathrm{fe}(s, x)$, $\mathrm{body}(f, p)$,
-$\mathrm{cp}(f, e)$, $\mathrm{aft}(f)$ and $\mathrm{sfx}(f)$, all distinct; equality of labels is
-decidable.
+$\mathrm{cp}(f, e)$, $\mathrm{aft}(f)$ and $\mathrm{sfx}(f)$, all distinct.
 
 At $\mathrm{lit}(f)$ the machine pops a literal marker, $f$ telling whether it is the first
 literal walked in its clause. The labels $\mathrm{fa}$ to $\mathrm{fe}$ prepend the fresh literal

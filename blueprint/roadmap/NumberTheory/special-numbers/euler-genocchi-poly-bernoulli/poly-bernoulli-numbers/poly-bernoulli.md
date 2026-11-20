@@ -13,4 +13,4 @@ Sancti Pauli 48 (1999), 159–167, as cited by the source.
 
 ## Sources
 
-- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex>. The poly-Bernoulli generating-series definition and Kaneko's formula are lines 106–152 of the official TeX.
+- Y. Hamahata and H. Masubuchi, *Special Multi-Poly-Bernoulli Numbers*, Journal of Integer Sequences 10 (2007), Article 07.4.1, Section 1 (generating-series definition) and Theorem 1 (Kaneko's explicit formula), <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.html>.

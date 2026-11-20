@@ -8,9 +8,9 @@ $c$ for some $0 \le c < p$ and phase $r + 1$ for some $0 \le r \le p$; or a curv
 length $l$ in color $c$ for some $0 \le c < p$ and some natural number $l$, starting at cell $1$
 (phase $1$).
 
-The restriction $l \ge p + 2$ on the last kind is not part of this type; the bracelet sets
-impose it.
+The condition $l \ge p + 2$ on the last kind is imposed in the definition of the Lucas–Leonardo
+bracelets.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 3.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Section 3.

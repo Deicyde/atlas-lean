@@ -8,4 +8,4 @@ the $2n + 4$ cells of $\theta^{(n)}$ bijectively onto $\{1, \dots, 2n + 4\}$.
 
 ## Sources
 
-- Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Proposition 3 (`jis-2025-25.5.2-prop-3`).
+- Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Proposition 3.

@@ -1,4 +1,3 @@
 # One minus the Cayley transform is invertible
 
-`1 - U` is a unit for the Cayley transform of a self-adjoint operator:
-`1` is never in the spectrum of `U`.
+Let $H$ be a complex Hilbert space, $A$ a bounded self-adjoint operator on $H$ and $U$ its [Cayley transform](cayley-transform.md). Then $I - U$ is invertible; equivalently, $1$ is not in the spectrum of $U$.

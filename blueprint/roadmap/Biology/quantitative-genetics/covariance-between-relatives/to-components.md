@@ -1,4 +1,3 @@
 # Single-locus model as Cockerham components
 
-The one-locus model as Cockerham components of order `1`: `V 1 0 = V_A`, `V 0 1 = V_D`,
-`V 1 1 = 0`.
+Every [single-locus model](locus-model.md) defines [Cockerham–Kempthorne components](cockerham-components.md) of order $n = 1$ with $V_{10} = V_A$, $V_{01} = V_D$ and all other components $0$, where $V_A$ and $V_D$ are the [additive](var-a.md) and [dominance](var-d.md) variances.

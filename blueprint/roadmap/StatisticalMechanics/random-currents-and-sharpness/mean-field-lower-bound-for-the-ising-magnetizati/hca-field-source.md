@@ -1,3 +1,4 @@
 # Ghost source set of a field covariance
 
-The ghost-graph source set `{o} ∆ {z}` attached to the field covariance `Cov(σ_o, σ_z)`.
+For a finite set $V$ with an added ghost vertex and $o, z \in V$, this is the source set $\{o\} \,\triangle\, \{z\}$ (empty
+when $z = o$), attached to the covariance of $\sigma_o$ and $\sigma_z$.

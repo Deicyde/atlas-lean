@@ -5,4 +5,4 @@ the code number of $c$ under the Gödel numbering of oracle codes.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; size bounds).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (Gödel numberings; size bounds).

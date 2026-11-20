@@ -18,4 +18,4 @@ and whose functions $r$ and $p_a$ satisfy the second identity for all $n \ge 1$ 
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 57 (`jis-2025-25.1.5-thm-57`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 57 (`jis-2025-25.1.5-thm-57`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

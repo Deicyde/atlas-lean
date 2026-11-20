@@ -9,7 +9,7 @@
 - [Interior quasispecies equilibrium is at most 1](master-equilibrium-le-one.md)
 - [Maximal genome length](one-lt-mul-pow-iff.md)
 - [Continuity of the interior equilibrium in the copying fidelity](tendsto-master-equilibrium.md)
-- [Fixed-`q_L` limit](tendsto-master-equilibrium-fidelity.md)
+- [Fixed mutation load limit](tendsto-master-equilibrium-fidelity.md)
 - [Eigen's error threshold](master-equilibrium-exp-pos-iff.md)
 - [Convergence above the threshold](tendsto-master-of-one-lt.md)
 - [Loss of the master at or below the threshold](tendsto-master-zero-of-le-one.md)

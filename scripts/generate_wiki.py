@@ -57,7 +57,21 @@ UNPLACED = {
 # Library -> top-level directory -> subject when the names differ. The taxonomy places
 # almost every module; these subjects hold only the modules it does not place yet.
 LIBRARIES = {
-    "MathlibExt": {"Computability": "TheoryOfComputation", "Data": "ComputerScience", "ModelTheory": "Logic"},
+    "MathlibExt": {
+        "AlgebraicTopology": "Topology",
+        "Algorithms": "ComputerScience",
+        "Complexity": "TheoryOfComputation",
+        "Computability": "TheoryOfComputation",
+        "ControlTheory": "Analysis",
+        "Data": "ComputerScience",
+        "Interpolation": "Analysis",
+        "Languages": "ComputerScience",
+        "ModelTheory": "Logic",
+        "OperationsResearch": "Economics",
+        "Quantum": "QuantumInformation",
+        "Transport": "Economics",
+        "Urban": "Economics",
+    },
     "CSLibExt": {
         "Algorithms": "ComputerScience",
         "AutomatedReasoning": "Logic",
@@ -68,15 +82,50 @@ LIBRARIES = {
         "Crypto": "ComputerScience",
         "Databases": "ComputerScience",
         "Foundations": "ComputerScience",
+        "InformationRetrieval": "ComputerScience",
         "Languages": "ComputerScience",
         "Logics": "Logic",
         "MachineLearning": "ComputerScience",
+        "Parallel": "ComputerScience",
+        "Planning": "ComputerScience",
+        "Privacy": "ComputerScience",
+        "Security": "ComputerScience",
+        "Specs": "ComputerScience",
+        "Tactic": "ComputerScience",
+        "Testing": "ComputerScience",
     },
-    "PhyslibExt": {"CondensedMatter": "StatisticalMechanics", "StatisticalMechanics": "StatisticalMechanics"},
-    "WantedExt": {"Complexity": "TheoryOfComputation", "ModelTheory": "Logic"},
+    "PhyslibExt": {
+        "Basic": "Physics",
+        "Biomechanics": "Physics",
+        "BiomedicalImaging": "Physics",
+        "Biophysics": "Physics",
+        "Circuits": "Physics",
+        "ClassicalMechanics": "Physics",
+        "CondensedMatter": "StatisticalMechanics",
+        "Elasticity": "Physics",
+        "Electromagnetism": "Physics",
+        "Electronics": "Physics",
+        "Engineering": "Physics",
+        "FluidDynamics": "Physics",
+        "HeatTransfer": "Physics",
+        "Instrumentation": "Physics",
+        "Mechanics": "Physics",
+        "Numerical": "Physics",
+        "Quantum": "Physics",
+        "QuantumMechanics": "Physics",
+        "Reliability": "Physics",
+        "SpaceAndTime": "Physics",
+        "SpaceSystems": "Physics",
+        "StatisticalMechanics": "StatisticalMechanics",
+        "Statistics": "Physics",
+        "Units": "Physics",
+    },
+    "WantedExt": {"Complexity": "TheoryOfComputation", "Computation": "TheoryOfComputation", "ModelTheory": "Logic"},
 }
+# Declarations inside a `mutual` block are indented; `declaration_lines` takes indented matches only there, or
+# where the Lean index puts a declaration.
 V2_DECLARATION = re.compile(
-    r"^(?:@\[[^\]]*\]\s*)*(?P<mods>(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s+)*)"
+    r"^[ \t]*(?:@\[[^\]]*\]\s*)*(?P<mods>(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s+)*)"
     r"(?P<kw>theorem_wanted|def_wanted|theorem|lemma|def|abbrev|instance|structure|class|inductive|opaque)\b"
     r"\s*(?P<name>[^\s:(\[{]*)"
 )
@@ -115,6 +164,8 @@ class Target:
     # The doc heading, named section and namespace the declaration sits under.
     sections: tuple[str, str, str] = ("", "", "")
     path: Path = Path()
+    # The 1-based line of the declaration in its module, 0 when unknown.
+    line: int = 0
     depends: list[Target] = field(default_factory=list)
     proof_depends: list[Target] = field(default_factory=list)
 
@@ -187,8 +238,147 @@ def not_a_link(text: str) -> str:
     return LINK_SYNTAX.sub(lambda m: m.group() if LINK_TARGET.fullmatch(m.group(2)) else f"[{m.group(1)}]&#40;{m.group(2)})", text)
 
 
+# Where something other than code may start: a block comment, a line comment, a string, a character, a raw string.
+_LEXEME = re.compile(r'/-|--|"|\'|(?<![\w\'!?])r#*"')
+# The same, with the braces that open and close a term embedded in an interpolated string.
+_LEXEME_IN_TERM = re.compile(r'/-|--|"|\'|(?<![\w\'!?])r#*"|[{}]')
+_STRING_TAIL = re.compile(r'(?:[^"\\]|\\.)*"', re.S)
+_CHAR = re.compile(r"'(?:\\(?:x[0-9a-fA-F]{2}|u\{[0-9a-fA-F]+\}|.)|[^\\\n'])'")
+_BLOCK = re.compile(r"/-|-/")
+# The tokens after which a string is interpolated, as Lean's grammar has them: `s!`, `m!` and `f!`, and
+# `throwError`, `throwErrorAt <term>`, `dbg_trace` and `trace[...]`; whitespace and comments may separate them
+# from the string. Other `name!` macros, such as `panic!`, take an ordinary string.
+_INTERPOLATING = re.compile(
+    r"(?<![\w'.!?])(?:[smf]!|throwError|dbg_trace|trace\[[^\]\n]*\]|throwErrorAt\s+(?:[^\s()\"]+|\([^()]*\)))\s*$")
+
+
+def _blank(text: str) -> str:
+    return re.sub(r"[^\n]", " ", text)
+
+
+def code_only(text: str) -> str:
+    """The Lean source with every comment and literal blanked out, keeping its lines and columns.
+
+    It reads the source as Lean's lexer does: block comments nest, so a docstring that shows a documented
+    example stays one comment; a line comment runs to the end of its line; string literals, raw strings and
+    character literals may span lines and hide comment markers and declaration-looking text; a prime that
+    ends a name (`h'`) starts no character literal; and the terms embedded in an interpolated string
+    (`s!"…{term}…"`) are code, which stays, with their own strings and braces.
+    """
+    out: list[str] = []
+    n = len(text)
+
+    def read_so_far(significant: int = 1000) -> str:
+        # What is read so far, back to `significant` characters that are not blank, with each blank run (blanked
+        # comments included) shortened to one space: trivia of any length keeps the tokens before a string.
+        pieces, count = [], 0
+        for piece in reversed(out):
+            pieces.append(piece)
+            count += len(piece) - piece.count(" ") - piece.count("\n") - piece.count("\t")
+            if count >= significant:
+                break
+        return re.sub(r"\s+", " ", "".join(reversed(pieces)))
+
+    def code(i: int, in_term: bool) -> int:
+        # Code from i: to the end, or, in a term embedded in a string, past the brace that closes it.
+        depth = 0
+        lexemes = _LEXEME_IN_TERM if in_term else _LEXEME
+        while i < n:
+            match = lexemes.search(text, i)
+            if match is None:
+                out.append(text[i:])
+                return n
+            start, lexeme = match.start(), match.group()
+            out.append(text[i:start])
+            if lexeme in "{}":
+                out.append(lexeme)
+                if lexeme == "}":
+                    if depth == 0:
+                        return start + 1
+                    depth -= 1
+                else:
+                    depth += 1
+                i = start + 1
+                continue
+            if lexeme == "/-":
+                count, end = 1, n
+                for mark in _BLOCK.finditer(text, start + 2):
+                    count += 1 if mark.group() == "/-" else -1
+                    if count == 0:
+                        end = mark.end()
+                        break
+            elif lexeme == "--":
+                end = text.find("\n", start)
+                end = n if end < 0 else end
+            elif lexeme == '"':
+                if _INTERPOLATING.search(read_so_far()):
+                    i = interpolated(start)
+                    continue
+                tail = _STRING_TAIL.match(text, start + 1)
+                end = tail.end() if tail else n
+            elif lexeme == "'":
+                char = None if start and (text[start - 1].isalnum() or text[start - 1] in "_'!?") else _CHAR.match(text, start)
+                if char is None:
+                    out.append("'")
+                    i = start + 1
+                    continue
+                end = char.end()
+            else:  # a raw string, r"..." or r#"..."# with as many closing hashes as opening ones
+                close = '"' + "#" * (len(lexeme) - 2)
+                end = text.find(close, match.end())
+                end = n if end < 0 else end + len(close)
+            out.append(_blank(text[start:end]))
+            i = end
+        return n
+
+    def interpolated(start: int) -> int:
+        # An interpolated string from its opening quote: its text is blanked, its embedded terms are code.
+        i = segment = start + 1
+        out.append(" ")
+        while i < n:
+            c = text[i]
+            if c == "\\":
+                i += 2
+            elif c == '"':
+                out.append(_blank(text[segment:i + 1]))
+                return i + 1
+            elif c == "{":
+                out.append(_blank(text[segment:i]) + "{")
+                i = segment = code(i + 1, True)
+            else:
+                i += 1
+        out.append(_blank(text[segment:n]))
+        return n
+
+    code(0, False)
+    return "".join(out)
+
+
 def without_comments(text: str) -> str:
-    return re.sub(r"--[^\n]*", "", re.sub(r"/-.*?-/", " ", text, flags=re.S))
+    """The Lean source without its comments and literals (blanked, so that no two tokens join)."""
+    return code_only(text)
+
+
+def code_lines(lines: list[str]) -> list[str]:
+    """The lines with every comment and literal blanked out (see code_only), keeping their number and columns."""
+    return code_only("\n".join(lines)).split("\n")
+
+
+def attribute_opening(lines: list[str], end: int) -> int | None:
+    """The line where the attribute `@[...]` that closes on line `end` opens, when it spans several lines.
+
+    A multi-line attribute, such as `@[to_additive` followed by the additive declaration's own docstring and
+    a closing `]`, sits between a declaration and its docstring. Its brackets balance only at its first line,
+    which starts with `@[`; a line whose brackets balance without that start ends something else.
+    """
+    if not lines[end].rstrip().endswith("]"):
+        return None
+    depth = 0
+    for start in range(end, -1, -1):
+        depth += lines[start].count("]") - lines[start].count("[")
+        if depth <= 0:
+            return start if depth == 0 and lines[start].lstrip().startswith("@[") else None
+    return None
 
 
 def docstring_before(lines: list[str], number: int) -> str | None:
@@ -200,8 +390,14 @@ def docstring_before(lines: list[str], number: int) -> str | None:
     not run past it to an earlier docstring.
     """
     end = number - 1
-    while end >= 0 and (not lines[end].strip() or lines[end].lstrip().startswith("@[")):
-        end -= 1
+    while end >= 0:
+        if not lines[end].strip() or lines[end].lstrip().startswith("@["):
+            end -= 1
+            continue
+        opening = attribute_opening(lines, end)
+        if opening is None:
+            break
+        end = opening - 1
     if end < 0 or not lines[end].rstrip().endswith("-/"):
         return None
     depth = 0
@@ -273,6 +469,87 @@ def first_words(text: str, limit: int = 60) -> str:
     return sentence if len(sentence) <= limit else sentence[:limit].rsplit(" ", 1)[0] + "..."
 
 
+_MODULE_HEADER = re.compile(r"^\s*module\s*$")
+_SCOPE = re.compile(
+    r"^\s*(?:@\[[^\]]*\]\s*)*(?P<mods>(?:(?:public|private|noncomputable|meta)\s+)*)(?P<kind>section|namespace|mutual|end)\b"
+    r"[ \t]*(?P<name>(?:«[^»\n]*»|[^\s«])*)")
+
+
+def name_components(name: str) -> list[str] | None:
+    """The components of a dotted Lean name, a quoted one («…») kept whole with its quotes; None if a quote is
+    left open."""
+    components, current, quoted = [], "", False
+    for char in name:
+        if char == "«":
+            quoted = True
+        elif char == "»":
+            quoted = False
+        if char == "." and not quoted:
+            components.append(current)
+            current = ""
+        else:
+            current += char
+    components.append(current)
+    return None if quoted else components
+
+
+def scope_states(lines: list[str]) -> list[tuple[tuple[str, ...], bool]] | None:
+    """For each line, the namespace in force (its components) and whether the innermost scope is public, that
+    is, a `public section` or inside one (a nested `section`, `namespace` or `mutual` keeps the visibility around
+    it). As in Lean, a dotted name opens or closes one scope per component: `namespace A.B` opens two, which
+    `end B` and `end A`, or `end A.B`, close; only namespaces add to names.
+
+    A quoted component («Auxiliary.Scope») counts as one. None when the scopes do not balance (an `end` with
+    nothing to close) or a quote is left open; module_private_lines then fails open."""
+    scopes: list[tuple[str | None, bool]] = []  # each open scope: its namespace component (None if none), public
+    states: list[tuple[tuple[str, ...], bool]] = []
+    for line in code_lines(lines):
+        scope = _SCOPE.match(line)
+        if scope:
+            kind, name = scope.group("kind"), scope.group("name")
+            components = name_components(name) if name and kind != "mutual" else [""]
+            if components is None or line[scope.end():].startswith("«"):  # a quote left open
+                return None
+            if kind == "end":
+                if len(scopes) < len(components):
+                    return None
+                del scopes[len(scopes) - len(components):]
+            else:
+                inherited = scopes[-1][1] if scopes else False
+                public = inherited or (kind == "section" and "public" in scope.group("mods").split())
+                scopes.extend((component if kind == "namespace" else None, public) for component in components)
+        states.append((tuple(component for component, _ in scopes if component is not None), bool(scopes and scopes[-1][1])))
+    return states
+
+
+def module_private_lines(lines: list[str]) -> frozenset[int]:
+    """The (0-based) lines where a declaration is private by module visibility: in a file that opens with
+    `module`, outside every `public section` (see scope_states). A declaration written `public` or `private`
+    says so itself.
+
+    It fails open: in a file that is no module, or whose scopes scope_states cannot follow, no line is private,
+    so a misread keeps a declaration rather than losing it.
+    """
+    code = code_lines(lines)
+    first = next((line for line in code if line.strip()), "")
+    if not _MODULE_HEADER.match(first):
+        return frozenset()
+    states = scope_states(lines)
+    if states is None:
+        return frozenset()
+    return frozenset(number for number, (_, public) in enumerate(states) if not public)
+
+
+def visible(match: re.Match, number: int, module_private: frozenset[int]) -> bool:
+    """Whether a declaration line declares something public: neither written `private` nor private by module
+    visibility (see module_private_lines). A wanted command is always kept: Batteries makes each one a private
+    placeholder anyway, so its visibility says nothing about the statement it asks for."""
+    mods = match.group("mods").split()
+    if "private" in mods:
+        return False
+    return "public" in mods or match.group("kw") in WANTED or number not in module_private
+
+
 def section_labels(lines: list[str]) -> list[tuple[str, str, str]]:
     """The doc heading, named section and namespace in force at each line.
 
@@ -324,6 +601,46 @@ def module_groups(items: list[Target]) -> list[str] | None:
     return None
 
 
+def declaration_head(code: list[str], number: int):
+    """The declaration match of code line *number*, or None. A head that stops after its keyword, its name on the
+    next line (`public theorem_wanted` and then `foo : ...`), is read with that line joined to it."""
+    match = V2_DECLARATION.match(code[number])
+    if match is None or match.group("name") or code[number][match.end():].strip():
+        return match
+    following = next((line for line in code[number + 1:] if line.strip()), "")
+    return V2_DECLARATION.match(code[number].rstrip() + " " + following.strip())
+
+
+def declaration_heads(lines: list[str]):
+    """(line number, match) for every declaration head in the source, at any indentation, read with comments and
+    literals blanked out and with names continued on the next line (see declaration_head)."""
+    code = code_lines(lines)
+    for number in range(len(code)):
+        match = declaration_head(code, number)
+        if match:
+            yield number, match
+
+
+def declaration_lines(lines: list[str], indexed: frozenset[int] | set[int] = frozenset()):
+    """(line number, match) for each declaration line: unindented, indented inside a `mutual` block, or indented
+    on a line where the Lean index found a declaration (`indexed` holds 1-based line numbers), as under
+    `open ... in` or in an indented section. Lines are read with their comments and literals blanked out, so
+    text in a comment, docstring or string never counts, nor opens or closes a `mutual` block."""
+    in_mutual = False
+    code = code_lines(lines)
+    for number, line in enumerate(code):
+        stripped = line.strip()
+        if stripped == "mutual":
+            in_mutual = True
+            continue
+        if in_mutual and stripped == "end":
+            in_mutual = False
+            continue
+        match = declaration_head(code, number)
+        if match and (in_mutual or not line[:1].isspace() or number + 1 in indexed):
+            yield number, match
+
+
 def module_heading(text: str) -> str:
     """The `# ` heading of a module's docstring, or "" if it has none."""
     heading = re.search(r"/-!\s*#[ \t]+([^\n]+)", text)
@@ -338,8 +655,11 @@ def load_library(library: str, index, taxonomy: dict, titles: dict | None = None
         for declaration in index.declarations.values()
         if declaration.path.parts[:1] == (library,)
     }
+    indexed_lines: dict[Path, set[int]] = defaultdict(set)
+    for path, line in located:
+        indexed_lines[path].add(line)
     targets: list[Target] = []
-    summary = {"public": 0, "documented": 0, "instances": 0, "subjects": set()}
+    summary = {"public": 0, "documented": 0, "instances": 0, "subjects": set(), "unsubjected": [], "unindexed": []}
     named_by_docstring: set[int] = set()
     used_titles: dict[Path, set[str]] = defaultdict(set)
     for path in sorted((ROOT / library).rglob("*.lean")):
@@ -350,10 +670,27 @@ def load_library(library: str, index, taxonomy: dict, titles: dict | None = None
         module = relative.with_suffix("").parts
         module_title = module_heading(text)
         placed = placement(module, taxonomy["placements"])
+        subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library].get(module[1], module[1])
+        if subject not in taxonomy["subjects"]:
+            # A folder upstream just added waits for a subject; its modules get no pages until then, but the coverage
+            # counts their declarations like any other.
+            summary["unsubjected"].append(relative.as_posix())
+            module_private = module_private_lines(lines)
+            for number, match in declaration_lines(lines, indexed_lines[relative]):
+                if not visible(match, number, module_private):
+                    continue
+                summary["public"] += 1
+                if match.group("kw") == "instance":
+                    summary["instances"] += 1
+                elif docstring_before(lines, number) is not None:
+                    summary["documented"] += 1
+            continue
         labels = section_labels(lines)
-        for number, line in enumerate(lines):
-            match = V2_DECLARATION.match(line)
-            if not match or "private" in match.group("mods"):
+        module_private = module_private_lines(lines)
+        for number, match in declaration_lines(lines, indexed_lines[relative]):
+            # A private declaration, written so or private by module visibility, gets no page and no count; a
+            # page an editor already gave one keeps it, since its declaration still exists.
+            if not visible(match, number, module_private):
                 continue
             summary["public"] += 1
             if match.group("kw") == "instance":
@@ -363,11 +700,15 @@ def load_library(library: str, index, taxonomy: dict, titles: dict | None = None
             if doc is None:
                 continue
             summary["documented"] += 1
-            keyword, short = match.group("kw"), match.group("name").split(".")[-1]
+            keyword, written = match.group("kw"), match.group("name")
+            short = written.split(".")[-1]
             found = located.get((relative, number + 1))
             if found is None:
-                declaration, lean, statement, proof = WANTED.get(keyword, keyword), None, False, False
-            elif found.keyword in WANTED:
+                # The Lean index lacks it (a name declared in two modules, which the index leaves unselected): no
+                # page under a name reconstructed from the source; the declarations sync reports it for an editor.
+                summary["unindexed"].append(f"{relative.as_posix()}:{number + 1} {written}")
+                continue
+            if found.keyword in WANTED:
                 # Stated without a proof. A wanted definition stays unstated,
                 # because Autoform counts a stated definition as defined.
                 declaration, lean = WANTED[found.keyword], found.name
@@ -391,9 +732,6 @@ def load_library(library: str, index, taxonomy: dict, titles: dict | None = None
                         named_by_docstring.add(len(targets))
                         break
             used_titles[relative].add(title.casefold())
-            subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library].get(module[1], module[1])
-            if subject not in taxonomy["subjects"]:
-                raise SystemExit(f"{relative}: no subject for directory {module[1]}")
             summary["subjects"].add(subject)
             body = "\n".join(
                 "\\" + row if row.lstrip().startswith("#") else row
@@ -411,11 +749,12 @@ def load_library(library: str, index, taxonomy: dict, titles: dict | None = None
                     lean=lean,
                     statement=statement,
                     proof=proof,
-                    names=[lean or short],
+                    names=[lean],
                     citations=citations,
                     module=module,
                     module_title=module_title,
                     sections=labels[number],
+                    line=number + 1,
                 )
             )
     # A module with one article is usually named after its result: the taxonomy's title for it, if it has one.
@@ -662,12 +1001,9 @@ def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Contain
 def link_v2(targets: list[Target], dependencies: dict) -> None:
     """Add Lean dependency edges between v2 articles from sources/v2/lean-dependencies.json."""
     by_name = {target.lean: target for target in targets if target.lean}
-    # Wanted entries have no `lean:` link; match them by module and short name.
-    by_short = {(".".join(target.module), target.names[0]): target for target in targets if not target.lean}
 
     def find(name: str) -> Target | None:
-        module = dependencies.get(name, {}).get("module", "")
-        return by_name.get(name) or by_short.get((module, name.split(".")[-1]))
+        return by_name.get(name)
 
     for name, entry in dependencies.items():
         target = find(name)
@@ -834,10 +1170,13 @@ def render_coverage(rows: list[tuple[str, str, str]]) -> str:
         "",
         "# ATLAS coverage",
         "",
-        "Every documented public declaration of the ATLAS v2 libraries has one roadmap",
-        "article. The standalone `Atlas/` developments are not decomposed yet, and the",
-        "archived v1 release is not part of the wiki. Progress percentages and target counts",
-        "cover only the decomposed rows below; they are not repository-wide coverage.",
+        "Each documented public declaration of the ATLAS v2 libraries, instances aside, gets one",
+        "roadmap article, which `scripts/sync_wiki.py declarations` writes from its docstring; a",
+        "declaration the Lean index does not select waits for an editor. The counts below are of",
+        "documented non-instance declarations, so they include any whose article that sync has",
+        "yet to write. The standalone `Atlas/` developments are not decomposed yet,",
+        "and the archived v1 release is not part of the wiki. Progress percentages and target",
+        "counts cover only the decomposed rows below; they are not repository-wide coverage.",
         "",
         "| Area | Coverage | Evidence |",
         "| --- | --- | --- |",
@@ -929,10 +1268,12 @@ def pages_by_lean() -> dict[str, Path]:
     return {key: next(iter(paths)) for key, paths in found.items() if len(paths) == 1}
 
 
-def generate(titles: dict | None = None, dependency_file: Path | None = None, rendered: list | None = None, index=None) -> dict[Path, str]:
+def generate(titles: dict | None = None, dependency_file: Path | None = None, rendered: list | None = None, index=None,
+             unindexed: list | None = None) -> dict[Path, str]:
     """Every page, by path, with blueprint/pages.json; ``titles`` as load_library takes them, and the Lean
     dependency edges from ``dependency_file`` (default sources/v2/lean-dependencies.json) when it exists.
-    Every article's Target is added to ``rendered`` when given; ``index`` is the project's, when already built."""
+    Every article's Target is added to ``rendered`` when given, and each documented declaration the Lean index
+    lacks, as `path:line name`, to ``unindexed``; ``index`` is the project's, when already built."""
     # The archived v1 release and the standalone code under Atlas/ are not part of
     # the wiki, and both declare many v2 names again. Autoform selects neither
     # declaration of a name declared twice, so indexing them would leave those
@@ -956,6 +1297,13 @@ def generate(titles: dict | None = None, dependency_file: Path | None = None, re
     if unplaced:
         print(f"note: {len(unplaced)} modules have no place in {TAXONOMY.relative_to(ROOT)} yet, so their subjects list them "
               f"as not yet classified: {', '.join(unplaced[:5])}{', ...' if len(unplaced) > 5 else ''}", file=sys.stderr)
+    unsubjected = sorted(path for _, summary in v2_loaded.values() for path in summary["unsubjected"])
+    if unsubjected:
+        print(f"note: {len(unsubjected)} modules are in folders with no subject in {TAXONOMY.relative_to(ROOT)} or "
+              f"generate_wiki.LIBRARIES, so they get no pages yet: {', '.join(unsubjected[:5])}"
+              f"{', ...' if len(unsubjected) > 5 else ''}", file=sys.stderr)
+    if unindexed is not None:
+        unindexed.extend(sorted(entry for _, summary in v2_loaded.values() for entry in summary["unindexed"]))
     # Dependencies come first: they order the topics.
     dependency_file = dependency_file or SOURCES / "v2" / "lean-dependencies.json"
     dependency_data = None
@@ -987,9 +1335,9 @@ def generate(titles: dict | None = None, dependency_file: Path | None = None, re
             (
                 f"v2 / {library}",
                 "DECOMPOSED",
-                f"[{summary['documented']} documented public declarations](../roadmap/README.md) "
+                f"[{summary['documented']} documented public non-instance declarations](../roadmap/README.md) "
                 f"across {len(summary['subjects'])} subjects; {summary['instances']} instances and "
-                f"{summary['public'] - summary['instances'] - summary['documented']} undocumented public "
+                f"{summary['public'] - summary['instances'] - summary['documented']} undocumented public non-instance "
                 "declarations are not articles.",
             )
         )

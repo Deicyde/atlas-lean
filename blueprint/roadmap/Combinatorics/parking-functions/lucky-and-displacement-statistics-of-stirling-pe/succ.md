@@ -7,4 +7,4 @@ The hypothesis $n \ge 1$ is added: the empty set is $0$-admissible but not $1$-a
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Theorem 3.3 (`jis-2024-24.6.7-thm-23`).
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Theorem 23.

@@ -1,5 +1,5 @@
 # Normalized imputed statistic
 
-For any weights `w` with `wᵀ Σ_oo w > 0` (for example the
-ridge weights solving `(Σ_oo + λ I) w = Σ_ot`), the statistic `ẑ / √(wᵀ Σ_oo w)` has second
-moment `1`, so it has unit variance under the centred null.
+In a [second-moment imputation model](model.md) on a measure $P$ with a finite set $\iota$ of typed markers, let $w \in \mathbb{R}^\iota$ be any weights with $w^\top \Sigma_{oo} w > 0$ (for example the ridge weights solving $(\Sigma_{oo} + \lambda \mathrm{I}) w = \Sigma_{ot}$). Then the [imputed statistic](imputed.md) $\hat z = w^\top z_o$ satisfies
+
+$$\int \Bigl(\frac{\hat z}{\sqrt{w^\top \Sigma_{oo} w}}\Bigr)^2 dP = 1.$$

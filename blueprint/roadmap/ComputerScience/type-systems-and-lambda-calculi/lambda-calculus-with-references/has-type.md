@@ -11,3 +11,7 @@ and $t_2 : T_1$, then $t_1\, t_2 : T_2$. The term $\mathtt{unit}$ has type $\mat
 location $l$ has type $\mathrm{Ref}\, T$ if $S$ assigns $T$ to $l$. If $t : T$, then
 $\mathrm{ref}\, t : \mathrm{Ref}\, T$. If $t : \mathrm{Ref}\, T$, then $!t : T$. If
 $t_1 : \mathrm{Ref}\, T$ and $t_2 : T$, then $t_1 := t_2$ has type $\mathrm{Unit}$.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Figure 13-1.

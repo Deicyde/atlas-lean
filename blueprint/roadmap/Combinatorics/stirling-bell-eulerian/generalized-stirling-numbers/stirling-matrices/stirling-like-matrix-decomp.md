@@ -15,4 +15,4 @@ $S_\alpha(n) = V(n) \, R_\alpha(n)$.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Theorem 3.
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Journal of Integer Sequences 27 (2024), Article 24.5.3, Theorem 3.

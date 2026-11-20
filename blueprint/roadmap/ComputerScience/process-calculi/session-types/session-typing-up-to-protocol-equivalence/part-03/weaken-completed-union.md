@@ -1,4 +1,6 @@
 # Weakening conversion typing by a disjoint completed context
 
-A disjoint completed context can be reattached to any typed process,
-with the exact finite-map union required by parallel-nil congruence.
+Let $n$ be a natural number, $\Delta$, $\Theta$ ownership contexts with disjoint domains such that
+every capability of $\Theta$ has head $\mathrm{end}$ and every endpoint of $\Theta$ has a name
+scoped at depth $n$, and $p$ a process. If $\Delta \vdash^{\simeq}_n p$, then $\Delta \cup \Theta
+\vdash^{\simeq}_n p$.

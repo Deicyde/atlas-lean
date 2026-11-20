@@ -33,4 +33,4 @@ and the third is the shift of $p$.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Definition 5 (with `c, d, c₁, d₁` from Definition 4).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Definition 5 (with $c$, $d$, $c_1$, $d_1$ from Definition 4).

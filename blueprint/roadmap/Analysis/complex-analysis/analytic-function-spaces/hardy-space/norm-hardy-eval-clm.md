@@ -1,3 +1,3 @@
 # Norm of Hardy-space point evaluation
 
-The operator norm of point evaluation is `1 / √(1 - ‖z‖²)`.
+For every $z \in \mathbb{C}$ with $|z| < 1$, the [point-evaluation functional](hardy-eval-clm.md) at $z$ has operator norm $1/\sqrt{1 - |z|^2}$.

@@ -10,10 +10,12 @@ $r \ne 0$ with norm $\mathrm{Nm}(r) \ne 1$, $ar \in \mathcal{G}$ and $q = ar^2$ 
 the norm characterizes the quaternion greedy set). Then $\mathcal{G}$ contains every Hurwitz
 quaternion whose norm is a squarefree natural number, and
 
-$$\liminf_{N \to \infty} \frac{|\mathcal{G} \cap S(N)|}{|S(N)|} \ge \frac{60}{7 \pi^2 \zeta(3)},$$
+$$
+\liminf_{N \to \infty} \frac{|\mathcal{G} \cap S(N)|}{|S(N)|} \ge \frac{60}{7 \pi^2 \zeta(3)},
+$$
 
 where $\zeta(3) = \sum_{n \ge 1} n^{-3}$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 17.
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Proposition 17.

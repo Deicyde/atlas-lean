@@ -8,8 +8,8 @@ the integers $c$ with $1 \le c < n$, $\gcd(c, n) = 1$ and multiplicative order $
 let column $s$ be the multiset of the digits $\lfloor c^{s+1}/n \rfloor \bmod c$ over these rows.
 Then columns $d$ and $e$ are equal.
 
-Theorem 6 of the source also says when the digit difference between these columns is $0$; that
-clause is not stated here.
+Theorem 6 of the source also describes when the digit difference between these columns is $0$;
+that is a separate statement.
 
 ## Sources
 

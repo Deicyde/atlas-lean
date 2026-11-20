@@ -26,7 +26,7 @@
 - [The multispecies coalescent](gene-tree-prob.md)
 - [Root branch length does not affect gene-tree probabilities](gene-tree-prob-node-length.md)
 - [Exit law of a constant continuation](exit-law-eq-const.md)
-- [Normalization](gene-tree-prob-true.md)
+- [Normalization of gene-tree probabilities](gene-tree-prob-true.md)
 - [Total gene-tree probability is one](gene-tree-prob-eq-one.md)
 - [Nonnegativity of the exit law](exit-law-nonneg.md)
 - [Gene-tree probabilities are nonnegative](gene-tree-prob-nonneg.md)
@@ -37,7 +37,7 @@
 - [Rational-valued expectation under random joining](integral-random-joining-rat-cast.md)
 - [Random-joining probability as a fraction of ranked histories](random-joining-real.md)
 - [Additivity of the exit law](exit-law-add.md)
-- [Additivity](gene-tree-prob-or.md)
+- [Additivity of gene-tree probabilities](gene-tree-prob-or.md)
 - [Gene-tree probabilities are at most one](gene-tree-prob-le-one.md)
 
 ## Tavaré's formula for two and three lineages
@@ -76,7 +76,7 @@
 - [Boundary of the four-species anomaly zone](anomaly-a.md)
 - [Boundary for three anomalous gene trees](anomaly-b.md)
 - [$g(x, y) < h(x, y)$ for a positive shallower branch](dr-g-lt-dr-h.md)
-- [The boundary `a(x)` of the anomaly zone](dr-f-lt-dr-h-iff.md)
+- [The boundary $a(x)$ of the anomaly zone](dr-f-lt-dr-h-iff.md)
 - [Degnan–Rosenberg criterion: $f(x, y) < g(x, y)$ iff $y < b(x)$](dr-f-lt-dr-g-iff.md)
 - [Value $\log(7/6)$ of the three-anomaly boundary at zero](anomaly-b-zero.md)
 - [Three-anomaly boundary is maximal at zero](anomaly-b-le-anomaly-b-zero.md)

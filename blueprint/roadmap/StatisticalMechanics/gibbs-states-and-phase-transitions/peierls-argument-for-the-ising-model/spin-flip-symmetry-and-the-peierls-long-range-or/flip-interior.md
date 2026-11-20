@@ -1,3 +1,4 @@
 # Spin flip inside the box
 
-The spin flip of a configuration inside the box `Λ_n`.
+For $d, n \in \mathbb{N}$ and spins $\tau$ on the box $\Lambda_n$, this is the spin assignment $-\tau$ on
+$\Lambda_n$.

@@ -14,7 +14,7 @@
 - [An alternating binomial sum vanishes](alternating-choose-two-pow-mul-pow-eq-ze.md)
 - [Dirichlet series of the square of the mean gcd-sum function](lseries-gcd-sum-mean-sq-eq-riemann-zeta.md)
 - [Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$](riemann-zeta-eighth-moment-five-eighths.md)
-- [Lemma 3](riemann-zeta-twelfth-moment-asymptotic.md)
+- [Twelfth-moment asymptotic for the Riemann zeta function](riemann-zeta-twelfth-moment-asymptotic.md)
 - [A weighted fourth-moment bound for $\zeta$ on the critical line](riemann-zeta-fourth-moment-div-le.md)
 - [Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height](exists-riemann-zeta-norm-le-exp-loglog-s.md)
 - [Mean square of the error term for gcd-sum moments under RH](gcd-sum-mean-pow-error-sq-integral-le.md)

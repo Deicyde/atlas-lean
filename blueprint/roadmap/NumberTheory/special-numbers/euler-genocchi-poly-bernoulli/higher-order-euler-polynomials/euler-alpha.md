@@ -1,4 +1,4 @@
-# Taylor coefficients of (2 + 2z)/(2 + 2z + z²)
+# Taylor coefficients of $(2 + 2z)/(2 + 2z + z^2)$
 
 The rational numbers $\alpha_k$,
 $k \ge 0$, are defined by $\alpha_0 = 1$, $\alpha_1 = 0$ and
@@ -7,4 +7,4 @@ coefficients of $(2 + 2z)/(2 + 2z + z^2)$ at $z = 0$.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Lemma 2.2 (generating function).
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Lemma 2.2 (generating function).

@@ -8,4 +8,4 @@ the same multiset, then $\lambda = \mu$.
 
 ## Sources
 
-- Stella Jiahui Li, "A Note on Multiset Reconstruction from Pairwise Products and Total Sum", Lemma 1.
+- Stella Jiahui Li, "A Note on Multiset Reconstruction from Pairwise Products and Total Sum", INTEGERS 26 (2026), Article A16, Lemma 1.

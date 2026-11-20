@@ -5,4 +5,4 @@
 - [The emulation visits finitely many states](tr-supports.md)
 - [Every statement is supported by all labels](supports-stmt-univ.md)
 - [A multi-stack machine is supported by all its labels](supports-univ.md)
-- [The initial configuration of a bundled multi-stack machine](init-list-eq-init.md)
+- [The initial configuration of a finite multi-stack machine is the generic one](init-list-eq-init.md)

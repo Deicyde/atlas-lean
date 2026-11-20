@@ -1,3 +1,3 @@
 # Left copy in the doubled ground set
 
-The left copy `{inl a}` of `α` in `α ⊕ α`.
+Let $\alpha$ be a set. The left copy of $\alpha$ in $\alpha \sqcup \alpha$ is the set $\{a^L : a \in \alpha\}$.

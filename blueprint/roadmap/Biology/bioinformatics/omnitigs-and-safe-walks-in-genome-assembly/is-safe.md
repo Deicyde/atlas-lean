@@ -1,3 +1,3 @@
 # Safe walk in a multigraph
 
-Safe walk: a subwalk of every circular edge-covering walk.
+A sequence of edges $w$ is safe if it is a [subwalk](is-circular-subwalk.md) of every [circular edge-covering walk](is-circular-covering.md). If there is no circular edge-covering walk, every sequence is safe.

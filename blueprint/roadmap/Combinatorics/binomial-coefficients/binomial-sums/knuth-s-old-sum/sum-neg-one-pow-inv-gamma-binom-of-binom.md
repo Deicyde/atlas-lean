@@ -18,7 +18,7 @@ This is the paper's equation (34) corrected. The paper prints the last binomial 
 $\binom{u-q(k)+1}{v+1}$; that is false (for the identity $1 = 1$, that is $f = g = 1$ and
 $p = q = 0$, at $u = v = 1$ the left side is $1/2$ and the printed right side $3/2$), and the
 paper's own proof (integration against $(1-x)^v$ with the Beta integral) gives the reading
-stated here, which agrees with the printed one at $v = 0$.
+stated above, which agrees with the printed one at $v = 0$.
 
 ## Sources
 

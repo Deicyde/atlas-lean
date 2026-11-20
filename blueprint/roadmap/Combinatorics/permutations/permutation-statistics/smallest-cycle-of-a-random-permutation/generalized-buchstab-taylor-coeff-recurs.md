@@ -9,8 +9,6 @@ $\Omega(n + (1+z)/2)$. Then $c_{1,0} = 1$, $c_{1,i} = 0$ for every $i \ge 1$,
 
 $$c_{2,0} = 1 + K \sum_{i \ge 0} \frac{(-1)^i}{(i+1)\,2^{i+1}},$$
 
-
-
 $$c_{2,i} = K \sum_{j \ge 0} \frac{(-1)^{j+i-1} \binom{j+i}{i}}{(j+i)\,2^{j+i}} \quad (i \ge 1),$$
 
 and for every $n \ge 3$, writing

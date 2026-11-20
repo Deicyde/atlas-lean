@@ -11,4 +11,4 @@ with the unary encoding that bound could not hold.
 
 ## Sources
 
-- Lean variant; this replaces the upstream unary encoding `Computability.encodeNat`.
+- Adapted from the AnnalsChallenge statement of Harvey and van der Hoeven's theorem (https://github.com/ImperialCollegeLondon/AnnalsChallenge, v1.0.0, commit e32eb14), which encodes natural numbers in unary with `Computability.encodeNat`; this binary encoding replaces it.

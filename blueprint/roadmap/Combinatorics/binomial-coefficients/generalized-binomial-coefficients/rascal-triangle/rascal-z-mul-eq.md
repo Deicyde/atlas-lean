@@ -9,4 +9,4 @@ $R_{n,k} = (R_{n-u,k} R_{n-\ell,k-\ell} + u\ell) / R_{n-u-\ell,k-\ell}$ cleared 
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Theorem 5.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Theorem 5, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

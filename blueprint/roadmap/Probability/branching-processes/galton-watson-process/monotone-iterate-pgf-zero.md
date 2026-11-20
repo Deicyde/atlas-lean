@@ -1,3 +1,5 @@
 # Iterates of the generating function at zero are nondecreasing
 
-The iterates `f^[n]&#40;0)` of the offspring generating function are non-decreasing.
+Let $\nu$ be a probability measure on $\mathbb{N}$ with generating function
+$f(s) = \sum_{k \ge 0} \nu(\{k\})\, s^k$. Then the sequence $n \mapsto f^{\circ n}(0)$ is
+nondecreasing.

@@ -12,4 +12,4 @@ No prior, kernel or optimality criterion enters.
 
 ## Sources
 
-- Casella–Berger equation 7.3.16; the integrability hypothesis is the expectation domain of Chapter 2 Definition 2.2.1. Blueprint `af_36871388da7326a07a5e4f71`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, §7.3.4, equation (7.3.16); the integrability hypothesis is the expectation domain of Chapter 2 Definition 2.2.1.

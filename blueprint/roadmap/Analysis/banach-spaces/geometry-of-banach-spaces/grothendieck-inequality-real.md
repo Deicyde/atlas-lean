@@ -9,4 +9,4 @@ K \bigl|\sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} \varepsilon_i \delta_j\bigr|$.
 
 ## Sources
 
-- A. Grothendieck, Resume de la theorie metrique des produits tensoriels topologiques, Bol. Soc. Mat. Sao Paulo 8 (1953) 1-79, inequality; Pisier, Grothendieck's theorem past and present, 2012; Lean states real finite-matrix scalarized form with `Fin`-indexed unit vectors and `±1` signs, existential universal constant `K`.
+- A. Grothendieck, Resume de la theorie metrique des produits tensoriels topologiques, Bol. Soc. Mat. Sao Paulo 8 (1953) 1-79, inequality; Pisier, Grothendieck's theorem past and present, 2012. The statement here is the real finite-matrix form, with finitely many unit vectors, signs $\pm 1$ and a universal constant $K$.

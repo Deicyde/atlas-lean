@@ -1,3 +1,3 @@
 # Positivity of the Duminil-Copin–Tassion threshold
 
-`p̃_c(d) > 0` for `d ≥ 1`: at `p = 1/(4d + 1)`, `φ_p({0}) ≤ 2dp < 1`.
+For $d \ge 1$, the [Duminil-Copin–Tassion threshold](../the-duminil-copin-tassion-quantity-p-s-and-the-t/tilde-pc.md) satisfies $\tilde p_c(d) > 0$: at $p = 1/(4d + 1)$, $\varphi_p(\{0\}) \le 2dp < 1$.

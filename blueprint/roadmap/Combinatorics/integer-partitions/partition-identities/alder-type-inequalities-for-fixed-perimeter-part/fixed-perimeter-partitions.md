@@ -5,10 +5,10 @@ number of parts minus $1$. For a natural number $n$, the partitions with perimet
 finite set of all finite multisets $s$ of positive integers whose largest element plus number of
 elements (counted with multiplicity) equals $n + 1$.
 
-The set is enumerated directly: for each number of parts $k = 1, \dots, n$ the largest part is
-$n + 1 - k$, and it is prepended to a multiset of $k - 1$ parts from $1, \dots, n + 1 - k$, so the
-$2^{n-1}$ partitions with perimeter $n$ (for $n \ge 1$) are listed without filtering or
-deduplication.
+Equivalently, such a partition is determined by its number of parts $k \in \{1, \dots, n\}$,
+its largest part $n + 1 - k$ and the multiset of its remaining $k - 1$ parts, taken from
+$\{1, \dots, n + 1 - k\}$. Hence there are $2^{n-1}$ partitions with perimeter $n$ for $n \ge 1$,
+and none for $n = 0$.
 
 ## Sources
 

@@ -6,4 +6,4 @@ $\alpha \ge 3$ and $n$, $b_{4,9}(2^\alpha n + 6 \cdot 2^{\alpha - 3} + 1) \equiv
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 3 (`jis-2025-25.6.1-thm-3`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 3 (`jis-2025-25.6.1-thm-3`).

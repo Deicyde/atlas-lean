@@ -7,4 +7,4 @@ equals $3^j$, $2 \cdot 3^j$, $3^i + 3^j$ or $2 \cdot 3^i + 3^j$.
 
 ## Sources
 
-- Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 10 (`jis-2025-25.3.8-thm-10`), citing Hajdu, Tijdeman, and Varga.
+- Wieb Bosma, René Bruin, Robbert Fokkink, Jonathan Grube, Anniek Reuijl and Thian Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 10 (`jis-2025-25.3.8-thm-10`), citing Hajdu, Tijdeman, and Varga, https://cs.uwaterloo.ca/journals/JIS/VOL28/Fokkink/fokkink9.html

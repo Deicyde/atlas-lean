@@ -1,5 +1,12 @@
 # Jump matrix of a rate matrix
 
-The **jump matrix** `Π` of a matrix `Q` (Norris 1997, §2.6): for a state with exit rate
-`q i = -Q i i ≠ 0`, `Π i j = Q i j / q i` for `j ≠ i` and `Π i i = 0`; a state with `q i = 0`
-is absorbing, `Π i j = δ i j`.
+Let $Q$ be a real square matrix indexed by a finite set $S$, with exit rates $q(i) = -Q(i, i)$. Its
+jump matrix $\Pi$ is
+
+$$\Pi(i, j) = \begin{cases} [i = j] & \text{if } q(i) = 0, \\ 0 & \text{if } q(i) \ne 0 \text{ and } j = i, \\ Q(i, j)/q(i) & \text{if } q(i) \ne 0 \text{ and } j \ne i : \end{cases}$$
+
+a state with $q(i) = 0$ is absorbing.
+
+## Sources
+
+- J. R. Norris, *Markov Chains*, Cambridge Series in Statistical and Probabilistic Mathematics 2, Cambridge University Press, 1997, Section 2.6.

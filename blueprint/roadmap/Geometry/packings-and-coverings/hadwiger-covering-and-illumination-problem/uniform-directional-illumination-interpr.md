@@ -9,4 +9,4 @@ $x + t v_i$ in the interior of $K$.
 
 ## Sources
 
-- Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction; follows from the finite-count equivalence, whose Lean proof is also requested here.
+- Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction; it follows from the equivalence of the two formulations for each finite count.

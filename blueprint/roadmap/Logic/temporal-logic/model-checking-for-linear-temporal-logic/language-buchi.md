@@ -1,3 +1,4 @@
 # Büchi automaton language equals the LTL formula language
 
-Every LTL formula has precisely its existing language as a Büchi language.
+The language of the Büchi automaton of an LTL formula $\varphi$ is exactly the set of infinite
+words that satisfy $\varphi$.

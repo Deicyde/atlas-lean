@@ -1,6 +1,3 @@
 # Normalized count of read start tuples
 
-The totalized normalized count `|E| / G ^ N` of a set of start tuples.
-For `0 < G`, this is the probability when the `N` start positions are independent and uniform
-on `Fin G`. If `G = 0` and `N > 0`, the sample space is empty and this value is zero, so it is
-not a probability law. For `N = 0`, there is one empty start tuple, even when `G = 0`.
+For a set $E$ of start tuples $(s_1, \dots, s_N) \in \{0, \dots, G-1\}^N$, the normalized count is $|E| / G^N$, with the convention $x/0 = 0$. For $G > 0$ it is the probability of $E$ when the $N$ start positions are independent and uniform; for $G = 0$ and $N > 0$ there are no tuples and the value is $0$; for $N = 0$ there is one empty tuple.

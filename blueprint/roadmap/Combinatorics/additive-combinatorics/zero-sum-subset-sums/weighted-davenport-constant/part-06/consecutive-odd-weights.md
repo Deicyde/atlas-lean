@@ -9,4 +9,4 @@ $a_s, \dots, a_t \in A$ with $a_s x_s + \dots + a_t x_t = 0$. Then $C_A(n) = 2^r
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.2.
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of $\mathbb{Z}_n$*, INTEGERS 24 (2024), Article A38, Theorem 7.2.

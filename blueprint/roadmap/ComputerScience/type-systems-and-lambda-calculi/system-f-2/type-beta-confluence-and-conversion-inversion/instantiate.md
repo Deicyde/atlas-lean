@@ -1,3 +1,6 @@
 # Parallel type-beta reduction is stable under instantiation
 
-Parallel reduction respects discharging a binder and reducing its image.
+Let $B, C \in \mathrm{Ty}^{\kappa}_{\mu \cdot \Delta}$ and $A, A' \in \mathrm{Ty}^{\mu}_{\Delta}$
+with $B \Rrightarrow C$ and $A \Rrightarrow A'$ ([parallel type β-reduction](par.md)). Then $B[A]
+\Rrightarrow C[A']$
+([instantiation](../intrinsically-kinded-type-operators-for-pure-f/instantiate.md)).

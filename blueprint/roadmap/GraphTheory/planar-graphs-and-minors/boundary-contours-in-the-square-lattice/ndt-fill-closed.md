@@ -1,3 +1,6 @@
 # Closure under the diagonal fill rules
 
-`S` is closed under the two diagonal fill rules of `StatMech.Lattice.ndt_StarHullMem`.
+A set $S \subseteq \mathbb{Z}^2$ is closed under the diagonal fill rules when, for every $(a, b) \in \mathbb{Z}^2$:
+
+- if $(a, b) \in S$ and $(a+1, b+1) \in S$, then $(a+1, b) \in S$; and
+- if $(a+1, b) \in S$ and $(a, b+1) \in S$, then $(a, b) \in S$.

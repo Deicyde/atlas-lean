@@ -1,4 +1,3 @@
 # Anti-diagonal slice is symmetric
 
-A slice is symmetric for the inner product: the anti-diagonal symmetry
-is a finite-sum reflection.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. For every $k \in \mathbb{N}$ and $x, y \in \ell^2(\mathbb{N}, \mathbb{K})$, the [anti-diagonal slice operator](hankel-slice.md) satisfies $\langle \eta_k x, y \rangle = \langle x, \eta_k y \rangle$: both sides are the same finite sum, reindexed by the reflection $i \mapsto k - i$.

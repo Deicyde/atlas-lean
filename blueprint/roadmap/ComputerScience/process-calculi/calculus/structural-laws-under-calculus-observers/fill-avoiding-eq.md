@@ -1,4 +1,3 @@
 # Capture-avoiding and lexical filling agree on locally closed holes
 
-Lexical and capture-avoiding filling agree for locally closed holes.
-This is the explicit admissibility condition for the contextual theorem.
+If a process $P$ is [scoped at depth $0$](../scope-preservation-for-calculus-names-and-proces/closed-at-2.md), then for every [context](context.md) $C$ the [capture-avoiding filling](fill-avoiding.md) of $C$ with $P$ equals the [lexical filling](fill.md) $C[P]$.

@@ -1,10 +1,10 @@
 # Kaplan–Meier estimator
 
-## Kaplan Meier
+## Data
 
 - [Grouped right-censored survival data](censored-data.md)
 
-## Censored Data
+## The estimator and its properties
 
 - [Sample size of censored survival data](size.md)
 - [Number at risk at an observation time](at-risk.md)

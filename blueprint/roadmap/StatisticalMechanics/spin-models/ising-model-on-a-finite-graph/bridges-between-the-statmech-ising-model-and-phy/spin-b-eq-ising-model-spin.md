@@ -1,3 +1,4 @@
-# Boolean spin agrees with Physlib's Ising spin
+# Spin value of a Boolean
 
-The Boolean spin value `spinB` is Physlib's `CondensedMatter.IsingModel.spin`.
+The spin value of a Boolean is $+1$ for true and $-1$ for false; this is the Ising spin of the
+corresponding site state.

@@ -7,4 +7,5 @@ C \left(1 + \sum_{1 \le i < t} \frac{1}{d_{i+1} - d_i}\right)$.
 
 ## Sources
 
+- Erdős Problem #884, https://www.erdosproblems.com/884.
 - Lean proof of the negative answer to Erdős Problem 884, https://github.com/Jayyhk/erdos-lean/blob/f8a51976fd2e66a52b4928c109fb9ae877a1a507/problems/884/Erdos884.lean.

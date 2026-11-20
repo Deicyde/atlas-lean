@@ -7,4 +7,4 @@ log-concave probability measures $\mu$ on $\mathbb{R}^n$, is finite.
 
 ## Sources
 
-- Klartag and Lehec, arXiv:2507.15495v1, Theorem 1.1.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Theorem 1.1.

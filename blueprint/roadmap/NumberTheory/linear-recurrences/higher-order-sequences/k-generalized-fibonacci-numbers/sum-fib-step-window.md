@@ -9,4 +9,4 @@ $$\sum_{k=0}^{2m+1} F^{(m)}_{n+k} = 4 F^{(m)}_{n+2m}.$$
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Lemma 39.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Lemma 39.

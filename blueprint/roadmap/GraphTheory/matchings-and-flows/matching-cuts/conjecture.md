@@ -7,4 +7,4 @@ cut. An acyclic graph has infinite girth, so it meets the girth bound for every 
 
 ## Sources
 
-- [OPG-37364], Open Problem Garden, "Matching cut and girth".
+- Open Problem Garden, "Matching cut and girth", http://www.openproblemgarden.org/op/matching_cut_and_girth.

@@ -14,4 +14,4 @@ q^{22} - q^{23} + q^{24}.$$
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 5 (`jis-2026-26.2.6-thm-5`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 5.

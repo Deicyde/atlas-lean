@@ -31,3 +31,7 @@
 - [The restricted safety fragment of LTL](safety.md)
 - [Safety formulas as LTL formulas](to-ltl-2.md)
 - [Büchi automata for the restricted safety fragment](exists-buchi-of-safety.md)
+
+## Related topics
+
+- [Model checking for linear temporal logic](../model-checking-for-linear-temporal-logic/README.md): the translation of every LTL formula, not only this fragment, into a Büchi automaton with at most $4^{|\varphi|}$ states, by a truth-annotation tableau.

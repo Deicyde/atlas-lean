@@ -1,3 +1,3 @@
 # Law of each atom in Sethuraman's space
 
-Each atom of the canonical space has law `H`.
+For $\alpha > 0$, a probability measure $H$ and every $k$, the $k$-th atom coordinate of [Sethuraman's canonical space](sethuraman-measure.md) has law $H$.

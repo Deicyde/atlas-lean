@@ -9,4 +9,4 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k} \binom{4n}{k} \binom{4n}{2n+k} U_k V_{2n-
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.8.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 2.8.

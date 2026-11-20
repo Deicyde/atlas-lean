@@ -9,4 +9,4 @@ $\frac{(a_1 n)! \cdots (a_k n)!}{(b_1 n)! \cdots (b_l n)!}$ is a natural number.
 
 ## Sources
 
-- K. Soundararajan, *Integral factorial ratios* (arXiv 1901.05133).
+- K. Soundararajan, *Integral factorial ratios*, Duke Mathematical Journal 171 (2022), no. 3, 633–672; arXiv:1901.05133, https://arxiv.org/abs/1901.05133.

@@ -12,4 +12,4 @@ $$\sum_{i=0}^{n} (-b)^{n-i} F_{2i+1} = \frac{L_{2n+2} + 2 (-1)^n b^{n+1}}{\Delta
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Theorem 10(a).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Theorem 10(a).

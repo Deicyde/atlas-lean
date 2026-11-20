@@ -5,4 +5,4 @@ $P \in X$ gives a map $X \to J(X)$, the Abel–Jacobi map based at $P$.
 
 ## Sources
 
-- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
+- Kevin Buzzard, *Jacobian challenge* (v0.3), Lean Zulip, #Autoformalization > Jacobian challenge, https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.

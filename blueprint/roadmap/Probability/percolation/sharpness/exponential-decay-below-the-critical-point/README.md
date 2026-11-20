@@ -17,4 +17,5 @@
 - [Exponential decay from a one-step recursion](subcritical-decay.md)
 - [Translation invariance of the Bernoulli product measure](bernoulli-translation-invariant.md)
 - [One-arm event from a shifted origin](crossing-event-from.md)
-- [Exponential decay below `p̃_c`](cross-prob-exp-decay-of-phi-lt-one.md)
+- [Exponential decay below $\tilde p_c$](cross-prob-exp-decay-of-phi-lt-one.md)
+- [Exponential decay of the cluster volume](cluster-volume-exp-decay.md)

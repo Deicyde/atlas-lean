@@ -9,5 +9,5 @@ $x' < y$ let $e_{x'}$ be the encoding of the dense clause over $V$ variables who
 are $\lnot p_{B + x'}$ and $\lnot p_{B + y}$. Then for every $x < y$, every output list $o$ and
 every flag $v$, the one-hot generator of $L$, started at the label of the at-most-one clause for
 the pair $(x, y)$ with flag $v$, output stack $o$ and each counter $c$ holding $F(c)$, reaches
-within $(x + 1) \beta$ steps the label $\mathrm{yDone}(y)$ (Y Done) with flag false, the same
+within $(x + 1) \beta$ steps the [entry label for the first rows](y-done.md) for $y$ with flag false, the same
 counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).

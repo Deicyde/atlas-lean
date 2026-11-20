@@ -9,4 +9,4 @@ $$F_{j(n+1)} = \frac{F_j}{F_k} \sum_{i=0}^{n}
 
 ## Sources
 
-- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 5, formula (53).
+- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Journal of Integer Sequences 29 (2026), Article 26.3.2, Theorem 5, formula (53).

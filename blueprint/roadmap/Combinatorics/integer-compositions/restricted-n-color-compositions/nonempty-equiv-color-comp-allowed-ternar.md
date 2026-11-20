@@ -15,4 +15,4 @@ $0$; without that, the string $0$ would be a counterexample at $n = 2$, $b = 3$.
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Theorem 2.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Theorem 2.

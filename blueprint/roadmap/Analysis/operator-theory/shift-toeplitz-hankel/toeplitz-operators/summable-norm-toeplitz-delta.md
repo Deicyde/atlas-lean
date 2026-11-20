@@ -1,3 +1,3 @@
 # Absolute summability of a delta symbol
 
-A delta symbol is absolutely summable.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. For every $m \in \mathbb{Z}$ and $c \in \mathbb{K}$, the [delta symbol](toeplitz-delta.md) $\delta_{m,c}$ is absolutely summable: $\sum_k |\delta_{m,c}(k)| < \infty$.

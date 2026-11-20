@@ -1,3 +1,4 @@
 # Distinct keys on one name are opposite
 
-Distinct keys on one physical name must be opposite endpoint roles.
+Let $e$ and $d$ be endpoints with the same name. If $e \ne d$, then $d = \bar e$, the endpoint with
+the name of $e$ and the opposite polarity.

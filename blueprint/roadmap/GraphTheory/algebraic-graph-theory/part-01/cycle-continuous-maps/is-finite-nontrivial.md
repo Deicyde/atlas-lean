@@ -6,4 +6,4 @@ These are the graphs on which the cycle-continuous order is considered.
 
 ## Sources
 
-- [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
+- M. DeVos, *Antichains in the cycle continuous order*, Open Problem Garden, http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order.

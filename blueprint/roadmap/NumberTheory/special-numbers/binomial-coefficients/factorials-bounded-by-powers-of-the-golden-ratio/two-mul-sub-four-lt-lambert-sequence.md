@@ -13,4 +13,4 @@ real branch of the Lambert W function.
 
 ## Sources
 
-- Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 8 (`jis-2024-24.5.7-lem-8`).
+- Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 8 (`jis-2024-24.5.7-lem-8`).

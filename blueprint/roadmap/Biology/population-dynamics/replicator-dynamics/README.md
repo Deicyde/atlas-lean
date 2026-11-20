@@ -1,13 +1,13 @@
 # Replicator dynamics
 
-## Replicator
+## The replicator equation
 
 - [Mean fitness of a population state](mean-fitness.md)
 - [Solution of the replicator equation](is-solution.md)
 - [Rest point of the replicator equation](is-rest-point.md)
 - [Rest points in the interior are equalizers](is-rest-point-iff.md)
 
-## Is Solution
+## Properties of solutions
 
 - [Evolution of the total frequency under replicator dynamics](has-deriv-at-sum.md)
 - [Invariance of the simplex hyperplane](sum-eq-one.md)

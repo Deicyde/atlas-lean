@@ -1,4 +1,4 @@
-# Shortest elements of normal closures in free groups (Kourovka 11.82, Remeslennikov)
+# Shortest elements of normal closures in free groups (Kourovka 11.82)
 
 The
 statement that for every free group $F$ and every $r \ne 1$ in $F$, if $s$ is a nontrivial element

@@ -1,10 +1,10 @@
 # Banker's algorithm
 
-## Banker
+## The system
 
 - [Claims and allocations of processes](system.md)
 
-## System
+## Safety and the banker's algorithm
 
 - [Remaining need](need.md)
 - [Safe sequence](safe-seq.md)

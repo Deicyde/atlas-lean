@@ -1,4 +1,4 @@
-# Theorem 3, part 2: a Ramsey family is the union of its ultrafilters
+# A Ramsey family is the union of its ultrafilters
 
 Let $F$ be a family
 of subsets of a set $S$ with the Ramsey property, and let $\beta(F)$ be the set of ultrafilters on
@@ -7,4 +7,4 @@ $A \in p$ for some $p \in \beta(F)$; that is, $F = \bigcup \beta(F)$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.

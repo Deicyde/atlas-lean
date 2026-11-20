@@ -15,7 +15,8 @@ q^n \equiv 12 f_1^4 f_3^6$;
 \mathrm{ped}_{9,18}\bigl(3^{4\alpha+4} n + (5 \cdot 3^{4\alpha+3} + 1)/4\bigr)$.
 All divisions by $4$ are exact.
 
-The paper states (73) with $12 f_1^4 f_3^6 / f_2^2$ on the right; here $f_2^2$ is cleared.
+The paper states (73) with $12 f_1^4 f_3^6 / f_2^2$ on the right; (73) above is that congruence
+multiplied by $f_2^2$.
 
 ## Sources
 

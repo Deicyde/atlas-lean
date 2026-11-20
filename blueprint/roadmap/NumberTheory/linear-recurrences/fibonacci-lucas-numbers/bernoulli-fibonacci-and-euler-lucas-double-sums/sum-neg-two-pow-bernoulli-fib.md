@@ -9,4 +9,4 @@ $$\sum_{n=0}^{m} \sum_{k=0}^{n} (-2)^n (\sqrt{5})^k \binom{n}{k} \binom{m}{n} B_
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 3.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Corollary 3.

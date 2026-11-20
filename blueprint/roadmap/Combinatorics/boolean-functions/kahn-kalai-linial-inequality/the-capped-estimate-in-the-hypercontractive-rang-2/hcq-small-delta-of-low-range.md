@@ -1,3 +1,3 @@
 # Low-range case implies the small-influence case
 
-`hcq_lowRangeResidue q` implies `cvg_smallDeltaResidue q`.
+For every real number $q$, the [low-range residual case](hcq-low-range-residue.md) for $q$ implies the [small-influence residual case](../the-capped-estimate-from-convexity/cvg-small-delta-residue.md) for $q$.

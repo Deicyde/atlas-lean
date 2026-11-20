@@ -1,3 +1,3 @@
 # Base boundary dart of the domino
 
-The boundary dart `dmD0` of the domino, as an element of the subtype of boundary darts.
+The dart from $(0, 0)$ to $(0, -1)$, regarded as a boundary dart of the domino $D = \{(0, 0), (1, 0)\}$: its tail lies in $D$ and its head does not.

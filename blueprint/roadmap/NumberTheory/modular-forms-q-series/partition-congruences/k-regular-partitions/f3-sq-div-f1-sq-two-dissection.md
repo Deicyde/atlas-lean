@@ -14,4 +14,4 @@ $f_1^2 f_2^5 f_8 f_{12} f_{24}$.
 
 ## Sources
 
-- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 9 (`jis-2025-25.6.1-lem-9`).
+- Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on $(\ell, k)$-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 9 (`jis-2025-25.6.1-lem-9`).

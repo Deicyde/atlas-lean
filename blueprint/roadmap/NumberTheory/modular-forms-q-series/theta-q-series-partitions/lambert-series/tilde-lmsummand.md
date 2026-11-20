@@ -6,4 +6,4 @@ $q^{(2k+1)m} / (1 + q^{2k+1})^{2m}$, that is, $q^{(2n-1)m} / (1 + q^{2n-1})^{2m}
 
 ## Sources
 
-- Gerhold.
+- Živorad Tomovski and Stefan Gerhold, *Mathieu-Fibonacci Series*, Journal of Integer Sequences 25 (2022), Article 22.6.3, Section 3 (definition of $\tilde L_m(q)$), <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gerhold/gerhold6.html>.

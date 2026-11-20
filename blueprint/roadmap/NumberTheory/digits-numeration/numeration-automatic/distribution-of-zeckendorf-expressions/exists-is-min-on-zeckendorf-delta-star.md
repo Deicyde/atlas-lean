@@ -1,6 +1,6 @@
 # Where $\delta^*$ attains its minimum
 
-**Where $\delta^*$ attains its minimum.** Let $L$ and $\tilde L$ be lists of natural numbers
+Let $L$ and $\tilde L$ be lists of natural numbers
 of length at least $2$ with nonzero first entries whose periodic Zeckendorf collections satisfy
 $E \subsetneq \tilde E$. Let $Q$ and $\tilde Q$ be fundamental sequences of the $L^*$-collections
 $E^*$ of $L$ and $\tilde E^*$ of $\tilde L$, let $\delta^*$ be the function on $(0, 1)$ built from

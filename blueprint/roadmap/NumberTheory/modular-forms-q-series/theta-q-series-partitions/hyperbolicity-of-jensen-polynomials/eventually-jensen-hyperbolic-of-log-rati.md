@@ -16,7 +16,7 @@ $J_\alpha^{d,n}(X) = \sum_{j=0}^{d} \binom{d}{j} \alpha(n + j) X^j$ is hyperboli
 its real roots, counted with multiplicity, equals its degree.
 
 The source also proves that suitably renormalized Jensen polynomials converge to the Hermite
-polynomials; that conclusion is not part of this statement.
+polynomials.
 
 ## Sources
 

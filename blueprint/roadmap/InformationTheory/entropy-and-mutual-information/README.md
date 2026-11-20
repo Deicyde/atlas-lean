@@ -6,3 +6,4 @@ Shannon entropy, conditional entropy, mutual information and Kullback–Leibler 
 - [Conditional entropy and mutual information](conditional-entropy-and-mutual-information/README.md)
 - [Conditional mutual information](conditional-mutual-information/README.md)
 - [Chow–Liu trees](chow-liu-trees/README.md)
+- [Method of types](method-of-types/README.md)

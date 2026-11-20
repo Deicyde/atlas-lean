@@ -1,3 +1,3 @@
 # Global spin flip of a configuration
 
-The global spin flip `σ ↦ -σ` of an infinite-volume configuration.
+For $d \in \mathbb{N}$, the global spin flip sends a configuration $\sigma$ of $\mathbb{Z}^d$ to $-\sigma$.

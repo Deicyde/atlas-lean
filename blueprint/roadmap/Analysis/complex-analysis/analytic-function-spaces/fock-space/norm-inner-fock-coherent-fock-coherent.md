@@ -1,4 +1,7 @@
 # Gaussian overlap of coherent states
 
-The overlap of two coherent states is Gaussian:
-`‖⟪ĉ_z, ĉ_w⟫‖ = Real.exp (-‖z - w‖² / 2)`.
+For all $z, w \in \mathbb{C}$, the overlap of the [coherent states](fock-coherent.md) is Gaussian:
+
+$$
+|\langle c_z, c_w \rangle| = e^{-|z - w|^2/2}.
+$$

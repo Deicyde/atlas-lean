@@ -10,4 +10,4 @@ $$\sum_{k=0}^{N} h(k) F_k x^k = \sum_{r=0}^{t} A_r \sum_{i=0}^{r} S(r, i) \, x^i
 
 ## Sources
 
-- Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.4.
+- Andreea M. Stănică, Gabriela N. Stănică and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, Fibonacci Quart. 62 (2024), no. 1, 45–56, Corollary 2.4.

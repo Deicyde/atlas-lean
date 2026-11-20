@@ -7,7 +7,7 @@ conjecture holds for every $k$.
 
 Balogh, Dong, Lidický, Mani and Zhao prove this as Theorem 1.1 of arXiv:2209.04894. They use a
 DNF convention with exactly $k$ distinct variables per clause, which gives the same counts as the
-CNF, at-most-$k$ convention here for $n \ge k$ (negation preserves unateness).
+CNF, at-most-$k$ convention for $n \ge k$ (negation preserves unateness).
 
 ## Sources
 

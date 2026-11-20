@@ -3,7 +3,9 @@
 For a finite field $F$ with $q$ elements,
 the function field Mertens constant $B_1$ of $F$ equals
 
-$$\gamma + \sum_P \left(\log\left(1 - \frac{1}{|P|}\right) + \frac{1}{|P|}\right),$$
+$$
+\gamma + \sum_P \left(\log\left(1 - \frac{1}{|P|}\right) + \frac{1}{|P|}\right),
+$$
 
 where $\gamma$ is the Euler–Mascheroni constant, the sum runs over the monic irreducible
 polynomials $P$ over $F$, and $|P| = q^{\deg P}$.

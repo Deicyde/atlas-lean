@@ -9,4 +9,4 @@ and $\mathcal{Q}(m) = 1 - \mathcal{Q}(2n)$ if $r = 3$.
 
 ## Sources
 
-- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 2.2 (definition of `𝒬`).
+- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 2.2 (definition of $\mathcal{Q}$).

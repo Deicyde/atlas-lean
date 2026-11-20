@@ -1,4 +1,3 @@
 # The five colocalization hypotheses
 
-The five coloc hypotheses: no association (`h0`), trait 1 only (`h1`), trait 2 only (`h2`),
-two distinct causal variants (`h3`), one shared causal variant (`h4`).
+The colocalization hypotheses are five labels: $H_0$ (no causal variant for either trait), $H_1$ (a causal variant for trait 1 only), $H_2$ (a causal variant for trait 2 only), $H_3$ (two distinct causal variants, one for each trait) and $H_4$ (one causal variant shared by both traits).

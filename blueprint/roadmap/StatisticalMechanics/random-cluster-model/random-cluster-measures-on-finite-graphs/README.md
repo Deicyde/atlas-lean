@@ -39,7 +39,7 @@
 - [Derivative in $\beta$ of the edge parameter $1 - e^{-\beta J}$](has-deriv-at-param-of-beta.md)
 - [Edge parameters $p_e(\beta) = 1 - e^{-\beta J_e}$](beta-params.md)
 - [Logarithmic $\beta$-derivative of the random-cluster weight](beta-score.md)
-- [Differential formula in `β`](has-deriv-at-fk-mean-w-beta-sum.md)
+- [Differential formula in $\beta$](has-deriv-at-fk-mean-w-beta-sum.md)
 - [Number of open edges](open-count.md)
 - [Number of closed edges](closed-count.md)
 - [Tilt factor between two edge parameters](tilt-factor.md)

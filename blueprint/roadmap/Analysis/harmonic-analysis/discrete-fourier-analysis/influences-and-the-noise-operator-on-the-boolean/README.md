@@ -66,3 +66,19 @@
 - [Characters are eigenfunctions of the noise operator](bool-noise-op-cube-chi.md)
 - [The noise operator fixes constants](bool-noise-op-const.md)
 - [Positivity of the noise operator](bool-noise-op-nonneg.md)
+- [Noise stability on the Boolean cube](bool-noise-stab.md)
+- [Fourier formula for noise stability](bool-noise-stab-eq-sum.md)
+- [Noise stability is at most the second moment](bool-noise-stab-le-expect-sq.md)
+- [Noise stability at $\rho = 1$](bool-noise-stab-one.md)
+- [Noise stability as a squared norm](bool-noise-stab-sq-eq-expect-sq.md)
+- [Noise stability at $\rho = 0$](bool-noise-stab-zero.md)
+- [The noise operator is self-adjoint](expect-bool-noise-op-mul-comm.md)
+- [Plancherel formula for the noise operator](expect-mul-bool-noise-op-eq-sum.md)
+- [Fourier coefficients of the coordinate Laplacian](bool-fourier-coeff-derivative.md)
+
+## Related topics
+
+- [Bonami–Beckner hypercontractivity](../../../../Probability/concentration-inequalities/bonami-beckner-hypercontractivity/README.md): norm bounds for the noise operator $T_\rho$, including small-set expansion for noise stability.
+- [Kahn–Kalai–Linial inequality](../../../../Combinatorics/boolean-functions/kahn-kalai-linial-inequality/README.md): a lower bound on the largest influence, from hypercontractivity of $T_\rho$.
+- [Structure theorems for Boolean functions](../../../../Combinatorics/boolean-functions/structure-theorems-for-boolean-functions/README.md): FKN, Friedgut's junta theorem and Majority Is Stablest, stated with these influences and noise stability.
+- [OSSS inequality for decision trees](../../../../Combinatorics/boolean-functions/osss-inequality-for-decision-trees/README.md): a variance bound by influences weighted by the query probabilities of a decision tree, refining the Poincaré inequality.

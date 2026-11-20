@@ -12,4 +12,4 @@ OEIS A341091.
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 2 (definition of `s(n, i)`).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 2 (definition of $s(n, i)$).

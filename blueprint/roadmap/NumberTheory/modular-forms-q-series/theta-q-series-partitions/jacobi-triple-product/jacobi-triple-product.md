@@ -9,4 +9,4 @@ $$\sum_{n \in \mathbb{Z}} z^n q^{n^2} =
 
 ## Sources
 
-- Aritram Dhar, Avi Mukhopadhyay, and Rishabh Sarma, "Generalization of the Extended Minimal Excludant of Andrews and Newman," Journal of Integer Sequences 26 (2023), Article 23.3.7, theorem at source lines 455-458 of <https://cs.uwaterloo.ca/journals/JIS/VOL26/Sarma/sarma5.tex>.
+- Aritram Dhar, Avi Mukhopadhyay, and Rishabh Sarma, *Generalization of the Extended Minimal Excludant of Andrews and Newman*, Journal of Integer Sequences 26 (2023), Article 23.3.7, Theorem 21, quoting George E. Andrews, *The Theory of Partitions*, Cambridge University Press (1998), p. 21, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Sarma/sarma5.html>.

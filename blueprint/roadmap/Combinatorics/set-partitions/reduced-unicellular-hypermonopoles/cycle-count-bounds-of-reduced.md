@@ -10,4 +10,4 @@ the absence of buds (fixed points of $\alpha$) are used.
 
 ## Sources
 
-- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Corollary 11 (`jis-2025-25.3.3-cor-11`).
+- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Corollary 11.

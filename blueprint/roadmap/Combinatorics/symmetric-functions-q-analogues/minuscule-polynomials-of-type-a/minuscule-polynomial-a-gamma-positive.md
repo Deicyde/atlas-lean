@@ -9,4 +9,4 @@ For $n = 0$ this holds with every $\gamma_{0,k} = 0$, since $N_0 = 0$.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Corollary 8.
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Corollary 8.

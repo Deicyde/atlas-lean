@@ -15,4 +15,4 @@ Both exponents are natural numbers, since $\lfloor n/p \rfloor + \lfloor m/p \rf
 
 ## Sources
 
-- Tom Edgar and Michael Z. Spivey, "Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers", Journal of Integer Sequences 19 (2016), Article 16.1.6, Corollary `totcor`, lines 244-249, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex>.
+- Tom Edgar and Michael Z. Spivey, *Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers*, J. Integer Seq. 19 (2016), Article 16.1.6, Corollary 7, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.html>.

@@ -8,4 +8,4 @@ as polynomials in $x$ with rational coefficients.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.1.
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Theorem 4.1.

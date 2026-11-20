@@ -19,4 +19,4 @@ letter at $b_n$ is coded $b$.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 23 (`jis-2026-26.1.6-prop-23`).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 23.

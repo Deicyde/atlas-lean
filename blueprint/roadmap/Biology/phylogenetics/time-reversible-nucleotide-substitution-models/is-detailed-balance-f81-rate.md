@@ -1,3 +1,3 @@
 # Detailed balance of the F81 model
 
-F81 is in detailed balance with its base frequencies.
+For all real $\pi$, the [F81 matrix](f81-rate.md) $Q$ satisfies $\pi_i Q_{ij} = \pi_j Q_{ji}$ for all $i, j$.

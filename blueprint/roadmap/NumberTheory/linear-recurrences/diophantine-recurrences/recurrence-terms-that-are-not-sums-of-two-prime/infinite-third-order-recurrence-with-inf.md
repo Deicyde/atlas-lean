@@ -13,4 +13,4 @@ prime powers.
 
 ## Sources
 
-- Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Corollary 1 (`jis-2026-26.2.3-cor-1`).
+- Daniel Baczkowski and Bruce Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Corollary 1 (`jis-2026-26.2.3-cor-1`).

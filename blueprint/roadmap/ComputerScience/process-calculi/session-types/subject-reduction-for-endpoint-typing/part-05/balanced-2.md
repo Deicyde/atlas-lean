@@ -1,4 +1,4 @@
 # Semantic advancement preserves balance
 
-From a semantically balanced initial interface, actual advancement retains
-balance with exact old keys and actual new codes.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ advances semantically to $\Xi$. If
+$\Delta$ is semantically balanced, then so is $\Xi$.

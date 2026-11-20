@@ -1,4 +1,3 @@
-# Finiteness of the SAT verifier alphabet (moved alias)
+# Finiteness of the SAT verifier alphabet
 
-Moved to the instance `SatVerifier.Sym.instFintype` (`SatVerifierSpec`); kept as a
-definition, not an instance, so instance search sees one `Fintype Sym`.
+The [stack alphabet of the SAT verifier](../part-02/sym.md) is finite.

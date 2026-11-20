@@ -42,7 +42,7 @@
 - [Disjoint occurrence on a one-point space is the intersection](disjoint-occurrence-subsingleton.md)
 - [BK inequality for product weights on $n$ ordered coordinates](bk-wprob.md)
 - [Relabeling configurations along a bijection](cfg-equiv.md)
-- [Configuration relabeling agrees with the library arrow equivalence](cfg-equiv-eq-arrow-congr.md)
+- [Configuration relabeling agrees with the general arrow equivalence](cfg-equiv-eq-arrow-congr.md)
 - [Monotonicity of configuration relabeling](cfg-equiv-mono.md)
 - [Agreement on a set under configuration relabeling](agree-on-cfg-equiv.md)
 - [Occurrence is invariant under relabeling coordinates](occurs-on-cfg-equiv.md)

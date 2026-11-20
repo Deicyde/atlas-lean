@@ -12,8 +12,8 @@ $$v(n) = \sum_{m=0}^{s+p-1} \rho(n - m, s + p)\, A_m.$$
 
 The paper prints the constraint in $\rho$ as $s a + (s + p) b = N - (s + p - 1)$, and with it the
 identity fails (for $k_1 = k_2 = 1$, $p = 1$, $s = 2$ the printed $\rho(4, 3)$ is $1$ instead of
-$0$); the constraint used here is the one of the paper's general formula (12).
+$0$); the constraint above is the one of the paper's general formula (12).
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Theorem 3.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Theorem 3.

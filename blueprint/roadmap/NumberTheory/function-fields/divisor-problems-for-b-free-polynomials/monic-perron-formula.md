@@ -6,8 +6,10 @@ that the series $\sum_f |a(f)| \rho^{\deg f}$ over all monic $f \in F[T]$ conver
 $A(u) = \sum_f a(f) u^{\deg f}$, the sum again over all monic $f$. Then for every natural number
 $n$, with the circle $|u| = \rho$ traversed counterclockwise,
 
-$$\sum_{f \text{ monic},\ \deg f \le n} a(f) = \frac{1}{2 \pi i} \oint_{|u| = \rho}
-\frac{A(u)}{u^n (1 - u)} \, \frac{du}{u}.$$
+$$
+\sum_{f \text{ monic},\ \deg f \le n} a(f) = \frac{1}{2 \pi i} \oint_{|u| = \rho}
+\frac{A(u)}{u^n (1 - u)} \, \frac{du}{u}.
+$$
 
 ## Sources
 

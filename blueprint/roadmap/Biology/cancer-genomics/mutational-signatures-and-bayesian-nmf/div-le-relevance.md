@@ -1,3 +1,3 @@
 # Lower bound on the relevance update
 
-The relevance never falls below its floor `b / c` (`W, H ≥ 0`, `c > 0`).
+Let $c > 0$ and let $W$, $H$ be entrywise nonnegative. Then for every component $k$ and every real $b$, the [relevance update](relevance.md) satisfies $b / c \le \lambda_k$.

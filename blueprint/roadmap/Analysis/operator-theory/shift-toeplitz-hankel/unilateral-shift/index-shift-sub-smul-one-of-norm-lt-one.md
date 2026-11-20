@@ -1,5 +1,3 @@
 # Shifted unilateral shift has index $-1$ inside the unit disk
 
-The index of `S - μ • 1` is `-1` for `‖μ‖ < 1`: the canonical
-homotopy theorem makes the index constant along `S - (t μ) • 1`,
-`t ∈ [0, 1]`, and the canonical shift has index `-1` at `t = 0`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $S$ be the [unilateral shift](shift-clm.md) on $\ell^2(\mathbb{N}, \mathbb{K})$. If $\mu \in \mathbb{K}$ satisfies $|\mu| < 1$, then $S - \mu I$ has Fredholm index $-1$. Indeed, $t \mapsto S - t\mu I$, $t \in [0, 1]$, is a continuous path of Fredholm operators, so the index is constant along it, and $S$ itself has index $-1$.

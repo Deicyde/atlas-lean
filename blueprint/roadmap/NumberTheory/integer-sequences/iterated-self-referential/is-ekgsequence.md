@@ -13,4 +13,4 @@ The sequence begins $1, 2, 4, 6, 3, 9, 12, 8, 10, 5, \dots$
 
 ## Sources
 
-- JIS source `hofman1.tex`, lines 99–100, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Hofman/hofman1.tex>; first terms at lines 104–112.
+- Piotr Hofman and Marcin Pilipczuk, *A Few New Facts about the EKG Sequence*, Journal of Integer Sequences 11 (2008), Article 08.4.2, Section 1 (definition and first terms), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Hofman/hofman1.tex>.

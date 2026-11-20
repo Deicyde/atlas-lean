@@ -1,4 +1,7 @@
 # Expected block counts weighted by coalescence times sum to $2/i$
 
-Summing the expected block counts against `E T_k = (k.choose 2)⁻¹` gives `2 / i`:
-`∑_{k=2}^{n} k C(n-i-1, k-2) / C(n-1, k-1) · (k.choose 2)⁻¹ = 2 / i` for `1 ≤ i < n`.
+For natural numbers $n$ and $i$ with $1 \le i < n$,
+
+$$\sum_{k=2}^{n} \frac{k \binom{n-i-1}{k-2}}{\binom{n-1}{k-1}} \binom{k}{2}^{-1} = \frac{2}{i}.$$
+
+Weighting the expected block counts by the mean holding times $\binom{k}{2}^{-1}$ gives the expected total length $2/i$ of the branches subtending $i$ sample copies.

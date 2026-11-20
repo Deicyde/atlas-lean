@@ -1,5 +1,9 @@
-# Stationary forward equation (Wright 1931)
+# Stationary forward equation for the Beta density
 
-On `(0, 1)` the Beta`(θ₁, θ₂)` density `π`
-solves the stationary Fokker–Planck equation `½ (a π)'' - (b π)' = 0` with `a(x) = x (1 - x)` and
-`b(x) = (θ₁ (1 - x) - θ₂ x) / 2`. Holds for all real `θ₁, θ₂` (see `flux_betaPDFReal`).
+For all real $\theta_1$, $\theta_2$ and every $x \in (0, 1)$, the Beta density $\beta = \beta_{\theta_1,\theta_2}$ solves the stationary forward equation
+
+$$\frac{1}{2}\bigl(a\beta\bigr)''(x) - \bigl(b\beta\bigr)'(x) = 0, \qquad a(y) = y(1 - y), \quad b(y) = \frac{\theta_1(1 - y) - \theta_2 y}{2}.$$
+
+## Sources
+
+- S. Wright, *Evolution in Mendelian populations*, Genetics 16 (1931), 97–159.

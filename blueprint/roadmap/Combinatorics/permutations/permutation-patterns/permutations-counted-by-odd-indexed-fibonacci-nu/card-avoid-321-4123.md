@@ -7,4 +7,4 @@ $F_0 = 0$ and $F_1 = 1$.
 
 ## Sources
 
-- Juan B. Gil, Felix H. Xu, and William Y. Zhu, "Odd-Indexed Fibonacci Numbers via Pattern-Avoiding Permutations", Proposition 1.
+- Juan B. Gil, Felix H. Xu, and William Y. Zhu, "Odd-Indexed Fibonacci Numbers via Pattern-Avoiding Permutations", INTEGERS 25 (2025), Article A79, Proposition 1.

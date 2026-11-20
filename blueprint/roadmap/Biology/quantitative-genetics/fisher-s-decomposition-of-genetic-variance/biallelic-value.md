@@ -1,4 +1,3 @@
 # Genotypic values at a biallelic locus on Falconer's scale
 
-Genotypic values at a biallelic locus on Falconer's scale: `A₁A₁ ↦ a`, `A₁A₂ ↦ d`,
-`A₂A₂ ↦ -a` (the origin is the midpoint of the homozygotes).
+For real numbers $a$ and $d$, the biallelic genotypic values are $G(A_1, A_1) = a$, $G(A_1, A_2) = G(A_2, A_1) = d$ and $G(A_2, A_2) = -a$: the origin is the midpoint of the two homozygotes.

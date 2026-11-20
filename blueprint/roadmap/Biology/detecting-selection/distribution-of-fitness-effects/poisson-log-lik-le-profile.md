@@ -1,5 +1,7 @@
-# Profile maximum in `θ`
+# Profile maximum in the mutation parameter
 
-With means `E_i = θ f_i` linear in the mutation parameter,
-positive `f_i` and at least one count, every `θ > 0` has likelihood at most that of
-`θ̂ = ∑ k_i / ∑ f_i`.
+Let $\iota$ be a finite index set, $f_i > 0$ for every $i$, $k : \iota \to \mathbb{N}$ with $\sum_i k_i > 0$, and $\theta > 0$. Then
+
+$$\ell(\theta f, k) \le \ell(\hat\theta f, k), \qquad \hat\theta = \frac{\sum_i k_i}{\sum_i f_i},$$
+
+where $\ell$ is the [Poisson log-likelihood](poisson-log-lik.md): with means linear in the mutation parameter, the likelihood is maximized at $\hat\theta$.

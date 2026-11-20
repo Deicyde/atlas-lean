@@ -9,4 +9,4 @@ $r \colon U \to M$ such that $r(e(x)) = x$ for every $x \in M$.
 
 ## Sources
 
-- Tubular neighborhood theorem; M. Hirsch, Differential Topology; J. Lee, Introduction to Smooth Manifolds; Lean states smooth-retraction corollary for closed embedding into `EuclideanSpace ℝ (Fin n)` via `Opens`.
+- Tubular neighborhood theorem; M. Hirsch, Differential Topology; J. Lee, Introduction to Smooth Manifolds.

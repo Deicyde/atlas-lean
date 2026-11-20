@@ -10,6 +10,6 @@
 - [Classes containing a nontrivial finite group](nontrivial-class.md)
 - [The residual of a group with respect to a class (Kourovka 12.97)](residual-2.md)
 - [Groups with a subnormal series whose factors are all isomorphic to a given group](all-composition-factors-iso.md)
-- [Proper subclass of a formation](is-proper-in.md)
-- [Kourovka Problem 12.97 (Shemetkov)](composition-factor-formation-indecomposa.md)
+- [A class that omits a finite group of $\mathfrak{F}_T$](is-proper-in.md)
+- [Indecomposability of the formation $\mathfrak{F}_T$ (Kourovka 12.97)](composition-factor-formation-indecomposa.md)
 - [Mel'nikov's theorem on Kourovka Problem 12.97](composition-factor-formation-indecomposa-2.md)

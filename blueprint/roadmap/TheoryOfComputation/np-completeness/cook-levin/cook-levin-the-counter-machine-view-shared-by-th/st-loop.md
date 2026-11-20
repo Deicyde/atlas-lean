@@ -1,4 +1,4 @@
-# A runtime `for` loop in the counter view
+# A runtime for-loop in the counter view
 
 Let $M$ be a counter machine, let $c \ne c_d$
 be counters, and let $\mathrm{head}$, $\mathrm{body}$, $\mathrm{rest}$, $\mathrm{next}$ be labels

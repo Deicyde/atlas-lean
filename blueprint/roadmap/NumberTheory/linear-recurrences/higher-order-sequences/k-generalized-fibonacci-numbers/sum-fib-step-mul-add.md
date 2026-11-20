@@ -1,7 +1,6 @@
 # Convolution of the $m$-step Fibonacci numbers with consecutive sums of the $(m+2)$-step ones
 
-**Convolution of the $m$-step Fibonacci numbers with consecutive sums of the
-$(m+2)$-step ones.** Write $F^{(m)}_n$ for the Fibonacci $m$-step numbers ($F^{(m)}_0 = 0$,
+Write $F^{(m)}_n$ for the Fibonacci $m$-step numbers ($F^{(m)}_0 = 0$,
 $F^{(m)}_1 = 1$, and each later term is the sum of the $m$ terms before it, terms at negative
 indices being $0$). For all natural numbers $m \ge 1$ and $n \ge m$,
 
@@ -10,4 +9,4 @@ F^{(m+2)}_n - F^{(m)}_n.$$
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 4.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 4.

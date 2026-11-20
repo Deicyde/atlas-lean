@@ -1,5 +1,3 @@
 # Secant bound gives free–wired density agreement off a countable set
 
-Under the secant comparison `wired(p') ≤ free(p)` for `p' < p`, the free and wired densities
-of a box edge agree for all `p ∈ (0, 1)` outside a countable set, namely the discontinuities of
-the monotone wired density.
+Let $d, N \in \mathbb{N}$ and let $e$ be an unordered pair $e$ of vertices of $\Lambda_N = \{-N, \dots, N\}^d$ (viewed as a pair of sites of $\mathbb{Z}^d$). Suppose that $\theta^1_e(p') \le \theta^0_e(p)$ for all $p, p' \in (0, 1)$ with $p' < p$. Then there is a countable set $S \subseteq \mathbb{R}$ such that $\theta^0_e(p) = \theta^1_e(p)$ for every $p \in (0, 1) \setminus S$. Here $\theta^0_e(p)$ is the [free edge density](../../per-box-agreement-of-free-and-wired-random-clust/free-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the free infinite-volume measure $\phi^0_{p,2}$, a chosen subsequential weak limit of the free box measures), and $\theta^1_e(p)$ is the [wired edge density](../../per-box-agreement-of-free-and-wired-random-clust/wired-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the wired infinite-volume measure $\phi^1_{p,2}$).

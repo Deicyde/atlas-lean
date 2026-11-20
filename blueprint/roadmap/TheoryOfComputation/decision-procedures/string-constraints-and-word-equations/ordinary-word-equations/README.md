@@ -15,7 +15,7 @@
 - [Normalization does not change the evaluated word](eval-word-normalize-word-subst.md)
 - [Normalized images are bounded by the evaluation length](length-normalize-word-subst-le.md)
 - [Bounding variable images by the target loses no pattern matches](pattern-match-iff-bounded.md)
-- [Executable satisfaction test for ground word equations](ground-sat-b.md)
+- [Satisfaction test for ground word equations](ground-sat-b.md)
 - [Ground test agrees with satisfaction under any substitution](ground-sat-b-eq-true-iff.md)
 - [Ground test decides solvability of ground word equations](ground-sat-b-iff.md)
 - [Solvability of word equation systems at a finite length bound](word-system-satisfiable-iff-exists-bound.md)

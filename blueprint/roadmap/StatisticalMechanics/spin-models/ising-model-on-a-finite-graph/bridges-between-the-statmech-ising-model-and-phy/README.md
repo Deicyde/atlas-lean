@@ -1,18 +1,18 @@
-# Bridges between the StatMech Ising model and Physlib
+# The Ising model as a finite canonical ensemble
 
-## A. The Hamiltonian as Physlib's Ising energy
+## The Hamiltonian as an Ising energy with unit coupling
 
-- [Boolean spin agrees with Physlib's Ising spin](spin-b-eq-ising-model-spin.md)
+- [Spin value of a Boolean](spin-b-eq-ising-model-spin.md)
 - [Edge bond sum is half the sum over ordered adjacent pairs](two-mul-sum-bond.md)
-- [Hamiltonian agrees with Physlib's Ising energy](hamiltonian-eq-energy.md)
+- [The Ising Hamiltonian as the energy with unit coupling](hamiltonian-eq-energy.md)
 
-## B. The finite canonical ensemble
+## The finite canonical ensemble
 
-- [Ising model as a Physlib canonical ensemble](canonical-ensemble.md)
-- [Ising partition function agrees with Physlib's partition function](ising-z-eq-mathematical-partition-functi.md)
-- [Ising Gibbs probability agrees with Physlib's canonical probability](ising-prob-eq-probability.md)
+- [Ising model as a finite canonical ensemble](canonical-ensemble.md)
+- [Ising partition function as the canonical partition function](ising-z-eq-mathematical-partition-functi.md)
+- [Ising Gibbs probability as the canonical probability](ising-prob-eq-probability.md)
 
-## C. The hypercubic lattice as a crystal graph
+## The hypercubic lattice as a crystal graph
 
 - [Sites at $\ell^1$ distance one are those differing by a unit vector](nat-abs-sum-eq-one-iff.md)
-- [Isomorphism of the hypercubic lattice with Physlib's crystal graph](hypercubic-lattice-iso-crystal.md)
+- [Isomorphism of the hypercubic lattice with the hypercubic crystal graph](hypercubic-lattice-iso-crystal.md)

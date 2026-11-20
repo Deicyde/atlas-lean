@@ -1,6 +1,6 @@
 # The periodic collection $E^*$
 
-**The periodic collection $E^*$.** For a list $L$ of natural numbers, $E^*$ is the set of
+For a list $L$ of natural numbers, $E^*$ is the set of
 nonzero coefficient functions $\varepsilon : \mathbb{N} \to \mathbb{N}$ that are sums of finitely
 or infinitely many disjoint proper $L^*$-blocks, that is, the $\varepsilon \ne 0$ that are
 $L^*$-block sums over some set of support intervals. It is the collection $E^*$ for the interval

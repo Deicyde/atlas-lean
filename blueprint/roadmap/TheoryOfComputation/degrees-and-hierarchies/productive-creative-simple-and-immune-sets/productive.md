@@ -7,4 +7,4 @@ $f(e) \in A$ and $f(e) \notin W_e$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 5.1.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

@@ -6,4 +6,4 @@ functions on $[0, 1]$ with the supremum norm, such that the range of $e$ is clos
 
 ## Sources
 
-- S. Banach and S. Mazur 1932 embedding theorem; Banach, Theorie des operations lineaires; Henson-Michalewski, separable Banach as universal space; Lean states separable real Banach case with `E →ₗᵢ[ℝ] C(Icc 0 1, ℝ)` and `IsClosed (range)`.
+- S. Banach and S. Mazur, 1932 embedding theorem; S. Banach, Théorie des opérations linéaires, 1932. The statement here is the case of a separable real Banach space $E$, with a linear isometry $E \to C([0, 1], \mathbb{R})$ whose range is closed.

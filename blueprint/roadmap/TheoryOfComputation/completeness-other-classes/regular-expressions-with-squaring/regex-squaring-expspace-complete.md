@@ -9,4 +9,4 @@ all bitstrings.
 
 ## Sources
 
-- A. R. Meyer and L. J. Stockmeyer, "The equivalence problem for regular expressions with squaring requires exponential space", Proceedings of the Thirteenth Annual Symposium on Switching and Automata Theory (1972), 125-129. (The exponential-time word problem in Stockmeyer- Meyer (STOC 1973) is membership, not universality.)
+- Albert R. Meyer and Larry J. Stockmeyer, "The equivalence problem for regular expressions with squaring requires exponential space", Proceedings of the Thirteenth Annual Symposium on Switching and Automata Theory (1972), 125-129. (The exponential-time word problem in Stockmeyer and Meyer (STOC 1973) is membership, not universality.)

@@ -1,7 +1,7 @@
 # The precomputation
 
 Fix the full program built from a code map $c_f$ from the raw alphabet
-$\mathrm{Fin}\,r$ to the code alphabet $\mathrm{Fin}\,g$, a separator code $c_s$, a polynomial $k$
+$\{0, \dots, r - 1\}$ to the code alphabet $\{0, \dots, g - 1\}$, a separator code $c_s$, a polynomial $k$
 with natural coefficients, constants $c, e, d \in \mathbb{N}$, a host program and its start label.
 Let $s = s_1 \cdots s_n$ be a raw input word and $o$ a list of booleans. Started at the read-loop
 label with flag false, raw input stack $s$, output stack $o$ and every other stack empty, the full

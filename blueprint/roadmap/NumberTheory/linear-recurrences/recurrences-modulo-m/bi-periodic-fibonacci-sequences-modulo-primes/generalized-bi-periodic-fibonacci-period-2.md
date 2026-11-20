@@ -13,4 +13,4 @@ $\alpha$ and $\beta$ are nonzero squares in $\mathbb{Z}/p\mathbb{Z}$, then $k$ d
 
 ## Sources
 
-- Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem, lines 225–226, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex>. It follows from `generalizedBiPeriodicFibonacci_period_dvd_general`, which drops the unused `IsSquare Δ`.
+- Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem 6, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex>.

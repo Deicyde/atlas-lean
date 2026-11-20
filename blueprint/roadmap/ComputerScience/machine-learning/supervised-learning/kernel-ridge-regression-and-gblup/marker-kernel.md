@@ -1,5 +1,3 @@
 # Linear marker kernel on genotype vectors
 
-The linear marker kernel `k(a, b) = s ⟪a, b⟫ = s ∑ⱼ aⱼ bⱼ` on genotype vectors: the
-covariance of genetic values `aᵀβ` and `bᵀβ` when the marker effects `β` are independent with
-variance `s`.
+For a finite set $\iota$ of markers and $s \in \mathbb{R}$, the linear marker kernel on genotype vectors $a, b \in \mathbb{R}^\iota$ is $k(a, b) = s \langle a, b\rangle = s \sum_j a_j b_j$: the covariance of the genetic values $a^\top \beta$ and $b^\top \beta$ when the marker effects $\beta$ are independent with variance $s$.

@@ -10,4 +10,4 @@ $x \ne 0$, $x \mid a$, $y \ne 0$, $y \mid b$, $x + y \ne 0$ and $x + y \mid c$.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 3.
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 3.

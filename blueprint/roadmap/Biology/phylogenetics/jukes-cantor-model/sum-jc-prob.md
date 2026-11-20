@@ -1,3 +1,3 @@
 # Rows of the Jukes–Cantor transition matrix sum to one
 
-Each row of the Jukes–Cantor transition matrix sums to `1`.
+For all real $\mu, t$ and every base $i$, $\sum_j P_{ij}(t) = 1$, where $P$ is the [Jukes–Cantor transition probability](jc-prob.md).

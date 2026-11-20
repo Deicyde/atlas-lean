@@ -8,4 +8,5 @@ $C > 2$.
 
 ## Sources
 
+- Erdős Problem #825, https://www.erdosproblems.com/825.
 - Daniel Larsen, Sufficiently abundant numbers are pseudoperfect, https://github.com/Larsen-Daniel/Erdos-825/blob/18411fce83ce49ee0adbb628de04603e003004f5/825.pdf.

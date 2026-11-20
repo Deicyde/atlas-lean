@@ -8,4 +8,4 @@ a head label, two base-copy labels, a multiplication label for each multiplicati
 test for each code $i < g$ and a base-drain label; an error label; for each clause kind $c$ for
 $g$ and $n$, a clause-start label, two labels copying the variable count, a literal label for
 each literal index $l < n + 2$ and each literal stage, and a label emitting the leading gap; and
-a final label. The label type has decidable equality and is finite.
+a final label. There are finitely many labels.

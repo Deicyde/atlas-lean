@@ -8,4 +8,4 @@ $\mathrm{LCS}(x_1, y_1) + \mathrm{LCS}(x_2, y_2) \le \mathrm{LCS}(x_1x_2, y_1y_2
 
 ## Sources
 
-- common subsequences concatenate without changing their order.
+- Václav Chvátal and David Sankoff, *Longest common subsequences of two random sequences*, J. Appl. Probab. 12(2) (1975), 306–315.

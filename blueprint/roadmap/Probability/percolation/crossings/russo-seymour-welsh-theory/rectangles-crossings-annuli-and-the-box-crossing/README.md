@@ -1,4 +1,4 @@
-# Rectangles, crossings, annuli and the box-crossing property on ℤ²
+# Rectangles, crossings, annuli and the box-crossing property on $\mathbb{Z}^2$
 
 - [Integer rectangle in the plane lattice](rect.md)
 - [Measurability of connection inside a set](measurable-set-connected-within.md)

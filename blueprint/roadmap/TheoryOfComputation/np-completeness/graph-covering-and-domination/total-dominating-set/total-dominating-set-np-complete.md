@@ -6,4 +6,4 @@ many-one reduction.
 
 ## Sources
 
-- E. J. Cockayne, R. M. Dawes, and S. T. Hedetniemi, "Total domination in graphs", Networks 10 (1980), 211-219; R. Laskar, J. Pfaff, S. M. Hedetniemi, and S. T. Hedetniemi, "On the algorithmic complexity of total domination", SIAM Journal on Algebraic and Discrete Methods 5 (1984), 420-425.
+- Ernie J. Cockayne, R. M. Dawes, and Stephen T. Hedetniemi, "Total domination in graphs", Networks 10 (1980), 211-219; Renu Laskar, John Pfaff, Sandra M. Hedetniemi, and Stephen T. Hedetniemi, "On the algorithmic complexity of total domination", SIAM Journal on Algebraic and Discrete Methods 5 (1984), 420-425.

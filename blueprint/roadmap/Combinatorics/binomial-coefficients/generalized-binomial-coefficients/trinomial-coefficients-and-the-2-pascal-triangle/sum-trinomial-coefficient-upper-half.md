@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} \binom{n}{n-k}_2 w^{n+k} = \frac{(1+w+w^2)^n}{2} + \frac{\binom
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 40 (`jis-2025-25.3.5-cor-40`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Corollary 40, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-cor-40).

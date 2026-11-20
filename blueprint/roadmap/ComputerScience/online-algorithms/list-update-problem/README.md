@@ -24,7 +24,7 @@
 - [Triangle inequality for inversions](inv-triangle.md)
 - [The amortized cost of a move-to-front step](mtf-step.md)
 
-## Move-to-front is `2`-competitive
+## Move-to-front is $2$-competitive
 
 - [Move-to-front rearranges the list](mtf-perm.md)
 
@@ -51,8 +51,13 @@
 - [Static cost](static-cost.md)
 - [The static cost is the offline cost of a constant list](offline-cost-const.md)
 - [Positions in a list and in its reverse](access-cost-add-reverse.md)
-- [A list or its reverse serves any sequence at average cost at most $(\ell + 1)/2$](static-cost-add-reverse.md)
+- [Static costs of a list and of its reverse](static-cost-add-reverse.md)
 - [Inversions are at most the squared length](inv-le-sq.md)
 - [Switching lists after the first request](offline-cost-switch-le.md)
 - [Online and offline costs on the adversary's sequence](adversary-vs-offline.md)
 - [No deterministic online list-update algorithm beats $2 - 2/(\ell + 1)$](not-competitive.md)
+
+## Related topics
+
+- [Amortized analysis](../../data-structures/amortized-analysis/README.md): the potential
+  method behind the move-to-front analysis.

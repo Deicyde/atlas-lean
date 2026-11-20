@@ -14,4 +14,4 @@ $$A^{(r)}(x,u) = \exp\left(\frac{x A_{r-1}(x)\, u^r}{r!}\right).$$
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 21 (`jis-2025-25.5.7-thm-21`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 21.

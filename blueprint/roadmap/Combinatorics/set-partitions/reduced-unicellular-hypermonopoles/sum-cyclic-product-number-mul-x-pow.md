@@ -10,4 +10,4 @@ where $c_n = \frac{1}{(n + 1) n}$ for $n \ge 1$ and $c_0 = 0$; for $n = 0$ both 
 
 ## Sources
 
-- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 6 (`jis-2025-25.3.3-lem-6`), quoting S. Grusea and A. Labarre.
+- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 6, quoting S. Grusea and A. Labarre.

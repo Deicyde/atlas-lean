@@ -6,4 +6,4 @@ $S_{2i} \equiv 7 \pmod{10}$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 2, congruence (9), even indices.
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 2, congruence (9), even indices.

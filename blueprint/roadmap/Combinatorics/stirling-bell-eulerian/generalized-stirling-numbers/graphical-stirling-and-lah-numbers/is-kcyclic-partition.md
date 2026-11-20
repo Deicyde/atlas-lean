@@ -9,4 +9,4 @@ that is at most $i$), then $E(i, j)$ does not hold.
 
 ## Sources
 
-- Gonzales, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.tex>, lines 345–346.
+- Ken Joffaniel Gonzales, *Cyclic and Linear Graph Partitions and Normal Ordering*, Journal of Integer Sequences 25 (2022), Article 22.1.1, Definition 7, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gonzales/gonzales2.pdf>.

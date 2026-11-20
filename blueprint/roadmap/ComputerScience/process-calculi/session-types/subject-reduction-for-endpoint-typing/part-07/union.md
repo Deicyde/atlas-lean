@@ -1,3 +1,4 @@
 # Union of disjoint balanced contexts is balanced
 
-Disjoint balanced components form a balanced ownership frame union.
+Let $\Gamma$, $\Theta$ be semantically balanced ownership contexts with disjoint domains. Then
+$\Gamma \cup \Theta$ is semantically balanced.

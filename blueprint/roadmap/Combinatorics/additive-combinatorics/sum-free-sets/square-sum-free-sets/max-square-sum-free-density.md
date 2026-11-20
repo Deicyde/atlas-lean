@@ -1,4 +1,4 @@
-# Erdős Problem 438 (statement)
+# Erdős Problem 438: density of square-sum-free sets
 
 For a natural number $N$, let $M(N)$ be the largest size of
 a set $A \subseteq \{1, \dots, N\}$ such that no sum $a + b$ with $a, b \in A$, not necessarily

@@ -8,4 +8,4 @@ of the canonization procedure on $w 0^k$ ($w$ followed by $k$ zeros) yields $v 0
 
 ## Sources
 
-- E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Corollary 17 (`jis-2025-25.5.4-cor-17`).
+- Eric Chen, Adam Ge, Andrew Kalashnikov, Ella Kim, Evin Liang, Mira Lubashev, Matthew Qian, Rohith Raghavan, Benjamin Taycher, Samuel Wang and Tanya Khovanova, *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Corollary 17 (`jis-2025-25.5.4-cor-17`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Khovanova/khova43.html

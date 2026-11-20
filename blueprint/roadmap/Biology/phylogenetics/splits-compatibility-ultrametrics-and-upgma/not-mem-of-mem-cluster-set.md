@@ -1,3 +1,3 @@
 # Clusters seen from a leaf omit that leaf
 
-The clusters seen from `a` do not contain `a`.
+For every [unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md) and taxon $a$, no member of the [cluster set](../counting-binary-phylogenetic-trees/cluster-set.md) seen from $a$ contains $a$.

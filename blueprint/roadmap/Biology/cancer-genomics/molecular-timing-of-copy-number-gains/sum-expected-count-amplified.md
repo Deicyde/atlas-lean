@@ -1,4 +1,7 @@
 # Expected count of mutations on amplified copies
 
-The mutations of multiplicity at least two number `μ t #{i | desc i ≥ 2}` in expectation:
-they all arose before the event, on an amplified copy.
+Let a [gain history](gain-history.md) have descendant counts $\delta_i \le B$. Then for all real $\mu, t$,
+
+$$\sum_{m=2}^{B} E_m = \mu t\, \#\{i : \delta_i \ge 2\},$$
+
+where $E_m$ is the [expected count](expected-count.md).

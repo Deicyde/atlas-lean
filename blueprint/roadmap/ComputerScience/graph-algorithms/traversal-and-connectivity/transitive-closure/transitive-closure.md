@@ -8,4 +8,10 @@ $t^{(k+1)}_{ij} = t^{(k)}_{ij} \lor (t^{(k)}_{ik} \land t^{(k)}_{kj})$ for all $
 every operand from the saved matrix $t^{(k)}$, and it returns $t^{(n)}$. One time unit is
 charged for each cell assignment; reads, Boolean operations and matrix allocation are free.
 
-This is the saved-matrix recurrence of CLRS for the reflexive transitive closure.
+This is the saved-matrix recurrence of CLRS (fourth edition, Section 23.2) for the reflexive
+transitive closure.
+
+## Sources
+
+- T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein, *Introduction to Algorithms*, 4th ed.,
+  MIT Press, 2022, Section 23.2 (transitive closure of a directed graph).

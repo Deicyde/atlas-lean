@@ -5,7 +5,8 @@ the generalized degenerate hyperharmonic numbers $H^r_{n,\lambda}(\alpha)$, inde
 numbers $r$ (the order) and $n$, are defined by recursion on $r$. At order $0$ they are the
 degenerate harmonic terms: $H^0_{0,\lambda}(\alpha) = 0$ and
 $H^0_{n,\lambda}(\alpha) = (-1)^{n-1} \binom{\lambda}{n} / (\lambda \alpha^n)$ for $n \ge 1$,
-where $\binom{\lambda}{n}$ is the generalized binomial coefficient. For every order $r$,
+where $\binom{\lambda}{n}$ is the generalized binomial coefficient and a quotient by $0$ is read as $0$.
+For every order $r$,
 $H^{r+1}_{n,\lambda}(\alpha) = \sum_{k=1}^{n} H^r_{k,\lambda}(\alpha)$.
 
 In particular $H^r_{0,\lambda}(\alpha) = 0$ for $r \ge 1$, and $H^1_{n,\lambda}(\alpha)$ is the

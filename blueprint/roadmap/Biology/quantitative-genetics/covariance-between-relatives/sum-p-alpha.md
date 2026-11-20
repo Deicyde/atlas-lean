@@ -1,3 +1,3 @@
 # Average effects are centred
 
-Average effects are centred: `∑ p_a α_a = 0`.
+In every [single-locus model](locus-model.md), the [average effects](alpha.md) satisfy $\sum_{a \in A} p_a \alpha_a = 0$.

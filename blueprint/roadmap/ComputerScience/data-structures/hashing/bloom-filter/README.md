@@ -22,7 +22,7 @@
 - [False-positive rate as the expected k-th power of the set fraction](false-positive-prob-eq.md)
 - [Bloom's formula is a lower bound](classical-le-false-positive-prob.md)
 - [Exponential approximation is a lower bound on the false-positive rate](exp-approx-le-false-positive-prob.md)
-- [Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the unit interval](log-mul-log-one-sub-le.md)
+- [Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the open unit interval](log-mul-log-one-sub-le.md)
 - [Equality in the log-product bound holds only at $t = 1/2$](log-mul-log-one-sub-eq-iff.md)
 - [Exponential approximation of the Bloom filter false-positive rate](exp-approx.md)
 - [Exponential approximation at the optimal number of hash functions](exp-approx-at-optimum.md)

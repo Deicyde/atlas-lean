@@ -6,4 +6,4 @@ $7\binom{2}{2}, 7\binom{2}{1}, 7\binom{2}{0}$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Section 1.
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Section 1.

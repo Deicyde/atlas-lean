@@ -1,5 +1,6 @@
-# The Lagrange multiplier of the `π` update exists and is unique
+# Existence and uniqueness of the Lagrange multiplier of the constraint-vector update
 
-For positive `c` and
-nonnegative `d` on a nonempty finite alphabet there is exactly one `γ` with `d b + γ > 0` for
-all `b` and `∑ b, c b / (d b + γ) = 1`.
+Let $I$ be a nonempty finite set and $c, d : I \to \mathbb{R}$ with $c_b > 0$ and $d_b \ge 0$ for every $b$. Then there is exactly one real $\gamma$ such that
+
+- $d_b + \gamma > 0$ for every $b$, and
+- $\sum_b \dfrac{c_b}{d_b + \gamma} = 1$.

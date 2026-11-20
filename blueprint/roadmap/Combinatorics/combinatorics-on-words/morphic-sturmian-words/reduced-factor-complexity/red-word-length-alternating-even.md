@@ -10,4 +10,4 @@ The paper applies this to factors of the paperfolding word.
 
 ## Sources
 
-- John M. Campbell, James D. Currie, and Narad Rampersad, "Reduced Complexities for Sequences Over Finite Alphabets", Lemma 4.
+- John M. Campbell, James D. Currie and Narad Rampersad, *Reduced Complexities for Sequences Over Finite Alphabets*, INTEGERS 26 (2026), Article A34, Lemma 4, https://math.colgate.edu/~integers/aa34/aa34.pdf

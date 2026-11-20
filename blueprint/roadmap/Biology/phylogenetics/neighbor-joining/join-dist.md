@@ -1,5 +1,5 @@
 # Cluster dissimilarity after a neighbor-joining step
 
-The cluster dissimilarity after joining `a` and `b`: the new cluster `a ∪ b` is at
-`(D a c + D b c - D a b) / 2` from every other cluster `c`, and at `0` from itself; other
-values are unchanged.
+For a cluster dissimilarity $D$ and clusters $a, b$, the dissimilarity after joining $a$ and $b$ is
+
+$$D'(u, v) = \begin{cases} 0 & u = v = a \cup b,\\ \frac12\bigl(D(a, v) + D(b, v) - D(a, b)\bigr) & u = a \cup b \ne v,\\ \frac12\bigl(D(a, u) + D(b, u) - D(a, b)\bigr) & v = a \cup b \ne u,\\ D(u, v) & \text{otherwise.}\end{cases}$$

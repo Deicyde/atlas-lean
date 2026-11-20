@@ -10,4 +10,4 @@ The set $A$ must be nonempty, which the paper leaves implicit.
 
 ## Sources
 
-- W. T. Gowers, B. Green, F. Manners, and T. Tao, `On a conjecture of Marton`, Annals of Math, 201 (2) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_conjecture_of_marton` of the lean-eval benchmark.
+- William Timothy Gowers, Ben Green, Freddie Manners, and Terence Tao, "On a conjecture of Marton", Annals of Math, 201 (2) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_conjecture_of_marton` of the lean-eval benchmark.

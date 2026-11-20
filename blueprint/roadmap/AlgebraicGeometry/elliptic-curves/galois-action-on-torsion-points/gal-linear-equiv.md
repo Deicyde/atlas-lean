@@ -1,4 +1,4 @@
-# Galois automorphisms as linear automorphisms of $W(p)$
+# Galois automorphisms as linear automorphisms of $p$-torsion points
 
 Let $W$ be a Weierstrass curve
 over $\mathbb{Q}$, $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular

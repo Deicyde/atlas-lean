@@ -1,3 +1,5 @@
 # Equivalent retyping preserves invocation priority
 
-Actual active-payload ranks preserve the strict shared invocation priority.
+Let $\sigma = (\pi, r, c)$ be a service signature and $\Delta \approx \Xi$ equivalent ownership
+contexts. If $\pi$ is below the rank of every active capability of $\Delta$, then $\pi$ is below the
+rank of every active capability of $\Xi$.

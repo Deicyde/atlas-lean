@@ -6,4 +6,4 @@ variables $X_0, X_1, \dots$, satisfies $C^M_{0,1} = X_1$ and $C^M_{2,2} = X_2$.
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.5.
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), no. 4, 290–304, Definition 2.5.

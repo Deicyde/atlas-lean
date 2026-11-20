@@ -10,4 +10,4 @@ number $n \ge h + 3$ satisfies $R_h(n) \ge n^{1/h} - (7 + (\log n)/h)\, n^{1/(2h
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 13 (`jis-2024-24.1.2-thm-13`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 13 (`jis-2024-24.1.2-thm-13`).

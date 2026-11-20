@@ -9,8 +9,10 @@ sums of the Dirichlet convolution of $\alpha$ and $\beta$ over monic divisors, w
 $D[\alpha, \beta](k) = 0$ for $k < 0$. Then for every monic $f \in F[T]$ and every natural number
 $n$,
 
-$$S_f[\alpha, \beta](n) = \sum_{d \mid f} \alpha(d)\, \beta(f/d) \sum_{\ell \mid d} \mu(\ell)\,
-\beta(\ell)\, D[\alpha, \beta](n - \deg(f \ell)),$$
+$$
+S_f[\alpha, \beta](n) = \sum_{d \mid f} \alpha(d)\, \beta(f/d) \sum_{\ell \mid d} \mu(\ell)\,
+\beta(\ell)\, D[\alpha, \beta](n - \deg(f \ell)),
+$$
 
 where $d$ runs over the monic divisors of $f$, $\ell$ over the monic divisors of $d$, and
 $n - \deg(f \ell)$ is computed in the integers.

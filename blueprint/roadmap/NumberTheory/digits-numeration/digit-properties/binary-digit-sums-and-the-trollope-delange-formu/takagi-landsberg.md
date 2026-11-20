@@ -8,4 +8,4 @@ $|a| < 1$, and at dyadic rationals $x$ it is a finite sum.
 
 ## Sources
 
-- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1.1, equation (TakagiLandsberg).
+- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1.1, Equation (4).

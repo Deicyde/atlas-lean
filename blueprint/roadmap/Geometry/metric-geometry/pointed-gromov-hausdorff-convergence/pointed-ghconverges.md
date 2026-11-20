@@ -10,5 +10,5 @@ $\varepsilon$ from some point of the image of $f$.
 
 No measurability or continuity is required of $f$, and the spaces need not be complete or
 separable, so this extends the metric part of the pointed measured Gromov–Hausdorff convergence
-of Gigli–Mondino–Savaré, who use Borel maps on complete separable spaces. Open balls are an
-implementation choice for their unspecified balls $B_R$.
+of Gigli–Mondino–Savaré, who use Borel maps on complete separable spaces. The balls are taken
+open; Gigli–Mondino–Savaré do not specify whether their balls $B_R$ are open or closed.

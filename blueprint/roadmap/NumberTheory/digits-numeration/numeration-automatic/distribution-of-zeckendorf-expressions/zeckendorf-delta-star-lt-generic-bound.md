@@ -1,6 +1,6 @@
 # Generic upper bound for $\delta^*$ (Lemma 17)
 
-**Generic upper bound for $\delta^*$ (Lemma 17).** Let $L$ and $\tilde L$ be lists of length at
+Let $L$ and $\tilde L$ be lists of length at
 least $2$ with nonzero first entries whose periodic Zeckendorf collections satisfy
 $E \subsetneq \tilde E$, and let $Q$ and $\tilde Q$ be fundamental sequences of the collections
 $E^*$ and $\tilde E^*$ of $L$ and $\tilde L$. Write $\omega$ and $\tilde\omega$ for the first terms

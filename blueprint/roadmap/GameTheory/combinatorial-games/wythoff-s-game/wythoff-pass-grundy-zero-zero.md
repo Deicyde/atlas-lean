@@ -8,4 +8,4 @@ terminal position.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (`M₄(x, y, p) = ∅` if `x + y = 0`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 ($M_4(x, y, p) = \emptyset$ if $x + y = 0$).

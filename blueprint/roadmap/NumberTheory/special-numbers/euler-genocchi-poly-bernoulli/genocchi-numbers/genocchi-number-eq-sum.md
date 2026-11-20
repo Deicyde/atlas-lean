@@ -8,4 +8,4 @@ $G_n = (-1)^n \, n \sum_{k=1}^{n-r} c_k \, S(n-r, k)$.
 
 ## Sources
 
-- Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Theorem 1.
+- Schehrazade Zerroukhat and Laala Khaldi, *A Note on Explicit Formulas for Bernoulli and Genocchi Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.7, Theorem 1.

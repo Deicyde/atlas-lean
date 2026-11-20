@@ -6,4 +6,4 @@ is $\frac{\ell - k + 1}{\ell + 1} \binom{k + \ell}{k}$.
 
 ## Sources
 
-- Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Lemma 21.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions", Journal of Integer Sequences 29 (2026), Article 26.1.1, Lemma 21.

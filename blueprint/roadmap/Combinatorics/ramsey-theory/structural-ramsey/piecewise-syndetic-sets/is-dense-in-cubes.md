@@ -6,4 +6,4 @@ meets $C$.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (definition of `m_{i-1}`-dense in `M'`).
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Definition 4 ($d$-dense in $M$).

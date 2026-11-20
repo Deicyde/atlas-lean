@@ -1,3 +1,3 @@
 # Boxes satisfy the additive doubling bound for $d \ge 1$
 
-For `d ≥ 1`, `ecz_u` satisfies the doubling bound along the scales `K_j = 2^{j+1} - 1`.
+For every $d \ge 1$ and $t \in \mathbb{R}$, the [additive doubling bound](ecz-additive-doubling-bound.md) holds at $(d, t)$.

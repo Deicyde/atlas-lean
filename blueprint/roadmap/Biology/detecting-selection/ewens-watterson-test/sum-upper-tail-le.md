@@ -1,5 +1,7 @@
 # Validity of a discrete upper-tail p-value
 
-For nonnegative masses `q` on a finite set
-`s` and a statistic `T`, the upper-tail p-value `p x = ∑_{y ∈ s, T x ≤ T y} q y` satisfies
-`∑_{x ∈ s, p x ≤ t} q x ≤ t` for every `t ≥ 0`.
+Let $s$ be a finite set, $q, T : s \to \mathbb{R}$ with $q \ge 0$, and $t \ge 0$. With the upper-tail weight $p(x) = \sum_{y \in s,\ T(x) \le T(y)} q(y)$,
+
+$$\sum_{x \in s,\ p(x) \le t} q(x) \le t.$$
+
+When $q$ is a probability mass function on $s$ and $T$ a test statistic, $p(x)$ is the upper-tail p-value of $x$, and the inequality says that the test rejecting when $p \le t$ has level $t$.

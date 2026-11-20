@@ -12,4 +12,7 @@ for all $x \in A^{\mathbb{Z}}$ and $k \in \mathbb{Z}$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem (statement id `curtis-hedlund-s1`).
+- Gustav A. Hedlund, *Endomorphisms and automorphisms of the shift dynamical system*, Math. Systems Theory 3
+  (1969), no. 4, 320–375, DOI 10.1007/bf01691062.
+- Curtis–Hedlund–Lyndon theorem, Wikipedia,
+  <https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem>.

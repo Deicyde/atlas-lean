@@ -1,3 +1,3 @@
 # Relation of two terms beta-equal to a fixed term
 
-Both arguments belong to the fixed beta-conversion class of `x`.
+For a term $x$ of the untyped term model, the relation that holds of $(f, g)$ when $f =_\beta x$ and $g =_\beta x$ is a [β-invariant relation](rel.md): both arguments lie in the β-conversion class of $x$.

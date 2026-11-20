@@ -1,3 +1,5 @@
 # Mean of the beta law
 
-For `α, β > 0`, `E[X] = α / (α + β)`.
+For $\alpha, \beta > 0$, a random variable $X \sim \operatorname{Beta}(\alpha, \beta)$ has mean
+
+$$\mathbb E[X] = \frac{\alpha}{\alpha + \beta} .$$

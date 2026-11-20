@@ -1,12 +1,12 @@
 # First-order transitions of the random-cluster model
 
-## A. The free percolation probability
+## The free percolation probability
 
 - [Free percolation probability](fk-theta-free.md)
 - [Nonnegativity of the free percolation probability](fk-theta-free-nonneg.md)
 - [Free percolation probability is at most one](fk-theta-free-le-one.md)
 
-## B. First-order transitions
+## First-order transitions
 
 - [First-order transition of the random-cluster model](is-first-order-transition.md)
 - [First-order transition from $\theta^0 = 0$ and $\theta^1 > 0$](first-order-transition-of-contour.md)

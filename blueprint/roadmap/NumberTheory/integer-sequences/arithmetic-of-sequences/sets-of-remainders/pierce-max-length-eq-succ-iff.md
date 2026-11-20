@@ -14,5 +14,5 @@ $S_0(2) = \{1\}$.
 
 ## Sources
 
-- the forward direction of the first equivalence (for `t ≥ 1`) is proved as `S_eq_singleton_zero_of_maxLength_eq` in `FormalizedPapers/NumberTheory/BaraskarGokhaleJainKiezun2026`.
+- Omkar Baraskar, Prashant Gokhale, Sarvagya Jain, and Adam Kieżun, *Asymptotic Behavior of Iterated Sets of Remainders*, arXiv:2609.24412 (2026), for the implication from $P(n) = t + 1$ to $S_t(n) = \{0\}$ when $t \ge 1$.
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 19.

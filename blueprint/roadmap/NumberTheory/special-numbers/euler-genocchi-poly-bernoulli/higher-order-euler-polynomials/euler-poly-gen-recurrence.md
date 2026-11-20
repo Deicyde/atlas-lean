@@ -1,4 +1,4 @@
-# Recurrence for Euler polynomials of order α
+# Recurrence for Euler polynomials of order $\alpha$
 
 Let $E_m(x)$ denote the Euler polynomial
 and $E_m^{(\alpha)}(x)$ the Euler polynomial of order $\alpha$. For every complex number
@@ -9,4 +9,4 @@ where the sum is empty when $n = 1$.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Proposition 3.2.
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Proposition 3.2.

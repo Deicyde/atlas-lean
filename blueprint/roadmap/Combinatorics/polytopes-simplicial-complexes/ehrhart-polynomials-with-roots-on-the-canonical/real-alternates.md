@@ -7,7 +7,7 @@ $b_1 \le \dots \le b_n$ (so all roots of $f$ and $g$ are real), and either
 $a_1 \le b_1 \le a_2 \le b_2 \le \dots \le a_n \le b_n$ or
 $b_1 \le a_1 \le b_2 \le a_2 \le \dots \le b_n \le a_n$.
 
-This equal-degree notion is used for two clauses of Fisk's Leibniz rule.
+
 
 ## Sources
 

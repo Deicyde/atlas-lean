@@ -7,4 +7,4 @@ constant is $\sqrt{\pi/2}$.
 
 ## Sources
 
-- optimizationproblems `constants/20c.md`, classical Gaussian lower-bound row.
+- Catalogue https://github.com/teorth/optimizationproblems, `constants/20c.md`, the Gaussian lower bound.

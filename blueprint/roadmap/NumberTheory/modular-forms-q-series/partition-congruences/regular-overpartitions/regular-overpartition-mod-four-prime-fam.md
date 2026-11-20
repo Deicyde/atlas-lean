@@ -8,7 +8,7 @@ to $3$ modulo $4$. If $j \not\equiv 0 \pmod{p_{k+1}}$, then
 
 $$A_\ell\big(p_1^2 \cdots p_k^2 \, p_{k+1} \, (p_{k+1}(4n + 1) + 4j)\big) \equiv 0 \pmod 4.$$
 
-The paper takes $j$ to be an integer; here $j$ is a natural number.
+The paper takes $j$ to be an integer; in the statement above $j$ is a natural number.
 
 ## Sources
 

@@ -8,4 +8,4 @@ $$B_n^* = \sum_{i=0}^{n} \frac{s(n, i)}{i+1}.$$
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Proposition 11.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Proposition 11.

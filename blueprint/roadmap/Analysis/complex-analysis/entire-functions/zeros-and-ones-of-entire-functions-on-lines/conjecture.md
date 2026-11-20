@@ -8,4 +8,4 @@ a straight line is a set $\{a + tv : t \in \mathbb{R}\}$ with $a, v \in \mathbb{
 
 ## Sources
 
-- Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).

@@ -10,4 +10,4 @@ converges absolutely, and its sum is $\left(\log \sum_{n=0}^{\infty} C_n x^n\rig
 
 ## Sources
 
-- Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers", Journal of Integer Sequences 19 (2016), Article 16.1.5, Theorem `eq:k_gf`, lines 229-234, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex>.
+- Hongwei Chen, *Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers*, J. Integer Seq. 19 (2016), Article 16.1.5, Theorem 5 (equation (17)), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex>.

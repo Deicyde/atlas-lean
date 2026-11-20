@@ -6,4 +6,4 @@ reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), NOT-ALL-EQUAL 3-SAT; T. J. Schaefer, "The complexity of satisfiability problems" (1978).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), NOT-ALL-EQUAL 3-SAT; Thomas J. Schaefer, "The complexity of satisfiability problems" (1978).

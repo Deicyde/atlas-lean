@@ -6,4 +6,5 @@ $[\alpha, \alpha + 1]$ is $\lfloor N/x - \alpha \rfloor$.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

@@ -6,4 +6,4 @@ $k$ is unique; it is called the quotient of $n$.
 
 ## Sources
 
-- Mohamed Ayad and Rachid Bouchenna, "Which Integer Divides the Reverse of Any of Its Multiples?", Section 1 (terminology).
+- Mohamed Ayad and Rachid Bouchenna, *Which Integer Divides the Reverse of Any of Its Multiples?*, INTEGERS 25 (2025), Article A37, Definition 2.

@@ -7,4 +7,4 @@ are $2$ or one of two types of part $1$, with no two adjacent parts $1$ of the s
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Theorem 5.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Theorem 5.

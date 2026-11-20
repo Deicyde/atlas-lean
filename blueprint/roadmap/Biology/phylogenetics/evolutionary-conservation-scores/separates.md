@@ -1,4 +1,3 @@
 # Leaf set meeting both sides of a tree edge
 
-Whether the leaf set `S` meets both sides of an edge with leaf set `B` below it, inside a
-tree with leaf set `U`: `S ∩ B` and `S ∩ (U \ B)` are nonempty.
+For finite sets $U, S, B$, the set $S$ meets both sides of $B$ within $U$ if $S \cap B$ and $S \cap (U \setminus B)$ are both nonempty.

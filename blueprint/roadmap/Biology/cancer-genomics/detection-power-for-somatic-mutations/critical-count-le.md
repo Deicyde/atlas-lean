@@ -1,3 +1,3 @@
 # Upper bound on the critical count
 
-The critical count is at most `n + 1` (for `FPR ≥ 0`).
+For $\mathrm{FPR} \ge 0$, every natural number $n$ and every real $p_0$, the [critical count](critical-count.md) satisfies $k \le n + 1$.

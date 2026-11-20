@@ -11,4 +11,4 @@ Posed as an open question, it has been answered in the affirmative.
 
 ## Sources
 
-- AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: for every `ℓ`, does there exist a graph `G →₂ K₃` which on every `ℓ` vertices induces a subgraph of a tree of triangles.
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 7 *Local trees of triangles*, Problem 1.14 (Vojtěch Rödl), http://www.aimpl.org/graphramsey/1/: for every $\ell$, does there exist a graph $G \xrightarrow{2} K_3$ which on every $\ell$ vertices induces a subgraph of a tree of triangles.

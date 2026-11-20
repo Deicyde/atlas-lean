@@ -11,4 +11,4 @@ $(\mathcal O_K / \mathfrak m_0)^\times$.
 
 ## Sources
 
-- N406, Theorem 21.8, Section 21.3 (ATLAS NumberTheoryI item N406): the native-API finite-congruence step corresponding to [`finitePartMapHom_ker_iff`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011), used by the weak-approximation argument before residue/sign surjectivity and by [`theorem_21_8_quotient_iso`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L2607-L2647). It is not the generalized weak-approximation theorem and not the final N406 result.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8, from its proof: [the kernel criterion for the finite residue map](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011) and [the quotient isomorphism](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L2607-L2647).

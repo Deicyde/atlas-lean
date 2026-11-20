@@ -9,4 +9,4 @@ derivative of $g$ at $x$ is surjective for every $x \in M$ with $g(x) = 0$.
 
 ## Sources
 
-- R. Thom, Comment. Math. Helv. 28 (1954) 17–86 transversality; M. Hirsch, Differential Topology; Guillemin-Pollack, Differential Topology; J. Lee, ISMs; Lean states compact-source uniform-approx regular-value-zero corollary.
+- R. Thom, Comment. Math. Helv. 28 (1954) 17–86 transversality; M. Hirsch, Differential Topology; Guillemin-Pollack, Differential Topology; J. Lee, Introduction to Smooth Manifolds.

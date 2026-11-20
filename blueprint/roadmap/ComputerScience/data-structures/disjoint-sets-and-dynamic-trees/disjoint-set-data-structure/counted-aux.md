@@ -8,5 +8,5 @@ obtaining an array $A'$ and a root $r$, charges $(0, 1)$ for one parent write, a
 with the parent of $x$ set to $r$, together with $r$. The first cost coordinate thus counts root
 tests and the second counts parent writes.
 
-The returned array and root are exactly those of the Batteries FIND auxiliary; only the costs
+The returned array and root are exactly those of the uncounted FIND auxiliary; only the costs
 are added.

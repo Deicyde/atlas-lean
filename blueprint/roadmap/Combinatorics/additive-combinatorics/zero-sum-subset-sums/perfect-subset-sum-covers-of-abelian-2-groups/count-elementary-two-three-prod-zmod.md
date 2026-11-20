@@ -9,4 +9,4 @@ where $2^{2n-2}$ and $2^{3n-3}$ are integer powers of $2$ (fractional at $n = 0$
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 26 (`jis-2025-25.7.8-cor-26`). The record's third identity, for `(ℤ₂)^4 ⊕ ℤ_{2^n}`, is omitted: it fails as printed at `n = 1` (`C((ℤ₂)^5) = 83328`, formula `72328`).
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 26 (`jis-2025-25.7.8-cor-26`). The paper's third identity, for $(\mathbb{Z}_2)^4 \oplus \mathbb{Z}_{2^n}$, is omitted: it fails as printed at $n = 1$ ($C((\mathbb{Z}_2)^5) = 83328$, formula $72328$).

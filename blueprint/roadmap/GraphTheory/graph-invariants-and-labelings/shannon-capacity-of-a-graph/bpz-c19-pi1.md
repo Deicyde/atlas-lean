@@ -4,8 +4,8 @@ This is the Buys–Polak–Zuiddam
 (BPZ) profile whose code, pairs, auxiliary and neutral coordinates are $7666$, $2$, $7666$
 and $7661$.
 
-Only these four integers are recorded, not BPZ's four-dimensional construction behind them.
+The profile consists of these four integers alone; BPZ obtain them from a four-dimensional construction.
 
 ## Sources
 
-- BPZ, arXiv:2607.29681, nineteen-cycle construction.
+- Pjotr Buys, Sven Polak and Jeroen Zuiddam, *Lean-verified lower bounds for the Shannon capacity of odd cycles*, arXiv:2607.29681v1 (2026), nineteen-cycle construction; the authors credit ChatGPT 5.6 Sol Pro and Claude Opus 5 for finding the improved bounds.

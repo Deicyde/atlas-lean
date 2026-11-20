@@ -7,9 +7,14 @@ $T_{u + v} = T_u \circ T_v$ for all $u, v \in \mathbb{Z}^d$, every $T_v$ is meas
 for $\mu$, and the action is free (for every $v \ne 0$ the set of fixed points of $T_v$ has
 $\mu$-measure zero). Then for every integer $N \ge 1$ and every $\varepsilon \in (0, \infty]$
 there is a measurable set $B \subseteq \Omega$ such that the images $T_v(B)$, for $v$ in the
-integer box $[0, N)^d$, are pairwise disjoint and their union has measure at least
+integer box $[0, N)^d$, are pairwise disjoint and their union has (outer) measure at least
 $1 - \varepsilon$.
 
 ## Sources
 
-- D. S. Ornstein and B. Weiss, *Entropy and isomorphism theorems for actions of amenable groups*, J. Anal. Math. 48 (1987), 1-141 — Theorem 5.2 establishes the multidimensional (and amenable-group) Rokhlin lemma. Listed as §109 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). No formalization found in any major prover. Problem `ornstein_weiss_rokhlin` of the lean-eval benchmark.
+- Donald S. Ornstein and Benjamin Weiss, *Entropy and isomorphism theorems for actions of amenable groups*,
+  J. Anal. Math. 48 (1987), 1–141, DOI 10.1007/bf02790325, Theorem 5.2 (the Rokhlin lemma for free actions of
+  amenable groups, in particular $\mathbb{Z}^d$).
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §109 (Rokhlin-Kakutani approximation; the
+  Ornstein–Weiss generalization to free $\mathbb{Z}^d$-actions), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `ornstein_weiss_rokhlin` of the lean-eval benchmark.

@@ -11,7 +11,7 @@
 - [Hadwiger covering number](hadwiger-covering-number.md)
 - [Symmetric Hadwiger covering number](symmetric-hadwiger-covering-number.md)
 - [Pointwise form of covering by translates](covered-by-translates-iff.md)
-- [Interior-translate covers unfold to translate covers](covered-by-interior-translates-iff.md)
+- [Covers by interior translates are covers by translates of the interior](covered-by-interior-translates-iff.md)
 - [The translate covering number is the least covering count](translate-covering-number-eq-of-is-least.md)
 - [A least uniform bound is the Hadwiger covering number](hadwiger-covering-number-eq-of-is-least.md)
 - [A least uniform bound is the symmetric Hadwiger covering number](symmetric-hadwiger-covering-number-eq-of.md)

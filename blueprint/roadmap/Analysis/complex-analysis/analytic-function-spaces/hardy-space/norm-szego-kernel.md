@@ -1,3 +1,3 @@
 # Norm of the Szegő kernel
 
-The norm of the Szegő kernel is `1 / √(1 - ‖z‖²)`.
+For every $z \in \mathbb{C}$ with $|z| < 1$, the [Szegő kernel](szego-kernel.md) satisfies $\|k_z\| = 1/\sqrt{1 - |z|^2}$.

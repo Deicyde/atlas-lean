@@ -8,4 +8,4 @@ The inverse is computed by unbounded search for the unique preimage.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (inverses of recursive permutations).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (inverses of recursive permutations).

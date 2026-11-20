@@ -10,9 +10,9 @@ derivative $p'$, and such that every complex root $z$ of $p$ satisfies $|z| \le 
 $|z| = \lambda$ only for $z = \lambda$. Then there is a constant $C > 0$ such that
 $a_n = C \lambda^n + o(\lambda^n)$ as $n \to \infty$, and $a_{n+1} / a_n \to \lambda$.
 
-The source indexes the sequence from $1$; the $a_n$ here is the source's $a_{n+1}$, and $A_j$,
+The source indexes the sequence from $1$; the $a_n$ above is the source's $a_{n+1}$, and $A_j$,
 $c_j$ are the source's weights and initial values.
 
 ## Sources
 
-- Passawan Noppakaew and Thanakorn Prinyasart, "Complete Sequences of Weighted r-Generalized Fibonacci Powers," Journal of Integer Sequences 24 (2021), Article 21.5.4, Proposition, lines 119–126, https://cs.uwaterloo.ca/journals/JIS/VOL24/Prinyasart/prin3.tex. It follows from `binet_general`; the hypotheses `hlam_simple` and `hlam_dom` are unused and keep the source's shape.
+- Passawan Noppakaew and Thanakorn Prinyasart, "Complete Sequences of Weighted r-Generalized Fibonacci Powers," Journal of Integer Sequences 24 (2021), Article 21.5.4, Proposition 3, https://cs.uwaterloo.ca/journals/JIS/VOL24/Prinyasart/prin3.html.

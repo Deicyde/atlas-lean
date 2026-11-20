@@ -10,4 +10,4 @@ This is the first level of Post's theorem.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.4 (Post).
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987 (Post).

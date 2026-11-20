@@ -1,6 +1,6 @@
 # Closed range from a Fredholm $T^*T$
 
-**Closed range from a Fredholm $T^*T$.** Let $X$ and $Y$ be complex Hilbert spaces and let
+Let $X$ and $Y$ be complex Hilbert spaces and let
 $T : X \to Y$ be a bounded linear operator with Hilbert space adjoint $T^* : Y \to X$. If
 $T^*T : X \to X$ is a Fredholm operator, then the range of $T$ is closed in $Y$.
 

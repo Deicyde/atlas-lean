@@ -7,4 +7,4 @@ $1 - x - x^2 \ne 0$ and $G^{(a,b)}(x)$ is an integer.
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1 (the paper says `x = p / q` is good for `(a, b)` when `G^{(a,b)}(x)` is an integer; Theorem 1 uses the same integrality without the word good).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1 (the paper says $x = p/q$ is good for $(a, b)$ when $G^{(a,b)}(x)$ is an integer; Theorem 1 uses the same integrality without the word good).

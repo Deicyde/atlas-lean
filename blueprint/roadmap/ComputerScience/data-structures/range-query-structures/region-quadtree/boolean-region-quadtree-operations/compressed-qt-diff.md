@@ -1,3 +1,4 @@
 # Quadtree difference preserves compression
 
-Difference preserves compression when both inputs are compressed.
+If Boolean region quadtrees $s$ and $t$ are both compressed, then their difference
+$s \setminus t$ is compressed.

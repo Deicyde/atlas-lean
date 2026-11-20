@@ -10,4 +10,4 @@ such $C$) equals $1$.
 
 ## Sources
 
-- the `L²` isometry recorded in Bañuelos--Janakiraman (2008), introduction: `‖B‖₂ = 1`.
+- the $L^2$ isometry recorded in Bañuelos–Janakiraman (2008), introduction: $\|B\|_2 = 1$.

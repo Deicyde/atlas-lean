@@ -1,3 +1,5 @@
-# Lower tail is asymptotic to the combined tail
+# Strict absolute tail is asymptotic to the combined tail
 
-The lower tail is asymptotically the combined tail.
+Let $\mu$ be a probability measure on $\mathbb{R}$ with combined tail
+$T(x) = \mu((x, \infty)) + \mu((-\infty, -x))$, and suppose that $T$ is regularly varying of
+some index $-\alpha \in \mathbb{R}$. Then $\mu\{y : |y| > x\} / T(x) \to 1$ as $x \to \infty$.

@@ -1,9 +1,3 @@
 # The Smith–Waterman score
 
-Given a substitution score $\sigma$ and a gap score $g$, the
-Smith–Waterman score of two sequences $x$ and $y$ is the maximum of the terminal Smith–Waterman
-cell $H(p, q)$ over all pairs of a prefix $p$ of $x$ and a prefix $q$ of $y$ (the empty prefixes
-included).
-
-For $g \le 0$ this is the optimal local alignment score, the maximum Needleman–Wunsch score over
-pairs of infixes; for $g > 0$ it can be smaller.
+The Smith–Waterman score of $x$ and $y$ is $\mathrm{SW}(x, y) = \max\bigl(0, \max_{(p, q)} H(p, q)\bigr)$, the maximum over the [prefix pairs](prefix-pairs.md) of the [terminal cell](sw-cell-score.md). For $g \le 0$ it is the [local score](local-score.md); for $g > 0$ it can be smaller.

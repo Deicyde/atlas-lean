@@ -10,8 +10,10 @@ $1 + (x^{h+1} - x^\ell - x^{2h} + x^{h+\ell})/(1 - x)$, where $x = u^{\deg P}$. 
 constant $C$ such that for every $n \ge \ell$ the number $N$ of monic polynomials of degree $n$
 over $F$ that are $h$-full and $\ell$-free satisfies
 
-$$\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1}) \Bigr|
-\le C q^{n/(h+1) + \varepsilon n}.$$
+$$
+\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1}) \Bigr|
+\le C q^{n/(h+1) + \varepsilon n}.
+$$
 
 ## Sources
 

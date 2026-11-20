@@ -1,3 +1,3 @@
 # Unit rule $1$ of the cut-free system
 
-Rule `1` for CF.
+The cut-free system CF proves the sequent `⊢ 1`.

@@ -7,4 +7,4 @@ For $k = 0$ this is the initial value $R_{p,0} = p^2 + p + 1$ of the Lucas–Leo
 
 ## Sources
 
-- Belkhir and Tan, INTEGERS 25 (2025), Article A57, Definition 2.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Definition 2.

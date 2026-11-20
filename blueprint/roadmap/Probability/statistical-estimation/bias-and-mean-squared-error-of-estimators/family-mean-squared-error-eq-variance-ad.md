@@ -10,4 +10,4 @@ $W$ under $P_\theta$ plus the square of the family bias of $W$ at $\theta$.
 
 ## Sources
 
-- equation 7.3.1, in family form for a single fixed estimator.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, equation (7.3.1), in family form for a single fixed estimator.

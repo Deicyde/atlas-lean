@@ -18,4 +18,4 @@ perpendicular from $f_j$ to the $i$-th side.
 
 ## Sources
 
-- [AMR-050-0031] Reznik, Garcia and Koiller, Eighty New Invariants of N-Periodics in the Elliptic Billiard (2021), Table row $k_{602}$, arXiv:2004.12497.
+- Reznik, Garcia and Koiller, Eighty New Invariants of N-Periodics in the Elliptic Billiard (2021), Table row $k_{602}$, arXiv:2004.12497.

@@ -5,6 +5,7 @@
 - [3-dimensional matching](3-dimensional-matching/README.md)
 - [Exact cover](exact-cover/README.md)
 - [Exact cover by 3-sets](exact-cover-by-3-sets/README.md)
+- [Exact hitting set](exact-hitting-set/README.md)
 - [Facility location](facility-location/README.md)
 - [Generalized assignment problem](generalized-assignment-problem/README.md)
 - [Maximum coverage](maximum-coverage/README.md)

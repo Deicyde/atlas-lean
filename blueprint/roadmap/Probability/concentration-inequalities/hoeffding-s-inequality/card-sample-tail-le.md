@@ -1,8 +1,9 @@
 # Hoeffding's bound for sampling without replacement
 
-Hoeffding's upper-tail bound for sampling without replacement, stated as a count.
+Let $s$ be a nonempty finite set, let $R > 0$ and $c : s \to [0, R]$, let $n \in \mathbb{N}$ and
+$t \ge 0$, and put $\bar c = \frac{1}{|s|} \sum_{i \in s} c_i$. Then the number of $n$-element
+subsets $S \subseteq s$ with
 
-Among the `n`-element subsets `S` of `s`, at most
-`exp (-2 * n * t ^ 2) * choose (#s) n` satisfy
-`n * mean(c) + t * n * R ≤ ∑ i ∈ S, c i`. The event is non-strict; `n = 0` and
-`#s < n` are included without separate assumptions.
+$$n \bar c + t n R \le \sum_{i \in S} c_i$$
+
+is at most $e^{-2 n t^2} \binom{|s|}{n}$. The cases $n = 0$ and $|s| < n$ are included.

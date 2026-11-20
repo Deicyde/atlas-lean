@@ -5,9 +5,9 @@
 - [Linear mutation–selection recursion](lin-step.md)
 - [Closed-form orbit of the linear mutation–selection recursion](lin-step-iterate.md)
 - [Unique fixed point $U/s$ of the linear recursion](lin-step-eq-self-iff.md)
-- [Global attraction](tendsto-lin-step-iterate.md)
+- [Global attraction of the mutation–selection equilibrium](tendsto-lin-step-iterate.md)
 - [Fraction of de novo loss-of-function alleles](de-novo-fraction.md)
-- [At equilibrium the de novo fraction is `s_het`](de-novo-fraction-eq.md)
+- [At equilibrium the de novo fraction equals the heterozygote selection coefficient](de-novo-fraction-eq.md)
 
 ## The linear Wright–Fisher chain with arbitrary population sizes
 
@@ -29,8 +29,8 @@
 - [Loss-of-function frequency after selection](selected.md)
 - [One diploid generation of selection and mutation](diploid-step.md)
 - [Mean fitness under multiplicative fitness](mean-fitness-mult.md)
-- [`U / s` is an equilibrium](diploid-step-mult-fixed.md)
+- [The frequency $U/s$ is an equilibrium](diploid-step-mult-fixed.md)
 - [Mean fitness at the multiplicative mutation–selection equilibrium](mean-fitness-mult-at-equilibrium.md)
 - [Haldane–Muller load](load-mult-at-equilibrium.md)
 - [Positivity of mean fitness for allele frequencies below one](mean-fitness-pos.md)
-- [Equilibria lie at or below `U / s`](le-div-of-diploid-step-eq.md)
+- [Equilibria lie at or below $U/s$](le-div-of-diploid-step-eq.md)

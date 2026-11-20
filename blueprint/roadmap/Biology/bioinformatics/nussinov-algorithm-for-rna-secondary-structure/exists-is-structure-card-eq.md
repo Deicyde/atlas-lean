@@ -1,4 +1,3 @@
-# Optimality
+# The Nussinov number of pairs is attained
 
-Some secondary structure has exactly `nussinov pair m s` pairs, so the
-recursion computes the maximum number of pairs over all non-crossing structures.
+For every complementarity relation, minimum hairpin size $m$ and sequence $s$, some [secondary structure](is-structure.md) $P$ on $s$ has $|P| = \nu(s)$, where $\nu$ is the [Nussinov recursion](nussinov.md): the recursion computes the maximum number of pairs.

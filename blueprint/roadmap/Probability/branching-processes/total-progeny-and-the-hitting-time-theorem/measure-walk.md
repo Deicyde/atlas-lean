@@ -1,5 +1,7 @@
 # Probability of the offspring walk event as a walk weight
 
-Under `ν^{⊗n}`, the event `ξ_1 + ⋯ + ξ_n + k = n` has measure `W_p(k, n)` with
-`p(j) = ν{j}`. When `ν` is a probability measure this is the probability
-`P(ξ_1 + ⋯ + ξ_n = n - k)`.
+Let $\nu$ be a finite measure on $\mathbb{N}$, let $k, n \in \mathbb{N}$ and put
+$p(j) = \nu(\{j\})$. Under the product measure $\nu^{\otimes n}$ on $\mathbb{N}^n$, the set
+$\{x : x_0 + \dots + x_{n-1} + k = n\}$ has measure equal to the [walk weight](walk-weight.md)
+$W_p(k, n)$. When $\nu$ is a probability measure this is the probability
+$P(\xi_1 + \dots + \xi_n + k = n)$ for i.i.d. $\xi_i$ with law $\nu$.

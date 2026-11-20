@@ -8,4 +8,4 @@ oracle $P$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.1 (the jump).
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987 (the jump).

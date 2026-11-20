@@ -15,4 +15,4 @@ $\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s (s x/(x-1))^s \sum_{i}
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 52 (`jis-2025-25.5.7-cor-52`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 52.

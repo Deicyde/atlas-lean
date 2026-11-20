@@ -10,4 +10,4 @@ where $\binom{3n}{n} \binom{2n}{n} = (3n)!/(n!)^3$ is the trinomial coefficient.
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Theorem 2.2.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Theorem 2.2.

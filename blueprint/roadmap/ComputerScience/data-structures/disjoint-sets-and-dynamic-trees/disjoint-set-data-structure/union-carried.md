@@ -1,4 +1,4 @@
-# Union unfolds to two finds and a link
+# Union is two finds followed by a link
 
 Let $U$ be a union-find structure on
 $\{0, \dots, n-1\}$ and let $x, y < n$. Run find with path compression on $x$ in $U$, giving a

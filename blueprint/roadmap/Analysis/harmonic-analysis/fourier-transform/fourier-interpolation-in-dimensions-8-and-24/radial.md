@@ -1,3 +1,3 @@
 # Radial function
 
-A function is radial if it takes the same value at points with the same norm.
+A function $f : E \to F$ on a space $E$ with a norm is radial if $f(e) = f(e')$ whenever $\|e\| = \|e'\|$.

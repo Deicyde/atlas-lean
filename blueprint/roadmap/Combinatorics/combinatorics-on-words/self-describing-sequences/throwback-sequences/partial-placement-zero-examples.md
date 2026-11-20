@@ -6,4 +6,4 @@ positions $0$, $4$ and $-4$, and its positions $1$, $2$ and $3$ are empty.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Table 4.
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Table 4, https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

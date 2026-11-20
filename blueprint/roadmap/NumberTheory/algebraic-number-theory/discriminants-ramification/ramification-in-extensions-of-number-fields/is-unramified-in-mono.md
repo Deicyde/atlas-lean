@@ -8,4 +8,4 @@ unramified in $\mathcal{O}_E$.
 
 ## Sources
 
-- ATLAS N390, Proposition 19.14.
+- ATLAS NumberTheoryI, Proposition 19.14.

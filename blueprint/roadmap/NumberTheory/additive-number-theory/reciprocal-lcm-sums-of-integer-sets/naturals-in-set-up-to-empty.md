@@ -5,4 +5,4 @@ of elements $n$ of the empty set with $1 \le n \le x$ is empty.
 
 ## Sources
 
-- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
+- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Section 1 (notation of Theorem 1).

@@ -6,4 +6,4 @@ $u0$ and $u1$ are factors of $a$.
 
 ## Sources
 
-- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 5 (definition of `RS_a(n)`).
+- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 5 (definition of $\mathrm{RS}_a(n)$).

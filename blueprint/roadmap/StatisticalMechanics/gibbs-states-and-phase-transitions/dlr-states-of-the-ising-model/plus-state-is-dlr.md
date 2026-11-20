@@ -1,6 +1,5 @@
 # The plus state is a Gibbs (DLR) state
 
-For all `β, h`, the plus state of the Ising model
-on `ℤ^d` satisfies the DLR condition.
-
-H.-O. Georgii, *Gibbs Measures and Phase Transitions*, de Gruyter (1988), Chapter 4.
+For $d \in \mathbb{N}$ and all real $\beta$ and $h$, the [plus state](plus-state.md) of the Ising model on
+$\mathbb{Z}^d$ is a [DLR state](is-dlrstate.md) (H.-O. Georgii, *Gibbs Measures and Phase Transitions*, 2nd edition, de Gruyter
+(2011), Chapter 4).

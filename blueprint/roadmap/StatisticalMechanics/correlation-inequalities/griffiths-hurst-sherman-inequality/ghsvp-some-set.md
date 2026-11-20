@@ -1,3 +1,4 @@
 # Image of a vertex set among non-ghost vertices
 
-The image of `A` among the non-ghost vertices `some x` of `Option V`.
+For a finite set $V$ with an added ghost vertex $g$ and $A \subseteq V$, this is the copy of $A$ inside
+$V \sqcup \{g\}$ (not containing $g$).

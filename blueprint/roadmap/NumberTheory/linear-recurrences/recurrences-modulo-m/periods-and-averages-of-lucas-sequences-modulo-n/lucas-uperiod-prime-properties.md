@@ -26,7 +26,7 @@ $\pi_U(2^i) = 2^{\max(i + 1 - g, 1)} \pi_U(2)$ for every $i \ge 2$.
 (ix) $\rho_U(1) = \pi_U(1) = 1$.
 
 In the paper's notation $W(n + 2) = a W(n + 1) + b W(n)$ one has $a = P$ and $b = -Q$. The claim
-$\pi_U(p) / \rho_U(p) \mid p - 1$, printed under "if $p \ge 2$", is stated here under the
+$\pi_U(p) / \rho_U(p) \mid p - 1$, printed under "if $p \ge 2$", is stated above under the
 hypothesis $p \nmid 2QD$ of (i).
 
 ## Sources

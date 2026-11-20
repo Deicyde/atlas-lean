@@ -7,4 +7,4 @@ $(1 \cdot 2 + 2^2) \cdot 2^{-1} = 6 \cdot 2^{-1} \equiv 0 \pmod 3$.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`).
+- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of $g_{k,p,r}$).

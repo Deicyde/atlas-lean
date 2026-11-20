@@ -1,4 +1,6 @@
 # Equivalence of a disjoint union splits into equivalent parts
 
-GENERAL split derivation from source disjointness and whole-map equivalence.
-It preserves each child domain and the exact target finite-map union.
+Let $\Gamma$, $\Theta$ be ownership contexts with disjoint domains and $\Xi$ an ownership context
+with $\Gamma \cup \Theta \approx \Xi$. Then there are ownership contexts $\Gamma'$, $\Theta'$ with
+disjoint domains such that $\Xi = \Gamma' \cup \Theta'$, $\Gamma \approx \Gamma'$ and $\Theta
+\approx \Theta'$.

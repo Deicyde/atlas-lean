@@ -1,3 +1,4 @@
 # Auxiliary critical point $\tilde\beta_c$ of the Ising model
 
-The auxiliary critical point `β̃_c(d) = sup {β ≥ 0 | ∃ S ∋ 0, φ_β(S) < 1}`.
+For $d \in \mathbb{N}$, the auxiliary critical point is $\tilde\beta_c(d) = \sup\{\beta \ge 0 : \varphi_\beta(S) < 1 \text{ for some finite } S \ni 0\}$,
+with $\varphi_\beta$ the [Duminil-Copin–Tassion quantity](phi-ising.md) (the supremum of a set that is empty or unbounded above being $0$).

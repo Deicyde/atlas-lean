@@ -10,3 +10,5 @@ and edges not in $M$.
 ## Sources
 
 - Wikipedia, Berge's theorem, https://en.wikipedia.org/wiki/Berge%27s_theorem.
+- J. E. Hopcroft and R. M. Karp, "An $n^{5/2}$ algorithm for maximum matchings in bipartite graphs", *SIAM Journal on Computing* 2(4) (1973), 225–231, §2. Corollary 1 (Berge's lemma, derived there from Theorem 1).
+- C. Berge, "Two theorems in graph theory", *Proceedings of the National Academy of Sciences of the USA* 43 (1957), 842–844.

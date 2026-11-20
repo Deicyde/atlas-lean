@@ -1,7 +1,6 @@
 # Large reflexive stabilizations of weights at least $2$ with lcm at least $3$ are not $h^\ast$-unimodal
 
-**Large reflexive stabilizations of weights at least $2$ with lcm at least $3$ are not
-$h^\ast$-unimodal.** Let $q = (q_1, \dots, q_n)$ be a list of natural numbers with $q_i \ge 2$
+Let $q = (q_1, \dots, q_n)$ be a list of natural numbers with $q_i \ge 2$
 for every $i$ and $\operatorname{lcm}(q) \ge 3$. For $m \in \mathbb{N}$ let
 $\operatorname{rs}(q, m)$ be the $m$th reflexive stabilization of $q$, let
 $\Delta_{(1,\operatorname{rs}(q,m))}$ be its weighted projective space simplex, and let

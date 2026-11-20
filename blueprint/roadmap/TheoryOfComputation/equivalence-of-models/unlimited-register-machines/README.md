@@ -25,7 +25,7 @@
 - [One-step function on coded states](step-fn.md)
 - [The one-step function is primitive recursive](primrec-step-fn.md)
 - [Bounded execution](exec-n.md)
-- [Bounded execution unfolds by one step](exec-n-succ.md)
+- [Bounded execution for one more step](exec-n-succ.md)
 - [Initial coded state](init-coded.md)
 - [The initial coded state is primitive recursive in the input](primrec-init-coded.md)
 - [Bounded execution is primitive recursive in the input and the step bound](primrec-exec-n.md)

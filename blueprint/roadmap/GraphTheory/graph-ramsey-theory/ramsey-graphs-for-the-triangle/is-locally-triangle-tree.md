@@ -6,4 +6,4 @@ tree of triangles on $V$ that contains every edge of $G$ with both endpoints in 
 
 ## Sources
 
-- AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: on every `ℓ` vertices `G` induces a subgraph of a tree of triangles.
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 7 *Local trees of triangles*, Problem 1.14 (Vojtěch Rödl), http://www.aimpl.org/graphramsey/1/: on every $\ell$ vertices $G$ induces a subgraph of a tree of triangles.

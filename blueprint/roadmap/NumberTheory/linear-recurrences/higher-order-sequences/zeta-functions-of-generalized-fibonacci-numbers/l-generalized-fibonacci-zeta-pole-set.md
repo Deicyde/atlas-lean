@@ -6,7 +6,8 @@ characteristic polynomial $X^\ell - \sum_{i=0}^{\ell-1} X^i$ other than $\alpha$
 possible poles is the set of all complex numbers $-K + (2n\pi i + L)/\log\alpha$, where $n$ is
 an integer, $(\kappa_\beta)_{\beta \in R}$ is a family of natural numbers,
 $K = \sum_{\beta \in R} \kappa_\beta$ and $L = \sum_{\beta \in R} \kappa_\beta \log \beta$. Here
-$\log$ is the principal complex logarithm.
+$\log$ is the principal complex logarithm, with the conventions $\log 0 = 0$ and $z/0 = 0$; so
+for $\alpha \in \{0, 1\}$ the point is $-K$.
 
 ## Sources
 

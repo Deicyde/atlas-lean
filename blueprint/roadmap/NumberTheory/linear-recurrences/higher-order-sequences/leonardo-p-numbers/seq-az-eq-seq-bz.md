@@ -6,4 +6,4 @@ $A_p(n) = B_p(n+1)$ otherwise.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 8.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 8.

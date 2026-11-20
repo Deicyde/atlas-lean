@@ -12,7 +12,9 @@ Since Chan's matrix is lower triangular, row $i$ of $A$ or $B$ vanishes beyond c
 induction $x_{\alpha,i} = 0$ for $i > 3^\alpha$; hence $X_{\alpha+1} = X_\alpha A$ for even
 $\alpha$ and $X_{\alpha+1} = X_\alpha B$ for odd $\alpha$.
 
-The formalization indexes the vectors from $0$: its value at $(\alpha, i)$ is $x_{\alpha,i+1}$.
+With indices starting at $0$, put $y_{\alpha,i} = x_{\alpha,i+1}$ for $i \ge 0$. Then $y_{0,0} = 1$,
+$y_{0,i} = 0$ for $i \ge 1$, and $y_{\alpha+1,j} = \sum_{i=0}^{3^\alpha - 1} y_{\alpha,i}\, m_{4i+1,i+j+1}$ for
+even $\alpha$ and $y_{\alpha+1,j} = \sum_{i=0}^{3^\alpha - 1} y_{\alpha,i}\, m_{4i+3,i+j+1}$ for odd $\alpha$.
 
 ## Sources
 

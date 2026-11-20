@@ -1,8 +1,10 @@
 # An immune set is not recursively enumerable
 
-It would be an infinite
-RE subset of itself.
+No immune set of natural numbers is recursively enumerable.
+
+An immune set $A$ that is recursively enumerable would be an infinite recursively enumerable subset of
+itself, contradicting immunity.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 5.6.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

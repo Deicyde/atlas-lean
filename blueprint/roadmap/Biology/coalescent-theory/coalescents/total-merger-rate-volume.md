@@ -1,3 +1,3 @@
 # Total merger rate of the Bolthausen–Sznitman coalescent
 
-For the Bolthausen–Sznitman coalescent the total merger rate is `λ_b = b - 1` (`b ≥ 1`).
+Let $\Lambda$ be Lebesgue measure on $[0, 1]$. For every natural number $b \ge 1$, its [total merger rate](total-merger-rate.md) is $\lambda_b = b - 1$.

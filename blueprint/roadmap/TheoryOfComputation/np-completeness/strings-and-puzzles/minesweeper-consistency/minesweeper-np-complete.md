@@ -5,4 +5,4 @@ in NP, and every decision problem in NP has a polynomial-time many-one reduction
 
 ## Sources
 
-- R. Kaye, "Minesweeper is NP-complete" (2000).
+- Richard Kaye, "Minesweeper is NP-complete" (2000).

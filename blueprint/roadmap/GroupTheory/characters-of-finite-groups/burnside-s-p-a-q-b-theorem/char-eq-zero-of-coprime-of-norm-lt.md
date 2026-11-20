@@ -7,4 +7,4 @@ coprime to $\dim V$ and $|\chi(g)| < \dim V$, then $\chi(g) = 0$.
 
 ## Sources
 
-- Bielefeld Theorem 5, norm step.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Theorem 5, the norm step of its proof, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

@@ -11,4 +11,4 @@ The printed theorem leaves $n$ unquantified; the hypothesis on $n$ is taken from
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 9 (`jis-2024-24.1.2-thm-9`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 9 (`jis-2024-24.1.2-thm-9`).

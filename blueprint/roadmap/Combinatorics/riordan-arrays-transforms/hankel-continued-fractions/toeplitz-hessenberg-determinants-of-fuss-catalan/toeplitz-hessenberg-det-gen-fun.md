@@ -13,4 +13,4 @@ needs no hypothesis on $a_0$; for $a_0 = 0$ it gives $\det(0; a_1, \dots, a_n) =
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 2 (`jis-2026-26.1.2-lem-2`).
+- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 2.

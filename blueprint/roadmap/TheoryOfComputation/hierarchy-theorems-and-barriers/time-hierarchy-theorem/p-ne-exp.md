@@ -7,4 +7,4 @@ Only this separation is stated; the containment of P in EXP is not part of the s
 
 ## Sources
 
-- J. Hartmanis and R. E. Stearns, "On the computational complexity of algorithms", Transactions of the American Mathematical Society 117 (1965), 285-306; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Corollary 3.5.
+- J. Hartmanis and R. E. Stearns, "On the computational complexity of algorithms", Transactions of the American Mathematical Society 117 (1965), 285-306; S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Corollary 3.5.

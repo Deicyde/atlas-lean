@@ -7,4 +7,4 @@ as polynomials over $\mathbb{C}$, $T$ has degree $r$, and $f(x) G(x) = T(x^k)$.
 
 ## Sources
 
-- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 2.
+- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, J. Integer Seq. 27 (2024), Article 24.3.4, Proposition 2, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Brietzke/bri3.html>.

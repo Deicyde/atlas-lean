@@ -1,3 +1,3 @@
 # Integrability of allele indicators
 
-The allele indicators are integrable.
+In every [identity-by-descent model](ibdmodel.md) on a finite measure $\mu$, every allele indicator $a_c$ is $\mu$-integrable.

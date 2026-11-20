@@ -1,3 +1,3 @@
 # Compatibility is unchanged by complementing the first split
 
-Compatibility depends only on the split, not on the side used to store it.
+For all $A, B \subseteq X$, $A^c$ and $B$ are [compatible](compatible.md) if and only if $A$ and $B$ are.

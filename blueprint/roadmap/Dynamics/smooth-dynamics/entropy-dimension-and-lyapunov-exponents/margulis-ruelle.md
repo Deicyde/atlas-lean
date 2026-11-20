@@ -12,4 +12,9 @@ $$h_\mu(T) \le \max(0, \int \lambda_1 \, d\mu) + \max(0, \int \lambda_2 \, d\mu)
 
 ## Sources
 
-- D. Ruelle, *An inequality for the entropy of differentiable maps*, Bol. Soc. Brasil. Mat. 9 (1978); G. A. Margulis (1968, unpublished). Knill, *Some fundamental theorems in mathematics*, §103. Problem `margulis_ruelle` of the lean-eval benchmark.
+- David Ruelle, *An inequality for the entropy of differentiable maps*, Bol. Soc. Brasil. Mat. 9 (1978), no. 1,
+  83–87, DOI 10.1007/bf02584795.
+- G. A. Margulis (1968, unpublished).
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §103 (Diffeomorphisms; the Margulis–Ruelle inequality is stated after the theorem),
+  <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `margulis_ruelle` of the lean-eval benchmark.

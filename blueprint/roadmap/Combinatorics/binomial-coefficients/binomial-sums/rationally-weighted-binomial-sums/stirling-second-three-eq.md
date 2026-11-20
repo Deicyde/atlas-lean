@@ -8,4 +8,4 @@ The source states this for $r \ge 3$; both sides vanish at $r = 1$ and $r = 2$.
 
 ## Sources
 
-- Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Proposition 2.2.
+- Andreea M. Stănică, Gabriela N. Stănică and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, Fibonacci Quart. 62 (2024), no. 1, 45–56, Proposition 2.2.

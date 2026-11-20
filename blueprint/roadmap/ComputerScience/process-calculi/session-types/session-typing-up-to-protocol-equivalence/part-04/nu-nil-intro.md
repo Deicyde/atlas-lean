@@ -1,4 +1,4 @@
 # Adding a restriction around nil preserves conversion typing
 
-A completed fresh pair may be introduced around nil while retaining
-all original external capabilities and scope.
+Let $n$ be a natural number and $\Delta$ an ownership context. If $\Delta \vdash^{\simeq}_n
+\mathbf{0}$, then $\Delta \vdash^{\simeq}_n \nu\,\mathbf{0}$.

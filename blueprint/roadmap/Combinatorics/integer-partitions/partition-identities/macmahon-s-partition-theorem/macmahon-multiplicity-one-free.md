@@ -9,4 +9,4 @@ partition.
 
 ## Sources
 
-- Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem `MacMahon`, source lines 88–97 with the displayed statement at lines 91–93, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.tex>. The paper attributes the theorem to P. A. MacMahon, *Combinatory Analysis*, Vol. 2 (1916).
+- Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.pdf>. The paper attributes the theorem to P. A. MacMahon, *Combinatory Analysis*, Vol. 2 (1916).

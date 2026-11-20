@@ -7,4 +7,4 @@ $\mathbb{D}^\perp_3 = 2$, $\mathbb{D}^\perp_5 = 6$ and $\mathbb{D}^\perp_9 = 10$
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (2.8).
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (13).

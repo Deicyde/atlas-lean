@@ -7,4 +7,4 @@ termwise with $\eta_1$ and $\eta_2$ binomid indices, $\eta_1 = 0$ or $\eta_2 = 0
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (definition of atomic).
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (definition of atomic).

@@ -10,4 +10,4 @@ $$\sum_{j=0}^{n} \mathcal{P}_j \, F_{n-j} = \mathcal{P}_n - F_n.$$
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 22.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 22.

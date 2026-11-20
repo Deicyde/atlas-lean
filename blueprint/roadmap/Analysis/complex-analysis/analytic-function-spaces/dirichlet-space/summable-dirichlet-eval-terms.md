@@ -1,4 +1,3 @@
 # Absolute convergence of Taylor series in the Dirichlet space
 
-The Taylor series of a `𝒟` function converges absolutely at every
-point of the disc.
+For every $z \in \mathbb{C}$ with $|z| < 1$ and every $a \in \ell^2(\mathbb{N}, \mathbb{C})$, the series $\sum_n a_n z^n/\sqrt{n+1}$ is summable, hence absolutely convergent.

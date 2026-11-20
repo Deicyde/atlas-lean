@@ -1,4 +1,7 @@
 # FK edge parameter of a Potts inverse temperature
 
-The FK edge parameter `1 - e^{-qβ/(q-1)}` of the `q`-state Potts model at inverse temperature
-`β`.
+For $q, \beta \in \mathbb{R}$, the edge parameter of the $q$-state Potts model at inverse temperature $\beta$ is
+
+$$p_q(\beta) = 1 - \exp\Big(-\frac{q}{q - 1}\, \beta\Big),$$
+
+where $q/(q - 1)$ is read as $0$ when $q = 1$.

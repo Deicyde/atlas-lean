@@ -1,11 +1,8 @@
 # Admixture graphs
 
-## Population Genetics
+## Graphs and lineage weights
 
 - [Admixture graph](admixture-graph.md)
-
-## Admixture Graph
-
 - [Edges of an admixture graph](edge.md)
 - [Probability that a lineage passes through a node](visit.md)
 - [Lineage weight of an edge in an admixture graph](weight.md)
@@ -28,6 +25,9 @@
 - [Tree-shaped admixture graph](is-tree.md)
 - [Visit probabilities on a tree are zero or one](visit-eq-zero-or-one.md)
 - [Lineage weights on a tree are zero or one](weight-eq-zero-or-one.md)
+
+## The induced drift model
+
 - [Drift model of an admixture graph](drift-model.md)
 - [A tree-shaped admixture graph has binary loadings](has-binary-loadings-of-is-tree.md)
 - [Three-population test is nonnegative on a tree](f3-nonneg-of-is-tree.md)

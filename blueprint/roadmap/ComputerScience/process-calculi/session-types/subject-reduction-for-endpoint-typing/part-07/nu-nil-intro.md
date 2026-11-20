@@ -1,4 +1,4 @@
 # Adding a restriction around nil preserves endpoint typing
 
-A completed fresh pair may be introduced around nil while retaining
-all original external capabilities and scope.
+Let $n$ be a natural number and $\Delta$ an ownership context. If $\Delta \vdash_n \mathbf{0}$, then
+$\Delta \vdash_n \nu\,\mathbf{0}$.

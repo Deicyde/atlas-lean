@@ -14,4 +14,6 @@ $k \in \mathbb{Z}$; only the terms in this range are nonzero.
 
 ## Sources
 
-- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, von Szily identity quoted in the Open problems section, lines 671–674, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Killpatrick/killp6.tex>, citing I. Gessel, *Super ballot numbers*, J. Symbolic Comput. 14 (1992), p. 11.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025),
+  Article 25.5.8, Section 6 (open problems), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Killpatrick/killp6.tex>, citing I. Gessel, *Super
+  ballot numbers*, J. Symbolic Comput. 14 (1992), 179–194.

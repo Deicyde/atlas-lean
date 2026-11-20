@@ -7,3 +7,7 @@ when this set is empty or not bounded below.
 
 Newman's theorem, that every zero of $H_\lambda$ is real exactly when $\lambda \ge \Lambda$, is
 not part of this definition.
+
+## Sources
+
+- Optimization Problems catalogue, constant 21a, "de Bruijn–Newman constant": https://github.com/teorth/optimizationproblems/blob/2c1968cd520b60f1cf3cf50749f7285e800e4e15/constants/21a.md

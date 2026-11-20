@@ -8,4 +8,5 @@ powerful numbers.
 
 ## Sources
 
-- Prajeet Bajpai, Michael A. Bennett, and Tsz Ho Chan, Arithmetic progressions in squarefull numbers, International Journal of Number Theory 20 (2024), 19–45, https://mathscinet.ams.org/mathscinet-getitem?mr=4688726. Resolved true: Resolved true by Bajpai–Bennett–Chan; a proof is available in an external Lean development.
+- Erdős Problem #937, https://www.erdosproblems.com/937.
+- Prajeet Bajpai, Michael A. Bennett, and Tsz Ho Chan, Arithmetic progressions in squarefull numbers, International Journal of Number Theory 20 (2024), 19–45, https://mathscinet.ams.org/mathscinet-getitem?mr=4688726.

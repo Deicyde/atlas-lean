@@ -7,4 +7,4 @@ and its $(l + i)$-th entry is $e_i$ for every $i \ge 1$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53; definition as restated in arXiv:2505.20018, Section 1.
+- Jonathan Caalim and Yu-ichi Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53; definition as restated in Jonathan Caalim and Yu-ichi Tanaka, *On the monoid of lexicographically minimal extensions*, arXiv:2505.20018 (2025), Section 1.

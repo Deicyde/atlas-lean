@@ -1,5 +1,3 @@
 # The enumerated alignments are exactly the valid ones
 
-For sequences $x$ and $y$ and a
-list $A$ of columns, $A$ occurs in the enumerated list of all alignments of $x$ and $y$ if and
-only if $A$ is an alignment of $x$ and $y$.
+For all sequences $x, y$, an alignment belongs to the [list of alignments](alignments.md) of $x$ and $y$ if and only if it is a [valid alignment](is-alignment.md) of $x$ and $y$.

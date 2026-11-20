@@ -5,7 +5,7 @@
 - [Norm estimate in Schur's test](schur-apply-le.md)
 - [Schur's test for rectangular Euclidean matrix operators](norm-to-euclidean-lin-le.md)
 - [Schur's test for square Euclidean continuous linear maps](norm-to-euclidean-clm-le.md)
-- [Schur's test for the $L^2$ operator norm of a matrix](norm-matrix-l2-le.md)
+- [Schur's test for the $\ell^2$ operator norm of a matrix](norm-matrix-l2-le.md)
 - [Entries of a Schur matrix are bounded by the row bound](schur-inf-single-le.md)
 - [Row bound of a Schur matrix is nonnegative](schur-inf-nonneg-of-row.md)
 - [Weighted Cauchy–Schwarz for one row of a Schur matrix](schur-inf-finset-cs.md)

@@ -1,5 +1,6 @@
 # Difference of parsimony scores of two quartets
 
-On four taxa, the parsimony scores of two quartets differ only on informative patterns: the
-score on `AB | CD` minus the score on `AC | BD` is `1` on patterns supporting `AC | BD`, `-1` on
-patterns supporting `AB | CD`, and `0` otherwise; likewise for `AD | BC`.
+For every site pattern $\sigma$, with $s_{ab|cd}$ the [parsimony score](parsimony-score.md) on $((a, b), (c, d))$ and $[\cdot]$ the indicator of [support](supports.md):
+
+- $s_{AB|CD}(\sigma) - s_{AC|BD}(\sigma) = [\sigma \text{ supports } AC \mid BD] - [\sigma \text{ supports } AB \mid CD]$;
+- $s_{AD|BC}(\sigma) - s_{AC|BD}(\sigma) = [\sigma \text{ supports } AC \mid BD] - [\sigma \text{ supports } AD \mid BC]$.

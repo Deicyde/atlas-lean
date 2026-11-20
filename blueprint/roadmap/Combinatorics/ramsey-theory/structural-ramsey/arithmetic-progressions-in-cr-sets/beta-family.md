@@ -6,4 +6,4 @@ $\mathcal F$, that is, $A \in \mathcal F$ for every $A \in p$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).

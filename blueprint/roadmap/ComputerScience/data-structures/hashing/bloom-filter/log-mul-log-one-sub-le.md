@@ -1,3 +1,4 @@
-# Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the unit interval
+# Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the open unit interval
 
-`log t * log (1 - t) ≤ (log 2) ^ 2` on `(0, 1)`.
+For every real number $t$ with $0 < t < 1$,
+$\log t \cdot \log(1 - t) \le (\log 2)^2$.

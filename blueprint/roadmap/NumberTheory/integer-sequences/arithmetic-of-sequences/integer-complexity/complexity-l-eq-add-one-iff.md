@@ -9,4 +9,4 @@ The case $t = m$ gives $n = 2^{m+1}$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 3 and Theorem 1.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 3 and Theorem 1.

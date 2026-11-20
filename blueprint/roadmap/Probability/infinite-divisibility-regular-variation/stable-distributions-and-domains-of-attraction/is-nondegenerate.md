@@ -1,4 +1,3 @@
 # Nondegenerate measure on the real line
 
-A measure `μ` on `ℝ` is *nondegenerate* if it is not a point mass
-`δ_a` for any `a`.
+A measure $\mu$ on $\mathbb{R}$ is nondegenerate if $\mu \ne \delta_a$ for every $a \in \mathbb{R}$.

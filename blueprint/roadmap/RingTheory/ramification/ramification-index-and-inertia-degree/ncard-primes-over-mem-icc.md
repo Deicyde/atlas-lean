@@ -8,4 +8,4 @@ $1 \le g_{\mathfrak{p}} \le n$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 5.36 (the $g_{\mathfrak{p}}$ part).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 5, Corollary 5.36 (the statement for $g_{\mathfrak{p}}$), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

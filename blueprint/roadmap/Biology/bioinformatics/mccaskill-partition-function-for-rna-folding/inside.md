@@ -1,8 +1,7 @@
 # Inside recursion
 
-**Inside recursion** over a commutative semiring `R`: `inside pair m s w i len` is the
-weighted sum over the secondary structures supported in the interval `[i, i + len)` (proved in
-`inside_eq_sum`). Base `i` is either unpaired, or paired with `i + 1 + k` for some `k ≥ m`
-with `CanPair pair s i (i + 1 + k)`, which contributes `w i (i + 1 + k)` times the inside
-values of the enclosed interval `[i + 1, i + 1 + k)` and of the outer interval
-`[i + k + 2, i + len + 1)`.
+Fix a sequence $s$, a complementarity relation, a minimum hairpin size $m$ and weights $w(i, j)$ in a commutative semiring. The inside value $Z(i, n)$ of the interval of length $n$ starting at $i$, i.e. of the positions $i, \dots, i + n - 1$, is defined by recursion on $n$: $Z(i, 0) = 1$, and for $n \ge 1$
+
+$$Z(i, n) = Z(i + 1, n - 1) + \sum_{k=m}^{n-2} [\,i \text{ and } i + 1 + k \text{ can pair}\,]\; w(i, i + 1 + k)\, Z(i + 1, k)\, Z(i + k + 2, n - 2 - k),$$
+
+where the sum is empty when $n - 2 < m$ and [can pair](can-pair.md) is as defined: base $i$ is either unpaired, or paired with $i + 1 + k$, which encloses the interval $i + 1, \dots, i + k$ and leaves the outer interval $i + k + 2, \dots, i + n - 1$.

@@ -1,4 +1,3 @@
 # Isomorphism of unrooted binary phylogenetic trees
 
-Two unrooted binary phylogenetic trees are **isomorphic** when some graph isomorphism maps
-the leaf with each label to the leaf with the same label.
+Two [unrooted binary phylogenetic trees](unrooted-binary-tree.md) on $X$ are isomorphic if some graph isomorphism between them maps the leaf labeled $x$ to the leaf labeled $x$ for every $x \in X$.

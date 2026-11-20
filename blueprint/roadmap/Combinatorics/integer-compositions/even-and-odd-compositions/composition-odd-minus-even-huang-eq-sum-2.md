@@ -17,4 +17,4 @@ $x_1 = \dots = x_m = 1$, which is the number of functions $g$ in the group.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 16 (`jis-2024-24.6.5-thm-16`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 16.

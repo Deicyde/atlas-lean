@@ -1,4 +1,4 @@
-# Restriction to (0, t) preserves joint measurability
+# Restriction to $(0, t]$ preserves joint measurability
 
-Restricting a jointly measurable process to the times `(0, t]` keeps it jointly
-measurable.
+If a real process $H$ is jointly measurable in $(u, \omega)$, then for every $t \ge 0$ so is its [restriction to
+$(0, t]$](restrict-ioc.md).

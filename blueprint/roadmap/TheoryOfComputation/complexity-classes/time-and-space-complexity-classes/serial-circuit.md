@@ -9,4 +9,4 @@ disjunction, while a modular-counting gate, which has no serial form here, becom
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 6 (circuit encodings).
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 6 (circuit encodings).

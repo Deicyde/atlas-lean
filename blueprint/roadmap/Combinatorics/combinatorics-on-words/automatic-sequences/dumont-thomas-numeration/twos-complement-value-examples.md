@@ -6,4 +6,4 @@ and $3$ respectively.
 
 ## Sources
 
-- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.1 (table of `rep_{2c}`).
+- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.1 (table of $\mathrm{rep}_{2c}$).

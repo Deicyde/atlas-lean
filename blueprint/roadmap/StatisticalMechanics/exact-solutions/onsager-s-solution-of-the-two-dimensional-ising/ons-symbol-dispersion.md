@@ -1,3 +1,5 @@
-# Kac-Ward symbol determinant at t = tanh β
+# Kac–Ward symbol determinant at $t = \tanh\beta$
 
-The Kac-Ward symbol determinant `(1 + t²)² - 2t(1 - t²)(cos k₁ + cos k₂)` at `t = tanh β`.
+For $\beta, k_1, k_2 \in \mathbb{R}$, with $t = \tanh\beta$, the dispersion is
+
+$$\Delta_\beta(k_1, k_2) = (1 + t^2)^2 - 2t(1 - t^2)(\cos k_1 + \cos k_2).$$

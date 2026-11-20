@@ -23,7 +23,7 @@
 - [Joint law of local ancestry after an admixture pulse](ancestry-pulse.md)
 - [Covariance of local-ancestry indicators after pulse admixture](allele-cov-ancestry-pulse.md)
 
-## Relation to the continuous form `e^{-n d}`
+## Relation to the continuous form $e^{-nd}$
 
 - [Haldane's map function: $1 - r = e^{-d}\cosh d$](one-sub-haldane.md)
 - [Exact decay factor under Haldane's map function](pow-one-sub-haldane.md)

@@ -1,14 +1,11 @@
 # The path metric on a partition into sides
 
-Let `S` partition the taxa of a binary
-phylogenetic `X`-tree `(G, ι)` with positive edge lengths `w` and path-length metric `d` into
-sides of edges. Then there is a system of splits `A e` (`e : E`) of the set of clusters with
-positive weights `w' e`, closed under complement, pairwise compatible, binary, and containing
-every trivial split, such that
-* the weight of every internal split (both sides with at least two clusters) is the length of an
-  edge with both endpoints internal;
-* a split whose side is `{s, t}` comes from an edge with side `s ∪ t`;
-* for taxa `x ∈ s` and `y ∈ t` of distinct clusters, `d x y` is half the total weight of the
-  splits separating `s` from `t`, plus a term `ρ s x` depending only on `s` and `x` and a term
-  `ρ t y`.
-In the construction, the splits are those of the edges that cut no cluster.
+Let $(G, \iota)$ be a [binary phylogenetic tree](is-binary-phylogenetic-tree.md) on a finite set $X$ with edge lengths $w_e > 0$ and path metric $d$, and let $S$ be a partition of $X$ into [sides of edges](side.md) (pairwise disjoint, covering $X$, each the side of some edge). Then there are a finite family $(A_e)_{e \in E}$ of subsets of $S$, weights $w'_e$ and reals $\rho(s, x)$ such that
+
+- $w'_e > 0$ and $A_e \ne \emptyset$ for every $e$;
+- the family is closed under complement in $S$, pairwise compatible, binary (every member with at least two elements is the disjoint union of two members) and contains every singleton $\{s\}$;
+- if $|A_e| \ge 2$ and $|S \setminus A_e| \ge 2$, then $w'_e = w(uv)$ for some edge $uv$ with neither endpoint a taxon vertex;
+- if $A_e = \{s, t\}$, then $s \cup t$ is the side of some edge;
+- for distinct $s, t \in S$, $x \in s$ and $y \in t$:
+
+$$d(x, y) = \frac12 \sum_{e \,:\, A_e \text{ separates } s, t} w'_e + \rho(s, x) + \rho(t, y).$$

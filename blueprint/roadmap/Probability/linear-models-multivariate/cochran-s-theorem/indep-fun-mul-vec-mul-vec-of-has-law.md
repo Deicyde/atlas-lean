@@ -1,4 +1,7 @@
-# Orthogonal linear images of a Gaussian random vector are independent
+# Independence of orthogonal linear images of a Gaussian random vector
 
-If a random vector $Z$ has independent standard normal coordinates and $A$ and $B$ are real matrices
-with finitely many rows and $AB^{\mathsf{T}} = 0$, then the random vectors $AZ$ and $BZ$ are independent.
+Let $\mu$ be a measure on $\Omega$, $\iota, m, n$ finite index sets, and $Z : \Omega \to \mathbb{R}^\iota$ a random vector whose law under $\mu$ has independent standard normal coordinates. If $A$ ($m \times \iota$) and $B$ ($n \times \iota$) are real matrices with $AB^\top = 0$, then $AZ$ and $BZ$ are independent under $\mu$.
+
+## Sources
+
+- C. R. Rao, *Linear Statistical Inference and its Applications*, 2nd ed., Wiley, 1973, ch. 3b (normal distribution: linear and quadratic forms).

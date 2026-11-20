@@ -7,4 +7,4 @@ $M \ne E$ that is invariant under $T$: $T x \in M$ for every $x \in M$.
 
 ## Sources
 
-- V. Lomonosov, Functional Anal. Appl. 7 (1973) and J. Hilden elementary proof, Bull. Amer. Math. Soc.; Aronszajn-Smith 1954 precursor; Radjavi-Rosenthal invariant subspace book, 1973; Lean states complex Banach infinite-dimensional case `K≠0` compact commuting with `T` yields nontrivial closed invariant subspace.
+- V. Lomonosov, Functional Anal. Appl. 7 (1973), and H. M. Hilden's elementary proof, published in A. J. Michaels, Hilden's simple proof of Lomonosov's invariant subspace theorem, Adv. Math. 25 (1977), 56–58; Aronszajn-Smith 1954 precursor; Radjavi-Rosenthal invariant subspace book, 1973. The statement here is the case of an infinite-dimensional complex Banach space: if $T$ commutes with a nonzero compact operator $K$, then $T$ has a nontrivial closed invariant subspace.

@@ -8,4 +8,4 @@ eventual period of the Fubini numbers modulo $K$ is exactly $\lambda(K)$.
 
 ## Sources
 
-- Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary 11 (`jis-2025-25.4.1-cor-11`).
+- Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary 11.

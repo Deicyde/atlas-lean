@@ -6,4 +6,4 @@ $e_k + 1 = 2^k (p + 1)$, that is, $e_k = 2^k (p + 1) - 1$.
 
 ## Sources
 
-- Miller, Peng, Popescu, Siktar, and Wattanawanichkul, *Walking to Infinity Along Some Number Theory Sequences*, INTEGERS 24 (2024), Article A78, display after Definition 2.4.
+- Steven J. Miller, Fei Peng, Tudor Popescu, Joshua M. Siktar, and Nawapan Wattanawanichkul, *Walking to Infinity Along Some Number Theory Sequences*, INTEGERS 24 (2024), Article A78, display after Definition 2.4.

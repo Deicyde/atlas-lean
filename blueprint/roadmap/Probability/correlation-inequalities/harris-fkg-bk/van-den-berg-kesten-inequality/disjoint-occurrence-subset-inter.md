@@ -1,3 +1,3 @@
 # Disjoint occurrence lies in the intersection
 
-Disjoint occurrence implies occurrence of both events: `A □ B ⊆ A ∩ B`.
+Let $E$ be a set and $A, B \subseteq \{0,1\}^E$. Then $A \mathbin{\square} B \subseteq A \cap B$.

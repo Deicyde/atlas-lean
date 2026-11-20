@@ -1,3 +1,3 @@
 # Neutral stationary law is the point mass at one
 
-The neutral stationary law is `δ₁`: its generating function is `y`.
+For every real $y$, the neutral [stationary weights](asg-stationary.md) satisfy $\sum_{k \ge 0} \pi^0_k\, y^k = y$: the generating function of the point mass at $1$.

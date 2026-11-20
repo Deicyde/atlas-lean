@@ -1,7 +1,6 @@
 # Square-weighted constants modulo $p^r$, for $p \ge 2$ and nonzero even $r$, are at most unit-square constants modulo $p^2$
 
-**Square-weighted constants modulo $p^r$, for $p \ge 2$ and nonzero even $r$, are at most
-unit-square constants modulo $p^2$.** Let $p \ge 2$ be a natural number and let $r$ be a nonzero
+Let $p \ge 2$ be a natural number and let $r$ be a nonzero
 even natural number. Write $S(p^r)$ for the set of nonzero squares in $\mathbb{Z}_{p^r}$ and
 $U(p^2)^2$ for the set of squares of units in $\mathbb{Z}_{p^2}$. For a weight set
 $A \subseteq \mathbb{Z}_m$, write $D_A(\mathbb{Z}_m)$ for the $A$-weighted Davenport constant of

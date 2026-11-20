@@ -10,7 +10,7 @@
 - [Tuples in a piece are eventually in the $U_i$](xs-mem-restricted.md)
 - [The support lies in the index set of every piece containing the element](support-finset-le.md)
 
-## Direct Limit Construction
+## The direct limit of the pieces
 
 - [Inclusion of pieces](inclusion-map.md)
 - [Continuity of the inclusion of pieces](continuous-inclusion-map.md)
@@ -19,11 +19,11 @@
 - [Direct limit of the finite-support pieces](direct-limit-xs.md)
 - [The cofinite filter lies below the principal filter of the complement of a finite set](cofinite-le-principal-compl.md)
 
-## Principal Pieces
+## Tuples restricted on a cofinite set
 
 - [Tuples restricted on a cofinite set lie in a piece](inclusion-mem-xs-of-principal.md)
 
-## Homeomorphism
+## The homeomorphism with the direct limit
 
 - [Forward map to the direct limit of the pieces](to-direct-limit.md)
 - [The map from the direct limit of the pieces to the restricted product](from-direct-limit.md)

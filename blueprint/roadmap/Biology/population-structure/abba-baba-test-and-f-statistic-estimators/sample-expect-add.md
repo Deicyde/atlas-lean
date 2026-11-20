@@ -1,3 +1,3 @@
 # Additivity of the sampling expectation
 
-`sampleExpect` is additive in the function.
+For every natural number $n$, all $f, g : \{0, 1\}^n \to \mathbb{R}$ and every $q \in \mathbb{R}^n$, the [sampling expectation](sample-expect.md) satisfies $\mathbb{E}_q[f + g] = \mathbb{E}_q[f] + \mathbb{E}_q[g]$.

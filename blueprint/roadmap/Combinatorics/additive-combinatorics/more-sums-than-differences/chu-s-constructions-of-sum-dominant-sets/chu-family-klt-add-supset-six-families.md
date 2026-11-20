@@ -1,7 +1,7 @@
-# Six disjoint families in the sumset of the Chu family set
+# Six disjoint families in the sumset of the Kumar–Mohan–Pandey set
 
 Let $k$, $l$, $t$ be positive
-integers, let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$, and
+integers, let $A = A_{k,l,t}$ be the Kumar–Mohan–Pandey set, and
 let $P = 8kl + 8l + 8$. Let $X_1$, $X_2$, $X_4$, $X_5$ be the sets of the integers
 $Pj + (4k + 4)i + 4$, $Pj + (4k + 4)i + 8$, $Pj + 4kl + 4l + (4k + 4)i + 8$ and
 $Pj + 4kl + 4l + (4k + 4)i + 12$ respectively, for $1 \le i \le l$ and $0 \le j \le t - 1$, and

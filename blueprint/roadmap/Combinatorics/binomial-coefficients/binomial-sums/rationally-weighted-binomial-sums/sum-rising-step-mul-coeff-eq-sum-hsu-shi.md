@@ -17,4 +17,4 @@ The powers of $x$ have real exponents, which is why $x > 0$ is assumed.
 
 ## Sources
 
-- Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.1, equation (2.2).
+- Andreea M. Stănică, Gabriela N. Stănică and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, Fibonacci Quart. 62 (2024), no. 1, 45–56, Theorem 2.1, equation (2.2).

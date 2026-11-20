@@ -1,4 +1,4 @@
 # Field induced by the plus boundary condition
 
-The field on `x ∈ Λ` induced by the plus boundary condition: the number of edges from `x` to
-sites outside `Λ`.
+For $d \in \mathbb{N}$, a finite set $\Lambda \subseteq \mathbb{Z}^d$ and $x \in \Lambda$, this is the number of
+[boundary edges](plus-boundary-edges.md) of $\Lambda$ at $x$, that is, of nearest neighbours of $x$ outside $\Lambda$.

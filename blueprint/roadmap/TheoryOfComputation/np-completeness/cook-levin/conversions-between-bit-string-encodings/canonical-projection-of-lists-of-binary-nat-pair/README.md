@@ -1,4 +1,4 @@
-# Canonical projection of lists of binary Nat pairs
+# Canonical projection of lists of pairs of binary naturals
 
 - [Projected pair lists total at most four times the input length](projection-length-le.md)
 - [Stacks of the pair-list projector](k.md)

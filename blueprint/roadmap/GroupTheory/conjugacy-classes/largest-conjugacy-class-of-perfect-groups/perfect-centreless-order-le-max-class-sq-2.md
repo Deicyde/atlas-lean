@@ -6,9 +6,8 @@ is, some perfect centreless finite group $G$ satisfies $|G| > n^2$, where $n$ is
 of a conjugacy class of $G$.
 
 Muliarchyk (Theorem 1.1) constructs a perfect centreless finite group of order $120 \cdot 5^{68}$
-whose largest conjugacy class has size $30 \cdot 5^{32}$, so $|G| / n^2 = 250/3 > 1$; the 21st
-issue of the Kourovka Notebook marks 20.30 solved ("No, not always"). The preprint acknowledges
-assistance from ChatGPT.
+whose largest conjugacy class has size $30 \cdot 5^{32}$, so $|G| / n^2 = 250/3 > 1$; the 21st issue
+of the Kourovka Notebook marks 20.30 solved ("No, not always").
 
 ## Sources
 

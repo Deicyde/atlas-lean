@@ -5,7 +5,7 @@ $a, b$ integers, and write $\Phi_m(a, b)$ for the homogenized cyclotomic value. 
 then $\Phi_{pn}(a, b) = \Phi_n(a^p, b^p)$. If $p \nmid n$, then
 $\Phi_{pn}(a, b) \cdot \Phi_n(a, b) = \Phi_n(a^p, b^p)$.
 
-The paper states the case $p \nmid n$ as a quotient; here it is cleared of its denominator.
+The paper states the case $p \nmid n$ as a quotient; the identity above is cleared of its denominator.
 
 ## Sources
 

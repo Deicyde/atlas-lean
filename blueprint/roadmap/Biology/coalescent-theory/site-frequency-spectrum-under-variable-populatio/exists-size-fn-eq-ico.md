@@ -1,3 +1,3 @@
 # Size function is locally constant to the right
 
-The size function is constant on an interval to the right of every `s ≥ 0`.
+For a [piecewise-constant history](piecewise-history.md) with $K \ge 1$ pieces and every real $s \ge 0$, there is $\varepsilon > 0$ such that the [size function](size-fn.md) satisfies $\eta(r) = \eta(s)$ for every $r \in [s, s + \varepsilon)$.

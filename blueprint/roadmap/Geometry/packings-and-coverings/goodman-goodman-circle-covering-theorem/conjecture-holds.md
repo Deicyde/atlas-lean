@@ -7,9 +7,10 @@ $r_i > 0$ such that every hyperplane meeting none of the balls has all the centr
 strictly on the same side, then some closed ball of radius $r_1 + \dots + r_n$ contains all of
 the balls.
 
-Goodman and Goodman [GoGo45] proved this in the plane and in higher dimensions; Hadwiger [Ha47]
+Goodman and Goodman (1945) proved this in the plane and in higher dimensions; Hadwiger (1947)
 extended it to convex bodies.
 
 ## Sources
 
-- Goodman and Goodman [GoGo45] (planar case and higher dimensions), per erdosproblems.com/1121, https://www.erdosproblems.com/1121.
+- A. W. Goodman and R. E. Goodman, A circle covering theorem, Amer. Math. Monthly 52 (1945), 494–498, DOI 10.1080/00029890.1945.11999187 (planar case and higher dimensions); Erdős Problem #1121, https://www.erdosproblems.com/1121.
+- H. Hadwiger, Nonseparable convex systems, Amer. Math. Monthly 54 (1947), 583–585, DOI 10.2307/2304497.

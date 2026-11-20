@@ -1,4 +1,4 @@
-# A non-right-orderable group that is residually $p$ for two primes (Linnell)
+# A non-right-orderable group that is residually $p$ for two primes
 
 There exist a
 group $G$ and distinct primes $p$ and $q$ such that $G$ is residually a finite $p$-group and

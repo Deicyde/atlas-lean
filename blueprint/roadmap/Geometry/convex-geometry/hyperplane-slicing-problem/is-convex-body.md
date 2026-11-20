@@ -5,4 +5,4 @@ $\mathbb{R}^n$ is a convex body when it is convex, compact and has nonempty inte
 
 ## Sources
 
-- `OWR-12337-001` (DOI 10.4171/owr/2013/09): "convex body `K ⊆ ℝⁿ`".
+- *Mini-Workshop: Stochastic Analysis for Poisson Point Processes: Malliavin Calculus, Wiener–Itô Chaos Expansions and Stochastic Geometry*, Oberwolfach Reports 10 (2013), 483–520, DOI 10.4171/OWR/2013/09: "convex body `K ⊆ ℝⁿ`".

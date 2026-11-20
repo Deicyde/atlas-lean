@@ -4,7 +4,7 @@
 
 - [Triangular recurrence](triangular-recurrence.md)
 
-## Triangular Recurrence
+## Arrays and their extensions to negative rows
 
 - [Triangular array of a linear recurrence](array.md)
 - [The binomial array at $(4, 2)$](array-binomial-four-two.md)

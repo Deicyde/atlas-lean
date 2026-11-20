@@ -1,3 +1,4 @@
 # A lifted key is never a freshly bound key
 
-A lifted outer key can never be either freshly bound role at var zero.
+For every endpoint $x^{r'}$ and polarity $r$, $(\uparrow_0 x)^{r'} \ne \mathrm{v}_0^{r}$: the lifted
+endpoint never has the name $\mathrm{v}_0$.

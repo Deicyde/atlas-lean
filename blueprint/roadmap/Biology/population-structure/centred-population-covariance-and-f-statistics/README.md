@@ -1,6 +1,6 @@
 # Centred population covariance and f-statistics
 
-## Covariance
+## The centred leaf covariance
 
 - [Mean frequency across populations](pop-mean.md)
 - [Centred leaf covariance](centred-cov.md)
@@ -8,7 +8,7 @@
 - [Centred leaf covariance as the double centring of f2](centred-cov-eq-double-center-f2.md)
 - [f-statistics determine exactly the centred leaf covariance](f2-eq-iff-centred-cov-eq.md)
 
-## Pair
+## A star tree and an admixture with the same f-statistics
 
 - [Lineage weights of the three-population star tree](star-weight.md)
 - [Lineage weights of the three-population admixture model](admix-weight.md)

@@ -9,4 +9,4 @@ number counts both the lucky cars and the lucky spots.
 
 ## Sources
 
-- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions," Journal of Integer Sequences 29 (2026), Article 26.1.1, Corollary, lines 631–633 (supporting lemma lines 619–629), https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.tex The corollary attributes the Dyck-path expectation value to Deutsch.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions," Journal of Integer Sequences 29 (2026), Article 26.1.1, Corollary 19 (with Lemma 18), <https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.pdf>. The corollary attributes the Dyck-path expectation value to Deutsch.

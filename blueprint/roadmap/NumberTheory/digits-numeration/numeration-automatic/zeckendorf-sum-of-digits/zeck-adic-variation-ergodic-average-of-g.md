@@ -9,8 +9,10 @@ variation on binary sequences. Let $f : \mathbb{Z} \to \mathbb{C}$ and let $\alp
 $C > 0$ be reals with $|f(n)| \le C|n|^\alpha + |f(0)|$ for all $n \in \mathbb{Z}$. Then
 $f \circ \Delta^{(r)}$ is $\mathbb{P}$-integrable,
 
-$$\frac{1}{N} \sum_{n=0}^{N-1} f\bigl(s(n + r) - s(n)\bigr)
-\to \int f \circ \Delta^{(r)}\,d\mathbb{P}$$
+$$
+\frac{1}{N} \sum_{n=0}^{N-1} f\bigl(s(n + r) - s(n)\bigr)
+\to \int f \circ \Delta^{(r)}\,d\mathbb{P}
+$$
 
 as $N \to \infty$, and
 $\int f \circ \Delta_k^{(r)}\,d\mathbb{P} \to \int f \circ \Delta^{(r)}\,d\mathbb{P}$

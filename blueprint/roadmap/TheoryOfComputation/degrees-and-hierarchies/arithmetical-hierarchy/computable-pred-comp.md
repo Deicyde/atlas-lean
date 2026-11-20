@@ -6,4 +6,4 @@ $\{w \in \mathbb{N} : g(w) \in P\}$ is decidable.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

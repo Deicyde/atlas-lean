@@ -1,3 +1,4 @@
 # Protocol tree equivalence is symmetric
 
-Symmetry comes from the canonical CSLib bisimilarity API.
+For all protocols $S$, $T$, if $S \simeq T$ then $T \simeq S$, where $\simeq$ is bisimilarity in the
+protocol-tree transition system.

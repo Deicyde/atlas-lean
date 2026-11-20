@@ -1,5 +1,7 @@
 # Felsenstein's pruning algorithm
 
+## Trees, labelings and likelihoods
+
 - [Rooted binary tree with transition weights](tree.md)
 - [Number of internal nodes of a tree](num-internal.md)
 - [Number of leaves of a tree](num-leaves.md)
@@ -22,4 +24,4 @@
 
 ## Independent sites
 
-- [Independent sites](sum-prod-site-weight-eq-prod-likelihood.md)
+- [Likelihood of independent sites is the product of site likelihoods](sum-prod-site-weight-eq-prod-likelihood.md)

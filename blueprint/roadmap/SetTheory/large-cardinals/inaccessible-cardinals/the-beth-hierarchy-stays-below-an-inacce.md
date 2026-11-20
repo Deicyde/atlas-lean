@@ -1,8 +1,7 @@
 # The beth hierarchy stays below an inaccessible cardinal
 
-Below an inaccessible `κ`, the beth hierarchy stays below `κ`: `κ` is a beth
-fixed point (`IsInaccessible.beth_ord`) and `beth` is strictly monotone.
+If $\kappa$ is an inaccessible cardinal, then $\beth_\alpha < \kappa$ for every ordinal
+$\alpha < \kappa$.
 
-## Sources
-
-- Below an inaccessible κ, each ℶ_o with o < κ.ord lies below κ.
+Proof: an inaccessible cardinal is a beth fixed point, $\beth_\kappa = \kappa$, and the beth
+function is strictly increasing.

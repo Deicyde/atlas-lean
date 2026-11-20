@@ -10,4 +10,4 @@ with an extra move.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (Grundy numbers `𝒢₁`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (Grundy numbers $\mathcal{G}_1$).

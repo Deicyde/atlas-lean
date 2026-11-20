@@ -1,4 +1,4 @@
 # Exact deterministic transit time
 
-Starting from frequency `a ∈ (0, 1)` with `r ≠ 0`,
-the logistic frequency reaches `1 - a` at time `(2 / r) log ((1 - a) / a)`.
+Let $0 < a < 1$ and $r \ne 0$. The [explicit logistic solution](logistic.md) with $K = 1$ and
+$x_0 = a$ takes the value $1 - a$ at time $t = (2/r) \log((1 - a)/a)$.

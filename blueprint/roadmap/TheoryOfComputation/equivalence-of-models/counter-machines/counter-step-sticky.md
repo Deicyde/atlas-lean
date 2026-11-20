@@ -1,8 +1,8 @@
-# A counter step is sticky at halting states
+# Counter-machine steps past the end of the program
 
-Past the end of the
-program the state does not change.
+Let $P$ be a counter-machine program, a list of instructions, and $s$ a counter-machine state whose
+program counter is at least the length of $P$. Then one step of $P$ leaves $s$ unchanged.
 
 ## Sources
 
-- Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
+- M. L. Minsky, *Computation: Finite and Infinite Machines*, Prentice-Hall, 1967, Chapter 11.

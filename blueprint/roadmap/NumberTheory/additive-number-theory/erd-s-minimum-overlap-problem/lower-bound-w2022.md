@@ -6,4 +6,4 @@ $0.379005$ is the exact rational number $379005/1000000$.
 
 ## Sources
 
-- White 2022; Optimization Problems, Constant 1b.
+- Ethan Patrick White, *Erdős' minimum overlap problem*, arXiv:2201.05704 (2022); *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html.

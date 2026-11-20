@@ -1,6 +1,3 @@
 # Hirschberg reconstruction attains the Needleman–Wunsch optimum
 
-Fix a type $\alpha$, a
-substitution score $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$.
-For all lists $xs$, $ys$ over $\alpha$, the alignment score of the Hirschberg alignment of $xs$
-and $ys$ equals the Needleman–Wunsch score of $xs$ and $ys$.
+For all sequences $x, y$, the [score](../pairwise-sequence-alignment/alignment-score.md) of the [Hirschberg alignment](hirschberg.md) is $\mathrm{NW}(x, y)$, the [Needleman–Wunsch score](../pairwise-sequence-alignment/nw-score.md).

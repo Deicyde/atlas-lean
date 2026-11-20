@@ -1,4 +1,4 @@
-# The bitonic sorter sorts every `0`-`1` input
+# The bitonic sorter sorts every $0$-$1$ input
 
 Let $k, b \in \mathbb{N}$ and let $f$ assign
 a Boolean value to each wire $x \in \mathbb{N}$, with Booleans ordered by

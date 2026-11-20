@@ -1,4 +1,3 @@
 # Wired–free gap in the $q = 2$ density of a box edge
 
-The gap `φ^1_{p,2}(eb open) - φ^0_{p,2}(eb open)` between the wired and free infinite-volume
-densities of the edge `eb` of `Λ_N`.
+For $d, N \in \mathbb{N}$, an unordered pair $e$ of vertices of $\Lambda_N = \{-N, \dots, N\}^d$ (viewed as a pair of sites of $\mathbb{Z}^d$), and $p \in \mathbb{R}$, the gap is $\theta^1_e(p) - \theta^0_e(p)$, where $\theta^1_e(p)$ is the [wired edge density](wired-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the wired infinite-volume random-cluster measure on $\mathbb{Z}^d$), and $\theta^0_e(p)$ is the [free edge density](free-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the free infinite-volume random-cluster measure on $\mathbb{Z}^d$, a chosen subsequential weak limit of the free box measures) (both read as $0$ unless $0 < p < 1$).

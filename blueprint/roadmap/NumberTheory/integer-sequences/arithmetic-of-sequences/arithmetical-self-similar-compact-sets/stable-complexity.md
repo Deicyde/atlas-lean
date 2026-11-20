@@ -10,4 +10,4 @@ same value. For $n = 0$ there is none, so $\lVert 0 \rVert_{\mathrm{st}} = \lVer
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 1.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 1.

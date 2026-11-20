@@ -7,4 +7,4 @@ $B \subseteq A$ with $|B| \ge |A|/3 + \omega(|A|)$.
 
 ## Sources
 
-- Ben Green, Problem 1 [GREEN-001].
+- Ben Green, 100 open problems (manuscript, update of December 2025), Problem 1, https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf.

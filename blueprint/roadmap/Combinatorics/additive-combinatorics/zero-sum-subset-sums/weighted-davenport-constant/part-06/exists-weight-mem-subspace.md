@@ -7,4 +7,4 @@ to $1$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 5.7.
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of $\mathbb{Z}_n$*, INTEGERS 24 (2024), Article A38, Corollary 5.7.

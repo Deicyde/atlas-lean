@@ -1,3 +1,3 @@
 # Synonymous and nonsynonymous sites sum to three
 
-There are three sites per codon: `S + N = 3` when `ρ_S(1) + ρ_N(1) ≠ 0`.
+If $\rho_S(1) + \rho_N(1) \ne 0$, then the [synonymous](syn-sites.md) and [nonsynonymous](nonsyn-sites.md) site counts satisfy $S + N = 3$.

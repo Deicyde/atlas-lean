@@ -11,4 +11,4 @@ Reimer's inequality for arbitrary events and its proof machinery: configurations
 - [Doubled ground set in Reimer's proof](doubled-ground-set-in-reimer-s-proof/README.md)
 - [Down-compression and disjoint pairs](down-compression-and-disjoint-pairs/README.md)
 - [Events determined by disjoint coordinate sets](events-determined-by-disjoint-coordinate-sets/README.md)
-- [Reimer's inequality, ported hypothesis form](reimer-wprob-core.md)
+- [Reimer's inequality, product-weight form](reimer-wprob-core.md)

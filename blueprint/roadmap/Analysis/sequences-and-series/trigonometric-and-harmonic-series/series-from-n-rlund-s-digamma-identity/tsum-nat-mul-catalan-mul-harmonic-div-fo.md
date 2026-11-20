@@ -1,7 +1,6 @@
 # Digamma evaluation of the $n$-weighted Catalan–harmonic series with binomial denominators
 
-**Digamma evaluation of the $n$-weighted Catalan–harmonic series with binomial
-denominators.** Let $C_n$ be the $n$-th Catalan number, $\psi$ the digamma function and $\gamma$
+Let $C_n$ be the $n$-th Catalan number, $\psi$ the digamma function and $\gamma$
 the Euler–Mascheroni constant; for complex $w$ write $H_w = \psi(w + 1) + \gamma$, and for complex
 $z$ write $\binom{n+z}{n} = \prod_{j=1}^{n} (z+j)/j$. For every complex number $z$ with
 $\operatorname{Re} z > 1/2$,

@@ -5,7 +5,9 @@ integers ($m \ge 0$) and let $B$ be the padded or the unpadded three-term Hofsta
 with initial conditions $x_1, \dots, x_m$: $B(i) = x_i$ for $1 \le i \le m$, the padded sequence
 has $B(i) = 0$ for every $i \le 0$ while the unpadded one is undefined there, and for $n > m$
 
-$$B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3)),$$
+$$
+B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3)),
+$$
 
 which is defined only when every value of $B$ on the right-hand side is defined and the indices
 $n - B(n-1)$, $n - B(n-2)$, $n - B(n-3)$ are less than $n$. For a natural number $k$, the

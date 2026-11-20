@@ -7,4 +7,4 @@ $\mathrm{NL}$ if and only if $K$ is definable in first-order logic with transiti
 
 ## Sources
 
-- N. Immerman, "Languages that capture complexity classes", SIAM Journal on Computing 16 (1987), 760-778 (STOC 1983).
+- Neil Immerman, "Languages that capture complexity classes", SIAM Journal on Computing 16 (1987), 760-778 (STOC 1983).

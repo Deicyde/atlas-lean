@@ -8,4 +8,4 @@ $$\sum_{k=0}^{n} \binom{n}{k} \left(\frac{\sqrt{5}}{2}\right)^{k} E_k L_{n-k} = 
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 10.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Corollary 10.

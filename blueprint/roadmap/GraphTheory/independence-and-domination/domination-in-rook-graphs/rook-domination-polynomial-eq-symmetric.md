@@ -10,4 +10,4 @@ $$D_{n,m}(x) = ((1+x)^n - 1)^m + ((1+x)^m - 1)^n -
 
 ## Sources
 
-- Stephan Mertens, "Domination Polynomial of the Rook Graph", Corollary 5 (`cor:domination-polynomial`).
+- Stephan Mertens, *Domination Polynomial of the Rook Graph*, Journal of Integer Sequences 27 (2024), Article 24.3.7, https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens/mertens6.html, Corollary 5 (`cor:domination-polynomial`).

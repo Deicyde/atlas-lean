@@ -1,3 +1,5 @@
 # Parent values of a node
 
-The values of the parents of node `k` in a full assignment `x`.
+Let $B$ be a Bayesian network on the nodes $0, \dots, n - 1$ with values in $\alpha$. For a node
+$k$ and a full assignment $x \in \alpha^n$, the parent values of $k$ in $x$ are
+$x_{\mathrm{pa}(k)} = (x_j)_{j \in \mathrm{pa}(k)}$.

@@ -10,4 +10,4 @@ $s_i$ over exactly one set of indices taken from $\{k+2, \dots, m+n\}$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 24 (`jis-2025-25.7.8-lem-24`). The family's elements lie in `V ⊕ 2ℤ_{2^n}` by hypothesis and by definition of `V`; only the covering statement is stated.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 24 (`jis-2025-25.7.8-lem-24`). The family's elements lie in $V \oplus 2\mathbb{Z}_{2^n}$ by hypothesis and by definition of $V$; only the covering statement is stated.

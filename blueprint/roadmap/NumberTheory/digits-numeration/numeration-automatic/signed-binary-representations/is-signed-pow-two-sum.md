@@ -7,4 +7,4 @@ $\lambda_j \in \{-1, m\}$.
 
 ## Sources
 
-- Ross, *A Perfect Number Generalization and Some Euclid-Euler Type Results*, JIS 27 (2024), Article 24.7.5, Lemma 7.
+- Tyler Ross, *A Perfect Number Generalization and Some Euclid-Euler Type Results*, Journal of Integer Sequences 27 (2024), Article 24.7.5, Lemma 7.

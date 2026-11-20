@@ -12,4 +12,4 @@ an odd entry and avoid $312$ and $231$.
 
 ## Sources
 
-- Per Alexandersson, Samuel Asefa Fufa, and Frether Getachew Kebede, "Pattern-Avoidance and Fuss–Catalan Numbers", Journal of Integer Sequences 26 (2023), Article 23.4.2, Proposition lines 1757-1759, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Getachew/get3.tex>.
+- Per Alexandersson, Frether Getachew Kebede, Samuel Asefa Fufa, and Dun Qiu, "Pattern-Avoidance and Fuss–Catalan Numbers", Journal of Integer Sequences 26 (2023), Article 23.4.2, Proposition 37, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Getachew/get3.pdf>.

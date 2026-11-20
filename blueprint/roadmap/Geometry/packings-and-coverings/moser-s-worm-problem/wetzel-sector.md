@@ -7,4 +7,4 @@ $|\operatorname{Im} z| \le \tan(\pi/12) \operatorname{Re} z$.
 
 ## Sources
 
-- Optimization Problems, constant 13a; source-specific interval-arc adaptation.
+- Moser's worm problem, constant 13a of the optimization constants repository, https://github.com/teorth/optimizationproblems/blob/2c1968cd520b60f1cf3cf50749f7285e800e4e15/constants/13a.md.

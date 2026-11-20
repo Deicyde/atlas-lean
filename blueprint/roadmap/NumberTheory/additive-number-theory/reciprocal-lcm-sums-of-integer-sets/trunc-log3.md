@@ -9,4 +9,4 @@ $\operatorname{Log}_3 x = \operatorname{Log}(\operatorname{Log}_2 x)$.
 
 ## Sources
 
-- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
+- Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Section 1 (iterated logarithm notation).

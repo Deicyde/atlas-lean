@@ -11,4 +11,4 @@ counted, and quadruples that differ only in the order of their entries are count
 
 ## Sources
 
-- Hartosh Singh Bal and Gaurav Bhatnagar, "Glaisher's Divisors and Infinite Products," Journal of Integer Sequences 27 (2024), Article 24.1.6, Proposition [Legendre] (equation nttriangle-b), lines 738–740, https://cs.uwaterloo.ca/journals/JIS/VOL27/Bhatnagar/bhat4.tex
+- Hartosh Singh Bal and Gaurav Bhatnagar, "Glaisher's Divisors and Infinite Products," Journal of Integer Sequences 27 (2024), Article 24.1.6, Proposition 27 (Legendre): https://cs.uwaterloo.ca/journals/JIS/VOL27/Bhatnagar/bhat4.tex

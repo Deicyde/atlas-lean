@@ -1,4 +1,3 @@
 # Offspring genotype law under random union of gametes
 
-The offspring genotype law under random union of gametes: the maternal and paternal
-alleles are independent gametes of the parental generation.
+For a set $A$ of alleles and a probability distribution $G$ on $A \times A$, the offspring genotype law is the law of the ordered pair of two independent [random gametes](gamete.md) of $G$, the maternal and the paternal one.

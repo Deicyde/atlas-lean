@@ -9,4 +9,4 @@ In the source's numbering of the Fibonacci numbers, which is shifted by one, thi
 
 ## Sources
 
-- Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Corollary 10.
+- Anton Shakov, *A 2-Regular Sequence That Counts The Divisors of $n^2 + 1$*, Journal of Integer Sequences 28 (2025), Article 25.6.2, arXiv:2510.22805, Corollary 10.

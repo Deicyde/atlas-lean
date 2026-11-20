@@ -9,7 +9,7 @@ $$\sum_{j=0}^{k} a(n, k, j) = c(n, k),$$
 
 where $c(n, k)$ is the unsigned Stirling number of the first kind.
 
-The paper assumes $n \ge k \ge 1$; the identity is stated for all $n$ and $k$.
+The paper assumes $n \ge k \ge 1$; the identity holds for all $n$ and $k$.
 
 ## Sources
 

@@ -13,4 +13,4 @@ $a = -u_0(1)/w(1)$ is the required solution.
 
 ## Sources
 
-- `SpectralTheory.sturm_liouville_existence` in the v1 formalization, whose formalization is left unproved there; the proof here is original.
+- The statement comes from an earlier version of this collection, where it was left without proof; the proof here is original.

@@ -13,4 +13,4 @@ the corresponding values of $s$, gives $g = p - s_1 - 1 = (n - p) - s_2 - 1$.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Lemma 13 (`jis-2024-24.2.6-lem-13`).
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Lemma 13.

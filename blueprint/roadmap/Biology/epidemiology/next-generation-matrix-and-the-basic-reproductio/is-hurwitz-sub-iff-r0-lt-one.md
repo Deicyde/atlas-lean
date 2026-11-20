@@ -1,5 +1,7 @@
-# `R₀` as a threshold for the linearized infected subsystem
+# $R_0$ as a threshold for the linearized infected subsystem
 
-**`R₀` as a threshold for the linearized infected subsystem** (van den Driessche–Watmough
-2002, proof of Theorem 2). If `F` is entrywise nonnegative and `V` is a nonsingular M-matrix,
-then every eigenvalue of `F - V` has negative real part iff `R₀ = ρ(F V⁻¹) < 1`.
+Let $F$ and $V$ be real square matrices indexed by a finite set, with $F$ entrywise nonnegative and $V$
+a nonsingular M-matrix (nonpositive off-diagonal entries, all complex eigenvalues with positive real
+part). Then every complex eigenvalue of $F - V$ has negative real part if and only if the
+[basic reproduction number](r0.md) satisfies $R_0 = \rho(F V^{-1}) < 1$ (van den Driessche–Watmough
+2002, proof of Theorem 2).

@@ -8,7 +8,9 @@ $F[T]$, and write $r^\kappa$ for the $\kappa$-power of a polynomial $r$. Then fo
 $f \in F[T]$, the Dirichlet convolution of $\mathbf{1}_{B_\kappa}$ and $\mu$ over monic divisors
 satisfies
 
-$$(\mathbf{1}_{B_\kappa} * \mu)(f) = \sum_{r} \mu(r),$$
+$$
+(\mathbf{1}_{B_\kappa} * \mu)(f) = \sum_{r} \mu(r),
+$$
 
 the sum running over the monic $r \in F[T]$ with $r^\kappa = f$.
 

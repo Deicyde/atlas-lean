@@ -10,4 +10,4 @@ form a prefix of $w_N$ for some $N$. In this sense $f = 0 \cdot f_1 \cdot f_2 \c
 
 ## Sources
 
-- Gabriele Fici, "Factorizations of the Fibonacci Infinite Word", Journal of Integer Sequences 18 (2015), Article 15.9.3, Proposition lines 188-195 (equation `fibo`), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Fici/fici5.tex>.
+- Gabriele Fici, *Factorizations of the Fibonacci Infinite Word*, Journal of Integer Sequences 18 (2015), Article 15.9.3, Section 2, Proposition 2, https://cs.uwaterloo.ca/journals/JIS/VOL18/Fici/fici5.html

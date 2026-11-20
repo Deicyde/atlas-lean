@@ -25,7 +25,7 @@
 - [Composition operator of a pointwise identity symbol](comp-clm-eq-of-forall.md)
 - [Composition operator of the identity is the identity](comp-clm-id.md)
 - [Injective maps have fibers of size at most one](has-bounded-fibers-of-injective.md)
-- [Permutations have fibers of size one](has-bounded-fibers-equiv.md)
+- [Permutations have fibers of size at most one](has-bounded-fibers-equiv.md)
 - [Adjoint of a composition operator with a permutation symbol](adjoint-comp-clm-of-equiv.md)
 - [Permutation composition operators are unitary](comp-clm-mem-unitary.md)
 - [Composition operator is injective iff its symbol is surjective](injective-comp-clm-iff.md)

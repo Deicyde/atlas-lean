@@ -8,4 +8,4 @@ of order $n$, this is the spot $w_i - 1$, which is spot $w_i$ in the one-based n
 
 ## Sources
 
-- L. Colmenarejo et al., *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Section 1 (Stirling permutations read as parking functions of length `2n`).
+- Laura Colmenarejo, Jennifer Elder, Kimberly J. Harry, Dorian Smith, Aleyah Dawkins, Pamela E. Harris, Selvi Kara, and Bridget Eileen Tenner, *On the Lucky and Displacement Statistics of Stirling Permutations*, Journal of Integer Sequences 27 (2024), Article 24.6.7, Section 1 (Stirling permutations read as parking functions of length `2n`).

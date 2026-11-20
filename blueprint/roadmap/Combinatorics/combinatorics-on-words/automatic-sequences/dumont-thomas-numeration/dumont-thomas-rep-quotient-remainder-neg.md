@@ -15,4 +15,4 @@ $u$ and $p$; and $(m_i, a_i)_{0 \le i \le p-1}$ is $u_q$-admissible.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 4.9 (with the `u`-quotient and `u`-remainder of Section 4).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 4.9 (with the $u$-quotient and $u$-remainder of Section 4).

@@ -10,4 +10,4 @@ full divisor sum.
 
 ## Sources
 
-- Luis H. Gallardo and Olivier Rahavandrainy, "A Polynomial Variant of Perfect Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.6, Lemma `oddperfect`, lines 155–158 (odd and perfect defined lines 96–108), https://cs.uwaterloo.ca/journals/JIS/VOL23/Gallardo/gallardo7.tex attributed there to Canaday.
+- Luis H. Gallardo and Olivier Rahavandrainy, *A Polynomial Variant of Perfect Numbers*, Journal of Integer Sequences 23 (2020), Article 20.8.6, Lemma 2 (odd and perfect polynomials defined in Section 1), https://cs.uwaterloo.ca/journals/JIS/VOL23/Gallardo/gallardo7.tex; attributed there to E. F. Canaday, *The sum of the divisors of a polynomial*, Duke Mathematical Journal 8 (1941), 721–737, Theorems 1 and 2.

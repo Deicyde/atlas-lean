@@ -13,4 +13,4 @@ the empty word, would make every infinite word an image of every other.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 1 (binary substitutions as homomorphisms of words) and Section 3 (images `ϱ(w)`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 1 (binary substitutions as homomorphisms of words) and Section 3 (images $\varrho(w)$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

@@ -7,11 +7,15 @@ be their compound sequence and $S$ the additive submonoid of $\mathbb{N}$ genera
 $c_0, \dots, c_n$. Then (Kiers, O'Neill and Ponomarenko) the Apéry set of $S$ with respect to
 $c_0$, the set of least elements of $S$ in the residue classes modulo $c_0$, is
 
-$$\Big\{\sum_{i=1}^{n} c_i x_i : x_1, \dots, x_n \in \mathbb{N},\ x_i < a_i\Big\},$$
+$$
+\Big\{\sum_{i=1}^{n} c_i x_i : x_1, \dots, x_n \in \mathbb{N},\ x_i < a_i\Big\},
+$$
 
 and the largest integer not in $S$, the Frobenius number of $S$, is
 
-$$F(S) = \sum_{i=1}^{n} (a_i - 1) c_i - c_0.$$
+$$
+F(S) = \sum_{i=1}^{n} (a_i - 1) c_i - c_0.
+$$
 
 ## Sources
 

@@ -1,4 +1,3 @@
 # Exposed guards are barbs
 
-A directly exposed guard is a barb, with the reflexive structural
-representative as witness.
+If a π-calculus process $P$ [offers](offer.md) the free-channel observable $o$, then $P$ has the [barb](barb.md) $o$ (take $P$ itself as the structurally congruent witness).

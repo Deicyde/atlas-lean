@@ -14,4 +14,4 @@ $\lambda_{f \times f}$ under Dirichlet convolution is denoted $\lambda_{w, f \ti
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (definition of `λ_{f×f}` and `λ_{w,f×f}`).
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (definition of $\lambda_{f \times f}$ and $\lambda_{w, f \times f}$).

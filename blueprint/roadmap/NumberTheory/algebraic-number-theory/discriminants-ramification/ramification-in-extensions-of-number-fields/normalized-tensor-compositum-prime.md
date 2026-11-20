@@ -15,4 +15,4 @@ $C$ at which to localize in order to recover the local factor $T$.
 
 ## Sources
 
-- ATLAS N390, Proposition 19.14.
+- ATLAS NumberTheoryI, Proposition 19.14.

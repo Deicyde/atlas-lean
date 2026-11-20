@@ -1,4 +1,12 @@
 # Exact coverage of Garwood's bound
 
-For every mean `r ≥ 0` and `0 < α < 1`,
-`P_r(r ≤ u_α(K)) ≥ 1 - α` when `K ~ Poisson(r)`.
+Let $r \ge 0$, $0 < \alpha < 1$ and $K \sim \operatorname{Poisson}(r)$. Then
+
+$$P\bigl(r \le u_\alpha(K)\bigr) \ge 1 - \alpha,$$
+
+where $u_\alpha$ is [Garwood's upper confidence bound](garwood-upper.md): the bound covers the true
+mean with probability at least $1 - \alpha$, for every mean.
+
+## Sources
+
+- F. Garwood, *Fiducial limits for the Poisson distribution*, Biometrika 28 (1936), 437–442.

@@ -1,4 +1,5 @@
 # Reverse scope extrusion preserves conversion typing
 
-Reverse scope transport recovers the exact external ownership split
-from the actual restriction/parallel typing, with no closed-hole premise.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$, $q$ processes. If $\Delta
+\vdash^{\simeq}_n \nu\,(p \mid \uparrow_0 q)$, where $\uparrow_0 q$ adds one to every free variable
+index of $q$, then $\Delta \vdash^{\simeq}_n (\nu\,p) \mid q$.

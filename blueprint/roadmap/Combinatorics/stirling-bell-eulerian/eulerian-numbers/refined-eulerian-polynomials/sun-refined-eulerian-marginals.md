@@ -14,4 +14,4 @@ $$A_n(1, q) = \frac{n!}{2^{\lfloor (n-1)/2 \rfloor}} (1+q)^{\lfloor (n-1)/2 \rfl
 
 ## Sources
 
-- Hua Sun, "A New Class of Refined Eulerian Polynomials", Journal of Integer Sequences 21 (2018), Article 18.5.5, Proposition lines 248-254, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.tex>.
+- Hua Sun, "A New Class of Refined Eulerian Polynomials", Journal of Integer Sequences 21 (2018), Article 18.5.5, Proposition 2, equation (1), <https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.pdf>.

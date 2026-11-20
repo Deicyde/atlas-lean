@@ -1,3 +1,4 @@
 # Nearest-neighbour graph on a translated box
 
-The nearest-neighbour graph induced on `Λ_n - y`.
+For $d, n \in \mathbb{N}$ and $y \in \mathbb{Z}^d$, this is the nearest-neighbour graph of $\mathbb{Z}^d$ induced on the
+[translated box](sct-translated-box.md) $\Lambda_n - y$.

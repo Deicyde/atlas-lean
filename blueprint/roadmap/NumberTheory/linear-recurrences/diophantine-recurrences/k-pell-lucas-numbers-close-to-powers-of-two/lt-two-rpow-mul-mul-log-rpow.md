@@ -1,8 +1,10 @@
-# Lemma 7
+# Guzmán Sánchez–Luca lemma: $x < 2^\ell T (\log T)^\ell$
 
-If `ℓ ≥ 1`, `T > (4ℓ²)^ℓ` and `T > x / (log x)^ℓ`, then
-`x < 2^ℓ T (log T)^ℓ`; stated for `x > 1`, where `(log x)^ℓ` is a real power of a positive
-number.
+Let $\ell$, $T$ and $x$ be real numbers with $\ell \ge 1$ and $x > 1$. If $T > (4\ell^2)^\ell$ and
+$T > x/(\log x)^\ell$, then $x < 2^\ell T (\log T)^\ell$. Here $\log$ is the natural logarithm, and
+$(\log x)^\ell$ and $(\log T)^\ell$ are real powers of positive numbers.
+
+The source leaves the condition $x > 1$ implicit.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Tajima's D
 
-- [Tajima's `D`](tajima-d.md)
+- [Tajima's D](tajima-d.md)
 - [Tajima's $c_1$ vanishes for two genes](tajima-c1-two.md)
 - [Tajima's $c_2$ vanishes for two genes](tajima-c2-two.md)
 - [Tajima's $c_1$ vanishes for three genes](tajima-c1-three.md)

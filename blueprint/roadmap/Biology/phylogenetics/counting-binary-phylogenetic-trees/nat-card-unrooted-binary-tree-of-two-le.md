@@ -1,5 +1,3 @@
-# Number of unrooted binary phylogenetic trees
+# Number of unrooted binary phylogenetic trees from two taxa on
 
-The count `(2 n - 5)‼` of unrooted binary phylogenetic trees holds from `n = 2` taxa on:
-for `n = 2` the single tree is one edge and `2 · 2 - 5 = 0` in `ℕ`, `0‼ = 1` (the conventional
-value `(-1)‼ = 1`). For `n ≤ 1` there is no tree while the formula gives `1`.
+For every natural number $n \ge 2$, the number of [isomorphism](iso.md) classes of [unrooted binary phylogenetic trees](unrooted-binary-tree.md) on $n$ labeled taxa is $(2n - 5)!!$, with truncated subtraction (so the value for $n = 2$ is $0!! = 1$).

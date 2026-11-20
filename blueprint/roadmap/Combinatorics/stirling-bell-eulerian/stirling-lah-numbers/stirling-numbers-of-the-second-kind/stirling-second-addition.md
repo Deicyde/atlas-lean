@@ -13,4 +13,4 @@ $S(0,1) = 0$.
 
 ## Sources
 
-- Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, Theorem, equation (ex33), lines 198–204, https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.tex
+- Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, equations (11), (12), <https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.pdf>.

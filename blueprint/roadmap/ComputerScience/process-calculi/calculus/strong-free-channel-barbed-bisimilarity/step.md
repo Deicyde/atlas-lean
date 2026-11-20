@@ -1,4 +1,3 @@
 # Barbed bisimilarity matches each reduction by one reduction
 
-A reduction from the first process is matched by one reduction,
-with strong barbed bisimilar derivatives.
+If $P$ and $Q$ are [strongly barbed bisimilar](barbed-bisimilar.md) and $P \to P'$, then $Q \to Q'$ for some $Q'$ strongly barbed bisimilar to $P'$.

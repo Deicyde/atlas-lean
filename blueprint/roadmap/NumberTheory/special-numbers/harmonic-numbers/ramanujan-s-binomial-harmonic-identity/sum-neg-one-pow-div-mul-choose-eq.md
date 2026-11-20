@@ -1,4 +1,4 @@
-# Gould's reciprocal binomial identity (Alzer–Kwong, Lemma 4)
+# Gould's reciprocal binomial identity (Alzer–Kwong, Lemma 7)
 
 Let $N$ be a natural number
 and $x$ a real number with $x \ne \nu$ for every $\nu \in \{0, 1, \dots, N\}$. Then
@@ -11,4 +11,4 @@ where $\binom{x}{N} = x(x-1)\cdots(x-N+1)/N!$ is the generalized binomial coeffi
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 4.
+- Horst Alzer and Man Kam Kwong, *Ramanujan and a Combinatorial Identity Involving Harmonic Numbers*, Journal of Integer Sequences 29 (2026), Article 26.4.8, Lemma 7.

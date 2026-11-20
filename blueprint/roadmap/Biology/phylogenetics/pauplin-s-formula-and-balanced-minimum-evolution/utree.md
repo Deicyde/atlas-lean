@@ -1,4 +1,3 @@
 # Unrooted binary tree with edge lengths
 
-An unrooted binary tree, rooted at its edge of length `len` that joins the roots of the
-rooted binary trees `left` and `right`.
+An unrooted binary tree with leaf labels in $X$ is given by two [rooted binary trees](rtree.md) (the left and right sides) whose roots are joined by a root edge of real length.

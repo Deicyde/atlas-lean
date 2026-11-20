@@ -5,4 +5,4 @@ decision problem in NP reduces to STEINER TREE by a polynomial-time many-one red
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), STEINER TREE IN GRAPHS; R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), STEINER TREE IN GRAPHS; Richard M. Karp, "Reducibility among combinatorial problems" (1972).

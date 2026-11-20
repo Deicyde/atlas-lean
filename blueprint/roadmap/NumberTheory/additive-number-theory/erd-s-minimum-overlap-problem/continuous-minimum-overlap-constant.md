@@ -8,4 +8,4 @@ $(f, g)$.
 
 ## Sources
 
-- Optimization Problems, Constant 1b.
+- *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html.

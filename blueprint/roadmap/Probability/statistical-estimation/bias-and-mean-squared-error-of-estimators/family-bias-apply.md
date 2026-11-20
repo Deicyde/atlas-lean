@@ -8,4 +8,4 @@ $\int_S W \, dP_\theta - \tau(\theta)$.
 
 ## Sources
 
-- blueprint `af_723199a7ca6fb3e936a73618`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, Definition 7.3.2 (bias).

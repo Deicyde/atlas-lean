@@ -1,3 +1,3 @@
 # Rotational self-duality of the square lattice
 
-The isomorphism between the square lattice and its dual given by the quarter-turn rotation.
+The graph isomorphism from the square lattice to the dual square lattice given by the quarter-turn rotation $\rho(a, b) = (-b, a)$.

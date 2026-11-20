@@ -10,4 +10,6 @@ This is Erdős Problem 469, resolved true.
 
 ## Sources
 
+- Erdős Problem #469, https://www.erdosproblems.com/469.
+- S. J. Benkoski and P. Erdős, *On weird and pseudoperfect numbers*, Math. Comp. 28 (1974), 617–623, p. 620.
 - plby/lean-proofs (2026), https://github.com/plby/lean-proofs/blob/68da20b96673899166e94638f5a7fffeb7231d35/src/latest/ErdosProblems/Erdos469.lean.

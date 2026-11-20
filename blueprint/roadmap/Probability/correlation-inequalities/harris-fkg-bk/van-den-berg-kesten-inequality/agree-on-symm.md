@@ -1,3 +1,3 @@
 # Symmetry of agreement on a set
 
-`agreeOn` is symmetric (`Set.EqOn.symm`).
+Let $E$ be a set, $K \subseteq E$ and $\omega, \omega' \in \{0,1\}^E$. If $\omega$ and $\omega'$ agree on $K$, then $\omega'$ and $\omega$ agree on $K$.

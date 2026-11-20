@@ -1,6 +1,6 @@
-# Normalization
+# Normalization of the negative binomial law
 
-For `θ > 0` and `μ ≥ 0` the negative binomial masses sum to one.
-For `μ > 0` this is `hasSum_negBinomialPMF` transported along
-`negBinomialReal_eq_negBinomialPMF`, so the mean parametrization shares the canonical
-law's normalization instead of re-proving it.
+For $\theta > 0$ and $\mu \ge 0$, the series $\sum_{k \ge 0} \mathrm{NB}(k; \theta, \mu)$ of the [negative
+binomial law](neg-binomial-real.md) with size $\theta$ and mean $\mu$ converges to $1$. For $\mu > 0$
+this is the [normalization](has-sum-neg-binomial-pmf.md) of the $p$-parametrization, through
+[the change of parameters](neg-binomial-real-eq-neg-binomial-pmf.md).

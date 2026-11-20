@@ -2,7 +2,7 @@
 
 The verifier is the program of the multi-stack
 machine with the stacks and labels of the Hamiltonian path verifier, every stack over the
-alphabet $\mathrm{Sym}$, and a Boolean internal variable, given below label by label. Write
+SAT verifier's alphabet, and a Boolean internal variable, given below label by label. Write
 $\mathrm{bit}(x)$ for the bit symbol of a boolean $x$. Write $(a, n)$, $(a, s)$, $(c, n)$ and
 $(b, t)$ for the four counter comparisons, and $\alpha(i)$ and $\beta(i)$ for the first and the
 second counter of comparison $i$. Every unary reader, unary mover, bit-moving loop and transfer

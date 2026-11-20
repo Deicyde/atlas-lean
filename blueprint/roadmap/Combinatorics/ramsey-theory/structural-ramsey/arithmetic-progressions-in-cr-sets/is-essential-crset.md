@@ -7,4 +7,4 @@ $p + p = p$, all of whose members are CR-sets, such that $A \in p$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of essential CR-sets before Theorem 7).
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of essential CR-sets before Theorem 7).

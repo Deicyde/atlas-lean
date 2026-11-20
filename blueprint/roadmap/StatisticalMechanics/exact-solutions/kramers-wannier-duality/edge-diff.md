@@ -1,3 +1,3 @@
 # Spin disagreement test across an edge
 
-Whether the spins of `s` differ at the endpoints of `e`.
+For a set $V$, $s : V \to \{0, 1\}$ and an unordered pair $e = \{x, y\}$, the test is true when $s(x) \ne s(y)$ (false for loops).

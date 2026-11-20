@@ -11,4 +11,4 @@ finitely many $\mathfrak p$.
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Corollary 3.10. The book's hypothesis $I \neq 0$ is dropped, since every valuation of the zero ideal is zero.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 3, Corollary 3.10, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. Its hypothesis $I \neq 0$ is not needed, since every valuation of the zero ideal is zero.

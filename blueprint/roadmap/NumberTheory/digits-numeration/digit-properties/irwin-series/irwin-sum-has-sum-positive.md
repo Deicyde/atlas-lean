@@ -7,12 +7,16 @@ number $n$ let $k(n)$ be the number of occurrences of $d$ in the base-$b$ repres
 and let $H^{(k)}$ be the Irwin sum, the sum of $1/n$ over the positive integers $n$ with
 $k(n) = k$. Then the family indexed by $m \ge 1$ of
 
-$$\sum_{b^{l-1} \le n < b^l,\ k(n) \le k} \frac{v_{k - k(n), m}}{(n + 1)^{m + 1}}$$
+$$
+\sum_{b^{l-1} \le n < b^l,\ k(n) \le k} \frac{v_{k - k(n), m}}{(n + 1)^{m + 1}}
+$$
 
 is summable, with sum
 
-$$H^{(k)} - \sum_{1 \le n < b^{l-1},\ k(n) = k} \frac{1}{n} -
-b \sum_{b^{l-1} \le n < b^l,\ k(n) \le k} \frac{1}{n + 1}.$$
+$$
+H^{(k)} - \sum_{1 \le n < b^{l-1},\ k(n) = k} \frac{1}{n} -
+b \sum_{b^{l-1} \le n < b^l,\ k(n) \le k} \frac{1}{n + 1}.
+$$
 
 The hypothesis $b > 1$ is the paper's standing assumption, in place of an isolated $b > 0$ in the
 statement of Theorem 2.

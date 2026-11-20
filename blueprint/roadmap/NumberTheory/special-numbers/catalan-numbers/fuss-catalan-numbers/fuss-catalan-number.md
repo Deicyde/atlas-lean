@@ -6,4 +6,4 @@ $\lfloor \binom{km}{m} / ((k-1)m+1) \rfloor$.
 
 ## Sources
 
-- JIS VOL23/Young, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.tex>.
+- Donovan Young, *Linear $k$-Chord Diagrams*, Journal of Integer Sequences 23 (2020), Article 20.9.1, Corollary 26, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.html>.

@@ -1,5 +1,11 @@
 # Pauplin's formula
 
-**Pauplin's formula** (Pauplin 2000): the total edge length of a binary tree with real edge
-lengths is `∑_{i<j} 2^{1-τ_ij} d_T(i, j)`, the sum over pairs of leaves of the path length
-weighted by `2` to the power one minus the number of edges on the path.
+For every [unrooted binary tree](utree.md) $T$ with real edge lengths,
+
+$$\sum_{(x, y, \ell, \tau)} 2^{1 - \tau}\, \ell = L(T),$$
+
+the sum over the [leaf pairs](pairs-2.md) of $T$, where $L(T)$ is the [total edge length](length-2.md) (Pauplin 2000).
+
+## Sources
+
+- Y. Pauplin, *Direct calculation of a tree length using a distance matrix*, J. Mol. Evol. 51 (2000), 41–47.

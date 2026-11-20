@@ -12,4 +12,4 @@ size.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definition 5.
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Definition 5.

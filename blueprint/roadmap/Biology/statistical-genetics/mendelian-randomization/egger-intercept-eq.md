@@ -1,4 +1,7 @@
 # MR-Egger intercept under pleiotropy
 
-The MR-Egger intercept under pleiotropy: it is the weighted mean pleiotropic effect
-`ᾱ_v` minus `Cov_v(γ, α) / Var_v(γ) · γ̄_v`.
+Let $\iota$ be a finite set of SNPs, let $v, \gamma \in \mathbb{R}^\iota$ with $\operatorname{Var}_v(\gamma) \ne 0$, let $\alpha \in \mathbb{R}^\iota$ and $\beta \in \mathbb{R}$, and put $\Gamma_j = \alpha_j + \beta \gamma_j$. Then the [MR-Egger intercept](egger-intercept.md) of $\Gamma$ on $\gamma$ is
+
+$$a_E = \bar\alpha_v - \frac{\operatorname{Cov}_v(\gamma, \alpha)}{\operatorname{Var}_v(\gamma)}\, \bar\gamma_v,$$
+
+where the bars denote [weighted means](weighted-mean.md).

@@ -20,4 +20,4 @@ double descents, and $\mathrm{pk}$ and $\mathrm{vl}$ peaks and valleys. The empt
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (the g.f. `F_(τ,ρ)`).
+- Tian Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (the g.f. `F_(τ,ρ)`).

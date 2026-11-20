@@ -8,4 +8,5 @@ vectors $X$ in $\mathbb{R}^n$, and $\log$ is the natural logarithm.
 
 ## Sources
 
-- Klartag, Ars Inveniendi Analytica (2023), Paper 4; catalogue `constants/20a.md`.
+- B. Klartag, *Logarithmic bounds for isoperimetry and slices of convex sets*, Ars Inveniendi Analytica (2023),
+  Paper No. 4; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

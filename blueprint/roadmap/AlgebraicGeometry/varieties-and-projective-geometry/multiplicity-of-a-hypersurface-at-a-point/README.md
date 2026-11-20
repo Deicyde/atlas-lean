@@ -1,11 +1,11 @@
 # Multiplicity of a hypersurface at a point
 
-## Projectivization
+## Projective points
 
 - [Rescaling a representative does not change the projective point](mk-smul-eq.md)
 - [Orthogonality of projective points via representatives](orthogonal-iff-rep-dot-product-rep.md)
 
-## Mv Polynomial
+## Order of vanishing and multiplicity
 
 - [Order of vanishing at a point](order-at.md)
 - [Constant term of the Taylor expansion](constant-coeff-aeval-x-add-c.md)

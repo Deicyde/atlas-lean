@@ -6,4 +6,4 @@ $9 \mid T_3(3n + 2)$.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Corollary 2 (congruences (53), (54)).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Corollary 2 (congruences (53), (54)).

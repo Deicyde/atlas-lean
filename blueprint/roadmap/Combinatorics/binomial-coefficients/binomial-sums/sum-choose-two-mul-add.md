@@ -8,4 +8,4 @@ $$\sum_{i=0}^{k} \binom{2i + n}{i} =
 
 ## Sources
 
-- Molly Lynch and Michael Weselcouch, "A Generalized Hockey Stick Theorem", Corollary 15.
+- Molly Lynch and Michael Weselcouch, *A Generalized Hockey Stick Theorem*, J. Integer Seq. 28 (2025), Article 25.7.7, Corollary 15, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Weselcouch/wesel8.html>.

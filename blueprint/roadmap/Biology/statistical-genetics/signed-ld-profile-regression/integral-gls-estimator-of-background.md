@@ -1,9 +1,7 @@
 # Unbiasedness with covariates
 
-**Unbiasedness with covariates** (the signed background model): suppose the true effects
-have mean `μ v + U γ` for background annotations `U` (columns `u_b`) with arbitrary coefficients
-`γ`, let `A = R̂ U` be their signed LD profiles, and let `z⊥ = R̂ v - A w` be the weighted residual
-of the signed LD profile of `v` on `A` (`Aᵀ W z⊥ = 0`) for a symmetric weight matrix `W`. If
-`⟪z⊥, z⊥⟫_W ≠ 0`, then `𝔼 [⟪z⊥, α̂⟫_W / ⟪z⊥, z⊥⟫_W] = μ`. By `Matrix.frischWaughLovell` this
-estimator equals the coefficient of `R̂ v` in the joint weighted regression of `α̂` on
-`[A | R̂ v]`, and the same as regressing the residualized `α̂` on `z⊥`.
+Let a [first-moment SLDP model](model.md) on a measure $P$ have mean effects $m = \mu v + U\gamma$, where $\mu \in \mathbb{R}$, $v \in \mathbb{R}^M$, $U$ is a real $M \times K$ matrix of background annotations ($K$ a finite set) and $\gamma \in \mathbb{R}^K$ is arbitrary. Let $X$ be a real $N \times M$ genotype matrix with [in-sample LD matrix](ld-matrix.md) $\hat R$, put $A = \hat R U$, let $W$ be a symmetric real $M \times M$ matrix, and let $w \in \mathbb{R}^K$ be such that the residual $z = \hat R v - A w$ satisfies $A^\top W z = 0$. If $z^\top W z \ne 0$, then
+
+$$\int \frac{z^\top W \hat\alpha}{z^\top W z} \, dP = \mu,$$
+
+where $\hat\alpha$ is the vector of [normalized marginal scores](alpha-hat.md). When $W$ is positive semidefinite, the integrand is the coefficient of $\hat R v$ in the joint weighted least-squares regression of $\hat\alpha$ on $[A \mid \hat R v]$.

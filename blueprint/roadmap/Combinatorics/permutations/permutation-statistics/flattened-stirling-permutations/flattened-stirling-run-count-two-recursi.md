@@ -7,4 +7,4 @@ $|\mathrm{flat}_2(Q_{n+1})| = 2\,|\mathrm{flat}_2(Q_n)| + 2n - 1$.
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 2, part 2.
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 2, part 2.

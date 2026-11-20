@@ -7,4 +7,4 @@ smallest part, contributes $0$.
 
 ## Sources
 
-- Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1 (definition of `spt2‾(n)`).
+- Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1 (definition of $\overline{\mathrm{spt2}}(n)$).

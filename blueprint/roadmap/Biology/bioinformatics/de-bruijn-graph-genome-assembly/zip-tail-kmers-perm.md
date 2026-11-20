@@ -1,4 +1,3 @@
-# The `k`-mer walk of `s` is an Eulerian trail
+# The (k-1)-mer walk of a string is an Eulerian trail
 
-**The `k`-mer walk of `s` is an Eulerian trail** of its de Bruijn multigraph: its steps are a
-permutation of the edge occurrences, each traversed once.
+For $k \ge 1$ and every string $s$, the steps of the walk of $(k-1)$-mers of $s$ are a permutation of the edge occurrences of the [de Bruijn multigraph](de-bruijn-edges.md) of $s$ for $k$: the walk traverses every edge occurrence exactly once.

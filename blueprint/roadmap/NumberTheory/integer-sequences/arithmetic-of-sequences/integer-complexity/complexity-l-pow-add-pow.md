@@ -5,4 +5,4 @@ For natural numbers $l > 1$ and $m \ge m' \ge 1$, $\|l^m + l^{m'}\|_l = m + 1$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Corollary 1.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Corollary 1.

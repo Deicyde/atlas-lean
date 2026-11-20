@@ -1,4 +1,3 @@
 # Two-sided iHH in the star-genealogy model
 
-In the star-genealogy model the two-sided integrated haplotype homozygosity is
-`1 / (r T)`.
+Let $r > 0$ and $T > 0$. Then the [two-sided integrated haplotype homozygosity](ihh-two-sided.md) is $\dfrac{1}{rT}$.

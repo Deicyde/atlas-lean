@@ -1,6 +1,6 @@
 # The five typing rules of pure System F
 
-## System F
+## Typing judgement
 
 - [Extrinsic typing of pure System F terms](typing.md)
 

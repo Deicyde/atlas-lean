@@ -1,9 +1,16 @@
 # Kingman's subadditive ergodic theorem
 
-**Kingman's subadditive ergodic theorem** (J. F. C. Kingman, *The ergodic theory of
-subadditive stochastic processes*, 1968): if `X` is a subadditive cocycle over a map `T`
-preserving the finite measure `μ` and `inf_n (∫ X n dμ) / n > -∞`, then `X n / n` converges
-`μ`-almost everywhere to the finite limit `kingmanLimit T X`. The sign of `X` is arbitrary.
-Invariance and integrability of the limit, and `∫ kingmanLimit = gamma`, are not stated here; for
-nonnegative cocycles see `exists_invariant_limit_of_nonneg`, which contains
-`MathlibExt.Dynamics.Ergodic.KingmanWanted.kingman_subadditive`.
+Let $\mu$ be a finite measure on $\Omega$ and $(X_n)_{n \ge 0}$ a [subadditive cocycle](subadditive-cocycle.md) over
+a map $T : \Omega \to \Omega$ for $\mu$, such that the numbers $\frac{1}{n} \int X_n \, d\mu$ ($n \ge 1$) are bounded
+below. Then for $\mu$-almost every $\omega$,
+
+$$\frac{X_n(\omega)}{n} \longrightarrow \bar X(\omega) \qquad (n \to \infty),$$
+
+where $\bar X$ is the real-valued [Kingman limit](kingman-limit.md). The sign of the $X_n$ is arbitrary. For
+nonnegative cocycles the limit is moreover integrable and invariant
+([nonnegative case](exists-invariant-limit-of-nonneg.md)).
+
+## Sources
+
+- J. F. C. Kingman, *The ergodic theory of subadditive stochastic processes*, J. Roy. Statist. Soc. Ser. B 30
+  (1968), 499–510.

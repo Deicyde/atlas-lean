@@ -1,5 +1,3 @@
-# One row of the table
+# One row of the Smith–Waterman table
 
-From the row of the prefix `px`, `nextRow` computes the row of
-`px ++ [a]`: the cells `H[i+1][j] = swCellScore σ gap (px ++ [a]) py` for the prefixes `py` of
-`ys`, shortest first.
+For every letter $a$ and sequences $p, y$, the [next row](next-row.md) for $a$ and $y$ of the row $\bigl(H(p, q)\bigr)_q$ is the row $\bigl(H(p a, q)\bigr)_q$, where $q$ runs over the prefixes of $y$, shortest first, and $H$ is the [terminal Smith–Waterman cell](../pairwise-sequence-alignment/sw-cell-score.md).

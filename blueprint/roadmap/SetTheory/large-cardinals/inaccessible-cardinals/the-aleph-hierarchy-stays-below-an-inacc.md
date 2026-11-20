@@ -1,8 +1,7 @@
 # The aleph hierarchy stays below an inaccessible cardinal
 
-Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument
-via `IsInaccessible.aleph_ord`.
+If $\kappa$ is an inaccessible cardinal, then $\aleph_\alpha < \kappa$ for every ordinal
+$\alpha < \kappa$.
 
-## Sources
-
-- Below an inaccessible κ, each ℵ_o with o < κ.ord lies below κ.
+Proof: an inaccessible cardinal is an aleph fixed point, $\aleph_\kappa = \kappa$, and the aleph
+function is strictly increasing.

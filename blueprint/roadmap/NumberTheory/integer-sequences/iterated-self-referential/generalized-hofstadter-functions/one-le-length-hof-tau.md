@@ -7,4 +7,4 @@ natural number $i$, the image $\tau_k(i)$ of the letter $i$ has length at least 
 
 ## Sources
 
-- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.2 (definition of `τ_k`).
+- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.3 (definition of $\tau_k$).

@@ -9,4 +9,4 @@ where $0^0 = 1$.
 
 ## Sources
 
-- equation (snmf1) of https://cs.uwaterloo.ca/journals/JIS/VOL26/Oussi/oussi9.tex.
+- Lahcen Oussi, *On Degenerate Simsek and Stirling Numbers*, Journal of Integer Sequences 26 (2023), Article 23.5.1, equation (10), <https://cs.uwaterloo.ca/journals/JIS/VOL26/Oussi/oussi9.pdf>.

@@ -8,4 +8,4 @@ $\gamma(1)\,\alpha(1)\,\beta(1)$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[γ, α, β](n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of $D[\gamma, \alpha, \beta](n)$.

@@ -12,8 +12,8 @@ $\mathrm{PSL}_2(\mathbb{F}_{p^m})$ for some $m \ge 1$, where $\mathbb{F}_{p^m}$ 
 with $p^m$ elements. (c) $G$ is isomorphic to $\mathrm{PGL}_2(\mathbb{F}_{p^m})$ for some
 $m \ge 1$. (d) $p = 3$ and $G$ is isomorphic to the alternating group $A_5$.
 
-In the source, the first case is a group of maps $z \mapsto az + b$ with $a$ a root of unity;
-only the resulting abstract group structure is recorded here.
+In the source, the first case is a group of maps $z \mapsto az + b$ with $a$ a root of unity; case
+(a) gives its isomorphism type.
 
 Proof: We follow X. Faber, *Finite p-irregular subgroups of $\mathrm{PGL}_2(k)$*,
 arXiv:1112.1999, §6, using the Sylow normal form, exceptional-orbit count, and projective-line

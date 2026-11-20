@@ -1,3 +1,3 @@
 # Null part of the mixture is dominated by the mixture
 
-The null part of the mixture is dominated by the mixture: `π₀ f₀ ≤ f`.
+In a [two-groups model](two-groups-model.md), $\pi_0 f_0(z) \le f(z)$ for every $z \in \mathbb{R}$, where $f$ is the [mixture density](mixture-density.md).

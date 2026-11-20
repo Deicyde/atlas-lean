@@ -15,4 +15,4 @@ This form does not assume $r > 0$ or that $O$ lies in the affine span of $A, B, 
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius). Statement ID: carnot-inradius-s1.
+- https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius).

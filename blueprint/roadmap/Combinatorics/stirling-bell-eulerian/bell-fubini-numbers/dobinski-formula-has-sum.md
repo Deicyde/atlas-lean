@@ -7,4 +7,4 @@ At $n = 0$ the term $k = 0$ is $0^0 / 0! = 1$, matching the exponential series.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Mezo/mezo9.tex>, lines 283-293. Only the classical Bell-number identity is stated here; the r-Bell generalizations are excluded.
+- István Mező, *The r-Bell Numbers*, Journal of Integer Sequences 14 (2011), Article 11.1.1, Section 5 (Dobinski's formula; the case $r = 0$ of Theorem 5.1), <https://cs.uwaterloo.ca/journals/JIS/VOL14/Mezo/mezo9.pdf>.

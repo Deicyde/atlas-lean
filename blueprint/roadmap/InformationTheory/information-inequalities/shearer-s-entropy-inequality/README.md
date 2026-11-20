@@ -11,3 +11,7 @@
 - [Marginal entropy on all coordinates is the full entropy](shearer-marginal-entropy-univ.md)
 - [Shearer's entropy inequality for every cover multiplicity](shearer-entropy-inequality-general.md)
 - [Shearer's entropy inequality](shearer-entropy-inequality.md)
+
+## Related topics
+
+- [Loomis–Whitney and Brascamp–Lieb inequalities](../../../Combinatorics/extremal-set-theory/loomis-whitney-and-brascamp-lieb-inequalities/README.md): the counting forms of projection inequalities, which follow from Shearer's inequality for the uniform distribution.

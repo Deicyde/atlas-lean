@@ -9,7 +9,7 @@
 - [Source amplitude in terms of the decay length](sqrt-mul-eq.md)
 - [Slope of the morphogen profile](has-deriv-at-profile.md)
 - [Exponential profile is a bounded steady state](is-steady-state-profile.md)
-- [Uniqueness](eq-profile-of-is-steady-state.md)
+- [Uniqueness of the bounded steady state](eq-profile-of-is-steady-state.md)
 - [Morphogen profile is strictly decreasing](profile-strict-anti.md)
 - [Profile equals the threshold at the French-flag boundary](profile-threshold-position.md)
 - [French-flag boundary](profile-eq-iff.md)

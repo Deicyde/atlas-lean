@@ -13,4 +13,4 @@ Then $\|n\|_2 = m + 2$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Corollary 3.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Corollary 3.

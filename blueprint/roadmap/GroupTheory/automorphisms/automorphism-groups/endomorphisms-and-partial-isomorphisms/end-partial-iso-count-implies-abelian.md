@@ -1,4 +1,4 @@
-# Kourovka Problem 19.20 (Cameron)
+# Groups with as many endomorphisms as partial isomorphisms (Kourovka 19.20)
 
 The statement that every finite group $G$ with
 $|\mathrm{End}(G)| = |\mathrm{PIso}(G)|$ is abelian. Here $\mathrm{End}(G)$ is the set of

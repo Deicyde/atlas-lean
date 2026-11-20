@@ -6,4 +6,4 @@ $\mathbb{R}$, to $\mathbb{C}$, or to the algebra $\mathbb{H}$ of real quaternion
 
 ## Sources
 
-- G. Frobenius, Ueber lineare Substitutionen und bilineare Formen, J. reine angew. Math. 84 (1878), 1–63, DOI 10.1515/crelle-1878-18788403; textbook in Jacobson, Basic Algebra II; Lean states associative unital case via `DivisionRing` excluding octonions intentionally.
+- G. Frobenius, Ueber lineare Substitutionen und bilineare Formen, J. reine angew. Math. 84 (1878), 1–63, DOI 10.1515/crelle-1878-18788403; textbook in Jacobson, Basic Algebra II; the statement here is the associative unital case, which excludes the octonions.

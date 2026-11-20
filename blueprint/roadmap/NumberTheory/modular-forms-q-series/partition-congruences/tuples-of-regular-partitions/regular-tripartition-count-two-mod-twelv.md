@@ -10,4 +10,4 @@ $T_2(3^{4\alpha+2} n + B_\alpha + 2 \cdot 3^{4\alpha+1})$.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 3, eqs. (31)–(34).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Theorem 3, eqs. (31)–(34).

@@ -9,4 +9,4 @@ Then $\log_2 n + 2 \le \|n\|_2$, where $\log_2$ is the real base-2 logarithm.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Corollary 4.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Corollary 4.

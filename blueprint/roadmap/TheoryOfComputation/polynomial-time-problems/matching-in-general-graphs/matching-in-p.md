@@ -7,4 +7,4 @@ bitstring, whether $E$ contains at least $K$ distinct pairwise vertex-disjoint e
 
 ## Sources
 
-- J. Edmonds, "Paths, trees, and flowers", Canadian Journal of Mathematics 17 (1965), 449-467.
+- Jack Edmonds, "Paths, trees, and flowers", Canadian Journal of Mathematics 17 (1965), 449-467.

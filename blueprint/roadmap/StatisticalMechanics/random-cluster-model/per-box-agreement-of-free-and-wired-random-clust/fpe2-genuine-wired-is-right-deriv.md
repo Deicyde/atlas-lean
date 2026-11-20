@@ -1,5 +1,3 @@
 # Wired densities of genuine box edges as right derivatives
 
-Every edge of `Λ_N` has wired `q = 2` density at `p = logistic(t)` equal to the right
-derivative
-`G'₊(t)`.
+For $d, N \in \mathbb{N}$ and $G : \mathbb{R} \to \mathbb{R}$, the condition holds when $\theta^1_{e'}(\sigma(t)) = G'_+(t)$ for every edge $e'$ of $\Lambda_N = \{-N, \dots, N\}^d$ and every $t \in \mathbb{R}$, where $\theta^1_e(p)$ is the [wired edge density](wired-edge-density.md) of $e$ at $q = 2$ (the probability that $e$ is open under the wired infinite-volume random-cluster measure on $\mathbb{Z}^d$), $G'_+$ is the [right derivative](../convexity-of-the-free-energy-and-edge-densities/pressure-right-deriv.md) (read as $0$ where it does not exist), and $\sigma(t) = e^t/(1 + e^t)$ is the [logistic function](../convexity-of-the-free-energy-and-edge-densities/fsc-logistic.md).

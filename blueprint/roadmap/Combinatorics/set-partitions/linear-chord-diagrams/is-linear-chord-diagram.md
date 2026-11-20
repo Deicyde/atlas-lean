@@ -1,7 +1,7 @@
 # Linear chord diagrams
 
 A linear chord diagram on the $2n$ vertices $0, \dots, 2n-1$, laid
-out on a line, is encoded by a map $\sigma$ from $\{0, \dots, 2n-1\}$ to itself that is a
+out on a line, is given by a map $\sigma$ from $\{0, \dots, 2n-1\}$ to itself that is a
 fixed-point-free involution: $\sigma(i) \ne i$ and $\sigma(\sigma(i)) = i$ for every vertex $i$.
 Vertex $i$ is joined by a chord to $\sigma(i)$.
 

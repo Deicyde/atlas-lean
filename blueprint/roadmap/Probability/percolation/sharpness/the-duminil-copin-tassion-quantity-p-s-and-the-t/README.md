@@ -1,4 +1,4 @@
-# The Duminil-Copin–Tassion quantity φ_p(S) and the threshold p̃_c
+# The Duminil-Copin–Tassion quantity $\varphi_p(S)$ and the threshold $\tilde p_c$
 
 - [Shift of a lattice site in one coordinate](coord-shift.md)
 - [Sign of a unit lattice step](step-sign.md)

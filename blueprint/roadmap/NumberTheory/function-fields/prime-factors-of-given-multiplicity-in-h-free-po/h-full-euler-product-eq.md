@@ -7,11 +7,13 @@ as $0$ when $\rho_j = 0$, and write $|P| = q^{\deg P}$ for a monic irreducible p
 over $F$. Then $\Pi_j$ equals the complex product over all monic irreducible polynomials $P$
 over $F$
 
-$$\prod_P (1 - |P|^{-1})\Bigl(1 + \frac{1}{|P|\,(1 - (\rho_j^{-1})^{\deg P})}\Bigr),$$
+$$
+\prod_P (1 - |P|^{-1})\Bigl(1 + \frac{1}{|P|\,(1 - (\rho_j^{-1})^{\deg P})}\Bigr),
+$$
 
 where $1/0$ is read as $0$, and the product is taken to be $1$ if it does not converge
 unconditionally.
 
 ## Sources
 
-- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (asymptotic for `|N_h ∩ M_n|` preceding Theorem 5).
+- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (asymptotic for $|N_h \cap M_n|$ preceding Theorem 5).

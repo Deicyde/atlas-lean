@@ -1,5 +1,6 @@
 # Subject reduction for endpoint typing at balanced interfaces
 
-A typed source with a balanced initial interface retains typing and balance
-after any canonical step. Balance supplies the required compatibility; the
-exact zero-or-one external advancement evidence is retained.
+Let $n$ be a natural number, $\Delta$ a balanced ownership context (whenever $\Delta(e) = c$, also
+$\Delta(\bar e) = \bar c$) and $p$, $q$ processes with $\Delta \vdash_n p$ and $p \to q$. Then there
+is a balanced ownership context $\Xi$ with $\Xi \vdash_n q$ such that $\Xi = \Delta$ or $\Delta$
+dual-advances to $\Xi$.

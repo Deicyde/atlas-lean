@@ -7,7 +7,9 @@ permutations of $\{0, \dots, k\}$. If $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma
 and $(d_{\pi(k)}, \dots, d_{\pi(0)})_b$ is an $(n, b, \tau)$-permutiple, then for every
 $0 \le j \le k$
 
-$$\lambda\bigl(d_j + (b - n)\, d_{\pi(\tau(\pi^{-1}(j)))}\bigr) \le n - 1,$$
+$$
+\lambda\bigl(d_j + (b - n)\, d_{\pi(\tau(\pi^{-1}(j)))}\bigr) \le n - 1,
+$$
 
 where $\lambda(x)$ is the least non-negative residue of the integer $x$ modulo $b$ (the
 difference $b - n$ is taken in the integers and may be negative).
@@ -17,4 +19,4 @@ and the bound would read $0 \le -1$.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 3.
+- Benjamin V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 3.

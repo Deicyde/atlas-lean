@@ -1,3 +1,3 @@
 # Szegő kernel coefficients lie in ℓ²
 
-The Szegő kernel coefficients are in `ℓ²` when `z` is in the disc.
+For every $z \in \mathbb{C}$ with $|z| < 1$, the sequence $(\bar z^n)_{n \in \mathbb{N}}$ belongs to $\ell^2(\mathbb{N}, \mathbb{C})$.

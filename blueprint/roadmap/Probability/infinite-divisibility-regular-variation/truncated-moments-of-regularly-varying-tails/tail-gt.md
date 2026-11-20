@@ -1,3 +1,4 @@
-# Strict upper tail of a measure
+# Strict absolute tail of a measure
 
-The lower tail `(μ {y | s < |y|}).toReal`.
+For a measure $\mu$ on $\mathbb{R}$ and $s \in \mathbb{R}$,
+$T_{>}(s) = \mu\{y : |y| > s\}$, as a real number ($0$ if this mass is infinite).

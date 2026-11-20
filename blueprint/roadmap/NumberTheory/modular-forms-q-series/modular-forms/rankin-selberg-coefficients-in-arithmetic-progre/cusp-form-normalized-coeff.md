@@ -11,4 +11,4 @@ gives $0$.
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (Fourier expansion of `f ∈ H_k^*`).
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (Fourier expansion of $f \in H_k^*$).

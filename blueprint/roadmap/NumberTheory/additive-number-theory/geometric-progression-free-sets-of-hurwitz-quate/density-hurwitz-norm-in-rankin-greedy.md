@@ -10,7 +10,9 @@ progressions), and let $H_G$ be the set of Hurwitz quaternions whose norm lies i
 $f(x) = \prod_{i \ge 0} \bigl(1 + x^{-3^i}\bigr)$, the ratio $|H_G \cap S(N)| / |S(N)|$ tends,
 as $N \to \infty$, to
 
-$$\frac{6}{\pi^2} \, f(4) \prod_{p > 2} \Bigl( f(p) - \frac{f(p^2)}{p} \Bigr),$$
+$$
+\frac{6}{\pi^2} \, f(4) \prod_{p > 2} \Bigl( f(p) - \frac{f(p^2)}{p} \Bigr),
+$$
 
 the product running over the odd primes $p$.
 
@@ -19,4 +21,4 @@ $1/\zeta(2) = 6/\pi^2$, and gives its value as approximately $0.782643$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Theorem 7 (restated as the unnumbered theorem of the introduction).
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Theorem 7 (restated as the unnumbered theorem of the introduction).

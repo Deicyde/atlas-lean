@@ -6,8 +6,8 @@ sequence $\delta(\alpha) = (d_k)_{k \ge 0}$ has $d_0 = 0$ and, for $k \ge 1$, $d
 number of indices $i$ with $1 \le i \le k$ and $\alpha_i + i - 1 \ge k$, that is, the number of
 cells of the Young diagram on its $k$-th diagonal from upper right to lower left. Equivalently,
 $d_k$ is the number of $i$ with $1 \le i \le k$ such that at least $i$ parts of $\alpha$ are at
-least $k + 1 - i$; the definition uses this form, with the parts given as a finite multiset of
-natural numbers.
+least $k + 1 - i$. In this form the definition applies to any finite multiset of natural
+numbers; parts equal to $0$ do not contribute.
 
 ## Sources
 

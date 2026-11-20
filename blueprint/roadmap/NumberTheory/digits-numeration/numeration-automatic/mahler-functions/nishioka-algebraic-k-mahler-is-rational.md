@@ -8,4 +8,4 @@ and $qF = p$ in $\mathbb{C}[[z]]$.
 
 ## Sources
 
-- Jason P. Bell, Michael Coons, and Eric Rowland, "The Rational-Transcendental Dichotomy of Mahler Functions", Journal of Integer Sequences 16 (2013), Article 13.2.10, Nishioka corollary lines 238–241, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex>. The corollary is attributed to Ku. Nishioka, "Mahler Functions and Transcendence", Lecture Notes in Mathematics 1294, Theorem 5.1.7.
+- Jason P. Bell, Michael Coons, and Eric Rowland, *The Rational-Transcendental Dichotomy of Mahler Functions*, Journal of Integer Sequences 16 (2013), Article 13.2.10, Corollary 8, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex>. The corollary is attributed to Kumiko Nishioka, *Mahler Functions and Transcendence*, Lecture Notes in Mathematics 1631, Springer, 1996, Theorem 5.1.7.

@@ -15,4 +15,4 @@ not needed: the statement follows from the version for an arbitrary positive den
 
 ## Sources
 
-- Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex>, Lemma, lines 200–211.
+- Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers", Journal of Integer Sequences 23 (2020), Article 20.8.8, Lemma 6: https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex

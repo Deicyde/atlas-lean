@@ -31,7 +31,7 @@
 - [Closed modal μ-calculus formula](closed.md)
 - [Depth of a modal μ-calculus formula](depth.md)
 - [Denotation of a closed μ-calculus formula is environment-independent](sat-closed-env.md)
-- [Cantor-pairing number code of a μ-calculus formula](mu-code.md)
+- [Pairing number code of a μ-calculus formula](mu-code.md)
 - [Fuelled decoding of a μ-calculus number code](mu-decode-fuel.md)
 - [Decoding a μ-calculus number code to a formula](mu-decode.md)
 - [Depth of a μ-calculus formula is at most its number code](depth-le-code.md)

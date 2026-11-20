@@ -5,4 +5,4 @@ there is a surjective bounded linear operator $T \colon \ell^1(\mathbb{N}, \math
 
 ## Sources
 
-- S. Banach, Theorie des operations lineaires, 1932, `ℓ¹` quotient theorem; Albiac and Kalton, Topics in Banach Space Theory; Lean states separable real Banach specialization with concrete `lp _ 1` domain and surjective bounded linear quotient.
+- S. Banach, Theorie des operations lineaires, 1932, $\ell^1$ quotient theorem; Albiac and Kalton, Topics in Banach Space Theory. The statement here is the case of a separable real Banach space, as the image of a surjective bounded linear map from $\ell^1$.

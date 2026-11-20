@@ -11,5 +11,5 @@
 - [Swapping two residues modulo a prime in a covering system](is-covering-system-swap-residues-mod-pri.md)
 - [Mirsky–Newman bound for distinct covering systems](one-lt-sum-inv-moduli-of-distinct-coveri.md)
 - [Replacing the largest prime factor of the modulus set](exists-covering-divisors-replace-largest.md)
-- [Covering systems with arbitrarily large distinct moduli (OPG-493)](conjecture.md)
+- [Erdős's minimum modulus problem for covering systems](conjecture.md)
 - [Hough's minimum modulus theorem](conjecture-refuted.md)

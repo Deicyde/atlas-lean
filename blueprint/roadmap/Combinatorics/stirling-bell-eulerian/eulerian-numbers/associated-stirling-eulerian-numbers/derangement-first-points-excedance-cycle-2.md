@@ -21,4 +21,4 @@ $(\sum_{n \ge 1} (x^n - 1) u^n/n!)^s$ and $\sum_{n \ge 0} (x - x^n)/(x-1)\,u^n/n
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 54 (`jis-2025-25.5.7-cor-54`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 54.

@@ -6,4 +6,4 @@ when $h = 0$ or $n = 0$). Then $R_h(n) \le n$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of `R_h(n)` before Theorem 5.
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of $R_h(n)$ before Theorem 5.

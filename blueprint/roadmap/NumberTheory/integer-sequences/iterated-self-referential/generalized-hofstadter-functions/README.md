@@ -1,8 +1,8 @@
 # Generalized Hofstadter functions
 
-- [Fuel-bounded generalized Hofstadter recursion](hofstadter-faux.md)
+- [Depth-bounded approximations of the generalized Hofstadter function](hofstadter-faux.md)
 - [Generalized Hofstadter function](hofstadter-f.md)
-- [The fuel-bounded Hofstadter recursion is bounded by its argument](hofstadter-faux-le.md)
+- [The depth-bounded Hofstadter approximations are bounded by their argument](hofstadter-faux-le.md)
 - [The generalized Hofstadter functions vanish at zero](hofstadter-f-zero.md)
 - [Recursion for the generalized Hofstadter function](hofstadter-f-eq.md)
 - [First values of Hofstadter's G and H](hofstadter-f-small-values.md)

@@ -1,4 +1,4 @@
-# Reusable unary-count to canonical binary Nat conversion
+# Converting a unary count to a canonical binary natural number
 
 - [Control labels of the unary-to-binary converter](lab.md)
 - [Label enumeration of the unary-to-binary converter](lab-equiv.md)

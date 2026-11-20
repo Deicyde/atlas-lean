@@ -10,10 +10,10 @@ $c_1 (\log(|x| + |y|) + 1) \le n$, one has $c_0\,\varphi^{n+1} / (|x| + |y|) \le
 (iii) for every real $\tau$ with $\tau^3 = \tau^2 + \tau + 1$, all integers $a, b, c$ and every
 $n \ge 0$, $|Q_n| \le (|a| + |b| + |c|)\,\tau^n$.
 
-The paper indexes both sequences from $1$, so its $n$-th terms are $P_{n-1}$ and $Q_{n-1}$ here.
+The paper indexes both sequences from $1$, so its $n$-th terms are $P_{n-1}$ and $Q_{n-1}$ in the notation above.
 It prints (ii) with the threshold "n large enough depending on $|x| + |y|$"; the logarithmic
 threshold is the one the paper uses in its proof of Theorem 2.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 1, with the threshold as used in the proof of Theorem 2.
+- Nicholas Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 1, with the threshold as used in the proof of Theorem 2.

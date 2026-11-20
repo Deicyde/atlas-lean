@@ -6,4 +6,4 @@ $\Pi_n \subseteq \Sigma_{n+1}$, by adding a dummy existential quantifier.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

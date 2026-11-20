@@ -6,4 +6,4 @@ of $A$ but are congruent modulo $24$ to some element of the curvature set of $A$
 
 ## Sources
 
-- S. Haag, C. Kertzer, J. Rickards, and K. E. Stange, `The local-global conjecture for Apollonian circle packings is false`, Annals of Math, 200 (2) 2024, start of Section 1.2.
+- Summer Haag, Clyde Kertzer, James Rickards and Katherine E. Stange, *The local-global conjecture for Apollonian circle packings is false*, Annals of Mathematics 200 (2024), no. 2, 749–770, start of Section 1.2.

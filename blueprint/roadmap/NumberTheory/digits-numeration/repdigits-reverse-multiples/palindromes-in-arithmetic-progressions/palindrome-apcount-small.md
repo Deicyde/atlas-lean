@@ -7,4 +7,4 @@ up to $9$ being $1$, $3 = (11)_2$, $5 = (101)_2$, $7 = (111)_2$ and $9 = (1001)_
 
 ## Sources
 
-- K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Section 1.
+- Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Phakhinkon Napp Phunphayap and Prapanpong Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Section 1.

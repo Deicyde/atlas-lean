@@ -21,6 +21,6 @@
 - [Probability that a pair lies in separate lineages](pair-separate-prob.md)
 - [Mean coalescence time of a pair is one](sum-pair-separate-prob-div-choose.md)
 - [Sum of pair-separation probabilities over squared pair counts](sum-mul-pair-separate-prob-div-choose-sq.md)
-- [Covariance of `π` and `S`](covariance-mean-pair-diff-seg-sites.md)
+- [Covariance of the mean pairwise difference and the number of segregating sites](covariance-mean-pair-diff-seg-sites.md)
 - [Tajima's variance identity](variance-tajima-numerator.md)
 - [Pair coalescence time against the total branch length](integral-pair-time-mul-total-length.md)

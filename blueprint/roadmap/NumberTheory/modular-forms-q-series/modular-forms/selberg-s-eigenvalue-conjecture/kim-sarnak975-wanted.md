@@ -9,4 +9,4 @@ $(0, 975/4096)$: either $\lambda \le 0$ or $\lambda \ge 975/4096$.
 
 ## Sources
 
-- Kim--Sarnak (2003), as recorded in Kim--Ramakrishnan (2003): no eigenvalue of a congruence subgroup lies in `(0, 975/4096)`.
+- Henry H. Kim and Peter Sarnak, Appendix 2 to Henry H. Kim, *Functoriality for the exterior square of $\mathrm{GL}_4$ and the symmetric fourth of $\mathrm{GL}_2$*, Journal of the American Mathematical Society 16 (2003), 139–183.

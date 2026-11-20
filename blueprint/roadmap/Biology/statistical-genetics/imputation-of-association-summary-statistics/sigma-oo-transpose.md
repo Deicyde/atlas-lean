@@ -1,3 +1,3 @@
 # Symmetry of the typed-marker moment matrix
 
-The moment matrix `Σ_oo` is symmetric.
+In every [second-moment imputation model](model.md), the matrix $\Sigma_{oo}$ is symmetric: $\Sigma_{oo}^\top = \Sigma_{oo}$.

@@ -8,4 +8,4 @@ $v^{(j)}_n = 0$ otherwise, for $0 \le n < s + p$.
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (2) and Definition 1.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Section 2.2, equation (2).

@@ -7,7 +7,7 @@ pseudoprime with parameters $P$ and $Q$. Then infinitely many natural numbers $N
 with $m$ admissible are both Lucas pseudoprimes and Frobenius pseudoprimes with parameters $P$
 and $Q$, and infinitely many such $N$ are Lucas pseudoprimes but not Frobenius pseudoprimes.
 
-Nondegeneracy is assumed explicitly, and the statement fails without it: for $(P, Q) = (1, 1)$
+The source states the theorem without assuming nondegeneracy; the statement fails without it: for $(P, Q) = (1, 1)$
 the sequence $U$ runs $0, 1, 1, 0, -1, -1, \dots$, so $U_{2m}/P \in \{0, \pm 1\}$ is never a
 pseudoprime.
 

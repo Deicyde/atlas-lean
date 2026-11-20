@@ -11,4 +11,4 @@ $C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_8) =
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 25 (`jis-2025-25.7.8-cor-25`). The record gives no range; the second identity fails at `n = 0` (`C(ℤ₄) = 2`, formula `1`) and the third at `n = 0, 1` (`C(ℤ₈) = 8`, formula `-16`; `C(ℤ₂ ⊕ ℤ₈) = 160`, formula `80`), matching Theorem 3's range `m ≥ n`.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 25 (`jis-2025-25.7.8-cor-25`). The paper states the second identity for $n \ge 1$ and the third for $n \ge 2$; the second fails at $n = 0$ ($C(\mathbb{Z}_4) = 2$, formula $1$) and the third at $n = 0, 1$ ($C(\mathbb{Z}_8) = 8$, formula $-16$; $C(\mathbb{Z}_2 \oplus \mathbb{Z}_8) = 160$, formula $80$), matching the range $m \ge n$ of Theorem 3.

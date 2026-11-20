@@ -18,4 +18,4 @@ and $\Delta p_b$ are constant, so they are not injective codings.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 48 (`jis-2025-25.1.5-cor-48`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 48 (`jis-2025-25.1.5-cor-48`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

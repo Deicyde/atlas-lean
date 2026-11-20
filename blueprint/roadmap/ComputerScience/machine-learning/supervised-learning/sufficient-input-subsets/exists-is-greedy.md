@@ -1,3 +1,4 @@
 # Existence of greedy backward-selection rules
 
-Greedy rules exist for every `g`.
+For every real function $g$ on the finite subsets of a set $\iota$ of features, there is a
+[greedy backward-selection rule](is-greedy.md) for $g$.

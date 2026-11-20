@@ -1,3 +1,5 @@
 # Termwise cap $x^\theta \le \delta^{\theta-1} x$
 
-`x^θ ≤ δ^{θ-1} x` for `0 ≤ x ≤ δ` and `θ ≥ 1`.
+For real numbers $x$, $\delta$ and $\theta$ with $0 \le x \le \delta$ and $\theta \ge 1$,
+
+$$x^{\theta} \le \delta^{\theta - 1} x.$$

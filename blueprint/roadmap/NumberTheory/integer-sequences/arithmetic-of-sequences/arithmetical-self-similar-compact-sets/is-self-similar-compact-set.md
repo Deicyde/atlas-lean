@@ -10,4 +10,4 @@ $\rho K^{(\mu)} = \{\rho x : x \in K^{(\mu)}\}$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 1.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 1.

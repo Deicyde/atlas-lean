@@ -8,4 +8,4 @@ This is Theorem 1.2 (1) (a) of Lin and Shinder.
 
 ## Sources
 
-- H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
+- Hsueh-Yung Lin and Evgeny Shinder, *Motivic invariants of birational maps*, Annals of Mathematics 199 (2024), no. 1, 445–478. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.

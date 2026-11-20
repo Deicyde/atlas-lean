@@ -21,16 +21,16 @@
 - [The bitonic merger has depth at most $k$](depth-le-bitonic-merge.md)
 - [Depth of the bitonic sorter's comparator list](depth-le-bitonic-sort-n.md)
 
-## Every sorting network on `n` wires has depth at least `log₂ n`
+## Every sorting network on $n$ wires has depth at least $\log_2 n$
 
 - [Influence sets of wires](influence.md)
 - [Influence sets grow at most exponentially with the level](card-influence-le.md)
 - [Outputs depend only on the influence set](run-n-congr-influence.md)
-- [Comparators inside $(0, n)$ keep a false value inside $(0, n)$](exists-false-run-n.md)
+- [Comparators inside $[0, n)$ keep a false value inside $[0, n)$](exists-false-run-n.md)
 - [Sorting comparator lists on $n$ wires have depth at least $\log_2 n$](le-two-pow-of-sorts.md)
 - [The bitonic sorting comparator list on $2^k$ wires has depth at least $k$](le-of-depth-le-bitonic-sort-n.md)
 
-## Depth of `Network`s
+## Depth of comparator networks
 
 - [Comparator list of a network](to-pairs.md)
 - [Depth bound for a comparator network](depth-le-2.md)

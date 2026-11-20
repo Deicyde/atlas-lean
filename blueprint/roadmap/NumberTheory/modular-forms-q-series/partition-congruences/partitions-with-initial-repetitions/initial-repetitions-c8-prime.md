@@ -12,4 +12,4 @@ conditions above hold for $m$.
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 4 (definition of `c₈'`).
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 4 (definition of $c_8'$).

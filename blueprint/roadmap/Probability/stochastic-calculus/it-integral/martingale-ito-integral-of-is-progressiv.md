@@ -1,6 +1,8 @@
 # Martingale property for progressive integrands
 
-For a pre-Brownian motion `B` adapted
-to `F` with increments independent of the past and an `F`-progressive integrand `H` with
-`E ∫_0^t H_u² du < ∞` for every `t`, the Itô integral `t ↦ ∫_0^t H dB` is an `F`-martingale
-(Karatzas–Shreve 1991, Proposition 3.2.10).
+Let $B$ be a pre-Brownian motion (the finite-dimensional laws of Brownian motion) adapted to a filtration $F$, with increments $B_t - B_s$ independent of $F_s$ for $s \le t$, and let $t \ge 0$. Let $H$ be $F$-progressive with $\mathbb E \int_0^t H_u^2\, du < \infty$ for every $t \ge 0$. Then the [Itô
+integral](ito-integral-2.md) $t \mapsto \int_0^t H\, dB$ is an $F$-martingale.
+
+## Sources
+
+- I. Karatzas and S. E. Shreve, *Brownian Motion and Stochastic Calculus*, 2nd ed., Springer, 1991, Proposition 3.2.10.

@@ -1,6 +1,3 @@
-# Cochran's theorem
+# Cochran's theorem, projection form
 
-**Cochran's theorem**, projection form: for the standard Gaussian law on a
-finite-dimensional real inner product space `E` and a subspace `K` of positive dimension, the
-squared norm of the orthogonal projection onto `K` is chi-square with `dim K` degrees of
-freedom.
+Let $E$ be a finite-dimensional real inner product space with its Borel σ-algebra and the standard Gaussian law, and $K \subseteq E$ a subspace of positive dimension. Then the squared norm $\|P_K Z\|^2$ of the orthogonal projection onto $K$ has the chi-square law with $\dim K$ degrees of freedom.

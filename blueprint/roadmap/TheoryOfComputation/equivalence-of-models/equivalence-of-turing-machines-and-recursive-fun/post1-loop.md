@@ -1,7 +1,7 @@
 # The first post-phase loop of the wrapped machine
 
 Write $\Gamma'$ for the stack alphabet of
-Mathlib's code evaluator. Let $c$ be a code, $b$ a list of bits of length $k$, $r$ a list of
+the four-stack code evaluator. Let $c$ be a code, $b$ a list of bits of length $k$, $r$ a list of
 symbols of $\Gamma'$, $o$ a list of bits and $v$ an internal state (a symbol of $\Gamma'$ or
 none), and write $\beta(b)$ for $b$ with each bit $\mathrm{true}$ replaced by the symbol bit1 and
 each bit $\mathrm{false}$ by the symbol bit0 of $\Gamma'$. Started at the adapter label post1

@@ -1,3 +1,4 @@
 # Determinant of the Gierer–Meinhardt Jacobian
 
-`det J = b` for the Gierer–Meinhardt Jacobian (`a + 1 ≠ 0`, `b ≠ 0`).
+For real $a$ and $b$ with $a + 1 \ne 0$ and $b \ne 0$, the
+[Gierer–Meinhardt Jacobian](gierer-meinhardt-jacobian.md) has determinant $b$.

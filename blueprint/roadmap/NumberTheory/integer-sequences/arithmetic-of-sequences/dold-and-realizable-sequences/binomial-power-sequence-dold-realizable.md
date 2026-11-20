@@ -8,4 +8,4 @@ the Möbius function, is non-negative and divisible by $n$.
 
 ## Sources
 
-- Zhang 2024, J. Integer Seq. 27, Article 24.3.3, Theorem 1.13.
+- Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem 13.

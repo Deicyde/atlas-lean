@@ -6,4 +6,4 @@ polynomial-time many-one reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), LINEAR ORDERING; N. Alon, "Ranking tournaments" (2006) and the feedback arc set literature.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), LINEAR ORDERING; Noga Alon, "Ranking tournaments" (2006) and the feedback arc set literature.

@@ -9,7 +9,7 @@ pseudoprime with parameters $P, Q$ if and only if the $2$-adic valuations $\nu_2
 equal for all primes $p$ dividing $N$.
 
 The source prints $\rho(p_i^{k_i}) = p_i$, which is false: for $(P, Q) = (1, -1)$ and
-$N = 323 = 17 \cdot 19$ one has $\rho(17) = 9$ and $\rho(19) = 18$. The statement uses
+$N = 323 = 17 \cdot 19$ one has $\rho(17) = 9$ and $\rho(19) = 18$. The statement above uses
 $\rho(p_i)$, as in Theorems 3.16 and 3.17.
 
 ## Sources

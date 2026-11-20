@@ -9,4 +9,4 @@ $R_{a,b} = b(a-b) + 1$ for $0 \le b \le a$.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Lemma 3.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Lemma 3, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

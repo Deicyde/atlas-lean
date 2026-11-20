@@ -8,3 +8,7 @@ $\operatorname{lfp} f \le a$.
 
 Together with $f(\operatorname{lfp} f) = \operatorname{lfp} f$, this makes $\operatorname{lfp} f$
 the least fixed point of $f$.
+
+## Background
+
+- [Kleene's fixed point is the least prefixed point](i-sup-iterate-bot-le.md): the same statement for maps preserving directed suprema on pointed dcpos.

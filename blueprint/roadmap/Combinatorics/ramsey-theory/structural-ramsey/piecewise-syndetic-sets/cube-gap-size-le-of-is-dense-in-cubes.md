@@ -6,4 +6,4 @@ satisfies $\operatorname{gs}(S) \le d$.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definition 5 (and Proof 1 of Theorem 2, "hence `gs(S) ≤ d`").
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Definition 5 (and Proof 1 of Theorem 2, "hence $\mathrm{gs}(S) \le d$").

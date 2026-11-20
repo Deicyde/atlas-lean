@@ -6,4 +6,4 @@ $n \ge 0$.
 
 ## Sources
 
-- Daniel Birmajer, Juan B. Gil, and Michael D. Weiner, *Linear Recurrence Sequences and Their Convolutions via Bell Polynomials*, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Gil/gil3.tex>, where this shifted version is used.
+- Daniel Birmajer, Juan B. Gil, and Michael D. Weiner, *Linear Recurrence Sequences and Their Convolutions via Bell Polynomials*, Journal of Integer Sequences 18 (2015), Article 15.1.2, Example 17, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Gil/gil3.html>, where this shifted version is used.

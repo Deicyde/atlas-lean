@@ -1,4 +1,7 @@
 # Trace of a power as a power sum of characteristic roots
 
-The trace of `φ ^ k` is the sum of the `k`-th powers of the roots of the characteristic
-polynomial of `φ`. See also `Matrix.trace_eq_sum_roots_charpoly`, the case `k = 1`.
+Let $V$ be a finite-dimensional complex vector space, $\varphi$ an endomorphism of $V$ and $k \in \mathbb{N}$. Then
+
+$$\operatorname{tr}(\varphi^k) = \sum_{\alpha} \alpha^k,$$
+
+the sum running over the roots $\alpha$ of the characteristic polynomial of $\varphi$, counted with multiplicity.

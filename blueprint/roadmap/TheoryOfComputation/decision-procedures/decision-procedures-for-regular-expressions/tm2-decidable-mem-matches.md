@@ -7,4 +7,4 @@ the regular expression denoted by $e$ is decidable by a multi-stack machine.
 
 ## Sources
 
-- Sipser, Introduction to the Theory of Computation, Theorem 4.3 ($A_{\mathsf{REX}}$).
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Theorem 4.3 ($A_{\mathsf{REX}}$).

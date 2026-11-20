@@ -1,6 +1,6 @@
 # Set partitions
 
-Partitions of a finite set into blocks: finite partition API, ordered and cyclic set partitions, restricted-growth words, peaks and rises, noncrossing partitions, merging-free and marriageable-singles partitions, genus of a partition, and linear chord diagrams and hypermonopoles.
+Partitions of a finite set into blocks: block sizes and pull-backs, ordered and cyclic set partitions, restricted-growth words, peaks and rises, noncrossing partitions, merging-free and marriageable-singles partitions, genus of a partition, and linear chord diagrams and hypermonopoles.
 
 - [Block sizes and pullbacks of set partitions](block-sizes-and-pullbacks-of-set-partitions/README.md)
 - [Genus of a set partition](genus-of-a-set-partition/README.md)

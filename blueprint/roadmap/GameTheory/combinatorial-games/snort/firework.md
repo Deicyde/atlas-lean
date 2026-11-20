@@ -6,4 +6,4 @@ $n$ of which are adjacent only to $u$ and the other $n$ adjacent only to $v$.
 
 ## Sources
 
-- Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 3 (the `n`-firework).
+- Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 3 (the $n$-firework).

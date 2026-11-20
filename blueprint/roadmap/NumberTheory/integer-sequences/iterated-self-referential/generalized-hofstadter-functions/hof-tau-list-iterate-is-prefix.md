@@ -8,4 +8,4 @@ and all natural numbers $i \le j$, $\tau_k^i(k)$ is a prefix of $\tau_k^j(k)$.
 
 ## Sources
 
-- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.2 (the fixed point `x_k` is the limit of `τ_k^j(k)`).
+- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.3 (the fixed point $x_k$ is the limit of $\tau_k^j(k)$).

@@ -7,4 +7,4 @@ positive integers with $de = n$ (there are none for $n = 0$, and then both sides
 
 ## Sources
 
-- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Section 1 (definition of `s_q^{(2)}`).
+- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Section 2 (definition of $s_q^{(2)}$).

@@ -9,4 +9,4 @@ $g(n) \le \lVert n \rVert$ for every positive integer $n$.
 
 ## Sources
 
-- Juan Arias de Reyna, "Complexity of Natural Numbers", Corollary 2.
+- Juan Arias de Reyna, *Complexity of Natural Numbers*, INTEGERS 24 (2024), Article A19, Corollary 2.

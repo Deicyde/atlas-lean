@@ -5,4 +5,4 @@ reversal of $n$ equals $4n$ or $9n$.
 
 ## Sources
 
-- Mohamed Ayad and Rachid Bouchenna, "Which Integer Divides the Reverse of Any of Its Multiples?", Theorem 1 (quoted from the literature).
+- Mohamed Ayad and Rachid Bouchenna, *Which Integer Divides the Reverse of Any of Its Multiples?*, INTEGERS 25 (2025), Article A37, Theorem 1 (quoted from the literature).

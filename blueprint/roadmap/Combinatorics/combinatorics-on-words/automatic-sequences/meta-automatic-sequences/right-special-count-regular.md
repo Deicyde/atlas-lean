@@ -7,8 +7,7 @@ sequence $n \mapsto \#\mathrm{RS}_a(n)$ is $k$-regular. Moreover, for every natu
 with $\#\mathrm{RS}_a(n) \le C$ for all $n$, the sequence $n \mapsto \#\mathrm{RS}_a(n)$, taken
 with values in $\{0, 1, \ldots, C\}$, is $k$-automatic.
 
-The source also states that this sequence is effectively computable from any automaton for
-$a$; that algorithmic claim is not part of this statement.
+The source also notes that this sequence can be computed effectively from any automaton for $a$.
 
 ## Sources
 

@@ -1,4 +1,4 @@
-# Eight signed-pattern triples with (n + 1)! avoiders (Lemma 8)
+# Eight triples of signed patterns with $(n + 1)!$ avoiders
 
 Write a length-2 signed
 pattern as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller

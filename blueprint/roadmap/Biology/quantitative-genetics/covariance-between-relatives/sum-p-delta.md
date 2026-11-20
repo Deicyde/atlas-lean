@@ -1,3 +1,3 @@
 # Dominance deviations are orthogonal to every allele
 
-Dominance deviations are orthogonal to every allele: `∑_b p_b δ_{ab} = 0`.
+In every [single-locus model](locus-model.md) and for every allele $a$, the [dominance deviations](delta.md) satisfy $\sum_{b \in A} p_b\, \delta_{ab} = 0$.

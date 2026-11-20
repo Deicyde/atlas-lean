@@ -5,8 +5,10 @@ let $S_{2,b}$ be the map sending an integer to the sum of the squares of its bas
 let $v$ be an integer with $0 < v < 2b^2$. Then there are integers $w$ and $c$ with
 $0 \le w < v$ and $0 \le c \le |b| - 2$ such that
 
-$$S_{2,b}\bigl((|b| - 1)b + v - w - 1\bigr) -
-S_{2,b}\bigl((|b| - 1)b^2 + |b| - 1 - w\bigr) + 5 + 2c \equiv 0 \pmod{|b| + 1}.$$
+$$
+S_{2,b}\bigl((|b| - 1)b + v - w - 1\bigr) -
+S_{2,b}\bigl((|b| - 1)b^2 + |b| - 1 - w\bigr) + 5 + 2c \equiv 0 \pmod{|b| + 1}.
+$$
 
 ## Sources
 

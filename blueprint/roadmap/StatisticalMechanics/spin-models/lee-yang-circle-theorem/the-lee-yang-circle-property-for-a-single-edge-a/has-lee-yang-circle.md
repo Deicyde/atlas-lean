@@ -1,4 +1,6 @@
 # Lee–Yang circle property of a graph
 
-The Lee–Yang circle property: every complex zero of the Lee–Yang polynomial of `G` at inverse
-temperature `β` has modulus one.
+Let $G$ be a finite simple graph and $\beta \in \mathbb{R}$. The graph has the Lee–Yang circle property
+at inverse temperature $\beta$ when every complex zero of its
+[Lee–Yang polynomial](../the-lee-yang-polynomial-of-a-finite-ising-model/lee-yang-complex-polynomial.md)
+has modulus $1$.

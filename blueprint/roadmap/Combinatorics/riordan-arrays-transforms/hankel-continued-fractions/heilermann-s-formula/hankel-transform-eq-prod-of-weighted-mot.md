@@ -16,4 +16,4 @@ No hypothesis that the $\beta_i$ are nonzero is needed.
 
 ## Sources
 
-- Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex.
+- Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, Section 1 (Heilermann's formula), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.pdf>.

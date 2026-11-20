@@ -1,3 +1,4 @@
 # Adding a parallel nil preserves endpoint typing
 
-Adding a parallel nil allocates it no ownership; no active slot is dropped.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$ a process. If $\Delta \vdash_n
+p$, then $\Delta \vdash_n p \mid \mathbf{0}$.

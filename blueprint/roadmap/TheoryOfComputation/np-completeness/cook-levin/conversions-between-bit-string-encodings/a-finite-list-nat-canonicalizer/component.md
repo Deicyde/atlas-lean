@@ -1,3 +1,5 @@
 # List-of-naturals canonicalizer as a host component
 
-The List Nat canonicalizer uses the existing finite Host interface.
+The list canonicalizer as a component machine: its six [stacks](k.md) (input, accumulator, output and the three
+workspace stacks, listed in this order), every stack alphabet the set of bits, its [labels](lab.md) and its
+[program](prog.md).

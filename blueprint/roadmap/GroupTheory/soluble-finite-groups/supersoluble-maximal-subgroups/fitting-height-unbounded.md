@@ -1,4 +1,4 @@
-# Kourovka 19.55(b) (Monakhov): unbounded Fitting height
+# Fitting height under supersoluble full-prime maximal subgroups (Kourovka 19.55(b))
 
 The proposition that for every
 natural number $h$ there is a finite soluble group $G$ whose Fitting height is greater than $h$ and

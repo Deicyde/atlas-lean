@@ -29,3 +29,35 @@
 - [Büchi transition test via the computable counter update](buchi-tr-iff.md)
 - [Executable full-LTL model checker](check-b.md)
 - [Correctness of the executable LTL model checker](check-b-iff.md)
+
+## Size of the Büchi automaton
+
+- [Size of an LTL formula](size.md)
+- [Formulas have positive size](one-le-size.md)
+- [Exact state count of the LTL tableau](nat-card-state.md)
+- [Fairness obligations are fewer than the formula size](obligation-count-lt-size.md)
+- [Exponential state bound for the Büchi automaton of an LTL formula](nat-card-buchi-state-le.md)
+- [Vardi–Wolper translation with an exponential state bound](exists-buchi-card-le.md)
+
+## Model checking as language inclusion
+
+- [Büchi automaton of a transition system](system-automaton.md)
+- [The language of the system automaton is the set of runs](mem-system-automaton-iff.md)
+- [LTL model checking is language inclusion](models-iff-language-le.md)
+- [LTL model checking is emptiness of an intersection](models-iff-inf-language-neg-eq-bot.md)
+
+## Satisfiability and validity
+
+- [Satisfiable LTL formula](satisfiable.md)
+- [Valid LTL formula](valid.md)
+- [Validity is unsatisfiability of the negation](valid-iff-not-satisfiable-not.md)
+- [LTL satisfiability is Büchi nonemptiness](satisfiable-iff-language-ne-bot.md)
+- [LTL satisfiability by the lasso criterion](satisfiable-iff-has-lasso.md)
+- [Executable LTL satisfiability test](sat-b.md)
+- [Correctness of the executable satisfiability test](sat-b-iff.md)
+
+## Related topics
+
+- [Labelled transition systems](../../../ComputerScience/process-calculi/labelled-transition-systems/README.md): the models checked here are labelled transition systems, the same objects that give process calculi their operational semantics.
+- [Program logics and verification](../../../ComputerScience/program-logics-and-verification/README.md): deductive verification of programs, the proof-based counterpart of algorithmic model checking of finite-state systems.
+- [Concurrent systems and protocols](../../../ComputerScience/concurrent-systems-and-protocols/README.md): finite-state protocols such as the alternating-bit protocol, the typical inputs of LTL model checking.

@@ -11,4 +11,4 @@ $1 \le t \le p$ and for $t = -p+1$ and $B_p(t) = 0$ for the other $-p \le t \le 
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 9.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 9.

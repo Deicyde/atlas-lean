@@ -1,4 +1,4 @@
-# Odd-rank curves y² = x³ − 2pqx: rank one or three cases
+# Odd-rank curves $y^2 = x^3 - 2pqx$: rank one or three cases
 
 Let $p \ne q$ be primes and let
 $E$ be the elliptic curve $y^2 = x^3 - 2pqx$ over $\mathbb{Q}$, and write
@@ -11,4 +11,4 @@ The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 ## Sources
 
-- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (ii).
+- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve $y^2 = x^3 - 2pqx$*, INTEGERS 26 (2026), Article A51, Theorem 1 (ii).

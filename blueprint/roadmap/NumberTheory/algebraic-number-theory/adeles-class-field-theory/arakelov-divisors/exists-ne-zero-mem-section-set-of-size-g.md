@@ -7,4 +7,4 @@ a nonzero element of $K$.
 
 ## Sources
 
-- Proposition 15.9 of ATLAS `NumberTheoryI`.
+- ATLAS NumberTheoryI, Proposition 15.9.

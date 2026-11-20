@@ -9,4 +9,4 @@ $$P(n, k, x) = (k-1)! \prod_{i=0}^{n-k} (x + k - 1 + i).$$
 
 ## Sources
 
-- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary, line 194, with the recurrence and base value from Theorem, line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
+- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary 4, with the recurrence and base value of Theorem 3, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.pdf>.

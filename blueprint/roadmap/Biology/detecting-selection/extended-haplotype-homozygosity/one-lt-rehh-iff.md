@@ -1,4 +1,7 @@
 # Criterion for relative EHH to exceed one
 
-With a positive reference EHH, the relative EHH exceeds `1` exactly when the core allele's
-haplotypes are the more homozygous ones.
+For a haplotype sample with core-allele labels, finite sets $C, D$ and a radius $d$ with $\mathrm{EHH}^{\mathrm{core}}_D(d) > 0$,
+
+$$\mathrm{REHH}(d) > 1 \iff \mathrm{EHH}^{\mathrm{core}}_D(d) < \mathrm{EHH}^{\mathrm{core}}_C(d),$$
+
+where $\mathrm{REHH}$ is the [relative EHH](rehh.md) and $\mathrm{EHH}^{\mathrm{core}}$ the [core-labelled EHH](ehh-core.md).

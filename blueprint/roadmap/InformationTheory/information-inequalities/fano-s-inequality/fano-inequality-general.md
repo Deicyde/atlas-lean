@@ -8,5 +8,3 @@ $g$ guesses wrong, and let $H(X \mid Y) = -\sum_{a, b} p(a, b) \log (p(a, b) / p
 $\log$ is the natural logarithm. Then
 
 $$H(X \mid Y) \le -P_e \log P_e - (1 - P_e) \log (1 - P_e) + P_e \log (|\alpha| - 1).$$
-
-This version does not assume decidable equality on $\beta$.

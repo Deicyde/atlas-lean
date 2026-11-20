@@ -8,4 +8,4 @@ $\beta^{(m+1)}(c) \le \tau^{(m)}(t) \le \beta^{(m+1)}(c + 2)$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Proposition 18 (`jis-2025-25.4.6-prop-18`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Proposition 18 (`jis-2025-25.4.6-prop-18`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

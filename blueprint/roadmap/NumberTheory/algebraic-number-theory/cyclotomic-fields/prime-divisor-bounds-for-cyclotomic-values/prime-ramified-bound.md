@@ -1,18 +1,27 @@
 # Ramified bound on prime divisors of $x^p - 1$ for prime $p$
 
-The `p`-ramified bound (Theorem 2 for prime `n = p`). For a prime `p`, `x > 1` and
-`ω_p = ω(x^p - 1)`, let `r_{i,0}` and `r_{j,1}` enumerate the primes `≢ 1` and `≡ 1 (mod p)`
-(`Nat.nth`, `0`-indexed here), `p = r_{b,0}`, `R^0_k = ∏_{i < k} r_{i,0}` and
-`R^1_k = ∏_{j < ω_p - k} r_{j,1}`. The source's minima over `k ∈ [0, k') ∪ [k', ω_p)` (with
-`k' = b + 1`) are stated as the existence of `k < ω_p` meeting both bounds, the second after
-raising to the `p`-th power; `p^{-1} R^0_{k+1}` is written as the product over
-`{0, …, k} \ {b}`. If `p ∤ x^p - 1`: `k ≤ b` gives `1 + R^0_k ≤ x`, `1 + R^0_k R^1_k ≤ x^p`, and
-`k > b` gives `1 + p^{-1} R^0_{k+1} ≤ x`, `1 + p^{-1} R^0_{k+1} R^1_k ≤ x^p`. If `p ∣ x^p - 1`:
-`k ≤ b` gives `1 + p R^0_{k-1} ≤ x`, `1 + p^2 R^0_{k-1} R^1_k ≤ x^p`, and `k > b` gives
-`1 + R^0_k ≤ x`, `1 + p R^0_k R^1_k ≤ x^p`. The divisible case requires `p ≠ 2` and has `k > 0`:
-`R^0_{-1}` is undefined at `k = 0`, and for `p = 2`, `x = 3` (`x^2 - 1 = 8`, `ω_2 = 1`) the only
-admitted `k = 0` fails under any reading (with `R^0_{-1} := 1` the second bound reads
-`1 + 4 · 3 = 13 ≤ 9`).
+Let $p$ be a prime, let $x > 1$ be a natural number, and let
+$\omega_p$ be the number of distinct prime factors of $x^p - 1$. List the primes
+$\rho \not\equiv 1 \pmod p$ in increasing order as $r_{0,0} < r_{1,0} < \cdots$ and the primes
+$\rho \equiv 1 \pmod p$ as $r_{0,1} < r_{1,1} < \cdots$, let $b$ be the index with $r_{b,0} = p$,
+and put $R^0_k = \prod_{i < k} r_{i,0}$, $S^0_k = \prod_{i \le k,\, i \ne b} r_{i,0}$ (for $k \ge b$
+this is $p^{-1} R^0_{k+1}$) and $R^1_k = \prod_{j < \omega_p - k} r_{j,1}$.
+
+- If $p \nmid x^p - 1$, there is $k < \omega_p$ such that either $k \le b$, $1 + R^0_k \le x$
+  and $1 + R^0_k R^1_k \le x^p$, or $k > b$, $1 + S^0_k \le x$ and $1 + S^0_k R^1_k \le x^p$.
+- If $p$ is odd and $p \mid x^p - 1$, there is $k$ with $0 < k < \omega_p$ such that either
+  $k \le b$, $1 + p R^0_{k-1} \le x$ and $1 + p^2 R^0_{k-1} R^1_k \le x^p$, or $k > b$,
+  $1 + R^0_k \le x$ and $1 + p R^0_k R^1_k \le x^p$.
+
+In each case the primes $r_{i,0}$ in these products exist; this restricts $k$ only for $p = 2$,
+where $2$ is the only prime $\not\equiv 1 \pmod 2$.
+
+This is the case $n = p$ of the source's Theorem 2 (its Proposition 3): its minima over
+$k \in [0, k') \cup [k', \omega_p)$, with $k' = b + 1$, are stated above as the existence of $k$,
+and its second bounds are raised to the $p$-th power. The divisible case needs $p \ne 2$ and
+$k > 0$: $R^0_{-1}$ is undefined at $k = 0$, and for $p = 2$ and $x = 3$ (so $x^2 - 1 = 8$ and
+$\omega_2 = 1$) the only possible $k = 0$ fails under any reading (with $R^0_{-1} = 1$ the second
+bound reads $1 + 4 \cdot 3 = 13 \le 9$).
 
 ## Sources
 

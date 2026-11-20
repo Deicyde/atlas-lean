@@ -6,4 +6,4 @@ $K$ is nonzero, then $R$ is étale over $K$.
 
 ## Sources
 
-- ATLAS NumberTheoryI Lemma 12.18, one direction.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 12, Lemma 12.18 (one direction), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

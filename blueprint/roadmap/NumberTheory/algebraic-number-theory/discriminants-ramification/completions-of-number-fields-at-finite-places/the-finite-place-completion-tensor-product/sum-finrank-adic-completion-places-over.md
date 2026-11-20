@@ -7,4 +7,4 @@ $K_v \to L_w$. Then $\sum_{w \mid v} [L_w : K_v] = [L : K]$.
 
 ## Sources
 
-- ATLAS N236, Theorem 11.23, parts (4) and (5) combined; used in N265.
+- ATLAS NumberTheoryI, Theorem 11.23, parts (4) and (5) combined.

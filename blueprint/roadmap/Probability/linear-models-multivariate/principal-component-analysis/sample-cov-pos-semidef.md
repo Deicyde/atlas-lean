@@ -1,3 +1,3 @@
 # Sample covariance matrix is positive semidefinite
 
-The sample covariance matrix is positive semidefinite (for every `n`).
+Let $X$ be a real $n \times p$ data matrix whose rows are observations. For every $n$, the [sample covariance matrix](sample-cov.md) $S$ is positive semidefinite.

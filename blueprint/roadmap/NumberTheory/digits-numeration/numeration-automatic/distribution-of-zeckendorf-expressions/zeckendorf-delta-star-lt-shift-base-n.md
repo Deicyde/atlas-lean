@@ -1,6 +1,6 @@
 # Shifting a unit one entry down increases $\delta^*$ (Lemma 19)
 
-**Shifting a unit one entry down increases $\delta^*$ (Lemma 19).** Let $N \ge 3$, let
+Let $N \ge 3$, let
 $L = (1, \dots, 1, 0)$ ($N - 1$ ones followed by $0$, the $N$th order Zeckendorf collection) and
 $\tilde L = (N - 1, \dots, N - 1)$ ($N$ entries, the base-$N$ collection), and let $Q$ and
 $\tilde Q$ be fundamental sequences of the collections $E^*$ and $\tilde E^*$ of $L$ and

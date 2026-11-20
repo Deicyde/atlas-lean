@@ -1,6 +1,7 @@
 # Wald's test with an estimated information
 
-As `tendstoInDistribution_waldStatistic`,
-with `I(θ₀)` replaced by any estimators `Î n → I(θ₀)` in probability (for example the observed
-information of `tendstoInMeasure_observedInformation`; `I(θ̂ₙ)` also qualifies when
-`θ ↦ I(θ)` is continuous at `θ₀`, by the continuous mapping theorem).
+Under the regularity conditions (R) of [Wald's test](tendsto-in-distribution-wald-statistic.md), let $\hat I_n : \Omega \to \mathbb{R}$ be almost everywhere measurable estimators with $\hat I_n \to I(\theta_0)$ in probability. Then
+
+$$n (\hat\theta_n - \theta_0)^2 \hat I_n \to \chi^2_1 \quad \text{in distribution}.$$
+
+Examples of such estimators are the [observed information](tendsto-in-measure-observed-information.md), and $I(\hat\theta_n)$ when $\theta \mapsto I(\theta)$ is continuous at $\theta_0$ (by the continuous mapping theorem).

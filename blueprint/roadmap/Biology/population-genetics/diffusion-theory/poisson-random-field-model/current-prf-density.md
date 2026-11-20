@@ -1,7 +1,7 @@
-# Probability current
+# Probability current of the Poisson random field density
 
-On `(0, 1)` the current `J = σ F - F' / 2` of the stationary
-forward equation, for the weighted density `F(x) = x (1 - x) φ(x)`, is the constant
-`θ · u_σ'(0) / 2` (`u_σ'(0) = kimuraSlope σ = 2σ / (1 - e^{-2σ})`, and `1` for `σ = 0`), so
-`J = θ σ / (1 - e^{-2σ})`, and `J = θ / 2` in the neutral case: the mutational input of
-frequency at `0`, carried through `(0, 1)` to fixation at `1`.
+For all real $\theta$, $\sigma$ and every $x \in (0, 1)$, with the weighted density $F(y) = y(1 - y)\,\varphi_{\theta,\sigma}(y)$ of the [Poisson random field density](prf-density.md),
+
+$$\sigma F(x) - \frac{1}{2} F'(x) = \frac{\theta K_\sigma}{2},$$
+
+where $K_\sigma$ is the [slope constant](../wright-fisher-diffusion/kimura-slope.md), the derivative of Kimura's fixation probability at $0$. So the current is $\theta\sigma/(1 - e^{-2\sigma})$, and $\theta/2$ in the neutral case; for $\theta \ge 0$ it is the mutational input of frequency at $0$, carried through $(0, 1)$ to fixation at $1$.

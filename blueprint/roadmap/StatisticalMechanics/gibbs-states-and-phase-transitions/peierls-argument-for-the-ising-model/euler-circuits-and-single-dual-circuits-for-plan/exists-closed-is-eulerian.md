@@ -1,4 +1,4 @@
 # Eulerian circuit at any vertex of a finite connected even graph
 
-The closed trail of `exists_closed_eulerian` is an Eulerian circuit in Mathlib's sense, based
-at any prescribed vertex. See also `SimpleGraph.Connected.exists_isEulerian`.
+Let $G$ be a finite connected simple graph in which every vertex has even degree. Then for every vertex
+$u$ there is a closed walk based at $u$ that uses every edge of $G$ exactly once (an Eulerian circuit).

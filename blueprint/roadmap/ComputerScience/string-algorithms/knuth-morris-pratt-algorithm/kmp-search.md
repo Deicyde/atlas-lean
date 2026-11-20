@@ -1,7 +1,7 @@
 # Knuth–Morris–Pratt search
 
 For lists $p$ (the pattern) and $t$ (the text) over a type
-with a boolean equality, KMP search for $p$ in $t$ returns either a zero-based offset or no
+with a Boolean equality test, KMP search for $p$ in $t$ returns either a zero-based offset or no
 offset, together with a cost: the number of symbol comparisons it makes. If $p$ is empty, it
 returns the offset $0$ at cost $0$. Otherwise it first builds the prefix table of $p$, a list of
 entries each pairing a symbol with a failure value. The transition of a table from a state $s$
@@ -16,5 +16,15 @@ symbols have been read, it returns the offset $j - |p|$. If this never happens, 
 offset. The cost counts every equality test between two symbols, both while the table is built
 and while $t$ is scanned. List operations, array access and arithmetic cost nothing.
 
-When the boolean equality is lawful, the returned offset is the least offset at which $p$ occurs
+When the Boolean equality test agrees with equality, the returned offset is the least offset at which $p$ occurs
 in $t$, and no offset is returned exactly when $p$ does not occur in $t$.
+
+The paper describes the same scan with 1-based arrays and the improved table $\mathrm{next}$;
+this search uses the plain failure function (the paper's $f$), which gives the same matches and
+the same linear bound.
+
+## Sources
+
+- D. E. Knuth, J. H. Morris, Jr. and V. R. Pratt, "Fast pattern matching in strings", *SIAM J.
+  Comput.* 6(2) (1977) 323–350, DOI 10.1137/0206024, Section 2 (the matching program, its invariant and the
+  computation of $f$).

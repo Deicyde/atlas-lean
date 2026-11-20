@@ -1,7 +1,7 @@
 # Regular partitions and a generalized tau function
 
 - [Euler's product has constant term $1$](constant-coeff-pentagonal-series-int.md)
-- [Euler's product is a unit in $\mathbb{Z}((X))$](is-unit-pentagonal-series-int.md)
+- [Euler's product is a unit in $\mathbb{Z}[[X]]$](is-unit-pentagonal-series-int.md)
 - [Generalized tau function](generalized-tau.md)
 - [Generalized tau function at zero](generalized-tau-zero.md)
 - [The generalized tau function at $1$](generalized-tau-one.md)

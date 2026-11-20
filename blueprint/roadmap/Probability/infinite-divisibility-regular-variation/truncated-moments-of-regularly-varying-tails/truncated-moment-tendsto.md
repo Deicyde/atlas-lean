@@ -1,10 +1,10 @@
 # Truncated second moment asymptotic for regularly varying tails
 
-The corrected truncated-second-moment asymptotic: for a probability measure
-on `ℝ` with regularly varying combined tail of index `-α`, `0 < α < 2`, the
-ratio `(∫ y in Icc (-x) x, y ^ 2 ∂μ) / (x ^ 2 * combinedTail μ x)` tends to
-`α / (2 - α)`.
+Let $\mu$ be a probability measure on $\mathbb{R}$ with combined tail
+$T(x) = \mu((x, \infty)) + \mu((-\infty, -x))$, let $0 < \alpha < 2$, and suppose that $T$ is
+regularly varying of index $-\alpha$. Then
 
-Correction: `v1/Atlas/TheoryOfProbability/code/RegularVariation.lean` states
-this with the constant `2 / (2 - α)`, which is wrong; the Pareto tail gives
-`α / (2 - α)` (see the test file).
+$$\frac{\int_{[-x, x]} y^2 \, d\mu(y)}{x^2\, T(x)} \to \frac{\alpha}{2 - \alpha} \qquad (x \to \infty).$$
+
+For the Pareto tail $\mu\{y : |y| > x\} = x^{-\alpha}$ ($x \ge 1$) the ratio indeed tends to
+$\alpha / (2 - \alpha)$.

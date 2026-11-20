@@ -1,3 +1,4 @@
 # Initial value of the logistic solution
 
-The logistic solution starts at `x₀` (for `K ≠ 0`).
+For real $r$ and $x_0$ and $K \ne 0$, the [explicit logistic solution](logistic.md) satisfies
+$x(0) = x_0$.

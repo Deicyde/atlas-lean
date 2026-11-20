@@ -11,4 +11,5 @@ whose columns all have Euclidean norm at most $1$, is finite.
 
 ## Sources
 
-- optimization catalogue C24a, line 26, and AIM Problem 1.05.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.
+- AimPL: Hereditary discrepancy and factorization norms, Problem 1.05 (Komlós conjecture), http://aimpl.org/hereddiscrep/1/.

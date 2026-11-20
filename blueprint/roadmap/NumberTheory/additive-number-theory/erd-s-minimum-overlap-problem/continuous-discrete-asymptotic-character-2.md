@@ -10,4 +10,4 @@ universal asymptotic lower bound $c$ satisfies $c \le C_{1b}$.
 
 ## Sources
 
-- Haugland 2016 and the uniform partition clause of Optimization Problems 1b.
+- Jan Kristian Haugland, *The minimum overlap problem revisited*, arXiv:1609.08000 (2016); *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html (the equivalence with the discrete problem for partitions into two equal halves).

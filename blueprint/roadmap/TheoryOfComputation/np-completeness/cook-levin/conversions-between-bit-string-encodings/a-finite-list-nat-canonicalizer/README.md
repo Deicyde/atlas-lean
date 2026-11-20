@@ -1,4 +1,4 @@
-# A finite List Nat canonicalizer
+# A finite canonicalizer for coded lists of naturals
 
 - [Stacks of the list-of-naturals canonicalizer](k.md)
 - [Stack embedding of the number normalizer in the list canonicalizer](emb.md)

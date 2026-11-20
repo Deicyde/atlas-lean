@@ -7,4 +7,4 @@ are exactly the points of $S$, all of them simple: $f'(z) \ne 0$ for every $z \i
 
 ## Sources
 
-- Weierstrass factorization theorem 1876; see Rudin; Lean is simple-zero corollary with closed discrete prescribed zero set S and entire f with exact zeros S and nonvanishing derivative on S.
+- Weierstrass factorization theorem 1876; see Rudin. The statement here is the simple-zero corollary: for a closed discrete set $S$ there is an entire function whose zero set is exactly $S$, with nonvanishing derivative on $S$.

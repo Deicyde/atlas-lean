@@ -1,8 +1,7 @@
 # Neighbor joining averages up to row shifts
 
-Along every run of neighbor joining on a
-symmetric dissimilarity `d` with zero diagonal there are weights `α s` (nonnegative, supported
-on `s`, summing to `1`) and row terms `κ s` such that the cluster dissimilarity vanishes on the
-diagonal and `D s t = ∑ x, ∑ y, α s x * α t y * d x y - κ s - κ t` for distinct current
-clusters. Joining `a, b` takes `α (a ∪ b) = (α a + α b) / 2` and
-`κ (a ∪ b) = (κ a + κ b + D a b) / 2`.
+Let $d$ be a symmetric dissimilarity on a finite set $X$ with $d(x, x) = 0$, and let a [run of neighbor joining](../neighbor-joining/njrun.md) on $d$ reach the cluster set $S$ with cluster dissimilarity $D$. Then there are weights $\alpha_s : X \to \mathbb{R}$ and reals $\kappa_s$ such that for all $s, t \in S$:
+
+- $\alpha_s(x) \ge 0$ for every $x$, $\alpha_s(x) = 0$ for $x \notin s$, and $\sum_x \alpha_s(x) = 1$;
+- $D(s, s) = 0$;
+- if $s \ne t$, then $D(s, t) = \sum_x \sum_y \alpha_s(x) \alpha_t(y) d(x, y) - \kappa_s - \kappa_t$.

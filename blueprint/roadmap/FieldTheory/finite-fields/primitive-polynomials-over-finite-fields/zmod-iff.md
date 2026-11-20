@@ -7,4 +7,4 @@ $X$ in the quotient ring $(\mathbb{Z}/p\mathbb{Z})[X]/(f)$ has multiplicative or
 
 ## Sources
 
-- ATLAS Definition 3.14.
+- A. V. Sutherland, *Elliptic curves* (MIT 18.783), lecture notes, Fall 2025, Lecture 3, Definition 3.14, https://math.mit.edu/classes/18.783/2025/LectureNotes3.pdf.

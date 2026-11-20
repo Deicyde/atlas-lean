@@ -7,4 +7,4 @@ with $\ell_i = a$ and infinitely many positions $i$ with $\ell_i = b$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of `𝒲`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of $\mathcal{W}$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

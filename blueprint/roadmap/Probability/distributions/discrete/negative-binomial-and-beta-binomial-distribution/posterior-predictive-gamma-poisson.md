@@ -1,5 +1,11 @@
 # Gamma–Poisson conjugacy, posterior predictive
 
-With prior `Λ ~ Gamma(a, b)`
-(`a, b > 0`) and counts `N, N'` that are independent `Po(Λ)` given `Λ`,
-`P(N' = j | N = k) = P(N = k, N' = j) / P(N = k) = NB(j; a + k, (a + k) / (b + 1))`.
+Let $a, b > 0$ and $k, j \in \mathbb{N}$, and let $\Gamma(a, b)$ be the gamma law with shape $a$ and rate $b$.
+Then
+
+$$\frac{\displaystyle\int e^{-r} \frac{r^k}{k!}\, e^{-r} \frac{r^j}{j!}\, d\Gamma(a, b)(r)}{p_{\Gamma(a, b)}(k)} = \mathrm{NB}\Bigl(j; a + k, \frac{a + k}{b + 1}\Bigr),$$
+
+where $p_{\Gamma(a, b)}$ is the [mixed Poisson mass](poisson-mixture-real.md) and $\mathrm{NB}$ the
+[negative binomial mass](neg-binomial-real.md) with given size and mean. With prior
+$\Lambda \sim \Gamma(a, b)$ and counts $N, N'$ independent $\operatorname{Poisson}(\Lambda)$ given
+$\Lambda$, the left side is $P(N' = j \mid N = k)$.

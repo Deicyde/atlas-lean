@@ -9,4 +9,4 @@ $0^0 = 1$. This is Spivey's Bell number formula with the two finite sums interch
 
 ## Sources
 
-- Jacob Katriel, "On a Generalized Recurrence for Bell Numbers", Journal of Integer Sequences 11 (2008), Article 08.3.8, equation (Spivey), lines 77–81, https://cs.uwaterloo.ca/journals/JIS/VOL11/Katriel/katriel6.tex (quoting Michael Z. Spivey, "A generalized recurrence for Bell numbers", Journal of Integer Sequences 11 (2008), Article 08.2.5).
+- Jacob Katriel, "On a Generalized Recurrence for Bell Numbers", Journal of Integer Sequences 11 (2008), Article 08.3.8, equation (1), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Katriel/katriel6.pdf>, quoting Michael Z. Spivey, "A Generalized Recurrence for Bell Numbers", Journal of Integer Sequences 11 (2008), Article 08.2.5.

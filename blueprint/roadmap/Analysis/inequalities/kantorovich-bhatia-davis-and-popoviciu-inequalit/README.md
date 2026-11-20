@@ -1,21 +1,21 @@
 # Kantorovich, Bhatia–Davis and Popoviciu inequalities
 
-## Scalar
+## Weighted inequalities for real numbers
 
 - [Weighted variance as weighted squared deviation from the mean](weighted-variance-eq.md)
-- [Bhatia–Davis inequality](weighted-bhatia-davis.md)
-- [Popoviciu's inequality](weighted-popoviciu.md)
-- [Kantorovich's inequality](weighted-kantorovich.md)
+- [Weighted Bhatia–Davis inequality for real numbers](weighted-bhatia-davis.md)
+- [Weighted Popoviciu inequality for real numbers](weighted-popoviciu.md)
+- [Weighted Kantorovich inequality for real numbers](weighted-kantorovich.md)
 
-## Operator
+## Inequalities for symmetric operators
 
 - [Eigenvector basis equation with real eigenvalues](apply-eigenvector-basis-real.md)
 - [Eigenvalues lie within the Rayleigh quotient bounds](eigenvalue-mem-icc-of-rayleigh-bounds.md)
 - [Eigenbasis weights sum to the squared norm](sum-weights-eq-norm-sq.md)
-- [Rayleigh quotient as a weighted average of eigenvalues](rayleigh-eq-weighted-sum.md)
-- [Second moment as a weighted average of squared eigenvalues](second-moment-eq-weighted-sum.md)
-- [Inverse quadratic form as a weighted average of reciprocal eigenvalues](inv-rayleigh-eq-weighted-sum-div.md)
+- [Quadratic form of a symmetric operator as a weighted sum of eigenvalues](rayleigh-eq-weighted-sum.md)
+- [Quadratic form of the square of a symmetric operator as a weighted sum](second-moment-eq-weighted-sum.md)
+- [Quadratic form of the inverse as a weighted sum of reciprocal eigenvalues](inv-rayleigh-eq-weighted-sum-div.md)
 - [Operator variance as weighted squared deviation of eigenvalues](variance-eq-weighted-sum-sq.md)
-- [Bhatia–Davis inequality](bhatia-davis-inequality.md)
-- [Popoviciu's inequality](popoviciu-inequality.md)
-- [Kantorovich's inequality](kantorovich-inequality.md)
+- [Bhatia–Davis inequality for symmetric operators](bhatia-davis-inequality.md)
+- [Popoviciu's inequality for symmetric operators](popoviciu-inequality.md)
+- [Kantorovich's inequality for symmetric operators](kantorovich-inequality.md)

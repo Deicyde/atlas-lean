@@ -11,4 +11,4 @@ and this rational number is an integer.
 
 ## Sources
 
-- Kendra Killpatrick, "Super FiboCatalan Numbers and Their Lucas Analogues", Corollary 8.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, Corollary 8.

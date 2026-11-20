@@ -9,8 +9,8 @@ $\mathbb{R}$; and there are a real $\gamma \ge 0$ and non-negative reals
 $\alpha_0, \alpha_1, \dots$ with $\sum_i \alpha_i < \infty$ such that for every real $x$ the series
 $\sum_{n \ge 0} t_n x^n / n!$ converges to $t_0 e^{\gamma x} \prod_{i \ge 0} (1 + \alpha_i x)$.
 
-Convergence at every real $x$ encodes that the exponential generating function is entire.
+Convergence at every real $x$ means that the exponential generating function is entire.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 17 (Pólya and Schur, PS14 p. 93).
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 17 (Pólya and Schur, PS14 p. 93).

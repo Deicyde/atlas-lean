@@ -12,4 +12,4 @@ the factor $\beta^{-n}$ in place of $(-\beta)^{m-n}$, which makes the sum equal 
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 2.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Corollary 2.

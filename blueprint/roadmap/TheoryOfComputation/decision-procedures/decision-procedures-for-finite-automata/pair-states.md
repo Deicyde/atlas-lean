@@ -2,6 +2,6 @@
 
 For encoded DFAs $D$ and $E$ over the same
 alphabet, code a pair $(s, t)$ of natural numbers by its image $\langle s, t \rangle \in \mathbb{N}$
-under Mathlib's pairing function. This is the list of the numbers $\langle s, t \rangle$ with $s$
+under the pairing function $\langle s, t \rangle$, equal to $t^2 + s$ if $s < t$ and to $s^2 + s + t$ otherwise. This is the list of the numbers $\langle s, t \rangle$ with $s$
 running over the states of $D$ in their listed order and, for each $s$, $t$ running over the
 states of $E$ in their listed order.

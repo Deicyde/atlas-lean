@@ -9,4 +9,4 @@ principal value for $x \ne 1$.
 
 ## Sources
 
-- arXiv:2306.14073v1 and arXiv:2309.16007v1, classical `li(x) := PV ∫₀ˣ dt/log t` with lower limit `0` and principal value at `t = 1`.
+- Shane Chern, *Hitting a prime by rolling a die with infinitely many faces*, arXiv:2306.14073v1 (2023), and M. Boran, J. Byun, Z. Li, S. J. Miller and S. Reyes, *Sums of Powers of Primes in Arithmetic Progression*, arXiv:2309.16007v1 (2023): the classical $\mathrm{li}(x) = \mathrm{PV}\int_0^x dt/\log t$, with lower limit $0$ and principal value at $t = 1$.

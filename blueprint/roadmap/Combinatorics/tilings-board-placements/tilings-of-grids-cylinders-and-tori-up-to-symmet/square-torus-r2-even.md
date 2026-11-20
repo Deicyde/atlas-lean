@@ -12,4 +12,4 @@ Multiplying by four replaces the paper's coefficients $3/4$ and $1/4$ by integer
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.

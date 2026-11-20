@@ -1,4 +1,5 @@
 # Completed conversion-ranked frontiers are congruent to nil
 
-A frontier with no active ownership cannot contain a live prefix.
-Completion is the PROCESS congruence to nil, not a completed empty interface.
+Let $n$ be a natural number, $\Delta$ an ownership context all of whose capabilities have head
+$\mathrm{end}$, and $p$ a guard frontier. If $\Delta \vdash^{\mathrm{rk}\simeq}_n p$, then $p \equiv
+\mathbf{0}$.

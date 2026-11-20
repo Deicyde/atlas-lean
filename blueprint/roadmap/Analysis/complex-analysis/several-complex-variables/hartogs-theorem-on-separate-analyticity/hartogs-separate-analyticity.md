@@ -14,4 +14,4 @@ then makes the Cauchy expansion in the last variable converge locally uniformly.
 
 ## Sources
 
-- Hartogs separate analyticity (Osgood–Hartogs); see Hörmander; Lean is scalar-valued entire separately holomorphic via Function.update slices implies jointly Differentiable ℂ, finite-dimensional ℂⁿ specialization.
+- Hartogs separate analyticity (Osgood–Hartogs); see Hörmander. The statement here is the case of a scalar-valued function on $\mathbb{C}^n$ that is holomorphic in each variable separately on all of $\mathbb{C}^n$: it is jointly holomorphic.

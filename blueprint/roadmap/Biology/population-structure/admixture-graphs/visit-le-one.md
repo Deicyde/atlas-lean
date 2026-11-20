@@ -1,3 +1,3 @@
 # Visit probabilities are at most one
 
-Visit probabilities are at most `1`.
+In every [admixture graph](admixture-graph.md) and for all nodes $X, c$, the [visit probability](visit.md) satisfies $v(X, c) \le 1$.

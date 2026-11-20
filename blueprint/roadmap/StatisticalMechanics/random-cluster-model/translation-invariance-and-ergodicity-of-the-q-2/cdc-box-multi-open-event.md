@@ -1,3 +1,3 @@
 # Event that every edge of a set of box edges is open, on a box
 
-The event that every edge of `t ⊆ E(Λ_N)` is open, on configurations of `Λ_N`.
+For $d, N \in \mathbb{N}$ and a finite set $t$ of unordered pairs of vertices of $\Lambda_N = \{-N, \dots, N\}^d$, the event is the set of configurations of $\Lambda_N$ in which every pair of $t$ is open.

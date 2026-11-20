@@ -5,8 +5,7 @@ part of $m$, the binary digits of $\operatorname{od}(64!)$ in positions $5$ and 
 digit being position $0$) are both $0$; that is,
 $\operatorname{stab}(5, 2) = \lfloor \operatorname{od}(64!) / 2^5 \rfloor \bmod 4 = 0$.
 
-This small instance checks the same factorial, shift and remainder convention as the source's
-larger worked example $\operatorname{stab}(18, 7) = 55$.
+With the same convention, the source's worked example is $\operatorname{stab}(18, 7) = 55$.
 
 ## Sources
 

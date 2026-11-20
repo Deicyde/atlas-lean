@@ -1,3 +1,3 @@
 # Stick-breaking proportions lie in the unit interval almost surely
 
-Almost surely every proportion is in `[0, 1]`.
+For a [stick-breaking process](stick-breaking-process.md) on $(\Omega, \mu)$, $\mu$-almost surely $\beta_k \in [0, 1]$ for every $k$ simultaneously.

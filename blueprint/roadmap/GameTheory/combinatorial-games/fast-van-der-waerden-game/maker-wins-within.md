@@ -12,4 +12,4 @@ has claimed $B \cup \{y\}$.
 
 ## Sources
 
-- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Sections 1 and 5 (`p`-move strategy).
+- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Sections 1 and 5 ($p$-move strategy).

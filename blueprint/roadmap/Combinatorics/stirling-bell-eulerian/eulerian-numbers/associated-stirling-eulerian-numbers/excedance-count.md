@@ -6,4 +6,4 @@ of excedances of $\sigma$.
 
 ## Sources
 
-- JIS VOL28/Rakotoson/rakoto12.tex Lines 130-132; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Definition 4.

@@ -1,4 +1,3 @@
 # Correspondence for cluster-constant colorings equal at two vertices
 
-Colorings constant on open clusters with `σ x = σ y` correspond to colorings of the clusters
-that agree on the clusters of `x` and `y`.
+Let $G = (V, E)$ be a finite simple graph, $q \in \mathbb{N}$, $\omega$ an assignment of open/closed states to the unordered pairs of vertices, and $x, y \in V$. The map $\tau \mapsto (v \mapsto \tau(C_v))$, with $C_v$ the open cluster of $v$, is a bijection from the colorings $\tau$ of the open clusters of $\omega$ with $\tau(C_x) = \tau(C_y)$ onto the colorings $\sigma : V \to \{0, \dots, q - 1\}$ that are [constant on open clusters](../the-edwards-sokal-coupling/const-on-open.md) and satisfy $\sigma_x = \sigma_y$. The open clusters are the connected components of the graph formed by the edges of $G$ open in $\omega$.

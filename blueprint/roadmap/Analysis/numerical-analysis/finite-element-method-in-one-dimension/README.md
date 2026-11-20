@@ -54,4 +54,4 @@
 - [Interpolation estimate](energy-sub-interp-le.md)
 - [Energy error estimate](energy-sub-galerkin-le-mesh.md)
 - [Energy error estimate for the P1 Galerkin solution](sqrt-energy-sub-galerkin-le-mesh.md)
-- [`L²` error estimate](integral-sq-sub-galerkin-le-mesh.md)
+- [$L^2$ error estimate](integral-sq-sub-galerkin-le-mesh.md)

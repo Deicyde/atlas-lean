@@ -15,4 +15,4 @@ t_{\mathrm{id}}^{n(m-2)/\operatorname{lcm}(d,2)}\,t_{(r^2f)^d}^{2n/d}\right).$$
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.

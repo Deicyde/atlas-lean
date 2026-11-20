@@ -1,3 +1,3 @@
 # Binomial upper tail from zero is one
 
-`P(0) = 1`, for every real `p`.
+For every natural number $n$ and every real $p$, the [upper tail](upper-tail.md) satisfies $P_p(0) = 1$.

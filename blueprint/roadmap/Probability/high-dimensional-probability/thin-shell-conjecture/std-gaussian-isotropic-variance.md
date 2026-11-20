@@ -7,4 +7,4 @@ radius variance $\frac{1}{n} \int (|x|^2 - n)^2 \, d\gamma_n(x)$ equals $2$.
 
 ## Sources
 
-- Klartag--Lehec, arXiv:2507.15495v1, Introduction.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Introduction.

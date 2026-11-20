@@ -12,8 +12,8 @@ digits of $x$. Then for every real $y$,
 $$G(My) \le \lambda\{x \in (0, 1] : F(d_1(x), \ldots, d_m(x)) \ge y\}.$$
 
 The paper states it only at the values of the sequence in its Theorem 4, under that theorem's
-hypotheses, which also require $F$ to be measurable and non-decreasing; only positivity and
-condition (6) are assumed here.
+hypotheses, which also require $F$ to be measurable and non-decreasing; the statement above assumes
+only positivity and condition (6).
 
 ## Sources
 

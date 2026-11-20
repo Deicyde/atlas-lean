@@ -7,4 +7,4 @@ For every natural number $n$, the second component of $\mathrm{pair}^{-1}(n)$ is
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (pairing functions).

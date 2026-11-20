@@ -8,4 +8,4 @@ The Silverman–Toeplitz conditions characterise exactly these methods.
 
 ## Sources
 
-- "Toeplitz method" is pinned to this standard reading; the typescript does not define it.
+- S. Mazur, Problem 5 of the Scottish Book, which speaks of "Toeplitz methods" without defining them; the term is read here in its standard sense of permanent (regular) matrix methods.

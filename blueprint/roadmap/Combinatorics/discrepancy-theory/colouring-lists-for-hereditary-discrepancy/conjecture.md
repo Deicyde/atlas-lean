@@ -9,4 +9,4 @@ $i$, where $\operatorname{herdisc}(A)$ is the hereditary discrepancy of $A$.
 
 ## Sources
 
-- AIM-COMBINATORICS-0047__20000922; AIM Hereditary discrepancy, item 1.85.
+- AimPL: Hereditary discrepancy and factorization norms, Problem 1.85 (Polysize list of colorings), http://aimpl.org/hereddiscrep/1/.

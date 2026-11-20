@@ -1,16 +1,15 @@
 # Chernoff bound for the empirical mean of real-valued i.i.d. variables
 
-**Chernoff bound for the empirical mean of real-valued i.i.d. variables**,
-in event form: if on the event `E` the empirical mean
-`(1/n) ∑_{i<n} Xᵢ` satisfies the threshold inequality
-`a ≤ t * (empirical mean) - log (mgf of X₁ at t)`, then
-`μ(E) ≤ exp(-n * a)`.
+Let $\mu$ be a probability measure, let $X_0, X_1, \dots$ be measurable, independent real random
+variables, each identically distributed with $X_0$, and let $t, a \in \mathbb{R}$ with $e^{t X_0}$
+integrable; write $M(t) = \mathbb{E}[e^{t X_0}]$. Let $n > 0$ and let $E \subseteq \Omega$ be any
+set on which the empirical mean satisfies
 
-Assume a probability measure, measurable independent identically distributed
-coordinates, and integrability of `exp (t * X₀)`.
+$$a \le t \cdot \frac{1}{n} \sum_{i < n} X_i - \log M(t) .$$
 
-This is the one-dimensional core of the Cramér upper bound. The proof splits
-on the sign of `t`: for `t > 0` it applies Mathlib's upper-tail Chernoff bound
-to the sum `Sₙ`, and for `t < 0` the lower-tail Chernoff bound; in both cases
-the exponential moment of the sum factors as `(mgf of X₁ at t)^n` by
+Then $\mu(E) \le e^{-na}$ ($\mu(E)$ the outer measure if $E$ is not measurable).
+
+This is the one-dimensional core of the Cramér upper bound. The proof splits on the sign of $t$:
+for $t > 0$ it applies the upper-tail Chernoff bound to the sum $S_n$, for $t < 0$ the lower-tail
+Chernoff bound; in both cases the exponential moment of the sum factors as $M(t)^n$ by
 independence and identical distribution.

@@ -1,3 +1,3 @@
 # Symmetry of tabular kinship
 
-The tabular kinship is symmetric.
+In every [pedigree](pedigree.md), the [tabular kinship](kinship.md) satisfies $\varphi_{ij} = \varphi_{ji}$ for all individuals $i, j$.

@@ -7,4 +7,5 @@ $$\frac{1}{n} \sum_{k=0}^{n-1} \left| m(T^{-k}(A) \cap B) - m(A) m(B) \right| \t
 
 as $n \to \infty$, where $T^{-k}(A)$ is the preimage of $A$ under the $k$-th iterate of $T$.
 
-Measures are converted to real numbers here, with an infinite measure counted as $0$.
+In this formula a set of infinite measure counts as having measure $0$; for the probability measures of
+[Halmos's theorem](generic-weakly-mixing.md) every measure is finite.

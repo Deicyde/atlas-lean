@@ -1,10 +1,10 @@
 # Kourovka Problem 14.23 fails uniformly in the rank
 
-There is no computable function
-$f : \mathbb{N} \to \mathbb{N}$ such that for every $n$ and every automorphism $\alpha$ of the
-free group $F_n$ on $x_0, \dots, x_{n-1}$, the fixed subgroup $\mathrm{Fix}(\alpha)$ has a
-finite free basis all of whose elements have reduced word length at most $f(\|\alpha\|)$, where
-$\|\alpha\|$ is the maximum of the reduced word lengths of $\alpha(x_0), \dots, \alpha(x_{n-1})$.
+There is no computable function $f : \mathbb{N} \to \mathbb{N}$ such that for every $n$ and every
+automorphism $\alpha$ of the free group $F_n$ on $x_0, \dots, x_{n-1}$, the fixed subgroup
+$\mathrm{Fix}(\alpha)$ has a finite free basis all of whose elements have reduced word length at
+most $f(\|\alpha\|)$, where $\|\alpha\|$ is the maximum of the reduced word lengths of
+$\alpha(x_0), \dots, \alpha(x_{n-1})$ (and $0$ when $n = 0$).
 
 Kharlampovich (Theorem 1) proves more: for every $r \ge 3$ there is an automorphism $\alpha_r$
 of the free group of rank $2r - 1$ with $\|\alpha_r\| = 3$ such that every generating set of

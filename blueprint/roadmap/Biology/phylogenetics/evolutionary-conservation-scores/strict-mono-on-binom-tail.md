@@ -1,3 +1,3 @@
-# The binomial upper tail is strictly increasing in `p` on `[0, 1]`
+# The binomial upper tail is strictly increasing in the success probability
 
-**The binomial upper tail is strictly increasing in `p` on `[0, 1]`** when `1 ≤ k ≤ n`.
+For natural numbers $1 \le k \le n$, the [binomial upper tail](binom-tail.md) $p \mapsto T_{n,k}(p)$ is strictly increasing on the closed interval $0 \le p \le 1$.

@@ -1,4 +1,7 @@
-# Heisenberg's uncertainty principle
+# Heisenberg's uncertainty principle for complex Schwartz functions
 
-**Heisenberg's uncertainty principle** for complex-valued Schwartz functions:
-`(∫ ‖f x‖²)² ≤ 4 * (∫ x² * ‖f x‖²) * (∫ ‖f' x‖²)`.
+Let $f$ be a complex-valued Schwartz function on $\mathbb{R}$. Then
+
+$$
+\Big( \int_{\mathbb{R}} |f(x)|^2\, dx \Big)^2 \le 4 \Big( \int_{\mathbb{R}} x^2 |f(x)|^2\, dx \Big) \Big( \int_{\mathbb{R}} |f'(x)|^2\, dx \Big).
+$$

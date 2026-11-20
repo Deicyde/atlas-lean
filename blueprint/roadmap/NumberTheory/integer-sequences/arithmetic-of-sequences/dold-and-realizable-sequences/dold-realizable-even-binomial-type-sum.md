@@ -3,7 +3,9 @@
 Let $r \ge 1$, $s$, $t$ and $u$ be natural
 numbers with $t + u \ge 1$, and let
 
-$$T(n) = \sum_{k=0}^{n} \binom{n}{2k}^r \binom{n+k}{k}^s \binom{2k}{k}^t \binom{2(n-k)}{n-k}^u.$$
+$$
+T(n) = \sum_{k=0}^{n} \binom{n}{2k}^r \binom{n+k}{k}^s \binom{2k}{k}^t \binom{2(n-k)}{n-k}^u.
+$$
 
 Then the integer sequence $(T(n))_{n \ge 0}$ is Dold realizable.
 

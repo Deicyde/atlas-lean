@@ -8,11 +8,13 @@ natural numbers, let $G$ be the set of positive integers $n$ such that for every
 exponent $\nu_p(n)$ of $p$ in $n$ lies in $A$, and let $H_G$ be the set of Hurwitz quaternions
 whose norm lies in $G$. Then the ratio $|H_G \cap S(N)| / |S(N)|$ tends, as $N \to \infty$, to
 
-$$\frac{6}{\pi^2} \Bigl( \sum_{k \in A} 2^{-2k} \Bigr)
-\prod_{p > 2} \Bigl( \sum_{k \in A} p^{-k} - \frac{1}{p} \sum_{k \in A} p^{-2k} \Bigr),$$
+$$
+\frac{6}{\pi^2} \Bigl( \sum_{k \in A} 2^{-2k} \Bigr)
+\prod_{p > 2} \Bigl( \sum_{k \in A} p^{-k} - \frac{1}{p} \sum_{k \in A} p^{-2k} \Bigr),
+$$
 
 the product running over the odd primes $p$. Here $6/\pi^2 = 1/\zeta(2)$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Theorem 5.
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Theorem 5.

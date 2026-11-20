@@ -6,4 +6,4 @@ $a \ge 2$ and $m \ge 2$ with $S_n = a^m$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 3(a).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 3(a).

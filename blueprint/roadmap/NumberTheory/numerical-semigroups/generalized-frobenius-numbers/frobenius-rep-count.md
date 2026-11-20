@@ -10,4 +10,4 @@ It is $0$ for $m < 0$, and finite when every $a_i$ is positive.
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction (definition of `d(n; a₁, …, a_k)`).
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction (definition of $d(n; a_1, \dots, a_k)$).

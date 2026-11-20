@@ -12,4 +12,4 @@ $$\sum_{n \ge 0} \left(\frac{g_{(2n+1)k}^\lambda}{g_{(2n+1)k+r}^\lambda} -
 
 ## Sources
 
-- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Lemma 2.2.
+- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), no. 1, 29–33, Lemma 2.2.

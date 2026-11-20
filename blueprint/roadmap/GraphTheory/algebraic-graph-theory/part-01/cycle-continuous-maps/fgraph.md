@@ -7,4 +7,4 @@ endpoints of an edge may coincide (a loop). Neither $V$ nor $E$ is required to b
 
 ## Sources
 
-- [OPG-323] Antichains in the cycle continuous order (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
+- M. DeVos, *Antichains in the cycle continuous order*, Open Problem Garden, http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order.

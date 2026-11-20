@@ -8,6 +8,4 @@ if there are none).
 
 If $T$ satisfies the structural B-tree invariant for a minimum degree $t \ge 2$ and has at least
 one key at its root, the rightmost key exists and is the last key of the inorder flattening of
-$T$, so on an ordered tree it is the greatest key. Each step splits a child list of length at
-most $2t$, so on a valid tree of height $h$ the descent costs $O(t h)$, without computing the
-flattening.
+$T$, so on an ordered tree it is the greatest key.

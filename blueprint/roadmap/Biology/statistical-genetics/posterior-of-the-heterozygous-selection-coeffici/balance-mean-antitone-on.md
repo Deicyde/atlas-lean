@@ -1,3 +1,3 @@
 # Balance mean is decreasing in the selection coefficient
 
-The balance mean is antitone in `s > 0` for `n U ≥ 0`.
+Let $n, U$ be real numbers with $nU \ge 0$. Then the [balance mean](balance-mean.md) $s \mapsto nU/s$ is nonincreasing on $(0, \infty)$.

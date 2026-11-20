@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} \binom{n}{k} \binom{2n}{n+k} \binom{n+k}{k} U_k V_{n-k} = \bino
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.10.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 2.10.

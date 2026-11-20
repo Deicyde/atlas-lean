@@ -1,4 +1,9 @@
 # Supremum of the fiber counts of a map
 
-The real supremum of the fiber counts of `ψ`, defined for uniformly bounded finite
-fibers. The bound in `hψ` ensures that the real-valued family is bounded above.
+Let $\psi : \mathbb{N} \to \mathbb{N}$ have [fibers bounded](has-bounded-fibers.md) by some $M \in \mathbb{N}$. The fiber supremum of $\psi$ is the real number
+
+$$
+s_\psi = \sup_{m \in \mathbb{N}} |\psi^{-1}(m)|,
+$$
+
+which is finite because every fiber has at most $M$ elements.

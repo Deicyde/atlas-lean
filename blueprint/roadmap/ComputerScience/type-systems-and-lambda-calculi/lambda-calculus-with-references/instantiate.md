@@ -7,3 +7,7 @@ $\Gamma$ and $S$, then substituting $s$ for variable $0$ in $t$ (and lowering ev
 by one) gives a term of type $T$ under $\Gamma$ and $S$.
 
 This is TAPL Lemma 13.5.4 in de Bruijn form.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Lemma 13.5.4.

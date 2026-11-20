@@ -86,7 +86,7 @@
 - [Truncated geometric sequence is square-summable](mem-p-approx-fun.md)
 - [Truncated geometric vector in $\ell^2$](approx-vec.md)
 - [Squared norm of the truncated geometric vector](norm-sq-approx-vec.md)
-- [Shifted unilateral shift on the truncated geometric vector](sub-smul-one-approx-vec-apply-zero.md)
+- [First coordinate of the shifted unilateral shift on the truncated geometric vector](sub-smul-one-approx-vec-apply-zero.md)
 - [Squared norm of the shifted shift on the truncated geometric vector](norm-sq-sub-smul-one-approx-vec.md)
 - [Shifted unilateral shift is not Fredholm on the unit circle](not-is-fredholm-shift-sub-smul-one-of-no.md)
 - [Essential spectrum of the unilateral shift is the unit circle](essential-spectrum-shift-clm.md)

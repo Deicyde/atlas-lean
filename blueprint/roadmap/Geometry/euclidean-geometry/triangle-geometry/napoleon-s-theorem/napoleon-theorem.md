@@ -11,8 +11,8 @@ $G_3 = \frac{1}{3}(A + B + C_2)$. Then $|G_1G_2| = |G_2G_3| = |G_3G_1|$.
 That is, the centroids of the equilateral triangles erected outward on the sides of $ABC$ are
 pairwise equidistant. Non-collinearity is stated as $(B - A) \times (C - A) \ne 0$ and opposite
 sides by signed areas, for instance $((C - B) \times (A - B)) \, ((C - B) \times (A_2 - B)) < 0$,
-where $(x, y) \times (x', y') = x y' - y x'$.
+where $(x, y) \times (x', y') = x y' - y x'$. It follows from [the general form](napoleon-theorem-general.md), which also shows that the common distance is positive; the distinctness and non-collinearity hypotheses are not needed for the conclusion.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Napoleon%27s_theorem (statement id `napoleon-s1`; raw: "Outer equilateral-triangle centers on any triangle form an equilateral triangle."). It follows from `napoleon_theorem_general`, which also shows the common distance is positive; the hypotheses `A ≠ B`, `B ≠ C`, `C ≠ A` and nondegeneracy are unused and keep the source's shape.
+- Wikipedia, *Napoleon's theorem*, https://en.wikipedia.org/wiki/Napoleon%27s_theorem: the centers of the equilateral triangles erected outward on the sides of any triangle form an equilateral triangle.

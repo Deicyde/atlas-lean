@@ -10,4 +10,4 @@ theorem.
 
 ## Sources
 
-- `ω` here is `ω⋆` in the paper.
+- A. Poëls, *On approximation to a real number by algebraic numbers of bounded degree*, Annals of Math. 201 (1) (2025); there the supremum of this set is the classical exponent $\omega^*_n(\xi)$.

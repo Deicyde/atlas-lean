@@ -10,4 +10,4 @@ $F_k$, the map $T$ is addition of $1$, and $x + r$ denotes $T^r(x)$ for $r \in \
 
 ## Sources
 
-- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (definition of `T`).
+- Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (definition of $T$).

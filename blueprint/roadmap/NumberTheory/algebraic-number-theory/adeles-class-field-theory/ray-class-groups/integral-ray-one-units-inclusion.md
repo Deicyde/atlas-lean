@@ -7,4 +7,4 @@ $\mathfrak{m}$ to $\mathcal{O}_K^\times$ that sends each such unit to itself.
 
 ## Sources
 
-- ATLAS `exactSeq_map1`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

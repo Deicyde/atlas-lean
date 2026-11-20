@@ -1,3 +1,3 @@
 # Wired bulk edges of $\Lambda_n$
 
-The wired bulk edges of `Λ_n`: the edges of the inner box `Λ_{n - ⌊√n⌋ - 1}`.
+For $d, n \in \mathbb{N}$, the wired bulk set is the set of edges of $\Lambda_{n - \lfloor\sqrt n\rfloor - 1}$ (natural subtraction), viewed as pairs of vertices of $\Lambda_n$, where $\Lambda_k = \{-k, \dots, k\}^d$.

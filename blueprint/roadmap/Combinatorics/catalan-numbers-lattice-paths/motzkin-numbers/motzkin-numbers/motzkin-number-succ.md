@@ -1,8 +1,11 @@
 # The Motzkin recurrence
 
-`M(n + 1) = M(n) + ∑_{k < n} M(k) M(n - 1 - k)`. (Combinatorially, a Motzkin path of
-length `n + 1` starts with a flat step, or with an up step whose matching down step splits the
-rest into two shorter Motzkin paths.)
+For every natural number $n$, the Motzkin numbers satisfy
+
+$$M_{n+1} = M_n + \sum_{k=0}^{n-1} M_k\, M_{n-1-k}.$$
+
+Combinatorially, a Motzkin path of length $n + 1$ starts with a flat step, or with an up step whose matching down
+step splits the rest into two shorter Motzkin paths.
 
 ## Sources
 

@@ -8,4 +8,4 @@ The source indexes $H$ by all integers.
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 8 (`jis-2024-24.3.1-lem-8`).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Lemma 8 (`jis-2024-24.3.1-lem-8`).

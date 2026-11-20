@@ -10,4 +10,4 @@ when $F$ is finite; it is taken to be $0$ if infinitely many of its terms are no
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `D̃_{B_κ,h}(N, a, m)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of $\tilde D_{B_\kappa,h}(N, a, m)$.

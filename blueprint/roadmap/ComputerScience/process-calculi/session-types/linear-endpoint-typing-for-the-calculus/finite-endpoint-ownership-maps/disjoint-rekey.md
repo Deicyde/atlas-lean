@@ -1,4 +1,6 @@
 # Injective rekeying preserves disjoint ownership
 
-Disjoint ownership remains disjoint when the combined owned domain
-is rekeyed injectively. Opposite roles are not collapsed to physical names.
+Let $f$ be a map from endpoints to endpoints and $\Delta$, $\Theta$ ownership contexts with disjoint
+domains, such that $f$ is injective on the union of the two domains. Then $f_*\Delta$ and
+$f_*\Theta$ have disjoint domains, where $f_*\Delta$ maps $f(e)$ to $\Delta(e)$ for every $e$ in the
+domain of $\Delta$ (and similarly for $\Theta$).

@@ -5,4 +5,4 @@ decision problem that accepts exactly the bitstrings that $L$ rejects, belongs t
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 8.1.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 8.1.

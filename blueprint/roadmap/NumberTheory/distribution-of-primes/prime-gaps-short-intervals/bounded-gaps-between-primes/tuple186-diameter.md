@@ -6,4 +6,4 @@ $\{h_0, \dots, h_{39}\}$ minus the smallest value in it equals $186$.
 
 ## Sources
 
-- OpenAI (2026), equation (1.3), as quoted in constants/88a.md.
+- OpenAI (2026), equation (1.3), as quoted in teorth/optimizationproblems, `constants/88a.md`.

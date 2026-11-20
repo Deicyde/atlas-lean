@@ -69,7 +69,7 @@
 - [Two north-then-west corners force a self-intersection](part-03/two-nw-corners-not-injective.md)
 - [Four left turns, given that two corners force a self-intersection](part-03/cc-eq-four-of-self-avoidance-wall.md)
 
-## [Unit cell to the left of a lattice step to $k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$](part-04/README.md)
+## [Unit cell to the left of a lattice step to $k + 2 \ne k$ modulo $n$ for $n \ge 3$](part-04/README.md)
 
 - [Unit cell to the left of a lattice step](part-04/left-cell.md)
 - [Steps around a left turn share their left cell](part-04/left-cell-eq-of-left-turn.md)
@@ -90,7 +90,7 @@
 - [Horizontal steps on a unit segment](part-04/mid-set.md)
 - [Upward crossings of vertically adjacent cells differ by separating steps](part-04/up-cross-vsplit.md)
 - [An odd number of horizontal steps flips the ray parity](part-04/ray-parity-vflip.md)
-- [$k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$](part-04/not-add-two-self.md)
+- [$k + 2 \ne k$ modulo $n$ for $n \ge 3$](part-04/not-add-two-self.md)
 
 ## [Steps on a horizontal unit segment join its endpoints to A closed walk crosses each vertical line an even number of times](part-05/README.md)
 
@@ -172,10 +172,10 @@
 - [Vertically face-adjacent cells have the same ray parity](part-08/ray-parity-eq-of-face-adj-top.md)
 - [Face-adjacent cells have the same ray parity](part-08/ray-parity-eq-of-face-adj.md)
 - [Ray parity is constant on face-graph components](part-08/ray-parity-eq-of-reachable.md)
-- [Top corner with an inside cell below it](part-08/lex-interior-index.md)
-- [Defining property of the inside top corner](part-08/lex-interior-index-spec.md)
-- [Face below-left of the inside top corner](part-08/lex-interior-face.md)
-- [The face below the inside top corner is inside](part-08/lex-interior-face-parity.md)
+- [North-then-west corner with an inside cell below it](part-08/lex-interior-index.md)
+- [Defining property of the chosen north-then-west corner](part-08/lex-interior-index-spec.md)
+- [Face below-left of a chosen north-then-west corner](part-08/lex-interior-face.md)
+- [The face below-left of the chosen corner is inside](part-08/lex-interior-face-parity.md)
 - [Inner component of the face graph](part-08/inner-component.md)
 - [A face far outside the walk has ray parity zero](part-08/outer-beacon-parity.md)
 - [The inner face component is finite](part-08/inner-component-finite.md)
@@ -235,7 +235,7 @@
 - [Interior cells have connected lower-left corners](part-11/interior-representatives-reachable.md)
 - [Connectedness of the skeleton of the interior](part-11/interior-cell-skeleton-connected.md)
 - [Interior of a simple closed walk has Euler characteristic at most 1](part-11/euler-char-interior-cells-le-one.md)
-- [Hopf's Umlaufsatz](part-11/turn-sum-eq-four-or-neg-four.md)
+- [Umlaufsatz for simple closed lattice walks](part-11/turn-sum-eq-four-or-neg-four.md)
 - [Agreement of the two definitions of the left cell](part-11/left-cell-bridge.md)
 - [A walk without right turns is positively oriented](part-11/left-parity-zero.md)
 - [Ray-parity interior equals the bounded face](part-11/interior-cells-bridge.md)

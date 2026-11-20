@@ -1,3 +1,4 @@
 # Erasure after inserting the same key
 
-Erasing an inserted key removes its entry, independently of its value.
+For every ownership context $\Gamma$, endpoint $e$ and capability $c$, $\Gamma[e \mapsto c]
+\setminus e = \Gamma \setminus e$.

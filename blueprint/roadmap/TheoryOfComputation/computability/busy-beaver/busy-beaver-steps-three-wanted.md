@@ -6,4 +6,4 @@ blank tape, the largest halting time is $21$.
 
 ## Sources
 
-- Lin--Radó (1965), determination of `S(3) = 21`.
+- S. Lin and T. Radó, "Computer studies of Turing machine problems", *Journal of the ACM* 12 (1965), 196–212: $S(3) = 21$.

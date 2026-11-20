@@ -1,11 +1,7 @@
 # Energy of an Ising configuration
 
-For a positive integer $L$, let $\sigma$ be a spin
-configuration on the periodic $L \times L$ square lattice, assigning to each site $p$ a spin
-$\sigma_p \in \{1, -1\}$. Its energy in the zero-field ferromagnetic Ising model with unit
-coupling is
+For $L \ge 1$ and $\sigma : (\mathbb{Z}/L\mathbb{Z})^2 \to \{0, 1\}$, with spins $s_p = +1$ if $\sigma(p) = 1$ and $s_p = -1$ otherwise, the energy is
 
-$$H_L(\sigma) = -\sum_p \left(\sigma_p \sigma_{p + e_1} + \sigma_p \sigma_{p + e_2}\right),$$
+$$H_L(\sigma) = -\sum_{p} \big(s_p\, s_{p + (1,0)} + s_p\, s_{p + (0,1)}\big),$$
 
-where $p$ runs over all sites, and $p + e_1$ and $p + e_2$ are obtained from $p$ by adding $1$
-modulo $L$ to its first and to its second coordinate respectively.
+the sum running over all sites $p$ of the torus (for $L = 1$ and $L = 2$ the neighbours wrap around, so some bonds are counted with multiplicity).

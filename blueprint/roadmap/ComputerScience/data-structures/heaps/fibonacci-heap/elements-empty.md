@@ -1,4 +1,3 @@
 # The empty Fibonacci heap has no elements
 
-The empty Fibonacci heap represents the empty
-multiset.
+Over a linear order, the multiset of elements of the empty Fibonacci heap is the empty multiset.

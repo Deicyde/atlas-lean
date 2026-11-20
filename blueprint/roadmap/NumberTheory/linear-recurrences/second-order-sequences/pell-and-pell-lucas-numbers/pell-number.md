@@ -5,4 +5,5 @@ $P_1 = 1$ and $P_{n+2} = 2P_{n+1} + P_n$ for every $n$. They begin $0, 1, 2, 5, 
 
 ## Sources
 
-- * Tian-Xiao He, *Impulse Response Sequences and Construction of Number Sequence Identities*, <https://cs.uwaterloo.ca/journals/JIS/VOL16/He/he13.tex>. * Tian-Xiao He and Peter J.-S. Shiue, *An Approach to the Construction of Linear Divisibility Sequences of Higher Orders*, <https://cs.uwaterloo.ca/journals/JIS/VOL20/He/he59.tex>.
+- Tian-Xiao He, *Impulse Response Sequences and Construction of Number Sequence Identities*, Journal of Integer Sequences 16 (2013), Article 13.8.2, <https://cs.uwaterloo.ca/journals/JIS/VOL16/He/he13.html>.
+- Tian-Xiao He and Peter J.-S. Shiue, *An Approach to the Construction of Linear Divisibility Sequences of Higher Orders*, Journal of Integer Sequences 20 (2017), Article 17.9.3, <https://cs.uwaterloo.ca/journals/JIS/VOL20/He/he59.html>.

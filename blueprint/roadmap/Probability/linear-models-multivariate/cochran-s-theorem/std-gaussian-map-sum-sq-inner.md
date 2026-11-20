@@ -1,5 +1,3 @@
 # Squared orthonormal coordinates of a standard Gaussian are chi-square
 
-Coordinates of the standard Gaussian law in an orthonormal basis `b`: the sum of the squared
-coordinates `⟪b i, x⟫` over a nonempty set `s` of indices is chi-square with `|s|` degrees of
-freedom.
+Let $E$ be a finite-dimensional real inner product space with its Borel σ-algebra and the standard Gaussian law, $(b_i)_{i \in \iota}$ an orthonormal basis and $s \subseteq \iota$ nonempty. Then $\sum_{i \in s} \langle b_i, Z\rangle^2$ has the chi-square law with $|s|$ degrees of freedom.

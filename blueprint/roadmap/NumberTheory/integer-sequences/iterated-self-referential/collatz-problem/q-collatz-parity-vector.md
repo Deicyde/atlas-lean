@@ -1,4 +1,4 @@
-# The parity vector of the q-analog 3x+1 map
+# The parity vector of the $q$-analog $3x+1$ map
 
 For power series
 $A, B, x \in \mathbb{F}_2[[q]]$, the parity vector of $x$ is the $2$-adic integer

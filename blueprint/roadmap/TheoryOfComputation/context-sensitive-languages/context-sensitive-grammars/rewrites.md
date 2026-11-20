@@ -1,6 +1,6 @@
 # One rewriting step of a grammar
 
-One rewriting step: apply a production in a sentential form
-context. This is the generic `Cslib.Decidability.Rewriting.Step` at the
-grammar's rules, so grammar derivations reuse the string-rewriting API
-instead of a second, incompatible copy of it.
+Let $G$ be an unrestricted grammar with terminal set $T$ and nonterminal set $N$, and let $u$ and $v$ be
+finite words over the disjoint union of $T$ and $N$. Then $v$ is obtained from $u$ by one rewriting step
+of $G$ if there are a production $\ell \to r$ of $G$ and words $x, y$ such that $u = x\ell y$ and
+$v = xry$.

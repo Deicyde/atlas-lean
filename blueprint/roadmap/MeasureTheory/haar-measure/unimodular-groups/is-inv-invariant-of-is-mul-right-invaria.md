@@ -1,3 +1,4 @@
 # Right-invariant Haar measures are inversion-invariant
 
-A right-invariant Haar measure is invariant under inversion.
+Let $G$ be a locally compact, second-countable topological group with its Borel $\sigma$-algebra.
+A Haar measure on $G$ that is also right-invariant is invariant under inversion.

@@ -1,4 +1,5 @@
-# Walsh character agrees with the canonical cube character up to sign
+# Walsh characters for the two sign conventions agree up to sign
 
-On `Fin n`, the Walsh character is `BooleanCube.cubeChi` up to the sign `(-1)^{|S|}`:
-`BooleanCube.cubeVal` sends `true` to `1`, while `khc_sign` sends it to `-1`.
+Let $n$ be a natural number, $S \subseteq \{1, \dots, n\}$ and $x \in \{0, 1\}^n$. Then
+
+$$\prod_{i \in S} (-1)^{x_i} = (-1)^{\lvert S\rvert} \prod_{i \in S} (2x_i - 1).$$

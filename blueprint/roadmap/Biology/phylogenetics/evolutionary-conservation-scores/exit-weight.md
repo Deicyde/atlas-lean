@@ -1,3 +1,3 @@
 # Time-weighted exchange rate into a state
 
-The time-weighted exchange rate into `b`, `e b = ∑_{a ≠ b} τ a R a b`.
+For a real function $\tau$, a real matrix $R$ and a state $b$, put $e_b = \sum_{a \ne b} \tau_a R_{ab}$.

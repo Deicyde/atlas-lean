@@ -9,7 +9,7 @@
 - [The language $\{0^n 1^n\}$](zero-one.md)
 - [The target language of the regularity reduction](reg-lang.md)
 - [Unique decomposition at the separator](eq-of-map-tl-append-sep.md)
-- [`{0ⁿ1ⁿ}` is not regular](not-is-regular-zero-one.md)
+- [The language $\{0^n 1^n\}$ is not regular](not-is-regular-zero-one.md)
 - [Words over $T$ in the reduction alphabet](letter-words.md)
 - [Bit words](bit-words.md)
 - [One-letter words over $T$](letter-set.md)
@@ -28,7 +28,7 @@
 - [Shifted right-hand sides denote images of words of $g$](mem-eval-form-shift.md)
 - [Every production of the regularity grammar is sound for its intended languages](is-valuation-reg-val.md)
 
-## Completeness: the words of `regLang L(g)` are generated
+## Completeness: the regularity grammar generates the target language
 
 - [Productions of the regularity grammar preserve generated languages](mem-language-from-of-mem-rules.md)
 - [Shifted right-hand sides generate the images of words](mem-eval-form-shift-of.md)

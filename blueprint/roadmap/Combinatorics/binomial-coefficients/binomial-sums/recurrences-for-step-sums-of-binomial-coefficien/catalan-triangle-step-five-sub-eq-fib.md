@@ -13,4 +13,4 @@ sums over all $j \ge 0$.
 
 ## Sources
 
-- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 13.
+- Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, J. Integer Seq. 27 (2024), Article 24.3.4, Proposition 13, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Brietzke/bri3.html>.

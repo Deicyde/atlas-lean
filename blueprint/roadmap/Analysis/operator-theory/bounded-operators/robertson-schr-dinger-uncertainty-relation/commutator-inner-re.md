@@ -1,4 +1,3 @@
 # Commutator expectation of self-adjoint operators is purely imaginary
 
-The commutator expectation of two self-adjoint operators is purely
-imaginary: its real part vanishes.
+Let $E$ be a complex Hilbert space and $A, B$ bounded self-adjoint operators on $E$. For every unit vector $x \in E$, $\operatorname{Re} \langle (AB - BA) x, x \rangle = 0$.

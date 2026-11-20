@@ -10,5 +10,8 @@ $m$; then for $i = m - 1, \dots, 0$ in turn, if $s_i = i + 1$, every entry $G_j$
 $j < m - 1 - i$ that still equals $m$ is set to $m - 1 - i$; finally, for
 $i = 0, 1, \dots, m - 2$ in turn, the entry $G_{m - 1 - s_i}$ is set to $m - 1 - i$.
 
-The event cost includes table slots, copies, fill iterations and canonical Z events;
-it does not count machine instructions or unbounded-integer bit operations.
+The cost charged is $\sigma$ for creating $B$; when $m \ge 1$ it adds one unit per update of $B$,
+$m$ for reversing the pattern, the cost of the Z algorithm on the reversed pattern (one unit per
+outer step and per letter comparison), $m$ for reversing its output, $m$ for initialising $G$, one
+unit per step $i$ of the first loop on $G$ and per position $j$ visited while filling, and one unit
+per update of the second loop. When $m = 0$ the cost is $\sigma$ and $G$ is empty.

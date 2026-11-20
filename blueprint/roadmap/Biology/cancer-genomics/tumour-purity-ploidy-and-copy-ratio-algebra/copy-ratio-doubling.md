@@ -1,4 +1,7 @@
-# Genome doubling
+# Genome doubling leaves copy ratios unchanged
 
-Doubling every copy number and the ploidy and replacing the purity by
-`α / (2 - α)` reproduces every copy ratio (the `m = 2` case of `copyRatio_scale`).
+For $0 \le \alpha \le 1$ and all real $\tau, q$,
+
+$$R\Bigl(\frac{\alpha}{2 - \alpha}, 2\tau, 2q\Bigr) = R(\alpha, \tau, q),$$
+
+where $R$ is the [copy ratio](copy-ratio.md).

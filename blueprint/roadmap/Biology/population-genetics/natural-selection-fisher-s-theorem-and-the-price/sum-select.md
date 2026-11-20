@@ -1,4 +1,3 @@
 # Haploid selection preserves total frequency one
 
-Haploid selection keeps the frequencies summing to `1` whenever `w̄ ≠ 0` (for `w̄ = 0`
-the division by zero would give `0`).
+For a finite set $\iota$ of types and real vectors $p$ and $w$ on $\iota$ with $\bar w(p) \ne 0$, the frequencies after [one generation of haploid selection](select.md) sum to $1$.

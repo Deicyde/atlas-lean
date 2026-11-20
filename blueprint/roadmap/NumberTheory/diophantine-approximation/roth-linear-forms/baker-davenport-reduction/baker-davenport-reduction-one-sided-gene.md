@@ -6,3 +6,7 @@ integer. Let $N$ and $q$ be natural numbers with $q > 0$, and let $\gamma$, $\mu
 numbers with $A > 0$ and $B > 1$. Put $\xi = \lVert \mu q \rVert - N \lVert \gamma q \rVert$ and
 suppose that $\xi > 0$. Then there are no natural numbers $u$, $v$, $w$ with $u \le N$,
 $w \ge \log(Aq/\xi) / \log B$ and $0 < u\gamma - v + \mu < A B^{-w}$.
+
+## Sources
+
+- Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers", Journal of Integer Sequences 23 (2020), Article 20.8.8, Lemma 6: https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex

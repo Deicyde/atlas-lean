@@ -7,4 +7,4 @@ the lower limit taken over natural numbers $n$, has Hausdorff dimension $0$ in $
 
 ## Sources
 
--. Problem `einsiedler_katok_lindenstrauss` of the lean-eval benchmark.
+- M. Einsiedler, A. Katok and E. Lindenstrauss, *Invariant measures and the set of exceptions to Littlewood's conjecture*, Ann. of Math. 164 (2006), 513–560. Problem `einsiedler_katok_lindenstrauss` of the lean-eval benchmark.

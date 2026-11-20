@@ -1,3 +1,4 @@
 # Second moment of the exponential law
 
-The second moment of the exponential law of rate `r > 0` is `2 / r ^ 2`.
+For $r > 0$, the exponential law $\operatorname{Exp}(r)$ satisfies
+$\int x^2 \, d\operatorname{Exp}(r)(x) = 2/r^2$.

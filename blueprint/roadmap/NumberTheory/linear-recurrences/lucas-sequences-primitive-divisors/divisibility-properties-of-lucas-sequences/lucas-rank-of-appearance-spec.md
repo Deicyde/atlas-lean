@@ -9,4 +9,4 @@ $\rho(m)$ the least such index.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of `ρ` as a least index).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of $\rho$ as a least index).

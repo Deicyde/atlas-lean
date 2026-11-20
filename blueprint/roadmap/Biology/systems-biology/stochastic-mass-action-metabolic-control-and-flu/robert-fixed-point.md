@@ -1,5 +1,5 @@
 # Robert's theorem
 
-**Robert's theorem** (Robert 1980): if the interaction graph of `f : {0,1}ⁿ → {0,1}ⁿ`
-is acyclic, `f` has a unique fixed point `p`, and every synchronous trajectory reaches it
-within `n` steps.
+Let $n \in \mathbb{N}$ and $f \colon \{0, 1\}^n \to \{0, 1\}^n$. If the [interaction graph](influences.md) of $f$ is [acyclic](is-acyclic.md), then $f$
+has a unique fixed point $p$, and $f^n(x) = p$ for every $x \in \{0, 1\}^n$: every synchronous trajectory
+reaches $p$ within $n$ steps (Robert 1980).

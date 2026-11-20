@@ -1,3 +1,4 @@
 # Uniqueness of capability lookups
 
-Two lookups of the same linear key cannot give different capabilities.
+Let $\Delta$ be an ownership context, $e$ an endpoint and $c$, $d$ capabilities. If $\Delta(e) = c$
+and $\Delta(e) = d$, then $c = d$.

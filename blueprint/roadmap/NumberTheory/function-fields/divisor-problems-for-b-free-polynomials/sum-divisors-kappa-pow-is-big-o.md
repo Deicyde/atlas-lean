@@ -6,8 +6,10 @@ with $\kappa(P) \ge 2$ for every monic irreducible $P$. For monic $r = \prod_P P
 $r^\kappa = \prod_P P^{\nu_P \kappa(P)}$, and let $\kappa_{\min}$ be the minimum of $\kappa(P)$
 over the monic irreducible $P$. Then for every $\varepsilon > 0$, as $N \to \infty$,
 
-$$\sum_{r \text{ monic},\ \deg r^\kappa \le N} \ \sum_{f \mid r^\kappa} \ \sum_{\ell \mid f} 1 =
-O\left(q^{(1/\kappa_{\min} + \varepsilon) N}\right),$$
+$$
+\sum_{r \text{ monic},\ \deg r^\kappa \le N} \ \sum_{f \mid r^\kappa} \ \sum_{\ell \mid f} 1 =
+O\left(q^{(1/\kappa_{\min} + \varepsilon) N}\right),
+$$
 
 where $f$ runs over the monic divisors of $r^\kappa$ and $\ell$ over the monic divisors of $f$.
 

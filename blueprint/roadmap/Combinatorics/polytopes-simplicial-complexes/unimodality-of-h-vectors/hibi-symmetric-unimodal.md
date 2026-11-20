@@ -1,6 +1,6 @@
 # Hibi's conjecture on symmetric $h^*$-vectors
 
-**Hibi's conjecture on symmetric $h^*$-vectors.** For every natural number $d$, every finite
+For every natural number $d$, every finite
 set $S \subseteq \mathbb{Z}^d$ whose convex hull $P \subseteq \mathbb{R}^d$ has nonempty interior,
 and every polynomial $h = \sum_i h^*_i z^i \in \mathbb{Z}[z]$ that is an $h^*$-polynomial of $P$,
 that is,

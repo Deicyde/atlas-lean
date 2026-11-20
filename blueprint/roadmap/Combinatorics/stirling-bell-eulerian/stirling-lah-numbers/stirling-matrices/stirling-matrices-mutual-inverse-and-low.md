@@ -8,4 +8,4 @@ kind. Then $AB = BA = I$, and $A_{ij} = B_{ij} = 0$ whenever $i < j$.
 
 ## Sources
 
-- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity", Journal of Integer Sequences 28 (2025), Article 25.4.1, Proposition (equation stirlinginvs), lines 120–126, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex (quoting L. Comtet, Advanced Combinatorics, Eqn. 6f, p. 144).
+- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity", Journal of Integer Sequences 28 (2025), Article 25.4.1, Proposition 1, equation (2), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.pdf>, quoting L. Comtet, *Advanced Combinatorics*, Eqn. 6f, p. 144.

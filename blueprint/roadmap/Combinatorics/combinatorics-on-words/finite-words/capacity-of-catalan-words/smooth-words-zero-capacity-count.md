@@ -6,8 +6,8 @@ so that $r(n, i; 0)$ and $r(n; 0)$ count the smooth words of capacity $0$. Then 
 and $r(n, 1; 0) = 2^{n-2}$ for every $n \ge 2$; moreover $r(1; 0) = 1$, $r(2; 0) = 2$ and
 $r(n; 0) = (n + 2) \cdot 2^{n-3}$ for every $n \ge 3$ (Mansour and Shattuck's Theorem 6, totals).
 
-The paper states the formula for $r(n; 0)$ for $n \ge 2$; at $n = 2$ it reads $4 \cdot 2^{-1} = 2$,
-so that case is stated separately.
+The paper states the formula for $r(n; 0)$ for $n \ge 2$; at $n = 2$ the exponent $n - 3$ is
+negative and the formula reads $4 \cdot 2^{-1} = 2$, which is why that case is listed on its own.
 
 ## Sources
 

@@ -1,3 +1,4 @@
 # Stacks of the payload normalizer machine
 
-Input, reverse buffer, and output.
+The payload normalizer machine has three stacks: the input, a buffer holding the input in reverse, and the
+output.

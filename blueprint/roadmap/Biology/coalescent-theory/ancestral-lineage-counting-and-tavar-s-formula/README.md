@@ -18,7 +18,7 @@
 - [Right eigenvector equation for the block-counting generator](block-counting-generator-mul-right-eigen.md)
 - [Left eigenvector equation for the block-counting generator](block-counting-left-eigen-mul-generator.md)
 - [Left and right eigenvector matrices are mutually inverse](block-counting-left-eigen-mul-right-eige.md)
-- [Spectral decomposition of the block-counting transition matrix](exp-smul-block-counting-generator.md)
+- [Spectral decomposition of the exponential of the block-counting generator](exp-smul-block-counting-generator.md)
 - [Tavaré's formula](exp-block-counting-generator-apply.md)
 - [Truncation consistency](exp-smul-block-counting-generator-cast-l.md)
 - [The block-counting process never gains lineages](exp-smul-block-counting-generator-of-lt.md)

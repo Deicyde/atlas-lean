@@ -8,4 +8,4 @@ $A_q$ with $q \in S$.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 3.
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 3.

@@ -1,4 +1,3 @@
 # Total weight of a sequence pair under a pair HMM
 
-The total weight `P(xs, ys)` of a pair HMM: the total weight of all state paths that emit
-`xs` and `ys` (`likelihood_eq_sum`), by the first-column recursion.
+The total weight $P(x, y)$ of a pair HMM is the [total weight](sum-dp.md) of $x$ and $y$ from the begin state for the [associated automaton](to-automaton.md).

@@ -10,4 +10,4 @@ estimator $W$ is fixed and does not depend on $\theta$.
 
 ## Sources
 
-- Casella–Berger Definition 7.3.2 is the case $\tau(\theta) = \theta$ on real parameters; the general target follows section 7.3.2. Blueprint `af_95118d196fd6478105a6eb43`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002: Definition 7.3.2 is the case $\tau(\theta) = \theta$ on real parameters; the general target follows section 7.3.2.

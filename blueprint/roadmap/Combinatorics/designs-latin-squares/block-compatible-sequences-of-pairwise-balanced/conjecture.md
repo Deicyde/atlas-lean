@@ -7,4 +7,4 @@ block-compatible for $n$. Here $\log$ is the natural logarithm.
 
 ## Sources
 
-- OWR-14299518-002, question (2).
+- T. F. Bloom, Erdős Problem #732, https://www.erdosproblems.com/732 (second question).

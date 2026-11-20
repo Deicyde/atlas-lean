@@ -13,4 +13,4 @@ every other stack empty and its internal state equal to its initial state.
 
 ## Sources
 
-- inlined from FormalConjectures (absent from Mathlib).
+- Definition adapted from the Formal Conjectures project, https://github.com/google-deepmind/formal-conjectures.

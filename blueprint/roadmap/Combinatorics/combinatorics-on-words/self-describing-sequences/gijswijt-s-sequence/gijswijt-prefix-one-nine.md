@@ -5,4 +5,4 @@ are $1, 1, 2, 1, 1, 2, 2, 2, 3$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (initial terms of `A`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (initial terms of $A$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

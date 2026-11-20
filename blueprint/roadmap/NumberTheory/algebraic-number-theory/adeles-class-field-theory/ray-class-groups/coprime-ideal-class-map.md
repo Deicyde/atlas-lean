@@ -9,4 +9,4 @@ map.
 
 ## Sources
 
-- ATLAS `exactSeq_map4`, before the quotient lift.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

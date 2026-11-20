@@ -7,4 +7,4 @@ $0$).
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Section 1 (definition of `φ_k(n)`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Section 1 (definition of $\varphi_k(n)$).

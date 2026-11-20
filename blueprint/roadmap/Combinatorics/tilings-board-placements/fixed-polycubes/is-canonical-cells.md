@@ -6,4 +6,4 @@ cell $x \in S$ has $x_k = 0$; that is, the minimum of each coordinate over $S$ i
 
 ## Sources
 
-- Luther–Mertens, JIS 20 (2017), Article 17.9.5, lines 115–117: fixed polycubes are identified up to translation. Each class has a unique representative with minima at zero. Only translations are quotiented, so rotations and reflections stay distinct orientations.
+- Sebastian Luther and Stephan Mertens, *The Perimeter of Proper Polycubes*, Journal of Integer Sequences 20 (2017), Article 17.9.5, Section 1: fixed polycubes are identified up to translation, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Mertens/mert4.pdf>. Each class has a unique representative whose coordinate minima are zero; only translations are quotiented out, and rotations and reflections are not generally identified.

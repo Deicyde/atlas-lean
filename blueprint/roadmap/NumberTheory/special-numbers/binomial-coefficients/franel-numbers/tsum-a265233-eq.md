@@ -8,4 +8,4 @@ $$\sum_{n \ge 0} a_n x^n = \frac{{}_2F_1\bigl(\tfrac13, \tfrac23; 1; 27x(1 - 4x)
 
 ## Sources
 
-- Juntao Jin, "An Explicit Formula and a Recurrence for OEIS A265233", Corollary 2.
+- Juntao Jin, *An Explicit Formula and a Recurrence for OEIS A265233*, Journal of Integer Sequences 29 (2026), Article 26.5.3, Corollary 2(a).

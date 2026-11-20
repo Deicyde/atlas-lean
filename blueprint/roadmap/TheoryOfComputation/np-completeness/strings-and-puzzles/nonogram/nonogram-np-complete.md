@@ -5,4 +5,4 @@ problem in NP reduces to NONOGRAM by a polynomial-time many-one reduction.
 
 ## Sources
 
-- N. Ueda and T. Nagao, "NP-completeness results for nonogram via parsimonious reductions" (1996).
+- Nobuhisa Ueda and Tadaaki Nagao, "NP-completeness results for nonogram via parsimonious reductions" (1996).

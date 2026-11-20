@@ -1,3 +1,3 @@
 # Intersection of two increasing events is increasing
 
-The intersection of two increasing events is increasing (`IsUpperSet.inter`).
+Let $E$ be a set. If $A, B \subseteq \{0,1\}^E$ are increasing events, then $A \cap B$ is increasing.

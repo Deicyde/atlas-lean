@@ -1,3 +1,3 @@
 # Law of each proportion in Sethuraman's space
 
-Each proportion of the canonical space has law `Beta(1, α)`.
+For $\alpha > 0$, a probability measure $H$ and every $k$, the $k$-th proportion coordinate of [Sethuraman's canonical space](sethuraman-measure.md) has law $\mathrm{Beta}(1, \alpha)$.

@@ -8,4 +8,4 @@ exactly four terms: $B(4)$ can be computed and $B(5)$ cannot.
 
 ## Sources
 
-- Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, proof of Theorem 1 (`B_3(4) = 6`).
+- Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, proof of Theorem 1 ($B_3(4) = 6$).

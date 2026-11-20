@@ -1,6 +1,6 @@
 # Landen connection formula
 
-**Landen connection formula** (Okuda–Ueno). Let $n \ge 0$ and let $k = (k_1, \dots, k_r)$ be
+This identity is due to Okuda and Ueno. Let $n \ge 0$ and let $k = (k_1, \dots, k_r)$ be
 an index of weight $n$, that is, a finite sequence of positive integers with sum $n$. Then the
 multiple polylogarithms satisfy the identity
 

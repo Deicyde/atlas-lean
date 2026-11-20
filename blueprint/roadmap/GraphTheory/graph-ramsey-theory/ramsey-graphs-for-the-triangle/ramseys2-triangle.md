@@ -6,4 +6,4 @@ triangle: three distinct pairwise adjacent vertices whose three edges all have t
 
 ## Sources
 
-- AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: `G` with `2` colors arrows `K₃`, i.e. every 2-coloring of the edges of `G` contains a monochromatic triangle.
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 7 *Local trees of triangles*, Problem 1.14 (Vojtěch Rödl), http://www.aimpl.org/graphramsey/1/: $G$ with $2$ colors arrows $K_3$, i.e. every 2-coloring of the edges of $G$ contains a monochromatic triangle.

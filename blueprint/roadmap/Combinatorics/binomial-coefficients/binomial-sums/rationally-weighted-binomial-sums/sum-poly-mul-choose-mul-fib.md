@@ -18,4 +18,4 @@ The source's hypotheses $N, t > 0$ and $t \le N/2$ are not needed and are droppe
 
 ## Sources
 
-- Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.7.
+- Andreea M. Stănică, Gabriela N. Stănică and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, Fibonacci Quart. 62 (2024), no. 1, 45–56, Corollary 2.7.

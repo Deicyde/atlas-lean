@@ -8,7 +8,9 @@ $\Pi_j = \prod_P (1 - 1/|P|)(1 + 1/(|P|(1 - \rho_j^{-\deg P})))$, the product ov
 irreducible $P$ with $|P| = q^{\deg P}$, taken to be $1$ when the family is not multipliable.
 The $h$-full weighted mean of $X$ is the complex number
 
-$$\frac{q^{n/h}/h}{|N_h \cap M_n|} \sum_{j=0}^{h-1} \xi^{jn} \, \Pi_j \, X_j.$$
+$$
+\frac{q^{n/h}/h}{|N_h \cap M_n|} \sum_{j=0}^{h-1} \xi^{jn} \, \Pi_j \, X_j.
+$$
 
 Here $q^{n/h}$ is a real power with real exponent $n/h$, and division by zero (including
 $0^{-1}$) gives $0$.

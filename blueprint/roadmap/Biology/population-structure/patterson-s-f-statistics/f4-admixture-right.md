@@ -1,4 +1,5 @@
 # f4 of an admixed population scales with the mixture proportion
 
-If `X` is an `α : 1 - α` mixture of `Y` and `C`, then `f4 A O X C = α * f4 A O Y C`
-(bilinearity of `f4`, together with `f4 A O C C = 0`).
+In a [drift model](drift-model.md) with lineage weights $w$, let $A, O, X, Y, C$ be populations and $\alpha \in \mathbb{R}$ with $w(X, e) = \alpha\, w(Y, e) + (1 - \alpha)\, w(C, e)$ for every edge $e$. Then, for the [f4 statistic](f4.md) of the [population frequencies](freq.md),
+
+$$f_4(A, O; X, C) = \alpha\, f_4(A, O; Y, C).$$

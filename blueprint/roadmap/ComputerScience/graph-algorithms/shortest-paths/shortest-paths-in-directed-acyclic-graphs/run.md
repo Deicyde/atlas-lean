@@ -12,5 +12,6 @@ its source together with the final estimates and predecessors. Its cost counts o
 per vertex of $\sigma$, one edge relaxation per occurrence relaxed, and one distance update per
 estimate set.
 
-The original edge occurrences are retained, so every parallel occurrence is checked. The proof
-that $\sigma$ is a topological order is not used by the computation.
+The original edge occurrences are kept, so every parallel occurrence is relaxed. The computation
+itself does not use that $\sigma$ is a topological order; that property matters only for its
+correctness.

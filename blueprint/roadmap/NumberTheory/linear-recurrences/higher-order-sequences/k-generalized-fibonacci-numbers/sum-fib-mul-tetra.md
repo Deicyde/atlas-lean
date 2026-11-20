@@ -11,4 +11,4 @@ where for $n = 0$ the term $Q_{n-1}$ is $Q_0 = 0$.
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollaries 9 and 16.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollaries 9 and 16.

@@ -13,7 +13,7 @@ $$\psi(x, z) - \sum_{j=0}^{N} \frac{(-1)^j f(x, j)}{z^{j+1}} = O\left(\frac{1}{z
 
 as $|z| \to \infty$ with $z \in S_\varepsilon$.
 
-The hypothesis $x \neq 0$ is not needed for the proof; it is kept to match the source.
+The hypothesis $x \neq 0$, which the source makes, is not needed: the expansion also holds for $x = 0$.
 
 ## Sources
 

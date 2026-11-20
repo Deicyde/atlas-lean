@@ -10,6 +10,6 @@ label $\mathsf{walk}(p, f)$ with internal variable $v$, on the configuration sta
 stack $t$, output $o$, name stack the name bits of $x$, walked-occurrence stack $D$, other walk
 stack $e$ and counts $c$ and $n$. Then for some Boolean $v'$ the machine reaches, in at most
 $6\,|D| + 1$ steps, label $\mathsf{back}(p)$ with internal variable $v'$ on the configuration
-stacks with token stack $t$, output stack the reverse of $\mathrm{walkBits}(l, f, ds)$ followed
+stacks with token stack $t$, output stack the reverse of the [walk bits](../part-05/walk-bits.md) $w(l, f, ds)$ followed
 by $o$, name stack the name bits of $x$, empty walked-occurrence stack, other walk stack the
 reverse of $D$ followed by $e$, and counts $c$ and $n$.

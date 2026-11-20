@@ -1,4 +1,7 @@
 # Stationary standardized linkage disequilibrium $\sigma_d^2$
 
-The stationary standardized disequilibrium
-`σ_d² = (10 + ρ + 16ν) / (22 + 13ρ + ρ² + 128ν + 24ρν + 128ν²)`.
+For real numbers $\rho$ and $\nu$, let
+
+$$\sigma_d^2(\rho, \nu) = \frac{10 + \rho + 16\nu}{22 + 13\rho + \rho^2 + 128\nu + 24\rho\nu + 128\nu^2},$$
+
+with the convention that division by $0$ gives $0$.

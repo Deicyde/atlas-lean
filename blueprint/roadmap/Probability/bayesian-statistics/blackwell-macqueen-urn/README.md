@@ -15,3 +15,9 @@
 - [Measurability of the tie partition event](measurable-set-tie-partition-eq.md)
 - [The ties of the Blackwell–MacQueen urn follow the Chinese restaurant process](blackwell-mac-queen-tie-partition.md)
 - [Moments of the Dirichlet process for at most two draws](lintegral-dirichlet-process-prod-of-le-t.md)
+
+## Related topics
+
+- [Dirichlet process](../dirichlet-process/README.md): the random measure whose draws the urn describes.
+- [Ewens sampling formula and the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/README.md): the partition law of the ties, studied in its own right.
+- [Infinite mixture models](../infinite-mixture-models/README.md): the same partition law as the limit of the closed-form partition probability of finite mixtures.

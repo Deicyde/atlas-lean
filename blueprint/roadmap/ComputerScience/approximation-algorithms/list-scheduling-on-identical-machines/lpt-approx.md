@@ -7,4 +7,4 @@ Then $3mC \le (4m - 1)M$, that is, $C \le (4/3 - 1/(3m))M$.
 
 ## Sources
 
-- Graham, "Bounds on multiprocessing timing anomalies", SIAM J. Appl. Math. 17 (1969).
+- R. L. Graham, "Bounds on multiprocessing timing anomalies", *SIAM J. Appl. Math.* 17(2) (1969), 416–429.

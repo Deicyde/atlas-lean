@@ -1,5 +1,7 @@
 # Byzantine generals problem
 
+A commander sends an order to the other generals, some of whom, possibly including the commander, are traitors; the loyal generals must agree (IC1), on the commander's order if it is loyal (IC2). The model on these pages is synchronous (lock-step rounds), with Byzantine failures (a traitor may send anything to anyone, differently to each recipient), on a complete network of reliable links on which a receiver knows the sender of every message, without signatures ("oral messages"). With at least three generals and two orders the problem is solvable with at most $m$ traitors exactly when there are more than $3m$ generals.
+
 - [Oral-message protocol](oral-protocol.md)
 - [Local views determine states](states-eq-of-inbox-eq.md)
 - [Initial state of a general](init-state.md)
@@ -31,10 +33,12 @@
 - [Agreement under oral messages (IC1)](om-agree.md)
 - [Oral messages achieve interactive consistency](om-interactive-consistency.md)
 - [The oral messages algorithm solves the Byzantine generals problem](byzantine-generals.md)
-- [The oral messages algorithm as an oral-message protocol](to-protocol.md)
-- [Traitor relays matching the protocol messages](adv-of-messages.md)
-- [Relay of a traitor along an extended path](adv-of-messages-append-singleton.md)
-- [The protocol runs the oral messages algorithm](decision-to-protocol-of-le.md)
-- [The protocol runs the oral messages algorithm in the expected number of rounds](decision-to-protocol.md)
-- [Oral messages, run as a protocol, solve the Byzantine generals problem](solves-to-protocol.md)
-- [Solvability of the Byzantine generals problem with oral messages](exists-solves-iff-three-mul-lt-card.md)
+
+## Related topics
+
+- [Byzantine agreement](../byzantine-agreement/README.md): the version in which every process has an input (Fischer, Lynch and Merritt), reduced here to the commander version.
+- [Paxos consensus](../paxos-consensus/README.md): consensus without synchrony but with only crash failures; Lamport's non-Byzantine counterpart.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 1 (the problem, IC1 and IC2, p. 384), Section 2 (impossibility with oral messages, pp. 384–386, footnote 1 on two generals), Section 3 (assumptions A1–A3, Algorithm OM(m), Lemma 1 and Theorem 1, pp. 387–390).

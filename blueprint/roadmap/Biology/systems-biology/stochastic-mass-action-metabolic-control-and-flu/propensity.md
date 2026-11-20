@@ -1,6 +1,9 @@
 # Stochastic mass-action propensity
 
-The stochastic mass-action propensity of reaction `r` in state `x` (molecule counts):
-`k r * ∏_s x_s (x_s - 1) ⋯ (x_s - src_s + 1)`, the falling factorial
-`Nat.descFactorial x_s src_s` (it vanishes when `x_s < src_s`). Anderson, Craciun & Kurtz
-(2010), §2.
+Let $N$ be a [chemical reaction network](../complex-balancing-and-the-deficiency-zero-theore/reaction-network.md) with finite species set $S$ and finite reaction set $\rho$, and let $k \in \mathbb{R}^\rho$ be rate constants. The stochastic mass-action propensity of
+reaction $r$ in a state $x \in \mathbb{N}^S$ (molecule counts) is
+
+$$\lambda_r(x) = k_r \prod_{s \in S} x_s (x_s - 1) \cdots (x_s - \mathrm{src}(r)_s + 1),$$
+
+a product of falling factorials, which vanishes when $x_s < \mathrm{src}(r)_s$ for some $s$ (Anderson,
+Craciun & Kurtz, arXiv:0803.3042v4, §3.1, eq. (3.4)).

@@ -1,3 +1,3 @@
 # Symmetry of split compatibility
 
-Compatibility is symmetric.
+If $A$ and $B$ are [compatible](compatible.md), then $B$ and $A$ are compatible.

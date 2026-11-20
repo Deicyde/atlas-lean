@@ -8,4 +8,5 @@ This is the second recursion rule applied to $d_4 = [j, abb]$ with $j = [abb, ab
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

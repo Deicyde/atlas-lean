@@ -11,4 +11,4 @@ This is Lee's Theorem 4 with the denominator $n - k$ cleared.
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 4.
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Journal of Integer Sequences 29 (2026), Article 26.2.7, Theorem 4.

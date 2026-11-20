@@ -1,6 +1,6 @@
 # Conflict serializability
 
-## Databases
+## Operations
 
 - [Read or write access](access.md)
 - [Operation of a schedule](op.md)
@@ -10,7 +10,7 @@
 - [Conflicting operations](conflicts.md)
 - [Operations whose relative order matters](order-matters.md)
 
-## Databases
+## Schedules and the precedence graph
 
 - [Conflict equivalence](conflict-equiv.md)
 - [One transaction before another in a schedule](txn-before.md)

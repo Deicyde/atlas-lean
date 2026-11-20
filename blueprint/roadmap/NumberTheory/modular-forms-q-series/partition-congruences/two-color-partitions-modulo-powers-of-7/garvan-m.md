@@ -10,9 +10,9 @@ $$m_{i,j} = 7m_{i-3,j-1} + 35m_{i-2,j-1} + 49m_{i-1,j-1} + m_{i-7,j-2} + 7m_{i-6
 
 Entries with $i = 0$ or $j = 0$ are set to $0$.
 
-Lemma 1 of the source identifies these numbers as the coefficients of Garvan's modular
-expansion; that identity is a separate statement and is not part of this definition.
+By Lemma 1 of the source, these numbers are the coefficients in Garvan's expansion
+$H(\xi^{-i}) = \sum_{j \ge 1} m_{i,j} T^{-j}$.
 
 ## Sources
 
-- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
+- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of $7^k$*, INTEGERS 26 (2026), Article A94, Section 1.

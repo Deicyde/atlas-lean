@@ -7,4 +7,4 @@ accepts $x$ exactly when FACILITY LOCATION accepts $f(x)$.
 
 ## Sources
 
-- G. Cornuéjols, G. L. Nemhauser, and L. A. Wolsey, "The uncapacitated facility location problem", in P. B. Mirchandani and R. L. Francis, eds., Discrete Location Theory, Wiley, 1990, 119-171.
+- Gérard Cornuéjols, George L. Nemhauser, and Laurence A. Wolsey, "The uncapacitated facility location problem", in Pitu B. Mirchandani and Richard L. Francis, eds., Discrete Location Theory, Wiley, 1990, 119-171.

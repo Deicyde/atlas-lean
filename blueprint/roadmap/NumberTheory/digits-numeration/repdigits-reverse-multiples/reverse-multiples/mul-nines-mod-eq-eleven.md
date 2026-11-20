@@ -8,4 +8,4 @@ $r$ zeros followed by $11$.
 
 ## Sources
 
-- Mohamed Ayad and Rachid Bouchenna, "Which Integer Divides the Reverse of Any of Its Multiples?", Lemma 4.
+- Mohamed Ayad and Rachid Bouchenna, *Which Integer Divides the Reverse of Any of Its Multiples?*, INTEGERS 25 (2025), Article A37, Lemma 4.

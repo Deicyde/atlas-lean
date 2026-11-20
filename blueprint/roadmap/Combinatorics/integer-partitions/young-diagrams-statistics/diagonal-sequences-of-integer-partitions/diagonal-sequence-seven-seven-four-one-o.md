@@ -6,4 +6,4 @@ $0, 1, \dots, 9$. This is the paper's running example.
 
 ## Sources
 
-- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (example after the definition); characteristic check of `diagonalSequence`.
+- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (example after the definition).

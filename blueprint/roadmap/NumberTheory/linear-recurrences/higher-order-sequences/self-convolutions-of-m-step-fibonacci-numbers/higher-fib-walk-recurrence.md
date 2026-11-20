@@ -8,4 +8,4 @@ every integer $n \ge 0$, $(m+1) w_{n+1} - 2m w_n = (n+m+2) F_{n+m} - (n+m) F_{n+
 
 ## Sources
 
-- Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 1.
+- Jan Sedlák and Antonín Slavík, *Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.7, Theorem 1.

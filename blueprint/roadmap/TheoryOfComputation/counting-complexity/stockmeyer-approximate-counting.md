@@ -18,4 +18,4 @@ queries and the query-length cap are all polynomial in $|x| + n$.
 
 ## Sources
 
-- L. J. Stockmeyer, "The complexity of approximate counting", Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC 1983), 118-126 (journal version in Information and Computation 1985).
+- L. J. Stockmeyer, "The complexity of approximate counting", Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC 1983), 118-126 ; journal version in *SIAM Journal on Computing* 14 (1985), 849–861.

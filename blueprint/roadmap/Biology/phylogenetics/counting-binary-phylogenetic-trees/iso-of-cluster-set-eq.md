@@ -1,4 +1,3 @@
 # Clusters determine an unrooted binary tree
 
-Two trees with the same clusters seen from the leaf `a` are isomorphic: the clusters
-determine the tree.
+If two [unrooted binary phylogenetic trees](unrooted-binary-tree.md) on a finite set $X$ have the same [cluster set](cluster-set.md) seen from a taxon $a$, then they are [isomorphic](iso.md).

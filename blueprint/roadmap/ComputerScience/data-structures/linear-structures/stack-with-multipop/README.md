@@ -17,3 +17,7 @@
 - [Running a POP agrees with the standalone POP](execute-pop-eq-bind-pop.md)
 - [Cost balance for stack operation sequences](execute-balance.md)
 - [Aggregate cost of stack operation sequences](execute-time-le.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md): Tarjan's stack example of the potential method.

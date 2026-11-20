@@ -7,4 +7,4 @@ numbers $a$ and $b$, every finite group $G$ of order $p^a q^b$ is solvable.
 
 ## Sources
 
-- Bielefeld Theorem 7.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Theorem 7, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

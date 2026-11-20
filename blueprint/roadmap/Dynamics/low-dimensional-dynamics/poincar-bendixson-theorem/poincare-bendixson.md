@@ -13,4 +13,11 @@ $F(\beta(0)) \ne 0$, such that $\omega(\gamma)$ equals the range of $\beta$.
 
 ## Sources
 
-- H. Poincaré, *Mémoire sur les courbes définies par une équation différentielle*, Journal de Mathématiques 7 (1881), 8 (1882), 1 (1885), 2 (1886); I. Bendixson, *Sur les courbes définies par des équations différentielles*, Acta Mathematica 24 (1901), 1-88. Listed as §63 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). The Isabelle/HOL/AFP entry by Fabian Immler and Yong Kiam Tan (https://www.isa-afp.org/entries/Poincare_Bendixson.html) uses John Harrison's Jordan curve theorem. Problem `poincare_bendixson` of the lean-eval benchmark.
+- Henri Poincaré, *Mémoire sur les courbes définies par une équation différentielle*, J. Math. Pures Appl. (3) 7
+  (1881), 8 (1882); (4) 1 (1885), 2 (1886).
+- Ivar Bendixson, *Sur les courbes définies par des équations différentielles*, Acta Math. 24 (1901), 1–88,
+  DOI 10.1007/bf02403068.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §63 (Differential equations), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Fabian Immler and Yong Kiam Tan, *The Poincaré–Bendixson theorem*, Archive of Formal Proofs,
+  <https://www.isa-afp.org/entries/Poincare_Bendixson.html> (a proof through John Harrison's Jordan curve theorem).
+- Problem `poincare_bendixson` of the lean-eval benchmark.

@@ -7,12 +7,12 @@ number of compositions of $n$ (ordered sequences of positive integers with sum $
 are all $1$, $2$ or $3$ is $T_{n+1}$.
 
 The result is due to V. E. Hoggatt, Jr., and M. Bicknell,
-"Palindromic compositions," Fibonacci Quarterly 13 (1975), 350–356,
-cited as [V] at source lines 429–430.
+"Palindromic compositions," Fibonacci Quarterly 13 (1975), 350–356;
+Guo quotes it as Theorem 1.
 
 Proof: Split each nonempty composition by its first part, sum the resulting recurrence over its
 length, and use strong induction, following Stanley, Section 1.2, and OEIS A000073.
 
 ## Sources
 
-- Yu-hong Guo, "Some Identities For Palindromic Compositions," Journal of Integer Sequences 21 (2018), Article 18.6.6, Theorem citing [V], lines 118–125, https://cs.uwaterloo.ca/journals/JIS/VOL21/Guo/guo19.tex
+- Yu-hong Guo, "Some Identities For Palindromic Compositions," Journal of Integer Sequences 21 (2018), Article 18.6.6, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Guo/guo19.pdf>.

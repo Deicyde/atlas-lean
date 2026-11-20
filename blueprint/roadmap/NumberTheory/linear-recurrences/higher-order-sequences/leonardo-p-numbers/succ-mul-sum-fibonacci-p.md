@@ -10,4 +10,4 @@ Then $(k+1) \sum_{i=0}^{p} F_p(n+i) = \mathcal{L}_{p,k}(n+2p-1) + k$.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Lemma 12.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Lemma 12.

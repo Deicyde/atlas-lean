@@ -5,7 +5,8 @@ $q$-Bernoulli polynomials $\beta_n^{(r)}(x)$, indexed by natural numbers $r$ and
 at real $x$, are defined by recursion on $r$: $\beta_n^{(0)}(x) = \eta_n(x)$ is Carlitz's
 $q$-polynomial, and
 $\beta_n^{(r+1)}(x) = q^{-x} \bigl(\beta_n^{(r)}(x) + (q - 1) \beta_{n+1}^{(r)}(x)\bigr)$.
-The extended Carlitz $q$-Bernoulli numbers are $\beta_n^{(r)} = \beta_n^{(r)}(0)$.
+The extended Carlitz $q$-Bernoulli numbers are $\beta_n^{(r)} = \beta_n^{(r)}(0)$. Real powers such as
+$q^{-x}$ with $q \le 0$ follow the conventions of [the $q$-analogue of a real number](q-bracket.md).
 
 ## Sources
 

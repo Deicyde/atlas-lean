@@ -18,4 +18,4 @@ $(n+1) c_{n+1} = (2n+1) c_n + 3n c_{n-1}$ (OEIS A002426); both sides agree at $n
 
 ## Sources
 
-- P. Blasiak, G. Dattoli, A. Horzela, K. A. Penson, and K. Zhukovsky, "Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials," Journal of Integer Sequences 11 (2008), Article 08.1.1, Proposition with equation `eq20`, lines 337-343, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.tex>.
+- Paweł Błasiak, Giuseppe Dattoli, Andrzej Horzela, Karol A. Penson and Konstantin Zhukovsky, *Motzkin Numbers, Central Trinomial Coefficients and Hybrid Polynomials*, J. Integer Seq. 11 (2008), Article 08.1.1, Proposition 9 (equation (25)), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Penson/penson131.html>.

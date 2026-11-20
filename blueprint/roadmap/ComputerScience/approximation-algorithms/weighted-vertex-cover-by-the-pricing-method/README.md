@@ -16,3 +16,8 @@
 - [The pricing method returns a vertex cover](pricing-vertex-cover-is-vertex-cover.md)
 - [The pricing method weighs at most twice any cover of the listed edges](pricing-vertex-cover-weight-le.md)
 - [Running time of the pricing method](pricing-vertex-cover-time.md)
+
+## Related topics
+
+- [Primal–dual method for constrained forests](../primal-dual-method-for-constrained-forests/README.md):
+  the primal–dual method applied to the cut covering programs of network design.

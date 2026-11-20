@@ -8,4 +8,4 @@ In both cases the numerator is divisible by $2$ in $\mathbb{Z}_2$, so the divisi
 
 ## Sources
 
-- Kenneth G. Monks, *On q-Analogs of the 3x+1 Dynamical System*, Journal of Integer Sequences 28 (2025), Article 25.6.8, Section 1 (definition of `T` extended to `ℤ₂`).
+- Kenneth G. Monks, *On q-Analogs of the 3x+1 Dynamical System*, Journal of Integer Sequences 28 (2025), Article 25.6.8, Section 1 (definition of $T$ extended to $\mathbb{Z}_2$).

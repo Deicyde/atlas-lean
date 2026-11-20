@@ -1,5 +1,8 @@
 # Layer-cake formula for the first moment
 
-Layer-cake formula for the first moment on `(0, a]`: the integral of `y`
-over `(0, a]` equals the integral of the right tail minus the endpoint
-correction.
+Let $\mu$ be a probability measure on $\mathbb{R}$ with right tail $R(t) = \mu((t, \infty))$, and
+let $a \ge 0$. Then
+
+$$\int_{(0, a]} y \, d\mu(y) = \int_0^a \big(R(t) - R(a)\big)\, dt :$$
+
+the integral of the right tail minus the endpoint correction.

@@ -11,4 +11,4 @@ decomposition and combines the resulting radical representation with the adjoint
 
 ## Sources
 
-- I. D. Ado, Bull. Soc. Phys.-Math. Kazan 7 (1935) and 1947 char-zero theorem; Bourbaki, Lie Groups and Lie Algebras; Lean states char-zero finite-dimensional version while modern theorem extends to arbitrary fields.
+- I. D. Ado, Bull. Soc. Phys.-Math. Kazan 7 (1935) and 1947 char-zero theorem; Bourbaki, Lie Groups and Lie Algebras; the statement here is the finite-dimensional version in characteristic zero, while the modern theorem holds over arbitrary fields.

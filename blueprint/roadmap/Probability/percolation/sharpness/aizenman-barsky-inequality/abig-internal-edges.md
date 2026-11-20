@@ -1,3 +1,3 @@
 # Internal edges of a finite set
 
-The unordered pairs with both endpoints in `T`.
+For a finite subset $T$ of a set $W$, the finite set of unordered pairs $\{x, y\}$ of elements of $W$ with $x, y \in T$ (including the pairs $\{x, x\}$).

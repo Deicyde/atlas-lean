@@ -9,4 +9,4 @@ $$U_{n+1}(x, y) = p x \, U_n(p x, p y) + q y \, U_{n-r}(q x, q^{m+1} y).$$
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 2, Equation (5).
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 2, Equation (5).

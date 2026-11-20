@@ -19,3 +19,10 @@
 - [Missing curvature set](missing-curvature-set.md)
 - [Number of missing curvatures](missing-curvatures.md)
 - [Infinitely many packings with many missing curvatures](theorem-1-3.md)
+
+## Related topics
+
+- [Apollonian group](../../../Geometry/euclidean-geometry/circles-and-conics/apollonian-group/README.md): the flips
+  $S_i$ as reflections of the Descartes form, and integrality of Apollonian packings.
+- [Apollonian circle packings](../../../Geometry/euclidean-geometry/circles-and-conics/apollonian-circle-packings/README.md):
+  the circle-level definitions and the Kontorovich–Oh count of circles of bounded curvature.

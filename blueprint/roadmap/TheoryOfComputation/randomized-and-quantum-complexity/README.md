@@ -9,6 +9,7 @@ Probabilistic classes (RP, BPP), Arthur–Merlin and interactive proofs (AM, MA,
 - [Graph isomorphism and Arthur–Merlin proofs](graph-isomorphism-and-arthur-merlin-proofs/README.md)
 - [Local Hamiltonian problem](local-hamiltonian-problem/README.md)
 - [Valiant–Vazirani theorem](valiant-vazirani-theorem/README.md)
+- [Yao's minimax principle](yao-s-minimax-principle/README.md)
 - [Adleman's theorem: BPP is contained in P/poly](adleman.md)
 - [IP = PSPACE (Shamir)](ip-eq-pspace.md)
 - [Sipser-Gács-Lautemann: BPP is in $\Sigma_2^p$ and $\Pi_2^p$](sipser-gacs-lautemann.md)

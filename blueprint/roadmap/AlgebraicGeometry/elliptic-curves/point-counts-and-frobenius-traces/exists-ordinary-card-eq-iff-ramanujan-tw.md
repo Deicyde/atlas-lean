@@ -1,7 +1,6 @@
 # Ordinary elliptic curves with point count divisible by 4 and Ramanujan graphs on two vertices
 
-**Ordinary elliptic curves with point count divisible by 4 and Ramanujan graphs on two
-vertices.** Let $p$ be an odd prime, let $a \ge 1$, and let $F$ be a finite field with $q = p^a$
+Let $p$ be an odd prime, let $a \ge 1$, and let $F$ be a finite field with $q = p^a$
 elements. A natural number $N$ is the number $\#E(F)$ of $F$-points (counting the point at
 infinity) of some elliptic curve $E$ over $F$ with $4 \mid N$ whose Frobenius trace
 $q + 1 - \#E(F)$ is coprime to $p$ if and only if there are natural numbers $l$ and $m$ with

@@ -1,4 +1,4 @@
-# Edge factor has no zero in the open unit bidisk for 0 ≤ r ≤ 1
+# Edge factor has no zero in the open unit bidisk for $0 \le r \le 1$
 
-The two-variable edge factor `1 + ab + r (a + b)` with `0 ≤ r ≤ 1` has no zero in the open unit
-bidisk.
+Let $0 \le r \le 1$ and $a, b \in \mathbb{C}$ with $|a| < 1$ and $|b| < 1$. Then
+$1 + ab + r(a + b) \ne 0$.

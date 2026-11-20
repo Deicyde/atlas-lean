@@ -6,4 +6,4 @@ $\mathsf{RP}$.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 7.2.

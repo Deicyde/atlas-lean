@@ -8,4 +8,4 @@ $\{\zeta : |\zeta - w| < B\}$.
 
 ## Sources
 
-- A. Bloch, Les théorèmes de M. Valiron sur les fonctions entières et la théorie de l'uniformisation, Ann. Fac. Sci. Toulouse 17 (1925), 1–22, DOI 10.5802/afst.335; see Ahlfors, Complex Analysis, Univalent Functions; Lean is universal B > 0 exact schlicht disc f '' V = ball w B for open connected V, stronger than Landau.
+- A. Bloch, Les théorèmes de M. Valiron sur les fonctions entières et la théorie de l'uniformisation, Ann. Fac. Sci. Toulouse 17 (1925), 1–22, DOI 10.5802/afst.335; see Ahlfors, Complex Analysis, Univalent Functions. The statement here gives a universal $B > 0$ and an open connected $V$ with $f(V)$ exactly a disc of radius $B$, which is stronger than Landau's theorem.

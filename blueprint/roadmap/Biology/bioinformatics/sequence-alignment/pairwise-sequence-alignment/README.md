@@ -1,7 +1,5 @@
 # Pairwise sequence alignment
 
-- [Unit-cost edit distance is a Needleman–Wunsch instance](edit-distance-distance-eq-neg-nw-score.md)
-- [Longest common subsequence length is a Needleman–Wunsch instance](longest-common-subsequence-length-eq-nw.md)
 - [Alignment](alignment.md)
 - [Valid alignment of two sequences](is-alignment.md)
 - [Score of an alignment column](column-score.md)
@@ -15,8 +13,8 @@
 - [Fuel-bounded enumeration of alignments](alignments-aux.md)
 - [The list of all alignments](alignments.md)
 - [The enumerated alignments are exactly the valid ones](mem-alignments.md)
-- [Needleman–Wunsch is optimal](alignment-score-le-nw-score.md)
-- [Needleman–Wunsch is attained](exists-alignment-score-eq-nw-score.md)
+- [Every valid alignment scores at most the Needleman–Wunsch score](alignment-score-le-nw-score.md)
+- [The Needleman–Wunsch score is attained](exists-alignment-score-eq-nw-score.md)
 - [Fuel-bounded Smith–Waterman recursion](sw-cell-front.md)
 - [The terminal Smith–Waterman cell](sw-cell-score.md)
 - [The terminal Smith–Waterman cell is nonnegative](sw-cell-score-nonneg.md)
@@ -58,6 +56,6 @@
 - [Row-by-row filling of the Needleman–Wunsch table](nw-rows-aux.md)
 - [Last row of the Needleman–Wunsch table](nw-rows.md)
 - [The Needleman–Wunsch table](nw-tab.md)
-- [One row of the table](next-row-eq.md)
-- [The last row of the table](nw-rows-eq.md)
+- [One row of the Needleman–Wunsch table](next-row-eq.md)
+- [The last row of the Needleman–Wunsch table](nw-rows-eq.md)
 - [The table computes the optimal global alignment score](nw-tab-eq-nw-score.md)

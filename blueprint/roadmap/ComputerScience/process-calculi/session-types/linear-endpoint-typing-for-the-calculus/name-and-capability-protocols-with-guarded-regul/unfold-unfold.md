@@ -1,3 +1,4 @@
-# Protocol unfolding is idempotent
+# One-step unrolling is idempotent
 
-One root unfolding is enough to expose a guard or completion.
+For every protocol $S$, $\mathrm{unf}(\mathrm{unf}(S)) = \mathrm{unf}(S)$, where $\mathrm{unf}$
+unrolls a graph cursor once and fixes every other protocol.

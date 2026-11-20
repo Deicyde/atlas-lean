@@ -1,3 +1,3 @@
 # Continuity of Kimura's fixation probability
 
-Kimura's fixation probability is continuous in the initial frequency.
+For every real $\sigma$, [Kimura's fixation probability](kimura-fixation.md) $x \mapsto u_\sigma(x)$ is continuous on $\mathbb{R}$.

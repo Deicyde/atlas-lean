@@ -5,6 +5,4 @@ $\hat g(y) = \int_{\mathbb{R}} e^{-2\pi i x y} g(x)\,dx$ for the Fourier transfo
 function $g : \mathbb{R} \to E$. For every $f : \mathbb{R} \to E$, every real $a \ne 0$ and
 every real $y$, the Fourier transform of $x \mapsto f(ax)$ at $y$ equals $|a|^{-1} \hat f(y/a)$.
 
-No integrability hypothesis is needed because Mathlib's Bochner integral is
-totalized, so the identity also uses that convention for nonintegrable
-functions.
+No integrability hypothesis is needed: the integral of a nonintegrable function is taken to be $0$, and so is every integral with values in $E$ when $E$ is not complete; with these conventions the identity holds for every $f$. For complete $E$ (a complex Banach space), $\hat g$ is the usual Bochner Fourier transform.

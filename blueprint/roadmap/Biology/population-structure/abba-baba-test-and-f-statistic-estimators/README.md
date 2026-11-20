@@ -16,7 +16,7 @@
 - [ABBA–BABA site-pattern identity](baba-sub-abba.md)
 - [ABBA–BABA identity](sample-expect-baba-sub-abba.md)
 - [Expected polarized ABBA–BABA difference](sample-expect-baba-pol-sub-abba-pol.md)
-- [ABBA–BABA equals `f4`](integral-sample-expect-baba-sub-abba.md)
+- [ABBA–BABA equals the f4-statistic](integral-sample-expect-baba-sub-abba.md)
 
 ## The qpAdm model equation
 
@@ -34,20 +34,20 @@
 - [Unbiased f2 estimator](f2-hat.md)
 - [Unbiased f3 estimator](f3-hat.md)
 - [f4 estimator](f4-hat.md)
-- [Estimator of Hudson's F_ST denominator](hudson-den-hat.md)
-- [Hudson's F_ST denominator at one site](hudson-den.md)
-- [Hudson's F_ST (ratio of averages)](hudson-fst.md)
+- [Estimator of Hudson's $F_{ST}$ denominator](hudson-den-hat.md)
+- [Hudson's $F_{ST}$ denominator at one site](hudson-den.md)
+- [Hudson's $F_{ST}$ (ratio of averages)](hudson-fst.md)
 - [Hudson's numerator is at most the denominator](sq-sub-le-hudson-den.md)
-- [Hudson's F_ST lies between 0 and 1](hudson-fst-mem-icc.md)
+- [Hudson's $F_{ST}$ lies between 0 and 1](hudson-fst-mem-icc.md)
 - [Sample allele frequency is unbiased](integral-div-of-has-law-binomial.md)
 - [Unbiased heterozygosity](integral-het-hat.md)
-- [Unbiased `f2`](integral-f2-hat.md)
-- [Unbiased `f3`](integral-f3-hat.md)
-- [Unbiased `f4`](integral-f4-hat.md)
+- [Unbiased f2 estimator under binomial sampling](integral-f2-hat.md)
+- [Unbiased f3 estimator under binomial sampling](integral-f3-hat.md)
+- [Unbiased f4 estimator under binomial sampling](integral-f4-hat.md)
 - [Hudson's denominator is unbiased](integral-hudson-den-hat.md)
 - [Unbiasedness of the summed f2 estimator](integral-sum-f2-hat.md)
 - [Unbiasedness of the summed Hudson denominator estimator](integral-sum-hudson-den-hat.md)
-- [Hudson's `F_ST`, ratio of averages](integral-sum-div-integral-sum.md)
+- [Hudson's $F_{ST}$ as a ratio of expected sums](integral-sum-div-integral-sum.md)
 
 ## Drift-model corollaries
 

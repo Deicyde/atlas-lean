@@ -6,4 +6,4 @@ its Jacobian, the Abel–Jacobi map based at $P$.
 
 ## Sources
 
-- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
+- Christian Merten, algebraic-geometry version of the *Jacobian challenge*, Lean Zulip, #Autoformalization > Jacobian challenge, https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.

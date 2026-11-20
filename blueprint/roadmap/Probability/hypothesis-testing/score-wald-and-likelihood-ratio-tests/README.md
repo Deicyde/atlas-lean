@@ -1,11 +1,11 @@
 # Score, Wald and likelihood-ratio tests
 
-## Probability Theory
+## Chi-square limits
 
 - [Squared normalized Gaussian is chi-square with one degree of freedom](gaussian-real-map-sq-div.md)
 - [Law of the positive part squared of a standard normal variable](gaussian-real-map-max-zero-sq.md)
 
-## Likelihood Ratio Tests
+## Asymptotic tests
 
 - [Rao's score test, known information](tendsto-in-distribution-score-statistic.md)
 - [Rao's score test with an estimated information](tendsto-in-distribution-score-statistic-2.md)

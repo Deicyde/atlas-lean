@@ -10,4 +10,4 @@ $$\bigl(1 - t x G_{k+1}^{k+1}\bigr) F_k = t x G_{k+1}^k.$$
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 8 (`jis-2024-24.2.4-lem-8`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 8 (`jis-2024-24.2.4-lem-8`).

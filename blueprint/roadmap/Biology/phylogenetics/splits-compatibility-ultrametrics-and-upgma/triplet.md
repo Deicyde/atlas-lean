@@ -1,3 +1,3 @@
 # Rooted triplet
 
-A **rooted triplet** `xy|z`: `x` and `y` are closer to each other than to `z`.
+A rooted triplet $xy \mid z$ on a set of taxa is an ordered triple $(x, y, z)$: $x$ and $y$ form the cherry and $z$ is the outgroup.

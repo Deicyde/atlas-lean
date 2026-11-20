@@ -1,6 +1,7 @@
-# Locate takes at most `s - 1` steps
+# Sampled locate takes at most $s - 1$ LF steps
 
-For `0 < s`, if every row whose text position is
-a multiple of `s` is sampled, then from row `r ≤ |t|` locate makes at most `SA[r] mod s` LF
-steps (for any amount of fuel `k`). At `s = 0` the `s - 1` bound would be `0` while the
-proof only gives `SA[r] mod 0 = SA[r]` steps.
+Let $t = t_0 \cdots t_{n-1}$ be a text over a linearly ordered alphabet, let $SA$ be the suffix
+array of $t$ followed by a sentinel smaller than every letter, and let $s \ge 1$. Suppose a sampling
+stores a value for every row $r \le n$ with $SA[r] \equiv 0 \pmod{s}$. Then for every $k$ and every
+row $r \le n$, the number of LF steps taken by the $k$-step locate from row $r$ on the
+Burrows–Wheeler transform of $t$ is at most $SA[r] \bmod s$, hence at most $s - 1$.

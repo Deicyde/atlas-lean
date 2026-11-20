@@ -1,3 +1,3 @@
 # Identity type substitution fixes every type
 
-Substitution of each type variable by itself is the identity.
+For every type $A \in \mathrm{Ty}_n$, [substituting](../scoped-pure-system-f/subst.md) each type variable $\alpha_i$ by itself gives $A$.

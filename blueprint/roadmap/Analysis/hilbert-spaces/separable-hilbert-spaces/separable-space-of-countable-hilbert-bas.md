@@ -1,5 +1,3 @@
 # A Hilbert space with a countable orthonormal basis is separable
 
-If `H` admits a Hilbert basis indexed by a countable type, then `H` is
-separable. No completeness hypothesis is needed: it is the density of the
-span of the basis, not completeness, that is used.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. If an inner product space $H$ over $\mathbb{K}$ has a Hilbert basis indexed by a countable set, then $H$ is separable. Completeness is not needed: the proof uses only the density of the span of the basis.

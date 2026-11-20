@@ -7,7 +7,7 @@ list of codes below $g$ with $n = |xs|$, let $T, e, f$ be natural numbers with $
 $o$ be a bit string. Start the generator for $L, i_c, k_0, Y$ at its start label with state false,
 with the counters $\mathrm{Tn}, \mathrm{Xn}, \mathrm{En}, \mathrm{Fn}$ holding $T, n, e, f$ in
 unary and all other counters empty, $o$ on the output stack, and $xs$ reversed on the input
-stack. Then within $\mathrm{initBound}(L, |Y|, k_0, K - k_0 - 1, T, n, e, f)$ steps it reaches
+stack. Then within the [time bound of the init generator](init-bound.md) for $L, |Y|, k_0, K - k_0 - 1, T, n, e, f$ steps it reaches
 the final label $\mathrm{done}$, and its output stack there is the bit encoding of the
 layout-level init family for $L, i_c, k_0, Y, xs$, $m = n + e$, $T$ and $H = n + e + f$, followed
 by $o$.

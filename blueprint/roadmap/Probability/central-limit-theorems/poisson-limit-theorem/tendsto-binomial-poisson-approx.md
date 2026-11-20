@@ -1,4 +1,5 @@
 # Poisson convergence in law (binomial approximation)
 
-The binomial laws
-`Bin(n, λ / (n + λ))` converge weakly to the Poisson law of rate `λ`.
+For $\lambda \ge 0$, the binomial laws $\mathrm{Bin}(n, \lambda / (n + \lambda))$ converge weakly
+to the Poisson law of rate $\lambda$ as $n \to \infty$, in the space of probability measures on
+$\mathbb{R}$.

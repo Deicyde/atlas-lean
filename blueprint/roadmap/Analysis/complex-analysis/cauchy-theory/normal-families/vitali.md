@@ -9,4 +9,4 @@ with $f(z) = g(z)$ for all $z \in S$, such that $F_n \to f$ locally uniformly on
 
 ## Sources
 
-- Vitali convergence theorem, G. Vitali 1903; see Hille, Analytic Function Theory Vol II and Conway II; Lean is open preconnected U locally uniformly bounded with AccPt accumulation and pointwise limit on S extends to locally uniform holomorphic convergence, Montel-related strengthening.
+- Vitali convergence theorem, G. Vitali 1903; see Hille, Analytic Function Theory Vol II and Conway II. The statement here is the form on a connected open set $U$: a locally uniformly bounded sequence of holomorphic functions that converges pointwise on a set $S$ with an accumulation point in $U$ converges locally uniformly on $U$ to a holomorphic limit.

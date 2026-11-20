@@ -28,7 +28,7 @@
 - [Seating multiplies the closed-form law by the seating probability](crp-prob-seat.md)
 - [Law of the Chinese restaurant process](crp-apply.md)
 - [Chinese restaurant process law as a real number](crp-to-real.md)
-- [Exchangeability](crp-comap-perm.md)
+- [Exchangeability of the Chinese restaurant process, pointwise](crp-comap-perm.md)
 - [Exchangeability of the Chinese restaurant process](crp-map-comap-perm.md)
 - [Consistency of the Chinese restaurant process](crp-map-restrict.md)
 - [Consistency for every sample size](crp-map-restrict-cast-le.md)
@@ -36,3 +36,10 @@
 - [The block sizes follow Hoppe's urn](crp-map-block-sizes-eq-hoppe-law.md)
 - [The allelic partition of the Chinese restaurant process follows the Ewens sampling formula](crp-map-block-sizes.md)
 - [Expected number of tables](sum-crp-to-real-mul-card-parts.md)
+
+## Related topics
+
+- [Infinite mixture models](../../../Probability/bayesian-statistics/infinite-mixture-models/README.md): the closed-form partition probability of finite symmetric Dirichlet mixtures tends to the Chinese restaurant process law, which is how machine learning obtains the prior of infinite mixture models.
+- [Blackwell–MacQueen urn](../../../Probability/bayesian-statistics/blackwell-macqueen-urn/README.md): the ties among draws from a Dirichlet process follow the Chinese restaurant process.
+- [Dirichlet process](../../../Probability/bayesian-statistics/dirichlet-process/README.md): the random measure whose draws, through their ties, produce the Chinese restaurant process.
+- [Indian buffet process](../../../Probability/bayesian-statistics/indian-buffet-process/README.md): the analogue for latent feature models.

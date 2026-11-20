@@ -1,5 +1,7 @@
 # Typing and compatibility persist along finite executions
 
-A typed source at an initially semantically compatible interface retains
-typing and compatibility through finite actual execution, with a finite trace
-of faithful advances. This is safety, not progress or termination.
+Let $n$ be a natural number, $\Delta$ a semantically compatible ownership context and $p$, $q$
+processes such that $\Delta \vdash^{\simeq}_n p$ and $q$ is reachable from $p$ by finitely many
+(possibly zero) reduction steps. Then there is a semantically compatible ownership context $\Xi$
+with $\Xi \vdash^{\simeq}_n q$ that is reachable from $\Delta$ by finitely many (possibly zero)
+semantic advances (each advancing an endpoint and its opposite past a matching send and receive).

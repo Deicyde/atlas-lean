@@ -12,4 +12,4 @@ scalars to $\mathbb{K}$.
 
 ## Sources
 
-- R. C. James, Reflexivity and the Supremum of Linear Functionals, Ann. of Math. 66 (1957), DOI 10.2307/1970122; Bourbaki form; Lean states `RCLike` Banach case with norm-attainment equivalence for reflexivity.
+- R. C. James, Reflexivity and the Supremum of Linear Functionals, Ann. of Math. 66 (1957), DOI 10.2307/1970122; Bourbaki form. The statement here is the case of a Banach space over $\mathbb{R}$ or $\mathbb{C}$: it is reflexive if and only if every bounded linear functional attains its norm.

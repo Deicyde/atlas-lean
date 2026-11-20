@@ -1,6 +1,6 @@
 # The closure $\bar E^*$ of $E^*$
 
-**The closure $\bar E^*$ of $E^*$.** Let $L$ be a list of natural numbers, $E^*$ the collection
+Let $L$ be a list of natural numbers, $E^*$ the collection
 determined by $L$, and index coefficient functions from $1$. The collection $\bar E^*$ consists
 of the elements of $E^*$ together with every function $\varepsilon : \mathbb N \to \mathbb N$ for
 which there is an index $b \ge 0$ such that the function agreeing with $\varepsilon$ at the

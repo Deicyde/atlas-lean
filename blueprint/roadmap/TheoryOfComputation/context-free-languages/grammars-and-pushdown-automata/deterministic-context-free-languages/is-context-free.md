@@ -7,4 +7,4 @@ erasing the end marker recovers the original language.
 
 ## Sources
 
-- Ginsburg and Greibach, "Deterministic context free languages", Information and Control 9 (1966), 620-648; Hopcroft, Motwani, and Ullman, Introduction to Automata Theory, Languages, and Computation, 3rd ed., Section 10.3.
+- S. Ginsburg and S. Greibach, "Deterministic context free languages", *Information and Control* 9 (1966), 620–648; J. E. Hopcroft, R. Motwani and J. D. Ullman, *Introduction to Automata Theory, Languages, and Computation*, 3rd ed., Addison-Wesley, 2006, Section 6.4.

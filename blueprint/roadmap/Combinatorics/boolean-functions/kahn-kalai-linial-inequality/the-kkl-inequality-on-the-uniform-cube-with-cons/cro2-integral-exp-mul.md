@@ -1,3 +1,7 @@
 # Integral of $e^{cx}$ over an interval
 
-`∫_a^b exp (c x) dx = (exp (c b) - exp (c a)) / c` for `c ≠ 0`.
+For real numbers $c \ne 0$, $a$ and $b$,
+
+$$\int_a^b e^{c x}\, dx = \frac{e^{c b} - e^{c a}}{c},$$
+
+the integral being oriented (so it changes sign when $a > b$).

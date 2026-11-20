@@ -18,7 +18,7 @@
 - [All-N threshold of $(2:1)$-pebbling on $K_n$ for odd $n$](is-least-pebbling-all-ntotals-complete-o.md)
 - [All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$](is-least-pebbling-all-ntotals-complete-e.md)
 
-## `(k+1:k)`-pebbling on `K_3`
+## $(k+1:k)$-pebbling on $K_3$
 
 - [All-N threshold of $(k+1:k)$-pebbling on $K_3$](is-least-pebbling-all-ntotals-complete-t-2.md)
 - [Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position](pebbling-complete-three-is-p-two-kadd-th.md)
@@ -31,7 +31,7 @@
 - [Pebbling on the triangle: N-positions with an empty vertex](pebbling-complete-three-is-n-of-zero.md)
 - [Pebbling on the triangle: total 6k-1 with a pile of at least 4k+1](pebbling-complete-three-is-n-of-ge-four.md)
 
-## `(2:1)`-pebbling on `C_4`
+## $(2:1)$-pebbling on $C_4$
 
 - [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
 - [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)

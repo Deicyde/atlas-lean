@@ -1,4 +1,3 @@
 # Wired box probabilities of increasing cylinder events converge
 
-At `q = 2` the wired box probabilities of an increasing cylinder event converge to
-`fkWiredLimitValue`.
+Let $d, N \in \mathbb{N}$, $0 < p < 1$, and let $S$ be an increasing set of configurations of $\Lambda_N$. For a set $S$ of configurations of $\Lambda_N = \{-N, \dots, N\}^d$, $C_S$ denotes the cylinder event of the configurations of $\mathbb{Z}^d$ whose restriction to the pairs of vertices of $\Lambda_N$ lies in $S$. Then $\phi^1_m(C_S) \to L^w(S)$ as $m \to \infty$, where $\phi^1_{m}$ is the [wired box measure](../finite-and-infinite-volume-fk-measures-on-d/wired-finite-measure.md) on $\Lambda_m = \{-m, \dots, m\}^d$ at parameters $(p, 2)$ and $L^w(S) = \inf_{k \in \mathbb{N}} \phi^1_{N+k}(C_S)$ is the [wired limit value](fk-wired-limit-value.md).

@@ -1,4 +1,3 @@
 # Compatibility of a coloring with a bond configuration
 
-A coloring `σ` is compatible with the bond configuration `ω` if every open edge of `G` joins
-vertices of the same color. See also `FK.ConstOnOpen` (`compatible_iff_constOnOpen`).
+Let $G = (V, E)$ be a finite simple graph and $q \in \mathbb{N}$. A coloring $\sigma : V \to \{0, \dots, q - 1\}$ is compatible with an assignment $\omega$ of open/closed states to the unordered pairs of vertices when $\sigma_x = \sigma_y$ for every edge $\{x, y\}$ of $G$ that is open in $\omega$.

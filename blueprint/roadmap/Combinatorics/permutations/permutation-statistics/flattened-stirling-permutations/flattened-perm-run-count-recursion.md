@@ -14,4 +14,4 @@ This is the recursion of Nabawanda, Rakotondrajao, and Bamunoba as quoted in the
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 1 (quoting Nabawanda et al., Theorem 1).
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 1 (quoting Nabawanda et al., Theorem 1).

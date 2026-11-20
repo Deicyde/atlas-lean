@@ -10,4 +10,4 @@ differentiable at $x$ is not a Lebesgue null set.
 
 ## Sources
 
-- S. Mazur, Problem 66 of the Scottish Book; refuted by V. Mykhaylyuk and A. Plichko, who construct a separately twice differentiable function on `[0, 1]²` and a set of positive measure on which the mixed derivative `f_xy` does not exist ("On a Mazur problem from 'The Scottish Book' concerning second partial derivatives", Colloq. Math. 141 (2015), 175–181, arXiv:1508.06909).
+- S. Mazur, Problem 66 of the Scottish Book; refuted by V. Mykhaylyuk and A. Plichko, who construct a separately twice differentiable function on $[0, 1]^2$ and a set of positive measure on which the mixed derivative $f_{xy}$ does not exist ("On a problem of Mazur from 'The Scottish Book' concerning second partial derivatives", Colloq. Math. 141 (2015), 175–181, arXiv:1508.06909).

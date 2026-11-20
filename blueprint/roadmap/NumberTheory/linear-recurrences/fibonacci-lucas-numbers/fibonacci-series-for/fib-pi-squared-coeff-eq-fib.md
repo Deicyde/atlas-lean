@@ -11,4 +11,4 @@ $n \ge 0$ with the convention $F_{-1} = 1$; its case $n = 0$ is the initial valu
 
 ## Sources
 
-- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.3.
+- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, 65–74, Lemma 2.3.

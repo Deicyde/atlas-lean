@@ -11,4 +11,4 @@ number $g$ with $-2g = |\alpha| - 1 - n + c$; for $n = 0$ the genus is $0$.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4, equation (genus).
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4, equation (genus).

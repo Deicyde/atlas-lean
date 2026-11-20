@@ -10,4 +10,4 @@ $b_n = \lfloor (n + \ell)\varphi^2 \rfloor + \lambda_n + 1$.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Corollary 19 (`jis-2026-26.1.6-cor-19`).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Corollary 19.

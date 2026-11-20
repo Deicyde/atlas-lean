@@ -7,4 +7,4 @@ They are $(5, 1)$ and $(4, 2)$.
 
 ## Sources
 
-- D. F. Checa and J. L. Ramírez, *Arndt compositions: a generating functions approach*, arXiv:2311.15388, Section 1 (list of the Arndt compositions of `6`).
+- Daniel F. Checa and José L. Ramírez, *Arndt compositions: a generating functions approach*, arXiv:2311.15388, Section 1 (list of the Arndt compositions of `6`).

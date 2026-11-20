@@ -6,4 +6,4 @@ $1 \le k \le n$, the integer $S_k^2 + 1$ divides the integer $S_n - (-1)^{n-k} S
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 2, divisibility (8).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 2, divisibility (8).

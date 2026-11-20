@@ -1,4 +1,3 @@
 # Nonnegative column weights of an alignment automaton
 
-Nonnegative column weights. The final weights may have any sign: the max recursion bounds
-every alignment weight without that (`alignWeight_le_maxDP`).
+An [alignment automaton](alignment-automaton.md) has nonnegative column weights if $w(q, c) \ge 0$ for all control states $q$ and columns $c$. The final weights may have any sign.

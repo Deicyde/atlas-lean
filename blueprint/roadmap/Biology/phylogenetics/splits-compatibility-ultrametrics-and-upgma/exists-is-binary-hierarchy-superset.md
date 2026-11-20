@@ -1,6 +1,7 @@
 # Hierarchies are refined by binary trees
 
-Every family of pairwise nested-or-disjoint
-nonempty subsets of a nonempty `S` is contained in a binary hierarchy on `S`, the cluster set of
-a rooted binary phylogenetic tree on `S` (Semple & Steel 2003, Proposition 3.5.2 and the
-refinement of a rooted tree to a binary one).
+Let $S$ be a nonempty finite set and $F$ a family of nonempty subsets of $S$, any two of which are nested or disjoint. Then $F$ is contained in some [binary hierarchy](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md) on $S$ (Semple & Steel 2003).
+
+## Sources
+
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

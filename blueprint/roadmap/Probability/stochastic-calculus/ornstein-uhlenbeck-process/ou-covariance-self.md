@@ -1,3 +1,5 @@
 # Variance of the Ornstein–Uhlenbeck process started at zero
 
-The variance of the OU process started at `0`: `(σ² / (2θ)) (1 - e^{-2θt})`.
+For all real $\theta, \sigma, t$, the [Ornstein–Uhlenbeck covariance](ou-covariance.md) on the diagonal is
+
+$$c(t, t) = \frac{\sigma^2}{2\theta} \bigl(1 - e^{-2\theta t}\bigr) .$$

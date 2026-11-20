@@ -7,7 +7,8 @@ decrease inside each block of $k$ consecutive positions $ki, ki + 1, \ldots, ki 
 block may be shorter), that is, $c_i > c_{i+1}$ for every $i$ with $i + 1 < m$ and
 $i \not\equiv k - 1 \pmod{k}$. For $k = 2$ these are the Arndt compositions.
 
-The definition is meant for $k \ge 1$; its value at $k = 0$ has no combinatorial meaning.
+The definition is meant for $k \ge 1$. At $k = 0$ the condition reads $c_i > c_{i+1}$ for every $i$
+with $1 \le i$ and $i + 1 < m$ (no condition relates $c_0$ and $c_1$).
 
 ## Sources
 

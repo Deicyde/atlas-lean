@@ -17,4 +17,4 @@ $W_{\min} = 0^p$ are used.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 7 (the words `W_min` and `W_max`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 7 (the words $W_{\min}$ and $W_{\max}$).

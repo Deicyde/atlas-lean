@@ -1,4 +1,4 @@
 # Gaussian partition
 
-A Gaussian partition is represented by its list of subspace
-dimensions, which is a nonincreasing list of natural numbers.
+A Gaussian partition is described here by its list of subspace dimensions: it is a finite
+nonincreasing list $n_1 \ge n_2 \ge \dots \ge n_r$ of natural numbers.

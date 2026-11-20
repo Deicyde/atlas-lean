@@ -1,3 +1,3 @@
 # Edgeless graphs satisfy the juxtaposition hypothesis
 
-Edgeless graphs on `Fin n` satisfy the juxtaposition hypothesis `G_{m+n} ≅ G_m ⊕g G_n`.
+For all $m, n \in \mathbb{N}$, the edgeless graph on $m + n$ vertices is isomorphic to the disjoint union of the edgeless graphs on $m$ and on $n$ vertices.

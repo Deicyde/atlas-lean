@@ -1,5 +1,7 @@
 # Normalization of Wright's density
 
-For `α, β > 0` the stationary density integrates to
-the Beta function `B(2α, 2β) = Γ(2α) Γ(2β) / Γ(2α + 2β)`, so
-`wrightDensity α β x / B(2α, 2β)` is the Beta`(2α, 2β)` probability density on `(0, 1)`.
+For all real $\alpha > 0$ and $\beta > 0$,
+
+$$\int_0^1 \pi_{\alpha,\beta}(x)\, dx = \frac{\Gamma(2\alpha)\, \Gamma(2\beta)}{\Gamma(2\alpha + 2\beta)} = B(2\alpha, 2\beta),$$
+
+so $\pi_{\alpha,\beta}/B(2\alpha, 2\beta)$, with [Wright's density](wright-density.md) $\pi_{\alpha,\beta}$, is the density of the Beta distribution with parameters $2\alpha$ and $2\beta$ on $(0, 1)$.

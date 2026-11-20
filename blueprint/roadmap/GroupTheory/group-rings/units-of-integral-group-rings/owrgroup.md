@@ -7,4 +7,4 @@ $\mathbb{Z}/2 \times \mathbb{Z}/2 \times \mathbb{Z}/2 \times \mathbb{Z}/6$.
 
 ## Sources
 
-- `OWR-11129-005` (Computational Group Theory (2012), Oberwolfach Reports, DOI 10.4171/owr/2011/37).
+- *Computational Group Theory*, Oberwolfach Rep. 8 (2011), Report 37/2011, DOI 10.4171/OWR/2011/37.

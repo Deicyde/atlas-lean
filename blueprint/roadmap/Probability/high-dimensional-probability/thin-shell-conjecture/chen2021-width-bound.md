@@ -9,4 +9,5 @@ There is no constant multiplier inside the exponential.
 
 ## Sources
 
-- Chen, GAFA 31 (2021), 34--61; catalogue `constants/20a.md`.
+- Y. Chen, *An almost constant lower bound of the isoperimetric coefficient in the KLS conjecture*, Geom. Funct.
+  Anal. 31 (2021), 34–61; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

@@ -5,4 +5,4 @@ areas of universal convex covers) is at least $0.832$.
 
 ## Sources
 
-- Brass and Sharifi, A lower bound for Lebesgue's universal cover problem (2005).
+- Peter Brass and Mehrbod Sharifi, A lower bound for Lebesgue's universal cover problem, Int. J. Comput. Geom. Appl. 15 (2005), 537–544, DOI 10.1142/S0218195905001828.

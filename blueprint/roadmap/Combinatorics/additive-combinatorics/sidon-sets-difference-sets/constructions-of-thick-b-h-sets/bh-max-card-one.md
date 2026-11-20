@@ -5,4 +5,4 @@ contained in $\{1\}$ equals $1$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of `R_h(n)` before Theorem 5.
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of $R_h(n)$ before Theorem 5.

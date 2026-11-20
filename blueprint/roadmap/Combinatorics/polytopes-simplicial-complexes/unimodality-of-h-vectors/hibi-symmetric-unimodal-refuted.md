@@ -1,6 +1,6 @@
 # Hibi's conjecture on symmetric $h^*$-vectors is false
 
-**Hibi's conjecture on symmetric $h^*$-vectors is false.** There are a natural number $d$, a
+There are a natural number $d$, a
 finite set $S \subseteq \mathbb{Z}^d$ whose convex hull $P \subseteq \mathbb{R}^d$ has nonempty
 interior, and a polynomial $h = \sum_i h^*_i z^i \in \mathbb{Z}[z]$ that is an $h^*$-polynomial
 of $P$, that is,

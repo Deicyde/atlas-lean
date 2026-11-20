@@ -7,7 +7,7 @@ $0$ if there is none). Then $L(n)$ is defined by
 
 $$L(n) = \operatorname{lcm}\bigl(\pi_U^0(n), \pi_U^1(n), \ldots, \pi_U^{\omega(n)}(n)\bigr).$$
 
-It is meaningful when $\omega(n)$ exists.
+When the period orbit of $n$ closes at no step, $\omega(n) = 0$ and $L(n) = n$.
 
 ## Sources
 

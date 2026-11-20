@@ -11,4 +11,4 @@ unbiased ones, and $AA^\top$ is the covariance of $Ay$.
 
 ## Sources
 
-- C. F. Gauss, *Theoria combinationis observationum erroribus minimis obnoxiae* (1823); A. C. Aitken, “On Least Squares and Linear Combination of Observations,” *Proceedings of the Royal Society of Edinburgh* 55 (1936), 42–48, DOI `10.1017/S0370164600014346`.
+- C. F. Gauss, *Theoria combinationis observationum erroribus minimis obnoxiae* (1823); A. C. Aitken, “On Least Squares and Linear Combination of Observations,” *Proceedings of the Royal Society of Edinburgh* 55 (1936), 42–48, DOI 10.1017/S0370164600014346.

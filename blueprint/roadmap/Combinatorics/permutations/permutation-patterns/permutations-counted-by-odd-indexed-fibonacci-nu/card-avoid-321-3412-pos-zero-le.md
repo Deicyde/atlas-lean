@@ -11,4 +11,4 @@ $\sigma(2) = 1$.
 
 ## Sources
 
-- Juan B. Gil, Felix H. Xu, and William Y. Zhu, "Odd-Indexed Fibonacci Numbers via Pattern-Avoiding Permutations", Proposition 8.
+- Juan B. Gil, Felix H. Xu, and William Y. Zhu, "Odd-Indexed Fibonacci Numbers via Pattern-Avoiding Permutations", INTEGERS 25 (2025), Article A79, Proposition 8.

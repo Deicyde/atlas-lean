@@ -1,3 +1,3 @@
 # Jukes–Cantor rate matrix as a matrix
 
-The Jukes–Cantor rate matrix as a `Matrix`.
+For a real $\mu$, the $4 \times 4$ real matrix with entries the [Jukes–Cantor rates](jc-rate.md) $Q_{kj}$.

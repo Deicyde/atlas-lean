@@ -6,4 +6,4 @@ $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$.
 
 ## Sources
 
-- Optimization Problems constant 18a.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{18a}$ (Marton's conjecture constant), https://teorth.github.io/optimizationproblems/constants/18a.html.

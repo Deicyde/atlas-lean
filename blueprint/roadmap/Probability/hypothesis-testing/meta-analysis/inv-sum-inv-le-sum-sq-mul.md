@@ -1,5 +1,7 @@
 # Optimality of inverse-variance weights
 
-Optimality of inverse-variance weighting: for positive variances `v` and weights `c` summing
-to one, `∑ cᵢ² vᵢ ≥ (∑ vᵢ⁻¹)⁻¹`. The gap is `∑ vᵢ (cᵢ - wᵢ)²` for the inverse-variance
-weights `w`.
+Let $v_1, \dots, v_k > 0$ and $c \in \mathbb{R}^k$ with $\sum_i c_i = 1$. Then
+
+$$\Big(\sum_{j=1}^k v_j^{-1}\Big)^{-1} \le \sum_{i=1}^k c_i^2 v_i.$$
+
+The gap is $\sum_i v_i (c_i - w_i)^2$ for the [inverse-variance weights](inverse-variance-weights.md) $w$.

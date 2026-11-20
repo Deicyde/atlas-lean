@@ -9,5 +9,4 @@ $0$, offset $0$ holding frame $0$, offset $1$ and empty, offset $2$ holding fram
 $0$ holding frame $1$.
 
 The first is the stuck configuration, reached after the acknowledgement of frame $0$ was lost; the
-list is closed under silent steps (proved separately), so it contains every configuration
-silently reachable from it.
+list is closed under silent steps, so it contains every configuration silently reachable from it.

@@ -10,4 +10,4 @@ and only if $s = t r + 1$.
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 7 (`jis-2025-25.3.2-prop-7`).
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 7 (`jis-2025-25.3.2-prop-7`).

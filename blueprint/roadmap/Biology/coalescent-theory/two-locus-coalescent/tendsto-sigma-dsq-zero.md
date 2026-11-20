@@ -1,3 +1,3 @@
 # Low-mutation limit of $\sigma_d^2$
 
-`σ_d² → (10 + ρ) / (22 + 13ρ + ρ²)` as the mutation rate tends to `0`, for `ρ ≥ 0`.
+For every real $\rho \ge 0$, the formula [$\sigma_d^2$](sigma-dsq.md) satisfies $\sigma_d^2(\rho, \nu) \to (10 + \rho)/(22 + 13\rho + \rho^2)$ as $\nu \to 0$.

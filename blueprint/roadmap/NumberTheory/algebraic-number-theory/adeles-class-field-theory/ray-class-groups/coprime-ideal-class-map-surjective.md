@@ -8,4 +8,4 @@ such fractional ideal to its ideal class, is surjective.
 
 ## Sources
 
-- ATLAS lines 1466--1476; Lemma 21.7 at lines 958--1010 is reused via the stronger `ClassGroup.exists_mk0_eq_and_isCoprime`.
+- ATLAS NumberTheoryI, Section 21.3, Lemma 21.7 and the proof of Theorem 21.8.

@@ -8,8 +8,9 @@ for every $i \ge 0$ the digit of $T_\alpha^i(x)$ is entry $i \bmod |d_n|$ (count
 that digit string, so that the expansion of $x$ is purely periodic with period word $d_n$. Then
 $x \le T_\alpha^j(x)$ for every $j \ge 0$.
 
-The source assumes Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is kept here.
+The source assumes Phase I; the statement above needs only $0 < \alpha \le \sqrt N - 1$.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

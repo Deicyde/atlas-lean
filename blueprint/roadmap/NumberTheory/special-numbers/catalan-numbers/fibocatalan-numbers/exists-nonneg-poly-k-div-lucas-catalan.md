@@ -14,4 +14,4 @@ super Catalan numbers is a polynomial in $s$ and $t$ with non-negative integer c
 
 ## Sources
 
-- Kendra Killpatrick, "Super FiboCatalan Numbers and Their Lucas Analogues", Theorem 13.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, Theorem 13.

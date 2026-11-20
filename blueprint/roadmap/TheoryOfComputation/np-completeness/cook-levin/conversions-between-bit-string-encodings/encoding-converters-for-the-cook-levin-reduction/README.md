@@ -1,6 +1,6 @@
 # Encoding converters for the Cook-Levin reduction
 
-## From `w # y` to the canonical pair encoding
+## From $w \# y$ to the canonical pair encoding
 
 - [Stacks of the converter to the canonical pair encoding](stk.md)
 - [Stack alphabets of the separator-to-canonical converter](untitled.md)
@@ -14,7 +14,7 @@
 - [Stack contents of the converter to the canonical pair encoding](stk-2.md)
 - [Runs of the converter to the canonical pair encoding](run.md)
 - [Run of the pair-to-canonical converter](convert-run.md)
-- [Canonical bit-list decoder](computable.md)
+- [Polynomial-time conversion from the separator form to the canonical pair encoding](computable.md)
 
 ## Bit lists: canonical encoding to raw bits and back
 

@@ -1,4 +1,7 @@
-# Kraft equality
+# Kraft equality for unrooted binary trees
 
-**Kraft equality** for unrooted binary trees: for every leaf `i` of a tree with distinct leaf
-labels, `∑_{j ≠ i} 2^{1-τ_ij} = 1`.
+Let $T$ be an [unrooted binary tree](utree.md) with pairwise distinct [leaf labels](labels.md), and $x$ one of its labels. Then
+
+$$\sum_{(u, v, \ell, \tau) \,:\, x \in \{u, v\}} 2^{1 - \tau} = 1,$$
+
+the sum over the [leaf pairs](pairs-2.md) of $T$ containing $x$.

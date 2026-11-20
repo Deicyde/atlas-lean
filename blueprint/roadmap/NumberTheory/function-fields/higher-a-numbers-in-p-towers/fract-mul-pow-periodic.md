@@ -7,10 +7,12 @@ prime-to-$p$ part of the denominator of $x$), and $\bar x$ for the average of it
 base-$p$ digits. Then $\lbrace x p^{n + L_x} \rbrace = \lbrace x p^n \rbrace$ for every integer
 $n \ge D_x$, and
 
-$$\frac{1}{L_x} \sum_{n = D_x}^{D_x + L_x - 1} \lbrace x p^n \rbrace = \frac{\bar x}{p - 1}.$$
+$$
+\frac{1}{L_x} \sum_{n = D_x}^{D_x + L_x - 1} \lbrace x p^n \rbrace = \frac{\bar x}{p - 1}.
+$$
 
 Here $n$ ranges over the integers, since $D_x$ can be negative.
 
 ## Sources
 
-- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 6.
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 6.

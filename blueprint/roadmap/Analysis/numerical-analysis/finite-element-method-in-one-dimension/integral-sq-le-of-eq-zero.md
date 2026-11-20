@@ -1,4 +1,5 @@
 # Wirtinger's inequality on an interval
 
-Wirtinger's inequality on `[a, b]`: a `C¹` function vanishing at `a` and
-`b` satisfies `∫ₐᵇ g² ≤ ((b - a) / π)² ∫ₐᵇ (g')²`.
+Let $a < b$ and let $g$ be $C^1$ on $\mathbb{R}$ with $g(a) = g(b) = 0$. Then
+
+$$\int_a^b g(x)^2\, dx \le \Big(\frac{b - a}{\pi}\Big)^2 \int_a^b g'(x)^2\, dx .$$

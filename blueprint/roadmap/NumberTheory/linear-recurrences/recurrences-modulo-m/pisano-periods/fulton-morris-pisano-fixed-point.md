@@ -9,4 +9,4 @@ integer $\lambda \ge 1$.
 
 ## Sources
 
-- Amirali Fatehizadeh and Daniel Yaqubi, "Average of the Fibonacci Numbers," Journal of Integer Sequences 25 (2022), Article 22.2.6, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Yaqubi/yaq6.tex>, lines 177–189. The theorem is attributed there to John Fulton and William Morris, "On arithmetical functions related to the Fibonacci numbers," Acta Arithmetica 16 (1969), 105–110, DOI 10.4064/aa-16-2-105-110.
+- Amirali Fatehizadeh and Daniel Yaqubi, "Average of the Fibonacci Numbers," Journal of Integer Sequences 25 (2022), Article 22.2.6, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Yaqubi/yaq6.tex>, Definition 1 and Lemma 2. The theorem is attributed there to John Fulton and William Morris, "On arithmetical functions related to the Fibonacci numbers," Acta Arithmetica 16 (1969), 105–110, DOI 10.4064/aa-16-2-105-110.

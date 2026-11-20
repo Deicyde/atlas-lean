@@ -11,7 +11,7 @@
 - [Face-region graph of a square-lattice subgraph](whb-face-region.md)
 - [Whitney's cut–cycle duality](whb-correct-whitney.md)
 - [Number of edge crossings of a face walk](whc-dual-cross.md)
-- [Primal edge between two faces lies in a subgraph](whc-is-cross.md)
+- [Primal-edge map of two faces lands in a subgraph](whc-is-cross.md)
 - [Face coloring compatible with a subgraph](whc-compat-coloring.md)
 - [Cut coloring of a subgraph with an extra dual edge](whc-cut-coloring.md)
 - [Unit square with its bottom edge removed](whc-htest.md)

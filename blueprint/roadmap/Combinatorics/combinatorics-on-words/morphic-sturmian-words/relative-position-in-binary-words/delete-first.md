@@ -9,4 +9,4 @@ and, when $\alpha$ does not occur in $w$, it is $w$ with its first letter delete
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the deletion operators `D_a`, `D_b`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the deletion operators $D_a$, $D_b$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

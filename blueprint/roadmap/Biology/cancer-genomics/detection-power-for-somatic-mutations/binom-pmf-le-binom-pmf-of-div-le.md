@@ -1,4 +1,3 @@
-# The binomial likelihood is unimodal in `p`, decreasing part
+# The binomial likelihood is decreasing beyond its mode
 
-For `a ≤ n` and
-`a / n ≤ p ≤ p' ≤ 1`, `Binom(a | n, p') ≤ Binom(a | n, p)`.
+For natural numbers $a \le n$ and reals $a/n \le p \le p' \le 1$ (with $a/0 = 0$), the [binomial probability](binom-pmf.md) satisfies $B(a \mid n, p') \le B(a \mid n, p)$.

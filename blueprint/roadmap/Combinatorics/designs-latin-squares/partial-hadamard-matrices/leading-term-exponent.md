@@ -8,5 +8,4 @@ $N_{n_k, 4t_k} / A_{n_k, 4t_k} \to 1$ along all sequences $(n_k)$ and $(t_k)$ of
 with $n_k \ge 2$ for every $k$ and $t_k / n_k^{\alpha} \to \infty$. The leading-term counting
 exponent is the infimum of the admissible $\alpha \ge 1$, and is $0$ if there is no such $\alpha$.
 
-This exponent is not asserted to equal the catalogue constant $C_{23c}$, which also permits
-corrected asymptotic formulas.
+The catalogue constant $C_{23c}$ also permits corrected asymptotic formulas; the exponent defined here concerns the uncorrected leading term only.

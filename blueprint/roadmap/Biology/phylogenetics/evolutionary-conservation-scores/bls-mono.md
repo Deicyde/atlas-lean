@@ -1,4 +1,3 @@
-# Monotonicity
+# Monotonicity of the branch length score
 
-With nonnegative edge lengths, more conserving species never lower the
-BLS.
+If the edge lengths are [nonnegative](nonneg-weights.md) and $S \subseteq S'$, then $\mathrm{BLS}(S) \le \mathrm{BLS}(S')$, where $\mathrm{BLS}$ is the [branch length score](bls.md).

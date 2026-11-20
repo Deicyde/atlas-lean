@@ -1,8 +1,11 @@
 # Expected divergence
 
-**Expected divergence** (Hudson, Kreitman & Aguadé 1987): if the ancestral coalescence time
-`τ` is exponential with rate `2 / (1 + f)` and, given the genealogy σ-algebra `m`, the
-divergence `D` has conditional mean `θ (T + τ)`, then `E D = θ (T + (1 + f) / 2)`
-(for `f > -1`). No integrability hypothesis on `D` is needed: if `D` were not integrable its
-conditional expectation would be `0` (Mathlib's convention), and the hypothesis would force
-`θ = 0`, where the identity reads `0 = 0`.
+Let $\mu$ be a probability measure on a measurable space $(\Omega, \mathcal{F})$, $\mathcal{G} \subseteq \mathcal{F}$ a sub-σ-algebra, and $\theta, T, f$ real with $f > -1$. Let $\tau$ have the exponential law with rate $2/(1 + f)$ under $\mu$, and let $D$ be a real function whose conditional expectation given $\mathcal{G}$ equals $\theta(T + \tau)$ $\mu$-almost everywhere. Then
+
+$$\int D \, d\mu = \theta\Bigl(T + \frac{1 + f}{2}\Bigr) = m_D(\theta, T, f),$$
+
+the [expected divergence](hka-div-mean.md) (Hudson, Kreitman & Aguadé 1987). No integrability of $D$ is assumed: by the convention that the conditional expectation of a non-integrable function is $0$, the hypothesis then forces $\theta = 0$.
+
+## Sources
+
+- R. R. Hudson, M. Kreitman and M. Aguadé, *A test of neutral molecular evolution based on nucleotide data*, Genetics 116 (1987), 153–159.

@@ -6,4 +6,4 @@ $\times$ and parentheses. For every positive integer $n$, $\log_2(1 + n) \le \lV
 
 ## Sources
 
-- Juan Arias de Reyna, "Complexity of Natural Numbers", Corollary 1.
+- Juan Arias de Reyna, *Complexity of Natural Numbers*, INTEGERS 24 (2024), Article A19, Corollary 1.

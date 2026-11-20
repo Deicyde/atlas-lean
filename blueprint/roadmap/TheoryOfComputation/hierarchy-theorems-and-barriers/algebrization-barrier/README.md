@@ -6,3 +6,8 @@
 - [Answer bits of the algebraic extension oracle](ext-answer.md)
 - [Algebraic extension oracles](is-algebraic-extension.md)
 - [Aaronson-Wigderson: the algebrization barrier](aaronson-wigderson-algebrization.md)
+
+## Related topics
+
+- [IP = PSPACE](../../randomized-and-quantum-complexity/ip-eq-pspace.md): the theorem proved by
+  arithmetization, the technique this barrier was designed to cover.

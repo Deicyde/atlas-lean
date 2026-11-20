@@ -1,3 +1,5 @@
 # Nonaliasing restricts to the left part of a union
 
-Actual left-domain restriction of an ownership union preserves map nonalias.
+Let $\Gamma$ be a service environment, $\Delta$, $\Theta$ ownership contexts and $f$ a map from
+names to names that does not alias $\Delta \cup \Theta$ with $\Gamma$. Then $f$ does not alias
+$\Delta$ with $\Gamma$.

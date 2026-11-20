@@ -8,4 +8,4 @@ $$B_n = \sum_{i=0}^{n} (-1)^i \, \frac{i!}{i+1} \, S(n, i).$$
 
 ## Sources
 
-- Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 9.
+- Bakir Farhi, *Formulas Involving Bernoulli and Stirling Numbers of Both Kinds*, Journal of Integer Sequences 28 (2025), Article 25.2.6, Corollary 9.

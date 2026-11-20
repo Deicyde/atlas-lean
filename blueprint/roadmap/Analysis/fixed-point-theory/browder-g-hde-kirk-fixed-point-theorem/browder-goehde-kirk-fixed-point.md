@@ -7,4 +7,7 @@ $x, y \in K$, then $f$ has a fixed point in $K$: there is $y \in K$ with $f(y) =
 
 ## Sources
 
-- F. Browder, Proc. Nat. Acad. Sci. USA 1965, D. Göhde, Math. Ann. 1965, and W. Kirk, Amer. Math. Monthly 1965-66, fixed-point theorem for nonexpansive mappings in uniformly convex Banach spaces; textbook Goebel and Kirk, 1990; Lean states complete uniformly convex real case with `Bornology.IsBounded` convex set.
+- F. E. Browder, *Nonexpansive nonlinear operators in a Banach space*, Proc. Nat. Acad. Sci. USA 54 (1965), 1041–1044.
+- D. Göhde, *Zum Prinzip der kontraktiven Abbildung*, Math. Nachr. 30 (1965), 251–258.
+- W. A. Kirk, *A fixed point theorem for mappings which do not increase distances*, Amer. Math. Monthly 72 (1965), 1004–1006.
+- K. Goebel and W. A. Kirk, *Topics in Metric Fixed Point Theory*, Cambridge University Press, 1990. Lean states complete uniformly convex real case with `Bornology.IsBounded` convex set.

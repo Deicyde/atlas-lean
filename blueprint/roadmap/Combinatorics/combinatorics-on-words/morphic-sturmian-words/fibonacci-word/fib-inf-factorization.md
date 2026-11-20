@@ -9,4 +9,4 @@ $f = 0 \cdot 1 \cdot f_0 \cdot f_1 \cdot f_2 \cdots$.
 
 ## Sources
 
-- Gabriele Fici, "Factorizations of the Fibonacci Infinite Word", Journal of Integer Sequences 18 (2015), Article 15.9.3, equation `fibo`.
+- Gabriele Fici, *Factorizations of the Fibonacci Infinite Word*, Journal of Integer Sequences 18 (2015), Article 15.9.3, Section 2, Proposition 2, https://cs.uwaterloo.ca/journals/JIS/VOL18/Fici/fici5.html

@@ -1,11 +1,10 @@
-# Real-valued log-MGF expression
+# Real-valued log moment generating function
 
-**Real-valued log-MGF expression** `Λ(t) = log E[exp ⟪t, X⟫]`.
+For a measure $\mu$ on $\Omega$, $X : \Omega \to \mathbb{R}^d$ and $t \in \mathbb{R}^d$,
 
-For a random vector `X : Ω → ℝᵈ`, this returns the logarithm of the moment
-generating function evaluated at the dual variable `t ∈ ℝᵈ`, using the Euclidean
-inner product. Under a probability measure it represents the cumulant generating
-function at directions where the exponential is integrable. For a nonintegrable
-exponential, the Bochner integral is `0` and `Real.log 0 = 0`, so this definition
-returns `0`. The bounds below explicitly require exponential integrability.
-Ported from v1.
+$$\Lambda(t) = \log \int e^{\langle t, X(\omega)\rangle} \, d\mu(\omega) \in \mathbb{R},$$
+
+the logarithm of the moment generating function at $t$, with the Euclidean inner product. Under a
+probability measure it is the cumulant generating function at the directions where
+$e^{\langle t, X\rangle}$ is integrable. When it is not integrable, the integral is read as $0$,
+and $\log 0 = 0$, so $\Lambda(t) = 0$; the bounds that use $\Lambda$ assume integrability.

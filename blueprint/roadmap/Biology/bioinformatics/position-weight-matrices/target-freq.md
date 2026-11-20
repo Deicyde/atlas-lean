@@ -1,3 +1,3 @@
 # Implicit target frequencies of a score matrix
 
-The implicit target frequencies `q_{ab} = pₐ p_b e^{λ s_{ab}}` of a score matrix.
+For $p$, $s$ and a real $\lambda$, the target frequency of the pair $(a, b)$ is $q_{ab} = p_a p_b\, e^{\lambda s_{ab}}$.

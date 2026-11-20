@@ -6,4 +6,4 @@ sum of $b$ of order $1$ at $n$ equals $b_n$.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (`H_n^{(p,1)} = H_n^{(p)}`, `H_n^{(p,1,1)} = H_n^{(p)}`, `H_n^{(p,1,2)} = H_n^{(p,1,3)} = H̄_n^{(p)}`).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 ($H_n^{(p,1)} = H_n^{(p)}$, $H_n^{(p,1,1)} = H_n^{(p)}$, $H_n^{(p,1,2)} = H_n^{(p,1,3)} = \overline{H}_n^{(p)}$).

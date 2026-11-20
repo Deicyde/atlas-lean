@@ -12,3 +12,6 @@ Statistics on Dyck paths (peaks, valleys, marked steps, subwords) and their vari
 - [Sulanke arrays](sulanke-arrays/README.md)
 - [Lindström–Gessel–Viennot lemma](lindstrom-gessel-viennot.md)
 - [Minimal lattice walks with unit and diagonal steps](minimal-lattice-walk-count.md)
+- [Weight of a vertex-list path](lgv-path-weight.md)
+- [Path weights split at a vertex](lgv-path-weight-append-cons.md)
+- [Weighted Lindström–Gessel–Viennot lemma, noncrossing form](lindstrom-gessel-viennot-weighted.md)

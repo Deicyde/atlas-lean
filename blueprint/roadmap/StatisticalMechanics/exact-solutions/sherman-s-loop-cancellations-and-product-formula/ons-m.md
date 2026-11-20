@@ -1,4 +1,3 @@
 # Last position meeting the reverse of the first hit
 
-The last position where `v` meets the reverse of its entry at `ons_l e rev v` (`0` if there is
-none).
+For a set $E$, $e \in E$, $\rho : E \to E$, $n \ge 1$ and a sequence $v$ of length $n$, the position $m$ is the largest element of the [set of positions](ons-m-set.md) $j$ with $v_j = \rho(v_\ell)$, and $0$ if that set is empty.

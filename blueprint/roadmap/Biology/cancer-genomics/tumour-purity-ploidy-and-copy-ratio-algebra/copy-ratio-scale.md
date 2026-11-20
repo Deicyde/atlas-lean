@@ -1,5 +1,7 @@
-# Ploidy-scaling non-identifiability, copy ratios
+# Ploidy scaling leaves copy ratios unchanged
 
-Scaling every copy number and the
-ploidy by `m > 0` and the purity to `α / (m - (m - 1) α)` leaves every copy ratio of Eq. 1
-unchanged.
+For $m > 0$, $0 \le \alpha \le 1$ and all real $\tau, q$,
+
+$$R(\alpha_m, m\tau, mq) = R(\alpha, \tau, q),$$
+
+where $R$ is the [copy ratio](copy-ratio.md) and $\alpha_m$ the [rescaled purity](scaled-purity.md).

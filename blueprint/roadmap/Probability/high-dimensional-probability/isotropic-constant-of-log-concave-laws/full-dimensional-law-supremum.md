@@ -8,4 +8,4 @@ $h(f) = -\int_{\mathbb{R}^n} f \log f$ is the differential entropy of $f$ and $\
 is the covariance matrix of the coordinates under $\mu$.
 
 Each such law has a density on all of $\mathbb{R}^n$, so laws supported on a proper affine
-subspace are not included here.
+subspace are not included in this supremum.

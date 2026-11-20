@@ -5,7 +5,7 @@ and for an integer $j$ let $P(j) = j(3j - 1)/2$ be the generalized pentagonal nu
 $\tau_{2p + 1}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^{r + s + t}$ over the triples
 of integers $(r, s, t)$ with $-n \le r, s, t \le n$ and $n = P(r) + p(P(s) + P(t))$.
 
-The record prints the condition as $n + 1 = P(r) + p(P(s) + P(t))$; that is false, and the
+The paper prints the condition as $n + 1 = P(r) + p(P(s) + P(t))$; that is false, and the
 proof's identity $\sum \tau_{2p+1}(n + 1) q^n \equiv \prod (1 - q^m)(1 - q^{pm})^2 \pmod{p}$
 gives the index $n$.
 

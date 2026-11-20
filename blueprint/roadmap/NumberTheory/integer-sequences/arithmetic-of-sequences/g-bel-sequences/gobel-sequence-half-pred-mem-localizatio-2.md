@@ -7,4 +7,4 @@ the localization $\mathbb{Z}_{(p)}$, that is, its $p$-adic valuation is nonnegat
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), odd case.
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), odd case.

@@ -1,6 +1,6 @@
 # Decomposition along $L^*$-blocks (Corollary 1)
 
-**Decomposition along $L^*$-blocks (Corollary 1).** Let $L$ and $\tilde L$ be a periodic
+Let $L$ and $\tilde L$ be a periodic
 Zeckendorf pair, let $E^*$ and $\tilde E^*$ be the collections determined by $L$ and $\tilde L$,
 and let $\varepsilon \in \tilde E^*$. Index coefficient functions from $1$. For $b \ge 0$, let
 $\eta_b$ agree with $\varepsilon$ at the indices $\le b$ and vanish elsewhere, and let

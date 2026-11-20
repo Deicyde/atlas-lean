@@ -1,4 +1,4 @@
-# The word of a set partition of $(-n, n)$
+# The word of a set partition of $[-n, n]$
 
 For a natural number $n$ and a set partition
 $P$ of $[-n, n] = \{-n, \dots, n\}$, let $L(P)$ be the list of $P$: the list of natural numbers
@@ -10,4 +10,4 @@ Restricted to type $B$ set partitions, this is the map $\varphi$ of Proposition 
 
 ## Sources
 
-- Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`).
+- Adam Buck, Jennifer Elder, Azia A. Figueroa, Pamela E. Harris, Kimberly J. Harry, and Anthony Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`).

@@ -1,5 +1,5 @@
-# CTL* state-sequence/execution bridge, path formulas
+# CTL* path satisfaction on runs and on labelled executions agree
 
-**CTL* state-sequence/execution bridge, path formulas.** CTL* path
-satisfaction on a state run agrees with the canonical labeled-execution
-presentation on the same state sequence.
+For a CTL$^{\ast}$ path formula $\pi$ and an infinite labelled execution of a transition system,
+$\pi$ holds on the sequence of states of the execution, in the semantics on state runs, if and
+only if it holds on the execution, in the semantics on labelled executions.

@@ -1,4 +1,4 @@
 # Poisson-binomial masses sum to one
 
-The Poisson-binomial masses sum to one (an identity for all real `p`; it is the expansion
-of `∏ ((1 - p i) + p i) = 1`).
+For every $p \in \mathbb{R}^m$, the [Poisson-binomial mass function](poisson-binomial-pmf.md)
+satisfies $\sum_{j=0}^{m} \pi_p(j) = 1$, the expansion of $\prod_i \bigl((1 - p_i) + p_i\bigr) = 1$.

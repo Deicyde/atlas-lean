@@ -1,10 +1,10 @@
 # Solid condensed homology of CW complexes
 
-## Light Profinite
+## The light profinite set $\mathbb{N} \cup \{\infty\}$
 
 - [The shift map on $\mathbb{N} \cup \{\infty\}$](shift.md)
 
-## Light Condensed
+## The light condensed abelian group $P$ and solid abelian groups
 
 - [Inclusion of the point at infinity](untitled.md)
 - [Splitting of the inclusion of the point at infinity](split.md)
@@ -22,7 +22,7 @@
 - [The solidity class](is-solid-2.md)
 - [The category of light solid abelian groups](solid.md)
 
-## Solid
+## Derived solidification and singular chains
 
 - [Derived category of light condensed abelian groups](dlight-cond-ab.md)
 - [Derived category of light solid abelian groups](dsolid.md)
@@ -49,7 +49,7 @@
 
 - [Inclusion of CW spaces into topological spaces](to-top-cat.md)
 
-## Solid
+## Derived solidification of CW complexes
 
 - [Derived solidification on CW complexes](derived-solidification-free-cwfunctor.md)
 - [Natural isomorphism specifying derived solidification on CW complexes](derived-solidification-free-cwfunctor-sp.md)

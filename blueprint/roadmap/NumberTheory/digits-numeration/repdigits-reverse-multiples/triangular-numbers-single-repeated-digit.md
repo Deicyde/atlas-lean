@@ -6,4 +6,4 @@ and $666$.
 
 ## Sources
 
-- Christian Hercher and Karl Fegert, "Triangular Numbers With a Single Repeated Digit", Theorem 1.
+- Christian Hercher and Karl Fegert, *Triangular Numbers With a Single Repeated Digit*, Journal of Integer Sequences 28 (2025), Article 25.2.1, Theorem 1, arXiv:2407.21487.

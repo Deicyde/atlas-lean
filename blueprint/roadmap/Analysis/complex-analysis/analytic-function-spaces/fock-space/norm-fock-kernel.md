@@ -1,3 +1,3 @@
 # Norm of the Fock kernel
 
-The norm of the Fock kernel is `Real.exp (‖z‖² / 2)`.
+For every $z \in \mathbb{C}$, the [Fock kernel](fock-kernel.md) satisfies $\|k_z\| = e^{|z|^2/2}$.

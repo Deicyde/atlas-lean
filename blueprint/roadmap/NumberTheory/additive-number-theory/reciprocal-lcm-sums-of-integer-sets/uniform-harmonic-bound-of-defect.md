@@ -11,7 +11,9 @@ $C_0 > 0$ there are a function $e : \mathbb{R} \to \mathbb{R}$ with $e(x) \to 0$
 $x \to \infty$ and a real $x_0$ such that for every real $x \ge x_0$ and every set $A$ of natural
 numbers whose defect at $x$ is at most $C_0^2$,
 
-$$S_A(x) \le \exp\bigl((C_0 + e(x)) (\operatorname{Log}_2 x)^{1/2} \operatorname{Log}_3 x\bigr).$$
+$$
+S_A(x) \le \exp\bigl((C_0 + e(x)) (\operatorname{Log}_2 x)^{1/2} \operatorname{Log}_3 x\bigr).
+$$
 
 The function $e$ and the threshold $x_0$ are chosen before $x$ and $A$, so the $o(1)$ error is
 uniform in $A$.

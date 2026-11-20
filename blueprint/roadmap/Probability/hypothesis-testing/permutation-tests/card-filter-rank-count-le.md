@@ -1,4 +1,5 @@
 # Counting lemma for rank counts
 
-Counting lemma: for any family of reals `t` indexed by `G` and any `k`, at most `k`
-elements `h` have rank count `#{g | t h ≤ t g}` at most `k`.
+Let $G$ be a finite set, $t : G \to \mathbb{R}$ and $k \in \mathbb{N}$. At most $k$ elements $h \in G$ have rank count $\#\{g : t(h) \le t(g)\}$ at most $k$:
+
+$$\#\big\{h \in G : \#\{g : t(h) \le t(g)\} \le k\big\} \le k.$$

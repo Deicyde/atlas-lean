@@ -10,7 +10,7 @@ over integers $m_1, \dots, m_r$, and $\zeta_q(\varnothing; \varnothing) = 1$.
 When $Q_1(0) = 0$ (the paper's condition $Q_1 \in X \mathbb{Q}[X]$), the summands with
 $m_1 > N$ have $q$-adic order greater than $N$, so this is the series
 $\sum_{m_1 > \dots > m_r > 0} \prod_{j=1}^{r} Q_j(q^{m_j}) / (1 - q^{m_j})^{k_j}$; for other data
-the value is a junk value.
+the value has no intended meaning.
 
 ## Sources
 

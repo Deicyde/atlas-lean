@@ -8,4 +8,4 @@ $i = 0, \dots, k - 1$ in order, of $\sum_{j=0}^{m_i - 1} q^{p_i + j d_i}$ copies
 list is nonincreasing, then every Gaussian partition whose dimension list equals it is a
 restricted Gaussian partition for $q$ and $n$.
 
-The witness realizes every block with an empty branch.
+Indeed, taking every chain of branch steps empty realizes this dimension list.

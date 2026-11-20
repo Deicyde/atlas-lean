@@ -12,4 +12,5 @@ The conditions on $u$ say that $u$ begins with $a$ and is fixed by $f$ applied l
 
 ## Sources
 
-- Sunic lines 569-584 state the equivalence and define prolongability and uniformity (`cubefree.tex`); Stipulanti lines 164-174 define morphism, coding, prolongability, and fixed point (`stip8.tex`).
+- Zoran Šunić, *Rational Tree Morphisms and Transducer Integer Sequences: Definition and Examples*, Journal of Integer Sequences 10 (2007), Article 07.4.3, Section 3, discussion after Definition 3.1 (Cobham's theorem, prolongable and $k$-uniform endomorphisms), https://cs.uwaterloo.ca/journals/JIS/VOL10/Sunic/cubefree.html
+- Narad Rampersad and Manon Stipulanti, *The Formal Inverse of the Period-Doubling Sequence*, Journal of Integer Sequences 21 (2018), Article 18.9.1, Section 2.1 (morphisms, codings, prolongability and fixed points), https://cs.uwaterloo.ca/journals/JIS/VOL21/Stipulanti/stip8.html

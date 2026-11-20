@@ -7,9 +7,11 @@ irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the number of monic irre
 polynomials that divide $f$ with multiplicity exactly $k$. Then the $j$-th moment of $\omega_k$
 over $N_h \cap M_n$ equals
 
-$$|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,$$
+$$
+|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,
+$$
 
-where the quotient is $0$ when $N_h \cap M_n$ is empty. This holds by definition.
+where the quotient is $0$ when $N_h \cap M_n$ is empty.
 
 ## Sources
 

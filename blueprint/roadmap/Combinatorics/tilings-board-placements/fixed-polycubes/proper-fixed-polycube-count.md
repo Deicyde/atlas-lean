@@ -6,4 +6,4 @@ polycubes in dimension $i$ whose proper dimension is $i$.
 
 ## Sources
 
-- Asinowski et al., JIS 15 (2012), Article 12.8.4, line 978, state $\mathrm{DX}(n,0) = 0$ for $n > 1$.
+- Andrei Asinowski, Gill Barequet, Ronnie Barequet, and Günter Rote, *Proper n-Cell Polycubes in n − 3 Dimensions*, Journal of Integer Sequences 15 (2012), Article 12.8.4, Section 8: $\mathrm{DX}(n,0) = 0$ for $n > 1$, <https://cs.uwaterloo.ca/journals/JIS/VOL15/Barequet/barequet2.pdf>.

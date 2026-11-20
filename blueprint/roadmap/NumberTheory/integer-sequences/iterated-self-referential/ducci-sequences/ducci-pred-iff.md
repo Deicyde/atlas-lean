@@ -8,4 +8,4 @@ $y_{n+1} = y_1$), if and only if $x_1 - x_2 + x_3 - \cdots + x_{n-1} - x_n = 0$ 
 
 ## Sources
 
-- Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Theorem 2.
+- Mark L. Lewis and Shannon M. Tefft, *The Maximum Length for Ducci Sequences on $\mathbb{Z}_m^n$ when $n$ is Even*, arXiv:2410.18204, Theorem 3.

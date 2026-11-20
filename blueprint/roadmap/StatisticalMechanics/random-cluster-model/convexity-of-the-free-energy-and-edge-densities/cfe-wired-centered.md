@@ -1,5 +1,7 @@
 # Wired centered free energy
 
-The wired centered free energy, obtained by subtracting
-`wpd_wiredAmbientTiltLogZ G bdry q 0` from its value at `t`. In the FK range `q > 0`,
-the ambient non-edge offset cancels.
+Let $G$ be a finite simple graph, $\partial$ a set of vertices of $G$ and $q, t \in \mathbb{R}$. The wired centered free energy is
+
+$$F^w_{G,\partial,q}(t) - F^w_{G,\partial,q}(0),$$
+
+where $F^w_{G,\partial,q}$ is the [wired per-edge ambient tilted log-normalizer](wpd-wired-ambient-tilt-log-z.md) with boundary set $\partial$.

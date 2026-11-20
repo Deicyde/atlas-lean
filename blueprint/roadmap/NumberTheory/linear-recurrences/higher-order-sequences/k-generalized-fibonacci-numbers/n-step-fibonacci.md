@@ -7,4 +7,4 @@ whose index $n - i$ is negative counts as $0$. In particular $F^{(0)}_n = 0$ for
 
 ## Sources
 
-- Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
+- Joshua P. Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.

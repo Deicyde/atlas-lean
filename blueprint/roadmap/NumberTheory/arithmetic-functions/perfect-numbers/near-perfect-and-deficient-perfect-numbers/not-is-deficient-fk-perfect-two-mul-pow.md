@@ -5,4 +5,4 @@ an odd prime and let $a$ be a natural number. Then $2p^a$ is not deficient $F_k$
 
 ## Sources
 
-- Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 18.
+- Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On near $F_k$-perfect and deficient $F_k$-perfect numbers", INTEGERS 25 (2025), #A86, https://math.colgate.edu/~integers/z86/z86.pdf, Theorem 18.

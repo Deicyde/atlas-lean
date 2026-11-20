@@ -1,4 +1,4 @@
-# Odd-rank curves y² = x³ − 2pqx: rank one cases
+# Odd-rank curves $y^2 = x^3 - 2pqx$: rank one cases
 
 Let $p \ne q$ be primes and let $E$ be
 the elliptic curve $y^2 = x^3 - 2pqx$ over $\mathbb{Q}$. Suppose that
@@ -12,4 +12,4 @@ interchanged is the same curve.
 
 ## Sources
 
-- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (i).
+- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve $y^2 = x^3 - 2pqx$*, INTEGERS 26 (2026), Article A51, Theorem 1 (i).

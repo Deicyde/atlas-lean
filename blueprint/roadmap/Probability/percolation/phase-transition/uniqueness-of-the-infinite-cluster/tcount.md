@@ -1,3 +1,3 @@
 # Number of trifurcation points in a box
 
-The number of trifurcation points of `ω` in the box `Λ_n`.
+For $d, n \in \mathbb{N}$ and a bond configuration $\omega$ on $\mathbb{Z}^d$, $T_n(\omega)$ is the number of sites of the box $\Lambda_n = [-n, n]^d \cap \mathbb{Z}^d$ that are [trifurcation points](is-trifurcation.md) of $\omega$.

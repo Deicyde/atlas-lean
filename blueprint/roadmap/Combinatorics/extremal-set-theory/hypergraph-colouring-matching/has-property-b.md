@@ -1,6 +1,6 @@
 # Property B for families of finite sets
 
-A family `F` of finite sets has **property B** (equivalently, it is
-`2`-colourable, i.e. its chromatic number is at most `2`) if there is a
-`2`-colouring of the ground set under which no
-member of `F` is monochromatic.
+A family $\mathcal{F}$ of finite subsets of a set $\alpha$ has property B (equivalently, it is
+$2$-colourable) if there is a colouring $f \colon \alpha \to \{0, 1\}$ under which no member of
+$\mathcal{F}$ is monochromatic: every $A \in \mathcal{F}$ contains elements $x$ and $y$ with
+$f(x) \ne f(y)$. In particular, no member of a family with property B has fewer than two elements.

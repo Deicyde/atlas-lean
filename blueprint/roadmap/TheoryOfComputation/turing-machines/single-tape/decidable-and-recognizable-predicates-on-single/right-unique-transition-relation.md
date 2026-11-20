@@ -1,4 +1,4 @@
 # Single-tape Turing machines are deterministic
 
-For a single-tape Turing machine $M$, every
-configuration of $M$ has at most one successor under the transition relation of $M$.
+Let $M$ be a single-tape Turing machine over a finite, nonempty alphabet. Every configuration of
+$M$ has at most one successor under the transition relation of $M$.

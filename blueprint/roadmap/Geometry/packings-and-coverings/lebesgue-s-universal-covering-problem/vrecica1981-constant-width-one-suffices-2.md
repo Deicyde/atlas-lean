@@ -8,4 +8,4 @@ $\Omega$ is a universal convex cover.
 
 ## Sources
 
-- Vrećica, A note on sets of constant width (1981).
+- Siniša Vrećica, A note on sets of constant width, Publications de l'Institut Mathématique (Beograd) (1981).

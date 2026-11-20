@@ -15,8 +15,7 @@ and
 $$G_k(s) \, \zeta(2s)^{4^k - 3^k - \binom{2^k}{2}} = \tilde G_{k,2}(s).$$
 
 The exponent $4^k - 3^k - \binom{2^k}{2}$ is a nonnegative integer, since
-$3^k + \binom{2^k}{2} \le 4^k$. The paper also gives an explicit Euler product for
-$\tilde G_{k,2}$, which is not stated here.
+$3^k + \binom{2^k}{2} \le 4^k$. The paper also gives an explicit Euler product for $\tilde G_{k,2}$.
 
 ## Sources
 

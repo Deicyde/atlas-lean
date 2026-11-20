@@ -1,5 +1,5 @@
 # Consistency of the observed information
 
-For i.i.d. observations with law `p θ₀ ν`,
-if `∂_θ score p θ₀` is measurable and integrable with `E ∂_θ score p θ₀ = -I(θ₀)` (the
-information identity), then `-(1/n) ∑_{i<n} ∂_θ score p θ₀ (X i) → I(θ₀)` in probability.
+In the setting of [Rao's score test](tendsto-in-distribution-score-statistic.md) ($X_0, X_1, \dots$ independent with law $P_{\theta_0}$), assume only that $x \mapsto \partial_\theta s_\theta(x)|_{\theta_0}$ is measurable and $P_{\theta_0}$-integrable with $\mathbb{E}[\partial_\theta s_{\theta_0}(X_0)] = -I(\theta_0)$ (the information identity). Then the observed information converges in probability:
+
+$$-\frac{1}{n} \sum_{i=0}^{n-1} \partial_\theta s_{\theta_0}(X_i) \to I(\theta_0).$$

@@ -10,4 +10,4 @@ $$
 
 ## Sources
 
-- aBa Mbirika, Janee Schrader, and Jürgen Spilker, "Pell and Associated Pell Braid Sequences as GCDs of Sums of k Consecutive Pell, Balancing, and Related Numbers," Journal of Integer Sequences 26 (2023), Article 23.6.4, Lemma, lines 367–369, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Mbirika/mbir5.tex>; attributed there to Horadam, Identity (30).
+- aBa Mbirika, Janee Schrader, and Jürgen Spilker, "Pell and Associated Pell Braid Sequences as GCDs of Sums of k Consecutive Pell, Balancing, and Related Numbers," Journal of Integer Sequences 26 (2023), Article 23.6.4, Lemma 9, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Mbirika/mbir5.html>; attributed there to Horadam, Identity (30).

@@ -9,4 +9,5 @@ The exponent is kept in exact algebraic form rather than as a rounded decimal.
 
 ## Sources
 
-- arXiv:2208.11644v1, Theorem 22 and the preceding KLS/thin-shell comparison.
+- A. Jambulapati, Y. T. Lee and S. S. Vempala, *A slightly improved bound for the KLS constant*, arXiv:2208.11644v1
+  (2022), Theorem 2 (the bound $\psi_n \lesssim \log^{3.2226} n$), obtained from the thin-shell bound of Theorem 22 and the comparison of the KLS and thin-shell constants.

@@ -10,4 +10,4 @@ converges unconditionally to $e^x (e^x - 1)^j / j!$.
 
 ## Sources
 
-- R. L. Graham, D. E. Knuth, and O. Patashnik, *Concrete Mathematics*, 2nd ed., Section 7.6 (the column generating function `(e^x - 1)^(j+1)/(j+1)!`, differentiated).
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, Section 7.6 (the column generating function `(e^x - 1)^(j+1)/(j+1)!`, differentiated).

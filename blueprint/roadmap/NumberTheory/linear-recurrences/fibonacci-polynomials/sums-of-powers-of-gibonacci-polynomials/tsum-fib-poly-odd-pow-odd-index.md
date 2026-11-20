@@ -20,4 +20,4 @@ These are the source's sums over $n \ge M$ with the summation index shifted to s
 
 ## Sources
 
-- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.7.
+- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), no. 2, 147–156, Theorem 1.7.

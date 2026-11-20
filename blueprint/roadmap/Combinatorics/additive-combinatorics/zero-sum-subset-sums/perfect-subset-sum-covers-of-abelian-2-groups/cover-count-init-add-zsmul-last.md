@@ -8,4 +8,4 @@ $b + (2t + 1)\,x_{k+1}$ exactly $2^j - c$ times.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 9 (`jis-2025-25.7.8-cor-9`). `t` ranges over `ℤ`.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 9 (`jis-2025-25.7.8-cor-9`). $t$ ranges over $\mathbb{Z}$.

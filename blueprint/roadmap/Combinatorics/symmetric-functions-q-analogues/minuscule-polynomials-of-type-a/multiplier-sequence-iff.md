@@ -10,4 +10,4 @@ roots are either all $\ge 0$ or all $\le 0$.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 18 (Pólya and Schur).
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 18 (Pólya and Schur).

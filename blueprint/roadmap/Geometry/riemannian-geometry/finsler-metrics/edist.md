@@ -14,4 +14,4 @@ It is not symmetric unless $F$ is reversible.
 
 ## Sources
 
-- Bao–Chern–Shen, *An Introduction to Riemann–Finsler Geometry*, §6.2. The formula is that of Mathlib's `riemannianEDist` with `‖v‖ₑ` replaced by `F v`.
+- Bao–Chern–Shen, *An Introduction to Riemann–Finsler Geometry*, §6.2. The formula is that of the Riemannian distance, with the norm $\|v\|$ of a tangent vector replaced by $F(v)$.

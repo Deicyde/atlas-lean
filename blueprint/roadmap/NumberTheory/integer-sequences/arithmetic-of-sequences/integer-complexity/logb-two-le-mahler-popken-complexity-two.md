@@ -5,4 +5,4 @@ $n \ge 1$, the $2$-ary (binary) Mahler–Popken complexity $\|n\|_2$ satisfies $
 
 ## Sources
 
-- John M. Campbell, "A Binary Version of the Mahler-Popken Complexity Function", Theorem 1.
+- John M. Campbell, *A Binary Version of the Mahler-Popken Complexity Function*, INTEGERS 24 (2024), Article A94, Theorem 1.

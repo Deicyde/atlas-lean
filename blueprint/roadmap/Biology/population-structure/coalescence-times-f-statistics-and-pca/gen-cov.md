@@ -1,4 +1,7 @@
 # Sample covariance of the centred genotype matrix
 
-The sample covariance `C i j = (1 / L) ∑ s, X i s * X j s` of the centred genotype matrix
-`X` over the `L` loci.
+For a real matrix $Z$ indexed by samples $\iota$ (finite) and loci $S$ (finite, $L = |S|$), the sample covariance of samples $i, j$ is
+
+$$C_{ij} = \frac{1}{L} \sum_{s \in S} X_{is} X_{js},$$
+
+where $X$ is the [column-centred matrix](centered.md), with the convention $x/0 = 0$.

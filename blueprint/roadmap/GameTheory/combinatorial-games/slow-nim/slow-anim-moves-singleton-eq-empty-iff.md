@@ -8,4 +8,4 @@ When $k = 0$ there is no move, since a move uses a nonempty set of exactly $k$ p
 
 ## Sources
 
-- Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.1 (the moves of `NIM(n, k)`).
+- Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.1 (the moves of $\mathrm{NIM}(n, k)$).

@@ -1,3 +1,3 @@
 # Vertical lattice direction
 
-The direction `w` is vertical (north or south).
+A direction $w \in \{0, 1, 2, 3\}$ is vertical when $w = 1$ (north) or $w = 3$ (south).

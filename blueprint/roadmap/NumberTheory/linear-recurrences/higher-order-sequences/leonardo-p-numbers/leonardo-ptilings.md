@@ -9,4 +9,4 @@ square or a $p$-mino; the lengths of all pieces sum to $n$.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Definition 1 and the set `K_{p,n}` before Proposition 1.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Definition 1 and the set $K_{p,n}$ before Proposition 1.

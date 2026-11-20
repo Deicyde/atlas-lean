@@ -9,4 +9,4 @@ $$\sum_{k=0}^{m} \binom{2n-1}{k} a_k =
 
 ## Sources
 
-- Richard Kollár, "Incomplete Finite Binomial Sums of Harmonic Numbers", Corollary 2, equation `Lemma7`.
+- Richard Kollár, *Incomplete Finite Binomial Sums of Harmonic Numbers*, J. Integer Seq. 27 (2024), Article 24.2.1, Corollary 2 (equation (8)), <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kollar/kollar6.html>.

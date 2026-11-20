@@ -1,3 +1,3 @@
 # Nonnegativity of the survival probability
 
-The survival probability is non-negative.
+For every real $s$, the [survival probability](survival-prob.md) satisfies $\pi(s) \ge 0$.

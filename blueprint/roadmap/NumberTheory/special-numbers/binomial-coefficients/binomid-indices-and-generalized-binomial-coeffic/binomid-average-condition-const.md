@@ -5,4 +5,4 @@ constant sequence $(c, c, c, \dots)$ satisfies the Average Condition.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 3.
+- Jonathan Caalim and Yu-ichi Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 3.

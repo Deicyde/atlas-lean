@@ -1,4 +1,3 @@
 # 1-skeleton of a cell complex
 
-The 1-skeleton of the cell complex `S`: vertices are the corners of cells, edges the sides of
- cells.
+For a finite set $S$ of unit cells, the $1$-skeleton of $S$ is the simple graph whose vertices are the corners of cells of $S$, two corners $u, v$ being adjacent when $\{u, v\}$ is a side of some cell of $S$.

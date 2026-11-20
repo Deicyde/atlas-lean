@@ -1,4 +1,4 @@
-# Mansour–Safadi Class 141 Wilf-equivalence
+# Open Wilf-equivalence of $\{\bar1\bar0, \bar10, \bar0\bar0, \bar00, 00\}$ and $\{\bar1\bar0, \bar10, \bar0\bar1, 0\bar1, 00\}$
 
 Length-2 signed patterns are written as in
 the paper, a bar marking a barred letter, and $B \sim C$ means that for every $n \ge 0$ the

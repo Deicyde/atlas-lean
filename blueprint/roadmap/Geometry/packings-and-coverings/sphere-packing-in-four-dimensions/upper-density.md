@@ -13,4 +13,4 @@ radius $R$ tends to infinity.
 
 ## Sources
 
-- CE2003 Appendix A, limsup as positive radii tend to infinity.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, Appendix A: the limsup as positive radii tend to infinity.

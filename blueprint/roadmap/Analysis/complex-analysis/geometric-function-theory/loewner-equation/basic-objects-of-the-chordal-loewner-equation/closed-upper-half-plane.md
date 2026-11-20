@@ -1,3 +1,3 @@
 # Closed upper half-plane
 
-The closed upper half-plane `{z : 0 ≤ Im z}`.
+The closed upper half-plane is the set $\{z \in \mathbb{C} : \operatorname{Im} z \ge 0\}$.

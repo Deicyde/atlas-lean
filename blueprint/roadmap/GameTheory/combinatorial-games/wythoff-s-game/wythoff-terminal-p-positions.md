@@ -12,4 +12,4 @@ so the non-terminal P-positions of $K^\ell$ are exactly the pairs $(a_n, b_n)$ a
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17 (`jis-2026-26.1.6-thm-17`).
+- Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17.

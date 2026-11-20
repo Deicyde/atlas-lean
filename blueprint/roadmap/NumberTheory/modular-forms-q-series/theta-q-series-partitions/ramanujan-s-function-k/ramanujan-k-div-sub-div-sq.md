@@ -8,7 +8,7 @@ $$
 \frac{(q;q)_\infty (q^5;q^5)_\infty^3}{q\,(q^{10};q^{10})_\infty^4},
 $$
 
-where $(a;x)_\infty = \prod_{n \ge 0} (1 - a x^n)$ is the infinite q-Pochhammer product.
+where $(a;x)_\infty = \prod_{n \ge 0} (1 - a x^n)$ is the infinite $q$-Pochhammer product.
 
 ## Sources
 

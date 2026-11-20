@@ -10,4 +10,4 @@ $g \in GL_2(\mathbb{R})$ the last case does not occur.
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function `G_g(t)` before Table 1.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function $G_g(t)$ before Table 1.

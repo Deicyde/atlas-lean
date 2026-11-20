@@ -1,4 +1,3 @@
 # Rescaling a gamma DFE divides its rate
 
-Rescaling a gamma DFE by `c > 0` (for example from `s` to `σ = 2Ns`, `c = 2N`) keeps the
-shape and divides the rate by `c`.
+For $a > 0$, $r > 0$ and $c > 0$, the image of the [gamma DFE](gamma-dfe.md) with parameters $(a, r)$ under $\sigma \mapsto c\sigma$ is the gamma DFE with parameters $(a, r / c)$. For example the law of $\sigma = 2Ns$ is obtained from that of $s$ with $c = 2N$.

@@ -17,4 +17,4 @@ When $k = n = 1$ the variance is $0$, and the last fraction reads $0/0$, which i
 
 ## Sources
 
-- Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 18 (`jis-2024-24.2.4-prop-18`).
+- Yuxuan Zhang and Yan Zhuang, *A Subfamily of Skew Dyck Paths Related to $k$-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 18 (`jis-2024-24.2.4-prop-18`).

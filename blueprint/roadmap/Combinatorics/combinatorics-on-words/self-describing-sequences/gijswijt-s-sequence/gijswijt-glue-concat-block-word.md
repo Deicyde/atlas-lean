@@ -11,4 +11,4 @@ $W(a) = T^{(m)}_t$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 16 (`jis-2025-25.4.6-lem-16`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 16 (`jis-2025-25.4.6-lem-16`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

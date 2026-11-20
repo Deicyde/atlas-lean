@@ -13,4 +13,4 @@ n \sum_{c \mid m} \varphi(c) \, |T|^{(n-1)m / \operatorname{lcm}(2, c)} \, t_c^{
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.

@@ -11,4 +11,4 @@ $w_{k+2} = a w_{k+1} + b w_k$.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 2 (definition of `B_W(n)` and `A_W(n)`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 2 (definition of $B_W(n)$ and $A_W(n)$).

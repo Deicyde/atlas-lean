@@ -6,4 +6,4 @@ $q^{m(k+1)} / (1 + q^{2(k+1)})^m$, that is, $q^{mn} / (1 + q^{2n})^m$ with $n = 
 
 ## Sources
 
-- Gerhold.
+- Živorad Tomovski and Stefan Gerhold, *Mathieu-Fibonacci Series*, Journal of Integer Sequences 25 (2022), Article 22.6.3, Section 3 (definition of $\hat L_m(q)$), <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gerhold/gerhold6.html>.

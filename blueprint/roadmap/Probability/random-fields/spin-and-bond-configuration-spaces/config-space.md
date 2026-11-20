@@ -1,4 +1,3 @@
 # Configuration space of a statistical-mechanics model
 
-The configuration space `E → Bool` of a statistical-mechanics model with sites (or bonds)
-indexed by `E`, carrying the product topology and the product σ-algebra.
+For a set $E$ of sites or bonds, the configuration space $\{0, 1\}^E$ of a statistical-mechanics model: a configuration $\omega$ assigns a value $\omega_e \in \{0, 1\}$ to every $e \in E$. It carries the product topology and the product σ-algebra.

@@ -12,4 +12,4 @@ $$\sum_{n \ge 1} \frac{(-1)^k \mu \nu f_r f_{2k}}{g_{2nk+r}^2 + (-1)^{r+k} \mu \
 
 ## Sources
 
-- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Theorem 3.2.
+- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), no. 1, 29–33, Theorem 3.2.

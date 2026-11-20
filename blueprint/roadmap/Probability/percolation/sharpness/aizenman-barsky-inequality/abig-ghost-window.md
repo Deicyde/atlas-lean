@@ -1,3 +1,3 @@
 # Ghost window of a finite set
 
-The window `S ∪ {ghost}` in the ghost graph.
+For a finite set $S \subseteq V$, the finite set $S \cup \{\mathfrak{g}\}$ of vertices of the ghost graph on $V \cup \{\mathfrak{g}\}$.

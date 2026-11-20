@@ -1,6 +1,10 @@
 # Bursty expression stationary law
 
-**Bursty expression stationary law** (Shahrezaei–Swain). For burst rate `κ > 0`, decay rate
-`γ > 0` and mean burst size `b ≥ 0`, the negative binomial law with size `a = κ / γ` (bursts per
-lifetime) and mean `a b` satisfies global balance for the bursty production–degradation
-chain.
+Let $\kappa > 0$ (burst rate), $\gamma > 0$ (decay rate) and $b \ge 0$ (mean burst size). Then the
+[negative binomial law](neg-binomial-real.md) with size $a = \kappa / \gamma$ (bursts per lifetime) and
+mean $a b$ satisfies global balance for the bursty production–degradation chain: its [net probability
+flow](burst-death-flow.md) vanishes at every state $n \in \mathbb{N}$.
+
+## Sources
+
+- V. Shahrezaei and P. S. Swain, *Analytical distributions for stochastic gene expression*, Proceedings of the National Academy of Sciences of the USA 105 (2008), 17256–17261.

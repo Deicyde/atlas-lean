@@ -9,4 +9,4 @@ When nonempty, the CL-span is an interval of the canonical line.
 
 ## Sources
 
-- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2 (definition of `clspan`).
+- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2 (definition of the CL-span).

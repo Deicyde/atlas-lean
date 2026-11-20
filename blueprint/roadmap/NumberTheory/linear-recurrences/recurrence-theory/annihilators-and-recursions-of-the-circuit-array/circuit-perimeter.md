@@ -11,4 +11,4 @@ $T_{r,d}$ is the triangle in row $r$ and diagonal $d$.
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.2).
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), no. 4, 290–304, equation (2.2).

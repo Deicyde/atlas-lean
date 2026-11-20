@@ -5,4 +5,4 @@ by recursion: the empty heap flattens to the empty list, the heap with an elemen
 front of a heap $t$ flattens to $x$ followed by the naive flattening of $t$, and the join of
 heaps $l$ and $r$ flattens to the naive flattening of $l$ followed by that of $r$.
 
-It is the reference against which the accumulating flattening is checked.
+The accumulating flattening gives the same list.

@@ -1,4 +1,6 @@
-# Continuity of the second moment pairing in `L²`
+# Continuity of the second moment pairing in $L^2$
 
-If `X n → Y` and `Z n → W` in `L²(P)`
-(all square integrable), then `E[X n Z n] → E[Y W]`.
+Let $(\Omega, P)$ be a measure space and $X_n, Z_n, Y, W$ real random variables in $L^2(P)$ with
+$X_n \to Y$ and $Z_n \to W$ in $L^2(P)$. Then
+
+$$\int_\Omega X_n Z_n \, dP \to \int_\Omega Y W \, dP .$$

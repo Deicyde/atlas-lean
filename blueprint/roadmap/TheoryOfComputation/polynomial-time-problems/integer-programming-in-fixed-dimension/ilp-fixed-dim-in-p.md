@@ -5,4 +5,4 @@ $d$, integer linear-programming feasibility in dimension $d$ is in the complexit
 
 ## Sources
 
-- H. W. Lenstra Jr., "Integer programming with a fixed number of variables", Mathematics of Operations Research 8 (1983), 538-548.
+- Hendrik W. Lenstra Jr., "Integer programming with a fixed number of variables", Mathematics of Operations Research 8 (1983), 538-548.

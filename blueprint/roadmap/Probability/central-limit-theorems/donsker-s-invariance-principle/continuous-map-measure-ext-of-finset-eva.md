@@ -1,6 +1,7 @@
-# Finite-dimensional distributions determine laws on $C((0,1))$
+# Finite-dimensional distributions determine laws on $C([0,1])$
 
-Probability measures on `C([0,1], ℝ)` are determined by their finite-dimensional
-distributions. Compatibility wrapper around
-`MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval`
-at `T = 1`; the projective-limit argument lives there, not here.
+Let $\mu$ and $\nu$ be probability measures on $C([0,1], \mathbb{R})$ with the Borel
+$\sigma$-algebra of the topology of uniform convergence. If for every finite set
+$I \subseteq [0,1]$ the image measures of $\mu$ and $\nu$ under $f \mapsto (f(t))_{t \in I}$
+coincide, then $\mu = \nu$: probability measures on $C([0,1], \mathbb{R})$ are determined by
+their finite-dimensional distributions.

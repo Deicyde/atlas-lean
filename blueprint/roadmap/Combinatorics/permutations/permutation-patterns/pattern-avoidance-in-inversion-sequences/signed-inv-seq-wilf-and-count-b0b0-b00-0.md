@@ -1,4 +1,4 @@
-# Wilf-equivalence and count for {0̄0̄, 0̄0, 01̄} (Lemma 2)
+# Signed inversion sequences avoiding $\{\bar0\bar0, \bar00, 0\bar1\}$
 
 Write a length-2 signed pattern
 as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller than

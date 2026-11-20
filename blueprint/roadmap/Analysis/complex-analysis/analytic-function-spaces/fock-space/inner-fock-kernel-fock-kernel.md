@@ -1,4 +1,3 @@
 # Inner product of two Fock kernels is an exponential
 
-The inner product of two Fock kernels is the Fock kernel function
-`Complex.exp (z * conj w)`.
+For all $z, w \in \mathbb{C}$, the [Fock kernels](fock-kernel.md) satisfy $\langle k_z, k_w \rangle = e^{z \bar w}$.

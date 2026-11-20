@@ -7,4 +7,5 @@ to $0$ as $n \to \infty$.
 
 ## Sources
 
-- Díaz, Kirousis, Mitsche, and Pérez-Giménez, *On the satisfiability threshold of formulas with three literals per clause* (2009), catalogue upper bound `4.490`.
+- Josep Díaz, Lefteris Kirousis, Dieter Mitsche and Xavier Pérez-Giménez, *On the satisfiability threshold of formulas with three literals per clause*, Theoret. Comput. Sci. 410(30–32) (2009), 2920–2934.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{52a}$, satisfiability threshold for random 3-SAT, https://teorth.github.io/optimizationproblems/constants/52a.html.

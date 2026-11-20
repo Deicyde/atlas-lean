@@ -6,4 +6,4 @@ the coefficient $\rho(12, 3)$ equals $5$.
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (14) and Table 1.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (14) and Table 1.

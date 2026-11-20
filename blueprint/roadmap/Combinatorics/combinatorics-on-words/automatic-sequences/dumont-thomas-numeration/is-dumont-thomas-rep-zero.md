@@ -7,4 +7,4 @@ representation of the integer $0$ with respect to $\eta$, $u$ and $p$.
 
 ## Sources
 
-- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of `rep_u`).
+- Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of $\mathrm{rep}_u$).

@@ -1,6 +1,6 @@
 # Type-substitution algebra for impredicative System F
 
-## System F
+## Lifting renamings
 
 - [Lifted identity renaming is the identity](lift-ren-id.md)
 - [Lifting preserves composition of renamings](lift-ren-comp.md)

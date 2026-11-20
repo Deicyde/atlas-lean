@@ -9,4 +9,4 @@ $n \, g_{k,l}(n) \equiv a b p^{r-1} \pmod{p^r}$ for every natural number $n$ wit
 
 ## Sources
 
-- Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 20 (`jis-2024-24.8.1-lem-20`).
+- Hibiki Gima, Toshiki Matsusaka, Taichi Miyazaki, and Shunta Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 20 (`jis-2024-24.8.1-lem-20`).

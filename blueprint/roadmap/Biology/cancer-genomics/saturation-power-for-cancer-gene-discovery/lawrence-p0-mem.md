@@ -1,4 +1,3 @@
-# Background mutation probability lies in (0, 1)
+# Background mutation probability lies in the half-open unit interval
 
-The background probability is a probability below one: `0 ≤ p₀ < 1` for
-`0 ≤ μ f_g < 1` and `L ≥ 0`.
+Let $0 \le \mu f_g < 1$ and $L \ge 0$. Then the [background probability](lawrence-p0.md) satisfies $0 \le p_0 < 1$.

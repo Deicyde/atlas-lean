@@ -5,10 +5,9 @@ subsets of $X$ (one containing every subset of each of its members) that contain
 there is a point $x \in X$ such that every intersecting subfamily $G \subseteq F$ (one in which
 any two distinct members meet) has at most as many members as the star $\{A \in F : x \in A\}$.
 
-Resolved true: Chang, Liu, and Liu (arXiv:2609.19123, 2026) prove Chvátal's conjecture. Ellis,
-Filmus, and Friedgut (arXiv:2609.28404) give an independent spectral proof, and Keevash
-(arXiv:2609.23595) proves the stronger Kahn flow conjecture. erdosproblems.com/701 lists the
-Chang–Liu–Liu proof claim with a Lean formalization by Boon Suan Ho.
+Chang, Liu and Liu proved Chvátal's conjecture (arXiv:2609.19123, 2026). Ellis, Filmus and
+Friedgut gave an independent spectral proof (arXiv:2609.28404), and Keevash proved the stronger
+Kahn flow conjecture (arXiv:2609.23595).
 
 ## Sources
 

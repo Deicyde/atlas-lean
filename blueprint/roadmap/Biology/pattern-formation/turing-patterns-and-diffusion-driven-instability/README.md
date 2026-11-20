@@ -16,13 +16,13 @@
 
 - [Trace of the mode matrix](trace-mode-matrix.md)
 - [Determinant of the mode matrix is the dispersion polynomial](det-mode-matrix.md)
-- [Routh–Hurwitz for `2 × 2` matrices](exists-eigenvalue-re-pos-iff.md)
+- [Routh–Hurwitz criterion for $2 \times 2$ matrices](exists-eigenvalue-re-pos-iff.md)
 - [Instability criterion for a Fourier mode via trace and determinant](is-unstable-mode-iff.md)
 - [Dispersion relation](fourier-mode-is-linearized-solution-iff.md)
 - [Amplitude of a Fourier mode](norm-fourier-mode-zero.md)
 - [Fourier mode is largest at the origin](norm-fourier-mode-le.md)
 - [Fourier mode grows unboundedly iff its growth rate is positive](tendsto-norm-fourier-mode-iff.md)
-- [A Fourier mode grows iff `J - k² D` has an eigenvalue with positive real part](is-unstable-mode-iff-exists-growing.md)
+- [A Fourier mode grows iff $J - k^2 D$ has an eigenvalue with positive real part](is-unstable-mode-iff-exists-growing.md)
 
 ## Diffusion-driven instability
 
@@ -36,18 +36,18 @@
 - [Turing's criterion](exists-is-unstable-mode-iff.md)
 - [Critical wavenumber is unstable under Turing's criterion](is-unstable-mode-sqrt-critical-wavenumbe.md)
 - [Critical wavenumber at the Turing bifurcation threshold](critical-wavenumber-sq-of-threshold.md)
-- [`f_u` and `g_v` have opposite signs](mul-neg-of-exists-is-unstable-mode.md)
+- [$f_u$ and $g_v$ have opposite signs](mul-neg-of-exists-is-unstable-mode.md)
 - [The inhibitor diffuses faster](lt-of-exists-is-unstable-mode.md)
 
 ## Unstable band and finite domains
 
 - [Dispersion polynomial is negative exactly on the unstable band](dispersion-det-neg-iff.md)
 - [Neumann modes have zero flux at the boundary](has-deriv-at-fourier-mode-neumann-wavenu.md)
-- [Finite domain](is-unstable-mode-neumann-wavenumber-iff.md)
+- [Unstable Neumann modes on a finite interval](is-unstable-mode-neumann-wavenumber-iff.md)
 - [Only finitely many Neumann modes are unstable](finite-set-of-is-unstable-mode-neumann-w.md)
 - [Small domains admit no pattern](not-is-unstable-mode-neumann-wavenumber.md)
 - [Long intervals have a squared Neumann wavenumber in any given band](exists-neumann-mem-band.md)
-- [Large domains pattern](exists-is-unstable-mode-neumann-wavenumb.md)
+- [Long enough intervals have an unstable Neumann mode](exists-is-unstable-mode-neumann-wavenumb.md)
 
 ## Schnakenberg kinetics
 
@@ -68,5 +68,5 @@
 - [Gierer–Meinhardt steady state is an equilibrium](gierer-meinhardt-steady-state-2.md)
 - [Computation of the Gierer–Meinhardt Jacobian at the steady state](jacobian-matrix-gierer-meinhardt.md)
 - [Determinant of the Gierer–Meinhardt Jacobian](det-gierer-meinhardt-jacobian.md)
-- [Stability of the Gierer–Meinhardt steady state without diffusion](trace-gierer-meinhardt-jacobian-neg-iff.md)
+- [Trace condition for the Gierer–Meinhardt steady state](trace-gierer-meinhardt-jacobian-neg-iff.md)
 - [Turing instability of the Gierer–Meinhardt kinetics](gierer-meinhardt-turing-iff.md)

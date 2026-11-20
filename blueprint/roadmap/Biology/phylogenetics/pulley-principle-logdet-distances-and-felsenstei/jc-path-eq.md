@@ -1,4 +1,3 @@
 # Chapman–Kolmogorov along a path
 
-The JC transition matrix along a path is the
-transition matrix of the total length.
+For every real $\mu$ and every list $t_1, \dots, t_k$, the [path matrix](jc-path.md) equals the [Jukes–Cantor transition matrix](../jukes-cantor-model/jc-prob.md) $P(t_1 + \cdots + t_k)$.

@@ -10,13 +10,17 @@ modulo the prime-to-$p$ part of the denominator of $x$), let $D = -v_p(x)$ be it
 $\bar{x}$ be the average of its repeating digits, put $e_0 = \max(D + 1, 0)$, and for a natural
 number $e$ let
 
-$$F(e) = \sum_{k=1}^{\lfloor x p^e \rfloor \bmod \tau_D p}
-\left(\delta_0(k) - \tfrac{1}{2} (1 - 1/p)(1 - 1/\tau_D)\right).$$
+$$
+F(e) = \sum_{k=1}^{\lfloor x p^e \rfloor \bmod \tau_D p}
+\left(\delta_0(k) - \tfrac{1}{2} (1 - 1/p)(1 - 1/\tau_D)\right).
+$$
 
 With
 
-$$\lambda_r = \frac{1}{L} \sum_{e=e_0}^{e_0 + L - 1} F(e) -
-\frac{\bar{x}}{2p} \left(1 - \frac{1}{\tau_D}\right),$$
+$$
+\lambda_r = \frac{1}{L} \sum_{e=e_0}^{e_0 + L - 1} F(e) -
+\frac{\bar{x}}{2p} \left(1 - \frac{1}{\tau_D}\right),
+$$
 
 there is a function $\nu_r$ from the natural numbers to the rationals such that
 $A_r(n) = \frac{1}{2} (\tau^{-1} - \gamma^{-1}) p^{2n} + \lambda_r n + \nu_r(n)$ for every natural
@@ -26,4 +30,4 @@ for all natural numbers $n \ge D$.
 
 ## Sources
 
-- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Theorem 4.
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in $\mathbb{Z}_p$-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Theorem 4.

@@ -1,3 +1,4 @@
 # Doob's clock for the stationary Ornstein–Uhlenbeck process
 
-Doob's clock `t ↦ e^{2θt}/(2θ)` for the stationary process (positive for `θ > 0`).
+For $\theta \in \mathbb{R}$ and $t \ge 0$, the stationary Doob clock is $\max\bigl(e^{2\theta t}/(2\theta), 0\bigr)$, with
+$1/0 = 0$; for $\theta > 0$ it is $e^{2\theta t}/(2\theta) > 0$, and for $\theta \le 0$ it is $0$.

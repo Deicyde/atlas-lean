@@ -1,4 +1,3 @@
 # Internal adjacency of the torus decoration
 
-Internal adjacency of the decoration: two darts at the same site whose directions are
-consecutive in `0, 1, 2, 3`.
+For $L \in \mathbb{N}$, darts $(p, \mu)$ and $(p', \nu)$ are internally adjacent when $p = p'$ and $\mu + 1 = \nu$ or $\nu + 1 = \mu$ as integers in $\{0, 1, 2, 3\}$.

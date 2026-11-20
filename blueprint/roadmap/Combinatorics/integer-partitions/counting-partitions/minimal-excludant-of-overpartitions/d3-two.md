@@ -6,4 +6,4 @@ one of three colors, or two parts $1$ in two different colors.
 
 ## Sources
 
-- Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.
+- Victor Manuel R. Aricheta and Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.

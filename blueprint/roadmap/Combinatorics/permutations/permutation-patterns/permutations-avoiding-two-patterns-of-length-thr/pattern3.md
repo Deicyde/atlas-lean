@@ -6,4 +6,4 @@ zero-based, so $v = (0, 2, 1)$ gives the pattern $132$ in the usual one-based on
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.
+- Tian Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.

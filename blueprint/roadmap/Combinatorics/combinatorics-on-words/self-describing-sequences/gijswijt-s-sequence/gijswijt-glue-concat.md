@@ -6,4 +6,4 @@ strings of the $m$th order Gijswijt sequence; it is empty when $t \le 1$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (strings `T_t^{(m)}`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (strings $T_t^{(m)}$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

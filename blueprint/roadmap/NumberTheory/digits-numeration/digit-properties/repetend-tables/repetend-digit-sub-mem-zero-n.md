@@ -8,7 +8,7 @@ For natural $s$ write $r_s = \lfloor B^{s+1}/n \rfloor \bmod B$ for the $s$-th b
 $1/n$, and put $D = n(r_e - r_d)$. Then $D = B + (B^{d+1} \bmod n) - (B^{e+1} \bmod n)$, and
 $D = 0$ or $D = n$.
 
-The statement is made for all natural numbers $i$ and $j$.
+No further condition on $i$ and $j$ is needed.
 
 ## Sources
 

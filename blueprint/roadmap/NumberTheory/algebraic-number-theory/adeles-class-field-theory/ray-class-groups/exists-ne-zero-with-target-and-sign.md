@@ -15,4 +15,4 @@ $\sigma_w(x) > 0$ if $w \in P$ and $\sigma_w(x) < 0$ if $w \notin P$.
 
 ## Sources
 
-- mapping toward ATLAS N406, Theorem 21.8, Section 21.3 (`weak_approx_coprime_sign_finitePart`, lines 2255--2568): the finite target `a` is lifted at source lines 2267--2275 with supported valuation-one hypothesis at 2277--2292; the finite/infinite index family below is at 2314--2385; modulus-dependent tolerances at 2388--2404; nonzero witness at 2406--2412; valuation preservation at 2414--2451; sign control at 2458--2477; and the strict absolute-value-to-discrete-valuation residue comparison at 2480--2568.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

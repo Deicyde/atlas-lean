@@ -15,4 +15,4 @@ $x_0, \dots, x_n$ in the sequences $\tau^k(X)$ with $k \ge 0$.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 8 (`jis-2025-25.5.1-lem-8`).
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 8 (`jis-2025-25.5.1-lem-8`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

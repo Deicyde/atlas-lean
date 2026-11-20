@@ -11,4 +11,4 @@ $$\sum_{i=0}^{n-1} \binom{2n-1}{i} H_i =
 
 ## Sources
 
-- Richard Kollár, "Incomplete Finite Binomial Sums of Harmonic Numbers", Theorem 3, equation `oddH`.
+- Richard Kollár, *Incomplete Finite Binomial Sums of Harmonic Numbers*, J. Integer Seq. 27 (2024), Article 24.2.1, Theorem 3 (equation (10)), <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kollar/kollar6.html>.

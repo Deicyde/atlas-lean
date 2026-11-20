@@ -14,4 +14,4 @@ $i-1, i, i+1, i+2$ form the pattern $2143$ or $3142$.
 
 ## Sources
 
-- Stefano Bilotta, Elisabetta Grazzini, and Elisa Pergola, "Enumeration of Two Particular Sets of Minimal Permutations", Journal of Integer Sequences 18 (2015), Article 15.10.2, Theorem `thm:characterization`, lines 230-237, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Grazzini/graz3.tex>.
+- Stefano Bilotta, Elisabetta Grazzini, and Elisa Pergola, "Enumeration of Two Particular Sets of Minimal Permutations", Journal of Integer Sequences 18 (2015), Article 15.10.2, Theorem 11, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Grazzini/graz3.pdf>.

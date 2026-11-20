@@ -8,4 +8,5 @@ $\theta(a) w = w \psi(a)$ for every letter $a$.
 
 ## Sources
 
-- Labbé 2014, Section 2; Lothaire.
+- Sébastien Labbé, *A Counterexample to a Question of Hof, Knill and Simon*, Electronic Journal of Combinatorics 21 (2014), #P3.11, Section 2, https://doi.org/10.37236/3758
+- M. Lothaire, *Algebraic Combinatorics on Words*, Cambridge University Press, 2002.

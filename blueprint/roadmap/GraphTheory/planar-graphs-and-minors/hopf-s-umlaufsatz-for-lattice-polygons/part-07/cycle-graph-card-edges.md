@@ -1,3 +1,3 @@
 # Number of edges of a cycle graph
 
-The cycle graph on `m + 3` vertices has `m + 3` edges.
+For every natural number $m$, the cycle graph $C_{m+3}$ on $\mathbb{Z}/(m+3)\mathbb{Z}$ (with $i \sim i \pm 1$) has exactly $m + 3$ edges.

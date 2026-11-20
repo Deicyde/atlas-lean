@@ -1,5 +1,7 @@
 # Splitting identity
 
-Summing `∏_{B ∈ π} |B|!` over the partitions `π` that merge to
-`π'` gives `(n - #π'.parts) / 2 · ∏_{B ∈ π'} |B|!`: a block of size `b` has
-`(2^b - 2) / 2` splits into two blocks, and `∑_{∅ ≠ A ⊊ B} |A|! |B \ A|! = (b - 1) b!`.
+For every partition $\pi' \in \mathcal{P}_n$,
+
+$$2 \sum_{\pi} \prod_{B \in \pi} |B|! = (n - |\pi'|) \prod_{B \in \pi'} |B|!,$$
+
+where the sum runs over the partitions $\pi$ from which $\pi'$ [arises by merging two blocks](is-merge.md). A block of size $b$ splits into two blocks in $(2^b - 2)/2$ ways, and $\sum_{\emptyset \ne A \subsetneq B} |A|!\,|B \setminus A|! = (b-1)\, b!$.

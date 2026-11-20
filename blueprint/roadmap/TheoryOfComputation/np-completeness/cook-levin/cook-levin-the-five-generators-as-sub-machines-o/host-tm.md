@@ -8,6 +8,3 @@ stack and the shared output stack as output stack, whose alphabets are the host 
 labels are the host labels, whose start label is the init generator's start label, whose
 internal state is a Boolean with initial value false, and whose program is the host program built
 from the five generator programs.
-
-This is a finiteness check only: the input and output stacks are provisional until the
-precomputation is attached.

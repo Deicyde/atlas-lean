@@ -33,7 +33,7 @@
 - [Matrix of a bounded operator on $\ell^2$](hs-matrix.md)
 - [Operator with Hilbert–Schmidt matrix is the operator of its matrix](eq-hs-operator-of-is-hilbert-schmidt-mat.md)
 - [Matrix of the Hilbert–Schmidt operator of a matrix](hs-matrix-hs-operator.md)
-- [Hilbert–Schmidt operator is independent of the summability proof](hs-operator-congr.md)
+- [Equal matrices give equal Hilbert–Schmidt operators](hs-operator-congr.md)
 - [Adjoint of a Hilbert–Schmidt operator](adjoint-hs-operator.md)
 - [Truncation of a matrix to its top-left block](hs-trunc.md)
 - [Truncated matrices are Hilbert–Schmidt](is-hilbert-schmidt-hs-trunc.md)

@@ -1,3 +1,3 @@
-# Permutations have fibers of size one
+# Permutations have fibers of size at most one
 
-A permutation symbol has fibers of size one.
+Every bijection $e : \mathbb{N} \to \mathbb{N}$ has [fibers bounded](has-bounded-fibers.md) by $1$.

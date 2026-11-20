@@ -8,4 +8,4 @@ $m \le \lfloor (n_e - (j - 1)) / (k - 1) \rfloor$.
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Theorem 9.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Analytical Study and Efficient Evaluation of the Josephus Function*, Journal of Integer Sequences 27 (2024), Article 24.3.8, Theorem 9.

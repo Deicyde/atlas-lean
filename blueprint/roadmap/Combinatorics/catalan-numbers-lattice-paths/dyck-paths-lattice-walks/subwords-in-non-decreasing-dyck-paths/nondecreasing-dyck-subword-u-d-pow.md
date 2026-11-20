@@ -16,4 +16,4 @@ right side is $3 \cdot 1 - 0 + F_1 + l_{1,0} - l_{0,0} = 4$ (the empty path has 
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16 (`jis-2025-25.1.6-thm-16`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16 (`jis-2025-25.1.6-thm-16`).

@@ -1,4 +1,4 @@
-# Hyper Lucas-Leonardo p-numbers
+# Hyper Lucas-Leonardo $p$-numbers
 
 For natural numbers $p$, $n$ and $k$, the hyper
 Lucas-Leonardo $p$-number $R^{(k)}_{p,n}$ is the rational number defined by
@@ -19,4 +19,4 @@ entries.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Definition 2.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Definition 2.

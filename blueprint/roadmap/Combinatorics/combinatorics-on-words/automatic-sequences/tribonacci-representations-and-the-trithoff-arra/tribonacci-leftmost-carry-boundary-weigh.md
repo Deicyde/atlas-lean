@@ -8,4 +8,4 @@ least its position in $0w$, and the weight of $u$ is at most the weight of $w$.
 
 ## Sources
 
-- E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 15 (`jis-2025-25.5.4-lem-15`).
+- Eric Chen, Adam Ge, Andrew Kalashnikov, Ella Kim, Evin Liang, Mira Lubashev, Matthew Qian, Rohith Raghavan, Benjamin Taycher, Samuel Wang and Tanya Khovanova, *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 15 (`jis-2025-25.5.4-lem-15`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Khovanova/khova43.html

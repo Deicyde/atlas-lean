@@ -7,4 +7,4 @@ $$F_r(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n-k}{k} r^k.$$
 
 ## Sources
 
-- Paul Barry and Aoife Hennessy, *Notes on a Family of Riordan Arrays and Associated Integer Hankel Transforms*, Journal of Integer Sequences 12 (2009), Article 09.5.3.
+- Paul Barry and Aoife Hennessy, *Notes on a Family of Riordan Arrays and Associated Integer Hankel Transforms*, Journal of Integer Sequences 12 (2009), Article 09.5.3, Proposition 4 (the generalized Fibonacci numbers).

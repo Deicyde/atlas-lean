@@ -8,4 +8,4 @@ $m$, $n$ and $q$ the sets satisfy $S(2m, 2n, 2q) = T(m, n, q)$.
 
 ## Sources
 
-- Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Lemma 18 (`jis-2024-24.3.6-lem-18`).
+- Joshua P. Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Lemma 18.

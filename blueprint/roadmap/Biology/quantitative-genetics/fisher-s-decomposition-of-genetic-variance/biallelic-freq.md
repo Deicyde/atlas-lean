@@ -1,4 +1,3 @@
 # Allele frequencies at a biallelic locus
 
-Allele frequencies at a biallelic locus: `A₁` (`true`) has frequency `q₁` and `A₂`
-(`false`) has frequency `1 - q₁`.
+For a real number $q_1$, the biallelic allele weights give allele $A_1$ the weight $q_1$ and allele $A_2$ the weight $1 - q_1$.

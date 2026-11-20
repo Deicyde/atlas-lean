@@ -6,3 +6,7 @@ $(t_1, \mu_1)$ and also to $(t_2, \mu_2)$, then $t_1 = t_2$ and $\mu_1 = \mu_2$.
 This relies on allocating each fresh location at the end of the store, at the index equal to the
 length of $\mu$; with TAPL's arbitrary choice of fresh location only the result up to renaming of
 locations is unique.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Figure 13-1.

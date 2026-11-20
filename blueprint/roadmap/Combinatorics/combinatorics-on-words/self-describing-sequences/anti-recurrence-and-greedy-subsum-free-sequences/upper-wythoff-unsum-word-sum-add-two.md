@@ -10,4 +10,4 @@ bare digit sum of the first word is $3 \ne F_5 = 5$.
 
 ## Sources
 
-- Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 3 (`jis-2025-25.3.8-lem-3`).
+- Wieb Bosma, René Bruin, Robbert Fokkink, Jonathan Grube, Anniek Reuijl and Thian Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 3 (`jis-2025-25.3.8-lem-3`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Fokkink/fokkink9.html

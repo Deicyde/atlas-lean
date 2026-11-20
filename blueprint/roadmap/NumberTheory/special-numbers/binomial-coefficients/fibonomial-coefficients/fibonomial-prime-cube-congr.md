@@ -16,4 +16,5 @@ coefficients.
 
 ## Sources
 
-- Christian Ballot, *The Congruence of Wolstenholme for Generalized Binomial Coefficients Related to Lucas Sequences*, Journal of Integer Sequences 18 (2015), Article 15.5.4, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Ballot/ballot14.tex>, Theorem `thm:KW` (rewriting Lemma 3 of Kimball and Webb), equation `eq:Fib`, lines 144-150.
+- Christian Ballot, *The Congruence of Wolstenholme for Generalized Binomial Coefficients Related to Lucas Sequences*, Journal of Integer Sequences 18 (2015), Article 15.5.4, Theorem 2, congruence (4), https://cs.uwaterloo.ca/journals/JIS/VOL18/Ballot/ballot14.html.
+- W. Kimball and W. Webb, *A congruence for Fibonomial coefficients modulo $p^3$*, Fibonacci Quarterly 33 (1995), 290–297, Lemma 3 (restated as Theorem 2 by Ballot).

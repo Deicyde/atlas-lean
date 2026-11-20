@@ -1,5 +1,3 @@
 # Escape profile determines sweep location and strength
 
-The escape-probability profile determines the sweep location and its strength. Positivity
-of one of the two strength parameters is enough: the location is the unique zero of that
-profile, and the strengths then agree by injectivity of `exp`.
+Let $\alpha_1, \alpha_2, x_1, x_2$ be real numbers with $\alpha_2 > 0$, and suppose that $e_{\alpha_1}(x_1, y) = e_{\alpha_2}(x_2, y)$ for every real $y$, where $e$ is the [escape probability](escape-prob.md). Then $x_1 = x_2$ and $\alpha_1 = \alpha_2$.

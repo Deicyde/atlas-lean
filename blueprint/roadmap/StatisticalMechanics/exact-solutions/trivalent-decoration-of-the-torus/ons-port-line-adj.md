@@ -1,3 +1,3 @@
 # Adjacency of directions along the port line
 
-Two directions are adjacent in the order `0, 1, 2, 3` of the internal path at a site.
+For directions $\alpha, \beta \in \{0, 1, 2, 3\}$, $\alpha$ and $\beta$ are adjacent along the port line when $\alpha + 1 = \beta$ or $\beta + 1 = \alpha$ as integers.

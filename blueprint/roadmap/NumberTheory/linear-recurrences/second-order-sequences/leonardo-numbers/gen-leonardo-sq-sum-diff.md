@@ -14,8 +14,8 @@ $$L_{k,m+n}^2 + L_{k,m-n-1}^2 =
 
 In the second identity the last term inside the parentheses is $L_{k,m-n-1}$. The paper as
 printed shows $L_{k,m-n}$ there, which is false: at $k = 1$, $m = 3$, $n = 1$ the printed
-identity reads $82 = 78$. The reading used here agrees with the paper's outline derivation.
+identity reads $82 = 78$. The form above agrees with the paper's outline derivation.
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.6.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 2.6.

@@ -1,4 +1,4 @@
 # Hoare invariant rule for iteration
 
-A one-step invariant holds after every finite number of iterations,
-including zero, via CSLib's canonical closure-preservation theorem.
+If $\{I\}\, a\, \{I\}$, then $\{I\}\, a^*\, \{I\}$: a set of worlds preserved by one step of $a$ is
+preserved by every finite number of steps, including zero.

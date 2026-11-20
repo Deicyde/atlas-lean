@@ -1,6 +1,6 @@
 # Domination of an inner wired FK measure by an outer one
 
-## A.1. Inner edges
+## Inner edges
 
 - [Inner vertex of the outer graph](ocd-is-inner-vert.md)
 - [Image of an inner-graph edge in the outer graph](ocd-inner-edge.md)
@@ -8,7 +8,7 @@
 - [Edge map sends $\{x, y\}$ to $\{\iota x, \iota y\}$](ocd-inner-edge-mk.md)
 - [Adjacency matching of the inner embedding](ocd-adj-match.md)
 
-## A.2. Gluing configurations
+## Gluing configurations
 
 - [Gluing of inner and outer configurations](ocd-psi-ext.md)
 - [Restriction of an outer configuration to inner edges](ocd-inner-restrict.md)
@@ -22,7 +22,7 @@
 - [Agreeing configuration is the gluing of its own restriction](ocd-psi-ext-inner-restrict-of-agrees-off.md)
 - [Conditioning fibre is the set of gluings](ocd-cond-fibre-eq-image-psi-ext.md)
 
-## B.1. Definitions
+## Definitions
 
 - [Graph of open non-inner edges](ocd-outside-open-graph.md)
 - [Outside graph with the wired boundary clique](ocd-outside-graph.md)
@@ -33,7 +33,7 @@
 - [Inner cluster graph with the induced wiring](ocd-inner-graph.md)
 - [Cluster graph of a glued configuration](ocd-full-graph.md)
 
-## B.2. Reachability
+## Reachability
 
 - [Outside graph is a subgraph of the full cluster graph](ocd-outside-graph-le-full-graph.md)
 - [Glued configuration on inner edges ignores the outer configuration](ocd-psi-ext-eq-false-of-range.md)
@@ -46,7 +46,7 @@
 - [Full-graph and inner cluster reachability agree on embedded vertices](ocd-full-graph-reachable-v.md)
 - [Full-graph edges at non-inner vertices are outside-graph edges](ocd-full-graph-adj-of-outside.md)
 
-## B.3. Clusters of a glued configuration
+## Clusters of a glued configuration
 
 - [Outside-only vertex](ocd-outside-only.md)
 - [Outside-only vertices are not inner](ocd-outside-only-self-not-inner.md)
@@ -64,7 +64,7 @@
 - [Number of outside-only clusters](ocd-outside-shift.md)
 - [Glued cluster count is induced-wiring count plus outside-only clusters](ocd-num-clusters-bc-psi-ext.md)
 
-## C. Weights of glued configurations
+## Weights of glued configurations
 
 - [Edges of the inner graph map onto the inner edges of the outer graph](ocd-inner-edge-image-edge-finset.md)
 - [Outer Bernoulli edge weight of a configuration](ocd-psi-edge-factor.md)
@@ -74,7 +74,7 @@
 - [Positivity of the outer factor](ocd-psi-shift-pos.md)
 - [Factorization of the wired FK weight of a glued configuration](ocd-bc-weight-psi-ext.md)
 
-## D. The conditional measure on the inner graph
+## The conditional measure on the inner graph
 
 - [Factorization of the conditioned outer partition function](ocd-induced-bc-z-psi.md)
 - [Conditional outer measure is the induced-wiring FK measure](ocd-cond-bc-prob-psi-ext-eq-bc-prob.md)
@@ -83,7 +83,7 @@
 - [Free inner measure is dominated by every induced-wiring measure](ocd-free-le-induced-bc-prob.md)
 - [Free inner measure is dominated by the conditional outer measure](ocd-free-le-cond-bc-prob-inner-restrict.md)
 
-## E. Averaging over outside configurations
+## Averaging over outside configurations
 
 - [Projection closing every inner edge](ocd-out-proj.md)
 - [Projected configuration is closed on inner edges](ocd-out-proj-eq-false-of-range.md)
@@ -95,7 +95,7 @@
 - [Conditional outer wired probability at most the inner wired one, $q \ge 1$](ocd-cond-bc-prob-inner-restrict-le.md)
 - [Inner wired domination of the restricted outer wired measure](ocd-wired-inner-dominated-bc-prob.md)
 
-## F. Sub-boxes of the hypercubic lattice
+## Sub-boxes of the hypercubic lattice
 
 - [Lattice inclusion matches induced adjacency](ocd-lattice-adj-match.md)
 - [Inner vertex with an outside-graph edge lies on the inner boundary](ocd-bdry-in-of-outside-graph-adj.md)

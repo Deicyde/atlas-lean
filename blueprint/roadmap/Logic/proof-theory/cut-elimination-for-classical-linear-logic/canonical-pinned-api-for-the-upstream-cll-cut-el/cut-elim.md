@@ -1,4 +1,5 @@
 # Cut elimination for original classical linear logic proofs
 
-Every original CLL proof has a cut-free original proof of the same sequent.
-This wrapper uses classical atom equality and a classical list representative.
+Every proof of a sequent in classical linear logic has a cut-free proof of the same sequent, with
+cut-free proofs defined by the Boolean cut-freeness test. The construction decides equality of
+atoms classically and writes the sequent as a list chosen noncomputably.

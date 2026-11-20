@@ -36,3 +36,4 @@ for the Ising model.
 - [Exact solutions and duality](exact-solutions/README.md)
 - [Random currents and sharpness](random-currents-and-sharpness/README.md)
 - [Random-cluster model](random-cluster-model/README.md)
+- [Mean-field spin glasses](spin-glasses/README.md)

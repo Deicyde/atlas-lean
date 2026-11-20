@@ -1,6 +1,3 @@
 # A passing band check bounds the final offset
 
-Let $w, i, j \in \mathbb{N}$ and let
-$A$ be an alignment. If the band check of $A$ with width $w$ from offset $(i, j)$ is true, then
-$|(i + p) - (j + q)| \le w$, where $p$ and $q$ are the numbers of columns of $A$ whose first,
-respectively second, entry is present.
+If the [band check](banded-from.md) of $A$ from $(i, j)$ passes, then $|(i + n_1) - (j + n_2)| \le w$, where $n_1, n_2$ are the numbers of letters in the first and second rows of $A$.

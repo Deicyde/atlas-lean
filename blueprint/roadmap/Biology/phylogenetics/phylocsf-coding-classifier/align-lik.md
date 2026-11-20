@@ -1,4 +1,3 @@
 # Likelihood of an alignment of independent columns
 
-The likelihood of an alignment of `m` independent columns: the product of the site
-likelihoods.
+For a tree $t$, a root distribution $\pi$ and an alignment $A$ of $m$ columns $A_1, \dots, A_m$, the alignment likelihood is $\prod_{k=1}^{m} \mathcal{L}(t, \pi, A_k)$, where $\mathcal{L}$ is the [site likelihood](site-lik.md).

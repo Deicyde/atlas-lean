@@ -10,4 +10,4 @@ at $0$.
 
 ## Sources
 
-- Schork, On Generalized Stirling Numbers and Normal Ordering, Bessfirst formula. Defined independently from the meromorphic side.
+- Toufik Mansour, Matthias Schork, and Mark Shattuck, *The Generalized Stirling and Bell Numbers Revisited*, Journal of Integer Sequences 15 (2012), Article 12.8.3, Section 3, equation (21). Defined independently from the meromorphic side.

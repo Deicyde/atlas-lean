@@ -6,4 +6,4 @@ $\pi(n) \le 1.3\, n / \log n$, where $\log$ is the natural logarithm.
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 7 (`lem:primecounting_ub`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 7.

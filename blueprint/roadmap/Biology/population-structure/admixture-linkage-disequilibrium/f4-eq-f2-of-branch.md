@@ -1,8 +1,11 @@
 # f4 equals f2 for references branching off the path
 
-Branch points on the `A–B` path. Suppose that `A = A″ + uA`, `A′ = A″ + uA'`,
-`B = B″ + uB`, `B′ = B″ + uB'` at the level of lineage weights, where `w A″ - w B″` is
-disjoint in support from each of `uA`, `uB`, `uA'`, `uB'`, and each of `uA`, `uB` is disjoint
-from each of `uA'`, `uB'`. On a tree this says that the paths `A″–B″`, `A″–A`, `B″–B`,
-`A″–A′`, `B″–B′` share no edge (the vectors may be signed, so every rooting is allowed).
-Then `f4 A B A′ B′ = f2 A″ B″`.
+Let $M$ be a [drift model](../patterson-s-f-statistics/drift-model.md) with lineage weights $w$, and let $A, B, A', B', A'', B''$ be populations and $u_A, u_B, u_{A'}, u_{B'} \in \mathbb{R}^E$ with
+
+$$w(A, \cdot) = w(A'', \cdot) + u_A,\quad w(B, \cdot) = w(B'', \cdot) + u_B,\quad w(A', \cdot) = w(A'', \cdot) + u_{A'},\quad w(B', \cdot) = w(B'', \cdot) + u_{B'},$$
+
+such that for every edge $e$: $u(e)\, v(e) = 0$ for $u \in \{u_A, u_B\}$ and $v \in \{u_{A'}, u_{B'}\}$, and $\bigl(w(A'', e) - w(B'', e)\bigr) u(e) = 0$ for each $u \in \{u_A, u_B, u_{A'}, u_{B'}\}$. Then
+
+$$f_4(A, B; A', B') = f_2(A'', B''),$$
+
+for the [f2](../patterson-s-f-statistics/f2.md) and [f4](../patterson-s-f-statistics/f4.md) statistics of the population frequencies. On a tree the hypotheses say that the paths $A''$–$B''$, $A''$–$A$, $B''$–$B$, $A''$–$A'$ and $B''$–$B'$ share no edge in the stated pairs.

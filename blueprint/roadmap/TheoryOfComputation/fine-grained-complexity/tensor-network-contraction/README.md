@@ -12,3 +12,10 @@
 - [State padding preserves tensor-network values](state-padding-preserves-tensor-network-values/README.md)
 - [Grid value expanded over kernel choices](grid-value-eq-sum-choices.md)
 - [Entry bound for a converted tensor instance](abs-to-instance-le.md)
+
+## Sources
+
+- Claude (Anthropic), *A 2^o(n) Time Algorithm for 3-SAT*, paper with a Lean 4 formalization,
+  https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth; according to its README, the result was discovered by an internal research Claude
+  model and the formalization was written by AI models. The pages of this topic are adapted
+  from the tensor-network part of that formalization; they do not cover the whole algorithm.

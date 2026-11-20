@@ -9,4 +9,4 @@ This is one of Proposition 1's five indices at which the value lies in $\{\pm 1\
 
 ## Sources
 
-- Paul Thomas Young, *On the Brocard-Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Proposition 1.
+- Paul Thomas Young, *On the Brocard–Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Proposition 1.

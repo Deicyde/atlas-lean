@@ -10,4 +10,4 @@ Stores here are lists of terms rather than of values, so each entry is required 
 
 ## Sources
 
-- TAPL Definition 13.5.1.
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Definition 13.5.1.

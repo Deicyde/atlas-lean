@@ -1,5 +1,6 @@
 # Dual advancement under restriction splits into inner and outer cases
 
-Exact pure restriction projection. An internal matched pair changes
-only the bound pair at the same rank; an outer matched pair changes only the
-external context and retains the entire old bound pair.
+Let $c$ be a capability and $\Delta$, $\Xi$ ownership contexts such that $\nu_c\Delta$ dual-advances
+to $\Xi$. Then either $\Xi = \nu_d\Delta$ for some capability $d$ with the rank of $c$ (the bound
+pair advanced), or $\Xi = \nu_c\Delta'$ for some $\Delta'$ to which $\Delta$ dual-advances (an outer
+pair advanced).

@@ -1,3 +1,3 @@
 # Reindexing a cube function along an index bijection
 
-The function `f` on `{0, 1}^ι` transported to `{0, 1}^κ` along the bijection `e : κ ≃ ι`.
+For sets $K$ and $\iota$, a bijection $e : K \to \iota$ and $f : \{0, 1\}^\iota \to \mathbb{R}$, the transported function $f_e : \{0, 1\}^K \to \mathbb{R}$ is $f_e(y) = f(y \circ e^{-1})$.

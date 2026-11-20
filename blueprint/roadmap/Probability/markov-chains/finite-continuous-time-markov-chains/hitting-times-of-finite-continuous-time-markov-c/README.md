@@ -1,12 +1,12 @@
 # Hitting times of finite continuous-time Markov chains
 
-## Probability Theory
+## Hitting times
 
 - [Hitting time of a continuous-time Markov chain](ctmc-hitting-time.md)
 - [First-jump decomposition of a hitting time](ctmc-hitting-time-eq-add.md)
 - [Hitting time from inside the target set is zero](ctmc-hitting-time-eq-zero.md)
 
-## Is Rate Matrix
+## Mean hitting times for a rate matrix
 
 - [Mean hitting time, first-step equation](lintegral-ctmc-hitting-time.md)
 - [Mean hitting time from inside the target set is zero](lintegral-ctmc-hitting-time-of-mem.md)

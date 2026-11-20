@@ -5,4 +5,4 @@ series $\prod_{m \ge 1} (1 - X^m)$ in $\mathbb{Z}[[X]]$ is $1$.
 
 ## Sources
 
-- Euler's pentagonal number theorem as used in Sriram and Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, identity (1).
+- Euler's pentagonal number theorem as used in S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, identity (1).

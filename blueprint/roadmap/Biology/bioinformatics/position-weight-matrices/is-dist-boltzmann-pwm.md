@@ -1,3 +1,3 @@
 # Columns of the Boltzmann matrix are distributions
 
-Each column of the Boltzmann PWM is a distribution.
+For a nonempty alphabet and $q(b) > 0$ for every $b$, every column of the [Boltzmann matrix](boltzmann-pwm.md) is a distribution on $A$, for all energies and every $\lambda$.

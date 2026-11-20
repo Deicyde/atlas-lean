@@ -3,7 +3,8 @@
 For real numbers $\lambda$ and $\alpha$ and a natural number
 $n$, the degenerate harmonic term is $0$ when $n = 0$ and
 $(-1)^{n-1} \binom{\lambda}{n} / (\lambda \alpha^n)$ when $n \ge 1$, where
-$\binom{\lambda}{n} = \lambda(\lambda - 1)\cdots(\lambda - n + 1)/n!$.
+$\binom{\lambda}{n} = \lambda(\lambda - 1)\cdots(\lambda - n + 1)/n!$ and a quotient by $0$ is read as
+$0$ (so the term is $0$ when $\lambda = 0$ or $\alpha = 0$).
 
 These are the coefficients of $t^n$ in $-\log_\lambda(1 - t/\alpha)$, where
 $\log_\lambda(1 + t) = \sum_{n \ge 1} \binom{\lambda}{n} t^n / \lambda$; the series has no constant

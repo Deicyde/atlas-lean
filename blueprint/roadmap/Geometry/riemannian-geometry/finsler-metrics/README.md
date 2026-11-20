@@ -1,10 +1,10 @@
 # Finsler metrics
 
-## Manifold
+## Definition
 
 - [Finsler metric](finsler-metric.md)
 
-## Finsler Metric
+## Distance, geodesics and the Euclidean example
 
 - [Reversible Finsler metric](is-reversible.md)
 - [Forward Finsler distance](edist.md)

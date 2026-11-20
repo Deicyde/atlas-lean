@@ -9,4 +9,4 @@ $$\sum_{n \in \mathbb{Z}} (-1)^n q^{(2k+1)n(n+1)/2 - in} =
 
 ## Sources
 
-- Aritram Dhar, Avi Mukhopadhyay, and Rishabh Sarma, "Generalization of the Extended Minimal Excludant of Andrews and Newman," Journal of Integer Sequences 26 (2023), Article 23.3.7, Theorem (Andrews, An98 p. 22, label JTP1), lines 459–462, https://cs.uwaterloo.ca/journals/JIS/VOL26/Sarma/sarma5.tex
+- Aritram Dhar, Avi Mukhopadhyay, and Rishabh Sarma, *Generalization of the Extended Minimal Excludant of Andrews and Newman*, Journal of Integer Sequences 26 (2023), Article 23.3.7, Theorem 22, quoting George E. Andrews, *The Theory of Partitions*, Cambridge University Press (1998), p. 22, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Sarma/sarma5.html>.

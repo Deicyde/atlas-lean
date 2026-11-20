@@ -10,7 +10,7 @@
 - [Bounded bilateral series](bounded-bilateral-series.md)
 - [Coefficients of the bounded bilateral series](coeff-bounded-bilateral-series.md)
 - [Truncated one-sided series](positive-unilateral-series.md)
-- [Coefficients of the positive unilateral series](coeff-positive-unilateral-series.md)
+- [Coefficients of the truncated one-sided series](coeff-positive-unilateral-series.md)
 - [Congruences modulo 24 for triples of 2-regular partitions](triple-two-mod-twenty-four.md)
 - [The Nath–Saikia–Sarma conjecture](nath-saikia-sarma-conjecture.md)
 - [Congruences modulo 8 and 24 for triples of 2-regular partitions](triple-two-prime-power-mod-eight-and-twe.md)

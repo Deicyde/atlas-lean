@@ -1,7 +1,6 @@
 # Generating functions and closed form for the subwords $UU$ and $DD$ in non-decreasing Dyck paths
 
-**Generating functions and closed form for the subwords $UU$ and $DD$ in non-decreasing Dyck
-paths.** Let $w$ be $UU$ or $DD$. For $n \ge 0$ let $\mathcal{D}_n$ be the set of non-decreasing
+Let $w$ be $UU$ or $DD$. For $n \ge 0$ let $\mathcal{D}_n$ be the set of non-decreasing
 Dyck paths of semilength $n$, let $\#_w(P)$ be the number of occurrences of the subword $w$ in a
 path $P$, and let $d_w(n) = \sum_{P \in \mathcal{D}_n} \#_w(P)$. Let
 $F_w(x, y) = \sum_{n \ge 1} \sum_{P \in \mathcal{D}_n} y^{\#_w(P)} x^n$, a power series in $x$
@@ -16,4 +15,4 @@ $L_1 = 1$).
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 3 (`jis-2025-25.1.6-thm-3`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 3 (`jis-2025-25.1.6-thm-3`).

@@ -1,4 +1,4 @@
-# Mansour–Safadi Lemma 1 (signed patterns 0̄1̄, 0̄0, 01)
+# Signed inversion sequences avoiding $\{\bar0\bar1, \bar00, 01\}$
 
 A signed inversion sequence of
 length $n$ is a word $e_1 \cdots e_n$ with $e_k \in \{0, \bar 0, 1, \bar 1, \dots, k - 1,

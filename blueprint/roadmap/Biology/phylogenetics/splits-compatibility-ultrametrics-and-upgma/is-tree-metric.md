@@ -1,3 +1,3 @@
 # Every ultrametric is a tree metric
 
-Every ultrametric on a finite set is a tree metric (via Buneman's four-point theorem).
+Every [ultrametric](is-ultrametric.md) on a finite set is a [tree metric](../tree-metrics-and-the-four-point-condition/is-tree-metric.md).

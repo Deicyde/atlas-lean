@@ -12,4 +12,4 @@ through the derived ideal of the radical.
 
 ## Sources
 
-- E. E. Levi, Atti Accad. Sci. Torino 1905 and A. I. Malcev, Izv. Akad. Nauk SSSR 1945; Bourbaki, Lie I; Lean states K-module direct sum form over char-zero fields.
+- E. E. Levi, Atti Accad. Sci. Torino 1905 and A. I. Malcev, Izv. Akad. Nauk SSSR 1945; Bourbaki, Lie I; the statement here is the direct-sum form, as $K$-modules, over fields of characteristic zero.

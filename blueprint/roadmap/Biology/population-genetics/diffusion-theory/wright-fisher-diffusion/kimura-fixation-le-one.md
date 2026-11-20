@@ -1,4 +1,3 @@
 # Kimura's fixation probability is at most one
 
-Kimura's fixation probability is at most `1` at frequencies `y ≤ 1`, for every selection
-coefficient `σ`.
+For every real $\sigma$ and every real $y \le 1$, [Kimura's fixation probability](kimura-fixation.md) satisfies $u_\sigma(y) \le 1$.

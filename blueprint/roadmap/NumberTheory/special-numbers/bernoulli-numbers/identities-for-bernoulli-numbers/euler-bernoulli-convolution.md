@@ -7,4 +7,4 @@ $$\sum_{i=0}^{n} \binom{n}{i} B_i B_{n-i} = -n B_{n-1} - (n-1) B_n.$$
 
 ## Sources
 
-- Ken Kamano, "Sums of Products of Bernoulli Numbers, Including Poly-Bernoulli Numbers," Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Kamano/kamano2.tex>. Lines 98–104.
+- Ken Kamano, *Sums of Products of Bernoulli Numbers, Including Poly-Bernoulli Numbers*, Journal of Integer Sequences 13 (2010), Article 10.5.2, equation (1) (Euler's formula), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Kamano/kamano2.html>.

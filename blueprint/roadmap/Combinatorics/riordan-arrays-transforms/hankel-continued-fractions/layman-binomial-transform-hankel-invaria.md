@@ -9,4 +9,4 @@ matrix $(c_{i+j})_{0 \le i, j \le n}$.
 
 ## Sources
 
-- John W. Layman, *The Hankel Transform and Some of its Properties*, Journal of Integer Sequences 4 (2001), Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL4/LAYMAN/hankel.pdf>. Campaign source passage: Mahid M. Mangontarum, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Mangontarum/mango4.tex>, lines 535-557.
+- John W. Layman, *The Hankel Transform and Some of its Properties*, Journal of Integer Sequences 4 (2001), Article 01.1.5, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL4/LAYMAN/hankel.pdf>. See also Mahid M. Mangontarum, *Some Theorems and Applications of the (q, r)-Whitney Numbers*, Journal of Integer Sequences 20 (2017), Article 17.2.5, Corollary 7, equations (48) and (49), <https://cs.uwaterloo.ca/journals/JIS/VOL20/Mangontarum/mango4.pdf>.

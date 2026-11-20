@@ -9,4 +9,4 @@ The counterexample in the source is Kriebel's affine group $G = \mathbb{F}_{29}^
 
 ## Sources
 
-- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 16.45 (P. J. Cameron); resolution: A. Kriebel, A counterexample to Kourovka Notebook Problem 16.45, preprint, Zenodo record 22929486 (2026), main theorem: G = F_29^2 ⋊ SL_2(5) of order 100920 has b(G) = 3 < 4 = μ'(G); the Kourovka Notebook (21st issue) marks 16.45 solved (AI solution confirmed by P. J. Cameron), https://zenodo.org/records/22929486.
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 16.45 (P. J. Cameron); resolution: A. Kriebel, A counterexample to Kourovka Notebook Problem 16.45, preprint, Zenodo record 22929486 (2026), main theorem: G = F_29^2 ⋊ SL_2(5) of order 100920 has b(G) = 3 < 4 = μ'(G); the Kourovka Notebook (21st issue) marks 16.45 solved, https://zenodo.org/records/22929486.

@@ -10,4 +10,4 @@ representation of $n$, the least $k$ with $n < F_k$, which exists since $n < F_n
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep` (greedy representation).
+- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition 5, p. 5 (the greedy Fibonacci representation).

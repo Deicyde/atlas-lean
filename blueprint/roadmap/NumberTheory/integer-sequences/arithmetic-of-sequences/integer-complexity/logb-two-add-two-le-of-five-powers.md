@@ -8,4 +8,4 @@ This is a particular case of Corollary 4 of the source.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Corollary 4.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Corollary 4.

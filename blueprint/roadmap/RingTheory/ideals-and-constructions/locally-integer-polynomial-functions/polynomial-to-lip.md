@@ -1,4 +1,4 @@
-# The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$
+# The evaluation map from $\mathbb{Z}[x]$ to $\mathrm{LIP}(U)$
 
 For $U \subseteq \mathbb{Z}$,
 the evaluation map is the ring homomorphism from $\mathbb{Z}[x]$ to the ring $\mathrm{LIP}(U)$ of

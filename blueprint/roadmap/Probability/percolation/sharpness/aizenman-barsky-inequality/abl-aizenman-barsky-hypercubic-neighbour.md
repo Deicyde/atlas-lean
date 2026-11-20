@@ -1,10 +1,12 @@
 # Aizenman–Barsky inequality on $\mathbb{Z}^d$ with neighbour row sum
 
-The Aizenman–Barsky inequality on `ℤ^d` with the row sum written over lattice neighbours.
-Reference: M. Aizenman, D. J. Barsky, "Sharpness of the phase transition in percolation models",
-Comm. Math. Phys. 108 (1987) 489–526. Scope and fidelity: this is the first Aizenman–Barsky
-differential inequality `∂_β M ≤ |J| M ∂_h M` for independent bond percolation on `ℤ^d` with
-nearest-neighbour, translation-invariant couplings `J ≥ 0` (edge probability `1 - e^{-βJ_e}`) and a
-ghost field (ghost-edge probability `1 - e^{-h}`), for `β ≥ 0`, `h > 0`; `M(β, h)` is the
-probability that the origin is connected to the ghost. Aizenman–Barsky allow general summable
-translation-invariant couplings; here `J` vanishes off lattice edges. A derivative is taken to be $0$ where the function is not differentiable: `M` is differentiable in `h`, and at a point where `β ↦ M(β, h)` is not differentiable the inequality holds trivially.
+Let $d \in \mathbb{N}$ and let $J$ be a function on unordered pairs of sites of $\mathbb{Z}^d$ with $J \ge 0$, $J_{xy} = 0$ unless $x$ and $y$ are nearest neighbours, and $J$ translation invariant: $J_{u + x, v + x} = J_{uv}$ for all $x, u, v$. Assume the neighbour row sum $|J| = \sum_{y \sim 0} J_{0y}$ converges. Then the [infinite-volume percolation magnetization](abig-mag.md) $M(\beta, h)$ at the origin, for independent bond percolation on $\mathbb{Z}^d$ with edge probabilities $1 - e^{-\beta J_e}$ and a ghost field with ghost-edge probability $1 - e^{-h}$, satisfies
+
+$$\partial_\beta M(\beta, h) \le |J|\, M(\beta, h)\, \partial_h M(\beta, h) \quad \text{for all } \beta \ge 0,\ h > 0.$$
+
+A derivative is read as $0$ where the function is not differentiable, so the inequality is trivial at points where $\beta \mapsto M(\beta, h)$ is not differentiable. Aizenman and Barsky allow general summable translation-invariant couplings, whereas the coupling $J$ above vanishes off lattice edges.
+
+## Sources
+
+- Michael Aizenman and David J. Barsky, *Sharpness of the phase transition in percolation models*, Comm. Math. Phys. 108
+  (1987), no. 3, 489–526, DOI 10.1007/bf01212322.

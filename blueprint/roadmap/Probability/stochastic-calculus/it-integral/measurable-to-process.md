@@ -1,4 +1,4 @@
 # Elementary integrands are jointly measurable
 
-An elementary integrand is jointly measurable in `(u, ω)` (reading `u : ℝ` through
-`Real.toNNReal`).
+The [process](to-process.md) of an [elementary integrand](elementary-integrand.md) is jointly measurable in
+$(u, \omega)$, the time $u \in \mathbb{R}$ being read as $\max(u, 0)$.

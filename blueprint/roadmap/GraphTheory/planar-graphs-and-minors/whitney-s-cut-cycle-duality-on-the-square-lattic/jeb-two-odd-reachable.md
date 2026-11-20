@@ -1,5 +1,3 @@
 # Two odd-degree vertices lie in one component
 
-In a locally finite graph with finite support, two vertices of odd degree whose other
-vertices all have even degree lie in the same component (the handshake lemma applied to a
-component).
+Let $H$ be a locally finite simple graph on a set $V$ with finitely many non-isolated vertices, and let $p, q \in V$ have odd degree while every other vertex has even degree. Then $p$ and $q$ are joined by a walk in $H$.

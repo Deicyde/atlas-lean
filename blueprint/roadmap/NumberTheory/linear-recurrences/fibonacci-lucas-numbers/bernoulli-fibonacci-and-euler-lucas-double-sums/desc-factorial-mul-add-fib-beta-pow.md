@@ -13,9 +13,9 @@ $$
 where the terms with $m - n < s$ are $0$ because $(m-n)^{\underline{s}} = 0$ there.
 
 This is the paper's Corollary 4, obtained by differentiating Theorem 1 $s$ times; the printed
-falling factorial of $m - n + 1$ is off by one, and the identity is written here multiplied
-through by $m^{\underline{s}}$.
+falling factorial of $m - n + 1$ is off by one, and the identity above is multiplied through
+by $m^{\underline{s}}$.
 
 ## Sources
 
-- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 4.
+- Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Journal of Integer Sequences 27 (2024), Article 24.7.2, Corollary 4.

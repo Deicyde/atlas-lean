@@ -1,4 +1,5 @@
 # Output subjects of endpoint-typed processes are owned
 
-Every output subject is backed by an owned role, never merely by a
-passive name in the ambient data scope.
+Let $n$ be a natural number, $\Delta$ an ownership context, $a$, $b$ names and $p$ a process. If
+$\Delta \vdash_n \overline{a}\langle b\rangle.p$, then there are a polarity $r$ and a capability $c$
+with $\Delta(a^{r}) = c$.

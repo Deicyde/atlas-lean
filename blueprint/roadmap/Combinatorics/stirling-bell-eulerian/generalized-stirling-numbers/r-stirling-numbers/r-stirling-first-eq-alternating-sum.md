@@ -12,4 +12,4 @@ $\lbrace k-1, r-1 \rbrace$ vanishes for $k < r$ and $[n, m+k-r]$ vanishes for $k
 
 ## Sources
 
-- A. Z. Broder, "The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949 (December 1982), PDF page 16 / printed page 13, Equation (43); journal version: Discrete Mathematics 49 (1984), 241-259, DOI 10.1016/0012-365X(84)90161-4.
+- Andrei Z. Broder, "The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949 (December 1982), PDF page 16 / printed page 13, Equation (43); journal version: Discrete Mathematics 49 (1984), 241-259, DOI 10.1016/0012-365X(84)90161-4.

@@ -3,7 +3,7 @@
 Let $n$ and $b$ be natural numbers and
 $u$ an integer, and put $b_2 = b^2 + un$. If $2 \le b_2 \le n - 2$, then $b \ne u + 1$.
 
-The paper states this for a small base $b$; here $b$ is any natural number.
+The source states this for a small base $b$; it holds for every natural number $b$.
 
 ## Sources
 

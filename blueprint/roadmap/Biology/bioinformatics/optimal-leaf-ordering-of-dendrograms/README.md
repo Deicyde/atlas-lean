@@ -1,16 +1,13 @@
 # Optimal leaf ordering of dendrograms
 
-## Optimal Leaf Ordering
+## Dendrograms and their leaf orders
 
 - [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
-
-## Dendrogram
-
 - [Leaves of a dendrogram](leaves.md)
 - [Number of internal nodes of a dendrogram](num-internal.md)
 - [Leaf orderings of a dendrogram](orderings.md)
 
-## Optimal Leaf Ordering
+## The optimal leaf ordering problem
 
 - [Adjacent-similarity score of a leaf order](adj-score.md)
 - [Optimal leaf-ordering score](opt-score.md)

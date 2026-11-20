@@ -12,4 +12,4 @@ where the quotient is taken by division of natural numbers, is $0$.
 
 ## Sources
 
-- Phunphayap–Pongsriiam, Example `rem18`, equation `eq1remark2`.
+- Phakhinkon Phunphayap and Prapanpong Pongsriiam, *Explicit Formulas for the $p$-adic Valuations of Fibonomial Coefficients*, Journal of Integer Sequences 21 (2018), Article 18.3.1, Example 18, equation (25), first case.

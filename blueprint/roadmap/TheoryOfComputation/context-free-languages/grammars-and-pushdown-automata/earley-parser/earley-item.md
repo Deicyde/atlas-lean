@@ -1,6 +1,7 @@
 # Earley item
 
-An Earley item: a production with a dot after `dot` symbols of its
-output, recognizing input that starts at the end of `pre` and whose
-recognized prefix is `consumed`. The full input is `pre ++ consumed
-++ rest` for some `rest`.
+Let $T$ be a set of terminals and $N$ a set of nonterminals. An Earley item consists of a production
+$A \to \gamma$ over $T$ and $N$, a dot position $k \in \mathbb{N}$ (the number of symbols of $\gamma$ recognized so
+far), a word $p$ over $T$ (the input consumed before the origin of the item) and a word $c$ over $T$ (the input
+consumed by the first $k$ symbols of $\gamma$). The intended reading is that the whole input is $pcu$ for
+some word $u$.

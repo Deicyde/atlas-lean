@@ -7,4 +7,4 @@ $\lambda$ is the least non-negative residue modulo $4$.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Definition 4 and Example 1.
+- Benjamin V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Definition 4, Example 3 and Figure 6.

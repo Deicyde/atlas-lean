@@ -1,6 +1,3 @@
-# Needleman–Wunsch is optimal
+# Every valid alignment scores at most the Needleman–Wunsch score
 
-Let $\sigma : \alpha \to \alpha \to \mathbb{Z}$ be a
-substitution score and $g \in \mathbb{Z}$ a gap score. For all sequences $x$ and $y$ over
-$\alpha$ and every valid alignment $A$ of $x$ and $y$, the score of $A$ with respect to
-$\sigma$ and $g$ is at most the Needleman–Wunsch score of $x$ and $y$.
+For every [valid alignment](is-alignment.md) $A$ of $x$ and $y$, the [score](alignment-score.md) of $A$ is at most $\mathrm{NW}(x, y)$, the [Needleman–Wunsch score](nw-score.md).

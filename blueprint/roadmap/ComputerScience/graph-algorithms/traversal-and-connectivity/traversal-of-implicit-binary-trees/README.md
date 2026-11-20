@@ -23,3 +23,9 @@
 - [Pending plus collected occurrences are bounded by the frontier length](total-le-leaves.md)
 - [Stack invariants hold for every collected leaf](out-of-stack.md)
 - [Deepening the cut past a terminal frontier changes nothing](leaves-eq-of-le.md)
+
+## Sources
+
+- Adapted from parts of the Lean 4 formalization accompanying Claude (Anthropic), *A 2^o(n) Time
+  Algorithm for 3-SAT*, https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth; according to its README, that formalization was
+  written by AI models.

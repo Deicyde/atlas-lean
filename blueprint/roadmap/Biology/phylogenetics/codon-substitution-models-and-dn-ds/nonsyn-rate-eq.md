@@ -1,3 +1,3 @@
 # Nonsynonymous rate is linear in ω
 
-The nonsynonymous rate is linear in `ω`: `ρ_N(ω) = ω ρ_N(1)`.
+For all real $\pi, \kappa, \omega$, the [nonsynonymous rate](nonsyn-rate.md) satisfies $\rho_N(\omega) = \omega\, \rho_N(1)$.

@@ -1,4 +1,5 @@
 # Generating function of the stationary law under selection
 
-The probability generating function of the stationary law: for `σ > 0` and every real `y`,
-`∑ₖ π_k y^k = (e^{2σy} - 1) / (e^{2σ} - 1)`.
+For every real $\sigma > 0$ and every real $y$, the [stationary weights](asg-stationary.md) satisfy
+
+$$\sum_{k \ge 0} \pi^\sigma_k\, y^k = \frac{e^{2\sigma y} - 1}{e^{2\sigma} - 1}.$$

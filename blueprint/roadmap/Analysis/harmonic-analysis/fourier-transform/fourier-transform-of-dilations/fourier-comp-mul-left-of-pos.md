@@ -6,6 +6,4 @@ function $g : \mathbb{R} \to \mathbb{C}$. For every $f : \mathbb{R} \to \mathbb{
 $a > 0$ and every real $y$, the Fourier transform of $x \mapsto f(ax)$ at $y$ equals
 $a^{-1} \hat f(y/a)$.
 
-No integrability hypothesis is needed because Mathlib's Bochner integral is
-totalized, so the identity also uses that convention for nonintegrable
-functions.
+No integrability hypothesis is needed: the integral of a nonintegrable function is taken to be $0$, and with that convention the identity holds for every $f$.

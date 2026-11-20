@@ -9,4 +9,4 @@ A negative integer or zero is never counted as prime.
 
 ## Sources
 
-- OpenAI (2026), Theorem 1.1, as quoted in the 186 row of constants/88a.md.
+- OpenAI (2026), Theorem 1.1, as quoted in the 186 row of teorth/optimizationproblems, `constants/88a.md`.

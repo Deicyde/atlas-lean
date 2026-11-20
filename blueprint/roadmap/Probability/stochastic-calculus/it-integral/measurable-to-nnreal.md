@@ -1,4 +1,4 @@
 # Progressive processes are jointly measurable
 
-A progressive process is jointly measurable in `(u, ω)` (reading `u : ℝ` through
-`Real.toNNReal`).
+Every progressive process $H$ for a filtration $F$ is jointly measurable in $(u, \omega)$, the time $u \in \mathbb{R}$ being
+read as $\max(u, 0)$.

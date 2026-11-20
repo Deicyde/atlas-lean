@@ -27,3 +27,19 @@
 - [A Hedge run splits at any round](weights-append.md)
 - [The Hedge loss splits at any round](alg-loss-append.md)
 - [The summed second moments split at any round](alg-sq-append.md)
+
+## The $\sqrt{T}$ regret bound
+
+- [Second moment of a round with losses in the unit interval](round-sq-le-one.md)
+- [Summed second moments over $T$ rounds](alg-sq-le-length.md)
+- [Regret of Hedge for losses in the unit interval](regret-le.md)
+- [The $\sqrt{T}$ regret bound of Hedge](regret-le-two-sqrt.md)
+
+## Related topics
+
+- [No-regret dynamics](../../../../GameTheory/noncooperative-games/no-regret-dynamics/README.md): when every player of a game runs a no-regret algorithm such as Hedge, play approaches the coarse correlated equilibria, and smoothness bounds the average social cost.
+- [Von Neumann's minimax theorem](../../../../GameTheory/noncooperative-games/von-neumann-s-minimax-theorem/README.md): Freund and Schapire's proof of the minimax theorem by multiplicative weights.
+- [Natural policy gradient](../../reinforcement-learning/natural-policy-gradient/README.md)
+- [Mirror descent](../../../../Analysis/convex-analysis-and-variations/mirror-descent/README.md): the normalized Hedge update is the prox step of mirror descent with the entropy on the simplex. Hedge's regret bounds here are proved by the potential argument, not derived from the mirror descent bounds; the [mirror descent regret bound for experts](../../../../Analysis/convex-analysis-and-variations/mirror-descent/multiplicative-weights-regret-le.md), $\log n/\gamma + \gamma N/2$ for losses in $[-1, 1]$, is a different inequality of the same order for the same update.
+- [Boosting and the minimax theorem](../boosting-and-the-minimax-theorem/README.md): Freund and Schapire obtain boosting by running this algorithm on the dual of the mistake game.
+- [AdaBoost](../adaboost/README.md): Hedge over the training points with an adaptive step size.

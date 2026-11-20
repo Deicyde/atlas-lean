@@ -9,7 +9,7 @@
 - [Running the reversal component](run.md)
 - [Reversing and dropping the first bit is polynomial-time](computable.md)
 
-## Of TM2
+## From multi-stack machines
 
 - [The answer machine runs in one step](answer-tm-outputs-within-time.md)
 - [The decider within time](decider-tm-outputs-within-time.md)

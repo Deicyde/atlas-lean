@@ -1,3 +1,4 @@
 # Monotonicity of the partition function
 
-The number of integer partitions is monotone in the integer being partitioned.
+The partition function is monotone: if $m \le n$ are natural numbers, then $p(m) \le p(n)$, where
+$p(n)$ is the number of integer partitions of $n$.

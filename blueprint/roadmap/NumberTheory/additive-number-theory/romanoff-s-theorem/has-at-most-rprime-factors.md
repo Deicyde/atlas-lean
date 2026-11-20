@@ -6,4 +6,4 @@ the number $0$ is counted as having no prime factors.
 
 ## Sources
 
-- EP-851 [Erdős Problems].
+- T. F. Bloom, Erdős Problem #851, https://www.erdosproblems.com/851.

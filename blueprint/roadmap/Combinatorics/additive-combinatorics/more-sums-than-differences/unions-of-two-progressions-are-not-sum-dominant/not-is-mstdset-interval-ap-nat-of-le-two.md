@@ -1,4 +1,4 @@
-# Interval plus integer progression starting in $(n + 1, 2n - 2)$ is not MSTD
+# Interval plus integer progression starting between $n + 1$ and $2n - 2$ is not MSTD
 
 Let
 $I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite

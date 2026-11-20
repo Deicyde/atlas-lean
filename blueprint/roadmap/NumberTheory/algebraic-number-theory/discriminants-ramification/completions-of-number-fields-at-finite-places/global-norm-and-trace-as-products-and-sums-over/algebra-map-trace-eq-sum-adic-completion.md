@@ -11,4 +11,4 @@ sum runs over the finite places $w$ of $L$ lying over $v$.
 
 ## Sources
 
-- Corollary 11.24, trace part.
+- ATLAS NumberTheoryI, Section 11.4, Corollary 11.24 (trace part).

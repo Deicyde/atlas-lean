@@ -5,7 +5,7 @@ $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its fundamental solu
 $X, Y > 0$ and $Y$ least), and write $(X + Y \sqrt{d})^n = f_n + g_n \sqrt{d}$. Then for every
 $n \ge 0$, $g_n \le f_n$, with equality if and only if $d = 2$ and $n = 1$.
 
-Only the first sentence of the source's corollary is stated here: its second sentence, printed as
+Only the first sentence of the source's corollary is stated above: its second sentence, printed as
 $f_1 \ge d - 1$ with a displaced square root sign, fails when read literally at $d = 5$, where
 $f_1 = 2$.
 

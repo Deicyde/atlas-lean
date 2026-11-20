@@ -11,4 +11,4 @@ $$r(n) = \frac{m - 1}{m}\,p_b(n) + \frac{k + l + 1 - m}{m}\,n + \frac{m - l - 1}
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 58 (`jis-2025-25.1.5-cor-58`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 58 (`jis-2025-25.1.5-cor-58`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

@@ -7,4 +7,4 @@ label; otherwise it pops the top symbol of $X$ and sets the state to whether tha
 the bit $1$; if so, it pushes the bit $1$ onto $c$ and goes to $\ell$, while any other symbol
 (normally the terminating $0$) sends it to $\ell'$.
 
-Run from $\ell$, it reads a unary number off $X$ onto the counter $c$.
+When $c \ne X$, running it from $\ell$ reads a unary number off $X$ onto the counter $c$.

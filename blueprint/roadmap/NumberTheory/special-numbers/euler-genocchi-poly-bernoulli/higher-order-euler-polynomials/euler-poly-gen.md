@@ -1,4 +1,4 @@
-# Euler polynomials of order α
+# Euler polynomials of order $\alpha$
 
 For a complex number $\alpha$ and $n \ge 0$, let
 $E_k^{(\alpha)}(0)$ denote the Euler numbers of order $\alpha$. The Euler polynomial of order
@@ -7,4 +7,4 @@ $E_n^{(\alpha)}(x) = \sum_{k=0}^{n} \binom{n}{k} E_k^{(\alpha)}(0) \, x^{n-k}$.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (generalized Euler polynomials).
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Section 1 (generalized Euler polynomials).

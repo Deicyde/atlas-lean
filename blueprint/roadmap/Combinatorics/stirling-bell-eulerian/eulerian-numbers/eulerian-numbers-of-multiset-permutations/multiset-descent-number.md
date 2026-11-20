@@ -6,3 +6,7 @@ $1 + \#\{j : 1 \le j < K,\ w_j > w_{j+1}\}$.
 
 The extra $1$ follows the source convention, which also counts a descent at the end of the
 word; in particular the empty word has descent number $1$.
+
+## Sources
+
+- Askar Dzhumadil'daev and Damir Yeliussizov, *Power Sums of Binomial Coefficients*, Journal of Integer Sequences 16 (2013), Article 13.1.4, Section 2, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Yeliussizov/dzhuma6.pdf>.

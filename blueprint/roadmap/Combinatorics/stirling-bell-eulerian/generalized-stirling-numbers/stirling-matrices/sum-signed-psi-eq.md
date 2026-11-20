@@ -13,4 +13,4 @@ equals $\Lambda(\alpha, i, j)$ if $i \le j$ and $0$ if $i > j$.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Proposition 9.
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Journal of Integer Sequences 27 (2024), Article 24.5.3, Proposition 9.

@@ -1,4 +1,3 @@
 # Count of marker choices with a given score
 
-The number of marker choices `u : Fin S → Fin M` (one marker per sample) with
-`∑ j, x j (u j) = g`.
+For sample values $x_j(v)$ ($S$ samples, $M$ markers) and a real $g$, the score count $N(g)$ is the number of maps $u$ choosing one marker $u(j)$ for each sample $j$ such that $\sum_{j=1}^{S} x_j(u(j)) = g$.

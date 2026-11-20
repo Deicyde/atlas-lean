@@ -10,4 +10,4 @@ $p(1) = \sum_{k=0}^{n} A^{(r)}_{n,k} = A^{(r+1)}_{n,0}$.
 
 ## Sources
 
-- José Agapito, Ângela Mestre, Maria M. Torres, and Pasquale Petrullo, "On One-Parameter Catalan Arrays," Journal of Integer Sequences 18 (2015), Article 15.5.1, Corollary (equations eqColumn0Rr and eqRowsumsRr), lines 240–245, https://cs.uwaterloo.ca/journals/JIS/VOL18/Agapito/agapito2.tex
+- José Agapito, Ângela Mestre, Maria M. Torres, and Pasquale Petrullo, "On One-Parameter Catalan Arrays," Journal of Integer Sequences 18 (2015), Article 15.5.1, Corollary 3, equations (9), (10), <https://cs.uwaterloo.ca/journals/JIS/VOL18/Agapito/agapito2.pdf>.

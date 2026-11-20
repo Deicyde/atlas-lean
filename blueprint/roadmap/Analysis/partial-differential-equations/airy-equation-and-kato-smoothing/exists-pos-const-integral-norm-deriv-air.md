@@ -10,7 +10,7 @@ function $t \mapsto \partial_x u(t, x_0)$ belongs to $L^2(\mathbb{R})$ and
 
 $$\int_{\mathbb{R}} |\partial_x u(t, x_0)|^2\,dt = c_0 \int_{\mathbb{R}} |u_0(x)|^2\,dx.$$
 
-The source's formalization used the transform $\int u_0(y) e^{-2\pi i y\xi}\,dy$ together with
+The source's formula used the transform $\int u_0(y) e^{-2\pi i y\xi}\,dy$ together with
 the unitary phase and prefactor, so its initial datum was not $u_0$ but the $L^2$-isometric
 rescaling $x \mapsto (2\pi)^{-1/2} u_0(x / 2\pi)$; the identity holds for both with the same
 $c_0$.

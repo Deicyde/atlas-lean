@@ -10,7 +10,7 @@
 - [Two-sided partial density](int-partial-density.md)
 - [Two-sided natural density](has-int-density.md)
 
-## Has Density
+## Density of the whole order
 
 - [The whole order has density one](univ.md)
 
@@ -20,6 +20,6 @@
 - [Finite sets have natural density zero](has-density-zero-of-finite.md)
 - [Sets of nonzero natural density are infinite](infinite-of-has-density-pos.md)
 
-## Has Density
+## Logarithmic density
 
 - [Logarithmic density](has-log-density.md)

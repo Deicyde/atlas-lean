@@ -6,7 +6,9 @@ divisible by no $P^h$ with $P$ monic irreducible) and $\omega_1(f)$ the number o
 irreducible factors of $f$ of multiplicity exactly $1$. For every complex number $z$, the
 coefficient $B_z(0)$ of $u^0$ in the formal power series
 
-$$B_{1,S_h}(u, z) = (1 - qu)^z \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f},$$
+$$
+B_{1,S_h}(u, z) = (1 - qu)^z \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f},
+$$
 
 where $(1 - qu)^z = \sum_{m \ge 0} \binom{z}{m} (-qu)^m$, equals $1$.
 

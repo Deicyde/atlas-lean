@@ -1,4 +1,4 @@
-# Unit cell to the left of a lattice step to $k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$
+# Unit cell to the left of a lattice step to $k + 2 \ne k$ modulo $n$ for $n \ge 3$
 
 - [Unit cell to the left of a lattice step](left-cell.md)
 - [Steps around a left turn share their left cell](left-cell-eq-of-left-turn.md)
@@ -19,4 +19,4 @@
 - [Horizontal steps on a unit segment](mid-set.md)
 - [Upward crossings of vertically adjacent cells differ by separating steps](up-cross-vsplit.md)
 - [An odd number of horizontal steps flips the ray parity](ray-parity-vflip.md)
-- [$k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$](not-add-two-self.md)
+- [$k + 2 \ne k$ modulo $n$ for $n \ge 3$](not-add-two-self.md)

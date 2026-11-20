@@ -1,4 +1,3 @@
 # Numerical value of a spin
 
-A spin, recorded as a Boolean, has the real value $1$ if it is
-true and $-1$ if it is false.
+For a bit $b \in \{0, 1\}$, the spin value is $+1$ if $b = 1$ and $-1$ if $b = 0$.

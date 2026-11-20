@@ -1,4 +1,3 @@
 # Eigenvalues of the Cayley transform
 
-The eigenvalue correspondence: for `μ ≠ 1`, `μ` is an eigenvalue of the
-Cayley transform `U` iff `i * (1 + μ) / (1 - μ)` is an eigenvalue of `A`.
+Let $H$ be a complex Hilbert space, $A$ a bounded self-adjoint operator on $H$ and $U$ its [Cayley transform](cayley-transform.md). For every complex number $\mu \ne 1$, $\mu$ is an eigenvalue of $U$ if and only if $i(1 + \mu)/(1 - \mu)$ is an eigenvalue of $A$.

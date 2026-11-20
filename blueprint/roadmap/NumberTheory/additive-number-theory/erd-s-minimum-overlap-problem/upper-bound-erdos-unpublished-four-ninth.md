@@ -5,4 +5,4 @@ statement that the continuous Erdős minimum-overlap constant $C_{1b}$ satisfies
 
 ## Sources
 
-- Erdős, unpublished; Optimization Problems, Constant 1b.
+- Erdős, unpublished; *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html.

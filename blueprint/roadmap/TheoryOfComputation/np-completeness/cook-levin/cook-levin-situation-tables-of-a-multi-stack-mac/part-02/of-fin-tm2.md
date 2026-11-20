@@ -1,4 +1,4 @@
-# The classical encoding record of a finite multi-stack machine
+# The classical encoding record of a finite multi-stack Turing machine
 
 For every finite
 multi-stack Turing machine $M$, an encoding record of $M$, built with classical choice. If $M$ has
@@ -9,5 +9,3 @@ no label and the initial state. The effective alphabet of stack $k$ is the finit
 that some statement of $M$ can push on $k$, together with the whole input alphabet when $k$ is
 the input stack; its $s_k$ elements are listed by a bijection with $\{0, \dots, s_k - 1\}$, a
 symbol in it gets code its position in that list plus $1$, and a symbol outside it gets code $0$.
-
-Only the existence of this record is used later.

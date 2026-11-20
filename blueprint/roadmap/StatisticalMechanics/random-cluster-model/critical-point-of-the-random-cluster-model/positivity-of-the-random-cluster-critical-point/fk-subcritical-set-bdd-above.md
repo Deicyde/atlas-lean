@@ -1,3 +1,3 @@
 # Subcritical set is bounded above by one
 
-The set of `p` with `θ¹(p, q) = 0` is bounded above by `1`.
+For every $d \in \mathbb{N}$ and $q \in \mathbb{R}$, the [subcritical set](../the-critical-point-of-the-random-cluster-model/fk-subcritical-set.md) $\{p \in (0, 1) : q > 0,\ \theta^1(p, q) = 0\}$ of $\mathbb{Z}^d$ is bounded above.

@@ -7,5 +7,5 @@
 - [Typing of the higher-kinded identity](higher-id-typed.md)
 - [Closed inhabitants of the higher-kinded identity type are identities](higher-kinded-identity.md)
 - [Higher-kinded identity inhabitants preserve admissible relations](higher-kinded-related.md)
-- [No closed Fω term inhabits $\forall X, X$](forall-var-uninhabited.md)
-- [No closed Fω term inhabits $\forall F, \forall X, F\,X$](higher-result-uninhabited.md)
+- [No closed Fω term has type $\forall_\star \alpha_0$](forall-var-uninhabited.md)
+- [No closed Fω term has type $\forall_{\star \Rightarrow \star}\forall_\star\,\alpha_1\,\alpha_0$](higher-result-uninhabited.md)

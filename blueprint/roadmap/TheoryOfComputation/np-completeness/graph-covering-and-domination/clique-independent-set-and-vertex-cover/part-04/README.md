@@ -15,7 +15,7 @@
 - [One row of the clique verifier's walk](row-run.md)
 - [All rows of the clique verifier's walk](rows-run.md)
 - [The verifier machine for clique, independent set and vertex cover](run.md)
-- [Distinctness of CLIQUE verifier pairs (moved alias)](pairs-nodup.md)
+- [Distinctness of the vertex pairs](pairs-nodup.md)
 - [Karp adjacency of two literals](adj-l.md)
 - [Row-by-row pair bits of an occurrence list](bits-rec.md)
 - [Pair bits of an occurrence list, row by row](pair-bits-eq.md)

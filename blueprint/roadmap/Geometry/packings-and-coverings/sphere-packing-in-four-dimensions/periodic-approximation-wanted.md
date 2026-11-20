@@ -12,4 +12,4 @@ $\mathbb{R}^4$, such that $\Delta_4 \le \overline{\delta}(P) + \varepsilon$.
 
 ## Sources
 
-- CE2003 introduction and Appendix A. Known periodic approximation; no Lean proof supplied and no exact optimum-attainment claim.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, introduction and Appendix A. The statement does not claim that the optimum is attained.

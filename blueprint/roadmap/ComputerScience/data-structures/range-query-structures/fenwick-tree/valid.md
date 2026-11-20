@@ -7,5 +7,4 @@ entry at index $j$ equals the block sum of $a$ at $j$: the sum of the $\operator
 entries of $a$ ending at position $j - 1$ (positions counted from $0$), where
 $\operatorname{lowbit}(j)$ is the largest power of two dividing $j$.
 
-The underlying list itself is not stored at runtime; it appears only in this specification
-relation.
+The list $a$ itself is not part of the tree; it appears only in this relation.

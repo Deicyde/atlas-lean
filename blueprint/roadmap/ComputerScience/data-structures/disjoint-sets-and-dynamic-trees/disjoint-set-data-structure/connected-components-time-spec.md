@@ -8,4 +8,4 @@ CONNECTED-COMPONENTS on $n$ and $E$ makes exactly $n$ MAKE-SET calls, $2m$ FIND-
 $n - k$ UNION calls. Moreover, $k$ plus the number of UNION calls equals $n$, and if $n > 0$
 then the number of UNION calls is at most $n - 1$.
 
-These are the call counts recorded by the cost annotation, not bounds on parent-pointer visits.
+These are counts of calls, not bounds on the number of parent-pointer visits.

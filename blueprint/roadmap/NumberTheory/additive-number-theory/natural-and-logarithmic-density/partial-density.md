@@ -8,4 +8,5 @@ in $S$, taken to be $0$ when $A_{\lt b}$ is empty. By default $A = \beta$.
 
 ## Sources
 
-- inspired by https://github.com/b-mehta/unit-fractions
+- Gérald Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, 3rd ed., Graduate Studies in Mathematics 163, American Mathematical Society, 2015, Part III, Chapter 1 (natural density).
+- Inspired by the unit-fractions repository, https://github.com/b-mehta/unit-fractions.

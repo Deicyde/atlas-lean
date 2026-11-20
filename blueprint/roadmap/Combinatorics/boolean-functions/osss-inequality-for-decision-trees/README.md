@@ -1,13 +1,13 @@
 # OSSS inequality for decision trees
 
-- [Probability of a configuration under a product weight](weight.md)
+- [Weight of a configuration under a product weight](weight.md)
 - [Expectation under a product weight](expect.md)
 - [Product probability weight](is-prob-weight.md)
 - [Point-mass weight on the Booleans](pt.md)
 - [Covariance under a product weight](cov.md)
 - [Variance under a product weight](var.md)
 - [Influence of a coordinate](infl.md)
-- [Conditional expectation given the other coordinates](cond-mean.md)
+- [Averaging out one coordinate](cond-mean.md)
 - [Binary decision tree](decision-tree.md)
 - [Boolean function computed by a decision tree](eval.md)
 - [Variables queried by a decision tree on an input](queried.md)

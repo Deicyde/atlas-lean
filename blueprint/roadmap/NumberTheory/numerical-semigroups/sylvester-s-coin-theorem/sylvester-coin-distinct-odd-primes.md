@@ -9,4 +9,4 @@ $p$ and $q$.
 
 ## Sources
 
-- Damanvir Singh Binner, "Generalization of a Result of Sylvester Related to the Frobenius Coin Problem", Journal of Integer Sequences 24 (2021), Article 21.8.4, Theorem `Sylvester'` (the Special Case of Sylvester's theorem), source lines 123–127, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Binner/binner13.tex>. The paper attributes the general coprime statement to Sylvester (1882).
+- Damanvir Singh Binner, *Generalization of a Result of Sylvester Related to the Frobenius Coin Problem*, Journal of Integer Sequences 24 (2021), Article 21.8.4, Theorem 4 (the Special Case of Sylvester's theorem), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Binner/binner13.tex>. The paper attributes the general coprime statement to Sylvester (1882).

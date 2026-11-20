@@ -1,4 +1,5 @@
 # Gamete allele covariance equals linkage disequilibrium
 
-The covariance of the allele counts of one gamete is the linkage disequilibrium
-`D = x_AB x_ab - x_Ab x_aB` (frequencies summing to `1`).
+Let $x : \{0, 1\}^2 \to \mathbb{R}$ satisfy $\sum_g x_g = 1$. Then the [allele covariance](allele-cov.md) is the linkage disequilibrium:
+
+$$\mathrm{Cov}(x) = D(x) = x_{11} x_{00} - x_{10} x_{01}.$$

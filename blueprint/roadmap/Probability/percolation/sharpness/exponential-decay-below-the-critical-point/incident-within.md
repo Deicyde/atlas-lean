@@ -1,3 +1,3 @@
 # Edges from a subset into a set
 
-The set of edges `{x, y}` with `x ∈ K` and `y ∈ S`.
+For $d \in \mathbb{N}$ and sets $K, S \subseteq \mathbb{Z}^d$, the set of unordered pairs $\{x, y\}$ with $x \in K$ and $y \in S$.

@@ -1,3 +1,5 @@
 # Squared norm of a genotype column
 
-The squared norm `‖xⱼ‖² = ∑ᵢ X i j ²` of the genotype column of SNP `j`.
+For a real $n \times m$ matrix $X$ and a column index $j$, the squared norm of the $j$-th column is
+
+$$\|x_j\|^2 = \sum_{i=1}^{n} X_{ij}^2.$$

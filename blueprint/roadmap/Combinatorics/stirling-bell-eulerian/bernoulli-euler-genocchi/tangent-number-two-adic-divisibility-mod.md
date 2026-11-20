@@ -14,4 +14,4 @@ the tangent numbers through $1 + \tanh x$, which agrees with this recurrence at 
 
 ## Sources
 
-- Kwang-Wu Chen, "An Interesting Lemma for Regular C-fractions," Journal of Integer Sequences 6 (2003), Article 03.4.8, Theorem, equation, lines 362–369 (tangent numbers defined at lines 351–360), https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen53.tex
+- Kwang-Wu Chen, "An Interesting Lemma for Regular C-fractions," Journal of Integer Sequences 6 (2003), Article 03.4.8, Theorem 4, congruence (20), <https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.pdf>.

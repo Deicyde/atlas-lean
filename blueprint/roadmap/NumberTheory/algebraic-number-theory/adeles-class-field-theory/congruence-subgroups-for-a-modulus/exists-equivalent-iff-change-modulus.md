@@ -12,4 +12,4 @@ $I^{\mathfrak m_1} \cap P_{\mathfrak m_2} \subseteq C_1$.
 
 ## Sources
 
-- ATLAS NumberTheoryI item N422, Lemma 22.5.
+- ATLAS NumberTheoryI, Lemma 22.5.

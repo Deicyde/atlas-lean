@@ -1,3 +1,3 @@
 # Law of the atom coordinate of Sethuraman's space
 
-The atom coordinate of the canonical space has law `⊗ₖ H`.
+For $\alpha > 0$ and a probability measure $H$, the projection of [Sethuraman's canonical space](sethuraman-measure.md) onto its atom coordinate $X^{\mathbb{N}}$ has law $\bigotimes_k H$.

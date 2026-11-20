@@ -11,3 +11,8 @@ $C^\infty$, this is the textbook curvature endomorphism and does not depend on t
 
 This is the sign convention of [Lang, Def. 2.1] and [Gud, Def. 8.8]; the opposite sign convention
 is also common.
+
+## Sources
+
+- [Lang] Lang, *Lecture Notes on Riemannian Geometry*, ETH Zürich, 2020.
+- [Gud] Gudmundsson, *An Introduction to Riemannian Geometry*, Lund University lecture notes.

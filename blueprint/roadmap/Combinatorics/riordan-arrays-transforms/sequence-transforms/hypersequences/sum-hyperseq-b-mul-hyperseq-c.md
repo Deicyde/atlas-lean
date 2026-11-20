@@ -1,4 +1,4 @@
-# The product of Parisse's matrices B(n) and C(n)
+# The product of Parisse's matrices $B(n)$ and $C(n)$
 
 For $n, j, m \in \mathbb{N}$ let
 $b_{j,i}(n) = (-1)^i e_{j-i}(n + 1, \dots, n + j)$ for $i \le j$ be the entries of Parisse's

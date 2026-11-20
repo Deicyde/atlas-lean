@@ -1,6 +1,6 @@
 # Decidable and recognizable predicates on single-tape Turing machines
 
-## Single Tape TM
+## Single-tape Turing machines
 
 - [Halting on an input](halts-on.md)
 - [Halting from a configuration](halts-from.md)

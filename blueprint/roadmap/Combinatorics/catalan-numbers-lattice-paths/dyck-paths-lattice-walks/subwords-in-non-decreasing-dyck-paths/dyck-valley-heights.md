@@ -7,4 +7,4 @@ that factor, taken to be $0$ when negative.
 
 ## Sources
 
-- Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1, the definition of non-decreasing Dyck paths used by Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6.
+- Rigoberto Flórez, Toufik Mansour, José L. Ramírez, Fabio A. Velandia, and Diego Villamizar, *Restricted Dyck Paths on Valleys Sequence*, arXiv:2108.08299, Section 1, the definition of non-decreasing Dyck paths used by Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6.

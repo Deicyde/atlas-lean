@@ -1,7 +1,11 @@
 # qpAdm model equation
 
-**qpAdm model equation** (Haak et al. 2015, Supplementary Information): if the target `T`
-is an admixture of sources `S k` with weights `w k` summing to `1` (`p T = ∑ k, w k * p (S k)`
-pointwise; the weights may be negative, as in fitted qpAdm models), then for all `X`, `Y`, `Z`,
-`f4 T X Y Z = ∑ k, w k * f4 (S k) X Y Z`. The merged `DriftModel.f4_admixture_right` is a
-two-source drift-model instance (mixture in the second pair, one source as fourth argument).
+Let $\mu$ be a measure on a measurable space $\Omega$ and let $p_X$ be square-integrable allele frequencies of the populations $X$. Let $T, X, Y, Z$ be populations, $\iota$ a finite set, $S : \iota \to$ populations and $w \in \mathbb{R}^\iota$ with $\sum_k w_k = 1$ (weights of any sign) such that $p_T(\omega) = \sum_k w_k\, p_{S_k}(\omega)$ for every $\omega$. Then (Haak et al. 2015)
+
+$$f_4(T, X; Y, Z) = \sum_{k \in \iota} w_k\, f_4(S_k, X; Y, Z),$$
+
+where $f_4$ is the [f4-statistic](../patterson-s-f-statistics/f4.md).
+
+## Sources
+
+- W. Haak et al., *Massive migration from the steppe was a source for Indo-European languages in Europe*, Nature 522 (2015), 207–211.

@@ -25,4 +25,4 @@ comparing coefficients.
 
 ## Sources
 
-- Paul Barry, "Generalized Catalan Recurrences, Riordan Arrays, Elliptic Curves, and Orthogonal Polynomials", Journal of Integer Sequences 24 (2021), Article 21.5.1, Proposition lines 367-373, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry/barry431.tex>.
+- Paul Barry, "Generalized Catalan Recurrences, Riordan Arrays, Elliptic Curves, and Orthogonal Polynomials", Journal of Integer Sequences 24 (2021), Article 21.5.1, Proposition 3, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry/barry431.tex>.

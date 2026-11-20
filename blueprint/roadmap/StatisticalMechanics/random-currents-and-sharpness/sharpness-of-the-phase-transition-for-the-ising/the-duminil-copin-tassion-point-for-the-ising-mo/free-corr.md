@@ -1,4 +1,5 @@
 # Free-boundary zero-field two-point function in a finite set
 
-The free-boundary zero-field two-point function `⟨σ_aσ_b⟩_S` in the induced graph on `S` (equal
-to `1` when `a = b`).
+For $d \in \mathbb{N}$, $\beta \in \mathbb{R}$, a finite set $S \subseteq \mathbb{Z}^d$ and $a, b \in S$, this is $1$ if $a = b$, and otherwise the
+correlation $\langle \sigma_a \sigma_b \rangle$ in the zero-field Ising model at inverse temperature $\beta$ on the
+[subgraph of $\mathbb{Z}^d$ induced by $S$](graph-s.md).

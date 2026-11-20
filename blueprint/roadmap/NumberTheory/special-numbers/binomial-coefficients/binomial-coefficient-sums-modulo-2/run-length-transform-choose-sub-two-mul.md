@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 2
+# Sum of $\binom{n-k}{2k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $(F_j)_{j \ge 0}$ be the Fibonacci numbers, $F_0 = 0$,
 $F_1 = 1$, and let $T$ be the run length transform of $S(i) = F_{i+1}$, i.e. of

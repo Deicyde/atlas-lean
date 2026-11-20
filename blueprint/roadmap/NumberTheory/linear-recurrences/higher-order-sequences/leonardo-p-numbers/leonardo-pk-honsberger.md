@@ -12,8 +12,8 @@ $$
 
 The arguments that occur are at least $-p$, and on $[-p, -1]$ the value $-k$ is the one forced by
 the recurrence $\mathcal{L}(t) = \mathcal{L}(t-1) + \mathcal{L}(t-p-1) + k$ read backwards. The
-paper prints the summation index as $j$ in $\mathcal{L}(m-j)$; it is corrected to $i$ here.
+paper prints the summation index as $j$ in $\mathcal{L}(m-j)$; it is corrected to $i$ above.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 13.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 13.

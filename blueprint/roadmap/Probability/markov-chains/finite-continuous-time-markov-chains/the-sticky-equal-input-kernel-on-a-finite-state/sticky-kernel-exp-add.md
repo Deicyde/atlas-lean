@@ -1,4 +1,6 @@
-# Semigroup law
+# Semigroup law of the sticky kernel
 
-**Semigroup law** of the sticky kernel in time:
-`K (e^{-κ s}) * K (e^{-κ t}) = K (e^{-κ (s + t)})` (with `∑ π = 1`).
+Let $S$ be a finite set and $\pi : S \to \mathbb{R}$ with $\sum_i \pi(i) = 1$. For all real
+$\kappa, s, t$, the [sticky kernel](sticky-kernel.md) satisfies
+
+$$K_\pi\bigl(e^{-\kappa s}\bigr)\, K_\pi\bigl(e^{-\kappa t}\bigr) = K_\pi\bigl(e^{-\kappa (s + t)}\bigr) .$$

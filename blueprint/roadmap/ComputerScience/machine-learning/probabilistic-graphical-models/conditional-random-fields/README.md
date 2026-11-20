@@ -25,7 +25,7 @@
 - [The chain CRF of a hidden Markov model](hmm-to-crf.md)
 - [The chain CRF of a hidden Markov model has the same path weights](hmm-to-crf-path-weight.md)
 
-## Tabulated algorithms on `Fin n`
+## Tabulated algorithms on the states $\{0, \dots, n - 1\}$
 
 - [One step of the tabulated CRF forward algorithm](forward-step.md)
 - [Tabulated CRF forward algorithm](forward-tab.md)

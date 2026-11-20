@@ -1,4 +1,4 @@
 # Exponential limit
 
-For fixed `r`, `x₀`, `t`, the logistic solution tends to the
-exponential-growth solution `x₀ e^{r t}` as the carrying capacity `K → ∞`.
+For all real $r$, $x_0$ and $t$, the [explicit logistic solution](logistic.md) at time $t$ tends to the
+exponential-growth value $x_0 e^{rt}$ as the carrying capacity $K \to \infty$.

@@ -1,6 +1,3 @@
 # Standard real Brownian motion
 
-A standard real Brownian motion indexed by `ℝ` (used for `t ≥ 0`): `B_0 = 0` a.s., continuous
-paths a.s., Gaussian, with independent increments `B_t - B_s ~ N(0, t - s)`.
-
-See also Mathlib's `ProbabilityTheory.IsPreBrownianReal` (time `ℝ≥0`, finite-dimensional laws).
+Let $(\Omega, P)$ be a measure space. A family $(B_t)_{t \in \mathbb{R}}$ of real random variables on $\Omega$, indexed by all real times (only $t \ge 0$ is used for SLE), is a standard Brownian motion if $B_0 = 0$ almost surely, almost every path $t \mapsto B_t(\omega)$ is continuous, each $B_t$ is measurable, $(B_t)$ is a Gaussian process, $B_t - B_s$ has law $N(0, t - s)$ for $s \le t$, and the increments $B_t - B_s$ and $B_v - B_u$ are independent for $s \le t \le u \le v$. The law condition forces $P$ to be a probability measure.

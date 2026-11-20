@@ -8,4 +8,4 @@ being the first guess that has a correct position.
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 13 (`jis-2026-26.1.7-thm-13`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 13.

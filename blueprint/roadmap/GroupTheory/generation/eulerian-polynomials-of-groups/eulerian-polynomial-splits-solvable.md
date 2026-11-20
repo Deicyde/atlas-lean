@@ -1,4 +1,4 @@
-# Kourovka Problem 11.104(a) (Eulerian polynomials and solvability, G. E. Wall)
+# Eulerian polynomials and solvability (Kourovka 11.104(a))
 
 This is the
 statement that for every finite group $G$ and every Eulerian function $\varphi$ of $G$, with values

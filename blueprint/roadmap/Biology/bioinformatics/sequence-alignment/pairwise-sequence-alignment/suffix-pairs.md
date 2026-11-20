@@ -1,5 +1,3 @@
 # Pairs of suffixes
 
-For lists $xs$ and $ys$, the list of all pairs $(u, v)$ where $u$ is
-a suffix of $xs$ and $v$ is a suffix of $ys$, the empty lists and $xs$, $ys$ themselves
-included.
+The suffix pairs of $x$ and $y$ are all pairs $(x', y')$ with $x'$ a suffix of $x$ and $y'$ a suffix of $y$ (the empty sequence and the whole sequence included).

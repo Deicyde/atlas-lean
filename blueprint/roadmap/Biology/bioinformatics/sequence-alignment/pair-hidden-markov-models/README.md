@@ -1,11 +1,13 @@
 # Pair hidden Markov models
 
+## Alignments and alignment automata
+
 - [Fuel-bounded enumeration of two-alphabet alignments](alignments-of-aux.md)
 - [All alignments of sequences over two alphabets](alignments-of.md)
 - [Alignments of two nonempty sequences by first column](alignments-of-cons-cons.md)
 - [Alignments of the empty sequence with a nonempty one](alignments-of-nil-cons.md)
 - [Alignments of a nonempty sequence with the empty one](alignments-of-cons-nil.md)
-- [Membership in `alignmentsOf` is validity](mem-alignments-of.md)
+- [The enumerated two-alphabet alignments are exactly the valid ones](mem-alignments-of.md)
 - [Each alignment is listed once](nodup-alignments-of.md)
 - [Two-alphabet alignments agree with single-alphabet alignments](alignments-of-eq-alignments.md)
 - [Weighted alignment automaton](alignment-automaton.md)

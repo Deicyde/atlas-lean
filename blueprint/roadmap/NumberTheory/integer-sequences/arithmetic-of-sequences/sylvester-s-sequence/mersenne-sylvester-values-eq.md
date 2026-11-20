@@ -6,4 +6,4 @@ for some $n$ and $x = 2^r - 1$ for some $r \ge 1$ are exactly $3$ and $7$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Corollary 1(a).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Corollary 1(a).

@@ -1,4 +1,3 @@
-# Mergers
+# Mergers of two blocks of a partition
 
-A partition with `k` blocks has exactly `k.choose 2` partitions that arise
-from it by merging two blocks.
+For every partition $\pi \in \mathcal{P}_n$ with $k$ blocks, exactly $\binom{k}{2}$ partitions $\pi' \in \mathcal{P}_n$ [arise from $\pi$ by merging two blocks](is-merge.md).

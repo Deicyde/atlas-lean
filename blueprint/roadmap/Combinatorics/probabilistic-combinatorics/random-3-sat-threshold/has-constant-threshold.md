@@ -6,5 +6,4 @@ formula with $\lfloor r n \rfloor$ clauses on $n$ variables is satisfiable tends
 $n \to \infty$, and for every real $r > c$ this probability tends to $0$ (when $r n < 0$ the
 formula has no clauses).
 
-This is stated as a proposition, not asserted: the existence of such a constant is open,
-whereas Friedgut's sharp-threshold theorem is proved.
+The existence of such a constant is open; Friedgut proved that random 3-SAT has a sharp threshold, which may depend on $n$.

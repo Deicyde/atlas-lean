@@ -7,12 +7,16 @@ irreducible) and $\omega_1(f)$ the number of distinct monic irreducible factors 
 multiplicity exactly $1$. For a complex number $z$ and a natural number $a$ let $B_z(a)$ be the
 coefficient of $u^a$ in the formal power series
 
-$$B_{1,S_h}(u, z) = (1 - qu)^z \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f},$$
+$$
+B_{1,S_h}(u, z) = (1 - qu)^z \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f},
+$$
 
 where $(1 - qu)^z = \sum_{m \ge 0} \binom{z}{m} (-qu)^m$. Then there is a real constant $c$ such
 that for every complex number $z$ with $|z| \le A$ and every natural number $n \ge 2$,
 
-$$\sum_{a=0}^{n} |B_z(a)|\, q^{-\sigma a} \le c.$$
+$$
+\sum_{a=0}^{n} |B_z(a)|\, q^{-\sigma a} \le c.
+$$
 
 ## Sources
 

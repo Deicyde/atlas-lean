@@ -6,4 +6,4 @@ is division of natural numbers rounded down.
 
 ## Sources
 
-- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021).
+- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, Section 1 (the product formula for $A_n$).

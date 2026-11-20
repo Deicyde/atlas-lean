@@ -1,4 +1,3 @@
 # Removing the last customer undoes a seating
 
-Removing the last customer undoes every seating: restricting `seat π c` to the first `n`
-customers gives back `π`.
+For every set partition $\pi$ of $\{0, \dots, n-1\}$ and every seating choice $c$, the restriction to the first $n$ customers of the partition obtained by [seating](seat.md) customer $n$ by $c$ is $\pi$.

@@ -6,4 +6,4 @@ when started on the blank tape, the largest halting time is $47176870$.
 
 ## Sources
 
-- Busy Beaver Challenge (2025), determination of `S(5) = 47176870`.
+- The bbchallenge Collaboration, "Determination of the fifth Busy Beaver value", arXiv:2509.12337, 2025: $S(5) = 47\,176\,870$.

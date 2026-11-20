@@ -1,4 +1,5 @@
 # French-flag regions
 
-A cell at `x` is at or above threshold `θ` iff it lies within the
-boundary `x_θ`: `θ ≤ c(x) ↔ x ≤ x_θ`.
+Let $D, k, j, \theta > 0$. For every real $x$, the [morphogen profile](profile.md) $c(x) = (j/\sqrt{Dk})\, e^{-x/\lambda}$, $\lambda = \sqrt{D/k}$, satisfies $\theta \le c(x)$ if and
+only if $x \le x_\theta$, the [French-flag boundary](threshold-position.md) for the threshold
+$\theta$.

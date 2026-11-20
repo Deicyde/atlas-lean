@@ -1,5 +1,8 @@
 # Memoryless pair HMM
 
-The pair HMM's transition weights do not depend on the current state: every transition into
-an emitting state `s` (from the begin state or from any emitting state) has weight `π s`, and
-every transition into the end state has weight `τ`.
+A real [pair HMM](pair-hmm.md) is memoryless with transition weights $\pi(s)$ and end weight $\tau$ if
+
+- $\pi_0(s) = \pi(s)$ for every emitting state $s$;
+- $t(s, s') = \pi(s')$ for all emitting states $s, s'$;
+- $\tau(s) = \tau$ for every emitting state $s$;
+- $\tau_0 = \tau$.

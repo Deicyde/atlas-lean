@@ -1,4 +1,4 @@
-# Kourovka Problem 14.13(a) (Bardakov)
+# Simple groups of unbounded commutator length (Kourovka 14.13(a))
 
 The statement that there is a simple group $G$ such
 that for every natural number $n$ some element of the derived subgroup $[G, G]$ is not a product of

@@ -1,4 +1,4 @@
-# n-step Lucas numbers
+# $n$-step Lucas numbers
 
 For natural numbers $n \ge 1$ and $m$, the $n$-step Lucas number
 $L^{(n)}_m$ is defined by $L^{(n)}_0 = 0$, $L^{(n)}_m = 2^m - 1$ for $1 \le m \le n$, and
@@ -9,4 +9,4 @@ The source defines $L^{(n)}_m$ only for $m \ge 1$; the value $L^{(n)}_0 = 0$ is 
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex>.
+- Shingo Saito, Tatsushi Tanaka, and Noriko Wakabayashi, *Combinatorial Remarks on the Cyclic Sum Formula for Multiple Zeta Values*, Journal of Integer Sequences 14 (2011), Article 11.2.4, Definition 13, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.html>.

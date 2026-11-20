@@ -1,5 +1,3 @@
 # IVW recovers an exact proportionality coefficient
 
-Without error, IVW recovers the proportionality coefficient: if
-`β̂_{Yj} = β β̂_{Xj}` for all `j` and some `β̂_{Xj} ≠ 0`, then the IVW estimate is `β`.
-This algebraic statement does not itself give `β` a causal interpretation.
+Let $\iota$ be a finite set of SNPs, let $\sigma_j > 0$ for every $j$, let $\hat\beta_{Xj} \ne 0$ for some $j$, and let $\beta \in \mathbb{R}$. If $\hat\beta_{Yj} = \beta\, \hat\beta_{Xj}$ for every $j$, then the [IVW estimator](ivw.md) equals $\beta$.

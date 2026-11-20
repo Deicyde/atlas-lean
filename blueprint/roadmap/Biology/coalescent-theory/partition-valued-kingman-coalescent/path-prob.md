@@ -1,6 +1,7 @@
 # Path probability of the Kingman coalescent jump chain
 
-The probability that the jump chain of Kingman's `n`-coalescent, started from the partition
-into singletons, follows the list of partitions `l`: `0` unless `l` starts at the partition
-into singletons, and otherwise the product of the one-step transition probabilities
-`jumpMatrix n` along `l`. The empty list has probability `0`.
+For a natural number $n$ and a finite list $(\pi_0, \dots, \pi_r)$ of partitions in $\mathcal{P}_n$, its path probability is $0$ for the empty list, and otherwise
+
+$$[\pi_0 = \bot] \prod_{i=0}^{r-1} J_n(\pi_i, \pi_{i+1}),$$
+
+where $J_n$ is the [jump matrix](jump-matrix.md): the probability that the jump chain of Kingman's $n$-coalescent, started from the partition into singletons, follows the list.

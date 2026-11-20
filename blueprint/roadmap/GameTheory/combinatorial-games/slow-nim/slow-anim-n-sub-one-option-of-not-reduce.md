@@ -17,4 +17,4 @@ Stacks are labelled, so the paper's canonical-form display of $r(p')$ is written
 
 ## Sources
 
-- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 6.
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow$A$-Nim*, INTEGERS 26 (2026), Article G3, Lemma 6.

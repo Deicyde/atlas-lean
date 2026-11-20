@@ -1,4 +1,4 @@
 # Parallel composition preserves guarded normal forms up to congruence
 
-All private restrictions on either component are extruded canonically;
-no process execution or ready pair is stored in the normal form.
+Let $\Gamma$ be a service environment and $p$, $q$ processes in guarded normal form for $\Gamma$.
+Then there is a process $r$ in guarded normal form for $\Gamma$ with $p \mid q \equiv r$.

@@ -1,3 +1,4 @@
 # Global spin flip
 
-The global spin flip `σ ↦ -σ`.
+For a set $V$, the global spin flip sends a spin configuration $\sigma$ to $-\sigma$, reversing the spin
+at every site.

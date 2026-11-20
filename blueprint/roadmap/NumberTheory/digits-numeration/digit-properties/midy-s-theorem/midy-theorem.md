@@ -6,8 +6,8 @@ $1/p$ is $2n$. Let $Q = (10^{2n} - 1)/p$, whose decimal expansion padded with le
 $2n$ digits is the repetend of $1/p$, and write $Q = 10^n H + L$ with $0 \le L < 10^n$, so that
 $H$ and $L$ are the two $n$-digit halves of the repetend. Then $H + L = 10^n - 1$.
 
-The proof uses neither $p \ne 2, 5$ nor the minimality of the period beyond $p \nmid 10^n - 1$;
-see Midy's theorem, general form.
+The conclusion holds without $p \ne 2, 5$, and of the minimality of the period it needs only
+$p \nmid 10^n - 1$; see Midy's theorem, general form.
 
 ## Sources
 

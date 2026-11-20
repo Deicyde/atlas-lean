@@ -7,4 +7,4 @@ $n \ge 0$.
 
 ## Sources
 
-- ATLAS `NumberTheoryI`, Proposition 8.17.
+- ATLAS NumberTheoryI, Proposition 8.17.

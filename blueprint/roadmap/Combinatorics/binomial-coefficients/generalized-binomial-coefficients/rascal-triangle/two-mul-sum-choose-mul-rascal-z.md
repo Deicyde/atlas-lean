@@ -12,4 +12,4 @@ doubled so that no exponent is negative at $n = 0$.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Theorem 10.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Theorem 10, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

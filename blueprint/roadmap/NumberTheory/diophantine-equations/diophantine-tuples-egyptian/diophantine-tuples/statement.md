@@ -6,4 +6,4 @@ Diophantine quintuple.
 
 ## Sources
 
-- OPG-16555 (Diophantine quintuple conjecture) [OpenGarden].
+- Bo He, Alain Togbé, and Volker Ziegler, *There is no Diophantine quintuple*, Transactions of the American Mathematical Society 371 (2019), 6665–6709, https://doi.org/10.1090/tran/7573 (arXiv:1610.04020), which states this folklore conjecture and proves it.

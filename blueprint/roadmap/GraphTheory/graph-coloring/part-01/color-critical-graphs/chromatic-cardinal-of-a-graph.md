@@ -1,5 +1,3 @@
 # Chromatic cardinal of a graph
 
-The chromatic cardinal is the minimal number of colors need to color it. In contrast to
-`chromaticNumber`, which assigns `⊤ : ℕ∞` to all non-finitely colorable graphs, this definition
-returns a `Cardinal` and can therefore distinguish between different infinite chromatic numbers.
+For a simple graph $G$ on a set $V$, the chromatic cardinal of $G$ is the least cardinal $\kappa$ such that $G$ has a proper colouring with a set of colours of cardinality $\kappa$. Unlike the chromatic number, which takes the value $\infty$ for every graph that is not finitely colourable, it distinguishes between different infinite chromatic numbers.

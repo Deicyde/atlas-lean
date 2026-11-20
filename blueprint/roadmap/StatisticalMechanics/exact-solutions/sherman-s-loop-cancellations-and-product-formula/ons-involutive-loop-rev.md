@@ -1,4 +1,3 @@
 # Reversal of a cyclic sequence of states
 
-Reversal of a cyclic sequence of states: position `k` carries `rev` of the state at position
-`-k`.
+For a set $E$, $n \ge 1$, a map $\rho : E \to E$ and a cyclic sequence $(v_0, \dots, v_{n-1})$, the reversal is $k \mapsto \rho(v_{-k})$, indices mod $n$.

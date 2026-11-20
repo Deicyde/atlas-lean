@@ -1,3 +1,3 @@
 # Ancestral paths from a founder
 
-The only ancestral path from a founder is `[i]`.
+In a [pedigree](pedigree.md), if $i$ is a founder, then the only [ancestral path](anc-paths.md) from $i$ is $(i)$.

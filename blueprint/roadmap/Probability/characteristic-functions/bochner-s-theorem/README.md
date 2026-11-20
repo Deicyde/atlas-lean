@@ -8,3 +8,7 @@
 - [Forward direction of Bochner's theorem](bochner-forward.md)
 - [Characteristic functions are positive definite](char-fun-is-positive-definite.md)
 - [Real-valued characteristic functions are continuous and positive definite](bochner-forward-real.md)
+
+## Related topics
+
+- [Random Fourier features](../../../ComputerScience/machine-learning/supervised-learning/random-fourier-features/README.md): sampling frequencies from the measure that Bochner's theorem attaches to a shift-invariant kernel gives an unbiased random approximation of the kernel.

@@ -1,4 +1,4 @@
 # Duality preserves protocol tree equivalence
 
-Semantic equivalence is preserved by actual protocol duality, including
-recursive payloads with independently chosen orientation.
+For all protocols $S$, $T$, if $S \simeq T$ then $\overline{S} \simeq \overline{T}$, where $\simeq$
+is tree equivalence and $\overline{\,\cdot\,}$ is protocol duality.

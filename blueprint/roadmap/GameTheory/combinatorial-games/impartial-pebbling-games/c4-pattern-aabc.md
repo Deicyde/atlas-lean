@@ -7,4 +7,4 @@ that $a_i$, $a_{i+2}$ and $a_{i-1}$ are pairwise incongruent modulo $3$.
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{aabc}`).
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of $X_{aabc}$).

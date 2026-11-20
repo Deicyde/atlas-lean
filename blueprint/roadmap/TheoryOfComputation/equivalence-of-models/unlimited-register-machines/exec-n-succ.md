@@ -1,4 +1,4 @@
-# Bounded execution unfolds by one step
+# Bounded execution for one more step
 
 For a list of instruction codes, a number $t$
 and a coded state $s$, bounded execution for $t + 1$ steps from $s$ is the one-step function

@@ -12,8 +12,8 @@ $$\left| \frac{d(\alpha, \beta)}{2 N p^{3/2}} - \frac{1}{\sqrt{6}} \right| > \va
 
 is at most $C \varepsilon^{-2} (1/p + 1/N)$.
 
-The paper takes $p$ odd; here $p = 2$ is allowed. The paper also shows that $C$ is
-effectively computable; only its existence is stated here.
+The paper takes $p$ odd; the statement above also allows $p = 2$. The paper also shows that $C$ is
+effectively computable; the statement above asserts only its existence.
 
 ## Sources
 

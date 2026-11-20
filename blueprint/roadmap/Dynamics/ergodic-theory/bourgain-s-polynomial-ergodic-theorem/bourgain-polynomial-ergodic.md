@@ -10,4 +10,8 @@ iterate of $T$, converge to $F(x)$ as $n \to \infty$.
 
 ## Sources
 
-- J. Bourgain, *Pointwise ergodic theorems for arithmetic sets*, Publ. Math. IHÉS 69 (1989). Knill, *Some fundamental theorems in mathematics*, §173. Problem `bourgain_polynomial_ergodic` of the lean-eval benchmark.
+- Jean Bourgain, *Pointwise ergodic theorems for arithmetic sets*, Publ. Math. IHÉS 69 (1989), 5–41,
+  DOI 10.1007/bf02698838.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §173 (Polynomial Ergodic theorems),
+  <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `bourgain_polynomial_ergodic` of the lean-eval benchmark.

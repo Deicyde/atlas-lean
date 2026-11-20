@@ -1,7 +1,9 @@
 # Cockerham–Kempthorne variance components
 
-Cockerham–Kempthorne variance components up to order `n`: `V i j = V_{A^i D^j}` is the
-component of `i` additive and `j` dominance factors (`V 1 0 = V_A`, `V 0 1 = V_D`,
-`V 2 0 = V_AA`, …). They are nonnegative, there is no `(0, 0)` component, and the genetic
-covariance of relatives with `2φ` and `Δ` is `∑_{i, j ≤ n} (2φ)^i Δ^j V i j`. This structure
-is the stated representation; it is proved for one locus by `LocusModel.relCov_eq`.
+Cockerham–Kempthorne components consist of a natural number $n$ (the highest order kept) and real numbers $V_{ij}$ for $i, j \in \mathbb{N}$ (the component with $i$ additive and $j$ dominance factors: $V_{10} = V_A$, $V_{01} = V_D$, $V_{20} = V_{AA}$, ...) such that
+
+- $V_{ij} \ge 0$ for all $i, j$;
+- $V_{00} = 0$;
+- $V_{ij} = 0$ whenever $i > n$ or $j > n$.
+
+The representation of the genetic covariance of relatives by these components ([Cockerham form](cov.md)) is a hypothesis for many loci; for one locus it is proved ([one locus in Cockerham form](rel-cov-eq-cov.md)).

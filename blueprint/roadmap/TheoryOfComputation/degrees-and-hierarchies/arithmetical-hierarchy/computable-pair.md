@@ -7,4 +7,4 @@ is a computable function of its two arguments.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3.
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967.

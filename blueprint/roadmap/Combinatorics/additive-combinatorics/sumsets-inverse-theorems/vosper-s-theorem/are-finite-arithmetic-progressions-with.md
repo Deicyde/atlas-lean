@@ -9,4 +9,4 @@ and different lengths.
 
 ## Sources
 
-- Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem [Vosper] `theo_Vosper` condition (iii), lines 256–267, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.tex>: "`A` and `B` are arithmetic progressions with the same common difference".
+- Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem 10 (Vosper), condition (iii), https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.html: "$A$ and $B$ are arithmetic progressions with the same common difference".

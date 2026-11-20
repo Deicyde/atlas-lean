@@ -1,10 +1,11 @@
 # Euler's formula
 
-**Euler's formula** for a finite graph with `c` connected components: `|V| - |E| + F = 1 + c`,
-where `F = faceCount G`.
+For every simple graph $G$ on a finite vertex set $V$, with $E$ its edge set, $c$ its number of connected components and $F = \beta(G) + 1$ its face count, where $\beta(G) = |E| + c - |V|$ is the cycle rank,
 
-Here `F` is defined as the cycle rank plus one, so the statement is the combinatorial Euler
-relation; it agrees with `StatMech.Lattice.euler_relation_sub` up to the order of the summands. That
-`F` counts the faces of a plane embedding is a separate statement; for finite subgraphs of the
-square lattice the bounded faces are counted in `StatMech.Lattice.jed_faithfulDiscreteJordan`.
-Reference: L. Euler, *Elementa doctrinae solidorum* (1758).
+$$|V| - |E| + F = 1 + c$$
+
+as integers. Here $F$ is defined combinatorially from the cycle rank; that it counts the faces of a plane embedding is a separate statement.
+
+## Sources
+
+- Leonhard Euler, *Elementa doctrinae solidorum*, Novi Commentarii academiae scientiarum Petropolitanae 4 (1758), 109–140 (Eneström E230), https://scholarlycommons.pacific.edu/euler-works/230: the relation between vertices, edges and faces of polyhedra.

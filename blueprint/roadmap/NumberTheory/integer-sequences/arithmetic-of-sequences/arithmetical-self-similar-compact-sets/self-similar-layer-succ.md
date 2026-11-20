@@ -7,4 +7,4 @@ $T_{u+1}(K) = T_u(K')$, where $K'$ is the derived set of $K$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, proof of Proposition 7.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, proof of Proposition 7.

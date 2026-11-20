@@ -8,4 +8,4 @@ is étale over $K$.
 
 ## Sources
 
-- ATLAS NumberTheoryI Theorem 5.20.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 5, Theorem 5.20, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

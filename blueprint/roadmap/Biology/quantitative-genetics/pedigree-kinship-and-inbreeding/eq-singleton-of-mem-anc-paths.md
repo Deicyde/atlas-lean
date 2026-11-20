@@ -1,3 +1,3 @@
 # An ancestral path returning to its start is trivial
 
-A path from `i` ending at `i` is `[i]`.
+In every [pedigree](pedigree.md), an [ancestral path](anc-paths.md) from $i$ whose last element is $i$ is the path $(i)$.

@@ -1,4 +1,4 @@
-# Overgroups of Hall subgroups in $D_\pi$-groups (Manzaeva, Vdovin–Manzaeva–Revin)
+# Overgroups of Hall subgroups in $D_\pi$-groups are $D_\pi$-groups
 
 Let $\pi$ be
 a set of natural numbers and let $G$ be a finite $D_\pi$-group. Then every subgroup $K$ of $G$ that

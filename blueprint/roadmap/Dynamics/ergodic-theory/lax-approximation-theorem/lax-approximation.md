@@ -10,4 +10,8 @@ essential-supremum distance between volume-preserving maps.
 
 ## Sources
 
-- P. D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971). Knill, *Some fundamental theorems in mathematics*, §110. Problem `lax_approximation` of the lean-eval benchmark.
+- Peter D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971), 133–135,
+  DOI 10.1002/cpa.3160240204.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §110 (Lax approximation; the approximation by
+  cyclic cube exchanges is stated there), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `lax_approximation` of the lean-eval benchmark.

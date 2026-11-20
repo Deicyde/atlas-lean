@@ -5,4 +5,4 @@ belongs to the set of partitions of $n$ whose diagonal sequence equals that of $
 
 ## Sources
 
-- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]`); characteristic check of `diagonalClassOf`.
+- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]`).

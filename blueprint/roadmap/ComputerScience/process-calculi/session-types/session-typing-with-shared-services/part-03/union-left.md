@@ -1,3 +1,4 @@
 # Separation restricts to the left part of a union
 
-A left child of the actual ownership union retains static shared-name separation.
+Let $\Gamma$ be a service environment and $\Delta$, $\Theta$ ownership contexts. If $\Delta \cup
+\Theta$ is separated from $\Gamma$, then so is $\Delta$.

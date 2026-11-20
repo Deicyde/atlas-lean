@@ -1,4 +1,4 @@
-# Subset-sum emitter: unterminated unary prefix at rdN
+# Subset-sum emitter: unterminated unary prefix at $\mathrm{rdN}$
 
 Let $r = (r_1, \dots, r_m)$ be a
 list of bits on which reading a unary length prefix fails (equivalently, no $r_i$ is

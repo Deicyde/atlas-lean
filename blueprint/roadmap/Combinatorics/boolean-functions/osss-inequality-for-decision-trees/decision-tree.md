@@ -1,4 +1,3 @@
 # Binary decision tree
 
-A binary decision tree on the variables `E`: a leaf outputs a Boolean value, and a node queries
- a variable and continues in the first subtree if it is `true` and in the second otherwise.
+A binary decision tree on a set $E$ of variables is either a leaf labelled by a value in $\{0, 1\}$, or a node labelled by a variable $e \in E$ with two subtrees: on input $\omega \in \{0, 1\}^E$ it continues in the first subtree if $\omega_e = 1$ and in the second if $\omega_e = 0$.

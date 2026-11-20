@@ -9,4 +9,4 @@ extended by an instruction $\mathtt{oracle}$ that queries the oracle on its inpu
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987 (oracle computations).

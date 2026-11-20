@@ -1,4 +1,4 @@
-# Canonicalization of the concrete binary List Nat codec
+# Canonicalization of the binary code of lists of naturals
 
 - [Successful block parsing reconstructs the input](blocks-decode-sound.md)
 - [Decoding natural-number payloads never fails](map-m-decode-nat.md)

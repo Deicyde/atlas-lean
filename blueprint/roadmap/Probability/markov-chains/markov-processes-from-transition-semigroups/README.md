@@ -18,10 +18,14 @@
 - [Finite projections of the Markov path measure](map-restrict-path-measure.md)
 - [Ordered finite projections of the Markov path measure](map-ordered-path-measure.md)
 - [Representation of positive unital operators by Markov kernels](exists-markov-kernel-of-positive-linear.md)
-- [Positive-operator-to-Markov-kernel bridge](exists-markov-kernel-of-positive-operato.md)
+- [Positive operators on $C(E)$ are given by Markov kernels](exists-markov-kernel-of-positive-operato.md)
 - [Markov kernel of a positive unital operator](markov-kernel-of-positive-operator.md)
 - [Kernel of a positive operator represents it on continuous functions](integral-markov-kernel-of-positive-opera.md)
 - [Markov kernels are determined by integrals of continuous functions](kernel-ext-of-forall-integral-continuous.md)
 - [Identity operator gives the identity kernel](markov-kernel-of-positive-operator-id.md)
 - [Identity operator kernel is pointwise Dirac](markov-kernel-of-positive-operator-id-ap.md)
 - [Operator composition corresponds to kernel composition](markov-kernel-of-positive-operator-comp.md)
+
+## Related topics
+
+- [Dirichlet forms](../dirichlet-forms/README.md): Fukushima's and Albeverio–Ma–Röckner's constructions of Markov processes with regular paths from Dirichlet forms.

@@ -1,6 +1,5 @@
 # Global progress of ranked processes at balanced interfaces
 
-For a ranked-typed process at ANY balanced interface, global progress
-holds, including disconnected networks.
-All private channels are tracked through the derived restriction tower.
-Completion means process congruence to nil, not completion of the interface.
+Let $n$ be a natural number, $\Delta$ a balanced ownership context (whenever $\Delta(e) = c$, also
+$\Delta(\bar e) = \bar c$) and $p$ a process with $\Delta \vdash^{\mathrm{rk}}_n p$. Then $p \equiv
+\mathbf{0}$ or $p \to q$ for some process $q$.

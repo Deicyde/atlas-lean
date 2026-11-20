@@ -1,14 +1,7 @@
 # Fuel-bounded Needleman–Wunsch recursion
 
-Fix a substitution score
-$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $|x|$ for
-the length of a sequence $x$ and $ax$ for the sequence with first element $a$ followed by $x$.
-For a fuel $n \in \mathbb{N}$ and sequences $x, y$ over $\alpha$, the value
-$N_n(x, y) \in \mathbb{Z}$ is defined by $N_0(x, y) = 0$, by $N_{n+1}(x, y) = g\,|y|$ if $x$ is
-empty and $N_{n+1}(x, y) = g\,|x|$ if $y$ is empty, and by
+For integer substitution scores $\sigma$ and gap score $g$, define $N_n(x, y)$ for a natural number $n$ and sequences $x, y$ by
 
-$$N_{n+1}(ax, by) = \max\bigl(N_n(x, y) + \sigma(a, b),\ N_n(x, by) + g,\ N_n(ax, y) + g\bigr).$$
-
-The Needleman–Wunsch score of $x$ and $y$ is $N_{|x|+|y|}(x, y)$; this fuel suffices because every
-recursive call shortens the pair. This is an exponential-time specification, not a memoized
-table.
+- $N_0(x, y) = 0$;
+- $N_{n+1}(\text{empty}, \text{empty}) = 0$, $N_{n+1}(\text{empty}, y) = g\,|y|$ and $N_{n+1}(x, \text{empty}) = g\,|x|$;
+- for letters $a, b$, $N_{n+1}(a x, b y) = \max\bigl(N_n(x, y) + \sigma(a, b),\ N_n(x, b y) + g,\ N_n(a x, y) + g\bigr)$.

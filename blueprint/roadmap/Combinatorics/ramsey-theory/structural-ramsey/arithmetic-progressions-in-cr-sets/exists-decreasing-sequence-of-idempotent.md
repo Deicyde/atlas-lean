@@ -9,9 +9,8 @@ with $pp = p$ (an essential $\mathcal F$-set), then there are sets $C_0 \supsete
 C_2 \supseteq \cdots$ in $\mathcal F$, all contained in $A$, such that for every $n$ and every
 $x \in C_n$ there is $m$ with $C_m \subseteq x^{-1}C_n$.
 
-Statements (b) (trees of functions) and (c) (downward directed families) of the paper are
-omitted. The sequence is indexed from $0$.
+The paper's theorem also has equivalent forms (b) (trees of functions) and (c) (downward directed families). The sequence is indexed from $0$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.

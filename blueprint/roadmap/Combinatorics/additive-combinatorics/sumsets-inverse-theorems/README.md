@@ -1,10 +1,11 @@
 # Sumsets and inverse theorems
 
-Size and structure of A+B, hA and restricted or signed sumsets: Cauchy–Davenport and Vosper, Freiman-type and polynomial Freiman–Ruzsa theorems, small doubling, sums of dilates, h-fold sumsets with distinct terms, rectification, sets determined by k-sums, max-min (lunar) decompositions, and sum-product and product-set growth.
+Size and structure of A+B, hA and restricted or signed sumsets: Cauchy–Davenport and Vosper, Freiman-type, Balog–Szemerédi–Gowers and polynomial Freiman–Ruzsa theorems, small doubling, sums of dilates, h-fold sumsets with distinct terms, rectification, sets determined by k-sums, max-min (lunar) decompositions, and sum-product and product-set growth.
 
 - [Difference sets of full-dimensional lattice sets](difference-sets-of-full-dimensional-lattice-sets/README.md)
 - [Distinct consecutive sums](distinct-consecutive-sums/README.md)
 - [Explicit sum-product expanders over prime fields](explicit-sum-product-expanders-over-prime-fields/README.md)
+- [Freiman and Balog–Szemerédi–Gowers theorems](freiman-and-balog-szemer-di-gowers-theorems/README.md)
 - [Large subspaces in sumsets](large-subspaces-in-sumsets/README.md)
 - [Max-min indecomposable sequences and lunar primes](max-min-indecomposable-sequences-and-lunar-prime/README.md)
 - [Polynomial Freiman–Ruzsa theorem](polynomial-freiman-ruzsa-theorem/README.md)

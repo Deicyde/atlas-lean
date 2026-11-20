@@ -1,3 +1,3 @@
 # Unordered pair inside a set
 
-An unordered pair `e` is inside `S` if both of its endpoints lie in `S`.
+For a set $V$, $S \subseteq V$ and an unordered pair $e$, $e$ is inside $S$ when both of its endpoints lie in $S$.

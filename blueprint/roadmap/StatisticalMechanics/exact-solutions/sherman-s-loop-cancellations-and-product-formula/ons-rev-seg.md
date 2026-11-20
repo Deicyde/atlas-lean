@@ -1,4 +1,3 @@
 # Reversal of a segment of a cyclic sequence
 
-Reversal of the segment `[l, m]` of `v`: positions inside are mirrored and their entries
-replaced by their reverses; positions outside are unchanged.
+For a set $E$, $n \ge 1$, $\rho : E \to E$, positions $\ell, m$ and a sequence $v$ of length $n$, the segment reversal replaces $v_k$, for each position $k$ with $\ell \le k \le m$, by $\rho(v_{\mu(k)})$, where $\mu(k) = \min(\ell + m - k, n - 1)$ is the [mirror position](ons-mir.md), and keeps the other entries.

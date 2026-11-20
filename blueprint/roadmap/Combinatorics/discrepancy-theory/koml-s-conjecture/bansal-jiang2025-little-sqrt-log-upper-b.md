@@ -8,4 +8,5 @@ $o(\sqrt{\log n})$.
 
 ## Sources
 
-- optimization catalogue C24a, line 38, and BJ2025's retained abstract.
+- Nikhil Bansal and Haotian Jiang, *Decoupling via affine spectral-independence: Beck–Fiala and Komlós bounds beyond Banaszczyk*, arXiv:2508.03961 (2025), abstract (the $\widetilde{O}(\log^{1/4} n)$ bound, where $\widetilde{O}$ hides factors polynomial in $\log \log n$).
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

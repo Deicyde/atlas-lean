@@ -14,4 +14,4 @@ construction; Allouche and Shallit also reproved it.
 
 ## Sources
 
-- Tomi Kärki, Anne Lacroix, and Michel Rigo, "On the Recognizability of Self-Generating Sets," Journal of Integer Sequences 13 (2010), Article 10.2.2, Theorem (section Kimberling set and the Fibonacci word, label secKF), lines 710–714, https://cs.uwaterloo.ca/journals/JIS/VOL13/Rigo/rigo6.tex
+- Tomi Kärki, Anne Lacroix and Michel Rigo, *On the Recognizability of Self-Generating Sets*, Journal of Integer Sequences 13 (2010), Article 10.2.2, Section 4 (Kimberling set and the Fibonacci word), Theorem 13, https://cs.uwaterloo.ca/journals/JIS/VOL13/Rigo/rigo6.html

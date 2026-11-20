@@ -1,3 +1,4 @@
 # Restricting nil preserves ranked typing
 
-A completed fresh pair can be introduced around nil without changing guards.
+Let $n$ be a natural number and $\Delta$ an ownership context. If $\Delta \vdash^{\mathrm{rk}}_n
+\mathbf{0}$, then $\Delta \vdash^{\mathrm{rk}}_n \nu\,\mathbf{0}$.

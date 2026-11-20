@@ -7,4 +7,4 @@ $\frac{2 \cdot 2}{1 \cdot 3} \cdot \frac{6 \cdot 6}{5 \cdot 7} \cdot \frac{10 \c
 
 ## Sources
 
-- László Tóth, Journal of Integer Sequences 23, `toth46.tex`, lines 157-161. URL: <https://cs.uwaterloo.ca/journals/JIS/VOL23/Toth/toth46.tex>.
+- László Tóth, *Transcendental Infinite Products Associated with the $\pm 1$ Thue–Morse Sequence*, Journal of Integer Sequences 23 (2020), Article 20.8.2, lines 157-161, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Toth/toth46.tex>.

@@ -12,4 +12,4 @@ Equivalently, the decimal expansion of $n$ has exactly three runs of equal digit
 
 ## Sources
 
-- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemmas 4 and 6.
+- Monalisa Mohapatra, Pritam Kumar Bhoi, and Gopal Krishna Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemmas 4 and 6.

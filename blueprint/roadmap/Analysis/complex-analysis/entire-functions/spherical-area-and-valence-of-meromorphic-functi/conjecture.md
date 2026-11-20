@@ -13,7 +13,7 @@ $|z| < r$ counted with multiplicity, and $A(f, r)$ is the normalized spherical a
 $|z| < r$.
 
 For such $f$ it is known that $1 \le \liminf_{r \to \infty} n(f, r)/A(f, r) \le e$; Hayman asked
-whether $e$ can be replaced by $1$. The statement is recorded as a proposition and is not
+whether $e$ can be replaced by $1$. The statement below is this open question; it is not
 asserted.
 
 ## Sources

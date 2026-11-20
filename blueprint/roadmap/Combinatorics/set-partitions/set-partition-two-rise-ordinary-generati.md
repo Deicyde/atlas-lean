@@ -13,4 +13,4 @@ $$\sum_{n, r \ge 0} a_{n,r}\, x^n y^r =
 
 ## Sources
 
-- Toufik Mansour and Augustine O. Munagi, “Enumeration of Partitions by Long Rises, Levels, and Descents”, Journal of Integer Sequences 12 (2009), Article 09.1.8, Theorem `thrise2`, lines 505-510, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Munagi/munagi15.tex>.
+- Toufik Mansour and Augustine O. Munagi, “Enumeration of Partitions by Long Rises, Levels, and Descents”, Journal of Integer Sequences 12 (2009), Article 09.1.8, Theorem 3.4, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Munagi/munagi15.pdf>.

@@ -1,4 +1,3 @@
 # Number of members of a binary hierarchy
 
-A binary hierarchy on `S` has `2 |S| - 1` members: the `|S|` singletons and `|S| - 1`
-internal clusters (stated without subtraction).
+Every [binary hierarchy](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md) $H$ on a finite set $S$ satisfies $|H| + 1 = 2|S|$.

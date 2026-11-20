@@ -1,4 +1,3 @@
 # Power tends to one
 
-For `0 ≤ p₀ < p₁ ≤ 1` and any level `γ > 0`, the power of the
-binomial test tends to `1` as the number of patients grows.
+Let $0 \le p_0 < p_1 \le 1$ and $\gamma > 0$. Then the [saturation power](saturation-power.md) satisfies $\mathrm{Pow}(N) \to 1$ as $N \to \infty$.

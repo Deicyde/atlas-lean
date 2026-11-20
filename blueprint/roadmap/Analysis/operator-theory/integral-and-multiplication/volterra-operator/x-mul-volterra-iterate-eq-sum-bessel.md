@@ -10,4 +10,4 @@ $$(XV)^n f(x) = \sum_{k=0}^{n-1} (-1)^k \, a(n-1, k) \, x^{n-k} \, (V^{n+k} f)(x
 
 ## Sources
 
-- Abdelhay Benmoussa, *On the Expansion of `(XV)^n` and Bessel Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.5, Theorem 1 (`jis-2026-26.3.5-thm-1`).
+- Abdelhay Benmoussa, *On the Expansion of $(XV)^n$ and Bessel Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.5, Theorem 1 (`jis-2026-26.3.5-thm-1`).

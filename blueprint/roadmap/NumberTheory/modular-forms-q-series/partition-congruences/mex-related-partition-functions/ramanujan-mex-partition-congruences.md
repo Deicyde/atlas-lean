@@ -15,4 +15,4 @@ where $e = k$ for $p = 5$ and $p = 11$, and $e = \lfloor k/2 \rfloor + 1$ for $p
 
 ## Sources
 
-- Barman–Singh, JIS 24 (2021), Art. 21.6.3, corollary.
+- Rupam Barman and Ajit Singh, "Mex-Related Partition Functions of Andrews and Newman," Journal of Integer Sequences 24 (2021), Article 21.6.3, Corollary 3.

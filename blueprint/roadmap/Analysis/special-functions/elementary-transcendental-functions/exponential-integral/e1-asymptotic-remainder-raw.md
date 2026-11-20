@@ -7,5 +7,5 @@ principal logarithm extended by $\operatorname{Log} 0 = 0$, $\gamma$ is the Eule
 constant and $S_n$ is the totalized sum of the first $n$ terms of the asymptotic expansion
 of $E_1$.
 
-At $z = 0$ this equals $-\gamma$, a value with no classical meaning; the domain-safe remainder
-requires $z \neq 0$.
+At $z = 0$ this equals $-\gamma$, a value with no classical meaning; the remainder defined only for
+$z \neq 0$ avoids it.

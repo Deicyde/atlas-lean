@@ -1,6 +1,3 @@
 # Substitution of a name into a π-calculus name
 
-Substitute the name `n` for the variable at `cutoff`: variables
-below the cutoff are bound by inner binders and untouched, the variable
-at the cutoff is replaced by `n`, and variables above shift down by
-one.
+Let $n$ be a [channel name](name.md) and $k \in \mathbb{N}$ a cutoff. Substituting $n$ for the variable $\#k$ in a name leaves a free channel $c_m$ unchanged and sends a variable $\#i$ to $\#i$ if $i < k$ (bound by an inner binder), to $n$ if $i = k$, and to $\#(i - 1)$ if $i > k$ (the binder of $\#k$ disappears).

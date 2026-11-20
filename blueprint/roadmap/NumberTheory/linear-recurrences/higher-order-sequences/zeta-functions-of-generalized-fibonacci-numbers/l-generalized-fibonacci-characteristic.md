@@ -7,4 +7,4 @@ $\ell \ge 2$ this is $X^\ell - X^{\ell-1} - \cdots - X - 1$.
 
 ## Sources
 
-- Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Characteristic polynomial definition.
+- Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Equation (1).

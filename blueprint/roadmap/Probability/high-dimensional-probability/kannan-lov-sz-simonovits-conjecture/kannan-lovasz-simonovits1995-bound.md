@@ -6,4 +6,5 @@ $\psi_n \in [0, \infty]$ satisfies $\psi_n \le C \sqrt{n}$.
 
 ## Sources
 
-- Kannan, Lovasz and Simonovits, DCG 13 (1995), 541--560; optimizationproblems `constants/20c.md`, KLS1995 row.
+- R. Kannan, L. Lovász and M. Simonovits, *Isoperimetric problems for convex bodies and a localization lemma*,
+  Discrete Comput. Geom. 13 (1995), 541–559; catalogue https://github.com/teorth/optimizationproblems, `constants/20c.md`.

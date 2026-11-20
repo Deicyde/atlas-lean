@@ -11,4 +11,4 @@ $$2S = n^2 \left( |T|^{n^2/4} + |T|^{(n^2-4)/4} \, t_1^2 \, t_2 \right).$$
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.

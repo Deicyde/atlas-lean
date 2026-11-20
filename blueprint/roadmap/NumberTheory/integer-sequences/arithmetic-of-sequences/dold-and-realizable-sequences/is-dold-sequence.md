@@ -7,4 +7,4 @@ constrained.
 
 ## Sources
 
-- Wójcik, *Binomial Transform and Dold Sequences*, Lemma 3; this equivalent trace characterization is taken here as the definition.
+- Klaudiusz Wójcik, *Binomial Transform and Dold Sequences*, Journal of Integer Sequences 18 (2015), Article 15.1.1, Lemma 6; this equivalent trace characterization is taken here as the definition.

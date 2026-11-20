@@ -1,4 +1,4 @@
-# Stack alphabet of the layout machine
+# Stack alphabet of the checking machine
 
-Every stack of the layout machine holds bits: the
-alphabet of each stack is the type of Booleans.
+Every stack of the checking machine holds bits: the
+alphabet of each of its stacks is the set of Booleans.

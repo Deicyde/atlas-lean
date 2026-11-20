@@ -9,7 +9,7 @@
 - [The sum-product ratio is at most two](sum-product-ratio-le-two.md)
 - [The level minimum is nonnegative](sum-product-level-minimum-nonneg.md)
 - [The level minimum is at most two](sum-product-level-minimum-le-two.md)
-- [The sum-product level minima eventually lie in $(0, 2)$](eventually-sum-product-level-minimum-mem.md)
+- [The sum-product level minima eventually lie in $[0, 2]$](eventually-sum-product-level-minimum-mem.md)
 - [The level minima are eventually bounded above](sum-product-level-minimum-is-bounded-und.md)
 - [The sum-product level minima are eventually bounded below](sum-product-level-minimum-is-bounded-und-2.md)
 - [Sum-product exponent of the reals](sum-product-exponent.md)

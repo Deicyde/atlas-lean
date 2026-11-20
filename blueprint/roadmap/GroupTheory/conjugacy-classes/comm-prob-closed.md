@@ -7,4 +7,4 @@ closed subset of $\mathbb{R}$.
 
 ## Sources
 
-- https://arxiv.org/abs/2201.09402. Problem `commProb_closed` of the lean-eval benchmark.
+- T. Browning, *Limit points of commuting probabilities of finite groups*, arXiv:2201.09402, Theorem 1.2, https://arxiv.org/abs/2201.09402. Problem `commProb_closed` of the lean-eval benchmark.

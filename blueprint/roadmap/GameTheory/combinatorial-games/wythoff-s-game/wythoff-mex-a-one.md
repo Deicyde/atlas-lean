@@ -9,4 +9,4 @@ $a_0 + \ell + 1 = 2\ell + 2$.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17, equation (mexdef).
+- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17 (definition of the mex sequence).

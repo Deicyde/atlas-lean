@@ -1,5 +1,7 @@
 # Mixed-model association chi-squared statistic
 
-The mixed-model (generalized-least-squares score) statistic
-`χ²(V) = (xᵀ V⁻¹ y)² / (xᵀ V⁻¹ x)` of the marker `x` for the phenotype `y` under the phenotypic
-covariance `V`. For positive definite `V` and `x ≠ 0` the denominator is positive.
+Let $I$ be a finite index set, let $V$ be a real $I \times I$ matrix and let $x, y \in \mathbb{R}^I$ (a marker and a phenotype). The mixed-model association statistic is
+
+$$\chi^2(V) = \frac{(x^\top V^{-1} y)^2}{x^\top V^{-1} x},$$
+
+with the conventions that the inverse of a singular matrix is $0$ and $a/0 = 0$. For positive definite $V$ and $x \ne 0$ the denominator is positive.

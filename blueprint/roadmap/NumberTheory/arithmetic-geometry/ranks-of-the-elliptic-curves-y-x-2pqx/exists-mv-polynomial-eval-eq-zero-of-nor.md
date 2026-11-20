@@ -1,4 +1,4 @@
-# Multivariable Hensel lemma over the p-adic integers
+# Multivariable Hensel lemma over the $p$-adic integers
 
 Let $p$ be a prime, let
 $f \in \mathbb{Z}_p[x_1, \dots, x_n]$ and $a \in \mathbb{Z}_p^n$, and suppose that for some index
@@ -8,4 +8,4 @@ there is a point $x \in \mathbb{Z}_p^n$ with $f(x) = 0$.
 
 ## Sources
 
-- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Lemma 1, quoted there as Hensel's lemma.
+- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve $y^2 = x^3 - 2pqx$*, INTEGERS 26 (2026), Article A51, Lemma 1, quoted there as Hensel's lemma.

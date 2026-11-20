@@ -1,7 +1,6 @@
 # Pardon's theorem: the p-adic integers cannot act faithfully and continuously on a connected 3-manifold
 
-**Pardon's theorem: the p-adic integers cannot act faithfully and continuously on a
-connected 3-manifold.** Let $p$ be a prime and $M$ a connected, Hausdorff, second-countable
+Let $p$ be a prime and $M$ a connected, Hausdorff, second-countable
 topological space with an atlas of charts modelled on $\mathbb{R}^3$, that is, a connected
 topological 3-manifold without boundary. Then there is no faithful action of the additive group
 $\mathbb{Z}_p$ of $p$-adic integers on $M$ that is jointly continuous as a map

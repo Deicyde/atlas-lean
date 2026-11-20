@@ -1,4 +1,4 @@
 # Structural congruence preserves process scoping
 
-Every existing structural congruence transports canonical π scoping,
-including scope extrusion, restriction swapping and replication folding.
+Let $p \equiv q$ be structurally congruent processes. Then for every natural number $n$, $p$ is
+scoped at depth $n$ if and only if $q$ is.

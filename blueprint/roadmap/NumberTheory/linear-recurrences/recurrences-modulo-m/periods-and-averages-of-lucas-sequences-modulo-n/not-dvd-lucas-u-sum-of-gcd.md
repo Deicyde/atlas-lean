@@ -1,7 +1,12 @@
-# Non-integer period average of a Lucas sequence when $\gcd(n, a, b) > 1$
+# Non-integral averages of a Lucas sequence when $\gcd(n, P, Q) > 1$
 
-Theorem 2.13: for nondegenerate `U(a, b)` with `d = gcd(a, b) > 1` and
-`gcd(n, d) > 1`, `A_U(n)` is not an integer.
+Let $P$ and $Q$ be integers such that the Lucas pair $(P, Q)$ is nondegenerate and
+$d = \gcd(P, Q) > 1$, and let $U = U(P, Q)$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$
+and $U_{k+2} = P U_{k+1} - Q U_k$. Then every positive integer $n$ with $\gcd(n, d) > 1$ satisfies
+$n \nmid U_1 + \dots + U_n$, that is, the average $A_U(n) = (U_1 + \dots + U_n)/n$ is not an
+integer.
+
+In the paper's notation $a = P$ and $b = -Q$, so $d = \gcd(a, b)$.
 
 ## Sources
 

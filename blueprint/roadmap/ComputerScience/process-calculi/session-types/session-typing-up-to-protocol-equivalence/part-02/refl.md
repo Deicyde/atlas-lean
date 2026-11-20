@@ -1,3 +1,4 @@
 # Reflexivity of capability equivalence
 
-Reflexivity retains rank and the exact protocol tree.
+For every capability $c$, $c \approx c$, where $\approx$ requires equal ranks and tree-equivalent
+protocols.

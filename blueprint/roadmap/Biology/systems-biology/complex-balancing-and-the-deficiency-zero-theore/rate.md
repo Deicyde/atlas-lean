@@ -1,3 +1,5 @@
 # Mass-action reaction rate
 
-The mass-action rate `k r * ∏_s c_s ^ (src r s)` of reaction `r` at concentrations `c`.
+Let $N$ be a [chemical reaction network](reaction-network.md) with species set $S$ and reaction set $\rho$, with $S$ finite. For rate constants $k \in \mathbb{R}^\rho$ and concentrations
+$c \in \mathbb{R}^S$, the mass-action rate of reaction $r$ is
+$k_r \prod_{s \in S} c_s^{\mathrm{src}(r)_s}$.

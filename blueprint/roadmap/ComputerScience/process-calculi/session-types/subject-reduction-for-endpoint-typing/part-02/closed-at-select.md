@@ -1,4 +1,4 @@
 # Choice selection preserves process scoping
 
-Selection preserves canonical scope even when actual guarded choices
-are present in the existing π syntax.
+Let $p$, $q$ be processes such that $q$ is obtained from $p$ by guarded-choice resolution, and $n$ a
+natural number. If $p$ is scoped at depth $n$, then so is $q$.

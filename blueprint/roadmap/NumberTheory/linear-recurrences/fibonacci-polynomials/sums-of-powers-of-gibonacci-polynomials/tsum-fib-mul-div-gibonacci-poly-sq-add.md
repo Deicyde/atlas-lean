@@ -9,11 +9,11 @@ $(\mu, \nu) = (x^2 + 4, 1)$. Then for every positive integer $k$ and every natur
 $$\sum_{n \ge 1} \frac{(-1)^{k+1} \mu \nu f_r f_{2k}}{g_{2nk}^2 + (-1)^k \mu \nu f_k^2}
 = \frac{g_{k+r}}{g_k} - \alpha^r.$$
 
-The extracted statement of this theorem prints the numerator with $(-1)^k$ in place of
+The source prints the numerator of this theorem with $(-1)^k$ in place of
 $(-1)^{k+1}$, which negates the left side and makes the identity false (for $x = 1$, $g = f$ and
 $k = r = 1$ that left side is $(\sqrt{5} - 1)/2$ while the right side is $(1 - \sqrt{5})/2$); the
-paper's proof and its corollaries use the sign stated here.
+paper's proof and its corollaries use the sign used above.
 
 ## Sources
 
-- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Theorem 3.1.
+- Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), no. 1, 29–33, Theorem 3.1.

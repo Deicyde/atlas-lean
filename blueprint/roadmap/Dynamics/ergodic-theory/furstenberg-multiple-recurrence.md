@@ -8,9 +8,12 @@ that
 
 $$\mu\Big(\bigcap_{i=0}^{k-1} T^{-i n}(A)\Big) > 0.$$
 
-Proof: We apply the finitary Szemerédi theorem to dense sets of return times in finite orbit
-segments, using an averaging argument to obtain a positive-measure family of such segments.
+No ergodicity is assumed. The proof applies the finitary Szemerédi theorem to dense sets of return times in
+finite orbit segments, using an averaging argument to obtain a positive-measure family of such segments.
 
 ## Sources
 
-- H. Furstenberg, J. Analyse Math. 31 (1977) and Recurrence in Ergodic Theory (1981); Lean states one-transformation arithmetic-progression k-term intersection form without ergodicity hypothesis.
+- Hillel Furstenberg, *Ergodic behavior of diagonal measures and a theorem of Szemerédi on arithmetic
+  progressions*, J. Analyse Math. 31 (1977), 204–256, DOI 10.1007/bf02813304.
+- Hillel Furstenberg, *Recurrence in Ergodic Theory and Combinatorial Number Theory*, Princeton University Press,
+  1981.

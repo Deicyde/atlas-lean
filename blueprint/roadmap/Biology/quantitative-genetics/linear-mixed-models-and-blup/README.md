@@ -8,16 +8,16 @@
 - [Henderson's mixed-model equations](is-mmesolution-iff.md)
 - [The MME solution is the GLS estimate and the BLUP](is-mmesolution-iff-gls.md)
 
-## Gaussian
+## The Gaussian mixed model
 
 - [BLUP as a conditional law](cond-distrib-mixed-model.md)
 - [BLUP is the conditional expectation](cond-exp-mixed-model.md)
 
-## LDpred
+## LDpred-inf
 
 - [The LDpred-inf posterior](cond-distrib-ldpred-inf.md)
 
-## Marginal Effects
+## Marginal effects
 
 - [Marginal association estimate of a marker](marginal-effect.md)
 - [The mean of the marginal estimates](integral-marginal-effect.md)

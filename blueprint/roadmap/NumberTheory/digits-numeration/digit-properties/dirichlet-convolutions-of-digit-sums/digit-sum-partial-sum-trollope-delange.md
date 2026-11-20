@@ -4,9 +4,11 @@ Let $q \ge 2$ be an integer, let $s_q(n)$ denote
 the sum of the base-$q$ digits of $n$, and let $F$ be the Trollope–Delange fluctuation and $h$
 Delange's series in base $q$. For every real number $x \ge 1$,
 
-$$\sum_{n=1}^{\lfloor x \rfloor} s_q(n) = \frac{q - 1}{2 \log q} \, x \log x +
+$$
+\sum_{n=1}^{\lfloor x \rfloor} s_q(n) = \frac{q - 1}{2 \log q} \, x \log x +
 x F\left(\frac{\log x}{\log q}\right) - h(x) +
-(1 + \lfloor x \rfloor - x) \, s_q(\lfloor x \rfloor).$$
+(1 + \lfloor x \rfloor - x) \, s_q(\lfloor x \rfloor).
+$$
 
 ## Sources
 

@@ -2,7 +2,7 @@
 
 For a natural number $k$, the Euler product
 $f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$ is this infinite product in the ring of
-integer power series in $q$, taken in the coefficientwise topology. It is used for $k \ge 1$.
+integer power series in $q$, taken in the coefficientwise topology. For $k = 0$ every factor is $0$, so $f_0 = 0$.
 
 ## Sources
 

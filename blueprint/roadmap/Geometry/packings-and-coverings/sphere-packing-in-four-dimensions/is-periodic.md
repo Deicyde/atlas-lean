@@ -7,4 +7,4 @@ set of integer linear combinations of $b_1, b_2, b_3, b_4$.
 
 ## Sources
 
-- CE2003 introduction, finite union of translates of a full-rank lattice. The lattice is the integer span of a real basis, not an arbitrary periodicity oracle.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, introduction: a finite union of translates of a full-rank lattice, the integer span of a basis of $\mathbb{R}^4$.

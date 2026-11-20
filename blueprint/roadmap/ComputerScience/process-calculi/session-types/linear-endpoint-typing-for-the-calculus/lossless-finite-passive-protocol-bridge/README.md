@@ -1,4 +1,4 @@
-# Lossless finite passive-protocol bridge
+# Lossless embedding of finite passive-name protocols
 
 - [Embedding of finite passive-name protocols](of-finite.md)
 - [Finite protocol embedding commutes with duality](of-finite-dual.md)

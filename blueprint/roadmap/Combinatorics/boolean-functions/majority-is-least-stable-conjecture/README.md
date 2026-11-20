@@ -6,3 +6,4 @@
 - [Majority Is Least Stable conjecture in $n$ variables](majority-is-least-stable-for.md)
 - [Majority Is Least Stable in some odd dimension at least five](majority-is-least-stable-for-some-odd-at.md)
 - [Majority Is Least Stable fails in every odd dimension at least five](majority-is-least-stable-for-some-odd-at-2.md)
+- [The two noise-stability definitions agree](noise-stability-eq-bool-noise-stab.md)

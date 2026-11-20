@@ -8,9 +8,9 @@
 - [Second component of the Motzkin Riordan pair](motzkin-h.md)
 - [First component of the Motzkin Riordan pair](motzkin-g.md)
 - [Motzkin Riordan pairs](is-motzkin-riordan-pair.md)
-- [Bundled Motzkin Riordan pairs](motzkin-riordan-pair.md)
+- [The set of Motzkin Riordan pairs](motzkin-riordan-pair.md)
 
-## Motzkin Riordan Pair
+## Entries of Motzkin Riordan arrays
 
 - [Entries of a Motzkin Riordan array](entry.md)
 

@@ -15,6 +15,11 @@ The independence hypothesis, taken over all such $S$ (including $S = \emptyset$)
 each $A_i$ is mutually independent of the family of events $A_j$ with $j$ neither $i$ nor a
 neighbour of $i$.
 
+## Background
+
+- [Lovász local lemma, general form](lovasz-local-lemma-general-finite.md): the asymmetric criterion $\Pr[A_i] \le x_i \prod_{j \sim i}(1 - x_j)$, from which this symmetric case follows with $x_i = 1/(d+1)$ when $d \ge 1$, and with $x_i = p \le 1/e$ when $d = 0$.
+- [Variance of a count of events with a dependency graph](first-and-second-moment-methods/variance-sum-indicator-le.md): the second moment method uses a dependency graph too, but needs only pairwise independence of non-adjacent events and shows that many events occur rather than none.
+
 ## Sources
 
-- N. Alon and J. H. Spencer, The Probabilistic Method, third edition, Wiley, 2008, Corollary 5.1.2, for the criterion $e p (d + 1) \le 1$; the original local lemma of P. Erdős and L. Lovász (1975) gives the earlier weaker criterion $4 p d \le 1$.
+- Noga Alon and Joel H. Spencer, The Probabilistic Method, third edition, Wiley, 2008, Corollary 5.1.2, for the criterion $e p (d + 1) \le 1$; the original local lemma of Paul Erdős and László Lovász (1975) gives the earlier weaker criterion $4 p d \le 1$.

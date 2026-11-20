@@ -1,5 +1,3 @@
-# Berg–von Hippel
+# Boltzmann selection gives the Boltzmann position weight matrix
 
-Boltzmann selection of background sites with an additive energy yields
-the product site model with columns `boltzmannPWM`. This is an identity for every `q`
-(both sides vanish when some `Zᵢ = 0`); it is a statement about laws for positive `q`.
+For all real $q$, energies $\varepsilon$, $\lambda$ and sites $s$, the [selected law](selected-law.md) $\mu(s)$ equals the [site likelihood](site-lik.md) of $s$ under the [Boltzmann matrix](boltzmann-pwm.md) (Berg–von Hippel). For positive $q$ this is an identity between probability laws.

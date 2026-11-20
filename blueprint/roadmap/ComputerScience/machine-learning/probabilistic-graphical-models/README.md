@@ -1,6 +1,6 @@
 # Probabilistic graphical models
 
-Bayesian networks and their Markov properties, structure scores and Markov equivalence, causal networks and adjustment, belief propagation and variable elimination, conditional random fields, hidden Markov models (forward-backward, Viterbi, Baum-Welch) and the Kalman filter.
+Bayesian networks and their Markov properties, structure scores and Markov equivalence, causal networks, adjustment and the do-calculus, structural causal models and counterfactuals, belief propagation and variable elimination, conditional random fields, hidden Markov models (forward-backward, Viterbi, Baum-Welch) and the Kalman filter.
 
 - [Hidden Markov models](hidden-markov-models/README.md)
 - [Baum–Welch algorithm](baum-welch-algorithm/README.md)
@@ -9,4 +9,6 @@ Bayesian networks and their Markov properties, structure scores and Markov equiv
 - [Markov equivalence and Bayesian network scores](markov-equivalence-and-bayesian-network-scores/README.md)
 - [Bayesian networks](bayesian-networks/README.md)
 - [Causal Bayesian networks](causal-bayesian-networks/README.md)
+- [Structural causal models and counterfactuals](structural-causal-models-and-counterfactuals/README.md)
 - [Variable elimination and belief propagation](variable-elimination-and-belief-propagation/README.md)
+- [Additive noise models and causal identifiability](additive-noise-models-and-causal-identifiability/README.md)

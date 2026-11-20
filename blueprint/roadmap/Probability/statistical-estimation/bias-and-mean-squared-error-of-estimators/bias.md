@@ -10,4 +10,4 @@ the source (Chapter 2, Definition 2.2.1), so a nonintegrable estimator has no fi
 
 ## Sources
 
-- blueprint `af_723199a7ca6fb3e936a73618`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, Definition 7.3.2 (bias).

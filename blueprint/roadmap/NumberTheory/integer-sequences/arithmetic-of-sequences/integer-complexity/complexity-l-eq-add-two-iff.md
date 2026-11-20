@@ -12,4 +12,4 @@ $m + m_4 = m_2 + m_3$;
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 4 and Theorem 1.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 4 and Theorem 1.

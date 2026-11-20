@@ -5,3 +5,7 @@ such that for every positive integer $n$, if $d_1 < d_2 < \dots < d_t$ are all t
 in increasing order, then
 $\sum_{1 \le i < j \le t} \frac{1}{d_j - d_i} \le
 C \left(1 + \sum_{1 \le i < t} \frac{1}{d_{i+1} - d_i}\right)$.
+
+## Sources
+
+- Erdős Problem #884, https://www.erdosproblems.com/884.

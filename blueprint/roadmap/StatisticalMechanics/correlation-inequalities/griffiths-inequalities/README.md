@@ -22,4 +22,4 @@
 - [Griffiths' second inequality for inhomogeneous couplings](gks-second-j.md)
 - [Griffiths monotonicity of correlations in the edge set](griffiths-mono.md)
 - [Edge-removal ratio of partition functions](ghy-zeta.md)
-- [Edge-removal weight with hyperbolic sine factors](ghy-rho.md)
+- [Edge-removal weight with hyperbolic tangent factors](ghy-rho.md)

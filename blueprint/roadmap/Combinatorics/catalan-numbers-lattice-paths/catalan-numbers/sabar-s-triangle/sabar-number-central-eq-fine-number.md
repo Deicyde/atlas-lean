@@ -6,11 +6,7 @@ triangle $s$ satisfy
 
 $$s(2n, n) = \frac{1}{6} \binom{2n+2}{n+1} + \frac{2}{3} F(n) + (-1)^{n+1},$$
 
-
-
 $$s(2n, n) = \frac{1}{3} (2n+1) C_n + \frac{2}{3} F(n) + (-1)^{n+1},$$
-
-
 
 $$s(2n, n) = \frac{2}{3} \binom{2n}{n} - \frac{1}{3} F(n-1) + (-1)^{n+1},$$
 

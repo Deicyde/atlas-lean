@@ -6,4 +6,4 @@ $(\mathbb{D}_1, \mathbb{D}_2, \dots, \mathbb{D}_{10}) = (1, 1, 2, 1, 6, 2, 6, 3,
 
 ## Sources
 
-- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2 (displayed values of `𝔻_n`).
+- Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2 (displayed values of $\mathbb{D}_n$).

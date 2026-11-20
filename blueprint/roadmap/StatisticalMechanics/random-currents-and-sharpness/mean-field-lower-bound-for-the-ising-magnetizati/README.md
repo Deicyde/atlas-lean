@@ -31,7 +31,7 @@
 - [Outside summand of a gated double-current sum](context-summand.md)
 - [Inside weight with prescribed sources](factor-summand.md)
 - [Vertices not connected to a vertex by positive current](not-conn-comp.md)
-- [Outside part of a gated double-current summand](claim1-context.md)
+- [Outside part of a gated double-current sum](claim1-context.md)
 - [Regrouping a split pair of currents](pair-cut-equiv.md)
 - [Gated double-current sum over edge-indexed currents](gated-source-pair-sum.md)
 - [Edges of a graph inside a set](edges-in.md)

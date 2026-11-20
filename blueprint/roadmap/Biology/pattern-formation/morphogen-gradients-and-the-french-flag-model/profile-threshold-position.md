@@ -1,3 +1,4 @@
 # Profile equals the threshold at the French-flag boundary
 
-The profile equals `θ` at the boundary `x_θ`.
+For $D, k, j, \theta > 0$, the [morphogen profile](profile.md) takes the value $\theta$ at the
+[French-flag boundary](threshold-position.md): $c(x_\theta) = \theta$.

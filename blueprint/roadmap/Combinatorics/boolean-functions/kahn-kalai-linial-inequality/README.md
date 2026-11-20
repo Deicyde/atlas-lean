@@ -17,4 +17,9 @@
 - [The capped estimate from convexity](the-capped-estimate-from-convexity/README.md)
 - [The capped estimate in the hypercontractive range with a gap condition](the-capped-estimate-in-the-hypercontractive-rang-2/README.md)
 - [Degree truncation of the capped estimate under p-biased measures](degree-truncation-of-the-capped-estimate-under-p/README.md)
-- [KKL inequality for `p`-biased measures](kkl-pbiased.md)
+- [KKL inequality for $p$-biased measures](kkl-pbiased.md)
+
+## Related topics
+
+- [Influences and the noise operator on the Boolean cube](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/influences-and-the-noise-operator-on-the-boolean/README.md): the uniform-cube influences and Poincaré inequality; KKL improves Poincaré's bound on the largest influence from $\mathrm{Var}[f]/n$ to $\mathrm{Var}[f] \log n / n$.
+- [Structure theorems for Boolean functions](../structure-theorems-for-boolean-functions/README.md): Friedgut's junta theorem, proved by the same hypercontractive argument.

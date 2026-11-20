@@ -1,3 +1,3 @@
 # Second moment of a Brownian increment
 
-The second moment of a Brownian increment: `E[(B v - B r)²] = v - r` for `r ≤ v`.
+Let $B$ be a pre-Brownian motion and $r \le v$. Then $\mathbb E\bigl[(B_v - B_r)^2\bigr] = v - r$.

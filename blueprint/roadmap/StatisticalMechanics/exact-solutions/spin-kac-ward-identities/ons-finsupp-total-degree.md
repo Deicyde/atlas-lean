@@ -1,3 +1,3 @@
 # Total degree of an exponent
 
-The total degree `∑ m e` of an exponent; this is `Finsupp.degree`.
+For a set $E$ and a finitely supported exponent $m : E \to \mathbb{N}$, the total degree is $|m| = \sum_{e \in E} m(e)$.

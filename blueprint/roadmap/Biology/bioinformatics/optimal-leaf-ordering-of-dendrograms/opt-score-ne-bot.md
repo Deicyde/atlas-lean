@@ -1,3 +1,3 @@
 # Optimal leaf-ordering score is finite
 
-Every dendrogram has a leaf order, so the optimal score is a real number.
+For every similarity $S$ and dendrogram $t$, the [optimal score](opt-score.md) of $t$ is a real number, not $-\infty$.

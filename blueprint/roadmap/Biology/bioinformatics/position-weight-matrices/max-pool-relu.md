@@ -1,4 +1,7 @@
 # Bias and ReLU commute with max pooling
 
-Pooling `max (conv + β) 0` over the windows
-gives `max (maxPool + β) 0`.
+For every filter $W$, sequence $x$, $m$ and real $\beta$,
+
+$$\max_{0 \le i \le m} \max\bigl(\mathrm{conv}_W(x, i) + \beta,\ 0\bigr) = \max\bigl(M + \beta,\ 0\bigr),$$
+
+where $M$ is the [max-pooled output](max-pool.md).

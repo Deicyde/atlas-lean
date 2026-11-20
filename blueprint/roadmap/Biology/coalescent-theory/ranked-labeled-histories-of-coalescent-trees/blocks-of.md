@@ -1,4 +1,3 @@
 # Ancestral partitions along a history, indexed by lineage label
 
-The ancestral partitions of the sample along a history, as lists of blocks indexed by
-lineage label; entry `t` (for `t < n`) is the partition after `t` coalescence events.
+For a [ranked labeled history](ranked-history.md) $h$ of $n$ genes, the list of length $n$ whose entry $t$, for $t = 0, \dots, n-1$, is the list of [lineage blocks after the first $t$ coalescence events](blocks-after.md) of $h$, ordered by lineage label.

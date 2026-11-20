@@ -6,3 +6,7 @@ aborted.
 
 This is the coordinator–participant part of condition AC1 of Bernstein, Hadzilacos and
 Goodman.
+
+## Sources
+
+- P. A. Bernstein, V. Hadzilacos, N. Goodman, *Concurrency Control and Recovery in Database Systems*, Addison-Wesley, 1987: Chapter 7, atomic commitment condition AC1.

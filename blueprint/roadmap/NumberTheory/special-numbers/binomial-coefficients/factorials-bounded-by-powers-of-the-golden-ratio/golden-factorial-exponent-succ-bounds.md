@@ -9,4 +9,4 @@ $$\alpha(n-1) + \lfloor \log_\varphi n \rfloor \le \alpha(n) \le
 
 ## Sources
 
-- Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 2 (`jis-2024-24.5.7-lem-2`).
+- Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 2 (`jis-2024-24.5.7-lem-2`).

@@ -15,4 +15,4 @@ constant empty-solution algorithm would vacuously satisfy the approximation guar
 
 ## Sources
 
-- C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
+- C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 11.

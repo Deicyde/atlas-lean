@@ -1,5 +1,7 @@
 # Positive solutions lie on level curves
 
-If `(x, y)` solves the Lotka–Volterra system
-on `[0, ∞)` and both populations stay positive there, then `V(x t, y t) = V(x 0, y 0)` for
-all `t ≥ 0`.
+Let $\alpha, \beta, \gamma, \delta \in \mathbb{R}$, and let $x, y \colon \mathbb{R} \to \mathbb{R}$
+satisfy $x'(t) = \alpha x(t) - \beta x(t) y(t)$ and $y'(t) = \delta x(t) y(t) - \gamma y(t)$ with
+$x(t) > 0$ and $y(t) > 0$ at every $t \ge 0$. Then the [first integral](first-integral.md)
+$V(x, y) = \delta x - \gamma \log x + \beta y - \alpha \log y$ satisfies
+$V(x(t), y(t)) = V(x(0), y(0))$ for all $t \ge 0$.

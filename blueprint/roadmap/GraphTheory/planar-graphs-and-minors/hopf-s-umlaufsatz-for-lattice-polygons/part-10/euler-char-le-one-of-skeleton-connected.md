@@ -1,4 +1,3 @@
 # Euler characteristic at most 1 for a connected skeleton
 
-If the 1-skeleton of `S` is connected, then `eulerChar S ≤ 1`. See also
- `StatMech.Onsager.CellEulerBound.eulerChar_le_one`.
+Let $S$ be a finite set of unit cells whose $1$-skeleton (vertices the corners of cells of $S$, edges the sides of cells of $S$) is connected (in particular nonempty). Then the Euler characteristic $V - E + F$ of $S$ is at most $1$.

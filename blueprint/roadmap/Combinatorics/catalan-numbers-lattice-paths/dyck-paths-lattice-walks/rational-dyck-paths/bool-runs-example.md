@@ -11,4 +11,4 @@ $v_1 = 2$, $p_2 = 2$, $v_2 = 2$.
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, Example.
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, Example.

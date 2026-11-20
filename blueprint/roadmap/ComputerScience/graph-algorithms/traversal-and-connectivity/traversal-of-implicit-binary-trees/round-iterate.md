@@ -1,5 +1,9 @@
 # Exact round count for traversing a terminal frontier
 
-If every frontier occurrence is terminal, exactly `2 * length - 1` rounds process
-the tree below `s`, preserving the tail `r` and prepending its reversed frontier to `out`.
-The terminal-frontier hypothesis is essential: a depth cut may contain branching states.
+Let $k \in \mathbb{N}$ and $s$ a state such that every state in the frontier of $s$ cut at depth
+$k$ is terminal, and let $F$ be that frontier, of length $|F|$. For all lists $R$ and $O$ of
+states, applying exactly $2|F| - 1$ depth-first rounds to the pair (stack $s$ followed by $R$,
+output $O$) gives the pair (stack $R$, output: the reverse of $F$ followed by $O$).
+
+The hypothesis that the frontier is terminal is needed: a depth-cut frontier may contain branching
+states.

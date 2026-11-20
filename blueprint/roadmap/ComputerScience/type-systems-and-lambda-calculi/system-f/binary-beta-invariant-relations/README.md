@@ -1,6 +1,6 @@
 # Binary beta-invariant relations
 
-## System F
+## Definition
 
 - [Beta-invariant binary relations on the term model](rel.md)
 

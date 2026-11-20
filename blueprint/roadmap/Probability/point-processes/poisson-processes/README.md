@@ -1,10 +1,10 @@
 # Poisson processes
 
-## Probability Theory
+## Definition
 
 - [Poisson process](is-poisson-process.md)
 
-## Poisson Process
+## Arrival times and the counting process
 
 - [Arrival times from interarrival times](arrival-time.md)
 - [Counting process of interarrival times](count.md)
@@ -13,13 +13,13 @@
 - [Counting process starts at zero almost surely](ae-count-zero.md)
 - [Counting process has nondecreasing paths almost surely](ae-count-monotone.md)
 
-## Probability Theory
+## Superposition and thinning
 
 - [Superposition](add.md)
 - [Thinning of a Poisson process](thinning.md)
 - [Thinning](thinning-2.md)
 
-## Poisson Process
+## Poisson processes from exponential interarrivals
 
 - [Independent Poisson increments of the counting process](has-law-count-increments.md)
 - [Exponential interarrivals give a Poisson process](is-poisson-process-count.md)

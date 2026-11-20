@@ -1,7 +1,9 @@
-# Canonical bit-list decoder
+# Polynomial-time conversion from the separator form to the canonical pair encoding
 
-This is a multi-stack Turing machine over the alphabet
-$\mathrm{Bool}$, with time bound $n + 2$, such that for every bit list $x$, started on the
-canonical bitstring encoding of $x$, it halts within $n + 2$ steps, where $n$ is the length of
-that encoding, with $x$ on its output stack and all other stacks empty. So the identity on bit
-lists is computable in polynomial time from the canonical encoding to the raw bits.
+The identity map on pairs $(x, w)$ of bit strings is computable in polynomial time by the [converter to the
+canonical pair encoding](tm.md), from the verifier's separator form $x \# w$ (the bits of $x$ tagged left, the
+separator, then the bits of $w$ tagged right, over the verifier's alphabet) to the canonical bit-string encoding
+of $(x, w)$ (each bit $b$ of $x$ written as $1, 1, 1, b, 1, 0$, then a single $0$, then each bit $b$ of $w$
+written as $1, b, 0$), with time bound $2n + 3$. Here the input alphabet is the verifier's alphabet, the output
+alphabet is the bits, and $n = |x| + |w| + 1$ is the length of $x \# w$: started on $x \# w$, the converter halts
+after exactly $2|x| + 2|w| + 5 = 2n + 3$ steps with the canonical encoding of $(x, w)$ on its output stack.

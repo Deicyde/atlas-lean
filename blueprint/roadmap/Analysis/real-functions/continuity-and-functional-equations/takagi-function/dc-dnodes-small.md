@@ -6,4 +6,4 @@ $\delta(6) = 2$ and $\delta(7) = 2$.
 
 ## Sources
 
-- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 9 (`exp_D_recursive`).
+- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 9.

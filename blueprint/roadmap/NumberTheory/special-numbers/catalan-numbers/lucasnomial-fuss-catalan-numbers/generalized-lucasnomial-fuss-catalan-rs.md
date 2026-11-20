@@ -1,4 +1,4 @@
-# Generalized Lucasnomial Fuss–Catalan numbers in the r, s, t notation
+# Generalized Lucasnomial Fuss–Catalan numbers in the $r, s, t$ notation
 
 Let $P$ be Lucas
 parameters, that is, nonzero reals $p$ and $q$ whose Lucas bracket sequence $U_0 = 0$, $U_1 = 1$,
@@ -15,4 +15,4 @@ $U_{(r-1)t+s} = 0$.
 
 ## Sources
 
-- Ballot, JIS Vol. 24.
+- Christian Ballot, *The $p$-Adic Valuation of Lucasnomials When $p$ is a Special Prime*, Journal of Integer Sequences 24 (2021), Article 21.1.4, equation (11), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Ballot/ballot42.html>.

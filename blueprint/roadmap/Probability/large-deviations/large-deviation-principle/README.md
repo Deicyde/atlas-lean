@@ -19,3 +19,6 @@
 - [Log-scaled Dirac mass of a set avoiding the center](dirac-ldp-term-eq-bot-of-not-mem.md)
 - [Large deviation principle for a Dirac mass](satisfies-ldp-dirac.md)
 - [The absolute value is a good rate function](is-good-rate-function-abs.md)
+- [The Dirac rate function is good](is-good-rate-function-dirac-rate.md)
+- [Large deviation principle at speed $a_N$](satisfies-ldpat-speed.md)
+- [Speed $n$ is the usual large deviation principle](satisfies-ldpat-speed-nat-cast-iff.md)

@@ -13,4 +13,4 @@ $D_n(3, 2) = \frac{2}{n} \binom{3n - 3}{n - 1}$ for every $n \ge 1$.
 
 ## Sources
 
-- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Corollary 4 (`jis-2026-26.1.2-cor-4`).
+- Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Corollary 4.

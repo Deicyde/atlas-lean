@@ -7,4 +7,4 @@ representative of $a$ in $\{0, 1, \dots, 2^k - 2\}$.
 
 ## Sources
 
-- T. W. Cusick, Proof of the Tu-Deng Conjecture, arXiv:2608.14821 (2026), https://arxiv.org/abs/2608.14821.
+- Thomas W. Cusick, *Proof of the Tu-Deng Conjecture*, arXiv:2608.14821 (2026), https://arxiv.org/abs/2608.14821.

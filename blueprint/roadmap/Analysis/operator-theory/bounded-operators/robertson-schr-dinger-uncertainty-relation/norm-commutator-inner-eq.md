@@ -1,4 +1,7 @@
 # Norm of the commutator expectation
 
-The commutator expectation has norm twice the absolute imaginary
-part of the centered inner product.
+Let $E$ be a complex Hilbert space and $A, B$ bounded self-adjoint operators on $E$. For every unit vector $x \in E$, the [centered vectors](centered.md) satisfy
+
+$$
+|\langle (AB - BA) x, x \rangle| = 2 \left| \operatorname{Im} \langle \tilde A x, \tilde B x \rangle \right|.
+$$

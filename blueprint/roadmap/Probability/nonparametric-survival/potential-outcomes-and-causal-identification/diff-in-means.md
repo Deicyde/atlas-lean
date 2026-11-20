@@ -1,4 +1,7 @@
 # Difference-in-means estimator
 
-The difference in means for the treated set `S`: the mean of the treated outcomes `y₁` over
-`S` minus the mean of the control outcomes `y₀` over the complement.
+For a finite population with potential outcomes $y_{0i}, y_{1i}$ and a treated set $S$ of units, the difference in means is
+
+$$\hat\tau(S) = \bar y_{1, S} - \bar y_{0, S^c},$$
+
+the [mean](sample-mean.md) of the treated outcomes over $S$ minus the mean of the control outcomes over the complement $S^c$.

@@ -1,3 +1,6 @@
 # Confluence of parallel type-beta reduction
 
-Parallel type-beta reduction is confluent; no termination premise.
+For every kinding context $\Delta$ and kind $\kappa$, parallel type β-reduction on
+$\mathrm{Ty}^{\kappa}_{\Delta}$ is confluent: if $A \Rrightarrow^* B$ and $A \Rrightarrow^* C$ then
+there is $D$ with $B \Rrightarrow^* D$ and $C \Rrightarrow^* D$, where $\Rrightarrow^*$ is the
+reflexive-transitive closure of [parallel type β-reduction](par.md).

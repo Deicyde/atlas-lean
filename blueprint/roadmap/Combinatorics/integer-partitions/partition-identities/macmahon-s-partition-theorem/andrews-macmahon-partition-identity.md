@@ -14,4 +14,4 @@ partitions into distinct parts are equinumerous, applied with $q$ replaced by $q
 
 ## Sources
 
-- Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem `andthm` (Andrews' generalization), source lines 113–115, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.tex>. The paper attributes the result to Andrews.
+- Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem 2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.pdf>. The paper attributes the result to Andrews.

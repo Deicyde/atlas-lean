@@ -8,9 +8,8 @@ $\operatorname{Ric}_x(u, v) + (\operatorname{Hess} f)_x(u, v) = c \, g_x(u, v)$,
 $\operatorname{Ric}$ is the Ricci curvature of $g$ and $\operatorname{Hess} f$ is the covariant
 Hessian of $f$.
 
-Completeness and connectedness of $M$ are not part of this predicate; they are separate
-hypotheses on $M$.
+No completeness or connectedness of $M$ is assumed.
 
 ## Sources
 
-- Oberwolfach Report 27/2012 (Geometrie): T. Yokota, p. 1651, defines a gradient shrinking Ricci soliton by `Ric(g) + Hess f = g / (2 * λ)` with `λ > 0` and `f` smooth, and R. Haslhofer (with R. Müller), p. 1669, eq. (1), uses `Rc + Hess f` equal to `g / 2`.
+- Oberwolfach Report 27/2012 (Geometrie): T. Yokota, p. 1651, defines a gradient shrinking Ricci soliton by $\operatorname{Ric}(g) + \operatorname{Hess} f = g/(2\lambda)$ with $\lambda > 0$ and $f$ smooth, and R. Haslhofer (with R. Müller), p. 1669, eq. (1), uses $\operatorname{Rc} + \operatorname{Hess} f = g/2$.

@@ -1,6 +1,4 @@
-# Partial-correctness Hoare logic as an inference system
+# Soundness and relative completeness of partial-correctness Hoare logic
 
-A Hoare triple, given by a
-precondition $P$, a command $c$ and a postcondition $Q$, is derivable in the default inference
-system on Hoare triples, which is partial-correctness Hoare logic, if and only if it is valid
-for partial correctness.
+For all assertions $P$ and $Q$ and every command $c$, the triple $\{P\}\,c\,\{Q\}$ is derivable in
+partial-correctness Hoare logic if and only if it is valid for partial correctness.

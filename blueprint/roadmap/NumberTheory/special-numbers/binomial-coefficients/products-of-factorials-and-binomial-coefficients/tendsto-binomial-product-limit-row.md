@@ -7,7 +7,7 @@ numbers, $\frac{F_a}{F_1 F_{a-1}} (2\pi)^{-1/4} \to \left(F_1 (2\pi)^{1/4}\right
 $a^{-n(n+1)/2} \prod_{\nu=1}^{n} \binom{a\nu}{\nu} \to \prod_{\nu=1}^{n} \binom{n}{\nu}$, and
 $a^{-x(x+1)/2} P_{a,1}(x) \to e^{x^2/2 + x} / \left((2\pi)^{x/2} x^{x/2 + 1/3}\right)$.
 
-The source does not state the range of $x$; the hypothesis $x > 0$ is added here.
+The source does not state the range of $x$; the hypothesis $x > 0$ is added in the statement above.
 
 ## Sources
 

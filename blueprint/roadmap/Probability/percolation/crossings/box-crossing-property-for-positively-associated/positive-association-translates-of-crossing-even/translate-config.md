@@ -1,3 +1,3 @@
 # Translate of a bond configuration
 
-The configuration `ω` translated by `-v`: the state of `e` is the state of `e + v` in `ω`.
+For $v \in \mathbb{Z}^2$ and a bond configuration $\omega$ on $\mathbb{Z}^2$, the translated configuration $\omega_v$ with $\omega_v(\{x, y\}) = \omega(\{x + v, y + v\})$: the configuration $\omega$ translated by $-v$.

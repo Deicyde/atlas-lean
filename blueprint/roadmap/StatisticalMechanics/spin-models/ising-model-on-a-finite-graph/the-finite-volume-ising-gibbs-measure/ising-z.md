@@ -1,5 +1,5 @@
 # Ising partition function
 
-The partition function `Z = ∑_s exp (-β H(s))`. See also
-`CanonicalEnsemble.mathematicalPartitionFunction` and
-`StatMech.Ising.isingZ_eq_mathematicalPartitionFunction`.
+Let $G = (V, E)$ be a finite simple graph and $\beta, h \in \mathbb{R}$. The partition function is $Z = \sum_s e^{-\beta H(s)}$, the
+sum over all spin configurations $s \in \{\text{true}, \text{false}\}^V$ of the
+[Boltzmann weights](ising-weight.md).

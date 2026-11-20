@@ -8,4 +8,4 @@ occurs in $w$.
 
 ## Sources
 
-- Fabien Durand, Julien Leroy, and Gwenaël Richomme, *Do the Properties of an S-adic Representation Determine Factor Complexity?*, Journal of Integer Sequences 16 (2013), Article 13.2.6, complexity-function definition, lines 117–128, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Durand/durand2.tex>.
+- Fabien Durand, Julien Leroy, and Gwenaël Richomme, *Do the Properties of an S-adic Representation Determine Factor Complexity?*, Journal of Integer Sequences 16 (2013), Article 13.2.6, Section 1 (definition of the complexity function), https://cs.uwaterloo.ca/journals/JIS/VOL16/Durand/durand2.html

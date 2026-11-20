@@ -1,5 +1,7 @@
 # Falconer's estimator
 
-**Falconer's estimator** under the ACE model, in covariance form: monozygotic twins have
-`2φ = Δ = 1`, dizygotic twins (full sibs) `2φ = 1/2`, `Δ = 1/4`, and both share the same
-common-environment covariance `C`; the estimator is `2 (Cov_MZ - Cov_DZ)`.
+For [Cockerham–Kempthorne components](cockerham-components.md) and a real number $C$ (the common-environment covariance shared by both twin types), Falconer's estimator in covariance form is
+
+$$F(C) = 2\Bigl(\bigl(\mathrm{Cov}(1, 1) + C\bigr) - \bigl(\mathrm{Cov}(\tfrac12, \tfrac14) + C\bigr)\Bigr),$$
+
+where $\mathrm{Cov}$ is the [Cockerham form](cov.md): monozygotic twins have $2\varphi = \Delta = 1$ and dizygotic twins $2\varphi = 1/2$, $\Delta = 1/4$.

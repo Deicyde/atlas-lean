@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 3, class C45
+# Wilf-equivalence of $\{\bar1\bar0, \bar0\bar0, \bar01, 01\}$ and $\{\bar1\bar0, \bar00, \bar01, 00\}$
 
 Write $\bar{I}_n(B)$ for the set of signed inversion
 sequences of length $n$ that avoid every length-2 signed pattern in $B$, where a pattern is

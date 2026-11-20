@@ -5,4 +5,4 @@ $S_n$ is not a perfect number.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Corollary 1(c).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Corollary 1(c).

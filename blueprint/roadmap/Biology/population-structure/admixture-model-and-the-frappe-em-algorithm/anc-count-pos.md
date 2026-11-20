@@ -1,3 +1,3 @@
 # Positivity of the expected ancestry counts
 
-The expected ancestry counts are positive when there is at least one SNP.
+Let $J$ be finite and nonempty. For every genotype matrix $g$, all [admixture parameters](params.md) $\theta$, individuals $i$ and populations $k$, the [expected ancestry count](anc-count.md) satisfies $A_{ik}(\theta) > 0$.

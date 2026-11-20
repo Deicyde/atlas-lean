@@ -13,4 +13,4 @@ Albiac and Kalton, Sections 10.1–10.2, and Farahat's 1974 proof.
 
 ## Sources
 
-- H. P. Rosenthal, A Characterization of Banach Spaces Containing l1, PNAS 71 (1974), 2411–2413, DOI 10.1073/pnas.71.6.2411, ℓ¹ dichotomy theorem; Bourgain et al., extensions; Lean states `RCLike` Banach bounded `Set.range` dichotomy with `StrictMono φ` and `HasUniformL1LowerBound` defined via `ℕ →₀ 𝕜` finitely supported coefficients.
+- H. P. Rosenthal, A Characterization of Banach Spaces Containing l1, PNAS 71 (1974), 2411–2413, DOI 10.1073/pnas.71.6.2411, ℓ¹ dichotomy theorem; Bourgain et al., extensions. The statement here is the dichotomy for a bounded sequence in a Banach space over $\mathbb{R}$ or $\mathbb{C}$, with a subsequence and a uniform $\ell^1$ lower bound for finitely supported coefficients.

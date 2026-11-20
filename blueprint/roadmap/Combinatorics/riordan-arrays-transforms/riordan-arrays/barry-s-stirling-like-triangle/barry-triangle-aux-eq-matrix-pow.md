@@ -8,4 +8,4 @@ bottom-left entry $(M^{n-2})_{a-1,1}$ of the power $M^{n-2}$.
 
 ## Sources
 
-- Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (7) (`jis-2026-26.2.8-abstract-main`).
+- Bulat Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (7).

@@ -11,8 +11,8 @@ $$\sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 w^{2n-3k} z^k =
 \sum_{i=1}^{3} \frac{(w^2 - w r_i + r_i^2)^{n+1}}{\prod_{j \ne i} (r_i - r_j)}.$$
 
 The paper names the zeros $\alpha_{z,w}, \beta_{z,w}, \bar\beta_{z,w}$ by Cardano's formulas; the
-right side is symmetric, so they are given here by Vieta's relations.
+right side is symmetric, so they are described by Vieta's relations.
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 28 (`jis-2025-25.3.5-thm-28`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Theorem 28, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-thm-28).

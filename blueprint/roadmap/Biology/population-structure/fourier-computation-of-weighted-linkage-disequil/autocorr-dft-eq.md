@@ -1,4 +1,7 @@
 # Zero-padded circular autocorrelation equals linear autocorrelation
 
-Zero-padded circular autocorrelation equals the linear one: if `U k = 0` for `k ≥ K`,
-`2 K ≤ N + 1` and `j < K`, then `𝓕⁻(|𝓕 Ũ|^2)(j) = ∑_{k < K} U k U (k + j)`.
+Let $N \ge 1$ and $K$ be natural numbers with $2K \le N + 1$, and let $U$ be a real sequence with $U_k = 0$ for every $k \ge K$. Then for every $j < K$,
+
+$$\mathrm{AC}_N(U)(j) = \sum_{k=0}^{K-1} U_k\, U_{k+j},$$
+
+where $\mathrm{AC}_N$ is the [autocorrelation via the discrete Fourier transform](autocorr-dft.md).

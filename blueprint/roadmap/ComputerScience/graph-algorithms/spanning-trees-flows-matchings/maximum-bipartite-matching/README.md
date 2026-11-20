@@ -103,7 +103,7 @@
 - [Shortest chains from a vertex whose level a phase keeps were chains before it](chain-of-chain-flip-phase.md)
 - [The next phase's paths are strictly longer](lt-first-free-round-flip-phase.md)
 
-## `O(√V)` phases
+## $O(\sqrt{V})$ phases
 
 - [One round of the layered search bounds the deficit](card-le-card-pairs-add.md)
 - [The deficit is at most $b / d$](mul-card-sub-le.md)
@@ -112,3 +112,8 @@
 - [Each phase lengthens the shortest augmenting paths](first-free-round-hopcroft-karp-aux.md)
 - [Closing a deficit of $f$ in $f$ Hopcroft–Karp phases](card-le-hopcroft-karp-aux-of-le.md)
 - [Hopcroft and Karp's bound on the number of phases](card-le-hopcroft-karp-aux-sqrt.md)
+
+## Related topics
+
+- [Berge's lemma](../../../../GraphTheory/matchings-and-flows/berge-s-lemma/README.md): augmenting paths in general graphs, with Hopcroft and Karp's Lemma 1 and the statements of their Theorems 1 and 2.
+- [Edmonds–Karp algorithm](../edmonds-karp-algorithm/README.md): shortest augmenting paths for flows, whose distance monotonicity is the flow analogue of the monotonicity across phases used here.

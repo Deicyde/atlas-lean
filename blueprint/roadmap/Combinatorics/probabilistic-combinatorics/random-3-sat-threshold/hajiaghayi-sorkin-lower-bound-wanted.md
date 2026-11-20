@@ -7,4 +7,5 @@ satisfiable tends to $1$ as $n \to \infty$.
 
 ## Sources
 
-- Hajiaghayi and Sorkin, *The satisfiability threshold of random 3-SAT is at least 3.52* (2003), and Kaporis, Kirousis, and Lalas (2003), catalogue lower bound `3.52`.
+- MohammadTaghi Hajiaghayi and Gregory B. Sorkin, *The satisfiability threshold of random 3-SAT is at least 3.52*, arXiv:math/0310193 (2003); Alexis C. Kaporis, Lefteris M. Kirousis and Efthimios G. Lalas, *Selecting complementary pairs of literals*, Electron. Notes Discrete Math. 16 (2003), 47–70.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{52a}$, satisfiability threshold for random 3-SAT, https://teorth.github.io/optimizationproblems/constants/52a.html.

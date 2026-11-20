@@ -1,3 +1,3 @@
 # Edge parameters set to a common value on a subset
 
-The parameters `p` with the value `c` on the edges of `s`.
+For a set $E$, a finite subset $s \subseteq E$, a value $c \in \mathbb{R}$ and parameters $p : E \to \mathbb{R}$, the parameters equal to $c$ on $s$ and to $p_e$ at every $e \notin s$.

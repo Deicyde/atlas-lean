@@ -8,7 +8,7 @@
 - [Membership in the literal occurrences of a CNF formula](mem-occs.md)
 - [Adjacency in Karp's clique graph](to-graph-clique-bits-adj.md)
 - [Karp's reduction from SAT to CLIQUE is correct](cnf-sat-iff-exists-is-nclique.md)
-- [SAT decision on undecodable input (moved alias)](sat-dec-of-decode-cnf-eq-none.md)
+- [SAT rejects bit strings that encode no CNF formula](sat-dec-of-decode-cnf-eq-none.md)
 - [Modes of the clique verifier](mode.md)
 - [Pair condition of the clique verifier](ok.md)
 - [The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER](kg-check.md)

@@ -6,5 +6,5 @@ congruence subgroup $\Gamma$ of $\mathrm{SL}_2(\mathbb{Z})$ and every eigenvalue
 hyperbolic Laplacian on $L^2(\Gamma \backslash \mathbb{H})$ with $0 < \lambda < 1/4$, there is an
 index $i$ with $m_i = \sqrt{1/4 - \lambda}$.
 
-This is the precise anchor needed for the comparison with Selberg's constant; it is a hypothesis
-on a proposed genuine family, not a definition of one.
+This is the condition under which the Ramanujan exponent of $F$ is compared with Selberg's
+constant.

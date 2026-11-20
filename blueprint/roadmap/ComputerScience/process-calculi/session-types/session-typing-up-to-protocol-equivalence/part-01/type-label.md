@@ -1,3 +1,5 @@
 # Labels of observable protocol-tree edges
 
-Observable guarded tree edges. Endpoint metadata is never erased.
+The labels of protocol-tree edges are ${!\mathrm{N}}$ and ${?\mathrm{N}}$ (name send and receive)
+and ${!(r,k,\beta)}$ and ${?(r,k,\beta)}$ (endpoint send and receive) for every polarity $r$, rank
+$k \in \mathbb{N}$ and branch $\beta \in \{\mathrm{pay}, \mathrm{cont}\}$.

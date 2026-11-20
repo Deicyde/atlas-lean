@@ -6,4 +6,4 @@ sum is taken to be $0$ if the series is not summable.
 
 ## Sources
 
-- Gerhold.
+- Živorad Tomovski and Stefan Gerhold, *Mathieu-Fibonacci Series*, Journal of Integer Sequences 25 (2022), Article 22.6.3, Section 3 (definition of $\tilde L_m(q)$), <https://cs.uwaterloo.ca/journals/JIS/VOL25/Gerhold/gerhold6.html>.

@@ -1,4 +1,7 @@
 # Biallelic emission probabilities sum to one
 
-With biallelic sites, the two emission probabilities at a site sum to `1` over the target
-allele, for each fixed panel column `col` (the emissions are conditional on the panel).
+Let $R$ be a field, $\varepsilon \in R$, $k$ a haplotype index and $h$ a column of biallelic reference alleles. Then the [emission weights](emit.md) satisfy
+
+$$\sum_{a \in \{0, 1\}} e_\varepsilon(k, (h, a)) = 1:$$
+
+for each fixed panel column, the emissions sum to one over the target allele.

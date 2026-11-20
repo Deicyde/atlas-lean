@@ -1,12 +1,12 @@
-# The random-cluster critical point on ℤ² is below one, given a Peierls bound
+# The random-cluster critical point on $\mathbb{Z}^2$ is below one, given a Peierls bound
 
-## A. Walks to the exterior of a finite cluster
+## Walks to the exterior of a finite cluster
 
 - [Horizontal lattice walk in $\mathbb{Z}^2$](horiz-walk.md)
 - [Finite subsets of $\mathbb{Z}^2$ miss far points on each row](exists-far-not-mem.md)
 - [Finite cluster in $\mathbb{Z}^2$ has a reachable point outside it](exists-walk-exterior.md)
 
-## B. Closed circuits around a finite cluster
+## Closed circuits around a finite cluster
 
 - [Closed-circuit event of a dual circuit](closed-circuit-event.md)
 - [Finite cluster in $\mathbb{Z}^2$ gives a closed lattice circuit](exists-closed-lattice-circuit-of-finite.md)
@@ -14,7 +14,7 @@
 - [Finite-cluster event is covered by closed-circuit events](finite-cluster-subset-i-union-closed-cir.md)
 - [Non-percolation means the origin's cluster is finite](compl-percolation-event-eq-finite-cluste.md)
 
-## C. The Peierls series
+## The Peierls series
 
 - [Peierls series $\sum_\ell \ell\,(2d)^\ell (1-p)^\ell$](fk-pc-upper-bound.md)
 - [Ratio $2d(1-p)$ of the Peierls series](fk-pc-ratio.md)
@@ -24,10 +24,10 @@
 - [Peierls ratio $2d(1-p)$ tends to $0$ as $p \to 1$](fk-pc-ratio-tendsto-one.md)
 - [$x/(1-x)^2 \to 0$ as $x \to 0$](fk-pc-closed-form-tendsto-zero.md)
 - [Peierls series tends to $0$ as $p \to 1$](fk-pc-upper-bound-tendsto-one.md)
-- [Peierls series is below 1 on an interval $(p_0, 1)$](exists-p-lt-one-fk-pc-upper-bound-lt-one.md)
+- [Peierls series is below 1 on an interval $(p_0, 1]$](exists-p-lt-one-fk-pc-upper-bound-lt-one.md)
 - [Nonnegativity of the Peierls series for $p \le 1$](fk-pc-upper-bound-nonneg.md)
 
-## D. The critical point is below one
+## The critical point is below one
 
 - [Peierls bound hypothesis for the wired measure on $\mathbb{Z}^2$](fk-non-percolation-bound.md)
 - [Percolation from a Peierls bound with series below 1](fk-theta-pos-of-non-percolation-bound.md)

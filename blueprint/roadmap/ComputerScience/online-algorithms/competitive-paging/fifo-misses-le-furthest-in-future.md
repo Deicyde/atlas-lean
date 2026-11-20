@@ -1,4 +1,4 @@
-# FIFO is `k`-competitive against the offline optimum
+# FIFO is $k$-competitive against the offline optimum
 
 Let $k \ge 1$, let $\sigma$ be a
 finite request sequence, and let $c_0$ be a list of at most $k$ distinct pages. Let $m$ be the

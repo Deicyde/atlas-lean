@@ -8,8 +8,7 @@ $f(s) = \sum_{n \ge 1} F(n)^{-s}$ for every complex $s$ with $\operatorname{Re} 
 complex differentiable at every point outside $S$, and for every $s_0 \in S$ the limit of
 $(s - s_0) f(s)$ as $s \to s_0$ with $s \ne s_0$ exists in $\mathbb{C}$.
 
-The last clause says that $f$ has at most simple poles, all lying in $S$; the residues are
-stated separately.
+The last clause says that $f$ has at most simple poles, all lying in $S$.
 
 ## Sources
 

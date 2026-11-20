@@ -6,4 +6,4 @@ $F_n$ on $n$ generators is an automatic group.
 
 ## Sources
 
-- Question 7.3 [AMR-109-0302], Farb - Problems on Mapping Class Groups and Related Topics, PDF p. 339, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.
+- M. R. Bridson and K. Vogtmann, *Automorphism groups of free groups, surface groups and free abelian groups*, in B. Farb (ed.), *Problems on Mapping Class Groups and Related Topics*, Proc. Sympos. Pure Math. 74, Amer. Math. Soc., 2006, Question 7.3, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.

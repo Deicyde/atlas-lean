@@ -9,4 +9,4 @@ $a^{(n)}_{c p^k,\, b p^k + 1} \equiv a^{(n_1)}_{c,\, b + 1} \pmod{p}$.
 
 ## Sources
 
-- Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 4.
+- Mark L. Lewis and Shannon M. Tefft, *The Maximum Length for Ducci Sequences on $\mathbb{Z}_m^n$ when $n$ is Even*, arXiv:2410.18204, Lemma 7.

@@ -1,3 +1,3 @@
 # Symmetry of identity by descent
 
-Identity by descent is symmetric.
+In every [identity-by-descent model](ibdmodel.md), $\mathrm{ibd}(c, d) = \mathrm{ibd}(d, c)$ for all gene copies $c, d$.

@@ -1,6 +1,6 @@
 # Proper $L^*$-blocks
 
-**Proper $L^*$-blocks.** Let $L$ be a list of natural numbers, index coefficient functions
+Let $L$ be a list of natural numbers, index coefficient functions
 from $1$, and let $\bar\beta^s$ be the maximal $L^*$-block starting at index $s$. For $s \ge 1$,
 a function $\zeta : \mathbb N \to \mathbb N$ is a proper $L^*$-block with support interval
 $[s, k]$ when $s \le k$, $\zeta_i = \bar\beta^s_i$ for all $i < k$, $\zeta_k < \bar\beta^s_k$,

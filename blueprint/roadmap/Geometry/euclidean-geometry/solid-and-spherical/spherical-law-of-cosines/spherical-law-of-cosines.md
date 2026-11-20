@@ -19,4 +19,4 @@ opposite the side $c$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Spherical_law_of_cosines. It follows from `spherical_law_of_cosines_general`; the hypotheses `hc` and `hC` are unused and keep the source's shape.
+- https://en.wikipedia.org/wiki/Spherical_law_of_cosines. The bounds $0 < c < \pi$ and $0 < C < \pi$ are not needed for the conclusion.

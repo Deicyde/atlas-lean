@@ -10,4 +10,4 @@ regarded as an element of $R$.
 
 ## Sources
 
-- László Németh, *The Trinomial Transform Triangle*, Journal of Integer Sequences 21 (2018), Article 18.7.3.
+- László Németh, *The Trinomial Transform Triangle*, J. Integer Seq. 21 (2018), Article 18.7.3, Section 1 (definition of the trinomial transform), <https://cs.uwaterloo.ca/journals/JIS/VOL21/Nemeth/nemeth6.html>.

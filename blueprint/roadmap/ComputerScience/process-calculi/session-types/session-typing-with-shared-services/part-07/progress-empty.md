@@ -1,5 +1,5 @@
 # Closed runtime processes are idle or step given availability
 
-Closed empty-interface runtime progress, at arbitrary passive-name depth,
-requires the SAME actual all-declared-service availability. Idle includes waiting
-replicas/accepts and nil; no termination or scheduler fairness is asserted.
+Let $n$ be a natural number, $\Gamma$ a service environment and $p$ a process with $\Gamma;
+\emptyset \vdash_n p$ in which all services of $\Gamma$ are available. Then $p$ is idle for $\Gamma$
+or $p \to q$ for some process $q$.

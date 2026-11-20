@@ -1,6 +1,6 @@
 # Conformal classes of Riemannian metrics
 
-## Bundle
+## Scaling a Riemannian metric
 
 - [Lowering the smoothness of a Riemannian metric](of-le.md)
 - [Lowering the smoothness keeps the inner product](of-le-inner.md)
@@ -8,7 +8,7 @@
 - [Inner product of a conformally scaled metric](conformal-scale-inner-apply.md)
 - [A conformal factor at a point is positive](pos-of-inner-eq-mul.md)
 
-## Manifold
+## Conformal classes
 
 - [Conformal class of a Riemannian metric](conformal-class.md)
 - [Conformal metrics via an exponential factor](mem-conformal-class-iff-exp.md)

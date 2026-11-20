@@ -1,4 +1,5 @@
 # Gibbs probability of an Ising configuration
 
-The Gibbs probability `exp (-β H(s)) / Z` of a configuration. See also
-`CanonicalEnsemble.probability` and `StatMech.Ising.isingProb_eq_probability`.
+Let $G = (V, E)$ be a finite simple graph and $\beta, h \in \mathbb{R}$. The Gibbs probability of a spin configuration $s$ is
+$e^{-\beta H(s)}/Z$, with $H$ the [Ising Hamiltonian](hamiltonian.md) and $Z$ the
+[partition function](ising-z.md).

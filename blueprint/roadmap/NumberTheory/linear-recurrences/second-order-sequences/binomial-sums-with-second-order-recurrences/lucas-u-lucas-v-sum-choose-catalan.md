@@ -9,4 +9,4 @@ $$\sum_{k=0}^{n} \binom{2n}{2k} C_k C_{n-k} U_{n-k} V_k = C_n C_{n+1} U_n.$$
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.11.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Proposition 2.11.

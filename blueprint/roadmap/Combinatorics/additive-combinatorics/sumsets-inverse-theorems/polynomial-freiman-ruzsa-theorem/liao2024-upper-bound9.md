@@ -9,4 +9,4 @@ of $H$.
 
 ## Sources
 
-- J.-J. Liao, arXiv:2404.09639, Theorem 1.1.
+- Jyun-Jie Liao, *Improved Exponent for Marton's Conjecture in $\mathbb{F}_2^n$*, arXiv:2404.09639 (2024), Theorem 2.

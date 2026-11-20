@@ -9,4 +9,4 @@ $(a)$ has exponent $0$ at every such $\mathfrak p$.
 
 ## Sources
 
-- N406 Section 21.3. This is the converse of `rayElement_valuation_eq_one`, the converse valuation criterion used to turn the controlled approximation witness into a ray element; it is a reusable bridge toward N406, not itself the full source theorem.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

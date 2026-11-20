@@ -6,4 +6,4 @@ $\|2^m \cdot 6^r\|_2 = m + 3r$.
 
 ## Sources
 
-- Pengcheng Zhang, "The 2-Complexity of Even Positive Integers", Proposition 5 and Theorem 2.
+- Pengcheng Zhang, *The 2-Complexity of Even Positive Integers*, INTEGERS 24 (2024), Article A109, Proposition 5 and Theorem 2.

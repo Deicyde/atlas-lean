@@ -1,4 +1,4 @@
-# Nonvacuity of the a.s.-tail theorem via the all-plus Dirac mass
+# A tail event almost surely equal to the whole space
 
-The hypotheses of `aetc_haeTail` are satisfiable: the Dirac mass at the all-plus
-configuration.
+On the configurations of $\mathbb{Z}$, there is a [tail event](is-tail-event.md) $s'$ that is almost surely
+equal to the whole space under the Dirac mass at the all-plus configuration.

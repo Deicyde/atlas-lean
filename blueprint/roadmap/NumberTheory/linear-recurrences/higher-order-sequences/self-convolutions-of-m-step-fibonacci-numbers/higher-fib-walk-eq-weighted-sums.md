@@ -18,4 +18,4 @@ At $n = 0$ the weighted sums have upper limit $-1$ and are empty.
 
 ## Sources
 
-- Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 3.
+- Jan Sedlák and Antonín Slavík, *Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.7, Theorem 3.

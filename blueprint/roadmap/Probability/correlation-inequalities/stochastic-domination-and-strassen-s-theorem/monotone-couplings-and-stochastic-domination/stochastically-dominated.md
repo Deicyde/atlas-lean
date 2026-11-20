@@ -1,4 +1,3 @@
 # Strassen's theorem, easy direction
 
-A finite monotone coupling of `μ` and `ν` shows `μ ≼ ν`: the easy direction of Strassen's
-theorem.
+Let $E$ be a finite set, $\mu, \nu$ measures on $\{0,1\}^E$ and $\kappa$ a finite measure that is a [monotone coupling](monotone-coupling.md) of $\mu$ and $\nu$. Then $\mu$ is [stochastically dominated](../stochastic-domination-of-measures-on-configurati/stochastically-dominated.md) by $\nu$: $\mu(A) \le \nu(A)$ for every increasing event $A$.

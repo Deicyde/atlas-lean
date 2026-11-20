@@ -1,3 +1,3 @@
 # Common denominator of the two-locus moments
 
-The common denominator `ρ² + 13 ρ + 18` of the two-locus moments.
+For a real number $\rho$, the number $\rho^2 + 13\rho + 18$.

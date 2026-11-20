@@ -1,4 +1,4 @@
-# Explicit formula for the supergeneralized Leonardo p-numbers
+# Explicit formula for the supergeneralized Leonardo $p$-numbers
 
 For all natural numbers
 $p \ge 1$, $k$ and $n$ with $n > p$ and every real sequence $x$, the supergeneralized Leonardo
@@ -16,4 +16,4 @@ $p = 1$, $k = 2$, $n = 2$, $x = (1, 1)$ gives $4$ versus $3$).
 
 ## Sources
 
-- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 9.
+- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo $p$-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 9.

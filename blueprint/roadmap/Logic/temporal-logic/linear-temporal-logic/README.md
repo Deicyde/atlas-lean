@@ -26,3 +26,23 @@
 - [Satisfaction of an atom at a position](satisfies-at-atom.md)
 - [Relabelling the letters of an ω-word](satisfies-map.md)
 - [Membership in the language of a formula](mem-language.md)
+
+## Token encoding
+
+- [Token encoding of an LTL formula](tokens.md)
+- [One token per occurrence](length-tokens.md)
+- [Fuelled parsing of LTL tokens](parse-fuel.md)
+- [Parsing inverts the token encoding](parse-fuel-tokens.md)
+- [Decoding a token list](decode-list.md)
+- [Decoding inverts the token encoding](decode-list-tokens.md)
+
+## Linear temporal logic on runs
+
+- [Satisfaction of LTL formulas on runs](satisfies-2.md)
+- [Satisfaction at a position of a run](satisfies-at-2.md)
+- [Expansion law for until on runs](until-expansion-2.md)
+
+## Related topics
+
+- [Büchi automata for a fragment of linear temporal logic](../b-chi-automata-for-a-fragment-of-linear-temporal/README.md): direct automata for invariants, recurrence, persistence and a safety fragment.
+- [Model checking for linear temporal logic](../model-checking-for-linear-temporal-logic/README.md): the automata-theoretic treatment of LTL: the Vardi–Wolper translation into Büchi automata, satisfiability as nonemptiness, and model checking as language inclusion.

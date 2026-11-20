@@ -1,5 +1,8 @@
 # Zero class versus the Poisson law
 
-For `θ > 0` and `μ ≥ 0`,
-`P(0) = (θ / (θ + μ)) ^ θ ≥ e^{-μ}`: a negative binomial law puts at least as much mass at zero
-as the Poisson law with the same mean.
+For $\theta > 0$ and $\mu \ge 0$, the [negative binomial law](neg-binomial-real.md) with size $\theta$
+and mean $\mu$ satisfies
+
+$$\mathrm{NB}(0; \theta, \mu) = \Bigl(\frac{\theta}{\theta + \mu}\Bigr)^\theta \ge e^{-\mu}:$$
+
+it puts at least as much mass at zero as the Poisson law with the same mean.

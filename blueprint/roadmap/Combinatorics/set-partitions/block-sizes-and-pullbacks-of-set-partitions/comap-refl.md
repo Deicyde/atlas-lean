@@ -1,3 +1,4 @@
 # Pulling back a partition along the identity
 
-Pulling back along the identity does nothing.
+For a partition $P$ of a finite set $\alpha$, the [pull-back](comap.md) of $P$ along the identity
+map of $\alpha$ is $P$ itself.

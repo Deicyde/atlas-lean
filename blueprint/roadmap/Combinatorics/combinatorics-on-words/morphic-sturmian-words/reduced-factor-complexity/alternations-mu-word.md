@@ -7,4 +7,4 @@ $2|w| - 1 - \alpha$ alternations.
 
 ## Sources
 
-- John M. Campbell, James D. Currie, and Narad Rampersad, "Reduced Complexities for Sequences Over Finite Alphabets", Lemma 1.
+- John M. Campbell, James D. Currie and Narad Rampersad, *Reduced Complexities for Sequences Over Finite Alphabets*, INTEGERS 26 (2026), Article A34, Lemma 1, https://math.colgate.edu/~integers/aa34/aa34.pdf

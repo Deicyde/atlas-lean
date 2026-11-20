@@ -1,4 +1,7 @@
 # Star-genealogy EHH as a squared Poisson zero probability
 
-The star-genealogy EHH is the square of the probability that a Poisson number of
-recombination events with mean `r d T` on one lineage is zero.
+For all $r, T, d \ge 0$,
+
+$$\mathrm{EHH}^\star(r, T, d) = \bigl(\Pr(N = 0)\bigr)^2, \qquad N \sim \mathrm{Poisson}(r d T),$$
+
+where $\mathrm{EHH}^\star$ is the [star-genealogy EHH](sweep-ehh.md).

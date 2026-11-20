@@ -9,4 +9,4 @@ where the sum runs over all tuples $(p_1, \dots, p_{a-1})$ of natural numbers wi
 
 ## Sources
 
-- Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (11) (`jis-2026-26.2.8-abstract-main`).
+- Bulat Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (11).

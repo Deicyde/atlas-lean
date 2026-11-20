@@ -1,4 +1,4 @@
 # The empty language is context-free
 
-The empty language over any alphabet is
-context-free: take a grammar with no productions.
+Let $T$ be an alphabet. The empty language over $T$ is context-free; a grammar with no productions generates
+it.

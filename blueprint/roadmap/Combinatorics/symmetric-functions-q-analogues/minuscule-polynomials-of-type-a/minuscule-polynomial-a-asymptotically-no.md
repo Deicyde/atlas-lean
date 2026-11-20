@@ -7,9 +7,9 @@ coefficients $N_{n,k}$ over $0 \le k < n$ with $k \le n/2 + x \sigma_n$, divided
 tends to $\Phi(x)$ as $n \to \infty$, where $\Phi$ is the distribution function of the standard
 normal distribution.
 
-The centring $n/2$ and the scale $\sigma_n^2$ are the mean and the variance of the coefficient
-distribution $k \mapsto N_{n,k}/N_n(1)$.
+For $n \ge 2$, the centring $n/2$ and the scale $\sigma_n^2$ are the mean and the variance of the
+coefficient distribution $k \mapsto N_{n,k}/N_n(1)$; for $n = 0, 1$ the polynomial $N_n$ is $0$.
 
 ## Sources
 
-- Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 13.
+- Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 13.

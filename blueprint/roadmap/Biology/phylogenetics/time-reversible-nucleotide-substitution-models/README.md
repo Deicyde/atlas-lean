@@ -1,5 +1,7 @@
 # Time-reversible nucleotide substitution models
 
+## The general time-reversible model
+
 - [General time-reversible (GTR) rate matrix](gtr-rate.md)
 - [Rows of the GTR rate matrix sum to zero](sum-gtr-rate.md)
 - [GTR matrix is a rate matrix](is-rate-matrix-gtr-rate.md)
@@ -8,7 +10,7 @@
 - [Base frequencies are stationary for the GTR chain](vec-mul-ctmc-transition-gtr-rate.md)
 - [Time-reversibility of the GTR chain](is-detailed-balance-ctmc-transition-gtr.md)
 
-## Nucleotide models on `Fin 4` (order `A, C, G, T`)
+## Nucleotide models (bases ordered A, C, G, T)
 
 - [HKY85 exchangeabilities](hky-exchangeability.md)
 - [HKY85 rate matrix](hky-rate.md)

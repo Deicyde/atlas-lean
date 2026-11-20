@@ -1,4 +1,3 @@
 # Diploid mean fitness under Hardy–Weinberg proportions
 
-The mean fitness `w̄ = ∑ i, ∑ j, p i * p j * w i j` of a population in Hardy–Weinberg
-proportions with allele frequencies `p` and genotype fitnesses `w`.
+For a finite set $\iota$ of alleles, a real vector $p$ on $\iota$ and a real matrix $w$ of genotype fitnesses, the mean fitness is $\bar w(p) = \sum_{i,j} p_i\, p_j\, w_{ij}$. When $p$ is a probability vector, it is the mean fitness of a population in Hardy–Weinberg proportions with allele frequencies $p$.

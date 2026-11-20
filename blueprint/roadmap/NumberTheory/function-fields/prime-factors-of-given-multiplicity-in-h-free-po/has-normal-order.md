@@ -9,8 +9,8 @@ $G(f_2) \le G(f_1)$, with $\deg$ the natural degree), and for every real $\varep
 number of $f \in U \cap M_n$ for which $(1 - \varepsilon)G(f) < g(f) < (1 + \varepsilon)G(f)$
 fails is $o(|U \cap M_n|)$ as $n \to \infty$.
 
-The paper takes $g, G : U \to \mathbb{R}_{\ge 0}$; here both are total real-valued functions,
-with nonnegativity imposed on $U$.
+The paper takes $g, G : U \to \mathbb{R}_{\ge 0}$; taking $g$ and $G$ defined on all polynomials
+and requiring them to be nonnegative on $U$ is equivalent.
 
 ## Sources
 

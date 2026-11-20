@@ -32,9 +32,22 @@
 - [Oscillation set of Birkhoff averages is null](measure-level-set-eq-zero.md)
 - [Birkhoff limit of a function](birkhoff-limit.md)
 - [Birkhoff averages converge almost everywhere to the Birkhoff limit](tendsto-birkhoff-average-ae.md)
-- [Birkhoff averages are L1 contractions](e-lp-norm-birkhoff-average-le.md)
+- [Birkhoff averages do not increase the $L^1$ norm](e-lp-norm-birkhoff-average-le.md)
 - [Integrability of the Birkhoff limit](integrable-birkhoff-limit.md)
 - [Birkhoff limit preserves integrals over invariant sets](set-integral-birkhoff-limit.md)
 - [Birkhoff limit is a conditional expectation on invariant sets](birkhoff-limit-ae-eq-cond-exp.md)
 - [Birkhoff's pointwise ergodic theorem](tendsto-birkhoff-average-cond-exp-ae.md)
 - [Birkhoff limit of an ergodic map is the space average](birkhoff-limit-ae-eq-integral-of-ergodic.md)
+- [Birkhoff averages along the Bernoulli shift are empirical means](birkhoff-average-shift-eval-zero.md)
+- [Strong law of large numbers from the ergodic theorem](tendsto-average-coordinates-ae.md)
+
+## Related topics
+
+- [Von Neumann mean ergodic theorem](../von-neumann-mean-ergodic-theorem/README.md): convergence of the same
+  averages in $L^2$ rather than almost everywhere.
+- [Mixing](../mixing/README.md): mixing implies ergodicity, the hypothesis under which the limit is the space
+  average.
+- [Strong law of large numbers](../../../Probability/laws-of-large-numbers/strong-law-of-large-numbers/README.md):
+  the ergodic theorem for the Bernoulli shift is the strong law for i.i.d. sequences.
+- [Poincaré recurrence theorem](../ae-frequently-mem-of-mem.md): the qualitative statement that almost every
+  point returns, of which the ergodic theorem computes the frequency.

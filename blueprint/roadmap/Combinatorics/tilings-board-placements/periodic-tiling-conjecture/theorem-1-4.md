@@ -6,4 +6,4 @@ aperiodic tiling equation in the group $\mathbb{Z}^2 \times G_0$.
 
 ## Sources
 
-- R. Greenfeld and T. Tao, `A counterexample to the periodic tiling conjecture`, Annals of Math, 200 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_periodic_tiling_conjecture` of the lean-eval benchmark.
+- Rachel Greenfeld and Terence Tao, *A counterexample to the periodic tiling conjecture*, Ann. of Math. (2) 200 (2024), no. 1, 301–363, DOI: 10.4007/annals.2024.200.1.5; Theorem 1.4 in the numbering of arXiv:2211.15847. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_periodic_tiling_conjecture` of the lean-eval benchmark.

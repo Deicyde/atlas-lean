@@ -8,4 +8,4 @@ the rational run condition for $q = r/s$.
 
 ## Sources
 
-- Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 6 (`jis-2025-25.3.2-prop-6`).
+- Elena Barcucci, Antonio Bernini, Stefano Bilotta, and Renzo Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 6 (`jis-2025-25.3.2-prop-6`).

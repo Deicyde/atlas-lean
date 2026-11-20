@@ -1,5 +1,7 @@
 # Weighted alignment automaton
 
-A weighted automaton reading an alignment of a sequence over `α` with a sequence over `β`
-column by column with a control state in `Q`: the weight of reading a column in a control
-state, the next control state, and the final weight of a control state. Weights are in `R`.
+A weighted alignment automaton with control states $Q$, alphabets $A$ and $B$ and weights in a set $R$ consists of
+
+- a weight $w(q, c) \in R$ for reading the column $c$ in control state $q$;
+- a next control state $\nu(q, c) \in Q$;
+- a final weight $f(q) \in R$.

@@ -8,4 +8,4 @@ $\operatorname{cco}_{\widehat{1,2}}(3k) = \operatorname{cco}_{\hat 2}(2k-1)$.
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Theorem 14.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Theorem 14.

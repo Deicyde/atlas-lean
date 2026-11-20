@@ -1,4 +1,4 @@
-# Non-soluble products of non-conjugate maximal subgroups (Kourovka 10.34, Monakhov)
+# Non-soluble products of non-conjugate maximal subgroups (Kourovka 10.34)
 
 The
 statement that there is a finite group $G$ that is not soluble such that $G = MN$ for every two

@@ -5,7 +5,7 @@ Construction and uniqueness of measures, atomless and vector measures, measures 
 - [Atomless measures](atomless-measures/README.md)
 - [Banach–Tarski paradox](banach-tarski-paradox/README.md)
 - [Carathéodory's extension theorem](carath-odory-s-extension-theorem/README.md)
-- [Congruence-invariant extensions of Lebesgue measure](congruence-invariant-extensions-of-lebesgue-meas/README.md)
+- [Congruence-invariant extensions of measures on the plane](congruence-invariant-extensions-of-lebesgue-meas/README.md)
 - [Independent bases of atomless measures](independent-bases-of-atomless-measures/README.md)
 - [Lyapunov convexity theorem](lyapunov-convexity-theorem/README.md)
 - [Measures on complete Boolean algebras](measures-on-complete-boolean-algebras/README.md)

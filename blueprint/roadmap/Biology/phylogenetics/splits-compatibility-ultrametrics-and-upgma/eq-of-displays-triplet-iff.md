@@ -1,4 +1,7 @@
 # A rooted binary tree is determined by its triplets
 
-**A rooted binary tree is determined by its triplets** (Semple & Steel 2003, Theorem
-6.4.1): two binary hierarchies on `S` displaying the same triplets are equal.
+If $H$ and $H'$ are [binary hierarchies](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md) on a finite set $S$ that [display](displays-triplet.md) the same triplets, then $H = H'$ (Semple & Steel 2003).
+
+## Sources
+
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

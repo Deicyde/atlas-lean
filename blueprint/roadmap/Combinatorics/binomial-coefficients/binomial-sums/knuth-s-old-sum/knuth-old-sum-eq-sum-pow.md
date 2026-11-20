@@ -12,4 +12,4 @@ on the right as $\binom{2j+k}{k} 2^{k-1} (1 + 2^k 3^{n-k})$.
 
 ## Sources
 
-- Akalu Tefera and Aklilu Zeleke, "Combinatorial Identities Inspired by Knuth's Old Sum", Theorem 2.
+- Akalu Tefera and Aklilu Zeleke, *Combinatorial Identities Inspired by Knuth's Old Sum*, INTEGERS 26 (2026), Article A68, Theorem 2, <https://math.colgate.edu/~integers/aa68/aa68.pdf>.

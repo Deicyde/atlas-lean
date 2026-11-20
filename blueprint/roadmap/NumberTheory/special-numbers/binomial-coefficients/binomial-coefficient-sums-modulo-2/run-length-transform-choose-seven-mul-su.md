@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 12
+# Sum of $\binom{7k-n}{n+k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $(p_j)_{j \ge 0}$ be the shifted Padovan sequence,
 $p_0 = 1$, $p_1 = 0$, $p_2 = 1$ and $p_{j+3} = p_{j+1} + p_j$, and let $T$ be the run length

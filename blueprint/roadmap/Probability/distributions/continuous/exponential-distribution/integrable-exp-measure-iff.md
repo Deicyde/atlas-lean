@@ -1,4 +1,6 @@
 # Integrability criterion for the exponential law
 
-A function is integrable against the exponential law of rate `r > 0` iff
-`r * exp (-(r * x)) * f x` is integrable on `(0, ∞)`.
+Let $r > 0$ and let $\operatorname{Exp}(r)$ be the exponential law on $\mathbb{R}$ with rate $r$,
+of density $r e^{-rx}$ on $[0, \infty)$. A function $f : \mathbb{R} \to \mathbb{R}$ is integrable
+with respect to $\operatorname{Exp}(r)$ if and only if $x \mapsto r e^{-rx} f(x)$ is Lebesgue
+integrable on $(0, \infty)$.

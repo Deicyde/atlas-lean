@@ -12,4 +12,4 @@ In the paper's numbering of cars from $1$, the factors are $n + 2 - i$ and $i - 
 
 ## Sources
 
-- Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Theorem 4.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions", Journal of Integer Sequences 29 (2026), Article 26.1.1, Theorem 4.

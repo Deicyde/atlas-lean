@@ -13,4 +13,4 @@ $(d_a) = (-3, 5, 5, 7, 4, 3, -2, -3, -5, -5, -3, 3)$.
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 8, first part (`jis-2026-26.2.6-thm-8`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 8, first part.

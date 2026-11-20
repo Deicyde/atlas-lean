@@ -8,7 +8,7 @@
 - [The root of a Fibonacci tree is one of its elements](root-mem-elements.md)
 - [Fibonacci trees are nonempty](card-elements-pos.md)
 - [Valid Fibonacci trees](valid.md)
-- [One-element Fibonacci heap](singleton.md)
+- [Single-node Fibonacci tree](singleton.md)
 - [Linking two Fibonacci trees](link.md)
 - [Degree of the link of two trees of equal degree](degree-link-of-eq.md)
 - [Linking adds the elements](elements-link.md)

@@ -1,6 +1,3 @@
 # Upper bounds on the local score
 
-Let $\sigma$ be an integer substitution score, $g$ an
-integer gap score, $x$ and $y$ sequences and $c$ an integer. If the Needleman–Wunsch score of
-every pair $(x', y')$ with $x'$ an infix of $x$ and $y'$ an infix of $y$ is at most $c$, then the
-local score of $x$ and $y$ is at most $c$.
+If an integer $m$ satisfies $\mathrm{NW}(x', y') \le m$ for every [infix pair](infix-pairs.md) $(x', y')$ of $x$ and $y$, then $\mathrm{Loc}(x, y) \le m$, where $\mathrm{Loc}$ is the [local score](local-score.md).

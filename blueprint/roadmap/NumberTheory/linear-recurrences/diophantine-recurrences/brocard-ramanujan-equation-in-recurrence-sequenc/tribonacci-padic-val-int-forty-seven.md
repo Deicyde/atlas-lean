@@ -9,8 +9,8 @@ $j \in J$ and every nonzero integer $r$, $\nu_{47}(T_{46r+j} - T_j) = 1 + \nu_{4
 every integer $n$ that is not of the form $46r + j$ with $j \in J$ and $r \in \mathbb{Z}$, neither
 $T_n - 1$ nor $T_n + 1$ is divisible by $47$.
 
-The condition $r \ne 0$ is needed because $\nu_{47}(0)$ is $0$ here, whereas the paper uses an
-infinite valuation at $0$.
+The condition $r \ne 0$ is needed because of the convention $\nu_{47}(0) = 0$, whereas the paper
+uses an infinite valuation at $0$.
 
 ## Sources
 

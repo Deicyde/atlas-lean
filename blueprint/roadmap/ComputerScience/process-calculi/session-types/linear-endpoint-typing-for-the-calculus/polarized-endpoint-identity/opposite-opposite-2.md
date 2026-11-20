@@ -1,3 +1,3 @@
 # Key reversal is an involution
 
-Reversing an endpoint twice recovers its entire key.
+For every endpoint $e$, the opposite of the opposite of $e$ is $e$: $\bar{\bar e} = e$.

@@ -8,4 +8,4 @@ Division by zero is read as $0$, so $\alpha = -1$ when $b = 0$.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL23/Kocik/kocik5.tex>, lines 482–499.
+- Jerzy Kocik, "Lens Sequences," Journal of Integer Sequences 23 (2020), Article 20.11.6, Definition 6, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Kocik/kocik5.tex>.

@@ -12,4 +12,4 @@ $a_d = |T|^{n^2/\ell_d}$ and $b_d = |T|^{(n^2-2n)/\ell_d} \, t_d^{2n/d}$.
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.

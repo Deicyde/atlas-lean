@@ -1,3 +1,5 @@
 # A pair with two or more branches closes a multiloop
 
-A pair with at least two branches closes a multiloop with the affine energy.
+If $p = (i, j)$ has at least two [branches](branches.md) in $P$, forming the set $\beta$, then its [loop energy](loop-energy-2.md) is
+
+$$a + b\,|\beta| + c \max\Bigl(j - i - 1 - \sum_{(k, l) \in \beta} \bigl(\max(l - k, 0) + 1\bigr),\ 0\Bigr).$$

@@ -8,4 +8,4 @@ $d \in S$ with $x_{i+1} = x_i + d$.
 
 ## Sources
 
-- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): `S` is `r`-accessible if for every `r`-coloring of `ℕ` and every `k ∈ ℕ \ {1}` there is a monochromatic `S`-diffsequence of length `k`.
+- Open Problem Garden, *2-accessibility of primes*, http://www.openproblemgarden.org/op/2_accessibility_of_primes: $S$ is $r$-accessible if for every $r$-coloring of $\mathbb{N}$ and every $k \in \mathbb{N} \setminus \{1\}$ there is a monochromatic $S$-diffsequence of length $k$.

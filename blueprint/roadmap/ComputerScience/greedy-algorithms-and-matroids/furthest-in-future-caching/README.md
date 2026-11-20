@@ -1,6 +1,6 @@
 # Furthest-in-future caching
 
-## Offline Caching
+## The furthest-in-future manager
 
 - [Cache events](cache-event.md)
 - [Legal cache transitions](cache-lts.md)
@@ -11,12 +11,12 @@
 - [Furthest-in-future caching with zero capacity](furthest-in-future-zero-capacity.md)
 - [Optimality of furthest-in-future caching](furthest-in-future-min-misses.md)
 
-## Cache Event
+## Cache events and misses
 
 - [Page served by a cache event](request.md)
 - [Miss indicator](is-miss.md)
 
-## Offline Caching
+## Legal traces and optimality
 
 - [Number of misses in a trace](misses.md)
 - [Legal cache transitions preserve valid caches](cache-lts-valid.md)

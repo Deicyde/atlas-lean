@@ -10,5 +10,6 @@ $\mathit{self}(\mathit{ok})$, and otherwise it goes to $\mathit{self}(\mathrm{fa
 false, it goes to $\mathit{fin}(\mathit{ok})$ when $c$ is empty and to
 $\mathit{fin}(\mathrm{false})$ otherwise.
 
-Iterated, it compares the next unary number of $\mathit{src}$ with the counter $c$, one unit of $c$
+When $\mathit{src}$, $\mathit{sv}$, $c$ and $R$ are pairwise distinct, iterating it compares the next unary
+number of $\mathit{src}$ with the counter $c$, one unit of $c$
 per true, parked on $R$: $\mathit{ok}$ is the verdict so far, falsified when $c$ runs out early.

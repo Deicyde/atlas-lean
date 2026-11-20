@@ -56,7 +56,7 @@
 - [Coppersmith's 1997 bound on the dual exponent](coppersmith1997-strict-lower.md)
 - [Le Gall's 2012 bound on the dual exponent](le-gall2012-strict-lower.md)
 - [Le Gall–Urrutia bound on the dual exponent](le-gall-urrutia2018-lower.md)
-- [Williams–Xu–Xu–Zhou bound on the dual exponent](williams-xu-xu-zhou2024-strict-lower.md)
+- [Vassilevska Williams–Xu–Xu–Zhou bound on the dual exponent](williams-xu-xu-zhou2024-strict-lower.md)
 - [Naive bound for rectangular matrix multiplication](rectangular-naive-upper.md)
 - [Circuit size and tensor rank give the same rectangular exponent](rectangular-operation-rank-bridge.md)
 - [The rectangular exponent depends only on the characteristic](characteristic-invariance.md)

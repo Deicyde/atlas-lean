@@ -1,3 +1,5 @@
 # Weight of a random current
 
-The current weight `w(n) = ∏_{e ∈ E(G)} (βJ_e)^{n_e}/n_e!`.
+Let $G = (V, E)$ be a finite simple graph, $\beta \in \mathbb{R}$ and $J$ real couplings. The weight of a current $n$ is
+
+$$w(n) = \prod_{e \in E} \frac{(\beta J_e)^{n_e}}{n_e!}.$$

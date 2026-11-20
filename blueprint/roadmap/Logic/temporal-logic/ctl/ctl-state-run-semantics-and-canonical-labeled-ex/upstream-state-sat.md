@@ -1,5 +1,5 @@
 # CTL$^{\ast}$ state satisfaction over labeled executions
 
-Satisfaction of a CTL* state formula at a state over canonical `Cslib.LTS`:
-`E π` holds when some infinite labeled execution from the state satisfies `π`;
-`A π` when every infinite labeled execution does.
+Satisfaction of a CTL$^{\ast}$ state formula at a state of a labelled transition system:
+$E\,\pi$ holds when some infinite labelled execution from the state satisfies $\pi$, and
+$A\,\pi$ when every infinite labelled execution from the state does.

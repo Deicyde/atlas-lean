@@ -1,12 +1,3 @@
 # Rooted binary species tree with branch lengths
 
-A rooted binary **species tree** on the species `Fin n` with branch lengths: `leaf i` is
-species `i`, and `node l r t` is the ancestral species of the species below `l` and `r`, where
-`t` is the length, in coalescent units (`2N` generations), of the branch above the node, i.e.
-the time during which the ancestral population of `l` and `r` exists before it merges with a
-sister population. The length stored at the root node is not used: the root population lasts
-until all lineages have coalesced. Leaf branch lengths are not recorded, because one gene
-lineage is sampled per species and a single lineage cannot coalesce. A species tree on the
-species `Fin n` labels each species by exactly one leaf; the type does not enforce this, and
-the theorems below are about concrete trees with this property. The type accepts any real
-branch length; the probabilistic statements assume nonnegative lengths (`NonnegLengths`).
+For a natural number $n$, a species tree on the species $\{0, \dots, n-1\}$ is a rooted binary tree built from leaves and internal nodes: a leaf $\ell(i)$ is the species $i$, and a node $(l, r, t)$, with subtrees $l$ and $r$ and a real number $t$, is the ancestral species of the species below $l$ and $r$, where $t$ is the length, in coalescent units of $2N$ generations, of the branch above the node: the time during which the ancestral population of $l$ and $r$ exists before it merges with a sister population. Any real number is allowed as a branch length. The length stored at the root node plays no role (the root population lasts until all lineages have coalesced), and leaf branches carry no length, because one gene lineage is sampled per species and a single lineage cannot coalesce. Nothing forces each species to label exactly one leaf; the trees studied in this folder have this property.

@@ -1,4 +1,5 @@
 # Compatibility passes to the right part of a disjoint split
 
-A right child of a disjoint linear split inherits compatibility of
-its present pairs from the combined interface.
+Let $\Delta$, $\Theta$ be ownership contexts with disjoint domains. If $\Delta \cup \Theta$ is
+compatible, then $\Theta$ is compatible; compatibility means that whenever an endpoint $e$ is mapped
+to $c$ and its opposite $\bar e$ to $d$, then $d = \bar c$.

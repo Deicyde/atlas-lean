@@ -21,4 +21,4 @@ In every case the result fails if any evaluation it uses fails.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987 (oracle computations).

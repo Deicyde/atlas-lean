@@ -1,4 +1,4 @@
-# Overgroups of Hall subgroups in $C_\pi$-groups (Vdovin–Revin)
+# Overgroups of Hall subgroups in $C_\pi$-groups are $C_\pi$-groups
 
 Let $\pi$ be a set of natural
 numbers and let $G$ be a finite $C_\pi$-group. Then every subgroup $K$ of $G$ that contains a Hall

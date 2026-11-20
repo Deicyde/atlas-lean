@@ -1,8 +1,11 @@
-# Drift of the Wright–Fisher chain with mutation (Ewens 2004, ch. 4)
+# Drift of the Wright–Fisher chain with mutation
 
-One generation of the
-Wright–Fisher chain on `M` gene copies (`M = 2N`): mutation moves the frequency `x` to
-`p' = mutatedFreq u₁ u₂ x`, then the new count is `Binomial(M, p')`. With `u₁ = θ₁ / (2M)`,
-`u₂ = θ₂ / (2M)` (`θᵢ = 4N uᵢ`), the expected change of frequency per `2N = M` generations is
-exactly the drift coefficient of `mutationGenerator`:
-`M · (E[k / M] - x) = (θ₁ (1 - x) - θ₂ x) / 2`, for every `M`.
+Let $M \ge 1$ be a natural number, $\theta_1$ and $\theta_2$ real numbers, and $u_1, u_2 \in [0, 1]$ mutation probabilities with $u_1 = \theta_1/(2M)$ and $u_2 = \theta_2/(2M)$ (so $0 \le \theta_i \le 2M$). For $x \in [0, 1]$, let $p'$ be the [frequency after mutation](mutated-freq.md) and let $k$ have the binomial distribution $\mathrm{Bin}(M, p')$: one generation of the Wright–Fisher chain with mutation on $M = 2N$ gene copies. Then
+
+$$M\Bigl(\mathbb{E}\Bigl[\frac{k}{M}\Bigr] - x\Bigr) = \frac{\theta_1(1 - x) - \theta_2 x}{2},$$
+
+the drift coefficient of the [mutation generator](mutation-generator.md), for every such $M$.
+
+## Sources
+
+- W. J. Ewens, *Mathematical Population Genetics I: Theoretical Introduction*, 2nd ed., Springer (2004).

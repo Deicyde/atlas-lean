@@ -1,5 +1,3 @@
 # Cut in the Aho graph
 
-The **Aho graph** of the triplets `R` on `S'` (vertices `S'`, an edge `x y` for each
-`xy|z ∈ R` with `x, y, z ∈ S'`) has a cut: a partition of `S'` into two nonempty parts with no
-edge across, i.e. the graph is disconnected.
+For a finite set $R$ of [triplets](triplet.md) and a finite set $S'$ of taxa, the Aho graph of $R$ on $S'$ has a cut if there is $K \subseteq S'$ with $K$ and $S' \setminus K$ nonempty such that for every $xy \mid z \in R$ with $x, y, z \in S'$, $x \in K$ if and only if $y \in K$: the graph on $S'$ with an edge $xy$ for each such triplet is disconnected.

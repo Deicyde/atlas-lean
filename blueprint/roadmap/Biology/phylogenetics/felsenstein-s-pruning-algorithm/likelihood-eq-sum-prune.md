@@ -1,3 +1,3 @@
 # The site likelihood by pruning
 
-`likelihood obs t π = ∑ s, π s * prune obs t s`.
+For every [tree](tree.md) $t$ and root distribution $\pi$, the [site likelihood](likelihood.md) equals $\sum_{s} \pi(s)\, \mathrm{pr}(t, s)$, where $\mathrm{pr}$ is the [pruning recursion](prune.md).

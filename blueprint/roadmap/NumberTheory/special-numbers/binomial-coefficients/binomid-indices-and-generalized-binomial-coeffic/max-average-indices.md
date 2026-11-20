@@ -9,4 +9,4 @@ $A_{\max} = \max \{A_i \mid 1 \le i \le m\}$, and for $m = 0$ the set is empty.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3 (the set `{i ≤ m | A_max = A_i}`).
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3 (the set $\{i \le m \mid A_{\max} = A_i\}$).

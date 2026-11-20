@@ -1,4 +1,4 @@
-# Initial values of the generalized Leonardo $p$-numbers
+# Initial segments of the generalized Leonardo $p$-numbers
 
 For natural numbers $p$, $k$
 and $n$, this is the list of integers $(\mathcal{L}_{p,k}(0), \mathcal{L}_{p,k}(1), \dots,

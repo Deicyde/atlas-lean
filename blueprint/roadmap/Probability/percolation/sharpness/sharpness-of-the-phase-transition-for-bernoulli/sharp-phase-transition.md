@@ -1,19 +1,16 @@
 # Sharpness of the phase transition
 
-**Sharpness of the phase transition** for Bernoulli bond percolation on `ℤ^d`, `d ≥ 1`
-(Duminil-Copin–Tassion 2016; Aizenman–Barsky 1987; Menshikov 1986):
+For Bernoulli bond percolation on $\mathbb{Z}^d$ with $d \ge 1$, let $\tilde p_c = \tilde p_c(d)$ be the [Duminil-Copin–Tassion threshold](../the-duminil-copin-tassion-quantity-p-s-and-the-t/tilde-pc.md). Then:
 
-1. `p̃_c = p_c`;
-2. for every `p ∈ tildePcSet d` (a finite `S ∋ 0` has `φ_p(S) < 1`),
-   `ℙ_p(0 ↔ ℤ^d \ Λ_{n-1}) ≤ C e^{-cn}` for some `c, C > 0`;
-3. `θ(q) ≥ (q - p̃_c)/(q(1 - p̃_c))` for `p̃_c < q < 1`.
+1. $\tilde p_c = p_c(d)$;
+2. for every $p \in [0, 1]$ such that some finite $S \ni 0$ has $\varphi_p(S) < 1$, there are $c, C > 0$ with $\mathbb{P}_p(0 \leftrightarrow \mathbb{Z}^d \setminus \Lambda_{n-1}) \le C e^{-cn}$ for all $n \in \mathbb{N}$;
+3. for every $q$ with $\tilde p_c < q < 1$, $\displaystyle \theta(q) \ge \frac{q - \tilde p_c}{q(1 - \tilde p_c)}$.
 
-Scope of the items:
-* Item 2 is stated on `tildePcSet d`, not on `[0, p_c)`: passing from `p < p̃_c` to
-  `p ∈ tildePcSet d` needs monotonicity of `p ↦ φ_p(S)`, and passing from `p < p_c` to `θ(p) = 0`
-  needs monotonicity of `θ`; neither is proved in MathlibExt (θ monotonicity is
-  `theta_mono_parameter` in PhyslibExt `RandomCluster/PcUpperViaFK`).
-* Item 3 is informative only when `p̃_c < 1`. This file does not prove that for any `d`; at `d = 1`
-  it fails (`p̃_c = p_c = 1`) and item 3 is vacuous. For `d = 2`, `p_c < 1` is proved in PhyslibExt
-  (`StatMech.Percolation.pc_two_lt_one_via_fk`), which with item 1 makes item 3 non-vacuous
-  there.
+Item 2 is stated for the densities admitting a finite $S \ni 0$ with $\varphi_p(S) < 1$, not on $[0, p_c)$; passing to every $p < p_c$ uses the [monotonicity of $\varphi_p(S)$](phi-mono.md), which gives [sharpness stated with $p_c$](sharp-phase-transition-pc.md). Item 3 is informative only when $\tilde p_c < 1$: for $d = 1$, $\tilde p_c = p_c = 1$ and item 3 is vacuous, while for $d \ge 2$ one has [$p_c(d) < 1$](../../phase-transition/bounds-on-the-critical-probability/pc-lt-one-of-two-le-via-fk.md).
+
+## Sources
+
+- Hugo Duminil-Copin and Vincent Tassion, *A new proof of the sharpness of the phase transition for Bernoulli percolation and the Ising model*, Comm. Math. Phys. 343 (2016), no. 2, 725–745, DOI 10.1007/s00220-015-2480-z.
+- Michael Aizenman and David J. Barsky, *Sharpness of the phase transition in percolation models*, Comm. Math. Phys. 108
+  (1987), no. 3, 489–526, DOI 10.1007/bf01212322.
+- Mikhail V. Menshikov, *Coincidence of critical points in percolation problems*, Soviet Math. Dokl. 33 (1986), 856–859.

@@ -1,7 +1,7 @@
-# System F embedding agreement with the single term/relation model
+# Agreement of the System F embedding with closings and relational interpretation
 
-- [Translated System F terms have the same closing instances](close-from-system-f.md)
-- [Canonical embedding preserves closing instances](close-embed.md)
-- [Canonical embedding preserves model erasure](erase-model-embed.md)
+- [Translated System F terms have the same closings](close-from-system-f.md)
+- [Embedding preserves closings](close-embed.md)
+- [Embedding preserves model erasure](erase-model-embed.md)
 - [Type translation preserves the relational interpretation](interpret-from-system-f.md)
-- [Relational interpretation of canonically embedded types](interpret-embed.md)
+- [Relational interpretation of embedded types](interpret-embed.md)

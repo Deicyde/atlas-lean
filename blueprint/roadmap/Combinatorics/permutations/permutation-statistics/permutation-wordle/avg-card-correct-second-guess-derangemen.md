@@ -9,4 +9,4 @@ number of derangements of $\{0, \dots, n-1\}$, equals $n/(n-1)$.
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Proposition 4 (`jis-2026-26.1.7-prop-4`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Proposition 4.

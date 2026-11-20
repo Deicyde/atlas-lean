@@ -7,4 +7,4 @@ $a_1, \dots, a_t$, then $a(n) = a_1 2^{a_1} + \dots + a_t 2^{a_t}$; in particula
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2 and Theorem 4; the first values `0, 0, 2, 2, 8, 8, 10, 10, 24, ...` are displayed there.
+- Tamás Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2 and the discussion after it, where the first values $0, 0, 2, 2, 8, 8, 10, 10, 24, \dots$ are listed.

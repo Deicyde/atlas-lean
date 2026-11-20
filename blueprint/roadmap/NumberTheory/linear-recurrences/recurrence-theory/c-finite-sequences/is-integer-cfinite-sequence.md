@@ -6,4 +6,4 @@ $s(n + p) = \sum_{i=0}^{p-1} c_i \, s(n + i)$ for every $n \ge q$.
 
 ## Sources
 
-- JIS VOL26/Fischer–Kotek–Makowsky, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Makowsky/makowsky16.tex>, lines 249–259.
+- Yuval Filmus, Eldar Fischer, Johann A. Makowsky, and Vsevolod Rakita, *MC-Finiteness of Restricted Set Partition Functions*, Journal of Integer Sequences 26 (2023), Article 23.7.4, Section 2 (definition of C-finite sequences), <https://cs.uwaterloo.ca/journals/JIS/VOL26/Makowsky/makowsky16.tex>.

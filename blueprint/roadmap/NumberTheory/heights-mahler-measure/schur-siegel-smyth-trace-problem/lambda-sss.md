@@ -11,6 +11,10 @@ $\mathbb{R}$, $\lambda_{\mathrm{SSS}} = 0$ if this set is empty or unbounded abo
 The set is closed downwards and contains its supremum when it is nonempty and bounded above, so
 $\lambda_{\mathrm{SSS}}$ is then the greatest such $\lambda$. The source says "least real number",
 but this is a typo, as the set has no lower bound. The greatest real number agrees with Orloski,
-Sardari and Smith, "New lower bounds for the Schur-Siegel-Smyth trace problem"
-(arXiv:2401.03252), where $\lambda_{\mathrm{SSS}}$ is the limit inferior of
+Sardari and Smith, where $\lambda_{\mathrm{SSS}}$ is the limit inferior of
 $\operatorname{tr}(\alpha)/\deg(\alpha)$ over all totally positive algebraic integers $\alpha$.
+
+## Sources
+
+- A. Smith, *Algebraic integers with conjugates in a prescribed distribution*, Annals of Math. 200 (1) (2024).
+- Bryce Joseph Orloski, Naser Talebizadeh Sardari and Alexander Smith, "New Lower Bounds for the Schur–Siegel–Smyth Trace Problem", Math. Comp. (2024), arXiv:2401.03252.

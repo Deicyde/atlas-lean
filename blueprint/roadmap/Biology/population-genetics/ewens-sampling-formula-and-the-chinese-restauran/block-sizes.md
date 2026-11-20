@@ -1,4 +1,3 @@
 # Allelic partition of a set partition
 
-The allelic partition of a set partition of `Fin n`: the multiset of its block sizes, a
-partition of the integer `n`.
+For a set partition $\pi$ of $\{0, \dots, n-1\}$, the multiset of the sizes of its blocks, an integer partition of $n$.

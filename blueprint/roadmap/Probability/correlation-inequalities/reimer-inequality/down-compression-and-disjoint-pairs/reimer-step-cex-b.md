@@ -1,4 +1,3 @@
 # Second family in the box-compression counterexample
 
-The family `{∅, {0, 1}}` on `Fin 2`, the second family of the counterexample
-`StatMech.reimerStep_box_compression_false`.
+The family $\{\emptyset, \{0, 1\}\}$ of subsets of $\{0, 1\}$, the second family of the [box-compression counterexample](reimer-step-box-compression-false.md).

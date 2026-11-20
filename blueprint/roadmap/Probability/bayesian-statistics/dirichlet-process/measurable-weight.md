@@ -1,3 +1,3 @@
 # Measurability of the random stick-breaking weights
 
-The pieces are measurable.
+For a [stick-breaking process](stick-breaking-process.md), every random weight $\pi_k$ is measurable.

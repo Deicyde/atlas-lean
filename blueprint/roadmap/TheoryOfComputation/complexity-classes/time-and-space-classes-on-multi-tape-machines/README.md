@@ -10,7 +10,7 @@
 ## Deciding languages
 
 - [A multi-tape machine deciding a language](decides.md)
-- [Decidability within time and space bounds, unfolded](decidable-in-time-and-space-iff.md)
+- [Decidability within time and space bounds in terms of machines](decidable-in-time-and-space-iff.md)
 
 ## Deterministic time and space classes
 

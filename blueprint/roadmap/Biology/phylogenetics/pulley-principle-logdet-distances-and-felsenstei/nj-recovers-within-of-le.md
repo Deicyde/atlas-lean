@@ -1,7 +1,7 @@
 # Atteson's radius for the scaled tree metric
 
-Let `d` be the path-length metric of a
-binary phylogenetic `X`-tree `(G, ι)` with positive edge lengths `w` whose internal edges (no
-taxon at either end) have length at least `m`. For `μ > 0`, neighbor joining recovers the tree
-within radius `μ m / 2` of the scaled metric `μ d`. This is `njRun_splits_of_abs_sub_lt`
-(Atteson 1999) for the edge lengths `μ w`.
+Let $(G, \iota)$ be a [binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md) with edge lengths $w_e > 0$ and path metric $d$, let $\mu > 0$, and let $m \le w(ab)$ for every edge $ab$ with neither endpoint a taxon vertex. Then neighbor joining [recovers the tree within radius](njrecovers-within.md) $\mu m / 2$ of $\mu d$ (Atteson 1999).
+
+## Sources
+
+- K. Atteson, *The performance of neighbor-joining methods of phylogenetic reconstruction*, Algorithmica 25 (1999), 251–278.

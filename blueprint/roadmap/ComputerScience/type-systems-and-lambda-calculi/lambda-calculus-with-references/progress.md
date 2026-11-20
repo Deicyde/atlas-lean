@@ -6,4 +6,4 @@ is a value, or the configuration $(t, \mu)$ takes an evaluation step to some $(t
 
 ## Sources
 
-- TAPL Theorem 13.5.7.
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Theorem 13.5.7.

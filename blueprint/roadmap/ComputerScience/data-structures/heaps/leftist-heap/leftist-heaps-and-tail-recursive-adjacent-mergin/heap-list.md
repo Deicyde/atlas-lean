@@ -1,3 +1,4 @@
 # Min-heap ordering of every heap in a list
 
-Every heap in the list satisfies the min-heap ordering predicate.
+Over a type with a relation $\le$, a list of leftist heaps is min-heap ordered when every heap in
+the list has the min-heap property.

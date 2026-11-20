@@ -5,4 +5,4 @@ position $p$ of Slow$A$-Nim on $n$ stacks, the empty sequence of moves is legal 
 
 ## Sources
 
-- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 1 and its proof.
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow$A$-Nim*, INTEGERS 26 (2026), Article G3, Lemma 1 and its proof.

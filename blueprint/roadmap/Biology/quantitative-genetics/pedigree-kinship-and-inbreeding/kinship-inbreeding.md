@@ -1,4 +1,3 @@
 # Inbreeding coefficient by Malécot's recursion
 
-The inbreeding coefficient by Malécot's recursion: `F i = φ f m` for the parents `f, m` of
-`i`, and `F i = 0` for a founder.
+In a [pedigree](pedigree.md), the tabular inbreeding coefficient of $i$ is $0$ if $i$ is a founder and $\varphi_{f(i) m(i)}$ otherwise, where $\varphi$ is the [tabular kinship](kinship.md).

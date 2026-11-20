@@ -1,5 +1,5 @@
 # Structural congruence preserves conversion ranked typing
 
-Every canonical Cong constructor preserves the whole priority refinement
-at exactly the same context and ambient depth. Unsupported sum/replication
-constructors are impossible by the invariant DERIVED from refinement typing.
+Let $p \equiv q$ be structurally congruent processes. Then for every natural number $n$ and
+ownership context $\Delta$, $\Delta \vdash^{\mathrm{rk}\simeq}_n p$ if and only if $\Delta
+\vdash^{\mathrm{rk}\simeq}_n q$.

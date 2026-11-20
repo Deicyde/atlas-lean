@@ -14,4 +14,10 @@ and $W^u$ are $C^1$ submanifolds tangent to the stable and unstable subspaces of
 
 ## Sources
 
-- J. Hadamard, 'Sur l'itération et les solutions asymptotiques des équations différentielles', Bull. Soc. Math. France 29 (1901); O. Perron, 'Über Stabilität und asymptotisches Verhalten der Integrale von Differentialgleichungssystemen', Math. Z. 29 (1929) 129–160. Listed as §104 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `stable_unstable_manifolds` of the lean-eval benchmark.
+- Jacques Hadamard, *Sur l'itération et les solutions asymptotiques des équations différentielles*, Bull. Soc.
+  Math. France 29 (1901).
+- Oskar Perron, *Über Stabilität und asymptotisches Verhalten der Integrale von Differentialgleichungssystemen*,
+  Math. Z. 29 (1929), 129–160, DOI 10.1007/bf01180524.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §104 (Linearization), which notes the stable and
+  unstable manifolds through a hyperbolic fixed point, <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `stable_unstable_manifolds` of the lean-eval benchmark.

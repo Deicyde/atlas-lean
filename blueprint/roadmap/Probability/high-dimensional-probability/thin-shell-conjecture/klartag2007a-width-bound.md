@@ -8,4 +8,4 @@ This is Klartag's first bound in the weaker form tabulated by the optimization c
 
 ## Sources
 
-- Klartag, Invent. Math. 168 (2007), 91--131; catalogue `constants/20a.md`.
+- B. Klartag, *A central limit theorem for convex sets*, Invent. Math. 168 (2007), 91–131; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

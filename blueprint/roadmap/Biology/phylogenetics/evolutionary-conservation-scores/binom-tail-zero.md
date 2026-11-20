@@ -1,3 +1,3 @@
 # Binomial upper tail at zero equals one
 
-`P(X ≥ 0) = 1`, for every real `p` (the binomial theorem).
+For every natural number $n$ and every real $p$, the [binomial upper tail](binom-tail.md) satisfies $T_{n,0}(p) = 1$.

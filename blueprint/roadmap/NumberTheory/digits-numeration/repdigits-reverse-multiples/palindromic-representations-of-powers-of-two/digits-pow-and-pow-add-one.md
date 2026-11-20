@@ -9,4 +9,4 @@ false for $z \ge 3$, for example $3^2 - 1 = 8 = (2, 2)_3$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 7, parts (I) and (II).
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 7, parts (I) and (II).

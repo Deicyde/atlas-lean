@@ -9,7 +9,7 @@ pairs is
 
 $$\frac{L_n^2}{n!} \binom{n}{k} \sum_{i=0}^{n-k} \frac{(-1)^i (n-k)!}{i!}.$$
 
-When $k > n$ the binomial coefficient vanishes and both sides are $0$.
+When $k > n$ the binomial coefficient vanishes and both sides are $0$ (with $n - k$ read as $0$).
 
 ## Sources
 

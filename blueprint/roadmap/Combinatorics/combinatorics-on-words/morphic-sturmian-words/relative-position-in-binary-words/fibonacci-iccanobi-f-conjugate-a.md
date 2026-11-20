@@ -9,4 +9,4 @@ $ba\,\varrho_F^{2n-1}(a) = (\varrho_F')^{2n-1}(a)\,ab$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 51 (`jis-2025-25.1.5-prop-51`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 51 (`jis-2025-25.1.5-prop-51`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

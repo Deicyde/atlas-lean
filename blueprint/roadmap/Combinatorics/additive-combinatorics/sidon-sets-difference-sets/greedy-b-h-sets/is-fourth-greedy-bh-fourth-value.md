@@ -6,4 +6,4 @@ $(h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 ## Sources
 
-- Melvyn B. Nathanson and Kevin O'Bryant, "The Fourth Positive Element in the Greedy `B_h`-Set", Theorem 1.
+- Melvyn B. Nathanson and Kevin O'Bryant, "The Fourth Positive Element in the Greedy $B_h$-Set", arXiv:2311.14021 (2023), Theorem 1.

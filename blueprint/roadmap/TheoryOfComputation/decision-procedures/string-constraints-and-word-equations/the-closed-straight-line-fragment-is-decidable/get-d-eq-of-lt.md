@@ -1,3 +1,4 @@
 # In-bounds lookup with default equals indexed access
 
-Lookup with a proof of the bound is the `getElem` value.
+Let $l$ be a list of words over an alphabet $\alpha$ and $n < |l|$. The $n$-th entry of $l$ with default value
+the empty word equals the $n$-th entry of $l$.

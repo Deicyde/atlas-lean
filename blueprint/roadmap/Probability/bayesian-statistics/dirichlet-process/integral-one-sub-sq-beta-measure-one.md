@@ -1,3 +1,5 @@
 # Second moment of $1 - X$ under $\mathrm{Beta}(1, \alpha)$
 
-`E[(1 - x)²] = α / (α + 2)` under `Beta(1, α)`.
+For $\alpha > 0$, if $X \sim \mathrm{Beta}(1, \alpha)$ then
+
+$$\mathbb{E}\big[(1 - X)^2\big] = \frac{\alpha}{\alpha + 2}.$$

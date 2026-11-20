@@ -1,4 +1,7 @@
 # The multiplicity-weighted total is time-invariant
 
-`∑_m m E_m = μ c₁`, summing over
-all multiplicities up to a bound `B ≥ max(1, max_i desc i)`.
+Let a [gain history](gain-history.md) have descendant counts $\delta_i \le B$ for a natural number $B \ge 1$. Then for all real $\mu, t$,
+
+$$\sum_{m=0}^{B} m\, E_m = \mu c_1,$$
+
+where $E_m$ is the [expected count](expected-count.md) and $c_1$ the [final copy number](final-copies.md).

@@ -1,4 +1,3 @@
 # FK edge parameter of an Ising inverse temperature
 
-The FK edge parameter `p = 1 - e^{-2β}` of the Ising model at inverse temperature `β`. See also
-`betaToP` for general `q` (`betaToP_two_eq_pOfBeta`).
+For $\beta \in \mathbb{R}$, the edge parameter corresponding to the Ising inverse temperature $\beta$ is $p(\beta) = 1 - e^{-2\beta}$.

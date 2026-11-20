@@ -6,4 +6,4 @@ that $n = 0$ or at most $r$ distinct primes divide $n$.
 
 ## Sources
 
-- EP-851 [Erdős Problems].
+- T. F. Bloom, Erdős Problem #851, https://www.erdosproblems.com/851.

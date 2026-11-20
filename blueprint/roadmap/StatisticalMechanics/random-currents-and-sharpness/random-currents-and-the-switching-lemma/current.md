@@ -1,3 +1,3 @@
 # Current: a multiplicity in $\mathbb{N}$ for each unordered pair
 
-A current on the edges of `V`: a multiplicity `n_e ∈ ℕ` for every unordered pair `e`.
+For a set $V$, a current assigns a multiplicity $n_e \in \mathbb{N}$ to every unordered pair $e$ of elements of $V$.

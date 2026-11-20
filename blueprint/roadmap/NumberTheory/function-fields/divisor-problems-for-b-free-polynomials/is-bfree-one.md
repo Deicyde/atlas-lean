@@ -6,4 +6,4 @@ Then $1$ is $B_\kappa$-free: $P^{\kappa(P)}$ does not divide $1$ for any monic i
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `B_κ`-free polynomials.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of $B_\kappa$-free polynomials.

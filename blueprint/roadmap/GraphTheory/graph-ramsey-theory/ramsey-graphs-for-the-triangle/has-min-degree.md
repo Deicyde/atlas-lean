@@ -6,4 +6,4 @@ exactly $d$ neighbours; in particular $n \ge 1$.
 
 ## Sources
 
-- [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory.
+- AIM Problem List *Graph Ramsey Theory*, Section 1, item 8 *Ramsey minimal graphs*, Conjecture 1.16 (Tibor Szabó; Fox, Grinshpun, Liebenau, Person and Szabó), which includes the conjecture $s_r(3) = \Theta(r^2 \log r)$, http://www.aimpl.org/graphramsey/1/.

@@ -7,4 +7,4 @@ $\|x\| \le 1$, form a dense subset of $E^*$ in the norm topology.
 
 ## Sources
 
-- E. Bishop and R. R. Phelps, Bull. Amer. Math. Soc. 67 (1961) 97-98 and Pacific J. Math. 1961; Bollobas quantitative version; Lean states `RCLike` Banach case as density of attaining functionals.
+- E. Bishop and R. R. Phelps, A proof that every Banach space is subreflexive, Bull. Amer. Math. Soc. 67 (1961), 97–98, and The support functionals of a convex set, Proc. Sympos. Pure Math. 7 (1963), 27–35; B. Bollobás, An extension to the theorem of Bishop and Phelps, Bull. London Math. Soc. 2 (1970), 181–182 (quantitative version). The statement here is the case of a Banach space over $\mathbb{R}$ or $\mathbb{C}$, as the density of the norm-attaining functionals.

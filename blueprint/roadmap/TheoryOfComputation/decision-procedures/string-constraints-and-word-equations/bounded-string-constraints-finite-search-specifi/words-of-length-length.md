@@ -1,3 +1,4 @@
 # Size of the exact-length word enumeration
 
-Counting the exact-length enumeration: `|Σ| ^ n` words.
+Let $\alpha$ be a finite alphabet. For every $n \in \mathbb{N}$, the enumeration of words over $\alpha$ of length $n$ has exactly
+$|\alpha|^n$ entries.

@@ -14,4 +14,4 @@ the identity reads $T_\beta(m,n) = S_\beta(m+n)$, after the shift $i = m + k$, $
 
 ## Sources
 
-- Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn, and Helmut Prodinger, "Some Binomial Sums Involving Absolute Values," Journal of Integer Sequences 19 (2016), Article 16.3.7, Theorem, lines 278–283 (with `S_β` defined at lines 245–247 and `T_β` at 271–274), https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex
+- Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn and Helmut Prodinger, *Some Binomial Sums Involving Absolute Values*, J. Integer Seq. 19 (2016), Article 16.3.7, Theorem 1, with $S_\beta$ defined in equation (4) and $T_\beta$ in equation (7), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex>.

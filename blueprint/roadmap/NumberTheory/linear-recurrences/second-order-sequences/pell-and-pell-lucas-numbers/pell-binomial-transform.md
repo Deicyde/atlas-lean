@@ -13,4 +13,4 @@ Both sides give $0, 1, 4, 14, 48, 164, \dots$ (OEIS A007070) for $n = 0, \dots, 
 
 ## Sources
 
-- Greg Dresden and Yike Li, "Periodic Weighted Sums of Binomial Coefficients," Journal of Integer Sequences 26 (2023), Article 23.8.7, Corollary (equation e.12), lines 369–379, https://cs.uwaterloo.ca/journals/JIS/VOL26/Dresden/dresden26.tex
+- Greg Dresden and Yike Li, "Periodic Weighted Sums of Binomial Coefficients," Journal of Integer Sequences 26 (2023), Article 23.8.7, Corollary 5, equation (12), <https://cs.uwaterloo.ca/journals/JIS/VOL26/Dresden/dresden26.html>

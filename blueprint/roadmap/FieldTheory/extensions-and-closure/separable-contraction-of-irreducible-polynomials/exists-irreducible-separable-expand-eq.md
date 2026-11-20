@@ -7,4 +7,4 @@ that $f(x) = g(x^{p^n})$, where $0^0 = 1$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 4.5 (existence).
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 4, Corollary 4.5 (existence), https://math.mit.edu/classes/18.785/2021fa/LectureNotes4.pdf.

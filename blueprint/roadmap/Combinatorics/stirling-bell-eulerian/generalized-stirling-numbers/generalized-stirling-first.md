@@ -11,4 +11,4 @@ which is ${n \brack m} = 0$, so ${n \brack m}_x = 0$.
 
 ## Sources
 
-- Carlitz and Broder, as recorded in Cereceda, arXiv:2401.13696v4, lines 132-142; Axioms 14 (2025), 746.
+- L. Carlitz and A. Z. Broder, as recorded in José L. Cereceda, *Formulas involving Cauchy polynomials, Bernoulli polynomials, and generalized Stirling numbers of both kinds*, Axioms 14 (2025), 746, arXiv:2401.13696v4, equation (4).

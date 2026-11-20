@@ -6,4 +6,4 @@ polynomial time.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 4.14 (NL ⊆ P); C. H. Papadimitriou, Computational Complexity, 1994.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 4 (NL ⊆ P); C. H. Papadimitriou, *Computational Complexity*, Addison-Wesley, 1994.

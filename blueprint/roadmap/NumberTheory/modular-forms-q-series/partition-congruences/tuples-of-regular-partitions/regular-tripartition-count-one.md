@@ -6,4 +6,4 @@ one of the three components.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86 (definition of `T_ℓ(n)`).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Section 1 (definition of $T_\ell(n)$).

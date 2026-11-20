@@ -10,8 +10,10 @@ series with coefficient $q^m (-z)_m / m!$ at $u^m$ and $(x)_m = x(x+1) \cdots (x
 rising factorial. For a natural number $n$, $B_z(n)$ is the coefficient of $u^n$ in
 $B_{1,S_h}(u, z)$, that is,
 
-$$B_z(n) = \sum_{a=0}^{n} \Bigl(\sum_{f \in S_h,\ \deg f = a} z^{\omega_1(f)}\Bigr)
-\frac{q^{n-a} (-z)_{n-a}}{(n-a)!}.$$
+$$
+B_z(n) = \sum_{a=0}^{n} \Bigl(\sum_{f \in S_h,\ \deg f = a} z^{\omega_1(f)}\Bigr)
+\frac{q^{n-a} (-z)_{n-a}}{(n-a)!}.
+$$
 
 ## Sources
 

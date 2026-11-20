@@ -13,4 +13,4 @@ $$\frac{d^s}{du^s} F(x,u) = \left(A(x,u) \exp((x-1)u)\right)^s A(x,u) \exp(-u).$
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 57 (`jis-2025-25.5.7-thm-57`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 57.

@@ -7,4 +7,4 @@ $\mathrm{EQ}_{\mathrm{DFA}}$.
 
 ## Sources
 
-- Sipser, *Introduction to the Theory of Computation*, Theorem 4.5.
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Theorem 4.5.

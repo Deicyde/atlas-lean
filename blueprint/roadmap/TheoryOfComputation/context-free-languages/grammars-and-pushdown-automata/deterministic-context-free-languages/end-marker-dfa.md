@@ -1,9 +1,10 @@
 # DFA recognizing end-marker encodings
 
-The DFA for the encodings: state `inl false` while reading left
-letters, `inl true` after the end marker (the accepting state), and
-`inr ()` dead once anything follows the end marker.
+Let $T$ be an alphabet and $\dashv$ an end-marker letter not in $T$. The end-marker automaton is the
+deterministic finite automaton over $T \cup \{\dashv\}$ with three states, reading, done and dead, start state
+reading and accepting state done, and transitions: from reading, a letter of $T$ leads to reading and $\dashv$
+leads to done; from done and from dead, every letter leads to dead.
 
 ## Sources
 
-- Hopcroft, Motwani, and Ullman, Introduction to Automata Theory, Languages, and Computation, 3rd ed., Section 10.3.
+- J. E. Hopcroft, R. Motwani and J. D. Ullman, *Introduction to Automata Theory, Languages, and Computation*, 3rd ed., Addison-Wesley, 2006, Section 6.4.

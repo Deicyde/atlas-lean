@@ -9,9 +9,9 @@ number different from all of $p_a(1), \dots, p_a(n), p_b(1), \dots, p_b(n)$. If 
 $p_a(n+1) = k_{n+1}$ and $p_b(n+1) = k_{n+1} + r(n+1)$; if $r(n+1) < 0$ then
 $p_a(n+1) = k_{n+1} - r(n+1)$ and $p_b(n+1) = k_{n+1}$.
 
-The paper states this as an algorithm; here its output is stated as equalities with the true
-positions. Since $r(1) \ne 0$, the paper's "otherwise" in the first step is the case $r(1) < 0$.
+The source phrases this as an algorithm that recovers $p_a$ and $p_b$ from $r$. Since
+$r(1) \ne 0$, the source's "otherwise" in the first step is the case $r(1) < 0$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 6 (`jis-2025-25.1.5-lem-6`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 6 (`jis-2025-25.1.5-lem-6`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

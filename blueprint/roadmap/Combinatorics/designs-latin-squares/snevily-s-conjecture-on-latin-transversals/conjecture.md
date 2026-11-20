@@ -10,4 +10,4 @@ conversely, enumerate $A$ and transport the enumeration along $f$.
 
 ## Sources
 
-- OPG-655.
+- Open Problem Garden, "Snevily's conjecture", http://www.openproblemgarden.org/op/snevilys_conjecture.

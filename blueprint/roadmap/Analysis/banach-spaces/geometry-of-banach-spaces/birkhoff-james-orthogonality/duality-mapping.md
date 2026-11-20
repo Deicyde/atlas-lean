@@ -1,4 +1,3 @@
 # Duality mapping of a normed space
 
-The **duality mapping** (duality set) at `x`: the functionals `f` with
-`f x = ‖x‖ ^ 2` and `‖f‖ = ‖x‖`. At `x = 0` this is the singleton `{0}`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a normed space over $\mathbb{K}$. The **duality mapping** at $x \in E$ is the set $J(x)$ of bounded linear functionals $f$ on $E$ with $f(x) = \|x\|^2$ and $\|f\| = \|x\|$. At $x = 0$ it is $\{0\}$.

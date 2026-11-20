@@ -1,6 +1,7 @@
 # Kinship coefficient by Malécot's recursion
 
-The kinship coefficient by Malécot's recursion, computed in the order of the numbering
-(the tabular method): for `i < j`, `φ i j = (φ i f + φ i m) / 2` with `f, m` the parents of `j`
-and `φ i j = 0` if `j` is a founder; `φ i i = (1 + φ f m) / 2` with `f, m` the parents of `i`
-and `φ i i = 1 / 2` for a founder; symmetric for `j < i`.
+In a [pedigree](pedigree.md) with parents $(f(i), m(i))$, the tabular kinship $\varphi_{ij}$ is defined by recursion on $i + j$:
+
+- if $j < i$: $\varphi_{ij} = 0$ when $i$ is a founder, and $\varphi_{ij} = \frac12(\varphi_{f(i) j} + \varphi_{m(i) j})$ otherwise;
+- if $i < j$: $\varphi_{ij} = 0$ when $j$ is a founder, and $\varphi_{ij} = \frac12(\varphi_{i f(j)} + \varphi_{i m(j)})$ otherwise;
+- if $i = j$: $\varphi_{ii} = \frac12$ when $i$ is a founder, and $\varphi_{ii} = \frac12(1 + \varphi_{f(i) m(i)})$ otherwise.

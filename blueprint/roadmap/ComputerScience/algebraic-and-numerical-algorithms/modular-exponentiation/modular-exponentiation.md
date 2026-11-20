@@ -5,7 +5,8 @@ base $a$, exponent $b$ and modulus $n$ is the recursive procedure that returns $
 $b > 0$ is even, it computes the result $d$ for exponent $b/2$ (same base and modulus) and returns
 $d \cdot d \bmod n$. If $b$ is odd, it computes the result $d$ for exponent $b - 1$ and returns
 $a \cdot d \bmod n$. Each even or odd step performs one multiplication, and the cost of the
-procedure is the total number of multiplications performed.
+procedure is the total number of multiplications performed. Here $x \bmod 0 = x$, and the base case
+returns $1$ without reducing it modulo $n$.
 
 ## Sources
 

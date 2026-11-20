@@ -1,3 +1,3 @@
 # Michaelis–Menten rate stays below its maximum
 
-The rate law is below its maximum: `v(s) < V_max` for `s ≥ 0`, `V_max, K_M > 0`.
+Let $V_{\max} > 0$ and $K_M > 0$. For every $s \ge 0$, the [Michaelis–Menten rate law](mm-rate.md) $v(s) = V_{\max} s/(K_M + s)$ satisfies $v(s) < V_{\max}$.

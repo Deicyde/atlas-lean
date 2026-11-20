@@ -12,4 +12,4 @@ determinant theorem.
 
 ## Sources
 
-- Paul Barry, "Eulerian Polynomials as Moments, via Exponential Riordan Arrays," Journal of Integer Sequences 14 (2011), Article 11.9.5, corollary lines 240–243, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry7/barry172.tex>. Eulerian closed form `W_{n,k}` at lines 93–94.
+- Paul Barry, "Eulerian Polynomials as Moments, via Exponential Riordan Arrays," Journal of Integer Sequences 14 (2011), Article 11.9.5, Corollary 6, with the closed form of the Eulerian numbers $W_{n,k}$ from Section 1, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry7/barry172.pdf>.

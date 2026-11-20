@@ -6,8 +6,8 @@ $M(r, s) = \frac{br^2 + bs^2 - apr^2 + 2ars}{s^2 - prs - r^2}$. Then for all int
 that are not both zero, $M(s - pr, r) + (p^2 + 2)M(r, s) + M(s, r + ps) = 0$ and
 $M(r, s)^2 + (p^2 + 2)M(r, s)M(s, r + ps) + M(s, r + ps)^2 = abp^3 + (a^2 - b^2)p^2$.
 
-The source assumes $r \ne 0$, $s \ne 0$ and $r + ps \ne 0$; here only $(r, s) \ne (0, 0)$ is
-assumed. Since $p \ne 0$, the three denominators equal $\pm(s^2 - prs - r^2)$, which is nonzero.
+The source assumes $r \ne 0$, $s \ne 0$ and $r + ps \ne 0$; the identities above assume only
+$(r, s) \ne (0, 0)$. Since $p \ne 0$, the three denominators equal $\pm(s^2 - prs - r^2)$, which is nonzero.
 
 ## Sources
 

@@ -9,7 +9,7 @@
 - [Bayes' rule for discrete observations](posterior-eq-bayes-posterior.md)
 - [The evidence as a sum over hypotheses](comp-apply-singleton-eq-tsum.md)
 - [Bayes' rule for countably many hypotheses](bayes-posterior-apply-singleton.md)
-- [Bayes' rule for Mathlib's posterior kernel with countably many hypotheses and observations](posterior-apply-singleton.md)
+- [Bayes' rule for the posterior kernel with countably many hypotheses and observations](posterior-apply-singleton.md)
 - [MAP hypotheses maximize prior times likelihood](is-map-iff.md)
 - [Under a uniform prior, MAP is maximum likelihood](is-map-iff-is-mle-of-uniform.md)
 - [MAP hypotheses through the posterior kernel](is-map-iff-posterior.md)

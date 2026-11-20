@@ -7,4 +7,4 @@ $K^{(0)} = K$) is an arithmetical compact set of module $\mu$ and ratio $\rho$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Proposition 7.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Proposition 7.

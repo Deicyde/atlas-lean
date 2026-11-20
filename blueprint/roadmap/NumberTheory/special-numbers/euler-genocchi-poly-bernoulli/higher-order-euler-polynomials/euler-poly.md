@@ -6,4 +6,4 @@ $E_n(x) = \frac{2}{n + 1} \left(B_{n+1}(x) - 2^{n+1} B_{n+1}(x/2)\right)$.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (Euler polynomials).
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Section 1 (Euler polynomials).

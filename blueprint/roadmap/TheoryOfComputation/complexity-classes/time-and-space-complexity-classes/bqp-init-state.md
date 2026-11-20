@@ -10,4 +10,4 @@ and $0$ elsewhere.
 
 ## Sources
 
-- M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4 (quantum circuits); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 10.1.
+- M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4 (quantum circuits); S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 10.1.

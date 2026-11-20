@@ -10,4 +10,4 @@ $$
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), printed p. 28 / PDF p. 38.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), p. 28.

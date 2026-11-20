@@ -1,4 +1,3 @@
 # Dimension of the f-statistic space is n choose 2
 
-The f-statistics of `n` populations span a space of dimension `n choose 2`. (A linear order
-on the populations, used to index the `f2` basis, is chosen in the proof.)
+Let $P$ be a finite set of $n$ populations. Then the [f-statistic space](f-space.md) $V_F$ has dimension $\binom{n}{2}$.

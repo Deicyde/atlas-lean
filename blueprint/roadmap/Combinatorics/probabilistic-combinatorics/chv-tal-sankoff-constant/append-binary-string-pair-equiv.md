@@ -9,4 +9,4 @@ string of length $m + n$ into its first $m$ and its last $n$ symbols.
 
 ## Sources
 
-- uniform independent binary-string model; concatenation identifies two independent pairs with a pair of the combined length.
+- Václav Chvátal and David Sankoff, *Longest common subsequences of two random sequences*, J. Appl. Probab. 12(2) (1975), 306–315.

@@ -7,4 +7,4 @@ when the family $(\log p \cdot p^{-s})_p$ is not summable.
 
 ## Sources
 
-- ATLAS NumberTheoryI Lemma 16.10.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 16, Lemma 16.10, https://math.mit.edu/classes/18.785/2021fa/LectureNotes16.pdf.

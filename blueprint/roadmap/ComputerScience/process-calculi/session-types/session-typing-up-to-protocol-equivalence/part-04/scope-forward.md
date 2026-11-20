@@ -1,4 +1,5 @@
 # Forward scope extrusion preserves conversion typing
 
-The forward canonical scope rule preserves the exact external context
-and ambient depth, with the dual pair derived from restriction typing.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$, $q$ processes. If $\Delta
+\vdash^{\simeq}_n (\nu\,p) \mid q$, then $\Delta \vdash^{\simeq}_n \nu\,(p \mid \uparrow_0 q)$,
+where $\uparrow_0 q$ adds one to every free variable index of $q$.

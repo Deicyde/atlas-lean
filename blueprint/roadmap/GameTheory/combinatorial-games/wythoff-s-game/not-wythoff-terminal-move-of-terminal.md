@@ -6,4 +6,4 @@ move from a position $(x, y)$ with $x + y \le \ell$ to any position.
 
 ## Sources
 
-- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, terminal positions of `K^ℓ` (Theorem 17).
+- Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, terminal positions of $K^\ell$ (Theorem 17).

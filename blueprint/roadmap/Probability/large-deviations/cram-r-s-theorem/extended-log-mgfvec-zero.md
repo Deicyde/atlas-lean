@@ -1,3 +1,4 @@
 # Extended log moment vanishes at zero
 
-The zero direction has extended log moment zero under probability.
+Let $\mu$ be a probability measure and $X : \Omega \to \mathbb{R}^d$. Then the [extended log
+moment generating function](extended-log-mgfvec.md) satisfies $\bar\Lambda(0) = 0$.

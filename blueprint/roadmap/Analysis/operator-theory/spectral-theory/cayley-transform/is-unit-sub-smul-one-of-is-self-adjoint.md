@@ -1,6 +1,5 @@
 # Self-adjoint operator minus a non-real scalar is invertible
 
-For a self-adjoint operator, `A - w • 1` is a unit whenever `w` has
-nonzero imaginary part. The proof is the norm estimate
-`‖(A - w • 1) x‖ ≥ |w.im| * ‖x‖`, read off from the imaginary part of
-`⟪(A - w • 1) x, x⟫`.
+Let $H$ be a complex Hilbert space and $A$ a bounded self-adjoint operator on $H$. If $w \in \mathbb{C}$ has $\operatorname{Im} w \ne 0$, then $A - wI$ is invertible.
+
+The proof is the estimate $\|(A - wI)x\| \ge |\operatorname{Im} w|\,\|x\|$, read off from the imaginary part of $\langle (A - wI)x, x \rangle$.

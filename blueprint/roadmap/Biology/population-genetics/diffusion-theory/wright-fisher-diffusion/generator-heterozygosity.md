@@ -1,4 +1,3 @@
 # Decay of heterozygosity
 
-`H(x) = 2x(1 - x)` is an eigenfunction of the neutral
-generator with eigenvalue `-1`, so `E[H_t] = H_0 e^{-t}` (time in units of `2N` generations).
+For every real $x$, the neutral [backward generator](generator.md) maps the heterozygosity $H(y) = 2y(1 - y)$ to $(L_0 H)(x) = -2x(1 - x)$: $H$ is an eigenfunction of $L_0$ with eigenvalue $-1$, which corresponds to the decay $\mathbb{E}[H_t] = H_0\, e^{-t}$ in time units of $2N$ generations.

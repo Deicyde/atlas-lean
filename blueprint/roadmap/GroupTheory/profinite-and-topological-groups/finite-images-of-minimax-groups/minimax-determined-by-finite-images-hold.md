@@ -1,4 +1,4 @@
-# Finite images determine minimaxity (Mann–Segal)
+# Finite images determine minimaxity
 
 Let $G$ be a finitely generated
 soluble minimax group and let $H$ be a finitely generated residually finite group with the same

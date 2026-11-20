@@ -1,4 +1,4 @@
-# Zimmerman's averaging operator
+# Averaging operator of a function on a group
 
 Let $G$ be a finite group, let $M$ be a module over the
 group algebra $\mathbb{C}[G]$ with a compatible $\mathbb{C}$-module structure, and write

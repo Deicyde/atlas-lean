@@ -1,7 +1,7 @@
 # Identity-by-descent recursion in Wright's island model
 
-One generation of Wright's island-model identity-by-descent recursion for a deme of `M`
-gene copies (`M = 2N` for `N` diploids) receiving a fraction `m` of migrants from an infinite
-pool: `F' = (1 - m) ^ 2 * (1 / M + (1 - 1 / M) * F)`. Biologically meaningful for `M ≥ 2`
-and `0 ≤ m ≤ 1`; `M = 1` is an algebraic extension (no pair of distinct copies exists), and at
-`M = 0` Lean's `1 / 0 = 0` gives a junk value.
+For a natural number $M$ and real numbers $m$ and $F$, let
+
+$$F' = (1 - m)^2 \Bigl(\frac{1}{M} + \Bigl(1 - \frac{1}{M}\Bigr) F\Bigr),$$
+
+with the convention $1/0 = 0$. For a deme of $M \ge 2$ gene copies ($M = 2N$ for $N$ diploids) receiving a fraction $0 \le m \le 1$ of migrants from an infinite pool, and for $0 \le F \le 1$, it is the identity-by-descent probability after one generation, starting from $F$.

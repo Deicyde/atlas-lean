@@ -9,9 +9,10 @@ digit string of $d_k$, and the digit of $T_\alpha^i(y)$ is entry $i \bmod |d_\el
 string of $d_\ell$; that is, the expansions of $x$ and $y$ are purely periodic with period words
 $d_k$ and $d_\ell$. Then $x < y$ if and only if $\ell < k$.
 
-The source works in Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is kept here, which
-makes $T_\alpha$ expanding, so that a digit sequence determines its point.
+The source works in Phase I; the statement above needs only $0 < \alpha \le \sqrt N - 1$, which makes $T_\alpha$
+expanding, so that a digit sequence determines its point.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4.
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4,
+  <https://math.colgate.edu/~integers/aa75/aa75.pdf>.

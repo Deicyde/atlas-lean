@@ -1,5 +1,7 @@
-# The uncentred comparison is reversed when `κ_π < 0`
+# Uncentred moment comparison is reversed for negative excess kurtosis
 
-If `κ_π < 0` and `ρ_g ≠ 0`, then
-`|E(α₁ α₂³)| ≤ |E(α₁³ α₂)|` iff `q₁² ≤ q₂²`. So the paper's uncentred criterion needs
-`κ_π > 0`; the centred criterion `abs_centredMoment_le_iff` does not.
+In a [latent causal variable model](model.md) on a probability measure $P$, suppose that the [excess kurtosis](kurtosis.md) satisfies $\kappa_\pi < 0$ and that $q_1 q_2 \ne 0$. Then
+
+$$\Bigl|\int \alpha_1 \alpha_2^3 \, dP\Bigr| \le \Bigl|\int \alpha_1^3 \alpha_2 \, dP\Bigr| \iff q_1^2 \le q_2^2,$$
+
+where $\alpha_1, \alpha_2$ are the [marginal effects](alpha1.md). So the comparison of uncentred moments orders $q_1^2$ and $q_2^2$ as expected only when $\kappa_\pi > 0$, whereas the [centred comparison](abs-centred-moment-le-iff.md) needs only $\kappa_\pi \ne 0$.

@@ -5,7 +5,7 @@
 - [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 - [Equidecomposability via piecewise-isometric bijections](finitely-equidecomposable-by-isometries-2.md)
 
-## Finitely Equidecomposable By Isometries
+## Properties of equidecomposability
 
 - [Finite equidecomposability by isometries is reflexive](refl.md)
 - [Finite equidecomposability by isometries is symmetric](symm.md)

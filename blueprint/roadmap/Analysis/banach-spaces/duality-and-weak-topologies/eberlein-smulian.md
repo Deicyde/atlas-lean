@@ -7,4 +7,4 @@ weakly to a point of the subset.
 
 ## Sources
 
-- W. F. Eberlein, Weak Compactness in Banach Spaces, PNAS 33 (1947), 51–53, DOI 10.1073/pnas.33.3.51, and V. Smulian (1947); Dunford-Schwartz, Linear Operators I, 1958, V.5-6; Lean states `RCLike` Banach case with `IsCompact ↔ IsSeqCompact` in `WeakSpace`.
+- W. F. Eberlein, Weak Compactness in Banach Spaces, PNAS 33 (1947), 51–53, DOI 10.1073/pnas.33.3.51, and V. Smulian; Dunford-Schwartz, Linear Operators I, 1958, V.5-6. The statement here is the case of a Banach space over $\mathbb{R}$ or $\mathbb{C}$: a set is weakly compact if and only if it is weakly sequentially compact.

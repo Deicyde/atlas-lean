@@ -23,6 +23,6 @@
 - [Running time of the edit distance algorithm](edit-distance-time.md)
 - [Every edit script has an inverse of the same cost](exists-inverse.md)
 - [Composition of edit scripts is subadditive in cost](exists-compose.md)
-- [Symmetry](edit-distance-comm.md)
-- [The triangle inequality](edit-distance-triangle.md)
+- [Symmetry of edit distance](edit-distance-comm.md)
+- [Triangle inequality for edit distance](edit-distance-triangle.md)
 - [Edit distance between distinct lists is positive](edit-distance-pos-iff.md)

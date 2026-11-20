@@ -1,6 +1,5 @@
 # Scratch stack of the composite machine
 
-For multi-stack Turing machines (TM2 machines)
-$M_1$ and $M_2$ with stack index types $K_1$ and $K_2$, the composite machine has stack indices
-$K_1 \oplus K_2 \oplus \mathrm{Unit}$; its scratch stack is the index given by the unique element
-of the $\mathrm{Unit}$ summand.
+For finite multi-stack Turing machines $M_1$ and $M_2$ with stack index sets $K_1$ and $K_2$, the
+stacks of the composite machine are indexed by the disjoint union $K_1 \sqcup K_2 \sqcup \{\ast\}$;
+its scratch stack is the extra index $\ast$.

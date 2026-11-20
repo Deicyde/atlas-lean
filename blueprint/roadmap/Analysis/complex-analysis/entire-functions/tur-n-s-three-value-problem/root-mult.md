@@ -12,4 +12,4 @@ with $f(z) \neq w$.
 
 ## Sources
 
-- Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.

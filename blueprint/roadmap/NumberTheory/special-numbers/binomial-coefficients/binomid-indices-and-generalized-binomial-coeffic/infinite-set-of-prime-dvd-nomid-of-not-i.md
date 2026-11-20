@@ -9,4 +9,4 @@ with $1 \le k < n$ the coefficient $[n, k]_f$ is an integer multiple of $p$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 2.
+- Jonathan Caalim and Yu-ichi Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 2.

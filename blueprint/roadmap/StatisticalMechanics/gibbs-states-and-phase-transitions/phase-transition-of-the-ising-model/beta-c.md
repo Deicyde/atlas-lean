@@ -1,4 +1,7 @@
 # Critical inverse temperature from spontaneous magnetization
 
-The critical inverse temperature `β_c(d) = inf {β ≥ 0 | m*(β) > 0}` (equal to `0` if the set is
-empty, by the convention `sInf ∅ = 0`).
+For $d \in \mathbb{N}$, the critical inverse temperature is
+
+$$\beta_c(d) = \inf\{\beta \ge 0 : m^*(\beta) > 0\},$$
+
+with $m^*$ the [spontaneous magnetization](magnetization.md); it is $0$ when the set is empty.

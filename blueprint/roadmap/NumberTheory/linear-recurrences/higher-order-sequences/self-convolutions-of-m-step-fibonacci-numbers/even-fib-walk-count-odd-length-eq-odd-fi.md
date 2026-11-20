@@ -7,4 +7,4 @@ $0 \le j \le n$. For every integer $k \ge 1$, $E_{2k-1} = O_{2k-1}$.
 
 ## Sources
 
-- Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Lemma 5.
+- Jan Sedlák and Antonín Slavík, *Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.7, Lemma 5.

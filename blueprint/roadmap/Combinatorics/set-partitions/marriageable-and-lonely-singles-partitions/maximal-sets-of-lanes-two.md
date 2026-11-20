@@ -1,8 +1,9 @@
 # Maximal sets of lanes for an intersection of size two
 
-Write $E_iX_j$ for the lane from the
-$i$-th entry to the $j$-th exit. In the standard road intersection of size $2$, in which every lane
-is allowed, the maximal sets of lanes are exactly $\{E_1X_1, E_2X_2\}$ and $\{E_1X_2, E_2X_1\}$.
+In the standard road intersection of size
+$2$, write $E_iX_j$ for the lane from the entry $E_i$ to the exit $X_j$, for $i, j \in \{0, 1\}$.
+When every lane is allowed, the maximal sets of lanes are exactly $\{E_0X_0, E_1X_1\}$ and
+$\{E_0X_1, E_1X_0\}$.
 
 ## Sources
 

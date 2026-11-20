@@ -1,3 +1,4 @@
 # Identity rekeying fixes an ownership map
 
-Identity rekeying retains the exact finite map, including end slots.
+For every ownership context $\Delta$, rekeying by the identity map gives $\Delta$:
+$\mathrm{id}_*\Delta = \Delta$.

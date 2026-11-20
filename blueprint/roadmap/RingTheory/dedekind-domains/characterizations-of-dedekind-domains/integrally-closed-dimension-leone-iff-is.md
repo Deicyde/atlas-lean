@@ -5,4 +5,4 @@ at most one if and only if $A$ is a Dedekind domain.
 
 ## Sources
 
-- ATLAS NumberTheoryI Definition 2.10, characterization form.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 2, Proposition 2.9 and Definition 2.10, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -1,4 +1,3 @@
 # Port bit of a dart for a torus edge set
 
-The bit of a dart in the port pattern of an edge set `F`: `1` if its underlying torus edge lies
-in `F`.
+For $L \in \mathbb{N}$, a finite set $F$ of unordered pairs of sites of $T_L = (\mathbb{Z}/L\mathbb{Z})^2$ and a dart $(p, \mu)$, the port bit is $1$ if $\{p, p + s(\mu)\} \in F$ and $0$ otherwise.

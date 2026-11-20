@@ -10,4 +10,4 @@ restrictions.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL19/Cilasun/cila5.tex>.
+- M. Hüsrev Cılasun, *Generalized Multiple Counting Jacobsthal Sequences of Fermat Pseudoprimes*, Journal of Integer Sequences 19 (2016), Article 16.2.3, Section 2, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Cilasun/cila5.tex>.

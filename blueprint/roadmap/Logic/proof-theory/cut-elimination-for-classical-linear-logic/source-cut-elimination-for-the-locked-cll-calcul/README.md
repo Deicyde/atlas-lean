@@ -1,4 +1,4 @@
-# Source cut elimination for the locked CLL calculus
+# Cut admissibility and cut elimination in classical linear logic
 
 - [List presentations of two summands from a supplied list](present-sum-for-cut.md)
 - [List presentation of a tail without choosing a representative](present-tail-for-cut.md)

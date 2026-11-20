@@ -1,3 +1,4 @@
 # Every name map is nonaliasing on empty ownership
 
-Empty BODY ownership imposes no linear-image nonalias obligations.
+For every service environment $\Gamma$ and map $f$ from names to names, $f$ does not alias the empty
+ownership context with $\Gamma$.

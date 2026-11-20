@@ -4,7 +4,7 @@
 
 - [Embedding of a finite additive monoid algebra into Hahn series](of-add-monoid-algebra.md)
 - [Monoid algebra embedding into Hahn series preserves coefficients](coeff-of-add-monoid-algebra.md)
-- [Monoid algebra embedding into Hahn series as a ring map](of-add-monoid-algebra-apply.md)
+- [Monoid algebra embedding into Hahn series as a semiring map](of-add-monoid-algebra-apply.md)
 - [Injectivity of the monoid algebra embedding into Hahn series](of-add-monoid-algebra-injective.md)
 
 ## Bivariate

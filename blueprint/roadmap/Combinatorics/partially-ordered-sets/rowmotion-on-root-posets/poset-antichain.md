@@ -5,4 +5,4 @@ $P$ are the finite subsets $A \subseteq P$ in which no element is below a differ
 
 ## Sources
 
-- [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
+- AIM workshop Dynamical algebraic combinatorics, pre-workshop document, Section 3.2 (the discussion of antichain cardinality under rowmotion that precedes Conjecture 3.3), http://aimath.org/pastworkshops/dac_preworkshop.pdf (archived copy: https://web.archive.org/web/2022/http://aimath.org/pastworkshops/dac_preworkshop.pdf).

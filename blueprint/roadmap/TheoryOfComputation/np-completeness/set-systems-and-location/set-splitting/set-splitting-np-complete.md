@@ -5,4 +5,4 @@ decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), SET SPLITTING (hypergraph 2-coloring); S. Lovasz, "Coverings and colorings of hypergraphs" (1973).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), SET SPLITTING (hypergraph 2-coloring); László Lovász, "Coverings and colorings of hypergraphs" (1973).

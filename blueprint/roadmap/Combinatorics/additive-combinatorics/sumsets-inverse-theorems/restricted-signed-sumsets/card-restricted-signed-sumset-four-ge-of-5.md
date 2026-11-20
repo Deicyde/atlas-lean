@@ -1,8 +1,6 @@
 # Restricted signed fourfold sumsets when no gap equals twice the least element, the first and third gaps agree, and the last two gaps do not sum to twice the least element
 
-**Restricted signed fourfold sumsets when no gap equals twice the least element, the first and
-third gaps agree, and the last two gaps do not sum to twice the least element.** Let
-$a_1 < a_2 < a_3 < a_4 < a_5$ be integers with $a_1 > 0$, let $A = \{a_1, \ldots, a_5\}$ and let
+Let $a_1 < a_2 < a_3 < a_4 < a_5$ be integers with $a_1 > 0$, let $A = \{a_1, \ldots, a_5\}$ and let
 $4^{\wedge}_{\pm} A$ be the restricted signed sumset of $A$. If none of the four gaps
 $a_{i+1} - a_i$ ($1 \le i \le 4$) equals $2a_1$, $a_4 - a_3 = a_2 - a_1$ and
 $a_5 - a_3 \ne 2a_1$, then $|4^{\wedge}_{\pm} A| \ge 26$.

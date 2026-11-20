@@ -5,4 +5,4 @@ Turing machine.
 
 ## Sources
 
-- Sipser, *Introduction to the Theory of Computation*, 3rd ed., §3.1 (Church–Turing thesis).
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, §3.3 (the Church–Turing thesis).

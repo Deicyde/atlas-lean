@@ -6,11 +6,9 @@ of real numbers,
 
 $$e^{c\sqrt{\log |A|}}\,|A| \le |A + \alpha \cdot A|,$$
 
-where $A + \alpha \cdot A = \{a + \alpha b : a, b \in A\}$.
+where $A + \alpha \cdot A = \{a + \alpha b : a, b \in A\}$. For $A = \emptyset$ the inequality reads $0 \le 0$, with the convention $\log 0 = 0$; the content is the bound for nonempty $A$.
 
-Resolved true: Conlon and Lim prove that there is an absolute constant `c > 0` such that `|A + λ·A|
-≥ e^{c √(log |A|)} |A|` for every finite `A ⊆ ℝ` and every transcendental `λ ∈ ℝ`, best possible up
-to the constant `c` by the construction of Konyagin and Łaba.
+Conlon and Lim proved this; the bound is best possible up to the value of $c$, by a construction of Konyagin and Łaba.
 
 ## Sources
 

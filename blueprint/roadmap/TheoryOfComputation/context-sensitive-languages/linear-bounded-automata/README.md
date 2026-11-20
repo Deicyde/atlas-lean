@@ -1,9 +1,12 @@
 # Linear bounded automata
 
+A single-tape Turing machine here has finitely many states and a nonempty finite alphabet $\Sigma$; each
+tape cell holds a symbol of $\Sigma$ or the blank.
+
 - [Boundary tag of a linear bounded automaton head](lbaboundary.md)
 - [Boundary tag of a head position](of-head.md)
 - [Boundary tag on a one-cell tape](of-head-eq-both.md)
-- [Boundary tag on the first cell of a longer tape](of-head-eq-left.md)
+- [Boundary tag on the first cell of a tape of length other than one](of-head-eq-left.md)
 - [Boundary tag on the last cell of a longer tape](of-head-eq-right.md)
 - [Boundary tag at an interior head position](of-head-eq-middle.md)
 - [Head move of a linear bounded automaton](lbamove.md)
@@ -42,8 +45,8 @@
 - [Length of the cell-tuple encoding](length-encode-cells-aux.md)
 - [Entries of the cell-tuple encoding](get-elem-encode-cells-aux.md)
 - [Replacing a block by a rule is a derivation step](derives-replace-list.md)
-- [Replacing a single cell is a derivation step](derives-single-cell.md)
-- [Replacing two consecutive cells is a derivation step](derives-two-cells.md)
+- [Replacing a single symbol is a derivation step](derives-single-cell.md)
+- [Replacing two consecutive symbols is a derivation step](derives-two-cells.md)
 - [Singleton-to-singleton productions are derivation steps](derives-singleton-cell.md)
 - [Derivations extend by a left context](derives-append-left.md)
 - [Derivations extend by a right context](derives-append-right.md)
@@ -75,7 +78,7 @@
 - [LBA steps preserve tape length](step-tape-length.md)
 - [LBA steps keep the head on the tape](step-head-lt.md)
 - [Reachable LBA configurations keep the tape length and the head on the tape](reachable-tape-length.md)
-- [An LBA step is a grammar derivation step on encodings](derives-encode-cfg-step.md)
+- [An LBA step is a grammar derivation on encodings](derives-encode-cfg-step.md)
 - [Head states in a configuration encoding](encode-cells-aux-state.md)
 - [Every cell of a configuration encoding is active](encode-cells-aux-active.md)
 - [Original symbols of an encoding are the input word](map-orig-encode-cells-aux.md)

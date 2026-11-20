@@ -10,4 +10,4 @@ where ${a \brace b}$ denotes the Stirling number of the second kind (and $0^0 = 
 
 ## Sources
 
-- A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259; Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 4 (exponential generating function of `{m+v \brace k+v}_v`).
+- Andrei Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259; Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 4 (exponential generating function of `{m+v \brace k+v}_v`).

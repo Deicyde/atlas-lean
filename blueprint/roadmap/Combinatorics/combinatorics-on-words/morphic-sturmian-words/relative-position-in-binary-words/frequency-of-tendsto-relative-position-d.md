@@ -10,4 +10,4 @@ $(2 + L - \sqrt{4 + L^2})/(2L)$ if $L$ is a nonzero real number.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 33 (`jis-2025-25.1.5-prop-33`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 33 (`jis-2025-25.1.5-prop-33`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

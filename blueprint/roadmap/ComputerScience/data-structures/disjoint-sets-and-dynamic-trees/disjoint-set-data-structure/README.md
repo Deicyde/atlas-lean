@@ -1,5 +1,13 @@
 # Disjoint-set data structure
 
+Union-find represents each class by a rooted tree of parent pointers. In the parent-forest
+model, a depth certificate that strictly decreases along parent pointers bounds the cost of
+find, and union links the root of one class to the root of the other. In the array-based
+structure, union links roots by rank and find compresses the path it follows. Linking by rank
+gives every root at least $2^{\mathrm{rank}}$ nodes, hence paths of at most
+$\lfloor \log_2 n \rfloor$ edges and an $O(n + m \log n)$ cost bound; with compression,
+Tarjan and van Leeuwen prove the bound $O(n + m\,\alpha(m + n, n))$ (J. ACM 31(2) (1984)).
+
 - [Parent forest with a depth certificate](forest.md)
 - [Root of a vertex in a parent forest](find.md)
 - [Path length to the root](path-length.md)
@@ -40,7 +48,7 @@
 - [Ranks after linking two nodes of an array](rank-d-link-aux.md)
 - [Ranks after linking in a union-find structure](rank-link.md)
 - [Linking two roots by rank](root-d-link-eq-ite.md)
-- [Union unfolds to two finds and a link](union-carried.md)
+- [Union is two finds followed by a link](union-carried.md)
 - [Path compression preserves ranks](rank-find.md)
 - [Ranks after a union](rank-union.md)
 - [Linking by rank with operation counts](counted-link-aux.md)
@@ -49,3 +57,30 @@
 - [Union by rank with operation counts](counted-union.md)
 - [Counted union returns the union's array](counted-union-ret.md)
 - [The FIND phases of a union make two more root tests than parent writes](counted-union-find-balance.md)
+- [Union-find structures built by make-set, find and union](reachable.md)
+- [Class size in a union-find structure](class-size.md)
+- [Rank invariant of linking by rank](rank-bounded.md)
+- [Rank lemma for linking by rank (roots)](two-pow-rank-le-class-size.md)
+- [Ranks are at most $\lfloor \log_2 n \rfloor$](rank-le-log.md)
+- [Find paths have at most $\lfloor \log_2 n \rfloor$ edges](iterate-parent-log.md)
+- [Rank bounds for union-find built by the public operations](reachable-state-rank-bounds-for-canonical-union/README.md)
+- [Set-union operations](op.md)
+- [Length of a find path](find-path-length.md)
+- [Find paths are short under union by rank](find-path-length-le-log.md)
+- [One set-union operation with its cost](step.md)
+- [A sequence of set-union operations with its total cost](run.md)
+- [Number of make-set operations](num-make-set.md)
+- [Number of finds](num-finds.md)
+- [Cost bound $O(n + m \log n)$ for union by rank with path compression](run-cost-le-log.md)
+- [Cost bound $O(n + m \log n)$ from the empty structure](run-empty-cost-le-log.md)
+- [Tarjan–van Leeuwen's Ackermann function](ackermann-tv-l.md)
+- [Inverse Ackermann function of Tarjan and van Leeuwen](inverse-ackermann-tv-l.md)
+- [Tarjan–van Leeuwen bound for union by rank with path compression](run-empty-cost-le-inverse-ackermann.md)
+
+## Related topics
+
+- [Amortized analysis](../../amortized-analysis/README.md): the potential method, of which
+  the inverse-Ackermann bound is an amortized instance.
+- [Link-cut tree](../link-cut-tree/README.md): the other dynamic-forest structure of this field.
+- [Spanning trees, flows and matchings](../../../graph-algorithms/spanning-trees-flows-matchings/README.md):
+  Kruskal's algorithm, which uses union-find.

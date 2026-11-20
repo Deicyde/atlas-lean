@@ -7,4 +7,4 @@ squaring $k$ times under $\star$.
 
 ## Sources
 
-- BPZ, arXiv:2607.29681, iterated profile products.
+- Pjotr Buys, Sven Polak and Jeroen Zuiddam, *Lean-verified lower bounds for the Shannon capacity of odd cycles*, arXiv:2607.29681v1 (2026), iterated profile products; the authors credit ChatGPT 5.6 Sol Pro and Claude Opus 5 for finding the improved bounds.

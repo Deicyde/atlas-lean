@@ -1,8 +1,6 @@
 # A regular beth fixed point is uncountable
 
-A regular beth fixed point is uncountable: regularity gives `ℵ₀ ≤ κ`, and
-`κ = ℵ₀` fails the fixed-point equation since `ℶ_ω > ℶ_0 = ℵ₀`.
+If $\kappa$ is a regular cardinal with $\beth_\kappa = \kappa$, then $\kappa$ is uncountable.
 
-## Sources
-
-- A regular beth fixed point is uncountable.
+Proof: a regular cardinal is infinite, and $\kappa = \aleph_0$ is impossible, because
+$\beth_\omega > \beth_0 = \aleph_0$.

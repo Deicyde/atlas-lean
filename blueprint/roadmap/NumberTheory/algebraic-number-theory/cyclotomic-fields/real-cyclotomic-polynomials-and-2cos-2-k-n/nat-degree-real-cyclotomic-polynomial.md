@@ -1,9 +1,8 @@
 # Real cyclotomic polynomial has degree half the totient
 
-For `2 < n`, `n.totient` is even and the `natDegree` of the real cyclotomic
-polynomial `realCyclotomicPolynomial n` equals `n.totient / 2`. The `Even`
-conjunct makes the source's exact half machine-visible under natural-number
-division.
+Let $n > 2$ be a natural number, let
+$\psi_n$ be the real cyclotomic polynomial and let $\varphi$ be Euler's totient function. Then
+$\varphi(n)$ is even and $\psi_n$ has degree $\varphi(n)/2$.
 
 ## Sources
 

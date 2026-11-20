@@ -7,4 +7,4 @@ empty word has value $0$.
 
 ## Sources
 
-- Sunic selects least-significant-digit reading with tolerance of trailing high-order zeros: lines 562-567 of `cubefree.tex`.
+- Zoran Šunić, *Rational Tree Morphisms and Transducer Integer Sequences: Definition and Examples*, Journal of Integer Sequences 10 (2007), Article 07.4.3, Section 3, remark after Definition 3.1 (automata read integer representations starting from the least significant digit and tolerate trailing zeros), https://cs.uwaterloo.ca/journals/JIS/VOL10/Sunic/cubefree.html

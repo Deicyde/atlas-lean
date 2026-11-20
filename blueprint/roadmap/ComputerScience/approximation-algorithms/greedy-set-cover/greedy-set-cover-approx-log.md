@@ -7,4 +7,4 @@ $|C^*| \cdot (\ln |U| + 1)$, where $|C^*|$ is the length of $C^*$ and $\ln 0 = 0
 
 ## Sources
 
-- CLRS, third edition, Corollary 35.5, via Mathlib's `harmonic_le_one_add_log`.
+- CLRS, third edition, Corollary 35.5, with $H(n) \le \ln n + 1$.

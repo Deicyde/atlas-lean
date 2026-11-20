@@ -7,4 +7,4 @@ $$\lfloor S_m \rfloor = \frac{3 \cdot 10^{4m}}{4} + 5 \cdot 10^{m-1} - 1.$$
 
 ## Sources
 
-- Sela Fried, "Proofs of Several Conjectures From the OEIS", Theorem 7.
+- Sela Fried, *Proofs of Several Conjectures From the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.4.3, Theorem 7, https://cs.uwaterloo.ca/journals/JIS/VOL28/Fried/fried15.html

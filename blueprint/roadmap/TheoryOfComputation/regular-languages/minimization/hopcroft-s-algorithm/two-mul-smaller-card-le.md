@@ -1,4 +1,4 @@
 # The smaller of two sets has at most half their total size
 
-The smaller of two sets has at most half their combined size: it is one of the two
-sets, so twice its size is at most the sum of the two sizes.
+For finite sets $A$ and $B$, let $\mathrm{sm}(A, B)$ be $A$ if $|A| \le |B|$ and $B$ otherwise. Then
+$2|\mathrm{sm}(A, B)| \le |A| + |B|$.

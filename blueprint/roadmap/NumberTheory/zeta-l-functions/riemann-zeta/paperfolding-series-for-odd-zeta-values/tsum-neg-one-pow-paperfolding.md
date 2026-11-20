@@ -12,7 +12,7 @@ $$
 In the source's indexing $b_n = f_{n-1}$ for $n \ge 1$, this is the sum over $n \ge 1$ of
 $(-1)^{b_n}/n^{2k+1}$. The source prints the sum as $\sum_{n \ge 0} (-1)^{b_n}/(n+1)^{2k+1}$,
 which uses $b_0$, left undetermined by the recurrence $b_{2n} = b_n$; its proof (from Lemma 5)
-gives the sum over $n \ge 1$ stated here.
+gives the sum over $n \ge 1$ stated above.
 
 ## Sources
 

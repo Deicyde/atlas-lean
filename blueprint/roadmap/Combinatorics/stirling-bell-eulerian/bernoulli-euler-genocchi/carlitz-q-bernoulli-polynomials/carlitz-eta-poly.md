@@ -5,6 +5,7 @@ $a_0 = 1$ and $a_k = k/[k]$ for $k \ge 1$. For natural $n$ and real $x$, Carlitz
 is $\eta_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} a_k q^{kx}$; that is,
 $(\eta_n)$ is the Carlitz-type sequence with associated sequence $(a_k)$. Its values at $0$ are
 written $\eta_n = \eta_n(0)$.
+Real powers $q^y$ with $q \le 0$ follow the conventions of [the $q$-analogue of a real number](q-bracket.md); for $q = 1$, where $[y] = 0$, every division by zero, including $(q - 1)^{-n}$ for $n \ge 1$, is read as $0$.
 
 ## Sources
 

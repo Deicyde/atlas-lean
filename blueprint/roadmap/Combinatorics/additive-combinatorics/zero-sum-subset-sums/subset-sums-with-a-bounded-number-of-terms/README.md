@@ -16,14 +16,14 @@
 - [Mixed-sign subset-sum bound with zero](mixed-sign-zero-subset-sum-bound.md)
 - [A value of the mixed-sign subset-sum bound with zero](mixed-sign-zero-subset-sum-bound-one-one.md)
 
-## The generalized `h`-fold sumset (Yang and Chen)
+## The generalized $h$-fold sumset (Yang and Chen)
 
 - [Yang–Chen lower bound for generalized $h$-fold sumsets](yang-chen-card-generalized-hfold-sumset.md)
 - [Yang–Chen inverse theorem for at least five terms](yang-chen-card-generalized-hfold-sumset-2.md)
 - [Yang–Chen inverse theorem for three terms](yang-chen-card-generalized-hfold-sumset-3.md)
 - [Yang–Chen inverse theorem for four terms](yang-chen-card-generalized-hfold-sumset-4.md)
 
-## Subset sums as generalized `h`-fold sumsets
+## Subset sums as generalized $h$-fold sumsets
 
 - [Bounded subset sums as a generalized h-fold sumset when zero is not in the set](bounded-subset-sums-eq-generalized-hfold.md)
 - [Bounded subset sums as a generalized h-fold sumset when zero is in the set](bounded-subset-sums-eq-generalized-hfold-2.md)

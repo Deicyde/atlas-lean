@@ -1,4 +1,4 @@
-# Radius fluctuation of the uniform law on (−√3, √3)
+# Radius fluctuation of the uniform law on $[-\sqrt3, \sqrt3]$
 
 Let $\mu$ be the uniform distribution
 on the symmetric interval $[-\sqrt{3}, \sqrt{3}]$ of one-dimensional Euclidean space

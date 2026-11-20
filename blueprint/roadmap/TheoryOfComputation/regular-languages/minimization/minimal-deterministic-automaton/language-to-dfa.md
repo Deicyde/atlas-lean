@@ -1,4 +1,4 @@
-# Converting a CSLib automaton to a Mathlib DFA preserves its language
+# A deterministic automaton and its DFA accept the same language
 
 For every
 deterministic automaton $M$ on finite words, the DFA with the same states, transition function,

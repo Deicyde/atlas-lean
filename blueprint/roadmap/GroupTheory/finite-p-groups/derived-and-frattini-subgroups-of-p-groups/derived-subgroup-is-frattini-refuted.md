@@ -7,8 +7,7 @@ of Kourovka Problem 16.11 is false.
 
 Ionin and Semidetnov take $p = 2$ and $G$ the group SmallGroup(256, 511), whose derived subgroup
 is the Hall-Senior group 32/40 (a GAP computation); by a theorem of van der Waall and de Nijs, that
-group is not isomorphic to the Frattini subgroup of any finite 2-group. The authors state that
-their solutions were found with the assistance of large language models and checked by them.
+group is not isomorphic to the Frattini subgroup of any finite 2-group.
 
 ## Sources
 

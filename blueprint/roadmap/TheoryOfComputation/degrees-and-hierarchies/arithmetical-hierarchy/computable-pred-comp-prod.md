@@ -8,4 +8,4 @@ $(a, b) \in \mathbb{N} \times \mathbb{N}$ with $\langle a, b \rangle \in Q$ is d
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

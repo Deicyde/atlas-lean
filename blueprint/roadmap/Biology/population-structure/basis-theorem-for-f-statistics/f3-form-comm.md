@@ -1,3 +1,3 @@
 # Per-locus f3 form is symmetric in its sources
 
-`f3Form` is symmetric in its last two arguments.
+For all populations $C, A, B$, the [f3 form](f3-form.md) satisfies $\phi_3^{C;A,B} = \phi_3^{C;B,A}$.

@@ -1,4 +1,5 @@
 # Power form of the Lea–Coulson generating function
 
-The Lea–Coulson generating function in power form:
-`exp (m (1 / z - 1) log (1 - z)) = (1 - z)^{m (1 - z) / z}` for `z < 1`, `z ≠ 0`.
+For every real $m$ and every real $z < 1$ with $z \ne 0$,
+
+$$\exp\Bigl(m \Bigl(\frac{1}{z} - 1\Bigr) \log(1 - z)\Bigr) = (1 - z)^{m(1 - z)/z}.$$

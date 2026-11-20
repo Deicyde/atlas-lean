@@ -1,4 +1,4 @@
-# Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 1)
+# Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 2)
 
 For natural numbers $k$
 and $n$ with $2 \le k \le n$,
@@ -12,4 +12,4 @@ where $H_m = \sum_{j=1}^{m} 1/j$ is the $m$-th harmonic number.
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Corollary 1.
+- Horst Alzer and Man Kam Kwong, *Ramanujan and a Combinatorial Identity Involving Harmonic Numbers*, Journal of Integer Sequences 29 (2026), Article 26.4.8, Corollary 2.

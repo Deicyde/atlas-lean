@@ -12,4 +12,4 @@ invariant.
 
 ## Sources
 
-- G. P. B. Dresden and Z. Du, *A Simplified Binet Formula for k-Generalized Fibonacci Numbers*, Journal of Integer Sequences 17 (2014), Article 14.4.7, Theorem T2, lines 209-218, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Dresden/dresden6.tex>.
+- Gregory P. B. Dresden and Zhaohui Du, *A Simplified Binet Formula for k-Generalized Fibonacci Numbers*, Journal of Integer Sequences 17 (2014), Article 14.4.7, Theorem 2, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Dresden/dresden6.html>.

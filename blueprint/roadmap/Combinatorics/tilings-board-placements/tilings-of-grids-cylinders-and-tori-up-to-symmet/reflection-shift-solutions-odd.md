@@ -6,4 +6,4 @@ $\{k(-1-a)\}$, where $k$ is the residue mod $n$ of the integer $(n+1)/2$.
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Lemma 25.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Lemma 25.

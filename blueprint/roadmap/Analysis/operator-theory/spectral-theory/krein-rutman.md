@@ -8,4 +8,4 @@ then there is a nonzero $f \in C(K, \mathbb{R})$ with $f \ge 0$ pointwise and $T
 
 ## Sources
 
-- M. G. Krein and M. A. Rutman, Linear operators leaving invariant a cone in a Banach space, Uspekhi Mat. Nauk 3 (1948), 1–95, positive compact operator principal eigenvalue; Deimling, Nonlinear Functional Analysis; Lean states `C(K, ℝ)` compact positive case with spectralRadius eigenvector and nonnegativity.
+- M. G. Krein and M. A. Rutman, Linear operators leaving invariant a cone in a Banach space, Uspekhi Mat. Nauk 3 (1948), no. 1(23), 3–95, positive compact operator principal eigenvalue; Deimling, Nonlinear Functional Analysis. The statement here is the case of a compact positive operator on $C(K, \mathbb{R})$: the spectral radius is an eigenvalue with a nonnegative eigenvector.

@@ -1,4 +1,3 @@
 # Inbreeding coefficient under gene dropping
 
-The inbreeding coefficient under gene dropping: the probability that the two copies of `i`
-are identical by descent.
+In a [pedigree](pedigree.md), the inbreeding coefficient of individual $i$ is $F_i = \mathrm{IBD}\bigl((i, 0), (i, 1)\bigr)$, the [probability](ibd.md) that its two copies are identical by descent.

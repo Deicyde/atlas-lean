@@ -6,4 +6,4 @@ $U(r+1, k) = U(r, k+1) + k \, U(r, k)$.
 
 ## Sources
 
-- Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Lemma 3.
+- Schehrazade Zerroukhat and Laala Khaldi, *A Note on Explicit Formulas for Bernoulli and Genocchi Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.7, Lemma 3.

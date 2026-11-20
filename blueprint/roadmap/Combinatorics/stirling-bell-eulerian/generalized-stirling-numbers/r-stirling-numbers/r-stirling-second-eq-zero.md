@@ -5,4 +5,4 @@ $r$ with $m < r$ or $n < r$, the r-Stirling number of the second kind ${n \brace
 
 ## Sources
 
-- A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
+- Andrei Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.

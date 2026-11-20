@@ -1,3 +1,3 @@
 # Non-percolation means the origin's cluster is finite
 
-No percolation from the origin means the cluster of the origin is finite.
+On $\mathbb{Z}^2$, the complement of the percolation event (the open cluster of the origin is infinite) is the event that the open cluster of the origin is finite.

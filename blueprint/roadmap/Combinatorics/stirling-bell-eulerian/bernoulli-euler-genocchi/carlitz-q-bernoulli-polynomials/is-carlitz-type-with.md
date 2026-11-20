@@ -4,6 +4,7 @@ For real $q$, a sequence of functions
 $T_n : \mathbb{R} \to \mathbb{R}$, $n \ge 0$, is Carlitz-type with associated real sequence
 $(a_k)_{k \ge 0}$ if for every natural number $n$ and every real $x$,
 $T_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} a_k q^{kx}$.
+Real powers $q^y$ with $q \le 0$ follow the conventions of [the $q$-analogue of a real number](q-bracket.md); for $q = 1$, $(q - 1)^{-n}$ is read as $0$ when $n \ge 1$.
 
 ## Sources
 

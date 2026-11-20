@@ -1,6 +1,5 @@
-# Total-correctness tag for Hoare triples
+# Total-correctness label for Hoare triples
 
-An empty type used only as a label: derivability
-of Hoare triples in the total-correctness Hoare logic is registered as an inference system under
-this tag, while partial-correctness derivability is the default inference system on Hoare
-triples.
+A label with no elements. It names total-correctness Hoare logic as a second proof system on Hoare
+triples, alongside partial-correctness Hoare logic, which is the proof system on Hoare triples meant
+when no label is given.

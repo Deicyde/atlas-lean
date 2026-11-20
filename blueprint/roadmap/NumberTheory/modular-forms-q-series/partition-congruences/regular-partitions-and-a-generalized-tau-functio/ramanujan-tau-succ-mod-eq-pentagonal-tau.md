@@ -8,10 +8,10 @@ $$\tau(n + 1) \equiv \sum_{13P(r) \le n} (-1)^r \tau_{11}(n - 13P(r) + 1) \pmod{
 
 the sum running over all integers $r$ with $13P(r) \le n$.
 
-The source record prints $\tau_{11}(s)$ in place of $\tau_{11}(s + 1)$, where $n = 13P(r) + s$;
+The paper prints $\tau_{11}(s)$ in place of $\tau_{11}(s + 1)$, where $n = 13P(r) + s$;
 that version is false at $n = 1$. The shifted index comes from the identity
 $\prod_{m \ge 1} (1 - q^m)^{11} (1 - q^{13m}) = \sum_{r, s} (-1)^r \tau_{11}(s + 1) q^{13P(r) + s}$,
-which follows from Definition 1.1 and is used in the proof.
+which follows from Definition 1 and is used in the proof.
 
 ## Sources
 

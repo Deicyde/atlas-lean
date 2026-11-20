@@ -13,4 +13,4 @@ $a$. The codings above are the ones derived in the paper's proof.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 38 (`jis-2025-25.1.5-thm-38`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 38 (`jis-2025-25.1.5-thm-38`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

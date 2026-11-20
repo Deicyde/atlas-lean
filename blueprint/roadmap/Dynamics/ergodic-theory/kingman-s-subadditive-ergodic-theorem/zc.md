@@ -1,3 +1,9 @@
 # Subadditivity defect of a cocycle
 
-The subadditivity defect `addCoc n - X n` (`0` at `n = 0`); it is nonnegative a.e.
+For a map $T : \Omega \to \Omega$ and functions $X_n : \Omega \to \mathbb{R}$ ($n \ge 0$), the subadditivity defect is
+
+$$Z_0 = 0, \qquad Z_n = A_n - X_n \quad (n \ge 1),$$
+
+where $A_n$ is the [additive cocycle](add-coc.md) of Birkhoff sums of $X_1$. For a
+[subadditive cocycle](subadditive-cocycle.md) it is nonnegative almost everywhere, since
+[$X_n \le A_n$](ae-le-birkhoff-sum.md).

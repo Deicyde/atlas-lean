@@ -15,4 +15,4 @@ $k = n = 1$, $r = 0$ the first odd identity reads $4 = 6$).
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.2, even case.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 3.2, even case.

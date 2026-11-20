@@ -7,4 +7,4 @@ heights are even, or $p_0$ is even and $p_1$, $p_2$, $p_3$ are odd.
 
 ## Sources
 
-- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 3.
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow$A$-Nim*, INTEGERS 26 (2026), Article G3, Theorem 3.

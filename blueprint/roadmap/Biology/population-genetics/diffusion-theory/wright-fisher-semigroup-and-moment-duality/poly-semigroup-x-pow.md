@@ -1,3 +1,3 @@
 # Dual semigroup on a monomial
 
-The dual semigroup on a monomial is the dual moment polynomial.
+For every real $t$ and every natural number $n$, the [dual semigroup](poly-semigroup.md) maps the monomial $X^n$ to the [dual moment polynomial](dual-moment-poly.md) $D_{t,n}$.

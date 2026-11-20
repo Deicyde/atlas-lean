@@ -1,12 +1,12 @@
 # Jacobians of compact Riemann surfaces
 
-## Jacobian Challenge
+## Genus and Jacobian
 
 - [Genus of a compact Riemann surface](genus.md)
 - [A compact Riemann surface has genus zero iff it is a sphere](genus-eq-zero-iff-homeo.md)
 - [Jacobian of a compact Riemann surface](jacobian.md)
 
-## Jacobian
+## Abel–Jacobi map and functoriality
 
 - [Abel–Jacobi map](of-curve.md)
 - [The Abel–Jacobi map is holomorphic](of-curve-cont-mdiff.md)

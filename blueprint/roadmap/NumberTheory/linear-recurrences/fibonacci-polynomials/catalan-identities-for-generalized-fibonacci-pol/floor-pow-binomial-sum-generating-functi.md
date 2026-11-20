@@ -13,4 +13,4 @@ $(1-x)^\ell - t x^\ell$, which is invertible since its constant term is $1$.
 
 ## Sources
 
-- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.4.
+- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), no. 2, 100–111, Theorem 4.4.

@@ -11,4 +11,4 @@ $\mathcal{G}$ is not the set of Hurwitz quaternions whose norm lies in $G$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 18.
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Proposition 18.

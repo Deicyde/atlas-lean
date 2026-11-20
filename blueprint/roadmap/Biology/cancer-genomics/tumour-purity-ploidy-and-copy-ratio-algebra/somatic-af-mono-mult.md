@@ -1,3 +1,3 @@
 # Somatic allelic fraction increases with multiplicity
 
-The somatic allelic fraction increases with the multiplicity (`0 ≤ α ≤ 1`, `0 < q`).
+For $0 \le \alpha \le 1$, $q > 0$ and $s \le s'$, the [somatic allelic fraction](somatic-af.md) satisfies $f(\alpha, q, s) \le f(\alpha, q, s')$.

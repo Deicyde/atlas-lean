@@ -8,4 +8,4 @@ $\mathcal{C}(P) = m + 1$.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 12 (`jis-2025-25.4.6-lem-12`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 12 (`jis-2025-25.4.6-lem-12`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

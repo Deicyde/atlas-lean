@@ -23,7 +23,7 @@
 - [Next label after a clause of the accept generator](next-c.md)
 - [Literal routine of the accept generator](lit-p.md)
 - [Generator machine for the accept family](prog.md)
-- [The accept generator as a finite multi-stack machine](acc-tm.md)
+- [The accept generator as a finite multi-stack Turing machine](acc-tm.md)
 
 ## Correctness: one clause
 

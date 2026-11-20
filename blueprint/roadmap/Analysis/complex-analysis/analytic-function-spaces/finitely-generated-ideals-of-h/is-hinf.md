@@ -8,4 +8,4 @@ $z \in \mathbb{D}$.
 
 ## Sources
 
-- [AMR-022-5024], Research Problems in Function Theory, Problem 5.24.
+- [AMR-022-5024], W. K. Hayman and E. F. Lingham, Research Problems in Function Theory, Problem 5.24.

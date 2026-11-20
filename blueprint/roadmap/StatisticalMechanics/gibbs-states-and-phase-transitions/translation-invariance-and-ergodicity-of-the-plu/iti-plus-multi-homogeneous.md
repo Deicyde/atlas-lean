@@ -1,4 +1,5 @@
 # Shift homogeneity of all-plus events in the plus state
 
-The plus state gives the all-plus events on `T` and on `g⁻¹ T` the same probability, for
-every finite `T`.
+For $d \in \mathbb{N}$, $\beta, h \in \mathbb{R}$ and $g \in \mathbb{Z}^d$, this condition holds when the
+[plus state](../dlr-states-of-the-ising-model/plus-state.md) $\mu^+$ satisfies $\mu^+(O_T) = \mu^+(O_{T - g})$ for every finite
+set $T \subseteq \mathbb{Z}^d$, with $O_T = \{\omega : \omega_x = + \text{ for all } x \in T\}$ and $T - g = \{x - g : x \in T\}$.

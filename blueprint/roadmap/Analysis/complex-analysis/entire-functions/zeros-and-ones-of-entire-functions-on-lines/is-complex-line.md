@@ -5,4 +5,4 @@ there are $a, v \in \mathbb{C}$ with $v \ne 0$ such that $s = \{a + tv : t \in \
 
 ## Sources
 
-- Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
+- W. K. Hayman and E. F. Lingham, Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).

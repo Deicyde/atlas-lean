@@ -10,4 +10,4 @@ where an empty sum is $0$, so both sides vanish when $n = 0$.
 
 ## Sources
 
-- Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Theorem A.
+- Necdet Batır and Anthony Sofo, *A Unified Treatment of Certain Classes of Combinatorial Identities*, J. Integer Seq. 24 (2021), Article 21.3.2, Theorem A.

@@ -12,4 +12,4 @@ infinite matrix $M(h)$, this is equivalent to $M(f) M(g) = M(fg)$.
 
 ## Sources
 
-- A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Lemma 5 (`jis-2026-26.5.4-lem-5`).
+- A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Lemma 5.

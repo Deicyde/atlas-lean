@@ -10,9 +10,9 @@ The sum is empty for $n < 6$. When $3$ divides $n$, the last index $k = n/3 - 1$
 exponent $n - 3k - 4 = -1$, but there $\binom{n-k-4}{2k} = 0$, and the product
 $\binom{n-k-4}{2k} 2^{n-3k-4}$ is read as $0$; the other product in that summand is $1$.
 
-The source states this as the sum being $F_{2n-7} - 2^{n-4}$. The summand is reconstructed from
-an extracted display of the source's Proposition 2(i), as the full text was not available; exact
-computation confirms the identity for $4 \le n \le 500$.
+The source states this as the sum being $F_{2n-7} - 2^{n-4}$, proved for $n \ge 6$. For $n = 4$
+and $n = 5$ the sum is empty and the identity reads $2^{n-4} = F_{2n-7}$, that is, $1 = F_1$ and
+$2 = F_3$.
 
 ## Sources
 

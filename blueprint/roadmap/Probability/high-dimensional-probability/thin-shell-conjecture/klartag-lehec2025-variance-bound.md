@@ -6,4 +6,4 @@ normalized radius variance $\frac{1}{n} \int (|x|^2 - n)^2 \, d\mu(x)$ is at mos
 
 ## Sources
 
-- arXiv:2507.15495v1, Theorem 1.1. The constant is not optimized or made explicit.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Theorem 1.1. The constant is not optimized or made explicit.

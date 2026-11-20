@@ -1,4 +1,7 @@
 # Squared norm of the commutator expectation
 
-The squared norm of the commutator expectation is four times the
-squared imaginary part of the centered inner product.
+Let $E$ be a complex Hilbert space and $A, B$ bounded self-adjoint operators on $E$. For every unit vector $x \in E$, the [centered vectors](centered.md) satisfy
+
+$$
+|\langle (AB - BA) x, x \rangle|^2 = 4 \left( \operatorname{Im} \langle \tilde A x, \tilde B x \rangle \right)^2.
+$$

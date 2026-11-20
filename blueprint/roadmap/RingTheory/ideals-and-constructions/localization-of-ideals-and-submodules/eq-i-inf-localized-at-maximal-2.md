@@ -9,4 +9,4 @@ of $A$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Section 2.3, Proposition 2.6, maximal-ideal form.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 2, Proposition 2.6 (the form with maximal ideals), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -12,4 +12,4 @@ Then $S = n \left(\sum_{d \mid n,\ d \text{ odd}} \varphi(d) \, |T|^{(n^2-n)/(2d
 
 ## Sources
 
-- Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 40.
+- Peter Kagey and William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 40.

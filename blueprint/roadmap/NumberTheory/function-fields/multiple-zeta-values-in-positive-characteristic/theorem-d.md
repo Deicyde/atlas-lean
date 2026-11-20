@@ -14,4 +14,4 @@ $\mathcal{Z}_w$.
 
 ## Sources
 
-- T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.
+- Tuan Ngo Dac, *On Zagier–Hoffman's conjectures in positive characteristic*, Annals of Mathematics 194 (2021), no. 1, 361–392, Theorem D. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.

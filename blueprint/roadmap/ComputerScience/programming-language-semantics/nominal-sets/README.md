@@ -41,7 +41,7 @@
 - [Atom abstraction of a nominal set](abs.md)
 - [Abstraction of an element at a bound atom](abs-2.md)
 - [Equality of abstractions is α-equivalence](abs-eq-iff.md)
-- [Abstractions with the same bound atom have equal bodies](abs-eq-of-same-atom.md)
+- [Equal abstractions with the same bound atom have equal bodies](abs-eq-of-same-atom.md)
 - [Permutation action on abstractions](abs-smul.md)
 - [Permutation action on abstractions computed on representatives](smul-abs.md)
 - [Abstractions are supported by the body's support minus the atom](supports-erase-abs.md)

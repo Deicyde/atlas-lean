@@ -15,4 +15,4 @@ base case.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kuhapatanakul/kuha13.tex>, lines 425-449. Excludes the downstream generalized Leonardo identity and the separate finite-sum identity. Definition from lines 79-85.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo p-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Honsberger's formula for the Fibonacci $p$-numbers as used in the proof of Theorem 13; definition of the Fibonacci $p$-numbers in Section 1, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kuhapatanakul/kuha13.html>.

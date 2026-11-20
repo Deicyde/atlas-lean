@@ -1,4 +1,4 @@
-# The number of $(j, k)$-overpartition pairs with even parts distinct
+# The number of $[j, k]$-overpartition pairs with even parts distinct
 
 For natural numbers
 $j$, $k$ and $n$, $\mathrm{bped}_{j,k}(n)$ is the integer coefficient of $q^n$ in the generating
@@ -10,4 +10,4 @@ each distinct part congruent to $j$ modulo $k$ may be overlined.
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
+- Adam Paksok and Nipen Saikia, *New Congruences for $[j, k]$-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).

@@ -20,4 +20,4 @@ the composed map $R \circ A$ need not enlarge the gap.
 
 ## Sources
 
-- I. Dinur, "The PCP theorem by gap amplification", Journal of the ACM 54 (2007), 12:1-12:44 (Proceedings of the Thirty-Eighth Annual ACM Symposium on Theory of Computing, STOC 2006, 241-250).
+- Irit Dinur, "The PCP theorem by gap amplification", Journal of the ACM 54 (2007), 12:1-12:44 (Proceedings of the Thirty-Eighth Annual ACM Symposium on Theory of Computing, STOC 2006, 241-250).

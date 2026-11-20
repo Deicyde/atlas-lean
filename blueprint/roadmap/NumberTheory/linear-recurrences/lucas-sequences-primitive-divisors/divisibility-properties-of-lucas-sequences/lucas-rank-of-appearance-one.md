@@ -5,4 +5,4 @@ appearance of $1$ in the Lucas sequence $U(P, Q)$ is $1$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of `ρ`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of $\rho$).

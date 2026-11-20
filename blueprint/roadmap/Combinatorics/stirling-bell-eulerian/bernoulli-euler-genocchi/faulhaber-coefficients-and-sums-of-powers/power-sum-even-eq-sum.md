@@ -7,4 +7,4 @@ $S_{2k}(n) = \sum_{m=1}^{k} R(k, m)\, \frac{2n+1}{2m+1} \binom{n+m}{2m}$.
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 3.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Proposition 3.

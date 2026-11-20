@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 16: a Wilf-equivalence of six-pattern sets
+# Wilf-equivalence of two sets of six signed patterns
 
 Length-2 signed
 patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that

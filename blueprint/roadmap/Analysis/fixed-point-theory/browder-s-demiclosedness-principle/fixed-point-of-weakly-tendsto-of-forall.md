@@ -1,5 +1,5 @@
 # Fixed points of a nonexpansive map are weakly sequentially closed
 
-The fixed-point set of a nonexpansive map is weakly sequentially
-closed: if every `u n` is a fixed point of `T` and `u n ⇀ x` weakly,
-then `T x = x`.
+Let $H$ be a real or complex Hilbert space and $T : H \to H$ nonexpansive. If every $u_n$ is a fixed
+point of $T$ and $(u_n)$ converges weakly to $x$, then $Tx = x$: the fixed-point set of $T$ is
+weakly sequentially closed.

@@ -6,4 +6,5 @@ $\psi_n \le C \sqrt{\log n}$.
 
 ## Sources
 
-- Klartag, arXiv:2303.14938v1, Theorem 1.2.
+- B. Klartag, *Logarithmic bounds for isoperimetry and slices of convex sets*, Ars Inveniendi Analytica (2023),
+  Paper No. 4, arXiv:2303.14938v1, Theorem 1.2.

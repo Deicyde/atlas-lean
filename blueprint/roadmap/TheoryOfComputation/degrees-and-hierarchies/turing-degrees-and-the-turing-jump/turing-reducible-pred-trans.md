@@ -6,4 +6,4 @@ reducible to $R$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 2.4.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

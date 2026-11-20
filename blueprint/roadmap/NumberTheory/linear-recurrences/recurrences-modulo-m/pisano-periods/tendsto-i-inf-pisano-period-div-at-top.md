@@ -6,4 +6,4 @@ $1 \le n \le N - 1$ (defined for $N \ge 2$) tends to $0$.
 
 ## Sources
 
-- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Corollary 1.
+- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers," INTEGERS 25 (2025), Article A87, Corollary 1.

@@ -9,4 +9,4 @@ $$2 \left(\frac{L_j}{2}\right)^{n+1} \frac{F_{jn}}{F_j} + 2 (-1)^{jn} =
 
 ## Sources
 
-- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 4.
+- Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Journal of Integer Sequences 29 (2026), Article 26.3.2, Theorem 4.

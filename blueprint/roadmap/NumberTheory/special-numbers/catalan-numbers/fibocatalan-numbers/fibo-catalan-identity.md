@@ -10,4 +10,4 @@ $$F_{2n+1} F_{2n} C_{n,F} - F_{n+1} F_n C_{n+1,F}
 
 ## Sources
 
-- Kendra Killpatrick, "Super FiboCatalan Numbers and Their Lucas Analogues", Theorem 7.
+- Kendra Killpatrick, *Super FiboCatalan Numbers and Their Lucas Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.8, Theorem 7.

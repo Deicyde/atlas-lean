@@ -9,8 +9,8 @@ $a, b \le n$ hold automatically.
 For $s > 0$ this is the coefficient $\rho(n, r)$, $r = s + p$, of the paper's general formula (12)
 for the recurrence $v_n = k_1 v_{n-s} + k_2 v_{n-s-p}$. The paper's Proposition 4 prints the
 constraint as $s a + (s + p) b = n - (s + p - 1)$, which contradicts its own normalization
-$\rho(s + p, s + p) = 1$ for $s \ge 2$; the constraint used here is the one of formula (12).
+$\rho(s + p, s + p) = 1$ for $s \ge 2$; the constraint above is the one of formula (12).
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.
+- Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of ([k]; p; s)-Generalized Padovan–Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.

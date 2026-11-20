@@ -6,4 +6,4 @@ $L^{a,b}_{n+2} = a L^{a,b}_{n+1} + b L^{a,b}_n$.
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Section 1 (sequence definition).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1 (sequence definition).

@@ -9,4 +9,4 @@ $$t(n) + t(n-2) = 2 \sum_{i=0}^{k-1} t(n-3i-1).$$
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Theorem 9.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Theorem 9.

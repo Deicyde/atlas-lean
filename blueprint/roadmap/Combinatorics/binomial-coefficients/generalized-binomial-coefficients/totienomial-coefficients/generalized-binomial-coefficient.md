@@ -13,4 +13,4 @@ this is the source's quotient.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
+- Tom Edgar and Michael Z. Spivey, *Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers*, J. Integer Seq. 19 (2016), Article 16.1.6, Section 1 (definition of the generalized binomial coefficient), <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.html>.

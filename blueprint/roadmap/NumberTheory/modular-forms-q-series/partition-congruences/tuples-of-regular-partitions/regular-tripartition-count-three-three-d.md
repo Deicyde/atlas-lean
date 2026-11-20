@@ -29,4 +29,4 @@ $\sum T_3(3n + 2) q^n = 9 f_3^9/f_1^9$ with the denominators cleared.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 4, eqs. (49)–(51).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for $\ell$-Regular Tripartitions for $\ell \in \{2, 3\}$*, INTEGERS 24 (2024), Article A86, Theorem 4, eqs. (49)–(51).

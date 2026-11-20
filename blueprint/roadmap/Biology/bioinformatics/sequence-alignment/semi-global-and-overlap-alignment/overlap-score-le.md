@@ -1,6 +1,3 @@
 # Upper bounds for the overlap score
 
-Fix a substitution score $\sigma$ and a gap score
-$g$, and sequences $s$ and $t$. If an integer $b$ is at least the Needleman–Wunsch score of
-every overlap pair of $s$ and $t$ (a suffix of $s$ with a prefix of $t$, or a prefix of $s$
-with a suffix of $t$), then the overlap score of $s$ and $t$ is at most $b$.
+If an integer $m$ satisfies $\mathrm{NW}(x', y') \le m$ for every [overlap pair](overlap-pairs.md) $(x', y')$ of $x$ and $y$, then $\mathrm{Ov}(x, y) \le m$, where $\mathrm{Ov}$ is the [overlap score](overlap-score.md).

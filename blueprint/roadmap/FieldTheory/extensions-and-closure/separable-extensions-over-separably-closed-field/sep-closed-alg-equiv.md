@@ -10,4 +10,4 @@ $\omega \otimes l$ to the function $\sigma \mapsto \omega\, \sigma(l)$ and is bi
 
 ## Sources
 
-- ATLAS NumberTheoryI Proposition 4.43, field case; the book states it for finite étale $K$-algebras.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 4, Proposition 4.43, https://math.mit.edu/classes/18.785/2021fa/LectureNotes4.pdf; the field case of a statement made there for finite étale $K$-algebras.

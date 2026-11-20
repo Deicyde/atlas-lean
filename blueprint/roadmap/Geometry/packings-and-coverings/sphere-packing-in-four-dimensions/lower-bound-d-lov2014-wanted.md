@@ -6,4 +6,4 @@ $\mathbb{R}^4$, satisfies $\frac{\pi^2}{16} \le \Delta_4$.
 
 ## Sources
 
-- dLOV2014 Table 1. Known literature bound; no Lean proof supplied.
+- D. de Laat, F. M. de Oliveira Filho and F. Vallentin, *Upper bounds for packings of spheres of several radii*, Forum Math. Sigma 2 (2014), e23, arXiv:1206.2608, Table 1.

@@ -1,3 +1,4 @@
 # Erasing both roles of the fresh name leaves outer keys
 
-Removing both roles of var zero leaves only genuine outer-name keys.
+For every ownership context $\Gamma$, no endpoint in the domain of $(\Gamma \setminus
+\mathrm{v}_0^{-}) \setminus \mathrm{v}_0^{+}$ has the name $\mathrm{v}_0$.

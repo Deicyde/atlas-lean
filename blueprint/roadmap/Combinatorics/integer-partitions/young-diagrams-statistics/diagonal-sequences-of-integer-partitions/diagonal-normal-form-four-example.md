@@ -7,4 +7,4 @@ of $v$, is $(1, 2, 3, 4, 4, 4, 2, 1)$.
 
 ## Sources
 
-- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalNormalForm`.
+- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4).

@@ -11,4 +11,4 @@ $$\sum_{k=1}^{\min(i,j)} S(i,k) \, \Lambda(\alpha, k, j) =
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Proposition 5.
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Journal of Integer Sequences 27 (2024), Article 24.5.3, Proposition 5.

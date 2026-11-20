@@ -9,4 +9,4 @@ $(-1)^n B_n = \frac{n}{2^n - 1} \sum_{k=0}^{n-1-r} e_k \, \frac{\Delta^k 1^{n-1-
 
 ## Sources
 
-- Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Corollary 2.
+- Schehrazade Zerroukhat and Laala Khaldi, *A Note on Explicit Formulas for Bernoulli and Genocchi Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.7, Corollary 2.

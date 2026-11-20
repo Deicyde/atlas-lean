@@ -1,5 +1,9 @@
 # Interior equilibrium of the master-sequence frequency
 
-The interior equilibrium `x* = (σ Q - 1) / (σ - 1)` of the master frequency. For
-`σ = 1` (no selective advantage) Lean's `x / 0 = 0` gives the junk value `0`; every result
-below assumes `1 < σ`.
+For real $\sigma$ (the fitness of the master sequence relative to the mutants) and $Q$ (the probability
+of an error-free copy), the interior equilibrium of the master frequency is
+
+$$x^* = \frac{\sigma Q - 1}{\sigma - 1}.$$
+
+For $\sigma = 1$ (no selective advantage) the quotient has zero denominator and is read as $0$; the
+model takes $\sigma > 1$.

@@ -1,7 +1,7 @@
 # Bernoulli product measures and cylinder events
 
 - [Bernoulli distribution on the Booleans](bernoulli-measure.md)
-- [Bernoulli distribution agrees with the library Bernoulli measure](bernoulli-measure-eq.md)
+- [Bernoulli distribution as a two-point measure](bernoulli-measure-eq.md)
 - [Bernoulli product measure on configuration space](bernoulli-product-measure.md)
 - [Bernoulli product measure on bonds is the bond percolation law](bernoulli-product-measure-eq-gbernoulli.md)
 - [Mass of a configuration under a finite Bernoulli product measure](apply-singleton.md)
@@ -21,5 +21,5 @@
 - [Probability of a finitely dependent event as a polynomial in $p$](real-prob-cylinder-eq-finsum.md)
 - [Differentiability in $p$ of the probability of a cylinder event](differentiable-real-prob-cylinder.md)
 - [Finite projections of increasing events are increasing](is-increasing-restrict-image.md)
-- [Russo's formula](has-deriv-at-real-prob-cylinder-pivotal.md)
-- [Russo's formula](deriv-real-prob-cylinder-pivotal.md)
+- [Russo's formula for the finite projection of an increasing event](has-deriv-at-real-prob-cylinder-pivotal.md)
+- [Russo's formula for the finite projection of an increasing event, derivative form](deriv-real-prob-cylinder-pivotal.md)

@@ -1,4 +1,4 @@
-# Uncomplemented maximal subgroups of Sylow subgroups (Kourovka 15.81, Skiba)
+# Uncomplemented maximal subgroups of Sylow subgroups (Kourovka 15.81)
 
 The statement
 that every finite group $G$ that is not supersoluble has, for some prime $p$, a non-cyclic Sylow

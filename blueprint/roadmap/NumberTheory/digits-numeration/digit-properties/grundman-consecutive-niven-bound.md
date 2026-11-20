@@ -8,4 +8,4 @@ base-$b$ digits.
 
 ## Sources
 
-- Michael Gohn, Joshua Harrington, Sophia Lebiere, Hani Samamah, Kyla Shappell, and Tony W. H. Wong, "Arithmetic Progressions of b-Prodigious Numbers," Journal of Integer Sequences 25 (2022), Article 22.8.7, line 149, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Wong/wong42.tex>, citing as the original result Heidi Grundman, "Sequences of consecutive n-Niven numbers," Fibonacci Quarterly 32 (1994), 174–175.
+- Michael Gohn, Joshua Harrington, Sophia Lebiere, Hani Samamah, Kyla Shappell, and Tony W. H. Wong, *Arithmetic Progressions of b-Prodigious Numbers*, Journal of Integer Sequences 25 (2022), Article 22.8.7, Section 1, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Wong/wong42.tex>, citing as the original result Helen G. Grundman, "Sequences of consecutive n-Niven numbers," Fibonacci Quarterly 32 (1994), 174–175.

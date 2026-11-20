@@ -1,14 +1,11 @@
-# The `Summable`-means necessity claim in v1 is false
+# Convergent series whose truncated means are not absolutely summable
 
-The
-deterministic sequence `X k ω = (-1)^k / (k + 1)` on the one-point
-probability space `(Unit, dirac ())` has converging partial sums, is
-constant (hence measurable and independent), agrees with its truncations
-at `A = 1`, and has all variances `0` — yet its means
-`∫ truncatedRV X 1 k = (-1)^k / (k + 1)` are not `Summable`, since
-`Summable.abs` would force summability of the harmonic series. This is
-why the ported necessity theorem above states convergence of the mean
-partial sums rather than `Summable` of the means. The statement records
-convergence of both the original and the truncated partial sums: the
-truncated form is the hypothesis of v1's (false) unproved lemma, and the original
-form is what the corrected assembly theorem needs.
+There are a sequence $X_0, X_1, \dots$ of real random variables on a one-point probability space
+and a threshold $A > 0$ such that the $X_n$ are measurable and independent, the partial sums
+$\sum_{i < n} X_i$ converge, the partial sums of the [truncations](truncated-rv.md)
+$Y_i = X_i \mathbf{1}_{\{|X_i| \le A\}}$ converge, and yet the series of truncated means
+$\sum_n \mathbb{E}[Y_n]$ does not converge absolutely. One example is the deterministic sequence
+$X_k = (-1)^k / (k + 1)$ with $A = 1$: it agrees with its truncations, has all variances $0$, and
+its means $(-1)^k / (k + 1)$ form a convergent but not absolutely convergent series. So in the
+necessity half of the three-series theorem only the convergence of the partial sums of the
+truncated means can be concluded, as in [the mean and variance step](three-series-necessity-mean-variance.md).

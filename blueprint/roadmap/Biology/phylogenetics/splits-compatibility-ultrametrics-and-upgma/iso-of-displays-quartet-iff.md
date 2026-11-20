@@ -1,5 +1,7 @@
 # An unrooted binary tree is determined by its quartets
 
-**An unrooted binary tree is determined by its quartets** (Semple & Steel 2003, Corollary
-6.3.8): two trees displaying the same quartets are isomorphic. Already the quartets containing
-the taxon `a` suffice; they are the rooted triplets seen from `a`.
+Let $T, T'$ be [unrooted binary phylogenetic trees](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md) on a finite set $X$ and $a \in X$. If for all $x, y, z$, $T$ [displays](displays-quartet.md) $xy \mid za$ exactly when $T'$ does, then $T$ and $T'$ are [isomorphic](../counting-binary-phylogenetic-trees/iso.md) (Semple & Steel 2003).
+
+## Sources
+
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

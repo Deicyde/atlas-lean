@@ -6,4 +6,4 @@ $A_p(mp + j) = \sum_{i=0}^{m} F_p(ip + j)$.
 
 ## Sources
 
-- "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Corollary 6.
+- Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6, Corollary 6.

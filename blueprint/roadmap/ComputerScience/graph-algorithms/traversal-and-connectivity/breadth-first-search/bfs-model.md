@@ -10,5 +10,3 @@ queue as $(w, d + 1)$ unless $w$ already occurs in a processed or queued pair. T
 distance of a vertex $v$ is the distance in the first pair for $v$ in the list of processed pairs
 in processing order followed by the queue, or none if there is no such pair; the reported order
 lists the processed vertices in processing order.
-
-The model can be evaluated by kernel reduction, which is used to check concrete results.

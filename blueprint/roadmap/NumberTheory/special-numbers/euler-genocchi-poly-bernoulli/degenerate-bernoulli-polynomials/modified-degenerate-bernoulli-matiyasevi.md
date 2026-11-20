@@ -15,4 +15,4 @@ where $\log$ is the principal branch.
 
 ## Sources
 
-- Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Corollary 2, equation (matiyasevichD) (`jis-2024-24.5.4-cor-2`).
+- Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Corollary 2, equation (8) (`jis-2024-24.5.4-cor-2`).

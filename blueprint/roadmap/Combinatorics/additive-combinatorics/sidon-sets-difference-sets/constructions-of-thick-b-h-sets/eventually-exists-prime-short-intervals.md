@@ -9,4 +9,4 @@ with $n$ undefined; the right endpoint is read as $x$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 10 (Baker, Harman and Pintz) (`jis-2024-24.1.2-thm-10`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 10 (Baker, Harman and Pintz) (`jis-2024-24.1.2-thm-10`).

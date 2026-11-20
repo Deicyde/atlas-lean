@@ -1,5 +1,4 @@
 site_name: "ATLAS"
-repo_url: "https://github.com/facebookresearch/atlas-lean"
 
 # `autoform render` writes this directory from blueprint/. The vault stays the
 # source of truth; everything here is regenerated.
@@ -13,8 +12,11 @@ exclude_docs: |
 
 hooks:
   # Material eagerly builds its search index in every browser tab. Keep one
-  # title-only record per page so the ~5,000-page wiki stays bounded.
+  # title-only record per page so the index of the ~9,000-page site stays bounded.
   - hooks/title_only_search.py
+  # A page that only says where an old explorer URL moved is a bare redirect,
+  # and every page loses the indentation the theme writes.
+  - hooks/trim_pages.py
 
 # The nav is not listed here. `autoform render` writes it to SUMMARY.md from
 # the vault's own page order, which mkdocs-literate-nav reads, so a project's
@@ -27,26 +29,28 @@ theme:
   logo: assets/autoform.svg
   favicon: assets/autoform.svg
   font:
-    # Meta's own Optimistic is not publicly licensed; Plus Jakarta Sans is the
-    # nearest geometric humanist, and carries display and body on weight alone.
     text: Plus Jakarta Sans
     code: JetBrains Mono
-  icon:
-    repo: fontawesome/brands/github
+  # Readers with JavaScript browse with the explorer, which hides the theme's
+  # header, sidebars and footer. For everyone else, theme/partials/nav.html
+  # lists Home, the sections above the page, its siblings and its entries.
   features:
-    # Book and Graph sit across the top; the sidebar shows the open tab.
-    - navigation.tabs
-    - navigation.tabs.sticky
-    # The chapter tree stays visible, which is what makes a blueprint readable
-    # as a book rather than as a pile of pages.
-    - navigation.sections
-    - navigation.prune
-    - navigation.indexes
     - navigation.top
     - toc.follow
     - search.suggest
+  # The site opens in the reader's own light or dark setting, and the sun or
+  # moon in the header switches it; Material remembers the choice.
   palette:
-    scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Use dark theme
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Use light theme
 
 plugins:
   - search

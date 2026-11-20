@@ -1,4 +1,4 @@
-# Supergeneralized Leonardo p-numbers via Fibonacci p-numbers
+# Supergeneralized Leonardo $p$-numbers via Fibonacci $p$-numbers
 
 For all natural numbers
 $p \ge 1$, $k$ and $n$ with $n > p$ and every real sequence $x$, the supergeneralized Leonardo
@@ -15,4 +15,4 @@ to be an immediate combination with Theorems 4 and 5.
 
 ## Sources
 
-- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Corollary 7.
+- Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo $p$-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Corollary 7.

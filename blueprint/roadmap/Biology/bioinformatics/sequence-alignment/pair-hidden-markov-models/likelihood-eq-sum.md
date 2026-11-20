@@ -1,4 +1,3 @@
 # The pair-HMM recursion computes the total weight
 
-The sum over all alignments of
-`xs` and `ys` of the joint weight of the sequences and the alignment.
+For every pair HMM with weights in a semiring and sequences $x, y$, the [total weight](likelihood.md) $P(x, y)$ equals the sum, over the [alignments](../pairwise-sequence-alignment/alignments.md) $A$ of $x$ and $y$, of the [joint weight](align-prob.md) of $A$.

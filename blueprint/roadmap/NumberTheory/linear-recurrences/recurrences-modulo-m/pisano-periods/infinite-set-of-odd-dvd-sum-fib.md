@@ -6,4 +6,4 @@ $k$ such that $k$ divides $F_1 + F_2 + \dots + F_k$.
 
 ## Sources
 
-- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Corollary 2.
+- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers," INTEGERS 25 (2025), Article A87, Corollary 2.

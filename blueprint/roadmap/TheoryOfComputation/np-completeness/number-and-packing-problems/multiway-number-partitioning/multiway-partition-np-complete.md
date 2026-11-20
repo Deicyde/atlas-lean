@@ -7,6 +7,9 @@ counted with repetition, can be split into $K$ nonempty parts with equal sums. T
 NUMBER PARTITION is in NP, and every decision problem in NP reduces to it by a polynomial-time
 many-one reduction.
 
+For $K = 2$ this is PARTITION restricted to splits into two nonempty parts: the one-entry list
+$(0)$, for instance, is a yes-instance of PARTITION but has no split into two nonempty parts.
+
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MULTIWAY NUMBER PARTITION (the `K = 2` slice is PARTITION).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness*, W. H. Freeman, 1979 (PARTITION).

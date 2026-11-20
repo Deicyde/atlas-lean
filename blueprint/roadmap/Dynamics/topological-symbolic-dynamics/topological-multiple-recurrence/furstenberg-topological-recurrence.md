@@ -8,4 +8,8 @@ $1 \le j \le d$, where $T^{m}$ denotes the $m$-th iterate of $T$.
 
 ## Sources
 
-- H. Furstenberg and B. Weiss, *Topological dynamics and combinatorial number theory*, Journal d'Analyse Mathématique 34 (1978), 61-85. Listed as §56 (main theorem) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `furstenberg_topological` of the lean-eval benchmark.
+- Hillel Furstenberg and Benjamin Weiss, *Topological dynamics and combinatorial number theory*, J. Analyse Math.
+  34 (1978), 61–85, DOI 10.1007/bf02790008.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §56 (Recurrence; the theorem of the section),
+  <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `furstenberg_topological` of the lean-eval benchmark.

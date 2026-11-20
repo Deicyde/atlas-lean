@@ -1,7 +1,6 @@
-# Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials (Koshy–Gao, Theorem 3.1)
+# Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials
 
-**Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials
-(Koshy–Gao, Theorem 3.1).** Let $J_n(x)$ and $j_n(x)$ be the Jacobsthal and Jacobsthal–Lucas
+Let $J_n(x)$ and $j_n(x)$ be the Jacobsthal and Jacobsthal–Lucas
 polynomials, given by $z_{n+2} = z_{n+1} + x z_n$ with initial values $J_0 = 0$, $J_1 = 1$ and
 $j_0 = 2$, $j_1 = 1$. Let $x > 0$ be real, let $k$, $p$, $r$, $t$ be positive integers with
 $t \le 2p$, let $w = (1 + \sqrt{4x + 1})/2$, and write $e_n = (2pn + t)k$. Then
@@ -21,9 +20,9 @@ $$
 $$
 
 In the source the sums run over $n \ge 1$, with $(2pn + t - p)k$ in place of $(2pn + p + t)k$
-and exponent $(2pn + t - 2p)k$ in place of $e_n$; here the summation index is shifted to start
-at $n = 0$.
+and exponent $(2pn + t - 2p)k$ in place of $e_n$; the sums above are the same sums with the
+index shifted to start at $n = 0$.
 
 ## Sources
 
-- Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), Article koshy12202023, Theorem 3.1.
+- Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), no. 2, 130–135, Theorem 3.1.

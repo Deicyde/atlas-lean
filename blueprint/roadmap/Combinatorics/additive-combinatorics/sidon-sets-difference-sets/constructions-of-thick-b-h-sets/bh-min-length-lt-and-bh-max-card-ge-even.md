@@ -9,4 +9,4 @@ numbers $n$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 11 (`jis-2024-24.1.2-thm-11`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 11 (`jis-2024-24.1.2-thm-11`).

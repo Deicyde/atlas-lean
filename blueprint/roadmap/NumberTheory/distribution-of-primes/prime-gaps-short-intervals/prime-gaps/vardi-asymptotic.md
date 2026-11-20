@@ -12,3 +12,7 @@ as $x \to \infty$ over pairs $(x, y)$ of reals with $x/2 < y < x$, where $\sim$ 
 difference of the two sides is $o$ of the right-hand side.
 
 This proposition is false (Erdős Problem 1138 was resolved in the negative).
+
+## Sources
+
+- Erdős Problem #1138, https://www.erdosproblems.com/1138.

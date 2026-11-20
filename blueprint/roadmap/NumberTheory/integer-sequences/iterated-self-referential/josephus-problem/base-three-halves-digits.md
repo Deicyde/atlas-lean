@@ -6,4 +6,4 @@ the digit $d = 2N \bmod 3$ followed by the base-$3/2$ digit list of $(2N - d)/3$
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Section 2.2 (Steps 1 and 2 of the digit algorithm), p. 7.

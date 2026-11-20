@@ -1,4 +1,3 @@
 # Hoppe urn transition is stochastic
 
-The Hoppe-urn transition is stochastic: from every partition of `k` the probabilities of
-the partitions of `k + 1` sum to one.
+For every real $\theta > 0$ and every integer partition $\pi$ of $k$, the [transition weights of Hoppe's urn](hoppe-step.md) from $\pi$ to the integer partitions of $k + 1$ sum to $1$.

@@ -1,6 +1,6 @@
 # McDonald–Kreitman test
 
-## The McDonald–Kreitman test
+## The McDonald–Kreitman table
 
 - [Smith–Eyre-Walker estimator of adaptive substitutions](alpha-hat.md)
 - [Neutrality index](neutrality-index.md)
@@ -14,6 +14,6 @@
 - [Expected synonymous fixed differences](eds.md)
 - [Expected nonsynonymous fixed differences](edn.md)
 - [Proportion of adaptive nonsynonymous substitutions](alpha.md)
-- [`α̂` at the expected counts is the proportion of adaptive substitutions](alpha-hat-expected.md)
-- [The MK null is neutrality](prop-nonsyn-eq-iff.md)
-- [Consistency of `α̂` over loci](tendsto-alpha-hat.md)
+- [The estimator at the expected counts is the adaptive proportion](alpha-hat-expected.md)
+- [The McDonald–Kreitman null is neutrality](prop-nonsyn-eq-iff.md)
+- [Consistency of the adaptive proportion estimator over loci](tendsto-alpha-hat.md)

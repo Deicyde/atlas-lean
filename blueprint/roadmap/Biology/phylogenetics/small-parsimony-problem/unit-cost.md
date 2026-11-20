@@ -1,3 +1,3 @@
 # Unit substitution cost
 
-The unit cost: `0` for no change and `1` for a change of state.
+The unit cost is $c(a, b) = 0$ if $a = b$ and $1$ otherwise, as an element of the [cost semiring](cost.md).

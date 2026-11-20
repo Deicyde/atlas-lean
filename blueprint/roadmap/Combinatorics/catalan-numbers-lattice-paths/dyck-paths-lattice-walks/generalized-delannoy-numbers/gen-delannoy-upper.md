@@ -7,4 +7,4 @@ $$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}.$$
 
 ## Sources
 
-- Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal of Integer Sequences 27 (2024), Article 24.1.8, Section 1 (definition of `D^k(m, n)`).
+- Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal of Integer Sequences 27 (2024), Article 24.1.8, Section 1 (definition of $D^k(m, n)$).

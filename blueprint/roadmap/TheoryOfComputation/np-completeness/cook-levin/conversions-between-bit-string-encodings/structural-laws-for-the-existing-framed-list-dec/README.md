@@ -1,4 +1,4 @@
-# Structural laws for the existing framed list decoder
+# Structural laws for the framed list decoder
 
 - [Parsing a framed head leaves the raw remainder](blocks-delimit.md)
 - [List decoder consumes one raw payload at a time](decode-list-delimit.md)

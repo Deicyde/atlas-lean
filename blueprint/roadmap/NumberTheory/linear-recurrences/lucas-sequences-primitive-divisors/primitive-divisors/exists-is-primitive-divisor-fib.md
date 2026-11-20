@@ -10,4 +10,4 @@ $\alpha = (1 + \sqrt{5})/2$ and $\beta = (1 - \sqrt{5})/2$, so that $(\alpha - \
 
 ## Sources
 
-- Haojie Hong, *On big primitive divisors of Fibonacci numbers*, arXiv:2312.04354v1, `bigPFn.tex` lines 153–158 (<https://arxiv.org/abs/2312.04354>); R. D. Carmichael, *On the numerical factors of the arithmetic forms αⁿ±βⁿ*, Ann. of Math. (2) 15 (1913), 30–70.
+- Haojie Hong, *On big primitive divisors of Fibonacci numbers*, arXiv:2312.04354v1, Section 1 (<https://arxiv.org/abs/2312.04354>); R. D. Carmichael, *On the numerical factors of the arithmetic forms $\alpha^n \pm \beta^n$*, Ann. of Math. (2) 15 (1913), 30–70.

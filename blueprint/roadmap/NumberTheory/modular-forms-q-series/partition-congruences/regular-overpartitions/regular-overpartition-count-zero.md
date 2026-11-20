@@ -4,8 +4,7 @@ For every natural number $\ell$, the number
 $A_\ell(0)$ of overpartitions of $0$ with no part divisible by $\ell$ equals $1$: the only one is
 the empty overpartition.
 
-The statement also covers $\ell = 0$, a harmless extension of the paper's positive regularity
-parameter.
+The paper takes $\ell$ positive; the statement also holds for $\ell = 0$.
 
 ## Sources
 

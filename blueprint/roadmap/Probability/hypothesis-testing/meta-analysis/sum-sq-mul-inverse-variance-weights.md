@@ -1,3 +1,7 @@
 # Variance of the inverse-variance-weighted average
 
-The variance `∑ wᵢ² vᵢ` of the inverse-variance-weighted average is `(∑ vᵢ⁻¹)⁻¹`.
+Let $k \ge 1$, $v_1, \dots, v_k > 0$ and $w$ the [inverse-variance weights](inverse-variance-weights.md). Then
+
+$$\sum_{i=1}^k w_i^2 v_i = \Big(\sum_{j=1}^k v_j^{-1}\Big)^{-1},$$
+
+the variance of the inverse-variance-weighted average of independent estimates with variances $v_i$.

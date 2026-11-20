@@ -6,7 +6,7 @@ plane (not necessarily distinct), the union of the members of $T$ is the closed 
 $[0,1]^2$, any two distinct members of $T$ have disjoint interiors, and all members of $T$ have
 the same Lebesgue measure. Then the number of members of $T$ is even.
 
-Proof: A 2-adic valuation on ℝ gives a three-colouring of the plane, and a Sperner-type parity
+Proof: A 2-adic valuation on $\mathbb{R}$ gives a three-colouring of the plane, and a Sperner-type parity
 count supplies a rainbow triangle whose area valuation rules out an odd number of pieces.
 
 ## Sources

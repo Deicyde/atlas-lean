@@ -1,4 +1,4 @@
-# Recurrence for incomplete Lucas-Leonardo p-numbers
+# Recurrence for incomplete Lucas-Leonardo $p$-numbers
 
 For natural numbers $p \ge 1$,
 $n > p + 1$ and $k \le \lfloor n/(p+1) \rfloor$, the incomplete Lucas-Leonardo $p$-numbers
@@ -13,4 +13,4 @@ $\frac{0}{0} \binom{0}{0}$, so that case is excluded.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 17.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 17.

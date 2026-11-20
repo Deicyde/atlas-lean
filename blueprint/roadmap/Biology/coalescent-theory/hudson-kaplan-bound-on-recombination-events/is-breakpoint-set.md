@@ -1,4 +1,3 @@
 # Valid set of recombination breakpoints
 
-A set `B` of breakpoints is valid for the sample `M` when it separates every pair of sites
-`i < j` showing all four gametes.
+For a sample $M$ of $n$ haplotypes over $s$ biallelic sites, a set $B$ of sites is a valid breakpoint set if for all sites $i < j$ that show [all four gametes](four-gametes.md) there is $g \in B$ that [separates](separates.md) $i$ and $j$, that is, $i < g \le j$.

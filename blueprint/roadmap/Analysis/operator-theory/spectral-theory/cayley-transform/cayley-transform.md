@@ -1,6 +1,9 @@
 # Cayley transform of an operator
 
-The Cayley transform of an operator `A`: `(A - i) * (A + i)⁻¹`. The
-factor `A + i • 1` is a unit when `A` is self-adjoint on a complete Hilbert space (see
-`isUnit_add_I_smul_one_of_isSelfAdjoint` below), in which case the ring
-inverse here is the genuine operator inverse.
+Let $H$ be a complex inner product space and $A$ a bounded operator on $H$. The Cayley transform of $A$ is the bounded operator
+
+$$
+U = (A - iI)(A + iI)^{-1},
+$$
+
+where $(A + iI)^{-1}$ is the inverse of $A + iI$ when $A + iI$ is invertible, and $0$ otherwise. When $H$ is complete and $A$ is self-adjoint, $A + iI$ is [invertible](is-unit-add-i-smul-one-of-is-self-adjoin.md), so this is the inverse in the usual sense.

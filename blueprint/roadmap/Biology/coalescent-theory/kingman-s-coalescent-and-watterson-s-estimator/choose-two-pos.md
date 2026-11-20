@@ -1,3 +1,3 @@
 # Positivity of the number of pairs
 
-The number of pairs `k.choose 2` is positive for `k ∈ [2, n]`.
+For natural numbers $k$ and $n$ with $2 \le k \le n$, the number of pairs $\binom{k}{2}$ is positive.

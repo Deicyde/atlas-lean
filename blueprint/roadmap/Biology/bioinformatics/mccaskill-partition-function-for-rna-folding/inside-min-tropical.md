@@ -1,6 +1,3 @@
-# Tropical semiring
+# Inside value in the min-plus semiring is minus the Nussinov maximum
 
-With every base pair weighted `-1` in the min-plus semiring
-`MinTropical (WithTop ℤ)` (addition `min`, multiplication `+`), a structure with `k` pairs has
-weight `-k`, so the inside value of the whole sequence is minus the Nussinov maximum number of
-base pairs.
+In the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$ (addition $\min$, multiplication $+$), with every pair weighted $-1$, the [inside value](inside.md) of the whole sequence is $-\nu(s)$, where $\nu(s)$ is the [Nussinov maximum number of base pairs](../nussinov-algorithm-for-rna-secondary-structure/nussinov.md).

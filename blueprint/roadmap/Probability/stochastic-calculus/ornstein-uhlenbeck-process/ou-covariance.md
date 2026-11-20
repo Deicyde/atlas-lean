@@ -1,5 +1,11 @@
 # Covariance of the Ornstein–Uhlenbeck process started at zero
 
-The covariance function of the Ornstein–Uhlenbeck process started at `0`:
-`(σ² / (2θ)) (e^{-θ|t-s|} - e^{-θ(t+s)})` (Karatzas–Shreve 1991, Section 5.6). It is meant
-for `θ > 0` and times `s, t ≥ 0`; at `θ = 0` the division by zero makes it `0`.
+For real $\theta, \sigma, s, t$, the covariance function of the Ornstein–Uhlenbeck process started at zero is
+
+$$c(s, t) = \frac{\sigma^2}{2\theta} \Bigl( e^{-\theta |t - s|} - e^{-\theta (t + s)} \Bigr),$$
+
+with $\sigma^2/0 = 0$ (so $c = 0$ for $\theta = 0$). It is the covariance of interest for $\theta > 0$ and $s, t \ge 0$.
+
+## Sources
+
+- I. Karatzas and S. E. Shreve, *Brownian Motion and Stochastic Calculus*, 2nd ed., Springer, 1991, Section 5.6.

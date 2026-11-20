@@ -1,5 +1,4 @@
-# One-element Fibonacci heap
+# Single-node Fibonacci tree
 
-For a value $x$ of a linearly ordered type, the one-element
-Fibonacci heap on $x$ has as its only tree the single-node tree with root $x$, and its cached
-minimum is $x$.
+For a value $x$ of any type, the single-node Fibonacci tree on $x$ is the Fibonacci tree with
+stored degree $0$, root $x$ and no children.

@@ -12,11 +12,13 @@ every natural number $N \ge 2$.
 number $N \ge 2$, the number $c_M(N)$ of Hurwitz quaternions whose norm is a positive integer
 $n \le N$ coprime to $M$ satisfies
 
-$$\Bigl| c_M(N) - \pi^2 N^2 \cdot \frac{\varphi(2M)}{M}
-\prod_{p \mid M} \Bigl(1 - \frac{1}{p^2}\Bigr) \Bigr| \le C N \log N,$$
+$$
+\Bigl| c_M(N) - \pi^2 N^2 \cdot \frac{\varphi(2M)}{M}
+\prod_{p \mid M} \Bigl(1 - \frac{1}{p^2}\Bigr) \Bigr| \le C N \log N,
+$$
 
 where $\varphi$ is Euler's totient function and the product runs over the primes $p$ dividing $M$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 2.
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Lemma 2.

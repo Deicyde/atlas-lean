@@ -5,4 +5,4 @@ successful Bellman-Ford run consists of a source vertex $s$, for every vertex a 
 either an integer or $\infty$, and for every vertex an optional predecessor edge (a weighted
 directed edge, or none).
 
-The structure only records these values; that they are shortest-path data is proved separately.
+The structure only records these values; it imposes no condition relating them to shortest paths.

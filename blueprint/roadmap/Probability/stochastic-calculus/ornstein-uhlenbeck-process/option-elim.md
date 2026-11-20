@@ -1,5 +1,5 @@
 # Adjoining an independent Gaussian variable
 
-If `X₀` is a real Gaussian random variable
-independent of the real Gaussian process `B`, the process indexed by `Option T` that is `X₀` at
-`none` and `B t` at `some t` is a Gaussian process.
+Let $X_0$ be a real random variable with a Gaussian law, $B = (B_t)_{t \in T}$ a real Gaussian process, and suppose
+$X_0$ is independent of $B$. Then the process indexed by $T \cup \{\star\}$ that equals $X_0$ at the new index
+$\star$ and $B_t$ at $t \in T$ is a Gaussian process.

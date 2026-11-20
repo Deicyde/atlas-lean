@@ -1,6 +1,7 @@
 # Normalized composite score
 
-The normalized composite score: the normalized ratio of the products of the
-component score functions. This is the posterior probability of selection given the
-observed component values when the score functions are normalized densities
-(see `sum_joint_eq_one` for the normalization hypothesis).
+In a [composite-score model](composite-model.md) with prior $\pi$, the normalized composite score of an observation $x = (x_1, \dots, x_k)$ is
+
+$$\mathrm{Post}(x) = \frac{\pi \prod_i s_i(x_i)}{\pi \prod_i s_i(x_i) + (1 - \pi) \prod_i n_i(x_i)}.$$
+
+When the score functions are normalized densities it is the posterior probability of selection given $x$.

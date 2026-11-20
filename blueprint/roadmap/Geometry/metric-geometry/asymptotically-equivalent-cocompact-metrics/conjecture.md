@@ -7,4 +7,4 @@ is a real number $C$ such that $|d_1(x, y) - d_2(x, y)| \le C$ for all $x, y \in
 
 ## Sources
 
-- open question of [OWR-1319-022] (Geometric Group Theory, Hyperbolic Dynamics and Symplectic Geometry (2007), Oberwolfach Reports, DOI 10.4171/owr/2006/33, pp. 1991--2058).
+- Open question in *Geometric Group Theory, Hyperbolic Dynamics and Symplectic Geometry*, Oberwolfach Reports 3 (2006), 1991–2058, DOI 10.4171/OWR/2006/33.

@@ -6,4 +6,5 @@ dimension $n$ satisfies $\sigma_n \le C n^{3/8}$.
 
 ## Sources
 
-- Fleury, J. Funct. Anal. 259 (2010), 832--841; catalogue `constants/20a.md`.
+- B. Fleury, *Concentration in a thin Euclidean shell for log-concave measures*, J. Funct. Anal. 259 (2010),
+  832–841; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

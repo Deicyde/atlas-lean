@@ -16,4 +16,4 @@ $\mathrm{PV}\int_0^x \frac{dt}{\log t}$. In particular $\mathrm{li}(0) = 0$.
 
 ## Sources
 
-- arXiv:2306.14073v1 and arXiv:2309.16007v1, normalized lower limit `0` and Cauchy principal value at `t = 1` via symmetric pairing.
+- Shane Chern, *Hitting a prime by rolling a die with infinitely many faces*, arXiv:2306.14073v1 (2023), and M. Boran, J. Byun, Z. Li, S. J. Miller and S. Reyes, *Sums of Powers of Primes in Arithmetic Progression*, arXiv:2309.16007v1 (2023): lower limit $0$ and Cauchy principal value at $t = 1$, here written by symmetric pairing.

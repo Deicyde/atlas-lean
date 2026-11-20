@@ -1,4 +1,5 @@
 # Spin-structure character of a mod 2 homology class
 
-The spin-structure character `(-1)^{(1 + a) h₁ + (1 + b) h₂ + h₁ h₂}` of a homology class `h`
-mod 2, for boundary phases `a, b`.
+For $a, b \in \{0, 1\}$ and $h = (h_1, h_2) \in \{0, 1\}^2$, the character is
+
+$$\chi_{a,b}(h) = (-1)^{(1 + a) h_1 + (1 + b) h_2 + h_1 h_2}.$$

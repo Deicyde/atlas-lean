@@ -1,3 +1,3 @@
 # Two-locus covariance under complete linkage
 
-Complete linkage: `Cov(T_A, T_B) = 1 = Var T_A`.
+At $\rho = 0$, the [two-locus covariance](two-locus-cov.md) is $\operatorname{Cov}(0) = 1$, the variance of the coalescence time at one locus.

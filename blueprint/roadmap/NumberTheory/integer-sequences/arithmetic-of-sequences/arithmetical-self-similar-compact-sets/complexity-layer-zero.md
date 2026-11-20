@@ -8,4 +8,4 @@ $n$ is stable and $\lVert n \rVert = 3k + 2$.
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 3, equation (7).
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Section 3, equation (7).

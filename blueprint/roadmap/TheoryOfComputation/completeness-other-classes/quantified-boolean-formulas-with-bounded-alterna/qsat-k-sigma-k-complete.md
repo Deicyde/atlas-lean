@@ -6,4 +6,4 @@ $L$ in $\Sigma_k^p$ reduces to $\mathrm{QSAT}_k$ by a polynomial-time many-one r
 
 ## Sources
 
-- L. J. Stockmeyer, "The polynomial-time hierarchy", Theoretical Computer Science 3 (1977), 1-22; A. R. Meyer, "A polynomial hierarchy" (see also S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 5).
+- Larry J. Stockmeyer, "The polynomial-time hierarchy", Theoretical Computer Science 3 (1976), 1-22; Albert R. Meyer, "A polynomial hierarchy" (see also Sanjeev Arora and Boaz Barak, Computational Complexity: A Modern Approach, 2009, Chapter 5).

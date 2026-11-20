@@ -6,4 +6,4 @@ PARTITION INTO TRIANGLES.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PARTITION INTO TRIANGLES; D. G. Kirkpatrick and P. Hell, "On the complexity of general graph factor problems", SIAM Journal on Computing 12 (1983), 601-609.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), PARTITION INTO TRIANGLES; David G. Kirkpatrick and Pavol Hell, "On the complexity of general graph factor problems", SIAM Journal on Computing 12 (1983), 601-609.

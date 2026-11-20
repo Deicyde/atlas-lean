@@ -1,4 +1,3 @@
-# Rescaled purity lies in (0, 1)
+# Rescaled purity lies in the closed unit interval
 
-The rescaled purity is again a purity: `0 ≤ α / (m - (m - 1) α) ≤ 1` for `m > 0` and
-`0 ≤ α ≤ 1`.
+For $m > 0$ and $0 \le \alpha \le 1$, the [rescaled purity](scaled-purity.md) satisfies $0 \le \alpha_m \le 1$.

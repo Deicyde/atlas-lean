@@ -1,4 +1,3 @@
 # $p_c(2) < 1$ from the Peierls contour bound
 
-`p_c(2) < 1`, assuming the Peierls contour bound `PcContourBound` for all `p` above some
-`p₀ < 1`.
+Assume there is $p_0 < 1$ such that the [Peierls contour bound](pc-contour-bound.md) holds at every $p \in (p_0, 1]$. Then the critical probability of bond percolation on $\mathbb{Z}^2$ satisfies $p_c(2) < 1$.

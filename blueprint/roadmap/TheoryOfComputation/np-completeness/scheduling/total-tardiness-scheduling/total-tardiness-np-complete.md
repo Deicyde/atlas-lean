@@ -5,4 +5,4 @@ every decision problem in NP reduces to it by a polynomial-time many-one reducti
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), TOTAL TARDINESS (1||sum T_j); J. Du and J. Y.-T. Leung, "Minimizing total tardiness on one machine is NP-hard" (1990).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), TOTAL TARDINESS (1||sum T_j); Jianzhong Du and Joseph Y.-T. Leung, "Minimizing total tardiness on one machine is NP-hard" (1990).

@@ -1,4 +1,4 @@
-# Euler numbers of order α
+# Euler numbers of order $\alpha$
 
 Let $E_m(x)$ denote the Euler polynomial. For a complex number
 $\alpha$, the Euler numbers of order $\alpha$ are the complex numbers $E_n^{(\alpha)}(0)$,
@@ -10,4 +10,4 @@ This is the coefficient recurrence of the generating function $(2/(e^t + 1))^\al
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (generalized Euler polynomials).
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Section 1 (generalized Euler polynomials).

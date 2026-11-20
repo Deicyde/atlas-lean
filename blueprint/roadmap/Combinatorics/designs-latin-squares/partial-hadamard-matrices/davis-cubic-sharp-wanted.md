@@ -9,4 +9,4 @@ ratio $N_{n_k, 4t_k} / A_{n_k, 4t_k}$ does not tend to $1$.
 
 ## Sources
 
-- Davis (2026), same paper: a nonvanishing correction at `t = Θ n³` for large fixed `Θ` blocks every smaller exponent for the leading term alone.
+- Damek Davis, *Counting partial Hadamard matrices in the cubic regime*, arXiv:2603.30013 (2026): in the regime $t / n^3 \to \Theta$ for large fixed $\Theta$ the asymptotic formula carries a nonvanishing correction, so no smaller exponent works for the leading term alone.

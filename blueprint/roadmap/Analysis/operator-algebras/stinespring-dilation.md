@@ -8,4 +8,4 @@ is the adjoint of $V$.
 
 ## Sources
 
-- Stinespring dilation theorem, W. F. Stinespring, Proc. Amer. Math. Soc. 6 (1955); see Paulsen, Completely Bounded Maps; Lean is general CP map A →CP B(H) dilation V† π(a) V, not finite-dimensional Kraus form.
+- Stinespring dilation theorem, W. F. Stinespring, Proc. Amer. Math. Soc. 6 (1955); see Paulsen, Completely Bounded Maps. The statement here is the dilation $V^* \pi(a) V$ of a general completely positive map $A \to B(H)$, not the finite-dimensional Kraus form.

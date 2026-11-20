@@ -8,4 +8,4 @@ $i \ge 1$), it is the constant series equal to the constant term of $F$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex.
+- Jason P. Bell, Michael Coons, and Eric Rowland, *The Rational-Transcendental Dichotomy of Mahler Functions*, Journal of Integer Sequences 16 (2013), Article 13.2.10, Section 1 (the substitution $F(z^{k^i})$ in the Mahler-type functional equation), https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex.

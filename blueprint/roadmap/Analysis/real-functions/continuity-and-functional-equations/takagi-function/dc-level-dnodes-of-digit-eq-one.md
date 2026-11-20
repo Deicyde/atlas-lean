@@ -6,4 +6,4 @@ $n$) equals $1$. Then the level count of D-nodes is $\lambda_i(n) = 2^i - (n \bm
 
 ## Sources
 
-- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 11 (`exp_D_closed`).
+- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Theorem 11.

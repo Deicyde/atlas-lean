@@ -5,4 +5,4 @@ on input $n$.
 
 ## Sources
 
-- Sipser, Theorem 5.1, for codes of partial recursive functions run on $n$.
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Theorem 5.1, for codes of partial recursive functions run on $n$.

@@ -9,4 +9,4 @@ $0^0 = 1$.
 
 ## Sources
 
-- Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation `Bell_Gen`, lines 113–117, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.tex>.
+- Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation (3), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.pdf>.

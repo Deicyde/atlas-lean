@@ -8,4 +8,4 @@ In particular a one-element list $[v]$ is a cycle when $(v, v)$ is an edge of th
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of `M`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of $M$).

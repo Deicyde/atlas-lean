@@ -1,4 +1,4 @@
 # Rank of a priority in a parity game
 
-The rank of a priority `p` among the distinct priorities occurring in
-the game: the number of distinct priorities `q < p` that occur.
+Let $G$ be a parity game on the positions $0, \dots, n - 1$. For $p \in \mathbb{N}$, the rank of $p$
+is the number of distinct priorities $q < p$ that occur as the priority of some position of $G$.

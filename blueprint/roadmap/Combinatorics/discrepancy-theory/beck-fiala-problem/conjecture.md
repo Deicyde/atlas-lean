@@ -14,4 +14,4 @@ $O(\sqrt{t \log t})$.
 
 ## Sources
 
-- AIM-COMBINATORICS-0044__20000919; AIM Hereditary discrepancy, item 1.7.
+- AimPL: Hereditary discrepancy and factorization norms, Problem 1.7 (Beating LLL), http://aimpl.org/hereddiscrep/1/.

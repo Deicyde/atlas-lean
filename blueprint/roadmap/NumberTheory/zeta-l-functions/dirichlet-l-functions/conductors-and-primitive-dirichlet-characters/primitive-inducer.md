@@ -6,3 +6,7 @@ number $d$, its level, with $d \mid m$, together with a Dirichlet character $\ps
 with values in $R$ that is primitive, that is, whose conductor is $d$. These are the elements of
 the set $X(m)$ of Corollary 18.16; changing the level of $\psi$ from $d$ to $m$ gives the induced
 Dirichlet character of level $m$.
+
+## Sources
+
+- ATLAS NumberTheoryI, Section 18.2.1, Corollary 18.16.

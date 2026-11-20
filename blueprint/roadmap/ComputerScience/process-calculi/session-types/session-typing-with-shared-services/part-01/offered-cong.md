@@ -1,4 +1,4 @@
 # Structural congruence preserves persistent service offers
 
-ALL16 actual Cong rules preserve persistent service offering, including wrappers
-inside replication and actual replica unfolding. No closure constructor is used.
+Let $s$ be a natural number and $p \equiv q$ structurally congruent processes. Then $p$ offers
+$\mathrm{c}_s$ persistently if and only if $q$ does.

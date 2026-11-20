@@ -8,4 +8,4 @@ $$\sum_{i=0}^{n} (-1)^i L_{k,2(i+m)} = (-1)^n F_{k,2(n+m)+1} + F_{k,2m-1}.$$
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Corollary 9.
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Corollary 9.

@@ -8,4 +8,4 @@ $$t(n) = t(n-1) + 1 + 2 \sum_{i=1}^{\lfloor n/2 \rfloor - 1} t(n-2i-1).$$
 
 ## Sources
 
-- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Proposition 7.
+- Brian Hopkins and Hua Wang, "Allowing or Prohibiting Two Consecutive Colors in `n`-Color Compositions", Journal of Integer Sequences 27 (2024), Article 24.7.8, Proposition 7.

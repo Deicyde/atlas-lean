@@ -10,4 +10,4 @@ subtraction truncated at $0$.
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.4 and Table 2.
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), no. 4, 290–304, Definition 2.4 and Table 2.

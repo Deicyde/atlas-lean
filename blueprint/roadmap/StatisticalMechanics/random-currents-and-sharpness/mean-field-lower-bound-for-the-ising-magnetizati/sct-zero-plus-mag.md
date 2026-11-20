@@ -1,4 +1,4 @@
 # Zero-field limit of the positive-field magnetization
 
-The zero-field limit `m⁺(β) = inf_k m(β, h_k)` of the infinite-volume magnetization in positive
-field.
+For $d \in \mathbb{N}$ and $\beta \in \mathbb{R}$, this is $m^+(\beta) = \inf_k m(\beta, h_k)$, with $h_k = 1/(k + 1)$ and
+$m(\beta, h)$ the [infinite-volume magnetization in field $h$](sct-infinite-field-mag.md).

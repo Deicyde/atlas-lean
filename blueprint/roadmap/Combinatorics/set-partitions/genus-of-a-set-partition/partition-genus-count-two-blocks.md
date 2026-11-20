@@ -10,4 +10,4 @@ when $n \ne 2p$, and half of this number when $n = 2p$.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 14 (`jis-2024-24.2.6-prop-14`).
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 14.

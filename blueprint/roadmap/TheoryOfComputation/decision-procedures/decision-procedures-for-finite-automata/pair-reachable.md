@@ -2,7 +2,7 @@
 
 For encoded DFAs $D$ and $E$ over the same
 alphabet, code a pair $(s, t)$ of natural numbers by its image $\langle s, t \rangle \in \mathbb{N}$
-under Mathlib's pairing function. The reachable pairs of $D$ and $E$ form the list returned by the
+under the pairing function $\langle s, t \rangle$, equal to $t^2 + s$ if $s < t$ and to $s^2 + s + t$ otherwise. The reachable pairs of $D$ and $E$ form the list returned by the
 bounded reachability search on lists of states started at $\langle s_D, s_E \rangle$, where $s_D$
 and $s_E$ are the start states of $D$ and $E$, kept inside the list of coded pairs of states of
 $D$ and $E$, and in which the successors of a number $p = \langle s, t \rangle$ are the numbers

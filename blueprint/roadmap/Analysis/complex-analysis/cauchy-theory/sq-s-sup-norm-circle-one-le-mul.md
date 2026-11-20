@@ -2,13 +2,16 @@
 
 Let
 $f:\mathbb{C}\to\mathbb{C}$ be an entire function and, for $r>0$, let
-\[
+
+$$
 A(r)=\sup\{\lvert f(z)\rvert:\lvert z-r\rvert=r\}.
-\]
+$$
+
 Then
-\[
+
+$$
 A(1)^{2}\le A(2)\,A\!\left(\frac{2}{3}\right).
-\]
+$$
 
 ## Sources
 

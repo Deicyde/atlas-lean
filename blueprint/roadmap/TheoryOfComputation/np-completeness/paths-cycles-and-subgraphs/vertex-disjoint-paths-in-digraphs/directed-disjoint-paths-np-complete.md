@@ -6,4 +6,4 @@ reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), DISJOINT PATHS; S. Fortune, J. Hopcroft, and J. Wyllie, "The directed subgraph homeomorphism problem" (1980).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), DISJOINT PATHS; Steven Fortune, John Hopcroft, and James Wyllie, "The directed subgraph homeomorphism problem" (1980).

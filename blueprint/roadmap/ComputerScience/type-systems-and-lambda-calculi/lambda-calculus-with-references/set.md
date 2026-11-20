@@ -6,3 +6,7 @@ type $T$. If $v$ is a value of type $T$ under $\Gamma$ and $S$, then the store o
 $\mu$ by overwriting the entry at $l$ with $v$ is well typed under $\Gamma$ and $S$.
 
 This is TAPL Lemma 13.5.5.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Lemma 13.5.5.

@@ -1,6 +1,6 @@
-# The free q = 2 random-cluster measures increase with the box
+# The free $q = 2$ random-cluster measures increase with the box
 
-## A. The wiring induced by an outer configuration
+## The wiring induced by an outer configuration
 
 - [Wiring induced on a box by outer open edges](induced-wiring-free.md)
 - [Adjacency criterion for the free induced wiring](induced-wiring-free-adj.md)
@@ -13,7 +13,7 @@
 - [Glued connections between inner vertices are inner-graph connections](inner-graph-free-reachable-of-full-graph.md)
 - [Glued open edges at outer vertices are outer edges](full-graph-free-adj-of-outside.md)
 
-## B. Clusters of a glued configuration
+## Clusters of a glued configuration
 
 - [Outer vertex whose outer open cluster avoids the inner box](outside-only-free.md)
 - [A vertex whose outer cluster avoids the inner box lies outside it](outside-only-free-self-not-inner.md)
@@ -31,18 +31,18 @@
 - [Number of outer open clusters avoiding the inner box](outside-shift-free.md)
 - [Cluster count of a glued configuration splits additively](num-clusters-psi-ext-free.md)
 
-## C. Domain Markov property for the free measure
+## Domain Markov property for the free measure
 
 - [Outer factor of the weight of a glued configuration](psi-shift-free.md)
 - [Positivity of the outer weight factor](psi-shift-free-pos.md)
 - [Random-cluster weight of a glued configuration factorizes](fk-weight-psi-ext-free.md)
 - [Conditional partition function in terms of the induced wiring](induced-fk-z-inner-edge-finset-psi-free.md)
-- [Domain Markov property](cond-fk-prob-psi-ext-eq-bc-prob-free.md)
+- [Domain Markov property for the free measure on nested boxes](cond-fk-prob-psi-ext-eq-bc-prob-free.md)
 - [Fibre masses of the free measure sum to one](sum-fibre-mass-eq-one-free.md)
 - [Fibre-mass factorization of random-cluster probabilities](fk-prob-eq-fibre-mass-mul-cond-fk-prob.md)
 - [Conditional free probabilities depend only on the outer configuration](cond-fk-prob-congr-dom-free.md)
 
-## D. The free measures increase with the box
+## The free measures increase with the box
 
 - [Decomposition of the free measure over the outer configuration](free-succ-fk-prob-decompose.md)
 - [Conditional free measure as an induced-wiring measure](cond-fk-prob-psi-ext-sum-eq-induced-box.md)
@@ -53,7 +53,7 @@
 - [Next-box free measure of a cylinder event as a finite sum](free-finite-measure-succ-real-inner-rest.md)
 - [Increasing box events gain free $q = 2$ probability in the next box](free-finite-measure-smaller-box-le-succ.md)
 
-## E. The free infinite-volume limit on increasing cylinder events
+## The free infinite-volume limit on increasing cylinder events
 
 - [One-step growth of free $q = 2$ measures of increasing cylinders](fk-free-limit-le-succ.md)
 - [Free $q = 2$ box measures of increasing cylinders are monotone](fk-free-limit-monotone.md)

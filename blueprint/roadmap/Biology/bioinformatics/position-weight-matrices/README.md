@@ -1,5 +1,7 @@
 # Position weight matrices
 
+## Scores, likelihoods and information content
+
 - [Score of a site under a position weight matrix](score.md)
 - [Site likelihood under a column-independent model](site-lik.md)
 - [Background likelihood of a sequence](bg-lik.md)
@@ -15,25 +17,34 @@
 - [Information content is at most the log of the alphabet size](info-content-uniform-le.md)
 - [A DNA column carries at most two bits](info-content-uniform-le-two.md)
 - [The expected log-odds score is the total information content](sum-site-lik-mul-score-log-odds.md)
+
+## Exact score distributions
+
 - [One column step of the score-distribution recursion](score-step.md)
 - [Background score distribution of an integer matrix](score-dist.md)
 - [The column recursion computes the exact score distribution](score-dist-apply.md)
 - [Exact p-value of a score threshold](p-value.md)
 - [Exact p-values](p-value-eq.md)
-- [Scaling and rounding error](abs-score-sub-score-round-le.md)
+- [Error of scaling and rounding a weight matrix](abs-score-sub-score-round-le.md)
+
+## Boltzmann selection
+
 - [Column partition function of an energy matrix](partition-fn.md)
 - [Boltzmann position weight matrix](boltzmann-pwm.md)
 - [Law of energy-selected background sites](selected-law.md)
 - [Positivity of the column partition function](partition-fn-pos.md)
 - [Columns of the Boltzmann matrix are distributions](is-dist-boltzmann-pwm.md)
-- [Berg–von Hippel](selected-law-eq-site-lik.md)
+- [Boltzmann selection gives the Boltzmann position weight matrix](selected-law-eq-site-lik.md)
 - [Log-odds are affine in the energies](log-odds-boltzmann-pwm.md)
 - [Log-odds score of a selected site is its scaled energy up to a constant](score-log-odds-boltzmann-pwm.md)
+
+## Motif-finding EM
+
 - [Sequence position of a motif column](site-pos.md)
 - [Window of a sequence at a given start](window.md)
 - [Likelihood ratio of a motif window](window-ratio.md)
 - [Joint likelihood of a sequence and a motif occurrence](motif-joint.md)
-- [The joint is the window model](motif-joint-of-start-eq-some.md)
+- [The joint likelihood is the window model](motif-joint-of-start-eq-some.md)
 - [Joint likelihood with no motif occurrence](motif-joint-of-start-eq-none.md)
 - [Positive position weight matrices](pos-pwm.md)
 - [Motif model as an EM model](motif-model.md)
@@ -45,13 +56,19 @@
 - [M-step for position weight matrices](m-step.md)
 - [The M-step maximizes the EM objective](em-q-le-em-q-m-step.md)
 - [The motif likelihood is nondecreasing along the EM iterates](log-lik-iterate-m-step-monotone.md)
+
+## Karlin–Altschul theory of score matrices
+
 - [Moment generating function of a pair score](pair-mgf.md)
-- [Karlin–Altschul `λ`](exists-unique-pair-mgf-eq-one.md)
+- [Existence and uniqueness of the Karlin–Altschul parameter](exists-unique-pair-mgf-eq-one.md)
 - [Implicit target frequencies of a score matrix](target-freq.md)
 - [Target frequencies form a distribution on pairs](is-dist-target-freq.md)
 - [Every such score matrix is a log-odds matrix](score-eq-log-target-freq.md)
 - [The relative entropy of the target frequencies](rel-entropy-eq-and-nonneg.md)
 - [The target score is positive](sum-target-freq-mul-pos.md)
+
+## Convolution filters as position weight matrix scans
+
 - [One-hot encoding of a letter](one-hot.md)
 - [Convolution filter response at a window](conv.md)
 - [Window of a sequence starting at a position](window-2.md)
@@ -60,11 +77,11 @@
 - [Every window's PWM score is at most the max-pooled output](le-max-pool.md)
 - [Max pooling returns the best PWM hit](exists-eq-max-pool.md)
 - [Bias and ReLU commute with max pooling](max-pool-relu.md)
-- [Translation equivariance](conv-shift.md)
+- [Translation equivariance of the convolution response](conv-shift.md)
 - [Reverse complement of a sequence prefix](rc-seq.md)
 - [Reverse-complement filter](rc-filter.md)
 - [The reverse-complement filter scans the other strand](conv-rc-filter.md)
-- [Max pooling the reverse-complement filter equals max pooling `W` on the reverse complement](max-pool-rc-filter.md)
+- [Max pooling the reverse-complement filter equals max pooling the filter on the reverse complement](max-pool-rc-filter.md)
 - [Filter responses read only positions within the sequence length](max-pool-congr.md)
 - [Both-strand convolution score](both-strands.md)
 - [The both-strand score is invariant under reverse complementing the sequence](both-strands-rc-seq.md)

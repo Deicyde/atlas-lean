@@ -1,6 +1,3 @@
 # Ising partition function
 
-For a positive integer $L$ and real $\beta$, the partition
-function of the Ising model on the periodic $L \times L$ square lattice at inverse temperature
-$\beta$ is $Z_L(\beta) = \sum_\sigma e^{-\beta H_L(\sigma)}$, where $\sigma$ runs over all spin
-configurations on the lattice and $H_L(\sigma)$ is the Ising energy of $\sigma$.
+For $L \ge 1$ and $\beta \in \mathbb{R}$, the partition function is $Z_L(\beta) = \sum_\sigma e^{-\beta H_L(\sigma)}$, the sum over all $\sigma : (\mathbb{Z}/L\mathbb{Z})^2 \to \{0, 1\}$, where $H_L$ is the [energy](ising-energy.md).

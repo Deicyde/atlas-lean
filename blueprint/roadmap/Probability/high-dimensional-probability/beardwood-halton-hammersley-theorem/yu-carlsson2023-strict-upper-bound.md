@@ -5,4 +5,5 @@ Beardwood–Halton–Hammersley constant $\beta_2$ of the unit square satisfies 
 
 ## Sources
 
-- [YC2023], strict computer-aided upper bound.
+- J. Yu and J. G. Carlsson, *A new upper bound for the Euclidean TSP constant*, preprint, Optimization Online (2023),
+  https://optimization-online.org/?p=23315 (computer-aided).

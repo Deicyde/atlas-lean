@@ -9,7 +9,9 @@ and, for monic $f$, let
 $S_f(\alpha, \beta; n) = \sum_{g \text{ monic},\ \deg f + \deg g \le n} (\alpha * \beta)(fg)$.
 Then
 
-$$D(\gamma, \alpha, \beta; n) = \sum_{f \in M_{\le n}} \lambda(f)\, S_f(\alpha, \beta; n).$$
+$$
+D(\gamma, \alpha, \beta; n) = \sum_{f \in M_{\le n}} \lambda(f)\, S_f(\alpha, \beta; n).
+$$
 
 ## Sources
 

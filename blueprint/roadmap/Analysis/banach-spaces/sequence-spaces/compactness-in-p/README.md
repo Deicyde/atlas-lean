@@ -14,7 +14,7 @@
 - [Pointwise action of the finite $\ell^p$ lift](lp-lift-apply.md)
 - [Pointwise action of $\ell^p$ truncation](lp-trunc-apply.md)
 
-## Norm
+## Norm estimates and compactness
 
 - [Truncation equals the Schauder basis projection](lp-trunc-eq-lp-schauder-basis-proj.md)
 - [Truncation is a contraction on $\ell^p$](norm-lp-trunc-le.md)

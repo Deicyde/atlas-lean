@@ -6,4 +6,4 @@ $n \equiv 4 \pmod 8$ or $n \equiv 6 \pmod 8$, and odd otherwise.
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 11 (`jis-2026-26.2.6-thm-11`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 11.

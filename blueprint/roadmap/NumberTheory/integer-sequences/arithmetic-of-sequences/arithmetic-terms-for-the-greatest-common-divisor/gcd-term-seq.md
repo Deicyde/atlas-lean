@@ -8,4 +8,4 @@ or $b = 0$ the series is $0$, whose inverse is taken to be $0$, so $s_{a,b}(n) =
 
 ## Sources
 
-- Mihai Prunescu and Joseph M. Shunia, *Arithmetic-Term Representations for the Greatest Common Divisor*, INTEGERS 26 (2026), Article A96, Section 2 (definition of `s_{a,b}`).
+- Mihai Prunescu and Joseph M. Shunia, *Arithmetic-Term Representations for the Greatest Common Divisor*, INTEGERS 26 (2026), Article A96, Definition 2 (the sequence $s_{a,b}$).

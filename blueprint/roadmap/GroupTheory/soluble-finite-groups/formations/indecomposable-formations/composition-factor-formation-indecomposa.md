@@ -1,4 +1,4 @@
-# Kourovka Problem 12.97 (Shemetkov)
+# Indecomposability of the formation $\mathfrak{F}_T$ (Kourovka 12.97)
 
 For a group $T$, write $\mathfrak{F}_T$ for the class
 of groups having a subnormal series all of whose factors are isomorphic to $T$. This is the

@@ -1,6 +1,5 @@
 # Stampacchia's theorem, bilinear-form form
 
-For a coercive bounded
-bilinear form `B` on a real Hilbert space, a nonempty closed convex set `K`,
-and a continuous linear functional `φ`, there is exactly one `u ∈ K` with
-`B u (v - u) ≥ φ (v - u)` for all `v ∈ K`.
+Let $E$ be a real Hilbert space, $K \subseteq E$ a nonempty closed convex set, $B$ a bounded bilinear
+form on $E$ and $\alpha > 0$ with $\alpha \|u\|^2 \le B(u, u)$ for every $u$, and $\varphi \in E^*$.
+Then there is exactly one $u \in K$ with $B(u, v - u) \ge \varphi(v - u)$ for every $v \in K$.

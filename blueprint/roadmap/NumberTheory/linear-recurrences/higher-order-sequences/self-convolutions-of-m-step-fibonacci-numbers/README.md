@@ -8,7 +8,7 @@
 - [Fibonacci numbers at integer indices](fib-q.md)
 - [Fibonacci self-convolution](fib-walk-count.md)
 - [Even part of the Fibonacci self-convolution](even-fib-walk-count.md)
-- [Odd part of the Fibonacci walk count](odd-fib-walk-count.md)
+- [Odd part of the Fibonacci self-convolution](odd-fib-walk-count.md)
 - [Recurrence for the shifted self-convolution of higher-order Fibonacci numbers](higher-fib-walk-recurrence.md)
 - [Closed form for weighted sums of an $m$-step Fibonacci sequence](weighted-higher-fib-sum-eq.md)
 - [Explicit formula for the shifted self-convolution of higher-order Fibonacci numbers](higher-fib-walk-eq-weighted-sums.md)

@@ -1,3 +1,5 @@
 # Recovery is a left inverse of the finite embedding
 
-The finite embedding has a literal left inverse.
+For every finite binary session type $S$, $\pi(\iota(S))$ is defined and equals $S$, where $\iota$
+embeds session types as passive-name protocols and $\pi$ is the partial recovery map (defined on
+protocols built from $\mathrm{end}$ and passive-name sends and receives only).

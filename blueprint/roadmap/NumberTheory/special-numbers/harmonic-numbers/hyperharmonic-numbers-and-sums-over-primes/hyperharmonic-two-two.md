@@ -8,4 +8,4 @@ harmonic number.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Lemma 1 (hyperharmonic numbers `h_n^{(r)}`, after Mező).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Lemma 1 (hyperharmonic numbers $h_n^{(r)}$, after Mező).

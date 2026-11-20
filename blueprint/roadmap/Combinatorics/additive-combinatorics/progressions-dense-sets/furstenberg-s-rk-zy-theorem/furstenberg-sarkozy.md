@@ -7,4 +7,4 @@ number $k > 0$ with $a < b$ and $b = a + k^2$.
 
 ## Sources
 
-- A. Sárközy, Acta Math. Acad. Sci. Hungar. 31 (1978) and H. Furstenberg, J. Analyse Math. 31 (1977); Lean states positive upper density via `initialSegmentCount` with arbitrarily large N.
+- András Sárközy, "On difference sets of sequences of integers. I", *Acta Math. Acad. Sci. Hungar.* 31 (1978), 125–149, and Hillel Furstenberg, "Ergodic behavior of diagonal measures and a theorem of Szemerédi on arithmetic progressions", *J. Analyse Math.* 31 (1977), 204–256; the density hypothesis is positive upper density, expressed through arbitrarily large $N$.

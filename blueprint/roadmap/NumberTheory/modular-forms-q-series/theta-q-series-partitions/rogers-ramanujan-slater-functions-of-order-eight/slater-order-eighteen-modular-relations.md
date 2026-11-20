@@ -51,7 +51,7 @@ These are the source's relations (12)–(18), in order, for $P_n = P(q^n)$, $Q_n
 $R_n = R(q^n)$, where $P(q) = f(-q^7,-q^{11})/f(-q^6)$, $Q(q) = f(-q^5,-q^{13})/f(-q^6)$ and
 $R(q) = f(-q,-q^{17})/f(-q^6)$ are the order-eighteen functions and $f(-q^6) = f_6$.
 
-Deviation: in (14), the third relation, the paper prints $f_{48}$ in the last denominator; that
+In (14), the third relation, the paper prints $f_{48}$ in the last denominator; that
 is false (the coefficients of $q^{56}$ of the two sides are $0$ and $-1$). The statement uses
 $f_{54}$, the $f_{6n}$ factor that (12), (13) and (15) carry at this place ($f_{48} = f_{6 \cdot 8}$
 is the value from (12)); with $f_{54}$ the relation checks exactly through $q^{198}$.

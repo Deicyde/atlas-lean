@@ -7,4 +7,4 @@ and $F_{F_n + 2}$ leaves remainder $1$ on division by $F_n$.
 
 ## Sources
 
-- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Theorem 2.
+- Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers," INTEGERS 25 (2025), Article A87, Theorem 2.

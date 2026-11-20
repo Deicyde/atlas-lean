@@ -1,4 +1,3 @@
 # Nonnegative weights of a profile HMM
 
-Nonnegative transition and emission weights (the transitions to the end state may have any
-sign: the Viterbi bound does not need them).
+A [profile HMM](profile-hmm.md) has nonnegative weights if $t_k(s, s') \ge 0$, $e^M_k(a) \ge 0$ and $e^I_k(a) \ge 0$ for all nodes, types and residues. The transitions into the end state may have any sign.

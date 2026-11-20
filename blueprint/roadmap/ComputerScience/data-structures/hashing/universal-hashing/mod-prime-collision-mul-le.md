@@ -7,7 +7,12 @@ $x \ne y$ in $\mathbb{Z}/p\mathbb{Z}$, the number of index pairs $(a, b)$ with $
 $h_{a,b}(x) = h_{a,b}(y)$, multiplied by $m$, is at most $p(p - 1)$, the total number of
 index pairs.
 
-This is the counting step of CLRS Theorem 11.5. The bijection
+This is the counting step of the universality of the mod-prime family. The bijection
 $(a, b) \mapsto (ax + b, ay + b)$ identifies the colliding index pairs with the pairs $(r, s)$
 of distinct residues modulo $p$ whose representatives in $\{0, \dots, p - 1\}$ are congruent
 modulo $m$.
+
+## Sources
+
+- T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein, *Introduction to Algorithms*, 3rd ed.,
+  MIT Press, 2009, Section 11.3.3, proof of Theorem 11.5 (the counting step).

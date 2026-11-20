@@ -22,7 +22,7 @@
 - [The pair map of the mod-prime family](pair-map.md)
 - [Evaluating the pair map](pair-map-apply.md)
 - [The two values of the pair map differ](pair-map-fst-ne-snd.md)
-- [Pair bijection of the CLRS counting argument](pair-equiv.md)
+- [Pair bijection of the mod-prime counting argument](pair-equiv.md)
 - [The pair bijection is given by the pair map](pair-equiv-apply-fst.md)
 - [The pair map is injective](pair-map-injective.md)
 - [Collision bound for the mod-prime hash functions](mod-prime-collision-mul-le.md)

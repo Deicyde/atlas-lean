@@ -1,6 +1,6 @@
 # GNS construction
 
-## Positive Linear Map
+## Cyclic vectors of states
 
 - [Existence of a unit cyclic vector in the GNS space](exists-gns-cyclic-vector.md)
 

@@ -1,3 +1,4 @@
 # Complexes of a chemical reaction network
 
-The complexes of the network: the sources and products of its reactions.
+Let $N$ be a [chemical reaction network](reaction-network.md) with species set $S$ and reaction set $\rho$. The complexes of $N$ are the vectors in $\mathbb{N}^S$ that occur as the source
+complex or the product complex of some reaction.

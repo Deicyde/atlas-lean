@@ -1,4 +1,3 @@
 # Transfer of an open walk avoiding a fixed edge
 
-An open walk for `ω_S` avoiding the edge `xy`, read as an open walk for `ω` when the two agree
-off `xy`.
+Let $G$ be a graph on $V$, $A \subseteq V$, $x, y \in A$, and $\omega_S, \omega$ configurations on unordered pairs of elements of $V$ that agree at every pair other than $\{x, y\}$. If $w$ is a walk inside $A$ using only open edges for $\omega_S$ and does not traverse $\{x, y\}$, then $w$ is a walk inside $A$ using only open edges for $\omega$.

@@ -1,3 +1,7 @@
 # Pointwise bound for Hardy-space functions
 
-The pointwise bound for `H²` functions: `‖f(z)‖ ≤ ‖f‖ / √(1 - ‖z‖²)`.
+For every $z \in \mathbb{C}$ with $|z| < 1$ and every $a \in \ell^2(\mathbb{N}, \mathbb{C})$, the [point evaluation](hardy-eval.md) satisfies
+
+$$
+|f_a(z)| \le \frac{\|a\|}{\sqrt{1 - |z|^2}}.
+$$

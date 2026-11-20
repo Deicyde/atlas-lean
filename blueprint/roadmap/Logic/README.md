@@ -9,7 +9,11 @@ models whose accessibility relation is arbitrary, reflexive, reflexive and trans
 [filtration](modal-logic/filtration-and-the-finite-model-property/README.md) gives each of them the finite model
 property. The field also has the [modal μ-calculus](modal-logic/modal-calculus/README.md), with least and greatest
 fixed points, and its [model-checking game](modal-logic/model-checking-game-for-the-modal-calculus/README.md), a parity
-game between Verifier and Refuter.
+game between Verifier and Refuter. The [provability logic GL](modal-logic/provability-logic-gl/README.md) reads $\Box$ as
+provability in Peano arithmetic: it is sound on transitive conversely well-founded frames, its fixed points make
+self-reference eliminable, and its realizations are theorems of every theory satisfying the Hilbert–Bernays–Löb
+conditions and the diagonal lemma; Beklemishev's [Reflection Calculus](modal-logic/reflection-calculus-and-worms/README.md), the strictly
+positive fragment of Japaridze's GLP, yields the worm notation system for $\varepsilon_0$.
 
 [Propositional logic](propositional-logic/README.md) covers natural deduction and its completeness,
 [Craig interpolation](propositional-logic/craig-interpolation/README.md) and satisfiability, from the

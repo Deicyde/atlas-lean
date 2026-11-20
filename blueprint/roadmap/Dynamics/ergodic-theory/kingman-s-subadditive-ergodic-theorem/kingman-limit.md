@@ -1,4 +1,8 @@
 # Kingman limit of a subadditive cocycle
 
-The limit `lim X n / n` in Kingman's theorem, defined as `limsup X n / n` cast to `ℝ` (so it is
-`0` where the `limsup` is infinite).
+For functions $X_n : \Omega \to \mathbb{R}$ ($n \ge 0$), the Kingman limit is
+
+$$\bar X(\omega) = \limsup_{n \to \infty} \frac{X_n(\omega)}{n},$$
+
+computed in $[-\infty, \infty]$ (it is the [upper limit](g-star.md) $g^*$) and read as a real number, with $\pm\infty$
+replaced by $0$. Where $X_n(\omega)/n$ converges to a real number, $\bar X(\omega)$ is its limit.

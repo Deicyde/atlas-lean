@@ -7,6 +7,6 @@ $n$ and $k$, are defined by $w(0, 0) = 1$, $w(0, k + 1) = 0$ and, for all $n$ an
 
 $$w(n + 1, 0) = -q^{-n} (m [n]_q + r) \, w(n, 0),$$
 
-
+and
 
 $$w(n + 1, k + 1) = q^{-n} \bigl( w(n, k) - (m [n]_q + r) \, w(n, k + 1) \bigr).$$

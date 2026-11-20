@@ -1,3 +1,4 @@
 # Row sum bound for the Hilbert kernel
 
-The row sum of the Hilbert kernel is at most `π / √(m + 1)`.
+For every $m \in \mathbb{N}$,
+$\displaystyle \sum_{n \ge 0} \frac{K(m, n)}{\sqrt{n + 1}} \le \frac{\pi}{\sqrt{m + 1}}$.

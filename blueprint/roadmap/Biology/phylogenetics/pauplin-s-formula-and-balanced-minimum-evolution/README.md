@@ -1,6 +1,6 @@
 # Pauplin's formula and balanced minimum evolution
 
-## Balanced Minimum Evolution
+## Trees and Pauplin coefficients
 
 - [Rooted binary tree with edge lengths](rtree.md)
 - [Unrooted binary tree with edge lengths](utree.md)
@@ -21,4 +21,4 @@
 - [Balanced minimum-evolution length](bme-length.md)
 - [Pauplin's formula](bme-length-path-length.md)
 - [The balanced minimum-evolution length of a tree metric is the tree length](bme-length-eq-length.md)
-- [Kraft equality](kraft-leaf.md)
+- [Kraft equality for unrooted binary trees](kraft-leaf.md)

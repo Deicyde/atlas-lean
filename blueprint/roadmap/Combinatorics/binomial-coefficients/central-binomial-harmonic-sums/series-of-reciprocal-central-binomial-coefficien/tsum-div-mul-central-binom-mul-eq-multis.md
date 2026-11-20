@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Theorem 8 (`jis-2024-24.6.8-thm-8`).
+- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, J. Integer Seq. 27 (2024), Article 24.6.8, Theorem 8 (catalogue key jis-2024-24.6.8-thm-8).

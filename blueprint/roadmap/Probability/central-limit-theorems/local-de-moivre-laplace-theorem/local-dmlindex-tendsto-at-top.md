@@ -1,3 +1,4 @@
 # The De Moivre–Laplace index tends to infinity
 
-The index `localDMLIndex x n` tends to infinity as `n → ∞`, for any fixed `x : ℝ`.
+Let $x \in \mathbb{R}$ and let $k_n = \lfloor n/2 + x \sqrt{n}/2 \rfloor$ be the [lattice
+index](local-dmlindex.md). Then $k_n \to \infty$ as $n \to \infty$.

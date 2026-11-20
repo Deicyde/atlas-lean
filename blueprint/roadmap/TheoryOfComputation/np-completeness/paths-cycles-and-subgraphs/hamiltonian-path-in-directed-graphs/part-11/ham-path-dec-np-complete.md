@@ -6,4 +6,4 @@ strings such that, for every bit string $x$, $L$ accepts $x$ exactly when HAMPAT
 
 ## Sources
 
-- Sipser, Theorem 7.46.
+- Michael Sipser, *Introduction to the Theory of Computation*, 3rd edition, Cengage Learning, 2013 (the NP-completeness of HAMPATH).

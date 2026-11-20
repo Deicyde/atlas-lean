@@ -1,3 +1,5 @@
 # Elementary integrand as a process
 
-The elementary integrand as a process: `u ↦ ∑ i, coeff i 1_{(time i, time (i + 1)]}(u)`.
+For an [elementary integrand](elementary-integrand.md) with times $t_i$ and coefficients $\xi_i$, its process is
+
+$$H_u(\omega) = \sum_i \xi_i(\omega)\, \mathbf 1_{(t_i, t_{i+1}]}(u), \qquad u \ge 0 .$$

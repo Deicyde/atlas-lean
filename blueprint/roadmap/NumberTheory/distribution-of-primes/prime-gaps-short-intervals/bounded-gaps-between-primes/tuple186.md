@@ -7,4 +7,4 @@ $h = (h_0, \dots, h_{39})$ whose entries, in order, are $0, 2, 6, 12, 20, 26, 30
 
 ## Sources
 
-- OpenAI (2026), equation (1.3), and the 186 row of constants/88a.md.
+- OpenAI (2026), equation (1.3), and the 186 row of teorth/optimizationproblems, `constants/88a.md`.

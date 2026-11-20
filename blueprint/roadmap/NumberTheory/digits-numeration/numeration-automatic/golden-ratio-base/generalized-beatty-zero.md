@@ -6,4 +6,4 @@ takes the value $V(p, q, r)(0) = r$ at $n = 0$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 (`V₀`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 ($V_0$).

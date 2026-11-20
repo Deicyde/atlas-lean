@@ -1,5 +1,7 @@
 # Vector-valued two-point hypercontractive inequality
 
-The vector-valued two-point inequality at noise `ρ`, with `q = 1 + ρ²`: for all `n` and
-`u v : (Fin n → Bool) → ℝ`, the average of `‖((1+ρ)/2) u + ((1-ρ)/2) v‖₂²` and
-`‖((1-ρ)/2) u + ((1+ρ)/2) v‖₂²` is at most `((‖u‖_q^q + ‖v‖_q^q) / 2)^(2/q)`.
+For $\rho \in \mathbb{R}$, put $q = 1 + \rho^2$. The vector-valued two-point inequality at noise
+$\rho$ is the statement: for every $n \in \mathbb{N}$ and all $u, v : \{0, 1\}^n \to \mathbb{R}$,
+under the uniform measure,
+
+$$\frac{1}{2}\Big(\Big\|\tfrac{1+\rho}{2} u + \tfrac{1-\rho}{2} v\Big\|_2^2 + \Big\|\tfrac{1-\rho}{2} u + \tfrac{1+\rho}{2} v\Big\|_2^2\Big) \le \Big(\frac{\|u\|_2^q + \|v\|_2^q}{2}\Big)^{2/q} .$$

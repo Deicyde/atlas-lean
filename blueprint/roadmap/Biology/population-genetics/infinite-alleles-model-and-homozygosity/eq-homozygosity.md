@@ -1,5 +1,7 @@
 # Equilibrium homozygosity in the infinite-alleles model
 
-The equilibrium homozygosity `F* = (1 - u)² / (M - (M - 1)(1 - u)²)`. Biologically meaningful
-for `2 ≤ M`; its denominator is positive for `1 ≤ M` and `0 < u ≤ 1`, the hypotheses of the
-theorems below (`M = 1` being an algebraic extension).
+For a natural number $M$ and a real number $u$, let
+
+$$F^* = \frac{(1 - u)^2}{M - (M - 1)(1 - u)^2},$$
+
+with the convention that division by $0$ gives $0$. The denominator is positive for $M \ge 1$ and $0 < u \le 1$.

@@ -12,4 +12,4 @@ $\mathfrak{d}_{C/A} = \mathfrak{d}_{B/A}^{\,n} \, N_{B/A}(\mathfrak{d}_{C/B})$.
 
 ## Sources
 
-- ATLAS NumberTheoryI Proposition 12.28, second half.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 12, Proposition 12.28 (its second statement), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -5,4 +5,4 @@ ultrafilter on $S$. Then $p \in \beta(F)$ if and only if every member of $p$ bel
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).

@@ -8,5 +8,3 @@ with a child until one of the two lists runs out, then the remaining keys or chi
 order, and finally $s$; each key contributes itself, and each child contributes its own
 accumulating flattening with everything after it as the suffix. In particular every key of
 the tree occurs in the result.
-
-The result is built from right to left, so each key is copied only once.

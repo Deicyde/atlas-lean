@@ -1,4 +1,4 @@
 # The identity Markov chain is not ergodic
 
-The identity chain is not ergodic (for `M ≥ 1`): every power has a zero
-off-diagonal entry.
+For $M \ge 1$, the [identity chain](identity.md) on the states $\{0, \dots, M\}$ is not
+[ergodic](is-ergodic.md): every power is the identity matrix, whose off-diagonal entries are $0$.

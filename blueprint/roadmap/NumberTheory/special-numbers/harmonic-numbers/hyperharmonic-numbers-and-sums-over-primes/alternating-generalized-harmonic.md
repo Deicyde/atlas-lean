@@ -8,4 +8,4 @@ For $s = -p$ with $p$ a natural number this is $\sum_{j=1}^{n} (-1)^{j-1} j^p$.
 
 ## Sources
 
-- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definition of `H̄_n^{(p)}` and `H̄_n^{(-p)}`).
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definition of $\overline{H}_n^{(p)}$ and $\overline{H}_n^{(-p)}$).

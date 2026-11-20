@@ -1,3 +1,4 @@
 # Inclusive first-hit prefix of a singleton
 
-A singleton is its own inclusive first-hit prefix.
+For every test $p$ and every element $x$, the inclusive first-hit prefix of the one-element list
+$[x]$ for $p$ is $[x]$, whether $p(x)$ is true or false.

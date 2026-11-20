@@ -22,7 +22,7 @@
 
 - [Explicit configurations](cfg.md)
 - [Configurations as tuples](equiv-prod.md)
-- [TM0 configuration of a simulation configuration](to-tm0.md)
+- [Machine configuration of a simulation configuration](to-tm0.md)
 - [Acting on a configuration](act.md)
 - [Output of a configuration](output.md)
 - [Initial configuration of the code simulation](init.md)
@@ -31,11 +31,11 @@
 - [Clocked configuration of a code](cfg-after.md)
 - [The clocked evaluator](eval-steps.md)
 
-## Agreement with Mathlib's semantics
+## Agreement with the machine semantics
 
 - [Explicit steps agree with the decoded machine](step-to-tm0.md)
 - [The explicit initial configuration is the machine's](init-to-tm0.md)
-- [The output of a configuration as a Mathlib half-tape](right-to-tm0.md)
+- [The output of a configuration as a half-tape](right-to-tm0.md)
 - [Iterated steps of the decoded machine](iterate-step-to-tm0.md)
 - [Bounded halting of a decoded machine through its simulation](halts-within-machine-iff.md)
 - [Definedness of the clocked evaluator](is-some-eval-steps-iff-step-eq-none.md)

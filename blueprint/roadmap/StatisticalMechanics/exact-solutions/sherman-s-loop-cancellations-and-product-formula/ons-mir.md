@@ -1,3 +1,3 @@
 # Mirror position within a segment
 
-The mirror image `l + m - k` of a position `k` in the segment `[l, m]` (truncated to `n - 1`).
+For $n \ge 1$ and positions $\ell, m, k \in \{0, \dots, n - 1\}$, the mirror position is $\min(\ell + m - k,\ n - 1)$, where $\ell + m - k$ is computed in $\mathbb{N}$ (truncated at $0$).

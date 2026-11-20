@@ -11,4 +11,4 @@ $\tilde g_0 \preceq \tilde g_2 \preceq \cdots \preceq \tilde g_{p-1}$.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 11.
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 11.

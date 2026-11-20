@@ -27,4 +27,4 @@ sending the ray class of a fractional ideal to its ideal class.
 
 ## Sources
 
-- ATLAS lines 1012--1480; this theorem aggregates the separately source-backed map, exactness and surjectivity declarations and is not a direct declaration port.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8.

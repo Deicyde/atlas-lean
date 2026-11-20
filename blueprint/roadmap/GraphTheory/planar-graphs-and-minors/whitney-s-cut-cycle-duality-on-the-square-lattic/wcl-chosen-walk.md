@@ -1,3 +1,3 @@
 # Chosen lattice walk between two faces
 
-A fixed lattice walk from `o` to `f`, chosen using connectedness of `ℤ²`.
+For sites $o, f \in \mathbb{Z}^2$, a fixed chosen walk from $o$ to $f$ in the square lattice (one exists because the square lattice is connected).

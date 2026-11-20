@@ -1,6 +1,10 @@
 # Master-sequence vector field of the single-peak quasispecies
 
-The master-sequence vector field of the single-peak quasispecies without back mutation:
-`x' = σ Q x - (σ x + (1 - x)) x`, where `σ` is the master fitness relative to the mutants and
-`Q` the probability of an error-free copy. Meaningful for `σ > 1`, `0 ≤ Q ≤ 1`,
-`0 ≤ x ≤ 1`; it is a polynomial and is defined for all reals.
+For real $\sigma$ (the fitness of the master sequence relative to the mutants), $Q$ (the probability
+of an error-free copy) and $x$ (the master frequency), the master-sequence vector field of the
+single-peak quasispecies without back mutation is
+
+$$F(x) = \sigma Q x - (\sigma x + (1 - x))\, x,$$
+
+the right-hand side of $x' = F(x)$. It is a polynomial, defined for all real inputs; the model has
+$\sigma > 1$, $0 \le Q \le 1$ and $0 \le x \le 1$.

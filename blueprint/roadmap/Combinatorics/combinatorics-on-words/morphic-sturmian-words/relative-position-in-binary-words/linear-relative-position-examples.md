@@ -15,4 +15,4 @@ The paper writes $k \ge 0$ in (c), but $\sigma_{1,k-1,1}$ needs $k \ge 1$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 64 (`jis-2025-25.1.5-thm-64`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 64 (`jis-2025-25.1.5-thm-64`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

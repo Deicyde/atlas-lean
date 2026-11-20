@@ -1,4 +1,3 @@
 # Nonnegativity of the Ewens sampling formula
 
-The Ewens sampling formula is nonnegative for `θ > 0`; with `sum_ewensProb` it is a
-probability distribution on the partitions of `n`.
+For every real $\theta > 0$ and every integer partition $\pi$ of $n$, the [Ewens sampling formula](ewens-prob.md) satisfies $E_\theta(\pi) \ge 0$; with [its total mass](sum-ewens-prob.md), it is a probability distribution on the partitions of $n$.

@@ -11,4 +11,4 @@ The denominator $8\sqrt{r}$ follows the published version of the paper; arXiv v1
 
 ## Sources
 
-- Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 7.
+- Victor Manuel R. Aricheta and Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 7.

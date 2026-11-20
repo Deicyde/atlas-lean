@@ -6,4 +6,4 @@ $s_i = \frac{8(i + 1)}{2i - 1} s_{i+1}$ for $0 \le i < l$.
 
 ## Sources
 
-- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 3.
+- Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, J. Integer Seq. 27 (2024), Article 24.6.8, Definition 3.

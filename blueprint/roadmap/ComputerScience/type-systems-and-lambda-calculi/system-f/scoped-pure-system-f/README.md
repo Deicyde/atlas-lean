@@ -1,6 +1,6 @@
 # Scoped pure System F
 
-## System F
+## Types
 
 - [Scoped types of pure System F](ty.md)
 - [Lifting a scoped renaming under a binder](lift-ren.md)
@@ -16,7 +16,7 @@
 - [Lifted type substitution fixes the fresh variable](lift-sub-zero.md)
 - [Lifted type substitution weakens old images](lift-sub-succ.md)
 
-## System F
+## Terms and contexts
 
 - [Scoped terms of pure System F](tm.md)
 - [Term variable contexts of System F](ctx.md)

@@ -1,3 +1,4 @@
-# Composition
+# Composition of sticky kernels
 
-With `∑ π = 1`, `K c * K c' = K (c c')` for all real `c`, `c'`.
+Let $S$ be a finite set and $\pi : S \to \mathbb{R}$ with $\sum_i \pi(i) = 1$. For all real
+$c, c'$, the [sticky kernels](sticky-kernel.md) satisfy $K_\pi(c)\, K_\pi(c') = K_\pi(c c')$.

@@ -7,3 +7,7 @@
 - [Eigenvalues of equal Hermitian matrices agree](eigenvalues-congr.md)
 - [Eigenvalues of a diagonal matrix with decreasing entries](eigenvalues-diagonal-of-antitone.md)
 - [Weyl's perturbation inequality](weyl-eigenvalue-perturbation-le.md)
+
+## Related topics
+
+- [Bauer–Fike theorem](../bauer-fike-theorem/README.md): the perturbation bound for eigenvalues of nonsymmetric matrices, where the condition number of the eigenvector matrix replaces the constant $1$ of Weyl's inequality.

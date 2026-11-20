@@ -13,4 +13,4 @@ assumed.
 
 ## Sources
 
-- J. Neyman and E. S. Pearson, "On the problem of the most efficient tests of statistical hypotheses", Phil. Trans. R. Soc. Lond. A 231 (1933), 289–337, DOI `10.1098/rsta.1933.0009`.
+- J. Neyman and E. S. Pearson, "On the problem of the most efficient tests of statistical hypotheses", Phil. Trans. R. Soc. Lond. A 231 (1933), 289–337, DOI 10.1098/rsta.1933.0009.

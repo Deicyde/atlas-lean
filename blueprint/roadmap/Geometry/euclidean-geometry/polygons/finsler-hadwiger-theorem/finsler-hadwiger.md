@@ -9,7 +9,7 @@ $P = (B + G)/2$ and $Q = (D + E)/2$. Then $\|P - Q\| = \|O_1 - O_2\|$, the vecto
 $O_1 - O_2$ are orthogonal, and $O_1 + O_2 = P + Q$; that is, the segments $O_1O_2$ and $PQ$
 have equal length, are perpendicular and share their midpoint.
 
-The hypotheses $B \ne A$ and $E \ne A$ are not used. When $B = E$ both segments are zero; with
+The conclusion holds without the hypotheses $B \ne A$ and $E \ne A$. When $B = E$ both segments are zero; with
 $B \ne E$ one also gets $O_1 \ne O_2$, so that $O_1 P O_2 Q$ is a square as in the source.
 
 ## Sources

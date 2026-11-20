@@ -10,4 +10,4 @@ intersection over all prime ideals $\mathfrak{p}$ of $A$, taken inside $K$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Section 2.3, Corollary 2.7, prime-ideal form.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 2, Corollary 2.7 (the form with prime ideals), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -16,4 +16,5 @@ case.
 
 ## Sources
 
-- Shengtao Guo, Ethan X. Fang and Junwei Lu, Vector balancing via directional total variation, arXiv:2609.11189 (2026), https://arxiv.org/abs/2609.11189.
+- Shengtao Guo, Ethan X. Fang and Junwei Lu, *Vector balancing via directional total variation*, arXiv:2609.11189 (2026), Theorem 1.1 and Corollary 1.2; the paper states that its proof was discovered by the Odin Automatic AI Research Agent.
+- AimPL: Hereditary discrepancy and factorization norms, Problem 1.7 (Beating LLL), http://aimpl.org/hereddiscrep/1/.

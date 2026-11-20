@@ -6,4 +6,4 @@ radial limit $\lim_{r \to 1^-} f(r e^{i\theta})$ exists in $\mathbb{C}$.
 
 ## Sources
 
-- Fatou radial limit theorem for H∞, P. Fatou, Acta Math. 30 (1906); see Rudin, Real and Complex Analysis, Bounded Analytic Functions; Lean is bounded holomorphic on ball 0 1 with a.e. radial limit via volume.restrict Icc 0 (2π) and 𝓝[<] 1.
+- Fatou radial limit theorem for H∞, P. Fatou, Acta Math. 30 (1906); see W. Rudin, Real and Complex Analysis, and J. B. Garnett, Bounded Analytic Functions. The statement here is that a bounded holomorphic function on the unit disc has a radial limit at almost every point of the unit circle.

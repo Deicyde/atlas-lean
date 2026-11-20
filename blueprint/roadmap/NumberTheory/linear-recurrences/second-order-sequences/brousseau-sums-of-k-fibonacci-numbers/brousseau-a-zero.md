@@ -5,4 +5,4 @@ for $k$-Fibonacci Brousseau sums equals $1$.
 
 ## Sources
 
-- Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 1.
+- Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 2.

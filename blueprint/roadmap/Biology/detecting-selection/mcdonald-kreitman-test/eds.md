@@ -1,3 +1,3 @@
 # Expected synonymous fixed differences
 
-Expected synonymous fixed differences `E D_s = λ_D L_s`.
+In an [expected-count model](mkmodel.md), the expected number of synonymous fixed differences is $\mathbb{E}D_s = \lambda_D L_s$.

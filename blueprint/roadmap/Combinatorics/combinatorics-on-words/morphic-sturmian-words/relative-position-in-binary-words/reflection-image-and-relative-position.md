@@ -11,4 +11,4 @@ $w, w' \in \mathcal{W}$, $\bar w = w'$ if and only if $r_w(n) = -r_{w'}(n)$ for 
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 11 (`jis-2025-25.1.5-prop-11`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 11 (`jis-2025-25.1.5-prop-11`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

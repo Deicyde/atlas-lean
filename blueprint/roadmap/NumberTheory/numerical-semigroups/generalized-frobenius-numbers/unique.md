@@ -6,4 +6,4 @@ then $g = g'$.
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction (definition of `g(A; s)` as a maximum).
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction (definition of $g(A; s)$ as a maximum).

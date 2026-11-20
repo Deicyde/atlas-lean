@@ -1,3 +1,3 @@
 # Intersection form on the mod 2 homology of the torus
 
-The intersection form `h₁ k₂ + h₂ k₁` on `H₁(T², ℤ/2) = (ℤ/2)²`.
+For $h = (h_1, h_2)$ and $k = (k_1, k_2)$ in $(\mathbb{Z}/2)^2$, the intersection form is $h \cdot k = h_1 k_2 + h_2 k_1 \in \mathbb{Z}/2$.

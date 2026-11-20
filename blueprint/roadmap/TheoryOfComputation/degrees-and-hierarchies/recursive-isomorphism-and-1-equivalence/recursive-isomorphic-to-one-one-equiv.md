@@ -10,4 +10,4 @@ This is the easy direction of Myhill's isomorphism theorem.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 7.1.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

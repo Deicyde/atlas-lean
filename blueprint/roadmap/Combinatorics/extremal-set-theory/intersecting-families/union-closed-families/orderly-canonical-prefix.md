@@ -7,11 +7,11 @@ $U = \{\emptyset, A_1, \dots, A_k\}$ is union-closed, every element of $\Omega_n
 member of $U$, $U \ne \{\Omega_n, \emptyset\}$, and $U$ is canonical. Then the prefix family
 $\{\emptyset, A_1, \dots, A_m\}$ is canonical.
 
-The hypotheses that $U$ is union-closed, covers $\Omega_n$ and differs from
-$\{\Omega_n, \emptyset\}$ are not used in the proof. The string of $U$ lists the sort keys of
+The conclusion holds without the hypotheses that $U$ is union-closed, covers $\Omega_n$ and
+differs from $\{\Omega_n, \emptyset\}$. The string of $U$ lists the sort keys of
 $A_1, \dots, A_k$ in order, so the string of the prefix family is a prefix of it, and a
 permutation that made the prefix family's string smaller would make the string of $U$ smaller.
 
 ## Sources
 
-- Gunnar Brinkmann and Robin Deklerck, "Generation of Union-Closed Sets and Moore Families", Journal of Integer Sequences 21 (2018), Article 18.1.7, Theorem `thm:orderly`, source lines 275–281, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Brinkmann/brink6.tex>.
+- Gunnar Brinkmann and Robin Deklerck, "Generation of Union-Closed Sets and Moore Families", Journal of Integer Sequences 21 (2018), Article 18.1.7, Theorem 4, https://cs.uwaterloo.ca/journals/JIS/VOL21/Brinkmann/brink6.html.

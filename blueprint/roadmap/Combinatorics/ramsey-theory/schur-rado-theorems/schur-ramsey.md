@@ -10,4 +10,5 @@ $\{1, \dots, S\}$ has no such solution.
 
 ## Sources
 
+- Issai Schur, Über die Kongruenz $x^m + y^m \equiv z^m \pmod{p}$, Jahresber. Deutsch. Math.-Verein. 25 (1916), 114–117.
 - https://en.wikipedia.org/wiki/Schur%27s_theorem.

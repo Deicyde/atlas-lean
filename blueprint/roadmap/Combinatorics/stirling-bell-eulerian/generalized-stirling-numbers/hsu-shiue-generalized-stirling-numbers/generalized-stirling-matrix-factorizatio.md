@@ -19,4 +19,4 @@ $(0, \beta, 0)$ (second kind).
 
 ## Sources
 
-- Jiaqiang Pan, “Matrix Decomposition of the Unified Generalized Stirling Numbers and Inversion of the Generalized Factorial Matrices,” Journal of Integer Sequences 15 (2012), Article 12.6.6, Theorem `t:Decomposition`, lines 250-256, <https://cs.uwaterloo.ca/journals/JIS/VOL15/Pan/pan19.tex>.
+- Jiaqiang Pan, “Matrix Decomposition of the Unified Generalized Stirling Numbers and Inversion of the Generalized Factorial Matrices,” Journal of Integer Sequences 15 (2012), Article 12.6.6, Theorem 7, equation (8), <https://cs.uwaterloo.ca/journals/JIS/VOL15/Pan/pan19.pdf>.

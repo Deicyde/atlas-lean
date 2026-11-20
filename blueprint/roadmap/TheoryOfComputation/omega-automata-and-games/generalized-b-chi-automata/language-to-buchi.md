@@ -1,5 +1,4 @@
 # Degeneralization preserves the language
 
-A word is accepted by the
-degeneralized Büchi automaton iff it is accepted by the generalized Büchi
-automaton.
+For every generalized Büchi automaton $G$, the Büchi automaton obtained from $G$ by degeneralization
+accepts exactly the infinite words that $G$ accepts.

@@ -1,3 +1,4 @@
 # Mean of the gamma law
 
-The mean of the gamma law with shape `a > 0` and rate `r > 0` is `a / r`.
+For $a, r > 0$, the gamma law $\Gamma(a, r)$ with shape $a$ and rate $r$ has mean
+$\int x \, d\Gamma(a, r)(x) = a/r$.

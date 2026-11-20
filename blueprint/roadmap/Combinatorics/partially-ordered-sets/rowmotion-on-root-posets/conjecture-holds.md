@@ -16,4 +16,5 @@ Armstrong, Stump, and Thomas proved for all crystallographic root systems.
 
 ## Sources
 
-- D. Armstrong, C. Stump, and H. Thomas, A uniform bijection between nonnesting and noncrossing partitions, Transactions of the American Mathematical Society 365 (2013).
+- Drew Armstrong, Christian Stump and Hugh Thomas, *A uniform bijection between nonnesting and noncrossing partitions*, Trans. Amer. Math. Soc. 365 (2013), no. 8, 4121–4151, Theorem 1.2 (the Panyushev conjectures), arXiv:1101.1277.
+- Dmitri I. Panyushev, *On orbits of antichains of positive roots*, European J. Combin. 30 (2009), no. 2, 586–594, Conjecture 2.1 (iii), arXiv:0711.3353.

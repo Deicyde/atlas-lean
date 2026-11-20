@@ -12,4 +12,4 @@ list on additive combinatorics, posed by N. Katz.
 
 ## Sources
 
-- [AIM-COMBINATORICS-0211], AIM Problem Lists, Recent trends in additive combinatorics, item 1.5, `aim-combinatorics-notes.json notes[210]`, https://aimath.org/WWN/additivecomb/additivecomb.pdf.
+- Ernie Croot and Vsevolod F. Lev (collectors), *Problems presented at the workshop on Recent Trends in Additive Combinatorics*, American Institute of Mathematics, Problem 1.5 (posed by Nets Katz), https://aimath.org/WWN/additivecomb/additivecomb.pdf (archived copy: https://web.archive.org/web/2020/https://aimath.org/WWN/additivecomb/additivecomb.pdf).

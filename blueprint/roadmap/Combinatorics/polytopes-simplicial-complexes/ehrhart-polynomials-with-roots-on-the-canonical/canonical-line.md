@@ -5,4 +5,4 @@ with real part $-1/2$, that is, $\mathrm{CL} = \{z \in \mathbb{C} : \operatornam
 
 ## Sources
 
-- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Definition of `CL`.
+- Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of the canonical line.

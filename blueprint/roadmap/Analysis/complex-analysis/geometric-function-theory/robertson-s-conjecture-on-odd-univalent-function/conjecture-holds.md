@@ -10,7 +10,7 @@ close-to-convex, the Taylor coefficients $c_k = h^{(k)}(0)/k!$ of $h$ at $0$ sat
 $|c_1|^2 + |c_3|^2 + \dots + |c_{2n-1}|^2 \le n$ for every integer $n \ge 1$.
 
 De Branges' 1985 proof of the Milin conjecture implies the Robertson bound for every normalized
-univalent function, hence for the real-coefficient and close-to-convex subclasses formalized here.
+univalent function, hence for the real-coefficient and close-to-convex subclasses considered here.
 
 ## Sources
 

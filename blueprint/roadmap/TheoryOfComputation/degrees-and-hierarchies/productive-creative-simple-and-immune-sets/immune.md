@@ -5,4 +5,4 @@ recursively enumerable set $B \subseteq A$ is finite.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 5.4.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

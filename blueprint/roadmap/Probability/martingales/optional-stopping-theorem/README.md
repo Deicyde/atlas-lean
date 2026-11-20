@@ -14,10 +14,15 @@
 - [Stopping at a later time does not change the stopped value](stopped-value-at-top-stopped-process-of.md)
 - [Conditional optional stopping with UI of the stopped process](stopped-value-at-top-ae-eq-cond-exp-stop.md)
 - [Conditional optional stopping for uniformly integrable submartingales](stopped-value-at-top-le-cond-exp-stopped.md)
-- [Expectation form of conditional optional stopping for uniformly integrable submartingales](integral-stopped-value-at-top-mono-of-un.md)
+- [Expectation form of optional stopping for uniformly integrable submartingales](integral-stopped-value-at-top-mono-of-un.md)
 - [General optional stopping, uniform integrability preservation](uniform-integrable-stopped-process-of-un.md)
 - [General optional stopping, expectation inequality](integral-stopped-value-at-top-of-uniform.md)
 - [Optional stopping for supermartingales at two bounded stopping times](expected-stopped-value-anti-mono.md)
 - [Optional stopping for supermartingales at a bounded stopping time](expected-stopped-value-le.md)
 - [Optional stopping for martingales at two bounded stopping times](expected-stopped-value-eq.md)
 - [Optional stopping for martingales at a bounded stopping time](expected-stopped-value-eq-zero.md)
+- [Optional stopping theorem in continuous time](stopped-value-ae-eq-cond-exp-of-le-of-co.md)
+
+## Related topics
+
+- [Optimal stopping and the Snell envelope](../optimal-stopping-and-the-snell-envelope/README.md): choosing the stopping time to maximise the expected gain; the optimality proof applies bounded optional stopping to the Snell envelope.

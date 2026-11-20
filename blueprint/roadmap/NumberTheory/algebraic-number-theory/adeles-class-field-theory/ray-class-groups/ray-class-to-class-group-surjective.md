@@ -7,4 +7,4 @@ part of $\mathfrak m$ to its ideal class, is surjective.
 
 ## Sources
 
-- ATLAS lines 1478--1480.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

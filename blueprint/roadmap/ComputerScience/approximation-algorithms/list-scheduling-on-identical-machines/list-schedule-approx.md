@@ -7,4 +7,4 @@ on $m$ machines. Then $mC \le (2m - 1)M$, that is, $C \le (2 - 1/m)M$.
 
 ## Sources
 
-- Graham, "Bounds for certain multiprocessing anomalies", Bell System Technical Journal 45 (1966).
+- R. L. Graham, "Bounds for certain multiprocessing anomalies", *Bell System Technical Journal* 45(9) (1966), 1563–1581.

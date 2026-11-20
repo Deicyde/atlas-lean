@@ -7,4 +7,4 @@ constant $a$.
 
 ## Sources
 
-- Oberwolfach Report 27/2012 (Geometrie), T. Yokota, p. 1652; for `a = 1 / 2` this is the Gaussian shrinker `(ℝⁿ, g_E, ‖x‖ ^ 2 / 4)`.
+- Oberwolfach Report 27/2012 (Geometrie), T. Yokota, p. 1652; for $a = 1/2$ this is the Gaussian shrinker $(\mathbb{R}^n, g_E, \|x\|^2/4)$.

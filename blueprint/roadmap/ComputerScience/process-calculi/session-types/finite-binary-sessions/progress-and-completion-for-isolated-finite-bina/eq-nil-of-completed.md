@@ -1,3 +1,4 @@
 # Typed thread with completed obligations is nil
 
-A typed thread whose endpoint obligations are completed is inert.
+Let $n$ be a natural number, $\Gamma$ a session context and $p$ a process. If $\Gamma \vdash_n p$
+and $\Gamma(c) = \mathrm{end}$ for every channel number $c$, then $p = \mathbf{0}$.

@@ -46,7 +46,7 @@
 - [Darts at a vertex as its neighbours](abig-dart-fiber-equiv-neighbor.md)
 - [Uniform row-sum bound in finite windows](abig-uniform-finite-row-bound.md)
 - [Largest site magnetization in a window](abig-window-envelope.md)
-- [Aizenman–Barsky inequality on infinite vertex-transitive graphs](abig-aizenman-barsky-physical-of-tsum-tr.md)
+- [Aizenman–Barsky inequality on countable vertex-transitive graphs](abig-aizenman-barsky-physical-of-tsum-tr.md)
 - [Box as a finite set of sites](abl-box-finset.md)
 - [Aizenman–Barsky inequality on $\mathbb{Z}^d$ with neighbour row sum](abl-aizenman-barsky-hypercubic-neighbour.md)
 - [Aizenman–Barsky inequality on $\mathbb{Z}^d$](abl-aizenman-barsky-hypercubic.md)

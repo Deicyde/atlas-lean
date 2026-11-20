@@ -1,4 +1,4 @@
-# Interior-translate covers unfold to translate covers
+# Covers by interior translates are covers by translates of the interior
 
 For every set $K$ in the Euclidean
 space $\mathbb{R}^n$ and every natural number $q$, $K$ has a cover by $q$ interior translates if

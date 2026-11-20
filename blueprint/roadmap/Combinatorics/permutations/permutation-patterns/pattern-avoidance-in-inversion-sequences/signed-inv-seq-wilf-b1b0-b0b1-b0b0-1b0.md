@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 8: two Wilf-equivalences of four-pattern sets
+# Two Wilf-equivalences of sets of four signed patterns
 
 Length-2 signed
 patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that

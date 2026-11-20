@@ -6,4 +6,4 @@ $\{0, \dots, n-1\}$ and $M_n$ is the number of those that are marriageable singl
 
 ## Sources
 
-- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 22 (`jis-2025-25.1.1-prop-22`).
+- Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 22.

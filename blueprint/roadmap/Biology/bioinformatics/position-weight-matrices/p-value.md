@@ -1,3 +1,3 @@
 # Exact p-value of a score threshold
 
-The exact p-value of the score threshold `t`, summed over the computed distribution.
+For $q$, $M$ and an integer $t$, the p-value is the sum of the values of the [score distribution](score-dist.md) at the integers $u \ge t$ of its support.

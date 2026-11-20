@@ -11,4 +11,4 @@ $b_1 + 2 b_2 + \dots + k b_k = k$ and $b_1 + \dots + b_k = m$ (each such $b_r$ i
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Corollary 6.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Corollary 6.

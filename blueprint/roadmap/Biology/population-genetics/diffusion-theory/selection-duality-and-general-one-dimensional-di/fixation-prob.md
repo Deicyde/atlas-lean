@@ -1,8 +1,8 @@
 # Dirichlet ratio $S(p)/S(1)$ of the scale function
 
-The analytic Dirichlet ratio `S(p) / S(1)` for drift `b` and variance `a` (Kimura 1962;
-Ewens 2004, Chapter 4). This is the solution of the backward boundary-value problem
-`L u = 0`, `u(0) = 0`, `u(1) = 1` (see `eq_fixationProb_of_diffusionGenerator_eq_zero`).
-It is the hitting probability `P_p(hit 1 before 0)` only when both boundaries are
-Feller-accessible; that is not implied by `IsRegularDiffusion` (see the module docstring for
-the `a x = x² (1 - x)²` counterexample).
+For real functions $b$ and $a$ and a real number $p$, the ratio $u(p) = S(p)/S(1)$, where $S$ is the [scale function](scale-function.md) and division by $0$ gives $0$. For a [regular diffusion](is-regular-diffusion.md) it is the [unique solution](eq-fixation-prob-of-diffusion-generator.md) of the backward boundary-value problem $L_{b,a} u = 0$ on $(0, 1)$, $u(0) = 0$, $u(1) = 1$. It is the probability of hitting $1$ before $0$ from $p$ only when both boundaries are accessible, which the regularity hypotheses do not imply: for instance $b = 0$ and $a(x) = x^2(1 - x)^2$ satisfy them, with inaccessible boundaries.
+
+## Sources
+
+- M. Kimura, *On the probability of fixation of mutant genes in a population*, Genetics 47 (1962), 713–719.
+- W. J. Ewens, *Mathematical Population Genetics I: Theoretical Introduction*, 2nd ed., Springer (2004).

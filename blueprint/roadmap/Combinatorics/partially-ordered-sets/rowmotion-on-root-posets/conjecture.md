@@ -9,6 +9,10 @@ set of minimal elements of the complement of the down-set of $A$, the set of fin
 $P$ is finite, $\rho$ is bijective, and for every antichain $A$ and every $k > 0$ with
 $\rho^k(A) = A$ the average $\frac{1}{k} \sum_{i=0}^{k-1} |\rho^i(A)|$ equals $n/2$.
 
+This is the type-A case of part (iii) of Panyushev's Conjecture 2.1, which Armstrong, Stump and Thomas proved for every finite Weyl group. The AIM pre-workshop document recalls it in Section 3.2 and asks for piecewise-linear and birational analogues; its Conjecture 3.3, homomesy of the coordinate sum on the chain polytope under the piecewise-linear lift of rowmotion, restricts to this statement on the vertices of the chain polytope, which are the antichains.
+
 ## Sources
 
-- [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
+- Dmitri I. Panyushev, *On orbits of antichains of positive roots*, European J. Combin. 30 (2009), no. 2, 586–594, Conjecture 2.1 (iii), arXiv:0711.3353.
+- Drew Armstrong, Christian Stump and Hugh Thomas, *A uniform bijection between nonnesting and noncrossing partitions*, Trans. Amer. Math. Soc. 365 (2013), no. 8, 4121–4151, Theorem 1.2 (the Panyushev conjectures), arXiv:1101.1277.
+- AIM workshop Dynamical algebraic combinatorics, pre-workshop document, Section 3.2 (the discussion of antichain cardinality under rowmotion that precedes Conjecture 3.3), http://aimath.org/pastworkshops/dac_preworkshop.pdf (archived copy: https://web.archive.org/web/2022/http://aimath.org/pastworkshops/dac_preworkshop.pdf).

@@ -1,4 +1,3 @@
 # Opening an edge does not increase the cluster count
 
-Opening an edge does not increase the number of clusters. This is a special case of
-Mathlib's `SimpleGraph.ConnectedComponent.card_le_card_of_le`, which proves it.
+Let $G = (V, E)$ be a simple graph on a finite set $V$. For every unordered pair $e$ and configuration $\omega$, $k(\omega^{e,\mathrm{open}}) \le k(\omega^{e,\mathrm{closed}})$, where $k$ is the [number of open clusters](num-clusters.md) and $\omega^{e,\mathrm{open}}$, $\omega^{e,\mathrm{closed}}$ are $\omega$ with $e$ set open, resp. closed.

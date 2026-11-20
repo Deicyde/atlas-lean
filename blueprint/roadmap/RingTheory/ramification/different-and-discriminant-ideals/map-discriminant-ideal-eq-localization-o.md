@@ -15,4 +15,4 @@ $\mathfrak{d}_{B/A}$ is $\mathfrak{d}_{B_S/A_S}$.
 
 ## Sources
 
-- ATLAS NumberTheoryI Proposition 12.15, canonical-localization scope; transport to an arbitrary base localization is deferred.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 12, Proposition 12.15, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

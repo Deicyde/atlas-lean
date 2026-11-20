@@ -1,3 +1,3 @@
 # Positive copy number after an amplifying event
 
-An event that amplifies some copy leaves a positive copy number.
+If a [gain history](gain-history.md) has at least one [amplified copy](amplified.md), its [final copy number](final-copies.md) is positive.

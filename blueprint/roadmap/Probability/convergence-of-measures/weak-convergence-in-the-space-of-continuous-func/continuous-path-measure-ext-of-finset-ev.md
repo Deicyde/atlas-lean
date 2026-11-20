@@ -1,5 +1,5 @@
 # Continuous-path laws are determined by finite-dimensional marginals
 
-Probability measures on continuous real paths over `[0, T]` are
-determined by all of their finite evaluation pushforwards. The empty `Finset`
-is included, and repeated coordinates are identified by `Finset`.
+Let $T \in \mathbb{R}$ and let $\mu$, $\nu$ be probability measures on $C([0, T], \mathbb{R})$. If
+for every finite set $I \subseteq [0, T]$ (the empty set included) the image measures of $\mu$
+and $\nu$ under $f \mapsto (f(t))_{t \in I}$ coincide, then $\mu = \nu$.

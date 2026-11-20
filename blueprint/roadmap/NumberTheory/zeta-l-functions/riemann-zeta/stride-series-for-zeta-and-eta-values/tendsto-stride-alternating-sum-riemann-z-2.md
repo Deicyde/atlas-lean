@@ -10,8 +10,8 @@ $$
 
 converge to $\zeta(p + t + 1)$ as $N \to \infty$, where $\zeta$ is the Riemann zeta function.
 
-Only the first equality of equation (32) is stated; its second expression uses a quantity
-$A^{(t)}$ that the record does not define.
+Only the first equality of equation (32) is stated above; its second expression involves a further
+quantity $A^{(t)}$.
 
 ## Sources
 

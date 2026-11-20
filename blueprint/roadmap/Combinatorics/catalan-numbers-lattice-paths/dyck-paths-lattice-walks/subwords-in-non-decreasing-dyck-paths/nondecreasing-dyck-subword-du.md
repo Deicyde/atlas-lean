@@ -17,4 +17,4 @@ $$10 d_{DU}(n) = (5n - 2) F_{2n} - n L_{2n}.$$
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 2 (`jis-2025-25.1.6-thm-2`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 2 (`jis-2025-25.1.6-thm-2`).

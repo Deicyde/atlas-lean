@@ -10,10 +10,10 @@ $$
 \sum_{n \ge 1} \frac{8L_{6n+3} + 3L_{2n+1}}{(F_{2n+1}^2 + 1)^3} = \frac{45}{8}.
 $$
 
-These are the case $x = 1$ of Corollary 4.7. The extracted record of the source prints the lower
+These are the case $x = 1$ of Corollary 4.7. The source prints the lower
 limit of the second series as $n = 2$; with that limit the sum would be
 $45/8 - 124/25 = 133/200$.
 
 ## Sources
 
-- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.8.
+- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), no. 2, 147–156, Corollary 4.8.

@@ -1,3 +1,7 @@
-# The minimizer is unique
+# Uniqueness of the relevance minimizer
 
-If `λ > 0` does as well as `A / c`, then `λ = A / c`.
+Let $A > 0$, $c > 0$ and $\lambda > 0$ with
+
+$$\frac{A}{\lambda} + c \log \lambda \le \frac{A}{A/c} + c \log \frac{A}{c}.$$
+
+Then $\lambda = A / c$.

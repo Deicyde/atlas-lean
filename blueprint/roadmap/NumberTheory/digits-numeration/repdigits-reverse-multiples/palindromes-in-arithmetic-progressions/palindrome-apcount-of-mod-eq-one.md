@@ -14,24 +14,28 @@ $r_j = \bigl(\frac{q+1}{2} r - \sum_{i=0}^{j-1} a_{k-i}\bigr) \bmod q$. If $2j =
 $s_j = a_{k-j} \bmod q$ and $r_j = \bigl(r - 2 \sum_{i=0}^{k/2-1} a_{k-i}\bigr) \bmod q$. Put
 $\delta = [C_b(m) \le m] \, [r_{\lfloor k/2 \rfloor} = s_{\lfloor k/2 \rfloor}]$ and
 
-$$m_1^* = \sum_{j=0}^{\lfloor (k-1)/2 \rfloor}
-\left( \frac{2 a_{k-j} b^{\lfloor (k-1)/2 \rfloor - j} - 2 s_j}{q} + [r_j < s_j] \right),$$
+$$
+m_1^* = \sum_{j=0}^{\lfloor (k-1)/2 \rfloor}
+\left( \frac{2 a_{k-j} b^{\lfloor (k-1)/2 \rfloor - j} - 2 s_j}{q} + [r_j < s_j] \right),
+$$
 
+$$
+m_2^* = \sum_{j=0}^{\lfloor k/2 \rfloor - 1}
+\frac{a_{k-j} (b - 1) b^{\lfloor k/2 \rfloor - j - 1}}{q},
+$$
 
-
-$$m_2^* = \sum_{j=0}^{\lfloor k/2 \rfloor - 1}
-\frac{a_{k-j} (b - 1) b^{\lfloor k/2 \rfloor - j - 1}}{q},$$
-
-
-
-$$m_3^* = \sum_{j=0}^{\lfloor k/2 \rfloor - 1}
-\left( \frac{a_{k-j} (b + 1) b^{\lfloor k/2 \rfloor - j - 1} - 2 s_j}{q} + [r_j < s_j] \right).$$
+$$
+m_3^* = \sum_{j=0}^{\lfloor k/2 \rfloor - 1}
+\left( \frac{a_{k-j} (b + 1) b^{\lfloor k/2 \rfloor - j - 1} - 2 s_j}{q} + [r_j < s_j] \right).
+$$
 
 Then, as rational numbers, if $q$ is odd,
 
-$$A_b(m, q, r) = \frac{b^{\lfloor (k+1)/2 \rfloor} - 1}{q} +
+$$
+A_b(m, q, r) = \frac{b^{\lfloor (k+1)/2 \rfloor} - 1}{q} +
 \sum_{j=0}^{\lfloor k/2 \rfloor} \left( \left\lfloor \frac{a_{k-j} b^{\lfloor k/2 \rfloor - j}}{q}
-\right\rfloor + [r_j < s_j] \right) - [r = 0] + \delta,$$
+\right\rfloor + [r_j < s_j] \right) - [r = 0] + \delta,
+$$
 
 and if $q$ is even, $A_b(m, q, r)$ equals $(b - 1) b^{(k-1)/2}/q$ when $k$ and $r$ are odd,
 $((b + 1) b^{(k-1)/2} - 2)/q + m_1^* - [r = 0] + \delta$ when $k$ is odd and $r$ is even,
@@ -41,4 +45,4 @@ odd, and $2(b^{k/2} - 1)/q + \lfloor a_{k/2}/q \rfloor + m_3^* - [r = 0] +
 
 ## Sources
 
-- K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Theorem 9.
+- Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Phakhinkon Napp Phunphayap and Prapanpong Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Theorem 9.

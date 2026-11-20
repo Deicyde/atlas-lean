@@ -12,4 +12,4 @@ the positions with $y \le F(x)$.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 15, 16 and 17 (and Definition 13 with second function `0`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 15, 16 and 17 (and Definition 13 with second function $0$).

@@ -9,4 +9,4 @@ The one-digit case $k = 0$ is excluded as degenerate.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Section 1 (definition of binomial form).
+- Donald L. Kreher and Douglas R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Section 1 (definition of binomial form).

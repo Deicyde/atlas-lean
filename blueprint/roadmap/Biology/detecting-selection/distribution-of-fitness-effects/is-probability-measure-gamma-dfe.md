@@ -1,3 +1,3 @@
 # Gamma DFE is a probability measure
 
-The gamma DFE is a probability law.
+For $a > 0$ and $r > 0$, the [gamma DFE](gamma-dfe.md) is a probability measure.

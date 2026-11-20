@@ -1,4 +1,4 @@
-# Corollary 3.5
+# Invertible fractional ideals are the locally principal ones
 
-A nonzero fractional ideal of a Noetherian domain is invertible iff it is
-locally principal.
+A nonzero fractional ideal of a Noetherian domain is invertible if and only if it is locally
+principal, that is, its localization at every maximal ideal is principal.

@@ -1,4 +1,6 @@
 # Moreau decomposition, polar form
 
-The cone projection's residual is the
-projection onto its negative polar. This accepts a Mathlib proper cone directly.
+Let $E$ be a real Hilbert space and $C \subseteq E$ a closed convex cone containing $0$, with
+[negative polar cone](polar-cone.md) $C^\circ$. Then for every $x \in E$,
+$P_{C^\circ} x = x - P_C x$: the residual of the projection onto $C$ is the projection onto
+$C^\circ$.

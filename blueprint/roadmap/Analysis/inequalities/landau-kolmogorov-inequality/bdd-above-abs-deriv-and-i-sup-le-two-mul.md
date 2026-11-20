@@ -1,7 +1,7 @@
 # Landau's inequality $M_1 \le 2\sqrt{M_0 M_2}$
 
-For $f \in C^2(\mathbb{R})$, let $M_k = \sup_x |f^{(k)}(x)|$.
-Prove that $M_1 \le 2\sqrt{M_0 M_2}$.
+Let $f \colon \mathbb{R} \to \mathbb{R}$ be twice continuously differentiable with $f$ and $f''$ bounded,
+and let $M_k = \sup_x |f^{(k)}(x)|$. Then $f'$ is bounded and $M_1 \le 2\sqrt{M_0 M_2}$.
 
 ## Sources
 

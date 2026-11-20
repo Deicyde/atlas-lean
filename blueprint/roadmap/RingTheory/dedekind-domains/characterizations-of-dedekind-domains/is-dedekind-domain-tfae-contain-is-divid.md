@@ -8,4 +8,4 @@ ideal.
 
 ## Sources
 
-- ATLAS NumberTheoryI Theorem 3.23, conditions (1), (5) and (6), with (6) corrected by the two nonzero qualifiers.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 3, Theorem 3.23 (the first, fifth and sixth conditions), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. Nonzero qualifiers are added to the sixth condition.

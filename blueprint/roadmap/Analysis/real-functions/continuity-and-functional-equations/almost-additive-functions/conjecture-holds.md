@@ -8,4 +8,4 @@ $x, y \in \mathbb{R}$ and $f(x) = h(x)$ for almost every $x \in \mathbb{R}$.
 
 ## Sources
 
-- de Bruijn [dB66] and Jurkat [Ju65], independently, per erdosproblems.com/1126, https://www.erdosproblems.com/1126.
+- Erdős Problem #1126, https://www.erdosproblems.com/1126; proved independently by N. G. de Bruijn, *On almost additive functions*, Colloquium Mathematicum 15 (1966), 59–63, and W. B. Jurkat, *On Cauchy's functional equation*, Proceedings of the American Mathematical Society 16 (1965), 683–686.

@@ -8,4 +8,4 @@ allowed.
 
 ## Sources
 
-- Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction.
+- Andrii Arman, Jaskaran Singh Kaire and Andriy Prymak, Hadwiger's conjecture for cap bodies, arXiv:2510.25968v3 (2025), introduction.

@@ -1,14 +1,8 @@
 # Existence of an inaccessible with no inaccessibles below it
 
-If any inaccessible exists, some inaccessible has no inaccessibles below it:
-minimize over the initial ordinals of inaccessible cardinals
-(`WellFounded.has_min`), and any member of `inaccessibleBelow` would give a
-smaller one.
+If an inaccessible cardinal exists, then some inaccessible cardinal has no inaccessible cardinal
+below it.
 
-In particular the least inaccessible — if one exists — is neither Mahlo (see
-`exists_isInaccessible_not_isMahlo` in `Mahlo.lean`) nor an inaccessible fixed
-point (`not_isInaccessibleFixedPoint_of_inaccessibleBelow_eq_empty` above).
-
-## Sources
-
-- If any inaccessible cardinal exists, some inaccessible has no inaccessibles below it.
+Proof: take the least inaccessible cardinal, which exists because the ordinals are well
+ordered. In particular the least inaccessible cardinal is neither Mahlo nor an inaccessible
+fixed point, since both notions require inaccessible cardinals below it.

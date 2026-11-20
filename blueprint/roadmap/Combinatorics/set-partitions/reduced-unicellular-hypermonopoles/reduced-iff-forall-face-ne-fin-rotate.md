@@ -11,4 +11,4 @@ assumption, so it is stated for every $\alpha$.
 
 ## Sources
 
-- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 10 (`jis-2025-25.3.3-lem-10`).
+- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 10.

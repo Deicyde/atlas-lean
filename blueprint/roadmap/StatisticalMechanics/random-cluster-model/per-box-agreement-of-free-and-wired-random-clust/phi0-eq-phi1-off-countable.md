@@ -1,5 +1,3 @@
 # Parametric agreement on increasing events off a countable set
 
-Parametric agreement: if for each `p` there is a monotone coupling of `μ p` and `ν p`, and edge
-marginals agree at every continuity point of the monotone map `p ↦ ν_p(ω(e) = 1)`, then `μ p` and `ν
-p` agree on increasing events for all `p` outside a countable set.
+Let $E$ be a finite set, $\Omega = \{0, 1\}^E$, $e \in E$, and for each $p \in \mathbb{R}$ let $\mu_p, \nu_p : \Omega \to \mathbb{R}$ admit a [monotone coupling](../fkg-inequality-and-monotonicity-of-random-cluste/is-monotone-coupling-fun.md) $P_p$. Suppose $p \mapsto \nu_p(e \text{ open})$ is nondecreasing and that at each point $p$ where it is continuous, $\mu_p(e' \text{ open}) = \nu_p(e' \text{ open})$ for every $e' \in E$. Then there is a countable set $S \subseteq \mathbb{R}$ such that $\mu_p(A) = \nu_p(A)$ for every $p \notin S$ and every increasing $A \subseteq \Omega$, where $\mu(e \text{ open})$ is the [edge marginal](../fkg-inequality-and-monotonicity-of-random-cluste/edge-marg-prob.md) and $\mu(A) = \sum_{\omega \in A} \mu(\omega)$.

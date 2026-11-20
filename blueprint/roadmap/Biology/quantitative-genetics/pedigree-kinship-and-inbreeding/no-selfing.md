@@ -1,4 +1,3 @@
 # Pedigree without selfing
 
-No individual is the offspring of a selfing (father ≠ mother), as in Wright's setting of a
-bisexual population.
+A [pedigree](pedigree.md) has no selfing if every non-founder $i$ has distinct parents: $f(i) \ne m(i)$.

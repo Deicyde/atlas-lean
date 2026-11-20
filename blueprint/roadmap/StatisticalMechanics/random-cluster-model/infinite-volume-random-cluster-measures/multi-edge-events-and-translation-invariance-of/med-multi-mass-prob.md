@@ -1,5 +1,5 @@
 # Mass of the all-open event under a weight function
 
-The mass `∑_ω 1_{A_t}(ω) μ(ω)` of the event that every edge of `t` is open, for a weight
-function `μ` on a finite configuration space; it is `eventMassProb μ A_t`
-(`med_multiMassProb_eq_eventMassProb`).
+Let $V$ be a finite set, $\mu$ a real function on the assignments of open/closed states to the unordered pairs of elements of $V$, and $t$ a finite set of such pairs. The all-open mass is
+
+$$\mu[t] = \sum_\omega \mathbf{1}[\text{every pair of } t \text{ is open in } \omega]\, \mu(\omega).$$

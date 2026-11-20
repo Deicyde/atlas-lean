@@ -1,5 +1,3 @@
 # Viterbi value of a pair HMM
 
-The Viterbi value of a pair HMM: the max-recursion value for `xs`, `ys`. It is the
-largest joint weight over alignments when the HMM weights are nonnegative
-(see `alignProb_le_viterbi`).
+For a pair HMM with weights in a linearly ordered semiring, the Viterbi value of $x$ and $y$ is the [max-recursion value](max-dp.md) of $x$ and $y$ from the begin state for the [associated automaton](to-automaton.md). It is the largest joint weight of an alignment when the weights are [nonnegative](nonneg-2.md).

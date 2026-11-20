@@ -1,3 +1,3 @@
 # Deciban score as a rescaled natural-log score
 
-Decibans are the natural-log score rescaled by `10 / log 10`.
+For all models and alignments, the [deciban score](score-decibans.md) equals $\frac{10}{\log 10}$ times the [PhyloCSF score](score.md).

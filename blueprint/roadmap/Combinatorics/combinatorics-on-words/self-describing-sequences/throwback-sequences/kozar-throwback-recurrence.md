@@ -14,4 +14,4 @@ theorem for every sequence of distinct positive integers.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, “Throwback Sequences of Positive Integers”, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.tex>; conjecture/introduction lines 71–80; exact throwback definition lines 98–103; general recurrence theorem and proof lines 124–137.
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 1 (Kozar's conjecture), Section 2 (the throwback) and Section 3, Theorem 2 (general recurrence theorem), https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

@@ -1,4 +1,6 @@
 # Time integral of a squared elementary integrand
 
-The time integral of the squared elementary integrand, path by path:
-`∫_0^t H_u² du = ∑ i, ξ_i² (t_{i+1} ∧ t - t_i ∧ t)`.
+Let $H$ be an [elementary integrand](elementary-integrand.md) with times $t_i$ and coefficients $\xi_i$. For
+every $t \ge 0$ and every $\omega$,
+
+$$\int_0^t H_u(\omega)^2\, du = \sum_i \xi_i(\omega)^2 \bigl( \min(t_{i+1}, t) - \min(t_i, t) \bigr) .$$

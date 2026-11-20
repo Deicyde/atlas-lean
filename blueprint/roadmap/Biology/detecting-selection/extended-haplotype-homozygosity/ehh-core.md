@@ -1,7 +1,7 @@
 # Extended haplotype homozygosity with core-allele labels
 
-Extended haplotype homozygosity with core-allele labels: the probability that two
-distinct haplotypes drawn from `C` without replacement share both their core allele and
-their window of radius `d`. For a set `C` of carriers of a single core allele this is the
-same count as `ehh`; for a pooled set `D` carrying several core alleles it excludes the
-cross-core pairs that plain `ehh` would wrongly count as concordant.
+For a haplotype sample, a labelling by core alleles, a finite set $C$ and a radius $d$,
+
+$$\mathrm{EHH}^{\mathrm{core}}_C(d) = \frac{N^{\mathrm{core}}_C(d)}{|C|\,(|C| - 1)},$$
+
+where $N^{\mathrm{core}}_C(d)$ is the number of [core-concordant pairs](concordant-pairs-core.md), with $x/0 = 0$. For carriers of a single core allele it equals the [EHH](ehh.md); for a pooled set it does not count pairs with different core alleles.

@@ -1,5 +1,5 @@
 # Logarithm of the binomial power factor
 
-Identity rewriting the logarithm of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` plus the
-Gaussian exponent `(k - n/2)² / (n/2)` as `-(n/2) · ((1+u) log(1+u) + (1-u) log(1-u) - u²)`,
-where `u = (2k - n)/n`. This combines the log-binomial expansion with the Gaussian correction.
+Let $0 < k < n$ be natural numbers and put $u = (2k - n)/n$. Then
+
+$$\log \frac{n^n}{k^k (n - k)^{n-k}\, 2^n} + \frac{(k - n/2)^2}{n/2} = -\frac{n}{2} \Big((1 + u)\log(1 + u) + (1 - u)\log(1 - u) - u^2\Big).$$

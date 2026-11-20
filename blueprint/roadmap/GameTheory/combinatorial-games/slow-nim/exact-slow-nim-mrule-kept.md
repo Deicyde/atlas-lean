@@ -7,4 +7,4 @@ such that $x_j \le x_i$ for every $j$.
 
 ## Sources
 
-- Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (the index `e(x)`). Such a pile always exists, so the default `0` of `getD` is never used.
+- Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (the index $e(x)$).

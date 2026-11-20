@@ -17,4 +17,4 @@ over the fixed window $[-a, a]$. Negative arguments make both sides zero.
 
 ## Sources
 
-- Abdesselam, arXiv:1903.11147v2, Proposition (Dixon), TeX lines 502-512.
+- Abdelmalek Abdesselam, *An algebraic independence result related to a conjecture of Dixmier on binary form invariants*, Res. Math. Sci. 6 (2019), DOI 10.1007/s40687-019-0189-x; arXiv:1903.11147v2, Proposition 5 (Dixon), <https://arxiv.org/abs/1903.11147v2>.

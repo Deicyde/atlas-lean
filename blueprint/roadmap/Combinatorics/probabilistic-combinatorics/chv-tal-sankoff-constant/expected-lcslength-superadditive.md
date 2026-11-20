@@ -6,4 +6,4 @@ natural numbers $m$ and $n$, $E_m + E_n \le E_{m+n}$.
 
 ## Sources
 
-- adapted from the verified gpt-5.6-sol proof in task T292145496.
+- Václav Chvátal and David Sankoff, *Longest common subsequences of two random sequences*, J. Appl. Probab. 12(2) (1975), 306–315. Concatenating two independent pairs of strings gives superadditivity, and the normalised expected length converges by Fekete's lemma.

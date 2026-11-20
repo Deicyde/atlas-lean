@@ -1,4 +1,8 @@
 # Deficiency of a chemical reaction network
 
-The deficiency `δ = n - ℓ - s` (number of complexes, linkage classes, dimension of the
-stoichiometric subspace) of a network with finitely many complexes.
+Let $N$ be a [chemical reaction network](reaction-network.md) with species set $S$ and reaction set $\rho$, with finitely many [complexes](complexes.md). The deficiency of $N$ is the integer
+
+$$\delta = n - \ell - s,$$
+
+where $n$ is the number of complexes, $\ell$ the [number of linkage classes](num-linkage-classes.md)
+and $s$ the dimension of the [stoichiometric subspace](stoichiometric-subspace.md).

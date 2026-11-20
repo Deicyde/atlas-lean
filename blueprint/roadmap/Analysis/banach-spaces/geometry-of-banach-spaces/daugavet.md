@@ -7,4 +7,4 @@ $\|I + T\| = 1 + \|T\|$, where the norms are operator norms.
 
 ## Sources
 
-- I. K. Daugavet, Izv. Vyssh. Uchebn. Zaved. Matematika 1963; Kadets et al., 1980s Daugavet property; Werner, Recent progress on Daugavet property, 2001; Lean states `C(Icc 0 1, ℝ)` compact-operator specialization of the general Daugavet property `‖Id+T‖=1+‖T‖`.
+- I. K. Daugavet, On a property of completely continuous operators in the space $C$, Uspekhi Mat. Nauk 18 (1963), no. 5, 157–158; V. M. Kadets, R. V. Shvidkoy, G. G. Sirotkin and D. Werner, Banach spaces with the Daugavet property, Trans. Amer. Math. Soc. 352 (2000), 855–873; D. Werner, Recent progress on the Daugavet property, Irish Math. Soc. Bull. 46 (2001), 77–97. The statement here is the case of compact operators $T$ on $C([0, 1], \mathbb{R})$ of the Daugavet property $\|I + T\| = 1 + \|T\|$.

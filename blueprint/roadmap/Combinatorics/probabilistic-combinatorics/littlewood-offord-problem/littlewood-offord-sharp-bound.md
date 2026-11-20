@@ -12,4 +12,4 @@ $\min_\nu |a_\nu| = 1$.
 
 ## Sources
 
-- A. C. Offord, Problem 179 of the Scottish Book; the Littlewood-Offord lemma (Littlewood-Offord, 1938) and Erdős's proof giving the sharp `O(2 ^ n / √n)` bound, attained when all the `a nu` are equal. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
+- Albert Cyril Offord, Problem 179 of the Scottish Book; the Littlewood–Offord lemma (Littlewood and Offord, 1938) and Erdős's proof of the sharp $O(2^n/\sqrt{n})$ bound, attained when all the $a_\nu$ are equal. See the commentary in R. Daniel Mauldin (ed.), *The Scottish Book*, 2nd ed. (Birkhäuser, 2015).

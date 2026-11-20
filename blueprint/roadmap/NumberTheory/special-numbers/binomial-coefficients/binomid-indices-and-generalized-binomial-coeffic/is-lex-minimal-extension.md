@@ -6,4 +6,4 @@ $(e_1, \dots, e_m)$. The set of all lex-minimal extensions is denoted $L$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.
+- Jonathan Caalim and Yu-ichi Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.

@@ -11,7 +11,7 @@ $$\|f\|_{L^q} \le C \left( \|f\|_{L^p} + \big\| |Df| \big\|_{L^p} \right),$$
 where the norms are taken with respect to Lebesgue measure and $|Df(x)|$ is the operator norm of
 the derivative of $f$ at $x$.
 
-Smoothness here means $C^\infty$. The source's formal statement asked for real-analyticity
+Smoothness here means $C^\infty$. The source's formal statement asks for real-analyticity
 instead, which makes the claim vacuous: an analytic, radial, compactly supported $f$ vanishes
 outside the ball.
 

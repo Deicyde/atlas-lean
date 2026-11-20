@@ -1,4 +1,3 @@
 # Rellich–Kondrachov, total boundedness form
 
-The Rellich ball is
-totally bounded in `ℓ²(ℕ, 𝕜)`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and $M \in \mathbb{R}$. The [Rellich ball](rellich-ball.md) of radius $M$ is a totally bounded subset of $\ell^2(\mathbb{N}, \mathbb{K})$.

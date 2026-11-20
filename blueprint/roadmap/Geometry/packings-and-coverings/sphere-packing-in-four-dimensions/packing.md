@@ -6,4 +6,4 @@ centres $c, c' \in C$ the open balls of radius $r$ about $c$ and $c'$ are disjoi
 
 ## Sources
 
-- CE2003 introduction, congruent positive-radius balls with disjoint interiors.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, introduction: congruent balls of positive radius with disjoint interiors.

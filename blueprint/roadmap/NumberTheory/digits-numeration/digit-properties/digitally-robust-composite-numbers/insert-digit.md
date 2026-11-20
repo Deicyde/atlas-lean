@@ -1,13 +1,14 @@
 # Inserting a digit
 
-For natural numbers $N$, $i$ and $d$, inserting $d$ into the base-ten
-expansion of $N$ in position $i$, where positions are counted from $0$ at the units digit, gives
-the number
+For natural numbers $N$, $i$ and $d$, inserting $d$ in position $i$ of the base-ten expansion
+of $N$, where positions are counted from $0$ at the units digit, gives the number
 
-$$\lfloor N / 10^{i} \rfloor \cdot 10^{i+1} + d \cdot 10^{i} + (N \bmod 10^{i}),$$
+$$
+\lfloor N / 10^{i} \rfloor \cdot 10^{i+1} + d \cdot 10^{i} + (N \bmod 10^{i}).
+$$
 
-so the digits in positions $i$ and above move up one place, $d$ takes position $i$, and the
-digits below position $i$ stay where they are. For $i = 0$ this appends $d$ on the right, and
+When $d < 10$, the digits in positions $i$ and above move up one place, $d$ takes position $i$,
+and the digits below position $i$ stay where they are. For $i = 0$ this appends $d$ on the right, and
 for $i$ at least the number of digits of $N$ it inserts $d$ among the leading zeros.
 
 When $i$ equals the number of digits of $N$, inserting $d$ gives the same number as replacing

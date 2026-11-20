@@ -1,6 +1,3 @@
 # All alignments of sequences over two alphabets
 
-All alignments of a sequence over `α` with a sequence over `β`: lists of columns
-`Option α × Option β` with no `(none, none)` column whose rows filter to `xs` and `ys`
-(`mem_alignmentsOf`), each listed once (`nodup_alignmentsOf`). For `β = α` this is
-`Cslib.Algorithms.Lean.alignments` (`alignmentsOf_eq_alignments`).
+The list of alignments of $x$ and $y$ is $L_{|x| + |y| + 1}(x, y)$, where $L$ is the [fuel-bounded enumeration](alignments-of-aux.md).

@@ -1,4 +1,3 @@
 # Gluing of inner and outer configurations
 
-The configuration on `G_out` that equals the inner configuration `ω` on inner edges and the
-outer configuration `ψ` elsewhere.
+Let $G_{\mathrm{in}}$ and $G_{\mathrm{out}}$ be simple graphs on finite sets $V_{\mathrm{in}}$ and $V_{\mathrm{out}}$, and $\iota : V_{\mathrm{in}} \to V_{\mathrm{out}}$ a map. For a configuration $\psi$ on $V_{\mathrm{out}}$ and $\omega$ on $V_{\mathrm{in}}$ (assignments of open/closed states to the unordered pairs), the glued configuration $\psi \oplus \omega$ on $V_{\mathrm{out}}$ gives a pair $e$ of the form $e = \{\iota x, \iota y\}$ the state $\omega(e')$ of a chosen preimage pair $e'$ with $\iota(e') = e$ (the preimage is unique when $\iota$ is injective), and every other pair its state $\psi(e)$.

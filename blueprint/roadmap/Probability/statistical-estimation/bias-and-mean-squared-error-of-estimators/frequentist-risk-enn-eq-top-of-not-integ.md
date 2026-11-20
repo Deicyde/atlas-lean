@@ -12,4 +12,4 @@ So a measurable non-integrable loss is never assigned a finite extended risk.
 
 ## Sources
 
-- blueprint `af_36871388da7326a07a5e4f71`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, §7.3.4, equation (7.3.16) (risk function).

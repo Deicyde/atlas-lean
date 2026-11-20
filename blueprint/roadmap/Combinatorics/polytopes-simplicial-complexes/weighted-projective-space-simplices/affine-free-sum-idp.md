@@ -1,7 +1,6 @@
 # Affine free sums of IDP weighted simplices at the negative weight vertex of a reflexive summand are IDP
 
-**Affine free sums of IDP weighted simplices at the negative weight vertex of a reflexive
-summand are IDP.** Let $q = (q_1, \dots, q_n)$ and $p = (p_1, \dots, p_m)$ be tuples of natural
+Let $q = (q_1, \dots, q_n)$ and $p = (p_1, \dots, p_m)$ be tuples of natural
 numbers, let $\Delta_{(1,q)} \subseteq \mathbb{R}^n$ and $\Delta_{(1,p)} \subseteq \mathbb{R}^m$
 be the weighted projective space simplices of $q$ and $p$, and let $v_0 = -\sum_{i=1}^m p_i e_i$
 be the negative weight vertex of $\Delta_{(1,p)}$, where $e_1, \dots, e_m$ is the standard basis

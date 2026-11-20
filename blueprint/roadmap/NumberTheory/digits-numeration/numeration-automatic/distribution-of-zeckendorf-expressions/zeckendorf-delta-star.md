@@ -1,6 +1,6 @@
 # The function $\delta^*$
 
-**The function $\delta^*$.** Let $L$ and $\tilde L$ be lists and $Q$ and $\tilde Q$ real
+Let $L$ and $\tilde L$ be lists and $Q$ and $\tilde Q$ real
 sequences, let $\tilde\omega$ be the first term of $\tilde Q$, and let $\delta_1^*$ be the function
 $\delta_1^*$ of $L$, $\tilde L$, $Q$, $\tilde Q$. For real $y$: if some natural number $m$
 satisfies $\tilde\omega^{m+1} \le y < \tilde\omega^m$, then

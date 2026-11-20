@@ -1,3 +1,3 @@
-# Vertices of the box $(-n, n)^d$
+# Vertices of the box $\{-n, \dots, n\}^d$
 
-The vertices of the box `Λ_n = [-n, n]^d ⊆ ℤ^d`, as a subtype.
+For $d, n \in \mathbb{N}$, the box $\Lambda_n$ is the set of sites $x \in \mathbb{Z}^d$ with $|x_i| \le n$ for every coordinate $i$, that is, $\Lambda_n = \{-n, \dots, n\}^d$.

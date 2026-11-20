@@ -1,4 +1,5 @@
 # Genetic causality proportion solves the defining equation
 
-The genetic causality proportion solves the paper's Equation 1:
-`q₂² / q₁² = (ρ_g²) ^ gcp` with `ρ_g = q₁ q₂`, for nonzero `q₁, q₂` with `ρ_g² < 1`.
+Let $q_1, q_2$ be nonzero real numbers with $\rho_g = q_1 q_2$ satisfying $\rho_g^2 < 1$. Then the [genetic causality proportion](gcp.md) satisfies
+
+$$(\rho_g^2)^{\mathrm{gcp}(q_1, q_2)} = \frac{q_2^2}{q_1^2}.$$

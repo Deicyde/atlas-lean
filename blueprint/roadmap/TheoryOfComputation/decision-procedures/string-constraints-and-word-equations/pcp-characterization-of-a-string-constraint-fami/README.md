@@ -13,4 +13,4 @@
 - [Top morphism applied to an index word](flat-map-top-fun.md)
 - [Bottom morphism applied to an index word](flat-map-bot-fun.md)
 - [Flattening a list of one-letter blocks](map-inl-flatten.md)
-- [PCP is characterized by string-constraint satisfiability:](pcp-iff-string-sat.md)
+- [PCP is characterized by string-constraint satisfiability](pcp-iff-string-sat.md)

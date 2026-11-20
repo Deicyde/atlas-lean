@@ -8,3 +8,7 @@ every other free variable of $t$ is lowered by one.
 
 This is the substitution of β-reduction, written $\uparrow^{-1}([0 \mapsto \uparrow^1 s]\,t)$ in
 TAPL Section 6.3; TAPL's $[0 \mapsto s]\,t$ alone does not lower the other free variables.
+
+## Sources
+
+- B. C. Pierce, *Types and Programming Languages* (TAPL), MIT Press, 2002: Section 6.3.

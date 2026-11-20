@@ -12,7 +12,7 @@ disjoint sum $P + Q$, in which no element of $P$ is comparable with an element o
 $A \boxplus B$ is a poset matrix representing the ordinal sum $P \oplus Q$, in which every
 element of $P$ lies below every element of $Q$.
 
-Only sums of two terms are stated; sums of $r$ terms follow by iterating.
+Sums of $r$ terms follow by iterating.
 
 ## Sources
 

@@ -9,4 +9,4 @@ Over the finite ternary alphabet this is equivalent to having infinitely many pa
 
 ## Sources
 
-- Labbé 2014.
+- Sébastien Labbé, *A Counterexample to a Question of Hof, Knill and Simon*, Electronic Journal of Combinatorics 21 (2014), #P3.11, https://doi.org/10.37236/3758

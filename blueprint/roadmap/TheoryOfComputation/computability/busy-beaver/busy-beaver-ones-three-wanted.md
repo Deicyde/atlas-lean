@@ -6,4 +6,4 @@ started on the blank tape, the largest number of ones left on the tape at the ha
 
 ## Sources
 
-- Lin--Radó (1965), determination of `Σ(3) = 6`.
+- S. Lin and T. Radó, "Computer studies of Turing machine problems", *Journal of the ACM* 12 (1965), 196–212: $\Sigma(3) = 6$.

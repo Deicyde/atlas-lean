@@ -15,7 +15,7 @@
 - [Situation surjectivity](sit-surj.md)
 - [Finite set of pushable symbols](push-fs.md)
 - [Pushable and input symbols of a stack](sym-set.md)
-- [The classical encoding record of a finite multi-stack machine](of-fin-tm2.md)
+- [The classical encoding record of a finite multi-stack Turing machine](of-fin-tm2.md)
 - [Time bound of the transition-clause generator on the tables of a machine](upd-time.md)
 - [Time bound of the situation-definition generator on the tables of a machine](sdef-time.md)
 - [Time bound of the shift generator on the tables of a machine](shift-time.md)

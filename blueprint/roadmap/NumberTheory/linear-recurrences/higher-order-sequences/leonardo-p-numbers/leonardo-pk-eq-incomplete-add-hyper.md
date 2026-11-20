@@ -1,4 +1,4 @@
-# Leonardo p-numbers split into incomplete and hyper parts
+# Leonardo $p$-numbers split into incomplete and hyper parts
 
 For natural numbers $p \ge 1$,
 $n > p$ and $k \ge 1$, let $N = n + (p + 1)k$. Then
@@ -15,4 +15,4 @@ the hyper Leonardo $p$-number.
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 11.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 11.

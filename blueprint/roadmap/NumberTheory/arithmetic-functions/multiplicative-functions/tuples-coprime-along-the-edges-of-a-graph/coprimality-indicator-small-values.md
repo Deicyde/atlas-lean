@@ -6,4 +6,4 @@ $\delta_G(2, 3) = 1$ and $\delta_G(2, 4) = 0$.
 
 ## Sources
 
-- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, display (def_delta_G).
+- László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, the display labelled `def_delta_G` in the TeX source, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex.

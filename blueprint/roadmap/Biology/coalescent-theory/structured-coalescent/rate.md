@@ -1,7 +1,3 @@
 # Transition rates of the two-lineage structured coalescent
 
-The transition rates `q(s, t)` (`s ≠ t`) of the two-lineage structured coalescent in the
-finite island model with `d` demes and `M = 4Nm`, time in units of `2N` generations: same deme →
-coalesced at rate `1`, same deme → different demes at rate `M`, different demes → same deme at
-rate `M / (d - 1)`; all other rates (and the diagonal) are `0`. Meaningful for `d ≥ 2` and
-`M ≥ 0`.
+For a natural number $d$ of demes and a real number $M$, the rates $q(s, t)$ between [pair states](pair-state.md) are: $q(\text{same}, \text{coalesced}) = 1$, $q(\text{same}, \text{different}) = M$, $q(\text{different}, \text{same}) = M/(d-1)$ (with $x/0 = 0$, so it is $0$ when $d = 1$), and $q(s, t) = 0$ for every other pair, the diagonal included. For $d \ge 2$ and $M = 4Nm \ge 0$, these are the transition rates of two lineages in the finite island model with $d$ demes, with time in units of $2N$ generations.

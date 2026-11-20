@@ -8,4 +8,4 @@ $u \in \mathcal O_K^\times$ to the class of $u$ in that quotient.
 
 ## Sources
 
-- ATLAS `exactSeq_exact_at_quotient`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

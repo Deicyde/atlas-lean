@@ -11,4 +11,4 @@ $nq$ is odd; this is its case $n = 1$, in which that assumption holds for every 
 
 ## Sources
 
-- Kunle Adegoke, "Generalizations of the Reciprocal Fibonacci-Lucas Sums of Brousseau," Journal of Integer Sequences 21 (2018), <https://cs.uwaterloo.ca/journals/JIS/VOL21/Adegoke/ade3.tex>; controlling theorem, equation, and specialization at lines 1135–1148; original reference: Brother Alfred Brousseau, "Fibonacci-Lucas Infinite Series — Research Topic," Fibonacci Quarterly 7 (1969), 211–217, Formula (6), cited at source line 1414.
+- Kunle Adegoke, "Generalizations of the Reciprocal Fibonacci-Lucas Sums of Brousseau," Journal of Integer Sequences 21 (2018), Article 18.1.6, Theorem 38, identity (106) at $n = 1$, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Adegoke/ade3.tex>; original reference: Brother Alfred Brousseau, "Fibonacci-Lucas Infinite Series — Research Topic," Fibonacci Quarterly 7 (1969), 211–217, Formula (6), cited as reference [2] of the source.

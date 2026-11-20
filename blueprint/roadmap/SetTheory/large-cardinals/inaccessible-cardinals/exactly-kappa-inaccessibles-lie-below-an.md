@@ -1,8 +1,7 @@
 # Exactly $\kappa$ inaccessibles lie below an inaccessible fixed point
 
-The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`
-(`card_type`): the companion to the upper bound `mk_inaccessibleBelow_le`.
+If $\kappa$ is an inaccessible fixed point, then there are exactly $\kappa$ inaccessible cardinals
+below $\kappa$.
 
-## Sources
-
-- Below an inaccessible fixed point κ there are exactly κ inaccessible cardinals.
+Proof: by definition the inaccessible cardinals below $\kappa$ have order type $\kappa$, so the set
+of them has cardinality $\kappa$.

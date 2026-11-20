@@ -1,5 +1,6 @@
 # Banach–Nečas–Babuška isomorphism
 
-The **Banach–Nečas–Babuška isomorphism**: the operator associated to a
-bilinear form satisfying the inf–sup condition and nondegeneracy is a
-continuous linear equivalence.
+Let $E$ be a real Banach space, $F$ a real Hilbert space and $B$ a bounded bilinear form on
+$E \times F$ satisfying the [inf–sup condition](is-inf-sup.md) and [nondegeneracy](is-nondegenerate.md).
+Then the [associated operator](bilinear-form-sharp.md) $B^\sharp : E \to F$ is an isomorphism of
+Banach spaces.

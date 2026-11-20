@@ -15,4 +15,4 @@ whatever $k$ is; $k$ only indexes the topology.
 
 ## Sources
 
-- Burns-Matveev v2 §8.4 finite-atlas `ε`-balls, v3 §8.3 weak `C^k` topology after Hirsch Ch. II. `k = ⊤` is the `C^∞` topology (smooth, not analytic). The space carries smooth metrics for every `k`, and no chart is chosen. Equality with the finite-atlas `ε`-ball topology on a closed manifold follows by the standard argument (relatively compact chart domains and chain rule).
+- K. Burns and V. S. Matveev, Open problems and questions about geodesics, Ergodic Theory Dynam. Systems 41 (2021), 641–684, arXiv:1308.5417: finite-atlas $\varepsilon$-balls in §8.4 of the second arXiv version, and the weak $C^k$ topology after Hirsch, Ch. II, in §8.3 of the third. The case $k = \infty$ is the $C^\infty$ topology (smooth, not analytic). The space carries smooth metrics for every $k$, and no chart is chosen. Equality with the finite-atlas $\varepsilon$-ball topology on a closed manifold follows by the standard argument (relatively compact chart domains and chain rule).

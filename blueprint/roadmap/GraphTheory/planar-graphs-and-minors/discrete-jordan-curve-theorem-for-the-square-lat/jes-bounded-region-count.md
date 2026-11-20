@@ -1,3 +1,3 @@
 # Bounded region count as cycle rank
 
-The number of bounded regions of a finite graph, defined as its cycle rank `nullity G`.
+For a simple graph $G$ on a finite vertex set $V$, the bounded region count is defined to be its cycle rank $\beta(G) = |E(G)| + c(G) - |V|$, where $c(G)$ is the number of connected components.

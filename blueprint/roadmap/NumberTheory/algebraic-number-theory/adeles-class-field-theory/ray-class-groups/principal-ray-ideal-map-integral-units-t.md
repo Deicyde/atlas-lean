@@ -7,4 +7,4 @@ $\mathfrak m$, is the identity element $\mathcal O_K$.
 
 ## Sources
 
-- ATLAS lines 1160--1175, an input to exactness at the quotient.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

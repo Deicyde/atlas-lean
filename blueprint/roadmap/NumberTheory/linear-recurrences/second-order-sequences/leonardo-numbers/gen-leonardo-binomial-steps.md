@@ -6,11 +6,7 @@ generalized Leonardo numbers. For all natural numbers $n$ and $r$,
 
 $$\sum_{i=0}^{n} \binom{n}{i} L_{k,3i+r} = 2^n L_{k,2n+r},$$
 
-
-
 $$\sum_{i=0}^{n} \binom{n}{i} M_{k,3i+r} = 2^n M_{k,2n+r},$$
-
-
 
 $$\sum_{i=0}^{n} \binom{n}{i} L_{k,4i+r} = 3^n L_{k,2n+r} + k\,(3^n - 2^n),$$
 
@@ -24,4 +20,4 @@ as in parts (ii) of Theorems 3.1–3.3.
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.4.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, Theorem 3.4.

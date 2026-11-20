@@ -1,3 +1,5 @@
 # Erasing an owned key preserves invocation priority
 
-Removing an owned key preserves the shared priority inequalities on the remainder.
+Let $\sigma = (\pi, r, c)$ be a service signature and $\Delta$ an ownership context such that $\pi$
+is below the rank of every active capability of $\Delta$. Then for every endpoint $z$, $\pi$ is
+below the rank of every active capability of $\Delta \setminus z$.

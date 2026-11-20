@@ -10,4 +10,4 @@ where $(a;q)_\infty = \prod_{k \ge 0} (1 - a q^k)$ is the infinite q-Pochhammer 
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 1 (`jis-2026-26.2.6-thm-1`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 1.

@@ -19,4 +19,6 @@ then with the ramification bounded inside a power-series level.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Puiseux_series
+- V. Puiseux, *Recherches sur les fonctions algébriques*, J. Math. Pures Appl. 15 (1850), 365–480 (the statement at p. 397).
+- S. MacLane, *The universality of formal power series fields*, Bull. Amer. Math. Soc. 45 (1939), 888–890 (Hahn series fields with divisible value group over an algebraically closed field of characteristic $0$ are algebraically closed).
+- Wikipedia, “Puiseux series”, revision of 10 November 2026, https://en.wikipedia.org/w/index.php?title=Puiseux_series&oldid=1384902608.

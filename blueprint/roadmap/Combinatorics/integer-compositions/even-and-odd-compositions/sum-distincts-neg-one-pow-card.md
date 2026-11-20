@@ -7,4 +7,4 @@ $j \ge 0$, then $E(n) - O(n) = (-1)^j$; otherwise $E(n) - O(n) = 0$.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 1 (Legendre) (`jis-2024-24.6.5-thm-1`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 1 (Legendre).

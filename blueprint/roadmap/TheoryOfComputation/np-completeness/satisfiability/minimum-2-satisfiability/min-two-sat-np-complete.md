@@ -12,4 +12,4 @@ bitstring $x$, $L$ accepts $x$ exactly when MINIMUM 2-SATISFIABILITY accepts $f(
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MINIMUM 2-SATISFIABILITY; R. Kohli, R. Krishnamurti, and P. Mirchandani, "The minimum satisfiability problem" (1994).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MINIMUM 2-SATISFIABILITY; Rajeev Kohli, Ramesh Krishnamurti, and Prakash Mirchandani, "The minimum satisfiability problem" (1994).

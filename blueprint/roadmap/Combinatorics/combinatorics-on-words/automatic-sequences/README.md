@@ -1,6 +1,6 @@
 # Automatic sequences and numeration systems
 
-k-automatic and k-regular sequences, Cobham's theorem and kernels, meta-automatic sequences, results proved with the Walnut prover, and numeration systems (Dumont–Thomas, Tribonacci and Zeckendorf representations) whose digit words define such sequences.
+$k$-automatic and $k$-regular sequences, Cobham's theorem and kernels, meta-automatic sequences, results proved with the Walnut prover, and numeration systems (Dumont–Thomas, Tribonacci and Zeckendorf representations) whose digit words define such sequences.
 
 - [Automatic sequences](automatic-sequences/README.md)
 - [Christol's theorem](christol-s-theorem/README.md)

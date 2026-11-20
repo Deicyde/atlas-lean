@@ -7,4 +7,4 @@ $a_{n+2} = a_{n+1} + a_n + k$.
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly 62.3 (2024), introduction; Kusrini, Putra, and Kuhapatanakul, *On Generalized Leonardo p-Numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6.
+- Kantaphon Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, The Fibonacci Quarterly 62 (2024), no. 3, 201–207, introduction; Kantaphon Kuhapatanakul and Pongpol Ruankong, *On generalized Leonardo $p$-numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6.

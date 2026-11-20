@@ -1,3 +1,3 @@
 # Nonnegativity of Jukes–Cantor transition probabilities
 
-The Jukes–Cantor transition probabilities are nonnegative when `0 ≤ μ * t`.
+If $\mu t \ge 0$, then $P_{ij}(t) \ge 0$ for all bases $i, j$, where $P$ is the [Jukes–Cantor transition probability](jc-prob.md).

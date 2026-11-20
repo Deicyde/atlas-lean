@@ -1,4 +1,7 @@
 # Edge lengths of the star tree matching an admixture model
 
-Edge lengths of the star tree matching the admixture model with edge lengths `a`, `b`, `c`:
-`(1 - α)(a + b)`, `α (a + b)` and `c - α (1 - α)(a + b)`.
+For real numbers $\alpha, a, b, c$, the matching star-tree edge lengths are
+
+$$\ell_{\star} = \bigl((1 - \alpha)(a + b),\ \alpha (a + b),\ c - \alpha (1 - \alpha)(a + b)\bigr)$$
+
+on the edges $0, 1, 2$.

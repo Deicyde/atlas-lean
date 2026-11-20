@@ -1,7 +1,8 @@
 # An NTM that accepts the empty word accepts every word
 
-If a single-tape nondeterministic
-Turing machine $m$ accepts the empty word, then $m$ accepts every word over its tape alphabet.
+Let $m$ be a single-tape nondeterministic Turing machine (in the model of this topic, whose transitions
+cannot test for a blank). If $m$ accepts the empty word, then $m$ accepts every word over
+its tape alphabet.
 
-This is a special case of acceptance being closed under extension on the right, a defect of
-CSLib's definition of these machines.
+This is the case of the empty word in the closure of acceptance under extension on the right,
+which holds in this model because no transition can test for a blank cell.

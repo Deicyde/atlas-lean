@@ -5,4 +5,4 @@ belongs to $\mathsf{NC}^k$ for some natural number $k$.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 6.21.

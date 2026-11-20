@@ -6,4 +6,4 @@ $\bar\alpha_i = q - i + 1 + \sum_{k=i}^{q} s_k$ for $1 \le i \le q$, is $(8, 6, 
 
 ## Sources
 
-- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalMaxPartition`.
+- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4).

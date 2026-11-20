@@ -1,4 +1,4 @@
-# A function continuous on $(0,1)$ with vanishing moments is zero on $(0,1)$
+# A function continuous on $[0,1]$ with vanishing moments is zero on $[0,1]$
 
 Let
 $f : \mathbb{R} \to \mathbb{R}$ be continuous on $[0,1]$, and suppose that

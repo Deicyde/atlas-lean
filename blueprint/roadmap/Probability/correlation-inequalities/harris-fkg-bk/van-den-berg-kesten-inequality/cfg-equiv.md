@@ -1,4 +1,7 @@
 # Relabeling configurations along a bijection
 
-The bijection `ω ↦ ω ∘ e` from configurations on `F` to configurations on `E` induced by
-`e : E ≃ F`. This is `e.symm.arrowCongr (Equiv.refl Bool)` (`StatMech.cfgEquiv_eq_arrowCongr`).
+Let $E$ and $F$ be sets and $e : E \to F$ a bijection. The relabelling map is the bijection
+
+$$\{0,1\}^F \to \{0,1\}^E, \qquad \omega \mapsto \omega \circ e,$$
+
+with inverse $\omega \mapsto \omega \circ e^{-1}$.

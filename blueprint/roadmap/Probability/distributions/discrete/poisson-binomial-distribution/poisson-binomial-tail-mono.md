@@ -1,4 +1,4 @@
 # The burden-test p-value is monotone in every background rate
 
-If `p i ≤ q i` for all
-`i`, with all probabilities in `[0, 1]`, then `P_p(S ≥ k) ≤ P_q(S ≥ k)`.
+Let $p, q \in [0, 1]^m$ with $p_i \le q_i$ for every $i$. Then for every $k \in \mathbb{N}$,
+$T_k(p) \le T_k(q)$, where $T$ is the [Poisson-binomial upper tail](poisson-binomial-tail.md).

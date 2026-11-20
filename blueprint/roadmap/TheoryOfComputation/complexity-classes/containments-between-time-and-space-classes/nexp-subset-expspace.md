@@ -6,4 +6,4 @@ exponential space.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation).
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation).

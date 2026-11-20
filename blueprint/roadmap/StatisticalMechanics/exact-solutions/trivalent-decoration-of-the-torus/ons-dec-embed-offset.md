@@ -1,4 +1,3 @@
-# Offset of a dart inside its 8 × 8 cell
+# Offset of a dart inside its $8 \times 8$ cell
 
-The offset of a dart in direction `μ` inside its `8 × 8` cell: east `(6, 4)`, north `(4, 6)`,
-west `(2, 4)`, south `(4, 2)`.
+For a direction $\mu$, the offset $o(\mu) \in \mathbb{N}^2$ is $(6, 4)$, $(4, 6)$, $(2, 4)$, $(4, 2)$ for $\mu = 0, 1, 2, 3$ respectively.

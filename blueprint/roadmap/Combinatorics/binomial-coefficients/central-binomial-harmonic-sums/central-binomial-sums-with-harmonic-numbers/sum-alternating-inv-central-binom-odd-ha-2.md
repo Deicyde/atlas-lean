@@ -12,7 +12,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{4^k}{\binom{2k}{k}} k^r (O_n - O_k) =
 where the right-hand sum is empty when $n = 0$.
 
 The paper's right-hand sum runs over all $k \le r$; its term $k = n$ vanishes there because
-$1 - O_{-1} = 0$, so it is dropped here.
+$1 - O_{-1} = 0$, so the sum above stops at $\min(r, n-1)$.
 
 ## Sources
 

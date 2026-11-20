@@ -1,3 +1,3 @@
 # Synonymous rate does not depend on ω
 
-The synonymous rate does not depend on `ω`: `ρ_S(ω) = ρ_S(1)`.
+For all real $\pi, \kappa, \omega$, the [synonymous rate](syn-rate.md) satisfies $\rho_S(\omega) = \rho_S(1)$.

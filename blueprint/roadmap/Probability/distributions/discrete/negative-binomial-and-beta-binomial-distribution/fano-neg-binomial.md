@@ -1,4 +1,6 @@
 # Fano factor of bursty expression
 
-For `a > 0` and `b > 0`, the negative binomial law with
-size `a` and mean `a b` has `Var N / E N = 1 + b`.
+For $a, b > 0$, the [negative binomial law](neg-binomial-real.md) $\mathrm{NB}(\cdot; a, ab)$ with size $a$
+and mean $ab$ has Fano factor
+
+$$\frac{\sum_k k^2\, \mathrm{NB}(k; a, ab) - \bigl(\sum_k k\, \mathrm{NB}(k; a, ab)\bigr)^2}{\sum_k k\, \mathrm{NB}(k; a, ab)} = 1 + b .$$

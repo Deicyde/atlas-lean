@@ -8,4 +8,4 @@ the MAX-3SAT optimum of $x$.
 
 ## Sources
 
-- J. Håstad, "Some optimal inapproximability results", Journal of the ACM 48 (2001), 798-859 (STOC 1997).
+- Johan Håstad, "Some optimal inapproximability results", Journal of the ACM 48 (2001), 798-859 (STOC 1997).

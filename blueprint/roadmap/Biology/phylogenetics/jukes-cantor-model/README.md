@@ -18,7 +18,7 @@
 - [Detailed balance of the Jukes–Cantor chain](detailed-balance-jc-stochastic-matrix.md)
 - [Nonnegativity of the Jukes–Cantor difference probability](p-diff-nonneg.md)
 - [Jukes–Cantor difference probability is below 3/4](p-diff-lt-three-quarters.md)
-- [Jukes–Cantor difference probability lies in (0, 3/4)](p-diff-mem-ico.md)
+- [Range of the Jukes–Cantor difference probability](p-diff-mem-ico.md)
 - [The Jukes–Cantor distance correction](jc-distance-p-diff.md)
 - [Jukes–Cantor rate matrix as a matrix](jc-rate-matrix.md)
 - [Eigenbasis of the Jukes–Cantor rate matrix](jc-eigenbasis.md)

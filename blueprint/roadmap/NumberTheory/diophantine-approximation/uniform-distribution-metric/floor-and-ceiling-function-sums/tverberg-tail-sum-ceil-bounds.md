@@ -8,9 +8,9 @@ $-2^{\ell-2} \lfloor m/2 \rfloor \le T(a, m, K) \le 2^{\ell-2} \lfloor m/2 \rflo
 $a, m, K$. Moreover, for every natural number $r$, if $a_i = r$ for every $i$, then
 $T(a, 2r, r) = (-1)^\ell \, 2^{\ell-2} \, r$.
 
-Theorem 8 as recorded asserts this equality for every $K$, which is false: for $\ell = 3$, $m = 2$,
-$a_i = 1$ and $K = 2$ the sum is $0$, not $-2$. The paper's proof establishes it at $K = m/2$,
-which is what is stated here.
+Theorem 8 as printed asserts this equality for every $K$, which is false: for $\ell = 3$, $m = 2$,
+$a_i = 1$ and $K = 2$ the sum is $0$, not $-2$. The paper's proof establishes it at $K = m/2$, which
+is the statement above.
 
 ## Sources
 

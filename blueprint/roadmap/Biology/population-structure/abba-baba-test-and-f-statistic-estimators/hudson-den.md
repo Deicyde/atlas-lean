@@ -1,4 +1,7 @@
-# Hudson's F_ST denominator at one site
+# Hudson's $F_{ST}$ denominator at one site
 
-Hudson's `F_ST` denominator at one site: `p_A (1 - p_B) + p_B (1 - p_A)`, the probability
-that two copies, one from each population, differ. The numerator is `(p_A - p_B) ^ 2`.
+For real numbers $p_A, p_B$, Hudson's denominator is
+
+$$D(p_A, p_B) = p_A (1 - p_B) + p_B (1 - p_A),$$
+
+for frequencies in $[0, 1]$ the probability that two gene copies, one from each population, differ. The corresponding numerator is $(p_A - p_B)^2$.

@@ -1,8 +1,7 @@
-# Weak stationarity of Wright's law (density form)
+# Weak stationarity of Wright's law, density form
 
-For `θ₁, θ₂ > 0` and every `f` twice
-continuously differentiable on `[0, 1]`, `∫₀¹ (L f)(x) π(x) dx = 0` for the Beta`(θ₁, θ₂)`
-density `π`. (`L f` uses `deriv`, which agrees with the one-sided derivatives inside `(0, 1)`;
-its values at the endpoints do not affect the integral.) The proof is integration by parts:
-`L f · π = (x ^ θ₁ (1 - x) ^ θ₂ f' / (2 B(θ₁, θ₂)))'` on `(0, 1)` because the flux vanishes, and
-this boundary term is `0` at both endpoints since `θ₁, θ₂ > 0`.
+For all real $\theta_1 > 0$ and $\theta_2 > 0$ and every function $f$ twice continuously differentiable on $[0, 1]$,
+
+$$\int_0^1 (L_{\theta_1,\theta_2} f)(x)\, \beta_{\theta_1,\theta_2}(x)\, dx = 0,$$
+
+where $L_{\theta_1,\theta_2}$ is the [mutation generator](mutation-generator.md) and $\beta_{\theta_1,\theta_2}$ the Beta density. The proof integrates by parts: since the flux vanishes, $(L f)\,\beta$ is the derivative of $x^{\theta_1}(1 - x)^{\theta_2} f'(x)/(2B(\theta_1, \theta_2))$ on $(0, 1)$, which vanishes at both endpoints because $\theta_1, \theta_2 > 0$.

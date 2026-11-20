@@ -1,4 +1,7 @@
 # Covariance with the outcome in a linear moment model
 
-The covariance of any square-integrable variable with the outcome splits along the
-observational decomposition: `Cov(V, Y) = β Cov(V, X) + Cov(V, U)`.
+Let $(Z, X, Y, U, \alpha, \beta)$ be a [linear moment model](linear-moment-model.md) on a probability measure $\mu$, and let $V$ be a square-integrable real function. Then
+
+$$\operatorname{Cov}(V, Y) = \beta \operatorname{Cov}(V, X) + \operatorname{Cov}(V, U),$$
+
+covariances being taken under $\mu$.

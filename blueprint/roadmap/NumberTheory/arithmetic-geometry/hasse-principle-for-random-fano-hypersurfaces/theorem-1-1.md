@@ -7,4 +7,4 @@ local density $\rho^{\mathrm{loc}}_{d,n}$ as the real number $A$ tends to $\inft
 
 ## Sources
 
-- T. Browning, P. L. Boudec, and W. Sawin, `The Hasse principle for random Fano hypersurfaces`, Annals of Math, 197 (3) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hasse_principle_random_fano` of the lean-eval benchmark.
+- Tim Browning, Pierre Le Boudec and Will Sawin, *The Hasse principle for random Fano hypersurfaces*, Annals of Mathematics 197 (2023), no. 3, 1115–1203, Theorem 1.1. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hasse_principle_random_fano` of the lean-eval benchmark.

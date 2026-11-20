@@ -5,8 +5,7 @@ $W(\psi)$ of $\psi$-well approximable numbers consists of the real numbers $x \i
 that for infinitely many natural numbers $q$ there is an integer $p$ with
 $|x - p/q| < \psi(q)/q$.
 
-The fractions $p/q$ need not be in lowest terms, unlike Mathlib's well approximable sets,
-which use points of exact additive order $q$. The value $\psi(0)$ is irrelevant.
+The fractions $p/q$ need not be in lowest terms. The value $\psi(0)$ is irrelevant.
 
 ## Sources
 

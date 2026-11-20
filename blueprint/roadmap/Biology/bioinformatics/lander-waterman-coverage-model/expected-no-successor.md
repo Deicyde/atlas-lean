@@ -1,6 +1,7 @@
-# Expected number of no-successor reads (exact)
+# Expected number of no-successor reads
 
-For `0 < G` and `L ≤ G`, the
-expected number of reads with no successor is `N (1 - (L - 1) / G) ^ (N - 1)`.
-The `0 < G` hypothesis is essential: at `G = 0` and `N > 0`, the right-hand expression is
-`N` while the sum of totalized normalized counts is zero.
+For $G > 0$ and $L \le G$,
+
+$$\sum_{j=1}^{N} \nu_j = N \Bigl(1 - \frac{\max(L - 1, 0)}{G}\Bigr)^{\max(N - 1, 0)},$$
+
+where $\nu_j$ is the [normalized count](normalized-count.md) of the start tuples in which read $j$ has [no successor](no-successor.md). For $L = 0$ the right side is $N$.

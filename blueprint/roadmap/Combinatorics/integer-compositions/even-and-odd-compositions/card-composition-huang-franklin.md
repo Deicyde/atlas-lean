@@ -8,4 +8,4 @@ followed by a part that is either the last part or greater than $k$.
 
 ## Sources
 
-- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 15 (Huang) (`jis-2024-24.6.5-thm-15`).
+- Jia Huang, *Even and Odd Compositions with Restricted Parts*, Journal of Integer Sequences 27 (2024), Article 24.6.5, Theorem 15 (Huang).

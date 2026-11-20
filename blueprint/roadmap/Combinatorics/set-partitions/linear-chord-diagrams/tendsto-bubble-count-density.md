@@ -15,4 +15,4 @@ integer sizes $p_n$ with $p_n/(n-1) \to x$, the scaling the paper's proof uses.
 
 ## Sources
 
-- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 6 (`jis-2024-24.4.2-thm-6`).
+- Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 6.

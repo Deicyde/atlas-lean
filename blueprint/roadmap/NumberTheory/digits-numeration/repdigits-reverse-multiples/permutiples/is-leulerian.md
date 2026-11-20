@@ -9,4 +9,4 @@ multi-edges in $D$ starting at $c$, counted with multiplicity.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 4 (definition of `L`-Eulerian, before Corollary 2).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 4 (definition of $L$-Eulerian, before Corollary 2).

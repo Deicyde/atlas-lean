@@ -1,3 +1,4 @@
 # Number of ordered grid rectangles
 
-The number of ordered grid rectangles is the product of the two pair counts.
+For finite linear orders $\rho$ and $\gamma$, the number of ordered rectangles of the grid
+$\rho \times \gamma$ is $\binom{|\rho|}{2} \binom{|\gamma|}{2}$.

@@ -8,4 +8,4 @@ where $R(k, m) = \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$ is the array 
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 15.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Proposition 15.

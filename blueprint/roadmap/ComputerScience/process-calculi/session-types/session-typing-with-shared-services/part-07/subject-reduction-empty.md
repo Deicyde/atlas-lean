@@ -1,4 +1,4 @@
 # Subject reduction for runtime typing at the empty interface
 
-An empty linear interface is initially balanced/compatible and remains EXACTLY
-empty through any runtime Step, including private sessions and shared services.
+Let $n$ be a natural number, $\Gamma$ a service environment and $p$, $q$ processes. If $\Gamma;
+\emptyset \vdash_n p$ and $p \to q$, then $\Gamma; \emptyset \vdash_n q$.

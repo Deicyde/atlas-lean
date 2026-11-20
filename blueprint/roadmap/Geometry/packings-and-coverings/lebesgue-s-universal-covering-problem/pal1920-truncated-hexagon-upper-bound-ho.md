@@ -5,4 +5,4 @@ $2 - 2/\sqrt{3}$.
 
 ## Sources
 
-- Pál, Über ein elementares Variationsproblem (1920), truncated hexagon bound.
+- Julius Pál, Über ein elementares Variationsproblem, Danske Vid. Selsk. Math.-Fys. Medd. 3 (1920), no. 2: truncated hexagon bound.

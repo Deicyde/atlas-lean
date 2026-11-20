@@ -1,6 +1,8 @@
 # Germ sigma-algebra at time zero
 
-The *germ σ-algebra at `0`* of a filtration `𝓕` indexed by `NNReal`,
-defined as the intersection `⨅_{t > 0} 𝓕_t`. For Brownian motion this is the
-`𝓕_0^+` σ-algebra of events observable "immediately after" time `0`. Ported
-verbatim from `v1/Atlas/TheoryOfProbability/code/Blumenthal01.lean`.
+The germ $\sigma$-algebra at $0$ of a filtration $(\mathcal F_t)_{t \ge 0}$ is
+
+$$\mathcal F_{0+} = \bigcap_{t > 0} \mathcal F_t .$$
+
+For the natural filtration of Brownian motion it is the $\sigma$-algebra of events observable
+"immediately after" time $0$.

@@ -5,8 +5,10 @@ a dyadic integer written as its binary digit sequence, let $T$ be the dyadic odo
 $T\omega = \omega + 1$, and let $s_q(\omega) = \sum_{i \ge 0} \omega_i q^{i+1}$, taken to be $0$
 when the series is not absolutely summable. For real $x$ the odometer partial sum is
 
-$$S_{q,\omega}(x) = \sum_{j < \lfloor x \rfloor_+} s_q(T^j \omega) +
-\{x\} \, s_q(T^{\lfloor x \rfloor_+} \omega),$$
+$$
+S_{q,\omega}(x) = \sum_{j < \lfloor x \rfloor_+} s_q(T^j \omega) +
+\{x\} \, s_q(T^{\lfloor x \rfloor_+} \omega),
+$$
 
 where $\lfloor x \rfloor_+ = \max(\lfloor x \rfloor, 0)$ and $\{x\} = x - \lfloor x \rfloor$. So
 $S_{q,\omega}(n) = \sum_{j < n} s_q(T^j \omega)$ for every natural number $n$, and for $x \ge 0$

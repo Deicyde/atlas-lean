@@ -1,3 +1,3 @@
 # Second moment of the additive coding at the second locus
 
-The additive coding has second moment `E(a_B²) = 2 V_B`.
+For every [two-locus genotype under random union](random-union.md) on a probability measure $P$, the [additive coding](add-b.md) satisfies $\int a_B^2 \, dP = 2 V_B$, where $V_B$ is the [haplotype variance](var-b.md).

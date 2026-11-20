@@ -1,4 +1,4 @@
-# Sums of $q^k (k)^{n-1}$ via Carlitz's $q$-polynomials $\eta_n$
+# Sums of $q^k [k]^{n-1}$ via Carlitz's $q$-polynomials $\eta_n$
 
 Let $q > 0$ with $q \ne 1$,
 let $[x] = (q^x - 1)/(q - 1)$, and let $\eta_n(x)$ be Carlitz's $q$-polynomials, with

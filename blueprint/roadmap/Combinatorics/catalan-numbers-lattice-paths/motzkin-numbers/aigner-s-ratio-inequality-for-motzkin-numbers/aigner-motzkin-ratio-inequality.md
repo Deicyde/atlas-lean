@@ -11,5 +11,6 @@ $$
 
 ## Sources
 
-- Takashi Agoh and Horst Alzer, "Mean Value Inequalities for Motzkin Numbers", Journal of Integer Sequences 24 (2021), Article 21.6.8: Motzkin-number definition, lines 89--107; Aigner ratio inequality, lines 373--386, equation (11). The same inequality for the canonical `MetaMathlibExt.motzkinNumber` is `motzkinNumber_ratio_inequality`.
-- <https://cs.uwaterloo.ca/journals/JIS/VOL24/Alzer/alzer8.tex>.
+- Takashi Agoh and Horst Alzer, *Mean Value Inequalities for Motzkin Numbers*, Journal of Integer Sequences 24
+  (2021), Article 21.6.8, inequality (11) in the remark after Theorem 2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Alzer/alzer8.tex>.
+- M. Aigner, *Motzkin numbers*, European J. Combin. 19 (1998), 663–675.

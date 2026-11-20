@@ -6,4 +6,4 @@ the item completed by that word.
 
 ## Sources
 
-- Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
+- J. Earley, "An efficient context-free parsing algorithm", *Communications of the ACM* 13 (1970), 94–102.

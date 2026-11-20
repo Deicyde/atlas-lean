@@ -1,3 +1,3 @@
 # Haplotype variance at the second locus
 
-The haplotype variance `V_B = E (Y₁ - q)²` at locus `B`.
+For a [two-locus genotype under random union](random-union.md) on $P$ with [allele frequency](freq-b.md) $q$, the haplotype variance at locus $B$ is $V_B = \int (Y_1 - q)^2 \, dP$.

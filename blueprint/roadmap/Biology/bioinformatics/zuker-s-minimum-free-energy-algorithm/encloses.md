@@ -1,3 +1,3 @@
 # Strict enclosure of one base pair by another
 
-`q` lies strictly inside the pair `p`: `p.1 < q.1` and `q.2 < p.2`.
+A pair $p = (p_1, p_2)$ strictly encloses a pair $q = (q_1, q_2)$ if $p_1 < q_1$ and $q_2 < p_2$.

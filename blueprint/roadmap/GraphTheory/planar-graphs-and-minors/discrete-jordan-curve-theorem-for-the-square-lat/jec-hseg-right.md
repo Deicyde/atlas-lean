@@ -1,3 +1,3 @@
 # Horizontal lattice path rightward
 
-The horizontal lattice path from `(t, row)` right to `(t + k, row)`.
+For integers $r$ and $t$ and a natural number $k$, the walk $(t, r) \to (t+1, r) \to \dots \to (t+k, r)$ of length $k$ in the square lattice, going right along row $r$.

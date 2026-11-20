@@ -14,4 +14,4 @@ with a constant $c > 1$.
 
 ## Sources
 
-- J. Park and H. T. Pham, `On a conjecture of Talagrand on selector processes and a consequence on positive empirical processes`, Annals of Math, 199 (3) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_supremum_of_selector_processes` of the lean-eval benchmark.
+- J. Park and H. T. Pham, *On a conjecture of Talagrand on selector processes and a consequence on positive empirical processes*, Ann. of Math. (2) 199 (2024), no. 3, 1293–1321. Theorem 1.2. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_supremum_of_selector_processes` of the lean-eval benchmark.

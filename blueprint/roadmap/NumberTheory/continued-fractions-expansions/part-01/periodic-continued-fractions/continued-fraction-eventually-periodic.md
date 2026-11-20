@@ -8,4 +8,4 @@ that $a_{n+p} = a_n$ for every $n \ge n_0$.
 
 ## Sources
 
-- Nimbran–Levrie lines 130–134.
+- Amrik Singh Nimbran and Paul Levrie, "Patterns in Continued Fractions of Square Roots", Journal of Integer Sequences 26 (2023), the definition of an eventually periodic continued fraction: https://cs.uwaterloo.ca/journals/JIS/VOL26/Nimbran/nimbran14.tex

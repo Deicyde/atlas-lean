@@ -7,4 +7,4 @@ of leaves and $\varepsilon = 0$ otherwise.
 
 ## Sources
 
-- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Definition (`S`-nodes and `D`-nodes).
+- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Definition ($S$-nodes and $D$-nodes).

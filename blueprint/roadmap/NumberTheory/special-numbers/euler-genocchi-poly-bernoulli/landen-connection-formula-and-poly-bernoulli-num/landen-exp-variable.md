@@ -7,4 +7,4 @@ $c_0 + d_0 \neq 0$; when $c_0 + d_0 = 0$ the inverse is taken to be $0$, so $z(t
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4, definition of `C_n^{(k, g, (β, γ))}`.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4, definition of $C_n^{(\mathbf{k}, g, (\beta, \gamma))}$.

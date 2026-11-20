@@ -5,12 +5,12 @@ Mathematical biology models populations, genomes, and biochemical networks, from
 [Population genetics](population-genetics/README.md) follows allele frequencies under drift, selection and mutation.
 Over half of it is the [diffusion theory](population-genetics/diffusion-theory/README.md) of the Wright–Fisher
 diffusion, from Kimura's fixation probability $(1 - e^{-2\sigma x})/(1 - e^{-2\sigma})$ for an allele at frequency
-$x$ with scaled selection coefficient $\sigma = 2Ns$ to Wright's beta stationary law under two-way mutation, and the
+$x$ with scaled selection coefficient $\sigma = 2Ns \ne 0$ (and $x$ when $\sigma = 0$) to Wright's beta stationary law under two-way mutation, and the
 [Ewens sampling formula](population-genetics/ewens-sampling-formula-and-the-chinese-restauran/README.md) gives the law
 of the allelic partition of a sample under the neutral infinite-alleles model.
 [Coalescent theory](coalescent-theory/README.md) traces genealogies backward in time: under
 [Kingman's coalescent](coalescent-theory/kingman-s-coalescent-and-watterson-s-estimator/README.md) Watterson's
-estimator of $\theta$ is unbiased, and the
+estimator of $\theta$ is unbiased for every sample of $n \ge 2$ genes, and the
 [multispecies coalescent](coalescent-theory/multispecies-coalescent/README.md) has an anomaly zone, where a gene tree
 that disagrees with the species tree is more probable than the one that agrees.
 

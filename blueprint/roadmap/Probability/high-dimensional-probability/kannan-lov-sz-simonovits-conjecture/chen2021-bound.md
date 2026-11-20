@@ -6,4 +6,7 @@ $\psi_n \in [0, \infty]$ satisfies $\psi_n \le \exp\bigl(C \sqrt{\log n} \, \log
 
 ## Sources
 
-- Chen, GAFA 31 (2021), 34--61; optimizationproblems `constants/20c.md`. Jambulapati--Lee--Vempala v1 quotes the stronger exponent `sqrt(log n * log(log n))`.
+- Y. Chen, *An almost constant lower bound of the isoperimetric coefficient in the KLS conjecture*, Geom. Funct.
+  Anal. 31 (2021), 34–61; catalogue https://github.com/teorth/optimizationproblems, `constants/20c.md`.
+- A. Jambulapati, Y. T. Lee and S. S. Vempala, *A slightly improved bound for the KLS constant*, arXiv:2208.11644v1
+  (2022), which quotes the stronger bound $\exp\bigl(C\sqrt{\log n \, \log \log n}\bigr)$.

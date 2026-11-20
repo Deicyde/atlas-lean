@@ -1,6 +1,7 @@
 # Closed form of the first-coalescence times
 
-For a history with `K ≥ 1` pieces and
-`m ≥ 2`, writing `a = C(m,2)` and `R = cumRate h.sizeFn`,
-`a c_m = size 0 + ∑_{j=1}^{K-1} (size j - size (j-1)) exp(-a R(start j))`. In particular the
-integral defining `c_m` converges.
+Let $\eta$ be the [size function](size-fn.md) of a [piecewise-constant history](piecewise-history.md) with $K \ge 1$ pieces, sizes $\nu_j$ and start times $s_j$, and let $m \ge 2$ be a natural number, $a = \binom{m}{2}$. Then the [first-coalescence time](first-coal-mean.md) satisfies
+
+$$a\, c_m(\eta) = \nu_0 + \sum_{j=1}^{K-1} (\nu_j - \nu_{j-1})\, e^{-a R_\eta(s_j)},$$
+
+with the [cumulative rate](cum-rate.md) $R_\eta$. In particular the integral defining $c_m$ converges.

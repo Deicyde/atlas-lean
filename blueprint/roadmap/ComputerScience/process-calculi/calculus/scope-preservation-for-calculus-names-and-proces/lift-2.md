@@ -1,4 +1,3 @@
 # Lifting preserves process scoping
 
-Shifting a process past a new binder preserves scoping. Inner input
-and restriction binders increase the cutoff as in `Basic.liftProc`.
+If a process $P$ is [scoped at depth $n$](closed-at-2.md), then for every cutoff $k$ the [lifting](../the-calculus-syntax-substitution-structural-cong/lift-proc.md) $\uparrow_k P$ is scoped at depth $n + 1$.

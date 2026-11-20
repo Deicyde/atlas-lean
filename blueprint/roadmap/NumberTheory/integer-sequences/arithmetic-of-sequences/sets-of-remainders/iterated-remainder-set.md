@@ -6,4 +6,4 @@ $j \ge 0$, $S_{j+1}(n) = \{n \bmod k : k \in S_j(n),\ k \ne 0\}$.
 
 ## Sources
 
-- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 2 (definition of `S_j(n)`).
+- Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 2 (definition of $S_j(n)$).

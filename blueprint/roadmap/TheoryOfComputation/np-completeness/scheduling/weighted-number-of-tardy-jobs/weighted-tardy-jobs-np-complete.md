@@ -6,4 +6,4 @@ it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), WEIGHTED NUMBER OF TARDY JOBS (1||sum w_j U_j).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), WEIGHTED NUMBER OF TARDY JOBS (1||sum w_j U_j).

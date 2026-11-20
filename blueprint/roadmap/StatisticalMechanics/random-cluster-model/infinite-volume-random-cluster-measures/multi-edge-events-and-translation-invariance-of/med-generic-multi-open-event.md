@@ -1,4 +1,3 @@
 # Event that all edges of a finite set are open
 
-The event `A_t` that every edge of the finite set `t` is open. On box configurations it is
-`cdc_boxMultiOpenEvent` (`med_boxMultiOpenEvent_eq`).
+Let $V$ be a set and $t$ a finite set of unordered pairs of elements of $V$. The all-open event of $t$ is the set of assignments of open/closed states to the unordered pairs of elements of $V$ in which every pair of $t$ is open.

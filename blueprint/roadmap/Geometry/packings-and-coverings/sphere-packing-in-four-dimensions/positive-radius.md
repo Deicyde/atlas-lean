@@ -5,4 +5,4 @@ form the set $\{R \in \mathbb{R} : R > 0\}$.
 
 ## Sources
 
-- CE2003 Appendix A, positive observation radii tending to infinity.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, Appendix A: positive observation radii tending to infinity.

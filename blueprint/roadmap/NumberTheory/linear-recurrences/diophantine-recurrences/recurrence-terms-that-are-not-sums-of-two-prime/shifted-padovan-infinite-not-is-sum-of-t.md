@@ -6,10 +6,9 @@ $a_{n+3} = a_{n+1} + a_n$, so that $a_{n+2} = P_n$ is the $n$-th Padovan number,
 $P_0 = P_1 = P_2 = 1$ and $P_{n+3} = P_{n+1} + P_n$. There are infinitely many natural numbers
 $k$ such that $a_k$ is not a sum of two prime powers.
 
-The paper proves the stronger statement that this holds for every sufficiently large
-$k \equiv 45750 \pmod{967206240}$. That form is not stated here, since the residue class depends
-on how the sequence is indexed.
+The paper states the result for $(P_k)$ and proves the stronger statement that $P_k = a_{k+2}$ is
+not a sum of two prime powers for every sufficiently large $k \equiv 45750 \pmod{967206240}$.
 
 ## Sources
 
-- Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 3 (`jis-2026-26.2.3-thm-3`).
+- Daniel Baczkowski and Bruce Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 3 (`jis-2026-26.2.3-thm-3`).

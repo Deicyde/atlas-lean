@@ -1,4 +1,3 @@
 # Dual square lattice
 
-The dual square lattice. Its vertices are the face centres of `ℤ²`, relabelled as integer
-points, so as a graph it is `hypercubicLattice 2`.
+The dual square lattice: its vertices are the faces of the square lattice, labelled by integer points (their lower left corners), and two faces are adjacent when they share a side; as a graph it is the square lattice on $\mathbb{Z}^2$ itself.

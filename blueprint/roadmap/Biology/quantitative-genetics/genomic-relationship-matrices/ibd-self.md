@@ -1,3 +1,3 @@
 # A gene copy is identical by descent with itself
 
-A gene copy is identical by descent with itself: `ibd c c = 1`.
+In every [identity-by-descent model](ibdmodel.md), $\mathrm{ibd}(c, c) = 1$ for every gene copy $c$.

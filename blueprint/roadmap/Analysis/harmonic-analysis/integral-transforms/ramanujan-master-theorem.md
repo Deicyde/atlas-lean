@@ -17,4 +17,4 @@ $\operatorname{Re} z$, and integrability of $x^{s-1} F(x)$ is assumed rather tha
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem (Raw: `int_0^infty x^{s-1} sum_k phi(k)(-x)^k/k! dx = Gamma(s) phi(-s)`.)
+- https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem (Formula: $\int_0^\infty x^{s-1} \sum_k \varphi(k) (-x)^k / k!\, dx = \Gamma(s)\, \varphi(-s)$.)

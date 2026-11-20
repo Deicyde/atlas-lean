@@ -1,6 +1,9 @@
 # Strict AM-GM bound on consecutive coordinates of a unit vector
 
-For a unit vector `x`, the sum of the products of consecutive
-coordinate norms is strictly less than `1`: termwise AM–GM gives a
-bound of `(1 + (1 - ‖x 0‖²)) / 2 ≤ 1`, and the AM–GM inequality is
-strict at the coordinate supplied by `exists_norm_ne_norm_succ`.
+For every $x \in \ell^2(\mathbb{N}, \mathbb{C})$ with $\|x\| = 1$,
+
+$$
+\sum_{n=0}^{\infty} |x_n|\,|x_{n+1}| < 1.
+$$
+
+Termwise, $|x_n|\,|x_{n+1}| \le (|x_n|^2 + |x_{n+1}|^2)/2$, and summing gives the bound $(1 + (1 - |x_0|^2))/2 \le 1$. The inequality is strict for some $n$, because a nonzero square-summable sequence cannot satisfy $|x_n| = |x_{n+1}|$ for every $n$.

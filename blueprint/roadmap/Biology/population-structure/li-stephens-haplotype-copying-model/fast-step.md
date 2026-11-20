@@ -1,6 +1,7 @@
 # One step of the collapsed forward recursion
 
-One step of the collapsed forward recursion on the previous site's forward variables `v`,
-at output state `k`: `e_k ((1 - ρ) v k + ρ (∑ j, v j) / K)`. This is the pointwise
-specification; each call evaluates the length-`K` sum, so use `fastStepTab` for the `O(K)`
-per-site step.
+Let $R$ be a field and $\rho, \varepsilon \in R$. For a [site observation](obs.md) $o$, a vector $v \in R^K$ of forward variables and a haplotype $k$, the collapsed forward step is
+
+$$\Phi(o, v)(k) = e_\varepsilon(k, o)\Bigl((1 - \rho)\, v_k + \frac{\rho}{K} \sum_{j=1}^{K} v_j\Bigr),$$
+
+where $e_\varepsilon$ is the [emission weight](emit.md) and $x/0 = 0$.

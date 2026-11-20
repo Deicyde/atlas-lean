@@ -1,4 +1,4 @@
 # Projection of an ownership map onto another map's keys
 
-Restrict actual target bindings to the exact key domain of a source map.
-The implementation is canonical multiset filtering, not a new finite map.
+Let $\Gamma$ and $\Xi$ be ownership contexts. The projection $\Xi|_{\Gamma}$ is the ownership
+context consisting of the entries $(e,c)$ of $\Xi$ such that $e$ is in the domain of $\Gamma$.

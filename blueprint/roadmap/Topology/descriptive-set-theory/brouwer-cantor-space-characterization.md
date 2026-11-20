@@ -1,7 +1,7 @@
 # Brouwer's characterization of the Cantor space
 
 Every nonempty compact metrizable perfect totally disconnected space is homeomorphic to the Cantor
-space.
+space $\{0, 1\}^{\mathbb{N}}$.
 
 ## Sources
 

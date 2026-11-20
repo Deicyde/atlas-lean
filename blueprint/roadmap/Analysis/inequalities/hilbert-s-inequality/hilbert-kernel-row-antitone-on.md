@@ -1,3 +1,3 @@
-# Hilbert row integrand is decreasing on (1, ∞)
+# The Hilbert row integrand is decreasing on $[1, \infty)$
 
-The row integrand is antitone on `[1, ∞)` when `M > 0`.
+For $M > 0$, the row integrand $x \mapsto \dfrac{1}{(M + x)\sqrt{x}}$ is non-increasing on $[1, \infty)$.

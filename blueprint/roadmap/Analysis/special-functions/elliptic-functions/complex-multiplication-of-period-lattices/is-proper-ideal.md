@@ -6,5 +6,5 @@ $\mathbb{C}$. Then $\Lambda$ is a proper ideal of $\mathcal{O}$ when the endomor
 $\Lambda$, the subring of all $a \in \mathbb{C}$ with $a z \in \Lambda$ for every $z \in \Lambda$,
 equals $\mathcal{O}$.
 
-The ambient assumptions that $\mathcal{O}$ is an imaginary quadratic order and that $\Lambda$ is
-an $\mathcal{O}$-ideal are deliberately kept separate from this predicate.
+In the usual setting $\mathcal{O}$ is an imaginary quadratic order and $\Lambda$ is an
+$\mathcal{O}$-ideal; the condition above does not include these assumptions.

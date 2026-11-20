@@ -1,6 +1,7 @@
 # Runtime head communication advances or keeps the interface
 
-At an INITIALLY semantically compatible linear interface, actual runtime
-heads either advance the paired linear subjects faithfully or transfer on a shared
-service with the EXACT unchanged interface. Mixed shared/linear heads are excluded
-by source separation, not a finite-fragment erasure or supplied result field.
+Let $n$ be a natural number, $\Gamma$ a service environment, $\Delta$ a semantically compatible
+ownership context, $a$, $b$ names and $p$, $q$ processes with $\Gamma; \Delta \vdash_n
+\overline{a}\langle b\rangle.p \mid a(\cdot).q$. Then there is a semantically compatible ownership
+context $\Xi$ with $\Gamma; \Xi \vdash_n p \mid q\{b\}$ such that $\Xi = \Delta$ (a service
+invocation) or $\Xi$ is a semantic advance of $\Delta$ (a linear communication).

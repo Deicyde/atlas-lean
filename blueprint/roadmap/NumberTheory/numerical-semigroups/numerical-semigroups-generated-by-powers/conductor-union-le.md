@@ -7,7 +7,9 @@ $\langle X \rangle$. Let $A$ and $B$ be nonempty sets of natural numbers such th
 natural number dividing every element of $A \cup B$, let $t$ be a natural number dividing every
 element of $A$, and let $C = \{a / t : a \in A\}$ (with $a / 0 = 0$). Then
 
-$$\tau(A \cup B) \le t \, \tau(C \cup B) + \tau(B \cup \{t\}).$$
+$$
+\tau(A \cup B) \le t \, \tau(C \cup B) + \tau(B \cup \{t\}).
+$$
 
 ## Sources
 

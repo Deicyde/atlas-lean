@@ -1,4 +1,4 @@
 # Endpoint typing under passive name substitution
 
-Passive payload substitution preserves every linear obligation and
-cannot introduce an endpoint subject capability.
+Let $n$ be a natural number, $\Delta$ an ownership context, $p$ a process and $b$ a name scoped at
+depth $n$. If $\uparrow_0\Delta \vdash_{n+1} p$, then $\Delta \vdash_n p\{b\}$.

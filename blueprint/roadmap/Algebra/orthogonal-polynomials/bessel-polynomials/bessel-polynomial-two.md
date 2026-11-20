@@ -4,4 +4,4 @@ The Bessel polynomial $y_2$ equals $1 + 3x + 3x^2$.
 
 ## Sources
 
-- Schork, lines 285-288.
+- H. L. Krall and O. Frink, "A new class of orthogonal polynomials: the Bessel polynomials", *Transactions of the American Mathematical Society* 65 (1949), 100–115.

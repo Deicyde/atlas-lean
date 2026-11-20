@@ -11,7 +11,7 @@
 - [Positivity of the factored update](factored-update-pos.md)
 - [Factored update is below one](factored-update-lt-one.md)
 
-## The model
+## The hidden Markov model
 
 - [ChromHMM parameters](params.md)
 - [HMM of ChromHMM parameters](to-hmm.md)
@@ -28,7 +28,7 @@
 - [The ChromHMM update is a valid parameter](m-step-valid.md)
 - [One ChromHMM step on rich data](em-step.md)
 - [Positivity of the ChromHMM joint weight](joint-pos.md)
-- [The ChromHMM update maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [The ChromHMM update maximizes the EM objective](em-q-le-em-step.md)
 - [Each ChromHMM step does not decrease the log-likelihood](log-lik-le-em-step.md)
 - [The log-likelihood is monotone along the ChromHMM iterates](log-lik-iterate-em-step-monotone.md)
 - [EM log-likelihood as a sum of HMM log-likelihoods](log-lik-eq.md)

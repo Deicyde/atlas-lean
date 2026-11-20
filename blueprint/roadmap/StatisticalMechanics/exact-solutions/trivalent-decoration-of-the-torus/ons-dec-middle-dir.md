@@ -1,3 +1,3 @@
 # Representative direction of a side
 
-The representative direction of a side: east for side `0`, west for side `1`.
+For a side $\sigma \in \{0, 1\}$, the representative direction is $0$ if $\sigma = 0$ and $2$ if $\sigma = 1$.

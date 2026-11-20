@@ -13,4 +13,4 @@
 - [Kronecker symbol at odd numbers for integers congruent to 3 mod 4](chi4-mul-jacobi-sym-nat-abs-eq-kronecker.md)
 - [Jacobi symbol of $4m$ at an odd denominator](jacobi-sym-four-mul-of-odd.md)
 - [Jacobi symbol of $2m$ at an odd denominator](jacobi-sym-two-mul-of-odd.md)
-- [Kronecker–Jacobi bridge for 4m with m ≡ 3 mod 4](kronecker-jacobi-bridge-for-4m-with-m-3.md)
+- [Kronecker symbol of $4m$ at odd numbers, for $m \equiv 3 \pmod 4$](kronecker-jacobi-bridge-for-4m-with-m-3.md)

@@ -1,3 +1,3 @@
 # $\Lambda_{2K+1}$ has at least $2^d$ times as many edges as $\Lambda_K$
 
-The `2^d` orthant copies of `Λ_K` have at most as many edges as `Λ_{2K+1}`.
+For $d \ge 1$ and $K \in \mathbb{N}$, $2^d\, |E(\Lambda_K)| \le |E(\Lambda_{2K+1})|$, where $|E(\Lambda_n)|$ is the number of edges of the nearest-neighbour graph on $\Lambda_n = \{-n, \dots, n\}^d$.

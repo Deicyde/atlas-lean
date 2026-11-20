@@ -10,4 +10,6 @@ characteristic function of $\mu$.
 
 ## Sources
 
-- Bochner's theorem on positive-definite functions, S. Bochner, Vorlesungen über Fouriersche Integrale 1932 and Math. Ann. 108 (1933); see Folland, Abstract Harmonic Analysis, Fourier Analysis on Groups; Lean is ℝ→ℂ iff version continuous f 0=1 positive- definite via double sum iff ∃ Borel probability μ with f = charFun μ, fixed +I sign via charFun.
+- S. Bochner, *Vorlesungen über Fouriersche Integrale*, Akademische Verlagsgesellschaft, Leipzig, 1932.
+- S. Bochner, *Monotone Funktionen, Stieltjessche Integrale und harmonische Analyse*, Math. Ann. 108 (1933), 378–410.
+- See Folland, Abstract Harmonic Analysis, Fourier Analysis on Groups. Lean is ℝ→ℂ iff version continuous f 0=1 positive- definite via double sum iff ∃ Borel probability μ with f = charFun μ, fixed +I sign via charFun.

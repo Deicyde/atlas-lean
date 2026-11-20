@@ -22,8 +22,7 @@ $$
 F'(y) = \sum_n \int_\Omega \partial_y f_n(x, y)\, dx.
 $$
 
-The joint measurability of each $f_n$ is a hypothesis of the source that the first formalization
-dropped. It is needed: for $d \ge 1$ and nonempty bounded $\Omega$, a non-measurable $f_0$ of
+The joint measurability of each $f_n$ is a hypothesis of the source, and it is needed: for $d \ge 1$ and nonempty bounded $\Omega$, a non-measurable $f_0$ of
 modulus one that does not depend on $y$, with $f_n = 0$ for $n \ge 1$, satisfies the other
 hypotheses but not the conclusion.
 

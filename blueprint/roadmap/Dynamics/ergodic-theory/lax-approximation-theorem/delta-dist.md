@@ -7,4 +7,9 @@ given by the maximum over the coordinates of the distance on the circle $\mathbb
 (taken to be $0$ when $d = 0$). The distance $\delta(T, S) \in [0, \infty]$ is the essential
 supremum, with respect to the volume measure, of the function $x \mapsto \rho(T x, S x)$.
 
-This is Knill's metric $\delta$.
+Knill's metric $\delta$ uses the geodesic distance of the flat torus in place of $\rho$; the two distances
+differ by at most a factor $\sqrt{d}$, so they give the same notion of approximation.
+
+## Sources
+
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §110 (Lax approximation), <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.

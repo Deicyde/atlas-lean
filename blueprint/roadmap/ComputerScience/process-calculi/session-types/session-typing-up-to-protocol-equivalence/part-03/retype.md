@@ -1,4 +1,5 @@
 # Retyping along ownership-map equivalence
 
-GENERAL arbitrary-depth, arbitrary-context retyping, by all seven typing
-constructors. Target ownership, ranks and every unfolded branch are derived.
+Let $n$ be a natural number, $\Delta$, $\Xi$ ownership contexts and $p$ a process. If $\Delta
+\vdash^{\simeq}_n p$ and $\Delta \approx \Xi$ (equal domains, and at each endpoint capabilities with
+equal ranks and tree-equivalent protocols), then $\Xi \vdash^{\simeq}_n p$.

@@ -1,4 +1,3 @@
 # GTR matrix is a rate matrix
 
-With nonnegative base frequencies and nonnegative off-diagonal exchangeabilities, the GTR
-matrix is a rate matrix (the diagonal `s i i` is not used by `gtrRate`).
+If $\pi_i \ge 0$ for every $i$ and $s_{ij} \ge 0$ for all $i \ne j$, then the [GTR matrix](gtr-rate.md) is a rate matrix: its off-diagonal entries are nonnegative and its rows sum to $0$.

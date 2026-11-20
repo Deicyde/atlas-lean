@@ -1,5 +1,3 @@
 # Probability of the discordant three-species gene tree with cherry $\{0, 2\}$
 
-With one lineage per species and internal branch length $t$, the gene tree of the species tree
-$((0, 1), 2)$ whose cherry is $\{0, 2\}$ has probability $\frac{1}{3} e^{-t}$. (An identity for every
-real $t$; branch lengths are $t \ge 0$.)
+For every real $t$, on the [three-species tree](triple.md) $((0, 1), 2)$ with internal branch length $t$ and one lineage per species, the [multispecies coalescent](gene-tree-prob.md) gives the gene tree with cherry $\{0, 2\}$ the probability $\frac{1}{3} e^{-t}$. The identity holds for every real $t$; it is a probability when $t \ge 0$.

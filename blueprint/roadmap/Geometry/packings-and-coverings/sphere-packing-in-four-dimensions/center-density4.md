@@ -7,4 +7,4 @@ at the origin; the quotient is taken in $[0, \infty]$.
 
 ## Sources
 
-- dLOV2014 Section 1.4, `δ₄ = Δ₄ / vol(B)` for unit spheres.
+- D. de Laat, F. M. de Oliveira Filho and F. Vallentin, *Upper bounds for packings of spheres of several radii*, Forum Math. Sigma 2 (2014), e23, arXiv:1206.2608, Section 1.4: $\delta_4 = \Delta_4 / \operatorname{vol}(B)$ for unit spheres.

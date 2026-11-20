@@ -7,4 +7,4 @@ $v^{(m)}$ denotes $m$ copies of $v$, is $(4, 4, 4, 3, 2, 2, 1, 1)$.
 
 ## Sources
 
-- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalMinPartition`.
+- Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4).

@@ -1,5 +1,5 @@
 # Gaussian measures are stable of index 2
 
-Every real Gaussian measure is stable of index `2`: the sum of `n`
-i.i.d. `N(μ, v)` variables is `N(nμ, nv)`, which is the pushforward of
-`N(μ, v)` under `x ↦ √n · x + (n - √n) μ`.
+For $\mu \in \mathbb{R}$ and $v \ge 0$, the Gaussian law $N(\mu, v)$ is [stable of index
+$2$](is-stable.md): the sum of $n$ i.i.d. $N(\mu, v)$ variables has law $N(n\mu, nv)$, which is
+the image of $N(\mu, v)$ under $x \mapsto \sqrt{n}\, x + (n - \sqrt{n})\mu$.

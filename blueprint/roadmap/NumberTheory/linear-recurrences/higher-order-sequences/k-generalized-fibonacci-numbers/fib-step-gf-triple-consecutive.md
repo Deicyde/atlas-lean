@@ -9,4 +9,4 @@ $$X^{2m+1} F^{(m)} F^{(m+1)} F^{(m+2)} = X^m F^{(m)} F^{(m+2)} - F^{(m+1)} + F^{
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 24.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 24.

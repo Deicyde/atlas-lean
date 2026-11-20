@@ -1,11 +1,9 @@
 # Kolmogorov three-series necessity, series (2)–(3)
 
-If the partial
-sums of an independent sequence `Xₙ` converge almost surely, then for
-every `A > 0` the truncations `Yₙ = Xₙ · 1_{|Xₙ| ≤ A}` have convergent
-mean partial sums and summable variances. This is the corrected form of
-v1's `summable_mean_and_variance_of_ae_tendsto_ax`: v1 claimed the means
-themselves are `Summable`, which is false (see
-`summable_mean_necessity_false`); only convergence of the mean partial
-sums holds. Series (1) uses the public theorem from
-`ThreeSeriesTailProb`.
+Let $\mu$ be a probability measure, let $X_0, X_1, \dots$ be independent measurable real random
+variables whose partial sums $\sum_{i < n} X_i$ converge almost surely, and let $A > 0$. Then the
+[truncations](truncated-rv.md) $Y_n = X_n \mathbf{1}_{\{|X_n| \le A\}}$ satisfy: the partial sums
+$\sum_{k < n} \mathbb{E}[Y_k]$ converge to a finite limit, and
+$\sum_n \operatorname{Var}(Y_n) < \infty$. The means themselves need not form an absolutely
+convergent series ([counterexample](summable-mean-necessity-false.md)). Series (1),
+$\sum_n P(|X_n| > A) < \infty$, is the [tail-probability step](summable-tail-prob-of-ae-tendsto.md).

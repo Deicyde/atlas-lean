@@ -12,4 +12,4 @@ the count for the $i$-th car is $(n + 2 - i)(n + 1)^{n-2}$.
 
 ## Sources
 
-- Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Corollary 10.
+- Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions", Journal of Integer Sequences 29 (2026), Article 26.1.1, Corollary 10.

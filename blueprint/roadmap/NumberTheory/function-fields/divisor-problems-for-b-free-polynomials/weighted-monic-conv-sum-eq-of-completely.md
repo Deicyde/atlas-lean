@@ -1,4 +1,4 @@
-# Camargo's identity over $F(T)$
+# Camargo's identity over $F[T]$
 
 Let $F$ be a finite field and let $\mu$ be the Möbius
 function of $F[T]$. For functions $\alpha, \beta \colon F[T] \to \mathbb{C}$ let
@@ -11,9 +11,11 @@ $\alpha(1) = 1$ and $\alpha(f g) = \alpha(f) \alpha(g)$ for all $f, g \in F[T]$,
 $\beta$, and let $\gamma \colon F[T] \to \mathbb{C}$ be arbitrary. Then for every natural number
 $n$,
 
-$$D[\gamma, \alpha, \beta](n) = \sum_{f \text{ monic},\ \deg f \le n} (\gamma * \mu)(f)
+$$
+D[\gamma, \alpha, \beta](n) = \sum_{f \text{ monic},\ \deg f \le n} (\gamma * \mu)(f)
 \sum_{d \mid f} \alpha(d) \beta(f/d) \sum_{\ell \mid d} \mu(\ell) \beta(\ell) \,
-D[\alpha, \beta](n - \deg(f \ell)),$$
+D[\alpha, \beta](n - \deg(f \ell)),
+$$
 
 where $d$ runs over the monic divisors of $f$ and $\ell$ over the monic divisors of $d$.
 

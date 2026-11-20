@@ -1,4 +1,7 @@
 # Backwards martingales are uniformly integrable
 
-Canonical backwards membership is uniformly integrable in L1 on a finite measure.
-The ambient bounds suffice; representative adaptedness and antitonicity are unnecessary.
+Let $\mu$ be a finite measure on $(\Omega, \mathcal{F})$, let $(\mathcal{F}_n)$ be a sequence of
+sub-$\sigma$-algebras of $\mathcal{F}$, and let $(M_n)$ be a [backwards
+martingale](is-backwards-martingale.md) for $(\mathcal{F}_n)$. Then $(M_n)$ is uniformly
+integrable in $L^1(\mu)$. Neither adaptedness of the representatives nor monotonicity of
+$(\mathcal{F}_n)$ is needed.

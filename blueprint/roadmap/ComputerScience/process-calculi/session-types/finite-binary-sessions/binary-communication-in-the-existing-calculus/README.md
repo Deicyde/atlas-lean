@@ -1,4 +1,4 @@
-# Binary communication in the existing π-calculus
+# Binary communication as π-calculus parallel composition
 
 - [Binary configuration as a parallel composition](represent.md)
 - [Injectivity of the binary configuration embedding](represent-injective.md)

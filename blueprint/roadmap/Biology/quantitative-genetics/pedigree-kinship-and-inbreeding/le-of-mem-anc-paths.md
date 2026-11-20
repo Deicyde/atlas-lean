@@ -1,3 +1,3 @@
 # Individuals on an ancestral path are its start or precede it
 
-Every individual on an ancestral path from `i` is `i` or precedes it.
+In every [pedigree](pedigree.md), every individual $v$ on an [ancestral path](anc-paths.md) from $i$ satisfies $v \le i$.

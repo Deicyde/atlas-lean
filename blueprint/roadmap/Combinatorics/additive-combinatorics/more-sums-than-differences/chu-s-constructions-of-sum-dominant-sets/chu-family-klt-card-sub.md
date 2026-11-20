@@ -1,7 +1,7 @@
-# Size of the difference set of the Chu family set
+# Size of the difference set of the Kumar–Mohan–Pandey set
 
 Let $k$, $l$, $t$ be positive integers
-and let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$. Then
+and let $A = A_{k,l,t}$ be the Kumar–Mohan–Pandey set. Then
 $|A - A| = 11 + 6klt + 8lt + 8t$.
 
 ## Sources

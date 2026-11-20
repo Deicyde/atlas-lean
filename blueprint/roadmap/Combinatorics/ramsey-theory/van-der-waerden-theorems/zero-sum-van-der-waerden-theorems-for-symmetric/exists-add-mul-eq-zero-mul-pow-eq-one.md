@@ -1,7 +1,6 @@
 # Nonzero solutions of a two-equation system modulo primes greater than 3 congruent to 3 mod 4
 
-**Nonzero solutions of a two-equation system modulo primes greater than 3 congruent to 3
-mod 4.** Let $n > 3$ be a prime with $n \equiv 3 \pmod 4$. Then there are nonzero
+Let $n > 3$ be a prime with $n \equiv 3 \pmod 4$. Then there are nonzero
 $x, y \in \mathbb{Z}/n\mathbb{Z}$ and an integer $r \in \{2, 3\}$ such that $x + ry = 0$ and
 $xy^r = 1$ in $\mathbb{Z}/n\mathbb{Z}$.
 

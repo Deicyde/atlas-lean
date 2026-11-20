@@ -1,4 +1,5 @@
 # Semantic advancement is raw under literal compatibility
 
-Reverse bridge requires literal ORIGINAL peer compatibility, not merely
-semantic compatibility or residual retyping.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ advances semantically to $\Xi$. If
+$\Delta$ is compatible (whenever $\Delta(e) = c$ and $\Delta(\bar e) = d$, then $d = \bar c$), then
+$\Delta$ dual-advances to $\Xi$.

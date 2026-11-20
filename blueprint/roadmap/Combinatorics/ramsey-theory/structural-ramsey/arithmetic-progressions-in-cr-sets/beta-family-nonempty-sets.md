@@ -6,4 +6,4 @@ $\beta(\mathcal F) = \beta S$, the set of all ultrafilters on $S$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).

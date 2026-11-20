@@ -12,4 +12,4 @@ $k = 2$ the left side is $R_{1,2} = 0$ while the right side is $0 + 3 - 1 = 2$.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Theorem 6.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Theorem 6, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

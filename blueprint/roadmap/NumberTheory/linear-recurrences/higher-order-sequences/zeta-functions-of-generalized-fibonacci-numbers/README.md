@@ -9,7 +9,7 @@
 - [The possible pole at the zero index is zero](l-generalized-fibonacci-zeta-pole-zero.md)
 - [Set of possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 - [Residue expression of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-residue.md)
-- [Corollary pole of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-corollary-p.md)
+- [Explicit pole candidate of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-corollary-p.md)
 - [Absolute convergence of the ℓ-generalized Fibonacci zeta series](l-generalized-fibonacci-zeta-summable.md)
 - [Meromorphic continuation of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-meromorphic.md)
 - [Residues of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-residue-2.md)

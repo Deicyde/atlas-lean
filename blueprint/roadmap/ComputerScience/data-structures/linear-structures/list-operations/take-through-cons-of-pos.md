@@ -1,3 +1,5 @@
 # Inclusive first-hit prefix when the head is a hit
 
-If the head satisfies the predicate, it is the whole inclusive first-hit prefix.
+Let $p$ be a test that is true or false on each element, $x$ an element and $L$ a list. If $p(x)$
+is true, then the inclusive first-hit prefix for $p$ of the list with head $x$ and tail $L$ is the
+one-element list $[x]$.

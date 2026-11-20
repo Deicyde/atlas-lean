@@ -1,4 +1,7 @@
 # Itô integral of a Riemann step approximation
 
-The elementary Itô integral of `riemann F g t n` at time `t` is the Itô–Riemann sum
-`∑_{k < n} g (t k / n) (B (t (k + 1) / n) - B (t k / n))`.
+For a filtration $F$, $g : \mathbb{R} \to \mathbb{R}$, $t \ge 0$, $n \in \mathbb{N}$, a real process $B$ and every $\omega$, the
+[elementary Itô integral](ito-integral.md) at time $t$ of the [left-point approximation](riemann.md) of $g$ is the
+Itô–Riemann sum
+
+$$\sum_{k < n} g\Bigl(\frac{tk}{n}\Bigr) \bigl( B_{t(k+1)/n} - B_{tk/n} \bigr) .$$

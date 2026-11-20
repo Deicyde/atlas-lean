@@ -1,12 +1,7 @@
 # Fuel-bounded Smith–Waterman recursion
 
-Fix a substitution score
-$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $ax$ for
-the sequence with first element $a$ followed by $x$. For a fuel $n \in \mathbb{N}$ and sequences
-$x, y$ over $\alpha$, the value $F_n(x, y) \in \mathbb{Z}$ is defined by $F_0(x, y) = 0$, by
-$F_{n+1}(x, y) = 0$ if $x$ or $y$ is empty, and by
+For integer substitution scores $\sigma$ and gap score $g$, define $F_n(x, y)$ by
 
-$$F_{n+1}(ax, by) = \max\bigl(0,\ F_n(x, y) + \sigma(a, b),\ F_n(x, by) + g,
-\ F_n(ax, y) + g\bigr).$$
-
-This is an exponential-time specification, not a memoized table.
+- $F_0(x, y) = 0$;
+- $F_{n+1}(\text{empty}, y) = 0$ and $F_{n+1}(x, \text{empty}) = 0$;
+- for letters $a, b$, $F_{n+1}(a x, b y) = \max\bigl(0,\ F_n(x, y) + \sigma(a, b),\ F_n(x, b y) + g,\ F_n(a x, y) + g\bigr)$.

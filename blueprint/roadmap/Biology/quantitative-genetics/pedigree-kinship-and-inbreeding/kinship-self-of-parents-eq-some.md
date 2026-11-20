@@ -1,3 +1,3 @@
 # Tabular self-kinship of a non-founder
 
-The tabular recursion on the diagonal for a non-founder: `φ i i = (1 + φ f m) / 2`.
+In a [pedigree](pedigree.md), if $i$ has parents $f(i), m(i)$, then the [tabular kinship](kinship.md) satisfies $\varphi_{ii} = \frac12\bigl(1 + \varphi_{f(i) m(i)}\bigr)$.

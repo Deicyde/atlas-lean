@@ -7,9 +7,8 @@ numbers with $1 \le c(x) \le r$ for every $x \in M$. Then for some color $i$ wit
 there is a subcube $M' \subseteq M$ of side $m_i$ in which the class of color $i$ is
 $m_{i-1}$-dense.
 
-The paper fixes $t \ge 1$ and $r \ge 1$; both are dropped, since $t = 0$ holds trivially and
-$r = 0$ admits no coloring of the nonempty cube $M$.
+The paper assumes $t \ge 1$ and $r \ge 1$; the statement also holds for $t = 0$, trivially, and for $r = 0$, since no coloring of the nonempty cube $M$ then satisfies the hypothesis.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1.
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Lemma 1.

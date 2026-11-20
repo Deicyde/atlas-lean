@@ -5,4 +5,4 @@ decision problem in NP has a polynomial-time many-one reduction to MAXIMUM CUT.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MAXIMUM CUT.
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), MAXIMUM CUT.

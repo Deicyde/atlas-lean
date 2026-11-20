@@ -1,7 +1,6 @@
 # Weight sets with prescribed weighted Davenport constant on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, non-divisible case
 
-**Weight sets with prescribed weighted Davenport constant on
-$\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, non-divisible case.** Let $n \ge 2$ and
+Let $n \ge 2$ and
 $k \ge 1$ be natural numbers, let $m \ge 2$ be a divisor of $n$, let
 $\alpha = \lceil n/(m-1) \rceil - 1$, and suppose that $\alpha$ does not divide $n$. Let $r$ be
 the remainder of $n$ modulo $\alpha$, so that $1 \le r < \alpha$, and suppose that

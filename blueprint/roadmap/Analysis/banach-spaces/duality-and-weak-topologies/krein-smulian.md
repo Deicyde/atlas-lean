@@ -7,4 +7,4 @@ $\{\varphi \in C : \|\varphi\| \le r\}$ is weak-star closed.
 
 ## Sources
 
-- M. Krein and V. Smulian, Ann. of Math. 41 (1940) 556-583; Dunford-Schwartz I; Lean states `RCLike` Banach case with `Convex ℝ s` and closedBall intersections.
+- M. Krein and V. Smulian, Ann. of Math. 41 (1940) 556-583; Dunford-Schwartz I. The statement here is the case of a Banach space over $\mathbb{R}$ or $\mathbb{C}$ and a convex set, with its intersections with closed balls.

@@ -5,4 +5,4 @@ cardinal, of its abelianization $G^{\mathrm{ab}}$ viewed as a $\mathbb{Z}$-modul
 
 ## Sources
 
-- [AMR-109-0273] (Question 2.5, PDF p. 330).
+- M. R. Bridson and K. Vogtmann, *Automorphism groups of free groups, surface groups and free abelian groups*, in B. Farb (ed.), *Problems on Mapping Class Groups and Related Topics*, Proc. Sympos. Pure Math. 74, Amer. Math. Soc., 2006, Question 2.5, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.

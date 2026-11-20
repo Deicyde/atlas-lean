@@ -8,4 +8,4 @@ $R_h^{-1}(k) \le k^h + 2^h k^{h - 19/40}$ for all sufficiently large natural num
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(c) (`jis-2024-24.1.2-thm-5`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(c) (`jis-2024-24.1.2-thm-5`).

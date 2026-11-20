@@ -1,4 +1,7 @@
 # Finite Carleman inequality
 
-Finite Carleman inequality: the partial sum of the geometric means is
-bounded by `e` times the partial sum of the terms.
+For every sequence $a_n \ge 0$ and every $N \in \mathbb{N}$, with $G_n = (a_0 \cdots a_n)^{1/(n+1)}$,
+
+$$
+\sum_{n=0}^{N-1} G_n \le e \sum_{n=0}^{N-1} a_n .
+$$

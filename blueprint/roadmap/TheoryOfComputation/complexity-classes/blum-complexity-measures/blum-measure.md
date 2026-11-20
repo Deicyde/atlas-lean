@@ -7,4 +7,4 @@ $\Phi_c(n) = m$ between $c$, $n$ and $m$ is decidable.
 
 ## Sources
 
-- Blum, "A machine-independent theory of the complexity of recursive functions", *Journal of the ACM* 14 (1967), 322–336, Definition 1.
+- M. Blum, "A machine-independent theory of the complexity of recursive functions", *Journal of the ACM* 14 (1967), 322–336, Definition 1.

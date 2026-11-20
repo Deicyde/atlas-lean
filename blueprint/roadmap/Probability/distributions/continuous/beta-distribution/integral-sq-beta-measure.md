@@ -1,4 +1,5 @@
 # Second moment of the beta law
 
-For `α, β > 0`,
-`E[X ^ 2] = α (α + 1) / ((α + β) (α + β + 1))`.
+For $\alpha, \beta > 0$ and $X \sim \operatorname{Beta}(\alpha, \beta)$,
+
+$$\mathbb E[X^2] = \frac{\alpha (\alpha + 1)}{(\alpha + \beta)(\alpha + \beta + 1)} .$$

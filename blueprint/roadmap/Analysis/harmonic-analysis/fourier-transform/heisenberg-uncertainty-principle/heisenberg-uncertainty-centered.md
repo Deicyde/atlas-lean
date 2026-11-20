@@ -1,7 +1,9 @@
-# Heisenberg's uncertainty principle
+# Heisenberg's uncertainty principle about the mean position
 
-**Heisenberg's uncertainty principle** with the position factor centered: for
-`μ = (∫ y * ‖f y‖²) / (∫ ‖f x‖²)`, the position second moment about `μ` satisfies
-the same bound. For positive L2 mass, `μ` is the mean position. Zero L2 mass occurs
-only for `f = 0`, where `μ = 0 / 0 = 0` by Lean's convention.
+Let $f$ be a complex-valued Schwartz function on $\mathbb{R}$. Let $\mu = \int y\, |f(y)|^2\, dy \big/ \int |f(z)|^2\, dz$, with $\mu = 0$ when $f = 0$ (division by zero giving $0$); for $f \ne 0$, $\mu$ is the mean position. Then
+
+$$
+\Big( \int_{\mathbb{R}} |f(x)|^2\, dx \Big)^2 \le 4 \Big( \int_{\mathbb{R}} (x - \mu)^2 |f(x)|^2\, dx \Big) \Big( \int_{\mathbb{R}} |f'(x)|^2\, dx \Big).
+$$
+
 Only the position factor is centered.

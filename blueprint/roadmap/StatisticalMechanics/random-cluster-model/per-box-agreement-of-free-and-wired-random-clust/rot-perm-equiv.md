@@ -1,3 +1,3 @@
 # Coordinate permutation of $\mathbb{Z}^d$
 
-The permutation of `ℤ^d` permuting coordinates by `π`: `(x ∘ π⁻¹)_i = x_{π⁻¹ i}`.
+For $d \in \mathbb{N}$ and a permutation $\pi$ of the coordinates, the coordinate permutation is the bijection of $\mathbb{Z}^d$ sending $x$ to $(x_{\pi^{-1}(i)})_i$, with inverse $x \mapsto (x_{\pi(i)})_i$.

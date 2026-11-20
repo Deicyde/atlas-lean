@@ -14,4 +14,4 @@ where the term $\binom{(k+1)\ell - n}{\ell - 1}$ is taken to be $0$ for $\ell = 
 
 ## Sources
 
-- Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 8 (`jis-2024-24.1.1-thm-8`), with `As_n^{(k)}` from equation (8).
+- Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 8 (`jis-2024-24.1.1-thm-8`), with $\mathrm{As}_n^{(k)}$ from equation (8).

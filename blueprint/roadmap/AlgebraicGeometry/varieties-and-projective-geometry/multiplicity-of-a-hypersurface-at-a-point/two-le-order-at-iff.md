@@ -6,4 +6,5 @@ variables $(X_i)_{i \in \sigma}$. For every point $v \in R^\sigma$, the polynomi
 to order at least $2$ at $v$ if and only if $F(v) = 0$ and
 $\frac{\partial F}{\partial X_i}(v) = 0$ for every $i \in \sigma$.
 
-Equivalently, $v$ is a singular point of the hypersurface $F = 0$.
+When $R$ is a field and $F \neq 0$, this says that $v$ is a singular point of the hypersurface
+$F = 0$.

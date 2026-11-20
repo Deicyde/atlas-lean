@@ -1,4 +1,6 @@
 # Eigenvectors of fg map to eigenvectors of gf
 
-An eigenvector of `f ∘ₗ g` for a nonzero eigenvalue is sent by `g` to an
-eigenvector of `g ∘ₗ f` for the same eigenvalue.
+Let $V$ and $W$ be vector spaces over a field $\mathbb{K}$, of any dimension, let $f : V \to W$ and
+$g : W \to V$ be linear maps, and let $\mu \in \mathbb{K}$ be nonzero. If $x$ is an eigenvector of
+$f \circ g$ with eigenvalue $\mu$, then $g(x)$ is an eigenvector of $g \circ f$ with eigenvalue
+$\mu$.

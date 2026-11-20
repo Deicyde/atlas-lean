@@ -1,4 +1,3 @@
 # Surviving weight of a GPS event
 
-The surviving weight `max (N j - α) 0` of event `j`, for expected read counts `N` and
-sparseness parameter `α`.
+For real expected read counts $N_j$ (over a set of candidate events $j$), a real sparseness parameter $\alpha$ and an event $j$, the surviving weight is $w_j = \max(N_j - \alpha, 0)$.

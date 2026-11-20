@@ -1,3 +1,3 @@
 # Notation for disjoint occurrence
 
-The notation `A □ B` unfolds to `disjointOccurrence A B`.
+For events $A, B \subseteq \{0,1\}^E$, the symbol $A \mathbin{\square} B$ denotes their [disjoint occurrence](disjoint-occurrence.md).

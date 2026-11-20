@@ -1,4 +1,4 @@
-# Kourovka Problem 18.95 (Sozutov)
+# Solubility of products of an abelian and a locally quaternion group (Kourovka 18.95)
 
 The proposition that every group $G$ with subgroups $A$
 and $B$ such that $A$ is abelian, $B$ is locally quaternion, and $G = AB$ (every element of $G$ is a

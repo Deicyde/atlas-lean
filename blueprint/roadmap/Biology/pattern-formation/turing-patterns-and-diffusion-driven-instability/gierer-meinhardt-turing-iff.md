@@ -1,5 +1,7 @@
 # Turing instability of the Gierer–Meinhardt kinetics
 
-With `d_u = 1`, `d_v = d > 0`,
-`0 < a + 1`, `0 < b` and `b (1 - a) < 1 + a` (stable without diffusion), some Fourier mode is
-unstable iff `2 √(d b) < d b (1 - a) / (1 + a) - 1`.
+Let $a, b, d$ be real with $a + 1 > 0$, $b > 0$, $d > 0$ and $b(1 - a) < 1 + a$ (stability without
+diffusion). With diffusion coefficients $d_u = 1$ and $d_v = d$, some Fourier mode $k \in \mathbb{R}$
+is [unstable](is-unstable-mode.md) for the [Gierer–Meinhardt Jacobian](gierer-meinhardt-jacobian.md) if and only if
+
+$$2\sqrt{db} < d\,\frac{b(1 - a)}{1 + a} - 1.$$

@@ -1,4 +1,7 @@
 # Exchangeability of the Chinese restaurant process
 
-**Exchangeability of the Chinese restaurant process** (Aldous 1985, §11): the law of the
-partition relabeled by any permutation of the customers is the law of the partition.
+For every real $\theta > 0$ and every permutation $\sigma$ of $\{0, \dots, n-1\}$, the image of the [Chinese restaurant process](crp.md) $\mathrm{CRP}_n$ under the relabeling $\pi \mapsto \sigma^{-1}(\pi)$ is $\mathrm{CRP}_n$.
+
+## Sources
+
+- D. J. Aldous, *Exchangeability and related topics*, in École d'Été de Probabilités de Saint-Flour XIII — 1983, Lecture Notes in Math. 1117, Springer (1985), §11.

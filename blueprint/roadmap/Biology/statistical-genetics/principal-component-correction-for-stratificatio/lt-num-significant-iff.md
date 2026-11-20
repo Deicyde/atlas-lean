@@ -1,4 +1,7 @@
 # Characterization of the axes counted as significant
 
-The first `numSignificant stat t K` indices are exactly those `k < K` whose statistics and
-all earlier ones exceed the threshold.
+For every sequence of real statistics $(T_k)$, threshold $t$ and natural numbers $K, k$,
+
+$$k < n_t(K) \iff k < K \text{ and } T_i > t \text{ for every } i \le k,$$
+
+where $n_t(K)$ is the [sequential count of significant axes](num-significant.md).

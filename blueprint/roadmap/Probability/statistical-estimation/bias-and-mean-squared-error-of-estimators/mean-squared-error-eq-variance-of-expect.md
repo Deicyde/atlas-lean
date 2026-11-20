@@ -8,4 +8,4 @@ $\operatorname{Var}_\mu(W)$.
 
 ## Sources
 
-- the display following Definition 7.3.2.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, the display following Definition 7.3.2.

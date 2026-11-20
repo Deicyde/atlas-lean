@@ -13,4 +13,5 @@ $A$-modules.
 
 ## Sources
 
--. Problem `direct_summand` of the lean-eval benchmark.
+- B. Bhatt, *On the direct summand conjecture and its derived variant*, Invent. Math. 212 (2018), 297–317, arXiv:1608.08882.
+- Problem `direct_summand` of the lean-eval benchmark.

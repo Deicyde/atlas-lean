@@ -9,4 +9,4 @@ $\|TV - TW\|_\infty \le \gamma \|V - W\|_\infty$.
 
 ## Sources
 
-- Puterman, Theorem 6.2.3.
+- M. L. Puterman, *Markov Decision Processes: Discrete Stochastic Dynamic Programming*, Wiley, 1994, Chapter 6.

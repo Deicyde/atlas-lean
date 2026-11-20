@@ -7,4 +7,4 @@ exactly three guesses with $S$ than with the cyclic shift strategy.
 
 ## Sources
 
-- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 7 (`jis-2026-26.1.7-thm-7`).
+- Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 7.

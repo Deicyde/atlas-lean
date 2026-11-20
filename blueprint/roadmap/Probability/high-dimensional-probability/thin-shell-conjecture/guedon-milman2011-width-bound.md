@@ -6,4 +6,5 @@ dimension $n$ satisfies $\sigma_n \le C n^{1/3}$.
 
 ## Sources
 
-- Guedon and Milman, GAFA 21 (2011), 1043--1068; catalogue `constants/20a.md`.
+- O. Guédon and E. Milman, *Interpolating thin-shell and sharp large-deviation estimates for isotropic log-concave
+  measures*, Geom. Funct. Anal. 21 (2011), 1043–1068; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

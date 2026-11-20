@@ -8,4 +8,4 @@ $v(a, n) / m(a, n)^b \to c$ as $n \to \infty$.
 
 ## Sources
 
-- Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>: the collection `𝒜` of admissible sequences with the mean `eq:mean` and variance `eq:varexpanded` definitions (lines 113–125), and the asymptotic power-law definition `eq:TLpower` (lines 152–156).
+- Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>: the collection $\mathcal{A}$ of admissible sequences with the mean `eq:mean` and variance `eq:varexpanded` definitions (lines 113–125), and the asymptotic power-law definition `eq:TLpower` (lines 152–156).

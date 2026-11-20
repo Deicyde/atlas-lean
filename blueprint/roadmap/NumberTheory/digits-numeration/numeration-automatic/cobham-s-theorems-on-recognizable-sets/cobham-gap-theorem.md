@@ -9,4 +9,4 @@ $x_{i+1} - x_i \le C$ for every $i$.
 
 ## Sources
 
-- Kärki–Lacroix–Rigo gap theorem, lines 979–995 of <https://cs.uwaterloo.ca/journals/JIS/VOL13/Rigo/rigo6.tex>.
+- Tomi Kärki, Anne Lacroix, and Michel Rigo, *On the Recognizability of Self-Generating Sets*, Journal of Integer Sequences 13 (2010), Article 10.2.2, Theorem 14 (Gap Theorem, quoted from Cobham 1972), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Rigo/rigo6.tex>.

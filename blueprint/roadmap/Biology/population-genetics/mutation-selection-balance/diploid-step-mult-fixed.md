@@ -1,4 +1,3 @@
-# `U / s` is an equilibrium
+# The frequency $U/s$ is an equilibrium
 
-**`U / s` is an equilibrium** of the multiplicative diploid model (an algebraic identity for
-`s ≠ 0`, `U ≠ 1`; a frequency in `[0, 1]` when `0 ≤ U ≤ s`).
+For real numbers $s \ne 0$ and $U \ne 1$, with the multiplicative homozygote cost $t = 2s - s^2$, the [diploid generation map](diploid-step.md) fixes $q = U/s$. The identity is algebraic; $U/s$ is a frequency in $[0, 1]$ when $0 \le U \le s$.

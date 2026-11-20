@@ -7,4 +7,4 @@ or $6m^2 - 7m - 1$ according as $a = 0$, $a = 1$ or $a = 2$.
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, first part (`jis-2026-26.2.6-thm-6`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, first part.

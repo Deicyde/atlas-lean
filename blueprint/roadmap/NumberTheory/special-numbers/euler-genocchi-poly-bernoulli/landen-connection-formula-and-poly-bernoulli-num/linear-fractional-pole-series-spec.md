@@ -6,4 +6,4 @@ $\frac{cu}{a - cu}$, satisfies $(a - cu) \cdot F_{a,c}(u) = cu$ in $\mathbb{R}[[
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function `G_g(t)` before Table 1.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function $G_g(t)$ before Table 1.

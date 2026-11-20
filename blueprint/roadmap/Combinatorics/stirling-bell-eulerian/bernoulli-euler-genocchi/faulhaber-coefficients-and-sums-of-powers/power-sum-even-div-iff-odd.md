@@ -9,4 +9,4 @@ natural number $n$.
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 2.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Proposition 2.

@@ -1,4 +1,7 @@
 # Tilt factor between two edge parameters
 
-The tilt factor `λ = p₂ (1 - p₁) / ((1 - p₂) p₁)`, the ratio of the odds of an open edge
-at `p₂` and at `p₁`.
+For $p_1, p_2 \in \mathbb{R}$, the tilt factor is
+
+$$\frac{p_2(1 - p_1)}{(1 - p_2)\, p_1},$$
+
+the ratio of the odds of $p_2$ to those of $p_1$ (read as $0$ when the denominator vanishes).

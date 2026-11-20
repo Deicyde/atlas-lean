@@ -1,4 +1,4 @@
 # Invariant set of a map
 
-`E` is invariant under `T`: `x ∈ E ↔ T x ∈ E`, i.e. `T ⁻¹' E = E`
-(see `isInvariantSet_iff_preimage_eq`).
+A set $E \subseteq X$ is invariant under a map $T : X \to X$ if $x \in E \iff Tx \in E$ for every $x \in X$;
+equivalently, [$T^{-1} E = E$](is-invariant-set-iff-preimage-eq.md).

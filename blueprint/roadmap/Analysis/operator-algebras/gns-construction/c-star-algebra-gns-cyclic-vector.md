@@ -8,4 +8,4 @@ linear span of $\{\pi_f(a) \xi : a \in A\}$ is dense in $H_f$.
 
 ## Sources
 
-- GNS construction, Gelfand–Naimark 1943 and I. E. Segal, Ann. of Math. 48 (1947); see Murphy, C*-Algebras; Lean is unital state f 1 = 1 unit cyclic vector with inner-product formula and dense span. It is `PositiveLinearMap.exists_gns_cyclic_vector`, kept under the source's name.
+- GNS construction, Gelfand–Naimark 1943 and I. E. Segal, Ann. of Math. 48 (1947); see Murphy, C*-Algebras. The statement here is for a state $f$ with $f(1) = 1$: a representation with a unit cyclic vector, the inner-product formula for $f$ and dense span; the name follows the source.

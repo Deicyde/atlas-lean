@@ -1,4 +1,5 @@
 # Closed form of the Jukes–Cantor difference probability
 
-The probability that the two ends of a branch differ is `3/4 · (1 - exp (-4 μ t / 3))`,
-whatever the starting base.
+For all real $\mu, t$ and every base $i$, the [difference probability](p-diff.md) is
+
+$$p_{\mathrm{diff}}(i) = \frac34\bigl(1 - e^{-4\mu t/3}\bigr).$$

@@ -1,3 +1,3 @@
 # Real-valued indicator that an edge is open
 
-The indicator `ω_e ∈ {0, 1}` (as a real number) that the edge `e` is open in `ω`.
+For a set $E$, a configuration $\omega \in \{0, 1\}^E$ and $e \in E$, the real number $\omega_e \in \{0, 1\}$, equal to $1$ if $e$ is open in $\omega$ and $0$ otherwise.

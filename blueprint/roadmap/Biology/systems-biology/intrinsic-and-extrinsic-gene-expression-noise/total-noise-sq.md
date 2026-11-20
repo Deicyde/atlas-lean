@@ -1,3 +1,8 @@
 # Total noise strength
 
-Two-reporter total noise strength `η_tot² = (⟨X² + Y²⟩ / 2 - ⟨X⟩⟨Y⟩) / (⟨X⟩⟨Y⟩)`.
+For a measure $\mu$ and real functions $X, Y$, the two-reporter total noise strength is
+
+$$\eta_{\mathrm{tot}}^2 = \frac{\mathbb{E}[X^2 + Y^2]/2 - \mathbb{E}[X]\,\mathbb{E}[Y]}{\mathbb{E}[X]\,\mathbb{E}[Y]},$$
+
+with $\mathbb{E}$ the integral against $\mu$ (taken to be $0$ for non-integrable functions) and the
+quotient read as $0$ when $\mathbb{E}[X]\,\mathbb{E}[Y] = 0$.

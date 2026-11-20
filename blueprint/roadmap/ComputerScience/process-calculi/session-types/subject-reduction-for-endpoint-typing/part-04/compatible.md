@@ -1,4 +1,4 @@
 # Dual advancement preserves compatibility
 
-A faithful matched update retains compatibility if the initial
-interface is compatible.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ dual-advances to $\Xi$. If $\Delta$ is
+compatible, then so is $\Xi$.

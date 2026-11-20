@@ -1,3 +1,4 @@
 # Upper incomplete gamma function at zero
 
-`Γ(a, 0) = Γ(a)` for `a > 0`.
+For $a > 0$, the [upper incomplete gamma function](upper-incomplete-gamma.md) satisfies
+$\Gamma(a, 0) = \Gamma(a)$.

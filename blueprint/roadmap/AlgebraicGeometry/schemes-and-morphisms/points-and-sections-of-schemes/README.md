@@ -1,6 +1,6 @@
 # Points and sections of schemes
 
-- [Closed points of finite-type schemes over algebraically closed fields](exists-over-hom-base-closed-point-eq-of.md)
+- [Closed points of schemes locally of finite type over an algebraically closed field are rational](exists-over-hom-base-closed-point-eq-of.md)
 - [Pullback points determined by projections given a residue isomorphism](eq-of-fst-eq-of-snd-eq-of-is-iso-residue.md)
 - [Valuative criterion for factoring sections through an open subscheme](exists-section-comp-eq-iff-factors-of-un.md)
 - [Density of rational points over an algebraically closed field](dense-set-of-exists-section-of-is-alg-cl.md)

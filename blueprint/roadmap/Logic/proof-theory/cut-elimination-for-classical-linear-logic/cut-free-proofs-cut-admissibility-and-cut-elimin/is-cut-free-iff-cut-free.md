@@ -1,3 +1,4 @@
 # Cut-freeness predicate agrees with the Boolean check
 
-The source predicate agrees exactly with the pinned Boolean predicate.
+A proof in classical linear logic contains no application of the cut rule if and only if the
+Boolean cut-freeness test returns true on it.

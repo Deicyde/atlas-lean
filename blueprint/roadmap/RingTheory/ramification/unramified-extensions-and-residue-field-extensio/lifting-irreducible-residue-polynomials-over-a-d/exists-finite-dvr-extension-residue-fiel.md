@@ -9,4 +9,4 @@ via $A \to B$) and $L$.
 
 ## Sources
 
-- ATLAS NumberTheoryI N211, Theorem 10.13, essential-surjectivity object-construction stage only (a prerequisite, not the full N211 target): completeness and Henselianity of $A$ are not assumed, and neither full faithfulness nor the categorical equivalence is proved.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 10, Theorem 10.13, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. This page is one step of its proof, the construction of an extension with a prescribed residue field extension; completeness and Henselianity of $A$ are not assumed here.

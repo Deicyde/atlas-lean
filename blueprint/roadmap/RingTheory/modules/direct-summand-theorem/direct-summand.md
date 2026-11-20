@@ -8,4 +8,6 @@ summand of $B$ as an $A$-module.
 
 ## Sources
 
--. Problem `direct_summand` of the lean-eval benchmark.
+- Y. André, *La conjecture du facteur direct*, Publ. Math. Inst. Hautes Études Sci. 127 (2018), 71–93, arXiv:1609.00345.
+- B. Bhatt, *On the direct summand conjecture and its derived variant*, Invent. Math. 212 (2018), 297–317, arXiv:1608.08882.
+- Problem `direct_summand` of the lean-eval benchmark.

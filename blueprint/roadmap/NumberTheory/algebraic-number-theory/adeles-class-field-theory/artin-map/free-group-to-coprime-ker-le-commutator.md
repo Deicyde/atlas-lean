@@ -10,4 +10,4 @@ commutator subgroup $[F(P), F(P)]$.
 
 ## Sources
 
-- direct native counterpart of ATLAS `freeGroupToCoprime_ker_le_commutator` (source lines 429--487). The prime basis-vector computation at source lines 416--427 is replaced by `FractionalIdeal.factorizationMulEquiv_primeUnitFractionalIdeal`. The proof builds the ATLAS retraction to the abelianization through `FractionalIdeal.factorizationMulEquiv`, `Finsupp.comapDomain.addMonoidHom`, `Finsupp.toFreeAbelianGroup`, and `Abelianization.of`; the retraction itself stays private to this proof.
+- ATLAS NumberTheoryI, Proposition 21.1 and its proof.

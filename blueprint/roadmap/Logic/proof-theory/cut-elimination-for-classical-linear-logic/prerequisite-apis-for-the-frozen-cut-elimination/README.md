@@ -1,4 +1,4 @@
-# Prerequisite APIs for the frozen cut-elimination source port
+# Why-not sequents and proof height
 
 ## Sequent
 

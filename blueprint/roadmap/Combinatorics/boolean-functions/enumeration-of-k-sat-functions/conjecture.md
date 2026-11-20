@@ -7,4 +7,4 @@ a $1 - o(1)$ fraction of the $k$-SAT functions on $n$ variables is unate.
 
 ## Sources
 
-- [OWR-10252930-018], DOI 10.4171/owr/2022/22, arXiv:2107.09233.
+- Abstract *Enumerating k-SAT functions*, in M. Krivelevich, R. Morris, O. Riordan and A. Steger (organisers), *Combinatorics, Probability and Computing*, Oberwolfach Rep. 19 (2022), no. 2, 1165–1237, p. 1222, DOI 10.4171/OWR/2022/22; D. Dong, N. Mani and Y. Zhao, *Enumerating k-SAT functions*, arXiv:2107.09233.

@@ -16,4 +16,4 @@ positive denominator.
 
 ## Sources
 
-- Eric F. Bravo, Carlos A. Gomez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit," Journal of Integer Sequences 22 (2019), Article 19.6.3, Lemma `bd`, lines 285–292. Source URL <https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex>.
+- Eric F. Bravo, Carlos A. Gómez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit", Journal of Integer Sequences 22 (2019), Article 19.6.3, Lemma 5: https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex

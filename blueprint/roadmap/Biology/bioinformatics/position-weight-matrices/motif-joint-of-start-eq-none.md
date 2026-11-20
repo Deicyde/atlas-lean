@@ -1,3 +1,3 @@
 # Joint likelihood with no motif occurrence
 
-With no occurrence, the joint is the prior times the background likelihood.
+If $z$ has no occurrence, then the [joint likelihood](motif-joint.md) is $\pi(z)\, \beta(x)$, where $\beta$ is the [background likelihood](bg-lik.md).

@@ -6,7 +6,9 @@ monoid homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. W
 $\gamma = \alpha * \beta$ for their Dirichlet convolution over monic divisors and $\mu$ for the
 Möbius function. Then for all monic $f, g \in F[T]$,
 
-$$\gamma(fg) = \sum_{\ell} \mu(\ell) \alpha(\ell) \beta(\ell) \gamma(f/\ell) \gamma(g/\ell),$$
+$$
+\gamma(fg) = \sum_{\ell} \mu(\ell) \alpha(\ell) \beta(\ell) \gamma(f/\ell) \gamma(g/\ell),
+$$
 
 where $\ell$ runs over the monic common divisors of $f$ and $g$.
 

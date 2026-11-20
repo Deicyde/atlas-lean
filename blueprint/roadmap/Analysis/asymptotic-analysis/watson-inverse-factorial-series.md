@@ -23,4 +23,4 @@ converges absolutely and its sum is $f(z)-b_0$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL25/Schumacher/schu9.tex, lines 370-417. Scope exclusion: excludes the `M = 1, w = 0` specialization and the later Stirling-coefficient theorem.
+- Raphael Schumacher, *The Generalization of Faulhaber's Formula to Sums of Arbitrary Complex Powers*, Journal of Integer Sequences 25 (2022), Article 22.3.7, Watson's Transformation Theorem (quoting G. N. Watson, *The transformation of an asymptotic series into a convergent series of inverse factorials*, Rend. Circ. Mat. Palermo 34 (1912), 41–88, Theorem 2, p. 45), https://cs.uwaterloo.ca/journals/JIS/VOL25/Schumacher/schu9.tex, lines 370-417. The special case $M = 1$, $w = 0$ and the later theorem on Stirling coefficients are not part of this statement.

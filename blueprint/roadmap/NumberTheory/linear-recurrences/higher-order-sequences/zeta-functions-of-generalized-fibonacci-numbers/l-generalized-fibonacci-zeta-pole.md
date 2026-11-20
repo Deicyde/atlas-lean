@@ -10,7 +10,9 @@ s_{\kappa,n} = -\sum_{\beta \in R} \kappa(\beta) +
 \frac{2 n \pi i + \sum_{\beta \in R} \kappa(\beta) \log \beta}{\log \alpha},
 $$
 
-where $\log$ is the principal branch of the complex logarithm.
+where $\log$ is the principal branch of the complex logarithm, with the conventions
+$\log 0 = 0$ and $z/0 = 0$; so for $\alpha \in \{0, 1\}$, where $\log \alpha = 0$, the
+possible pole is $-\sum_{\beta \in R} \kappa(\beta)$.
 
 Only the values of $\kappa$ on $R$ enter; their sum is the number called $k$ in the paper.
 

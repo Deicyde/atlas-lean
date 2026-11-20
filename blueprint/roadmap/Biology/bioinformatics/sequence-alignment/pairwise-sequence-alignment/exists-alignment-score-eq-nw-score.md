@@ -1,6 +1,3 @@
-# Needleman–Wunsch is attained
+# The Needleman–Wunsch score is attained
 
-Let $\sigma : \alpha \to \alpha \to \mathbb{Z}$ be a
-substitution score and $g \in \mathbb{Z}$ a gap score. For all sequences $x$ and $y$ over
-$\alpha$ there is a valid alignment $A$ of $x$ and $y$ whose score with respect to $\sigma$ and
-$g$ equals the Needleman–Wunsch score of $x$ and $y$.
+For all sequences $x, y$, some [valid alignment](is-alignment.md) of $x$ and $y$ has [score](alignment-score.md) equal to $\mathrm{NW}(x, y)$, the [Needleman–Wunsch score](nw-score.md).

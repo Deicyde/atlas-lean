@@ -1,4 +1,3 @@
 # Island-model equilibrium is below one under migration
 
-With migration (`0 < m ≤ 1`) the equilibrium identity-by-descent probability lies in
-`[0, 1)`.
+For every natural number $M \ge 1$ and every real $0 < m \le 1$, the [equilibrium](island-equilibrium.md) satisfies $0 \le F^* < 1$.

@@ -9,4 +9,4 @@ Rubel asked whether this statement is true.
 
 ## Sources
 
-- [AMR-022-5024], Research Problems in Function Theory, Problem 5.24 (L. A. Rubel).
+- [AMR-022-5024], W. K. Hayman and E. F. Lingham, Research Problems in Function Theory, Problem 5.24 (L. A. Rubel).

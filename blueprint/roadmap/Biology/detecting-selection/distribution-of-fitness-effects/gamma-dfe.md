@@ -1,5 +1,7 @@
 # Gamma distribution of fitness effects
 
-The gamma distribution of fitness effects (Boyko et al. 2008): the scaled selection
-coefficient is `σ = -T` with `T ~ Gamma(a, r)`, shape `a > 0` and rate `r > 0` (scale `1 / r`),
-so new mutations are deleterious with mean strength `a / r`.
+For real $a, r$, the gamma DFE is the image under $t \mapsto -t$ of the measure on $\mathbb{R}$ with the gamma density of shape $a$ and rate $r$. For $a, r > 0$ it is the law of $\sigma = -T$ with $T \sim \mathrm{Gamma}(a, r)$ (scale $1/r$): new mutations are deleterious with mean strength $a / r$ (Boyko et al. 2008).
+
+## Sources
+
+- A. R. Boyko et al., *Assessing the evolutionary impact of amino acid mutations in the human genome*, PLoS Genet. 4 (2008), e1000083.

@@ -43,7 +43,7 @@
 - [Removing a restriction around nil preserves ranked typing](nu-nil-elim.md)
 - [Restricting nil preserves ranked typing](nu-nil-intro.md)
 - [Swapping two restrictions preserves ranked typing](nu-swap.md)
-- [Reverse restriction swap preserves ranked typing](nu-swap-reverse.md)
+- [Swapping two adjacent restrictions back preserves ranked typing](nu-swap-reverse.md)
 - [Structural congruence preserves ranked typing](cong-iff.md)
 - [Parallel guard frontier](guard-frontier.md)
 - [Frontier normal form of finite networks](frontier-normal.md)

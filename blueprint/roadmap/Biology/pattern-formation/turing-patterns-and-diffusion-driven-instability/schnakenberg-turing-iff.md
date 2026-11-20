@@ -1,5 +1,9 @@
 # Turing instability of the Schnakenberg kinetics
 
-**Turing instability of the Schnakenberg kinetics** (Murray 2003, ch. 2). With
-`d_u = 1`, `d_v = d > 0`, `0 < a + b` and `b - a < (a + b)³` (stable without diffusion), some
-Fourier mode is unstable iff `2 √d (a + b)² < d (b - a) - (a + b)³`.
+Let $a, b, d$ be real with $a + b > 0$, $d > 0$ and $b - a < (a + b)^3$ (stability without diffusion).
+With diffusion coefficients $d_u = 1$ and $d_v = d$, some Fourier mode $k \in \mathbb{R}$ is
+[unstable](is-unstable-mode.md) for the [Schnakenberg Jacobian](schnakenberg-jacobian.md) if and only if
+
+$$2\sqrt{d}\,(a + b)^2 < d(b - a) - (a + b)^3$$
+
+(Murray 2003, ch. 2).

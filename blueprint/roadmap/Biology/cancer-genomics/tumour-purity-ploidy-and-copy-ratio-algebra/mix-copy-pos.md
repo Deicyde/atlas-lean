@@ -1,3 +1,3 @@
 # Positivity of the mixture copy number
 
-The mixture copy number is positive in the biological domain `0 ≤ α ≤ 1`, `0 < q`.
+For $0 \le \alpha \le 1$ and $q > 0$, the [average copy number](mix-copy.md) satisfies $D(\alpha, q) > 0$.

@@ -13,3 +13,7 @@
 - [Harris inequality for finitely dependent increasing events](ih-harris-of-finite-depends-on.md)
 - [Positive correlation passes to decreasing intersections](ih-harris-i-inter-of-antitone.md)
 - [Continuity from above of a finite measure, real-valued form](ih-tendsto-measure-real-i-inter.md)
+
+## Related topics
+
+- [Janson's inequalities](../../../../Combinatorics/probabilistic-combinatorics/janson-s-inequalities/README.md): upper bounds on the probability that no increasing event $\{S_i \subseteq R\}$ occurs, complementing the Harris lower bound $\prod_i (1 - \Pr[A_i])$; their proof rests on the Harris inequality.

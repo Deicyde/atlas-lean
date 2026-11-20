@@ -6,7 +6,7 @@ For all real numbers $x$ and $y$, $\lfloor x + y \rfloor = \lfloor x \rfloor + \
 $(x - \lfloor x \rfloor) + (y - \lfloor y \rfloor) < 1$, and
 $\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor + 1$ otherwise.
 
-These are parts (iii) and (v) of the cited lemma; its remaining parts are not restated here.
+These are parts (iii) and (v) of the cited lemma.
 
 ## Sources
 

@@ -5,4 +5,4 @@ the first four anti-Tribonacci numbers are $D_1 = 6$, $D_2 = 16$, $D_3 = 27$ and
 
 ## Sources
 
-- Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
+- Wieb Bosma, René Bruin, Robbert Fokkink, Jonathan Grube, Anniek Reuijl and Thian Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4, https://cs.uwaterloo.ca/journals/JIS/VOL28/Fokkink/fokkink9.html

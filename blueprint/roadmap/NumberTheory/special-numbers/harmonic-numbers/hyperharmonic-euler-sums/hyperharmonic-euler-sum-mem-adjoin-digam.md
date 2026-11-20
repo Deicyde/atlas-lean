@@ -8,8 +8,8 @@ sum lies in the algebra generated over the field $\mathbb{Q}(a)$ by $\psi(a) + \
 derivatives $\psi^{(j)}(a)$ for $j \ge 1$ and the zeta values $\zeta(j)$ for $j \ge 2$, where
 $\psi$ is the digamma function and $\gamma$ is the Euler–Mascheroni constant.
 
-The source also extends the result by continuity to integers $a > -k$; that case is not included
-here.
+The source also extends the result by continuity to integers $a > -k$; that case is not part of
+the statement above.
 
 ## Sources
 

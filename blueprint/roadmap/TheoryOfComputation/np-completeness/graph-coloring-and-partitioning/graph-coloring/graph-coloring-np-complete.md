@@ -5,4 +5,4 @@ every decision problem $L$ in NP has a polynomial-time many-one reduction to GRA
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), GRAPH COLORING (chromatic number); R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), GRAPH COLORING (chromatic number); Richard M. Karp, "Reducibility among combinatorial problems" (1972).

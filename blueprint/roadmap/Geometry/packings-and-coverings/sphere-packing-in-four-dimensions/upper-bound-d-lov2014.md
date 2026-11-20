@@ -7,4 +7,4 @@ $\Delta_4 \le \frac{\pi^2}{2} \cdot \frac{130587}{1000000}$.
 
 ## Sources
 
-- dLOV2014 Table 1, center-density upper bound `0.130587`, converted exactly; displayed `0.644421…` is only an approximation.
+- D. de Laat, F. M. de Oliveira Filho and F. Vallentin, *Upper bounds for packings of spheres of several radii*, Forum Math. Sigma 2 (2014), e23, arXiv:1206.2608, Table 1: center-density upper bound $0.130587$, converted exactly; the displayed $0.644421\ldots$ is only an approximation.

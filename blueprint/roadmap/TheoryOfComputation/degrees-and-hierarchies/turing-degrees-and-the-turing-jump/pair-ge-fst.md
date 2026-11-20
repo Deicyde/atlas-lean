@@ -6,4 +6,4 @@ numbers $a$ and $b$, $a \le \langle a, b \rangle$.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (pairing functions).

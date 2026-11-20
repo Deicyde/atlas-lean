@@ -1,4 +1,4 @@
 # Exponential moments of the gamma law are finite exactly below the rate
 
-The exponential moment `E[exp (t X)]` of a gamma `(a, r)` law is finite exactly for
-`t < r`.
+Let $a, r > 0$. The set of real $t$ for which $x \mapsto e^{tx}$ is integrable with respect to the
+gamma law $\Gamma(a, r)$ with shape $a$ and rate $r$ is exactly $(-\infty, r)$.

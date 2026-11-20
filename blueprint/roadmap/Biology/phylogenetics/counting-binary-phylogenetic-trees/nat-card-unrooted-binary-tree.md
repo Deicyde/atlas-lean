@@ -1,9 +1,9 @@
 # The number of unrooted binary phylogenetic trees
 
-On `n ≥ 3` labeled taxa there are
-`(2 n - 5)‼ = 1 · 3 ⋯ (2 n - 5)` unrooted binary phylogenetic trees up to label-preserving
-isomorphism.
+For every natural number $n \ge 3$, the number of [isomorphism](iso.md) classes of [unrooted binary phylogenetic trees](unrooted-binary-tree.md) on $n$ labeled taxa is
+
+$$(2n - 5)!! = 1 \cdot 3 \cdots (2n - 5).$$
 
 ## Sources
 
-- Semple & Steel (2003), Proposition 2.1.4. Proves the deferred entry `nat_card_unrootedBinaryTree`.
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

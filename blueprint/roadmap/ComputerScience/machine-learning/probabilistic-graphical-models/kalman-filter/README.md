@@ -14,3 +14,10 @@
 - [The predict step is exact](map-predict.md)
 - [The update step is the exact posterior](cond-distrib-update.md)
 - [One filter step is the exact posterior](cond-distrib-step.md)
+
+## Related topics
+
+- [Gaussian conditioning](../../../../Probability/distributions/continuous/gaussian-conditioning/README.md): the Gaussian Bayes update behind each filtering step.
+- [Hidden Markov models](../hidden-markov-models/README.md): the discrete-state analogue with the forward algorithm.
+- [Controllability of linear systems](../../../../Analysis/control-theory/controllability-of-linear-systems/README.md): the control problem dual to estimation; observability of $(A, C)$ is the Kalman rank condition for the pair $(A^\top, C^\top)$.
+- [Recursive least squares](../../../../Analysis/control-theory/recursive-least-squares/README.md): the Kalman filter for a constant state observed through a linear regression with unit noise variance.

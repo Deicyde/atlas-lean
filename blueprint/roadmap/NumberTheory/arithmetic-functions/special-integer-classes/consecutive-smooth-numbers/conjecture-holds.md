@@ -8,5 +8,7 @@ satisfies $p \le n^\varepsilon$.
 
 ## Sources
 
-- Balog-Wooley 1998; Bober-Fretwell-Martin-Wooley 2020.
-- Lean proof of EP-369 location variant (plby/lean-proofs), https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos369.lean.
+- Erdős Problem #369, https://www.erdosproblems.com/369, which discusses this variant and an adaptation of the Balog–Wooley construction.
+- A. Balog and T. D. Wooley, *On strings of consecutive integers with no large prime factors*, J. Austral. Math. Soc. Ser. A 64 (1998), 266–276.
+- J. W. Bober, D. Fretwell, G. Martin and T. D. Wooley, *Smooth values of polynomials*, J. Aust. Math. Soc. 108 (2020), 245–261, doi:10.1017/S1446788718000320.
+- plby/lean-proofs, `ErdosProblems/Erdos369.lean`, https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos369.lean.

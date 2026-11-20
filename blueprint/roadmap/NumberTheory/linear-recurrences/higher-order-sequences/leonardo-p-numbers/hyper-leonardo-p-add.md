@@ -7,4 +7,4 @@ $$\mathcal{L}^{(k)}_{p,n+m} = \sum_{i=0}^{m} \binom{m}{i} \mathcal{L}^{(k-i)}_{p
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 9.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 9.

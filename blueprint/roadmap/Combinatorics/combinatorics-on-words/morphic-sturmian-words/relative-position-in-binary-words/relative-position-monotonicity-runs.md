@@ -11,4 +11,4 @@ of $w$, then there is $n \ge 0$ with $\Delta r(n+j) \ge 0$ for all $1 \le j \le 
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 14 (`jis-2025-25.1.5-lem-14`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 14 (`jis-2025-25.1.5-lem-14`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

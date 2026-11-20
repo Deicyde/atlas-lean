@@ -1,5 +1,7 @@
 # Full-sib covariance of genotypic values
 
-The covariance of the genotypic values of full sibs: the sire `(i, j)` and the dam
-`(k, l)` are unrelated; the first offspring receives `cond b i j` and `cond e k l`, the second,
-independently, `cond b' i j` and `cond e' k l`.
+For real allele weights $p$ and genotypic values $G$ with [mean](mean-value.md) $\mu$, put
+
+$$C_{FS} = \sum_{i, j, k, l} \sum_{b, b', e, e' \in \{1, 2\}} \frac{p_i p_j p_k p_l}{16}\, (G_{t_b s_e} - \mu)(G_{t_{b'} s_{e'}} - \mu),$$
+
+with $t_1 = i$, $t_2 = j$, $s_1 = k$, $s_2 = l$: when $p$ is a probability vector, it is the covariance of the genotypic values of two full sibs under Hardy–Weinberg proportions: the unrelated sire $(i, j)$ and dam $(k, l)$ each transmit one gene to each of the two offspring independently.

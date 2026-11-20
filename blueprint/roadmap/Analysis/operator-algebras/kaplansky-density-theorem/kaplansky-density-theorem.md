@@ -9,4 +9,4 @@ of $\overline{S}$.
 
 ## Sources
 
-- Kaplansky density theorem, I. Kaplansky, Pacific J. Math. 1 (1951), 227–232; see Takesaki, Theory of Operator Algebras I, Density Theorem and Kadison–Ringrose Vol I; Lean is SOT-closure equality of unit balls via toBounded conversion, full infinite-dimensional form.
+- Kaplansky density theorem, I. Kaplansky, Pacific J. Math. 1 (1951), 227–232; see Takesaki, Theory of Operator Algebras I, Density Theorem and Kadison–Ringrose Vol I. The statement here is the equality of the strong-operator closures of the unit balls, in full infinite-dimensional form.

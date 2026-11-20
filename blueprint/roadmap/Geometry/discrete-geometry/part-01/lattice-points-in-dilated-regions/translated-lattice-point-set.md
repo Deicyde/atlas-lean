@@ -9,4 +9,4 @@ The dilation comes first: in general this set differs from $(t \cdot (P + x)) \c
 
 ## Sources
 
-- Rocha-Neves, arXiv:2608.11078v1, lines 62-67.
+- António Rocha-Neves, A Fourier-analytic Uniqueness Theorem for Lattice-point Enumerators, arXiv:2608.11078v1 (2026), lines 62-67.

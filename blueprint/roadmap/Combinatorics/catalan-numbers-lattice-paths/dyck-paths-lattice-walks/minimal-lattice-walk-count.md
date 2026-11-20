@@ -10,4 +10,4 @@ sequences counted are the minimal-length walks from the origin to $(a, b)$.
 
 ## Sources
 
-- Jackson Evoniuk, Steven Klee, and Van Magnan, "Enumerating Minimal Length Lattice Paths," Journal of Integer Sequences 21 (2018), Article 18.3.6, Theorem (section Minimal walks for S = {(1,0),(0,1),(1,1)}, label sec2), lines 273–275, https://cs.uwaterloo.ca/journals/JIS/VOL21/Klee/klee2.tex
+- Jackson Evoniuk, Steven Klee, and Van Magnan, "Enumerating Minimal Length Lattice Paths," Journal of Integer Sequences 21 (2018), Article 18.3.6, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Klee/klee2.tex>

@@ -1,3 +1,3 @@
 # Extensionality of beta-invariant relations
 
-Admissible relations are determined by their binary predicates.
+Two [β-invariant relations](rel.md) $R$ and $S$ such that $R(f, g) \iff S(f, g)$ for all terms $f$, $g$ of the untyped term model are equal.

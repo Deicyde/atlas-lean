@@ -8,4 +8,4 @@ pairwise disjoint.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 and the definition following it (arXiv:2308.12872v1, Section 2.2).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 and Definition 11 (arXiv:2308.12872v1, Section 2.2).

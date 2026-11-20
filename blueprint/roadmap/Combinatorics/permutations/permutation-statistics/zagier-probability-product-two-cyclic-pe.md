@@ -10,11 +10,13 @@ cycles, fixed points included, is
 
 $$\frac{1 + (-1)^{n-k}}{(n+1)!} \, c(n+1, k).$$
 
-Proof: We formalize the plane-permutation transposition and reflection bijections of
-Chen and Reidys, arXiv:1502.07674, lines 786-1074, and their specialization to Zagier's
-recurrence, lines 1167-1370. A generating-polynomial coefficient identity supplies the
-matching Stirling recurrence; descending induction on the cycle count finishes.
+Proof: the transposition and reflection bijections on plane permutations of R. X. F. Chen and
+C. M. Reidys, "Plane permutations and applications to a result of Zagier–Stanley and distances
+of permutations" (arXiv:1502.07674), specialized as in their proof of Zagier's result, give a
+recurrence for these counts. A coefficient identity for generating polynomials supplies the
+matching recurrence for the Stirling numbers, and descending induction on the number of cycles
+finishes the proof.
 
 ## Sources
 
-- R. Cori and G. Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem [Zagier], lines 351-359, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Hetyei/hetyei2.tex>, quoting D. Zagier.
+- Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem 4 (quoting D. Zagier), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Hetyei/hetyei2.pdf>.

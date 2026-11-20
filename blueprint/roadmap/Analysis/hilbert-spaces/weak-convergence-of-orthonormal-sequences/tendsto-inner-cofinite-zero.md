@@ -1,4 +1,4 @@
-# Fourier coefficients along an orthonormal family tend to `0`
+# Fourier coefficients along an orthonormal family tend to $0$
 
 Let $H$ be an inner product
 space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $(v_i)_{i \in \iota}$ be an orthonormal

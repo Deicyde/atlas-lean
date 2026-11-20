@@ -1,6 +1,3 @@
 # Shift-invariant countably valued functions are a.s. constant under ergodicity
 
-A measurable function with countable values that is invariant under all shifts is almost
-surely constant under an ergodic probability measure. See also Mathlib's `ErgodicSMul` and
-`aeconst_of_forall_preimage_smul_ae_eq`, which state ergodicity of a group action through
-a.e.-invariant sets.
+Let a group $G$ act on a set $E$, and let $\mu$ be a probability measure on the configuration space $\{0, 1\}^E$ that is [ergodic](../../../random-fields/translation-invariance-and-ergodicity-of-random/is-ergodic.md) for the [shift action](../../../random-fields/translation-invariance-and-ergodicity-of-random/shift.md) of $G$. Let $B$ be a countable measurable space in which singletons are measurable, and let $f : \{0, 1\}^E \to B$ be measurable and invariant under every shift: $f(g \cdot \omega) = f(\omega)$ for all $g \in G$ and all configurations $\omega$. Then there is $k \in B$ with $\mu(f = k) = 1$.

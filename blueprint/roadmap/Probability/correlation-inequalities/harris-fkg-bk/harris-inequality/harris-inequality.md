@@ -1,6 +1,11 @@
 # Harris inequality
 
-The **Harris inequality** (Harris 1960): under the product Bernoulli(`p`) measure on a finite
-configuration space, increasing events are positively correlated,
-`P_p(A) * P_p(B) ≤ P_p(A ∩ B)`. No measurability hypothesis is needed since `E` is finite.
-See also `IsUpperSet.le_card_inter_finset` (Harris–Kleitman, counting form).
+Let $E$ be a finite set, $p \in [0,1]$, and let $\mathbb{P}_p$ be the Bernoulli product measure on $\{0,1\}^E$, under which the coordinates are independent and each equals $1$ with probability $p$. If $A, B \subseteq \{0,1\}^E$ are increasing events, then
+
+$$\mathbb{P}_p(A)\,\mathbb{P}_p(B) \le \mathbb{P}_p(A \cap B).$$
+
+No measurability hypothesis is needed since $E$ is finite. The counting form of the same statement is the Harris–Kleitman inequality for upper sets of a finite Boolean lattice.
+
+## Sources
+
+- T. E. Harris, *A lower bound for the critical probability in a certain percolation process*, Proc. Cambridge Philos. Soc. 56 (1960), 13–20.

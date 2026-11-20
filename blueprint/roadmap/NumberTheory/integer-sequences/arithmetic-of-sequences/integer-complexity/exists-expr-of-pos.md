@@ -5,4 +5,4 @@ $n > 0$ there is an expression whose value is $n$.
 
 ## Sources
 
-- C2/C4 existence side.
+- Juan Arias de Reyna, *Complexity of Natural Numbers*, arXiv:2111.03345 (2021), definition of the complexity $\lVert n \rVert$ as the least number of ones needed to write $n$ with $1$, $+$, $\times$ and parentheses.

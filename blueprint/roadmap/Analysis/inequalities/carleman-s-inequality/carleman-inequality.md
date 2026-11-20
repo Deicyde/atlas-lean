@@ -1,5 +1,8 @@
 # Carleman's inequality
 
-Carleman's inequality (sharp form): for a summable nonnegative sequence,
-the series of geometric means of the initial products is summable and bounded
-by `e` times the series of the terms.
+Sharp form. If $a_n \ge 0$ for all $n$ and $\sum_n a_n$ converges, then the series of geometric means
+$G_n = (a_0 \cdots a_n)^{1/(n+1)}$ converges and
+
+$$
+\sum_{n=0}^{\infty} G_n \le e \sum_{n=0}^{\infty} a_n .
+$$

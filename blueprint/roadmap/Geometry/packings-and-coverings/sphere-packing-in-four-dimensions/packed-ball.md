@@ -6,4 +6,4 @@ $\{x \in \mathbb{R}^4 : \|x - c\| \le r\}$, boundary included.
 
 ## Sources
 
-- CE2003, the packed closed ball at a center, including its boundary.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009: the packed closed ball at a center, including its boundary.

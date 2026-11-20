@@ -1,4 +1,3 @@
 # Law of the Gaussian sample mean
 
-For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)` with `n ≥ 1`, the sample mean has the law
-`N(μ, v / n)`.
+Let $n \ge 1$, $\mu \in \mathbb{R}$ and $v \ge 0$. If $X_1, \dots, X_n$ are i.i.d. $N(\mu, v)$, the sample mean $\bar X = \frac1n \sum_i X_i$ has the law $N(\mu, v/n)$ (a point mass at $\mu$ when $v = 0$).

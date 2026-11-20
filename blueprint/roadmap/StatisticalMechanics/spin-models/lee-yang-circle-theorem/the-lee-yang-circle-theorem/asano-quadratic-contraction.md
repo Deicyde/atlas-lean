@@ -1,4 +1,4 @@
 # Asano's lemma in one variable
 
-Asano's lemma in one variable: if `A + E t + D t²` has no zero in the open unit disk, then
-neither has `A + D t`.
+Let $A, E, D, z \in \mathbb{C}$ with $|z| < 1$. If $A + E t + D t^2 \ne 0$ for every $t \in \mathbb{C}$ with
+$|t| < 1$, then $A + D z \ne 0$.

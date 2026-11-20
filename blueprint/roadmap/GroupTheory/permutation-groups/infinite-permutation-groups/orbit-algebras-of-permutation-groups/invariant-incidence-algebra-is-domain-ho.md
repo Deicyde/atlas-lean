@@ -1,4 +1,4 @@
-# Cameron's conjecture on invariant incidence algebras holds (Pouzet)
+# Cameron's conjecture on invariant incidence algebras holds
 
 Let $\Omega$ be an
 infinite set and let $G$ be a group of permutations of $\Omega$ all of whose orbits are infinite.

@@ -1,8 +1,8 @@
 # Correctness of BUILD
 
-**Correctness of BUILD** (Aho, Sagiv, Szymanski & Ullman 1981; Semple & Steel 2003,
-Section 6.4): a set `R` of triplets on a nonempty `S`, none of the degenerate form `xx|x` (which
-no tree displays and no cut detects), is displayed by a rooted binary phylogenetic tree on `S`
-iff for every subset `S'` of at least two taxa the Aho graph of `R` on `S'` is disconnected.
-BUILD splits along the components and recurses; the converse direction builds the tree this
-way, splitting along any cut.
+Let $S$ be a nonempty finite set and $R$ a finite set of [triplets](triplet.md) $xy \mid z$ with $x, y, z \in S$ and $z \ne x$ or $z \ne y$. Then some [binary hierarchy](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md) on $S$ [displays](displays-triplet.md) every triplet of $R$ if and only if, for every $S' \subseteq S$ with $|S'| \ge 2$, the Aho graph of $R$ on $S'$ [has a cut](has-aho-cut.md) (Aho, Sagiv, Szymanski & Ullman 1981; Semple & Steel 2003).
+
+## Sources
+
+- A. V. Aho, Y. Sagiv, T. G. Szymanski and J. D. Ullman, *Inferring a tree from lowest common ancestors with an application to the optimization of relational expressions*, SIAM J. Comput. 10 (1981), 405–421.
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

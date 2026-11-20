@@ -1,3 +1,3 @@
 # Positivity of binomial probabilities
 
-Binomial probabilities are positive on `{0, …, n}` for `0 < p < 1`.
+For $0 < p < 1$ and natural numbers $i \le n$, the [binomial probability](binom-pmf.md) satisfies $B(i \mid n, p) > 0$.

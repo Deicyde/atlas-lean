@@ -1,4 +1,4 @@
-# An orthonormal sequence tends weakly to `0`
+# An orthonormal sequence tends weakly to $0$
 
 Let $H$ be a Hilbert space over
 $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $(v_n)_{n \in \mathbb{N}}$ be an orthonormal

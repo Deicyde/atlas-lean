@@ -1,3 +1,3 @@
-# At equilibrium the de novo fraction is `s_het`
+# At equilibrium the de novo fraction equals the heterozygote selection coefficient
 
-**At equilibrium the de novo fraction is `s_het`.**
+For real numbers $s \ne 0$ and $U \ne 0$, the [de novo fraction](de-novo-fraction.md) at the equilibrium frequency $x = U/s$ is $s$.

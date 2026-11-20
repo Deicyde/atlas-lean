@@ -1,3 +1,4 @@
 # The empty context is semantically balanced
 
-Empty interface balance is not a completion assertion about private work.
+The empty ownership context is semantically balanced (vacuously, every owned endpoint has an
+equivalent dual peer).

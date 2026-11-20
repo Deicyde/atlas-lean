@@ -1,3 +1,4 @@
 # Boundary edges of a finite volume
 
-The edges touching `Λ` that are not inside `Λ`.
+For $d \in \mathbb{N}$ and a finite set $\Lambda \subseteq \mathbb{Z}^d$, these are the nearest-neighbour bonds with exactly one
+endpoint in $\Lambda$ (touching $\Lambda$ but not inside it).

@@ -1,5 +1,3 @@
 # Jukes–Cantor transition matrix as a stochastic matrix
 
-The Jukes–Cantor transition matrix over a branch with `0 ≤ μ * t`, packaged as a
-`StochasticMatrix` on the four states `Fin (3 + 1)` so that the finite Markov-chain API
-(matrix powers, stationarity, detailed balance) applies to it.
+For real $\mu, t$ with $\mu t \ge 0$, the matrix $(P_{ij}(t))_{i,j}$ of [Jukes–Cantor transition probabilities](jc-prob.md) is a stochastic matrix on the four bases: its entries are nonnegative and its rows sum to $1$.

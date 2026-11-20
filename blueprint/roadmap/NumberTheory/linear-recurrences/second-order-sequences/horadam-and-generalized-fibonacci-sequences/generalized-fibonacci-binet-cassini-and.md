@@ -14,4 +14,4 @@ hypotheses; in particular the mixed identity holds for all integers $m$ and $n$.
 
 ## Sources
 
-- Abdelhak Taane, Ihab-Eddine Djellas, and Mohammed Mekkaoui, "Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers," Journal of Integer Sequences 29 (2026), Article 26.2.5, preliminary-results lemma, lines 192–200, https://cs.uwaterloo.ca/journals/JIS/VOL29/Djellas/djellas7.tex
+- Abdelhak Taane, Ihab-Eddine Djellas, and Mohammed Mekkaoui, "Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers," Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 2, Lemma 4, https://cs.uwaterloo.ca/journals/JIS/VOL29/Djellas/djellas7.html

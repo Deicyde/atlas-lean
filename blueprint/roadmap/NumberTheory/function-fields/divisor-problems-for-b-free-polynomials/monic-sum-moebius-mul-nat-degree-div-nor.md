@@ -4,9 +4,11 @@ Let
 $F$ be a finite field with $q$ elements and let $\mu$ be the Möbius function of $F[T]$. For every
 monic $f \in F[T]$,
 
-$$\sum_{g \text{ monic},\ g \mid f} \frac{\mu(g) \deg g}{q^{\deg g}} =
+$$
+\sum_{g \text{ monic},\ g \mid f} \frac{\mu(g) \deg g}{q^{\deg g}} =
 \prod_{P \mid f} \left(1 - \frac{1}{q^{\deg P}}\right)
-\sum_{P \mid f} \frac{\deg P}{1 - q^{\deg P}},$$
+\sum_{P \mid f} \frac{\deg P}{1 - q^{\deg P}},
+$$
 
 where in the product and in the sum $P$ runs over the monic irreducible divisors of $f$.
 
@@ -14,4 +16,4 @@ The product is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient function 
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 7; `Φ` as defined after Theorem 3.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 7; $\Phi$ as defined after Theorem 3.

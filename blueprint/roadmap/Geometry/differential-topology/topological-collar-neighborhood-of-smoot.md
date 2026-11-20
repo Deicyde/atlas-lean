@@ -10,4 +10,4 @@ Proof: Local chart collars are glued by Brown's external-collar construction, fo
 
 ## Sources
 
-- M. Hirsch, Differential Topology, GTM 33; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Kosinski, Differential Manifolds; Lean states topological collar `IsOpenEmbedding` corollary for `EuclideanHalfSpace` model.
+- M. Hirsch, Differential Topology, GTM 33; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Kosinski, Differential Manifolds.

@@ -6,4 +6,4 @@ positions $(x, y, 1)$ of the set $B$ in the source, with the third coordinate dr
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4 (the set `B`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4 (the set $B$).

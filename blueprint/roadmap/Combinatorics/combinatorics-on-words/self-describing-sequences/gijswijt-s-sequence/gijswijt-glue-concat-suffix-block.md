@@ -7,4 +7,4 @@ empty; that is, $T^{(m)}_t$ occurs in $B^{(m)}_t$ only as a suffix.
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 4 (`jis-2025-25.4.6-lem-4`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 4 (`jis-2025-25.4.6-lem-4`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

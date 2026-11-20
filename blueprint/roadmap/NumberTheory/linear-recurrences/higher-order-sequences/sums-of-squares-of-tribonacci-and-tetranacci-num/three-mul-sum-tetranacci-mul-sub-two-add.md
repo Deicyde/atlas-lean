@@ -7,9 +7,9 @@ integer $m$. Then for every natural number $n$,
 $$3 \sum_{k=1}^{n} Q(k)\bigl(Q(k-2) + Q(k-3)\bigr) = \bigl(Q(n+1) - Q(n-1)\bigr)^2 -
 \bigl(Q(1) - Q(-1)\bigr)^2 - Q(n-2)\bigl(Q(n) + Q(n-3)\bigr) + Q(-2)\bigl(Q(0) + Q(-3)\bigr).$$
 
-The boundary terms contain $Q(n) + Q(n-3)$ and $Q(0) + Q(-3)$, with the sign given by the
-paper's telescoping calculation.
+The source prints the last boundary term as $Q(-2)\bigl(Q(0) - Q(-3)\bigr)$; the telescoping
+calculation in its proof gives $Q(-2)\bigl(Q(0) + Q(-3)\bigr)$, the form stated above.
 
 ## Sources
 
-- Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Lemma 2.
+- Karol Gryszka, *A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared*, INTEGERS 25 (2025), Article A110, Lemma 2.

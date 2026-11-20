@@ -13,4 +13,4 @@ $\sum_{n \ge 0} B_n^{(\alpha)}(x) t^n / n! = \left(t / (e^t - 1)\right)^{\alpha}
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex, lines 99-112.
+- Redha Chellal, Farid Bencherif, and Mohamed Mehbali, *An Identity for Generalized Bernoulli Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.11.2, Section 1, equations (1) and (2), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.html>.

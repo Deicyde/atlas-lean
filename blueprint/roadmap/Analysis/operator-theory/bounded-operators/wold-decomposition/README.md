@@ -8,7 +8,7 @@
 - [Orthogonality of pushed-forward wandering vectors](inner-pow-wandering.md)
 - [Orthogonality of pushed-forward wandering vectors, symmetric form](inner-pow-wandering-2.md)
 
-## Complete
+## Wold decomposition and the residual subspace
 
 - [Wandering subspace and range are complementary](is-compl-wandering.md)
 - [One-step Wold splitting into wandering vector plus range](exists-wandering-add-range.md)

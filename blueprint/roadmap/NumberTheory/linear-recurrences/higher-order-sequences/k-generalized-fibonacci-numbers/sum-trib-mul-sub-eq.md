@@ -9,4 +9,4 @@ $$\sum_{j=0}^{n} T_j \bigl(Q_{n-j} - P_{n-j}\bigr) =
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 11.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Corollary 11.

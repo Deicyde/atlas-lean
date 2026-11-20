@@ -1,4 +1,3 @@
 # Additive doubling bound for $-\log Z$ of the free $q = 2$ FK model
 
-The additive doubling bound for `u = -log Z` of the free `q = 2` FK model along the doubling
-boxes `K_j = 2^{j+1} - 1`, in every dimension `d ≥ 1`.
+For every $d \ge 1$ and $t \in \mathbb{R}$, the [additive doubling bound along $K_j = 2^{j+1} - 1$](agl-additive-doubling-bound.md) holds at $t$.

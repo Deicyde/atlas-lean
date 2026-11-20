@@ -7,4 +7,4 @@ belongs to $\mathrm{NP}^O$.
 
 ## Sources
 
-- T. Baker, J. Gill, and R. Solovay, "Relativizations of the P =? NP question", SIAM Journal on Computing 4 (1975), 431-442 (oracles separating NP from coNP); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 3 (relativization).
+- T. Baker, J. Gill, and R. Solovay, "Relativizations of the P =? NP question", SIAM Journal on Computing 4 (1975), 431-442 (oracles separating NP from coNP); S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 3 (relativization).

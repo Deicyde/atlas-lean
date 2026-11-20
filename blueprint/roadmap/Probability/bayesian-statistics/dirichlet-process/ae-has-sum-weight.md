@@ -1,4 +1,3 @@
 # Random stick-breaking weights sum to one almost surely
 
-If the expected leftover stick `∏_{j<k} (1 - E[βⱼ])` tends to `0`, the pieces sum to `1`
-almost surely.
+For a [stick-breaking process](stick-breaking-process.md) on a probability space $(\Omega, \mu)$, if $\prod_{j<k} (1 - \mathbb{E}[\beta_j]) \to 0$ as $k \to \infty$, then $\mu$-almost surely $\sum_{k \ge 0} \pi_k = 1$.

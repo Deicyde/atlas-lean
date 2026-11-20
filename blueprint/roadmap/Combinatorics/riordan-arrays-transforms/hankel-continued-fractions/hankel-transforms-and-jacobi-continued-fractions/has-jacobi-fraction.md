@@ -12,9 +12,6 @@ $$
 \sum_{n} a_n x^n = \cfrac{\mu_0}{1 - \alpha_0 x - \cfrac{\beta_1 x^2}{1 - \alpha_1 x - \cdots}}.
 $$
 
-This records only the continued fraction identities, not Heilermann's formula for the Hankel
-determinants of $a$.
-
 ## Sources
 
-- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," JIS 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117.
+- Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, Section 1 (Jacobi continued fractions and Heilermann's formula), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.pdf>.

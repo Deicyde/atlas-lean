@@ -8,4 +8,4 @@ $$\sum_{\nu=1}^{n} 2^\nu \left( \binom{n+k-\nu-1}{k-1} - \binom{n+k-\nu-1}{n-1} 
 
 ## Sources
 
-- Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 3.
+- Horst Alzer and Man Kam Kwong, *Ramanujan and a Combinatorial Identity Involving Harmonic Numbers*, Journal of Integer Sequences 29 (2026), Article 26.4.8, Lemma 6.

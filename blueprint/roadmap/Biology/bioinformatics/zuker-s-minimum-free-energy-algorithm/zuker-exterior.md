@@ -1,5 +1,7 @@
 # Zuker exterior-loop recursion
 
-The exterior-loop recursion on the prefix `[0, len)`: `W(0) = 0` and
-`W(len + 1) = min (W(len), min_{i ≤ len} W(i) + V(i, len + 1 - i))` (the last base is unpaired,
-or closes an exterior branch `(i, len)`).
+With $V$ from [Zuker's recursion](zuker-vw.md), put $W(0) = 0$ and
+
+$$W(n + 1) = \min\Bigl(W(n),\ \min_{0 \le i \le n} \bigl(W(i) + V(i, n + 1 - i)\bigr)\Bigr):$$
+
+the last base of the prefix of length $n + 1$ is unpaired or closes an exterior branch $(i, n)$.

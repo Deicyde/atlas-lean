@@ -7,7 +7,9 @@ $1$ when $h = 0$), and read $\rho_j^{-1}$ as $0$ when $\rho_j = 0$; let $|P| = q
 $P \ne 0$ and $|0| = 0$; and put $y = (\rho_j^{-1})^{\deg P}$, with $\deg 0$ read as $0$. Then
 $K(P, h, j)$ equals
 
-$$\frac{1 - y}{|P|\,(1 - y) + 1},$$
+$$
+\frac{1 - y}{|P|\,(1 - y) + 1},
+$$
 
 read as $0$ when the denominator vanishes.
 

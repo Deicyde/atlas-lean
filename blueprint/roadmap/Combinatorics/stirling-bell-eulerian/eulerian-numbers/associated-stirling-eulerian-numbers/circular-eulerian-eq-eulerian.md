@@ -12,4 +12,4 @@ $C_n(x) = \sum_{m=0}^{n} C_{n,m} x^m$ and $A_{n-1}(x) = \sum_{m=0}^{n-1} A_{n-1,
 
 ## Sources
 
-- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 5 (`jis-2025-25.5.7-thm-5`).
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 5.

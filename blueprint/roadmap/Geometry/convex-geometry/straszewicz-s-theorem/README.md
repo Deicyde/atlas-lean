@@ -9,7 +9,7 @@
 - [Directional derivative in direction zero](dir-deriv-zero.md)
 - [Opposite directional derivatives have nonnegative sum](dir-deriv-add-neg-nonneg.md)
 
-## Support
+## Support functions and Gateaux points
 
 - [Support function](supp-func.md)
 - [The support function of a compact set is attained](supp-func-attain.md)
@@ -22,12 +22,12 @@
 - [Lipschitz bound on directional derivatives of a support function](dir-deriv-supp-func-bound.md)
 - [Mazur's theorem for support functions](dense-gateaux.md)
 
-## Gateaux Exposed
+## Unique maximizers and exposed points
 
 - [A maximizer bounds the directional derivative of the support function from below](maximizer-dir-deriv-ge.md)
 - [Maximizers at a Gateaux point of the support function are unique](gateaux-unique-maximizer.md)
 - [A unique maximizer of a linear functional is an exposed point](unique-maximizer-exposed.md)
 
-## Straszewicz Main
+## The theorem
 
 - [Straszewicz's theorem](straszewicz-theorem.md)

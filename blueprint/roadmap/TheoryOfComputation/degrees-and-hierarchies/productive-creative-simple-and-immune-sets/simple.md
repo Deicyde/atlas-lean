@@ -5,4 +5,4 @@ and its complement $\{n \mid \neg P(n)\}$ is immune.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 5.3.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

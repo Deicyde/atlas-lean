@@ -9,4 +9,4 @@ fraction with zero numerator and zero denominator being read as $0$.
 
 ## Sources
 
-- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, definition of `Li_k(g; (β, γ); z)`.
+- Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, definition of $\mathrm{Li}_{\mathbf{k}}(g; (\beta, \gamma); z)$.

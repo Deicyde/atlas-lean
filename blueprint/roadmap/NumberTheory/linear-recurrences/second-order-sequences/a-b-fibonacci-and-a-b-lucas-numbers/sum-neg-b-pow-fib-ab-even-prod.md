@@ -8,4 +8,4 @@ $$\sum_{i=0}^{n} (-b)^{n-i} F_{2i} = F_n F_{n+1}.$$
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Corollary 11.
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Corollary 11.

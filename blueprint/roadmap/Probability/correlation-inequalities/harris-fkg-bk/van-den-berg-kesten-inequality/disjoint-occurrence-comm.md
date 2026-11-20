@@ -1,3 +1,3 @@
 # Disjoint occurrence is symmetric
 
-Disjoint occurrence is symmetric: `A □ B = B □ A`.
+Let $E$ be a set and $A, B \subseteq \{0,1\}^E$. Then $A \mathbin{\square} B = B \mathbin{\square} A$.

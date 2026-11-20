@@ -1,4 +1,3 @@
 # Every reduction source has an unguarded output
 
-Every reduction needs an unguarded output in its source, even when
-communication is private or structural congruence is used arbitrarily.
+If $P \to Q$ is a [reduction](../the-calculus-syntax-substitution-structural-cong/step.md) of the π-calculus, then $P$ has an [unguarded output](has-unguarded-output.md), even when the communication is on a private channel or structural congruence is used.

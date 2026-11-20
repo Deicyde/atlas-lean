@@ -1,3 +1,4 @@
 # Semantic advancement preserves compatibility
 
-Actual compatible source retains semantic duality after the exact update.
+Let $\Delta$, $\Xi$ be ownership contexts such that $\Delta$ advances semantically to $\Xi$. If
+$\Delta$ is semantically compatible, then so is $\Xi$.

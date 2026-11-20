@@ -1,3 +1,3 @@
 # Duality preserves and reflects protocol tree equivalence
 
-Duality both preserves and reflects equivalence, not only one direction.
+For all protocols $S$, $T$: $\overline{S} \simeq \overline{T}$ if and only if $S \simeq T$.

@@ -18,7 +18,7 @@
 - [Uniform law on the unit square](unit-square-uniform-law.md)
 - [Beardwood–Halton–Hammersley constant](beardwood-halton-hammersley-constant.md)
 - [The notation $\beta_2$](untitled.md)
-- [Notation C₁₂ for the BHH constant](c.md)
+- [Notation $C_{12}$ for the BHH constant](c.md)
 - [Statement of the Beardwood–Halton–Hammersley theorem](unit-square-bhhtheorem.md)
 - [Statement of the Beardwood–Halton–Hammersley upper bound](bhh1959-upper-bound.md)
 - [Statement of Steinerberger's upper bound](steinerberger2015-improved-upper-bound.md)

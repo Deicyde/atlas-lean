@@ -5,7 +5,9 @@ $k \ge 1$. For $m \ge 1$ let $S_m$ be the additive submonoid of $\mathbb{N}$ gen
 $m^k, (m+1)^k, (m+2)^k, \ldots$, and let $\tau(S_m)$ be its conductor, the least natural number
 $c$ such that every $j \ge c$ lies in $S_m$. Then for every integer $n \ge 1$,
 
-$$\tau(S_n) \le 2^k \, \tau(S_{\lceil n/2 \rceil}) + (2^k - 1)(2n)^k.$$
+$$
+\tau(S_n) \le 2^k \, \tau(S_{\lceil n/2 \rceil}) + (2^k - 1)(2n)^k.
+$$
 
 ## Sources
 

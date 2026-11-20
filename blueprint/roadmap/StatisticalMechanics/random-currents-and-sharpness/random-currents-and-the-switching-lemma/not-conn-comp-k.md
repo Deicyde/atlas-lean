@@ -1,3 +1,4 @@
 # Vertices not connected to a root through a multigraph edge set
 
-The vertices not connected to `o` using edges of `m` in the multigraph `ends`.
+Let $V$ be a finite set and $\iota$ a finite index set with an endpoint map $i \mapsto \mathrm{ends}(i)$ to unordered pairs of $V$ (a multigraph). For $m \subseteq \iota$ and $o \in V$, these are the vertices not [connected](conn-k.md) to $o$ through $m$; $o$ is
+never among them.

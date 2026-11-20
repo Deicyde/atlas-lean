@@ -1,4 +1,3 @@
 # Duality mapping is nonempty
 
-The duality mapping is nonempty at every point: take a Hahn–Banach norming
-functional and scale it by `‖x‖`.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a normed space over $\mathbb{K}$. For every $x \in E$, the [duality mapping](duality-mapping.md) $J(x)$ is nonempty: scale by $\|x\|$ a norming functional of $x$ given by the Hahn–Banach theorem.

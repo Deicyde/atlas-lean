@@ -1,3 +1,4 @@
 # Elementary Itô integral vanishes at time zero
 
-The elementary Itô integral vanishes at time `0`.
+For every [elementary integrand](elementary-integrand.md) $H$ and every real process $B$, the [elementary Itô
+integral](ito-integral.md) at time $0$ is $0$.

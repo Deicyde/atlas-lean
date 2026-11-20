@@ -1,3 +1,3 @@
 # Admixture proportions are at most one
 
-Admixture proportions are at most `1`.
+In every [admixture graph](admixture-graph.md) and for all nodes $X, Y$, the admixture proportion satisfies $a(X, Y) \le 1$.

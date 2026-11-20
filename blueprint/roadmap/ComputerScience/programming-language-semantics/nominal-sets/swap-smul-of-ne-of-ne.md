@@ -1,3 +1,3 @@
 # Transposition fixes atoms other than the swapped pair
 
-A transposition fixes every atom distinct from its two swapped atoms.
+Let $\mathbb{A}$ be a set of atoms. For atoms $a, b, c$ with $c \ne a$ and $c \ne b$, the [transposition](swap.md) $(a\ b)$ fixes $c$.

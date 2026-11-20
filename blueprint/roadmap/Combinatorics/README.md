@@ -7,7 +7,9 @@ runs from [zero-sum problems](additive-combinatorics/zero-sum-subset-sums/README
 [sumsets and inverse theorems](additive-combinatorics/sumsets-inverse-theorems/README.md), from the
 Cauchy–Davenport–Chowla theorem to the polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$ of Gowers, Green, Manners
 and Tao, to [Sidon sets and difference sets](additive-combinatorics/sidon-sets-difference-sets/README.md) and
-[progressions in dense sets](additive-combinatorics/progressions-dense-sets/README.md), with Szemerédi's theorem.
+[progressions in dense sets](additive-combinatorics/progressions-dense-sets/README.md), with Szemerédi's theorem and
+the [Gowers uniformity norms](additive-combinatorics/progressions-dense-sets/gowers-uniformity-norms/README.md) that
+control progression counts.
 [Ramsey theory](ramsey-theory/README.md) has the theorems of Ramsey, van der Waerden and Schur, the density and
 infinitary Hales–Jewett theorems, and Hindman's finite sums theorem.
 

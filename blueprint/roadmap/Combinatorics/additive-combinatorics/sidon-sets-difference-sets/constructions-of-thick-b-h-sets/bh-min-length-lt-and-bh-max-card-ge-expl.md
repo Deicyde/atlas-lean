@@ -9,4 +9,4 @@ $R_h(n) \ge n^{1/h} - 2^{44} n^{154/(155h)}$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 7 (`jis-2024-24.1.2-thm-7`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 7 (`jis-2024-24.1.2-thm-7`).

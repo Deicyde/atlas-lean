@@ -11,4 +11,4 @@ $\int_0^\infty f(\rho x) / f(x)\,dx = 1/(1-\rho)$ for every real $\rho$ with $0 
 
 ## Sources
 
-- AMR-022-2032, Hayman - Research Problems in Function Theory (2018), Problem 2.32 (https://arxiv.org/abs/1809.07200, source labels 2.6 and 2.6', A. Renyi, St. Vincze).
+- AMR-022-2032, W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), Problem 2.32 (https://arxiv.org/abs/1809.07200, source labels 2.6 and 2.6', A. Renyi, St. Vincze).

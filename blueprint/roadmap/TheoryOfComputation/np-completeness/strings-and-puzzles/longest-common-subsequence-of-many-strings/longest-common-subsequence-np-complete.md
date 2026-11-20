@@ -6,4 +6,4 @@ polynomial-time many-one reduction.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), LONGEST COMMON SUBSEQUENCE; D. Maier, "The complexity of some problems on subsequences and supersequences" (1978).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), LONGEST COMMON SUBSEQUENCE; David Maier, "The complexity of some problems on subsequences and supersequences" (1978).

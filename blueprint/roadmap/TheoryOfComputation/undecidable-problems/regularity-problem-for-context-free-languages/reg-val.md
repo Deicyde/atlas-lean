@@ -1,7 +1,7 @@
 # Languages assigned to the nonterminals of the regularity grammar
 
 Let $g$ be an encoded
-context-free grammar over a finite alphabet $T$ with decidable equality, let $L(g)$ be its
+context-free grammar over an alphabet $T$ with decidable equality, let $L(g)$ be its
 language and $L_g(n)$ the language $g$ generates from nonterminal $n$. Over the alphabet
 $T \sqcup \{\#, 0, 1\}$ (the letters of $T$, a separator $\#$ and two bits $0$ and $1$), write
 $\bar u$ for a word $u$ over $T$ read in this alphabet. This assigns to each $m \in \mathbb{N}$

@@ -1,4 +1,3 @@
 # Compatible clusters are nested or disjoint
 
-For the sides not containing a fixed taxon `a`, compatibility is being nested or disjoint:
-splits seen from a root are clusters.
+Let $a \in X$ and $A, B \subseteq X$ with $a \notin A$ and $a \notin B$. Then $A$ and $B$ are [compatible](compatible.md) if and only if $A \subseteq B$, $B \subseteq A$ or $A \cap B = \emptyset$.

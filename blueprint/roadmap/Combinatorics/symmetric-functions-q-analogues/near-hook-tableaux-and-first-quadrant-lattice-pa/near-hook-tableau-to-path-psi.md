@@ -12,4 +12,4 @@ heart, the cell in row $1$ and column $1$, and $2$ is then an entry of the arm o
 
 ## Sources
 
-- L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (eq:psi).
+- Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (4).

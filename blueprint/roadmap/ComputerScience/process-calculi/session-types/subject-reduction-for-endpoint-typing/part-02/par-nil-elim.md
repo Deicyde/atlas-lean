@@ -1,4 +1,4 @@
 # Removing a parallel nil preserves endpoint typing
 
-Removing a parallel nil reattaches exactly its completed ownership;
-no active capability is silently dropped.
+Let $n$ be a natural number, $\Delta$ an ownership context and $p$ a process. If $\Delta \vdash_n p
+\mid \mathbf{0}$, then $\Delta \vdash_n p$.

@@ -6,4 +6,4 @@ $m^{(2:1)}(K_2)$, the least total at which every game is an N-game, does not exi
 
 ## Sources
 
-- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting Fiorini, Lind, Woldar, and Wong (2021).
+- Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on $K_3$ and $C_4$*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting Fiorini, Lind, Woldar, and Wong (2021).

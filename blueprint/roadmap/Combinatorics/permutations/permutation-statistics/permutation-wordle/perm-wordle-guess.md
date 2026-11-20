@@ -5,8 +5,8 @@ $\{0, \dots, m-1\}$ for every $m$, and let $\pi$ be a permutation of $\{0, \dots
 guesses $\gamma_1, \gamma_2, \dots$ of permutation Wordle with strategy $S$ and secret $\pi$ are
 the maps from $\{0, \dots, n-1\}$ to itself defined recursively: $\gamma_1$ is the identity, and
 $\gamma_{r+1}$ is the guess that one round of the game with strategy $S$ and secret $\pi$
-produces from $\gamma_r$. The sequence is indexed from $0$: its term at index $r$ is
-$\gamma_{r+1}$.
+produces from $\gamma_r$. Equivalently, the sequence $r \mapsto \gamma_{r+1}$, for $r \ge 0$,
+starts at the identity and applies one round of the game at each step.
 
 ## Sources
 

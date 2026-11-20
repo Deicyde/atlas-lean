@@ -14,4 +14,4 @@ $L^p$ bound for every $p > 1$.
 
 ## Sources
 
-- Lehto (1965): `‖B‖ₚ ≥ p* - 1` for all `1 < p`.
+- Lehto (1965): $\|B\|_p \ge p^* - 1$ for all $1 < p$.

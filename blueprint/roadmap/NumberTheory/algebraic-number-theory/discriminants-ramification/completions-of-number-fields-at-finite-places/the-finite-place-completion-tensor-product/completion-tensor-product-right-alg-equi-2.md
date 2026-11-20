@@ -11,4 +11,4 @@ the image of $y$ in $L_w$.
 
 ## Sources
 
-- ATLAS N265, Theorem 13.5, the coordinate law for pure tensors.
+- ATLAS NumberTheoryI, Theorem 13.5 (the coordinate law for pure tensors).

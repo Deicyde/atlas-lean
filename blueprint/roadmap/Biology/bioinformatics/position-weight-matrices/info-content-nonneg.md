@@ -1,4 +1,3 @@
 # Information content is nonnegative
 
-**Information content is nonnegative** (Gibbs' inequality) for a column distribution and a
-positive background distribution.
+If $p$ and $q$ are distributions on $A$ and $q(b) > 0$ for every $b$, then the [information content](info-content.md) satisfies $\mathrm{IC}(p \,\|\, q) \ge 0$.

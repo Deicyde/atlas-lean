@@ -7,4 +7,4 @@ generalized Beatty sequence $V(p, q, r)$, which the paper denotes $V_0(p, q, r)$
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 (definition of `V₀`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 (definition of $V_0$).

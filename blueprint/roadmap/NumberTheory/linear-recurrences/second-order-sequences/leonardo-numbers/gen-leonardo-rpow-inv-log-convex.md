@@ -1,4 +1,4 @@
-# Log-convexity of the n-th roots of generalized Leonardo numbers
+# Log-convexity of the $n$-th roots of generalized Leonardo numbers
 
 Let $k \ge 1$ be an
 integer and let $L_{k,n}$ be the generalized Leonardo numbers. Then the sequence

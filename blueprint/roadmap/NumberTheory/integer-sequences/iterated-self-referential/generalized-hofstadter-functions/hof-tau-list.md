@@ -6,4 +6,4 @@ letters $a$ of $w$, where $\tau_k(k) = k\,1$ and $\tau_k(i) = i + 1$ for every l
 
 ## Sources
 
-- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.2.
+- Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3, Section 1.3.

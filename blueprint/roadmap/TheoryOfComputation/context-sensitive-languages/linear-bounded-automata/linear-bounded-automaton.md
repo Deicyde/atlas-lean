@@ -1,10 +1,12 @@
 # Linear bounded automaton
 
-A **linear bounded automaton**: a nondeterministic Turing machine whose
-tape is the input word. The transition function gives, for a state, the
-symbol under the head (`none` for a blank cell), and the boundary tag of
-the head position, the finite set of possible next states, symbols to
-write (`none` for a blank), and head moves. The boundary tag is what lets
-the machine detect the ends of its tape: without it the model could not
-recognize general context-sensitive languages. A move that would take
-the head off the tape is not a step.
+Let $Q$ and $\Gamma$ be sets. A linear bounded automaton with state set $Q$ and tape alphabet $\Gamma$
+consists of an initial state $q_0 \in Q$, an accepting state $q_{\mathrm{acc}} \in Q$, and a transition
+function $\delta$ that assigns to each state $q$, each tape symbol $x$ (a letter of $\Gamma$ or the blank)
+and each boundary tag $\beta$ (middle, left, right or both) a finite set $\delta(q, x, \beta)$ of triples
+$(q', x', d)$ of a next state, a symbol to write (a letter or the blank) and a head move (left, stay or
+right).
+
+It is a nondeterministic Turing machine whose tape is the input word: the boundary tag of the head
+position lets it detect the ends of its tape, and a move that would take the head off the tape is not a
+step.

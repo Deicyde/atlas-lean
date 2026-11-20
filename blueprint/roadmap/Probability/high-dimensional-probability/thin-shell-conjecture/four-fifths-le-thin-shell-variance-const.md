@@ -8,4 +8,4 @@ identity covariance.
 
 ## Sources
 
-- Klartag and Lehec, arXiv:2507.15495v1, Introduction.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Introduction.

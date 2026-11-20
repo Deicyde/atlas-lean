@@ -6,4 +6,4 @@ many-one reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), 3-SAT with bounded occurrences; C. A. Tovey, "A simplified NP-complete satisfiability problem" (1984).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), 3-SAT with bounded occurrences; Craig A. Tovey, "A simplified NP-complete satisfiability problem" (1984).

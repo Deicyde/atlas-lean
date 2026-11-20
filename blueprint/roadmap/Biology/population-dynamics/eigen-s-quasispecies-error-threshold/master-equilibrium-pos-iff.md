@@ -1,3 +1,3 @@
 # Error threshold
 
-For `σ > 1`, the interior equilibrium is positive iff `σ Q > 1`.
+For $\sigma > 1$ and every real $Q$, the [interior equilibrium](master-equilibrium.md) $x^* = (\sigma Q - 1)/(\sigma - 1)$ is positive if and only if $\sigma Q > 1$.

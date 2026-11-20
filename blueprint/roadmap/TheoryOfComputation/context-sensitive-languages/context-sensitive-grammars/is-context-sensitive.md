@@ -1,6 +1,8 @@
 # Context-sensitive grammar
 
-A grammar is context-sensitive when every production has a
-nonterminal on its left side (so the left side is nonempty and not
-terminal-only) and no production shrinks. The standard `S → ε`
-exception is not used here: the `aⁿbⁿcⁿ` grammar has `n ≥ 1`.
+An unrestricted grammar $G$ with terminal set $T$ and nonterminal set $N$ is context-sensitive if every
+production $\ell \to r$ of $G$ satisfies two conditions: $\ell$ contains at least one nonterminal (in
+particular $\ell$ is nonempty), and $|\ell| \le |r|$.
+
+There is no exception allowing a production $S \to \varepsilon$, so the language of such a grammar never
+contains the empty word.

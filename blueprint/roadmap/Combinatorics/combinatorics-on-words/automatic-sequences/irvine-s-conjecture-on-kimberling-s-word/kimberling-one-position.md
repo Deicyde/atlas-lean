@@ -6,4 +6,4 @@ $n$-th smallest index $j \ge 1$ with $k_j = 1$; by convention $A_0 = 0$.
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 8 (the sequence `A_n`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 8 (the sequence $A_n$).

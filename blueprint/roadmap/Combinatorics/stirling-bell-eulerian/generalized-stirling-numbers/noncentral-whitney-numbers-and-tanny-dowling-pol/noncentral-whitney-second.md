@@ -9,4 +9,4 @@ $$W_{m,a}(n + 1, k + 1) = W_{m,a}(n, k) + ((k + 1) m - a) \, W_{m,a}(n, k + 1).$
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.tex>, recurrence underlying the Tanny-Dowling polynomial in equation (6).
+- Mahid M. Mangontarum and Norlailah M. Madid, *On Noncentral Tanny-Dowling Polynomials and Generalizations of Some Formulas for Geometric Polynomials*, Journal of Integer Sequences 24 (2021), Article 21.2.4, the triangular recurrence (16), <https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.pdf>.

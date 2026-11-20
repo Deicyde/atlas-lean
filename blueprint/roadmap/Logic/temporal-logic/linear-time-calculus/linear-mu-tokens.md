@@ -1,11 +1,9 @@
 # Token-list encoding of linear μ-calculus formulas
 
-A polynomial-size token-list encoding of linear μ-calculus formulas over
-`ℕ` atoms, used for the complexity statements in `WantedExt`. Each connective
-contributes one tag token (`Nat.pair` of a small tag with `0`), and each atom
-or variable contributes one token `Nat.pair tag value`, whose binary size is
-`O(log value)`. The canonical bitstring encoding of a `List ℕ` delimits each
-token, so the bitstring for a formula has length linear in the number of
-connectives plus the total binary size of its atoms: `next^d (atom 0)` is
-encoded by exactly `d + 1` tokens, unlike its Cantor-paired `linearMuCode`,
-whose binary length is exponential in `d`.
+A token-list encoding of linear μ-calculus formulas with atoms in $\mathbb{N}$, of polynomial size. With
+the pairing function $\langle a, b\rangle$ of the pairing code, each connective contributes one
+token $\langle k, 0\rangle$ for a small tag $k$, and each atom or variable with index $v$ one token
+$\langle k, v\rangle$, of binary size $O(1 + \log(v + 1))$. Written as a bit string in which each
+token is delimited, the encoding of a formula has length linear in the number of its syntax nodes
+plus the total binary size of its atom labels and variable indices. For example $\bigcirc^d p_0$ is
+encoded by $d + 1$ tokens, whereas the binary length of its pairing code is exponential in $d$.

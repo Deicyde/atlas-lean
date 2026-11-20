@@ -1,4 +1,4 @@
-# One round's factor is at most `exp (-2 γ²)`
+# One round's factor is at most $e^{-2\gamma^2}$ under a uniform edge
 
 For real numbers $\varepsilon$ and $\gamma$
 with $\gamma \ge 0$ and $\varepsilon \le 1/2 - \gamma$, we have

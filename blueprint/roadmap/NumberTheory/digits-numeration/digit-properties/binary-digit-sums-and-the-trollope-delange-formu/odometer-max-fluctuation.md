@@ -12,4 +12,4 @@ $|\mathcal{S}(t \cdot l_n(x)) - t \cdot \mathcal{S}(l_n)|$".
 
 ## Sources
 
-- Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, Section 2.2 (definition of `φ_n` and `R_n`), and *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3 (definition of the normalization factor `R_n`).
+- Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, arXiv:1801.03120, Section 1 (definition of $\varphi_n$ and $R_n$), and *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 4 (definition of the normalization factor $R_n$).

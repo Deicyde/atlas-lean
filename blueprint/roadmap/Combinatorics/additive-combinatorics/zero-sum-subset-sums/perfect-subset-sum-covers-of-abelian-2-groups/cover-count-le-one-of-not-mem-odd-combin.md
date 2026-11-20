@@ -10,4 +10,4 @@ perfect $1$-cover of $G$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 16 (`jis-2025-25.7.8-lem-16`). The paper's "nonzero" hypothesis is the `i = 1` case of `hx`; distinctness needs no finiteness, and "`m = n`" is `Nat.card G = 2 ^ m`.
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 16 (`jis-2025-25.7.8-lem-16`). The paper's "nonzero" hypothesis is the case $i = 1$ of the odd-combination condition; distinctness needs no finiteness of $G$, and the paper's "$m = n$" is $|G| = 2^m$.

@@ -1,3 +1,3 @@
 # Endpoint distinct from both service triggers
 
-Session endpoints are physically distinct from BOTH declared shared triggers.
+A name $b$ is fresh for the triggers when $b \ne \mathrm{c}_{710}$ and $b \ne \mathrm{c}_{711}$.

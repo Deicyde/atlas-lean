@@ -1,3 +1,3 @@
 # An endpoint key differs from its peer
 
-Opposite roles cannot collide, even on one physical name.
+For every endpoint $e = x^{r}$, $\bar e \ne e$: the endpoints $x^{\bar r}$ and $x^{r}$ are distinct.

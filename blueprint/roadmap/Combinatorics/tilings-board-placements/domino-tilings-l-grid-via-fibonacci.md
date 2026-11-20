@@ -12,4 +12,4 @@ equations hold by definition and the content is the Cassini-type identity.
 
 ## Sources
 
-- Roberto Tauraso, "A New Domino Tiling Sequence," Journal of Integer Sequences 7 (2004), Article 04.2.3, Lemma (Section 2, equations Lformula and Lcassini), lines 200–221, https://cs.uwaterloo.ca/journals/JIS/VOL7/Tauraso/tauraso3.tex
+- Roberto Tauraso, "A New Domino Tiling Sequence," Journal of Integer Sequences 7 (2004), Article 04.2.3, Lemma 2.1, equations (2) and (3), <https://cs.uwaterloo.ca/journals/JIS/VOL7/Tauraso/tauraso3.pdf>.

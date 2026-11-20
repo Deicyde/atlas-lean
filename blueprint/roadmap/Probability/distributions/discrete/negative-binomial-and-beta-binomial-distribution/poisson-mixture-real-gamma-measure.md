@@ -1,4 +1,9 @@
 # Greenwood–Yule
 
-The Poisson mixture over a Gamma rate of shape `a > 0` and rate `b > 0`
-is negative binomial with size `a` and mean `a / b`.
+For $a, b > 0$ and $k \in \mathbb{N}$, the [mixed Poisson mass](poisson-mixture-real.md) over the gamma law
+$\Gamma(a, b)$ with shape $a$ and rate $b$ is the [negative binomial mass](neg-binomial-real.md) with
+size $a$ and mean $a/b$: $p_{\Gamma(a, b)}(k) = \mathrm{NB}(k; a, a/b)$.
+
+## Sources
+
+- M. Greenwood and G. U. Yule, *An inquiry into the nature of frequency distributions representative of multiple happenings*, Journal of the Royal Statistical Society 83 (1920), 255–279.

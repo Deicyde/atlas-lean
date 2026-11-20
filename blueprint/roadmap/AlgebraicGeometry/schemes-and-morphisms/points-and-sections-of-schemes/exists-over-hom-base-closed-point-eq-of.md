@@ -1,4 +1,6 @@
-# Closed points of finite-type schemes over algebraically closed fields
+# Closed points of schemes locally of finite type over an algebraically closed field are rational
 
-A closed point of a scheme of finite type over an algebraically
-closed field lifts to a point over the base.
+Let $k$ be an algebraically closed field and $X$ a scheme locally of finite type over $k$.
+Every closed point $x$ of $X$ is $k$-rational: there is a section
+$z : \operatorname{Spec} k \to X$ of the structure morphism that sends the closed point of
+$\operatorname{Spec} k$ to $x$.

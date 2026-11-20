@@ -8,4 +8,4 @@ remains of the longer list is then appended in order, each surplus child contrib
 flattening and each surplus key contributing itself. In particular every key of the tree occurs
 in the flattening.
 
-The flattening is computed in linear time by an accumulator-passing auxiliary function.
+It is the accumulating flattening of the tree onto the empty list.

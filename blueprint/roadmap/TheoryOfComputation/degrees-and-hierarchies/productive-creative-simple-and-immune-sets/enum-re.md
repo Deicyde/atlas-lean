@@ -7,4 +7,4 @@ programs is defined at $n$; thus $W_e$ is the domain of $\varphi_e$.
 
 ## Sources
 
-- Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumeration of the partial recursive functions).
+- H. Rogers Jr., *Theory of Recursive Functions and Effective Computability*, McGraw-Hill, 1967 (standard enumeration of the partial recursive functions).

@@ -1,4 +1,6 @@
 # Solution of a coercive variational problem
 
-The solution of the variational problem `B u w = L w` for all `w`,
-obtained from the Lax–Milgram equivalence and the Riesz representation.
+Let $E$ be a real Hilbert space, $B$ a coercive bounded bilinear form on $E$ (there is $C > 0$ with
+$C\|u\|^2 \le B(u, u)$ for all $u$) and $L \in E^*$. The variational solution is the element
+$u \in E$ with $B(u, w) = L(w)$ for all $w \in E$, obtained from the Lax–Milgram theorem and the
+Riesz representation of $L$.

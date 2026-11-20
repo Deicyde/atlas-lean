@@ -9,4 +9,4 @@ Surjectivity of $f$ is neither assumed nor concluded.
 
 ## Sources
 
-- F. S. Beckman and D. A. Quarles Jr., On isometries of Euclidean spaces, Proc. Amer. Math. Soc. 4 (1953) 810–815 original theorem; standard formulation for `ℝ^n, n ≥ 2`.
+- F. S. Beckman and D. A. Quarles Jr., On isometries of Euclidean spaces, Proc. Amer. Math. Soc. 4 (1953) 810–815 original theorem; standard formulation for $\mathbb{R}^n$, $n \ge 2$.

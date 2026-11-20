@@ -8,4 +8,4 @@ integers $n$ and $m$. Then $P(n) \le \lVert n \rVert$ for every positive integer
 
 ## Sources
 
-- Juan Arias de Reyna, "Complexity of Natural Numbers", Proposition 2.
+- Juan Arias de Reyna, *Complexity of Natural Numbers*, INTEGERS 24 (2024), Article A19, Proposition 2.

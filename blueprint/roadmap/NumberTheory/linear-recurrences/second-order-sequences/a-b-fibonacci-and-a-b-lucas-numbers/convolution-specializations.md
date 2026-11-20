@@ -13,4 +13,4 @@ $\sum_{i=1}^{n} (2^{n-i} + 1) F_{2i} = L_{2n+2} - 2^{n+1} - 1$.
 
 ## Sources
 
-- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Corollary 14(b).
+- Emil Daniel Schwab, "Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution", Journal of Integer Sequences 28 (2025), Article 25.1.7, Corollary 14(b).

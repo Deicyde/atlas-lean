@@ -13,4 +13,4 @@ $a \equiv -bp(q - p)^{-1} \equiv -bqp^{-1} \pmod{m}$. The source indexes $H$ by 
 
 ## Sources
 
-- Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Theorem 3 (`jis-2024-24.3.1-thm-3`).
+- Michael P. Knapp, *Fibonacci Generating Functions*, Journal of Integer Sequences 27 (2024), Article 24.3.1, Theorem 3 (`jis-2024-24.3.1-thm-3`).

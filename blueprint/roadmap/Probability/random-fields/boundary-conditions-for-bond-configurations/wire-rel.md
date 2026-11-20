@@ -1,3 +1,3 @@
 # Boundary wiring relation
 
-Both vertices lie on the boundary.
+For a set $V$ and a subset $B \subseteq V$ of boundary vertices, the relation on $V$ that holds for $x, y$ when both lie in $B$.

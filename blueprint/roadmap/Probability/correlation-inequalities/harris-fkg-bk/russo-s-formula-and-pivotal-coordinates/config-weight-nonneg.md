@@ -1,3 +1,3 @@
 # Nonnegativity of the configuration weight
 
-The product weight `configWeight p ω` is nonnegative for `p ∈ [0, 1]`.
+Let $E$ be a finite set and $p \in [0,1]$. For every configuration $\omega \in \{0,1\}^E$ the [Bernoulli product weight](config-weight.md) is nonnegative: $W_p(\omega) \ge 0$.

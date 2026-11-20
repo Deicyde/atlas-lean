@@ -14,7 +14,7 @@ D^{m+1} \, T_q \left( b \, T_\ell - T_{p-1}^{k+1} \, T_{\ell+1} \right) \pmod p.
 $$
 
 The source states this congruence with a power of the unit $D$ whose exponent may be negative;
-here it is multiplied out so that every exponent is nonnegative.
+the statement above multiplies it out so that every exponent is nonnegative.
 
 ## Sources
 

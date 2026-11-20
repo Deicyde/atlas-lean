@@ -7,7 +7,9 @@ degree $n$ over $F$, and $\omega_k(f)$ the number of distinct monic irreducible 
 whose multiplicity is exactly $k$. The $j$-th moment of $\omega_k$ over the $h$-free monic
 polynomials of degree $n$ is the real number
 
-$$\frac{1}{|S_h \cap M_n|} \sum_{f \in S_h \cap M_n} \omega_k(f)^j,$$
+$$
+\frac{1}{|S_h \cap M_n|} \sum_{f \in S_h \cap M_n} \omega_k(f)^j,
+$$
 
 which is $0$ when $S_h \cap M_n$ is empty.
 

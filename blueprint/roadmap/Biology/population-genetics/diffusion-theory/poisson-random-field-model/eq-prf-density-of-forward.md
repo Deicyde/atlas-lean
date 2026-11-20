@@ -1,7 +1,3 @@
-# ODE characterization of the Poisson-random-field density
+# ODE characterization of the Poisson random field density
 
-Let `θ ≠ 0` and let `φ` be
-a density on `(0, 1)` whose weighted density `x (1 - x) φ(x)` extends to a function `F`
-continuous on `[0, 1]`, twice differentiable on `(0, 1)`, solving the stationary forward
-equation `½ F'' - σ F' = 0` there, with boundary normalizations `F(0) = θ` and `F(1) = 0`.
-Then `φ` is the Sawyer–Hartl density on `(0, 1)`.
+Let $\theta$ and $\sigma$ be real, $\varphi$ a real function and $F$ a function continuous on $[0, 1]$ with $F(x) = x(1 - x)\varphi(x)$ for $x \in (0, 1)$, differentiable on $(0, 1)$ with derivative differentiable on $(0, 1)$, such that $\frac{1}{2}F''(x) - \sigma F'(x) = 0$ for every $x \in (0, 1)$, $F(0) = \theta$ and $F(1) = 0$. Then $\varphi(x) = \varphi_{\theta,\sigma}(x)$, the [Poisson random field density](prf-density.md), for every $x \in (0, 1)$.

@@ -1,6 +1,6 @@
 # Onsager's solution of the two-dimensional Ising model
 
-- [Kac-Ward symbol determinant at t = tanh β](ons-symbol-dispersion.md)
+- [Kac–Ward symbol determinant at $t = \tanh\beta$](ons-symbol-dispersion.md)
 - [Continuity of Onsager's pressure at the critical point](continuity-of-onsager-s-pressure-at-the-critical/README.md)
 - [The critical point of the square-lattice Ising model](the-critical-point-of-the-square-lattice-ising-m/README.md)
 - [High-temperature expansion of the Ising partition function](high-temperature-expansion-of-the-ising-partitio/README.md)

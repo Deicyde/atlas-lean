@@ -1,3 +1,3 @@
 # Lower-left corner of a cell as a skeleton vertex
 
-The lower-left corner of a cell of `S`, as a vertex of the skeleton.
+For a finite set $S$ of unit cells and a cell $c \in S$, the lower left corner of $c$, regarded as a vertex of the $1$-skeleton of $S$.

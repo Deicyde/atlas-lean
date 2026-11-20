@@ -1,4 +1,4 @@
 # Soundness of the parsimonious 3-CNF reduction
 
-Satisfaction of the reduced formula implies satisfaction of the original formula under the
-same values of the original variable names.
+For every `start`, an assignment satisfying the parsimonious reduction of a CNF formula
+$\varphi$ to 3-CNF also satisfies $\varphi$.

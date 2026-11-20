@@ -7,4 +7,4 @@ divides the decimal reversal of $k n$.
 
 ## Sources
 
-- Mohamed Ayad and Rachid Bouchenna, "Which Integer Divides the Reverse of Any of Its Multiples?", Proposition 6.
+- Mohamed Ayad and Rachid Bouchenna, *Which Integer Divides the Reverse of Any of Its Multiples?*, INTEGERS 25 (2025), Article A37, Proposition 6.

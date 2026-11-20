@@ -1,4 +1,4 @@
-# Roots in braid groups are unique up to conjugacy (González-Meneses)
+# Roots in braid groups are unique up to conjugacy
 
 For every natural number
 $n$ and every integer $k \ge 1$, if two elements $\alpha, \beta$ of the braid group $B_n$ on $n$

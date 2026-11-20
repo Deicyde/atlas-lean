@@ -41,4 +41,4 @@
 - [Criterion for at least one significant axis](num-significant-pos-iff.md)
 - [Count of significant axes decreases with the threshold](num-significant-antitone.md)
 - [Significant-axis count for decreasing statistics](num-significant-eq-card-of-antitone.md)
-- [Conditional error bound](measure-lt-num-significant-le.md)
+- [Conditional error bound for the count of significant axes](measure-lt-num-significant-le.md)

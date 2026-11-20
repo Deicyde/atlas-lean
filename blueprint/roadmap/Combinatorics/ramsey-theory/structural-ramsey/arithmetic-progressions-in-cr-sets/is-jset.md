@@ -7,4 +7,4 @@ $H \subseteq \mathbb{N}$ such that $a + \sum_{n \in H} f(n) \in A$ for every $f 
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 1.
+- Dibyendu De and Pintu Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 1.

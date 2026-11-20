@@ -5,4 +5,4 @@ in NP has a polynomial-time many-one reduction to SUDOKU.
 
 ## Sources
 
-- T. Yato and T. Seta, "Complexity and completeness of finding another solution and its application to puzzles" (2003).
+- Takayuki Yato and Takahiro Seta, "Complexity and completeness of finding another solution and its application to puzzles" (2003).

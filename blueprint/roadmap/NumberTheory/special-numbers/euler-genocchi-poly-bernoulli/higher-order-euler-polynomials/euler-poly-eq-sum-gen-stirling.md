@@ -8,4 +8,4 @@ coefficients, $2^n E_n(x) = \sum_{k=0}^{n} k! \, \alpha_k \, S(n, k, 2x - 1)$.
 
 ## Sources
 
-- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.2.
+- Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, *Generalizations of Several Explicit Formulas for Euler Polynomials*, INTEGERS 25 (2025), Article A65, Theorem 4.2.

@@ -7,5 +7,5 @@ list of bit symbols), and $i$ and $j$ marks on the clause and literal counters. 
 string from whose front no literal can be decoded (a literal being a self-delimited canonical
 variable code followed by a polarity bit), let $w$, $t$, $b$ be symbol lists,
 $i, j \in \mathbb{N}$ and $v$ a bit. Then from
-$\langle \mathsf{nm}(\mathrm{none}), v \mid r, w, t, b, i, j\rangle$ the tokenizer reaches the
+$\langle \mathsf{nm}(\bot), v \mid r, w, t, b, i, j\rangle$ the tokenizer reaches the
 label $\mathsf{rej}$ within $|r| + 2$ steps.

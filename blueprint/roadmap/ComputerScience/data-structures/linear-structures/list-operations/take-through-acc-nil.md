@@ -1,3 +1,4 @@
 # Accumulator-stopped prefix of the empty list
 
-An empty list has an empty accumulator-stopped prefix.
+For every update map $f$, stopping test $\mathrm{stop}$ and initial accumulator $c$, the
+accumulator-stopped prefix of the empty list is the empty list.

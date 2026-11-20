@@ -6,4 +6,4 @@ constant (the infimum of the areas of universal convex covers) is at most $b$.
 
 ## Sources
 
-- Baez, Bagdasaryan and Gibbs, The Lebesgue universal covering problem (2015).
+- John C. Baez, Karine Bagdasaryan and Philip Gibbs, The Lebesgue universal covering problem, Journal of Computational Geometry 6 (2015), 288–299, arXiv:1502.01251.

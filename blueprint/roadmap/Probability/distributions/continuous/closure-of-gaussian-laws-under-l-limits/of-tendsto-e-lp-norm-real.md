@@ -1,4 +1,5 @@
-# Closure of real Gaussian laws under `L²` limits
+# Closure of real Gaussian laws under $L^2$ limits
 
-If each `X n` is a real Gaussian random
-variable and `X n → Y` in `L²(P)`, then `Y` is Gaussian.
+Let $(\Omega, P)$ be a measure space, $X_n$ real random variables with Gaussian laws under $P$
+(possibly degenerate), and $Y$ an almost everywhere strongly measurable real random variable with
+$\|X_n - Y\|_{L^2(P)} \to 0$. Then $Y$ has a Gaussian law.

@@ -8,10 +8,10 @@ $$\tau(n + 1) \equiv \sum_{17P(r) \le n} (-1)^r \tau_7(n - 17P(r) + 1) \pmod{17}
 
 the sum running over all integers $r$ with $17P(r) \le n$.
 
-The source record prints $\tau_7(s)$ in place of $\tau_7(s + 1)$, where $n = 17P(r) + s$;
+The paper prints $\tau_7(s)$ in place of $\tau_7(s + 1)$, where $n = 17P(r) + s$;
 that version is false at $n = 1$. The shifted index comes from the identity
 $\prod_{m \ge 1} (1 - q^m)^7 (1 - q^{17m}) = \sum_{r, s} (-1)^r \tau_7(s + 1) q^{17P(r) + s}$,
-which follows from Definition 1.1 and is used in the proof.
+which follows from Definition 1 and is used in the proof.
 
 ## Sources
 

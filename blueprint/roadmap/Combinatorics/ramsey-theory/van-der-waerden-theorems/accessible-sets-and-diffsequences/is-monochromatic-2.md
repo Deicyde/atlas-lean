@@ -7,4 +7,4 @@ $i, j < k$.
 
 ## Sources
 
-- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "monochromatic sequence" from the definition of `r`-accessible.
+- Open Problem Garden, *2-accessibility of primes*, http://www.openproblemgarden.org/op/2_accessibility_of_primes: definition of $r$-accessible sets (monochromatic sequences).

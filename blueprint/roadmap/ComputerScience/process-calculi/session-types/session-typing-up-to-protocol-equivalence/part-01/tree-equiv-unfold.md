@@ -1,3 +1,4 @@
-# A protocol is tree-equivalent to its unfolding
+# A protocol is tree-equivalent to its head
 
-One unfolding is semantically equivalent even though its code changes.
+For every protocol $S$, $S \simeq \mathrm{unf}(S)$, where $\mathrm{unf}(S)$ is the head of $S$ (a
+graph cursor unrolled once, other protocols unchanged) and $\simeq$ is tree equivalence.

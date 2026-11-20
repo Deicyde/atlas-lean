@@ -19,4 +19,4 @@ $j > i$ and $0$ otherwise.
 
 ## Sources
 
-- Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Theorem 1 (`jis-2024-24.5.4-thm-1`).
+- Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Theorem 1, equation (5) (`jis-2024-24.5.4-thm-1`).

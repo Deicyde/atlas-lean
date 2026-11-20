@@ -1,4 +1,7 @@
 # Allele frequency of a population in the drift model
 
-The allele frequency of population `X`: the root frequency plus the weighted sum of the
-drift increments of the edges traversed by lineages from `X`.
+In a [drift model](drift-model.md) with root frequency $r$, increments $\delta_e$ and lineage weights $w$, the allele frequency of population $X$ is the function
+
+$$p_X = r + \sum_{e \in E} w(X, e)\, \delta_e$$
+
+on $\Omega$.

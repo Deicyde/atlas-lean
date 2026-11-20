@@ -1,4 +1,4 @@
-# The ratio `k` is tight for FIFO
+# The ratio $k$ is tight for FIFO
 
 Let $k \ge 1$ and let $c$ and $d$ be natural numbers
 with $c < k d$. For every natural number $b$ there is a finite request sequence $\sigma$ over

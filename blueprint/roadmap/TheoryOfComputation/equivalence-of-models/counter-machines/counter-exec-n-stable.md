@@ -7,4 +7,4 @@ equals the state reached after $t$ steps.
 
 ## Sources
 
-- Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
+- M. L. Minsky, *Computation: Finite and Infinite Machines*, Prentice-Hall, 1967, Chapter 11.

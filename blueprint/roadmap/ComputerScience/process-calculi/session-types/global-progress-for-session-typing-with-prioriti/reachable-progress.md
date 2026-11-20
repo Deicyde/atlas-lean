@@ -1,4 +1,5 @@
 # Progress at reachable states of closed ranked networks
 
-Global progress holds at every finite reachable state of a closed ranked
-network. No fairness, eventual liveness or recursive termination is asserted.
+Let $n$ be a natural number and $p$, $q$ processes. If $\emptyset \vdash^{\mathrm{rk}}_n p$ and $q$
+is reachable from $p$ by finitely many (possibly zero) π-calculus reduction steps, then $q \equiv
+\mathbf{0}$ or $q \to r$ for some process $r$.

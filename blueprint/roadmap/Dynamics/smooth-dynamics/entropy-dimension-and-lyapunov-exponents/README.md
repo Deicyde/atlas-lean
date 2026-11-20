@@ -13,3 +13,10 @@
 - [Young's entropy–dimension–Lyapunov formula (planar case)](entropy-dimension-lyapunov.md)
 - [Pesin entropy formula (planar case)](pesin-formula.md)
 - [Margulis–Ruelle inequality (planar case)](margulis-ruelle.md)
+
+## Related topics
+
+- [Kolmogorov–Sinai entropy](../../ergodic-theory/kolmogorov-sinai-entropy/README.md): the general theory
+  of Sinai's entropy (definition in $[0, \infty]$, isomorphism invariance, generator theorem, Bernoulli
+  shifts), of which the real-valued [Kolmogorov–Sinai entropy](kolmogorov-sinai-entropy.md) used on this topic is a
+  variant.

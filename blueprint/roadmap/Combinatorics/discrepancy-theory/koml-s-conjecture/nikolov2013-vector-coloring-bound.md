@@ -8,4 +8,5 @@ where $\lVert \cdot \rVert$ is the Euclidean norm.
 
 ## Sources
 
-- Nikolov, arXiv1301.4039, retained KomlosSDP.tex lines 115-139, Theorem `thm:main`. Positive column dimension is explicit.
+- Aleksandar Nikolov, *The Komlós conjecture holds for vector colorings*, arXiv:1301.4039 (2013), Theorem 1.1.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

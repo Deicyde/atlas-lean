@@ -1,3 +1,5 @@
 # Second moment exponential sum
 
-The second moment sum `S₂(t) = ∑_i w_i a_i² e^{a_i t}`, the derivative of `S₁`.
+Let $I$ be a finite set and $w, a : I \to \mathbb{R}$. The second moment exponential sum is
+
+$$S_2(t) = \sum_{i \in I} w_i\, a_i^2\, e^{a_i t}, \qquad t \in \mathbb{R}.$$

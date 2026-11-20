@@ -1,7 +1,7 @@
 # Profile HMM as an alignment automaton
 
-The profile HMM as an alignment automaton reading alignments of a sequence to the columns
-`[1, …, L]`. The control state is the type of the previous state and the current node (the last
-column consumed); it starts at `(M, 0)`, the begin state. Reading `(some a, some j)` visits `M j`,
-`(some a, none)` visits the insert state of the current node, `(none, some j)` visits `D j`; the
-invalid column `(none, none)` has weight `0`.
+A [profile HMM](profile-hmm.md) with weights in a semiring gives the [alignment automaton](../pair-hidden-markov-models/alignment-automaton.md) reading alignments of a sequence to the [columns](columns.md), whose control states are pairs $(s, k)$ of a state type and the current node, with
+
+- column weights $t_k(s, M)\, e^M_j(a)$ for $(a, j)$, $t_k(s, I)\, e^I_k(a)$ for $(a, -)$, $t_k(s, D)$ for $(-, j)$, and $0$ for $(-, -)$, in control state $(s, k)$;
+- next control states $(M, j)$, $(I, k)$, $(D, j)$ and $(s, k)$ respectively;
+- final weight $\tau(s)$ in control state $(s, k)$.

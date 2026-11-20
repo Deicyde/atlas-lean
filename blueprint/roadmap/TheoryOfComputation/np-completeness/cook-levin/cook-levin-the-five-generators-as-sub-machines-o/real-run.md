@@ -9,6 +9,6 @@ and accept blocks each hold $T$ on the time counter, $H$ on the height counter a
 other counters, and whose init block holds $T$, $|x|$, $m - |x|$ and $H - m$ on its four size
 counters and nothing on the others. Then the host program on the real generators of $E$ for $Y$
 and $a$, started at the init generator's start label with state bit false on $S_0$, reaches its
-final label within the step bound $\mathrm{realB}(E, Y, m, T)$ (the five generators' bounds plus
-five chaining steps), with some state bit and with output stack the dense encoding of the formula
+final label within the [step bound of the host](real-b.md) for $E$, $Y$, $m$, $T$ (the five generators' bounds
+plus five chaining steps), with some state bit and with output stack the dense encoding of the formula
 $\Phi(E, x, Y, a, m, T)$ followed by $o$.

@@ -1,8 +1,8 @@
 # Tree metrics satisfy the four-point condition
 
-**Tree metrics satisfy the four-point condition** (the easy direction of Buneman's
-theorem).
+Every [tree metric](is-tree-metric.md) satisfies the [four-point condition](four-point-condition.md).
 
 ## Sources
 
-- Buneman (1974); Semple & Steel (2003), Theorem 7.2.6.
+- P. Buneman, *A note on the metric properties of trees*, J. Combin. Theory Ser. B 17 (1974), 48–50.
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

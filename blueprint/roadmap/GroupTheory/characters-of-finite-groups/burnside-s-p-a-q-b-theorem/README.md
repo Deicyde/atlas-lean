@@ -15,7 +15,7 @@
 - [Orthogonality of irreducible characters](char-inner-orth.md)
 - [Class function](is-class-fun.md)
 - [Bound on the number of irreducible representations](card-bound.md)
-- [Zimmerman's averaging operator](zimm-op.md)
+- [Averaging operator of a function on a group](zimm-op.md)
 - [The averaging operator of a class function is $G$-equivariant](zimm-op-comm.md)
 - [Class functions orthogonal to all irreducible characters vanish](classfun-eq-zero-of-orth.md)
 - [Expansion of class functions in irreducible characters](classfun-expand.md)

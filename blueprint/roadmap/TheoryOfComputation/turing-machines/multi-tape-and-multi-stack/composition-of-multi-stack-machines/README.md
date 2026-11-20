@@ -19,7 +19,7 @@
 
 - [Assembling the stacks of the composite machine](mk-stk.md)
 
-## Simulating one statement of `M₁` or `M₂`
+## Simulating one statement of $M_1$ or $M_2$
 
 - [Composite label of an $M_1$ label](lab.md)
 
@@ -36,10 +36,10 @@
 
 ## Output length is bounded by input length plus pushes
 
-- [Number of push instructions in a TM2 statement](pushes.md)
+- [Number of push instructions in a multi-stack machine statement](pushes.md)
 - [Push bound of a finite multi-stack Turing machine](push-bound.md)
 
-## Monotonicity of `Polynomial ℕ` evaluation
+## Monotonicity of polynomial evaluation over $\mathbb{N}$
 
 - [Evaluation of a natural-number polynomial is monotone](eval-mono.md)
 
@@ -53,8 +53,8 @@
 - [Intermediate length bound of the composite machine](mid-poly.md)
 - [Time bound of the composite machine](comp-time.md)
 - [The composite machine computes the composite function in time](comp-outputs.md)
-- [The composite polynomial-time TM2 computation](comp-computable.md)
-- [Polynomial-time TM2-computable functions are closed under composition](tm2-computable-in-poly-time-comp.md)
+- [The composite polynomial-time multi-stack computation](comp-computable.md)
+- [Functions computable in polynomial time by multi-stack machines are closed under composition](tm2-computable-in-poly-time-comp.md)
 - [Composition of polynomial-time functions under encodings](comp.md)
 - [Polynomial-time functions are closed under composition](comp-2.md)
 - [P is closed under polynomial-time preimages](comp-mem-p.md)

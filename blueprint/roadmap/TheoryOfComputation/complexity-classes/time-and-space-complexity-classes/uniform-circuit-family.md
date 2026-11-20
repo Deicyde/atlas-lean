@@ -9,4 +9,4 @@ length $n$, the description is computed in space $O(\log n)$.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21 (log-space uniformity); M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Definition 6.21 (log-space uniformity); M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Definition 9.20.

@@ -1,7 +1,7 @@
 # McVean's genealogical model for PCA
 
-McVean's genealogical setting for PCA, taken as the model assumption: random genotypes
-`Z i s` (sample `i`, locus `s`), square integrable, whose expected numbers of pairwise
-differences are `θ` times the expected pairwise coalescence times `coalTime i j` (neutral
-infinite sites, time in units of `2N` generations, `θ` the total scaled mutation rate of the
-`L` loci). For `θ = 0` the coalescence times are not determined by the genotypes.
+Let $\mu$ be a measure on a measurable space $\Omega$ and $\iota$, $S$ finite sets of samples and loci. A genealogical model consists of real random genotypes $Z_{is}$ on $\Omega$, square integrable with respect to $\mu$, a real number $\theta$ and real numbers $t_{ij}$ ($i, j \in \iota$) such that
+
+$$\int d_{ij} \, d\mu = \theta\, t_{ij} \qquad \text{for all } i, j,$$
+
+where $d$ is the [pairwise-difference matrix](pair-diff.md) of the random genotypes. The parameters are arbitrary reals satisfying this relation. When $\mu$ is a probability measure, $\theta \ge 0$ is the scaled mutation rate and the $t_{ij} \ge 0$ are finite expected pairwise coalescence times, it is the neutral infinite-sites relation, taken as an assumption; for $\theta = 0$ the times are not determined by the genotypes.

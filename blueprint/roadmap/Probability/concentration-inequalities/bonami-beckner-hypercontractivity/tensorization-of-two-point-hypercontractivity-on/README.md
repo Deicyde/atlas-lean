@@ -1,7 +1,7 @@
 # Tensorization of two-point hypercontractivity on the uniform cube
 
 - [Uniform expectation on the Boolean cube](bnt-uexp.md)
-- [q-th moment under the uniform measure on the cube](bnt-qnorm-pow.md)
+- [$q$-th moment under the uniform measure on the cube](bnt-qnorm-pow.md)
 - [$L^q$ norm under the uniform measure on the cube](bnt-qnorm.md)
 - [Noise kernel on the Boolean cube](bnt-noise-kernel.md)
 - [Noise operator on the Boolean cube](bnt-noise-op.md)

@@ -6,4 +6,4 @@ are no natural numbers $a \ge 2$ and $m \ge 2$ with $S_n = a^m + 1$ or $S_n = a^
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 3(b).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Proposition 3(b).

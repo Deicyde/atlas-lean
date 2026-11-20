@@ -5,4 +5,4 @@ $C_{61}$ is at most $1/4$.
 
 ## Sources
 
-- Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row `C₆₁ ≤ 1/4`.
+- Atle Selberg, *On the estimation of Fourier coefficients of modular forms*, Proceedings of Symposia in Pure Mathematics 8 (1965), 1–15: Selberg's theorem $\lambda_1(\Gamma) \ge 3/16$, which gives $C_{61} \le 1/4$.

@@ -12,4 +12,4 @@ On the words starting with $0$ or $1$ this is the order $\prec$ of the paper.
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 8 (definition of the total order `≺`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 8 (definition of the total order $\prec$).

@@ -10,4 +10,4 @@ $$\tfrac{1}{3} m (m^2 + 3r - 1) + 1 \le \gamma(N).$$
 
 ## Sources
 
-- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 5.
+- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Journal of Integer Sequences 29 (2026), Article 26.1.5, Proposition 5.

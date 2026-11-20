@@ -20,4 +20,4 @@ are the base-$B$ digits of their Kaprekar image, so $K$ is the Kaprekar map on t
 
 ## Sources
 
-- Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, "Four-Digit Kaprekar Dynamics in Odd Bases", Journal of Integer Sequences 29 (2026), Article 26.4.7, Theorem `thm:structural`, lines 220-230, <https://cs.uwaterloo.ca/journals/JIS/VOL29/Ono/ono3.tex>.
+- Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Theorem 1 (structural classification), <https://cs.uwaterloo.ca/journals/JIS/VOL29/Ono/ono3.tex>.

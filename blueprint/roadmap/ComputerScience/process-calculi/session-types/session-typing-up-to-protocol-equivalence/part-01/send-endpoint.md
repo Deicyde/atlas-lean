@@ -1,3 +1,4 @@
 # Tree equivalence is a congruence for endpoint sending
 
-Payload and continuation congruence do not conflate the two branches.
+For all protocols $P$, $Q$, $S$, $T$ with $P \simeq Q$ and $S \simeq T$, every polarity $r$ and
+every rank $k$, ${!(r,k,P)}.S \simeq {!(r,k,Q)}.T$.

@@ -1,5 +1,10 @@
 # Transition kernel of a stochastic matrix
 
-The transition kernel of a stochastic matrix: `finiteChainKernel P x` is the
-probability measure on `Fin (M + 1)` putting mass `P.prob x j` on each state `j`.
-This is the kernel form of the transition matrix.
+Let $P$ be a [stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+on the states $S = \{0, 1, \dots, M\}$. Its transition kernel $\kappa_P$ from $S$ to $S$ is
+
+$$\kappa_P(x, \cdot) = \sum_{j \in S} P(x, j) \, \delta_j ,$$
+
+the measure on $S$ putting mass $P(x, j)$ on each state $j$. Since the entries are nonnegative
+and the rows sum to $1$, each $\kappa_P(x, \cdot)$ is a probability measure: $\kappa_P$ is a
+Markov kernel, the kernel form of the transition matrix.

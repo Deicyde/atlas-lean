@@ -1,6 +1,3 @@
-# DENTIST-S is exactly `χ²₁` when the reference LD is right
+# DENTIST-S is exactly chi-squared when the reference LD is right
 
-Under the model of
-`map_standardized_eq_gaussianReal` with reference correlation equal to the true correlation
-`ρ` (`ρ ^ 2 < 1`), the DENTIST-S statistic has the `chiSquareMeasure 1` law, for every value
-`λ` of the lead variant's mean.
+Under the hypotheses of the [exact law of the standardized difference](map-standardized-eq-gaussian-real.md) with reference correlation $r = \rho$ and $\rho^2 < 1$, the [DENTIST-S statistic](dentist-s.md) $(z_i - \rho z_c)^2 / (1 - \rho^2)$ has the $\chi^2$ distribution with one degree of freedom under $P$, for every value of $\lambda$.

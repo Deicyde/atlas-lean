@@ -1,3 +1,3 @@
 # Signed sector polynomial with only the $(0,0)$ sector positive
 
-The signed sector sum `ons_spin11` as a polynomial.
+For $L > 2$, the polynomial is $Z_{00}(X) - Z_{10}(X) - Z_{01}(X) - Z_{11}(X)$, where $Z_h(X) = \sum_{F \text{ even},\ [F] = h} X^{|F|}$ are the [sector polynomials](ons-sector-poly.md).

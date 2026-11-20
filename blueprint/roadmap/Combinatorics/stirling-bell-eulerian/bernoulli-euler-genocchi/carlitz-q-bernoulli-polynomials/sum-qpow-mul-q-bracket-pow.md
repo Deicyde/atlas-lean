@@ -1,4 +1,4 @@
-# Sums of $q^{rk} (k)^n$ via Carlitz-type sequences
+# Sums of $q^{rk} [k]^n$ via Carlitz-type sequences
 
 Let $q > 0$ with $q \ne 1$, let
 $[x] = (q^x - 1)/(q - 1)$, and let $r \ge 1$ be a natural number. Let $S_m(x)$

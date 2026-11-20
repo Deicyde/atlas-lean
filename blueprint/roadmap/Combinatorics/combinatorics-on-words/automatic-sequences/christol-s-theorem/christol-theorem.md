@@ -12,4 +12,5 @@ in base $q$.
 
 ## Sources
 
-- Adamczewski--Bell, arXiv:1205.4091v1, lines 260--265: for `q` a positive integral power of the characteristic prime `p`, a series over `F_q` is algebraic over `F_q(t)` iff its coefficient sequence is `p`-automatic.
+- Boris Adamczewski and Jason P. Bell, *On vanishing coefficients of algebraic power series over fields of positive characteristic*, Invent. Math. 187 (2012), 343–393; arXiv:1205.4091, Theorem 1.3 (Christol's theorem: for $q$ a positive integer power of $p$, a power series over $\mathbb{F}_q$ is algebraic over $\mathbb{F}_q(t)$ if and only if its coefficient sequence is $p$-automatic), https://arxiv.org/abs/1205.4091
+- Gilles Christol, *Ensembles presque périodiques $k$-reconnaissables*, Theoretical Computer Science 9 (1979), 141–145.

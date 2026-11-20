@@ -1,4 +1,4 @@
-# Selberg's 3/16 theorem
+# Selberg's $3/16$ theorem
 
 Let $\Gamma$ be a congruence subgroup of
 $\mathrm{SL}(2, \mathbb{Z})$ and let $\lambda$ be a real eigenvalue of the hyperbolic Laplacian
@@ -9,4 +9,4 @@ $(0, 3/16)$: either $\lambda \le 0$ or $\lambda \ge 3/16$.
 
 ## Sources
 
-- Selberg, as recorded in Luo--Rudnick--Sarnak (1995): every eigenvalue of a congruence subgroup in the model is either `0`-side excluded or at least `3/16`; stated here as the absence of eigenvalues in `(0, 3/16)`.
+- Atle Selberg, *On the estimation of Fourier coefficients of modular forms*, Proceedings of Symposia in Pure Mathematics 8 (1965), 1–15, as recorded in Wenzhi Luo, Zeév Rudnick, and Peter Sarnak, *On Selberg's eigenvalue conjecture*, Geometric and Functional Analysis 5 (1995), 387–401: no eigenvalue of a congruence subgroup lies in $(0, 3/16)$.

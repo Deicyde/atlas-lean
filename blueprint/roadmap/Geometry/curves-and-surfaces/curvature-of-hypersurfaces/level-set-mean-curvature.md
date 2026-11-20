@@ -2,7 +2,8 @@
 
 Let $E$ be a finite-dimensional real inner product space,
 $\rho : E \to \mathbb{R}$ and $p \in E$. Write $\nabla\rho(p)$ for the gradient of $\rho$ at $p$,
-$D^2\rho(p)$ for the second derivative of $\rho$ at $p$ (a bilinear form on $E$), and
+$D^2\rho(p)$ for the second derivative of $\rho$ at $p$ (a bilinear form on $E$; by convention
+$0$ when $D\rho$ is not differentiable at $p$), and
 $\Delta\rho(p) = \sum_i D^2\rho(p)(e_i, e_i)$ for a fixed orthonormal basis $(e_i)$ of $E$. The
 mean curvature at $p$ of the level set of $\rho$ through $p$, with respect to the unit normal
 $\nu = \nabla\rho(p) / \|\nabla\rho(p)\|$, is

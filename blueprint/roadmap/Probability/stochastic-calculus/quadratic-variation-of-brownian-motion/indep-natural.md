@@ -1,5 +1,5 @@
 # Increments are independent of the past
 
-For a pre-Brownian motion with measurable
-coordinates, each increment `B t - B s` (`s ≤ t`) is independent of the natural filtration at
-time `s` (a consequence of `IsPreBrownianReal.indepFun_shift`, the weak Markov property).
+Let $B$ be a pre-Brownian motion with measurable coordinates. For all $s \le t$, the increment $B_t - B_s$ is
+independent of the natural filtration $\sigma(B_u : u \le s)$ at time $s$; this is a consequence of the weak
+Markov property.

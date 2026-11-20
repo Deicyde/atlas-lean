@@ -1,3 +1,4 @@
 # Why-not check agrees on a list and its multiset
 
-Checking a list context agrees with checking its multiset coercion.
+A list of propositions consists of why-not propositions `ʔb` if and only if the multiset of its
+entries does.

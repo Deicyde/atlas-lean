@@ -1,4 +1,3 @@
 # Cylinder approximation of events under a finite measure
 
-Every measurable event is approximated by a cylinder event in symmetric difference; the general
-form of `exists_cylinder_symmDiff_lt` (`Ergodicity`).
+Let $E$ be a countable set and $\mu$ a finite measure on $\{0, 1\}^E$. For every measurable event $A$ and every $\varepsilon > 0$ (possibly $\infty$) there is a measurable cylinder event $C$ (determined by finitely many coordinates) with $\mu(C \,\triangle\, A) < \varepsilon$.

@@ -5,4 +5,4 @@ and every decision problem in NP reduces to it by a polynomial-time many-one red
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), BALANCED COMPLETE BIPARTITE SUBGRAPH; D. S. Johnson, "The NP- completeness column" (1987).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), BALANCED COMPLETE BIPARTITE SUBGRAPH; David S. Johnson, "The NP-completeness column: an ongoing guide", Journal of Algorithms 8 (1987).

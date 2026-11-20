@@ -1,8 +1,8 @@
 # Buneman's theorem, converse direction
 
-A symmetric dissimilarity on a finite set that
-vanishes on the diagonal and satisfies the four-point condition is a tree metric.
+Let $X$ be a finite set and $d$ a real function on pairs with $d(x, x) = 0$ and $d(x, y) = d(y, x)$ for all $x, y$. If $d$ satisfies the [four-point condition](four-point-condition.md), then $d$ is a [tree metric](is-tree-metric.md).
 
 ## Sources
 
-- Buneman (1974); Semple & Steel (2003), Theorem 7.2.6.
+- P. Buneman, *A note on the metric properties of trees*, J. Combin. Theory Ser. B 17 (1974), 48–50.
+- C. Semple and M. Steel, *Phylogenetics*, Oxford University Press (2003).

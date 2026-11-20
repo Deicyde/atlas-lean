@@ -9,4 +9,4 @@ perfect covers of a group $K$.
 
 ## Sources
 
-- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 21 (`jis-2025-25.7.8-lem-21`). "`y_1` odd, all other `y_i` even" is read as "exactly one odd `y`" for the unordered set; `y` odd means `y.val` odd; `n ≥ 1` added (`ℤ_{2^{n-1}}`).
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 21 (`jis-2025-25.7.8-lem-21`). "$y_1$ odd, all other $y_i$ even" is read as "exactly one odd $y_i$" for the unordered set; an element of $\mathbb{Z}_{2^n}$ is odd when its representative in $\{0, \dots, 2^n - 1\}$ is odd; $n \ge 1$ is assumed, since the statement involves $\mathbb{Z}_{2^{n-1}}$.

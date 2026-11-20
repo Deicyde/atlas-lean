@@ -1,4 +1,3 @@
 # Onsager integrand of the square-lattice Ising model
 
-The Onsager integrand `cosh² 2β - sinh 2β (cos k₁ + cos k₂)` at inverse temperature `β` and
-momentum `(k₁, k₂)`.
+For $\beta, k_1, k_2 \in \mathbb{R}$, the Onsager integrand is $g_\beta(k_1, k_2) = \cosh^2(2\beta) - \sinh(2\beta)(\cos k_1 + \cos k_2)$.

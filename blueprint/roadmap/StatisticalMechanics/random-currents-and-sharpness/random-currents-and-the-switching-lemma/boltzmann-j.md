@@ -1,3 +1,4 @@
 # Boltzmann weight with couplings
 
-The Boltzmann weight `exp(β ∑_e J_e σ_e)` with couplings `J`.
+Let $G = (V, E)$ be a finite simple graph, $\beta \in \mathbb{R}$ and $J$ real couplings. The Boltzmann weight of a spin configuration $\sigma$ is
+$\exp\bigl(\beta \sum_{\{x, y\} \in E} J_{xy}\, \sigma_x \sigma_y\bigr)$.

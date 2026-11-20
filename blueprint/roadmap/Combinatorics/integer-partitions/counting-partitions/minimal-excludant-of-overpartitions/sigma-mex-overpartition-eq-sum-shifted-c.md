@@ -10,4 +10,4 @@ $$\sigma_r\overline{\mathrm{mex}}(n) = \sum_{k \ge 0,\; rT_k \le n} \overline{p}
 
 ## Sources
 
-- Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Proposition 10.
+- Victor Manuel R. Aricheta and Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Proposition 10.

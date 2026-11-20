@@ -6,4 +6,5 @@ $\sigma_n \in [0, \infty]$ of dimension $n$ satisfies $\sigma_n \le C (\log n)^4
 
 ## Sources
 
-- Klartag and Lehec, GAFA 32 (2022), 1134--1159; catalogue `constants/20a.md`.
+- B. Klartag and J. Lehec, *Bourgain's slicing problem and KLS isoperimetry up to polylog*, Geom. Funct. Anal. 32
+  (2022), 1134–1159; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

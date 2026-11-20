@@ -7,8 +7,6 @@ value of each generator counter, with the scratch counters empty ($\mathrm{Rest}
 $F(\mathrm{CB}) = F(\mathrm{P}) = 0$, $F(\mathrm{Vc}) = V$, $F(\mathrm{Gc}) = g$, $F(c_Z(p)) = Z$
 and $F(c_N(p)) = t$. Suppose $t < N$ and $tg + Z \le V$, the clause kind of $p$ has strictly
 increasing literal offsets, and all its literals at base $tg + Z$ lie below $V$. Then for every
-output $o$ and flag $v$, the counter program of the generator runs in at most
-$\mathrm{bodyB}(n + 2, g, N, V)$ steps from label $b_1(p)$ with flag $v$, counters $F$ and output
+output $o$ and flag $v$, the counter program of the generator runs in at most the [step bound for one loop iteration](body-b.md) for $n + 2, g, N, V$ steps from label $b_1(p)$ with flag $v$, counters $F$ and output
 $o$ to the loop head of $p$ with flag false, counters $F$ and output
-$\mathrm{encodeClause}(\mathrm{denseClause}(V, \mathrm{clits}(tg + Z, p)))$ followed by $o$.
-Here $\mathrm{clits}(tg + Z, p)$ are the literals of the clause kind of $p$ at base $tg + Z$.
+the encoding of the dense clause over $V$ variables whose literals are the [literals](clits.md) of the clause kind of $p$ at base $tg + Z$, followed by $o$.

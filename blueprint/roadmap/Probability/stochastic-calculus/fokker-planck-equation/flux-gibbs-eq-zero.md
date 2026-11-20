@@ -1,4 +1,6 @@
 # The Gibbs density has zero flux
 
-**The Gibbs density has zero flux** under the gradient drift `-∇Ψ`: for differentiable `Ψ`,
-`D ≠ 0` and any constant `c`, `J = -∇Ψ · c e^{-Ψ/D} - D ∇(c e^{-Ψ/D}) = 0`.
+Let $\Psi : \mathbb{R}^n \to \mathbb{R}$ be differentiable, $D \ne 0$ and $c \in \mathbb{R}$. Then under the gradient drift
+$-\nabla \Psi$ the [probability flux](flux.md) of $c\, e^{-\Psi/D}$ vanishes:
+
+$$-\nabla \Psi \cdot c\, e^{-\Psi/D} - D \nabla\bigl(c\, e^{-\Psi/D}\bigr) = 0 .$$

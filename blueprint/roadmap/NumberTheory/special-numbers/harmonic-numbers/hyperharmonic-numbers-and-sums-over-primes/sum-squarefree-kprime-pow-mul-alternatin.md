@@ -60,7 +60,7 @@ The exponent $m(y-2)+1$ of $\log x$ may be negative; the power is then an intege
 The paper prints the second sum of its seventh item,
 $\sum p_{\ell,k}^\alpha (-H_{2\ell}^{(1,2y,1)})^m$, over $p_{\ell,k} \le x$ but gives it the
 asymptotic of a sum over $\ell \le x$, and the version over $p_{\ell,k} \le x$ is its eighth item;
-it is read here as $S_x(f_5)$, a sum over $\ell \le x$, as in Theorem 11.
+the statement above reads it as $S_x(f_5)$, a sum over $\ell \le x$, as in Theorem 11.
 
 ## Sources
 

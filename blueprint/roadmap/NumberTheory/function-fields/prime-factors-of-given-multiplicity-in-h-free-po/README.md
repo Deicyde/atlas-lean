@@ -1,4 +1,4 @@
-# Prime factors of given multiplicity in h-free polynomials
+# Prime factors of given multiplicity in $h$-free polynomials
 
 - [Monic polynomials of fixed degree](fixed-degree-monic.md)
 - [Membership in $M_n$](mem-fixed-degree-monic-iff.md)
@@ -28,7 +28,7 @@
 - [Function field Mertens constant](function-field-mertens-constant.md)
 - [Series for the function field Mertens constant](function-field-mertens-constant-eq.md)
 - [Moments of $\omega_k$ over $h$-free polynomials](h-free-moment.md)
-- [Explicit formula for the moments over h-free polynomials](h-free-moment-eq.md)
+- [Explicit formula for the moments over $h$-free polynomials](h-free-moment-eq.md)
 - [The prime sum $T_h$](h-free-omega-one-sum.md)
 - [Unfolding the prime sum $T_h$](h-free-omega-one-sum-eq.md)
 - [The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials](h-free-omega-one-sq-sum.md)

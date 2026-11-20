@@ -7,4 +7,4 @@ $p$-tile of length $l$ (in any color) starting at cell $1$.
 
 ## Sources
 
-- Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 3.
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, Section 3.

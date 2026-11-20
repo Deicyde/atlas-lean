@@ -29,7 +29,7 @@
 - [Divisibility of Lucas sums when $P = 1$](lucas-u-sum-dvd-iff-of-p-eq-one.md)
 - [Integral averages extend to least common multiples](lucas-all-averages-integral-lcm.md)
 - [Integral averages when $n$ divides $Q$](lucas-all-averages-integral-of-dvd-q.md)
-- [Non-integer period average of a Lucas sequence when $\gcd(n, a, b) > 1$](not-dvd-lucas-u-sum-of-gcd.md)
+- [Non-integral averages of a Lucas sequence when $\gcd(n, P, Q) > 1$](not-dvd-lucas-u-sum-of-gcd.md)
 - [Lucas sums and powers of two for even $P$ and odd $Q$](lucas-u-sum-odd-of-even-p.md)
 - [Powers of two when $P \equiv 2$ and $-Q \equiv 1 \pmod 4$](lucas-average-set-two-pow-of-p-two-mod-f.md)
 - [Lucas sums not divisible by $2^k$ when $P \equiv 0$ and $-Q \equiv 1 \pmod 4$](lucas-u-sum-not-dvd-of-p-zero-mod-four.md)

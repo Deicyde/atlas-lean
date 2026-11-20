@@ -1,3 +1,4 @@
-# SAT decision on undecodable input (moved alias)
+# SAT rejects bit strings that encode no CNF formula
 
-Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`).
+For every bit string $x$ on which the decoder of the binary encoding of CNF formulas fails, the
+decision problem SAT rejects $x$.

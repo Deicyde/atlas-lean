@@ -6,4 +6,4 @@ $|t| \ge 2$ and $\sigma \ge 1 - \frac{1}{5.69693 \log |t|}$, we have $\zeta(s) \
 
 ## Sources
 
-- Kadiri's refined constant as cited in Dusart 2016; this is the region required by `dusart2016_tail_theorem`.
+- Kadiri's refined constant, as cited in Dusart (2016).

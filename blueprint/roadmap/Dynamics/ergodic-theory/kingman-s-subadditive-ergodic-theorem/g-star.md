@@ -1,4 +1,5 @@
 # Upper limit of a normalized subadditive cocycle
 
-The upper limit `limsup_n X n x / n` in `EReal`. The map `T` is a parameter only so that
-the notation records the cocycle's base map.
+For functions $X_n : \Omega \to \mathbb{R}$ ($n \ge 0$), the upper limit of $X_n/n$ is
+
+$$g^*(\omega) = \limsup_{n \to \infty} \frac{X_n(\omega)}{n} \in [-\infty, \infty].$$

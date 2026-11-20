@@ -16,4 +16,8 @@ and $-\lambda_2$, taken to be $0$ when $\lambda_1 = \lambda_2$.
 
 ## Sources
 
-- L.-S. Young, *Dimension, entropy and Lyapunov exponents*, Ergodic Theory Dynam. Systems 2 (1982), 109–124. Knill, *Some fundamental theorems in mathematics*, §103. Problem `entropy_dimension_lyapunov` of the lean-eval benchmark.
+- Lai-Sang Young, *Dimension, entropy and Lyapunov exponents*, Ergodic Theory Dynam. Systems 2 (1982), no. 1,
+  109–124, DOI 10.1017/s0143385700009615.
+- Oliver Knill, *Some Fundamental Theorems in Mathematics* (2023), §103 (Diffeomorphisms; the theorem of the section),
+  <https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf>.
+- Problem `entropy_dimension_lyapunov` of the lean-eval benchmark.

@@ -11,9 +11,9 @@ from $O$ to the lines $BC$, $CA$, $AB$. If a point $I$ and a real number $r > 0$
 $\langle I - B, n_a \rangle = \langle I - C, n_b \rangle = \langle I - A, n_c \rangle = r$
 (so $I$ is the incenter and $r$ the inradius), then $x + y + z = R + r$.
 
-The hypotheses $r > 0$ and that $O$ lies in the affine span of $A, B, C$ are not used; the
-general form of the theorem drops them.
+The conclusion holds without the hypotheses $r > 0$ and $O$ in the affine span of $A, B, C$;
+the general form of the theorem drops them.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius). Statement ID: carnot-inradius-s1.
+- https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius).

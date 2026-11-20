@@ -7,3 +7,7 @@ multiset with $k_i$ copies of each letter $i$ and whose descent number, one more
 number of descents, equals $p$.
 
 For multiplicities $2, 2$, its nonzero values are $1, 4, 1$ at $p = 1, 2, 3$.
+
+## Sources
+
+- Askar Dzhumadil'daev and Damir Yeliussizov, *Power Sums of Binomial Coefficients*, Journal of Integer Sequences 16 (2013), Article 13.1.4, Section 2, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Yeliussizov/dzhuma6.pdf>.

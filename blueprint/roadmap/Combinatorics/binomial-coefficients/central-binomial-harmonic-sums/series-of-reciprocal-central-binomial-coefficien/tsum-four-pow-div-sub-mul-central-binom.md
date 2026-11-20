@@ -11,7 +11,7 @@ $$
 \Bigl(\frac12 \sum_{k=1}^{n} \frac{4^k s_{n-k}}{k \binom{2k}{k}}\Bigr) x^n.
 $$
 
-The source prints the range $|x| < 4$. The statement here is restricted to $0 < x < 1$, inside
+The source prints the range $|x| < 4$. The statement above is restricted to $0 < x < 1$, inside
 the range $|x| < 1$ that the source's Theorem 1 gives in this case; since
 $\binom{2k}{k} \le 4^k$, the series diverges for $x \ge 1$.
 

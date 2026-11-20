@@ -1,7 +1,7 @@
 # LogDet (paralinear) distance
 
-The **LogDet (paralinear) distance** of a joint distribution matrix `F`
-(`F i j = ℙ(X = i, Y = j)`): `-log |det F| + (log det Π_X + log det Π_Y) / 2`, where the
-diagonal marginal matrices have determinants `∏ i, ∑ j, F i j` and `∏ j, ∑ i, F i j`. It is a
-distance only when `det F ≠ 0` and the marginals are positive; otherwise the value is Lean's
-totalized logarithm (`log 0 = 0`).
+For a real square matrix $F$ indexed by a finite set (a joint distribution matrix $F_{ij} = \Pr(X = i, Y = j)$), the LogDet distance is
+
+$$d_{LD}(F) = -\log|\det F| + \frac12\Bigl(\log \prod_i \sum_j F_{ij} + \log \prod_j \sum_i F_{ij}\Bigr),$$
+
+with the conventions $\log 0 = 0$ and $\log x = \log|x|$ for $x < 0$. It is a distance when $\det F \ne 0$ and the marginals are positive.

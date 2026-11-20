@@ -7,4 +7,4 @@ $\Delta_4 \le \frac{\pi^2}{2} \cdot \frac{13126}{100000}$.
 
 ## Sources
 
-- CE2003 Table 3, new center-density upper bound `0.13126`, converted exactly; displayed `0.647742…` is only an approximation.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, Table 3: new center-density upper bound $0.13126$, converted exactly; the displayed $0.647742\ldots$ is only an approximation.

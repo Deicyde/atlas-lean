@@ -10,4 +10,4 @@ endpoints $i = 0$ and $i = n - m$.
 
 ## Sources
 
-- Cereceda, arXiv:2401.13696v4, lines 132-142.
+- José L. Cereceda, *Formulas involving Cauchy polynomials, Bernoulli polynomials, and generalized Stirling numbers of both kinds*, Axioms 14 (2025), 746, arXiv:2401.13696v4, equation (4).

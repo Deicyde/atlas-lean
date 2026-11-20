@@ -12,4 +12,4 @@ Nondegeneracy also excludes the double-root case $\alpha = \beta$.
 
 ## Sources
 
-- Chris Smyth, *The Terms in Lucas Sequences Divisible by Their Indices*, Journal of Integer Sequences 13 (2010), Article 10.2.4, invoking Somer's Theorem 1, lines 632–634, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex>.
+- Chris Smyth, *The Terms in Lucas Sequences Divisible by Their Indices*, Journal of Integer Sequences 13 (2010), Article 10.2.4, Section 7 (proof of Theorem 22), invoking Theorem 1 of Lawrence Somer, *Divisibility of terms in Lucas sequences by their subscripts*, Applications of Fibonacci Numbers, Vol. 5 (1993), 515–525, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex>.

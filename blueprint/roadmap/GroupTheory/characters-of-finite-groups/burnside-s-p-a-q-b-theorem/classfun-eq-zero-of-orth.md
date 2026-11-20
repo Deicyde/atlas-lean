@@ -11,4 +11,4 @@ Then $f = 0$.
 
 ## Sources
 
-- Zimmerman, Theorem 5 (core step).
+- J.-P. Serre, *Linear Representations of Finite Groups*, Graduate Texts in Mathematics 42, Springer, 1977, Section 2.5, Proposition 6 and the proof of Theorem 6.

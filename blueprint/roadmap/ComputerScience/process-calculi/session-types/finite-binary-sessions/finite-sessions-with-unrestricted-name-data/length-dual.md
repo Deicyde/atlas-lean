@@ -1,3 +1,4 @@
 # Dual session types have equal length
 
-Opposite endpoint roles have the same number of actions.
+For every finite binary session type $S$, the dual has the same length: $|\overline{S}| = |S|$,
+where the length counts the send and receive actions of a protocol.

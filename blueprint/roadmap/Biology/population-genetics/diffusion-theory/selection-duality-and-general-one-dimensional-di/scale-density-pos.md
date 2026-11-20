@@ -1,3 +1,3 @@
 # Positivity of the scale density
 
-The scale density is positive.
+For all real functions $b$ and $a$ and every real $y$, the [scale density](scale-density.md) satisfies $\psi(y) > 0$.

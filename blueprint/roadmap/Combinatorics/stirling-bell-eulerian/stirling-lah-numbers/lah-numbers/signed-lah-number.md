@@ -6,4 +6,4 @@ $k > n$.
 
 ## Sources
 
-- sign convention from Toufik Mansour, Matthias Schork, and Mark Shattuck, *The Generalized Stirling and Bell Numbers Revisited*, Journal of Integer Sequences 15 (2012): https://cs.uwaterloo.ca/journals/JIS/VOL15/Schork/schork2.tex.
+- Sign convention from Toufik Mansour, Matthias Schork, and Mark Shattuck, *The Generalized Stirling and Bell Numbers Revisited*, Journal of Integer Sequences 15 (2012), Article 12.8.3, Example 7, <https://cs.uwaterloo.ca/journals/JIS/VOL15/Schork/schork2.pdf>.

@@ -1,5 +1,8 @@
 # The corrected binomial power factor tends to one
 
-The product of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` with the Gaussian correction
-`exp((k - n/2)² / (n/2))`, evaluated at `k = localDMLIndex x n`, tends to `1` as `n → ∞`.
-This is the key analytic estimate behind the local DeMoivre–Laplace limit theorem.
+Let $x \in \mathbb{R}$ and let $k = k_n = \lfloor n/2 + x \sqrt{n}/2 \rfloor$ be the [lattice
+index](local-dmlindex.md). Then
+
+$$\frac{n^n}{k^k\, (n - k)^{n-k}\, 2^n} \cdot \exp\Big(\frac{(k - n/2)^2}{n/2}\Big) \to 1 \qquad (n \to \infty).$$
+
+This is the key analytic estimate behind the local De Moivre–Laplace theorem.

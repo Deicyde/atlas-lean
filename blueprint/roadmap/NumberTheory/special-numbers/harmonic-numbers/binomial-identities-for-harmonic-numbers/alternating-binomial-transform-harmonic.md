@@ -11,10 +11,9 @@ $$
 \frac{(-1)^n}{s+n} \binom{s+n-1}{n} - \frac{1}{s+n}.
 $$
 
-The generalized binomial coefficients are written as Gamma-function quotients, and the
-assumption that $s$ is not a negative integer is the source condition
+The assumption that $s$ is not a negative integer is the source condition
 $s \in \mathbb{C} \setminus \mathbb{Z}^-$.
 
 ## Sources
 
-- Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Corollary 3, lines 220–226, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex
+- Necdet Batır, *Finite Binomial Sum Identities with Harmonic Numbers*, Journal of Integer Sequences 24 (2021), Article 21.4.3, Corollary 3, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.html>.

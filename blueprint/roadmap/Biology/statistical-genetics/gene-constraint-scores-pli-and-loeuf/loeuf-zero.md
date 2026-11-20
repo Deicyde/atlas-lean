@@ -1,3 +1,7 @@
-# LOEUF of a gene with no observed LoF variants
+# LOEUF of a gene with no observed loss-of-function variants
 
-**LOEUF of a gene with no observed LoF variants** is `log 20 / E`.
+For every real number $E$,
+
+$$\mathrm{LOEUF}(E, 0) = \frac{\log 20}{E},$$
+
+with the convention $x/0 = 0$, where $\mathrm{LOEUF}$ is defined on [its page](loeuf.md).

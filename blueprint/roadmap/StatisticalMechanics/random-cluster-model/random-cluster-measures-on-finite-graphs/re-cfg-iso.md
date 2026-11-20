@@ -1,5 +1,3 @@
 # Pull-back of an edge configuration along a vertex bijection
 
-The pull-back of a configuration `ω` on the edges of `W` along `σ : V ≃ W`: the edge `e` is
-open in `reCfgIso σ ω` iff `σ e` is open in `ω`. For `V = W` it is `reCfg`
-(`fvs_reCfgIso_eq_reCfg`).
+For finite sets $V, W$, a bijection $\sigma : V \to W$ and a configuration $\omega$ on $W$, the pulled-back configuration on $V$ is $\omega^\sigma(e) = \omega(\sigma(e))$, where $\sigma(\{x, y\}) = \{\sigma(x), \sigma(y)\}$.

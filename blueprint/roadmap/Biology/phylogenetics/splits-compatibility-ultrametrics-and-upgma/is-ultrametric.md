@@ -1,5 +1,8 @@
 # Ultrametric on taxa
 
-`d` is an **ultrametric** on the taxa: symmetric, zero exactly on the diagonal, and
-satisfying the **three-point condition** `d x z ≤ max (d x y) (d y z)` (equivalently, of the
-three distances among any three taxa the two largest are equal).
+A real function $d$ on pairs of taxa is an ultrametric if
+
+- $d(x, y) = d(y, x)$ for all $x, y$;
+- $d(x, x) = 0$ for every $x$;
+- $d(x, y) > 0$ for $x \ne y$;
+- $d(x, z) \le \max(d(x, y), d(y, z))$ for all $x, y, z$ (the three-point condition).

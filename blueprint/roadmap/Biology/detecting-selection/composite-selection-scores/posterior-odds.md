@@ -1,6 +1,7 @@
 # Posterior odds equal prior odds times the CMS score
 
-Bayes-rule identity for conditionally independent components: the posterior odds of
-selection are the prior odds times the CMS score. This is an algebraic identity for the
-normalized score; it is a genuine Bayes rule only under the normalization hypothesis of
-`sum_joint_eq_one`.
+In every [composite-score model](composite-model.md) with prior $\pi$ and for every observation $x$,
+
+$$\frac{\mathrm{Post}(x)}{1 - \mathrm{Post}(x)} = \frac{\pi}{1 - \pi}\, \mathrm{CMS}(x),$$
+
+where $\mathrm{Post}$ is the [normalized composite score](posterior.md) and $\mathrm{CMS}$ the [CMS score](cms.md).

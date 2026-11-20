@@ -40,7 +40,7 @@
 - [Membership in a B-tree built from a list](mem-from-list.md)
 - [Building a B-tree from a strictly increasing list](flatten-from-list-of-pairwise.md)
 - [B-tree deletion by rebuilding](delete-rebuild.md)
-- [Rebuilding deletion unfolds to erase and rebuild](delete-rebuild-eq-from-list-erase.md)
+- [Rebuilding deletion erases from the flattening and rebuilds](delete-rebuild-eq-from-list-erase.md)
 - [Flattening after rebuilding deletion](flatten-delete-rebuild.md)
 - [Rebuilding deletion yields a B-tree](delete-rebuild-2.md)
 - [Rebuild deletion yields an ordered tree](ordered-delete-rebuild.md)

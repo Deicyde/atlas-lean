@@ -1,6 +1,3 @@
 # Upper bounds on the suffix maximum
 
-Let $\sigma$ be a substitution score, $g$ an integer
-gap score, $xs$ and $ys$ lists and $y$ an integer. If every pair $(u, v)$ with $u$ a suffix of
-$xs$ and $v$ a suffix of $ys$ has Needleman–Wunsch score at most $y$, then the maximum
-Needleman–Wunsch score over all such suffix pairs is at most $y$.
+If an integer $m$ satisfies $\mathrm{NW}(x', y') \le m$ for every [suffix pair](suffix-pairs.md) $(x', y')$ of $x$ and $y$, then the [suffix maximum](suffix-max.md) satisfies $S(x, y) \le m$.

@@ -1,4 +1,5 @@
 # Bonami–Beckner bound for indicator functions
 
-Bonami–Beckner for an indicator of uniform measure `m`: `∑_{S ≠ ∅} ρ^{2|S|} f̂(S)² ≤
- m^{2/(1+ρ²)} - m²` for `0 ≤ ρ ≤ 1`.
+Let $E$ be a finite set, $f = 1_A$ the indicator of a set $A \subseteq \{0, 1\}^E$, $m = \mathbb{E} f = \lvert A\rvert / 2^{\lvert E\rvert}$ its mean under the uniform measure, and $\hat f(S)$ its Walsh–Fourier coefficients. For every $\rho \in [0, 1]$,
+
+$$\sum_{\emptyset \ne S \subseteq E} \rho^{2\lvert S\rvert}\, \hat f(S)^2 \le m^{2/(1 + \rho^2)} - m^2.$$

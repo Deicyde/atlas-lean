@@ -1,5 +1,3 @@
 # Free translation invariance from free placements of every shift
 
-The free infinite-volume `q = 2` measure is translation invariant if every shift has a free
-placement. See also `bdp_freeIV_isTranslationInvariant`, which proves invariance without
-hypotheses.
+Let $d \in \mathbb{N}$ and $0 < p < 1$. If the [free placement condition](med-free-placement.md) holds for every translation $g \in \mathbb{Z}^d$, then the free infinite-volume measure $\phi^0_{p,2}$ is translation invariant: every shift of configurations by an element of $\mathbb{Z}^d$ preserves it. Here $\phi^0_{p,2}$ is the [free infinite-volume random-cluster measure](../finite-and-infinite-volume-fk-measures-on-d/free-infinite-volume.md) on $\mathbb{Z}^d$ (a chosen subsequential weak limit of the free box measures).

@@ -10,10 +10,12 @@ most $N / 2^{3n+2}$. Then for every $N$, every triple in $E(N)$ has the form $(a
 all three entries in $S(N)$, and two distinct triples in $E(N)$ have no entry in common.
 Moreover there is a real constant $C$ such that
 
-$$\Bigl| |E(N)| - \frac{\pi^2 N^2}{21} \Bigr| \le C N (\log N)^2$$
+$$
+\Bigl| |E(N)| - \frac{\pi^2 N^2}{21} \Bigr| \le C N (\log N)^2
+$$
 
 for every natural number $N \ge 2$.
 
 ## Sources
 
-- Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 12.
+- Megumi Asada, Bruce Fang, Eva Fourakis, Sarah Manski, Nathan McNew, Steven J. Miller, Gwyneth Moreland, Ajmain Yamin, and Sindy Xin Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, Journal of Integer Sequences 27 (2024), Article 24.7.7, Lemma 12.

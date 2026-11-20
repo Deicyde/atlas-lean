@@ -49,7 +49,7 @@
 - [The literal routine of the initial-row generator](lit-p.md)
 - [The counter part of the initial-row generator](prog.md)
 - [The initial-row generator](iprog.md)
-- [The init generator as a finite multi-stack machine](init-tm.md)
+- [The init generator as a finite multi-stack Turing machine](init-tm.md)
 
 ## Clause kinds: literal positions
 

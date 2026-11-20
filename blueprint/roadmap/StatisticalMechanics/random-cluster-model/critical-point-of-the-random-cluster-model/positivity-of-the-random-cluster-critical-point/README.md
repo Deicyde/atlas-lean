@@ -1,6 +1,6 @@
 # Positivity of the random-cluster critical point
 
-## A. Domination of the wired measure by Bernoulli percolation
+## Domination of the wired measure by Bernoulli percolation
 
 - [Monotonicity of the open subgraph](open-graph-mono.md)
 - [Monotonicity of the wired graph](wired-graph-mono.md)
@@ -9,12 +9,12 @@
 - [Holley cross inequality for wired and $q = 1$ laws, $q \ge 1$](wired-fk-prob-fk-prob-one-cross.md)
 - [Wired law at most the $q = 1$ law on increasing events, $q \ge 1$](wired-fk-prob-le-fk-prob-one-increasing.md)
 
-## B. Bernoulli cylinder probabilities
+## Bernoulli cylinder probabilities
 
 - [Boolean-configuration sum of a coordinatewise product factorizes](sum-prod-factor.md)
 - [Bernoulli probability that edges $F$ are all open is $p^{|F|}$](fk-prob-one-cylinder.md)
 
-## C. Open self-avoiding walks
+## Open self-avoiding walks
 
 - [Padding a finite lattice word to an infinite word](fk-ext-word.md)
 - [Event of an open self-avoiding walk of $m$ steps](fk-exists-open-walk.md)
@@ -25,7 +25,7 @@
 - [Event of some open self-avoiding walk is increasing](is-increasing-fk-exists-open-walk.md)
 - [Percolation gives open self-avoiding walks of every length](percolation-event-subset-fk-exists-open.md)
 
-## D. Bounds on the wired measure of a walk event
+## Bounds on the wired measure of a walk event
 
 - [Extended box configuration keeps box edge states](extend-edge-eq-of-range.md)
 - [Open edges of an extended box configuration are box edges](range-of-extend-edge-true.md)
@@ -35,7 +35,7 @@
 - [Wired box measure as a finite sum over box configurations](wired-finite-measure-real-eq.md)
 - [Wired box bound $(2dp)^m$ on the open-walk event for $q \ge 1$](wired-finite-measure-fk-exists-open-walk.md)
 
-## E. Positivity of the critical point
+## Positivity of the critical point
 
 - [Wired percolation bound $\theta^1(p, q) \le (2dp)^m$ for $q \ge 1$](fk-theta-le-pow.md)
 - [No wired percolation for $2dp < 1$ and $q \ge 1$](fk-theta-eq-zero-of-lt.md)

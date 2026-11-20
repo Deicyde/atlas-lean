@@ -6,8 +6,7 @@ $h^{\wedge}_{\pm} A$ for the restricted signed $h$-fold sumset of $A$. If $0 \no
 $2|h^{\wedge}_{\pm} A| \ge 4(hk - h^2) + h(h+1) + 2$; if $0 \in A$, then
 $2|h^{\wedge}_{\pm} A| \ge 4(hk - h^2) + h(h-1) + 2$.
 
-The source states these bounds divided by $2$. Its remark that they are optimal for
-$h = 1$, $h = 2$ and $h = k$ is not part of this statement.
+The source states these bounds divided by $2$. It remarks that they are optimal for $h = 1$, $h = 2$ and $h = k$.
 
 ## Sources
 

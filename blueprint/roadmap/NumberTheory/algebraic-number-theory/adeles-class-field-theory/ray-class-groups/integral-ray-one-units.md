@@ -12,4 +12,4 @@ real embedding of every real place in the infinite part of $\mathfrak{m}$.
 
 ## Sources
 
-- ATLAS `UnitsInCongruenceSubgroup`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

@@ -1,5 +1,7 @@
 # Lineage weight recursion at an admixture node
 
-The recursion at an admixture node `X` with parents `A ≠ B`: with `α = prop X A`,
-`w X = α w A + (1 - α) w B + w₀`, where `w₀` puts weight `α` on the edge `(X, A)`,
-`1 - α` on `(X, B)` and `0` elsewhere.
+In an [admixture graph](admixture-graph.md), let $X$ be a node with $\mathrm{pa}(X) = \{A, B\}$, $A \ne B$, and put $\alpha = a(X, A)$. Then for every [edge](edge.md) $e = (c, p)$,
+
+$$w(X, e) = \alpha\, w(A, e) + (1 - \alpha)\, w(B, e) + \begin{cases} a(X, p) & c = X,\\ 0 & c \ne X, \end{cases}$$
+
+where $w$ is the [lineage weight](weight.md); the last term is $\alpha$ on the edge $(X, A)$, $1 - \alpha$ on $(X, B)$ and $0$ elsewhere.

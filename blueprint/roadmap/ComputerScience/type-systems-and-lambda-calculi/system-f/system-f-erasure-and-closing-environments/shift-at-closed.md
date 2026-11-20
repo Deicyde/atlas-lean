@@ -1,3 +1,3 @@
 # Shifting leaves locally closed terms unchanged
 
-Introducing a binder does not shift an already locally closed term.
+For every cutoff $c$ and every untyped term $t$ with no dangling bound index, the [shift](shift-at.md) satisfies $\uparrow_c t = t$.

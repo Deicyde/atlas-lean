@@ -1,4 +1,4 @@
 # Peierls counting bound on realised contours of length $\ell$
 
-The Peierls counting bound: at most `ℓ (2d)^ℓ` contours of length `ℓ` are realised by connected
-clusters in `Λ_n`.
+For $d, n, \ell \in \mathbb{N}$, this condition holds when there are at most $\ell (2d)^\ell$
+[realised contours](realised-contours.md) of length $\ell$ in the box $\Lambda_n$.

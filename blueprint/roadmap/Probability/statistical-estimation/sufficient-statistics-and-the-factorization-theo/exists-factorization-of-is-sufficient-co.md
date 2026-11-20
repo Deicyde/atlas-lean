@@ -1,8 +1,8 @@
 # Halmos–Savage factorization, necessity
 
-If the family of probability measures `P` is
-dominated by a σ-finite measure `μ` and the statistic `T` is sufficient for `P`, then the
-densities factor as `dP_θ/dμ = g_θ(T) · h` with measurable `g_θ` and `h`, `h` free of `θ`.
+Let $(\Omega, \mathcal{F})$ be a measurable space, $T : \Omega \to \mathcal{T}$ a measurable statistic, $\mu$ a σ-finite measure and $(P_\theta)_{\theta \in \Theta}$ probability measures with $P_\theta \ll \mu$. If $\sigma(T)$ is [sufficient](is-sufficient.md) for $(P_\theta)$, then there are measurable $g_\theta : \mathcal{T} \to [0, \infty]$ and $h : \Omega \to [0, \infty]$, $h$ free of $\theta$, with
+
+$$\frac{dP_\theta}{d\mu} = g_\theta(T)\, h \quad \text{for every } \theta.$$
 
 ## Sources
 

@@ -1,3 +1,5 @@
-# Equivalence of source and pinned cut-free proof bundles
+# The two definitions of cut-free proofs agree
 
-Source and pinned cut-free proof bundles contain the same proof values.
+For every sequent `Γ`, the proofs of `Γ` in the cut-free system CF correspond one to one to the
+proofs of `Γ` that pass the Boolean cut-freeness test, by the identity on proofs: both are the
+proofs of `Γ` without an application of the cut rule.

@@ -7,3 +7,8 @@ of $L$.
 
 Each insertion links trees of equal stored degree as in binary addition, so the result has
 strictly increasing, hence distinct, stored root degrees, as in the consolidate step of CLRS.
+
+## Sources
+
+- T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein, *Introduction to Algorithms*, 3rd ed.,
+  MIT Press, 2009, Section 19.2 (procedure CONSOLIDATE).

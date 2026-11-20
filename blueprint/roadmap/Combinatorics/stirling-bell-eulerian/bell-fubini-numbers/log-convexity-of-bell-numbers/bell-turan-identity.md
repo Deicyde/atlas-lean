@@ -13,4 +13,4 @@ refines Engel's inequality $B_n^2 \le B_{n-1} B_{n+1}$ to a strict inequality.
 
 ## Sources
 
-- Horst Alzer, "On Engel's Inequality for Bell Numbers," Journal of Integer Sequences 22 (2019), Article 19.7.1, Theorem with Equation (E3), lines 114–120, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Alzer/alzer6.tex>.
+- Horst Alzer, "On Engel's Inequality for Bell Numbers," Journal of Integer Sequences 22 (2019), Article 19.7.1, Theorem 1, equation (3), <https://cs.uwaterloo.ca/journals/JIS/VOL22/Alzer/alzer6.pdf>.

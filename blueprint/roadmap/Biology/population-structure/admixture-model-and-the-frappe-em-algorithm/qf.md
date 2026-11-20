@@ -1,4 +1,5 @@
 # Reference-allele probability in the admixture model
 
-The reference-allele probability `qf θ i j = ∑ k, Q i k * F k j` of a copy of SNP `j` in
-individual `i`.
+For [admixture parameters](params.md) $\theta = (Q, F)$, an individual $i$ and a SNP $j$, the reference-allele probability is
+
+$$\phi_{ij}(\theta) = \sum_{k \in K} Q_{ik} F_{kj}.$$

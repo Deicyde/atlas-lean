@@ -27,8 +27,8 @@ $b \equiv -1$, then $L(3) = 6$.
 Finally, (xiii) if $n > 0$, every prime factor of $n$ divides $6$ and $L(n)$ exists, then every
 prime factor of $L(n)$ divides $6$.
 
-The second half of (xii) is false as printed in the paper for $a \equiv 2 \pmod 6$ and is
-restricted here to $a \equiv -2 \pmod 6$: for $(a, b) = (2, 5)$, a nondegenerate pair, one has
+The second half of (xii) is false as printed in the paper for $a \equiv 2 \pmod 6$, and the
+statement above restricts it to $a \equiv -2 \pmod 6$: for $(a, b) = (2, 5)$, a nondegenerate pair, one has
 $\pi_U(3) = 3$, so $L(3) = 3$, in line with (iv).
 
 ## Sources

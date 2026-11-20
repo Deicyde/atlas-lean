@@ -12,4 +12,4 @@ at the initial state.
 
 ## Sources
 
-- A. M. Turing, *On Computable Numbers* (1936); S. C. Kleene, *General recursive functions of natural numbers* (1936). Knill, *Some fundamental theorems in mathematics*, §23. Problem `turing_recursive_equiv` of the lean-eval benchmark.
+- A. M. Turing, *On Computable Numbers* (1936); S. C. Kleene, *General recursive functions of natural numbers* (1936). O. Knill, *Some fundamental theorems in mathematics*, arXiv:1807.08416, Section 23. Problem `turing_recursive_equiv` of the lean-eval benchmark.

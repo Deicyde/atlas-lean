@@ -11,7 +11,8 @@ $$
 with $\zeta_q^{SZ,\star}(\varnothing) = 1$. Precisely, its coefficient of $q^N$ is defined as the
 coefficient of $q^N$ in the partial sum over $N \ge m_1 \ge \dots \ge m_r > 0$. For $k_1 \ge 1$ the
 summands with $m_1 > N$ have $q$-adic order $> N$, so this is the coefficient of $q^N$ in the full
-sum; for $k_1 = 0$ the full sum is not a formal power series and the value is a junk value.
+sum; for $k_1 = 0$ the full sum is not a formal power series and the value has no intended
+meaning.
 
 ## Sources
 

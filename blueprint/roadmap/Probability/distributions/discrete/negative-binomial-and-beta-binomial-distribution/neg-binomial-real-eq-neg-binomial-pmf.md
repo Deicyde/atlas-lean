@@ -1,6 +1,9 @@
-# Mean parametrization is the canonical `p`-parametrization
+# Mean parametrization of the negative binomial law
 
-For `θ > 0` and `μ ≥ 0`,
-`negBinomialReal θ μ` is `negBinomialPMF θ p` at `p = θ / (θ + μ)`, since
-`1 - p = μ / (θ + μ)`. The two APIs are the same law; reuse the splitting and
-conditioning results proved for `negBinomialPMF` through this equivalence.
+For $\theta > 0$, $\mu \ge 0$ and $k \in \mathbb{N}$,
+
+$$\mathrm{NB}(k; \theta, \mu) = \mathrm{NB}_{\theta, p}(k), \qquad p = \frac{\theta}{\theta + \mu},$$
+
+where $\mathrm{NB}(\cdot; \theta, \mu)$ is the [law with size $\theta$ and mean $\mu$](neg-binomial-real.md)
+and $\mathrm{NB}_{\theta, p}$ the [mass function with success probability $p$](neg-binomial-pmf.md),
+since $1 - p = \mu/(\theta + \mu)$.

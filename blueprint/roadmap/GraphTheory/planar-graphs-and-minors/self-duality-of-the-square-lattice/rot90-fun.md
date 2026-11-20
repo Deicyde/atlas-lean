@@ -1,3 +1,3 @@
 # Quarter-turn rotation of the square lattice
 
-The quarter-turn rotation `(a, b) ↦ (-b, a)` of `ℤ²`.
+The counterclockwise quarter-turn rotation $\rho : \mathbb{Z}^2 \to \mathbb{Z}^2$, $\rho(a, b) = (-b, a)$.

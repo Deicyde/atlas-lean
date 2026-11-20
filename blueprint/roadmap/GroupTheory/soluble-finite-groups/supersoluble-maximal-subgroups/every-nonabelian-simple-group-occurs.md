@@ -1,4 +1,4 @@
-# Kourovka 19.55(a) (Monakhov): every non-abelian simple group occurs
+# Simple composition factors under supersoluble full-prime maximal subgroups (Kourovka 19.55(a))
 
 The proposition that
 for every finite non-abelian simple group $S$ there is a finite group $G$ such that $S$ is a

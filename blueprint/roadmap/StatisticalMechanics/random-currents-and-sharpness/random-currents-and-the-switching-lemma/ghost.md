@@ -1,3 +1,3 @@
 # Ghost vertex of the extended vertex set
 
-The ghost vertex `none` of `Option V`.
+For a set $V$, the ghost vertex is the additional vertex $\mathfrak g$ of $V \sqcup \{\mathfrak g\}$.

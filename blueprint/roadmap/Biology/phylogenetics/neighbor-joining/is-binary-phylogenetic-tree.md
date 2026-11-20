@@ -1,5 +1,8 @@
 # Binary phylogenetic tree
 
-`G` with the taxon placement `ι` is a **binary phylogenetic `X`-tree**: `G` is a tree,
-`ι` is injective, the leaves (degree-one vertices) are exactly the taxa, and every other
-vertex has degree three.
+A finite simple graph $G$ with a map $\iota$ from a set $X$ of taxa to its vertices is a binary phylogenetic tree if
+
+- $G$ is a tree;
+- $\iota$ is injective;
+- a vertex has degree one if and only if it is $\iota(x)$ for some taxon $x$;
+- every vertex that is not a taxon vertex has degree three.

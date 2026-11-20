@@ -6,4 +6,4 @@ $a_i \le x_i < a_i + m$ for every coordinate $i$; it is a subcube of size $m^t$.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (subcubes of `N^t` of size `m^t`).
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Definition 2 (subcubes of $\mathbb{N}^t$ of size $m^t$).

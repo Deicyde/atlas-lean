@@ -1,4 +1,4 @@
 # Stacks of the CLIQUE to VERTEX-COVER reduction machine
 
-Stacks: input `X`, output `O`, counters `A` (`k`), `B` (`n`), `D` (`n`, then `n - k`), and
-the reversed pair bits `Y`.
+The stacks of the reduction machine are the input $X$, the output $O$, the counters $A$ (for $k$),
+$B$ (for $n$) and $D$ (for $n$, then $n - k$), and the stack $Y$ of the reversed pair bits.

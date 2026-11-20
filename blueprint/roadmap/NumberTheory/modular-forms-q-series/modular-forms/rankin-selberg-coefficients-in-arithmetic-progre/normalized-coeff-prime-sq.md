@@ -6,4 +6,4 @@ $\lambda_f$. Then $\lambda_f(p)^2 = \lambda_f(p^2) + 1$ for every prime $p$.
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Equation (1) with `m = n = p`.
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Equation (1) with $m = n = p$.

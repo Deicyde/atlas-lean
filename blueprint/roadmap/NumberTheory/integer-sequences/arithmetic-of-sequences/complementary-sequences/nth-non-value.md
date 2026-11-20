@@ -10,4 +10,4 @@ $P$, the $n$-th non-value of $f$ is $f_P(n)$, the $n$-th term of the complementa
 
 ## Sources
 
-- Chai Wah Wu, *Algorithms for Complementary Sequences*, INTEGERS 25 (2025), Article A95, Section 1 (definition of `f_P`).
+- Chai Wah Wu, *Algorithms for Complementary Sequences*, INTEGERS 25 (2025), Article A95, Section 1 (definition of $f_P$).

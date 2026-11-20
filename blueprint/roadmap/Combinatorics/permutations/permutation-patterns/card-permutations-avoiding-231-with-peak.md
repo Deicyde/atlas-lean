@@ -10,4 +10,4 @@ exponent $n - 2k - 1$ is truncated at $0$ and the division rounds down.
 
 ## Sources
 
-- Lara Pudwell, Jacob Roth, and Teresa Wheeland, "Distributions of Statistics over Pattern-Avoiding Permutations", Journal of Integer Sequences 22 (2019), Article 19.2.6, Theorem `T:pk231`, line 228, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Pudwell/pudwell6.tex>.
+- Michael Bukata, Ryan Kulwicki, Nicholas Lewandowski, Lara Pudwell, Jacob Roth, and Teresa Wheeland, "Distributions of Statistics over Pattern-Avoiding Permutations", Journal of Integer Sequences 22 (2019), Article 19.2.6, Theorem 1, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Pudwell/pudwell6.pdf>.

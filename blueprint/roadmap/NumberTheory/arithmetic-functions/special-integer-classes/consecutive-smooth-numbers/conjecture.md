@@ -9,3 +9,7 @@ $a + 1, \dots, a + k$ satisfies $p \le n^\varepsilon$.
 Erdős Problem 369 as written allows the run anywhere in $\{1, \dots, n\}$, which is trivially
 true (take $1, \dots, k$ once $n^\varepsilon \ge k$); here the run must start at or after
 $\lfloor n/2 \rfloor$.
+
+## Sources
+
+- Erdős Problem #369, https://www.erdosproblems.com/369.

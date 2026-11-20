@@ -1,5 +1,7 @@
 # McCaskill partition function of RNA secondary structures
 
-The **partition function** `Z = ∑_S exp (-E(S) / RT)` over all secondary structures `S`
-on `s` with minimum hairpin `m`, for the additive energy `e` at thermal energy `RT`
-(physically `0 < RT`; the identities below hold for every real `RT`).
+For a sequence $s$, real pair energies $e$ and a real $RT$, the partition function is
+
+$$Z = \sum_{P} \exp\bigl(-E(P) / RT\bigr),$$
+
+the sum over all [secondary structures](structures.md) of $s$, where $E$ is the [additive energy](energy.md), with the convention $x/0 = 0$. Physically $RT > 0$.

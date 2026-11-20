@@ -1,4 +1,7 @@
 # iHS as the log ratio of genealogy ages
 
-In the star-genealogy model the integrated haplotype score is the log ratio of the two
-ages, so the recombination rate cancels.
+Let $r > 0$, $T_A > 0$ and $T_D > 0$. Then the [star-genealogy integrated haplotype score](ihs.md) is
+
+$$\mathrm{iHS}^\star(r, T_A, T_D) = \log \frac{T_D}{T_A}:$$
+
+the recombination rate cancels.

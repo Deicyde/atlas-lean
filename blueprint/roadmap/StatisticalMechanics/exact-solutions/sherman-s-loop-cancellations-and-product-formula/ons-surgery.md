@@ -1,4 +1,3 @@
 # Sherman's segment-reversal surgery
 
-Sherman's surgery: reverse the segment between `ons_l` and `ons_m` when `v` visits both `e` and
-`rev e`; otherwise leave `v` unchanged.
+For a set $E$, $e \in E$, $\rho : E \to E$, $n \ge 1$ and a sequence $v$ of length $n$, the surgery returns $v$ unchanged unless $v$ contains both $e$ and $\rho(e)$; in that case it returns the [segment reversal](ons-rev-seg.md) of $v$ between the [first position](ons-l.md) $\ell$ meeting $\{e, \rho(e)\}$ and the [last position](ons-m.md) $m$ with $v_m = \rho(v_\ell)$.

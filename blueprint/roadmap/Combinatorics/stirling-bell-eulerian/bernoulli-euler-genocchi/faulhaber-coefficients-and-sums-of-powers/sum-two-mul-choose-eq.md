@@ -6,4 +6,4 @@ $$\sum_{i=1}^{n} 2i \binom{2i + k - 1}{2k - 1} = k \binom{2n + k + 1}{2k + 1}.$$
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Lemma 4.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Lemma 4.

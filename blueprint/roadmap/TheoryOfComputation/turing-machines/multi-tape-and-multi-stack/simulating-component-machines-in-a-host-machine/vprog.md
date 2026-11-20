@@ -2,8 +2,9 @@
 
 The program of the verifier host for a component machine $c$ with
 stacks $c_X$ and $c_W$, encodings $g_X$ and $g_W$ of bits as symbols of $c_X$ and $c_W$, and
-labels $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, on the host stacks with the work
-alphabet of the dense-SAT verifier on the input stack. On an input $x \# w$ in the pair encoding,
+labels $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, on the host stacks whose input stack
+has the pair alphabet: a left-tagged copy of each bit (bits of $x$), a right-tagged copy of each
+bit (bits of $w$) and a separator $\#$. On an input $x \# w$ in the pair encoding,
 phase 0 moves the symbols on top of the input stack that encode bits of $x$ onto the buffer $X_1$
 with the bit-moving loop, then moves $X_1$ onto the host's copy of $c_X$ re-encoded by $g_X$ (so
 in the original order); it pops one symbol off the input stack (the separator $\#$); it moves

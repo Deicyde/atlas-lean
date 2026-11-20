@@ -10,4 +10,4 @@ $c_{j+1} = 0$ for $j > k$. Division by $b = 0$ is taken to give $0$.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Section 2.
+- Benjamin V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Section 2.

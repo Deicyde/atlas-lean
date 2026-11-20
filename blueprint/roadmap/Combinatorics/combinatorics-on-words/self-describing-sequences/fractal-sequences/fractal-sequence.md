@@ -8,8 +8,9 @@ for all $i$ and $n$ with $x_n = i + 2$, some $m < n$ has $x_m = i + 1$; for all 
 with $h < i$, exactly one $k$ satisfies $p_i(j) < p_h(k) < p_i(j + 1)$; and for every $j$,
 $p_i(j)$ is strictly increasing in $i$.
 
-Source JIS VOL25/Kimberling,
-<https://cs.uwaterloo.ca/journals/JIS/VOL25/Kimberling/kimber16.tex>, lines 103–219.
+Here $p_i(j)$ is the position, counted from $0$, of the $j$-th occurrence (counted from $0$) of
+the value $i + 1$.
 
-Source positive value `i + 1` is represented directly as the natural `i + 1`,
-and `pos i j` is the zero-based position of its `j`-th occurrence.
+## Sources
+
+- Clark Kimberling, *Self-Containing Sequences, Fractal Sequences, Selection Functions, and Parasequences*, Journal of Integer Sequences 25 (2022), Article 22.2.1, Sections 3–5 (position arrays, regular sequences, and fractal sequences with conditions (F1)–(F3)), https://cs.uwaterloo.ca/journals/JIS/VOL25/Kimberling/kimber16.html

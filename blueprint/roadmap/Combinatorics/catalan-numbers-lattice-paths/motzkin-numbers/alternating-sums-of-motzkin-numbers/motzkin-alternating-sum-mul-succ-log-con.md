@@ -1,7 +1,6 @@
 # Products of consecutive alternating Motzkin sums are eventually log-convex and log-balanced
 
-**Products of consecutive alternating Motzkin sums are eventually log-convex and
-log-balanced.** Let $M_k$ denote the $k$-th Motzkin number, let
+Let $M_k$ denote the $k$-th Motzkin number, let
 $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$ and let $P_n = T_n T_{n+1}$. For every natural number
 $n \ge 7$, $P_n^2 \le P_{n-1} P_{n+1}$; and for every natural number $n \ge 10$,
 $P_n^2 \le P_{n-1} P_{n+1}$ and $n P_{n-1} P_{n+1} \le (n+1) P_n^2$.

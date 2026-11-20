@@ -7,4 +7,4 @@ decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), ODD CYCLE TRANSVERSAL (vertex deletion to a bipartite graph).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), ODD CYCLE TRANSVERSAL (vertex deletion to a bipartite graph).

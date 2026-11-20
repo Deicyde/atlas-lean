@@ -1,3 +1,3 @@
 # Nonnegativity of the Jukes–Cantor difference probability
 
-The probability that the ends of a branch differ is nonnegative when `0 ≤ μ * t`.
+If $\mu t \ge 0$, then the [difference probability](p-diff.md) satisfies $p_{\mathrm{diff}}(i) \ge 0$ for every base $i$.

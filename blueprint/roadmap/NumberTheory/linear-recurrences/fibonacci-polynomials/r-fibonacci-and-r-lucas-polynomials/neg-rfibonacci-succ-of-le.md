@@ -6,4 +6,4 @@ $U_m = U^{(-r)}_m(x, y)$. Then $U_{n+1} = y^{-1} U_{n-r+1} - y^{-1} x U_{n-r}$.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3, Equation (7).
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3, Equation (7).

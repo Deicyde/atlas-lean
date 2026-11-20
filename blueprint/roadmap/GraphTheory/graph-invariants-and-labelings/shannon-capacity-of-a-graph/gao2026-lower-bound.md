@@ -6,4 +6,4 @@ $7$-cycle is at least $M_{40}^{1/200}$, as an inequality in $[0, \infty]$.
 
 ## Sources
 
-- Gao, arXiv:2607.27869, exact dimension-200 root rate.
+- Yu Gao, *A Recursive Construction Improving the Lower Bound on the Shannon Capacity of C7*, arXiv:2607.27869v1 (2026), exact dimension-200 root rate; the paper states that ChatGPT 5.6 Sol implemented all the code and expanded the proofs.

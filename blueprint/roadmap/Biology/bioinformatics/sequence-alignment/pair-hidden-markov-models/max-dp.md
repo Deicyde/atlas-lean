@@ -1,6 +1,3 @@
 # Max-recursion alignment value from a control state
 
-The max-recursion value of an alignment of `xs` and `ys` read from control state `q`, by
-the first-column recursion (`alignWeight_le_maxDP`, `exists_alignWeight_eq_maxDP`). It is the
-largest alignment weight only when the weights are nonnegative; in general it is the value of
-the recursively chosen alignment.
+The max-recursion value of $x$ and $y$ from control state $q$ is $U_{|x| + |y| + 1}(q, x, y)$, where $U$ is the [fuel-bounded max recursion](max-dpaux.md). It is the largest alignment weight when the column weights are nonnegative; in general it is the weight of the recursively chosen alignment.

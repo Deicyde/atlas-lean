@@ -1,4 +1,5 @@
 # Removing one element lowers cardinality by one
 
-Removing one element from a finite type lowers its cardinality by one. See also Mathlib's
-`Fintype.card_subtype_compl`.
+For every finite set $\alpha$ and every $a \in \alpha$,
+
+$$|\alpha \setminus \{a\}| + 1 = |\alpha|.$$

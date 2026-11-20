@@ -10,4 +10,4 @@ $\binom{w}{n} = w(w-1)\cdots(w-n+1)/n!$.
 
 ## Sources
 
-- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 9 (`jis-2025-25.8.6-lem-9`).
+- Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 9.

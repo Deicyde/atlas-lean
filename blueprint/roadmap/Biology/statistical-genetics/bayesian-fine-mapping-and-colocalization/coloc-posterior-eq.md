@@ -1,6 +1,7 @@
 # Colocalization normalization identity
 
-The unconditional algebraic coloc normalization identity: each hypothesis's configuration
-score divided by the total score equals its closed-form score divided by the closed-form total.
-For arbitrary real `bf1` and `bf2` these ratios need not be probabilities. See
-`colocPosterior_nonneg` and `sum_colocPosterior_eq_one` for the probability-domain results.
+Let $p_1, p_2, p_{12}$ be [colocalization prior parameters](coloc-prior.md) on a finite set $\iota$ of variants, let $\mathrm{BF}^{(1)}, \mathrm{BF}^{(2)} : \iota \to \mathbb{R}$ be arbitrary, and let $h$ be one of the five [colocalization hypotheses](coloc-hypothesis.md). Then
+
+$$\frac{\sum_{S \,:\, H(S) = h} w(S)\, \mathrm{BF}(S)}{\sum_{S} w(S)\, \mathrm{BF}(S)} = \frac{C(h)}{\sum_{h'} C(h')},$$
+
+with the convention $x / 0 = 0$, where $S$ ranges over configurations in $\iota_\ast \times \iota_\ast$, $h'$ over the five hypotheses, $w$ is the [unnormalized configuration weight](weight.md), $\mathrm{BF}$ the [configuration Bayes factor](coloc-bf.md) and $C$ the [closed-form score](coloc-closed-form.md). For arbitrary real Bayes factors these ratios need not be probabilities.

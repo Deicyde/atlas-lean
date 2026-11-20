@@ -1,6 +1,6 @@
 # Geometric factorization of the $h^*$ formula
 
-**Geometric factorization of the $h^*$ formula.** Let $d \ge 1$, let $r_1, \dots, r_d$ be
+Let $d \ge 1$, let $r_1, \dots, r_d$ be
 pairwise distinct positive integers, let $x_1, \dots, x_d$ be positive integers, and let
 $q = (r_1^{x_1}, \dots, r_d^{x_d})$ be the list in which each $r_i$ is repeated $x_i$ times.
 Suppose that the weighted simplex $\Delta_{(1,q)}$, the convex hull of the standard basis vectors

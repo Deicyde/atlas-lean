@@ -1,4 +1,4 @@
 # Convex rate functions are rate functions
 
-Every convex rate function on a real vector space
-with a topology is a rate function.
+Let $X$ be a real vector space with a topology. Every convex rate function $I : X \to [0, \infty]$
+is a rate function, that is, lower semicontinuous.

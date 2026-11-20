@@ -6,4 +6,4 @@ module $\mu$ and ratio $\rho$ takes the value $0$ at $n = 1$, that is, $\lVert 1
 
 ## Sources
 
-- J. Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 3.
+- Juan Arias de Reyna, *Arithmetical Self-Similar Compact Sets*, INTEGERS 24 (2024), Article A21, Definition 3.

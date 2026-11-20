@@ -7,7 +7,9 @@ for every monic irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the numb
 irreducible polynomials that divide $f$ with multiplicity exactly $k$. The moment is the real
 number
 
-$$|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,$$
+$$
+|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,
+$$
 
 taken to be $0$ when $N_h \cap M_n$ is empty.
 

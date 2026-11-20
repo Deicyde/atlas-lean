@@ -10,9 +10,9 @@ $$
 \sum_{j=0}^{n} \left(F^{(m+3)}_j - F^{(m+2)}_j\right) \left(F^{(m+1)}_{n-j} - F^{(m)}_{n-j}\right).
 $$
 
-The paper prints the index of the last factor on the left as $k_3$; it is corrected to $k_4$
-here.
+The paper prints the index of the last factor on the left as $k_3$; the statement above
+has $k_4$.
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 34.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 34.

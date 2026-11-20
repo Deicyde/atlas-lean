@@ -1,4 +1,6 @@
 # Log-odds grow linearly
 
-**Log-odds grow linearly** for a frequency (`K = 1`): for `0 < x₀ < 1` and all `r`, `t`,
-`log (x(t) / (1 - x(t))) = log (x₀ / (1 - x₀)) + r t`.
+Let $0 < x_0 < 1$. For all real $r$ and $t$, the [explicit logistic solution](logistic.md) with
+$K = 1$ satisfies
+
+$$\log \frac{x(t)}{1 - x(t)} = \log \frac{x_0}{1 - x_0} + rt.$$

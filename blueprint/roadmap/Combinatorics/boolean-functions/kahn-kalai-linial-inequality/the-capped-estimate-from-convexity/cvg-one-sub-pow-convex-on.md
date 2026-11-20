@@ -1,3 +1,3 @@
-# Convexity of $(1 - u)^k$ on $(0, 1)$
+# Convexity of $(1 - u)^k$ on the unit interval
 
-`u ↦ (1 - u)^k` is convex on `[0, 1]`.
+For every natural number $k$, the function $u \mapsto (1 - u)^k$ is convex on $[0, 1]$.

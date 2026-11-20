@@ -10,4 +10,4 @@ and $z > x + 1$.
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `1` on `U ∪ R`.
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value $1$ on $U \cup R$.

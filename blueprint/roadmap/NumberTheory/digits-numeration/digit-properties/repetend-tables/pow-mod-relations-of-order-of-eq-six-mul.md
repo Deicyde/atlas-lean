@@ -7,7 +7,8 @@ $B_z = B^z \bmod n$. Then $B_{2Q} = B_Q - 1$, $B_{4Q} = B_{5Q} - 1$, $B_Q + B_{5
 $B_{3Q} = n - 1$; moreover $Q^2 \equiv Q \pmod{6Q}$.
 
 Since $B^{6Q} \equiv 1 \pmod n$, the residues $B_{5Q}$ and $B_{4Q}$ are those of $B^{-Q}$ and
-$B^{-2Q}$. The paper assumes $j \ge 1$ and $i \ge 2j$; these are not needed here.
+$B^{-2Q}$. The source assumes $j \ge 1$ and $i \ge 2j$; the relations hold without these
+assumptions.
 
 ## Sources
 

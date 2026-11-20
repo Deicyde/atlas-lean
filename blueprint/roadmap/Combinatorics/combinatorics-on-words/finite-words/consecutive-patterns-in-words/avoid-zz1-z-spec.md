@@ -9,4 +9,4 @@ At $k = 0$ the recurrence would read $0 = 1$ at $n = 3$.
 
 ## Sources
 
-- Sela Fried, "Proofs of Several Conjectures From the OEIS", Theorem 3.
+- Sela Fried, *Proofs of Several Conjectures From the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.4.3, Theorem 3, https://cs.uwaterloo.ca/journals/JIS/VOL28/Fried/fried15.html

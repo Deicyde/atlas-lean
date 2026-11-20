@@ -1,4 +1,5 @@
 # Gierer–Meinhardt steady state is an equilibrium
 
-`((a + 1) / b, ((a + 1) / b)²)` is a steady state of the Gierer–Meinhardt kinetics when
-`a + 1 ≠ 0` and `b ≠ 0`.
+For real $a$ and $b$ with $a + 1 \ne 0$ and $b \ne 0$, the
+[Gierer–Meinhardt kinetics](gierer-meinhardt.md) vanish at
+$(u_0, v_0) = \bigl((a + 1)/b, ((a + 1)/b)^2\bigr)$.

@@ -7,7 +7,7 @@ $\Phi_{p^\beta k}(a, b) = \Phi_{pk}(a^{p^{\beta - 1}}, b^{p^{\beta - 1}})$ and
 $\Phi_{p^\beta k}(a, b) \cdot \Phi_k(a^{p^{\beta - 1}}, b^{p^{\beta - 1}}) =
 \Phi_k(a^{p^\beta}, b^{p^\beta})$.
 
-The paper states the second identity as a quotient; here it is cleared of its denominator.
+The paper states the second identity as a quotient; the identity above is cleared of its denominator.
 
 ## Sources
 

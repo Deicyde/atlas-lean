@@ -1,19 +1,28 @@
 # Soundness and completeness of normal modal logics
 
-- [Translation of CSLib's modal propositions](of-proposition.md)
-- [Kripke model of a CSLib model](of-model.md)
+Soundness and completeness of the normal modal logics K, T, S4, S5 and K4 for Kripke semantics,
+with formulas built from atoms, $\bot$, $\to$ and $\Box$. The first group of pages relates this
+presentation to the diamond presentation of unimodal logic: formulas built from atoms, falsehood,
+negation, disjunction and a diamond $\Diamond$, interpreted in unimodal models, each a frame with
+one binary relation together with a valuation. Its semantic logics K, T, S4 and S5 are the sets of
+formulas valid in all unimodal models whose relation satisfies the frame conditions of each logic.
+The diamond presentation is the one of the unimodal logic of CSLib, release v4.35.0
+(<https://github.com/leanprover/cslib/tree/v4.35.0/Cslib/Logics/Modal>).
+
+- [Translation of diamond-presentation formulas](of-proposition.md)
+- [Kripke model of a unimodal model](of-model.md)
 - [The translation preserves satisfaction](satisfies-of-proposition.md)
-- [The CSLib unimodal model of a Kripke model](to-model.md)
-- [Kripke to CSLib and back is the identity](of-model-to-model.md)
-- [Round trip from CSLib models through Kripke models](to-model-of-model.md)
-- [Translation of modal formulas into CSLib propositions](to-proposition.md)
+- [The unimodal model of a Kripke model](to-model.md)
+- [Kripke model to unimodal model and back is the identity](of-model-to-model.md)
+- [Round trip from unimodal models through Kripke models](to-model-of-model.md)
+- [Translation of modal formulas into the diamond presentation](to-proposition.md)
 - [The reverse translation preserves satisfaction](satisfies-to-proposition.md)
-- [Validity agrees with its CSLib translation](valid-to-proposition.md)
-- [Validity of the translation gives membership in CSLib's logic](mem-logic-of-valid.md)
-- [Soundness for CSLib's K](mem-k.md)
-- [Soundness for CSLib's T](mem-t.md)
-- [Soundness for CSLib's S4](mem-s4.md)
-- [Soundness for CSLib's S5](mem-s5.md)
+- [Validity agrees with validity of the translation](valid-to-proposition.md)
+- [Validity of the translation gives membership in a semantic logic](mem-logic-of-valid.md)
+- [Soundness for the semantic logic K](mem-k.md)
+- [Soundness for the semantic logic T](mem-t.md)
+- [Soundness for the semantic logic S4](mem-s4.md)
+- [Soundness for the semantic logic S5](mem-s5.md)
 - [Consistency relative to a normal modal logic](consistent.md)
 - [Consistency is of finite character](consistent-is-of-finite-character.md)
 - [Lindenbaum's lemma for normal modal logics](exists-maximal-consistent.md)
@@ -47,9 +56,14 @@
 - [Strong soundness and completeness of T](deduces-t-iff.md)
 - [Strong soundness and completeness of S4](deduces-s4-iff.md)
 - [Strong soundness and completeness of S5](deduces-s5-iff.md)
-- [The canonical model as a CSLib model](canonical-cslib-model.md)
+- [The canonical model as a unimodal model](canonical-cslib-model.md)
 - [Validity in a class containing the canonical model gives derivability](derivable-of-proposition-of-mem-logic.md)
-- [Completeness for CSLib's K](derivable-of-proposition-k-iff.md)
-- [Completeness for CSLib's T](derivable-of-proposition-t-iff.md)
-- [Completeness for CSLib's S4](derivable-of-proposition-s4-iff.md)
-- [Completeness for CSLib's S5](derivable-of-proposition-s5-iff.md)
+- [Completeness for the semantic logic K](derivable-of-proposition-k-iff.md)
+- [Completeness for the semantic logic T](derivable-of-proposition-t-iff.md)
+- [Completeness for the semantic logic S4](derivable-of-proposition-s4-iff.md)
+- [Completeness for the semantic logic S5](derivable-of-proposition-s5-iff.md)
+- [Extra axioms of K4](k4.md)
+- [Soundness of K4 for transitive Kripke models](valid-k4.md)
+- [Strong completeness of K4](completeness-k4.md)
+- [K4-theorems are the formulas valid in every transitive Kripke model](derivable-k4-iff.md)
+- [Consistency of K4](not-derivable-bot-k4.md)

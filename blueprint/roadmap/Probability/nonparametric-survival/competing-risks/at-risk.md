@@ -1,4 +1,8 @@
-# Number at risk with competing risks
+# Number at risk in competing-risks data
 
-In grouped competing-risks data, the number at risk $Y_j$ at $t_j$ is the number at risk in the
-cause-blind censored data: the subjects whose observation time is at least $t_j$.
+Consider right-censored competing-risks data grouped at the observation times
+$t_1 < \dots < t_k$, with $d_{j,c}$ subjects failing from cause $c$ and $c_j$ subjects censored at
+$t_j$. The number at risk at $t_j$ is $n_j = \sum_{l \ge j} \bigl(\sum_c d_{l,c} + c_l\bigr)$, the
+number of subjects whose observation time is at least $t_j$. It is the
+[number at risk](../kaplan-meier-estimator/at-risk.md) of the same data with the failures from all
+causes pooled.

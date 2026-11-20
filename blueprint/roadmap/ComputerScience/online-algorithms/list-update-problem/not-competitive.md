@@ -14,4 +14,5 @@ exchanges in place of $C$.
 
 ## Sources
 
-- Karp and Raghavan, see Irani, *Two results on the list update problem*, IPL 38, 1991; Borodin and El-Yaniv, Chapter 1.
+- S. Irani, "Two results on the list update problem", *Information Processing Letters* 38(6) (1991), 301–306, reporting the lower bound of R. Karp and P. Raghavan.
+- A. Borodin and R. El-Yaniv, *Online Computation and Competitive Analysis*, Cambridge University Press, 1998, Chapter 1.

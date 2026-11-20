@@ -1,3 +1,3 @@
 # Rows of the GTR rate matrix sum to zero
 
-The rows of the GTR matrix sum to `0`, for all parameters.
+For all real $\pi$ and $s$ and every $i$, the [GTR matrix](gtr-rate.md) satisfies $\sum_j Q_{ij} = 0$.

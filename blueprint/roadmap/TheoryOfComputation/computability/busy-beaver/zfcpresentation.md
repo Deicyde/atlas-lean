@@ -16,7 +16,4 @@ working states halts within $B$ steps. Whenever $T$ proves the bound sentence fo
 machine $M$ with $n$ working states has not halted within $B$ steps, $T$ proves the non-halting
 sentence of $M$.
 
-No concrete syntax or proof checker for ZFC is given, and no presentation of ZFC is constructed;
-the intended instance is ZFC with its standard proof checker. The state counts for
-consistency-search machines in the literature depend on specific checker implementations and are
-not asserted for arbitrary presentations.
+The intended instance is ZFC with its standard proof checker; the notion itself fixes no concrete syntax or checker. The state counts of consistency-search machines in the literature depend on the specific checker and are not part of the notion.

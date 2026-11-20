@@ -1,3 +1,3 @@
 # Percolation event for the origin
 
-The percolation event `{0 ↔ ∞}`: the open cluster of the origin is infinite.
+For $d \in \mathbb{N}$, the percolation event $\{0 \leftrightarrow \infty\}$ is the set of bond configurations $\omega$ on $\mathbb{Z}^d$ in which the [open cluster](cluster.md) of the [origin](origin.md) is infinite.

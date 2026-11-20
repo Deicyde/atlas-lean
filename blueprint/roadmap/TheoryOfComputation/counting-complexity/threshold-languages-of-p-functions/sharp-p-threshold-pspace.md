@@ -7,4 +7,4 @@ number $k$ with $k \le f(x)$, is in PSPACE.
 
 ## Sources
 
-- L. G. Valiant, "The complexity of enumeration and reliability problems" (1979); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 9.3 (#P ⊆ PSPACE in the threshold-language form).
+- L. G. Valiant, "The complexity of enumeration and reliability problems", *SIAM Journal on Computing* 8 (1979), 410–421; S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 17 (counting complexity).

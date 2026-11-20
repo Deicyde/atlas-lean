@@ -6,4 +6,4 @@ of $A$.
 
 ## Sources
 
-- AIM-COMBINATORICS-0241, Problem 3.4, aim-combinatorics-notes.json notes[240].
+- B. Green (after A. Venkatesh), Problem 3.4 of the problem list of the workshop *Recent trends in additive combinatorics*, American Institute of Mathematics, https://aimath.org/WWN/additivecomb/additivecomb.pdf.

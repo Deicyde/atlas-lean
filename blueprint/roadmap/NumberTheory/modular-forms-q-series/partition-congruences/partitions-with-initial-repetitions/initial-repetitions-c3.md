@@ -8,4 +8,4 @@ and divisible by $4$.
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of `c₃`, from Nyirenda and Mugwangwavari).
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of $c_3$, from Nyirenda and Mugwangwavari).

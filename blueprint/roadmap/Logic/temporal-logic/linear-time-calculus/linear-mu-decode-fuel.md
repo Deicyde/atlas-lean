@@ -1,5 +1,5 @@
 # Fuelled decoding of linear μ-calculus codes
 
-Fuelled decoding of a `linearMuCode` number back to a formula. The fuel bounds
-the recursion depth; `linearMuDecode` supplies fuel `c + 1`, which exceeds every
-formula's depth (see `linearDepth_le_code`).
+Decoding of the pairing code of a linear μ-calculus formula, with a fuel parameter that bounds the
+recursion depth. Decoding a number $c$ uses fuel $c + 1$, which exceeds the depth of the formula
+with code $c$, since the depth of a formula is at most its code.

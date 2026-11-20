@@ -8,4 +8,4 @@ quotient is taken in $[0, \infty]$.
 
 ## Sources
 
-- CE2003 Appendix A, `vol(P ∩ B(p,R)) / vol(B(p,R))`.
+- H. Cohn and N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003), 689–714, arXiv:math/0110009, Appendix A: $\operatorname{vol}(P \cap B(p, R)) / \operatorname{vol}(B(p, R))$.

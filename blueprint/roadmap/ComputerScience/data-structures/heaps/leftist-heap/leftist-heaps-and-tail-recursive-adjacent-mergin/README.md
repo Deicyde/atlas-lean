@@ -1,6 +1,6 @@
 # Leftist heaps and tail-recursive adjacent merging
 
-## Leftist Heap datatype (concrete)
+## Leftist heaps
 
 - [Leftist heap](lheap.md)
 - [Number of nodes of a leftist heap](size.md)
@@ -25,7 +25,7 @@
 - [Singleton leftist heap](singleton.md)
 - [Leftist heap from a list by tail-recursive merging](lheap-list2.md)
 
-## Node construction and merge correctness
+## Correctness of the list-to-heap construction
 
 - [Combined multiset of a list of heaps](sum-mset.md)
 - [Min-heap ordering of every heap in a list](heap-list.md)

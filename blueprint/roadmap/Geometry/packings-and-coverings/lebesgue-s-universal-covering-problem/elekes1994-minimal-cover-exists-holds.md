@@ -7,4 +7,4 @@ the areas of all universal convex covers.
 
 ## Sources
 
-- Elekes, Generalized breadths, circular Cantor sets, and the least area UCC (1994).
+- György Elekes, Generalized breadths, circular Cantor sets, and the least area UCC, Discrete Comput. Geom. 12 (1994), 439–449, DOI 10.1007/BF02574391.

@@ -7,4 +7,5 @@ logarithm.
 
 ## Sources
 
-- BDG2019, arXiv1605.02882, retained Theorem `komlos`.
+- Nikhil Bansal, Daniel Dadush and Shashwat Garg, *An algorithm for Komlós conjecture matching Banaszczyk's bound*, SIAM J. Comput. 48(2) (2019), 534–553, arXiv:1605.02882.
+- *Optimization Constants in Mathematics* (crowdsourced repository started by Terence Tao), constant $C_{24a}$, Komlós discrepancy constant, https://teorth.github.io/optimizationproblems/constants/24a.html.

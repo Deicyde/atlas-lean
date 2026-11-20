@@ -1,4 +1,3 @@
 # Dyadic rationals
 
-The set of **dyadic rationals**: real numbers of the form `k / 2 ^ n`
-for some integer `k` and natural number `n`.
+The dyadic rationals are the real numbers of the form $k/2^n$ with $k \in \mathbb{Z}$ and $n \in \mathbb{N}$.

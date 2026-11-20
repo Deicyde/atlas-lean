@@ -1,9 +1,7 @@
 # Monotone likelihood ratio
 
-The likelihood family `L : ℕ → ℝ → ℝ` (observation, parameter) has a **monotone
-likelihood ratio** on the parameter set `S`: `L` is nonnegative on `S`, and for
-observations `n ≤ m` and parameters `θ ≤ θ'` in `S`,
-`L m θ * L n θ' ≤ L n θ * L m θ'` (total positivity of order two). For positive
-likelihoods this is monotonicity of `θ ↦ L m θ / L n θ`. The nonnegativity is part of
-the predicate: without it the downstream `posteriorTail` would not be a posterior
-probability (a signed `L` can give `posteriorTail > 1`).
+Let $L : \mathbb{N} \times \mathbb{R} \to \mathbb{R}$, $(n, \theta) \mapsto L(n, \theta)$, be a likelihood family (observation $n$, parameter $\theta$) and $S \subseteq \mathbb{R}$ a parameter set. The family has a *monotone likelihood ratio* on $S$ if $L(n, \theta) \ge 0$ for all $n$ and $\theta \in S$, and for observations $n \le m$ and parameters $\theta \le \theta'$ in $S$,
+
+$$L(m, \theta)\, L(n, \theta') \le L(n, \theta)\, L(m, \theta')$$
+
+(total positivity of order two). For positive likelihoods this is monotonicity of $\theta \mapsto L(m, \theta)/L(n, \theta)$. The nonnegativity is part of the definition: without it the [posterior tail](posterior-tail.md) would not be a posterior probability (a signed $L$ can give a value larger than $1$).

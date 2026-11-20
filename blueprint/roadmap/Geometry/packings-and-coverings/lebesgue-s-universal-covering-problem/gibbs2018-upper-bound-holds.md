@@ -6,4 +6,4 @@ congruent copy of every nonempty convex planar set of diameter $1$, is at most $
 
 ## Sources
 
-- Gibbs, An Upper Bound for Lebesgue's Covering Problem (2018).
+- Philip Gibbs, An upper bound for Lebesgue's covering problem, arXiv:1810.10089 (2018).

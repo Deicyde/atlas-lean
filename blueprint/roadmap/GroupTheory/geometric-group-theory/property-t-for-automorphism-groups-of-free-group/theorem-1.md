@@ -6,4 +6,4 @@ generators has property (T).
 
 ## Sources
 
-- M. Kaluba, D. Kielak, and P. W. Nowak, `On property (T) for Aut(F_n) and SL_n(Z)`, Annals of Math, 193 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_on_property_t` of the lean-eval benchmark.
+- M. Kaluba, D. Kielak, and P. W. Nowak, *On property (T) for $\mathrm{Aut}(F_n)$ and $\mathrm{SL}_n(\mathbb{Z})$*, Ann. of Math. (2) 193 (2021), no. 2. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_on_property_t` of the lean-eval benchmark.

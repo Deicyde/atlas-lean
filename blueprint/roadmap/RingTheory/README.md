@@ -23,3 +23,4 @@ Hahn series, and the subject also has Hilbert's syzygy theorem, the Quillen–Su
 - [Formal power series](formal-power-series/README.md)
 - [Modules over commutative rings](modules/README.md)
 - [Invariant theory](invariant-theory/README.md)
+- [Cluster algebras](cluster-algebras/README.md)

@@ -7,4 +7,4 @@ those whose largest letter is $k$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `ℬ_{n,i}`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of $\mathcal{B}_{n,i}$.

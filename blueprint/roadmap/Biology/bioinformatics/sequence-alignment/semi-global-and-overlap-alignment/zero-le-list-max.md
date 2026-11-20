@@ -1,4 +1,3 @@
 # The floored list maximum is nonnegative
 
-For every list $L$ of integers, the maximum of
-$L$ with floor $0$ (which is $0$ for the empty list) is at least $0$.
+For every list of integers, the [floored maximum](../pairwise-sequence-alignment/list-max.md) $\max(0, \ell_1, \dots, \ell_k)$ is nonnegative.

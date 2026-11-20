@@ -5,9 +5,11 @@ natural numbers, and for each natural number $j$ let $\mu_j$ be the Irwin measur
 digit $d$ with index $j$. Let $f : \mathbb{R} \to \mathbb{R}$ be measurable and bounded on
 $[0, b)$, and let $k \ge 1$. Then
 
-$$\int_{[0,1)} f(bx)\, d\mu_k(x) =
+$$
+\int_{[0,1)} f(bx)\, d\mu_k(x) =
 \frac{1}{b} \sum_{a \ne d} \int_{[0,1)} f(a + x)\, d\mu_k(x) +
-\frac{1}{b} \int_{[0,1)} f(d + x)\, d\mu_{k-1}(x),$$
+\frac{1}{b} \int_{[0,1)} f(d + x)\, d\mu_{k-1}(x),
+$$
 
 where $a$ ranges over the digits $0, 1, \dots, b - 1$ other than $d$.
 

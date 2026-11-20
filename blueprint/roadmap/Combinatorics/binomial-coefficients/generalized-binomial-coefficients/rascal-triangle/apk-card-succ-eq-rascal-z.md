@@ -7,4 +7,4 @@ $k(n-k) + 1$ when $k \le n$ and $0$ when $k > n$.
 
 ## Sources
 
-- Amelia Gibbs and Brian K. Miceli, "Two Combinatorial Interpretations of Rascal Numbers", Theorem 17.
+- Amelia Gibbs and Brian K. Miceli, *Two Combinatorial Interpretations of Rascal Numbers*, J. Integer Seq. 27 (2024), Article 24.8.2, Theorem 17, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Miceli/miceli9.html>.

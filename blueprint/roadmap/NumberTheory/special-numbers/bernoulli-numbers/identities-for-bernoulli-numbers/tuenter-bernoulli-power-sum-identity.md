@@ -15,4 +15,4 @@ For a natural number $x$ and $i \ge 1$ the relation gives $\sigma_x(i) = 1^i + 2
 
 ## Sources
 
-- Jitender Singh, *On an Arithmetic Convolution*, Journal of Integer Sequences 17 (2014), Article 14.6.7, Corollary with equation `eq23`, lines 339–344, identified there as Tuenter's identity at `c = 0`, line 348, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Singh/singh8.tex>.
+- Jitender Singh, *On an Arithmetic Convolution*, Journal of Integer Sequences 17 (2014), Article 14.6.7, Corollary 9, equation (27), at $c = 0$, which the paper identifies as Tuenter's identity, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Singh/singh8.html>.

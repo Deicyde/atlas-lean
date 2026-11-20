@@ -8,4 +8,4 @@ functor, which is additive, to the biproduct $A \oplus B$.
 
 ## Sources
 
-- NumberTheoryI, Section 23.4, Corollary 23.22.
+- A. V. Sutherland, *Number theory I* (MIT 18.785), lecture notes, Fall 2021, Lecture 23, Section 23.4, Corollary 23.22, https://math.mit.edu/classes/18.785/2021fa/LectureNotes23.pdf.

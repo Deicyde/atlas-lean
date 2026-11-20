@@ -1,10 +1,10 @@
 # Breeder's equation
 
-## Breeder
+## The model
 
 - [Linear parent–offspring regression model](model.md)
 
-## Model
+## Selection and response
 
 - [Selection differential](selection-differential.md)
 - [Response to selection](response.md)

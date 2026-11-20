@@ -8,4 +8,4 @@ Turán number of $K_{k+1}^{(k)}$ and the ratio is taken to be $0$ when $\binom{n
 
 ## Sources
 
-- [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
+- AimPL: Hypergraph Turán problem, Section 1 (Complete hypergraphs), Problem 1.3, http://aimpl.org/hypergraphturan/1/.

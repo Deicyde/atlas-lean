@@ -7,4 +7,4 @@ principal adele map $F \to \mathcal{A}_F$.
 
 ## Sources
 
--. Problem `faltings` of the lean-eval benchmark.
+- Henning Stichtenoth, *Algebraic Function Fields and Codes*, 2nd ed., Graduate Texts in Mathematics 254, Springer, 2009. Problem `faltings` of the lean-eval benchmark (https://github.com/leanprover/lean-eval/blob/38361be884302c7edce1908c4aef8296eb2cb27e/manifests/problems/faltings.toml).

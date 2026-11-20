@@ -16,10 +16,10 @@
 - [Product of pair counts times a power of two is $n!(n-1)!$](prod-choose-two-mul-two-pow.md)
 - [Reindexing the product of pair counts](prod-fin-choose-two.md)
 - [Number of ranked labeled histories](card-ranked-history.md)
-- [Number of ranked labeled histories](card-ranked-history-mul-two-pow.md)
+- [Number of ranked labeled histories times $2^{n-1}$](card-ranked-history-mul-two-pow.md)
 
 ## Random joining
 
 - [Random joining](random-joining.md)
 - [Every ranked history is equally likely under random joining](random-joining-singleton-eq-inv.md)
-- [Each ranked labeled history has probability `2^{n-1} / (n! (n - 1)!)`](random-joining-singleton.md)
+- [Each ranked labeled history has probability $2^{n-1} / (n!(n-1)!)$](random-joining-singleton.md)

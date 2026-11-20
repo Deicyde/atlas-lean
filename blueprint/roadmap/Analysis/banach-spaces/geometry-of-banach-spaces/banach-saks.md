@@ -7,4 +7,4 @@ means $\frac{1}{n} \sum_{i=0}^{n-1} x_{\varphi(i)}$ converge to $y$ in norm as $
 
 ## Sources
 
-- S. Banach and S. Saks, Studia Math. 2 (1930) 51-57; uniformly convex form and property due to Kakutani, 1939; textbook Diestel, Sequences and Series in Banach Spaces; Lean gives uniformly convex real Banach specialization with explicit `StrictMono φ` and norm-convergent Cesàro means.
+- S. Banach and S. Saks, Studia Math. 2 (1930) 51-57; uniformly convex form and property due to Kakutani, 1939; textbook Diestel, Sequences and Series in Banach Spaces. The statement here is the case of a uniformly convex real Banach space, with an explicit subsequence whose Cesàro means converge in norm.

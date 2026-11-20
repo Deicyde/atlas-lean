@@ -5,7 +5,6 @@
 - [Real world of the PRF experiment](prf-real.md)
 - [Random world of the PRF experiment](prf-rand.md)
 - [PRF advantage](prf-advantage.md)
-- [Asymptotic PRF security relative to a class of distinguishers](prfsecure.md)
 
 ## The MAC from a PRF
 

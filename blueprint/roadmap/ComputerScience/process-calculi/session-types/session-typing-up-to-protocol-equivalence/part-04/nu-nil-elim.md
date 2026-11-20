@@ -1,3 +1,4 @@
 # Removing a restriction around nil preserves conversion typing
 
-Restriction of nil has exactly the completed external ownership of nil.
+Let $n$ be a natural number and $\Delta$ an ownership context. If $\Delta \vdash^{\simeq}_n
+\nu\,\mathbf{0}$, then $\Delta \vdash^{\simeq}_n \mathbf{0}$.

@@ -10,4 +10,4 @@ where a term with $j > k$ is read as $0$.
 
 ## Sources
 
-- Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, Theorem, equation (ex44), lines 257–263, https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.tex
+- Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, equation (16), <https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.pdf>.

@@ -1,3 +1,3 @@
 # Reflexivity of beta equivalence
 
-Upstream beta equivalence is reflexive.
+Every term $f$ of the [untyped term model](model.md) is [β-equivalent](beta-eq.md) to itself.

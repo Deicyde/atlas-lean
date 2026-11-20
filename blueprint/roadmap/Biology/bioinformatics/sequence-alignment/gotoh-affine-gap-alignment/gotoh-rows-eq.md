@@ -1,4 +1,3 @@
-# The rows of the table
+# The rows of the Gotoh table
 
-The row of `xs` holds `cellSpec xs t` for every suffix `t` of
-`ys`, longest first.
+For all sequences $x, y$, the [row of $x$](gotoh-rows.md) for $y$ is the list of [cells](cell-spec.md) of $(x, t)$ for the suffixes $t$ of $y$, longest first.

@@ -1,4 +1,4 @@
-# Kourovka Problem 17.29 (V. V. Bludov, A. M. W. Glass)
+# Finitely presented orderable groups with insoluble word problem (Kourovka 17.29)
 
 The statement that there is a
 finitely presented group $G$ that admits a bi-invariant linear order and has a finite generating

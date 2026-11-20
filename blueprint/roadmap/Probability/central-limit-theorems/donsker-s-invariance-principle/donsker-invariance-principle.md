@@ -17,6 +17,17 @@ Proof: The route combines finite-dimensional convergence from the central limit 
 tightness from a maximal inequality and a modulus-of-continuity criterion, Prokhorov's theorem,
 and uniqueness of laws on $C([0,1], \mathbb{R})$ from finite-dimensional distributions.
 
+## Background
+
+- [Existence of Brownian motion](../../stochastic-calculus/construction-and-sample-paths-of-brownian-motion/exists-is-brownian-real.md):
+  the statement takes a Brownian motion $B$ as a hypothesis, and such a process exists, so the
+  invariance principle is not vacuous.
+
 ## Sources
 
-- M. D. Donsker, An invariance principle for certain probability limit theorems, Mem. Amer. Math. Soc. 6 (1951); extension Prohorov 1956 to Polish; textbook in Billingsley, Convergence of Probability Measures, 2nd ed., Kallenberg, Foundations of Modern Probability; Lean is `C(Icc 0 1, ℝ)` polygonal process with `MemLp 2`, mean-zero variance-one standardization.
+- M. D. Donsker, *An invariance principle for certain probability limit theorems*, Memoirs of the
+  American Mathematical Society 6 (1951).
+- Yu. V. Prokhorov, *Convergence of random processes and limit theorems in probability theory*,
+  Theory of Probability and Its Applications 1 (1956), 157–214 (the extension to Polish spaces).
+- P. Billingsley, *Convergence of Probability Measures*, 2nd ed., Wiley, 1999.
+- O. Kallenberg, *Foundations of Modern Probability*, Springer. Lean is `C(Icc 0 1, ℝ)` polygonal process with `MemLp 2`, mean-zero variance-one standardization.

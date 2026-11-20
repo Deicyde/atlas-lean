@@ -1,3 +1,3 @@
 # Set of all secondary structures of a sequence
 
-All secondary structures on `s` with minimum hairpin `m` (see `mem_structures`).
+For a sequence $s$ of length $n$, the set of all secondary structures is the set of [structures within](structures-in.md) the interval $0, \dots, n - 1$.

@@ -6,4 +6,4 @@ overlined part sizes, each of which occurs as a part of $p$. For example, $\over
 
 ## Sources
 
-- Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Section 1.
+- Victor Manuel R. Aricheta and Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Section 1.

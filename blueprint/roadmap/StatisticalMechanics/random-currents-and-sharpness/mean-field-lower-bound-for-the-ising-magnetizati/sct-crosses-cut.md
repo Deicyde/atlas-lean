@@ -1,3 +1,4 @@
 # Edge with exactly one endpoint in a cut set
 
-An edge has exactly one endpoint in `T`.
+For $d, n \in \mathbb{N}$ and a set $T$ of sites of the box $\Lambda_n = \{-n, \dots, n\}^d$, an unordered pair $\{x, y\}$ of sites of $\Lambda_n$
+crosses the cut when exactly one of $x, y$ lies in $T$.

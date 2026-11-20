@@ -1,4 +1,4 @@
-# The sum-product level minima eventually lie in $(0, 2)$
+# The sum-product level minima eventually lie in $[0, 2]$
 
 For a finite set
 $A \subset \mathbb{R}$ write $A + A$ and $AA$ for the sets of all sums $a + b$ and all products

@@ -1,8 +1,8 @@
-# Positive differences of the form 6 + 4m in the Chu family set
+# Positive differences of the form 6 + 4m in the Kumar–Mohan–Pandey set
 
 Let $k$, $l$, $t$ be
-positive integers and let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$,
-$t$. Then exactly $lt + t$ elements $d$ of $A - A$ satisfy $d \ge 6$ and $d \equiv 2 \pmod 4$;
+positive integers and let $A = A_{k,l,t}$ be the Kumar–Mohan–Pandey
+set. Then exactly $lt + t$ elements $d$ of $A - A$ satisfy $d \ge 6$ and $d \equiv 2 \pmod 4$;
 that is, exactly $lt + t$ positive differences of $A$ have the form $6 + 4m$ with $m \ge 0$ an
 integer.
 

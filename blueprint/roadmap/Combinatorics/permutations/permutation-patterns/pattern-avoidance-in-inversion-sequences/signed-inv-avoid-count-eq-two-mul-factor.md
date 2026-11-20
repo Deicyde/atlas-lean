@@ -1,4 +1,4 @@
-# Three six-pattern sets with 2 · n! avoiders (Theorem 17)
+# Three sets of six signed patterns with $2 \cdot n!$ avoiders
 
 Write a length-2 signed pattern
 as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller than

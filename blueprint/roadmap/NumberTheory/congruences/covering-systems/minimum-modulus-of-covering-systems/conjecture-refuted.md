@@ -2,7 +2,7 @@
 
 There is a natural number $N$ such that no finite set of
 residue classes covering $\mathbb{Z}$ has pairwise distinct moduli that are all at least $N$.
-Hence the conjecture of Open Garden problem OPG-493 is false.
+This answers a question of Erdős in the negative: the moduli of a distinct covering system cannot all be arbitrarily large. Hough shows that the least modulus of a distinct covering system is at most $10^{18}$.
 
 ## Sources
 

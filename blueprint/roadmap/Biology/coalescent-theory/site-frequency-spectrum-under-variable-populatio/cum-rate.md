@@ -1,5 +1,7 @@
 # Cumulative coalescence intensity
 
-The cumulative coalescence intensity `R(s) = ∫_0^s 1/η` of a relative population-size
-function `η` (pairs coalesce at rate `1/η(s)` at time `s` before the present). Meaningful for
-positive `η` with `1/η` locally integrable.
+For a real function $\eta$ and a real number $s$, the cumulative coalescence intensity is
+
+$$R_\eta(s) = \int_0^s \frac{dr}{\eta(r)},$$
+
+an oriented interval integral, with the conventions $1/0 = 0$ and that a non-integrable integrand has integral $0$. For a positive relative population-size function $\eta$ with $1/\eta$ locally integrable, pairs of lineages coalesce at rate $1/\eta(s)$ at time $s$ before the present and $R_\eta(s)$ is the accumulated rate.

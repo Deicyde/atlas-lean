@@ -8,4 +8,4 @@ differentiable at $u$ with $u \rho'(u) + \rho(u - 1) = 0$.
 
 ## Sources
 
-- [O. Gorodetsky, *Rigidity of Averages over the Two Largest Prime Factors*](https://arxiv.org/abs/2608.05191), which characterizes the unique continuous function on the nonnegative reals and specifies its zero extension to negative inputs; Lean packages those clauses in `Real.IsDickmanDeBruijn`.
+- [D. Chen, *Rigidity of Averages over the Two Largest Prime Factors*](https://arxiv.org/abs/2608.05191), arXiv:2608.05191 (2026), which characterizes the unique continuous function on the nonnegative reals and specifies its zero extension to negative inputs.

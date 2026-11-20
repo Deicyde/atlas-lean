@@ -1,4 +1,9 @@
 # Integration-by-parts identity for Heisenberg's inequality
 
-The integration-by-parts identity underlying Heisenberg's inequality:
-for real-valued Schwartz `f`, `∫ (f x)² = -2 * ∫ x * f x * f' x`.
+For every real-valued Schwartz function $f$ on $\mathbb{R}$,
+
+$$
+\int_{\mathbb{R}} f(x)^2\, dx = -2 \int_{\mathbb{R}} x\, f(x)\, f'(x)\, dx.
+$$
+
+This integration by parts underlies Heisenberg's inequality.

@@ -7,4 +7,4 @@ a unit of $\mathcal{O}_K$ to the same element regarded as a unit of $K$.
 
 ## Sources
 
-- ATLAS `okUnitsToKUnits`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

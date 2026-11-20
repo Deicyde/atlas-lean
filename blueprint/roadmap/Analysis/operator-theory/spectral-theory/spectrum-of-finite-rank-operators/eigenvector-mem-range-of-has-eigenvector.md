@@ -1,4 +1,3 @@
 # Eigenvectors for nonzero eigenvalues lie in the range
 
-An eigenvector for a nonzero eigenvalue lies in the range: if
-`T v = μ • v` with `μ ≠ 0`, then `v = T (μ⁻¹ • v)`.
+Let $\mathbb{k}$ be a field, $E$ a vector space over $\mathbb{k}$ and $T$ a linear map $E \to E$. If $v$ is an eigenvector of $T$ for an eigenvalue $\mu \ne 0$, then $v$ lies in the range of $T$: $v = T(\mu^{-1} v)$.

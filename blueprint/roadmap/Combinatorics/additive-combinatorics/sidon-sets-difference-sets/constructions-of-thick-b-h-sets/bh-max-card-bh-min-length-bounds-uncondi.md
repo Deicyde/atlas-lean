@@ -9,4 +9,4 @@ $R_h^{-1}(k) \le k^h + 3^{155h} k^{h - 1/155}$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(a) (`jis-2024-24.1.2-thm-5`).
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(a) (`jis-2024-24.1.2-thm-5`).

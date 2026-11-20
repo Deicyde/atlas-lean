@@ -7,3 +7,7 @@ $S \cup \{c\}$ are traitors, then, whatever the traitors send, every loyal lieut
 decides $v$.
 
 This is condition IC2 of Theorem 1 of Lamport–Shostak–Pease.
+
+## Sources
+
+- L. Lamport, R. Shostak, M. Pease, *The Byzantine Generals Problem*, ACM Transactions on Programming Languages and Systems 4(3), July 1982, 382–401: Section 3, Theorem 1 (condition IC2), p. 390.

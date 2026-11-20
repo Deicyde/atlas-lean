@@ -1,3 +1,3 @@
 # Distant loci are unlinked in the limit
 
-Loci far apart are unlinked in the limit: `r → 1/2` as `d → ∞`.
+[Haldane's map function](haldane.md) satisfies $r(d) \to 1/2$ as $d \to \infty$.

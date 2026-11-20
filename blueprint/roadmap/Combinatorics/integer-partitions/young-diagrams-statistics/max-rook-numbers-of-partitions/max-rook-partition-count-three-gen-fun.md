@@ -10,4 +10,4 @@ This is the rational generating function of $R_3(n)$ with its denominator cleare
 
 ## Sources
 
-- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 2 (`jis-2026-26.2.6-thm-2`).
+- N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 2.

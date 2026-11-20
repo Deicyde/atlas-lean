@@ -1,3 +1,3 @@
 # Nonnegativity of binomial probabilities
 
-Binomial probabilities are nonnegative for `0 ≤ p ≤ 1`.
+For $0 \le p \le 1$ and all natural numbers $n, i$, the [binomial probability](binom-pmf.md) satisfies $B(i \mid n, p) \ge 0$.

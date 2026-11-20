@@ -1,9 +1,9 @@
 # Bounds on the critical probability
 
-- [Vertices of a lattice path encoded by a step sequence](vert-of.md)
-- [Edges of a lattice path encoded by a step sequence](edge-of.md)
-- [Event that an encoded lattice path is open](word-event.md)
-- [Self-avoiding initial segment of an encoded lattice path](good-word.md)
+- [Vertices of a lattice path given by a step sequence](vert-of.md)
+- [Edges of a lattice path given by a step sequence](edge-of.md)
+- [Event that the lattice path of a step sequence is open](word-event.md)
+- [Self-avoiding initial segment of the lattice path of a step sequence](good-word.md)
 - [Step directions of an open walk from the origin](dir-of.md)
 - [Positivity of the critical probability (Hammersley's bound)](pc-pos.md)
 - [Peierls series bounding closed dual circuits](pc-upper-bound.md)
@@ -45,3 +45,5 @@
 - [Nontrivial Bernoulli critical probability on $\mathbb{Z}^2$](pc-two-nontrivial.md)
 - [Bernoulli critical probability below one for $d \ge 2$](pc-lt-one-of-two-le-via-fk.md)
 - [Non-triviality of the percolation critical probability](pc-nontrivial-of-two-le.md)
+- [Path-counting lower bound on the critical probability](one-div-two-mul-le-pc.md)
+- [The critical probability is at most one](pc-le-one.md)

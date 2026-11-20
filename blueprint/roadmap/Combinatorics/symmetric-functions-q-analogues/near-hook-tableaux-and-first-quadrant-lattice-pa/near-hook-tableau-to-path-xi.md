@@ -15,4 +15,4 @@ of the arm and the leg, column $0$; "otherwise" then means that it lies in the l
 
 ## Sources
 
-- L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (eq:xi).
+- Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (5).

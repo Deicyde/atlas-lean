@@ -1,3 +1,3 @@
 # Opening a coordinate preserves its pivotality
 
-Opening `e` does not change whether `e` is pivotal.
+Let $E$ be a set, $A \subseteq \{0,1\}^E$, $e \in E$ and $\omega \in \{0,1\}^E$. Then $e$ is pivotal for $A$ at $\omega^{e,1}$ (the configuration $\omega$ with $e$ opened) if and only if $e$ is pivotal for $A$ at $\omega$.

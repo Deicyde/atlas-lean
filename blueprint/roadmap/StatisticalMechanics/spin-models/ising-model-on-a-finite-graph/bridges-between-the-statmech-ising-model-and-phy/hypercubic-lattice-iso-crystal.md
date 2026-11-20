@@ -1,5 +1,6 @@
-# Isomorphism of the hypercubic lattice with Physlib's crystal graph
+# Isomorphism of the hypercubic lattice with the hypercubic crystal graph
 
-The nearest-neighbour graph `hypercubicLattice d` on `ℤ^d` is isomorphic to the bond graph of
-Physlib's hypercubic crystal `CondensedMatter.Crystal.hypercubicGraph d`, by sending `x` to the
-site in cell `x`.
+For $d \in \mathbb{N}$, the nearest-neighbour graph on $\mathbb{Z}^d$ is isomorphic to the bond graph of
+the hypercubic crystal with one site in each cell $x \in \mathbb{Z}^d$ and a bond from each site to the
+sites of the neighbouring cells $x \pm e_j$ along the coordinate axes. The isomorphism sends $x$ to the
+site of the cell $x$.

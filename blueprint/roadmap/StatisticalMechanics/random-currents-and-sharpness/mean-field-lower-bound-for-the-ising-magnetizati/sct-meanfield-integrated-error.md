@@ -1,3 +1,8 @@
 # Error term bounding the derivative of the box mean-field function
 
-The error `2β(1 - c_n)(1 - ⟨σ_0⟩²) + 2β² c_n ε_n` bounding `g_n'` from above.
+For $d, n \in \mathbb{N}$ and $h, \beta \in \mathbb{R}$, this is
+
+$$2\beta (1 - c_n)\bigl(1 - m_n(\beta, h)^2\bigr) + 2\beta^2 c_n\, \varepsilon_n,$$
+
+with $m_n$ the [origin magnetization](sct-origin-mag.md), $c_n$ the [minimal magnetization ratio](sct-lattice-c.md) and
+$\varepsilon_n$ the [boundary covariance error](sct-boundary-covariance-error.md).

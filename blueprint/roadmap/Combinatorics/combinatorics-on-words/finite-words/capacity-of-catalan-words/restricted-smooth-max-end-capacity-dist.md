@@ -8,4 +8,4 @@ at most $i$, and $\mathrm{cap}(w)$ is the capacity of $w$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of `s*(n, i; q)`.
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of $s^*(n, i; q)$.

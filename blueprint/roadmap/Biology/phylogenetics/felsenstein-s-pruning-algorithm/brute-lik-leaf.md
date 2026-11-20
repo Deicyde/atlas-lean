@@ -1,3 +1,3 @@
 # Brute-force likelihood at a leaf
 
-At a leaf, the brute-force likelihood is the leaf weight.
+For every leaf $l$ and every state $s$, the [brute-force likelihood](brute-lik.md) satisfies $\Lambda(l, s) = \mathrm{obs}(l, s)$.

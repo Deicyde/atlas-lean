@@ -1,3 +1,4 @@
 # Semantic balance implies semantic compatibility
 
-Semantic balance supplies semantic compatibility by actual lookup uniqueness.
+Let $\Delta$ be a semantically balanced ownership context. Then $\Delta$ is semantically compatible:
+whenever $\Delta(e) = c$ and $\Delta(\bar e) = d$, we have $d \approx \bar c$.

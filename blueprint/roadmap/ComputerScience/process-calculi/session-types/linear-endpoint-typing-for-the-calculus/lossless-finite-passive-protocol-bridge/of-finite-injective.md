@@ -1,3 +1,5 @@
 # Injectivity of the finite protocol embedding
 
-Different finite protocols remain different in the richer representation.
+The embedding $\iota$ of finite binary session types into protocols ($\iota(\mathrm{end}) =
+\mathrm{end}$, $\iota({!S}) = {!\mathrm{N}}.\iota(S)$, $\iota({?S}) = {?\mathrm{N}}.\iota(S)$) is
+injective.

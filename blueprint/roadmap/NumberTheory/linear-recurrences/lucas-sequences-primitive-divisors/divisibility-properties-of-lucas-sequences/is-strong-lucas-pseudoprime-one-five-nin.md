@@ -8,4 +8,4 @@ $9$ divides $V_2 = -9$, where $V_n$ is the companion Lucas sequence of $(1, 5)$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.10 (example).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.10 (the definition this example illustrates; the example is not printed in the source).

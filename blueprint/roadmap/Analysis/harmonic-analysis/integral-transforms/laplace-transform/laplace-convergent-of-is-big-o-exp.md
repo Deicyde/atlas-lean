@@ -11,4 +11,4 @@ continuous on $(0, \infty)$ and bounded at infinity, but not integrable near $0$
 
 ## Sources
 
-- ATLAS NumberTheoryI N320 (Sutherland, 18.785 Number Theory I, Lecture 16); a corrected, strengthened-premise formalization of the intended convergence claim, since the source's piecewise continuity on the open ray does not give integrability near 0. This is not a literal proof of the under-specified source wording.
+- ATLAS NumberTheoryI N320 (Sutherland, 18.785 Number Theory I, Lecture 16); the statement here is a corrected form of the intended convergence claim, with a strengthened premise, since the source's piecewise continuity on the open ray does not give integrability near 0; the source's wording is under-specified.

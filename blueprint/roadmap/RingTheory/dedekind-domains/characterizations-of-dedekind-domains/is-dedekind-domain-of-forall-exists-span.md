@@ -6,4 +6,4 @@ $I = (a, b)$. Then $A$ is a Dedekind domain.
 
 ## Sources
 
-- converse of ATLAS NumberTheoryI, Theorem 3.22, derived independently.
+- The converse of A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 3, Theorem 3.22, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

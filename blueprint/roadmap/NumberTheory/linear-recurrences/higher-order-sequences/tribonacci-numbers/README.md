@@ -1,7 +1,7 @@
 # Tribonacci numbers
 
 - [Tribonacci sequence](tribonacci.md)
-- [Tribonacci sequence with initial values 1, 1, 1](tribonacci-with-initial-values111.md)
+- [Tribonacci sequence with initial values $1, 1, 1$](tribonacci-with-initial-values111.md)
 - [Generalized Tribonacci sequence](generalized-tribonacci.md)
 - [Initial value $T_0 = s_0$ of the generalized Tribonacci sequence](generalized-tribonacci-zero.md)
 - [Initial value $T_1 = s_1$ of the generalized Tribonacci sequence](generalized-tribonacci-one.md)

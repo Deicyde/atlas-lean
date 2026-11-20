@@ -8,5 +8,3 @@ $s = \operatorname{size} L + \operatorname{size} R + 1$, $m$ is the largest of t
 of $e$ and the cached maxima of those of $L$ and $R$ that are nonempty, and the check returns
 true on both $L$ and $R$. Here the height and size of a subtree are its stored fields, and the
 empty tree has height and size $0$.
-
-It is used only by the executable invariant checker.

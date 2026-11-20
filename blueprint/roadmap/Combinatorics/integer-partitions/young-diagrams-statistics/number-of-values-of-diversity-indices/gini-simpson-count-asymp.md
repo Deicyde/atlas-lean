@@ -8,4 +8,4 @@ across samples of size $N$). Then $\gamma(N) / N^2 \to 1/2$ as $N \to \infty$, t
 
 ## Sources
 
-- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 7.
+- Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Journal of Integer Sequences 29 (2026), Article 26.1.5, Proposition 7.

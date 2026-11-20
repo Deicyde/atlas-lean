@@ -15,4 +15,4 @@ $\{0, \dots, \max_c |\eta(c)| - 1\}$ are never readable, so the accepted languag
 
 ## Sources
 
-- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (the DFAO `𝒜_{η,a}`).
+- Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (the DFAO $\mathcal{A}_{\eta,a}$).

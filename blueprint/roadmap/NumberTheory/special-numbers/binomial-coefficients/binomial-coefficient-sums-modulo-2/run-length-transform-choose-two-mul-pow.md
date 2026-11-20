@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 4
+# Sum of $\binom{n}{2k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $T$ be the run length transform of the sequence $S$ with
 $S(0) = 1$ and $S(i) = 2^{i-1}$ for $i \ge 1$, i.e. of $1, 1, 2, 4, 8, \dots$. Then for every

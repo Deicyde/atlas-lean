@@ -8,4 +8,4 @@ $$\frac{u^\alpha}{1 - u^\beta} =
 
 ## Sources
 
-- Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Lemma 7 (`jis-2024-24.3.6-lem-7`).
+- Joshua P. Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Lemma 7.

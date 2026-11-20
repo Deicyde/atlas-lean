@@ -7,4 +7,4 @@ $S_{2k}(n) = S_2(n) \sum_{r=1}^{k} b_{k,r} \, S_1(n)^{r-1}$.
 
 ## Sources
 
-- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 12.
+- José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Journal of Integer Sequences 28 (2025), Article 25.1.3, Proposition 12.

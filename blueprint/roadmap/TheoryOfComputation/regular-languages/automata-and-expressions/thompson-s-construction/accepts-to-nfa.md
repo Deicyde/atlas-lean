@@ -1,4 +1,4 @@
 # Correctness of Thompson's construction
 
-The automaton accepts exactly the words the
-regular expression matches.
+For every regular expression $r$ over an alphabet $\alpha$, the ε-NFA obtained from $r$ by Thompson's
+construction accepts exactly the words that $r$ matches.

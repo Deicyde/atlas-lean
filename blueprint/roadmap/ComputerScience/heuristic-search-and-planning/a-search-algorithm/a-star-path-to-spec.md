@@ -1,6 +1,6 @@
 # A\*'s predecessor paths are simple and realize its path weights
 
-**A\*'s predecessor paths are simple and realize its path weights.** Let $G$ be a directed graph
+Let $G$ be a directed graph
 on the vertices $\{0, \dots, n-1\}$ with natural edge weights $w$, let $h$ be a consistent heuristic
 with natural values and let $s$ be a source vertex. If following the predecessor pointers that A*
 from $s$ returns, back from a vertex $v$, yields the vertex list $p$ (listed from $s$ to $v$), then

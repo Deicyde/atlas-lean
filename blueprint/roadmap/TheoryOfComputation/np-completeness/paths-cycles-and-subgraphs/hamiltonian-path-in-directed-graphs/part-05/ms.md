@@ -9,5 +9,5 @@ clause count, three times it, the diamond top, the row end, the row vertex, the 
 the clause index and the detour vertex).
 
 On the emitter's stacks such a state holds each counter as a unary stack of $\mathrm{cl}$ symbols
-and the edge bits $q$ on $Q$ reversed, as name-bit symbols; the scratch stacks $Y$ and $Z$ are
-empty, and $X$ is empty except while a new name is copied onto $V$.
+and the edge bits $q$ on $Q$ reversed, as name-bit symbols, and every other recorded list on its
+own stack ($x$ on $X$); the scratch stacks $Y$ and $Z$ are empty.

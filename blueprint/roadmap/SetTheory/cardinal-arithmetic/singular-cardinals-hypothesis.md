@@ -1,4 +1,4 @@
 # Singular cardinals hypothesis
 
-For all singular cardinal $\kappa$, if $2^{cof(\kappa)}\lt \kappa, then $\kappa^{cof(\kappa)} =
-\kappa^+$.
+For every singular cardinal $\kappa$, if $2^{\operatorname{cf}(\kappa)} < \kappa$, then
+$\kappa^{\operatorname{cf}(\kappa)} = \kappa^+$.

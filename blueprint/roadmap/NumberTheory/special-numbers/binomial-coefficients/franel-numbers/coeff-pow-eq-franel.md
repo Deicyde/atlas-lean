@@ -6,4 +6,4 @@ is the Franel number $f_m = \sum_{k=0}^{m} \binom{m}{k}^3$.
 
 ## Sources
 
-- Juntao Jin, "An Explicit Formula and a Recurrence for OEIS A265233", Lemma 3.
+- Juntao Jin, *An Explicit Formula and a Recurrence for OEIS A265233*, Journal of Integer Sequences 29 (2026), Article 26.5.3, Lemma 3.

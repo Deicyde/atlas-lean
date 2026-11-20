@@ -33,4 +33,4 @@ its ideal class.
 
 ## Sources
 
-- ATLAS lines 1012--1480, aggregated from the separately source-backed map, exactness and surjectivity declarations (not a direct declaration port), and transported through the quotient equivalence backed by lines 2607--2647.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8.

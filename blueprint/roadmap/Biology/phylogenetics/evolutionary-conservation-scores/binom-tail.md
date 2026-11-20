@@ -1,4 +1,7 @@
 # Upper tail of the binomial distribution
 
-The upper tail `P(X ≥ k) = ∑_{i = k}^{n} C(n, i) p^i (1 - p)^(n - i)` of the binomial law
-`Bin(n, p)`.
+For natural numbers $n, k$ and a real $p$, put
+
+$$T_{n,k}(p) = \sum_{i=k}^{n} \binom{n}{i} p^i (1 - p)^{n - i},$$
+
+an empty sum when $k > n$. For $0 \le p \le 1$ it is $P(X \ge k)$ for $X \sim \mathrm{Bin}(n, p)$.

@@ -1,3 +1,4 @@
 # Vertex subsets as ghost-free subsets of the extended vertex set
 
-Subsets of `V` correspond to subsets of `V ⊔ {ghost}` not containing the ghost.
+For a finite set $V$ and an added ghost vertex $\mathfrak g$, the subsets of $V$ correspond bijectively to the
+subsets of $V \sqcup \{\mathfrak g\}$ that do not contain $\mathfrak g$, each subset of $V$ being sent to itself.

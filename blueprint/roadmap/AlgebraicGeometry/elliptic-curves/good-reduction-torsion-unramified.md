@@ -14,4 +14,4 @@ IV.1, VII.3, and VII.7.
 
 ## Sources
 
-- J. H. Silverman, *The Arithmetic of Elliptic Curves*, 2nd ed., GTM 106, Springer, Theorem VII.7.1.
+- Joseph H. Silverman, *The Arithmetic of Elliptic Curves*, 2nd ed., GTM 106, Springer, 2009, Theorem VII.7.1, the implication (a) ⇒ (b), proved in VII.4.1.

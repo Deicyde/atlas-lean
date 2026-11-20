@@ -9,4 +9,4 @@ $$\sum_{j=0}^{n-m} F^{(m)}_j F^{(m+1)}_{n-m-j} = F^{(m+1)}_n - F^{(m)}_n.$$
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 1.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 1.

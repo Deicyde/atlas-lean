@@ -1,4 +1,6 @@
 # Dirac measures are stable of every index
 
-A Dirac law satisfies the fixed-dilation identity at every admissible index.
-These are degenerate rescaling identities, with centering `na - n^(1/α)a`.
+For every $a \in \mathbb{R}$ and every $\alpha$ with $0 < \alpha \le 2$, the Dirac measure
+$\delta_a$ is [stable of index $\alpha$](is-stable.md): $\delta_a^{*n} = \delta_{na}$ is the image
+of $\delta_a$ under $x \mapsto n^{1/\alpha} x + (na - n^{1/\alpha} a)$. These are degenerate
+rescaling identities.

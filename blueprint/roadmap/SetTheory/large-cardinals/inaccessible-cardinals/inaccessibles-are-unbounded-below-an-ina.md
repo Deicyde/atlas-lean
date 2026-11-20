@@ -1,9 +1,8 @@
 # Inaccessibles are unbounded below an inaccessible fixed point
 
-Inaccessibles below an inaccessible fixed point are unbounded: if they were
-bounded by `a`, the set would inject into `Iic a.val`, hence have size at most
-`lift (a.val + 1).card < lift κ` — contradicting `mk_inaccessibleBelow`.
+If $\kappa$ is an inaccessible fixed point, then the inaccessible cardinals below $\kappa$ are
+unbounded in $\kappa$: for every ordinal $\alpha < \kappa$ there is an inaccessible cardinal $\mu$
+with $\alpha < \mu < \kappa$.
 
-## Sources
-
-- Inaccessibles below an inaccessible fixed point are unbounded.
+Proof: otherwise all of them lie in $\alpha + 1$, a set of cardinality less than $\kappa$, whereas
+there are exactly $\kappa$ of them.

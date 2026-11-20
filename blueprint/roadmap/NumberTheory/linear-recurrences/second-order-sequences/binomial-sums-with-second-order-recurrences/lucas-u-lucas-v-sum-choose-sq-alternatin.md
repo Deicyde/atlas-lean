@@ -9,4 +9,4 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k}^2 U_{2n-k} V_k = (-1)^n \binom{2n}{n} U_{
 
 ## Sources
 
-- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Theorem 2.1.
+- John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62(1) (2024), 57–64, Theorem 2.1.

@@ -1,3 +1,3 @@
 # Expected nonsynonymous fixed differences
 
-Expected nonsynonymous fixed differences `E D_n = λ_D f₀ L_n + A`.
+In an [expected-count model](mkmodel.md), the expected number of nonsynonymous fixed differences is $\mathbb{E}D_n = \lambda_D f_0 L_n + A$.

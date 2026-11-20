@@ -5,8 +5,8 @@ $G$ satisfies $\varphi(|G|) \le |\mathrm{Aut}(G)|$: there is a finite group $G$ 
 $|\mathrm{Aut}(G)| < \varphi(|G|)$, where $\varphi$ is Euler's totient function and
 $\mathrm{Aut}(G)$ is the group of automorphisms of $G$.
 
-Bray and Wilson prove more than is stated here: the ratio $|\mathrm{Aut}(G)| / \varphi(|G|)$ can be
-made arbitrarily small.
+Bray and Wilson prove more: the ratio $|\mathrm{Aut}(G)| / \varphi(|G|)$ can be made arbitrarily
+small.
 
 ## Sources
 

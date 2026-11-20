@@ -12,4 +12,4 @@ the hypothesis forces $n = 1$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, the helper `cor_10_16_of_adjoin` for Corollary 10.16; the generation $B = A[\zeta]$ is assumed here rather than proved from the integral-closure setup.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 10, Corollary 10.16, https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/. Here $B = A[\zeta]$ is assumed rather than derived.

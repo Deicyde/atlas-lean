@@ -9,7 +9,7 @@ with $a + i d \in A$ for all natural numbers $i < k$.
 This answers Katz's Problem 1.5 affirmatively. On the AIM additive-combinatorics list B. Green
 observes that a large subset of $A$ is Freiman-isomorphic to a dense subset of
 $\mathbb{Z}/p\mathbb{Z}$ (Ruzsa's lemma), and Szemerédi's theorem with Varnavides averaging gives
-$\gg_{k,C} |A|^2$ $k$-term progressions. The pairs with $d = 0$ counted here cover small sets.
+$\gg_{k,C} |A|^2$ $k$-term progressions. The pairs with $d = 0$, which are also counted, take care of small sets.
 
 ## Sources
 

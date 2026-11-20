@@ -9,8 +9,8 @@ holds exactly when $m$ is a value of $\beta$, and, for every $i \ge 0$, $\alpha_
 least integer $m > \alpha_i$ such that $n_0 + i + 1 \in \{\alpha_0, \dots, \alpha_i, m\}$ holds
 exactly when $m$ is a value of $\beta$.
 
-The hypothesis $\beta_i \ge n_0$ is not used in the proof.
+The hypothesis $\beta_i \ge n_0$ is not needed: the general form of this statement drops it.
 
 ## Sources
 
-- Benoit Cloitre, N. J. A. Sloane, and Matthew J. Vandermast, "Numerical Analogues of Aronson's Sequence," Journal of Integer Sequences 6 (2003), Article 03.2.2, Theorem `ThAT1`, lines 782–784 (transform defined lines 761–780), https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.tex
+- Benoit Cloitre, Neil J. A. Sloane and Matthew J. Vandermast, *Numerical Analogues of Aronson's Sequence*, Journal of Integer Sequences 6 (2003), Article 03.2.2, Section 5 (the Aronson transform), Theorem 3, https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.html

@@ -6,4 +6,4 @@ number with $\ell(n+1) + 1 \le p + k \le (\ell+1)(n+1)$, then $J_k(n+1) = p + k 
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Theorem 2.
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *Analytical Study and Efficient Evaluation of the Josephus Function*, Journal of Integer Sequences 27 (2024), Article 24.3.8, Theorem 2.

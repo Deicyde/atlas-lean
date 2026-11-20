@@ -7,7 +7,7 @@ $e^k < N \le e^{k+1}$, $N \equiv p \pmod{p\,\ell_2(p)}$ and $N \equiv \pm 2 \pmo
 $S \le 1 / (4p\,\ell_2(p))$ whenever $16p\,\ell_2(p) \le e^k$, and in all cases
 $S \le (1/8 + 4e^{-k} p\,\ell_2(p)) / (p\,\ell_2(p))$.
 
-The paper's further clauses, involving $z_k$, $c_k$ and $d_k$, are not stated here.
+The paper's statement has further clauses, involving $z_k$, $c_k$ and $d_k$.
 
 ## Sources
 

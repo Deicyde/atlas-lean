@@ -5,4 +5,4 @@ decision problem $L$ in NP has a polynomial-time many-one reduction to SET PACKI
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), SET PACKING; R. M. Karp, "Reducibility among combinatorial problems" (1972).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), SET PACKING; Richard M. Karp, "Reducibility among combinatorial problems" (1972).

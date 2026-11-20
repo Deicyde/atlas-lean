@@ -1,3 +1,4 @@
 # Variance of the gamma law
 
-The variance of the gamma law with shape `a > 0` and rate `r > 0` is `a / r ^ 2`.
+For $a, r > 0$, the variance of the gamma law $\Gamma(a, r)$ with shape $a$ and rate $r$ (of the
+identity under it) is $a / r^2$.

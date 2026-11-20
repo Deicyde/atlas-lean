@@ -10,4 +10,4 @@ multiplicity).
 
 ## Sources
 
-- L. V. Ahlfors, Complex Analysis, 3rd ed., §5.2. It follows from `argumentPrinciple_closedBall_general`; the hypothesis `hint` is unused and keeps the source's shape.
+- L. V. Ahlfors, Complex Analysis, 3rd ed., §5.2. It follows from the [general form](argument-principle-closed-ball-general.md); the integrability hypothesis is not needed and is kept to match the source.

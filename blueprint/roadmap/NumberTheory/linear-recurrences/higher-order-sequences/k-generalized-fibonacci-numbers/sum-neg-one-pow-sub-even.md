@@ -10,4 +10,4 @@ $$\sum_{j=0}^{n-1} (-1)^j \bigl(F^{(2m)}_j - F^{(2m-2)}_j\bigr) =
 
 ## Sources
 
-- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 15.
+- Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci $m$-Step Numbers", Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem 15.

@@ -6,4 +6,4 @@ space $V$. Then $\dim_{\mathbb{C}} V$ divides $|G|$.
 
 ## Sources
 
-- Bielefeld Corollary 2.
+- *Burnside's $p^a q^b$-theorem*, lecture note, Universität Bielefeld (2006), Corollary 2, https://www.math.uni-bielefeld.de/~sek/select/rw3.pdf.

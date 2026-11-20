@@ -3,8 +3,7 @@
 There are infinitely many natural
 numbers $k$ such that $4k^2 + 2k + 1$ is prime.
 
-The source derives this from its Conjecture A (Bunyakovsky's conjecture). Only this polynomial
-is stated here, not the full Bunyakovsky conjecture nor the companion polynomial $9k^2 + 6k + 2$.
+The source derives this from its Conjecture A (Bunyakovsky's conjecture), together with the analogous statement for the polynomial $9k^2 + 6k + 2$.
 
 ## Sources
 

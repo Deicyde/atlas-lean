@@ -1,6 +1,6 @@
 # Bitonic sorter
 
-## Comparators on `ℕ`-indexed wires
+## Comparators on wires indexed by $\mathbb{N}$
 
 - [Comparator on natural-number-indexed wires](cmp.md)
 - [Running a comparator network on natural-number-indexed wires](run-n.md)
@@ -13,7 +13,7 @@
 - [Half-cleaner](half-cleaner.md)
 - [Output of the half-cleaner](run-n-half-cleaner.md)
 
-## Bitonic `0`-`1` sequences
+## Bitonic $0$-$1$ sequences
 
 - [Interval indicators](is-interval.md)
 - [Bitonic 0-1 sequences](is-bitonic.md)
@@ -23,13 +23,13 @@
 
 - [Sorted on a block](sorted-on.md)
 - [Bitonic merger](bitonic-merge.md)
-- [The bitonic merger sorts every bitonic `0`-`1` input](bitonic-merge-sorts.md)
+- [The bitonic merger sorts every bitonic $0$-$1$ input](bitonic-merge-sorts.md)
 
 ## The bitonic sorter
 
 - [Reversing the comparators conjugates the network by complement on Booleans](run-n-swap.md)
 - [Batcher's bitonic sorter on a block of wires](bitonic-sort-n.md)
-- [The bitonic sorter sorts every `0`-`1` input](bitonic-sort-n-sorts.md)
+- [The bitonic sorter sorts every $0$-$1$ input](bitonic-sort-n-sorts.md)
 
 ## Sizes
 
@@ -37,7 +37,7 @@
 - [Size of the bitonic merger](length-bitonic-merge.md)
 - [Size of the bitonic sorter on a block of wires](length-bitonic-sort-n.md)
 
-## The network on `2 ^ k` wires
+## The network on $2^k$ wires
 
 - [Restricting comparators to finitely many wires](of-pairs.md)
 - [Extension of a Boolean vector by false](extend-false.md)

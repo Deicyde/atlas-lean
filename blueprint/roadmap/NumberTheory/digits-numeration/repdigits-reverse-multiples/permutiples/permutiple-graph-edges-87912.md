@@ -11,4 +11,4 @@ Here $87912 = 4 \cdot 21978$, and $21978$ is $87912$ with its digits reversed.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Figure 1.
+- Benjamin V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Figure 1.

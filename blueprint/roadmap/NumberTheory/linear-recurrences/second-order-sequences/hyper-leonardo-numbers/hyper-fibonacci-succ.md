@@ -5,4 +5,4 @@ hyper-Fibonacci numbers $F^{(r)}_n$ satisfy $F^{(r+1)}_n = \sum_{k=0}^{n} F^{(r)
 
 ## Sources
 
-- Spreafico and Catarino, INTEGERS 26 (2026), Article A48, after Proposition 5.
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, after Proposition 5.

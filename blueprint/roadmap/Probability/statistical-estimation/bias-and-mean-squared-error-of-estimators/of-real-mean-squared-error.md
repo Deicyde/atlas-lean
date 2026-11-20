@@ -8,4 +8,4 @@ mean squared error of $W$ at $\theta$ under $\mu$.
 
 ## Sources
 
-- blueprint `af_fd40353442120bd19166139d`.
+- G. Casella and R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury, 2002, Definition 7.3.1 (mean squared error).

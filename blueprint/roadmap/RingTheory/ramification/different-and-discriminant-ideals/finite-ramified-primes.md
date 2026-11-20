@@ -8,4 +8,4 @@ over $A$ when the localization $B_{\mathfrak P}$ is formally unramified over $A$
 
 ## Sources
 
-- ATLAS `NumberTheoryI` Corollary 12.20, the statement for primes of $B$.
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 12, Corollary 12.20 (the statement for primes of $B$), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

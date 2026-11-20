@@ -1,4 +1,4 @@
-# Finite ownership maps for the original passive-name typing judgement
+# Finite ownership maps for passive-name session typing
 
 - [Polarized ownership map of a finite channel context](of-finite.md)
 - [Lookup in the finite-context ownership map](lookup-of-finite.md)

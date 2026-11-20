@@ -7,4 +7,5 @@ The value is taken in $\mathbb{Q}$ so that the displayed quotient is represented
 
 ## Sources
 
-- Paul Barry, "Generalized Catalan Numbers Associated with a Family of Pascal-like Triangles," <https://cs.uwaterloo.ca/journals/JIS/VOL22/Barry3/barry422.tex>.
+- Paul Barry, *Generalized Catalan Numbers Associated with a Family of Pascal-like Triangles*, Journal of Integer
+  Sequences 22 (2019), Article 19.5.8, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Barry3/barry422.tex>.

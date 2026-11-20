@@ -8,4 +8,4 @@ $|\mu_i| \ge \varepsilon$ is finite.
 
 ## Sources
 
-- Compact normal spectral theorem, Hilbert-Schmidt and Riesz 1910s; Reed-Simon I; Rudin Functional Analysis; Lean states complex Hilbert compact `IsStarNormal` case with same finite-level-set vanishing condition and same-universe index.
+- Compact normal spectral theorem, Hilbert-Schmidt and Riesz 1910s; Reed-Simon I; Rudin Functional Analysis. The statement here is the case of a compact normal operator on a complex Hilbert space, with the same finiteness condition on the level sets.

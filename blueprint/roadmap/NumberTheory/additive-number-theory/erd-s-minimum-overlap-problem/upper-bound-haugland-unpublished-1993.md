@@ -5,4 +5,4 @@ $C_{1b} \le 0.385694$.
 
 ## Sources
 
-- Haugland, unpublished 1993; Optimization Problems, Constant 1b.
+- Jan Kristian Haugland, unpublished (1993); *Optimization Constants in Mathematics* (crowdsourced repository curated by Terence Tao), Constant 1b, https://teorth.github.io/optimizationproblems/constants/1b.html.

@@ -7,4 +7,4 @@ if and only if $L$ is a $\mathbb{Z}$-lattice in $E$, that is, $L$ spans $E$ over
 
 ## Sources
 
-- ATLAS `NumberTheoryI`, Lemma 14.3 (full-rank clause only).
+- ATLAS NumberTheoryI, Lemma 14.3 (full-rank clause only).

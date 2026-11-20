@@ -1,3 +1,5 @@
 # Recursion for the Poisson likelihood
 
-The likelihood recursion `P(o + 1 | μ) = P(o | μ) μ / (o + 1)`.
+For every real $\mu$ and natural number $o$, the [Poisson likelihood](poisson-lik.md) satisfies
+
+$$L(\mu, o + 1) = \frac{L(\mu, o)\, \mu}{o + 1}.$$

@@ -1,4 +1,4 @@
-# Kourovka Problem 11.104(b) (Eulerian polynomials and $p$-solvability)
+# Eulerian polynomials and $p$-solvability (Kourovka 11.104(b))
 
 This is the
 statement that for every finite group $G$, every prime $p$ and every Eulerian function $\varphi$ of

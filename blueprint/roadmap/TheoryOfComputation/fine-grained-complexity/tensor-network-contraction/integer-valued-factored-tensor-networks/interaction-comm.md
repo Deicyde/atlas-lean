@@ -1,3 +1,4 @@
 # Interaction is symmetric under swapping endpoints
 
-Reading an interaction from the other endpoint swaps its states.
+For every factored tensor network on a linearly ordered vertex set, all vertices $a, b$ and all
+states $z, z'$, the interaction satisfies $I_{a,b}(z, z') = I_{b,a}(z', z)$.

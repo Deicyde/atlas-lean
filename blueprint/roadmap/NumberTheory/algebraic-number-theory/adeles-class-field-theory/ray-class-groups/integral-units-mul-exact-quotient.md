@@ -15,4 +15,4 @@ $\mathcal{O}_K^\times$.
 
 ## Sources
 
-- ATLAS `exactSeq_exact_at_units`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

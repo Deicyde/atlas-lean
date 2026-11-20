@@ -1,4 +1,4 @@
-# Unfolding never yields a regular-cursor protocol
+# One-step unrolling never yields a graph cursor
 
-Unfolding always exposes an action or completion, never another silent
-regular-cursor wrapper. Cycles therefore cannot consist only of unfolding.
+For every protocol $S$, every protocol graph $G$, node $i$ of $G$ and Boolean $b$, $\mathrm{unf}(S)
+\ne \langle G,i,b\rangle$: unrolling once always exposes $\mathrm{end}$ or an action.

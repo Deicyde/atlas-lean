@@ -12,6 +12,6 @@ $F(\mathrm{U}) = H - \max(p(i, k), c(i, k))$ and $F(\mathrm{R}) = r$. Then for e
 $o$ and flag $v$, the generator for these data, started at stage $\mathrm{oC1}$ of block $(i, k)$
 with flag $v$, counters $F$ and output $o$, reaches stage $\mathrm{oHead}$ of block $(i, k)$ with
 flag false, counters $F$ and output $e$ followed by $o$ in at most
-$\mathrm{oBodyB}(g, H, d, V) = 3 V^2 + 35 V + 2 g H + 7 H + 2 d + 46$ steps, where $e$ is the
+$3 V^2 + 35 V + 2 g H + 7 H + 2 d + 46$ steps (the [step budget of one overflow iteration](o-body-b.md)), where $e$ is the
 encoding of the dense clause over $V$ variables whose literals are those of the overflow clause
 $(t, i, k, r)$.

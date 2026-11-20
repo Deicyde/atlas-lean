@@ -1,3 +1,3 @@
 # $\pm 1$ value of a bit
 
-The `±1` value of a bit: `false ↦ 1`, `true ↦ -1`.
+For a bit $b \in \{0, 1\}$, its $\pm 1$ value is $s(b) = (-1)^b$: $s(0) = 1$ and $s(1) = -1$.

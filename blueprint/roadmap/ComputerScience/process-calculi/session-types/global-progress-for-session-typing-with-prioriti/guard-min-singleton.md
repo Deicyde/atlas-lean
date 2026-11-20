@@ -1,4 +1,5 @@
 # A guard owning only its own endpoint satisfies the condition
 
-A guard with only its own endpoint is permitted to keep using that
-endpoint sequentially at the same rank. Only DIFFERENT keys must rank later.
+For every endpoint $e$ and capability $c$ of rank $k$, the guard condition $\mathrm{Min}_{\{e
+\mapsto c\}}(e,k)$ holds: in the one-entry context $\{e \mapsto c\}$ there is no endpoint other than
+$e$, so the requirement that every other active endpoint has rank $> k$ is vacuous.

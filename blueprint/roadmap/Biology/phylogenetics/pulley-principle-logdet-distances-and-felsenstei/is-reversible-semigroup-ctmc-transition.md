@@ -1,5 +1,3 @@
 # Reversible continuous-time models give reversible semigroups
 
-A reversible continuous-time model gives a reversible semigroup: if `π` is in detailed
-balance with the generator `Q`, the transition functions `exp (t • Q)` form a reversible
-semigroup for `π`.
+Let $S$ be a finite state set, $Q$ a real $S \times S$ matrix and $\pi$ real weights with $\pi(a) Q_{ab} = \pi(b) Q_{ba}$ for all $a, b$. Then the matrices $P_t = \exp(tQ)$, $t \in \mathbb{R}$, form a [reversible semigroup](is-reversible-semigroup.md) for $\pi$.

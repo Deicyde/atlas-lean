@@ -6,4 +6,4 @@ prime divisor $p$ with $p \equiv 3 \pmod 4$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Corollary 1(d).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Corollary 1(d).

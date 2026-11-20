@@ -11,4 +11,4 @@ $$d_{n,m}(k) = \binom{nm}{k} -
 
 ## Sources
 
-- Stephan Mertens, "Domination Polynomial of the Rook Graph", Theorem 1 (`thm:R-E`).
+- Stephan Mertens, *Domination Polynomial of the Rook Graph*, Journal of Integer Sequences 27 (2024), Article 24.3.7, https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens/mertens6.html, Theorem 1 (`thm:R-E`).

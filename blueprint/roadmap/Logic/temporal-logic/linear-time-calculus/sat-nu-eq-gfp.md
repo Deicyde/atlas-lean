@@ -1,3 +1,4 @@
 # ν-formulas denote greatest fixed points
 
-The ν fixed point is Mathlib's greatest fixed point of the operator.
+The set of positions where $\nu X.\, \varphi$ holds is the greatest fixed point of the monotone
+operator $S \mapsto \llbracket \varphi \rrbracket_{X := S}$ on sets of positions.

@@ -11,4 +11,4 @@ $X^r (X + r)(X + r + 1) \cdots (X + n - 1)$.
 
 ## Sources
 
-- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers", Journal of Integer Sequences 18 (2015), Article 15.10.1, Theorem `thm:rstir`, line 201, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
+- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers", Journal of Integer Sequences 18 (2015), Article 15.10.1, Theorem 5, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.pdf>.

@@ -1,5 +1,3 @@
 # McCaskill's algorithm
 
-**McCaskill's algorithm** (inside part): over the sum-product semiring `ℝ` with Boltzmann
-weights `exp (-e i j / RT)`, the inside value of the whole sequence is the partition function.
-This is an algebraic identity valid for every real `RT`.
+For all real pair energies $e$ and every real $RT$, the [inside value](inside.md) of the whole sequence with real weights $w(i, j) = \exp(-e(i, j)/RT)$ equals the [partition function](partition-function.md).

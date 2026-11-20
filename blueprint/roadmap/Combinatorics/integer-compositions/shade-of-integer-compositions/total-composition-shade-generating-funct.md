@@ -8,8 +8,6 @@ $$A_{i_2, i_3, s_1, s_3} = (s_1 - s_3) \prod_{i_3 < i < i_2} (1 - q^{s_1 - i + 1
 \sum_{i_3 < j < i_2} \Big( \prod_{i_3 < i < i_2, i \ne j} (1 - q^{s_1 - i + 1}) \Big)
 \frac{j(q - 1) + q^{s_1 + 1 - j} + s_1 - q(1 + s_1)}{1 - q},$$
 
-
-
 $$B_{i_2} = 1 + \sum_{m \ge 1} q^{-i_2 m - m(m - 1)/2} (1 - q)^{-m} q^{m(1 + 2 i_2 + m)/2},$$
 
 and for natural numbers $i, j, s$ put
@@ -23,8 +21,6 @@ $$D_L(q) = \sum_{i_1 \ge 1} \sum_{s_1 \ge i_1 + 2} \Big( \frac{1}{1 - q} \Big)^{
 \sum_{i_2 = i_1 + 2}^{s_1 + 1} \sum_{s_2 \ge s_1 + 1} \sum_{i_3 = i_1 + 1}^{i_2 - 1}
 \sum_{s_3 = i_3}^{s_1 - 1} q^{i_3 s_1 + s_2 + s_3 - (i_3 + i_3^2)/2}
 \Big( \frac{1}{1 - q} \Big)^{i_2 - i_3} A_{i_2, i_3, s_1, s_3} B_{i_2},$$
-
-
 
 $$D_R(q) = \sum_{i \ge 1} \sum_{s \ge i} \Big( \prod_{r=1}^{i-1} (1 - q^{s - r}) \Big)
 \frac{q^s}{(1 - q)^{i-1}} \Big( \binom{s - i + 1}{2} \sum_{m=0}^{s-1} \frac{q^m}{(1 - q)^m}
@@ -50,4 +46,4 @@ shade.
 
 ## Sources
 
-- Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Theorem 1 (`jis-2024-24.5.6-thm-1`).
+- Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Theorem 1.

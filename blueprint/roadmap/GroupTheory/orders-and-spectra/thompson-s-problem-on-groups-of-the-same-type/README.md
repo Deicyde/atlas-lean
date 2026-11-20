@@ -5,5 +5,5 @@
 - [Characterization of almost simple groups by power-equation type (Kourovka 21.134(b))](conjecture.md)
 - [Power-equation type does not characterize almost simple groups](conjecture-refuted.md)
 - [Groups of the same type](same-type.md)
-- [Kourovka Problem 12.37 (J. G. Thompson)](soluble-of-same-type-as-soluble.md)
+- [Solubility of groups of the same type as a soluble group (Kourovka 12.37)](soluble-of-same-type-as-soluble.md)
 - [Solubility is not determined by the type](soluble-of-same-type-as-soluble-refuted.md)

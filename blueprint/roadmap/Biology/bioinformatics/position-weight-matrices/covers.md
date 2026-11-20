@@ -1,4 +1,3 @@
 # Coverage condition for motif columns
 
-Every letter can occur in every motif column: for each column `i` and letter `b` some
-sequence has `b` at offset `i` of some possible occurrence. This keeps the M-step positive.
+Sequences $x^{(1)}, \dots, x^{(N)}$ cover the motif columns if for every column $i$ and letter $b$ there are a sequence $m$ and a latent $z$ with a start $j$ such that $x^{(m)}_{j+i} = b$.

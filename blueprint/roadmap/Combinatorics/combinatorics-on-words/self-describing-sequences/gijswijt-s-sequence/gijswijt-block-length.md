@@ -10,4 +10,4 @@ string $S_t$ is the run of terms after position $(m+1)\,\beta^{(m)}(t)$ up to th
 
 ## Sources
 
-- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks `B_t^{(m)}`, glue strings `S_t^{(m)}`, and their lengths `β^{(m)}(t)`).
+- Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks $B_t^{(m)}$, glue strings $S_t^{(m)}$, and their lengths $\beta^{(m)}(t)$), https://cs.uwaterloo.ca/journals/JIS/VOL28/Vandepol/vandepol5.html

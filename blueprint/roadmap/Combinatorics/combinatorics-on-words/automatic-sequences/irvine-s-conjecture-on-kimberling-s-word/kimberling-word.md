@@ -10,4 +10,4 @@ Every block $K_n$ is a prefix of $k$, so $k$ is the common extension of the bloc
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 (the limit word `k`) and Section 5 (`k'_n = k_{n+1}`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 (the limit word $k$) and Section 5 ($k'_n = k_{n+1}$).

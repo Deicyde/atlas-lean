@@ -9,4 +9,4 @@ is viewed as a birational map. The variety $X'$ need not be smooth or projective
 
 ## Sources
 
-- H.-Y. Lin and E. Shinder, Motivic invariants of birational maps, Definition 4.1.
+- Hsueh-Yung Lin and Evgeny Shinder, *Motivic invariants of birational maps*, Annals of Mathematics 199 (2024), no. 1, 445–478, Definition 4.1.

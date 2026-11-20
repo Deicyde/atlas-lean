@@ -9,4 +9,4 @@ with the convention $0^0 = 1$.
 
 ## Sources
 
-- R. L. Graham, D. E. Knuth, and O. Patashnik, *Concrete Mathematics*, 2nd ed., Section 6.1.
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, Section 6.1.

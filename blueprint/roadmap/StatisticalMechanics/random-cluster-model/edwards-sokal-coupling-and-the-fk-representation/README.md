@@ -2,7 +2,7 @@
 
 - [The Ising model as the two-state Potts model](the-ising-model-as-the-two-state-potts-model/README.md)
 - [The Potts critical temperature and the FK critical parameter](the-potts-critical-temperature-and-the-fk-critic/README.md)
-- [The q-state Potts model on a finite graph](the-q-state-potts-model-on-a-finite-graph/README.md)
+- [The $q$-state Potts model on a finite graph](the-q-state-potts-model-on-a-finite-graph/README.md)
 - [The Edwards–Sokal coupling](the-edwards-sokal-coupling/README.md)
 - [Compatible colorings in the Edwards–Sokal coupling](compatible-colorings-in-the-edwards-sokal-coupli/README.md)
 - [The Edwards–Sokal coupling with wired boundary conditions](the-edwards-sokal-coupling-with-wired-boundary-c/README.md)

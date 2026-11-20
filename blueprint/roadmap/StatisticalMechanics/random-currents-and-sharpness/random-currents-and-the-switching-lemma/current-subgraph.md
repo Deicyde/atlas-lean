@@ -1,3 +1,4 @@
 # Subgraph of edges carrying positive current
 
-The subgraph of `G` of edges with `n_e ≥ 1`.
+For a finite simple graph $G$ and a current $n$, this is the subgraph of $G$ whose edges are the edges $e$ with
+$n_e \ge 1$.

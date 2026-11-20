@@ -7,4 +7,4 @@ $x + t v_i$ in the interior of $K$.
 
 ## Sources
 
-- Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction's illumination-number definition; finite existence is the standard compact-convex-body qualification.
+- Andrii Arman, Jaskaran Singh Kaire and Andriy Prymak, Hadwiger's conjecture for cap bodies, arXiv:2510.25968v3 (2025), introduction's illumination-number definition; finite existence is the standard compact-convex-body qualification.

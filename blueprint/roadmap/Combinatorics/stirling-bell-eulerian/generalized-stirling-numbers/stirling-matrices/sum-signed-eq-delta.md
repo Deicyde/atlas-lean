@@ -9,4 +9,4 @@ $$\sum_{k_1=1}^{i} \sum_{k_2=1}^{j}
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Corollary 10.
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Journal of Integer Sequences 27 (2024), Article 24.5.3, Corollary 10.

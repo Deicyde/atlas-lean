@@ -11,4 +11,4 @@ The cube is scaled to covariance identity, so this is the unit-variance conventi
 
 ## Sources
 
-- Klartag--Lehec, arXiv:2507.15495v1, Introduction.
+- B. Klartag and J. Lehec, *Thin-shell bounds via parallel coupling*, arXiv:2507.15495v1 (2025), Introduction.

@@ -8,12 +8,16 @@ Zeckendorf digit sequence of $n$, let $\Delta^{(r)}$ and $\Delta_k^{(r)}$ be the
 truncated variation on binary sequences, and let $\varphi$ be the golden ratio. Then for all
 integers $r \ge 1$, $N \ge 1$, $k \ge 2$ and $d, d' \in \mathbb{Z}$,
 
-$$\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d,\ \Delta_k^{(r)}(\iota(n)) = d'\}
-\le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d,\ \Delta_k^{(r)} = d')$$
+$$
+\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d,\ \Delta_k^{(r)}(\iota(n)) = d'\}
+\le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d,\ \Delta_k^{(r)} = d')
+$$
 
 and
 
-$$\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d\} \le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d).$$
+$$
+\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d\} \le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d).
+$$
 
 ## Sources
 

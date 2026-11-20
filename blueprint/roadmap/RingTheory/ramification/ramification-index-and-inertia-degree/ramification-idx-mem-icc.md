@@ -8,4 +8,4 @@ $\mathfrak{q}$ over $\mathfrak{p}$ satisfies $1 \le e_{\mathfrak{q}} \le n$.
 
 ## Sources
 
-- ATLAS NumberTheoryI, Corollary 5.36 (the $e_{\mathfrak{q}}$ part).
+- A. V. Sutherland, *Number Theory I*, MIT 18.785 lecture notes (Fall 2021), Lecture 5, Corollary 5.36 (the statement for $e_{\mathfrak{q}}$), https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/.

@@ -15,4 +15,4 @@ The paper's word "aperiodic" is dropped, as in Theorem 46 and Corollary 48.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 49 (`jis-2025-25.1.5-cor-49`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 49 (`jis-2025-25.1.5-cor-49`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

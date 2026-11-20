@@ -9,4 +9,5 @@ Commutation is required on all of $E$, not only on $K$.
 
 ## Sources
 
-- A. Markov, C. R. Acad. Sci. URSS 1936 and S. Kakutani, Proc. Imp. Acad. Tokyo 14 (1938) 242-245, Markov-Kakutani fixed-point theorem; Lean states real normed nonempty compact convex case with globally commuting `E →ᴬ[ℝ] E` family.
+- A. Markov, C. R. (Doklady) Acad. Sci. URSS, 1936.
+- S. Kakutani, *Two fixed-point theorems concerning bicompact convex sets*, Proc. Imp. Acad. Tokyo 14 (1938), 242–245. Lean states real normed nonempty compact convex case with globally commuting `E →ᴬ[ℝ] E` family.

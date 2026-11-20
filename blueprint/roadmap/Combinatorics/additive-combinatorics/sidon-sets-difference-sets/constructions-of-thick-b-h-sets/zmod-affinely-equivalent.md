@@ -7,4 +7,4 @@ such that $A_2 = \{d a + s : a \in A_1\}$.
 
 ## Sources
 
-- Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.
+- Kevin O'Bryant, *Constructing Thick $B_h$-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.

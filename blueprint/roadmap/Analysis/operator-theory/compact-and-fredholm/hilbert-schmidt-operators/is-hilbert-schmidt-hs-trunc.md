@@ -1,3 +1,3 @@
 # Truncated matrices are Hilbert–Schmidt
 
-A truncation of any matrix is Hilbert–Schmidt: it is supported on a finite set.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. For every infinite matrix $a$ with entries in $\mathbb{K}$ and every $N \in \mathbb{N}$, the [truncation](hs-trunc.md) $a^{(N)}$ is [Hilbert–Schmidt](is-hilbert-schmidt.md), since it has only finitely many nonzero entries.

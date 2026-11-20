@@ -1,4 +1,3 @@
 # BLUP is the conditional expectation
 
-**BLUP is the conditional expectation** in the Gaussian mixed model:
-`𝔼[u | y] = G Zᵀ V⁻¹ (y - X b)` almost surely.
+Under the hypotheses of [BLUP as a conditional law](cond-distrib-mixed-model.md), the conditional expectation of $u$ given $y = Xb + Zu + e$ equals $G Z^\top V^{-1} (y - Xb)$ $P$-almost everywhere, where $V = Z G Z^\top + R$.

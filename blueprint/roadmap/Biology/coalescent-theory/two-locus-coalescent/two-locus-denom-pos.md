@@ -1,3 +1,3 @@
 # Positivity of the two-locus moment denominator
 
-The denominator `ρ² + 13 ρ + 18` is positive for `ρ ≥ 0`.
+For every real $\rho \ge 0$, $\rho^2 + 13\rho + 18 > 0$.

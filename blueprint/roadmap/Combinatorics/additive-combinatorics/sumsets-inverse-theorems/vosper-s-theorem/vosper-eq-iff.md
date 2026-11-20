@@ -11,4 +11,4 @@ with $A = \{a_0 + n d : 0 \le n < |A|\}$ and $B = \{b_0 + n d : 0 \le n < |B|\}$
 
 ## Sources
 
-- Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem [Vosper] `theo_Vosper`, lines 256–267, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.tex>.
+- Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem 10 (Vosper), https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.html.

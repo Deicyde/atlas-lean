@@ -7,7 +7,8 @@ $$
 H_{n,\lambda}(\alpha) = \sum_{k=1}^{n} \frac{(-1)^{k-1} \binom{\lambda}{k}}{\lambda\, \alpha^k},
 $$
 
-where $\binom{\lambda}{k} = \lambda(\lambda - 1)\cdots(\lambda - k + 1)/k!$; in particular
+where $\binom{\lambda}{k} = \lambda(\lambda - 1)\cdots(\lambda - k + 1)/k!$ and a quotient by $0$ is read as $0$; in
+particular
 $H_{0,\lambda}(\alpha) = 0$. At $\alpha = 1$ these are the degenerate harmonic numbers
 $H_{n,\lambda}$.
 

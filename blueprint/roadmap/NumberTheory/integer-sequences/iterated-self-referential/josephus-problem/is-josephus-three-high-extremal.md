@@ -6,4 +6,4 @@ $J_3(n) = n$ or $J_3(n) = n - 1$.
 
 ## Sources
 
-- Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 1, Definition (Extremal and Fixed points).
+- Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Definition 1 (Extremal and Fixed points), Section 1.1.

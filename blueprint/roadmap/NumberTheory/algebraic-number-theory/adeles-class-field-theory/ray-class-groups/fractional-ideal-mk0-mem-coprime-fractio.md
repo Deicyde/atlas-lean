@@ -9,4 +9,4 @@ dividing $\mathfrak m_0$ is $0$.
 
 ## Sources
 
-- E5 `mk0` membership/count bridge for ATLAS lines 1431--1465.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

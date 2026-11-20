@@ -1,4 +1,3 @@
 # Onsager's pressure of the square-lattice Ising model
 
-Onsager's pressure (minus `β` times the free energy per site) of the square-lattice Ising model:
-`log 2` plus `ons_freeEnergyIntegral β`.
+For $\beta \in \mathbb{R}$, Onsager's pressure is $\log 2 + I(\beta)$, where $I(\beta)$ is [Onsager's free-energy integral](ons-free-energy-integral.md).

@@ -1,4 +1,4 @@
-# Rampersad–Wiebe Theorem 14
+# Sum of $\binom{6k}{n+3k}\binom{n}{k} \bmod 2$ as a run length transform
 
 Let $T$ be the run length transform of the sequence $S$ with
 $S(i) = 1$ for even $i$ and $S(i) = (i + 1)/2$ for odd $i$, i.e. of $1, 1, 1, 2, 1, 3, 1, 4, \dots$.

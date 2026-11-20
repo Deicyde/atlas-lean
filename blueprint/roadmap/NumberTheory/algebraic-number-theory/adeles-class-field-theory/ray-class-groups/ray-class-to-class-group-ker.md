@@ -13,4 +13,4 @@ the ray class of $x\mathcal O_K$.
 
 ## Sources
 
-- ATLAS `exactSeq_exact_at_ray_class`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

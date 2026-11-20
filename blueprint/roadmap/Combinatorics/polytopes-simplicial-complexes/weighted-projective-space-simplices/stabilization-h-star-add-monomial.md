@@ -1,6 +1,6 @@
 # The first reflexive stabilization adds one monomial to the $h^*$-formula
 
-**The first reflexive stabilization adds one monomial to the $h^*$-formula.** Let
+Let
 $q = (q_1, \dots, q_n)$ be a list of natural numbers whose reflexive stabilization number is
 $1$, so that its first reflexive stabilization is $\operatorname{rs}(q) = (1, q_1, \dots, q_n)$.
 For a list $p = (p_1, \dots, p_m)$ of natural numbers put $|p| = p_1 + \dots + p_m$, let

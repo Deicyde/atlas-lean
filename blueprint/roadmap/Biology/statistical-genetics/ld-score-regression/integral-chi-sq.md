@@ -1,6 +1,7 @@
 # Expected association statistic for an arbitrary genotype matrix
 
-The exact expectation of the association statistic built from the `N`-normalized score,
-for an arbitrary genotype matrix:
-`𝔼[χ² j] = N h² / M * ℓ j + (1 - h²) * (∑ i, X i j ^ 2) / N`. (For `N = 0` both sides are `0`
-by the convention `x / 0 = 0`.)
+For every [LD-score model](model.md) on a measure $\mu$ with heritability $h^2$, every real $N \times M$ genotype matrix $X$ and every marker $j$,
+
+$$\int \chi^2_j \, d\mu = \frac{N h^2}{M}\, \ell_j + \frac{1 - h^2}{N} \sum_{i=1}^{N} X_{ij}^2,$$
+
+where $\chi^2_j$ is the [association statistic](chi-sq.md) and $\ell_j$ the [LD score](ld-score.md), with the convention $x/0 = 0$ (for $N = 0$ both sides are $0$).

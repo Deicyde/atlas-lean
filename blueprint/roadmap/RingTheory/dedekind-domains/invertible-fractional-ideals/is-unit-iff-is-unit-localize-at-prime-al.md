@@ -1,4 +1,5 @@
-# Theorem 3.2
+# Invertibility of a fractional ideal is local at the prime ideals
 
-**Theorem 3.2** (prime-ideal form). A fractional ideal of a Noetherian domain is invertible iff
-its localization at every prime ideal is invertible.
+A fractional ideal $I$ of a Noetherian domain $A$ is invertible if and only if, for every prime
+ideal $\mathfrak p$ of $A$, its localization $I_{\mathfrak p}$ is an invertible fractional ideal of
+$A_{\mathfrak p}$.

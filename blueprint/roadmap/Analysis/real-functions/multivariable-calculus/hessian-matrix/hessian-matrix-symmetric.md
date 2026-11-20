@@ -5,8 +5,8 @@ differentiable, then for every $x \in \mathbb{R}^n$ the Hessian matrix of $f$ at
 it equals its transpose.
 
 Proof: Rewrite the matrix entries as evaluations of the second Fréchet derivative and apply
-Schwarz's theorem on the symmetry of second derivatives, as proved in Mathlib, following
-Wikipedia's “Symmetry of second derivatives”.
+Schwarz's theorem on the symmetry of second derivatives (see Wikipedia's “Symmetry of second
+derivatives”).
 
 ## Sources
 

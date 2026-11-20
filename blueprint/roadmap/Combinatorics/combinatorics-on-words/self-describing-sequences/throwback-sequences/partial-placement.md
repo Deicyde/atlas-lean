@@ -16,4 +16,4 @@ position.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 4.
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 4, https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

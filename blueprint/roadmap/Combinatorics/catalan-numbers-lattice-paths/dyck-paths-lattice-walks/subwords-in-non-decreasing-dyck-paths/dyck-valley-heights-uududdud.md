@@ -7,4 +7,4 @@ In particular this path is not non-decreasing.
 
 ## Sources
 
-- Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1.
+- Rigoberto Flórez, Toufik Mansour, José L. Ramírez, Fabio A. Velandia, and Diego Villamizar, *Restricted Dyck Paths on Valleys Sequence*, arXiv:2108.08299, Section 1.

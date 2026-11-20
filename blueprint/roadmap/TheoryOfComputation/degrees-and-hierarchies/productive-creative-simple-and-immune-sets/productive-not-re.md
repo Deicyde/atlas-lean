@@ -6,4 +6,4 @@ function would produce a member of it outside $W_e$.
 
 ## Sources
 
-- Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 5.5.
+- R. I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987.

@@ -6,4 +6,4 @@ binomid indices.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (example of `(E_m)^∞` with `m = 1`).
+- Jonathan Caalim and Yu-ichi Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Example 1 (the sequence $(E_m)^\infty$ with $m = 1$).

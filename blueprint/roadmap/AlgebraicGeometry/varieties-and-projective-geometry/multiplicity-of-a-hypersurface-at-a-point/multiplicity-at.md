@@ -7,4 +7,4 @@ representative $\bar p \in K^\sigma$ of $p$, as a natural number, with the value
 as $0$.
 
 For homogeneous $F$ it does not depend on the representative. The order of vanishing is $\infty$
-only for $F = 0$, so the multiplicity of the zero polynomial is the junk value $0$.
+only for $F = 0$, so by this convention the zero polynomial has multiplicity $0$.

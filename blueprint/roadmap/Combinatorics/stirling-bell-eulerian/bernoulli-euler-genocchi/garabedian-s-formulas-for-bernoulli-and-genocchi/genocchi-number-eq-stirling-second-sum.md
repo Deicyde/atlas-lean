@@ -14,4 +14,4 @@ the American Mathematical Society 46 (1940), 531–533, DOI 10.1090/S0002-9904-1
 
 ## Sources
 
-- Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers," Journal of Integer Sequences 28 (2025), Article 25.6.7, lines 184–194 of the official TeX: <https://cs.uwaterloo.ca/journals/JIS/VOL28/Zerroukhat/zerrou3.tex>.
+- Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers," Journal of Integer Sequences 28 (2025), Article 25.6.7, equation (18), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Zerroukhat/zerrou3.pdf>.

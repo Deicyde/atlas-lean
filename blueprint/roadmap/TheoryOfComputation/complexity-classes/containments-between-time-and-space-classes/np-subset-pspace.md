@@ -5,4 +5,4 @@ of decision problems decidable in polynomial space.
 
 ## Sources
 
-- S. Arora and B. Barak, Computational Complexity: A Modern Approach, Cambridge University Press, 2009, Theorem 4.14 (NP ⊆ PSPACE); C. H. Papadimitriou, Computational Complexity, Addison-Wesley, 1994, Theorem 7.2.
+- S. Arora and B. Barak, *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, Chapter 4 (NP ⊆ PSPACE); C. H. Papadimitriou, *Computational Complexity*, Addison-Wesley, 1994, Chapter 7.

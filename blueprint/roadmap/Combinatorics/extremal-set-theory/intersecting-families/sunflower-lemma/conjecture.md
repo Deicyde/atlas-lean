@@ -6,5 +6,5 @@ sufficiently large $n$, every $k$-sunflower-free family of subsets of $\{0, \dot
 most $c^n$ members.
 
 The bound is required only for large $n$ because for $2^n < k$ the family of all subsets of
-$\{0, \dots, n-1\}$ is $k$-sunflower-free. The case $k = 3$, proved by Naslund and Sawin, is
-omitted.
+$\{0, \dots, n-1\}$ is $k$-sunflower-free. The case $k = 3$ was proved by Naslund and
+Sawin.

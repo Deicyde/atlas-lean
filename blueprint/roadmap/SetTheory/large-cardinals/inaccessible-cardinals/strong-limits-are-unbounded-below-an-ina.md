@@ -1,10 +1,9 @@
 # Strong limits are unbounded below an inaccessible cardinal
 
-Strong limits are unbounded below an inaccessible `κ`: above any `a < κ` sits
-`ℶ_{a.ord + ω}`, a strong limit by `isStrongLimit_beth` since `a.ord + ω` is a
-limit ordinal (`isSuccLimit_add`), and below `κ` since
-`(a.ord + ω).card = a.ord.card + ℵ₀ < κ` (`add_lt_of_lt`).
+Let $\kappa$ be an inaccessible cardinal. For every cardinal $a < \kappa$ there is a strong limit
+cardinal $\mu$ with $a < \mu < \kappa$.
 
-## Sources
-
-- Above any a < κ with κ inaccessible sits a strong limit cardinal below κ.
+Proof: let $\alpha$ be the initial ordinal of $a$ and take $\mu = \beth_{\alpha + \omega}$. It is a
+strong limit because $\alpha + \omega$ is a limit ordinal; it exceeds $a \le \beth_\alpha$; and it
+is below $\kappa$ because $\alpha + \omega < \kappa$ and $\beth_\gamma < \kappa$ for every
+$\gamma < \kappa$.

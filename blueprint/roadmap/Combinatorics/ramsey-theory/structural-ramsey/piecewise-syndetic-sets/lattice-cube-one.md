@@ -5,4 +5,4 @@ cube with least corner $a$ and side $1$ is the singleton $\{a\}$.
 
 ## Sources
 
-- Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (subcubes of `N^t` of size `m^t`).
+- Tom C. Brown, *Piecewise Syndetic Sets in $\mathbb{N}^t$ and $\mathbb{N}^X$*, INTEGERS 24 (2024), Article A2, Definition 2 (subcubes of $\mathbb{N}^t$ of size $m^t$).

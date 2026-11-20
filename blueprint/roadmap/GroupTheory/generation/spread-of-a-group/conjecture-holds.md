@@ -9,7 +9,7 @@ affirmatively.
 The Nilradical note A group of spread one (17 September 2026, Kourovka Notebook site), Theorem 1,
 shows that the subgroup $\{f \in F : f'(0^+) = f'(1^-)\}$ of Thompson's group $F$ is infinite and
 has spread exactly one. The note is not refereed; the Kourovka Notebook (arXiv:1401.0300v49) marks
-Problem 21.38 solved (AI solution confirmed by S. Corson).
+Problem 21.38 solved.
 
 ## Sources
 

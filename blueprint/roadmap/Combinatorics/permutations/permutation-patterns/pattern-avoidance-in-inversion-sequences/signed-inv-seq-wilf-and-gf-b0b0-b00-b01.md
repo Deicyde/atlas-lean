@@ -1,4 +1,4 @@
-# Mansour–Safadi Theorem 3, class C2 (signed patterns 0̄0̄, 0̄0, 0̄1, 01)
+# Signed inversion sequences avoiding $\{\bar0\bar0, \bar00, \bar01, 01\}$
 
 A signed inversion
 sequence of length $n$ is a word $e_1 \cdots e_n$ with $e_k \in \{0, \bar 0, 1, \bar 1, \dots,

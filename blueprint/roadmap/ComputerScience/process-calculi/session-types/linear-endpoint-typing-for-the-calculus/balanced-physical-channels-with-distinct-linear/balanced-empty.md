@@ -1,4 +1,4 @@
 # The empty interface is balanced
 
-An empty external interface is balanced. Internal ν channels still
-require their own balanced ownership and are not thereby completed.
+The empty ownership context is balanced: vacuously, every endpoint $e$ it maps to a capability $c$
+has its opposite endpoint $\bar e$ mapped to the dual capability $\bar c$.

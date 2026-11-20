@@ -1,3 +1,3 @@
 # Multi-step call-by-value evaluation
 
-Zero or more call-by-value evaluation steps.
+Multi-step evaluation $t \to^* t'$ is the reflexive and transitive closure of [one-step call-by-value evaluation](step.md): zero or more steps.

@@ -8,4 +8,4 @@ $\|\eta\|_m + \|n - \eta\|_m$ over $0 < \eta < n$.
 
 ## Sources
 
-- John M. Campbell, "A Binary Version of the Mahler-Popken Complexity Function", Proposition 1.
+- John M. Campbell, *A Binary Version of the Mahler-Popken Complexity Function*, INTEGERS 24 (2024), Article A94, Proposition 1.

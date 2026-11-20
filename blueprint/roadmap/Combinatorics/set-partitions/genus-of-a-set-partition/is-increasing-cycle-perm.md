@@ -13,4 +13,4 @@ through this encoding.
 
 ## Sources
 
-- Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 (the permutation `τ` whose cycles are the parts, with their elements in increasing order).
+- Robert Coquereaux and Jean-Bernard Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 (the permutation `τ` whose cycles are the parts, with their elements in increasing order).

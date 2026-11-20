@@ -8,4 +8,4 @@ exponent $\log_2 M$ is a real number.
 
 ## Sources
 
-- ATLAS `NumberTheoryI:295`, *Number Theory I*, Section 14.5, Lemma 14.21. The proof derives this bound from the integer-threshold and floor variants.
+- ATLAS NumberTheoryI, Section 14.5, Lemma 14.21.

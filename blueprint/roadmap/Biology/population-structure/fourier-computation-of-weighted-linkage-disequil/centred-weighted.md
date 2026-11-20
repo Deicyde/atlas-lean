@@ -1,3 +1,3 @@
 # Centred weighted genotype
 
-The centred weighted genotype `(g i x - ḡ x) w x` of individual `i` at SNP `x`.
+For genotypes $g_i(x)$ of $m$ individuals at SNPs $x$ and weights $w(x)$, the centred weighted genotype of individual $i$ at $x$ is $\bigl(g_i(x) - \bar g(x)\bigr) w(x)$, where $\bar g$ is the [sample mean genotype](mean-geno.md).

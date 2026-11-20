@@ -1,4 +1,3 @@
 # Unpolarized BABA site-pattern indicator
 
-Unpolarized `BABA` indicator for populations `(P1, P2, P3, O)`: `P1` agrees with `P3`, `P2`
-with `O`, and `P1` differs from `P2` (the patterns `BABA` and `ABAB`).
+For populations $(P_1, P_2, P_3, O)$ and a configuration $x = (x_1, x_2, x_3, x_4) \in \{0, 1\}^4$ of derived-allele indicators, the unpolarized BABA indicator is $1$ if $x_1 = x_3$, $x_2 = x_4$ and $x_1 \ne x_2$ (the patterns BABA and ABAB), and $0$ otherwise.

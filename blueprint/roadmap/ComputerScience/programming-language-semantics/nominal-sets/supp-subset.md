@@ -1,3 +1,3 @@
 # Minimality of the least support
 
-The least support is contained in every support: minimality.
+Let $\mathbb{A}$ be an infinite set of atoms and $X$ a [nominal set](nominal-set.md) over $\mathbb{A}$. If a finite set $S$ [supports](supports.md) $x \in X$, then $\mathrm{supp}(x) \subseteq S$.

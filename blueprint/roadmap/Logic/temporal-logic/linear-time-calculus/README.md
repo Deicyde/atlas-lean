@@ -41,7 +41,7 @@
 
 ## Encoding
 
-- [Cantor-pairing code of linear μ-calculus formulas](linear-mu-code.md)
+- [Pairing code of linear μ-calculus formulas](linear-mu-code.md)
 - [Injectivity of the linear μ-calculus code](linear-mu-code-injective.md)
 - [Fuelled decoding of linear μ-calculus codes](linear-mu-decode-fuel.md)
 - [Decoding linear μ-calculus codes](linear-mu-decode.md)

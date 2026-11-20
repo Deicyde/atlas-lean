@@ -7,7 +7,7 @@
 - [Cayley transform of an operator](cayley-transform.md)
 - [Factors of the Cayley transform commute](commute-sub-i-add-i.md)
 
-## Self Adjoint
+## Self-adjoint operators
 
 - [Self-adjoint operator minus a non-real scalar is invertible](is-unit-sub-smul-one-of-is-self-adjoint.md)
 - [Self-adjoint operator plus $i$ is invertible](is-unit-add-i-smul-one-of-is-self-adjoin.md)

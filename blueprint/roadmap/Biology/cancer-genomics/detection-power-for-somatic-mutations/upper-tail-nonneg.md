@@ -1,3 +1,3 @@
 # Nonnegativity of binomial tail probabilities
 
-Tail probabilities are nonnegative for `0 ≤ p ≤ 1`.
+For $0 \le p \le 1$ and all natural numbers $n, m$, the [upper tail](upper-tail.md) satisfies $P_p(m) \ge 0$.

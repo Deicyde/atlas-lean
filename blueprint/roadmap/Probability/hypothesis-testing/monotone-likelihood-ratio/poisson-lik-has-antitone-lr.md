@@ -1,4 +1,3 @@
 # Poisson family with antitone mean has antitone likelihood ratio
 
-A Poisson family whose mean is nonnegative and antitone on `S` has an antitone likelihood
-ratio on `S`.
+Let $S \subseteq \mathbb{R}$ and $\lambda : \mathbb{R} \to \mathbb{R}$ nonnegative and nonincreasing on $S$. Then the [Poisson likelihood](poisson-lik.md) has an [antitone likelihood ratio](has-antitone-likelihood-ratio-on.md) on $S$.

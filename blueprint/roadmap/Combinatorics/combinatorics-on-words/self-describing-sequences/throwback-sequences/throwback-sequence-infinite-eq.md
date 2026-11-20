@@ -7,4 +7,4 @@ many $k$ with $t_k = x_j$.
 
 ## Sources
 
-- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 2 (`jis-2025-25.5.1-thm-2`).
+- Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 2 (`jis-2025-25.5.1-thm-2`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.html

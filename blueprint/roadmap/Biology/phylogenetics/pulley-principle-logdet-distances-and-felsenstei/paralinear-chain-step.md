@@ -1,6 +1,7 @@
 # Additivity of the LogDet distance along a chain, one step
 
-For a Markov chain
-`X → Y → Z` with `X` distributed as `p` (positive), transition matrices `A` (nonnegative) and
-`B` with unit row sums and nonzero determinants, `d(X, Z) = d(X, Y) + d(Y, Z)`, where
-`F_XZ = Π_X A B`, `F_XY = Π_X A` and `F_YZ = Π_Y B` with `Y` distributed as `p A`.
+Let $p_i > 0$ for every $i$, $A$ a real square matrix with nonnegative entries, unit row sums and $\det A \ne 0$, and $B$ a real square matrix with unit row sums and $\det B \ne 0$. Then
+
+$$d_{LD}\bigl(\operatorname{diag}(p) AB\bigr) = d_{LD}\bigl(\operatorname{diag}(p) A\bigr) + d_{LD}\bigl(\operatorname{diag}(pA) B\bigr),$$
+
+where $d_{LD}$ is the [LogDet distance](paralinear.md).

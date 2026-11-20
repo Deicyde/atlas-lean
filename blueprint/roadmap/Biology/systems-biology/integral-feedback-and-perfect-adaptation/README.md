@@ -1,13 +1,13 @@
 # Integral feedback and perfect adaptation
 
-## Integral Feedback
+## Linear time-invariant systems
 
 - [Single-input single-output linear time-invariant system](linear-system.md)
-
-## Linear System
-
 - [Vector field of a linear time-invariant system](field.md)
 - [Output of a linear time-invariant system](output.md)
+
+## Perfect adaptation and integral feedback
+
 - [Perfect adaptation](has-perfect-adaptation.md)
 - [Integral feedback](has-integral-feedback.md)
 - [Steady-state (DC) gain of a linear system](dc-gain.md)
@@ -18,6 +18,6 @@
 - [Integral feedback is necessary](has-integral-feedback-iff-has-perfect-ad.md)
 - [Integral-feedback functional is the time integral of the output](has-deriv-at-integral.md)
 
-## Integral Feedback
+## Robustness
 
 - [Integral feedback gives robust perfect adaptation](output-eq-zero-of-integral-feedback.md)

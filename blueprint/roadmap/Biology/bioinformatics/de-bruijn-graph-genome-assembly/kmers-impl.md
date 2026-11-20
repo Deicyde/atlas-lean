@@ -1,5 +1,3 @@
 # Efficient executable computation of k-mers
 
-Executable form of `kmers`: the suffixes of `s` are generated once by `List.tails`, so the
-cost is `O(|s| · k)` rather than the `Θ(|s|²)` of recomputing `s.drop i` for every `i`. The
-compiler uses it in place of `kmers` (`kmers_eq_kmersImpl`).
+For $k$ and a string $s$ of length $L$, the list obtained by taking the first $\max(L + 1 - k, 0)$ suffixes $s, s_1 s_2 \cdots, \dots$ of $s$ and truncating each to its first $k$ letters. It is the list of [$k$-mers](kmers.md) of $s$, computed in $O(Lk)$ steps.

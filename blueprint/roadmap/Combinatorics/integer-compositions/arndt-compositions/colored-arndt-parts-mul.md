@@ -12,4 +12,4 @@ $C_k(x) = \frac{x^{k + \lfloor k/2 \rfloor} (x^2 + x + 2)^{\lfloor k/2 \rfloor}}
 
 ## Sources
 
-- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 19 (`jis-2025-25.3.6-thm-19`).
+- Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 19.

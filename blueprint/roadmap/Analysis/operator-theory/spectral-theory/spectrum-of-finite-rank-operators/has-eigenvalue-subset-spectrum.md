@@ -1,3 +1,3 @@
-# Eigenvalues of a finite-rank operator lie in its spectrum
+# Eigenvalues of a bounded operator lie in its spectrum
 
-Every eigenvalue of a finite-rank operator lies in its spectrum.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $E$ be a Banach space over $\mathbb{K}$ and let $T$ be a bounded operator on $E$. Every eigenvalue of $T$ lies in the spectrum of $T$.

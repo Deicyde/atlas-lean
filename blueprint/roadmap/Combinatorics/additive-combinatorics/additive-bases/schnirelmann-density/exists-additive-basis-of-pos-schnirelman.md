@@ -8,4 +8,4 @@ repetitions allowed.
 
 ## Sources
 
-- Lemma 1 of Tim Jameson's notes on Linnik's proof of the Waring-Hilbert theorem.
+- Tim Jameson, "Linnik's proof of the Waring–Hilbert theorem from Hua's book" (lecture notes), Lemma 1, https://www.maths.lancs.ac.uk/jameson/warlin.pdf.

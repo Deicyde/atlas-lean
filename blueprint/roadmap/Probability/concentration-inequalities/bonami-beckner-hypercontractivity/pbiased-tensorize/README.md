@@ -1,4 +1,4 @@
-# PBiased Tensorize
+# Tensorization of $p$-biased hypercontractivity
 
 - [Zero-one value of a bit](ptn-val.md)
 - [Standard deviation of a Bernoulli bit](ptn-sigma.md)
@@ -22,7 +22,7 @@
 - [Tensorization step for $p$-biased hypercontractivity](ptn-tensor-step.md)
 - [$p$-biased hypercontractivity on $\{0, 1\}^n$](ptn-hypercontractivity-fin.md)
 - [Fourier form of $p$-biased hypercontractivity on $\{0, 1\}^n$](ptn-low-degree-weight-fin.md)
-- [Fourier form of $p$-biased hypercontractivity on finite index types](ptn-low-degree-weight.md)
+- [Fourier form of $p$-biased hypercontractivity on finite index sets](ptn-low-degree-weight.md)
 - [$p$-biased hypercontractivity for a discrete derivative](ptn-per-coord-hc.md)
 - [Summed per-coordinate $p$-biased hypercontractive bound](ptn-summed-hc.md)
 - [Capped per-coordinate estimate under the $p$-biased measure](ptn-capped-hc.md)

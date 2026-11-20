@@ -9,4 +9,4 @@ $$\sum_{k=1}^{p-1} H_{k-1}^{(n-1)} k^{-1} x^k = (-1)^{n-1} \sum_{k=1}^{p-1} (k^{
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex>, Lemma `Gg`.
+- Sandro Mattarei and Roberto Tauraso, *Congruences of Multiple Sums Involving Sequences Invariant Under the Binomial Transform*, Journal of Integer Sequences 13 (2010), Article 10.5.1, Lemma 3.2, congruence (3.1), https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.html.

@@ -6,4 +6,4 @@ the absolute values of the terms of Ramanujan's general theta function converges
 
 ## Sources
 
-- arXiv:2607.26471, `Oliver_identities.tex` ll. 127-130.
+- K. R. Vasuki, Darshan D., and Ravi G. N., *On Oliver's relations between infinite series and infinite products*, arXiv:2607.26471 (2026), Section 1 (definition of $f(a,b)$ for $|ab| < 1$).

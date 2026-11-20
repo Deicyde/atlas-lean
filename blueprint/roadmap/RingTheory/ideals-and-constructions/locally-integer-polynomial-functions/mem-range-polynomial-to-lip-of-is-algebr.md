@@ -1,4 +1,4 @@
-# $\mathbb{Z}(x)$ is algebraically closed in $\mathrm{LIP}(U)$
+# $\mathbb{Z}[x]$ is algebraically closed in $\mathrm{LIP}(U)$
 
 Let $U \subseteq \mathbb{Z}$
 be infinite, and map each $p \in \mathbb{Z}[x]$ to the function $u \mapsto p(u)$ in

@@ -12,4 +12,4 @@ sequence.
 
 ## Sources
 
-- Paul Thomas Young, *On the Brocard-Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Theorem 1 and Proposition 1 notation.
+- Paul Thomas Young, *On the Brocard–Ramanujan Equation with Tribonacci and Tetranacci Numbers*, INTEGERS 24 (2024), Article A92, Theorem 1 and Proposition 1 notation.

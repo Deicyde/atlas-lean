@@ -1,5 +1,5 @@
 # Environment extension preserves runtime typing under separation
 
-General Γ-extension requires static separation of ALL actual owned names.
-The proof establishes fresh lifted/private/received BODY names, rather than
-assuming environment monotonicity or carrying a future/result field.
+Let $n$ be a natural number, $\Gamma$, $\Xi$ service environments with $\Xi$ extending $\Gamma$,
+$\Delta$ an ownership context separated from $\Xi$ and $p$ a process. If $\Gamma; \Delta \vdash_n
+p$, then $\Xi; \Delta \vdash_n p$.

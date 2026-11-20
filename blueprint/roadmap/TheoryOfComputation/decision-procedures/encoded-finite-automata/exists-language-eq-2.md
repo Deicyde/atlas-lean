@@ -1,4 +1,4 @@
 # Every finite NFA has an encoding
 
-An NFA over a finite alphabet with finitely many states
-has an encoded NFA with the same language.
+Let $\alpha$ be a finite alphabet. For every NFA over $\alpha$ with finitely many states there is an
+encoded NFA over $\alpha$ with the same language.

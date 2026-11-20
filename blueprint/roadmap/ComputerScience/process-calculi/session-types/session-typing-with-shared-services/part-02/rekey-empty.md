@@ -1,3 +1,4 @@
 # Rekeying the empty context gives the empty context
 
-An empty owned context stays empty under the canonical context rekey operation.
+For every map $f$ from names to names, $f_*\emptyset = \emptyset$, where $f_*\Delta$ maps $f(x)^{r}$
+to $\Delta(x^{r})$.

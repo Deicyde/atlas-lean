@@ -1,3 +1,5 @@
 # Vector two-point inequality for nonnegative noise
 
-The vector two-point inequality holds for `0 ≤ ρ ≤ 1`.
+For every $\rho$ with $0 \le \rho \le 1$, the [vector-valued two-point
+inequality](../tensorization-of-two-point-hypercontractivity-on/bnt-vector-two-point.md) at noise
+$\rho$ holds.

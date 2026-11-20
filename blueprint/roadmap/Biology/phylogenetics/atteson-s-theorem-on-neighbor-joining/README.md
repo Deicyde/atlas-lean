@@ -13,4 +13,4 @@
 
 - [Neighbor joining averages up to row shifts](exists-avg.md)
 - [The shifting lemma](q-criterion-eq-sub-of-shift.md)
-- [Atteson's theorem: neighbor joining has `ℓ∞` radius `1/2`](nj-run-splits-of-abs-sub-lt.md)
+- [Atteson's theorem: neighbor joining has sup-norm radius one half](nj-run-splits-of-abs-sub-lt.md)

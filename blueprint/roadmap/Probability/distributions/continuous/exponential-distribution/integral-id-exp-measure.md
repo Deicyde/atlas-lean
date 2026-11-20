@@ -1,3 +1,4 @@
 # Mean of the exponential law
 
-The mean of the exponential law of rate `r > 0` is `r⁻¹`.
+For $r > 0$, the exponential law $\operatorname{Exp}(r)$ of density $r e^{-rx}$ on $[0, \infty)$ has
+mean $\int x \, d\operatorname{Exp}(r)(x) = 1/r$.

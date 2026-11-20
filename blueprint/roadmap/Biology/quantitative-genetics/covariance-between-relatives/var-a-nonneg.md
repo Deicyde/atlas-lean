@@ -1,3 +1,3 @@
 # Nonnegativity of the single-locus additive variance
 
-The additive variance is nonnegative.
+In every [single-locus model](locus-model.md), the [additive variance](var-a.md) satisfies $V_A \ge 0$.

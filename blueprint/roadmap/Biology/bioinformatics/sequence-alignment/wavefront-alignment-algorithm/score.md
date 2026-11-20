@@ -1,4 +1,3 @@
 # Substitution score from linear gap penalties
 
-The substitution score in the maximization convention of `nwScore`: `0` for a match and
-`-mismatch` for a mismatch (the gap score is `-gap`).
+For [linear gap penalties](linear-penalties.md), the substitution score of letters $a, b$ is $0$ if $a = b$ and $-\chi$ otherwise; the corresponding gap score is $-g$.

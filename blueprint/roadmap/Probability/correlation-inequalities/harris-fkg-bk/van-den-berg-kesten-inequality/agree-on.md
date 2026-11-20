@@ -1,4 +1,3 @@
 # Agreement of configurations on a set
 
-`agreeOn K ω ω'`: the configurations `ω` and `ω'` take the same value at every coordinate of
-`K`. This is `Set.EqOn ω' ω K` (see `StatMech.agreeOn_iff_eqOn`).
+Let $E$ be a set, $K \subseteq E$ and $\omega, \omega' \in \{0,1\}^E$. The configurations $\omega$ and $\omega'$ *agree on* $K$ if $\omega'(e) = \omega(e)$ for every $e \in K$, that is, if $\omega|_K = \omega'|_K$.

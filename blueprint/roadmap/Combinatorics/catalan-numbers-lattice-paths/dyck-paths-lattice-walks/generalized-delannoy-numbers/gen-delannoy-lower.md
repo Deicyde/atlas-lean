@@ -10,4 +10,4 @@ no truncation occurs.
 
 ## Sources
 
-- Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal of Integer Sequences 27 (2024), Article 24.1.8, Section 1 (definition of `D_k(m, n)`).
+- Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal of Integer Sequences 27 (2024), Article 24.1.8, Section 1 (definition of $D_k(m, n)$).

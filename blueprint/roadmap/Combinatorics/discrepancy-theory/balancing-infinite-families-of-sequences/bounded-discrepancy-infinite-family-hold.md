@@ -10,4 +10,5 @@ Beck proved this; he later showed that the bound $C$ can be taken $\ll d^{4 + \v
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #178, https://www.erdosproblems.com/178 (status PROVED (LEAN)); resolution: J. Beck, Balancing families of integer sequences, Combinatorica 1 (1981), 209-216, erdosproblems.com/178: solved by Beck [Be81]; Beck (2017) improved the bound to d^{4+ε}, https://doi.org/10.1007/BF02579326.
+- T. F. Bloom, Erdős Problem #178, https://www.erdosproblems.com/178.
+- József Beck, *Balancing families of integer sequences*, Combinatorica 1 (1981), 209–216, https://doi.org/10.1007/BF02579326.

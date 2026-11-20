@@ -7,4 +7,4 @@ $k$-kernel of $f$ is finitely generated.
 
 ## Sources
 
-- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 28 (`k`-regular sequences of Allouche and Shallit) and Definition 1 (`k`-kernel).
+- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 28 ($k$-regular sequences of Allouche and Shallit) and Definition 1 ($k$-kernel).

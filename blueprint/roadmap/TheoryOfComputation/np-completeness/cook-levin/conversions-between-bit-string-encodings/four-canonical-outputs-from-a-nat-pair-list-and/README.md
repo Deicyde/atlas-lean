@@ -1,4 +1,4 @@
-# Four canonical outputs from a Nat-pair list and a Nat pair
+# Four canonical outputs from a list of pairs of naturals and a pair of naturals
 
 - [Stacks of the four-output pair-list decoder](k.md)
 - [Control labels of the four-output pair-list decoder](lab.md)

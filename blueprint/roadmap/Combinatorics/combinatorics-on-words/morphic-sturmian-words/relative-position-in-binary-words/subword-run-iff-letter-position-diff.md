@@ -12,4 +12,4 @@ $n \ge 1$ with $p_a(n+j+1) - p_a(n+j) = 1$ for all $0 \le j < k - 1$.
 
 ## Sources
 
-- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 13 (`jis-2025-25.1.5-lem-13`).
+- Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 13 (`jis-2025-25.1.5-lem-13`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Coons/coons6.html

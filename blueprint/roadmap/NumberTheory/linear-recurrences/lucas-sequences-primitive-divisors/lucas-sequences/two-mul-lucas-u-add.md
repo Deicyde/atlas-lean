@@ -10,4 +10,4 @@ $U_n(a, -b)$ and $V_n(a, -b)$, and the paper allows real $a$ and $b$.
 
 ## Sources
 
-- Vladimir V. Kruchinin and Maria Y. Perminova, "Identities and Hadamard Product of the Generalized Fibonacci, Lucas, Catalan, and Harmonic Numbers", Proposition 1.
+- Vladimir V. Kruchinin and Maria Y. Perminova, "Identities and Hadamard Product of the Generalized Fibonacci, Lucas, Catalan, and Harmonic Numbers", Journal of Integer Sequences 28 (2025), Article 25.8.8, Proposition 1.

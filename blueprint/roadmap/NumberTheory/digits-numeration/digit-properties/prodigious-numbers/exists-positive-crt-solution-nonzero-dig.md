@@ -9,4 +9,4 @@ of $c$.
 
 ## Sources
 
-- Michael Gohn, Joshua Harrington, Sophia Lebiere, Hani Samamah, Kyla Shappell, and Tony W. H. Wong, "Arithmetic Progressions of b-Prodigious Numbers," Journal of Integer Sequences 25 (2022), Article 22.8.7, Lemma `lem:crt`, lines 178-180, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Wong/wong42.tex>.
+- Michael Gohn, Joshua Harrington, Sophia Lebiere, Hani Samamah, Kyla Shappell, and Tony W. H. Wong, *Arithmetic Progressions of b-Prodigious Numbers*, Journal of Integer Sequences 25 (2022), Article 22.8.7, Lemma 2, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Wong/wong42.tex>.

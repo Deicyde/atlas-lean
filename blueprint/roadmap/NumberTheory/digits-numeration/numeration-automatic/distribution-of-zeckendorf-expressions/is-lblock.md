@@ -1,4 +1,4 @@
-# L-blocks
+# $L$-blocks
 
 Let $L$ be a list of natural numbers, and for each $m$ let $\theta^{m+1}$ be the
 maximal $L$-block, which vanishes from index $m$ on (indices are zero-based). A finitely supported

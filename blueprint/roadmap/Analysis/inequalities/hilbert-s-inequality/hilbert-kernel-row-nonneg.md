@@ -1,3 +1,3 @@
 # Nonnegativity of the Hilbert row integrand
 
-The row integrand is nonnegative on `(0, ∞)` when `M > 0`.
+For $M > 0$ and $x > 0$, $\dfrac{1}{(M + x)\sqrt{x}} \ge 0$.

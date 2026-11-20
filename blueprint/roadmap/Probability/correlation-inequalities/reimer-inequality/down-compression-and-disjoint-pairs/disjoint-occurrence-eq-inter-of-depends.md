@@ -1,4 +1,3 @@
 # Disjoint occurrence equals intersection for disjoint dependence sets
 
-If `A` depends only on `S`, `B` only on `T`, and `S, T` are disjoint, then
-`A □ B = A ∩ B`.
+Let $E$ be a set, $S, T \subseteq E$ disjoint, $A \subseteq \{0,1\}^E$ depending only on $S$ and $B \subseteq \{0,1\}^E$ depending only on $T$. Then $A \mathbin{\square} B = A \cap B$.

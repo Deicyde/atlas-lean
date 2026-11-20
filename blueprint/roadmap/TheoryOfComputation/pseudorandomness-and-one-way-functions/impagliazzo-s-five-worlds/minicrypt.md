@@ -1,3 +1,3 @@
 # Minicrypt
 
-Minicrypt: one-way functions exist, but public-key cryptography does not.
+Minicrypt is the statement that one-way functions exist and public-key cryptosystems do not.

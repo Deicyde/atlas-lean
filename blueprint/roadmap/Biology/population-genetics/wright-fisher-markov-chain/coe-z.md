@@ -1,4 +1,3 @@
 # Allele frequency of a Wright–Fisher state
 
-The frequency of allele `A` in state `i` is `bernstein.z i = i / M` (for `M = 0` it is
-Lean's junk value `i / 0 = 0`).
+For a natural number $M$ and a state $i \in \{0, \dots, M\}$ (the number of copies of allele $A$), the frequency of $A$ is $z_i = i/M$, with the convention $i/0 = 0$.

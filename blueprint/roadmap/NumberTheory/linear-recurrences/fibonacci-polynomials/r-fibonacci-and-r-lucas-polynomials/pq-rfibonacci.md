@@ -14,8 +14,8 @@ where $\binom{a}{b}_{p,q}$ is the $(p,q)$-binomial coefficient.
 
 The source also states $U^{(r)}_j = p^{\binom{j+1}{2}} x^{j-1}$ for $1 \le j \le r$, which
 contradicts this sum: the sum gives $p^{\binom{j}{2}} x^{j-1}$ (for example $U^{(2)}_2 = p x$,
-not $p^3 x$). The sum, which Theorem 2 of the source requires, is used.
+not $p^3 x$). The definition above follows the sum, which Theorem 2 of the source requires.
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 1.
+- Sadjia Abbad and Hacène Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 1.

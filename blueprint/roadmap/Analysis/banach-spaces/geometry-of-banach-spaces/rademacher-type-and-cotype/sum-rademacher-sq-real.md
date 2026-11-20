@@ -1,4 +1,7 @@
 # Second moment of a real Rademacher sum
 
-Scalar real form: the second moment of `∑ᵢ ±aᵢ` over all sign choices
-is `2 ^ n * ∑ᵢ aᵢ²`.
+For every $n \in \mathbb{N}$ and real numbers $a_1, \dots, a_n$,
+
+$$
+\sum_{\varepsilon \in \{-1, 1\}^n} \Big( \sum_{i=1}^{n} \varepsilon_i a_i \Big)^2 = 2^n \sum_{i=1}^{n} a_i^2.
+$$

@@ -6,4 +6,4 @@ $|x_k - y_k| = 1$.
 
 ## Sources
 
-- Luther–Mertens, JIS 20 (2017), Article 17.9.5, lines 277–279: this is the "neighbors in the polycube" relation underlying the adjacency graph, in which two vertices are connected if the corresponding cells are neighbors.
+- Sebastian Luther and Stephan Mertens, *The Perimeter of Proper Polycubes*, Journal of Integer Sequences 20 (2017), Article 17.9.5, Section 2: the adjacency graph of a polycube, in which two cells are joined when they are neighbors in the polycube, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Mertens/mert4.pdf>.

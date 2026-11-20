@@ -10,3 +10,7 @@ $m > \alpha_i$ such that $n_0 + i + 1 \in \{\alpha_0, \dots, \alpha_i, m\}$ hold
 is a value of $\beta$.
 
 The values of $\beta$ are not required to be at least $n_0$.
+
+## Sources
+
+- Benoit Cloitre, Neil J. A. Sloane and Matthew J. Vandermast, *Numerical Analogues of Aronson's Sequence*, Journal of Integer Sequences 6 (2003), Article 03.2.2, Section 5 (the Aronson transform), Theorem 3, https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.html

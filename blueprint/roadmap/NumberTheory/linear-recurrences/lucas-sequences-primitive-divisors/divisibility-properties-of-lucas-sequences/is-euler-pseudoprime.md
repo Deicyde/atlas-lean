@@ -5,7 +5,7 @@ the base $a$ when $N$ is odd and composite, $\gcd(a, N) = 1$, and
 $a^{(N-1)/2} \equiv (a/N) \pmod N$, where $(a/N)$ is the Jacobi symbol.
 
 The source states the definition for positive odd $a$ and applies it to the base $Q$ (for
-example $Q = -1$ in Remark 3.8); here $a$ is any integer.
+example $Q = -1$ in Remark 3.8); the definition above allows any integer $a$.
 
 ## Sources
 

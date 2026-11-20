@@ -1,4 +1,4 @@
-# Testing a popped input bit
+# Testing a popped value symbol
 
-For every bit $b$, the test for the input bit true of the
-SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$.
+For every bit $b$, the test for the value symbol true of the SUBSET-SUM reduction machine,
+applied to the popped symbol $\mathrm{val}(b)$, returns $b$.

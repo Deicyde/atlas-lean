@@ -1,4 +1,4 @@
-# CTL* state-run semantics and canonical labeled executions
+# CTL* on state runs and on labelled executions
 
 ## Canonical labeled-execution semantics
 
@@ -7,5 +7,5 @@
 
 ## The bridge
 
-- [CTL* state-sequence/execution bridge, state formulas](state-sat-iff-upstream.md)
-- [CTL* state-sequence/execution bridge, path formulas](path-sat-iff-upstream.md)
+- [CTL* state satisfaction on runs and on labelled executions agree](state-sat-iff-upstream.md)
+- [CTL* path satisfaction on runs and on labelled executions agree](path-sat-iff-upstream.md)

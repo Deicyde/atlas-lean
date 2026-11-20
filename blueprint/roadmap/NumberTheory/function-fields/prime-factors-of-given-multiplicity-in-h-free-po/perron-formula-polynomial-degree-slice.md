@@ -7,7 +7,9 @@ number with $0 < r < 1$ such that the series $\sum_{m \ge 0} |c_m| r^m$ converge
 $A \colon \mathbb{C} \to \mathbb{C}$ satisfy $A(u) = \sum_{m \ge 0} c_m u^m$ for every
 complex $u$ with $|u| = r$. Then for every $n \ge 0$,
 
-$$c_n = \frac{1}{2\pi i} \oint_{|u| = r} \frac{A(u)}{u^{n+1}}\, du,$$
+$$
+c_n = \frac{1}{2\pi i} \oint_{|u| = r} \frac{A(u)}{u^{n+1}}\, du,
+$$
 
 where the circle $|u| = r$ is traversed once counterclockwise.
 

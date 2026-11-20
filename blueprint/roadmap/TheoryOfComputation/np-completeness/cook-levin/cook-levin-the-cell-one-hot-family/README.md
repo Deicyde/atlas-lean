@@ -26,7 +26,7 @@
 - [One-hot generator: the label after a clause](next-c.md)
 - [One-hot generator: the routine for one literal](lit-p.md)
 - [The one-hot generator](prog.md)
-- [The one-hot generator as a finite multi-stack machine](oh-tm.md)
+- [The one-hot generator as a finite multi-stack Turing machine](oh-tm.md)
 
 ## Clause kinds: literal positions
 

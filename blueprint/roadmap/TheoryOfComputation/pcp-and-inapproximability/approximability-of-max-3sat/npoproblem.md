@@ -10,6 +10,8 @@ $F(x, s)$ is true), then $v(x, s) = -p/q$ when $\sigma$ is true and $v(x, s) = p
 $\sigma$ is false, and otherwise $v(x, s) = 0$; and $v(x, s) \ge 0$. Every feasible solution
 $s$ for $x$ has $|s| \le b(|x|)$, and every instance $x$ has a feasible solution.
 
-Feasible solutions on every instance are needed for completeness: an L-reduction to a problem
-with no feasible solutions on some instance would have to map a feasible target output back to
-a feasible source solution that does not exist.
+Without feasible solutions on every instance, L-reductions would degenerate: an instance $x$ of
+the source problem with no feasible solution could not be reduced to an instance $f(x)$ that has
+one, since a feasible solution of $f(x)$ would have to be mapped back to a feasible solution of
+$x$, while an instance $f(x)$ with no feasible solution would satisfy that requirement
+vacuously.

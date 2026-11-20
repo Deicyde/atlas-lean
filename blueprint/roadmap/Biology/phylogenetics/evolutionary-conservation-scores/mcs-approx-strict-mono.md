@@ -1,3 +1,3 @@
 # Motif conservation score approximation is strictly increasing
 
-The MCS approximation is strictly increasing in the conserved count, for `N ≥ 1` and `p ∈ (0, 1)`.
+For $N \ge 1$ and $0 < p < 1$, the map $k \mapsto z(N, k, p)$ is strictly increasing, where $z$ is the [binomial z-score approximation](mcs-approx.md).

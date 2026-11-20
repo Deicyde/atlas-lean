@@ -1,4 +1,3 @@
 # Zero-order ultrasensitivity
 
-As both `K₁, K₂ → 0` the response coefficient tends to
-`1`.
+The [response coefficient](response-coefficient.md) $R_v = \rho(0.9)/\rho(0.1)$ tends to $1$ as $(K_1, K_2) \to (0, 0)$ in $\mathbb{R}^2$.

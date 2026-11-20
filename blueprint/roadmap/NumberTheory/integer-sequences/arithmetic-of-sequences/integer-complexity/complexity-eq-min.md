@@ -9,4 +9,4 @@ $\lVert j \rVert + \lVert n - j \rVert$ for the integers $j$ with $1 \le j \le n
 
 ## Sources
 
-- Juan Arias de Reyna, "Complexity of Natural Numbers", Proposition 1.
+- Juan Arias de Reyna, *Complexity of Natural Numbers*, INTEGERS 24 (2024), Article A19, Proposition 1.

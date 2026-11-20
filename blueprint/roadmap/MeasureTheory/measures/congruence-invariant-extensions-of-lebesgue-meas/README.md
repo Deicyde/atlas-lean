@@ -1,4 +1,4 @@
-# Congruence-invariant extensions of Lebesgue measure
+# Congruence-invariant extensions of measures on the plane
 
 - [Congruent plane sets](are-congruent.md)
 - [Congruence-invariant set functions on the plane](is-congruence-invariant.md)

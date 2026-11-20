@@ -17,4 +17,4 @@ $$10 d_{DDU}(n) = (10n - 13) F_{2n} + (-4n + 5) L_{2n}.$$
 
 ## Sources
 
-- Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 9 (`jis-2025-25.1.6-thm-9`).
+- Rigoberto Flórez, Leandro Junes, Luisa M. Montoya, and José L. Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 9 (`jis-2025-25.1.6-thm-9`).

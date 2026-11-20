@@ -1,4 +1,3 @@
-# Substitution leaves constant channels and the empty process unchanged
+# Substitution into the empty process
 
-Substitution leaves a process with no `var 0` untouched: a
-constant channel stays constant, and the empty process stays empty.
+For every [channel name](name.md) $n$, substituting $n$ for the innermost bound variable of the empty process gives the empty process: $\mathbf{0}[n] = \mathbf{0}$.

@@ -1,3 +1,3 @@
 # Nonnegativity of visit probabilities
 
-Visit probabilities are nonnegative.
+In every [admixture graph](admixture-graph.md) and for all nodes $X, c$, the [visit probability](visit.md) satisfies $v(X, c) \ge 0$.

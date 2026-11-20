@@ -7,4 +7,4 @@ $0 \le i, j \le n-1$ equals $F_{2n+2}$.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL16/Bouras/bouras4.tex>, lines 109–117.
+- Belgacem Bouras, *A New Characterization of Catalan Numbers Related to Hankel Transforms and Fibonacci Numbers*, Journal of Integer Sequences 16 (2013), Article 13.3.3, Section 1, equation (2), <https://cs.uwaterloo.ca/journals/JIS/VOL16/Bouras/bouras4.pdf>.

@@ -7,9 +7,10 @@ automorphism of $K$ fixing $F$, has exactly $n$ elements equals the number of tu
 $a = (a_0, \dots, a_{n-1}) \in F^n$ with $a_0 + a_1 + \dots + a_{n-1} = 0$ for which there is no
 $l$ with $0 < l < n$ such that $a_{i+l} = a_i$ for all $i$ (indices taken mod $n$).
 
-The trace condition, present in Corollary 9.9 of the arXiv text, cannot be dropped: for
-$F = \mathbb{F}_2$ and $n = 3$ there are $6$ elements with Galois orbits of size $3$ but only $3$
-such tuples.
+The two conditions, trace zero and zero sum (present in Corollary 9.9 of the arXiv text), go
+together: for $F = \mathbb{F}_2$ and $n = 3$ there are $6$ elements with Galois orbits of size $3$
+but only $3$ tuples with zero sum and no period, while without the zero-sum condition there are
+again $6$ tuples.
 
 ## Sources
 

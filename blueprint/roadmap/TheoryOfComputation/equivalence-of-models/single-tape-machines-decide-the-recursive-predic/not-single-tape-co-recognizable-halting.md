@@ -7,4 +7,4 @@ the codes whose program does not halt on input $n$.
 
 ## Sources
 
-- Sipser, Corollary 4.23 (there for $A_{TM}$), with partial recursive codes run on $n$.
+- M. Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage Learning, 2013, Corollary 4.23 (there for $A_{TM}$), with partial recursive codes run on $n$.

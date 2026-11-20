@@ -8,4 +8,4 @@ for every $i \ge 1$, the word $W_i$ read backwards is $W_i$ itself.
 
 ## Sources
 
-- Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 4 (`jis-2025-25.3.8-lem-4`).
+- Wieb Bosma, René Bruin, Robbert Fokkink, Jonathan Grube, Anniek Reuijl and Thian Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 4 (`jis-2025-25.3.8-lem-4`), https://cs.uwaterloo.ca/journals/JIS/VOL28/Fokkink/fokkink9.html

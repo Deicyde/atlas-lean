@@ -1,3 +1,3 @@
 # Subgraph induced on a window
 
-The subgraph of `G` induced on `S`.
+For a graph $G$ on $V$ and a finite set $S \subseteq V$, the subgraph of $G$ induced on $S$.

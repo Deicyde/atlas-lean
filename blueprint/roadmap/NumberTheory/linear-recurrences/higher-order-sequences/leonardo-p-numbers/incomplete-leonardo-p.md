@@ -1,4 +1,4 @@
-# Incomplete Leonardo p-numbers
+# Incomplete Leonardo $p$-numbers
 
 For natural numbers $p$, $n$ and $k$, the incomplete
 Leonardo $p$-number is the integer
@@ -11,4 +11,4 @@ On the paper's range $0 \le k \le \lfloor n/(p+1) \rfloor$ the maximum is always
 
 ## Sources
 
-- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, display (4).
+- Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo $p$-Numbers and Lucas-Leonardo $p$-Numbers*, INTEGERS 25 (2025), Article A57, display (4).

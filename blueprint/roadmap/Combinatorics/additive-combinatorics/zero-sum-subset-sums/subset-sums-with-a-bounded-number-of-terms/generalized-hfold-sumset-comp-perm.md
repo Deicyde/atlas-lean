@@ -8,8 +8,7 @@ For every permutation $\pi$ of $\{0, \dots, k-1\}$, the generalized $h$-fold sum
 $(a_{\pi(0)}, \dots, a_{\pi(k-1)})$ with $(r_{\pi(0)}, \dots, r_{\pi(k-1)})$ equals
 $h^{(\bar r)}A$.
 
-The paper assumes $h \ge 2$, all $r_j$ positive and the $a_j$ distinct; none of this is assumed
-here.
+The paper assumes $h \ge 2$, all $r_j$ positive and the $a_j$ distinct; none of this is needed.
 
 ## Sources
 

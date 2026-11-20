@@ -9,7 +9,7 @@ $K(P, h, j) = (1 - y)/(|P|(1 - y) + 1)$, read as $0$ when the denominator vanish
 constant $\sum_P b_P^2$ attached to $F$, $h$, $k$, $\xi$ and $j$ equals
 $\sum_P (|P| (\rho^{-1})^{k \deg P} K(P, h, j))^2$, the sum over all monic irreducible
 polynomials $P$ over $F$, taken as an unconditional sum that is $0$ when the family is not
-summable. This holds by definition.
+summable.
 
 ## Sources
 

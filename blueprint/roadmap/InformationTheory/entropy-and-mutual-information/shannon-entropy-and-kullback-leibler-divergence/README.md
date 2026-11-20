@@ -14,3 +14,12 @@
 - [Cross-entropy is entropy plus divergence](cross-entropy-eq-shannon-entropy-add-kl.md)
 - [Gibbs' inequality](shannon-entropy-le-cross-entropy.md)
 - [Equality in Gibbs' inequality](cross-entropy-eq-shannon-entropy-iff.md)
+
+## Related topics
+
+- [Method of types](../method-of-types/README.md): entropy and divergence as exponents, $|T_P| \approx e^{nH(P)}$
+  and $Q^n(T_P) \approx e^{-nD(P\|Q)}$.
+- [I-projections](../../information-inequalities/i-projections/README.md): minimising the divergence over
+  convex sets, and its Pythagorean inequality.
+- [f-divergences](../../information-inequalities/f-divergences/README.md): the divergence as the
+  f-divergence of $t\log t$.

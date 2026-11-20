@@ -1,4 +1,3 @@
 # Origin lies in every box
 
-The origin lies in every box. Same statement as `Ising.origin_mem_box`, which this module does
-not import.
+For all $d, n \in \mathbb{N}$, the origin of $\mathbb{Z}^d$ lies in the box $\Lambda_n = \{-n, \dots, n\}^d \subseteq \mathbb{Z}^d$.

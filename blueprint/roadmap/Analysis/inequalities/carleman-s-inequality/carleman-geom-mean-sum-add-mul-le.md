@@ -1,5 +1,7 @@
 # Strengthened finite Carleman inequality
 
-Strengthened finite Carleman inequality: the partial sum of the geometric
-means plus `(M + 1)` times the last geometric mean is bounded by `e` times the
-partial sum of the terms.
+For every sequence $a_n \ge 0$ and every $M \in \mathbb{N}$, with $G_n = (a_0 \cdots a_n)^{1/(n+1)}$,
+
+$$
+\sum_{n=0}^{M} G_n + (M + 1)\, G_M \le e \sum_{n=0}^{M} a_n .
+$$

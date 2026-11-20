@@ -6,4 +6,4 @@ natural number $m \ge 1$ if and only if $x = 3$.
 
 ## Sources
 
-- Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Corollary 1(b).
+- Abderrahim Makki Naciri, *A Note on Sylvester's Sequence*, INTEGERS 24 (2024), Article A117, Corollary 1(b).

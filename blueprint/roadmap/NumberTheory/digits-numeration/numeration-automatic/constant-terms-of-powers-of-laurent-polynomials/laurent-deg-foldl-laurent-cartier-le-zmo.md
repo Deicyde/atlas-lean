@@ -7,7 +7,8 @@ exponent of a variable occurring in $F$, and $\Lambda_p$ for the operator that k
 whose exponents are all multiples of $p$ and substitutes $x_s^p \mapsto x_s$. For every finite
 list $k_1, \dots, k_n$ of natural numbers with each $k_t < p$, starting from $Q_0$ and applying
 $Q \mapsto \Lambda_p(\tilde P^{k_t} Q)$ for $t = 1, \dots, n$ in turn gives a Laurent polynomial
-of degree at most $\max(\deg \tilde P - 1, \deg Q_0)$.
+of degree at most $\max(\deg \tilde P - 1, \deg Q_0)$, where $\deg \tilde P - 1$ is read as $0$
+when $\deg \tilde P = 0$.
 
 ## Sources
 

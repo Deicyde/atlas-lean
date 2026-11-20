@@ -48,9 +48,9 @@
 - [Updated allele frequencies are less than one](m-step-f-lt-one.md)
 - [The FRAPPE EM step](em-step.md)
 
-## The M-step maximizes `Q`
+## The M-step maximizes the EM objective
 
 - [Decomposition of the admixture EM objective](em-q-eq.md)
-- [The FRAPPE update maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [The FRAPPE update maximizes the EM objective](em-q-le-em-step.md)
 - [Each FRAPPE EM step does not decrease the admixture log-likelihood](admixture-log-lik-le-em-step.md)
 - [The admixture log-likelihood is monotone along the FRAPPE EM iterates](admixture-log-lik-iterate-em-step-monoto.md)

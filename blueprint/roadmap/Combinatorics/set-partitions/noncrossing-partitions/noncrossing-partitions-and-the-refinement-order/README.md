@@ -6,3 +6,8 @@
 - [Noncrossing partition](noncrossing-partition.md)
 - [Block of a noncrossing partition](block.md)
 - [Partitions of at most three points are noncrossing](is-noncrossing-of-le-three.md)
+
+## Related topics
+
+- [Noncrossing pair partitions and the Catalan count](../noncrossing-pair-partitions-and-the-catalan-count/README.md)
+- [Free probability](../../../../Probability/high-dimensional-probability/free-probability/README.md)

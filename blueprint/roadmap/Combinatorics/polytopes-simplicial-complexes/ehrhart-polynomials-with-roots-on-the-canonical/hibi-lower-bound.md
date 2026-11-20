@@ -6,7 +6,7 @@ complex polynomial with $E(k) = |kP \cap \mathbb{Z}^d|$ for every natural number
 $h^*_i$ for the $h^*$-coefficients of $E$. If $h^*_d \ne 0$, then
 $\operatorname{Re} h^*_1 \le \operatorname{Re} h^*_k$ for every $k$ with $1 \le k < d$.
 
-The $h^*$-coefficients are defined as complex numbers, so the inequality compares real parts.
+The $h^*$-coefficients of $E$ are integers, so the real parts are the coefficients themselves.
 
 ## Sources
 

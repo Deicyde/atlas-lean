@@ -1,6 +1,5 @@
 # Exponential sums have full column rank
 
-If `∑_{u ∈ S} c_u exp(-a u)` vanishes at
-`|S|` distinct points `a ∈ P` (the rates `u ∈ S` are distinct as elements of a `Finset`), every
-coefficient is zero. Equivalently, the matrix `(exp(-a u))_{a ∈ P, u ∈ S}` has full column
-rank when `|P| ≥ |S|`.
+Let $S$ and $P$ be finite sets of real numbers with $|S| \le |P|$, and let $c \colon \mathbb{R} \to \mathbb{R}$. If
+$\sum_{u \in S} c(u)\, e^{-a u} = 0$ for every $a \in P$, then $c(u) = 0$ for every $u \in S$. Equivalently, the
+matrix $(e^{-a u})_{a \in P,\ u \in S}$ has full column rank when $|P| \ge |S|$.

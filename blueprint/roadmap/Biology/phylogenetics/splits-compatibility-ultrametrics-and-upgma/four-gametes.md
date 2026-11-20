@@ -1,4 +1,3 @@
 # Four-gamete condition for binary characters
 
-The binary characters `χ` and `ψ` show **all four gametes** `(0,0), (0,1), (1,0), (1,1)`
-on the taxa.
+Two binary characters $\chi, \psi : X \to \{0, 1\}$ show all four gametes if for every $(b, c) \in \{0, 1\}^2$ some taxon $x$ has $\chi(x) = b$ and $\psi(x) = c$.

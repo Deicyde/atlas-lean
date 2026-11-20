@@ -6,4 +6,4 @@ problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING; J. D. Ullman, "NP-complete scheduling problems" (1975).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING; Jeffrey D. Ullman, "NP-complete scheduling problems" (1975).

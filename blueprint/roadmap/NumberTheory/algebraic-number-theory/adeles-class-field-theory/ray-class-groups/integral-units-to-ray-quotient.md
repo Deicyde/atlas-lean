@@ -9,4 +9,4 @@ integers $\mathcal O_K$ to the coset of $u$, viewed as an element of $K_{\mathfr
 
 ## Sources
 
-- ATLAS `exactSeq_map2`.
+- ATLAS NumberTheoryI, Section 21.3, Theorem 21.8 and its proof.

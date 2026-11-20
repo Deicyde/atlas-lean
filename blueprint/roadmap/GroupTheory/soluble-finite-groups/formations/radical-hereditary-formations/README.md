@@ -7,5 +7,5 @@
 - [Hereditary class of groups](is-hereditary.md)
 - [Soluble radical](is-soluble-radical.md)
 - [Solubly saturated class](is-composition.md)
-- [Kourovka Problem 12.7 (Vasil'ev)](radical-hereditary-formation-is-composit.md)
+- [Radical hereditary formations and composition formations (Kourovka 12.7)](radical-hereditary-formation-is-composit.md)
 - [Radical hereditary formations need not be composition formations](radical-hereditary-formation-is-composit-2.md)

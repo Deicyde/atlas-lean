@@ -1,3 +1,3 @@
-# Continuity of the scale function on $(0, 1)$
+# Continuity of the scale function on the closed unit interval
 
-The scale function is continuous on `[0, 1]`.
+For every [regular diffusion](is-regular-diffusion.md) with drift $b$ and variance $a$, the [scale function](scale-function.md) $S$ is continuous on $[0, 1]$.

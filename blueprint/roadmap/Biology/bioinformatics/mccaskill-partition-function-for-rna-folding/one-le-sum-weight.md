@@ -1,4 +1,3 @@
 # Total structure weight is at least one
 
-For nonnegative weights the total weight of all structures is at least `1`, the weight of
-the empty structure; so the denominator of `pairProb` is positive.
+If $w(i, j) \ge 0$ for all $i, j$, then the sum of the [weights](weight.md) of all [secondary structures](structures.md) is at least $1$.

@@ -6,4 +6,4 @@ $d_{m+2} = d_{m+1} + d_m + (-1)^{m+2}$ for every natural number $m$.
 
 ## Sources
 
-- Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2 (definition before Lemma 3).
+- Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2 (definition before Lemma 3).

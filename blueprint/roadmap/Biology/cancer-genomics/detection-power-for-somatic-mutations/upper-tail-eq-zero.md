@@ -1,3 +1,3 @@
 # Binomial upper tail beyond n is zero
 
-`P(m) = 0` for `m > n`.
+For every real $p$ and natural numbers $m > n$, the [upper tail](upper-tail.md) satisfies $P_p(m) = 0$.

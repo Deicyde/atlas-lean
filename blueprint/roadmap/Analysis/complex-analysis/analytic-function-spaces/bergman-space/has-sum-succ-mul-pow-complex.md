@@ -1,4 +1,9 @@
 # Square of the complex geometric series
 
-The Cauchy product of the geometric series with itself: the series
-`∑' n, (n + 1) * qⁿ` sums to `(1 - q)⁻¹ ^ 2`.
+For every complex number $q$ with $|q| < 1$,
+
+$$
+\sum_{n=0}^{\infty} (n+1)\, q^n = \frac{1}{(1 - q)^2},
+$$
+
+the Cauchy product of the geometric series with itself.

@@ -7,4 +7,4 @@ $h$ applied to the one-letter word $1$. Thus $K_0 = 1$, $K_1 = 110$ and $K_2 = 1
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 (`K_n = h^n(1)`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 ($K_n = h^n(1)$).

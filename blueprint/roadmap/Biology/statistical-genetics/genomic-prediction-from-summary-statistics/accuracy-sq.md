@@ -1,6 +1,7 @@
 # Squared accuracy of a polygenic score
 
-The squared correlation of the genetic value and the polygenic score as a ratio of
-expectations, `𝔼[βᵀβ̂]² / (𝔼[βᵀβ] 𝔼[β̂ᵀβ̂])`: by `integral_score_mul_score`, `βᵀβ̂`, `βᵀβ` and
-`β̂ᵀβ̂` are the covariance and variances of `xᵀβ` and `xᵀβ̂` over a target population of
-standardized uncorrelated markers. It is not the expectation of a squared correlation.
+In an [effect-estimate model](prsmodel.md) on a measure $\mu$ with effects $\beta_k$ and [estimated effects](beta-hat.md) $\hat\beta_k$, the squared accuracy is
+
+$$r_g^2 = \frac{\bigl(\int \sum_k \beta_k \hat\beta_k \, d\mu\bigr)^2}{\int \sum_k \beta_k^2 \, d\mu \cdot \int \sum_k \hat\beta_k^2 \, d\mu},$$
+
+with the convention $x/0 = 0$. By the [cross-moment identity](integral-score-mul-score.md), $\beta^\top\hat\beta$, $\beta^\top\beta$ and $\hat\beta^\top\hat\beta$ are the covariance and variances of the genetic value and the polygenic score over a target population of standardized uncorrelated markers; $r_g^2$ is a ratio of integrals, not the integral of a squared correlation.

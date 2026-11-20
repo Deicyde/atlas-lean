@@ -1,4 +1,4 @@
-# Kourovka Problem 19.23 (Chiodo–Vyas), finitely presented form
+# Torsion length of finitely presented soluble groups (Kourovka 19.23)
 
 The statement that there is
 a finitely presented soluble group $G$ of torsion length greater than $2$, that is, such that

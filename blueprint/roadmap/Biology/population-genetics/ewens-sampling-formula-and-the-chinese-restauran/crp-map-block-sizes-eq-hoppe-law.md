@@ -1,4 +1,3 @@
 # The block sizes follow Hoppe's urn
 
-The law of the multiset of block sizes after `n`
-customers is the law `Ewens.hoppeLaw` of Hoppe's urn on allelic partitions after `n` draws.
+For every real $\theta > 0$ and every integer partition $p$ of $n$, the probability that the [multiset of block sizes](block-sizes.md) of a partition drawn from the [Chinese restaurant process](crp.md) $\mathrm{CRP}_n$ equals $p$ is $h_n(p)$, the [law of Hoppe's urn](hoppe-law.md) after $n$ draws.

@@ -38,4 +38,5 @@ change the growth class of $\sigma$ without changing $w$.
 
 ## Sources
 
-- Fabien Durand, Julien Leroy, and Gwenaël Richomme, "Do the Properties of an S-adic Representation Determine Factor Complexity?", Journal of Integer Sequences 16 (2013), Article 13.2.6, Theorem [Pansiot], lines 267–283, quoting J.-J. Pansiot, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Durand/durand2.tex>.
+- Fabien Durand, Julien Leroy and Gwenaël Richomme, *Do the Properties of an S-adic Representation Determine Factor Complexity?*, Journal of Integer Sequences 16 (2013), Article 13.2.6, Section 2.1, Theorem 2.2 (quoting Pansiot), https://cs.uwaterloo.ca/journals/JIS/VOL16/Durand/durand2.html
+- Jean-Jacques Pansiot, *Complexité des facteurs des mots infinis engendrés par morphismes itérés*, in Automata, Languages and Programming (ICALP 1984), Lecture Notes in Computer Science 172, Springer, 1984, 380–389.

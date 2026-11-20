@@ -1,5 +1,3 @@
 # Dimension of the cokernel of a unilateral shift power
 
-The cokernel of `S ^ n` has dimension `n`: the quotient of `ℓ²`
-by the range of `S ^ n` is equivalent to `Fin n → 𝕜` via the first
-`n` coordinates.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $S$ be the [unilateral shift](shift-clm.md) on $\ell^2(\mathbb{N}, \mathbb{K})$ and $n \in \mathbb{N}$. The quotient of $\ell^2(\mathbb{N}, \mathbb{K})$ by the range of $S^n$ has dimension $n$ over $\mathbb{K}$: the first $n$ coordinates identify it with $\mathbb{K}^n$.

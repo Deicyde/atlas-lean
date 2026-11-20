@@ -10,4 +10,4 @@ $Q_k(y) = -y_1^2 - \dots - y_k^2 + y_{k+1}^2 + \dots + y_n^2$ on $\mathbb{R}^n$.
 
 ## Sources
 
-- J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963) Lemma 2.2; M. Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed., Morse lemma; Lean states Euclidean origin finite-dimensional specialization with corrected nondegeneracy grouping `(∀ w, (fderiv (fderiv f) 0 v) w = 0) → v = 0`.
+- J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963) Lemma 2.2; M. Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed., Morse lemma.

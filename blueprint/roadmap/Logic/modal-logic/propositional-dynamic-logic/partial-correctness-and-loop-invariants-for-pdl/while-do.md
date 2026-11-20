@@ -1,4 +1,5 @@
 # Guarded while loop in PDL
 
-A guarded loop in the existing PDL syntax: iterate guarded body
-steps, then test that the guard is false.
+For a formula $g$ (the guard) and a program $a$ (the body), the program
+$\mathbf{while}\ g\ \mathbf{do}\ a$ is $(g? ; a)^* ; (\neg g)?$: it iterates the guarded body and
+then tests that the guard is false.

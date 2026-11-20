@@ -1,4 +1,4 @@
-# Kourovka 19.55(b) (Monakhov): p-length at most one
+# $p$-length under supersoluble full-prime maximal subgroups (Kourovka 19.55(b))
 
 The proposition that for every finite
 soluble group $G$ in which every maximal subgroup $H$ with $\pi(H) = \pi(G)$ is supersoluble,

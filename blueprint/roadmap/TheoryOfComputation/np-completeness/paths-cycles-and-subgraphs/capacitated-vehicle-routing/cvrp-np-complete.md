@@ -6,4 +6,4 @@ it.
 
 ## Sources
 
-- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), VEHICLE ROUTING (capacitated); G. B. Dantzig and J. H. Ramser, "The truck dispatching problem" (1959).
+- Michael R. Garey and David S. Johnson, *Computers and Intractability* (1979), VEHICLE ROUTING (capacitated); George B. Dantzig and John H. Ramser, "The truck dispatching problem" (1959).

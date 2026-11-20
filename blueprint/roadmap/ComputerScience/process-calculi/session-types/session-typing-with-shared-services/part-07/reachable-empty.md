@@ -1,4 +1,5 @@
 # Multi-step subject reduction at the empty interface
 
-Finite runtime execution from an empty interface preserves exact empty
-ownership. This safety result does not identify idle replicas with Cong nil.
+Let $n$ be a natural number, $\Gamma$ a service environment and $p$, $q$ processes. If $\Gamma;
+\emptyset \vdash_n p$ and $q$ is reachable from $p$ by finitely many (possibly zero) reduction
+steps, then $\Gamma; \emptyset \vdash_n q$.

@@ -10,4 +10,4 @@ at $0$.
 
 ## Sources
 
-- Schork, On Generalized Stirling Numbers and Normal Ordering, StirW2 formula. Defined independently from the Bessel side.
+- Toufik Mansour, Matthias Schork, and Mark Shattuck, *The Generalized Stirling and Bell Numbers Revisited*, Journal of Integer Sequences 15 (2012), Article 12.8.3, Section 3, equation (19). Defined independently from the Bessel side.

@@ -10,4 +10,4 @@ outside $1 \le n \le p$ play no role.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `⪯`.
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of $\preceq$.

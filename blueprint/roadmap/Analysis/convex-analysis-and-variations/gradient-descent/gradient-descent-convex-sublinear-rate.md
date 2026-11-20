@@ -7,7 +7,7 @@ minimizer of $f$, let $0 < \eta \le 1/L$, and let $(x_k)_{k \ge 0}$ be any seque
 $x_{k+1} = x_k - \eta \nabla f(x_k)$ for all $k$. Then for every $k \ge 1$,
 $f(x_k) - f(x^\star) \le \|x_0 - x^\star\|^2 / (2 \eta k)$.
 
-Proof: The descent lemma and first-order convexity inequality are proved on affine lines. They
+Proof: the descent lemma and the first-order convexity inequality, applied along affine lines,
 bound each objective gap by a difference of squared distances to $x^\star$; telescoping and the
 monotonicity of $f(x_k)$ in $k$ give the rate, as in L. Vandenberghe, ECE236C lecture notes
 "Gradient method" (Spring 2022), slides 1.23-1.26.

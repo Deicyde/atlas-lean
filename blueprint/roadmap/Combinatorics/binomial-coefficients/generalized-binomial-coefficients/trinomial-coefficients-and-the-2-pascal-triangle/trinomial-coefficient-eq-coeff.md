@@ -5,8 +5,8 @@ the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and $[t^m]
 coefficient of $t^m$ in a formal power series $F$ over $\mathbb{Q}$. For all natural numbers
 $n$ and $k$, $\binom{n}{k}_2 = [t^{2n}]\,(1 - t + t^2)^n (1 - t)^{-1} \left(t/(1-t)\right)^k$.
 
-The paper also allows negative integers $k$; that case is not included here.
+The paper also allows negative integers $k$; the statement above takes $k$ natural.
 
 ## Sources
 
-- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 3 (`jis-2025-25.3.5-thm-3`).
+- Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, J. Integer Seq. 28 (2025), Article 25.3.5, Theorem 3, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Otmani/otmani10.html> (catalogue key jis-2025-25.3.5-thm-3).

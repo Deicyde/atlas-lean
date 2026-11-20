@@ -7,4 +7,4 @@ is exactly the closed unit ball of $E^{**}$.
 
 ## Sources
 
-- H. H. Goldstine, Weakly complete Banach spaces, Duke Math. J. 4 (1938), DOI 10.1215/S0012-7094-38-00410-7; Rudin, Functional Analysis, 2nd ed.; Lean states `RCLike` field case with metric closedBall formulation.
+- H. H. Goldstine, Weakly complete Banach spaces, Duke Math. J. 4 (1938), DOI 10.1215/S0012-7094-38-00410-7; Rudin, Functional Analysis, 2nd ed.. The statement here is the case of scalars $\mathbb{R}$ or $\mathbb{C}$, formulated with closed balls.

@@ -8,4 +8,5 @@ random vectors $X$ in $\mathbb{R}^n$.
 
 ## Sources
 
-- Klartag, J. Funct. Anal. 245 (2007), 284--310; catalogue `constants/20a.md`.
+- B. Klartag, *Power-law estimates for the central limit theorem for convex sets*, J. Funct. Anal. 245 (2007),
+  284–310; catalogue https://github.com/teorth/optimizationproblems, `constants/20a.md`.

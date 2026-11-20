@@ -1,5 +1,5 @@
 # Inf-based $\beta_c$ equals $-\tfrac{1}{2}\log(1 - p_c)$ for $d \ge 2$
 
-The public Ising critical inverse temperature `Ising.betaC d` in dimension `d ≥ 2` is
-`-(1/2) log (1 - p_c(d, 2))`, the image of the FK critical point. This is the form
-usable with `ising_sharp_phase_transition`, whose `β_c` is `Ising.betaC d`.
+For $d \ge 2$, the [critical inverse temperature](beta-c.md) $\beta_c(d) = \inf\{\beta \ge 0 : m^*(\beta) > 0\}$
+equals $-\frac12 \log(1 - p_c(d, 2))$, where $p_c(d, 2)$ is
+the [critical point](../../random-cluster-model/critical-point-of-the-random-cluster-model/the-critical-point-of-the-random-cluster-model/fk-pc.md) of the random-cluster model with $q = 2$.

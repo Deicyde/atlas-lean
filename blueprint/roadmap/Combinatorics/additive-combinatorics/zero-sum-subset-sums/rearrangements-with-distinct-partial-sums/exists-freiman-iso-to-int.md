@@ -10,4 +10,4 @@ $a_1 + \cdots + a_\ell = b_1 + \cdots + b_\ell$.
 
 ## Sources
 
-- Noah Kravitz, "Rearranging Small Sets for Distinct Partial Sums", Theorem 3.
+- Noah Kravitz, "Rearranging Small Sets for Distinct Partial Sums", INTEGERS 24 (2024), Article A113, Theorem 3.

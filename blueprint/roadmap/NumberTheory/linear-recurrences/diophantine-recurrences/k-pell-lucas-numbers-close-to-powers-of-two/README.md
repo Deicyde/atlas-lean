@@ -12,7 +12,7 @@
 - [Main term of the dominant root (Lemma 3)](k-pell-lucas-dominant-root-main-term.md)
 - [Continued-fraction lower bound for rational approximations](lt-abs-sub-div-of-max-partial-quotient.md)
 - [Linear bounds for the logarithm and the exponential near zero (Lemma 6)](abs-log-one-add-lt-and-abs-lt-exp-sub-on.md)
-- [Lemma 7](lt-two-rpow-mul-mul-log-rpow.md)
+- [Guzmán Sánchez–Luca lemma: $x < 2^\ell T (\log T)^\ell$](lt-two-rpow-mul-mul-log-rpow.md)
 - [Exponent bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 8)](k-pell-lucas-close-two-pow-exponent-boun.md)
 - [Absolute bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 9)](k-pell-lucas-close-two-pow-lt-bounds.md)
 - [No $k$-Pell–Lucas number with $k > 350$ and index $n \ge k + 1$ is close to a power of two (Lemma 10)](k-pell-lucas-not-close-two-pow-of-large.md)

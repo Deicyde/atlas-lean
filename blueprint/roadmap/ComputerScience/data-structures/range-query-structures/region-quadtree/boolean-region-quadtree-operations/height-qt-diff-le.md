@@ -1,3 +1,4 @@
 # Height bound for quadtree difference
 
-Difference height is bounded by the maximum input height.
+For all Boolean region quadtrees $s$ and $t$, the height of the difference $s \setminus t$ is at
+most the maximum of the heights of $s$ and $t$.

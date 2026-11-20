@@ -1,8 +1,7 @@
 # Linear moment model for instrumental variables
 
-An observational linear moment model: variables `Z`, `X`, `Y` and `U` on a probability
-space, all square integrable, with the algebraic decomposition `Y = α + β X + U`.
-The residual `U` is an arbitrary observed-variable function. Consequently `outcome_eq` does not
-exclude direct effects of `Z` under interventions, and `β` is only the coefficient in this
-decomposition. Orthogonality (`Cov(Z, U) = 0`) and nonzero first stage (`Cov(Z, X) ≠ 0`) are
-hypotheses of the covariance identities that use them.
+Let $\mu$ be a measure on a measurable space $\Omega$. A linear moment model consists of real functions $Z$ (the instrument, in Mendelian randomization a genotype), $X$ (the exposure), $Y$ (the outcome) and $U$ (the residual) on $\Omega$ and real numbers $\alpha$ (intercept) and $\beta$ (coefficient) such that $Z$, $X$ and $U$ are square integrable with respect to $\mu$ and
+
+$$Y(\omega) = \alpha + \beta X(\omega) + U(\omega) \qquad \text{for every } \omega \in \Omega.$$
+
+The residual $U$ is arbitrary and may depend on $Z$, so the decomposition does not exclude a direct effect of the instrument on the outcome, and $\beta$ is only the coefficient of this decomposition, not a causal effect.

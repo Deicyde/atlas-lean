@@ -1,3 +1,3 @@
 # Component off a closed walk containing a seed
 
-The sites reachable from `seed` in the lattice with the vertices of `Vc` removed.
+For a closed walk $w$ at a site $a$ of the square lattice and a site $s$, the set of sites joined to $s$ by a walk in the square lattice with every edge having an endpoint on $w$ deleted. For $s$ not on $w$ it is the connected component of $s$ in the lattice off $w$; for $s$ on $w$ it is $\{s\}$.

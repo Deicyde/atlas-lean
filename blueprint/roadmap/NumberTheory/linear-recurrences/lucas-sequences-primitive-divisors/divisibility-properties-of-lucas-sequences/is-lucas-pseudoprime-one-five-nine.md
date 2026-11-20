@@ -8,4 +8,4 @@ divides $U_8 = -279$, where $U_n$ is the Lucas sequence of $(1, 5)$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.1 (example).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.1 (the definition this example illustrates; the example is not printed in the source).
