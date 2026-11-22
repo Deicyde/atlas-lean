@@ -4,11 +4,10 @@ Let $m, n \ge 1$ and let $A$ be a real $m \times n$ matrix, the payoff matrix of
 zero-sum game in which the row player maximises and the column player minimises the expected
 payoff $p^{\mathsf{T}} A q$ over mixed strategies $p \in \Delta_m$ and $q \in \Delta_n$. Then
 
-$$\max_{p \in \Delta_m} \min_{q \in \Delta_n} p^{\mathsf{T}} A q
-= \min_{q \in \Delta_n} \max_{p \in \Delta_m} p^{\mathsf{T}} A q .$$
+$$\sup_{p \in \Delta_m} \inf_{q \in \Delta_n} p^{\mathsf{T}} A q
+= \inf_{q \in \Delta_n} \sup_{p \in \Delta_m} p^{\mathsf{T}} A q .$$
 
-Both sides are, a priori, a supremum of infima and an infimum of suprema over the simplices; the
-saddle point of the game attains them. The common value is the value of the game.
+The common value is the value of the game.
 
 ## Informally uses
 
