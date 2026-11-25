@@ -29,7 +29,7 @@ example : schurComplement (!![3] : Matrix (Fin 1) (Fin 1) ℝ)
 example : schurComplement (!![2] : Matrix (Fin 1) (Fin 1) ℝ) !![1] !![1]
     = !![1] := by
   ext i j
-  fin_cases i <;> fin_cases j <;>
+  fin_cases i; fin_cases j;
     norm_num [schurComplement, Matrix.inv_def, Matrix.adjugate_fin_one,
       Matrix.mul_apply, dotProduct, Matrix.vecMul, Fin.sum_univ_one, -Matrix.transpose_of]
 

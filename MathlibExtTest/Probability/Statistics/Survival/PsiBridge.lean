@@ -73,12 +73,12 @@ theorem productIntegral_twoJump : productIntegral twoJump 0 3 = 1 := by
       twoJump x = (fun t : ℝ => if 1 ≤ t then (1 / 2 : ℝ) else 0) x := by
     intro x hx
     simp only [twoJump]
-    split_ifs <;> (try norm_num) <;> linarith [hx.1, hx.2]
+    split_ifs <;> (norm_num) <;> linarith [hx.1, hx.2]
   have h₂ : ∀ x ∈ Set.Icc (3 / 2 : ℝ) 3,
       twoJump x = (fun t : ℝ => if 2 ≤ t then (1 / 2 + -1 / 3 : ℝ) else 1 / 2) x := by
     intro x hx
     simp only [twoJump]
-    split_ifs <;> (try norm_num) <;> linarith [hx.1, hx.2]
+    split_ifs <;> (norm_num) <;> linarith [hx.1, hx.2]
   rw [productIntegral_congr (by norm_num) h₁, productIntegral_step (by norm_num) (by norm_num),
     productIntegral_congr (by norm_num) h₂, productIntegral_step (by norm_num) (by norm_num)]
   norm_num

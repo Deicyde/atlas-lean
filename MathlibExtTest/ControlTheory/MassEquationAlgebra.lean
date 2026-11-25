@@ -65,7 +65,7 @@ example :
       ext i
       fin_cases i <;>
         simp [massEx, Matrix.mulVec, dotProduct, Fin.sum_univ_two,
-          Fin.sum_univ_three] <;> norm_num)
+          Fin.sum_univ_three]; norm_num)
 
 -- The first-order right-hand side at v = (1, 2), F = (4, 9) is
 -- ((1, 2), (2, 3)); a pair with the wrong position derivative is

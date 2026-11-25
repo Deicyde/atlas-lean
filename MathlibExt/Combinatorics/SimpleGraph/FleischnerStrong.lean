@@ -3763,7 +3763,7 @@ private theorem forwardLast_reachable_root (c : G.Walk x x) (hc : c.IsCycle)
     change (c.forwardLastCutCompressedMultigraph hc cover q hlast).underlying.Adj
       (c.getVert ((i + 1) - 1)) (c.getVert ((i + 1) + 1)) at h
     convert h using 1
-    all_goals congr 1
+    congr 1
   have hpath := reachable_of_adj_or_skip
     (G := (c.forwardLastCutCompressedMultigraph hc cover q hlast).underlying)
     (fun i ↦ c.getVert i) m selected hterminal hadj hskip
@@ -3945,7 +3945,7 @@ private theorem cutSplit_forward_reachable_root (c : G.Walk x x) (hc : c.IsCycle
     change (c.cutSplitCompressedMultigraph hc cover q cut hlast).underlying.Adj
       (c.getVert ((i + 1) - 1)) (c.getVert ((i + 1) + 1)) at h
     convert h using 1
-    all_goals congr 1
+    congr 1
   have hpath := reachable_of_adj_or_skip
     (G := (c.cutSplitCompressedMultigraph hc cover q cut hlast).underlying)
     (fun i ↦ c.getVert i) cut.1.val selected hterminal hadj hskip

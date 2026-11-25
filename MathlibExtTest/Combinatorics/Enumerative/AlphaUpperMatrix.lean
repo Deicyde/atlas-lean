@@ -61,7 +61,7 @@ example (α : ℕ → R) :
   fin_cases i <;> fin_cases j <;>
     simp [alphaUpperMatrix, alphaUpperEntry.eq_1, alphaUpperEntry.eq_2,
       alphaUpperEntry_succ_succ]
-  all_goals ring
+  ring
 
 example (α : ℕ → R) : (alphaUpperMatrix α 0).det = 1 := by
   simp [det_alphaUpperMatrix]

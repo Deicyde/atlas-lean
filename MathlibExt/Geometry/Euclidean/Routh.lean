@@ -75,7 +75,7 @@ theorem routh :
         = c₁ • (X - A) + c₂ • (Y - A) + (c₁ + c₂ - 1) • A := by module
     rw [hmod, h0, add_zero]
   have hsumD : x / (x + 1) + 1 / (x + 1) = 1 := by field_simp
-  have hsumE : 1 / (y + 1) + y / (y + 1) = 1 := by field_simp <;> ring
+  have hsumE : 1 / (y + 1) + y / (y + 1) = 1 := by field_simp; ring
   have hsumF : z / (z + 1) + 1 / (z + 1) = 1 := by field_simp
   have hDA : D - A = (x / (x + 1)) • u + (1 / (x + 1)) • v := by
     rw [hD, hu, hv]; exact aff _ _ _ _ hsumD
@@ -276,7 +276,7 @@ theorem routh :
     rw [t1] at g2
     linear_combination -g2
   have hlamv : lam = z * (y + 1) / (y * z + z + 1) := (eq_div_iff hS1).mpr hlam
-  have hsP : sP = 1 / (y * z + z + 1) := by rw [eP1.1, hlamv]; field_simp <;> ring
+  have hsP : sP = 1 / (y * z + z + 1) := by rw [eP1.1, hlamv]; field_simp; ring
   have htP : tP = y * z / (y * z + z + 1) := by rw [eP1.2, hlamv]; field_simp
   -- Coordinates of Q
   obtain ⟨sQ, tQ, hsQtQ⟩ := hexist Q
@@ -408,7 +408,7 @@ theorem routh :
   have hdetg : g.det
       = (x * y * z - 1) ^ 2 / (((x * y + y + 1) * (y * z + z + 1)) * (z * x + x + 1)) := by
     rw [← LinearMap.det_toMatrix b g, hTMg, Matrix.det_fin_two, e00, e01, e10, e11]
-    field_simp <;> ring
+    field_simp; ring
   set T₁ : Set (EuclideanSpace ℝ (Fin 2)) := convexHull ℝ ({p', q', r'} : Set (EuclideanSpace ℝ (Fin 2))) with hT₁
   have hgT0 : g '' T₀ = convexHull ℝ ({0, q' - p', r' - p'} : Set (EuclideanSpace ℝ (Fin 2))) := by
     rw [hT₀, LinearMap.image_convexHull]

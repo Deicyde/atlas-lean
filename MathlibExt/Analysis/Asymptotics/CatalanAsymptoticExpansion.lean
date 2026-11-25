@@ -1255,7 +1255,7 @@ public theorem _root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
     unfold catalanExpBernoulliSum
     convert tendsto_finsetSum (Finset.range M) (fun j hj =>
       tendsto_const_nhds.mul (hy.pow (j + 1))) using 1
-    all_goals simp
+    simp
   have he : Filter.Tendsto e Filter.atTop (nhds 0) := by
     simpa only [e, sub_zero] using hu.sub hsum0
   have hdiff : ∀ᶠ n : ℕ in Filter.atTop,
@@ -1279,7 +1279,7 @@ public theorem _root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
       unfold catalanExpLogStep
       dsimp [x, y]
       congr 1
-      all_goals ring_nf
+      ring_nf
     dsimp [e]
     rw [hy_succ]
     unfold catalanExpLocalResidual

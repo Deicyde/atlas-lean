@@ -463,28 +463,28 @@ private lemma monsky_mem_faceLine_iff_faceForm_eq_zero
           monskySquareSideForm, monskySquareCorner, monskyCoordinate,
           AffineMap.lineMap_apply, vsub_eq_sub, vadd_eq_add, PiLp.smul_apply,
           smul_eq_mul] at hx ⊢
-        all_goals linarith
+        linarith
       · refine ⟨x.ofLp 1, ?_⟩
         ext j
         fin_cases j <;> norm_num [monskyFaceForm, monskyFaceLeft, monskyFaceRight,
           monskySquareSideForm, monskySquareCorner, monskyCoordinate,
           AffineMap.lineMap_apply, vsub_eq_sub, vadd_eq_add, PiLp.smul_apply,
           smul_eq_mul] at hx ⊢
-        all_goals linarith
+        linarith
       · refine ⟨1 - x.ofLp 0, ?_⟩
         ext j
         fin_cases j <;> norm_num [monskyFaceForm, monskyFaceLeft, monskyFaceRight,
           monskySquareSideForm, monskySquareCorner, monskyCoordinate,
           AffineMap.lineMap_apply, vsub_eq_sub, vadd_eq_add,
           PiLp.smul_apply, smul_eq_mul] at hx ⊢
-        all_goals linarith
+        linarith
       · refine ⟨1 - x.ofLp 1, ?_⟩
         ext j
         fin_cases j <;> norm_num [monskyFaceForm, monskyFaceLeft, monskyFaceRight,
           monskySquareSideForm, monskySquareCorner, monskyCoordinate,
           AffineMap.lineMap_apply, vsub_eq_sub, vadd_eq_add, PiLp.smul_apply,
           smul_eq_mul] at hx ⊢
-        all_goals linarith
+        linarith
 
 private noncomputable def monskyIntersectionPoint
     (T : Finset (Set (EuclideanSpace ℝ (Fin 2))))
@@ -1747,7 +1747,7 @@ private lemma monsky_mem_open_square_face_iff
           monskySquareCorner, AffineMap.lineMap_apply, vsub_eq_sub,
           vadd_eq_add, PiLp.smul_apply, smul_eq_mul, monskySquareSideForm,
           monskyCoordinate] at hi ⊢
-        all_goals linarith
+        linarith
     · refine ⟨x.ofLp 1, ?_, ?_⟩
       · have hypos := hpos 0 (by decide)
         have hylt := hpos 2 (by decide)
@@ -1759,7 +1759,7 @@ private lemma monsky_mem_open_square_face_iff
           monskySquareCorner, AffineMap.lineMap_apply, vsub_eq_sub,
           vadd_eq_add, PiLp.smul_apply, smul_eq_mul, monskySquareSideForm,
           monskyCoordinate] at hi ⊢
-        all_goals linarith
+        linarith
     · refine ⟨1 - x.ofLp 0, ?_, ?_⟩
       · have hxpos := hpos 3 (by decide)
         have hxlt := hpos 1 (by decide)
@@ -1771,7 +1771,7 @@ private lemma monsky_mem_open_square_face_iff
           monskySquareCorner, AffineMap.lineMap_apply, vsub_eq_sub,
           vadd_eq_add, PiLp.smul_apply, smul_eq_mul, monskySquareSideForm,
           monskyCoordinate] at hi ⊢
-        all_goals linarith
+        linarith
     · refine ⟨1 - x.ofLp 1, ?_, ?_⟩
       · have hypos := hpos 0 (by decide)
         have hylt := hpos 2 (by decide)
@@ -1783,7 +1783,7 @@ private lemma monsky_mem_open_square_face_iff
           monskySquareCorner, AffineMap.lineMap_apply, vsub_eq_sub,
           vadd_eq_add, PiLp.smul_apply, smul_eq_mul, monskySquareSideForm,
           monskyCoordinate] at hi ⊢
-        all_goals linarith
+        linarith
 
 private lemma monsky_faceLine_eq_of_atomMidpoint_mem
     (T : Finset (Set (EuclideanSpace ℝ (Fin 2))))

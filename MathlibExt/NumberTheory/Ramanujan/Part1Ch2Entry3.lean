@@ -260,7 +260,7 @@ theorem ramanujan_part1_ch2_entry3 (n : ℕ) (hn : 0 < n) :
     ∑ k ∈ Finset.Icc 1 (2 * n + 1), Real.arctan (1 / ((↑n + ↑k : ℝ))) =
       Real.pi / 4 + ∑ k ∈ Finset.Icc 1 n,
           Real.arctan ((10 * (↑k : ℝ)) / ((3 * (↑k : ℝ) ^ 2 + 2) * (9 * (↑k : ℝ) ^ 2 - 1))) :=
-  by apply ramanujan_part1_ch2_entry3_general <;> assumption
+  by apply ramanujan_part1_ch2_entry3_general
 
 end Entry3
 

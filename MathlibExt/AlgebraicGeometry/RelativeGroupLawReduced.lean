@@ -273,7 +273,7 @@ def tszeMap {R S : Type u} [CommRing R] [CommRing S] (f : R →+* S) :
   map_mul' x y := by
     ext
     · simp
-    · simp [smul_eq_mul, MulOpposite.smul_eq_mul_unop]; try ring
+    · simp [smul_eq_mul, MulOpposite.smul_eq_mul_unop]
   map_zero' := by ext <;> simp
   map_add' x y := by ext <;> simp
 

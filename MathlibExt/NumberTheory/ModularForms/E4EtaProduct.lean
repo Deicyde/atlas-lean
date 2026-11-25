@@ -1001,12 +1001,12 @@ private lemma coe_R_zpow (n : ℤ) : ((R ^ n : SL(2, ℤ)) : Matrix (Fin 2) (Fin
   | zero => simp [Matrix.one_fin_two]
   | succ n ih =>
     rw [zpow_add_one, Matrix.SpecialLinearGroup.coe_mul, ih, coe_R]
-    ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply, Fin.sum_univ_two] <;> ring
+    ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply, Fin.sum_univ_two]; ring
   | pred n ih =>
     rw [zpow_sub_one, Matrix.SpecialLinearGroup.coe_mul, ih, Matrix.SpecialLinearGroup.coe_inv,
       coe_R]
     ext i j; fin_cases i <;> fin_cases j <;>
-      simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.adjugate_fin_two_of] <;> ring
+      simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.adjugate_fin_two_of]; ring
 
 private lemma mul_T_zpow_apply (A : SL(2, ℤ)) (n : ℤ) :
     (A * ModularGroup.T ^ n) 1 0 = A 1 0 ∧ (A * ModularGroup.T ^ n) 1 1 = A 1 0 * n + A 1 1 ∧
@@ -1176,7 +1176,6 @@ private lemma F_slash_neg_one (a b c : ℕ) (k : ℤ) (hk : Even k) :
     apply UpperHalfPlane.ext
     rw [UpperHalfPlane.specialLinearGroup_apply]
     simp [Matrix.SpecialLinearGroup.coe_neg]
-    try ring
   have h10 : ((-1 : SL(2, ℤ)) 1 0 : ℤ) = 0 := by
     simp [Matrix.SpecialLinearGroup.coe_neg]
   have h11 : ((-1 : SL(2, ℤ)) 1 1 : ℤ) = -1 := by
@@ -1510,7 +1509,7 @@ private theorem QS_etaProd_pow (a : ℕ) :
   fun τ => by
   have h := hasSum_coeff_etaProd_pow a (q := 𝕢 1 (τ : ℂ)) (by
     simpa using UpperHalfPlane.norm_qParam_lt_one 1 τ)
-  convert h using 2 with m <;> simp [← map_pow, PowerSeries.coeff_map]
+  convert h using 2 with m; simp [← map_pow, PowerSeries.coeff_map]
 
 private theorem QS_expand_etaProd_pow (k : ℕ) (hk : k ≠ 0) (a : ℕ) :
     QS (PowerSeries.expand k hk ((etaProd ^ a).map (Int.castRingHom ℂ)))
@@ -1875,7 +1874,7 @@ private theorem A2p_weight24 (z : UpperHalfPlane) :
       ((hasSum_etaProduct 8 24 16 5 (by norm_num) z).mul_left 224)).add
       ((hasSum_etaProduct 16 0 32 6 (by norm_num) z).mul_left 256))
     rw [hFz, hGz, hf0, hf1, hf2, hf3]
-    convert h using 1 <;> try with_reducible_and_instances rfl
+    convert h using 1; try with_reducible_and_instances rfl
     funext m
     simp only [c, smul_eq_mul]
     ring

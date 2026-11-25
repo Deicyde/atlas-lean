@@ -179,7 +179,7 @@ example : matchedSNR (Matrix.diagonal ![1, 4] : Matrix (Fin 2) (Fin 2) ℝ)
       = Matrix.diagonal ![1, 1 / 4] from ?_]
   · ext i
     fin_cases i <;>
-      simp [Matrix.mulVec_diagonal, Matrix.cons_val_zero, Matrix.cons_val_one] <;>
+      simp [Matrix.mulVec_diagonal, Matrix.cons_val_zero, Matrix.cons_val_one];
       norm_num
   · have hUdet : IsUnit (Matrix.diagonal ![1, 4] : Matrix (Fin 2) (Fin 2) ℝ).det := by
       simp only [Matrix.det_diagonal, Fin.prod_univ_two, Matrix.cons_val_zero,

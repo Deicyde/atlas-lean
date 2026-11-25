@@ -1046,7 +1046,7 @@ private theorem ch8e19Error_zero_norm_le :
     have htail' : ‖ch8e19Tail 1 r x‖ ≤
         D * Real.rpow (x : ℝ) (-2 * (1 : ℝ) + 1 / 2) := by
       convert htail r hr x hxnat using 1
-      all_goals norm_num
+      norm_num
     calc
       ‖ch8e19RemainderFactor 1 r‖ * ‖ch8e19Tail 1 r x‖ ≤
           CR * (D * Real.rpow (x : ℝ) (-2 * (1 : ℝ) + 1 / 2)) := by
@@ -1062,7 +1062,7 @@ private theorem ch8e19Error_zero_norm_le :
         CR * D * Real.rpow (x : ℝ) (-1 / 2) :=
       add_le_add (by
         convert hterm r hr x hxnat using 1
-        all_goals ring_nf) herr
+        ring_nf) herr
     _ = (CT + CR * D) * Real.rpow (x : ℝ) (-1 / 2) := by ring
 
 private theorem ch8e19_iteratedDeriv_error_zero_isBigO (m : ℕ) :

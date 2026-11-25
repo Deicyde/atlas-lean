@@ -2269,7 +2269,7 @@ private lemma lil_small_blocks_iIndep
   apply lil_iIndepSet_of_disjoint_blocks X hMeas hIndep I hI
   intro l
   convert lilSmallBlock_measurable_block X (s + l * ell) ell a using 1
-  all_goals simp only [I, Nat.add_mul, one_mul, add_assoc]
+  simp only [I, Nat.add_mul, one_mul, add_assoc]
 
 private lemma lil_small_block_measure_eventually
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]

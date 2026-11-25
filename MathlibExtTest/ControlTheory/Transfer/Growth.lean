@@ -24,7 +24,7 @@ example : ‖dtTraj accG (fun _ => (1 : ℝ)) 0 2‖ ≤
   have h := dtTraj_growth accG (fun _ => (1 : ℝ)) 0 (M := 1) (K := 1)
     (ρ := 1) (r := 1) (q := 2) (by norm_num) (by norm_num) (by norm_num)
     (by norm_num) ?_ ?_ (by norm_num) (by norm_num) 2
-  · convert h using 2 <;> norm_num [accG]
+  · convert h using 2
   · intro k x
     simp [accG]
   · intro k

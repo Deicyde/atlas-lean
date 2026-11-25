@@ -131,7 +131,7 @@ theorem mem_cellEdges_bottom (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and, true_or]⟩
     · exact ⟨(x, y - 1), h, by
         dsimp only [edgesOf]
-        simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; try omega⟩
+        simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; omega⟩
 
 /-- The horizontal edge with doubled midpoint `(2x + 1, 2y + 2)` belongs to `S` iff one of the two
   cells it bounds does. -/
@@ -152,7 +152,7 @@ theorem mem_cellEdges_top (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and, true_or, or_true]⟩
     · exact ⟨(x, y + 1), h, by
         dsimp only [edgesOf]
-        simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; try omega⟩
+        simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; omega⟩
 
 /-- The vertical edge with doubled midpoint `(2x, 2y + 1)` belongs to `S` iff one of the two cells
   it bounds does. -/
@@ -173,7 +173,7 @@ theorem mem_cellEdges_left (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true, true_or, or_true]⟩
     · exact ⟨(x - 1, y), h, by
         dsimp only [edgesOf]
-        simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; try omega⟩
+        simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; omega⟩
 
 /-- The vertical edge with doubled midpoint `(2x + 2, 2y + 1)` belongs to `S` iff one of the two
   cells it bounds does. -/
@@ -194,7 +194,7 @@ theorem mem_cellEdges_right (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true, or_true]⟩
     · exact ⟨(x + 1, y), h, by
         dsimp only [edgesOf]
-        simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; try omega⟩
+        simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; omega⟩
 
 /-- The number of new edges when the cell `(x, y)` is added. -/
 theorem sdiff_cellEdges_card_eq_deltaE (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :

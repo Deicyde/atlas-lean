@@ -147,12 +147,12 @@ theorem boolInfluence_eq_boolFourierCoeff_of_monotone {f : BoolCube n → ℝ}
     · have h := hle x hxi
       rw [cubeVal_false]
       rcases hf x with h1 | h1 <;> rcases hf (flipCoord x i) with h2 | h2 <;>
-        (try rw [h1, h2] at h ⊢) <;> linarith
+        (rw [h1, h2] at h ⊢) <;> linarith
     · have h := hle (flipCoord x i) (by simp [hxi])
       rw [flipCoord_flipCoord] at h
       rw [cubeVal_true]
       rcases hf x with h1 | h1 <;> rcases hf (flipCoord x i) with h2 | h2 <;>
-        (try rw [h1, h2] at h ⊢) <;> linarith
+        (rw [h1, h2] at h ⊢) <;> linarith
   -- `𝔼[f x^i x_i] = -𝔼[f x x_i]`, by the flip symmetry of the uniform average.
   have hflip : 𝔼 x, f (flipCoord x i) * cubeVal (x i) = -𝔼 x, f x * cubeVal (x i) := by
     have h := expect_comp_flipCoord (fun x => f x * cubeVal (x i)) i

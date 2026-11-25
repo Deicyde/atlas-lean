@@ -1218,10 +1218,10 @@ private lemma e26_real_log_mobius_mul_log_tendsto :
     (hasDerivAt_id (0 : ℝ)).const_add 1
   have hquot : HasDerivAt (fun t : ℝ => (1 - t) / (1 + t)) (-2) 0 := by
     convert hnum.div hden (by norm_num) using 1
-    all_goals norm_num
+    norm_num
   have hf : HasDerivAt f (-2) 0 := by
     convert hquot.log (by norm_num) using 1
-    all_goals norm_num [f]
+    norm_num [f]
   have hslope : Tendsto (fun t : ℝ => f t / t) (𝓝[>] 0) (𝓝 (-2)) := by
     convert hf.tendsto_slope_zero_right using 1
     funext t

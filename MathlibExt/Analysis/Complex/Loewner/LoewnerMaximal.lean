@@ -1787,7 +1787,7 @@ theorem linearODE_terminal_eq_initial_mul_exp_integral
         ring
     dsimp only [r]
     convert hexp.mul (hderiv t ht) using 1
-    all_goals ring
+    ring
   have hrdiff : DifferentiableOn Real r (Icc (0 : Real) T) :=
     fun t ht => (hr t ht).differentiableWithinAt
   have hrfderiv : ∀ t ∈ Icc (0 : Real) T,

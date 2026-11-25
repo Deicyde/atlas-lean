@@ -100,7 +100,7 @@ theorem hasFDerivAt_intervalIntegral_norm_sub {f : ℝ → ℝ} (hf : Continuous
       have h1 := (hasStrictFDerivAt_norm_real hne).hasFDerivAt.comp z
         ((hasFDerivAt_id z).sub_const z₀)
       convert h1 using 1
-      all_goals (try (ext v; simp))
+      all_goals ((ext v; simp))
     have h2 := hg.comp_hasFDerivAt z hn
     rw [smul_smul, ← div_eq_mul_inv] at h2
     exact h2

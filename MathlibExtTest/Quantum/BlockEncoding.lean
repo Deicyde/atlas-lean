@@ -56,7 +56,7 @@ private theorem pauliX_mem : !![(0 : ℂ), 1; 1, 0] ∈ Matrix.unitaryGroup (Fin
     (if i = j then (1 : ℂ) else 0)
   fin_cases i <;> fin_cases j <;>
     simp [Fin.sum_univ_two, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
-      star_zero, star_one, fin01_ne, fin10_ne] <;> ring
+      star_zero, star_one, fin01_ne, fin10_ne]
 
 private theorem rot1_mem :
     !![(3 / 5 : ℂ), -4 / 5; 4 / 5, 3 / 5] ∈ Matrix.unitaryGroup (Fin 2) ℂ := by

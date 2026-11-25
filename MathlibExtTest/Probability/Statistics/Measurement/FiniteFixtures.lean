@@ -575,7 +575,7 @@ theorem μWeighted_uniform {n : ℕ}
   have h_prod : ∏ i : Fin n, (if ω i then (1/2 : ℝ) else 1 - 1/2) = (1/2) ^ n := by
     have h_each : ∀ i : Fin n, (if ω i then (1/2 : ℝ) else 1 - 1/2) = 1/2 := by
       intro i
-      cases h : ω i <;> simp [h] <;> norm_num
+      cases h : ω i <;> simp [h]; norm_num
     simp_rw [h_each]
     simp [Finset.prod_const, Finset.card_univ]
   rw [h_prod] at h_toReal

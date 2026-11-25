@@ -123,7 +123,7 @@ private lemma klamkin_summand_eq (a b : ℝ) (n : ℕ)
         Polynomial.eval (b + 1) (ascPochhammer ℝ k) := by
     convert klamkin_Gamma_add_nat (b + 1)
       (klamkin_b_add_ne b h_neg_b) k using 1
-    all_goals ring_nf
+    ring_nf
   have hsub_ne : ∀ j : ℕ, a - b + 1 - (j : ℝ) - 1 ≠ 0 := by
     intro j hj
     apply h_ab (j : ℤ)
@@ -216,17 +216,17 @@ private lemma klamkin_gamma_value (a b : ℝ) (n : ℕ)
       intro j hj
       exact hab1_ne j (by linarith)
     convert klamkin_Gamma_sub_nat (b - a) hsub n using 1
-    all_goals ring_nf
+    ring_nf
   have hadd_ab : Real.Gamma (a + (n : ℝ) - b + 1) =
       Real.Gamma (a - b + 1) *
         Polynomial.eval (a - b + 1) (ascPochhammer ℝ n) := by
     convert klamkin_Gamma_add_nat (a - b + 1) hab1_ne n using 1
-    all_goals ring_nf
+    ring_nf
   have hadd_a2 : Real.Gamma (a + (n : ℝ) + 2) =
       Real.Gamma (a + 2) *
         Polynomial.eval (a + 2) (ascPochhammer ℝ n) := by
     convert klamkin_Gamma_add_nat (a + 2) ha2_ne n using 1
-    all_goals ring_nf
+    ring_nf
   have h_ba : ∀ m : ℤ, b - a ≠ (m : ℝ) := by
     intro m hm
     apply h_ab (-m)
@@ -234,8 +234,8 @@ private lemma klamkin_gamma_value (a b : ℝ) (n : ℕ)
     linarith
   have hGamma_ba_n : Real.Gamma (b - a - n) ≠ 0 := by
     convert klamkin_Gamma_add_int_ne (b - a) h_ba (-(n : ℤ)) using 1
-    all_goals push_cast
-    all_goals ring_nf
+    push_cast
+    ring_nf
   have hGamma_neg_a : Real.Gamma (-a - 1) ≠ 0 := by
     apply ne_of_gt (Real.Gamma_pos_of_pos ?_)
     have hn : (0 : ℝ) ≤ (n : ℕ) := Nat.cast_nonneg n

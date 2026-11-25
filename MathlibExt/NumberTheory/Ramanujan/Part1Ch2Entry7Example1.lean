@@ -105,7 +105,7 @@ private lemma harctan_sub_of_pos (s : ℝ) (hs : 0 < s)
       (1 - (2 * s + 1) / (s ^ 2 + s - 1) * (-((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)))))
       = (((2 * s + 1) / (s ^ 2 + s - 1) - (2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)) /
         (1 + ((2 * s + 1) / (s ^ 2 + s - 1)) * ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)))) := by
-    congr 1 <;> ring
+    congr 1; ring
   rw [earg, halg] at hadd
   have hsub : Real.arctan ((2 * s + 1) / (s ^ 2 + s - 1)) - Real.arctan ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1))
       = Real.arctan ((2 * s + 1) / (s ^ 2 + s - 1)) + -(Real.arctan ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1))) := by ring
@@ -161,7 +161,7 @@ private lemma harctan_sub_of_neg (s : ℝ)
       (1 - (2 * s + 1) / (s ^ 2 + s - 1) * (-((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)))))
       = (((2 * s + 1) / (s ^ 2 + s - 1) - (2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)) /
         (1 + ((2 * s + 1) / (s ^ 2 + s - 1)) * ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1)))) := by
-    congr 1 <;> ring
+    congr 1; ring
   rw [earg, halg] at hadd
   have hsub : Real.arctan ((2 * s + 1) / (s ^ 2 + s - 1)) - Real.arctan ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1))
       = Real.arctan ((2 * s + 1) / (s ^ 2 + s - 1)) + -(Real.arctan ((2 * (s + 1) + 1) / ((s + 1) ^ 2 + (s + 1) - 1))) := by ring

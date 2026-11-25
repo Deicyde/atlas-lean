@@ -103,7 +103,7 @@ theorem exists_odd_cell_at_edge (d : Fin n → Fin 4)
   | 2 =>
       have hpk : pos d (k + 1) = (p.1 - 1, p.2) := by
         rw [hs, hd]
-        ext <;> simp [p, stepOf] <;> ring
+        ext <;> simp [p, stepOf]; ring
       have hmem : k ∈ midSet d (p.1 - 1) p.2 := by
         simp only [midSet, Finset.mem_filter, Finset.mem_univ, true_and]
         refine ⟨Or.inr hd, ?_, ?_⟩
@@ -124,7 +124,7 @@ theorem exists_odd_cell_at_edge (d : Fin n → Fin 4)
   | 3 =>
       have hpk : pos d (k + 1) = (p.1, p.2 - 1) := by
         rw [hs, hd]
-        ext <;> simp [p, stepOf] <;> ring
+        ext <;> simp [p, stepOf]; ring
       have hmem : k ∈ straddleSet d (p.1 - 1) (p.2 - 1) := by
         simp only [straddleSet, Finset.mem_filter, Finset.mem_univ, true_and]
         refine ⟨Or.inr hd, ?_, ?_, ?_⟩

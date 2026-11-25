@@ -104,7 +104,7 @@ public theorem kC_mem_specialUnitaryGroup (hg : g.det ≠ 0) (z : ℂ) :
   refine ⟨conj (botQ g z) / (radC g z : ℂ), -conj (botP g z) / (radC g z : ℂ), ?_, ?_⟩
   · ext i j
     fin_cases i <;> fin_cases j <;>
-      simp [kC, map_div₀, map_neg, Complex.conj_ofReal] <;> ring
+      simp [kC, map_div₀, map_neg, Complex.conj_ofReal]; ring
   · have hsum : Complex.normSq (botQ g z) + Complex.normSq (botP g z) = radC g z ^ 2 := by
       rw [add_comm]
       exact (radC_sq (g := g) z).symm

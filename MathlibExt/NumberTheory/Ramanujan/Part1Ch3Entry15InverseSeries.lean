@@ -122,11 +122,10 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
       have d0 : DifferentiableAt ℝ U x := hx.differentiableAt
       have d1 : DifferentiableAt ℝ (deriv U) x := hx1.differentiableAt
       rw [deriv_fun_sub (by fun_prop) (by fun_prop), deriv_fun_mul (by fun_prop) (by fun_prop)]
-      try ring
     have e2 : deriv (fun x => x * U x) =ᶠ[𝓝 0] (fun x => U x + x * deriv U x) := by
       filter_upwards [hAU] with x hx
       have d0 : DifferentiableAt ℝ U x := hx.differentiableAt
-      rw [deriv_fun_mul (by fun_prop) (by fun_prop)]; simp only [deriv_id'']; try ring
+      rw [deriv_fun_mul (by fun_prop) (by fun_prop)]; simp only [deriv_id'']; ring
     exact (e1.symm.trans hODE.deriv).trans e2
   have hL2 : (fun x => deriv (deriv (deriv U)) x * U x + 3 * (deriv U x * deriv (deriv U) x)
         - deriv (deriv (deriv U)) x)
@@ -140,14 +139,14 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
       have d2 : DifferentiableAt ℝ (deriv (deriv U)) x := hx2.differentiableAt
       rw [deriv_fun_sub (by fun_prop) (by fun_prop), deriv_fun_add (by fun_prop) (by fun_prop),
         deriv_fun_mul (by fun_prop) (by fun_prop), deriv_fun_mul (by fun_prop) (by fun_prop)]
-      try ring
+      ring
     have e2 : deriv (fun x => U x + x * deriv U x)
         =ᶠ[𝓝 0] (fun x => 2 * deriv U x + x * deriv (deriv U) x) := by
       filter_upwards [hAU, hAU1] with x hx hx1
       have d0 : DifferentiableAt ℝ U x := hx.differentiableAt
       have d1 : DifferentiableAt ℝ (deriv U) x := hx1.differentiableAt
       rw [deriv_fun_add (by fun_prop) (by fun_prop), deriv_fun_mul (by fun_prop) (by fun_prop)]
-      simp only [deriv_id'']; try ring
+      simp only [deriv_id'']; ring
     exact (e1.symm.trans hL1.deriv).trans e2
   have hL3 : (fun x => deriv (deriv (deriv (deriv U))) x * U x + 4 *
       (deriv U x * deriv (deriv (deriv U)) x)
@@ -166,7 +165,7 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
       rw [deriv_fun_sub (by fun_prop) (by fun_prop), deriv_fun_add (by fun_prop) (by fun_prop),
         deriv_fun_mul (by fun_prop) (by fun_prop), deriv_const_mul_field,
         deriv_fun_mul (by fun_prop) (by fun_prop)]
-      try ring
+      ring
     have e2 : deriv (fun x => 2 * deriv U x + x * deriv (deriv U) x)
         =ᶠ[𝓝 0] (fun x => 3 * deriv (deriv U) x + x * deriv (deriv (deriv U)) x) := by
       filter_upwards [hAU1, hAU2] with x hx1 hx2
@@ -174,7 +173,7 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
       have d2 : DifferentiableAt ℝ (deriv (deriv U)) x := hx2.differentiableAt
       rw [deriv_fun_add (by fun_prop) (by fun_prop), deriv_const_mul_field,
         deriv_fun_mul (by fun_prop) (by fun_prop)]
-      simp only [deriv_id'']; try ring
+      simp only [deriv_id'']; ring
     exact (e1.symm.trans hL2.deriv).trans e2
   have hL4 : (fun x => deriv (deriv (deriv (deriv (deriv U)))) x * U x
         + 5 * (deriv U x * deriv (deriv (deriv (deriv U))) x)
@@ -198,7 +197,7 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
         deriv_fun_add (by fun_prop) (by fun_prop), deriv_fun_mul (by fun_prop) (by fun_prop),
         deriv_const_mul_field, deriv_fun_mul (by fun_prop) (by fun_prop),
         deriv_const_mul_field, deriv_fun_mul (by fun_prop) (by fun_prop)]
-      try ring
+      ring
     have e2 : deriv (fun x => 3 * deriv (deriv U) x + x * deriv (deriv (deriv U)) x)
         =ᶠ[𝓝 0] (fun x => 4 * deriv (deriv (deriv U)) x + x * deriv (deriv (deriv (deriv U)))
             x) := by
@@ -207,7 +206,7 @@ private theorem Ucascade (U : ℝ → ℝ) (hana : ∀ᶠ x in 𝓝 (0 : ℝ), A
       have d3 : DifferentiableAt ℝ (deriv (deriv (deriv U))) x := hx3.differentiableAt
       rw [deriv_fun_add (by fun_prop) (by fun_prop), deriv_const_mul_field,
         deriv_fun_mul (by fun_prop) (by fun_prop)]
-      simp only [deriv_id'']; try ring
+      simp only [deriv_id'']; ring
     exact (e1.symm.trans hL3.deriv).trans e2
   have E2 := hL2.eq_of_nhds; rw [hU0, hD10] at E2
   have hD2 : deriv (deriv U) 0 = 2/3 := by nlinarith [E2]

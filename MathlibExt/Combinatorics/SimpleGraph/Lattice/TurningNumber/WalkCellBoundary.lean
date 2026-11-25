@@ -494,16 +494,16 @@ theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
         apply hnp
         rw [hn]
         unfold pinchAt
-        try ring_nf at hrk
-        try ring_nf at hr1
-        try ring_nf at hf
-        try ring_nf
+        ring_nf at hrk
+        ring_nf at hr1
+        ring_nf at hf
+        ring_nf
         tauto
       rw [cornerCount_eq_indicators S (pos d (k + 1)), hn]
-      try ring_nf at hrk
-      try ring_nf at hr1
-      try ring_nf at hfour
-      try ring_nf
+      ring_nf at hrk
+      ring_nf at hr1
+      ring_nf at hfour
+      ring_nf
       simp [hl1, hrk, hr1, hfour]
     · have hn : pos d (k + 1) = (x, y + 1) := by simpa [hp, hd, stepOf] using hpos
       simp only [leftCell, hd, Fin.mk_one, Fin.isValue, hp, hdn, Fin.reduceAdd, hn,
@@ -514,16 +514,16 @@ theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
         apply hnp
         rw [hn]
         unfold pinchAt
-        try ring_nf at hl1
-        try ring_nf at hr1
-        try ring_nf at hf
-        try ring_nf
+        ring_nf at hl1
+        ring_nf at hr1
+        ring_nf at hf
+        ring_nf
         tauto
       rw [cornerCount_eq_indicators S (pos d (k + 1)), hn]
-      try ring_nf at hl1
-      try ring_nf at hr1
-      try ring_nf at hfour
-      try ring_nf
+      ring_nf at hl1
+      ring_nf at hr1
+      ring_nf at hfour
+      ring_nf
       simp [hl1, hrk, hr1, hfour]
     · have hn : pos d (k + 1) = (x - 1, y) := by simpa [hp, hd, stepOf, sub_eq_add_neg] using hpos
       simp only [leftCell, hd, Fin.reduceFinMk, hp, hdn, Fin.isValue, Fin.reduceAdd, hn,
@@ -533,18 +533,18 @@ theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
         apply hnp
         rw [hn]
         unfold pinchAt
-        try ring_nf at hl1
-        try ring_nf at hrk
-        try ring_nf at hr1
-        try ring_nf at hf
-        try ring_nf
+        ring_nf at hl1
+        ring_nf at hrk
+        ring_nf at hr1
+        ring_nf at hf
+        ring_nf
         tauto
       rw [cornerCount_eq_indicators S (pos d (k + 1)), hn]
-      try ring_nf at hl1
-      try ring_nf at hrk
-      try ring_nf at hr1
-      try ring_nf at hfour
-      try ring_nf
+      ring_nf at hl1
+      ring_nf at hrk
+      ring_nf at hr1
+      ring_nf at hfour
+      ring_nf
       simp [hl1, hrk, hr1, hfour]
     · have hn : pos d (k + 1) = (x, y - 1) := by simpa [hp, hd, stepOf, sub_eq_add_neg] using hpos
       simp only [leftCell, hd, Fin.reduceFinMk, hp, hdn, Fin.isValue, Fin.reduceAdd, hn,
@@ -554,18 +554,18 @@ theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
         apply hnp
         rw [hn]
         unfold pinchAt
-        try ring_nf at hl1
-        try ring_nf at hrk
-        try ring_nf at hr1
-        try ring_nf at hf
-        try ring_nf
+        ring_nf at hl1
+        ring_nf at hrk
+        ring_nf at hr1
+        ring_nf at hf
+        ring_nf
         tauto
       rw [cornerCount_eq_indicators S (pos d (k + 1)), hn]
-      try ring_nf at hl1
-      try ring_nf at hrk
-      try ring_nf at hr1
-      try ring_nf at hfour
-      try ring_nf
+      ring_nf at hl1
+      ring_nf at hrk
+      ring_nf at hr1
+      ring_nf at hfour
+      ring_nf
       simp [hl1, hrk, hr1, hfour]
 
 /-- Points off the walk have corner weight `0` for the bounded face. -/

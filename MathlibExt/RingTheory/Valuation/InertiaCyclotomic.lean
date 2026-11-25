@@ -623,7 +623,7 @@ private theorem exists_lift_valuation_sub_lt_one_of_mem_inertia (τ : L ≃ₐ[�
       obtain ⟨q, hq, hq0⟩ := (b.2 : IsIntegral ℤ (b : AlgebraicClosure ℚ))
       refine ⟨q, hq, (algebraMap L (AlgebraicClosure ℚ)).injective ?_⟩
       rw [Polynomial.hom_eval₂, map_zero, hy]
-      convert hq0 using 2 <;> first | rfl | exact Subsingleton.elim _ _
+      convert hq0 using 2; first | rfl
     refine ⟨⟨y, by exact hyint⟩, Subtype.ext ?_⟩
     exact (hf_coe _).trans hy⟩
 

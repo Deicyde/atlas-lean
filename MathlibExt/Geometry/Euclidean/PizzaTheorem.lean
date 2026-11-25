@@ -1616,7 +1616,6 @@ theorem pizza_theorem (n : ℕ) (hn : 2 ≤ n)
     rw [hα]
     push_cast
     field_simp
-    try ring
   have hang_even_b : ∀ j : ℕ,
       2 * (θ₀ + ((2 * j : ℕ) : ℝ) * α + α)
         = (2 * θ₀ + Real.pi / (n : ℝ))
@@ -1625,7 +1624,7 @@ theorem pizza_theorem (n : ℕ) (hn : 2 ≤ n)
     rw [hα]
     push_cast
     field_simp
-    try ring
+    ring
   have hang_odd_a : ∀ j : ℕ,
       2 * (θ₀ + ((2 * j + 1 : ℕ) : ℝ) * α)
         = (2 * θ₀ + Real.pi / (n : ℝ))
@@ -1634,7 +1633,7 @@ theorem pizza_theorem (n : ℕ) (hn : 2 ≤ n)
     rw [hα]
     push_cast
     field_simp
-    try ring
+    ring
   have hang_odd_b : ∀ j : ℕ,
       2 * (θ₀ + ((2 * j + 1 : ℕ) : ℝ) * α + α)
         = (2 * θ₀ + 2 * Real.pi / (n : ℝ))
@@ -1643,7 +1642,7 @@ theorem pizza_theorem (n : ℕ) (hn : 2 ≤ n)
     rw [hα]
     push_cast
     field_simp
-    try ring
+    ring
   have hsin_even_a : ∑ j ∈ Finset.range n,
       Real.sin (2 * (θ₀ + ((2 * j : ℕ) : ℝ) * α)) = 0 := by
     have h1 : ∀ j : ℕ,

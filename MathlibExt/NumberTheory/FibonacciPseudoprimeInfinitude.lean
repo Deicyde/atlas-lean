@@ -274,8 +274,7 @@ private theorem wanted_fib_two_mul_eq (p : ℕ) [Fact (Nat.Prime p)] (hp2 : p �
     ext i j
     fin_cases i <;> fin_cases j <;>
       simp only [Matrix.add_apply, Matrix.of_apply, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Fin.mk_zero, Fin.mk_one, add_zero, zero_add] <;>
-      ring
+        Matrix.cons_val_one, Fin.mk_zero, Fin.mk_one, add_zero, zero_add]
   -- 2 • T^p explicit
   have h2T : (2 : ZMod p) • T ^ p
       = !![(2 : ZMod p), 2 * (5 : ZMod p) ^ (p / 2 + 1);

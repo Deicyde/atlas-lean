@@ -206,7 +206,7 @@ private theorem solution_aux
       rw [norm_div, norm_pow, div_pow, ofComplex_apply, hfτ₀]
       have hnorm : ‖(τ₀ : ℂ) - w‖ = 2 * y₀ := by
         have : (τ₀ : ℂ) - w = Complex.I * (2 * y₀) := by
-          apply Complex.ext <;> simp [hw_re, hw_im, hx₀, hy₀] <;> ring
+          apply Complex.ext <;> simp [hw_re, hw_im, hx₀, hy₀]; ring
         rw [this, norm_mul, Complex.norm_I, one_mul]
         simp [abs_of_pos hy₀pos]
       rw [hnorm, hc2, ← pow_mul, mul_comm n 2, pow_mul,
@@ -231,7 +231,7 @@ private theorem solution_aux
       rw [this, hG_eq]
     have hnorm1 : ‖z₁ - w‖ = 3 * y₀ := by
       have : z₁ - w = Complex.I * (3 * y₀) := by
-        apply Complex.ext <;> simp [hz₁, hw_re, hw_im] <;> ring
+        apply Complex.ext <;> simp [hz₁, hw_re, hw_im]; ring
       rw [this, norm_mul, Complex.norm_I, one_mul]
       simp [abs_of_pos hy₀pos]
     have h2 : ‖G z₁‖ ^ 2 ≤ M * (2 * y₀) ^ n / ((3 * y₀) ^ n) ^ 2 := by

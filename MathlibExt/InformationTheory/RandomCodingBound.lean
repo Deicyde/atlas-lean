@@ -394,7 +394,7 @@ theorem mlErrorProb_comp_le (W : α → PMF β) {N K M : ℕ} (C : Fin K → Fin
   classical
   unfold mlErrorProb
   refine Finset.sum_le_sum fun y _ => mul_le_mul_of_nonneg_left ?_ (blockTransition_nonneg W _ y)
-  split_ifs with h1 h2 <;> try norm_num
+  split_ifs with h1 h2 <;> norm_num
   obtain ⟨m', hm', hle⟩ := h1
   exact h2 ⟨e m', fun h => hm' (he h), hle⟩
 

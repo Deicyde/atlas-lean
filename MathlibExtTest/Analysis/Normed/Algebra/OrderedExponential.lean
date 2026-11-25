@@ -44,7 +44,7 @@ example {Y : ℕ → ℝ → 𝔸} {Y₀ U : ℝ → 𝔸} {t : ℝ} (ht : 0 ≤
 /-- **Constant `Y`:** `s ↦ exp (s A)` is the time-ordered exponential of `Y ≡ A`. -/
 example (A : 𝔸) (t : ℝ) :
     IsOrderedExp (fun _ => A) (fun s => exp (s • A)) t := by
-  apply _root_.NormedSpace.isOrderedExp_const <;> assumption
+  apply _root_.NormedSpace.isOrderedExp_const
 
 /-- **Two-piece `Y`:** for `Y = A` on `[0, t₁)` and `Y = B` from `t₁` on, the time-ordered
 exponential is `exp (s A)` up to `t₁` and `exp (t₁ A) * exp ((s - t₁) B)` after. -/
@@ -56,7 +56,7 @@ example (A B : 𝔸) {t₁ t : ℝ} (h₁ : 0 ≤ t₁) (h : t₁ ≤ t) :
 /-- **Acceptance, constant `Y`:** `∏_{g < t M} (1 + M⁻¹ A) → exp (t A)`. -/
 example (A : 𝔸) {t : ℝ} (ht : 0 ≤ t) :
     Tendsto (fun M : ℕ => gridProd (fun _ => A) t M) atTop (𝓝 (exp (t • A))) := by
-  apply _root_.NormedSpace.tendsto_gridProd_const <;> assumption
+  apply _root_.NormedSpace.tendsto_gridProd_const; assumption
 
 /-- **Acceptance, two-piece `Y`:** the grid products converge to
 `exp (t₁ A) * exp ((t - t₁) B)`. -/
@@ -98,8 +98,7 @@ example :
   · ext i j
     fin_cases i <;> fin_cases j <;>
       simp [gridProd, List.range_succ, List.map_append, List.prod_append, Matrix.mul_apply,
-        Fin.sum_univ_two] <;>
-      norm_num
+        Fin.sum_univ_two]
   · intro h
     have h00 := congrFun (congrFun h 0) 0
     simp [gridProd, List.range_succ, List.map_append, List.prod_append, Matrix.mul_apply,
@@ -119,7 +118,7 @@ example :
   rw [hc]
   ext i j
   fin_cases i <;> fin_cases j <;>
-    simp [List.prod_cons, List.prod_nil, Matrix.mul_apply, Fin.sum_univ_two] <;>
+    simp [List.prod_cons, List.prod_nil, Matrix.mul_apply, Fin.sum_univ_two];
     norm_num [pow_succ, Matrix.mul_apply, Fin.sum_univ_two]
 
 end Matrix

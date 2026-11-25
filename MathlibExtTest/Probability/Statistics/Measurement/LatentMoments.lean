@@ -35,8 +35,8 @@ theorem hq0_rational_all : ∀ z i : Fin 2, 0 ≤ (if z = 0 then (if i = 0 then 
     else (if i = 0 then (3 / 4 : ℝ) else (1 / 5 : ℝ))) := by
   intro z i
   by_cases hz : z = 0
-  · by_cases hi : i = 0 <;> simp [hz, hi] <;> norm_num
-  · by_cases hi : i = 0 <;> simp [hz, hi] <;> norm_num
+  · by_cases hi : i = 0 <;> simp [hz, hi]
+  · by_cases hi : i = 0 <;> simp [hz, hi]; norm_num
 
 theorem hq1_rational_all : ∀ z i : Fin 2, (if z = 0 then (if i = 0 then (1 / 4 : ℝ) else (1 / 2 : ℝ))
     else (if i = 0 then (3 / 4 : ℝ) else (1 / 5 : ℝ))) ≤ 1 := by
@@ -80,7 +80,7 @@ theorem hq0_degenerate_all : ∀ z i : Fin 2, 0 ≤ (if z = 0 then (if i = 0 the
   intro z i
   by_cases hz : z = 0
   · by_cases hi : i = 0 <;> simp [hz, hi] <;> norm_num
-  · by_cases hi : i = 0 <;> simp [hz, hi] <;> norm_num
+  · by_cases hi : i = 0 <;> simp [hz, hi]
 
 theorem hq1_degenerate_all : ∀ z i : Fin 2, (if z = 0 then (if i = 0 then (2 / 7 : ℝ) else (5 / 9 : ℝ))
     else (if i = 0 then (1 / 3 : ℝ) else (1 / 3 : ℝ))) ≤ 1 := by

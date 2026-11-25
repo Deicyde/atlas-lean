@@ -608,7 +608,7 @@ theorem initList_compTM (l : List (M₁.Γ M₁.k₀)) :
   funext k
   rcases k with k | k | u
   · by_cases h : k = M₁.k₀
-    · subst h; simp [mkStk, compTM]; try rfl
+    · subst h; simp [mkStk, compTM]; rfl
     · simp [mkStk, compTM, h]
   · simp [mkStk, compTM]
   · simp [mkStk, compTM]
@@ -621,7 +621,7 @@ theorem haltList_compTM (l : List (M₂.Γ M₂.k₁)) :
   rcases k with k | k | u
   · simp [mkStk, compTM]
   · by_cases h : k = M₂.k₁
-    · subst h; simp [mkStk, compTM]; try rfl
+    · subst h; simp [mkStk, compTM]; rfl
     · simp [mkStk, compTM, h]
   · simp [mkStk, compTM]
 

@@ -35,7 +35,7 @@ example (c : ℝ) :
             + algebraMap ℝ[X] (RatFunc ℝ) (N i j) / algebraMap ℝ[X] (RatFunc ℝ) d := by
   apply RatMatrix.exists_commonDenom
   intro i j
-  fin_cases i <;> fin_cases j <;>
+  fin_cases i; fin_cases j;
     simp [RatMatrix.IsProper, RatFunc.intDegree_C]
 
 -- An improper entry is rejected: the indeterminate itself has
@@ -48,7 +48,7 @@ example : ¬ RatMatrix.IsProper (𝕜 := ℝ)
 example : RatMatrix.IsProper (𝕜 := ℝ)
     (!![(RatFunc.X)⁻¹] : Matrix (Fin 1) (Fin 1) (RatFunc ℝ)) := by
   intro i j
-  fin_cases i <;> fin_cases j <;>
+  fin_cases i; fin_cases j;
     simp [RatMatrix.IsProper, RatFunc.intDegree_inv, RatFunc.intDegree_X]
 
 #print axioms RatMatrix.exists_commonDenom

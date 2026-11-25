@@ -355,7 +355,7 @@ private lemma ads_logTanShift_intervalIntegrable :
       volume 0 (Real.pi / 4) := by
     convert ((intervalIntegrable_log_sin (a := Real.pi / 4)
       (b := 3 * Real.pi / 8)).comp_add_right (Real.pi / 4)).comp_mul_left
-        (c := (1 / 2 : ℝ)) using 1 <;> norm_num <;> try ring_nf
+        (c := (1 / 2 : ℝ)) using 1 <;> norm_num <;> ring_nf
     funext x
     rw [add_comm]
   have hcos : IntervalIntegrable
@@ -363,7 +363,7 @@ private lemma ads_logTanShift_intervalIntegrable :
       volume 0 (Real.pi / 4) := by
     convert ((intervalIntegrable_log_cos (a := Real.pi / 4)
       (b := 3 * Real.pi / 8)).comp_add_right (Real.pi / 4)).comp_mul_left
-        (c := (1 / 2 : ℝ)) using 1 <;> norm_num <;> try ring_nf
+        (c := (1 / 2 : ℝ)) using 1 <;> norm_num <;> ring_nf
     funext x
     rw [add_comm]
   have hsub := hsin.sub hcos
@@ -571,8 +571,8 @@ private lemma ads_integral_logTanHalf :
   convert intervalIntegral.integral_comp_div
     (a := (0 : ℝ)) (b := Real.pi / 4) (c := (2 : ℝ))
     (fun x : ℝ => Real.log (Real.tan x)) (by norm_num) using 1
-  all_goals norm_num
-  all_goals ring_nf
+  norm_num
+  ring_nf
 
 private lemma ads_integral_logTanShift :
     (∫ x in (0 : ℝ)..(Real.pi / 4), adsLogTanShift x) =

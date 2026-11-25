@@ -113,7 +113,7 @@ private theorem initialForm_X_one_mul {W : Type u} [CommRing W] (d : ℕ)
   have hsub : Finsupp.single (0 : Fin 2) i +
         Finsupp.single (1 : Fin 2) (d + 1 - i) - Finsupp.single 1 1 =
       Finsupp.single (0 : Fin 2) i + Finsupp.single (1 : Fin 2) (d - i) := by
-    ext s; fin_cases s <;> simp <;> omega
+    ext s; fin_cases s <;> simp; omega
   rw [hsub, show d + 1 - i = (d - i) + 1 by omega, pow_succ]; ring
 
 private theorem mem_span_X_of_coeff_zero {W : Type u} [CommRing W]

@@ -111,7 +111,7 @@ theorem balancedPartition_nonempty (n : ℕ) :
       · exact Or.inl ⟨h.1, hx⟩
       · exact Or.inr ⟨by omega, h.2⟩
   · simp only [Int.card_Icc]
-    congr 1 <;> omega
+    congr 1; omega
 
 /-- **The minimum overlap is attained.** For every natural number $n$ there are disjoint finite
 sets $A, B \subseteq \mathbb{Z}$ with $A \cup B = \{1, \dots, 2n\}$ and $|A| = |B|$ such that

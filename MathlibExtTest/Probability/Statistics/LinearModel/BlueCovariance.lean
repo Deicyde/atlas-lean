@@ -25,13 +25,13 @@ noncomputable def A₀ : Matrix (Fin 1) (Fin 3) ℝ := !![1, 0, 0]
 
 theorem AX₀ : A₀ * X₀ = 1 := by
   ext i j
-  fin_cases i <;> fin_cases j
+  fin_cases i; fin_cases j
   simp [A₀, X₀, Matrix.mul_apply, Fin.sum_univ_three, Matrix.one_apply,
     Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Matrix.of_apply]
 
 theorem gram_X₀ : X₀ᵀ * X₀ = !![3] := by
   ext i j
-  fin_cases i <;> fin_cases j
+  fin_cases i; fin_cases j
   simp [X₀, Matrix.mul_apply, Matrix.transpose_apply, Fin.sum_univ_three,
     Matrix.cons_val_zero, Matrix.head_cons, Matrix.of_apply]
 
@@ -41,19 +41,19 @@ theorem ols_X₀ : olsMatrix X₀ = !![1 / 3, 1 / 3, 1 / 3] := by
   have hadj : (!![3] : Matrix (Fin 1) (Fin 1) ℝ).adjugate = !![1] := by
     rw [Matrix.adjugate_fin_one]
     ext i j
-    fin_cases i <;> fin_cases j
+    fin_cases i; fin_cases j
     simp [Matrix.one_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
       Matrix.head_cons, Matrix.of_apply]
   have hinv : (!![3] : Matrix (Fin 1) (Fin 1) ℝ)⁻¹ = !![(3 : ℝ)⁻¹] := by
     rw [Matrix.inv_def, hdet, hadj]
     ext i j
-    fin_cases i <;> fin_cases j
+    fin_cases i; fin_cases j
     simp [Matrix.smul_apply, smul_eq_mul, Matrix.cons_val_zero, Matrix.head_cons]
   have h3 : (3 : ℝ)⁻¹ = 1 / 3 := by norm_num
   have hols : olsMatrix X₀ = (X₀ᵀ * X₀)⁻¹ * X₀ᵀ := olsMatrix_eq X₀
   rw [hols, gram_X₀, hinv, h3]
   ext i j
-  fin_cases i <;> fin_cases j
+  fin_cases i; fin_cases j
   · show ((!![1/3] : Matrix (Fin 1) (Fin 1) ℝ) * X₀ᵀ) 0 0 = !![1/3,1/3,1/3] 0 0
     simp only [X₀, Matrix.mul_apply, Fin.sum_univ_one, Matrix.cons_val_zero,
       Matrix.cons_val_one, Matrix.cons_val_two, Matrix.head_cons, Matrix.tail_cons,
@@ -71,7 +71,7 @@ theorem diff_eq : A₀ * A₀ᵀ - olsMatrix X₀ * (olsMatrix X₀)ᵀ
     = Matrix.of fun _ _ => (2 : ℝ) / 3 := by
   rw [ols_X₀]
   ext i j
-  fin_cases i <;> fin_cases j
+  fin_cases i; fin_cases j
   simp only [A₀, Matrix.mul_apply, Matrix.transpose_apply, Matrix.sub_apply,
     Fin.sum_univ_three, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
     Matrix.of_apply]
@@ -82,7 +82,7 @@ theorem posSemidef_diff :
   rw [diff_eq]
   constructor
   · ext i j
-    fin_cases i <;> fin_cases j
+    fin_cases i; fin_cases j
     simp [Matrix.IsHermitian, Matrix.conjTranspose, Matrix.conjTranspose_apply,
       Matrix.transpose, Matrix.transpose_apply, Matrix.of_apply, star_trivial]
   · intro x

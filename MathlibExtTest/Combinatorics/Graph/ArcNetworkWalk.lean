@@ -174,7 +174,7 @@ example {P E : Type*} [Fintype P] [Fintype E] [DecidableEq E] (edges : P → Lis
 
 private theorem sharedArcVolume : edgeVolume sharedRoutes ![1, 2] = ![1, 2, 3, 0] := by
   funext e
-  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two] <;> norm_num
+  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two]; norm_num
 
 example : (fun e => tt e (edgeVolume sharedRoutes ![1, 2] e)) = ![2, 5, 10, 1] := by
   rw [sharedArcVolume]
@@ -203,7 +203,7 @@ example {P E : Type*} [Fintype P] [Fintype E] [DecidableEq E] (edges : P → Lis
 /-- A zero-flow route leaves the volumes unchanged (arc `3`, used only by it, has volume 0). -/
 private theorem zeroFlowVolume : edgeVolume zeroFlowRoutes ![1, 2, 0] = ![1, 2, 3, 0] := by
   funext e
-  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_three] <;> norm_num
+  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_three]; norm_num
 
 /-- The zero-flow route has route time 25, yet both sides stay 42. -/
 example : ((zeroFlowRoutes 2).map fun e => tt e (edgeVolume zeroFlowRoutes ![1, 2, 0] e)).sum = 25 ∧

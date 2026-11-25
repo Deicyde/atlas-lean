@@ -325,7 +325,6 @@ private theorem lift_w (s : Cone (D k K X fX)) :
   have e3 : (toSpecK s ≫ Spec.map (CommRingCat.ofHom (algebraMap (↥bot'.1) K))) ≫ gF k K bot' =
       toSpecK s ≫ gK k K := by
     erw [Category.assoc, toK_comp_gF]
-    try rfl
   beta_reduce at e1 e2
   exact ((Category.assoc _ _ _).trans e1).trans (((Category.assoc _ _ _).symm.trans
       e2.symm).trans e3)

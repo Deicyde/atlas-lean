@@ -235,7 +235,6 @@ lemma padLifetime_indepFun :
       convert hY' using 1
       congr 1
       congr 1
-      all_goals ext ω <;> simp [padLifetime]
     · have hfilt : s.filter (fun i => i < 2) = {0} := by
         ext i
         simp only [Finset.mem_filter, Finset.mem_singleton]

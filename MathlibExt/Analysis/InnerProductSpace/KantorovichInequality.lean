@@ -82,7 +82,6 @@ theorem weighted_variance_eq (hw_sum : ∑ i, w i = 1) :
           + (∑ i, w i * lam i) ^ 2 * w i) from
       Finset.sum_congr rfl (fun i _ => by ring)]
     simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib, ← Finset.mul_sum]
-    try ring
   rw [h1, hw_sum]
   ring
 
@@ -105,7 +104,7 @@ theorem weighted_bhatia_davis (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w 
       Finset.sum_congr rfl (fun i _ => by ring)]
     simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib, Finset.sum_neg_distrib,
       ← Finset.mul_sum, hw_sum]
-    try ring
+    ring
   have hprod : (M - ∑ i, w i * lam i) * (∑ i, w i * lam i - m)
       = (M + m) * (∑ i, w i * lam i) - m * M - (∑ i, w i * lam i) ^ 2 := by ring
   rw [hprod]
@@ -153,7 +152,7 @@ theorem weighted_kantorovich (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w i
       simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib, Finset.sum_neg_distrib,
         ← Finset.mul_sum, hw_sum]
       rw [← hμ, ← hν]
-      try ring
+      ring
     have hsum : μ + m * M * ν ≤ M + m := by linarith
     have hμ_nonneg : 0 ≤ μ := by
       apply Finset.sum_nonneg
@@ -241,7 +240,7 @@ theorem rayleigh_eq_weighted_sum (hT : T.IsSymmetric) (hn : Module.finrank ℝ E
         apply Finset.sum_congr rfl
         intro i _
         simp [hc, b.repr_apply_apply x i]
-        try ring
+        ring
 
 /-- The second-moment quadratic form is the weighted average of the squared
 eigenvalues. -/
@@ -275,7 +274,7 @@ theorem second_moment_eq_weighted_sum (hT : T.IsSymmetric)
         apply Finset.sum_congr rfl
         intro i _
         simp [hc, b.repr_apply_apply x i]
-        try ring
+        ring
 
 /-- The quadratic form of a two-sided inverse is the weighted average of the
 reciprocal eigenvalues. -/
@@ -313,7 +312,7 @@ theorem inv_rayleigh_eq_weighted_sum_div (hT : T.IsSymmetric)
         apply Finset.sum_congr rfl
         intro i _
         simp [hc, b.repr_apply_apply x i]
-        try ring
+        ring
 
 /-- The variance of `T` at a unit vector is the weighted squared deviation
 of the eigenvalues from the Rayleigh quotient. -/

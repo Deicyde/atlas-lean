@@ -246,7 +246,7 @@ private theorem quad_integral (ρ c α : ℂ)
     rw [h]
     apply Polynomial.monic_X_pow_add
     compute_degree
-    all_goals norm_num
+    norm_num
   have hdeg : (Polynomial.X ^ 2 - Polynomial.C ρ * Polynomial.X + Polynomial.C c :
       Polynomial ℂ).natDegree ≠ 0 := by
     have h : (Polynomial.X ^ 2 - Polynomial.C ρ * Polynomial.X + Polynomial.C c :
@@ -303,7 +303,7 @@ private theorem rho_integral (S₁ S₂ R : ℤ) (γ : ℂ)
     rw [hp]
     apply Polynomial.monic_X_pow_add
     compute_degree
-    all_goals norm_num
+    norm_num
   have hdeg : p.natDegree ≠ 0 := by
     have h : p.natDegree = 3 := by
       rw [hp]

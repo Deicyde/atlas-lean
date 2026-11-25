@@ -717,7 +717,7 @@ theorem integral_mul_eq_zero_of_condExp {τ k Ω : Type*} [MeasurableSpace Ω]
       | MeasurableSpace.comap (X 0) inferInstance] ω ∂P
       = ∫ ω, X 0 ω r j * u 0 ω s ∂P := by
     apply MeasureTheory.integral_condExp
-    all_goals assumption
+    assumption
   have hproj : Measurable (fun M : Matrix τ k ℝ => M r j) := by
     fun_prop
   have hg_m : AEStronglyMeasurable (m := MeasurableSpace.comap (X 0) inferInstance)

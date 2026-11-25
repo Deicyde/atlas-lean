@@ -219,7 +219,7 @@ private lemma expSubOneRemainderTerm_hasDerivAt (N : ℕ) (v : ℝ) (m : ℕ) :
       (hasDerivAt_pow (2 * N + 1) v).const_mul C
   have hden : HasDerivAt (fun y : ℝ => y ^ 2 + a ^ 2) (2 * v) v := by
     convert (hasDerivAt_pow 2 v).add_const (a ^ 2) using 1
-    all_goals ring
+    ring
   have h := hnum.div hden hd
   have hfun : (fun y : ℝ => C * y ^ (2 * N + 1) / (y ^ 2 + a ^ 2)) =
       (fun y => expSubOneRemainderTerm N y m) := by

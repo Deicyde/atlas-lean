@@ -130,7 +130,7 @@ theorem relativeHomotopy_d {K P : CochainComplex C ℤ} (r : P ⟶ K)
   simp only [δ_ofHom, ← Cochain.ofHom_comp]
   rw [Category.assoc, hl]
   simp [signedDiagonal, sub_eq_add_neg]
-  all_goals omega
+  omega
 
 /-- The relative homotopy becomes exactly constant after the prescribed projection. -/
 theorem relativeHomotopy_projection {K P : CochainComplex C ℤ} (r : P ⟶ K)

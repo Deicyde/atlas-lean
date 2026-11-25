@@ -144,7 +144,7 @@ theorem example_certificate_identity :
   ext i j
   fin_cases i <;> fin_cases j <;> simp [exampleC, exampleA, exampleE, exampleF,
     Matrix.mul_apply]
-  all_goals ring
+  ring
 
 /-- Validation: the certified bound `0 - 1 * (1/2) - (-1) * 1 = 1/2` holds for every PSD `W`
 with `W₁₁ ≤ 1/2` and `trace W = 1`. -/
@@ -215,7 +215,7 @@ theorem nonneg_multiplier_necessary :
     simp only [Fin.sum_univ_one]
     ext i j
     fin_cases i; fin_cases j; simp [Matrix.mul_apply]
-    all_goals ring
+    ring
   have hW : (0 : Matrix (Fin 1) (Fin 1) ℂ).PosSemidef := Matrix.PosSemidef.zero
   have hfeas : ∀ i : Fin 1, ((((fun _ => (!![1] : Matrix (Fin 1) (Fin 1) ℂ)) i) * 0).trace).re ≤
       (fun _ => (1 : ℝ)) i := by

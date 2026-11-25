@@ -151,7 +151,7 @@ private theorem hasDerivAt_g (x t : ℝ) :
   have h1 : HasDerivAt (fun y : ℝ => -(y * (t + t⁻¹) / 2)) (-(1 * (t + t⁻¹) / 2)) x :=
     (((hasDerivAt_id x).mul_const (t + t⁻¹)).div_const 2).neg
   have h2 := h1.exp
-  convert h2 using 1 <;> ring
+  convert h2 using 1; ring
 
 private noncomputable def F' (ν : ℂ) (x t : ℝ) : ℂ :=
   -((E x t * (t : ℂ) ^ (ν - 1 - 1) + E x t * (t : ℂ) ^ (ν + 1 - 1)) / 2)
@@ -259,7 +259,7 @@ private theorem hasDerivAt_g (x t : ℝ) (ht : t ≠ 0) :
   have h2 : HasDerivAt (fun s : ℝ => -(x * (s + s⁻¹) / 2)) (-(x * (1 + (-(t ^ 2)⁻¹)) / 2)) t :=
     ((h1.const_mul x).div_const 2).neg
   have h3 := h2.exp
-  convert h3 using 1 <;> ring
+  convert h3 using 1
 
 private theorem hasDerivAt_ofReal_cpow (ν : ℂ) (t : ℝ) (ht : 0 < t) :
     HasDerivAt (fun s : ℝ => (s : ℂ) ^ ν) (ν * (t : ℂ) ^ (ν - 1)) t := by

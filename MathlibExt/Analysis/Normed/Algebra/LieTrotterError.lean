@@ -49,7 +49,7 @@ theorem trotterStep_of_commute {n : ℕ} {A B : Matrix (Fin n) (Fin n) ℂ}
       (-(Complex.I * (t : ℂ))) • (A + B) := by
     rw [← smul_add, add_comm B A]
   rw [hadd] at hexp
-  first | exact hexp.symm | exact hexp
+  first | exact hexp.symm
 
 /-- The exponential of a skew-Hermitian scalar multiple is unitary, hence
 has L2 operator norm at most one (the L2 operator norm is a C-star norm;
@@ -163,7 +163,7 @@ private theorem exp_pow_eq {n : ℕ} (X : Matrix (Fin n) (Fin n) ℂ)
       show ((((k : ℕ) : ℂ)) • X) * X = X * ((((k : ℕ) : ℂ)) • X)
       simp only [smul_mul_assoc, mul_smul_comm]
     have hexp := NormedSpace.exp_add_of_commute hcomm
-    first | exact hexp.symm | exact hexp
+    first | exact hexp.symm
 
 /-- The `r`-th power of a small exact step is the full evolution. -/
 private theorem exp_pow_small_step {n : ℕ}

@@ -354,7 +354,7 @@ theorem ramanujan_part1_ch3_entry12_summable_succ_n (r : ℤ) (n a : ℂ)
     (ha : norm a > Real.exp 1 ∨ (a = ↑(Real.exp 1) ∧ r ≤ -2))
     (hn : ∀ k : ℤ, 0 ≤ k → r + k < 0 → n + (k : ℂ) ≠ 0) :
     Summable (fun k : ℕ => norm ((n + (k : ℂ)) ^ (r + 1 + (k : ℤ)) / ((a ^ k) * (k.factorial : ℂ)))) :=
-  by apply ramanujan_part1_ch3_entry12_summable_succ_n_general <;> assumption
+  by apply ramanujan_part1_ch3_entry12_summable_succ_n_general; assumption
 
 end Entry12SummableSuccN
 

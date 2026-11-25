@@ -387,7 +387,7 @@ theorem rightTurn_WN (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     have hs := pos_succ d hclosed (i + 1)
     rw [he] at hs
     rw [Prod.ext_iff]
-    constructor <;> simp only [vx, vy, hs, stepOf, Prod.fst_add, Prod.snd_add] <;> omega
+    constructor <;> simp only [vx, vy, hs, stepOf, Prod.fst_add, Prod.snd_add]; omega
   have hmid : i ∈ midSet d vx vy := by
     simp only [midSet, Finset.mem_filter, Finset.mem_univ, true_and]
     refine ⟨Or.inr hei, ?_, ?_⟩
@@ -437,7 +437,7 @@ theorem rightTurn_NE (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     have hs := pos_succ d hclosed (i + 1)
     rw [he] at hs
     rw [Prod.ext_iff]
-    constructor <;> simp only [vx, vy, hs, stepOf, Prod.fst_add, Prod.snd_add] <;> omega
+    constructor <;> simp only [vx, vy, hs, stepOf, Prod.fst_add, Prod.snd_add]; omega
   have hstr : i ∈ straddleSet d (vx - 1) (vy - 1) := by
     simp only [straddleSet, Finset.mem_filter, Finset.mem_univ, true_and]
     refine ⟨Or.inl hei, ?_, ?_, ?_⟩

@@ -2247,7 +2247,7 @@ private lemma donsker_oscillation_eventually
       norm_num only [Nat.cast_mul, Nat.cast_ofNat]
       rw [div_pow, mul_pow, Real.sq_sqrt (Nat.cast_nonneg q)]
       field_simp [hε.ne', hqR.ne']
-      all_goals ring
+      ring
     _ ≤ η := by linarith
 
 private lemma donskerProcess_apply_zero {Ω : Type*} (n : ℕ) (X : ℕ → Ω → ℝ) (ω : Ω) :

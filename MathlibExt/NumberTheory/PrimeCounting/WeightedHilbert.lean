@@ -1329,7 +1329,7 @@ private theorem weightedKernel_main_terms_cancel {ι : Type*} [Fintype ι]
     simp only [map_sum, map_mul, Complex.conj_ofReal, map_div₀, map_neg,
       Complex.conj_I] at h
     convert h using 1
-    all_goals ring
+    ring
   have heigReverse (t : ι) :
       ∑ s, (K s t : ℂ) * u s = Complex.I * μ * u t / δ t := by
     calc
@@ -1993,7 +1993,7 @@ private theorem cosecantKernel_sq_le {ι : Type*} [DecidableEq ι]
   simp only [cosecantKernel, hrs, ite_false, div_pow, one_pow]
   rw [sq_abs] at hinv
   convert hinv using 1
-  all_goals ring
+  ring
 
 private theorem cosecantKernel_sq_sum_le {ι : Type*} [Fintype ι]
     [DecidableEq ι] (x δ : ι → ℝ) (hδ : ∀ r, 0 < δ r)

@@ -184,8 +184,7 @@ theorem pauliX_mem_unitaryGroup : pauliX ∈ Matrix.unitaryGroup (Fin 2) ℂ := 
   fin_cases i <;> fin_cases j <;>
     simp [pauliX, Matrix.mul_apply, Fin.sum_univ_two,
       Matrix.star_eq_conjTranspose, Matrix.conjTranspose_apply,
-      Matrix.one_apply, Matrix.cons_val_zero, Matrix.cons_val_one] <;>
-    ring
+      Matrix.one_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
 
 /-- Conjugating the first-coordinate projection by the Hadamard-style gate
 yields the all-`1/2` matrix. -/
@@ -198,8 +197,7 @@ theorem hadamard_conj_proj :
     norm_num [hadamard, Matrix.mul_apply, Fin.sum_univ_two,
       Matrix.star_eq_conjTranspose, Matrix.conjTranspose_apply, Matrix.diagonal_apply,
       star_sqrt2inv, sqrt2_inv_sq] <;>
-    simp only [starRingEnd_apply, star_neg, star_sqrt2inv, mul_neg, neg_mul, sqrt2_inv_sq] <;>
-    norm_num
+    simp only [starRingEnd_apply, star_neg, star_sqrt2inv, mul_neg, neg_mul, sqrt2_inv_sq]
 
 /-- A two-gate chronological circuit applies the first gate first: the total
 operator is `B * A`. -/
@@ -217,8 +215,7 @@ theorem pauliX_mul_hadamard :
   ext i j
   fin_cases i <;> fin_cases j <;>
     simp [pauliX, hadamard, Matrix.mul_apply, Fin.sum_univ_two,
-      Matrix.cons_val_zero, Matrix.cons_val_one] <;>
-    ring
+      Matrix.cons_val_zero, Matrix.cons_val_one]
 
 /-- `H * X` puts the negated entry at `(1, 0)`: gate order matters. -/
 theorem hadamard_mul_pauliX :
@@ -228,8 +225,7 @@ theorem hadamard_mul_pauliX :
   ext i j
   fin_cases i <;> fin_cases j <;>
     simp [pauliX, hadamard, Matrix.mul_apply, Fin.sum_univ_two,
-      Matrix.cons_val_zero, Matrix.cons_val_one] <;>
-    ring
+      Matrix.cons_val_zero, Matrix.cons_val_one]
 
 /-- The two-gate Hadamard-then-X circuit equals `X * H`. Under the wrong
 (list-order) product this would be `H * X`, a different matrix. -/
@@ -251,8 +247,7 @@ theorem circuit_conj_value :
     norm_num [Matrix.mul_apply, Fin.sum_univ_two,
       Matrix.star_eq_conjTranspose, Matrix.conjTranspose_apply, Matrix.diagonal_apply,
       star_sqrt2inv, sqrt2_inv_sq] <;>
-    simp only [starRingEnd_apply, star_neg, star_sqrt2inv, mul_neg, neg_mul, sqrt2_inv_sq] <;>
-    norm_num
+    simp only [starRingEnd_apply, star_neg, star_sqrt2inv, mul_neg, neg_mul, sqrt2_inv_sq]
 
 /-- The quadratic form on the first basis vector reads off the `(0, 0)`
 entry. -/
@@ -403,8 +398,7 @@ theorem hadamard_circuit_inner_conj_le :
       (![(1 : Matrix (Fin 2) (Fin 2) ℂ), 1] : Fin 2 → Matrix (Fin 2) (Fin 2) ℂ) i‖ ≤
       ![‖hadamard - 1‖, ‖pauliX - 1‖] i := by
     intro i
-    fin_cases i <;> simp [Matrix.cons_val_zero, Matrix.cons_val_one] <;>
-      exact le_refl _
+    fin_cases i <;> simp [Matrix.cons_val_zero, Matrix.cons_val_one]
   have h := norm_inner_circuit_conj_sub_le ![hadamard, pauliX]
     (![(1 : Matrix (Fin 2) (Fin 2) ℂ), 1] : Fin 2 → Matrix (Fin 2) (Fin 2) ℂ)
     hU hV ![‖hadamard - 1‖, ‖pauliX - 1‖] hε

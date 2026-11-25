@@ -6299,7 +6299,7 @@ private lemma ntSuccAbove_straddle {m : ℕ} (hm : 0 < m)
     have hu0 : u.val = 0 := by
       simp only [hvlast, Fin.val_last, ite_true] at hu'
       split_ifs at hu'
-      all_goals omega
+      omega
     have hvzero : v ≠ 0 := by
       intro h
       have := congrArg Fin.val h

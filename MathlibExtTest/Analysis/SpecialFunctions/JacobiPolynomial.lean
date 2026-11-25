@@ -26,7 +26,7 @@ example {a : ℝ} (ha : 0 < a) (b : ℝ) (n : ℕ) :
     X * (1 - X) * derivative (derivative (shiftedJacobi a b n)) +
         (C a - C (a + b) * X) * derivative (shiftedJacobi a b n) =
       -C ((n : ℝ) * (n + a + b - 1)) * shiftedJacobi a b n := by
-  apply _root_.Polynomial.shiftedJacobi_ode <;> assumption
+  apply _root_.Polynomial.shiftedJacobi_ode; assumption
 
 /-- For `a, b > 0` every polynomial is integrable against the weight `x^(a-1) (1-x)^(b-1)` on
 `[0, 1]`, so the orthogonality and norm integrals below are genuine (not Lean's junk `0`). -/
@@ -60,18 +60,18 @@ example {a b : ℝ} (ha : 0 < a) (hb : 0 < b) {n : ℕ} (hn : 0 < n) :
 constant `1`). -/
 example (n : ℕ) :
     shiftedJacobi 1 1 n = (shiftedLegendre n).map (Int.castRingHom ℝ) := by
-  apply _root_.Polynomial.shiftedJacobi_one_one <;> assumption
+  apply _root_.Polynomial.shiftedJacobi_one_one
 
 /-- **First polynomial.** `R_1^{(a,b)} = 1 - ((a + b) / a) X`; with `shiftedJacobi_ode` its
 eigenvalue is `1 · (1 + a + b - 1) = a + b`. -/
 example (a b : ℝ) : shiftedJacobi a b 1 = 1 - C ((a + b) / a) * X := by
-  apply _root_.Polynomial.shiftedJacobi_one <;> assumption
+  apply _root_.Polynomial.shiftedJacobi_one
 
 /-- **Gegenbauer case.** `C_n^{(3/2)}(1 - 2x) = C(n + 2, 2) · R_n^{(2,2)}(x)`. -/
 example (n : ℕ) :
     (gegenbauer (3 / 2) n).comp (1 - C 2 * X) =
       C (((n + 2).choose 2 : ℕ) : ℝ) * shiftedJacobi 2 2 n := by
-  apply _root_.Polynomial.gegenbauer_three_halves_comp <;> assumption
+  apply _root_.Polynomial.gegenbauer_three_halves_comp
 
 /-- `R_0 = 1` by the defining sum. -/
 example (a b : ℝ) : shiftedJacobi a b 0 = 1 := by simp [shiftedJacobi]

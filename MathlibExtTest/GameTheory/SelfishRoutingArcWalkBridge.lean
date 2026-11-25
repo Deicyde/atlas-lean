@@ -46,14 +46,14 @@ example :
           latency := fun _ _ => 0 } ![1, 2] e) = ![1, 2, 3, 0] := by
   constructor
   · funext e
-    fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two] <;> norm_num
+    fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two]; norm_num
   · funext e
     rw [
       MathlibExt.GameTheory.SelfishRouting.RoutingInstance.edgeFlow_eq_edgeVolume
         (fun _ => 0) (fun _ => 2)
       ![([0, 2] : List (Fin 4)), [1, 2]] (fun _ _ => 0)
       (fun p => by fin_cases p <;> decide) ![1, 2] e]
-    fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two] <;> norm_num
+    fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two]; norm_num
 
 /-- Non-simple counterexample: the route `[0, 2, 3, 0, 2]` traverses arc `0` twice, so
 with flows `3` on it and `1` on `[0, 2]`, arc `0` has `edgeVolume` `7` but set-based
@@ -66,9 +66,9 @@ example :
             latency := fun _ _ => 0 } ![3, 1] 0 = 4 ∧
       ¬ ([0, 2, 3, 0, 2] : List (Fin 4)).Nodup := by
   refine ⟨?_, ?_, by decide⟩
-  · simp [edgeVolume, Fin.sum_univ_two] <;> norm_num
+  · simp [edgeVolume, Fin.sum_univ_two]; norm_num
   · simp [MathlibExt.GameTheory.SelfishRouting.RoutingInstance.edgeFlow, Finset.sum_filter,
-      Fin.sum_univ_two] <;> norm_num
+      Fin.sum_univ_two]; norm_num
 
 open MathlibExt.GameTheory.SelfishRouting
 
@@ -86,7 +86,7 @@ abbrev zeroFlowRoutes : Fin 3 → List (Fin 4) := ![[0, 2], [1, 2], [0, 2, 3, 0,
 
 private theorem sharedArcVolume : edgeVolume sharedRoutes ![1, 2] = ![1, 2, 3, 0] := by
   funext e
-  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two] <;> norm_num
+  fin_cases e <;> simp [edgeVolume, Fin.sum_univ_two]; norm_num
 
 example : (fun e => tt e (edgeVolume sharedRoutes ![1, 2] e)) = ![2, 5, 10, 1] := by
   rw [sharedArcVolume]

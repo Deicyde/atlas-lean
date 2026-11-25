@@ -81,7 +81,7 @@ theorem affineView_base (a : AffinePoint RY) :
 def restrictionValue (M : QCoh R) (a : AffinePoint RY)
     (x : ((rootRestriction f R RY hr).obj M).obj.obj (op a)) :
     M.obj.obj (op ((affineView f R RY hr).obj a)) := by
-  try clear q
+  clear q
   subst RY
   exact x
 

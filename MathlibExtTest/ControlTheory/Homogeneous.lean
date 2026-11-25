@@ -37,7 +37,7 @@ example :
   rw [homogeneousMatrix_mulVec_elim]
   congr 1
   ext i
-  fin_cases i <;> simp [rotZ, Matrix.mulVec, dotProduct] <;> norm_num
+  fin_cases i <;> simp [rotZ, Matrix.mulVec, dotProduct]
 
 -- At `w = 2` the translation is scaled, and the bottom
 -- coordinate stays `2`.

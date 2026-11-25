@@ -68,22 +68,6 @@ theorem totalDegree_symmetrize_le {n : ℕ} (p : MvPolynomial (Fin n) ℝ) : (sy
       | exact MvPolynomial.totalDegree_smul _ _
       | exact MvPolynomial.totalDegree_smul_le
       | exact MvPolynomial.totalDegree_smul_le c q
-      | exact MvPolynomial.totalDegree_smul_le _ _
-      | calc (c • q).totalDegree = (MvPolynomial.C c * q).totalDegree := by
-              first
-                | rw [MvPolynomial.smul_eq_C_mul]
-                | rw [← MvPolynomial.C_mul']
-                | rw [← MvPolynomial.C_mul]
-                | rw [Algebra.smul_def, MvPolynomial.algebraMap_eq_apply]
-                | rw [Algebra.smul_def, MvPolynomial.algebraMap_eq]
-          _ ≤ (MvPolynomial.C c).totalDegree + q.totalDegree :=
-              MvPolynomial.totalDegree_mul
-          _ ≤ q.totalDegree := by
-              have hc : (MvPolynomial.C c).totalDegree ≤ 0 := by
-                first
-                  | exact MvPolynomial.totalDegree_C _
-                  | exact MvPolynomial.totalDegree_C
-              omega
   have hsum : (Finset.univ.sum (fun σ : Equiv.Perm (Fin n) => MvPolynomial.rename σ p)).totalDegree ≤ p.totalDegree := by
     apply MvPolynomial.totalDegree_finsetSum_le
     intro σ _
@@ -105,7 +89,6 @@ private theorem natDegree_monoPoly_le {n : ℕ} (c : ℝ) (t : ℕ) :
     first
       | exact Polynomial.natDegree_C_le _
       | exact le_of_eq (Polynomial.natDegree_C _)
-      | simp
   have hP : (descPochhammer ℝ t).natDegree ≤ t := by
     first
       | exact natDegree_descPochhammer
@@ -282,7 +265,6 @@ private theorem fiber_fst {n : ℕ} {T U : Finset (Fin n)} (e₁ : T ≃ U)
     rw [glueFun_pos e₁ e₂ i hi]
   first
     | refine Subtype.ext ?_
-    | ext
   show (gluedPerm e₁ e₂) i = (e₁ ⟨i, hi⟩).1
   exact hσi
 
@@ -300,7 +282,6 @@ private theorem fiber_snd {n : ℕ} {T U : Finset (Fin n)} (e₁ : T ≃ U)
     rw [glueFun_neg e₁ e₂ i hiT]
   first
     | refine Subtype.ext ?_
-    | ext
   show (gluedPerm e₁ e₂) i = (e₂ ⟨i, hi⟩).1
   exact hσi
 
@@ -314,7 +295,6 @@ private noncomputable def fiberEquiv {n : ℕ} (T U : Finset (Fin n)) :
   left_inv := fun σ => by
     first
       | refine Subtype.ext ?_
-      | ext
     apply Equiv.ext
     intro i
     by_cases hi : i ∈ T
@@ -328,7 +308,6 @@ private noncomputable def fiberEquiv {n : ℕ} (T U : Finset (Fin n)) :
     obtain ⟨e₁, e₂⟩ := p
     first
       | refine Prod.ext ?_ ?_
-      | ext
     · exact fiber_fst e₁ e₂
     · exact fiber_snd e₁ e₂
 /-- The number of permutations mapping `T` onto a fixed `t`-set `U`. -/
@@ -347,14 +326,10 @@ private theorem fiber_card {n : ℕ} (T U : Finset (Fin n)) (t : ℕ)
     have hfin : Fintype.card (Fin n) = n := Fintype.card_fin n
     first
       | (have hcc := Finset.card_compl T; omega)
-      | (have hcc : (Tᶜ).card = Fintype.card (Fin n) - T.card := Finset.card_compl; omega)
-      | (have hcc := Finset.card_compl_add_card T; omega)
   have hUc : (Uᶜ).card = n - t := by
     have hfin : Fintype.card (Fin n) = n := Fintype.card_fin n
     first
       | (have hcc := Finset.card_compl U; omega)
-      | (have hcc : (Uᶜ).card = Fintype.card (Fin n) - U.card := Finset.card_compl; omega)
-      | (have hcc := Finset.card_compl_add_card U; omega)
   have h2 : Fintype.card (↥(Tᶜ) ≃ ↥(Uᶜ)) = (n - t).factorial := by
     have e : ↥(Tᶜ) ≃ ↥(Uᶜ) := Finset.equivOfCardEq (hTc.trans hUc.symm)
     have h := Fintype.card_equiv e
@@ -378,28 +353,20 @@ private theorem count_perms_image_subset {n : ℕ} (T S : Finset (Fin n)) :
     have h2 : (T.image ⇑σ).card = T.card := by
       first
         | exact Finset.card_image_of_injective T (hinj σ)
-        | exact Finset.card_image_of_injective _ (hinj σ)
-        | exact Finset.card_image_of_injective _ _ (hinj σ)
-        | exact Finset.card_image_of_injOn _ (Set.injOn_of_injective (hinj σ) _)
     rw [h2]
   have hmem : ∀ σ : Equiv.Perm (Fin n),
       T.image ⇑σ ⊆ S → T.image ⇑σ ∈ S.powersetCard t := by
     intro σ hσ
     first
       | rw [Finset.mem_powersetCard]
-      | rw [Finset.mem_powerset_card]
     first
       | exact ⟨hσ, hcard σ⟩
-      | exact ⟨hcard σ, hσ⟩
   have hsub' : ∀ (U : Finset (Fin n)) (_ : U ∈ S.powersetCard t)
       (σ : Equiv.Perm (Fin n)), T.image ⇑σ = U → T.image ⇑σ ⊆ S := by
     intro U hU σ heq
     have h : U ⊆ S := by
       first
         | exact (Finset.mem_powersetCard.mp hU).1
-        | exact (Finset.mem_powersetCard.mp hU).2
-        | exact (Finset.mem_powerset_card.mp hU).1
-        | exact (Finset.mem_powerset_card.mp hU).2
     rw [heq]
     exact h
   have hE : { σ : Equiv.Perm (Fin n) // T.image ⇑σ ⊆ S } ≃
@@ -424,9 +391,6 @@ private theorem count_perms_image_subset {n : ℕ} (T S : Finset (Fin n)) :
     have hUt : U.1.card = t := by
       first
         | exact (Finset.mem_powersetCard.mp U.2).2
-        | exact (Finset.mem_powersetCard.mp U.2).1
-        | exact (Finset.mem_powerset_card.mp U.2).2
-        | exact (Finset.mem_powerset_card.mp U.2).1
     exact fiber_card T U.1 t ht.symm hUt
   simp only [hfib] at hcardE
   rw [Finset.sum_const, Finset.card_univ] at hcardE
@@ -434,19 +398,11 @@ private theorem count_perms_image_subset {n : ℕ} (T S : Finset (Fin n)) :
       = (S.powersetCard t).card := by
     first
       | exact Fintype.card_coe _
-      | exact Fintype.card_coe
-      | exact Finset.card_coe _
-      | exact Finset.card_coe
-      | simp
   rw [hpc] at hcardE
   have hpcard : (S.powersetCard t).card = S.card.choose t := by
     first
       | exact Finset.card_powersetCard
       | exact Finset.card_powersetCard _ _
-      | exact Finset.card_powerset_card
-      | exact Finset.card_powerset_card _ _
-      | simp [Finset.card_powersetCard]
-      | simp [Finset.card_powerset_card]
   have hsub : (Finset.univ.filter
       (fun σ : Equiv.Perm (Fin n) => T.image ⇑σ ⊆ S)).card
       = Fintype.card { σ : Equiv.Perm (Fin n) // T.image ⇑σ ⊆ S } := by
@@ -454,13 +410,9 @@ private theorem count_perms_image_subset {n : ℕ} (T S : Finset (Fin n)) :
       | exact Fintype.card_subtype
       | exact (Fintype.card_subtype).symm
       | rw [Fintype.card_subtype]
-      | simp [Fintype.card_subtype]
-      | simp
   rw [hsub, hcardE, hpcard, Nat.descFactorial_eq_factorial_mul_choose]
   first
     | (rw [nsmul_eq_mul]; simp only [Nat.cast_id]; ring)
-    | (simp [nsmul_eq_mul]; ring)
-    | ring
 
 /-- Powers of `0/1` values collapse. -/
 private theorem pow_bit {n : ℕ} (x : BoolCube n) (σ : Equiv.Perm (Fin n))
@@ -472,10 +424,6 @@ private theorem pow_bit {n : ℕ} (x : BoolCube n) (σ : Equiv.Perm (Fin n))
   · simp only [if_neg h]
     first
       | exact zero_pow hk
-      | exact zero_pow _ hk
-      | (cases k with
-        | zero => exact absurd rfl hk
-        | succ m => show (0:ℝ)^(m+1) = 0; rw [pow_succ, mul_zero])
 
 /-- A symmetrized monomial is a falling factorial in the weight. -/
 private theorem eval_symmetrize_monomial {n : ℕ} (s : Fin n →₀ ℕ) (a : ℝ)
@@ -496,9 +444,6 @@ private theorem eval_symmetrize_monomial {n : ℕ} (s : Fin n →₀ ℕ) (a : �
     have hsub : s.support ⊆ s.support := by
       first
         | exact Finset.Subset.rfl
-        | exact Subset.rfl
-        | exact fun x hx => hx
-        | simp
     have hbridge : s.prod (fun i k => (if x (σ i) then (1 : ℝ) else 0) ^ k)
         = ∏ i ∈ s.support,
           (fun i k => (if x (σ i) then (1 : ℝ) else 0) ^ k) i (s i) := by
@@ -540,20 +485,14 @@ private theorem eval_symmetrize_monomial {n : ℕ} (s : Fin n →₀ ℕ) (a : �
       first
         | exact (Finset.sum_boole).symm
         | exact (Finset.sum_boole _ _).symm
-        | (rw [← Finset.sum_filter, Finset.sum_const, nsmul_one]; rfl)
-        | (rw [Finset.sum_filter, Finset.sum_const, nsmul_one]; rfl)
     rw [hboole, Finset.mul_sum]
     exact Finset.sum_congr rfl (fun σ _ => hterm σ)
   have hw : hammingWeight x = S.card := by
     first
       | rfl
-      | (unfold hammingWeight; rfl)
-      | simp only [hammingWeight]
   rw [eval_symmetrize, hsum, eval_monoPoly, count_perms_image_subset, hw]
   first
     | (push_cast; ring)
-    | (simp [Nat.cast_mul]; ring)
-    | ring
 
 /-- The support size is bounded by the total exponent sum. -/
 private theorem card_support_le_sum {n : ℕ} (s : Fin n →₀ ℕ) :
@@ -590,10 +529,6 @@ theorem exists_polynomial_eval_symmetrize {n : ℕ} (p : MvPolynomial (Fin n) �
           (fun s => MvPolynomial.monomial s (p.coeff s)) := by
       first
         | exact MvPolynomial.as_sum p
-        | exact MvPolynomial.as_sum _
-        | exact (MvPolynomial.support_sum_monomial_coeff p).symm
-        | rw [MvPolynomial.as_sum]
-        | simp [MvPolynomial.as_sum]
     have heval_sum : ∀ σ : Equiv.Perm (Fin n),
         MvPolynomial.eval (fun i => if x (σ i) then (1 : ℝ) else 0) p
           = ∑ s ∈ p.support, MvPolynomial.eval
@@ -651,8 +586,6 @@ private theorem weight_comp_perm {n : ℕ} (x : BoolCube n)
   rw [hset]
   first
     | exact Finset.card_image_of_injective _ hinj
-    | exact Finset.card_image_of_injective _ _ hinj
-    | exact Finset.card_image_of_injOn _ (Set.injOn_of_injective hinj _)
 
 /-- Precomposing with a permutation preserves parity. -/
 private theorem parity_comp_perm {n : ℕ} (x : BoolCube n)
@@ -671,8 +604,6 @@ private theorem approx_symmetrize {n : ℕ} (p : MvPolynomial (Fin n) ℝ)
   have hfact0 : ((n.factorial : ℕ) : ℝ) ≠ 0 := by
     first
       | exact Nat.cast_ne_zero.mpr (Nat.factorial_ne_zero n)
-      | positivity
-      | simp [Nat.factorial_ne_zero]
   have hc : (Finset.univ : Finset (Equiv.Perm (Fin n))).card = n.factorial := by
     rw [Finset.card_univ, Fintype.card_perm, Fintype.card_fin]
   have heval := eval_symmetrize p x
@@ -690,13 +621,10 @@ private theorem approx_symmetrize {n : ℕ} (p : MvPolynomial (Fin n) ℝ)
     conv_lhs => rw [hP]
     first
       | rw [← mul_sub]
-      | rw [mul_sub]
     rw [← Finset.sum_sub_distrib]
   have hnonneg : (0:ℝ) ≤ (n.factorial : ℝ)⁻¹ := by
     first
       | exact inv_nonneg.mpr (Nat.cast_nonneg _)
-      | positivity
-      | simp
   have habs : |(n.factorial : ℝ)⁻¹ * (∑ σ : Equiv.Perm (Fin n),
         (MvPolynomial.eval (fun i => if x (σ i) then (1 : ℝ) else 0) p
           - (if parityFunction x then (1 : ℝ) else 0)))|
@@ -750,9 +678,6 @@ private theorem weight_repPoint {n : ℕ} (k : ℕ) (hkn : k ≤ n) :
       have hd : decide (i.val < k) = true := by
         first
           | exact decide_eq_true h
-          | exact decide_eq_true.mpr h
-          | exact of_eq_true h
-          | simp [h]
       rw [if_pos hd]
     · rw [if_neg h]
       have hd : ¬ decide (i.val < k) = true :=
@@ -772,7 +697,6 @@ private theorem weight_repPoint {n : ℕ} (k : ℕ) (hkn : k ≤ n) :
         | exact Finset.sum_filter
         | exact Finset.sum_filter.symm
         | rw [Finset.sum_filter]
-        | simp [Finset.sum_filter]
     exact h1.trans h2
   have hrange : (Finset.range n).filter (fun j => j < k) = Finset.range k := by
     ext j
@@ -787,7 +711,6 @@ private theorem weight_repPoint {n : ℕ} (k : ℕ) (hkn : k ≤ n) :
         | exact Finset.sum_boole
         | exact (Finset.sum_boole).symm
         | exact Finset.sum_boole _ _
-        | simp [Finset.sum_boole]
     rw [hfilter, hrange, Finset.card_range]
   unfold hammingWeight repPoint
   show (Finset.univ.filter (fun i : Fin n => decide (i.val < k) = true)).card = k
@@ -804,8 +727,6 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
     first
       | exact Polynomial.eval_sub
       | rw [Polynomial.eval_sub, Polynomial.eval_C]
-      | simp [Polynomial.eval_sub, Polynomial.eval_C]
-      | simp
   have hrval_int : ∀ k : ℕ, k ≤ n →
       r.eval (k : ℝ) = MvPolynomial.eval
         (fun i => if repPoint (n := n) k i then (1:ℝ) else 0) (symmetrize p) := by
@@ -827,12 +748,8 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
       have hdec : decide (Odd k) = true := by
         first
           | exact decide_eq_true hk
-          | exact decide_eq_true.mpr hk
-          | exact of_eq_true hk
-          | simp [hk]
       first
         | rw [if_pos hdec] at happrox
-        | simp [hdec] at happrox
       rw [hseval]
       obtain ⟨hlo, -⟩ := abs_le.mp happrox
       linarith
@@ -840,7 +757,6 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
       have hdec : ¬ decide (Odd k) = true := fun hc => hk (of_decide_eq_true hc)
       first
         | rw [if_neg hdec] at happrox
-        | simp [hdec] at happrox
       rw [hseval]
       obtain ⟨-, hhi⟩ := abs_le.mp happrox
       linarith
@@ -850,15 +766,11 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
     have hnotodd : ¬ Odd 0 := by
       first
         | (rw [Nat.odd_iff]; norm_num)
-        | simp
-        | exact Nat.not_odd_zero
     have hsign0 := (hsign 0 h0).2 hnotodd
     rw [Nat.cast_zero] at hsign0
     have heval0 : (r - Polynomial.C (1/2)).eval (0:ℝ) = 0 := by
       first
         | rw [hcon, Polynomial.eval_zero]
-        | simp [hcon]
-        | simp
     linarith
   have hroot : ∀ j : ℕ, j < n → ∃ c : ℝ,
       (j:ℝ) < c ∧ c < ((j+1:ℕ):ℝ) ∧ (r - Polynomial.C (1/2)).eval c = 0 := by
@@ -873,7 +785,6 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
       first
         | exact (Polynomial.continuous).continuousOn
         | exact (Polynomial.continuous _).continuousOn
-        | exact Polynomial.continuousOn
     by_cases hjodd : Odd j
     · have hnodd1 : ¬ Odd (j + 1) := by
         intro hcon
@@ -954,13 +865,9 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
     have ha' : a < n := by
       first
         | exact Finset.mem_range.mp (Finset.mem_coe.mp ha)
-        | exact Finset.mem_range.mp ha
-        | simpa using ha
     have hb' : b < n := by
       first
         | exact Finset.mem_range.mp (Finset.mem_coe.mp hb)
-        | exact Finset.mem_range.mp hb
-        | simpa using hb
     obtain ⟨ha1, ha2, -⟩ := hc a ha'
     obtain ⟨hb1, hb2, -⟩ := hc b hb'
     by_cases heq : a = b
@@ -968,22 +875,17 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
     · have hlt : a < b ∨ b < a := by
         first
           | exact lt_or_gt_of_ne heq
-          | exact Ne.lt_or_gt heq
       rcases hlt with hlt | hlt
       · have hab1 : a + 1 ≤ b := by omega
         have hle : ((a+1:ℕ):ℝ) ≤ (b:ℝ) := by
           first
             | exact_mod_cast hab1
-            | exact Nat.cast_le.mpr hab1
-            | simp [hab1]
         have hfalse : False := by linarith [ha2, hle, hb1, hab]
         exact False.elim hfalse
       · have hab1 : b + 1 ≤ a := by omega
         have hle : ((b+1:ℕ):ℝ) ≤ (a:ℝ) := by
           first
             | exact_mod_cast hab1
-            | exact Nat.cast_le.mpr hab1
-            | simp [hab1]
         have hfalse : False := by linarith [hb2, hle, ha1, hab]
         exact False.elim hfalse
   have hZcard : ((Finset.range n).image c).card = n := by
@@ -992,7 +894,6 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
         | exact Finset.card_image_of_injOn _ hinj
         | exact Finset.card_image_of_injOn _ _ hinj
         | exact Finset.card_image_of_injOn hinj
-        | simp [hinj]
     rw [h, Finset.card_range]
   have hmem : ∀ z ∈ (Finset.range n).image c,
       z ∈ (r - Polynomial.C (1/2)).roots := by
@@ -1001,7 +902,6 @@ theorem le_totalDegree_of_approx_parityFunction {n : ℕ} (p : MvPolynomial (Fin
     have hcj := hc j (Finset.mem_range.mp hjr)
     first
       | (rw [Polynomial.mem_roots hs0]; exact hcj.2.2)
-      | exact (Polynomial.mem_roots hs0).mpr hcj.2.2
   have hsub : ((Finset.range n).image c).val ⊆ (r - Polynomial.C (1/2)).roots := by
     intro a ha
     have ha' : a ∈ (Finset.range n).image c := by simpa using ha
@@ -1034,7 +934,6 @@ private theorem totalDegree_one_sub_X_le_one {n : ℕ} (i : Fin n) :
       | exact MvPolynomial.totalDegree_C _
       | exact MvPolynomial.totalDegree_C
       | exact le_of_eq MvPolynomial.totalDegree_one
-      | exact MvPolynomial.totalDegree_one
   have h := MvPolynomial.totalDegree_sub (1 : MvPolynomial (Fin n) ℝ) (MvPolynomial.X i)
   omega
 

@@ -85,7 +85,7 @@ private theorem slice_isAddLeftInvariant (ρ : Measure (G × Y)) (B : Set Y)
   beta_reduce at h
   rw [map_apply hT (hE.prod hB)] at h
   convert h using 2
-  first | rfl | (ext ⟨x, y⟩; simp [Set.mem_prod, Set.mem_preimage])
+  first | rfl
 
 private theorem slice_isFiniteMeasureOnCompacts (ρ : Measure (G × Y)) (B : Set Y)
     (hBfin : ∀ K : Set G, IsCompact K → ρ (K ×ˢ B) < ⊤) :

@@ -616,7 +616,7 @@ private lemma sec8Ex1_tail_bound (a : ℕ → ℂ) {x : ℝ} (hx : 0 ≤ x)
       (‖a (n + (N + 1))‖ / sec8Ex1RealProd x (n + (N + 1))) := by
     dsimp [K, D]
     convert sec8Ex1_tail_term_le a hx hz hnorm N n using 1
-    all_goals ring
+    ring
   have habs : Summable (fun n : ℕ => ‖sec8Ex1Term a (n + (N + 1)) z‖) :=
     Summable.of_nonneg_of_le (fun n => norm_nonneg _) hterm hmajor
   calc

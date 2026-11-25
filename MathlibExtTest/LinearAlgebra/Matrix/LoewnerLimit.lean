@@ -72,7 +72,7 @@ example : ∃ L : Matrix (Fin 1) (Fin 1) ℝ, L.IsHermitian ∧ L 0 0 = 1 ∧
         have h1 : (1 : Matrix (Fin 1) (Fin 1) ℝ) - A n =
             Matrix.diagonal (fun _ => 1 - (n : ℝ) / (n + 1)) := by
           ext a b
-          fin_cases a <;> fin_cases b <;> simp [hAdef, Matrix.diagonal]
+          fin_cases a; fin_cases b; simp [hAdef, Matrix.diagonal]
         rw [h1]
         refine hdiag_psd _ (fun _ => sub_nonneg.mpr ?_)
         rw [div_le_one (by positivity)]

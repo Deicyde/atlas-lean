@@ -903,7 +903,7 @@ private lemma pick_ratio_shift_bounds_coprime
           ((y : ℂ) - a)⁻¹ * ((y : ℂ) - a)⁻¹) (y : ℂ) := by
       dsimp only [rhs]
       convert (hasDerivAt_const (y : ℂ) q₀).add hsum using 1
-      all_goals simp
+      simp
     have hFcont : Continuous fun z : ℂ ↦ F.eval z := by
       simpa [Polynomial.eval₂_eq_eval_map] using
         Polynomial.continuous_eval₂ F (RingHom.id ℂ)

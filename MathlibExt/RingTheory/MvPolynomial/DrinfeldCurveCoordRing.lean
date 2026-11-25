@@ -148,7 +148,6 @@ private theorem irreducible_rel (m : ℕ) :
   have hdeg : F.natDegree = m + 2 := by
     rw [hF_def]
     compute_degree!
-    all_goals (rw [if_neg (by omega), sub_zero]; exact hy0)
   have h0 : F.coeff 0 ≠ 0 := by
     rw [hF_def]
     simp only [coeff_add, coeff_sub, coeff_C_mul, coeff_X_pow, coeff_X, coeff_one]

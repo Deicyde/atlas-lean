@@ -63,7 +63,7 @@ example : ∀ v, 0 ≤ (![5 / 2, 10] : Fin 2 → ℝ) v :=
     (by
       intro v
       fin_cases v <;>
-        simp [Finset.sum_filter, Finset.sum_singleton] <;>
+        simp [Finset.sum_filter, Finset.sum_singleton];
         norm_num)
     (by funext v; fin_cases v <;> simp [incidence_mulVec] <;> norm_num)
 

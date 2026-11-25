@@ -366,7 +366,7 @@ private lemma tet_edge_length (e : Fin 6) :
 private lemma tet_face_edge (f : Fin 4) (i j : Fin 3) (h : j.val = (i.val + 1) % 3) :
     dist (tetVert (tetFace f i)) (tetVert (tetFace f j)) = 2 * Real.sqrt 2 := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals exact tet_dist _ _ (by decide)
 
 /-- Tetrahedron face diagonals (equal to edges for triangles). -/
@@ -374,8 +374,8 @@ private lemma tet_face_diag (f : Fin 4) (h0 i j : Fin 3)
     (h1 : h0.val = (i.val + 3 - 1) % 3) (h2 : j.val = (i.val + 1) % 3) :
     dist (tetVert (tetFace f h0)) (tetVert (tetFace f j)) = 2 * Real.sqrt 2 := by
   fin_cases f <;> fin_cases h0 <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h1)
-  all_goals try (norm_num at h2)
+  all_goals (norm_num at h1)
+  all_goals (norm_num at h2)
   all_goals exact tet_dist _ _ (by decide)
 
 /-- Tetrahedron faces are injective. -/
@@ -388,7 +388,7 @@ private lemma tet_face_edge_exists (f : Fin 4) (i j : Fin 3)
     ∃ e : Fin 6, tetEdge e = (tetFace f i, tetFace f j) ∨
       tetEdge e = (tetFace f j, tetFace f i) := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals decide
 
 /-- Every tetrahedron graph edge is a face edge. -/
@@ -506,7 +506,7 @@ private lemma tet_face_convex_pos (f : Fin 4) (k : Fin 3) :
     obtain ⟨i, rfl⟩ := hrange
     simp only [Set.mem_singleton_iff] at hne
     fin_cases f <;> fin_cases k <;> fin_cases i
-    all_goals try (norm_num at hne)
+    all_goals (norm_num at hne)
     all_goals
       simp only [tetVert, tetFace, tetFaceSepN, PiLp.inner_apply, Real.inner_apply,
         Fin.sum_univ_three, Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one,
@@ -1026,7 +1026,7 @@ private lemma cube_edge_length (e : Fin 12) :
 private lemma cube_face_edge (f : Fin 6) (i j : Fin 4) (h : j.val = (i.val + 1) % 4) :
     dist (cubeVert (cubeFace f i)) (cubeVert (cubeFace f j)) = 2 := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals
     simp only [cubeVert, cubeFace, EuclideanSpace.dist_eq, Fin.sum_univ_three,
       Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one, Matrix.cons_val,
@@ -1040,8 +1040,8 @@ private lemma cube_face_diag (f : Fin 6) (h0 i j : Fin 4)
     dist (cubeVert (cubeFace f h0)) (cubeVert (cubeFace f j)) = 2 * Real.sqrt 2 := by
   rw [← sqrt8]
   fin_cases f <;> fin_cases h0 <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h1)
-  all_goals try (norm_num at h2)
+  all_goals (norm_num at h1)
+  all_goals (norm_num at h2)
   all_goals
     simp only [cubeVert, cubeFace, EuclideanSpace.dist_eq, Fin.sum_univ_three,
       Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one, Matrix.cons_val,
@@ -1058,7 +1058,7 @@ private lemma cube_face_edge_exists (f : Fin 6) (i j : Fin 4)
     ∃ e : Fin 12, cubeEdge e = (cubeFace f i, cubeFace f j) ∨
       cubeEdge e = (cubeFace f j, cubeFace f i) := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals decide
 
 /-- Every cube graph edge is a face edge. -/
@@ -1161,7 +1161,7 @@ private lemma cube_face_convex_pos (f : Fin 6) (k : Fin 4) :
     obtain ⟨i, rfl⟩ := hrange
     simp only [Set.mem_singleton_iff] at hne
     fin_cases f <;> fin_cases k <;> fin_cases i
-    all_goals try (norm_num at hne)
+    all_goals (norm_num at hne)
     all_goals
       simp only [cubeVert, cubeFace, cubeFaceSepN, PiLp.inner_apply, Real.inner_apply,
         Fin.sum_univ_three, Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one,
@@ -1495,8 +1495,8 @@ private lemma cube_edge_disjoint (f : Fin 6) (i₁ j₁ i₂ j₂ : Fin 4)
     Disjoint (convexHull ℝ {cubeVert (cubeFace f i₁), cubeVert (cubeFace f j₁)})
       (convexHull ℝ {cubeVert (cubeFace f i₂), cubeVert (cubeFace f j₂)}) := by
   fin_cases f <;> fin_cases i₁ <;> fin_cases j₁ <;> fin_cases i₂ <;> fin_cases j₂
-  all_goals try (norm_num at h1)
-  all_goals try (norm_num at h2)
+  all_goals (norm_num at h1)
+  all_goals (norm_num at h2)
   all_goals try (first
     | exact False.elim (d1 rfl)
     | exact False.elim (d2 rfl)
@@ -2102,7 +2102,7 @@ private lemma oct_face_edge (f : Fin 8) (i j : Fin 3)
     (h : j.val = (i.val + 1) % 3) :
     dist (octVert (octFace f i)) (octVert (octFace f j)) = Real.sqrt 2 := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals
     simp only [octVert, octFace, EuclideanSpace.dist_eq, Fin.sum_univ_three,
       Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one, Matrix.cons_val,
@@ -2115,8 +2115,8 @@ private lemma oct_face_diag (f : Fin 8) (h i j : Fin 3)
     (hj : j.val = (i.val + 1) % 3) :
     dist (octVert (octFace f h)) (octVert (octFace f j)) = Real.sqrt 2 := by
   fin_cases f <;> fin_cases h <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at hh)
-  all_goals try (norm_num at hj)
+  all_goals (norm_num at hh)
+  all_goals (norm_num at hj)
   all_goals
     simp only [octVert, octFace, EuclideanSpace.dist_eq, Fin.sum_univ_three,
       Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one, Matrix.cons_val,
@@ -2133,7 +2133,7 @@ private lemma oct_face_edge_exists (f : Fin 8) (i j : Fin 3)
     ∃ e : Fin 12, octEdge e = (octFace f i, octFace f j) ∨
       octEdge e = (octFace f j, octFace f i) := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals decide
 
 /-- Every octahedron graph edge is a face edge. -/
@@ -2292,7 +2292,7 @@ private lemma oct_face_convex_pos (f : Fin 8) (k : Fin 3) :
     obtain ⟨i, rfl⟩ := hrange
     simp only [Set.mem_singleton_iff] at hne
     fin_cases f <;> fin_cases k <;> fin_cases i
-    all_goals try (norm_num at hne)
+    all_goals (norm_num at hne)
     all_goals
       simp only [octVert, octFace, PiLp.inner_apply, Real.inner_apply,
         Fin.sum_univ_three, Fin.reduceFinMk, Fin.isValue, Fin.mk_zero, Fin.mk_one,
@@ -2843,7 +2843,7 @@ private lemma ico_face_edge (f : Fin 20) (i j : Fin 3)
     (h : j.val = (i.val + 1) % 3) :
     dist (icoVert (icoFace f i)) (icoVert (icoFace f j)) = 2 := by
   fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals exact ico_face_pair_length f _ _ (by decide)
 
 /-- The opposite-neighbor diagonal in each triangular icosahedron face. -/
@@ -2852,8 +2852,8 @@ private lemma ico_face_diag (f : Fin 20) (h i j : Fin 3)
     (hj : j.val = (i.val + 1) % 3) :
     dist (icoVert (icoFace f h)) (icoVert (icoFace f j)) = 2 := by
   fin_cases h <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at hh)
-  all_goals try (norm_num at hj)
+  all_goals (norm_num at hh)
+  all_goals (norm_num at hj)
   all_goals exact ico_face_pair_length f _ _ (by decide)
 
 /-- Every icosahedron face edge is a graph edge. -/
@@ -2862,7 +2862,7 @@ private lemma ico_face_edge_exists (f : Fin 20) (i j : Fin 3)
     ∃ e : Fin 30, icoEdge e = (icoFace f i, icoFace f j) ∨
       icoEdge e = (icoFace f j, icoFace f i) := by
   fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals exact ico_face_pair_edge f _ _ (by decide)
 
 /-- Every icosahedron graph edge is a face edge. -/
@@ -3561,7 +3561,7 @@ private lemma dod_face_edge_exists (f : Fin 12) (i j : Fin 5)
     ∃ e : Fin 30, dodEdge e = (dodFace f i, dodFace f j) ∨
       dodEdge e = (dodFace f j, dodFace f i) := by
   fin_cases f <;> fin_cases i <;> fin_cases j
-  all_goals try (norm_num at h)
+  all_goals (norm_num at h)
   all_goals decide
 
 /-- Dodecahedron face edges have the common edge length. -/
@@ -3583,8 +3583,8 @@ private lemma dod_face_diag (f : Fin 12) (h i j : Fin 5)
     (hj : j.val = (i.val + 1) % 5) :
     dist (dodVert (dodFace f h)) (dodVert (dodFace f j)) = 2 * φ := by
   fin_cases i <;> fin_cases h <;> fin_cases j
-  all_goals try (norm_num at hh)
-  all_goals try (norm_num at hj)
+  all_goals (norm_num at hh)
+  all_goals (norm_num at hj)
   all_goals fin_cases f
   all_goals
     simp only [dodVert, dodFace, EuclideanSpace.dist_eq, Fin.sum_univ_three,
@@ -4172,8 +4172,8 @@ private lemma dod_edge_disjoint (f : Fin 12) (i₁ j₁ i₂ j₂ : Fin 5)
       (convexHull ℝ {dodVert (dodFace f i₁), dodVert (dodFace f j₁)})
       (convexHull ℝ {dodVert (dodFace f i₂), dodVert (dodFace f j₂)}) := by
   fin_cases i₁ <;> fin_cases j₁ <;> fin_cases i₂ <;> fin_cases j₂
-  all_goals try (norm_num at h1)
-  all_goals try (norm_num at h2)
+  all_goals (norm_num at h1)
+  all_goals (norm_num at h2)
   all_goals try (exact False.elim (d1 rfl))
   all_goals try (exact False.elim (d2 rfl))
   all_goals try (exact False.elim (d3 rfl))

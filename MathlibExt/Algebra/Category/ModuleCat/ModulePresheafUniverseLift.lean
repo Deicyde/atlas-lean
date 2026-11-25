@@ -52,12 +52,12 @@ def obj (M : PresheafOfModules.{0} R) : PresheafOfModules.{w} R where
     refine ModuleCat.hom_ext
       (@LinearMap.ext _ _ _ _ _ _ _ _ (_) (_) _ _ _ (fun x => ?_))
     apply ULift.ext
-    simp <;> rfl
+    simp; rfl
   map_comp f g := by
     refine ModuleCat.hom_ext
       (@LinearMap.ext _ _ _ _ _ _ _ _ (_) (_) _ _ _ (fun x => ?_))
     apply ULift.ext
-    simp <;> rfl
+    simp; rfl
 
 def map {M N : PresheafOfModules.{0} R} (f : M ⟶ N) : obj R M ⟶ obj R N where
   app X := ModuleCat.ofHom

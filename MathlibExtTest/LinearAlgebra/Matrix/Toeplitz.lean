@@ -20,8 +20,8 @@ example : IsToeplitzMatrix (n := 0) ![![(7 : ℝ)]] :=
   isToeplitzMatrix_of_witness (c := fun _ => (7 : ℝ)) (by
     intro i j
     fin_cases i
-    all_goals fin_cases j
-    all_goals simp)
+    fin_cases j
+    simp)
 
 /-- A concrete `3 × 3` Toeplitz matrix. -/
 private def toeplitz3 : Matrix (Fin (2 + 1)) (Fin (2 + 1)) ℝ :=

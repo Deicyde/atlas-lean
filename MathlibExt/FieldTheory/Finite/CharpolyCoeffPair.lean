@@ -97,7 +97,7 @@ private theorem card_mulLin_fibre (e : F × F × F) :
     simp only [mem_filter, mem_univ, true_and, mulLin, Prod.ext_iff] at hp
     obtain ⟨h1, h2, -⟩ := hp
     simp only [Prod.ext_iff]
-    refine ⟨by first | trivial | rfl, ?_, ?_⟩
+    refine ⟨by first | trivial, ?_, ?_⟩
     · rw [← h1]; ring
     · rw [← h2, ← h1]; ring
   · intro a _
@@ -361,20 +361,19 @@ private theorem card_multiple_roots_sigma3 (α β γ : F) :
     · have hγα : ¬γ = α := fun h => hαγ h.symm
       rw [if_pos (by simp [Finset.card_pair hαγ])]
       rw [Finset.card_eq_one]
-      exact ⟨α, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto | aesop⟩
+      exact ⟨α, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto⟩
   · have hβα : ¬β = α := fun h => hαβ h.symm
     by_cases hαγ : α = γ
     · subst hαγ
       rw [if_pos (by simp [Finset.card_pair hαβ, Finset.card_pair (Ne.symm hαβ)])]
       rw [Finset.card_eq_one]
-      exact ⟨α, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto | aesop⟩
+      exact ⟨α, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto⟩
     · have hγα : ¬γ = α := fun h => hαγ h.symm
       by_cases hβγ : β = γ
       · subst hβγ
         rw [if_pos (by simp [Finset.card_pair hαβ])]
         rw [Finset.card_eq_one]
-        exact ⟨β, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto |
-            aesop⟩
+        exact ⟨β, by ext x; simp only [mem_filter, mem_insert, mem_singleton]; first | tauto⟩
       · have hγβ : ¬γ = β := fun h => hβγ h.symm
         have h3 : ({α, β, γ} : Finset F).card = 3 := Finset.card_eq_three.mpr ⟨α, β, γ, hαβ, hαγ,
             hβγ, rfl⟩
@@ -390,7 +389,7 @@ private theorem card_multiple_roots_sigma3 (α β γ : F) :
           exact hαβ (h1.trans h2.symm)
         rw [hcc, Finset.card_eq_zero, Finset.filter_eq_empty_iff]
         intro x _ hx
-        first | tauto | aesop
+        first | tauto
 
 private theorem card_multiple_roots (e : F × F × F) :
     (univ.filter fun α : F => IsRoot e α ∧ α ^ 2 - (cofactor e α).1 * α + (cofactor e α).2 = 0).card
@@ -777,7 +776,7 @@ private theorem card_mulLin_pair (t s : F) :
     change a + b₁ = t at h1
     change b₂ + a * b₁ = s at h2
     simp only [Prod.ext_iff]
-    refine ⟨by first | trivial | rfl, ?_, ?_⟩
+    refine ⟨by first | trivial, ?_, ?_⟩
     · rw [← h1]; ring
     · rw [← h2, ← h1]; ring
   · intro a _; rfl

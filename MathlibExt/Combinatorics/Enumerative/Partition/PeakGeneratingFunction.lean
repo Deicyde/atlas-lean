@@ -458,7 +458,7 @@ private lemma pgf_peakNat_join_top {n m : ℕ} (i : Fin n) (u : Fin i.val → Fi
     pgf_peakNat (pgf_joinFirst ⟨i, u, v⟩) i.val = pgf_boundary ⟨i, u, v⟩ := by
   unfold pgf_peakNat pgf_boundary pgf_joinFirst
   dsimp
-  split_ifs <;> try simp_all [Fin.castSucc_lt_last] <;> try omega
+  split_ifs <;> simp_all [Fin.castSucc_lt_last] <;> try omega
 
 private lemma pgf_peak_join {n m : ℕ} (i : Fin n) (u : Fin i.val → Fin m)
     (v : Fin (n - 1 - i.val) → Fin (m + 1)) :

@@ -364,25 +364,25 @@ private lemma ntCode_double_swap {n : ℕ} (σ : Equiv.Perm (Fin n))
     · have hiA : (⟨i, hi⟩ : Fin n) = a := Fin.ext hia
       subst hiA
       rw [Equiv.swap_apply_of_ne_of_ne hab' had, Equiv.swap_apply_left]
-      split_ifs <;> try omega
+      split_ifs <;> omega
     · by_cases hib : i = b.val
       · have hiB : (⟨i, hi⟩ : Fin n) = b := Fin.ext hib
         subst hiB
         rw [Equiv.swap_apply_left,
           Equiv.swap_apply_of_ne_of_ne (Ne.symm had) (Ne.symm hcd')]
-        split_ifs <;> try omega
+        split_ifs <;> omega
       · by_cases hic : i = c.val
         · have hiC : (⟨i, hi⟩ : Fin n) = c := Fin.ext hic
           subst hiC
           rw [Equiv.swap_apply_of_ne_of_ne (Ne.symm hbc') hcd',
             Equiv.swap_apply_right]
-          split_ifs <;> try omega
+          split_ifs <;> omega
         · by_cases hid : i = d.val
           · have hiD : (⟨i, hi⟩ : Fin n) = d := Fin.ext hid
             subst hiD
             rw [Equiv.swap_apply_right,
               Equiv.swap_apply_of_ne_of_ne (Ne.symm hab') hbc']
-            split_ifs <;> try omega
+            split_ifs <;> omega
           · have hiA : (⟨i, hi⟩ : Fin n) ≠ a := fun h => hia (congrArg Fin.val h)
             have hiB : (⟨i, hi⟩ : Fin n) ≠ b := fun h => hib (congrArg Fin.val h)
             have hiC : (⟨i, hi⟩ : Fin n) ≠ c := fun h => hic (congrArg Fin.val h)

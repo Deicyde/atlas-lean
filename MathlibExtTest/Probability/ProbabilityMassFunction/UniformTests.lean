@@ -73,7 +73,7 @@ example : (PMF.uniformFintype (Fin 3)).expectENN (fun i => (i.val : ℝ≥0∞))
   rw [PMF.expectENN_uniformOfFintype]
   have hthree : (3 : ℝ≥0∞)⁻¹ * 3 = 1 :=
     ENNReal.inv_mul_cancel (by norm_num) (by norm_num)
-  convert hthree using 1 <;> norm_num [Fin.sum_univ_three]
+  convert hthree using 1; norm_num [Fin.sum_univ_three]
 
 example : True := by
   fail_if_success

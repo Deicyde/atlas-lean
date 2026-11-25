@@ -680,7 +680,6 @@ theorem integral_cond_selected_outcome_eq {Ω : Type*}
     rw [div_eq_inv_mul, ← hΦ]
     field_simp
     rw [MeasureTheory.measureReal_def]
-    try ring
   exact hfinal
 
 end MathlibExt.Probability.Causality.MissingData

@@ -322,8 +322,7 @@ noncomputable def baseChange {R : Type u} [CommRing R] {R' : Type u} [CommRing R
       simp only [Over.comp_left, Over.homMk_left, baseChangePointOfBase,
         pullback.lift_fst, Category.assoc] at h ⊢
       rw [h]
-      congr 1 <;> exact Over.OverMorphism.ext (by
-        simp only [Over.comp_left, Over.homMk_left, Category.assoc])
+      congr 1
     · simp only [Over.comp_left, Over.homMk_left, baseChangePointOfBase,
         Category.assoc, pullback.lift_snd]
       exact hψ

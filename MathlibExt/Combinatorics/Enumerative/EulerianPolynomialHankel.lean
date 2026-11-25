@@ -347,7 +347,7 @@ private theorem ehd_table_deriv : ∀ m k : ℕ,
                   Polynomial.C ((m - (k + 1 + 1) : ℕ) : ℤ) * ehd_table m (k + 2) +
                     (1 - Polynomial.X) * Polynomial.derivative (ehd_table m (k + 2)) := by
               convert h1 using 1
-              all_goals norm_num [Nat.cast_add]
+              norm_num [Nat.cast_add]
               exact Or.inl (by ring)
             have hstep := ehd_derivStep_succ m (k + 1) (by omega) (by omega)
               (ehd_table m k) (ehd_table m (k + 1)) (ehd_table m (k + 2))

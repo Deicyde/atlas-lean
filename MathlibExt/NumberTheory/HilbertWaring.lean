@@ -2776,7 +2776,7 @@ private lemma hw_step_degree_bounds (k : ℕ) (hk : 3 ≤ k) :
   have hdegree : k - 1 ≤ 8 ^ (k - 2) := by
     have := haux (k - 2) (by omega)
     convert this using 1
-    all_goals omega
+    omega
   have hrel := (hw_step_pow_relations k hk).1
   rw [← hrel] at hdegree
   constructor
@@ -2862,7 +2862,7 @@ private lemma hw_step_zero_count_bound (k c Cᵢ C₄ N : ℕ) (hk : 3 ≤ k)
         _ = N ^ ((k - 1) + 1) := (pow_succ N (k - 1)).symm
         _ = N ^ k := by
           congr 2
-          all_goals omega
+          omega
     have hNM : N * M ≤ hwStepE k c * N ^ k := by
       calc
         N * M ≤ N * (hwStepE k c * N ^ (k - 1)) :=

@@ -131,11 +131,11 @@ theorem dartFace_of_dir_left (e : Dart) (hd : e.dir = ![-1, 0]) :
 
 theorem dartFace_of_dir_up (e : Dart) (hd : e.dir = ![0, 1]) :
     dartFace e = ![e.tail 0 - 1, e.tail 1] := by
-  unfold dartFace; rw [hd]; funext i; fin_cases i <;> simp [rot90Fun, negPart]; try ring
+  unfold dartFace; rw [hd]; funext i; fin_cases i <;> simp [rot90Fun, negPart]; ring
 
 theorem dartFace_of_dir_down (e : Dart) (hd : e.dir = ![0, -1]) :
     dartFace e = ![e.tail 0, e.tail 1 - 1] := by
-  unfold dartFace; rw [hd]; funext i; fin_cases i <;> simp [rot90Fun, negPart]; try ring
+  unfold dartFace; rw [hd]; funext i; fin_cases i <;> simp [rot90Fun, negPart]; ring
 
 theorem dartFace_exitDart (hfin : (cluster 2 ω (origin 2)).Finite) :
     dartFace (exitDart (ω := ω) hfin) = exitFaceUp (ω := ω) hfin := by
@@ -191,11 +191,11 @@ theorem dartFace_next_of_dir_right (K : Set (Site 2)) (e : Dart) (hd : e.dir = !
   by_cases hA : e.head + (-rot90Fun e.dir) ∈ K
   · rw [dartNext_of_front_mem K e hA, dartFace_of_dir_up _ (by rw [mkDart_dir, hr]),
       mkDart_tail, ht, hhead]
-    funext i; fin_cases i <;> simp; try ring
+    funext i; fin_cases i <;> simp; ring
   · by_cases hB : e.tail + (-rot90Fun e.dir) ∈ K
     · rw [dartNext_of_side_mem K e hA hB, dartFace_of_dir_right _ (by rw [mkDart_dir, hd]),
         mkDart_tail, ht]
-      funext i; fin_cases i <;> simp; try ring
+      funext i; fin_cases i <;> simp; ring
     · rw [dartNext_of_corner K e hA hB, dartFace_of_dir_down _ (by rw [mkDart_dir, ht]),
         mkDart_tail]
 
@@ -251,11 +251,11 @@ theorem dartFace_next_of_dir_down (K : Set (Site 2)) (e : Dart) (hd : e.dir = ![
   by_cases hA : e.head + (-rot90Fun e.dir) ∈ K
   · rw [dartNext_of_front_mem K e hA, dartFace_of_dir_right _ (by rw [mkDart_dir, hr]),
       mkDart_tail, ht, hhead]
-    funext i; fin_cases i <;> simp; try ring
+    funext i; fin_cases i <;> simp; ring
   · by_cases hB : e.tail + (-rot90Fun e.dir) ∈ K
     · rw [dartNext_of_side_mem K e hA hB, dartFace_of_dir_down _ (by rw [mkDart_dir, hd]),
         mkDart_tail, ht]
-      funext i; fin_cases i <;> simp; try ring
+      funext i; fin_cases i <;> simp; ring
     · rw [dartNext_of_corner K e hA hB, dartFace_of_dir_left _ (by rw [mkDart_dir, ht]),
         mkDart_tail]
 

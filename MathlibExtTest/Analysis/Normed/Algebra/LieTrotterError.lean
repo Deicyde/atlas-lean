@@ -39,7 +39,7 @@ theorem trotterStep_diagonal (a b : Fin 2 → ℝ) (t : ℝ) :
   rw [trotterStep_of_commute hcomm]
   congr 1
   congr 1
-  first | rw [Matrix.diagonal_add] | rw [← Matrix.diagonal_add]
+  first | rw [Matrix.diagonal_add]
   congr 1
   ext i
   simp [Pi.add_apply, Complex.ofReal_add]

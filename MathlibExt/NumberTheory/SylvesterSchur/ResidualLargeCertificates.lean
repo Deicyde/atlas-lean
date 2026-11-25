@@ -56,7 +56,7 @@ private lemma prime_mem_smallSievePrimes_of_le_twenty_nine {p : ℕ}
     (hp : p.Prime) (hp29 : p ≤ 29) :
     p ∈ smallSievePrimes := by
   have hp2 : 2 ≤ p := hp.two_le
-  interval_cases p <;> try norm_num [Nat.Prime] at hp <;> norm_num [smallSievePrimes]
+  interval_cases p <;> norm_num [Nat.Prime] at hp <;> norm_num [smallSievePrimes]
 
 private lemma prime_coprime_smallSieveProduct_of_twenty_nine_lt {p : ℕ}
     (hp : p.Prime) (hp29 : 29 < p) :

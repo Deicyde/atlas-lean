@@ -145,7 +145,7 @@ theorem ramanujan_part1_ch2_entry4_alternating_form (n : ℕ) (hn : 0 < n) :
     (1 : ℝ) + 2 * ∑ k ∈ Finset.Icc 1 n, (1 / ((4 * (k : ℝ)) ^ 3 - 4 * (k : ℝ))) =
     (∑ k ∈ Finset.Icc 1 (4 * n + 1), ((-1 : ℝ) ^ (k + 1) / (k : ℝ))) +
     (1 / 2 : ℝ) * ∑ k ∈ Finset.Icc 1 (2 * n), ((-1 : ℝ) ^ (k + 1) / (k : ℝ)) :=
-  by apply ramanujan_part1_ch2_entry4_alternating_form_general <;> assumption
+  by apply ramanujan_part1_ch2_entry4_alternating_form_general
 
 end Entry4AlternatingForm
 

@@ -195,7 +195,7 @@ lemma theta_hom_hom {Y₀ : C} (q₀ : Y₀ ⟶ S) {i : ι} (fj : Y₀ ⟶ U i) 
     toDescentDataRestrAlongIso, restrAlong, restrCompIso, toDescentDataCompPullFunctorIso,
     pullFunctorCompIso_hom_app_hom, pullFunctor_map_hom, NatIso.ofComponents_inv_app, isoMk_inv_hom,
     Iso.symm_inv, Cat.Hom.toNatIso_hom]
-  try rw [F.isoMapOfCommSq_eq _ ((pullback.snd f q₀ ≫ fj).op.toLoc) rfl]
+  rw [F.isoMapOfCommSq_eq _ ((pullback.snd f q₀ ≫ fj).op.toLoc) rfl]
   simp only [Iso.trans_hom, Iso.symm_hom, Cat.Hom₂.comp_app, Cat.Hom.toNatIso_hom, Category.assoc]
   exact Category.assoc _ _ _
 
@@ -221,7 +221,7 @@ lemma theta_hom_hom_comp {Y₀' Y₀ : C} (g : Y₀' ⟶ Y₀) (q₀ : Y₀ ⟶ 
           (op_toLoc_comp _ _ (restrMap_fst f q₀ q₀' g hq))).inv.toNatTrans.app (D.obj ()) := by
   have hρr := restrMap_comp_restrMap f g q₀ q₀' hq (u i) fj hfj gfj hgfj
   rw [theta_hom_hom, theta_hom_hom]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   simp only [Functor.map_comp, Category.assoc]
@@ -229,11 +229,11 @@ lemma theta_hom_hom_comp {Y₀' Y₀ : C} (g : Y₀' ⟶ Y₀) (q₀ : Y₀ ⟶ 
     (restrMap f (u i) q₀' gfj (by rw [← hgfj, Category.assoc, hfj, hq])).op.toLoc (op_toLoc_comp _
         _ hρr)
     ((ψ i).hom.hom ())
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at h1
   rw [h1]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   have h2 := F.mapComp'₀₁₃_inv_app (pullback.fst f (u i)).op.toLoc (restrMap f (u i) q₀ fj
       hfj).op.toLoc
     (restrMap f q₀ q₀' g hq).op.toLoc (pullback.fst f q₀).op.toLoc
@@ -250,7 +250,7 @@ lemma theta_hom_hom_comp {Y₀' Y₀ : C} (g : Y₀' ⟶ Y₀) (q₀ : Y₀ ⟶ 
     (op_toLoc_comp _ _ (restrMap_snd f (u i) q₀ fj hfj)) (op_toLoc_comp _ _ hρr)
     (op_toLoc_comp _ _ (restrMap_snd f (u i) q₀' gfj _)) (L i)
   rw [h3]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   have h4 := F.mapComp'₀₂₃_hom_app fj.op.toLoc (pullback.snd f q₀).op.toLoc (restrMap f q₀ q₀' g
       hq).op.toLoc
     (pullback.snd f q₀ ≫ fj).op.toLoc (pullback.snd f q₀' ≫ g).op.toLoc (pullback.snd f q₀'
@@ -258,7 +258,7 @@ lemma theta_hom_hom_comp {Y₀' Y₀ : C} (g : Y₀' ⟶ Y₀) (q₀ : Y₀ ⟶ 
     rfl (op_toLoc_comp _ _ (restrMap_snd f q₀ q₀' g hq))
     (op_toLoc_comp _ _ (by rw [restrMap_snd_assoc, hgfj])) (L i)
   rw [h4]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   have h5 := F.mapComp'₀₂₃_inv_comp_mapComp'₀₁₃_hom_app fj.op.toLoc g.op.toLoc (pullback.snd f
       q₀').op.toLoc
     gfj.op.toLoc (pullback.snd f q₀' ≫ g).op.toLoc (pullback.snd f q₀' ≫ gfj).op.toLoc
@@ -312,7 +312,7 @@ lemma theta_inv_hom_comp {Y₀' Y₀ : C} (g : Y₀' ⟶ Y₀) (q₀ : Y₀ ⟶ 
   simp only [B, Iso.trans_inv, Iso.symm_inv, Functor.mapIso_inv, Iso.app_inv, Iso.app_hom,
       objIso_inv,
     Cat.Hom.toNatIso_hom, Cat.Hom.toNatIso_inv, Category.assoc]
-  try rfl
+  rfl
 
 set_option backward.defeqAttrib.useBackward true in
 set_option backward.defeqAttrib.useBackward true in
@@ -336,7 +336,7 @@ theorem pullHom_gluedHom ⦃Y₀' Y₀ : C⦄ (g : Y₀' ⟶ Y₀) (q₀ : Y₀ 
     exact this
   simp only [toDescentData_map_hom, Iso.trans_hom, Iso.symm_hom, comp_hom]
   dsimp only [LocallyDiscreteOpToCat.pullHom]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   simp only [Functor.map_comp, Category.assoc]
@@ -347,7 +347,7 @@ theorem pullHom_gluedHom ⦃Y₀' Y₀ : C⦄ (g : Y₀' ⟶ Y₀) (q₀ : Y₀ 
       f q₀' ≫ g).op.toLoc
     (op_toLoc_comp _ _ (restrMap_snd f q₀ q₀' g hq)) (gluedHom F P hP hf u D L hL ψ q₀ f₁ f₂ hf₁
         hf₂)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at e1 e2 key
   rw [e1, e2, key]
@@ -358,14 +358,14 @@ theorem pullHom_gluedHom ⦃Y₀' Y₀ : C⦄ (g : Y₀' ⟶ Y₀) (q₀ : Y₀ 
     (restrMap f q₀ q₀' g hq).op.toLoc (pullback.fst f q₀').op.toLoc (op_toLoc_comp _ _
         (restrMap_fst f q₀ q₀' g hq)))
     (D.obj ())
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at e3
   simp only [Category.assoc]
   first
     | rw [reassoc_of% e3]
     | erw [reassoc_of% e3]
-  try rfl
+  rfl
 
 noncomputable def gluedData : F.DescentData u where
   obj := L
@@ -422,7 +422,7 @@ lemma theta_inv_hom {Y₀ : C} (q₀ : Y₀ ⟶ S) {i : ι} (fj : Y₀ ⟶ U i) 
   simp only [B, Iso.trans_inv, Iso.symm_inv, Functor.mapIso_inv, Iso.app_inv, Iso.app_hom,
       objIso_inv,
     Cat.Hom.toNatIso_hom, Cat.Hom.toNatIso_inv, Category.assoc]
-  try rfl
+  rfl
 
 lemma map_snd_gluedHom {Y₀ : C} (q₀ : Y₀ ⟶ S) {i₁ i₂ : ι} (g₁ : Y₀ ⟶ U i₁) (g₂ : Y₀ ⟶ U i₂)
     (h₁ : g₁ ≫ u i₁ = q₀) (h₂ : g₂ ≫ u i₂ = q₀) :
@@ -495,7 +495,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
   rw [← A1]
   dsimp only [LocallyDiscreteOpToCat.pullHom]
   rw [map_snd_gluedHom, theta_hom_hom, theta_inv_hom]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   have cG₁ := Cat.Hom.hom_inv_id_toNatTrans_app (F.mapComp' (k₁ ≫ pullback.snd f (u i₁)).op.toLoc
@@ -504,7 +504,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
   have cG₂ := Cat.Hom.hom_inv_id_toNatTrans_app (F.mapComp' (k₂ ≫ pullback.snd f (u i₂)).op.toLoc
     (pullback.snd f (w ≫ f)).op.toLoc (pullback.snd f (w ≫ f) ≫ k₂ ≫ pullback.snd f
         (u i₂)).op.toLoc rfl) (L i₂)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at cG₁ cG₂
   simp only [Category.assoc]
@@ -516,7 +516,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
   have m2 := map_map_eq F (restrMap f (u i₂) (w ≫ f) (k₂ ≫ pullback.snd f (u i₂)) h₂).op.toLoc
       (sectionOf (f := f) w).op.toLoc
     k₂.op.toLoc (op_toLoc_comp _ _ hσ₂) ((ψ i₂).inv.hom ())
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at m1 m2
   rw [m1, m2]
@@ -546,7 +546,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
     (restrMap f (u i₁) (w ≫ f) (k₁ ≫ pullback.snd f (u i₁)) h₁).op.toLoc (sectionOf (f := f)
         w).op.toLoc k₁.op.toLoc
     (op_toLoc_comp _ _ hσ₁)) ((F.map (pullback.snd f (u i₁)).op.toLoc).toFunctor.obj (L i₁))
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at cA cB
   rw [reassoc_of% cA, reassoc_of% cB]
@@ -567,7 +567,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
   have cC := Cat.Hom.inv_hom_id_toNatTrans_app (F.mapComp' (pullback.fst f (w ≫ f)).op.toLoc
     (sectionOf (f := f) w).op.toLoc w.op.toLoc (op_toLoc_comp _ _ (sectionOf_fst (f := f) w)))
         (D.obj ())
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at cC
   rw [reassoc_of% cC]
@@ -595,7 +595,7 @@ lemma gluedHom_eq_of_fac ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : 
     (restrMap f (u i₂) (w ≫ f) (k₂ ≫ pullback.snd f (u i₂)) h₂).op.toLoc (sectionOf (f := f)
         w).op.toLoc k₂.op.toLoc
     (op_toLoc_comp _ _ hσ₂)) ((F.map (pullback.snd f (u i₂)).op.toLoc).toFunctor.obj (L i₂))
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at cD cE
   rw [reassoc_of% cD, reassoc_of% cE]
@@ -668,7 +668,7 @@ theorem compareIso_comm
       (liftTest_fst u w k₂ hk₂ i).symm
   have hw' : pullback.fst w (u i) ≫ w = pullback.snd w (u i) ≫ u i := pullback.condition
   simp only [comp_hom, toDescentData_map_hom, toDescentData_obj]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   simp only [Functor.map_comp]
@@ -681,7 +681,7 @@ theorem compareIso_comm
     (pullback.fst w (u i)) _ _ hm₁ hm₂
   rw [(DescentData.ofObj (f := fun _ : Unit => f) L₀).pullHom_hom (pullback.fst w (u i)) w
     (pullback.snd w (u i) ≫ u i) hw' k₁ k₂ hk₁ hk₂ _ _ hm₁ hm₂] at e0
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at e0
   rw [e0]
@@ -698,10 +698,10 @@ theorem compareIso_comm
     (liftTest u w k₂ hk₂ i ≫ pullback.fst f (u i)).op.toLoc (op_toLoc_comp _ _ rfl) (compareIso F u
         D L₀ Ψloc hX hΨ).hom
   rw [map_compareIso_hom] at e3 e4
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at e1 e2 e3 e4
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   rw [e1, e2]
@@ -715,7 +715,7 @@ theorem compareIso_comm
       (u i)).op.toLoc
     (liftTest u w k₂ hk₂ i ≫ pullback.fst f (u i)).op.toLoc (op_toLoc_comp _ _ hm₂))
     ((F.map f.op.toLoc).toFunctor.obj L₀)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at eA eB
   rw [reassoc_of% eA, reassoc_of% eB]
@@ -746,7 +746,7 @@ theorem compareIso_comm
           (u i))
       (liftTest u w k₂ hk₂ i ≫ pullback.fst f (u i)) rfl hq₂ hq' rfl rfl
   rw [r1, r2] at hc
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at hc
   simp only [Category.assoc] at hc
@@ -759,14 +759,14 @@ theorem compareIso_comm
     (liftTest u w k₁ hk₁ i).op.toLoc (liftTest u w k₁ hk₁ i ≫ pullback.fst f (u i)).op.toLoc
         (op_toLoc_comp _ _ rfl))
     ((F.map f.op.toLoc).toFunctor.obj L₀)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at eP₁ eP₂
   have hc2 := congrArg (fun t => t ≫ (F.mapComp' (pullback.fst f (u i)).op.toLoc
     (liftTest u w k₂ hk₂ i).op.toLoc (liftTest u w k₂ hk₂ i ≫ pullback.fst f (u i)).op.toLoc
     (op_toLoc_comp _ _ rfl)).inv.toNatTrans.app (D.obj ())) hc
   beta_reduce at hc2
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at hc2
   simp only [Category.assoc] at hc2
@@ -823,7 +823,7 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
       ≫ pullback.snd f (u i₂)) h₁ h₂
   dsimp only [gluedData] at F1
   rw [gluedHom_eq_of_fac F P hP hf u D L hL ψ w k₁ k₂ hk₁ hk₂ h₁ h₂] at F1
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at F1
 
@@ -837,7 +837,7 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
   have cψ₂ : (F.map k₂.op.toLoc).toFunctor.map ((ψ i₂).inv.hom ()) ≫
       (F.map k₂.op.toLoc).toFunctor.map ((ψ i₂).hom.hom ()) = 𝟙 _ := by
     rw [← Functor.map_comp, ← comp_hom, Iso.inv_hom_id, id_hom, Functor.map_id]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at cP₂ cψ₂ F1'
   rw [reassoc_of% cP₂, cψ₂, Category.comp_id] at F1'
@@ -847,12 +847,12 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
     toDescentData_obj, ofObj_hom, toDescentDataRestrIso, toDescentDataCompPullFunctorIso,
         NatIso.ofComponents_hom_app,
     isoMk_hom_hom, Iso.symm_hom, Iso.app_inv, Cat.Hom.toNatIso_hom]
-  try rw [F.isoMapOfCommSq_eq _ ((pullback.snd f (u i₁) ≫ u i₁).op.toLoc) rfl,
+  rw [F.isoMapOfCommSq_eq _ ((pullback.snd f (u i₁) ≫ u i₁).op.toLoc) rfl,
     F.isoMapOfCommSq_eq _ ((pullback.snd f (u i₂) ≫ u i₂).op.toLoc) rfl]
   simp only [Iso.trans_inv, Iso.trans_hom, Iso.symm_inv, Iso.symm_hom, Cat.Hom₂.comp_app,
       Cat.Hom.toNatIso_hom,
     Cat.Hom.toNatIso_inv]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj]
   simp only [Functor.map_comp, Category.assoc]
@@ -863,12 +863,12 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
   have me₂ := map_map_eq F (pullback.snd f (u i₂)).op.toLoc k₂.op.toLoc (k₂ ≫ pullback.snd f
       (u i₂)).op.toLoc rfl
     (e.hom.hom i₂)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at me₁ me₂
   rw [me₁, me₂]
   simp only [Category.assoc]
-  try dsimp only [gluedData_obj] at F1' ⊢
+  dsimp only [gluedData_obj] at F1' ⊢
   first
     | rw [reassoc_of% F1']
     | rw [F1']
@@ -908,7 +908,7 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
   have cW₂ := Cat.Hom.hom_inv_id_toNatTrans_app (F.mapComp' (pullback.fst f (u i₂)).op.toLoc
       k₂.op.toLoc
       w.op.toLoc (op_toLoc_comp _ _ hk₂)) ((F.map f.op.toLoc).toFunctor.obj L₀)
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at Na₁ Nb₁ Na₂ Nb₂ cU₁ cP₁ cC₂ cW₂
   have hZ : (F.mapComp' f.op.toLoc w.op.toLoc (w ≫ f).op.toLoc (op_toLoc_comp _ _
@@ -921,20 +921,20 @@ theorem psiLoc_comm ⦃W : C⦄ (w : W ⟶ X) ⦃i₁ i₂ : ι⦄ (k₁ : W ⟶
             pullback.condition)).inv.toNatTrans.app L₀) ≫
       (F.mapComp' (pullback.snd f (u i₂) ≫ u i₂).op.toLoc k₂.op.toLoc (w ≫ f).op.toLoc
         (op_toLoc_comp _ _ (by rw [← Category.assoc]; exact h₂))).inv.toNatTrans.app L₀ := by
-    try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+    dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
         Cat.Hom.comp_toFunctor,
       Functor.comp_obj]
     rw [Nb₂, reassoc_of% cW₂]
-  try dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
+  dsimp only [restr, toDescentData_obj, ofObj_obj, pullFunctor_obj, pullFunctorObj_obj,
       Cat.Hom.comp_toFunctor,
     Functor.comp_obj] at hZ
   rw [Na₁]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   rw [reassoc_of% cP₁, reassoc_of% cU₁, reassoc_of% Nb₁]
   rw [Na₂]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   rw [hZ]
-  try simp only [Category.assoc]
+  simp only [Category.assoc]
   rw [reassoc_of% cC₂]
 
 end psi
