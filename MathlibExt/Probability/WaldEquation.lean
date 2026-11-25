@@ -303,12 +303,12 @@ theorem wald_integrable_stopped_sum
   have hsum := summability_condition hX_int hX_iid hT hXf hT_int
   have hint : Integrable (fun ω => ∑' n, (if n < T ω then X n ω else 0)) μ := by
     refine ⟨AEStronglyMeasurable.tsum hmeas, ?_⟩
-    rw [hasFiniteIntegral_iff_enorm]
+    rw [hasFiniteIntegral_iff_eNorm]
     apply lt_of_le_of_lt ?_ (lt_top_iff_ne_top.mpr hsum)
     calc ∫⁻ ω, ‖∑' n, (if n < T ω then X n ω else 0)‖ₑ ∂μ
         ≤ ∫⁻ ω, ∑' n, ‖(if n < T ω then X n ω else 0)‖ₑ ∂μ :=
           lintegral_mono (fun _ => enorm_tsum_le_tsum_enorm)
-      _ = _ := lintegral_tsum (fun n => (hmeas n).enorm)
+      _ = _ := lintegral_tsum (fun n => (hmeas n).eNorm)
   simpa only [sum_range_eq_tsum_ite] using hint
 
 /-- **Wald's equation.** Let `Xᵢ` be identically distributed integrable real

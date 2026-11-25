@@ -85,7 +85,7 @@ variable [MeasurableSpace R] [MeasurableSingletonClass R]
 total probability of its elements. -/
 theorem expMechanism_apply (ε Δ : ℝ) (u : X → R → ℝ) (x : X) (S : Set R) :
     expMechanism ε Δ u x S = ENNReal.ofReal (∑ r, S.indicator (expMechProb ε Δ u x) r) := by
-  rw [expMechanism, Measure.coe_finsetSum, Finset.sum_apply,
+  rw [expMechanism, FunLike.coe_sum, Finset.sum_apply,
     ENNReal.ofReal_sum_of_nonneg fun r _ ↦ Set.indicator_nonneg
       (fun r _ ↦ expMechProb_nonneg ε Δ u x r) r]
   refine Finset.sum_congr rfl fun r _ ↦ ?_

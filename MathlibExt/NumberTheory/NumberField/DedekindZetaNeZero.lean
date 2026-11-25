@@ -189,13 +189,13 @@ private theorem primeSet_empty : primeSet K ∅ = {⊤} := by
     · intro h
       rw [← Ideal.one_eq_top] at h
       exact one_ne_zero h
-    · exact absurd (Ideal.isUnit_iff.mpr (top_le_iff.mp (Ideal.dvd_iff_le.mp hdvd))) Q.2.not_unit
+    · exact absurd (Ideal.isUnit_iff.mpr (top_le_iff.mp (Ideal.dvd_iff_le.mp hdvd))) Q.2.not_isUnit
 
 private theorem two_le_absNorm (Q : Primes K) : 2 ≤ Ideal.absNorm Q.1 := by
   have h0 : Ideal.absNorm Q.1 ≠ 0 := fun h =>
     Q.2.ne_zero (by rw [Ideal.zero_eq_bot]; exact Ideal.absNorm_eq_zero_iff.mp h)
   have h1 : Ideal.absNorm Q.1 ≠ 1 := fun h =>
-    Q.2.not_unit (Ideal.isUnit_iff.mpr (Ideal.absNorm_eq_one_iff.mp h))
+    Q.2.not_isUnit (Ideal.isUnit_iff.mpr (Ideal.absNorm_eq_one_iff.mp h))
   omega
 
 private theorem norm_absNorm_cpow_neg_lt_one {s : ℂ} (hs : 0 < s.re) (Q : Primes K) :
@@ -254,7 +254,7 @@ private theorem tsum_primeSet_insert {s : ℂ} (hs : 1 < s.re) (P : Primes K)
       · obtain ⟨h1, h2⟩ := hkey k' k c'.1 c.1 c'.2 c.2 hkk hval.symm
         exact Prod.ext h1.symm (Subtype.ext h2.symm)
     · rintro ⟨J, hJ0, hJmem⟩
-      have hfin : FiniteMultiplicity P.1 J := FiniteMultiplicity.of_not_isUnit P.2.not_unit hJ0
+      have hfin : FiniteMultiplicity P.1 J := FiniteMultiplicity.of_not_isUnit P.2.not_isUnit hJ0
       obtain ⟨c, hc, hPc⟩ := hfin.exists_eq_pow_mul_and_not_dvd
       have hc0 : c ≠ 0 := by rintro rfl; rw [mul_zero] at hc; exact hJ0 hc
       have hcmem : c ∈ primeSet K T := by

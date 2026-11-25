@@ -72,7 +72,7 @@ theorem choose_le_top_pow_primeCounting_of_no_large {N r : ℕ} (hN : 0 < N) (hr
           by_contra hp_not_prime
           simp [Nat.factorization_eq_zero_of_not_prime _ hp_not_prime] at hp_ne_one
     _ ≤ ∏ _p ∈ (Finset.range (r + 1)).filter Nat.Prime, N := by
-          exact Finset.prod_le_prod' fun p hp_mem => Nat.pow_factorization_choose_le hN
+          exact Finset.prod_le_prod fun p hp_mem => Nat.pow_factorization_choose_le hN
     _ = N ^ Nat.primeCounting r := by
           rw [Finset.prod_const]
           congr
@@ -115,7 +115,7 @@ private lemma layer_prime_product_le_primorial_nthRoot {N r j : ℕ} (hN : 0 < N
         (fun p => p.Prime ∧ j ≤ (Nat.choose N r).factorization p), p) ≤
       primorial (Nat.nthRoot j N) := by
   dsimp [primorial]
-  apply Finset.prod_le_prod_of_subset_of_one_le'
+  apply Finset.prod_le_prod_of_subset_of_one_le
   · intro p hp
     rw [Finset.mem_filter] at hp
     rw [Finset.mem_filter]
@@ -149,7 +149,7 @@ private lemma first_layer_prime_product_le_primorial {N r : ℕ} :
     (∏ p ∈ (Finset.range (r + 1)).filter
         (fun p => p.Prime ∧ 0 < (Nat.choose N r).factorization p), p) ≤ primorial r := by
   dsimp [primorial]
-  apply Finset.prod_le_prod_of_subset_of_one_le'
+  apply Finset.prod_le_prod_of_subset_of_one_le
   · intro p hp
     rw [Finset.mem_filter] at hp
     rw [Finset.mem_filter]
@@ -166,7 +166,7 @@ private lemma first_layer_prime_product_le_primorial_div_three {N r : ℕ}
         (fun p => p.Prime ∧ 0 < (Nat.choose N r).factorization p), p) ≤
       primorial (N / 3) := by
   dsimp [primorial]
-  apply Finset.prod_le_prod_of_subset_of_one_le'
+  apply Finset.prod_le_prod_of_subset_of_one_le
   · intro p hp
     rw [Finset.mem_filter] at hp
     rw [Finset.mem_filter]
@@ -255,7 +255,7 @@ theorem choose_le_prod_primorial_nthRoot_of_no_large {N r : ℕ} (hN : 0 < N)
       ∏ j ∈ Finset.range (Nat.log 2 N), primorial (Nat.nthRoot (j + 1) N) := by
   classical
   rw [choose_eq_prod_prime_factorization_layers hrN hsmall]
-  exact Finset.prod_le_prod' fun j hj => by
+  exact Finset.prod_le_prod fun j hj => by
     have hlayer := layer_prime_product_lt_factorization_le_primorial_nthRoot
       (N := N) (r := r) (j := j) hN
     simpa [Finset.filter_filter, and_assoc, and_left_comm, and_comm] using hlayer
@@ -274,7 +274,7 @@ theorem choose_le_prod_erdos_layers_of_no_large {N r : ℕ} (hN : 0 < N)
         if j = 0 then primorial r else primorial (Nat.nthRoot (j + 1) N) := by
   classical
   rw [choose_eq_prod_prime_factorization_layers hrN hsmall]
-  exact Finset.prod_le_prod' fun j hj => by
+  exact Finset.prod_le_prod fun j hj => by
     by_cases hj0 : j = 0
     · subst hj0
       have hlayer := first_layer_prime_product_le_primorial (N := N) (r := r)
@@ -296,7 +296,7 @@ theorem choose_le_prod_erdos_div_three_layers_of_no_large {N r : ℕ} (hN : 0 < 
         if j = 0 then primorial (N / 3) else primorial (Nat.nthRoot (j + 1) N) := by
   classical
   rw [choose_eq_prod_prime_factorization_layers hrN hsmall]
-  exact Finset.prod_le_prod' fun j hj => by
+  exact Finset.prod_le_prod fun j hj => by
     by_cases hj0 : j = 0
     · subst hj0
       have hlayer :=

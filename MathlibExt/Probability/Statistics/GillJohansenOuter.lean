@@ -432,7 +432,7 @@ theorem TendstoInDistributionOuter.of_forall_isClosed_limsup_le [IsProbabilityMe
   set g : E →ᵇ ℝ≥0 := BoundedContinuousFunction.const E M - f with hg_def
   have hfg : ∀ x, (f x : ℝ≥0∞) + g x = M := by
     intro x
-    simp only [g, BoundedContinuousFunction.coe_sub, Pi.sub_apply,
+    simp only [g, FunLike.coe_sub, Pi.sub_apply,
       BoundedContinuousFunction.const_apply]
     rw [← ENNReal.coe_add, add_tsub_cancel_of_le (hfM x)]
   have hfin : ∫⁻ x, f x ∂(L : Measure E) ≠ ∞ :=

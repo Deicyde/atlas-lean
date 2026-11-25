@@ -218,7 +218,7 @@ theorem exists_continuous_vanishing_endpoints_eLpNorm_sub_lt
     have hmeas : ∀ n : ℕ, Measurable
         (fun x => ‖g₀ x - cutoffApprox a b g₀ n x‖ₑ ^ p.toReal) :=
       fun n => (ENNReal.continuous_rpow_const.comp
-        (continuous_enorm.comp (hg₀cont.sub (cutoffApprox_continuous a b g₀ hg₀cont n)))).measurable
+        (continuous_eNorm.comp (hg₀cont.sub (cutoffApprox_continuous a b g₀ hg₀cont n)))).measurable
     have hbound : ∀ n : ℕ, (fun x => ‖g₀ x - cutoffApprox a b g₀ n x‖ₑ ^ p.toReal)
         ≤ᵐ[volume.restrict (Set.Icc a b)] (fun x => ‖g₀ x‖ₑ ^ p.toReal) := by
       intro n
@@ -229,7 +229,7 @@ theorem exists_continuous_vanishing_endpoints_eLpNorm_sub_lt
     have hbound_ne : (∫⁻ x, ‖g₀ x‖ₑ ^ p.toReal
         ∂(volume.restrict (Set.Icc a b))) ≠ ⊤ := by
       have hlt := hg₀mem.eLpNorm_lt_top
-      rw [eLpNorm_eq_lintegral_rpow_enorm_toReal hp0 hp_top
+      rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal hp0 hp_top
         hg₀mem.aestronglyMeasurable] at hlt
       by_contra htop
       rw [htop, ENNReal.top_rpow_of_pos (one_div_pos.mpr hp0')] at hlt
@@ -274,7 +274,7 @@ theorem exists_continuous_vanishing_endpoints_eLpNorm_sub_lt
     Set.mem_Iio.mp hN
   have hdiff_lt : eLpNorm (g₀ - cutoffApprox a b g₀ N) p
       (volume.restrict (Set.Icc a b)) < ε / 2 := by
-    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal hp0 hp_top
+    rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal hp0 hp_top
       (hg₀cont.sub (cutoffApprox_continuous a b g₀ hg₀cont N)).aestronglyMeasurable]
     have hpow : ((∫⁻ x, ‖(g₀ - cutoffApprox a b g₀ N) x‖ₑ ^ p.toReal
         ∂(volume.restrict (Set.Icc a b))) ^ (1 / p.toReal)) ^ p.toReal

@@ -1144,7 +1144,7 @@ theorem farSide_subset_farSide {p q x y : V} (hx : x ∈ G.farSide p q)
   obtain ⟨W⟩ := hWpv
   have hW : ∀ e ∈ W.edges, e ∈ (G.deleteEdges {s(x, y)}).edgeSet := by
     intro e he
-    rw [edgeSet_deleteEdges, Set.mem_diff, Set.mem_singleton_iff]
+    rw [edgeSet_deleteEdges, Set.mem_sdiff, Set.mem_singleton_iff]
     constructor
     · have hmem := W.edges_subset_edgeSet he
       rw [edgeSet_deleteEdges] at hmem

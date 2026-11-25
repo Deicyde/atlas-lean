@@ -193,7 +193,7 @@ noncomputable def kernelLinearMap (k : KernelType) : KernelSpace →ₗ[ℝ] Ker
     rw [← intervalIntegral.integral_smul]
     congr 1
     funext t
-    simp only [kernelIntegrand, kernelExtend, BoundedContinuousFunction.smul_apply,
+    simp only [kernelIntegrand, kernelExtend, smul_apply,
       smul_eq_mul]
     ring
 
@@ -372,7 +372,7 @@ theorem finiteDimensional_range_kernelOperator_of_separable {ι : Type*} (k : Ke
           (fun i => (∫ t in (0 : ℝ)..1,
             ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) • φ i) s
         simpa only [BoundedContinuousFunction.evalCLM_apply,
-          BoundedContinuousFunction.smul_apply, smul_eq_mul] using h
+          smul_apply, smul_eq_mul] using h
       rw [kernelOperator_apply, hsum]
       have hcont : ∀ i : ι, Continuous (fun t =>
           φ i x *

@@ -34,7 +34,8 @@ theorem topologicalClosure_eq_fixingSubgroup_fixedField [IsGalois k K]
     H.topologicalClosure = (IntermediateField.fixedField H).fixingSubgroup := by
   apply le_antisymm
   · exact Subgroup.topologicalClosure_minimal H
-      ((IntermediateField.le_iff_le _ _).mp le_rfl) (fixingSubgroup_isClosed _)
+      ((IntermediateField.le_fixedField_iff_le_fixingSubgroup _ _).mp le_rfl)
+      (fixingSubgroup_isClosed _)
   · have hmono : H ≤ H.topologicalClosure := Subgroup.le_topologicalClosure H
     have hfix : IntermediateField.fixedField H.topologicalClosure ≤
         IntermediateField.fixedField H :=

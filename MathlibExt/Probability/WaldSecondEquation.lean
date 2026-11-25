@@ -630,7 +630,7 @@ public theorem wald_second_equation
       ne_top_of_le_ne_top (ENNReal.ofReal_ne_top) hFatou
     have hint_G : Integrable Glim μ := by
       refine ⟨hmeas_G.aestronglyMeasurable, ?_⟩
-      rw [hasFiniteIntegral_iff_enorm]
+      rw [hasFiniteIntegral_iff_eNorm]
       have hEq : (fun ω => ‖Glim ω‖ₑ) = fun ω => ENNReal.ofReal (Glim ω) := by
         funext ω
         rw [Real.enorm_eq_ofReal_abs, abs_of_nonneg (sq_nonneg _)]

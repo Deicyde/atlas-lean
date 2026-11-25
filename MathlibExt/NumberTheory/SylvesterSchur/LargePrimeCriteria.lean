@@ -86,7 +86,7 @@ private lemma choose_small_factorization_product_le_top_pow_sqrt {N r : ℕ} (hN
     (∏ p ∈ (Finset.range (r + 1)).filter (fun p => p ≤ Nat.sqrt N),
         p ^ (Nat.choose N r).factorization p) ≤
         ∏ _p ∈ (Finset.range (r + 1)).filter (fun p => p ≤ Nat.sqrt N), N := by
-          apply Finset.prod_le_prod'
+          apply Finset.prod_le_prod
           intro p hp
           by_cases hp_prime : p.Prime
           · exact Nat.pow_factorization_choose_le hN
@@ -125,7 +125,7 @@ private lemma choose_large_factorization_product_le_primorial (N r : ℕ) :
       rw [Nat.factorization_eq_zero_of_not_prime _ hp_ne_one, pow_zero])).symm
   rw [show (∏ p ∈ (Finset.range (r + 1)).filter (fun p => ¬ p ≤ Nat.sqrt N),
       p ^ (Nat.choose N r).factorization p) = ∏ p ∈ large, f p by rfl, hfilter]
-  refine (Finset.prod_le_prod'
+  refine (Finset.prod_le_prod
     (s := large.filter Nat.Prime) (f := f) (g := fun p => p) fun p hp => ?_).trans ?_
   · obtain ⟨hlarge, hp_prime⟩ := Finset.mem_filter.mp hp
     exact choose_factorization_pow_le_self_of_sqrt_lt hp_prime (by
@@ -133,7 +133,7 @@ private lemma choose_large_factorization_product_le_primorial (N r : ℕ) :
       rw [Finset.mem_filter] at hlarge
       omega)
   dsimp [primorial]
-  apply Finset.prod_le_prod_of_subset_of_one_le'
+  apply Finset.prod_le_prod_of_subset_of_one_le
   · intro p hp
     rw [Finset.mem_filter] at hp
     rw [Finset.mem_filter]

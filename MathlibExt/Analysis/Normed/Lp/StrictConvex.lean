@@ -217,7 +217,7 @@ theorem lintegral_enorm_rpow_ne_top {f : Lp 𝕜 p μ} (hp : 1 < p.toReal) :
   have hfq : (0:ℝ) < p.toReal := by linarith
   intro htop
   have h := (Lp.memLp f).eLpNorm_lt_top
-  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal hp0 hptop (Lp.aestronglyMeasurable f), htop,
+  rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal hp0 hptop (Lp.aestronglyMeasurable f), htop,
     ENNReal.top_rpow_of_pos (by positivity : (0:ℝ) < 1 / p.toReal)] at h
   exact (lt_irrefl _ h).elim
 
@@ -230,7 +230,7 @@ theorem lintegral_enorm_rpow_eq_one {f : Lp 𝕜 p μ} (hf : ‖f‖ = 1) (hp : 
     have h1 : ‖f‖ₑ = 1 := by rw [← ofReal_norm, hf]; norm_num
     rwa [Lp.enorm_def] at h1
   have hI : (∫⁻ x, ‖f x‖ₑ ^ p.toReal ∂μ) ^ (1 / p.toReal) = 1 := by
-    rw [← eLpNorm_eq_lintegral_rpow_enorm_toReal hp0 hptop (Lp.aestronglyMeasurable f)]
+    rw [← eLpNorm_eq_lintegral_rpow_eNorm_toReal hp0 hptop (Lp.aestronglyMeasurable f)]
     exact henorm
   have h := congrArg (· ^ p.toReal) hI
   rw [← ENNReal.rpow_mul, div_mul_cancel₀ (1:ℝ) hfq.ne', ENNReal.rpow_one,
@@ -268,10 +268,10 @@ theorem norm_convex_comb_lt_of_norm_eq_one {f g : Lp 𝕜 p μ} (hfg : f ≠ g)
       exact ne_of_lt (enorm_convex_comb_rpow_lt hxne ht0 ht1 hp)
   have hf' : AEMeasurable (fun x => ‖f x‖ₑ ^ p.toReal) μ :=
     (ENNReal.continuous_rpow_const.comp_aestronglyMeasurable
-      (Lp.aestronglyMeasurable f).enorm.aestronglyMeasurable).aemeasurable
+      (Lp.aestronglyMeasurable f).eNorm.aestronglyMeasurable).aemeasurable
   have hg' : AEMeasurable (fun x => ‖g x‖ₑ ^ p.toReal) μ :=
     (ENNReal.continuous_rpow_const.comp_aestronglyMeasurable
-      (Lp.aestronglyMeasurable g).enorm.aestronglyMeasurable).aemeasurable
+      (Lp.aestronglyMeasurable g).eNorm.aestronglyMeasurable).aemeasurable
   have hG_aemeas : AEMeasurable
       (fun x => ENNReal.ofReal (1 - t) * ‖f x‖ₑ ^ p.toReal +
         ENNReal.ofReal t * ‖g x‖ₑ ^ p.toReal) μ := by
@@ -296,7 +296,7 @@ theorem norm_convex_comb_lt_of_norm_eq_one {f g : Lp 𝕜 p μ} (hfg : f ≠ g)
     have hr := ENNReal.rpow_lt_rpow hF_lt_one (by positivity : (0:ℝ) < 1 / p.toReal)
     rwa [ENNReal.one_rpow] at hr
   rw [Lp.norm_def,
-    eLpNorm_eq_lintegral_rpow_enorm_toReal hp0 hptop (Lp.aestronglyMeasurable _)]
+    eLpNorm_eq_lintegral_rpow_eNorm_toReal hp0 hptop (Lp.aestronglyMeasurable _)]
   have hne_top : (∫⁻ x, ‖((1 - t) • f + t • g) x‖ₑ ^ p.toReal ∂μ) ^ (1 / p.toReal) ≠ ⊤ :=
     ne_top_of_lt h1
   simpa using (ENNReal.toReal_lt_toReal hne_top ENNReal.one_ne_top).mpr h1

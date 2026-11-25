@@ -179,7 +179,7 @@ private theorem one_le_order_toNat (u : W⟦X⟧) (hu0 : constantCoeff u = 0) (h
     rw [coeff_map, coeff_zero_eq_constantCoeff_apply, hu0, map_zero]
   have hfin : (u.map (IsLocalRing.residue W)).order ≠ ⊤ := by rwa [ne_eq, order_eq_top]
   obtain ⟨n, hn⟩ := ENat.ne_top_iff_exists.mp hfin
-  rw [← hn, ENat.toNat_coe]
+  rw [← hn, ENat.toNat_natCast]
   rw [← hn] at h1
   exact_mod_cast h1
 
@@ -373,7 +373,7 @@ private theorem exists_sum_subst_mul_X_pow_range
   set m : ℕ := (u.map (IsLocalRing.residue W)).order.toNat with hm
   have hfin : (u.map (IsLocalRing.residue W)).order ≠ ⊤ := by rwa [ne_eq, order_eq_top]
   obtain ⟨n, hn⟩ := ENat.ne_top_iff_exists.mp hfin
-  have hmn : m = n := by rw [hm, ← hn, ENat.toNat_coe]
+  have hmn : m = n := by rw [hm, ← hn, ENat.toNat_natCast]
   have hord := order_eq_nat.mp hn.symm
   have hum : ∀ i < m, coeff i u ∈ IsLocalRing.maximalIdeal W := fun i hi => by
     rw [← IsLocalRing.residue_eq_zero_iff, ← coeff_map]
@@ -493,8 +493,8 @@ theorem PowerSeries.nonempty_algEquiv_of_forall_mem_iff_forall_apply_eq
     intro τ
     have e := PowerSeriesFixedAux.algHom_ext_of_map_X_eq
       (((τ : W⟦X⟧ ≃ₐ[W] W⟦X⟧) : W⟦X⟧ →ₐ[W] W⟦X⟧).comp Φ) Φ
-      (by rw [AlgHom.comp_apply, hΦX, AlgEquiv.coe_algHom]; exact hτu τ)
-      (by rw [AlgHom.comp_apply, hΦX, AlgEquiv.coe_algHom, hτu τ]; exact hum)
+      (by rw [AlgHom.comp_apply, hΦX, AlgEquiv.coe_toAlgHom]; exact hτu τ)
+      (by rw [AlgHom.comp_apply, hΦX, AlgEquiv.coe_toAlgHom, hτu τ]; exact hum)
     exact AlgHom.congr_fun e c
 
   have hinjX : Function.Injective fun τ : Gb => (τ : W⟦X⟧ ≃ₐ[W] W⟦X⟧) X := by

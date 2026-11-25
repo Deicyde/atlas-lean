@@ -618,7 +618,7 @@ private theorem jn_banach_rademacher_orthogonal
     rw [← hone]
     apply congrArg L
     ext n
-    simp only [BoundedContinuousFunction.mul_apply, jn_rademacher_apply,
+    simp only [mul_apply, jn_rademacher_apply,
       BoundedContinuousFunction.const_apply]
     have : (-1 : ℝ) ^ (n / 2 ^ i) = 1 ∨ (-1 : ℝ) ^ (n / 2 ^ i) = -1 := by
       exact neg_one_pow_eq_or ℝ _
@@ -630,7 +630,7 @@ private theorem jn_banach_rademacher_orthogonal
       have heq : jnShift (2 ^ b) (jnRademacher a * jnRademacher b) =
           -(jnRademacher a * jnRademacher b) := by
         ext n
-        simp only [jn_shift_apply, BoundedContinuousFunction.mul_apply,
+        simp only [jn_shift_apply, mul_apply,
           BoundedContinuousFunction.neg_apply]
         rw [jn_rademacher_shift_of_lt hab, jn_rademacher_shift_self]
         ring
@@ -690,7 +690,7 @@ private theorem jn_blockMean_sub_sum (p : ℕ) (hp : 0 < p)
     (f : JnBoundedSeq) (n : ℕ) :
     ∑ i ∈ Finset.range p,
       (f - jnBlockMean p hp f) (p * n + i) = 0 := by
-  simp only [BoundedContinuousFunction.sub_apply, Finset.sum_sub_distrib]
+  simp only [sub_apply, Finset.sum_sub_distrib]
   have hmeans : ∑ i ∈ Finset.range p, jnBlockMean p hp f (p * n + i) =
       ∑ _i ∈ Finset.range p,
         ((p : ℝ)⁻¹ * ∑ j ∈ Finset.range p, f (p * n + j)) := by
@@ -762,10 +762,10 @@ private theorem jn_blockPrimitive_coboundary (p : ℕ) (hp : 0 < p)
     jnShift 1 (jnBlockPrimitive p hp f) - jnBlockPrimitive p hp f =
       f - jnBlockMean p hp f := by
   ext n
-  simp only [BoundedContinuousFunction.sub_apply, jn_shift_apply,
+  simp only [sub_apply, jn_shift_apply,
     jn_blockPrimitive_apply]
   rw [show n + 1 = n.succ from rfl, jnPartialSum]
-  rw [BoundedContinuousFunction.sub_apply]
+  rw [sub_apply]
   ring
 
 private theorem jn_banach_blockMean
@@ -793,7 +793,7 @@ private theorem jn_banach_of_blockMeans
   let c : JnBoundedSeq := BoundedContinuousFunction.const ℕ δ
   have hnonneg : ∀ n, 0 ≤ (jnBlockMean p hp f - c) n := by
     intro n
-    simp only [BoundedContinuousFunction.sub_apply, sub_nonneg]
+    simp only [sub_apply, sub_nonneg]
     exact hmean n
   have hL := hpos (jnBlockMean p hp f - c) hnonneg
   rw [map_sub, jn_banach_const L hone] at hL
@@ -861,15 +861,15 @@ private theorem jn_banach_rademacher_bessel
   have hsq : 0 ≤ L ((f - b) * (f - b)) := by
     apply hpos
     intro n
-    simp only [BoundedContinuousFunction.mul_apply, BoundedContinuousFunction.sub_apply]
+    simp only [mul_apply, sub_apply]
     exact mul_self_nonneg _
   have hsum_le : ∑ i ∈ Finset.range N, (c i) ^ 2 ≤ L (f * f) := by
     have hexpand : L ((f - b) * (f - b)) =
         L (f * f) - 2 * L (f * b) + L (b * b) := by
       have heq : (f - b) * (f - b) = f * f - (2 : ℝ) • (f * b) + b * b := by
         ext n
-        simp only [BoundedContinuousFunction.mul_apply, BoundedContinuousFunction.sub_apply,
-          BoundedContinuousFunction.add_apply, BoundedContinuousFunction.smul_apply, smul_eq_mul]
+        simp only [mul_apply, sub_apply,
+          add_apply, smul_apply, smul_eq_mul]
         ring
       rw [heq, map_add, map_sub, map_smul]
       simp only [smul_eq_mul]
@@ -880,8 +880,8 @@ private theorem jn_banach_rademacher_bessel
     have hq : 0 ≤ L q := by
       apply hpos
       intro n
-      simp only [q, BoundedContinuousFunction.sub_apply,
-        BoundedContinuousFunction.const_apply, BoundedContinuousFunction.mul_apply,
+      simp only [q, sub_apply,
+        BoundedContinuousFunction.const_apply, mul_apply,
         sub_nonneg]
       have habs : |f n| ≤ ‖f‖ := by simpa only [Real.norm_eq_abs] using f.norm_coe_le_norm n
       simpa only [pow_two, abs_mul_abs_self] using
@@ -924,11 +924,11 @@ private noncomputable def jnBoundedEval
       map_add' := fun x y => by
         ext n
         simp only [F, BoundedContinuousFunction.coe_ofNormedAddCommGroupDiscrete,
-          map_add, BoundedContinuousFunction.add_apply]
+          map_add, add_apply]
       map_smul' := fun c x => by
         ext n
         simp only [F, BoundedContinuousFunction.coe_ofNormedAddCommGroupDiscrete,
-          map_smul, BoundedContinuousFunction.smul_apply, RingHom.id_apply] }
+          map_smul, smul_apply, RingHom.id_apply] }
   exact f.mkContinuous R fun x => by
     apply BoundedContinuousFunction.norm_ofNormedAddCommGroup_le
     · exact mul_nonneg (le_trans (norm_nonneg (z 0)) (hz 0)) (norm_nonneg x)
@@ -963,7 +963,7 @@ private theorem jn_rademacher_block_mean_eval
       jnBlockApply (jnRademacherBlocking k) z n x := by
   rw [jn_blockApply_rademacherBlocking]
   simp only [sum_apply, smul_apply, smul_eq_mul,
-    BoundedContinuousFunction.mul_apply, jn_boundedEval_apply]
+    mul_apply, jn_boundedEval_apply]
   simp_rw [jn_rademacher_period]
   rw [Finset.mul_sum]
   apply Finset.sum_congr rfl

@@ -289,7 +289,7 @@ theorem wasserstein_mono [OpensMeasurableSpace X] [SecondCountableTopology X]
   refine iInf₂_mono fun π _ => ?_
   have h := eLpNorm'_le_eLpNorm'_of_exponent_le (f := fun z : X × X => edist z.1 z.2) hp hpq
     (π : Measure (X × X)) measurable_edist.aestronglyMeasurable
-  simpa only [eLpNorm', enorm_eq_self] using h
+  simpa only [eLpNorm', eNorm_eq_self] using h
 
 /-- **The Wasserstein distance is finite on measures with finite `p`-th moments.** For `p ≥ 1`
 and `x₀ ∈ X`, if `∫ d(x₀, x)^p dμ` and `∫ d(x₀, y)^p dν` are finite then `W_p(μ, ν) < ∞`: the

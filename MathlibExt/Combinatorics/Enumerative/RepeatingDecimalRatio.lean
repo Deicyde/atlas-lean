@@ -81,7 +81,8 @@ private theorem residue_root_count (m : ℕ) (hm : m ≠ 0) :
   change Nat.card {z : ZMod m // z * (z + 1) = 0} = _
   rw [Nat.card_congr equiv, Nat.card_pi]
   simp only [count, Finset.prod_const, Finset.card_univ, Fintype.card_coe]
-  rw [ArithmeticFunction.cardDistinctFactors_apply, ← Nat.toFinset_factors, List.card_toFinset]
+  rw [ArithmeticFunction.cardDistinctFactors_eq_length_dedup_primeFactorsList,
+    ← Nat.toFinset_factors, List.card_toFinset]
 
 private theorem solution_set_as_image (b m : ℕ) (hm : 0 < m) (hb : b = m + 1) :
     {x : ℕ | b ≤ x ∧ x < b * 10 ∧ ∃ k : ℕ, x ≤ k ∧ k < 2 * x ∧

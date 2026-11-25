@@ -239,7 +239,7 @@ theorem exists_integral_tajimaD_ne :
     fun b => by cases b <;> simp, hmean, ?_, hpos⟩
   · constructor
     rw [hμ]
-    simp only [Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply, measure_univ]
+    simp only [FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply, measure_univ]
     rw [← ENNReal.coe_one, ENNReal.smul_def, ENNReal.smul_def]
     simp only [smul_eq_mul]
     norm_cast

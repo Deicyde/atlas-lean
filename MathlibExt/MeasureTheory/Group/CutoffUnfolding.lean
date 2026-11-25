@@ -64,10 +64,10 @@ private theorem integrable_normalized_kernel {g : X → ℂ} {w : X → ℝ}
   rw [hasFiniteIntegral_iff_enorm, lintegral_prod _ hm.enorm.aemeasurable]
   have hn (x : X) (a : A) :
       ‖g x * (w (a • x) : ℂ)‖ₑ = ‖g x‖ₑ * ENNReal.ofReal (w (a • x)) := by
-    rw [enorm_mul]
+    rw [eNorm_mul]
     congr 1
     rw [← ofReal_norm, Complex.norm_real, Real.norm_of_nonneg (hw0 _)]
-  simp_rw [hn, lintegral_const_mul' _ _ enorm_ne_top]
+  simp_rw [hn, lintegral_const_mul' _ _ eNorm_ne_top]
   have he : ∀ x, ‖g x‖ₑ * (∫⁻ a, ENNReal.ofReal (w (a • x)) ∂τ) = ‖g x‖ₑ := by
     intro x
     by_cases hx : g x = 0
@@ -77,7 +77,7 @@ private theorem integrable_normalized_kernel {g : X → ℂ} {w : X → ℝ}
         (Eventually.of_forall fun a => hw0 _), hw1 x hx]
       simp
   simp_rw [he]
-  exact hasFiniteIntegral_iff_enorm.mp hgi.2
+  exact hasFiniteIntegral_iff_eNorm.mp hgi.2
 
 include hact hμ in
 /-- Unfolding an integrable complex function against a normalized nonnegative

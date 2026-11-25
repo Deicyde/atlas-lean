@@ -94,11 +94,11 @@ def vanishingSet {n : ℕ} (f : MvPolynomial (Fin (n + 1)) K) :
 with chosen representative $v = (v_0, \dots, v_n) \in K^{n+1} \setminus \{0\}$, the chart index of
 $p$ is a fixed choice of an index $i \in \{0, \dots, n\}$ with $v_i \neq 0$. -/
 noncomputable def chartIndex {n : ℕ} (p : ProjSpace K n) : Fin (n + 1) :=
-  Classical.choose (Function.ne_iff.mp p.rep_nonzero)
+  Classical.choose (Function.ne_iff.mp p.rep_ne_zero)
 
 lemma chartIndex_rep_ne_zero {n : ℕ} (p : ProjSpace K n) :
     Projectivization.rep p (chartIndex p) ≠ 0 :=
-  Classical.choose_spec (Function.ne_iff.mp p.rep_nonzero)
+  Classical.choose_spec (Function.ne_iff.mp p.rep_ne_zero)
 
 /-- **Affine coordinates of a projective point.** For a field $K$ and a point
 $p \in \mathbb{P}^n(K)$, let $v = (v_0, \dots, v_n) \in K^{n+1} \setminus \{0\}$ be the chosen

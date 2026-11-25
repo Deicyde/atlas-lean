@@ -135,7 +135,7 @@ theorem spectralRadius_le_one_of_rowSum_le_one [Nonempty n] {K : Matrix n n ℝ}
   let _ : NormedAlgebra ℂ (Matrix n n ℂ) := Matrix.linftyOpNormedAlgebra
   have _ : CompleteSpace (Matrix n n ℂ) := FiniteDimensional.complete ℂ _
   have _ : NormOneClass (Matrix n n ℂ) := Matrix.linfty_opNormOneClass
-  refine (spectralRadius_le_nnnorm _).trans ?_
+  refine (spectralRadius_le_nnNorm _).trans ?_
   have : ‖K.map (algebraMap ℝ ℂ)‖₊ ≤ 1 := by
     rw [Matrix.linfty_opNNNorm_def]
     refine Finset.sup_le fun i _ => ?_

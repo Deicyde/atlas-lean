@@ -247,7 +247,7 @@ theorem norm_rep_le {B : ℝ} {g : ℝ → ℂ} (hB : 0 < B) (hg : MemLp g 2 vol
     have hconst := eLpNorm_const (μ := volume.restrict (Set.Ioc (-B) B)) (p := 2) (1 : ℝ)
       (by simp) hμ
     have hsub : B - -B = 2 * B := by ring
-    rw [hconst, ENNReal.toReal_mul, enorm_one, ENNReal.toReal_one, one_mul,
+    rw [hconst, ENNReal.toReal_mul, eNorm_one, ENNReal.toReal_one, one_mul,
       Measure.restrict_apply_univ, Real.volume_Ioc, hsub, h2r, ← ENNReal.toReal_rpow,
       ENNReal.toReal_ofReal h2B]
     exact (Real.sqrt_eq_rpow _).symm

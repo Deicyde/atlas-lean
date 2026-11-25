@@ -711,7 +711,7 @@ private lemma dicksonWild_fixed_hasEigenvector {F : Type*} [Field F]
   rw [← Projectivization.mk_rep x.1] at hp
   rw [Projectivization.PGL.mk_smul_mk] at hp
   obtain ⟨a, ha⟩ := (Projectivization.mk_eq_mk_iff F _ _ _ _).mp hp
-  refine ⟨a, Module.End.hasEigenvector_iff.mpr ⟨?_, x.1.rep_nonzero⟩⟩
+  refine ⟨a, Module.End.hasEigenvector_iff.mpr ⟨?_, x.1.rep_ne_zero⟩⟩
   rw [Module.End.mem_eigenspace_iff]
   simpa [Matrix.GeneralLinearGroup.toLin_apply, Units.smul_def,
     Matrix.smul_eq_mulVec] using ha.symm
@@ -2700,7 +2700,7 @@ private lemma dicksonWild_frobenius_case_of_normal_sylow
         Multiplicative (ZMod t)) := by
   classical
   let Pbar : Subgroup (PGL p) := Subgroup.map G.subtype (P : Subgroup G)
-  have hPbar : IsPGroup p Pbar := P.isPGroup'.map G.subtype
+  have hPbar : IsPGroup p Pbar := P.isPGroup.map G.subtype
   have hPne : (P : Subgroup G) ≠ ⊥ := P.ne_bot_of_dvd_card hpG
   have hPbarNe : Pbar ≠ ⊥ := by
     exact (Subgroup.map_eq_bot_iff_of_injective (P : Subgroup G)
@@ -2778,7 +2778,7 @@ private lemma dicksonWild_normalizer_affine_equiv
   classical
   let N := Subgroup.normalizer (P : Set G)
   let Pbar : Subgroup (PGL p) := Subgroup.map G.subtype (P : Subgroup G)
-  have hPbar : IsPGroup p Pbar := P.isPGroup'.map G.subtype
+  have hPbar : IsPGroup p Pbar := P.isPGroup.map G.subtype
   have hPne : (P : Subgroup G) ≠ ⊥ :=
     P.ne_bot_of_dvd_card hpG
   have hPbarNe : Pbar ≠ ⊥ :=
@@ -2920,8 +2920,8 @@ private lemma dicksonWild_distinct_sylow_inf_eq_bot
     Subgroup.equivMapOfInjective (Q : Subgroup G) G.subtype G.subtype_injective
   let _ : Finite Pbar := Finite.of_surjective eP eP.surjective
   let _ : Finite Qbar := Finite.of_surjective eQ eQ.surjective
-  have hPbar : IsPGroup p Pbar := P.isPGroup'.map G.subtype
-  have hQbar : IsPGroup p Qbar := Q.isPGroup'.map G.subtype
+  have hPbar : IsPGroup p Pbar := P.isPGroup.map G.subtype
+  have hQbar : IsPGroup p Qbar := Q.isPGroup.map G.subtype
   have hPbarNe : Pbar ≠ ⊥ := by
     exact (Subgroup.map_eq_bot_iff_of_injective (P : Subgroup G)
       G.subtype_injective).not.mpr (by
@@ -3003,12 +3003,12 @@ private lemma dicksonWild_distinct_sylow_inf_eq_bot
     · exact Subgroup.centralizer_le_normalizer _
   have hsupP : (P : Subgroup G) ⊔ (Q : Subgroup G) = P := by
     apply P.maximal_isPGroup.eq_of_ge
-    · exact P.isPGroup'.to_sup_of_normal_right' Q.isPGroup' hPnormQ
+    · exact P.isPGroup.to_sup_of_normal_right' Q.isPGroup hPnormQ
     · exact le_sup_left
   have hQP : (Q : Subgroup G) ≤ P := by
     rw [← hsupP]
     exact le_sup_right
-  have hSubgroups : (P : Subgroup G) = Q := Q.maximal_isPGroup.eq_of_ge P.isPGroup' hQP
+  have hSubgroups : (P : Subgroup G) = Q := Q.maximal_isPGroup.eq_of_ge P.isPGroup hQP
   exact hPQ (Sylow.ext hSubgroups)
 
 private lemma dicksonWild_card_dvd_of_fixedPointFree_action
@@ -3076,7 +3076,7 @@ private lemma dicksonWild_card_sylow_eq_one_add_mul_card
       Sylow.smul_eq_iff_mem_normalizer.mp hsmul
     have haInf : (a.1 : G) ∈ (P : Subgroup G) ⊓ Subgroup.normalizer (Q.1 : Subgroup G) :=
       ⟨a.2, haNorm⟩
-    have hInfNormalizer := IsPGroup.inf_normalizer_sylow P.isPGroup' Q.1
+    have hInfNormalizer := IsPGroup.inf_normalizer_sylow P.isPGroup Q.1
     have haPQ : (a.1 : G) ∈ (P : Subgroup G) ⊓ (Q.1 : Subgroup G) := by
       rw [← hInfNormalizer]
       exact haInf
@@ -3158,14 +3158,14 @@ private lemma dicksonWild_sylow_eq_of_common_fixedPoint
         apply ha
         exact congrArg (fun z : P ↦ (z.1 : PGL p)) h
       exact dicksonWild_orderOf_coe_eq_char_of_isPGroup_in_subgroup G
-        P.isPGroup' a ha'
+        P.isPGroup a ha'
     · intro hb
       have hb' : b ≠ 1 := by
         intro h
         apply hb
         exact congrArg (fun z : Q ↦ (z.1 : PGL p)) h
       exact dicksonWild_orderOf_coe_eq_char_of_isPGroup_in_subgroup G
-        Q.isPGroup' b hb'
+        Q.isPGroup b hb'
   have hPnormQ : (P : Subgroup G) ≤ Subgroup.normalizer (Q : Subgroup G) := by
     apply le_trans (b := Subgroup.centralizer (Q : Set G))
     · intro a ha
@@ -3175,12 +3175,12 @@ private lemma dicksonWild_sylow_eq_of_common_fixedPoint
     · exact Subgroup.centralizer_le_normalizer _
   have hsupP : (P : Subgroup G) ⊔ (Q : Subgroup G) = P := by
     apply P.maximal_isPGroup.eq_of_ge
-    · exact P.isPGroup'.to_sup_of_normal_right' Q.isPGroup' hPnormQ
+    · exact P.isPGroup.to_sup_of_normal_right' Q.isPGroup hPnormQ
     · exact le_sup_left
   have hQP : (Q : Subgroup G) ≤ P := by
     rw [← hsupP]
     exact le_sup_right
-  have hSubgroups : (P : Subgroup G) = Q := Q.maximal_isPGroup.eq_of_ge P.isPGroup' hQP
+  have hSubgroups : (P : Subgroup G) = Q := Q.maximal_isPGroup.eq_of_ge P.isPGroup hQP
   exact Sylow.ext hSubgroups
 
 private lemma dicksonWild_mem_normalizer_iff_fixedPoint
@@ -3256,7 +3256,7 @@ private lemma dicksonWild_normalizer_borel_coordinates
   let eP : (P : Subgroup G) ≃* Pbar :=
     Subgroup.equivMapOfInjective (P : Subgroup G) G.subtype G.subtype_injective
   let _ : Finite Pbar := Finite.of_surjective eP eP.surjective
-  have hPbar : IsPGroup p Pbar := P.isPGroup'.map G.subtype
+  have hPbar : IsPGroup p Pbar := P.isPGroup.map G.subtype
   have hPbarNe : Pbar ≠ ⊥ := by
     change Subgroup.map G.subtype (P : Subgroup G) ≠ ⊥
     intro h
@@ -3500,7 +3500,7 @@ private lemma dicksonWild_card_order_char_outside_normalizer
     change (g.1.1 : PGL p) ^ p = 1
     exact (orderOf_eq_prime_iff.mp
       (dicksonWild_orderOf_coe_eq_char_of_isPGroup_in_subgroup G
-        P.isPGroup' g.1 g.2)).1⟩⟩, Subgroup.le_normalizer g.1.2⟩
+        P.isPGroup g.1 g.2)).1⟩⟩, Subgroup.le_normalizer g.1.2⟩
   have htoEin : Function.Bijective toEin := by
     constructor
     · intro g h hgh
@@ -3512,7 +3512,7 @@ private lemma dicksonWild_card_order_char_outside_normalizer
       have hzP : z.1.1 ∈ (P : Subgroup G) := by
         have heq : (Q : Subgroup G) ⊓ Subgroup.normalizer (P : Subgroup G) =
             (Q : Subgroup G) ⊓ (P : Subgroup G) :=
-          IsPGroup.inf_normalizer_sylow Q.isPGroup' P
+          IsPGroup.inf_normalizer_sylow Q.isPGroup P
         rw [heq] at hzInf
         exact hzInf.2
       let zp : P := ⟨z.1.1, hzP⟩
@@ -6452,7 +6452,7 @@ private lemma dicksonWild_card_order_char_elements
     change (d.2.1.1 : PGL p) ^ p = 1
     exact (orderOf_eq_prime_iff.mp
       (dicksonWild_orderOf_coe_eq_char_of_isPGroup_in_subgroup G
-        d.1.isPGroup' d.2.1 d.2.2)).1⟩⟩
+        d.1.isPGroup d.2.1 d.2.2)).1⟩⟩
   have htoEInjective : Function.Injective toE := by
     rintro ⟨Q, g⟩ ⟨R, h⟩ hde
     have hval : g.1.1 = h.1.1 := congrArg (fun z : E ↦ z.1) hde

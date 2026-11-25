@@ -488,7 +488,7 @@ private lemma integrableOn_tilted_tail (hθ : ∫ y, exp (θ * y) ∂G = 1) (hG 
   rw [HasFiniteIntegral]
   calc ∫⁻ t in Ioi 0, ‖P.real (Ioi t)‖ₑ = ∫⁻ t in Ioi 0, P {a | t < a} := by
         refine lintegral_congr fun t => ?_
-        rw [Real.enorm_of_nonneg measureReal_nonneg, ofReal_measureReal]
+        rw [Real.eNorm_of_nonneg measureReal_nonneg, ofReal_measureReal]
         rfl
     _ = ∫⁻ y, ENNReal.ofReal y ∂P := hcake.symm
     _ < ∞ := by

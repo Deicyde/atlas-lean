@@ -73,7 +73,7 @@ theorem hoeffding_binomial_lower_tail {Ω : Type*}
   -- The subgaussian parameter equals `1 / 4`.
   have hc4 : (‖(1 - p - -p)‖₊ / 2) ^ 2 = (1 / 4 : NNReal) := by
     have h1 : (1 - p - -p : ℝ) = 1 := by ring
-    rw [h1, nnnorm_one]
+    rw [h1, nnNorm_one]
     norm_num
   have hsub4 : ∀ i, HasSubgaussianMGF (fun ω => -(X i ω - p)) (1 / 4 : NNReal) μ := by
     intro i

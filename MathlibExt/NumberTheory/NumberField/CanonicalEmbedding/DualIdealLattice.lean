@@ -73,7 +73,8 @@ public theorem coe_dualSubmodule_flip_traceForm_idealLattice
   have hspan : ((I : FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K).restrictScalars ℤ
       = Submodule.span ℤ (Set.range (basisOfFractionalIdeal K I)) := by
     ext x
-    rw [Submodule.restrictScalars_mem, FractionalIdeal.mem_coe, mem_span_basisOfFractionalIdeal]
+    rw [Submodule.restrictScalars_mem, FractionalIdeal.mem_coeToSubmodule,
+      mem_span_basisOfFractionalIdeal]
     rfl
   have hdual : ((FractionalIdeal.dual ℤ ℚ (I : FractionalIdeal (𝓞 K)⁰ K) :
         FractionalIdeal (𝓞 K)⁰ K) : Submodule (𝓞 K) K).restrictScalars ℤ

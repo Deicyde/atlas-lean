@@ -57,7 +57,7 @@ noncomputable def flipToBCF (G : C₀(X, T →ᵇ B)) : T →ᵇ C₀(X, B) := b
       zero_at_infty' := by
         change Tendsto ((fun F : T →ᵇ B => F t) ∘ (G : X → T →ᵇ B))
           (cocompact X) (𝓝 (0 : B))
-        simpa only [BoundedContinuousFunction.coe_zero, Pi.zero_apply] using
+        simpa only [FunLike.coe_zero, Pi.zero_apply] using
           ((BoundedContinuousFunction.lipschitz_eval_const t).continuous.tendsto
             (0 : T →ᵇ B)).comp (zero_at_infty G) }
   have hslice_apply (t : T) (x : X) : slice t x = G x t := rfl
@@ -185,10 +185,10 @@ noncomputable def flipToBCFLinearIsometry :
   toFun := flipToBCF
   map_add' G H := by
     ext t x
-    simp only [flipToBCF_apply, add_apply, BoundedContinuousFunction.add_apply]
+    simp only [flipToBCF_apply, add_apply, _root_.add_apply]
   map_smul' r G := by
     ext t x
-    simp only [flipToBCF_apply, smul_apply, BoundedContinuousFunction.smul_apply,
+    simp only [flipToBCF_apply, smul_apply, _root_.smul_apply,
       RingHom.id_apply]
   norm_map' G := by
     change ‖flipToBCF G‖ = ‖G‖

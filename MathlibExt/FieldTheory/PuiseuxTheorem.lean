@@ -1016,7 +1016,7 @@ private theorem puiseux_indexHom_injective {n : ℕ} (hn : 0 < n) :
     Function.Injective (puiseux_indexHom n) := by
   intro a b hab
   apply Int.cast_injective (α := Rat)
-  exact (div_left_inj' (by exact_mod_cast hn.ne')).mp hab
+  exact (div_left_inj₀ (by exact_mod_cast hn.ne')).mp hab
 
 private theorem puiseux_indexHom_le_iff {n : ℕ} (hn : 0 < n) (a b : ℤ) :
     puiseux_indexHom n a ≤ puiseux_indexHom n b ↔ a ≤ b := by

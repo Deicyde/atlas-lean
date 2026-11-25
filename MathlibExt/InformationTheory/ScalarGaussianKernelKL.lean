@@ -183,7 +183,7 @@ theorem not_memLp_two_of_lintegral_sq_eq_top (μ : Measure ℝ)
   rw [HasFiniteIntegral] at hfin
   have : ∫⁻ x, ‖(id x) ^ 2‖ₑ ∂μ = ∫⁻ x, ENNReal.ofReal (x ^ 2) ∂μ := by
     refine lintegral_congr fun x => ?_
-    rw [id, Real.enorm_of_nonneg (sq_nonneg x)]
+    rw [id, Real.eNorm_of_nonneg (sq_nonneg x)]
   rw [this, h] at hfin
   exact lt_irrefl _ hfin
 

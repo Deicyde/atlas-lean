@@ -525,7 +525,7 @@ private theorem wanted_mem_core (p : ℕ) [Fact (Nat.Prime p)] (hp5 : 5 < p) :
     · rw [h1]; exact odd_one
     · rw [hm1]; exact odd_neg_one
   have hEven : Even (((F : ℤ)) - j) :=
-    ((Int.odd_coe_nat F).mpr hOddF).sub_odd hOddJ
+    ((Int.odd_natCast F).mpr hOddF).sub_odd hOddJ
   have h2Z : (2 : ℤ) ∣ (((F : ℤ)) - j) := even_iff_two_dvd.mp hEven
   -- bounds and compositeness inputs
   have h6p : 6 ≤ p := by omega

@@ -210,7 +210,7 @@ example :
     have hmeas : MeasurableSet ({true} : Set Bool) := MeasurableSet.singleton true
     have h1 : (Measure.dirac true) {true} = 1 := Measure.dirac_apply_of_mem (by simp)
     have h0 : (Measure.dirac false) {true} = 0 :=
-      (dirac_eq_zero_iff_not_mem hmeas).mpr (by simp)
+      (dirac_eq_zero_iff_notMem hmeas).mpr (by simp)
     unfold fairCoin
     rw [measureReal_def, Measure.smul_apply, Measure.add_apply, h1, h0, add_zero,
       smul_eq_mul, mul_one]
@@ -247,7 +247,7 @@ example :
     have hmeas : MeasurableSet ({true} : Set Bool) := MeasurableSet.singleton true
     have h1 : (Measure.dirac true) {true} = 1 := Measure.dirac_apply_of_mem (by simp)
     have h0 : (Measure.dirac false) {true} = 0 :=
-      (dirac_eq_zero_iff_not_mem hmeas).mpr (by simp)
+      (dirac_eq_zero_iff_notMem hmeas).mpr (by simp)
     unfold fairCoin
     rw [measureReal_def, Measure.smul_apply, Measure.add_apply, h1, h0, add_zero,
       smul_eq_mul, mul_one]

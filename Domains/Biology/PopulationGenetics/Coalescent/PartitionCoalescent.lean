@@ -1038,7 +1038,7 @@ theorem sum_kingmanProb_isMerge (π' : SamplePartition n) (h1 : 1 ≤ #π'.parts
     rw [Nat.factorial_succ]; push_cast; ring
   have hD : (n.factorial * (n - 1).factorial : ℝ) ≠ 0 := by positivity
   rw [hsum, kingmanProb_of_card hk.symm, f1, f3, f2, div_mul_eq_mul_div, mul_div_assoc',
-    div_left_inj' hD]
+    div_left_inj₀ hD]
   set S := ∑ π with IsMerge π π', ((π.cardProd Nat.factorial : ℕ) : ℝ)
   set a : ℝ := ((n - (k + 1)).factorial : ℝ)
   set b : ℝ := ((k - 1).factorial : ℝ)

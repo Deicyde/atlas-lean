@@ -83,17 +83,17 @@ private theorem scheffe_hn_tendsto_ae {α : Type*} {m : MeasurableSpace α} {μ 
       atTop (𝓝 (‖g x‖ₑ + ‖g x‖ₑ)) := by
   filter_upwards [hae] with x hx
   have h1 : Tendsto (fun n => ‖f n x‖ₑ) atTop (𝓝 ‖g x‖ₑ) :=
-    (continuous_enorm.tendsto _).comp hx
+    (continuous_eNorm.tendsto _).comp hx
   have h2 : Tendsto (fun n => ‖f n x - g x‖ₑ) atTop (𝓝 0) := by
     have hsub : Tendsto (fun n => f n x - g x) atTop (𝓝 0) := by
       have := hx.sub (@tendsto_const_nhds _ _ _ (g x) _)
       rwa [sub_self] at this
-    have hcomp := (continuous_enorm.tendsto _).comp hsub
-    rw [enorm_zero] at hcomp
+    have hcomp := (continuous_eNorm.tendsto _).comp hsub
+    rw [eNorm_zero] at hcomp
     exact hcomp
   rw [show ‖g x‖ₑ + ‖g x‖ₑ = (‖g x‖ₑ + ‖g x‖ₑ) - 0 from (tsub_zero _).symm]
   exact ENNReal.Tendsto.sub (h1.add tendsto_const_nhds) h2
-    (.inl (ENNReal.add_ne_top.mpr ⟨enorm_ne_top, enorm_ne_top⟩))
+    (.inl (ENNReal.add_ne_top.mpr ⟨eNorm_ne_top, eNorm_ne_top⟩))
 
 /-- Integration identity used in the proof of Scheffé's lemma: the
 `lintegral` of the auxiliary quantity equals
@@ -107,7 +107,7 @@ private theorem scheffe_lintegral_eq {α : Type*} {m : MeasurableSpace α} {μ :
     ∫⁻ x, (‖f n x‖ₑ + ‖g x‖ₑ - ‖f n x - g x‖ₑ) ∂μ =
       (eLpNorm (f n) 1 μ + eLpNorm g 1 μ) - eLpNorm (f n - g) 1 μ := by
   set ψ : α → ℝ≥0∞ := fun x => ‖f n x - g x‖ₑ
-  have hψ_meas : AEMeasurable ψ μ := ((hfm n).sub hgm).enorm
+  have hψ_meas : AEMeasurable ψ μ := ((hfm n).sub hgm).eNorm
   have hψ_ne_top : ∫⁻ x, ψ x ∂μ ≠ ⊤ := by
     have : (fun x => ‖f n x - g x‖ₑ) = (fun x => ‖(f n - g) x‖ₑ) := by
       ext; simp [Pi.sub_apply]
@@ -142,7 +142,7 @@ theorem scheffe_lemma {α : Type*} {m : MeasurableSpace α} {μ : Measure α}
       rw [eLpNorm_one_eq_lintegral_enorm hgm, lintegral_add_left' hgm.enorm]).symm ▸
     lintegral_mono_ae (hn_tendsto_ae.mono fun x hx => hx.liminf_eq ▸ le_refl _)
   have h_hn_meas : ∀ n, AEMeasurable (hn n) μ := fun n =>
-    ((hfm n).enorm.add hgm.enorm).sub ((hfm n).sub hgm).enorm
+    ((hfm n).eNorm.add hgm.eNorm).sub ((hfm n).sub hgm).eNorm
   have hfn_lt : ∀ᶠ n in atTop, eLpNorm (f n) 1 μ < ⊤ :=
     hnorm.eventually (gt_mem_nhds (lt_top_iff_ne_top.mpr hg.eLpNorm_lt_top.ne))
   have lintegral_hn_eq : ∀ᶠ n in atTop,

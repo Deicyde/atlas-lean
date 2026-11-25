@@ -298,7 +298,7 @@ theorem wald_cross_terms_zero_of_bounded
         split_ifs with h
         · exact absurd (lt_of_lt_of_le h (hT_bdd ω)) (not_lt.mpr hnN.le)
         · rfl
-      simp only [hf0, enorm_zero, lintegral_zero]
+      simp only [hf0, eNorm_zero, lintegral_zero]
     rw [h_tsum_eq]
     rw [ENNReal.sum_ne_top]
     intro n _

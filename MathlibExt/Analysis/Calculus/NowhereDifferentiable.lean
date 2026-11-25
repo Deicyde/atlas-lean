@@ -141,7 +141,7 @@ private lemma dense_compl_badSet (n k : ℕ) : Dense (badSet n k)ᶜ := by
   have hgadd : ∀ t₁ t₂ : ℝ, (f + s) t₁ - (f + s) t₂
       = (f t₁ - f t₂) + (s t₁ - s t₂) := by
     intro t₁ t₂
-    rw [BoundedContinuousFunction.add_apply, BoundedContinuousFunction.add_apply]
+    rw [add_apply, add_apply]
     ring
   refine ⟨f + s, Metric.mem_ball.mpr hdist, ?_⟩
   rw [Set.mem_compl_iff]

@@ -28,7 +28,7 @@ theorem tensorUnit_neq_zero.{u,v,w} (k : Type w) [Field k]
     let _ : CategoryTheory.Simple
         (CategoryTheory.MonoidalCategoryStruct.tensorUnit C) :=
       Fusion.simple_monoidal_unit (k := k) (C := C)
-    exact CategoryTheory.id_nonzero _
+    exact CategoryTheory.id_ne_zero _
 
 -- Algebra 478: Rank of a fusion category
 

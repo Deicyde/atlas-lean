@@ -158,7 +158,7 @@ theorem FractionalIdeal.coe_inv_eq_mul_dualSubmodule
   ext x
   change x ∈ (I⁻¹ : FractionalIdeal A⁰ K) ↔ _
   rw [FractionalIdeal.mem_inv_iff hI]
-  simp [LinearMap.BilinForm.mem_dualSubmodule, FractionalIdeal.mem_coe]
+  simp [LinearMap.BilinForm.mem_dualSubmodule, FractionalIdeal.mem_coeToSubmodule]
 
 /-- **Dual of a nonzero fractional ideal is its inverse.** Let $A$ be an integral domain with
 fraction field $K$ and let $I$ be a nonzero fractional ideal of $A$ in $K$. This is the $A$-linear

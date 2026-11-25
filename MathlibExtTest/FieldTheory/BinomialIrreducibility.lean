@@ -180,7 +180,7 @@ theorem sum_character_mul (x y : ℚ) (hx : x ≠ 0) (hy : y ≠ 0) :
 
 private theorem padic_rat_nat_not_dvd (p n : ℕ) (h : ¬ p ∣ n) :
     padicValRat p (n : ℚ) = 0 := by
-  rw [padicValRat.of_nat, padicValNat.eq_zero_of_not_dvd h, Nat.cast_zero]
+  rw [padicValRat.of_nat, multiplicity_eq_zero_of_not_dvd h, Nat.cast_zero]
 
 /-- Exact witnesses that separate characters from ultrametric valuations. -/
 theorem sum_character_values :

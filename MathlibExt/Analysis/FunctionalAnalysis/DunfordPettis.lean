@@ -631,7 +631,7 @@ private theorem dpc_exists_disjoint_of_small_sets
     have e2 : ∫⁻ x in s (φ j) ∩ ⋃ l, s (φ (l + j + 1)), ‖v (φ j) x‖ₑ ∂μ
         = ENNReal.ofReal
           (∫ x in s (φ j) ∩ ⋃ l, s (φ (l + j + 1)), ‖v (φ j) x‖ ∂μ) :=
-      (ofReal_integral_norm_eq_lintegral_enorm hint).symm
+      (ofReal_integral_norm_eq_lintegral_eNorm hint).symm
     have h1 : ENNReal.ofReal
         (∫ x in s (φ j) ∩ ⋃ l, s (φ (l + j + 1)), |v (φ j) x| ∂μ)
         ≤ ENNReal.ofReal (η / 2) := by
@@ -1020,7 +1020,7 @@ private theorem dpc_tendsto_eLpNorm_restrict_of_weakly_null
         eLpNorm_one_eq_lintegral_enorm hae
       have e2 : (∫⁻ x, ‖⇑(v (ψ n)) x‖ₑ ∂(μ.restrict (s (ψ n))))
           = ENNReal.ofReal (∫ x in s (ψ n), ‖⇑(v (ψ n)) x‖ ∂μ) :=
-        (ofReal_integral_norm_eq_lintegral_enorm hintR).symm
+        (ofReal_integral_norm_eq_lintegral_eNorm hintR).symm
       have e3 : (∫ x in s (ψ n), ‖⇑(v (ψ n)) x‖ ∂μ)
           = ∫ x in s (ψ n), |⇑(v (ψ n)) x| ∂μ :=
         setIntegral_congr_fun (hs _) fun x _ => Real.norm_eq_abs _

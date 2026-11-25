@@ -179,7 +179,7 @@ private theorem classOf_pow_eq_one {n : ℕ} (hn : n ≠ 0) (y : Kˣ) :
     refine pow_injective hn ?_
     rw [rootUnit_pow, ← map_pow]
   rw [hroot, ClassGroup.mk_eq_one_iff]
-  exact ⟨⟨(y : K), by rw [coe_toPrincipalIdeal, coe_spanSingleton]⟩⟩
+  exact ⟨⟨(y : K), by rw [coe_toPrincipalIdeal, coeToSubmodule_spanSingleton]⟩⟩
 
 private theorem classOf_mul_pow {n : ℕ} (hn : n ≠ 0) (x y : Kˣ) :
     classOf (R := R) (K := K) n (x * y ^ n) = classOf n x := by
@@ -261,7 +261,7 @@ private theorem selmerToClass_ker_le {n : ℕ} (hn : n ≠ 0) :
     apply coeToSubmodule_injective
     show ((rootUnit x hdv : FractionalIdeal R⁰ K) : Submodule R K) =
       ((spanSingleton R⁰ c : FractionalIdeal R⁰ K) : Submodule R K)
-    rw [coe_spanSingleton]
+    rw [coeToSubmodule_spanSingleton]
     exact hc
   have hc0 : c ≠ 0 := by
     intro h0

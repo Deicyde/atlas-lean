@@ -46,7 +46,7 @@ theorem sixIdeal_ne_zero : sixIdeal ≠ 0 :=
 instance : Submodule.IsPrincipal (sixIdeal : Submodule ℚ (FractionRing ℚ)) := by
   show Submodule.IsPrincipal
     (FractionalIdeal.spanSingleton ℚ⁰ (6 : FractionRing ℚ) : Submodule ℚ (FractionRing ℚ))
-  exact ⟨6, FractionalIdeal.coe_spanSingleton _ 6⟩
+  exact ⟨6, FractionalIdeal.coeToSubmodule_spanSingleton _ 6⟩
 
 theorem sixIdeal_isUnit : IsUnit sixIdeal :=
   (FractionalIdeal.mul_inv_cancel_iff_isUnit (FractionRing ℚ)).mp
@@ -112,7 +112,7 @@ example : IsUnit sixIdealInt := by
       (sixIdealInt.localizeAtPrime 𝔪 :
         Submodule (Localization.AtPrime 𝔪) (FractionRing ℤ)) := by
     rw [hloc]
-    exact ⟨6, FractionalIdeal.coe_spanSingleton _ 6⟩
+    exact ⟨6, FractionalIdeal.coeToSubmodule_spanSingleton _ 6⟩
   exact (FractionalIdeal.mul_inv_cancel_iff_isUnit (FractionRing ℤ)).mp
     (FractionalIdeal.invertible_of_principal _ _
       (FractionalIdeal.localizeAtPrime_ne_zero 𝔪 sixIdealInt_ne_zero))

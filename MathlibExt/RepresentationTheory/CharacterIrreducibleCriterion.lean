@@ -96,7 +96,7 @@ private theorem isIrreducible_of_finrank_intertwiningMap_eq_one
     eq_bot_or_eq_top := fun S => by
       obtain ⟨T, hST⟩ := MonoidAlgebra.Submodule.exists_isCompl S
       set p := S.subtype.comp (S.projectionOnto T hST)
-      obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_nonzero' _ hid_ne).mp hfr_end p
+      obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_ne_zero' _ hid_ne).mp hfr_end p
       have hp_idem : p.comp p = p := by
         ext x
         simp only [p, LinearMap.comp_apply, Submodule.subtype_apply]

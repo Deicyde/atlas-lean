@@ -377,7 +377,7 @@ theorem relevance_eq_floor_iff {W : F → K → ℝ} {H : K → N → ℝ} {b c 
     (hW : ∀ f k, 0 ≤ W f k) (hH : ∀ k n, 0 ≤ H k n) (k : K) :
     relevance W H b c k = b / c ↔ (∀ f, W f k = 0) ∧ ∀ n, H k n = 0 := by
   unfold relevance
-  rw [div_left_inj' hc.ne']
+  rw [div_left_inj₀ hc.ne']
   have h1 : 0 ≤ ∑ f, W f k := Finset.sum_nonneg fun f _ => hW f k
   have h2 : 0 ≤ ∑ n, H k n := Finset.sum_nonneg fun n _ => hH k n
   constructor

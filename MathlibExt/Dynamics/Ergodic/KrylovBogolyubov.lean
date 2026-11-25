@@ -44,7 +44,7 @@ private theorem kbAvg_isProb
     IsProbabilityMeasure.measure_univ
   have hS : (∑ k ∈ Finset.range (n + 1), Measure.dirac (T^[k] x₀)) Set.univ
       = ((n + 1 : ℕ) : ENNReal) := by
-    rw [Measure.coe_finsetSum, Finset.sum_apply]
+    rw [FunLike.coe_sum, Finset.sum_apply]
     simp only [h1, Finset.sum_const, Finset.card_range, nsmul_eq_mul, mul_one]
   have hne : ((n + 1 : ℕ) : ENNReal) ≠ 0 := by positivity
   have htop : ((n + 1 : ℕ) : ENNReal) ≠ ⊤ := by simp

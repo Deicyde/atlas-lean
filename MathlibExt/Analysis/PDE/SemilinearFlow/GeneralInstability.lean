@@ -371,7 +371,7 @@ theorem exists_escape_of_mem_spectrum {G : Y → Y} {x₀ : Y} {L : Y →L[ℂ] 
     (hz : z ∈ spectrum ℂ L) (hz1 : 1 < ‖z‖) :
     ∃ ε > 0, ∀ δ > 0, ∃ x, ‖x - x₀‖ < δ ∧
       ∃ n, (∀ k < n, ‖G^[k] x - x₀‖ ≤ ρ) ∧ ε ≤ ‖G^[n] x - x₀‖ := by
-  obtain ⟨ν, hνσ, hνr⟩ := spectrum.exists_nnnorm_eq_spectralRadius_of_nonempty ⟨z, hz⟩
+  obtain ⟨ν, hνσ, hνr⟩ := spectrum.exists_nnNorm_eq_spectralRadius_of_nonempty ⟨z, hz⟩
   have hzν : ‖z‖ ≤ ‖ν‖ := by
     have h : (‖z‖₊ : ENNReal) ≤ ‖ν‖₊ := by
       rw [hνr, spectralRadius_eq_of_unital]
@@ -403,7 +403,7 @@ theorem exists_escape_of_one_lt_spectralRadius {G : Y → Y} {x₀ : Y} {L : Y �
     rw [Set.not_nonempty_iff_eq_empty] at h
     rw [spectralRadius_eq_of_unital, h] at hr
     simp at hr
-  obtain ⟨ν, hνσ, hνr⟩ := spectrum.exists_nnnorm_eq_spectralRadius_of_nonempty hne
+  obtain ⟨ν, hνσ, hνr⟩ := spectrum.exists_nnNorm_eq_spectralRadius_of_nonempty hne
   refine exists_escape_of_mem_spectrum hρ hC hp hG hνσ ?_
   rw [← hνr] at hr
   exact_mod_cast hr

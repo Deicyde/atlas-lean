@@ -90,7 +90,7 @@ theorem irreducible_of_simple_fdrep_aux (V : FDRep ℂ G) [Simple V] [Finite G]
       _ = Module.finrank ℂ (V ⟶ V) := LinearEquiv.finrank_eq e1
       _ = 1 := h1
   rw [Representation.irreducible_iff_isSimpleModule_asModule σ, isSimpleModule_iff]
-  have h1nt : Nontrivial (V ⟶ V) := ⟨0, 𝟙 V, Ne.symm (id_nonzero V)⟩
+  have h1nt : Nontrivial (V ⟶ V) := ⟨0, 𝟙 V, Ne.symm (id_ne_zero V)⟩
   obtain ⟨f, g, hfg⟩ := h1nt
   obtain ⟨x, hx⟩ : ∃ x, f x ≠ g x := by
     by_contra hcon
@@ -146,7 +146,7 @@ theorem irreducible_of_simple_fdrep_aux (V : FDRep ℂ G) [Simple V] [Finite G]
     have hpy : pN (↑(⟨y, hyN⟩ : ↥N) : σ.asModule) = 0 := by rw [hzero]; rfl
     rw [hidN] at hpy
     simpa using hpy
-  obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_nonzero' pN hNne).mp hEnd pQ
+  obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_ne_zero' pN hNne).mp hEnd pQ
   have hidemNfun : ∀ x, pN (pN x) = pN x := fun x => DFunLike.congr_fun hidemN x
   have hsmul : ∀ (y : σ.asModule) (c : ℂ), pN (c • y) = c • pN y := by
     intro y c

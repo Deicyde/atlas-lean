@@ -208,7 +208,7 @@ theorem mul_mem_lSpace_add {A B : Divisor K F} {f g : F}
   rcases eq_or_ne g 0 with rfl | hg0
   · simp
   rw [map_mul, show (A + B) v = A v + B v from Finsupp.add_apply A B v, WithZero.exp_add]
-  exact mul_le_mul (hf v) (hg v) (zero_le') (zero_le')
+  exact mul_le_mul (hf v) (hg v) (zero_le) (zero_le)
 
 /-- The constants of the function field are exactly the base field. -/
 def ConstantsAreBase (K F : Type*) [Field K] [Field F] [Algebra K F] : Prop :=

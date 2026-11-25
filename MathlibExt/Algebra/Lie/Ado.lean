@@ -1636,7 +1636,7 @@ private theorem adoNilpotent_exists_coatom
   · intro x y hy
     exact hAL (LieSubmodule.lie_mem_lie
       (LieSubmodule.mem_top x) (LieSubmodule.mem_top y))
-  obtain ⟨h, -, hh⟩ := SetLike.exists_of_lt hA.lt_top
+  obtain ⟨h, -, hh⟩ := IsConcreteLE.exists_of_lt hA.lt_top
   exact ⟨A, hA, hAL, h, hh⟩
 
 private theorem adoCoatom_nontrivial
@@ -1710,7 +1710,7 @@ private theorem adoIdeal_exists_coatom
   · intro x y hy
     exact hNA (hderived (LieSubmodule.lie_mem_lie
       (LieSubmodule.mem_top x) (LieSubmodule.mem_top y)))
-  obtain ⟨h, -, hh⟩ := SetLike.exists_of_lt hA.lt_top
+  obtain ⟨h, -, hh⟩ := IsConcreteLE.exists_of_lt hA.lt_top
   exact ⟨A, hA, hNA, h, hh⟩
 
 private theorem adoNilpotent_representation

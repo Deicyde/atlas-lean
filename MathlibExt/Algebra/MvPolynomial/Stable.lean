@@ -153,7 +153,7 @@ private lemma ksRoots_im_nonpos_of_monic_limit
     (Metric.isBounded_range_of_tendsto c hc_tendsto).exists_pos_norm_le
   have hcauchy (n : ℕ) : (Polynomial.cauchyBound (P n) : ℝ) ≤ C + 1 := by
     rw [Polynomial.cauchyBound]
-    simp only [(hP n).leadingCoeff, nnnorm_one, div_one, NNReal.coe_add, NNReal.coe_one]
+    simp only [(hP n).leadingCoeff, nnNorm_one, div_one, NNReal.coe_add, NNReal.coe_one]
     have hsup : (↑(Finset.sup (Finset.range (P n).natDegree)
         (fun k ↦ ‖(P n).coeff k‖₊)) : ℝ) ≤ C := by
       let Cnn : NNReal := ⟨C, le_of_lt hCpos⟩

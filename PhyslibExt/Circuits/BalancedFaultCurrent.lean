@@ -220,7 +220,7 @@ lemma isTheveninFault_perUnit_iff (E Zth Zf V I : ℂ) (Vb Ib : ℝ) (hVb : 0 < 
   unfold IsTheveninFault
   rw [hmul, ← ohm_perUnit_iff Vb Ib hVb hIb]
   unfold voltagePerUnit
-  rw [← sub_div, div_left_inj' hVc]
+  rw [← sub_div, div_left_inj₀ hVc]
 
 /-- Recovery of the physical fault current: the current base times the
 per-unit fault current. -/

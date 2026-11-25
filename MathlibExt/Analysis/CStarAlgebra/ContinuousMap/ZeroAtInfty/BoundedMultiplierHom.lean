@@ -101,14 +101,14 @@ noncomputable def toZeroAtInftyMultiplierHom
       apply ZeroAtInftyContinuousMap.ext
       intro x
       rw [DoubleCentralizer.mul_fst, mul_apply_eq_comp]
-      simp only [toZeroAtInftyMultiplier_fst_apply, BoundedContinuousFunction.mul_apply]
+      simp only [toZeroAtInftyMultiplier_fst_apply, mul_apply]
       exact mul_assoc _ _ _
     · apply ContinuousLinearMap.ext
       intro f
       apply ZeroAtInftyContinuousMap.ext
       intro x
       rw [DoubleCentralizer.mul_snd, mul_apply_eq_comp]
-      simp only [toZeroAtInftyMultiplier_snd_apply, BoundedContinuousFunction.mul_apply]
+      simp only [toZeroAtInftyMultiplier_snd_apply, mul_apply]
       calc
         (g x * h x) * f x = (h x * g x) * f x :=
           congrArg (fun z : ℂ => z * f x) (mul_comm _ _)

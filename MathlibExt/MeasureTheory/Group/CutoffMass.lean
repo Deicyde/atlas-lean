@@ -82,7 +82,7 @@ theorem exists_pos_integral_cutoff_of_cocompact
       have hn := hβnorm 1
       simp [h] at hn
     obtain ⟨x, hx⟩ := hne
-    exact hβc.integral_pos_of_hasCompactSupport_nonneg_nonzero hβs hβ0 hx
+    exact hβc.integral_pos_of_hasCompactSupport_nonneg_ne_zero hβs hβ0 hx
   · intro w hw0 hwm hws hw1
     have hi := integrable_mul_of_integral_subgroup_translate_eq_one T μ τ hT
       (fun _ => (1 : ℂ)) measurable_const ⟨1, fun _ => by simp⟩

@@ -70,7 +70,7 @@ lemma nnnorm_ons_KWmatPhase_le (L : ℕ) (x : ℝ) (a b : Fin 2)
       (ons_spinPhase L a) (ons_spinPhase L b) d2 d1‖₊ ≤ ‖(x : ℂ)‖₊ := by
   unfold ons_KWmatPhase ons_KWmat
   split_ifs
-  · rw [nnnorm_mul, nnnorm_mul]
+  · rw [nnNorm_mul, nnNorm_mul]
     have hphase : ‖ons_dirPhase (ons_spinPhase L a) (ons_spinPhase L b) d1.2‖ = 1 := by
       generalize hmu : d1.2 = mu
       fin_cases mu <;> simp [ons_dirPhase, norm_ons_spinPhase]

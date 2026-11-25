@@ -57,7 +57,7 @@ private theorem tensor_simple_of_central_simple
   by_cases hI : I = ⊥
   · exact Or.inl hI
   · right
-    obtain ⟨z, hzI, hz0⟩ := SetLike.exists_of_lt (bot_lt_iff_ne_bot.mpr hI)
+    obtain ⟨z, hzI, hz0⟩ := IsConcreteLE.exists_of_lt (bot_lt_iff_ne_bot.mpr hI)
     have hz : z ≠ 0 := fun h => hz0 ((TwoSidedIdeal.mem_bot _).mpr h)
     obtain ⟨d, hd⟩ := TensorProduct.eq_repr_basis_right e z
     have H : ∃ n : ℕ, ∃ y : A ⊗[k] B, ∃ s : Finset (Module.Free.ChooseBasisIndex k B),

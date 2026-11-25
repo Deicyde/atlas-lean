@@ -49,7 +49,7 @@ private theorem two_point_le {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (θ : ℝ
   have hq0 : 0 ≤ 1 - p := by linarith
   have hprob : IsProbabilityMeasure μ := by
     constructor
-    simp only [μ, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+    simp only [μ, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
       measure_univ, smul_eq_mul, mul_one]
     rw [← ENNReal.ofReal_add hp0 hq0]
     simp

@@ -168,7 +168,7 @@ private lemma exists_ne_fixed_of_discr_ne_zero (hd : g.val.discr ≠ 0) :
       rw [smul_coe_eq_self_iff]
       linear_combination (quadratic_eq_zero_iff hc hs z).mpr hz
     refine ⟨_, _, ?_, hroot _ (Or.inl rfl), hroot _ (Or.inr rfl)⟩
-    rw [Ne, OnePoint.coe_eq_coe, div_left_inj' (mul_ne_zero two_ne_zero hc)]
+    rw [Ne, OnePoint.coe_eq_coe, div_left_inj₀ (mul_ne_zero two_ne_zero hc)]
     intro h
     apply hs0
     linear_combination h / 2

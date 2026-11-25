@@ -96,7 +96,7 @@ noncomputable def T1 : Matrix (Fin 1) (Fin 1) ℝ := fun _ _ => 1 / 2
 
 theorem T1_spectralRadius_lt_one :
     spectralRadius ℂ (T1.map Complex.ofReal) < 1 := by
-  have hle := spectralRadius_le_nnnorm (𝕜 := ℂ) (T1.map Complex.ofReal)
+  have hle := spectralRadius_le_nnNorm (𝕜 := ℂ) (T1.map Complex.ofReal)
   have h2 : ‖Complex.ofReal (1 / 2 : ℝ)‖₊ = (1 / 2 : ℝ≥0) := by
     ext
     simp

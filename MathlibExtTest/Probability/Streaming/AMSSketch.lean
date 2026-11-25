@@ -28,7 +28,7 @@ noncomputable abbrev coin : Measure Bool :=
 
 instance : IsProbabilityMeasure coin := by
   constructor
-  simp only [Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply, measure_univ,
+  simp only [FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply, measure_univ,
     smul_eq_mul, mul_one]
   rw [ENNReal.add_halves]
 

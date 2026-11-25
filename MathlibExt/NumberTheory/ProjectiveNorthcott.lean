@@ -71,16 +71,16 @@ lemma exists_rep_apply_eq_one_of_ne_zero (x : Projectivization K (ι → K))
     ∃ (v : ι → K) (hv : v ≠ 0),
       v i = 1 ∧ (∀ j, v j = x.rep j / x.rep i) ∧ mk K v hv = x := by
   refine ⟨(x.rep i)⁻¹ • x.rep,
-    smul_ne_zero (inv_ne_zero hi) x.rep_nonzero,
+    smul_ne_zero (inv_ne_zero hi) x.rep_ne_zero,
     inv_mul_cancel₀ hi, fun j => (div_eq_inv_mul _ _).symm, ?_⟩
   conv_rhs => rw [← x.mk_rep]
-  exact (mk_eq_mk_iff' K _ _ _ x.rep_nonzero).mpr ⟨_, rfl⟩
+  exact (mk_eq_mk_iff' K _ _ _ x.rep_ne_zero).mpr ⟨_, rfl⟩
 
 /-- Every actual projective point has a normalized affine representative. -/
 lemma exists_rep_apply_eq_one (x : Projectivization K (ι → K)) :
     ∃ (v : ι → K) (hv : v ≠ 0) (i : ι),
       v i = 1 ∧ (∀ j, v j = x.rep j / x.rep i) ∧ mk K v hv = x := by
-  obtain ⟨i, hi⟩ := Function.ne_iff.mp x.rep_nonzero
+  obtain ⟨i, hi⟩ := Function.ne_iff.mp x.rep_ne_zero
   obtain ⟨v, hv, h1, hratio, hmk⟩ := exists_rep_apply_eq_one_of_ne_zero x hi
   exact ⟨v, hv, i, h1, hratio, hmk⟩
 

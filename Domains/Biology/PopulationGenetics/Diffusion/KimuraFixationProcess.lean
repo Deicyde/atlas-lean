@@ -1034,13 +1034,13 @@ theorem integral_absorptionTime {x : ℝ} {ℱ : Filtration ℝ≥0 mΩ} {μ : M
     refine ⟨hτm, ?_⟩
     have hfat := lintegral_liminf_le' (μ := μ) (u := atTop)
       (f := fun k : ℕ => fun ω => ‖min (k : ℝ) (absorptionTime X ω)‖ₑ)
-      (fun k => (hmk k).aemeasurable.enorm)
+      (fun k => (hmk k).aemeasurable.eNorm)
     have heq : ∫⁻ ω, ‖(absorptionTime X ω : ℝ)‖ₑ ∂μ =
         ∫⁻ ω, liminf (fun k : ℕ => ‖min (k : ℝ) (absorptionTime X ω)‖ₑ) atTop ∂μ :=
       lintegral_congr fun ω => ((hτlim ω).enorm.liminf_eq).symm
     have hle : ∀ k : ℕ, ∫⁻ ω, ‖min (k : ℝ) (absorptionTime X ω)‖ₑ ∂μ ≤ ENNReal.ofReal 8 := by
       intro k
-      rw [← ofReal_integral_norm_eq_lintegral_enorm (hmint k)]
+      rw [← ofReal_integral_norm_eq_lintegral_eNorm (hmint k)]
       refine ENNReal.ofReal_le_ofReal ?_
       have hnn : ∀ ω, 0 ≤ min (k : ℝ) (absorptionTime X ω) := fun ω =>
         le_min k.cast_nonneg (NNReal.coe_nonneg _)

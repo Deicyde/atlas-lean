@@ -459,7 +459,7 @@ theorem groupAverage_comp_comp_inv_eq_trace_smul {G V : Type*} [Group G] [Fintyp
   have hrank : finrank ℂ (linHom ρ ρ).invariants = 1 := by
     rw [(invariantsEquivIntertwiningMap ρ ρ).finrank_eq,
       IsIrreducible.finrank_intertwiningMap_self ρ]
-  obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_nonzero' _ hid0).mp hrank
+  obtain ⟨c, hc⟩ := (finrank_eq_one_iff_of_ne_zero' _ hid0).mp hrank
     ⟨_, groupAverage_apply_mem_invariants (linHom ρ ρ) f⟩
   have hc' : c • LinearMap.id = groupAverage (linHom ρ ρ) f := congrArg Subtype.val hc
   rw [groupAverage_linHom_apply] at hc'

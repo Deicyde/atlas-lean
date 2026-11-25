@@ -191,7 +191,7 @@ theorem memLp_mul_of_memLp_top {φ : α → ℂ} (hφ : MemLp φ ∞ μ)
       (continuous_fst.mul continuous_snd :
       Continuous (Function.uncurry fun a b : ℂ => a * b)) hφ.aestronglyMeasurable
     filter_upwards with x
-    simp [nnnorm_mul]
+    simp [nnNorm_mul]
   refine hle.trans_lt ?_
   rw [one_mul]
   exact ENNReal.mul_lt_top hφ.eLpNorm_lt_top (Lp.memLp f).eLpNorm_lt_top
@@ -243,7 +243,7 @@ noncomputable def lpMulCLM (φ : α → ℂ) (hφ : MemLp φ ∞ μ) :
         have h := eLpNorm_le_eLpNorm_top_mul_eLpNorm (2 : ℝ≥0∞) (fun a b => a * b) 1
           (continuous_fst.mul continuous_snd :
       Continuous (Function.uncurry fun a b : ℂ => a * b)) hφ.aestronglyMeasurable (f := φ)
-          (g := (f : α → ℂ)) (by filter_upwards with x; simp [nnnorm_mul])
+          (g := (f : α → ℂ)) (by filter_upwards with x; simp [nnNorm_mul])
         simpa using h
       rw [Lp.norm_toLp]
       calc (eLpNorm (fun x => φ x * f x) 2 μ).toReal

@@ -120,9 +120,9 @@ theorem moebius_dual_central_equations (α β γ δ ξ : ℝ) (hα : 0 < α) (h�
   -- Cleared of their denominators, both endpoint equations say that a coefficient times `2 + ξ`
   -- equals `1 + γ`.
   have hβδ : (β + γ - δ + β * δ) * (2 + ξ) = 1 + γ := by
-    linear_combination (div_left_inj' hβden).mp hβeq
+    linear_combination (div_left_inj₀ hβden).mp hβeq
   have hαδ : α * (1 + δ) * (2 + ξ) = 1 + γ := by
-    linear_combination (div_left_inj' hαden).mp hαeq
+    linear_combination (div_left_inj₀ hαden).mp hαeq
   -- As `1 + γ ≠ 0`, the factor `2 + ξ` is nonzero, so the two coefficients agree.
   have hξ : 2 + ξ ≠ 0 := by
     intro h
@@ -175,7 +175,7 @@ theorem moebius_naturalDual_singular (α β γ δ : ℝ) (hα : 0 < α) (hβ : �
   -- Subtract the first central equation from the cleared α-branch equation and cancel 1 + δ.
   have hαξ : α * (1 + ξ) = 1 - β := by
     apply mul_right_cancel₀ (by linarith : (1 : ℝ) + δ ≠ 0)
-    linear_combination (div_left_inj' hαden).mp hαeq - hcentral
+    linear_combination (div_left_inj₀ hαden).mp hαeq - hcentral
   have hξ : ξ * (2 * α + 1 + α * η) = γ - 2 * α - α * η := div_mul_cancel₀ _ hηden
   have hη : η * (2 - β) = -2 + 2 * β + γ := div_mul_cancel₀ _ (by linarith : (2 : ℝ) - β ≠ 0)
   linear_combination hξ - (2 + η) * hαξ - hη

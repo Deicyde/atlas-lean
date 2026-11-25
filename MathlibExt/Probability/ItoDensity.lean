@@ -346,7 +346,7 @@ theorem tendsto_integrandDist_delayedAverage {P : Measure Ω} [IsFiniteMeasure P
     · rw [lintegral_const]
       exact ENNReal.mul_ne_top ENNReal.ofReal_ne_top (by simp)
     · filter_upwards [hconv ω] with u hu
-      have := ENNReal.Tendsto.pow (n := 2) ((continuous_enorm.tendsto _).comp (hu.sub_const
+      have := ENNReal.Tendsto.pow (n := 2) ((continuous_eNorm.tendsto _).comp (hu.sub_const
         (truncation (H u.toNNReal) M ω)))
       simpa using this
   -- outer convergence

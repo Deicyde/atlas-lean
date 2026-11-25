@@ -89,7 +89,7 @@ public theorem ceilQuotientOddCount_succ_eq (n : ℕ) :
     | succ k =>
       rw [Rat.ceil_natCast_div_natCast]
       change Odd ((n / (k + 1) + 1 : ℕ) : ℤ) ↔ _
-      rw [Int.odd_coe_nat, Nat.odd_add_one]
+      rw [Int.odd_natCast, Nat.odd_add_one]
   have hfloor : ((Icc 1 (n + 1)).filter fun k => Odd (n / k)) =
       (Icc 1 n).filter fun k => Odd (n / k) := by
     ext k

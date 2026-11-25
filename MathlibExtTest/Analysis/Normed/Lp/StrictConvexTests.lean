@@ -38,7 +38,7 @@ abbrev Fm1 : Lp ℝ 2 (Measure.count : MeasureTheory.Measure Unit) :=
 absolute value of the constant. -/
 theorem eLpNorm_unit_const (c : ℝ) (hc : ‖c‖ = 1) :
     eLpNorm (fun _ : Unit => c) 2 (Measure.count : MeasureTheory.Measure Unit) = 1 := by
-  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num : (2 : ℝ≥0∞) ≠ 0)
+  rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal (by norm_num : (2 : ℝ≥0∞) ≠ 0)
     (by norm_num : (2 : ℝ≥0∞) ≠ ⊤) aestronglyMeasurable_const]
   rw [lintegral_count]
   simp [hc, ← ofReal_norm]

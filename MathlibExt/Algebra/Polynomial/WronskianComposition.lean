@@ -228,14 +228,14 @@ variable {u v s t U V : k[X]} (huv : IsCoprime u v) (hu : 0 < max u.natDegree v.
 
 include huv hu hU in
 private theorem U_eq : U = hom (max s.natDegree t.natDegree) u v s := by
-  refine eq_of_eval_eq_off_finite (finite_setOf_isRoot (ne_zero_of_isCoprime_of_pos huv hu).2)
+  refine eq_of_eval_eq_off_finite (finite_setOfPred_isRoot (ne_zero_of_isCoprime_of_pos huv hu).2)
     fun x hx => ?_
   simp only [Set.mem_setOf_eq, IsRoot.def] at hx
   rw [hU x hx, eval_hom_div (le_max_left _ _) hx]
 
 include huv hu hV in
 private theorem V_eq : V = hom (max s.natDegree t.natDegree) u v t := by
-  refine eq_of_eval_eq_off_finite (finite_setOf_isRoot (ne_zero_of_isCoprime_of_pos huv hu).2)
+  refine eq_of_eval_eq_off_finite (finite_setOfPred_isRoot (ne_zero_of_isCoprime_of_pos huv hu).2)
     fun x hx => ?_
   simp only [Set.mem_setOf_eq, IsRoot.def] at hx
   rw [hV x hx, eval_hom_div (le_max_right _ _) hx]

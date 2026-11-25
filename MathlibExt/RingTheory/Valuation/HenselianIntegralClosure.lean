@@ -981,7 +981,7 @@ private theorem exists_rep [Algebra.IsAlgebraic E F] (O : ValuationSubring E)
       calc O'.valuation (algebraMap E F (A i)) * O'.valuation x ^ (i - (k + 1))
           ≤ O'.valuation (algebraMap E F (A i)) * 1 := by
             gcongr
-            exact pow_le_one₀ zero_le' hvx
+            exact pow_le_one₀ zero_le hvx
         _ = O'.valuation (algebraMap E F (A i)) := mul_one _
         _ < 1 := hklt i (Finset.mem_range.mpr hi'.2) (by omega)
 

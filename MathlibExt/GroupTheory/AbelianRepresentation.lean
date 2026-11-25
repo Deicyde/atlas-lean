@@ -48,7 +48,7 @@ theorem _root_.FDRep.isIrreducible_of_simple {k G : Type*} [Field k] [Monoid G]
   let _ : Nontrivial V := by
     by_contra h
     let _ : Subsingleton V := not_nontrivial_iff_subsingleton.mp h
-    apply CategoryTheory.id_nonzero V
+    apply CategoryTheory.id_ne_zero V
     ext x
     exact Subsingleton.elim _ _
   change IsSimpleOrder (Subrepresentation V.ρ)

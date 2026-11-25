@@ -71,7 +71,7 @@ theorem memLp_of_polynomial_decay_ae
     have hint : Integrable (fun x : ℝ => (1 + ‖x‖) ^ (-(q * p.toReal))) volume :=
       integrable_one_add_norm hqp
     show eLpNorm f p volume < ⊤
-    rw [eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top hp_ne_zero hp_top hf_meas]
+    rw [eLpNorm_lt_top_iff_lintegral_rpow_eNorm_lt_top hp_ne_zero hp_top hf_meas]
     calc ∫⁻ (x : ℝ), ‖f x‖ₑ ^ p.toReal ∂volume
         ≤ ∫⁻ (x : ℝ), ENNReal.ofReal
             (C ^ p.toReal * (1 + ‖x‖) ^ (-(q * p.toReal))) ∂volume := by
@@ -98,7 +98,7 @@ theorem memLp_of_polynomial_decay_ae
           apply ENNReal.mul_lt_top
           · exact ENNReal.ofReal_lt_top
           · rw [← lintegral_enorm_of_nonneg (fun x => Real.rpow_nonneg (by positivity) _)]
-            exact hasFiniteIntegral_iff_enorm.mp hint.hasFiniteIntegral
+            exact hasFiniteIntegral_iff_eNorm.mp hint.hasFiniteIntegral
 
 /-- **Pointwise polynomial decay implies $L^p$ membership.** Let $E$ be a normed additive
 commutative group and let $f : \mathbb{R} \to E$ be almost everywhere strongly measurable. Suppose

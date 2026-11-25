@@ -101,7 +101,7 @@ public theorem roundQuotientOddCount_eq_alternating_sum (n : ℕ) :
     omega
   calc
     (roundQuotientOddCount n : ℤ) = ∑ k ∈ Icc 1 n, (if Odd (q k) then 1 else 0) := by
-      simp only [roundQuotientOddCount, round_div_eq, Int.odd_coe_nat, q, sum_boole]
+      simp only [roundQuotientOddCount, round_div_eq, Int.odd_natCast, q, sum_boole]
     _ = ∑ d ∈ Icc 1 n, ∑ k ∈ Icc 1 n, if d ≤ q k then (-1 : ℤ) ^ (d + 1) else 0 := by
       rw [sum_comm]
       exact sum_congr rfl fun k _ => (sum_thresholds (hq k)).symm

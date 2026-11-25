@@ -160,7 +160,7 @@ private lemma erdos_layers_tail_le_four_pow_of_nthRoot_le {N r B : ℕ}
   calc
     (∏ j ∈ s, if j = 0 then primorial r else primorial (Nat.nthRoot (j + 1) N))
         ≤ ∏ _j ∈ s, 4 ^ B := by
-          exact Finset.prod_le_prod' fun j hj => by
+          exact Finset.prod_le_prod fun j hj => by
             have hj0 : j ≠ 0 := hzero j hj
             simpa [hj0] using (primorial_mono (hroot j hj)).trans (primorial_le_four_pow B)
     _ = (4 ^ B) ^ s.card := by rw [Finset.prod_const]

@@ -50,7 +50,7 @@ namespace MeasureTheory
 
 private theorem enorm_mul_ofReal_nonneg {z : ℂ} {r : ℝ} (hr : 0 ≤ r) :
     ‖z * (r : ℂ)‖ₑ = ‖z‖ₑ * ENNReal.ofReal r := by
-  rw [enorm_mul]
+  rw [eNorm_mul]
   congr 1
   rw [← ofReal_norm, Complex.norm_real, Real.norm_of_nonneg hr]
 
@@ -156,7 +156,7 @@ theorem integrable_mul_iff_of_normalized_smul
     Integrable (fun x => f x * (w₁ x : ℂ)) μ ↔
       Integrable (fun x => f x * (w₂ x : ℂ)) μ := by
   have hne (x : X) (hx : ‖f x‖ₑ ≠ 0) : f x ≠ 0 :=
-    fun h0 => hx (by rw [h0, enorm_zero])
+    fun h0 => hx (by rw [h0, eNorm_zero])
   have hnorm := lintegral_mul_eq_of_normalized_smul τ μ hact hμ
     (f := fun x => ‖f x‖ₑ) (w₁ := fun x => ENNReal.ofReal (w₁ x))
     (w₂ := fun x => ENNReal.ofReal (w₂ x)) hf.enorm
@@ -170,18 +170,18 @@ theorem integrable_mul_iff_of_normalized_smul
   constructor
   · intro hi
     refine ⟨hmeas₂, ?_⟩
-    rw [hasFiniteIntegral_iff_enorm]
+    rw [hasFiniteIntegral_iff_eNorm]
     simp_rw [enorm_mul_ofReal_nonneg (hw₂0 _)]
     rw [← hnorm]
     simpa only [enorm_mul_ofReal_nonneg (hw₁0 _)] using
-      hasFiniteIntegral_iff_enorm.mp hi.2
+      hasFiniteIntegral_iff_eNorm.mp hi.2
   · intro hi
     refine ⟨hmeas₁, ?_⟩
-    rw [hasFiniteIntegral_iff_enorm]
+    rw [hasFiniteIntegral_iff_eNorm]
     simp_rw [enorm_mul_ofReal_nonneg (hw₁0 _)]
     rw [hnorm]
     simpa only [enorm_mul_ofReal_nonneg (hw₂0 _)] using
-      hasFiniteIntegral_iff_enorm.mp hi.2
+      hasFiniteIntegral_iff_eNorm.mp hi.2
 
 private theorem lintegral_ofReal_comp_mul_eq
     (hact : Measurable fun p : A × X => p.1 • p.2)

@@ -466,7 +466,7 @@ lemma effusion_rate_ne_of_temperature_ne {R T₁ T₂ M k₁ k₂ rate₁ rate�
     (hT₁ : 0 < T₁) (hT₂ : 0 < T₂) (hM : 0 < M) (hk₁ : 0 < k₁) (hk : k₁ = k₂)
     (h₁ : rate₁ = k₁ * meanSpeed R T₁ M) (h₂ : rate₂ = k₂ * meanSpeed R T₂ M) (hT : T₁ ≠ T₂) :
     rate₁ ≠ rate₂ := by
-  rw [Ne, effusion_rate_eq_iff hR hT₁ hT₂ hM hM hk₁ hk h₁ h₂, div_left_inj' hM.ne']
+  rw [Ne, effusion_rate_eq_iff hR hT₁ hT₂ hM hM hk₁ hk h₁ h₂, div_left_inj₀ hM.ne']
   exact hT
 
 end Chemistry.KineticTheory

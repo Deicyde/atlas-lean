@@ -66,7 +66,7 @@ private theorem inv_poly_series (D : Polynomial ℂ) (hD : D.eval 0 ≠ 0) :
     rw [← NNReal.coe_lt_coe, coe_nnnorm]
     exact hY
   have hYball : Y ∈ Metric.eball (0 : ℂ) (R : ℝ≥0∞) := by
-    rw [mem_eball_zero_iff, enorm_lt_coe]
+    rw [mem_eball_zero_iff, eNorm_lt_coe]
     exact hYR
   have hterm (n : ℕ) : (cauchyPowerSeries f 0 R n fun _ => Y) =
       (cauchyPowerSeries f 0 R).coeff n * Y ^ n := by

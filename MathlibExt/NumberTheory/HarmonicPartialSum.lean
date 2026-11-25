@@ -249,7 +249,7 @@ theorem harmonic_partial_sum_not_int
       have hvalSp : padicValRat p ((((n + 1 : ℕ)) : ℚ) * (harmonic n - 1)) = -1 := by
         rw [padicValRat.mul hcast hH1, hn1v, hRp, zero_add]
       have hnormp : 1 < padicNorm p ((((n + 1 : ℕ)) : ℚ) * (harmonic n - 1)) := by
-        rw [padicNorm.eq_zpow_of_nonzero hSne, hvalSp, neg_neg, zpow_one]
+        rw [padicNorm.eq_zpow_of_ne_zero hSne, hvalSp, neg_neg, zpow_one]
         exact_mod_cast hpP.one_lt
       intro hcon
       obtain ⟨kk, hkk⟩ := hcon
@@ -286,7 +286,7 @@ theorem harmonic_partial_sum_not_int
       subst hm'2
       exact hpow ⟨Nat.log 2 n + 1, hm'.trans (pow_succ 2 (Nat.log 2 n)).symm⟩
     have hnorm : 1 < padicNorm 2 ((((n + 1 : ℕ)) : ℚ) * (harmonic n - 1)) := by
-      rw [padicNorm.eq_zpow_of_nonzero hSne, hvalS]
+      rw [padicNorm.eq_zpow_of_ne_zero hSne, hvalS]
       have hexp : -((((multiplicity 2 (n + 1) : ℕ)) : ℤ)
           + -((((Nat.log 2 n : ℕ))) : ℤ))
           = ((((Nat.log 2 n - multiplicity 2 (n + 1) : ℕ))) : ℤ) := by

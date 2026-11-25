@@ -425,7 +425,7 @@ private lemma dickson_fixed_hasEigenvector {F : Type*} [Field F]
   rw [← Projectivization.mk_rep x.1] at hp
   rw [Projectivization.PGL.mk_smul_mk] at hp
   obtain ⟨a, ha⟩ := (Projectivization.mk_eq_mk_iff F _ _ _ _).mp hp
-  refine ⟨a, Module.End.hasEigenvector_iff.mpr ⟨?_, x.1.rep_nonzero⟩⟩
+  refine ⟨a, Module.End.hasEigenvector_iff.mpr ⟨?_, x.1.rep_ne_zero⟩⟩
   rw [Module.End.mem_eigenspace_iff]
   simpa [Matrix.GeneralLinearGroup.toLin_apply, Units.smul_def,
     Matrix.smul_eq_mulVec] using ha.symm
@@ -596,7 +596,7 @@ private lemma dickson_normalizedLift_unique {F : Type*} [Field F]
     rw [hscalar, hAm, hBm] at happ
     exact happ
   have hu1 : (u : F) = 1 := by
-    apply smul_left_injective F x.rep_nonzero
+    apply smul_left_injective F x.rep_ne_zero
     simpa using huv
   have huunit : u = 1 := Units.ext hu1
   subst u
@@ -703,7 +703,7 @@ private lemma dickson_isCyclic_of_fixed_point {F Q : Type*} [Field F]
     have hdim := Submodule.finrank_add_eq_of_isCompl hSTsub
     change Module.finrank F (F ∙ x.rep) + Module.finrank F T.toSubmodule =
       Module.finrank F (Fin 2 → F) at hdim
-    rw [finrank_span_singleton x.rep_nonzero, Module.finrank_fin_fun] at hdim
+    rw [finrank_span_singleton x.rep_ne_zero, Module.finrank_fin_fun] at hdim
     omega
   have hTbot : T.toSubmodule ≠ ⊥ := by
     intro hbot

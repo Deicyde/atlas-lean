@@ -380,6 +380,6 @@ theorem potentialProfiles_eqOn_of_base_eq (hI : IsOpen I) (hJ : IsOpen J)
   have h := potentialProfiles_normalized_eq hI hJ hIc hJc ν hν φ ψ F
     hφ hψ hpφ hpψ hhφ hhψ he t₀ x₀ p.1 p.2 ht₀ hx₀ hp.1 hp.2
   rw [hbase] at h
-  exact (div_left_inj' (ne_of_gt (hpψ t₀ ht₀ x₀ hx₀))).mp h
+  exact (div_left_inj₀ (ne_of_gt (hpψ t₀ ht₀ x₀ hx₀))).mp h
 
 end ColeHopf.OnInterval

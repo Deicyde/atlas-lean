@@ -186,7 +186,7 @@ private theorem exists_le_ker_of_stable (h2 : Module.finrank F E = 2)
   have h1 : Module.finrank F W = 1 := finrank_eq_one_of_ne_bot_of_ne_top h2 hbot htop
   have hw0' : (⟨w, hwW⟩ : W) ≠ 0 := fun h => hw0 (congrArg Subtype.val h)
   have hgen : ∀ x : W, ∃ a : F, a • (⟨w, hwW⟩ : W) = x :=
-    (finrank_eq_one_iff_of_nonzero' (⟨w, hwW⟩ : W) hw0').mp h1
+    (finrank_eq_one_iff_of_ne_zero' (⟨w, hwW⟩ : W) hw0').mp h1
   obtain ⟨ε, hε⟩ := hgen ⟨g w, hW w hwW⟩
   have hgw : g w = ε • w := by
     have := congrArg Subtype.val hε

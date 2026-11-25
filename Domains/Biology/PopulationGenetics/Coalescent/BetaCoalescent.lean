@@ -104,7 +104,7 @@ theorem beta_consistent {α : ℝ} (h0 : 0 < α) (h2 : α < 2) {b k : ℕ} (hk :
   have h := mergerRate_consistent (betaLambda α) hk hkb
   rw [mergerRate_betaLambda h0 h2 hk hkb, mergerRate_betaLambda h0 h2 hk (by omega),
     mergerRate_betaLambda h0 h2 (by omega) (by omega), ← add_div,
-    div_left_inj' (beta_pos (by linarith : (0 : ℝ) < 2 - α) h0).ne'] at h
+    div_left_inj₀ (beta_pos (by linarith : (0 : ℝ) < 2 - α) h0).ne'] at h
   exact h
 
 end MathlibExt.Biology.PopulationGenetics.Coalescent.BetaCoalescent

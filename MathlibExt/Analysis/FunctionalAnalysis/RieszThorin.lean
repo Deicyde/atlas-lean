@@ -52,7 +52,7 @@ private lemma eLpNorm_count_ne_top {α : Type*} [Finite α] [MeasurableSpace α]
   have hlt : eLpNorm y r Measure.count < ⊤ := by
     rw [eLpNorm_count_lt_top hr]
     intro i
-    exact lt_top_iff_ne_top.mpr enorm_ne_top
+    exact lt_top_iff_ne_top.mpr eNorm_ne_top
   exact ne_of_lt hlt
 
 private lemma eLpNorm_count_eq_sum {α : Type*} [Fintype α] [MeasurableSpace α]
@@ -60,7 +60,7 @@ private lemma eLpNorm_count_eq_sum {α : Type*} [Fintype α] [MeasurableSpace α
     (hr0 : r ≠ 0) (hrt : r ≠ ⊤) :
     eLpNorm y r Measure.count = (∑ i, ‖y i‖ₑ ^ r.toReal) ^ (1 / r.toReal) := by
   have hmeas : AEStronglyMeasurable y Measure.count := .of_discrete
-  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal hr0 hrt hmeas, lintegral_count,
+  rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal hr0 hrt hmeas, lintegral_count,
     tsum_fintype]
 
 private lemma eLpNorm_count_one_eq {α : Type*} [Fintype α] [MeasurableSpace α]
@@ -101,7 +101,7 @@ private lemma pairing_le {κ : Type*} [Fintype κ] [MeasurableSpace κ]
               enorm_sum_le Finset.univ _
           _ = ∑ k, ‖y k‖ₑ * ‖g k‖ₑ := by
               apply Finset.sum_congr rfl; intro k _
-              exact enorm_mul _ _
+              exact eNorm_mul _ _
     _ ≤ eLpNorm y q Measure.count * eLpNorm g q' Measure.count := by
         rcases eq_or_ne q 1 with rfl | hq1ne
         · rw [eLpNorm_count_one_eq, Finset.sum_mul]
@@ -346,7 +346,7 @@ private lemma dual_attain {κ : Type*} [Fintype κ]
                 sgn y k * ((‖y k‖ ^ e / A ^ e : ℝ) : ℂ) := rfl
               rw [hgg, hsgn0, zero_mul]
             have hyk0 : ‖y k‖ = 0 := norm_eq_zero.mpr hk
-            rw [hg0, enorm_zero, ENNReal.zero_rpow_of_pos hq'pos,
+            rw [hg0, eNorm_zero, ENNReal.zero_rpow_of_pos hq'pos,
               hyk0, Real.zero_rpow hqne0, zero_div, ENNReal.ofReal_zero]
           · have hsgn1 : ‖sgn y k‖ = 1 := by rw [norm_sgn, ite_eq_right hk]
             rw [enorm_complex_eq_ofReal, hnorm, hsgn1, one_mul,

@@ -353,7 +353,7 @@ unit is itself a unit. -/
 theorem adjoinRoot_isLocalHom_of_irreducible_map [IsLocalRing (AdjoinRoot g)]
     (hirr : Irreducible (g.map (IsLocalRing.residue A))) :
     IsLocalHom (AdjoinRoot.of g) := by
-  have h := ((IsLocalRing.local_hom_TFAE (AdjoinRoot.of g)).out 4 1).mp
+  have h := ((IsLocalRing.local_hom_tfae (AdjoinRoot.of g)).out 4 1).mp
   apply h
   rw [maximalIdeal_adjoinRoot_eq_map (g := g) hirr]
   exact Ideal.le_comap_map

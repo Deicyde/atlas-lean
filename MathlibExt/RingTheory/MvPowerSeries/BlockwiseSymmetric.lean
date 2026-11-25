@@ -688,7 +688,7 @@ theorem step_conjugate :
               (rs (Fin.last m)))).restrictScalars k).comp
           (MvPolynomial.mapAlgHom (R := k)
             (MvPolynomial.aeval (bes k m (rs ∘ Fin.castSucc)))) := by
-  refine AlgHom.coe_ringHom_injective (MvPolynomial.ringHom_ext ?_ ?_)
+  refine AlgHom.toRingHom_injective (MvPolynomial.ringHom_ext ?_ ?_)
   ·
     intro r
     simp only [AlgHom.coe_toRingHom, AlgHom.comp_apply, AlgEquiv.coe_toAlgHom,
@@ -734,7 +734,7 @@ theorem psiX_rename_blockPermEmbed (σ : ∀ j, Equiv.Perm (Fin (rs j)))
           (MvPolynomial.map (MvPolynomial.rename (R := k)
             (blockPermEmbed m (rs ∘ Fin.castSucc) (fun j => σ (Fin.castSucc j)))).toRingHom
             (psiX k rs p)) := by
-  refine DFunLike.congr_fun (AlgHom.coe_ringHom_injective (MvPolynomial.ringHom_ext ?_ ?_) :
+  refine DFunLike.congr_fun (AlgHom.toRingHom_injective (MvPolynomial.ringHom_ext ?_ ?_) :
     (psiX k rs).toAlgHom.comp (MvPolynomial.rename (blockPermEmbed (m + 1) rs σ))
       = ((MvPolynomial.rename (R := MvPolynomial (Fin (∑ j, (rs ∘ Fin.castSucc) j)) k)
           (σ (Fin.last m))).restrictScalars k).comp

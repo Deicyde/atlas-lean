@@ -264,7 +264,7 @@ theorem ArakelovDivisor.sectionSet_finite (D : ArakelovDivisor K) :
   rw [ArakelovDivisor.mem_sectionSet] at hx
   obtain ⟨hxI, hxb⟩ := hx
   refine ⟨?_, fun φ => ?_⟩
-  · obtain ⟨z, hz⟩ := hden x (FractionalIdeal.mem_coe.mpr hxI)
+  · obtain ⟨z, hz⟩ := hden x (FractionalIdeal.mem_coeToSubmodule.mpr hxI)
     rw [Algebra.smul_def] at hz
     exact hz ▸ RingOfIntegers.isIntegral_coe z
   · have hφx : ‖φ x‖ ≤ ((D.2 w₀ : ℝ)) := by

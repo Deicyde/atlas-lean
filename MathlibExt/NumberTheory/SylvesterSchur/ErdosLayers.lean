@@ -46,7 +46,7 @@ private lemma pow_mul_descFactorial_le_pow_mul_descFactorial {M N r : ℕ}
     _ = ∏ i ∈ Finset.range r, (N * (M - i)) := by
           rw [Finset.prod_mul_distrib]
     _ ≤ ∏ i ∈ Finset.range r, (M * (N - i)) := by
-          apply Finset.prod_le_prod'
+          apply Finset.prod_le_prod
           intro i hi
           have hir : i < r := Finset.mem_range.mp hi
           have hiM : i ≤ M := by omega

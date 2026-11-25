@@ -82,14 +82,14 @@ lemma isd_decayFun_sub_le (μ : ℕ → ProbabilityMeasure (ConfigSpace (Sym2 (S
   have hsub1 : (∫ x, f x ∂μn) - (∫ x, f' x ∂μn) = ∫ x, (f - f') x ∂μn := by
     rw [← integral_sub (f.integrable _) (f'.integrable _)]
     refine integral_congr_ae (Filter.Eventually.of_forall (fun x => ?_))
-    simp only [BoundedContinuousFunction.coe_sub, Pi.sub_apply]
+    simp only [FunLike.coe_sub, Pi.sub_apply]
   have hsub2 : (∫ x, f (shift g x) ∂μn) - (∫ x, f' (shift g x) ∂μn)
       = ∫ x, ((f - f').compContinuous T) x ∂μn := by
     rw [show (fun x => f (shift g x)) = (fun x => (f.compContinuous T) x) from rfl,
       show (fun x => f' (shift g x)) = (fun x => (f'.compContinuous T) x) from rfl,
       ← integral_sub ((f.compContinuous T).integrable _) ((f'.compContinuous T).integrable _)]
     refine integral_congr_ae (Filter.Eventually.of_forall (fun x => ?_))
-    simp only [BoundedContinuousFunction.compContinuous_apply, BoundedContinuousFunction.coe_sub,
+    simp only [BoundedContinuousFunction.compContinuous_apply, FunLike.coe_sub,
       Pi.sub_apply]
   have hlin : isd_decayFun μ g f n - isd_decayFun μ g f' n
       = (∫ x, (f - f') x ∂μn) - (∫ x, ((f - f').compContinuous T) x ∂μn) := by

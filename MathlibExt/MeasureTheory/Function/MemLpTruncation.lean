@@ -95,11 +95,11 @@ theorem memLp_iff_iSup_lintegral_Icc_inter_lt_top
   constructor
   · intro hfp
     rw [← lintegral_eq_iSup_lintegral_Icc_inter S hS _ (by measurability)]
-    exact (MeasureTheory.eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top
+    exact (MeasureTheory.eLpNorm_lt_top_iff_lintegral_rpow_eNorm_lt_top
       hp_ne_zero hp_ne_top hf.aestronglyMeasurable.restrict).mp hfp.eLpNorm_lt_top
   · intro h
     rw [memLp_iff,
-      MeasureTheory.eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top hp_ne_zero hp_ne_top
+      MeasureTheory.eLpNorm_lt_top_iff_lintegral_rpow_eNorm_lt_top hp_ne_zero hp_ne_top
         hf.aestronglyMeasurable.restrict]
     rwa [lintegral_eq_iSup_lintegral_Icc_inter S hS _ (by measurability)]
 

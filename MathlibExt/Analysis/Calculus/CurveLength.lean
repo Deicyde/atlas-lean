@@ -142,7 +142,7 @@ private theorem curveLength_lintegral_indicator_derivWithin_eq_ofReal_integral_n
     hγ.continuousOn_derivWithin (uniqueDiffOn_Icc hab) (by norm_num)
   have hh : Integrable h := hgcont.integrableOn_Icc.integrable_indicator measurableSet_Icc
   change ∫⁻ t in Ioc a b, ‖h t‖ₑ = ENNReal.ofReal (∫ t in a..b, ‖g t‖)
-  rw [← MeasureTheory.ofReal_integral_norm_eq_lintegral_enorm hh.restrict,
+  rw [← MeasureTheory.ofReal_integral_norm_eq_lintegral_eNorm hh.restrict,
     intervalIntegral.integral_of_le hab.le]
   congr 1
   apply setIntegral_congr_fun measurableSet_Ioc

@@ -62,7 +62,7 @@ noncomputable def stepLaw : Measure ℤ :=
 
 instance : IsProbabilityMeasure stepLaw := by
   constructor
-  simp only [stepLaw, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+  simp only [stepLaw, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
     measure_univ, smul_eq_mul, mul_one]
   rw [ENNReal.div_add_div_same, show (1 : ENNReal) + 2 = 3 by norm_num,
     ENNReal.div_self (by norm_num) (by norm_num)]

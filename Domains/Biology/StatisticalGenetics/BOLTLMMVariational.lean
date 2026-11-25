@@ -92,7 +92,7 @@ noncomputable def mixturePrior (p v₁ v₂ : ℝ≥0) : Measure ℝ :=
 theorem isProbabilityMeasure_mixturePrior {p : ℝ≥0} (hp : p ≤ 1) (v₁ v₂ : ℝ≥0) :
     IsProbabilityMeasure (mixturePrior p v₁ v₂) := by
   constructor
-  simp only [mixturePrior, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+  simp only [mixturePrior, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
     measure_univ, smul_eq_mul, mul_one]
   rw [← ENNReal.coe_add, add_tsub_cancel_of_le hp, ENNReal.coe_one]
 

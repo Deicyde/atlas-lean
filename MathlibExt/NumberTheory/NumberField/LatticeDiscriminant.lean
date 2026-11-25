@@ -126,7 +126,7 @@ theorem latticeDiscriminant_isFractional [IsFractionRing A K]
   have hle : latticeDiscriminant A K M ≤
       ((FractionalIdeal.spanSingleton (nonZeroDivisors A)
         (Algebra.discr K (bN : Fin _ → L))) : Submodule A K) := by
-    rw [FractionalIdeal.coe_spanSingleton]
+    rw [FractionalIdeal.coeToSubmodule_spanSingleton]
     exact latticeDiscriminant_le_span_singleton (A := A) (K := K) bN M hMN
   exact FractionalIdeal.isFractional_of_le hle
 

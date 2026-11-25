@@ -1004,8 +1004,8 @@ private lemma interpolationErrorVec_eLpNorm_tendsto_zero
     have hc : Tendsto (fun n => ‖interpolationCoeff n (u j)‖ₑ) atTop (nhds 0) := by
       change Tendsto ((fun a : ℝ => ‖a‖ₑ) ∘ fun n => interpolationCoeff n (u j))
         atTop (nhds 0)
-      simpa only [enorm_zero] using
-        (continuous_enorm.tendsto 0).comp (interpolationCoeff_tendsto_zero (u j))
+      simpa only [eNorm_zero] using
+        (continuous_eNorm.tendsto 0).comp (interpolationCoeff_tendsto_zero (u j))
     simpa only [zero_mul] using
       ENNReal.Tendsto.mul_const hc (Or.inr hMemLp.eLpNorm_lt_top.ne)
   have hsum : Tendsto (fun n => ∑ j : Fin d, ‖interpolationCoeff n (u j)‖ₑ * C)

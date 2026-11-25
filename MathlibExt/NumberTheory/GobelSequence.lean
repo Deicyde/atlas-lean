@@ -111,7 +111,7 @@ private theorem valAtLeast_of_natCast_mul {m : ℕ} (hm : 0 < m) (hmp : m < p)
   intro hx'
   have hm' : (m : ℚ) ≠ 0 := Nat.cast_ne_zero.mpr hm.ne'
   have h := hx.resolve_left (mul_ne_zero hm' hx')
-  simpa [padicValRat.mul hm' hx', padicValNat.eq_zero_of_not_dvd (Nat.not_dvd_of_pos_of_lt hm hmp)]
+  simpa [padicValRat.mul hm' hx', multiplicity_eq_zero_of_not_dvd (Nat.not_dvd_of_pos_of_lt hm hmp)]
     using h
 
 end gobelSequence_mul_index_congr

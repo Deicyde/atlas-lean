@@ -818,7 +818,8 @@ private theorem lapOmegaTerm (k m : ℕ) (hm : Nat.IsAlmostPrime (k + 1) m) :
     have hcast : ((x.1 * x.2 : ℕ) : ℝ) = (m : ℝ) := by rw [hxx]
     rw [← hcast, Nat.cast_mul, mul_inv_rev, mul_comm]
   have hω : m.primeFactors.card = ArithmeticFunction.cardDistinctFactors m := by
-    rw [ArithmeticFunction.cardDistinctFactors_apply, ← Nat.toFinset_factors]
+    rw [ArithmeticFunction.cardDistinctFactors_eq_length_dedup_primeFactorsList,
+      ← Nat.toFinset_factors]
     exact List.card_toFinset _
   rw [Finset.sum_congr rfl hterm, Finset.sum_const, nsmul_eq_mul, div_eq_mul_inv,
     ← hω, lapPrimeAntidiagCard m hm0]
@@ -897,7 +898,7 @@ private theorem lapRecipLower (k N : ℕ) :
     have hω : ArithmeticFunction.cardDistinctFactors m ≤ k + 1 :=
       calc ArithmeticFunction.cardDistinctFactors m
           = m.primeFactorsList.dedup.length :=
-            ArithmeticFunction.cardDistinctFactors_apply
+            ArithmeticFunction.cardDistinctFactors_eq_length_dedup_primeFactorsList
         _ ≤ m.primeFactorsList.length :=
             List.Sublist.length_le (List.dedup_sublist _)
         _ = ArithmeticFunction.cardFactors m :=

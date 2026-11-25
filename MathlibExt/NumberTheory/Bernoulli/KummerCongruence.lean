@@ -244,7 +244,7 @@ private theorem kummer_bound_nat_div {p : ℕ} [Fact (Nat.Prime p)] (a d : ℕ) 
     simp [kummer_padicBound]
   · have haq : (a : ℚ) ≠ 0 := by exact_mod_cast ha
     have hdq : (d : ℚ) ≠ 0 := by positivity
-    rw [kummer_padicBound, padicNorm.eq_zpow_of_nonzero (div_ne_zero haq hdq),
+    rw [kummer_padicBound, padicNorm.eq_zpow_of_ne_zero (div_ne_zero haq hdq),
       padicValRat.div haq hdq, padicValRat.of_nat, padicValRat.of_nat]
     apply zpow_le_zpow_right₀ (by exact_mod_cast (Fact.out : Nat.Prime p).one_le)
     have hv := Nat.padicValNat_le_self (p := p) d
@@ -716,7 +716,7 @@ public theorem kummer_congruence {p m n t : ℕ} [Fact (Nat.Prime p)]
   · exact Or.inl hzero
   · right
     have hne : kummer_beta p m - kummer_beta p n ≠ 0 := sub_ne_zero.mpr hzero
-    rw [kummer_padicBound, padicNorm.eq_zpow_of_nonzero hne] at hbound
+    rw [kummer_padicBound, padicNorm.eq_zpow_of_ne_zero hne] at hbound
     have hpq : (1 : ℚ) < p := by exact_mod_cast (Fact.out : Nat.Prime p).one_lt
     have hexp := (zpow_le_zpow_iff_right₀ hpq).mp hbound
     omega

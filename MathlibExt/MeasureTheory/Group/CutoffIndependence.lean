@@ -156,7 +156,7 @@ private theorem lintegral_enorm_mul_lt_top (F : G → ℂ) (hFm : Measurable F)
             U.indicator 1 ((t : G) * x) ∂τ ∂μ := by
           refine lintegral_congr fun x => ?_
           rw [lintegral_const_mul' _ _
-            (ENNReal.mul_ne_top enorm_ne_top ENNReal.ofReal_ne_top)]
+            (ENNReal.mul_ne_top eNorm_ne_top ENNReal.ofReal_ne_top)]
       _ = ∫⁻ t : T, ∫⁻ x, ‖F x‖ₑ * ENNReal.ofReal (w x) *
             U.indicator 1 ((t : G) * x) ∂μ ∂τ :=
           lintegral_lintegral_swap hint2.aemeasurable
@@ -185,7 +185,7 @@ private theorem lintegral_enorm_mul_lt_top (F : G → ℂ) (hFm : Measurable F)
             ∫⁻ t : T, ENNReal.ofReal (w ((t : G) * x)) ∂τ ∂μ := by
           refine lintegral_congr fun x => ?_
           rw [← lintegral_const_mul' _ _
-            (ENNReal.mul_ne_top enorm_ne_top (by by_cases hxU : x ∈ U <;> simp [hxU]))]
+            (ENNReal.mul_ne_top eNorm_ne_top (by by_cases hxU : x ∈ U <;> simp [hxU]))]
           refine lintegral_congr fun t => ?_
           ring
   have step3 : ∫⁻ x, ‖F x‖ₑ * U.indicator 1 x *
@@ -225,8 +225,8 @@ theorem integrable_mul_of_integral_subgroup_translate_eq_one
     Integrable (fun x => F x * (w x : ℂ)) μ := by
   obtain ⟨C, hC⟩ := hFb
   refine ⟨(hFm.mul (Complex.measurable_ofReal.comp hwm)).aestronglyMeasurable, ?_⟩
-  rw [hasFiniteIntegral_iff_enorm]
-  simpa only [enorm_mul, enorm_ofReal_of_nonneg (hw0 _)] using
+  rw [hasFiniteIntegral_iff_eNorm]
+  simpa only [eNorm_mul, enorm_ofReal_of_nonneg (hw0 _)] using
     lintegral_enorm_mul_lt_top T μ τ hT F hFm hC hFT w hw0 hwm hwc hw1
 
 end

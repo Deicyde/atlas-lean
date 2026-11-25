@@ -249,7 +249,7 @@ private lemma tendsto_eLpNorm_trunc_sub_of_memLp [IsFiniteMeasure μ] {p : ℝ�
         rw [Real.enorm_eq_ofReal_abs, Real.enorm_eq_ofReal_abs]
         exact ENNReal.ofReal_le_ofReal (by simpa [Real.norm_eq_abs] using htrunc_le k ω)
       _ = ‖(2 : ℝ) * g ω‖ₑ := by
-        rw [enorm_mul, show (2 : ℝ) = ((2 : ℕ) : ℝ) by norm_num, Real.enorm_natCast]
+        rw [eNorm_mul, show (2 : ℝ) = ((2 : ℕ) : ℝ) by norm_num, Real.eNorm_natCast]
         exact_mod_cast (two_mul (‖g ω‖ₑ)).symm
   have hae : ∀ᵐ ω ∂μ, Tendsto (fun k => (truncAt g k - g) ω) atTop (𝓝 0) := by
     filter_upwards with ω

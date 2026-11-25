@@ -561,7 +561,7 @@ private theorem kh_ebridge (N : ℕ) (a : Fin N → ℝ) (Ω : Type*) [Measurabl
     Filter.Eventually.of_forall (fun ω => Real.rpow_nonneg (abs_nonneg _) p)
   have hep0 : ENNReal.ofReal p ≠ 0 := ne_of_gt (ENNReal.ofReal_pos.mpr hp)
   have heptop : ENNReal.ofReal p ≠ ⊤ := ENNReal.ofReal_ne_top
-  rw [MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm_toReal hep0 heptop
+  rw [MeasureTheory.eLpNorm_eq_lintegral_rpow_eNorm_toReal hep0 heptop
     hS.aestronglyMeasurable, ENNReal.toReal_ofReal hp.le]
   have hcongr : (∫⁻ ω, ‖(∑ i, a i * ε i ω)‖ₑ ^ p ∂μ)
       = ∫⁻ ω, ENNReal.ofReal (|∑ i, a i * ε i ω| ^ p) ∂μ := by
@@ -734,7 +734,7 @@ theorem khintchine_inequality :
             rw [← add_div, show (2 : ℝ) + (2 - p) = 4 - p by ring,
               div_self h4pne]
           have hSaem : AEMeasurable (fun ω => ‖(∑ i, a i * ε i ω)‖ₑ) μ :=
-            (kh_S_meas N a Ω ε hmeas).aemeasurable.enorm
+            (kh_S_meas N a Ω ε hmeas).aemeasurable.eNorm
           have hetop : ∀ ω, ‖(∑ i, a i * ε i ω)‖ₑ ≠ ⊤ := by
             intro ω
             rw [Real.enorm_eq_ofReal_abs]

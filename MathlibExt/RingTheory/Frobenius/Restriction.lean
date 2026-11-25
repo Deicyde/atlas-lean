@@ -103,7 +103,7 @@ theorem restrictNormalHom_eq_of_isArithFrobAt
         (NumberField.RingOfIntegers L) σ_L) :=
     hRestrict.eq_of_isUnramifiedAt hL hQ
   apply AlgEquiv.coe_toAlgHom_injective
-  apply AlgHom.coe_ringHom_injective
+  apply AlgHom.toRingHom_injective
   apply IsFractionRing.ringHom_ext (A := NumberField.RingOfIntegers L)
   intro x
   have key : ∀ y : NumberField.RingOfIntegers L,

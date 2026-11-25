@@ -278,14 +278,14 @@ private noncomputable def PhiLM
     intro z
     have h1 : (d + e).1 z.1 = d.1 z.1 + e.1 z.1 := rfl
     have h2 : (d + e).2 z.2 = d.2 z.2 + e.2 z.2 := rfl
-    simp only [phiPlusPsi_apply, BoundedContinuousFunction.add_apply, h1, h2]
+    simp only [phiPlusPsi_apply, add_apply, h1, h2]
     ring
   map_smul' c d := by
     apply BoundedContinuousFunction.ext
     intro z
     have h1 : (c • d).1 z.1 = c • d.1 z.1 := rfl
     have h2 : (c • d).2 z.2 = c • d.2 z.2 := rfl
-    simp only [phiPlusPsi_apply, BoundedContinuousFunction.smul_apply, h1, h2, smul_add,
+    simp only [phiPlusPsi_apply, smul_apply, h1, h2, smul_add,
       RingHom.id_apply]
 
 /-- The dual objective as a linear map on pairs of bounded continuous functions. -/
@@ -411,7 +411,7 @@ private theorem isOpen_negBCF
   intro z
   have h3 : w' z - w z ≤ ‖w' - w‖ := by
     have hnorm := (w' - w).norm_coe_le_norm z
-    rw [BoundedContinuousFunction.sub_apply, Real.norm_eq_abs] at hnorm
+    rw [sub_apply, Real.norm_eq_abs] at hnorm
     exact le_trans (le_abs_self _) hnorm
   have h4 : w z ≤ w z₀ := hz₀ z
   linarith
@@ -422,8 +422,8 @@ private theorem convex_negBCF
     Convex ℝ {w : W →ᵇ ℝ | ∀ z, w z < 0} := by
   intro w₁ hw₁ w₂ hw₂ a b ha hb hab z
   have e : (a • w₁ + b • w₂) z = a * w₁ z + b * w₂ z := by
-    rw [BoundedContinuousFunction.add_apply, BoundedContinuousFunction.smul_apply,
-      BoundedContinuousFunction.smul_apply, smul_eq_mul, smul_eq_mul]
+    rw [add_apply, smul_apply,
+      smul_apply, smul_eq_mul, smul_eq_mul]
   rw [e]
   have h1 : a * w₁ z ≤ 0 := mul_nonpos_of_nonneg_of_nonpos ha (le_of_lt (hw₁ z))
   have h2 : b * w₂ z ≤ 0 := mul_nonpos_of_nonneg_of_nonpos hb (le_of_lt (hw₂ z))
@@ -446,8 +446,8 @@ private theorem sepMap_apply
     (p : (W →ᵇ ℝ) × ℝ) (z : W) :
     sepMap cb t p z = p.1 z - cb z - (p.2 - t) := by
   change (p.1 - cb - (p.2 - t) • 1) z = _
-  rw [BoundedContinuousFunction.sub_apply, BoundedContinuousFunction.sub_apply,
-    BoundedContinuousFunction.smul_apply]
+  rw [sub_apply, sub_apply,
+    smul_apply]
   congr 1
   have h1 : (1 : (W →ᵇ ℝ)) z = 1 := rfl
   rw [h1, smul_eq_mul, mul_one]
@@ -493,8 +493,8 @@ private theorem sepMap_affine
   intro z
   have e1 : ((a • p + b • q).1) z = a • p.1 z + b • q.1 z := rfl
   have e2 : (a • p + b • q).2 = a • p.2 + b • q.2 := rfl
-  rw [sepMap_apply, e1, e2, BoundedContinuousFunction.add_apply,
-    BoundedContinuousFunction.smul_apply, BoundedContinuousFunction.smul_apply,
+  rw [sepMap_apply, e1, e2, add_apply,
+    smul_apply, smul_apply,
     sepMap_apply, sepMap_apply]
   simp only [smul_eq_mul]
   linear_combination (cb z - t) * hab
@@ -667,7 +667,7 @@ private theorem exists_posFunctional
       rw [sepSet_mem]
       intro z
       have e1 : (mkBCF c hc - s • w) z = (mkBCF c hc) z - s * w z := by
-        rw [BoundedContinuousFunction.sub_apply, BoundedContinuousFunction.smul_apply,
+        rw [sub_apply, smul_apply,
           smul_eq_mul]
       rw [e1]
       have hsw : 0 ≤ s * w z := mul_nonneg hs (hw z)
@@ -917,7 +917,7 @@ private theorem coupling_of_posFunctional
         have hnonneg : 0
             ≤ Pim (h.toBoundedContinuousFunction - g.toBoundedContinuousFunction) :=
           hpos _ (fun z => by
-            rw [BoundedContinuousFunction.sub_apply]
+            rw [sub_apply]
             linarith [hle z])
         have hadd : Pim (h.toBoundedContinuousFunction - g.toBoundedContinuousFunction)
             = Pim (h.toBoundedContinuousFunction) - Pim (g.toBoundedContinuousFunction) := by

@@ -170,7 +170,7 @@ theorem le_card_of_covers {m : ℕ} (a : Fin m → Fin n → F) (b : Fin m → F
     · have : t.degree = ∑ i ∈ t.support, t i := rfl
       rw [this]
       exact le_totalDegree (mem_support_iff.2 hPne)
-  obtain ⟨x, hx, hne⟩ := combinatorial_nullstellensatz_exists_eval_nonzero P t hPne hPdeg
+  obtain ⟨x, hx, hne⟩ := combinatorial_nullstellensatz_exists_eval_ne_zero P t hPne hPdeg
     (fun _ => {0, 1}) fun j => by
       have : t j = 1 := by simp [ht, Finsupp.finsetSum_apply, Finsupp.single_apply]
       rw [this]

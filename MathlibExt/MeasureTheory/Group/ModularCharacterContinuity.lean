@@ -49,7 +49,7 @@ theorem continuous_modularCharacter
   obtain ⟨ψ, hψcomp, hψnonneg, hψone⟩ := exists_continuous_nonneg_pos (1 : G)
   let I : ℝ := ∫ x : G, ψ x ∂μ
   have hI : I ≠ 0 := ne_of_gt
-    (ψ.continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero
+    (ψ.continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero
       hψcomp hψnonneg hψone)
   have hIntegral : Continuous (fun g : G => ∫ x : G, ψ (x * g) ∂μ) := by
     rw [continuous_iff_continuousAt]

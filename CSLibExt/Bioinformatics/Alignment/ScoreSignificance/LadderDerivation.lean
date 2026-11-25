@@ -804,7 +804,7 @@ theorem integrable_descLadderEpoch (hs : 0 ≤ s) (hexp : Integrable (fun y => R
   have hpt : ∀ x : ℕ → ℝ, ‖(descLadderEpoch x : ℝ)‖ₑ =
       ∑' k, Set.indicator {x : ℕ → ℝ | k < descLadderEpoch x} 1 x := by
     intro x
-    rw [Real.enorm_natCast, tsum_eq_sum (s := range (descLadderEpoch x)) fun k hk => by
+    rw [Real.eNorm_natCast, tsum_eq_sum (s := range (descLadderEpoch x)) fun k hk => by
       simp only [mem_range, not_lt] at hk
       simp [not_lt.2 hk]]
     rw [sum_congr rfl fun k hk => by

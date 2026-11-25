@@ -37,7 +37,7 @@ example : ¬ IsTightFamilyReal (fun n : ℕ => Measure.dirac (n : ℝ)) := by
     intro hmem
     exact (not_le.mpr hn) hmem.2
   have h0 : Measure.dirac (n : ℝ) (Set.Icc (-M) M) = 0 :=
-    (dirac_eq_zero_iff_not_mem measurableSet_Icc).mpr hnot
+    (dirac_eq_zero_iff_notMem measurableSet_Icc).mpr hnot
   have hle : (1 : ℝ≥0∞) - 1 / 2 ≤ 0 := by simpa [h0] using hM n
   rw [tsub_le_iff_right] at hle
   simp only [zero_add] at hle

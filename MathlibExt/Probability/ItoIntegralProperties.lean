@@ -202,7 +202,7 @@ private theorem integrandDist_eq_const_mul {P : Measure Ω}
         ∫⁻ ω, (∫⁻ u in Set.Ioc (0 : ℝ) t,
           ‖c‖ₑ ^ 2 * ‖H u.toNNReal ω - K u.toNNReal ω‖ₑ ^ 2) ∂P := by
       refine lintegral_congr fun ω ↦ setLIntegral_congr_fun measurableSet_Ioc fun u _ ↦ ?_
-      rw [h, enorm_mul, mul_pow]
+      rw [h, eNorm_mul, mul_pow]
     _ = ∫⁻ ω, ‖c‖ₑ ^ 2 *
         (∫⁻ u in Set.Ioc (0 : ℝ) t, ‖H u.toNNReal ω - K u.toNNReal ω‖ₑ ^ 2) ∂P := by
       refine lintegral_congr fun ω ↦ ?_
@@ -232,7 +232,7 @@ private theorem itoIntegralL2_zero {P : Measure Ω} {F : Filtration ℝ≥0 mΩ}
   have hmem := memLp_itoIntegral P F B (fun _ _ ↦ (0 : ℝ)) t
   have henorm : (fun ω ↦ ‖itoIntegral P F B (fun _ _ ↦ (0 : ℝ)) t ω‖ₑ ^ 2) =ᵐ[P]
       0 := (lintegral_eq_zero_iff'
-        (hmem.aestronglyMeasurable.enorm.pow_const 2)).mp hsq
+        (hmem.aestronglyMeasurable.eNorm.pow_const 2)).mp hsq
   have hzero : itoIntegral P F B (fun _ _ ↦ (0 : ℝ)) t =ᵐ[P] 0 := by
     filter_upwards [henorm] with ω hω
     simpa using hω

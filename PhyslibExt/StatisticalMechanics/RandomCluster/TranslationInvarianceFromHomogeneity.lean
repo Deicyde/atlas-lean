@@ -413,7 +413,7 @@ lemma cdc_decayFun_smul (μ : ℕ → ProbabilityMeasure (ConfigSpace (Sym2 (Sit
 lemma cdc_decayFun_zero (μ : ℕ → ProbabilityMeasure (ConfigSpace (Sym2 (Site d))))
     (g : Multiplicative (Site d)) (n : ℕ) :
     isd_decayFun μ g (0 : ConfigSpace (Sym2 (Site d)) →ᵇ ℝ) n = 0 := by
-  simp only [isd_decayFun, BoundedContinuousFunction.coe_zero, Pi.zero_apply, integral_zero,
+  simp only [isd_decayFun, FunLike.coe_zero, Pi.zero_apply, integral_zero,
     sub_zero]
 
 /-- The continuous functions whose shift-decay functional along the wired box measures (on the

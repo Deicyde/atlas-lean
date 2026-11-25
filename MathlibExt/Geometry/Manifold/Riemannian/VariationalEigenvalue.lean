@@ -407,7 +407,7 @@ theorem mass_pos_lt_top_of_mem_smoothTestSubmodule {E' : Type*}
   have hRne : (fun x : M => (((⇑u : M → ℝ) x) ^ 2 : ℝ)) x₀ ≠ 0 :=
     pow_ne_zero 2 hx₀
   have hIntPos : 0 < ∫ x : M, (((⇑u : M → ℝ) x) ^ 2 : ℝ) ∂μ :=
-    Continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero hRcont
+    Continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero hRcont
       hRsupp (fun x => sq_nonneg _) hRne
   have hInt : Integrable (fun x : M => (((⇑u : M → ℝ) x) ^ 2 : ℝ)) μ :=
     Continuous.integrable_of_hasCompactSupport hRcont hRsupp

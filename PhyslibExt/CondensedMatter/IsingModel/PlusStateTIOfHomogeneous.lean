@@ -285,7 +285,7 @@ lemma iti_decayFun_smul (μ : ℕ → ProbabilityMeasure (ConfigSpace (Site d)))
 lemma iti_decayFun_zero (μ : ℕ → ProbabilityMeasure (ConfigSpace (Site d)))
     (g : Multiplicative (Site d)) (n : ℕ) :
     pstc_decayFun μ g (0 : ConfigSpace (Site d) →ᵇ ℝ) n = 0 := by
-  simp only [pstc_decayFun, BoundedContinuousFunction.coe_zero, Pi.zero_apply, integral_zero,
+  simp only [pstc_decayFun, FunLike.coe_zero, Pi.zero_apply, integral_zero,
     sub_zero]
 
 /-- The continuous functions whose shifted integrals against the plus box measures decay along

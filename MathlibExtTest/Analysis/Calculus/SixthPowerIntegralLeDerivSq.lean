@@ -24,7 +24,7 @@ example : ∃ C : ℝ, 0 < C ∧ ∀ (c : ℝ) (b : ContDiffBump c),
   refine ⟨C, hC, fun c b ↦ ?_⟩
   let m := ∫ x, b x ^ 2
   have hb : b c = 1 := b.one_of_mem_closedBall (Metric.mem_closedBall_self b.rIn_pos.le)
-  have hm : 0 < m := (b.continuous.pow 2).integral_pos_of_hasCompactSupport_nonneg_nonzero
+  have hm : 0 < m := (b.continuous.pow 2).integral_pos_of_hasCompactSupport_nonneg_ne_zero
     (b.hasCompactSupport.comp_left (g := fun z ↦ z ^ 2) (by norm_num))
     (fun _ ↦ sq_nonneg _) (x := c) (by simp [hb])
   have hnorm : (∫ x, (b x / √m) ^ 2) = 1 := by

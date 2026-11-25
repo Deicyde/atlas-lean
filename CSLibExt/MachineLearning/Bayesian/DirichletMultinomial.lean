@@ -67,7 +67,7 @@ private theorem sum_smul_dirac_singleton {𝓨 : Type*} [Fintype 𝓨] [Measurab
     [MeasurableSingletonClass 𝓨] (w : 𝓨 → ℝ≥0∞) (y : 𝓨) :
     (∑ y', w y' • Measure.dirac y') {y} = w y := by
   classical
-  rw [Measure.coe_finsetSum, Finset.sum_apply, Finset.sum_eq_single y]
+  rw [FunLike.coe_sum, Finset.sum_apply, Finset.sum_eq_single y]
   · simp
   · intro b _ hb
     simp [Measure.dirac_apply' _ (measurableSet_singleton y), Ne.symm hb]

@@ -82,7 +82,7 @@ public theorem circleIntegral_eq_sum_residue_of_simplePole
         have h₂ : ∀ᶠ w in 𝓝[≠] z, w ∈ ({z}ᶜ : Set ℂ) :=
           eventually_mem_nhdsWithin
         filter_upwards [h₁.filter_mono nhdsWithin_le_nhds, h₂] with w hw₁ hw₂ hwZ
-        simp only [Set.mem_compl_iff, Finset.coe_erase, Set.mem_diff,
+        simp only [Set.mem_compl_iff, Finset.coe_erase, Set.mem_sdiff,
           Set.mem_singleton_iff, Finset.mem_coe, not_and, not_not] at hw₁
         exact hw₂ (hw₁ hwZ)
       have hev : (fun w => if hw : w ∈ Z then

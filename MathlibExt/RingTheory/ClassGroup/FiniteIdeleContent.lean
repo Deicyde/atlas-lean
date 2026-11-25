@@ -274,7 +274,7 @@ private theorem expAt_principal (v : HeightOneSpectrum R) (u : Kˣ) :
     expAt R K v (Units.map (algebraMap K (FiniteAdeleRing R K) : K →* FiniteAdeleRing R K) u) =
       -log (v.valuation K (u : K)) := by
   unfold expAt
-  rw [Units.coe_map, MonoidHom.coe_coe, valued_coe_eq_valuation]
+  rw [Units.coe_map, MonoidHom.coe_ofClass, valued_coe_eq_valuation]
 
 private theorem contentHom_principal (u : Kˣ) :
     contentHom R K (Units.map (algebraMap K (FiniteAdeleRing R K) : K →* FiniteAdeleRing R K) u)
@@ -288,7 +288,7 @@ private theorem contentHom_principal (u : Kˣ) :
     intro v
     rw [count_assocIdeal, count_spanSingleton_eq_neg_log_valuation, expAt_principal]
   simp only [Units.val_mk0, key]
-  rw [FractionalIdeal.coe_spanSingleton]
+  rw [FractionalIdeal.coeToSubmodule_spanSingleton]
   exact ⟨⟨(u : K), rfl⟩⟩
 
 private lemma expAt_eq_zero_of_mem_unitIdeles {x : (FiniteAdeleRing R K)ˣ} (h : x ∈ unitIdeles R K)
@@ -325,7 +325,7 @@ public theorem ker_contentHom_eq :
     have ha' : assocIdeal R K x = FractionalIdeal.spanSingleton R⁰ a := by
       apply FractionalIdeal.coeToSubmodule_injective
       show (assocIdeal R K x : Submodule R K) = (FractionalIdeal.spanSingleton R⁰ a : Submodule R K)
-      rw [FractionalIdeal.coe_spanSingleton]
+      rw [FractionalIdeal.coeToSubmodule_spanSingleton]
       simpa using ha
     have ha0 : a ≠ 0 := by
       intro h0
@@ -395,7 +395,7 @@ public theorem contentHom_surjective : Function.Surjective (contentHom R K) := b
     ⟨fun v => a v ^ n v, Filter.Eventually.of_forall fun v =>
       (mem_adicCompletionIntegers R K v).mpr (by
         rw [map_pow]
-        exact pow_le_one₀ zero_le' (hale v))⟩
+        exact pow_le_one₀ zero_le (hale v))⟩
   let g : FiniteAdeleRing R K :=
     ⟨fun v => (a v)⁻¹ ^ n v, hfin.mono fun v hv => by
       simp only at hv ⊢

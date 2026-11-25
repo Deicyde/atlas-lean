@@ -336,7 +336,7 @@ theorem IsBrownianReal.isGaussianProcess_ouPathSolution {Ω : Type*} {mΩ : Meas
       ring
     simp_rw [heq]
     simpa using ENNReal.Tendsto.const_mul (a := ‖σ * exp (-θ * t)‖ₑ) (hL2 t)
-      (Or.inr enorm_ne_top)
+      (Or.inr eNorm_ne_top)
   -- orthogonality of independent variables to the Wiener integral
   have horth : ∀ (Y : Ω → ℝ), MemLp Y 2 P → IndepFun Y (fun ω t ↦ B t ω) P →
       ∀ t, ∫ ω, Y ω * I t ω ∂P = 0 := by

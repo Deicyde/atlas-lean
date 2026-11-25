@@ -175,7 +175,7 @@ private theorem isAdicComplete_maximalIdeal_of_module_finite [IsNoetherianRing �
     IsAdicComplete (maximalIdeal T) T := by
   let _ : Algebra.IsIntegral 𝒪 T := Algebra.IsIntegral.of_finite 𝒪 T
   let _ : IsLocalHom (algebraMap 𝒪 T) := by
-    apply ((IsLocalRing.local_hom_TFAE (algebraMap 𝒪 T)).out 5 1).mp
+    apply ((IsLocalRing.local_hom_tfae (algebraMap 𝒪 T)).out 5 1).mp
     have hmax : ((maximalIdeal T).comap (algebraMap 𝒪 T)).IsMaximal :=
       Ideal.isMaximal_comap_of_isIntegral_of_isMaximal (algebraMap 𝒪 T)
         (algebraMap_isIntegral_iff.mpr inferInstance) (maximalIdeal T)

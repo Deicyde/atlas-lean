@@ -127,7 +127,7 @@ private theorem spectralRadius_ne_top (M : Matrix ι ι ℂ) : spectralRadius �
   classical
   let _ : NormedRing (Matrix ι ι ℂ) := Matrix.linftyOpNormedRing
   let _ : NormedAlgebra ℂ (Matrix ι ι ℂ) := Matrix.linftyOpNormedAlgebra
-  exact ne_top_of_le_ne_top ENNReal.coe_ne_top (spectralRadius_le_nnnorm M)
+  exact ne_top_of_le_ne_top ENNReal.coe_ne_top (spectralRadius_le_nnNorm M)
 
 /-- `ρ(V⁻¹ F) = ρ(F V⁻¹)` for invertible `V`. -/
 private theorem spectralRadius_inv_mul {F V : Matrix ι ι ℝ} (hV : IsUnit V) :

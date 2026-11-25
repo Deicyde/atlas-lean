@@ -604,7 +604,7 @@ lemma secondOrderABSolB_pos (A0 B0 k t : ℝ) (hA0 : 0 < A0) (hB0 : 0 < B0) (hk 
     have key : secondOrderABSolB A0 B0 k t
         = (B0 - A0) * B0 / (B0 - A0 * Real.exp (-k * (B0 - A0) * t)) := by
       unfold secondOrderABSolB secondOrderABSolA
-      rw [div_add' _ _ _ hM, div_left_inj' hM]
+      rw [div_add' _ _ _ hM, div_left_inj₀ hM]
       ring
     rw [key]
     apply div_pos_of_neg_of_neg

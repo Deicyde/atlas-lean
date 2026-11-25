@@ -89,7 +89,7 @@ theorem toPrincipalIdeal_eq_iff_exists_integralUnit_mul (x y : Kˣ) :
     have hU : Units.map (algebraMap (𝓞 K) K).toMonoidHom z * x = y := by
       apply Units.ext
       simp only [Units.val_mul, Units.coe_map, RingHom.toMonoidHom_eq_coe,
-        MonoidHom.coe_coe]
+        MonoidHom.coe_ofClass]
       exact hz
     rw [map_inv, ← hU, inv_mul_cancel_left]
   · rintro ⟨u, rfl⟩
@@ -104,7 +104,7 @@ theorem toPrincipalIdeal_eq_iff_exists_integralUnit_mul (x y : Kˣ) :
         rw [FractionalIdeal.spanSingleton_eq_spanSingleton]
         refine ⟨u⁻¹, ?_⟩
         rw [Units.smul_def, Algebra.smul_def, Units.coe_map,
-          RingHom.toMonoidHom_eq_coe, MonoidHom.coe_coe]
+          RingHom.toMonoidHom_eq_coe, MonoidHom.coe_ofClass]
         rw [← map_mul, Units.inv_mul, map_one]
       rwa [FractionalIdeal.spanSingleton_one] at hmem
     rw [hunit, one_mul]

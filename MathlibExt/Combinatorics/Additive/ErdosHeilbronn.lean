@@ -291,7 +291,7 @@ theorem min_le_card_restrictedSumset {p : ℕ} (hp : p.Prime) {A : Finset (ZMod 
     · have : t.degree = ∑ i ∈ t.support, t i := rfl
       rw [this]
       exact le_totalDegree (mem_support_iff.2 hcoeff_ne)
-  obtain ⟨s, hs, hne⟩ := combinatorial_nullstellensatz_exists_eval_nonzero Q t hcoeff_ne htot S
+  obtain ⟨s, hs, hne⟩ := combinatorial_nullstellensatz_exists_eval_ne_zero Q t hcoeff_ne htot S
     (fun i => by
       fin_cases i
       · simp [hS, ht]; omega

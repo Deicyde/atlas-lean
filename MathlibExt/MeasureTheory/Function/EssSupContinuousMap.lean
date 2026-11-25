@@ -46,7 +46,7 @@ theorem eLpNormEssSup_eq_enorm_continuousMap
     eLpNormEssSup (fun x => f x) μ = ‖f‖ₑ := by
   rw [eLpNormEssSup_eq_essSup_enorm]
   set g : α → ℝ≥0∞ := fun x => ‖f x‖ₑ with hg
-  have hcont : Continuous g := continuous_enorm.comp f.continuous
+  have hcont : Continuous g := continuous_eNorm.comp f.continuous
   have h_essSup_eq : essSup g μ = ⨆ x, g x := by
     apply le_antisymm
     · exact essSup_le_of_ae_le _ (by filter_upwards with x; exact le_iSup g x)
@@ -60,7 +60,7 @@ theorem eLpNormEssSup_eq_enorm_continuousMap
         measure_mono_null (fun y hy => not_le.mpr hy) (ae_iff.mp (ae_le_essSup (f := g)))
       exact absurd hzero (ne_of_gt hpos)
   rw [h_essSup_eq]
-  exact (ContinuousMap.enorm_eq_iSup_enorm f).symm
+  exact (ContinuousMap.eNorm_eq_iSup_eNorm f).symm
 
 /-- **The $L^\infty$ norm of a continuous map is its supremum norm.** Let $\alpha$ be a compact
 topological space with its Borel $\sigma$-algebra, let $\mu$ be a measure on $\alpha$ that is

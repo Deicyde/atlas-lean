@@ -40,7 +40,7 @@ theorem lr_false : lr false = 1 / 2 := by norm_num [lr, altPmf, nullPmf]
 
 instance : IsProbabilityMeasure coin := by
   constructor
-  simp only [coin, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+  simp only [coin, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
     measure_univ, smul_eq_mul, mul_one]
   rw [← ENNReal.ofReal_add (by norm_num) (by norm_num)]
   norm_num
@@ -210,7 +210,7 @@ theorem markov_fails_bad :
     ext b
     cases b <;> norm_num [bad]
   rw [hset]
-  simp only [coin, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+  simp only [coin, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
     smul_eq_mul, Measure.dirac_apply, Set.indicator, Set.mem_singleton_iff]
   simp only [ite_true, Bool.false_eq_true, ite_false, Pi.one_apply, mul_one, mul_zero, add_zero]
   exact (ENNReal.ofReal_lt_ofReal_iff (by norm_num)).2 (by norm_num)

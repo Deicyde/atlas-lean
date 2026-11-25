@@ -2068,7 +2068,7 @@ private theorem rothLastEquiv_hasse_coeff {n : ℕ} {R : Type*} [CommSemiring R]
       rothMvHasse i ((Polynomial.hasseDeriv a (rothLastEquiv R n P)).coeff b) := by
   ext j
   rw [rothLastEquiv_coeff_coeff, rothMvHasse_coeff, rothMvHasse_coeff,
-    Polynomial.hasseDeriv_coeff, ← MvPolynomial.C_eq_coe_nat,
+    Polynomial.hasseDeriv_coeff, ← MvPolynomial.C_eq_natCast,
     MvPolynomial.coeff_C_mul, rothLastEquiv_coeff_coeff]
   rw [Fin.prod_univ_castSucc]
   simp only [rothLastIndex_add, rothLastIndex_castSucc, rothLastIndex_last,
@@ -2090,7 +2090,7 @@ private theorem rothLastEquiv_hasse_of_tensor_decomposition {n k : ℕ}
   simp only [Polynomial.coeff_C_mul, Polynomial.hasseDeriv_coeff]
   rw [hQ, Polynomial.finsetSum_coeff]
   simp only [Polynomial.coeff_C_mul, Polynomial.coeff_map]
-  rw [← MvPolynomial.C_eq_coe_nat, ← MvPolynomial.smul_eq_C_mul,
+  rw [← MvPolynomial.C_eq_natCast, ← MvPolynomial.smul_eq_C_mul,
     rothMvHasse_smul, rothMvHasse_finset_sum, MvPolynomial.coeff_smul,
     MvPolynomial.coeff_sum]
   rw [Finset.smul_sum, MvPolynomial.coeff_sum]
@@ -2345,7 +2345,7 @@ private theorem rothLastSlice_hasse_eval {n : ℕ}
   rw [rothMvHasse_eval_zero]
   simp only [Polynomial.hasseDeriv_coeff, Polynomial.coeff_map]
   rw [rothLastSlice_coeff]
-  rw [← MvPolynomial.C_eq_coe_nat, ← MvPolynomial.smul_eq_C_mul,
+  rw [← MvPolynomial.C_eq_natCast, ← MvPolynomial.smul_eq_C_mul,
     MvPolynomial.coeff_smul]
   rw [rothLastEquiv_coeff_coeff, MvPolynomial.coeff_map]
   simp [smul_eq_mul]

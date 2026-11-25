@@ -235,7 +235,7 @@ theorem one_lt_persistenceNumber_C₃ : 1 < persistenceNumber C₃ (fun _ => 1) 
   have hfin : spectralRadius ℂ (C₃.map (algebraMap ℝ ℂ)) ≠ ⊤ := by
     let _ : NormedRing (Matrix (Fin 3) (Fin 3) ℂ) := Matrix.linftyOpNormedRing
     let _ : NormedAlgebra ℂ (Matrix (Fin 3) (Fin 3) ℂ) := Matrix.linftyOpNormedAlgebra
-    exact ne_top_of_le_ne_top ENNReal.coe_ne_top (spectralRadius_le_nnnorm _)
+    exact ne_top_of_le_ne_top ENNReal.coe_ne_top (spectralRadius_le_nnNorm _)
   unfold persistenceNumber MathlibExt.Biology.Epidemiology.NextGenerationMatrix.R0
   rw [diagonal_one, inv_one, Matrix.mul_one]
   have := (ENNReal.ofReal_le_iff_le_toReal hfin).1 hlow

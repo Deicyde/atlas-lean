@@ -635,7 +635,7 @@ private theorem pwBump {z : G} (hz : z ≠ 1) :
       rw [hf1v, inv_one, hf1v, one_mul]
       exact one_ne_zero
     have hpos : 0 < ∫ h, f h * f h⁻¹ ∂(pwHaar G) :=
-      fcont.integral_pos_of_hasCompactSupport_nonneg_nonzero fcomp hnn h1v
+      fcont.integral_pos_of_hasCompactSupport_nonneg_ne_zero fcomp hnn h1v
     have hci : (∫ h, k h * k h⁻¹ ∂(pwHaar G))
         = ((∫ h, f h * f h⁻¹ ∂(pwHaar G) : ℝ) : ℂ) := by
       rw [← integral_complex_ofReal]

@@ -264,7 +264,7 @@ theorem ramificationIdx_eq_one_iff_le_inertiaField
     P_E.ramificationIdx A = 1 ↔
       E ≤ IntermediateField.fixedField (P.inertia (L ≃ₐ[K] L)) := by
   rw [ramificationIdx_eq_one_iff_inertia_le_fixingSubgroup K L P p E C_E P_E]
-  exact (IntermediateField.le_iff_le (P.inertia (L ≃ₐ[K] L)) E).symm
+  exact (IntermediateField.le_fixedField_iff_le_fixingSubgroup (P.inertia (L ≃ₐ[K] L)) E).symm
 
 set_option maxHeartbeats 400000 in
 /-- **Tower formula for decomposition groups.**
@@ -425,7 +425,7 @@ theorem ramificationIdx_inertiaDeg_eq_one_iff_le_decompositionField
       E ≤ IntermediateField.fixedField
         (@MulAction.stabilizer (L ≃ₐ[K] L) (Ideal B) _
           Ideal.pointwiseMulSemiringAction.toMulAction P) := by
-  rw [IntermediateField.le_iff_le]
+  rw [IntermediateField.le_fixedField_iff_le_fixingSubgroup]
   exact ramificationIdx_inertiaDeg_eq_one_iff_stabilizer_le_fixingSubgroup K L P p E C_E P_E
 
 /-- **Fields below the inertia and decomposition fields.**

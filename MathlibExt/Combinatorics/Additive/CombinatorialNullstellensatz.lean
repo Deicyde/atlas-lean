@@ -80,7 +80,7 @@ theorem exists_eval_ne_zero (f : MvPolynomial σ F) (t : σ → ℕ)
     (hdeg : f.totalDegree = ∑ i, t i) (hcoeff : f.coeff (Finsupp.equivFunOnFinite.symm t) ≠ 0)
     (S : σ → Finset F) (hS : ∀ i, t i < (S i).card) :
     ∃ s : σ → F, (∀ i, s i ∈ S i) ∧ eval s f ≠ 0 := by
-  refine combinatorial_nullstellensatz_exists_eval_nonzero f (Finsupp.equivFunOnFinite.symm t)
+  refine combinatorial_nullstellensatz_exists_eval_ne_zero f (Finsupp.equivFunOnFinite.symm t)
     hcoeff ?_ S fun i => by simpa using hS i
   rw [hdeg, Finsupp.degree_eq_sum]
   simp

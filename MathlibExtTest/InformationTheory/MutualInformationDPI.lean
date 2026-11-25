@@ -37,7 +37,7 @@ noncomputable def bsc : Kernel Bool Bool where
   measurable' := measurable_of_countable _
 
 instance : IsMarkovKernel bsc := ⟨fun b ↦ ⟨by
-  simp only [bsc, Kernel.coe_mk, Measure.coe_add, Measure.coe_smul, Pi.add_apply,
+  simp only [bsc, Kernel.coe_mk, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply,
     Pi.smul_apply, measure_univ, smul_eq_mul, mul_one]
   rw [ENNReal.div_add_div_same, show (3 : ℝ≥0∞) + 1 = 4 by norm_num,
     ENNReal.div_self (by norm_num) (by norm_num)]⟩⟩

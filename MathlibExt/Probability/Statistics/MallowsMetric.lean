@@ -182,9 +182,9 @@ private theorem wasserstein_map_smul_le {p : ℝ} (hp : 0 < p) (a : ℝ)
     rw [h0 μ, h0 ν, wasserstein_self hp]
     exact zero_le
   have hne : ‖a‖ₑ ≠ 0 := by simpa using ha
-  rw [wasserstein_eq_iInf hp μ ν, ENNReal.mul_iInf_of_ne hne enorm_ne_top]
+  rw [wasserstein_eq_iInf hp μ ν, ENNReal.mul_iInf_of_ne hne eNorm_ne_top]
   refine le_iInf fun π => ?_
-  rw [ENNReal.mul_iInf_of_ne hne enorm_ne_top]
+  rw [ENNReal.mul_iInf_of_ne hne eNorm_ne_top]
   refine le_iInf fun h => ?_
   have hc : IsCoupling (μ.map (a • ·)) (ν.map (a • ·)) (π.map (fun z => (a • z.1, a • z.2))) := by
     obtain ⟨h1, h2⟩ := h
@@ -227,7 +227,7 @@ theorem wasserstein_map_smul {p : ℝ} (hp : 0 < p) (a : ℝ) (μ ν : Probabili
   calc ‖a‖ₑ * wasserstein p μ ν
       ≤ ‖a‖ₑ * (‖a⁻¹‖ₑ * wasserstein p (μ.map (a • ·)) (ν.map (a • ·))) := by gcongr
     _ = wasserstein p (μ.map (a • ·)) (ν.map (a • ·)) := by
-        rw [← mul_assoc, enorm_inv ha, ENNReal.mul_inv_cancel hne enorm_ne_top, one_mul]
+        rw [← mul_assoc, enorm_inv ha, ENNReal.mul_inv_cancel hne eNorm_ne_top, one_mul]
 
 end Scaling
 
@@ -603,7 +603,7 @@ theorem wasserstein_two_normalizedSum_le (μ ν : ProbabilityMeasure E)
     have hs : 0 < Real.sqrt m := Real.sqrt_pos.2 (by exact_mod_cast hm)
     rw [show (m : ℝ≥0∞) = ENNReal.ofReal m by simp,
       ENNReal.ofReal_rpow_of_nonneg (by positivity) (by norm_num), ← Real.sqrt_eq_rpow,
-      Real.enorm_of_nonneg (inv_nonneg.2 hs.le), ← ENNReal.ofReal_mul (inv_nonneg.2 hs.le),
+      Real.eNorm_of_nonneg (inv_nonneg.2 hs.le), ← ENNReal.ofReal_mul (inv_nonneg.2 hs.le),
       inv_mul_cancel₀ hs.ne', ENNReal.ofReal_one]
   rw [wasserstein_map_smul two_pos]
   calc ‖(Real.sqrt m)⁻¹‖ₑ * wasserstein 2 (convPow μc m) (convPow νc m)

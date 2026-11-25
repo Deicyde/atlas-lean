@@ -206,11 +206,13 @@ private theorem exists_nhd_lift {X Y T T₀ : Scheme.{u}} (q : Y ⟶ X) [Etale q
     ((k ≫ t).appLE R' (k ⁻¹ᵁ U) hkUR').hom]
   let σ : Γ(Y, W) →ₐ[Γ(X, R')] Γ(T₀, k ⁻¹ᵁ U) := ⟨(s₀.appLE W (k ⁻¹ᵁ U) hkUW).hom, fun r ↦ by
     simp only [RingHom.algebraMap_toAlgebra, ← CommRingCat.comp_apply, Scheme.Hom.appLE_comp_appLE,
-      RingHom.toMonoidHom_eq_coe, OneHom.toFun_eq_coe, MonoidHom.toOneHom_coe, MonoidHom.coe_coe]
+      RingHom.toMonoidHom_eq_coe, OneHom.toFun_eq_coe, MonoidHom.toOneHom_coe,
+      MonoidHom.coe_ofClass]
     rw [appLE_congr_hom hs₀]⟩
   let κ : Γ(T, U) →ₐ[Γ(X, R')] Γ(T₀, k ⁻¹ᵁ U) := ⟨(k.appLE U (k ⁻¹ᵁ U) le_rfl).hom, fun r ↦ by
     simp only [RingHom.algebraMap_toAlgebra, ← CommRingCat.comp_apply, Scheme.Hom.appLE_comp_appLE,
-      RingHom.toMonoidHom_eq_coe, OneHom.toFun_eq_coe, MonoidHom.toOneHom_coe, MonoidHom.coe_coe]⟩
+      RingHom.toMonoidHom_eq_coe, OneHom.toFun_eq_coe, MonoidHom.toOneHom_coe,
+      MonoidHom.coe_ofClass]⟩
   have hκs : Function.Surjective κ := by
     show Function.Surjective (k.appLE U (k ⁻¹ᵁ U) le_rfl).hom
     rw [← Scheme.Hom.app_eq_appLE]

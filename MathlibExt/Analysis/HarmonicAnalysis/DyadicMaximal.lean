@@ -530,9 +530,9 @@ theorem dyadicAverage_le_indicator_add (k : ℤ) (f : ℝ → E) (s : ℝ≥0∞
       ∫⁻ y in I, (‖({y | s < ‖f y‖ₑ}.indicator fun y => ‖f y‖ₑ) y‖ₑ + s) := by
     refine lintegral_mono fun y => ?_
     by_cases h : s < ‖f y‖ₑ
-    · rw [indicator_of_mem (show y ∈ {y | s < ‖f y‖ₑ} from h), enorm_eq_self]
+    · rw [indicator_of_mem (show y ∈ {y | s < ‖f y‖ₑ} from h), eNorm_eq_self]
       exact le_self_add
-    · rw [indicator_of_notMem (show y ∉ {y | s < ‖f y‖ₑ} from h), enorm_zero, zero_add]
+    · rw [indicator_of_notMem (show y ∉ {y | s < ‖f y‖ₑ} from h), eNorm_zero, zero_add]
       exact not_lt.1 h
   rw [lintegral_add_right _ measurable_const, setLIntegral_const] at hle
   calc (∫⁻ y in I, ‖f y‖ₑ) / volume I
@@ -559,7 +559,7 @@ theorem volume_two_mul_lt_dyadicMaximalFunction_le (f : ℝ → E) {s : ℝ≥0�
     rw [two_mul] at hk
     exact absurd (hk.trans_le this) (lt_irrefl _)
   have hweak := dyadicMaximalFunction_mul_volume_le_lintegral g s
-  simp only [enorm_eq_self] at hweak
+  simp only [eNorm_eq_self] at hweak
   calc volume {x | 2 * s < dyadicMaximalFunction f x}
       ≤ volume {x | s < dyadicMaximalFunction g x} := measure_mono hsub
     _ = s⁻¹ * (s * volume {x | s < dyadicMaximalFunction g x}) := by

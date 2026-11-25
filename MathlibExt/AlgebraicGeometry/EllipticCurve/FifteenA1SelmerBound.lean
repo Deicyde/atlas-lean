@@ -723,7 +723,7 @@ private theorem val_intCast_nonneg' (n : ℤ) : 0 ≤ padicValRat q (n : ℚ) :=
 
 omit hq in
 private theorem val_natCast_eq_zero' {n : ℕ} (hn : ¬ q ∣ n) : padicValRat q (n : ℚ) = 0 := by
-  rw [padicValRat.of_nat, padicValNat.eq_zero_of_not_dvd hn, Nat.cast_zero]
+  rw [padicValRat.of_nat, multiplicity_eq_zero_of_not_dvd hn, Nat.cast_zero]
 
 private theorem val_add_nonneg' {a b : ℚ} (ha : 0 ≤ padicValRat q a) (hb : 0 ≤ padicValRat q b) :
     0 ≤ padicValRat q (a + b) := by

@@ -33,7 +33,7 @@ example {α : Type*} [TopologicalSpace α] [CompactSpace α] [MeasurableSpace α
     {E : Type*} [SeminormedAddCommGroup E] (c : E) :
     eLpNormEssSup (fun _ : α => c) μ = ‖c‖ₑ := by
   have h := eLpNormEssSup_eq_enorm_continuousMap (μ := μ) (ContinuousMap.const α c)
-  simp only [ContinuousMap.enorm_eq_iSup_enorm, ContinuousMap.const_apply,
+  simp only [ContinuousMap.eNorm_eq_iSup_eNorm, ContinuousMap.const_apply,
     iSup_const] at h
   exact h
 
@@ -52,16 +52,16 @@ instance : (Measure.count : Measure (Fin 2)).IsOpenPosMeasure where
 map is `1`. -/
 example : eLpNormEssSup (fun _ : Fin 2 => (1 : ℝ)) Measure.count = 1 := by
   have h := eLpNormEssSup_eq_enorm_continuousMap (μ := Measure.count) (ContinuousMap.const (Fin 2) (1 : ℝ))
-  simp only [ContinuousMap.enorm_eq_iSup_enorm, ContinuousMap.const_apply,
+  simp only [ContinuousMap.eNorm_eq_iSup_eNorm, ContinuousMap.const_apply,
     iSup_const] at h
-  exact h.trans enorm_one
+  exact h.trans eNorm_one
 
 /-- On `Fin 2` with counting measure, the `L^∞` norm of the constant `1` map is `1`. -/
 example : eLpNorm (fun _ : Fin 2 => (1 : ℝ)) ⊤ Measure.count = 1 := by
   have h := eLpNorm_top_eq_enorm_continuousMap (μ := Measure.count) (ContinuousMap.const (Fin 2) (1 : ℝ))
-  simp only [ContinuousMap.enorm_eq_iSup_enorm, ContinuousMap.const_apply,
+  simp only [ContinuousMap.eNorm_eq_iSup_eNorm, ContinuousMap.const_apply,
     iSup_const] at h
-  exact h.trans enorm_one
+  exact h.trans eNorm_one
 
 /-- The theorem applies to a non-constant continuous map on `Fin 2`. -/
 example : eLpNormEssSup

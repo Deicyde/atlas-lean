@@ -110,7 +110,7 @@ theorem exists_continuous_cutoff_of_isClosedEmbedding
     intro k hk
     have he : Topology.IsClosedEmbedding (fun h => ι h * k) :=
       (Homeomorph.mulRight k).isClosedEmbedding.comp hι
-    exact (b.continuous.comp he.continuous).integral_pos_of_hasCompactSupport_nonneg_nonzero
+    exact (b.continuous.comp he.continuous).integral_pos_of_hasCompactSupport_nonneg_ne_zero
       (hbc.comp_isClosedEmbedding he) (fun h => hb0 _) (x := 1)
       (by simp [hbK hk])
   obtain ⟨m, hm, hmK⟩ : ∃ m : ℝ, 0 < m ∧ ∀ k ∈ K, m ≤ A k := by

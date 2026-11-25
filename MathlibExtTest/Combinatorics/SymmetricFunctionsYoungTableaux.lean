@@ -35,7 +35,7 @@ theorem MvPolynomial.omegaAlgHom_esymm_two :
   have h := MvPolynomial.esymmAlgEquiv_symm_apply (σ := Fin 2) ℤ
     (show Fintype.card (Fin 2) = 2 from rfl) 1
   rw [MvPolynomial.omegaAlgHom, AlgHom.comp_apply,
-    AlgEquiv.coe_algHom]
+    AlgEquiv.coe_toAlgHom]
   erw [h, MvPolynomial.aeval_X]
   rfl
 

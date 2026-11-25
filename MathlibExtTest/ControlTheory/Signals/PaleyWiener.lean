@@ -82,7 +82,7 @@ example :
   have hnorm : (eLpNorm ((Set.Icc (-1 : ℝ) 1).indicator (fun _ => (1 : ℂ))) 2 volume).toReal
       = Real.sqrt 2 := by
     rw [eLpNorm_indicator_const hMe (by norm_num) (by norm_num)]
-    simp only [Real.volume_Icc, enorm_one, one_mul, ← ENNReal.toReal_rpow,
+    simp only [Real.volume_Icc, eNorm_one, one_mul, ← ENNReal.toReal_rpow,
       ENNReal.toReal_ofReal (by norm_num : (0 : ℝ) ≤ 1 - -1), Real.sqrt_eq_rpow]
     norm_num
   rw [hnorm, mul_one] at hbound

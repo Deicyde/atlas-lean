@@ -75,7 +75,7 @@ theorem exists_hasEigenvalue_norm_eq (T : H →L[𝕜] H) (hT : IsSelfAdjoint T)
     (hc : IsCompactOperator (T : H → H)) (hT0 : T ≠ 0) :
     ∃ μ : 𝕜, μ ≠ 0 ∧ ‖μ‖ = ‖T‖ ∧ Module.End.HasEigenvalue (T : Module.End 𝕜 H) μ := by
   obtain ⟨μ, hμspec, hμμ⟩ :=
-    spectrum.exists_nnnorm_eq_spectralRadius_of_nonempty
+    spectrum.exists_nnNorm_eq_spectralRadius_of_nonempty
       (spectrum_nonempty_of_ne_zero T hT hT0)
   rw [T.spectralRadius_eq_nnnorm hT] at hμμ
   have h2 : ‖μ‖₊ = ‖T‖₊ := by exact_mod_cast hμμ

@@ -90,7 +90,7 @@ private theorem eLpNorm_count_eq_ofReal_sum {ι : Type*} [Fintype ι]
     exact not_le.mpr hr0
   have hrEtop : (ENNReal.ofReal r) ≠ ⊤ := ENNReal.ofReal_ne_top
   have hmeas : AEStronglyMeasurable y (Measure.count : Measure ι) := .of_discrete
-  rw [eLpNorm_eq_lintegral_rpow_enorm_toReal hrE0 hrEtop hmeas, lintegral_count,
+  rw [eLpNorm_eq_lintegral_rpow_eNorm_toReal hrE0 hrEtop hmeas, lintegral_count,
     tsum_fintype, ENNReal.toReal_ofReal hr0.le]
   have hsum : (∑ i, ‖y i‖ₑ ^ r) = ENNReal.ofReal (∑ i, ‖y i‖ ^ r) := by
     rw [ENNReal.ofReal_sum_of_nonneg (fun i _ => Real.rpow_nonneg (norm_nonneg _) r)]

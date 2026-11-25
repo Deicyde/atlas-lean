@@ -237,7 +237,7 @@ theorem isProbabilityMeasure_mendelLaw {g₁ g₂ : ℕ} (h₁ : g₁ ≤ 2) (h�
   have hg₁ : (0 : ℝ) ≤ g₁ := Nat.cast_nonneg _
   have hg₂ : (0 : ℝ) ≤ g₂ := Nat.cast_nonneg _
   constructor
-  simp only [mendelLaw, Measure.coe_add, Measure.coe_smul, Pi.add_apply, Pi.smul_apply,
+  simp only [mendelLaw, FunLike.coe_add, FunLike.coe_smul, Pi.add_apply, Pi.smul_apply,
     measure_univ, smul_eq_mul, mul_one]
   rw [← ENNReal.ofReal_add (by nlinarith) (by nlinarith), ← ENNReal.ofReal_add (by nlinarith)
     (by nlinarith), ← ENNReal.ofReal_one]

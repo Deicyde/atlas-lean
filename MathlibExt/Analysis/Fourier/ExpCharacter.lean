@@ -66,7 +66,7 @@ lemma expChar_memLp {d : ℕ} (Omega : Set (EuclideanSpace ℝ (Fin d)))
     rw [hnn, ENNReal.coe_one]
   have h_norm : eLpNorm (fun x => expChar lam x) p
       (volume.restrict Omega) < ⊤ := by
-    rw [eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top hp0 hp_top]
+    rw [eLpNorm_lt_top_iff_lintegral_rpow_eNorm_lt_top hp0 hp_top]
     · have h_eq : ∫⁻ x in Omega, ‖expChar lam x‖ₑ ^ ENNReal.toReal p
           = volume Omega := by
         have hr : ∀ x, ‖expChar lam x‖ₑ ^ ENNReal.toReal p = 1 := by

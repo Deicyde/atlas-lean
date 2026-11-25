@@ -53,7 +53,7 @@ def quotient_coprime_residue_equiv (hc : ¬ c ≤ q)
     O ⧸ q.comap (algebraMap O B) ≃+* B ⧸ q := by
   refine RingEquiv.ofBijective (Ideal.quotientMap q (algebraMap O B) le_rfl)
     ⟨Ideal.quotientMap_injective, ?_⟩
-  obtain ⟨s, hs_mem, hs_notin⟩ := SetLike.not_le_iff_exists.mp hc
+  obtain ⟨s, hs_mem, hs_notin⟩ := IsConcreteLE.not_le_iff_exists.mp hc
   obtain ⟨a₀, q₀, hq₀, ha₀⟩ := (inferInstance : q.IsMaximal).exists_inv hs_notin
   intro y
   obtain ⟨b, rfl⟩ := Ideal.Quotient.mk_surjective y

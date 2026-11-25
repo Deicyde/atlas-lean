@@ -179,7 +179,7 @@ theorem isUnit_one_sub_of_spectralRadius_lt_one {K : Matrix ι ι ℝ}
     have : ((‖(1 : ℂ)‖₊ : ℝ≥0) : ℝ≥0∞) ≤ spectralRadius ℂ (K.map (algebraMap ℝ ℂ)) :=
       le_iSup₂ (f := fun k (_ : k ∈ quasispectrum ℂ (K.map (algebraMap ℝ ℂ))) =>
         ((‖k‖₊ : ℝ≥0) : ℝ≥0∞)) 1 (spectrum_subset_quasispectrum ℂ _ h1)
-    rw [nnnorm_one, ENNReal.coe_one] at this
+    rw [nnNorm_one, ENNReal.coe_one] at this
     exact absurd hK (not_lt.2 this)
   rw [spectrum.notMem_iff] at hn
   have hmap : algebraMap ℂ (Matrix ι ι ℂ) 1 - K.map (algebraMap ℝ ℂ) =

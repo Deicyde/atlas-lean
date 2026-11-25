@@ -441,7 +441,7 @@ theorem isF2RealizableUnit_of_mem_convexHull {D : P → P → ℝ}
   have : MeasurableSingletonClass (ULift.{u} ι) := ⟨fun _ => MeasurableSpace.measurableSet_top⟩
   let μ : Measure (ULift.{u} ι) := ∑ i, ENNReal.ofReal (w i) • Measure.dirac (ULift.up i)
   have hμ : IsProbabilityMeasure μ := ⟨by
-    simp only [μ, Measure.coe_finsetSum, Measure.coe_smul, Finset.sum_apply, Pi.smul_apply,
+    simp only [μ, FunLike.coe_sum, FunLike.coe_smul, Finset.sum_apply, Pi.smul_apply,
       Measure.dirac_apply_of_mem (Set.mem_univ _), smul_eq_mul, mul_one]
     rw [← ENNReal.ofReal_sum_of_nonneg fun i _ => hw0 i, hw1, ENNReal.ofReal_one]⟩
   refine ⟨ULift.{u} ι, ⊤, μ, hμ, fun X ω => (x ω.down X : ℝ), fun X => ?_, fun X ω => (x ω.down X).2,

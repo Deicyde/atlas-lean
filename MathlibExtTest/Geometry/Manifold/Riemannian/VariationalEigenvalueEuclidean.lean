@@ -273,7 +273,7 @@ theorem dirichlet_rayleigh_pos :
     pow_ne_zero 2 (norm_ne_zero_iff.mpr hx₀)
   have hnum_pos : 0 < ∫ x : EuclideanSpace ℝ (Fin 1),
       (‖fderiv ℝ (⇑phi) x‖ ^ 2 : ℝ) ∂volume :=
-    Continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero hnum_cont
+    Continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero hnum_cont
       hnum_supp (fun x => sq_nonneg _) hnum_ne
   have hcontP : Continuous (fun x : EuclideanSpace ℝ (Fin 1) =>
       (|(⇑phi) x| ^ 2 : ℝ)) :=
@@ -293,7 +293,7 @@ theorem dirichlet_rayleigh_pos :
     norm_num
   have hden_pos : 0 < ∫ x : EuclideanSpace ℝ (Fin 1),
       (|(⇑phi) x| ^ 2 : ℝ) ∂volume :=
-    Continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero hcontP
+    Continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero hcontP
       hden_supp (fun x => sq_nonneg _) hden_ne
   unfold DirichletLaplacian.rayleighQuotient
   exact div_pos hnum_pos hden_pos

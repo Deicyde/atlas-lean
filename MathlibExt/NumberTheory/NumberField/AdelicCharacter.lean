@@ -335,8 +335,8 @@ theorem exists_mem_sub_normAtPlace_lt (J : (FractionalIdeal (RingOfIntegers F)�
 
   refine ⟨η * b, ?_, ?_⟩
   · have hmem : η * b = c • η := by rw [Algebra.smul_def, ← hc, mul_comm]
-    rw [hmem, ← FractionalIdeal.mem_coe]
-    rw [← FractionalIdeal.mem_coe] at hηJ
+    rw [hmem, ← FractionalIdeal.mem_coeToSubmodule]
+    rw [← FractionalIdeal.mem_coeToSubmodule] at hηJ
     exact Submodule.smul_mem _ c hηJ
   · intro w hw
 
@@ -788,7 +788,7 @@ local notation "E" => mixedSpace F
 
 theorem exists_mem_pow_notMem {v₀ v : HeightOneSpectrum (RingOfIntegers F)} (hv : v ≠ v₀)
     (m : ℕ) : ∃ y ∈ v₀.asIdeal ^ m, y ∉ v.asIdeal := by
-  rw [← SetLike.not_le_iff_exists]
+  rw [← IsConcreteLE.not_le_iff_exists]
   intro hle
   haveI := v.isPrime
   have h1 : v₀.asIdeal ≤ v.asIdeal := by

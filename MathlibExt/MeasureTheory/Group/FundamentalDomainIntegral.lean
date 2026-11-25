@@ -139,14 +139,14 @@ theorem setLIntegral_iUnion_inv_smul_eq_and_setIntegral_eq_of_leftCosetRepresent
       fun i => (hh.comp_measurePreserving (hmp i)).restrict
     have hnorm : ∫⁻ x in ⋃ i, ((R i : G)⁻¹) • 𝓕, ‖h x‖ₑ ∂μ =
         ∫⁻ x in 𝓕, ∑' i, ‖h ((R i : G)⁻¹ • x)‖ₑ ∂μ := by
-      rw [lintegral_iUnion₀ hnull hdisj, lintegral_tsum fun i => (hae i).enorm]
+      rw [lintegral_iUnion₀ hnull hdisj, lintegral_tsum fun i => (hae i).eNorm]
       exact tsum_congr fun i =>
         FundamentalDomainIntegralAux.setLIntegral_smul_set μ _ _ _
     have hint : IntegrableOn h (⋃ i, ((R i : G)⁻¹) • 𝓕) μ :=
       ⟨hh.restrict, by rw [HasFiniteIntegral, hnorm]; exact hfin⟩
     refine ⟨hint, ?_, ?_⟩
     · have hlt : ∀ᵐ x ∂μ.restrict 𝓕, ∑' i, ‖h ((R i : G)⁻¹ • x)‖ₑ < ∞ :=
-        ae_lt_top' (AEMeasurable.tsum fun i => (hae i).enorm) hfin.ne
+        ae_lt_top' (AEMeasurable.tsum fun i => (hae i).eNorm) hfin.ne
       filter_upwards [hlt] with x hx
       have hx' : ∑' i, (‖h ((R i : G)⁻¹ • x)‖₊ : ℝ≥0∞) ≠ ∞ := by
         simpa only [enorm_eq_nnnorm] using hx.ne
@@ -154,7 +154,7 @@ theorem setLIntegral_iUnion_inv_smul_eq_and_setIntegral_eq_of_leftCosetRepresent
       exact NNReal.summable_coe.mpr hs
     · rw [integral_iUnion_ae hnull hdisj hint]
       have hfin' : ∑' i, ∫⁻ x, ‖h ((R i : G)⁻¹ • x)‖ₑ ∂μ.restrict 𝓕 ≠ ∞ := by
-        rw [← lintegral_tsum fun i => (hae i).enorm]
+        rw [← lintegral_tsum fun i => (hae i).eNorm]
         exact hfin.ne
       rw [integral_tsum hae hfin']
       exact tsum_congr fun i =>

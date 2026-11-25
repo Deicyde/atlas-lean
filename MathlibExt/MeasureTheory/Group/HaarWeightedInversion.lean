@@ -114,7 +114,7 @@ theorem integral_modularCharacter_smul_inv_of_hasCompactSupport
   obtain ⟨ψ, hψcomp, hψnonneg, hψone⟩ := exists_continuous_nonneg_pos (1 : G)
   let I : ℝ := ∫ s, ψ s ∂μ
   have hI : I ≠ 0 := ne_of_gt
-    (ψ.continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero
+    (ψ.continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero
       hψcomp hψnonneg hψone)
   let K : E := ∫ s, (Measure.modularCharacter s : ℝ) • F s⁻¹ ∂μ
   let R : Set G := (fun p : G × G => p.1⁻¹ * p.2) ''

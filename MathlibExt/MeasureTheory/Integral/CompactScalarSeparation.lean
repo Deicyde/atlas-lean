@@ -101,7 +101,7 @@ theorem Continuous.eq_zero_of_compactScalar_integrals_eq_zero
     rw [max_eq_right hpPositive.le]
     exact mul_ne_zero (mul_ne_zero hφAt hpPositive.ne') hpPositive.ne'
   have hPositive : 0 < ∫ x : X, r x ∂μ :=
-    hrContinuous.integral_pos_of_hasCompactSupport_nonneg_nonzero hrCompact hrNonneg hrAt
+    hrContinuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero hrCompact hrNonneg hrAt
   have hWeightedContinuous : Continuous (fun x : X => ψ x • F x) := by fun_prop
   have hWeightedCompact : HasCompactSupport (fun x : X => ψ x • F x) := by
     apply HasCompactSupport.intro' ψ.hasCompactSupport (isClosed_tsupport ψ)

@@ -553,13 +553,13 @@ private theorem condExp_antitone_ae_tendsto {g : Ω → ℝ} (m : ℕ → Measur
       obtain ⟨c, hc⟩ := hω
       rw [hc.limUnder_eq]
       have hc2 : Tendsto (fun n => ‖f n ω‖ₑ) atTop (𝓝 ‖c‖ₑ) :=
-        (continuous_enorm.tendsto c).comp hc
+        (continuous_eNorm.tendsto c).comp hc
       exact le_of_eq (hc2.liminf_eq.symm)
     refine h1.trans ?_
     refine (lintegral_liminf_le' ?_).trans ?_
     · intro n
       exact ((stronglyMeasurable_condExp (f := g) (m := m n)).aestronglyMeasurable.mono
-        (hm0 n)).enorm
+        (hm0 n)).eNorm
     · rw [Filter.liminf_eq_iSup_iInf_of_nat]
       refine iSup_le fun n => ?_
       refine (iInf₂_le n le_rfl).trans ?_

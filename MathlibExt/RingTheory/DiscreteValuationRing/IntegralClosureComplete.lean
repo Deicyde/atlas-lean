@@ -66,7 +66,7 @@ theorem isLocalRing_of_isIntegral_of_isAdicComplete_maximal
   let _ : Q'.IsMaximal := hQ'
   by_contra hne
   have hnotle : ¬ Q' ≤ Q := fun hle ↦ hne (hQ'.eq_of_le hQ.ne_top hle)
-  obtain ⟨b, hbQ', hbQ⟩ := SetLike.not_le_iff_exists.mp hnotle
+  obtain ⟨b, hbQ', hbQ⟩ := IsConcreteLE.not_le_iff_exists.mp hnotle
   have hcomapQ :=
     Ideal.comap_eq_base_maximal_of_isAdicComplete_of_isIntegral p Q
   have hcomapQ' :=
@@ -380,7 +380,7 @@ theorem integer_isIntegralClosure_of_isAdicComplete
       huniq _ hCmem
     rw [h1, h2]
   have hf_local : IsLocalHom f :=
-    ((IsLocalRing.local_hom_TFAE f).out 5 1).mp hQeq
+    ((IsLocalRing.local_hom_tfae f).out 5 1).mp hQeq
   let _ : IsLocalHom f := hf_local
   let _ : IsFractionRing ↥(integralClosure A L) L :=
     integralClosure.isFractionRing_of_finite_extension (A := A) K L

@@ -671,7 +671,7 @@ lemma exponent_ne {n : ℕ} {i j : ℕ} (hi : i < d p n) (hj : j < d p n) (hij :
       (((k' * (d p n : ℤ) - (j : ℤ) : ℤ) : ℝ) / (e p (n + 1) : ℝ)) := by
   intro h
   have hen : (e p (n + 1) : ℝ) ≠ 0 := by exact_mod_cast (e_pos p (n + 1)).ne'
-  rw [div_left_inj' hen] at h
+  rw [div_left_inj₀ hen] at h
   have h2 : (k * (d p n : ℤ) - (i : ℤ) : ℤ) = k' * (d p n : ℤ) - (j : ℤ) := by exact_mod_cast h
   have h3 : ((d p n : ℤ)) ∣ ((j : ℤ) - (i : ℤ)) := ⟨k' - k, by linarith⟩
   have h4 : ((j : ℤ) - (i : ℤ)) = 0 := by
@@ -702,7 +702,7 @@ lemma nnnorm_sum_eq_sup {n : ℕ} (hVG : VG p n) {π : Ω}
     rw [hk, hk'] at heq'
     exact exponent_ne p hi.1 hj.1 hij k k' (rpow_p_injective p heq')
   rw [hsum, IsUltrametricDist.nnnorm_sum_eq_sup_of_pairwise_ne hpair]
-  simp only [nnnorm_mul, nnnorm_pow]
+  simp only [nnNorm_mul, nnnorm_pow]
   apply le_antisymm
   · exact Finset.sup_mono (Finset.filter_subset _ _)
   · apply Finset.sup_le
@@ -1776,7 +1776,7 @@ lemma exists_isGen (n : ℕ) : ∃ σ : Γ, IsGen p Km n σ := by
     rw [← Subgroup.relIndex_eq_one] at hle
     rw [hle] at h
     exact (Fact.out : p.Prime).one_lt.ne h
-  obtain ⟨σ, hσ, hσ'⟩ := SetLike.not_le_iff_exists.mp hne
+  obtain ⟨σ, hσ, hσ'⟩ := IsConcreteLE.not_le_iff_exists.mp hne
   exact ⟨σ, hσ, hσ'⟩
 
 include hcyc in
@@ -2735,7 +2735,7 @@ lemma exists_pow_mem_fixingSubgroup (M : IntermediateField ℚ_[p] Ω) [FiniteDi
       rw [IntermediateField.mem_fixingSubgroup_iff]
       intro y hy
       have h1 := congrArg (fun g : M →ₐ[ℚ_[p]] Ω => g ⟨y, hy⟩) hf
-      simp only [f, AlgHom.comp_apply, IntermediateField.val_mk, AlgEquiv.coe_algHom] at h1
+      simp only [f, AlgHom.comp_apply, IntermediateField.val_mk, AlgEquiv.coe_toAlgHom] at h1
       have hj : (j : ℕ) = (i : ℕ) + ((j : ℕ) - i) := by omega
       rw [hj, pow_add, AlgEquiv.mul_apply] at h1
       exact ((σ ^ (i : ℕ)).injective h1).symm
@@ -3432,7 +3432,7 @@ lemma exists_isGen (m₀ : ℕ) : ∃ m, m₀ ≤ m ∧ ∃ σ : Γ, IsGen p m �
         exact hcon (m₀ + j) (by omega) τ ⟨h1, by rwa [show m₀ + (j + 1) = m₀ + j + 1 by ring] at h2⟩
   have hle : ∀ j, Fm p (m₀ + j) ≤ Fm p m₀ := by
     intro j
-    have := (IntermediateField.le_iff_le _ _).2 (hstep j)
+    have := (IntermediateField.le_fixedField_iff_le_fixingSubgroup _ _).2 (hstep j)
     rwa [InfiniteGalois.fixedField_fixingSubgroup] at this
   have hfin : ∀ j, Module.finrank ℚ_[p] (Fm p (m₀ + j)) ≤ Module.finrank ℚ_[p] (Fm p m₀) := fun j =>
     IntermediateField.finrank_le_of_le_right (hle j)

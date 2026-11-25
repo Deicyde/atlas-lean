@@ -80,14 +80,14 @@ private lemma coe_le_norm (f : BoundedSeq) (n : ℕ) : f n ≤ ‖f‖ := by
 private lemma cesMean_smul (c : ℝ) (x : BoundedSeq) (n : ℕ) :
     cesMean (c • x) n = c * cesMean x n := by
   unfold cesMean
-  simp only [BoundedContinuousFunction.smul_apply, smul_eq_mul, ← Finset.mul_sum]
+  simp only [smul_apply, smul_eq_mul, ← Finset.mul_sum]
   ring
 
 /-- Sums pass through Cesàro means. -/
 private lemma cesMean_add (x y : BoundedSeq) (n : ℕ) :
     cesMean (x + y) n = cesMean x n + cesMean y n := by
   unfold cesMean
-  simp only [BoundedContinuousFunction.add_apply, Finset.sum_add_distrib]
+  simp only [add_apply, Finset.sum_add_distrib]
   ring
 
 /-- Negation passes through Cesàro means. -/
@@ -268,7 +268,7 @@ private lemma cesMean_shift_sub (x : BoundedSeq) (n : ℕ) :
       ring
     rw [neg, t, neg_sub]
   unfold cesMean
-  simp only [BoundedContinuousFunction.sub_apply, esum]
+  simp only [sub_apply, esum]
   rw [div_eq_mul_inv, mul_comm]
 
 /-- The telescoped means tend to zero. -/

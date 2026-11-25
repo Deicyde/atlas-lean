@@ -385,6 +385,6 @@ theorem potentialProfiles_eq_of_base_eq (ν : ℝ) (hν : ν ≠ 0)
   funext t x
   have h := potentialProfiles_normalized_eq ν hν φ ψ F hφ hψ hpφ hpψ hhφ hhψ he t₀ x₀ t x
   rw [hbase] at h
-  exact (div_left_inj' (ne_of_gt (hpψ t₀ x₀))).mp h
+  exact (div_left_inj₀ (ne_of_gt (hpψ t₀ x₀))).mp h
 
 end ColeHopf

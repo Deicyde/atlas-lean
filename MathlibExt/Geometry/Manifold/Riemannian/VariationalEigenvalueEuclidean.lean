@@ -207,7 +207,7 @@ theorem rayleighQuotient_testFunction {n : ℕ}
       pow_ne_zero 2 (abs_ne_zero.mpr hx₀)
     have hden_pos : 0 < ∫ x : EuclideanSpace ℝ (Fin n),
         (|(f : EuclideanSpace ℝ (Fin n) → ℝ) x| ^ 2 : ℝ) ∂volume :=
-      Continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero hden_cont
+      Continuous.integral_pos_of_hasCompactSupport_nonneg_ne_zero hden_cont
         hden_supp (fun x => sq_nonneg _) hden_ne
     have hnum_int : Integrable (fun x : EuclideanSpace ℝ (Fin n) =>
         (‖fderiv ℝ (f : EuclideanSpace ℝ (Fin n) → ℝ) x‖ ^ 2 : ℝ)) volume :=

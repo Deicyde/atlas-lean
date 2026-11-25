@@ -147,7 +147,7 @@ noncomputable def volterraLinearMap : VolterraSpace →ₗ[ℝ] VolterraSpace wh
       funext t
       simp [volterraExtend]
     simp only [BoundedContinuousFunction.coe_ofNormedAddCommGroup, hfun,
-      BoundedContinuousFunction.add_apply]
+      add_apply]
     rw [intervalIntegral.integral_add
       ((volterraExtend_continuous f).intervalIntegrable _ _)
       ((volterraExtend_continuous g).intervalIntegrable _ _)]
@@ -159,7 +159,7 @@ noncomputable def volterraLinearMap : VolterraSpace →ₗ[ℝ] VolterraSpace wh
       funext t
       simp [volterraExtend]
     simp only [BoundedContinuousFunction.coe_ofNormedAddCommGroup, hfun,
-      BoundedContinuousFunction.smul_apply]
+      smul_apply]
     rw [intervalIntegral.integral_smul]
     rfl
 

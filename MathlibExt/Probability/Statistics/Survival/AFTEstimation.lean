@@ -491,7 +491,7 @@ theorem eq_of_obsLaw_eq (μ₀ : Measure ℝ) [IsFiniteMeasure μ₀]
   have hσσ : σ = σ' := inv_injective hinv
   subst hσσ
   refine ⟨?_, rfl⟩
-  have := (div_left_inj' hσ.ne').1 e1
+  have := (div_left_inj₀ hσ.ne').1 e1
   linarith
 
 /-- **Identifiability of the regression coefficients and the scale.** In the log-linear AFT

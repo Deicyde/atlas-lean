@@ -143,7 +143,7 @@ theorem meanSquaredErrorENN_eq_top_of_not_finite {W : S → ℝ}
     le_antisymm le_top (le_of_not_gt hfin)
   rw [meanSquaredErrorENN, ← htop]
   refine lintegral_congr_ae (Filter.Eventually.of_forall fun x => ?_)
-  exact (Real.enorm_of_nonneg (sq_nonneg (W x - θ))).symm
+  exact (Real.eNorm_of_nonneg (sq_nonneg (W x - θ))).symm
 
 /-- **Family bias of an estimator.** Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an
 estimator, $(P_\theta)_{\theta \in \Theta}$ a family of probability measures on $S$ such that $W$

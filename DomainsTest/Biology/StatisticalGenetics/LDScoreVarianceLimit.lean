@@ -289,7 +289,7 @@ theorem not_integrable_zH_four : ¬ Integrable (fun k => ‖zH k‖ ^ 4) μH := 
       rw [lintegral_smul_measure, lintegral_dirac, norm_zH_pow_four, smul_eq_mul]
       have e : ‖(2 : ℝ) ^ (k + 1)‖ₑ = (2 : ℝ≥0∞) ^ (k + 1) := by
         rw [enorm_pow]
-        have h2 : ‖(2 : ℝ)‖ₑ = 2 := by simpa using Real.enorm_natCast 2
+        have h2 : ‖(2 : ℝ)‖ₑ = 2 := by simpa using Real.eNorm_natCast 2
         rw [h2]
       rw [e]
       exact ENNReal.inv_mul_cancel (pow_ne_zero _ two_ne_zero)

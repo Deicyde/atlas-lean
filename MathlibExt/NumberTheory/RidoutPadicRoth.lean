@@ -33,14 +33,14 @@ namespace MetaMathlibExt
 private theorem ridout_padicNorm_int (l : Nat.Primes) (z : ℤ) (hz : z ≠ 0) :
     padicNorm l.1 (z : ℚ) =
       (((l.1 ^ padicValInt l.1 z : ℕ) : ℚ))⁻¹ := by
-  rw [padicNorm.eq_zpow_of_nonzero (by exact_mod_cast hz), padicValRat.of_int]
+  rw [padicNorm.eq_zpow_of_ne_zero (by exact_mod_cast hz), padicValRat.of_int]
   rw [zpow_neg]
   norm_cast
 
 private theorem ridout_padicNorm_nat (l : Nat.Primes) (n : ℕ) (hn : n ≠ 0) :
     padicNorm l.1 (n : ℚ) =
       (((l.1 ^ padicValNat l.1 n : ℕ) : ℚ))⁻¹ := by
-  rw [padicNorm.eq_zpow_of_nonzero (by exact_mod_cast hn), padicValRat.of_nat,
+  rw [padicNorm.eq_zpow_of_ne_zero (by exact_mod_cast hn), padicValRat.of_nat,
     Nat.padicValNat_def]
   rw [zpow_neg]
   norm_cast

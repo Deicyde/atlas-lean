@@ -539,7 +539,7 @@ private theorem lintegral_enorm_inv_gaussianReal {m : ℝ} {v : ℝ≥0} (hv : v
       simp
     by_contra h
     exact hni ⟨measurable_inv.aestronglyMeasurable,
-      hasFiniteIntegral_iff_enorm.2 (lt_top_iff_ne_top.2 h)⟩
+      hasFiniteIntegral_iff_eNorm.2 (lt_top_iff_ne_top.2 h)⟩
   rw [gaussianReal_of_var_ne_zero m hv,
     lintegral_withDensity_eq_lintegral_mul _ (measurable_gaussianPDF m v) measurable_inv.enorm]
   refine top_le_iff.1 (le_trans ?_ (setLIntegral_le_lintegral (Set.Ioc (0 : ℝ) 1) _))
@@ -561,7 +561,7 @@ theorem lintegral_enorm_div_eq_top {μ : Measure Ω} [IsProbabilityMeasure μ] {
     ∫⁻ ω, ‖N ω / D ω‖ₑ ∂μ = ∞ := by
   have hsplit : (fun ω => ‖N ω / D ω‖ₑ) = fun ω => ‖N ω‖ₑ * ‖(D ω)⁻¹‖ₑ := by
     funext ω
-    rw [div_eq_mul_inv, enorm_mul]
+    rw [div_eq_mul_inv, eNorm_mul]
   have hind' : IndepFun (fun ω => ‖N ω‖ₑ) (fun ω => ‖(D ω)⁻¹‖ₑ) μ :=
     hind.comp measurable_enorm measurable_inv.enorm
   have hDi : AEMeasurable (fun ω => ‖(D ω)⁻¹‖ₑ) μ := hD.aemeasurable.inv.enorm
@@ -569,7 +569,7 @@ theorem lintegral_enorm_div_eq_top {μ : Measure Ω} [IsProbabilityMeasure μ] {
     hD.lintegral_comp (f := fun x => ‖x⁻¹‖ₑ) measurable_inv.enorm.aemeasurable,
     lintegral_enorm_inv_gaussianReal hv]
   refine ENNReal.mul_top ?_
-  rw [Ne, lintegral_eq_zero_iff' hN.enorm]
+  rw [Ne, lintegral_eq_zero_iff' hN.eNorm]
   intro h
   apply hN0
   filter_upwards [h] with ω hω
@@ -597,6 +597,6 @@ theorem not_integrable_div_gaussian {μ : Measure Ω} [IsProbabilityMeasure μ] 
     · rw [gaussianReal_apply mN hv] at h1
       simp at h1
   exact (lintegral_enorm_div_eq_top hvD hD hN.aemeasurable hind hN0' ▸
-    hasFiniteIntegral_iff_enorm.1 hint.2).ne rfl
+    hasFiniteIntegral_iff_eNorm.1 hint.2).ne rfl
 
 end MathlibExt.Biology.StatisticalGenetics.MendelianRandomization

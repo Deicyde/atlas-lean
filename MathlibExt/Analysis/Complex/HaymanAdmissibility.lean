@@ -129,7 +129,7 @@ private theorem hayman_powerSeries_coefficient_eq_circleIntegral
     intro z hz
     have hzρ : ‖z‖ < ρ := by
       have hzR : ‖z‖₊ < R := by
-        simpa only [mem_eball_zero_iff, enorm_lt_coe] using hz
+        simpa only [mem_eball_zero_iff, eNorm_lt_coe] using hz
       exact_mod_cast hzR
     simpa [p, FormalMultilinearSeries.ofScalars_apply_eq, smul_eq_mul, mul_comm] using
       hsum z hzρ
@@ -140,7 +140,7 @@ private theorem hayman_powerSeries_coefficient_eq_circleIntegral
     have hzr : ‖z‖ ≤ r := by simpa [Metric.mem_closedBall] using hz
     have hzR : ‖z‖₊ < R := by
       exact_mod_cast hzr.trans_lt hrρ
-    simpa only [mem_eball_zero_iff, enorm_lt_coe] using hzR
+    simpa only [mem_eball_zero_iff, eNorm_lt_coe] using hzR
   have hrnn : 0 < rnn := by exact_mod_cast hr
   have hc := hd.hasFPowerSeriesOnBall (R := rnn) hrnn
   have heq : p = cauchyPowerSeries G 0 r :=
