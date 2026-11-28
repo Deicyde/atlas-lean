@@ -16,6 +16,7 @@ public import Mathlib.NumberTheory.LegendreSymbol.Basic
 public import MathlibExt.Analysis.SpecialFunctions.QPochhammer
 public import MathlibExt.NumberTheory.InitialRepetitionsC3
 public import MathlibExt.NumberTheory.InitialRepetitionsC8
+public import MathlibExt.NumberTheory.InitialRepetitionsC8FortyNineMulAddEven
 public import MathlibExt.NumberTheory.InitialRepetitionsC8Prime
 public import MathlibExt.NumberTheory.InitialRepetitionsQuadraticNonresidues
 public import MathlibExt.NumberTheory.SquaresModTwoPow
@@ -24,25 +25,6 @@ public import MathlibExt.NumberTheory.GreeneSellersInitialRepetitionsCardNotIsSq
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Counting $r$ with $mr + 1$ and $nr + 1$ both quadratic nonresidues.** Let $p$ be an odd
-prime, write $\left(\frac{a}{p}\right)$ for the Legendre symbol of an integer $a$, and let $m$ and
-$n$ be integers with $p \nmid mn(n - m)$. If $N$ is the number of integers $r$ with
-$0 \le r \le p - 1$ such that $\left(\frac{mr+1}{p}\right) = \left(\frac{nr+1}{p}\right) = -1$, then
-
-$$4N = 4\left\lfloor \frac{p}{4} \right\rfloor -
-\left(\left(\frac{m}{p}\right) - \left(\frac{n-m}{p}\right)\right)
-\left(\left(\frac{n}{p}\right) - \left(\frac{m-n}{p}\right)\right).$$
-
-Source: John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and
-Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Lemma 1
-(`integers-2025-A32-lem-1`). -/
-public theorem_wanted four_mul_card_legendreSym_pair_eq_neg_one (p : ℕ) [Fact p.Prime]
-    (hp : p ≠ 2) (m n : ℤ) (hmn : ¬ (p : ℤ) ∣ m * n * (n - m)) :
-    4 * ((((Finset.range p).filter fun r : ℕ =>
-        legendreSym p (m * r + 1) = -1 ∧ legendreSym p (n * r + 1) = -1).card : ℕ) : ℤ) =
-      4 * ((p / 4 : ℕ) : ℤ) -
-        (legendreSym p m - legendreSym p (n - m)) * (legendreSym p n - legendreSym p (m - n))
 
 /-- **Andrews' theorem on partitions with initial repetitions.** Let $k \ge 1$ and $n \ge 0$ be
 integers. Say that a partition has initial $k$-repetitions if, whenever a part $j$ appears at
@@ -137,19 +119,6 @@ Theorem 6 (`integers-2025-A32-thm-6`). -/
 public theorem_wanted initialRepetitionsC3_eleven_mul_add_even (n : ℕ) :
     Even (initialRepetitionsC3 (11 * n + 5)) ∧ Even (initialRepetitionsC3 (11 * n + 7)) ∧
       Even (initialRepetitionsC3 (11 * n + 9))
-
-/-- **$c_8$ is even on six residue classes modulo $49$.** Let $c_8$ be the initial-repetitions
-partition function of Nyirenda and Mugwangwavari. For every integer $n \ge 0$ and every
-$r \in \{6, 20, 27, 34, 41, 48\}$, the number $c_8(49n + r)$ is even.
-
-This result is due to Nyirenda and Mugwangwavari.
-
-Source: John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and
-Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32,
-Theorem 9 (`integers-2025-A32-thm-9`). -/
-public theorem_wanted initialRepetitionsC8_fortyNine_mul_add_even (n r : ℕ)
-    (hr : r ∈ ({6, 20, 27, 34, 41, 48} : Finset ℕ)) :
-    Even (initialRepetitionsC8 (49 * n + r))
 
 /-- **Andrews' identity for the first Rogers–Ramanujan series.** Let $q$ be a complex number with
 $|q| < 1$, write $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ for $j \ge 0$, and let
