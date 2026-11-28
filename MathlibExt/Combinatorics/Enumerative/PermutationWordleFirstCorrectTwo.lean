@@ -17,7 +17,8 @@ import Mathlib.SetTheory.Cardinal.Finite
 # Three-guess permutation Wordle solves first correct at guess two
 
 A three-guess solve of a derangement either has a correct position on the second guess or
-first has one on the third guess. For cyclic shift, the second class is a singleton.
+first has one on the third guess. For cyclic shift on `n ≥ 4` positions, the second class is a
+singleton.
 
 ## References
 
