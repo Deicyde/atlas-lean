@@ -56,13 +56,15 @@ example {R K L : Type*} [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsLocalR
       ∀ r ∈ maximalIdeal R, algebraMap R L r ∈ V.nonunits :=
   exists_isDiscreteValuationRing_dominating_of_essFiniteType (K := K) hR
 
-/-- The one-dimensional dominating ring is local, Noetherian, not a field, and essentially of
-finite type over `R`. -/
+/-- The one-dimensional dominating ring is local, Noetherian, of Krull dimension at most one, not
+a field, dominates `R` (the maximal ideal of `R` maps into its maximal ideal), and is essentially
+of finite type over `R`. -/
 example {R K : Type*} [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsLocalRing R]
     [Field K] [Algebra R K] [IsFractionRing R K] (hR : ¬ IsField R) :
-    ∃ S : Subalgebra R K, IsNoetherianRing S ∧ Ring.KrullDimLE 1 S ∧ ¬ IsField S ∧
+    ∃ (S : Subalgebra R K) (_ : IsLocalRing S), IsNoetherianRing S ∧ Ring.KrullDimLE 1 S ∧
+      ¬ IsField S ∧ (∀ r ∈ maximalIdeal R, algebraMap R S r ∈ maximalIdeal S) ∧
       Algebra.EssFiniteType R S := by
-  obtain ⟨S, -, hS, hd, hf, -, he⟩ := exists_subalgebra_dominating_krullDimLE_one (K := K) hR
-  exact ⟨S, hS, hd, hf, he⟩
+  obtain ⟨S, hl, hS, hd, hf, hm, he⟩ := exists_subalgebra_dominating_krullDimLE_one (K := K) hR
+  exact ⟨S, hl, hS, hd, hf, hm, he⟩
 
 end MathlibExtTest.RingTheory.Valuation.DVRDominationNoetherian
