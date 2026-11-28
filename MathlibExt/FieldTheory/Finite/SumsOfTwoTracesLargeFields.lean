@@ -21,9 +21,10 @@ Let $U_q$ be the set of $s \in \mathbb{F}_q$ with $x^2 - sx + 1$ irreducible in 
 Math. 131 (2009), 675–682: $U_q$ is nonempty, and $U_q + U_q = \mathbb{F}_q$ for $q > 11$
 (`FiniteField.tracesOfIrreducibleQuadratics_nonempty_and_add_self`).
 
-Poonen's proof applies the Hasse bound to a genus-one curve whose points give the decompositions
-$a = s + s'$. Here that argument is made explicit with an elliptic curve in Weierstrass form, so
-that the Hasse bound proved on `main`
+Poonen's proof applies the Hasse bound to the normalization, of genus at most one, of a curve of
+arithmetic genus one whose points give the decompositions $a = s + s'$. Here that argument is made
+explicit with a Weierstrass cubic $E_a$, an elliptic curve once $a \notin \{0, \pm 4\}$, so that
+the Hasse bound proved on `main`
 (`MathlibExt.AlgebraicGeometry.EllipticCurve.HasseBoundWanted.hasse_bound`) applies. For
 $a \in \mathbb{F}_q$ let $N(s)$ be the number of roots of $x^2 - sx + 1$ in $\mathbb{F}_q$, so that
 $s \in U_q$ exactly when $N(s) = 0$. For $a \neq 0$:
@@ -63,7 +64,7 @@ variable [DecidableEq K]
 private def rootCount (s : K) : ℕ :=
   (Finset.univ.filter fun y : K => y ^ 2 - s * y + 1 = 0).card
 
-/-- The roots of $x^2 - sx + 1$ are $r$ and $s - r$ for any one root $r$. -/
+/-- Given a root $r$ of $x^2 - sx + 1$, every root is either $r$ or $s - r$. -/
 private theorem roots_subset {s r : K} (hr : r ^ 2 - s * r + 1 = 0) :
     Finset.univ.filter (fun y : K => y ^ 2 - s * y + 1 = 0) ⊆ {r, s - r} := by
   intro y hy
@@ -374,22 +375,7 @@ private theorem card_sub_two_le_card_curvePoints_four :
       · linear_combination h
       · exact absurd h hV
   have hroots : (Finset.univ.filter fun V : K => ¬(V ^ 2 + 1 ≠ 0)).card ≤ 2 := by
-    by_cases h : ∃ r : K, r ^ 2 + 1 = 0
-    · obtain ⟨r, hr⟩ := h
-      have : (Finset.univ.filter fun V : K => ¬(V ^ 2 + 1 ≠ 0)) ⊆ {r, -r} := by
-        intro V hV
-        simp only [Finset.mem_filter, Finset.mem_univ, true_and, not_not] at hV
-        simp only [Finset.mem_insert, Finset.mem_singleton]
-        have : (V - r) * (V + r) = 0 := by linear_combination hV - hr
-        rcases mul_eq_zero.1 this with h | h
-        · left; linear_combination h
-        · right; linear_combination h
-      exact (Finset.card_le_card this).trans Finset.card_le_two
-    · push Not at h
-      have : (Finset.univ.filter fun V : K => ¬(V ^ 2 + 1 ≠ 0)) = ∅ :=
-        Finset.filter_eq_empty_iff.2 fun V _ => by simpa using h V
-      rw [this, Finset.card_empty]
-      omega
+    simpa [rootCount] using rootCount_le_two (0 : K)
   have hsplit := Finset.card_filter_add_card_filter_not (s := (Finset.univ : Finset K))
     (p := fun V : K => V ^ 2 + 1 ≠ 0)
   rw [Finset.card_univ] at hsplit
@@ -401,7 +387,7 @@ end Count
 elements. Then every element of $K$ is $s + s'$ for some $s, s' \in K$ such that $x^2 - sx + 1$ and
 $x^2 - s'x + 1$ are irreducible in $K[x]$.
 
-This is Poonen's argument for large $q$ made explicit, with the explicit elliptic curve
+This is Poonen's argument for large $q$ made explicit, with the explicit Weierstrass cubic
 $E_a \colon Y^2 + aXY = X^3 - 2X^2 + X$ in place of his curve $X$: for $a \ne 0$ the affine points
 of $E_a$, apart from $(0, 0)$, $(1, 0)$ and $(1, -a)$, correspond to the triples $(s, y, z)$ with
 $y^2 - sy + 1 = 0$ and $z^2 - (a - s)z + 1 = 0$, and inclusion–exclusion over the roots gives
@@ -412,8 +398,8 @@ elliptic curve with $M_a + 1$ points, and the Hasse bound
 (`MathlibExt.AlgebraicGeometry.EllipticCurve.HasseBoundWanted.hasse_bound`) gives
 $(q + 1 - (M_a + 1))^2 \le 4q$, impossible with $M_a + 1 \le 8$ for $q \ge 15$; for $a = 4 \ne 0$
 the curve has at least $q - 2$ affine points, $a = -4$ follows by $U_q = -U_q$, and $a = 0$ from
-`FiniteField.zero_mem_tracesOfIrreducibleQuadratics_add_self`. Poonen's statement is for $q \ge 23$;
-the explicit model gives $q \ge 15$.
+`FiniteField.zero_mem_tracesOfIrreducibleQuadratics_add_self`. Poonen's Hasse-bound step works for
+$q \ge 23$; this count works for $q \ge 15$.
 
 Source: B. Poonen, "Characterizing integers among rational numbers with a universal-existential
 formula", Amer. J. Math. 131 (2009), 675–682, proof of Lemma 2.3, p. 3 of the author's version with
