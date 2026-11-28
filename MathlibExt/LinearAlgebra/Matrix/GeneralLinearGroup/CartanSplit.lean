@@ -11,6 +11,7 @@ module
 public import MathlibExt.LinearAlgebra.Matrix.GeneralLinearGroup.Cartan
 public import Mathlib.RingTheory.Adjoin.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
+import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
 import Mathlib.LinearAlgebra.Dimension.Constructions
@@ -133,12 +134,16 @@ theorem _root_.Matrix.IsCartanSubalgebra.map {A : Subalgebra F (Matrix (Fin 2) (
   · exact (AlgEquiv.subalgebraMap φ A).toLinearEquiv.finrank_eq.symm.trans hr
 
 /-- **Cayley–Hamilton for $2 \times 2$ matrices.** Every $x \in M_2(F)$ satisfies
-$x^2 = \operatorname{tr}(x)\, x - \det(x)\, 1$. -/
+$x^2 = \operatorname{tr}(x)\, x - \det(x)\, 1$. This is Mathlib's Cayley–Hamilton theorem
+`Matrix.aeval_self_charpoly` with the characteristic polynomial `Matrix.charpoly_fin_two`. -/
 theorem mul_self_eq_trace_smul_sub_det_smul (x : Matrix (Fin 2) (Fin 2) F) :
     x * x = x.trace • x - x.det • 1 := by
-  rw [Matrix.eta_fin_two x, Matrix.mul_fin_two, Matrix.trace_fin_two, Matrix.det_fin_two]
-  ext i j
-  fin_cases i <;> fin_cases j <;> simp <;> ring
+  have h := x.aeval_self_charpoly
+  simp only [Matrix.charpoly_fin_two, sq, map_add, Polynomial.aeval_sub, map_mul,
+    Polynomial.aeval_X, Polynomial.aeval_C, Algebra.algebraMap_eq_smul_one, smul_mul_assoc,
+    one_mul] at h
+  rw [← sub_eq_zero, ← h]
+  abel
 
 /-- **Roots of a quadratic of nonzero discriminant are separable.** Let $B$ be an $F$-algebra and
 $y \in B$ with $y^2 = s y - n$ for some $s, n \in F$ with $s^2 - 4n \neq 0$. Then $y$ is separable
