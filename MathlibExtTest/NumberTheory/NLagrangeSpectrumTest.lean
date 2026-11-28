@@ -13,6 +13,7 @@ import Mathlib.NumberTheory.Real.Irrational
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.NormNum.GCD
 import MathlibExt.NumberTheory.NLagrangeSpectrum
 
 -- At `k = 1` for `ξ = √2`, the convergent is `1`, the complete quotient is
@@ -106,3 +107,50 @@ example :
     MetaMathlibExt.nLagrangeApproximability 1 x =
       Filter.limsup (fun k => ((digit k + rev k + Int.fract (cq k) : ℝ) : EReal)) Filter.atTop :=
   (MetaMathlibExt.convergent_quality_and_lagrange_limsup _ irrational_sqrt_two).2
+
+section DivisorMaxima
+
+open MetaMathlibExt
+
+-- Independently reduce both full formulas when the divisor set is a singleton.
+example (x y : ℝ) :
+    nLagrangeApproximability 1 x =
+        (1 : ℕ).divisors.sup (fun g => nLagrangeApproximability 1 (g * x)) ∧
+      nMarkoffApproximability 1 x y =
+        (1 : ℕ).divisors.sup (fun g => nMarkoffApproximability 1 (g * x) (g * y)) := by
+  simp only [Nat.divisors_one, Finset.sup_singleton, Nat.cast_one, one_mul, and_self]
+
+-- For n = 6 and q = 1/4, scaling by the common divisor 2 gives the score 1/2.
+-- Scaling by 6 also cancels a factor 2, but gives only 1/6.
+example :
+    let q : ℚ := 1 / 4
+    (Nat.gcd q.den 6 : ℝ) / ((q.den : ℝ) ^ 2 * |(q : ℝ)|) = 1 / 2 ∧
+      1 / (((2 * q).den : ℝ) ^ 2 * |((2 * q : ℚ) : ℝ)|) = 1 / 2 ∧
+      1 / (((6 * q).den : ℝ) ^ 2 * |((6 * q : ℚ) : ℝ)|) = 1 / 6 := by
+  dsimp only
+  norm_num
+
+-- For ξ = 0, ξ' = 1, reindex (1, -4) at g = 2 and (1, 0) at g = 6.
+example :
+    let score (n : ℕ) (x y : ℝ) (s t : ℤ) :=
+      (Int.gcd t n : ℝ) * |x - y| / (|(s : ℝ) - t * x| * |(s : ℝ) - t * y|)
+    score 6 0 1 1 (-4) = 2 / 5 ∧ score 1 0 2 1 (-2) = 2 / 5 ∧
+      score 6 0 1 1 0 = 6 ∧ score 1 0 6 1 0 = 6 := by
+  dsimp only
+  norm_num [Int.gcd_eq_natAbs_gcd_natAbs]
+
+-- A client using the explicit divisor set for 6 and the two irrationals ±√2.
+example :
+    let x := Real.sqrt 2
+    let ds : Finset ℕ := {1, 2, 3, 6}
+    nLagrangeApproximability 6 x = ds.sup (fun g => nLagrangeApproximability 1 (g * x)) ∧
+      nMarkoffApproximability 6 x (-x) =
+        ds.sup (fun g => nMarkoffApproximability 1 (g * x) (g * -x)) := by
+  have hx : 0 < Real.sqrt 2 := Real.sqrt_pos.2 (by norm_num)
+  have hne : Real.sqrt 2 ≠ -Real.sqrt 2 := by linarith
+  have h := nApproximability_eq_sup_divisors 6 (by decide) _ _
+    irrational_sqrt_two irrational_sqrt_two.neg hne
+  rw [show (6 : ℕ).divisors = {1, 2, 3, 6} by decide] at h
+  exact h
+
+end DivisorMaxima

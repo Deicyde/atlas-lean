@@ -23,31 +23,6 @@ namespace MetaMathlibExt
 
 open Filter Topology
 
-/-- **$n$-Markoff approximability.** For a natural number $n$ and real numbers $\xi$ and $\xi'$, the
-$n$-Markoff approximability is the supremum in the extended reals
-$$\mu_n(\xi, \xi') = \sup_{(s,t) \ne 0} \frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|}$$
-over all pairs of integers $(s, t) \ne (0, 0)$. A term whose denominator is $0$, which happens only
-when $\xi$ or $\xi'$ is rational, counts as $0$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equation (4). -/
-noncomputable def nMarkoffApproximability (n : ℕ) (ξ ξ' : ℝ) : EReal :=
-  ⨆ st : {p : ℤ × ℤ // p ≠ 0},
-    ((((Int.gcd st.1.2 n : ℝ) * |ξ - ξ'| /
-      (|(st.1.1 : ℝ) - st.1.2 * ξ| * |(st.1.1 : ℝ) - st.1.2 * ξ'|) : ℝ)) : EReal)
-
-/-- **Symmetry of the $n$-Markoff approximability.** For every natural number $n$ and all real
-numbers $\xi$ and $\xi'$, the $n$-Markoff approximability satisfies
-$\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equation (4). -/
-theorem nMarkoffApproximability_comm (n : ℕ) (ξ ξ' : ℝ) :
-    nMarkoffApproximability n ξ ξ' = nMarkoffApproximability n ξ' ξ := by
-  simp only [nMarkoffApproximability, abs_sub_comm ξ ξ', mul_comm |(_ : ℝ) - _ * ξ|]
-
 /-- **$n$-Lagrange spectrum.** For a natural number $n$, the $n$-Lagrange spectrum $L_n$ is the set
 of real numbers $\alpha$ such that $\lambda_n(\xi) = \alpha$ for some irrational real number
 $\xi$, where $\lambda_n$ is the $n$-Lagrange approximability; only finite values of $\lambda_n$
@@ -95,22 +70,6 @@ theorem mem_nMarkoffSpectrum (n : ℕ) (α : ℝ) :
     α ∈ nMarkoffSpectrum n ↔
       ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧ nMarkoffApproximability n ξ ξ' = α :=
   Iff.rfl
-
-/-- **The $n$-approximabilities as maxima over divisors.** Let $n \ge 1$, let $\lambda_n$ and
-$\mu_n$ be the $n$-Lagrange and $n$-Markoff approximabilities, and let $\xi \ne \xi'$ be irrational
-real numbers. Then $\lambda_n(\xi) = \max_{g \mid n} \lambda_1(g\xi)$ and
-$\mu_n(\xi, \xi') = \max_{g \mid n} \mu_1(g\xi, g\xi')$, where $g$ runs over the positive divisors
-of $n$ and the maxima are taken in the extended reals.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Proposition 6 (`integers-2025-A47-prop-6`). -/
-public theorem_wanted nApproximability_eq_sup_divisors (n : ℕ) (hn : 1 ≤ n) (ξ ξ' : ℝ)
-    (hξ : Irrational ξ) (hξ' : Irrational ξ') (hne : ξ ≠ ξ') :
-    nLagrangeApproximability n ξ =
-        n.divisors.sup (fun g => nLagrangeApproximability 1 (g * ξ)) ∧
-      nMarkoffApproximability n ξ ξ' =
-        n.divisors.sup (fun g => nMarkoffApproximability 1 (g * ξ) (g * ξ'))
 
 /-- **Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra.** Let $m$ and $n$
 be natural numbers with $m \ge 1$, $n \ge 1$ and $m \mid n$, and write $L_k$ and $M_k$ for the
