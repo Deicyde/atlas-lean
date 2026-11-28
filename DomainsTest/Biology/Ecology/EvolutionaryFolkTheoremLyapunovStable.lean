@@ -24,7 +24,7 @@ in which the second strategy always earns more gives a rest point that is not Na
 -/
 
 open Matrix
-open MathlibExt.Biology.Dynamics.AsymmetricESS (isMixed_iff isMixed_single)
+open MathlibExt.Biology.Dynamics.AsymmetricESS (isMixed_single)
 open MathlibExt.Biology.Dynamics.Replicator
   (isRestPoint_iff_eq_meanFitness_on_support isSolution_const meanFitness_mulVec)
 open WantedExt.Biology.Ecology.BoundaryESSStabilityWanted
@@ -37,11 +37,10 @@ private def neutral : Matrix (Fin 2) (Fin 2) ℝ := 0
 private def betterSecond : Matrix (Fin 2) (Fin 2) ℝ := !![0, 0; 1, 1]
 
 private theorem resident_mem : resident ∈ simplex (Fin 2) :=
-  mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single (0 : Fin 2)))
+  isMixed_single (0 : Fin 2)
 
 -- Check a nontrivial point of the segment directly from its two weights.
 example : resident + (1 / 3 : ℝ) • (![0, 1] - resident) ∈ simplex (Fin 2) := by
-  apply mem_simplex_iff.mpr
   have he : resident + (1 / 3 : ℝ) • (![0, 1] - resident) = ![2 / 3, 1 / 3] := by
     apply funext
     have h10 : (1 : Fin 2) ≠ 0 := Fin.zero_ne_one.symm

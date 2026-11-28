@@ -60,7 +60,7 @@ def IsLyapunovStable (A : Matrix ι ι ℝ) (p : ι → ℝ) : Prop :=
 
 end
 
-open MathlibExt.Biology.Dynamics.AsymmetricESS (isMixed_iff isMixed_single)
+open MathlibExt.Biology.Dynamics.AsymmetricESS (IsMixed isMixed_single)
 open MathlibExt.Biology.Dynamics.Replicator
   (continuous_mulVec_fitness exists_isSolution_mulVec meanFitness_mulVec)
 
@@ -72,14 +72,14 @@ public theorem isNash_iff_forall_pure_payoff_le {A : Matrix ι ι ℝ} {p : ι �
   constructor
   · intro hp
     refine ⟨hp.1, fun i => ?_⟩
-    have he := mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single i))
+    have he : Pi.single i (1 : ℝ) ∈ simplex ι := isMixed_single i
     simpa [single_dotProduct] using hp.2 _ he
   · rintro ⟨hp, hpayoff⟩
-    exact ⟨hp, fun q hq => (isMixed_iff.mpr (mem_simplex_iff.mp hq)).dotProduct_le hpayoff⟩
+    exact ⟨hp, fun q hq => (show IsMixed q from hq).dotProduct_le hpayoff⟩
 
 /-- **Neighborhood criterion for Lyapunov stability.** A simplex state is stable when each
-positive radius admits a neighborhood of initial states whose forward solutions stay within
-that radius. -/
+positive radius admits a neighbourhood in the simplex of initial states whose forward solutions
+stay within that radius. -/
 public theorem isLyapunovStable_iff {A : Matrix ι ι ℝ} {p : ι → ℝ} :
     IsLyapunovStable A p ↔
       p ∈ simplex ι ∧ ∀ ε > 0, ∃ δ > 0, ∀ x : ℝ → ι → ℝ, IsReplicatorSolution A x →
@@ -124,11 +124,11 @@ public theorem isNash_of_isLyapunovStable {A : Matrix ι ι ℝ} {p : ι → ℝ
     rw [Metric.mem_ball, ← hy0]
     apply hclose
     simpa [Real.dist_eq, abs_of_pos hs] using hsη
-  have he : e ∈ simplex ι := mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single i))
+  have he : e ∈ simplex ι := isMixed_single i
   have hy_mem : y s ∈ simplex ι := add_smul_sub_mem_simplex hp he hs.le hs₁
-  obtain ⟨x, hx0, hx⟩ := exists_isSolution_mulVec A (mem_simplex_iff.mp hy_mem)
+  obtain ⟨x, hx0, hx⟩ := exists_isSolution_mulVec A hy_mem
   have hx_mem₀ : x 0 ∈ simplex ι := Set.mem_of_eq_of_mem hx0 hy_mem
-  have hx0' := mem_simplex_iff.mp hx_mem₀
+  have hx0' : (∀ j, 0 ≤ x 0 j) ∧ ∑ j, x 0 j = 1 := hx_mem₀
   have hxi0 : 0 < x 0 i := by simpa [hx0, y, e, hpi] using hs
   have hxmem (t : ℝ) (ht : 0 ≤ t) := hx.mem_simplex hf hx0'.1 hx0'.2 ht
   have hxi (t : ℝ) (ht : 0 ≤ t) : 0 < x t i := hx.pos_of_pos hf hxi0 ht

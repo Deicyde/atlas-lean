@@ -60,11 +60,6 @@ def IsESS (A : Matrix ι ι ℝ) (p : ι → ℝ) : Prop :=
   p ∈ simplex ι ∧ ∀ q ∈ simplex ι, q ≠ p →
     q ⬝ᵥ A *ᵥ p < p ⬝ᵥ A *ᵥ p ∨ (q ⬝ᵥ A *ᵥ p = p ⬝ᵥ A *ᵥ p ∧ q ⬝ᵥ A *ᵥ q < p ⬝ᵥ A *ᵥ q)
 
-/-- **Membership in the strategy simplex.** Frequencies are nonnegative and sum to one. -/
-public theorem mem_simplex_iff {x : ι → ℝ} :
-    x ∈ simplex ι ↔ (∀ i, 0 ≤ x i) ∧ ∑ i, x i = 1 :=
-  Iff.rfl
-
 /-- **Segments in the strategy simplex.** If `p` and `q` are in the simplex and `0 ≤ t ≤ 1`,
 then the point `p + t • (q - p)` is also in the simplex. -/
 public theorem add_smul_sub_mem_simplex {p q : ι → ℝ} (hp : p ∈ simplex ι) (hq : q ∈ simplex ι)
