@@ -44,9 +44,11 @@ variable {C : Type u} [Category.{v} C]
   [HasZeroMorphisms C] [HasZeroObject C] [HasBinaryBiproducts C]
 variable {ι : Type w} {c : ComplexShape ι}
 
-/-- For C with finite limits, any complex shape c and a family of
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+If C also has finite limits, any complex shape c and a family of
 injective objects Iᵢ, the complex D(I) is injective in the category
-of c-shaped complexes. Its term at an endpoint has zero second summand. -/
+of c-shaped complexes. Its term at an index with no outgoing edge has zero second summand. -/
 theorem endpointCofree_injective (c : ComplexShape ι) [HasFiniteLimits C]
     (I : ι → C) [∀ i, Injective (I i)] :
     Injective (endpointCofree c I) := by
@@ -58,7 +60,9 @@ theorem endpointCofree_injective (c : ComplexShape ι) [HasFiniteLimits C]
   have hI : Injective (I : GradedObject ι C) := (e.map_injective_iff I).1 hD
   exact (endpointCofreeAdjunction C c).map_injective I hI
 
-/-- For a c-shaped complex K and a family of monomorphisms
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a c-shaped complex K and a family of monomorphisms
 aᵢ : Kᵢ → Iᵢ, the cofree morphism K → D(I) is a
 monomorphism of complexes of the same shape. -/
 theorem endpointCofreeHom_mono (K : HomologicalComplex C c) (I : ι → C)
@@ -68,7 +72,9 @@ theorem endpointCofreeHom_mono (K : HomologicalComplex C c) (I : ι → C)
   intro i
   exact mono_of_mono_fac (endpointCofreeHom_fst K I a i)
 
-/-- If C has enough injectives, a complex K of any
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+If C has enough injectives, a complex K of any
 shape has a cofree morphism into D(I), where Iᵢ is the chosen injective
 object containing Kᵢ and the first coefficient is the chosen
 monomorphism Kᵢ → Iᵢ. -/
@@ -76,7 +82,9 @@ def endpointCofreeCover (K : HomologicalComplex C c) [EnoughInjectives C] :
     K ⟶ endpointCofree c (fun i => Injective.under (K.X i)) :=
   endpointCofreeHom K _ (fun i => Injective.ι (K.X i))
 
-/-- For a complex K in C with enough injectives,
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a complex K in C with enough injectives,
 the cofree cover followed by the first projection in degree i is
 the chosen inclusion of Kᵢ into its injective object. -/
 @[reassoc (attr := simp)]

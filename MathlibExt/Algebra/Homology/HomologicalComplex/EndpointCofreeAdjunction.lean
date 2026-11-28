@@ -49,15 +49,20 @@ variable (C : Type u) [Category.{v} C]
   [HasZeroMorphisms C] [HasZeroObject C] [HasBinaryBiproducts C]
   {ι : Type w} (c : ComplexShape ι)
 
-/-- The functor from coefficient families to c-shaped cofree complexes. A family
-map aᵢ : Iᵢ → Jᵢ induces the complex map whose first coefficient is aᵢ. -/
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The functor from coefficient families to c-shaped cofree complexes. A family
+map aᵢ : Iᵢ → Jᵢ induces the complex map whose first coefficient in degree i is
+the first projection pᵢᴵ : D(I)ᵢ → Iᵢ followed by aᵢ. -/
 def endpointCofreeFunctor : GradedObject ι C ⥤ HomologicalComplex C c where
   obj I := endpointCofree c I
   map a := endpointCofreeMap c a
   map_id I := endpointCofreeMap_id c I
   map_comp a b := (endpointCofreeMap_comp c a b).symm
 
-/-- The adjunction identifying maps of graded families K.X → I with complex
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The adjunction identifying maps of graded families K.X → I with complex
 maps K → D(I), by taking or prescribing their first coefficients. -/
 def endpointCofreeAdjunction : forget C c ⊣ endpointCofreeFunctor C c :=
   Adjunction.mkOfHomEquiv
@@ -72,18 +77,24 @@ def endpointCofreeAdjunction : forget C c ⊣ endpointCofreeFunctor C c :=
         intro K I J a b
         exact (endpointCofreeHom_naturality K a b).symm }
 
-/-- The forgetful functor on complexes of an arbitrary shape has the endpoint
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The forgetful functor on complexes of an arbitrary shape has the endpoint
 cofree complex functor as a right adjoint. -/
 instance forget_isLeftAdjoint_endpointCofree : (forget C c).IsLeftAdjoint where
   exists_rightAdjoint := ⟨endpointCofreeFunctor C c, ⟨endpointCofreeAdjunction C c⟩⟩
 
-/-- The endpoint cofree functor is a right adjoint to forgetting the differential,
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The endpoint cofree functor is a right adjoint to forgetting the differential,
 including for shapes with endpoints. -/
 instance endpointCofreeFunctor_isRightAdjoint :
     (endpointCofreeFunctor C c).IsRightAdjoint where
   exists_leftAdjoint := ⟨forget C c, ⟨endpointCofreeAdjunction C c⟩⟩
 
-/-- The adjunction correspondence sends a coefficient family aᵢ : Kᵢ → Iᵢ
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The adjunction correspondence sends a coefficient family aᵢ : Kᵢ → Iᵢ
 to the cofree complex map with these first coefficients. -/
 theorem endpointCofreeAdjunction_homEquiv (K : HomologicalComplex C c)
     (I : GradedObject ι C) :
@@ -91,7 +102,9 @@ theorem endpointCofreeAdjunction_homEquiv (K : HomologicalComplex C c)
   unfold endpointCofreeAdjunction
   exact congrFun (congrFun (Adjunction.mkOfHomEquiv_homEquiv _) K) I
 
-/-- The image of a coefficient family under the adjunction is the complex map
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The image of a coefficient family under the adjunction is the complex map
 whose first components are that family. -/
 @[simp]
 theorem endpointCofreeAdjunction_homEquiv_apply (K : HomologicalComplex C c)
@@ -101,7 +114,9 @@ theorem endpointCofreeAdjunction_homEquiv_apply (K : HomologicalComplex C c)
     (fun e : ((forget C c).obj K ⟶ I) ≃ (K ⟶ (endpointCofreeFunctor C c).obj I) => e a)
     (endpointCofreeAdjunction_homEquiv C c K I)
 
-/-- The inverse adjunction correspondence takes the first projection of a
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The inverse adjunction correspondence takes the first projection of a
 complex morphism in every degree. -/
 @[simp]
 theorem endpointCofreeAdjunction_homEquiv_symm_apply (K : HomologicalComplex C c)
@@ -112,19 +127,25 @@ theorem endpointCofreeAdjunction_homEquiv_symm_apply (K : HomologicalComplex C c
     (fun e : ((forget C c).obj K ⟶ I) ≃ (K ⟶ (endpointCofreeFunctor C c).obj I) => e.symm f)
     (endpointCofreeAdjunction_homEquiv C c K I)
 
-/-- The adjunction unit sends K to D(K.X), with identity first coefficients
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The adjunction unit sends K to D(K.X), with identity first coefficients
 and K's differentials as outgoing second coefficients. -/
 abbrev endpointCofreeUnit :
     𝟭 (HomologicalComplex C c) ⟶ forget C c ⋙ endpointCofreeFunctor C c :=
   (endpointCofreeAdjunction C c).unit
 
-/-- The adjunction counit in degree i is the first projection
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The adjunction counit in degree i is the first projection
 D(I)ᵢ = Iᵢ ⊞ Eᵢ → Iᵢ. -/
 abbrev endpointCofreeCounit :
     endpointCofreeFunctor C c ⋙ forget C c ⟶ 𝟭 (GradedObject ι C) :=
   (endpointCofreeAdjunction C c).counit
 
-/-- The unit component at K is the cofree map with identity first coefficients. -/
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The unit component at K is the cofree map with identity first coefficients. -/
 @[simp]
 theorem endpointCofreeUnit_app (K : HomologicalComplex C c) :
     (endpointCofreeUnit C c).app K =
@@ -134,7 +155,9 @@ theorem endpointCofreeUnit_app (K : HomologicalComplex C c) :
   dsimp only [forget, GradedObject.categoryOfGradedObjects, CategoryTheory.pi] at h
   exact h.symm
 
-/-- The first coefficient of the unit is the identity in every degree. -/
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The first coefficient of the unit is the identity in every degree. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeUnit_fst (K : HomologicalComplex C c) (i : ι) :
     ((endpointCofreeUnit C c).app K).f i ≫
@@ -142,7 +165,9 @@ theorem endpointCofreeUnit_fst (K : HomologicalComplex C c) (i : ι) :
   rw [endpointCofreeUnit_app]
   exact endpointCofreeHom_fst K K.X (fun i => 𝟙 (K.X i)) i
 
-/-- Along an outgoing edge, the second coefficient of the unit, identified with
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+Along an outgoing edge, the second coefficient of the unit, identified with
 the next source term, is the source differential. -/
 @[reassoc]
 theorem endpointCofreeUnit_snd_of_rel (K : HomologicalComplex C c)
@@ -154,7 +179,9 @@ theorem endpointCofreeUnit_snd_of_rel (K : HomologicalComplex C c)
   exact (endpointCofreeHom_snd_of_rel K K.X (fun i => 𝟙 (K.X i)) hij).trans
     (Category.comp_id _)
 
-/-- At an index without an outgoing edge, the second coefficient of the unit is
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+At an index without an outgoing edge, the second coefficient of the unit is
 the zero morphism to the optional zero term. -/
 @[reassoc]
 theorem endpointCofreeUnit_snd_of_no_next (K : HomologicalComplex C c) (i : ι)
@@ -163,12 +190,16 @@ theorem endpointCofreeUnit_snd_of_no_next (K : HomologicalComplex C c) (i : ι)
         endpointCofreeSecondProjection c K.X i = 0 :=
   (endpointCofreeNextTerm_isZero K.X i hi).eq_of_tgt _ _
 
-/-- The cofree unit is a monomorphism because its forgetful left adjoint is faithful. -/
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The cofree unit is a monomorphism because its forgetful left adjoint is faithful. -/
 theorem endpointCofreeUnit_mono (K : HomologicalComplex C c) :
     Mono ((endpointCofreeUnit C c).app K) :=
   Adjunction.unit_mono_of_L_faithful (endpointCofreeAdjunction C c) K
 
-/-- The counit in degree i is the first projection from the cofree term to its
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+The counit in degree i is the first projection from the cofree term to its
 coefficient object Iᵢ. -/
 @[simp]
 theorem endpointCofreeCounit_app (I : GradedObject ι C) (i : ι) :
@@ -179,7 +210,9 @@ theorem endpointCofreeCounit_app (I : GradedObject ι C) (i : ι) :
   simpa only [endpointCofreeFunctor, Functor.id_obj,
     HomologicalComplex.id_f, Category.id_comp] using congrFun (h.symm.trans h') i
 
-/-- A cofree functor map followed by the first projection is the first projection
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+A cofree functor map followed by the first projection is the first projection
 followed by the corresponding coefficient map. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeFunctor_map_fst {I J : GradedObject ι C} (a : I ⟶ J) (i : ι) :
@@ -190,7 +223,9 @@ theorem endpointCofreeFunctor_map_fst {I J : GradedObject ι C} (a : I ⟶ J) (i
 
 variable [HasFiniteLimits C]
 
-/-- Forgetting a complex's differential preserves monomorphisms: cancellation
+/-- Assume C has zero morphisms and finite limits.
+
+Forgetting a complex's differential preserves monomorphisms: cancellation
 holds degreewise in the underlying graded family. -/
 instance forget_preservesMonomorphisms : (forget C c).PreservesMonomorphisms where
   preserves f hf := by
@@ -199,7 +234,9 @@ instance forget_preservesMonomorphisms : (forget C c).PreservesMonomorphisms whe
     funext i
     exact (cancel_mono (f.f i)).1 (congrFun hgh i)
 
-/-- The endpoint cofree right adjoint preserves injective graded objects, since
+/-- Assume C has zero morphisms, a zero object, binary biproducts and finite limits.
+
+The endpoint cofree right adjoint preserves injective graded objects, since
 its forgetful left adjoint preserves monomorphisms. -/
 instance endpointCofreeFunctor_preservesInjectiveObjects :
     (endpointCofreeFunctor C c).PreservesInjectiveObjects :=

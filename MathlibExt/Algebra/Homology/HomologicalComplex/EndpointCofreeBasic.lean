@@ -88,7 +88,9 @@ theorem endpointCofreeNextTerm_isZero (I : ι → C) (i : ι)
   rw [endpointCofreeNextTerm_of_no_next I i hi]
   exact CategoryTheory.Limits.isZero_zero C
 
-/-- For a family I in C and any complex shape c, form
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and any complex shape c, form
 the complex with term Iᵢ ⊕ Eᵢ, where Eᵢ is I(c.next i) on an outgoing
 edge and zero otherwise. Its differential along i → j is the second
 projection, the identification Eᵢ ≅ Iⱼ, and the first inclusion at j. -/
@@ -105,26 +107,34 @@ def endpointCofree (c : ComplexShape ι) (I : ι → C) : HomologicalComplex C c
     simp only [dite_eq_left hij, dite_eq_left hjk, Category.assoc,
       biprod.inl_snd_assoc, comp_zero, zero_comp]
 
-/-- For a family I in C and a complex shape c, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and a complex shape c, the
 projection D(I)ᵢ = Iᵢ ⊕ Eᵢ → Iᵢ is the first biproduct projection. -/
 def endpointCofreeProjection (c : ComplexShape ι) (I : ι → C) (i : ι) :
     (endpointCofree c I).X i ⟶ I i :=
   biprod.fst
 
-/-- For a family I in C and a complex shape c, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and a complex shape c, the
 projection D(I)ᵢ = Iᵢ ⊕ Eᵢ → Eᵢ is the second biproduct projection.
 The target is zero when i has no outgoing edge. -/
 def endpointCofreeSecondProjection (c : ComplexShape ι) (I : ι → C) (i : ι) :
     (endpointCofree c I).X i ⟶ endpointCofreeNextTerm c I i :=
   biprod.snd
 
-/-- For a family I in C and a complex shape c, the map
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and a complex shape c, the map
 Iᵢ → D(I)ᵢ = Iᵢ ⊕ Eᵢ is the first biproduct inclusion. -/
 def endpointCofreeInclusion (c : ComplexShape ι) (I : ι → C) (i : ι) :
     I i ⟶ (endpointCofree c I).X i :=
   biprod.inl
 
-/-- For a family I in C and a complex shape c, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and a complex shape c, the
 first inclusion Iᵢ → D(I)ᵢ followed by the first projection to Iᵢ is
 the identity of Iᵢ. -/
 @[reassoc (attr := simp)]
@@ -132,7 +142,9 @@ theorem endpointCofreeInclusion_projection (c : ComplexShape ι) (I : ι → C) 
     endpointCofreeInclusion c I i ≫ endpointCofreeProjection c I i = 𝟙 (I i) :=
   biprod.inl_fst
 
-/-- For a family I in C and a complex shape c, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and a complex shape c, the
 first inclusion Iᵢ → D(I)ᵢ followed by the optional second projection
 to Eᵢ is zero. -/
 @[reassoc (attr := simp)]
@@ -140,7 +152,9 @@ theorem endpointCofreeInclusion_secondProjection (c : ComplexShape ι) (I : ι �
     endpointCofreeInclusion c I i ≫ endpointCofreeSecondProjection c I i = 0 :=
   biprod.inl_snd
 
-/-- For a family I in C and an edge c.Rel i j, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and an edge c.Rel i j, the
 differential D(I)ᵢ → D(I)ⱼ equals the optional second projection at i,
 followed by Eᵢ ≅ Iⱼ and the first inclusion at j. -/
 theorem endpointCofree_d (I : ι → C) {i j : ι} (hij : c.Rel i j) :
@@ -149,14 +163,18 @@ theorem endpointCofree_d (I : ι → C) {i j : ι} (hij : c.Rel i j) :
         (endpointCofreeNextTermIso I hij).hom ≫ endpointCofreeInclusion c I j :=
   dite_eq_left hij
 
-/-- For a family I in C and an index i of a complex
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and an index i of a complex
 shape c with no outgoing edge, the cofree term D(I)ᵢ = Iᵢ ⊕ 0 is
 canonically isomorphic to Iᵢ. -/
 def endpointCofreeXIsoOfNoNext (I : ι → C) (i : ι)
     (hi : ¬ c.Rel i (c.next i)) : (endpointCofree c I).X i ≅ I i :=
   (isoBiprodZero (endpointCofreeNextTerm_isZero I i hi)).symm
 
-/-- For a family I in C and an index i without an
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and an index i without an
 outgoing edge in the complex shape c, the forward map of D(I)ᵢ ≅ Iᵢ
 is the first cofree projection. -/
 @[simp]
@@ -165,7 +183,9 @@ theorem endpointCofreeXIsoOfNoNext_hom (I : ι → C) (i : ι)
     (endpointCofreeXIsoOfNoNext I i hi).hom = endpointCofreeProjection c I i :=
   rfl
 
-/-- For a complex K in C and a family aᵢ : Kᵢ → Iᵢ,
+/-- Assume C has zero morphisms and a zero object.
+
+For a complex K in C and a family aᵢ : Kᵢ → Iᵢ,
 the second coefficient of its map into D(I) is dᵏᵢ,c.next i followed
 by a at c.next i, transported to Eᵢ. At an index without an outgoing
 edge it is zero. -/
@@ -176,10 +196,12 @@ def endpointCofreeSecondCoefficient (K : HomologicalComplex C c) (I : ι → C)
     K.d i (c.next i) ≫ a (c.next i) ≫ (endpointCofreeNextTermIso I hi).inv
   else 0
 
-/-- For a c-shaped complex K in C and arbitrary maps
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a c-shaped complex K in C and arbitrary maps
 aᵢ : Kᵢ → Iᵢ, there is a complex morphism K → D(I). Its component
 at i has first coefficient aᵢ and second coefficient determined by
-the outgoing differential of K; at an endpoint the latter is zero. -/
+the outgoing differential of K; at an index with no outgoing edge the latter is zero. -/
 def endpointCofreeHom (K : HomologicalComplex C c) (I : ι → C)
     (a : ∀ i, K.X i ⟶ I i) : K ⟶ endpointCofree c I where
   f i := biprod.lift (a i) (endpointCofreeSecondCoefficient K I a i)
@@ -200,7 +222,9 @@ def endpointCofreeHom (K : HomologicalComplex C c) (I : ι → C)
           ← Category.assoc, K.d_comp_d, zero_comp]
       · simp only [endpointCofreeSecondCoefficient, dite_eq_right hj, comp_zero]
 
-/-- For a complex K in C and maps aᵢ : Kᵢ → Iᵢ, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a complex K in C and maps aᵢ : Kᵢ → Iᵢ, the
 component of the cofree morphism K → D(I), followed by
 the first projection at i, equals aᵢ. -/
 @[reassoc (attr := simp)]
@@ -209,7 +233,9 @@ theorem endpointCofreeHom_fst (K : HomologicalComplex C c) (I : ι → C)
     (endpointCofreeHom K I a).f i ≫ endpointCofreeProjection c I i = a i :=
   biprod.lift_fst _ _
 
-/-- For a complex K in C and maps aᵢ : Kᵢ → Iᵢ, the
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a complex K in C and maps aᵢ : Kᵢ → Iᵢ, the
 component of K → D(I), followed by the optional second projection
 at i, is its coefficient determined by the source differential. -/
 @[reassoc]
@@ -219,7 +245,9 @@ theorem endpointCofreeHom_snd (K : HomologicalComplex C c) (I : ι → C)
       endpointCofreeSecondCoefficient K I a i :=
   biprod.lift_snd _ _
 
-/-- For a complex K in C, maps aᵢ : Kᵢ → Iᵢ and an
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a complex K in C, maps aᵢ : Kᵢ → Iᵢ and an
 edge c.Rel i j, the second coefficient of the cofree map K → D(I),
 identified with a map to Iⱼ, equals aⱼ ∘ dᵏᵢⱼ. -/
 @[reassoc]
@@ -232,7 +260,9 @@ theorem endpointCofreeHom_snd_of_rel (K : HomologicalComplex C c) (I : ι → C)
   simp only [endpointCofreeSecondCoefficient, dite_eq_left hij, Category.assoc,
     Iso.inv_hom_id, Category.comp_id]
 
-/-- For a morphism g : K → D(I) in C and an outgoing
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a morphism g : K → D(I) in C and an outgoing
 edge at i, its second coefficient at i is dᵏᵢ,c.next i followed by
 the first coefficient of g at c.next i, transported to Eᵢ. Thus
 commutation with the differential determines this coefficient. -/
@@ -252,7 +282,9 @@ theorem endpointCofree_snd (K : HomologicalComplex C c) (I : ι → C)
     (fun f : K.X i ⟶ I (c.next i) => f ≫ (endpointCofreeNextTermIso I hi).inv) h
   simpa only [Category.assoc, Iso.hom_inv_id, Category.comp_id] using ht
 
-/-- For complexes in C and any shape c, two morphisms
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For complexes in C and any shape c, two morphisms
 K → D(I) are equal whenever their first coefficients Kᵢ → Iᵢ agree
 at every index. This includes indices without an outgoing edge. -/
 theorem endpointCofree_hom_ext (I : ι → C)
@@ -272,7 +304,9 @@ theorem endpointCofree_hom_ext (I : ι → C)
           K.d i (c.next i) ≫ z ≫ (endpointCofreeNextTermIso I hi).inv) (h (c.next i))
     · exact (endpointCofreeNextTerm_isZero I i hi).eq_of_tgt _ _
 
-/-- For a c-shaped complex K and a family I in C,
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a c-shaped complex K and a family I in C,
 morphisms K → D(I) are in bijection with arbitrary families Kᵢ → Iᵢ.
 The forward direction takes first projections, and the inverse
 constructs the morphism whose second coefficients are determined by dᵏ. -/
@@ -286,7 +320,9 @@ def endpointCofreeHomEquiv (K : HomologicalComplex C c) (I : ι → C) :
     exact endpointCofreeHom_fst K I _ i
   right_inv a := funext fun i => endpointCofreeHom_fst K I a i
 
-/-- For a morphism g : K → L of c-shaped complexes in C
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a morphism g : K → L of c-shaped complexes in C
 and maps aᵢ : Lᵢ → Iᵢ, the composite K → L → D(I) is the cofree
 morphism with first coefficients aᵢ ∘ gᵢ. -/
 @[reassoc]
@@ -298,7 +334,9 @@ theorem endpointCofreeHom_precomp {K L : HomologicalComplex C c} (g : K ⟶ L)
   intro i
   simp only [HomologicalComplex.comp_f, Category.assoc, endpointCofreeHom_fst]
 
-/-- For coefficient families I,J in C and maps
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For coefficient families I,J in C and maps
 aᵢ : Iᵢ → Jᵢ, the induced morphism D(I) → D(J) has first component
 given by the first projection of D(I) followed by aᵢ. The second
 components are determined by the cofree differentials. -/
@@ -307,7 +345,9 @@ def endpointCofreeMap (c : ComplexShape ι) {I J : ι → C} (a : ∀ i, I i ⟶
   endpointCofreeHom (endpointCofree c I) J
     (fun i => endpointCofreeProjection c I i ≫ a i)
 
-/-- For maps aᵢ : Iᵢ → Jᵢ in C, the induced cofree
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For maps aᵢ : Iᵢ → Jᵢ in C, the induced cofree
 morphism D(I) → D(J), followed by the first projection at i, equals
 the first projection from D(I)ᵢ followed by aᵢ. -/
 @[reassoc (attr := simp)]
@@ -316,7 +356,9 @@ theorem endpointCofreeMap_fst (c : ComplexShape ι) {I J : ι → C} (a : ∀ i,
       endpointCofreeProjection c I i ≫ a i :=
   endpointCofreeHom_fst _ _ _ _
 
-/-- For a complex K in C and maps aᵢ : Kᵢ → Iᵢ and
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a complex K in C and maps aᵢ : Kᵢ → Iᵢ and
 bᵢ : Iᵢ → Jᵢ, the prescribed morphism K → D(I) followed by the
 cofree map D(I) → D(J) is the cofree morphism with coefficients
 bᵢ ∘ aᵢ. -/
@@ -331,7 +373,9 @@ theorem endpointCofreeHom_naturality (K : HomologicalComplex C c) {I J : ι → 
   rw [← Category.assoc, endpointCofreeHom_fst]
   rw [endpointCofreeHom_fst]
 
-/-- For a family I in C and any complex shape c,
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For a family I in C and any complex shape c,
 the cofree morphism induced by the identity on every Iᵢ is the
 identity of D(I). -/
 @[simp]
@@ -341,7 +385,9 @@ theorem endpointCofreeMap_id (c : ComplexShape ι) (I : ι → C) :
   intro i
   simp only [endpointCofreeMap_fst, Category.comp_id, HomologicalComplex.id_f, Category.id_comp]
 
-/-- For coefficient families I,J,L in C and maps
+/-- Assume C has zero morphisms, a zero object and binary biproducts.
+
+For coefficient families I,J,L in C and maps
 aᵢ : Iᵢ → Jᵢ and bᵢ : Jᵢ → Lᵢ, the composite of their induced
 cofree morphisms equals the cofree morphism induced by bᵢ ∘ aᵢ. -/
 theorem endpointCofreeMap_comp (c : ComplexShape ι) {I J L : ι → C} (a : ∀ i, I i ⟶ J i)

@@ -18,8 +18,9 @@ import Mathlib.Data.ZMod.Basic
 Finite tuples in the single-object category of the integer ring model finite
 free integer modules. This category has zero objects and finite biproducts;
 it has no supplied abelian structure. The cofree construction and adjunction
-apply to a cyclic shape, and its nonzero differential is detected by the
-single integer matrix coefficient after the two canonical projections.
+apply to a cyclic shape. Its detector includes the second source summand,
+applies the differential and projects onto the first target summand; the
+single integer matrix coefficient detects a nonzero result.
 -/
 
 noncomputable section

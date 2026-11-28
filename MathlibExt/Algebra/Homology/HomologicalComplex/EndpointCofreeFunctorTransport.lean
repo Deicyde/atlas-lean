@@ -55,8 +55,10 @@ variable {C : Type u₁} [Category.{v₁} C] [Preadditive C]
 
 attribute [local instance] preservesBinaryBiproducts_of_preservesBiproducts
 
-/-- Applying an additive functor to the optional next coefficient gives the
-optional next coefficient of the image family, using F(0) ≅ 0 at an endpoint. -/
+/-- Let F be additive between preadditive categories C and D with zero objects.
+
+Applying an additive functor to the optional next coefficient gives the
+optional next coefficient of the image family, using F(0) ≅ 0 at an index with no outgoing edge. -/
 def endpointCofreeNextTermFunctorIso (I : GradedObject ι C) (i : ι) :
     F.obj (endpointCofreeNextTerm c I i) ≅
       endpointCofreeNextTerm c (fun j => F.obj (I j)) i :=
@@ -69,7 +71,9 @@ def endpointCofreeNextTermFunctorIso (I : GradedObject ι C) (i : ι) :
         (eqToIso (endpointCofreeNextTerm_of_no_next (fun j => F.obj (I j)) i hi)).symm
 
 omit [HasBinaryBiproducts C] [HasBinaryBiproducts D] in
-/-- Along an outgoing edge, the optional-coefficient comparison commutes with
+/-- Let F be additive between preadditive categories C and D with zero objects.
+
+Along an outgoing edge, the optional-coefficient comparison commutes with
 the two canonical identifications of that coefficient with the target term. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeNextTermFunctorIso_hom_next (I : GradedObject ι C)
@@ -81,7 +85,10 @@ theorem endpointCofreeNextTermFunctorIso_hom_next (I : GradedObject ι C)
   simp only [endpointCofreeNextTermFunctorIso, dite_eq_left hij, Iso.trans_hom,
     Iso.symm_hom, Category.assoc, Iso.inv_hom_id, Category.comp_id, Functor.mapIso]
 
-/-- In each degree, preservation of the binary biproduct and the optional next
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+In each degree, preservation of the binary biproduct and the optional next
 coefficient gives the comparison between the image cofree term and the cofree
 term of the image family. -/
 def endpointCofreeFunctorTransportDegreeIso (I : GradedObject ι C) (i : ι) :
@@ -90,7 +97,10 @@ def endpointCofreeFunctorTransportDegreeIso (I : GradedObject ι C) (i : ι) :
   F.mapBiprod (I i) (endpointCofreeNextTerm c I i) ≪≫
     biprod.mapIso (Iso.refl _) (endpointCofreeNextTermFunctorIso F c I i)
 
-/-- The degreewise comparison followed by the first projection is the image
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The degreewise comparison followed by the first projection is the image
 under F of the original first projection. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeFunctorTransportDegreeIso_fst (I : GradedObject ι C) (i : ι) :
@@ -104,7 +114,10 @@ theorem endpointCofreeFunctorTransportDegreeIso_fst (I : GradedObject ι C) (i :
   rw [Category.assoc, biprod.map_fst, Category.comp_id,
     Functor.mapBiprod_hom, biprod.lift_fst]
 
-/-- The second coefficient of the degreewise comparison is the image of the
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The second coefficient of the degreewise comparison is the image of the
 old second projection followed by the optional-coefficient comparison. -/
 @[reassoc]
 theorem endpointCofreeFunctorTransportDegreeIso_snd (I : GradedObject ι C) (i : ι) :
@@ -119,7 +132,10 @@ theorem endpointCofreeFunctorTransportDegreeIso_snd (I : GradedObject ι C) (i :
   rw [Category.assoc, biprod.map_snd, ← Category.assoc,
     Functor.mapBiprod_hom, biprod.lift_snd]
 
-/-- The complex comparison into the cofree image family is the cofree
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The complex comparison into the cofree image family is the cofree
 map with first coefficients F applied to the original first projections. -/
 def endpointCofreeFunctorTransportHom (I : GradedObject ι C) :
     (F.mapHomologicalComplex c).obj ((endpointCofreeFunctor C c).obj I) ⟶
@@ -129,7 +145,10 @@ def endpointCofreeFunctorTransportHom (I : GradedObject ι C) :
     (fun j => F.obj (I j))
     (fun i => F.map (endpointCofreeProjection c I i))
 
-/-- The first coefficient of the complex comparison is the image under F of
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The first coefficient of the complex comparison is the image under F of
 the original first projection. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeFunctorTransportHom_fst (I : GradedObject ι C) (i : ι) :
@@ -138,7 +157,10 @@ theorem endpointCofreeFunctorTransportHom_fst (I : GradedObject ι C) (i : ι) :
       F.map (endpointCofreeProjection c I i) :=
   endpointCofreeHom_fst _ _ _ i
 
-/-- The complex comparison has the degreewise biproduct comparison as each of
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The complex comparison has the degreewise biproduct comparison as each of
 its components, including at endpoints. -/
 theorem endpointCofreeFunctorTransportHom_f (I : GradedObject ι C) (i : ι) :
     (endpointCofreeFunctorTransportHom F c I).f i =
@@ -183,7 +205,10 @@ theorem endpointCofreeFunctorTransportHom_f (I : GradedObject ι C) (i : ι) :
           (endpointCofreeFunctorTransportDegreeIso_snd F c I i).symm
     · exact (endpointCofreeNextTerm_isZero (fun j => F.obj (I j)) i hi).eq_of_tgt _ _
 
-/-- Every component of the cofree transport comparison is an isomorphism, so
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+Every component of the cofree transport comparison is an isomorphism, so
 the comparison is an isomorphism of complexes. -/
 instance endpointCofreeFunctorTransportHom_isIso (I : GradedObject ι C) :
     IsIso (endpointCofreeFunctorTransportHom F c I) := by
@@ -192,7 +217,10 @@ instance endpointCofreeFunctorTransportHom_isIso (I : GradedObject ι C) :
     exact Iso.isIso_hom (endpointCofreeFunctorTransportDegreeIso F c I i)
   exact Hom.isIso_of_components _
 
-/-- Applying F degreewise to the cofree complex is naturally isomorphic to
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+Applying F degreewise to the cofree complex is naturally isomorphic to
 forming the cofree complex after applying F to every coefficient object. -/
 def endpointCofreeFunctorTransportIso :
     endpointCofreeFunctor C c ⋙ F.mapHomologicalComplex c ≅
@@ -233,7 +261,10 @@ def endpointCofreeFunctorTransportIso :
                   (F.map_comp _ _).symm))
       exact hleft.trans hright.symm)
 
-/-- The natural comparison has the canonical transported first projection in
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The natural comparison has the canonical transported first projection in
 every degree. -/
 @[reassoc (attr := simp)]
 theorem endpointCofreeFunctorTransportIso_fst (I : GradedObject ι C) (i : ι) :
@@ -244,7 +275,10 @@ theorem endpointCofreeFunctorTransportIso_fst (I : GradedObject ι C) (i : ι) :
     endpointCofreeProjection c (fun j => F.obj (I j)) i = _
   exact endpointCofreeFunctorTransportHom_fst F c I i
 
-/-- Applying F to the cofree unit and then the comparison gives the cofree unit
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+Applying F to the cofree unit and then the comparison gives the cofree unit
 of the degreewise image complex. -/
 theorem endpointCofreeFunctorTransportIso_unit (K : HomologicalComplex C c) :
     (F.mapHomologicalComplex c).map ((endpointCofreeUnit C c).app K) ≫
@@ -267,7 +301,10 @@ theorem endpointCofreeFunctorTransportIso_unit (K : HomologicalComplex C c) :
     _ = 𝟙 (F.obj (K.X i)) := F.map_id _
     _ = _ := (endpointCofreeUnit_fst D c ((F.mapHomologicalComplex c).obj K) i).symm
 
-/-- The transported cofree comparison commutes degreewise with the canonical
+/-- Let F be additive between preadditive categories C and D with zero objects and binary
+biproducts in both categories.
+
+The transported cofree comparison commutes degreewise with the canonical
 counits on the original and image coefficient families. -/
 @[reassoc]
 theorem endpointCofreeFunctorTransportIso_counit (I : GradedObject ι C) (i : ι) :
