@@ -27,8 +27,9 @@ distinguishing this maximal structure from the split exact structure.
 
 The identity-augmented degree-zero integer complex supplies a genuine
 relative-resolution comparison over multiplication by two. Its full chain
-augmentation equation and degree-zero homology map retain that endpoint map;
-the canonical homology coordinate sends `1` to `2` and is nonzero.
+augmentation equation and degree-zero homology map retain that endpoint map.
+In the canonical homology coordinate, the induced comparison map sends `1`
+to `2`, so it is nonzero.
 -/
 
 open CategoryTheory CategoryTheory.Limits CategoryTheory.Preadditive
