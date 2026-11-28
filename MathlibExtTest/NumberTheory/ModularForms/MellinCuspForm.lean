@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.NumberTheory.ModularForms.MellinCuspForm
+public import Mathlib.NumberTheory.ModularForms.LFunction
 
 open CongruenceSubgroup UpperHalfPlane
 
@@ -39,6 +40,17 @@ example {s : ℂ} (hs : 0 < s.re) :
     MellinConvergent (fun t : ℝ ↦ (0 : CuspForm (Gamma0 5) 2) (ofComplex (Complex.I * t))) s :=
   (CuspForm.completedLSeries_Gamma0_two_eq_mellin 5 0 hs
     (by simp [UpperHalfPlane.qExpansion_zero])).1
+
+-- Consistency with Mathlib's completed `L`-function `ModularForm.Λ` (no `N^{s/2}` factor there):
+-- `CuspForm.Λ_eq_mellin` and the identity of this file give `(2π)^{-s} Γ(s) L(f, s)`.
+example (N : ℕ) [NeZero N] (f : CuspForm (Gamma0 N) 2) {s : ℂ} (hs : 0 < s.re)
+    (hsum : Summable fun n : ℕ ↦ ‖(qExpansion 1 f).coeff n‖ / (n : ℝ) ^ s.re) :
+    ModularForm.Λ (by norm_num : (0 : ℤ) < 2) f s =
+      (2 * Real.pi) ^ (-s) * Complex.Gamma s * LSeries (fun n ↦ (qExpansion 1 f).coeff n) s := by
+  rw [CuspForm.Λ_eq_mellin]
+  refine (CuspFormClass.mellinConvergent_and_mellin_eq_LSeries f ?_ hs hsum).2
+  rw [strictPeriods_Gamma0]
+  exact AddSubgroup.mem_zmultiples 1
 
 #print axioms CuspFormClass.mellinConvergent_and_mellin_eq_LSeries
 #print axioms CuspForm.completedLSeries_Gamma0_two_eq_mellin

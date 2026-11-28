@@ -31,6 +31,12 @@ The exchange of sum and integral is Mathlib's `hasSum_mellin`. The point `it` of
 half-plane is written `UpperHalfPlane.ofComplex (Complex.I * t)`, which is `it` for `t > 0`,
 the only values the Mellin transform uses.
 
+Mathlib's `CuspForm.Λ_eq_mellin` and `CuspForm.hasSum_Λ` (in
+`Mathlib.NumberTheory.ModularForms.LFunction`) give the same identity, for an arithmetic `Γ`,
+weight `k > 0` and `Re s > k/2 + 1`, through the completed `L`-function `ModularForm.Λ`. The
+statements here assume instead only that `∑ |aₙ| n^{-Re s}` converges, which is the hypothesis
+of the blueprint statement, and need no condition on `Γ` or `k` beyond `1 ∈ Γ.strictPeriods`.
+
 ## References
 
 * H. Darmon, *Rational points on modular elliptic curves*, CBMS Regional Conference Series in
