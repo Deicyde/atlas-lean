@@ -146,4 +146,37 @@ example : fiveCoreCount 0 = 1 ∧ fiveCoreCount 1 = 1 ∧ fiveCoreCount 2 = 2 �
     at h0 h1 h2 h3 h4 h5
   exact ⟨by omega, by omega, by omega, by omega, by omega, by omega⟩
 
+section
+
+local notation "Φ" => ramanujanThetaPow 1 1
+local notation "Ψ" => ramanujanThetaPow 1 3
+
+private noncomputable def phiPieces : ℤ⟦X⟧ :=
+  expand 25 (by decide) Φ + 2 * X ^ 1 * ramanujanThetaPow 15 35 +
+    2 * X ^ 4 * ramanujanThetaPow 5 45
+
+private noncomputable def psiPieces : ℤ⟦X⟧ :=
+  ramanujanThetaPow 10 15 + X ^ 1 * ramanujanThetaPow 5 20 + X ^ 3 * expand 25 (by decide) Ψ
+
+-- Compute both sides independently. These degrees include nonconstant terms of all three pieces,
+-- and degree 2 belongs to neither dissection's support.
+example : ([0, 1, 2, 4, 9, 16, 25, 36] : List ℕ).map (fun n => (coeff n Φ, coeff n phiPieces)) =
+    [(1, 1), (2, 2), (0, 0), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)] := by
+  simp only [List.map_cons, List.map_nil, phiPieces, map_add, mul_assoc, coeff_ofNat_mul,
+    coeff_X_pow_mul', coeff_expand]
+  norm_num only [coeff_ramanujanThetaPow]
+  decide
+
+example : ([0, 1, 2, 3, 6, 10, 15, 28] : List ℕ).map (fun n => (coeff n Ψ, coeff n psiPieces)) =
+    [(1, 1), (1, 1), (0, 0), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)] := by
+  simp only [List.map_cons, List.map_nil, psiPieces, map_add, coeff_X_pow_mul', coeff_expand]
+  norm_num only [coeff_ramanujanThetaPow]
+  decide
+
+example : coeff 25 Φ = coeff 25 phiPieces ∧ coeff 28 Ψ = coeff 28 psiPieces := by
+  exact ⟨by simpa only [phiPieces, pow_one] using congrArg (coeff 25) theta_five_dissections.1,
+    by simpa only [psiPieces, pow_one] using congrArg (coeff 28) theta_five_dissections.2⟩
+
+end
+
 end MetaMathlibExt
