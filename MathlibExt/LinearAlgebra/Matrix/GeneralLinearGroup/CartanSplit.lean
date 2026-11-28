@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.LinearAlgebra.Matrix.GeneralLinearGroup.Cartan
 public import Mathlib.RingTheory.Adjoin.Basic
+public import Mathlib.Algebra.Ring.Action.ConjAct
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
@@ -35,8 +36,9 @@ Over any field `F`:
   are exactly the conjugates `g C_s g⁻¹` of Sutherland's group `C_s` of invertible diagonal
   matrices.
 
-Along the way: conjugation `Matrix.GeneralLinearGroup.conjAlgEquiv` as an algebra automorphism of
-`M₂(F)`, the diagonal subalgebra and its isomorphism with `F × F`, the conjugacy of a `2 × 2`
+Along the way: the units of a conjugate subalgebra, for conjugation as Mathlib's algebra
+automorphism `MulSemiringAction.toAlgEquiv F M₂(F) (ConjAct.toConjAct g)`, the diagonal subalgebra
+(the range of `Matrix.diagonalAlgHom`) and its isomorphism with `F × F`, the conjugacy of a `2 × 2`
 idempotent `e ≠ 0, 1` to `!![1, 0; 0, 0]`, and two facts on separable elements of an algebra: a
 root of a quadratic of nonzero discriminant is separable, and a separable square-zero element is
 zero.
@@ -58,38 +60,23 @@ variable {F : Type*} [Field F]
 
 namespace Matrix.GeneralLinearGroup
 
-/-- **Conjugation by an invertible matrix.** For $g \in \mathrm{GL}_2(F)$, the $F$-algebra
-automorphism $m \mapsto g m g^{-1}$ of $M_2(F)$. -/
-def conjAlgEquiv (g : GL (Fin 2) F) :
-    Matrix (Fin 2) (Fin 2) F ≃ₐ[F] Matrix (Fin 2) (Fin 2) F where
-  toFun m := (g : Matrix (Fin 2) (Fin 2) F) * m * ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F)
-  invFun m := ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) * m * g
-  left_inv m := by
-    simp only [← mul_assoc, Units.inv_mul, one_mul]
-    simp only [mul_assoc, Units.inv_mul, mul_one]
-  right_inv m := by
-    simp only [← mul_assoc, Units.mul_inv, one_mul]
-    simp only [mul_assoc, Units.mul_inv, mul_one]
-  map_mul' a b := by
-    simp only [mul_assoc]
-    simp only [← mul_assoc ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F), Units.inv_mul,
-      one_mul]
-  map_add' a b := by simp only [mul_add, add_mul]
-  commutes' r := by
-    simp only [Algebra.algebraMap_eq_smul_one, mul_smul_comm, smul_mul_assoc, mul_one,
-      Units.mul_inv]
-
-theorem conjAlgEquiv_apply (g : GL (Fin 2) F) (m : Matrix (Fin 2) (Fin 2) F) :
-    conjAlgEquiv g m =
-      (g : Matrix (Fin 2) (Fin 2) F) * m * ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) :=
+/-- **Conjugation as an algebra automorphism.** For $g \in \mathrm{GL}_2(F)$, Mathlib's algebra
+automorphism `MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g)` of
+$M_2(F)$ is $m \mapsto g m g^{-1}$. -/
+theorem toAlgEquiv_toConjAct_apply (g : GL (Fin 2) F) (m : Matrix (Fin 2) (Fin 2) F) :
+    MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g) m =
+      (g : Matrix (Fin 2) (Fin 2) F) * m * ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) := by
+  rw [MulSemiringAction.toAlgEquiv_apply, ConjAct.units_smul_def]
   rfl
 
 /-- **Units of a conjugate subalgebra.** For a subalgebra $A$ of $M_2(F)$ and
-$g \in \mathrm{GL}_2(F)$, the group of units of $g A g^{-1}$ is $g A^\times g^{-1}$. -/
-theorem units_map_conjAlgEquiv (A : Subalgebra F (Matrix (Fin 2) (Fin 2) F))
+$g \in \mathrm{GL}_2(F)$, the group of units of $g A g^{-1}$ is $g A^\times g^{-1}$; here
+$g A g^{-1}$ is the image of $A$ under conjugation by $g$, Mathlib's
+`MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g)`. -/
+theorem units_map_conj (A : Subalgebra F (Matrix (Fin 2) (Fin 2) F))
     (g : GL (Fin 2) F) :
-    (A.map (conjAlgEquiv g : Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F)
-        ).toSubsemiring.toSubmonoid.units =
+    (A.map (MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g) :
+        Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F)).toSubsemiring.toSubmonoid.units =
       A.toSubsemiring.toSubmonoid.units.map (MulAut.conj g).toMonoidHom := by
   ext h
   rw [Submonoid.mem_units_iff, Subgroup.mem_map]
@@ -99,7 +86,8 @@ theorem units_map_conjAlgEquiv (A : Subalgebra F (Matrix (Fin 2) (Fin 2) F))
     · have : ((g⁻¹ * h * g : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) = a := by
         have hah' : (g : Matrix (Fin 2) (Fin 2) F) * a *
             ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) =
-            ((h : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) := hah
+            ((h : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) := by
+          rw [← toAlgEquiv_toConjAct_apply]; exact hah
         rw [Units.val_mul, Units.val_mul, ← hah']
         simp only [← mul_assoc, Units.inv_mul, one_mul]
         simp only [mul_assoc, Units.inv_mul, mul_one]
@@ -108,7 +96,8 @@ theorem units_map_conjAlgEquiv (A : Subalgebra F (Matrix (Fin 2) (Fin 2) F))
         rw [show (g⁻¹ * h * g)⁻¹ = g⁻¹ * h⁻¹ * g by group]
         have hbh' : (g : Matrix (Fin 2) (Fin 2) F) * b *
             ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) =
-            ((h⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) := hbh
+            ((h⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) := by
+          rw [← toAlgEquiv_toConjAct_apply]; exact hbh
         rw [Units.val_mul, Units.val_mul, ← hbh']
         simp only [← mul_assoc, Units.inv_mul, one_mul]
         simp only [mul_assoc, Units.inv_mul, mul_one]
@@ -117,7 +106,10 @@ theorem units_map_conjAlgEquiv (A : Subalgebra F (Matrix (Fin 2) (Fin 2) F))
   · rintro ⟨k, hk, rfl⟩
     obtain ⟨hk1, hk2⟩ := (Submonoid.mem_units_iff _ _).1 hk
     refine ⟨⟨_, hk1, rfl⟩, ⟨_, hk2, ?_⟩⟩
-    simp [MulAut.conj_apply, conjAlgEquiv_apply, mul_assoc]
+    change MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g)
+      ((k⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) = _
+    rw [toAlgEquiv_toConjAct_apply]
+    simp [MulAut.conj_apply, mul_assoc]
 
 /-- **The image of a Cartan subalgebra under an automorphism.** The image of a Cartan subalgebra
 of $M_2(F)$ under an $F$-algebra automorphism of $M_2(F)$ is a Cartan subalgebra. -/
@@ -186,42 +178,32 @@ theorem eq_zero_of_mul_self_eq_zero_of_isSeparable {B : Type*} [Ring B] [Algebra
 
 variable (F) in
 /-- **The diagonal subalgebra.** The subalgebra of $M_2(F)$ of the diagonal matrices
-$\begin{pmatrix} x & 0 \\ 0 & y \end{pmatrix}$. -/
-def diagonalSubalgebra : Subalgebra F (Matrix (Fin 2) (Fin 2) F) where
-  carrier := {m | m 0 1 = 0 ∧ m 1 0 = 0}
-  mul_mem' {a b} ha hb := by
-    simp only [Set.mem_ofPred_eq, Matrix.mul_apply, Fin.sum_univ_two] at *
-    rw [ha.1, ha.2, hb.1, hb.2]
-    simp
-  add_mem' {a b} ha hb := by
-    simp only [Set.mem_ofPred_eq, Matrix.add_apply] at *
-    rw [ha.1, ha.2, hb.1, hb.2]
-    simp
-  algebraMap_mem' r := by simp [Matrix.algebraMap_matrix_apply]
+$\begin{pmatrix} x & 0 \\ 0 & y \end{pmatrix}$, the range of Mathlib's `Matrix.diagonalAlgHom`. -/
+def diagonalSubalgebra : Subalgebra F (Matrix (Fin 2) (Fin 2) F) :=
+  (Matrix.diagonalAlgHom (n := Fin 2) (α := F) F).range
 
 /-- Membership in the diagonal subalgebra: both off-diagonal entries vanish. -/
 theorem mem_diagonalSubalgebra {m : Matrix (Fin 2) (Fin 2) F} :
-    m ∈ diagonalSubalgebra F ↔ m 0 1 = 0 ∧ m 1 0 = 0 :=
-  Iff.rfl
-
+    m ∈ diagonalSubalgebra F ↔ m 0 1 = 0 ∧ m 1 0 = 0 := by
+  constructor
+  · rintro ⟨v, rfl⟩
+    change Matrix.diagonal v 0 1 = 0 ∧ Matrix.diagonal v 1 0 = 0
+    simp
+  · rintro ⟨h1, h2⟩
+    refine ⟨Matrix.diag m, ?_⟩
+    change Matrix.diagonal (Matrix.diag m) = m
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp [h1, h2]
 
 variable (F) in
 /-- **The diagonal subalgebra is $F \times F$.** The $F$-algebra isomorphism from the diagonal
-subalgebra of $M_2(F)$ to $F \times F$ taking a diagonal matrix to its pair of diagonal entries. -/
-def diagonalSubalgebraEquiv : diagonalSubalgebra F ≃ₐ[F] F × F where
-  toFun m := ((m : Matrix (Fin 2) (Fin 2) F) 0 0, (m : Matrix (Fin 2) (Fin 2) F) 1 1)
-  invFun p := ⟨!![p.1, 0; 0, p.2], by simp [mem_diagonalSubalgebra]⟩
-  left_inv m := by
-    obtain ⟨m, h1, h2⟩ := m
-    ext i j
-    fin_cases i <;> fin_cases j <;> simp [h1, h2]
-  right_inv p := by simp
-  map_mul' a b := by
-    obtain ⟨a, ha1, ha2⟩ := a
-    obtain ⟨b, hb1, hb2⟩ := b
-    simp [Matrix.mul_apply, Fin.sum_univ_two, ha1, ha2, hb1, hb2]
-  map_add' a b := by simp
-  commutes' r := by simp [Matrix.algebraMap_matrix_apply]
+subalgebra of $M_2(F)$ to $F \times F$ taking a diagonal matrix to its pair of diagonal entries:
+the inverse of `Matrix.diagonalAlgHom` onto its range (`Matrix.diag_diagonal`), followed by
+`RingEquiv.piFinTwo`. -/
+noncomputable def diagonalSubalgebraEquiv : diagonalSubalgebra F ≃ₐ[F] F × F :=
+  (AlgEquiv.ofLeftInverse (g := Matrix.diag)
+      (f := Matrix.diagonalAlgHom (n := Fin 2) (α := F) F) Matrix.diag_diagonal).symm.trans
+    (AlgEquiv.ofRingEquiv (f := RingEquiv.piFinTwo fun _ => F) fun _ => rfl)
 
 variable (F) in
 /-- The diagonal subalgebra of $M_2(F)$ has dimension $2$. -/
@@ -236,7 +218,9 @@ theorem splitCartan_eq_units :
     splitCartan F = (diagonalSubalgebra F).toSubsemiring.toSubmonoid.units := by
   ext g
   rw [Submonoid.mem_units_iff]
-  exact ⟨fun h => ⟨h, (splitCartan F).inv_mem h⟩, fun h => h.1⟩
+  exact ⟨fun h => ⟨mem_diagonalSubalgebra.2 (mem_splitCartan.1 h),
+      mem_diagonalSubalgebra.2 (mem_splitCartan.1 ((splitCartan F).inv_mem h))⟩,
+    fun h => mem_splitCartan.2 (mem_diagonalSubalgebra.1 h.1)⟩
 
 /-- **A two-dimensional subalgebra is spanned by $1$ and any non-scalar element.** If a
 subalgebra $A$ of $M_2(F)$ has dimension $2$ over $F$ and $e \in A$ is not a scalar matrix, then
@@ -291,7 +275,8 @@ theorem eq_adjoin_of_finrank_eq_two {A : Subalgebra F (Matrix (Fin 2) (Fin 2) F)
 dimension $2$ containing a matrix $x$ with $\operatorname{tr}(x)^2 - 4 \det(x) \neq 0$. Then $A$ is
 a Cartan subalgebra. Indeed $A$ is spanned by $1$ and $x$, and $a = u + v x \in A$ satisfies
 $a^2 = (2u + v \operatorname{tr} x)\, a - (u^2 + uv \operatorname{tr} x + v^2 \det x)$, a relation
-of discriminant $v^2 (\operatorname{tr}(x)^2 - 4 \det x)$, so $a$ is separable over $F$. -/
+of discriminant $v^2 (\operatorname{tr}(x)^2 - 4 \det x)$, so $a$ is separable over $F$ when
+$v \neq 0$; if $v = 0$, $a$ is the scalar $u$, hence separable. -/
 theorem isCartanSubalgebra_of_trace_sq_sub_ne_zero {A : Subalgebra F (Matrix (Fin 2) (Fin 2) F)}
     (hc : ∀ x ∈ A, ∀ y ∈ A, x * y = y * x) (hA : Module.finrank F A = 2)
     {x : Matrix (Fin 2) (Fin 2) F} (hxA : x ∈ A) (hΔ : x.trace ^ 2 - 4 * x.det ≠ 0) :
@@ -344,8 +329,8 @@ theorem isCartanSubalgebra_diagonalSubalgebra :
     (x := !![1, 0; 0, 0]) (by simp [mem_diagonalSubalgebra]) (by
       simp [Matrix.trace_fin_two, Matrix.det_fin_two])
   intro x hx y hy
-  obtain ⟨hx1, hx2⟩ := hx
-  obtain ⟨hy1, hy2⟩ := hy
+  obtain ⟨hx1, hx2⟩ := mem_diagonalSubalgebra.1 hx
+  obtain ⟨hy1, hy2⟩ := mem_diagonalSubalgebra.1 hy
   ext i j
   fin_cases i <;> fin_cases j <;>
     simp [Matrix.mul_apply, Fin.sum_univ_two, hx1, hx2, hy1, hy2, mul_comm]
@@ -434,7 +419,8 @@ theorem exists_eq_map_diagonalSubalgebra {A : Subalgebra F (Matrix (Fin 2) (Fin 
     (hA : Module.finrank F A = 2) {e : Matrix (Fin 2) (Fin 2) F} (heA : e ∈ A) (h : e * e = e)
     (h0 : e ≠ 0) (h1 : e ≠ 1) :
     ∃ P : GL (Fin 2) F, A = (diagonalSubalgebra F).map
-      (conjAlgEquiv P : Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F) := by
+      (MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct P) :
+        Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F) := by
   obtain ⟨P, hP⟩ := exists_mul_eq_mul_of_idempotent h h0 h1
   refine ⟨P, ?_⟩
   have hE : (!![1, 0; 0, 0] : Matrix (Fin 2) (Fin 2) F) ∈ diagonalSubalgebra F := by
@@ -450,9 +436,9 @@ theorem exists_eq_map_diagonalSubalgebra {A : Subalgebra F (Matrix (Fin 2) (Fin 
   rw [eq_adjoin_of_finrank_eq_two hA heA (ne_algebraMap_of_idempotent h h0 h1), hD,
     AlgHom.map_adjoin, Set.image_singleton]
   congr 2
-  change e = (P : Matrix (Fin 2) (Fin 2) F) * !![1, 0; 0, 0] *
-    ((P⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F)
-  rw [← hP, mul_assoc, Units.mul_inv, mul_one]
+  change e = MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct P)
+    !![1, 0; 0, 0]
+  rw [toAlgEquiv_toConjAct_apply, ← hP, mul_assoc, Units.mul_inv, mul_one]
 
 /-- **Split Cartan subgroups are the conjugates of $C_s$.** Over a field $F$, a subgroup $T$ of
 $\mathrm{GL}_2(F)$ is a split Cartan subgroup, the group of units of a Cartan subalgebra
@@ -484,23 +470,26 @@ theorem isSplitCartanSubgroup_iff {T : Subgroup (GL (Fin 2) F)} :
       simpa using congrArg Prod.snd this
     obtain ⟨P, hP⟩ := exists_eq_map_diagonalSubalgebra hA.2.2 heA hidem h0 h1
     refine ⟨P, ?_⟩
-    rw [hP, units_map_conjAlgEquiv, splitCartan_eq_units]
+    rw [hP, units_map_conj, splitCartan_eq_units]
   · rintro ⟨g, rfl⟩
     refine ⟨(diagonalSubalgebra F).map
-      (conjAlgEquiv g : Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F),
+      (MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g) :
+        Matrix (Fin 2) (Fin 2) F →ₐ[F] Matrix (Fin 2) (Fin 2) F),
       (isCartanSubalgebra_diagonalSubalgebra F).map _,
       ⟨(AlgEquiv.subalgebraMap _ _).symm.trans (diagonalSubalgebraEquiv F)⟩, ?_⟩
-    rw [units_map_conjAlgEquiv, splitCartan_eq_units]
+    rw [units_map_conj, splitCartan_eq_units]
 
 
 /-- **A Cartan subalgebra is split or a field.** A Cartan subalgebra $A$ of $M_2(F)$, over any
 field $F$, is isomorphic to $F \times F$ as an $F$-algebra or is a field, then a separable quadratic
 extension of $F$, since $A$ is separable over $F$ and has dimension $2$.
 
-Source: A. V. Sutherland, *Computing images of Galois representations attached to elliptic curves*,
-Forum Math. Sigma 4 (2016), e4, §3,
+The two cases are those of the unit groups of A. V. Sutherland, *Computing images of Galois
+representations attached to elliptic curves*, Forum Math. Sigma 4 (2016), e4, §3,
 $C_s(\ell) \simeq \mathbb{F}_\ell^\times \times \mathbb{F}_\ell^\times$ and
-$C_{ns}(\ell) \simeq \mathbb{F}_{\ell^2}^\times$, for $F = \mathbb{F}_\ell$. -/
+$C_{ns}(\ell) \simeq \mathbb{F}_{\ell^2}^\times$, over a prime field $F = \mathbb{F}_\ell$; the
+statement over an arbitrary field is the two-dimensional case of the decomposition of an étale
+algebra over a field into a product of finite separable field extensions. -/
 theorem _root_.Matrix.IsCartanSubalgebra.nonempty_algEquiv_prod_or_isField
     {A : Subalgebra F (Matrix (Fin 2) (Fin 2) F)} (hA : Matrix.IsCartanSubalgebra A) :
     Nonempty (A ≃ₐ[F] F × F) ∨ IsField A := by

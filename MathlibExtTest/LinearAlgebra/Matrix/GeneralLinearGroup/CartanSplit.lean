@@ -15,7 +15,7 @@ open Matrix Matrix.GeneralLinearGroup
 #check @Matrix.IsCartanSubalgebra.nonempty_algEquiv_prod_or_isField
 #check @isSplitCartanSubgroup_iff
 #check @exists_mul_eq_mul_of_idempotent
-#check @units_map_conjAlgEquiv
+#check @units_map_conj
 #check @isCartanSubalgebra_of_trace_sq_sub_ne_zero
 #check @isSeparable_of_mul_self_eq
 #check @eq_zero_of_mul_self_eq_zero_of_isSeparable
@@ -32,9 +32,19 @@ example (F : Type*) [Field F] (g : GL (Fin 2) F) :
   (isSplitCartanSubgroup_iff.2 ⟨g, rfl⟩).isCartanSubgroup
 
 -- The diagonal subalgebra falls in the split case of the dichotomy.
+example (F : Type*) [Field F] : Nonempty (diagonalSubalgebra F ≃ₐ[F] F × F) :=
+  ⟨diagonalSubalgebraEquiv F⟩
+
+-- The dichotomy applies to the diagonal subalgebra.
 example (F : Type*) [Field F] :
     Nonempty (diagonalSubalgebra F ≃ₐ[F] F × F) ∨ IsField (diagonalSubalgebra F) :=
   (isCartanSubalgebra_diagonalSubalgebra F).nonempty_algEquiv_prod_or_isField
+
+-- Conjugation by `g` is `m ↦ g m g⁻¹`.
+example (F : Type*) [Field F] (g : GL (Fin 2) F) (m : Matrix (Fin 2) (Fin 2) F) :
+    MulSemiringAction.toAlgEquiv F (Matrix (Fin 2) (Fin 2) F) (ConjAct.toConjAct g) m =
+      (g : Matrix (Fin 2) (Fin 2) F) * m * ((g⁻¹ : GL (Fin 2) F) : Matrix (Fin 2) (Fin 2) F) :=
+  toAlgEquiv_toConjAct_apply g m
 
 -- A root of a quadratic of nonzero discriminant is separable: `!![0, 1; 1, 0]` squares to `1`.
 example (F : Type*) [Field F] (h2 : (2 : F) ≠ 0) :
