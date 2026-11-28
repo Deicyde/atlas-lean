@@ -40,35 +40,6 @@ open MetaMathlibExt
 
 attribute [local instance] decidableIsGaussReduced
 
-/-- A Gauss-reduced form of discriminant $d$ lies in the finite search set
-`reducedFormsOfDiscriminant d`. -/
-private theorem mem_reducedFormsOfDiscriminant {d a b c : ℤ} (hred : IsGaussReduced a b c)
-    (hd : discrim a b c = d) : (a, b, c) ∈ reducedFormsOfDiscriminant d := by
-  unfold reducedFormsOfDiscriminant
-  rw [Finset.mem_filter]
-  refine ⟨?_, hred, hd⟩
-  have ha := hred.pos
-  have hbl := (abs_le.mp hred.abs_le).1
-  have hbu := (abs_le.mp hred.abs_le).2
-  have hac := hred.le
-  have hb2 : b ^ 2 ≤ a ^ 2 := by nlinarith [sq_abs b, abs_nonneg b]
-  have h3 : 3 * a ^ 2 ≤ -d := by rw [← hd]; unfold discrim; nlinarith
-  rw [Finset.mem_biUnion]
-  refine ⟨a, ?_, ?_⟩
-  · rw [Finset.mem_Icc]
-    refine ⟨ha, ?_⟩
-    have hle : a.toNat * a.toNat ≤ (-d).toNat := by
-      have : (a.toNat : ℤ) * a.toNat ≤ ((-d).toNat : ℤ) := by
-        rw [Int.toNat_of_nonneg ha.le, Int.toNat_of_nonneg (by nlinarith)]; nlinarith
-      exact_mod_cast this
-    have := Nat.le_sqrt.mpr hle
-    have e : ((a.toNat : ℕ) : ℤ) = a := Int.toNat_of_nonneg ha.le
-    omega
-  · rw [Finset.mem_image]
-    refine ⟨b, Finset.mem_Icc.mpr ⟨hbl, hbu⟩, ?_⟩
-    have : b ^ 2 - d = 4 * a * c := by rw [← hd]; unfold discrim; ring
-    rw [this, Int.mul_ediv_cancel_left _ (by positivity)]
-
 variable {D : ℤ} [Fact (¬ IsSquare D)] [Fact (D % 4 = 0 ∨ D % 4 = 1)]
 
 /-- The class of a primitive Gauss-reduced form of discriminant $D < 0$, as an element of the
@@ -97,7 +68,8 @@ private theorem ofReduced_bijective (hD : D < 0) : Function.Bijective (ofReduced
       (by change discrim a b c < 0; rw [hd]; exact hD)
     have hdG : discrim G.1 G.2.1 G.2.2 = D := e.discrim_eq.trans hd
     have hpG : Int.gcd (Int.gcd G.1 G.2.1 : ℤ) G.2.2 = 1 := e.gcd_eq_one hp
-    exact ⟨⟨G, Finset.mem_filter.mpr ⟨mem_reducedFormsOfDiscriminant hred hdG, hpG⟩⟩,
+    exact ⟨⟨G, Finset.mem_filter.mpr
+        ⟨GaussClassNumberTotient.mem_reducedForms.mpr ⟨hred, hdG⟩, hpG⟩⟩,
       Subtype.ext (Quotient.sound e.symm)⟩
 
 /-- **The form class group of a negative discriminant has order $h(D)$.** For $D < 0$ with

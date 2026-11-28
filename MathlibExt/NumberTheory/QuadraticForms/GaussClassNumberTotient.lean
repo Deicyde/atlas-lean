@@ -735,7 +735,10 @@ local instance decidableIsGaussReducedLocal (a b c : ℤ) : Decidable (IsGaussRe
   inferInstanceAs (Decidable (0 < a ∧ discrim a b c < 0 ∧ |b| ≤ a ∧ a ≤ c ∧
     ((|b| = a ∨ a = c) → 0 ≤ b)))
 
-theorem mem_reducedForms {d : ℤ} {q : ℤ × ℤ × ℤ} :
+/-- **Membership in the finite search set of reduced forms.** A triple `q = (a, b, c)` lies in
+`reducedFormsOfDiscriminant d` if and only if `(a, b, c)` is Gauss-reduced and has discriminant
+`b² - 4ac = d`. -/
+public theorem mem_reducedForms {d : ℤ} {q : ℤ × ℤ × ℤ} :
     q ∈ reducedFormsOfDiscriminant d ↔
       IsGaussReduced q.1 q.2.1 q.2.2 ∧ discrim q.1 q.2.1 q.2.2 = d := by
   unfold reducedFormsOfDiscriminant
