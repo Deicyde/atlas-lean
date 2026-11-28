@@ -185,10 +185,10 @@ theorem endpointCofreeXIsoOfNoNext_hom (I : ι → C) (i : ι)
 
 /-- Assume C has zero morphisms and a zero object.
 
-For a complex K in C and a family aᵢ : Kᵢ → Iᵢ,
-the second coefficient of its map into D(I) is dᵏᵢ,c.next i followed
-by a at c.next i, transported to Eᵢ. At an index without an outgoing
-edge it is zero. -/
+For a complex K in C and a family aᵢ : Kᵢ → Iᵢ, the map Kᵢ → Eᵢ is
+dᵏᵢ,c.next i followed by a at c.next i, transported to Eᵢ. It is zero
+at an index without an outgoing edge. With binary biproducts, this is
+the second coefficient of the cofree map K → D(I). -/
 def endpointCofreeSecondCoefficient (K : HomologicalComplex C c) (I : ι → C)
     (a : ∀ i, K.X i ⟶ I i) (i : ι) :
     K.X i ⟶ endpointCofreeNextTerm c I i :=

@@ -46,7 +46,7 @@ variable {ι : Type w} {c : ComplexShape ι}
 
 /-- Assume C has zero morphisms, a zero object and binary biproducts.
 
-If C also has finite limits, any complex shape c and a family of
+If C also has finite limits, then for any complex shape c and any family of
 injective objects Iᵢ, the complex D(I) is injective in the category
 of c-shaped complexes. Its term at an index with no outgoing edge has zero second summand. -/
 theorem endpointCofree_injective (c : ComplexShape ι) [HasFiniteLimits C]
