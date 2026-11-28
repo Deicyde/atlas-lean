@@ -74,25 +74,6 @@ private lemma im_form (M : Matrix (Fin g) (Fin g) ℝ) (z w : Fin g → ℂ) :
   refine Finset.sum_congr rfl fun i _ ↦ Finset.sum_congr rfl fun j _ ↦ ?_
   ring
 
-/-- For a symmetric real matrix, `x ⬝ M y = y ⬝ M x`. -/
-private lemma dotProduct_mulVec_symm {M : Matrix (Fin g) (Fin g) ℝ} (hM : M.IsSymm)
-    (x y : Fin g → ℝ) : x ⬝ᵥ M *ᵥ y = y ⬝ᵥ M *ᵥ x := by
-  rw [dotProduct_mulVec, ← mulVec_transpose, hM.eq, dotProduct_comm]
-
-private lemma isSymm_im {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g) :
-    (τ.map Complex.im).IsSymm := by
-  have h := hτ.1
-  refine IsSymm.ext fun i j ↦ ?_
-  simp only [map_apply]
-  rw [h.apply i j]
-
-private lemma isSymm_re {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g) :
-    (τ.map Complex.re).IsSymm := by
-  have h := hτ.1
-  refine IsSymm.ext fun i j ↦ ?_
-  simp only [map_apply]
-  rw [h.apply i j]
-
 private lemma re_mulVec_ofReal (τ : Matrix (Fin g) (Fin g) ℂ) (a : Fin g → ℝ) :
     re' (τ *ᵥ fun k ↦ (a k : ℂ)) = (τ.map Complex.re) *ᵥ a := by
   ext i
@@ -112,18 +93,19 @@ private lemma im_ofReal (a : Fin g → ℝ) : im' (fun k ↦ (a k : ℂ)) = 0 :=
 /-- **$H_\tau$ is hermitian.** For $\tau$ in the Siegel upper half space and
 $z, w \in \mathbb{C}^g$, $H_\tau(w, z) = \overline{H_\tau(z, w)}$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); the computation is the one of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; the computation is the one of the graph page. -/
 theorem riemannForm_swap {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g)
     (z w : Fin g → ℂ) : riemannForm τ w z = conj (riemannForm τ z w) := by
-  have hM := (isSymm_im hτ).inv
+  have hM := (hτ.1.map Complex.im).inv
   apply Complex.ext
   · rw [Complex.conj_re]
     simp only [riemannForm, re_form]
-    rw [dotProduct_mulVec_symm hM (re' w), dotProduct_mulVec_symm hM (im' w)]
+    rw [hM.dotProduct_mulVec_comm (x := re' w), hM.dotProduct_mulVec_comm (x := im' w)]
   · rw [Complex.conj_im]
     simp only [riemannForm, im_form]
-    rw [dotProduct_mulVec_symm hM (im' w), dotProduct_mulVec_symm hM (re' w)]
+    rw [hM.dotProduct_mulVec_comm (x := im' w), hM.dotProduct_mulVec_comm (x := re' w)]
     ring
 
 /-- **$H_\tau$ is positive definite.** For $\tau$ in the Siegel upper half space and a nonzero
@@ -131,12 +113,13 @@ $z \in \mathbb{C}^g$, $H_\tau(z, z)$ is a positive real number: its imaginary pa
 real part is positive. With `Siegel.riemannForm_swap` and the evident linearity in $z$ and
 conjugate linearity in $w$, $H_\tau$ is a positive definite hermitian form on $\mathbb{C}^g$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); item 1 of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; item 1 of the graph page. -/
 theorem riemannForm_pos {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g)
     {z : Fin g → ℂ} (hz : z ≠ 0) :
     (riemannForm τ z z).im = 0 ∧ 0 < (riemannForm τ z z).re := by
-  have hM := (isSymm_im hτ).inv
+  have hM := (hτ.1.map Complex.im).inv
   have hPD : ((τ.map Complex.im)⁻¹).PosDef := hτ.2.inv
   have hpos := (posDef_iff_dotProduct_mulVec.mp hPD).2
   have hnn : ∀ x : Fin g → ℝ, 0 ≤ x ⬝ᵥ (τ.map Complex.im)⁻¹ *ᵥ x := by
@@ -146,7 +129,7 @@ theorem riemannForm_pos {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHal
     · simpa using (hpos hx).le
   refine ⟨?_, ?_⟩
   · simp only [riemannForm, im_form]
-    rw [dotProduct_mulVec_symm hM (im' z), sub_self]
+    rw [hM.dotProduct_mulVec_comm (x := im' z), sub_self]
   · simp only [riemannForm, re_form]
     by_cases hre : re' z = 0
     · have him : im' z ≠ 0 := by
@@ -167,23 +150,25 @@ theorem riemannForm_pos {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHal
 real vectors $a, b \in \mathbb{R}^g$ (in particular integer vectors),
 $\operatorname{Im} H_\tau(\tau a, b) = {}^t a \, b$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); item 2 of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; item 2 of the graph page. -/
 theorem im_riemannForm_mulVec_ofReal {τ : Matrix (Fin g) (Fin g) ℂ}
     (hτ : τ ∈ upperHalfSpace g) (a b : Fin g → ℝ) :
     (riemannForm τ (τ *ᵥ fun k ↦ (a k : ℂ)) fun k ↦ (b k : ℂ)).im = a ⬝ᵥ b := by
-  have hY := isSymm_im hτ
+  have hY := hτ.1.map Complex.im
   have hdet : IsUnit (τ.map Complex.im).det := hτ.2.isUnit.map (detMonoidHom)
   simp only [riemannForm, im_form, im_mulVec_ofReal, re_ofReal, im_ofReal, mulVec_zero,
     dotProduct_zero, sub_zero]
   rw [dotProduct_mulVec, ← vecMul_transpose (τ.map Complex.im) a, hY.eq, vecMul_vecMul,
     mul_nonsing_inv _ hdet, vecMul_one]
 
-/-- **The value $E_\tau(a, b) = 0$.** For $\tau$ in the Siegel upper half space and real vectors
+/-- **The value $E_\tau(a, b) = 0$.** For every complex $g \times g$ matrix $\tau$ and real vectors
 $a, b \in \mathbb{R}^g$, $\operatorname{Im} H_\tau(a, b) = 0$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); item 2 of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; item 2 of the graph page. -/
 theorem im_riemannForm_ofReal (τ : Matrix (Fin g) (Fin g) ℂ) (a b : Fin g → ℝ) :
     (riemannForm τ (fun k ↦ (a k : ℂ)) fun k ↦ (b k : ℂ)).im = 0 := by
   simp only [riemannForm, im_form, re_ofReal, im_ofReal, mulVec_zero, dotProduct_zero,
@@ -192,13 +177,14 @@ theorem im_riemannForm_ofReal (τ : Matrix (Fin g) (Fin g) ℂ) (a b : Fin g →
 /-- **The value $E_\tau(\tau a, \tau b) = 0$.** For $\tau$ in the Siegel upper half space and real
 vectors $a, b \in \mathbb{R}^g$, $\operatorname{Im} H_\tau(\tau a, \tau b) = 0$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); item 2 of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; item 2 of the graph page. -/
 theorem im_riemannForm_mulVec_mulVec {τ : Matrix (Fin g) (Fin g) ℂ}
     (hτ : τ ∈ upperHalfSpace g) (a b : Fin g → ℝ) :
     (riemannForm τ (τ *ᵥ fun k ↦ (a k : ℂ)) (τ *ᵥ fun k ↦ (b k : ℂ))).im = 0 := by
-  have hY := isSymm_im hτ
-  have hX := isSymm_re hτ
+  have hY := hτ.1.map Complex.im
+  have hX := hτ.1.map Complex.re
   have hdet : IsUnit (τ.map Complex.im).det := hτ.2.isUnit.map (detMonoidHom)
   simp only [riemannForm, im_form, im_mulVec_ofReal, re_mulVec_ofReal]
   -- `(Y a) ⬝ Y⁻¹ (X b) = a ⬝ X b` and `(X a) ⬝ Y⁻¹ (Y b) = a ⬝ X b`.
@@ -229,8 +215,9 @@ where $E_\tau = \operatorname{Im} H_\tau$. So $E_\tau$ takes integer values on
 $\Lambda_\tau \times \Lambda_\tau$, and in the basis $\tau e_1, \dots, \tau e_g, e_1, \dots, e_g$
 of $\Lambda_\tau$ its matrix is $\begin{pmatrix} 0 & 1_g \\ -1_g & 0 \end{pmatrix}$.
 
-Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
-19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10); item 3 of the graph page. -/
+Background: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.3.4, p. 30 (arXiv:0907.1458v2, pp. 9–10), identifies the polarized torus after
+Definition 2.6 without displaying this identity; item 3 of the graph page. -/
 theorem im_riemannForm_lattice {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g)
     (a b a' b' : Fin g → ℤ) :
     (riemannForm τ ((τ *ᵥ fun k ↦ (a k : ℂ)) + fun k ↦ (b k : ℂ))
