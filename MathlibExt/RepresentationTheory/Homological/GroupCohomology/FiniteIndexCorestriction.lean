@@ -34,7 +34,8 @@ cochains and uses it to define the corestriction for subgroups of finite index.
 * `CategoryTheory.ProjectiveResolution.isoExt_inv_comp_isoExt_hom`: for two projective
   resolutions `P`, `Q` of `X` and a chain map `φ : Q ⟶ P` over `𝟙 X`, the comparison
   `Hⁿ(Hom(P, Y)) ≅ Extⁿ(X, Y) ≅ Hⁿ(Hom(Q, Y))` is the map induced by `φ`.
-* `groupCohomology.coindIso_hom_eq`: Shapiro's isomorphism is induced by the cochain map
+* `groupCohomology.coindIso_hom_eq`: Shapiro's isomorphism is `groupCohomology.map H.subtype ε n`
+  for the counit `ε : Res_H(Coind_H^G B) ⟶ B`, `x ↦ x(1)`, of `Res_H ⊣ Coind_H^G`; on cochains,
   `x ↦ (h ↦ x(h)(1))`.
 * `Rep.resCoindUnit_comp_coindResCounit`: for `H` of finite index, the unit
   `A ⟶ Coind_H^G(Res_H A)` followed by the counit `Coind_H^G(Res_H A) ⟶ A` is `(G : H) • 𝟙 A`.
@@ -86,10 +87,11 @@ noncomputable abbrev linearYonedaObjMap {Q P : ChainComplex C ℕ} (φ : Q ⟶ P
   (HomologicalComplex.unopFunctor _ _).map
     ((((linearYoneda R C).obj Y).rightOp.mapHomologicalComplex _).map φ).op
 
-/-- Let `P` and `Q` be projective resolutions of `X` and `φ : Q ⟶ P` a chain map lifting
-`𝟙 X` in degree `0`. Then the composite `Hⁿ(Hom(P, Y)) ≅ Extⁿ(X, Y) ≅ Hⁿ(Hom(Q, Y))` of the
-isomorphisms `ProjectiveResolution.isoExt` is the map induced on cohomology by precomposition
-with `φ`. -/
+/-- Let `C` be an `R`-linear abelian category with enough projectives, `P` and `Q` projective
+resolutions of an object `X` of `C`, and `φ : Q ⟶ P` a chain map lifting `𝟙 X` in degree `0`.
+Then for every object `Y` and every `n`, the composite
+`Hⁿ(Hom(P, Y)) ≅ Extⁿ(X, Y) ≅ Hⁿ(Hom(Q, Y))` of the isomorphisms
+`ProjectiveResolution.isoExt` is the map induced on cohomology by precomposition with `φ`. -/
 @[reassoc]
 theorem isoExt_inv_comp_isoExt_hom {X : C} (P Q : ProjectiveResolution X)
     (φ : Q.complex ⟶ P.complex) (hφ : φ.f 0 ≫ P.π.f 0 = Q.π.f 0) (n : ℕ) (Y : C) :
@@ -250,21 +252,23 @@ open Rep Rep.barComplex
 
 variable {k G : Type u} [CommRing k] [Group G] {H : Subgroup G}
 
-/-- The cochain map `C^•(G, Coind_H^G B) ⟶ C^•(H, B)` sending a cochain `x` to
-`(h₁, ..., hₙ) ↦ x(h₁, ..., hₙ)(1)`; it induces Shapiro's isomorphism
-(`groupCohomology.coindIso_hom_eq`). -/
-noncomputable def coindCochainsMap (B : Rep.{u} k H) :
+/-- The cochain map `C^•(G, Coind_H^G B) ⟶ C^•(H, B)` through the bar resolutions: the
+composite that defines Shapiro's isomorphism, followed by the comparison of the bar resolution of
+`H` with the restricted bar resolution of `G`. It agrees with
+`cochainsMap H.subtype ((resCoindAdjunction k H.subtype).counit.app B)`
+(`barCoindCochainsMap_eq`). -/
+private noncomputable def barCoindCochainsMap (B : Rep.{u} k H) :
     inhomogeneousCochains (coind H.subtype B) ⟶ inhomogeneousCochains B :=
   (inhomogeneousCochainsIso (coind H.subtype B)).hom ≫
     (linearYonedaObjResProjectiveResolutionIso (barResolution k G) B).inv ≫
     ProjectiveResolution.linearYonedaObjMap (subgroupComparison H) B ≫
     (inhomogeneousCochainsIso B).inv
 
-/-- On an `n`-cochain `x`, `coindCochainsMap B` evaluates `x(h₁, ..., hₙ) ∈ Coind_H^G B` at
+/-- On an `n`-cochain `x`, `barCoindCochainsMap B` evaluates `x(h₁, ..., hₙ) ∈ Coind_H^G B` at
 `1`. -/
-lemma coindCochainsMap_f_apply (B : Rep.{u} k H) (n : ℕ)
+private lemma barCoindCochainsMap_f_apply (B : Rep.{u} k H) (n : ℕ)
     (x : (Fin n → G) → coind H.subtype B) (h : Fin n → H) :
-    ((coindCochainsMap B).f n).hom x h = (x (H.subtype ∘ h)).1 1 := by
+    ((barCoindCochainsMap B).f n).hom x h = (x (H.subtype ∘ h)).1 1 := by
   change ((resCoindHomEquiv.{u} H.subtype ((barResolution k G).complex.X n) B).symm
     (freeLift k G (coind H.subtype B) x)).hom
       ((subgroupMap H n).hom (single h (MonoidAlgebra.single 1 1))) = _
@@ -273,10 +277,23 @@ lemma coindCochainsMap_f_apply (B : Rep.{u} k H) (n : ℕ)
     (single (H.subtype ∘ h) (MonoidAlgebra.single 1 1))).1 1 = _
   simp
 
-/-- Shapiro's isomorphism `Hⁿ(G, Coind_H^G B) ≅ Hⁿ(H, B)` of Mathlib is the map induced on
-cohomology by the cochain map `coindCochainsMap B`, `x ↦ (h ↦ x(h)(1))`. -/
+/-- The bar-resolution composite `barCoindCochainsMap B` is Mathlib's cochain map induced by the
+inclusion `H → G` and the counit `Res_H(Coind_H^G B) ⟶ B` of `Res_H ⊣ Coind_H^G`, which evaluates
+a coinduced function at `1`. -/
+private lemma barCoindCochainsMap_eq (B : Rep.{u} k H) :
+    barCoindCochainsMap B =
+      cochainsMap H.subtype ((resCoindAdjunction k H.subtype).counit.app B) := by
+  ext n x h
+  rw [barCoindCochainsMap_f_apply]
+  rfl
+
+/-- Shapiro's isomorphism `Hⁿ(G, Coind_H^G B) ≅ Hⁿ(H, B)` of Mathlib is the map
+`groupCohomology.map H.subtype ε n` induced by the inclusion `H → G` and the counit
+`ε : Res_H(Coind_H^G B) ⟶ B`, `x ↦ x(1)`, of the adjunction `Res_H ⊣ Coind_H^G`; on cochains it
+sends `x` to `(h₁, ..., hₙ) ↦ x(h₁, ..., hₙ)(1)`. -/
 theorem coindIso_hom_eq (B : Rep.{u} k H) (n : ℕ) :
-    (coindIso B n).hom = HomologicalComplex.homologyMap (coindCochainsMap B) n := by
+    (coindIso B n).hom = map H.subtype ((resCoindAdjunction k H.subtype).counit.app B) n := by
+  rw [map, ← barCoindCochainsMap_eq]
   simp only [coindIso, Iso.trans_hom, Functor.mapIso_hom, Iso.symm_hom, groupCohomologyIso,
     groupCohomologyIsoExt, Iso.trans_inv, Iso.symm_inv]
   have hq : (isoOfQuasiIsoAt (HomotopyEquiv.ofIso (inhomogeneousCochainsIso B)).hom n).inv =
@@ -293,10 +310,15 @@ theorem coindIso_hom_eq (B : Rep.{u} k H) (n : ℕ) :
   have e : (inhomogeneousCochainsIso (coind H.subtype B) ≪≫
       (linearYonedaObjResProjectiveResolutionIso (barResolution k G) B).symm).hom ≫
       ProjectiveResolution.linearYonedaObjMap (subgroupComparison H) B ≫
-      (inhomogeneousCochainsIso B).inv = coindCochainsMap B := rfl
+      (inhomogeneousCochainsIso B).inv = barCoindCochainsMap B := rfl
   rw [← e, HomologicalComplex.homologyMap_comp]
   congr 1
   exact (HomologicalComplex.homologyMap_comp _ _ _).symm
+
+/-- `coindIso_hom_eq` through the bar-resolution composite, for computing on cochains. -/
+private lemma coindIso_hom_eq_homologyMap (B : Rep.{u} k H) (n : ℕ) :
+    (coindIso B n).hom = HomologicalComplex.homologyMap (barCoindCochainsMap B) n := by
+  rw [coindIso_hom_eq, map, barCoindCochainsMap_eq]
 
 /-- Restriction through Shapiro's lemma: for a subgroup `H ≤ G` and a `G`-representation `A`,
 the restriction `Hⁿ(G, A) ⟶ Hⁿ(H, Res_H A)` (`groupCohomology.map H.subtype (𝟙 _) n`) is the map
@@ -307,12 +329,12 @@ theorem map_subtype_eq_map_unit_comp_coindIso (A : Rep.{u} k G) (n : ℕ) :
     map H.subtype (𝟙 (res H.subtype A)) n =
       map (MonoidHom.id G) ((resCoindAdjunction k H.subtype).unit.app A) n ≫
         (coindIso (res H.subtype A) n).hom := by
-  rw [coindIso_hom_eq, map, map, ← HomologicalComplex.homologyMap_comp]
+  rw [coindIso_hom_eq_homologyMap, map, map, ← HomologicalComplex.homologyMap_comp]
   congr 1
   ext m x h
   simp only [HomologicalComplex.comp_f, ModuleCat.hom_comp, LinearMap.comp_apply,
     cochainsMap_f_hom]
-  erw [coindCochainsMap_f_apply]
+  erw [barCoindCochainsMap_f_apply]
   simp only [Rep.hom_id, res_obj_ρ, Representation.IntertwiningMap.toLinearMap_id,
     Subgroup.coe_subtype, LinearMap.compLeft_apply, LinearMap.id_coe, Function.comp_apply,
     LinearMap.funLeft_apply, id_eq, Functor.comp_obj, coindFunctor_obj,
@@ -326,15 +348,15 @@ theorem map_subtype_eq_map_unit_comp_coindIso (A : Rep.{u} k G) (n : ℕ) :
 theorem coindIso_hom_naturality {B B' : Rep.{u} k H} (f : B ⟶ B') (n : ℕ) :
     map (MonoidHom.id G) (coindMap H.subtype f) n ≫ (coindIso B' n).hom =
       (coindIso B n).hom ≫ map (MonoidHom.id H) f n := by
-  rw [coindIso_hom_eq, coindIso_hom_eq, map, map, ← HomologicalComplex.homologyMap_comp,
-    ← HomologicalComplex.homologyMap_comp]
+  rw [coindIso_hom_eq_homologyMap, coindIso_hom_eq_homologyMap, map, map,
+    ← HomologicalComplex.homologyMap_comp, ← HomologicalComplex.homologyMap_comp]
   congr 1
   ext m x h
   simp only [HomologicalComplex.comp_f, ModuleCat.hom_comp, LinearMap.comp_apply,
     cochainsMap_f_hom]
-  erw [coindCochainsMap_f_apply]
-  change _ = f.hom (((coindCochainsMap B).f m).hom x h)
-  erw [coindCochainsMap_f_apply]
+  erw [barCoindCochainsMap_f_apply]
+  change _ = f.hom (((barCoindCochainsMap B).f m).hom x h)
+  erw [barCoindCochainsMap_f_apply]
   rfl
 
 /-- The map induced on `Hⁿ(G, -)` by `m • 𝟙 A` is multiplication by `m`. -/
@@ -358,7 +380,9 @@ noncomputable def cor (A : Rep.{u} k G) (n : ℕ) :
   (coindIso (res H.subtype A) n).inv ≫
     map (MonoidHom.id G) ((coindResAdjunction k H).counit.app A) n
 
-/-- The corestriction is natural in the `G`-representation `A`. -/
+/-- For a subgroup `H ≤ G` of finite index, the corestriction `Hⁿ(H, Res_H A) ⟶ Hⁿ(G, A)` is
+natural in the `G`-representation `A`: for `f : A ⟶ A'`, restricting `f` to `H` and then
+corestricting equals corestricting and then applying `f`. -/
 theorem cor_naturality {A A' : Rep.{u} k G} (f : A ⟶ A') (n : ℕ) :
     map (MonoidHom.id H) ((resFunctor H.subtype).map f) n ≫ cor H A' n =
       cor H A n ≫ map (MonoidHom.id G) f n := by

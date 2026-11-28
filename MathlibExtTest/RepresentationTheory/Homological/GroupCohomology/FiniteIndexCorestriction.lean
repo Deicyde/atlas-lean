@@ -32,11 +32,17 @@ example (H : Subgroup G) (A : Rep.{u} k G) (n : ℕ) :
         (coindIso (Rep.res H.subtype A) n).hom :=
   map_subtype_eq_map_unit_comp_coindIso A n
 
--- Shapiro's isomorphism on cochains: `x ↦ (h ↦ x(h)(1))`.
+-- Shapiro's isomorphism is the map induced by the counit `x ↦ x(1)` of `Res_H ⊣ Coind_H^G`.
+example (H : Subgroup G) (B : Rep.{u} k H) (n : ℕ) :
+    (coindIso B n).hom = map H.subtype ((Rep.resCoindAdjunction k H.subtype).counit.app B) n :=
+  coindIso_hom_eq B n
+
+-- On cochains, that map sends `x` to `h ↦ x(h)(1)`.
 example (H : Subgroup G) (B : Rep.{u} k H) (n : ℕ) (x : (Fin n → G) → Rep.coind H.subtype B)
     (h : Fin n → H) :
-    ((coindCochainsMap B).f n).hom x h = (x (H.subtype ∘ h)).1 1 :=
-  coindCochainsMap_f_apply B n x h
+    ((cochainsMap H.subtype ((Rep.resCoindAdjunction k H.subtype).counit.app B)).f n).hom x h =
+      (x (H.subtype ∘ h)).1 1 :=
+  rfl
 
 -- Corestriction is natural, and `cor ∘ res` is multiplication by the index.
 example (H : Subgroup G) [H.FiniteIndex] [DecidableRel (QuotientGroup.rightRel H)]
