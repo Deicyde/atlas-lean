@@ -46,8 +46,10 @@ Each assertion is a direct check from the formulas.
 set_option autoImplicit false
 
 set_option linter.unusedVariables false in
-/-- The `O`-linear dual `Hom_O(N, O)` of an `A`-module `N`, with the `A`-module structure
-`(a • φ) n = φ (a • n)`. As a type it is `N →ₗ[O] O`. -/
+/-- The `O`-linear dual `Hom_O(N, O)` of an `O`-module `N`, as a type `N →ₗ[O] O`. When `A` is a
+commutative `O`-algebra and `N` an `A`-module whose `O`- and `A`-actions are compatible
+(`IsScalarTower O A N`), it is an `A`-module by `(a • φ) n = φ (a • n)`; commutativity of `A` is
+needed for this left action. -/
 def Module.ODual (O A N : Type*) [CommRing O] [AddCommGroup N] [Module O N] : Type _ :=
   N →ₗ[O] O
 
@@ -101,11 +103,6 @@ instance : Module A (ODual O A N) where
 variable {O A N} in
 @[simp] theorem smul_apply (a : A) (φ : ODual O A N) (n : N) : (a • φ) n = φ (a • n) := rfl
 
-instance : SMulCommClass A A (ODual O A A) where
-  smul_comm a b φ := by
-    ext x
-    simp only [smul_apply, smul_smul, mul_comm]
-
 variable {O A}
 variable (M : Type*) [AddCommGroup M] [Module A M] [Module O M] [IsScalarTower O A M]
 
@@ -114,14 +111,17 @@ ring, $A$ a commutative $\mathcal{O}$-algebra,
 $\omega_A = \operatorname{Hom}_{\mathcal{O}}(A, \mathcal{O})$, an $A$-module by
 $(a\lambda)(x) = \lambda(ax)$, and for an $A$-module $M$ let
 $M^* = \operatorname{Hom}_{\mathcal{O}}(M, \mathcal{O})$, an $A$-module by
-$(a\varphi)(m) = \varphi(am)$. Then
+$(a\varphi)(m) = \varphi(am)$. Then the map
+
 $$\Phi_M \colon \operatorname{Hom}_A(M, \omega_A) \to M^*, \qquad \Phi_M(\psi)(m) = \psi(m)(1),$$
+
 is an isomorphism of $A$-modules, with inverse sending $\varphi$ to
 $m \mapsto (a \mapsto \varphi(am))$. Here $\omega_A$ is `Module.ODual O A A` and $M^*$ is
 `Module.ODual O A M`.
 
-Source: B. Conrad, *The Shimura construction in weight 2*, appendix to K. A. Ribet and
-W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of Lemma 5.17, p. 71. -/
+Source: the identification is applied in B. Conrad, *The Shimura construction in weight 2*,
+appendix to K. A. Ribet and W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of
+Lemma 5.17, p. 71, after reducing to free `M`; the general statement is proved here directly. -/
 noncomputable def homEquiv : (M →ₗ[A] ODual O A A) ≃ₗ[A] ODual O A M where
   toFun ψ := ofLinearMap
     { toFun := fun m => ψ m 1
@@ -162,7 +162,9 @@ variable {M}
 
 variable {M' : Type*} [AddCommGroup M'] [Module A M'] [Module O M'] [IsScalarTower O A M']
 
-/-- The `O`-dual `f^* : φ ↦ φ ∘ f` of an `A`-linear map `f : M → M'`; it is `A`-linear. -/
+/-- For a commutative `O`-algebra `A` and `A`-modules `M`, `M'` with compatible `O`-actions, the
+`O`-dual `f^* : φ ↦ φ ∘ f` of an `A`-linear map `f : M → M'`; it is `A`-linear for the actions
+`(a • φ) n = φ (a • n)`. -/
 def dualMap (f : M →ₗ[A] M') : ODual O A M' →ₗ[A] ODual O A M where
   toFun φ := ofLinearMap (toLinearMap φ ∘ₗ f.restrictScalars O)
   map_add' φ φ' := by ext; rfl
@@ -174,30 +176,37 @@ def dualMap (f : M →ₗ[A] M') : ODual O A M' →ₗ[A] ODual O A M where
 @[simp] theorem dualMap_apply (f : M →ₗ[A] M') (φ : ODual O A M') (m : M) :
     dualMap f φ m = φ (f m) := rfl
 
-/-- **Naturality of `Φ`.** For every $A$-linear $f \colon M \to M'$ and
-$\psi \in \operatorname{Hom}_A(M', \omega_A)$, $\Phi_M(\psi \circ f) = \Phi_{M'}(\psi) \circ f$.
-In particular, for an $A$-linear $f \colon M \to M$, $\Phi_M$ carries $\psi \mapsto \psi \circ f$
-on $\operatorname{Hom}_A(M, \omega_A)$ to the $\mathcal{O}$-dual
+/-- **Naturality of `Φ`.** Let $\mathcal{O}$ be a commutative ring, $A$ a commutative
+$\mathcal{O}$-algebra, and $M$, $M'$ $A$-modules with compatible $\mathcal{O}$-actions, with
+$\omega_A$, $M^*$ and $\Phi$ as in `Module.ODual.homEquiv`. For every $A$-linear
+$f \colon M \to M'$ and $\psi \in \operatorname{Hom}_A(M', \omega_A)$,
+$\Phi_M(\psi \circ f) = \Phi_{M'}(\psi) \circ f$. In particular, for an $A$-linear
+$f \colon M \to M$, $\Phi_M$ carries $\psi \mapsto \psi \circ f$ on
+$\operatorname{Hom}_A(M, \omega_A)$ to the $\mathcal{O}$-dual
 $f^* \colon \varphi \mapsto \varphi \circ f$ on $M^*$ (`Module.ODual.dualMap f`), which is
 $A$-linear.
 
-Source: B. Conrad, *The Shimura construction in weight 2*, appendix to K. A. Ribet and
-W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of Lemma 5.17, p. 71. -/
+Source: the naturality is applied in B. Conrad, *The Shimura construction in weight 2*, appendix to
+K. A. Ribet and W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of Lemma 5.17, p. 71;
+the general statement is proved here directly. -/
 theorem homEquiv_comp (f : M →ₗ[A] M') (ψ : M' →ₗ[A] ODual O A A) :
     homEquiv M (ψ ∘ₗ f) = dualMap f (homEquiv M' ψ) := rfl
 
-/-- For an isomorphism of `A`-modules `h : A ≃ ω_A`, the isomorphism of `A`-modules
-`Hom_A(M, A) ≃ M^*`, `ψ ↦ Φ_M (h ∘ ψ)`. -/
+/-- For a commutative `O`-algebra `A`, an `A`-module `M` with compatible `O`-action and an
+isomorphism of `A`-modules `h : A ≃ ω_A`, the isomorphism of `A`-modules `Hom_A(M, A) ≃ M^*`,
+`ψ ↦ Φ_M (h ∘ ψ)`. -/
 noncomputable def homEquivOfLinearEquiv (h : A ≃ₗ[A] ODual O A A) :
     (M →ₗ[A] A) ≃ₗ[A] ODual O A M :=
   (LinearEquiv.congrRight h).trans (homEquiv M)
 
-/-- If $h \colon A \to \omega_A$ is an isomorphism of $A$-modules, then the isomorphism of
-$A$-modules $\operatorname{Hom}_A(M, A) \cong M^*$, $\psi \mapsto \Phi_M(h \circ \psi)$, is
-$\psi \mapsto h(1) \circ \psi$.
+/-- Let $A$ be a commutative $\mathcal{O}$-algebra and $M$ an $A$-module with compatible
+$\mathcal{O}$-action. If $h \colon A \to \omega_A$ is an isomorphism of $A$-modules, then the
+isomorphism of $A$-modules $\operatorname{Hom}_A(M, A) \cong M^*$,
+$\psi \mapsto \Phi_M(h \circ \psi)$, is $\psi \mapsto h(1) \circ \psi$.
 
-Source: B. Conrad, *The Shimura construction in weight 2*, appendix to K. A. Ribet and
-W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of Lemma 5.17, p. 71. -/
+Source: this is the formula applied in B. Conrad, *The Shimura construction in weight 2*, appendix
+to K. A. Ribet and W. A. Stein, *Lectures on Serre's conjectures*, §5.3, proof of Lemma 5.17,
+p. 71, to the coordinate projections of a free `M`. -/
 theorem homEquivOfLinearEquiv_apply (h : A ≃ₗ[A] ODual O A A) (ψ : M →ₗ[A] A) (m : M) :
     homEquivOfLinearEquiv h ψ m = h 1 (ψ m) := by
   change h (ψ m) 1 = h 1 (ψ m)
