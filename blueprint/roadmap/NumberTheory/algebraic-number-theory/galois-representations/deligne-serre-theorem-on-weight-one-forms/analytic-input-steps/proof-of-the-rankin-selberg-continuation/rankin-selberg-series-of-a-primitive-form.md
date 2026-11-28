@@ -17,14 +17,15 @@ whole plane: that holds for $N = 1$, but for $N > 1$ the Euler factors of $\zeta
 can give poles on the line $\operatorname{Re}(s) = k - 1$. That the pole at $s = k$ is simple is how they use it, since they
 conclude from it that the series $L(s)$ of that page has a simple pole at $s = k$.
 
-The proof is Rankin's method on $\Gamma_0(N)$, in the form Ogg (§2) and Li (§4) give it. By
-[Rankin's unfolding identity](rankin-unfolding-identity.md) with $g = f$, the series
-$\sum_n |a_n|^2 n^{-s}$ converges for $\operatorname{Re}(s) > k$. By
-[Rankin's theorem](rankin-selberg-convolution-continuation.md) with $g = f$, taken at
-$s - k + 1$, the product of the series with $\zeta_N(2s - 2k + 2)$, where $\zeta_N(s) = \prod_{p \nmid N} (1 - p^{-s})^{-1}$,
-extends to a meromorphic function on $\mathbb{C}$ whose only pole is a simple pole at $s = k$, with residue a positive multiple
-of the Petersson norm $\langle f, f \rangle > 0$ of $f$. Multiplying it by $\prod_{p \mid N} (1 - p^{2k-2-2s})^{-1}$, which is holomorphic and nonzero on
-$\operatorname{Re}(s) > k - 1$, gives the statement.
+The proof is Rankin's method on $\Gamma_0(N)$, in the form Ogg (§2) and Li (1975, §4) give it for the trivial character. For
+$\varepsilon = 1$, and so $k$ even, [Rankin's unfolding identity](rankin-unfolding-identity.md) with $g = f$ shows that the series
+$\sum_n |a_n|^2 n^{-s}$ converges for $\operatorname{Re}(s) > k$, and [Rankin's theorem](rankin-selberg-convolution-continuation.md)
+with $g = f$, taken at $s - k + 1$, shows that the product of the series with $\zeta_N(2s - 2k + 2)$, where
+$\zeta_N(s) = \prod_{p \nmid N} (1 - p^{-s})^{-1}$, extends to a meromorphic function on $\mathbb{C}$ whose only pole is a simple pole
+at $s = k$, with residue a positive multiple of the Petersson norm $\langle f, f \rangle > 0$ of $f$. Multiplying it by
+$\prod_{p \mid N} (1 - p^{2k-2-2s})^{-1}$, which is holomorphic and nonzero on $\operatorname{Re}(s) > k - 1$, gives the statement.
+For a nontrivial $\varepsilon$ the same argument applies to $|f(z)|^2 y^k$, which is invariant under $\Gamma_0(N)$ since
+$|\varepsilon(d)| = 1$, as the remarks on those two pages explain; Ogg and Li (1975) state only the trivial character.
 
 ## Depends on
 
@@ -35,8 +36,24 @@ $\operatorname{Re}(s) > k - 1$, gives the statement.
 
 ## Proof depends on
 
-- [Rankin's unfolding identity on Γ₀(N)](rankin-unfolding-identity.md), with $g = f$, for the convergence of $\sum_n |a_n|^2 n^{-s}$ on $\operatorname{Re}(s) > k$
-- [Rankin's theorem on the convolution of two cusp forms on Γ₀(N)](rankin-selberg-convolution-continuation.md), with $g = f$, for the continuation of $\zeta_N(2s - 2k + 2) \sum_n |a_n|^2 n^{-s}$ with its only pole, simple with positive residue, at $s = k$
+- [Rankin's unfolding identity on Γ₀(N)](rankin-unfolding-identity.md), with $g = f$ and $\varepsilon = 1$, for the convergence of $\sum_n |a_n|^2 n^{-s}$ on $\operatorname{Re}(s) > k$
+- [Rankin's theorem on the convolution of two cusp forms on Γ₀(N)](rankin-selberg-convolution-continuation.md), with $g = f$ and $\varepsilon = 1$, for the continuation of $\zeta_N(2s - 2k + 2) \sum_n |a_n|^2 n^{-s}$ with its only pole, simple with positive residue, at $s = k$
+
+## Expansion
+
+This node is still to be broken down for a nontrivial character $\varepsilon$: the two steps above state Rankin's method for the
+trivial character, as their sources do. A good expansion states and links, for cusp forms $f$ and $g$ of type $(k, \varepsilon)$
+on $\Gamma_0(N)$ with a common character $\varepsilon$, or at least for $g = f$ a primitive form, and from a source that states
+them:
+
+- the unfolding identity on $\operatorname{Re}(s) > 1$, with the convergence of $\sum_n |a_n|^2 n^{-s}$ for
+  $\operatorname{Re}(s) > k$;
+- the continuation of $\zeta_N(2s) \sum_n a_n \overline{b_n}\, n^{-(s+k-1)}$, with at most a simple pole at $s = 1$ and its
+  residue, a positive multiple of the Petersson product $\langle f, g \rangle$.
+
+The remarks on the two steps give the argument: $f(z) \overline{g(z)} y^k$ is invariant under $\Gamma_0(N)$ since
+$|\varepsilon(d)| = 1$. Li (1979, §3, formulas (3.1)–(3.4) and Proposition 3.1) carries out Rankin's method with characters for
+the two newforms that her §2 fixes, under its conditions A)–C).
 
 ## Sources
 
@@ -48,7 +65,11 @@ $\operatorname{Re}(s) > k - 1$, gives the statement.
 - R. A. Rankin, *Contributions to the theory of Ramanujan's function τ(n) and similar arithmetical functions. I, II*,
   Proc. Cambridge Philos. Soc. 35 (1939), 351–372, as cited in Deligne–Serre (1974), p. 518; not read.
 - A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312: §2, pp. 302–304, formulas (1)–(4′) and
-  Theorem 3 (Rankin), p. 304.
-- W.-C. W. Li, *Newforms and functional equations*, Math. Ann. 212 (1975), 285–315: §4, pp. 312–313.
+  Theorem 3 (Rankin), p. 304, for cusp forms of even weight for $\Gamma_0(N)$ (§1, pp. 298–299).
+- W.-C. W. Li, *Newforms and functional equations*, Math. Ann. 212 (1975), 285–315: §4, pp. 312–313, for two forms in
+  $C_1(M, 1)$.
+- W.-C. W. Li, *L-series of Rankin type and their functional equations*, Math. Ann. 244 (1979), 135–166: §2, p. 141 (the two
+  normalized newforms $F_1$, $F_2$, of characters $\nu_1$, $\nu_2$, and the conditions A)–C)); §3, pp. 146–147, formulas
+  (3.1)–(3.4) and Proposition 3.1.
 - T. Miyake, *On automorphic forms on GL₂ and Hecke operators*, Ann. of Math. 94 (1971), 174–189, as cited in
   Deligne–Serre (1974), p. 518; not read.

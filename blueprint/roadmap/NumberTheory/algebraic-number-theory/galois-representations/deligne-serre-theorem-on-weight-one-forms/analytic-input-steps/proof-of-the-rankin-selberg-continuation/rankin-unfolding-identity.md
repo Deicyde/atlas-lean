@@ -1,9 +1,10 @@
 # Rankin's unfolding identity on Γ₀(N)
 
-Let $N \ge 1$, let $\varepsilon$ be a Dirichlet character mod $N$ and $k \ge 1$ an integer with $\varepsilon(-1) = (-1)^k$, and let
-$f = \sum_{n \ge 1} a_n q^n$ and $g = \sum_{n \ge 1} b_n q^n$, $q = e^{2\pi i z}$, be cusp forms of
-[type $(k, \varepsilon)$ on $\Gamma_0(N)$](../../modular-forms-of-type-k-epsilon.md). For
-$z = x + iy$ in the upper half-plane and $\operatorname{Re}(s) > 1$ let
+Let $N \ge 1$, let $k \ge 2$ be an even integer, and let $f = \sum_{n \ge 1} a_n q^n$ and $g = \sum_{n \ge 1} b_n q^n$,
+$q = e^{2\pi i z}$, be cusp forms of [type $(k, \varepsilon)$ on $\Gamma_0(N)$](../../modular-forms-of-type-k-epsilon.md) for the
+trivial character $\varepsilon = 1$ mod $N$, so that $f(\gamma z) = (cz + d)^k f(z)$ and $g(\gamma z) = (cz + d)^k g(z)$ for every
+$\gamma = \left(\begin{smallmatrix} a & b \\ c & d \end{smallmatrix}\right) \in \Gamma_0(N)$. For $z = x + iy$ in the upper
+half-plane and $\operatorname{Re}(s) > 1$ let
 
 $$E_N(z, s) = \sum_{\gamma \in \Gamma_\infty \backslash \Gamma_0(N)} \operatorname{Im}(\gamma z)^s = y^s + \sum_{c > 0,\ N \mid c} \ \sum_{d \in \mathbb{Z},\ (c, d) = 1} \frac{y^s}{|cz + d|^{2s}},$$
 
@@ -17,15 +18,23 @@ $$\int_D f(z)\, \overline{g(z)}\, y^k E_N(z, s)\, d\mu(z) = (4\pi)^{-(s+k-1)}\, 
 
 In particular $\sum_n |a_n|^2 n^{-s}$ converges for $\operatorname{Re}(s) > k$.
 
-Ogg (§2) and Li (§4) derive this, following Rankin, for $\varepsilon = 1$; their argument uses only that
-$f(z) \overline{g(z)} y^k$ is invariant under $\Gamma_0(N)$, which holds for every $\varepsilon$ since $|\varepsilon(d)| = 1$. The
-cosets $\Gamma_\infty \gamma$ correspond to the pairs $\pm(c, d)$ of coprime integers with $N \mid c$, with representatives
+Ogg (§2) and Li (§4) derive this, following Rankin, for such forms: Ogg for $f$ and $g$ in his space $\mathscr{S}(N)$ of cusp
+forms of even weight $k$ for $\Gamma_0(N)$ (§1, pp. 298–299), Li for "two forms in $C_1(M, 1)$". The function
+$f(z) \overline{g(z)} y^k$ is invariant under $\Gamma_0(N)$. The cosets $\Gamma_\infty \gamma$ correspond to the pairs
+$\pm(c, d)$ of coprime integers with $N \mid c$, with representatives
 $(0, 1)$ and the $(c, d)$ with $c > 0$, and $\operatorname{Im}(\gamma z) = y/|cz + d|^2$; so the integral over $D$ unfolds into
 one over the strip $0 \le x \le 1$, $y > 0$. There the integral of the product of the two Fourier expansions over $x$ is
 $\sum_n a_n \overline{b_n}\, e^{-4\pi n y}$, and Euler's integral
 $\int_0^\infty e^{-4\pi n y}\, y^{s+k-2}\, dy = \Gamma(s+k-1)\, (4\pi n)^{-(s+k-1)}$ gives the right side. For $g = f$ and real
 $s > 1$ every term is nonnegative, so the identity also shows that $\sum_n |a_n|^2 n^{-\sigma}$ is finite for $\sigma > k$;
 with $|a_n \overline{b_n}| \le (|a_n|^2 + |b_n|^2)/2$ this gives the absolute convergence in general.
+
+*Remark (a common character).* Let $k \ge 1$, let $\varepsilon$ be any Dirichlet character mod $N$ with
+$\varepsilon(-1) = (-1)^k$, and let $f$ and $g$ be cusp forms of type $(k, \varepsilon)$ on $\Gamma_0(N)$. For $\gamma \in \Gamma_0(N)$ as
+above, $f(\gamma z) \overline{g(\gamma z)} = |\varepsilon(d)|^2 |cz + d|^{2k} f(z) \overline{g(z)}$ with $|\varepsilon(d)| = 1$, and
+$\operatorname{Im}(\gamma z) = y/|cz + d|^2$, so $f(z) \overline{g(z)} y^k$ is still invariant under $\Gamma_0(N)$, and the argument
+above gives the same conclusions word for word. Ogg and Li do not state this case. For $g = f$ a primitive form, Deligne and Serre
+quote from Rankin the convergence of $\sum_n |a_n|^2 n^{-s}$ for $\operatorname{Re}(s) > k$ (Démonstration 5.2).
 
 ## Depends on
 
@@ -36,7 +45,9 @@ with $|a_n \overline{b_n}| \le (|a_n|^2 + |b_n|^2)/2$ this gives the absolute co
 
 ## Proof depends on
 
-Its proof uses the inputs listed under Expansion.
+- [Functional equation of the Epstein zeta function of a binary form](../../../../../modular-forms-q-series/modular-forms/epstein-zeta-binary-functional-equation.md), for the convergence of the series $\sum_{(m, n) \ne (0, 0)} y^s |m + n z|^{-2s}$ of $Z(z, s)$ on $\operatorname{Re}(s) > 1$, with which $E_N(z, s)$ is compared for its absolute convergence
+
+Its proof also uses the inputs listed under Expansion.
 
 ## Expansion
 
@@ -55,10 +66,14 @@ This node is still to be broken down. A good expansion states and links:
 
 ## Sources
 
-- A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312: §2, p. 302 (formula (1)) and p. 303 (the
-  coset representatives, formula (2) and the function $F_N(\tau, s)$, with $E_N(z, s) = y^s F_N(z, s)$); §1, p. 298, for
-  the form $\delta(f, g) = y^{k-2} f(\tau) \overline{g(\tau)}\, dx\, dy$.
-- W.-C. W. Li, *Newforms and functional equations*, Math. Ann. 212 (1975), 285–315: §4, p. 312.
+- A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312: §2, p. 302 (formula (1), for $f$ and $g$ in
+  $\mathscr{S}(N)$) and p. 303 (the coset representatives, formula (2) and the function $F_N(\tau, s)$, with
+  $E_N(z, s) = y^s F_N(z, s)$); §1, p. 298, for the even weight $k$ and the form
+  $\delta(f, g) = y^{k-2} f(\tau) \overline{g(\tau)}\, dx\, dy$, and p. 299, for the space $\mathscr{S}(N)$ of cusp forms for
+  $\Gamma_0(N)$.
+- W.-C. W. Li, *Newforms and functional equations*, Math. Ann. 212 (1975), 285–315: §4, p. 312 ("two forms in
+  $C_1(M, 1)$").
 - P. Deligne and J.-P. Serre, *Formes modulaires de poids 1*, Ann. Sci. École Norm. Sup. (4) 7 (1974), 507–530,
   [doi:10.24033/asens.1277](https://doi.org/10.24033/asens.1277): Démonstration 5.2, p. 518, for the convergence of
-  $\sum |a_n|^2 n^{-s}$ on $\operatorname{Re}(s) > k$, which they attribute to Rankin.
+  $\sum |a_n|^2 n^{-s}$ on $\operatorname{Re}(s) > k$ for a primitive form of type $(k, \varepsilon)$, which they attribute to
+  Rankin.

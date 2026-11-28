@@ -26,8 +26,9 @@ $\gamma = \overline{\lambda}_p$, $\delta = \overline{\mu}_p$ of the identity of 
 
 $$\sum_{r \ge 0} h_r(\alpha, \beta)\, h_r(\gamma, \delta)\, X^r = \frac{1 - \alpha\beta\gamma\delta X^2}{(1 - \alpha\gamma X)(1 - \alpha\delta X)(1 - \beta\gamma X)(1 - \beta\delta X)},$$
 
-whose coefficients are polynomials in $\alpha, \beta, \gamma, \delta$; Ogg proves it in his normalization by cross-multiplying
-(Proposition, p. 305). For $p \mid N$, $a_{p^r} = a_p^r$ gives $\sum_r |a_{p^r}|^2 p^{-rs} = (1 - |a_p|^2 p^{-s})^{-1}$. For
+whose coefficients are polynomials in $\alpha, \beta, \gamma, \delta$; Ogg states it in his normalization (Proposition, p. 305)
+and indicates its proof, "Cross-multiply: a trivial but lengthy computation, left to the reader". For $p \mid N$,
+$a_{p^r} = a_p^r$ gives $\sum_r |a_{p^r}|^2 p^{-rs} = (1 - |a_p|^2 p^{-s})^{-1}$. For
 $\operatorname{Re}(s) > k$ the series $\sum_n |a_n|^2 n^{-s}$ converges absolutely and has multiplicative coefficients, so it is
 the product of its local series $\sum_r |a_{p^r}|^2 p^{-rs}$. For $p \nmid N$ the local series therefore converges for
 $|X| < p^{-k}$, where it equals the rational function above; its numerator has no zero there, so neither has
@@ -59,6 +60,7 @@ This node is still to be broken down. A good expansion states and links:
   [doi:10.24033/asens.1277](https://doi.org/10.24033/asens.1277): Démonstration 5.2, p. 518 (the definition of $L(s)$, its
   four-factor Euler product and the identity $\mathrm{L}(s) = \mathrm{H}(s)\zeta(2s-2k+2)\bigl(\sum_{n=1}^{\infty} |a_n|^2 n^{-s}\bigr)$);
   (1.7.2), p. 509.
-- A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312: Proposition and its proof, p. 305.
+- A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312: Proposition, p. 305, whose proof by
+  cross-multiplication Ogg leaves to the reader.
 - H. Jacquet, *Automorphic Forms on GL(2), Part II*, Lecture Notes in Math. 278, Springer (1972): p. 33, as cited in
   Deligne–Serre (1974), p. 518; not read.

@@ -42,8 +42,8 @@ This node is still to be broken down. A good expansion states and links:
   $(f \mid \mathrm{R}_d)_\infty(q)$ appartiennent à $\mathbf{Z}[[q]] \otimes \mathbf{Q}$, donc ont des dénominateurs bornés") and
   Remarque 2.8, p. 512.
 - P. Deligne and M. Rapoport, *Les schémas de modules de courbes elliptiques*, in *Modular functions of one variable
-  II*, Lecture Notes in Math. 349, Springer (1973), 143–316: VII, §1 and VII, §4, as cited in Deligne–Serre (1974),
-  p. 511; not read.
+  II*, Lecture Notes in Math. 349, Springer (1973), 143–316: VII, §1, as cited in Deligne–Serre (1974), p. 511, and VII, §4,
+  as cited there on p. 512; not read.
 - G. Shimura, *Introduction to the Arithmetic Theory of Automorphic Functions*, Publ. Math. Soc. Japan 11, Iwanami
   Shoten and Princeton University Press, 1971: théorème 3.5.2, as cited in Deligne–Serre (1974), Remarque 2.8, p. 512;
   not read.

@@ -54,4 +54,4 @@ This node is still to be broken down. A good expansion states and links:
   Proposition 2.7, p. 512.
 - P. Deligne and M. Rapoport, *Les schémas de modules de courbes elliptiques*, in *Modular functions of one variable
   II*, Lecture Notes in Math. 349, Springer (1973), 143–316: VII, 3.2 and VII, §4, as cited in Deligne–Serre (1974),
-  pp. 511–512; not read.
+  p. 512; not read.

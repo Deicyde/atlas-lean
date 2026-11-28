@@ -32,6 +32,8 @@ functional equation of $\Lambda$.
 
 - [Congruence subgroup $\Gamma_0(N)$](../../../../../modular-forms-q-series/modular-forms/congruence-subgroup-gamma0.md)
 - [Functional equation of the Epstein zeta function of a binary form](../../../../../modular-forms-q-series/modular-forms/epstein-zeta-binary-functional-equation.md), for $Z(w, s)$ and $\Lambda(w, s)$
+- [Möbius function](../../../../../arithmetic-functions/multiplicative-functions/m-bius-inversion-for-arithmetic-functions/mobius-function.md), for $\mu$ in the divisor sum
+- [Euler's totient function](../../../../../arithmetic-functions/divisor-totient-functions/euler-totient.md), for $\varphi(N)$ in the residue
 
 ## Proof depends on
 

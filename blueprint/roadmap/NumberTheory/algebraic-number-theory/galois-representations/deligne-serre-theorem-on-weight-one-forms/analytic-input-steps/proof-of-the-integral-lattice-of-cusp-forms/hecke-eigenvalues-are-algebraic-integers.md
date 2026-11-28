@@ -32,6 +32,7 @@ $\mathbb{Q}(\chi(\mathbf{T}))$ is a number field. Their compositum is an $F$ as 
 
 - [Cusp forms on Γ₁(N) with integral q-expansions form a lattice](integral-cusp-forms-form-a-lattice.md), for $S = \mathbb{C} \otimes_{\mathbb{Z}} L$ with $L$ free of finite rank
 - [The Hecke operators on cusp forms on Γ₁(N) commute and preserve the integral lattice](hecke-operators-preserve-the-integral-lattice.md), for $T_p(L) \subset L$ and the commutation of the $T_p$
+- [Common eigenvector of commuting endomorphisms](../../../../../../LinearAlgebra/not-yet-classified/exists-common-eigenvector-of-commute.md), for the common eigenvector of the commuting operators of $\mathbf{T}$ in the eigenspace of $\lambda$, a nonzero finite-dimensional complex vector space
 
 ## Sources
 

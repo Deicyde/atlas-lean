@@ -16,10 +16,11 @@ $d \in (\mathbb{Z}/N\mathbb{Z})^*$. Then:
    $K$-vector space $K \otimes_{\mathbb{Z}} L$; in particular $S = \mathbb{C} \otimes_{\mathbb{Z}} L$;
 3. the eigenvalues of the operators $T_p$, $p \nmid N$, on $S$ are algebraic integers, and they all lie in one finite
    extension of $\mathbb{Q}$;
-4. if $f \in S$ satisfies $f|T_p = a_p f$, then for every automorphism $\sigma$ of $\mathbb{C}$ the form $\sigma(f)$, whose
-   $q$-expansion coefficients are the images under $\sigma$ of those of $f$ (a cusp form by 2), satisfies
-   $\sigma(f)|T_p = \sigma(a_p)\,\sigma(f)$; if $f|R_d = \varepsilon(d) f$ for all $d$, for a character $\varepsilon$ of
-   $(\mathbb{Z}/N\mathbb{Z})^*$, then $\sigma(f)|R_d = \sigma(\varepsilon(d))\,\sigma(f)$ for all $d$.
+4. if $f \in S$ satisfies $f|T_p = \lambda f$ for a prime $p \nmid N$ and some $\lambda \in \mathbb{C}$, then for every
+   automorphism $\sigma$ of $\mathbb{C}$ the form $\sigma(f)$, whose $q$-expansion coefficients are the images under $\sigma$
+   of those of $f$ (a cusp form by 2), satisfies $\sigma(f)|T_p = \sigma(\lambda)\,\sigma(f)$; if $f|R_d = \varepsilon(d) f$ for
+   all $d$, for a character $\varepsilon$ of $(\mathbb{Z}/N\mathbb{Z})^*$, then $\sigma(f)|R_d = \sigma(\varepsilon(d))\,\sigma(f)$
+   for all $d$.
 
 This is Proposition 2.7 of Deligne–Serre, stated there for the spaces $S_K$ of cusp forms defined over a field $K$ of
 characteristic $0$ in the sense of their §2.1; for a subfield $K$ of $\mathbb{C}$, §2.6 identifies $S_K$ with the forms of

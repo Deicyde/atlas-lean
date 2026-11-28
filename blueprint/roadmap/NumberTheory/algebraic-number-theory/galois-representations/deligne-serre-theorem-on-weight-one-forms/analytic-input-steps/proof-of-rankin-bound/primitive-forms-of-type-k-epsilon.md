@@ -20,7 +20,10 @@ of type $(k, \varepsilon)$ on $\Gamma_0(N)$ is a nonzero $f \in S_k(N, \varepsil
 the $T_p$, $p \nmid N$, normalized by $a_1 = 1$.
 
 This is Li's definition of a normalized newform in her space $C_\varepsilon(N, 1) = S_k(N, \varepsilon)$, with the old forms
-$G|B_d$, $(G|B_d)(z) = G(dz)$, of her §2. Li shows that a newform has $a_1 \ne 0$, so that it can be normalized, and that
+$G|B_d$, $(G|B_d)(z) = G(dz)$, of her §2. Her Petersson product is the "absolute" one (pp. 293–294): the integral of
+$F(\tau) \overline{G(\tau)} y^{k-2}\, dx\, dy$ over a fundamental domain for a principal congruence subgroup, divided by its index
+in $\Gamma(1)$. On $S_k(N, \varepsilon)$ it is a positive constant multiple of $\langle f, g \rangle$ above, so it has the same
+orthogonal complements. Li shows that a newform has $a_1 \ne 0$, so that it can be normalized, and that
 a normalized newform is determined by its eigenvalues for the $T_p$, $p \nmid N$ (p. 294). Deligne and Serre refer for the
 definition to Atkin and Lehner when $\varepsilon = 1$, and to Deligne, Li and Miyake in general (§1.7); the operators are
 their (1.6.1) and (1.6.2).
