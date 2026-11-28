@@ -17,15 +17,17 @@ import Mathlib.Order.Interval.Finset.Defs
 /-!
 # Finitely many double cosets in the Hecke operator `T_q`
 
-* `FixedDetMatrices.exists_smul_mem_reps`, `FixedDetMatrices.reps_finite`: every integral
-  `2 × 2` matrix of determinant `m ≠ 0` is `SL₂(ℤ)`-equivalent to one of the finitely many
-  reduced matrices of Mathlib's `FixedDetMatrices.reps m`;
+* `FixedDetMatrices.exists_smul_mem_reps`: every integral `2 × 2` matrix of determinant `m ≠ 0`
+  is `SL₂(ℤ)`-equivalent to one of the finitely many reduced matrices of Mathlib's
+  `FixedDetMatrices.reps m` (finite by Mathlib's `FixedDetMatrices.repsFintype`;
+  `FixedDetMatrices.reps_finite` restates this as `Set.Finite`);
 * `CongruenceSubgroup.finite_setOf_mul_singleton`, `CongruenceSubgroup.finite_setOf_doubleCoset`:
   for `Γ` of finite index in `SL₂(ℤ)`, the cosets `Γ β` and double cosets `Γ β Γ` of integral
   matrices `β` of determinant `q ≠ 0` are finitely many;
-* `CongruenceSubgroup.finite_setOf_doubleCoset_heckeT`: for `Γ ⊇ Γ₁(N)`, the matrices `β` with
-  `det β = q` and `β ≡ diag(1, q) mod N`, over which the Hecke operator `T_q` sums, lie in finitely
-  many double cosets `Γ β Γ`.
+* `CongruenceSubgroup.finite_setOf_doubleCoset_heckeT`: for positive `N`, `q` and `Γ ⊇ Γ₁(N)`, the
+  matrices `β` with `det β = q` and `β ≡ diag(1, q) mod N` lie in finitely many double cosets
+  `Γ β Γ`. When moreover `Γ ⊆ Γ₀(N)` and `gcd(q, N) = 1`, these double cosets are the indices of
+  Shimura's sum for the Hecke operator `T_q`.
 
 ## References
 
@@ -65,16 +67,10 @@ theorem exists_smul_mem_reps {m : ℤ} (hm : m ≠ 0) (A : FixedDetMatrix (Fin 2
   · rintro B ⟨g, hg⟩
     exact ⟨g * T⁻¹, by rw [mul_smul, inv_smul_smul]; exact hg⟩
 
-/-- The set `FixedDetMatrices.reps m` of reduced integral matrices of determinant $m$ is finite:
-their entries are bounded by $|m|$. -/
-theorem reps_finite (m : ℤ) : (reps m).Finite := by
-  let f : FixedDetMatrix (Fin 2) ℤ m → Fin 2 → Fin 2 → ℤ := fun A => A.1
-  have hf : Function.Injective f := fun A B h => Subtype.ext h
-  refine Set.Finite.of_finite_image ?_ hf.injOn
-  refine Set.Finite.subset (Set.Finite.pi (t := fun _ => Set.univ.pi fun _ => Set.Icc (-|m|) |m|)
-    fun _ => Set.Finite.pi fun _ => Set.finite_Icc _ _) ?_
-  rintro _ ⟨A, hA, rfl⟩ i - j -
-  exact Set.mem_Icc.2 (Finset.mem_Icc.1 (reps_entries_le_m' hA i j))
+/-- The set `FixedDetMatrices.reps m` of reduced integral matrices of determinant $m$ is finite
+(Mathlib's instance `FixedDetMatrices.repsFintype`). -/
+theorem reps_finite (m : ℤ) : (reps m).Finite :=
+  Set.toFinite (reps m)
 
 end FixedDetMatrices
 
@@ -120,7 +116,7 @@ theorem finite_setOf_mul_singleton (Γ : Subgroup (SL(2, ℤ))) [Γ.FiniteIndex]
   have hfin : Finite (Quotient (QuotientGroup.rightRel Γ)) :=
     Finite.of_equiv (SL(2, ℤ) ⧸ Γ)
       (QuotientGroup.quotientRightRelEquivQuotientLeftRel Γ).symm
-  have hR := FixedDetMatrices.reps_finite q
+  have hR := Set.toFinite (FixedDetMatrices.reps q)
   have hU := Set.finite_univ (α := Quotient (QuotientGroup.rightRel Γ))
   refine Set.Finite.subset ((hU.prod hR).image
     fun p => Γ' * {((Quotient.out p.1 : SL(2, ℤ)) : Matrix (Fin 2) (Fin 2) ℤ) *
@@ -165,11 +161,16 @@ theorem finite_setOf_doubleCoset (Γ : Subgroup (SL(2, ℤ))) [Γ.FiniteIndex]
   exact ⟨_, ⟨β, hβ, rfl⟩, rfl⟩
 
 /-- **Finitely many double cosets in the Hecke operator $T_q$.** Let $N$ be a positive integer,
-$\Gamma$ a subgroup of $\mathrm{SL}_2(\mathbb{Z})$ containing $\Gamma_1(N)$ (for instance a group of
-level $N$, between $\Gamma_1(N)$ and $\Gamma_0(N)$), and $q$ a positive integer. Then the integral
-matrices $\beta$ with $\det \beta = q$ and
+$\Gamma$ a subgroup of $\mathrm{SL}_2(\mathbb{Z})$ containing $\Gamma_1(N)$, and $q$ a positive
+integer. Then the integral matrices $\beta$ with $\det \beta = q$ and
 $\beta \equiv \begin{pmatrix} 1 & 0 \\ 0 & q \end{pmatrix} \pmod N$ lie in finitely many double
 cosets $\Gamma \beta \Gamma$, as sets of integral matrices.
+
+When moreover $\Gamma \subseteq \Gamma_0(N)$ (so that $\Gamma$ is a group of level $N$, between
+$\Gamma_1(N)$ and $\Gamma_0(N)$) and $\gcd(q, N) = 1$, these double cosets are the indices of
+Shimura's sum defining $T_q$; outside that range they need not be (for
+$\Gamma = \mathrm{SL}_2(\mathbb{Z})$, $N = 2$ and $q = 4$, the double coset of $2I$ in the usual
+$T_4$ contains no such $\beta$).
 
 Source: W. Stein, *Modular Forms, a Computational Approach*, Graduate Studies in Mathematics 79,
 American Mathematical Society, 2007, §8.3.1, Lemma 8.7 and its proof, p. 129,

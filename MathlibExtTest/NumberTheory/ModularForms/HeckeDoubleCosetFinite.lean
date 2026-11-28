@@ -18,7 +18,8 @@ open Matrix Pointwise
 #check @CongruenceSubgroup.finite_setOf_doubleCoset
 #check @CongruenceSubgroup.finite_setOf_doubleCoset_heckeT
 
--- The double cosets in `T_q` for the group `Γ₀(N)` of level `N`.
+-- For the group `Γ₀(N)` of level `N`: the matrices `β` with `det β = q` and `β ≡ diag(1, q)
+-- mod N` lie in finitely many double cosets (the indices of `T_q` when `gcd(q, N) = 1`).
 example (N : ℕ) [NeZero N] (q : ℕ) (hq : q ≠ 0) :
     {D : Set (Matrix (Fin 2) (Fin 2) ℤ) | ∃ β : Matrix (Fin 2) (Fin 2) ℤ, β.det = q ∧
       β.map (Int.cast : ℤ → ZMod N) = !![1, 0; 0, (q : ZMod N)] ∧
