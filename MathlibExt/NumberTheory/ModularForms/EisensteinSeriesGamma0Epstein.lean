@@ -11,6 +11,7 @@ module
 public import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Summable
 public import Mathlib.NumberTheory.ArithmeticFunction.Moebius
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.Analysis.Normed.Ring.InfiniteSum
 import Mathlib.Analysis.PSeries
 import Mathlib.Data.Int.GCD
@@ -21,11 +22,12 @@ import Mathlib.RingTheory.Coprime.Lemmas
 
 For `N ≥ 1`, `z` in the upper half-plane and `Re s > 1`, with the Eisenstein series
 `E_N(z, s) = y^s + ∑_{c > 0, N ∣ c} ∑_{(c, d) = 1} y^s / |cz + d|^{2s}` of `Γ₀(N)` at `∞`
-(`MetaMathlibExt.eisensteinSeriesGamma0`), `ζ_N(s) = ∑_{(n, N) = 1} n^{-s}`
-(`MetaMathlibExt.zetaCoprime`) and the Epstein zeta function
+(`MetaMathlibExt.eisensteinSeriesGamma0`), `ζ_N(s) = ∑_{(n, N) = 1} n^{-s}`, the `L`-series
+`LSeries (fun n ↦ (1 : DirichletCharacter ℂ N) n) s` of the principal character mod `N`, and the
+Epstein zeta function
 `Z(w, s) = ∑_{(m, n) ≠ 0} Im(w)^s / |m + nw|^{2s}` (`MetaMathlibExt.epsteinSeries`):
 
-* `MetaMathlibExt.two_mul_zetaCoprime_mul_eisensteinSeriesGamma0` (Ogg):
+* `MetaMathlibExt.two_mul_LSeries_one_mul_eisensteinSeriesGamma0` (Ogg):
   `2 ζ_N(2s) E_N(z, s) = N^{-s} ∑_{d ∣ N} μ(d) d^{-s} Z(Nz/d, s)`.
 
 ## References
@@ -41,10 +43,10 @@ open Complex
 
 namespace MetaMathlibExt
 
-/-- The term $\operatorname{Im}(z)^s / |cz + d|^{2s} = (|cz + d|^2 / \operatorname{Im} z)^{-s}$ of
-the
-Eisenstein series, for a pair $p = (c, d)$ of integers; it is $0$ for $p = (0, 0)$ and $s \neq 0$.
--/
+/-- The term $(|cz + d|^2 / \operatorname{Im} z)^{-s}$ of the Eisenstein series, for a pair
+$p = (c, d)$ of integers. For $\operatorname{Im} z > 0$ and $(c, d) \neq (0, 0)$ it is
+$\operatorname{Im}(z)^s / |cz + d|^{2s}$ (`MetaMathlibExt.oggTerm_eq_div`); for $s \neq 0$ it is
+$0$ at $(0, 0)$ (`MetaMathlibExt.oggTerm_zero`). -/
 noncomputable def oggTerm (z s : ℂ) (p : ℤ × ℤ) : ℂ :=
   ((Complex.normSq ((p.1 : ℂ) * z + p.2) / z.im : ℝ) : ℂ) ^ (-s)
 
@@ -52,24 +54,21 @@ noncomputable def oggTerm (z s : ℂ) (p : ℤ × ℤ) : ℂ :=
 theorem oggTerm_zero (z : ℂ) {s : ℂ} (hs : s ≠ 0) : oggTerm z s (0, 0) = 0 := by
   simp [oggTerm, Complex.zero_cpow (neg_ne_zero.2 hs)]
 
-/-- $|cz + d|^2 > 0$ for $\operatorname{Im} z > 0$ and $(c, d) \neq (0, 0)$. -/
-theorem normSq_pos {z : ℂ} (hz : 0 < z.im) {p : ℤ × ℤ} (hp : p ≠ (0, 0)) :
+private theorem normSq_pos {z : ℂ} (hz : 0 < z.im) {p : ℤ × ℤ} (hp : p ≠ (0, 0)) :
     0 < Complex.normSq ((p.1 : ℂ) * z + p.2) := by
-  rw [Complex.normSq_pos]
-  intro h
-  apply hp
-  have him : (p.1 : ℝ) * z.im = 0 := by
-    have := congrArg Complex.im h
-    simpa only [Complex.add_im, Complex.mul_im, Complex.intCast_re, Complex.intCast_im,
-      zero_mul, add_zero, Complex.zero_im] using this
-  have h1 : p.1 = 0 := by exact_mod_cast (mul_eq_zero.1 him).resolve_right hz.ne'
-  have hre : (p.2 : ℝ) = 0 := by
-    have := congrArg Complex.re h
-    simpa [h1] using this
-  exact Prod.ext h1 (by exact_mod_cast hre)
+  have hcd : (![(p.1 : ℝ), (p.2 : ℝ)] : Fin 2 → ℝ) ≠ 0 := by
+    intro h
+    apply hp
+    have h0 := congrFun h 0
+    have h1 := congrFun h 1
+    simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Pi.zero_apply, Int.cast_eq_zero] at h0 h1
+    exact Prod.ext h0 h1
+  have := UpperHalfPlane.linear_ne_zero_of_im hz.ne' hcd
+  simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Complex.ofReal_intCast] at this
+  exact Complex.normSq_pos.2 this
 
-/-- The bound $|\operatorname{Im}(z)^s / |cz + d|^{2s}| \le \operatorname{Im}(z)^{\sigma}
-r(z)^{-2\sigma}
+/-- For $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$, the bound
+$|\operatorname{Im}(z)^s / |cz + d|^{2s}| \le \operatorname{Im}(z)^{\sigma} r(z)^{-2\sigma}
 \|(c, d)\|^{-2\sigma}$, $\sigma = \operatorname{Re} s$, from Mathlib's
 `EisensteinSeries.summand_bound`. -/
 theorem norm_oggTerm_le {z : ℂ} (hz : 0 < z.im) {s : ℂ} (hs : 1 < s.re) (p : ℤ × ℤ) :
@@ -110,8 +109,8 @@ theorem summable_norm_oggTerm {z : ℂ} (hz : 0 < z.im) {s : ℂ} (hs : 1 < s.re
   exact (EisensteinSeries.summable_one_div_norm_rpow (k := 2 * s.re) (by linarith)).comp_injective
     (finTwoArrowEquiv ℤ).symm.injective
 
-/-- The terms are summable over $\mathbb{Z}^2$ for $\operatorname{Im} z > 0$ and $\operatorname{Re}
-s > 1$. -/
+/-- The terms are summable over $\mathbb{Z}^2$ for $\operatorname{Im} z > 0$ and
+$\operatorname{Re} s > 1$. -/
 theorem summable_oggTerm {z : ℂ} (hz : 0 < z.im) {s : ℂ} (hs : 1 < s.re) :
     Summable (oggTerm z s) :=
   (summable_norm_oggTerm hz hs).of_norm
@@ -123,36 +122,29 @@ theorem oggTerm_neg (z s : ℂ) (p : ℤ × ℤ) : oggTerm z s (-p) = oggTerm z 
 
 /-- **The Eisenstein series of $\Gamma_0(N)$ at the cusp $\infty$.** For $z = x + iy$ in the upper
 half-plane and $\operatorname{Re}(s) > 1$,
-$$E_N(z, s) = y^s + \sum_{c > 0,\ N \mid c} \ \sum_{d \in \mathbb{Z},\ (c, d) = 1} \frac{y^s}{|cz +
-d|^{2s}},$$
+$$E_N(z, s) = y^s + \sum_{c > 0,\ N \mid c} \ \sum_{d \in \mathbb{Z},\ (c, d) = 1}
+\frac{y^s}{|cz + d|^{2s}},$$
 written as one sum over the pairs $(c, d)$, with $|cz + d|^{2s} = (|cz + d|^2)^s$ (absolutely
-convergent
-for $\operatorname{Re} s > 1$).
+convergent for $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$).
 
-Source: A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312, §2, p. 303 (the
-function $E_N = y^s F_N$). -/
+Source: A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312, §2, p. 303
+(the function $E_N = y^s F_N$). -/
 noncomputable def eisensteinSeriesGamma0 (N : ℕ) (z s : ℂ) : ℂ :=
   (z.im : ℂ) ^ s + ∑' p : {p : ℤ × ℤ // 0 < p.1 ∧ (N : ℤ) ∣ p.1 ∧ IsCoprime p.1 p.2},
     (z.im : ℂ) ^ s / ((Complex.normSq ((p.1.1 : ℂ) * z + p.1.2) : ℝ) : ℂ) ^ s
 
-/-- $b^s / a^s = (a/b)^{-s}$ for real $a, b > 0$. -/
-theorem cpow_div_cpow_eq {a b : ℝ} (ha : 0 < a) (hb : 0 < b) (s : ℂ) :
+private theorem cpow_div_cpow_eq {a b : ℝ} (ha : 0 < a) (hb : 0 < b) (s : ℂ) :
     (b : ℂ) ^ s / (a : ℂ) ^ s = ((a / b : ℝ) : ℂ) ^ (-s) := by
-  have e : ((a / b : ℝ) : ℂ) ^ s = (a : ℂ) ^ s / (b : ℂ) ^ s := by
-    rw [div_eq_mul_inv a b, Complex.ofReal_mul,
-      Complex.mul_cpow_ofReal_nonneg ha.le (inv_nonneg.2 hb.le), Complex.ofReal_inv,
-      Complex.inv_cpow _ _ (by rw [Complex.arg_ofReal_of_nonneg hb.le]; exact Real.pi_ne_zero.symm),
-      div_eq_mul_inv]
-  rw [Complex.cpow_neg, e, inv_div]
+  rw [Complex.cpow_neg, Complex.ofReal_div, Complex.div_cpow_ofReal_nonneg ha.le hb.le, inv_div]
 
-/-- The term at $(0, 1)$ is $y^s$. -/
+/-- For $\operatorname{Im} z > 0$, the term at $(0, 1)$ is $y^s$. -/
 theorem oggTerm_zero_one {z : ℂ} (hz : 0 < z.im) (s : ℂ) : oggTerm z s (0, 1) = (z.im : ℂ) ^ s := by
   have := cpow_div_cpow_eq one_pos hz s
   rw [Complex.ofReal_one, Complex.one_cpow, div_one] at this
   rw [this, oggTerm]
   simp
 
-/-- The term at $(c, d) \neq (0, 0)$ is $y^s / |cz + d|^{2s}$. -/
+/-- For $\operatorname{Im} z > 0$, the term at $(c, d) \neq (0, 0)$ is $y^s / |cz + d|^{2s}$. -/
 theorem oggTerm_eq_div {z : ℂ} (hz : 0 < z.im) (s : ℂ) {p : ℤ × ℤ} (hp : p ≠ (0, 0)) :
     (z.im : ℂ) ^ s / ((Complex.normSq ((p.1 : ℂ) * z + p.2) : ℝ) : ℂ) ^ s = oggTerm z s p :=
   cpow_div_cpow_eq (normSq_pos hz hp) hz s
@@ -163,8 +155,8 @@ def coprimePairs (N : ℕ) : Set (ℤ × ℤ) := {p | (N : ℤ) ∣ p.1 ∧ IsCo
 /-- The coprime pairs $(c, d)$ with $c > 0$ and $N \mid c$. -/
 def posCoprimePairs (N : ℕ) : Set (ℤ × ℤ) := {p | 0 < p.1 ∧ (N : ℤ) ∣ p.1 ∧ IsCoprime p.1 p.2}
 
-/-- $E_N(z, s)$ as the term at $(0, 1)$ plus the sum over the coprime pairs with $c > 0$, $N \mid
-c$. -/
+/-- For $\operatorname{Im} z > 0$, $E_N(z, s)$ is the term at $(0, 1)$ plus the sum over the
+coprime pairs with $c > 0$ and $N \mid c$. -/
 theorem eisensteinSeriesGamma0_eq {N : ℕ} {z : ℂ} (hz : 0 < z.im) (s : ℂ) :
     eisensteinSeriesGamma0 N z s =
       oggTerm z s (0, 1) + ∑' p, (posCoprimePairs N).indicator (oggTerm z s) p := by
@@ -176,7 +168,10 @@ theorem eisensteinSeriesGamma0_eq {N : ℕ} {z : ℂ} (hz : 0 < z.im) (s : ℂ) 
   rw [h] at this
   exact lt_irrefl _ this
 
-/-- The coprime pairs with $N \mid c$ are $(0, \pm 1)$, those with $c > 0$, and their negatives. -/
+/-- The coprime pairs with $N \mid c$ are $(0, \pm 1)$, those with $c > 0$, and their negatives;
+so, for $f$ with $f(-p) = f(p)$, the indicator of the coprime pairs is the sum of the indicators of
+these four parts, the last one written as $p \mapsto$ the indicator of the pairs with $c > 0$ at
+$-p$. -/
 theorem indicator_coprimePairs (N : ℕ) {f : ℤ × ℤ → ℂ} (hf : ∀ p, f (-p) = f p) :
     (coprimePairs N).indicator f = (fun p => if p = (0, 1) then f p else 0) +
       (fun p => if p = (0, -1) then f p else 0) + (posCoprimePairs N).indicator f +
@@ -202,30 +197,21 @@ theorem indicator_coprimePairs (N : ℕ) {f : ℤ × ℤ → ℂ} (hf : ∀ p, f
     simp [hc, h3, show ¬ c < 0 by omega]
     by_cases h : (N : ℤ) ∣ c ∧ IsCoprime c d <;> simp [h]
 
-/-- The sum of a function supported at one point. -/
-theorem tsum_ite_eq_self (f : ℤ × ℤ → ℂ) (a : ℤ × ℤ) :
-    ∑' p, (if p = a then f p else 0) = f a :=
-  tsum_ite_eq a f
-
-/-- A function supported at one point is summable. -/
-theorem summable_ite_eq_self (f : ℤ × ℤ → ℂ) (a : ℤ × ℤ) :
-    Summable fun p => (if p = a then f p else 0) := by
-  refine (hasSum_ite_eq a (f a)).summable.congr fun p => ?_
-  by_cases h : p = a <;> simp [h]
-
-/-- **Both signs counted.** $2 E_N(z, s)$ is the sum of $y^s |cz + d|^{-2s}$ over the coprime pairs
-$(c, d)$ with $N \mid c$. -/
+/-- **Both signs counted.** For $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$,
+$2 E_N(z, s)$ is the sum of $y^s |cz + d|^{-2s}$ over the coprime pairs $(c, d)$ with
+$N \mid c$. -/
 theorem two_mul_eisensteinSeriesGamma0 (N : ℕ) {z : ℂ} (hz : 0 < z.im) {s : ℂ} (hs : 1 < s.re) :
     2 * eisensteinSeriesGamma0 N z s = ∑' p, (coprimePairs N).indicator (oggTerm z s) p := by
   have hF := summable_oggTerm hz hs
+  have h1 : ∀ a : ℤ × ℤ, Summable fun p => if p = a then oggTerm z s p else 0 := fun a =>
+    (hasSum_single a fun b hb => by simp [hb]).summable
   have hP := hF.indicator (posCoprimePairs N)
   have hPn : Summable fun p => (posCoprimePairs N).indicator (oggTerm z s) (-p) :=
     hP.comp_injective neg_injective
   rw [indicator_coprimePairs N (oggTerm_neg z s), Pi.add_def, Pi.add_def, Pi.add_def]
-  rw [Summable.tsum_add (((summable_ite_eq_self _ _).add (summable_ite_eq_self _ _)).add hP) hPn,
-    Summable.tsum_add ((summable_ite_eq_self _ _).add (summable_ite_eq_self _ _)) hP,
-    Summable.tsum_add (summable_ite_eq_self _ _) (summable_ite_eq_self _ _),
-    tsum_ite_eq_self, tsum_ite_eq_self, eisensteinSeriesGamma0_eq hz]
+  rw [Summable.tsum_add (((h1 _).add (h1 _)).add hP) hPn,
+    Summable.tsum_add ((h1 _).add (h1 _)) hP, Summable.tsum_add (h1 _) (h1 _),
+    tsum_ite_eq, tsum_ite_eq, eisensteinSeriesGamma0_eq hz]
   have hneg : ∑' p, (posCoprimePairs N).indicator (oggTerm z s) (-p) =
       ∑' p, (posCoprimePairs N).indicator (oggTerm z s) p :=
     (Equiv.neg (ℤ × ℤ)).tsum_eq _
@@ -235,7 +221,8 @@ theorem two_mul_eisensteinSeriesGamma0 (N : ℕ) {z : ℂ} (hz : 0 < z.im) {s : 
   rw [this]
   ring
 
-/-- The term at $(rc, rd)$ is $r^{-2s}$ times the term at $(c, d)$, for an integer $r > 0$. -/
+/-- For $\operatorname{Im} z > 0$, the term at $(rc, rd)$ is $r^{-2s}$ times the term at $(c, d)$,
+for an integer $r > 0$. -/
 theorem oggTerm_nsmul {z : ℂ} (hz : 0 < z.im) (s : ℂ) {r : ℕ} (hr : 0 < r) (p : ℤ × ℤ) :
     oggTerm z s ((r : ℤ) * p.1, (r : ℤ) * p.2) = (r : ℂ) ^ (-(2 * s)) * oggTerm z s p := by
   have hr' : (0 : ℝ) < r := by exact_mod_cast hr
@@ -252,28 +239,32 @@ theorem oggTerm_nsmul {z : ℂ} (hz : 0 < z.im) (s : ℂ) {r : ℕ} (hr : 0 < r)
   · ring_nf
   · exact hz.le
 
-/-- $\zeta_N(s) = \sum_{n \ge 1,\ (n, N) = 1} n^{-s}$.
-
-Source: A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312, §2, p. 303. -/
-noncomputable def zetaCoprime (N : ℕ) (s : ℂ) : ℂ :=
-  ∑' n : {n : ℕ // 0 < n ∧ n.Coprime N}, (n : ℂ) ^ (-s)
+private theorem LSeries_one_eq_tsum (N : ℕ) (s : ℂ) :
+    LSeries (fun n => (1 : DirichletCharacter ℂ N) n) s =
+      ∑' n : {n : ℕ // 0 < n ∧ n.Coprime N}, (n : ℂ) ^ (-s) := by
+  have hterm : ∀ n : ℕ, LSeries.term (fun n => (1 : DirichletCharacter ℂ N) n) s n =
+      if 0 < n ∧ n.Coprime N then (n : ℂ) ^ (-s) else 0 := by
+    intro n
+    rw [LSeries.term_def]
+    by_cases hn : n = 0
+    · simp [hn]
+    by_cases hc : n.Coprime N
+    · have hu : IsUnit (n : ZMod N) := (ZMod.isUnit_iff_coprime n N).2 hc
+      simp [hn, hc, MulChar.one_apply hu, Nat.pos_of_ne_zero hn, Complex.cpow_neg]
+    · have hu : ¬ IsUnit (n : ZMod N) := fun h => hc ((ZMod.isUnit_iff_coprime n N).1 h)
+      simp [hn, hc, MulChar.map_nonunit _ hu]
+  rw [LSeries, tsum_congr hterm]
+  refine Eq.trans ?_
+    (tsum_subtype {n : ℕ | 0 < n ∧ n.Coprime N} (fun n : ℕ => (n : ℂ) ^ (-s))).symm
+  refine tsum_congr fun n => ?_
+  by_cases h : 0 < n ∧ n.Coprime N <;> simp [Set.indicator, h]
 
 /-- The pairs $(c, d) \neq (0, 0)$ with $N \mid c$ and $d$ prime to $N$. -/
 def coprimeToLevelPairs (N : ℕ) : Set (ℤ × ℤ) :=
   {p | p ≠ (0, 0) ∧ (N : ℤ) ∣ p.1 ∧ IsCoprime p.2 (N : ℤ)}
 
-/-- A coprime pair is not $(0, 0)$. -/
-theorem ne_zero_of_isCoprime {p : ℤ × ℤ} (h : IsCoprime p.1 p.2) : p ≠ (0, 0) := by
-  rintro rfl
-  simp [isCoprime_zero_left] at h
-
-/-- For a coprime pair $(c, d)$ with $N \mid c$, $d$ is prime to $N$. -/
-theorem isCoprime_snd_of_mem_coprimePairs {N : ℕ} {p : ℤ × ℤ} (hp : p ∈ coprimePairs N) :
-    IsCoprime p.2 (N : ℤ) :=
-  IsCoprime.of_isCoprime_of_dvd_right hp.2.symm hp.1
-
-/-- Every pair $(c', d') \neq (0, 0)$ with $N \mid c'$ and $d'$ prime to $N$ is uniquely $r$ times a
-coprime pair $(c, d)$ with $N \mid c$, for an integer $r \ge 1$ prime to $N$, namely
+/-- Every pair $(c', d') \neq (0, 0)$ with $N \mid c'$ and $d'$ prime to $N$ is uniquely $r$
+times a coprime pair $(c, d)$ with $N \mid c$, for an integer $r \ge 1$ prime to $N$, namely
 $r = \gcd(c', d')$. -/
 def coprimeMulEquiv (N : ℕ) :
     {n : ℕ // 0 < n ∧ n.Coprime N} × coprimePairs N ≃ coprimeToLevelPairs N where
@@ -282,9 +273,10 @@ def coprimeMulEquiv (N : ℕ) :
     refine ⟨?_, dvd_mul_of_dvd_right hN _, ?_⟩
     · intro h
       simp only [Prod.mk.injEq, mul_eq_zero, Nat.cast_eq_zero, hr0.ne', false_or] at h
-      exact ne_zero_of_isCoprime (p := (c, d)) hcd (by rw [h.1, h.2])
-    · exact (Nat.isCoprime_iff_coprime.2 hrN).mul_left
-        (isCoprime_snd_of_mem_coprimePairs (p := (c, d)) ⟨hN, hcd⟩)⟩
+      rcases hcd.ne_zero_or_ne_zero with h' | h'
+      · exact h' h.1
+      · exact h' h.2
+    · exact (Nat.isCoprime_iff_coprime.2 hrN).mul_left (hcd.symm.of_isCoprime_of_dvd_right hN)⟩
   invFun q := by
     have hpos : 0 < Int.gcd q.1.1 q.1.2 := by
       rw [Int.gcd_pos_iff]
@@ -315,8 +307,7 @@ def coprimeMulEquiv (N : ℕ) :
     · exact Int.mul_ediv_cancel' (Int.gcd_dvd_left _ _)
     · exact Int.mul_ediv_cancel' (Int.gcd_dvd_right _ _)
 
-/-- The terms of $\zeta_N(2s)$ are absolutely summable for $\operatorname{Re} s > 1$. -/
-theorem summable_norm_zetaCoprime_term (N : ℕ) {s : ℂ} (hs : 1 < s.re) :
+private theorem summable_norm_coprime_cpow (N : ℕ) {s : ℂ} (hs : 1 < s.re) :
     Summable fun n : {n : ℕ // 0 < n ∧ n.Coprime N} => ‖(n : ℂ) ^ (-(2 * s))‖ := by
   have h : Summable fun n : ℕ => (n : ℝ) ^ (-(2 * s.re)) :=
     Real.summable_nat_rpow.2 (by linarith)
@@ -325,21 +316,25 @@ theorem summable_norm_zetaCoprime_term (N : ℕ) {s : ℂ} (hs : 1 < s.re) :
   rw [Complex.norm_natCast_cpow_of_pos n.2.1]
   simp
 
-/-- $\zeta_N(2s) \cdot \sum_{(c, d) = 1,\ N \mid c} y^s|cz + d|^{-2s}$ is the sum over the pairs
-$(c, d) \neq (0, 0)$ with $N \mid c$ and $(d, N) = 1$. -/
-theorem zetaCoprime_mul_tsum_coprimePairs (N : ℕ) {z : ℂ} (hz : 0 < z.im) {s : ℂ}
+/-- For $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$,
+$\zeta_N(2s) \cdot \sum_{(c, d) = 1,\ N \mid c} y^s|cz + d|^{-2s}$ is the sum over the pairs
+$(c, d) \neq (0, 0)$ with $N \mid c$ and $(d, N) = 1$, where $\zeta_N$ is the $L$-series of the
+principal character mod $N$. -/
+theorem LSeries_one_mul_tsum_coprimePairs (N : ℕ) {z : ℂ} (hz : 0 < z.im) {s : ℂ}
     (hs : 1 < s.re) :
-    zetaCoprime N (2 * s) * ∑' p, (coprimePairs N).indicator (oggTerm z s) p =
+    LSeries (fun n => (1 : DirichletCharacter ℂ N) n) (2 * s) *
+        ∑' p, (coprimePairs N).indicator (oggTerm z s) p =
       ∑' p, (coprimeToLevelPairs N).indicator (oggTerm z s) p := by
-  rw [← tsum_subtype (coprimePairs N), ← tsum_subtype (coprimeToLevelPairs N), zetaCoprime,
-    tsum_mul_tsum_of_summable_norm (summable_norm_zetaCoprime_term N hs)
+  rw [← tsum_subtype (coprimePairs N), ← tsum_subtype (coprimeToLevelPairs N),
+    LSeries_one_eq_tsum,
+    tsum_mul_tsum_of_summable_norm (summable_norm_coprime_cpow N hs)
       ((summable_norm_oggTerm hz hs).comp_injective Subtype.val_injective),
     ← (coprimeMulEquiv N).tsum_eq]
   refine tsum_congr fun x => ?_
   exact (oggTerm_nsmul hz s x.1.2.1 x.2.1).symm
 
-/-- $\sum_{\delta \mid N,\ \delta \mid d} \mu(\delta)$ is $1$ if $d$ is prime to $N$ and $0$
-otherwise. -/
+/-- For $N \neq 0$, $\sum_{\delta \mid N,\ \delta \mid d} \mu(\delta)$ is $1$ if $d$ is prime to
+$N$ and $0$ otherwise. -/
 theorem sum_moebius_dvd {N : ℕ} (hN : N ≠ 0) (d : ℤ) :
     ∑ δ ∈ N.divisors, (if (δ : ℤ) ∣ d then (ArithmeticFunction.moebius δ : ℂ) else 0) =
       if IsCoprime d (N : ℤ) then 1 else 0 := by
@@ -369,9 +364,10 @@ theorem sum_moebius_dvd {N : ℕ} (hN : N ≠ 0) (d : ℤ) :
 /-- The pairs $(c, d)$ with $N \mid c$ and $\delta \mid d$. -/
 def dvdPairs (N δ : ℕ) : Set (ℤ × ℤ) := {p | (N : ℤ) ∣ p.1 ∧ (δ : ℤ) ∣ p.2}
 
-/-- **Möbius inversion.** The sum over the pairs with $N \mid c$ and $(d, N) = 1$ is
-$\sum_{\delta \mid N} \mu(\delta)$ times the sum over the pairs with $N \mid c$ and $\delta \mid
-d$. -/
+/-- **Möbius inversion.** For $N \neq 0$, $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$,
+the sum over the pairs with $N \mid c$ and $(d, N) = 1$ is $\sum_{\delta \mid N} \mu(\delta)
+S_\delta$, where $S_\delta$ is the sum over the pairs $(c, d)$ with $N \mid c$ and
+$\delta \mid d$. -/
 theorem tsum_coprimeToLevelPairs {N : ℕ} (hN : N ≠ 0) {z : ℂ} (hz : 0 < z.im) {s : ℂ}
     (hs : 1 < s.re) :
     ∑' p, (coprimeToLevelPairs N).indicator (oggTerm z s) p =
@@ -399,22 +395,28 @@ theorem tsum_coprimeToLevelPairs {N : ℕ} (hN : N ≠ 0) {z : ℂ} (hz : 0 < z.
   rw [tsum_congr hpt, Summable.tsum_finsetSum fun δ _ => (hF.indicator _).mul_left _]
   exact Finset.sum_congr rfl fun δ _ => tsum_mul_left
 
-/-- The term $(|m + n w|^2 / \operatorname{Im} w)^{-s} = \operatorname{Im}(w)^s / |m + nw|^{2s}$ of
-the
-Epstein zeta function of the form $Q_w$, for a pair $p = (m, n)$, as in
-`MetaMathlibExt.epsteinZeta_binary_functionalEquation`. -/
-noncomputable def epsteinTerm (w s : ℂ) (p : ℤ × ℤ) : ℂ :=
-  ((Complex.normSq ((p.1 : ℂ) + (p.2 : ℂ) * w) / w.im : ℝ) : ℂ) ^ (-s)
+/-- The term of the Epstein zeta function of the form $Q_w$ at a pair $p = (m, n)$: the term
+`MetaMathlibExt.oggTerm w s (n, m)`, which is $(|m + n w|^2 / \operatorname{Im} w)^{-s}$
+(`MetaMathlibExt.epsteinTerm_eq`), and $\operatorname{Im}(w)^s / |m + nw|^{2s}$ for
+$\operatorname{Im} w > 0$ and $(m, n) \neq (0, 0)$. -/
+noncomputable abbrev epsteinTerm (w s : ℂ) (p : ℤ × ℤ) : ℂ :=
+  oggTerm w s p.swap
 
-/-- **The Epstein zeta function of $Q_w$ as a series.**
+/-- The Epstein term at $(m, n)$ is $(|m + n w|^2 / \operatorname{Im} w)^{-s}$, as in
+`MetaMathlibExt.epsteinZeta_binary_functionalEquation`. -/
+theorem epsteinTerm_eq (w s : ℂ) (p : ℤ × ℤ) :
+    epsteinTerm w s p = ((Complex.normSq ((p.1 : ℂ) + (p.2 : ℂ) * w) / w.im : ℝ) : ℂ) ^ (-s) := by
+  simp only [epsteinTerm, oggTerm, Prod.fst_swap, Prod.snd_swap, add_comm]
+
+/-- **The Epstein zeta function of $Q_w$ as a series.** For $\operatorname{Im} w > 0$,
 $Z(w, s) = \sum_{(m, n) \neq (0, 0)} \operatorname{Im}(w)^s / |m + nw|^{2s}$, convergent for
 $\operatorname{Re} s > 1$. -/
 noncomputable def epsteinSeries (w s : ℂ) : ℂ :=
   ∑' p : {p : ℤ × ℤ // p ≠ (0, 0)}, epsteinTerm w s p
 
-/-- The term at $(Nm, \delta n)$ is $(\delta N)^{-s}$ times the term at $(n, m)$ of the Epstein
-zeta function of
-$Q_{Nz/\delta}$, as $\operatorname{Im}(Nz/\delta) = Ny/\delta$. -/
+/-- For $0 < N$, $0 < \delta$ and $\operatorname{Im} z > 0$, the term at $(Nm, \delta n)$ is
+$(\delta N)^{-s}$ times the term at $(n, m)$ of the Epstein zeta function of $Q_{Nz/\delta}$, as
+$\operatorname{Im}(Nz/\delta) = Ny/\delta$. -/
 theorem oggTerm_mul_mul {z : ℂ} (hz : 0 < z.im) (s : ℂ) {N δ : ℕ} (hN : 0 < N) (hδ : 0 < δ)
     (m n : ℤ) :
     oggTerm z s ((N : ℤ) * m, (δ : ℤ) * n) =
@@ -431,11 +433,13 @@ theorem oggTerm_mul_mul {z : ℂ} (hz : 0 < z.im) (s : ℂ) {N δ : ℕ} (hN : 0
       push_cast; field_simp; ring, Complex.normSq_div, Complex.normSq_natCast]
     push_cast
     field_simp
-  simp only [oggTerm, epsteinTerm]
+  rw [epsteinTerm_eq]
+  simp only [oggTerm]
   rw [e, Complex.ofReal_mul, Complex.mul_cpow_ofReal_nonneg (by positivity)
     (div_nonneg (Complex.normSq_nonneg _) (by rw [him]; positivity)), Complex.ofReal_natCast]
 
-/-- The Epstein series as a sum over all of $\mathbb{Z}^2$, the term at $(0, 0)$ being $0$. -/
+/-- For $s \neq 0$, the Epstein series is the sum over all of $\mathbb{Z}^2$, the term at
+$(0, 0)$ being $0$. -/
 theorem epsteinSeries_eq_tsum (w : ℂ) {s : ℂ} (hs : s ≠ 0) :
     epsteinSeries w s = ∑' p, epsteinTerm w s p := by
   refine tsum_subtype_eq_of_support_subset (f := epsteinTerm w s)
@@ -443,10 +447,10 @@ theorem epsteinSeries_eq_tsum (w : ℂ) {s : ℂ} (hs : s ≠ 0) :
   intro h0
   apply hp
   rw [h0]
-  simp [epsteinTerm, Complex.zero_cpow (neg_ne_zero.2 hs)]
+  simp [epsteinTerm_eq, Complex.zero_cpow (neg_ne_zero.2 hs)]
 
-/-- The sum over the pairs with $N \mid c$ and $\delta \mid d$ is $(\delta N)^{-s} Z(Nz/\delta,
-s)$. -/
+/-- For $0 < N$, $0 < \delta$, $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$, the sum
+over the pairs with $N \mid c$ and $\delta \mid d$ is $(\delta N)^{-s} Z(Nz/\delta, s)$. -/
 theorem tsum_dvdPairs {N δ : ℕ} (hN : 0 < N) (hδ : 0 < δ) {z : ℂ} (hz : 0 < z.im) {s : ℂ}
     (hs : 1 < s.re) :
     ∑' p, (dvdPairs N δ).indicator (oggTerm z s) p =
@@ -476,21 +480,20 @@ theorem tsum_dvdPairs {N δ : ℕ} (hN : 0 < N) (hδ : 0 < δ) {z : ℂ} (hz : 0
 
 /-- **Ogg's identity: the Eisenstein series of $\Gamma_0(N)$ through Epstein zeta functions.** For
 $N \ge 1$, $\operatorname{Im} z > 0$ and $\operatorname{Re} s > 1$,
-$$2\, \zeta_N(2s)\, E_N(z, s) = N^{-s} \sum_{d \mid N} \mu(d)\, d^{-s}\, Z(Nz/d, s).$$
-Both signs of $(c, d)$ counted, $2 E_N$ is the sum over the coprime pairs with $N \mid c$;
-multiplying by
-$\zeta_N(2s)$ gives the sum over the pairs with $N \mid c$ and $(d, N) = 1$, Möbius inversion turns
-it into $\sum_{d \mid N} \mu(d)$ times the sums over the pairs with $N \mid c$ and $d$ dividing the
-second
-entry, which are $(dN)^{-s} Z(Nz/d, s)$.
+$$2\, \zeta_N(2s)\, E_N(z, s) = N^{-s} \sum_{d \mid N} \mu(d)\, d^{-s}\, Z(Nz/d, s),$$
+where $\zeta_N(2s) = \sum_{(n, N) = 1} n^{-2s}$ is the $L$-series of the principal character mod
+$N$. Both signs of $(c, d)$ counted, $2 E_N$ is the sum over the coprime pairs with $N \mid c$;
+multiplying by $\zeta_N(2s)$ gives the sum over the pairs with $N \mid c$ and $(d, N) = 1$, and
+Möbius inversion turns it into $\sum_{d \mid N} \mu(d) S_d$, where $S_d$ is the sum over the pairs
+$(c, d')$ with $N \mid c$ and $d \mid d'$, which is $(dN)^{-s} Z(Nz/d, s)$.
 
-Source: A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312, §2, p. 303 (the
-computation of $2\zeta_N(2s) F_N(\tau, s)$ as
-$\sum_{d \mid N} \mu(d) d^{-2s} G(N\tau/d, s)$, with $G(\tau, s) = \sum'_{m, n} |m\tau +
-n|^{-2s}$). -/
-theorem two_mul_zetaCoprime_mul_eisensteinSeriesGamma0 {N : ℕ} (hN : 0 < N) {z : ℂ}
+Source: A. P. Ogg, *On a convolution of L-series*, Invent. Math. 7 (1969), 297–312, §2, p. 303
+(the computation of $2\zeta_N(2s) F_N(\tau, s)$ as
+$\sum_{d \mid N} \mu(d) d^{-2s} G(N\tau/d, s)$, with
+$G(\tau, s) = \sum'_{m, n} |m\tau + n|^{-2s}$). -/
+theorem two_mul_LSeries_one_mul_eisensteinSeriesGamma0 {N : ℕ} (hN : 0 < N) {z : ℂ}
     (hz : 0 < z.im) {s : ℂ} (hs : 1 < s.re) :
-    2 * zetaCoprime N (2 * s) * eisensteinSeriesGamma0 N z s =
+    2 * LSeries (fun n => (1 : DirichletCharacter ℂ N) n) (2 * s) * eisensteinSeriesGamma0 N z s =
       (N : ℂ) ^ (-s) * ∑ δ ∈ N.divisors,
         (ArithmeticFunction.moebius δ : ℂ) * (δ : ℂ) ^ (-s) * epsteinSeries (N * z / δ) s := by
   have hcpow : ∀ δ : ℕ, ((δ * N : ℕ) : ℂ) ^ (-s) = (δ : ℂ) ^ (-s) * (N : ℂ) ^ (-s) := by
@@ -499,10 +502,11 @@ theorem two_mul_zetaCoprime_mul_eisensteinSeriesGamma0 {N : ℕ} (hN : 0 < N) {z
       (Nat.cast_nonneg (α := ℝ) N) (-s)
     push_cast at this ⊢
     exact this
-  calc 2 * zetaCoprime N (2 * s) * eisensteinSeriesGamma0 N z s
-      = zetaCoprime N (2 * s) * (2 * eisensteinSeriesGamma0 N z s) := by ring
+  calc 2 * LSeries (fun n => (1 : DirichletCharacter ℂ N) n) (2 * s) * eisensteinSeriesGamma0 N z s
+      = LSeries (fun n => (1 : DirichletCharacter ℂ N) n) (2 * s) *
+          (2 * eisensteinSeriesGamma0 N z s) := by ring
     _ = ∑' p, (coprimeToLevelPairs N).indicator (oggTerm z s) p := by
-        rw [two_mul_eisensteinSeriesGamma0 N hz hs, zetaCoprime_mul_tsum_coprimePairs N hz hs]
+        rw [two_mul_eisensteinSeriesGamma0 N hz hs, LSeries_one_mul_tsum_coprimePairs N hz hs]
     _ = ∑ δ ∈ N.divisors, (ArithmeticFunction.moebius δ : ℂ) *
           (((δ * N : ℕ) : ℂ) ^ (-s) * epsteinSeries (N * z / δ) s) := by
         rw [tsum_coprimeToLevelPairs hN.ne' hz hs]
