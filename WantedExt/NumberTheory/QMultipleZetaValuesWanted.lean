@@ -24,8 +24,11 @@ public import Mathlib.RingTheory.PowerSeries.Derivative
 public import Mathlib.RingTheory.PowerSeries.Exp
 public import Mathlib.RingTheory.PowerSeries.Inverse
 public import Mathlib.RingTheory.PowerSeries.Substitution
+public import MathlibExt.GroupTheory.Perm.ConjClassesPartition
+public import MathlibExt.NumberTheory.MultipleZeta.BradleyZhaoQuasiShuffle
 public import MathlibExt.NumberTheory.MultipleZeta.CyclicSumFormula
 public import MathlibExt.NumberTheory.MultipleZeta.OOZDuality
+public import MathlibExt.NumberTheory.QMultipleZetaValuesCardConjClassesPermEqCardPartition
 
 /-!
 # q-analogues of multiple zeta values: Schlesinger–Zudilin and OOZ models
@@ -36,7 +39,9 @@ their generating series and duality, the partition function, and the
 Ohno–Okuda–Zudilin (OOZ) model, the general qMZVs of Bachmann–Kühn with the
 spaces `𝒵_q` and `𝒵_{q,1}` they span, the Bradley–Zhao (BZ) model, and the
 description of `𝒵_q` by polynomial functions on partitions in Stanley coordinates,
-and the quasi-shuffle and shuffle products the evaluation maps respect.
+and the quasi-shuffle and shuffle products the evaluation maps respect. The
+theorem `card_conjClasses_perm_eq_card_partition` on the partition function is
+proved in `MathlibExt.NumberTheory.QMultipleZetaValuesCardConjClassesPermEqCardPartition`.
 
 All q-series are formal power series in `q = PowerSeries.X` over `ℚ`; the factor
 `1/(1 - q^m)` is the inverse `(1 - X ^ m)⁻¹` in `ℚ⟦X⟧`. Indices are lists of
@@ -48,16 +53,6 @@ open PowerSeries
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Block indices for Schlesinger–Zudilin qMZVs.** For a list of pairs of natural numbers
-$(k_1, d_1), \dots, (k_r, d_r)$, the block index is the index
-$(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$ obtained by concatenating, for
-$j = 1, \dots, r$, the entry $k_j$ followed by $d_j - 1$ zeros (no zeros when $d_j = 0$).
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Theorem 4 and Theorem 5 (SZ duality), index notation. -/
-public def szBlockIndex (kd : List (ℕ × ℕ)) : List ℕ :=
-  (kd.map fun p => p.1 :: List.replicate (p.2 - 1) 0).flatten
 
 /-- **Block index of the empty list.** The block index of the empty list of pairs is the empty
 index.
@@ -103,41 +98,6 @@ public theorem_wanted coeff_szQMZV_szBlockIndex_eq_sum_choose (r : ℕ) (k d : F
           ((mn.1 j - (if h : j.val + 1 < r then mn.1 ⟨j.val + 1, h⟩ else 0) - 1).choose
             (d j - 1)) : ℕ) : ℚ)
 
-/-- **Schlesinger–Zudilin duality.** Let $\zeta_q^{SZ}$ denote the Schlesinger–Zudilin qMZV, let
-$(k_1, d_1), \dots, (k_r, d_r)$ be pairs of natural numbers with $k_j \ge 1$ and $d_j \ge 1$
-for all $j$, and let $\{0\}^n$ denote $n$ zeros. Then
-$$\zeta_q^{SZ}(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1}) =
-\zeta_q^{SZ}(d_r, \{0\}^{k_r - 1}, \dots, d_1, \{0\}^{k_1 - 1}).$$
-That is, $\zeta_q^{SZ}$ takes the same value at the block index of the list of pairs and at
-the block index of the reversed list with each pair swapped.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Theorem 5 (SZ duality, Zhao) (`integers-2024-A6-thm-5`). -/
-public theorem_wanted szQMZV_szBlockIndex_dual (kd : List (ℕ × ℕ))
-    (hkd : ∀ p ∈ kd, 1 ≤ p.1 ∧ 1 ≤ p.2) :
-    szQMZV (szBlockIndex kd) = szQMZV (szBlockIndex (kd.reverse.map Prod.swap))
-
-/-- **Cycle type classifies conjugacy classes of permutations.** For every natural number $n$,
-there is a bijection from the set of conjugacy classes of the symmetric group $S_n$ to the set
-of partitions of $n$ that sends the class of each permutation $\sigma$ to the cycle type of
-$\sigma$: the partition of $n$ formed by the lengths of the cycles of $\sigma$, fixed points
-counting as cycles of length $1$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Lemma 4 (`integers-2024-A6-lem-4`). -/
-public theorem_wanted exists_conjClasses_perm_equiv_partition (n : ℕ) :
-    ∃ e : ConjClasses (Equiv.Perm (Fin n)) ≃ (Fintype.card (Fin n)).Partition,
-      ∀ σ : Equiv.Perm (Fin n), e (ConjClasses.mk σ) = σ.partition
-
-/-- **Number of conjugacy classes of the symmetric group.** For every natural number $n$, the
-number of conjugacy classes of the symmetric group $S_n$ equals the number $p(n)$ of partitions
-of $n$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Lemma 4 (`integers-2024-A6-lem-4`). -/
-public theorem_wanted card_conjClasses_perm_eq_card_partition (n : ℕ) :
-    Nat.card (ConjClasses (Equiv.Perm (Fin n))) = Fintype.card n.Partition
-
 /-- **Class numbers of finite general linear groups via OOZ-qMZVs.** Let $K$ be a finite field
 with $c$ elements and, for $n \ge 0$, let $a_{n,K}$ be the number of conjugacy classes of
 $\mathrm{GL}_n(K)$, so that $a_{0,K} = 1$ because $\mathrm{GL}_0(K)$ is the trivial group. Write
@@ -155,40 +115,6 @@ public theorem_wanted card_conjClasses_GL_eq_coeff_sum_oozQMZV (K : Type*) [Fiel
     (Nat.card (ConjClasses (GL (Fin N) K)) : ℚ) =
       ∑ r ∈ Finset.range (R + 1),
         ((Fintype.card K : ℚ) - 1) ^ r * coeff N (oozQMZV (List.replicate r 1))
-
-/-- **Partial sums of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of natural
-numbers $k_j$ and polynomials $Q_j \in \mathbb{Q}[X]$, and let $M$ be a natural number. The
-partial sum is the formal power series in $q$ over $\mathbb{Q}$
-$$\sum_{M > m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{Q_j(q^{m_j})}{(1 - q^{m_j})^{k_j}},$$
-where the sum runs over integers $m_1, \dots, m_r$ and $1/(1 - q^m)$ is the inverse in
-$\mathbb{Q}[[q]]$. For $r = 0$ it equals $1$ for every $M$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of qMZVs (after Bachmann–Kühn), defining sum truncated at
-`m₁ < M`. -/
-public noncomputable def qMZVPartial : List (ℕ × Polynomial ℚ) → ℕ → ℚ⟦X⟧
-  | [], _ => 1
-  | (k, Q) :: kQ, M => ∑ m ∈ Finset.Ioo 0 M,
-      Polynomial.aeval (X ^ m : ℚ⟦X⟧) Q * ((1 - X ^ m)⁻¹) ^ k * qMZVPartial kQ m
-
-/-- **General q-multiple zeta values.** For natural numbers $k_1, \dots, k_r$ and polynomials
-$Q_1, \dots, Q_r \in \mathbb{Q}[X]$, the general qMZV $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$
-is the formal power series in $q$ over $\mathbb{Q}$ whose coefficient of $q^N$, for every $N$, is
-the coefficient of $q^N$ in the finite sum
-$\sum_{N \ge m_1 > m_2 > \dots > m_r > 0} \prod_{j=1}^{r} Q_j(q^{m_j}) / (1 - q^{m_j})^{k_j}$
-over integers $m_1, \dots, m_r$, and $\zeta_q(\varnothing; \varnothing) = 1$.
-
-When $Q_1(0) = 0$ (the paper's condition $Q_1 \in X \mathbb{Q}[X]$), the summands with
-$m_1 > N$ have $q$-adic order greater than $N$, so this is the series
-$\sum_{m_1 > \dots > m_r > 0} \prod_{j=1}^{r} Q_j(q^{m_j}) / (1 - q^{m_j})^{k_j}$; for other data
-the value is a junk value.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of qMZVs (after Bachmann–Kühn). -/
-public noncomputable def qMZV : List (ℕ × Polynomial ℚ) → ℚ⟦X⟧
-  | [] => 1
-  | (k, Q) :: kQ => PowerSeries.mk fun N => coeff N (∑ m ∈ Finset.Ioo 0 (N + 1),
-      Polynomial.aeval (X ^ m : ℚ⟦X⟧) Q * ((1 - X ^ m)⁻¹) ^ k * qMZVPartial kQ m)
 
 /-- **General qMZV of the empty index.** The general q-multiple zeta value of the empty data is
 $\zeta_q(\varnothing; \varnothing) = 1$.
@@ -235,22 +161,6 @@ Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
 Article A6, Definition of qMZVs (ii). -/
 public theorem one_mem_qMZVSpace (d : ℕ) : (1 : ℚ⟦X⟧) ∈ qMZVSpace d :=
   Submodule.subset_span ⟨[], by simp, by simp, rfl⟩
-
-/-- **Bradley–Zhao q-multiple zeta values.** For an index $k = (k_1, \dots, k_r)$ of natural
-numbers, the Bradley–Zhao q-multiple zeta value is the general qMZV
-$\zeta_q^{BZ}(k) = \zeta_q(k_1, \dots, k_r; X^{k_1 - 1}, \dots, X^{k_r - 1})$, a formal power
-series in $q$ over $\mathbb{Q}$, where $k_j - 1$ is truncated at $0$. For an admissible index
-($k_1 \ge 2$ and all $k_i \ge 1$) it equals
-
-$$\zeta_q^{BZ}(k) = \sum_{m_1 > \dots > m_r > 0} \prod_{j=1}^{r}
-\frac{q^{m_j (k_j - 1)}}{(1 - q^{m_j})^{k_j}};$$
-
-for other indices the value has no intended meaning.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Bradley–Zhao qMZVs. -/
-public noncomputable def bzQMZV (k : List ℕ) : ℚ⟦X⟧ :=
-  qMZV (k.map fun k => (k, Polynomial.X ^ (k - 1)))
 
 /-- **Bradley–Zhao qMZV of the empty index.** The Bradley–Zhao q-multiple zeta value of the
 empty index is $\zeta_q^{BZ}(\varnothing) = 1$.
@@ -509,27 +419,6 @@ public theorem_wanted mem_qMZVSpace_zero_iff_exists_mvPolynomial (S : ℚ⟦X⟧
         ∑ r ∈ Finset.Icc 1 N, ∑ p ∈ stanleyPartitions r N,
           MvPolynomial.eval (Sum.elim (fun j => (p.1 j : ℚ)) fun j => (p.2 j : ℚ)) (f r)
 
-/-- **Quasi-shuffle product.** Fix an alphabet and a product of letters $a \diamond b$, a formal
-sum of letters given as a finite list (possibly empty, possibly with repetitions). The
-quasi-shuffle product $u \ast v$ of two words $u$ and $v$ is the formal sum of words, recorded as
-a list, defined recursively by $\mathbf{1} \ast w = w \ast \mathbf{1} = w$ for the empty word
-$\mathbf{1}$ and by
-$a u \ast b v = a (u \ast b v) + b (a u \ast v) + (a \diamond b)(u \ast v)$
-for letters $a$, $b$ and words $u$, $v$. Here a letter, or a formal sum of letters, written in
-front of a formal sum of words is prepended to each of its words, and the terms are listed in
-the order of the formula.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, quasi-shuffle products of Section 2 (the induced quasi-shuffle
-products on `M`, `𝔎`, `𝔥¹`). -/
-public def quasiShuffle {α : Type*} (d : α → α → List α) : List α → List α → List (List α)
-  | [], v => [v]
-  | a :: u, [] => [a :: u]
-  | a :: u, b :: v =>
-      (quasiShuffle d u (b :: v)).map (a :: ·) ++ (quasiShuffle d (a :: u) v).map (b :: ·) ++
-        (d a b).flatMap fun c => (quasiShuffle d u v).map (c :: ·)
-termination_by u v => u.length + v.length
-
 /-- **The empty word is a left unit for the quasi-shuffle product.** For every alphabet, every
 product of letters and every word $w$, the quasi-shuffle product of the empty word $\mathbf{1}$
 with $w$ is $\mathbf{1} \ast w = w$, the formal sum consisting of the single word $w$.
@@ -656,23 +545,6 @@ public theorem_wanted szQMZV_mul_eq_sum_szShuffle (u v : List ℕ)
     (hu : ∀ k₁ ∈ u.head?, 1 ≤ k₁) (hv : ∀ k₁ ∈ v.head?, 1 ≤ k₁) :
     szQMZV u * szQMZV v = ((szShuffle (szWord u) (szWord v)).map szQMZVWord).sum
 
-/-- **Quasi-shuffle relations for Bradley–Zhao qMZVs.** Identify an index $(k_1, \dots, k_r)$
-with the word $z_{k_1} \cdots z_{k_r}$, and let $u$ and $v$ be admissible indices: finite,
-possibly empty, sequences of positive integers whose first entry, if any, is at least $2$. Let
-$u \ast_{BZ} v$ be the quasi-shuffle product of $u$ and $v$ with letter product
-$z_a \diamond z_b = z_{a+b} + z_{a+b-1}$, a formal sum of indices. Then
-$\zeta_q^{BZ}(u)\,\zeta_q^{BZ}(v) = \zeta_q^{BZ}(u \ast_{BZ} v)$, where the Bradley–Zhao qMZV
-$\zeta_q^{BZ}$ is extended linearly to formal sums of indices.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Proposition 5 (`integers-2024-A6-prop-5`). -/
-public theorem_wanted bzQMZV_mul_eq_sum_quasiShuffle (u v : List ℕ)
-    (hu : ∀ k ∈ u, 1 ≤ k) (hu₁ : ∀ k₁ ∈ u.head?, 2 ≤ k₁)
-    (hv : ∀ k ∈ v, 1 ≤ k) (hv₁ : ∀ k₁ ∈ v.head?, 2 ≤ k₁) :
-    bzQMZV u * bzQMZV v =
-      ((quasiShuffle (fun a b => [a + b, a + b - 1]) u v).map bzQMZV).sum
-
-
 /-- **Analytic properties of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of an
 integer $k_j \ge 1$ and a polynomial $Q_j \in \mathbb{Q}[X]$ with $\deg Q_j \le k_j$ for every
 $j$ and $Q_1(0) = 0$, and write the general qMZV as
@@ -700,7 +572,6 @@ public theorem_wanted qMZV_summable_differentiableOn_tendsto (kQ : List (ℕ × 
         (nhdsWithin 1 (Set.Iio 1))
         (nhds (multipleZetaValue (kQ.map Prod.fst) *
           ((kQ.map fun p => ((p.2.eval 1 : ℚ) : ℝ)).prod))))
-
 
 /-- **Letters of the Takeyama–Bradley–Zhao model as qMZV data.** The letters of the TBZ model
 are the symbol $\bar 1$ and the natural numbers $k \ge 1$. The letter $\bar 1$, with summand
