@@ -1,4 +1,4 @@
-# `Hash-coll`
+# Collision-finding experiment
 
-**`Hash-coll`** (Katz and Lindell, Definition 5.2): `s ← Gen`, the finder outputs `(x, x')`,
-and the experiment outputs `1` when `x ≠ x'` and `H^s(x) = H^s(x')`.
+The collision-finding experiment (Katz and Lindell, Definition 5.2) draws a key $s \leftarrow \mathrm{Gen}$
+and the finder's coins, and outputs $1$ when the finder's two inputs collide under $H_s$.

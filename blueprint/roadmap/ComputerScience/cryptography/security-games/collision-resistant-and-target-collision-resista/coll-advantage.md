@@ -1,3 +1,4 @@
-# Coll Advantage
+# Collision-finding advantage
 
-The collision-finding advantage `Pr[Hash-coll = 1]`.
+The collision-finding advantage of a finder is its probability of winning the collision-finding
+experiment.

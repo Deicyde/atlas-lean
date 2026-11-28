@@ -1,4 +1,4 @@
-# Collision Finder
+# Collision finder
 
-A collision finder (the adversary of Katz and Lindell, Definition 5.2): with coins
-`r ← coins` and the key `s`, it outputs two inputs.
+A collision finder for a keyed hash draws coins from a distribution of its own and, from the key and
+its coins, outputs two inputs.

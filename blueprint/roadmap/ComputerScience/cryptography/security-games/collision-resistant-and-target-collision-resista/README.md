@@ -3,14 +3,14 @@
 ## Keyed hash functions and the two adversaries
 
 - [Hash Family](hash-family.md)
-- [Is Collision](is-collision.md)
-- [Collision Finder](collision-finder.md)
+- [Collision of a function](is-collision.md)
+- [Collision finder](collision-finder.md)
 - [TCRAdversary](tcradversary.md)
 
 ## The games
 
-- [`Hash-coll`](coll-game.md)
-- [Coll Advantage](coll-advantage.md)
+- [Collision-finding experiment](coll-game.md)
+- [Collision-finding advantage](coll-advantage.md)
 - [Target collision resistance](tcr-game.md)
 - [Tcr Advantage](tcr-advantage.md)
 - [Tcr To Coll](tcr-to-coll.md)
