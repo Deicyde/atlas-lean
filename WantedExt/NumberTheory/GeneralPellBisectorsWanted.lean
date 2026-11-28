@@ -16,6 +16,7 @@ public import Mathlib.NumberTheory.Pell
 public import MathlibExt.NumberTheory.Diophantine.BisectorEquationIntZero
 public import MathlibExt.NumberTheory.Diophantine.NegativePellGcd
 public import MathlibExt.NumberTheory.Diophantine.NegativePellRational
+public import MathlibExt.NumberTheory.Diophantine.GeneralPellClasses
 public import MathlibExt.NumberTheory.GeneralPellBisectors
 public import MathlibExt.NumberTheory.NegativePellDivisibility
 public import MathlibExt.NumberTheory.GeneralPellBisectorsBisectorEquationFormTen
@@ -92,27 +93,6 @@ public theorem_wanted bisector_equation_form_nine (d m n : ℕ) (hd : 1 < d)
     let c := negPellG d ((2 * m - 1) * (2 * n)) / negPellG d (2 * m - 1)
     negPellG d (2 * m - 1) ∣ negPellG d ((2 * m - 1) * (2 * n)) ∧
       (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)
-
-/-- **Finitely many classes of solutions of a general Pell equation.** Let $d > 0$ be an integer
-that is not a perfect square, let $\varepsilon$ be the fundamental solution of $x^2 - dy^2 = 1$,
-viewed as a unit of $\mathbb{Z}[\sqrt d]$, and let $z \ne 0$ be an integer such that
-$x^2 - dy^2 = z$ has an integral solution. Then there is a finite set $S$ of integral solutions
-$(a, b)$ of $x^2 - dy^2 = z$ such that every integral solution $(x, y)$ satisfies
-$x + y\sqrt d = \pm \varepsilon^n (a + b\sqrt d)$ in $\mathbb{Z}[\sqrt d]$ for some $(a, b) \in S$,
-some sign and some $n \in \mathbb{Z}$.
-
-The paper uses the fundamental unit of norm $\pm 1$; the powers of $\varepsilon$ are among its
-powers, so this form implies the paper's.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 6 (quoting its reference [4,
-Corollary 3.5]) (`integers-2024-A111-thm-6`). -/
-public theorem_wanted generalPell_finitely_many_classes (d : ℤ) (hd₀ : 0 < d)
-    (hd : ¬IsSquare d) (ε : Pell.Solution₁ d) (hε : Pell.IsFundamental ε) (z : ℤ) (hz : z ≠ 0)
-    (hsol : ∃ x y : ℤ, x ^ 2 - d * y ^ 2 = z) :
-    ∃ s : Finset (ℤ × ℤ), (∀ p ∈ s, p.1 ^ 2 - d * p.2 ^ 2 = z) ∧
-      ∀ x y : ℤ, x ^ 2 - d * y ^ 2 = z → ∃ p ∈ s, ∃ n : ℤ, ∃ σ : ℤ√d, (σ = 1 ∨ σ = -1) ∧
-        (⟨x, y⟩ : ℤ√d) = σ * ((ε ^ n : Pell.Solution₁ d) : ℤ√d) * ⟨p.1, p.2⟩
 
 /-- **Basic properties of the negative Pell sequences.** Let $d > 1$ be a natural number such that
 $x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural numbers with
