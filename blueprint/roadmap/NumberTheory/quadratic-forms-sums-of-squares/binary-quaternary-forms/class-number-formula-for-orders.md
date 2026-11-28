@@ -28,6 +28,7 @@ Each page states its result precisely, with its locator in Cox.
 - [Gauss class number of a discriminant](kronecker-s-class-number-sums/gauss-class-number.md)
 - [Fundamental imaginary quadratic discriminant](../../algebraic-number-theory/quadratic-fields/imaginary-quadratic-discriminants/is-fundamental-imaginary-quadratic-discr.md)
 - [Kronecker symbol](../../congruences/power-residues-reciprocity/kronecker-symbol-and-quadratic-characters/kronecker-sym.md)
+- [Prime number](../../primes-primality/prime-number.md)
 
 ## Proof depends on
 

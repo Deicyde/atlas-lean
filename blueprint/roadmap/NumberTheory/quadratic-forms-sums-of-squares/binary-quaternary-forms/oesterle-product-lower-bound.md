@@ -6,6 +6,9 @@ $h(D)$ is the Gauss class number. Then
 
 $$\vartheta(|D|) = \prod_{p \in P(|D|)} \left(1 - \frac{\lfloor 2\sqrt{p} \rfloor}{p + 1}\right) \ge \frac{1}{6}\, 2^{-v_2(h(D))}.$$
 
+The product $\vartheta(|D|)$ is the one in
+[Oesterlé's effective lower bound for class numbers](oesterle-class-number-lower-bound.md).
+
 Each factor lies in $(0, 1]$. It equals $\tfrac13$, $\tfrac14$, $\tfrac13$ and $\tfrac38$ for
 $p = 2, 3, 5, 7$, and it is at least $\tfrac12$ for every prime $p \ge 11$. The set $P(|D|)$ has
 $\omega(D) - 1 \le v_2(h(D))$ elements, by genus theory. The bound follows from the general
@@ -18,8 +21,11 @@ values, which exceeds $\tfrac16\, 2^{-v}$, when $v < 4$.
 
 - [Gauss class number of a discriminant](kronecker-s-class-number-sums/gauss-class-number.md)
 - [Fundamental imaginary quadratic discriminant](../../algebraic-number-theory/quadratic-fields/imaginary-quadratic-discriminants/is-fundamental-imaginary-quadratic-discr.md)
-- [Oesterlé's effective lower bound for class numbers](oesterle-class-number-lower-bound.md), for $P(|D|)$ and the product $\vartheta(|D|)$
-- [Genus theory bound on the prime divisors of a fundamental discriminant](genus-two-power-dvd-class-number.md), for $v_2(h(D))$ and for $\omega(D) - 1 \le v_2(h(D))$, which bounds the number of factors
+- [Prime number](../../primes-primality/prime-number.md)
+
+## Proof depends on
+
+- [Genus theory bound on the prime divisors of a fundamental discriminant](genus-two-power-dvd-class-number.md), for $\omega(D) - 1 \le v_2(h(D))$, which bounds the number of factors
 
 ## Sources
 

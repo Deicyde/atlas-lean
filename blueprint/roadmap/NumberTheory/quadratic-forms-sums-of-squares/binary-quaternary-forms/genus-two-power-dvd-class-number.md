@@ -19,6 +19,7 @@ Proposition 3.11 and Theorem 6.1). Each page states its result precisely, with i
 
 - [Gauss class number of a discriminant](kronecker-s-class-number-sums/gauss-class-number.md)
 - [Fundamental imaginary quadratic discriminant](../../algebraic-number-theory/quadratic-fields/imaginary-quadratic-discriminants/is-fundamental-imaginary-quadratic-discr.md)
+- [Prime number](../../primes-primality/prime-number.md)
 
 ## Proof depends on
 
