@@ -25,8 +25,8 @@ import Mathlib.Algebra.Group.Pointwise.Set.Basic
 * `Subgroup.IsArithmetic.relIndex_inf_conj_ne_zero`: for an arithmetic subgroup `Γ` of
   `GL₂(ℝ)` and `α ∈ GL₂(ℚ)`, `Γ ∩ α⁻¹ Γ α` has finite index in `Γ`;
 * `Subgroup.IsArithmetic.exists_finset_mul_singleton_mul_eq_iUnion`: hence `Γ α Γ` is a finite
-  disjoint union of right cosets of `Γ`. This covers the groups of level `N`, between `Γ₁(N)` and
-  `Γ₀(N)`, used to define the Hecke operators.
+  disjoint union of right cosets of `Γ`. This covers the groups of positive level `N`, between
+  `Γ₁(N)` and `Γ₀(N)`, used to define the Hecke operators.
 
 ## References
 
@@ -48,13 +48,15 @@ variable {G : Type*} [Group G]
 that $\Gamma_g = \Gamma \cap g^{-1} \Gamma g$ has finite index in $\Gamma$. Then there is a finite
 set $s \subseteq \Gamma$, a set of representatives of the right cosets $\Gamma_g \beta$ in
 $\Gamma$, with
+
 $$\Gamma g \Gamma = \bigcup_{\beta \in s} \Gamma g \beta,$$
+
 and the right cosets $\Gamma g \beta$, $\beta \in s$, are pairwise disjoint. Here
 $g^{-1} \Gamma g$ is `ConjAct.toConjAct g⁻¹ • Γ`.
 
-Source: J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31 (2017),
-<https://www.jmilne.org/math/CourseNotes/MF.pdf>,
-Chapter I, §5, Lemma 5.30 and its proof, p. 80 (if
+Source: generalizes J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31
+(2017), <https://www.jmilne.org/math/CourseNotes/MF.pdf>, Chapter I, §5, Lemma 5.30 and its
+proof, p. 80, stated there for a subgroup of finite index of $\Gamma(1)$ (if
 $\Gamma = \bigsqcup (\Gamma \cap \alpha^{-1} \Gamma \alpha) \beta_i$, then
 $\Gamma \alpha \Gamma = \bigsqcup \Gamma \alpha_i$ with $\alpha_i = \alpha \beta_i$). -/
 theorem exists_finset_mul_singleton_mul_eq_iUnion (Γ : Subgroup G) (g : G)
@@ -124,14 +126,15 @@ namespace Subgroup.IsArithmetic
 
 open Matrix
 
-/-- **Arithmetic subgroups are commensurable with their rational conjugates.** For an arithmetic
+/-- **The intersection with a rational conjugate has finite index in $\Gamma$.** For an arithmetic
 subgroup $\Gamma$ of $\mathrm{GL}_2(\mathbb{R})$ and $\alpha \in \mathrm{GL}_2(\mathbb{Q})$, the
 intersection $\Gamma \cap \alpha^{-1} \Gamma \alpha$ has finite index in $\Gamma$. It follows from
 Mathlib's `Subgroup.IsArithmetic.conj`.
 
-Source: J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31 (2017),
-<https://www.jmilne.org/math/CourseNotes/MF.pdf>,
-Chapter I, §5, Lemma 5.29, p. 80. -/
+Source: generalizes J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31
+(2017), <https://www.jmilne.org/math/CourseNotes/MF.pdf>, Chapter I, §5, Lemma 5.29, p. 80,
+stated there for a subgroup of finite index of $\Gamma(1)$ and $\alpha$ of positive
+determinant. -/
 theorem relIndex_inf_conj_ne_zero (Γ : Subgroup (GL (Fin 2) ℝ)) [Γ.IsArithmetic]
     (α : GL (Fin 2) ℚ) :
     (Γ ⊓ (ConjAct.toConjAct (GeneralLinearGroup.map (Rat.castHom ℝ) α)⁻¹ • Γ)).relIndex Γ ≠ 0 := by
@@ -146,16 +149,20 @@ theorem relIndex_inf_conj_ne_zero (Γ : Subgroup (GL (Fin 2) ℝ)) [Γ.IsArithme
   exact one_ne_zero
 
 /-- **A double coset of an arithmetic group is a finite union of right cosets.** Let $\Gamma$ be an
-arithmetic subgroup of $\mathrm{GL}_2(\mathbb{R})$, for instance the image of a group of level
-$N$, a subgroup of $\mathrm{SL}_2(\mathbb{Z})$ between $\Gamma_1(N)$ and $\Gamma_0(N)$, and let
+arithmetic subgroup of $\mathrm{GL}_2(\mathbb{R})$, for instance the image of a group of
+positive level $N$, a subgroup of $\mathrm{SL}_2(\mathbb{Z})$ between $\Gamma_1(N)$ and
+$\Gamma_0(N)$, and let
 $\alpha \in \mathrm{GL}_2(\mathbb{Q})$. Then there is a finite set $s \subseteq \Gamma$ with
+
 $$\Gamma \alpha \Gamma = \bigcup_{\beta \in s} \Gamma \alpha \beta,$$
+
 a union of pairwise disjoint right cosets of $\Gamma$; $s$ is a set of representatives of the right
 cosets of $\Gamma \cap \alpha^{-1} \Gamma \alpha$ in $\Gamma$, which has finite index.
 
-Source: J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31 (2017),
-<https://www.jmilne.org/math/CourseNotes/MF.pdf>,
-Chapter I, §5, Lemmas 5.29 and 5.30, p. 80. -/
+Source: generalizes J. S. Milne, *Modular Functions and Modular Forms*, course notes, version 1.31
+(2017), <https://www.jmilne.org/math/CourseNotes/MF.pdf>, Chapter I, §5, Lemmas 5.29 and 5.30,
+p. 80, stated there for a subgroup of finite index of $\Gamma(1)$ and $\alpha$ of positive
+determinant. -/
 theorem exists_finset_mul_singleton_mul_eq_iUnion (Γ : Subgroup (GL (Fin 2) ℝ)) [Γ.IsArithmetic]
     (α : GL (Fin 2) ℚ) :
     ∃ s : Finset (GL (Fin 2) ℝ), (↑s : Set (GL (Fin 2) ℝ)) ⊆ Γ ∧
