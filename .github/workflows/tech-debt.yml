@@ -7,7 +7,7 @@ name: Technical debt
 #
 # To keep a tracking issue current, set the repository variable TECH_DEBT_ISSUE to its
 # number; the publish job then rewrites the counts between that issue's
-# `<!-- tech-debt:begin -->` and `<!-- tech-debt:end -->` markers.
+# `<!-- tech-debt:begin -->` and `<!-- tech-debt:end -->` markers, on runs from main only.
 
 on:
   schedule:
@@ -52,12 +52,16 @@ jobs:
           ref: ${{ steps.build.outputs.sha }}
           persist-credentials: false
 
+      # The base is the newest successful scheduled or dispatched run of this repository's main,
+      # never a run of another branch. tech_debt.py ignores a base it can't read, so one bad
+      # artifact can't fail every later run.
       - name: Fetch the previous report
         id: previous
         run: |
           set -euo pipefail
-          previous="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow tech-debt.yml --status success \
-            --limit 1 --json databaseId --jq '.[0].databaseId // empty')"
+          previous="$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/tech-debt.yml/runs?branch=main&status=success&per_page=20" \
+            --jq '[.workflow_runs[] | select((.event == "schedule" or .event == "workflow_dispatch")
+              and .head_repository.full_name == env.GITHUB_REPOSITORY)][0].id // empty')"
           if [[ -n "$previous" ]] && gh run download "$previous" --repo "$GITHUB_REPOSITORY" \
               --name tech-debt --dir "$RUNNER_TEMP/previous"; then
             echo "base=--base=$RUNNER_TEMP/previous/tech-debt.json" >> "$GITHUB_OUTPUT"
@@ -80,19 +84,25 @@ jobs:
 
   publish:
     needs: report
-    if: vars.TECH_DEBT_ISSUE != ''
+    if: vars.TECH_DEBT_ISSUE != '' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
+      contents: read
       issues: write
     env:
       GH_TOKEN: ${{ github.token }}
       ISSUE: ${{ vars.TECH_DEBT_ISSUE }}
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: scripts
+          persist-credentials: false
+
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: tech-debt
-          path: report
+          path: ${{ runner.temp }}/report
 
       # Only the part between the two markers is generated; the rest of the body is the
       # maintainers' (plans, owners, links). An issue without the markers is left unchanged
@@ -100,16 +110,6 @@ jobs:
       - name: Update the tracking issue's counts
         run: |
           set -euo pipefail
-          gh issue view "$ISSUE" --repo "$GITHUB_REPOSITORY" --json body --jq .body > body.md
-          python3 - <<'PY'
-          import re
-          body = open("body.md", encoding="utf-8").read()
-          table = open("report/tech-debt.md", encoding="utf-8").read()
-          begin, end = "<!-- tech-debt:begin -->", "<!-- tech-debt:end -->"
-          pattern = re.compile(re.escape(begin) + ".*?" + re.escape(end), re.S)
-          if not pattern.search(body):
-              raise SystemExit(f"the issue body has no {begin} ... {end} section")
-          new = pattern.sub(lambda _: f"{begin}\n{table}\n{end}", body, count=1)
-          open("body.md", "w", encoding="utf-8").write(new)
-          PY
-          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file body.md
+          gh issue view "$ISSUE" --repo "$GITHUB_REPOSITORY" --json body --jq .body > "$RUNNER_TEMP/body.md"
+          python3 scripts/tech_debt.py --splice-issue "$RUNNER_TEMP/body.md" "$RUNNER_TEMP/report/tech-debt.md"
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/body.md"

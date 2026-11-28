@@ -4,14 +4,23 @@
     python3 scripts/tech_debt.py [--build-log LOG] [--base OLD.json] [--json OUT] [--markdown OUT]
 
 Source counters are `git grep` counts over the tracked Lean files of the library roots,
-modelled on Mathlib's technical-debt counters. A build log (the output of `lake build`,
-for example CI's build job log, where Lake replays the warnings of cached modules too)
-adds the compiler warnings, grouped by the linter that raised them and by library.
-With `--base`, each count is compared with an earlier `--json` report.
+modelled on Mathlib's technical-debt counters; wanted declarations are recognized by
+`source_diagnostics.declarations`, as the source-diagnostics check does. A build log (the
+output of `lake build`, for example CI's build job log, where Lake replays the warnings of
+cached modules too) adds the compiler warnings, grouped by the linter that raised them and
+by library.
+With `--base`, each count is compared with an earlier `--json` report; an unreadable
+base is reported and the counts are shown without a comparison.
+
+    python3 scripts/tech_debt.py --splice-issue BODY REPORT
+
+writes the Markdown file REPORT into the section of the issue body file BODY between
+`<!-- tech-debt:begin -->` and `<!-- tech-debt:end -->`, and counts nothing.
 
 The counts are a trend, not a verdict: a line can match a pattern inside a comment, and
 the warning counts cover the modules the log's build replayed or rebuilt. The script
-never invokes Lean and always exits 0 unless its inputs are unreadable.
+never invokes Lean and exits 0 unless its inputs are unreadable or, with `--splice-issue`,
+BODY has no marked section.
 """
 from __future__ import annotations
 
@@ -22,6 +31,9 @@ import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from source_diagnostics import WANTED_KINDS, declarations  # noqa: E402
 
 LIBRARIES = ("MathlibExt", "CSLibExt", "PhyslibExt", "Domains", "WantedExt")
 TESTS = ("MathlibExtTest", "CSLibExtTest", "PhyslibExtTest", "DomainsTest")
@@ -36,17 +48,21 @@ SOURCE_COUNTERS = (
     ("`nolint` attributes", r"nolint ", LIBRARIES),
     ("`set_option backward.*`", r"set_option backward\.", LIBRARIES),
     ("top-level `open Classical`", r"^open (scoped )?Classical( |$)", LIBRARIES, r" in *$"),
-    ("`theorem_wanted` and `def_wanted`", r"^(theorem|def)_wanted ", ("WantedExt",)),
     ("`@[deprecated]` declarations", r"@\[deprecated", LIBRARIES),
     ("`TODO` and `FIXME` comments", r"(TODO|FIXME)", LIBRARIES),
     ("`#adaptation_note`", r"#adaptation_note", LIBRARIES),
     ("`native_decide` in tests", r"native_decide", TESTS),
 )
 
+WANTED = "`theorem_wanted` and `def_wanted` declarations"
+BEGIN, END = "<!-- tech-debt:begin -->", "<!-- tech-debt:end -->"
+
 WARNING = re.compile(r"^(?:\S+Z )?warning: (?P<path>[^:\s]+\.lean):(?:\d+:\d+:)? (?P<message>.*)$")
 NOTE = re.compile(r"This linter can be disabled with `set_option (?P<option>[A-Za-z0-9_.]+) false`")
-TIMESTAMP = re.compile(r"^\S+Z ")
+TIMESTAMP = re.compile(r"^\S+Z(?: |$)")  # GitHub prefixes every log line, an empty one too
 ANSI = re.compile(r"\x1b\[[0-9;]*m")
+# Lines that end a warning's text: another diagnostic, or a Lake progress or summary line.
+BOUNDARY = re.compile(r"^(?:(?:warning|error|info|trace): |\S+ \[\d+/\d+\] |Build completed|Some required targets)")
 
 
 def git(root: Path, *args: str) -> str:
@@ -64,10 +80,20 @@ def grep_count(root: Path, regex: str, roots: tuple[str, ...], excluded: str | N
     return sum(int(line.rsplit(":", 1)[1]) for line in out.stdout.splitlines())
 
 
+def tracked(root: Path, roots: tuple[str, ...]) -> list[str]:
+    # NUL-separated, so a name Git would quote (non-ASCII, spaces) comes back verbatim.
+    return [name for name in git(root, "ls-files", "-z", "--", *(f"{r}/*.lean" for r in roots)).split("\0") if name]
+
+
+def wanted_count(root: Path) -> int:
+    """Wanted declarations in the tracked files of every root, with any modifiers (`public`)."""
+    return sum(1 for name in tracked(root, LIBRARIES + TESTS)
+               for declaration in declarations(root / name) if declaration.kind in WANTED_KINDS)
+
+
 def long_files(root: Path) -> int:
-    files = git(root, "ls-files", "--", *(f"{r}/*.lean" for r in LIBRARIES)).split()
     count = 0
-    for name in files:
+    for name in tracked(root, LIBRARIES):
         with open(root / name, "rb") as handle:
             if sum(1 for _ in handle) > LONG_FILE_LINES:
                 count += 1
@@ -85,6 +111,7 @@ def manifest_pending(root: Path) -> int:
 
 def source_counts(root: Path) -> dict[str, int]:
     counts = {counter[0]: grep_count(root, *counter[1:]) for counter in SOURCE_COUNTERS}
+    counts[WANTED] = wanted_count(root)
     counts[f"library files over {LONG_FILE_LINES} lines"] = long_files(root)
     counts["Formal-Math divergences with a pending backport"] = manifest_pending(root)
     return counts
@@ -98,38 +125,39 @@ def unlinted_kind(message: str) -> str:
     return "other: " + " ".join(words[:4])
 
 
+def warning_records(lines):
+    """The warnings of a build log, each as its normalized text: the `warning:` line and the
+    lines after it up to the next diagnostic or Lake progress line, blank lines trimmed."""
+    record = None
+    for raw in lines:
+        line = TIMESTAMP.sub("", ANSI.sub("", raw.rstrip("\n")))
+        if record is not None and BOUNDARY.match(line):
+            yield "\n".join(record).rstrip()
+            record = None
+        if WARNING.match(line):
+            record = [line]
+        elif record is not None:
+            record.append(line)
+    if record is not None:
+        yield "\n".join(record).rstrip()
+
+
 def warning_counts(lines) -> tuple[Counter, Counter]:
     """Count the warnings of a build log by linter option and by top-level directory.
 
-    A warning repeated verbatim counts once (CI's build log repeats some). A warning without a "can be disabled" note counts as a deprecation or under the first
+    A warning whose whole text repeats verbatim counts once (CI's build log replays some);
+    two warnings that differ anywhere, in the message or in the linter note, both count.
+    A warning without a "can be disabled" note counts as a deprecation or under the first
     words of its message, so no warning goes uncounted.
     """
     by_linter: Counter = Counter()
     by_library: Counter = Counter()
-    pending = None  # (path, message) of the warning whose note may follow
-    seen = set()  # a log can repeat a warning verbatim
-
-    def flush():
-        if pending is not None:
-            by_linter[pending[1]] += 1
-
-    for raw in lines:
-        line = TIMESTAMP.sub("", ANSI.sub("", raw.rstrip("\n")))
-        match = WARNING.match(line)
-        if match:
-            flush()
-            pending = None
-            if line in seen:
-                continue
-            seen.add(line)
-            by_library[match["path"].split("/", 1)[0]] += 1
-            pending = (match["path"], unlinted_kind(match["message"]))
-            continue
-        note = NOTE.search(line)
-        if note and pending is not None:
-            by_linter[note["option"]] += 1
-            pending = None
-    flush()
+    for record in dict.fromkeys(warning_records(lines)):
+        first, _, rest = record.partition("\n")
+        match = WARNING.match(first)
+        note = NOTE.search(rest)
+        by_library[match["path"].split("/", 1)[0]] += 1
+        by_linter[note["option"] if note else unlinted_kind(match["message"])] += 1
     return by_linter, by_library
 
 
@@ -165,12 +193,45 @@ def markdown(data: dict, base: dict | None) -> str:
         lines += ["", f"Compiler warnings: {warnings['total']}"
                   + (f" ({change(warnings['total'], old.get('total'))})" if old else "") + ".", "",
                   "| Count | Change | Linter |", "|---:|---:|---|"]
-        for name, count in warnings["by_linter"].items():
-            lines.append(f"| {count} | {change(count, old.get('by_linter', {}).get(name, 0) if old else None)} | `{name}` |")
+        lines += breakdown(warnings["by_linter"], old.get("by_linter") if old else None)
         lines += ["", "| Count | Change | Library |", "|---:|---:|---|"]
-        for name, count in warnings["by_library"].items():
-            lines.append(f"| {count} | {change(count, old.get('by_library', {}).get(name, 0) if old else None)} | `{name}` |")
+        lines += breakdown(warnings["by_library"], old.get("by_library") if old else None)
     return "\n".join(lines) + "\n"
+
+
+def breakdown(new: dict[str, int], old: dict[str, int] | None) -> list[str]:
+    """Table rows for the current counts, then a zero row for each name the base had and this
+    report lacks, so a category fixed down to nothing still shows its change."""
+    names = list(new) + [name for name in (old or {}) if name not in new]
+    rows = []
+    for name in names:
+        count = new.get(name, 0)
+        rows.append(f"| {count} | {change(count, None if old is None else old.get(name, 0))} | `{name}` |")
+    return rows
+
+
+def load_base(path: Path) -> dict | None:
+    """An earlier --json report, or None (with a message on stderr) if it can't be used."""
+    try:
+        base = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, ValueError) as exc:
+        print(f"tech_debt.py: ignoring the base report {path}: {exc}", file=sys.stderr)
+        return None
+    warnings = base.get("warnings", {}) if isinstance(base, dict) else None
+    if not (isinstance(base, dict) and isinstance(base.get("source"), dict) and isinstance(warnings, dict)
+            and all(isinstance(warnings.get(key, {}), dict) for key in ("by_linter", "by_library"))):
+        print(f"tech_debt.py: ignoring the base report {path}: not a tech_debt.py report", file=sys.stderr)
+        return None
+    return base
+
+
+def splice(body: str, text: str) -> str:
+    """Replace the first marked section of an issue body with `text`."""
+    start = body.find(BEGIN)
+    end = body.find(END, start + len(BEGIN)) if start >= 0 else -1
+    if end < 0:
+        raise ValueError(f"the issue body has no {BEGIN} ... {END} section")
+    return body[:start] + f"{BEGIN}\n{text.rstrip()}\n{END}" + body[end + len(END):]
 
 
 def main() -> int:
@@ -180,12 +241,25 @@ def main() -> int:
     parser.add_argument("--base", type=Path, help="an earlier --json report to compare with")
     parser.add_argument("--json", type=Path, help="write the report as JSON")
     parser.add_argument("--markdown", type=Path, help="write the report as Markdown (default: stdout)")
+    parser.add_argument("--splice-issue", type=Path, nargs=2, metavar=("BODY", "REPORT"),
+                        help="only replace the marked section of the issue body file BODY with REPORT")
     args = parser.parse_args()
+    if args.splice_issue:
+        body, table = args.splice_issue
+        try:
+            body.write_text(splice(body.read_text(encoding="utf-8"), table.read_text(encoding="utf-8")),
+                            encoding="utf-8")
+        except ValueError as exc:
+            print(f"tech_debt.py: {exc}", file=sys.stderr)
+            return 1
+        return 0
     data = report(args.root, args.build_log)
-    base = json.loads(args.base.read_text(encoding="utf-8")) if args.base else None
+    base = load_base(args.base) if args.base else None
     if args.json:
         args.json.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     text = markdown(data, base)
+    if args.base and base is None:
+        text += "\nThe earlier report could not be read, so nothing is compared.\n"
     if args.markdown:
         args.markdown.write_text(text, encoding="utf-8")
     else:

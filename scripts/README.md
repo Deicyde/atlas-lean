@@ -25,7 +25,7 @@ collision check, then the compiled audit of trust and dependency policies, which
 longer than the collision check. Every check runs and every failure is reported, unless
 `ATLAS_CHECK_FAIL_FAST=1`, which CI sets for merge groups: `scripts/check.sh` then stops
 at the first failing check.
-With `ATLAS_TOOL_TESTS=skip`, `scripts/test_scripts.sh` leaves out the nine tool test suites at
+With `ATLAS_TOOL_TESTS=skip`, `scripts/test_scripts.sh` leaves out the tool test suites at
 its end, whose tests read only scripts, workflows and the pins. CI sets it only on a pull request
 whose every changed path is graph data, documentation, a Lean file of the nine libraries or under
 `provenance/` (`scripts/ci_scope.py`); every other run, merge groups and pushes included, runs
@@ -60,12 +60,16 @@ files synced from Formal-Math), the divergence helper and the refresh script, se
 
 For the weekly technical-debt counts, run `python3 scripts/tech_debt.py` from the repository
 root. It counts debt markers in the tracked Lean files of the five libraries (`erw`,
-heartbeat raises, disabled linters, `open Classical`, wanted declarations, files over
-1500 lines, Formal-Math divergences awaiting a backport and others) and, given a
-`lake build` log with `--build-log`, the compiler warnings by linter and by library;
-`--base` compares with an earlier `--json` report. The `Technical debt` workflow runs
-it every Monday on main with the build log of main's newest successful CI run, writes
-the table to the job summary and keeps the report as an artifact for the next run.
+heartbeat raises, disabled linters, `open Classical`, files over 1500 lines, Formal-Math
+divergences awaiting a backport and others), the wanted declarations of every root as
+the source-diagnostics check recognizes them and, given a `lake build` log with
+`--build-log`, the compiler warnings by linter and by library; `--base` compares with an
+earlier `--json` report. The `Technical debt` workflow runs it every Monday on main, or
+when dispatched, with the build log of main's newest successful CI run, writes the table
+to the job summary and keeps the report as an artifact for the next run on main. With
+the repository variable `TECH_DEBT_ISSUE` set to an issue number, it also rewrites the
+part of that issue's body between `<!-- tech-debt:begin -->` and
+`<!-- tech-debt:end -->` (`--splice-issue`); the rest of the body is left as it is.
 
 For opt-in import optimization, see [`import_optimizer/README.md`](import_optimizer/README.md).
 The inventory generator and optimizer use the pinned Lean tools, compile isolated

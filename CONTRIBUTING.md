@@ -617,7 +617,7 @@ the move ledger's fragments in `scripts/card-moves.d/`,
 and `.github/`, and `.agents/` and `.claude/`), and a skipped required check
 counts as passed. On a PR whose every changed path is graph data, documentation,
 a Lean file of the nine libraries or under `provenance/`, `repository integrity`
-skips the nine tool test suites of `scripts/test_scripts.sh`, whose tests read
+skips the tool test suites of `scripts/test_scripts.sh`, whose tests read
 only scripts, workflows and the pins (`ATLAS_TOOL_TESTS`). Merge groups and
 pushes to `main` always run every required check, and all of its tests.
 
