@@ -33,8 +33,11 @@ character values of some prime $q$ coprime to $2D$ (Knapp, *Advanced Algebra*, d
 edition, 2016, Chapter I, Problem 38, p. 75): the prime comes from the Chinese remainder theorem
 and Dirichlet's theorem on primes in arithmetic progressions. If $\prod_p s_p = 1$, then every
 prime $q \nmid D$ with these character values is the leading coefficient of an integral binary
-quadratic form $(q, b, c)$ of discriminant $D$ (Problem 39, p. 75): quadratic reciprocity
-(Problem 37) gives $\left(\frac{D}{q}\right) = 1$, so that $D$ is a square modulo $4q$.
+quadratic form $(q, b, c)$ of discriminant $D$ (Problem 39, p. 75). For odd $q$, quadratic
+reciprocity (Problem 37) gives $\left(\frac{D}{q}\right) = 1$, so that $D$ is a square modulo
+$4q$. For $q = 2$ (possible only for odd $D$), the product condition gives
+$\left(\frac{2}{o}\right) = 1$ for the odd part $o$ of $D$, hence $D \equiv 1 \pmod 8$, and the
+form is $(2, 1, (1 - D)/8)$.
 -/
 
 @[expose] public section
@@ -121,8 +124,9 @@ private lemma exists_odd_part {D : ℤ} (hf : IsFundamentalDiscriminant D) :
         hsq'.squarefree_of_dvd (Nat.div_dvd_of_dvd (by omega)), by omega⟩
     · exact ⟨m.natAbs, by omega, hsq', by omega⟩
 
-/-- The Jacobi symbol of `D` at an odd `q` is the `2`-adic genus character of `q` times the
-Jacobi symbol of `q` at the odd part `o` of `D` (quadratic reciprocity). -/
+/-- Suppose `D` and its odd part `o` satisfy one of the signed congruence cases in
+`exists_odd_part`. For odd `q`, the Jacobi symbol of `D` at `q` is the `2`-adic genus character of
+`q` times the Jacobi symbol of `q` at `o` (quadratic reciprocity). -/
 private lemma jacobiSym_eq_genusCharTwo_mul {D : ℤ} {o q : ℕ} (hq : q % 2 = 1)
     (ho : o % 2 = 1)
     (hD : (D = o ∧ o % 4 = 1) ∨ (D = -o ∧ o % 4 = 3) ∨ (D = 4 * o ∧ o % 4 = 3) ∨
