@@ -10,6 +10,7 @@ module
 public import Mathlib.AlgebraicGeometry.FunctionField
 public import Mathlib.AlgebraicGeometry.Morphisms.Integral
 public import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
+public import Mathlib.RingTheory.LocalProperties.IntegrallyClosed
 
 /-!
 # Integral birational morphisms onto normal schemes are isomorphisms
@@ -17,7 +18,15 @@ public import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
 * `AlgebraicGeometry.isIso_of_isIntegralHom_of_isIso_stalkMap`: let `g : Y ⟶ N` be an integral
   morphism of integral schemes that maps the generic point of `Y` to the generic point of `N` and
   induces an isomorphism of function fields. If `N` is normal, in the form that the ring of
-  sections over every nonempty affine open of `N` is integrally closed, then `g` is an isomorphism.
+  sections over every nonempty affine open of `N` is integrally closed, then `g` is an isomorphism;
+* `AlgebraicGeometry.isIntegrallyClosed_of_isIntegrallyClosed_stalk`: for an integral scheme whose
+  stalks are integrally closed, the ring of sections over every nonempty affine open is integrally
+  closed.
+
+The stalkwise notion of a normal scheme on `main`, `IsNormalScheme`, lives in a wanted module and
+cannot be imported here. For an integral scheme it implies the affine form used here, by
+`isIntegrallyClosed_of_isIntegrallyClosed_stalk`, and the theorem is stated with the affine form for
+that reason.
 
 Over an affine open `Spec A` of `N` with preimage `Spec B`, the map `A → B` is integral and
 injective, and `B` lies in the fraction field of `A`; since `A` is integrally closed, `A = B`.
@@ -43,11 +52,32 @@ lemma isFractionRing_germ_of_eq_genericPoint (N : Scheme.{u}) [IsIntegral N] {W 
   subst hx
   exact functionField_isFractionRing_of_isAffineOpen N W hW
 
+/-- For an integral scheme `N` whose stalks are all integrally closed, the ring of sections
+`Γ(N, U)` over every nonempty affine open `U` is integrally closed. -/
+theorem isIntegrallyClosed_of_isIntegrallyClosed_stalk {N : Scheme.{u}} [IsIntegral N]
+    (hN : ∀ x : N, IsIntegrallyClosed (N.presheaf.stalk x)) (U : N.Opens) (hU : IsAffineOpen U)
+    (hne : (U : Set N).Nonempty) : IsIntegrallyClosed Γ(N, U) := by
+  have : Nonempty U := hne.to_subtype
+  apply IsIntegrallyClosed.of_localization_maximal
+  intro P _ _
+  let y : PrimeSpectrum Γ(N, U) := ⟨P, inferInstance⟩
+  obtain ⟨x, hx⟩ : ∃ x : U, (hU.primeIdealOf x).asIdeal = P :=
+    ⟨hU.isoSpec.inv y,
+      congrArg PrimeSpectrum.asIdeal (Scheme.inv_hom_apply hU.isoSpec (y : Spec Γ(N, U)))⟩
+  subst hx
+  have := hU.isLocalization_stalk x
+  have := hN x
+  exact IsIntegrallyClosed.of_equiv
+    (IsLocalization.algEquiv (hU.primeIdealOf x).asIdeal.primeCompl (N.presheaf.stalk x)
+      (Localization.AtPrime (hU.primeIdealOf x).asIdeal)).toRingEquiv
+
 /-- Let `g : Y ⟶ N` be an integral morphism of integral schemes that maps the generic point of
 `Y` to the generic point of `N` and induces an isomorphism of function fields, that is the stalk
 map of `g` at the generic point of `Y` is an isomorphism. If `N` is normal, in the form that
 `Γ(N, U)` is integrally closed for every nonempty affine open `U` of `N`, then `g` is an
-isomorphism. -/
+isomorphism. The stalkwise `IsNormalScheme` of `main` lives in a wanted module and cannot be
+imported; for integral schemes it implies this affine form, by
+`isIntegrallyClosed_of_isIntegrallyClosed_stalk`, which is why the affine form is used. -/
 theorem isIso_of_isIntegralHom_of_isIso_stalkMap {Y N : Scheme.{u}} [IsIntegral Y] [IsIntegral N]
     (g : Y ⟶ N) [IsIntegralHom g]
     (hN : ∀ U : N.Opens, IsAffineOpen U → (U : Set N).Nonempty → IsIntegrallyClosed Γ(N, U))

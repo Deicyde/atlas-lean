@@ -35,4 +35,12 @@ example {Y N : Scheme} [IsIntegral Y] [IsIntegral N] (g : Y ⟶ N) [IsIntegralHo
   have := isIso_of_isIntegralHom_of_isIso_stalkMap g hN hη inferInstance
   exact (asIso g).hom.homeomorph.bijective
 
+/-- The same conclusion with normality stated through the stalks. -/
+example {Y N : Scheme} [IsIntegral Y] [IsIntegral N] (g : Y ⟶ N) [IsIntegralHom g]
+    (hN : ∀ x : N, IsIntegrallyClosed (N.presheaf.stalk x))
+    (hη : g (genericPoint Y) = genericPoint N) [IsIso (g.stalkMap (genericPoint Y))] :
+    IsIso g :=
+  isIso_of_isIntegralHom_of_isIso_stalkMap g
+    (isIntegrallyClosed_of_isIntegrallyClosed_stalk hN) hη inferInstance
+
 end MathlibExtTest.AlgebraicGeometry.IntegralBirationalNormal
