@@ -12,6 +12,7 @@ import Batteries.Util.ProofWanted
 public import MathlibExt.GameTheory.ExactSlowNimRemoteness
 public import MathlibExt.GameTheory.ExactSlowNimA0Moves
 public import MathlibExt.GameTheory.ExactSlowNimCritical
+public import MathlibExt.GameTheory.ExactSlowNimMRuleSmithRemoteness
 public import WantedExt.Combinatorics.SlowANimWanted
 
 /-!
@@ -33,19 +34,6 @@ every `y < x`" is equivalent to the same condition for the componentwise (`Pi`) 
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Theorem 2 (the M-rule realizes Smith's remoteness).** Let $0 < k$ and let
-$\mathrm{NIM}(k + 1, k)$ be exact slow $k$-NIM on $k + 1$ piles, that is, Slow$A$-Nim on $k + 1$
-stacks with $A = \{k\}$, where a move removes one stone from each of exactly $k$ nonempty piles.
-For every position $x$ of $\mathrm{NIM}(k + 1, k)$, the M-rule length $M(x)$ equals Smith's
-remoteness $R(x)$ of $x$ in $\mathrm{NIM}(k + 1, k)$.
-
-Source: Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On
-Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1,
-Theorem 2. -/
-public theorem_wanted exactSlowNimMRuleLength_eq_smithRemoteness {k : ℕ} (hk : 0 < k)
-    (x : Fin (k + 1) → ℕ) :
-    exactSlowNimMRuleLength k x = SpragueGrundy.smithRemoteness (slowANimGame (k + 1) {k}) x
 
 /-- **Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable).** The map
 sending a list $(x_0, \dots, x_{n-1})$ of natural numbers of length $n$ to Smith's remoteness of

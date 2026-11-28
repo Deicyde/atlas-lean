@@ -39,8 +39,8 @@ every `y < x`" is equivalent to the same condition for the componentwise (`Pi`) 
 
 * Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi,
   *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1,
-  pp. 1–21, Theorem 1, Corollary 1 (i)–(ii), Proposition 1 (Sections 1.7 and 2), and Lemmas 1–4.
-  Section 1.3 relates P-positions to even remoteness.
+  pp. 1–21, Theorems 1–2, Corollary 1 (i)–(ii), Proposition 1 (Sections 1.7 and 2), and Lemmas 1–4.
+  Section 1.3 relates P-positions to even remoteness; Section 2 specifies the M-rule.
 * The proof of Proposition 1 uses `SpragueGrundy.even_smithRemoteness_iff_isP` from
   `MathlibExt.GameTheory.SmithRemoteness`, together with `exactSlowNimBasicValue_eq_smithRemoteness`
   and `exactSlowNimBasicValue_of_supports_basicB` in this module.
@@ -555,7 +555,13 @@ private theorem value_mono {k : ℕ} (hk : 0 < k) {x y : Fin (k + 1) → ℕ} (h
   obtain ⟨z, hz, hb⟩ := exists_supports_exactSlowNimBasicValue k x
   exact le_value hk (hz.trans h) hb
 
-private theorem kept_spec {k : ℕ} (x : Fin (k + 1) → ℕ) :
+end exactSlowNim_critical_of_even
+
+/-- **Size of the pile kept by the M-rule.** For any $k \in \mathbb{N}$ and position
+$x \in \mathbb{N}^{k+1}$, let $j$ be the pile kept by the M-rule. Either $x_j$ is even and
+$x_j \le x_i$ for every pile $i$ of even size, or every pile is odd and $x_i \le x_j$ for every
+pile $i$. -/
+public theorem exactSlowNimMRuleKept_spec {k : ℕ} (x : Fin (k + 1) → ℕ) :
     let j := exactSlowNimMRuleKept x
     (Even (x j) ∧ ∀ i, Even (x i) → x j ≤ x i) ∨
       ((∀ i, ¬Even (x i)) ∧ ∀ i, x i ≤ x j) := by
@@ -582,14 +588,17 @@ private theorem kept_spec {k : ℕ} (x : Fin (k + 1) → ℕ) :
     exact Or.inr ⟨fun i hi => he (List.any_eq_true.mpr ⟨i, List.mem_finRange _, by simpa⟩),
       find (P := fun j => ∀ i, x i ≤ x j) ⟨p, fun i => hmax i (Finset.mem_univ _)⟩⟩
 
-private theorem kept_legal {k : ℕ} {x : Fin (k + 1) → ℕ} {p : Fin (k + 1)}
+/-- **Nonempty piles outside the pile kept by the M-rule.** Let $k \in \mathbb{N}$ and let
+$x \in \mathbb{N}^{k+1}$. If $x_i > 0$ for every $i \ne p$ for some pile $p$, then $x_i > 0$
+for every $i \ne j$, where $j$ is the pile kept by the M-rule. -/
+public theorem exactSlowNimMRuleKept_legal {k : ℕ} {x : Fin (k + 1) → ℕ} {p : Fin (k + 1)}
     (hp : ∀ i, i ≠ p → 0 < x i) :
     ∀ i, i ≠ exactSlowNimMRuleKept x → 0 < x i := by
   intro i hi
   by_contra! hz
   have hzero : x i = 0 := Nat.eq_zero_of_le_zero hz
   have hei : Even (x i) := by simp [hzero]
-  rcases kept_spec x with ⟨-, hmin⟩ | ⟨hn, -⟩
+  rcases exactSlowNimMRuleKept_spec x with ⟨-, hmin⟩ | ⟨hn, -⟩
   · have hj := hmin i hei
     rw [hzero] at hj
     have hpi : i = p := by
@@ -602,6 +611,8 @@ private theorem kept_legal {k : ℕ} {x : Fin (k + 1) → ℕ} {p : Fin (k + 1)}
       omega
     exact hi (hpi.trans hpj.symm)
   · exact hn i hei
+
+namespace exactSlowNim_critical_of_even
 
 -- A type (A0) support gives a type (A1) support after a move whenever a
 -- sub-cap pile still has at least the number of stones in the support.
@@ -1010,7 +1021,7 @@ private theorem a0_support_mmove {k b : ℕ} {x z : Fin (k + 1) → ℕ} (hzx : 
     omega
   have hepx : Even (x p) := hpx ▸ hp
   have ⟨hej, hmin⟩ : Even (x j) ∧ ∀ i, Even (x i) → x j ≤ x i :=
-    (kept_spec x).resolve_right (fun h => h.1 p hepx)
+    (exactSlowNimMRuleKept_spec x).resolve_right (fun h => h.1 p hepx)
   have hzj : Odd (z j) := hodd j hpj.symm
   have hgap : z j + 1 ≤ x j := by
     have h : z j ≤ x j := hzx j
@@ -1119,7 +1130,7 @@ private theorem even_support_of_mmove {k b : ℕ} (hk : 0 < k) {x z : Fin (k + 1
   have heq : x j = z j := by have := hle j; omega
   have hjodd : Odd (x j) := heq.symm ▸ ho j hip
   have ⟨hno, hmax⟩ : (∀ i, ¬Even (x i)) ∧ ∀ i, x i ≤ x j :=
-    (kept_spec x).resolve_left (fun h => Nat.not_even_iff_odd.mpr hjodd h.1)
+    (exactSlowNimMRuleKept_spec x).resolve_left (fun h => Nat.not_even_iff_odd.mpr hjodd h.1)
   -- With all x-piles odd and the largest one tight, raise each played odd pile by two.
   let w (i : Fin (k + 1)) := z i + if i = j then 0 else if i = p then 1 else 2
   have hw (i) : w i ≤ x i := by
@@ -1185,7 +1196,7 @@ private theorem a1_support_moves {k : ℕ} (hk : 0 < k) {x z : Fin (k + 1) → �
     have ho' := Nat.not_even_iff_odd.mp (fun he => hi (hp i he))
     exact (show 0 < z i by have := Nat.odd_iff.mp ho'; omega).trans_le (hzx i)
   let j := exactSlowNimMRuleKept x
-  have hj : ∀ i, i ≠ j → 0 < x i := kept_legal hpos
+  have hj : ∀ i, i ≠ j → 0 < x i := exactSlowNimMRuleKept_legal hpos
   obtain ⟨w, hw, hA⟩ := a0_support_mmove hzx hz
   have hlow : Value k x - 1 ≤ Value k (after x j) := le_value hk hw (Or.inl hA)
   have huv : Value k (after x j) < Value k x := by
@@ -1252,6 +1263,23 @@ private theorem option_profile {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ)
     have := Nat.even_iff.mp he
     omega
 
+-- This is the terminal branch of the basic-value recursion.
+private theorem value_eq_zero_iff_moves_eq_empty {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ) :
+    Value k x = 0 ↔ slowANimMoves {k} x = ∅ := by
+  constructor
+  · intro hz
+    apply Finset.eq_empty_iff_forall_notMem.mpr
+    intro y hy
+    obtain ⟨j, hj, rfl⟩ := (mem_moves_iff hk).mp hy
+    have hle := value_mono hk (after_le x j)
+    have hzero : Value k (after x j) = 0 := by omega
+    have hlt := even_option_lt hk j hj (by simp [hzero])
+    omega
+  · intro ht
+    by_contra hz
+    obtain ⟨y, hy, -⟩ := (option_profile hk x (Nat.pos_of_ne_zero hz)).1
+    simp [ht] at hy
+
 -- Identify the basic-vector value with Smith's recursion by induction on the total pile size.
 private theorem smith_eq_value {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ) :
     SpragueGrundy.smithRemoteness (slowANimGame (k + 1) {k}) x = Value k x := by
@@ -1299,19 +1327,8 @@ private theorem smith_eq_value {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ) 
         rw [dite_eq_left hE, hmin]
         omega
     · have hz : Value k x = 0 := by omega
-      have hempty : ¬ S.Nonempty := by
-        rintro ⟨v, hv⟩
-        obtain ⟨y, hy, rfl⟩ := Finset.mem_image.mp hv
-        obtain ⟨j, hj, rfl⟩ := (mem_moves_iff hk).mp hy
-        have hle := value_mono hk (after_le x j)
-        have he : Even (Value k (after x j)) := by
-          have hzero : Value k (after x j) = 0 := by omega
-          simp [hzero]
-        have := even_option_lt hk j hj he
-        omega
-      have hfilter : ¬ (S.filter Even).Nonempty :=
-        fun h => hempty (h.mono (Finset.filter_subset _ _))
-      rw [dite_eq_right hfilter, dite_eq_right hempty, hz]
+      have ht := (value_eq_zero_iff_moves_eq_empty hk x).mp hz
+      simp [S, ht, hz]
 
 private theorem basic_of_critical {k m : ℕ} (hk : 0 < k) {x : Fin (k + 1) → ℕ}
     (hx : IsExactSlowNimCritical k m x) : Basic k m x := by
@@ -1339,6 +1356,83 @@ private theorem critical_of_a1 {k b : ℕ} (hk : 0 < k) {y : Fin (k + 1) → ℕ
     have hsum := Fintype.sum_strictMono hz
     exact (Nat.lt_of_mul_lt_mul_left ((mul_value_le_sum hk z).trans_lt (hsum.trans_eq hy.1))).ne
 end exactSlowNim_critical_of_even
+
+open exactSlowNim_critical_of_even in
+/-- **Legality and successor of the M-move.** Let $k > 0$ and let $x \in \mathbb{N}^{k+1}$
+have positive basic-vector value $B(x)$ in exact slow $k$-NIM. If $j$ is the pile kept by the
+M-rule, then $x_i > 0$ for every $i \ne j$, and the M-move is a legal move from $x$ that removes
+one token from each pile other than $j$. -/
+public theorem exactSlowNimMRuleMove_spec {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ)
+    (hb : 0 < exactSlowNimBasicValue k x) :
+    let j := exactSlowNimMRuleKept x
+    (∀ i, i ≠ j → 0 < x i) ∧
+      exactSlowNimMRuleMove x ∈ slowANimMoves {k} x ∧
+      exactSlowNimMRuleMove x = slowANimAfter x (Finset.univ.erase j) := by
+  obtain ⟨y, hy, -⟩ := (option_profile hk x hb).1
+  obtain ⟨p, hp, -⟩ := (mem_moves_iff hk).mp hy
+  have hj := exactSlowNimMRuleKept_legal hp
+  exact ⟨hj, (mem_moves_iff hk).mpr ⟨_, hj, rfl⟩, rfl⟩
+
+open exactSlowNim_critical_of_even in
+/-- **Pile kept by the M-rule with a type (A0) support.** Let $k,b \in \mathbb{N}$ with $b>0$,
+let $z$ be a basic vector of type (A0) with parameter $b$, and let $z \le x$ componentwise.
+For the pile $j$ kept by the M-rule at $x \in \mathbb{N}^{k+1}$, either $z_j < b$, or $z_j = b$
+and some pile $i$ satisfies $z_i < \min(b,x_i)$.
+
+This is the type (A0) step in the proof of Theorem 2, using the alternatives of Lemma 2. -/
+public theorem exactSlowNimMRuleKept_of_basicA0 {k b : ℕ} {x z : Fin (k + 1) → ℕ}
+    (hzx : z ≤ x) (hz : IsExactSlowNimBasicA0 k b z) (hb : 0 < b) :
+    let j := exactSlowNimMRuleKept x
+    z j < b ∨ (z j = b ∧ ∃ i, z i < min b (x i)) := by
+  let j := exactSlowNimMRuleKept x
+  obtain ⟨i, hi⟩ := exists_lt_cap hb hz.1 hz.2.1
+  by_cases hj : z j < b
+  · exact Or.inl hj
+  · by_cases hix : z i < x i
+    · exact Or.inr ⟨le_antisymm (hz.2.1 j) (Nat.le_of_not_gt hj), i, lt_min hi hix⟩
+    · have heq : z i = x i := le_antisymm (hzx i) (Nat.le_of_not_gt hix)
+      have hei : Even (x i) := heq ▸ hz.2.2.2 i
+      rcases exactSlowNimMRuleKept_spec x with ⟨-, hmin⟩ | ⟨hodd, -⟩
+      · have hxi : x i < b := heq ▸ hi
+        exact Or.inl ((hzx j).trans_lt ((hmin i hei).trans_lt hxi))
+      · exact (hodd i hei).elim
+
+open exactSlowNim_critical_of_even in
+private theorem mRuleLengthAux_eq_of_sum_le {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ)
+    (f : ℕ) (hf : (∑ i, x i) ≤ f) :
+    exactSlowNimMRuleLengthAux k f x = if Value k x = 0 then 0
+      else 1 + exactSlowNimMRuleLength k (exactSlowNimMRuleMove x) := by
+  induction x using (measure (fun y : Fin (k + 1) → ℕ => ∑ i, y i)).wf.induction
+      generalizing f with
+  | h x ih =>
+    cases f with
+    | zero =>
+      have hx : x = fun _ => 0 := by
+        funext i
+        exact Nat.eq_zero_of_le_zero ((Finset.single_le_sum (fun _ _ => Nat.zero_le _)
+          (Finset.mem_univ i)).trans hf)
+      subst x
+      rw [ite_eq_left ((value_eq_zero_iff_moves_eq_empty hk _).mpr (slowANimMoves_zero {k}))]
+      rfl
+    | succ f =>
+      rw [exactSlowNimMRuleLengthAux_succ]
+      by_cases hb : Value k x = 0
+      · rw [ite_eq_left ((value_eq_zero_iff_moves_eq_empty hk x).mp hb), ite_eq_left hb]
+      · have hm := (exactSlowNimMRuleMove_spec hk x (Nat.pos_of_ne_zero hb)).2.1
+        have hsum := sum_lt_of_mem_slowANimMoves _ _ _ hm
+        have hne : slowANimMoves {k} x ≠ ∅ := Finset.Nonempty.ne_empty ⟨_, hm⟩
+        rw [ite_eq_right hne, ite_eq_right hb]
+        congr 1
+        exact (ih _ hsum f (by omega)).trans
+          (ih _ hsum (∑ i, exactSlowNimMRuleMove x i) le_rfl).symm
+
+/-- **Recursion for the full M-rule length.** Let $k>0$ and let $x \in \mathbb{N}^{k+1}$ be a
+position in exact slow $k$-NIM. If the basic-vector value $B(x)$ is zero, the M-rule length
+$M(x)$ is zero. Otherwise, $M(x)=1+M(x')$, where $x'$ is the position reached by the M-move. -/
+public theorem exactSlowNimMRuleLength_eq {k : ℕ} (hk : 0 < k) (x : Fin (k + 1) → ℕ) :
+    exactSlowNimMRuleLength k x = if exactSlowNimBasicValue k x = 0 then 0
+      else 1 + exactSlowNimMRuleLength k (exactSlowNimMRuleMove x) :=
+  mRuleLengthAux_eq_of_sum_le hk x _ le_rfl
 
 open exactSlowNim_critical_of_even in
 /-- **Basic-vector value equals Smith's remoteness (Lemma 4).** Let $k \ge 1$ and consider
@@ -1416,7 +1510,7 @@ public theorem exactSlowNim_critical_of_even {k m : ℕ} (hk : 0 < k) (hm0 : 0 <
     refine ⟨Or.inr he, fun _ => ⟨⟨p, hp⟩, hcritical, ?_⟩⟩
     let j := exactSlowNimMRuleKept x
     have hmin : ∀ i, x j ≤ x i := by
-      rcases kept_spec x with ⟨-, h⟩ | ⟨h, -⟩
+      rcases exactSlowNimMRuleKept_spec x with ⟨-, h⟩ | ⟨h, -⟩
       · exact fun i => h i (he i)
       · exact (h p (he p)).elim
     have hjcap : x j < m := (hmin p).trans_lt hp
@@ -1457,7 +1551,7 @@ public theorem exactSlowNim_critical_of_odd {k m : ℕ} (hk : 2 ≤ k) (hm : Odd
     · exact (Nat.not_even_iff_odd.mpr hm h.2.2.1).elim
   obtain ⟨i, hi, hu⟩ := ha.2.2.2
   have hkept : exactSlowNimMRuleKept x = i :=
-    hu _ ((kept_spec x).resolve_right (fun h => h.1 i hi)).1
+    hu _ ((exactSlowNimMRuleKept_spec x).resolve_right (fun h => h.1 i hi)).1
   have hxval : Value k x = m := (smith_eq_value hk0 x).symm.trans hx.1
   obtain ⟨-, hpos, hval⟩ := a1_support_moves hk0 le_rfl (hxval.symm ▸ ha)
   rw [hkept] at hpos hval
