@@ -26,7 +26,7 @@ example {n F : Type*} [Fintype n] [DecidableEq n] [Field F] (A : SpecialLinearGr
   rw [← range_toGL_eq_closure_transvections]
   exact ⟨A, rfl⟩
 
--- The determinant itself is the only homomorphism to `Fˣ` that factors as `χ ∘ det` with `χ = id`.
+-- The identity is the unique `χ` with `det = χ.comp det`.
 example {n F : Type*} [Fintype n] [DecidableEq n] [LinearOrder n] [Nonempty n] [Field F] :
     ∃! χ : Fˣ →* Fˣ, (GeneralLinearGroup.det : GL n F →* Fˣ) = χ.comp GeneralLinearGroup.det :=
   exists_unique_eq_comp_det _ fun u hu hd => Units.ext (by
