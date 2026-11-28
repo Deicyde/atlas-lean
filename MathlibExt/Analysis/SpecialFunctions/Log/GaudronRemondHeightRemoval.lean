@@ -23,7 +23,9 @@ of the field of definition and a bound $M \ge 1$ for several Faltings heights; t
 is bounded by $Q = (9g)^{96 g^4} P^{2^{10} g^3}$. Raynaud's estimate for the change of Faltings
 height under an isogeny gives $M \le \max(h + \frac12 \log Q, 1)$, where $h = h_F(A)$, and this
 module shows that this self-referential bound forces $Q \le \kappa$, where
+
 $$\kappa = \Bigl( (14 g)^{64 g^2} \, D \, \max(h, \log D, 1)^2 \Bigr)^{2^{10} g^3}$$
+
 is the constant $\kappa(A)$ of p. 2058.
 
 The proof follows the paper: a crude bound $Q \le \exp(75 \cdot 2^{11} g^6) (DM)^{2^{11} g^3}$,
@@ -43,12 +45,16 @@ open Real
 
 /-- **The quantity $P$ of Gaudron and Rémond.** For a natural number $g$ and real numbers $D$
 and $M$,
+
 $$P(g, D, M) = 4 (9g)^{4g} (8g)^{64 g^2} D \max\Bigl(M + \tfrac32 g,
 \log\bigl(4 (9g)^{4g} D\bigr)\Bigr)^2.$$
+
 For an abelian variety of dimension $g$ over a number field $k$, with $D = [k : \mathbb{Q}]$ and
 $M$ the maximum of $1$ and of the Faltings heights of the abelian varieties in play, this is the
 quantity $P$ of É. Gaudron and G. Rémond, *Polarisations et isogénies*, Duke Math. J. 163 (2014),
-2057–2108, p. 2098, <https://doi.org/10.1215/00127094-2782528>. -/
+2057–2108, p. 2098, <https://doi.org/10.1215/00127094-2782528>. The definition uses Mathlib's
+`Real.log`, so it is total: $\log 0 = 0$ and $\log(-x) = \log x$; this matters only outside that
+setting, where $D \ge 1$. -/
 noncomputable def boundP (g : ℕ) (D M : ℝ) : ℝ :=
   4 * (9 * g : ℝ) ^ (4 * g) * (8 * g : ℝ) ^ (64 * g ^ 2) * D *
     max (M + 3 / 2 * g) (log (4 * (9 * g : ℝ) ^ (4 * g) * D)) ^ 2
@@ -82,8 +88,9 @@ private lemma log_fourteen_ge : 4 * log 2 - 1 / 7 ≤ log (14 : ℝ) := by
 
 /-! ### The steps of the proof -/
 
-/-- The crude bound of the proof of Lemme 9.4: $\log Q \le 75 \cdot 2^{11} g^6 + 2^{11} g^3
-(\log D + \log M)$. -/
+/-- The crude bound of the proof of Lemme 9.4. Let $g \ge 1$ be a natural number and $D, M \ge 1$
+real numbers, and let $Q = (9g)^{96 g^4} P(g, D, M)^{2^{10} g^3}$. Then
+$\log Q \le 75 \cdot 2^{11} g^6 + 2^{11} g^3 (\log D + \log M)$. -/
 private lemma log_le_of_one_le (g : ℕ) (hg : 1 ≤ g) {D M : ℝ} (hD : 1 ≤ D) (hM : 1 ≤ M) :
     log ((9 * g : ℝ) ^ (96 * g ^ 4) * boundP g D M ^ (2 ^ 10 * g ^ 3)) ≤
       153600 * (g : ℝ) ^ 6 + 2048 * (g : ℝ) ^ 3 * (log D + log M) := by
@@ -163,7 +170,9 @@ private lemma log_le_of_one_le (g : ℕ) (hg : 1 ≤ g) {D M : ℝ} (hD : 1 ≤ 
   nlinarith [mul_le_mul_of_nonneg_left hS hx3, mul_le_mul_of_nonneg_left hlogℓ hx3,
     mul_le_mul_of_nonneg_left hlogm hx3]
 
-/-- The height bound of the proof of Lemme 9.4: Raynaud's estimate and Lemme 8.5 give
+/-- The height bound of the proof of Lemme 9.4. Let $g \ge 1$ be a natural number, $D, M \ge 1$
+and $h$ real numbers, and let $Q = (9g)^{96 g^4} P(g, D, M)^{2^{10} g^3}$. If
+$M \le \max(h + (\log Q)/2, 1)$ (the bound that Raynaud's estimate gives), then Lemme 8.5 gives
 $M + \frac32 g \le 83 \cdot 2^{11} g^6 \max(h, \log D, 1)$. -/
 private lemma add_le_of_le_max (g : ℕ) (hg : 1 ≤ g) {D h M : ℝ} (hD : 1 ≤ D) (hM : 1 ≤ M)
     (hMQ : M ≤ max (h + log ((9 * g : ℝ) ^ (96 * g ^ 4) * boundP g D M ^ (2 ^ 10 * g ^ 3)) / 2)
@@ -216,7 +225,8 @@ private lemma add_le_of_le_max (g : ℕ) (hg : 1 ≤ g) {D h M : ℝ} (hD : 1 �
   · nlinarith [mul_le_mul_of_nonneg_left hY1 (by positivity : (0 : ℝ) ≤ x ^ 6)]
 
 /-- The comparison of constants at the end of the proof of Lemme 9.4, raised to the power
-$32$: $(9g)^{3g} \bigl(4 (9g)^{4g} (8g)^{64g^2} (83 \cdot 2^{11})^2 g^{12}\bigr)^{32} \le
+$32$: for a natural number $g \ge 1$,
+$(9g)^{3g} \bigl(4 (9g)^{4g} (8g)^{64g^2} (83 \cdot 2^{11})^2 g^{12}\bigr)^{32} \le
 (14g)^{2048 g^2}$. -/
 private lemma const_le (g : ℕ) (hg : 1 ≤ g) :
     (9 * g : ℝ) ^ (3 * g) *
@@ -254,6 +264,7 @@ private lemma const_le (g : ℕ) (hg : 1 ≤ g) :
 Lemme 9.4). Let $g \ge 1$ be a natural number and let $D \ge 1$, $h$ and $M \ge 1$ be real
 numbers. Put $P = P(g, D, M)$ (see `GaudronRemond.boundP`) and
 $Q = (9g)^{96 g^4} P^{2^{10} g^3}$, and suppose that $M \le \max(h + \frac12 \log Q, 1)$. Then
+
 $$Q \le \Bigl( (14 g)^{64 g^2} \, D \, \max(h, \log D, 1)^2 \Bigr)^{2^{10} g^3}.$$
 
 In the paper, $D = [k : \mathbb{Q}]$ is the degree of a number field $k$, $h = h_F(A)$ is the
