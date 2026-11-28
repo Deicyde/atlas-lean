@@ -8,6 +8,10 @@ Equivalently, Alice's exchange is an honest exchange between Alice and a party w
 
 Boneh and Shoup draw the consequence that the adversary, holding both keys, can decrypt each message that one party encrypts under its key and re-encrypt it under the other's: it reads all traffic between Alice and Bob, while neither of them can tell that it does not share its key with the other.
 
+## Comparison with the source
+
+Boneh and Shoup state the protocol and the attack for a generator $g$ of a cyclic group of prime order $q$, with exponents in $\mathbb{Z}/q$. In their attack the adversary takes part in two exchanges, one with Alice using $b'$ and one with Bob using $a'$, and within each both sides hold the same key: $g^{ab'}$ with Alice and $g^{a'b}$ with Bob. The statement above is the algebraic generalization of these two equalities to every commutative group $G$, every $g \in G$ and every natural number $q$, $q = 0$ included; the book is the source of the protocol, the attack and its interpretation.
+
 ## Sources
 
-- D. Boneh and V. Shoup, *A Graduate Course in Applied Cryptography*, version 0.4, 2017, <https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf>: Section 10.4.1 and Fig. 10.2 (the protocol), and Section 10.7, "Attacks on the anonymous Diffie–Hellman protocol", with Fig. 10.4 (the attack), pp. 402–403 and 412–413.
+- D. Boneh and V. Shoup, *A Graduate Course in Applied Cryptography*, version 0.4, September 2017, <https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf>: Section 10.4.1, "The key exchange protocol", steps 1–4, p. 402, and Fig. 10.2, p. 403 (the protocol and its outputs); Section 10.7, "Attacks on the anonymous Diffie–Hellman protocol", p. 412, and Fig. 10.4, p. 413 (the attack).
