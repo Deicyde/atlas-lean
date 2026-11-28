@@ -16,6 +16,7 @@ public import Mathlib.NumberTheory.LegendreSymbol.Basic
 public import MathlibExt.Analysis.SpecialFunctions.QPochhammer
 public import MathlibExt.NumberTheory.InitialRepetitionsC3
 public import MathlibExt.NumberTheory.InitialRepetitionsC8
+public import MathlibExt.NumberTheory.InitialRepetitionsC8FortyNineMulAddEven
 public import MathlibExt.NumberTheory.InitialRepetitionsC8Prime
 public import MathlibExt.NumberTheory.InitialRepetitionsQuadraticNonresidues
 public import MathlibExt.NumberTheory.SquaresModTwoPow
@@ -118,19 +119,6 @@ Theorem 6 (`integers-2025-A32-thm-6`). -/
 public theorem_wanted initialRepetitionsC3_eleven_mul_add_even (n : ℕ) :
     Even (initialRepetitionsC3 (11 * n + 5)) ∧ Even (initialRepetitionsC3 (11 * n + 7)) ∧
       Even (initialRepetitionsC3 (11 * n + 9))
-
-/-- **$c_8$ is even on six residue classes modulo $49$.** Let $c_8$ be the initial-repetitions
-partition function of Nyirenda and Mugwangwavari. For every integer $n \ge 0$ and every
-$r \in \{6, 20, 27, 34, 41, 48\}$, the number $c_8(49n + r)$ is even.
-
-This result is due to Nyirenda and Mugwangwavari.
-
-Source: John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and
-Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32,
-Theorem 9 (`integers-2025-A32-thm-9`). -/
-public theorem_wanted initialRepetitionsC8_fortyNine_mul_add_even (n r : ℕ)
-    (hr : r ∈ ({6, 20, 27, 34, 41, 48} : Finset ℕ)) :
-    Even (initialRepetitionsC8 (49 * n + r))
 
 /-- **Andrews' identity for the first Rogers–Ramanujan series.** Let $q$ be a complex number with
 $|q| < 1$, write $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ for $j \ge 0$, and let

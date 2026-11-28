@@ -207,20 +207,6 @@ public theorem_wanted lurothWellApproximableSet_rpow_eq_limsup (τ : ℝ) (hτ :
         x ∈ Set.Ioo (t.1 : ℝ) (t.1 + ((t.2.1 : ℝ) ^ (1 + τ))⁻¹) ∩
           Set.Ioc (t.1 : ℝ) (t.1 + (((t.2.2 : ℝ) - 1) * t.2.1)⁻¹)}.Infinite}
 
-/-- **Lüroth well approximable numbers as a limsup over convergent triples.** Let $\psi$ be a
-function from the natural numbers to $(0, 1]$ whose lower order at infinity $\tau_\psi$ is greater
-than $1$. Then the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers consists of the real
-numbers $x$ for which there are infinitely many triples $(c, Q, d)$ in the set $S$ of Lüroth
-convergent triples with $c < x < c + \psi(Q)/Q$.
-
-Source: Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric
-Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 7. -/
-public theorem_wanted lurothWellApproximableSet_eq_limsup (ψ : ℕ → ℝ)
-    (hψ0 : ∀ q, 0 < ψ q) (hψ1 : ∀ q, ψ q ≤ 1) (hτ : 1 < lowerOrderAtInfinity ψ) :
-    lurothWellApproximableSet ψ =
-      {x | {t ∈ lurothTripleSet |
-        x ∈ Set.Ioo (t.1 : ℝ) (t.1 + ψ t.2.1 / t.2.1)}.Infinite}
-
 /-- **Tan–Zhou theorem (Lüroth analogue of Khintchine's theorem).** Let $\psi$ be a non-increasing
 function from the natural numbers (including $0$) to $(0, 1]$ that is not identically $1$, that
 is, $\psi(q) < 1$ for some $q$, and let $L(\psi)$ be the set of Lüroth $\psi$-well approximable
