@@ -26,8 +26,9 @@ def IsSidon {α : Type*} [AddCommMonoid α] (A : Set α) : Prop :=
   ∀ a ∈ A, ∀ b ∈ A, ∀ c ∈ A, ∀ d ∈ A,
     a + b = c + d → (a = c ∧ b = d) ∨ (a = d ∧ b = c)
 
-/-- A set is Sidon exactly when any two equal sums of its elements have the same summands,
-up to swapping. Either sum may use the same element twice. -/
+/-- A subset of an additive commutative monoid is Sidon if and only if every equality
+`a + b = c + d` among its elements identifies the summands up to swapping. Repeated summands
+are allowed. -/
 theorem isSidon_iff {α : Type*} [AddCommMonoid α] {A : Set α} :
     A.IsSidon ↔ ∀ a ∈ A, ∀ b ∈ A, ∀ c ∈ A, ∀ d ∈ A,
       a + b = c + d → (a = c ∧ b = d) ∨ (a = d ∧ b = c) :=

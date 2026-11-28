@@ -254,8 +254,9 @@ private lemma exists_sidon_of_representation_bound {A : Finset ℕ} {k : ℕ}
 
 /-- **Quantitative Sidon subset bound.** If `k ≥ 1` and `A` is a nonempty finite set of
 natural numbers with at most `k` ordered representations of each sum, then `A` contains a
-Sidon subset of size at least `|A|^(2/3) / (8 * k)`. This is the sampling bound of Alon and Erdős
-(inequality (4)), with repeated summands included in the Sidon condition. -/
+Sidon subset of size at least `|A|^(2/3) / (8 * k)`. The proof adapts the sampling proof of Alon
+and Erdős's inequality (4) to obtain the explicit factor `1 / (8 * k)` with repeated summands
+included. The paper gives `c₄(k) * |A|^(2/3)` for the convention that uses distinct summands. -/
 public theorem exists_sidon_card_rpow {A : Finset ℕ} {k : ℕ} (hk : 1 ≤ k) (hA : 1 ≤ A.card)
     (hrep : ∀ m, orderedRepresentationCount (A : Set ℕ) m ≤ k) :
     ∃ S ⊆ A, (S : Set ℕ).IsSidon ∧ (A.card : ℝ) ^ ((2 : ℝ) / 3) / (8 * k) ≤ S.card := by
@@ -324,13 +325,16 @@ public theorem exists_sidon_card_rpow {A : Finset ℕ} {k : ℕ} (hk : 1 ≤ k) 
       _ = _ := by rw [hpow]
 
 /--
-Resolved true: the sampling argument of Alon and Erdős gives `H_k(n) ≫_k n^{2/3}`, so
-`H_k(n) / √n → ∞`; erdosproblems.com/772 lists the problem as proved. Source: T. F. Bloom,
-Erdős Problems, Problem #772, https://www.erdosproblems.com/772 (status PROVED); resolution:
-Noga Alon and P. Erdős, *An Application of Graph Theory to Additive Number Theory*, European
-Journal of Combinatorics 6 (1985), 201–203, Theorem 1 (inequality (4)). Their `B₂` sequences
-consider only sums of distinct terms. The same sampling argument gives the stated Sidon
-convention, by also discarding supports of collisions `a + a = b + c` with three distinct terms.
+For every fixed integer `k ≥ 1`, `H_k(n) / √n → ∞`.
+That is, for each real `C` and all sufficiently large `n`, every `n`-element set of natural
+numbers with at most `k` ordered representations of each sum contains a Sidon subset of size
+at least `C * √n`. This follows from the quantitative lower bound `n^(2/3) / (8 * k)`.
+
+Source: T. F. Bloom, Erdős Problems, Problem #772, https://www.erdosproblems.com/772 (status
+PROVED); resolution: Noga Alon and P. Erdős, *An Application of Graph Theory to Additive Number
+Theory*, European Journal of Combinatorics 6 (1985), 201–203, Theorem 1 (inequality (4)). Their
+`B₂` sequences consider only sums of distinct terms. The proof adapts their sampling argument
+by also discarding supports of collisions `a + a = b + c` with three distinct terms.
 -/
 public theorem sidonSubsetBeyondSqrt_holds : sidonSubsetBeyondSqrt := by
   intro k hk C
