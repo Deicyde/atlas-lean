@@ -27,7 +27,7 @@ example {Y N : Scheme} [IsIntegral Y] [IsIntegral N] (g : Y ⟶ N) [IsIntegralHo
     IsIso g :=
   isIso_of_isIntegralHom_of_isIso_stalkMap g hN hη inferInstance
 
-/-- In particular such a morphism is a homeomorphism on underlying spaces. -/
+/-- In particular `g` is bijective on points. -/
 example {Y N : Scheme} [IsIntegral Y] [IsIntegral N] (g : Y ⟶ N) [IsIntegralHom g]
     (hN : ∀ U : N.Opens, IsAffineOpen U → (U : Set N).Nonempty → IsIntegrallyClosed Γ(N, U))
     (hη : g (genericPoint Y) = genericPoint N) [IsIso (g.stalkMap (genericPoint Y))] :

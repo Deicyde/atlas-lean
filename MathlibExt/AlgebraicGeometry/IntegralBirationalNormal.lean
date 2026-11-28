@@ -21,18 +21,14 @@ public import Mathlib.RingTheory.LocalProperties.IntegrallyClosed
   sections over every nonempty affine open of `N` is integrally closed, then `g` is an isomorphism;
 * `AlgebraicGeometry.isIntegrallyClosed_of_isIntegrallyClosed_stalk`: for an integral scheme whose
   stalks are integrally closed, the ring of sections over every nonempty affine open is integrally
-  closed.
-
-The stalkwise notion of a normal scheme on `main`, `IsNormalScheme`, lives in a wanted module and
-cannot be imported here. For an integral scheme it implies the affine form used here, by
-`isIntegrallyClosed_of_isIntegrallyClosed_stalk`, and the theorem is stated with the affine form for
-that reason.
+  closed. So stalkwise normality implies the affine-section hypothesis of the theorem.
 
 Over an affine open `Spec A` of `N` with preimage `Spec B`, the map `A → B` is integral and
 injective, and `B` lies in the fraction field of `A`; since `A` is integrally closed, `A = B`.
 This is the step of B. Conrad's proof of Theorem 4.4 in *Semistable reduction for abelian
 varieties* (Stanford seminar notes, 2011, p. 13) in which a finite surjective map onto a normal
-scheme that is an isomorphism on generic fibres is an isomorphism.
+scheme that is an isomorphism on generic fibres is an isomorphism. The Stacks project, Tag 0AB1,
+states the result for integral birational morphisms onto normal schemes.
 -/
 
 @[expose] public section
@@ -43,9 +39,8 @@ universe u
 
 namespace AlgebraicGeometry
 
-/-- The ring of sections over a nonempty affine open of an integral scheme, with the germ at a
-point equal to the generic point, has that stalk as fraction field. -/
-lemma isFractionRing_germ_of_eq_genericPoint (N : Scheme.{u}) [IsIntegral N] {W : N.Opens}
+/-- Transport of `functionField_isFractionRing_of_isAffineOpen` along `x = genericPoint N`. -/
+private lemma isFractionRing_germ_of_eq_genericPoint (N : Scheme.{u}) [IsIntegral N] {W : N.Opens}
     (hW : IsAffineOpen W) [Nonempty W] (x : N) (hx : x = genericPoint N) (hxW : x ∈ W) :
     letI := (N.presheaf.germ W x hxW).hom.toAlgebra
     IsFractionRing Γ(N, W) (N.presheaf.stalk x) := by
@@ -75,9 +70,8 @@ theorem isIntegrallyClosed_of_isIntegrallyClosed_stalk {N : Scheme.{u}} [IsInteg
 `Y` to the generic point of `N` and induces an isomorphism of function fields, that is the stalk
 map of `g` at the generic point of `Y` is an isomorphism. If `N` is normal, in the form that
 `Γ(N, U)` is integrally closed for every nonempty affine open `U` of `N`, then `g` is an
-isomorphism. The stalkwise `IsNormalScheme` of `main` lives in a wanted module and cannot be
-imported; for integral schemes it implies this affine form, by
-`isIntegrallyClosed_of_isIntegrallyClosed_stalk`, which is why the affine form is used. -/
+isomorphism. Stalkwise normality implies this affine form for integral schemes, by
+`isIntegrallyClosed_of_isIntegrallyClosed_stalk`. -/
 theorem isIso_of_isIntegralHom_of_isIso_stalkMap {Y N : Scheme.{u}} [IsIntegral Y] [IsIntegral N]
     (g : Y ⟶ N) [IsIntegralHom g]
     (hN : ∀ U : N.Opens, IsAffineOpen U → (U : Set N).Nonempty → IsIntegrallyClosed Γ(N, U))
