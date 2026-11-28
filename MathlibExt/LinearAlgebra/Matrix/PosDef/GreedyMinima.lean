@@ -54,11 +54,10 @@ open scoped MatrixOrder in
 /-- A real positive definite matrix is `ᵗB B` for some invertible real matrix `B`. -/
 theorem PosDef.exists_eq_transpose_mul_self (hY : Y.PosDef) :
     ∃ B : Matrix (Fin g) (Fin g) ℝ, Y = Bᵀ * B ∧ B.det ≠ 0 := by
-  obtain ⟨B, hB⟩ := CStarAlgebra.nonneg_iff_eq_star_mul_self.mp hY.posSemidef.nonneg
-  have hBt : Y = Bᵀ * B := by
-    rw [hB, star_eq_conjTranspose, conjTranspose_eq_transpose_of_trivial]
-  refine ⟨B, hBt, fun h ↦ hY.det_pos.ne' ?_⟩
-  rw [hBt, det_mul, det_transpose, h, mul_zero]
+  obtain ⟨B, hBu, hB⟩ :=
+    CStarAlgebra.isStrictlyPositive_iff_eq_star_mul_self.mp hY.isStrictlyPositive
+  refine ⟨B, ?_, (isUnit_iff_isUnit_det B).mp hBu |>.ne_zero⟩
+  rw [hB, star_eq_conjTranspose, conjTranspose_eq_transpose_of_trivial]
 
 /-- The quadratic form of `ᵗB B` is `x ↦ |Bx|²`: `ᵗx (ᵗB B) x = (Bx) ⬝ (Bx)`. -/
 theorem dotProduct_transpose_mul_self_mulVec (B : Matrix (Fin g) (Fin g) ℝ) (x : Fin g → ℝ) :
@@ -144,14 +143,6 @@ theorem PosDef.exists_min_notMem (hY : Y.PosDef) {W : Submodule ℝ (Fin g → �
   · exact hymin z ⟨hzq, hz⟩
   · exact hyS.1.trans (le_of_not_ge hzq)
 
-/-- The span of fewer than `g` vectors is a proper subspace of `ℝ^g`. -/
-theorem span_range_ne_top_of_card_lt {ι : Type*} [Fintype ι] (hι : Fintype.card ι < g)
-    (f : ι → Fin g → ℝ) : Submodule.span ℝ (Set.range f) ≠ ⊤ := by
-  intro h
-  have := finrank_range_le_card (R := ℝ) f
-  rw [Set.finrank, h, finrank_top, finrank_fin_fun] at this
-  omega
-
 /-- **Greedy successive minima** of a positive definite form on `ℤ^g`. For a real
 `g × g` matrix `Y` with quadratic form `Q(x) = ᵗx Y x`, a family `v₁, …, v_g` of integral
 vectors, indexed by `Fin g` (so that `v k` is $v_{k+1}$), is *greedy* when, for every `k`,
@@ -183,8 +174,9 @@ outside the span of `hY.greedyMinVec i` for `i < k` (`Matrix.PosDef.isGreedyMini
 Source: O. Regev, *Lattices in computer science*, lecture notes, Tel Aviv University, Fall 2004,
 Lecture 1, §3, Definition 7, p. 5, and Claim 7, p. 6 (a greedy variant). -/
 noncomputable def greedyMinVec (hY : Y.PosDef) (k : Fin g) : Fin g → ℤ :=
-  Classical.choose <| hY.exists_min_notMem <| span_range_ne_top_of_card_lt
-    (by simp) fun i : Set.Iio k ↦ (Int.cast ∘ hY.greedyMinVec i : Fin g → ℝ)
+  Classical.choose <| hY.exists_min_notMem (W := Submodule.span ℝ (Set.range
+    fun i : Set.Iio k ↦ (Int.cast ∘ hY.greedyMinVec i : Fin g → ℝ)))
+    fun h ↦ absurd (finrank_le_of_span_eq_top h) (by simp)
 termination_by k.val
 decreasing_by all_goals exact Fin.lt_def.mp i.2
 
@@ -200,9 +192,10 @@ noncomputable def succMin (hY : Y.PosDef) (k : Fin g) : ℝ :=
 /-- The vectors `Matrix.PosDef.greedyMinVec` of a real positive definite matrix are greedy
 successive minima vectors (`Matrix.IsGreedyMinima`). -/
 theorem isGreedyMinima_greedyMinVec (hY : Y.PosDef) : IsGreedyMinima Y hY.greedyMinVec := by
-  have key : ∀ k, _ := fun k : Fin g ↦ Classical.choose_spec <| hY.exists_min_notMem <|
-    span_range_ne_top_of_card_lt (by simp) fun i : Set.Iio k ↦
-      (Int.cast ∘ hY.greedyMinVec i : Fin g → ℝ)
+  have key : ∀ k, _ := fun k : Fin g ↦ Classical.choose_spec <| hY.exists_min_notMem
+    (W := Submodule.span ℝ (Set.range fun i : Set.Iio k ↦
+      (Int.cast ∘ hY.greedyMinVec i : Fin g → ℝ)))
+    fun h ↦ absurd (finrank_le_of_span_eq_top h) (by simp)
   refine ⟨fun k ↦ ?_, fun k y hy ↦ ?_⟩
   · rw [greedyMinVec, Set.image_eq_range]
     exact (key k).1
@@ -280,9 +273,9 @@ theorem monotone (hv : IsGreedyMinima Y v) :
   hv.le_of_notMem_span i (v j) fun h ↦ hv.notMem_span j
     (Submodule.span_mono (Set.image_mono (Set.Iio_subset_Iio hij)) h)
 
-/-- Every integral vector `y` outside `span_ℝ(v₁, …, v_k)` has `λ_{k+1} ≤ Q(y)`. In the
-indexing by `Fin g`, `k` stands for `v_{k+1}`, so the span is over the `v i` with `i ≤ k`, and
-the bound is by `Q(v (k + 1))`, for `k + 1 < g`. -/
+/-- Let `v` be a greedy family for `Y` and write `λᵢ = Q(vᵢ)`. Every integral vector `y` outside
+`span_ℝ(v₁, …, v_k)` has `λ_{k+1} ≤ Q(y)`. In the indexing by `Fin g`, `k` stands for `v_{k+1}`,
+so the span is over the `v i` with `i ≤ k`, and the bound is by `Q(v (k + 1))`, for `k + 1 < g`. -/
 theorem le_of_notMem_span_Iic (hv : IsGreedyMinima Y v) (k : Fin g) (hk : k.val + 1 < g)
     (y : Fin g → ℤ) (hy : (Int.cast ∘ y : Fin g → ℝ) ∉
       Submodule.span ℝ ((fun i ↦ (Int.cast ∘ v i : Fin g → ℝ)) '' Set.Iic k)) :
@@ -294,8 +287,8 @@ theorem le_of_notMem_span_Iic (hv : IsGreedyMinima Y v) (k : Fin g) (hk : k.val 
   simp only [Set.mem_Iio, Set.mem_Iic, Fin.lt_def, Fin.le_def]
   omega
 
-/-- The first greedy successive minimum is at most the value of `Q` at every nonzero integral
-vector: `λ₁ ≤ Q(y)` for `y ∈ ℤ^g ∖ {0}`. -/
+/-- For `g ≥ 1`, the first greedy successive minimum is at most the value of `Q` at every nonzero
+integral vector: `λ₁ ≤ Q(y)` for `y ∈ ℤ^g ∖ {0}`. -/
 theorem le_of_ne_zero (hv : IsGreedyMinima Y v) (hg : 0 < g) {y : Fin g → ℤ} (hy : y ≠ 0) :
     (Int.cast ∘ v ⟨0, hg⟩ : Fin g → ℝ) ⬝ᵥ Y *ᵥ (Int.cast ∘ v ⟨0, hg⟩) ≤
       (Int.cast ∘ y : Fin g → ℝ) ⬝ᵥ Y *ᵥ (Int.cast ∘ y) := by
@@ -306,8 +299,8 @@ theorem le_of_ne_zero (hv : IsGreedyMinima Y v) (hg : 0 < g) {y : Fin g → ℤ}
   rw [this, Set.image_empty, Submodule.span_empty, Submodule.mem_bot]
   exact fun h ↦ hy (funext fun i ↦ by simpa using congrFun h i)
 
-/-- The first greedy successive minimum is the least value of `Q` on the nonzero integral
-vectors: `λ₁ = min {Q(y) : y ∈ ℤ^g, y ≠ 0}`.
+/-- For `g ≥ 1`, the first greedy successive minimum is the least value of `Q` on the nonzero
+integral vectors: `λ₁ = min {Q(y) : y ∈ ℤ^g, y ≠ 0}`.
 
 Source: O. Regev, *Lattices in computer science*, lecture notes, Tel Aviv University, Fall 2004,
 Lecture 1, §3, p. 5 (the first minimum `λ₁`). -/
@@ -318,9 +311,10 @@ theorem isLeast (hv : IsGreedyMinima Y v) (hg : 0 < g) :
   rintro _ ⟨y, hy, rfl⟩
   exact hv.le_of_ne_zero hg hy
 
-/-- Among the greedy successive minima vectors `v i` with `i ≤ k`, some `v i` has a nonzero
-coordinate `(v i)_j` with `k ≤ j`: the `k + 1` linearly independent vectors `v i`, `i ≤ k`, do not
-all lie in the `k`-dimensional subspace of the vectors whose coordinates of index `≥ k` vanish. -/
+/-- For every zero-based index `0 ≤ k < g`, among the greedy successive minima vectors `v i` with
+`i ≤ k`, some `v i` has a nonzero coordinate `(v i)_j` with `k ≤ j`: the `k + 1` linearly
+independent vectors `v i`, `i ≤ k`, do not all lie in the `k`-dimensional subspace of the vectors
+whose coordinates of index `≥ k` vanish. -/
 theorem exists_le_le_ne_zero (hv : IsGreedyMinima Y v) (k : Fin g) :
     ∃ i ≤ k, ∃ j, k ≤ j ∧ v i j ≠ 0 := by
   by_contra! h
