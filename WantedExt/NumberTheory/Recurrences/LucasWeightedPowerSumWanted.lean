@@ -31,33 +31,12 @@ public import Mathlib.Analysis.SpecialFunctions.Log.Base
 public import Mathlib.NumberTheory.Padics.PadicVal.Basic
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumAlphaBounds
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumExistsRemaindersWeightedPowerSum
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumLogBoundsNeg
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumParameterBound
 
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Logarithmic bounds for weighted Lucas power sums when $y < 0$.** Let $x \ge 1$ and $y < 0$
-be integers with $|y + 1| \le x$, let $(U_m)$ be the Lucas sequence with parameters $(x, y)$,
-given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$, and let
-$\alpha = (x + \sqrt{x^2 - 4y})/2$. Let $k$ be a natural number and $n$, $p$, $q$ positive
-integers with $\sum_{j=1}^k j U_j^p = U_n^q$. If $k \ge 2$, then
-$\log_\alpha k + p \log_\alpha x + (k - 2)p < (n - 1)q$. If $k \ge 3$, then
-$q \log_\alpha x + (n - 2)q < (k - 1)p + \log_\alpha k +
-\log_\alpha\bigl(1 + (x^2 - 2y)/(x^{p-1}(x^3 - x^2 - 2xy + y))\bigr)$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 2.4 (`fq-2024-earplynch07182024-lem-2.4`). -/
-public theorem_wanted weighted_power_sum_log_bounds_of_neg (P : LucasSequenceParams)
-    (hx : 1 ≤ P.p) (hyneg : P.q < 0) (hy : |P.q + 1| ≤ P.p) {n k p q : ℕ} (hn : 0 < n)
-    (hp : 0 < p) (hq : 0 < q)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    let α : ℝ := (P.p + Real.sqrt (P.p ^ 2 - 4 * P.q)) / 2
-    (2 ≤ k → Real.logb α k + p * Real.logb α P.p + ((k : ℝ) - 2) * p < ((n : ℝ) - 1) * q) ∧
-    (3 ≤ k → q * Real.logb α P.p + ((n : ℝ) - 2) * q <
-      ((k : ℝ) - 1) * p + Real.logb α k + Real.logb α (1 + ((P.p : ℝ) ^ 2 - 2 * P.q) /
-        ((P.p : ℝ) ^ (p - 1) * ((P.p : ℝ) ^ 3 - P.p ^ 2 - 2 * P.p * P.q + P.q))))
 
 /-- **Logarithmic bounds for weighted Lucas power sums when $y > 0$.** Let $x$ and $y > 0$ be
 integers with $|y + 1| \le x$ and $D = x^2 - 4y > 0$, let $(U_m)$ be the Lucas sequence with
