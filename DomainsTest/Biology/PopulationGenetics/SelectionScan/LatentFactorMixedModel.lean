@@ -21,7 +21,7 @@ open Domains.Biology.PopulationGenetics.LatentFactorMixedModel
 namespace DomainsTest.Biology.PopulationGenetics.SelectionScan.LatentFactorMixedModel
 
 /-- Non-vacuity: every matrix of primary variables with `d < n` has a singular value
-decomposition, so the ridge loss always has a minimizer over `rank W ≤ K`. -/
+decomposition, so for `λ > 0` the ridge loss always has a minimizer over `rank W ≤ K`. -/
 example {n p d : ℕ} (Y : Matrix (Fin n) (Fin p) ℝ) (X : Matrix (Fin n) (Fin d) ℝ)
     (hd : d < n) (K : ℕ) {lam : ℝ} (hlam : 0 < lam) :
     ∃ (W : Matrix (Fin n) (Fin p) ℝ) (B : Matrix (Fin p) (Fin d) ℝ), W.rank ≤ K ∧
@@ -37,7 +37,7 @@ example : shrinkage 2 1 ![(1 : ℝ)] = diagonal ![√(1 / 2), 1] := by
   ext i j
   fin_cases i <;> fin_cases j <;> norm_num [shrinkage, diagonal_apply]
 
-/-- The shrinkage entries lie in `(0, 1]`. -/
+/-- For `λ > 0` the diagonal entries of the shrinkage matrix lie in `(0, 1]`. -/
 example {n d : ℕ} {lam : ℝ} (hlam : 0 < lam) (σ : Fin d → ℝ) (i : Fin n) :
     0 < shrinkage n lam σ i i ∧ shrinkage n lam σ i i ≤ 1 := by
   rw [shrinkage, diagonal_apply_eq]
@@ -54,8 +54,9 @@ theorem latentEstimate_zero {n p d : ℕ} (Y : Matrix (Fin n) (Fin p) ℝ) (lam 
     (Q : Matrix (Fin n) (Fin n) ℝ) (σ : Fin d → ℝ) : latentEstimate Y lam Q σ 0 = 0 := by
   simp [latentEstimate, truncSVD]
 
-/-- At rank `K = 0`, ridge regression `B̂ᵀ = (XᵀX + λ I)⁻¹ Xᵀ Y` is the unique minimizer of
-`‖Y - X Bᵀ‖² + λ ‖B‖²`, with no condition on singular values. -/
+/-- At rank `K = 0`, for `λ > 0`, `d < n` and a singular value decomposition `X = Q Σ Rᵀ`, ridge
+regression `B̂ᵀ = (XᵀX + λ I)⁻¹ Xᵀ Y` is the unique minimizer of `‖Y - X Bᵀ‖² + λ ‖B‖²`, with no
+gap condition on singular values. -/
 example {n p d : ℕ} (Y : Matrix (Fin n) (Fin p) ℝ) (X : Matrix (Fin n) (Fin d) ℝ)
     (hd : d < n) {lam : ℝ} (hlam : 0 < lam)
     {Q : Matrix (Fin n) (Fin n) ℝ} {R : Matrix (Fin d) (Fin d) ℝ} {σ : Fin d → ℝ}

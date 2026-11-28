@@ -21,9 +21,9 @@ individuals, for association with `d` primary (environmental) variables. The lat
 model (LFMM) writes the `n × p` response matrix `Y` as `Y = X Bᵀ + W + E`, with the `n × d`
 matrix `X` of primary variables, effect sizes `B` (`p × d`), a latent confounder matrix `W` of
 rank at most `K` and residuals `E`. Caye, Jumentier, Lepeule and François (LFMM 2) estimate
-`(W, B)` by minimizing the ridge loss `‖Y - W - X Bᵀ‖² + λ ‖B‖²` (Frobenius norms) over
-`rank W ≤ K`, and give a minimizer in closed form: for a full singular value decomposition
-`X = Q Σ Rᵀ` with singular values `σ₁, …, σ_d` and
+`(W, B)`, for a ridge parameter `λ > 0`, by minimizing the ridge loss `‖Y - W - X Bᵀ‖² + λ ‖B‖²`
+(Frobenius norms) over `rank W ≤ K`, and give a minimizer in closed form: for `d < n`, a full
+singular value decomposition `X = Q Σ Rᵀ` with singular values `σ₁, …, σ_d` and
 `D_λ = diag(√(λ / (λ + σ₁²)), …, √(λ / (λ + σ_d²)), 1, …, 1)`, a minimizer is
 `Ŵ = Q D_λ⁻¹ svd_K(D_λ Qᵀ Y)`, `B̂ᵀ = (XᵀX + λ I)⁻¹ Xᵀ (Y - Ŵ)`. Here `svd_K` is the rank-`K`
 truncated singular value decomposition `Matrix.EckartYoungFrobenius.truncSVD`. The paper asserts
@@ -46,8 +46,8 @@ one.
 
 ## Main results
 
-* `ridge_estimates` : `(Ŵ, B̂)` minimizes the ridge loss over `rank W ≤ K`, and is the only
-  minimizer under the singular value gap.
+* `ridge_estimates` : for `λ > 0` and `d < n`, `(Ŵ, B̂)` minimizes the ridge loss over
+  `rank W ≤ K`, and is the only minimizer under the singular value gap.
 
 ## References
 
@@ -94,7 +94,8 @@ noncomputable def latentEstimate (Y : Matrix (Fin n) (Fin p) ℝ) (lam : ℝ)
 /-- The formula for the effect sizes given a latent matrix `W`: the `p × d` matrix `B̂` with
 `B̂ᵀ = (XᵀX + λ I)⁻¹ Xᵀ (Y - W)`, where `λ = lam` and the inverse is Mathlib's (`0` for a singular
 matrix), so that it is defined for every `lam`. For `lam > 0` it is the ridge regression of
-`Y - W` on `X`, and with `W = latentEstimate Y lam Q σ K` it completes the ridge estimates
+`Y - W` on `X`. When moreover `d < n` and `Q`, `σ` come from a singular value decomposition
+`X = Q Σ Rᵀ`, then with `W = latentEstimate Y lam Q σ K` it completes the ridge estimates
 (`ridge_estimates`). -/
 noncomputable def effectEstimate (Y : Matrix (Fin n) (Fin p) ℝ) (X : Matrix (Fin n) (Fin d) ℝ)
     (lam : ℝ) (W : Matrix (Fin n) (Fin p) ℝ) : Matrix (Fin p) (Fin d) ℝ :=
@@ -145,9 +146,10 @@ private theorem fip_add_add {a b : ℕ} (M N : Matrix (Fin a) (Fin b) ℝ) :
 
 /-! ### Ridge regression and the profile loss -/
 
-/-- Ridge regression with a profile: if `I - X (XᵀX + λ I)⁻¹ Xᵀ = Pᵀ P`, then the ridge loss of
-`(W, B)` is `‖P (Y - W)‖²` plus the excess `‖X E‖² + λ ‖E‖²` of `E = Bᵀ - B̂ᵀ` over the ridge
-solution `B̂ = effectEstimate Y X lam W`. -/
+/-- Ridge regression with a profile: if `XᵀX + λ I` is invertible (`hA`) and
+`I - X (XᵀX + λ I)⁻¹ Xᵀ = Pᵀ P` (`hP`), then the ridge loss of `(W, B)` is `‖P (Y - W)‖²` plus
+the excess `‖X E‖² + λ ‖E‖²` of `E = Bᵀ - B̂ᵀ` over the ridge solution
+`B̂ = effectEstimate Y X lam W`. -/
 private theorem ridgeLoss_eq (Y : Matrix (Fin n) (Fin p) ℝ) (X : Matrix (Fin n) (Fin d) ℝ)
     (lam : ℝ)
     (hA : (Xᵀ * X + lam • (1 : Matrix (Fin d) (Fin d) ℝ)) *

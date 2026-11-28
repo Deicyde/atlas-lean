@@ -224,7 +224,7 @@ private theorem spectral_energy {a b : ℕ} (A : Matrix (Fin a) (Fin b) ℝ)
     T.singularValues i ^ 2 * (inner ℝ (v i) x) ^ 2
   ring
 
-/-- For decreasing nonnegative `d` and weights `cᵢ ≤ 1` of total at least `b - k`,
+/-- For `k < b`, decreasing nonnegative `d` and weights `cᵢ ≤ 1` of total at least `b - k`,
 `∑_{i ≥ k} dᵢ + ∑_{i < k} (dᵢ - dₖ) cᵢ ≤ ∑ dᵢ cᵢ`. -/
 private theorem weighted_tail_gap_le {b : ℕ} (k : ℕ) (hk : k < b)
     (d c : Fin b → ℝ) (hd : Antitone d) (hd0 : ∀ i, 0 ≤ d i) (hc1 : ∀ i, c i ≤ 1)
