@@ -18,12 +18,13 @@ public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 /-!
 # The archimedean metric of a complex Weierstrass curve through a uniformization datum
 
-For a Weierstrass curve `W` over `ℂ`, the archimedean contribution to Silverman's formula for
-the height of an elliptic curve is the squared norm `(i/2) ∫_{E(ℂ)} α_W ∧ ᾱ_W` of the invariant
-differential `α_W = dx / (2y + a₁x + a₃)`. This file computes that quantity through a
-*uniformization datum*: a period pair `L` with lattice `Λ` together with a variable change `C`
-taking `W` to the curve `Y² = 4X³ - g₂(Λ)X - g₃(Λ)` of `Λ` (in Mathlib's form
-`y² = x³ - (g₂/4)x - g₃/4`, with `X = x`, `Y = 2y`). The squared norm is defined as
+For a Weierstrass curve `W` over `ℂ`, this file computes the squared norm
+`(i/2) ∫_{E(ℂ)} α_W ∧ ᾱ_W` of the invariant differential `α_W = dx / (2y + a₁x + a₃)`, the squared
+norm used in the archimedean contribution to Silverman's formula for the height of an elliptic
+curve. It computes that quantity through a *uniformization datum*: a period pair `L` with lattice
+`Λ` together with a variable change `C` taking `W` to the curve `Y² = 4X³ - g₂(Λ)X - g₃(Λ)` of `Λ`
+(in Mathlib's form `y² = x³ - (g₂/4)x - g₃/4`, with `X = x`, `Y = 2y`). The squared norm is defined
+as
 `‖u‖⁻² · covol(Λ)`, where `u` is the scaling factor of `C`; under the identifications given by the
 parametrization `z ↦ (℘(z), ℘'(z)/2)`, which pulls `dx/(2y)` back to `dz`, and the area
 `(i/2) ∫_{ℂ/Λ} dz ∧ dz̄ = covol(Λ)` of a fundamental parallelogram, this is the value of
@@ -42,11 +43,11 @@ parametrization `z ↦ (℘(z), ℘'(z)/2)`, which pulls `dx/(2y)` back to `dz`,
 
 * `PeriodPair.covolume_eq` (`covol(Λ) = |Im(conj ω₁ · ω₂)|`), `PeriodPair.covolume_pos`,
   `PeriodPair.covolume_ofTau`, `PeriodPair.covolume_eq_of_lattice_eq_smul` (`covol(cΛ) =
-  |c|² covol(Λ)`, for any period pairs with these lattices).
+  |c|² covol(Λ)` for `c ≠ 0`, for any period pairs with these lattices).
 * `PeriodPair.weierstrassCurve_Δ`, `PeriodPair.isElliptic_weierstrassCurve` (the curve of a
   lattice is elliptic, by `PeriodPair.discriminant_ne_zero`),
-  `PeriodPair.equation_weierstrassP_derivWeierstrassP` (the point `(℘(z), ℘'(z)/2)` lies on the
-  curve).
+  `PeriodPair.equation_weierstrassP_derivWeierstrassP` (for `z ∉ Λ`, the point
+  `(℘(z), ℘'(z)/2)` lies on the curve).
 * `PeriodPair.norm_discriminant_mul_covolume_pow_six_eq_of_lattice_eq_smul`:
   `‖Δ(Λ)‖ covol(Λ)⁶` is a homothety invariant.
 * `WeierstrassCurve.UniformizationDatum.Δ_ne_zero`: a curve with a uniformization datum has
@@ -56,7 +57,8 @@ parametrization `z ↦ (℘(z), ℘'(z)/2)`, which pulls `dx/(2y)` back to `dz`,
 * `WeierstrassCurve.UniformizationDatum.normSq_eq_of_lattice_eq_smul`: two data for `W` with
   homothetic lattices give the same value.
 * `WeierstrassCurve.UniformizationDatum.normSq_pow_six_of_isHomothetic_ofTau`: the value through
-  `τ` in the upper half-plane, `normSq⁶ = ‖Δ(τ)‖ (Im τ)⁶ / ‖Δ(W)‖`.
+  `τ` in the upper half-plane with `D.L` homothetic to `(1, τ)`,
+  `normSq⁶ = ‖Δ(τ)‖ (Im τ)⁶ / ‖Δ(W)‖`.
 * `WeierstrassCurve.UniformizationDatum.normSq_variableChange`: a datum for `W` gives one for
   `C' • W`, and `normSq` is multiplied by `‖u'‖²`.
 
