@@ -100,7 +100,8 @@ public theorem_wanted nLagrangeSpectrum_subset_nMarkoffSpectrum_attained (n : �
       ∀ α ∈ nLagrangeSpectrum n, ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧
         nMarkoffApproximability n ξ ξ' = α ∧
         ∃ s t : ℤ, (s, t) ≠ 0 ∧
-          (((Int.gcd t n : ℝ) * |ξ - ξ'| / (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
+          (((Int.gcd t n : ℝ) * |ξ - ξ'| /
+            (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
 
 /-- **Attained suprema in the $n$-Markoff spectrum.** Let $n \ge 1$, let $M_n$ be the $n$-Markoff
 spectrum, and let $\mu_n$ be the $n$-Markoff approximability. For every $\alpha \in M_n$ there are
@@ -116,7 +117,8 @@ public theorem_wanted nMarkoffSpectrum_attained (n : ℕ) (hn : 1 ≤ n) :
     ∀ α ∈ nMarkoffSpectrum n, ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧
       nMarkoffApproximability n ξ ξ' = α ∧
         ∃ s t : ℤ, (s, t) ≠ 0 ∧
-          (((Int.gcd t n : ℝ) * |ξ - ξ'| / (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
+          (((Int.gcd t n : ℝ) * |ξ - ξ'| /
+            (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
 
 /-- **The $n$-Markoff spectrum is closed.** For every integer $n \ge 1$, the $n$-Markoff spectrum
 $M_n$ is a closed subset of $\mathbb{R}$.
