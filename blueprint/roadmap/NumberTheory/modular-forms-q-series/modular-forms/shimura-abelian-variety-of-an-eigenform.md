@@ -4,7 +4,7 @@ Let $N$ be a positive integer and $\Gamma$ a group of level $N$, that is,
 $\Gamma_1(N) \subset \Gamma \subset \Gamma_0(N)$. Let $J$ be the Jacobian of the
 [modular curve $X_\Gamma$](modular-curve-of-a-group-of-level-n.md) over $\mathbb{Q}$, let
 $\xi_n \in \mathrm{End}(J)$ be the [Hecke endomorphisms](hecke-endomorphisms-of-the-modular-jacobian.md)
-and $T_n$ the [Hecke operators](hecke-operators-of-level-n.md) on the space $S_2(\Gamma)$ of
+and $T_n$ the [Hecke operators](hecke-operators-of-level-n-steps/hecke-operators-of-level-n.md) on the space $S_2(\Gamma)$ of
 [cusp forms](cusp-form.md) of weight $2$ for $\Gamma$. Let
 
 $$f(z) = \sum_{n = 1}^{\infty} a_n e^{2 \pi i n z}, \qquad a_1 = 1,$$
@@ -52,7 +52,7 @@ $\prod_\sigma \sum_n a_n^\sigma n^{-s}$ up to finitely many Euler factors; neith
 - [Modular curve of a group of level $N$ and its standard model over $\mathbb{Q}$](modular-curve-of-a-group-of-level-n.md)
 - [Jacobian of a smooth proper curve](../../../AlgebraicGeometry/algebraic-curves/jacobians-of-curves/jacobian.md), for $J$
 - [Hecke endomorphisms $\xi_n$ of the Jacobian of a modular curve](hecke-endomorphisms-of-the-modular-jacobian.md)
-- [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](hecke-operators-of-level-n.md)
+- [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](hecke-operators-of-level-n-steps/hecke-operators-of-level-n.md)
 - [Cusp form](cusp-form.md), for $S_2(\Gamma)$
 - [Congruence subgroup $\Gamma_0(N)$](congruence-subgroup-gamma0.md)
 - [Congruence subgroup $\Gamma_1(N)$](congruence-subgroup-gamma1.md)

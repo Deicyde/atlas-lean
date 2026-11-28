@@ -36,7 +36,7 @@ Modular and cusp forms, congruence subgroups, cusps, Eisenstein series congruenc
 - [Congruence subgroup $\Gamma_1(N)$](congruence-subgroup-gamma1.md)
 - [Cusp form](cusp-form.md)
 - [Modular curve of a group of level $N$ and its standard model over $\mathbb{Q}$](modular-curve-of-a-group-of-level-n.md)
-- [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](hecke-operators-of-level-n.md)
+- [Hecke operators on weight-two cusp forms of level $N$](hecke-operators-of-level-n-steps/README.md)
 - [Hecke endomorphisms $\xi_n$ of the Jacobian of a modular curve](hecke-endomorphisms-of-the-modular-jacobian.md)
 - [Shimura's abelian variety attached to a weight-two eigenform](shimura-abelian-variety-of-an-eigenform.md)
 - [Modular parametrization of an elliptic curve over $\mathbb{Q}$](modular-parametrization-of-an-elliptic-curve.md)

@@ -26,7 +26,7 @@ For a positive integer $n$, let $q$ be the largest divisor of $n$ prime to $N$ a
 $$\xi_n = \xi_m \xi_q, \qquad \xi_m = \{\Gamma \alpha \Gamma\} \text{ with } \alpha = \begin{pmatrix} 1 & 0 \\ 0 & m \end{pmatrix}, \qquad \xi_q = \sum_\beta \{\Gamma \beta \Gamma\},$$
 
 the last sum over the same double cosets $\Gamma \beta \Gamma$ as in the definition of the
-[Hecke operators $T_n$](hecke-operators-of-level-n.md): $\beta \in M_2(\mathbb{Z})$ with $\det \beta = q$ and
+[Hecke operators $T_n$](hecke-operators-of-level-n-steps/hecke-operators-of-level-n.md): $\beta \in M_2(\mathbb{Z})$ with $\det \beta = q$ and
 $\beta \equiv \begin{pmatrix} 1 & 0 \\ 0 & q \end{pmatrix} \pmod N$. The $\xi_n$ are endomorphisms of
 the abelian variety $J$ over $\mathbb{Q}$, that is, they are defined over $\mathbb{Q}$, and $\xi_1$ is the
 identity.
@@ -38,7 +38,7 @@ identity.
 - [Jacobian of a compact Riemann surface](../../../AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/jacobian.md), for $J(\mathbb{C})$
 - [Pullback on Jacobians](../../../AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/pullback.md)
 - [Pushforward on Jacobians](../../../AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/pushforward.md)
-- [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](hecke-operators-of-level-n.md), for the double cosets $\Gamma \beta \Gamma$
+- [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](hecke-operators-of-level-n-steps/hecke-operators-of-level-n.md), for the double cosets $\Gamma \beta \Gamma$
 - [Homomorphisms of abelian schemes and commutativity](../../../AlgebraicGeometry/abelian-varieties/homomorphisms-of-abelian-schemes.md), for endomorphisms of $J$
 
 ## Proof depends on
