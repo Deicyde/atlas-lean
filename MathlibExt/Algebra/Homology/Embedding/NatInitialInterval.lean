@@ -16,8 +16,8 @@ public import MathlibExt.Algebra.Homology.Embedding.StupidTruncNested
 # Finite initial cochain intervals
 
 The cochain shape on `Fin (q+1)` and its inclusion into the natural cochain shape
-are obtained by reversing the canonical chain initial segment. Its range is
-`{0,…,q}`, and the ranges increase with the endpoint.
+are obtained by reversing the canonical chain initial segment. This file supplies
+relation-reflection and incoming-closure instances for that dual embedding.
 -/
 
 @[expose] public section

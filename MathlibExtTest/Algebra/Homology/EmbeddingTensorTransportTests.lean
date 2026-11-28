@@ -35,7 +35,7 @@ cycle in degree zero through the pointwise homology comparison.
 noncomputable section
 
 open CategoryTheory CategoryTheory.Limits HomologicalComplex
-open scoped TensorProduct
+open scoped TensorProduct ZeroObject
 
 namespace MathlibExtTest.EmbeddingTensorTransport
 
@@ -156,11 +156,11 @@ example {R : Type uR} [CommRing R]
       (CochainComplex.ModuleTensor.mapAt R f' g') :=
   CochainComplex.ModuleTensor.mapAtHomotopy R hf hg
 
--- Only the original complex's homology in degree one is assumed in this generic client.
+-- The only homology hypothesis is at the unshifted degree (0 : ℤ) + 1.
 example {C : Type uC} [Category.{vC} C] [Preadditive C]
-    (T : CochainComplex C ℤ) [T.HasHomology (1 : ℤ)] :
+    (T : CochainComplex C ℤ) [T.HasHomology ((0 : ℤ) + 1)] :
     letI := CochainComplex.hasHomology_shift T (1 : ℤ) (0 : ℤ)
-    (CochainComplex.shiftCyclesIso T (1 : ℤ) (0 : ℤ)).hom ≫ T.iCycles (1 : ℤ) =
+    (CochainComplex.shiftCyclesIso T (1 : ℤ) (0 : ℤ)).hom ≫ T.iCycles ((0 : ℤ) + 1) =
       (T⟦(1 : ℤ)⟧).iCycles (0 : ℤ) := by
   letI := CochainComplex.hasHomology_shift T (1 : ℤ) (0 : ℤ)
   exact CochainComplex.shiftCyclesIso_hom_iCycles T (1 : ℤ) (0 : ℤ)
@@ -171,15 +171,17 @@ private abbrev pointwiseIntegerComplex : CochainComplex (ModuleCat.{0} ℤ) ℤ 
 
 example : IsZero (pointwiseIntegerComplex.X (0 : ℤ)) := by
   change IsZero (0 : ModuleCat.{0} ℤ)
-  infer_instance
+  exact isZero_zero _
 
-private def cycleInDegreeOne : Z ⟶ pointwiseIntegerComplex.cycles (1 : ℤ) :=
-  pointwiseIntegerComplex.liftCycles (𝟙 Z) (2 : ℤ) rfl
-    (by simp [pointwiseIntegerComplex, CochainComplex.of.d])
+private def cycleInDegreeOne : Z ⟶ pointwiseIntegerComplex.cycles ((0 : ℤ) + 1) := by
+  have h : Z ⟶ pointwiseIntegerComplex.cycles (1 : ℤ) :=
+    pointwiseIntegerComplex.liftCycles (𝟙 Z) (2 : ℤ) (by simp)
+      (by simp [pointwiseIntegerComplex, CochainComplex.of.d])
+  simpa only [zero_add] using h
 
 private lemma cycleInDegreeOne_projection :
-    cycleInDegreeOne ≫ pointwiseIntegerComplex.iCycles (1 : ℤ) = 𝟙 Z := by
-  simp only [cycleInDegreeOne, HomologicalComplex.liftCycles_i]
+    cycleInDegreeOne ≫ pointwiseIntegerComplex.iCycles ((0 : ℤ) + 1) = 𝟙 Z := by
+  simp only [cycleInDegreeOne, zero_add, HomologicalComplex.liftCycles_i]
 
 private def shiftedDegreeZeroCycle :
     letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
