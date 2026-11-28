@@ -55,9 +55,10 @@ This node is still to be broken down. A good expansion states and links:
 ## Sources
 
 - J. S. Milne, *Lectures on Étale Cohomology*, course notes, version 2.21 (2013), <https://www.jmilne.org/math/CourseNotes/LEC.pdf>: §3, the definition of $\pi_1(X, \bar x)$ as $\varprojlim_i \operatorname{Aut}_X(X_i)$ and Theorem 3.1, p. 27; §11, its opening
-  paragraph, p. 76, Proposition 11.1, p. 77, and Example 11.3, p. 78 (for a connected $X$ and a finite
-  group $G$, a canonical isomorphism
-  $H^1(X_{\mathrm{et}}, G) \cong \operatorname{Hom}_{\mathrm{conts}}(\pi_1(X, \bar x), G)$).
+  paragraph, p. 76, Proposition 11.1, p. 77, and Example 11.3, p. 78 (for a connected $X$, a
+  canonical isomorphism
+  $H^1(X_{\mathrm{et}}, G) \cong \operatorname{Hom}_{\mathrm{conts}}(\pi_1(X, \bar x), G)$, used here
+  for a finite abelian group $G$).
 - The Stacks Project, Section 58.6 (Tag 0BQ8), <https://stacks.math.columbia.edu/tag/0BQ8>:
   Definition 58.6.1 (Tag 0BNC), $\pi_1(X, \bar x) = \operatorname{Aut}(F_{\bar x})$ for a connected
   scheme $X$, with the profinite topology of Lemma 58.3.1 (Tag 0BMR), and Theorem 58.6.2 (Tag 0BND),

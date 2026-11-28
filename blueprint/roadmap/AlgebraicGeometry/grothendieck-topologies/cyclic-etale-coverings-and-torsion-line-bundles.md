@@ -8,10 +8,13 @@ $\operatorname{Pic}(V)_n$ for the subgroup of elements of $\operatorname{Pic}(V)
 
 1. (Coverings.) There is a bijection
    $\operatorname{Hom}_{\mathrm{cont}}(\pi_1(V, P), \mathbb{Z}/n\mathbb{Z}) \cong \operatorname{Pic}(V)_n$,
-   which Milne writes as an isomorphism. A divisor $D$ with $nD = \operatorname{div}(g)$, where
-   $g \in k(V)^\times$, corresponds to the normalization of $V$ in the Kummer extension
-   $k(V)(g^{1/n})$, which is étale over $V$; every Galois covering of $V$ with group
-   $\mathbb{Z}/n\mathbb{Z}$ is obtained in this way.
+   which Milne writes as an isomorphism. Let $D$ be a divisor whose class in
+   $\operatorname{Pic}(V)$ has exact order $n$, and $nD = \operatorname{div}(g)$ with
+   $g \in k(V)^\times$. Then the Kummer extension $k(V)(g^{1/n})$ has degree $n$ over $k(V)$, and
+   the class of $D$ corresponds to the normalization of $V$ in it, which is étale over $V$; every
+   connected Galois covering of $V$ with group $\mathbb{Z}/n\mathbb{Z}$ is obtained in this way. A
+   class of smaller order corresponds to a covering that is not connected, such as the trivial
+   covering, $n$ disjoint copies of $V$, for the class $0$.
 2. (Cohomological form.) The Kummer sequence $0 \to \mu_n \to \mathbb{G}_m \to \mathbb{G}_m \to 0$,
    with $t \mapsto t^n$ on the right, is exact on $V_{\mathrm{et}}$. With
    $H^1(V_{\mathrm{et}}, \mathbb{G}_m) = \operatorname{Pic}(V)$ and
@@ -38,8 +41,14 @@ This node is still to be broken down. A good expansion states and links:
   closed field $k$ (the Stacks Project, Lemma 33.9.3: $H^0(V, \mathcal{O}_V)$ is a finite separable
   field extension of $k$, as $V$ is proper, connected and geometrically reduced, a variety in
   Milne's sense being geometrically reduced), and the $n$-divisibility of $k^\times$;
-- for the proof of 1 through coverings, Kummer theory for $k(V)$ and the purity theorem that Milne
-  cites (Grothendieck, SGA 1, X 3.1), by which the normalization of $V$ in $k(V)(g^{1/n})$ is étale.
+- for the proof of 1 through coverings: Kummer theory for $k(V)$, which contains the $n$-th roots
+  of $1$, by which $k(V)(g^{1/n})$ has degree $n$ over $k(V)$ exactly when the class of $D$ has
+  exact order $n$ (the degree is the order of $g$ modulo $n$-th powers, which is that of the class
+  of $D$, as the group of divisors is torsion-free and $k^\times$, the group of units of $V$, is
+  $n$-divisible); the purity theorem that Milne cites (Grothendieck, SGA 1, X 3.1), by which the
+  normalization of $V$ in $k(V)(g^{1/n})$ is étale; and, for a class of smaller order $m$, its
+  covering, $n/m$ disjoint copies of the connected covering of degree $m$ that the same
+  construction attaches to the class with $m$ in place of $n$.
 
 ## Depends on
 
@@ -52,12 +61,13 @@ This node is still to be broken down. A good expansion states and links:
 
 - [The étale fundamental group and first étale cohomology with finite coefficients](etale-fundamental-group-and-first-cohomology.md),
   for the classification of the Galois coverings of $V$ with group $\mathbb{Z}/n\mathbb{Z}$ by the
-  continuous homomorphisms $\pi_1(V, P) \to \mathbb{Z}/n\mathbb{Z}$ (its items 1 and 2), in the proof
-  of 1 and in passing between the two forms
+  continuous homomorphisms $\pi_1(V, P) \to \mathbb{Z}/n\mathbb{Z}$ (its items 1 and 2), the
+  connected ones corresponding to the surjective homomorphisms (its item 1), in the proof of 1 and
+  in passing between the two forms
 
 ## Sources
 
-- J. S. Milne, *Abelian Varieties*, course notes, version 2.00 (2008), <https://www.jmilne.org/math/CourseNotes/AV.pdf>: Chapter III, Lemma 9.2 and its proof, p. 114; for a proof through étale cohomology Milne
+- J. S. Milne, *Abelian Varieties*, course notes, version 2.00 (2008), <https://www.jmilne.org/math/CourseNotes/AV.pdf>: Chapter III, §9, its first paragraph, p. 113 (a Galois covering with group $G$ is a finite étale map $W \to V$ with a free action of $G$ on $W$ over $V$ whose quotient is $V$, connected or not); Lemma 9.2 and its proof, p. 114, whose construction through $k(V)(g^{1/n})$ gives the connected coverings; for a proof through étale cohomology Milne
   refers to his *Étale Cohomology*, III 4.11.
 - J. S. Milne, *Lectures on Étale Cohomology*, course notes, version 2.21 (2013), <https://www.jmilne.org/math/CourseNotes/LEC.pdf>: Example 7.9 (the Kummer sequence), p. 53; Corollary 11.6, p. 80; the proof of
   Proposition 14.2, p. 90, which applies the Kummer sequence in the same way to curves over an
