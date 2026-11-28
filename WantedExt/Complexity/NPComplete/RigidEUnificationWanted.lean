@@ -74,9 +74,9 @@ reduction from every language in `NP`
 
 /-- An instance: a list `ar` of natural arities, a number `|V|`, a list of pairs of raw token
 lists (read as the equations of `E`; a list of pairs, not a set) and two raw token lists, read
-as the terms `s` and `t`. A token list may be empty or fail to parse; which term or equation
-it represents is defined only when parsing succeeds. Successful parsing and the symbol and
-variable bounds belong to `WellFormed`. -/
+as the terms `s` and `t`. A token list may be empty or fail to parse. Each token list
+represents a term only if it parses, and a pair of lists represents an equation only if both
+sides parse. Successful parsing and the symbol and variable bounds belong to `WellFormed`. -/
 abbrev RigidEUnificationInstance :=
   List ℕ × ℕ × List (List (ℕ × ℕ) × List (ℕ × ℕ)) × List (ℕ × ℕ) × List (ℕ × ℕ)
 

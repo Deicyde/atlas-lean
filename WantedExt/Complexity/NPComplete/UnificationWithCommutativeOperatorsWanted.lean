@@ -88,9 +88,10 @@ def tokens {k : ℕ} : Term (Fin k) → List (ℕ × ℕ)
 
 /-- An instance: numbers `|V|` and `|C|` and a list of pairs of raw token lists, read as the
 prefix encodings of the expression pairs `(eᵢ, fᵢ)` over the variables `0, ..., |V| - 1` and
-the constants `Fin |C|`. A token list may be empty or fail to parse; which expression pair it
-represents is defined only when parsing succeeds. Successful parsing and the variable and
-constant bounds belong to `WellFormed`. -/
+the constants `Fin |C|`. A token list may be empty or fail to parse. Each token list represents
+an expression only if it parses, and a pair of lists represents an expression pair only if
+both sides parse. Successful parsing and the variable and constant bounds belong to
+`WellFormed`. -/
 abbrev UnificationWithCommutativeOperatorsInstance :=
   ℕ × ℕ × List (List (ℕ × ℕ) × List (ℕ × ℕ))
 

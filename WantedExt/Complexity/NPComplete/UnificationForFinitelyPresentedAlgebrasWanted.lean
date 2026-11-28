@@ -94,9 +94,9 @@ def Congruent {ar : List ℕ} (Γ : List ((lang ar).Term Empty × (lang ar).Term
 /-- An instance: a number `|G|` of generators, a list of natural arities of the operators in
 `O`, a list of pairs of raw token lists (read as the defining relations `Γ`), a number `|V|`,
 and two raw token lists, read as the terms `x` and `y`. A token list may be empty or fail to
-parse; which term or relation it represents is defined only when parsing succeeds. Successful
-parsing, closed defining relations, and the generator, operator and variable bounds belong to
-`WellFormed`. -/
+parse. Each token list represents a term only if it parses, and a pair of lists represents a
+relation only if both sides parse. Successful parsing, closed defining relations, and the
+generator, operator and variable bounds belong to `WellFormed`. -/
 abbrev UnificationForFinitelyPresentedAlgebrasInstance :=
   ℕ × List ℕ × List (List (ℕ × ℕ) × List (ℕ × ℕ)) × ℕ × List (ℕ × ℕ) × List (ℕ × ℕ)
 
