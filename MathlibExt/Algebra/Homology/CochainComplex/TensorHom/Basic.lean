@@ -40,10 +40,10 @@ universe u v w
 variable (R : Type u) [CommRing R]
 
 /--
-Let R be a commutative ring and P,Q integer cochain complexes of R-modules, whose carriers may
-belong to independent universes. The family Pᵖ ⊗_R Qᑫ admits the coproducts and compatible
-differential maps needed for totalization over p+q=n, with the cochain tensor sign (−1)ᵖ in
-the second factor.
+Let R be a commutative ring and P,Q integer cochain complexes of R-modules with independent
+carrier universes. For every integer n, the coproduct ⊕_{p+q=n} Pᵖ ⊗_R Qᑫ exists. These
+coproducts supply the HasMapBifunctor condition for full tensor totalization. The signed
+differential formula is established separately in d_mkAt.
 -/
 local instance tensorHasMapBifunctorAt (P : CochainComplex (ModuleCat.{v} R) ℤ)
     (Q : CochainComplex (ModuleCat.{w} R) ℤ) :
@@ -135,8 +135,9 @@ theorem mapAt_mk {P P' : CochainComplex (ModuleCat.{v} R) ℤ}
   rw [ht] at hv
   exact hv
 
-/-- Simultaneous tensor maps are the composite of the separate first and second maps,
-for independently indexed coefficient universes. This is the native bifunctor composition law. -/
+/-- Let R be a commutative ring, and let f : P → P' and g : Q → Q' be maps of integer cochain
+complexes of R-modules. The first-factor tensor map followed by the second-factor map equals
+the simultaneous map: (f ⊗ 1) ≫ (1 ⊗ g) = f ⊗ g. The two carrier universes may differ. -/
 theorem mapAt_precomp_postcomp
     {P P' : CochainComplex (ModuleCat.{v} R) ℤ}
     {Q Q' : CochainComplex (ModuleCat.{w} R) ℤ}

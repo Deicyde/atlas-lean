@@ -40,15 +40,4 @@ instance upEmbedding_isTruncLE (q : ℕ) : (upEmbedding q).IsTruncLE where
     change i + 1 = j.val at h
     exact ⟨⟨i, by omega⟩, rfl⟩
 
-/-- The range of the finite cochain inclusion is exactly the degrees at most `q`. -/
-theorem upEmbedding_range (q i : ℕ) :
-    i ∈ Set.range (upEmbedding q).f ↔ i ≤ q :=
-  ComplexShape.mem_range_embeddingDownNatInitialSegment_iff q i
-
-/-- Inclusion of the initial interval with endpoint `p` into the range with endpoint `q`. -/
-theorem upRangeLE {p q : ℕ} (h : p ≤ q) :
-    (upEmbedding p).RangeLE (upEmbedding q) := by
-  intro i hi
-  exact (upEmbedding_range q i).2 ((upEmbedding_range p i).1 hi |>.trans h)
-
 end ComplexShape.NatInitialInterval

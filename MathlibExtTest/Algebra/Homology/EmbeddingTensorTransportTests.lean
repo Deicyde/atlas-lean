@@ -11,6 +11,8 @@ import MathlibExt.Algebra.Homology.Embedding.NatInitialInterval
 import MathlibExt.Algebra.Homology.Embedding.PositiveNatHomology
 import MathlibExt.Algebra.Homology.Embedding.PositiveTruncation
 import MathlibExt.Algebra.Homology.CochainComplex.TensorHom.Homotopy
+import MathlibExt.Algebra.Homology.CochainComplex.ShiftHomologyPointwise
+import MathlibExt.Algebra.Homology.PartialTotalNested
 import MathlibExt.Algebra.Homology.CochainShortComplexFlip
 import Mathlib.Algebra.Homology.Additive
 import Mathlib.Algebra.Homology.HomologicalComplexAbelian
@@ -25,7 +27,9 @@ The canonical positive embedding and dual finite intervals synthesize their
 relation/truncation instances. Positive truncations act on a nonzero torsion
 coefficient complex with vanishing endpoint differential. An integer cochain
 example with nonzero differential checks the odd tensor sign, and transposition
-recovers the coordinates of a short complex of integer cochains.
+recovers the coordinates of a short complex of integer cochains. Public tensor homotopies
+work across independent carrier universes; a degree-one integer complex has a nonzero shifted
+cycle in degree zero through the pointwise homology comparison.
 -/
 
 noncomputable section
@@ -41,7 +45,12 @@ example (q : ℕ) : (ComplexShape.NatInitialInterval.upEmbedding q).IsRelIff := 
 example (q : ℕ) : (ComplexShape.NatInitialInterval.upEmbedding q).IsTruncLE := inferInstance
 
 example : 4 ∈ Set.range (ComplexShape.NatInitialInterval.upEmbedding 4).f :=
-  (ComplexShape.NatInitialInterval.upEmbedding_range 4 4).2 le_rfl
+  (ComplexShape.mem_range_embeddingDownNatInitialSegment_iff 4 4).2 le_rfl
+
+example (p q : ℕ) (h : p ≤ q) :
+    (ComplexShape.NatInitialInterval.upEmbedding p).RangeLE
+      (ComplexShape.NatInitialInterval.upEmbedding q) :=
+  ComplexShape.embeddingDownNatInitialSegment_rangeLE h
 
 private abbrev M : ModuleCat.{0} ℤ := ModuleCat.of ℤ (ZMod 6)
 private abbrev K : ChainComplex (ModuleCat.{0} ℤ) ℕ :=
@@ -135,5 +144,69 @@ example {C : Type*} [Category C] [HasZeroMorphisms C] {I : Type*} {c : ComplexSh
     (T : ShortComplex (HomologicalComplex C c)) :
     ((ShortComplex.π₃ : ShortComplex C ⥤ C).mapHomologicalComplex c).obj T.flip = T.X₃ :=
   T.flip_π₃
+
+-- The importing client does not install the tensor implementation's local instances.
+universe uR uP uQ uC vC
+
+example {R : Type uR} [CommRing R]
+    {P P' : CochainComplex (ModuleCat.{uP} R) ℤ} {f f' : P ⟶ P'}
+    {Q Q' : CochainComplex (ModuleCat.{uQ} R) ℤ} {g g' : Q ⟶ Q'}
+    (hf : _root_.Homotopy f f') (hg : _root_.Homotopy g g') :
+    _root_.Homotopy (CochainComplex.ModuleTensor.mapAt R f g)
+      (CochainComplex.ModuleTensor.mapAt R f' g') :=
+  CochainComplex.ModuleTensor.mapAtHomotopy R hf hg
+
+-- Only the original complex's homology in degree one is assumed in this generic client.
+example {C : Type uC} [Category.{vC} C] [Preadditive C]
+    (T : CochainComplex C ℤ) [T.HasHomology (1 : ℤ)] :
+    letI := CochainComplex.hasHomology_shift T (1 : ℤ) (0 : ℤ)
+    (CochainComplex.shiftCyclesIso T (1 : ℤ) (0 : ℤ)).hom ≫ T.iCycles (1 : ℤ) =
+      (T⟦(1 : ℤ)⟧).iCycles (0 : ℤ) := by
+  letI := CochainComplex.hasHomology_shift T (1 : ℤ) (0 : ℤ)
+  exact CochainComplex.shiftCyclesIso_hom_iCycles T (1 : ℤ) (0 : ℤ)
+
+private abbrev pointwiseIntegerComplex : CochainComplex (ModuleCat.{0} ℤ) ℤ :=
+  CochainComplex.of (fun i => if i = (1 : ℤ) then Z else 0)
+    (fun _ => 0) (by intro n; simp)
+
+example : IsZero (pointwiseIntegerComplex.X (0 : ℤ)) := by
+  change IsZero (0 : ModuleCat.{0} ℤ)
+  infer_instance
+
+private def cycleInDegreeOne : Z ⟶ pointwiseIntegerComplex.cycles (1 : ℤ) :=
+  pointwiseIntegerComplex.liftCycles (𝟙 Z) (2 : ℤ) rfl
+    (by simp [pointwiseIntegerComplex, CochainComplex.of.d])
+
+private lemma cycleInDegreeOne_projection :
+    cycleInDegreeOne ≫ pointwiseIntegerComplex.iCycles (1 : ℤ) = 𝟙 Z := by
+  simp only [cycleInDegreeOne, HomologicalComplex.liftCycles_i]
+
+private def shiftedDegreeZeroCycle :
+    letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+    Z ⟶ (pointwiseIntegerComplex⟦(1 : ℤ)⟧).cycles (0 : ℤ) := by
+  letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+  exact cycleInDegreeOne ≫
+    (CochainComplex.shiftCyclesIso pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)).inv
+
+private lemma shiftedDegreeZeroCycle_projection :
+    letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+    shiftedDegreeZeroCycle ≫
+      (pointwiseIntegerComplex⟦(1 : ℤ)⟧).iCycles (0 : ℤ) = 𝟙 Z := by
+  letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+  change cycleInDegreeOne ≫
+    (CochainComplex.shiftCyclesIso pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)).inv ≫
+      (pointwiseIntegerComplex⟦(1 : ℤ)⟧).iCycles (0 : ℤ) = 𝟙 Z
+  rw [CochainComplex.shiftCyclesIso_inv_iCycles, cycleInDegreeOne_projection]
+
+example :
+    letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+    shiftedDegreeZeroCycle ≠ 0 := by
+  letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
+  intro hZero
+  have h := shiftedDegreeZeroCycle_projection
+  rw [hZero, zero_comp] at h
+  have hValue := congrArg (fun f : Z ⟶ Z => f.hom (3 : ℤ)) h
+  change (0 : ℤ) = 3 at hValue
+  exact (by decide : (0 : ℤ) ≠ 3) hValue
 
 end MathlibExtTest.EmbeddingTensorTransport

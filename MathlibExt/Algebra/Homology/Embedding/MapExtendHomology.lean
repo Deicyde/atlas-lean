@@ -40,27 +40,6 @@ variable {C : Type v} [Category C] [HasZeroMorphisms C] [HasZeroObject C]
 variable {D : Type v'} [Category D] [HasZeroMorphisms D] [HasZeroObject D]
   [CategoryWithHomology D]
 
-omit [HasZeroObject C] [CategoryWithHomology C]
-  [HasZeroObject D] [CategoryWithHomology D] in
-set_option backward.isDefEq.respectTransparency.types false in
-set_option backward.isDefEq.respectTransparency false in
-@[reassoc]
-private theorem mapHomologyIso_homologyπ
-    (F : C ⥤ D) [F.PreservesZeroMorphisms]
-    (S : ShortComplex C) [S.HasHomology] [(S.map F).HasHomology]
-    [F.PreservesLeftHomologyOf S] :
-    (S.map F).homologyπ ≫ (S.mapHomologyIso F).hom =
-      (S.mapCyclesIso F).hom ≫ F.map S.homologyπ := by
-  rw [S.homologyData.left.mapHomologyIso_eq F]
-  rw [S.homologyData.left.mapCyclesIso_eq F]
-  dsimp only [Iso.trans_hom, Iso.symm_hom, Functor.mapIso_hom]
-  rw [Category.assoc,
-    ShortComplex.LeftHomologyData.homologyπ_comp_homologyIso_hom_assoc]
-  rw [cancel_epi]
-  rw [ShortComplex.LeftHomologyData.map_π]
-  rw [← F.map_comp, ← F.map_comp,
-    ShortComplex.LeftHomologyData.π_comp_homologyIso_inv]
-
 omit [HasZeroObject C] [HasZeroObject D] in
 set_option backward.isDefEq.respectTransparency.types false in
 set_option backward.isDefEq.respectTransparency false in
@@ -71,7 +50,7 @@ private theorem mapHomologyFunctorIso_homologyπ
     ((F.mapHomologicalComplex c).obj K).homologyπ i ≫
         (HomologicalComplex.mapHomologyFunctorIso (c := c) i F).hom.app K =
       ((K.sc i).mapCyclesIso F).hom ≫ F.map (K.homologyπ i) := by
-  exact mapHomologyIso_homologyπ F (K.sc i)
+  exact (K.sc i).homologyπ_comp_mapHomologyIso_hom F
 
 omit [HasZeroObject C] [HasZeroObject D] in
 set_option backward.isDefEq.respectTransparency.types false in
