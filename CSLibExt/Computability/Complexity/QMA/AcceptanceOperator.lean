@@ -17,13 +17,16 @@ A verifier circuit on `|x| + m + a` qubits starts from the basis state of the in
 `|x|` low-order qubits, a witness vector `ψ` on the next `m` qubits and the all-zero state on the
 `a` high-order qubits, and accepts when qubit `0` measures `1`. Its acceptance operator
 `Q_x = E_x† U† Π U E_x` acts on the witness register: `E_x` sends a witness vector to that initial
-state (`witnessEmbedding`), `U` is the circuit matrix and `Π` is the diagonal projector onto the
-basis states whose qubit `0` is `1` (`acceptProjector`). For a circuit of well-formed gates, the
-acceptance probability on every witness vector `ψ`, normalized or not, is `Re ⟪ψ, Q_x ψ⟫`, and
+state (`witnessEmbedding`), `U` is the circuit matrix and `Π` is the diagonal projector selecting
+the odd basis indices (`acceptProjector`): for `N > 0` this is the projector onto the basis states
+whose qubit `0` is `1`, and for `N = 0` it is the zero matrix on a one-dimensional space
+(no wire to measure). For a circuit of well-formed gates, on every witness vector `ψ`
+(the statements quantify over all vectors, normalized or not), `Re ⟪ψ, Q_x ψ⟫` is its
+acceptance weight, and for a unit vector this is the acceptance probability;
 `0 ≤ Q_x ≤ 1` in the Loewner order, so completeness and soundness of the verifier on `x` are
-bounds on the quadratic form of one operator. For well-formed gates, the sesquilinear forms of
-`Q_x` and `1 - Q_x` are the inner products, through `Π` and `1 - Π`, of the circuit images of
-the initial states; at basis witnesses they give the entries of `Q_x` and `1 - Q_x`.
+bounds on the quadratic form of one operator. For well-formed gates, the sesquilinear forms
+of `Q_x` and `1 - Q_x` are the inner products, through `Π` and `1 - Π`, of the circuit images
+of the initial states; at basis witnesses they give the entries of `Q_x` and `1 - Q_x`.
 
 This file is about one verifier on one input: it states nothing about repetition, uniform circuit
 families or complexity classes.
@@ -41,8 +44,10 @@ namespace Cslib.Complexity.Classes.QMA
 
 set_option autoImplicit false
 
-/-- **Accepting projector.** The diagonal projector onto the basis states of `N` qubits whose
-qubit `0`, the least significant bit of the index, is `1`. -/
+/-- **Accepting projector.** The diagonal projector on `N` qubits selecting the odd basis
+indices; for `N > 0` this is the projector onto the basis states whose qubit `0`, the least
+significant bit of the index, is `1`, and for `N = 0` it is the zero matrix on a
+one-dimensional space (no wire to measure). -/
 def acceptProjector (N : ℕ) : Matrix (Fin (2 ^ N)) (Fin (2 ^ N)) ℂ :=
   Matrix.diagonal fun s => if qBit 0 s.val = 1 then 1 else 0
 
@@ -65,8 +70,9 @@ theorem one_sub_acceptProjector_posSemidef (N : ℕ) : (1 - acceptProjector N).P
   · simp
   · simp
 
-/-- **Born rule as a quadratic form.** The acceptance probability of any vector `φ` on `N`
-qubits is `Re ⟪φ, Π φ⟫` for the accepting projector `Π`. -/
+/-- **Born rule as a quadratic form.** For every vector `φ` on `N` qubits (the statement
+quantifies over all vectors, normalized or not), `Re ⟪φ, Π φ⟫` for the accepting projector
+`Π` equals its acceptance weight; for a unit vector this is the acceptance probability. -/
 theorem acceptProb_eq_re_star_dotProduct_acceptProjector_mulVec {N : ℕ}
     (φ : Fin (2 ^ N) → ℂ) :
     acceptProb φ = (star φ ⬝ᵥ (acceptProjector N *ᵥ φ)).re := by
@@ -180,9 +186,9 @@ theorem star_dotProduct_acceptOp_mulVec {x : List Bool} {m a : ℕ} {gs : List Q
     Matrix.dotProduct_mulVec, Matrix.vecMul_vecMul, Matrix.conjTranspose_mul,
     Matrix.mul_assoc]
 
-/-- **Acceptance probability as a quadratic form.** For well-formed gates, the acceptance
-probability of the verifier on every witness vector `ψ`, normalized or not, is
-`Re ⟪ψ, Q_x ψ⟫`. -/
+/-- **Acceptance probability as a quadratic form.** For well-formed gates, on every witness
+vector `ψ` (the statement quantifies over all vectors, normalized or not), `Re ⟪ψ, Q_x ψ⟫`
+is its acceptance weight; for a unit vector this is the acceptance probability. -/
 theorem acceptProb_applyCircuit_eq_re_star_dotProduct_acceptOp_mulVec {x : List Bool}
     {m a : ℕ} {gs : List QGate} (hgs : ∀ g ∈ gs, QGateWellFormed (x.length + m + a) g)
     (ψ : Fin (2 ^ m) → ℂ) :

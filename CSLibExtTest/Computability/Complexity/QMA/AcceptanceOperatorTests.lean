@@ -38,7 +38,8 @@ open Cslib.Complexity.Classes Cslib.Complexity.Classes.QMA
 #print axioms star_dotProduct_one_sub_acceptOp_mulVec
 
 /-- Identity circuit with empty input: the acceptance operator is the accepting projector of the
-witness register, whose qubit `0` is the global qubit `0`. -/
+witness register; when `m > 0` its qubit `0` is the global qubit `0` (when `m = 0` the global
+qubit `0` is an ancilla whenever `a > 0`). -/
 theorem acceptOp_nil_nil (m a : ℕ) : acceptOp [] m a [] = acceptProjector m := by
   have hinter : acceptProjector (List.length ([] : List Bool) + m + a) *
       witnessEmbedding [] m a =
