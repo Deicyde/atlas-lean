@@ -41,6 +41,17 @@ example (L : PeriodPair) :
   rw [L.cubic_eq_mul_half_periods]
   simp
 
-/-- The half-period values of a period lattice are roots of a cubic with nonzero discriminant. -/
+/-- The nonvanishing of the discriminant, read off the last component of the bundled
+statement. -/
 example (L : PeriodPair) : L.g₂ ^ 3 - 27 * L.g₃ ^ 2 ≠ 0 :=
   L.weierstrassP_half_periods_discriminant.2.2.2
+
+/-- All three half-period values are roots of `4X³ - g₂X - g₃`, from the factorization in the
+bundled statement. -/
+example (L : PeriodPair) :
+    (4 * X ^ 3 - C L.g₂ * X - C L.g₃ : ℂ[X]).IsRoot (L.weierstrassP (L.ω₁ / 2)) ∧
+      (4 * X ^ 3 - C L.g₂ * X - C L.g₃ : ℂ[X]).IsRoot (L.weierstrassP (L.ω₂ / 2)) ∧
+      (4 * X ^ 3 - C L.g₂ * X - C L.g₃ : ℂ[X]).IsRoot
+        (L.weierstrassP ((L.ω₁ + L.ω₂) / 2)) := by
+  rw [L.weierstrassP_half_periods_discriminant.2.1]
+  simp

@@ -472,8 +472,8 @@ Weierstrass function $\wp$ and derivative $\wp'$, and let $z \in \mathbb{C} \set
 Then $\wp'(z) = 0$ if and only if $2z \in \Lambda$.
 
 Source: Milne, *Elliptic Curves*, 2nd ed., Chapter III, §3, proof of Lemma 3.6, p. 95, and proof
-of Proposition 3.7, p. 95 ($\wp$ is two-to-one on a fundamental domain except at the half
-periods). -/
+of Proposition 3.7, p. 95 (over finite values, $\wp$ is two-to-one on a fundamental domain
+except at the half periods). -/
 theorem derivWeierstrassP_eq_zero_iff {z : ℂ} (hz : z ∉ L.lattice) :
     L.derivWeierstrassP z = 0 ↔ 2 * z ∈ L.lattice := by
   constructor

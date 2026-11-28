@@ -43,17 +43,20 @@ namespace PeriodPair
 /-- **The orders of an elliptic function in a period parallelogram add up to zero.** Let $L$ be a
 period pair with periods $\omega_1, \omega_2$, let $f$ be an elliptic function for $L$ and let
 $z_0 \in \mathbb{C}$. Let $D = \{z_0 + t_1\omega_1 + t_2\omega_2 : 0 < t_1, t_2 < 1\}$ and
-$\overline{D} = \{z_0 + t_1\omega_1 + t_2\omega_2 : 0 \le t_1, t_2 \le 1\}$, and suppose that the
-meromorphic order $\operatorname{ord}_P f$ is $0$ at every $P \in \overline{D} \setminus D$. Then
-only finitely many $P \in D$ have $\operatorname{ord}_P f \ne 0$, and
-$\sum_{P \in D} \operatorname{ord}_P f = 0$, where $\operatorname{ord}_P f$ is
-`(meromorphicOrderAt f P).untop₀`.
+$\overline{D} = \{z_0 + t_1\omega_1 + t_2\omega_2 : 0 \le t_1, t_2 \le 1\}$, and write
+$\operatorname{ord}_P f \in \mathbb{Z} \cup \{\top\}$ for the meromorphic order
+`meromorphicOrderAt f P : WithTop ℤ` (it is $\top$ when $f$ vanishes near $P$). Suppose that
+$\operatorname{ord}_P f = 0$ at every $P \in \overline{D} \setminus D$. Then only finitely many
+$P \in D$ have $\operatorname{ord}_P f \ne 0$, and the sum over $P \in D$ of the integers
+$(\operatorname{ord}_P f)$`.untop₀` is $0$; by the first part each of these orders is finite, so
+`untop₀` only reads off the integer.
 
 Source: Milne, *Elliptic Curves*, 2nd ed., Chapter III, §2, Proposition 2.1 (b) and its proof,
 pp. 86–87. The source assumes that $f$ is not identically zero; the page phrases this as
 $\operatorname{ord}_P f \ne \top$ for every $P$. This hypothesis is dropped: it follows from the
-boundary hypothesis, since $\mathbb{C}$ is connected and the order of $f$ is $0$ at the vertex
-$z_0$. -/
+boundary hypothesis on the untruncated order, since $\mathbb{C}$ is connected and
+$\operatorname{ord}_{z_0} f = 0$ at the vertex $z_0$ (for $f \equiv 0$ the order is $\top$ at
+$z_0$, so the boundary hypothesis fails). -/
 theorem IsEllipticFunction.finsum_meromorphicOrderAt_eq_zero {L : PeriodPair} {f : ℂ → ℂ}
     (hf : L.IsEllipticFunction f) (z₀ : ℂ)
     (hbd : ∀ P ∈ {P | ∃ t₁ t₂ : ℝ, 0 ≤ t₁ ∧ t₁ ≤ 1 ∧ 0 ≤ t₂ ∧ t₂ ≤ 1 ∧

@@ -25,8 +25,7 @@ periods, roots of $4X^3 - g_2X - g_3$ (`PeriodPair.half_period_values`). This mo
 * `PeriodPair.cubic_eq_mul_half_periods`: $4X^3 - g_2X - g_3 = 4(X - e_1)(X - e_2)(X - e_3)$ in
   $\mathbb{C}[X]$;
 * `PeriodPair.g₂_cube_sub_g₃_sq_eq`:
-  $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2$.
-
+  $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2$;
 * `PeriodPair.weierstrassP_half_periods_discriminant`: the three statements together: the $e_k$
   are pairwise distinct, the cubic factors as above, and
   $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2 \ne 0$ (the nonvanishing is
@@ -37,6 +36,9 @@ periods, roots of $4X^3 - g_2X - g_3$ (`PeriodPair.half_period_values`). This mo
 * J. S. Milne, *Elliptic Curves*, 2nd ed., World Scientific, 2021; author's version at
   <https://jmilne.org/math/Books/EC2.pdf>, Chapter III, §3, Lemma 3.6, p. 95, and the proof of
   Theorem 3.10, p. 96 (Milne writes $g_4, g_6$ for $g_2, g_3$).
+* NIST Digital Library of Mathematical Functions, §23.3(i), equation 23.3.4,
+  <https://dlmf.nist.gov/23.3.E4>: $g_2^3 - 27g_3^2 = 16(e_2 - e_3)^2(e_3 - e_1)^2(e_1 - e_2)^2$,
+  with the factor $16$.
 -/
 
 @[expose] public section
@@ -139,8 +141,9 @@ $\wp$, and let $e_1 = \wp(\omega_1/2)$, $e_2 = \wp(\omega_2/2)$ and
 $e_3 = \wp((\omega_1 + \omega_2)/2)$. Then
 $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2$.
 
-Source: Milne, *Elliptic Curves*, 2nd ed., Chapter III, §3, Lemma 3.6, p. 95, and the proof of
-Theorem 3.10, p. 96. -/
+Source: Milne, *Elliptic Curves*, 2nd ed., Chapter III, §3, Lemma 3.6, p. 95 (the three roots),
+and the proof of Theorem 3.10, p. 96 (the discriminant); the identity with the factor $16$ is
+DLMF, equation 23.3.4. -/
 theorem g₂_cube_sub_g₃_sq_eq :
     L.g₂ ^ 3 - 27 * L.g₃ ^ 2 =
       16 * ((L.weierstrassP (L.ω₁ / 2) - L.weierstrassP (L.ω₂ / 2)) *
@@ -163,7 +166,8 @@ This bundles `PeriodPair.weierstrassP_half_periods_ne`, `PeriodPair.cubic_eq_mul
 `PeriodPair.g₂_cube_sub_g₃_sq_eq` and `PeriodPair.discriminant_ne_zero`.
 
 Source: J. S. Milne, *Elliptic Curves*, 2nd ed., author's version, Chapter III, §3, Lemma 3.6,
-p. 95, and the proof of Theorem 3.10, p. 96. -/
+p. 95, and the proof of Theorem 3.10, p. 96; the identity with the factor $16$ is DLMF,
+equation 23.3.4. -/
 theorem weierstrassP_half_periods_discriminant :
     (L.weierstrassP (L.ω₁ / 2) ≠ L.weierstrassP (L.ω₂ / 2) ∧
       L.weierstrassP (L.ω₁ / 2) ≠ L.weierstrassP ((L.ω₁ + L.ω₂) / 2) ∧
