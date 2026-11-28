@@ -165,7 +165,7 @@ example : normalizedWeights (fun _ => 1) (fun f => 2 * f) 4 1 = 1 / 6 ∧
 
 /-- The centred weights of any weight function sum to `0` for `n = 4`. -/
 example (W : ℝ → ℝ) : ∑ i ∈ Ico 1 4, centredWeights W 4 i = 0 :=
-  sum_centredWeights W (by norm_num)
+  sum_centredWeights W 4
 
 /-- Junk value: for `n = 1` there is no frequency to average and the centred weights are the
 values `W i` (Lean's `i / 1 = i`). -/
@@ -203,7 +203,7 @@ weight is the negative of the first. So three sequences are too few for the cent
 depend on the cutoff in more than its sign. -/
 example (c : ℝ) : centredWeights (fun f => 2 * (1 - f) - c / f) 3 2 =
     -centredWeights (fun f => 2 * (1 - f) - c / f) 3 1 := by
-  have h := sum_centredWeights (fun f => 2 * (1 - f) - c / f) (n := 3) (by norm_num)
+  have h := sum_centredWeights (fun f => 2 * (1 - f) - c / f) 3
   rw [Ico_one_three, sum_pair (by norm_num)] at h
   linarith
 

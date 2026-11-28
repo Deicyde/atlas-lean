@@ -38,9 +38,9 @@ Ramos-Onsins, Marmorini, Achaz and Ferretti (2023, Sections 1, 2.1 and 2.2):
 * **weight-consistent scaling**: a test should weigh each population frequency of the derived
   allele in the same way at every sample size, so its weights should follow a fixed weight
   function of the sample frequency `f = i / n`. Two ways of doing so with weights that sum to
-  `0` are `centredWeights` (from a weight function `W(f)` with `∫₀¹ W = 0`; the weights sum to
-  `0` for `n ≥ 2`) and `normalizedWeights` (from the weight functions `w(f)`, `w'(f)` of two
-  estimators, with `∫₀¹ w = ∫₀¹ w' = 1`; the weights sum to `0` when both normalizing sums
+  `0` are `centredWeights` (from a weight function `W(f)` with `∫₀¹ W = 0`) and
+  `normalizedWeights` (from the weight functions `w(f)`, `w'(f)` of two estimators, with
+  `∫₀¹ w = ∫₀¹ w' = 1`; the weights sum to `0` when both normalizing sums
   `∑_{j=1}^{n-1} w(j / n)` and `∑_{j=1}^{n-1} w'(j / n)` are nonzero). Up to a
   positive factor, which does not change the test, both are within `O(1 / n)` of the weight
   function at `i / n`, and so of each other when `W = w - w'`, if the weight functions have
@@ -68,8 +68,8 @@ Ramos-Onsins, Marmorini, Achaz and Ferretti (2023, Sections 1, 2.1 and 2.2):
 * `linearNeutralityTest_const_mul`: weights rescaled by a factor `c > 0` give the same test.
 * `linearNeutralityTest_sub`: the test of `w - w'` is the standardized difference of two
   estimators of `θ`, unbiased by `VariableSFS.integral_thetaWeighted`.
-* `sum_centredWeights`, `sum_normalizedWeights`: the centred weights sum to `0` for `n ≥ 2`, and
-  the normalized weights do when both normalizing sums are nonzero.
+* `sum_centredWeights`, `sum_normalizedWeights`: the centred weights sum to `0`, and the
+  normalized weights do when both normalizing sums are nonzero.
 * `exists_abs_centredWeights_sub_le`, `exists_abs_mul_normalizedWeights_sub_le`,
   `exists_abs_mul_normalizedWeights_sub_centredWeights_le`: the `O(1 / n)` bounds.
 * `normalizedWeights_const_mul`, `not_exists_centredWeights_four_eq_const_mul`: the normalized
@@ -298,31 +298,32 @@ theorem linearNeutralityTest_sub {L : ℝ} (hL : 0 < L) (w w' : ℕ → ℝ) :
 /-- **Centred weight-consistent weights** (Ramos-Onsins et al. 2023, Eq. (9)): from a weight
 function `W` of the frequency `f ∈ (0, 1)`, the weights
 `W_i^{(n)} = W(i / n) - (n - 1)⁻¹ ∑_{j=1}^{n-1} W(j / n)`: the values of `W` at the sample
-frequencies `i / n`, minus their mean, so that for `n ≥ 2` they sum to `0`
-(`sum_centredWeights`). It is meaningful for `n ≥ 2`. When `W` has bounded variation on
-`[0, 1]` and `∫₀¹ W = 0`, the correction is `O(1 / n)`, so that `W_i^{(n)} ≃ W(i / n)`
-(`exists_abs_centredWeights_sub_le`). -/
+frequencies `i / n`, minus their mean, so that they sum to `0` (`sum_centredWeights`). It is
+meaningful for `n ≥ 2`. When `W` has bounded variation on `[0, 1]` and `∫₀¹ W = 0`, the
+correction is `O(1 / n)`, so that `W_i^{(n)} ≃ W(i / n)` (`exists_abs_centredWeights_sub_le`). -/
 def centredWeights (W : ℝ → ℝ) (n i : ℕ) : ℝ :=
   W ((i : ℝ) / n) - (∑ j ∈ Ico 1 n, W ((j : ℝ) / n)) / ((n : ℝ) - 1)
 
 /-- **Normalized weight-consistent weights** (Ramos-Onsins et al. 2023, Eq. (10)): from the
 weight functions `w`, `w'` of two estimators, the weights
 `W_i^{(n)} = w(i / n) / ∑_{j=1}^{n-1} w(j / n) - w'(i / n) / ∑_{j=1}^{n-1} w'(j / n)`: the
-difference of the weights of two estimators, each normalized to sum to `1`. When both
-normalizing sums `∑_{j=1}^{n-1} w(j / n)` and `∑_{j=1}^{n-1} w'(j / n)` are nonzero, the weights
-sum to `0` (`sum_normalizedWeights`). Unit integrals do not ensure that at a given `n`: for
-`n = 2`, `w(f) = 12 (f - 1/2)²` has `∫₀¹ w = 1` but vanishes at the only sample frequency `1/2`.
-With Lean's `x / 0 = 0`, a term whose normalizing sum is `0` is `0`. When `w` and `w'` have
-bounded variation on `[0, 1]` and `∫₀¹ w = ∫₀¹ w' = 1`, `n W_i^{(n)}` is within `O(1 / n)` of
-`w(i / n) - w'(i / n)`, so that `n W_i^{(n)} ≃ w(i / n) - w'(i / n)`
-(`exists_abs_mul_normalizedWeights_sub_le`). -/
+difference of the weights of two estimators, each divided by its normalizing sum, so that it
+sums to `1` when that sum is nonzero. When both normalizing sums `∑_{j=1}^{n-1} w(j / n)` and
+`∑_{j=1}^{n-1} w'(j / n)` are nonzero, the weights sum to `0` (`sum_normalizedWeights`). Unit
+integrals do not ensure that at a given `n`: for `n = 2`, `w(f) = 12 (f - 1/2)²` has
+`∫₀¹ w = 1` but vanishes at the only sample frequency `1/2`. With Lean's `x / 0 = 0`, a term
+whose normalizing sum is `0` is `0`. When `w` and `w'` have bounded variation on `[0, 1]` and
+`∫₀¹ w = ∫₀¹ w' = 1`, `n W_i^{(n)}` is within `O(1 / n)` of `w(i / n) - w'(i / n)`, so that
+`n W_i^{(n)} ≃ w(i / n) - w'(i / n)` (`exists_abs_mul_normalizedWeights_sub_le`). -/
 def normalizedWeights (w w' : ℝ → ℝ) (n i : ℕ) : ℝ :=
   w ((i : ℝ) / n) / ∑ j ∈ Ico 1 n, w ((j : ℝ) / n) -
     w' ((i : ℝ) / n) / ∑ j ∈ Ico 1 n, w' ((j : ℝ) / n)
 
-/-- For `n ≥ 2` the centred weights sum to `0` over `1 ≤ i ≤ n - 1`. -/
-theorem sum_centredWeights (W : ℝ → ℝ) (hn : 2 ≤ n) :
+/-- The centred weights sum to `0` over `1 ≤ i ≤ n - 1` (for `n ≤ 1` there are none). -/
+theorem sum_centredWeights (W : ℝ → ℝ) (n : ℕ) :
     ∑ i ∈ Ico 1 n, centredWeights W n i = 0 := by
+  rcases Nat.lt_or_ge n 2 with hn | hn
+  · rw [Ico_eq_empty_of_le (by omega), sum_empty]
   have h : ((n : ℝ) - 1) ≠ 0 := by
     have : (2 : ℝ) ≤ n := by exact_mod_cast hn
     linarith
