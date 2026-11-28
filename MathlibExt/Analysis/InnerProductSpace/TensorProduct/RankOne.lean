@@ -48,8 +48,10 @@ variable {F₂ : Type uF₂} [NormedAddCommGroup F₂] [InnerProductSpace 𝕜 F
 /-- Let `𝕜` be a real or complex scalar field (`RCLike 𝕜`), and let `E₁`, `E₂`, `F₁`
 and `F₂` be independent normed inner-product spaces, possibly zero. For vectors
 `x₁ : E₁`, `x₂ : E₂`, `y₁ : F₁` and `y₂ : F₂`, the completed tensor action of the
-two rank-one maps is exactly the rank-one operator from the completed pure input
-vector `x₁ ⊗ y₁` to the completed pure output vector `x₂ ⊗ y₂`. -/
+two rank-one maps sends each `z : Completion (E₁ ⊗[𝕜] F₁)` to
+`⟪x₁ ⊗ y₁, z⟫ • (x₂ ⊗ y₂)`, with the pure tensors included in their respective
+completions. In particular, for `u = x₁ ⊗ y₁` and `v = x₂ ⊗ y₂` in those completions,
+the value at `u` is `‖u‖² • v`; no unit-norm assumption on `u` is made. -/
 theorem mapLCompletion_rankOne (x₂ : E₂) (x₁ : E₁) (y₂ : F₂) (y₁ : F₁) :
     mapLCompletion (InnerProductSpace.rankOne 𝕜 x₂ x₁)
         (InnerProductSpace.rankOne 𝕜 y₂ y₁) =

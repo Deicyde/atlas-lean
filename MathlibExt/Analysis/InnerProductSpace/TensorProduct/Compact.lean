@@ -17,10 +17,10 @@ public import MathlibExt.Analysis.InnerProductSpace.TensorProduct.RankOne
 /-!
 # Compact factors act compactly on the Hilbert tensor completion
 
-The completed tensor action of two compact operators is compact. Its
-operator-norm continuity allows rank-one approximation to be used
-successively in the two factor-map spaces. The returned operator acts on
-the inner-product tensor completions.
+For complete factor spaces, the completed tensor action of two compact operators is
+compact. Approximate each factor operator by finite sums of rank-one operators; continuity
+in the operator norms allows these approximations to be used successively in the two
+factor-map spaces. The resulting operator acts on the inner-product tensor completions.
 
 This supplies compactness for the compact-operator-valued algebraic tensor
 action.
