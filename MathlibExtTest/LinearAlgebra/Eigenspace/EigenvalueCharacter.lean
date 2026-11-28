@@ -22,3 +22,14 @@ example {F L A V : Type*} [Field F] [Field L] [Algebra F L] [Ring A] [Algebra F 
   obtain ⟨χ, hχ, -⟩ :=
     Module.End.exists_algHom_of_forall_mem_span_singleton_of_mul_rev hX δ h1 hmul hv hX'
   exact ⟨χ a, hχ a⟩
+
+-- The multiplicative case: the character's values on `X` generate its image.
+example {F L A V : Type*} [Field F] [Field L] [Algebra F L] [Ring A] [Algebra F A]
+    [AddCommGroup V] [Module L V] [Module F V] [IsScalarTower F L V] {X : Set A}
+    (hX : Algebra.adjoin F X = ⊤) (δ : A →ₗ[F] Module.End L V) (h1 : δ 1 = 1)
+    (hmul : ∀ a b : A, δ (a * b) = δ a * δ b) {v : V} (hv : v ≠ 0)
+    (hX' : ∀ x ∈ X, ∃ c : L, δ x v = c • v) :
+    ∃ χ : A →ₐ[F] L, χ.range = Algebra.adjoin F (χ '' X) ∧ ∀ x ∈ X, δ x v = χ x • v := by
+  obtain ⟨χ, hχ, hrange⟩ :=
+    Module.End.exists_algHom_of_forall_mem_span_singleton hX δ h1 hmul hv hX'
+  exact ⟨χ, hrange, fun x _ => hχ x⟩
