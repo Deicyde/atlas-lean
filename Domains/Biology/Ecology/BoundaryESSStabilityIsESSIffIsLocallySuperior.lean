@@ -130,21 +130,6 @@ private theorem continuous_seg (p q : ι → ℝ) :
   rw [hexp]
   fun_prop
 
-/-- The segment from `p` toward `q` stays in the simplex for `t ∈ [0, 1]`. -/
-private theorem seg_mem {p q : ι → ℝ} (hp : p ∈ simplex ι) (hq : q ∈ simplex ι) {t : ℝ}
-    (ht0 : 0 ≤ t) (ht1 : t ≤ 1) : p + t • (q - p) ∈ simplex ι := by
-  obtain ⟨hp0, hp1⟩ := hp
-  obtain ⟨hq0, hq1⟩ := hq
-  refine ⟨fun i => ?_, ?_⟩
-  · have hexp : (p + t • (q - p)) i = (1 - t) * p i + t * q i := by
-      simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul]
-      ring
-    rw [hexp]
-    exact add_nonneg (mul_nonneg (sub_nonneg.2 ht1) (hp0 i)) (mul_nonneg ht0 (hq0 i))
-  · simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul, Finset.sum_add_distrib,
-      ← Finset.mul_sum, Finset.sum_sub_distrib, hp1, hq1]
-    ring
-
 omit [Fintype ι] in
 /-- Points of the segment `p + t • (q - p)` with `t > 0` differ from `p` when `q ≠ p`. -/
 private theorem seg_ne {p q : ι → ℝ} (hqp : q ≠ p) {t : ℝ} (ht : 0 < t) :
@@ -397,7 +382,7 @@ public theorem isESS_iff_isLocallySuperior (A : Matrix ι ι ℝ) (p : ι → �
         (q - p) ⬝ᵥ A *ᵥ p + t * ((q - p) ⬝ᵥ A *ᵥ (q - p)) < 0 := by
       filter_upwards [hev, hmem0, hlt1] with t ht h0 h1
       have h0' : 0 < t := h0
-      have hmem : p + t • (q - p) ∈ simplex ι := seg_mem hp hq h0'.le h1.le
+      have hmem := add_smul_sub_mem_simplex hp hq h0'.le h1.le
       have hne : p + t • (q - p) ≠ p := seg_ne hqp h0'
       have hine := ht hmem hne
       rw [expand_self, expand_right] at hine

@@ -71,12 +71,20 @@ structure IsSolution (f : (ι → ℝ) → ι → ℝ) (x : ℝ → ι → ℝ) 
 def IsRestPoint (f : (ι → ℝ) → ι → ℝ) (x : ι → ℝ) : Prop :=
   ∀ i, x i * (f x i - meanFitness f x) = 0
 
+/-- **Rest points equalize fitness on their support.** A state is a rest point exactly when
+its strategies of nonzero frequency have fitness equal to the mean fitness. -/
+theorem isRestPoint_iff_eq_meanFitness_on_support {f : (ι → ℝ) → ι → ℝ} {x : ι → ℝ} :
+    IsRestPoint f x ↔ ∀ i, x i ≠ 0 → f x i = meanFitness f x := by
+  classical
+  refine forall_congr' fun i => ?_
+  rw [mul_eq_zero, sub_eq_zero, or_iff_not_imp_left]
+
 /-- **Rest points in the interior are equalizers.** If every strategy is present (`x i > 0`),
 then `x` is a rest point iff every strategy has fitness equal to the mean fitness. -/
 theorem isRestPoint_iff {f : (ι → ℝ) → ι → ℝ} {x : ι → ℝ} (hx : ∀ i, 0 < x i) :
     IsRestPoint f x ↔ ∀ i, f x i = meanFitness f x := by
-  refine forall_congr' fun i => ?_
-  rw [mul_eq_zero, sub_eq_zero, or_iff_right (hx i).ne']
+  rw [isRestPoint_iff_eq_meanFitness_on_support]
+  exact ⟨fun h i => h i (hx i).ne', fun h i _ => h i⟩
 
 /-- A rest point gives a constant solution of the replicator equation. -/
 theorem isSolution_const {f : (ι → ℝ) → ι → ℝ} {x : ι → ℝ} (hx : IsRestPoint f x) :
