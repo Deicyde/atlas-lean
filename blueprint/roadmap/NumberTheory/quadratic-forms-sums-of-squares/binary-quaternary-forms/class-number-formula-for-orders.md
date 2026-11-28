@@ -18,8 +18,8 @@ $\mathcal{O}$, so $h(f^2 D)$ is the class number of $\mathcal{O}$, as in the sou
 
 ## Expansion
 
-A good expansion has pages for the unit index $[\mathcal{O}_K^\times : \mathcal{O}^\times]$ and for
-the steps of Cox's proof of Theorem 7.24, which compares the class groups of $\mathcal{O}$ and
+A good expansion has pages for $\mathcal{O}^\times = \{\pm 1\}$ when $f \ge 2$, which with the unit
+groups of $\mathcal{O}_K$ gives the index $e$, and for the steps of Cox's proof of Theorem 7.24, which compares the class groups of $\mathcal{O}$ and
 $\mathcal{O}_K$ through $(\mathcal{O}_K / f\mathcal{O}_K)^\times$ and $(\mathbb{Z}/f\mathbb{Z})^\times$.
 Each page states its result precisely, with its locator in Cox.
 
@@ -32,6 +32,7 @@ Each page states its result precisely, with its locator in Cox.
 ## Proof depends on
 
 - [Form classes and proper ideal classes of an imaginary quadratic order](form-classes-and-proper-ideal-classes/form-classes-equiv-proper-ideal-classes.md), for $h(f^2 D) = h(\mathcal{O})$ and $h(D) = h(\mathcal{O}_K)$ (Cox, Theorem 7.7)
+- [Unit groups of imaginary quadratic fields](../../algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/imag-quadratic-units-is-cyclic-card.md), for the $6$, $4$ or $2$ units of $\mathcal{O}_K$ as $D = -3$, $D = -4$ or $D < -4$, which give $e$
 
 ## Sources
 

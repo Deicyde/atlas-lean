@@ -13,8 +13,7 @@ A good expansion has pages for the form class group $C(D)$ of primitive positive
 discriminant $D$ under composition, a finite abelian group of order $h(D)$; for the step from the
 reduced forms counted below to $C(D)[2]$, namely that they are exactly the reduced forms of the
 classes of order dividing $2$, so that $|C(D)[2]| = 2^{\omega(D) - 1}$ when $D$ is fundamental (Cox,
-Proposition 3.11 and Theorem 6.1); and for Lagrange's theorem in $C(D)$, which turns that count into
-the divisibility. Each page states its result precisely, with its locator in Cox.
+Proposition 3.11 and Theorem 6.1). Each page states its result precisely, with its locator in Cox.
 
 ## Depends on
 
@@ -24,6 +23,7 @@ the divisibility. Each page states its result precisely, with its locator in Cox
 ## Proof depends on
 
 - [Number of primitive reduced forms with $b = 0$, $b = a$ or $a = c$](binary-quadratic-forms/ncard-ambiguous-reduced-forms.md), which counts $2^{\omega(D) - 1}$ such forms of discriminant $D$ for every fundamental $D < 0$, as then $|D| \not\equiv 12 \pmod{16}$ and $|D| \not\equiv 0 \pmod{32}$
+- [Lagrange's theorem: the order of a group is the number of cosets of a subgroup times its order](../../../GroupTheory/group-basics/lagrange-theorem.md), for $|C(D)[2]|$ dividing $|C(D)| = h(D)$
 
 ## Sources
 
