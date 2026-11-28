@@ -242,7 +242,7 @@ private theorem coeff_etaProd_eq_coeff_partialProd (n : ℕ) :
       exact hne (by simp [← hb'])
     rw [htail b₂ hb₂, ite_eq_right h2, mul_zero]
 
-private theorem coeff_jq_eq_coeff_jNum (n : ℕ) :
+public theorem coeff_jq_eq_coeff_jNum (n : ℕ) :
     jq.coeff ((n : ℤ) - 1) = ((PowerSeries.coeff n jNum : ℤ) : ℚ) := by
   rw [jq, HahnSeries.coeff_single_mul, one_mul,
     show ((n : ℤ) - 1 - (-1) : ℤ) = ((n : ℕ) : ℤ) by ring,
@@ -425,8 +425,9 @@ private theorem partialEta_mul_partialGeom (N : ℕ) :
     (fun i _ => one_sub_X_pow_mul_geomSeries (Nat.succ_ne_zero i))]
   exact Finset.prod_const_one
 
-private theorem coeff_etaProd_eq_coeff_partialEta {k n : ℕ} (hk : k ≤ n) :
-    PowerSeries.coeff k etaProd = PowerSeries.coeff k (partialEta (n + 1)) := by
+public theorem coeff_etaProd_eq_coeff_prod_range {k n : ℕ} (hk : k ≤ n) :
+    PowerSeries.coeff k etaProd =
+      PowerSeries.coeff k (∏ i ∈ Finset.range (n + 1), ((1 : PowerSeries ℤ) - X ^ (i + 1))) := by
   rw [coeff_etaProd_eq_coeff_partialProd k]
   exact (coeff_prod_one_sub_pow_le n k hk).symm
 
@@ -438,7 +439,7 @@ private theorem coeff_dedekindEtaUnitInv_eq_coeff_partialGeom_pow (n : ℕ) :
       PowerSeries.coeff k (partialEta (n + 1) ^ 24) := by
     intro k hk
     rw [dedekindEtaUnit]
-    exact coeff_pow_congr (fun k hk => coeff_etaProd_eq_coeff_partialEta hk) 24 k hk
+    exact coeff_pow_congr (fun k hk => coeff_etaProd_eq_coeff_prod_range hk) 24 k hk
 
   have hinv : partialEta (n + 1) ^ 24 * partialGeom (n + 1) ^ 24 = 1 := by
     rw [← mul_pow, partialEta_mul_partialGeom, one_pow]

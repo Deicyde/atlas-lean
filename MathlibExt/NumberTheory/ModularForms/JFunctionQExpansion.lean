@@ -25,10 +25,11 @@ with integers $c_n$, the series converging absolutely, and $c_1 = 196884$
 The integrality and the expansion itself come from `ModularCurve.hasSum_jNum_qParam`: the function
 $q j$ is the sum of the integer power series `ModularCurve.jNum`, the expansion of
 $q E_4^3/\eta^{24} = E_4^3 \prod_{n \ge 1} (1 - q^n)^{-24}$, evaluated at $q$. This file adds the
-values of its first three coefficients, $1$, $744$ and $196884$, recorded for the Laurent series
-`ModularCurve.jq` (that is, $q^{-1}$ times `jNum`) as `ModularCurve.coeff_jq_zero` and
-`ModularCurve.coeff_jq_one`; absolute convergence follows because in `ℂ` a summable series is
-absolutely summable (`summable_norm_iff`).
+values $744$ and $196884$ of its second and third coefficients (the first, $1$, is
+`ModularCurve.constantCoeff_jNum`), recorded for the Laurent series `ModularCurve.jq` (that is,
+$q^{-1}$ times `jNum`) as `ModularCurve.coeff_jq_zero` and `ModularCurve.coeff_jq_one`;
+absolute convergence follows because in `ℂ` a summable series is absolutely summable
+(`summable_norm_iff`).
 
 The source is Andrew V. Sutherland, *18.783 Elliptic Curves*, lecture notes, MIT, Fall 2025,
 Lecture 19, Lemma 19.5 and Corollary 19.6.
@@ -38,43 +39,19 @@ Lecture 19, Lemma 19.5 and Corollary 19.6.
 
 set_option autoImplicit false
 
-open Complex UpperHalfPlane Filter Topology PowerSeries
-
-open scoped PowerSeries.WithPiTopology
+open Complex UpperHalfPlane PowerSeries
 
 namespace ModularCurve
 
 /-! ### The first coefficients of `jNum` -/
-
-/-- A coefficient of `etaProd` is a coefficient of any long enough finite partial product. -/
-private theorem coeff_etaProd_eq_coeff_prod_range {m N : ℕ} (hmN : m < N) :
-    coeff m etaProd = coeff m (∏ i ∈ Finset.range N, (1 - X ^ (i + 1) : PowerSeries ℤ)) := by
-  have hlim : Tendsto (fun N => coeff m
-      (∏ i ∈ Finset.range N, (1 - X ^ (i + 1) : PowerSeries ℤ))) atTop
-      (𝓝 (coeff m etaProd)) :=
-    ((WithPiTopology.continuous_coeff ℤ m).tendsto _).comp
-      (WithPiTopology.multipliable_one_sub_X_pow ℤ).hasProd.tendsto_prod_nat
-  have hconst : ∀ N', N ≤ N' →
-      coeff m (∏ i ∈ Finset.range N', (1 - X ^ (i + 1) : PowerSeries ℤ)) =
-        coeff m (∏ i ∈ Finset.range N, (1 - X ^ (i + 1) : PowerSeries ℤ)) := by
-    intro N' hle
-    induction N', hle using Nat.le_induction with
-    | base => rfl
-    | succ N' hle ih =>
-      rw [Finset.prod_range_succ, mul_sub, mul_one, map_sub, coeff_mul_X_pow']
-      split_ifs with h
-      · omega
-      · rw [sub_zero, ih]
-  exact tendsto_nhds_unique hlim
-    (tendsto_const_nhds.congr' (eventually_atTop.mpr ⟨N, fun N' h => (hconst N' h).symm⟩))
 
 private theorem coeff_etaProd : coeff 1 etaProd = -1 ∧ coeff 2 etaProd = -1 := by
   have h : (∏ i ∈ Finset.range 3, (1 - X ^ (i + 1) : PowerSeries ℤ)) =
       1 - X - X ^ 2 + X ^ 4 + X ^ 5 - X ^ 6 := by
     simp only [Finset.prod_range_succ, Finset.prod_range_zero]
     ring
-  rw [coeff_etaProd_eq_coeff_prod_range (N := 3) (by norm_num),
-    coeff_etaProd_eq_coeff_prod_range (m := 2) (N := 3) (by norm_num), h]
+  rw [coeff_etaProd_eq_coeff_prod_range (n := 2) (by norm_num),
+    coeff_etaProd_eq_coeff_prod_range (k := 2) (n := 2) le_rfl, h]
   simp [coeff_X_pow, coeff_X, coeff_one]
 
 /-- The coefficients of `X` and `X²` in a power of a power series with constant term `1`. -/
@@ -117,14 +94,6 @@ private theorem coeff_jNum : coeff 0 jNum = 1 ∧ coeff 1 jNum = 744 ∧ coeff 2
   norm_num at r1 r2
   refine ⟨hj0, by linarith, by linarith⟩
 
-/-- `jq` at `n - 1` is the coefficient of `Xⁿ` in `jNum`. -/
-private theorem coeff_jq_sub_one (n : ℕ) :
-    jq.coeff ((n : ℤ) - 1) = ((coeff n jNum : ℤ) : ℚ) := by
-  rw [jq, HahnSeries.coeff_single_mul, one_mul,
-    show ((n : ℤ) - 1 - (-1) : ℤ) = ((n : ℕ) : ℤ) by ring,
-    HahnSeries.ofPowerSeries_apply_coeff, jNumQ, coeff_map]
-  simp
-
 /-- **The constant term of the `j` Laurent series is `744`.** The coefficient of `q⁰` in
 `ModularCurve.jq = q⁻¹ · jNum`, where `jNum = E₄³ · ∏_{n ≥ 1} (1 - qⁿ)⁻²⁴`, the expansion of
 `q E₄³ / Δ`, is the integer power series
@@ -136,7 +105,7 @@ j(τ) = 1/q + 744 + ∑_{n=1}^∞ aₙqⁿ, where the aₙ are integers". By
 `ModularCurve.hasSum_jq_qParam` the series `jq` sums to `E₄³ / Δ`; that this is the source's
 `j = 1728 g₂³ / Δ` is not proved here. -/
 theorem coeff_jq_zero : jq.coeff 0 = 744 := by
-  have h := coeff_jq_sub_one 1
+  have h := coeff_jq_eq_coeff_jNum 1
   rw [coeff_jNum.2.1] at h
   simpa using h
 
@@ -149,7 +118,7 @@ c(n) ∈ ℤ for all n". There `j = 1728 g₂³ / Δ` is defined from the lattic
 that this is the function whose expansion is `jq` is not proved here, and the coefficient
 `21493760` is not proved here either. -/
 theorem coeff_jq_one : jq.coeff 1 = 196884 := by
-  have h := coeff_jq_sub_one 2
+  have h := coeff_jq_eq_coeff_jNum 2
   rw [coeff_jNum.2.2] at h
   norm_num at h
   exact h

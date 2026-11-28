@@ -15,6 +15,8 @@ open UpperHalfPlane
 #check @WLight.jFunction_qExpansion_int
 #check @ModularCurve.coeff_jq_zero
 #check @ModularCurve.coeff_jq_one
+#check @ModularCurve.coeff_jq_eq_coeff_jNum
+#check @ModularCurve.coeff_etaProd_eq_coeff_prod_range
 
 /-- The first coefficient after the constant term is `196884`, and the expansion holds at
 `τ = i`. -/
