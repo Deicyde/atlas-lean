@@ -9,7 +9,6 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
-public import Mathlib.Analysis.SpecialFunctions.Sqrt
 import Mathlib.Analysis.Complex.ExponentialBounds
 import MathlibExt.Analysis.SpecialFunctions.Log.LinearLogInequality
 
