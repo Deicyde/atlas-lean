@@ -63,7 +63,7 @@ A good expansion has pages for:
 
 ## Proof depends on
 
-- [Ramification groups of local fields](../../discriminants-ramification/ramification-groups-of-local-fields.md), for the lower numbering, on which the ramification estimates behind item 1 are built (Fontaine–Ouyang, §§1.3–1.4)
+- [Ramification groups of a finite Galois extension of local fields](../../discriminants-ramification/lower-numbering-of-ramification-groups/ramification-groups-of-a-finite-galois-extension.md), for the lower numbering, on which the ramification estimates behind item 1 are built (Fontaine–Ouyang, §§1.3–1.4)
 
 ## Expansion
 

@@ -28,7 +28,8 @@ sequence $1 \to T_\ell(\mu(\bar k)) \to G_{K,\ell} \to \operatorname{Gal}(\bar k
 
 ## Proof depends on
 
-- [Ramification groups of local fields](../../discriminants-ramification/ramification-groups-of-local-fields.md), for the injection of $G_0/G_1$ into the multiplicative group of the residue field and the fact that $G_1$ is a $p$-group, in each finite Galois extension
+- [Structure of the quotients of the ramification filtration](../../discriminants-ramification/lower-numbering-of-ramification-groups/structure-of-the-ramification-quotients.md), for the injection of $G_0/G_1$ into the multiplicative group of the residue field, in each finite Galois extension
+- [Wild inertia is a p-group with a cyclic complement in the inertia group](../../discriminants-ramification/lower-numbering-of-ramification-groups/wild-inertia-and-a-tame-complement.md), for the fact that $G_1$ is a $p$-group, in each finite Galois extension
 
 ## Sources
 
