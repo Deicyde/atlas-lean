@@ -15,6 +15,7 @@ public import Mathlib.RingTheory.PowerSeries.Basic
 public import MathlibExt.NumberTheory.NegRFibonacciGeneratingFunction
 public import MathlibExt.NumberTheory.NegRFibonacciPolynomial
 public import MathlibExt.NumberTheory.NegRFibonacciPolynomialSum
+public import MathlibExt.NumberTheory.NegRLucasPolynomialSum
 public import MathlibExt.NumberTheory.PQRFibonacciPolynomial
 public import MathlibExt.NumberTheory.RFibonacciPolynomial
 public import MathlibExt.NumberTheory.RFibonacciPolynomialSum
@@ -404,34 +405,6 @@ public theorem_wanted sum_pow_mul_rLucasPolynomial {K : Type*} [Field K] {r n : 
           - m ^ (r + 1) * y * ∑ j ∈ Finset.Icc 1 r,
               m ^ (n + j - r) * rLucasPolynomial r s x y (n + j - r))
         / (1 - m * x - m ^ (r + 1) * y) - 1
-
-/-- **Explicit sum for the companion sequence $V^{(-r)}$.** Let $K$ be a field of
-characteristic zero, $r \ge 2$ and $n \ge 1$ natural numbers, $x \in K$ and $y$ a unit of
-$K$, and let $V^{(-r)}_n(x, y)$ be the companion sequence of the $(-r)$-Fibonacci
-polynomials. Then
-
-$$V^{(-r)}_n(x, y) = \sum_{k} \frac{n}{n - rk} \binom{k - 1}{n - 1 - rk} y^{-k} \,
-(-x)^{n - rk} + \varepsilon,$$
-
-where the sum runs over the natural numbers $k \ge 1$ with $rk < n$, $\binom{a}{b}$ is the
-binomial coefficient of natural numbers (zero when $b > a$), and $\varepsilon = r y^{-n/r}$ if
-$r$ divides $n$ and $\varepsilon = 0$ otherwise.
-
-The paper's range $\lfloor n/(r+1) \rfloor \le k \le \lfloor n/r \rfloor$ also admits $k = n/r$
-(division by zero; that term is the $\varepsilon$ term) and, for $n \le r$, $k = 0$, whose term
-$\binom{-1}{n-1}$ must be read as $0$ (with $\binom{-1}{j} = (-1)^j$, $r = 2$, $n = 1$ gives
-$-x$ instead of $V^{(-r)}_1 = 0$); both are excluded.
-
-Source: Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion
-Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025),
-Article A38, Theorem 7 (`integers-2025-A38-thm-7`). -/
-public theorem_wanted negRLucas_eq_sum {K : Type*} [Field K] [CharZero K] {r n : ℕ}
-    (hr : 2 ≤ r) (hn : 1 ≤ n) (x : K) (y : Kˣ) :
-    negRLucas r x y n
-      = ∑ k ∈ (Finset.Icc 1 (n / r)).filter (fun k => r * k < n),
-          (n : K) / ((n : K) - ((r * k : ℕ) : K)) * ((k - 1).choose (n - 1 - r * k) : K) *
-            (↑y⁻¹ : K) ^ k * (-x) ^ (n - r * k)
-        + if r ∣ n then (r : K) * (↑y⁻¹ : K) ^ (n / r) else 0
 
 /-- **Explicit sum for the (-r)-Lucas polynomials, second form.** Let $K$ be a field of
 characteristic zero, $r \ge 2$, $x \in K$ and $y \in K$ nonzero, and write
