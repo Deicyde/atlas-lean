@@ -11,6 +11,7 @@ module
 public import MathlibExt.Analysis.SpecialFunctions.Elliptic.WeierstrassPValues
 public import MathlibExt.Analysis.SpecialFunctions.Elliptic.HalfPeriodValues
 public import Mathlib.Algebra.Polynomial.Basic
+public import MathlibExt.Analysis.SpecialFunctions.Elliptic.DiscriminantNeZero
 
 /-!
 # The half-period values and the discriminant of a period lattice
@@ -26,8 +27,10 @@ periods, roots of $4X^3 - g_2X - g_3$ (`PeriodPair.half_period_values`). This mo
 * `PeriodPair.g₂_cube_sub_g₃_sq_eq`:
   $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2$.
 
-The discriminant $g_2^3 - 27g_3^2$ is nonzero by `PeriodPair.discriminant_ne_zero`; with the
-formula above this recovers that $e_1, e_2, e_3$ are distinct, which is proved here directly.
+* `PeriodPair.weierstrassP_half_periods_discriminant`: the three statements together: the $e_k$
+  are pairwise distinct, the cubic factors as above, and
+  $g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2 \ne 0$ (the nonvanishing is
+  `PeriodPair.discriminant_ne_zero`).
 
 ## References
 
@@ -148,5 +151,32 @@ theorem g₂_cube_sub_g₃_sq_eq :
       -L.weierstrassP (L.ω₁ / 2) - L.weierstrassP (L.ω₂ / 2) := by linear_combination hs
   rw [hg₂, hg₃, he₃]
   ring
+
+/-- **The half-period values and the discriminant of a period lattice.** Let $L$ be a period
+pair with periods $\omega_1, \omega_2$, invariants $g_2, g_3$ and Weierstrass function $\wp$, and
+let $e_1 = \wp(\omega_1/2)$, $e_2 = \wp(\omega_2/2)$ and $e_3 = \wp((\omega_1 + \omega_2)/2)$.
+Then $e_1, e_2, e_3$ are pairwise distinct,
+$4X^3 - g_2X - g_3 = 4(X - e_1)(X - e_2)(X - e_3)$ in $\mathbb{C}[X]$, and
+$g_2^3 - 27g_3^2 = 16\bigl((e_1 - e_2)(e_1 - e_3)(e_2 - e_3)\bigr)^2 \ne 0$.
+
+This bundles `PeriodPair.weierstrassP_half_periods_ne`, `PeriodPair.cubic_eq_mul_half_periods`,
+`PeriodPair.g₂_cube_sub_g₃_sq_eq` and `PeriodPair.discriminant_ne_zero`.
+
+Source: J. S. Milne, *Elliptic Curves*, 2nd ed., author's version, Chapter III, §3, Lemma 3.6,
+p. 95, and the proof of Theorem 3.10, p. 96. -/
+theorem weierstrassP_half_periods_discriminant :
+    (L.weierstrassP (L.ω₁ / 2) ≠ L.weierstrassP (L.ω₂ / 2) ∧
+      L.weierstrassP (L.ω₁ / 2) ≠ L.weierstrassP ((L.ω₁ + L.ω₂) / 2) ∧
+      L.weierstrassP (L.ω₂ / 2) ≠ L.weierstrassP ((L.ω₁ + L.ω₂) / 2)) ∧
+    (4 * X ^ 3 - C L.g₂ * X - C L.g₃ : ℂ[X]) =
+      4 * (X - C (L.weierstrassP (L.ω₁ / 2))) * (X - C (L.weierstrassP (L.ω₂ / 2))) *
+        (X - C (L.weierstrassP ((L.ω₁ + L.ω₂) / 2))) ∧
+    L.g₂ ^ 3 - 27 * L.g₃ ^ 2 =
+      16 * ((L.weierstrassP (L.ω₁ / 2) - L.weierstrassP (L.ω₂ / 2)) *
+        (L.weierstrassP (L.ω₁ / 2) - L.weierstrassP ((L.ω₁ + L.ω₂) / 2)) *
+        (L.weierstrassP (L.ω₂ / 2) - L.weierstrassP ((L.ω₁ + L.ω₂) / 2))) ^ 2 ∧
+    L.g₂ ^ 3 - 27 * L.g₃ ^ 2 ≠ 0 :=
+  ⟨L.weierstrassP_half_periods_ne, L.cubic_eq_mul_half_periods, L.g₂_cube_sub_g₃_sq_eq,
+    L.discriminant_ne_zero⟩
 
 end PeriodPair

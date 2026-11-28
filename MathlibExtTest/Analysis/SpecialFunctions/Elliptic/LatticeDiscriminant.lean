@@ -25,6 +25,7 @@ open Polynomial
 #check @PeriodPair.weierstrassP_half_periods_ne
 #check @PeriodPair.cubic_eq_mul_half_periods
 #check @PeriodPair.g₂_cube_sub_g₃_sq_eq
+#check @PeriodPair.weierstrassP_half_periods_discriminant
 
 /-- The invariants `g₂` and `g₃` of a period lattice do not both vanish. -/
 example (L : PeriodPair) : L.g₂ ≠ 0 ∨ L.g₃ ≠ 0 := by
@@ -39,3 +40,7 @@ example (L : PeriodPair) :
     (4 * X ^ 3 - C L.g₂ * X - C L.g₃ : ℂ[X]).IsRoot (L.weierstrassP (L.ω₁ / 2)) := by
   rw [L.cubic_eq_mul_half_periods]
   simp
+
+/-- The half-period values of a period lattice are roots of a cubic with nonzero discriminant. -/
+example (L : PeriodPair) : L.g₂ ^ 3 - 27 * L.g₃ ^ 2 ≠ 0 :=
+  L.weierstrassP_half_periods_discriminant.2.2.2
