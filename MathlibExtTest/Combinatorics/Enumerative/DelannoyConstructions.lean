@@ -12,6 +12,49 @@ import MathlibExt.Combinatorics.Enumerative.DelannoyConstructions
 
 namespace MetaMathlibExt.DelannoyConstructions
 
+open Finset
+
+-- With k = 0 the two index conventions give the same nontrivial sum.
+example : genDelannoyLower 0 2 2 = 13 ∧ genDelannoyUpper 0 2 2 = 13 ∧
+    (∑ j ∈ Ico 0 (min 2 2 + 1), (2 : ℕ).choose (j - 0) * (2 : ℕ).choose j * 2 ^ j) = 13 ∧
+    (∑ j ∈ range (min 2 2 + 1), (2 : ℕ).choose (j + 0) * (2 : ℕ).choose j * 2 ^ j) = 13 := by
+  decide
+
+-- The upper formula uses j + k in the first binomial and stops at n when n < m.
+example : genDelannoyUpper 1 3 2 = 44 ∧
+    (∑ j ∈ range (min 3 2 + 1), (3 + 1).choose (j + 1) * (2 : ℕ).choose j * 2 ^ j) = 44 := by
+  decide
+
+-- The lower formula starts at k, not zero, and includes j = min m n.
+example : genDelannoyLower 1 2 2 = 8 ∧
+    (∑ j ∈ Ico 1 (min 2 2 + 1), (2 - 1).choose (j - 1) * (2 : ℕ).choose j * 2 ^ j) = 8 := by
+  decide
+
+-- At m = k < n the lower sum has exactly one term; the upper sum also stops at m.
+example : genDelannoyLower 1 1 3 = 6 ∧
+    (∑ j ∈ Ico 1 (min 1 3 + 1), (1 - 1).choose (j - 1) * (3 : ℕ).choose j * 2 ^ j) = 6 ∧
+    genDelannoyUpper 1 1 3 = 8 ∧
+    (∑ j ∈ range (min 1 3 + 1), (1 + 1).choose (j + 1) * (3 : ℕ).choose j * 2 ^ j) = 8 := by
+  decide
+
+-- Reindexing the lower formula gives the two terms at j = 0 and j = 1.
+example : genDelannoyLower 1 2 4 = 32 ∧
+    (∑ j ∈ range (min (2 - 1) (4 - 1) + 1),
+      (2 - 1).choose j * (4 : ℕ).choose (j + 1) * 2 ^ (j + 1)) = 32 := by
+  decide
+
+-- The named corollaries give the two entries at m = k < n.
+example : genDelannoyLower 1 1 3 + genDelannoyUpper 1 1 3 = 14 := by
+  rw [genDelannoyLower_eq_sum_two_pow 1 1 3 (by decide) (by decide),
+    genDelannoyUpper_eq_sum_two_pow 1 1 3]
+  decide
+
+-- A client can use either component of the unified theorem from this import.
+example : genDelannoyLower 1 2 2 = genDelannoyUpper 1 1 3 := by
+  rw [(genDelannoy_eq_sum_two_pow_unified 1 2 2).1 (by decide) (by decide),
+    (genDelannoy_eq_sum_two_pow_unified 1 1 3).2]
+  decide
+
 -- At the boundary n = 0, the formula has only its constant term.
 example (m : ℕ) : ordinaryRiordanPascalLikeMatrix m m 1 = 1 := by
   simpa using delannoy_eq_sum_choose_mul_choose_two_pow m 0
@@ -46,6 +89,16 @@ example : genDelannoyUpper 1 0 0 + genDelannoyUpper 1 1 0 = 3 := by
 -- The two upper-index-two entries are 14 and 30; their sum is D^1(3, 2).
 example : genDelannoyUpper 2 2 1 + genDelannoyUpper 2 3 1 = 44 := by
   rw [genDelannoyUpper_add_succ_left 2 2 1 (by decide)]
+  decide
+
+-- At the least positive upper index, the difference gives the index-zero family.
+example (m n : ℕ) : (genDelannoyUpper 1 (m + 1) n : ℤ) - genDelannoyUpper 1 m n =
+    genDelannoyUpper 0 (m + 1) n :=
+  genDelannoyUpper_succ_left_sub 1 m n le_rfl
+
+-- The adjacent entries 14 and 30 have difference 16, the index-one entry at (3, 1).
+example : (genDelannoyUpper 2 3 1 : ℤ) - genDelannoyUpper 2 2 1 = 16 := by
+  rw [genDelannoyUpper_succ_left_sub 2 2 1 (by decide)]
   decide
 
 -- At the first positive row and column zero, the difference is always two.
@@ -100,5 +153,23 @@ example (m : ℕ) : (2 : ℤ) ∣ seededArray 2 m 0 + seededArray 2 m 1 := by
   have h := delannoyArray_binomial_seeds_horizontalSum_modEq (seededArray 2)
     (fun _ _ => rfl) 2 (by decide) (fun _ => rfl) m 0
   exact h.dvd_iff.mpr (by decide)
+
+local notation "H" => (fun S : ℕ → ℕ → ℤ => fun m n => S m n + S m (n + 1))
+
+-- With zero seed index, three sums give a sharp uniform factor of eight.
+example : (∀ m n, (8 : ℤ) ∣ H^[3] (seededArray 0) m n) ∧
+    ∃ m n, ¬ (16 : ℤ) ∣ H^[3] (seededArray 0) m n :=
+  delannoyArray_binomial_seeds_two_pow_dvd (seededArray 0) (fun _ _ => rfl) 0 3
+    (by decide) (fun _ => rfl)
+
+-- For positive seed index, the origin need not witness sharpness.
+example : (4 : ℤ) ∣ H^[2] (seededArray 1) 0 0 ∧
+    ¬ (4 : ℤ) ∣ H^[2] (seededArray 1) 1 0 := by decide
+
+-- Three extra sums give a uniform factor of eight, but not sixteen.
+example : (∀ m n, (8 : ℤ) ∣ H^[5] (seededArray 2) m n) ∧
+    ∃ m n, ¬ (16 : ℤ) ∣ H^[5] (seededArray 2) m n :=
+  delannoyArray_binomial_seeds_two_pow_dvd (seededArray 2) (fun _ _ => rfl) 2 3
+    (by decide) (fun _ => rfl)
 
 end MetaMathlibExt.DelannoyConstructions

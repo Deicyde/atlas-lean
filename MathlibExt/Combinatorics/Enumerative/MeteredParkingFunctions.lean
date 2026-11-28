@@ -12,12 +12,26 @@ public import Mathlib.Data.Fin.VecNotation
 public import Mathlib.Data.Finset.Card
 public import Mathlib.Data.Fintype.Pi
 public import Mathlib.Order.Interval.Finset.Nat
+public import MathlibExt.Combinatorics.Enumerative.ParkingFunction
 
 /-!
 # Metered parking functions
 
 Cars park in order. When a car arrives, only the previous `t` cars can still occupy spots.
 Spots and preferences are numbered from zero.
+
+For a tail of length `m - 1`, with `1 ≤ m ≤ n` and `1 ≤ k ≤ n`, the admissible first
+preferences on `n` spots are exactly the zero-based preferences below `k` if and only if
+that tail is a parking-function shuffle with parameter `k`.
+
+## References
+
+* Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*,
+  INTEGERS 25 (2025), Article A73, pp. 1–37, Section 4, Definitions 5–6 and Theorem 3.
+* Persi Diaconis and Angela Hicks, *Probabilizing parking functions*, Advances in Applied
+  Mathematics 89 (2017), pp. 125–155, p. 129 and Theorem 1 (the square parking shuffle).
+* Richard Kenyon and Mei Yin, *Parking Functions: From Combinatorics to Probability*, Methodology
+  and Computing in Applied Probability 25 (2023), Article 32, pp. 1–30 (partial parking shuffles).
 -/
 
 namespace MetaMathlibExt
@@ -41,6 +55,94 @@ public def meteredOutcome (t n : ℕ) (prefs : List ℕ) : List (Option ℕ) :=
     (fun out a => out ++ [(List.range' a (n - a)).find?
       (fun s => decide (s ∉ (out.drop (out.length - t)).filterMap id))])
     []
+
+private theorem foldl_append_singleton_suffix {α β : Type*} (next : List β → α → β)
+    (prefs : List α) (out : List β) :
+    ∃ tail, prefs.foldl (fun out a => out ++ [next out a]) out = out ++ tail ∧
+      tail.length = prefs.length := by
+  induction prefs generalizing out with
+  | nil => exact ⟨[], by simp, rfl⟩
+  | cons a prefs ih =>
+    obtain ⟨tail, h, hlen⟩ := ih (out ++ [next out a])
+    exact ⟨next out a :: tail, by simpa [List.append_assoc] using h, by simp [hlen]⟩
+
+private theorem getElem?_meteredOutcome {t n i : ℕ} (prefs : List ℕ) (hi : i < prefs.length) :
+    let out := meteredOutcome t n (prefs.take i)
+    (meteredOutcome t n prefs)[i]? = some ((List.range' prefs[i] (n - prefs[i])).find?
+      (fun s => decide (s ∉ (out.drop (out.length - t)).filterMap id))) := by
+  dsimp only
+  let out := meteredOutcome t n (prefs.take i)
+  let next (out : List (Option ℕ)) (a : ℕ) :=
+    (List.range' a (n - a)).find? (fun s => decide (s ∉ (out.drop (out.length - t)).filterMap id))
+  obtain ⟨tail, hout, hlen⟩ := foldl_append_singleton_suffix next (prefs.take i) []
+  have hi' : out.length = i := by
+    change out = [] ++ tail at hout
+    simpa [hout, List.length_take, Nat.min_eq_left (Nat.le_of_lt hi)] using hlen
+  have hsplit : (prefs.take i ++ [prefs[i]]) ++ prefs.drop (i + 1) = prefs := by
+    rw [← List.take_succ_eq_append_getElem hi, List.take_append_drop]
+  obtain ⟨rest, hrest, _⟩ :=
+    foldl_append_singleton_suffix next (prefs.drop (i + 1)) (out ++ [next out prefs[i]])
+  have hwhole : meteredOutcome t n prefs = (out ++ [next out prefs[i]]) ++ rest := by
+    conv_lhs => rw [← hsplit]
+    simp only [meteredOutcome, List.foldl_append, List.foldl_cons, List.foldl_nil]
+    exact hrest
+  change (meteredOutcome t n prefs)[i]? = some (next out prefs[i])
+  rw [hwhole, List.append_assoc, List.getElem?_append_right (by omega : out.length ≤ i),
+    show i - out.length = 0 by omega]
+  rfl
+
+/-- **Displacement bound in the metered scheme.** Let $t$, $m$, $n$ be natural numbers, let
+$f : \{0, \dots, m - 1\} \to \{0, \dots, n - 1\}$ be a preference function and let $i < m$ be a
+car. Under the $t$-metered parking scheme on $n$ spots, if car $i$ parks in spot $s$ then
+$s \le f(i) + t$, that is, its displacement is at most $t$; and if car $i$ fails to park then
+$f(i) + t \ge n$.
+
+In the source's one-based numbering, with preference $a_i = f(i) + 1$, a car that fails to park
+has $a_i \ge n - t + 1$.
+
+Source: Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking
+Functions*, INTEGERS 25 (2025), Article A73, Proposition 5 (`integers-2025-A73-prop-5`). -/
+public theorem meteredOutcome_displacement_le {m n t : ℕ} (f : Fin m → Fin n) (i : Fin m) :
+    (∀ s, (meteredOutcome t n (List.ofFn fun i => (f i : ℕ)))[(i : ℕ)]? = some (some s) →
+        s ≤ (f i : ℕ) + t) ∧
+      ((meteredOutcome t n (List.ofFn fun i => (f i : ℕ)))[(i : ℕ)]? = some none →
+        n ≤ (f i : ℕ) + t) := by
+  let a := (f i : ℕ)
+  let out := meteredOutcome t n ((List.ofFn fun i => (f i : ℕ)).take i)
+  let occupied := (out.drop (out.length - t)).filterMap id
+  let free (s : ℕ) := decide (s ∉ occupied)
+  have hentry : (meteredOutcome t n (List.ofFn fun i => (f i : ℕ)))[(i : ℕ)]? =
+      some ((List.range' a (n - a)).find? free) := by
+    simpa [a, out, occupied, free] using getElem?_meteredOutcome (t := t) (n := n)
+      (List.ofFn fun i => (f i : ℕ)) (i := (i : ℕ)) (by simp)
+  rw [hentry]
+  simp only [Option.some.injEq]
+  change (∀ s, (List.range' a (n - a)).find? free = some s → s ≤ a + t) ∧
+    ((List.range' a (n - a)).find? free = none → n ≤ a + t)
+  by_cases h : a + t < n
+  · -- If the first `t + 1` spots exist, at least one is free.
+    have hcap : occupied.length ≤ t :=
+      (List.length_filterMap_le id _).trans (by simp only [List.length_drop]; omega)
+    obtain ⟨s, hs⟩ : ∃ s, (List.range' a (t + 1)).find? free = some s := by
+      apply Option.ne_none_iff_exists'.mp
+      intro hnone
+      have hsub : List.range' a (t + 1) ⊆ occupied := by
+        intro x hx
+        simpa [free] using List.find?_eq_none.mp hnone x hx
+      have hlen := (List.nodup_range' 1).length_le_of_subset hsub
+      simp only [List.length_range'] at hlen
+      omega
+    have hpref : List.range' a (t + 1) <+: List.range' a (n - a) := by
+      refine ⟨List.range' (a + (t + 1)) (n - a - (t + 1)), ?_⟩
+      rw [List.range'_append_1, Nat.add_sub_of_le (by omega : t + 1 ≤ n - a)]
+    have hs' := hpref.find?_eq_some hs
+    have hmem := List.mem_range'_1.mp (List.mem_of_find?_eq_some hs)
+    simp only [hs', Option.some.injEq, reduceCtorEq, false_implies, and_true]
+    rintro _ rfl
+    omega
+  · refine ⟨fun s hs => ?_, fun _ => by omega⟩
+    have hmem := List.mem_range'_1.mp (List.mem_of_find?_eq_some hs)
+    omega
 
 /-- **A 1-metered example in which every car parks.** In the $1$-metered parking scheme on two
 spots $\{0, 1\}$, if three cars arrive all preferring spot $0$, then they park in spots $0$, $1$
@@ -278,6 +380,134 @@ public theorem isParkingShuffle_example :
     IsParkingShuffle 6 8 6 ![2, 6, 1, 0, 6, 1] := by
   unfold IsParkingShuffle
   decide
+
+/-- **Parking-function shuffles and the first entry.** Let $1 \le m \le n$ and $1 \le k \le n$,
+and let $w = (w_1, \dots, w_{m-1})$ be a word with entries in $\{0, \dots, n-1\}$. Then the set
+of spots $j \in \{0, \dots, n-1\}$ for which $(j, w_1, \dots, w_{m-1})$ is a partial parking
+function with $m$ cars and $n$ spots equals $\{0, \dots, k-1\}$ if and only if $w$ lies in the
+set $\mathrm{Sh}_m(k - 1, n - k)$ of $(m, n)$-parking-function shuffles with parameter $k$.
+
+Source: Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking
+Functions*, INTEGERS 25 (2025), Article A73, Theorem 3 (`integers-2025-A73-thm-3`), with
+Definition 6 (the sets `A^n`). -/
+public theorem firstEntrySet_eq_iff_isParkingShuffle {m' n k : ℕ} (hmn : m' + 1 ≤ n)
+    (hk : k ∈ Finset.Icc 1 n) (π : Fin m' → Fin n) :
+    (Finset.univ.filter fun j : Fin n => IsPartialParkingFunction (m' + 1) n (Fin.cons j π)) =
+        Finset.univ.filter (fun j : Fin n => (j : ℕ) < k) ↔
+      IsParkingShuffle m' n k π := by
+  obtain ⟨hkpos, hkn⟩ := Finset.mem_Icc.mp hk
+  let tailCount (t : ℕ) := (Finset.univ.filter fun i => t ≤ (π i : ℕ)).card
+  have tailCount_zero : tailCount 0 = m' := by simp [tailCount]
+  -- If no letter equals `k - 1`, the letters at least `t` split across that spot.
+  have split (hgap : ∀ i, (π i : ℕ) + 1 ≠ k) (t : ℕ) (ht : t ≤ k - 1) :
+      tailCount t =
+        (Finset.univ.filter fun i => t ≤ (π i : ℕ) ∧ (π i : ℕ) < k - 1).card +
+          tailCount k := by
+    have h := Finset.card_filter_add_card_filter_not
+      (s := Finset.univ.filter fun i => t ≤ (π i : ℕ)) (fun i => (π i : ℕ) < k - 1)
+    simp only [Finset.filter_filter] at h
+    have hhigh :
+        (Finset.univ.filter fun i => t ≤ (π i : ℕ) ∧ ¬(π i : ℕ) < k - 1) =
+          Finset.univ.filter (fun i => k ≤ (π i : ℕ)) := by
+      ext i
+      simp only [Finset.mem_filter, Finset.mem_univ, true_and]
+      have := hgap i
+      omega
+    rw [hhigh] at h
+    exact h.symm
+  rw [Finset.ext_iff]
+  simp only [Finset.mem_filter, Finset.mem_univ, true_and, isPartialParkingFunction_cons_iff,
+    Fin.le_def]
+  change ((∀ j : Fin n,
+    (∀ t : Fin n, (if (t : ℕ) ≤ (j : ℕ) then 1 else 0) + tailCount t ≤ n - (t : ℕ)) ↔
+      (j : ℕ) < k) ↔ _)
+  constructor
+  · intro h
+    let last : Fin n := ⟨k - 1, by omega⟩
+    have hlast := (h last).mpr (by change k - 1 < k; omega)
+    -- When `k < n`, moving the first preference from `k - 1` to `k` changes
+    -- only the inequality at threshold `k`, so that bound must be tight.
+    have htight : tailCount k = n - k := by
+      by_cases hlt : k < n
+      · let next : Fin n := ⟨k, hlt⟩
+        have hbound := hlast next
+        change (if k ≤ k - 1 then 1 else 0) + tailCount k ≤ n - k at hbound
+        simp only [ite_eq_right (show ¬k ≤ k - 1 by omega), zero_add] at hbound
+        by_contra hne
+        have hnext : (next : ℕ) < k := (h next).mp (by
+          intro t
+          change (if (t : ℕ) ≤ k then 1 else 0) + tailCount t ≤ n - (t : ℕ)
+          by_cases ht : (t : ℕ) = k
+          · simp only [ht, le_refl, ite_true]
+            omega
+          · have hsame : ((t : ℕ) ≤ k) ↔ ((t : ℕ) ≤ k - 1) := by omega
+            simpa only [hsame] using hlast t)
+        exact (lt_irrefl k) hnext
+      · have hempty : (Finset.univ.filter fun i => k ≤ (π i : ℕ)) = ∅ := by
+          refine Finset.filter_eq_empty_iff.mpr fun i _ hi => ?_
+          have := (π i).isLt
+          omega
+        simp [tailCount, hempty, Nat.sub_eq_zero_of_le (le_of_not_gt hlt)]
+    -- The threshold at `k - 1` has room for the prepended letter but no equal tail letter.
+    have hprev : tailCount (k - 1) ≤ tailCount k := by
+      have hbound := hlast last
+      change (if k - 1 ≤ k - 1 then 1 else 0) + tailCount (k - 1) ≤ n - (k - 1) at hbound
+      simp only [le_refl, ite_true] at hbound
+      omega
+    have hsubset : (Finset.univ.filter fun i => k ≤ (π i : ℕ)) ⊆
+        Finset.univ.filter (fun i => k - 1 ≤ (π i : ℕ)) :=
+      Finset.monotone_filter_right _ fun _ _ hi => (Nat.sub_le k 1).trans hi
+    have heq := Finset.eq_of_subset_of_card_le hsubset hprev
+    have hgap (i : Fin m') (hi : (π i : ℕ) + 1 = k) : False := by
+      have hmem : i ∈ Finset.univ.filter (fun i => k - 1 ≤ (π i : ℕ)) := by
+        simp only [Finset.mem_filter, Finset.mem_univ, true_and]
+        omega
+      rw [← heq] at hmem
+      have := (Finset.mem_filter.mp hmem).2
+      omega
+    refine ⟨hgap, ?_, ?_, ?_, ?_⟩
+    · have hsum := split hgap 0 (Nat.zero_le _)
+      simp only [tailCount_zero, Nat.zero_le, true_and] at hsum
+      have hlo (i : Fin m') : (π i : ℕ) + 1 < k ↔ (π i : ℕ) < k - 1 := by omega
+      simp only [hlo]
+      omega
+    · simpa only [Nat.lt_succ_iff] using htight
+    · intro t ht
+      have hbound := hlast ⟨t, by omega⟩
+      change (if t ≤ k - 1 then 1 else 0) + tailCount t ≤ n - t at hbound
+      rw [ite_eq_left ht.le, split hgap t ht.le] at hbound
+      omega
+    · intro t ht
+      obtain ⟨htk, htn⟩ := Finset.mem_Ico.mp ht
+      have hbound := hlast ⟨t, htn⟩
+      change (if t ≤ k - 1 then 1 else 0) + tailCount t ≤ n - t at hbound
+      simpa only [ite_eq_right (show ¬t ≤ k - 1 by omega), zero_add] using hbound
+  · rintro ⟨hgap, _, htight, hlow, hhigh⟩ j
+    have hcount : tailCount k = n - k := by simpa only [Nat.lt_succ_iff] using htight
+    constructor
+    · intro hj
+      by_contra! hkj
+      have hbound := hj ⟨k, hkj.trans_lt j.isLt⟩
+      change (if k ≤ (j : ℕ) then 1 else 0) + tailCount k ≤ n - k at hbound
+      rw [ite_eq_left hkj, hcount] at hbound
+      omega
+    · intro hj t
+      by_cases ht : k ≤ (t : ℕ)
+      · simp only [ite_eq_right (show ¬(t : ℕ) ≤ (j : ℕ) by omega), zero_add]
+        exact hhigh t (Finset.mem_Ico.mpr ⟨ht, t.isLt⟩)
+      · have hfirst : (if (t : ℕ) ≤ (j : ℕ) then 1 else 0) ≤ 1 := by split <;> simp
+        by_cases ht0 : (t : ℕ) = 0
+        · simpa only [ht0, tailCount_zero, Nat.zero_le, ite_true, Nat.sub_zero, Nat.add_comm]
+            using hmn
+        have hsplit := split hgap t (by omega)
+        by_cases htk : (t : ℕ) < k - 1
+        · have := hlow t htk
+          omega
+        · have hempty : (Finset.univ.filter
+              fun i => (t : ℕ) ≤ (π i : ℕ) ∧ (π i : ℕ) < k - 1).card = 0 := by
+            rw [Finset.card_eq_zero]
+            exact Finset.filter_eq_empty_iff.mpr fun _ _ hi => htk (hi.1.trans_lt hi.2)
+          omega
 
 end
 

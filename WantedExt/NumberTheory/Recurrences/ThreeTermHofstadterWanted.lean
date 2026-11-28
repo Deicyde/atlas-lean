@@ -10,26 +10,15 @@ module
 
 import Batteries.Util.ProofWanted
 public import Mathlib.Data.List.GetD
+public import MathlibExt.NumberTheory.Recurrences.ThreeTermHofstadterLinearDies
 public import MathlibExt.NumberTheory.Recurrences.ThreeTermHofstadterSevenCycle
+public import MathlibExt.NumberTheory.Recurrences.ThreeTermHofstadterSixteenCycleOne
 public import MathlibExt.NumberTheory.Recurrences.ThreeTermHofstadterSixteenCycleTwo
 public import MathlibExt.NumberTheory.Recurrences.ThreeTermHofstadterTwoCycle
 
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Death of the unpadded sequence from $1, \dots, N$ for $N = 3$, $4$ or $N \ge 10$.** Let
-$N$ be a natural number with $N = 3$, $N = 4$ or $N \ge 10$, and let $B_N$ be the sequence with
-initial conditions $B_N(i) = i$ for $1 \le i \le N$, continued without padding by the recurrence
-$B_N(n) = B_N(n - B_N(n-1)) + B_N(n - B_N(n-2)) + B_N(n - B_N(n-3))$. Then $B_N$ dies: there is
-a natural number $T$ such that $B_N(1), \dots, B_N(T)$ can be computed and $B_N(T + 1)$ cannot,
-because the recurrence refers to a nonpositive index or to an index not yet computed.
-
-Source: Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear
-Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Theorem 1
-(`jis-2024-24.7.4-thm-1`). -/
-public theorem_wanted threeTermHofstadter_linear_dies {N : ℕ} (hN : N = 3 ∨ N = 4 ∨ 10 ≤ N) :
-    ∃ T, ThreeTermHofstadterEndsAfter false ((List.range N).map fun i : ℕ => (i : ℤ) + 1) T
 
 /-- **Period-seven pattern of the padded sequence from $1, \dots, N$.** Let $N \ge 72$ be a
 natural number, and let $B$ be the sequence with $B(n) = 0$ for $n \le 0$ and $B(i) = i$ for
@@ -84,37 +73,6 @@ public theorem_wanted threeTermHofstadter_fiveCycle {K : ℕ} (hK : 3 ≤ K) {mu
     threeTermHofstadterTerm true ([1, 2, 3] ++ a ++ [K + mu, 3, K + 3, K + mu + 1, 5])
         (K + 5 * k + r) =
       some ([5, K + 3 * k + mu, 3, K + 5 * k + 3, K + 3 * k + mu + 1].getD r 0 : ℤ)
-
-/-- **First sixteen-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$ be
-a natural number and let $\lambda$, $\mu_1$, $\mu_2$, $\gamma$ be integers with $\lambda > 31 + K$
-and $\mu_1, \mu_2, \gamma > \lambda$. Let $a_1, \dots, a_K$ be arbitrary integers and let $B$ be
-the padded three-term Hofstadter-like sequence with initial conditions
-$a_1, \dots, a_K, \lambda, 7, \mu_2, 16, \mu_2, 16, \mu_1, \lambda, 7, \mu_2, 16, 2\mu_2, 16,
-\mu_2, 25, \gamma, \lambda, 7$. Then for all natural numbers $k$ and $r \le 15$ with
-$K + 1 \le K + 16k + r \le \lambda$, the term $B(K + 16k + r)$ is defined, and these terms are
-$B(K + 16k) = \mu_1 2^{k-1} + \gamma - \mu_1$, $B(K + 16k + 1) = \lambda$, $B(K + 16k + 2) = 7$,
-$B(K + 16k + 3) = \mu_2 2^k$, $B(K + 16k + 4) = 16$, $B(K + 16k + 5) = \mu_2 2^k$,
-$B(K + 16k + 6) = 16$, $B(K + 16k + 7) = \mu_1 2^k$, $B(K + 16k + 8) = \lambda$,
-$B(K + 16k + 9) = 7$, $B(K + 16k + 10) = \mu_2 2^k$, $B(K + 16k + 11) = 16$,
-$B(K + 16k + 12) = \mu_2 2^{k+1}$, $B(K + 16k + 13) = 16$, $B(K + 16k + 14) = \mu_2 2^k$ and
-$B(K + 16k + 15) = 25$.
-
-Corrected: the paper prints $B(K + 16k + 12) = \mu_2 2^k$, which contradicts its own initial
-value $B(K + 12) = 2\mu_2$; the exponent $k + 1$ matches the initial conditions and every later
-term.
-
-Source: Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear
-Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 6,
-citing the author's thesis, Proposition 9.13 (`jis-2024-24.7.4-lem-6`). -/
-public theorem_wanted threeTermHofstadter_sixteenCycle_one {K : ℕ} (hK : 1 ≤ K)
-    {lam mu₁ mu₂ ga : ℤ} (hlam : 31 + (K : ℤ) < lam) (hmu₁ : lam < mu₁) (hmu₂ : lam < mu₂)
-    (hga : lam < ga) (a : List ℤ) (ha : a.length = K) (k r : ℕ) (hr : r < 16)
-    (hlo : K + 1 ≤ K + 16 * k + r) (hhi : ((K + 16 * k + r : ℕ) : ℤ) ≤ lam) :
-    threeTermHofstadterTerm true
-        (a ++ [lam, 7, mu₂, 16, mu₂, 16, mu₁, lam, 7, mu₂, 16, 2 * mu₂, 16, mu₂, 25, ga, lam, 7])
-        (K + 16 * k + r) =
-      some ([mu₁ * 2 ^ (k - 1) + ga - mu₁, lam, 7, mu₂ * 2 ^ k, 16, mu₂ * 2 ^ k, 16,
-        mu₁ * 2 ^ k, lam, 7, mu₂ * 2 ^ k, 16, mu₂ * 2 ^ (k + 1), 16, mu₂ * 2 ^ k, 25].getD r 0)
 
 end
 

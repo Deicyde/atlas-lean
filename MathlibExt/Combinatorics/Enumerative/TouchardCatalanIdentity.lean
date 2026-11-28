@@ -8,10 +8,14 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import Mathlib.Algebra.Field.Rat
 public import Mathlib.Combinatorics.Enumerative.Catalan.Basic
+import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Normed.Field.Lemmas
 import Mathlib.Algebra.Order.Star.Rat
+import Mathlib.Data.Nat.Choose.Sum
+import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Ring
@@ -263,5 +267,210 @@ theorem touchard_catalan_identity (n : Nat) :
     rw [← hfin]
     exact Finset.sum_congr rfl (fun i _ => by simp [hF])
   exact (Nat.cast_injective h2).symm
+
+open Finset in
+private theorem catalan_binomial_column (n s : ℕ) (hs : s ≤ n) :
+    ∑ k ∈ range (n + 1), (n.choose k : ℚ) * k.choose s =
+      (n.choose s : ℚ) * 2 ^ (n - s) := by
+  rw [show n + 1 = s + (n - s + 1) by omega, sum_range_add]
+  have zeroPart : ∑ k ∈ range s, (n.choose k : ℚ) * k.choose s = 0 := by
+    apply sum_eq_zero
+    intro k hk
+    rw [Nat.choose_eq_zero_of_lt (mem_range.mp hk), Nat.cast_zero, mul_zero]
+  rw [zeroPart, zero_add]
+  have hsum : ∑ k ∈ range (n - s + 1), ((n - s).choose k : ℚ) = 2 ^ (n - s) := by
+    exact_mod_cast Nat.sum_range_choose (n - s)
+  rw [← hsum, mul_sum]
+  apply sum_congr rfl
+  intro k _
+  have h := Nat.choose_mul (n := n) (k := s + k) (s := s) (by omega)
+  rw [show s + k - s = k by omega] at h
+  exact_mod_cast h
+
+-- Extend the Touchard sum to a common range so that the two finite sums can be exchanged.
+open Finset in
+private theorem touchard_div_pow (k n : ℕ) (hkn : k ≤ n) :
+    (catalan (k + 1) : ℚ) / 2 ^ k =
+      ∑ j ∈ range (n / 2 + 1), (k.choose (2 * j) : ℚ) * (catalan j : ℚ) / 2 ^ (2 * j) := by
+  have h := congrArg (fun x : ℕ => (x : ℚ)) (touchard_catalan_identity k)
+  change (catalan (k + 1) : ℚ) = _ at h
+  rw [Nat.cast_sum] at h
+  rw [h, div_eq_mul_inv, sum_mul]
+  calc
+    _ = ∑ j ∈ range (k / 2 + 1), (k.choose (2 * j) : ℚ) * (catalan j : ℚ) / 2 ^ (2 * j) := by
+      apply sum_congr rfl
+      intro j hj
+      have hle : 2 * j ≤ k := by have := mem_range.mp hj; omega
+      push_cast
+      rw [pow_sub₀ _ (by norm_num : (2 : ℚ) ≠ 0) hle]
+      field_simp
+    _ = _ := by
+      apply sum_subset (range_mono (by omega))
+      intro j _ hj
+      have hlt : k < 2 * j := by rw [mem_range] at hj; omega
+      rw [Nat.choose_eq_zero_of_lt hlt, Nat.cast_zero, zero_mul, zero_div]
+
+private theorem catalan_step_Q (k : ℕ) :
+    (catalan (k + 1) : ℚ) = (2 * (k : ℚ) + 1) / (k + 2) * 2 * catalan k := by
+  have h : ((k : ℚ) + 2) * (catalan (k + 1) : ℚ) = 2 * (2 * (k : ℚ) + 1) * catalan k := by
+    exact_mod_cast touchard_catalan_rec k
+  field_simp
+  linear_combination h
+
+open Finset in
+/-- **Binomial transform of weighted Catalan numbers.** Write $C_m = \binom{2m}{m}/(m+1)$ for the
+$m$-th Catalan number. For every natural number $n$,
+$$\sum_{k=0}^{n} \binom{n}{k} \frac{2k+1}{k+2} \cdot \frac{2}{2^k} C_k =
+\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{2^n}{2^{4k}} C_k.$$
+
+Source: Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related
+Sums*, INTEGERS 26 (2026), Article A19, Proposition 5 (`integers-2026-A19-prop-5`). -/
+public theorem sum_choose_two_mul_add_one_div_catalan (n : ℕ) :
+    ∑ k ∈ range (n + 1), (n.choose k : ℚ) * (2 * k + 1) / (k + 2) * 2 / 2 ^ k * catalan k =
+      ∑ k ∈ range (n / 2 + 1), (n.choose (2 * k) : ℚ) * 2 ^ n / 2 ^ (4 * k) * catalan k := by
+  calc
+    _ = ∑ k ∈ range (n + 1), (n.choose k : ℚ) * ((catalan (k + 1) : ℚ) / 2 ^ k) := by
+      apply sum_congr rfl
+      intro k _
+      rw [catalan_step_Q]
+      ring
+    _ = ∑ k ∈ range (n + 1), ∑ j ∈ range (n / 2 + 1),
+        ((n.choose k : ℚ) * k.choose (2 * j)) * ((catalan j : ℚ) / 2 ^ (2 * j)) := by
+      apply sum_congr rfl
+      intro k hk
+      rw [touchard_div_pow k n (by simpa using hk), mul_sum]
+      apply sum_congr rfl
+      intro j _
+      ring
+    _ = _ := by
+      rw [sum_comm]
+      apply sum_congr rfl
+      intro j hj
+      have hle : 2 * j ≤ n := by have := mem_range.mp hj; omega
+      rw [← sum_mul, catalan_binomial_column n (2 * j) hle,
+        pow_sub₀ _ (by norm_num : (2 : ℚ) ≠ 0) hle,
+        show 4 * j = 2 * j + 2 * j by omega, pow_add]
+      field_simp
+
+open Finset in
+private def weightedBinomial (x : ℚ) (a : ℕ → ℚ) (n : ℕ) : ℚ :=
+  ∑ k ∈ range (n + 1), (n.choose k : ℚ) * x ^ (n - k) * a k
+
+open Finset in
+private theorem weightedBinomial_comp (x y : ℚ) (a : ℕ → ℚ) (n : ℕ) :
+    weightedBinomial x (weightedBinomial y a) n = weightedBinomial (x + y) a n := by
+  -- Swap the two sums over `i ≤ k ≤ n` so that the inner sum is a binomial expansion.
+  simp only [weightedBinomial, mul_sum]
+  have hswap := sum_Ico_Ico_comm 0 (n + 1) (fun i k =>
+    (n.choose k : ℚ) * x ^ (n - k) * ((k.choose i : ℚ) * y ^ (k - i) * a i))
+  simp only [Nat.Ico_zero_eq_range] at hswap
+  rw [← hswap]
+  refine sum_congr rfl fun i hi => ?_
+  have hin : i ≤ n := by simpa using mem_range.mp hi
+  rw [sum_Ico_eq_sum_range, show n + 1 - i = n - i + 1 by omega, add_comm x y,
+    add_pow, mul_sum, sum_mul]
+  refine sum_congr rfl fun j hj => ?_
+  have hchoose : (n.choose (i + j) : ℚ) * ((i + j).choose i : ℚ) =
+      (n.choose i : ℚ) * ((n - i).choose j : ℚ) := by
+    exact_mod_cast (Nat.choose_mul (n := n) (Nat.le_add_right i j)).trans
+      (by rw [Nat.add_sub_cancel_left])
+  rw [show n - (i + j) = n - i - j by omega, Nat.add_sub_cancel_left]
+  linear_combination (x ^ (n - i - j) * y ^ j * a i) * hchoose
+
+private def evenCatalan (k : ℕ) : ℚ := if k % 2 = 0 then catalan (k / 2) else 0
+
+open Finset in
+private theorem weightedBinomial_evenCatalan (x : ℚ) (n : ℕ) :
+    weightedBinomial x evenCatalan n =
+      ∑ i ∈ range (n / 2 + 1), (n.choose (2 * i) : ℚ) * x ^ (n - 2 * i) * catalan i := by
+  simp only [weightedBinomial, evenCatalan, mul_ite, mul_zero, ← sum_filter]
+  symm
+  refine sum_nbij' (fun i => 2 * i) (fun k => k / 2) ?_ ?_ ?_ ?_ ?_
+  · intro i hi
+    simp only [mem_range, mem_filter] at hi ⊢
+    exact ⟨by omega, by omega⟩
+  · intro k hk
+    simp only [mem_range, mem_filter] at hk ⊢
+    omega
+  · intro i _
+    omega
+  · intro k hk
+    simp only [mem_filter] at hk
+    omega
+  · intro i _
+    rw [show 2 * i / 2 = i by omega]
+
+private theorem catalan_succ_eq_weight (k : ℕ) :
+    (catalan (k + 1) : ℚ) = 2 * (2 * (k : ℚ) + 1) / (k + 2) * catalan k := by
+  rw [div_mul_eq_mul_div₀, eq_div_iff (by positivity : (k : ℚ) + 2 ≠ 0),
+    mul_comm (catalan (k + 1) : ℚ)]
+  exact_mod_cast touchard_catalan_rec k
+
+open Finset in
+/-- **Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$.** Let
+$C_k = \frac{1}{k+1}\binom{2k}{k}$ denote the $k$-th Catalan number. For every natural number
+$n$, the following identity holds in $\mathbb{Q}$:
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2(2k+1)}{k+2}\, C_k
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k.$$
+
+Source: Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related
+Sums*, INTEGERS 26 (2026), Article A19, Proposition 6 (`integers-2026-A19-prop-6`). -/
+theorem sum_neg_one_pow_sub_choose_catalan (n : ℕ) :
+    ∑ k ∈ range (n + 1), (-1 : ℚ) ^ (n - k) * (n.choose k : ℚ) * (2 * (2 * k + 1)) / (k + 2) *
+        catalan k =
+      ∑ k ∈ range (n / 2 + 1), (n.choose (2 * k) : ℚ) * catalan k := by
+  have hTouchard (k : ℕ) : (catalan (k + 1) : ℚ) = weightedBinomial 2 evenCatalan k := by
+    rw [weightedBinomial_evenCatalan]
+    push_cast [touchard_catalan_identity k]
+    exact sum_congr rfl fun i _ => by ring
+  calc
+    _ = weightedBinomial (-1) (weightedBinomial 2 evenCatalan) n := by
+      change _ = ∑ k ∈ range (n + 1),
+        (n.choose k : ℚ) * (-1 : ℚ) ^ (n - k) * weightedBinomial 2 evenCatalan k
+      refine sum_congr rfl fun k _ => ?_
+      rw [← hTouchard, catalan_succ_eq_weight]
+      ring
+    _ = weightedBinomial 1 evenCatalan n := by rw [weightedBinomial_comp]; norm_num
+    _ = _ := by rw [weightedBinomial_evenCatalan]; simp
+
+open Finset
+
+/-- **Even-index binomial sum of weighted central binomial coefficients.** Write
+$C_m = \binom{2m}{m}/(m+1)$ for the $m$-th Catalan number. For every natural number $n$,
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{(k+1) 2^{2k}} \binom{2k}{k} =
+\frac{2}{2^n (n+2)} (2n+1) C_n.$$
+
+Source: Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related
+Sums*, INTEGERS 26 (2026), Article A19, Proposition 4 (`integers-2026-A19-prop-4`). -/
+theorem sum_choose_even_centralBinom_div_succ (n : ℕ) :
+    ∑ k ∈ range (n / 2 + 1),
+        (n.choose (2 * k) : ℚ) / (k + 1) / 2 ^ (2 * k) * ((2 * k).choose k : ℚ) =
+      2 / 2 ^ n / (n + 2) * (2 * n + 1) * catalan n := by
+  have hcentral (k : ℕ) : ((2 * k).choose k : ℚ) = ((k : ℚ) + 1) * catalan k := by
+    exact_mod_cast (succ_mul_catalan_eq_centralBinom k).symm
+  have htouchard : (catalan (n + 1) : ℚ) =
+      ∑ k ∈ range (n / 2 + 1),
+        (catalan k : ℚ) * 2 ^ (n - 2 * k) * (n.choose (2 * k) : ℚ) := by
+    exact_mod_cast touchard_catalan_identity n
+  have hrec : ((n : ℚ) + 2) * catalan (n + 1) =
+      2 * (2 * (n : ℚ) + 1) * catalan n := by
+    exact_mod_cast touchard_catalan_rec n
+  calc
+    _ = (catalan (n + 1) : ℚ) / 2 ^ n := by
+      conv_rhs => rw [htouchard, div_eq_mul_inv, Finset.sum_mul]
+      refine Finset.sum_congr rfl ?_
+      intro k hk
+      have hkn : 2 * k ≤ n := by
+        have hk' := mem_range.mp hk
+        omega
+      have hpow : (2 : ℚ) ^ n = 2 ^ (n - 2 * k) * 2 ^ (2 * k) := by
+        rw [← pow_add, Nat.sub_add_cancel hkn]
+      rw [hcentral, hpow]
+      field_simp
+    _ = _ := by
+      have hcat : (catalan (n + 1) : ℚ) = 2 * (2 * (n : ℚ) + 1) * catalan n / (n + 2) :=
+        (eq_div_iff (by positivity)).2 (by rw [mul_comm]; exact hrec)
+      rw [hcat]
+      ring
 
 end MetaMathlibExt

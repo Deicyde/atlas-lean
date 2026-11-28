@@ -12,9 +12,11 @@ import Batteries.Util.ProofWanted
 public import Mathlib.Data.Nat.Fib.Basic
 public import MathlibExt.Combinatorics.Enumerative.NarayanaSequence
 public import MathlibExt.NumberTheory.BinomialParitySum
+public import MathlibExt.NumberTheory.BinomialParitySumFive
 public import MathlibExt.NumberTheory.LucasSequence
 public import MathlibExt.NumberTheory.PadovanSequence
 public import MathlibExt.NumberTheory.RunLengthTransformLinearRecurrence
+public import MathlibExt.NumberTheory.BinomialModTwoRunLengthRunLengthTransformChooseAddSubSucc
 
 /-!
 # Sums of products of binomial coefficients mod 2 as run length transforms
@@ -67,18 +69,6 @@ Sequences*, INTEGERS 24 (2024), Article A73, Theorem 5. -/
 public theorem_wanted runLengthTransform_choose_add_two_mul_one_two (n : ℕ) :
     ((∑ k ∈ Finset.range (n + 1), ((n + 2 * k).choose (2 * k) * n.choose k) % 2 : ℕ) : ℤ) =
       runLengthTransform (fun i => if i = 0 then 1 else 2) n
-
-/-- **Sum of $\binom{n+k}{n-k}\binom{n}{k} \bmod 2$ as a run length transform.** For every
-natural number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+k}{n-k}\binom{n}{k} \bmod 2\bigr)$
-equals the value at $n$ of the run length transform of the sequence $S(i) = i + 1$ of positive
-integers $1, 2, 3, \dots$.
-
-Source: Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and
-2-Regular
-Sequences*, INTEGERS 24 (2024), Article A73, Theorem 6. -/
-public theorem_wanted runLengthTransform_choose_add_sub_succ (n : ℕ) :
-    ((∑ k ∈ Finset.range (n + 1), ((n + k).choose (n - k) * n.choose k) % 2 : ℕ) : ℤ) =
-      runLengthTransform (fun i => (i + 1 : ℤ)) n
 
 /-- **Rampersad–Wiebe Theorem 7.** Let $(N_j)_{j \ge 0}$ be Narayana's cows sequence, $N_0 = 0$,
 $N_1 = N_2 = 1$ and $N_j = N_{j-1} + N_{j-3}$ for $j \ge 3$, and let $T$ be the run length
@@ -174,22 +164,6 @@ Sequences*, INTEGERS 24 (2024), Article A73, Theorem 15. -/
 public theorem_wanted runLengthTransform_choose_eight_mul_sub_period_three (n : ℕ) :
     ((∑ k ∈ Finset.range (n + 1), ((8 * k - 2 * n).choose (n + k) * n.choose k) % 2 : ℕ) : ℤ) =
       runLengthTransform (fun i => if i % 3 = 2 then 0 else 1) n
-
-/-- **Sum of $\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2$ as a run length transform.** Let
-$S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = S(1) = S(2) = S(3) = 1$ and
-$S(m) = S(m - 1) + S(m - 2) - S(m - 3) + S(m - 4)$ for every $m \ge 4$. Then for every natural
-number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2\bigr)$ equals
-the value at $n$ of the run length transform of $S$.
-
-Source: Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and
-2-Regular
-Sequences*, INTEGERS 24 (2024), Article A73, Theorem 10. -/
-public theorem_wanted runLengthTransform_choose_add_five_mul_two_mul_add_two_mul (S : ℕ → ℤ)
-    (h0 : S 0 = 1) (h1 : S 1 = 1) (h2 : S 2 = 1)
-    (h3 : S 3 = 1) (hrec : ∀ m, 4 ≤ m → S m = S (m - 1) + S (m - 2) - S (m - 3) + S (m - 4))
-        (n : ℕ) :
-    ((∑ k ∈ Finset.range (n + 1), ((n + 5 * k).choose (2 * n + 2 * k) * n.choose k) % 2 : ℕ) : ℤ) =
-      runLengthTransform S n
 
 /-- **Sum of $\binom{n+5k}{2k}\binom{n}{k} \bmod 2$ as a run length transform.** Let
 $S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = 1$, $S(1) = S(2) = 2$, $S(3) = 3$ and

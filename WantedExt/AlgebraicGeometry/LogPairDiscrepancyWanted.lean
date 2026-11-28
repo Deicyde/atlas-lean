@@ -10,6 +10,8 @@ module
 
 public import Batteries.Util.ProofWanted
 public import MathlibExt.AlgebraicGeometry.LogPairs
+public import MathlibExt.AlgebraicGeometry.LogPairDiscrepancyCanonicalFrameIndependence
+public import MathlibExt.AlgebraicGeometry.LogPairDiscrepancyDiscrepancyAdjointIndependence
 
 /-!
 # General canonical and discrepancy proof contracts
@@ -17,8 +19,11 @@ public import MathlibExt.AlgebraicGeometry.LogPairs
 These requests use actual normal finite-type schemes, rational differentials,
 codimension-one orders, Cartier cocycles and line bundles. The computed
 discrepancy is `1 + canonical order - pulled adjoint order`. Source/model
-and adjoint-presentation invariance are explicit proof obligations; a klt
-or discrepancy value is not supplied as an uninterpreted predicate or field.
+invariance is an explicit proof obligation; adjoint-presentation invariance
+is proved in
+`MathlibExt.AlgebraicGeometry.LogPairDiscrepancyDiscrepancyAdjointIndependence`.
+A klt or discrepancy value is not supplied as an uninterpreted predicate or
+field.
 
 References: Hartshorne, *Algebraic Geometry*, II.6; Kollár--Mori,
 *Birational Geometry of Algebraic Varieties*, §2.3. Native function fields,
@@ -37,28 +42,28 @@ open MathlibExt.AlgebraicGeometry.LogPairs
 
 universe u
 
-/-- Canonical local/rational frames with finite divisor support. -/
+/-- Canonical data on a normal variety: for a field $k$ of characteristic zero and a normal variety
+$V$ of dimension $n$ over $k$ (integral, Noetherian, separated, locally of finite type and
+quasi-compact, with integrally closed local rings), canonical data on $V$ (recording that $k$ is
+perfect): a nonzero rational top form together with, at every codimension-one point $p$, a basis of
+the top Kähler forms of the local ring at $p$ and its image basis of the rational top forms, such
+that the orders of the form in these bases are nonzero at only finitely many points. -/
 public def_wanted canonical_data (k : Type u) [Field k] [CharZero k]
     (n : ℕ) (V : NormalVariety k n) : CanonicalData V
 
-/-- The canonical Weil coefficients do not depend on the chosen local frames. -/
-public theorem_wanted canonical_frame_independence (k : Type u) [Field k] [CharZero k]
-    (n : ℕ) (V : NormalVariety k n) (C D : CanonicalData V) (same : C.form = D.form) :
-    canonicalDivisor C = canonicalDivisor D
-
-/-- Every actual normal proper birational model admits the normalized calculus. -/
+/-- Every proper birational model of a log pair carries the canonical comparison data: for a field
+$k$ of characteristic zero and a log pair $P$ over $k$, every proper birational morphism
+$f : W \to X$ from a normal variety $W$ of the same dimension to the variety $X$ of $P$ admits
+`BirationalData`: $f$ maps the generic point to the generic point, the induced map of function
+fields is a $k$-isomorphism, and $W$ has canonical data whose rational top form is the pullback of
+that of $P$. -/
 public def_wanted model_calculus (k : Type u) [Field k] [CharZero k]
     (n : ℕ) (P : LogPair k n) : HasModelCalculus P
 
-/-- Equivalent Cartier representations of K+Delta give the same discrepancy. -/
-public theorem_wanted discrepancy_adjoint_independence (k : Type u) [Field k] [CharZero k]
-    (n : ℕ) (P : LogPair k n) (M : BirationalModel P)
-    (D : CartierCombination P.variety)
-    (h : D.divisor = realCast (canonicalDivisor P.canonical) + P.boundary)
-    (p : PrimePoint M.variety) :
-    logDiscrepancy M p = logDiscrepancy (M.withAdjoint D h) p
-
-/-- A divisorial valuation has an intrinsic log discrepancy. -/
+/-- The log discrepancy depends only on the divisorial valuation: for a field $k$ of characteristic
+zero and a log pair $P$ over $k$, if prime divisors $p$ and $q$ on two proper birational models of
+$P$ induce the same valuation on the function field of the variety of $P$, their log discrepancies
+are equal. -/
 public theorem_wanted discrepancy_model_independence (k : Type u) [Field k] [CharZero k]
     (n : ℕ) (P : LogPair k n) (M N : BirationalModel P)
     (p : PrimePoint M.variety) (q : PrimePoint N.variety)

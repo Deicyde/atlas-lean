@@ -13,8 +13,13 @@ public import Mathlib.Algebra.Squarefree.Basic
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.NumberTheory.NumberField.ClassNumber
 public import Mathlib.NumberTheory.Pell
+public import MathlibExt.NumberTheory.Diophantine.BisectorEquationIntZero
+public import MathlibExt.NumberTheory.Diophantine.BisectorEquationPythagorean
+public import MathlibExt.NumberTheory.Diophantine.NegativePellGcd
 public import MathlibExt.NumberTheory.Diophantine.NegativePellRational
 public import MathlibExt.NumberTheory.GeneralPellBisectors
+public import MathlibExt.NumberTheory.NegativePellDivisibility
+public import MathlibExt.NumberTheory.GeneralPellBisectorsBisectorEquationFormTen
 
 namespace MetaMathlibExt
 
@@ -35,29 +40,6 @@ public theorem_wanted bisector_equation_rat_solution (a b c : ℚ) (hab : |a| �
       b ^ 2 - d * b₂ ^ 2 = -1 ∧
       ((b₂ + a₂ ≠ 0 ∧ c = (a * b₂ + a₂ * b) / (b₂ + a₂)) ∨
         (b₂ - a₂ ≠ 0 ∧ c = (a * b₂ - a₂ * b) / (b₂ - a₂)))
-
-/-- **Symmetries of the bisector equation.** Let $a, b, c$ be real numbers with
-$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then the triples $(-a, -b, -c)$ and $(b, a, c)$
-satisfy the same equation, and so does $(a, b, -c^{-1})$ when $c \ne 0$.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(a)
-(`integers-2024-A111-prop-2`). -/
-public theorem_wanted bisector_equation_symm (a b c : ℝ)
-    (h : (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)) :
-    (c ≠ 0 → (a - -c⁻¹) ^ 2 * (b ^ 2 + 1) = (b - -c⁻¹) ^ 2 * (a ^ 2 + 1)) ∧
-      (-a - -c) ^ 2 * ((-b) ^ 2 + 1) = (-b - -c) ^ 2 * ((-a) ^ 2 + 1) ∧
-      (b - c) ^ 2 * (a ^ 2 + 1) = (a - c) ^ 2 * (b ^ 2 + 1)
-
-/-- **No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$.** Let
-$a, b, c$ be integers with $a = 0$ or $b = 0$ and
-$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then $|a| = |b|$.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(b)
-(`integers-2024-A111-prop-2`). -/
-public theorem_wanted bisector_equation_int_zero (a b c : ℤ) (h0 : a = 0 ∨ b = 0)
-    (h : (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)) : |a| = |b|
 
 /-- **Integer solutions of the bisector equation.** For a natural number $d > 1$ such that
 $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in positive integers
@@ -111,21 +93,6 @@ public theorem_wanted bisector_equation_form_nine (d m n : ℕ) (hd : 1 < d)
     let c := negPellG d ((2 * m - 1) * (2 * n)) / negPellG d (2 * m - 1)
     negPellG d (2 * m - 1) ∣ negPellG d ((2 * m - 1) * (2 * n)) ∧
       (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)
-
-/-- **Bisector-equation solutions from the powers of $1 + \sqrt{2}$.** The least solution of
-$x^2 - 2 y^2 = -1$ in positive integers is $(1, 1)$; define integers $f_k$ and $g_k$ by
-$f_k + g_k \sqrt{2} = (1 + \sqrt{2})^k$ for natural numbers $k$. For every natural number $n > 0$,
-the integers $a = f_{2n-1}$, $b = -f_{2n+1}$ and $c = f_{2n}$ satisfy
-$$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3, converse for (10)
-(`integers-2024-A111-thm-3`). -/
-public theorem_wanted bisector_equation_form_ten (n : ℕ) (hn : 0 < n) :
-    let a := negPellF 2 (2 * n - 1)
-    let b := -negPellF 2 (2 * n + 1)
-    let c := negPellF 2 (2 * n)
-    (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)
 
 /-- **Finitely many classes of solutions of a general Pell equation.** Let $d > 0$ be an integer
 that is not a perfect square, let $\varepsilon$ be the fundamental solution of $x^2 - dy^2 = 1$,
@@ -231,17 +198,6 @@ public theorem_wanted negPell_sum_difference_formulas (d : ℕ)
           else 2 * negPellG d m * negPellF d n)
 
 
-/-- **Coprimality of the negative Pell sequences.** Let $d > 1$ be a natural number such that
-$x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural numbers with
-least positive $Y$, and define integers $f_n, g_n$ by $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$.
-Then for every $n > 0$, $\gcd(d, f_n) = 1$ and $\gcd(f_n, g_n) = 1$.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(a) (`integers-2024-A111-thm-11`). -/
-public theorem_wanted negPell_gcd_eq_one (d : ℕ) (hd : 1 < d)
-    (hneg : ∃ x y : ℤ, x ^ 2 - d * y ^ 2 = -1) (n : ℕ) (hn : 0 < n) :
-    Int.gcd d (negPellF d n) = 1 ∧ Int.gcd (negPellF d n) (negPellG d n) = 1
-
 /-- **Coprimality of negative Pell terms whose indices have an even ratio.** Let $d > 1$ be a
 natural number such that $x^2 - dy^2 = -1$ has an integral solution, let $(X, Y)$ be the solution
 of $x^2 - dy^2 = -1$ in natural numbers with the least positive $Y$, and for each $n$ let $f_n$
@@ -268,31 +224,6 @@ public theorem_wanted negPellF_dvd_iff (d : ℕ) (hd : 1 < d)
     (hneg : ∃ x y : ℤ, x ^ 2 - d * y ^ 2 = -1) (m n : ℕ) (hn : 0 < n) (hnm : n ≤ m) :
     negPellF d n ∣ negPellF d m ↔ (d = 2 ∧ n = 1) ∨ (n ∣ m ∧ Odd (m / n))
 
-/-- **Divisibility of the second coordinates of negative Pell powers.** Let $d > 1$ be a natural
-number such that $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its fundamental
-solution (the one with $X, Y > 0$ and $Y$ least), and write
-$(X + Y \sqrt{d})^n = f_n + g_n \sqrt{d}$. For natural numbers $0 < n \le m$, $g_n$ divides $g_m$
-if and only if $n$ divides $m$.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(d) (`integers-2024-A111-thm-11`). -/
-public theorem_wanted negPellG_dvd_iff (d : ℕ) (hd : 1 < d)
-    (hneg : ∃ x y : ℤ, x ^ 2 - d * y ^ 2 = -1) (m n : ℕ) (hn : 0 < n) (hnm : n ≤ m) :
-    negPellG d n ∣ negPellG d m ↔ n ∣ m
-
-/-- **Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8).** Let $d$ and $z$ be
-integers with $d \equiv 1 \pmod 8$ and $z \equiv 4 \pmod 8$. If integers $x$ and $y$ satisfy
-$|x^2 - dy^2| = z$, then $x$ and $y$ are both even.
-
-The paper also assumes $z > 1$; this is not needed. The second sentence of part (c) of the
-paper's lemma, on the fundamental unit, is not formalized.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(c), first sentence
-(`integers-2024-A111-lem-1`). -/
-public theorem_wanted even_of_abs_sq_sub_mul_sq_four_mod_eight (d z : ℤ) (hd : d % 8 = 1)
-    (hz : z % 8 = 4) (x y : ℤ) (h : |x ^ 2 - d * y ^ 2| = z) : Even x ∧ Even y
-
 open Classical in
 /-- **Primes with strictly primitive representations.** For an integer $d$, $S(d)$ is the set of
 primes $p$ for which there is an integer $l > 0$ such that $|x^2 - d y^2| = p^l$ has a strictly
@@ -302,7 +233,8 @@ Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between P
 Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2
 (`integers-2024-A111-thm-8`). -/
 def strictPrimitivePrimes (d : ℤ) : Set ℕ :=
-  {p | p.Prime ∧ ∃ l : ℕ, 0 < l ∧ ∃ x y : ℤ, IsCoprime x (d * y) ∧ |x ^ 2 - d * y ^ 2| = (p : ℤ) ^ l}
+  {p | p.Prime ∧ ∃ l : ℕ, 0 < l ∧ ∃ x y : ℤ,
+    IsCoprime x (d * y) ∧ |x ^ 2 - d * y ^ 2| = (p : ℤ) ^ l}
 
 open Classical in
 /-- **Strictly primitive exponent.** Let $d$ be an integer and $p$ a natural number, and let
@@ -393,24 +325,6 @@ theorem strictPrimitiveExponent_two_seven : strictPrimitiveExponent 2 7 = 1 := b
     Nat.find_min' hp.2 ⟨Nat.one_pos, 3, 1, ⟨1, -1, by norm_num⟩, by norm_num⟩
   omega
 
-/-- **Pythagorean parametrization of rational solutions of the bisector equation.** Let $a, b, c$
-be rational numbers with $|a| \ne |b|$ and $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$, and suppose
-that $a^2 + 1$ and $b^2 + 1$ are squares of rational numbers. Then there are integers $l, m, n$ with
-$|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$ such that
-$$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n},$$
-and
-$$c = \frac{l m - n^2}{(l + m) n} \qquad \text{or} \qquad c = -\frac{(l + m) n}{l m - n^2}.$$
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1(i)
-(`integers-2024-A111-thm-1`). -/
-public theorem_wanted bisector_equation_rat_solution_pythagorean (a b c : ℚ) (hab : |a| ≠ |b|)
-    (h : (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1))
-    (ha : ∃ a₂ : ℚ, a ^ 2 - a₂ ^ 2 = -1) (hb : ∃ b₂ : ℚ, b ^ 2 - b₂ ^ 2 = -1) :
-    ∃ l m n : ℤ, |l| ≠ |m| ∧ l * m ≠ n ^ 2 ∧ l * m * n ≠ 0 ∧
-      a = ((l : ℚ) ^ 2 - n ^ 2) / (2 * l * n) ∧ b = ((m : ℚ) ^ 2 - n ^ 2) / (2 * m * n) ∧
-      (c = ((l : ℚ) * m - n ^ 2) / ((l + m) * n) ∨ c = -(((l : ℚ) + m) * n) / (l * m - n ^ 2))
-
 /-- **Parametric rational solutions of the bisector equation.** Let $l, m, n$ be integers with
 $|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$, and put
 $$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n}.$$
@@ -491,7 +405,8 @@ public theorem_wanted strictPrimitivePrimes_eq_split (d : ℤ) (hd : 1 < d) (hsq
     (hcase : d % 8 = 1 ∨ (d % 8 = 5 ∧ ∀ u : (NumberField.RingOfIntegers K)ˣ,
       ((u : NumberField.RingOfIntegers K) : K) ∈ Algebra.adjoin ℤ {s}) ∨ d % 4 = 2) :
     strictPrimitivePrimes d =
-      {p : ℕ | p.Prime ∧ ((Ideal.span {(p : ℤ)}).primesOver (NumberField.RingOfIntegers K)).ncard = 2}
+      {p : ℕ | p.Prime ∧
+        ((Ideal.span {(p : ℤ)}).primesOver (NumberField.RingOfIntegers K)).ncard = 2}
 
 /-- **Strictly primitive primes are 2 and the split primes.** Let $d > 1$ be a square-free
 integer, let $K$ be any number field of degree $2$ over $\mathbb{Q}$ containing an element $s$
@@ -511,7 +426,8 @@ public theorem_wanted strictPrimitivePrimes_eq_split_insert_two (d : ℤ) (hd : 
     (hη : ∃ u : (NumberField.RingOfIntegers K)ˣ,
       ((u : NumberField.RingOfIntegers K) : K) ∉ Algebra.adjoin ℤ {s}) :
     strictPrimitivePrimes d = insert 2
-      {p : ℕ | p.Prime ∧ ((Ideal.span {(p : ℤ)}).primesOver (NumberField.RingOfIntegers K)).ncard = 2}
+      {p : ℕ | p.Prime ∧
+        ((Ideal.span {(p : ℤ)}).primesOver (NumberField.RingOfIntegers K)).ncard = 2}
 
 /-- **The strictly primitive exponent is at most the class number.** Let $d > 1$ be a squarefree
 integer with $d \equiv 2$ or $d \equiv 3 \pmod 4$, and let $K$ be a number field of degree $2$

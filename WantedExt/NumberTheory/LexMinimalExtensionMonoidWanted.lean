@@ -13,6 +13,8 @@ public import Mathlib.Algebra.GCDMonoid.Finset
 public import Mathlib.GroupTheory.Finiteness
 public import MathlibExt.NumberTheory.LexMinimalExtensionMonoid
 public import WantedExt.NumberTheory.BinomidIndexWanted
+public import MathlibExt.NumberTheory.LexMinimalExtensionMonoidBinomidAverageLe
+public import MathlibExt.NumberTheory.LexMinimalExtensionPeriod
 
 namespace MetaMathlibExt
 
@@ -55,69 +57,6 @@ public theorem_wanted isLexMinimalExtensionOf_iff_forall_lt {η : ℕ → ℕ} {
       ∃ i j : ℕ, 1 ≤ i ∧ 1 ≤ j ∧ i + j = r ∧
         ∑ l ∈ Finset.range i, η l + ∑ l ∈ Finset.range j, η l
           = ∑ l ∈ Finset.range r, η l
-
-/-- **Partial sums of a lex-minimal extension solve a knapsack problem.** Let $m \ge 1$, let
-$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, and write
-$S_i = e_1 + \dots + e_i$. Then for every $c \ge 1$ there are nonnegative integers
-$n_1, \dots, n_m$ with $\sum_{i=1}^m n_i i = c$ and $S_c = \sum_{i=1}^m n_i S_i$ that solve the
-unbounded knapsack problem with values $S_i$, weights $i$ and capacity $c$: all nonnegative
-integers $n'_1, \dots, n'_m$ with $\sum_{i=1}^m n'_i i \le c$ satisfy
-$\sum_{i=1}^m n'_i S_i \le \sum_{i=1}^m n_i S_i$.
-
-Source: Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid
-of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113,
-Proposition 2 (`integers-2026-A113-prop-2`). -/
-public theorem_wanted IsLexMinimalExtensionOf.exists_knapsack {η : ℕ → ℕ} {m : ℕ}
-    (hη : IsLexMinimalExtensionOf η m) (hm : 1 ≤ m) {c : ℕ} (hc : 1 ≤ c) :
-    ∃ n : ℕ → ℕ, ∑ i ∈ Finset.Icc 1 m, n i * i = c ∧
-      ∑ l ∈ Finset.range c, η l
-        = ∑ i ∈ Finset.Icc 1 m, n i * ∑ l ∈ Finset.range i, η l ∧
-      ∀ n' : ℕ → ℕ, ∑ i ∈ Finset.Icc 1 m, n' i * i ≤ c →
-        ∑ i ∈ Finset.Icc 1 m, n' i * ∑ l ∈ Finset.range i, η l
-          ≤ ∑ i ∈ Finset.Icc 1 m, n i * ∑ l ∈ Finset.range i, η l
-
-/-- **The largest of the first $m$ averages is the largest average.** Let $m \ge 0$ and let
-$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages
-$A_i = (e_1 + \dots + e_i)/i$ for $i \ge 1$. If $1 \le j \le m$ and
-$A_j = \max \{A_i \mid 1 \le i \le m\}$, then $A_i \le A_j$ for every $i \ge 1$.
-
-Source: Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid
-of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113,
-Lemma 1 (`integers-2026-A113-lem-1`). -/
-public theorem_wanted IsLexMinimalExtensionOf.binomidAverage_le {η : ℕ → ℕ} {m : ℕ}
-    (hη : IsLexMinimalExtensionOf η m) {i : ℕ} (hi : 1 ≤ i) {j : ℕ}
-    (hj : j ∈ maxAverageIndices η m) :
-    binomidAverage η i ≤ binomidAverage η j
-
-/-- **The gcd of the maximizing indices divides the minimal period.** Let $m \ge 1$, let
-$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages
-$A_i = (e_1 + \dots + e_i)/i$, and let $g$ be the greatest common divisor of the indices
-$1 \le i \le m$ with $A_i = \max \{A_j \mid 1 \le j \le m\}$. If $p$ is the least $q \ge 1$
-such that $e_{i+q} = e_i$ for all sufficiently large $i$, then $g$ divides $p$.
-
-Source: Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid
-of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113,
-Lemma 3 (`integers-2026-A113-lem-3`). -/
-public theorem_wanted IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd_minimalPeriod
-    {η : ℕ → ℕ} {m : ℕ} (hη : IsLexMinimalExtensionOf η m) (hm : 1 ≤ m) {p : ℕ}
-    (hp : IsLeast {q : ℕ | 0 < q ∧ ∃ N, ∀ i, N ≤ i → η (i + q) = η i} p) :
-    (maxAverageIndices η m).gcd id ∣ p
-
-/-- **Minimal period of a lex-minimal extension.** Let $m \ge 1$ and let
-$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of $(e_1, \dots, e_m)$. For
-$1 \le i \le m$ let $A_i = (e_1 + \dots + e_i)/i$, and let $A_{\max}$ be the largest of
-$A_1, \dots, A_m$. Let $g$ be the greatest common divisor of the indices $1 \le i \le m$ with
-$A_i = A_{\max}$. Then $g$ is the minimal eventual period of $\eta$: $g \ge 1$,
-$e_{i+g} = e_i$ for all sufficiently large $i$, and every $q \ge 1$ with $e_{i+q} = e_i$ for
-all sufficiently large $i$ satisfies $g \le q$.
-
-Source: Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid
-of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113,
-Theorem 1 (`integers-2026-A113-thm-1`). -/
-public theorem_wanted IsLexMinimalExtensionOf.isLeast_period_gcd_maxAverageIndices
-    {η : ℕ → ℕ} {m : ℕ} (hη : IsLexMinimalExtensionOf η m) (hm : 1 ≤ m) :
-    IsLeast {q : ℕ | 0 < q ∧ ∃ N, ∀ i, N ≤ i → η (i + q) = η i}
-      ((maxAverageIndices η m).gcd id)
 
 /-- **A preperiod bound for lex-minimal extensions.** Let $m \ge 0$, let
 $\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages

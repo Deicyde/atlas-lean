@@ -18,6 +18,7 @@ public import Mathlib.NumberTheory.Real.GoldenRatio
 We define finite base phi expansions and prove the natural expansion counts of Fibonacci numbers.
 
 A finite binary expansion is represented by the set of positions of its digits equal to one.
+Bounds on the value of a Bergman expansion in terms of its occupied positions give uniqueness.
 To count natural expansions, we first show that their possible positions form a finite interval
 determined by the Bergman expansion. The count of equal-valued words on that interval uses three
 carry values. For Fibonacci numbers the Bergman words grow by a block of four digits, which
@@ -41,6 +42,10 @@ representation). -/
 noncomputable def basePhiValue (S : Finset ℤ) : ℝ :=
   ∑ i ∈ S, φ ^ i
 
+/-- The value of a finite base phi expansion is the sum of the golden-ratio powers at its
+occupied positions. -/
+lemma basePhiValue_eq_sum (S : Finset ℤ) : basePhiValue S = ∑ i ∈ S, φ ^ i := rfl
+
 /-- **Bergman expansions.** Encode a finite base phi expansion with digits $0$ and $1$ by the
 finite set $S \subseteq \mathbb{Z}$ of positions of its digits $1$. The expansion is a Bergman
 expansion when no two digits $1$ are adjacent, that is, $i + 1 \notin S$ for every $i \in S$.
@@ -49,6 +54,11 @@ Source: Michel Dekking and Ad van Loon, *Counting Base Phi Representations*,
 Fibonacci Quarterly 62 (2024), Section 1 (Bergman representation). -/
 def IsBergmanExpansion (S : Finset ℤ) : Prop :=
   ∀ i ∈ S, i + 1 ∉ S
+
+/-- A finite base phi expansion is Bergman exactly when no occupied position has an
+occupied successor. -/
+lemma isBergmanExpansion_iff {S : Finset ℤ} :
+    IsBergmanExpansion S ↔ ∀ i ∈ S, i + 1 ∉ S := Iff.rfl
 
 /-- **Golden mean flips.** Encode a finite base phi expansion with digits $0$ and $1$ by the
 finite set of positions of its digits $1$. An expansion $T$ arises from an expansion $S$ by a
@@ -233,9 +243,11 @@ theorem fibonacciRepresentationCount_small :
 
 end
 
-namespace naturalExpansionCount_fib
+namespace BasePhiRepresentations
 
-private theorem pow_add_prev (i : ℤ) : φ ^ i + φ ^ (i - 1) = φ ^ (i + 1) := by
+/-- At every integer position, the sum of two adjacent powers of the golden ratio is the next
+power of the golden ratio. -/
+public lemma pow_add_prev (i : ℤ) : φ ^ i + φ ^ (i - 1) = φ ^ (i + 1) := by
   rw [show i = (i - 1) + 1 by omega, show i - 1 + 1 - 1 = i - 1 by omega,
     show i - 1 + 1 + 1 = (i - 1) + 2 by omega, zpow_add₀ Real.goldenRatio_ne_zero,
     zpow_add₀ Real.goldenRatio_ne_zero (i - 1) 2, zpow_one, zpow_ofNat, Real.goldenRatio_sq]
@@ -288,7 +300,9 @@ private theorem value_lt_of_spacing (S : Finset ℤ) (g : ℤ) (hg : g = 1 ∨ g
   · rw [Finset.not_nonempty_iff_eq_empty.mp hS, basePhiValue_empty]
     exact zpow_pos Real.goldenRatio_pos _
 
-private theorem bergman_value_lt {S : Finset ℤ} (hS : IsBergmanExpansion S)
+/-- If every occupied position of a Bergman expansion is below `k`, its value is strictly
+less than the golden ratio raised to `k`. -/
+public lemma bergman_value_lt {S : Finset ℤ} (hS : IsBergmanExpansion S)
     {k : ℤ} (hk : ∀ i ∈ S, i < k) : basePhiValue S < φ ^ k := by
   simpa using value_lt_of_spacing S 2 (Or.inr rfl) (by
     intro i hi j hj hij
@@ -302,11 +316,14 @@ private theorem value_lt {S : Finset ℤ} {k : ℤ} (hk : ∀ i ∈ S, i < k) :
   simpa only [show k + 2 - 1 = k + 1 by omega] using
     value_lt_of_spacing S 1 (Or.inl rfl) (fun _ _ _ _ h => by omega) k hk
 
-private theorem value_pow_le_of_mem {S : Finset ℤ} {i : ℤ} (hi : i ∈ S) :
+/-- The contribution of any occupied position is at most the value of the whole expansion. -/
+public lemma value_pow_le_of_mem {S : Finset ℤ} {i : ℤ} (hi : i ∈ S) :
     φ ^ i ≤ basePhiValue S :=
   Finset.single_le_sum (fun j _ => (zpow_pos Real.goldenRatio_pos j).le) hi
 
-private theorem bergman_eq_of_value_eq {S T : Finset ℤ}
+/-- Two finite Bergman expansions with the same base phi value have identical occupied positions.
+See *Counting Base Phi Representations*, Section 1, for Bergman expansions and uniqueness. -/
+public lemma bergman_eq_of_value_eq {S T : Finset ℤ}
     (hS : IsBergmanExpansion S) (hT : IsBergmanExpansion T)
     (hval : basePhiValue S = basePhiValue T) : S = T := by
   classical
@@ -345,6 +362,11 @@ private theorem bergman_eq_of_value_eq {S T : Finset ℤ}
       (fun h' => (Finset.mem_sdiff.mp h').2 (Finset.mem_sdiff.mp h).1)
       (fun i hi hj => hS i (Finset.mem_sdiff.mp hi).1 (Finset.mem_sdiff.mp hj).1) hdiff.symm
 
+end BasePhiRepresentations
+
+open BasePhiRepresentations
+
+namespace naturalExpansionCount_fib
 
 -- Collapsing 011 to 100 decreases the cardinality and preserves the lower bound.
 private theorem carry {S : Finset ℤ} {i : ℤ} (hi : i ∈ S)
@@ -358,13 +380,15 @@ private theorem carry {S : Finset ℤ} {i : ℤ} (hi : i ∈ S)
   rw [value_insert (fun h => hn (Finset.mem_of_mem_erase (Finset.mem_of_mem_erase h)))]
   linarith [pow_add_prev i]
 
+-- The chain runs from the normalized expansion back to the original support.
 private theorem exists_bergman_above (R : ℤ) (S : Finset ℤ) (hS : ∀ i ∈ S, R ≤ i) :
-    ∃ T, IsBergmanExpansion T ∧ basePhiValue T = basePhiValue S ∧ ∀ i ∈ T, R ≤ i := by
+    ∃ T, IsBergmanExpansion T ∧ basePhiValue T = basePhiValue S ∧
+      (∀ i ∈ T, R ≤ i) ∧ Relation.ReflTransGen IsGoldenMeanFlip T S := by
   classical
   induction hcard : S.card using Nat.strong_induction_on generalizing S with
   | ind n ih =>
     by_cases hB : IsBergmanExpansion S
-    · exact ⟨S, hB, rfl, hS⟩
+    · exact ⟨S, hB, rfl, hS, .refl⟩
     · let A := S.filter (fun i => i - 1 ∈ S)
       have hA : A.Nonempty := by
         unfold IsBergmanExpansion at hB
@@ -381,27 +405,34 @@ private theorem exists_bergman_above (R : ℤ) (S : Finset ℤ) (hS : ∀ i ∈ 
         change i + 1 ≤ i at hle
         omega
       let U := insert (i + 1) ((S.erase i).erase (i - 1))
+      have hfresh : i + 1 ∉ (S.erase i).erase (i - 1) :=
+        fun h => hn (Finset.mem_of_mem_erase (Finset.mem_of_mem_erase h))
       have hp' : i - 1 ∈ S.erase i := Finset.mem_erase.mpr ⟨by omega, hp⟩
       have hu : U.card < n := by
         have h₁ := Finset.card_erase_add_one hi
         have h₂ := Finset.card_erase_add_one hp'
-        rw [show U = insert (i + 1) ((S.erase i).erase (i - 1)) by rfl,
-          Finset.card_insert_of_notMem (fun h =>
-            hn (Finset.mem_of_mem_erase (Finset.mem_of_mem_erase h)))]
+        simp only [U, Finset.card_insert_of_notMem hfresh]
         omega
-      obtain ⟨T, hT, hval, habove⟩ := ih U.card hu U (by
+      obtain ⟨T, hT, hval, habove, hchain⟩ := ih U.card hu U (by
         intro j hj
         rcases Finset.mem_insert.mp hj with rfl | hj
         · have := hS i hi
           omega
         · exact hS j (Finset.mem_of_mem_erase (Finset.mem_of_mem_erase hj))) rfl
-      exact ⟨T, hT, hval.trans (carry hi hp hn), habove⟩
+      have hflip : IsGoldenMeanFlip U S := by
+        refine ⟨i + 1, Finset.mem_insert_self _ _, ?_, ?_, ?_⟩
+        · simp [U, Finset.mem_erase, show i ≠ i + 1 by omega]
+        · simp [U, Finset.mem_erase, show i + 1 - 2 = i - 1 by omega,
+            show i - 1 ≠ i + 1 by omega]
+        · simp only [show i + 1 - 1 = i by omega, show i + 1 - 2 = i - 1 by omega,
+            U, Finset.erase_insert hfresh, Finset.insert_erase hp', Finset.insert_erase hi]
+      exact ⟨T, hT, hval.trans (carry hi hp hn), habove, hchain.tail hflip⟩
 
 private theorem min_mem_of_bergman {S T : Finset ℤ} {R : ℤ}
     (hT : IsBergmanExpansion T) (hR : R ∈ T)
     (hv : basePhiValue S = basePhiValue T) (hS : ∀ i ∈ S, R ≤ i) : R ∈ S := by
   by_contra hn
-  obtain ⟨U, hU, hval, hUmin⟩ := exists_bergman_above (R + 1) S (by
+  obtain ⟨U, hU, hval, hUmin, _⟩ := exists_bergman_above (R + 1) S (by
     intro i hi
     have := hS i hi
     have hne : i ≠ R := fun h => hn (h ▸ hi)
@@ -753,6 +784,24 @@ private theorem value_fibWord (R : ℤ) (odd : Bool) (n : ℕ) :
     rw [← mul_assoc, hc]
 
 end naturalExpansionCount_fib
+
+/-- **Golden mean flips connect all expansions to the Bergman expansion.** Let $N$ be a natural
+number, let $S$ be a Bergman expansion of $N$ and let $T$ be any finite base phi expansion of
+$N$ with digits $0$ and $1$. Then $T$ is obtained from $S$ by finitely many (possibly zero)
+golden mean flips $100 \to 011$.
+
+Source: Michel Dekking and Ad van Loon, *Counting Base Phi Representations*,
+Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 2.1
+(`fq-2024-dekking11102023-thm-2.1`). -/
+public theorem reflTransGen_isGoldenMeanFlip_of_isBergmanExpansion (N : ℕ)
+    {S T : Finset ℤ} (hS : IsBergmanExpansion S) (hSN : basePhiValue S = N)
+    (hTN : basePhiValue T = N) :
+    Relation.ReflTransGen IsGoldenMeanFlip S T := by
+  open naturalExpansionCount_fib in
+  obtain ⟨R, hR⟩ := T.finite_toSet.bddBelow
+  obtain ⟨U, hU, hval, _, hchain⟩ := exists_bergman_above R T (fun _ hi => hR hi)
+  have hUS := bergman_eq_of_value_eq hU hS (hval.trans (hTN.trans hSN.symm))
+  exact hUS ▸ hchain
 
 /-- **Natural expansions of Fibonacci numbers.** Write $\mathrm{Tot}_\nu(N)$ for the number of
 natural base phi expansions of a natural number $N$ and $F_k$ for the $k$-th Fibonacci number.

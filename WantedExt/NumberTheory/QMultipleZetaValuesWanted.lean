@@ -24,7 +24,11 @@ public import Mathlib.RingTheory.PowerSeries.Derivative
 public import Mathlib.RingTheory.PowerSeries.Exp
 public import Mathlib.RingTheory.PowerSeries.Inverse
 public import Mathlib.RingTheory.PowerSeries.Substitution
+public import MathlibExt.GroupTheory.Perm.ConjClassesPartition
+public import MathlibExt.NumberTheory.MultipleZeta.BradleyZhaoQuasiShuffle
 public import MathlibExt.NumberTheory.MultipleZeta.CyclicSumFormula
+public import MathlibExt.NumberTheory.MultipleZeta.OOZDuality
+public import MathlibExt.NumberTheory.QMultipleZetaValuesCardConjClassesPermEqCardPartition
 
 /-!
 # q-analogues of multiple zeta values: Schlesinger–Zudilin and OOZ models
@@ -35,7 +39,9 @@ their generating series and duality, the partition function, and the
 Ohno–Okuda–Zudilin (OOZ) model, the general qMZVs of Bachmann–Kühn with the
 spaces `𝒵_q` and `𝒵_{q,1}` they span, the Bradley–Zhao (BZ) model, and the
 description of `𝒵_q` by polynomial functions on partitions in Stanley coordinates,
-and the quasi-shuffle and shuffle products the evaluation maps respect.
+and the quasi-shuffle and shuffle products the evaluation maps respect. The
+theorem `card_conjClasses_perm_eq_card_partition` on the partition function is
+proved in `MathlibExt.NumberTheory.QMultipleZetaValuesCardConjClassesPermEqCardPartition`.
 
 All q-series are formal power series in `q = PowerSeries.X` over `ℚ`; the factor
 `1/(1 - q^m)` is the inverse `(1 - X ^ m)⁻¹` in `ℚ⟦X⟧`. Indices are lists of
@@ -47,88 +53,6 @@ open PowerSeries
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Partial sums of Schlesinger–Zudilin qMZVs.** For an index $(k_1, \dots, k_r)$ of natural
-numbers and a natural number $M$, the partial sum is the formal power series in $q$ over
-$\mathbb{Q}$
-$$\sum_{M > m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{q^{m_j k_j}}{(1 - q^{m_j})^{k_j}},$$
-where the sum runs over integers $m_1, \dots, m_r$ and $1/(1 - q^m)$ is the inverse in
-$\mathbb{Q}[[q]]$. For the empty index it equals $1$ for every $M$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs (defining sum truncated at
-`m₁ < M`). -/
-public noncomputable def szQMZVPartial : List ℕ → ℕ → ℚ⟦X⟧
-  | [], _ => 1
-  | k :: ks, M => ∑ m ∈ Finset.Ioo 0 M, (X ^ m * (1 - X ^ m)⁻¹) ^ k * szQMZVPartial ks m
-
-/-- **Schlesinger–Zudilin qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers, the
-Schlesinger–Zudilin qMZV $\zeta_q^{SZ}(k)$ is the formal power series in $q$ over $\mathbb{Q}$
-whose coefficient of $q^N$, for each $N \ge 0$, is the coefficient of $q^N$ in the partial sum
-$$\sum_{N \ge m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{q^{m_j k_j}}{(1 - q^{m_j})^{k_j}}$$
-over integers $m_1, \dots, m_r$. In particular $\zeta_q^{SZ}(\emptyset) = 1$.
-
-When the index is empty or $k_1 \ge 1$, the summands with $m_1 > N$ have no term of degree at
-most $N$, so $\zeta_q^{SZ}(k)$ is the full series
-$\sum_{m_1 > \dots > m_r > 0} \prod_{j} q^{m_j k_j} / (1 - q^{m_j})^{k_j}$. The paper does not
-define the value when $k_1 = 0$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs (extended version of
-Ebrahimi-Fard, Manchon and Singer, allowing `kⱼ = 0` for `j ≥ 2`). -/
-public noncomputable def szQMZV (k : List ℕ) : ℚ⟦X⟧ :=
-  PowerSeries.mk fun N => coeff N (szQMZVPartial k (N + 1))
-
-/-- **The empty Schlesinger–Zudilin qMZV.** The Schlesinger–Zudilin qMZV of the empty index is
-$1$: $\zeta_q^{SZ}(\emptyset) = 1$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs. -/
-public theorem szQMZV_nil : szQMZV [] = 1 := by
-  ext N
-  simp [szQMZV, szQMZVPartial]
-
-/-- **Recursion for partial sums of Schlesinger–Zudilin qMZVs.** For natural numbers $k_1$ and
-$M$ and an index $\kappa = (k_2, \dots, k_r)$ (possibly empty), write $Z_M(k_1, \kappa)$ and
-$Z_m(\kappa)$ for the partial sums of Schlesinger–Zudilin qMZVs with bounds $M$ and $m$. Then
-$$Z_M(k_1, \kappa) = \sum_{0 < m < M} \left(\frac{q^m}{1 - q^m}\right)^{k_1} Z_m(\kappa).$$
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs. -/
-public theorem szQMZVPartial_cons (k : ℕ) (ks : List ℕ) (M : ℕ) :
-    szQMZVPartial (k :: ks) M =
-      ∑ m ∈ Finset.Ioo 0 M, (X ^ m * (1 - X ^ m)⁻¹) ^ k * szQMZVPartial ks m :=
-  rfl
-
-/-- **Nonempty Schlesinger–Zudilin qMZVs have no constant term.** For every nonempty index
-$(k_1, \dots, k_r)$ of natural numbers, the constant term of the Schlesinger–Zudilin qMZV
-$\zeta_q^{\mathrm{SZ}}(k_1, \dots, k_r)$ is $0$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs. -/
-public theorem coeff_zero_szQMZV_cons (k : ℕ) (ks : List ℕ) :
-    coeff 0 (szQMZV (k :: ks)) = 0 := by
-  have h : Finset.Ioo 0 1 = ∅ := by decide
-  simp [szQMZV, szQMZVPartial, h]
-
-/-- **The coefficient of $q$ in $\zeta_q^{\mathrm{SZ}}(1)$.** The coefficient of $q$ in the
-Schlesinger–Zudilin qMZV $\zeta_q^{\mathrm{SZ}}(1) = \sum_{m > 0} q^m / (1 - q^m)$ is $1$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Schlesinger–Zudilin qMZVs. -/
-public theorem coeff_one_szQMZV_singleton_one : coeff 1 (szQMZV [1]) = 1 := by
-  have h : Finset.Ioo 0 2 = {1} := by decide
-  simp [szQMZV, szQMZVPartial, h, coeff_succ_X_mul, constantCoeff_inv]
-
-/-- **Block indices for Schlesinger–Zudilin qMZVs.** For a list of pairs of natural numbers
-$(k_1, d_1), \dots, (k_r, d_r)$, the block index is the index
-$(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$ obtained by concatenating, for
-$j = 1, \dots, r$, the entry $k_j$ followed by $d_j - 1$ zeros (no zeros when $d_j = 0$).
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Theorem 4 and Theorem 5 (SZ duality), index notation. -/
-public def szBlockIndex (kd : List (ℕ × ℕ)) : List ℕ :=
-  (kd.map fun p => p.1 :: List.replicate (p.2 - 1) 0).flatten
 
 /-- **Block index of the empty list.** The block index of the empty list of pairs is the empty
 index.
@@ -147,129 +71,6 @@ public theorem szBlockIndex_cons (k d : ℕ) (kd : List (ℕ × ℕ)) :
     szBlockIndex ((k, d) :: kd) = k :: (List.replicate (d - 1) 0 ++ szBlockIndex kd) :=
   rfl
 
-/-- **Partial Ohno–Okuda–Zudilin sums.** For an index $(k_1, \dots, k_r)$ of natural numbers and a
-natural number $M$, the partial OOZ sum is the formal power series in $q$ over $\mathbb{Q}$
-$$\sum_{M > m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{1}{(1 - q^{m_j})^{k_j}},$$
-the defining sum of $\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ with the factor $q^{m_1}$ removed and
-truncated to $m_1 < M$. For the empty index it is $1$, for every $M$ (including $M = 0$).
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of OOZ-qMZVs (inner sums of the defining series). -/
-public noncomputable def oozQMZVPartial : List ℕ → ℕ → ℚ⟦X⟧
-  | [], _ => 1
-  | k :: ks, M => ∑ m ∈ Finset.Ioo 0 M, ((1 - X ^ m)⁻¹) ^ k * oozQMZVPartial ks m
-
-/-- **Ohno–Okuda–Zudilin q-multiple zeta values.** For an index $(k_1, \dots, k_r)$ of natural
-numbers with $r \ge 1$, the (extended) Ohno–Okuda–Zudilin qMZV is the formal power series in $q$
-over $\mathbb{Q}$
-$$\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r) = \sum_{m_1 > \dots > m_r > 0}
-\frac{q^{m_1}}{(1 - q^{m_1})^{k_1} \cdots (1 - q^{m_r})^{k_r}},$$
-and $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$ for the empty index. The summands with $m_1 > N$
-have $q$-adic order greater than $N$, so the coefficient of $q^N$ is computed from the finitely
-many summands with $m_1 \le N$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of OOZ-qMZVs (extended version, `k₁ ≥ 1`, `kᵢ ≥ 0`). -/
-public noncomputable def oozQMZV : List ℕ → ℚ⟦X⟧
-  | [] => 1
-  | k :: ks => PowerSeries.mk fun N =>
-      coeff N (∑ m ∈ Finset.Ioo 0 (N + 1), X ^ m * ((1 - X ^ m)⁻¹) ^ k * oozQMZVPartial ks m)
-
-/-- **The OOZ-qMZV of the empty index.** The Ohno–Okuda–Zudilin qMZV of the empty index is $1$:
-$\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of OOZ-qMZVs. -/
-public theorem oozQMZV_nil : oozQMZV [] = 1 := rfl
-
-/-- **Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term.** For every nonempty index
-$(k_1, \dots, k_r)$ of natural numbers, the constant term of the Ohno–Okuda–Zudilin qMZV
-$\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ is $0$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of OOZ-qMZVs. -/
-public theorem coeff_zero_oozQMZV_cons (k : ℕ) (ks : List ℕ) :
-    coeff 0 (oozQMZV (k :: ks)) = 0 := by
-  have h : Finset.Ioo 0 1 = ∅ := by decide
-  simp [oozQMZV, h]
-
-/-- **Coefficients of Schlesinger–Zudilin qMZVs as sums of binomial products.** Let $r \ge 0$,
-and let $k_1, \dots, k_r$ and $d_1, \dots, d_r$ be positive integers. For every natural number
-$N$, the coefficient of $q^N$ in the Schlesinger–Zudilin qMZV
-$\zeta_q^{\mathrm{SZ}}(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$, whose index lists each
-$k_j$ followed by $d_j - 1$ zeros, equals
-$$\sum \prod_{j=1}^{r} \binom{n_j - 1}{k_j - 1} \binom{m_j - m_{j+1} - 1}{d_j - 1},$$
-where the sum runs over all integers $m_1 > \dots > m_r > 0$ and $n_1, \dots, n_r \ge 1$ with
-$m_1 n_1 + \dots + m_r n_r = N$, and where $m_{r+1} = 0$.
-
-These are the coefficients of $X_1^{k_1 - 1} \cdots X_r^{k_r - 1} Y_1^{d_1 - 1} \cdots
-Y_r^{d_r - 1} q^N$ on both sides of the paper's identity expressing the generating series
-$s(X; Y)$ of these qMZVs as
-$\sum \prod_j (1 + X_j)^{n_j - 1} (1 + Y_j)^{m_j - m_{j+1} - 1} q^{m_j n_j}$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Theorem 4 (`integers-2024-A6-thm-4`). -/
-public theorem_wanted coeff_szQMZV_szBlockIndex_eq_sum_choose (r : ℕ) (k d : Fin r → ℕ)
-    (hk : ∀ j, 1 ≤ k j) (hd : ∀ j, 1 ≤ d j) (N : ℕ) :
-    coeff N (szQMZV (szBlockIndex (List.ofFn fun j => (k j, d j)))) =
-      ∑ mn ∈ (Fintype.piFinset fun _ : Fin r => Finset.range (N + 1)) ×ˢ
-          (Fintype.piFinset fun _ : Fin r => Finset.range (N + 1)) with
-          StrictAnti mn.1 ∧ (∀ j, 0 < mn.1 j) ∧ (∀ j, 0 < mn.2 j) ∧
-            ∑ j, mn.1 j * mn.2 j = N,
-        ∏ j : Fin r, ((((mn.2 j - 1).choose (k j - 1)) *
-          ((mn.1 j - (if h : j.val + 1 < r then mn.1 ⟨j.val + 1, h⟩ else 0) - 1).choose
-            (d j - 1)) : ℕ) : ℚ)
-
-/-- **Schlesinger–Zudilin duality.** Let $\zeta_q^{SZ}$ denote the Schlesinger–Zudilin qMZV, let
-$(k_1, d_1), \dots, (k_r, d_r)$ be pairs of natural numbers with $k_j \ge 1$ and $d_j \ge 1$
-for all $j$, and let $\{0\}^n$ denote $n$ zeros. Then
-$$\zeta_q^{SZ}(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1}) =
-\zeta_q^{SZ}(d_r, \{0\}^{k_r - 1}, \dots, d_1, \{0\}^{k_1 - 1}).$$
-That is, $\zeta_q^{SZ}$ takes the same value at the block index of the list of pairs and at
-the block index of the reversed list with each pair swapped.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Theorem 5 (SZ duality, Zhao) (`integers-2024-A6-thm-5`). -/
-public theorem_wanted szQMZV_szBlockIndex_dual (kd : List (ℕ × ℕ))
-    (hkd : ∀ p ∈ kd, 1 ≤ p.1 ∧ 1 ≤ p.2) :
-    szQMZV (szBlockIndex kd) = szQMZV (szBlockIndex (kd.reverse.map Prod.swap))
-
-/-- **Partitions from Schlesinger–Zudilin qMZVs.** Let $\zeta_q^{SZ}$ denote the
-Schlesinger–Zudilin qMZV, $\{1\}^r$ the index of $r$ ones and $p(N)$ the number of
-partitions of $N$. For all natural numbers $N \ge 1$ and $R \ge N$, the coefficient of $q^N$ in
-$\sum_{r=1}^{R} \zeta_q^{SZ}(\{1\}^r)$ equals $p(N)$.
-
-Since the summands with $r > N$ have no $q^N$ term, this is the coefficientwise form of
-$\sum_{r \ge 1} \zeta_q^{SZ}(\{1\}^r) = \sum_{N \ge 1} p(N) q^N$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Lemma 3 (`integers-2024-A6-lem-3`). -/
-public theorem_wanted sum_coeff_szQMZV_replicate_one_eq_card_partition (N R : ℕ)
-    (hN : 1 ≤ N) (hR : N ≤ R) :
-    ∑ r ∈ Finset.Icc 1 R, coeff N (szQMZV (List.replicate r 1)) =
-      Fintype.card N.Partition
-
-/-- **Cycle type classifies conjugacy classes of permutations.** For every natural number $n$,
-there is a bijection from the set of conjugacy classes of the symmetric group $S_n$ to the set
-of partitions of $n$ that sends the class of each permutation $\sigma$ to the cycle type of
-$\sigma$: the partition of $n$ formed by the lengths of the cycles of $\sigma$, fixed points
-counting as cycles of length $1$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Lemma 4 (`integers-2024-A6-lem-4`). -/
-public theorem_wanted exists_conjClasses_perm_equiv_partition (n : ℕ) :
-    ∃ e : ConjClasses (Equiv.Perm (Fin n)) ≃ (Fintype.card (Fin n)).Partition,
-      ∀ σ : Equiv.Perm (Fin n), e (ConjClasses.mk σ) = σ.partition
-
-/-- **Number of conjugacy classes of the symmetric group.** For every natural number $n$, the
-number of conjugacy classes of the symmetric group $S_n$ equals the number $p(n)$ of partitions
-of $n$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Lemma 4 (`integers-2024-A6-lem-4`). -/
-public theorem_wanted card_conjClasses_perm_eq_card_partition (n : ℕ) :
-    Nat.card (ConjClasses (Equiv.Perm (Fin n))) = Fintype.card n.Partition
-
 /-- **Class numbers of finite general linear groups via OOZ-qMZVs.** Let $K$ be a finite field
 with $c$ elements and, for $n \ge 0$, let $a_{n,K}$ be the number of conjugacy classes of
 $\mathrm{GL}_n(K)$, so that $a_{0,K} = 1$ because $\mathrm{GL}_0(K)$ is the trivial group. Write
@@ -287,40 +88,6 @@ public theorem_wanted card_conjClasses_GL_eq_coeff_sum_oozQMZV (K : Type*) [Fiel
     (Nat.card (ConjClasses (GL (Fin N) K)) : ℚ) =
       ∑ r ∈ Finset.range (R + 1),
         ((Fintype.card K : ℚ) - 1) ^ r * coeff N (oozQMZV (List.replicate r 1))
-
-/-- **Partial sums of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of natural
-numbers $k_j$ and polynomials $Q_j \in \mathbb{Q}[X]$, and let $M$ be a natural number. The
-partial sum is the formal power series in $q$ over $\mathbb{Q}$
-$$\sum_{M > m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{Q_j(q^{m_j})}{(1 - q^{m_j})^{k_j}},$$
-where the sum runs over integers $m_1, \dots, m_r$ and $1/(1 - q^m)$ is the inverse in
-$\mathbb{Q}[[q]]$. For $r = 0$ it equals $1$ for every $M$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of qMZVs (after Bachmann–Kühn), defining sum truncated at
-`m₁ < M`. -/
-public noncomputable def qMZVPartial : List (ℕ × Polynomial ℚ) → ℕ → ℚ⟦X⟧
-  | [], _ => 1
-  | (k, Q) :: kQ, M => ∑ m ∈ Finset.Ioo 0 M,
-      Polynomial.aeval (X ^ m : ℚ⟦X⟧) Q * ((1 - X ^ m)⁻¹) ^ k * qMZVPartial kQ m
-
-/-- **General q-multiple zeta values.** For natural numbers $k_1, \dots, k_r$ and polynomials
-$Q_1, \dots, Q_r \in \mathbb{Q}[X]$, the general qMZV $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$
-is the formal power series in $q$ over $\mathbb{Q}$ whose coefficient of $q^N$, for every $N$, is
-the coefficient of $q^N$ in the finite sum
-$\sum_{N \ge m_1 > m_2 > \dots > m_r > 0} \prod_{j=1}^{r} Q_j(q^{m_j}) / (1 - q^{m_j})^{k_j}$
-over integers $m_1, \dots, m_r$, and $\zeta_q(\varnothing; \varnothing) = 1$.
-
-When $Q_1(0) = 0$ (the paper's condition $Q_1 \in X \mathbb{Q}[X]$), the summands with
-$m_1 > N$ have $q$-adic order greater than $N$, so this is the series
-$\sum_{m_1 > \dots > m_r > 0} \prod_{j=1}^{r} Q_j(q^{m_j}) / (1 - q^{m_j})^{k_j}$; for other data
-the value is a junk value.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of qMZVs (after Bachmann–Kühn). -/
-public noncomputable def qMZV : List (ℕ × Polynomial ℚ) → ℚ⟦X⟧
-  | [] => 1
-  | (k, Q) :: kQ => PowerSeries.mk fun N => coeff N (∑ m ∈ Finset.Ioo 0 (N + 1),
-      Polynomial.aeval (X ^ m : ℚ⟦X⟧) Q * ((1 - X ^ m)⁻¹) ^ k * qMZVPartial kQ m)
 
 /-- **General qMZV of the empty index.** The general q-multiple zeta value of the empty data is
 $\zeta_q(\varnothing; \varnothing) = 1$.
@@ -367,22 +134,6 @@ Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
 Article A6, Definition of qMZVs (ii). -/
 public theorem one_mem_qMZVSpace (d : ℕ) : (1 : ℚ⟦X⟧) ∈ qMZVSpace d :=
   Submodule.subset_span ⟨[], by simp, by simp, rfl⟩
-
-/-- **Bradley–Zhao q-multiple zeta values.** For an index $k = (k_1, \dots, k_r)$ of natural
-numbers, the Bradley–Zhao q-multiple zeta value is the general qMZV
-$\zeta_q^{BZ}(k) = \zeta_q(k_1, \dots, k_r; X^{k_1 - 1}, \dots, X^{k_r - 1})$, a formal power
-series in $q$ over $\mathbb{Q}$, where $k_j - 1$ is truncated at $0$. For an admissible index
-($k_1 \ge 2$ and all $k_i \ge 1$) it equals
-
-$$\zeta_q^{BZ}(k) = \sum_{m_1 > \dots > m_r > 0} \prod_{j=1}^{r}
-\frac{q^{m_j (k_j - 1)}}{(1 - q^{m_j})^{k_j}};$$
-
-for other indices the value has no intended meaning.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Definition of Bradley–Zhao qMZVs. -/
-public noncomputable def bzQMZV (k : List ℕ) : ℚ⟦X⟧ :=
-  qMZV (k.map fun k => (k, Polynomial.X ^ (k - 1)))
 
 /-- **Bradley–Zhao qMZV of the empty index.** The Bradley–Zhao q-multiple zeta value of the
 empty index is $\zeta_q^{BZ}(\varnothing) = 1$.
@@ -641,27 +392,6 @@ public theorem_wanted mem_qMZVSpace_zero_iff_exists_mvPolynomial (S : ℚ⟦X⟧
         ∑ r ∈ Finset.Icc 1 N, ∑ p ∈ stanleyPartitions r N,
           MvPolynomial.eval (Sum.elim (fun j => (p.1 j : ℚ)) fun j => (p.2 j : ℚ)) (f r)
 
-/-- **Quasi-shuffle product.** Fix an alphabet and a product of letters $a \diamond b$, a formal
-sum of letters given as a finite list (possibly empty, possibly with repetitions). The
-quasi-shuffle product $u \ast v$ of two words $u$ and $v$ is the formal sum of words, recorded as
-a list, defined recursively by $\mathbf{1} \ast w = w \ast \mathbf{1} = w$ for the empty word
-$\mathbf{1}$ and by
-$a u \ast b v = a (u \ast b v) + b (a u \ast v) + (a \diamond b)(u \ast v)$
-for letters $a$, $b$ and words $u$, $v$. Here a letter, or a formal sum of letters, written in
-front of a formal sum of words is prepended to each of its words, and the terms are listed in
-the order of the formula.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, quasi-shuffle products of Section 2 (the induced quasi-shuffle
-products on `M`, `𝔎`, `𝔥¹`). -/
-public def quasiShuffle {α : Type*} (d : α → α → List α) : List α → List α → List (List α)
-  | [], v => [v]
-  | a :: u, [] => [a :: u]
-  | a :: u, b :: v =>
-      (quasiShuffle d u (b :: v)).map (a :: ·) ++ (quasiShuffle d (a :: u) v).map (b :: ·) ++
-        (d a b).flatMap fun c => (quasiShuffle d u v).map (c :: ·)
-termination_by u v => u.length + v.length
-
 /-- **The empty word is a left unit for the quasi-shuffle product.** For every alphabet, every
 product of letters and every word $w$, the quasi-shuffle product of the empty word $\mathbf{1}$
 with $w$ is $\mathbf{1} \ast w = w$, the formal sum consisting of the single word $w$.
@@ -712,51 +442,6 @@ Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
 Article A6, Definition of the SZ-qshuffle product. -/
 public theorem szShuffle_y_y : szShuffle [false] [false] = [[false, false]] := by
   simp [szShuffle]
-
-/-- **Word of an index.** The word of an index $(k_1, \dots, k_r)$ of natural numbers is the word
-$p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, identification of SZ-admissible indices with words of `𝔎¹`. -/
-public def szWord (k : List ℕ) : List Bool :=
-  (k.map fun n => List.replicate n true ++ [false]).flatten
-
-/-- **Word of the empty index.** The word of the empty index is the empty word.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, identification of SZ-admissible indices with words of `𝔎¹`. -/
-public theorem szWord_nil : szWord [] = [] := rfl
-
-/-- **Reading an index off a word in $p$ and $y$.** For $c \in \mathbb{N}$ and a word $w$ in the
-letters $p$ and $y$, the index $R_c(w)$, a finite sequence of natural numbers, is defined
-recursively by $R_c(\mathbf{1}) = ()$ for the empty word $\mathbf{1}$, $R_c(p w) = R_{c+1}(w)$,
-and $R_c(y w) = (c, R_0(w))$, the index with first entry $c$ followed by the entries of
-$R_0(w)$. Thus $R_c(p^{k_1} y\, p^{k_2} y \cdots p^{k_r} y\, p^j) = (c + k_1, k_2, \dots, k_r)$
-for $r \ge 1$ and $R_c(p^j) = ()$: the entries are the lengths of the blocks of $p$s before
-each $y$, with $c$ added to the first, and trailing $p$s are dropped.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, identification of SZ-admissible indices with words of `𝔎¹`. -/
-public def szIndexOfWordAux : ℕ → List Bool → List ℕ
-  | _, [] => []
-  | c, true :: w => szIndexOfWordAux (c + 1) w
-  | c, false :: w => c :: szIndexOfWordAux 0 w
-
-/-- **Reading off a leading block of $p$s.** Write $R_c(w)$ for the index read off a word $w$ in
-the letters $p$ and $y$ when $c$ letters $p$ have already been read. For all $c, n \in \mathbb{N}$
-and every word $w$, $R_c(p^n y w)$ is the index whose first entry is $c + n$ and whose remaining
-entries are those of $R_0(w)$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, identification of SZ-admissible indices with words of `𝔎¹`. -/
-public theorem szIndexOfWordAux_replicate_append (c n : ℕ) (w : List Bool) :
-    szIndexOfWordAux c (List.replicate n true ++ false :: w) = (c + n) :: szIndexOfWordAux 0 w := by
-  induction n generalizing c with
-  | zero => simp [szIndexOfWordAux]
-  | succ n ih =>
-    rw [List.replicate_succ, List.cons_append, szIndexOfWordAux, ih]
-    congr 1
-    omega
 
 /-- **Schlesinger–Zudilin qMZVs of words.** Write $\zeta_q^{SZ}$ for the Schlesinger–Zudilin qMZV
 of an index of natural numbers. For a word $w$ in the letters $p$ and $y$ with $r$ letters $y$,
@@ -833,23 +518,6 @@ public theorem_wanted szQMZV_mul_eq_sum_szShuffle (u v : List ℕ)
     (hu : ∀ k₁ ∈ u.head?, 1 ≤ k₁) (hv : ∀ k₁ ∈ v.head?, 1 ≤ k₁) :
     szQMZV u * szQMZV v = ((szShuffle (szWord u) (szWord v)).map szQMZVWord).sum
 
-/-- **Quasi-shuffle relations for Bradley–Zhao qMZVs.** Identify an index $(k_1, \dots, k_r)$
-with the word $z_{k_1} \cdots z_{k_r}$, and let $u$ and $v$ be admissible indices: finite,
-possibly empty, sequences of positive integers whose first entry, if any, is at least $2$. Let
-$u \ast_{BZ} v$ be the quasi-shuffle product of $u$ and $v$ with letter product
-$z_a \diamond z_b = z_{a+b} + z_{a+b-1}$, a formal sum of indices. Then
-$\zeta_q^{BZ}(u)\,\zeta_q^{BZ}(v) = \zeta_q^{BZ}(u \ast_{BZ} v)$, where the Bradley–Zhao qMZV
-$\zeta_q^{BZ}$ is extended linearly to formal sums of indices.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
-Article A6, Proposition 5 (`integers-2024-A6-prop-5`). -/
-public theorem_wanted bzQMZV_mul_eq_sum_quasiShuffle (u v : List ℕ)
-    (hu : ∀ k ∈ u, 1 ≤ k) (hu₁ : ∀ k₁ ∈ u.head?, 2 ≤ k₁)
-    (hv : ∀ k ∈ v, 1 ≤ k) (hv₁ : ∀ k₁ ∈ v.head?, 2 ≤ k₁) :
-    bzQMZV u * bzQMZV v =
-      ((quasiShuffle (fun a b => [a + b, a + b - 1]) u v).map bzQMZV).sum
-
-
 /-- **Analytic properties of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of an
 integer $k_j \ge 1$ and a polynomial $Q_j \in \mathbb{Q}[X]$ with $\deg Q_j \le k_j$ for every
 $j$ and $Q_1(0) = 0$, and write the general qMZV as
@@ -877,7 +545,6 @@ public theorem_wanted qMZV_summable_differentiableOn_tendsto (kQ : List (ℕ × 
         (nhdsWithin 1 (Set.Iio 1))
         (nhds (multipleZetaValue (kQ.map Prod.fst) *
           ((kQ.map fun p => ((p.2.eval 1 : ℚ) : ℝ)).prod))))
-
 
 /-- **Letters of the Takeyama–Bradley–Zhao model as qMZV data.** The letters of the TBZ model
 are the symbol $\bar 1$ and the natural numbers $k \ge 1$. The letter $\bar 1$, with summand
@@ -1522,29 +1189,6 @@ public theorem_wanted bzChainSum_dual (k d : List ℕ) (hlen : k.length = d.leng
     bzChainSum (bzChainWord (d.zip k)) (N + 1) N =
       bzChainSum (bzChainWord (k.zip d).reverse) (N + 1) N
 
-/-- **The SZ dual index.** Identify an index $k = (k_1, \dots, k_r)$ of natural numbers with the
-word $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$, and let $\tilde\tau$ be the
-anti-automorphism of words with $\tilde\tau(p) = y$ and $\tilde\tau(y) = p$ (reverse the word and
-swap the letters). Write $\tilde\tau(p^{k_1} y \cdots p^{k_r} y)$ as $p^{a_1} y \cdots p^{a_s} y$
-followed by a possibly empty run of letters $p$ (nonempty only when $k_1 = 0$); that run is
-dropped, and the SZ dual index is $k^\dagger = (a_1, \dots, a_s)$.
-
-For $k = (k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$ with all $k_i, d_i \ge 1$, where
-$\{0\}^m$ stands for $m$ zeros, this gives
-$k^\dagger = (d_r, \{0\}^{k_r - 1}, \dots, d_1, \{0\}^{k_1 - 1})$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Theorem 5 (SZ duality, the map `τ̃` and the SZ dual index). -/
-public def szDualIndex (k : List ℕ) : List ℕ :=
-  szIndexOfWordAux 0 ((szWord k).reverse.map not)
-
-/-- **The SZ dual of $(2)$.** The SZ dual index of the one-entry index $(2)$ is $(1, 0)$, that
-is, $(2)^\dagger = (1, 0)$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Theorem 5 (SZ dual index). -/
-public theorem szDualIndex_two : szDualIndex [2] = [1, 0] := by decide
-
 /-- **Bradley–Zhao dual index.** For an index $k = (k_1, \dots, k_r)$ of natural numbers, form the
 word $x^{k_1 - 1} y \cdots x^{k_r - 1} y$ in two letters $x$ and $y$ (each $k_i - 1$ truncated at
 $0$); when all $k_i \ge 1$ this is $z_{k_1} \cdots z_{k_r}$ with $z_k = x^{k-1} y$. Apply the
@@ -1615,45 +1259,6 @@ Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Art
 Proposition 12 (i). -/
 public theorem oozToBZ_two : oozToBZ [2] = Finsupp.single [2] 1 := by
   simp [oozToBZ, oozToBZTail]
-
-/-- **The tail part of the map $V$.** Identify an index $(k_1, \dots, k_s)$ of natural numbers
-with the word $p^{k_1} y \cdots p^{k_s} y$ in the letters $p$ and $y$. This map sends the empty
-word to itself and, for $s \ge 1$, sends $p^{k_1} y \cdots p^{k_s} y$ to the formal
-$\mathbb{Q}$-linear combination of words
-$$\sum \binom{k_1}{n_1} \cdots \binom{k_s}{n_s} \, p^{n_1} y \cdots p^{n_s} y$$
-over $0 \le n_j \le k_j$ for $1 \le j \le s$. The map $V$ from OOZ to SZ words applies it to the
-blocks $p^{k_j} y$ after the first.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Proposition 12 (ii) (after Ebrahimi-Fard, Manchon and Singer, the map `V`). -/
-public noncomputable def oozToSZTail : List ℕ → (List ℕ →₀ ℚ)
-  | [] => Finsupp.single [] 1
-  | b :: k => ∑ n ∈ Finset.range (b + 1),
-      ((b.choose n : ℕ) : ℚ) • (oozToSZTail k).mapDomain (List.cons n)
-
-/-- **The map $V$ from OOZ to SZ words.** Identify an index $(k_1, \dots, k_r)$ of natural
-numbers with the word $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$. The map $V$ sends
-each such word to a formal $\mathbb{Q}$-linear combination of words: $V(\mathbf{1}) = \mathbf{1}$
-for the empty word $\mathbf{1}$, and for $r \ge 1$
-$$V(p^{k_1} y \cdots p^{k_r} y) = \sum \binom{k_1 - 1}{n_1 - 1} \binom{k_2}{n_2} \cdots
-\binom{k_r}{n_r} \, p^{n_1} y \cdots p^{n_r} y$$
-where the sum runs over $1 \le n_1 \le k_1$ and $0 \le n_j \le k_j$ for $2 \le j \le r$ (an empty
-sum is $0$).
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Proposition 12 (ii) (after Ebrahimi-Fard, Manchon and Singer, the map `V`). -/
-public noncomputable def oozToSZ : List ℕ → (List ℕ →₀ ℚ)
-  | [] => Finsupp.single [] 1
-  | a :: k => ∑ n ∈ Finset.Icc 1 a,
-      (((a - 1).choose (n - 1) : ℕ) : ℚ) • (oozToSZTail k).mapDomain (List.cons n)
-
-/-- **The map $V$ fixes $py$.** The map $V$ from OOZ to SZ words sends the word $py$ (the index
-$(1)$) to itself with coefficient $1$: $V(py) = py$.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Proposition 12 (ii). -/
-public theorem oozToSZ_one : oozToSZ [1] = Finsupp.single [1] 1 := by
-  simp [oozToSZ, oozToSZTail]
 
 /-- **OOZ-qMZVs of admissible indices via BZ-qMZVs.** Write $\zeta_q^{\mathrm{OOZ}}$ and
 $\zeta_q^{\mathrm{BZ}}$ for the Ohno–Okuda–Zudilin and Bradley–Zhao qMZVs. Let
@@ -1727,26 +1332,6 @@ public theorem_wanted sum_oozQMZV_eq_of_oozToBZ_eq_bzDual (w : List ℕ) (hw : �
     (hw₁ : ∀ a ∈ w.head?, 2 ≤ a) (x : List ℕ →₀ ℚ)
     (hx : x ∈ Finsupp.supported ℚ ℚ {v : List ℕ | (∀ a ∈ v, 1 ≤ a) ∧ ∀ a ∈ v.head?, 2 ≤ a})
     (hUx : Finsupp.linearCombination ℚ oozToBZ x = (oozToBZ w).mapDomain bzDualIndex) :
-    (x.sum fun v c => c • oozQMZV v) = oozQMZV w
-
-/-- **Duality for OOZ-qMZVs.** Call an index $(k_1, \dots, k_r)$ of natural numbers SZ-admissible
-if it is empty or $k_1 \ge 1$. Extend $\zeta_q^{\mathrm{OOZ}}$ and the map $V$ linearly to formal
-$\mathbb{Q}$-linear combinations of indices, and let $\tilde\tau$ act on such a combination by
-replacing each index with its SZ dual index. Let $w$ be an SZ-admissible index and let $x$ be a
-$\mathbb{Q}$-linear combination of SZ-admissible indices with $V(x) = \tilde\tau(V(w))$. Then
-$\zeta_q^{\mathrm{OOZ}}(x) = \zeta_q^{\mathrm{OOZ}}(w)$.
-
-Since $V$ is a bijection on combinations of SZ-admissible indices (Proposition 12 (ii) of the
-source), this is the identity
-$\zeta_q^{\mathrm{OOZ}} = \zeta_q^{\mathrm{OOZ}} \circ V^{-1} \circ \tilde\tau \circ V$ on
-SZ-admissible indices.
-
-Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
-Theorem 17 (ii) (after Ebrahimi-Fard, Manchon and Singer) (`integers-2024-A6-thm-17`). -/
-public theorem_wanted sum_oozQMZV_eq_of_oozToSZ_eq_szDual (w : List ℕ)
-    (hw₁ : ∀ a ∈ w.head?, 1 ≤ a) (x : List ℕ →₀ ℚ)
-    (hx : x ∈ Finsupp.supported ℚ ℚ {v : List ℕ | ∀ a ∈ v.head?, 1 ≤ a})
-    (hVx : Finsupp.linearCombination ℚ oozToSZ x = (oozToSZ w).mapDomain szDualIndex) :
     (x.sum fun v c => c • oozQMZV v) = oozQMZV w
 
 /-- **Partial sums of SZ-star qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers and

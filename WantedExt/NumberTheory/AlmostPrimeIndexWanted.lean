@@ -21,7 +21,8 @@ public import Mathlib.NumberTheory.Harmonic.EulerMascheroni
 public import Mathlib.NumberTheory.PrimeCounting
 public import MathlibExt.NumberTheory.AlmostPrimeIndex
 public import MathlibExt.NumberTheory.PrimeCounting.LandauAlmostPrimeAsymptotic
-public import WantedExt.NumberTheory.PrimeCounting.DusartMertensReciprocalSumWanted
+public import MathlibExt.NumberTheory.PrimeCounting.AlmostPrimeUniformUpperBound
+public import MathlibExt.NumberTheory.PrimeCounting.DusartMertensReciprocalSumDefs
 
 /-!
 # Almost primes of almost prime index
@@ -76,23 +77,6 @@ public theorem_wanted nth_prime_dusart_bounds :
         (Real.log (Real.log n) - 2.25) / Real.log n) ≤ Nat.nth Nat.Prime (n - 1)) ∧
     (∀ n : ℕ, 39017 ≤ n →
       (Nat.nth Nat.Prime (n - 1) : ℝ) ≤ n * (Real.log n + Real.log (Real.log n) - 0.9484))
-
-/-- **Convergence of reciprocal sums over almost primes of almost prime index.** A $k$-almost
-prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
-integers $k_1, \dots, k_m$ let $N_{k_1}$ be the set of $k_1$-almost primes and, for $m \ge 2$, let
-$N_{k_1 k_2 \cdots k_m}$ be the set of $k_1$-almost primes whose index in the increasing
-enumeration of the $k_1$-almost primes (starting at $1$) lies in $N_{k_2 \cdots k_m}$. Then for
-every $m \ge 2$ and all positive integers $k_1, \dots, k_m$ the series
-$\sum_{n \in N_{k_1 k_2 \cdots k_m}} 1/n$ converges.
-
-In particular (the case $m = 2$), for all positive integers $j$ and $k$ the sum of the reciprocals
-of the $j$-almost primes of $k$-almost prime index converges.
-
-Source: Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*,
-INTEGERS 24 (2024), Article A99, Theorem 5 (`integers-2024-A99-thm-5`). -/
-public theorem_wanted summable_inv_almostPrimeIndexSet {k : ℕ} {L : List ℕ} (hk : 1 ≤ k)
-    (hL : L ≠ []) (hpos : ∀ j ∈ L, 1 ≤ j) :
-    Summable fun n : almostPrimeIndexSet k L => (1 : ℝ) / n
 
 /-- **Reciprocal sum of the primes of semiprime index.** Let $N_{1,2}$ be the set of primes $p_i$
 (indexed from $p_1 = 2$) whose index $i$ is a semiprime, that is, a product of two not
@@ -157,18 +141,6 @@ public theorem_wanted semiprime_reciprocal_sum_explicit_estimate {x : ℝ} (hx :
           ∑' p : Nat.Primes, Real.log (p : ℕ) / (((p : ℕ) : ℝ) * (((p : ℕ) : ℝ) - 1))) /
           Real.log x)| <
       Real.log x ^ (-(3 / 2 : ℝ))
-
-/-- **Erdős–Sárközy bound for almost primes.** There is a real constant $C$ such that for every
-integer $k \ge 1$ and every real $t \ge 1$, the number $\pi_{k+1}(t)$ of integers $n$ with
-$1 \le n \le t$ that have exactly $k + 1$ prime factors, counted with multiplicity, satisfies
-$\pi_{k+1}(t) \le C \cdot \frac{k^4}{2^k} \, t \log t$.
-
-Source: Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*,
-INTEGERS 24 (2024), Article A99, Lemma 3 (quoting Erdős and Sárközy) (`integers-2024-A99-lem-3`). -/
-public theorem_wanted almostPrime_count_le_erdos_sarkozy :
-    ∃ C : ℝ, ∀ k : ℕ, 1 ≤ k → ∀ t : ℝ, 1 ≤ t →
-      (almostPrimeCounting (k + 1) ⌊t⌋₊ : ℝ) ≤
-        C * ((k : ℝ) ^ 4 / 2 ^ k) * t * Real.log t
 
 /-- **Logarithmic expansions of the prime counting function.** Let $\pi(x)$ be the number of
 primes $p \le x$. As $x \to \infty$,
