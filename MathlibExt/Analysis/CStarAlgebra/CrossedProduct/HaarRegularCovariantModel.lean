@@ -24,8 +24,9 @@ Let G be a locally compact Borel topological group, μ a regular left Haar measu
 nonunital complex C-star algebra and α a point-norm action of G on A. Let H be a complex
 Hilbert space and ρ:A→B(H) a nonunital complex star homomorphism. On K=L²(G,μ;H), let
 Π(a)=regularCoefficientOperator α ρ μ a, given almost everywhere by
-(Π(a)ξ)(s)=ρ(α_(s⁻¹)(a))ξ(s). Together with (λ_g ξ)(s)=ξ(g⁻¹*s), these operators form a
-covariant representation: λ_g Π(a) λ_g*=Π(α_g(a)). The pointwise coefficient operator is also
+(Π(a)ξ)(s)=ρ(α_(s⁻¹)(a))ξ(s). For each g and ξ, (λ_g ξ)(s)=ξ(g⁻¹*s) for μ-almost every s.
+Together these operators form a covariant representation with the exact operator identity
+λ_g Π(a) λ_g*=Π(α_g(a)). The pointwise coefficient operator is also
 defined for regular measures before assuming Haar invariance.
 -/
 
@@ -243,7 +244,8 @@ Let G be a locally compact Borel topological group, μ a regular left Haar measu
 nonunital complex C-star algebra and α a point-norm action of G on A. Let H be a complex
 Hilbert space and ρ:A→B(H) a nonunital complex star homomorphism. On K=L²(G,μ;H), let
 Π(a)=regularCoefficientOperator α ρ μ a, given almost everywhere by
-(Π(a)ξ)(s)=ρ(α_(s⁻¹)(a))ξ(s). For the left Haar regular unitary λ_g ξ(s)=ξ(g⁻¹*s),
+(Π(a)ξ)(s)=ρ(α_(s⁻¹)(a))ξ(s). For each g and ξ, the left Haar regular unitary satisfies
+(λ_g ξ)(s)=ξ(g⁻¹*s) for μ-almost every s. The exact operator identity is
 λ_g*Π(a)*star(λ_g)=Π(α_g(a)) for g∈G and a∈A.
 -/
 theorem regularCoefficientOperator_covariance (g : G) (a : A) :
@@ -283,7 +285,8 @@ nonunital complex C-star algebra and α a point-norm action of G on A. Let H be 
 Hilbert space and ρ:A→B(H) a nonunital complex star homomorphism. On K=L²(G,μ;H), let
 Π(a)=regularCoefficientOperator α ρ μ a, given almost everywhere by
 (Π(a)ξ)(s)=ρ(α_(s⁻¹)(a))ξ(s). The pair regularCovariantRepresentation α ρ μ on K consists of Π
-and the strongly continuous Haar left regular unitaries λ_g ξ(s)=ξ(g⁻¹*s).
+and the strongly continuous Haar left regular unitaries λ_g. For each g and ξ,
+(λ_g ξ)(s)=ξ(g⁻¹*s) for μ-almost every s; covariance is an exact operator identity.
 -/
 def regularCovariantRepresentation : CovariantRepresentation α (Lp H 2 μ) where
   algebra := regularCoefficientHom α ρ μ
