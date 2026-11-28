@@ -31,8 +31,9 @@ quotient `Gal(L/K)` (`MathlibExt.FieldTheory.Galois.FixingSubgroup`); the rings 
 (`Representation.isAdmissible_iff_of_normal` and `Representation.finrank_periods_eq_of_normal`)
 applies. For general `L`, we pass through the normal closure of `L` over `ℚ_p` inside `ℚ̄_p`,
 which is normal over both `K` and `L`. This is J.-M. Fontaine, *Représentations p-adiques
-semi-stables*, Astérisque 223 (1994), Exposé III, §1.8.6 p. 135, for the ring `B_HT`, whose
-invariants are given in *op. cit.*, §3.5 p. 141.
+semi-stables*, Astérisque 223 (1994), Exposé III, §§1.8.5–1.8.6, p. 135, for the ring `B_HT`,
+whose invariants are given in *op. cit.*, §3.5, p. 141; the Hodge–Tate case is stated in
+*op. cit.*, §3.9, Remarque ii), p. 143.
 
 As in `MathlibExt.NumberTheory.Padics.HodgeTate.Representation`, no continuity is assumed.
 -/
@@ -101,8 +102,10 @@ theorem isHodgeTate_iff_of_le {K L : IntermediateField ℚ_[p] (PadicAlgCl p)} (
   rw [isHodgeTate_iff_of_normal (h.trans hLM) ρ, isHodgeTate_iff_of_normal hLM ρ]
 
 /-- **The Hodge–Tate numbers do not change under finite extension**: for `K ≤ L` inside `ℚ̄_p`
-with `L` finite over `ℚ_p`, the Hodge–Tate numbers `hᵢ = dim (ℂ_p(-i) ⊗_{ℚ_p} V)^{G_K}` of a
-representation `V` of `Gal(ℚ̄_p/ℚ_p)` over `K` are those over `L`. -/
+with `L` finite over `ℚ_p`, the Hodge–Tate numbers of a representation `V` of `Gal(ℚ̄_p/ℚ_p)`
+over `K` are those over `L`. Here `hᵢ` over `K` is the natural-number dimension
+(`Module.finrank`, zero for infinite rank) of `(ℂ_p(-i) ⊗_{ℚ_p} V)^{G_K}` over `ℂ_p^{G_K}`; for
+`V` finite-dimensional it is `dim_K (ℂ_p(-i) ⊗_{ℚ_p} V)^{G_K}`. -/
 theorem hodgeTateNumber_eq_of_le {K L : IntermediateField ℚ_[p] (PadicAlgCl p)} (h : K ≤ L)
     [FiniteDimensional ℚ_[p] L] (ρ : Representation ℚ_[p] (Galois p) V) (i : ℤ) :
     ρ.hodgeTateNumber K i = ρ.hodgeTateNumber L i := by
