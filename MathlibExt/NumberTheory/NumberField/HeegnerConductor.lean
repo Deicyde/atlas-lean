@@ -17,16 +17,17 @@ import Mathlib.Tactic.LinearCombination
 # Heegner points of conductor `n`: the ideal and the isogeny
 
 Let `K` be a number field with ring of integers `𝓞 K`, let `𝒩` be an ideal of `𝓞 K` with
-`𝓞 K ⧸ 𝒩` cyclic of order `N ≠ 0`, and let `n` be prime to `N`. Let `𝒪ₙ = ℤ + n 𝓞 K` be the order
-of conductor `n` (a subring `R` of `𝓞 K` given by its elements) and `𝒩ₙ = 𝒩 ∩ 𝒪ₙ`.
+`𝓞 K ⧸ 𝒩` cyclic of order `N ≠ 0`, and let `n` be prime to `N`. Let `𝒪ₙ` be the subring
+`ℤ + n 𝓞 K` of `𝓞 K` (a subring `R` given by its elements; for `n ≥ 1` and `K ≠ ℚ` it is the order
+of conductor `n`) and `𝒩ₙ = 𝒩 ∩ 𝒪ₙ`.
 
 * `NumberField.RingOfIntegers.comap_order_quotient_ringEquiv_zmod_and_mul_eq_span`:
   `𝒪ₙ ⧸ 𝒩ₙ ≃+* ℤ ⧸ N ℤ`, and `𝒩ₙ J = N 𝒪ₙ` for an ideal `J` of `𝒪ₙ`, so `𝒩ₙ` is invertible.
 * `NumberField.RingOfIntegers.heegner_isogeny_conductor_isAddCyclic_ker`: for an imaginary
-  quadratic `K` with complex embedding `σ`, the images `σ(𝒪ₙ)` and `σ(𝒩ₙ⁻¹)` are lattices in `ℂ`,
-  `σ(𝒩ₙ⁻¹) / σ(𝒪ₙ)` is cyclic of order `N`, and the map `ℂ / σ(𝒪ₙ) → ℂ / σ(𝒩ₙ⁻¹)` is onto with
-  kernel cyclic of order `N`: the cyclic `N`-isogeny that defines the Heegner point `xₙ` on
-  `X₀(N)`.
+  quadratic `K` with complex embedding `σ` and for `n ≠ 0`, the images `σ(𝒪ₙ)` and `σ(𝒩ₙ⁻¹)` are
+  lattices in `ℂ`, `σ(𝒩ₙ⁻¹) / σ(𝒪ₙ)` is cyclic of order `N`, and the map
+  `ℂ / σ(𝒪ₙ) → ℂ / σ(𝒩ₙ⁻¹)` is onto with kernel cyclic of order `N`: the cyclic `N`-isogeny that
+  defines the Heegner point `xₙ` on `X₀(N)`.
 
 The source is B. H. Gross, *Kolyvagin's work on modular elliptic curves*, in *L-functions and
 arithmetic* (Durham, 1989), London Math. Soc. Lecture Note Ser. 153, Cambridge Univ. Press, 1991,
@@ -40,11 +41,11 @@ Since `𝓞 K ⧸ 𝒩` is cyclic of order `N`, it has characteristic `N`, so `�
 domain `𝓞 K` and `J = (N 𝒪ₙ : 𝒩ₙ)`, the elements `n 𝒩'` lie in `J`, and
 `n N ∈ 𝒩ₙ 𝒩' n ⊆ 𝒩ₙ J`; with `N² ∈ 𝒩ₙ J` this gives `N ∈ 𝒩ₙ J`.
 
-For the isogeny, `𝒩ₙ⁻¹ = 𝒪ₙ + n 𝒩⁻¹`: an `x` with `x 𝒩ₙ ⊆ 𝒪ₙ` satisfies `x 𝒩 ⊆ 𝓞 K` and
-`x = u (n x) + v (N x)` with `N x ∈ 𝒪ₙ`; an element `y ∈ 𝒩⁻¹` with `n y ∈ 𝒪ₙ` lies in `𝓞 K`, as
-`N y ∈ 𝓞 K`. So `y ↦ n y` induces `𝒩⁻¹ / 𝓞 K ≅ 𝒩ₙ⁻¹ / 𝒪ₙ`, and `𝒩⁻¹ / 𝓞 K ≅ 𝓞 K ⧸ 𝒩`
+For the isogeny, with `n ≠ 0`, `𝒩ₙ⁻¹ = 𝒪ₙ + n 𝒩⁻¹`: an `x` with `x 𝒩ₙ ⊆ 𝒪ₙ` satisfies `x 𝒩 ⊆ 𝓞 K`
+and `x = u (n x) + v (N x)` with `N x ∈ 𝒪ₙ`; an element `y ∈ 𝒩⁻¹` with `n y ∈ 𝒪ₙ` lies in `𝓞 K`,
+as `N y ∈ 𝓞 K`. So `y ↦ n y` induces `𝒩⁻¹ / 𝓞 K ≅ 𝒩ₙ⁻¹ / 𝒪ₙ`, and `𝒩⁻¹ / 𝓞 K ≅ 𝓞 K ⧸ 𝒩`
 (`FractionalIdeal.invQuotientEquiv`). The lattices sit between `σ(n 𝓞 K)` and `σ(N⁻¹ 𝓞 K)`,
-which are lattices by `NumberField.FractionalIdeal.isZLattice_complexLattice`.
+which are lattices by `NumberField.FractionalIdeal.isZLattice_complexLattice` as `n ≠ 0`.
 -/
 
 set_option autoImplicit false
@@ -78,7 +79,7 @@ private theorem natCast_mem_of_card {𝒩 : Ideal (𝓞 K)} {N : ℕ} (hcard : N
   rwa [hcard, nsmul_eq_mul, mul_one] at this
 
 omit [NumberField K] in
-/-- Elements of the form `n y` lie in the order of conductor `n`. -/
+/-- Elements of the form `n y` lie in the subring `ℤ + n 𝓞 K`. -/
 private theorem mul_mem_order {n : ℕ} {R : Subring (𝓞 K)}
     (hR : (R : Set (𝓞 K)) = {x | ∃ (a : ℤ) (y : 𝓞 K), x = a + n * y}) (y : 𝓞 K) :
     (n : 𝓞 K) * y ∈ R := by
@@ -104,10 +105,11 @@ private theorem le_map_comap {n N : ℕ} (hnN : n.Coprime N) {𝒩 : Ideal (𝓞
   exact add_mem (Ideal.mul_mem_left _ _ (Ideal.mem_map_of_mem _ hnx))
     (Ideal.mul_mem_right _ _ (Ideal.mem_map_of_mem _ hNI))
 
-/-- **The ideal of index `N` in the order of conductor `n`.** Let `K` be a number field, let `𝒩` be
+/-- **The ideal of index `N` in the subring `ℤ + n 𝓞 K`.** Let `K` be a number field, let `𝒩` be
 an ideal of `𝓞 K` such that the additive group `𝓞 K ⧸ 𝒩` is cyclic of order `N ≠ 0`, and let `n`
-be prime to `N`. Let `R = 𝒪ₙ = ℤ + n 𝓞 K` be the order of conductor `n`, given as a subring of
-`𝓞 K` by its elements, and `𝒩ₙ = 𝒩 ∩ 𝒪ₙ` (the ideal `𝒩.comap R.subtype` of `R`). Then
+be prime to `N`. Let `R = 𝒪ₙ` be the subring `ℤ + n 𝓞 K` of `𝓞 K`, given by its elements (for
+`n ≥ 1` and `K ≠ ℚ` it is the order of conductor `n`), and `𝒩ₙ = 𝒩 ∩ 𝒪ₙ` (the ideal
+`𝒩.comap R.subtype` of `R`). Then
 `𝒪ₙ ⧸ 𝒩ₙ ≃+* ℤ ⧸ N ℤ`, and there is an ideal `J` of `𝒪ₙ` with `𝒩ₙ J = N 𝒪ₙ`; so `𝒩ₙ` is an
 invertible `𝒪ₙ`-ideal, with inverse the fractional ideal `N⁻¹ J`.
 

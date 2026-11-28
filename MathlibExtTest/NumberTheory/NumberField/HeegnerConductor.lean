@@ -23,7 +23,8 @@ open NumberField
 #check @NumberField.RingOfIntegers.comap_order_quotient_ringEquiv_zmod_and_mul_eq_span
 #check @NumberField.RingOfIntegers.heegner_isogeny_conductor_isAddCyclic_ker
 
-/-- For `n = 1` the order is `𝓞 K` itself, and `𝒩ₙ = 𝒩`: the quotient is `ℤ ⧸ N ℤ`. -/
+/-- For `n = 1` the subring `ℤ + n 𝓞 K` is `𝓞 K` itself and `𝒩ₙ = 𝒩`; with `𝓞 K ⧸ 𝒩` additively
+cyclic of order `N ≠ 0`, as assumed, the first theorem gives `𝒪₁ ⧸ 𝒩₁ ≃+* ℤ ⧸ N ℤ`. -/
 example {K : Type*} [Field K] [NumberField K] {N : ℕ} (hN : N ≠ 0) {𝒩 : Ideal (𝓞 K)}
     (hcyc : IsAddCyclic (𝓞 K ⧸ 𝒩)) (hcard : Nat.card (𝓞 K ⧸ 𝒩) = N) :
     Nonempty ((⊤ : Subring (𝓞 K)) ⧸ 𝒩.comap (⊤ : Subring (𝓞 K)).subtype ≃+* ZMod N) :=
