@@ -42,6 +42,7 @@ are proved in
 module
 
 public import Batteries.Util.ProofWanted
+public import MathlibExt.Algebra.PowerSeries.ExponentialGeneratingFunction
 public import MathlibExt.Combinatorics.Digraph.TournamentScoreSequence
 public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 public import Mathlib.Combinatorics.Enumerative.Partition.Basic
@@ -125,21 +126,6 @@ Tournaments with a Specified Number of Circular
 Triads", Journal of Integer Sequences 27 (2024), Article 24.8.7, Section 3. -/
 noncomputable def atomicGenerator (d : ℕ) : PowerSeries ℚ :=
   PowerSeries.mk fun n => (atomCount n d : ℚ) / n.factorial
-
-/-- **Proposition 2**: if `c_n = a_n + b_n` counts the
-structures on `n` labeled players split into two disjoint
-cases, then the exponential generating functions satisfy
-`C(x) = A(x) + B(x)`.
-
-Source: Ian R. Harris and Ryan P. A. McShane, "Counting
-Tournaments with a Specified Number of Circular
-Triads", Journal of Integer Sequences 27 (2024), Article 24.8.7, Proposition 2
-(`jis-2024-24.8.7-prop-2`). -/
-theorem_wanted egf_add (a b c : ℕ → ℕ)
-    (hc : ∀ n, c n = a n + b n) :
-    PowerSeries.mk (fun n => (c n : ℚ) / n.factorial) =
-      PowerSeries.mk (fun n => (a n : ℚ) / n.factorial) +
-        PowerSeries.mk (fun n => (b n : ℚ) / n.factorial)
 
 /-- **Proposition 3**: if `a_k` and `b_k` count the
 `α`- and `β`-structures on `k` labeled players and `c_n`
