@@ -43,6 +43,7 @@ toric steady states", Bull. Math. Biol. 74 (2012) 1027–1065, Section 2, Condit
 module
 
 public import Batteries.Util.ProofWanted
+public import Domains.Biology.Dynamics.ToricSteadyStates
 public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 public import Mathlib.LinearAlgebra.Basis.Defs
 public import Mathlib.LinearAlgebra.Span.Defs
@@ -55,43 +56,6 @@ namespace WantedExt.Biology.Biophysics.ToricSteadyStatesWanted
 
 variable {C S : Type*} [Fintype C] [Fintype S]
 
-/-- For finitely many complexes (`[Fintype C]`) and species (`[Fintype S]`), the mass-action
-vector field `f(x) = ∑_{c, c' : C} κ_{cc'} x^{y_c} (y_{c'} - y_c)`, with
-`x^{y_c} = ∏_{s : S} x_s ^ (y_c s)`, of complexes `y : C → S → ℕ` and rate constants `κ`, equal
-to `Σ Ψ(x)` with `Σ = Yᵗ A_κᵗ`. -/
-noncomputable def massActionField (y : C → S → ℕ) (κ : C → C → ℝ) (x : S → ℝ) : S → ℝ :=
-  fun s => ∑ c, ∑ c', κ c c' * (∏ s', x s' ^ y c s') * ((y c' s : ℝ) - y c s)
-
-/-- For finitely many complexes (`[Fintype C]`), the matrix `Σ = Yᵗ A_κᵗ`, with entries
-`Σ_{sc} = ∑_{c' : C} κ_{cc'} (y_{c'} s - y_c s)`; the vector field is `Σ Ψ(x)`. -/
-def sigmaMatrix (y : C → S → ℕ) (κ : C → C → ℝ) : Matrix S C ℝ :=
-  fun s c => ∑ c', κ c c' * ((y c' s : ℝ) - y c s)
-
-/-- For finitely many complexes (`[Fintype C]`), the linear map `Σ : ℝ^C → ℝ^S`,
-`v ↦ (∑_{c : C} Σ_{sc} v_c)_s`. -/
-noncomputable def sigmaMap (y : C → S → ℕ) (κ : C → C → ℝ) : (C → ℝ) →ₗ[ℝ] (S → ℝ) :=
-  (sigmaMatrix y κ).mulVecLin
-
-/-- **Condition 3.1**: `b` is a basis of `ker Σ` and the support of `b i` is the block
-`{c | part c = i}` of the partition `part` of the complexes. -/
-def Condition31 (y : C → S → ℕ) (κ : C → C → ℝ) {ι : Type*}
-    (b : Module.Basis ι ℝ (LinearMap.ker (sigmaMap y κ))) (part : C → ι) : Prop :=
-  ∀ i c, (b i : C → ℝ) c ≠ 0 ↔ part c = i
-
-/-- **Condition 3.4**: the nonzero entries of each basis vector `b i` (the entries on its block)
-have the same sign. -/
-def Condition34 {M : Submodule ℝ (C → ℝ)} {ι : Type*} (b : Module.Basis ι ℝ M)
-    (part : C → ι) : Prop :=
-  ∀ i c c', part c = i → part c' = i → 0 < (b i : C → ℝ) c * (b i : C → ℝ) c'
-
-/-- **Condition 3.6**: for finitely many species (`[Fintype S]`), the linear system
-`(ln x) · (y_c - y_{c'}) = ln (b^i_c / b^i_{c'})`, with `(ln x) · y = ∑_{s : S} (ln x)_s y_s`,
-for `c, c'` in the block of `i`, has a real solution `ln x = v`. -/
-def Condition36 (y : C → S → ℕ) {M : Submodule ℝ (C → ℝ)} {ι : Type*}
-    (b : Module.Basis ι ℝ M) (part : C → ι) : Prop :=
-  ∃ v : S → ℝ, ∀ i c c', part c = i → part c' = i →
-    ∑ s, v s * ((y c s : ℝ) - y c' s) = Real.log ((b i : C → ℝ) c / (b i : C → ℝ) c')
-
 /-- For finitely many species (`[Fintype S]`), `x` solves the binomial system (3.1):
 `b^i_c x^{y_{c'}} = b^i_{c'} x^{y_c}` for all `c, c'` in the block of `i`, where
 `x^{y_c} = ∏_{s : S} x_s ^ (y_c s)`. -/
@@ -99,20 +63,6 @@ def SolvesBinomials (y : C → S → ℕ) {M : Submodule ℝ (C → ℝ)} {ι : 
     (b : Module.Basis ι ℝ M) (part : C → ι) (x : S → ℝ) : Prop :=
   ∀ i c c', part c = i → part c' = i →
     (b i : C → ℝ) c * ∏ s, x s ^ y c' s = (b i : C → ℝ) c' * ∏ s, x s ^ y c s
-
-/-- **Existence of positive toric steady states** (Pérez Millán–Dickenstein–Shiu–Conradi 2012,
-Theorem 3.8). For finitely many complexes (`[Fintype C]`) and species (`[Fintype S]`), complexes
-`y`, nonnegative rate constants `κ`, and a partition `part` with a basis `b` of `ker Σ` satisfying
-Condition 3.1, the mass-action system has a positive steady state if and only if Conditions 3.4
-and 3.6 hold.
-
-Source: M. Pérez Millán, A. Dickenstein, A. Shiu, C. Conradi, Bull. Math. Biol. 74 (2012)
-1027–1065, Theorem 3.8. -/
-theorem_wanted exists_pos_steadyState_iff (y : C → S → ℕ) {κ : C → C → ℝ}
-    (hκ : ∀ c c', 0 ≤ κ c c') {ι : Type*} (b : Module.Basis ι ℝ (LinearMap.ker (sigmaMap y κ)))
-    (part : C → ι) (h31 : Condition31 y κ b part) :
-    (∃ x : S → ℝ, (∀ s, 0 < x s) ∧ massActionField y κ x = 0) ↔
-      Condition34 b part ∧ Condition36 y b part
 
 /-- **Monomial parametrization of the positive steady states** (Pérez Millán–Dickenstein–Shiu–
 Conradi 2012, Theorem 3.11). For finitely many complexes (`[Fintype C]`) and species
