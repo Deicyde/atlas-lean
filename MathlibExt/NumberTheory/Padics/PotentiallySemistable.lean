@@ -41,6 +41,15 @@ Exposé III, §1.5.1 p. 124 (`Representation.IsAdmissible`), `V` is
   `ℚ̄_p` (`Representation.IsPotentiallySemistable`; Exposé III, §5.6.1 p. 166, in the form of
   §1.8.5 pp. 134–135).
 
+For a period ring `B`, admissibility asks that `V` be finite-dimensional and that the module rank
+(`Module.finrank`, zero for infinite rank) of `(B ⊗_{ℚ_p} V)^{G_K}` over the fixed subalgebra
+`B^{G_K}` be `dim_{ℚ_p} V`. For `B_dR` the fixed subalgebra is a field. For `B_cris` and `B_st`
+and an arbitrary `K` it need not be: for `K = ℚ̄_p` the group `G_K` is trivial and
+`B_st^{G_K} = B_st`. For `K` finite over `ℚ_p`, Fontaine proves `B_cris^{G_K} = B_st^{G_K} = K₀`,
+the maximal absolutely unramified subfield of `K` (Exposé III, Proposition 5.1.2 i), p. 155; not
+proved here), so that for a continuous `V` these conditions are his dimension criteria
+`dim_{K₀} D_cris(V) = dim_{ℚ_p} V` and `dim_{K₀} D_st(V) = dim_{ℚ_p} V` (§5.1.4 p. 156).
+
 Here `B_cris` and `B_st` are the Galois stable subrings `PadicComplexInt.bCris` and
 `PadicComplexInt.bSt` of `B_dR`, as Fontaine identifies them (Exposé II, §4.1 pp. 83–84 and
 §4.2.4–4.2.5 p. 86). By the equivariant isomorphisms with the abstract rings
@@ -193,15 +202,23 @@ def IsDeRham (ρ : Representation ℚ_[p] Gal(PadicAlgCl p/ℚ_[p]) V)
 
 /-- **`V` is crystalline over `K`** (Fontaine, Exposé III, §5.1.4 p. 156): `V` is
 `B_cris`-admissible as a representation of `G_K = Gal(ℚ̄_p/K)`, that is, `V` is finite-dimensional
-and `dim_{B_cris^{G_K}} (B_cris ⊗_{ℚ_p} V)^{G_K} = dim_{ℚ_p} V`, for `B_cris ⊆ B_dR`. -/
+and the module rank (`Module.finrank`, zero for infinite rank) of `(B_cris ⊗_{ℚ_p} V)^{G_K}` over
+the fixed subalgebra `B_cris^{G_K}` is `dim_{ℚ_p} V`, for `B_cris ⊆ B_dR`. For `K` finite over
+`ℚ_p`, `B_cris^{G_K}` is the maximal absolutely unramified subfield `K₀` of `K` (Exposé III,
+Proposition 5.1.2 i), p. 155; not proved here), and for a continuous `V` this is Fontaine's
+criterion `dim_{K₀} D_cris(V) = dim_{ℚ_p} V`. -/
 def IsCrystalline (ρ : Representation ℚ_[p] Gal(PadicAlgCl p/ℚ_[p]) V)
     (K : IntermediateField ℚ_[p] (PadicAlgCl p)) : Prop :=
   ρ.IsAdmissible (galoisBCris p) K.fixingSubgroup
 
 /-- **`V` is semistable over `K`** (Fontaine, Exposé III, §5.1.4 p. 156): `V` is
 `B_st`-admissible as a representation of `G_K = Gal(ℚ̄_p/K)`, that is, `V` is finite-dimensional
-and `dim_{B_st^{G_K}} (B_st ⊗_{ℚ_p} V)^{G_K} = dim_{ℚ_p} V`, for
-`B_st = B_cris[log [p̃]] ⊆ B_dR`. -/
+and the module rank (`Module.finrank`, zero for infinite rank) of `(B_st ⊗_{ℚ_p} V)^{G_K}` over
+the fixed subalgebra `B_st^{G_K}` is `dim_{ℚ_p} V`, for `B_st = B_cris[log [p̃]] ⊆ B_dR`. For an
+arbitrary `K` the fixed subalgebra need not be a field (for `K = ℚ̄_p` it is `B_st` itself). For
+`K` finite over `ℚ_p`, `B_st^{G_K}` is the maximal absolutely unramified subfield `K₀` of `K`
+(Exposé III, Proposition 5.1.2 i), p. 155; not proved here), and for a continuous `V` this is
+Fontaine's criterion `dim_{K₀} D_st(V) = dim_{ℚ_p} V`. -/
 def IsSemistable (ρ : Representation ℚ_[p] Gal(PadicAlgCl p/ℚ_[p]) V)
     (K : IntermediateField ℚ_[p] (PadicAlgCl p)) : Prop :=
   ρ.IsAdmissible (galoisBSt p) K.fixingSubgroup
