@@ -15,6 +15,7 @@ public import Mathlib.RingTheory.PowerSeries.Basic
 public import MathlibExt.Combinatorics.AssociatedStirlingEulerian
 public import MathlibExt.Combinatorics.Enumerative.FenceTiling
 public import MathlibExt.Combinatorics.Enumerative.RestrictedCombinations
+public import MathlibExt.Combinatorics.Enumerative.RestrictedCombinationsWellBased
 public import MathlibExt.Combinatorics.Enumerative.RestrictedPermutationsMultiples
 public import MathlibExt.Combinatorics.Enumerative.SubwordShiftSet
 public import MathlibExt.NumberTheory.Recurrences.HonsbergerFibonacciP
@@ -223,29 +224,6 @@ public theorem_wanted restrictedCombinationTotal_Icc_erase_eq_card_compositions
       Nat.card {c : Composition (n + q) //
         ∀ b ∈ c.blocks, b = 1 ∨ (q + 1 ≤ b ∧ p ∣ b - (q + 1))}
 
-/-- **Bivariate generating function for well-based forbidden differences.** Let $Q$ be a finite
-set of positive integers that is well based, and write $S^Q_{n,k}$ for the number of $k$-subsets
-of $\{1, \dots, n\}$ in which no two elements differ by an element of $Q$. In the ring
-$\mathbb{Z}[y][[x]]$ of formal power series in $x$ with coefficients in $\mathbb{Z}[y]$, let
-$g(x, y) = \sum_{n \ge 0} \sum_{k=0}^{n} S^Q_{n,k} \, y^k x^n$ and
-$c = 1 + \sum_{q \in Q} x^q y$. Then $g(x, y) \, \bigl((1 - x) \, c - x y\bigr) = c$; since
-$(1 - x) c - x y$ has constant term $1$, this says $g = c / ((1 - x) c - x y)$.
-
-The empty set counts as well based, so the case $Q = \emptyset$, where $g = 1/(1 - x - xy)$,
-is included.
-
-Source: Michael A. Allen, *Connections Between Combinations Without Specified Separations and
-Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer
-Sequences 28 (2025), Article 25.3.7, Corollary 24. -/
-public theorem_wanted restrictedCombination_bivariate_genFun_of_isWellBased
-    (Q : Finset ℕ) (hQ0 : 0 ∉ Q) (hQ : IsWellBased Q) :
-    PowerSeries.mk (fun n => ∑ k ∈ Finset.range (n + 1),
-        (restrictedCombinationCount Q n k : Polynomial ℤ) * Polynomial.X ^ k) *
-        ((1 - PowerSeries.X) *
-            (1 + ∑ qi ∈ Q, PowerSeries.X ^ qi * PowerSeries.C Polynomial.X) -
-          PowerSeries.X * PowerSeries.C Polynomial.X) =
-      1 + ∑ qi ∈ Q, PowerSeries.X ^ qi * PowerSeries.C Polynomial.X
-
 /-- **Two dominoes on a 4-board.** For $Q = \{1\}$ the $Q$-comb is a domino, and the number
 $B^{\{1\}}_{4,2}$ of restricted-overlap tilings of a $4$-board with squares and two $Q$-combs is
 $1$.
@@ -269,23 +247,6 @@ Sequences 28 (2025), Article 25.3.7, Section 1. -/
 public theorem restrictedOverlapTilingCount_singleton_two_four_two :
     restrictedOverlapTilingCount {2} 4 2 = 1 := by
   decide
-
-/-- **Restricted combinations and restricted-overlap tilings.** Let $Q$ be a finite set of
-natural numbers and let $q$ be its largest element ($q = 0$ if $Q$ is empty). Write
-$S^Q_{n,k}$ for the number of $k$-subsets of $\{1, \dots, n\}$ in which no two distinct
-elements differ by an element of $Q$, $S^Q_n = \sum_{k=0}^{n} S^Q_{n,k}$, and $B^Q_{m,k}$ for
-the number of restricted-overlap tilings of an $m$-board with squares and $k$ $Q$-combs. Then
-for all natural numbers $n$ and $k$, $S^Q_{n,k} = B^Q_{n+q,k}$ and
-$S^Q_n = \sum_{j=0}^{n+q} B^Q_{n+q,j}$.
-
-Source: Michael A. Allen, *Connections Between Combinations Without Specified Separations and
-Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer
-Sequences 28 (2025), Article 25.3.7, Theorem 1. -/
-public theorem_wanted restrictedCombinationCount_eq_restrictedOverlapTilingCount
-    (Q : Finset ℕ) (n k : ℕ) :
-    restrictedCombinationCount Q n k = restrictedOverlapTilingCount Q (n + Q.sup id) k ∧
-      restrictedCombinationTotal Q n = ∑ j ∈ Finset.range (n + Q.sup id + 1),
-        restrictedOverlapTilingCount Q (n + Q.sup id) j
 
 /-- **Metatiles with at most two combs.** Let $Q$ be a finite set of natural numbers and $q$ its
 largest element ($q = 0$ for $Q = \emptyset$). The set $Q$ has metatiles with at most two combs

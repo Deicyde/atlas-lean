@@ -13,6 +13,8 @@ Statements from Hartosh Singh Bal, *Completely Additive Height Functions: Profil
 Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116.
 The statement `isGreatest_primeIndexHeight_level` is proved in
 `MathlibExt.NumberTheory.CompletelyAdditiveHeightIsGreatestPrimeIndexHeightLevel`.
+The statement `sum_height_asymptotic` is proved in
+`MathlibExt.NumberTheory.CompletelyAdditiveHeightSumHeightAsymptotic`.
 
 A height function is a completely additive `H : ℕ → ℕ` (on positive integers) with `H(p) ≥ 1`
 for every prime `p` and only finitely many primes at each height `n ≥ 1`. Primes are indexed
@@ -29,6 +31,8 @@ public import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
 public import MathlibExt.NumberTheory.CompletelyAdditiveHeight
 public import MathlibExt.NumberTheory.CompletelyAdditiveHeightIsGreatestPrimeIndexHeightLevel
 public import MathlibExt.NumberTheory.CompletelyAdditiveHeightExistsHeightFunctionWithProfile
+public import MathlibExt.NumberTheory.CompletelyAdditiveHeightSumHeightAsymptotic
+public import MathlibExt.NumberTheory.CompletelyAdditiveHeight.ProfileSimplePole
 
 namespace MetaMathlibExt
 
@@ -96,21 +100,6 @@ public theorem_wanted nthPrimeOne_rosser_schoenfeld :
       (k : ℝ) * (Real.log k + Real.log (Real.log k) - 1) ≤ nthPrimeOne k ∧
         (nthPrimeOne k : ℝ) ≤ k * (Real.log k + Real.log (Real.log k))
 
-/-- **Prime reduction for summatory heights.** Let $H : \mathbb{N} \to \mathbb{N}$ be completely
-additive on the positive integers, and for real $x$ let $F(x) = \sum_{1 \le m \le x} H(m)$. Then
-there is a real constant $C$ such that for every real $x \ge 2$,
-$$\Bigl| F(x) - x \sum_{p \le x} \frac{H(p)}{p - 1} \Bigr| \le C \log x \sum_{p \le x} H(p),$$
-where both sums run over the primes $p \le x$.
-
-Source: Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds,
-and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 7
-(`integers-2026-A116-prop-7`), "In particular" display. -/
-public theorem_wanted sum_height_asymptotic {H : ℕ → ℕ} (hH : IsCompletelyAdditiveNat H) :
-    ∃ C : ℝ, ∀ x : ℝ, 2 ≤ x →
-      |(∑ m ∈ Finset.Icc 1 ⌊x⌋₊, (H m : ℝ)) -
-          x * ∑ p ∈ (Finset.Iic ⌊x⌋₊).filter Nat.Prime, (H p : ℝ) / ((p : ℝ) - 1)| ≤
-        C * Real.log x * ∑ p ∈ (Finset.Iic ⌊x⌋₊).filter Nat.Prime, (H p : ℝ)
-
 /-- **Iteratively defined height functions.** Write $p_i$ for the $i$-th prime, so $p_1 = 2$. Let
 $f : \mathbb{N} \to \mathbb{N}$ satisfy $f(1) = 1$; suppose that for all integers $i, r \ge 1$, if
 $p_r$ divides $f(i)$ then $r < i$ (this forces $f(i) \ge 1$ for $i \ge 1$); and suppose that for
@@ -151,29 +140,6 @@ public theorem_wanted meinardus_asymptotic {b : ℕ → ℝ} (hb : ∀ k, 0 ≤ 
       (fun n : ℕ => C₁ * (n : ℝ) ^ κ * Real.exp (C₂ * (n : ℝ) ^ (α / (α + 1))))) ∧
       Asymptotics.IsEquivalent atTop (fun n : ℕ => Real.log (weightedPartitionCoeff b n))
         (fun n : ℕ => C₂ * (n : ℝ) ^ (α / (α + 1)))
-
-/-- **A simple pole of a Dirichlet series from the growth of its partial sums.** Let
-$(\pi_k)_{k \ge 0}$ be nonnegative real numbers and let $C$, $\alpha$, $\eta$ be positive reals.
-Suppose there is a constant $K$ with
-$\bigl|\sum_{k=1}^{\lfloor x \rfloor} \pi_k - (C/\alpha) x^{\alpha}\bigr| \le K x^{\alpha - \eta}$
-for every real $x \ge 1$. Then the Dirichlet series $B(s) = \sum_{k \ge 1} \pi_k k^{-s}$ converges
-absolutely for $\operatorname{Re} s > \alpha$, and there is a function $R$, holomorphic on the
-half-plane $\operatorname{Re} s > \alpha - \eta$, with $B(s) = C/(s - \alpha) + R(s)$ for
-$\operatorname{Re} s > \alpha$. Moreover, for every $\delta$ with $0 < \delta < \eta$ there is a
-constant $K'$ with $|C/(s - \alpha) + R(s)| \le K'(1 + |\operatorname{Im} s|)$ for all complex $s$
-with $\operatorname{Re} s \ge \alpha - \eta + \delta$ and $|\operatorname{Im} s| \ge 1$.
-
-Source: Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds,
-and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 3 (`integers-2026-A116-lem-3`). -/
-public theorem_wanted lseries_profile_simple_pole {π : ℕ → ℝ} (hπ : ∀ k, 0 ≤ π k) {C α η : ℝ}
-    (hC : 0 < C) (hα : 0 < α) (hη : 0 < η)
-    (hcum : ∃ K : ℝ, ∀ x : ℝ, 1 ≤ x →
-      |∑ k ∈ Finset.Icc 1 ⌊x⌋₊, π k - C / α * x ^ α| ≤ K * x ^ (α - η)) :
-    (∀ s : ℂ, α < s.re → LSeriesSummable (fun k => (π k : ℂ)) s) ∧
-      ∃ R : ℂ → ℂ, DifferentiableOn ℂ R {s | α - η < s.re} ∧
-        (∀ s : ℂ, α < s.re → LSeries (fun k => (π k : ℂ)) s = C / (s - α) + R s) ∧
-        ∀ δ : ℝ, 0 < δ → δ < η → ∃ K : ℝ, ∀ s : ℂ, α - η + δ ≤ s.re → 1 ≤ |s.im| →
-          ‖C / (s - α) + R s‖ ≤ K * (1 + |s.im|)
 
 /-- **Meinardus asymptotics for the levels of a height function.** Let $H$ be a height function,
 for $k \ge 0$ let $\pi_k$ be the number of primes $p$ with $H(p) = k$, and for $n \ge 0$ let $N_n$

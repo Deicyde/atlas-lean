@@ -14,6 +14,7 @@ public import Mathlib.Data.Finset.Image
 public import Mathlib.Data.Finset.Powerset
 public import Mathlib.Order.Interval.Finset.Nat
 public import Mathlib.RingTheory.PowerSeries.Basic
+import Mathlib.Algebra.Polynomial.Eval.Defs
 import Mathlib.Data.Finset.Preimage
 import Mathlib.Tactic.LinearCombination
 
@@ -25,14 +26,18 @@ generating function of the restricted combinations is, up to the shift by the la
 forbidden difference and the initial segment of the tiling generating function, the
 generating function of the restricted-overlap tilings.
 
-Statements from Michael A. Allen, *Connections Between Combinations Without Specified
-Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of
-Integer Sequences 28 (2025), Article 25.3.7 (arXiv:2409.00624v4).
-
 For forbidden differences 1 and 4, the next membership bit depends only on the last four
 bits. The eight reachable windows give a system of linear equations for the generating series.
 For differences 1 and 5, recording only the future positions blocked by those bits gives eleven
 reachable states and a corresponding system of linear equations.
+
+## References
+
+- Michael A. Allen, *Connections Between Combinations Without Specified Separations and
+  Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer
+  Sequences 28 (2025), Article 25.3.7, Theorem 1 and Corollary 7.
+- Michael A. Allen, *Combinations without specified separations*, Communications in
+  Combinatorics and Optimization 11(2) (2026), pp. 695–711, Section 2, Theorems 1 and 2.
 -/
 
 namespace MetaMathlibExt
@@ -59,6 +64,30 @@ Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Int
 Sequences 28 (2025), Article 25.3.7, Section 1. -/
 public def restrictedCombinationCount (Q : Finset ℕ) (n k : ℕ) : ℕ :=
   (restrictedCombinations Q n k).card
+
+/-- **Weighted enumeration of restricted combinations.** Summing a weight depending only on
+subset size over all subsets of `{1, …, n}` avoiding the differences in `Q` is the same as
+weighting the restricted combination counts by size. -/
+public theorem sum_restrictedCombinationCount_mul {R : Type*} [Semiring R]
+    (Q : Finset ℕ) (n : ℕ) (w : ℕ → R) :
+    (∑ k ∈ Finset.range (n + 1), (restrictedCombinationCount Q n k : R) * w k) =
+      ∑ s ∈ (Finset.Icc 1 n).powerset.filter
+        (fun s => ∀ a ∈ s, ∀ b ∈ s, a < b → b - a ∉ Q), w s.card := by
+  let u := (Finset.Icc 1 n).powerset.filter (fun s => ∀ a ∈ s, ∀ b ∈ s, a < b → b - a ∉ Q)
+  have hu (s : Finset ℕ) (hs : s ∈ u) : s.card ∈ Finset.range (n + 1) := by
+    have h := Finset.card_le_card (Finset.mem_powerset.mp (Finset.mem_filter.mp hs).1)
+    rw [Nat.card_Icc, Nat.add_sub_cancel] at h
+    exact Finset.mem_range.mpr (Nat.lt_succ_of_le h)
+  change _ = ∑ s ∈ u, w s.card
+  rw [← Finset.sum_fiberwise_of_maps_to' hu w]
+  apply Finset.sum_congr rfl
+  intro k _
+  have hk : u.filter (fun s => s.card = k) = restrictedCombinations Q n k := by
+    ext s
+    simp only [u, restrictedCombinations, Finset.mem_filter, Finset.mem_powerset,
+      Finset.mem_powersetCard]
+    tauto
+  simp only [hk, restrictedCombinationCount, Finset.sum_const, nsmul_eq_mul]
 
 /-- **Restricted-overlap tilings.** Let $Q$ be a finite set of natural numbers and let $q$ be its
 largest element ($q = 0$ if $Q$ is empty). The $Q$-comb is a piece of length $q + 1$ whose cell
@@ -374,6 +403,31 @@ Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Int
 Sequences 28 (2025), Article 25.3.7, Section 1. -/
 public def restrictedCombinationTotal (Q : Finset ℕ) (n : ℕ) : ℕ :=
   ∑ k ∈ Finset.range (n + 1), restrictedCombinationCount Q n k
+
+/-- **Restricted combinations and restricted-overlap tilings.** Let $Q$ be a finite set of
+natural numbers and let $q$ be its largest element ($q = 0$ if $Q$ is empty). Write
+$S^Q_{n,k}$ for the number of $k$-subsets of $\{1, \dots, n\}$ in which no two distinct
+elements differ by an element of $Q$, $S^Q_n = \sum_{k=0}^{n} S^Q_{n,k}$, and $B^Q_{m,k}$ for
+the number of restricted-overlap tilings of an $m$-board with squares and $k$ $Q$-combs. Then
+for all natural numbers $n$ and $k$, $S^Q_{n,k} = B^Q_{n+q,k}$ and
+$S^Q_n = \sum_{j=0}^{n+q} B^Q_{n+q,j}$.
+
+Source: Michael A. Allen, *Connections Between Combinations Without Specified Separations and
+Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer
+Sequences 28 (2025), Article 25.3.7, Theorem 1. -/
+public theorem restrictedCombinationCount_eq_restrictedOverlapTilingCount
+    (Q : Finset ℕ) (n k : ℕ) :
+    restrictedCombinationCount Q n k = restrictedOverlapTilingCount Q (n + Q.sup id) k ∧
+      restrictedCombinationTotal Q n = ∑ j ∈ Finset.range (n + Q.sup id + 1),
+        restrictedOverlapTilingCount Q (n + Q.sup id) j := by
+  refine ⟨restrictedCombination_genFun_eq_tiling_genFun.count_eq Q n k, ?_⟩
+  have h := congrArg (Polynomial.eval (1 : ℤ))
+    (restrictedCombination_genFun_eq_tiling_genFun.polynomial_eq Q (n + Q.sup id))
+  have hq : ¬ n + Q.sup id < Q.sup id := by omega
+  simp only [hq, ↓reduceIte, Nat.add_sub_cancel, Polynomial.eval_finsetSum,
+    Polynomial.eval_mul_X_pow, Polynomial.eval_natCast, one_pow, mul_one] at h
+  unfold restrictedCombinationTotal
+  exact_mod_cast h.symm
 
 end
 
