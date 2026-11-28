@@ -13,8 +13,8 @@ $\mathbb{Q}$.
 
 ## Proof depends on
 
-- [When a diagonal binary form has a nonzero zero](../../../LinearAlgebra/bilinear-and-quadratic-forms/binary-form-isotropy.md), over $\mathbb{Q}$, $\mathbb{R}$ and each $\mathbb{Q}_p$
-- [A rational number that is a square at every place is a square](rational-local-squares.md)
+- [When a diagonal binary form has a nonzero zero](../../../LinearAlgebra/bilinear-and-quadratic-forms/isotropic-quadratic-forms-over-a-field/exists-ne-zero-mul-sq-add-mul-sq-eq-zero.md), over $\mathbb{Q}$, $\mathbb{R}$ and each $\mathbb{Q}_p$
+- [A rational number that is a square at every place is a square](../local-global-facts-about-the-rationals/is-square-of-is-square-real-of-forall-is.md)
 
 ## Sources
 

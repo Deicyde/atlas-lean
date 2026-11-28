@@ -17,5 +17,3 @@
 - [Embedding of $\mathbb{Q}$, normed by a place, into its completion](with-abs-embedding.md)
 - [The embedding of $\mathbb{Q}$ into its completion at a place is an isometry](with-abs-embedding-isometry.md)
 - [Density of the rationals with a place's absolute value in the completion](dense-range-with-abs-embedding.md)
-- [The absolute value at a rational place is nontrivial](absolute-value-is-nontrivial.md)
-- [Distinct rational places have inequivalent absolute values](absolute-value-not-is-equiv.md)

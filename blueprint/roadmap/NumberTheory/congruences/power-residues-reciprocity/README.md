@@ -9,4 +9,3 @@ Quadratic and cubic residues, Legendre, Jacobi and Kronecker symbols, quadratic 
 - [An odd prime non-residue (Robinson's Lemma 5)](exists-odd-prime-eq-neg-one.md)
 - [Legendre symbol and Euler's criterion](legendre-symbol-and-euler-s-criterion/README.md)
 - [Linear Legendre-symbol sums vanish](sum-linear-eq-zero.md)
-- [Quadratic reciprocity](quadratic-reciprocity.md)

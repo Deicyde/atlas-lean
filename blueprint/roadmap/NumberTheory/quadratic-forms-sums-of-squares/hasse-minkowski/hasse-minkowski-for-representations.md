@@ -23,7 +23,7 @@ quadratic form in any number of variables.
 ## Proof depends on
 
 - [Hasse–Minkowski theorem for zeros of rational quadratic forms](hasse-minkowski-for-zero.md), for $g$
-- [A nondegenerate form with a nonzero zero represents every element](../../../LinearAlgebra/bilinear-and-quadratic-forms/isotropic-forms-represent-every-element.md), for the case $z = 0$
+- [A nondegenerate form with a nonzero zero represents every element](../../../LinearAlgebra/bilinear-and-quadratic-forms/isotropic-quadratic-forms-over-a-field/exists-apply-eq-of-isotropic.md), for the case $z = 0$
 
 The steps of the theorem for zeros are listed on [the folder page](README.md).
 

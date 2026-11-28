@@ -11,5 +11,3 @@ Bilinear and quadratic forms on vector spaces and modules: rank, orthogonal sums
 - [Orthogonal sum of systems of quadratic forms](systems-of-quadratic-forms/README.md)
 - [Sylvester's law of inertia](sylvester-s-law-of-inertia/README.md)
 - [Diagonalization of quadratic forms](diagonalization-of-quadratic-forms.md)
-- [A nondegenerate form with a nonzero zero represents every element](isotropic-forms-represent-every-element.md)
-- [When a diagonal binary form has a nonzero zero](binary-form-isotropy.md)

@@ -15,4 +15,3 @@ Congruences for factorials, quotients and power sums (Wilson, Wolstenholme, Ferm
 - [Wilson quotients](wilson-quotients/README.md)
 - [Wolstenholme's theorem](wolstenholme-s-theorem/README.md)
 - [Power sums vanish modulo a prime](power-sum-vanishing-mod-prime.md)
-- [Chinese remainder theorem for finitely many moduli](chinese-remainder-theorem.md)

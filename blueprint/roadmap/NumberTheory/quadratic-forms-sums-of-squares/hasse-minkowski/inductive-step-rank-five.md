@@ -30,9 +30,9 @@ a nonzero zero over $\mathbb{R}$ and over every $\mathbb{Q}_p$ has a nonzero zer
 ## Proof depends on
 
 - [Unit diagonal forms in at least three variables over $\mathbb{Q}_p$ are isotropic for odd $p$](../../p-adic-numbers/hilbert-symbol/diagonal-unit-isotropic.md), for the finiteness of $T$
-- [A nondegenerate form with a nonzero zero represents every element](../../../LinearAlgebra/bilinear-and-quadratic-forms/isotropic-forms-represent-every-element.md), for the choice of $t_v$
+- [A nondegenerate form with a nonzero zero represents every element](../../../LinearAlgebra/bilinear-and-quadratic-forms/isotropic-quadratic-forms-over-a-field/exists-apply-eq-of-isotropic.md), for the choice of $t_v$
 - [Hensel's lemma with a derivative bound](../../../RingTheory/valuation-rings/henselian-rings-and-hensel-s-lemma/exists-is-root-of-two-mul-add-val-deriva.md), applied to $X^2 - u$ over $\mathbb{Z}_p$, for the openness of the square classes
-- [Weak approximation for the rationals](weak-approximation-for-the-rationals.md), for $x$ and $y$
+- [Weak approximation for the rationals](../local-global-facts-about-the-rationals/exists-forall-norm-sub-lt.md), for $x$ and $y$
 
 ## Sources
 

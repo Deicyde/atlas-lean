@@ -18,8 +18,8 @@ cases $n = 2$, $3$, $4$ and the step to $n \geq 5$ are the pages below.
 
 - [Diagonalization of quadratic forms](../../../LinearAlgebra/bilinear-and-quadratic-forms/diagonalization-of-quadratic-forms.md), for the reduction to a diagonal form
 - [Hasse–Minkowski theorem for binary forms](binary-case.md), for $n = 2$
-- [Hasse–Minkowski theorem for ternary forms](ternary-case.md), for $n = 3$
-- [Hasse–Minkowski theorem for quaternary forms](quaternary-case.md), for $n = 4$
+- [Hasse–Minkowski theorem for diagonal ternary forms over $\mathbb{Q}$](exists-ternary-eq-zero-of-forall-local.md), for $n = 3$
+- [Hasse–Minkowski theorem for diagonal quaternary forms over $\mathbb{Q}$](exists-quaternary-eq-zero-of-forall-loca.md), for $n = 4$
 - [Hasse–Minkowski theorem in rank at least five, from the two ranks below](inductive-step-rank-five.md), for $n \geq 5$
 
 ## Sources
