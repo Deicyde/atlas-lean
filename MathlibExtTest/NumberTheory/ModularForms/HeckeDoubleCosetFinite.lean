@@ -13,7 +13,6 @@ public import MathlibExt.NumberTheory.ModularForms.HeckeDoubleCosetFinite
 open Matrix Pointwise
 
 #check @FixedDetMatrices.exists_smul_mem_reps
-#check @FixedDetMatrices.reps_finite
 #check @CongruenceSubgroup.finite_setOf_mul_singleton
 #check @CongruenceSubgroup.finite_setOf_doubleCoset
 #check @CongruenceSubgroup.finite_setOf_doubleCoset_heckeT

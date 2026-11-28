@@ -19,8 +19,7 @@ import Mathlib.Order.Interval.Finset.Defs
 
 * `FixedDetMatrices.exists_smul_mem_reps`: every integral `2 × 2` matrix of determinant `m ≠ 0`
   is `SL₂(ℤ)`-equivalent to one of the finitely many reduced matrices of Mathlib's
-  `FixedDetMatrices.reps m` (finite by Mathlib's `FixedDetMatrices.repsFintype`;
-  `FixedDetMatrices.reps_finite` restates this as `Set.Finite`);
+  `FixedDetMatrices.reps m` (finite by Mathlib's `FixedDetMatrices.repsFintype`);
 * `CongruenceSubgroup.finite_setOf_mul_singleton`, `CongruenceSubgroup.finite_setOf_doubleCoset`:
   for `Γ` of finite index in `SL₂(ℤ)`, the cosets `Γ β` and double cosets `Γ β Γ` of integral
   matrices `β` of determinant `q ≠ 0` are finitely many;
@@ -66,11 +65,6 @@ theorem exists_smul_mem_reps {m : ℤ} (hm : m ≠ 0) (A : FixedDetMatrix (Fin 2
     exact ⟨g * S⁻¹, by rw [mul_smul, inv_smul_smul]; exact hg⟩
   · rintro B ⟨g, hg⟩
     exact ⟨g * T⁻¹, by rw [mul_smul, inv_smul_smul]; exact hg⟩
-
-/-- The set `FixedDetMatrices.reps m` of reduced integral matrices of determinant $m$ is finite
-(Mathlib's instance `FixedDetMatrices.repsFintype`). -/
-theorem reps_finite (m : ℤ) : (reps m).Finite :=
-  Set.toFinite (reps m)
 
 end FixedDetMatrices
 
