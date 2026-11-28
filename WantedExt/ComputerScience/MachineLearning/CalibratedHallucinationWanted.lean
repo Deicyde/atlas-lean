@@ -14,23 +14,34 @@ public import CSLibExt.MachineLearning.LanguageModels.CalibratedHallucination
 /-! # Calibrated hallucination lower bound (wanted statement)
 
 Corollary 1 of A. T. Kalai and S. S. Vempala, *Calibrated Language Models Must
-Hallucinate* (arXiv:2311.14648v3), Sec. 5, p. 13: with probability at least `1 - δ`, the
-hallucination rate is at least the monofact rate minus miscalibration and two
-vanishing terms.
+Hallucinate* (arXiv:2311.14648v3), Sec. 5, p. 13, finite special case: finite
+document set `X` and finite factoid set `Y`, a surjective factoid map `f` with
+distinguished `bot`, and a finitely supported probability law on document
+distributions indexed by a finite type `ι`. With probability at least `1 - δ`,
+the hallucination rate is at least the monofact rate minus miscalibration and
+two vanishing terms, provided the facts are `s`-sparse in the sense of
+`IsSparse`, and the facts and probabilities are regular in the sense of
+`IsRegular`.
 
-This statement uses a finite document set `X` and a finitely supported world prior
-indexed by a finite type `ι`, and requires the positive side conditions
-`0 < δ`, `δ ≤ 1`, `1 ≤ b` and `1 ≤ n`. The Good–Turing concentration input to
-the proof is deferred.
+This statement requires the positive side conditions `0 < δ`, `δ ≤ 1`, `1 ≤ b`
+and `1 ≤ n`. The bound holds for any algorithm returning any document
+distribution from the `n`-document training sample. The Good–Turing
+concentration input to the proof is deferred.
 -/
 
 namespace Cslib.MachineLearning.CalibratedHallucination
 
-/-- Corollary 1 (Kalai–Vempala): `g(H) ≥ MFhat - Mis_b(g,p) - 3e^{-s}/δ -
-    sqrt(6 ln(6/δ)/n)` with probability at least `1 - δ`, where `g` is
-    `pushforward f (A x)`, `p` is `pushforward f (D i)`, `H` is
-    `hallucinations f bot (D i)`, and the outer sum is the joint draw of the
-    world `i` and the training sample `x`. -/
+/-- Corollary 1 (Kalai–Vempala), finite special case: finite document set `X`
+    and finite factoid set `Y`, surjective factoid map `f` with distinguished
+    `bot`, and a finitely supported probability law on document distributions.
+    `g(H) ≥ MFhat - Mis_b(g,p) - 3e^{-s}/δ - sqrt(6 ln(6/δ)/n)` with
+    probability at least `1 - δ`, where `g` is `pushforward f (A x)`, `p` is
+    `pushforward f (D i)`, `H` is `hallucinations f bot (D i)`, and the outer
+    sum is the joint draw of the world `i` and the training sample `x`. The
+    bound requires `0 < δ`, `δ ≤ 1`, positive `b` (`1 ≤ b`) and positive `n`
+    (`1 ≤ n`), `s`-sparse facts in the sense of `IsSparse`, regular facts and
+    probabilities in the sense of `IsRegular`, and the algorithm `A` may return
+    any document distribution from the sample. -/
 theorem_wanted hallucination_rate_lower_bound
     {X Y ι : Type*} [Fintype X] [Fintype Y] [Fintype ι] [DecidableEq Y]
     (f : X → Y) (hf : Function.Surjective f) (bot : Y)
