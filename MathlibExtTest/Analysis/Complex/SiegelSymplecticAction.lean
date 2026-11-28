@@ -68,4 +68,13 @@ example (g : ℕ) {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace
       (-τ)⁻¹ᴴ * (τ.map Complex.im).map ((↑) : ℝ → ℂ) * (-τ)⁻¹ := by
   simpa [J, map_neg_one] using map_im_smul (J_mem_Sp g) hτ
 
+-- Items 1–3 in one statement, for `γ = J`: `-τ` is invertible, `(-τ)⁻¹ ∈ 𝔖_g`, and
+-- `(J J) · τ = J · (J · τ)`.
+example (g : ℕ) {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g) :
+    IsUnit (-τ).det ∧ (-τ)⁻¹ ∈ upperHalfSpace g ∧
+      smul (J g * J g) τ = smul (J g) (smul (J g) τ) := by
+  obtain ⟨h1, ⟨-, -, h2⟩, -, h3⟩ := smul_properties_of_mem_Sp (J_mem_Sp g) hτ
+  refine ⟨by simpa [J, map_neg_one] using h1, by simpa [smul, J, map_neg_one] using h2,
+    h3 _ (J_mem_Sp g) _ (J_mem_Sp g)⟩
+
 end Siegel

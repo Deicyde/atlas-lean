@@ -41,6 +41,7 @@ The proof follows the classical computation: the blocks of `γ` satisfy `ᵗα �
 * `Siegel.one_smul_eq_self`, `Siegel.mul_smul_eq_smul_smul`: the action axioms.
 * `Siegel.instMulActionSymplecticGroup`: the `MulAction` of `Matrix.symplecticGroup (Fin g) ℤ`
   on `Siegel.upperHalfSpace g`.
+* `Siegel.smul_properties_of_mem_Sp`: items 1–3 in one statement.
 -/
 
 @[expose] public section
@@ -363,5 +364,34 @@ theorem coe_smul_symplecticGroup (γ : Matrix.symplecticGroup (Fin g) ℤ)
     (τ : upperHalfSpace g) : ((γ • τ : upperHalfSpace g) : Matrix (Fin g) (Fin g) ℂ) =
       smul γ τ :=
   rfl
+
+/-- **The action of the symplectic group on the Siegel upper half space.** Let
+`γ = (α β; λ μ) ∈ Sp_{2g}(ℤ)`, the integral `2g × 2g` matrices with `ᵗγ J γ = J`,
+`J = (0 1; -1 0)`, and let `τ ∈ 𝔖_g`. Then:
+
+1. the matrix `λ τ + μ` is invertible;
+2. `γ · τ = (α τ + β)(λ τ + μ)⁻¹` is symmetric and its imaginary part is positive definite, so
+   `γ · τ ∈ 𝔖_g`;
+3. `1_{2g} · τ = τ` and `(γ₁ γ₂) · τ = γ₁ · (γ₂ · τ)` for all `γ₁, γ₂ ∈ Sp_{2g}(ℤ)`.
+
+So `(γ, τ) ↦ γ · τ` is an action of `Sp_{2g}(ℤ)` on `𝔖_g`
+(`Siegel.instMulActionSymplecticGroup`), the one in condition S. 1 of Siegel's fundamental
+domain.
+
+Source: F. Pazuki, *Theta height and Faltings height*, Bull. Soc. Math. France 140 (2012),
+19–49, §2.1, read in arXiv:0907.1458v2, condition S. 1, where
+`γ · τ = (α τ + β)(λ τ + μ)⁻¹`; Pazuki cites J.-I. Igusa, *Theta functions*, Springer, 1972,
+Chapter V, §4, for the fundamental domain. -/
+theorem smul_properties_of_mem_Sp {γ : Matrix (Fin g ⊕ Fin g) (Fin g ⊕ Fin g) ℤ}
+    (hγ : γ ∈ Sp g) {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ ∈ upperHalfSpace g) :
+    IsUnit (γ.toBlocks₂₁.map (Int.cast : ℤ → ℂ) * τ +
+        γ.toBlocks₂₂.map (Int.cast : ℤ → ℂ)).det ∧
+      ((smul γ τ).IsSymm ∧ ((smul γ τ).map Complex.im).PosDef ∧
+        smul γ τ ∈ upperHalfSpace g) ∧
+      smul 1 τ = τ ∧
+      ∀ γ₁ ∈ Sp g, ∀ γ₂ ∈ Sp g, smul (γ₁ * γ₂) τ = smul γ₁ (smul γ₂ τ) :=
+  ⟨isUnit_det_smul_denom hγ hτ, ⟨smul_isSymm hγ hτ, (smul_mem_upperHalfSpace_of_mem_Sp hγ hτ).2,
+    smul_mem_upperHalfSpace_of_mem_Sp hγ hτ⟩, one_smul_eq_self τ,
+    fun γ₁ _ _ hγ₂ ↦ mul_smul_eq_smul_smul γ₁ hγ₂ hτ⟩
 
 end Siegel
