@@ -6,6 +6,15 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -/
 
+/-
+Portions of this file are adapted from:
+
+`Cslib/MachineLearning/PACLearning/Defs.lean` (CSLib):
+Copyright (c) 2026 Samuel Schlesinger. All rights reserved.
+Licensed under the Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0).
+Authors: Samuel Schlesinger
+-/
+
 module
 
 public import Cslib.MachineLearning.PACLearning.Defs
@@ -87,25 +96,28 @@ open scoped ENNReal NNReal
 /-- **Fixed-sample agnostic PAC learner for a general loss.**
 `IsAgnosticPACLearnerFor L m ε δ C 𝒟` asserts that some learner using `m`
 samples is `(ε, δ)`-correct for the class `C` over the distribution family
-`𝒟`: for every probability law `D ∈ 𝒟`, the class losses and the learner
-outputs are integrable and almost-everywhere nonnegative (so every risk below
-is a genuine expectation), and the product measure of the samples on which
-the output risk exceeds the infimum class risk `approximationError L D C` by
-more than `ε` is at most `δ`.
+`𝒟`: for every probability law `D ∈ 𝒟`, every class member `h ∈ C` has
+integrable and almost-everywhere nonnegative loss, and so does the learner
+output `A S` for every sample tuple `S : Fin m → Z`, including tuples of
+product measure zero (so every risk below is a genuine expectation); nothing
+is asserted for hypotheses never used. The product measure of the samples on
+which the output risk exceeds the infimum class risk
+`approximationError L D C` by more than `ε` is at most `δ`.
 
 The accuracy and confidence parameters are `Set.Ioo (0 : ℝ≥0) 1` elements, as
 in `IsPACLearnerFor`, so the endpoints `0` and `1` are excluded. No
 measurability is required of the learner or of the failure event; the product
 measure of that event is read as outer measure, as in CSLib. Risks are finite
 real expectations under this predicate, with no extended infinite-risk
-reading. Over broad families, especially the universal family, used losses
-must still be integrable and almost-everywhere nonnegative under every
-admitted law, so unbounded losses require restricting the distribution family
-to laws under which the used losses are integrable. The output is
-representation-independent (Remark 3.2): it need not lie in `C`. On the
-empty class the benchmark is `sInf ∅ = 0`, so the predicate demands risk at
-most `ε` with probability at least `1 - δ`; unlike `IsPACLearnerFor`, it is
-not vacuous there. -/
+reading. A globally unbounded loss can still satisfy the predicate when the
+used sections are integrable and almost-everywhere nonnegative under every
+admitted law. The output is representation-independent (Remark 3.2): it need
+not lie in `C`. On the empty class the benchmark is `sInf ∅ = 0`, so the
+conclusion is that the outer measure of the failure event is at most `δ`,
+equivalently the inner probability of success is at least `1 - δ`, not an
+ordinary probability of a possibly nonmeasurable event. The CSLib error bound
+becomes vacuous on the empty class while that predicate still asks for a
+learner. -/
 def IsAgnosticPACLearnerFor {H Z : Type*} [MeasurableSpace Z]
     (L : H → Z → ℝ) (m : ℕ) (ε δ : Set.Ioo (0 : ℝ≥0) 1)
     (C : Set H) (𝒟 : Set (Measure Z)) : Prop :=
@@ -136,7 +148,8 @@ def IsAgnosticPACLearnable {H Z : Type*} [MeasurableSpace Z]
     ∃ m, IsAgnosticPACLearnerFor L m ε δ C 𝒟
 
 /-- A general-loss PAC learner with confidence `δ₁` is also one with any
-weaker confidence `δ₂ ≥ δ₁`: the failure-probability bound only gets
+weaker confidence `δ₂ ≥ δ₁` still in `(0, 1)` through its
+`Set.Ioo (0 : ℝ≥0) 1` element: the failure-probability bound only gets
 looser. -/
 theorem IsAgnosticPACLearnerFor.mono_δ {H Z : Type*} [MeasurableSpace Z]
     {L : H → Z → ℝ} {m : ℕ} {ε : Set.Ioo (0 : ℝ≥0) 1}
@@ -151,7 +164,8 @@ theorem IsAgnosticPACLearnerFor.mono_δ {H Z : Type*} [MeasurableSpace Z]
   exact_mod_cast hδ
 
 /-- A general-loss PAC learner with accuracy `ε₁` is also one with any weaker
-accuracy `ε₂ ≥ ε₁`: the bad event only shrinks. -/
+accuracy `ε₂ ≥ ε₁` still in `(0, 1)` through its `Set.Ioo (0 : ℝ≥0) 1`
+element: the bad event only shrinks. -/
 theorem IsAgnosticPACLearnerFor.mono_ε {H Z : Type*} [MeasurableSpace Z]
     {L : H → Z → ℝ} {m : ℕ} {δ : Set.Ioo (0 : ℝ≥0) 1}
     {ε₁ ε₂ : Set.Ioo (0 : ℝ≥0) 1} (hε : ε₁.val ≤ ε₂.val)
@@ -181,19 +195,19 @@ theorem IsAgnosticPACLearnerFor.antitone_family {H Z : Type*} [MeasurableSpace Z
 /-- **The 0-1 bridge: a CSLib PAC learner is a general-loss PAC learner at
 `zeroOneLoss`.** Given a 0-1 `(ε, δ)`-learner for `C` over `𝒟`, the same
 learner witnesses the general-loss predicate at the 0-1 loss, provided the
-class is nonempty (without nonemptiness, the 0-1 side is vacuous while the
-general-loss side has benchmark zero and need not hold; nonemptiness also
+class is nonempty (without nonemptiness, the 0-1 error bound is vacuous while
+the general-loss side has benchmark zero and need not hold; nonemptiness also
 keeps the benchmark finite when carrying the strict failure inequality from
 ENNReal to the reals) and every disagreement set is measurable (so each 0-1
-risk is the real
-error). The 0-1 integrability, nonnegativity, and finiteness facts are
-derived from measurability and the probability instance during the proof,
-not taken as hypotheses. The measurability hypothesis ranges over every
+risk is the real error). The 0-1 integrability, nonnegativity, and finiteness
+facts are derived from measurability and the probability instance during the
+proof, not taken as hypotheses. The measurability hypothesis ranges over every
 classifier: the CSLib predicate hides its learner, so the statement cannot
 restrict to class members or attained outputs. On domains admitting
 nonmeasurable classifiers, such as Borel real inputs with `Bool` labels, it
 may be unsatisfiable. Direct use is therefore for settings where every
-disagreement set is measurable, in particular discrete settings. A
+disagreement set is measurable, in particular finite discrete input and label
+spaces, or more generally a discrete product measurable space. A
 learner-explicit bridge for general Borel domains is a separate statement
 and is not introduced in this file. CSLib 0-1 semantics are unchanged: this
 is one direction only, at `zeroOneLoss`. -/

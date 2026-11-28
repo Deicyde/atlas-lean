@@ -16,12 +16,17 @@ public import CSLibExt.MachineLearning.PACLearning.AgnosticFiniteClass
 /-!
 # Agnostic PAC tests
 
-Closed checks for the general-loss agnostic PAC predicates. A squared-error
-singleton class on `Bool` is learnable by a constant learner; the empty-class
-benchmark is zero; the zero loss is learner-correct at sample size zero; a
-negative loss is rejected from the definition; the three monotonicity lemmas
-apply to the closed singleton learner; and the 0-1 bridge applies to a
-finite-class PAC learner on `Bool × Bool`.
+Closed checks for the general-loss agnostic PAC predicates. The Boolean
+`sqLoss` singleton instance is learnable by a constant learner at sample size
+`5` with parameters in `(0, 1)`; the `sqLoss` empty-class benchmark at the
+Dirac law is zero; the zero loss is learner-correct at sample size `0` with
+the closed quarter and half parameters; the identically minus-one loss on the
+tested singleton fails for the Dirac law at sample size `3`, accuracy `1 / 4`,
+and confidence `1 / 2`; a nonintegrable almost-everywhere nonnegative section
+is rejected independently of negativity; the three monotonicity lemmas apply
+to the closed singleton learner; and the Boolean bridge at sample size `5`
+with accuracy and confidence `4 / 5` turns a finite-class PAC learner into a
+general-loss learner at `zeroOneLoss`.
 -/
 
 namespace CSLibExtTest.MachineLearning.PACLearning.AgnosticPAC
@@ -72,9 +77,9 @@ private theorem sqLoss_approx (D : Measure Bool) [IsProbabilityMeasure D] :
     approximationError sqLoss D {true} = risk sqLoss D true := by
   simp only [approximationError, Set.image_singleton, csInf_singleton]
 
-/-- The squared-error singleton is learner-correct by the constant learner at
-every accuracy and confidence: the benchmark equals the output risk, so the
-failure event is empty. -/
+/-- The Boolean `sqLoss` singleton instance is learner-correct by the constant
+learner at sample size `5` with accuracy and confidence in `(0, 1)`: the
+benchmark equals the output risk, so the failure event is empty. -/
 private theorem sqLearner (ε δ : Set.Ioo (0 : ℝ≥0) 1) :
     IsAgnosticPACLearnerFor sqLoss 5 ε δ {true} Set.univ := by
   refine ⟨fun _ => true, fun D inst _ => ?_⟩
@@ -138,8 +143,9 @@ private theorem zeroLoss_approx (D : Measure Bool) [IsProbabilityMeasure D] :
 /-- The identically-`(-1)` loss, violating almost-everywhere nonnegativity. -/
 private def negLoss : Unit → Bool → ℝ := fun _ _ => -1
 
-/-- A squared-error singleton class on a finite example space is agnostic PAC
-learnable: the constant learner works at every accuracy and confidence. -/
+/-- The Boolean `sqLoss` singleton instance is agnostic PAC learnable: the
+constant learner at sample size `5` works at every accuracy and confidence in
+`(0, 1)`. -/
 example : IsAgnosticPACLearnable sqLoss {true} Set.univ := fun ε δ => ⟨5, sqLearner ε δ⟩
 
 /-- Confidence monotonicity on the closed singleton learner. -/
@@ -154,11 +160,12 @@ example : IsAgnosticPACLearnerFor sqLoss 5 epsH delH {true} Set.univ :=
 example : IsAgnosticPACLearnerFor sqLoss 5 epsQ delH {true} {Measure.dirac true} :=
   sqClosed.antitone_family (Set.subset_univ _)
 
-/-- The empty-class benchmark is `sInf ∅ = 0`. -/
+/-- The `sqLoss` empty-class benchmark at the Dirac law is `sInf ∅ = 0`. -/
 example : approximationError sqLoss (Measure.dirac true) ∅ = 0 := by
   simp [approximationError, Real.sInf_empty]
 
-/-- The zero loss is learner-correct by a constant learner at sample size zero. -/
+/-- The zero loss is learner-correct by a constant learner at sample size `0`
+with the closed quarter and half parameters. -/
 example : IsAgnosticPACLearnerFor zeroLoss 0 epsQ delH {()} Set.univ := by
   refine ⟨fun _ => (), fun D inst _ => ?_⟩
   have hεpos : (0 : ℝ) < (epsQ.val : ℝ) := by exact_mod_cast epsQ.property.1
@@ -172,8 +179,10 @@ example : IsAgnosticPACLearnerFor zeroLoss 0 epsQ delH {()} Set.univ := by
     fun S => zeroLoss_int D _, fun S => zeroLoss_nn D _, ?_⟩
   exact le_trans (measure_mono hsub) htail
 
-/-- A negative loss cannot satisfy the predicate: the definition requires
-almost-everywhere nonnegative losses, but `0 ≤ -1` holds nowhere. -/
+/-- The identically minus-one loss on the tested singleton fails for the Dirac
+law at sample size `3`, accuracy `1 / 4`, and confidence `1 / 2`: the
+definition requires almost-everywhere nonnegative losses, but `0 ≤ -1` holds
+nowhere. -/
 example : ¬ IsAgnosticPACLearnerFor negLoss 3 epsQ delH {()} {Measure.dirac true} := by
   intro hcon
   obtain ⟨A, hA⟩ := hcon
@@ -184,6 +193,19 @@ example : ¬ IsAgnosticPACLearnerFor negLoss 3 epsQ delH {()} {Measure.dirac tru
   have hex := hae.exists
   obtain ⟨z, hz⟩ := hex
   norm_num at hz
+
+/-- Nonintegrability alone refutes the predicate on an arbitrary measurable
+example space: this singleton loss section is almost-everywhere nonnegative
+but not integrable, so the integrability conjunct fails for the singleton
+class and singleton law family. -/
+example (Z : Type*) [MeasurableSpace Z] (D : Measure Z) [IsProbabilityMeasure D]
+    (f : Z → ℝ) (_hnn : ∀ᵐ z ∂D, 0 ≤ f z) (hni : ¬ Integrable f D) :
+    ¬ IsAgnosticPACLearnerFor (fun _ : Unit => f) 3 epsQ delH {()} {D} := by
+  intro hcon
+  obtain ⟨A, hA⟩ := hcon
+  have hmem : D ∈ ({D} : Set (Measure Z)) := by simp
+  have hfull := @hA D _ hmem
+  exact hni (hfull.1 () (by simp))
 
 /-- Log sample bound for the singleton bridge instance. -/
 private theorem bridge_log :
@@ -199,10 +221,11 @@ private theorem bridge_eps : ((briE.val : ℝ≥0) : ℝ) = 2 * (2 / 5) := by no
 
 private theorem bridge_del : ((briE.val : ℝ≥0) : ℝ) = 4 / 5 := by norm_num [briE]
 
-/-- The 0-1 bridge on `Bool` inputs and labels: the finite-class ERM supplier
-gives a PAC learner for the always-true singleton, and the bridge turns it
-into a general-loss learner at `zeroOneLoss`. Disagreement measurability is by
-discreteness. -/
+/-- The Boolean bridge at sample size `5` with accuracy and confidence `4 / 5`:
+the finite-class ERM supplier gives a PAC learner for the always-true
+singleton, and the bridge turns it into a general-loss learner at
+`zeroOneLoss`. Disagreement measurability is by the discrete product
+measurable space. -/
 example : IsAgnosticPACLearnerFor zeroOneLoss 5 briE briE
     (Set.range (fun _ : Fin 1 => fun _ : Bool => true)) Set.univ := by
   have hPAC : IsPACLearnerFor 5 briE briE
