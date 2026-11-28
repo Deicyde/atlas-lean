@@ -12,6 +12,7 @@ import MathlibExt.Algebra.Category.ModuleCat.AnnihilatorQuotient
 import MathlibExt.Algebra.Category.ModuleCat.ExtendedRestrictedQuotient
 import Mathlib.Data.ZMod.Basic
 import Mathlib.Algebra.Module.NatInt
+import Mathlib.Tactic.FinCases
 
 /-!
 # Quotient scalar actions and reduction modulo six
@@ -26,6 +27,7 @@ classes. The analogous presentation for `ZMod 12 → ZMod 6` uses its genuine no
 -/
 
 open CategoryTheory
+open scoped TensorProduct ChangeOfRings
 
 noncomputable section
 set_option autoImplicit false
@@ -43,19 +45,22 @@ private lemma J_annihilates : J ≤ Module.annihilator ℤ (ZMod 12) := by
 
 section DescendedAction
 
+private lemma torsionTwelve : Module.IsTorsionBySet ℤ (ZMod 12) J :=
+  (Module.isTorsionBySet_iff_subset_annihilator ℤ (ZMod 12)).mpr J_annihilates
+
 local instance : Module (ℤ ⧸ J) (ZMod 12) :=
-  ModuleCat.annihilatorQuotientModule ℤ J (ZMod 12) J_annihilates
+  torsionTwelve.module
 
 example : (Ideal.Quotient.mk J (5 : ℤ)) • (3 : ZMod 12) = 3 := by
-  rw [ModuleCat.annihilatorQuotientModule_mk_smul]
+  rw [torsionTwelve.mk_smul]
   decide
 
 example : (Ideal.Quotient.mk J (4 : ℤ)) • (3 : ZMod 12) = 0 := by
-  rw [ModuleCat.annihilatorQuotientModule_mk_smul]
+  rw [torsionTwelve.mk_smul]
   decide
 
 example : (Ideal.Quotient.mk J (5 : ℤ)) • (3 : ZMod 12) ≠ 0 := by
-  rw [ModuleCat.annihilatorQuotientModule_mk_smul]
+  rw [torsionTwelve.mk_smul]
   decide
 
 private def restrictComparison :=
@@ -68,7 +73,7 @@ example : restrictComparison.inv.hom (3 : ZMod 12) = (3 : ZMod 12) := rfl
 example : restrictComparison.hom.hom
     ((Ideal.Quotient.mk J (5 : ℤ)) • (3 : ZMod 12)) = 3 := by
   change (Ideal.Quotient.mk J (5 : ℤ)) • (3 : ZMod 12) = 3
-  rw [ModuleCat.annihilatorQuotientModule_mk_smul]
+  rw [torsionTwelve.mk_smul]
   decide
 
 end DescendedAction
@@ -167,5 +172,94 @@ example : Ideal.Quotient.mk (RingHom.ker reduction) (3 : ZMod 12) ≠ 0 := by
   have hz : (3 : ZMod 6) = 0 :=
     coefficientThree_value.symm.trans (hv.trans (map_zero coefficientPresentation.hom.hom))
   exact (by decide : (3 : ZMod 6) ≠ 0) hz
+
+
+private def reductionTwelve : ℤ →+* ZMod 12 := Int.castRingHom (ZMod 12)
+private abbrev sixIntegers : Ideal ℤ := Ideal.span {(6 : ℤ)}
+private abbrev sixCoefficients : Ideal (ZMod 12) := Ideal.span {(6 : ZMod 12)}
+private def extendedComparison := ModuleCat.extendedRestrictedQuotientIso
+  ℤ ℤ (ZMod 12) reductionTwelve reductionTwelve sixIntegers
+private lemma extended_four_value : extendedComparison.hom.hom
+    ((2 : ZMod 12) ⊗ₜ[ℤ,reductionTwelve] Ideal.Quotient.mk sixIntegers (2 : ℤ)) =
+      Ideal.Quotient.mk (sixIntegers.map reductionTwelve) (4 : ZMod 12) := by
+  have h := ModuleCat.extendedRestrictedQuotientIso_hom_tmul
+    ℤ ℤ (ZMod 12) reductionTwelve reductionTwelve sixIntegers 2 2
+  have hv : reductionTwelve (2 : ℤ) * (2 : ZMod 12) = 4 := by decide
+  exact h.trans (congrArg (Ideal.Quotient.mk (sixIntegers.map reductionTwelve)) hv)
+private lemma mappedSix_killed : sixIntegers.map reductionTwelve ≤ RingHom.ker reduction := by
+  apply Ideal.map_le_iff_le_comap.mpr
+  rw [Ideal.span_singleton_le_iff_mem]
+  change reduction (reductionTwelve (6 : ℤ)) = 0
+  decide
+private def quotientDetector : (ZMod 12 ⧸ sixIntegers.map reductionTwelve) →+* ZMod 6 :=
+  Ideal.Quotient.lift _ reduction mappedSix_killed
+example : extendedComparison.hom.hom
+    ((2 : ZMod 12) ⊗ₜ[ℤ,reductionTwelve] Ideal.Quotient.mk sixIntegers (2 : ℤ)) =
+      Ideal.Quotient.mk (sixIntegers.map reductionTwelve) (4 : ZMod 12) := extended_four_value
+example : extendedComparison.hom.hom
+    ((2 : ZMod 12) ⊗ₜ[ℤ,reductionTwelve] Ideal.Quotient.mk sixIntegers (2 : ℤ)) ≠ 0 := by
+  intro hz
+  have hvalue : quotientDetector (extendedComparison.hom.hom
+      ((2 : ZMod 12) ⊗ₜ[ℤ,reductionTwelve] Ideal.Quotient.mk sixIntegers (2 : ℤ))) = 4 := by
+    rw [extended_four_value]
+    change reduction (4 : ZMod 12) = (4 : ZMod 6)
+    decide
+  exact (by decide : (4 : ZMod 6) ≠ 0)
+    (hvalue.symm.trans ((congrArg quotientDetector hz).trans quotientDetector.map_zero))
+private lemma coefficientKernel : RingHom.ker reduction = sixCoefficients := by
+  apply le_antisymm
+  · intro x hx
+    change reduction x = 0 at hx
+    have hcases : x = 0 ∨ x = 6 := by
+      fin_cases x
+      · exact Or.inl rfl
+      · exact False.elim ((by decide : reduction (1 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (2 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (3 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (4 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (5 : ZMod 12) ≠ 0) hx)
+      · exact Or.inr rfl
+      · exact False.elim ((by decide : reduction (7 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (8 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (9 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (10 : ZMod 12) ≠ 0) hx)
+      · exact False.elim ((by decide : reduction (11 : ZMod 12) ≠ 0) hx)
+    rcases hcases with rfl | rfl
+    · exact Ideal.zero_mem _
+    · exact Ideal.subset_span (by simp)
+  · rw [Ideal.span_singleton_le_iff_mem]
+    change reduction (6 : ZMod 12) = 0
+    decide
+private abbrev integerRing := CommRingCat.of ℤ
+private abbrev coefficientRing := CommRingCat.of (ZMod 12)
+private abbrev reducedRing := CommRingCat.of (ZMod 6)
+private def firstScalar : integerRing ⟶ coefficientRing := CommRingCat.ofHom reductionTwelve
+private def secondScalar : coefficientRing ⟶ reducedRing := CommRingCat.ofHom reduction
+private def compositeScalar : integerRing ⟶ reducedRing := CommRingCat.ofHom integerReduction
+private lemma scalarTriangle : compositeScalar = firstScalar ≫ secondScalar := by
+  apply CommRingCat.hom_ext
+  apply RingHom.ext
+  intro x
+  change (x : ZMod 6) = reduction (x : ZMod 12)
+  exact (map_intCast reduction x).symm
+private def triangleComparison := ModuleCat.restrictedQuotientIsoOfSurjective
+  integerRing coefficientRing reducedRing firstScalar secondScalar compositeScalar
+  sixCoefficients reduction_surjective coefficientKernel scalarTriangle
+private lemma triangle_nine_value : triangleComparison.hom.hom
+    (Ideal.Quotient.mk sixCoefficients (9 : ZMod 12)) = (3 : ZMod 6) := by
+  have h := ModuleCat.restrictedQuotientIsoOfSurjective_hom_mk
+    integerRing coefficientRing reducedRing firstScalar secondScalar compositeScalar
+    sixCoefficients reduction_surjective coefficientKernel scalarTriangle (9 : ZMod 12)
+  have hv : secondScalar (9 : ZMod 12) = (3 : ZMod 6) := by decide
+  exact h.trans hv
+example : triangleComparison.hom.hom (Ideal.Quotient.mk sixCoefficients (9 : ZMod 12)) =
+    (3 : ZMod 6) := triangle_nine_value
+example : triangleComparison.inv.hom (3 : ZMod 6) =
+    Ideal.Quotient.mk sixCoefficients (9 : ZMod 12) := by
+  have h := ModuleCat.restrictedQuotientIsoOfSurjective_inv_map
+    integerRing coefficientRing reducedRing firstScalar secondScalar compositeScalar
+    sixCoefficients reduction_surjective coefficientKernel scalarTriangle (9 : ZMod 12)
+  have hv : secondScalar (9 : ZMod 12) = (3 : ZMod 6) := by decide
+  exact (congrArg triangleComparison.inv.hom hv).symm.trans h
 
 end QuotientScalarReduction

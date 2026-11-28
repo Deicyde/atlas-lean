@@ -25,8 +25,9 @@ torsion module `Γ_I(M)` consists of elements annihilated by every scalar in `I^
 natural `n`. Restriction of module maps gives an additive, `R`-linear functor with a natural
 inclusion in the identity functor.
 
-The functor preserves finite limits. Given injective resolutions in the chosen module
-category, its right-derived functors define `H_I^q(-)`. Degree-zero local cohomology is
+Here local cohomology means right-derived power torsion. The functor preserves finite limits.
+Given injective resolutions in the chosen module category, its right-derived functors
+define `H_I^q(-)`. Degree-zero local cohomology is
 naturally `Γ_I`, and the canonical map to the zeroth derived functor is inverse to this
 comparison. Scalar and module-carrier universes are independent.
 -/

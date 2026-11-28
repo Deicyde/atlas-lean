@@ -13,6 +13,7 @@ module
 
 public import Mathlib.Algebra.Category.ModuleCat.ChangeOfRings
 public import Mathlib.Algebra.Module.Hom
+public import Mathlib.Algebra.Module.Torsion.Basic
 public import Mathlib.Algebra.Algebra.Tower
 public import Mathlib.Algebra.Category.ModuleCat.Projective
 public import Mathlib.RingTheory.Finiteness.Basic
@@ -61,49 +62,7 @@ ann(U)`. -/
 theorem annihilator_tuple (P J U : ModuleCat.{v} R) :
     Module.annihilator R (P × J × U) =
       Module.annihilator R P ⊓ Module.annihilator R J ⊓ Module.annihilator R U := by
-  ext r
-  simp only [Module.mem_annihilator, Ideal.mem_inf]
-  constructor
-  · intro h
-    refine ⟨⟨?_, ?_⟩, ?_⟩
-    · intro p
-      exact congrArg Prod.fst (h (p, 0, 0))
-    · intro j
-      exact congrArg (fun x : P × J × U => x.2.1) (h (0, j, 0))
-    · intro u
-      exact congrArg (fun x : P × J × U => x.2.2) (h (0, 0, u))
-  · rintro ⟨⟨hP, hJ⟩, hU⟩ ⟨p, j, u⟩
-    exact Prod.ext (hP p) (Prod.ext (hJ j) (hU u))
-
-/-- Module action descended through an annihilating ideal.
-
-If `I ≤ Module.annihilator R M`, the scalar-action homomorphism factors through `R ⧸ I` and
-gives a quotient-ring module structure on the same carrier `M`. -/
-def annihilatorQuotientModule (I : Ideal R) (M : Type v)
-    [AddCommGroup M] [Module R M] (hI : I ≤ Module.annihilator R M) :
-    Module (R ⧸ I) M :=
-  Module.compHom M (Ideal.Quotient.lift I (Module.toAddMonoidEnd R M) hI)
-
-/-- Quotient scalar class acts by its representative.
-
-With the quotient action defined by `annihilatorQuotientModule`, `(Ideal.Quotient.mk I r) • m
-= r • m` for every `r : R` and `m : M`. -/
-theorem annihilatorQuotientModule_mk_smul (I : Ideal R) (M : Type v)
-    [AddCommGroup M] [Module R M] (hI : I ≤ Module.annihilator R M) (r : R) (m : M) :
-    letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
-    (Ideal.Quotient.mk I r) • m = r • m := rfl
-
-/-- Annihilator quotient action forms a scalar tower.
-
-For an annihilating ideal `I`, the `R`-action, quotient-ring action, and carrier `M` satisfy
-`IsScalarTower R (R ⧸ I) M`. -/
-def annihilatorQuotientTower (I : Ideal R) (M : Type v)
-    [AddCommGroup M] [Module R M] (hI : I ≤ Module.annihilator R M) :
-    letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
-    IsScalarTower R (R ⧸ I) M := by
-  letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
-  exact IsScalarTower.of_algebraMap_smul
-    (annihilatorQuotientModule_mk_smul R I M hI)
+  rw [Module.annihilator_prod, Module.annihilator_prod, inf_assoc]
 
 /-- Restriction of the quotient action gives the same module.
 
@@ -111,19 +70,23 @@ For `I ≤ ann(M)`, restrict the descended `R ⧸ I`-module along `R → R ⧸ I
 `ModuleCat.of R M` on the same carrier. -/
 def annihilatorQuotientRestrictIso (I : Ideal R) (M : Type v)
     [AddCommGroup M] [Module R M] (hI : I ≤ Module.annihilator R M) :
-    (letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI;
+    (letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module;
       (ModuleCat.restrictScalars (Ideal.Quotient.mk I)).obj (ModuleCat.of (R ⧸ I) M)) ≅
         ModuleCat.of R M := by
-  letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
+  letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module
   refine {
     hom := ModuleCat.ofHom {
       toFun := id
       map_add' := fun _ _ => rfl
-      map_smul' := annihilatorQuotientModule_mk_smul R I M hI }
+      map_smul' :=
+         ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).mk_smul }
     inv := ModuleCat.ofHom {
       toFun := id
       map_add' := fun _ _ => rfl
-      map_smul' := fun r m => (annihilatorQuotientModule_mk_smul R I M hI r m).symm }
+      map_smul' := fun r m =>
+         (((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).mk_smul r m).symm }
     hom_inv_id := ModuleCat.hom_ext rfl
     inv_hom_id := ModuleCat.hom_ext rfl }
 
@@ -176,9 +139,11 @@ Let `M : ModuleCat R` be categorically projective and let `I ≤ ann(M)`. With t
 action, `ModuleCat.of (R ⧸ I) M` is categorically projective. -/
 theorem annihilatorQuotient_projective (I : Ideal R) (M : ModuleCat.{v} R)
     [CategoryTheory.Projective M] (hI : I ≤ Module.annihilator R M) :
-    letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
+    letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module
     CategoryTheory.Projective (ModuleCat.of (R ⧸ I) M) := by
-  letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
+  letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module
   let F := ModuleCat.restrictScalars.{v} (Ideal.Quotient.mk I)
   letI : F.Full := restrictScalars_full_of_surjective _ (Ideal.Quotient.mk_surjective (I := I))
   letI : F.PreservesEpimorphisms := restrictScalars_preservesEpimorphisms _
@@ -193,10 +158,13 @@ If `M` is finitely generated over `R` and `I ≤ ann(M)`, then the same carrier 
 descended quotient action is finitely generated over `R ⧸ I`. -/
 theorem annihilatorQuotient_finite (I : Ideal R) (M : ModuleCat.{v} R)
     [Module.Finite R M] (hI : I ≤ Module.annihilator R M) :
-    letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
+    letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module
     Module.Finite (R ⧸ I) M := by
-  letI : Module (R ⧸ I) M := annihilatorQuotientModule R I M hI
-  letI : IsScalarTower R (R ⧸ I) M := annihilatorQuotientTower R I M hI
+  letI : Module (R ⧸ I) M :=
+      ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).module
+  letI : IsScalarTower R (R ⧸ I) M :=
+    ((Module.isTorsionBySet_iff_subset_annihilator R M).mpr hI).isScalarTower
   exact Module.Finite.of_restrictScalars_finite R (R ⧸ I) M
 
 end ModuleCat

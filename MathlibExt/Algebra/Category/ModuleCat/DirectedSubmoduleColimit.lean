@@ -14,6 +14,7 @@ module
 public import Mathlib.Algebra.Category.ModuleCat.Limits
 public import Mathlib.CategoryTheory.Limits.Types.Filtered
 public import Mathlib.LinearAlgebra.Span.Defs
+public import Mathlib.Algebra.Module.Submodule.LinearMap
 
 /-!
 # A directed submodule supremum is its categorical union colimit
@@ -194,13 +195,6 @@ section Coefficients
 
 variable {N : Type v} [AddCommGroup N] [Module R N]
 
-/-- For submodule families S_i⊆M,T_i⊆N and an R-linear
-map f:M→N with f(S_i)⊆T_i, restriction gives S_i→ₗ[R]T_i.
-Its underlying function is f on each stage element. -/
-def stageMap (S : ι → Submodule R M) (T : ι → Submodule R N)
-    (f : M →ₗ[R] N) (hf : ∀ i x, x ∈ S i → f x ∈ T i) (i : ι) : S i →ₗ[R] T i :=
-  (f.domRestrict (S i)).codRestrict (T i) (fun x => hf i x.val x.property)
-
 /-- For a monotone directed nonempty family S_i⊆M,
 an arbitrary family T_i⊆N and an R-linear map f with
 f(S_i)⊆T_i, there is an R-linear map
@@ -228,7 +222,7 @@ They define a natural transformation of the two module diagrams. -/
 def coefficientDiagramMap (S : ι → Submodule R M) (hS : Monotone S)
     (T : ι → Submodule R N) (hT : Monotone T) (f : M →ₗ[R] N)
     (hf : ∀ i x, x ∈ S i → f x ∈ T i) : diagram S hS ⟶ diagram T hT where
-  app i := ModuleCat.ofHom (stageMap S T f hf i)
+  app i := ModuleCat.ofHom (f.restrict (p := S i) (q := T i) (hf i))
   naturality i j g := by
     apply ModuleCat.hom_ext
     ext x
