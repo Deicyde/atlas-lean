@@ -41,6 +41,7 @@ source modules; planned destinations are listed separately when added.
 
 **Planned application models:**
 
+- [Biochemistry, biomaterials and local therapeutic delivery](../roadmap/Biology/biochemistry/README.md), from molecular foundations to source-qualified research targets.
 - [Plug-flow reactors](../roadmap/Chemistry/chemical-kinetics/plug-flow-reactor/README.md)
 - [Residence-time distributions](../roadmap/Chemistry/chemical-kinetics/residence-time-distributions/README.md)
 - [Chemostat dynamics](../roadmap/Biology/population-dynamics/chemostat/README.md)
@@ -65,7 +66,7 @@ Computer-science developments, including algorithms applied to other domains.
 
 **Related mathematical topics**, whose links do not assign library membership:
 
-- [Intuitionistic propositional logic](../roadmap/Logic/propositional-logic/kripke-semantics-for-intuitionistic-propositional-logic.md)
+- [Intuitionistic propositional logic](../roadmap/Logic/propositional-logic/intuitionistic-propositional-logic/README.md)
 - [Proof theory](../roadmap/Logic/proof-theory/README.md)
 - [Type-theoretic foundations](../roadmap/Logic/type-theoretic-foundations/README.md)
 - [Propositional dynamic logic](../roadmap/Logic/modal-logic/propositional-dynamic-logic/README.md)
