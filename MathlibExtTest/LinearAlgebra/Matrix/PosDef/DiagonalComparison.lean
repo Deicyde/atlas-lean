@@ -67,4 +67,24 @@ theorem sum_diag_mul_sq_le_two_one_one_two (n : Fin 2 → ℝ) :
     prod_diag_le_two_one_one_two n
   simpa [Fin.sum_univ_two] using h
 
+/-- The coordinate bound and the minor formula in one statement, for `!![2, 1; 1, 2]` at `i = 0`:
+`n 0 ^ 2 ≤ Y⁻¹ 0 0 * Q(n)` with `Y⁻¹ 0 0 = 2 / 3`. -/
+theorem sq_apply_le_and_inv_two_one_one_two (n : Fin 2 → ℝ) :
+    n 0 ^ 2 ≤ (!![(2 : ℝ), 1; 1, 2])⁻¹ 0 0 * (n ⬝ᵥ (!![(2 : ℝ), 1; 1, 2]) *ᵥ n) ∧
+      (!![(2 : ℝ), 1; 1, 2])⁻¹ 0 0 = 2 / 3 := by
+  obtain ⟨h1, h2⟩ :=
+    posDef_two_one_one_two.sq_apply_le_inv_apply_mul_dotProduct_mulVec_and_inv_apply_self_eq n 0
+  refine ⟨h1, ?_⟩
+  rw [h2, det_unique, det_fin_two]
+  norm_num
+
+/-- The comparison for each index and its sum in one statement, for `!![2, 1; 1, 2]` with
+`μ = 4 / 3`. -/
+theorem diag_mul_sq_le_and_sum_two_one_one_two (n : Fin 2 → ℝ) :
+    (∀ i, (!![(2 : ℝ), 1; 1, 2]) i i * n i ^ 2 ≤ 4 / 3 * (n ⬝ᵥ (!![(2 : ℝ), 1; 1, 2]) *ᵥ n)) ∧
+      ∑ i, (!![(2 : ℝ), 1; 1, 2]) i i * n i ^ 2 ≤
+        2 * (4 / 3) * (n ⬝ᵥ (!![(2 : ℝ), 1; 1, 2]) *ᵥ n) := by
+  simpa using posDef_two_one_one_two.diag_mul_sq_le_and_sum_diag_mul_sq_le_of_prod_diag_le
+    prod_diag_le_two_one_one_two n
+
 end MathlibExtTest.LinearAlgebra.Matrix.PosDef.DiagonalComparison

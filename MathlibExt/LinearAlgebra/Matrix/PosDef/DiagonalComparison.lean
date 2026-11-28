@@ -46,6 +46,10 @@ All three statements are standard linear algebra. The last one reuses Hadamard's
 * `Matrix.PosDef.diag_mul_sq_le_of_prod_diag_le`: `Y i i * n i ^ 2 ≤ μ * (n ⬝ᵥ Y *ᵥ n)`.
 * `Matrix.PosDef.sum_diag_mul_sq_le_of_prod_diag_le`:
   `∑ i, Y i i * n i ^ 2 ≤ g * μ * (n ⬝ᵥ Y *ᵥ n)`.
+* `Matrix.PosDef.sq_apply_le_inv_apply_mul_dotProduct_mulVec_and_inv_apply_self_eq`: the
+  coordinate bound and the minor formula for `Y⁻¹ i i`, in one statement.
+* `Matrix.PosDef.diag_mul_sq_le_and_sum_diag_mul_sq_le_of_prod_diag_le`: the comparison for each
+  index and its sum, in one statement.
 -/
 
 @[expose] public section
@@ -147,5 +151,31 @@ theorem PosDef.sum_diag_mul_sq_le_of_prod_diag_le {g : ℕ} {Y : Matrix (Fin g) 
         Finset.sum_le_sum fun i _ => hY.diag_mul_sq_le_of_prod_diag_le hμ i n
     _ = g * μ * (n ⬝ᵥ Y *ᵥ n) := by
         rw [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul, mul_assoc]
+
+/-- **A coordinate bounded by the diagonal of the inverse matrix.** Let $g \ge 1$, written
+$g = m + 1$, and let $Y$ be a positive definite real symmetric $g \times g$ matrix. For every
+$n \in \mathbb{R}^g$ and every index $i$,
+$n_i^2 \le (Y^{-1})_{ii}\, n^{\mathsf T} Y n$ and $(Y^{-1})_{ii} = \det Y^{(i)} / \det Y$,
+where $Y^{(i)}$ is the $(g - 1) \times (g - 1)$ matrix obtained from $Y$ by deleting its $i$-th
+row and column (with $\det Y^{(i)} = 1$ for $g = 1$, the determinant of the empty matrix). -/
+theorem PosDef.sq_apply_le_inv_apply_mul_dotProduct_mulVec_and_inv_apply_self_eq {m : ℕ}
+    {Y : Matrix (Fin (m + 1)) (Fin (m + 1)) ℝ} (hY : Y.PosDef) (n : Fin (m + 1) → ℝ)
+    (i : Fin (m + 1)) :
+    n i ^ 2 ≤ Y⁻¹ i i * (n ⬝ᵥ Y *ᵥ n) ∧
+      Y⁻¹ i i = (Y.submatrix i.succAbove i.succAbove).det / Y.det :=
+  ⟨hY.sq_apply_le_inv_apply_mul_dotProduct_mulVec i n,
+    inv_apply_self_eq_det_submatrix_div_det Y i⟩
+
+/-- **Comparison of a positive definite matrix with its diagonal.** Let $Y = (y_{ij})$ be a
+positive definite real symmetric $g \times g$ matrix and $\mu$ a real number with
+$y_{11} y_{22} \cdots y_{gg} \le \mu \det Y$ (such a $\mu$ is positive, as $\det Y > 0$ and every
+$y_{jj} > 0$). Then for every $n \in \mathbb{R}^g$ and every index $i$,
+$y_{ii} n_i^2 \le \mu\, n^{\mathsf T} Y n$, hence
+$\sum_{i=1}^{g} y_{ii} n_i^2 \le g \mu\, n^{\mathsf T} Y n$. -/
+theorem PosDef.diag_mul_sq_le_and_sum_diag_mul_sq_le_of_prod_diag_le {g : ℕ}
+    {Y : Matrix (Fin g) (Fin g) ℝ} (hY : Y.PosDef) {μ : ℝ} (hμ : ∏ j, Y j j ≤ μ * Y.det)
+    (n : Fin g → ℝ) :
+    (∀ i, Y i i * n i ^ 2 ≤ μ * (n ⬝ᵥ Y *ᵥ n)) ∧ ∑ i, Y i i * n i ^ 2 ≤ g * μ * (n ⬝ᵥ Y *ᵥ n) :=
+  ⟨fun i ↦ hY.diag_mul_sq_le_of_prod_diag_le hμ i n, hY.sum_diag_mul_sq_le_of_prod_diag_le hμ n⟩
 
 end Matrix
