@@ -423,10 +423,12 @@ theorem abs_extendIcc_le (h : 𝔻[τ]) (x : ℝ) : |extendIcc h x| ≤ ‖h‖ 
     exact lp.norm_apply_le_norm ENNReal.top_ne_zero h _
   · simp [extendIcc, hx]
 
-/-- The value `Ψ A B h t`: the limit along `refinementUltrafilter` of the Duhamel (two-tag) sums
-of `h` on `[0, t]` when they converge along it, as they do when the sums are bounded (for
-instance when `A` and `B` have bounded variation on `[0, τ]`, `bddSum_psi`). Otherwise it is an
-unspecified real number. -/
+/-- The pointwise auxiliary value behind `psi`, for a bounded `h` and `t ∈ [0, τ]`: the limit along
+`refinementUltrafilter` of the Duhamel (two-tag) sums of `h` on `[0, t]` when they converge along
+it, as they do when the sums are bounded (for instance when `A` and `B` have bounded variation on
+`[0, τ]`, `bddSum_psi`). Otherwise it is an unspecified real number. It agrees with `Ψ A B h t`
+(`psi_apply`) when both `A` and `B` have bounded variation on `[0, τ]`; otherwise `psi τ A B` is
+`0`. -/
 noncomputable def psiFun (τ : ℝ) (A B : ℝ → ℝ) (h : 𝔻[τ]) (t : Set.Icc (0 : ℝ) τ) : ℝ :=
   twoTagLim (productIntegral A 0) (fun x => productIntegral B x t) (extendIcc h) 0 t
 
