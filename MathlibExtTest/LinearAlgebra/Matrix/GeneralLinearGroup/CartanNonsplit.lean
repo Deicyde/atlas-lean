@@ -27,7 +27,7 @@ example (F : Type*) [Field F] [Finite F] (hF : ringChar F ≠ 2) (ε : F) (hε :
     ext g
     simp⟩
 
--- Over `𝔽_q`, `quadraticAlgebraUnits ε` has `q² - 1` elements.
+-- For `q` odd and `ε` a nonsquare in `𝔽_q`, `quadraticAlgebraUnits ε` has `q² - 1` elements.
 example (F : Type*) [Field F] [Finite F] (hF : ringChar F ≠ 2) (ε : F) (hε : ¬IsSquare ε) :
     Nat.card (quadraticAlgebraUnits ε) = Nat.card F ^ 2 - 1 :=
   ((isNonsplitCartanSubgroup_iff hF hε).2 ⟨1, by
