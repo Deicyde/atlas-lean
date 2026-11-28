@@ -24,19 +24,21 @@ open CSLibExt.MachineLearning.GeneralizationBounds (empiricalRisk risk measurabl
 
 variable {Z H : Type*} [MeasurableSpace Z]
 
-/-- A nonempty sample is `ε`-representative if every hypothesis in `H` has integrable loss
-under `D` and satisfies `|empiricalRisk L S h - risk L D h| ≤ ε`. Integrability ensures
-that `risk` is the finite expected loss, not the fallback value for a nonintegrable loss.
-This formulation covers the empty class and allows signed real losses.
+/-- Under a probability law `D`, a nonempty sample `S` is `ε`-representative if every
+hypothesis in `H` has integrable loss under `D` and satisfies
+`|empiricalRisk L S h - risk L D h| ≤ ε`. For an integrable loss, `risk` is the finite
+expected loss under `D`, not the fallback value for a nonintegrable loss. This formulation
+covers the empty class and allows signed real losses.
 
 Source: Shalev-Shwartz and Ben-David, *Understanding Machine Learning*, Definition 4.1. -/
 def IsRepresentative {m : ℕ} [NeZero m] (L : H → Z → ℝ) (D : Measure Z)
     [IsProbabilityMeasure D] (S : Fin m → Z) (ε : ℝ) : Prop :=
   ∀ h : H, Integrable (L h) D ∧ |empiricalRisk L S h - risk L D h| ≤ ε
 
-/-- For a countable hypothesis class with measurable losses, the representative-sample event
-is measurable. If any loss is nonintegrable under `D`, the event is empty. No countability
-hypothesis is built into representativeness itself. -/
+/-- For a probability law `D` and a positive sample size `m`, the representative-sample event
+is measurable when the hypothesis class is countable and each loss is measurable. If any loss
+is nonintegrable under `D`, the event is empty. No countability hypothesis is built into
+representativeness itself. -/
 theorem measurableSet_isRepresentative [Countable H] {m : ℕ} [NeZero m]
     {L : H → Z → ℝ} (hL : ∀ h, Measurable (L h)) (D : Measure Z)
     [IsProbabilityMeasure D] (ε : ℝ) :
