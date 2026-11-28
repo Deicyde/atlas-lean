@@ -1,6 +1,6 @@
 # The bi-infinite Post correspondence problem is in Σ⁰₂ but not in Π⁰₁
 
-Deciding whether two morphisms agree, up to a shift, on some bi-infinite word is undecidable and lies at the second level of the arithmetical hierarchy: the problem is in $\Sigma^0_2$ and is $\Sigma^0_1$-hard, hence not in $\Pi^0_1$.
+Deciding whether two morphisms agree, up to a shift, on some bi-infinite word is undecidable: the problem is in $\Sigma^0_2$ and is $\Sigma^0_1$-hard, hence not in $\Pi^0_1$ (Theorem 2); whether it lies properly at the second level of the arithmetical hierarchy is open (the source's question after Theorem 2).
 
 A *bi-infinite word* over $A$ is a sequence $w=(w(i))_{i\in\mathbb Z}$ of letters of $A$, and a morphism $h:A^*\to B^*$ extends to bi-infinite words by concatenating the images $h(w(i))$ in order. Two bi-infinite words $x$ and $y$ are *equal* if they agree up to a shift: there is $s\in\mathbb Z$ with $x(i)=y(i+s)$ for all $i\in\mathbb Z$.
 

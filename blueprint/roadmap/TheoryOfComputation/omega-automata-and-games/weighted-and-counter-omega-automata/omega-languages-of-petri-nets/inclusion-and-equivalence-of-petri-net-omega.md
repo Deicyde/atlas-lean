@@ -8,7 +8,7 @@ For infinite-word languages accepted by Petri nets, modeled as real-time Büchi 
 
 The source also shows that for every countable ordinal $\alpha\ge2$, the sets $\{z : L(\mathcal P_z)\in\boldsymbol\Sigma^0_\alpha\}$, $\{z : L(\mathcal P_z)\in\boldsymbol\Pi^0_\alpha\}$ and $\{z : L(\mathcal P_z)\text{ is Borel}\}$ are $\Pi^1_2$-hard (Theorem 5.2).
 
-Hence these problems for $\omega$-languages of Petri nets lie far beyond the arithmetical hierarchy, at the second level of the [analytical hierarchy](../../../degrees-and-hierarchies/analytical-hierarchy/analytical-hierarchy.md).
+Hence inclusion and equivalence for $\omega$-languages of Petri nets lie far beyond the arithmetical hierarchy, at the second level of the [analytical hierarchy](../../../degrees-and-hierarchies/analytical-hierarchy/analytical-hierarchy.md), and the Borel-class problems are at least as hard; the source shows only their hardness.
 
 ## Depends on
 

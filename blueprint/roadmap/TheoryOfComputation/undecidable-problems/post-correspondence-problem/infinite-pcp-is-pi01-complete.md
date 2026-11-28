@@ -21,7 +21,7 @@ None.
 
 ## Expansion
 
-A solution of the finite problem is a finite witness that can be checked, which puts the PCP in $\Sigma^0_1$; for $\omega\mathrm{PCP}$ the roles reverse, so that despite asking for an infinite object it is no more complex than the PCP. Undecidability of $\omega\mathrm{PCP}$ was known before, already for small instances ([the infinite PCP is undecidable for instances of size 9](the-infinite-post-correspondence-problem-is-unde.md)). The bi-infinite variant, in contrast, sits at the second level of the arithmetical hierarchy ([the bi-infinite PCP is in Σ⁰₂ but not in Π⁰₁](bi-infinite-pcp-is-in-sigma02-not-pi01.md)).
+A solution of the finite problem is a finite witness that can be checked, which puts the PCP in $\Sigma^0_1$; for $\omega\mathrm{PCP}$ the roles reverse, so that despite asking for an infinite object it is no more complex than the PCP. Undecidability of $\omega\mathrm{PCP}$ was known before, already for small instances ([the infinite PCP is undecidable for instances of size 9](the-infinite-post-correspondence-problem-is-unde.md)). The bi-infinite variant, in contrast, is in $\Sigma^0_2$ but not in $\Pi^0_1$ ([the bi-infinite PCP is in Σ⁰₂ but not in Π⁰₁](bi-infinite-pcp-is-in-sigma02-not-pi01.md)); whether it lies properly at the second level is open.
 
 ## Sources
 
