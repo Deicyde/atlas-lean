@@ -30,12 +30,14 @@ map `Cl(O) → Cl(𝒪_K)` given by `[𝔟] ↦ [𝔟𝒪_K]`).
 
 variable {K : Type*} [Field K] [NumberField K]
 
-/-- The ring of integers `integralClosure ℤ K`, as a subalgebra, has fraction field `K`. -/
+/-- For a number field `K`, the ring of integers `integralClosure ℤ K`, as a subalgebra, has
+fraction field `K`. -/
 instance NumberField.instIsFractionRingIntegralClosure :
     IsFractionRing (integralClosure ℤ K) K :=
   inferInstanceAs (IsFractionRing (NumberField.RingOfIntegers K) K)
 
-/-- The ring of integers `integralClosure ℤ K`, as a subalgebra, is a Dedekind domain. -/
+/-- For a number field `K`, the ring of integers `integralClosure ℤ K`, as a subalgebra, is a
+Dedekind domain. -/
 instance NumberField.instIsDedekindDomainIntegralClosure :
     IsDedekindDomain (integralClosure ℤ K) :=
   inferInstanceAs (IsDedekindDomain (NumberField.RingOfIntegers K))

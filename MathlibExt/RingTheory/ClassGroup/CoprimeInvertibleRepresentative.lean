@@ -95,7 +95,7 @@ Noetherian domain of dimension at most one: write the class as $[\mathfrak{a}]^{
 $\mathfrak{p}_1, \dots, \mathfrak{p}_r$ containing $\mathfrak{n}$ are finitely many (here:
 they are minimal primes of $\mathfrak{n}$ in a Noetherian ring; Conrad's footnote 5, p. 14: "The
 finiteness of the number of prime ideals containing n is true when O is an arbitrary
-one-dimensional Noetherian domain"); an $x \in \mathfrak{a}$ with
+one-dimensional Noetherian domain"); a nonzero $x \in \mathfrak{a}$ with
 $x \notin \mathfrak{p}_i\mathfrak{a}$ for all $i$ exists by the Chinese remainder theorem for
 modules ((5.2), p. 15), and $\mathfrak{b} = x\mathfrak{a}^{-1}$ works.
 
