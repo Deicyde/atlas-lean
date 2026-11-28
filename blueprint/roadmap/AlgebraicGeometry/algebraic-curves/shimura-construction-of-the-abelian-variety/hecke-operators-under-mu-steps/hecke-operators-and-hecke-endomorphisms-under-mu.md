@@ -34,22 +34,66 @@ $\det(\alpha) > 0$, in the form $\mu \circ [\Gamma' \alpha \Gamma]_2 = \delta\{\
 
 - [Double coset operators on weight-two cusp forms as maps of differentials](double-coset-operators-on-differentials.md),
   for $\omega_{f \mid [\Gamma \alpha \Gamma]_2} = \mathrm{Tr}_{\pi_1}(\pi_2^* \omega_f)$
-- [Holomorphic $1$-forms under the pushforward and the pullback of Jacobians](one-forms-under-pushforward-and-pullback-of-jacobians.md),
-  for the pullback of $1$-forms along $(\pi_2)_*$ and $\pi_1^*$
-- [Weight-two cusp forms as holomorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
-  for $\omega_f$, which corresponds to $\mu(f)$ under pullback along an Abel–Jacobi map
-- [Weight-two cusp forms as holomorphic $1$-forms on the modular Jacobian](../cusp-forms-as-one-forms-steps/cusp-forms-as-one-forms-on-the-modular-jacobian.md), for $\mu$
-- [Holomorphic $1$-forms and tangent space of a complex abelian variety](../holomorphic-one-forms-steps/holomorphic-one-forms-and-tangent-space.md), for the behaviour of $\delta$ under sums and composition
+- [The pushforward on Jacobians in the classical model](one-forms-under-pushforward-and-pullback-of-jacobians.md),
+  for $(\pi_2)_*$, induced by the transpose of the pullback of differentials $\pi_2^*$
+- [Pullback on Jacobians](../../jacobians-of-compact-riemann-surfaces/pullback.md), for $\pi_1^*$, the pullback of
+  divisor classes along $\pi_1$
+- [The pullback map on Jacobians is holomorphic](../../jacobians-of-compact-riemann-surfaces/pullback-cont-mdiff.md),
+  for the pullback of holomorphic $1$-forms along $\pi_1^*$
+- [The pushforward on Jacobians is holomorphic](../../jacobians-of-compact-riemann-surfaces/pushforward-cont-mdiff.md),
+  for the pullback of holomorphic $1$-forms along $(\pi_2)_*$
+- [Pullback of holomorphic $1$-forms along an Abel–Jacobi map](../cusp-forms-as-one-forms-steps/pullback-of-one-forms-along-the-abel-jacobi-map.md),
+  for the classical model of the Jacobian, in which the pullback of $1$-forms along an Abel–Jacobi map is computed,
+  and the invariance of the holomorphic $1$-forms on the Jacobian under translation
+- [Abel–Jacobi map](../../jacobians-of-compact-riemann-surfaces/of-curve.md), for the Abel–Jacobi maps of
+  $\mathfrak{H}^*/\Gamma$
+- [Weight-two modular forms and meromorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
+  for $\omega_f$
+- [Weight-two cusp forms as holomorphic $1$-forms on the modular Jacobian](../cusp-forms-as-one-forms-steps/cusp-forms-as-one-forms-on-the-modular-jacobian.md),
+  for $\mu$, with $\delta\psi(\mu(f)) = f(z)\,dz$
+- [Holomorphic $1$-forms and tangent space of a complex abelian variety](../holomorphic-one-forms-steps/holomorphic-one-forms-and-tangent-space.md),
+  for evaluation at the origin and the behaviour of $\delta$ under sums and composition
 - [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-operators-of-level-n.md), for $T_n = T_m T_q$
 - [Hecke endomorphisms $\xi_n$ of the Jacobian of a modular curve](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-endomorphisms-of-the-modular-jacobian.md),
   for $\{\Gamma \alpha \Gamma\} = (\pi_2)_* \circ \pi_1^*$ and $\xi_n = \xi_m \xi_q$
 
 ## Proof sketch
 
-Identify $D_J$ with the holomorphic differentials on $\mathfrak{H}^*/\Gamma$ by pullback along an Abel–Jacobi map, so
-that $\mu(f)$ corresponds to $\omega_f$. As $\delta$ reverses composition,
-$\delta\{\Gamma \alpha \Gamma\} = \delta(\pi_1^*) \circ \delta((\pi_2)_*)$, which corresponds to $\mathrm{Tr}_{\pi_1} \circ \pi_2^*$, and
-this sends $\omega_f$ to $\omega_{f \mid [\Gamma \alpha \Gamma]_2}$; so $\delta\{\Gamma \alpha \Gamma\}(\mu(f)) =
+Let $X = \mathfrak{H}^*/\Gamma$ and $X_\alpha = \mathfrak{H}^*/\Gamma_\alpha$, with Jacobians $J$ and $J_\alpha$ in the classical
+models $\Omega^1(X)^\vee / H_1(X, \mathbb{Z})$ and $\Omega^1(X_\alpha)^\vee / H_1(X_\alpha, \mathbb{Z})$, whose tangent spaces at
+the origin are $\Omega^1(X)^\vee$ and $\Omega^1(X_\alpha)^\vee$. For $\omega \in \Omega^1(X)$ let $\iota(\omega) \in D_J$ be the
+$1$-form whose value at the origin is $\lambda \mapsto \lambda(\omega)$, and define
+$\iota_\alpha \colon \Omega^1(X_\alpha) \to D_{J_\alpha}$ in the same way. As evaluation at the origin is an isomorphism,
+$\iota$ and $\iota_\alpha$ are isomorphisms; the forms $\iota(\omega)$ are invariant under translation.
+
+First, $\mu(f) = \iota(\omega_f)$. Let $\varphi \colon X \to J$ be the Abel–Jacobi map through which $\psi$ is defined, and
+$p \colon \mathfrak{H} \to X$ the quotient map. In the classical model, the differential of $\varphi$ at $Q$ sends a
+tangent vector $t$ to $\omega \mapsto \omega_Q(t)$, so $\varphi^*(\iota(\omega)) = \omega$. Hence
+$p^* \varphi^* (\iota(\omega_f)) = p^* \omega_f = f(z)\,dz = \delta\psi(\mu(f)) = p^* \varphi^* (\mu(f))$, and as $p^*$ is injective
+on differentials and $\varphi^* = \iota^{-1}$, $\mu(f) = \iota(\omega_f)$.
+
+Second, $\delta((\pi_2)_*)(\iota(\omega)) = \iota_\alpha(\pi_2^* \omega)$. The pullback of $\iota(\omega)$ along the homomorphism
+$(\pi_2)_*$ is invariant under translation, and its value at the origin is $\lambda \mapsto \lambda(\omega)$ composed with
+the differential of $(\pi_2)_*$ at the origin, $\nu \mapsto \nu \circ \pi_2^*$; that is, $\nu \mapsto \nu(\pi_2^* \omega)$.
+
+Third, $\delta(\pi_1^*)(\iota_\alpha(\eta)) = \iota(\mathrm{Tr}_{\pi_1} \eta)$ for $\eta \in \Omega^1(X_\alpha)$, and $\mathrm{Tr}_{\pi_1} \eta$
+is holomorphic. Let $d$ be the degree of $\pi_1$, fix $P \in X$ that is not a branch point of $\pi_1$, and let
+$\varphi_P$ be the Abel–Jacobi map of $X$ based at $P$. For $Q \in X$, the pullback of the divisor $Q - P$ along $\pi_1$
+is the sum of the points over $Q$ minus the sum of the points over $P$, counted with their ramification indices. If
+$Q$ is not a branch point and $c$ is a path from $P$ to $Q$ that avoids the branch points, with lifts $c_1, \dots, c_d$ to
+$X_\alpha$, then
+
+$$\sum_{j=1}^{d} \int_{c_j} \eta = \int_c \mathrm{Tr}_{\pi_1} \eta \qquad (\eta \in \Omega^1(X_\alpha)),$$
+
+as over a disc on which $\pi_1$ is unramified the lifts are the images of $c$ under local sections of $\pi_1$. So
+$\pi_1^* \circ \varphi_P$ sends $Q$ to the class of $\eta \mapsto \int_P^Q \mathrm{Tr}_{\pi_1} \eta$, and the pullback of
+$\iota_\alpha(\eta)$ along it, a holomorphic differential on $X$, is $\mathrm{Tr}_{\pi_1} \eta$ away from the branch points;
+so $\mathrm{Tr}_{\pi_1} \eta$ is holomorphic and is that pullback. As $\pi_1^*$ is a holomorphic homomorphism, the
+pullback of $\iota_\alpha(\eta)$ along $\pi_1^*$ is an invariant $1$-form $u$ on $J$ with $\varphi_P^* u = \mathrm{Tr}_{\pi_1} \eta$,
+so $u = \iota(\mathrm{Tr}_{\pi_1} \eta)$.
+
+As $\delta$ reverses composition, $\delta\{\Gamma \alpha \Gamma\} = \delta(\pi_1^*) \circ \delta((\pi_2)_*)$, so
+$\delta\{\Gamma \alpha \Gamma\}(\mu(f)) = \iota(\mathrm{Tr}_{\pi_1}(\pi_2^* \omega_f)) = \iota(\omega_{f \mid [\Gamma \alpha \Gamma]_2}) =
 \mu(f \mid [\Gamma \alpha \Gamma]_2)$. Summing over the double cosets $\Gamma \beta \Gamma$ gives $\mu \circ T_q = \delta\xi_q \circ \mu$,
 as $\delta$ is additive, and $\mu \circ T_m = \delta\xi_m \circ \mu$ is the case $\alpha = \begin{pmatrix} 1 & 0 \\ 0 & m \end{pmatrix}$. For
 $n = mq$, with the right action $g \mid T_n = (g \mid T_m) \mid T_q$,

@@ -2,17 +2,17 @@
 
 Let $N$ be a positive integer, $\Gamma$ a group of level $N$, $X = \mathfrak{H}^*/\Gamma$ the compact Riemann surface of
 the [modular curve page](../../../../NumberTheory/modular-forms-q-series/modular-forms/modular-curve-of-a-group-of-level-n.md),
-and $f \mapsto \omega_f$ the isomorphism of $S_2(\Gamma)$ onto the holomorphic differentials $\Omega^1(X)$ of
-[weight-two cusp forms as holomorphic differentials](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md).
+and, for $f \in S_2(\Gamma)$, $\omega_f$ the meromorphic differential on $X$ whose pullback to $\mathfrak{H}$ is $f(z)\,dz$,
+as in [weight-two modular forms and meromorphic differentials](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md).
 Let $\alpha \in \mathrm{GL}_2(\mathbb{Q})$ with $\det \alpha > 0$, let $\Gamma_\alpha = \Gamma \cap \alpha^{-1} \Gamma \alpha$,
 $X_\alpha = \mathfrak{H}^*/\Gamma_\alpha$, and let $\pi_1, \pi_2 \colon X_\alpha \to X$ be the holomorphic maps induced by
 $z \mapsto z$ and $z \mapsto \alpha z$, as on the
 [Hecke endomorphisms page](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-endomorphisms-of-the-modular-jacobian.md).
-Write $\pi_2^* \colon \Omega^1(X) \to \Omega^1(X_\alpha)$ for the pullback of differentials and
-$\mathrm{Tr}_{\pi_1} \colon \Omega^1(X_\alpha) \to \Omega^1(X)$ for the trace along $\pi_1$: if
-$\Gamma = \bigsqcup_i \Gamma_\alpha \beta_i$ and $\eta \in \Omega^1(X_\alpha)$ pulls back to $\mathfrak{H}$ as $h(z)\,dz$, then
-$\mathrm{Tr}_{\pi_1} \eta$ is the holomorphic differential on $X$ whose pullback to $\mathfrak{H}$ is
-$\sum_i h(\beta_i z)\, d(\beta_i z)$. Then, for the operator $[\Gamma \alpha \Gamma]_2$ of the
+Write $\pi_2^*$ for the pullback of meromorphic differentials from $X$ to $X_\alpha$ and $\mathrm{Tr}_{\pi_1}$ for the
+trace along $\pi_1$ of meromorphic differentials on $X_\alpha$: if $\Gamma = \bigsqcup_i \Gamma_\alpha \beta_i$ and $\eta$ is a
+meromorphic differential on $X_\alpha$ that pulls back to $\mathfrak{H}$ as $h(z)\,dz$, then $\mathrm{Tr}_{\pi_1} \eta$ is the
+meromorphic differential on $X$ whose pullback to $\mathfrak{H}$ is $\sum_i h(\beta_i z)\, d(\beta_i z)$. Then, for the
+operator $[\Gamma \alpha \Gamma]_2$ of the
 [Hecke operators page](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-operators-of-level-n.md),
 
 $$\omega_{f \mid [\Gamma \alpha \Gamma]_2} = \mathrm{Tr}_{\pi_1}\bigl(\pi_2^* \omega_f\bigr) \qquad (f \in S_2(\Gamma)).$$
@@ -27,7 +27,7 @@ where $\Gamma \alpha \Gamma = \bigsqcup_i \Gamma \alpha \beta_i$.
 
 - [Modular curve of a group of level $N$ and its standard model over $\mathbb{Q}$](../../../../NumberTheory/modular-forms-q-series/modular-forms/modular-curve-of-a-group-of-level-n.md),
   for the compact Riemann surfaces $\mathfrak{H}^*/\Gamma$ and $\mathfrak{H}^*/\Gamma_\alpha$
-- [Weight-two cusp forms as holomorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
+- [Weight-two modular forms and meromorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
   for $\omega_f$
 - [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-operators-of-level-n.md),
   for $[\Gamma \alpha \Gamma]_2$
@@ -39,7 +39,7 @@ where $\Gamma \alpha \Gamma = \bigsqcup_i \Gamma \alpha \beta_i$.
 - [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](../../../../NumberTheory/modular-forms-q-series/modular-forms/hecke-operators-of-level-n.md),
   for $f \mid [\Gamma \alpha \Gamma]_2 = \sum_\nu f \mid_2 \alpha_\nu$ over any decomposition
   $\Gamma \alpha \Gamma = \bigsqcup_\nu \Gamma \alpha_\nu$
-- [Weight-two cusp forms as holomorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
+- [Weight-two modular forms and meromorphic differentials on $\mathfrak{H}^*/\Gamma$](../cusp-forms-as-one-forms-steps/weight-two-cusp-forms-as-holomorphic-differentials.md),
   for the injectivity of $f \mapsto \omega_f$ and of the pullback to $\mathfrak{H}$
 
 ## Expansion
@@ -53,8 +53,8 @@ This node is still to be broken down. A good expansion states and links:
   $(f \mid [\beta]_2)(z) = \det(\beta)\,(c z + d)^{-2} f(\beta z)$ of Shimura (1973), p. 527;
 - the computation of $\mathrm{Tr}_{\pi_1}(\pi_2^* \omega_f)$ on $\mathfrak{H}$: $\pi_2^* \omega_f$ pulls back to
   $f(\alpha z)\, d(\alpha z)$, and the trace sums its pullbacks along the $\beta_i$;
-- that $\mathrm{Tr}_{\pi_1}$ is well defined, independent of the $\beta_i$ and holomorphic, including at the branch
-  points of $\pi_1$, the elliptic points and the cusps.
+- that $\mathrm{Tr}_{\pi_1}$ is well defined and independent of the $\beta_i$: the sum is invariant under $\Gamma$ and
+  meromorphic at the cusps.
 
 ## Sources
 
