@@ -6,6 +6,28 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -/
 
+/-
+Portions of this file are adapted from:
+
+`Definitions/Def_CuspForm_PrimitiveFormGamma1.lean`
+(https://github.com/anthropics/fermats-last-theorem):
+Compared with the source files at commit
+`6e837e75355538c7f80bab5b956861e86c4eacc2`.
+Copyright (c) 2026 Anthropic, PBC. All rights reserved.
+Licensed under the Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0).
+The upstream NOTICE also credits:
+Mathlib — https://github.com/leanprover-community/mathlib4
+Copyright (c) the respective Mathlib authors, as recorded in the headers of the
+Mathlib source files.
+Released under the Apache License, Version 2.0.
+The source is machine-generated proof code built around a proof-extraction
+framework. The adapted portions are the two formulas of the transformation law in
+`ModularForm.HasNebentypus` and of the recurrence in `ModularForm.SatisfiesHeckeRecurrence`,
+taken from `CuspForm.HasNebentypus` and `CuspForm.IsEigenformWith` of
+`MathlibExt/NumberTheory/ModularForms/EigenformWith.lean`, which carries the same
+attribution, with that machinery removed.
+-/
+
 module
 
 public import MathlibExt.NumberTheory.ModularForms.EigenformWith
@@ -24,8 +46,11 @@ This file defines:
 * `ModularForm.HasNebentypus ε f`: the transformation law of type `(k, ε)` for a modular form
   `f : ModularForm (Gamma1 N) k`, the same condition as `CuspForm.HasNebentypus` for cusp forms;
 * `ModularForm.typeSubmodule N k ε`: the `ℂ`-subspace of the modular forms of type `(k, ε)`;
-* `ModularForm.IsHeckeEigenvector ε f a`: `f ≠ 0` and `f | T_p = a_p f` for every prime `p ∤ N`,
-  with `T_p` given on `q`-expansions by Deligne–Serre's formula (1.6.1).
+* `ModularForm.SatisfiesHeckeRecurrence ε f a`: the `q`-coefficients of `f` satisfy the
+  recurrence `c_{pn} + ε(p) p^{k-1} c_{n/p} = a_p c_n` of Deligne–Serre's formula (1.6.1) for
+  every prime `p ∤ N`; for `f` of type `(k, ε)` this is `f | T_p = a_p f`;
+* `ModularForm.IsHeckeEigenvector ε f a`: `f` has type `(k, ε)`, `f ≠ 0` and
+  `f | T_p = a_p f` for every prime `p ∤ N`.
 
 Deligne and Serre assume `ε(-1) = (-1) ^ k`: otherwise the transformation law for `-1 ∈ Γ₀(N)`
 forces `f = 0` (`ModularForm.HasNebentypus.eq_zero_of_ne`).
@@ -124,26 +149,42 @@ theorem HasNebentypus.eq_zero_of_ne {ε : DirichletCharacter ℂ N} {f : Modular
     rw [sub_mul, one_mul, ← h', sub_self]
   simpa [sub_eq_zero, Ne.symm hprod] using this
 
-/-- **Eigenvectors of the Hecke operators `T_p`, `p ∤ N`, on forms of type `(k, ε)`.** For a
-prime $p \nmid N$ and a modular form $f = \sum_{n \ge 0} c_n q^n$ of type $(k, \varepsilon)$ on
-$\Gamma_0(N)$, Deligne and Serre's formula (1.6.1) is
+/-- **The Hecke recurrence of Deligne–Serre's formula (1.6.1).** For a prime $p \nmid N$ and a
+modular form $f = \sum_{n \ge 0} c_n q^n$ of type $(k, \varepsilon)$ on $\Gamma_0(N)$, Deligne and
+Serre's formula (1.6.1) is
 $$f|T_p = \sum_{n \ge 0} c_{pn} q^n + \varepsilon(p)\, p^{k-1} \sum_{n \ge 0} c_n q^{pn}.$$
-The form $f$ is an eigenvector of the $T_p$, $p \nmid N$, with eigenvalues $a_p$ if $f \ne 0$ and
-$f|T_p = a_p f$ for every prime $p \nmid N$, that is,
-$$c_{pn} + \varepsilon(p)\, p^{k-1} c_{n/p} = a_p c_n \qquad \text{for every } n \ge 0,$$
+The coefficients of $f$ satisfy the Hecke recurrence with numbers $a_p$ if
+$$c_{pn} + \varepsilon(p)\, p^{k-1} c_{n/p} = a_p c_n \qquad \text{for every prime } p \nmid N
+\text{ and every } n \ge 0,$$
 where $c_{n/p} = 0$ when $p \nmid n$. Here $c_n$ is `ModularFormClass.qCoeff f n`, the
-coefficient of $q^n$, $q = e^{2\pi i z}$. The definition does not ask $f$ to have type
-$(k, \varepsilon)$; Deligne and Serre apply it to forms of that type.
+coefficient of $q^n$, $q = e^{2\pi i z}$. For $f$ of type $(k, \varepsilon)$ this says
+$f|T_p = a_p f$; the definition does not ask $f$ to have that type, and without it the recurrence
+is not an eigenvector condition (a nonzero constant of weight $0$ satisfies it for a nontrivial
+$\varepsilon$, with $a_p = 1 + \varepsilon(p)/p$).
 
 Source: P. Deligne and J.-P. Serre, *Formes modulaires de poids 1*, Ann. Sci. École Norm. Sup. (4)
-7 (1974), 507–530, §1.6, formula (1.6.1), p. 509; the eigenvectors of their Théorème 4.1, p. 513,
-and Proposition 5.1, p. 518, are forms that are not identically zero. -/
-def IsHeckeEigenvector (ε : DirichletCharacter ℂ N) (f : ModularForm (Gamma1 N) k)
+7 (1974), 507–530, §1.6, formula (1.6.1), p. 509. -/
+def SatisfiesHeckeRecurrence (ε : DirichletCharacter ℂ N) (f : ModularForm (Gamma1 N) k)
     (a : ℕ → ℂ) : Prop :=
-  f ≠ 0 ∧ ∀ p : ℕ, p.Prime → ¬ p ∣ N → ∀ n : ℕ,
+  ∀ p : ℕ, p.Prime → ¬ p ∣ N → ∀ n : ℕ,
     qCoeff f (p * n) + ε (p : ZMod N) * (p : ℂ) ^ (k - 1) *
         (if p ∣ n then qCoeff f (n / p) else 0) =
       a p * qCoeff f n
+
+/-- **Eigenvectors of the Hecke operators `T_p`, `p ∤ N`, on forms of type `(k, ε)`.** A modular
+form $f$ of weight $k$ on $\Gamma_1(N)$ is an eigenvector of the $T_p$, $p \nmid N$, on the space
+of forms of type $(k, \varepsilon)$ on $\Gamma_0(N)$, with eigenvalues $a_p$, if $f$ has type
+$(k, \varepsilon)$ (`ModularForm.HasNebentypus`), $f \ne 0$, and $f|T_p = a_p f$ for every prime
+$p \nmid N$, with $T_p$ given by Deligne and Serre's formula (1.6.1), that is, the coefficients of
+$f$ satisfy `ModularForm.SatisfiesHeckeRecurrence ε f a`.
+
+Source: P. Deligne and J.-P. Serre, *Formes modulaires de poids 1*, Ann. Sci. École Norm. Sup. (4)
+7 (1974), 507–530, §1.6, formula (1.6.1), p. 509, for $T_p$ on forms of type $(k, \varepsilon)$;
+the eigenvectors of their Théorème 4.1, p. 513, and Proposition 5.1, p. 518, are forms that are
+not identically zero. -/
+def IsHeckeEigenvector (ε : DirichletCharacter ℂ N) (f : ModularForm (Gamma1 N) k)
+    (a : ℕ → ℂ) : Prop :=
+  HasNebentypus ε f ∧ f ≠ 0 ∧ SatisfiesHeckeRecurrence ε f a
 
 end ModularForm
 
