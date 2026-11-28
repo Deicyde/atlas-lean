@@ -74,6 +74,14 @@ example (hL : NPHard L₁) (h : PolyManyOneRed L₁ L₂) : NPHard L₂ :=
 
 example (hL : L ∈ NP) (hHard : NPHard L) : NPComplete L := NPComplete.mk hL hHard
 
+-- A reduction from one NP-complete source captures exactly the hardness half, not membership.
+example (hS : NPComplete L₁) : NPHard L₂ ↔ PolyManyOneRed L₁ L₂ :=
+  ⟨fun h => h L₁ hS.mem_NP, NPHard.of_polyManyOneRed hS.npHard⟩
+
+example (hS : NPComplete L₁) : NPComplete L₂ ↔ L₂ ∈ NP ∧ PolyManyOneRed L₁ L₂ :=
+  ⟨fun h => ⟨h.mem_NP, h.npHard L₁ hS.mem_NP⟩,
+    fun h => NPComplete.mk h.1 (NPHard.of_polyManyOneRed hS.npHard h.2)⟩
+
 example (h : NPComplete L) : L ∈ NP := h.mem_NP
 example (h : NPComplete L) : NPHard L := h.npHard
 
