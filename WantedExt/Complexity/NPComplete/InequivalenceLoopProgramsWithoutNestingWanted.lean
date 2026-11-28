@@ -67,11 +67,18 @@ reduction from every language in `NP`
 -/
 
 /-- An instruction `(op, x, y)`: `x ← y` (`op = 0`), `x ← x + 1` (`1`), `x ← 0` (`2`),
-`loop x` (`3`), or `end` (`4`). -/
+`loop x` (`3`), or `end` (`4`). The raw type is all of `ℕ × ℕ × ℕ`, not only the five opcodes:
+an opcode `≥ 5` is representable and changes nothing when run (`step` changes the store only
+for opcodes `0`, `1` and `2`), and the operands `x` and `y` may be any natural numbers;
+`WellFormed` requires opcodes `< 5` and operands `< n`. -/
 abbrev Instruction := ℕ × ℕ × ℕ
 
 /-- An instance: the number `n` of variables, the input variables `Y`, the output variable
-`x₀`, and the programs `P₁` and `P₂`. -/
+`x₀`, and the programs `P₁` and `P₂`. The raw type is any such tuple: `Y` is any list of
+natural numbers (an entry may repeat or be `≥ n`), `x₀` may be `≥ n`, and each program is any
+list of instructions (any opcodes and operands, and `loop` and `end` in any order);
+`WellFormed` requires `Y` without repetitions and with entries `< n`, `x₀ < n`, opcodes `< 5`,
+operands `< n` and, in each program, unnested, matched `loop`/`end` pairs. -/
 abbrev InequivalenceLoopProgramsInstance :=
   ℕ × List ℕ × ℕ × List Instruction × List Instruction
 
