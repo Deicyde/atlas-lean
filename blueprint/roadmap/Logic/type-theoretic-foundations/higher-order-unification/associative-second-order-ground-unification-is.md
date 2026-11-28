@@ -2,9 +2,9 @@
 
 Second-order unification modulo associativity is undecidable already for problems with a single function variable and no individual variables, over a signature with one constant and one binary associative symbol.
 
-**Theorem (Cerna and Parsert).** There is an $n \geq 1$ such that $n$-ASOGU is undecidable: no algorithm decides whether an [$n$-second-order ground $\mathcal{A}$-unification problem](second-order-unification-problems.md) has a unifier (Theorem 4.12).
+**Theorem (Cerna and Parsert).** Over a signature containing a constant $a$ and a binary symbol $g$ that is associative, $\mathcal{A} = \{g(x, g(y,z)) \approx g(g(x,y),z)\}$, there is an $n \geq 1$ such that $n$-ASOGU is undecidable: no algorithm decides whether an [$n$-second-order ground $\mathcal{A}$-unification problem](second-order-unification-problems.md) has a unifier (Theorem 4.12).
 
-The proof uses a signature containing a constant $a$ and a binary symbol $g$ with $\mathcal{A} = \{g(x, g(y,z)) \approx g(g(x,y),z)\}$, and the source notes that, with $a$ the only constant, only the weaker *power associativity* $g(x, g(x,x)) \approx g(g(x,x),x)$ is needed. The source leaves open whether second-order ground unification without associative symbols is decidable, and remarks that the arity $n$ of the function variable produced by the reduction is at least $9$.
+A signature needs a constant, since without one there are no second-order ground terms at all, and the source notes that, with $a$ the only constant, only the weaker *power associativity* $g(x, g(x,x)) \approx g(g(x,x),x)$ is needed. The source leaves open whether second-order ground unification without associative symbols is decidable, and remarks that the arity $n$ of the function variable produced by the reduction is at least $9$.
 
 ## Depends on
 

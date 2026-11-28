@@ -2,12 +2,14 @@
 
 For every countably infinite complete subalgebra of the nilpotent minimum algebra on $[0,1]$, the set of first-order tautologies is not recursively enumerable, and for most infinite complete subalgebras even the monadic tautologies are undecidable; in contrast, finite NM-chains have recursively axiomatizable first-order logics.
 
-**Theorem (Bianchi).** For the [first-order nilpotent minimum logics](first-order-nilpotent-minimum-logic.md):
+**Theorem (Bianchi).** For the [first-order nilpotent minimum logics](first-order-nilpotent-minimum-logic.md), over a countable language with countably many predicate symbols of every arity (countably many unary ones for the monadic fragment):
 
 1. If $\mathcal{A}$ is a countably infinite topologically closed (equivalently, countably infinite complete) subalgebra of $[0,1]_{\mathrm{NM}}$, then $\mathrm{TAUT}_{\mathcal{A}}\forall$ is not recursively enumerable (Theorem 18). In particular this holds for $\mathcal{A} \in \{NM_\infty, NM_\infty^-, NM'_\infty\}$ (Corollary 6).
 2. If $\mathcal{A}$ is an infinite complete subalgebra of $[0,1]_{\mathrm{NM}}$ other than $NM_\infty$ and $NM_\infty^-$, then $\mathrm{monTAUT}_{\mathcal{A}}\forall$ is undecidable (Theorem 21); in particular $\mathrm{monTAUT}_{NM'_\infty}\forall$ is undecidable (Corollary 7).
 
 The source prints Theorem 18 for countable complete subalgebras without the word "infinite", but the hypothesis is needed: every finite NM-chain $NM_n$ is a complete subalgebra of $[0,1]_{\mathrm{NM}}$, and for finite NM-chains the first-order tautologies are recursively axiomatizable (Theorem 14), so recursively enumerable; for $NM_2 = \{0, 1\}$ they are the classical first-order validities. The monadic tautologies of finite NM-chains are decidable (Theorem 19). The whole chain $[0,1]_{\mathrm{NM}}$ is uncountable, and its first-order tautologies are the theorems of the recursively axiomatized logic $\mathrm{NM}\forall$ (Theorem 3 of the source), so they are recursively enumerable. The cases $NM_\infty$ and $NM_\infty^-$ in clause 2, and the arithmetical complexity of $\mathrm{TAUT}_{NM'^-_\infty}\forall$, are left open by the source.
+
+The source fixes a countable language (Section 2.3 and Remark 3) without stating a richness condition, but the reductions behind the theorem introduce fresh predicate symbols, so the language must supply them; with no predicate symbols every formula is a propositional combination of constants and the tautology problem is decidable.
 
 ## Depends on
 

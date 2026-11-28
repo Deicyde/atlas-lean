@@ -1,15 +1,15 @@
 # Second-order unification with two second-order variables is undecidable
 
-Second-order unification stays undecidable with only two second-order variables and no first-order variables, and with a single second-order variable whose arguments are ground when first-order variables are allowed.
+Over a suitable finite signature, for instance one with a single constant and a single function symbol of arity greater than one, second-order unification stays undecidable with only two second-order variables and no first-order variables, and with a single second-order variable whose arguments are ground when first-order variables are allowed.
 
-**Theorem (Levy and Veanes).** [Second-order unification](second-order-unification-problems.md), with function variables as the second-order variables and individual variables as the first-order variables, is undecidable for each of the following fragments:
+**Theorem (Levy and Veanes).** There is a finite signature with at least one constant, for instance one consisting of a single constant and a single function symbol of arity greater than one (the remark after Corollary 16), over which [second-order unification](second-order-unification-problems.md), with function variables as the second-order variables and individual variables as the first-order variables, is undecidable for each of the following fragments:
 
 1. problems with two second-order variables and no first-order variables;
 2. problems with one second-order variable, applied only to ground arguments, together with first-order variables.
 
 Both are cases of Corollary 16 of the source, which proves undecidability, for some fixed $n$, already for systems in which all arguments of variables are ground terms of depth less than $n$, all variables have arity less than $n$, second-order variables occur at most five times, and either there is a single second-order variable or there are at most two second-order variables and no first-order variables.
 
-Levy and Veanes also translate arbitrary second-order equations into equations with a single second-order variable plus additional first-order variables (Theorem 9 of the source); with Farmer's theorem this gives undecidability with a single unary second-order variable (Corollary 11). So the number of second-order variables plays only a minor role for decidability, as Levy notes. Ganzinger, Jacquemard and Veanes showed undecidability for one second-order variable with at least eight first-order variables. Cerna and Parsert show that associative second-order unification is undecidable already with one second-order variable and no first-order variables.
+Levy and Veanes also translate arbitrary second-order equations into equations with a single second-order variable plus additional first-order variables (Theorem 9 of the source); with Farmer's theorem this gives undecidability with a single unary second-order variable (Corollary 11), which the source says can be sharpened to signatures whose only function symbols are a constant and a binary function symbol. Signatures are assumed to contain a constant (Section 2), and some symbol of arity at least two is needed: second-order unification over unary function symbols only (monadic second-order unification) is decidable (Section 7, item 3). So the number of second-order variables plays only a minor role for decidability, as Levy notes. Ganzinger, Jacquemard and Veanes showed undecidability for one second-order variable with at least eight first-order variables. Cerna and Parsert show that associative second-order unification is undecidable already with one second-order variable and no first-order variables.
 
 ## Depends on
 
