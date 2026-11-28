@@ -12,7 +12,9 @@ public import Mathlib.Data.ZMod.Basic
 public import Mathlib.GroupTheory.Index
 public import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 import Mathlib.Algebra.Field.ZMod
+import Mathlib.LinearAlgebra.Matrix.ElementaryRowOperations
 import Mathlib.LinearAlgebra.Matrix.Notation
+import Mathlib.LinearAlgebra.Matrix.Swap
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.LinearCombination
 
@@ -22,9 +24,9 @@ import Mathlib.Tactic.LinearCombination
 * `Matrix.GeneralLinearGroup.not_surjective_of_isMulCommutative_of_index_le_two`: for an odd
   prime `p`, no group with an abelian subgroup of index at most `2` maps onto `GL₂(ℤ/pℤ)`.
 * `Matrix.GeneralLinearGroup.eq_bot_or_eq_top_of_forall_mulVec_mem` and
-  `Matrix.GeneralLinearGroup.exists_mulVec_notMem_of_card_eq`: the only subgroups of
-  `(ℤ/pℤ)²` stable under `GL₂(ℤ/pℤ)` are `0` and `(ℤ/pℤ)²`; in particular no subgroup of order `p`
-  is stable.
+  `Matrix.GeneralLinearGroup.exists_mulVec_notMem_of_card_eq`: for every prime `p` (including `2`),
+  the only subgroups of `(ℤ/pℤ)²` stable under `GL₂(ℤ/pℤ)` are `0` and `(ℤ/pℤ)²`; in particular
+  no subgroup of order `p` is stable.
 
 Both are used in B. H. Gross, *Kolyvagin's work on modular elliptic curves*, 1991: the proof of
 Lemma 4.3, p. 242, and the proof of Proposition 9.3, p. 250.
@@ -47,26 +49,6 @@ set_option autoImplicit false
 namespace Matrix.GeneralLinearGroup
 
 variable {p : ℕ}
-
-/-- The shear `[[1, 1], [0, 1]]`. -/
-private def upper : GL (Fin 2) (ZMod p) :=
-  ⟨!![1, 1; 0, 1], !![1, -1; 0, 1], by simp [Matrix.one_fin_two],
-    by simp [Matrix.one_fin_two]⟩
-
-/-- The shear `[[1, 0], [1, 1]]`. -/
-private def lower : GL (Fin 2) (ZMod p) :=
-  ⟨!![1, 0; 1, 1], !![1, 0; -1, 1], by simp [Matrix.one_fin_two],
-    by simp [Matrix.one_fin_two]⟩
-
-/-- The swap `[[0, 1], [1, 0]]`. -/
-private def swap : GL (Fin 2) (ZMod p) :=
-  ⟨!![0, 1; 1, 0], !![0, 1; 1, 0], by simp [Matrix.one_fin_two],
-    by simp [Matrix.one_fin_two]⟩
-
-private theorem mulVec_fin_two (a b c d : ZMod p) (x : Fin 2 → ZMod p) :
-    !![a, b; c, d] *ᵥ x = ![a * x 0 + b * x 1, c * x 0 + d * x 1] := by
-  ext i
-  fin_cases i <;> simp [Matrix.mulVec, dotProduct, Fin.sum_univ_two]
 
 /-- **`GL₂(ℤ/pℤ)` is not a quotient of a group of dihedral type.** Let `p` be an odd prime and
 let `𝒢` be a group with an abelian subgroup `A` of index at most `2` (`A.index ≠ 0` says the index
@@ -95,9 +77,18 @@ theorem not_surjective_of_isMulCommutative_of_index_le_two [Fact p.Prime] (hp : 
     congr 1
     exact congrArg Subtype.val
       ((IsMulCommutative.is_comm (M := A)).comm ⟨g ^ 2, hsq g⟩ ⟨h ^ 2, hsq h⟩)
+  -- the shears `[[1, 1], [0, 1]]` and `[[1, 0], [1, 1]]`
+  have hu : (transvection (0 : Fin 2) 1 (by decide) (1 : ZMod p) :
+      Matrix (Fin 2) (Fin 2) (ZMod p)) = !![1, 1; 0, 1] := by
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp [transvection, Matrix.transvection]
+  have hl : (transvection (1 : Fin 2) 0 (by decide) (1 : ZMod p) :
+      Matrix (Fin 2) (Fin 2) (ZMod p)) = !![1, 0; 1, 1] := by
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp [transvection, Matrix.transvection]
   have h := congrArg (fun x : GL (Fin 2) (ZMod p) => (x : Matrix (Fin 2) (Fin 2) (ZMod p)) 0 0)
-    (hcomm upper lower)
-  simp only [Units.val_mul, sq, upper, lower, Matrix.mul_fin_two] at h
+    (hcomm (transvection (0 : Fin 2) 1 (by decide) 1) (transvection (1 : Fin 2) 0 (by decide) 1))
+  simp only [Units.val_mul, sq, hu, hl, Matrix.mul_fin_two] at h
   have h4 : ((4 : ℕ) : ZMod p) = 0 := by
     push_cast
     simp only [Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero, Matrix.empty_val',
@@ -124,25 +115,24 @@ theorem eq_bot_or_eq_top_of_forall_mulVec_mem [Fact p.Prime]
   right
   obtain ⟨⟨v, hv⟩, hne⟩ := AddSubgroup.ne_bot_iff_exists_ne_zero.mp hb
   have hne : v ≠ 0 := fun h => hne (Subtype.ext h)
-  have hsmul : ∀ c : ZMod p, ∀ x ∈ W, c • x ∈ W := by
-    intro c x hx
-    rw [← ZMod.natCast_zmod_val c, Nat.cast_smul_eq_nsmul]
-    exact AddSubgroup.nsmul_mem W hx _
+  have hsmul : ∀ c : ZMod p, ∀ x ∈ W, c • x ∈ W := fun c _ hx => zmod_smul_mem hx c
   -- `u x - x = (x 1, 0)` and `s x = (x 1, x 0)`.
   have hu : ∀ x ∈ W, ![x 1, 0] ∈ W := by
     intro x hx
-    have e : ![x 1, 0] = (upper : GL (Fin 2) (ZMod p)) *ᵥ x - x := by
-      simp only [upper, mulVec_fin_two]
+    have e : ![x 1, 0] = (transvection (0 : Fin 2) 1 (by decide) (1 : ZMod p) :
+        Matrix (Fin 2) (Fin 2) (ZMod p)) *ᵥ x - x := by
       ext i
-      fin_cases i <;> simp
+      fin_cases i <;>
+        simp [transvection, Matrix.transvection, Matrix.mulVec, Matrix.vec2_dotProduct,
+          Matrix.add_apply, Matrix.one_apply]
     rw [e]
     exact W.sub_mem (hW _ x hx) hx
   have hs : ∀ x ∈ W, ![x 1, x 0] ∈ W := by
     intro x hx
-    have e : ![x 1, x 0] = (swap : GL (Fin 2) (ZMod p)) *ᵥ x := by
-      simp only [swap, mulVec_fin_two]
+    have e : ![x 1, x 0] =
+        (swap (ZMod p) (0 : Fin 2) 1 : Matrix (Fin 2) (Fin 2) (ZMod p)) *ᵥ x := by
       ext i
-      fin_cases i <;> simp
+      fin_cases i <;> simp [swap, Matrix.swap, Matrix.mulVec, Matrix.vec2_dotProduct]
     rw [e]
     exact hW _ x hx
   -- Some `(c, 0)` with `c ≠ 0` lies in `W`.
