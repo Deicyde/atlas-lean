@@ -18,15 +18,19 @@ $\mathfrak{p}$ in the [minimal discriminant](minimal-discriminant.md) $\Delta_{E
 $$\sum_{\mathfrak{p}} \operatorname{ord}_\mathfrak{p}(\beta_E) \log \#(\mathcal{O}_L / \mathfrak{p})
   = \log N_{L/\mathbb{Q}}(\Delta_{E/L}).$$
 
-*Proof* (Silverman, p. 255). Fix $\mathfrak{p}$ and a Weierstrass equation $W_\mathfrak{p}$ of $E$
+*Proof* (Silverman, p. 255; Conrad, Theorems 2.6 and 5.5). Fix $\mathfrak{p}$ and a Weierstrass equation $W_\mathfrak{p}$ of $E$
 minimal at $\mathfrak{p}$, with discriminant $\Delta_\mathfrak{p}$ and invariant differential
 $\alpha_\mathfrak{p}$, so that $v_\mathfrak{p}(\Delta_\mathfrak{p}) = v_\mathfrak{p}(\Delta_{E/L})$.
 The module $\omega \otimes_{\mathcal{O}_L} \mathcal{O}_{L,\mathfrak{p}}$ is the module
 $\varepsilon^* \Omega^1$ of the Néron model of $E$ over $\mathcal{O}_{L,\mathfrak{p}}$ (the Néron
-model over $\mathcal{O}_L$ localizes), and $\alpha_\mathfrak{p}$ generates it (minimal Weierstrass
-models give the identity component of the Néron model); so $\alpha_\mathfrak{p}^{\otimes 12}$
+model over $\mathcal{O}_L$ localizes), and $\alpha_\mathfrak{p}$ generates it, whatever the reduction
+type of $E$ at $\mathfrak{p}$: the smooth locus of the minimal Weierstrass model is the identity
+component of the Néron model (Conrad, Theorem 5.5), an open subgroup containing the zero section,
+and on that smooth locus $\Omega^1$ is free on the invariant differential of the equation (Conrad,
+Theorem 2.6 and Definition 2.7); so $\alpha_\mathfrak{p}^{\otimes 12}$
 generates $\omega^{\otimes 12} \otimes_{\mathcal{O}_L} \mathcal{O}_{L,\mathfrak{p}}$. Since $\beta_E$
-does not depend on the Weierstrass equation,
+does not depend on the Weierstrass equation (the transformation laws of the discriminant and the
+invariant differential; Conrad, p. 6),
 $\beta_E = \Delta_\mathfrak{p} \, \alpha_\mathfrak{p}^{\otimes 12}$, and
 $\operatorname{ord}_\mathfrak{p}(\beta_E) = v_\mathfrak{p}(\Delta_\mathfrak{p})$. Summing over
 $\mathfrak{p}$ gives $\log \prod_\mathfrak{p} \#(\mathcal{O}_L/\mathfrak{p})^{v_\mathfrak{p}(\Delta_{E/L})} = \log N_{L/\mathbb{Q}}(\Delta_{E/L})$.
@@ -60,4 +64,15 @@ $\mathfrak{p}$ gives $\log \prod_\mathfrak{p} \#(\mathcal{O}_L/\mathfrak{p})^{v_
   $\log \#(R_v / R_v \Delta_v) = \log \| N_{K/\mathbb{Q}} \Delta_{E/K} \|_v$ of $v$ to
   $\deg(\omega^{\otimes 12})$, and the total
   $\frac{1}{12 [K : \mathbb{Q}]} \log |N_{K/\mathbb{Q}} \Delta_{E/K}|$ of the finite places in
-  $h(E/K)$.
+  $h(E/K)$ (cited as stated).
+- B. Conrad, "Minimal models for elliptic curves", notes (version of 21 November 2015),
+  <http://math.stanford.edu/~conrad/papers/minimalmodel.pdf>: Theorem 2.6 and Definition 2.7, p. 3
+  ($\Omega^1$ of the smooth locus $W^{\mathrm{sm}}$ of an integral Weierstrass model $W$ is free on
+  an invariant differential); p. 6, the discussion before Corollary 2.10 (the preferred invariant
+  differential $\omega$ of a planar equation, and the independence of $\Delta \omega^{\otimes 12}$
+  from the equation, by the transformation laws); Theorem 5.5, p. 14 (for a minimal Weierstrass
+  model $W$ and any reduction type, the canonical map $W^{\mathrm{sm}} \to N(E)$ is an isomorphism
+  onto the identity component $N(E)^0$). These give the local identity
+  $\beta_E = \Delta_\mathfrak{p} \alpha_\mathfrak{p}^{\otimes 12}$ with $\alpha_\mathfrak{p}$ a
+  generator of $\varepsilon^* \Omega^1$ of the Néron model at every maximal ideal, additive
+  reduction included.

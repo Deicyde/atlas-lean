@@ -34,6 +34,8 @@ up to unique isomorphism.
 
 ## Depends on
 
+- [Ring of integers](../../../NumberTheory/algebraic-number-theory/number-fields-embeddings/ring-of-integers.md), for the base
+  $\operatorname{Spec} \mathcal{O}_L$ and its localizations
 - [Néron model of an abelian variety](../neron-model.md), for the Néron model over a discrete valuation
   ring and good reduction
 - [Abelian scheme](../abelian-scheme.md), for abelian varieties and abelian schemes

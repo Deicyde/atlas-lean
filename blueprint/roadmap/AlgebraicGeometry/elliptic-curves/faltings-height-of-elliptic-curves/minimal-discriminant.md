@@ -35,6 +35,10 @@ it carries the Weierstrass equations of one curve to those of the other.
 
 ## Depends on
 
+- [Ring of integers](../../../NumberTheory/algebraic-number-theory/number-fields-embeddings/ring-of-integers.md), for $\mathcal{O}_L$, in which the ideal
+  $\Delta_{E/L}$ is formed
+- [Absolute norm of an ideal](../../../RingTheory/dedekind-domains/ideal-absolute-norm.md), for
+  $N_{L/\mathbb{Q}}(\Delta_{E/L}) = \#(\mathcal{O}_L / \Delta_{E/L})$ and its product formula
 - [Variable changes transform the Weierstrass equation](../weierstrass-curves/equation-map-affine-coordinates-iff.md),
   for the Weierstrass equations of $E$ and the variable changes between them
 
