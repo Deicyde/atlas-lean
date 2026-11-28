@@ -13,6 +13,8 @@ public import Mathlib.Combinatorics.Enumerative.Stirling
 public import Mathlib.RingTheory.MvPolynomial.Symmetric.Defs
 public import MathlibExt.Combinatorics.Enumerative.HypersequenceElementarySymmetric
 public import MathlibExt.Combinatorics.Enumerative.HypersequenceMatrixB
+public import MathlibExt.Combinatorics.Enumerative.HypersequenceMatrixProduct
+public import MathlibExt.Combinatorics.Enumerative.HypersequenceShiftAtNegOne
 public import MathlibExt.Combinatorics.Enumerative.MitrinovicNumbers
 public import WantedExt.Combinatorics.Enumerative.HypersequenceWeightedSumsWanted
 
@@ -76,48 +78,6 @@ public theorem_wanted hyperseqB_inv_eq_hyperseqC_div_factorial (n j m : ℕ) :
         (alternatingBinomialPowerSum k m 1 (n + 1) / m.factorial) = (if j = m then 1 else 0) ∧
       ∑ k ∈ Finset.range (j + 1), alternatingBinomialPowerSum j k 1 (n + 1) / k.factorial *
         (hyperseqB n k m : ℂ) = if j = m then 1 else 0
-
-/-- **The product of Parisse's matrices B(n) and C(n).** For $n, j, m \in \mathbb{N}$ let
-$b_{j,i}(n) = (-1)^i e_{j-i}(n + 1, \dots, n + j)$ for $i \le j$ be the entries of Parisse's
-matrix $B(n)$, where $e_d$ is the elementary symmetric polynomial of degree $d$, and let
-$c_{i,m}(n) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k + n + 1)^i$ be the entries
-of $C(n)$. Then $\sum_{i=0}^{j} b_{j,i}(n)\, c_{i,m}(n)$ equals $j!$ if $j = m$ and $0$ otherwise.
-
-Source: Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted
-Sums II*, INTEGERS 26 (2026), Article A36,
-Corollary 2 (`integers-2026-A36-cor-2`). -/
-public theorem_wanted sum_hyperseqB_mul_hyperseqC (n j m : ℕ) :
-    ∑ i ∈ Finset.range (j + 1), (hyperseqB n j i : ℂ) * alternatingBinomialPowerSum i m 1 (n + 1) =
-      if j = m then (j.factorial : ℂ) else 0
-
-/-- **Parisse's coefficients at $n$ from their values at $-1$.** Let $n \in \mathbb{Z}$. For
-$j, k \in \mathbb{N}$ let $e_{j,k}(n)$ be the elementary symmetric polynomial of degree $k$ in
-$n + 1, \dots, n + j$, let $b_{j,k}(n) = (-1)^k e_{j,j-k}(n)$ for $k \le j$ and $b_{j,k}(n) = 0$
-for $k > j$, let
-$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k x + y)^\ell$ for complex $x, y$, with
-$0^0 = 1$, and let
-$c_{\ell,m}(n) = p_{\ell,m}(1, n + 1) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k + n + 1)^\ell$. Then
-$e_{j,k}(n) = \sum_{i=0}^{k} \binom{j - k + i}{i} (n + 1)^i e_{j,k-i}(-1)$ for all $k \le j$,
-$b_{j,k}(n) = \sum_{i=k}^{j} (-1)^{i-k} \binom{i}{k} (n + 1)^{i-k} b_{j,i}(-1)$ for all $j, k$,
-and $c_{\ell,m}(n) = \sum_{i=m}^{\ell} \binom{\ell}{i} (n + 1)^{\ell-i} c_{i,m}(-1)$ for all
-$\ell, m \in \mathbb{N}$.
-
-The first identity is stated only for $k \le j$; for $k > j$ the source's upper index
-$j - k + i$ of the binomial coefficient can be negative.
-
-Source: Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted
-Sums II*, INTEGERS 26 (2026), Article A36,
-Proposition 3 (`integers-2026-A36-prop-3`). -/
-public theorem_wanted hyperseq_entries_eq_sum_at_neg_one (n : ℤ) :
-    (∀ j k : ℕ, k ≤ j → ((Finset.Icc 1 j).val.map fun i : ℕ => n + i).esymm k =
-      ∑ i ∈ Finset.range (k + 1), ((j - k + i).choose i : ℤ) * (n + 1) ^ i *
-        ((Finset.Icc 1 j).val.map fun i : ℕ => (-1 : ℤ) + i).esymm (k - i)) ∧
-    (∀ j k : ℕ, hyperseqB n j k =
-      ∑ i ∈ Finset.Icc k j, (-1) ^ (i - k) * (i.choose k : ℤ) * (n + 1) ^ (i - k) *
-        hyperseqB (-1) j i) ∧
-    ∀ ℓ m : ℕ, alternatingBinomialPowerSum ℓ m 1 (n + 1) =
-      ∑ i ∈ Finset.Icc m ℓ, (ℓ.choose i : ℂ) * ((n : ℂ) + 1) ^ (ℓ - i) *
-        alternatingBinomialPowerSum i m 1 0
 
 end
 
