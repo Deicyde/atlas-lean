@@ -35,10 +35,4 @@ example {X Y : Scheme.{u}} (f : X ⟶ Y) [QuasiCompact f] :
   rintro ⟨x, hx⟩
   exact hx.mem_closed isClosed_closure (subset_closure ⟨x, rfl⟩)
 
-/-- The affine case: for a ring map `R →+* A`, a prime of `R` containing the kernel contains the
-contraction of a prime of `A`. -/
-example {R A : Type u} [CommRing R] [CommRing A] (φ : R →+* A) (p : PrimeSpectrum R)
-    (hp : RingHom.ker φ ≤ p.asIdeal) : ∃ q : PrimeSpectrum A, PrimeSpectrum.comap φ q ≤ p :=
-  PrimeSpectrum.exists_comap_le_of_ker_le φ p hp
-
 end MathlibExtTest.AlgebraicGeometry.ClosureQuasiCompactImage

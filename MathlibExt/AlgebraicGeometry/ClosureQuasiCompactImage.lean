@@ -13,8 +13,6 @@ public import Mathlib.AlgebraicGeometry.AffineScheme
 /-!
 # The closure of the image of a quasi-compact morphism
 
-* `PrimeSpectrum.exists_comap_le_of_ker_le`: for a ring map `φ : R →+* A` and a prime `p` of `R`
-  containing `ker φ`, some prime of `A` contracts into `p`.
 * `AlgebraicGeometry.Scheme.Hom.exists_specializes_of_mem_closure_range`: for a quasi-compact
   morphism of schemes `f : X ⟶ Y`, every point of the closure of the image of `f` is a
   specialization of a point of the image (Stacks project, Morphisms, Lemma 29.6.5, Tag 02JQ, for
@@ -22,7 +20,8 @@ public import Mathlib.AlgebraicGeometry.AffineScheme
 
 The proof reduces to an affine open `V` of `Y` and a finite affine open covering of `f⁻¹ V`, where
 the closure of the image of `Spec A → Spec R` is the zero locus of the kernel of `R → A`
-(`PrimeSpectrum.closure_range_comap`).
+(`PrimeSpectrum.closure_range_comap`), and a prime of `R` containing that kernel contains the
+contraction of a prime of `A` (`Ideal.exists_ideal_comap_le_prime`).
 -/
 
 @[expose] public section
@@ -30,20 +29,6 @@ the closure of the image of `Spec A → Spec R` is the zero locus of the kernel 
 open CategoryTheory TopologicalSpace
 
 universe u
-
-/-- For a ring map `φ : R →+* A` and a prime `p` of `R` containing the kernel of `φ`, there is a
-prime `q` of `A` whose contraction `φ⁻¹ q` is contained in `p`. -/
-theorem PrimeSpectrum.exists_comap_le_of_ker_le {R A : Type*} [CommRing R] [CommRing A]
-    (φ : R →+* A) (p : PrimeSpectrum R) (hp : RingHom.ker φ ≤ p.asIdeal) :
-    ∃ q : PrimeSpectrum A, PrimeSpectrum.comap φ q ≤ p := by
-  obtain ⟨q, hq, -, hdisj⟩ :=
-    Ideal.exists_le_prime_disjoint (⊥ : Ideal A) (p.asIdeal.primeCompl.map φ) <| by
-      rw [Set.disjoint_left]
-      rintro _ h0 ⟨x, hx, rfl⟩
-      exact hx (hp ((RingHom.mem_ker).2 ((Ideal.mem_bot).1 h0)))
-  refine ⟨⟨q, hq⟩, fun x hx ↦ ?_⟩
-  by_contra hxp
-  exact Set.disjoint_left.1 hdisj hx ⟨x, hxp, rfl⟩
 
 namespace AlgebraicGeometry
 
@@ -98,11 +83,12 @@ theorem Scheme.Hom.exists_specializes_of_mem_closure_range {X Y : Scheme.{u}} (f
     convert closure_mono hrange hp using 3
     rw [Spec.map_base]
     rfl
-  obtain ⟨q, hq⟩ := PrimeSpectrum.exists_comap_le_of_ker_le φ.hom p
+  have : p.asIdeal.IsPrime := p.isPrime
+  obtain ⟨Q, -, hQ, hle⟩ := Ideal.exists_ideal_comap_le_prime (f := φ.hom) p.asIdeal ⊥
     ((PrimeSpectrum.mem_zeroLocus _ _).1 hp')
-  let q' : Spec Γ(X, (i : X.Opens)) := q
+  let q' : Spec Γ(X, (i : X.Opens)) := ⟨Q, hQ⟩
   refine ⟨hi'.fromSpec q', ?_⟩
-  have hq' : Spec.map φ q' ⤳ p := (PrimeSpectrum.le_iff_specializes _ _).1 hq
+  have hq' : Spec.map φ q' ⤳ p := (PrimeSpectrum.le_iff_specializes _ _).1 hle
   exact key q' ▸ hq'.map hV.fromSpec.continuous
 
 end AlgebraicGeometry
