@@ -435,7 +435,7 @@ theorem adom_eval_subset [Fintype N] [Fintype A] [DecidableEq A] [DecidableEq D]
       change adom (Databases.select c (e.eval db)) ⊆ adomDB db ∪ e.consts
       have hsub : adom (Databases.select c (e.eval db)) ⊆ adom (e.eval db) := by
         unfold adom
-        exact Finset.biUnion_subset_biUnion_of_subset_left (Finset.filter_subset _ _)
+        exact Finset.biUnion_subset_biUnion_of_subset_left _ (Finset.filter_subset _ _)
       exact hsub.trans ih
   | hproject T e ih =>
       change adom (Databases.project T (e.eval db)) ⊆ adomDB db ∪ e.consts
@@ -495,7 +495,7 @@ theorem adom_eval_subset [Fintype N] [Fintype A] [DecidableEq A] [DecidableEq D]
       change adom (e.eval db \ e'.eval db) ⊆ adomDB db ∪ (e.consts ∪ e'.consts)
       have hsub : adom (e.eval db \ e'.eval db) ⊆ adom (e.eval db) := by
         unfold adom
-        exact Finset.biUnion_subset_biUnion_of_subset_left Finset.sdiff_subset
+        exact Finset.biUnion_subset_biUnion_of_subset_left _ Finset.sdiff_subset
       intro d hd
       have hmem := ih (hsub hd)
       rw [Finset.mem_union] at hmem
