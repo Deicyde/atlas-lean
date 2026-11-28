@@ -15,9 +15,9 @@ import Mathlib.Data.Fin.VecNotation
 # Tests for count-to-infinity in distance-vector routing
 
 * The definition: on the network after the link `B - C` fails, a node's estimate of its own
-  distance is `0` after a round, and `C`, which has no neighbor there, has no route; and from
-  the direct link costs, one round on the path `A - B - C` gives `A` the estimate `3` of its
-  distance to `C`.
+  distance is `0` after a round, and `C`, which has no neighbor there, has no route to `A`; and
+  from the direct link costs, one round on the path `A - B - C` gives `A` the estimate `3` of
+  its distance to `C`.
 * Non-vacuity: the costs `c(A, B) = c(B, A) = 1`, `c(B, C) = c(C, B) = 2` and the shortest
   distances on the path satisfy the hypotheses of `count_to_infinity`. Its conclusions give the
   updates `4`, `5`, `6` of the example after the failure and the estimates `17` and `18`, above
