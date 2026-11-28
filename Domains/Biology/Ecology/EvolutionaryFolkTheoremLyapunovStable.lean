@@ -13,6 +13,7 @@ import Domains.Biology.Dynamics.AsymmetricESS
 import Domains.Biology.Dynamics.ReplicatorStability
 import Mathlib.Analysis.Calculus.Deriv.MeanValue
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Topology.Instances.Matrix
 
 /-!
 # Lyapunov-stable rest points are Nash equilibria
@@ -31,7 +32,8 @@ grow at a uniformly positive rate, despite the frequency being bounded by one.
 * Peter D. Taylor and Leo B. Jonker, *Evolutionarily stable strategies and game dynamics*,
   Math. Biosci. 40 (1978), 145–156, §3, eq. (2) (credited in §2.2 of the survey).
 * `Domains.Biology.Dynamics.AsymmetricESS` supplies `isMixed_single` and `IsMixed.dotProduct_le`
-  for the pure-reply criterion.
+  for the pure-reply criterion. The simplex-segment lemma is shared with
+  `Domains.Biology.Ecology.BoundaryESSStabilityIsESSIffIsLocallySuperior`.
 -/
 
 namespace WantedExt.Biology.Ecology.EvolutionaryFolkTheoremWanted
@@ -103,16 +105,13 @@ public theorem isNash_of_isLyapunovStable {A : Matrix ι ι ℝ} {p : ι → ℝ
   have hc : 0 < c := half_pos (sub_pos.mpr hi)
   have hcp : c < gain p := half_lt_self (sub_pos.mpr hi)
   have hf := continuous_mulVec_fitness A
-  have hgain : Continuous gain := by
-    dsimp only [gain, dotProduct]
-    fun_prop
+  have hgain : Continuous gain :=
+    ((continuous_apply i).comp hf).sub (continuous_id.dotProduct hf)
   obtain ⟨ε, hε, hnear⟩ := Metric.isOpen_iff.mp (isOpen_lt continuous_const hgain) p hcp
   obtain ⟨δ, hδ, hstay⟩ := (isLyapunovStable_iff.mp hstable).2 ε hε
   let e : ι → ℝ := Pi.single i 1
-  let y (s : ℝ) := (1 - s) • p + s • e
-  have hy : Continuous y := by
-    dsimp only [y]
-    fun_prop
+  let y (s : ℝ) := p + s • (e - p)
+  have hy : Continuous y := continuous_const.add (continuous_id.smul continuous_const)
   have hy0 : y 0 = p := by simp [y]
   obtain ⟨η, hη, hclose⟩ := Metric.continuousAt_iff.mp
     (hy.continuousAt : ContinuousAt y 0) δ hδ
@@ -124,15 +123,11 @@ public theorem isNash_of_isLyapunovStable {A : Matrix ι ι ℝ} {p : ι → ℝ
     rw [Metric.mem_ball, ← hy0]
     apply hclose
     simpa [Real.dist_eq, abs_of_pos hs] using hsη
-  have hp' := mem_simplex_iff.mp hp
-  have he : (∀ j, 0 ≤ e j) ∧ ∑ j, e j = 1 := isMixed_iff.mp (isMixed_single i)
-  have hy' : (∀ j, 0 ≤ y s j) ∧ ∑ j, y s j = 1 := by
-    constructor
-    · intro j
-      exact add_nonneg (mul_nonneg (sub_nonneg.mpr hs₁) (hp'.1 j)) (mul_nonneg hs.le (he.1 j))
-    · simp [y, Finset.sum_add_distrib, ← Finset.mul_sum, hp'.2, he.2]
-  obtain ⟨x, hx0, hx⟩ := exists_isSolution_mulVec A hy'
-  have hx0' : (∀ j, 0 ≤ x 0 j) ∧ ∑ j, x 0 j = 1 := hx0.symm ▸ hy'
+  have he : e ∈ simplex ι := mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single i))
+  have hy_mem : y s ∈ simplex ι := add_smul_sub_mem_simplex hp he hs.le hs₁
+  obtain ⟨x, hx0, hx⟩ := exists_isSolution_mulVec A (mem_simplex_iff.mp hy_mem)
+  have hx_mem₀ : x 0 ∈ simplex ι := hx0.symm ▸ hy_mem
+  have hx0' := mem_simplex_iff.mp hx_mem₀
   have hxi0 : 0 < x 0 i := by simpa [hx0, y, e, hpi] using hs
   have hxmem (t : ℝ) (ht : 0 ≤ t) := hx.mem_simplex hf hx0'.1 hx0'.2 ht
   have hxi (t : ℝ) (ht : 0 ≤ t) : 0 < x t i := hx.pos_of_pos hf hxi0 ht
@@ -141,7 +136,7 @@ public theorem isNash_of_isLyapunovStable {A : Matrix ι ι ℝ} {p : ι → ℝ
     exact Finset.single_le_sum (fun j _ => (hxmem t ht).1 j) (Finset.mem_univ i)
   have hgrow (t : ℝ) (ht : 0 ≤ t) : c ≤ gain (x t) :=
     (hnear (hstay x (isReplicatorSolution_iff_isSolution_mulVec.mpr hx)
-      (mem_simplex_iff.mpr hx0') (hx0.symm ▸ hdist) t ht)).le
+      hx_mem₀ (hx0.symm ▸ hdist) t ht)).le
   have hlog (t : ℝ) (ht : 0 ≤ t) :
       HasDerivAt (fun u => Real.log (x u i)) (gain (x t)) t := by
     have hd := (hx.hasDerivAt i t ht).log (hxi t ht).ne'

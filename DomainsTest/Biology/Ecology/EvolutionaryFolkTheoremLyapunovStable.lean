@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+import Domains.Biology.Dynamics.AsymmetricESS
 import Domains.Biology.Dynamics.ReplicatorStability
 import Domains.Biology.Ecology.EvolutionaryFolkTheoremLyapunovStable
 import Mathlib.Analysis.Calculus.MeanValue
@@ -23,20 +24,33 @@ in which the second strategy always earns more gives a rest point that is not Na
 -/
 
 open Matrix
+open MathlibExt.Biology.Dynamics.AsymmetricESS (isMixed_iff isMixed_single)
 open MathlibExt.Biology.Dynamics.Replicator (meanFitness_mulVec)
 open WantedExt.Biology.Ecology.BoundaryESSStabilityWanted
 open WantedExt.Biology.Ecology.EvolutionaryFolkTheoremWanted
 
 namespace DomainsTest.Biology.Ecology.EvolutionaryFolkTheoremLyapunovStable
 
-private def resident : Fin 2 → ℝ := ![1, 0]
+private def resident : Fin 2 → ℝ := Pi.single 0 1
 private def neutral : Matrix (Fin 2) (Fin 2) ℝ := 0
 private def betterSecond : Matrix (Fin 2) (Fin 2) ℝ := !![0, 0; 1, 1]
 
-private theorem resident_mem : resident ∈ simplex (Fin 2) := by
+private theorem resident_mem : resident ∈ simplex (Fin 2) :=
+  mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single (0 : Fin 2)))
+
+-- Check a nontrivial point of the segment directly from its two weights.
+example : resident + (1 / 3 : ℝ) • (![0, 1] - resident) ∈ simplex (Fin 2) := by
   apply mem_simplex_iff.mpr
-  refine ⟨fun i => ?_, by norm_num [resident, Fin.sum_univ_two]⟩
-  fin_cases i <;> norm_num [resident]
+  have he : resident + (1 / 3 : ℝ) • (![0, 1] - resident) = ![2 / 3, 1 / 3] := by
+    apply funext
+    have h10 : (1 : Fin 2) ≠ 0 := by decide
+    refine Fin.forall_fin_two.2 ⟨?_, ?_⟩ <;>
+      simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul, resident,
+        Pi.single_eq_same, Pi.single_eq_of_ne h10, Matrix.cons_val_zero, Matrix.cons_val_one] <;>
+      norm_num
+  rw [he]
+  refine ⟨fun i => ?_, by norm_num [Fin.sum_univ_two]⟩
+  fin_cases i <;> norm_num
 
 private theorem neutral_rest : replicatorField neutral resident = 0 := by
   funext i
@@ -59,10 +73,11 @@ private theorem neutral_stable : IsLyapunovStable neutral resident := by
       have h := hs.hasDerivAt i u hu
       rw [meanFitness_mulVec] at h
       simpa [neutral] using h
-    have hbound := Convex.norm_image_sub_le_of_norm_hasDerivWithin_le (f' := fun _ => (0 : ℝ))
-      (fun u hu => (hd u hu).hasDerivWithinAt) (C := 0) (by simp)
-      (convex_Ici 0) (show (0 : ℝ) ∈ Set.Ici 0 from le_rfl) ht
-    exact sub_eq_zero.mp <| norm_eq_zero.mp <| le_antisymm (by simpa using hbound) (norm_nonneg _)
+    exact (convex_Ici (0 : ℝ)).is_const_of_fderivWithin_eq_zero
+      (fun u hu => (hd u hu).differentiableAt.differentiableWithinAt)
+      (fun u hu => by
+        rw [(hd u hu).hasFDerivAt.hasFDerivWithinAt.fderivWithin (uniqueDiffOn_Ici 0 u hu)]
+        simp) ht (show (0 : ℝ) ∈ Set.Ici 0 from le_rfl)
   simpa [hconst] using hclose
 
 -- Check Nash independently: every pure reply earns exactly the resident payoff.
