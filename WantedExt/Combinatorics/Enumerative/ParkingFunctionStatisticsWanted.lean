@@ -18,6 +18,7 @@ public import Mathlib.Data.Fin.VecNotation
 public import Mathlib.Data.Multiset.Powerset
 public import Mathlib.Order.Interval.Finset.Nat
 public import MathlibExt.Combinatorics.Enumerative.AscentToDescentRearrangement
+public import MathlibExt.Combinatorics.Enumerative.ParkingFunctionPeaklessTieless
 public import MathlibExt.Combinatorics.Enumerative.ParkingFunctionStatistics
 public import MathlibExt.Combinatorics.FineNumber
 
@@ -42,8 +43,6 @@ the imported rearrangement `ascentToDescentRearrangement` is its `ν`.
 namespace MetaMathlibExt
 
 @[expose] public section
-
-open Classical
 
 set_option quotPrecheck false in
 /-- The parking functions of length `n`. -/
@@ -176,19 +175,6 @@ public theorem_wanted parkingFunction_descentSet_initial_card (n k : ℕ) (hn : 
     (hk : k ≤ n - 1) :
     ((((pfSet n).filter (fun f => desSet f = Finset.Icc 1 k)).card : ℕ) : ℚ) =
       1 / n * (n.choose k : ℚ) * ((2 * n - k).choose (n - k - 1) : ℚ)
-
-/-- **Peakless-tieless parking functions are counted by the Catalan numbers.** Write a parking
-function $f$ of length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. It is
-peakless-tieless if there is no $j$ with $a_{j-1} < a_j > a_{j+1}$ (a peak) and no $j$ with
-$a_j = a_{j+1}$ (a tie). For every $n \ge 1$, the number of peakless-tieless parking functions of
-length $n$ is the Catalan number $C_n$.
-
-Source: Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton,
-Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking
-Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Corollary 31
-(`jis-2024-24.8.6-cor-31`). -/
-public theorem_wanted card_peakless_tieless_parkingFunction (n : ℕ) (hn : 1 ≤ n) :
-    (ptpfSet n).card = catalan n
 
 /-- **Peakless-tieless parking functions by last entry.** Write a parking function $f$ of length
 $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1 \in \{1, \dots, n\}$. It is
