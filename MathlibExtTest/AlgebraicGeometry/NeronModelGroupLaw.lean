@@ -51,12 +51,14 @@ example (N : NeronModel R K A) (g : GrpObj N.model)
 /-- The `GroupStructure` built from a commutative `A` has the group law `NeronModel.grpObj`. -/
 example [IsCommMonObj A] (N : NeronModel R K A) : N.groupStructure.toGrpObj = N.grpObj := rfl
 
-/-- Existence, uniqueness and commutativity of the group law together, read off for a
-commutative `A`. -/
-example [IsCommMonObj A] (N : NeronModel R K A) :
+/-- Existence, commutativity and uniqueness of the group law together, read off for a
+commutative `A`: there is a commutative extending group law, and any extending group law `g'`
+equals it. -/
+example [IsCommMonObj A] (N : NeronModel R K A) (g' : GrpObj N.model)
+    (hg' : letI := g'; IsMonHom N.genericIso.hom) :
     ∃ g : GrpObj N.model, (letI := g; IsMonHom N.genericIso.hom) ∧
-      (letI := g; IsCommMonObj N.model) := by
-  obtain ⟨g, ⟨hg, hc⟩, -⟩ := N.existsUnique_grpObj
-  exact ⟨g, hg, hc inferInstance⟩
+      (letI := g; IsCommMonObj N.model) ∧ g' = g := by
+  obtain ⟨g, ⟨hg, hc⟩, hu⟩ := N.existsUnique_grpObj
+  exact ⟨g, hg, hc inferInstance, hu g' hg'⟩
 
 end MathlibExtTest.AlgebraicGeometry.NeronModelGroupLaw

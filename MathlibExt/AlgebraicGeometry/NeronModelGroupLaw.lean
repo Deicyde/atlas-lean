@@ -23,8 +23,8 @@ and inverse of `A` extend uniquely to the model, because `N.model`, `N.model ⊗
 * `NeronModel.isCommMonObj_grpObj`: it is commutative when `A` is;
 * `NeronModel.groupStructure`, `NeronModel.groupStructure_unique`: for commutative `A`, the
   resulting `NeronModel.GroupStructure`, and its uniqueness;
-* `NeronModel.existsUnique_grpObj`: the three statements above together, existence and
-  uniqueness of the extending group law and its commutativity for commutative `A`.
+* `NeronModel.existsUnique_grpObj`: existence of an extending group law, its commutativity for
+  commutative `A`, and its uniqueness among all group laws on `N.model` extending that of `A`.
 
 Reference: S. Lichtenstein, *Néron models*, seminar notes, Stanford, 2011,
 http://math.stanford.edu/~conrad/mordellsem/Notes/L11.pdf: Proposition 1.4.2 (iii), p. 5.
@@ -168,14 +168,17 @@ theorem groupStructure_unique (g₁ g₂ : N.GroupStructure) : g₁.toGrpObj = g
     (N.eq_grpObj_of_isMonHom _ g₂.compatible).symm
 
 omit [IsCommMonObj A] in
-/-- **Group law on a Néron model, existence and uniqueness.** There is exactly one group object
-structure `g` on `N.model` for which `N.genericIso` is a homomorphism of group objects, and it is
-commutative whenever `A` is (Lichtenstein, *Néron models*, Proposition 1.4.2 (iii), p. 5). -/
+/-- **Group law on a Néron model, existence and uniqueness.** There is a group object structure
+`g` on `N.model` for which `N.genericIso` is a homomorphism of group objects, it is commutative
+whenever `A` is, and every group object structure on `N.model` for which `N.genericIso` is a
+homomorphism of group objects equals `g` (Lichtenstein, *Néron models*, Proposition 1.4.2 (iii),
+p. 5). -/
 theorem existsUnique_grpObj :
-    ∃! g : GrpObj N.model, (letI := g; IsMonHom N.genericIso.hom) ∧
-      (IsCommMonObj A → letI := g; IsCommMonObj N.model) :=
+    ∃ g : GrpObj N.model, ((letI := g; IsMonHom N.genericIso.hom) ∧
+      (IsCommMonObj A → letI := g; IsCommMonObj N.model)) ∧
+      ∀ g' : GrpObj N.model, (letI := g'; IsMonHom N.genericIso.hom) → g' = g :=
   ⟨N.grpObj, ⟨N.isMonHom_genericIso_grpObj, fun _ ↦ N.isCommMonObj_grpObj⟩,
-    fun g hg ↦ N.eq_grpObj_of_isMonHom g hg.1⟩
+    fun g hg ↦ N.eq_grpObj_of_isMonHom g hg⟩
 
 end NeronModel
 
