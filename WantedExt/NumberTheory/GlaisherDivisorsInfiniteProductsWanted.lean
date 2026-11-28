@@ -15,6 +15,7 @@ public import Mathlib.Data.Set.Card
 public import Mathlib.NumberTheory.ArithmeticFunction.Misc
 public import Mathlib.RingTheory.PowerSeries.Expand
 public import MathlibExt.Combinatorics.Enumerative.Partition.Overpartition
+public import MathlibExt.NumberTheory.GlaisherPartitionSigmaConvolutionModFive
 public import MathlibExt.RingTheory.PowerSeries.SeriesDivisorCalculus
 public import MathlibExt.RingTheory.PowerSeries.SeriesDivisorInverseConvolution
 public import MathlibExt.RingTheory.PowerSeries.PowerRecursion
@@ -291,18 +292,6 @@ public theorem_wanted overpartition_glaisher_dD_formulas (n : ℕ) :
     2 * ∑ i ∈ Finset.Icc 1 n, (dD (n - i)) * dD i =
       ∑ i ∈ Finset.Icc 1 n with i ^ 2 ≤ n,
         (-1) ^ (i + 1) * (i : ℤ) ^ 2 * ((n : ℤ) - (i : ℤ) ^ 2) * pbar (n - i ^ 2)
-
-/-- **Ramanujan's congruence modulo $5$ and a convolution of divisor sums.** Let $p(k)$ be the
-number of partitions of $k$ and $\sigma(k)$ the sum of the positive divisors of $k$. Then
-$p(5m+4) \equiv 0 \pmod 5$ for every natural number $m$ if and only if
-$\sum_{i=1}^{5m} \sigma(i)\,\sigma(5m+1-i) \equiv 0 \pmod 5$ for every natural number $m$.
-
-Source: Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite
-Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 28
-(`jis-2024-24.1.6-thm-28`). -/
-public theorem_wanted partition_mod_five_iff_sigma_convolution :
-    (∀ m : ℕ, Fintype.card (Nat.Partition (5 * m + 4)) ≡ 0 [MOD 5]) ↔
-      ∀ m : ℕ, ∑ i ∈ Finset.Icc 1 (5 * m), σ 1 i * σ 1 (5 * m + 1 - i) ≡ 0 [MOD 5]
 
 /-- **Overpartitions modulo $8$ and a convolution of divisor sums.** Let $\bar p(k)$ be the
 number of overpartitions of $k$, and let $d_D(k)$ be the sum of the divisors $d$ of $k$ for which

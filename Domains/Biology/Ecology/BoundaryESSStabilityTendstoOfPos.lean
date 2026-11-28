@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import Domains.Biology.Dynamics.Replicator
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Normed.Group.Constructions
 public import Mathlib.Data.Matrix.Mul
@@ -22,8 +23,13 @@ import Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex
 This module defines the simplex, matrix replicator field, forward solutions and evolutionarily
 stable states, and proves global attraction of an interior evolutionarily stable state.
 
-Source: J. Hofbauer and K. Sigmund, "Evolutionary game dynamics", Bull. Amer. Math. Soc. (N.S.)
-40 (2003) 479–519, §2.6, Theorem 7.
+## References
+
+* Josef Hofbauer and Karl Sigmund, *Evolutionary game dynamics*, Bull. Amer. Math. Soc. (N.S.)
+  40 (2003), no. 4, 479–519, §2.6, Theorem 7; see also §2.2, eq. (3), for the replicator field
+  and its simplex and §2.3(d) for the Lyapunov stability criterion using this field.
+* `Domains.Biology.Ecology.BoundaryESSStabilityIsESSIffIsLocallySuperior` is the source of the
+  simplex-segment proof (originally `seg_mem`).
 -/
 
 @[expose] public section
@@ -54,8 +60,43 @@ def IsESS (A : Matrix ι ι ℝ) (p : ι → ℝ) : Prop :=
   p ∈ simplex ι ∧ ∀ q ∈ simplex ι, q ≠ p →
     q ⬝ᵥ A *ᵥ p < p ⬝ᵥ A *ᵥ p ∨ (q ⬝ᵥ A *ᵥ p = p ⬝ᵥ A *ᵥ p ∧ q ⬝ᵥ A *ᵥ q < p ⬝ᵥ A *ᵥ q)
 
+/-- **Segments in the strategy simplex.** If `p` and `q` are in the simplex and `0 ≤ t ≤ 1`,
+then the point `p + t • (q - p)` is also in the simplex. -/
+public theorem add_smul_sub_mem_simplex {p q : ι → ℝ} (hp : p ∈ simplex ι) (hq : q ∈ simplex ι)
+    {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) : p + t • (q - p) ∈ simplex ι := by
+  obtain ⟨hp0, hp1⟩ := hp
+  obtain ⟨hq0, hq1⟩ := hq
+  refine ⟨fun i => ?_, ?_⟩
+  · have hexp : (p + t • (q - p)) i = (1 - t) * p i + t * q i := by
+      simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul]
+      ring
+    rw [hexp]
+    exact add_nonneg (mul_nonneg (sub_nonneg.2 ht1) (hp0 i)) (mul_nonneg ht0 (hq0 i))
+  · simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul, Finset.sum_add_distrib,
+      ← Finset.mul_sum, Finset.sum_sub_distrib, hp1, hq1]
+    ring
+
+/-- **Coordinates of the matrix replicator field.** The rate of change of each frequency is
+its product with the difference between its payoff and the mean payoff. -/
+public theorem replicatorField_apply (A : Matrix ι ι ℝ) (x : ι → ℝ) (i : ι) :
+    replicatorField A x i = x i * ((A *ᵥ x) i - x ⬝ᵥ A *ᵥ x) :=
+  rfl
+
 open MathlibExt.Biology.Dynamics.Replicator (IsSolution relEntropy relEntropy_self relEntropy_pos
   continuous_mulVec_fitness)
+
+/-- **Matrix game solutions as fitness-driven solutions.** The two forward-solution predicates
+agree when fitness at state `y` is `A *ᵥ y`. -/
+public theorem isReplicatorSolution_iff_isSolution_mulVec {A : Matrix ι ι ℝ} {x : ℝ → ι → ℝ} :
+    IsReplicatorSolution A x ↔ IsSolution (fun y => A *ᵥ y) x := by
+  constructor
+  · intro h
+    exact ⟨fun i t ht => by
+      simpa only [replicatorField_apply, MathlibExt.Biology.Dynamics.Replicator.meanFitness_mulVec]
+        using h i t ht⟩
+  · intro h i t ht
+    simpa only [replicatorField_apply, MathlibExt.Biology.Dynamics.Replicator.meanFitness_mulVec]
+      using h.hasDerivAt i t ht
 
 private theorem antitoneOn_entropy_add {ι : Type*} [Fintype ι]
     {A : Matrix ι ι ℝ} {p : ι → ℝ} {x : ℝ → ι → ℝ}
@@ -83,7 +124,7 @@ public theorem IsESS.tendsto_of_pos {A : Matrix ι ι ℝ} {p : ι → ℝ} (h :
     (hp : ∀ i, 0 < p i) {x : ℝ → ι → ℝ} (hx : IsReplicatorSolution A x)
     (hx₀ : x 0 ∈ simplex ι) (hx₀pos : ∀ i, 0 < x 0 i) : Tendsto x atTop (𝓝 p) := by
   have hess : MathlibExt.Biology.Dynamics.Replicator.IsESS A p := h
-  have hsol : IsSolution (fun z => A *ᵥ z) x := ⟨hx⟩
+  have hsol := isReplicatorSolution_iff_isSolution_mulVec.mp hx
   have hf := continuous_mulVec_fitness A
   have hmem : ∀ t, 0 ≤ t → x t ∈ simplex ι := fun t ht =>
     hsol.mem_simplex hf hx₀.1 hx₀.2 ht

@@ -57,7 +57,11 @@ reduction from every language in `NP`
 -/
 
 /-- An instance: the grid row by row; each cell is `0` (no number) or `k + 1` (the number `k`).
--/
+The raw type is any list of rows of naturals: the rows may have different lengths and an entry
+may be any natural. The rectangle is fixed by the number of rows and the length of the first
+row (`rows`, `cols`); `WellFormed` asks for at least one row and one column, every row of that
+length and a number of cells divisible by five. It does not bound the entries: a cell holding
+`k + 1` with `k > 4` asks for more than four lines around it, so no division satisfies it. -/
 abbrev FiveCellsInstance := List (List ℕ)
 
 /-- The number of rows `m`. -/
@@ -66,7 +70,9 @@ abbrev rows (i : FiveCellsInstance) : ℕ := i.length
 /-- The number of columns `n` (the length of the first row). -/
 abbrev cols (i : FiveCellsInstance) : ℕ := (i.headD []).length
 
-/-- The grid graph of the instance: cells `(r, c)`, adjacent when they share a side. -/
+/-- The grid graph of the instance: cells `(r, c)`, adjacent when they share a side. Its
+vertices are `Fin (rows i) × Fin (cols i)`: the rectangle is fixed by the number of rows and
+the length of the first row, whatever the lengths of the other rows. -/
 abbrev Grid (i : FiveCellsInstance) : SimpleGraph (Fin (rows i) × Fin (cols i)) :=
   SimpleGraph.pathGraph (rows i) □ SimpleGraph.pathGraph (cols i)
 
@@ -83,7 +89,10 @@ def WellFormed (i : FiveCellsInstance) : Prop :=
 open Classical in
 /-- The grid can be divided into connected blocks of five cells (the classes of `block`) so that
 every cell `x` with a number `k` satisfies: `x` has `4 - k` neighbors in its own block, i.e. `k`
-lines of blocks (including the outer frame) around it. -/
+lines of blocks (including the outer frame) around it. The cells are those of the rectangle
+fixed by the first row (`Grid`), and a cell's number is read with `cell`: a position missing
+from a shorter row reads `0` (no number), and the extra entries of a longer row are not cells;
+`WellFormed` rules out rows of other lengths. -/
 def FiveCellsFeasible (i : FiveCellsInstance) : Prop :=
   ∃ block : Fin (rows i) × Fin (cols i) → ℕ,
     (∀ x, (Finset.univ.filter fun y => block y = block x).card = 5) ∧

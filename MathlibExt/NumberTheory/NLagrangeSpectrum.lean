@@ -10,6 +10,7 @@ module
 
 public import Mathlib.Algebra.ContinuedFractions.Computation.Basic
 public import Mathlib.Data.EReal.Basic
+public import Mathlib.NumberTheory.Divisors
 public import Mathlib.NumberTheory.DiophantineApproximation.Basic
 public import Mathlib.Order.LiminfLimsup
 import Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries
@@ -17,6 +18,8 @@ import Mathlib.Algebra.ContinuedFractions.Computation.TerminatesIffRat
 import Mathlib.NumberTheory.DiophantineApproximation.ContinuedFractions
 import Mathlib.NumberTheory.DiophantineApproximation.Hurwitz
 import Mathlib.RingTheory.Int.Basic
+import Mathlib.Topology.Algebra.GroupWithZero
+import Mathlib.Topology.Homeomorph.Lemmas
 import Mathlib.Tactic.LinearCombination
 
 /-!
@@ -25,7 +28,19 @@ import Mathlib.Tactic.LinearCombination
 For an irrational real number, the signed quality of each continued fraction
 convergent equals the corresponding complete-quotient expression, and the
 $1$-Lagrange approximability is the extended-real limsup of those expressions.
-The main result is `MetaMathlibExt.convergent_quality_and_lagrange_limsup`.
+For $n \ge 1$ and distinct irrational reals $\xi, \xi'$, the $n$-Lagrange and $n$-Markoff
+approximabilities are the maxima of their classical counterparts at the inputs scaled by
+positive divisors of $n$. The Lagrange proof uses the reduced denominator after scaling;
+the Markoff proof rescales the second coordinate of the nonzero integer pair.
+
+## References
+
+* Brandon Dong, Soren Dupont, Evan M. O’Dorney, and W. Theo Waitkus,
+  *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025),
+  Article A47, pp. 1–30: equations (1)–(4) and Propositions 4 and 6 (p. 6 for Proposition 6).
+* T. W. Cusick and M. E. Flahive, *The Markoff and Lagrange Spectra*, Mathematical Surveys
+  and Monographs 30, American Mathematical Society (1989), Appendix 1 (the convergent formulas
+  cited in Proposition 4).
 -/
 
 namespace MetaMathlibExt
@@ -62,6 +77,31 @@ theorem nLagrangeApproximability_one (ξ : ℝ) :
       limsup (fun q : ℚ => ((1 / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|) : ℝ) : EReal))
         (comap ((↑) : ℚ → ℝ) (𝓝[≠] ξ)) := by
   simp [nLagrangeApproximability]
+
+/-- **$n$-Markoff approximability.** For a natural number $n$ and real numbers $\xi$ and $\xi'$, the
+$n$-Markoff approximability is the supremum in the extended reals
+$$\mu_n(\xi, \xi') = \sup_{(s,t) \ne 0} \frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|}$$
+over all pairs of integers $(s, t) \ne (0, 0)$. A term whose denominator is $0$, which happens only
+when $\xi$ or $\xi'$ is rational, counts as $0$.
+
+Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
+Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
+Introduction, equation (4). -/
+noncomputable def nMarkoffApproximability (n : ℕ) (ξ ξ' : ℝ) : EReal :=
+  ⨆ st : {p : ℤ × ℤ // p ≠ 0},
+    ((((Int.gcd st.1.2 n : ℝ) * |ξ - ξ'| /
+      (|(st.1.1 : ℝ) - st.1.2 * ξ| * |(st.1.1 : ℝ) - st.1.2 * ξ'|) : ℝ)) : EReal)
+
+/-- **Symmetry of the $n$-Markoff approximability.** For every natural number $n$ and all real
+numbers $\xi$ and $\xi'$, the $n$-Markoff approximability satisfies
+$\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
+
+Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
+Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
+Introduction, equation (4). -/
+theorem nMarkoffApproximability_comm (n : ℕ) (ξ ξ' : ℝ) :
+    nMarkoffApproximability n ξ ξ' = nMarkoffApproximability n ξ' ξ := by
+  simp only [nMarkoffApproximability, abs_sub_comm ξ ξ', mul_comm |(_ : ℝ) - _ * ξ|]
 
 namespace convergent_quality_and_lagrange_limsup
 
@@ -429,6 +469,167 @@ public theorem convergent_quality_and_lagrange_limsup (ξ : ℝ) (hξ : Irration
   exact limsup_congr (.of_forall fun k => congrArg Real.toEReal (quality_convergent hξ k))
 
 end
+
+private theorem map_rat_mul_punctured (g : ℕ) (hg : g ≠ 0) (ξ : ℝ) :
+    map (fun q : ℚ => (g : ℚ) * q) (comap ((↑) : ℚ → ℝ) (𝓝[≠] ξ)) =
+      comap ((↑) : ℚ → ℝ) (𝓝[≠] ((g : ℝ) * ξ)) := by
+  let e := Homeomorph.mulLeft₀ (g : ℝ) (by exact_mod_cast hg)
+  have hgq : (g : ℚ) ≠ 0 := by exact_mod_cast hg
+  have hsurj : Function.Surjective (fun q : ℚ => (g : ℚ) * q) :=
+    (Equiv.mulLeft₀ (g : ℚ) hgq).surjective
+  have hcast : ((↑) : ℚ → ℝ) ∘ (fun q : ℚ => (g : ℚ) * q) =
+      (e : ℝ → ℝ) ∘ ((↑) : ℚ → ℝ) := by
+    funext q
+    simp [e]
+  change _ = comap ((↑) : ℚ → ℝ) (𝓝[≠] (e ξ))
+  rw [← e.map_punctured_nhds_eq]
+  conv_rhs => rw [← map_comap_of_surjective hsurj (comap ((↑) : ℚ → ℝ) (map e (𝓝[≠] ξ)))]
+  rw [comap_comap, hcast, ← comap_comap, comap_map e.injective]
+
+-- Count the cancellation in the reduced fraction before comparing the scores.
+private theorem lagrange_score_mul {ξ : ℝ} (hξ : Irrational ξ) (q : ℚ) {g : ℕ} (hg : 0 < g) :
+    1 / ((((g : ℚ) * q).den : ℝ) ^ 2 * |(((g : ℚ) * q : ℚ) : ℝ) - g * ξ|) =
+      ((q.den.gcd g : ℝ) ^ 2 / g) / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|) := by
+  let d := q.den.gcd g
+  have hden : q.den = ((g : ℚ) * q).den * d := by
+    simpa only [Rat.den_natCast, Rat.num_natCast, Int.natAbs_mul, Int.natAbs_natCast, one_mul,
+      q.reduced.gcd_mul_right_cancel g, Nat.gcd_comm g q.den, d] using
+      Rat.den_mul_den_eq_den_mul_gcd (g : ℚ) q
+  have hden' : (q.den : ℝ) = (((g : ℚ) * q).den : ℝ) * (d : ℝ) := by exact_mod_cast hden
+  have hd : (d : ℝ) ≠ 0 := by
+    exact_mod_cast (Nat.gcd_pos_of_pos_left g q.pos).ne'
+  have hg' : (g : ℝ) ≠ 0 := by exact_mod_cast hg.ne'
+  have hq : (((g : ℚ) * q).den : ℝ) ≠ 0 := by exact_mod_cast ((g : ℚ) * q).pos.ne'
+  have hξq : |(q : ℝ) - ξ| ≠ 0 := abs_ne_zero.mpr (sub_ne_zero.mpr (hξ.ne_rat q).symm)
+  change _ = ((d : ℝ) ^ 2 / g) / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|)
+  rw [Rat.cast_mul, Rat.cast_natCast, ← mul_sub, abs_mul, abs_of_nonneg (Nat.cast_nonneg g), hden']
+  field_simp
+
+private theorem lagrange_sup_divisors {n : ℕ} (hn : n ≠ 0) {ξ : ℝ} (hξ : Irrational ξ) :
+    nLagrangeApproximability n ξ =
+      n.divisors.sup (fun g => nLagrangeApproximability 1 (g * ξ)) := by
+  let F := comap ((↑) : ℚ → ℝ) (𝓝[≠] ξ)
+  let score (x : ℝ) (q : ℚ) : EReal := ↑(1 / ((q.den : ℝ) ^ 2 * |(q : ℝ) - x|) : ℝ)
+  let scaled (g : ℕ) (q : ℚ) : EReal := score (g * ξ) ((g : ℚ) * q)
+  have hpoint (q : ℚ) :
+      (↑((q.den.gcd n : ℝ) / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|) : ℝ) : EReal) =
+        n.divisors.sup (fun g => scaled g q) := by
+    apply le_antisymm
+    · let d := q.den.gcd n
+      have hd : 0 < d := Nat.gcd_pos_of_pos_left n q.pos
+      have hd0 : (d : ℝ) ≠ 0 := by exact_mod_cast hd.ne'
+      have hd_mem : d ∈ n.divisors := Nat.mem_divisors.mpr ⟨Nat.gcd_dvd_right _ _, hn⟩
+      refine (show _ ≤ scaled d q from ?_).trans
+        (Finset.le_sup (f := fun g => scaled g q) hd_mem)
+      dsimp only [scaled, score]
+      rw [lagrange_score_mul hξ q hd, Nat.gcd_eq_right_iff_dvd.mpr (Nat.gcd_dvd_left q.den n)]
+      have hd_cancel : (d : ℝ) ^ 2 / d = d := by rw [pow_two, mul_div_cancel_right₀ _ hd0]
+      rw [show (q.den.gcd n : ℝ) ^ 2 / (d : ℝ) = (q.den.gcd n : ℝ) from hd_cancel]
+    · refine Finset.sup_le fun g hg => ?_
+      have hpos := Nat.pos_of_mem_divisors hg
+      dsimp only [scaled, score]
+      rw [lagrange_score_mul hξ q hpos, EReal.coe_le_coe_iff]
+      apply div_le_div_of_nonneg_right _ (by positivity)
+      have hle : (q.den.gcd g : ℝ) ≤ g := by exact_mod_cast Nat.gcd_le_right q.den hpos
+      have hdvd : q.den.gcd g ∣ q.den.gcd n := Nat.dvd_gcd (Nat.gcd_dvd_left _ _)
+        ((Nat.gcd_dvd_right _ _).trans (Nat.mem_divisors.mp hg).1)
+      have hle' : (q.den.gcd g : ℝ) ≤ q.den.gcd n := by
+        exact_mod_cast Nat.le_of_dvd (Nat.gcd_pos_of_pos_left n q.pos) hdvd
+      calc
+        _ ≤ (q.den.gcd g : ℝ) := by
+          rw [div_le_iff₀ (show (0 : ℝ) < g by exact_mod_cast hpos), pow_two]
+          exact mul_le_mul_of_nonneg_left hle (Nat.cast_nonneg _)
+        _ ≤ _ := hle'
+  calc
+    _ = limsup (fun q => n.divisors.sup (fun g => scaled g q)) F :=
+      limsup_congr (.of_forall hpoint)
+    _ = n.divisors.sup (fun g => limsup (scaled g) F) := limsup_finset_sup
+    _ = _ := by
+      refine Finset.sup_congr rfl fun g hg => ?_
+      rw [nLagrangeApproximability_one]
+      change limsup (score (g * ξ) ∘ fun q : ℚ => (g : ℚ) * q) F = _
+      rw [limsup_comp, map_rat_mul_punctured g (Nat.pos_of_mem_divisors hg).ne']
+
+private theorem markoff_sup_divisors {n : ℕ} (hn : n ≠ 0) {ξ ξ' : ℝ}
+    (hξ : Irrational ξ) (hξ' : Irrational ξ') (hne : ξ ≠ ξ') :
+    nMarkoffApproximability n ξ ξ' =
+      n.divisors.sup (fun g => nMarkoffApproximability 1 (g * ξ) (g * ξ')) := by
+  let score (x y : ℝ) (p : ℤ × ℤ) : ℝ :=
+    |x - y| / (|(p.1 : ℝ) - p.2 * x| * |(p.1 : ℝ) - p.2 * y|)
+  have hfactor {x : ℝ} (hx : Irrational x) (p : {p : ℤ × ℤ // p ≠ 0}) :
+      0 < |(p.1.1 : ℝ) - p.1.2 * x| := by
+    refine abs_pos.mpr (sub_ne_zero.mpr ?_)
+    by_cases ht : p.1.2 = 0
+    · intro h
+      have hs : (p.1.1 : ℝ) = 0 := by simpa [ht] using h
+      exact p.2 (Prod.ext (by exact_mod_cast hs) ht)
+    · exact ((irrational_intCast_mul_iff.mpr ⟨ht, hx⟩).ne_int _).symm
+  have hpos (p : {p : ℤ × ℤ // p ≠ 0}) : 0 < score ξ ξ' p :=
+    div_pos (abs_pos.mpr (sub_ne_zero.mpr hne)) (mul_pos (hfactor hξ p) (hfactor hξ' p))
+  have hscale (g : ℕ) (p : ℤ × ℤ) :
+      score (g * ξ) (g * ξ') p = g * score ξ ξ' (p.1, (g : ℤ) * p.2) := by
+    dsimp only [score]
+    rw [← mul_sub, abs_mul, abs_of_nonneg (Nat.cast_nonneg g)]
+    push_cast
+    simp only [mul_comm (g : ℝ) (p.2 : ℝ), ← mul_assoc, mul_div_assoc]
+  have hscore (k : ℕ) (x y : ℝ) : nMarkoffApproximability k x y =
+      ⨆ p : {p : ℤ × ℤ // p ≠ 0}, (↑((Int.gcd p.1.2 k : ℝ) * score x y p) : EReal) := by
+    simp only [nMarkoffApproximability, score, mul_div_assoc]
+  let classical (g : ℕ) (p : {p : ℤ × ℤ // p ≠ 0}) : EReal := ↑(score (g * ξ) (g * ξ') p)
+  simp only [hscore, Int.gcd_one_right, Nat.cast_one, one_mul]
+  change _ = n.divisors.sup (fun g => ⨆ p, classical g p)
+  apply le_antisymm
+  · refine iSup_le fun p => ?_
+    let g := Int.gcd p.1.2 n
+    have hg : g ∣ n := by exact_mod_cast Int.gcd_dvd_right p.1.2 (n : ℤ)
+    obtain ⟨t, ht⟩ : (g : ℤ) ∣ p.1.2 := Int.gcd_dvd_left _ _
+    let p' : {p : ℤ × ℤ // p ≠ 0} := ⟨(p.1.1, t), by
+      intro h
+      obtain ⟨hs, ht0⟩ := Prod.mk_eq_zero.mp h
+      exact p.2 (Prod.ext hs (by simp [ht, ht0]))⟩
+    have hp : (p'.1.1, (g : ℤ) * p'.1.2) = p.1 := Prod.ext rfl ht.symm
+    calc
+      _ = classical g p' := by dsimp only [classical]; rw [hscale, hp]
+      _ ≤ ⨆ p, classical g p := le_iSup (classical g) p'
+      _ ≤ _ := Finset.le_sup (f := fun g => ⨆ p, classical g p)
+        (Nat.mem_divisors.mpr ⟨hg, hn⟩)
+  · refine Finset.sup_le fun g hg => iSup_le fun p => ?_
+    have hg0 : (g : ℤ) ≠ 0 := by exact_mod_cast (Nat.pos_of_mem_divisors hg).ne'
+    let p' : {p : ℤ × ℤ // p ≠ 0} := ⟨(p.1.1, (g : ℤ) * p.1.2), by
+      intro h
+      obtain ⟨hs, ht⟩ := Prod.mk_eq_zero.mp h
+      exact p.2 (Prod.ext hs ((mul_eq_zero.mp ht).resolve_left hg0))⟩
+    have hg' : (g : ℤ) ∣ (n : ℤ) := by exact_mod_cast (Nat.mem_divisors.mp hg).1
+    have hdvd : (g : ℤ) ∣ (Int.gcd p'.1.2 n : ℤ) := Int.dvd_coe_gcd (dvd_mul_right _ _) hg'
+    have hn' : (n : ℤ) ≠ 0 := by exact_mod_cast hn
+    have hle : (g : ℝ) ≤ Int.gcd p'.1.2 n := by
+      exact_mod_cast Nat.le_of_dvd (Int.gcd_pos_of_ne_zero_right _ hn') (by exact_mod_cast hdvd)
+    calc
+      _ = (↑((g : ℝ) * score ξ ξ' p') : EReal) := by
+        dsimp only [classical]
+        rw [hscale]
+      _ ≤ (↑((Int.gcd p'.1.2 n : ℝ) * score ξ ξ' p') : EReal) := EReal.coe_le_coe_iff.mpr
+        (mul_le_mul_of_nonneg_right hle (hpos p').le)
+      _ ≤ _ := le_iSup
+        (fun p : {p : ℤ × ℤ // p ≠ 0} => (↑((Int.gcd p.1.2 n : ℝ) * score ξ ξ' p) : EReal)) p'
+
+/-- **The $n$-approximabilities as maxima over divisors.** Let $n \ge 1$, let $\lambda_n$ and
+$\mu_n$ be the $n$-Lagrange and $n$-Markoff approximabilities, and let $\xi \ne \xi'$ be irrational
+real numbers. Then $\lambda_n(\xi) = \max_{g \mid n} \lambda_1(g\xi)$ and
+$\mu_n(\xi, \xi') = \max_{g \mid n} \mu_1(g\xi, g\xi')$, where $g$ runs over the positive divisors
+of $n$ and the maxima are taken in the extended reals.
+
+Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
+Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
+Proposition 6 (`integers-2025-A47-prop-6`). -/
+public theorem nApproximability_eq_sup_divisors (n : ℕ) (hn : 1 ≤ n) (ξ ξ' : ℝ)
+    (hξ : Irrational ξ) (hξ' : Irrational ξ') (hne : ξ ≠ ξ') :
+    nLagrangeApproximability n ξ =
+        n.divisors.sup (fun g => nLagrangeApproximability 1 (g * ξ)) ∧
+      nMarkoffApproximability n ξ ξ' =
+        n.divisors.sup (fun g => nMarkoffApproximability 1 (g * ξ) (g * ξ')) := by
+  have hn0 := (Nat.ne_of_gt hn : n ≠ 0)
+  exact ⟨lagrange_sup_divisors hn0 hξ, markoff_sup_divisors hn0 hξ hξ' hne⟩
 
 end
 

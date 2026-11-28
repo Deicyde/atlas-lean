@@ -70,7 +70,14 @@ reduction from every language in `NP`
 
 /-- An instance: the hospitals `(cⱼ, preference list over residents)`, the single residents
 `(rᵢ, preference list over hospitals)`, and the couples `((rᵢ, rⱼ), joint preference list over
-hospital pairs)`. -/
+hospital pairs)`. The raw type is any such triple of lists of naturals: a capacity may be `0`,
+any preference list may repeat an entry, a resident's or couple's list may name a hospital
+index `≥ |H|`, a hospital's list may name any natural (also one that is no listed resident or
+does not find the hospital acceptable), the two members of a couple may be equal, and a
+resident may be listed more than once; `WellFormed` asks for positive capacities,
+repetition-free preference lists, hospital indices below `|H|`, distinct couple members, every
+resident listed once, and hospital lists that rank exactly the residents who find the hospital
+acceptable. -/
 abbrev HospitalsResidentsWithCouplesInstance :=
   List (ℕ × List ℕ) × List (ℕ × List ℕ) × List ((ℕ × ℕ) × List (ℕ × ℕ))
 
@@ -111,7 +118,12 @@ def assigned (i : HospitalsResidentsWithCouplesInstance) (M : ℕ → Option ℕ
   (residents i).filter fun r => M r = some h
 
 /-- `M` is a matching: single residents are unassigned or at an acceptable hospital, couples are
-jointly unassigned or jointly at an acceptable pair, and no hospital exceeds its capacity. -/
+jointly unassigned or jointly at an acceptable pair, and no hospital exceeds its capacity. The
+number of residents at `h` is the length of the list `assigned i M h`, the entries of
+`residents i` that `M` sends to `h`, so it counts list occurrences: a resident listed twice
+counts twice (`WellFormed` lists each resident once), and a natural that is not a listed
+resident never counts, whatever `M` gives it. The capacity bound is checked at the listed
+hospitals (`h < |H|`). -/
 def IsMatching (i : HospitalsResidentsWithCouplesInstance) (M : ℕ → Option ℕ) : Prop :=
   (∀ s ∈ i.2.1, match M s.1 with
     | none => True
@@ -120,7 +132,10 @@ def IsMatching (i : HospitalsResidentsWithCouplesInstance) (M : ℕ → Option �
       ∃ p ∈ c.2, M c.1.1 = some p.1 ∧ M c.1.2 = some p.2) ∧
     ∀ h < i.1.length, (assigned i M h).length ≤ capacity i h
 
-/-- Hospital `h` is under-subscribed in `M`. -/
+/-- Hospital `h` is under-subscribed in `M`. That is, `assigned i M h` has fewer entries than
+`capacity i h`, counting list occurrences as in `IsMatching`. A hospital index `≥ |H|` has
+capacity `0` (`capacity` reads a missing hospital as `(0, [])`), so it is never
+under-subscribed. -/
 def Undersubscribed (i : HospitalsResidentsWithCouplesInstance) (M : ℕ → Option ℕ) (h : ℕ) :
     Prop :=
   (assigned i M h).length < capacity i h
@@ -130,7 +145,10 @@ def PrefersToSome (i : HospitalsResidentsWithCouplesInstance) (h r : ℕ) (X : L
   ∃ r' ∈ X, Prefers (hospitalPrefs i h) r r'
 
 /-- The couple `c` prefers the pair `p` to its assignment `(M(rᵢ), M(rⱼ))` (every acceptable pair
-is preferred to being jointly unassigned). -/
+is preferred to being jointly unassigned). The same reading applies when only one member is
+unassigned, which no matching allows: whenever either member is unassigned,
+`CouplePrefers M c p` is `p ∈ c.2`. `BlockedByCoupleAndHospital` treats a missing assignment the
+other way: a couple with an unassigned member never blocks in its case. -/
 def CouplePrefers (M : ℕ → Option ℕ) (c : (ℕ × ℕ) × List (ℕ × ℕ)) (p : ℕ × ℕ) : Prop :=
   match M c.1.1, M c.1.2 with
   | some a, some b => Prefers c.2 p (a, b)
@@ -150,7 +168,9 @@ def BlockedBySingle (i : HospitalsResidentsWithCouplesInstance) (M : ℕ → Opt
 couple prefers `(hₖ, M(rⱼ))` to `(M(rᵢ), M(rⱼ))` and `hₖ` is under-subscribed or prefers `rᵢ` to
 some member of `M(hₖ) \ {rⱼ}`, or (b) the couple prefers `(M(rᵢ), hₖ)` to `(M(rᵢ), M(rⱼ))` and
 `hₖ` is under-subscribed or prefers `rⱼ` to some member of `M(hₖ) \ {rᵢ}`. The pairs
-`(hₖ, M(rⱼ))` and `(M(rᵢ), hₖ)` range over the couple's list. -/
+`(hₖ, M(rⱼ))` and `(M(rᵢ), hₖ)` range over the couple's list. The case needs both members
+assigned: a couple with an unassigned member does not block this way (the `False` branch),
+whereas `CouplePrefers` counts every acceptable pair as preferred to a missing assignment. -/
 def BlockedByCoupleAndHospital (i : HospitalsResidentsWithCouplesInstance)
     (M : ℕ → Option ℕ) : Prop :=
   ∃ c ∈ i.2.2, match M c.1.1, M c.1.2 with

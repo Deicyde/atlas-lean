@@ -57,7 +57,10 @@ reduction from every language in `NP`
 -/
 
 /-- An instance: alphabet size `q` (symbols `0, ..., q - 1`), string length `L`, the bad strings,
-the good strings, `k_b`, `k_g`. -/
+the good strings, `k_b`, `k_g`. The raw type is any such tuple: the strings may have any lengths
+and any natural symbols, `q` may be `0`, and `k_b` and `k_g` may be any naturals (a `k_g > L`
+leaves no solution when there is a good string); `WellFormed` asks only that every bad and
+every good string have length `L` with symbols below `q`. -/
 abbrev DistinguishingStringSelectionInstance :=
   ℕ × ℕ × List (List ℕ) × List (List ℕ) × ℕ × ℕ
 
@@ -74,7 +77,11 @@ def WellFormed (i : DistinguishingStringSelectionInstance) : Prop :=
   (∀ s ∈ i.2.2.1, IsWord i.1 i.2.1 s) ∧ ∀ s ∈ i.2.2.2.1, IsWord i.1 i.2.1 s
 
 /-- A string `t ∈ Σ^L` within Hamming distance `k_b` of every bad string and at Hamming distance
-at least `k_g` from every good string. -/
+at least `k_g` from every good string. Each input string `s` enters as `asWord L s`: it is
+compared with `t` on its first `L` positions, a missing position reading as `0`, so the extra
+symbols of a longer string are ignored and a shorter string is padded with zeros. In a
+well-formed instance every input string has length `L`, and this is the Hamming distance of the
+two strings. -/
 def DistinguishingStringSelectionFeasible
     (i : DistinguishingStringSelectionInstance) : Prop :=
   ∃ t : List ℕ, IsWord i.1 i.2.1 t ∧

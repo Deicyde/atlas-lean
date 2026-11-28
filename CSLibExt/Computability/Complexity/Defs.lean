@@ -51,7 +51,8 @@ end Cslib.CookLevin
 
 namespace Cslib.Complexity
 
-/-- NP-hardness under canonical polynomial-time many-one reductions. -/
+/-- A decision problem is NP-hard if every language in canonical NP has a polynomial-time
+many-one reduction to it. The target need not itself belong to NP. -/
 def NPHard (L : DecisionProblem) : Prop :=
   ∀ A : DecisionProblem, A ∈ NP → PolyManyOneRed A L
 

@@ -90,7 +90,13 @@ def PlusSubOneExpr.tokens : PlusSubOneExpr → List (ℕ × ℕ)
   | .plus e e' => (2, 0) :: (e.tokens ++ e'.tokens)
   | .sub1 e => (3, 0) :: e.tokens
 
-/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`. -/
+/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`.
+The raw type is any natural number with any two lists of natural pairs, so a token list need
+not parse: it may be empty, have too few or too many operand tokens, or hold a token that
+`PlusSubOneExpr.tokens` never produces (an operator code `≥ 4`, or `(2, c)` or `(3, c)` with
+`c ≠ 0`), and its variable indices and constants are unconstrained (a constant `0` is
+representable). `WellFormed` (through `IsExpr`) requires each list to be the token list of an
+expression whose variables are among `x₀, …, x_{|X|-1}` and whose constants are positive. -/
 abbrev InequivalenceOfSimpleFunctionsPlusSubOneInstance :=
   ℕ × List (ℕ × ℕ) × List (ℕ × ℕ)
 
@@ -105,8 +111,11 @@ def IsExpr (nX : ℕ) (ts : List (ℕ × ℕ)) : Prop :=
 def WellFormed (i : InequivalenceOfSimpleFunctionsPlusSubOneInstance) : Prop :=
   IsExpr i.1 i.2.1 ∧ IsExpr i.1 i.2.2
 
-/-- Some assignment of non-negative integers to the variables gives `f` and `g` different
-values. -/
+/-- There are expression trees `f` and `g` whose prefix token lists (`PlusSubOneExpr.tokens`) are
+exactly the two stored lists, and one assignment `a : ℕ → ℕ` of non-negative integers to every
+variable index under which their values differ. An empty list is the token list of no tree, so
+it is never feasible; the bounds on variable indices belong to `WellFormed`, so at `|X| = 0` the
+trees `var 0` and `var 1` can still be separated. -/
 def InequivalenceOfSimpleFunctionsPlusSubOneFeasible
     (i : InequivalenceOfSimpleFunctionsPlusSubOneInstance) : Prop :=
   ∃ f g : PlusSubOneExpr, f.tokens = i.2.1 ∧ g.tokens = i.2.2 ∧
