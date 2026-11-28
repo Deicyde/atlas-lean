@@ -64143,7 +64143,7 @@
 "MathlibExt.GameTheory.MixedNashExistence.forall_expectedPayoff_update_le_iff": "4550241642c64e48",
 "MathlibExt.GameTheory.MixedNashExistence.isMixedNash_iff_forall_pureExpectedPayoff_le": "fbfb221f4bc56bd3",
 "MathlibExt.GameTheory.MixedNashExistence.isMixedNash_iff_support": "d004a04a435781c4",
-"MathlibExt.GameTheory.MixedNashExistence.pureExpectedPayoff": "d677d1e6d1c9f486",
+"MathlibExt.GameTheory.MixedNashExistence.pureExpectedPayoff": "39ab823d1fff36f4",
 "MathlibExt.GameTheory.MixedNashExistence.pureExpectedPayoff_update": "e98e1b8064428816",
 "MathlibExt.GameTheory.MyersonSatterthwaiteWanted.myerson_satterthwaite": "741c5f8e83d4a2ab",
 "MathlibExt.GameTheory.NashCorrelatedBridge.isCorrelatedEq_productDist_of_isMixedNash": "c4c58867ead34c4e",
