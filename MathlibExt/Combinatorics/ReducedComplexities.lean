@@ -105,8 +105,10 @@ noncomputable def rhoAbRed (x : ℕ → Bool) (n : ℕ) : ℕ :=
       (redWord (List.ofFn v)).count false)) ''
     InfiniteWord.factorSet x n)
 
-/-- **Reduced abelian complexity as a count over starting positions.** Count the distinct
-pairs of reduction length and number of zeros by taking the range over all factor starts. -/
+/-- **Reduced abelian complexity as a count over starting positions.** For a right-infinite
+binary word `x` and a fixed natural length `n`, `rhoAbRed x n` is the number of distinct pairs
+`(length of the reduction, number of zeros in that reduction)` obtained as the starting position
+of a length-`n` factor ranges over all natural numbers. -/
 theorem rhoAbRed_eq_ncard_range (x : ℕ → Bool) (n : ℕ) :
     rhoAbRed x n = (Set.range fun i =>
       ((redWord (InfiniteWord.factorList x n i)).length,
