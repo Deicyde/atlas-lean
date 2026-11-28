@@ -18293,6 +18293,8 @@
 "Cslib.Algorithms.Networking.Aimd.fairness_eq_one_div_iff": "6d9d6faa61d2037d",
 "Cslib.Algorithms.Networking.Aimd.fairness_eq_one_iff": "6ff9991839944824",
 "Cslib.Algorithms.Networking.Aimd.fairness_mem_Icc_one_div": "2045fb1f6df55661",
+"Cslib.Algorithms.Networking.DistanceVector.count_to_infinity": "98b5a20bef185446",
+"Cslib.Algorithms.Networking.DistanceVector.step": "aaba8b9ea3afb278",
 "Cslib.Algorithms.Networking.NetworkCalculus.ExtendedCurve": "8f567cbe4cae37e6",
 "Cslib.Algorithms.Networking.NetworkCalculus.ExtendedCurve.conv": "7f6178a2a9169414",
 "Cslib.Algorithms.Networking.NetworkCalculus.ExtendedCurve.conv_apply_of_nonneg": "4412e7db6f623bb2",
