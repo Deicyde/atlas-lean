@@ -20,7 +20,7 @@ public import Mathlib.Topology.UnitInterval
 For a joint probability distribution `D` over `X × Bool` (Shalev-Shwartz and
 Ben-David, *Understanding Machine Learning: From Theory to Algorithms* (2014),
 §3.2.1), the Bayes optimal predictor thresholds the conditional label
-probability at `1/2`, and no classifier has lower 0-1 error (Exercise 3.7).
+probability at `1/2`, and no measurable classifier has lower 0-1 error (Exercise 3.7).
 Labels are `Bool`, with `true` as label 1 and `false` as label 0.
 
 The conditional label probability is read off a disintegrating Markov kernel
@@ -41,9 +41,13 @@ namespace Cslib.MachineLearning.PACLearning
 open MeasureTheory ProbabilityTheory
 
 /-- The conditional true-label probability at `x` from a Markov label kernel:
-the kernel mass of `{true}`, as a point of the unit interval. For the regular
-conditional probability `D.condKernel` of a joint law `D`, this is `P[y = 1 | x]`.
-Deterministic labels give the endpoints `0` and `1`. -/
+the kernel mass of `{true}`, as a point of the unit interval. A chosen
+conditional version gives a version of the conditional true-label probability:
+for the regular conditional probability `D.condKernel` of a joint law `D`,
+this is `P[y = 1 | x]`. If the kernel value at a point is a point mass at
+`false` or at `true`, the value there is `0` or `1`. For a joint law with
+deterministic labels, the endpoint assertion for an arbitrary disintegration
+holds almost everywhere for the first marginal. -/
 noncomputable def kernelTrueProb {X : Type*} [MeasurableSpace X]
     (κ : Kernel X Bool) [IsMarkovKernel κ] (x : X) : unitInterval :=
   ⟨(κ x {true}).toReal, by
@@ -62,8 +66,9 @@ theorem measurable_kernelTrueProb {X : Type*} [MeasurableSpace X]
       (Kernel.measurable_coe κ (measurableSet_singleton true))
   exact htoReal.subtype_mk
 
-/-- A classifier's 0-1 error under a disintegrated joint law is the marginal
-lower integral of its conditional wrong-label mass. -/
+/-- For a probability law on the product with `Bool`, a Markov kernel
+disintegrating that law, and a measurable classifier, the classifier's 0-1
+error is the marginal lower integral of its conditional wrong-label mass. -/
 private theorem error_eq_lintegral_wrongProb {X : Type*} [MeasurableSpace X]
     (D : Measure (X × Bool)) [IsProbabilityMeasure D]
     (κ : Kernel X Bool) [IsMarkovKernel κ] [D.IsCondKernel κ]
@@ -82,8 +87,10 @@ private theorem error_eq_lintegral_wrongProb {X : Type*} [MeasurableSpace X]
   intro x
   rw [hsec x, apply_ite (κ x)]
 
-/-- At each point, the Bayes predictor's conditional wrong-label mass is the
-minimum of the two conditional label masses. -/
+/-- For a Markov kernel from the input space to `Bool`, the Bayes predictor's
+conditional wrong-label mass at each point is the minimum of the two kernel
+masses. The pointwise threshold argument uses the two kernel masses summing
+to one and needs no joint law. -/
 private theorem bayes_condError_eq_min {X : Type*} [MeasurableSpace X]
     (κ : Kernel X Bool) [IsMarkovKernel κ] (x : X) :
     (if binaryBayesClassifier (kernelTrueProb κ) x then κ x {false}
@@ -147,8 +154,9 @@ theorem error_binaryBayesClassifier_condKernel_le {X : Type*} [MeasurableSpace X
     error D (binaryBayesClassifier (kernelTrueProb D.condKernel)) ≤ error D g := by
   exact error_binaryBayesClassifier_le D D.condKernel g hg
 
-/-- The Bayes predictor attains the optimal 0-1 error over the class of
-measurable classifiers. -/
+/-- For a probability law on the product with `Bool`, the optimal 0-1 error
+over the class of measurable classifiers is attained by the threshold built
+from the regular conditional kernel of that law. -/
 theorem optimalError_measurable_eq_error_binaryBayesClassifier {X : Type*}
     [MeasurableSpace X] (D : Measure (X × Bool)) [IsProbabilityMeasure D] :
     optimalError D {g : X → Bool | Measurable g} =
@@ -162,10 +170,11 @@ theorem optimalError_measurable_eq_error_binaryBayesClassifier {X : Type*}
     intro g hg
     exact error_binaryBayesClassifier_condKernel_le D g hg
 
-/-- **Bayes-risk formula.** The 0-1 error of the Bayes predictor is the marginal
-mean of the pointwise minimum of the conditional true- and false-label
-probabilities. At the tie `η = 1/2` both labels err with probability `1/2`,
-matching the minimum. -/
+/-- **Bayes-risk formula.** For a probability law on the product with `Bool`
+and a Markov kernel disintegrating that law, the 0-1 error of the Bayes
+predictor is the marginal mean of the pointwise minimum of the conditional
+true- and false-label probabilities. At the tie `η = 1/2` both labels err
+with probability `1/2`, matching the minimum. -/
 theorem error_binaryBayesClassifier_eq_lintegral_min {X : Type*} [MeasurableSpace X]
     (D : Measure (X × Bool)) [IsProbabilityMeasure D]
     (κ : Kernel X Bool) [IsMarkovKernel κ] [D.IsCondKernel κ] :
