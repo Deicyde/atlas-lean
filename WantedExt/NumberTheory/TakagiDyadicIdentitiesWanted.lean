@@ -15,9 +15,13 @@ public import Mathlib.Data.Tree.Basic
 public import Mathlib.NumberTheory.Padics.PadicVal.Defs
 public import MathlibExt.Analysis.SpecialFunctions.TakagiFunction
 public import MathlibExt.NumberTheory.Digits.BinaryDigitSum
+public import MathlibExt.NumberTheory.TakagiDNodeEvenSuccessor
+public import MathlibExt.NumberTheory.TakagiDNodeOddSuccessor
 public import MathlibExt.NumberTheory.TakagiDNodeSuccessor
 public import MathlibExt.NumberTheory.TakagiDNodeLevelPred
 public import MathlibExt.NumberTheory.TakagiDyadicIdentities
+public import MathlibExt.NumberTheory.TakagiDyadicSlope
+public import MathlibExt.NumberTheory.TakagiDNodeTreeCount
 
 /-!
 # Takagi function identities on dyadic rationals
@@ -54,16 +58,6 @@ Sequences 27 (2024), Article 24.2.7, Theorem 8 (`jis-2024-24.2.7-thm-8`). -/
 public theorem_wanted takagi_dyadic_eq_dcDNodes_div (k r : ℕ) (hr : r ≤ 2 ^ k) :
     takagiNewdef r ((k : ℤ) - 1) = (dcDNodes (2 ^ k + r) : ℝ) / 2 ^ k
 
-/-- **Coronado et al.'s count of $D$-nodes in divide-and-conquer trees.** Every
-divide-and-conquer tree with $n$ leaves has exactly $\delta(n)$ $D$-nodes, where $\delta$ is the
-function on positive integers given by $\delta(1) = 0$, $\delta(2m) = 2\delta(m)$ and
-$\delta(2m+1) = \delta(m) + \delta(m+1) + 1$ for $m \ge 1$.
-
-Source: Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer
-Sequences 27 (2024), Article 24.2.7, Theorem 9 (`jis-2024-24.2.7-thm-9`). -/
-public theorem_wanted treeDNodes_eq_dcDNodes_of_isDivideConquerTree (t : BinaryTree Unit)
-    (ht : IsDivideConquerTree t) : treeDNodes t = dcDNodes t.numLeaves
-
 /-- **Level-sum formula for the divide-and-conquer D-node count.** Let $\delta$ be the
 divide-and-conquer D-node count. For every integer $n > 0$, let $k = \lfloor \log_2 n \rfloor$,
 let $\lambda_i(n)$ be the level-$i$ D-node count, and let $n_i$ be the binary digit of $n$ at
@@ -88,25 +82,6 @@ Source: Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal 
 Sequences 27 (2024), Article 24.2.7, Lemma 18 (`jis-2024-24.2.7-lem-18`). -/
 public theorem_wanted dcDNodes_two_pow_succ_sub (k r : ℕ) (hr : r ≤ 2 ^ k) :
     dcDNodes (2 ^ (k + 1) - r) = dcDNodes (2 ^ k + r)
-
-/-- **Successor formula for the D-node count at even arguments.** Let $\delta$ be the
-divide-and-conquer D-node count and $s_1(n)$ the number of ones in the binary expansion of $n$.
-For every even integer $n > 0$, $\delta(n+1) = \delta(n) + \lfloor \log_2 n \rfloor - 2 s_1(n) + 2$.
-
-Source: Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer
-Sequences 27 (2024), Article 24.2.7, Lemma 19 (`jis-2024-24.2.7-lem-19`). -/
-public theorem_wanted dcDNodes_succ_of_even (n : ℕ) (hn : 0 < n) (heven : Even n) :
-    (dcDNodes (n + 1) : ℤ) = dcDNodes n + Nat.log 2 n - 2 * (Nat.digits 2 n).sum + 2
-
-/-- **Successor formula for the D-node count at odd arguments.** Let $\delta$ be the
-divide-and-conquer D-node count and $s_1(n)$ the number of ones in the binary expansion of $n$.
-For every odd natural number $n$,
-$\delta(n+1) = \delta(n) + \lfloor \log_2 n \rfloor - 2 s_1(n) + 2$.
-
-Source: Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer
-Sequences 27 (2024), Article 24.2.7, Lemma 20 (`jis-2024-24.2.7-lem-20`). -/
-public theorem_wanted dcDNodes_succ_of_odd (n : ℕ) (hodd : Odd n) :
-    (dcDNodes (n + 1) : ℤ) = dcDNodes n + Nat.log 2 n - 2 * (Nat.digits 2 n).sum + 2
 
 /-- **Binary-digit formula for the divide-and-conquer D-node count.** Let $\delta$ be the
 divide-and-conquer D-node count and let $s_1(m)$ be the number of ones in the binary expansion
@@ -203,18 +178,6 @@ public theorem_wanted takagi_dyadic_eq_sum_digit_weight (k r : ℕ) (hr : r < 2 
         (∑ i ∈ range k,
           2 ^ i * (((2 ^ k + r) / 2 ^ i % 2 : ℕ) : ℝ) *
             ((k : ℝ) - i - 2 * (Nat.digits 2 ((2 ^ k + r) / 2 ^ i)).sum + 4)) / 2 ^ k
-
-/-- **Binary digit sum from consecutive Takagi values.** Let $k$ and $r$ be natural numbers
-with $r < 2^k$, let $n = 2^k + r$, and let $s_1(n)$ be the sum of the binary digits of $n$.
-Writing $\tau(m, k - 1)$ for the Takagi value of the dyadic presentation $m / 2^k$, one has
-$s_1(n) = 2^{k-1} \bigl(\tau(r, k - 1) - \tau(r + 1, k - 1)\bigr) + (k + 2)/2$.
-
-Source: Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer
-Sequences 27 (2024), Article 24.2.7, Theorem 28 (`jis-2024-24.2.7-thm-28`). -/
-public theorem_wanted hammingWeight_eq_takagi_diff (k r : ℕ) (hr : r < 2 ^ k) :
-    ((Nat.digits 2 (2 ^ k + r)).sum : ℝ) =
-      2 ^ k / 2 * (takagiNewdef r ((k : ℤ) - 1) - takagiNewdef (r + 1) ((k : ℤ) - 1)) +
-        ((k : ℝ) + 2) / 2
 
 /-- **Trollope's formula via the Takagi function.** For a natural number $m$, write $s_1(m)$ for
 the sum of the binary digits of $m$ and $S_1(m) = \sum_{i=0}^{m-1} s_1(i)$. Let $k$ and $r$ be
