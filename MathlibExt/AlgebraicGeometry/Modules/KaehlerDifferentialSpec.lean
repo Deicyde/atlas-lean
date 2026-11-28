@@ -8,58 +8,48 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Algebra.Category.ModuleCat.Differentials.Presheaf
+public import MathlibExt.AlgebraicGeometry.Modules.KaehlerDifferential
 public import Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification
 public import Mathlib.AlgebraicGeometry.Modules.Tilde
 public import Mathlib.RingTheory.Etale.Kaehler
 public import Mathlib.RingTheory.Smooth.StandardSmoothCotangent
 
 /-!
-# The sheaf of relative differentials of a scheme over a ring
+# Universal property and affine computation of the sheaf of relative Kähler differentials
 
-Let `X` be a scheme and `φ : R ⟶ Γ(X, ⊤)` a ring map (equivalently, a morphism `X ⟶ Spec R`).
+For a morphism of schemes `f : X ⟶ Spec R`, `Scheme.Hom.kaehler f` is the sheafification of the
+presheaf `U ↦ Ω[Γ(X, U)⁄R]` (`MathlibExt.AlgebraicGeometry.Modules.KaehlerDifferential`). This
+file proves:
 
-* `AlgebraicGeometry.Scheme.relativeDifferentialsPresheaf φ` is the presheaf of
-  `𝒪_X`-modules `U ↦ Ω[𝒪_X(U)⁄R]`, i.e. Mathlib's
-  `PresheafOfModulesOfCommRing.DifferentialsConstruction.relativeDifferentials'` applied to the
-  morphism `constToPresheaf φ` from the constant presheaf of rings `R` to `𝒪_X`.
-* `AlgebraicGeometry.Scheme.relativeDifferentials φ : X.Modules` is its sheafification.
-* `AlgebraicGeometry.Scheme.relativeDifferentialsHomEquiv` is its universal property:
-  morphisms `relativeDifferentials φ ⟶ F` of `𝒪_X`-modules are in bijection with derivations
-  `𝒪_X → F` vanishing on the image of `R`.
-
-For a ring map `f : R ⟶ A` and `X = Spec A` (with `φ = f ≫ (ΓSpecIso A).inv`):
-
-* `AlgebraicGeometry.Scheme.relativeDifferentialsSpecIso f` is an isomorphism of
-  `𝒪_{Spec A}`-modules between `relativeDifferentials φ` and `Ω[A⁄R]^~`
+* `AlgebraicGeometry.Scheme.Hom.kaehlerHomEquiv f F`: the universal property. Morphisms
+  `f.kaehler ⟶ F` of `𝒪_X`-modules correspond to derivations `𝒪_X → F` vanishing on the image
+  of `R` (derivations for `f.constToPresheaf`), by composition with the universal derivation
+  `kaehlerDerivation f` (`kaehlerHomEquiv_apply`, `kaehlerHomEquiv_symm_comp`).
+* For a ring map `f : R ⟶ A`, `AlgebraicGeometry.Scheme.kaehlerSpecIso f` is an isomorphism
+  of `𝒪_{Spec A}`-modules between `(Spec.map f).kaehler` and `Ω[A⁄R]^~`
   (`tilde (CommRingCat.KaehlerDifferential f)`); in particular the sheaf is quasi-coherent.
-* `AlgebraicGeometry.Scheme.relativeDifferentialsSpecΓIso f` is the resulting isomorphism of
-  `A`-modules `Γ(Spec A, Ω) ≅ Ω[A⁄R]`, and `relativeDifferentialsSpecΓIso_hom_d` says that it
-  sends the universal derivation of `a ∈ A` to `d a`.
-* `relativeDifferentialsSpecIsoFree`, `relativeDifferentialsSpecIsoUnit`: a basis of `Ω[A⁄R]`
-  (resp. an isomorphism `Ω[A⁄R] ≅ A`) gives an isomorphism of the sheaf with a free
-  `𝒪_{Spec A}`-module (resp. with `𝒪_{Spec A}`), and
-  `exists_iso_free_of_isStandardSmoothOfRelativeDimension`: if `A` is standard smooth of
-  relative dimension `n` over `R`, the sheaf is free on a set of cardinality `n`.
+* `AlgebraicGeometry.Scheme.kaehlerSpecΓIso f` is the resulting isomorphism of `A`-modules
+  `Γ(Spec A, Ω) ≅ Ω[A⁄R]`, and `kaehlerSpecΓIso_hom_d` says that it sends the universal
+  derivation of `a ∈ A` to `d a`.
+* `kaehlerSpecIsoFree`, `kaehlerSpecIsoUnit`: a basis of `Ω[A⁄R]` (resp. an isomorphism
+  `Ω[A⁄R] ≅ A`) gives an isomorphism of the sheaf with a free `𝒪_{Spec A}`-module (resp. with
+  `𝒪_{Spec A}`), and `exists_iso_free_kaehler_of_isStandardSmoothOfRelativeDimension`: if the
+  `R`-algebra `A` is standard smooth of relative dimension `n`, the sheaf is free on a set of
+  cardinality `n`.
+* `KaehlerDifferential.linearEquivOfIsLocalizedModuleAway`: for a localization `S = A_g` and a
+  localization `t : Ω[A⁄R] → N` of `A`-modules away from `g`, the `S`-linear equivalence
+  `Ω[S⁄R] ≃ N` extending `t`.
 
-## Comparison with the reference
+The base of the relative differentials is the constant presheaf `R` (`constToPresheaf`). The
+affine computation is Stacks Project, Tag 01UT, for `U = X = Spec A` and `V = S = Spec R`, upgraded
+to an isomorphism of sheaves with `Ω[A⁄R]^~`.
 
-The Stacks Project, Tags 01UM and 01UQ, defines `Ω_{X/S}`
-for `f : X → S` using the inverse image `f⁻¹𝒪_S`. Here the base is the constant presheaf `R`
-instead; for `S = Spec R` both have the universal property of Tag 01UR with
-respect to derivations vanishing on `R` (a derivation vanishing on `R` vanishes on local
-fractions of `R`). This file treats the base `R` only: it does not compare the construction with
-the one through `f⁻¹𝒪_S`, and it does not treat a general base scheme `S`. The affine
-computation is Tag 01UT for `U = X = Spec A` and `V = S = Spec R`, upgraded to an
-isomorphism of sheaves with `Ω[A⁄R]^~`; the restriction to an arbitrary affine open of an
-arbitrary `X` (Tag 01US) is outside its scope.
-
-The proof follows the idea of Tag 01UO: on a basic open `D(g)`, the
-isomorphism `Ω[A_g⁄R] ≅ (Ω[A⁄R])_g` (`KaehlerDifferential.isLocalizedModule_map`) defines a
-derivation `𝒪(D(g)) → Ω[A⁄R]^~(D(g))`; these glue along the basis of basic opens to a
-derivation `𝒪_{Spec A} → Ω[A⁄R]^~`, whose induced morphism from the presheaf of relative
-differentials is bijective on basic opens, hence locally bijective, hence becomes an
-isomorphism after sheafification.
+The proof follows the idea of Tag 01UO: on a basic open `D(g)`, the isomorphism
+`Ω[A_g⁄R] ≅ (Ω[A⁄R])_g` (`KaehlerDifferential.isLocalizedModule_map`) defines a derivation
+`𝒪(D(g)) → Ω[A⁄R]^~(D(g))`; these glue along the basis of basic opens to a derivation
+`𝒪_{Spec A} → Ω[A⁄R]^~`, whose induced morphism from the presheaf of relative differentials is
+bijective on basic opens, hence locally bijective, hence becomes an isomorphism after
+sheafification.
 -/
 
 @[expose] public section
@@ -68,46 +58,44 @@ universe u
 
 open CategoryTheory Opposite TopologicalSpace PresheafOfModulesOfCommRing
 
-
-namespace KaehlerDifferential.LocalizationAux
+namespace KaehlerDifferential
 
 variable {R A S N : Type u} [CommRing R] [CommRing A] [CommRing S] [Algebra R A] [Algebra R S]
   [Algebra A S] [IsScalarTower R A S] (g : A) [IsLocalization.Away g S]
   [AddCommGroup N] [Module A N] [Module S N] [IsScalarTower A S N]
   (t : Ω[A⁄R] →ₗ[A] N) [ht : IsLocalizedModule.Away g t]
 
-/-- Let `R → A → S` with `S` a localization of `A` away from `g`, and let `t : Ω[A⁄R] → N` be a
-localization of `A`-modules away from `g`, where `N` is also an `S`-module. This is the
-`S`-linear map `Ω[S⁄R] → N` extending `t` along `Ω[A⁄R] → Ω[S⁄R]`; it is bijective
-(`liftOfLocalization_bijective`). -/
-noncomputable def liftOfLocalization : Ω[S⁄R] →ₗ[S] N :=
+/-- **Kähler differentials of a localization away from an element.** Let `R → A → S` with `S` a
+localization of `A` away from `g`, and let `t : Ω[A⁄R] → N` be a localization of `A`-modules
+away from `g`, where `N` is also an `S`-module. This is the `S`-linear equivalence
+`Ω[S⁄R] ≃ N` extending `t` along `Ω[A⁄R] → Ω[S⁄R]` (`linearEquivOfIsLocalizedModuleAway_map`).
+-/
+noncomputable def linearEquivOfIsLocalizedModuleAway : Ω[S⁄R] ≃ₗ[S] N :=
   haveI := KaehlerDifferential.isLocalizedModule_map R A S (.powers g)
-  LinearMap.extendScalarsOfIsLocalization (.powers g) S
-    (IsLocalizedModule.linearEquiv (.powers g) (KaehlerDifferential.map R R A S) t).toLinearMap
+  LinearEquiv.extendScalarsOfIsLocalization (.powers g) S
+    (IsLocalizedModule.linearEquiv (.powers g) (KaehlerDifferential.map R R A S) t)
 
-/-- `liftOfLocalization` is bijective. -/
-lemma liftOfLocalization_bijective : Function.Bijective (liftOfLocalization (S := S) g t) :=
-  haveI := KaehlerDifferential.isLocalizedModule_map R A S (.powers g)
-  (IsLocalizedModule.linearEquiv (.powers g) (KaehlerDifferential.map R R A S) t).bijective
-
-/-- `liftOfLocalization` extends `t`. -/
-lemma liftOfLocalization_map (x : Ω[A⁄R]) :
-    liftOfLocalization (S := S) g t (KaehlerDifferential.map R R A S x) = t x :=
+/-- `linearEquivOfIsLocalizedModuleAway` extends `t`. -/
+lemma linearEquivOfIsLocalizedModuleAway_map (x : Ω[A⁄R]) :
+    linearEquivOfIsLocalizedModuleAway (S := S) g t (KaehlerDifferential.map R R A S x) = t x :=
   haveI := KaehlerDifferential.isLocalizedModule_map R A S (.powers g)
   IsLocalizedModule.linearEquiv_apply (.powers g) (KaehlerDifferential.map R R A S) t x
 
-lemma liftOfLocalization_D_algebraMap (a : A) :
-    liftOfLocalization (S := S) g t (KaehlerDifferential.D R S (algebraMap A S a)) =
+/-- `linearEquivOfIsLocalizedModuleAway` sends `d (a / 1)` to `t (d a)`. -/
+lemma linearEquivOfIsLocalizedModuleAway_D_algebraMap (a : A) :
+    linearEquivOfIsLocalizedModuleAway (S := S) g t (KaehlerDifferential.D R S (algebraMap A S a)) =
       t (KaehlerDifferential.D R A a) := by
-  rw [← KaehlerDifferential.map_D R R A S, liftOfLocalization_map]
+  rw [← KaehlerDifferential.map_D R R A S, linearEquivOfIsLocalizedModuleAway_map]
 
-/-- The additive map `S → N`, `s ↦ e (d s)`, where `e : Ω[S⁄R] → N` is `liftOfLocalization`. -/
+/-- The additive map `S → N`, `s ↦ e (d s)`, where `e : Ω[S⁄R] ≃ N` is
+`linearEquivOfIsLocalizedModuleAway`. -/
 noncomputable def dOfLocalization : S →+ N :=
-  (liftOfLocalization (S := S) g t).toAddMonoidHom.comp
+  (linearEquivOfIsLocalizedModuleAway (S := S) g t).toLinearMap.toAddMonoidHom.comp
     (KaehlerDifferential.D R S).toLinearMap.toAddMonoidHom
 
 lemma dOfLocalization_apply (s : S) :
-    dOfLocalization g t s = liftOfLocalization (S := S) g t (KaehlerDifferential.D R S s) := rfl
+    dOfLocalization g t s =
+      linearEquivOfIsLocalizedModuleAway (S := S) g t (KaehlerDifferential.D R S s) := rfl
 
 lemma dOfLocalization_mul (s s' : S) :
     dOfLocalization g t (s * s') = s • dOfLocalization g t s' + s' • dOfLocalization g t s := by
@@ -119,7 +107,7 @@ lemma dOfLocalization_algebraMap_base (r : R) :
 
 lemma dOfLocalization_algebraMap (a : A) :
     dOfLocalization (S := S) g t (algebraMap A S a) = t (KaehlerDifferential.D R A a) :=
-  liftOfLocalization_D_algebraMap g t a
+  linearEquivOfIsLocalizedModuleAway_D_algebraMap g t a
 
 /-- Compatibility of `dOfLocalization` with a ring map `ρ : S → S'` under `A` and a compatible
 additive map `ρN : N → N'` sending `t` to `t'`, provided `g` is a non-zero-divisor on `N'`. -/
@@ -145,79 +133,114 @@ lemma dOfLocalization_naturality {g' : A} {S' N' : Type u} [CommRing S'] [Algebr
   rw [algebraMap_smul, algebraMap_smul] at e3
   exact (hreg.pow n) e3
 
-end KaehlerDifferential.LocalizationAux
+end KaehlerDifferential
 
 namespace AlgebraicGeometry.Scheme
 
-section General
-
-variable {R : CommRingCat.{u}} {X : Scheme.{u}} (φ : R ⟶ Γ(X, ⊤))
-
-/-- The morphism from the constant presheaf of rings with value `R` to `𝒪_X` induced by a ring
-map `φ : R ⟶ Γ(X, ⊤)`: on an open `U` it is `φ` followed by restriction to `U`. -/
-@[simps]
-def constToPresheaf : (Functor.const X.Opensᵒᵖ).obj R ⟶ X.presheaf where
-  app U := φ ≫ X.presheaf.map (homOfLE le_top).op
-  naturality U V i := by
-    simp only [Functor.const_obj_obj, Functor.const_obj_map, Category.id_comp, Category.assoc,
-      ← Functor.map_comp]
-    rfl
-
-/-- The presheaf of `𝒪_X`-modules of relative differentials `U ↦ Ω[𝒪_X(U)⁄R]` of a scheme `X`
-over a ring `R` given by `φ : R ⟶ Γ(X, ⊤)`, with restriction maps induced by functoriality of
-Kähler differentials. -/
-noncomputable def relativeDifferentialsPresheaf : PresheafOfModulesOfCommRing.{u} X.presheaf :=
-  DifferentialsConstruction.relativeDifferentials' (constToPresheaf φ)
-
-/-- The sheaf of relative differentials `Ω_{X/R}` of a scheme `X` over a ring `R` given by
-`φ : R ⟶ Γ(X, ⊤)`: the sheafification of `relativeDifferentialsPresheaf φ`. Compare Stacks
-Project, Tag 01UQ, where the base is `f⁻¹𝒪_S`; here it is the constant
-ring `R` (see the module docstring). -/
-noncomputable def relativeDifferentials : X.Modules :=
-  (PresheafOfModules.sheafification (𝟙 X.ringCatSheaf.obj)).obj (relativeDifferentialsPresheaf φ)
-
 /-- The presheaf of `𝒪_X`-modules (over the presheaf of commutative rings `𝒪_X`) underlying an
 `𝒪_X`-module. -/
-noncomputable abbrev Modules.presheafOfModulesOfCommRing (F : X.Modules) :
+noncomputable abbrev Modules.presheafOfModulesOfCommRing {X : Scheme.{u}} (F : X.Modules) :
     PresheafOfModulesOfCommRing.{u} X.presheaf :=
   (PresheafOfModules.restrictScalars (𝟙 X.ringCatSheaf.obj)).obj ((SheafOfModules.forget _).obj F)
 
-/-- Morphisms out of the presheaf of relative differentials correspond to derivations vanishing
-on `R` (the universal property of Mathlib's `relativeDifferentials'`). -/
-noncomputable def relativeDifferentialsPresheafHomEquiv
-    (M : PresheafOfModulesOfCommRing.{u} X.presheaf) :
-    (relativeDifferentialsPresheaf φ ⟶ M) ≃ M.Derivation' (constToPresheaf φ) where
-  toFun g := (DifferentialsConstruction.derivation' (constToPresheaf φ)).postcomp g
-  invFun d := (DifferentialsConstruction.isUniversal' (constToPresheaf φ)).desc d
-  left_inv g := (DifferentialsConstruction.isUniversal' (constToPresheaf φ)).postcomp_injective
+namespace Hom
+
+variable {R : Type u} [CommRing R] {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of R))
+
+/-- Morphisms out of the presheaf `f.kaehlerPresheaf` correspond to derivations vanishing on `R`
+(the universal property of Mathlib's `relativeDifferentials'`), by composition with the universal
+derivation. -/
+noncomputable def kaehlerPresheafHomEquiv (M : PresheafOfModulesOfCommRing.{u} X.presheaf) :
+    (f.kaehlerPresheaf ⟶ M) ≃ M.Derivation' f.constToPresheaf where
+  toFun g := (DifferentialsConstruction.derivation' f.constToPresheaf).postcomp g
+  invFun d := (DifferentialsConstruction.isUniversal' f.constToPresheaf).desc d
+  left_inv g := (DifferentialsConstruction.isUniversal' f.constToPresheaf).postcomp_injective
     _ _ (by simp)
-  right_inv d := (DifferentialsConstruction.isUniversal' (constToPresheaf φ)).fac d
+  right_inv d := (DifferentialsConstruction.isUniversal' f.constToPresheaf).fac d
 
-/-- **Universal property of the sheaf of relative differentials.** Morphisms of `𝒪_X`-modules
-`relativeDifferentials φ ⟶ F` correspond bijectively to derivations `𝒪_X → F` vanishing on the
-image of `R`. Stacks Project, Tag 01UR, with `S`-derivations replaced by
-derivations vanishing on the constant ring `R`. -/
-noncomputable def relativeDifferentialsHomEquiv (F : X.Modules) :
-    (relativeDifferentials φ ⟶ F) ≃ F.presheafOfModulesOfCommRing.Derivation' (constToPresheaf φ) :=
+/-- **Universal property of the sheaf of relative differentials.** For `f : X ⟶ Spec R`,
+morphisms of `𝒪_X`-modules `f.kaehler ⟶ F` correspond bijectively to derivations `𝒪_X → F`
+vanishing on the image of `R`; the bijection is composition with the universal derivation
+`kaehlerDerivation f` (`kaehlerHomEquiv_apply`). Stacks Project, Tag 01UR, with `S`-derivations
+replaced by derivations vanishing on the constant ring `R`. -/
+noncomputable def kaehlerHomEquiv (F : X.Modules) :
+    (f.kaehler ⟶ F) ≃ F.presheafOfModulesOfCommRing.Derivation' f.constToPresheaf :=
   (PresheafOfModules.sheafificationHomEquiv (𝟙 X.ringCatSheaf.obj)).trans
-    (relativeDifferentialsPresheafHomEquiv φ F.presheafOfModulesOfCommRing)
+    (kaehlerPresheafHomEquiv f F.presheafOfModulesOfCommRing)
 
-/-- The universal derivation `𝒪_X → Ω_{X/R}`. -/
-noncomputable def relativeDifferentialsDerivation :
-    (relativeDifferentials φ).presheafOfModulesOfCommRing.Derivation' (constToPresheaf φ) :=
-  relativeDifferentialsHomEquiv φ _ (𝟙 _)
+/-- The universal derivation `𝒪_X → f.kaehler`, vanishing on the image of `R`. -/
+noncomputable def kaehlerDerivation :
+    f.kaehler.presheafOfModulesOfCommRing.Derivation' f.constToPresheaf :=
+  kaehlerHomEquiv f _ (𝟙 _)
 
-end General
+/-- The derivation `kaehlerHomEquiv f F α` attached to `α : f.kaehler ⟶ F` sends `s` to the
+image under `α` of the universal differential of `s`. -/
+lemma kaehlerHomEquiv_apply_d (F : X.Modules) (α : f.kaehler ⟶ F) {U : X.Opens} (s : Γ(X, U)) :
+    (kaehlerHomEquiv f F α).d (X := op U) s =
+      α.val.app (op U) ((kaehlerDerivation f).d (X := op U) s) := by
+  have h :=
+    (PresheafOfModules.sheafificationAdjunction (𝟙 X.ringCatSheaf.obj)).homEquiv_naturality_right
+      (𝟙 _) α
+  erw [Category.id_comp] at h
+  change ((kaehlerPresheafHomEquiv f _)
+    ((PresheafOfModules.sheafificationAdjunction (𝟙 X.ringCatSheaf.obj)).homEquiv _ _ α)).d s = _
+  rw [h]
+  rfl
+
+/-- **The universal property is composition with the universal derivation** (Stacks Project,
+Tag 01UR): `kaehlerHomEquiv f F α` is `kaehlerDerivation f` followed by the morphism of presheaves
+of modules underlying `α`. -/
+lemma kaehlerHomEquiv_apply (F : X.Modules) (α : f.kaehler ⟶ F) :
+    kaehlerHomEquiv f F α = (kaehlerDerivation f).postcomp
+      ((PresheafOfModules.restrictScalars (𝟙 X.ringCatSheaf.obj)).map
+        ((SheafOfModules.forget _).map α)) := by
+  ext U s
+  exact kaehlerHomEquiv_apply_d f F α (U := U.unop) s
+
+/-- For a derivation `D : 𝒪_X → F` vanishing on `R`, the morphism `(kaehlerHomEquiv f F).symm D`
+composed with the universal derivation `kaehlerDerivation f` is `D`. -/
+lemma kaehlerHomEquiv_symm_comp (F : X.Modules)
+    (D : F.presheafOfModulesOfCommRing.Derivation' f.constToPresheaf) :
+    (kaehlerDerivation f).postcomp ((PresheafOfModules.restrictScalars (𝟙 X.ringCatSheaf.obj)).map
+      ((SheafOfModules.forget _).map ((kaehlerHomEquiv f F).symm D))) = D := by
+  rw [← kaehlerHomEquiv_apply, Equiv.apply_symm_apply]
+
+/-- The morphism `(kaehlerHomEquiv f F).symm D` sends the universal differential of `s` to
+`D s`. -/
+lemma kaehlerHomEquiv_symm_d (F : X.Modules)
+    (D : F.presheafOfModulesOfCommRing.Derivation' f.constToPresheaf) {U : X.Opens}
+    (s : Γ(X, U)) :
+    ((kaehlerHomEquiv f F).symm D).val.app (op U) ((kaehlerDerivation f).d (X := op U) s) =
+      D.d (X := op U) s := by
+  rw [← kaehlerHomEquiv_apply_d, Equiv.apply_symm_apply]
+
+/-- Two morphisms out of `f.kaehler` agreeing on all universal differentials `d s` are equal. -/
+lemma kaehler_hom_ext {F : X.Modules} {α β : f.kaehler ⟶ F}
+    (h : ∀ (U : X.Opens) (s : Γ(X, U)),
+      α.val.app (op U) ((kaehlerDerivation f).d (X := op U) s) =
+        β.val.app (op U) ((kaehlerDerivation f).d (X := op U) s)) :
+    α = β := by
+  apply (kaehlerHomEquiv f F).injective
+  ext U s
+  rw [kaehlerHomEquiv_apply_d, kaehlerHomEquiv_apply_d]
+  exact h U.unop s
+
+end Hom
 
 section Spec
 
-variable {R A : CommRingCat.{u}} (f : R ⟶ A)
+variable {R : Type u} [CommRing R] {A : CommRingCat.{u}} (f : CommRingCat.of R ⟶ A)
 
-namespace RelativeDifferentialsSpec
+/-- For a ring map `f : R ⟶ A`, the base map `(Spec.map f).constToPresheaf` at an open `U` of
+`Spec A` is `f` followed by `A ≅ Γ(Spec A, ⊤) ⟶ Γ(Spec A, U)`. -/
+lemma constToPresheaf_Spec_map_app (U : (Spec A).Opens) :
+    (Spec.map f).constToPresheaf.app (op U) =
+      f ≫ (ΓSpecIso A).inv ≫ (Spec A).presheaf.map (homOfLE le_top).op := by
+  rw [ΓSpecIso_inv_naturality_assoc]
+  simp only [Hom.constToPresheaf, Hom.appLE, Hom.appTop]
+  rfl
 
-/-- (Implementation) The map from the constant presheaf `R` to `𝒪_{Spec A}` induced by `f`. -/
-noncomputable abbrev structMap : (Functor.const (Spec A).Opensᵒᵖ).obj R ⟶ (Spec A).presheaf :=
-  constToPresheaf (X := Spec A) (f ≫ (ΓSpecIso A).inv)
+namespace KaehlerSpec
 
 /-- (Implementation) The quasi-coherent sheaf `Ω[A⁄R]^~` on `Spec A`. -/
 noncomputable abbrev tildeΩ : (Spec A).Modules := tilde (CommRingCat.KaehlerDifferential f)
@@ -239,54 +262,66 @@ noncomputable def toOpenₗ (g : A) : CommRingCat.KaehlerDifferential f →ₗ[A
 instance isLocalizedModule_toOpenₗ (g : A) : IsLocalizedModule.Away g (toOpenₗ f g) :=
   inferInstanceAs (IsLocalizedModule.Away g (tilde.toOpen _ (bo g)).hom)
 
+/-- (Implementation) The scalar tower `R → A → Γ(Spec A, D(g))`. -/
+lemma isScalarTower_bo (g : A) :
+    letI := f.hom.toAlgebra
+    letI : Algebra R Γ(Spec A, bo g) :=
+      ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+    IsScalarTower R A Γ(Spec A, bo g) :=
+  letI := f.hom.toAlgebra
+  letI : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  IsScalarTower.of_algebraMap_eq
+    (fun r => ConcreteCategory.congr_hom (constToPresheaf_Spec_map_app f (bo g)) r)
+
 /-- (Implementation) The derivation `Γ(Spec A, D(g)) → Γ(Ω[A⁄R]^~, D(g))` obtained from
 `Ω[A_g⁄R] ≅ (Ω[A⁄R])_g`. -/
 noncomputable def dBasic (g : A) : Γ(Spec A, bo g) →+ Γ(tildeΩ f, bo g) :=
   letI := f.hom.toAlgebra
-  letI : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  haveI : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  KaehlerDifferential.LocalizationAux.dOfLocalization (R := R)
+  letI : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  haveI := isScalarTower_bo f g
+  KaehlerDifferential.dOfLocalization (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g)
 
 lemma dBasic_mul (g : A) (s s' : Γ(Spec A, bo g)) :
     dBasic f g (s * s') = s • dBasic f g s' + s' • dBasic f g s := by
   let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  exact KaehlerDifferential.LocalizationAux.dOfLocalization_mul (R := R)
+  let _ : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  have := isScalarTower_bo f g
+  exact KaehlerDifferential.dOfLocalization_mul (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g) s s'
 
-lemma dBasic_structMap (g : A) (r : R) :
-    dBasic f g ((structMap f).app (op (bo g)) r) = 0 := by
+lemma dBasic_constToPresheaf (g : A) (r : R) :
+    dBasic f g ((Spec.map f).constToPresheaf.app (op (bo g)) r) = 0 := by
   let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  exact KaehlerDifferential.LocalizationAux.dOfLocalization_algebraMap_base (R := R)
+  let _ : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  have := isScalarTower_bo f g
+  exact KaehlerDifferential.dOfLocalization_algebraMap_base (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g) r
 
 lemma dBasic_algebraMap (g : A) (a : A) :
     dBasic f g (algebraMap A Γ(Spec A, bo g) a) =
       toOpenₗ f g (CommRingCat.KaehlerDifferential.d (f := f) a) := by
   let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  exact KaehlerDifferential.LocalizationAux.dOfLocalization_algebraMap (R := R)
+  let _ : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  have := isScalarTower_bo f g
+  exact KaehlerDifferential.dOfLocalization_algebraMap (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g) a
 
 lemma dBasic_naturality {g g' : A} (j : bo g' ⟶ bo g) (s : Γ(Spec A, bo g)) :
     (tildeΩ f).presheaf.map j.op (dBasic f g s) = dBasic f g' ((Spec A).presheaf.map j.op s) := by
   let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  let _ : Algebra R Γ(Spec A, bo g') := ((structMap f).app (op (bo g'))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g') :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  refine KaehlerDifferential.LocalizationAux.dOfLocalization_naturality (R := R)
+  let _ : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  have := isScalarTower_bo f g
+  let _ : Algebra R Γ(Spec A, bo g') :=
+    ((Spec.map f).constToPresheaf.app (op (bo g'))).hom.toAlgebra
+  have := isScalarTower_bo f g'
+  refine KaehlerDifferential.dOfLocalization_naturality (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g)))
     (ht' := (inferInstance : IsLocalizedModule.Away g' (toOpenₗ f g'))) g (toOpenₗ f g)
     (toOpenₗ f g') ((Spec A).presheaf.map j.op).hom ?_ ((tildeΩ f).presheaf.map j.op).hom ?_ ?_
@@ -349,7 +384,7 @@ lemma tildeΩ_ext {U : (Spec A).Opens} {x y : Γ(tildeΩ f, U)}
 
 /-- (Implementation) The derivation `𝒪_{Spec A} → Ω[A⁄R]^~`, vanishing on `R`. -/
 noncomputable def derivationT :
-    (tildeΩ f).presheafOfModulesOfCommRing.Derivation' (structMap f) where
+    (tildeΩ f).presheafOfModulesOfCommRing.Derivation' (Spec.map f).constToPresheaf where
   d {U} := ((dSheaf f).app U).hom
   d_mul {U} a b := by
     apply tildeΩ_ext
@@ -363,46 +398,41 @@ noncomputable def derivationT :
     apply tildeΩ_ext
     intro g hg
     erw [dSheaf_restrict, map_zero]
-    convert dBasic_structMap f g r using 2
-    change (((structMap f).app U) ≫ (Spec A).presheaf.map (homOfLE hg).op) r = _
-    rw [← (structMap f).naturality]
+    convert dBasic_constToPresheaf f g r using 2
+    change (((Spec.map f).constToPresheaf.app U) ≫ (Spec A).presheaf.map (homOfLE hg).op) r = _
+    rw [← (Spec.map f).constToPresheaf.naturality]
     rfl
 
 /-- (Implementation) The comparison morphism from the presheaf `U ↦ Ω[𝒪(U)⁄R]` to
 `Ω[A⁄R]^~`. -/
-noncomputable def mT : relativeDifferentialsPresheaf (f ≫ (ΓSpecIso A).inv) ⟶
-    (tildeΩ f).presheafOfModulesOfCommRing :=
-  (relativeDifferentialsPresheafHomEquiv _ _).symm (derivationT f)
+noncomputable def mT : (Spec.map f).kaehlerPresheaf ⟶ (tildeΩ f).presheafOfModulesOfCommRing :=
+  (Hom.kaehlerPresheafHomEquiv _ _).symm (derivationT f)
 
 lemma mT_app_d (U : (Spec A).Opens) (s : Γ(Spec A, U)) :
     (mT f).app (op U) (CommRingCat.KaehlerDifferential.d s) = (dSheaf f).app (op U) s :=
-  Derivation.congr_d ((DifferentialsConstruction.isUniversal' (structMap f)).fac (derivationT f)) s
+  Derivation.congr_d
+    ((DifferentialsConstruction.isUniversal' (Spec.map f).constToPresheaf).fac (derivationT f)) s
 
-/-- (Implementation) The bijective linear map `Ω[Γ(D(g))⁄R] → Γ(Ω[A⁄R]^~, D(g))`. -/
-noncomputable def eBasic (g : A) : CommRingCat.KaehlerDifferential ((structMap f).app (op (bo g)))
-    →ₗ[Γ(Spec A, bo g)] Γ(tildeΩ f, bo g) :=
+/-- (Implementation) The linear equivalence `Ω[Γ(D(g))⁄R] ≃ Γ(Ω[A⁄R]^~, D(g))`. -/
+noncomputable def eBasic (g : A) :
+    CommRingCat.KaehlerDifferential ((Spec.map f).constToPresheaf.app (op (bo g)))
+      ≃ₗ[Γ(Spec A, bo g)] Γ(tildeΩ f, bo g) :=
   letI := f.hom.toAlgebra
-  letI : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  haveI : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  KaehlerDifferential.LocalizationAux.liftOfLocalization (R := R)
-    (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g)
-
-lemma eBasic_bijective (g : A) : Function.Bijective (eBasic f g) := by
-  let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
-  have : IsScalarTower R A Γ(Spec A, bo g) :=
-    IsScalarTower.of_algebraMap_eq (fun _ => rfl)
-  exact KaehlerDifferential.LocalizationAux.liftOfLocalization_bijective (R := R)
+  letI : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
+  haveI := isScalarTower_bo f g
+  KaehlerDifferential.linearEquivOfIsLocalizedModuleAway (R := R)
     (ht := (inferInstance : IsLocalizedModule.Away g (toOpenₗ f g))) g (toOpenₗ f g)
 
 lemma eBasic_d (g : A) (s : Γ(Spec A, bo g)) :
     eBasic f g (CommRingCat.KaehlerDifferential.d s) = dBasic f g s := rfl
 
-lemma mT_app_bo (g : A) (x : CommRingCat.KaehlerDifferential ((structMap f).app (op (bo g)))) :
+lemma mT_app_bo (g : A)
+    (x : CommRingCat.KaehlerDifferential ((Spec.map f).constToPresheaf.app (op (bo g)))) :
     (mT f).app (op (bo g)) x = eBasic f g x := by
   let := f.hom.toAlgebra
-  let _ : Algebra R Γ(Spec A, bo g) := ((structMap f).app (op (bo g))).hom.toAlgebra
+  let _ : Algebra R Γ(Spec A, bo g) :=
+    ((Spec.map f).constToPresheaf.app (op (bo g))).hom.toAlgebra
   have hx : x ∈ Submodule.span Γ(Spec A, bo g)
       (Set.range (KaehlerDifferential.D R Γ(Spec A, bo g))) := by
     rw [KaehlerDifferential.span_range_derivation]; trivial
@@ -422,7 +452,7 @@ lemma mT_app_bo (g : A) (x : CommRingCat.KaehlerDifferential ((structMap f).app 
 lemma mT_app_bo_bijective (g : A) : Function.Bijective ((mT f).app (op (bo g))) := by
   have : ⇑((mT f).app (op (bo g))) = eBasic f g := funext (mT_app_bo f g)
   rw [this]
-  exact eBasic_bijective f g
+  exact (eBasic f g).bijective
 
 instance isLocallyInjective_mT :
     PresheafOfModules.IsLocallyInjective (Opens.grothendieckTopology (Spec A)) (mT f) where
@@ -468,26 +498,24 @@ noncomputable abbrev sheafAdj (A : CommRingCat.{u}) :=
   _root_.PresheafOfModules.sheafificationAdjunction (𝟙 (Spec A).ringCatSheaf.obj)
 
 /-- (Implementation) The comparison morphism `Ω_{Spec A/R} ⟶ Ω[A⁄R]^~`. -/
-noncomputable def compHom : relativeDifferentials (f ≫ (ΓSpecIso A).inv) ⟶ tildeΩ f :=
+noncomputable def compHom : (Spec.map f).kaehler ⟶ tildeΩ f :=
   ((sheafAdj A).homEquiv _ _).symm (mT f)
 
 /-- (Implementation) The unit of sheafification at the presheaf of relative differentials. -/
-noncomputable abbrev unitη : relativeDifferentialsPresheaf (f ≫ (ΓSpecIso A).inv) ⟶
-    (forgetR A).obj (relativeDifferentials (f ≫ (ΓSpecIso A).inv)) :=
-  (sheafAdj A).homEquiv _ _ (𝟙 (relativeDifferentials (f ≫ (ΓSpecIso A).inv)))
+noncomputable abbrev unitη : (Spec.map f).kaehlerPresheaf ⟶ (forgetR A).obj (Spec.map f).kaehler :=
+  (sheafAdj A).homEquiv _ _ (𝟙 (Spec.map f).kaehler)
 
 /-- (Implementation) The presheaf-level inverse of `mT`, up to sheafification. -/
-noncomputable def nT :
-    (forgetR A).obj (tildeΩ f) ⟶ (forgetR A).obj (relativeDifferentials (f ≫ (ΓSpecIso A).inv)) :=
+noncomputable def nT : (forgetR A).obj (tildeΩ f) ⟶ (forgetR A).obj (Spec.map f).kaehler :=
   (_root_.PresheafOfModules.homEquivOfIsLocallyBijective (mT f)
-    (relativeDifferentials (f ≫ (ΓSpecIso A).inv)).isSheaf).symm (unitη f)
+    (Spec.map f).kaehler.isSheaf).symm (unitη f)
 
 lemma mT_comp_nT : mT f ≫ nT f = unitη f :=
   (_root_.PresheafOfModules.homEquivOfIsLocallyBijective_apply (mT f) _ (nT f)).symm.trans
     (Equiv.apply_symm_apply _ _)
 
 /-- (Implementation) The inverse of `compHom`. -/
-noncomputable def compInv : tildeΩ f ⟶ relativeDifferentials (f ≫ (ΓSpecIso A).inv) :=
+noncomputable def compInv : tildeΩ f ⟶ (Spec.map f).kaehler :=
   (forgetR A).preimage (nT f)
 
 lemma compHom_compInv : compHom f ≫ compInv f = 𝟙 _ := by
@@ -533,57 +561,51 @@ lemma dSheaf_top_algebraMap (a : A) :
   exact (congr($(tilde.toOpen_res (CommRingCat.KaehlerDifferential f) _ _ (homOfLE hg)).hom
     (CommRingCat.KaehlerDifferential.d a))).symm
 
-end RelativeDifferentialsSpec
+end KaehlerSpec
 
-open RelativeDifferentialsSpec in
+open KaehlerSpec in
 /-- **Affine computation of the sheaf of relative differentials.** For a ring map `f : R ⟶ A`,
-the sheaf of relative differentials of `Spec A` over `R` (`relativeDifferentials` for the
-structure map `f ≫ (ΓSpecIso A).inv`) is isomorphic, as an `𝒪_{Spec A}`-module, to the
-quasi-coherent sheaf `Ω[A⁄R]^~` associated with the `A`-module of Kähler differentials.
-This upgrades Stacks Project, Tag 01UT, in the case `U = X = Spec A`,
-`V = S = Spec R`, to an isomorphism of sheaves; the base is the constant ring `R` (see the module
-docstring). -/
-noncomputable def relativeDifferentialsSpecIso :
-    relativeDifferentials (f ≫ (ΓSpecIso A).inv) ≅ tilde (CommRingCat.KaehlerDifferential f) where
+the sheaf `(Spec.map f).kaehler` of relative differentials of `Spec A` over `R` is isomorphic, as
+an `𝒪_{Spec A}`-module, to the quasi-coherent sheaf `Ω[A⁄R]^~` associated with the `A`-module of
+Kähler differentials. This upgrades Stacks Project, Tag 01UT, in the case `U = X = Spec A`,
+`V = S = Spec R`, to an isomorphism of sheaves; the base is the constant ring `R`. -/
+noncomputable def kaehlerSpecIso :
+    (Spec.map f).kaehler ≅ tilde (CommRingCat.KaehlerDifferential f) where
   hom := compHom f
   inv := compInv f
   hom_inv_id := compHom_compInv f
   inv_hom_id := compInv_compHom f
 
 /-- The sheaf of relative differentials of `Spec A` over `R` is quasi-coherent. -/
-instance isQuasicoherent_relativeDifferentials_Spec :
-    (relativeDifferentials (f ≫ (ΓSpecIso A).inv)).IsQuasicoherent :=
+instance isQuasicoherent_kaehler_Spec_map : (Spec.map f).kaehler.IsQuasicoherent :=
   (SheafOfModules.isQuasicoherent (Spec A).ringCatSheaf).prop_of_iso
-    (relativeDifferentialsSpecIso f).symm
+    (kaehlerSpecIso f).symm
     (inferInstance : (tilde (CommRingCat.KaehlerDifferential f)).IsQuasicoherent)
 
 /-- **Global sections of the sheaf of relative differentials of `Spec A` over `R`.** For a ring
-map `f : R ⟶ A`, the `A`-module of global sections of `relativeDifferentials` (for the structure
-map `f ≫ (ΓSpecIso A).inv`) is isomorphic to `Ω[A⁄R]`; by
-`relativeDifferentialsSpecΓIso_hom_d` the isomorphism is compatible with the universal
-derivations. Stacks Project, Tag 01UT, for `U = X = Spec A`, `V = S = Spec R`,
-with the base taken as the constant ring `R`. -/
-noncomputable def relativeDifferentialsSpecΓIso :
-    moduleSpecΓFunctor.obj (relativeDifferentials (f ≫ (ΓSpecIso A).inv)) ≅
-      CommRingCat.KaehlerDifferential f :=
-  moduleSpecΓFunctor.mapIso (relativeDifferentialsSpecIso f) ≪≫ (tilde.isoTop _).symm
+map `f : R ⟶ A`, the `A`-module of global sections of `(Spec.map f).kaehler` is isomorphic to
+`Ω[A⁄R]`; by `kaehlerSpecΓIso_hom_d` the isomorphism is compatible with the universal
+derivations. Stacks Project, Tag 01UT, for `U = X = Spec A`, `V = S = Spec R`, with the base taken
+as the constant ring `R`. -/
+noncomputable def kaehlerSpecΓIso :
+    moduleSpecΓFunctor.obj (Spec.map f).kaehler ≅ CommRingCat.KaehlerDifferential f :=
+  moduleSpecΓFunctor.mapIso (kaehlerSpecIso f) ≪≫ (tilde.isoTop _).symm
 
-open RelativeDifferentialsSpec in
-/-- The isomorphism `relativeDifferentialsSpecΓIso f` sends the universal derivation of the
-global section `a ∈ A` (viewed in `Γ(Spec A, ⊤)` via `ΓSpecIso`) to `d a ∈ Ω[A⁄R]`
-(the compatibility with derivations in Stacks Project, Tag 01UT). -/
-lemma relativeDifferentialsSpecΓIso_hom_d (a : A) :
-    (relativeDifferentialsSpecΓIso f).hom
-      ((relativeDifferentialsDerivation (f ≫ (ΓSpecIso A).inv)).d (X := op ⊤)
-        ((ΓSpecIso A).inv a)) = CommRingCat.KaehlerDifferential.d (f := f) a := by
+open KaehlerSpec in
+/-- The isomorphism `kaehlerSpecΓIso f` sends the universal derivation of the global section
+`a ∈ A` (viewed in `Γ(Spec A, ⊤)` via `ΓSpecIso`) to `d a ∈ Ω[A⁄R]` (the compatibility with
+derivations in Stacks Project, Tag 01UT). -/
+lemma kaehlerSpecΓIso_hom_d (a : A) :
+    (kaehlerSpecΓIso f).hom
+      ((Spec.map f).kaehlerDerivation.d (X := op ⊤) ((ΓSpecIso A).inv a)) =
+        CommRingCat.KaehlerDifferential.d (f := f) a := by
   have h1 : (ΓSpecIso A).inv a = algebraMap A Γ(Spec A, ⊤) a := by
     rw [IsAffineOpen.algebraMap_Spec_obj]
     change _ = ((Spec A).presheaf.map (𝟙 _)) _
     rw [CategoryTheory.Functor.map_id]
     rfl
-  have h2 : (relativeDifferentialsDerivation (f ≫ (ΓSpecIso A).inv)).d (X := op ⊤)
-      ((ΓSpecIso A).inv a) = (unitη f).app (op ⊤)
-        (CommRingCat.KaehlerDifferential.d ((ΓSpecIso A).inv a)) := rfl
+  have h2 : (Spec.map f).kaehlerDerivation.d (X := op ⊤) ((ΓSpecIso A).inv a) =
+      (unitη f).app (op ⊤) (CommRingCat.KaehlerDifferential.d ((ΓSpecIso A).inv a)) := rfl
   have h3 : (compHom f).val.app (op ⊤) ((unitη f).app (op ⊤)
       (CommRingCat.KaehlerDifferential.d ((ΓSpecIso A).inv a))) =
         (mT f).app (op ⊤) (CommRingCat.KaehlerDifferential.d ((ΓSpecIso A).inv a)) :=
@@ -595,36 +617,40 @@ lemma relativeDifferentialsSpecΓIso_hom_d (a : A) :
 
 /-- If `Ω[A⁄R]` has a basis indexed by `ι`, then the sheaf of relative differentials of `Spec A`
 over `R` is isomorphic to the free `𝒪_{Spec A}`-module on `ι`. -/
-noncomputable def relativeDifferentialsSpecIsoFree {ι : Type u}
+noncomputable def kaehlerSpecIsoFree {ι : Type u}
     (b : Module.Basis ι A (CommRingCat.KaehlerDifferential f)) :
-    relativeDifferentials (f ≫ (ΓSpecIso A).inv) ≅ SheafOfModules.free ι :=
-  relativeDifferentialsSpecIso f ≪≫ (tilde.functor A).mapIso b.repr.toModuleIso ≪≫
-    tildeFinsupp ι
+    (Spec.map f).kaehler ≅ SheafOfModules.free ι :=
+  kaehlerSpecIso f ≪≫ (tilde.functor A).mapIso b.repr.toModuleIso ≪≫ tildeFinsupp ι
 
 /-- If `Ω[A⁄R] ≅ A` as `A`-modules (i.e. `Ω[A⁄R]` is free of rank one, generated by
 `e.symm 1`), then the sheaf of relative differentials of `Spec A` over `R` is isomorphic to
 `𝒪_{Spec A}`. -/
-noncomputable def relativeDifferentialsSpecIsoUnit
-    (e : CommRingCat.KaehlerDifferential f ≃ₗ[A] A) :
-    relativeDifferentials (f ≫ (ΓSpecIso A).inv) ≅ SheafOfModules.unit (Spec A).ringCatSheaf :=
-  relativeDifferentialsSpecIso f ≪≫ (tilde.functor A).mapIso e.toModuleIso ≪≫ tildeSelf
+noncomputable def kaehlerSpecIsoUnit (e : CommRingCat.KaehlerDifferential f ≃ₗ[A] A) :
+    (Spec.map f).kaehler ≅ SheafOfModules.unit (Spec A).ringCatSheaf :=
+  kaehlerSpecIso f ≪≫ (tilde.functor A).mapIso e.toModuleIso ≪≫ tildeSelf
 
-/-- If `A` is a (nontrivial) standard smooth `R`-algebra of relative dimension `n` (via `f`), then
-the sheaf of relative differentials of `Spec A` over `R` is isomorphic to a free
-`𝒪_{Spec A}`-module on a set of cardinality `n`. -/
-theorem exists_iso_free_of_isStandardSmoothOfRelativeDimension (n : ℕ) [Nontrivial A]
-    (h : letI := f.hom.toAlgebra; Algebra.IsStandardSmoothOfRelativeDimension n R A) :
+end Spec
+
+/-- If `A` is a nontrivial standard smooth `R`-algebra of relative dimension `n`, then the sheaf
+of relative differentials of `Spec A` over `R` (for `Spec.map` of `algebraMap R A`) is isomorphic
+to a free `𝒪_{Spec A}`-module on a set of cardinality `n`. The hypothesis `Nontrivial A` is used
+to compute the rank of `Ω[A⁄R]`. -/
+theorem exists_iso_free_kaehler_of_isStandardSmoothOfRelativeDimension
+    {R A : Type u} [CommRing R] [CommRing A] [Algebra R A] (n : ℕ) [Nontrivial A]
+    [hA : Algebra.IsStandardSmoothOfRelativeDimension n R A] :
     ∃ (ι : Type u), Cardinal.mk ι = n ∧
-      Nonempty (relativeDifferentials (f ≫ (ΓSpecIso A).inv) ≅ SheafOfModules.free ι) := by
-  let := f.hom.toAlgebra
-  have := h
+      Nonempty ((Spec.map (CommRingCat.ofHom (algebraMap R A))).kaehler ≅
+        SheafOfModules.free ι) := by
+  let f : CommRingCat.of R ⟶ CommRingCat.of A := CommRingCat.ofHom (algebraMap R A)
+  let alg : Algebra R A := f.hom.toAlgebra
+  have : Algebra.IsStandardSmoothOfRelativeDimension n R A := by
+    convert hA
+    exact Algebra.algebra_ext _ _ fun _ => rfl
   have : Algebra.IsStandardSmooth R A :=
     Algebra.IsStandardSmoothOfRelativeDimension.isStandardSmooth n
   let b := Module.Free.chooseBasis A Ω[A⁄R]
   exact ⟨_, b.mk_eq_rank''.trans
     (Algebra.IsStandardSmoothOfRelativeDimension.rank_kaehlerDifferential n),
-    ⟨relativeDifferentialsSpecIsoFree f b⟩⟩
-
-end Spec
+    ⟨kaehlerSpecIsoFree f b⟩⟩
 
 end AlgebraicGeometry.Scheme
