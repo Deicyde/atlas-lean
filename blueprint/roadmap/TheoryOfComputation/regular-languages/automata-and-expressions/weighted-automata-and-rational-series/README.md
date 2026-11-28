@@ -22,3 +22,4 @@ undecidable. Boolean weights give back finite automata and [Kleene's theorem](..
 - [The emptiness problem for probabilistic automata is undecidable](emptiness-problem-for-probabilistic-automata.md)
 - [The value-1 problem for probabilistic automata is undecidable](value-1-problem-for-probabilistic-automata.md)
 - [Tropical automata and matrices](tropical-automata-and-matrices/README.md)
+- [Probabilistic automata and Markov chains](probabilistic-automata/README.md)

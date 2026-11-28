@@ -18,3 +18,4 @@ space–time diagrams of one-dimensional cellular automata, and the reductions f
 - [Combinatorial substitutions](combinatorial-substitutions/README.md)
 - [Deciding the winner of the two-player domino game on the plane is undecidable](deciding-the-winner-of-the-two-player-domino-gam.md)
 - [The domino problem is undecidable for Wang tile sets of parameter 43](domino-problem-for-tile-sets-of-parameter-43.md)
+- [Recognizability of infinite pictures](recognizability-of-infinite-pictures/README.md)
