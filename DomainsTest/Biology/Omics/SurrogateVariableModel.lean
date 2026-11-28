@@ -76,11 +76,12 @@ example : Fintype.card {k // σ₂ k ≠ 0} ≤ 2 ∧ Fintype.card {k // σ₂ k
 
 end Collapse
 
-/-! ### A right singular vector that is not a coordinate axis
+/-! ### A right singular vector on the second coordinate axis
 
 One gene, two arrays and one factor with effect `(0, 3)` and coefficient `1`: the heterogeneity
 matrix `(0  3)` is `1 * (3  0) * Vᵀ` with `V` the swap of the two coordinates, a singular value
-decomposition with `σ = (3, 0)`. The surrogate variable is the first column `(0, 1)` of `V`. -/
+decomposition with `σ = (3, 0)` and `V` not the identity. The surrogate variable is the first
+column `(0, 1)` of `V`, the second coordinate vector. -/
 
 section Swap
 

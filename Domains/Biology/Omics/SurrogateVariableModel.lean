@@ -80,8 +80,8 @@ where `y j : Y` is the primary variable on array `j`, `μ i` the baseline expres
 `f i : Y → ℝ` the effect of the primary variable on gene `i`, `g ℓ : Fin n → ℝ` the effect across
 the arrays of the `ℓ`-th of `L` unmodeled factors (as nonlinear as needed), `γ ℓ i` the
 coefficient of factor `ℓ` for gene `i` (zero when the factor does not affect the gene), and
-`e i j` the gene-specific noise. The sum `∑ ℓ, γ ℓ i * g ℓ j` is the expression heterogeneity,
-which carries the dependence across genes.
+`e i j` the gene-specific noise. The sum `∑ ℓ, γ ℓ i * g ℓ j` is the expression heterogeneity:
+the contribution shared across genes that the unmodeled factors induce.
 
 The noise `e` is an arbitrary matrix: no independence across genes is assumed, while the source
 describes the noise as approximately independent across genes. No relation between `m` and `n`
