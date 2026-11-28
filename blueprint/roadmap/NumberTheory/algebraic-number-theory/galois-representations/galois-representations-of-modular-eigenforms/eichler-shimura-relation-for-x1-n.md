@@ -27,6 +27,7 @@ $0$ reduce to the connected subgroup $\mu_p$ once and to the étale subgroup $p$
 - [The modular curve X₁(N) over Z[1/N]](modular-curve-x1-n-over-z-1-over-n.md), for $X_1(N)_{\mathbb{F}_p}$
 - [Dual abelian variety](../../../../AlgebraicGeometry/abelian-varieties/dual-abelian-variety.md), for $F^\vee$
 - [Polarization](../../../../AlgebraicGeometry/abelian-varieties/polarization.md), for the canonical principal polarization by which $F^\vee$ is an endomorphism of $J_p$
+- [Absolute Frobenius of a scheme](../../../../AlgebraicGeometry/not-yet-classified/frobenius-geometry/absolute-frobenius.md), for the absolute Frobenius $F_{X_1(N)}$ of $X_1(N)_{\mathbb{F}_p}$ and the Frobenius endomorphism $F$ of $J_p$, maps of schemes over $\mathbb{F}_p$ rather than Galois Frobenius elements
 
 ## Proof depends on
 

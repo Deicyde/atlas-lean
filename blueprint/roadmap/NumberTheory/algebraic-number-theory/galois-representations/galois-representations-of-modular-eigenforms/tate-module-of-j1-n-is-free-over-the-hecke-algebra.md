@@ -25,6 +25,7 @@ Jacobian. Then:
 
 - [Hecke operators on the Jacobian of X₁(N) over Z[1/N]](hecke-operators-on-the-jacobian-of-x1-n.md), for $J$, $\mathbb{T}_1(N)$ and $w_\zeta$
 - [Polarization](../../../../AlgebraicGeometry/abelian-varieties/polarization.md), for the canonical principal polarization defining the Weil pairing
+- [Cyclotomic character and Tate twists](../cyclotomic-character-and-tate-twists.md), for the target $\mathbb{Q}_\ell(1)$ of the Weil pairing
 
 ## Proof depends on
 

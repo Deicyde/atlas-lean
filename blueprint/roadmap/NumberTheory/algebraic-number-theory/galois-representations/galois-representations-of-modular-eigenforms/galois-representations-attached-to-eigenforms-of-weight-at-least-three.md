@@ -30,6 +30,7 @@ $k \ge 3$ of
 - [Cusp form](../../../modular-forms-q-series/modular-forms/cusp-form.md), for $S_k(\Gamma_1(N))$
 - [Congruence subgroup $\Gamma_1(N)$](../../../modular-forms-q-series/modular-forms/congruence-subgroup-gamma1.md)
 - [Congruence subgroup $\Gamma_0(N)$](../../../modular-forms-q-series/modular-forms/congruence-subgroup-gamma0.md), for the nebentypus
+- [Modular forms of type (k, ε) on Γ₀(N)](../deligne-serre-theorem-on-weight-one-forms/modular-forms-of-type-k-epsilon.md), for the nebentypus transformation law $f \mid_k \gamma = \chi(d) f$ on $\Gamma_0(N)$
 
 ## Proof depends on
 

@@ -37,11 +37,13 @@ For $N \le 4$ there is no such $f$, as $S_2(\Gamma_1(N)) = 0$.
 - [Cusp form](../../../modular-forms-q-series/modular-forms/cusp-form.md), for $S_2(\Gamma_1(N))$
 - [Congruence subgroup $\Gamma_1(N)$](../../../modular-forms-q-series/modular-forms/congruence-subgroup-gamma1.md)
 - [Congruence subgroup $\Gamma_0(N)$](../../../modular-forms-q-series/modular-forms/congruence-subgroup-gamma0.md), for the nebentypus
+- [Modular forms of type (k, ε) on Γ₀(N)](../deligne-serre-theorem-on-weight-one-forms/modular-forms-of-type-k-epsilon.md), for the nebentypus transformation law $f \mid_2 \gamma = \chi(d) f$ on $\Gamma_0(N)$
 - [Hecke operators $T_n$ on weight-two cusp forms for a group of level $N$](../../../modular-forms-q-series/modular-forms/hecke-operators-of-level-n.md), for the eigenform condition
 
 ## Proof depends on
 
-- [Tate module of the abelian variety attached to a weight-two eigenform](tate-module-of-the-abelian-variety-of-a-weight-two-eigenform.md), for $V_\ell(A_f)$, free of rank $2$ over $\mathbb{Q}_\ell \otimes K_f$, with its unramified $G_{\mathbb{Q}}$-action and characteristic polynomials of Frobenius, for $N \ge 5$
+- [Tate module of the abelian variety attached to a weight-two eigenform](tate-module-of-the-abelian-variety-of-a-weight-two-eigenform.md), for $V_\ell(A_f)$, free of rank $2$ over $\mathbb{Q}_\ell \otimes K_f$ with its continuous $G_{\mathbb{Q}}$-action unramified at every $p \nmid N\ell$, and for its identification with $V_\ell(J_{\mathbb{Q}}) / \mathfrak{p}_f V_\ell(J_{\mathbb{Q}})$, for $N \ge 5$
+- [Frobenius on the Tate module of J₁(N)](frobenius-on-the-tate-module-of-j1-n.md), for the characteristic polynomials $X^2 - (T_p)_* X + p \langle p \rangle_*$ of Frobenius on $V_\ell(J_{\mathbb{Q}})$ over $\mathbb{Q}_\ell \otimes \mathbb{T}_1(N)$, which, with each $T \in \mathbb{T}_1(N)$ replaced by its eigenvalue on $f$, are those of $\rho_{f,\lambda}$, for every normalized eigenform $f$, new or not
 - [Base change to a finite completion as a product of completions](../../discriminants-ramification/completions-of-number-fields-at-finite-places/the-finite-place-completion-tensor-product/completion-tensor-product-alg-equiv.md), for $\mathbb{Q}_\ell \otimes_{\mathbb{Q}} K_f \cong \prod_{\lambda \mid \ell} K_{f,\lambda}$, whose factor at $\lambda$ gives $\rho_{f,\lambda}$
 
 ## Expansion
@@ -51,8 +53,16 @@ This node is still to be broken down. A good expansion states and links:
 - the vanishing $S_2(\Gamma_1(N)) = 0$ for $N < 5$, where $X_1(N)$ has genus $0$ (Conrad, p. 59);
 - the construction for $N \ge 5$: the factor $V_\ell(A_f) \otimes_{\mathbb{Q}_\ell \otimes K_f} K_{f,\lambda}$ of $V_\ell(A_f)$ under
   $\mathbb{Q}_\ell \otimes K_f \cong \prod_{\lambda \mid \ell} K_{f,\lambda}$, a two-dimensional $K_{f,\lambda}$-vector space with a
-  continuous $G_{\mathbb{Q}}$-action whose Frobenius characteristic polynomials are the images of
-  $X^2 - (1 \otimes a_p(f)) X + 1 \otimes p\chi(p)$ (Conrad, Corollary 5.15; Diamond–Im, §12.5);
+  continuous $G_{\mathbb{Q}}$-action unramified at every $p \nmid N\ell$ (Conrad, Corollary 5.15, for a newform; Diamond–Im,
+  Remark 12.5.6);
+- its Frobenius characteristic polynomials, for every normalized eigenform $f$, new or not: through the identification
+  of $V_\ell(A_f)$ with $V_\ell(J_{\mathbb{Q}}) / \mathfrak{p}_f V_\ell(J_{\mathbb{Q}})$, the factor at $\lambda$ is
+  $V_\ell(J_{\mathbb{Q}}) \otimes_{\mathbb{Q}_\ell \otimes \mathbb{T}_1(N)} K_{f,\lambda}$ for the map
+  $\mathbb{Q}_\ell \otimes \mathbb{T}_1(N) \to K_{f,\lambda}$ sending each $T$ to its eigenvalue on $f$, as in Diamond and Im's
+  construction in weight $2$ (§12.5); the characteristic polynomial of an endomorphism of a free module of finite rank
+  commutes with base change along a ring homomorphism, so $\mathrm{Frob}_p$ acts on it with characteristic polynomial
+  $X^2 - a_p(f) X + \chi(p) p$, the image of $X^2 - (T_p)_* X + p \langle p \rangle_*$ (the argument by which Conrad
+  deduces Theorem 5.14 from Theorem 5.12 for a newform);
 - the passage from one arithmetic Frobenius element at one prime over $p$ to every arithmetic Frobenius element at
   every maximal ideal of $\overline{\mathbb{Z}}$ over $p$: $G_{\mathbb{Q}}$ permutes these maximal ideals transitively, two
   arithmetic Frobenius elements at $\mathfrak{p}$ differ by an element of its inertia group, and characteristic
@@ -67,14 +77,22 @@ This node is still to be broken down. A good expansion states and links:
   $f \in S_2(\Gamma_1(N), \mathbf{C})$ be a newform and $\lambda$ a place of $K_f$ over $\ell$. There exists a continuous
   representation $\rho_{f,\lambda} \colon G_{\mathbf{Q}} \to GL(2, K_{f,\lambda})$ unramified at all $p \nmid N\ell$, with
   $\mathrm{Frob}_p$ having characteristic polynomial $X^2 - a_p(f) X + p\chi_f(p) \in K_{f,\lambda}[X]$"), stated there for
-  newforms.
+  newforms; Theorem 5.12, p. 68, the characteristic polynomial $X^2 - (T_p)_* X + p \langle p \rangle_*$ of
+  $\rho_{N,\ell}(\mathrm{Frob}_p)$ "relative to the $\mathbf{Q}_\ell \otimes \mathbf{T}_1(N)$-module structure on $V_\ell(N)$", which
+  concerns no particular form, and the proof of Theorem 5.14, p. 69, which deduces the newform case from it ("we just
+  have to check that the $\mathbf{Q}_\ell \otimes \mathbf{T}_1(N)$-linear map $V_\ell(\operatorname{Pic}^0_{X_1(N)/\mathbf{Q}}) \to V_\ell(A_f)$
+  identifies the right hand side with the quotient of the left hand side by $\mathfrak{p}_f$").
 - F. Diamond and J. Im, "Modular forms and modular curves", Canadian Mathematical Society Conference
   Proceedings 17 (1995), cited by section, remark and equation numbers: §12.5, (12.5.1), (12.5.2) and Remark 12.5.1
   (for $f \in S_k(\Gamma_1(N))$ a normalized eigenform for the Hecke operators in $\mathbf{T}_N$, "A construction due to
   Shimura [...] for $k = 2$ [...] attaches to $f$ a certain compatible family of $\ell$-adic Galois representations",
   continuous, unramified at $p \nmid N\ell$, with characteristic polynomial $X^2 - \theta(T_p) X + p\theta(S_p)$ of an
-  arithmetic Frobenius), the construction for $k = 2$ from $W_\ell(J_1(N)) \otimes_{\mathbf{T} \otimes \mathbf{Q}_\ell} K_\lambda$,
-  and Remark 12.5.6.
+  arithmetic Frobenius), the construction for $k = 2$ ("We are now ready to define $\rho_\lambda$ as the representation
+  on the $K_\lambda[\mathrm{Gal}(\overline{\mathbf{Q}}/\mathbf{Q})]$-module $W_\ell(J_1(N)) \otimes_{\mathbf{T} \otimes_{\mathbf{Z}} \mathbf{Q}_\ell} K_\lambda$
+  where the map $\mathbf{T} \otimes_{\mathbf{Z}} \mathbf{Q}_\ell \to K_\lambda$ is defined by the eigencharacter $\theta$", with its
+  characteristic polynomial from the Eichler–Shimura relation and the Weil pairing), and Remark 12.5.6 ("The factors,
+  viewed as $K_\lambda[\mathrm{Gal}(\overline{\mathbf{Q}}/\mathbf{Q})]$-modules, give rise to the representations $\rho_\lambda$");
+  the subsection takes $f$ to be a newform only after Remark 12.5.10.
 - H. Darmon, F. Diamond and R. Taylor, "Fermat's Last Theorem", page numbers of the authors' text at
   <https://www.math.mcgill.ca/darmon/pub/Articles/Expository/05.DDT/paper.pdf>: §3.1, pp. 84–86, (3.1.1) and
   Theorem 3.1 (a) ("If $p \nmid N\ell$ then $\rho$ is unramified at $p$ and $\rho(\mathrm{Frob}_p)$ has characteristic
