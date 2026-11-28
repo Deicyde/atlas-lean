@@ -5,3 +5,5 @@ In distance-vector routing, neighbors exchange only their estimates of distances
 - [Distance-vector round](step.md)
 - [Count-to-infinity in distance-vector routing](count-to-infinity-in-distance-vector-routing.md)
 - [Split horizon and poison reverse in distance-vector routing](split-horizon-and-poison-reverse.md)
+- [Asynchronous distributed iterations](asynchronous-distributed-iterations/README.md)
+- [Stable paths problem](stable-paths-problem/README.md)

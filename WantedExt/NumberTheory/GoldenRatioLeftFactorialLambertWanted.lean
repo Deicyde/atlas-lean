@@ -17,7 +17,11 @@ public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 public import Mathlib.NumberTheory.Real.GoldenRatio
 public import MathlibExt.Analysis.SpecialFunctions.LambertWFunction
 public import MathlibExt.NumberTheory.GoldenFactorialExponent
-public import MathlibExt.NumberTheory.GoldenRatioLambertSequence
+public import MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertKurepaPartialIntegralGoldenFactorialExponentBounds
+public import MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertKurepaPartialIntegralLambertSequenceBounds
+public import MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertTwoParameterBounds
+public import MathlibExt.NumberTheory.LambertSequencePartialExpSum
+public import MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertLambertSequenceLtGoldenFactorialExponent
 
 /-!
 # The golden ratio, factorials, and the Lambert `W` function
@@ -25,6 +29,13 @@ public import MathlibExt.NumberTheory.GoldenRatioLambertSequence
 Wanted statements from Petojević, Gorjanac Ranitović, Rastovac and Mandić on the golden
 sequence `α n` (OEIS A214048), the counting sequence `d m` (OEIS A181716), and bounds for
 the left factorial `!n = ∑_{k<n} k!` (OEIS A003422) by Kurepa's partial integral.
+The statement `kurepaPartialIntegral_goldenFactorialExponent_bounds` is proved, and
+`kurepaPartialIntegral` is defined, in
+`MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertKurepaPartialIntegralGoldenFactorialExponentBounds`.
+The statement `kurepaPartialIntegral_lambertSequence_bounds` is proved in
+`MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertKurepaPartialIntegralLambertSequenceBounds`.
+The statement `lambertSequence_lt_goldenFactorialExponent` is proved in
+`MathlibExt.NumberTheory.GoldenRatioLeftFactorialLambertLambertSequenceLtGoldenFactorialExponent`.
 
 The paper's real sequence `a n = -(n - 1) W₋₁(-(1/(n-1)) (4/7)^(1/(n-1)))` uses the
 lower real branch `W₋₁` of the Lambert `W` function. That branch is not defined in the
@@ -79,20 +90,6 @@ public theorem alternatingSignFibonacci_small_values :
       alternatingSignFibonacci 4 = 5 := by
   refine ⟨rfl, rfl, ?_, ?_, ?_⟩ <;> norm_num [alternatingSignFibonacci]
 
-/-- **Kurepa's partial integral.** For a natural number $n$ and a real number $x$, Kurepa's partial
-integral is
-$$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt,$$
-an oriented integral, so for $x < 0$ it is minus the integral over $[x, 0]$.
-
-The paper writes it as $!n(x) = \int_0^x e^{-t} \frac{t^n - 1}{t - 1} \, dt$; the geometric sum
-agrees with $\frac{t^n - 1}{t - 1}$ for $t \ne 1$, and the singularity at $t = 1$ is removable.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Section 1 (the function `!z(x)`) and Sections 3.1-3.3. -/
-public noncomputable def kurepaPartialIntegral (n : ℕ) (x : ℝ) : ℝ :=
-  ∫ t in (0 : ℝ)..x, Real.exp (-t) * ∑ k ∈ Finset.range n, t ^ k
-
 /-- **Kurepa's partial integral vanishes at zero.** For every natural number $n$, Kurepa's partial
 integral $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ satisfies $K_n(0) = 0$.
 
@@ -114,141 +111,6 @@ public theorem_wanted ncard_floor_logb_goldenRatio_eq_alternatingSignFibonacci (
     (hm : 1 ≤ m) :
     (({n : ℕ | 1 ≤ n ∧ ⌊Real.logb goldenRatio n⌋₊ = m}.ncard : ℕ) : ℤ) =
       alternatingSignFibonacci m
-
-/-- **Existence of the Lambert sequences.** Let $h(y) = y e^y$ be the Lambert map. For every
-natural number $n \ge 4$ and every real number $c$ with $0 < c \le 1$ there is a real number
-$a \ge n - 1$ with
-$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1} \, c^{1/(n-1)}.$$
-
-Equivalently, $a = -(n-1) \, W_{-1}\left(-\frac{1}{n-1} c^{1/(n-1)}\right)$, where $W_{-1}$ is the
-lower real branch of the Lambert W function. With $c = 4/7$ this is the paper's $a_n$, and with
-$c = 4/(7m)$ for an integer $m \ge 1$ it is the paper's $A_{n,m}$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Section 3.1 (the lower branch `W₋₁` defining `a n` and `A n m`). -/
-public theorem exists_lambertSequence {n : ℕ} (hn : 4 ≤ n) {c : ℝ} (hc0 : 0 < c)
-    (hc1 : c ≤ 1) :
-    ∃ a : ℝ, (n : ℝ) - 1 ≤ a ∧
-      lambertMap (-a / ((n : ℝ) - 1)) = -(1 / ((n : ℝ) - 1)) * c ^ (1 / ((n : ℝ) - 1)) := by
-  have hn' : (4 : ℝ) ≤ n := by exact_mod_cast hn
-  have hpos : (0 : ℝ) < (n : ℝ) - 1 := by linarith
-  have hcp : 0 < c ^ (1 / ((n : ℝ) - 1)) := Real.rpow_pos_of_pos hc0 _
-  have hcle : c ^ (1 / ((n : ℝ) - 1)) ≤ 1 := Real.rpow_le_one hc0.le hc1 (by positivity)
-  have he : (1 / 3 : ℝ) < Real.exp (-1) := by
-    rw [Real.exp_neg, lt_inv_comm₀ (by norm_num) (Real.exp_pos 1)]
-    have := Real.exp_one_lt_d9
-    norm_num at this ⊢
-    linarith
-  have hq : 1 / ((n : ℝ) - 1) ≤ 1 / 3 := by
-    rw [div_le_div_iff₀ hpos (by norm_num)]
-    linarith
-  obtain ⟨⟨y, hy⟩, hyx⟩ := (existsUnique_lambertMap_lower_preimage
-    (x := -(1 / ((n : ℝ) - 1)) * c ^ (1 / ((n : ℝ) - 1)))
-    (by nlinarith [one_div_pos.2 hpos]) (by nlinarith [one_div_pos.2 hpos])).exists
-  refine ⟨-((n : ℝ) - 1) * y, by nlinarith, ?_⟩
-  rw [show -(-((n : ℝ) - 1) * y) / ((n : ℝ) - 1) = y by field_simp]
-  exact hyx
-
-/-- **The golden factorial exponent exceeds the Lambert sequence.** Let $n > 4$ be an integer, let
-$h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and
-$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
-Then $a < \alpha(n)$, where $\alpha(n)$ is the least positive integer $m$ with $n! \le \varphi^m$
-and $\varphi$ is the golden ratio.
-
-The two conditions on $a$ say exactly that
-$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
-is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Theorem 6 (`jis-2024-24.5.7-thm-6`). -/
-public theorem_wanted lambertSequence_lt_goldenFactorialExponent (n : ℕ) (hn : 4 < n)
-    (a : ℝ) (ha : (n : ℝ) - 1 ≤ a)
-    (hW : lambertMap (-a / ((n : ℝ) - 1)) =
-      -(1 / ((n : ℝ) - 1)) * (4 / 7 : ℝ) ^ (1 / ((n : ℝ) - 1))) :
-    a < goldenFactorialExponent n
-
-/-- **Partial exponential sums at the Lambert sequence.** Let $n \ge 5$ and $k$ be natural numbers
-with $k < n - 2$, let $h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with
-$a \ge n - 1$ and
-$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
-Then
-$$\sum_{t=0}^{k} \frac{a^t}{t!} < \frac{a^{k+1}}{(k+1)!}.$$
-
-The two conditions on $a$ say exactly that
-$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
-is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Lemma 9 (`jis-2024-24.5.7-lem-9`). -/
-public theorem_wanted sum_pow_div_factorial_lt_lambertSequence (n k : ℕ) (hn : 5 ≤ n)
-    (hk : k < n - 2) (a : ℝ) (ha : (n : ℝ) - 1 ≤ a)
-    (hW : lambertMap (-a / ((n : ℝ) - 1)) =
-      -(1 / ((n : ℝ) - 1)) * (4 / 7 : ℝ) ^ (1 / ((n : ℝ) - 1))) :
-    ∑ t ∈ Finset.range (k + 1), a ^ t / (t.factorial : ℝ) <
-      a ^ (k + 1) / ((k + 1).factorial : ℝ)
-
-/-- **Lambert bounds for the left factorial.** Let $n \ge 5$ be an integer, let
-$!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
-$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, let
-$h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and
-$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
-Then $K_n(a) < {!n} < K_n(a) + 1$.
-
-The two conditions on $a$ say exactly that
-$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
-is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$, and $K_n(a)$
-is its $b(n)$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Theorem 10 (`jis-2024-24.5.7-thm-10`). -/
-public theorem_wanted kurepaPartialIntegral_lambertSequence_bounds (n : ℕ) (hn : 5 ≤ n)
-    (a : ℝ) (ha : (n : ℝ) - 1 ≤ a)
-    (hW : lambertMap (-a / ((n : ℝ) - 1)) =
-      -(1 / ((n : ℝ) - 1)) * (4 / 7 : ℝ) ^ (1 / ((n : ℝ) - 1))) :
-    kurepaPartialIntegral n a < ∑ k ∈ Finset.range n, (k.factorial : ℝ) ∧
-      ∑ k ∈ Finset.range n, (k.factorial : ℝ) < kurepaPartialIntegral n a + 1
-
-/-- **Left factorial bounds at the golden factorial exponent.** For every integer $n \ge 1$, let
-$!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
-$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, and let
-$\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$, where $\varphi$ is the
-golden ratio. Then $\beta(n) = K_n(\alpha(n))$ satisfies $\beta(n) < {!n} < \beta(n) + 1$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Theorem 12 (`jis-2024-24.5.7-thm-12`). -/
-public theorem_wanted kurepaPartialIntegral_goldenFactorialExponent_bounds (n : ℕ)
-    (hn : 1 ≤ n) :
-    kurepaPartialIntegral n (goldenFactorialExponent n) <
-        ∑ k ∈ Finset.range n, (k.factorial : ℝ) ∧
-      ∑ k ∈ Finset.range n, (k.factorial : ℝ) <
-        kurepaPartialIntegral n (goldenFactorialExponent n) + 1
-
-/-- **Two-parameter Lambert bounds for the left factorial.** Let $n \ge 5$ and $m \ge 1$ be
-integers, let $!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
-$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, let
-$h(y) = y e^y$ be the Lambert map, and let $A$ be a real number with $A \ge n - 1$ and
-$$h\left(-\frac{A}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7m}\right)^{1/(n-1)}.$$
-Then $K_n(A) < {!n} < K_n(A) + \frac{1}{m}$.
-
-The two conditions on $A$ say exactly that
-$A = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7m}\right)^{1/(n-1)}\right)$, where $W_{-1}$
-is the lower real branch of the Lambert $W$ function; this is the paper's $A(n, m)$, and
-$K_n(A)$ is its $B(n, m)$.
-
-Source: Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio,
-Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024),
-Article 24.5.7, Theorem 14 (`jis-2024-24.5.7-thm-14`). -/
-public theorem_wanted kurepaPartialIntegral_lambertSequence_two_bounds (n m : ℕ)
-    (hn : 5 ≤ n) (hm : 1 ≤ m) (A : ℝ) (hA : (n : ℝ) - 1 ≤ A)
-    (hW : lambertMap (-A / ((n : ℝ) - 1)) =
-      -(1 / ((n : ℝ) - 1)) * (4 / (7 * m) : ℝ) ^ (1 / ((n : ℝ) - 1))) :
-    kurepaPartialIntegral n A < ∑ k ∈ Finset.range n, (k.factorial : ℝ) ∧
-      ∑ k ∈ Finset.range n, (k.factorial : ℝ) < kurepaPartialIntegral n A + 1 / m
 
 /-- **Floor formulas for the left factorial.** Let $!n = \sum_{k=0}^{n-1} k!$ be the left
 factorial, let $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral,
