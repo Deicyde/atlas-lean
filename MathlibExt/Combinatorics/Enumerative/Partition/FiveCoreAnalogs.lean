@@ -13,8 +13,10 @@ public import Mathlib.Data.Int.Interval
 public import Mathlib.RingTheory.PowerSeries.Expand
 public import Mathlib.RingTheory.PowerSeries.Inverse
 import MathlibExt.Combinatorics.Enumerative.Partition.OverpartitionCongruence
+import Mathlib.Data.Fin.VecNotation
 import Mathlib.FieldTheory.KummerExtension
 import Mathlib.RingTheory.RootsOfUnity.Complex
+import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.NormNum
 
@@ -29,6 +31,17 @@ For the signed theta series `t = φ(-q)`, put `s = φ(-q⁵)` and `a = φ(-q²�
 into residues modulo five gives `t = a + b + c` with `b * c = s² - a²`. Gauss's Euler product
 evaluates the product of the five twists of `t` at a primitive fifth root of unity. Summing the
 twists of the quotient then reduces extraction to identities in `a`, `b` and `c`.
+
+The 5-dissections of `φ(q) = f(q, q)` and `ψ(q) = f(q, q³)` hold as identities of integer formal
+power series. We prove them by reindexing each finite coefficient count modulo five.
+
+## References
+
+* Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the
+  5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, pp. 1–15;
+  §1, Theorem 2, and Lemma 10, equations (41) and (42).
+* B. C. Berndt, *Ramanujan's Notebooks*, Part III, Springer-Verlag, 1991, p. 49, Corollary
+  (cited by Bandyopadhyay and Baruah in Lemma 10).
 -/
 
 open PowerSeries
@@ -51,6 +64,66 @@ Article 24.4.5, Section 1 (definition of `f(a, b)`). -/
 def ramanujanThetaPow (i j : ℕ+) : ℤ⟦X⟧ :=
   mk fun m => (((Finset.Icc (-(m : ℤ)) m).filter fun n =>
     ((i : ℕ) : ℤ) * (n * (n + 1) / 2) + ((j : ℕ) : ℤ) * (n * (n - 1) / 2) = m).card : ℤ)
+
+private abbrev thetaWeight (i j : ℕ+) (z : ℤ) : ℤ :=
+  ((i : ℕ) : ℤ) * (z * (z + 1)) + ((j : ℕ) : ℤ) * (z * (z - 1))
+
+/-- **Coefficients of Ramanujan's theta function.** For positive integers $i$ and $j$, the
+coefficient of $q^m$ in $f(q^i, q^j)$ counts the integers $z$ in $[-m,m]$ satisfying
+$i z(z+1) + j z(z-1) = 2m$. -/
+theorem coeff_ramanujanThetaPow (i j : ℕ+) (m : ℕ) :
+    coeff m (ramanujanThetaPow i j) = (((Finset.Icc (-(m : ℤ)) m).filter fun z =>
+      ((i : ℕ) : ℤ) * (z * (z + 1)) + ((j : ℕ) : ℤ) * (z * (z - 1)) = 2 * m).card : ℤ) := by
+  rw [ramanujanThetaPow, coeff_mk]
+  apply congrArg (fun s : Finset ℤ => (s.card : ℤ))
+  apply Finset.ext
+  intro z
+  have ha := Int.mul_ediv_cancel_of_dvd (even_iff_two_dvd.mp (Int.even_mul_succ_self z))
+  have hb := Int.mul_ediv_cancel_of_dvd (even_iff_two_dvd.mp (Int.even_mul_pred_self z))
+  have h : 2 * (((i : ℕ) : ℤ) * (z * (z + 1) / 2) +
+      ((j : ℕ) : ℤ) * (z * (z - 1) / 2)) = thetaWeight i j z := by
+    linear_combination ((i : ℕ) : ℤ) * ha + ((j : ℕ) : ℤ) * hb
+  simp only [Finset.mem_filter]
+  refine and_congr_right fun _ => ?_
+  change _ = (m : ℤ) ↔ thetaWeight i j z = 2 * m
+  rw [← h, mul_right_inj' (by decide : (2 : ℤ) ≠ 0)]
+
+private theorem two_sq_le_thetaWeight (i j : ℕ+) (z : ℤ) : 2 * z ^ 2 ≤ thetaWeight i j z := by
+  have hz₁ : 0 ≤ z * (z + 1) := by nlinarith only [Int.le_self_sq (-z)]
+  have hz₂ : 0 ≤ z * (z - 1) := by nlinarith only [Int.le_self_sq z]
+  have hi : (0 : ℤ) < (i : ℕ) := by exact_mod_cast i.pos
+  have hj : (0 : ℤ) < (j : ℕ) := by exact_mod_cast j.pos
+  dsimp only [thetaWeight]
+  nlinarith only [mul_nonneg (show 0 ≤ ((i : ℕ) : ℤ) - 1 by omega) hz₁,
+    mul_nonneg (show 0 ≤ ((j : ℕ) : ℤ) - 1 by omega) hz₂]
+
+private theorem thetaWeight_even (i j : ℕ+) (z : ℤ) : Even (thetaWeight i j z) :=
+  ((Int.even_mul_succ_self z).mul_left _).add ((Int.even_mul_pred_self z).mul_left _)
+
+private def thetaDegree (i j : ℕ+) (z : ℤ) : ℕ := (thetaWeight i j z / 2).toNat
+
+private theorem twice_thetaDegree (i j : ℕ+) (z : ℤ) :
+    2 * (thetaDegree i j z : ℤ) = thetaWeight i j z := by
+  have h : 0 ≤ thetaWeight i j z := by
+    exact (by positivity : 0 ≤ 2 * z ^ 2).trans (two_sq_le_thetaWeight i j z)
+  rw [thetaDegree, Int.toNat_of_nonneg (Int.ediv_nonneg h (by decide))]
+  exact Int.mul_ediv_cancel_of_dvd (even_iff_two_dvd.mp (thetaWeight_even i j z))
+
+private def thetaFiberEquiv (i j : ℕ+) (m : ℕ) :
+    {z : ℤ // thetaDegree i j z = m} ≃
+      ↥((Finset.Icc (-(m : ℤ)) m).filter fun z => thetaWeight i j z = 2 * m) :=
+  Equiv.subtypeEquivRight fun z => by
+    rw [Finset.mem_filter, Finset.mem_Icc, ← twice_thetaDegree,
+      mul_right_inj' (by decide : (2 : ℤ) ≠ 0)]
+    norm_cast
+    refine ⟨fun hz => ⟨?_, hz⟩, And.right⟩
+    have hw := two_sq_le_thetaWeight i j z
+    rw [← twice_thetaDegree, hz] at hw
+    constructor <;> nlinarith only [hw, Int.le_self_sq z, Int.le_self_sq (-z)]
+
+private theorem theta_coeff_fiber (i j : ℕ+) (m : ℕ) :
+    coeff m (ramanujanThetaPow i j) = (Nat.card {z : ℤ // thetaDegree i j z = m} : ℤ) := by
+  rw [coeff_ramanujanThetaPow, Nat.card_congr (thetaFiberEquiv i j m), Nat.card_eq_finsetCard]
 
 /-- **The 5-core counts.** For a natural number $n$, $c_5(n)$ is the coefficient of $q^n$ in the
 integer power series $f_5^5 / f_1$, where $f_k = \prod_{m \ge 1} (1 - q^{km})$ is the Euler
@@ -159,6 +232,191 @@ theorem mk_psiFiveCoreAnalog_mul :
   rw [hmk, mul_assoc, invOfUnit_mul _ _ h0, mul_one]
 
 end
+
+private structure ThetaPiece where
+  shift : ℕ
+  dilation : ℕ+
+  leftPower : ℕ+
+  rightPower : ℕ+
+
+private noncomputable def ThetaPiece.series (p : ThetaPiece) : ℤ⟦X⟧ :=
+  X ^ p.shift * expand p.dilation p.dilation.ne_zero (ramanujanThetaPow p.leftPower p.rightPower)
+
+private def ThetaPiece.degree (p : ThetaPiece) (z : ℤ) : ℕ :=
+  p.shift + (p.dilation : ℕ) * thetaDegree p.leftPower p.rightPower z
+
+private theorem ThetaPiece.coeff_series (p : ThetaPiece) (m : ℕ) :
+    coeff m p.series = (Nat.card {z : ℤ // p.degree z = m} : ℤ) := by
+  rw [ThetaPiece.series, coeff_X_pow_mul', coeff_expand]
+  split_ifs with hs hd
+  · have he : p.shift + (p.dilation : ℕ) * ((m - p.shift) / p.dilation) = m := by
+      rw [Nat.mul_div_cancel' hd, Nat.add_sub_of_le hs]
+    rw [theta_coeff_fiber]
+    apply congrArg Nat.cast
+    apply Nat.card_congr
+    apply Equiv.subtypeEquivRight
+    intro z
+    dsimp only [ThetaPiece.degree]
+    conv_rhs => rw [← he]
+    rw [Nat.add_left_cancel_iff, Nat.mul_left_cancel_iff p.dilation.pos]
+  · have : IsEmpty {z : ℤ // p.degree z = m} := ⟨fun z => hd ⟨
+      thetaDegree p.leftPower p.rightPower z, by
+        have hz : p.shift + (p.dilation : ℕ) * thetaDegree p.leftPower p.rightPower z = m :=
+          z.property
+        omega⟩⟩
+    simp
+  · have : IsEmpty {z : ℤ // p.degree z = m} := ⟨fun z => hs (by
+      have hz : p.shift + (p.dilation : ℕ) * thetaDegree p.leftPower p.rightPower z = m :=
+        z.property
+      omega)⟩
+    simp
+
+private theorem theta_dissection {α : Type} [Fintype α] (i j : ℕ+) (piece : α → ThetaPiece)
+    (index : α × ℤ → ℤ) (hi : Function.Bijective index)
+    (hw : ∀ a z, thetaWeight i j (index (a, z)) =
+      ((piece a).dilation : ℕ) * thetaWeight (piece a).leftPower (piece a).rightPower z +
+        2 * ((piece a).shift : ℤ)) :
+    ramanujanThetaPow i j = ∑ a, (piece a).series := by
+  classical
+  ext m
+  simp only [map_sum, ThetaPiece.coeff_series, theta_coeff_fiber]
+  have he (a : α) (z : ℤ) : (piece a).degree z = thetaDegree i j (index (a, z)) := by
+    apply Int.ofNat.inj
+    change ((piece a).degree z : ℤ) = (thetaDegree i j (index (a, z)) : ℤ)
+    unfold ThetaPiece.degree
+    push_cast
+    apply (mul_right_inj' (by decide : (2 : ℤ) ≠ 0)).mp
+    linear_combination (((piece a).dilation : ℕ) : ℤ) *
+      twice_thetaDegree (piece a).leftPower (piece a).rightPower z -
+      twice_thetaDegree i j (index (a, z)) - hw a z
+  let e : (Σ a, {z : ℤ // (piece a).degree z = m}) ≃ {z : ℤ // thetaDegree i j z = m} :=
+    (Equiv.subtypeProdEquivSigmaSubtype (fun a z => (piece a).degree z = m)).symm.trans
+      ((Equiv.ofBijective index hi).subtypeEquiv (fun ⟨a, z⟩ => by rw [he]; rfl))
+  have : Finite {z : ℤ // thetaDegree i j z = m} := Finite.of_equiv _ (thetaFiberEquiv i j m).symm
+  have : Finite (Σ a, {z : ℤ // (piece a).degree z = m}) := Finite.of_injective e e.injective
+  have (a : α) : Finite {z : ℤ // (piece a).degree z = m} :=
+    Finite.of_injective (Sigma.mk (β := fun b => {z : ℤ // (piece b).degree z = m}) a)
+      sigma_mk_injective
+  rw [← Nat.card_congr e, Nat.card_sigma, Nat.cast_sum]
+
+-- Use opposite representatives for the two residues giving each nonzero square residue.
+private def phiIndex (p : Fin 5 × ℤ) : ℤ :=
+  ![5 * p.2, 1 - 5 * p.2, 2 - 5 * p.2, 5 * p.2 - 2, 5 * p.2 - 1] p.1
+
+private theorem phiIndex_bijective : Function.Bijective phiIndex := by
+  constructor
+  · rintro ⟨i, x⟩ ⟨j, y⟩ h
+    have hmod (r : Fin 5) (z : ℤ) : phiIndex (r, z) % 5 = (r.val : ℤ) := by
+      fin_cases r <;> norm_num [phiIndex]
+    have hij : i = j := by
+      apply Fin.ext
+      exact_mod_cast (hmod i x).symm.trans ((congrArg (· % 5) h).trans (hmod j y))
+    subst j
+    congr 1
+    fin_cases i <;> simp [phiIndex] at h <;> omega
+  · intro z
+    have hz : z % 5 = 0 ∨ z % 5 = 1 ∨ z % 5 = 2 ∨ z % 5 = 3 ∨ z % 5 = 4 := by omega
+    rcases hz with h | h | h | h | h
+    · refine ⟨(0, z / 5), ?_⟩
+      simp [phiIndex]; omega
+    · refine ⟨(1, (1 - z) / 5), ?_⟩
+      simp [phiIndex]; omega
+    · refine ⟨(2, (2 - z) / 5), ?_⟩
+      simp [phiIndex]; omega
+    · refine ⟨(3, (z + 2) / 5), ?_⟩
+      simp [phiIndex]; omega
+    · refine ⟨(4, (z + 1) / 5), ?_⟩
+      simp [phiIndex]; omega
+
+-- In the pair {t, -t-1}, exactly one index is odd. Write it as 2z-1.
+private def triangularIndex (t : ℤ) : ℤ := if t % 2 = 0 then -(t / 2) else t / 2 + 1
+
+private theorem triangularIndex_eq_iff (t z : ℤ) :
+    triangularIndex t = z ↔ t = 2 * z - 1 ∨ t = -2 * z := by
+  unfold triangularIndex
+  split <;> omega
+
+private theorem triangularIndex_weight (t : ℤ) :
+    thetaWeight 1 3 (triangularIndex t) = t * (t + 1) := by
+  rcases (triangularIndex_eq_iff t (triangularIndex t)).mp rfl with h | h
+  · conv_rhs => rw [h]
+    norm_num [thetaWeight]
+    ring
+  · conv_rhs => rw [h]
+    norm_num [thetaWeight]
+    ring
+
+-- For t(t+1)/2, reflection pairs residues 0 with 4 and 1 with 3; residue 2 is fixed.
+private def psiIndex (p : Fin 3 × ℤ) : ℤ :=
+  ![triangularIndex (-5 * p.2), triangularIndex (1 - 5 * p.2), 5 * p.2 - 1] p.1
+
+private theorem psiIndex_bijective : Function.Bijective psiIndex := by
+  constructor
+  · rintro ⟨i, x⟩ ⟨j, y⟩ h
+    let z := psiIndex (j, y)
+    have hx : psiIndex (i, x) = z := h
+    have hy : psiIndex (j, y) = z := rfl
+    clear_value z
+    clear h
+    fin_cases i <;> fin_cases j <;>
+      simp [psiIndex, triangularIndex_eq_iff] at hx hy ⊢ <;> omega
+  · intro z
+    have hz : (2 * z - 1) % 5 = 0 ∨ (2 * z - 1) % 5 = 1 ∨ (2 * z - 1) % 5 = 2 ∨
+        (2 * z - 1) % 5 = 3 ∨ (2 * z - 1) % 5 = 4 := by omega
+    rcases hz with h | h | h | h | h
+    · refine ⟨(0, -((2 * z - 1) / 5)), ?_⟩
+      simp [psiIndex, triangularIndex_eq_iff]; omega
+    · refine ⟨(1, (2 - 2 * z) / 5), ?_⟩
+      simp [psiIndex, triangularIndex_eq_iff]; omega
+    · refine ⟨(2, (z + 1) / 5), ?_⟩
+      simp [psiIndex]; omega
+    · refine ⟨(1, (1 + 2 * z) / 5), ?_⟩
+      simp [psiIndex, triangularIndex_eq_iff]; omega
+    · refine ⟨(0, -((-2 * z) / 5)), ?_⟩
+      simp [psiIndex, triangularIndex_eq_iff]; omega
+
+local notation "Φ" => ramanujanThetaPow 1 1
+local notation "Ψ" => ramanujanThetaPow 1 3
+
+/-- **5-dissections of Ramanujan's theta functions φ and ψ.** Let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function, $\varphi(q) = f(q, q)$ and $\psi(q) = f(q, q^3)$. As integer power series in $q$,
+$\varphi(q) = \varphi(q^{25}) + 2q f(q^{15}, q^{35}) + 2q^4 f(q^5, q^{45})$ and
+$\psi(q) = f(q^{10}, q^{15}) + q f(q^5, q^{20}) + q^3 \psi(q^{25})$.
+
+Lemma 10 of the source also gives a 5-dissection of $\prod_{m \ge 1} (1 - q^m)^{-1}$ via the
+Rogers–Ramanujan continued fraction; that part is not included.
+
+Source: Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some
+Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024),
+Article 24.4.5, Lemma 10 (`jis-2024-24.4.5-lem-10`). -/
+public theorem theta_five_dissections :
+    Φ = expand 25 (by norm_num) Φ + 2 * X * ramanujanThetaPow 15 35 +
+        2 * X ^ 4 * ramanujanThetaPow 5 45 ∧
+      Ψ = ramanujanThetaPow 10 15 + X * ramanujanThetaPow 5 20 +
+        X ^ 3 * expand 25 (by norm_num) Ψ := by
+  constructor
+  · let p : Fin 5 → ThetaPiece :=
+      ![⟨0, 25, 1, 1⟩, ⟨1, 1, 15, 35⟩, ⟨4, 1, 5, 45⟩, ⟨4, 1, 5, 45⟩, ⟨1, 1, 15, 35⟩]
+    have h := theta_dissection 1 1 p phiIndex phiIndex_bijective (by
+      intro a z
+      fin_cases a <;> norm_num [phiIndex, p, thetaWeight] <;> ring)
+    conv_lhs => rw [h]
+    simp [Fin.sum_univ_succ, p, ThetaPiece.series]
+    ring
+  · let p : Fin 3 → ThetaPiece := ![⟨0, 1, 10, 15⟩, ⟨1, 1, 5, 20⟩, ⟨3, 25, 1, 3⟩]
+    have h := theta_dissection 1 3 p psiIndex psiIndex_bijective (by
+      intro a z
+      fin_cases a <;> simp only [p, psiIndex, Matrix.cons_val_zero', Matrix.cons_val_succ']
+      · rw [triangularIndex_weight]
+        norm_num [thetaWeight]
+        ring
+      · rw [triangularIndex_weight]
+        norm_num [thetaWeight]
+        ring
+      · norm_num [thetaWeight]
+        ring)
+    simpa [Fin.sum_univ_succ, p, ThetaPiece.series, add_assoc] using h
 
 namespace phiFiveCoreAnalog_five_pow_mul
 
@@ -289,30 +547,19 @@ private theorem norm_theta (z : ℂ) (hz : IsPrimitiveRoot z 5) (t : ℂ⟦X⟧)
 
 private theorem theta_coeff (n : ℕ) :
     (ramanujanThetaPow 1 1).coeff n = (Nat.card {x : ℤ // x.natAbs ^ 2 = n} : ℤ) := by
-  rw [ramanujanThetaPow, coeff_mk]
-  push_cast
-  have hex (x : ℤ) : x * (x + 1) / 2 + x * (x - 1) / 2 = x ^ 2 := by
-    have he : 2 ∣ x * (x - 1) := by
-      rcases Int.even_or_odd x with ⟨k, hk⟩ | ⟨k, hk⟩
-      · exact ⟨k * (x - 1), by rw [hk]; ring⟩
-      · exact ⟨x * k, by rw [hk]; ring⟩
-    obtain ⟨k, hk⟩ := he
-    have h : x * (x + 1) = 2 * (k + x) := by linarith only [hk]
-    have h' : x ^ 2 = 2 * k + x := by linarith only [hk]
-    omega
-  simp only [one_mul, hex]
+  rw [theta_coeff_fiber]
   apply congrArg Nat.cast
-  rw [← Nat.card_eq_finsetCard]
   apply Nat.card_congr
   apply Equiv.subtypeEquivRight
-  intro x
-  rw [Finset.mem_filter, Finset.mem_Icc]
-  have hsq : (x.natAbs ^ 2 : ℕ) = n ↔ x ^ 2 = (n : ℤ) := by
-    rw [← Int.natAbs_sq x]
-    norm_cast
-  rw [hsq, and_iff_right_iff_imp]
-  intro hx
-  constructor <;> nlinarith [Int.le_self_sq x, Int.le_self_sq (-x)]
+  intro z
+  have h : thetaDegree 1 1 z = z.natAbs ^ 2 := by
+    apply Int.ofNat.inj
+    change (thetaDegree 1 1 z : ℤ) = ((z.natAbs ^ 2 : ℕ) : ℤ)
+    rw [Nat.cast_pow, Int.natAbs_pow_two]
+    have hw := twice_thetaDegree 1 1 z
+    norm_num [thetaWeight] at hw
+    nlinarith only [hw]
+  rw [h]
 
 private def allButOne {R : Type*} [CommRing R] (f : ℕ → R) : R :=
   ∑ i ∈ range 5, ∏ j ∈ (range 5).erase i, f j
