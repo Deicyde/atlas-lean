@@ -615,8 +615,10 @@ $x_{j+1} = F_j x_j + G_j w_j$ for $j < N$ and $z_j = H_j^\top x_j + v_j$ for $j 
 $x_0, w_0, \dots, w_{N-1}, v_0, \dots, v_N$ are mutually independent with
 $x_0 \sim N(\bar x_0, P_0)$, $w_j \sim N(0, Q_j)$ and $v_j \sim N(0, R_j)$ (their joint law is
 the product of these laws). Write $Z_{k-1} = (z_0, \dots, z_{k-1})$ and $Z_k = (z_0, \dots, z_k)$,
-and let $(\hat x_{k|k-1}, \Sigma_{k|k-1})$ and $(\hat x_{k|k}, \Sigma_{k|k})$ be the predicted and
-filtered beliefs of the Kalman filter. Then for every $k \le N$:
+the observation histories of lengths $k$ and $k + 1$; for $k = 0$, $Z_{-1}$ is the empty tuple, so
+the conditional distribution of $x_0$ given $Z_{-1}$ is the law of $x_0$ and the predicted belief
+is $(\bar x_0, P_0)$. Let $(\hat x_{k|k-1}, \Sigma_{k|k-1})$ and $(\hat x_{k|k}, \Sigma_{k|k})$ be
+the predicted and filtered beliefs of the Kalman filter. Then for every $k \le N$:
 
 * for almost every value of $Z_{k-1}$ under its law, the conditional distribution of $x_k$ given
   $Z_{k-1}$ is $N(\hat x_{k|k-1}(Z_{k-1}), \Sigma_{k|k-1})$, and for almost every value of $Z_k$,
