@@ -69,7 +69,8 @@ noncomputable def step [DecidableEq V] (G : SimpleGraph V) (c : V → V → ℕ)
     (x y : V) : ℕ∞ :=
   if x = y then 0 else ⨅ (v : V) (_ : G.Adj x v), (c x v : ℕ∞) + D v y
 
-/-- A minimum over the neighbors of a vertex whose only neighbor is `v` is the value at `v`. -/
+/-- The minimum of an extended-natural-valued function `f` over the neighbors of a vertex whose
+only neighbor is `v` is `f v`. -/
 private theorem iInf_adj_of_unique {G : SimpleGraph V} {x v : V}
     (hv : ∀ w, G.Adj x w ↔ w = v) (f : V → ℕ∞) :
     ⨅ (w : V) (_ : G.Adj x w), f w = f v :=

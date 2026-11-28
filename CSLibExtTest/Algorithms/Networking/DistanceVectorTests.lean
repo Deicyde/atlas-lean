@@ -14,13 +14,14 @@ import Mathlib.Data.Fin.VecNotation
 /-!
 # Tests for count-to-infinity in distance-vector routing
 
-* The definition: a node's estimate of its own distance is `0`; a node without neighbors, such
-  as `C` after the link `B - C` fails, has no route; and from the direct link costs, one round
-  on the path `A - B - C` gives `A` the estimate `3` of its distance to `C`.
+* The definition: on the network after the link `B - C` fails, a node's estimate of its own
+  distance is `0` after a round, and `C`, which has no neighbor there, has no route; and from
+  the direct link costs, one round on the path `A - B - C` gives `A` the estimate `3` of its
+  distance to `C`.
 * Non-vacuity: the costs `c(A, B) = c(B, A) = 1`, `c(B, C) = c(C, B) = 2` and the shortest
   distances on the path satisfy the hypotheses of `count_to_infinity`. Its conclusions give the
-  updates `4`, `5`, `6` of the example after the failure and estimates above `16`, the infinity
-  of RIP, after `15` rounds.
+  updates `4`, `5`, `6` of the example after the failure and the estimates `17` and `18`, above
+  `16`, the infinity of RIP, after `15` rounds.
 -/
 
 namespace Cslib.Algorithms.Networking.DistanceVector.Tests
@@ -41,7 +42,8 @@ def distances : Fin 3 → Fin 3 → ℕ∞ := ![![0, 1, 3], ![1, 0, 2], ![3, 2, 
 /-- The network after the link `B - C` fails. -/
 abbrev failed : SimpleGraph (Fin 3) := (pathGraph 3).deleteEdges {s(1, 2)}
 
-/-- A node's estimate of its own distance is `0` after a round, whatever the estimates were. -/
+/-- After a round on the network `failed` with the costs `cost`, every node's estimate of its own
+distance is `0`, whatever the estimates were. -/
 example (D : Fin 3 → Fin 3 → ℕ∞) (x : Fin 3) : step failed cost D x x = 0 := by
   simp [step]
 
@@ -68,7 +70,8 @@ example : cost 0 1 = 1 ∧ cost 1 0 = 1 ∧ cost 1 2 = 2 ∧ distances 0 2 = 3 �
     distances 2 2 = 0 :=
   ⟨rfl, rfl, rfl, rfl, rfl, rfl⟩
 
-/-- Before the failure the shortest distances to `C` are stable: a round leaves `D_B(C) = 2`. -/
+/-- Before the failure, one round from the shortest distances leaves `B`'s estimate of its
+distance to `C` at `2`. -/
 example : step (pathGraph 3) cost distances 1 2 = 2 :=
   (count_to_infinity (c := cost) (D := distances) rfl rfl rfl rfl rfl rfl).1 1
 
@@ -79,8 +82,8 @@ example : (step failed cost)^[1] distances 1 2 = 4 ∧ (step failed cost)^[2] di
   have h := (count_to_infinity (c := cost) (D := distances) rfl rfl rfl rfl rfl rfl).2.1
   exact ⟨(h 1).2, (h 2).1, (h 3).2⟩
 
-/-- Each estimate increases by `2` every second round and stays finite: after `2 k` rounds,
-`D_A(C) = 3 + 2 k` and `D_B(C) = 2 + 2 k`. -/
+/-- At every even round both estimates are finite: after `2 k` rounds, `D_A(C) = 3 + 2 k` and
+`D_B(C) = 2 + 2 k`, so each increases by `2` from one even round to the next. -/
 example (k : ℕ) : (step failed cost)^[2 * k] distances 0 2 = ((3 + 2 * k : ℕ) : ℕ∞) ∧
     (step failed cost)^[2 * k] distances 1 2 = ((2 + 2 * k : ℕ) : ℕ∞) := by
   obtain ⟨hA, hB⟩ :=
@@ -88,13 +91,10 @@ example (k : ℕ) : (step failed cost)^[2 * k] distances 0 2 = ((3 + 2 * k : ℕ
   rw [hA, hB]
   constructor <;> congr 1 <;> omega
 
-/-- After `15` rounds both estimates exceed `16`, the infinity of RIP: `D_A(C) = 17` and
-`D_B(C) = 18`. -/
-example : (16 : ℕ∞) < (step failed cost)^[15] distances 0 2 ∧
-    (16 : ℕ∞) < (step failed cost)^[15] distances 1 2 := by
-  obtain ⟨hA, hB⟩ :=
-    (count_to_infinity (c := cost) (D := distances) rfl rfl rfl rfl rfl rfl).2.1 15
-  rw [hA, hB]
-  decide
+/-- After `15` rounds, `D_A(C) = 17` and `D_B(C) = 18`: both estimates exceed `16`, the infinity
+of RIP. -/
+example : (step failed cost)^[15] distances 0 2 = 17 ∧
+    (step failed cost)^[15] distances 1 2 = 18 :=
+  (count_to_infinity (c := cost) (D := distances) rfl rfl rfl rfl rfl rfl).2.1 15
 
 end Cslib.Algorithms.Networking.DistanceVector.Tests
