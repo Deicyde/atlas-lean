@@ -130,8 +130,8 @@ theorem ncard_ne_two_of_adj {W : Type*} [Finite W] {T : SimpleGraph W} {v a b c 
   have := Set.ncard_le_ncard hsub
   omega
 
-/-- If the only neighbour of a kept vertex `A` is the kept vertex `Z`, every walk from `A` to
-another vertex of the graph with its vertices of degree two suppressed passes through `Z`. -/
+/-- If every neighbour of a kept vertex `A` is the kept vertex `Z`, every walk from `A` to another
+vertex of the graph with its vertices of degree two suppressed passes through `Z`. -/
 theorem mem_support_of_forall_adj_eq {W : Type*} {T : SimpleGraph W}
     {A B Z : {v : W // (T.neighborSet v).ncard ≠ 2}} (hA : ∀ K, T.Adj A.1 K → K = Z.1)
     (hAB : A ≠ B) (p : T.suppressDegreeTwo.Walk A B) : Z ∈ p.support := by
@@ -610,7 +610,8 @@ noncomputable def fourBlobNetworkCycleVertex :
     (fun h ↦ fourBlobNetwork_taxonVertex_ne (by decide : (0 : Fin 4) ≠ 2) (Subtype.ext h))
     (fun h ↦ fourBlobNetwork_taxonVertex_ne (by decide : (1 : Fin 4) ≠ 2) (Subtype.ext h))⟩
 
-/-- The only neighbour of the blob of a leaf in the tree of blobs is the blob of the cycle. -/
+/-- Every neighbour of the blob of a leaf in the tree of blobs is the blob of the cycle (to which it
+is adjacent by `fourBlobNetwork_adj_cycle`). -/
 theorem fourBlobNetwork_eq_cycle (x : Fin 4) (K : {H // fourBlobNetwork.semidirected.graph.IsBlob H})
     (hK : fourBlobNetwork.unrootedTreeOfBlobs.Adj (fourBlobNetwork.taxonVertex x).1 K) :
     K = fourBlobNetworkCycleVertex.1 :=
@@ -779,7 +780,7 @@ theorem singleTaxonNetwork_vertexSet : V(singleTaxonNetwork.semidirected.graph) 
   · exact iff_of_true ⟨singleTaxonNetwork.isAcyclic 2,
       fun ⟨_, e, he⟩ ↦ singleTaxonNetwork.src_ne_leaf 0 e he⟩ rfl
 
-/-- The semidirected network has a single blob. -/
+/-- **The semidirected network has at most one blob.** -/
 theorem singleTaxonNetwork_subsingleton_blob :
     Subsingleton {H // singleTaxonNetwork.semidirected.graph.IsBlob H} := by
   refine ⟨fun B₁ B₂ ↦ ?_⟩

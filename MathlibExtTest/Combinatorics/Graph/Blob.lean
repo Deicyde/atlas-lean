@@ -14,8 +14,8 @@ import Mathlib.Tactic.FinCases
 /-!
 # Tests for blobs and the tree of blobs
 
-Two parallel edges between two vertices are not cut edges, and the whole graph is one nontrivial
-blob with no incident edge. A single edge is a cut edge: deleting it raises the number of
+Two parallel edges between two vertices are not cut edges, and the whole graph is a nontrivial
+`0`-blob. A single edge is a cut edge: deleting it raises the number of
 connected components, each end is a trivial blob, the end chosen as root is a `2`-blob and the
 other end a `1`-blob, and the two blobs are adjacent in the tree of blobs. The blob of a pendant
 vertex has at most one neighbour in the tree of blobs. The centre of an infinite
@@ -55,7 +55,7 @@ theorem parallelPair_connected : parallelPair.toSimpleGraph.Connected := by
   · exact .single ⟨0, by simp⟩
   · exact .refl
 
-/-- The two parallel edges form a single blob, the whole graph. -/
+/-- The whole graph, with both parallel edges, is a blob. -/
 theorem parallelPair_isBlob : parallelPair.IsBlob parallelPair :=
   ⟨⟨le_rfl, parallelPair_connected, fun e _ ↦ parallelPair_not_isBridge e⟩, fun _ hK _ ↦ hK.1⟩
 
