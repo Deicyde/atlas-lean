@@ -42,18 +42,6 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Formula for the non-polygonal numbers.** Let $k \ge 3$, and for $j \ge 1$ let
-$T(k, j) = (k - 2) j (j - 1)/2 + j$ be the $k$-gonal numbers. For every integer $n \ge 1$, put
-$s = \lfloor \sqrt{2n/(k - 2)} \rfloor$. Then the $n$-th positive integer that is not of the form
-$T(k, j)$ with $j \ge 1$ equals $n + s + 1$ if $(k - 2) s (s + 1) < 2n$, and $n + s$ otherwise.
-
-Source: Chai Wah Wu, *Algorithms for Complementary Sequences*, INTEGERS 25 (2025),
-Article A95, Theorem 4, Equation (3). -/
-public theorem_wanted nthNonValue_polygonal (k : ℕ) (hk : 3 ≤ k) (n : ℕ) (hn : 1 ≤ n) :
-    let s := Nat.sqrt (2 * n / (k - 2))
-    nthNonValue (fun j => (k - 2) * j * (j - 1) / 2 + j) n =
-      if (k - 2) * s * (s + 1) < 2 * n then n + s + 1 else n + s
-
 /-- **Rounding formula for the non-$k$-gonal numbers, $3 \le k \le 10$.** Let $3 \le k \le 10$;
 the $k$-gonal numbers are $(k - 2) j (j - 1)/2 + j$ for $j \ge 1$. For every $n \ge 1$, the $n$-th
 positive integer that is not a $k$-gonal number equals
@@ -149,18 +137,6 @@ public theorem_wanted nthNonValue_sumPow (k : ℕ) (hk : 1 < k) (n : ℕ) (hn : 
     let h := Nat.nthRoot (k + 1) ((k + 1) * n)
     nthNonValue (fun j => ∑ i ∈ Finset.Icc 1 j, i ^ k) n =
       if n ≤ ∑ i ∈ Finset.Icc 1 h, (i ^ k - 1) then n + h - 1 else n + h
-
-/-- **Integers not of the form $m + 1^k + \cdots + m^k$.** Let $k > 1$. For $n \ge 1$ let $a(n)$
-be the $n$-th positive integer that is not of the form $m + \sum_{i=1}^m i^k$ with $m \ge 1$, and
-let $h = \lfloor ((k + 1) n)^{1/(k+1)} \rfloor$. Then $a(n) = n + h - 1$ if
-$n \le \sum_{i=1}^h i^k$, and $a(n) = n + h$ otherwise.
-
-Source: Chai Wah Wu, *Algorithms for Complementary Sequences*, INTEGERS 25 (2025),
-Article A95, Theorem 11 (third equivalent form). -/
-public theorem_wanted nthNonValue_add_sumPow (k : ℕ) (hk : 1 < k) (n : ℕ) (hn : 1 ≤ n) :
-    let h := Nat.nthRoot (k + 1) ((k + 1) * n)
-    nthNonValue (fun j => j + ∑ i ∈ Finset.Icc 1 j, i ^ k) n =
-      if n ≤ ∑ i ∈ Finset.Icc 1 h, i ^ k then n + h - 1 else n + h
 
 /-- **Formula for the non-simplex numbers.** Let $k$ satisfy $1 < k \le 5$, $k = 7$ or $k = 9$.
 For every integer $n \ge 1$, put $R = \lfloor (k!\, n)^{1/k} \rfloor$ and let
