@@ -31,9 +31,13 @@ kernel trick is `ℝ` itself:
 
 * ground truth by enumeration: the four library members score `12 * 5`, `12 * 7`, `13 * 5` and
   `13 * 7`, so the library scores `300`, which is the inner product `(12 + 13) * (5 + 7)` of the
-  two running sums;
+  two running sums, from the reverse kernel trick at the finite alphabet `Bool`;
 * replacing the prefix `![false, true]` by `![false, false]` takes the total to `180`, a change
-  of `(3 - 13) * 12 = -120`, one inner product;
+  of `(3 - 13) * 12 = -120`, one inner product, and replacing `![true, true]` by itself leaves
+  it at `300`;
+* replacing the one suffix `![true]` of the library of the two prefixes by `![false]` takes its
+  total from `125` to `175`, a change of `(12 + 13) * (7 - 5) = 50`, which enumerating the new
+  library confirms;
 * a pairwise (Potts) score on one prefix position and one suffix position, with its features of
   dimension `card Bool + 2 = 4`;
 * edge cases: a library with no prefix is empty, and the count and the membership test on the
@@ -66,13 +70,13 @@ example : (factorizableLibrary prefixes suffixes).card = 4 := by
   rw [card_factorizableLibrary]
   decide
 
-/-- A sequence is in the library exactly when it is the concatenation of one of the prefixes with
-one of the suffixes: `![false, true, false]` is, and `![true, false, true]` is not. -/
+/-- `![false, true, false]`, the prefix `![false, true]` followed by the suffix `![false]`, is in
+the library, and `![true, false, true]` is not, as `![true, false]` is not one of its prefixes. -/
 example : ![false, true, false] ∈ factorizableLibrary prefixes suffixes ∧
     ![true, false, true] ∉ factorizableLibrary prefixes suffixes := by
   decide
 
-/-- A library with no prefix is empty. -/
+/-- The library of no prefix and the two suffixes `![true]` and `![false]` is empty. -/
 example : factorizableLibrary (∅ : Finset (Fin 2 → Bool)) suffixes = ∅ := by
   decide
 
@@ -102,8 +106,8 @@ theorem sum_score_eq : ∑ z ∈ factorizableLibrary prefixes suffixes, score z 
     Finset.sum_singleton]
   norm_num [score, φp, φs]
 
-/-- The same total from the reverse kernel trick, as one inner product of the two running sums.
--/
+/-- The same total from the reverse kernel trick, `sum_factorizableLibrary_eq_inner` at the finite
+alphabet `Bool` with real scores, as one inner product of the two running sums. -/
 example : ∑ z ∈ factorizableLibrary prefixes suffixes, score z =
     ⟪∑ x ∈ prefixes, φp x, ∑ y ∈ suffixes, φs y⟫_ℝ :=
   sum_factorizableLibrary_eq_inner score_append _ _
@@ -131,6 +135,49 @@ example : ∑ z ∈ factorizableLibrary
     sum_score_eq, suffixes, Finset.sum_pair (by decide)]
   norm_num [φp, φs, RCLike.inner_apply]
 
+/-- Replacing the prefix `![true, true]` by itself, the case `x₁ = x₀` that `x₁ ∉ X.erase x₀`
+allows, leaves the total score at `300`: the change is the inner product of
+`φp ![true, true] - φp ![true, true] = 0`. -/
+example : ∑ z ∈ factorizableLibrary
+    (insert ![true, true] (prefixes.erase ![true, true])) suffixes, score z = 300 := by
+  rw [sum_factorizableLibrary_replace_prefix score_append (X := prefixes)
+      (x₀ := ![true, true]) (x₁ := ![true, true]) (by decide) (by decide),
+    sum_score_eq, sub_self, inner_zero_left, add_zero]
+
+/-! ### Replacing one suffix -/
+
+/-- The library of the two prefixes and the one suffix `![true]` has the members
+`![true, true, true]` and `![false, true, true]`, which score `12 * 5` and `13 * 5`: it scores
+`125`. -/
+theorem sum_score_suffix_true :
+    ∑ z ∈ factorizableLibrary prefixes {![true]}, score z = 125 := by
+  rw [sum_factorizableLibrary, prefixes, Finset.sum_pair (by decide), Finset.sum_singleton,
+    Finset.sum_singleton,
+    show Fin.append ![true, true] ![true] = ![true, true, true] from by decide,
+    show Fin.append ![false, true] ![true] = ![false, true, true] from by decide]
+  norm_num [score, φp, φs]
+
+/-- Replacing the one suffix `![true]`, of feature `5`, by `![false]`, of feature `7`, changes the
+total score by one inner product, `(12 + 13) * (7 - 5) = 50`, taking it from `125` to `175`. -/
+example : ∑ z ∈ factorizableLibrary prefixes
+    (insert ![false] (({![true]} : Finset (Fin 1 → Bool)).erase ![true])), score z = 175 := by
+  rw [sum_factorizableLibrary_replace_suffix score_append prefixes (Y := {![true]})
+      (y₀ := ![true]) (y₁ := ![false]) (by decide) (by decide),
+    sum_score_suffix_true, prefixes, Finset.sum_pair (by decide)]
+  norm_num [φp, φs, RCLike.inner_apply]
+
+/-- The same `175` by enumeration: the new library has the one suffix `![false]`, and its members
+`![true, true, false]` and `![false, true, false]` score `12 * 7` and `13 * 7`. -/
+example : ∑ z ∈ factorizableLibrary prefixes
+    (insert ![false] (({![true]} : Finset (Fin 1 → Bool)).erase ![true])), score z = 175 := by
+  rw [show insert ![false] (({![true]} : Finset (Fin 1 → Bool)).erase ![true]) = {![false]} from
+      by decide,
+    sum_factorizableLibrary, prefixes, Finset.sum_pair (by decide), Finset.sum_singleton,
+    Finset.sum_singleton,
+    show Fin.append ![true, true] ![false] = ![true, true, false] from by decide,
+    show Fin.append ![false, true] ![false] = ![false, true, false] from by decide]
+  norm_num [score, φp, φs]
+
 /-! ### A pairwise (Potts) score -/
 
 /-- The fields of a pairwise score on one prefix position and one suffix position. -/
@@ -144,8 +191,8 @@ def coupling : Fin 2 → Fin 2 → Bool → Bool → ℝ :=
 def pairwiseScore (z : Fin 2 → Bool) : ℝ :=
   (∑ i, field i (z i)) + ∑ i, ∑ j ∈ Finset.Ioi i, coupling i j (z i) (z j)
 
-/-- A pairwise score on a finite alphabet has features of dimension
-`Ls * card Bool + 2 = 1 * 2 + 2 = 4`. -/
+/-- For the Boolean score `pairwiseScore` above, split after its first position, the features
+have dimension `Ls * card Bool + 2 = 1 * 2 + 2 = 4`. -/
 theorem exists_features_pairwiseScore : ∃ φp : (Fin 1 → Bool) → EuclideanSpace ℝ (Fin 4),
     ∃ φs : (Fin 1 → Bool) → EuclideanSpace ℝ (Fin 4),
       ∀ x y, pairwiseScore (Fin.append x y) = ⟪φp x, φs y⟫_ℝ :=
