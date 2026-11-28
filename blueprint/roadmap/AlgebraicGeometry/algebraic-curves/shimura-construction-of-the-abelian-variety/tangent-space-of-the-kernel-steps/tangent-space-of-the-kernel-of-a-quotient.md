@@ -25,7 +25,7 @@ This is Shimura's (1.2), introduced with "We see easily that".
 
 For $v \in Y_B$, relation (1.1) gives $(\delta\nu\, u, v)_B = (u, d\nu\, v)_A$ for all $u \in D_A$, and as $( \ , \ )_A$ is
 perfect, $v$ is orthogonal to $\delta\nu(D_A)$ if and only if $d\nu\, v = 0$. So the right-hand side of (1.2) is the
-kernel of $d\nu$, which is $Y_C$ by the exact sequence $0 \to Y_C \to Y_B \to Y_A \to 0$.
+kernel of $d\nu$, which is $Y_C$ by the exact sequence $0 \to Y_C \to Y_B \to Y_A$.
 
 ## Sources
 
