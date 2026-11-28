@@ -16,9 +16,10 @@ public import Mathlib.GroupTheory.SpecificGroups.Cyclic
 
 For a prime `ℓ` and a field `F` with `ℓ²` elements, the quotient `F^× / 𝔽_ℓ^×` is cyclic of order
 `ℓ + 1` (`FiniteField.isCyclic_quotient_units_zmod_and_card`). When `ℓ` is inert in an imaginary
-quadratic field `K`, this is the group `(𝓞 K / ℓ)^× / (ℤ / ℓ)^×`, the Galois group `G_ℓ` of the
-ring class field tower in Kolyvagin's construction (B. H. Gross, *Kolyvagin's work on modular
-elliptic curves*, 1991, §3, p. 239).
+quadratic field `K`, this is the residue-unit quotient `(𝓞 K / ℓ)^× / (ℤ / ℓ)^×`. If moreover
+`𝓞_Kˣ = {±1}`, that quotient identifies with the Galois group `G_ℓ` of the ring class field of
+conductor `ℓ` over the Hilbert class field of `K`, in Kolyvagin's construction (B. H. Gross,
+*Kolyvagin's work on modular elliptic curves*, 1991, §3, p. 239).
 
 ## Proof
 
