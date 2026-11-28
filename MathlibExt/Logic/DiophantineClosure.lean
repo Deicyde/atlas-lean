@@ -83,9 +83,10 @@ theorem isDiophantine_of_finite (φ : A →+* R) {k : ℕ} {S : Set (Fin k → R
 /-- **Unfolding a Diophantine set into a finite family.** If $S \subseteq R^k$ is Diophantine
 over $R$ with coefficients from $A$ through $\varphi$, then there are $n \in \mathbb{N}$, a finite
 type $\kappa$ and polynomials $(p_j)_{j \in \kappa}$ with coefficients in $A$ in the variables
-$x_1, \dots, x_k, y_1, \dots, y_n$ such that $x \in S$ if and only if $p_j(x, y) = 0$ for all $j$
-and some $y \in R^n$. This is the converse of `MetaMathlibExt.isDiophantine_of_finite`, with
-$\kappa$ the subtype of the given finite set of polynomials. -/
+$x_1, \dots, x_k, y_1, \dots, y_n$ such that $x \in S$ if and only if there is a $y \in R^n$ such
+that $p_j(x, y) = 0$ for every $j$. This is the converse of
+`MetaMathlibExt.isDiophantine_of_finite`, with $\kappa$ the subtype of the given finite set of
+polynomials. -/
 theorem IsDiophantine.exists_family {φ : A →+* R} {k : ℕ} {S : Set (Fin k → R)}
     (hS : IsDiophantine φ S) :
     ∃ (n : ℕ) (κ : Type u) (_ : Fintype κ) (p : κ → MvPolynomial (Fin k ⊕ Fin n) A),

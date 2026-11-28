@@ -69,14 +69,15 @@ example : IsDiophantine (Int.castRingHom ℚ)
       ∀ i, x i = eval₂ (Int.castRingHom ℚ) t (![X 0 ^ 2] i)} :=
   (isDiophantine_univ _ 1).image_eval₂ _
 
-/-- Over $\mathbb{Q}$ a Diophantine set is cut out by a single polynomial. -/
+/-- Over $\mathbb{Q}$ a Diophantine set is the projection of the zero set of a single
+polynomial. -/
 example (S : Set (Fin 2 → ℚ)) (hS : IsDiophantine (Int.castRingHom ℚ) S) :
     ∃ (n : ℕ) (p : MvPolynomial (Fin 2 ⊕ Fin n) ℤ), ∀ x : Fin 2 → ℚ,
       x ∈ S ↔ ∃ y : Fin n → ℚ, eval₂ (Int.castRingHom ℚ) (Sum.elim x y) p = 0 :=
   (IsDiophantine.iff_single _ S).1 hS
 
 /-- Over $\mathbb{Z}$, a linearly ordered and hence formally real ring, a Diophantine set is also
-cut out by a single polynomial. -/
+the projection of the zero set of a single polynomial. -/
 example (S : Set (Fin 1 → ℤ)) (hS : IsDiophantine (RingHom.id ℤ) S) :
     ∃ (n : ℕ) (p : MvPolynomial (Fin 1 ⊕ Fin n) ℤ), ∀ x : Fin 1 → ℤ,
       x ∈ S ↔ ∃ y : Fin n → ℤ, eval₂ (RingHom.id ℤ) (Sum.elim x y) p = 0 :=
