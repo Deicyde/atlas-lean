@@ -21,16 +21,24 @@ In particular $\dim A' = m\,[K : \mathbb{Q}]$.
 
 ## Proof depends on
 
-- [Holomorphic $1$-forms of an abelian variety over $\mathbb{Q}$ and those defined over $\mathbb{Q}$](one-forms-of-an-abelian-variety-over-q.md),
-  for $D_{A'} = \mathbb{C} \otimes_{\mathbb{Q}} D_{A', \mathbb{Q}}$, compatibly with $\delta\beta$ for $\beta$ defined over $\mathbb{Q}$, and
-  $\dim_{\mathbb{Q}} D_{A', \mathbb{Q}} = \dim A'$
+- [Tangent space at the origin of an abelian variety over $\mathbb{Q}$ and of its complexification](one-forms-of-an-abelian-variety-over-q.md),
+  for $Y_{A'} = \mathbb{C} \otimes_{\mathbb{Q}} T_0(A')$
 - [Bijectivity of the evaluation homomorphism](../../../../FieldTheory/extensions-and-closure/separable-extensions-over-separably-closed-field/sep-closed-tensor-hom-bijective.md),
   for the isomorphism $\mathbb{C} \otimes_{\mathbb{Q}} K \to \mathbb{C}^I$, $c \otimes a \mapsto (c\, a^\sigma)_{\sigma \in I}$
 - [Holomorphic $1$-forms and tangent space of a complex abelian variety](../holomorphic-one-forms-steps/holomorphic-one-forms-and-tangent-space.md),
-  for the $\mathbb{Q}$-linear extension of $\delta$ to $\mathrm{End}(A') \otimes \mathbb{Q}$, which reverses products
+  for the identification of $D_{A'}$ with the dual of $Y_{A'}$ by evaluation at the origin, relation (1.1), and the
+  $\mathbb{Q}$-linear extension of $\delta$ to $\mathrm{End}(A') \otimes \mathbb{Q}$, which reverses products
 - [Homomorphisms of abelian schemes and commutativity](../../../abelian-varieties/homomorphisms-of-abelian-schemes.md), for $\mathrm{End}(A')$
 
 ## Proof sketch
+
+By evaluation at the origin and (1.1), $D_{A'}$ is the dual of $Y_{A'}$, and $\delta\beta$ is the transpose of $d\beta$ for
+$\beta \in \mathrm{End}(A')$. As $Y_{A'} = \mathbb{C} \otimes_{\mathbb{Q}} T_0(A')$, the $\mathbb{Q}$-linear forms on $T_0(A')$, extended
+$\mathbb{C}$-linearly, form a $\mathbb{Q}$-subspace $D_{A', \mathbb{Q}}$ of $D_{A'}$ with
+$D_{A'} = \mathbb{C} \otimes_{\mathbb{Q}} D_{A', \mathbb{Q}}$ and $\dim_{\mathbb{Q}} D_{A', \mathbb{Q}} = \dim_{\mathbb{Q}} T_0(A') = \dim A'$. An
+endomorphism $\beta$ defined over $\mathbb{Q}$ is the extension of scalars of an endomorphism $\beta_0$ of $A'$, and
+$d\beta$ is the $\mathbb{C}$-linear extension of the differential of $\beta_0$ at the origin, which preserves $T_0(A')$; so
+$\delta\beta$ preserves $D_{A', \mathbb{Q}}$.
 
 Every element of $\mathrm{End}(A') \otimes \mathbb{Q}$ has a positive integer multiple in $\mathrm{End}(A')$; so for $a \in K$ some
 $n \ge 1$ has $\theta'(n a) = n\, \theta'(a) \in \theta'(K) \cap \mathrm{End}(A')$, which is defined over $\mathbb{Q}$, and
