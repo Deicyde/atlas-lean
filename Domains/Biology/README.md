@@ -19,9 +19,9 @@ Areas: `PopulationGenetics` (with `Admixture/`, `Coalescent/` and `Diffusion/`),
 population models), `Biophysics` (compartment and pharmacokinetic models), `Omics`
 (compositional normalization of count data), `Immunology` (population coverage of peptide
 vaccines), `Demography` (life-table quantities, crude and standardized rates over population
-categories, and Leslie-matrix demography). Distributions,
-Markov chains, statistics and combinatorics that are not specific to biology go under
-`MathlibExt/Probability/…` or `MathlibExt/Combinatorics/…`.
+categories, and Leslie-matrix demography). Distributions, Markov chains, statistics and
+combinatorics that are not specific to biology go under `MathlibExt/Probability/…` or
+`MathlibExt/Combinatorics/…`.
 
 Existing public names are preserved when modules move. For new modules use `Domains.Biology.<Area>.<Topic>` for models in `Domains`. Legacy namespaces follow the original path: `MathlibExt.Biology.<Area>.<Topic>` for models,
 `Cslib.Bioinformatics.<Area>.<Topic>` for algorithms, and Mathlib's own namespaces

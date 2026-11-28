@@ -18,29 +18,30 @@ public import Mathlib.Data.Fintype.BigOperators
 /-!
 # Population coverage of a peptide set at a hit threshold
 
-A peptide vaccine is scored by how many of its peptides a random individual of a population is
-predicted to display (Liu et al., 2020; Liu, Carter and Gifford, 2021). An individual is a diploid
-HLA genotype, a pair of haplotypes drawn from a population with known haplotype frequencies, and
-carries the alleles of both of its haplotypes, so that a locus homozygous in the pair contributes
-one allele and a heterozygous locus two. A pair (peptide, HLA allele) is a **hit** for a genotype
-`g` when `g` carries the allele and the peptide is predicted to be displayed by it, and `H V g` is
-the number of distinct hits of a candidate peptide set `V`. For a threshold `n`, the **population
-coverage** of `V` is
+A peptide vaccine is scored by how many distinct peptide–HLA pairs a random individual of a
+population is predicted to display (Liu et al., 2020; Liu, Carter and Gifford, 2021). An individual
+is a diploid HLA genotype, a pair of haplotypes drawn from a population with known haplotype
+frequencies, and carries the alleles of both of its haplotypes, so that a locus homozygous in the
+pair contributes one allele and a heterozygous locus two. A pair (peptide, HLA allele) is a **hit**
+for a genotype `g` when `g` carries the allele and the peptide is predicted to be displayed by it,
+and `H V g` is the number of distinct hits of a candidate peptide set `V`. For a threshold `n`, the
+**population coverage** of `V` is
 
-  `P V n = ∑ g, Pr g * 1{n ≤ H V g}`,
+  `P V n = ∑ g, w g * 1{n ≤ H V g}`,
 
-the probability that an individual has at least `n` hits. The insufficient-coverage curve of the
-source is its complement one step up, `1 - P V (n + 1)`, the fraction of individuals with at most
-`n` hits.
+the weight `w g = freq g.1 * freq g.2` of the individuals with at least `n` hits. For haplotype
+frequencies that are nonnegative and sum to `1`, the genotype weights are a probability
+distribution and `P V n` is the probability that an individual has at least `n` hits; the
+insufficient-coverage curve of the source is then its complement one step up, `1 - P V (n + 1)`,
+the fraction of individuals with at most `n` hits.
 
 ## Conventions
 
-* An individual is a pair of haplotypes `g : Haplotype × Haplotype`, drawn independently from the
-  haplotype frequencies `freq`, so that `Pr g = freq g.1 * freq g.2` (Liu et al., 2020,
-  equation (1), which assumes independently inherited haplotypes). Summing over ordered pairs
-  gives each genotype the probability random mating gives it: `freq i * freq i` for the homozygous
-  genotype of `i`, and `2 * (freq i * freq j)` for the genotype of `i ≠ j`, whose two ordered pairs
-  have the same hits.
+* An individual is a pair of haplotypes `g : Haplotype × Haplotype`, weighed by the haplotype
+  frequencies `freq` as `w g = freq g.1 * freq g.2` (Liu et al., 2020, equation (1), which assumes
+  independently inherited haplotypes). Summing over ordered pairs weighs each genotype as random
+  mating does: `freq i * freq i` for the homozygous genotype of `i`, and `2 * (freq i * freq j)`
+  for the genotype of `i ≠ j`, whose two ordered pairs have the same hits.
 * `alleles h` is the finite set of HLA alleles of the haplotype `h`, one per locus of the class
   modelled. The genotype `g` carries `alleles g.1 ∪ alleles g.2`, the union of equation (2) of
   Liu et al. (2020), so an allele homozygous in `g` is carried once and offers one hit per peptide.
@@ -56,19 +57,24 @@ source is its complement one step up, `1 - P V (n + 1)`, the fraction of individ
 
 ## Main definition
 
-* `populationCoverage alleles displays freq V n`: the fraction of the population predicted to have
-  at least `n` distinct peptide–HLA hits from the peptide set `V`.
+* `populationCoverage alleles displays freq V n`: the weight of the genotypes predicted to have at
+  least `n` distinct peptide–HLA hits from the peptide set `V`, the fraction of the population
+  with that many hits when the haplotype frequencies are a distribution.
 
 ## Main results
 
 * `populationCoverage_eq_nCoverage`: the coverage is an instance of maximum `n`-times coverage
-  (`Cslib.Algorithms.Lean.MaxNTimesCoverage.nCoverage`), over the genotypes weighted by their
-  probabilities, each peptide covering a genotype once for each carried allele that displays it.
-* `populationCoverage_zero`: every individual has at least `0` hits, so the curve starts at `1`.
-* `populationCoverage_antitone`: the curve is non-increasing in the threshold.
-* `populationCoverage_mono`: it is monotone in the peptide set, so adding peptides to a vaccine
-  never lowers its predicted coverage.
-* `populationCoverage_nonneg` and `populationCoverage_le_one`: the curve is a probability.
+  (`Cslib.Algorithms.Lean.MaxNTimesCoverage.nCoverage`), over the genotypes with the weights
+  `freq g.1 * freq g.2`, each peptide covering a genotype once for each carried allele that
+  displays it.
+* `populationCoverage_zero`: every individual has at least `0` hits, so for frequencies summing to
+  `1` the curve starts at `1`.
+* `populationCoverage_antitone`: for nonnegative frequencies the curve is non-increasing in the
+  threshold.
+* `populationCoverage_mono`: for nonnegative frequencies it is monotone in the peptide set, so
+  adding peptides to a vaccine never lowers its predicted coverage.
+* `populationCoverage_nonneg` and `populationCoverage_le_one`: for a haplotype distribution the
+  curve is a probability.
 
 ## References
 
@@ -99,25 +105,31 @@ variable {Peptide Allele Haplotype : Type*} [DecidableEq Allele] [Fintype Haplot
   {V W : Finset Peptide} {n : ℕ}
 
 /-- The **population coverage** of a candidate peptide set `V` at the hit threshold `n`
-(Liu et al., 2020; Liu, Carter and Gifford, 2021): the probability
+(Liu et al., 2020; Liu, Carter and Gifford, 2021): for a finite haplotype type, the weighted sum
 
-  `P V n = ∑ g, Pr g * 1{n ≤ H V g}`
+  `P V n = ∑ g, freq g.1 * freq g.2 * 1{n ≤ H V g}`
 
-that an individual of the population has at least `n` distinct peptide–HLA hits from `V`.
+over the diploid HLA genotypes, which adds the weight of each genotype with at least `n` distinct
+peptide–HLA hits from `V`.
 
-An individual is a diploid HLA genotype `g : Haplotype × Haplotype`, a pair of haplotypes drawn
-from the haplotype frequencies `freq`, so that `Pr g = freq g.1 * freq g.2`; summing over ordered
-pairs gives a heterozygous genotype twice the product of its haplotype frequencies and a
-homozygous one the square of its own, as independently inherited haplotypes do. The genotype
-carries the alleles `alleles g.1 ∪ alleles g.2` of its two haplotypes, a homozygous allele once,
-and its hits `H V g` are the distinct pairs `(p, a)` of a peptide `p ∈ V` and a carried allele `a`
-with `displays p a`, the prediction that `a` displays `p` immunogenically.
+A genotype is a pair of haplotypes `g : Haplotype × Haplotype` of weight `freq g.1 * freq g.2`;
+summing over ordered pairs weighs a heterozygous genotype by twice the product of its haplotype
+frequencies and a homozygous one by the square of its own, as independently inherited haplotypes
+do. The genotype carries the alleles `alleles g.1 ∪ alleles g.2` of its two haplotypes, a
+homozygous allele once, and its hits `H V g` are the distinct pairs `(p, a)` of a peptide `p ∈ V`
+and a carried allele `a` with `displays p a`, the prediction that `a` displays `p`
+immunogenically.
 
-The curve starts at `P V 0 = 1` (`populationCoverage_zero`) and is non-increasing in `n`
-(`populationCoverage_antitone`), and `1 - P V (n + 1)` is the source's insufficient coverage, the
-fraction of individuals with at most `n` hits. It is monotone in the peptide set
-(`populationCoverage_mono`): augmenting a vaccine never lowers its predicted coverage. The value
-is a prediction conditional on `displays` and on the estimated frequencies `freq`. -/
+The definition asks nothing of `freq`, which the theorems below constrain as each of them needs.
+For a haplotype distribution — frequencies that are nonnegative and sum to `1` — the genotype
+weights are the probabilities of random mating, and `P V n` is the probability that an individual
+has at least `n` hits: it lies in `[0, 1]` (`populationCoverage_nonneg`,
+`populationCoverage_le_one`), starts at `P V 0 = 1` (`populationCoverage_zero`), is non-increasing
+in `n` (`populationCoverage_antitone`), and `1 - P V (n + 1)` is the source's insufficient
+coverage, the fraction of individuals with at most `n` hits. For nonnegative frequencies it is
+monotone in the peptide set (`populationCoverage_mono`): augmenting a vaccine never lowers its
+predicted coverage. The value is a prediction conditional on `displays` and on the estimated
+frequencies `freq`. -/
 noncomputable def populationCoverage (alleles : Haplotype → Finset Allele)
     (displays : Peptide → Allele → Bool) (freq : Haplotype → ℝ) (V : Finset Peptide) (n : ℕ) :
     ℝ :=
@@ -127,7 +139,7 @@ noncomputable def populationCoverage (alleles : Haplotype → Finset Allele)
 
 /-- The coverage is an instance of **maximum `n`-times coverage**
 (`Cslib.Algorithms.Lean.MaxNTimesCoverage.nCoverage`, Liu, Dimitrakakis, Carter and Gifford, 2022):
-its elements are the genotypes, weighted by their probabilities `freq g.1 * freq g.2`, and its
+its elements are the genotypes, with the weights `freq g.1 * freq g.2`, and its
 overlays are the peptides, a peptide covering a genotype once for each allele the genotype carries
 that displays it. A genotype's cover count is then its number of hits, and the objective is the
 weight of the genotypes covered at least `n` times. -/
