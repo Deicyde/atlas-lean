@@ -85,7 +85,13 @@ def MinusExpr.tokens : MinusExpr → List (ℕ × ℕ)
   | .const c => [(1, c)]
   | .minus e e' => (2, 0) :: (e.tokens ++ e'.tokens)
 
-/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`. -/
+/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`.
+The raw type is any natural number with any two lists of natural pairs, so a token list need
+not parse: it may be empty, have too few or too many operand tokens, or hold a token that
+`MinusExpr.tokens` never produces (an operator code `≥ 3`, or `(2, c)` with `c ≠ 0`), and its
+variable indices and constants are unconstrained (a constant `0` is representable).
+`WellFormed` (through `IsExpr`) requires each list to be the token list of an expression whose
+variables are among `x₀, …, x_{|X|-1}` and whose constants are positive. -/
 abbrev InequivalenceOfSimpleFunctionsMinusInstance :=
   ℕ × List (ℕ × ℕ) × List (ℕ × ℕ)
 

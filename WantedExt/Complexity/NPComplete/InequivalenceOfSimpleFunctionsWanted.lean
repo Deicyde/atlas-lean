@@ -107,7 +107,13 @@ def SimpleExpr.tokens : SimpleExpr → List (ℕ × ℕ × ℕ)
   | .w e e' => (6, 0, 0) :: (e.tokens ++ e'.tokens)
   | .select i es => (7, i, es.length) :: (es.map fun e => e.tokens).flatten
 
-/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`. -/
+/-- An instance: the number `|X|` of variables, and the prefix token lists of `f` and `g`.
+The raw type is any natural number with any two lists of natural triples, so a token list need
+not parse: it may be empty, have too few or too many operand tokens, or hold a token that
+`SimpleExpr.tokens` never produces (an operator code `≥ 8`, or a nonzero unused field), and its
+variable indices, divisors and selector indices are unconstrained. `WellFormed` (through
+`IsExpr`) requires each list to be the token list of an expression over `x₀, …, x_{|X|-1}` with
+positive divisors and selectors `selectᵢᵐ` with `1 ≤ i ≤ m`. -/
 abbrev InequivalenceOfSimpleFunctionsInstance :=
   ℕ × List (ℕ × ℕ × ℕ) × List (ℕ × ℕ × ℕ)
 

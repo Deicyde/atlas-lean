@@ -58,7 +58,10 @@ reduction from every language in `NP`
 -/
 
 /-- An instance, as in `InequivalenceOfSimpleFunctionsWanted`: the number `|X|` of variables,
-and the prefix token lists of `f` and `g`. -/
+and the prefix token lists of `f` and `g`. The raw type is the parent's: any natural number with
+any two lists of natural triples, which need not parse and may hold tokens of any of the
+parent's operators; `WellFormed` requires the parent's well-formedness and every token to be a
+variable or the operator `w`. -/
 abbrev InequivalenceOfSimpleFunctionsWOnlyInstance :=
   InequivalenceOfSimpleFunctions.InequivalenceOfSimpleFunctionsInstance
 
