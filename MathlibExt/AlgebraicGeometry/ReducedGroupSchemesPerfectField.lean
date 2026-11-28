@@ -102,7 +102,8 @@ end Scheme
 
 variable {k : Type u} [Field k] [PerfectField k]
 
-/-- The fibre product over `Spec k` of two reduced affine schemes is reduced. -/
+/-- Over a perfect field `k`, the fibre product over `Spec k` of two reduced affine schemes is
+reduced. -/
 private lemma isReduced_pullback_spec {R S : CommRingCat.{u}} (f : Spec R ⟶ Spec (.of k))
     (g : Spec S ⟶ Spec (.of k)) (hR : IsReduced (Spec R)) (hS : IsReduced (Spec S)) :
     IsReduced (pullback f g) := by
@@ -149,7 +150,8 @@ noncomputable def nilradicalSubschemeOne :
       simp only [Over.mk_hom, Scheme.Hom.liftNilradical_subschemeι_assoc]
       exact Over.w η[Over.mk f])
 
-/-- The multiplication of `G_red`, defined because `G_red ×_k G_red` is reduced. -/
+/-- The multiplication of `G_red`, defined because, over a perfect field `k`, `G_red ×_k G_red` is
+reduced. -/
 noncomputable def nilradicalSubschemeMul :
     Over.mk (G.nilradical.subschemeι ≫ f) ⊗ Over.mk (G.nilradical.subschemeι ≫ f) ⟶
       Over.mk (G.nilradical.subschemeι ≫ f) :=

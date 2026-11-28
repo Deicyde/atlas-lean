@@ -27,8 +27,8 @@ namespace CategoryTheory
 
 variable {C : Type*} [Category C] [CartesianMonoidalCategory C]
 
-/-- Transport a group object structure along a monomorphism `j : R ⟶ G` through which the
-unit, multiplication and inverse of `G` factor. -/
+/-- Transport a group object structure along a monomorphism `j : R ⟶ G` such that `η[G]`,
+`(j ⊗ₘ j) ≫ μ[G]` and `j ≫ ι[G]` factor through `j`, as `one ≫ j`, `mul ≫ j` and `inv ≫ j`. -/
 noncomputable abbrev GrpObj.ofMono {R G : C} [GrpObj G] (j : R ⟶ G) [Mono j]
     (one : 𝟙_ C ⟶ R) (mul : R ⊗ R ⟶ R) (inv : R ⟶ R)
     (hone : one ≫ j = η[G]) (hmul : mul ≫ j = (j ⊗ₘ j) ≫ μ[G])
