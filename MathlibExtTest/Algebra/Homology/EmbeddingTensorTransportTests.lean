@@ -173,15 +173,14 @@ example : IsZero (pointwiseIntegerComplex.X (0 : ℤ)) := by
   change IsZero (0 : ModuleCat.{0} ℤ)
   exact isZero_zero _
 
-private def cycleInDegreeOne : Z ⟶ pointwiseIntegerComplex.cycles ((0 : ℤ) + 1) := by
-  have h : Z ⟶ pointwiseIntegerComplex.cycles (1 : ℤ) :=
-    pointwiseIntegerComplex.liftCycles (𝟙 Z) (2 : ℤ) (by simp)
-      (by simp [pointwiseIntegerComplex, CochainComplex.of.d])
-  simpa only [zero_add] using h
+private def cycleInDegreeOne : Z ⟶ pointwiseIntegerComplex.cycles ((0 : ℤ) + 1) :=
+  pointwiseIntegerComplex.liftCycles (i := ((0 : ℤ) + 1)) (𝟙 Z)
+    (((0 : ℤ) + 1) + 1) (by simp)
+    (by simp [pointwiseIntegerComplex, CochainComplex.of.d])
 
 private lemma cycleInDegreeOne_projection :
     cycleInDegreeOne ≫ pointwiseIntegerComplex.iCycles ((0 : ℤ) + 1) = 𝟙 Z := by
-  simp only [cycleInDegreeOne, zero_add, HomologicalComplex.liftCycles_i]
+  simp only [cycleInDegreeOne, HomologicalComplex.liftCycles_i]
 
 private def shiftedDegreeZeroCycle :
     letI := CochainComplex.hasHomology_shift pointwiseIntegerComplex (1 : ℤ) (0 : ℤ)
