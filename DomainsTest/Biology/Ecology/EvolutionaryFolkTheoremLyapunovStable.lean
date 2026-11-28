@@ -25,7 +25,8 @@ in which the second strategy always earns more gives a rest point that is not Na
 
 open Matrix
 open MathlibExt.Biology.Dynamics.AsymmetricESS (isMixed_iff isMixed_single)
-open MathlibExt.Biology.Dynamics.Replicator (meanFitness_mulVec)
+open MathlibExt.Biology.Dynamics.Replicator
+  (isRestPoint_iff_eq_meanFitness_on_support isSolution_const meanFitness_mulVec)
 open WantedExt.Biology.Ecology.BoundaryESSStabilityWanted
 open WantedExt.Biology.Ecology.EvolutionaryFolkTheoremWanted
 
@@ -43,7 +44,7 @@ example : resident + (1 / 3 : ℝ) • (![0, 1] - resident) ∈ simplex (Fin 2) 
   apply mem_simplex_iff.mpr
   have he : resident + (1 / 3 : ℝ) • (![0, 1] - resident) = ![2 / 3, 1 / 3] := by
     apply funext
-    have h10 : (1 : Fin 2) ≠ 0 := by decide
+    have h10 : (1 : Fin 2) ≠ 0 := Fin.zero_ne_one.symm
     refine Fin.forall_fin_two.2 ⟨?_, ?_⟩ <;>
       simp only [Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul, resident,
         Pi.single_eq_same, Pi.single_eq_of_ne h10, Matrix.cons_val_zero, Matrix.cons_val_one] <;>
@@ -59,9 +60,10 @@ private theorem neutral_rest : replicatorField neutral resident = 0 := by
 -- In the zero game, solutions exist and every forward solution is stationary.
 example : IsReplicatorSolution neutral (fun _ => resident) := by
   apply isReplicatorSolution_iff_isSolution_mulVec.mpr
-  refine ⟨fun i t _ => ?_⟩
+  apply isSolution_const
+  refine isRestPoint_iff_eq_meanFitness_on_support.mpr fun i _ => ?_
   rw [meanFitness_mulVec]
-  simpa [neutral] using hasDerivAt_const t (resident i)
+  simp [neutral]
 
 private theorem neutral_stable : IsLyapunovStable neutral resident := by
   refine isLyapunovStable_iff.mpr ⟨resident_mem, fun ε hε => ⟨ε, hε, ?_⟩⟩

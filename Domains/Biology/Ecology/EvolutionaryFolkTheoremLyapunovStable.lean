@@ -13,6 +13,7 @@ import Domains.Biology.Dynamics.AsymmetricESS
 import Domains.Biology.Dynamics.ReplicatorStability
 import Mathlib.Analysis.Calculus.Deriv.MeanValue
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Geometry.Convex.ConvexSpace.Defs
 import Mathlib.Topology.Instances.Matrix
 
 /-!
@@ -126,14 +127,18 @@ public theorem isNash_of_isLyapunovStable {A : Matrix ι ι ℝ} {p : ι → ℝ
   have he : e ∈ simplex ι := mem_simplex_iff.mpr (isMixed_iff.mp (isMixed_single i))
   have hy_mem : y s ∈ simplex ι := add_smul_sub_mem_simplex hp he hs.le hs₁
   obtain ⟨x, hx0, hx⟩ := exists_isSolution_mulVec A (mem_simplex_iff.mp hy_mem)
-  have hx_mem₀ : x 0 ∈ simplex ι := hx0.symm ▸ hy_mem
+  have hx_mem₀ : x 0 ∈ simplex ι := Set.mem_of_eq_of_mem hx0 hy_mem
   have hx0' := mem_simplex_iff.mp hx_mem₀
   have hxi0 : 0 < x 0 i := by simpa [hx0, y, e, hpi] using hs
   have hxmem (t : ℝ) (ht : 0 ≤ t) := hx.mem_simplex hf hx0'.1 hx0'.2 ht
   have hxi (t : ℝ) (ht : 0 ≤ t) : 0 < x t i := hx.pos_of_pos hf hxi0 ht
   have hxle (t : ℝ) (ht : 0 ≤ t) : x t i ≤ 1 := by
-    rw [← (hxmem t ht).2]
-    exact Finset.single_le_sum (fun j _ => (hxmem t ht).1 j) (Finset.mem_univ i)
+    have hrange : x t ∈ Set.range (fun w : Convexity.StdSimplex ℝ ι => (w.weights : ι → ℝ)) := by
+      simpa only [Convexity.StdSimplex.range_toFun_comp_weights, Set.mem_inter_iff,
+        Set.mem_iInter, Set.mem_ofPred_eq] using hxmem t ht
+    obtain ⟨w, hw⟩ := hrange
+    rw [← hw]
+    exact w.weights_apply_le_one i
   have hgrow (t : ℝ) (ht : 0 ≤ t) : c ≤ gain (x t) :=
     (hnear (hstay x (isReplicatorSolution_iff_isSolution_mulVec.mpr hx)
       hx_mem₀ (hx0.symm ▸ hdist) t ht)).le
