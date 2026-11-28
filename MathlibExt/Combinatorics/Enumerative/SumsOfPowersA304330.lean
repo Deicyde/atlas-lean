@@ -13,7 +13,9 @@ public import Mathlib.Algebra.Order.Field.Rat
 public import Mathlib.Data.Fintype.Pi
 public import Mathlib.Data.Nat.Choose.Basic
 public import MathlibExt.Combinatorics.Enumerative.JacobiStirlingFirstKind
+public import MathlibExt.Combinatorics.Enumerative.LegendreStirlingFirstKind
 import Mathlib.Algebra.BigOperators.Field
+import Mathlib.Algebra.Polynomial.Eval.Coeff
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Algebra.Ring.GeomSum
 import Mathlib.Data.Nat.Choose.Cast
@@ -50,11 +52,23 @@ and taking its coefficient of degree `2k`. Opposite exponents contribute equally
 The proof of Knuth's formula (Proposition 3) takes first differences and expands the
 resulting even power in the central factorial basis.
 
+Cereceda's Proposition 12 gives the Faulhaber form of the even power sums for exponents
+`2k` with `k ≥ 1` and `n : ℕ`. The even and odd Faulhaber expansions both use the
+binomial expansion (20) in the signed Legendre–Stirling basis.
+
 ## References
 
 * José L. Cereceda, *Sums of Powers of Integers and the Sequence A304330*,
-  Journal of Integer Sequences 28 (2025), Article 25.1.3, especially Proposition 3,
-  equation (5), and Section 2.2.
+  Journal of Integer Sequences 28 (2025), Article 25.1.3, pp. 1–21, especially Proposition 3,
+  equation (5), Section 2.2, Proposition 12, and Proposition 15.
+* G. E. Andrews, W. Gawronski, and L. L. Littlejohn, *The Legendre-Stirling numbers*,
+  Discrete Mathematics 311 (2011), 1255–1272, Theorem 5.5.
+* Haili Guo and Kelun Wang, *Some Properties of the Legendre-Stirling Numbers*,
+  IOP Conference Series: Materials Science and Engineering 466 (2018), 012026,
+  Theorem 2, equation (4).
+* M. W. Coffey and M. C. Lettington, *On Fibonacci Polynomial Expressions for Sums of mth
+  Powers, their implications for Faulhaber's Formula and some Theorems of Fermat*,
+  arXiv:1510.05402 (2015), Equation (5.1).
 * Donald E. Knuth, *Johann Faulhaber and Sums of Powers*, Mathematics of Computation
   61 (1993), 277–294, pp. 284–286.
 * P. L. Butzer, M. Schmidt, E. L. Stark, and L. Vogt,
@@ -1034,5 +1048,189 @@ theorem pow_mul_powerSum_even_eq_sum (k : ℕ) (hk : 1 ≤ k)
         simp [Nat.choose_eq_zero_of_lt (show 2 * n + m + 1 < 2 * m + 1 by omega)]
 
 end EvenPowerSums
+
+section Faulhaber
+
+open Finset MetaMathlibExt Polynomial
+
+-- Pair the two halves of the descending factorial around n and n + 1.
+private theorem legendreProduct_eq_factorial_mul_choose (n m : ℕ) :
+    (∏ j ∈ range m, ((n : ℚ) * (n + 1) - (j : ℚ) * (j + 1))) =
+      ((2 * m).factorial : ℚ) * ((n + m).choose (2 * m) : ℚ) := by
+  by_cases hnm : m ≤ n
+  · have h := congrArg (Nat.castRingHom ℚ) (Nat.descFactorial_eq_prod_range (n + m) (2 * m))
+    rw [Nat.descFactorial_eq_factorial_mul_choose, map_mul, map_prod] at h
+    change ((2 * m).factorial : ℚ) * ((n + m).choose (2 * m) : ℚ) =
+      ∏ i ∈ range (2 * m), ((n + m - i : ℕ) : ℚ) at h
+    rw [h]
+    have hcast (i : ℕ) (hi : i ∈ range (2 * m)) :
+        ((n + m - i : ℕ) : ℚ) = (n : ℚ) + m - i := by
+      simp only [mem_range] at hi
+      rw [Nat.cast_sub (show i ≤ n + m by omega), Nat.cast_add]
+    rw [prod_congr rfl hcast, two_mul m, prod_range_add,
+      ← prod_range_reflect (fun i : ℕ ↦ (n : ℚ) + m - i) m, ← prod_mul_distrib]
+    refine prod_congr rfl fun j hj ↦ ?_
+    have hj' := mem_range.mp hj
+    rw [Nat.cast_add, Nat.cast_sub (show j ≤ m - 1 by omega),
+      Nat.cast_sub (show 1 ≤ m by omega), Nat.cast_one]
+    ring
+  · rw [Nat.choose_eq_zero_of_lt (show n + m < 2 * m by omega), Nat.cast_zero, mul_zero]
+    exact prod_eq_zero (mem_range.mpr (show n < m by omega)) (sub_self _)
+
+private theorem legendrePoly_eval (m : ℕ) (x : ℚ) :
+    eval₂ (Int.castRingHom ℚ) x (legendreStirlingFirstPoly m) =
+      ∏ j ∈ range m, (x - (j : ℚ) * (j + 1)) := by
+  change eval₂RingHom (Int.castRingHom ℚ) x (∏ j ∈ range m,
+    (X - C ((j : ℤ) * (j + 1)))) = _
+  rw [map_prod]
+  refine prod_congr rfl fun j _ ↦ ?_
+  rw [map_sub]
+  change eval₂ (Int.castRingHom ℚ) x X - eval₂ (Int.castRingHom ℚ) x (C _) = _
+  rw [eval₂_X, eval₂_C, map_mul, map_add, map_one, map_natCast]
+
+-- For positive m the factor with j = 0 eliminates the constant coefficient.
+private theorem legendrePoly_eval_eq_sum (m : ℕ) (hm : 1 ≤ m) (x : ℚ) :
+    eval₂ (Int.castRingHom ℚ) x (legendreStirlingFirstPoly m) =
+      ∑ r ∈ Icc 1 m, (legendreStirlingFirst m r : ℚ) * x ^ r := by
+  rw [eval₂_eq_sum, Polynomial.sum]
+  apply sum_congr_of_eq_on_inter
+  · intro r hr h
+    have hnz : legendreStirlingFirst m r ≠ 0 := mem_support_iff.mp hr
+    have hrm : r ≤ m := by
+      by_contra! hlt
+      exact hnz (legendreStirlingFirst_eq_zero_of_lt m r hlt)
+    have : r = 0 := by simp only [mem_Icc] at h; omega
+    subst r
+    change (legendreStirlingFirst m 0 : ℚ) * x ^ 0 = 0
+    obtain ⟨j, rfl⟩ := Nat.exists_eq_succ_of_ne_zero (Nat.ne_of_gt hm)
+    rw [legendreStirlingFirst_succ_zero j, Int.cast_zero, zero_mul]
+  · intro r _ hr
+    have hz : (legendreStirlingFirstPoly m).coeff r = 0 := by
+      simpa only [mem_support_iff, not_ne_iff] using hr
+    change ((legendreStirlingFirstPoly m).coeff r : ℚ) * x ^ r = 0
+    simp [hz]
+  · intro r _ _
+    rfl
+
+private theorem two_mul_powerSum_one (n : ℕ) :
+    (n : ℚ) * (n + 1) = 2 * powerSum 1 n := by
+  induction n with
+  | zero => simp [powerSum]
+  | succ n ih =>
+    simp only [powerSum, sum_Icc_succ_top (Nat.succ_pos n), pow_one, Nat.cast_succ] at ih ⊢
+    linear_combination ih
+
+/-- **Binomial coefficients in the signed Legendre–Stirling basis.** For natural numbers $n$
+and $m \ge 1$, let $S_1(n) = n(n+1)/2$ and let $\mathrm{Ps}_m^{(r)}$ denote the coefficient of
+$X^r$ in $\prod_{j=0}^{m-1}(X-j(j+1))$. Then
+
+$$\binom{n+m}{2m} = \frac{1}{(2m)!}\sum_{r=1}^{m}\mathrm{Ps}_m^{(r)}\,(2S_1(n))^r.$$
+
+Source: José L. Cereceda, *Sums of Powers of Integers and the Sequence A304330*, equation (20). -/
+theorem choose_eq_legendreStirlingFirst_sum (n m : ℕ) (hm : 1 ≤ m) :
+    ((n + m).choose (2 * m) : ℚ) =
+      (∑ r ∈ Icc 1 m, (legendreStirlingFirst m r : ℚ) * (2 * powerSum 1 n) ^ r) /
+        ((2 * m).factorial : ℚ) := by
+  apply (eq_div_iff (by positivity)).2
+  rw [mul_comm, ← legendreProduct_eq_factorial_mul_choose, ← legendrePoly_eval,
+    two_mul_powerSum_one, legendrePoly_eval_eq_sum m hm]
+
+-- With the constant coefficient zero, the recurrence multiplies the linear coefficient
+-- in row m by `-m * (m + 1)` to give the linear coefficient in row m + 1.
+private theorem legendreStirlingFirst_cast_one (m : ℕ) :
+    (legendreStirlingFirst (m + 1) 1 : ℚ) =
+      (-1 : ℚ) ^ m * (m.factorial : ℚ) * ((m + 1).factorial : ℚ) := by
+  induction m with
+  | zero => simp [legendreStirlingFirst_diag]
+  | succ m ih =>
+    rw [legendreStirlingFirst_succ (m + 1) 0]
+    push_cast
+    rw [legendreStirlingFirst_succ_zero m, Int.cast_zero, ih, zero_sub,
+      pow_succ (-1 : ℚ), Nat.factorial_succ (m + 1), Nat.factorial_succ m]
+    push_cast
+    ring
+
+/-- For natural numbers $k \ge 2$, the signed Legendre–Stirling coefficients of degree one
+cancel in the odd power-sum expansion: their sum weighted by $R(k,m)/((2m)!\,m)$ and summed
+over $m=1,\ldots,k$ is zero. This is equation (21) of Cereceda's
+*Sums of Powers of Integers and the Sequence A304330*, with row index $k$ in place of $k+1$. -/
+theorem sum_arrayR_legendreStirlingFirst_one_eq_zero (k : ℕ) (hk : 2 ≤ k) :
+    (∑ m ∈ Icc 1 k, (1 / (((2 * m).factorial : ℚ) * m)) *
+      (arrayR k m : ℚ) * (legendreStirlingFirst m 1 : ℚ)) = 0 := by
+  have hterm (m : ℕ) (hm : m ∈ Icc 1 k) :
+      (1 / (((2 * m).factorial : ℚ) * m)) * (arrayR k m : ℚ) *
+          (legendreStirlingFirst m 1 : ℚ) =
+        -((-1 : ℚ) ^ m * ((Nat.factorial (m - 1) : ℚ) ^ 2 / ((2 * m).factorial : ℚ)) *
+          (arrayR k m : ℚ)) := by
+    have hm₀ : m ≠ 0 := Nat.ne_of_gt (mem_Icc.mp hm).1
+    obtain ⟨j, rfl⟩ := Nat.exists_eq_succ_of_ne_zero hm₀
+    rw [legendreStirlingFirst_cast_one, Nat.factorial_succ j, pow_succ (-1 : ℚ),
+      Nat.succ_sub_one]
+    push_cast
+    field_simp
+  rw [sum_congr rfl hterm, sum_neg_distrib, sum_neg_factorial_sq_div_arrayR_eq_zero k hk, neg_zero]
+
+private theorem six_mul_powerSum_two (n : ℕ) :
+    (2 * (n : ℚ) + 1) * ((n : ℚ) * (n + 1)) = 6 * powerSum 2 n := by
+  induction n with
+  | zero => simp [powerSum]
+  | succ n ih =>
+    simp only [powerSum, sum_Icc_succ_top (Nat.succ_pos n), Nat.cast_succ] at ih ⊢
+    linear_combination ih
+
+/-- **The Faulhaber coefficients $b_{k,r}$.** For natural numbers $p$ and $q$, let
+$R(p, q) = \sum_{j=0}^{q} (-1)^j \binom{2q}{j} (q - j)^{2p}$, and for natural numbers $q$
+and $s$ let $\mathrm{Ps}_q^{(s)}$ be the Legendre–Stirling number of the first kind, the
+coefficient of $x^s$ in $\prod_{i=0}^{q-1} (x - i(i+1))$. For natural numbers $k$ and $r$,
+$b_{k,r}$ is the rational number
+$\sum_{m=r}^{k} \frac{3 \cdot 2^r}{(2m+1)!}\, R(k, m)\, \mathrm{Ps}_m^{(r)}$. -/
+@[expose] noncomputable def faulhaberB (k r : ℕ) : ℚ :=
+  ∑ m ∈ Finset.Icc r k,
+    (3 * 2 ^ r / (Nat.factorial (2 * m + 1) : ℚ)) *
+      (arrayR k m : ℚ) * (MetaMathlibExt.legendreStirlingFirst m r : ℚ)
+
+/-- **Faulhaber form of the even power sums.** For all natural numbers $k \ge 1$ and $n$,
+writing $S_j(n) = 1^j + 2^j + \cdots + n^j$ for the power sums and $b_{k,r}$ for the Faulhaber
+coefficients of Proposition 12, the rational numbers satisfy
+$S_{2k}(n) = S_2(n) \sum_{r=1}^{k} b_{k,r} \, S_1(n)^{r-1}$.
+
+Source: José L. Cereceda, "Sums of Powers of Integers and the
+Sequence A304330", Proposition 12. -/
+theorem powerSum_even_faulhaber (k : ℕ) (hk : 1 ≤ k)
+    (n : ℕ) :
+    powerSum (2 * k) n =
+      powerSum 2 n * ∑ r ∈ Finset.Icc 1 k,
+        faulhaberB k r * (powerSum 1 n) ^ (r - 1) := by
+  have hs : powerSum 2 n = (2 * (n : ℚ) + 1) * powerSum 1 n / 3 := by
+    have h := six_mul_powerSum_two n
+    rw [two_mul_powerSum_one] at h
+    linear_combination -h / 6
+  let term (m r : ℕ) : ℚ :=
+    powerSum 2 n * (((3 * 2 ^ r / ((2 * m + 1).factorial : ℚ)) * (arrayR k m : ℚ) *
+      (legendreStirlingFirst m r : ℚ)) * (powerSum 1 n) ^ (r - 1))
+  rw [powerSum_even_eq_sum k hk n]
+  calc
+    _ = ∑ m ∈ Icc 1 k, ∑ r ∈ Icc 1 m, term m r := by
+      refine sum_congr rfl fun m hm ↦ ?_
+      have hfac : ((2 * m).factorial : ℚ) ≠ 0 := by positivity
+      rw [choose_eq_legendreStirlingFirst_sum n m (mem_Icc.mp hm).1, sum_div, mul_sum]
+      refine sum_congr rfl fun r hr ↦ ?_
+      have hpow : (2 * powerSum 1 n) ^ r =
+          2 ^ r * powerSum 1 n * (powerSum 1 n) ^ (r - 1) := by
+        have hr₁ := (mem_Icc.mp hr).1
+        rw [mul_pow, mul_assoc, ← pow_succ', Nat.sub_add_cancel hr₁]
+      dsimp only [term]
+      rw [hpow, hs, Nat.factorial_succ]
+      push_cast
+      field_simp [hfac, show 2 * (m : ℚ) + 1 ≠ 0 by positivity]
+    _ = ∑ r ∈ Icc 1 k, ∑ m ∈ Icc r k, term m r := by
+      apply sum_comm'
+      intro m r
+      simp only [mem_Icc]
+      omega
+    _ = _ := by
+      simp only [term, faulhaberB, mul_sum, sum_mul]
+
+end Faulhaber
 
 end MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted

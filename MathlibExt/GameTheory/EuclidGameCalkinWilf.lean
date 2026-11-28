@@ -17,9 +17,24 @@ import Mathlib.Tactic.NormNum
 /-!
 # Euclid on the Calkin–Wilf tree
 
+For every row index $k \ge 0$, the number $L_k$ of Euclid P-positions in the Calkin–Wilf tree
+satisfies $L_0 = 1$, $L_1 = 0$, $L_{k+2} = L_{k+1} + 2L_k$, and $3L_k = 2^k + 2(-1)^k$
+(`count_euclidPPosition_calkinWilfRow`).
+
 Each arch top has a unique move to a child of the original position. From that child,
 subtracting once returns to the original position. Counting the left arch tops row by row
 gives `3 * Tₖ = 2 ^ (k - 2) + 2 * (-1) ^ k` for `2 ≤ k` (`count_arch_tops_calkinWilfRow`).
+
+A legal Euclid move from row $k$ that subtracts $j$ copies of the smaller entry lands in row
+$k-j$, and $j\le k$ (`calkinWilfRow_sub_mul`).
+
+## References
+
+* Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions
+  of the Game Euclid*, The Fibonacci Quarterly 62 (1) (2024), pp. 15–28,
+  Section 3, Propositions 4.1 and 4.2, Corollaries 4.6 and 4.7, and Proposition 5.2.
+* S. Hofmann, G. Schuster, and J. Steuding, *Euclid, Calkin & Wilf—playing with rationals*,
+  Elemente der Mathematik 63 (3) (2008), pp. 109–117 (moves along Calkin–Wilf branches).
 -/
 
 namespace MetaMathlibExt
@@ -113,6 +128,52 @@ public def euclidGame : SpragueGrundy.ImpartialGame where
   rank := fun p => p.1 + p.2
   rank_lt := euclidMoves_rank_lt
   start := (1, 1)
+
+/-- **Legal moves in Euclid.** For $a,b$ natural numbers, $q$ is a move from $(a,b)$ in the
+Euclid game exactly when either $b>0$ and $q=(a-jb,b)$ for some natural $j>0$ with $jb<a$,
+or $a>0$ and $q=(a,b-ja)$ for some natural $j>0$ with $ja<b$.
+
+Source: Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions
+of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 3. -/
+public theorem mem_euclidGame_moves_iff {a b : ℕ} {q : ℕ × ℕ} :
+    q ∈ euclidGame.moves (a, b) ↔
+      (0 < b ∧ ∃ j : ℕ, 0 < j ∧ j * b < a ∧ q = (a - j * b, b)) ∨
+      (0 < a ∧ ∃ j : ℕ, 0 < j ∧ j * a < b ∧ q = (a, b - j * a)) := by
+  change q ∈ euclidMoves (a, b) ↔ _
+  have impossible {x y j : ℕ} (hj : 0 < j) (hxy : y ≤ x) : ¬j * x < y :=
+    not_lt_of_ge (hxy.trans (Nat.le_mul_of_pos_left _ hj))
+  have range_iff {x y k : ℕ} (hx : 0 < x) : k < (y - 1) / x ↔ (k + 1) * x < y := by
+    change k + 1 ≤ (y - 1) / x ↔ _
+    rw [Nat.le_div_iff_mul_le hx]
+    have hpos : 0 < (k + 1) * x := Nat.mul_pos (Nat.succ_pos k) hx
+    omega
+  have shift (P : ℕ → Prop) : (∃ k, P (k + 1)) ↔ ∃ j > 0, P j := by
+    constructor
+    · rintro ⟨k, hk⟩
+      exact ⟨k + 1, Nat.succ_pos k, hk⟩
+    · rintro ⟨_ | k, hj, hk⟩
+      · exact (Nat.not_lt_zero _ hj).elim
+      · exact ⟨k, hk⟩
+  simp only [euclidMoves]
+  split_ifs with h hab
+  · simp only [Finset.notMem_empty, false_iff]
+    rintro (⟨hb, j, hj, hja, _⟩ | ⟨ha, j, hj, hjb, _⟩)
+    · exact impossible hj (by omega) hja
+    · exact impossible hj (by omega) hjb
+  · have ha : 0 < a := by omega
+    have hleft : ¬(0 < b ∧ ∃ j : ℕ, 0 < j ∧ j * b < a ∧ q = (a - j * b, b)) := by
+      rintro ⟨_, j, hj, hja, _⟩
+      exact impossible hj hab.le hja
+    simp only [hleft, false_or]
+    simp only [ha, true_and, Finset.mem_image, Finset.mem_range,
+      range_iff ha, eq_comm (a := q), ← shift]
+  · have hb : 0 < b := by omega
+    have hright : ¬(0 < a ∧ ∃ j : ℕ, 0 < j ∧ j * a < b ∧ q = (a, b - j * a)) := by
+      rintro ⟨_, j, hj, hjb, _⟩
+      exact impossible hj (by omega) hjb
+    simp only [hright, or_false]
+    simp only [hb, true_and, Finset.mem_image, Finset.mem_range,
+      range_iff hb, eq_comm (a := q), ← shift]
 
 /-- **Correctness of the fuel-bounded Euclid classifier.** For all natural numbers $f$, $a$ and $b$
 with $a + b \le f$, the fuel-bounded evaluation of the P-positions of Euclid with fuel $f$ returns
@@ -405,6 +466,55 @@ private theorem row_pos {k : ℕ} {p : ℕ × ℕ} (h : p ∈ calkinWilfRow k) :
     rcases h with rfl | rfl
     · exact child_pos (ih hq) false
     · exact child_pos (ih hq) true
+
+end euclidPPosition_self_similar
+
+open euclidPPosition_self_similar in
+/-- **A Euclid subtraction skips one Calkin–Wilf row per copy.** Suppose $(a,b)$ lies in row $k$
+of the Calkin–Wilf tree, and let $j$ be a natural number. If $jb<a$, then $j\le k$ and
+$(a-jb,b)$ lies in row $k-j$. If $ja<b$, then $j\le k$ and $(a,b-ja)$ lies in row $k-j$.
+
+Source: Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions
+of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 3. -/
+public theorem calkinWilfRow_sub_mul {k a b : ℕ} (h : (a, b) ∈ calkinWilfRow k) (j : ℕ) :
+    (j * b < a → j ≤ k ∧ (a - j * b, b) ∈ calkinWilfRow (k - j)) ∧
+    (j * a < b → j ≤ k ∧ (a, b - j * a) ∈ calkinWilfRow (k - j)) := by
+  induction j generalizing k a b with
+  | zero => simp [h]
+  | succ j ih =>
+    cases k with
+    | zero =>
+      simp only [calkinWilfRow, List.mem_singleton, Prod.mk.injEq] at h
+      obtain ⟨rfl, rfl⟩ := h
+      simp
+    | succ k =>
+      obtain ⟨⟨x, y⟩, hxy, hchild⟩ := List.mem_flatMap.mp h
+      obtain ⟨hx, hy⟩ := row_pos hxy
+      simp only [List.mem_cons, List.not_mem_nil, or_false, Prod.mk.injEq] at hchild
+      rcases hchild with ⟨rfl, rfl⟩ | ⟨rfl, rfl⟩
+      · constructor
+        · intro hj
+          rw [Nat.succ_mul] at hj
+          omega
+        · intro hj
+          rw [Nat.succ_mul] at hj
+          obtain ⟨hle, hmem⟩ := (ih hxy).2 (by omega)
+          refine ⟨Nat.succ_le_succ hle, ?_⟩
+          rw [Nat.succ_sub_succ_eq_sub, Nat.succ_mul, Nat.add_comm a y, Nat.add_sub_add_right]
+          exact hmem
+      · constructor
+        · intro hj
+          rw [Nat.succ_mul] at hj
+          obtain ⟨hle, hmem⟩ := (ih hxy).1 (by omega)
+          refine ⟨Nat.succ_le_succ hle, ?_⟩
+          simpa only [Nat.succ_sub_succ_eq_sub, Nat.succ_mul, Nat.add_sub_add_right] using hmem
+        · intro hj
+          rw [Nat.succ_mul] at hj
+          omega
+
+namespace euclidPPosition_self_similar
+
+open euclidPPosition_aunt_xor_cousin euclidPPosition_branch_step
 
 -- The daughter has a forced move to its parent when a ≤ b. Otherwise it is always N.
 private theorem daughter_iff (a b : ℕ) (ha : 0 < a) (hb : 0 < b) :
@@ -773,6 +883,30 @@ private theorem arch_count (k : ℕ) :
 end count_arch_tops_calkinWilfRow
 
 open count_arch_tops_calkinWilfRow euclidPPosition_self_similar in
+/-- **Number of P-positions of Euclid in a row of the Calkin–Wilf tree.** Let $L_k$ be the
+number of P-positions of Euclid in row $k$ of the Calkin–Wilf tree. Then $L_0 = 1$, $L_1 = 0$,
+$L_{k+2} = L_{k+1} + 2L_k$ for every $k$, and $3L_k = 2^k + 2(-1)^k$ for every $k$, that is,
+$L_k = 2^k/3 + 2(-1)^k/3$.
+
+Source: Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions
+of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Corollary 4.6. -/
+public theorem count_euclidPPosition_calkinWilfRow :
+    (calkinWilfRow 0).countP (fun p => euclidPPosition p.1 p.2) = 1 ∧
+      (calkinWilfRow 1).countP (fun p => euclidPPosition p.1 p.2) = 0 ∧
+      (∀ k, (calkinWilfRow (k + 2)).countP (fun p => euclidPPosition p.1 p.2) =
+        (calkinWilfRow (k + 1)).countP (fun p => euclidPPosition p.1 p.2) +
+          2 * (calkinWilfRow k).countP (fun p => euclidPPosition p.1 p.2)) ∧
+      ∀ k, 3 * ((calkinWilfRow k).countP (fun p => euclidPPosition p.1 p.2) : ℤ) =
+        2 ^ k + 2 * (-1) ^ k := by
+  refine ⟨by decide, by decide, ?_, row_count_formula⟩
+  intro k
+  change (calkinWilfRow (k + 2)).countP outcome =
+    (calkinWilfRow (k + 1)).countP outcome + 2 * (calkinWilfRow k).countP outcome
+  have hsum := row_count_sum k
+  have hstep := row_count_step k
+  omega
+
+open count_arch_tops_calkinWilfRow euclidPPosition_self_similar in
 /-- **Number of arch tops in a row of the Calkin–Wilf tree.** For $k \ge 2$ let $T_k$ be the
 number of vertices of row $k$ of the Calkin–Wilf tree of the form $(2m+n)/(m+n)$ with $m/n$ a
 P-position of Euclid in row $k - 2$. Then $3T_k = 2^{k-2} + 2(-1)^k$, that is,
@@ -799,6 +933,98 @@ public theorem count_arch_tops_calkinWilfRow (k : ℕ) (hk : 2 ≤ k) :
     conv_lhs => rw [h, pow_add]
     norm_num
   rw [hc, row_count_formula, he]
+
+open fibonacci_arch_tops in
+/-- **The Fibonacci arches.** Let $F_j$ be the Fibonacci numbers with $F_0 = F_1 = 1$ and
+$F_{j+2} = F_{j+1} + F_j$. Call a pair $(a, b)$ of natural numbers a P-position when the Euclid
+P-position test returns true at $(a, b)$, read it as the vertex $a/b$ of the Calkin–Wilf tree, and
+let $s(a/b) = a/(a+b)$ be its son and $d(a/b) = (a+b)/b$ its daughter; write $s^k$ and $d^k$ for
+the $k$-fold iterates. Let $n \ge 1$ and $k \ge 0$, and let $V = F_{2n-1}/F_{2n-2}$. Then $V$ is a
+P-position, its son's daughter $d(s(V))$ is $F_{2n+1}/F_{2n}$, and its daughter's son $s(d(V))$
+is $F_{2n}/(F_{2n} + F_{2n-2})$. The vertex $L = d(s^k((F_{2n+1} - F_{2n})/F_{2n}))$ is a
+P-position whose numerator is $F_{2n+1} + kF_{2n-1}$ and whose denominator is
+$F_{2n+1} + (k-1)F_{2n-1}$, and the vertex $R = s(d^k(F_{2n}/F_{2n-2}))$ is the P-position
+$(F_{2n} + kF_{2n-2})/(F_{2n} + (k+1)F_{2n-2})$.
+
+Here $L$ and $R$ are level $k$ (level $0$ the top) of the left and right branches of the arch
+topped by $d(s(V))$ and $s(d(V))$.
+
+Source: Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions
+of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 5.2. -/
+public theorem fibonacci_arch_positions (n k : ℕ) (hn : 1 ≤ n) :
+    let F : ℕ → ℕ := fun j => Nat.fib (j + 1)
+    let s : ℕ × ℕ → ℕ × ℕ := fun p => (p.1, p.1 + p.2)
+    let t : ℕ × ℕ → ℕ × ℕ := fun p => (p.1 + p.2, p.2)
+    let V := (F (2 * n - 1), F (2 * n - 2))
+    let L := t (s^[k] (F (2 * n + 1) - F (2 * n), F (2 * n)))
+    let R := s (t^[k] (F (2 * n), F (2 * n - 2)))
+    euclidPPosition V.1 V.2 = true ∧ t (s V) = (F (2 * n + 1), F (2 * n)) ∧
+      s (t V) = (F (2 * n), F (2 * n) + F (2 * n - 2)) ∧
+      ((L.1 : ℤ) = F (2 * n + 1) + k * F (2 * n - 1) ∧
+        (L.2 : ℤ) = F (2 * n + 1) + (k - 1) * F (2 * n - 1) ∧ euclidPPosition L.1 L.2 = true) ∧
+      (R = (F (2 * n) + k * F (2 * n - 2), F (2 * n) + (k + 1) * F (2 * n - 2)) ∧
+        euclidPPosition R.1 R.2 = true) := by
+  obtain ⟨i, rfl⟩ := Nat.exists_eq_succ_of_ne_zero (by omega : n ≠ 0)
+  intro F s t V L R
+  let a := F (2 * (i + 1) - 1)
+  let b := F (2 * (i + 1) - 2)
+  let c := F (2 * (i + 1))
+  let d := F (2 * (i + 1) + 1)
+  have ha : a = Nat.fib (2 * i + 2) := congrArg Nat.fib (by omega)
+  have hb : b = Nat.fib (2 * i + 1) := congrArg Nat.fib (by omega)
+  have hp : euclidPPosition a b = true := ha ▸ hb ▸ fib_pair i
+  have hc : c = a + b := by
+    rw [ha, hb, Nat.add_comm (Nat.fib (2 * i + 2))]
+    exact Nat.fib_add_two (n := 2 * i + 1)
+  have hd : d = a + c := by
+    rw [ha]
+    exact Nat.fib_add_two (n := 2 * i + 2)
+  have hsub : d - c = a := by rw [hd, Nat.add_sub_cancel]
+  -- Each iteration adds the fixed coordinate to the other one.
+  have hs (j : ℕ) : s^[j] (a, c) = (a, j * a + c) := by
+    induction j with
+    | zero => simp
+    | succ j ih =>
+      rw [Function.iterate_succ_apply', ih]
+      refine Prod.ext rfl ?_
+      simp only [s]
+      ring
+  have ht (j : ℕ) : t^[j] (c, b) = (c + j * b, b) := by
+    induction j with
+    | zero => simp
+    | succ j ih =>
+      rw [Function.iterate_succ_apply', ih]
+      refine Prod.ext ?_ rfl
+      simp only [t]
+      ring
+  have hL : L = (d + k * a, k * a + c) := by
+    change t (s^[k] (d - c, c)) = _
+    rw [hsub, hs, hd]
+    simp only [t, add_left_comm, add_assoc, add_comm]
+  have hR : R = (c + k * b, c + (k + 1) * b) := by
+    change s (t^[k] (c, b)) = _
+    rw [ht, Nat.add_one_mul]
+    simp only [s, add_assoc]
+  -- The closed forms identify the iterated positions with the two P-positions.
+  have hden : d + k * a - a = k * a + c := by rw [hd]; omega
+  have hP := fibonacci_arch_tops (i + 1) k (Nat.succ_pos i)
+  refine ⟨hp, ?_, ?_, ⟨?_, ?_, ?_⟩, ⟨hR, ?_⟩⟩
+  · change (a + (a + b), a + b) = (d, c)
+    rw [hd, hc]
+  · change (a + b, a + b + b) = (c, c + b)
+    rw [hc]
+  · rw [hL]
+    change ((d + k * a : ℕ) : ℤ) = (d : ℤ) + (k : ℤ) * a
+    simp only [Nat.cast_add, Nat.cast_mul]
+  · rw [hL]
+    change ((k * a + c : ℕ) : ℤ) = (d : ℤ) + ((k : ℤ) - 1) * a
+    rw [hd]
+    push_cast
+    ring
+  · rw [hL, ← hden]
+    exact hP.1.1
+  · rw [hR]
+    exact hP.2.1
 
 end
 
