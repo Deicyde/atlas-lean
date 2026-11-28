@@ -56,7 +56,7 @@ private lemma power_mem_iff (M : ModuleCat.{0} ℤ) (n : ℕ) (x : M) :
   rw [Submodule.torsionBySet_ideal_span_singleton_eq, Submodule.mem_torsionBy_iff]
   rcases M with @⟨M, hG, hM⟩
   letI : AddCommGroup M := hG
-  have hm : hM = AddCommGroup.toIntModule := Subsingleton.elim _ _
+  have hm : hM = AddCommGroup.toIntModule M := Subsingleton.elim _ _
   subst hM
   rfl
 
