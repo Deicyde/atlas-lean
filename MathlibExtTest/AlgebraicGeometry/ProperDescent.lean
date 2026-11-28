@@ -33,6 +33,14 @@ example {X Y Y' : Scheme} (f : X ⟶ Y) (g : Y' ⟶ Y) [Surjective g] [Flat g] [
     (Q := @Surjective ⊓ @Flat ⊓ @QuasiCompact) (f := f) (g := g)
     ⟨⟨inferInstance, inferInstance⟩, inferInstance⟩ inferInstance
 
+/-- Closed range descends along a surjective, flat, quasi-compact base change: if the base change
+of `f` along `g` has closed range, so does `f`. -/
+example {X Y Y' : Scheme} (f : X ⟶ Y) (g : Y' ⟶ Y) [Surjective g] [Flat g] [QuasiCompact g]
+    (h : IsClosed (Set.range (pullback.snd f g))) : IsClosed (Set.range f) :=
+  MorphismProperty.of_pullback_snd_of_descendsAlong (P := isClosedRange)
+    (Q := @Surjective ⊓ @Flat ⊓ @QuasiCompact) (f := f) (g := g)
+    ⟨⟨inferInstance, inferInstance⟩, inferInstance⟩ h
+
 /-- A `k`-scheme whose base change to an extension field `K` is proper is proper over `k`. -/
 example {k K : Type} [Field k] [Field K] [Algebra k K] {X : Scheme}
     (f : X ⟶ Spec (CommRingCat.of k))

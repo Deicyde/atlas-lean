@@ -15,7 +15,7 @@ public import Mathlib.AlgebraicGeometry.Morphisms.Immersion
 public import Mathlib.AlgebraicGeometry.PullbackCarrier
 
 /-!
-# Separatedness and properness descend along fpqc coverings
+# Separatedness and properness descend along single fpqc morphisms
 
 * `AlgebraicGeometry.isClosedRange_descendsAlong`: having closed range descends along surjective,
   flat, quasi-compact morphisms;
@@ -24,9 +24,11 @@ public import Mathlib.AlgebraicGeometry.PullbackCarrier
 * `AlgebraicGeometry.isProper_of_isProper_pullback_snd_spec_map`: for a field extension `K/k` and a
   `k`-scheme `X`, if the base change `X_K` is proper over `K`, then `X` is proper over `k`.
 
-This is the Stacks project, Descent, Lemma 35.23.16 (Tag 02L1), for these properties, and its use
-for a ground field extension. Mathlib provides the descent of universal closedness and of being
-locally of finite type, and the descent of a property to the diagonal.
+Descent is along a single surjective, flat, quasi-compact morphism, not along covering families.
+This is the Stacks project, Descent, Lemma 35.23.6 for separatedness and Lemma 35.23.16
+(Tag 02L1) for properness, and the use of the latter for a ground field extension; closed range is
+the auxiliary property proved here. Mathlib provides the descent of universal closedness and of
+being locally of finite type, and the descent of a property to the diagonal.
 -/
 
 @[expose] public section
@@ -53,13 +55,6 @@ instance : isClosedRange.RespectsIso := by
     rw [Scheme.Hom.comp_base, TopCat.coe_comp, Set.range_comp]
     exact e.hom.homeomorph.isClosedMap _ hf
 
-/-- Surjective, flat, quasi-compact morphisms of schemes are stable under base change. -/
-instance :
-    (@Surjective ⊓ @Flat ⊓ @QuasiCompact : MorphismProperty Scheme).IsStableUnderBaseChange :=
-  have : (@Surjective ⊓ @Flat : MorphismProperty Scheme).IsStableUnderBaseChange :=
-    IsStableUnderBaseChange.inf
-  IsStableUnderBaseChange.inf
-
 /-- Having closed range descends along surjective, flat, quasi-compact morphisms of schemes. -/
 instance isClosedRange_descendsAlong :
     isClosedRange.DescendsAlong (@Surjective ⊓ @Flat ⊓ @QuasiCompact) := by
@@ -78,6 +73,11 @@ instance isClosedRange_descendsAlong :
 instance isSeparated_descendsAlong :
     MorphismProperty.DescendsAlong @IsSeparated (@Surjective ⊓ @Flat ⊓ @QuasiCompact) where
   of_isPullback {A X Y Z fst snd f g} h hf hfst := by
+    have : (@Surjective ⊓ @Flat : MorphismProperty Scheme).IsStableUnderBaseChange :=
+      IsStableUnderBaseChange.inf
+    have : (@Surjective ⊓ @Flat ⊓ @QuasiCompact :
+        MorphismProperty Scheme).IsStableUnderBaseChange :=
+      IsStableUnderBaseChange.inf
     have hdiag : isClosedRange.diagonal fst :=
       (pullback.diagonal fst).isClosedEmbedding.isClosed_range
     have hcl : isClosedRange.diagonal g :=
@@ -100,11 +100,7 @@ theorem isProper_of_isProper_pullback_snd_spec_map {k K : Type u} [Field k] [Fie
     [Algebra k K] {X : Scheme} (f : X ⟶ Spec (CommRingCat.of k))
     (h : IsProper (pullback.snd f (Spec.map (CommRingCat.ofHom (algebraMap k K))))) :
     IsProper f := by
-  have hs : Surjective (Spec.map (CommRingCat.ofHom (algebraMap k K))) := by
-    constructor
-    intro x
-    obtain ⟨y⟩ : Nonempty (Spec (CommRingCat.of K)) := inferInstance
-    exact ⟨y, Subsingleton.elim _ _⟩
+  have hs : Surjective (Spec.map (CommRingCat.ofHom (algebraMap k K))) := inferInstance
   have hfl : Flat (Spec.map (CommRingCat.ofHom (algebraMap k K))) := inferInstance
   have hqc : QuasiCompact (Spec.map (CommRingCat.ofHom (algebraMap k K))) := inferInstance
   exact MorphismProperty.of_pullback_snd_of_descendsAlong (P := @IsProper)
