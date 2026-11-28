@@ -12,15 +12,6 @@ permutation matrix $P$ of the transposition of $i$ and $j$, whose $(j, i)$ entry
 diagonal; so every elementary transvection lies in a conjugate of $U_n(F)$, and these generate
 $\mathrm{SL}_n(F)$ by [the generation by elementary transvections](generation-of-special-linear-groups-by-transvections.md).
 
-## Depends on
-
-This node has no prerequisites.
-
-## Proof depends on
-
-- [Generation of the special linear group by elementary transvections](generation-of-special-linear-groups-by-transvections.md)
-- [Elementary transvection](../double-commutators-of-transvections/is-elementary-transvection.md)
-
 ## Sources
 
 - T. Wedhorn, "The local Langlands correspondence for GL(n) over p-adic fields", lecture notes,

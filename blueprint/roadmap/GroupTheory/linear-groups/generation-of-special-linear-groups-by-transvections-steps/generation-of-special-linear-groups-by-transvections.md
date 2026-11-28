@@ -13,15 +13,6 @@ identity when $c = 0$, so $\det D = \det M = 1$, and $D$ is a product of element
 The inverse of an elementary transvection $1 + a e_{ij}$ is the elementary transvection
 $1 - a e_{ij}$.
 
-## Depends on
-
-- [Elementary transvection](../double-commutators-of-transvections/is-elementary-transvection.md), for the generators
-
-## Proof depends on
-
-- [Every square matrix is a product of transvections and a diagonal matrix](../transvection-diagonal-factorization.md), for the row reduction
-- [A diagonal matrix of determinant one is a product of elementary transvections](diagonal-matrix-of-determinant-one-is-a-product-of-transvections.md), for the diagonal factor
-
 ## Sources
 
 - K. Conrad, *Simplicity of $\mathrm{PSL}_n(F)$*, expository note,
