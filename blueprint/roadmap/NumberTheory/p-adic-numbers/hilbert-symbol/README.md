@@ -15,6 +15,8 @@
 - [Two Formula](two-formula/README.md)
 - [Hilbert's product formula over $\mathbb{Q}$](hilbert-symbol-product-formula.md)
 - [Ternary forms with a nonzero zero at all places but one](exists-ternary-eq-zero-of-forall-ne.md)
+- [The $p$-adic Hilbert symbol is bilinear](padic-hilbert-symbol-bilinear.md)
+- [The $p$-adic Hilbert symbol is nondegenerate](padic-hilbert-symbol-nondegenerate.md)
 - [Unit diagonal forms in at least three variables over $\mathbb{Q}_p$ are isotropic for odd $p$](diagonal-unit-isotropic.md)
 - [Real Hilbert symbol](real-hilbert-symbol.md)
 - [Real Hilbert symbol equal to $1$](eq-one-iff-2.md)
