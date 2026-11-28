@@ -107,7 +107,8 @@ private theorem prime_mod_eight_not_unit_mul_sq {p : ℕ} (hp : p.Prime)
       rw [← ht, ← hk]
       nlinarith)
   have hpdvd : p ∣ t.natAbs := Int.Prime.dvd_natAbs_of_coe_dvd_sq hp t ⟨k + 2, hid⟩
-  -- The norm bounds `t²` by `4p`, too small for a nonzero multiple of `p`.
+  -- The norm gives `t² ≤ 4p`. If `t ≠ 0` and `p ∣ |t|`, then `|t| ≥ p`, so
+  -- `t² ≥ p² > 4p` since `p > 4`, a contradiction.
   have ht0 : t = 0 := by
     by_contra hne
     have hle := Nat.le_of_dvd (Int.natAbs_pos.mpr hne) hpdvd
