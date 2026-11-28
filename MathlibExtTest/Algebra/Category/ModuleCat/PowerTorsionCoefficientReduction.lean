@@ -54,7 +54,11 @@ private lemma power_mem_iff (M : ModuleCat.{0} ℤ) (n : ℕ) (x : M) :
   change x ∈ Submodule.torsionBySet ℤ M ((I ^ n : Ideal ℤ) : Set ℤ) ↔ _
   rw [show I ^ n = Ideal.span {((2 : ℤ) ^ n)} from Ideal.span_singleton_pow _ _]
   rw [Submodule.torsionBySet_ideal_span_singleton_eq, Submodule.mem_torsionBy_iff]
-  simp only [int_smul_eq_zsmul]
+  rcases M with ⟨M, hG, hM⟩
+  letI : AddCommGroup M := hG
+  have hm : hM = AddCommGroup.toIntModule := Subsingleton.elim _ _
+  subst hM
+  rfl
 
 private def threeA : powerAnnihilator I A 2 :=
   ⟨3, (power_mem_iff A 2 3).mpr (by

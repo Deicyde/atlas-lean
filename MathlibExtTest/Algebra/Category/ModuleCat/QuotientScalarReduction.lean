@@ -89,7 +89,10 @@ private lemma integerFifteen_value : integerPresentation.hom.hom
     simpa only [integerPresentation] using!
       ModuleCat.surjectiveQuotientModuleIso_hom_mk ℤ (ZMod 6) integerReduction
         integerReduction_surjective 15
-  exact h.trans (by decide)
+  have hn : integerReduction (15 : ℤ) = (3 : ZMod 6) := by
+    change (15 : ZMod 6) = 3
+    decide
+  exact h.trans hn
 
 private lemma integerSix_value : integerPresentation.hom.hom
     (Ideal.Quotient.mk (RingHom.ker integerReduction) (6 : ℤ)) = (0 : ZMod 6) := by
@@ -98,7 +101,10 @@ private lemma integerSix_value : integerPresentation.hom.hom
     simpa only [integerPresentation] using!
       ModuleCat.surjectiveQuotientModuleIso_hom_mk ℤ (ZMod 6) integerReduction
         integerReduction_surjective 6
-  exact h.trans (by decide)
+  have hn : integerReduction (6 : ℤ) = (0 : ZMod 6) := by
+    change (6 : ZMod 6) = 0
+    decide
+  exact h.trans hn
 
 example : integerPresentation.hom.hom
     (Ideal.Quotient.mk (RingHom.ker integerReduction) (15 : ℤ)) = (3 : ZMod 6) :=
