@@ -178,7 +178,7 @@ private theorem digit_and_map_of_mem_digitInterval {z : ℝ} {d : ℕ} (hd : 1 <
 
 -- At each step the scaled remainder lies in (0, 1] exactly on the corresponding branch.
 -- Keep the iterate as part of the induction invariant to identify the next digit.
-private theorem convergent_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Ioc 0 1)
+private theorem triple_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Ioc 0 1)
     (hy : y ∈ Set.Ioc 0 1) (n : ℕ)
     (h : (((lurothDigitSeq y n : ℝ) - 1) * lurothDenominator (lurothDigitSeq y) n) *
       (x - lurothConvergent (lurothDigitSeq y) n) ∈ Set.Ioc 0 1) :
@@ -245,6 +245,13 @@ private theorem convergent_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Io
     · rw [Function.iterate_succ_apply', hiter, hr]
       exact hmap
 
+private theorem convergent_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Ioc 0 1)
+    (hy : y ∈ Set.Ioc 0 1) (n : ℕ)
+    (h : (((lurothDigitSeq y n : ℝ) - 1) * lurothDenominator (lurothDigitSeq y) n) *
+      (x - lurothConvergent (lurothDigitSeq y) n) ∈ Set.Ioc 0 1) :
+    lurothConvergent (lurothDigitSeq x) n = lurothConvergent (lurothDigitSeq y) n :=
+  (triple_eq_of_scaled_remainder hx hy n h).1
+
 end exists_lurothConvergent_eq_of_mem_lurothTripleSet
 
 /-- **Recognising Lüroth convergents.** For $y \in (0, 1]$ and $n \ge 0$ let $P_n(y)/Q_n(y)$ be
@@ -262,9 +269,10 @@ public theorem exists_lurothConvergent_eq_of_mem_lurothTripleSet (x : ℝ)
     ∃ n, lurothConvergent (lurothDigitSeq x) n = t.1 := by
   obtain ⟨y, hy, n, rfl⟩ := ht
   have ha := one_div_pos.mp (hpos.trans_le hle)
+  refine ⟨n, exists_lurothConvergent_eq_of_mem_lurothTripleSet.convergent_eq_of_scaled_remainder
+    hx hy n ⟨mul_pos ha hpos, ?_⟩⟩
   have hle' := (le_div_iff₀ ha).mp hle
-  exact ⟨n, (exists_lurothConvergent_eq_of_mem_lurothTripleSet.convergent_eq_of_scaled_remainder
-    hx hy n ⟨mul_pos ha hpos, by simpa only [mul_comm] using hle'⟩).1⟩
+  simpa only [mul_comm] using hle'
 
 namespace exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero
 
@@ -593,7 +601,7 @@ public theorem lurothWellApproximableSet_eq_limsup (ψ : ℕ → ℝ)
           (mul_le_mul_of_nonneg_right (by linarith) hq.le)
       have hpos := sub_pos.mpr ht.2.1
       have hclose := (sub_lt_iff_lt_add').mpr ht.2.2
-      obtain ⟨hc, hden, hd⟩ := convergent_eq_of_scaled_remainder hx hy n
+      obtain ⟨hc, hden, hd⟩ := triple_eq_of_scaled_remainder hx hy n
         ⟨mul_pos ha hpos, by simpa only [mul_comm] using
           (le_div_iff₀ ha).mp (hclose.le.trans hbound)⟩
       exact ⟨hx, n, by simp only [triple, d, hc, hden, hd]⟩
