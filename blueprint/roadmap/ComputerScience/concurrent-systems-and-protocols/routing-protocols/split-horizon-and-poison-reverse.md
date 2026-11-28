@@ -9,7 +9,7 @@ over its neighbors $v$, where $D_v$ and $n_v$ are those of the previous round.
 **Theorem.** Under split horizon or poison reverse:
 
 1. Take the path network $A - B - C$ with $c(A, B) = c(B, A) = 1$ and $c(B, C) = 2$, the example of [count-to-infinity](count-to-infinity-in-distance-vector-routing.md), starting from $D_A(C) = 3$ with $n_A(C) = B$ and $D_B(C) = 2$ with $n_B(C) = C$. After the link $B - C$ fails, $D_B(C) = \infty$ after one round, and $D_A(C) = D_B(C) = \infty$ after every later round.
-2. Let $A$, $B$ and $C$ be pairwise linked with cost $1$ and let a fourth node $Z$ be linked to $A$ with cost $1$, starting from the distances to $Z$: $D_A(Z) = 1$ with $n_A(Z) = Z$, and $D_B(Z) = D_C(Z) = 2$ with $n_B(Z) = n_C(Z) = A$. After the link $A - Z$ fails, whichever minimizing neighbors are chosen as next hops, for every $k \ge 3$ exactly one of $A$, $B$ and $C$ has a finite estimate of its distance to $Z$ after $k$ rounds, and that estimate is $k + 1$.
+2. Take the network whose nodes are exactly $A$, $B$, $C$ and $Z$ and whose links are exactly $A - B$, $B - C$, $C - A$ and $A - Z$, each of cost $1$ in both directions, starting from the distances to $Z$: $D_A(Z) = 1$ with $n_A(Z) = Z$, and $D_B(Z) = D_C(Z) = 2$ with $n_B(Z) = n_C(Z) = A$. After the link $A - Z$ fails, whichever minimizing neighbors are chosen as next hops, for every $k \ge 3$ exactly one of $A$, $B$ and $C$ has a finite estimate of its distance to $Z$ after $k$ rounds, and that estimate is $k + 1$.
 
 So either rule stops the count to infinity of a loop of two nodes, but in the second network the estimates still increase without bound around the loop $A$, $B$, $C$ of three nodes.
 
