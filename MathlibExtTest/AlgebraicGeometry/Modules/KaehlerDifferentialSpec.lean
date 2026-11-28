@@ -83,7 +83,8 @@ example : ∃ ι : Type, Cardinal.mk ι = 1 ∧
       SheafOfModules.free ι) :=
   exists_iso_free_kaehler_of_isStandardSmoothOfRelativeDimension 1
 
-/-- The same over the rationals, where `Algebra ℚ _` is not a subsingleton class. -/
+/-- The same over the rationals, applied to the algebra structure of `MvPolynomial (Fin 1) ℚ`
+with no cast. -/
 example : ∃ ι : Type, Cardinal.mk ι = 1 ∧
     Nonempty ((Spec.map (CommRingCat.ofHom (algebraMap ℚ (MvPolynomial (Fin 1) ℚ)))).kaehler ≅
       SheafOfModules.free ι) :=

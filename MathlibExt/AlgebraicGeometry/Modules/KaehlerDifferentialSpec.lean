@@ -33,11 +33,12 @@ file proves:
   derivation of `a ∈ A` to `d a`.
 * `kaehlerSpecIsoFree`, `kaehlerSpecIsoUnit`: a basis of `Ω[A⁄R]` (resp. an isomorphism
   `Ω[A⁄R] ≅ A`) gives an isomorphism of the sheaf with a free `𝒪_{Spec A}`-module (resp. with
-  `𝒪_{Spec A}`), and `exists_iso_free_kaehler_of_isStandardSmoothOfRelativeDimension`: if the
-  `R`-algebra `A` is standard smooth of relative dimension `n`, the sheaf is free on a set of
-  cardinality `n`.
+  `𝒪_{Spec A}`), and `exists_iso_free_kaehler_of_isStandardSmoothOfRelativeDimension`: if
+  `A` is a nontrivial standard smooth `R`-algebra of relative dimension `n`, the sheaf is free on
+  a set of cardinality `n`.
 * `KaehlerDifferential.linearEquivOfIsLocalizedModuleAway`: for a localization `S = A_g` and a
-  localization `t : Ω[A⁄R] → N` of `A`-modules away from `g`, the `S`-linear equivalence
+  localization `t : Ω[A⁄R] → N` of `A`-modules away from `g`, where `N` is an `S`-module whose
+  action restricts along `A → S` to the given `A`-action, the `S`-linear equivalence
   `Ω[S⁄R] ≃ N` extending `t`.
 
 The base of the relative differentials is the constant presheaf `R` (`constToPresheaf`). The
@@ -67,7 +68,8 @@ variable {R A S N : Type u} [CommRing R] [CommRing A] [CommRing S] [Algebra R A]
 
 /-- **Kähler differentials of a localization away from an element.** Let `R → A → S` with `S` a
 localization of `A` away from `g`, and let `t : Ω[A⁄R] → N` be a localization of `A`-modules
-away from `g`, where `N` is also an `S`-module. This is the `S`-linear equivalence
+away from `g`, where `N` is an `S`-module whose action restricts along `A → S` to the given
+`A`-action (`IsScalarTower A S N`). This is the `S`-linear equivalence
 `Ω[S⁄R] ≃ N` extending `t` along `Ω[A⁄R] → Ω[S⁄R]` (`linearEquivOfIsLocalizedModuleAway_map`).
 -/
 noncomputable def linearEquivOfIsLocalizedModuleAway : Ω[S⁄R] ≃ₗ[S] N :=
@@ -245,15 +247,13 @@ namespace KaehlerSpec
 /-- (Implementation) The quasi-coherent sheaf `Ω[A⁄R]^~` on `Spec A`. -/
 noncomputable abbrev tildeΩ : (Spec A).Modules := tilde (CommRingCat.KaehlerDifferential f)
 
-/-- (Implementation) The basic open `D(g)` of `Spec A`, as an open of the scheme. -/
+/-- (Implementation) The basic open `D(g)` of `Spec A`, as an open of the scheme. Stating it with
+the type `(Spec A).Opens` lets instance search find the module and algebra structures on its
+sections below; `PrimeSpectrum.basicOpen g` alone does not. -/
 abbrev bo (g : A) : (Spec A).Opens := PrimeSpectrum.basicOpen g
 
 instance isLocalization_bo (g : A) : IsLocalization.Away g Γ(Spec A, bo g) :=
   StructureSheaf.IsLocalization.to_basicOpen A g
-
-instance isLocalizedModule_toOpen_bo (M : ModuleCat.{u} A) (g : A) :
-    IsLocalizedModule.Away g (tilde.toOpen M (bo g)).hom :=
-  inferInstance
 
 /-- (Implementation) The localization map `Ω[A⁄R] → Γ(Ω[A⁄R]^~, D(g))`. -/
 noncomputable def toOpenₗ (g : A) : CommRingCat.KaehlerDifferential f →ₗ[A] Γ(tildeΩ f, bo g) :=
@@ -337,6 +337,8 @@ lemma dBasic_naturality {g g' : A} (j : bo g' ⟶ bo g) (s : Γ(Spec A, bo g)) :
   · intro x
     exact congr($(tilde.toOpen_res (CommRingCat.KaehlerDifferential f) _ _ j).hom x)
 
+/-- (Implementation) `PrimeSpectrum.isBasis_basic_opens`, in the form `Set.range bo` used by
+`TopCat.Sheaf.restrictHomEquivHom` below. -/
 lemma isBasis_bo : Opens.IsBasis (Set.range (bo (A := A))) := PrimeSpectrum.isBasis_basic_opens
 
 /-- (Implementation) The structure sheaf of `Spec A` as a presheaf of abelian groups. -/
@@ -485,10 +487,12 @@ noncomputable abbrev forgetR (A : CommRingCat.{u}) : (Spec A).Modules ⥤
     _root_.PresheafOfModules.{u} (Spec A).ringCatSheaf.obj :=
   SheafOfModules.forget _ ⋙ _root_.PresheafOfModules.restrictScalars (𝟙 (Spec A).ringCatSheaf.obj)
 
+/-- (Implementation) Instance search does not unfold `forgetR` to the composite. -/
 instance full_forgetR : (forgetR A).Full :=
   inferInstanceAs (SheafOfModules.forget _ ⋙
     _root_.PresheafOfModules.restrictScalars (𝟙 (Spec A).ringCatSheaf.obj)).Full
 
+/-- (Implementation) Instance search does not unfold `forgetR` to the composite. -/
 instance faithful_forgetR : (forgetR A).Faithful :=
   inferInstanceAs (SheafOfModules.forget _ ⋙
     _root_.PresheafOfModules.restrictScalars (𝟙 (Spec A).ringCatSheaf.obj)).Faithful
