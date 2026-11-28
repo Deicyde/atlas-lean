@@ -31,10 +31,12 @@ Clause map (specification clause to declaration):
 
 - C1 (Theorem 2, propriety): `isProper_iff_exists_convexOn_subgradient`.
 - C2 (Theorem 2, strict propriety): `isStrictlyProper_iff_exists_strictConvexOn_subgradient`.
-- C3 (the remark after Theorem 2: the expected score function is convex and the score vector
-  is a subgradient of it): `isProper_iff_convexOn_expectedScore_subgradient`.
-- C4 (proof of Theorem 1, strict case: strict propriety is strict convexity of the expected
-  score function): `isStrictlyProper_iff_isProper_and_strictConvexOn`.
+- C3 (the remark after Theorem 2: propriety if and only if the expected score function is
+  convex and the score vector supports it at every report):
+  `isProper_iff_convexOn_expectedScore_subgradient`.
+- C4 (proof of Theorem 1, strict case: among proper rules, strict propriety is equivalent to
+  strict convexity of the expected score function):
+  `isStrictlyProper_iff_isProper_and_strictConvexOn`.
 -/
 
 set_option autoImplicit false
@@ -116,7 +118,7 @@ private theorem isProper_of_hasRepresentation (X : Type*) [Fintype X]
   rw [hEq, hDiag]
   exact hsub q p hq hp
 
-/-- The expected score function with subgradient selection `S` satisfies the
+/-- The expected score function with candidate subgradient selection `S` satisfies the
 Savage representation equation. -/
 private theorem hasRepresentation_diag (X : Type*) [Fintype X]
     (S : ScoringRule X) :

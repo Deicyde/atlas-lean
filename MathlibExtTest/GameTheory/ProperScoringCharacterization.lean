@@ -14,8 +14,9 @@ import MathlibExt.GameTheory.ProperScoringCharacterization
 
 Instance checks against the landed rules: the quadratic rule is strictly
 proper, so it admits a strictly convex representation and a strictly convex
-expected score; a constant rule is proper with flat expected score, so it is
-not strictly proper.
+expected score; on two outcomes a constant rule is proper with flat expected
+score, so it gives the same score to two distinct reports and is not strictly
+proper.
 -/
 
 open MathlibExt.GameTheory.ProperScoring
@@ -42,8 +43,8 @@ example : IsProper (Fin 2) (fun _ _ => 0) := by
   intro p q _ _
   simp [expectedScore]
 
-/-- A constant rule's expected score is flat, so the rule is not strictly
-proper. -/
+/-- On two outcomes a constant rule gives the same score to two distinct
+reports, so it is not strictly proper. -/
 example : ¬ IsStrictlyProper (Fin 2) (fun _ _ => 0) := by
   intro h
   obtain ⟨-, h2⟩ := h
