@@ -32,6 +32,7 @@ public import Mathlib.NumberTheory.Padics.PadicVal.Basic
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumAlphaBounds
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumExistsRemaindersWeightedPowerSum
 public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumParameterBound
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumRemainderPos
 
 namespace MetaMathlibExt
 
@@ -183,26 +184,6 @@ public theorem_wanted remainder_bound_of_neg (P : LucasSequenceParams) (hyP : P.
     let α : ℝ := (P.p + Real.sqrt D) / 2
     D ^ ((q : ℝ) / 2) * |(lucasU P n : ℝ) ^ q - α ^ (n * q) / D ^ ((q : ℝ) / 2)| <
       k * (D + 1 / P.p) ^ (q + 1) * α ^ ((k : ℝ) * p - 2 * k / q + 1)
-
-/-- **Remainder bound for weighted Lucas power sums when $y = 1$.** Let $x$ be a positive integer
-with $D = x^2 - 4 > 0$, let $(U_m)$ be the Lucas sequence with parameters $(x, 1)$, given by
-$U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - U_m$, let $V_2 = x^2 - 2$ be the term of index $2$
-of the companion Lucas sequence, and let $\alpha = (x + \sqrt{D})/2$. If positive integers $n$,
-$p$, $q$ and an integer $k \ge 3$ satisfy $\sum_{j=1}^k j U_j^p = U_n^q$, then the remainder
-$R_2 = U_n^q - \alpha^{nq}/D^{q/2}$ satisfies
-$D^{q/2} |R_2| < k (V_2 + 1/x)^{q+1} \alpha^{kp - 2k/q + 1/2}$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 4.3 (`fq-2024-earplynch07182024-lem-4.3`). -/
-public theorem_wanted remainder_bound_of_pos (P : LucasSequenceParams) (hyP : P.q = 1)
-    (hD : 0 < P.p ^ 2 - 4 * P.q) (hx : 0 < P.p) {n k p q : ℕ} (hn : 0 < n) (hp : 0 < p)
-    (hq : 0 < q) (hk : 3 ≤ k)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    let D : ℝ := P.p ^ 2 - 4 * P.q
-    let α : ℝ := (P.p + Real.sqrt D) / 2
-    D ^ ((q : ℝ) / 2) * |(lucasU P n : ℝ) ^ q - α ^ (n * q) / D ^ ((q : ℝ) / 2)| <
-      k * ((lucasV P 2 : ℝ) + 1 / P.p) ^ (q + 1) * α ^ ((k : ℝ) * p - 2 * k / q + 1 / 2)
 
 end
 
