@@ -128,8 +128,8 @@ example : ∃ W : ℕ → ℝ, ∑ i ∈ Ico 1 3, W i = 0 ∧
     norm_num
 
 /-- Fay and Wu's `H` for three sequences is `(ξ₁ - 2 ξ₂) / 3`, so its test
-(`linearNeutralityTest_fayWuH`) is again `(ξ₁ - 2) / √2`: for `n = 3` every test is that of
-`(1, -1)` or of `(-1, 1)`. -/
+(`linearNeutralityTest_fayWuH`) is again `(ξ₁ - 2) / √2`: for `n = 3` every nondegenerate test is
+that of `(1, -1)` or of `(-1, 1)`. -/
 example : linearNeutralityTest (poissonMeasure 2) 3
     (normalizedWeights (fun _ => 1) (fun f => 2 * f) 3) xiPo =
       fun k : ℕ => ((k : ℝ) - 2) / √2 := by
@@ -171,6 +171,24 @@ example (W : ℝ → ℝ) : ∑ i ∈ Ico 1 4, centredWeights W 4 i = 0 :=
 values `W i` (Lean's `i / 1 = i`). -/
 example (W : ℝ → ℝ) (i : ℕ) : centredWeights W 1 i = W i := by
   simp [centredWeights]
+
+/-- The normalizing sums can vanish although the weight functions have integral `1`: for
+`n = 2`, `w(f) = 12 (f - 1/2)²` vanishes at the only sample frequency `1 / 2`, so the single
+normalized weight is `0 / 0 - 1 / 1 = -1` and the normalized weights do not sum to `0`. -/
+example : ∫ f in (0 : ℝ)..1, 12 * (f - 1 / 2) ^ 2 = 1 ∧
+    ∑ i ∈ Ico 1 2, normalizedWeights (fun f => 12 * (f - 1 / 2) ^ 2) (fun _ => 1) 2 i = -1 := by
+  constructor
+  · have h : (fun f : ℝ => 12 * (f - 1 / 2) ^ 2) = fun f => 12 * f ^ 2 - 12 * f + 3 := by
+      funext f
+      ring
+    have hc : ∀ g : ℝ → ℝ, Continuous g → IntervalIntegrable g MeasureTheory.volume 0 1 :=
+      fun g hg => hg.intervalIntegrable 0 1
+    rw [h, intervalIntegral.integral_add (hc _ (by fun_prop)) (hc _ (by fun_prop)),
+      intervalIntegral.integral_sub (hc _ (by fun_prop)) (hc _ (by fun_prop)),
+      intervalIntegral.integral_const_mul, intervalIntegral.integral_const_mul, integral_pow,
+      integral_id, intervalIntegral.integral_const]
+    norm_num
+  · norm_num [normalizedWeights]
 
 /-- Junk value: a vanishing normalizing sum makes its term `0`. -/
 example (w' : ℝ → ℝ) (i : ℕ) :

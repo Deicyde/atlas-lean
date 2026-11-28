@@ -29,15 +29,19 @@ whole sequence is called `θ`). For real weights `W_i` (the `Ω_i` of the source
 with the variance computed under the neutral model (`linearNeutralityTest`). Following
 Ramos-Onsins, Marmorini, Achaz and Ferretti (2023, Sections 1, 2.1 and 2.2):
 
-* `T_W` has mean `0` and variance `1` under neutrality, and the centred, unit-variance linear
-  statistics of the spectrum are exactly these tests;
+* `T_W` has mean `0` under neutrality, and variance `1` when its numerator has nonzero variance
+  (under Kingman's coalescent, when `θ > 0` and some weight is nonzero); when `θ L ≠ 0`, the
+  linear statistics of the spectrum with mean `0` and variance `1` are exactly the tests whose
+  weights sum to `0` and whose numerator has nonzero variance;
 * with `W_i = w_i - w'_i` it is the standardized difference of the two estimators
   `θ̂_w = L⁻¹ ∑_i i w_i ξ_i` and `θ̂_w'`, unbiased for `θ` when `∑_i w_i = ∑_i w'_i = 1`;
 * **weight-consistent scaling**: a test should weigh each population frequency of the derived
   allele in the same way at every sample size, so its weights should follow a fixed weight
-  function of the sample frequency `f = i / n`. Two centred ways of doing so are
-  `centredWeights` (from a weight function `W(f)` with `∫₀¹ W = 0`) and `normalizedWeights` (from
-  the weight functions `w(f)`, `w'(f)` of two estimators, with `∫₀¹ w = ∫₀¹ w' = 1`). Up to a
+  function of the sample frequency `f = i / n`. Two ways of doing so with weights that sum to
+  `0` are `centredWeights` (from a weight function `W(f)` with `∫₀¹ W = 0`; the weights sum to
+  `0` for `n ≥ 2`) and `normalizedWeights` (from the weight functions `w(f)`, `w'(f)` of two
+  estimators, with `∫₀¹ w = ∫₀¹ w' = 1`; the weights sum to `0` when both normalizing sums
+  `∑_{j=1}^{n-1} w(j / n)` and `∑_{j=1}^{n-1} w'(j / n)` are nonzero). Up to a
   positive factor, which does not change the test, both are within `O(1 / n)` of the weight
   function at `i / n`, and so of each other when `W = w - w'`, if the weight functions have
   bounded variation on `[0, 1]`;
@@ -56,13 +60,16 @@ Ramos-Onsins, Marmorini, Achaz and Ferretti (2023, Sections 1, 2.1 and 2.2):
 ## Main results
 
 * `integral_linearNeutralityTest`, `integral_linearNeutralityTest_kingman`: `E T_W = 0`.
-* `variance_linearNeutralityTest`, `variance_linearNeutralityTest_kingman`: `Var T_W = 1`.
-* `exists_linearNeutralityTest_eq_iff`: a linear statistic of the spectrum has mean `0` and
-  variance `1` exactly when it is a test `T_W` with `∑_i W_i = 0`.
+* `variance_linearNeutralityTest`, `variance_linearNeutralityTest_kingman`: `Var T_W = 1` when
+  the numerator has nonzero variance.
+* `exists_linearNeutralityTest_eq_iff`: when `θ L ≠ 0`, a linear statistic of the spectrum has
+  mean `0` and variance `1` exactly when it is a test `T_W` with `∑_i W_i = 0` whose numerator has
+  nonzero variance.
 * `linearNeutralityTest_const_mul`: weights rescaled by a factor `c > 0` give the same test.
 * `linearNeutralityTest_sub`: the test of `w - w'` is the standardized difference of two
   estimators of `θ`, unbiased by `VariableSFS.integral_thetaWeighted`.
-* `sum_centredWeights`, `sum_normalizedWeights`: both forms of the weights sum to `0`.
+* `sum_centredWeights`, `sum_normalizedWeights`: the centred weights sum to `0` for `n ≥ 2`, and
+  the normalized weights do when both normalizing sums are nonzero.
 * `exists_abs_centredWeights_sub_le`, `exists_abs_mul_normalizedWeights_sub_le`,
   `exists_abs_mul_normalizedWeights_sub_centredWeights_le`: the `O(1 / n)` bounds.
 * `normalizedWeights_const_mul`, `not_exists_centredWeights_four_eq_const_mul`: the normalized
@@ -227,12 +234,13 @@ theorem variance_linearNeutralityTest_kingman [IsProbabilityMeasure μ] {K : Kin
   exact add_pos_of_pos_of_nonneg (mul_pos hθ hpos) (mul_nonneg (sq_nonneg _)
     (variance_nonneg _ _))
 
-/-- **The centred, unit-variance linear statistics of the spectrum are the tests `T_W`**
+/-- **The centred, unit-variance linear statistics of the spectrum are the nondegenerate tests**
 (Ramos-Onsins et al. 2023, Section 2.1). Let each `ξ i` be integrable with the neutral mean
 `E_μ ξ_i = θ L / i` for `1 ≤ i ≤ n - 1`, where `θ L ≠ 0`. A linear statistic
 `∑_{i=1}^{n-1} a_i ξ_i` is a test `T_W` with weights summing to `0` (and a numerator of nonzero
-variance) exactly when it has mean `0` and variance `1` under `μ`; the weights are then
-`W_i = a_i / i`. -/
+variance) exactly when it has mean `0` and variance `1` under `μ`; one may then take
+`W_i = a_i / i`, and any positive multiple gives the same test (`linearNeutralityTest_const_mul`).
+-/
 theorem exists_linearNeutralityTest_eq_iff (hξ_int : ∀ i, Integrable (ξ i) μ) {θ L : ℝ}
     (hθL : θ * L ≠ 0) (hξ : ∀ i ∈ Ico 1 n, μ[ξ i] = θ * L / i) (a : ℕ → ℝ) :
     (∃ W : ℕ → ℝ, ∑ i ∈ Ico 1 n, W i = 0 ∧ Var[thetaWeighted n W ξ; μ] ≠ 0 ∧
@@ -290,20 +298,24 @@ theorem linearNeutralityTest_sub {L : ℝ} (hL : 0 < L) (w w' : ℕ → ℝ) :
 /-- **Centred weight-consistent weights** (Ramos-Onsins et al. 2023, Eq. (9)): from a weight
 function `W` of the frequency `f ∈ (0, 1)`, the weights
 `W_i^{(n)} = W(i / n) - (n - 1)⁻¹ ∑_{j=1}^{n-1} W(j / n)`: the values of `W` at the sample
-frequencies `i / n`, minus their mean, so that they sum to `0` (`sum_centredWeights`). It is
-meaningful for `n ≥ 2`. When `W` has bounded variation on `[0, 1]` and `∫₀¹ W = 0`, the
-correction is `O(1 / n)`, so that `W_i^{(n)} ≃ W(i / n)` (`exists_abs_centredWeights_sub_le`). -/
+frequencies `i / n`, minus their mean, so that for `n ≥ 2` they sum to `0`
+(`sum_centredWeights`). It is meaningful for `n ≥ 2`. When `W` has bounded variation on
+`[0, 1]` and `∫₀¹ W = 0`, the correction is `O(1 / n)`, so that `W_i^{(n)} ≃ W(i / n)`
+(`exists_abs_centredWeights_sub_le`). -/
 def centredWeights (W : ℝ → ℝ) (n i : ℕ) : ℝ :=
   W ((i : ℝ) / n) - (∑ j ∈ Ico 1 n, W ((j : ℝ) / n)) / ((n : ℝ) - 1)
 
 /-- **Normalized weight-consistent weights** (Ramos-Onsins et al. 2023, Eq. (10)): from the
 weight functions `w`, `w'` of two estimators, the weights
 `W_i^{(n)} = w(i / n) / ∑_{j=1}^{n-1} w(j / n) - w'(i / n) / ∑_{j=1}^{n-1} w'(j / n)`: the
-difference of the weights of two estimators, each normalized to sum to `1`, so that they sum to
-`0` (`sum_normalizedWeights`). With Lean's `x / 0 = 0`, a term whose normalizing sum is `0` is
-`0`. When `w` and `w'` have bounded variation on `[0, 1]` and `∫₀¹ w = ∫₀¹ w' = 1`,
-`n W_i^{(n)}` is within `O(1 / n)` of `w(i / n) - w'(i / n)`, so that
-`n W_i^{(n)} ≃ w(i / n) - w'(i / n)` (`exists_abs_mul_normalizedWeights_sub_le`). -/
+difference of the weights of two estimators, each normalized to sum to `1`. When both
+normalizing sums `∑_{j=1}^{n-1} w(j / n)` and `∑_{j=1}^{n-1} w'(j / n)` are nonzero, the weights
+sum to `0` (`sum_normalizedWeights`). Unit integrals do not ensure that at a given `n`: for
+`n = 2`, `w(f) = 12 (f - 1/2)²` has `∫₀¹ w = 1` but vanishes at the only sample frequency `1/2`.
+With Lean's `x / 0 = 0`, a term whose normalizing sum is `0` is `0`. When `w` and `w'` have
+bounded variation on `[0, 1]` and `∫₀¹ w = ∫₀¹ w' = 1`, `n W_i^{(n)}` is within `O(1 / n)` of
+`w(i / n) - w'(i / n)`, so that `n W_i^{(n)} ≃ w(i / n) - w'(i / n)`
+(`exists_abs_mul_normalizedWeights_sub_le`). -/
 def normalizedWeights (w w' : ℝ → ℝ) (n i : ℕ) : ℝ :=
   w ((i : ℝ) / n) / ∑ j ∈ Ico 1 n, w ((j : ℝ) / n) -
     w' ((i : ℝ) / n) / ∑ j ∈ Ico 1 n, w' ((j : ℝ) / n)
