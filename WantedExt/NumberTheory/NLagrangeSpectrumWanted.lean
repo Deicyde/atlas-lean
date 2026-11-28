@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 import Batteries.Util.ProofWanted
+public import MathlibExt.NumberTheory.NLagrangeSpectrum
 public import Mathlib.Algebra.ContinuedFractions.Computation.Basic
 public import Mathlib.Data.EReal.Basic
 public import Mathlib.NumberTheory.Divisors
@@ -21,60 +22,6 @@ namespace MetaMathlibExt
 @[expose] public section
 
 open Filter Topology
-
-/-- **$n$-Lagrange approximability.** For a natural number $n$ and a real number $\xi$, the
-$n$-Lagrange approximability of $\xi$ is the element of the extended reals
-$$\lambda_n(\xi) = \limsup_{s/t \to \xi} \frac{\gcd(t, n)}{t^2 \, |s/t - \xi|},$$
-where the limsup is over rational numbers $s/t \ne \xi$, written in lowest terms with $t > 0$,
-tending to $\xi$. For $n = 1$ this is the classical Lagrange approximability $\lambda(\xi)$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equation (3). -/
-noncomputable def nLagrangeApproximability (n : ℕ) (ξ : ℝ) : EReal :=
-  limsup (fun q : ℚ => (((Nat.gcd q.den n : ℝ) / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|) : ℝ) : EReal))
-    (comap ((↑) : ℚ → ℝ) (𝓝[≠] ξ))
-
-/-- **The $1$-Lagrange approximability is the classical one.** For every real number $\xi$, the
-$1$-Lagrange approximability of $\xi$ is
-$$\lambda_1(\xi) = \limsup_{s/t \to \xi} \frac{1}{t^2 \, |s/t - \xi|},$$
-taken in the extended reals, where the limsup is over rational numbers $s/t \ne \xi$, written in
-lowest terms with $t > 0$, tending to $\xi$. That is, the factor $\gcd(t, 1)$ in the definition
-equals $1$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equations (1) and (3). -/
-theorem nLagrangeApproximability_one (ξ : ℝ) :
-    nLagrangeApproximability 1 ξ =
-      limsup (fun q : ℚ => ((1 / ((q.den : ℝ) ^ 2 * |(q : ℝ) - ξ|) : ℝ) : EReal))
-        (comap ((↑) : ℚ → ℝ) (𝓝[≠] ξ)) := by
-  simp [nLagrangeApproximability]
-
-/-- **$n$-Markoff approximability.** For a natural number $n$ and real numbers $\xi$ and $\xi'$, the
-$n$-Markoff approximability is the supremum in the extended reals
-$$\mu_n(\xi, \xi') = \sup_{(s,t) \ne 0} \frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|}$$
-over all pairs of integers $(s, t) \ne (0, 0)$. A term whose denominator is $0$, which happens only
-when $\xi$ or $\xi'$ is rational, counts as $0$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equation (4). -/
-noncomputable def nMarkoffApproximability (n : ℕ) (ξ ξ' : ℝ) : EReal :=
-  ⨆ st : {p : ℤ × ℤ // p ≠ 0},
-    ((((Int.gcd st.1.2 n : ℝ) * |ξ - ξ'| /
-      (|(st.1.1 : ℝ) - st.1.2 * ξ| * |(st.1.1 : ℝ) - st.1.2 * ξ'|) : ℝ)) : EReal)
-
-/-- **Symmetry of the $n$-Markoff approximability.** For every natural number $n$ and all real
-numbers $\xi$ and $\xi'$, the $n$-Markoff approximability satisfies
-$\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Introduction, equation (4). -/
-theorem nMarkoffApproximability_comm (n : ℕ) (ξ ξ' : ℝ) :
-    nMarkoffApproximability n ξ ξ' = nMarkoffApproximability n ξ' ξ := by
-  simp only [nMarkoffApproximability, abs_sub_comm ξ ξ', mul_comm |(_ : ℝ) - _ * ξ|]
 
 /-- **$n$-Lagrange spectrum.** For a natural number $n$, the $n$-Lagrange spectrum $L_n$ is the set
 of real numbers $\alpha$ such that $\lambda_n(\xi) = \alpha$ for some irrational real number
@@ -124,47 +71,6 @@ theorem mem_nMarkoffSpectrum (n : ℕ) (α : ℝ) :
       ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧ nMarkoffApproximability n ξ ξ' = α :=
   Iff.rfl
 
-/-- **Convergents and the Lagrange approximability.** Let $\xi$ be an irrational real number,
-with complete quotients $\xi_0 = \xi$ and $\xi_{k+1} = 1/\{\xi_k\}$, where $\{x\}$ is the
-fractional part of $x$, and digits $a_k = \lfloor \xi_k \rfloor$, so that
-$\xi = [a_0; a_1, a_2, \dots]$. For $k \ge 1$ let
-$c_k = a_k + [0; a_{k-1}, \dots, a_1] + \{\xi_k\}$, where the middle term is $0$ when $k = 1$.
-Then for every $k \ge 1$ the convergent $p/q = [a_0; a_1, \dots, a_{k-1}]$, written in lowest terms
-with $q > 0$, satisfies $(-1)^k / (q^2 (p/q - \xi)) = c_k$. Moreover, the $1$-Lagrange
-approximability $\lambda_1(\xi)$ equals $\limsup_{k \to \infty} c_k$, taken in the extended reals.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Proposition 4 (`integers-2025-A47-prop-4`), parts (a) and (c), quoted from Cusick and Flahive,
-Appendix 1. -/
-public theorem_wanted convergent_quality_and_lagrange_limsup (ξ : ℝ) (hξ : Irrational ξ) :
-    let cq : ℕ → ℝ := fun k => (fun x : ℝ => (Int.fract x)⁻¹)^[k] ξ
-    let a : ℕ → ℤ := fun k => ⌊cq k⌋
-    let rev : ℕ → ℝ := fun k =>
-      ((List.range (k - 1)).reverse.map (fun i => a (i + 1))).foldr
-        (fun b acc => 1 / ((b : ℝ) + acc)) 0
-    let cut : ℕ → ℝ := fun k => (a k : ℝ) + rev k + Int.fract (cq k)
-    (∀ k : ℕ, 1 ≤ k →
-        (-1 : ℝ) ^ k / (((ξ.convergent (k - 1)).den : ℝ) ^ 2 *
-          ((ξ.convergent (k - 1) : ℝ) - ξ)) = cut k) ∧
-      nLagrangeApproximability 1 ξ = limsup (fun k => ((cut k : ℝ) : EReal)) atTop
-
-/-- **The $n$-approximabilities as maxima over divisors.** Let $n \ge 1$, let $\lambda_n$ and
-$\mu_n$ be the $n$-Lagrange and $n$-Markoff approximabilities, and let $\xi \ne \xi'$ be irrational
-real numbers. Then $\lambda_n(\xi) = \max_{g \mid n} \lambda_1(g\xi)$ and
-$\mu_n(\xi, \xi') = \max_{g \mid n} \mu_1(g\xi, g\xi')$, where $g$ runs over the positive divisors
-of $n$ and the maxima are taken in the extended reals.
-
-Source: Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the
-Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47,
-Proposition 6 (`integers-2025-A47-prop-6`). -/
-public theorem_wanted nApproximability_eq_sup_divisors (n : ℕ) (hn : 1 ≤ n) (ξ ξ' : ℝ)
-    (hξ : Irrational ξ) (hξ' : Irrational ξ') (hne : ξ ≠ ξ') :
-    nLagrangeApproximability n ξ =
-        n.divisors.sup (fun g => nLagrangeApproximability 1 (g * ξ)) ∧
-      nMarkoffApproximability n ξ ξ' =
-        n.divisors.sup (fun g => nMarkoffApproximability 1 (g * ξ) (g * ξ'))
-
 /-- **Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra.** Let $m$ and $n$
 be natural numbers with $m \ge 1$, $n \ge 1$ and $m \mid n$, and write $L_k$ and $M_k$ for the
 $k$-Lagrange and $k$-Markoff spectra. Then $L_n \subseteq L_m$ and $M_n \subseteq M_m$; in
@@ -194,7 +100,8 @@ public theorem_wanted nLagrangeSpectrum_subset_nMarkoffSpectrum_attained (n : �
       ∀ α ∈ nLagrangeSpectrum n, ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧
         nMarkoffApproximability n ξ ξ' = α ∧
         ∃ s t : ℤ, (s, t) ≠ 0 ∧
-          (((Int.gcd t n : ℝ) * |ξ - ξ'| / (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
+          (((Int.gcd t n : ℝ) * |ξ - ξ'| /
+            (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
 
 /-- **Attained suprema in the $n$-Markoff spectrum.** Let $n \ge 1$, let $M_n$ be the $n$-Markoff
 spectrum, and let $\mu_n$ be the $n$-Markoff approximability. For every $\alpha \in M_n$ there are
@@ -210,7 +117,8 @@ public theorem_wanted nMarkoffSpectrum_attained (n : ℕ) (hn : 1 ≤ n) :
     ∀ α ∈ nMarkoffSpectrum n, ∃ ξ ξ' : ℝ, Irrational ξ ∧ Irrational ξ' ∧ ξ ≠ ξ' ∧
       nMarkoffApproximability n ξ ξ' = α ∧
         ∃ s t : ℤ, (s, t) ≠ 0 ∧
-          (((Int.gcd t n : ℝ) * |ξ - ξ'| / (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
+          (((Int.gcd t n : ℝ) * |ξ - ξ'| /
+            (|(s : ℝ) - t * ξ| * |(s : ℝ) - t * ξ'|) : ℝ) : EReal) = α
 
 /-- **The $n$-Markoff spectrum is closed.** For every integer $n \ge 1$, the $n$-Markoff spectrum
 $M_n$ is a closed subset of $\mathbb{R}$.

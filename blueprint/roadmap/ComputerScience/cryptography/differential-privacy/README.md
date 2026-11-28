@@ -49,6 +49,55 @@ A randomized algorithm (a *mechanism*) is differentially private when changing o
 - [Pure differential privacy is preserved by deterministic post-processing](is-dp-post-process.md)
 - [A database-independent mechanism is 0-differentially private](is-dp-const.md)
 
+## Fingerprinting codes and the tracing game
+
+- [Binary word](word.md)
+- [Codebook](codebook.md)
+- [Codewords of a coalition](submatrix.md)
+- [Pirate strategy](pirate.md)
+- [Fingerprinting code](fingerprinting-code.md)
+- [Feasible word](feasible.md)
+- [Marking condition](marking-feasible.md)
+- [Feasible words are those that satisfy the marking condition](feasible-iff-marking-feasible.md)
+- [β-feasible word](error-robust-feasible.md)
+- [Zero-error feasibility is feasibility](error-robust-feasible-zero-iff.md)
+- [Accusation of a colluder](accuses-guilty.md)
+- [False accusation](false-accusation.md)
+- [No accusation](no-accusation.md)
+- [Tracing failure](tracing-failure.md)
+- [Tracing game](tracing-game.md)
+- [Completeness failure](completeness-failure-event.md)
+- [Error-robust completeness failure](error-robust-completeness-failure-event.md)
+- [Soundness failure](soundness-failure-event.md)
+- [Combined tracing failure](combined-failure-event.md)
+- [Completeness error](completeness-error-prob.md)
+- [Error-robust completeness error](error-robust-completeness-error-prob.md)
+- [Soundness error](soundness-error-prob.md)
+- [Combined tracing error](combined-error-prob.md)
+- [Fingerprinting security](is-fingerprinting-secure.md)
+- [Is Fingerprinting Secure](is-fingerprinting-secure-2.md)
+- [Error-robust fingerprinting security](is-error-robust-fingerprinting-secure.md)
+- [Combined fingerprinting security](is-fingerprinting-secure-combined.md)
+- [Bernoulli mass](bernoulli-mass.md)
+- [Bernoulli distribution](bernoulli-pmf.md)
+- [Codebook mass for a bias vector](bias-codebook-mass.md)
+- [Codebook with independent biased entries](bias-codebook-pmf.md)
+- [Independent draws](pmf-iid.md)
+- [Generation from a bias-vector distribution](gen-from-bias-vector-dist.md)
+- [Generation from independent biases](gen-from-iidbias-dist.md)
+- [Tardos weight](tardos-weight.md)
+- [Tardos score](tardos-score.md)
+- [Tardos accusation](tardos-accuses.md)
+
+## Soundness of the Tardos accusation for a fixed bias vector
+
+- [Tardos Weight mean eq zero](tardos-weight-mean-eq-zero.md)
+- [Tardos Weight sq mean eq one](tardos-weight-sq-mean-eq-one.md)
+- [Tardos Weight exp mean le](tardos-weight-exp-mean-le.md)
+- [Sum bias Codebook PMF mul exp tardos Score](sum-bias-codebook-pmf-mul-exp-tardos-sco.md)
+- [Tardos Accuses prob le](tardos-accuses-prob-le.md)
+- [Tardos soundness fixed bias](tardos-soundness-fixed-bias.md)
+
 ## Related topics
 
 - [Laplace and exponential mechanisms](../laplace-and-exponential-mechanisms/README.md): the basic mechanisms that achieve pure differential privacy, built on this definition.
@@ -60,3 +109,4 @@ A randomized algorithm (a *mechanism*) is differentially private when changing o
 - [Packing lower bound for pure differential privacy](packing-lower-bound-for-pure-differential.md)
 - [Rényi differential privacy of the Gaussian mechanism](renyi-differential-privacy-of-the-gaussian.md)
 - [Fingerprinting codes](fingerprinting-codes.md)
+- [Accuracy of randomized programs is undecidable](accuracy-of-randomized-programs-is-undecidable.md)

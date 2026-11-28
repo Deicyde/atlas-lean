@@ -11,9 +11,11 @@ module
 import Batteries.Util.ProofWanted
 public import MathlibExt.NumberTheory.Digits.BasePhiRepresentations
 public import MathlibExt.NumberTheory.Digits.BergmanLucasEvenAdd
+public import MathlibExt.NumberTheory.Digits.BergmanLucasOddAdd
 public import MathlibExt.NumberTheory.Digits.BergmanWordFib
 public import MathlibExt.NumberTheory.Digits.FibMemLucasIntervals
 public import MathlibExt.NumberTheory.LucasSequence
+public import MathlibExt.NumberTheory.Digits.BasePhiRepresentationsBergmanLowestPositionLucasInterval
 
 /-!
 # Counting base phi representations
@@ -29,19 +31,6 @@ statement about `S` up to translation.
 -/
 
 namespace MetaMathlibExt
-
-/-- **Golden mean flips connect all expansions to the Bergman expansion.** Let $N$ be a natural
-number, let $S$ be a Bergman expansion of $N$ and let $T$ be any finite base phi expansion of
-$N$ with digits $0$ and $1$. Then $T$ is obtained from $S$ by finitely many (possibly zero)
-golden mean flips $100 \to 011$.
-
-Source: Michel Dekking and Ad van Loon, *Counting Base Phi Representations*,
-Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 2.1
-(`fq-2024-dekking11102023-thm-2.1`). -/
-public theorem_wanted reflTransGen_isGoldenMeanFlip_of_isBergmanExpansion (N : ℕ)
-    {S T : Finset ℤ} (hS : IsBergmanExpansion S) (hSN : basePhiValue S = N)
-    (hTN : basePhiValue T = N) :
-    Relation.ReflTransGen IsGoldenMeanFlip S T
 
 /-- **Recursion for the number of Knott expansions.** Let $\varphi$ be the golden ratio, let
 $N \ge 2$ and $n$ be natural numbers, and let $p_0, \dots, p_n$ be integers with
@@ -143,66 +132,5 @@ public theorem_wanted bergman_tail_parity_iff_lucasInterval (N : ℕ) (hN : 2 �
     ((∃ n : ℕ, N ∈ Set.Icc (lucasNumber (2 * n)) (lucasNumber (2 * n + 1))) ↔ Odd s) ∧
       ((∃ n : ℕ, N ∈ Set.Icc (lucasNumber (2 * n + 1) + 1) (lucasNumber (2 * n + 2) - 1)) ↔
         Even s)
-
-/-- **Lowest Bergman digit of $N$ from its Lucas interval.** Let $N$ and $n$ be natural numbers,
-let $S$ be a finite set of integers with no two consecutive elements (a Bergman expansion) whose
-base phi value is $N$, and let $R$ be the least element of $S$. Write $L_m$ for the $m$-th Lucas
-number. If $L_{2n} \le N \le L_{2n+1}$, then $-R = 2n$. If $L_{2n+1} + 1 \le N \le L_{2n+2} - 1$,
-then $-R = 2n + 2$.
-
-Source: Michel Dekking and Ad van Loon, *Counting Base Phi Representations*,
-Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(b)
-(`fq-2024-dekking11102023-prop-5.1`). -/
-public theorem_wanted bergman_lowest_position_lucasInterval (N n : ℕ) {S : Finset ℤ}
-    (hS : IsBergmanExpansion S) (hSN : basePhiValue S = N) {R : ℤ}
-    (hR : IsLeast (S : Set ℤ) R) :
-    (N ∈ Set.Icc (lucasNumber (2 * n)) (lucasNumber (2 * n + 1)) → -R = 2 * n) ∧
-      (N ∈ Set.Icc (lucasNumber (2 * n + 1) + 1) (lucasNumber (2 * n + 2) - 1) →
-        -R = 2 * n + 2)
-
-/-- **Recursive structure of Bergman expansions, odd Lucas case.** Let $n \ge 2$, let $k$ be a
-natural number, and write $L_m$ for the $m$-th Lucas number. Call a finite set of integers with no
-two consecutive elements a Bergman expansion. Let $S$ and $T$ be Bergman expansions, let $a$ and
-$t$ be the least and the greatest element of $S$, let $S' = S \setminus \{a, t\}$, and for an
-integer $c$ write $S' + c = \{x + c : x \in S'\}$.
-
-(i) If $1 \le k \le L_{2n-2} - 1$, the base phi value of $S$ is $L_{2n-1} + k$ and that of $T$
-is $L_{2n+1} + k$, then there is an integer $b$ with
-$T = \{b, b + 3, b + (t - a) + 4\} \cup (S' + (b - a + 2))$.
-
-(ii) If $1 \le k \le L_{2n-2} - 1$, the base phi value of $S$ is $L_{2n-1} + k$ and that of $T$
-is $L_{2n+1} + L_{2n-1} + k$, then there is an integer $b$ with
-$T = \{b, b + (t - a) + 2, b + (t - a) + 4\} \cup (S' + (b - a + 2))$.
-
-(iii) If $k \le L_{2n-3}$, the base phi value of $S$ is $L_{2n-2} + k$ and that of $T$ is
-$L_{2n+1} + L_{2n-2} + k$, then there is an integer $b$ with
-$T = \{b, b + 3, b + (t - a) + 4, b + (t - a) + 7\} \cup (S' + (b - a + 4))$.
-
-Source: Michel Dekking and Ad van Loon, *Counting Base Phi Representations*,
-Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 II,
-quoting F. M. Dekking, *How to add two numbers in base phi*
-(`fq-2024-dekking11102023-thm-5.2`). -/
-public theorem_wanted bergman_lucas_odd_add (n : ℕ) (hn : 2 ≤ n) :
-    (∀ k : ℕ, 1 ≤ k → k ≤ lucasNumber (2 * n - 2) - 1 →
-      ∀ S T : Finset ℤ, ∀ a t : ℤ, IsBergmanExpansion S →
-        basePhiValue S = (lucasNumber (2 * n - 1) + k : ℕ) →
-        IsLeast (S : Set ℤ) a → IsGreatest (S : Set ℤ) t → IsBergmanExpansion T →
-        basePhiValue T = (lucasNumber (2 * n + 1) + k : ℕ) →
-        ∃ b : ℤ, T = {b, b + 3, b + (t - a) + 4} ∪
-          ((S.erase a).erase t).image (· + (b - a + 2))) ∧
-    (∀ k : ℕ, 1 ≤ k → k ≤ lucasNumber (2 * n - 2) - 1 →
-      ∀ S T : Finset ℤ, ∀ a t : ℤ, IsBergmanExpansion S →
-        basePhiValue S = (lucasNumber (2 * n - 1) + k : ℕ) →
-        IsLeast (S : Set ℤ) a → IsGreatest (S : Set ℤ) t → IsBergmanExpansion T →
-        basePhiValue T = (lucasNumber (2 * n + 1) + lucasNumber (2 * n - 1) + k : ℕ) →
-        ∃ b : ℤ, T = {b, b + (t - a) + 2, b + (t - a) + 4} ∪
-          ((S.erase a).erase t).image (· + (b - a + 2))) ∧
-    (∀ k : ℕ, k ≤ lucasNumber (2 * n - 3) →
-      ∀ S T : Finset ℤ, ∀ a t : ℤ, IsBergmanExpansion S →
-        basePhiValue S = (lucasNumber (2 * n - 2) + k : ℕ) →
-        IsLeast (S : Set ℤ) a → IsGreatest (S : Set ℤ) t → IsBergmanExpansion T →
-        basePhiValue T = (lucasNumber (2 * n + 1) + lucasNumber (2 * n - 2) + k : ℕ) →
-        ∃ b : ℤ, T = {b, b + 3, b + (t - a) + 4, b + (t - a) + 7} ∪
-          ((S.erase a).erase t).image (· + (b - a + 4)))
 
 end MetaMathlibExt

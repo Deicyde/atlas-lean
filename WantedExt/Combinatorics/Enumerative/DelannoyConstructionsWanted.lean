@@ -59,61 +59,6 @@ public theorem_wanted genDelannoyLower_relations (k m n : ℕ) (hk : 1 ≤ k) (h
       (k < n → (genDelannoyLower k (m + 1) n : ℤ) - genDelannoyLower k m n =
         genDelannoyLower (k + 1) (m + 1) n)
 
-/-- **Lower generalized Delannoy numbers as a sum of powers of two.** For natural numbers $k$, $m$,
-$n$ with $m \ge k$ and $n \ge k$, the lower generalized Delannoy number $D_k(m, n)$ satisfies
-$D_k(m, n) = \sum_{j=0}^{\min(m-k, n-k)} \binom{m-k}{j} \binom{n}{j+k} 2^{j+k}$.
-
-Source: Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal
-of Integer Sequences 27 (2024), Article 24.1.8, Theorem 9
-(`jis-2024-24.1.8-thm-9`). -/
-public theorem_wanted genDelannoyLower_eq_sum_two_pow (k m n : ℕ) (hm : k ≤ m) (hn : k ≤ n) :
-    genDelannoyLower k m n =
-      ∑ j ∈ range (min (m - k) (n - k) + 1), (m - k).choose j * n.choose (j + k) * 2 ^ (j + k)
-
-/-- **Powers-of-two formula for the upper generalized Delannoy numbers.**
-For natural numbers $k$, $m$ and $n$, write
-$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
-generalized Delannoy numbers. For all natural numbers $k$, $m$ and $n$,
-$$D^k(m, n) = \sum_{j=0}^{\min(m, n)} \binom{m + k}{j + k} \binom{n}{j} 2^j.$$
-
-Source: Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal
-of Integer Sequences 27 (2024), Article 24.1.8, Theorem 10
-(`jis-2024-24.1.8-thm-10`). -/
-public theorem_wanted genDelannoyUpper_eq_sum_two_pow (k m n : ℕ) :
-    genDelannoyUpper k m n = ∑ j ∈ range (min m n + 1), (m + k).choose (j + k) * n.choose j * 2 ^ j
-
-/-- **Unified power-of-two sums for generalized Delannoy numbers.** For natural numbers $k$, $m$,
-$n$, write $D_k(m, n)$ and $D^k(m, n)$ for the lower and upper generalized Delannoy numbers. If
-$m \ge k$ and $n \ge k$, then
-$D_k(m, n) = \sum_{j=k}^{\min(m, n)} \binom{m-k}{j-k} \binom{n}{j} 2^j$; and, for all $k$, $m$, $n$,
-$D^k(m, n) = \sum_{j=0}^{\min(m, n)} \binom{m+k}{j+k} \binom{n}{j} 2^j$.
-
-With the convention $D_{-k} = D^k$, the second formula is the first with $k$ replaced by $-k$.
-
-Source: Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal
-of Integer Sequences 27 (2024), Article 24.1.8, Theorem 11
-(`jis-2024-24.1.8-thm-11`). -/
-public theorem_wanted genDelannoy_eq_sum_two_pow_unified (k m n : ℕ) :
-    (k ≤ m → k ≤ n → genDelannoyLower k m n =
-        ∑ j ∈ Ico k (min m n + 1), (m - k).choose (j - k) * n.choose j * 2 ^ j) ∧
-      genDelannoyUpper k m n = ∑ j ∈ range (min m n + 1), (m + k).choose (j + k) * n.choose j * 2 ^ j
-
-/-- **Powers of two dividing iterated horizontal sums of a Delannoy array.** Let $R(m, n)$, for
-$m, n \in \mathbb{N}$, be integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for all
-$m, n$. For an array $S$ let $(HS)(m, n) = S(m, n) + S(m, n+1)$, and write $R^i = H^i R$ for the
-$i$-fold horizontal sum. Let $k, i \in \mathbb{N}$ with $i \ge 1$, and suppose
-$R(0, n) = \binom{k+n}{k}$ for all $n$. Then every entry of $R^{k+i}$ is divisible by $2^i$, and
-some entry of $R^{k+i}$ is not divisible by $2^{i+1}$.
-
-Source: Steven Edwards and William Griffiths, *Delannoy Constructions*, Journal
-of Integer Sequences 27 (2024), Article 24.1.8, Theorem 18
-(`jis-2024-24.1.8-thm-18`). -/
-public theorem_wanted delannoyArray_binomial_seeds_two_pow_dvd (R : ℕ → ℕ → ℤ)
-    (hR : ∀ m n, R (m + 1) (n + 1) = R m (n + 1) + R (m + 1) n + R m n) (k i : ℕ) (hi : 1 ≤ i)
-    (hseed : ∀ n, R 0 n = (k + n).choose k) :
-    (∀ m n, (2 : ℤ) ^ i ∣ (fun S : ℕ → ℕ → ℤ => fun a b => S a b + S a (b + 1))^[k + i] R m n) ∧
-      ∃ m n, ¬ (2 : ℤ) ^ (i + 1) ∣ (fun S : ℕ → ℕ → ℤ => fun a b => S a b + S a (b + 1))^[k + i] R m n
-
 end
 
 end DelannoyConstructions

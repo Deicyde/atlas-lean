@@ -14,10 +14,12 @@ public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 public import Mathlib.NumberTheory.NumberField.ClassNumber
 public import Mathlib.NumberTheory.Pell
 public import MathlibExt.NumberTheory.Diophantine.BisectorEquationIntZero
+public import MathlibExt.NumberTheory.Diophantine.BisectorEquationPythagorean
 public import MathlibExt.NumberTheory.Diophantine.NegativePellGcd
 public import MathlibExt.NumberTheory.Diophantine.NegativePellRational
 public import MathlibExt.NumberTheory.GeneralPellBisectors
 public import MathlibExt.NumberTheory.NegativePellDivisibility
+public import MathlibExt.NumberTheory.GeneralPellBisectorsBisectorEquationFormTen
 
 namespace MetaMathlibExt
 
@@ -38,19 +40,6 @@ public theorem_wanted bisector_equation_rat_solution (a b c : ℚ) (hab : |a| �
       b ^ 2 - d * b₂ ^ 2 = -1 ∧
       ((b₂ + a₂ ≠ 0 ∧ c = (a * b₂ + a₂ * b) / (b₂ + a₂)) ∨
         (b₂ - a₂ ≠ 0 ∧ c = (a * b₂ - a₂ * b) / (b₂ - a₂)))
-
-/-- **Symmetries of the bisector equation.** Let $a, b, c$ be real numbers with
-$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then the triples $(-a, -b, -c)$ and $(b, a, c)$
-satisfy the same equation, and so does $(a, b, -c^{-1})$ when $c \ne 0$.
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(a)
-(`integers-2024-A111-prop-2`). -/
-public theorem_wanted bisector_equation_symm (a b c : ℝ)
-    (h : (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)) :
-    (c ≠ 0 → (a - -c⁻¹) ^ 2 * (b ^ 2 + 1) = (b - -c⁻¹) ^ 2 * (a ^ 2 + 1)) ∧
-      (-a - -c) ^ 2 * ((-b) ^ 2 + 1) = (-b - -c) ^ 2 * ((-a) ^ 2 + 1) ∧
-      (b - c) ^ 2 * (a ^ 2 + 1) = (a - c) ^ 2 * (b ^ 2 + 1)
 
 /-- **Integer solutions of the bisector equation.** For a natural number $d > 1$ such that
 $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in positive integers
@@ -104,21 +93,6 @@ public theorem_wanted bisector_equation_form_nine (d m n : ℕ) (hd : 1 < d)
     let c := negPellG d ((2 * m - 1) * (2 * n)) / negPellG d (2 * m - 1)
     negPellG d (2 * m - 1) ∣ negPellG d ((2 * m - 1) * (2 * n)) ∧
       (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)
-
-/-- **Bisector-equation solutions from the powers of $1 + \sqrt{2}$.** The least solution of
-$x^2 - 2 y^2 = -1$ in positive integers is $(1, 1)$; define integers $f_k$ and $g_k$ by
-$f_k + g_k \sqrt{2} = (1 + \sqrt{2})^k$ for natural numbers $k$. For every natural number $n > 0$,
-the integers $a = f_{2n-1}$, $b = -f_{2n+1}$ and $c = f_{2n}$ satisfy
-$$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3, converse for (10)
-(`integers-2024-A111-thm-3`). -/
-public theorem_wanted bisector_equation_form_ten (n : ℕ) (hn : 0 < n) :
-    let a := negPellF 2 (2 * n - 1)
-    let b := -negPellF 2 (2 * n + 1)
-    let c := negPellF 2 (2 * n)
-    (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1)
 
 /-- **Finitely many classes of solutions of a general Pell equation.** Let $d > 0$ be an integer
 that is not a perfect square, let $\varepsilon$ be the fundamental solution of $x^2 - dy^2 = 1$,
@@ -350,24 +324,6 @@ theorem strictPrimitiveExponent_two_seven : strictPrimitiveExponent 2 7 = 1 := b
   have h2 : Nat.find hp.2 ≤ 1 :=
     Nat.find_min' hp.2 ⟨Nat.one_pos, 3, 1, ⟨1, -1, by norm_num⟩, by norm_num⟩
   omega
-
-/-- **Pythagorean parametrization of rational solutions of the bisector equation.** Let $a, b, c$
-be rational numbers with $|a| \ne |b|$ and $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$, and suppose
-that $a^2 + 1$ and $b^2 + 1$ are squares of rational numbers. Then there are integers $l, m, n$ with
-$|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$ such that
-$$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n},$$
-and
-$$c = \frac{l m - n^2}{(l + m) n} \qquad \text{or} \qquad c = -\frac{(l + m) n}{l m - n^2}.$$
-
-Source: Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with
-Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1(i)
-(`integers-2024-A111-thm-1`). -/
-public theorem_wanted bisector_equation_rat_solution_pythagorean (a b c : ℚ) (hab : |a| ≠ |b|)
-    (h : (a - c) ^ 2 * (b ^ 2 + 1) = (b - c) ^ 2 * (a ^ 2 + 1))
-    (ha : ∃ a₂ : ℚ, a ^ 2 - a₂ ^ 2 = -1) (hb : ∃ b₂ : ℚ, b ^ 2 - b₂ ^ 2 = -1) :
-    ∃ l m n : ℤ, |l| ≠ |m| ∧ l * m ≠ n ^ 2 ∧ l * m * n ≠ 0 ∧
-      a = ((l : ℚ) ^ 2 - n ^ 2) / (2 * l * n) ∧ b = ((m : ℚ) ^ 2 - n ^ 2) / (2 * m * n) ∧
-      (c = ((l : ℚ) * m - n ^ 2) / ((l + m) * n) ∨ c = -(((l : ℚ) + m) * n) / (l * m - n ^ 2))
 
 /-- **Parametric rational solutions of the bisector equation.** Let $l, m, n$ be integers with
 $|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$, and put

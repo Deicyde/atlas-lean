@@ -13,15 +13,26 @@ public import Mathlib.Topology.MetricSpace.HausdorffDimension
 public import MathlibExt.NumberTheory.LurothConvergent
 import Mathlib.Analysis.SpecificLimits.Normed
 import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Ring
 
 /-!
-# Lüroth well approximable sets without monotonicity
+# Lüroth well approximable sets
 
-For each finite nonnegative lower order at infinity, we construct an approximation function
-that increases on every tail and whose Lüroth well approximable set has Hausdorff dimension zero.
+For functions `ψ : ℕ → ℝ` with values in `(0, 1]` and lower order at infinity greater than `1`,
+the Lüroth well approximable set is the limsup of the open approximation intervals indexed by
+Lüroth convergent triples. For each finite nonnegative lower order at infinity, we also construct
+an approximation function with values in `(0, 1]` that increases on every tail and whose Lüroth
+well approximable set has Hausdorff dimension zero.
+
+## References
+
+* Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and
+  Conjectures*, INTEGERS 26 (2026), Article A45, pp. 1–20: Section 2 and equation (11) for the
+  definitions, Proposition 1 for the one-sided error bound, Proposition 4 for recognition,
+  Proposition 7 for the limsup characterization, and Theorem 9 for the counterexample.
 -/
 
 namespace MetaMathlibExt
@@ -113,7 +124,155 @@ public theorem lurothWellApproximableSet_subset_Ioc (ψ : ℕ → ℝ) :
     lurothWellApproximableSet ψ ⊆ Set.Ioc 0 1 :=
   fun _ hx => hx.1
 
+/-- **Lüroth convergent triples.** The set $S$ consists of the triples $(c_n(y), Q_n(y), d_n(y))$
+for $y \in (0, 1]$ and $n \ge 0$, where $d_0(y), d_1(y), \dots$ are the Lüroth digits of $y$
+(indexed from $0$), $Q_n(y) = d_n(y) \prod_{j < n} d_j(y)(d_j(y) - 1)$ is the $n$-th Lüroth
+denominator of this digit sequence, and $c_n(y) = \sum_{k \le n} 1/Q_k(y)$ is its $n$-th Lüroth
+convergent. The first entry is the rational number $c_n(y)$, the second the natural number
+$Q_n(y)$ and the third the digit $d_n(y)$.
+
+Source: Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric
+Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (16). -/
+public def lurothTripleSet : Set (ℚ × ℕ × ℕ) :=
+  {t | ∃ y ∈ Set.Ioc (0 : ℝ) 1, ∃ n,
+    t = (lurothConvergent (lurothDigitSeq y) n, lurothDenominator (lurothDigitSeq y) n,
+      lurothDigitSeq y n)}
+
 end
+
+namespace exists_lurothConvergent_eq_of_mem_lurothTripleSet
+
+private theorem mem_digitInterval {z : ℝ} {d : ℕ} (hd : 1 < d)
+    (h : (d : ℝ) * ((d : ℝ) - 1) * (z - 1 / (d : ℝ)) ∈ Set.Ioc 0 1) :
+    z ∈ Set.Ioc (1 / (d : ℝ)) (1 / ((d : ℝ) - 1)) := by
+  have hd' : (1 : ℝ) < d := by exact_mod_cast hd
+  have hd0 : (0 : ℝ) < d := zero_lt_one.trans hd'
+  have hp := sub_pos.mpr hd'
+  have hs := mul_pos hd0 hp
+  refine ⟨sub_pos.mp ((mul_pos_iff_of_pos_left hs).mp h.1), ?_⟩
+  have hle := (le_div_iff₀ hs).2 (by simpa only [mul_comm] using h.2)
+  calc
+    z ≤ 1 / (d : ℝ) + 1 / ((d : ℝ) * ((d : ℝ) - 1)) := by linarith
+    _ = 1 / ((d : ℝ) - 1) := by
+      field_simp [hd0.ne', hp.ne']
+      ring
+
+private theorem digit_and_map_of_mem_digitInterval {z : ℝ} {d : ℕ} (hd : 1 < d) (hz : 0 < z)
+    (h : z ∈ Set.Ioc (1 / (d : ℝ)) (1 / ((d : ℝ) - 1))) :
+    lurothDigit z = d ∧
+      lurothMap z = (d : ℝ) * ((d : ℝ) - 1) * (z - 1 / (d : ℝ)) := by
+  have hd' : (1 : ℝ) < d := by exact_mod_cast hd
+  have hd0 : (0 : ℝ) < d := zero_lt_one.trans hd'
+  have hlo := (div_lt_iff₀ hd0).1 h.1
+  have hhi := (le_div_iff₀ (sub_pos.mpr hd')).1 h.2
+  have hfloor : ⌊1 / z⌋₊ = d - 1 := by
+    rw [Nat.floor_eq_iff (one_div_nonneg.mpr hz.le), Nat.cast_sub hd.le, Nat.cast_one,
+      sub_add_cancel]
+    exact ⟨(le_div_iff₀ hz).2 (by simpa only [mul_comm] using hhi),
+      (div_lt_iff₀ hz).2 (by simpa only [mul_comm] using hlo)⟩
+  have hdigit : lurothDigit z = d := by
+    rw [lurothDigit, hfloor, Nat.sub_add_cancel hd.le]
+  refine ⟨hdigit, ?_⟩
+  rw [lurothMap, hdigit]
+  field_simp [hd0.ne']
+
+-- At each step the scaled remainder lies in (0, 1] exactly on the corresponding branch.
+-- Keep the iterate as part of the induction invariant to identify the next digit.
+private theorem triple_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Ioc 0 1)
+    (hy : y ∈ Set.Ioc 0 1) (n : ℕ)
+    (h : (((lurothDigitSeq y n : ℝ) - 1) * lurothDenominator (lurothDigitSeq y) n) *
+      (x - lurothConvergent (lurothDigitSeq y) n) ∈ Set.Ioc 0 1) :
+    lurothConvergent (lurothDigitSeq x) n = lurothConvergent (lurothDigitSeq y) n ∧
+      lurothDenominator (lurothDigitSeq x) n = lurothDenominator (lurothDigitSeq y) n ∧
+      lurothDigitSeq x n = lurothDigitSeq y n := by
+  let d := lurothDigitSeq y
+  let c (k : ℕ) : ℝ := lurothConvergent d k
+  let q (k : ℕ) : ℝ := lurothDenominator d k
+  let a (k : ℕ) : ℝ := ((d k : ℝ) - 1) * q k
+  let r (k : ℕ) : ℝ := a k * (x - c k)
+  change r n ∈ Set.Ioc 0 1 at h
+  have ha (k : ℕ) : 0 < a k := by
+    obtain ⟨hl, hu⟩ := lurothConvergent_lt_le y hy k
+    exact one_div_pos.mp (hl.trans_le hu)
+  have hd (k : ℕ) : 1 < d k := by
+    have hd' : (1 : ℝ) < d k := sub_pos.mp (pos_of_mul_pos_left (ha k) (Nat.cast_nonneg _))
+    exact_mod_cast hd'
+  suffices hprefix :
+      lurothConvergent (lurothDigitSeq x) n = lurothConvergent d n ∧
+      lurothDenominator (lurothDigitSeq x) n = lurothDenominator d n ∧
+      lurothDigitSeq x n = d n ∧ lurothMap^[n + 1] x = r n from
+    ⟨hprefix.1, hprefix.2.1, hprefix.2.2.1⟩
+  induction n with
+  | zero =>
+    have h0 : (d 0 : ℝ) * ((d 0 : ℝ) - 1) * (x - 1 / (d 0 : ℝ)) ∈ Set.Ioc 0 1 := by
+      simpa [r, a, c, q, lurothConvergent, lurothDenominator, mul_comm] using h
+    obtain ⟨heq, hmap⟩ := digit_and_map_of_mem_digitInterval (hd 0) hx.1
+      (mem_digitInterval (hd 0) h0)
+    have hdigit : lurothDigitSeq x 0 = d 0 := heq
+    refine ⟨?_, ?_, hdigit, ?_⟩
+    · simp [lurothConvergent, lurothDenominator, hdigit]
+    · simp [lurothDenominator, hdigit]
+    · simpa [r, a, c, q, lurothConvergent, lurothDenominator, mul_comm] using hmap
+  | succ n ih =>
+    have hq : q (n + 1) = a n * d (n + 1) := by
+      dsimp only [q, a]
+      rw [lurothDenominator_succ, Nat.cast_mul, Nat.cast_mul, Nat.cast_sub (hd n).le,
+        Nat.cast_one, mul_comm (↑(lurothDenominator d n) : ℝ)]
+    have hr : r (n + 1) = (d (n + 1) : ℝ) * ((d (n + 1) : ℝ) - 1) *
+        (r n - 1 / (d (n + 1) : ℝ)) := by
+      have hd0 : (0 : ℝ) < d (n + 1) := by exact_mod_cast (zero_lt_one.trans (hd (n + 1)))
+      have hc : c (n + 1) = c n + 1 / q (n + 1) := by
+        simp only [c, q, lurothConvergent_succ, Rat.cast_add, Rat.cast_div, Rat.cast_one,
+          Rat.cast_natCast]
+      rw [show r (n + 1) = ((d (n + 1) : ℝ) - 1) * q (n + 1) * (x - c (n + 1)) from rfl,
+        hc, hq]
+      unfold r
+      field_simp [(ha n).ne', hd0.ne']
+      ring
+    rw [hr] at h
+    have hn := mem_digitInterval (hd (n + 1)) h
+    have htwo : (2 : ℝ) ≤ d (n + 1) := by exact_mod_cast (hd (n + 1))
+    have hn0 : 0 < r n := (by positivity : 0 < 1 / (d (n + 1) : ℝ)).trans hn.1
+    have hn1 : r n ≤ 1 := hn.2.trans (div_le_one_of_le₀ (by linarith) (by linarith))
+    obtain ⟨hc, hq', hd', hiter⟩ := ih ⟨hn0, hn1⟩
+    obtain ⟨heq, hmap⟩ := digit_and_map_of_mem_digitInterval (hd (n + 1)) hn0 hn
+    have hdigit : lurothDigitSeq x (n + 1) = d (n + 1) := by
+      rw [lurothDigitSeq, hiter, heq]
+    have hdenom : lurothDenominator (lurothDigitSeq x) (n + 1) = lurothDenominator d (n + 1) := by
+      rw [lurothDenominator_succ, hq', hd', hdigit, ← lurothDenominator_succ]
+    refine ⟨?_, hdenom, hdigit, ?_⟩
+    · rw [lurothConvergent_succ, hc, hdenom, ← lurothConvergent_succ]
+    · rw [Function.iterate_succ_apply', hiter, hr]
+      exact hmap
+
+private theorem convergent_eq_of_scaled_remainder {x y : ℝ} (hx : x ∈ Set.Ioc 0 1)
+    (hy : y ∈ Set.Ioc 0 1) (n : ℕ)
+    (h : (((lurothDigitSeq y n : ℝ) - 1) * lurothDenominator (lurothDigitSeq y) n) *
+      (x - lurothConvergent (lurothDigitSeq y) n) ∈ Set.Ioc 0 1) :
+    lurothConvergent (lurothDigitSeq x) n = lurothConvergent (lurothDigitSeq y) n :=
+  (triple_eq_of_scaled_remainder hx hy n h).1
+
+end exists_lurothConvergent_eq_of_mem_lurothTripleSet
+
+/-- **Recognising Lüroth convergents.** For $y \in (0, 1]$ and $n \ge 0$ let $P_n(y)/Q_n(y)$ be
+the $n$-th Lüroth convergent of $y$, $Q_n(y)$ its Lüroth denominator and $d_n(y)$ the $n$-th
+Lüroth digit of $y$, and let $S$ be the set of all triples $(P_n(y)/Q_n(y), Q_n(y), d_n(y))$ for
+$y \in (0, 1]$ and $n \ge 0$. If $x \in (0, 1]$ and $(P/Q, Q, d) \in S$ satisfy
+$0 < x - P/Q \le 1/((d - 1) Q)$, then $P/Q$ is a Lüroth convergent of $x$, that is,
+$P/Q = P_n(x)/Q_n(x)$ for some $n$.
+
+Source: Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric
+Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 4. -/
+public theorem exists_lurothConvergent_eq_of_mem_lurothTripleSet (x : ℝ)
+    (hx : x ∈ Set.Ioc 0 1) (t : ℚ × ℕ × ℕ) (ht : t ∈ lurothTripleSet)
+    (hpos : 0 < x - t.1) (hle : x - t.1 ≤ 1 / (((t.2.2 : ℝ) - 1) * t.2.1)) :
+    ∃ n, lurothConvergent (lurothDigitSeq x) n = t.1 := by
+  obtain ⟨y, hy, n, rfl⟩ := ht
+  have ha := one_div_pos.mp (hpos.trans_le hle)
+  refine ⟨n, exists_lurothConvergent_eq_of_mem_lurothTripleSet.convergent_eq_of_scaled_remainder
+    hx hy n ⟨mul_pos ha hpos, ?_⟩⟩
+  have hle' := (le_div_iff₀ ha).mp hle
+  simpa only [mul_comm] using hle'
 
 namespace exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero
 
@@ -332,6 +491,132 @@ private theorem dimH_eq_zero_of_small_on_even (ψ : ℕ → ℝ)
   exact ENNReal.top_ne_zero (le_antisymm (hs ▸ hμ) bot_le)
 
 end exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero
+
+private theorem lurothNumerator_lt_denominator {x : ℝ} (hx : x ∈ Set.Ioc 0 1) (n : ℕ) :
+    ∃ p : ℕ, p < lurothDenominator (lurothDigitSeq x) n ∧
+      (lurothConvergent (lurothDigitSeq x) n : ℝ) =
+        (p : ℝ) / lurothDenominator (lurothDigitSeq x) n := by
+  open exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero in
+  obtain ⟨p, hp⟩ := convergent_numerator hx n
+  have hq : (0 : ℝ) < lurothDenominator (lurothDigitSeq x) n := by
+    exact_mod_cast denominator_pos hx n
+  have hlt := (sub_pos.mp (lurothConvergent_lt_le x hx n).1).trans_le hx.2
+  rw [hp, div_lt_iff₀ hq, one_mul] at hlt
+  exact ⟨p, by exact_mod_cast hlt, hp⟩
+
+/-- **Convergent intervals stay in the open unit interval.** For each Lüroth convergent triple
+`(c, Q, d)`, the open interval from `c` to `c + 1 / Q` is contained in `(0, 1)`. -/
+public theorem Ioo_subset_Ioo_of_mem_lurothTripleSet {t : ℚ × ℕ × ℕ} (ht : t ∈ lurothTripleSet) :
+    Set.Ioo (t.1 : ℝ) (t.1 + 1 / (t.2.1 : ℝ)) ⊆ Set.Ioo 0 1 := by
+  obtain ⟨y, hy, n, rfl⟩ := ht
+  obtain ⟨p, hp, hc⟩ := lurothNumerator_lt_denominator hy n
+  have hq : (0 : ℝ) < lurothDenominator (lurothDigitSeq y) n := by
+    exact_mod_cast (Nat.zero_le p).trans_lt hp
+  intro x hx
+  refine ⟨(by rw [hc]; positivity : 0 ≤ (lurothConvergent (lurothDigitSeq y) n : ℝ))
+    |>.trans_lt hx.1, hx.2.trans_le ?_⟩
+  change (lurothConvergent (lurothDigitSeq y) n : ℝ) + _ ≤ 1
+  rw [hc, ← add_div, div_le_iff₀ hq, one_mul]
+  exact_mod_cast hp
+
+private theorem finite_lurothTriples_below (N : ℕ) :
+    {t ∈ lurothTripleSet | t.2.1 < N}.Finite := by
+  open exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero in
+  let f (a : Fin N × Fin N × Fin N) : ℚ × ℕ × ℕ :=
+    ((a.1.val : ℚ) / a.2.1.val, a.2.1.val, a.2.2.val)
+  apply (Set.finite_range f).subset
+  rintro t ⟨⟨y, hy, n, rfl⟩, hq⟩
+  let d := lurothDigitSeq y
+  let q := lurothDenominator d n
+  obtain ⟨p, hp, hc⟩ := lurothNumerator_lt_denominator hy n
+  have hd : d n ≤ q := Nat.le_of_dvd (denominator_pos hy n) (lurothDigit_dvd_lurothDenominator d n)
+  refine ⟨(⟨p, hp.trans hq⟩, ⟨q, hq⟩, ⟨d n, hd.trans_lt hq⟩), ?_⟩
+  have hc' : lurothConvergent d n = (p : ℚ) / q := by
+    apply Rat.cast_injective (α := ℝ)
+    simpa only [Rat.cast_div, Rat.cast_natCast] using hc
+  exact congrArg (fun c : ℚ => (c, q, d n)) hc'.symm
+
+private theorem eventually_lt_inv_of_one_lt_lowerOrder {ψ : ℕ → ℝ}
+    (hψ0 : ∀ q, 0 < ψ q) (hτ : 1 < lowerOrderAtInfinity ψ) :
+    ∀ᶠ q : ℕ in atTop, ψ q < (q : ℝ)⁻¹ := by
+  filter_upwards [eventually_lt_of_lt_liminf hτ, eventually_ge_atTop 2] with q hq hq₂
+  have hq₁ : (1 : ℝ) < q := by exact_mod_cast hq₂
+  rw [← ENNReal.ofReal_one, ENNReal.ofReal_lt_ofReal_iff_of_nonneg zero_le_one,
+    lt_div_iff₀ (Real.log_pos hq₁), one_mul] at hq
+  apply (Real.log_lt_log_iff (hψ0 q) (by positivity)).mp
+  rw [Real.log_inv, lt_neg]
+  exact hq
+
+/-- **Lüroth well approximable numbers as a limsup over convergent triples.** Let $\psi$ be a
+function from the natural numbers to $(0, 1]$ whose lower order at infinity $\tau_\psi$ is greater
+than $1$. Then the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers consists of the real
+numbers $x$ for which there are infinitely many triples $(c, Q, d)$ in the set $S$ of Lüroth
+convergent triples with $c < x < c + \psi(Q)/Q$.
+
+Source: Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric
+Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 7. -/
+public theorem lurothWellApproximableSet_eq_limsup (ψ : ℕ → ℝ)
+    (hψ0 : ∀ q, 0 < ψ q) (hψ1 : ∀ q, ψ q ≤ 1) (hτ : 1 < lowerOrderAtInfinity ψ) :
+    lurothWellApproximableSet ψ =
+      {x | {t ∈ lurothTripleSet |
+        x ∈ Set.Ioo (t.1 : ℝ) (t.1 + ψ t.2.1 / t.2.1)}.Infinite} := by
+  open exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero in
+  open exists_lurothConvergent_eq_of_mem_lurothTripleSet in
+  ext x
+  let d := lurothDigitSeq x
+  let triple (n : ℕ) : ℚ × ℕ × ℕ := (lurothConvergent d n, lurothDenominator d n, d n)
+  let s := {t ∈ lurothTripleSet | x ∈ Set.Ioo (t.1 : ℝ) (t.1 + ψ t.2.1 / t.2.1)}
+  change x ∈ lurothWellApproximableSet ψ ↔ s.Infinite
+  constructor
+  · rintro ⟨hx, happ⟩ hfin
+    obtain ⟨Q, hQ⟩ := (hfin.image (fun t => t.2.1)).bddAbove
+    obtain ⟨n, hn, hclose⟩ := frequently_atTop.mp happ (Q + 1)
+    have hpos := (lurothConvergent_lt_le x hx n).1
+    rw [abs_of_pos hpos] at hclose
+    have hm : triple n ∈ s :=
+      ⟨⟨x, hx, n, rfl⟩, sub_pos.mp hpos, by linarith only [hclose]⟩
+    exact (Nat.not_succ_le_self Q) (hn.trans ((index_le_denominator hx n).trans
+      (hQ ⟨triple n, hm, rfl⟩)))
+  · intro hs
+    obtain ⟨N, hN⟩ := eventually_atTop.mp (eventually_lt_inv_of_one_lt_lowerOrder hψ0 hτ)
+    have hrecognise (t : ℚ × ℕ × ℕ) (ht : t ∈ s) (hlarge : N ≤ t.2.1) :
+        x ∈ Set.Ioc 0 1 ∧ ∃ n, t = triple n := by
+      have hmem := ht.1
+      obtain ⟨y, hy, n, rfl⟩ := hmem
+      let e := lurothDigitSeq y
+      let q := lurothDenominator e n
+      have hq : (0 : ℝ) < q := by exact_mod_cast denominator_pos hy n
+      have hd₂ : (2 : ℝ) ≤ e n := by exact_mod_cast digit_ge_two hy n
+      have hdq : (e n : ℝ) ≤ q := by
+        exact_mod_cast Nat.le_of_dvd (denominator_pos hy n) (lurothDigit_dvd_lurothDenominator e n)
+      have hx : x ∈ Set.Ioc 0 1 := by
+        have hrad := div_le_div_of_nonneg_right (hψ1 q) hq.le
+        exact Set.Ioo_subset_Ioc_self (Ioo_subset_Ioo_of_mem_lurothTripleSet ht.1
+          ⟨ht.2.1, ht.2.2.trans_le (add_le_add le_rfl hrad)⟩)
+      have ha : 0 < ((e n : ℝ) - 1) * q := mul_pos (by linarith) hq
+      have hbound : ψ q / q ≤ 1 / (((e n : ℝ) - 1) * q) := calc
+        _ ≤ (q : ℝ)⁻¹ / q := div_le_div_of_nonneg_right (hN q hlarge).le hq.le
+        _ = 1 / ((q : ℝ) * q) := by rw [inv_eq_one_div, div_div]
+        _ ≤ _ := one_div_le_one_div_of_le ha
+          (mul_le_mul_of_nonneg_right (by linarith) hq.le)
+      have hpos := sub_pos.mpr ht.2.1
+      have hclose := (sub_lt_iff_lt_add').mpr ht.2.2
+      obtain ⟨hc, hden, hd⟩ := triple_eq_of_scaled_remainder hx hy n
+        ⟨mul_pos ha hpos, by simpa only [mul_comm] using
+          (le_div_iff₀ ha).mp (hclose.le.trans hbound)⟩
+      exact ⟨hx, n, by simp only [triple, d, hc, hden, hd]⟩
+    have hex (k : ℕ) : ∃ t ∈ s, N ≤ t.2.1 ∧ t ∉ triple '' Set.Iio k := by
+      obtain ⟨t, ht, ht'⟩ := hs.exists_notMem_finite
+        ((finite_lurothTriples_below N).union ((Set.finite_Iio k).image triple))
+      exact ⟨t, ht, le_of_not_gt (fun h => ht' (Or.inl ⟨ht.1, h⟩)), fun h => ht' (Or.inr h)⟩
+    obtain ⟨t, ht, hlarge, _⟩ := hex 0
+    refine ⟨(hrecognise t ht hlarge).1, frequently_atTop.mpr ?_⟩
+    intro k
+    obtain ⟨u, hu, hq, hpre⟩ := hex k
+    obtain ⟨_, n, rfl⟩ := hrecognise u hu hq
+    refine ⟨n, le_of_not_gt (fun h => hpre ⟨n, h, rfl⟩), ?_⟩
+    rw [abs_of_pos (sub_pos.mpr hu.2.1)]
+    exact (sub_lt_iff_lt_add').mpr hu.2.2
 
 /-- **Without monotonicity the Lüroth dimension can vanish.** For every real number $\tau \ge 0$
 there is a function $\psi$ from the natural numbers to $(0, 1]$ such that: $\psi$ is not

@@ -16,6 +16,9 @@ public import MathlibExt.NumberTheory.GeneralizedSylvester
 public import MathlibExt.NumberTheory.MillinSeries
 public import MathlibExt.NumberTheory.DoublyExponentialReciprocalSumExistsTailEqPseudoGreedyExpansion
 public import MathlibExt.NumberTheory.DoublyExponentialReciprocalSumEventuallyPseudoGreedyGapEqZero
+public import MathlibExt.NumberTheory.DoublyExponentialReciprocalSumEventuallySylvester
+public import MathlibExt.NumberTheory.DoublyExponentialReciprocalSumSylvester
+public import MathlibExt.NumberTheory.DoublyExponentialReciprocalSumEqRoundInvRemainderAdd
 
 /-!
 # Reciprocal sums of doubly exponential sequences
@@ -33,37 +36,6 @@ open Filter Topology
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Recovering a doubly exponential sequence from its reciprocal sum.** Let $\beta \ge 0$ and
-$r$ be real numbers, and let $(a_n)_{n \ge 0}$ be a sequence of positive integers with
-$|a_n^2 / a_{n+1} - \beta| \le 1/3$ for all $n$ and $\sum_n 1 / a_n = r$. Write
-$x_n = r - \sum_{k<n} 1 / a_k$. Then for every $n$ with $a_n \ge 8 (\beta + 1/3)^2$ we have
-$a_n = \lfloor x_n^{-1} + \beta + 1/2 \rfloor$, that is, $a_n$ is the integer nearest to
-$x_n^{-1} + \beta$, with halves rounded up. Moreover, if $a_n^2 / a_{n+1} \to \beta$, then
-$|x_n^{-1} + \beta - a_n| \to 0$.
-
-Source: Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential
-Sequences*, INTEGERS 26 (2026), Article A28, Theorem 1 (`integers-2026-A28-thm-1`). -/
-public theorem_wanted eq_round_inv_remainder_add {β r : ℝ} (hβ : 0 ≤ β) {a : ℕ → ℕ}
-    (hpos : ∀ n, 0 < a n) (hratio : ∀ n, |(a n : ℝ) ^ 2 / a (n + 1) - β| ≤ 1 / 3)
-    (hsum : HasSum (fun n => 1 / (a n : ℝ)) r) :
-    (∀ n, 8 * (β + 1 / 3) ^ 2 ≤ (a n : ℝ) →
-      (a n : ℤ) = ⌊(r - ∑ k ∈ Finset.range n, 1 / (a k : ℝ))⁻¹ + β + 1 / 2⌋) ∧
-    (Tendsto (fun n => (a n : ℝ) ^ 2 / a (n + 1)) atTop (𝓝 β) →
-      Tendsto (fun n => |(r - ∑ k ∈ Finset.range n, 1 / (a k : ℝ))⁻¹ + β - a n|) atTop (𝓝 0))
-
-/-- **Characterization of the Sylvester sequence.** Let $(a_n)_{n \ge 0}$ be a sequence of
-positive integers with $2/3 \le a_n^2 / a_{n+1} \le 4/3$ for all $n$ and $\sum_n 1 / a_n = 1$.
-Then $a_n = s_n(1)$ for all $n \ge 0$, where $(s_n(1))_{n \ge 0}$ is the generalized Sylvester
-sequence with parameter $1$, that is, the Sylvester sequence $2, 3, 7, 43, \ldots$.
-
-Source: Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential
-Sequences*, INTEGERS 26 (2026), Article A28, Corollary 1 (`integers-2026-A28-cor-1`). -/
-public theorem_wanted eq_sylvester_of_ratio_mem_of_hasSum_one {a : ℕ → ℕ}
-    (hpos : ∀ n, 0 < a n)
-    (hratio : ∀ n, 2 / 3 ≤ (a n : ℝ) ^ 2 / a (n + 1) ∧ (a n : ℝ) ^ 2 / a (n + 1) ≤ 4 / 3)
-    (hsum : HasSum (fun n => 1 / (a n : ℝ)) 1) :
-    ∀ n, a n = Nat.generalizedSylvester 1 n
 
 /-- **Doubly exponential floors are Type 2 irrationality sequences for all but countably many
 bases.** For all real numbers $\alpha > 1$ outside a countable set, the sequence
@@ -103,25 +75,6 @@ public theorem_wanted pseudoGreedyExpansion_rational_structure {p q : ℕ} (hp :
         d (n + 1) = d n * a n) ∧
       (fun n => (c n : ℝ)) =O[atTop] (fun n => (∏ k ∈ Finset.range n, (a k : ℝ)) / a n) ∧
       (fun n => (c n : ℝ)) =O[atTop] (fun n => (1.5 : ℝ) ^ n)
-
-/-- **Erdős–Straus and Badea criterion for the Sylvester recurrence.** Let $(a_n)_{n \ge 0}$ be a
-sequence of positive integers with $a_n^2 / a_{n+1} \to 1$ such that $\sum_n 1 / a_n$ converges
-to a rational number. Suppose that
-$\liminf_n (a_0 \cdots a_{n-1} / a_n)(1 - a_n^2 / a_{n+1}) \ge 0$, that is, for every
-$\delta > 0$ this quantity is at least $-\delta$ for all sufficiently large $n$; or that
-$a_{n+1} \ge a_n^2 - a_n + 1$ for all sufficiently large $n$. Then
-$a_{n+1} = a_n^2 - a_n + 1$ for all sufficiently large $n$.
-
-Source: Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential
-Sequences*, INTEGERS 26 (2026), Article A28, Corollary 4 (`integers-2026-A28-cor-4`). -/
-public theorem_wanted eventually_sylvester_recurrence_of_rational_sum {a : ℕ → ℕ}
-    (hpos : ∀ n, 0 < a n)
-    (hratio : Tendsto (fun n => (a n : ℝ) ^ 2 / a (n + 1)) atTop (𝓝 1))
-    (hrat : ∃ q : ℚ, HasSum (fun n => 1 / (a n : ℝ)) q)
-    (h : (∀ δ : ℝ, 0 < δ → ∀ᶠ n in atTop,
-        -δ ≤ (∏ k ∈ Finset.range n, (a k : ℝ)) / a n * (1 - (a n : ℝ) ^ 2 / a (n + 1))) ∨
-      ∀ᶠ n in atTop, a n ^ 2 - a n + 1 ≤ a (n + 1)) :
-    ∀ᶠ n in atTop, a (n + 1) = a n ^ 2 - a n + 1
 
 /-- **Koizumi's conjecture is equivalent to the Erdős–Graham question.** The following are
 equivalent. (1) For every positive rational number $r$ whose pseudo-greedy gap sequence

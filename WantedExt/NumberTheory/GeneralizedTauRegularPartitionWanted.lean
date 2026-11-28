@@ -17,13 +17,17 @@ public import Mathlib.Data.Int.ModEq
 public import Mathlib.NumberTheory.ArithmeticFunction.Misc
 public import Mathlib.RingTheory.PowerSeries.Inverse
 public import MathlibExt.NumberTheory.ChooseAddModEqPrime
+public import MathlibExt.NumberTheory.FourRegularPartitionParity
 public import MathlibExt.NumberTheory.GeneralizedTau
+public import MathlibExt.NumberTheory.GeneralizedTauPentagonalVanishing
 public import MathlibExt.NumberTheory.GeneralizedTauPrimeSquare
 public import MathlibExt.NumberTheory.NineRegularPartitionIteration
 public import MathlibExt.NumberTheory.PartitionConvolutionModThree
 public import MathlibExt.NumberTheory.RamanujanTauModNineteen
 public import MathlibExt.NumberTheory.RamanujanTauModSeventeen
 public import MathlibExt.NumberTheory.RamanujanTauModThree
+public import MathlibExt.NumberTheory.GeneralizedTauRegularPartitionCardPrimeRegularModEqGeneralizedTauPred
+public import MathlibExt.NumberTheory.GeneralizedTauCoprime
 
 /-!
 # Regular partition functions and a generalized tau function
@@ -80,16 +84,6 @@ public theorem_wanted generalizedTau_succ_modEq_card_frequency_two (k : ℕ) (hk
         ∀ i ∈ p.parts,
           p.parts.count i ∈ (Finset.Icc 1 k).filter (fun a => Odd (k.choose a))).card : ℤ)
       [ZMOD 2]
-
-/-- **Parity of the $4$-regular partition function.** For a positive integer $n$, let $R_4(n)$ be
-the number of partitions of $n$ with no part divisible by $4$. Then $R_4(n)$ is odd if and only if
-$n$ is a triangular number, that is, $n = m(m + 1)/2$ for some integer $m \ge 0$.
-
-Source: S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a
-Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024),
-Article A39, Theorem 3 (`integers-2024-A39-thm-3`). -/
-public theorem_wanted odd_card_four_regular_iff_triangular (n : ℕ) (hn : 0 < n) :
-    Odd (Nat.Partition.restricted n (¬ 4 ∣ ·)).card ↔ ∃ m : ℕ, n = m * (m + 1) / 2
 
 /-- **Parity of $\tau_{14}$ and $\tau_6$ at odd arguments.** Let $\tau_k(m)$ be the generalized
 tau function, the coefficient of $q^m$ in $q \prod_{j \ge 1} (1 - q^j)^k$, and let $R_8(n)$ be
@@ -309,29 +303,6 @@ public theorem_wanted generalizedTau_two_mul_prime_add_one_succ_modEq (p : ℕ) 
           ((r + s + t).negOnePow : ℤ)
         else 0 [ZMOD p]
 
-/-- **A congruence for 9-regular partitions at $4n + 1$.** Let $R_9(m)$ denote the number of
-partitions of $m$ in which no part is divisible by $9$. For every positive integer $n$,
-$R_9(4n + 1) \equiv R_9(n) \pmod 3$.
-
-Source: S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a
-Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024),
-Article A39, Theorem 19 (`integers-2024-A39-thm-19`). -/
-public theorem_wanted card_nine_regular_four_mul_add_one_modEq (n : ℕ) (hn : 0 < n) :
-    ((Nat.Partition.restricted (4 * n + 1) (¬ 9 ∣ ·)).card : ℤ)
-    ≡ ((Nat.Partition.restricted (n) (¬ 9 ∣ ·)).card : ℤ) [ZMOD 3]
-
-/-- **Prime-regular partitions and the generalized tau function.** Let $p$ be a prime and $n$ a
-natural number. Let $R_p(n)$ be the number of partitions of $n$ in which no part is divisible by
-$p$, and let $\tau_k(m)$ be the generalized tau function, the coefficient of $q^m$ in
-$q \prod_{j \ge 1} (1 - q^j)^k$. Then $R_p(n) \equiv \tau_{p-1}(n + 1) \pmod p$.
-
-Source: S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a
-Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024),
-Article A39, Theorem 20 (`integers-2024-A39-thm-20`). -/
-public theorem_wanted card_prime_regular_modEq_generalizedTau_pred (p : ℕ) (hp : p.Prime) (n : ℕ) :
-    ((Nat.Partition.restricted (n) (¬ p ∣ ·)).card : ℤ)
-        ≡ generalizedTau ((p : ℤ) - 1) (n + 1) [ZMOD p]
-
 /-- **$\tau_{-k}$ and partition convolutions modulo a prime.** Let $l$ be an odd prime, let $k$ be a
 natural number with $2 \le k < l$, let $n$ be a natural number, and write $p(s)$ for the number of
 partitions of $s$. Then
@@ -389,33 +360,6 @@ Generalized Tau Function, and Partition Function Weighted Composition Sums*, INT
 Article A39, Corollary 8 (`integers-2024-A39-cor-8`). -/
 public theorem_wanted ramanujanTau_seven_mul_modEq_zero (n : ℕ) (hn : 0 < n) :
     generalizedTau 24 (7 * n) ≡ 0 [ZMOD 7]
-
-/-- **Vanishing of $\tau_k(n)$ modulo the prime $k - 1$.** Let $n \ge 1$ and let $k$ be a natural
-number such that $k - 1$ is prime. For an integer $t$ let $P(t) = t(3t - 1)/2$ be the generalized
-pentagonal number. If $k - 1$ does not divide $n - 1 - P(t)$ for any integer $t$ with
-$P(t) \le n - 1$, then the generalized tau function satisfies $\tau_k(n) \equiv 0 \pmod{k - 1}$.
-
-Source: S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a
-Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024),
-Article A39, Proposition 1 (`integers-2024-A39-prop-1`). -/
-public theorem_wanted generalizedTau_modEq_zero_of_pentagonal (n : ℕ) (hn : 0 < n) (k : ℕ)
-    (hk : (k - 1).Prime)
-    (h : ∀ t : ℤ, pentagonal t ≤ n - 1 → ¬ (k - 1) ∣ n - 1 - pentagonal t) :
-    generalizedTau k n ≡ 0 [ZMOD ((k - 1 : ℕ) : ℤ)]
-
-/-- **Vanishing of the generalized tau function modulo $|k|/d$.** Let $\tau_k(n)$ be the
-generalized tau function, the coefficient of $q^n$ in $q \prod_{j \ge 1} (1 - q^j)^k$. Let $k$ be
-an integer with $|k| \ge 2$ and $d$ a natural number dividing $|k|$ with $d < |k|$. Then for all
-natural numbers $m$ and $r$ with $\gcd(r, |k|/d) = 1$,
-$\tau_k(|k| m + d r + 1) \equiv 0 \pmod{|k|/d}$.
-
-Source: S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a
-Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024),
-Article A39, Proposition 3 (`integers-2024-A39-prop-3`). -/
-public theorem_wanted generalizedTau_modEq_zero_of_coprime (m : ℕ) (k : ℤ) (hk : 2 ≤ |k|) (d : ℕ)
-    (hd : d ∣ k.natAbs) (hdk : d < k.natAbs) (r : ℕ)
-    (hr : Nat.gcd r (k.natAbs / d) = 1) :
-    generalizedTau k (k.natAbs * m + d * r + 1) ≡ 0 [ZMOD ((k.natAbs / d : ℕ) : ℤ)]
 
 /-- **Ramanujan's tau function modulo divisors of $24$.** Let $\tau(n) = \tau_{24}(n)$ be
 Ramanujan's tau function, the generalized tau function with $k = 24$. For every integer

@@ -11,7 +11,9 @@ LICENSE file in the root directory of this source tree.
 
 Statements from Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun,
 *Extension of the Equation `Σ_{j=1}^k j F_j^p = F_n^q` to a Family of Lucas Sequences*, The
-Fibonacci Quarterly 62 (2024), no. 3 (primary text: arXiv:2607.09105).
+Fibonacci Quarterly 62 (2024), no. 3 (primary text: arXiv:2607.09105). The statement
+`exists_remainders_weighted_power_sum` is proved in
+`MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumExistsRemaindersWeightedPowerSum`.
 
 `U_n(x, y)` and `V_n(x, y)` are `lucasU P n` and `lucasV P n` with `x = P.p`, `y = P.q` (so
 `y ≠ 0`); `D = x² - 4y` and `α = (x + √D)/2`.
@@ -19,6 +21,7 @@ Fibonacci Quarterly 62 (2024), no. 3 (primary text: arXiv:2607.09105).
 module
 
 import Batteries.Util.ProofWanted
+public import MathlibExt.NumberTheory.Recurrences.LucasAdditionCompanion
 public import MathlibExt.NumberTheory.Recurrences.LucasBinomialSum
 public import MathlibExt.NumberTheory.Recurrences.LucasCompanionIdentity
 public import MathlibExt.NumberTheory.Recurrences.LucasCompanionSquare
@@ -26,65 +29,15 @@ public import MathlibExt.NumberTheory.Recurrences.LucasRatioLowerBound
 public import MathlibExt.NumberTheory.Recurrences.LucasRootPower
 public import Mathlib.Analysis.SpecialFunctions.Log.Base
 public import Mathlib.NumberTheory.Padics.PadicVal.Basic
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumAlphaBounds
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumExistsRemaindersWeightedPowerSum
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumLogBoundsNeg
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumParameterBound
+public import MathlibExt.NumberTheory.Recurrences.LucasWeightedPowerSumRemainderPos
 
 namespace MetaMathlibExt
 
 @[expose] public section
-
-/-- **Addition formula for the Lucas sequence $U$.** Let $x$ and $y \neq 0$ be integers and let
-$(U_n)$ and $(V_n)$ be the Lucas sequences with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$,
-$V_0 = 2$, $V_1 = x$ and $W_{n+2} = x W_{n+1} - y W_n$ for $W = U, V$. Then for all natural
-numbers $n \leq m$, $U_{m+n} = U_m V_n - y^n U_{m-n}$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 2.1 (iv) (`fq-2024-earplynch07182024-lem-2.1`). -/
-public theorem_wanted lucasU_add_eq_mul_lucasV_sub (P : LucasSequenceParams) {m n : ℕ}
-    (hnm : n ≤ m) :
-    lucasU P (m + n) = lucasU P m * lucasV P n - P.q ^ n * lucasU P (m - n)
-
-/-- **Bounds on Lucas sequences by powers of the dominant root.** Let $x$ and $y \neq 0$ be
-integers with $x \geq 1$, $|y + 1| \leq x$ and $D = x^2 - 4y > 0$, let $(U_n)$ and $(V_n)$ be the
-Lucas sequences with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$, $V_0 = 2$, $V_1 = x$
-and $W_{n+2} = x W_{n+1} - y W_n$ for $W = U, V$, and put $\alpha = (x + \sqrt{D})/2$. Then for
-every $n \geq 2$ we have $x \alpha^{n-2} \leq U_n$; if $y \leq 0$, then $U_n \leq \alpha^{n-1}$
-and $x \alpha^{n-1} \leq V_n \leq \alpha^{n+1}/x$; and if $y \geq 0$, then
-$U_n \leq \alpha^n/\sqrt{D}$ and $\alpha^n \leq V_n \leq \alpha^{n+1}/\sqrt{D}$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 2.2 (`fq-2024-earplynch07182024-lem-2.2`). -/
-public theorem_wanted lucasU_lucasV_alpha_bounds (P : LucasSequenceParams) (hx : 1 ≤ P.p)
-    (hy : |P.q + 1| ≤ P.p) (hD : 0 < P.p ^ 2 - 4 * P.q) {n : ℕ} (hn : 2 ≤ n) :
-    let α : ℝ := (P.p + Real.sqrt (P.p ^ 2 - 4 * P.q)) / 2
-    (P.p : ℝ) * α ^ (n - 2) ≤ lucasU P n ∧
-      (P.q ≤ 0 → (lucasU P n : ℝ) ≤ α ^ (n - 1)) ∧
-      (0 ≤ P.q → (lucasU P n : ℝ) ≤ α ^ n / Real.sqrt (P.p ^ 2 - 4 * P.q)) ∧
-      (P.q ≤ 0 → (P.p : ℝ) * α ^ (n - 1) ≤ lucasV P n ∧ (lucasV P n : ℝ) ≤ α ^ (n + 1) / P.p) ∧
-      (0 ≤ P.q → α ^ n ≤ (lucasV P n : ℝ) ∧
-        (lucasV P n : ℝ) ≤ α ^ (n + 1) / Real.sqrt (P.p ^ 2 - 4 * P.q))
-
-/-- **Logarithmic bounds for weighted Lucas power sums when $y < 0$.** Let $x \ge 1$ and $y < 0$
-be integers with $|y + 1| \le x$, let $(U_m)$ be the Lucas sequence with parameters $(x, y)$,
-given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$, and let
-$\alpha = (x + \sqrt{x^2 - 4y})/2$. Let $k$ be a natural number and $n$, $p$, $q$ positive
-integers with $\sum_{j=1}^k j U_j^p = U_n^q$. If $k \ge 2$, then
-$\log_\alpha k + p \log_\alpha x + (k - 2)p < (n - 1)q$. If $k \ge 3$, then
-$q \log_\alpha x + (n - 2)q < (k - 1)p + \log_\alpha k +
-\log_\alpha\bigl(1 + (x^2 - 2y)/(x^{p-1}(x^3 - x^2 - 2xy + y))\bigr)$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 2.4 (`fq-2024-earplynch07182024-lem-2.4`). -/
-public theorem_wanted weighted_power_sum_log_bounds_of_neg (P : LucasSequenceParams)
-    (hx : 1 ≤ P.p) (hyneg : P.q < 0) (hy : |P.q + 1| ≤ P.p) {n k p q : ℕ} (hn : 0 < n)
-    (hp : 0 < p) (hq : 0 < q)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    let α : ℝ := (P.p + Real.sqrt (P.p ^ 2 - 4 * P.q)) / 2
-    (2 ≤ k → Real.logb α k + p * Real.logb α P.p + ((k : ℝ) - 2) * p < ((n : ℝ) - 1) * q) ∧
-    (3 ≤ k → q * Real.logb α P.p + ((n : ℝ) - 2) * q <
-      ((k : ℝ) - 1) * p + Real.logb α k + Real.logb α (1 + ((P.p : ℝ) ^ 2 - 2 * P.q) /
-        ((P.p : ℝ) ^ (p - 1) * ((P.p : ℝ) ^ 3 - P.p ^ 2 - 2 * P.p * P.q + P.q))))
 
 /-- **Logarithmic bounds for weighted Lucas power sums when $y > 0$.** Let $x$ and $y > 0$ be
 integers with $|y + 1| \le x$ and $D = x^2 - 4y > 0$, let $(U_m)$ be the Lucas sequence with
@@ -193,61 +146,6 @@ public theorem_wanted weighted_power_sum_ne_lucasU_pow (P : LucasSequenceParams)
     (hp : 0 < p) (hq : 0 < q) (hp11 : p ≤ 11) (hq11 : q ≤ 11) (hk : 3 ≤ k) :
     ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p ≠ lucasU P n ^ q
 
-/-- **Remainder form of the weighted power-sum equation for Lucas sequences.** Let $x$ be a
-positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with parameters
-$(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$. Suppose
-$D = x^2 - 4y > 0$ and put $\alpha = (x + \sqrt{D})/2$. Let $n, p, q$ be positive integers and
-$k \geq 3$ an integer with
-$$
-\sum_{j=1}^{k} j \, U_j^p = U_n^q.
-$$
-Then there are real numbers $R_1, R_2$ with $|R_1| < k^2 \alpha^{k(p-2)}$,
-$|R_2| < \alpha^{n(q-2)}$ and
-$$
-\frac{D^{(q-p)/2} (k\alpha^p - (k+1))}{(\alpha^p - 1)^2} \alpha^{p(k+1)} - \alpha^{qn} =
-D^{q/2} R_2 - D^{q/2} R_1 - \frac{D^{(q-p)/2} \alpha^p}{(\alpha^p - 1)^2}.
-$$
-
-The remainders $R_1, R_2$ are only asserted to exist; the source defines them explicitly in its
-proof.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Proposition 4.1 (`fq-2024-earplynch07182024-prop-4.1`). -/
-public theorem_wanted exists_remainders_weighted_power_sum (P : LucasSequenceParams)
-    (hy : P.q = 1 ∨ P.q = -1) (hx : 0 < P.p) (hD : 0 < P.p ^ 2 - 4 * P.q) {n k p q : ℕ}
-    (hn : 0 < n) (hp : 0 < p) (hq : 0 < q) (hk : 3 ≤ k)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    let D : ℝ := P.p ^ 2 - 4 * P.q
-    let α : ℝ := (P.p + Real.sqrt D) / 2
-    ∃ R₁ R₂ : ℝ, |R₁| < (k : ℝ) ^ 2 * α ^ ((k : ℝ) * ((p : ℝ) - 2)) ∧
-      |R₂| < α ^ ((n : ℝ) * ((q : ℝ) - 2)) ∧
-      D ^ (((q : ℝ) - p) / 2) * (k * α ^ p - (k + 1)) / (α ^ p - 1) ^ 2 * α ^ (p * (k + 1)) -
-          α ^ (q * n) =
-        D ^ ((q : ℝ) / 2) * R₂ - D ^ ((q : ℝ) / 2) * R₁ -
-          D ^ (((q : ℝ) - p) / 2) * α ^ p / (α ^ p - 1) ^ 2
-
-/-- **Bound on the parameter in the weighted power-sum equation for Lucas sequences.** Let $x$
-be a positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with
-parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$.
-If $n, p, q$ are positive integers and $k \geq 3$ is an integer with
-$$
-\sum_{j=1}^{k} j \, U_j^p = U_n^q,
-$$
-then $x \leq (k + 1)^2/4 + 1$.
-
-The hypothesis $k \geq 3$ cannot be dropped entirely: for $k = 1$ and $y = -1$,
-$(n, p, q, x) = (1, 1, 1, 5)$ is a solution and $5 > (1 + 1)^2/4 + 1 = 2$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 4.4 (`fq-2024-earplynch07182024-lem-4.4`). -/
-public theorem_wanted le_of_weighted_power_sum_eq (P : LucasSequenceParams)
-    (hy : P.q = 1 ∨ P.q = -1) (hx : 0 < P.p) {n k p q : ℕ} (hn : 0 < n) (hp : 0 < p)
-    (hq : 0 < q) (hk : 3 ≤ k)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    (P.p : ℚ) ≤ ((k : ℚ) + 1) ^ 2 / 4 + 1
-
 /-- **Remainder bound for weighted Lucas power sums when $y = -1$.** Let $x$ be a positive
 integer, let $(U_m)$ be the Lucas sequence with parameters $(x, -1)$, given by $U_0 = 0$,
 $U_1 = 1$ and $U_{m+2} = x U_{m+1} + U_m$, and let $D = x^2 + 4$ and $\alpha = (x + \sqrt{D})/2$.
@@ -265,26 +163,6 @@ public theorem_wanted remainder_bound_of_neg (P : LucasSequenceParams) (hyP : P.
     let α : ℝ := (P.p + Real.sqrt D) / 2
     D ^ ((q : ℝ) / 2) * |(lucasU P n : ℝ) ^ q - α ^ (n * q) / D ^ ((q : ℝ) / 2)| <
       k * (D + 1 / P.p) ^ (q + 1) * α ^ ((k : ℝ) * p - 2 * k / q + 1)
-
-/-- **Remainder bound for weighted Lucas power sums when $y = 1$.** Let $x$ be a positive integer
-with $D = x^2 - 4 > 0$, let $(U_m)$ be the Lucas sequence with parameters $(x, 1)$, given by
-$U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - U_m$, let $V_2 = x^2 - 2$ be the term of index $2$
-of the companion Lucas sequence, and let $\alpha = (x + \sqrt{D})/2$. If positive integers $n$,
-$p$, $q$ and an integer $k \ge 3$ satisfy $\sum_{j=1}^k j U_j^p = U_n^q$, then the remainder
-$R_2 = U_n^q - \alpha^{nq}/D^{q/2}$ satisfies
-$D^{q/2} |R_2| < k (V_2 + 1/x)^{q+1} \alpha^{kp - 2k/q + 1/2}$.
-
-Source: Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the
-Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024),
-no. 3, Lemma 4.3 (`fq-2024-earplynch07182024-lem-4.3`). -/
-public theorem_wanted remainder_bound_of_pos (P : LucasSequenceParams) (hyP : P.q = 1)
-    (hD : 0 < P.p ^ 2 - 4 * P.q) (hx : 0 < P.p) {n k p q : ℕ} (hn : 0 < n) (hp : 0 < p)
-    (hq : 0 < q) (hk : 3 ≤ k)
-    (hsol : ∑ j ∈ Finset.Icc 1 k, (j : ℤ) * lucasU P j ^ p = lucasU P n ^ q) :
-    let D : ℝ := P.p ^ 2 - 4 * P.q
-    let α : ℝ := (P.p + Real.sqrt D) / 2
-    D ^ ((q : ℝ) / 2) * |(lucasU P n : ℝ) ^ q - α ^ (n * q) / D ^ ((q : ℝ) / 2)| <
-      k * ((lucasV P 2 : ℝ) + 1 / P.p) ^ (q + 1) * α ^ ((k : ℝ) * p - 2 * k / q + 1 / 2)
 
 end
 

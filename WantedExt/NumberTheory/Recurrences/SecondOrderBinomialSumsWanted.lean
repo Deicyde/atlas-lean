@@ -12,9 +12,15 @@ import Batteries.Util.ProofWanted
 public import Mathlib.Algebra.BigOperators.Intervals
 public import Mathlib.Combinatorics.Enumerative.Catalan.Basic
 public import MathlibExt.NumberTheory.LucasSequence
+public import MathlibExt.NumberTheory.Recurrences.LucasDixonBinomialSum
 public import MathlibExt.NumberTheory.Recurrences.LucasAlternatingSquaredBinomialSum
+public import MathlibExt.NumberTheory.Recurrences.LucasShiftedBinomialConvolution
 public import WantedExt.NumberTheory.SecondOrderGenFunIntegerValuesWanted
 public import MathlibExt.NumberTheory.Recurrences.SecondOrderBinomialSumsSecondOrderBiSeqSumCentralChooseMul
+public import MathlibExt.NumberTheory.Recurrences.LucasTripleBinomialConvolution
+public import MathlibExt.NumberTheory.Recurrences.LucasEvenCatalanConvolution
+public import MathlibExt.NumberTheory.Recurrences.LucasReciprocalBinomialSum
+public import MathlibExt.NumberTheory.Recurrences.LucasChooseTwoSignConvolution
 
 /-!
 # Binomial sums involving `U_n = p U_{n-1} + U_{n-2}` and `V_n = p V_{n-1} + V_{n-2}`
@@ -39,36 +45,6 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Dixon-type alternating sum with Lucas sequences.** Let $p$ be an integer and let $U_n$ and
-$V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
-$V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every natural number $n$,
-$$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k}^3 U_{2n-k} V_k = (-1)^n \binom{3n}{n} \binom{2n}{n} U_{2n},$$
-where $\binom{3n}{n} \binom{2n}{n} = (3n)!/(n!)^3$ is the trinomial coefficient.
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Theorem 2.2. -/
-public theorem_wanted lucasU_lucasV_sum_choose_cube_alternating (p : ℤ) (n : ℕ) :
-    ∑ k ∈ Finset.range (2 * n + 1),
-        ((2 * n).choose k : ℤ) ^ 3 * (-1) ^ k *
-          lucasU ⟨p, -1, by decide⟩ (2 * n - k) * lucasV ⟨p, -1, by decide⟩ k =
-      (-1) ^ n * ((3 * n).choose n * (2 * n).choose n : ℕ) * lucasU ⟨p, -1, by decide⟩ (2 * n)
-
-/-- **Even-index Catalan convolution with Lucas sequences.** Let $p$ be an integer, let $U_n$
-and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
-$V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$, and let $C_j$ be the $j$-th Catalan
-number. Then for every natural number $n$, in the rationals,
-$$\sum_{k=0}^{n} C_{2n-2k} C_{2k} U_k V_{n-k} =
-\frac{2^{2n}}{2} \cdot \frac{n+2}{2n+1} C_{n+1} U_n.$$
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.4. -/
-public theorem_wanted lucasU_lucasV_sum_catalan_even (p : ℤ) (n : ℕ) :
-    ∑ k ∈ Finset.range (n + 1),
-        (catalan (2 * n - 2 * k) * catalan (2 * k) : ℚ) *
-          lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (n - k) =
-      (2 : ℚ) ^ (2 * n) / 2 * ((n + 2 : ℚ) / (2 * n + 1)) * catalan (n + 1) *
-        lucasU ⟨p, -1, by decide⟩ n
-
 /-- **Shifted Catalan convolution with Lucas sequences.** Let $p$ be an integer, let $U_n$ and
 $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
 $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$, and let $C_j$ be the $j$-th Catalan
@@ -88,19 +64,6 @@ public theorem_wanted lucasU_lucasV_sum_catalan_shifted (p : ℤ) (n m : ℕ) (h
       2 * ((2 * m - 1).choose m : ℚ) *
           (((n + m + 2) * (n + 1) : ℚ) / ((n + 2 * m + 1) * (n + 2 * m + 2))) *
         catalan (n + m + 1) * lucasU ⟨p, -1, by decide⟩ n
-
-/-- **Convolution of U and V with shifted binomial weights.** Let $p$ be an integer and let $U$ and
-$V$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so that $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
-$V_1 = p$, and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every natural number $n$
-$$\sum_{k=0}^{n} \binom{2n}{k} \binom{2n}{n+k} U_k V_{n-k} = \binom{4n}{n} U_n.$$
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.6. -/
-public theorem_wanted lucasU_lucasV_sum_choose_two_n (p : ℤ) (n : ℕ) :
-    ∑ k ∈ Finset.range (n + 1),
-        ((2 * n).choose k * (2 * n).choose (n + k) : ℤ) *
-          lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (n - k) =
-      ((4 * n).choose n : ℤ) * lucasU ⟨p, -1, by decide⟩ n
 
 /-- **Alternating sum of $\binom{2n}{k} \binom{4n}{2k}$ with Lucas sequences.** Let $p$ be an
 integer and let $U_n$ and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$,
@@ -132,35 +95,6 @@ public theorem_wanted lucasU_lucasV_sum_choose_triple_alternating (p : ℤ) (n :
           lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (2 * n - k) =
       (-1) ^ n * ((2 * n).choose n * (5 * n).choose (2 * n) : ℤ) *
         lucasU ⟨p, -1, by decide⟩ (2 * n)
-
-/-- **Alternating sum with reciprocal binomial coefficients and Lucas sequences.** Let $p$ be an
-integer and let $U_n$ and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$,
-$U_1 = 1$, $V_0 = 2$, $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every
-natural number $n$, in the rationals,
-$$\sum_{k=0}^{2n} (-1)^k \frac{\binom{2n}{k}}{\binom{4n}{k} \binom{4n}{2n+k}} U_k V_{2n-k} =
-\frac{4n+1}{3n+1} \cdot \frac{1}{\binom{4n}{2n}} U_{2n}.$$
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.9. -/
-public theorem_wanted lucasU_lucasV_sum_choose_inv_alternating (p : ℤ) (n : ℕ) :
-    ∑ k ∈ Finset.range (2 * n + 1),
-        ((2 * n).choose k : ℚ) / ((4 * n).choose k * (4 * n).choose (2 * n + k)) * (-1) ^ k *
-          lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (2 * n - k) =
-      (4 * n + 1 : ℚ) / (3 * n + 1) / (4 * n).choose (2 * n) * lucasU ⟨p, -1, by decide⟩ (2 * n)
-
-/-- **Sum of $\binom{n}{k} \binom{2n}{n+k} \binom{n+k}{k}$ with Lucas sequences.** Let $p$ be an
-integer and let $U_n$ and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$,
-$U_1 = 1$, $V_0 = 2$, $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every
-natural number $n$,
-$$\sum_{k=0}^{n} \binom{n}{k} \binom{2n}{n+k} \binom{n+k}{k} U_k V_{n-k} = \binom{2n}{n}^2 U_n.$$
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.10. -/
-public theorem_wanted lucasU_lucasV_sum_choose_n_plus_k (p : ℤ) (n : ℕ) :
-    ∑ k ∈ Finset.range (n + 1),
-        (n.choose k * (2 * n).choose (n + k) * (n + k).choose k : ℤ) *
-          lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (n - k) =
-      ((2 * n).choose n : ℤ) ^ 2 * lucasU ⟨p, -1, by decide⟩ n
 
 /-- **Binomial-Catalan sum with Lucas sequences.** Let $p$ be an integer, let $U_n$ and $V_n$ be
 the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$, $V_1 = p$ and
@@ -209,26 +143,6 @@ public theorem_wanted lucasU_lucasV_sum_choose_sq_catalan_alternating (p : ℤ) 
           lucasU ⟨p, -1, by decide⟩ (2 * n - k) * lucasV ⟨p, -1, by decide⟩ k =
       (-1) ^ n * ((3 * n + 1).choose n * catalan n * catalan (2 * n) : ℤ) *
         lucasU ⟨p, -1, by decide⟩ (2 * n)
-
-/-- **Binomial sums with signs $(-1)^{\binom{k}{2}}$ and Lucas sequences.** Let $p$ be an integer
-and let $U_n$ and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$,
-$U_1 = 1$, $V_0 = 2$, $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every
-natural number $n$,
-$$\sum_{k=0}^{4n+1} (-1)^{\binom{k}{2}} \binom{4n+1}{k} U_k V_{4n+1-k} = (-1)^n 2^{2n+1} U_{4n+1}$$
-and
-$$\sum_{k=0}^{4n+1} (-1)^{\binom{k}{2}} \binom{4n+1}{k} V_k U_{4n+1-k} = (-1)^n 2^{2n+1} U_{4n+1}.$$
-
-Source: John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent
-Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 3.1. -/
-public theorem_wanted lucasU_lucasV_sum_choose_sign_choose_two (p : ℤ) (n : ℕ) :
-    (∑ k ∈ Finset.range (4 * n + 2),
-        ((4 * n + 1).choose k : ℤ) * (-1) ^ k.choose 2 *
-          lucasU ⟨p, -1, by decide⟩ k * lucasV ⟨p, -1, by decide⟩ (4 * n + 1 - k) =
-      (-1) ^ n * 2 ^ (2 * n + 1) * lucasU ⟨p, -1, by decide⟩ (4 * n + 1)) ∧
-    ∑ k ∈ Finset.range (4 * n + 2),
-        ((4 * n + 1).choose k : ℤ) * (-1) ^ k.choose 2 *
-          lucasV ⟨p, -1, by decide⟩ k * lucasU ⟨p, -1, by decide⟩ (4 * n + 1 - k) =
-      (-1) ^ n * 2 ^ (2 * n + 1) * lucasU ⟨p, -1, by decide⟩ (4 * n + 1)
 
 /-- **Weighted two-sided binomial sums of products of Lucas sequences.** Let $p$ be an integer,
 let $U$ and $V$ be the two-sided second-order sequences for $p$ with $U_0 = 0$, $U_1 = 1$,

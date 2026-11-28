@@ -24,6 +24,14 @@ import Mathlib.Tactic.Ring
 
 The theorem `MetaMathlibExt.lurothConvergent_lt_le` bounds the positive error of each
 Lüroth convergent in terms of its last digit and denominator.
+
+## References
+
+* Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits
+  in Lüroth Series*, INTEGERS 24 (2024), Article A67, pp. 1–9, Section 2.
+* Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and
+  Conjectures*, INTEGERS 26 (2026), Article A45, pp. 1–20, Section 2, equation (9), and
+  Proposition 1.
 -/
 
 namespace MetaMathlibExt
@@ -68,6 +76,12 @@ Source: Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric
 Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (8). -/
 public def lurothDenominator (d : ℕ → ℕ) (n : ℕ) : ℕ :=
   d n * ∏ j ∈ Finset.range n, d j * (d j - 1)
+
+/-- **The last Lüroth digit divides the denominator.** For any digit sequence `d` and index `n`,
+the digit `d n` divides the corresponding Lüroth denominator. -/
+public theorem lurothDigit_dvd_lurothDenominator (d : ℕ → ℕ) (n : ℕ) :
+    d n ∣ lurothDenominator d n :=
+  dvd_mul_right _ _
 
 /-- **Lüroth convergents.** For a sequence of natural numbers $d_0, d_1, d_2, \dots$ (numbered from
 $0$) with Lüroth denominators $Q_0, Q_1, Q_2, \dots$, the $n$-th Lüroth convergent is the rational
